@@ -66,12 +66,7 @@ export default function PatientsSection() {
   const visibleReviews = reviews.slice(startIndex, startIndex + visibleCardsCount);
 
   const getSafeText = (key: string, fallback: string) => {
-    try {
-      const result = t(key as any);
-      return typeof result === 'string' && !result.includes('patients.') ? result : fallback;
-    } catch {
-      return fallback;
-    }
+    return t.has(key as any) ? t(key as any) : fallback;
   };
 
   return (
