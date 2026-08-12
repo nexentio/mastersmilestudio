@@ -1,0 +1,20 @@
+{
+  "welcome": "Master Smile Studio",
+  "description": "World-class aesthetic dentistry and personalized smile design experience.",
+  "ctaConsultation": "Free Consultation",
+  "ctaTreatments": "Treatments",
+  "form": {
+    "title": "Get Free Consultation",
+    "subtitle": "Fill out the form and our representative will contact you.",
+    "fullName": "Full Name",
+    "fullNamePlaceholder": "Your full name",
+    "phone": "Phone",
+    "phonePlaceholder": "+1 (555) 000-0000",
+    "treatment": "Treatment",
+    "treatmentSelectPlaceholder": "— Treatment —",
+    "language": "Language",
+    "languageSelectPlaceholder": "— Language —",
+    "submit": "Get Free Appointment",
+    "success": "Your request has been received. We will contact you shortly."
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "welcome": "Master Smile Studio",
+  "description": "Эстетическая стоматология мирового уровня и персональный дизайн улыбки.",
+  "ctaConsultation": "Бесплатная Консультация",
+  "ctaTreatments": "Процедуры",
+  "form": {
+    "title": "Получить Бесплатную Консультацию",
+    "subtitle": "Заполните форму, и наш специалист свяжется с вами.",
+    "fullName": "Имя и Фамилия",
+    "fullNamePlaceholder": "Ваше имя и фамилия",
+    "phone": "Телефон",
+    "phonePlaceholder": "+7 (999) 000-00-00",
+    "treatment": "Процедура",
+    "treatmentSelectPlaceholder": "— Процедура —",
+    "language": "Язык",
+    "languageSelectPlaceholder": "— Язык —",
+    "submit": "Записаться На Консультацию",
+    "success": "Ваша заявка принята. Мы свяжемся с вами в ближайшее время."
+  }
+}

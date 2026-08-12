@@ -1,0 +1,13 @@
+{
+  "title": "Our Treatments",
+  "subtitle": "Offered dental services are shaped in line with dentistry practices and clinical evaluations.",
+  "smileDesign": { "title": "Smile Design", "description": "Custom digital smile design tailored to your facial proportions." },
+  "implant": { "title": "Dental Implants", "description": "Long-lasting titanium implants providing a natural tooth feel." },
+  "emax": { "title": "E-max Laminates", "description": "Ultra-thin porcelain veneers with high light translucency." },
+  "zirconia": { "title": "Zirconia Crowns", "description": "Highly durable zirconia crowns offering natural aesthetics." },
+  "whitening": { "title": "Teeth Whitening", "description": "Safe and fast professional laser whitening treatment." },
+  "rootCanal": { "title": "Root Canal Treatment", "description": "Painless microscope-assisted tooth preservation therapy." },
+  "dentures": { "title": "Dental Prosthetics", "description": "Comfortable, natural-looking fixed and removable dentures." },
+  "bonding": { "title": "Composite Bonding", "description": "Single-visit aesthetic repair of chipped or spaced teeth." },
+  "orthodontics": { "title": "Orthodontics", "description": "Clear aligners and aesthetic braces for perfectly straight teeth." }
+}

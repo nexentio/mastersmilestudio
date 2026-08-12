@@ -1,0 +1,13 @@
+{
+  "title": "Nossos Tratamentos",
+  "subtitle": "Os serviços odontológicos oferecidos são moldados de acordo com a prática odontológica e avaliações clínicas.",
+  "smileDesign": { "title": "Design de Sorriso", "description": "Design de sorriso digital personalizado para as proporções do seu rosto." },
+  "implant": { "title": "Implantes Dentários", "description": "Implantes de titânio duradouros que proporcionam sensação natural." },
+  "emax": { "title": "Laminados E-max", "description": "Facetas de porcelana ultra-finas com alta translucidez." },
+  "zirconia": { "title": "Coroas de Zircônia", "description": "Coroas de zircônia altamente duráveis com estética natural." },
+  "whitening": { "title": "Clareamento Dental", "description": "Tratamento de clareamento a laser seguro e rápido." },
+  "rootCanal": { "title": "Tratamento de Canal", "description": "Terapia indolor de preservação dental assistida por microscópio." },
+  "dentures": { "title": "Próteses Dentárias", "description": "Próteses fixas e removíveis confortáveis e com aparência natural." },
+  "bonding": { "title": "Bonding Resina", "description": "Restauração estética de dentes fraturados ou espaçados em sessão única." },
+  "orthodontics": { "title": "Ortodontia", "description": "Alinhadores transparentes e aparelhos estéticos para dentes alinhados." }
+}

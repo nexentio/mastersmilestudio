@@ -1,0 +1,20 @@
+{
+  "welcome": "Master Smile Studio",
+  "description": "Odontología estética de clase mundial y experiencia personalizada de diseño de sonrisa.",
+  "ctaConsultation": "Consulta Gratuita",
+  "ctaTreatments": "Tratamientos",
+  "form": {
+    "title": "Obtenga Consulta Gratuita",
+    "subtitle": "Rellene el formulario y nuestro asesor se pondrá en contacto.",
+    "fullName": "Nombre Completo",
+    "fullNamePlaceholder": "Su nombre completo",
+    "phone": "Teléfono",
+    "phonePlaceholder": "+34 600 000 000",
+    "treatment": "Tratamiento",
+    "treatmentSelectPlaceholder": "— Tratamiento —",
+    "language": "Idioma",
+    "languageSelectPlaceholder": "— Idioma —",
+    "submit": "Solicitar Cita Gratuita",
+    "success": "Su solicitud ha sido recibida. Nos pondremos en contacto pronto."
+  }
+}

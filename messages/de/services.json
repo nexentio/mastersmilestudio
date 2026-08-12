@@ -1,0 +1,13 @@
+{
+  "title": "Unsere Behandlungen",
+  "subtitle": "Die angebotenen zahnmedizinischen Leistungen orientieren sich an der zahnärztlichen Praxis und klinischen Bewertungen.",
+  "smileDesign": { "title": "Smile Design", "description": "Digitales Lächeln-Design abgestimmt auf Ihre Gesichtsproportionen." },
+  "implant": { "title": "Implantatbehandlung", "description": "Langlebige Titanimplantate für ein natürliches Zahngefühl." },
+  "emax": { "title": "E-max Veneers", "description": "Hauchdünne Porzellan-Veneers mit hoher Lichtdurchlässigkeit." },
+  "zirconia": { "title": "Zirkonkronen", "description": "Hochfeste Zirkonkronen mit natürlicher Ästhetik." },
+  "whitening": { "title": "Zahnaufhellung", "description": "Sicheres und schnelles professionelles Laser-Bleaching." },
+  "rootCanal": { "title": "Wurzelkanalbehandlung", "description": "Schmerzfreie mikroskopgestützte Zahnerhaltungstherapie." },
+  "dentures": { "title": "Zahnprothesen", "description": "Komfortable, natürlich aussehende feste und herausnehmbare Prothesen." },
+  "bonding": { "title": "Composite Bonding", "description": "Ästhetische Reparatur abgeplatzter oder lückenhafter Zähne in einer Sitzung." },
+  "orthodontics": { "title": "Kieferorthopädie", "description": "Transparente Schienen und ästhetische Brackets für gerade Zähne." }
+}

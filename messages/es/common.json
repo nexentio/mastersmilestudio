@@ -1,0 +1,25 @@
+{
+  "siteName": "Master Smile Studio",
+  "clinicBrand": "Deltadiş",
+  "navigation": {
+    "home": "Inicio",
+    "about": "Sobre nosotros",
+    "treatments": "Tratamientos",
+    "gallery": "Galería",
+    "contact": "Contacto"
+  },
+  "topBar": {
+    "googleReviews": "Reseñas de Google",
+    "rating": "4,6/5",
+    "happyPatients": "10.000+ Pacientes Felices",
+    "countries": "37 Países"
+  },
+  "customerService": {
+    "badge": "Atención al Cliente 24/7",
+    "title": "Elija un asesor en su idioma",
+    "shortTitle": "Atención al Cliente"
+  },
+  "language": {
+    "selectLanguage": "Seleccionar idioma"
+  }
+}

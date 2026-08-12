@@ -1,0 +1,13 @@
+{
+  "title": "Tedavilerimiz",
+  "subtitle": "Sunulan dental hizmetler, diş hekimliği uygulamaları ve klinik değerlendirmeler doğrultusunda şekillenmektedir.",
+  "smileDesign": { "title": "Gülüş Tasarımı", "description": "Yüz hatlarınıza özel altın oran ve dijital gülüş tasarımı." },
+  "implant": { "title": "İmplant Tedavisi", "description": "Doğal diş hissi veren uzun ömürlü titanyum implant çözümleri." },
+  "emax": { "title": "E-max Lamina", "description": "Işık geçirgenliği yüksek ultra ince porselen yaprak kaplamalar." },
+  "zirconia": { "title": "Zirkonyum Kronlar", "description": "Yüksek dayanıklı ve doğal estetiğe sahip zirkonyum kaplamalar." },
+  "whitening": { "title": "Diş Beyazlatma", "description": "Lazer teknolojisi ile güvenli ve hızlı profesyonel beyazlatma." },
+  "rootCanal": { "title": "Kanal Tedavisi", "description": "Ağrısız mikroskop destekli diş kurtarma tedavisi." },
+  "dentures": { "title": "Diş Protezleri", "description": "Konforlu, doğal görünümlü sabit ve hareketli protez sistemleri." },
+  "bonding": { "title": "Kompozit Bonding", "description": "Tek seansta kırık ve aralıklı dişlerin estetik onarımı." },
+  "orthodontics": { "title": "Ortodonti", "description": "Şeffaf plaklar ve estetik braketler ile düzgün diş sıralaması." }
+}

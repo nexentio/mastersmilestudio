@@ -1,0 +1,13 @@
+{
+  "title": "Nasze Zabiegi",
+  "subtitle": "Oferowane usługi stomatologiczne są kształtowane zgodnie z praktyką stomatologiczną i oceną kliniczną.",
+  "smileDesign": { "title": "Projektowanie Uśmiechu", "description": "Cyfrowe projektowanie uśmiechu dopasowane do proporcji twarzy." },
+  "implant": { "title": "Implanty Zębowe", "description": "Trwałe implanty tytanowe dające uczucie naturalnych zębów." },
+  "emax": { "title": "Licówki E-max", "description": "Ultra-cienkie licówki porcelanowe o wysokiej przepuszczalności światła." },
+  "zirconia": { "title": "Korony Cyrkonowe", "description": "Wyjątkowo trwałe korony cyrkonowe o naturalnej estetyce." },
+  "whitening": { "title": "Wybielanie Zębów", "description": "Bezpieczne i szybkie profesjonalne wybielanie laserowe." },
+  "rootCanal": { "title": "Leczenie Kanałowe", "description": "Bezbolesne leczenie kanałowe pod mikroskopem." },
+  "dentures": { "title": "Protezy Zębowe", "description": "Wygodne, naturalnie wyglądające protezy stałe i ruchome." },
+  "bonding": { "title": "Bonding Kompozytowy", "description": "Estetyczna odbudowa ukruszonych lub rozstawionych zębów." },
+  "orthodontics": { "title": "Ortodoncja", "description": "Przezroczyste nakładki i estetyczne aparaty dla prostych zębów." }
+}

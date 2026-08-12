@@ -1,0 +1,20 @@
+{
+  "welcome": "Master Smile Studio",
+  "description": "Dünya standartlarında estetik diş hekimliği ve kişiye özel gülüş tasarımı deneyimi.",
+  "ctaConsultation": "Ücretsiz Konsültasyon",
+  "ctaTreatments": "Tedaviler",
+  "form": {
+    "title": "Ücretsiz Danışmanlık Alın",
+    "subtitle": "Formu doldurun, temsilcimiz sizinle iletişime geçsin.",
+    "fullName": "İsim Soyisim",
+    "fullNamePlaceholder": "Adınız ve soyadınız",
+    "phone": "Telefon",
+    "phonePlaceholder": "+90 (5XX) XXX XX XX",
+    "treatment": "Tedavi",
+    "treatmentSelectPlaceholder": "— Tedavi —",
+    "language": "Dil",
+    "languageSelectPlaceholder": "— Dil —",
+    "submit": "Ücretsiz Randevu Al",
+    "success": "Talebiniz başarıyla alındı. En kısa sürede sizinle iletişime geçeceğiz."
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "welcome": "Master Smile Studio",
+  "description": "Światowej klasy stomatologia estetyczna i indywidualne projektowanie uśmiechu.",
+  "ctaConsultation": "Bezpłatna Konsultacja",
+  "ctaTreatments": "Zabiegi",
+  "form": {
+    "title": "Uzyskaj Bezpłatną Konsultację",
+    "subtitle": "Wypełnij formularz, a nasz doradca skontaktuje się z Tobą.",
+    "fullName": "Imię i Nazwisko",
+    "fullNamePlaceholder": "Twoje imię i nazwisko",
+    "phone": "Telefon",
+    "phonePlaceholder": "+48 000 000 000",
+    "treatment": "Zabieg",
+    "treatmentSelectPlaceholder": "— Zabieg —",
+    "language": "Język",
+    "languageSelectPlaceholder": "— Język —",
+    "submit": "Umów Bezpłatną Wizytę",
+    "success": "Zgłoszenie zostało przyjęte. Skontaktujemy się wkrótce."
+  }
+}
