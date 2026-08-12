@@ -3,6 +3,7 @@ import Header from '@/components/Header';
 import HeroVideo from '@/components/HeroVideo';
 import HeroForm from '@/components/HeroForm';
 import ServicesGrid from '@/components/ServicesGrid';
+import PatientsSection from '@/components/PatientsSection';
 
 export default async function Home({
   params
@@ -162,6 +163,9 @@ export default async function Home({
 
       {/* Treatment Services Square Cards Section */}
       <ServicesGrid />
+
+      {/* Hastalarimiz Patient Stories Section */}
+      <PatientsSection />
     </div>
   );
 }

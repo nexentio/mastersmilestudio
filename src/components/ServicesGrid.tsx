@@ -9,6 +9,7 @@ export default function ServicesGrid() {
   const services = [
     {
       key: 'smileDesign',
+      image: '/smile-makeover.jpg',
     },
     {
       key: 'implant',
@@ -20,21 +21,27 @@ export default function ServicesGrid() {
     },
     {
       key: 'zirconia',
+      image: '/mastersmilestudio_1784465233_3944702579575983298_70887948899.jpg',
     },
     {
       key: 'whitening',
+      image: '/teeth-whiting-treatment.jpeg',
     },
     {
       key: 'rootCanal',
+      image: '/mastersmilestudio_1784098986_3941630290953391467_70887948899.jpg',
     },
     {
       key: 'dentures',
+      image: '/mastersmilestudio_1783158972_3933743875695538963_70887948899.jpg',
     },
     {
       key: 'bonding',
+      image: '/mastersmilestudio_1781430682_3919246906335743176_70887948899.jpg',
     },
     {
       key: 'orthodontics',
+      image: '/smile-makeover.jpg',
     },
   ];
 
@@ -108,7 +115,6 @@ export default function ServicesGrid() {
           {services.map((item) => {
             const title = t(`${item.key}.title`);
             const description = t(`${item.key}.description`);
-            const hasBgImage = Boolean(item.image);
 
             return (
               <div
@@ -117,8 +123,8 @@ export default function ServicesGrid() {
                   aspectRatio: '1 / 1',
                   backgroundColor: '#ffffff',
                   borderRadius: '24px',
-                  border: hasBgImage ? 'none' : '1px solid #e2e8f0',
-                  padding: '2.25rem',
+                  border: 'none',
+                  padding: 0,
                   display: 'flex',
                   flexDirection: 'column',
                   justifyContent: 'flex-end',
@@ -130,63 +136,29 @@ export default function ServicesGrid() {
                 }}
                 className="service-square-card-light"
               >
-                {/* Full Card Background Image */}
+                {/* 100% Bright Background Image */}
                 {item.image && (
-                  <>
-                    <Image
-                      src={item.image}
-                      alt={title}
-                      fill
-                      className="card-bg-img"
-                      style={{ objectFit: 'cover', zIndex: 0, transition: 'transform 0.4s ease' }}
-                    />
-                    {/* Dark Overlay Filter (Fades out on Hover for full image clarity) */}
-                    <div
-                      className="card-dark-overlay"
-                      style={{
-                        position: 'absolute',
-                        inset: 0,
-                        background: 'linear-gradient(180deg, rgba(15, 23, 42, 0.15) 0%, rgba(15, 23, 42, 0.85) 100%)',
-                        zIndex: 1,
-                        transition: 'opacity 0.3s ease',
-                      }}
-                    />
-                  </>
+                  <Image
+                    src={item.image}
+                    alt={title}
+                    fill
+                    className="card-bg-img"
+                    style={{ objectFit: 'cover', zIndex: 0, transition: 'transform 0.4s ease' }}
+                  />
                 )}
 
-                {/* Bottom Content: Title + Description */}
-                <div style={{ position: 'relative', zIndex: 2 }}>
-                  <h3
-                    style={{
-                      fontSize: '1.35rem',
-                      fontWeight: 700,
-                      color: hasBgImage ? '#ffffff' : '#0f172a',
-                      marginBottom: '0.6rem',
-                      lineHeight: 1.3,
-                      textShadow: hasBgImage ? '0 2px 8px rgba(0,0,0,0.5)' : 'none',
-                    }}
-                  >
-                    {title}
-                  </h3>
-                  <p
-                    style={{
-                      fontSize: '0.875rem',
-                      color: hasBgImage ? '#f1f5f9' : '#475569',
-                      lineHeight: 1.55,
-                      margin: 0,
-                      textShadow: hasBgImage ? '0 1px 4px rgba(0,0,0,0.5)' : 'none',
-                    }}
-                  >
-                    {description}
-                  </p>
-                </div>
+                {/* Full-width Plain Black Box (60% opacity) for Text */}
+                <span className="text">
+                  <span className="text1">{title}</span>
+                  <span className="text2">{description}</span>
+                </span>
               </div>
             );
           })}
         </div>
       </div>
 
-      {/* Responsive Grid & Hover Animations */}
+      {/* Responsive Grid & Text Container Styles */}
       <style jsx global>{`
         .services-3-col-grid {
           display: grid;
@@ -210,8 +182,32 @@ export default function ServicesGrid() {
         .service-square-card-light:hover .card-bg-img {
           transform: scale(1.06);
         }
-        .service-square-card-light:hover .card-dark-overlay {
-          opacity: 0.2 !important;
+        .service-square-card-light .text {
+          display: flex;
+          flex-direction: column;
+          gap: 0.45rem;
+          position: relative;
+          z-index: 2;
+          background-color: rgba(0, 0, 0, 0.6);
+          width: 100%;
+          padding: 1.25rem 1.5rem;
+          border-radius: 0 0 24px 24px;
+          box-sizing: border-box;
+          margin-top: auto;
+        }
+        .service-square-card-light .text1 {
+          font-size: 1.25rem;
+          font-weight: 700;
+          color: #ffffff;
+          line-height: 1.3;
+          display: block;
+        }
+        .service-square-card-light .text2 {
+          font-size: 0.85rem;
+          font-weight: 400;
+          color: #f1f5f9;
+          line-height: 1.5;
+          display: block;
         }
       `}</style>
     </section>

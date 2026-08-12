@@ -3,6 +3,47 @@
   "description": "Erstklassige ästhetische Zahnheilkunde und individuelles Hollywood-Lächeln-Design. Erleben Sie hochmoderne Zahnimplantate, Zirkonkronen und maßgeschneiderte Lächeln-Transformationen mit neuester Technologie von unseren Experten.",
   "ctaConsultation": "Kostenlose Beratung",
   "ctaTreatments": "Behandlungen",
+  "patients": {
+    "badge": "Zufriedene Patientenerfahrungen",
+    "title": "Unsere Patienten & Lächeln-Geschichten",
+    "subtitle": "Echte Erfahrungen unserer Patienten aus aller Welt.",
+    "card1": {
+      "name": "Sarah Jenkins",
+      "country": "🇬🇧 Großbritannien",
+      "treatment": "Full Hollywood Smile",
+      "quote": "Das Team von Master Smile Studio hat mir ein natürlicheres und schöneres Lächeln geschenkt, als ich es mir je erhofft hatte."
+    },
+    "card2": {
+      "name": "Markus Weber",
+      "country": "🇩🇪 Deutschland",
+      "treatment": "Zirkonkronen",
+      "quote": "Erstklassige Behandlung im 5-Sterne-Ambiente zu einem Bruchteil der Kosten in Deutschland."
+    },
+    "card3": {
+      "name": "Elena Rostova",
+      "country": "🇷🇺 Russland",
+      "treatment": "E-max Veneers",
+      "quote": "Vom ersten Tag an waren Betreuung, Gastfreundschaft und die digitale Lächeln-Vorschau absolut perfekt."
+    },
+    "card4": {
+      "name": "Sophie Martin",
+      "country": "🇫🇷 Frankreich",
+      "treatment": "Implantate & Aufhellung",
+      "quote": "Schmerzfrei, schnell und ästhetisch makellos. Mein neues Lächeln hat mir mein Selbstbewusstsein zurückgegeben."
+    },
+    "card5": {
+      "name": "David Miller",
+      "country": "🇺🇸 USA",
+      "treatment": "Zirkon Smile Makeover",
+      "quote": "Ich habe in Antalya erstklassige Technologie und Luxus-Medizintourismus erlebt."
+    },
+    "card6": {
+      "name": "Anna Kowalska",
+      "country": "🇵🇱 Polen",
+      "treatment": "All-on-4 Implantate",
+      "quote": "Der gesamte Prozess wurde von Anfang bis Ende professionell betreut. Jetzt kann ich wieder voller Freude lächeln."
+    }
+  },
   "form": {
     "title": "Kostenlose Beratung Anfordern",
     "subtitle": "Füllen Sie das Formular aus, unser Berater kontaktiert Sie umgehend.",

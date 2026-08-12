@@ -3,6 +3,47 @@
   "description": "Dünya standartlarında estetik diş hekimliği ve kişiye özel dijital gülüş tasarımı deneyimi. Uzman ekibimiz ve son teknoloji implant, zirkonyum kaplama ve Hollywood smile çözümlerimizle hayalinizdeki kusursuz gülüşe güvenle kavuşun.",
   "ctaConsultation": "Ücretsiz Konsültasyon",
   "ctaTreatments": "Tedaviler",
+  "patients": {
+    "badge": "Mutlu Hasta Deneyimleri",
+    "title": "Hastalarımız & Gülüş Hikayeleri",
+    "subtitle": "Dünyanın dört bir yanından kliniğimizi tercih eden hastalarımızın gerçek deneyimleri.",
+    "card1": {
+      "name": "Sarah Jenkins",
+      "country": "🇬🇧 Birleşik Krallık",
+      "treatment": "Full Hollywood Smile",
+      "quote": "Master Smile Studio ekibi hayal ettiğimden çok daha doğal ve büyüleyici bir gülüşe kavuşmamı sağladı."
+    },
+    "card2": {
+      "name": "Markus Weber",
+      "country": "🇩🇪 Almanya",
+      "treatment": "Zirkonyum Kaplama",
+      "quote": "Almanya'daki fiyatların çok altında, 5 yıldızlı otel konforunda dünya standartlarında tedavi aldım."
+    },
+    "card3": {
+      "name": "Elena Rostova",
+      "country": "🇷🇺 Rusya",
+      "treatment": "E-max Lamina Veneer",
+      "quote": "İlk günden itibaren gösterilen ilgi, profesyonellik ve dijital gülüş tasarımı kusursuzdu."
+    },
+    "card4": {
+      "name": "Sophie Martin",
+      "country": "🇫🇷 Fransa",
+      "treatment": "İmplant & Diş Beyazlatma",
+      "quote": "Ağrısız, hızlı ve son derece estetik bir sonuç. Yeni gülüşümle kendime güvenim tamamen yenilendi."
+    },
+    "card5": {
+      "name": "David Miller",
+      "country": "🇺🇸 ABD",
+      "treatment": "Zirkonyum Gülüş Tasarımı",
+      "quote": "Kendi ülkemde bulamadığım yüksek teknolojiyi ve lüks sağlık turizmi konforunu Antalya'da yaşadım."
+    },
+    "card6": {
+      "name": "Anna Kowalska",
+      "country": "🇵🇱 Polonya",
+      "treatment": "All-on-4 İmplant Tedavisi",
+      "quote": "Tüm süreç baştan sona profesyonelce yönetildi. Artık doya doya gülümseyebiliyorum."
+    }
+  },
   "form": {
     "title": "Ücretsiz Danışmanlık Alın",
     "subtitle": "Formu doldurun, temsilcimiz sizinle iletişime geçsin.",

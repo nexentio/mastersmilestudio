@@ -3,6 +3,47 @@
   "description": "Odontologia estética de classe mundial e experiência personalizada em design de sorriso Hollywood. Descubra implantes dentários de alta precisão, coroas de zircônio e transformações de sorriso feitas sob medida com tecnologia avançada por nossa equipe.",
   "ctaConsultation": "Consulta Gratuita",
   "ctaTreatments": "Tratamentos",
+  "patients": {
+    "badge": "Experiências dos Pacientes",
+    "title": "Nossos Pacientes & Histórias de Sorrisos",
+    "subtitle": "Experiências reais de pacientes de todas as partes do mundo.",
+    "card1": {
+      "name": "Sarah Jenkins",
+      "country": "🇬🇧 Reino Unido",
+      "treatment": "Full Hollywood Smile",
+      "quote": "A equipe do Master Smile Studio me deu um sorriso muito mais natural e deslumbrante do que eu imaginava."
+    },
+    "card2": {
+      "name": "Markus Weber",
+      "country": "🇩🇪 Alemanha",
+      "treatment": "Coroas de Zircônio",
+      "quote": "Tratamento odontológico de classe mundial em ambiente 5 estrelas por metade do custo da Europa."
+    },
+    "card3": {
+      "name": "Elena Rostova",
+      "country": "🇷🇺 Rússia",
+      "treatment": "Lentes E-max",
+      "quote": "Desde o primeiro dia, a atenção, o profissionalismo e a prévia digital do sorriso foram impecáveis."
+    },
+    "card4": {
+      "name": "Sophie Martin",
+      "country": "🇫🇷 França",
+      "treatment": "Implantes & Clareamento",
+      "quote": "Sem dor, rápido e com um resultado estético fantástico. Meu novo sorriso renovou minha autoconfiança."
+    },
+    "card5": {
+      "name": "David Miller",
+      "country": "🇺🇸 EUA",
+      "treatment": "Transformação em Zircônio",
+      "quote": "Experimentei tecnologia de ponta e conforto de turismo médico de luxo em Antália."
+    },
+    "card6": {
+      "name": "Anna Kowalska",
+      "country": "🇵🇱 Polônia",
+      "treatment": "Implantes All-on-4",
+      "quote": "Todo o processo foi conduzido com extremo profissionalismo do início ao fim."
+    }
+  },
   "form": {
     "title": "Obtenha Consulta Gratuita",
     "subtitle": "Preencha o formulário e nosso representante entrará em contato.",

@@ -3,6 +3,47 @@
   "description": "Światowej klasy stomatologia estetyczna i indywidualne projektowanie uśmiechu Hollywood. Odkryj zaawansowane implanty zębowe, korony cyrkonowe oraz metamorfozy uśmiechu tworzone z użyciem najnowszych technologii przez nasz zespół ekspertów.",
   "ctaConsultation": "Bezpłatna Konsultacja",
   "ctaTreatments": "Zabiegi",
+  "patients": {
+    "badge": "Opinie Naszych Pacjentów",
+    "title": "Nasi Pacjenci i Historie Uśmiechu",
+    "subtitle": "Prawdziwe doświadczenia i metamorfozy uśmiechu pacjentów z całego świata.",
+    "card1": {
+      "name": "Sarah Jenkins",
+      "country": "🇬🇧 Wielka Brytania",
+      "treatment": "Full Hollywood Smile",
+      "quote": "Zespół Master Smile Studio podarował mi uśmiech znacznie bardziej naturalny i piękny niż marzyłam."
+    },
+    "card2": {
+      "name": "Markus Weber",
+      "country": "🇩🇪 Niemcy",
+      "treatment": "Korony Cyrkonowe",
+      "quote": "Leczenie stomatologiczne w luksusie 5-gwiazdkowego hotelu za połowę ceny klinik w Niemczech."
+    },
+    "card3": {
+      "name": "Elena Rostova",
+      "country": "🇷🇺 Rosja",
+      "treatment": "Licówki E-max",
+      "quote": "Od pierwszego dnia opieka, gościnność i cyfrowy podgląd uśmiechu były absolutnie doskonałe."
+    },
+    "card4": {
+      "name": "Sophie Martin",
+      "country": "🇫🇷 Francja",
+      "treatment": "Implanty & Wybielanie",
+      "quote": "Bezbolesne, szybkie i niezwykle estetyczne efekty. Nowy uśmiech w pełni przywrócił mi pewność siebie."
+    },
+    "card5": {
+      "name": "David Miller",
+      "country": "🇺🇸 USA",
+      "treatment": "Projektowanie Uśmiechu",
+      "quote": "Doświadczyłem najwyższej technologii i luksusu turystyki medycznej w Antalyi."
+    },
+    "card6": {
+      "name": "Anna Kowalska",
+      "country": "🇵🇱 Polska",
+      "treatment": "Implanty All-on-4",
+      "quote": "Cały proces był prowadzony z pełnym profesjonalizmem od początku do końca."
+    }
+  },
   "form": {
     "title": "Uzyskaj Bezpłatną Konsultację",
     "subtitle": "Wypełnij formularz, a nasz doradca skontaktuje się z Tobą.",

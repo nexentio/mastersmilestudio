@@ -3,6 +3,47 @@
   "description": "Odontología estética de clase mundial y experiencia personalizada en diseño de sonrisa Hollywood. Descubra implantes dentales de última generación, coronas de circonio y transformaciones de sonrisa hechas a medida por nuestros expertos.",
   "ctaConsultation": "Consulta Gratuita",
   "ctaTreatments": "Tratamientos",
+  "patients": {
+    "badge": "Experiencias de Pacientes",
+    "title": "Nuestros Pacientes y Historias de Sonrisas",
+    "subtitle": "Experiencias reales de nuestros pacientes en todo el mundo.",
+    "card1": {
+      "name": "Sarah Jenkins",
+      "country": "🇬🇧 Reino Unido",
+      "treatment": "Full Hollywood Smile",
+      "quote": "El equipo de Master Smile Studio me dio una sonrisa mucho más natural y espectacular de lo que imaginaba."
+    },
+    "card2": {
+      "name": "Markus Weber",
+      "country": "🇩🇪 Alemania",
+      "treatment": "Coronas de Circonio",
+      "quote": "Tratamiento de clase mundial con la comodidad de un hotel de 5 estrellas a la mitad de precio."
+    },
+    "card3": {
+      "name": "Elena Rostova",
+      "country": "🇷🇺 Rusia",
+      "treatment": "Carillas E-max",
+      "quote": "Desde el primer día, la atención, el trato y la vista previa digital de mi sonrisa fueron impecables."
+    },
+    "card4": {
+      "name": "Sophie Martin",
+      "country": "🇫🇷 Francia",
+      "treatment": "Implantes & Blanqueamiento",
+      "quote": "Sin dolor, rápido y con un resultado estético extraordinario. Mi nueva sonrisa me devolvió la confianza."
+    },
+    "card5": {
+      "name": "David Miller",
+      "country": "🇺🇸 EE.UU.",
+      "treatment": "Diseño de Sonrisa en Circonio",
+      "quote": "Experimenté alta tecnología y confort de turismo médico de lujo en Antalya."
+    },
+    "card6": {
+      "name": "Anna Kowalska",
+      "country": "🇵🇱 Polonia",
+      "treatment": "Implantes All-on-4",
+      "quote": "Todo el proceso se gestionó con el máximo profesionalismo de principio a fin."
+    }
+  },
   "form": {
     "title": "Obtenga Consulta Gratuita",
     "subtitle": "Rellene el formulario y nuestro asesor se pondrá en contacto.",

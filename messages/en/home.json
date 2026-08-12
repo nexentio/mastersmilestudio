@@ -3,6 +3,47 @@
   "description": "World-class aesthetic dentistry and personalized Hollywood smile design experience. Discover high-end dental implants, porcelain veneers, and custom smile makeovers crafted with state-of-the-art technology by our expert dental team.",
   "ctaConsultation": "Free Consultation",
   "ctaTreatments": "Treatments",
+  "patients": {
+    "badge": "Happy Patient Experiences",
+    "title": "Our Patients & Smile Stories",
+    "subtitle": "Real transformation experiences from our patients arriving from all across the globe.",
+    "card1": {
+      "name": "Sarah Jenkins",
+      "country": "🇬🇧 United Kingdom",
+      "treatment": "Full Hollywood Smile",
+      "quote": "The Master Smile Studio team gave me a smile far more natural and stunning than I ever imagined."
+    },
+    "card2": {
+      "name": "Markus Weber",
+      "country": "🇩🇪 Germany",
+      "treatment": "Zirconia Crowns",
+      "quote": "World-class dental treatment in 5-star hotel luxury at a fraction of German costs."
+    },
+    "card3": {
+      "name": "Elena Rostova",
+      "country": "🇷🇺 Russia",
+      "treatment": "E-max Porcelain Veneers",
+      "quote": "From day one, the care, hospitality, and digital smile preview were absolutely flawless."
+    },
+    "card4": {
+      "name": "Sophie Martin",
+      "country": "🇫🇷 France",
+      "treatment": "Implants & Whitening",
+      "quote": "Painless, fast, and remarkably aesthetic results. My new smile restored my self-confidence completely."
+    },
+    "card5": {
+      "name": "David Miller",
+      "country": "🇺🇸 USA",
+      "treatment": "Zirconium Smile Makeover",
+      "quote": "I experienced high-end technology and luxury dental tourism comfort in Antalya that I couldn't find back home."
+    },
+    "card6": {
+      "name": "Anna Kowalska",
+      "country": "🇵🇱 Poland",
+      "treatment": "All-on-4 Dental Implants",
+      "quote": "The entire process was managed professionally from start to finish. Now I can smile with full confidence."
+    }
+  },
   "form": {
     "title": "Get Free Consultation",
     "subtitle": "Fill out the form and our representative will contact you.",
