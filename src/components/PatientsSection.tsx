@@ -8,12 +8,48 @@ export default function PatientsSection() {
   const [startIndex, setStartIndex] = useState(0);
 
   const reviews = [
-    { id: 'card1' },
-    { id: 'card2' },
-    { id: 'card3' },
-    { id: 'card4' },
-    { id: 'card5' },
-    { id: 'card6' },
+    {
+      id: 'card1',
+      fallbackName: 'Sarah Jenkins',
+      fallbackCountry: '🇬🇧 United Kingdom',
+      fallbackTreatment: 'Full Hollywood Smile',
+      fallbackQuote: 'The Master Smile Studio team gave me a smile far more natural and stunning than I ever imagined.',
+    },
+    {
+      id: 'card2',
+      fallbackName: 'Markus Weber',
+      fallbackCountry: '🇩🇪 Germany',
+      fallbackTreatment: 'Zirconia Crowns',
+      fallbackQuote: 'World-class dental treatment in 5-star hotel luxury at a fraction of German costs.',
+    },
+    {
+      id: 'card3',
+      fallbackName: 'Elena Rostova',
+      fallbackCountry: '🇷🇺 Russia',
+      fallbackTreatment: 'E-max Porcelain Veneers',
+      fallbackQuote: 'From day one, the care, hospitality, and digital smile preview were absolutely flawless.',
+    },
+    {
+      id: 'card4',
+      fallbackName: 'Sophie Martin',
+      fallbackCountry: '🇫🇷 France',
+      fallbackTreatment: 'Implants & Whitening',
+      fallbackQuote: 'Painless, fast, and remarkably aesthetic results. My new smile restored my self-confidence completely.',
+    },
+    {
+      id: 'card5',
+      fallbackName: 'David Miller',
+      fallbackCountry: '🇺🇸 USA',
+      fallbackTreatment: 'Zirconium Smile Makeover',
+      fallbackQuote: 'I experienced high-end technology and luxury dental tourism comfort in Antalya that I could not find back home.',
+    },
+    {
+      id: 'card6',
+      fallbackName: 'Anna Kowalska',
+      fallbackCountry: '🇵🇱 Poland',
+      fallbackTreatment: 'All-on-4 Dental Implants',
+      fallbackQuote: 'The entire process was managed professionally from start to finish. Now I can smile with full confidence.',
+    },
   ];
 
   const visibleCardsCount = 4;
@@ -28,6 +64,15 @@ export default function PatientsSection() {
   };
 
   const visibleReviews = reviews.slice(startIndex, startIndex + visibleCardsCount);
+
+  const getSafeText = (key: string, fallback: string) => {
+    try {
+      const result = t(key as any);
+      return typeof result === 'string' && !result.includes('patients.') ? result : fallback;
+    } catch {
+      return fallback;
+    }
+  };
 
   return (
     <section
@@ -74,7 +119,7 @@ export default function PatientsSection() {
               }}
             >
               <span style={{ color: '#d97706', fontSize: '1rem' }}>★</span>
-              <span>{t('patients.badge')}</span>
+              <span>{getSafeText('patients.badge', 'Happy Patient Experiences')}</span>
             </div>
 
             {/* Section Title */}
@@ -88,7 +133,7 @@ export default function PatientsSection() {
                 margin: 0,
               }}
             >
-              {t('patients.title')}
+              {getSafeText('patients.title', 'Our Patients & Smile Stories')}
             </h2>
           </div>
 
@@ -103,7 +148,7 @@ export default function PatientsSection() {
                 fontWeight: 450,
               }}
             >
-              {t('patients.subtitle')}
+              {getSafeText('patients.subtitle', 'Real transformation experiences from our patients arriving from all across the globe.')}
             </p>
           </div>
         </div>
@@ -118,10 +163,10 @@ export default function PatientsSection() {
           }}
         >
           {visibleReviews.map((card) => {
-            const name = t(`patients.${card.id}.name`);
-            const country = t(`patients.${card.id}.country`);
-            const treatment = t(`patients.${card.id}.treatment`);
-            const quote = t(`patients.${card.id}.quote`);
+            const name = getSafeText(`patients.${card.id}.name`, card.fallbackName);
+            const country = getSafeText(`patients.${card.id}.country`, card.fallbackCountry);
+            const treatment = getSafeText(`patients.${card.id}.treatment`, card.fallbackTreatment);
+            const quote = getSafeText(`patients.${card.id}.quote`, card.fallbackQuote);
 
             return (
               <div
