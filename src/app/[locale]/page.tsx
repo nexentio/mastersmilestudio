@@ -4,6 +4,7 @@ import HeroVideo from '@/components/HeroVideo';
 import HeroForm from '@/components/HeroForm';
 import ServicesGrid from '@/components/ServicesGrid';
 import PatientsSection from '@/components/PatientsSection';
+import TransformationsSection from '@/components/TransformationsSection';
 
 export default async function Home({
   params
@@ -169,6 +170,9 @@ export default async function Home({
 
       {/* Hastalarimiz Patient Stories Section */}
       <PatientsSection />
+
+      {/* From First Visit to Final Smile Transformations Carousel */}
+      <TransformationsSection />
     </div>
   );
 }

@@ -3,6 +3,10 @@
   "description": "Ücretsiz online danışmanlık ile yolculuğunuza başlayın. Uçuşunuzdan önce kişiye özel tedavi planınızı hazırlayalım.",
   "ctaConsultation": "Ücretsiz Konsültasyon",
   "ctaTreatments": "Tedaviler",
+  "transformations": {
+    "title": "İlk Ziyaretten Kusursuz Gülüşe.",
+    "subtitle": "Her dönüşümde yakalanan gerçek hasta hikayelerini keşfedin. Bunlar bir gülümsemeden çok daha fazlası — Master Smile Studio'da özen ve hassasiyetle kazanılan yenilenmiş bir özgüven."
+  },
   "patients": {
     "badge": "Mutlu Hasta Deneyimleri",
     "title": "Hastalarımız & Gülüş Hikayeleri",

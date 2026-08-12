@@ -3,6 +3,10 @@
   "description": "Start your journey with a free online consultation. Let’s create your personalized treatment plan before you fly.",
   "ctaConsultation": "Free Consultation",
   "ctaTreatments": "Treatments",
+  "transformations": {
+    "title": "From First Visit to Final Smile.",
+    "subtitle": "Explore real patient stories captured in every transformation. These are more than smiles — they are renewed confidence, achieved with care and precision at Master Smile Studio."
+  },
   "patients": {
     "badge": "Happy Patient Experiences",
     "title": "Our Patients & Smile Stories",
