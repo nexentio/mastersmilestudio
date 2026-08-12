@@ -66,9 +66,9 @@ export default async function Home({
             >
               <h1
                 style={{
-                  fontSize: '3.75rem',
+                  fontSize: '3.1rem',
                   fontWeight: 800,
-                  lineHeight: 1.1,
+                  lineHeight: 1.15,
                   color: '#ffffff',
                   marginBottom: '1.5rem',
                   letterSpacing: '-0.03em',
