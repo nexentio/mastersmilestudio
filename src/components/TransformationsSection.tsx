@@ -77,7 +77,7 @@ export default function TransformationsSection() {
             <h2
               style={{
                 fontSize: '3.25rem',
-                fontWeight: 800,
+                fontWeight: 400,
                 color: '#0f172a',
                 letterSpacing: '-0.035em',
                 lineHeight: 1.12,
@@ -98,7 +98,7 @@ export default function TransformationsSection() {
                 marginRight: '0px',
                 marginBottom: '0px',
                 marginLeft: '0px',
-                fontWeight: 450,
+                fontWeight: 300,
               }}
             >
               {getSafeText(

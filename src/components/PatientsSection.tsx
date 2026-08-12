@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 
 export default function PatientsSection() {
   const t = useTranslations('home');
@@ -121,7 +122,7 @@ export default function PatientsSection() {
             <h2
               style={{
                 fontSize: '3.25rem',
-                fontWeight: 800,
+                fontWeight: 400,
                 color: '#0f172a',
                 letterSpacing: '-0.03em',
                 lineHeight: 1.1,
@@ -182,17 +183,25 @@ export default function PatientsSection() {
                 className="patient-card-white"
               >
                 <div>
-                  {/* Rating Stars in Sunset Amber */}
+                  {/* Rating Stars using /star.png */}
                   <div
                     style={{
                       display: 'flex',
-                      gap: '0.25rem',
-                      color: '#FFA552',
-                      fontSize: '1.1rem',
+                      alignItems: 'center',
+                      gap: 0,
                       marginBottom: '1.25rem',
                     }}
                   >
-                    ★★★★★
+                    {[1, 2, 3, 4, 5].map((starIdx) => (
+                      <Image
+                        key={starIdx}
+                        src="/star.png"
+                        alt="Rating Star"
+                        width={20}
+                        height={20}
+                        style={{ objectFit: 'contain' }}
+                      />
+                    ))}
                   </div>
 
                   {/* Patient Quote */}

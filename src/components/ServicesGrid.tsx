@@ -77,7 +77,7 @@ export default function ServicesGrid() {
             <h2
               style={{
                 fontSize: '3.25rem',
-                fontWeight: 800,
+                fontWeight: 400,
                 color: '#0f172a',
                 letterSpacing: '-0.03em',
                 lineHeight: 1.1,
