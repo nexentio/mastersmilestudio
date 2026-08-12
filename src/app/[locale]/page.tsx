@@ -65,26 +65,29 @@ export default async function Home({
                 color: '#ffffff',
               }}
             >
+              {/* 2-Word H1 Headline */}
               <h1
                 style={{
-                  fontSize: '3.1rem',
-                  fontWeight: 800,
-                  lineHeight: 1.15,
+                  fontSize: '3.75rem',
+                  fontWeight: 850,
+                  lineHeight: 1.08,
                   color: '#ffffff',
-                  marginBottom: '1.5rem',
-                  letterSpacing: '-0.03em',
-                  textShadow: '0 4px 16px rgba(0, 0, 0, 0.4)',
+                  marginBottom: '1.25rem',
+                  letterSpacing: '-0.035em',
+                  textShadow: '0 4px 20px rgba(0, 0, 0, 0.5)',
                 }}
               >
                 {home('welcome')}
               </h1>
+
+              {/* 2-Line Description Subtitle */}
               <p
                 style={{
                   fontSize: '1.25rem',
                   color: '#e2e8f0',
                   lineHeight: 1.6,
                   marginBottom: '2.25rem',
-                  textShadow: '0 2px 8px rgba(0, 0, 0, 0.4)',
+                  textShadow: '0 2px 10px rgba(0, 0, 0, 0.5)',
                   fontWeight: 400,
                 }}
               >
