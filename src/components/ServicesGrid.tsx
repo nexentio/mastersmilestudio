@@ -1,6 +1,7 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 
 export default function ServicesGrid() {
   const t = useTranslations('services');
@@ -8,93 +9,32 @@ export default function ServicesGrid() {
   const services = [
     {
       key: 'smileDesign',
-      icon: (
-        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-          <circle cx="12" cy="12" r="10" />
-          <path d="M8 14s1.5 3 4 3 4-3 4-3" />
-          <line x1="9" y1="9" x2="9.01" y2="9" strokeWidth="3" />
-          <line x1="15" y1="9" x2="15.01" y2="9" strokeWidth="3" />
-        </svg>
-      ),
-      badge: '01',
     },
     {
       key: 'implant',
-      icon: (
-        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M12 2v20M8 6h8M9 10h6M8 14h8M9 18h6" />
-        </svg>
-      ),
-      badge: '02',
+      image: '/dental-implant-mss.jpeg',
     },
     {
       key: 'emax',
-      icon: (
-        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-          <polygon points="12 2 2 7 12 12 22 7 12 2" />
-          <polyline points="2 17 12 22 22 17" />
-          <polyline points="2 12 12 17 22 12" />
-        </svg>
-      ),
-      badge: '03',
+      image: '/e-max-lamine-treatment-mss.jpeg',
     },
     {
       key: 'zirconia',
-      icon: (
-        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M6 3h12l4 6-10 12L2 9z" />
-          <path d="M11 3l-4 6 5 12 5-12-4-6" />
-          <path d="M2 9h20" />
-        </svg>
-      ),
-      badge: '04',
     },
     {
       key: 'whitening',
-      icon: (
-        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
-        </svg>
-      ),
-      badge: '05',
     },
     {
       key: 'rootCanal',
-      icon: (
-        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-        </svg>
-      ),
-      badge: '06',
     },
     {
       key: 'dentures',
-      icon: (
-        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-          <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
-          <circle cx="8.5" cy="8.5" r="1.5" />
-          <polyline points="21 15 16 10 5 21" />
-        </svg>
-      ),
-      badge: '07',
     },
     {
       key: 'bonding',
-      icon: (
-        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
-        </svg>
-      ),
-      badge: '08',
     },
     {
       key: 'orthodontics',
-      icon: (
-        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M12 20v-6M6 20V10M18 20V4" />
-        </svg>
-      ),
-      badge: '09',
     },
   ];
 
@@ -156,7 +96,7 @@ export default function ServicesGrid() {
           </div>
         </div>
 
-        {/* 9 Square Minimalist Cards Grid (Exactly 3 Cards Per Row) */}
+        {/* 9 Square Minimalist Cards Grid */}
         <div
           className="services-3-col-grid"
           style={{
@@ -168,6 +108,7 @@ export default function ServicesGrid() {
           {services.map((item) => {
             const title = t(`${item.key}.title`);
             const description = t(`${item.key}.description`);
+            const hasBgImage = Boolean(item.image);
 
             return (
               <div
@@ -176,63 +117,53 @@ export default function ServicesGrid() {
                   aspectRatio: '1 / 1',
                   backgroundColor: '#ffffff',
                   borderRadius: '24px',
-                  border: '1px solid #e2e8f0',
-                  padding: '2rem',
+                  border: hasBgImage ? 'none' : '1px solid #e2e8f0',
+                  padding: '2.25rem',
                   display: 'flex',
                   flexDirection: 'column',
-                  justifyContent: 'space-between',
+                  justifyContent: 'flex-end',
                   position: 'relative',
-                  transition: 'all 0.25s cubic-bezier(0.4, 0, 0.2, 1)',
+                  transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
                   cursor: 'pointer',
                   overflow: 'hidden',
                   boxShadow: '0 2px 8px rgba(0, 0, 0, 0.02)',
                 }}
                 className="service-square-card-light"
               >
-                {/* Top Row: Icon + Badge */}
-                <div
-                  style={{
-                    display: 'flex',
-                    justifyContent: 'space-between',
-                    alignItems: 'center',
-                  }}
-                >
-                  <div
-                    style={{
-                      width: '52px',
-                      height: '52px',
-                      borderRadius: '16px',
-                      backgroundColor: '#0f172a',
-                      color: '#ffffff',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      boxShadow: '0 4px 12px rgba(15, 23, 42, 0.15)',
-                    }}
-                  >
-                    {item.icon}
-                  </div>
-                  <span
-                    style={{
-                      fontSize: '0.85rem',
-                      fontWeight: 700,
-                      color: '#94a3b8',
-                      letterSpacing: '0.05em',
-                    }}
-                  >
-                    {item.badge}
-                  </span>
-                </div>
+                {/* Full Card Background Image */}
+                {item.image && (
+                  <>
+                    <Image
+                      src={item.image}
+                      alt={title}
+                      fill
+                      className="card-bg-img"
+                      style={{ objectFit: 'cover', zIndex: 0, transition: 'transform 0.4s ease' }}
+                    />
+                    {/* Dark Overlay Filter (Fades out on Hover for full image clarity) */}
+                    <div
+                      className="card-dark-overlay"
+                      style={{
+                        position: 'absolute',
+                        inset: 0,
+                        background: 'linear-gradient(180deg, rgba(15, 23, 42, 0.15) 0%, rgba(15, 23, 42, 0.85) 100%)',
+                        zIndex: 1,
+                        transition: 'opacity 0.3s ease',
+                      }}
+                    />
+                  </>
+                )}
 
-                {/* Bottom Row: Title + Description + Arrow CTA */}
-                <div>
+                {/* Bottom Content: Title + Description */}
+                <div style={{ position: 'relative', zIndex: 2 }}>
                   <h3
                     style={{
-                      fontSize: '1.3rem',
+                      fontSize: '1.35rem',
                       fontWeight: 700,
-                      color: '#0f172a',
+                      color: hasBgImage ? '#ffffff' : '#0f172a',
                       marginBottom: '0.6rem',
                       lineHeight: 1.3,
+                      textShadow: hasBgImage ? '0 2px 8px rgba(0,0,0,0.5)' : 'none',
                     }}
                   >
                     {title}
@@ -240,29 +171,14 @@ export default function ServicesGrid() {
                   <p
                     style={{
                       fontSize: '0.875rem',
-                      color: '#475569',
+                      color: hasBgImage ? '#f1f5f9' : '#475569',
                       lineHeight: 1.55,
-                      marginBottom: '1.25rem',
+                      margin: 0,
+                      textShadow: hasBgImage ? '0 1px 4px rgba(0,0,0,0.5)' : 'none',
                     }}
                   >
                     {description}
                   </p>
-
-                  <div
-                    style={{
-                      display: 'inline-flex',
-                      alignItems: 'center',
-                      gap: '0.4rem',
-                      fontSize: '0.85rem',
-                      fontWeight: 700,
-                      color: '#0f172a',
-                    }}
-                  >
-                    <span>Detaylı Bilgi</span>
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
-                      <path d="M5 12h14M12 5l7 7-7 7" />
-                    </svg>
-                  </div>
                 </div>
               </div>
             );
@@ -270,7 +186,7 @@ export default function ServicesGrid() {
         </div>
       </div>
 
-      {/* Responsive 3-Column CSS & Hover Micro-animations */}
+      {/* Responsive Grid & Hover Animations */}
       <style jsx global>{`
         .services-3-col-grid {
           display: grid;
@@ -289,9 +205,13 @@ export default function ServicesGrid() {
         }
         .service-square-card-light:hover {
           transform: translateY(-6px);
-          border-color: #0f172a !important;
-          box-shadow: 0 20px 35px -10px rgba(15, 23, 42, 0.08) !important;
-          background-color: #ffffff !important;
+          box-shadow: 0 20px 35px -10px rgba(15, 23, 42, 0.15) !important;
+        }
+        .service-square-card-light:hover .card-bg-img {
+          transform: scale(1.06);
+        }
+        .service-square-card-light:hover .card-dark-overlay {
+          opacity: 0.2 !important;
         }
       `}</style>
     </section>
