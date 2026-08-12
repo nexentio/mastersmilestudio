@@ -36,17 +36,18 @@ export default function TransformationsSection() {
       id="transformations"
       style={{
         backgroundColor: '#ffffff',
+        backgroundImage: 'url("/frame3333.jpeg")',
+        backgroundPosition: 'center -260px',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: '100% auto',
         color: '#0f172a',
-        paddingTop: '6rem',
+        paddingTop: '21rem',
         paddingBottom: '6.5rem',
         paddingLeft: '0px',
         paddingRight: '0px',
         position: 'relative',
         overflow: 'hidden',
         width: '100%',
-        borderTopWidth: '1px',
-        borderTopStyle: 'solid',
-        borderTopColor: '#f1f5f9',
       }}
     >
       {/* Title Container: Same 1280px Max-Width & Padding as Previous Sections */}
@@ -55,7 +56,7 @@ export default function TransformationsSection() {
           maxWidth: '1280px',
           marginTop: '0px',
           marginRight: 'auto',
-          marginBottom: '4.5rem',
+          marginBottom: '11.5rem',
           marginLeft: 'auto',
           paddingLeft: '1.5rem',
           paddingRight: '1.5rem',
@@ -78,7 +79,7 @@ export default function TransformationsSection() {
               style={{
                 fontSize: '3.25rem',
                 fontWeight: 400,
-                color: '#0f172a',
+                color: '#ffffff',
                 letterSpacing: '-0.035em',
                 lineHeight: 1.12,
                 marginTop: '0px',
@@ -92,7 +93,7 @@ export default function TransformationsSection() {
             <p
               style={{
                 fontSize: '1.08rem',
-                color: '#475569',
+                color: '#ffffff',
                 lineHeight: 1.65,
                 marginTop: '0px',
                 marginRight: '0px',

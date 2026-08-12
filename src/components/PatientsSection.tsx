@@ -74,9 +74,9 @@ export default function PatientsSection() {
     <section
       id="patients"
       style={{
-        background: 'linear-gradient(180deg, #ffffff 0%, #ffffff 22%, #FFA552 50%, #FFA552 100%)',
+        background: 'linear-gradient(180deg, #ffffff 0%, #ffffff 22%, #ff9e4d 50%, #ff9e4d 100%)',
         color: '#0f172a',
-        padding: '6rem 1.5rem 7rem 1.5rem',
+        padding: '6rem 1.5rem 2.5rem 1.5rem',
         position: 'relative',
       }}
     >
@@ -269,7 +269,7 @@ export default function PatientsSection() {
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'space-between',
-            marginTop: '3.5rem',
+            marginTop: '2rem',
           }}
         >
           {/* Progress Dots */}

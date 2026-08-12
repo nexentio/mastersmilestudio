@@ -35,18 +35,18 @@ export default function Header() {
         transition: 'all 0.3s ease',
       }}
     >
-      {/* Top Banner Bar (Rounded Bottom Corners, Width 94%, Solid Opacity 100%) */}
+      {/* Top Banner Bar (Rounded Bottom Corners, Width 94%, Solid Opacity 100%, #D58936 Amber Bronze Background) */}
       <div
         style={{
           width: '94%',
           maxWidth: '1400px',
           margin: '0 auto',
-          backgroundColor: '#0f172a',
+          backgroundColor: '#D58936',
           backdropFilter: 'blur(12px)',
           WebkitBackdropFilter: 'blur(12px)',
           color: '#ffffff',
           fontSize: '0.8rem',
-          fontWeight: 500,
+          fontWeight: 600,
           padding: '0.45rem 1.25rem',
           borderRadius: '0 0 16px 16px',
           boxShadow: '0 4px 16px rgba(0, 0, 0, 0.12)',
@@ -143,15 +143,29 @@ export default function Header() {
 
         {/* Center: Google Reviews Badge */}
         <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.78rem' }}>
-          <span style={{ fontWeight: 600, color: '#ffffff' }}>{t('topBar.googleReviews')}</span>
-          <span style={{ color: '#fbbf24', letterSpacing: '1px' }}>★★★★★</span>
-          <span style={{ fontWeight: 700 }}>{t('topBar.rating')}</span>
-          <span style={{ opacity: 0.6 }}>·</span>
-          <span>{t('topBar.happyPatients')}</span>
+          <span style={{ fontWeight: 700, color: '#ffffff' }}>{t('topBar.googleReviews')}</span>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 0 }}>
+            {[1, 2, 3, 4, 5].map((starIdx) => (
+              <Image
+                key={starIdx}
+                src="/neon-star.png"
+                alt="Rating Star"
+                width={14}
+                height={14}
+                style={{
+                  objectFit: 'contain',
+                  filter: 'drop-shadow(0px 0px 4px rgba(255, 255, 255, 0.85))',
+                }}
+              />
+            ))}
+          </div>
+          <span style={{ fontWeight: 750, color: '#ffffff' }}>{t('topBar.rating')}</span>
+          <span style={{ opacity: 0.6, color: '#ffffff' }}>·</span>
+          <span style={{ color: '#ffffff' }}>{t('topBar.happyPatients')}</span>
         </div>
 
         {/* Right: Contact Links */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', fontSize: '0.78rem', fontWeight: 600 }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', fontSize: '0.78rem', fontWeight: 650 }}>
           <a
             href="mailto:info@mastersmilestudio.com"
             style={{ color: '#ffffff', textDecoration: 'none', transition: 'opacity 0.2s ease' }}
