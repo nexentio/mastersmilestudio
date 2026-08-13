@@ -1,0 +1,42 @@
+{
+  "metaTitle": "Galeria Nienagannych Uśmiechów | Master Smile Studio",
+  "metaDescription": "Historie metamorfoz, projekty uśmiechów przed i po stworzone przez naszych lekarzy specjalistów.",
+  "breadcrumbHome": "Strona Główna",
+  "breadcrumbGallery": "Galeria Uśmiechów",
+  "pageTitle": "Galeria Uśmiechów",
+  "pageSubtitle": "Poznaj historie przemian oraz przypadki przed i po naszych pacjentów, którzy zyskali swój wymarzony uśmiech.",
+  "categories": {
+    "all": "Wszystkie Wyniki",
+    "makeover": "Smile Makeover",
+    "implant": "Implanty Zębowe",
+    "emax": "Licówki E-max",
+    "zirconium": "Korony Cyrkonowe",
+    "whitening": "Wybielanie Zębów"
+  },
+  "icons": {
+    "Crowns": "Korony",
+    "Implants": "Implanty",
+    "Whitening": "Wybielanie",
+    "Veneers": "Licówki"
+  },
+  "before": "Przed",
+  "after": "Po",
+  "spotlightPatient": "Sema Yılmaz",
+  "spotlightTreatment": "Full Hollywood Smile",
+  "spotlightQuote": "Czuję się o wiele pewniej",
+  "spotlightBtn": "Zapytaj o Podobny Zabieg",
+  "spotlightWhatsapp": "Dzień dobry, chciał(a)bym uzyskać informacje o zabiegu Hollywood Smile podobnym do przypadku Semy Yılmaz.",
+  "examineBtn": "Zobacz Metamorfozę",
+  "modalBefore": "Przed",
+  "modalAfter": "Po",
+  "modalWhatsappBtn": "Umów Wizytę na ten Zabieg przez WhatsApp",
+  "modalWhatsappMsg": "Dzień dobry, chciał(a)bym otrzymać bezpłatną konsultację i wycenę zabiegu {treatment} pacjenta {name}.",
+  "items": {
+    "case1": { "treatment": "Implanty i Korony Cyrkonowe", "quote": "" },
+    "case2": { "treatment": "Licówki E-max", "quote": "Zyskałem(am) swój wymarzony uśmiech!" },
+    "case3": { "treatment": "Implanty Zębowe", "quote": "Odzyskałem(am) własne zęby!" },
+    "case4": { "treatment": "Implanty i Korony Cyrkonowe", "quote": "" },
+    "case5": { "treatment": "Smile Makeover", "quote": "" },
+    "case6": { "treatment": "Wybielanie i Estetyka", "quote": "" }
+  }
+}

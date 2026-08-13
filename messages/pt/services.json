@@ -1,13 +1,80 @@
 {
   "title": "Nossos Tratamentos",
-  "subtitle": "Os serviços odontológicos oferecidos são moldados de acordo com a prática odontológica e avaliações clínicas.",
-  "smileDesign": { "title": "Design de Sorriso", "description": "Design de sorriso digital personalizado para as proporções do seu rosto." },
-  "implant": { "title": "Implantes Dentários", "description": "Implantes de titânio duradouros que proporcionam sensação natural." },
-  "emax": { "title": "Laminados E-max", "description": "Facetas de porcelana ultra-finas com alta translucidez." },
-  "zirconia": { "title": "Coroas de Zircônia", "description": "Coroas de zircônia altamente duráveis com estética natural." },
-  "whitening": { "title": "Clareamento Dental", "description": "Tratamento de clareamento a laser seguro e rápido." },
-  "rootCanal": { "title": "Tratamento de Canal", "description": "Terapia indolor de preservação dental assistida por microscópio." },
-  "dentures": { "title": "Próteses Dentárias", "description": "Próteses fixas e removíveis confortáveis e com aparência natural." },
-  "bonding": { "title": "Bonding Resina", "description": "Restauração estética de dentes fraturados ou espaçados em sessão única." },
-  "orthodontics": { "title": "Ortodontia", "description": "Alinhadores transparentes e aparelhos estéticos para dentes alinhados." }
+  "subtitle": "Os serviços dentários oferecidos adaptam-se aos mais altos padrões odontológicos e avaliações clínicas individuais.",
+  "metaTitle": "Tratamentos Dentários Abrangentes | Master Smile Studio",
+  "metaDescription": "Mais de 16 especialidades dentárias avançadas com tecnologia de ponta e equipa experiente para a sua saúde oral.",
+  "breadcrumbHome": "Início",
+  "breadcrumbTreatments": "Tratamentos",
+  "pageTitle": "Nossos Tratamentos",
+  "pageSubtitle": "Descubra os detalhes dos nossos tratamentos dentários estéticos e clínicos realizados com tecnologia digital de ponta.",
+  "getAppointmentBtn": "Agendar Consulta & Info",
+  "whatsappInquiry": "Olá, gostaria de obter informações detalhadas e agendar uma consulta para o tratamento de {treatment}.",
+  "exploreCasesBtn": "Ver Casos Clínicos",
+  "casesTitle": "Casos Clínicos",
+  "casesSubtitle": "Examine o planeamento digital de sorrisos antes e depois e as fotografias clínicas dos nossos pacientes.",
+  "prevCase": "Caso Anterior",
+  "nextCase": "Caso Seguinte",
+  "doctorsTitle": "Nossos Médicos & Especialidades",
+  "doctorTulayTitle": "Cirurgiã Oral e Maxilofacial",
+  "doctorAliKemalTitle": "Médico Dentista Especialista",
+  "doctorAbdullahTitle": "Endodontia e Dentisteria Restauradora",
+  "smileDesign": { "title": "Design do Sorriso", "description": "Design de sorriso digital personalizado de acordo com a proporção áurea facial." },
+  "implant": { "title": "Implantes Dentários", "description": "Implantes de titânio biocompatíveis para uma sensação dental natural e duradoura." },
+  "emax": { "title": "Facetas E-max", "description": "Facetas ultrafinas de porcelana com elevada translucidez natural." },
+  "zirconia": { "title": "Coroas de Zircónia", "description": "Coroas sem metal de alta durabilidade e estética natural impecável." },
+  "whitening": { "title": "Branqueamento Dentário", "description": "Branqueamento a laser clínico profissional rápido e seguro." },
+  "rootCanal": { "title": "Desvitalização (Endodontia)", "description": "Tratamento indolor com microscópio para salvar dentes naturais." },
+  "dentures": { "title": "Próteses Dentárias", "description": "Próteses fixas e removíveis confortáveis com aparência natural." },
+  "bonding": { "title": "Bonding Compósito", "description": "Reparação estética em sessão única para dentes fraturados ou espaçados." },
+  "orthodontics": { "title": "Ortodontia", "description": "Alinhadores transparentes e aparelhos estéticos para um alinhamento perfeito." },
+  "items": {
+    "smileDesign": {
+      "title": "DESIGN DO SORRISO",
+      "description": "O seu sorriso de sonho através da análise da proporção áurea e arquitetura digital 3D."
+    },
+    "implant": {
+      "title": "IMPLANTES DENTÁRIOS",
+      "description": "Soluções de titânio biocompatíveis que proporcionam sensação natural e conforto duradouro na falta de dentes."
+    },
+    "emax": {
+      "title": "FACETAS E-MAX",
+      "description": "Facetas cerâmicas ultrafinas com excelente translucidez aplicadas com mínimo desgaste dentário."
+    },
+    "zirconia": {
+      "title": "COROAS DE ZIRCÓNIA",
+      "description": "Coroas livres de metal com máxima resistência e passagem de luz semelhante ao esmalte natural."
+    },
+    "whitening": {
+      "title": "BRANQUEAMENTO DENTÁRIO",
+      "description": "Branqueamento a laser em clínica para clarear de 3 a 4 tons de forma rápida e segura."
+    },
+    "rootCanal": {
+      "title": "DESVITALIZAÇÃO (ENDODONTIA)",
+      "description": "Terapia indolor de preservação dentária com instrumentação rotatória e microscopia clínica."
+    },
+    "dentures": {
+      "title": "PRÓTESES DENTÁRIAS",
+      "description": "Próteses modernas fixas e removíveis que restauram a função mastigatória e estética."
+    },
+    "bonding": {
+      "title": "BONDING COMPÓSITO",
+      "description": "Correção estética direta de fraturas, diastemas e formato dentário numa única consulta."
+    },
+    "bridge": {
+      "title": "PONTES DENTÁRIAS",
+      "description": "Pontes apoiadas em dentes vizinhos para fechar espaços dentários com firmeza e beleza."
+    },
+    "periodontology": {
+      "title": "PERIODONTOLOGIA (TRATAMENTO GENGIVAL)",
+      "description": "Tratamentos especializados para conter sangramento, retração gengival e proteger os tecidos de suporte."
+    },
+    "allOnX": {
+      "title": "DENTES FIXOS NO MESMO DIA (ALL-ON-X)",
+      "description": "Protocolo cirúrgico avançado que permite colocar implantes e dentes fixos no mesmo dia para desdentados totais."
+    },
+    "surgery": {
+      "title": "CIRURGIA ORAL E MAXILOFACIAL",
+      "description": "Especialização cirúrgica em extrações de dentes do siso, quistos e enxertos ósseos."
+    }
+  }
 }

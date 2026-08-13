@@ -14,6 +14,7 @@ import trBrands from '../../messages/tr/brands.json';
 import trBlog from '../../messages/tr/blog.json';
 import trFaq from '../../messages/tr/faq.json';
 import trFooter from '../../messages/tr/footer.json';
+import trGallery from '../../messages/tr/gallery.json';
 
 // EN
 import enCommon from '../../messages/en/common.json';
@@ -27,6 +28,7 @@ import enBrands from '../../messages/en/brands.json';
 import enBlog from '../../messages/en/blog.json';
 import enFaq from '../../messages/en/faq.json';
 import enFooter from '../../messages/en/footer.json';
+import enGallery from '../../messages/en/gallery.json';
 
 // DE
 import deCommon from '../../messages/de/common.json';
@@ -40,6 +42,7 @@ import deBrands from '../../messages/de/brands.json';
 import deBlog from '../../messages/de/blog.json';
 import deFaq from '../../messages/de/faq.json';
 import deFooter from '../../messages/de/footer.json';
+import deGallery from '../../messages/de/gallery.json';
 
 // RU
 import ruCommon from '../../messages/ru/common.json';
@@ -53,6 +56,7 @@ import ruBrands from '../../messages/ru/brands.json';
 import ruBlog from '../../messages/ru/blog.json';
 import ruFaq from '../../messages/ru/faq.json';
 import ruFooter from '../../messages/ru/footer.json';
+import ruGallery from '../../messages/ru/gallery.json';
 
 // ES
 import esCommon from '../../messages/es/common.json';
@@ -66,6 +70,7 @@ import esBrands from '../../messages/es/brands.json';
 import esBlog from '../../messages/es/blog.json';
 import esFaq from '../../messages/es/faq.json';
 import esFooter from '../../messages/es/footer.json';
+import esGallery from '../../messages/es/gallery.json';
 
 // PT
 import ptCommon from '../../messages/pt/common.json';
@@ -79,6 +84,7 @@ import ptBrands from '../../messages/pt/brands.json';
 import ptBlog from '../../messages/pt/blog.json';
 import ptFaq from '../../messages/pt/faq.json';
 import ptFooter from '../../messages/pt/footer.json';
+import ptGallery from '../../messages/pt/gallery.json';
 
 // PL
 import plCommon from '../../messages/pl/common.json';
@@ -92,6 +98,7 @@ import plBrands from '../../messages/pl/brands.json';
 import plBlog from '../../messages/pl/blog.json';
 import plFaq from '../../messages/pl/faq.json';
 import plFooter from '../../messages/pl/footer.json';
+import plGallery from '../../messages/pl/gallery.json';
 
 const buildMessages = (
   commonData: any,
@@ -104,7 +111,8 @@ const buildMessages = (
   brandsData: any,
   blogData: any,
   faqData: any,
-  footerData: any
+  footerData: any,
+  galleryData: any
 ) => ({
   common: commonData,
   home: homeData,
@@ -117,16 +125,17 @@ const buildMessages = (
   blog: blogData,
   faq: faqData,
   footer: footerData,
+  gallery: galleryData,
 });
 
 const messagesMap: Record<string, any> = {
-  tr: buildMessages(trCommon, trHome, trAbout, trServices, trContact, trProcess, trTeam, trBrands, trBlog, trFaq, trFooter),
-  en: buildMessages(enCommon, enHome, enAbout, enServices, enContact, enProcess, enTeam, enBrands, enBlog, enFaq, enFooter),
-  de: buildMessages(deCommon, deHome, deAbout, deServices, deContact, deProcess, deTeam, deBrands, deBlog, deFaq, deFooter),
-  ru: buildMessages(ruCommon, ruHome, ruAbout, ruServices, ruContact, ruProcess, ruTeam, ruBrands, ruBlog, ruFaq, ruFooter),
-  es: buildMessages(esCommon, esHome, esAbout, esServices, esContact, esProcess, esTeam, esBrands, esBlog, esFaq, esFooter),
-  pt: buildMessages(ptCommon, ptHome, ptAbout, ptServices, ptContact, ptProcess, ptTeam, ptBrands, ptBlog, ptFaq, ptFooter),
-  pl: buildMessages(plCommon, plHome, plAbout, plServices, plContact, plProcess, plTeam, plBrands, plBlog, plFaq, plFooter),
+  tr: buildMessages(trCommon, trHome, trAbout, trServices, trContact, trProcess, trTeam, trBrands, trBlog, trFaq, trFooter, trGallery),
+  en: buildMessages(enCommon, enHome, enAbout, enServices, enContact, enProcess, enTeam, enBrands, enBlog, enFaq, enFooter, enGallery),
+  de: buildMessages(deCommon, deHome, deAbout, deServices, deContact, deProcess, deTeam, deBrands, deBlog, deFaq, deFooter, deGallery),
+  ru: buildMessages(ruCommon, ruHome, ruAbout, ruServices, ruContact, ruProcess, ruTeam, ruBrands, ruBlog, ruFaq, ruFooter, ruGallery),
+  es: buildMessages(esCommon, esHome, esAbout, esServices, esContact, esProcess, esTeam, esBrands, esBlog, esFaq, esFooter, esGallery),
+  pt: buildMessages(ptCommon, ptHome, ptAbout, ptServices, ptContact, ptProcess, ptTeam, ptBrands, ptBlog, ptFaq, ptFooter, ptGallery),
+  pl: buildMessages(plCommon, plHome, plAbout, plServices, plContact, plProcess, plTeam, plBrands, plBlog, plFaq, plFooter, plGallery),
 };
 
 export default getRequestConfig(async ({ requestLocale }) => {

@@ -2,27 +2,26 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
+import { useTranslations, useLocale } from 'next-intl';
 import { getWhatsAppLink } from '@/config/site';
 
 interface GalleryItem {
   id: string;
   category: string;
   name: string;
-  treatment: string;
   shade: string;
-  quote?: string;
+  hasQuote?: boolean;
   icons?: string[];
   beforeImage: string;
   afterImage: string;
   portraitImage: string;
 }
 
-const galleryData: GalleryItem[] = [
+const rawGalleryData: GalleryItem[] = [
   {
-    id: 'case-1',
+    id: 'case1',
     category: 'zirconium',
     name: 'Deniz Kaya',
-    treatment: 'Implants & Zirkonyum Kaplama',
     shade: 'OM1',
     icons: ['Crowns', 'Implants', 'Whitening', 'Veneers'],
     beforeImage: '/transformations/t1.jpg',
@@ -30,32 +29,29 @@ const galleryData: GalleryItem[] = [
     portraitImage: '/patients/patient-2.jpeg',
   },
   {
-    id: 'case-2',
+    id: 'case2',
     category: 'emax',
     name: 'Kerem Öztürk',
-    treatment: 'E-max Laminate',
     shade: 'OM1',
-    quote: 'Hayalimdeki gülüşe kavuştum!',
+    hasQuote: true,
     beforeImage: '/transformations/t2.jpg',
     afterImage: '/transformations/t2.jpg',
     portraitImage: '/patients/patient-4.jpeg',
   },
   {
-    id: 'case-3',
+    id: 'case3',
     category: 'implant',
     name: 'Deniz Kaya',
-    treatment: 'Dental İmplant',
     shade: 'OM1',
-    quote: 'Dişlerimi geri kazandım!',
+    hasQuote: true,
     beforeImage: '/transformations/t3.jpg',
     afterImage: '/transformations/t3.jpg',
     portraitImage: '/patients/patient-1.jpeg',
   },
   {
-    id: 'case-4',
+    id: 'case4',
     category: 'zirconium',
     name: 'Deniz Kaya',
-    treatment: 'Implants & Zirkonyum Kaplama',
     shade: 'OM1',
     icons: ['Crowns', 'Implants', 'Whitening', 'Veneers'],
     beforeImage: '/transformations/t4.jpg',
@@ -63,10 +59,9 @@ const galleryData: GalleryItem[] = [
     portraitImage: '/patients/patient-3.jpeg',
   },
   {
-    id: 'case-5',
+    id: 'case5',
     category: 'makeover',
     name: 'Elif Aydın',
-    treatment: 'Smile Makeover',
     shade: 'OM1',
     icons: ['Crowns', 'Implants', 'Whitening', 'Veneers'],
     beforeImage: '/transformations/t5.jpg',
@@ -74,10 +69,9 @@ const galleryData: GalleryItem[] = [
     portraitImage: '/patients/patient-5.jpeg',
   },
   {
-    id: 'case-6',
+    id: 'case6',
     category: 'whitening',
     name: 'Elif Aydın',
-    treatment: 'Smile Makeover',
     shade: 'OM1',
     icons: ['Crowns', 'Implants', 'Whitening'],
     beforeImage: '/transformations/t6.jpg',
@@ -86,22 +80,33 @@ const galleryData: GalleryItem[] = [
   },
 ];
 
-const categories = [
-  { id: 'all', label: 'Tüm Sonuçlar' },
-  { id: 'makeover', label: 'Smile Makeover' },
-  { id: 'implant', label: 'Dental İmplant' },
-  { id: 'emax', label: 'E-max Lamine' },
-  { id: 'zirconium', label: 'Zirkonyum Kaplama' },
-  { id: 'whitening', label: 'Diş Beyazlatma' },
-];
+export default function GalleryGrid({ locale: propsLocale }: { locale?: string }) {
+  const t = useTranslations('gallery');
+  const contextLocale = useLocale();
+  const locale = propsLocale || contextLocale || 'tr';
 
-export default function GalleryGrid({ locale = 'tr' }: { locale?: string }) {
   const [activeCategory, setActiveCategory] = useState('all');
-  const [selectedCase, setSelectedCase] = useState<GalleryItem | null>(null);
+  const [selectedCase, setSelectedCase] = useState<{
+    id: string;
+    name: string;
+    treatment: string;
+    shade: string;
+    beforeImage: string;
+    portraitImage: string;
+  } | null>(null);
+
+  const categories = [
+    { id: 'all', label: t('categories.all') },
+    { id: 'makeover', label: t('categories.makeover') },
+    { id: 'implant', label: t('categories.implant') },
+    { id: 'emax', label: t('categories.emax') },
+    { id: 'zirconium', label: t('categories.zirconium') },
+    { id: 'whitening', label: t('categories.whitening') },
+  ];
 
   const filteredItems = activeCategory === 'all'
-    ? galleryData
-    : galleryData.filter((item) => item.category === activeCategory);
+    ? rawGalleryData
+    : rawGalleryData.filter((item) => item.category === activeCategory);
 
   return (
     <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 1.5rem 6rem 1.5rem' }}>
@@ -202,7 +207,7 @@ export default function GalleryGrid({ locale = 'tr' }: { locale?: string }) {
             >
               <Image
                 src="/transformations/t1.jpg"
-                alt="Tedavi Öncesi"
+                alt={t('before')}
                 fill
                 unoptimized
                 style={{ objectFit: 'cover', objectPosition: 'center' }}
@@ -220,7 +225,7 @@ export default function GalleryGrid({ locale = 'tr' }: { locale?: string }) {
                   borderRadius: '4px',
                 }}
               >
-                Önce
+                {t('before')}
               </span>
             </div>
 
@@ -241,7 +246,7 @@ export default function GalleryGrid({ locale = 'tr' }: { locale?: string }) {
             >
               <Image
                 src="/transformations/t1.jpg"
-                alt="Tedavi Sonrası"
+                alt={t('after')}
                 fill
                 unoptimized
                 style={{ objectFit: 'cover', objectPosition: 'center' }}
@@ -259,7 +264,7 @@ export default function GalleryGrid({ locale = 'tr' }: { locale?: string }) {
                   borderRadius: '4px',
                 }}
               >
-                Sonra
+                {t('after')}
               </span>
             </div>
           </div>
@@ -276,8 +281,9 @@ export default function GalleryGrid({ locale = 'tr' }: { locale?: string }) {
           >
             <Image
               src="/patients/patient-1.jpeg"
-              alt="Sema Yılmaz - Full Hollywood Smile"
+              alt={`${t('spotlightPatient')} - ${t('spotlightTreatment')}`}
               fill
+              priority
               unoptimized
               style={{ objectFit: 'cover', objectPosition: 'top center' }}
             />
@@ -295,7 +301,7 @@ export default function GalleryGrid({ locale = 'tr' }: { locale?: string }) {
               letterSpacing: '-0.02em',
             }}
           >
-            Sema Yılmaz
+            {t('spotlightPatient')}
           </h3>
           <div
             style={{
@@ -305,7 +311,7 @@ export default function GalleryGrid({ locale = 'tr' }: { locale?: string }) {
               marginBottom: '1rem',
             }}
           >
-            Full Hollywood Smile
+            {t('spotlightTreatment')}
           </div>
           <blockquote
             style={{
@@ -317,12 +323,12 @@ export default function GalleryGrid({ locale = 'tr' }: { locale?: string }) {
               fontWeight: 300,
             }}
           >
-            &ldquo;Daha özgüvenli hissediyorum&rdquo;
+            &ldquo;{t('spotlightQuote')}&rdquo;
           </blockquote>
 
           <div style={{ marginTop: '2rem' }}>
             <a
-              href={getWhatsAppLink(locale, 'Merhaba, Sema Yılmaz vakasındaki Hollywood Smile tedavisi hakkında bilgi almak istiyorum.')}
+              href={getWhatsAppLink(locale, t('spotlightWhatsapp'))}
               target="_blank"
               rel="noopener noreferrer"
               style={{
@@ -340,14 +346,14 @@ export default function GalleryGrid({ locale = 'tr' }: { locale?: string }) {
               }}
               className="gallery-cta-btn"
             >
-              <span>Benzer Tedavi İçin Bilgi Al</span>
+              <span>{t('spotlightBtn')}</span>
               <span>→</span>
             </a>
           </div>
         </div>
       </div>
 
-      {/* 3-Column Patient Cases Grid (6 Cards Matching Screenshot) */}
+      {/* 3-Column Patient Cases Grid */}
       <div
         style={{
           display: 'grid',
@@ -355,200 +361,215 @@ export default function GalleryGrid({ locale = 'tr' }: { locale?: string }) {
           gap: '2rem',
         }}
       >
-        {filteredItems.map((item) => (
-          <div
-            key={item.id}
-            style={{
-              backgroundColor: '#ffffff',
-              borderRadius: '20px',
-              border: '1px solid #e2e8f0',
-              boxShadow: '0 4px 16px rgba(0, 0, 0, 0.04)',
-              overflow: 'hidden',
-              display: 'flex',
-              flexDirection: 'column',
-              transition: 'transform 0.25s ease, box-shadow 0.25s ease',
-            }}
-            className="gallery-case-card"
-          >
-            {/* Top Media Split (Left 2 Stacked Teeth | Right Portrait) */}
+        {filteredItems.map((item) => {
+          const treatmentText = t(`items.${item.id}.treatment` as any);
+          const quoteText = item.hasQuote ? t(`items.${item.id}.quote` as any) : '';
+
+          return (
             <div
+              key={item.id}
               style={{
-                display: 'grid',
-                gridTemplateColumns: '1.05fr 1.3fr',
-                backgroundColor: '#09090b',
-                minHeight: '280px',
+                backgroundColor: '#ffffff',
+                borderRadius: '20px',
+                border: '1px solid #e2e8f0',
+                boxShadow: '0 4px 16px rgba(0, 0, 0, 0.04)',
+                overflow: 'hidden',
+                display: 'flex',
+                flexDirection: 'column',
+                transition: 'transform 0.25s ease, box-shadow 0.25s ease',
               }}
+              className="gallery-case-card"
             >
-              {/* Left Column: 2 Closeups */}
+              {/* Top Media Split */}
               <div
                 style={{
-                  display: 'flex',
-                  flexDirection: 'column',
-                  borderRight: '1px solid rgba(255, 255, 255, 0.08)',
+                  display: 'grid',
+                  gridTemplateColumns: '1.05fr 1.3fr',
+                  backgroundColor: '#09090b',
+                  minHeight: '280px',
                 }}
               >
-                {/* Top Closeup (Önce) */}
-                <div style={{ position: 'relative', height: '140px', overflow: 'hidden' }}>
-                  <Image
-                    src={item.beforeImage}
-                    alt={`${item.name} Öncesi`}
-                    fill
-                    unoptimized
-                    style={{ objectFit: 'cover' }}
-                  />
-                  <span
-                    style={{
-                      position: 'absolute',
-                      bottom: '0.4rem',
-                      left: '50%',
-                      transform: 'translateX(-50%)',
-                      backgroundColor: 'rgba(0, 0, 0, 0.8)',
-                      color: '#ffffff',
-                      fontSize: '0.7rem',
-                      fontWeight: 500,
-                      padding: '0.15rem 0.5rem',
-                      borderRadius: '4px',
-                    }}
-                  >
-                    Önce
-                  </span>
-                </div>
-
-                {/* Bottom Closeup (Önce / Detay) */}
-                <div style={{ position: 'relative', height: '140px', overflow: 'hidden', borderTop: '1px solid rgba(255, 255, 255, 0.08)' }}>
-                  <Image
-                    src={item.afterImage}
-                    alt={`${item.name} Detayı`}
-                    fill
-                    unoptimized
-                    style={{ objectFit: 'cover' }}
-                  />
-                  <span
-                    style={{
-                      position: 'absolute',
-                      bottom: '0.4rem',
-                      left: '50%',
-                      transform: 'translateX(-50%)',
-                      backgroundColor: 'rgba(0, 0, 0, 0.8)',
-                      color: '#ffffff',
-                      fontSize: '0.7rem',
-                      fontWeight: 500,
-                      padding: '0.15rem 0.5rem',
-                      borderRadius: '4px',
-                    }}
-                  >
-                    Önce
-                  </span>
-                </div>
-              </div>
-
-              {/* Right Column: Full Smiling Portrait (Sonra) */}
-              <div style={{ position: 'relative', height: '280px' }}>
-                <Image
-                  src={item.portraitImage}
-                  alt={`${item.name} Sonrası`}
-                  fill
-                  unoptimized
-                  style={{ objectFit: 'cover', objectPosition: 'top center' }}
-                />
-                <span
+                {/* Left Column: 2 Closeups */}
+                <div
                   style={{
-                    position: 'absolute',
-                    bottom: '0.5rem',
-                    left: '50%',
-                    transform: 'translateX(-50%)',
-                    backgroundColor: 'rgba(0, 0, 0, 0.8)',
-                    color: '#ffffff',
-                    fontSize: '0.75rem',
-                    fontWeight: 500,
-                    padding: '0.2rem 0.75rem',
-                    borderRadius: '4px',
-                  }}
-                >
-                  Sonra
-                </span>
-              </div>
-            </div>
-
-            {/* Bottom Card Content */}
-            <div style={{ padding: '1.5rem', display: 'flex', flexDirection: 'column', flex: 1 }}>
-              {/* Header: Name + Shade Badge */}
-              <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', marginBottom: '0.35rem' }}>
-                <div>
-                  <h4 style={{ fontSize: '1.1rem', fontWeight: 400, color: '#0f172a', margin: '0 0 0.15rem 0' }}>
-                    {item.name}
-                  </h4>
-                  <div style={{ fontSize: '0.9rem', fontWeight: 300, color: '#64748b' }}>
-                    {item.treatment}
-                  </div>
-                </div>
-
-                <span
-                  style={{
-                    backgroundColor: '#d97706',
-                    color: '#ffffff',
-                    fontSize: '0.7rem',
-                    fontWeight: 500,
-                    padding: '0.2rem 0.5rem',
-                    borderRadius: '5px',
-                  }}
-                >
-                  {item.shade}
-                </span>
-              </div>
-
-              {/* Middle Feature: Quote or Tooth Icons */}
-              <div style={{ minHeight: '40px', display: 'flex', alignItems: 'center', margin: '0.75rem 0 1.25rem 0' }}>
-                {item.quote ? (
-                  <p style={{ fontSize: '0.875rem', color: '#64748b', margin: 0, fontStyle: 'italic', fontWeight: 300 }}>
-                    &ldquo;{item.quote}&rdquo;
-                  </p>
-                ) : (
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.85rem', flexWrap: 'wrap' }}>
-                    {item.icons?.map((icon) => (
-                      <div key={icon} style={{ display: 'flex', alignItems: 'center', gap: '0.3rem', fontSize: '0.75rem', color: '#64748b', fontWeight: 300 }}>
-                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                          <path d="M12 2C8.5 2 6 4.5 6 8c0 3 1.5 5.5 2 9 .3 2.1 1.5 3 4 3s3.7-.9 4-3c.5-3.5 2-6 2-9 0-3.5-2.5-6-6-6z" />
-                        </svg>
-                        <span>{icon}</span>
-                      </div>
-                    ))}
-                  </div>
-                )}
-              </div>
-
-              {/* Action Button: Dönüşümü İncele */}
-              <div style={{ marginTop: 'auto' }}>
-                <button
-                  onClick={() => setSelectedCase(item)}
-                  style={{
-                    width: '100%',
-                    backgroundColor: '#0f172a',
-                    color: '#ffffff',
-                    border: 'none',
-                    borderRadius: '10px',
-                    padding: '0.8rem',
-                    fontSize: '0.9rem',
-                    fontWeight: 400,
-                    cursor: 'pointer',
                     display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    gap: '0.4rem',
-                    transition: 'all 0.2s ease',
+                    flexDirection: 'column',
+                    borderRight: '1px solid rgba(255, 255, 255, 0.08)',
                   }}
-                  className="gallery-cta-btn"
                 >
-                  <span>Dönüşümü İncele</span>
-                  <span>→</span>
-                </button>
+                  {/* Top Closeup (Before) */}
+                  <div style={{ position: 'relative', height: '140px', overflow: 'hidden' }}>
+                    <Image
+                      src={item.beforeImage}
+                      alt={`${item.name} ${t('before')}`}
+                      fill
+                      unoptimized
+                      style={{ objectFit: 'cover' }}
+                    />
+                    <span
+                      style={{
+                        position: 'absolute',
+                        bottom: '0.4rem',
+                        left: '50%',
+                        transform: 'translateX(-50%)',
+                        backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                        color: '#ffffff',
+                        fontSize: '0.7rem',
+                        fontWeight: 500,
+                        padding: '0.15rem 0.5rem',
+                        borderRadius: '4px',
+                      }}
+                    >
+                      {t('before')}
+                    </span>
+                  </div>
+
+                  {/* Bottom Closeup (Detail) */}
+                  <div style={{ position: 'relative', height: '140px', overflow: 'hidden', borderTop: '1px solid rgba(255, 255, 255, 0.08)' }}>
+                    <Image
+                      src={item.afterImage}
+                      alt={`${item.name} ${t('after')}`}
+                      fill
+                      unoptimized
+                      style={{ objectFit: 'cover' }}
+                    />
+                    <span
+                      style={{
+                        position: 'absolute',
+                        bottom: '0.4rem',
+                        left: '50%',
+                        transform: 'translateX(-50%)',
+                        backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                        color: '#ffffff',
+                        fontSize: '0.7rem',
+                        fontWeight: 500,
+                        padding: '0.15rem 0.5rem',
+                        borderRadius: '4px',
+                      }}
+                    >
+                      {t('before')}
+                    </span>
+                  </div>
+                </div>
+
+                {/* Right Column: Full Smiling Portrait (After) */}
+                <div style={{ position: 'relative', height: '280px' }}>
+                  <Image
+                    src={item.portraitImage}
+                    alt={`${item.name} ${t('after')}`}
+                    fill
+                    unoptimized
+                    style={{ objectFit: 'cover', objectPosition: 'top center' }}
+                  />
+                  <span
+                    style={{
+                      position: 'absolute',
+                      bottom: '0.5rem',
+                      left: '50%',
+                      transform: 'translateX(-50%)',
+                      backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                      color: '#ffffff',
+                      fontSize: '0.75rem',
+                      fontWeight: 500,
+                      padding: '0.2rem 0.75rem',
+                      borderRadius: '4px',
+                    }}
+                  >
+                    {t('after')}
+                  </span>
+                </div>
+              </div>
+
+              {/* Bottom Card Content */}
+              <div style={{ padding: '1.5rem', display: 'flex', flexDirection: 'column', flex: 1 }}>
+                {/* Header: Name + Shade Badge */}
+                <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', marginBottom: '0.35rem' }}>
+                  <div>
+                    <h4 style={{ fontSize: '1.1rem', fontWeight: 400, color: '#0f172a', margin: '0 0 0.15rem 0' }}>
+                      {item.name}
+                    </h4>
+                    <div style={{ fontSize: '0.9rem', fontWeight: 300, color: '#64748b' }}>
+                      {treatmentText}
+                    </div>
+                  </div>
+
+                  <span
+                    style={{
+                      backgroundColor: '#d97706',
+                      color: '#ffffff',
+                      fontSize: '0.7rem',
+                      fontWeight: 500,
+                      padding: '0.2rem 0.5rem',
+                      borderRadius: '5px',
+                    }}
+                  >
+                    {item.shade}
+                  </span>
+                </div>
+
+                {/* Middle Feature: Quote or Tooth Icons */}
+                <div style={{ minHeight: '40px', display: 'flex', alignItems: 'center', margin: '0.75rem 0 1.25rem 0' }}>
+                  {quoteText ? (
+                    <p style={{ fontSize: '0.875rem', color: '#64748b', margin: 0, fontStyle: 'italic', fontWeight: 300 }}>
+                      &ldquo;{quoteText}&rdquo;
+                    </p>
+                  ) : (
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.85rem', flexWrap: 'wrap' }}>
+                      {item.icons?.map((icon) => {
+                        const iconLabel = t(`icons.${icon}` as any);
+                        return (
+                          <div key={icon} style={{ display: 'flex', alignItems: 'center', gap: '0.3rem', fontSize: '0.75rem', color: '#64748b', fontWeight: 300 }}>
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                              <path d="M12 2C8.5 2 6 4.5 6 8c0 3 1.5 5.5 2 9 .3 2.1 1.5 3 4 3s3.7-.9 4-3c.5-3.5 2-6 2-9 0-3.5-2.5-6-6-6z" />
+                            </svg>
+                            <span>{iconLabel || icon}</span>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  )}
+                </div>
+
+                {/* Action Button */}
+                <div style={{ marginTop: 'auto' }}>
+                  <button
+                    onClick={() => setSelectedCase({
+                      id: item.id,
+                      name: item.name,
+                      treatment: treatmentText,
+                      shade: item.shade,
+                      beforeImage: item.beforeImage,
+                      portraitImage: item.portraitImage,
+                    })}
+                    style={{
+                      width: '100%',
+                      backgroundColor: '#0f172a',
+                      color: '#ffffff',
+                      border: 'none',
+                      borderRadius: '10px',
+                      padding: '0.8rem',
+                      fontSize: '0.9rem',
+                      fontWeight: 400,
+                      cursor: 'pointer',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      gap: '0.4rem',
+                      transition: 'all 0.2s ease',
+                    }}
+                    className="gallery-cta-btn"
+                  >
+                    <span>{t('examineBtn')}</span>
+                    <span>→</span>
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
 
-      {/* Lightbox / Modal when clicking 'Dönüşümü İncele' */}
+      {/* Lightbox / Modal */}
       {selectedCase && (
         <div
           style={{
@@ -621,13 +642,13 @@ export default function GalleryGrid({ locale = 'tr' }: { locale?: string }) {
               <div style={{ position: 'relative', height: '240px', borderRadius: '12px', overflow: 'hidden', backgroundColor: '#09090b' }}>
                 <Image
                   src={selectedCase.beforeImage}
-                  alt="Önceki Durum"
+                  alt={t('modalBefore')}
                   fill
                   unoptimized
                   style={{ objectFit: 'cover' }}
                 />
                 <span style={{ position: 'absolute', bottom: '0.75rem', left: '0.75rem', backgroundColor: 'rgba(0,0,0,0.8)', color: '#fff', padding: '0.25rem 0.75rem', borderRadius: '6px', fontSize: '0.8rem', fontWeight: 400 }}>
-                  Önce
+                  {t('modalBefore')}
                 </span>
               </div>
 
@@ -635,20 +656,20 @@ export default function GalleryGrid({ locale = 'tr' }: { locale?: string }) {
               <div style={{ position: 'relative', height: '240px', borderRadius: '12px', overflow: 'hidden', backgroundColor: '#09090b' }}>
                 <Image
                   src={selectedCase.portraitImage}
-                  alt="Sonraki Durum"
+                  alt={t('modalAfter')}
                   fill
                   unoptimized
                   style={{ objectFit: 'cover', objectPosition: 'top center' }}
                 />
                 <span style={{ position: 'absolute', bottom: '0.75rem', left: '0.75rem', backgroundColor: '#d97706', color: '#fff', padding: '0.25rem 0.75rem', borderRadius: '6px', fontSize: '0.8rem', fontWeight: 500 }}>
-                  Sonra
+                  {t('modalAfter')}
                 </span>
               </div>
             </div>
 
             {/* WhatsApp Consultation Button */}
             <a
-              href={getWhatsAppLink(locale, `Merhaba, ${selectedCase.name} hastasının ${selectedCase.treatment} tedavisi hakkında ücretsiz konsültasyon ve fiyat almak istiyorum.`)}
+              href={getWhatsAppLink(locale, t('modalWhatsappMsg', { name: selectedCase.name, treatment: selectedCase.treatment }))}
               target="_blank"
               rel="noopener noreferrer"
               style={{
@@ -665,7 +686,7 @@ export default function GalleryGrid({ locale = 'tr' }: { locale?: string }) {
                 textDecoration: 'none',
               }}
             >
-              <span>WhatsApp ile Bu Tedavi İçin Randevu Al</span>
+              <span>{t('modalWhatsappBtn')}</span>
               <span>→</span>
             </a>
           </div>

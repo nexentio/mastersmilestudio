@@ -1,0 +1,42 @@
+{
+  "metaTitle": "Perfektes Lächeln Galerie | Master Smile Studio",
+  "metaDescription": "Transformationsgeschichten, Vorher-Nachher-Smile-Designs und Patientenerfahrungen unserer Zahnärzte.",
+  "breadcrumbHome": "Startseite",
+  "breadcrumbGallery": "Lächeln-Galerie",
+  "pageTitle": "Lächeln-Galerie",
+  "pageSubtitle": "Entdecken Sie die Transformationsgeschichten und Vorher-Nachher-Fälle unserer Patienten, die ihr Traumlächeln erreicht haben.",
+  "categories": {
+    "all": "Alle Ergebnisse",
+    "makeover": "Smile Makeover",
+    "implant": "Zahnimplantate",
+    "emax": "E-Max Veneers",
+    "zirconium": "Zirkonkronen",
+    "whitening": "Zahnaufhellung"
+  },
+  "icons": {
+    "Crowns": "Kronen",
+    "Implants": "Implantate",
+    "Whitening": "Aufhellung",
+    "Veneers": "Veneers"
+  },
+  "before": "Vorher",
+  "after": "Nachher",
+  "spotlightPatient": "Sema Yılmaz",
+  "spotlightTreatment": "Full Hollywood Smile",
+  "spotlightQuote": "Ich fühle mich so viel selbstbewusster",
+  "spotlightBtn": "Ähnliche Behandlung Anfragen",
+  "spotlightWhatsapp": "Hallo, ich möchte mich über die Hollywood Smile Behandlung ähnlich dem Fall von Sema Yılmaz informieren.",
+  "examineBtn": "Transformation Ansehen",
+  "modalBefore": "Vorher",
+  "modalAfter": "Nachher",
+  "modalWhatsappBtn": "Termin für diese Behandlung per WhatsApp buchen",
+  "modalWhatsappMsg": "Hallo, ich möchte eine kostenlose Beratung und Preise für die Behandlung {treatment} des Patienten {name} anfragen.",
+  "items": {
+    "case1": { "treatment": "Implantate & Zirkonkronen", "quote": "" },
+    "case2": { "treatment": "E-Max Veneers", "quote": "Ich habe mein Traumlächeln bekommen!" },
+    "case3": { "treatment": "Zahnimplantate", "quote": "Ich habe meine Zähne zurückgewonnen!" },
+    "case4": { "treatment": "Implantate & Zirkonkronen", "quote": "" },
+    "case5": { "treatment": "Smile Makeover", "quote": "" },
+    "case6": { "treatment": "Zahnaufhellung & Ästhetik", "quote": "" }
+  }
+}

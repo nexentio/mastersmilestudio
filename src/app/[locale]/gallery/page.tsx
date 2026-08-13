@@ -1,8 +1,8 @@
-import { setRequestLocale } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import GalleryGrid from '@/components/GalleryGrid';
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
 
 export async function generateMetadata({
   params,
@@ -11,10 +11,11 @@ export async function generateMetadata({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const t = await getTranslations({ locale, namespace: 'gallery' });
 
   return {
-    title: 'Kusursuz Gülüşler Galerisi | Master Smile Studio',
-    description: 'Uzm. Hekimlerimizin elinden çıkan, hayallerindeki gülüşe kavuşan hastalarımızın dönüşüm hikayeleri ve öncesi/sonrası gülüş tasarımları.',
+    title: t('metaTitle'),
+    description: t('metaDescription'),
   };
 }
 
@@ -25,13 +26,14 @@ export default async function GalleryPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const t = await getTranslations('gallery');
 
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', backgroundColor: '#fcfcfd', color: '#0f172a' }}>
       {/* Global Navigation Header */}
       <Header />
 
-      {/* Main Gallery Page Hero Section (Split Layout matching Treatments Page) */}
+      {/* Main Gallery Page Hero Section */}
       <section
         style={{
           padding: '3.5rem 1.5rem 2.5rem 1.5rem',
@@ -62,9 +64,9 @@ export default async function GalleryPage({
                 <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
                 <polyline points="9 22 9 12 15 12 15 22" />
               </svg>
-              <span>Anasayfa</span>
+              <span>{t('breadcrumbHome')}</span>
               <span style={{ color: '#cbd5e1' }}>›</span>
-              <span style={{ color: '#0f172a', fontWeight: 500 }}>Gülüş Galerisi</span>
+              <span style={{ color: '#0f172a', fontWeight: 500 }}>{t('breadcrumbGallery')}</span>
             </Link>
           </div>
 
@@ -91,7 +93,7 @@ export default async function GalleryPage({
                   margin: 0,
                 }}
               >
-                Gülüş Galerisi
+                {t('pageTitle')}
               </h1>
             </div>
 
@@ -105,7 +107,7 @@ export default async function GalleryPage({
                   fontWeight: 300,
                 }}
               >
-                Uzm. Hekimlerimizin elinden çıkan, hayallerindeki gülüşe kavuşan hastalarımızın dönüşüm hikayeleri ve öncesi/sonrası vakaları.
+                {t('pageSubtitle')}
               </p>
             </div>
           </div>
@@ -114,7 +116,7 @@ export default async function GalleryPage({
 
       {/* Interactive Filterable Gallery Grid & Featured Showcase */}
       <main style={{ flex: 1 }}>
-        <GalleryGrid locale={locale} />
+        <GalleryGrid />
       </main>
 
       {/* Luxury Studio Footer */}

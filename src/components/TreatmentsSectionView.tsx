@@ -2,158 +2,76 @@
 
 import React, { useRef } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
+import { useTranslations, useLocale } from 'next-intl';
 import { getWhatsAppLink } from '@/config/site';
 
-interface TreatmentItem {
-  id: string;
-  title: string;
-  description: string;
-  image: string;
-}
-
-const treatmentsList: TreatmentItem[] = [
-  {
-    id: 'gulus-tasarimi',
-    title: 'GÜLÜŞ TASARIMI',
-    description: 'Yüz hatlarınıza özel altın oran ve 3D dijital gülüş mimarisi ile hayalinizdeki kusursuz estetik gülümseme.',
-    image: '/smile-makeover.jpg',
-  },
-  {
-    id: 'implant-tedavisi',
-    title: 'İMPLANT TEDAVİSİ',
-    description: 'Eksik dişleriniz için doğal diş hissi ve ömürlük konfor sunan doku dostu titanyum implant çözümleri.',
-    image: '/dental-implant-mss.jpeg',
-  },
-  {
-    id: 'emax-lamina',
-    title: 'E-MAX LAMİNA',
-    description: 'Minimum aşındırma ile diş yüzeyine uygulanan ultra ince, ışık geçirgenliği yüksek estetik yaprak porselenler.',
-    image: '/e-max-lamine-treatment-mss.jpeg',
-  },
-  {
-    id: 'zirkonyum-kronlar',
-    title: 'ZİRKONYUM KRONLAR',
-    description: 'Doğal diş minesine en yakın ışık geçirgenliği ve yüksek dayanıklılık sunan metal desteksiz kaplamalar.',
-    image: '/transformations/t1.jpg',
-  },
-  {
-    id: 'dis-beyazlatma',
-    title: 'DİŞ BEYAZLATMA',
-    description: 'Kısa sürede güvenle 3-4 ton beyazlık sağlayan profesyonel klinik tipi lazerli beyazlatma.',
-    image: '/teeth-whiting-treatment.jpeg',
-  },
-  {
-    id: 'kanal-tedavisi',
-    title: 'KANAL TEDAVİSİ',
-    description: 'İleri teknoloji döner aletler ve mikroskop eşliğinde ağrısız doğal diş kurtarma tedavisi.',
-    image: '/transformations/t4.jpg',
-  },
-  {
-    id: 'dis-protezleri',
-    title: 'DİŞ PROTEZLERİ',
-    description: 'Tam veya kısmi diş eksikliklerinde çiğneme fonksiyonunu ve estetiği geri kazandıran modern protezler.',
-    image: '/transformations/t3.jpg',
-  },
-  {
-    id: 'kompozit-bonding',
-    title: 'KOMPOZİT BONDİNG',
-    description: 'Dişlerdeki kırık, aralık ve şekil bozukluklarını tek seansta gideren estetik kompozit uygulamalar.',
-    image: '/transformations/t5.jpg',
-  },
-  {
-    id: 'dis-koprusu',
-    title: 'DİŞ KÖPRÜSÜ',
-    description: 'Komşu dişlerden destek alarak diş boşluklarını estetik ve sağlam biçimde kapatan köprü sistemleri.',
-    image: '/transformations/t6.jpg',
-  },
-  {
-    id: 'periodontoloji',
-    title: 'PERİODONTOLOJİ (DİŞ ETİ TEDAVİSİ)',
-    description: 'Diş eti çekilmesi, kanaması ve diş çevresi dokuların sağlığını koruyan uzman diş eti tedavileri.',
-    image: '/transformations/t2.jpg',
-  },
-  {
-    id: 'bir-gunde-sabit-dis',
-    title: 'BİR GÜNDE SABİT DİŞ (ALL-ON-X)',
-    description: 'Tam dişsiz çenelerde aynı gün implant ve sabit geçici diş takılmasını sağlayan ileri cerrahi protokol.',
-    image: '/dental-implant-mss.jpeg',
-  },
-  {
-    id: 'cene-cerrahisi',
-    title: 'AĞIZ, DİŞ VE ÇENE CERRAHİSİ',
-    description: 'Gömülü 20\'lik diş çekimleri, kist operasyonları ve kemik ogmentasyonu cerrahi uzmanlığı.',
-    image: '/smile-between-section.png',
-  },
-];
+const treatmentKeys = [
+  { key: 'smileDesign', image: '/smile-makeover.jpg' },
+  { key: 'implant', image: '/dental-implant-mss.jpeg' },
+  { key: 'emax', image: '/e-max-lamine-treatment-mss.jpeg' },
+  { key: 'zirconia', image: '/transformations/t1.jpg' },
+  { key: 'whitening', image: '/teeth-whiting-treatment.jpeg' },
+  { key: 'rootCanal', image: '/transformations/t4.jpg' },
+  { key: 'dentures', image: '/transformations/t3.jpg' },
+  { key: 'bonding', image: '/transformations/t5.jpg' },
+  { key: 'bridge', image: '/transformations/t6.jpg' },
+  { key: 'periodontology', image: '/transformations/t2.jpg' },
+  { key: 'allOnX', image: '/dental-implant-mss.jpeg' },
+  { key: 'surgery', image: '/smile-between-section.png' },
+] as const;
 
 const caseStudies = [
   {
     id: 'case-img-1',
     src: '/mastersmilestudio_1781430682_3919246906335743176_70887948899.jpg',
-    alt: 'Master Smile Studio Full Mouth Vaka 1',
+    alt: 'Master Smile Studio Full Mouth Case 1',
   },
   {
     id: 'case-img-2',
     src: '/mastersmilestudio_1783158972_3933743875695538963_70887948899.jpg',
-    alt: 'Master Smile Studio Zirkonyum Vaka 2',
+    alt: 'Master Smile Studio Zirconia Case 2',
   },
   {
     id: 'case-img-3',
     src: '/mastersmilestudio_1784098986_3941630290953391467_70887948899.jpg',
-    alt: 'Master Smile Studio Hollywood Smile Vaka 3',
+    alt: 'Master Smile Studio Hollywood Smile Case 3',
   },
   {
     id: 'case-img-4',
     src: '/mastersmilestudio_1784465233_3944702579575983298_70887948899.jpg',
-    alt: 'Master Smile Studio E-Max Lamine Vaka 4',
+    alt: 'Master Smile Studio E-Max Veneers Case 4',
   },
   {
     id: 'case-img-5',
     src: '/smile-makeover.jpg',
-    alt: 'Master Smile Studio Smile Makeover Vaka 5',
+    alt: 'Master Smile Studio Smile Makeover Case 5',
   },
   {
     id: 'case-img-6',
     src: '/e-max-lamine-treatment-mss.jpeg',
-    alt: 'Master Smile Studio E-Max Lamine Vaka 6',
+    alt: 'Master Smile Studio E-Max Laminates Case 6',
   },
   {
     id: 'case-img-7',
     src: '/dental-implant-mss.jpeg',
-    alt: 'Master Smile Studio Dental İmplant Vaka 7',
+    alt: 'Master Smile Studio Dental Implant Case 7',
   },
   {
     id: 'case-img-8',
     src: '/teeth-whiting-treatment.jpeg',
-    alt: 'Master Smile Studio Diş Beyazlatma Vaka 8',
+    alt: 'Master Smile Studio Teeth Whitening Case 8',
   },
   {
     id: 'case-img-9',
     src: '/smile-between-section.png',
-    alt: 'Master Smile Studio Estetik Gülüş Vaka 9',
+    alt: 'Master Smile Studio Aesthetic Smile Case 9',
   },
 ];
 
-const doctors = [
-  {
-    name: 'Dr. Tülay Kaya',
-    title: 'Ağız, Diş ve Çene Cerrahı',
-    image: '/team/tulay.webp',
-  },
-  {
-    name: 'Dr. Ali Kemal Demir',
-    title: 'Uzman Diş Hekimi',
-    image: '/team/ali-kemal.webp',
-  },
-  {
-    name: 'Dr. Abdullah Yılmaz',
-    title: 'Endodonti & Restoratif Tedavi',
-    image: '/team/abdullah.webp',
-  },
-];
-
-export default function TreatmentsSectionView({ locale = 'tr' }: { locale?: string }) {
+export default function TreatmentsSectionView({ locale: propsLocale }: { locale?: string }) {
+  const t = useTranslations('services');
+  const contextLocale = useLocale();
+  const locale = propsLocale || contextLocale || 'tr';
   const carouselRef = useRef<HTMLDivElement>(null);
 
   const handleScroll = (direction: 'left' | 'right') => {
@@ -166,9 +84,27 @@ export default function TreatmentsSectionView({ locale = 'tr' }: { locale?: stri
     }
   };
 
+  const doctors = [
+    {
+      name: 'Dr. Tülay Kaya',
+      title: t('doctorTulayTitle'),
+      image: '/team/tulay.webp',
+    },
+    {
+      name: 'Dr. Ali Kemal Demir',
+      title: t('doctorAliKemalTitle'),
+      image: '/team/ali-kemal.webp',
+    },
+    {
+      name: 'Dr. Abdullah Yılmaz',
+      title: t('doctorAbdullahTitle'),
+      image: '/team/abdullah.webp',
+    },
+  ];
+
   return (
     <div style={{ width: '100%', overflow: 'hidden' }}>
-      {/* 1. Main Unified 12 Treatment Cards Grid (Standardized to 'Diş Beyazlatma' Card Design) */}
+      {/* 1. Main Unified 12 Treatment Cards Grid */}
       <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '1rem 1.5rem 4.5rem 1.5rem' }}>
         <div
           style={{
@@ -178,75 +114,81 @@ export default function TreatmentsSectionView({ locale = 'tr' }: { locale?: stri
             marginBottom: '4rem',
           }}
         >
-          {treatmentsList.map((item) => (
-            <div
-              key={item.id}
-              style={{
-                backgroundColor: '#ffffff',
-                borderRadius: '24px',
-                border: '1.5px solid #e2e8f0',
-                boxShadow: '0 6px 20px rgba(0, 0, 0, 0.04)',
-                overflow: 'hidden',
-                display: 'flex',
-                flexDirection: 'column',
-                transition: 'transform 0.25s ease, box-shadow 0.25s ease',
-              }}
-              className="treatment-showcase-card"
-            >
-              {/* Upper Image Box */}
-              <div style={{ position: 'relative', width: '100%', height: '220px', overflow: 'hidden' }}>
-                <Image
-                  src={item.image}
-                  alt={item.title}
-                  fill
-                  unoptimized
-                  style={{ objectFit: 'cover', objectPosition: 'center' }}
-                />
-              </div>
+          {treatmentKeys.map((item) => {
+            const title = t(`items.${item.key}.title` as any);
+            const description = t(`items.${item.key}.description` as any);
+            const whatsappMsg = t('whatsappInquiry', { treatment: title });
 
-              {/* Lower Info Text */}
-              <div style={{ padding: '1.5rem', display: 'flex', flexDirection: 'column', flex: 1, justifyContent: 'space-between' }}>
-                <div>
-                  <h4
-                    style={{
-                      fontSize: '1rem',
-                      fontWeight: 500,
-                      color: '#0f172a',
-                      letterSpacing: '0.03em',
-                      margin: '0 0 0.5rem 0',
-                      textTransform: 'uppercase',
-                    }}
-                  >
-                    {item.title}
-                  </h4>
-                  <p style={{ fontSize: '0.85rem', color: '#64748b', lineHeight: 1.55, margin: 0, fontWeight: 300 }}>
-                    {item.description}
-                  </p>
+            return (
+              <div
+                key={item.key}
+                style={{
+                  backgroundColor: '#ffffff',
+                  borderRadius: '24px',
+                  border: '1.5px solid #e2e8f0',
+                  boxShadow: '0 6px 20px rgba(0, 0, 0, 0.04)',
+                  overflow: 'hidden',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  transition: 'transform 0.25s ease, box-shadow 0.25s ease',
+                }}
+                className="treatment-showcase-card"
+              >
+                {/* Upper Image Box */}
+                <div style={{ position: 'relative', width: '100%', height: '220px', overflow: 'hidden' }}>
+                  <Image
+                    src={item.image}
+                    alt={title}
+                    fill
+                    unoptimized
+                    style={{ objectFit: 'cover', objectPosition: 'center' }}
+                  />
                 </div>
 
-                <div style={{ marginTop: '1.25rem' }}>
-                  <a
-                    href={getWhatsAppLink(locale, `Merhaba, ${item.title} tedavisi hakkında detaylı bilgi ve randevu almak istiyorum.`)}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{
-                      display: 'inline-flex',
-                      alignItems: 'center',
-                      gap: '0.45rem',
-                      fontSize: '0.85rem',
-                      fontWeight: 400,
-                      color: '#d97706',
-                      textDecoration: 'none',
-                      transition: 'transform 0.2s ease',
-                    }}
-                  >
-                    <span>Randevu & Bilgi Al</span>
-                    <span>→</span>
-                  </a>
+                {/* Lower Info Text */}
+                <div style={{ padding: '1.5rem', display: 'flex', flexDirection: 'column', flex: 1, justifyContent: 'space-between' }}>
+                  <div>
+                    <h4
+                      style={{
+                        fontSize: '1rem',
+                        fontWeight: 500,
+                        color: '#0f172a',
+                        letterSpacing: '0.03em',
+                        margin: '0 0 0.5rem 0',
+                        textTransform: 'uppercase',
+                      }}
+                    >
+                      {title}
+                    </h4>
+                    <p style={{ fontSize: '0.85rem', color: '#64748b', lineHeight: 1.55, margin: 0, fontWeight: 300 }}>
+                      {description}
+                    </p>
+                  </div>
+
+                  <div style={{ marginTop: '1.25rem' }}>
+                    <a
+                      href={getWhatsAppLink(locale, whatsappMsg)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '0.45rem',
+                        fontSize: '0.85rem',
+                        fontWeight: 400,
+                        color: '#d97706',
+                        textDecoration: 'none',
+                        transition: 'transform 0.2s ease',
+                      }}
+                    >
+                      <span>{t('getAppointmentBtn')}</span>
+                      <span>→</span>
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
         {/* Center Action Button */}
@@ -271,7 +213,7 @@ export default function TreatmentsSectionView({ locale = 'tr' }: { locale?: stri
               transition: 'all 0.2s ease',
             }}
           >
-            <span>Klinik Vakaları İncele</span>
+            <span>{t('exploreCasesBtn')}</span>
             <span>↓</span>
           </a>
         </div>
@@ -290,7 +232,7 @@ export default function TreatmentsSectionView({ locale = 'tr' }: { locale?: stri
           position: 'relative',
         }}
       >
-        {/* Section Header Row (Centered 1280px) */}
+        {/* Section Header Row */}
         <div
           style={{
             maxWidth: '1280px',
@@ -313,13 +255,13 @@ export default function TreatmentsSectionView({ locale = 'tr' }: { locale?: stri
                 margin: '0 0 0.25rem 0',
               }}
             >
-              Klinik Vaka İncelemeleri
+              {t('casesTitle')}
             </h3>
           </div>
 
           <div style={{ maxWidth: '440px', textAlign: 'right' }}>
             <p style={{ fontSize: '0.9rem', color: '#64748b', lineHeight: 1.5, margin: 0, fontWeight: 300 }}>
-              Hastalarımızın tedavi öncesi ve sonrası dijital gülüş planlama süreçlerini ve klinik fotoğraflarını inceleyin.
+              {t('casesSubtitle')}
             </p>
           </div>
         </div>
@@ -350,7 +292,7 @@ export default function TreatmentsSectionView({ locale = 'tr' }: { locale?: stri
               backdropFilter: 'blur(8px)',
               transition: 'all 0.2s ease',
             }}
-            aria-label="Önceki Vaka"
+            aria-label={t('prevCase')}
           >
             ‹
           </button>
@@ -379,7 +321,7 @@ export default function TreatmentsSectionView({ locale = 'tr' }: { locale?: stri
               backdropFilter: 'blur(8px)',
               transition: 'all 0.2s ease',
             }}
-            aria-label="Sonraki Vaka"
+            aria-label={t('nextCase')}
           >
             ›
           </button>
@@ -427,7 +369,7 @@ export default function TreatmentsSectionView({ locale = 'tr' }: { locale?: stri
         </div>
       </section>
 
-      {/* 3. Bottom Section: Hekimlerimiz ve Tedavileri (Constrained to 1280px) */}
+      {/* 3. Bottom Section: Doctors (Constrained to 1280px) */}
       <section style={{ maxWidth: '1280px', margin: '0 auto', textAlign: 'center', padding: '0 1.5rem 6rem 1.5rem' }}>
         <h3
           style={{
@@ -438,7 +380,7 @@ export default function TreatmentsSectionView({ locale = 'tr' }: { locale?: stri
             marginBottom: '3rem',
           }}
         >
-          Hekimlerimiz ve Tedavileri
+          {t('doctorsTitle')}
         </h3>
 
         {/* 3 Doctor Pill Cards Grid */}

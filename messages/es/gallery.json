@@ -1,0 +1,42 @@
+{
+  "metaTitle": "Galería de Sonrisas Impecables | Master Smile Studio",
+  "metaDescription": "Historias de transformación, diseños de sonrisa antes y después creados por nuestros odontólogos especialistas.",
+  "breadcrumbHome": "Inicio",
+  "breadcrumbGallery": "Galería de Sonrisas",
+  "pageTitle": "Galería de Sonrisas",
+  "pageSubtitle": "Descubra las historias de transformación y los casos de antes y después de nuestros pacientes que lograron su sonrisa soñada.",
+  "categories": {
+    "all": "Todos los Resultados",
+    "makeover": "Smile Makeover",
+    "implant": "Implantes Dentales",
+    "emax": "Carillas E-max",
+    "zirconium": "Coronas de Circonio",
+    "whitening": "Blanqueamiento Dental"
+  },
+  "icons": {
+    "Crowns": "Coronas",
+    "Implants": "Implantes",
+    "Whitening": "Blanqueamiento",
+    "Veneers": "Carillas"
+  },
+  "before": "Antes",
+  "after": "Después",
+  "spotlightPatient": "Sema Yılmaz",
+  "spotlightTreatment": "Full Hollywood Smile",
+  "spotlightQuote": "Me siento mucho más segura",
+  "spotlightBtn": "Consultar por un Tratamiento Similar",
+  "spotlightWhatsapp": "Hola, me gustaría obtener información sobre el tratamiento Hollywood Smile similar al caso de Sema Yılmaz.",
+  "examineBtn": "Ver Transformación",
+  "modalBefore": "Antes",
+  "modalAfter": "Después",
+  "modalWhatsappBtn": "Reservar Cita para este Tratamiento por WhatsApp",
+  "modalWhatsappMsg": "Hola, me gustaría recibir una consulta gratuita y cotización para el tratamiento {treatment} del paciente {name}.",
+  "items": {
+    "case1": { "treatment": "Implantes y Coronas de Circonio", "quote": "" },
+    "case2": { "treatment": "Carillas E-max", "quote": "¡Conseguí la sonrisa de mis sueños!" },
+    "case3": { "treatment": "Implantes Dentales", "quote": "¡Recuperé mis dientes naturales!" },
+    "case4": { "treatment": "Implantes y Coronas de Circonio", "quote": "" },
+    "case5": { "treatment": "Smile Makeover", "quote": "" },
+    "case6": { "treatment": "Blanqueamiento y Estética Dental", "quote": "" }
+  }
+}

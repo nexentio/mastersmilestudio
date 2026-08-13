@@ -1,13 +1,80 @@
 {
   "title": "Nuestros Tratamientos",
-  "subtitle": "Los servicios dentales ofrecidos se configuran de acuerdo con la práctica odontológica y las evaluaciones clínicas.",
-  "smileDesign": { "title": "Diseño de Sonrisa", "description": "Diseño de sonrisa digital personalizado adaptado a tus facciones." },
-  "implant": { "title": "Tratamiento de Implantes", "description": "Implantes de titanio duraderos con sensación de diente natural." },
-  "emax": { "title": "Láminas E-max", "description": "Carillas de porcelana ultra finas de alta translucidez." },
-  "zirconia": { "title": "Coronas de Zirconio", "description": "Coronas de zirconio muy duraderas con estética natural." },
-  "whitening": { "title": "Blanqueamiento Dental", "description": "Tratamiento seguro y rápido de blanqueamiento láser profesional." },
-  "rootCanal": { "title": "Endodoncia", "description": "Tratamiento de conducto indoloro asistido por microscopio." },
-  "dentures": { "title": "Prótesis Dentales", "description": "Prótesis fijas y removibles cómodas de aspecto natural." },
-  "bonding": { "title": "Bonding Compuesto", "description": "Reparación estética en una sola sesión de dientes fracturados o separados." },
-  "orthodontics": { "title": "Ortodoncia", "description": "Alineadores invisibles y brackets estéticos para alineación perfecta." }
+  "subtitle": "Los servicios dentales ofrecidos se adaptan según las prácticas odontológicas y evaluaciones clínicas individuales.",
+  "metaTitle": "Tratamientos Dentales Integrales | Master Smile Studio",
+  "metaDescription": "Más de 16 ramas odontológicas avanzadas con tecnología de vanguardia y especialistas experimentados para su salud bucodental.",
+  "breadcrumbHome": "Inicio",
+  "breadcrumbTreatments": "Tratamientos",
+  "pageTitle": "Nuestros Tratamientos",
+  "pageSubtitle": "Descubra los detalles de nuestros tratamientos dentales estéticos y clínicos con tecnología digital de última generación.",
+  "getAppointmentBtn": "Reservar Consulta e Info",
+  "whatsappInquiry": "Hola, me gustaría obtener información detallada y solicitar una cita para el tratamiento de {treatment}.",
+  "exploreCasesBtn": "Ver Casos Clínicos",
+  "casesTitle": "Casos Clínicos",
+  "casesSubtitle": "Explore los diseños de sonrisa digitales de antes y después y las fotos clínicas de nuestros pacientes.",
+  "prevCase": "Caso Anterior",
+  "nextCase": "Caso Siguiente",
+  "doctorsTitle": "Nuestros Doctores y Especialidades",
+  "doctorTulayTitle": "Cirujana Oral y Maxilofacial",
+  "doctorAliKemalTitle": "Odontólogo Especialista",
+  "doctorAbdullahTitle": "Endodoncia y Odontología Restauradora",
+  "smileDesign": { "title": "Diseño de Sonrisa", "description": "Diseño digital de sonrisa personalizado según la proporción áurea facial." },
+  "implant": { "title": "Implantes Dentales", "description": "Implantes de titanio biocompatibles para una sensación dental natural de por vida." },
+  "emax": { "title": "Carillas E-max", "description": "Carillas de porcelana ultrafinas con alta translucidez natural." },
+  "zirconia": { "title": "Coronas de Circonio", "description": "Coronas sin metal de alta durabilidad y estética insuperable." },
+  "whitening": { "title": "Blanqueamiento Dental", "description": "Blanqueamiento láser profesional rápido y seguro en clínica." },
+  "rootCanal": { "title": "Endodoncia", "description": "Tratamiento indoloro asistido por microscopio para salvar piezas dentales." },
+  "dentures": { "title": "Prótesis Dentales", "description": "Prótesis fijas y removibles cómodas y con aspecto natural." },
+  "bonding": { "title": "Bonding Compuesto", "description": "Reparación estética en una sola sesión de dientes fisurados o separados." },
+  "orthodontics": { "title": "Ortodoncia", "description": "Alineadores invisibles y brackets estéticos para una alineación perfecta." },
+  "items": {
+    "smileDesign": {
+      "title": "DISEÑO DE SONRISA",
+      "description": "La sonrisa de sus sueños mediante el análisis de la proporción áurea y arquitectura digital 3D."
+    },
+    "implant": {
+      "title": "IMPLANTES DENTALES",
+      "description": "Soluciones de titanio biocompatibles que brindan sensación natural y confort duradero ante pérdidas dentales."
+    },
+    "emax": {
+      "title": "CARILLAS E-MAX",
+      "description": "Carillas cerámicas ultrafinas de alta translucidez aplicadas con mínimo desgaste dental."
+    },
+    "zirconia": {
+      "title": "CORONAS DE CIRCONIO",
+      "description": "Coronas libres de metal con máxima resistencia y transmisión de luz similar al esmalte natural."
+    },
+    "whitening": {
+      "title": "BLANQUEAMIENTO DENTAL",
+      "description": "Blanqueamiento láser clínico que aclara con total seguridad de 3 a 4 tonos en poco tiempo."
+    },
+    "rootCanal": {
+      "title": "ENDODONCIA",
+      "description": "Terapia indolora de rescate dental con instrumentación rotatoria avanzada y microscopía."
+    },
+    "dentures": {
+      "title": "PRÓTESIS DENTALES",
+      "description": "Prótesis modernas fijas y removibles que devuelven la función masticatoria y estética dental."
+    },
+    "bonding": {
+      "title": "BONDING COMPUESTO",
+      "description": "Tratamiento estético directo para corregir fracturas, diastemas e irregularidades en una visita."
+    },
+    "bridge": {
+      "title": "PUENTES DENTALES",
+      "description": "Sistemas de puentes apoyados en dientes adyacentes para cerrar espacios de forma estética y duradera."
+    },
+    "periodontology": {
+      "title": "PERIODONCIA (SALUD GINGIVAL)",
+      "description": "Tratamientos especializados para frenar el sangrado, la retracción de encías y proteger los tejidos periodontales."
+    },
+    "allOnX": {
+      "title": "DIENTES EN UN DÍA (ALL-ON-X)",
+      "description": "Protocolo quirúrgico avanzado que permite colocar implantes y dientes fijos el mismo día en maxilares edéntulos."
+    },
+    "surgery": {
+      "title": "CIRUGÍA ORAL Y MAXILOFACIAL",
+      "description": "Especialización quirúrgica en extracciones de muelas del juicio, quistes e injertos óseos."
+    }
+  }
 }

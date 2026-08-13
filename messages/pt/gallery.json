@@ -1,0 +1,42 @@
+{
+  "metaTitle": "Galeria de Sorrisos Impecáveis | Master Smile Studio",
+  "metaDescription": "Histórias de transformação, designs de sorriso antes e depois criados pelos nossos médicos dentistas especialistas.",
+  "breadcrumbHome": "Início",
+  "breadcrumbGallery": "Galeria de Sorrisos",
+  "pageTitle": "Galeria de Sorrisos",
+  "pageSubtitle": "Descubra as histórias de transformação e os casos de antes e depois dos nossos pacientes que conquistaram o sorriso de sonho.",
+  "categories": {
+    "all": "Todos os Resultados",
+    "makeover": "Smile Makeover",
+    "implant": "Implantes Dentários",
+    "emax": "Facetas E-max",
+    "zirconium": "Coroas de Zircónia",
+    "whitening": "Branqueamento Dentário"
+  },
+  "icons": {
+    "Crowns": "Coroas",
+    "Implants": "Implantes",
+    "Whitening": "Branqueamento",
+    "Veneers": "Facetas"
+  },
+  "before": "Antes",
+  "after": "Depois",
+  "spotlightPatient": "Sema Yılmaz",
+  "spotlightTreatment": "Full Hollywood Smile",
+  "spotlightQuote": "Sinto-me muito mais confiante",
+  "spotlightBtn": "Pedir Informações sobre Tratamento Semelhante",
+  "spotlightWhatsapp": "Olá, gostaria de obter informações sobre o tratamento Hollywood Smile semelhante ao caso de Sema Yılmaz.",
+  "examineBtn": "Ver Transformação",
+  "modalBefore": "Antes",
+  "modalAfter": "Depois",
+  "modalWhatsappBtn": "Marcar Consulta para este Tratamiento via WhatsApp",
+  "modalWhatsappMsg": "Olá, gostaria de receber uma consulta gratuita e orçamento para o tratamento de {treatment} do paciente {name}.",
+  "items": {
+    "case1": { "treatment": "Implantes e Coroas de Zircónia", "quote": "" },
+    "case2": { "treatment": "Facetas E-max", "quote": "Conquistei o meu sorriso de sonho!" },
+    "case3": { "treatment": "Implantes Dentários", "quote": "Recuperei os meus dentes naturais!" },
+    "case4": { "treatment": "Implantes e Coroas de Zircónia", "quote": "" },
+    "case5": { "treatment": "Smile Makeover", "quote": "" },
+    "case6": { "treatment": "Branqueamento e Estética Dentária", "quote": "" }
+  }
+}

@@ -1,8 +1,8 @@
-import { setRequestLocale } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import TreatmentsSectionView from '@/components/TreatmentsSectionView';
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
 
 export async function generateMetadata({
   params,
@@ -11,10 +11,11 @@ export async function generateMetadata({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const t = await getTranslations({ locale, namespace: 'services' });
 
   return {
-    title: 'Kapsamlı Diş Tedavileri | Master Smile Studio',
-    description: 'Ağız ve diş sağlığınız için en son teknolojiler ve uzman ekiplerimizle sunulan 16+ ileri diş tedavi branşı.',
+    title: t('metaTitle'),
+    description: t('metaDescription'),
   };
 }
 
@@ -25,6 +26,7 @@ export default async function TreatmentsPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const t = await getTranslations('services');
 
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', backgroundColor: '#fcfcfd', color: '#0f172a' }}>
@@ -62,9 +64,9 @@ export default async function TreatmentsPage({
                 <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
                 <polyline points="9 22 9 12 15 12 15 22" />
               </svg>
-              <span>Anasayfa</span>
+              <span>{t('breadcrumbHome')}</span>
               <span style={{ color: '#cbd5e1' }}>›</span>
-              <span style={{ color: '#0f172a', fontWeight: 600 }}>Tedavilerimiz</span>
+              <span style={{ color: '#0f172a', fontWeight: 600 }}>{t('breadcrumbTreatments')}</span>
             </Link>
           </div>
 
@@ -91,7 +93,7 @@ export default async function TreatmentsPage({
                   margin: 0,
                 }}
               >
-                Tedavilerimiz
+                {t('pageTitle')}
               </h1>
             </div>
 
@@ -105,7 +107,7 @@ export default async function TreatmentsPage({
                   fontWeight: 400,
                 }}
               >
-                Klinik deneyimimiz ve en ileri dijital teknolojilerimizle uygulanan estetik ve klinik diş tedavilerimizin detaylarını inceleyin.
+                {t('pageSubtitle')}
               </p>
             </div>
           </div>
@@ -114,7 +116,7 @@ export default async function TreatmentsPage({
 
       {/* Interactive Treatments Cards, Clinical Guides & FAQ */}
       <main style={{ flex: 1 }}>
-        <TreatmentsSectionView locale={locale} />
+        <TreatmentsSectionView />
       </main>
 
       {/* Luxury Studio Footer */}

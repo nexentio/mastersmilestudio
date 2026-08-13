@@ -1,0 +1,42 @@
+{
+  "metaTitle": "Kusursuz Gülüşler Galerisi | Master Smile Studio",
+  "metaDescription": "Uzm. Hekimlerimizin elinden çıkan, hayallerindeki gülüşe kavuşan hastalarımızın dönüşüm hikayeleri ve öncesi/sonrası gülüş tasarımları.",
+  "breadcrumbHome": "Anasayfa",
+  "breadcrumbGallery": "Gülüş Galerisi",
+  "pageTitle": "Gülüş Galerisi",
+  "pageSubtitle": "Uzm. Hekimlerimizin elinden çıkan, hayallerindeki gülüşe kavuşan hastalarımızın dönüşüm hikayeleri ve öncesi/sonrası vakaları.",
+  "categories": {
+    "all": "Tüm Sonuçlar",
+    "makeover": "Smile Makeover",
+    "implant": "Dental İmplant",
+    "emax": "E-max Lamine",
+    "zirconium": "Zirkonyum Kaplama",
+    "whitening": "Diş Beyazlatma"
+  },
+  "icons": {
+    "Crowns": "Kron Kaplama",
+    "Implants": "İmplant",
+    "Whitening": "Beyazlatma",
+    "Veneers": "Lamine"
+  },
+  "before": "Önce",
+  "after": "Sonra",
+  "spotlightPatient": "Sema Yılmaz",
+  "spotlightTreatment": "Full Hollywood Smile",
+  "spotlightQuote": "Daha özgüvenli hissediyorum",
+  "spotlightBtn": "Benzer Tedavi İçin Bilgi Al",
+  "spotlightWhatsapp": "Merhaba, Sema Yılmaz vakasındaki Hollywood Smile tedavisi hakkında bilgi almak istiyorum.",
+  "examineBtn": "Dönüşümü İncele",
+  "modalBefore": "Önce",
+  "modalAfter": "Sonra",
+  "modalWhatsappBtn": "WhatsApp ile Bu Tedavi İçin Randevu Al",
+  "modalWhatsappMsg": "Merhaba, {name} hastasının {treatment} tedavisi hakkında ücretsiz konsültasyon ve fiyat almak istiyorum.",
+  "items": {
+    "case1": { "treatment": "İmplant & Zirkonyum Kaplama", "quote": "" },
+    "case2": { "treatment": "E-max Lamine", "quote": "Hayalimdeki gülüşe kavuştum!" },
+    "case3": { "treatment": "Dental İmplant", "quote": "Dişlerimi geri kazandım!" },
+    "case4": { "treatment": "İmplant & Zirkonyum Kaplama", "quote": "" },
+    "case5": { "treatment": "Smile Makeover", "quote": "" },
+    "case6": { "treatment": "Diş Beyazlatma & Estetik", "quote": "" }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "metaTitle": "Галерея улыбок | Master Smile Studio",
+  "metaDescription": "Истории преображения, дизайн улыбки до и после, созданные нашими ведущими стоматологами.",
+  "breadcrumbHome": "Главная",
+  "breadcrumbGallery": "Галерея улыбок",
+  "pageTitle": "Галерея улыбок",
+  "pageSubtitle": "Познакомьтесь с историями преображения и клиническими случаями до и после наших пациентов, обретивших улыбку мечты.",
+  "categories": {
+    "all": "Все результаты",
+    "makeover": "Smile Makeover",
+    "implant": "Имплантация зубов",
+    "emax": "Виниры E-max",
+    "zirconium": "Циркониевые коронки",
+    "whitening": "Отбеливание зубов"
+  },
+  "icons": {
+    "Crowns": "Коронки",
+    "Implants": "Импланты",
+    "Whitening": "Отбеливание",
+    "Veneers": "Виниры"
+  },
+  "before": "До",
+  "after": "После",
+  "spotlightPatient": "Сема Йылмаз",
+  "spotlightTreatment": "Full Hollywood Smile",
+  "spotlightQuote": "Я чувствую себя намного увереннее",
+  "spotlightBtn": "Узнать о подобном лечении",
+  "spotlightWhatsapp": "Здравствуйте, я хотел бы получить информацию о процедуре Hollywood Smile как в случае Семы Йылмаз.",
+  "examineBtn": "Смотреть преображение",
+  "modalBefore": "До",
+  "modalAfter": "После",
+  "modalWhatsappBtn": "Записаться на эту процедуру через WhatsApp",
+  "modalWhatsappMsg": "Здравствуйте, я хотел бы получить бесплатную консультацию и расчет стоимости по процедуре {treatment} пациента {name}.",
+  "items": {
+    "case1": { "treatment": "Импланты и циркониевые коронки", "quote": "" },
+    "case2": { "treatment": "Виниры E-max", "quote": "Я обрел улыбку своей мечты!" },
+    "case3": { "treatment": "Имплантация зубов", "quote": "Я вернул свои зубы!" },
+    "case4": { "treatment": "Импланты и циркониевые коронки", "quote": "" },
+    "case5": { "treatment": "Smile Makeover", "quote": "" },
+    "case6": { "treatment": "Отбеливание и эстетика", "quote": "" }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "metaTitle": "Flawless Smiles Gallery | Master Smile Studio",
+  "metaDescription": "Transformation stories, before/after smile designs, and patient journeys crafted by our specialist dentists.",
+  "breadcrumbHome": "Home",
+  "breadcrumbGallery": "Smile Gallery",
+  "pageTitle": "Smile Gallery",
+  "pageSubtitle": "Explore the transformation stories and before & after cases of our patients who achieved their dream smiles.",
+  "categories": {
+    "all": "All Results",
+    "makeover": "Smile Makeover",
+    "implant": "Dental Implants",
+    "emax": "E-max Veneers",
+    "zirconium": "Zirconia Crowns",
+    "whitening": "Teeth Whitening"
+  },
+  "icons": {
+    "Crowns": "Crowns",
+    "Implants": "Implants",
+    "Whitening": "Whitening",
+    "Veneers": "Veneers"
+  },
+  "before": "Before",
+  "after": "After",
+  "spotlightPatient": "Sema Yılmaz",
+  "spotlightTreatment": "Full Hollywood Smile",
+  "spotlightQuote": "I feel so much more confident",
+  "spotlightBtn": "Inquire for Similar Treatment",
+  "spotlightWhatsapp": "Hello, I would like to get information about the Hollywood Smile treatment similar to Sema Yılmaz case.",
+  "examineBtn": "View Transformation",
+  "modalBefore": "Before",
+  "modalAfter": "After",
+  "modalWhatsappBtn": "Book an Appointment for this Treatment via WhatsApp",
+  "modalWhatsappMsg": "Hello, I would like to get a free consultation and quote for the {treatment} treatment of patient {name}.",
+  "items": {
+    "case1": { "treatment": "Implants & Zirconia Crowns", "quote": "" },
+    "case2": { "treatment": "E-max Veneers", "quote": "I got my dream smile!" },
+    "case3": { "treatment": "Dental Implants", "quote": "I got my natural teeth back!" },
+    "case4": { "treatment": "Implants & Zirconia Crowns", "quote": "" },
+    "case5": { "treatment": "Smile Makeover", "quote": "" },
+    "case6": { "treatment": "Teeth Whitening & Aesthetics", "quote": "" }
+  }
+}
