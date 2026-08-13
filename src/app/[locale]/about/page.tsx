@@ -5,7 +5,7 @@ import BrandsSection from '@/components/BrandsSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
 import Image from 'next/image';
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
 
 export async function generateMetadata({
   params,
@@ -14,10 +14,11 @@ export async function generateMetadata({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const t = await getTranslations({ locale, namespace: 'about' });
 
   return {
-    title: 'Hakkımızda | Master Smile Studio Ağız ve Diş Sağlığı Polikliniği',
-    description: 'Master Smile Studio; 16 uzman tedavi branşı, ileri dijital teknolojileri ve alanında uzman hekim kadrosuyla uluslararası standartlarda diş sağlığı hizmeti sunmaktadır.',
+    title: t('metaTitle'),
+    description: t('metaDescription'),
   };
 }
 
@@ -28,13 +29,14 @@ export default async function AboutPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const t = await getTranslations('about');
 
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', backgroundColor: '#fcfcfd', color: '#0f172a' }}>
       {/* Global Navigation Header */}
       <Header />
 
-      {/* Main About Page Hero Header (Split Layout Matching Treatments Page) */}
+      {/* Main About Page Hero Header */}
       <section
         style={{
           padding: '3.5rem 1.5rem 2rem 1.5rem',
@@ -65,9 +67,9 @@ export default async function AboutPage({
                 <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
                 <polyline points="9 22 9 12 15 12 15 22" />
               </svg>
-              <span>Anasayfa</span>
+              <span>{t('breadcrumbHome')}</span>
               <span style={{ color: '#cbd5e1' }}>›</span>
-              <span style={{ color: '#0f172a', fontWeight: 500 }}>Hakkımızda</span>
+              <span style={{ color: '#0f172a', fontWeight: 500 }}>{t('breadcrumbAbout')}</span>
             </Link>
           </div>
 
@@ -94,7 +96,7 @@ export default async function AboutPage({
                   margin: 0,
                 }}
               >
-                Hakkımızda
+                {t('pageTitle')}
               </h1>
             </div>
 
@@ -108,7 +110,7 @@ export default async function AboutPage({
                   fontWeight: 300,
                 }}
               >
-                Her gülüşün bir hikayesi vardır. Hastalarımızla kurduğumuz güven ve mutluluk dolu bağın meyvelerini, ileri dijital diş hekimliği ve uzman kadromuzla sunuyoruz.
+                {t('pageSubtitle')}
               </p>
             </div>
           </div>
@@ -130,7 +132,7 @@ export default async function AboutPage({
             margin: '0 auto',
           }}
         >
-          {/* Top Header: Left '/ About' | Right Large Title & Paragraph */}
+          {/* Top Header: Left '/ Our Vision' | Right Large Title & Paragraph */}
           <div
             style={{
               display: 'grid',
@@ -141,7 +143,7 @@ export default async function AboutPage({
             }}
           >
             <div style={{ fontSize: '0.95rem', fontWeight: 400, color: '#64748b' }}>
-              / Vizyonumuz
+              {t('visionLabel')}
             </div>
 
             <div style={{ maxWidth: '850px' }}>
@@ -155,7 +157,7 @@ export default async function AboutPage({
                   margin: '0 0 1.25rem 0',
                 }}
               >
-                Sadece Diş Tedavisi Değil, Yaşam Kalitenizi ve Özgüveninizi Artıran Dijital Gülüş Tasarımları
+                {t('visionHeading')}
               </h2>
 
               <p
@@ -168,7 +170,7 @@ export default async function AboutPage({
                   maxWidth: '720px',
                 }}
               >
-                Her hastamızın yüz anatomisi, dudak yapısı ve estetik beklentisi benzersizdir. Master Smile Studio olarak amacımız; sadece estetik dişler üretmek değil, hastalarımızın doğal konuşma konforunu, çiğneme fonksiyonunu ve gülüş mimarisini en üst seviyeye çıkarmaktır.
+                {t('visionParagraph')}
               </p>
             </div>
           </div>
@@ -193,7 +195,7 @@ export default async function AboutPage({
             >
               <Image
                 src="/e-max-lamine-treatment-mss.jpeg"
-                alt="Rose Glow DSD Smile Architecture"
+                alt={t('roseGlowTitle')}
                 fill
                 unoptimized
                 style={{ objectFit: 'cover' }}
@@ -210,9 +212,9 @@ export default async function AboutPage({
                   color: '#ffffff',
                 }}
               >
-                <div style={{ fontSize: '1.35rem', fontWeight: 400 }}>Rose Glow</div>
+                <div style={{ fontSize: '1.35rem', fontWeight: 400 }}>{t('roseGlowTitle')}</div>
                 <div style={{ fontSize: '0.9rem', color: 'rgba(255, 255, 255, 0.9)', lineHeight: 1.5, fontWeight: 300 }}>
-                  Yüz anatomisi ve dudak çizginize tam uyumlu kişiselleştirilmiş dijital gülüş mimarisi.
+                  {t('roseGlowDesc')}
                 </div>
               </div>
             </div>
@@ -229,7 +231,7 @@ export default async function AboutPage({
             >
               <Image
                 src="/dental-implant-mss.jpeg"
-                alt="Indigo Insight 3D Digital Tomography"
+                alt={t('indigoInsightTitle')}
                 fill
                 unoptimized
                 style={{ objectFit: 'cover' }}
@@ -246,9 +248,9 @@ export default async function AboutPage({
                   color: '#ffffff',
                 }}
               >
-                <div style={{ fontSize: '1.35rem', fontWeight: 400 }}>Indigo Insight</div>
+                <div style={{ fontSize: '1.35rem', fontWeight: 400 }}>{t('indigoInsightTitle')}</div>
                 <div style={{ fontSize: '0.9rem', color: 'rgba(255, 255, 255, 0.9)', lineHeight: 1.5, fontWeight: 300 }}>
-                  Sıfır hata ile 3D çene yapısı analizi ve dikişsiz hızlı iyileşen implant planlaması.
+                  {t('indigoInsightDesc')}
                 </div>
               </div>
             </div>
@@ -277,7 +279,7 @@ export default async function AboutPage({
                   letterSpacing: '-0.02em',
                 }}
               >
-                Gülüşünüzü Bugün Yeniden Keşfedin.
+                {t('ctaCardTitle')}
               </h3>
 
               <a
@@ -294,7 +296,7 @@ export default async function AboutPage({
                   width: 'fit-content',
                 }}
               >
-                Randevu Al →
+                {t('ctaCardBtn')}
               </a>
             </div>
           </div>
@@ -360,7 +362,7 @@ export default async function AboutPage({
                     color: '#ffffff',
                   }}
                 >
-                  Hastalarımızın %98'i ilk muayene ve teşhis aşamasında şeffaf bilgilendirme ve yüksek memnuniyet hissettiğini ifade etti.
+                  {t('stat1Desc')}
                 </p>
                 <span
                   style={{
@@ -371,7 +373,7 @@ export default async function AboutPage({
                     color: '#ffffff',
                   }}
                 >
-                  98%
+                  {t('stat1Value')}
                 </span>
               </div>
             </div>
@@ -410,7 +412,7 @@ export default async function AboutPage({
                     color: '#ffffff',
                   }}
                 >
-                  Tedavi gören hastalarımızın %88'i ilk birkaç haftada estetik ve çiğneme konforunda belirgin artış deneyimledi.
+                  {t('stat2Desc')}
                 </p>
                 <span
                   style={{
@@ -421,7 +423,7 @@ export default async function AboutPage({
                     color: '#ffffff',
                   }}
                 >
-                  88%
+                  {t('stat2Value')}
                 </span>
               </div>
             </div>
@@ -460,7 +462,7 @@ export default async function AboutPage({
                     color: '#ffffff',
                   }}
                 >
-                  Tavsiye üzerine polikliniğimize başvuran yeni hasta oranımız %71 ile uzun vadeli güveni ve devamlılığı yansıtmaktadır.
+                  {t('stat3Desc')}
                 </p>
                 <span
                   style={{
@@ -471,7 +473,7 @@ export default async function AboutPage({
                     color: '#ffffff',
                   }}
                 >
-                  71%
+                  {t('stat3Value')}
                 </span>
               </div>
             </div>
@@ -498,7 +500,7 @@ export default async function AboutPage({
                   marginBottom: '2rem',
                 }}
               >
-                Binlerce hastamızın sağlıklı gülüşlere kavuştuğu güvenilir tedavi süreci
+                {t('satisfactionHeading')}
               </h2>
 
               <a
@@ -519,7 +521,7 @@ export default async function AboutPage({
                   boxShadow: '0 4px 16px rgba(255, 165, 82, 0.12)',
                 }}
               >
-                <span>Memnuniyet Raporu</span>
+                <span>{t('satisfactionBtn')}</span>
                 <span
                   style={{
                     width: '24px',
@@ -550,14 +552,14 @@ export default async function AboutPage({
                   maxWidth: '520px',
                 }}
               >
-                Uzman hekim kadromuz, son teknoloji 3D dijital ekipmanlarımız ve hastalarımızın konforunu ön planda tutan VIP tedavi odalarımız ile ağız ve diş sağlığınız için güvenilir bir deneyim sunuyoruz. Şeffaf fiyatlandırma ve kişiye özel tedavi planları ile yanınızdayız.
+                {t('satisfactionParagraph')}
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Uzman Kadromuz (Reusing 60fps RAF Lerp Interactive TeamSection) */}
+      {/* Uzman Kadromuz */}
       <TeamSection />
 
       {/* Brands Infinite Marquee Banner Section */}

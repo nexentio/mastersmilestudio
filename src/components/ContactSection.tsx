@@ -1,11 +1,39 @@
 'use client';
 
-import { useState } from 'react';
-import { useTranslations } from 'next-intl';
+import { useState, useRef, useEffect } from 'react';
+import { useTranslations, useLocale } from 'next-intl';
 import Image from 'next/image';
+
+interface CountryCode {
+  code: string;
+  dialCode: string;
+  name: string;
+  flag: string;
+  placeholder: string;
+  maxLength: number;
+}
+
+const COUNTRIES: CountryCode[] = [
+  { code: 'tr', dialCode: '+90', name: 'Türkiye', flag: '/flags/tr.webp', placeholder: '543 352 60 40', maxLength: 14 },
+  { code: 'gb', dialCode: '+44', name: 'United Kingdom', flag: '/flags/en.webp', placeholder: '7911 123456', maxLength: 12 },
+  { code: 'de', dialCode: '+49', name: 'Deutschland', flag: '/flags/de.webp', placeholder: '151 23456789', maxLength: 13 },
+  { code: 'es', dialCode: '+34', name: 'España', flag: '/flags/es.webp', placeholder: '612 345 678', maxLength: 11 },
+  { code: 'ru', dialCode: '+7', name: 'Россия', flag: '/flags/ru.webp', placeholder: '912 345-67-89', maxLength: 13 },
+  { code: 'pt', dialCode: '+351', name: 'Portugal', flag: '/flags/pt.webp', placeholder: '912 345 678', maxLength: 11 },
+  { code: 'pl', dialCode: '+48', name: 'Polska', flag: '/flags/pl.webp', placeholder: '512 345 678', maxLength: 11 },
+];
 
 export default function ContactSection() {
   const t = useTranslations('contact');
+  const currentLocale = useLocale();
+
+  const initialCountry =
+    COUNTRIES.find((c) => c.code === (currentLocale === 'en' ? 'gb' : currentLocale)) || COUNTRIES[0];
+
+  const [selectedCountry, setSelectedCountry] = useState<CountryCode>(initialCountry);
+  const [countryDropdownOpen, setCountryDropdownOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+  const phoneInputRef = useRef<HTMLInputElement>(null);
 
   const [formData, setFormData] = useState({
     firstName: '',
@@ -18,6 +46,57 @@ export default function ContactSection() {
   });
 
   const [submitted, setSubmitted] = useState(false);
+
+  useEffect(() => {
+    const targetCountry =
+      COUNTRIES.find((c) => c.code === (currentLocale === 'en' ? 'gb' : currentLocale)) || COUNTRIES[0];
+    setSelectedCountry(targetCountry);
+  }, [currentLocale]);
+
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
+        setCountryDropdownOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
+  const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    let val = e.target.value;
+
+    // Filter out invalid characters (keep digits, spaces, hyphens)
+    val = val.replace(/[^\d\s-]/g, '');
+
+    // Strip leading '+' or country dial code if user tries to enter it
+    const cleanDial = selectedCountry.dialCode.replace('+', '');
+    if (val.startsWith(cleanDial)) {
+      val = val.slice(cleanDial.length).trim();
+    } else if (val.startsWith('00' + cleanDial)) {
+      val = val.slice(('00' + cleanDial).length).trim();
+    }
+
+    // Strip leading 0 (e.g. if user types 0543)
+    if (val.startsWith('0') && val.length > 1) {
+      val = val.slice(1);
+    }
+
+    // Enforce country character limit
+    if (val.length <= selectedCountry.maxLength) {
+      setFormData((prev) => ({ ...prev, phone: val }));
+    }
+  };
+
+  const handleCountrySelect = (country: CountryCode) => {
+    setSelectedCountry(country);
+    setCountryDropdownOpen(false);
+    // Reset phone if country code changes
+    setFormData((prev) => ({ ...prev, phone: '' }));
+    setTimeout(() => {
+      phoneInputRef.current?.focus();
+    }, 50);
+  };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -356,7 +435,7 @@ export default function ContactSection() {
                 />
               </div>
 
-              {/* Phone Number with Flag Selector */}
+              {/* Phone Number with Interactive Flag Selector & Length Limiter */}
               <div>
                 <label
                   style={{
@@ -370,29 +449,39 @@ export default function ContactSection() {
                   {t('labelPhone')}
                 </label>
                 <div
+                  ref={dropdownRef}
                   style={{
+                    position: 'relative',
                     display: 'flex',
                     alignItems: 'center',
                     backgroundColor: '#121214',
                     border: '1px solid #27272a',
                     borderRadius: '10px',
-                    overflow: 'hidden',
                   }}
                   className="contact-input-wrapper"
                 >
-                  {/* Flag Badge */}
-                  <div
+                  {/* Clickable Flag Button */}
+                  <button
+                    type="button"
+                    onClick={() => setCountryDropdownOpen(!countryDropdownOpen)}
                     style={{
                       padding: '0.85rem 0.85rem',
                       display: 'flex',
                       alignItems: 'center',
-                      gap: '0.4rem',
+                      gap: '0.45rem',
+                      border: 'none',
                       borderRight: '1px solid #27272a',
                       backgroundColor: '#18181b',
                       fontSize: '0.9rem',
-                      color: '#a1a1aa',
-                      userSelect: 'none',
+                      color: '#ffffff',
+                      cursor: 'pointer',
+                      borderTopLeftRadius: '9px',
+                      borderBottomLeftRadius: '9px',
+                      outline: 'none',
+                      transition: 'background-color 0.2s',
                     }}
+                    onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#27272a')}
+                    onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#18181b')}
                   >
                     <div
                       style={{
@@ -405,22 +494,110 @@ export default function ContactSection() {
                       }}
                     >
                       <Image
-                        src="/flags/tr.webp"
-                        alt="Turkey Flag"
+                        src={selectedCountry.flag}
+                        alt={selectedCountry.name}
                         fill
                         unoptimized
                         style={{ objectFit: 'cover' }}
                       />
                     </div>
-                    <span>▾</span>
-                  </div>
+                    <span style={{ fontSize: '0.82rem', fontWeight: 600, color: '#e4e4e7' }}>
+                      {selectedCountry.dialCode}
+                    </span>
+                    <span
+                      style={{
+                        fontSize: '0.75rem',
+                        color: '#a1a1aa',
+                        transform: countryDropdownOpen ? 'rotate(180deg)' : 'none',
+                        transition: 'transform 0.2s',
+                      }}
+                    >
+                      ▾
+                    </span>
+                  </button>
+
+                  {/* Dropdown Floating Menu */}
+                  {countryDropdownOpen && (
+                    <div
+                      style={{
+                        position: 'absolute',
+                        top: 'calc(100% + 0.4rem)',
+                        left: 0,
+                        backgroundColor: '#18181b',
+                        border: '1px solid #27272a',
+                        borderRadius: '16px',
+                        padding: '0.45rem',
+                        zIndex: 100,
+                        boxShadow: '0 20px 40px rgba(0, 0, 0, 0.6)',
+                        minWidth: '225px',
+                        display: 'flex',
+                        flexDirection: 'column',
+                        gap: '0.2rem',
+                      }}
+                    >
+                      {COUNTRIES.map((c) => {
+                        const isSelected = c.code === selectedCountry.code;
+                        return (
+                          <button
+                            key={c.code}
+                            type="button"
+                            onClick={() => handleCountrySelect(c)}
+                            style={{
+                              display: 'flex',
+                              alignItems: 'center',
+                              gap: '0.75rem',
+                              padding: '0.55rem 0.75rem',
+                              borderRadius: '8px',
+                              border: 'none',
+                              backgroundColor: isSelected ? '#27272a' : 'transparent',
+                              color: isSelected ? '#FFA552' : '#ffffff',
+                              cursor: 'pointer',
+                              fontSize: '0.88rem',
+                              textAlign: 'left',
+                              width: '100%',
+                              transition: 'background-color 0.15s',
+                            }}
+                            onMouseEnter={(e) => {
+                              if (!isSelected) e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.05)';
+                            }}
+                            onMouseLeave={(e) => {
+                              if (!isSelected) e.currentTarget.style.backgroundColor = 'transparent';
+                            }}
+                          >
+                            <div
+                              style={{
+                                width: '20px',
+                                height: '14px',
+                                position: 'relative',
+                                borderRadius: '2px',
+                                overflow: 'hidden',
+                                flexShrink: 0,
+                              }}
+                            >
+                              <Image
+                                src={c.flag}
+                                alt={c.name}
+                                fill
+                                unoptimized
+                                style={{ objectFit: 'cover' }}
+                              />
+                            </div>
+                            <span style={{ flex: 1, whiteSpace: 'nowrap' }}>{c.name}</span>
+                            <span style={{ color: '#a1a1aa', fontSize: '0.8rem', fontWeight: 500 }}>{c.dialCode}</span>
+                          </button>
+                        );
+                      })}
+                    </div>
+                  )}
 
                   <input
+                    ref={phoneInputRef}
                     type="tel"
                     required
-                    placeholder="(+90) 543-352-60-40"
+                    maxLength={selectedCountry.maxLength}
+                    placeholder={selectedCountry.placeholder}
                     value={formData.phone}
-                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                    onChange={handlePhoneChange}
                     style={{
                       flex: 1,
                       backgroundColor: 'transparent',
