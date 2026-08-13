@@ -3,15 +3,16 @@
 import { useLocale } from 'next-intl';
 import { usePathname, useRouter, LOCALES, LOCALE_LABELS, type Locale } from '@/i18n/routing';
 import { useState, useTransition, useRef, useEffect } from 'react';
+import Image from 'next/image';
 
 const LOCALE_FLAGS: Record<Locale, string> = {
-  tr: '🇹🇷',
-  en: '🇬🇧',
-  pl: '🇵🇱',
-  pt: '🇵🇹',
-  es: '🇪🇸',
-  ru: '🇷🇺',
-  de: '🇩🇪',
+  tr: '/flags/tr.webp',
+  en: '/flags/en.webp',
+  pl: '/flags/pl.webp',
+  pt: '/flags/pt.webp',
+  es: '/flags/es.webp',
+  ru: '/flags/ru.webp',
+  de: '/flags/de.webp',
 };
 
 export default function LanguageSwitcher() {
@@ -42,7 +43,7 @@ export default function LanguageSwitcher() {
   }, []);
 
   const activeLabel = LOCALE_LABELS[currentLocale]?.nativeName || currentLocale.toUpperCase();
-  const activeFlag = LOCALE_FLAGS[currentLocale] || '🌐';
+  const activeFlagSrc = LOCALE_FLAGS[currentLocale] || '/flags/tr.webp';
 
   return (
     <div ref={containerRef} style={{ position: 'relative', display: 'inline-block' }}>
@@ -58,7 +59,7 @@ export default function LanguageSwitcher() {
           gap: '0.6rem',
           backgroundColor: '#ffffff',
           color: '#0f172a',
-          padding: '0.55rem 1rem',
+          padding: '0.5rem 0.95rem',
           borderRadius: '9999px',
           border: '1px solid #e2e8f0',
           fontSize: '0.9rem',
@@ -68,7 +69,25 @@ export default function LanguageSwitcher() {
           boxShadow: '0 1px 3px 0 rgba(0, 0, 0, 0.05)',
         }}
       >
-        <span style={{ fontSize: '1.1rem', lineHeight: 1 }}>{activeFlag}</span>
+        <div
+          style={{
+            width: '20px',
+            height: '14px',
+            position: 'relative',
+            borderRadius: '2px',
+            overflow: 'hidden',
+            flexShrink: 0,
+            boxShadow: '0 1px 2px rgba(0,0,0,0.15)',
+          }}
+        >
+          <Image
+            src={activeFlagSrc}
+            alt={activeLabel}
+            fill
+            unoptimized
+            style={{ objectFit: 'cover' }}
+          />
+        </div>
         <span>{activeLabel}</span>
         <svg
           width="14"
@@ -97,9 +116,9 @@ export default function LanguageSwitcher() {
             top: 'calc(100% + 0.6rem)',
             right: 0,
             width: 'max-content',
-            minWidth: '170px',
+            minWidth: '175px',
             backgroundColor: '#ffffff',
-            borderRadius: '24px',
+            borderRadius: '20px',
             boxShadow: '0 20px 40px -15px rgba(0, 0, 0, 0.12), 0 0 0 1px rgba(0, 0, 0, 0.06)',
             padding: '0.5rem',
             zIndex: 100,
@@ -111,7 +130,7 @@ export default function LanguageSwitcher() {
           {LOCALES.map((loc) => {
             const isSelected = loc === currentLocale;
             const label = LOCALE_LABELS[loc]?.nativeName || loc.toUpperCase();
-            const flag = LOCALE_FLAGS[loc] || '🌐';
+            const flagSrc = LOCALE_FLAGS[loc] || '/flags/tr.webp';
 
             return (
               <button
@@ -121,10 +140,10 @@ export default function LanguageSwitcher() {
                 style={{
                   display: 'flex',
                   alignItems: 'center',
-                  gap: '0.65rem',
+                  gap: '0.75rem',
                   width: '100%',
                   padding: '0.6rem 0.85rem',
-                  borderRadius: '16px',
+                  borderRadius: '14px',
                   border: 'none',
                   backgroundColor: isSelected ? '#fff7ed' : 'transparent',
                   color: isSelected ? '#ea580c' : '#1e293b',
@@ -147,7 +166,25 @@ export default function LanguageSwitcher() {
                   }
                 }}
               >
-                <span style={{ fontSize: '1.25rem', lineHeight: 1 }}>{flag}</span>
+                <div
+                  style={{
+                    width: '22px',
+                    height: '15px',
+                    position: 'relative',
+                    borderRadius: '2px',
+                    overflow: 'hidden',
+                    flexShrink: 0,
+                    boxShadow: '0 1px 2px rgba(0,0,0,0.15)',
+                  }}
+                >
+                  <Image
+                    src={flagSrc}
+                    alt={label}
+                    fill
+                    unoptimized
+                    style={{ objectFit: 'cover' }}
+                  />
+                </div>
                 <span style={{ flex: 1 }}>{label}</span>
                 {isSelected && (
                   <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor" style={{ color: '#ea580c' }}>

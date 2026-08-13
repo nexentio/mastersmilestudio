@@ -1,0 +1,44 @@
+{
+  "colTreatmentsTitle": "// Процедуры",
+  "treatmentZirconium": "Циркониевые коронки",
+  "treatmentEmax": "Фарфоровые виниры E-Max",
+  "treatmentImplant": "Импланты All-on-4 / All-on-6",
+  "treatmentHollywood": "Голливудская улыбка",
+  "treatmentWhitening": "Отбеливание зубов",
+  "treatmentSurgery": "Челюстно-лицевая хирургия",
+
+  "colSupportTitle": "// Поддержка",
+  "supportProcess": "Этапы лечения",
+  "supportTourism": "Гид по стоматологическому туризму",
+  "supportReviews": "Отзывы пациентов",
+  "supportFaq": "Часто задаваемые вопросы",
+  "supportContact": "Контакты и адрес клиники",
+  "supportWhatsapp": "Консультация в WhatsApp",
+
+  "colCorporateTitle": "// О компании",
+  "corpAbout": "О нас и наша миссия",
+  "corpTeam": "Наши врачи-специалисты",
+  "corpRooms": "VIP-кабинеты клиники",
+  "corpTech": "3D-томография и технологии",
+  "corpCertificates": "Сертификаты качества",
+  "corpBlog": "Стоматологический блог и статьи",
+
+  "colLegalTitle": "// Контакты и правовая информация",
+  "legalClinic": "Клиника в Анталии HQ",
+  "legalSupport": "Линия записи и поддержки",
+  "legalKvkk": "Политика обработки персональных данных",
+  "legalPrivacy": "Политика конфиденциальности",
+  "legalCookies": "Настройки cookie",
+  "legalTerms": "Условия использования",
+
+  "newsletterTitle": "Будьте в курсе клинических новостей и акций",
+  "newsletterDesc": "Получайте новейшие руководства по эстетике зубов, новости клиники и специальные предложения прямо на вашу почту.",
+  "newsletterPlaceholder": "primer@gmail.com",
+  "newsletterBtn": "Подписаться",
+  "newsletterSuccess": "Вы подписаны ✓",
+  "newsletterConsent": "Я согласен на получение информационных писем от Master Smile Studio.",
+
+  "copyright": "©2026 Master Smile Studio. Все права защищены.",
+  "privacyPolicy": "Политика конфиденциальности",
+  "termsOfUse": "Условия использования"
+}

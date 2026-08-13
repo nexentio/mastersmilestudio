@@ -1,29 +1,33 @@
 {
   "heading": "Master Smile Studio",
-  "subtitle": "Desde el primer contacto, brindamos transparencia y planes de tratamiento detallados evaluados por nuestro equipo.",
+  "subtitle": "Desde el primer contacto, brindamos orientación transparente y un plan de tratamiento personalizado evaluado por nuestro equipo de odontólogos especialistas.",
   "step1": {
     "title": "Primer Contacto",
     "subtitle": "Formulario - WhatsApp - Email",
-    "content": "Al contactarnos, nuestro equipo escucha sus necesidades. Evaluamos su caso y le proporcionamos información personalizada."
+    "content": "Al contactarnos, nuestro equipo escucha sus necesidades y expectativas. Nuestros especialistas evalúan su caso y le brindan orientación inicial personalizada."
   },
   "step2": {
-    "title": "Cita y Planificación",
-    "subtitle": "Información sobre su proceso",
-    "content": "Evaluamos radiografías y fotos médicas para presentarle las mejores opciones de tratamiento con total transparencia."
+    "title": "Consulta y Planificación",
+    "subtitle": "Información Clara y Transparente",
+    "content": "Durante la consulta, evaluamos sus radiografías y fotografías digitales para presentarle las mejores opciones de tratamiento de forma transparente."
   },
   "step3": {
     "title": "Proceso de Tratamiento",
-    "subtitle": "Guía en cada etapa",
-    "content": "A su llegada a la clínica, nuestro equipo le da la bienvenida y le guía a través del tratamiento con tecnología avanzada."
+    "subtitle": "Atención Guiada Paso a Paso",
+    "content": "Al llegar a nuestra clínica, nuestro equipo le dará la bienvenida y le guiará a través de su tratamiento realizado por especialistas con tecnología de vanguardia."
   },
   "step4": {
-    "title": "Cuidados Posteriores",
-    "subtitle": "Guía tras el tratamiento",
-    "content": "Antes de su viaje, compartimos las instrucciones de cuidado posterior y le entregamos todos sus documentos médicos."
+    "title": "Cuidado Posterior",
+    "subtitle": "Soporte y Orientación Continua",
+    "content": "Antes de partir, le entregamos sus documentos médicos, certificados de garantía y pautas de cuidado con soporte 24/7 para una sonrisa duradera."
   },
-  "contactTitle": "Canales de Contacto Rápido",
-  "btnWhatsapp": "WhatsApp",
-  "btnCall": "Llámenos",
-  "btnForm": "Formulario Rápido",
-  "btnEmail": "Email"
+  "contactLink": "CONTÁCTENOS",
+  "card1Badge": "100% GRATIS",
+  "card1Title": "CONTACTE A NUESTROS MÉDICOS ESPECIALISTAS",
+  "card1Desc": "Hable directamente con nuestros odontólogos especialistas, reciba precios transparentes y obtenga su plan de tratamiento personalizado sin costo.",
+  "card1Btn": "Consulta Gratuita",
+  "card2Badge": "CITA",
+  "card2Title": "PLANIFIQUE SU CITA AHORA",
+  "card2Desc": "Reserve su cita en segundos para la fecha y hora que prefiera a través de WhatsApp, teléfono o formulario web sin esperas.",
+  "card2Btn": "Agendar Cita"
 }

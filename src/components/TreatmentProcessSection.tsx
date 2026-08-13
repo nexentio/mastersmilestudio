@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { useTranslations, useLocale } from 'next-intl';
+import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 
 export default function TreatmentProcessSection() {
@@ -14,30 +14,30 @@ export default function TreatmentProcessSection() {
     {
       id: 1,
       num: '1',
-      title: 'İletişim',
-      sub: 'Form - WhatsApp - E-mail',
-      desc: 'Bizimle iletişime geçtiğinizde ekibimiz ihtiyaçlarınızı ve beklentilerinizi dinler. Paylaştığınız bilgiler uzmanlarımız tarafından değerlendirilir ve sürece dair bilgilendirmeler size aktarılır.',
+      title: t('step1.title'),
+      sub: t('step1.subtitle'),
+      desc: t('step1.content'),
     },
     {
       id: 2,
       num: '2',
-      title: 'Randevu Oluşturulması',
-      sub: 'Sürecinize Dair Bilgilendirme',
-      desc: 'Tarafınızla iletişime geçilerek size en uygun gün ve saat diliminde randevunuz planlanır. Randevu öncesinde dikkat edilmesi gereken detaylar ve ön bilgiler iletilir.',
+      title: t('step2.title'),
+      sub: t('step2.subtitle'),
+      desc: t('step2.content'),
     },
     {
       id: 3,
       num: '3',
-      title: 'Tedavi Süreci',
-      sub: 'Tedavi Sürecinin Her Aşamasında Bilgilendirme',
-      desc: 'Uzman diş hekimimiz tarafından gerçekleştirilen detaylı muayene ve dijital röntgen değerlendirmesinin ardından kişiye özel tedavi planı netleştirilir. Süreç boyunca şeffaf iletişim sağlanır.',
+      title: t('step3.title'),
+      sub: t('step3.subtitle'),
+      desc: t('step3.content'),
     },
     {
       id: 4,
       num: '4',
-      title: 'Tedavi Sonrası',
-      sub: 'Tedavi Sonrası Sürece İlişkin Rehberlik',
-      desc: 'Tedavi sonrasında dikkat edilmesi gereken hususlar, ağız bakımı tavsiyeleri ve kontrol randevularınız hakkında detaylı rehberlik ve 7/24 destek sağlanır.',
+      title: t('step4.title'),
+      sub: t('step4.subtitle'),
+      desc: t('step4.content'),
     },
   ];
 
@@ -83,7 +83,7 @@ export default function TreatmentProcessSection() {
                 textTransform: 'uppercase',
               }}
             >
-              Master Smile Studio
+              {t('heading')}
             </h2>
 
             <p
@@ -96,7 +96,7 @@ export default function TreatmentProcessSection() {
                 maxWidth: '560px',
               }}
             >
-              İlk iletişim aşamasından itibaren, süreç hakkında gerekli bilgilendirmeleri sağlıyoruz. Tedaviyle ilgili adımlar, diş hekimi değerlendirmesi sonrasında tarafınıza aktarılır. Tüm süreç boyunca şeffaf iletişim ve düzenli bilgilendirme sunmayı amaçlıyoruz.
+              {t('subtitle')}
             </p>
 
             {/* Step Selection List */}
@@ -173,7 +173,7 @@ export default function TreatmentProcessSection() {
                 marginBottom: '0.5rem',
               }}
             >
-              BİZİMLE İLETİŞİME GEÇİN
+              {t('contactLink')}
             </a>
 
             {/* Video Thumbnail Card with Play Button Overlay */}
@@ -281,7 +281,7 @@ export default function TreatmentProcessSection() {
                     flexShrink: 0,
                   }}
                 >
-                  100% SERBEST
+                  {t('card1Badge')}
                 </div>
 
                 <h3
@@ -295,7 +295,7 @@ export default function TreatmentProcessSection() {
                     textTransform: 'uppercase',
                   }}
                 >
-                  UZMAN HEKİMLERİMİZLE İLETİŞİME GEÇİN
+                  {t('card1Title')}
                 </h3>
               </div>
 
@@ -309,7 +309,7 @@ export default function TreatmentProcessSection() {
                   fontWeight: 400,
                 }}
               >
-                Ağız ve diş sağlığınız için uzman hekimlerimizle doğrudan görüşün, şeffaf fiyatlandırma ve kişiye özel tedavi planınızı ücretsiz oluşturun.
+                {t('card1Desc')}
               </p>
             </div>
 
@@ -333,7 +333,7 @@ export default function TreatmentProcessSection() {
                 }}
                 className="process-card-btn"
               >
-                <span>Ücretsiz Danışma Al</span>
+                <span>{t('card1Btn')}</span>
                 <span>→</span>
               </a>
             </div>
@@ -384,7 +384,7 @@ export default function TreatmentProcessSection() {
                       flexShrink: 0,
                     }}
                   >
-                    RANDEVU
+                    {t('card2Badge')}
                   </div>
 
                   <h3
@@ -398,7 +398,7 @@ export default function TreatmentProcessSection() {
                       textTransform: 'uppercase',
                     }}
                   >
-                    RANDEVUNUZU HEMEN PLANLAYIN
+                    {t('card2Title')}
                   </h3>
                 </div>
 
@@ -411,7 +411,7 @@ export default function TreatmentProcessSection() {
                     fontWeight: 400,
                   }}
                 >
-                  WhatsApp, telefon veya web formumuz üzerinden istediğiniz tarih ve saatte beklemeden randevunuzu saniyeler içinde oluşturun.
+                  {t('card2Desc')}
                 </p>
               </div>
 
@@ -435,7 +435,7 @@ export default function TreatmentProcessSection() {
                   }}
                   className="process-card-btn"
                 >
-                  <span>Randevunu Planla</span>
+                  <span>{t('card2Btn')}</span>
                   <span>→</span>
                 </a>
               </div>

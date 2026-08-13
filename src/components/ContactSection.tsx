@@ -1,11 +1,11 @@
 'use client';
 
 import { useState } from 'react';
-import { useTranslations, useLocale } from 'next-intl';
+import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 
 export default function ContactSection() {
   const t = useTranslations('contact');
-  const locale = useLocale();
 
   const [formData, setFormData] = useState({
     firstName: '',
@@ -81,32 +81,32 @@ export default function ContactSection() {
                 margin: 0,
               }}
             >
-              Get in touch
+              {t('heading')}
             </h2>
 
             {/* 1. Visit us */}
             <div>
               <h3 style={{ fontSize: '1.1rem', fontWeight: 600, color: '#0f172a', margin: '0 0 0.25rem 0' }}>
-                Visit us
+                {t('visitTitle')}
               </h3>
               <p style={{ fontSize: '0.925rem', color: '#1e293b', margin: '0 0 0.35rem 0', fontWeight: 400 }}>
-                Come say hello at our clinic HQ.
+                {t('visitDesc')}
               </p>
               <p style={{ fontSize: '0.95rem', fontWeight: 500, color: '#0f172a', margin: 0, lineHeight: 1.45 }}>
-                Liman Mah. Atatürk Bulvarı No: 142 Konyaaltı / Antalya TR
+                {t('address')}
               </p>
             </div>
 
             {/* 2. Chat to us */}
             <div>
               <h3 style={{ fontSize: '1.1rem', fontWeight: 600, color: '#0f172a', margin: '0 0 0.25rem 0' }}>
-                Chat to us
+                {t('chatTitle')}
               </h3>
               <p style={{ fontSize: '0.925rem', color: '#1e293b', margin: '0 0 0.35rem 0', fontWeight: 400 }}>
-                Our friendly team is here to help 24/7.
+                {t('chatDesc')}
               </p>
               <a
-                href="mailto:info@mastersmilestudio.com"
+                href={`mailto:${t('email')}`}
                 style={{
                   fontSize: '0.95rem',
                   fontWeight: 600,
@@ -115,20 +115,20 @@ export default function ContactSection() {
                   borderBottom: '1.5px solid #0f172a',
                 }}
               >
-                info@mastersmilestudio.com
+                {t('email')}
               </a>
             </div>
 
             {/* 3. Call us */}
             <div>
               <h3 style={{ fontSize: '1.1rem', fontWeight: 600, color: '#0f172a', margin: '0 0 0.25rem 0' }}>
-                Call us
+                {t('callTitle')}
               </h3>
               <p style={{ fontSize: '0.925rem', color: '#1e293b', margin: '0 0 0.35rem 0', fontWeight: 400 }}>
-                Mon-Sat from 9am to 8pm
+                {t('callHours')}
               </p>
               <a
-                href="tel:+905433526040"
+                href="tel:+905373059947"
                 style={{
                   fontSize: '1rem',
                   fontWeight: 600,
@@ -136,7 +136,7 @@ export default function ContactSection() {
                   textDecoration: 'none',
                 }}
               >
-                (+90) 543 352 60 40
+                {t('phone')}
               </a>
             </div>
           </div>
@@ -144,12 +144,12 @@ export default function ContactSection() {
           {/* Social Media Footer */}
           <div style={{ marginTop: '2rem' }}>
             <h4 style={{ fontSize: '0.95rem', fontWeight: 600, color: '#0f172a', margin: '0 0 0.75rem 0' }}>
-              Social media
+              {t('socialTitle')}
             </h4>
             <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
               {/* Facebook */}
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/p/Mastersmilestudio-61569392717782/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook"
@@ -159,22 +159,21 @@ export default function ContactSection() {
                   <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
                 </svg>
               </a>
-              {/* LinkedIn */}
+              {/* YouTube */}
               <a
-                href="https://linkedin.com"
+                href="https://www.youtube.com/@dentmastersmile"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="LinkedIn"
+                aria-label="YouTube"
                 style={{ color: '#0f172a', opacity: 0.85, transition: 'opacity 0.2s' }}
               >
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z" />
-                  <circle cx="4" cy="4" r="2" />
+                  <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
                 </svg>
               </a>
               {/* Instagram */}
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/mastersmilestudio/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
@@ -217,10 +216,10 @@ export default function ContactSection() {
             >
               <div style={{ fontSize: '3rem', marginBottom: '0.5rem', color: '#FFA552' }}>✓</div>
               <h3 style={{ fontSize: '1.5rem', fontWeight: 600, margin: '0 0 0.5rem 0' }}>
-                Message Sent Successfully!
+                {t('successTitle')}
               </h3>
               <p style={{ fontSize: '1rem', color: '#a1a1aa', margin: 0 }}>
-                Our dental specialists will contact you within 15 minutes.
+                {t('successDesc')}
               </p>
             </div>
           ) : (
@@ -237,12 +236,12 @@ export default function ContactSection() {
                       marginBottom: '0.5rem',
                     }}
                   >
-                    First Name
+                    {t('labelFirstName')}
                   </label>
                   <input
                     type="text"
                     required
-                    placeholder="Randomfirst"
+                    placeholder={t('placeholderFirstName')}
                     value={formData.firstName}
                     onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
                     style={{
@@ -269,12 +268,12 @@ export default function ContactSection() {
                       marginBottom: '0.5rem',
                     }}
                   >
-                    Last Name
+                    {t('labelLastName')}
                   </label>
                   <input
                     type="text"
                     required
-                    placeholder="Randomlast"
+                    placeholder={t('placeholderLastName')}
                     value={formData.lastName}
                     onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
                     style={{
@@ -303,11 +302,11 @@ export default function ContactSection() {
                     marginBottom: '0.5rem',
                   }}
                 >
-                  Treatment / Company Name
+                  {t('labelTreatment')}
                 </label>
                 <input
                   type="text"
-                  placeholder="Zirconium, All-on-4, Hollywood Smile..."
+                  placeholder={t('placeholderTreatment')}
                   value={formData.treatment}
                   onChange={(e) => setFormData({ ...formData, treatment: e.target.value })}
                   style={{
@@ -335,12 +334,12 @@ export default function ContactSection() {
                     marginBottom: '0.5rem',
                   }}
                 >
-                  Email
+                  {t('labelEmail')}
                 </label>
                 <input
                   type="email"
                   required
-                  placeholder="Random@gmail.com"
+                  placeholder={t('placeholderEmail')}
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   style={{
@@ -368,7 +367,7 @@ export default function ContactSection() {
                     marginBottom: '0.5rem',
                   }}
                 >
-                  Phone Number
+                  {t('labelPhone')}
                 </label>
                 <div
                   style={{
@@ -395,7 +394,24 @@ export default function ContactSection() {
                       userSelect: 'none',
                     }}
                   >
-                    <span>🇹🇷</span>
+                    <div
+                      style={{
+                        width: '20px',
+                        height: '14px',
+                        position: 'relative',
+                        borderRadius: '2px',
+                        overflow: 'hidden',
+                        flexShrink: 0,
+                      }}
+                    >
+                      <Image
+                        src="/flags/tr.webp"
+                        alt="Turkey Flag"
+                        fill
+                        unoptimized
+                        style={{ objectFit: 'cover' }}
+                      />
+                    </div>
                     <span>▾</span>
                   </div>
 
@@ -429,11 +445,11 @@ export default function ContactSection() {
                     marginBottom: '0.5rem',
                   }}
                 >
-                  Message
+                  {t('labelMessage')}
                 </label>
                 <textarea
                   rows={4}
-                  placeholder="Tell us what we can help you with"
+                  placeholder={t('placeholderMessage')}
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   style={{
@@ -468,9 +484,9 @@ export default function ContactSection() {
                   }}
                 />
                 <label htmlFor="privacy" style={{ fontSize: '0.85rem', color: '#a1a1aa', lineHeight: 1.45, cursor: 'pointer' }}>
-                  I'd like to receive more information about Master Smile Studio. I understand and agree to the{' '}
+                  {t('privacyConsent')}{' '}
                   <a href="#privacy" style={{ color: '#38bdf8', textDecoration: 'underline' }}>
-                    Privacy Policy
+                    {t('privacyLink')}
                   </a>
                 </label>
               </div>
@@ -495,7 +511,7 @@ export default function ContactSection() {
                 }}
                 className="send-msg-btn"
               >
-                Send Message
+                {t('btnSend')}
               </button>
             </form>
           )}

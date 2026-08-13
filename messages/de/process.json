@@ -1,29 +1,33 @@
 {
   "heading": "Master Smile Studio",
-  "subtitle": "Vom ersten Kontakt an bieten wir eine transparente Beratung und detaillierte Behandlungspläne unserer Zahnärzte. Wir streben absolute Klarheit an.",
+  "subtitle": "Ab dem ersten Kontakt bieten wir Ihnen eine transparente Betreuung und einen individuellen Behandlungsplan, der von unserem zahnärztlichen Fachteam erstellt wird.",
   "step1": {
     "title": "Erstkontakt",
     "subtitle": "Formular - WhatsApp - E-Mail",
-    "content": "Wenn Sie uns kontaktieren, hört unser Team auf Ihre Wünsche. Ihre Angaben werden von Experten ausgewertet und Sie erhalten erste Informationen."
+    "content": "Wenn Sie uns kontaktieren, hört unser Team auf Ihre Wünsche. Ihre Angaben werden von unseren Spezialisten ausgewertet und Sie erhalten erste Empfehlungen."
   },
   "step2": {
-    "title": "Terminvereinbarung",
-    "subtitle": "Informationen zu Ihrem Ablauf",
-    "content": "Während Ihrer Beratung werden Röntgenbilder und Fotos ausgewertet, um Ihnen optimale Behandlungsmöglichkeiten transparent vorzustellen."
+    "title": "Beratung & Planung",
+    "subtitle": "Transparente Informationen",
+    "content": "Auf Basis digitaler Röntgenaufnahmen und Fotos wird Ihr Fall detailliert analysiert und der optimale Behandlungsplan transparent erstellt."
   },
   "step3": {
     "title": "Behandlungsablauf",
-    "subtitle": "Begleitung bei jedem Schritt",
-    "content": "Bei Ihrer Ankunft in unserer Klinik empfängt Sie unser Team und begleitet Sie durch die Behandlung mit modernster Zahntechnik."
+    "subtitle": "Schritt-für-Schritt Betreuung",
+    "content": "In unserer Klinik werden Sie von unserem Team herzlich empfangen und von Fachärzten mit modernster digitaler Technologie behandelt."
   },
   "step4": {
-    "title": "Nachsorge & Betreuung",
-    "subtitle": "Leitfaden für die Zeit danach",
-    "content": "Vor der Abreise besprechen wir alle Nachsorgehinweise, übergeben Ihre Unterlagen und garantieren langfristige Unterstützung."
+    "title": "Nachsorge & Pflege",
+    "subtitle": "Langfristige Betreuung",
+    "content": "Vor Ihrer Abreise erhalten Sie alle Pflegehinweise, Dokumente und 24/7 Unterstützung für ein dauerhaft gesundes Lächeln."
   },
-  "contactTitle": "Schnelle Kontaktwege",
-  "btnWhatsapp": "WhatsApp",
-  "btnCall": "Rufen Sie uns an",
-  "btnForm": "Schnellformular",
-  "btnEmail": "E-Mail"
+  "contactLink": "KONTAKTIEREN SIE UNS",
+  "card1Badge": "100% KOSTENLOS",
+  "card1Title": "SPRECHEN SIE MIT UNSEREN FACHÄRZTEN",
+  "card1Desc": "Kontaktieren Sie unsere Spezialisten direkt, erhalten Sie transparente Preise und Ihren kostenlosen individuellen Behandlungsplan.",
+  "card1Btn": "Kostenlose Beratung",
+  "card2Badge": "TERMIN",
+  "card2Title": "PLANEN SIE JETZT IHREN TERMIN",
+  "card2Desc": "Buchen Sie Ihren Wunschtermin in Sekundenschnelle über WhatsApp, Telefon oder Online-Formular ohne Wartezeit.",
+  "card2Btn": "Termin vereinbaren"
 }

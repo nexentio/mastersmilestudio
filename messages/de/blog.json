@@ -1,31 +1,12 @@
 {
-  "eyebrow": "✦ Zahngesundheit & Blog",
-  "title": "Neueste Artikel & Blog",
-  "subtitle": "Entdecken Sie Expertentipps, Behandlungsratgeber und Berichte von den Zahnärzten von Master Smile Studio.",
-  "readMore": "Artikel Lesen",
-  "readTime": "Min. Lesezeit",
-  "post1": {
-    "category": "Lächelngestaltung",
-    "title": "Zirkon oder E-Max Veneers: Was passt am besten zu Ihrem Lächeln?",
-    "excerpt": "Vergleichen Sie Festigkeit, Lichtdurchlässigkeit und Ästhetik zwischen Zirkonkronen und E-Max Porzellan-Veneers.",
-    "date": "10. Aug. 2026",
-    "author": "Dr. Ozan Öztürk",
-    "readTime": "5"
-  },
-  "post2": {
-    "category": "Implantologie",
-    "title": "All-on-4 Zahnimplantate: Behandlungs- und Wiederherstellungsratgeber",
-    "excerpt": "Erfahren Sie, wie All-on-4 Implantate Kaufunktion und ein jugendliches Aussehen in nur 5 Tagen wiederherstellen.",
-    "date": "06. Aug. 2026",
-    "author": "Dr. Tülay Kaya",
-    "readTime": "7"
-  },
-  "post3": {
-    "category": "Zahnmedizintourismus",
-    "title": "Hollywood Smile in Antalya: So planen Sie Ihren Zahnmedizin-Urlaub",
-    "excerpt": "Alles über VIP-Transfers, 5-Sterne-Hotels und Ihre Ästhetikbehandlung in der Türkei.",
-    "date": "01. Aug. 2026",
-    "author": "Dr. Fırat İskender",
-    "readTime": "6"
-  }
+  "leftDesc": "Entdecken Sie die neuesten klinischen Leitfäden, Ratschläge zur Mundgesundheit, Implantatbehandlungen und Zahnästhetik der Fachärzte von Master Smile Studio.",
+  "headingMain": "Explore Our Clinical",
+  "headingItalic": "Insights",
+  "subtitle": "Mundgesundheit, Ästhetische Zahnmedizin & Expertenratschläge",
+  "card1Title": "Design Tips",
+  "card1Desc": "Zahnärztliche Empfehlungen für ein gesundes, natürliches und ästhetisches Lächeln.",
+  "card2Title": "Brand Stories",
+  "card2Desc": "Behandlungsphasen für Porzellan-Veneers, Laminate und Zirkonkronen im Detail.",
+  "card3Title": "Creative Notes",
+  "card3Desc": "Leitfaden für nahtlose digitale Implantologie und Methoden zur schnellen Genesung."
 }

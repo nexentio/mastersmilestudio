@@ -5,34 +5,42 @@ import { useTranslations } from 'next-intl';
 export default function BrandsSection() {
   const t = useTranslations('brands');
 
+  const getSafeText = (key: string, fallback: string) => {
+    try {
+      return t.has(key as any) ? t(key as any) : fallback;
+    } catch {
+      return fallback;
+    }
+  };
+
   const brands = [
     {
       name: 'Straumann',
-      subtitle: t('straumannSub'),
+      subtitle: getSafeText('straumannSub', 'Swiss Precision Implants'),
       icon: '✦',
       origin: 'İsviçre / Swiss Made',
     },
     {
       name: 'Nobel Biocare',
-      subtitle: t('nobelSub'),
+      subtitle: getSafeText('nobelSub', 'Premium Implantology'),
       icon: '✧',
       origin: 'İsveç / Sweden',
     },
     {
       name: 'Astra Tech',
-      subtitle: t('astraSub'),
+      subtitle: getSafeText('astraSub', 'Dentsply Sirona Group'),
       icon: '✦',
       origin: 'Dentsply Sirona',
     },
     {
       name: 'Medentika',
-      subtitle: t('medentikaSub'),
+      subtitle: getSafeText('medentikaSub', 'Straumann Group Quality'),
       icon: '✧',
       origin: 'Straumann Group',
     },
     {
       name: 'Bredent SKY',
-      subtitle: t('bredentSub'),
+      subtitle: getSafeText('bredentSub', 'German Dental Innovation'),
       icon: '✦',
       origin: 'Almanya / Germany',
     },
@@ -92,7 +100,7 @@ export default function BrandsSection() {
             lineHeight: 1.15,
           }}
         >
-          {t('title')}
+          {getSafeText('title', 'Dünya Standartlarında Dental İmplant & Materyal Ortakları')}
         </h2>
 
         <p
@@ -105,7 +113,7 @@ export default function BrandsSection() {
             lineHeight: 1.6,
           }}
         >
-          Polikliniğimizde kullanılan tüm implant ve kaplama sistemleri ömür boyu orijinal garanti sertifikalıdır.
+          {getSafeText('subtitle', 'Polikliniğimizde kullanılan tüm implant ve kaplama sistemleri ömür boyu orijinal garanti sertifikalıdır.')}
         </p>
       </div>
 

@@ -21,9 +21,13 @@
     "subtitle": "Aftercare & Long-term Support",
     "content": "Before departure, we review all aftercare guidelines, hand over your medical documents, and ensure ongoing support for a lifelong healthy smile."
   },
-  "contactTitle": "Quick Contact Channels",
-  "btnWhatsapp": "WhatsApp",
-  "btnCall": "Call Us",
-  "btnForm": "Quick Form",
-  "btnEmail": "Email"
+  "contactLink": "CONTACT OUR CLINIC",
+  "card1Badge": "100% COMPLIMENTARY",
+  "card1Title": "CONNECT WITH OUR EXPERT DENTISTS",
+  "card1Desc": "Speak directly with our dental specialists for your oral health needs, receive transparent pricing, and get your personalized treatment plan created for free.",
+  "card1Btn": "Get Free Consultation",
+  "card2Badge": "APPOINTMENT",
+  "card2Title": "PLAN YOUR APPOINTMENT NOW",
+  "card2Desc": "Book your appointment in seconds for your preferred date and time via WhatsApp, phone, or online form with zero waiting time.",
+  "card2Btn": "Schedule Appointment"
 }

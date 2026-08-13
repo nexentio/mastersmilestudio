@@ -9,21 +9,25 @@
   "step2": {
     "title": "Randevu Oluşturulması",
     "subtitle": "Sürecinize Dair Bilgilendirme",
-    "content": "Randevunuz sırasında alınan röntgen ve fotoğraf gibi medikal görüntülerinizle birlikte, vakanız değerlendirilir ve uygun olan tedavi seçenekleri hakkında tarafınıza bilgi verilir. Süreçle ilgili tüm detaylar şeffaf biçimde paylaşılır."
+    "content": "Tarafınızla iletişime geçilerek size en uygun gün ve saat diliminde randevunuz planlanır. Randevu öncesinde dikkat edilmesi gereken detaylar ve ön bilgiler iletilir."
   },
   "step3": {
     "title": "Tedavi Süreci",
     "subtitle": "Tedavi Sürecinin Her Aşamasında Bilgilendirme",
-    "content": "Kliniğimizi ziyaret ettiğinizde ekip üyelerimiz sizi karşılar ve süreçle ilgili gerekli yönlendirmeleri yapar. Diş tedavileriniz, ilgili uzmanlık birimi tarafından yapılan değerlendirme doğrultusunda yürütülür."
+    "content": "Uzman diş hekimimiz tarafından gerçekleştirilen detaylı muayene ve dijital röntgen değerlendirmesinin ardından kişiye özel tedavi planı netleştirilir. Süreç boyunca şeffaf iletişim sağlanır."
   },
   "step4": {
     "title": "Tedavi Sonrası",
     "subtitle": "Tedavi Sonrası Sürece İlişkin Rehberlik",
-    "content": "Ayrılmadan önce, tedavi sonrası döneme ilişkin gerekli bilgilendirmeleri sizinle paylaşır ve ilgili tıbbi belgelerinizi teslim ederiz. Süreçle ilgili sorularınızı yanıtlamaya özen gösteririz."
+    "content": "Tedavi sonrasında dikkat edilmesi gereken hususlar, ağız bakımı tavsiyeleri ve kontrol randevularınız hakkında detaylı rehberlik ve 7/24 destek sağlanır."
   },
-  "contactTitle": "Hızlı İletişim Yolları",
-  "btnWhatsapp": "WhatsApp",
-  "btnCall": "Bizi Arayın",
-  "btnForm": "Hızlı Form",
-  "btnEmail": "E-mail"
+  "contactLink": "BİZİMLE İLETİŞİME GEÇİN",
+  "card1Badge": "100% SERBEST",
+  "card1Title": "UZMAN HEKİMLERİMİZLE İLETİŞİME GEÇİN",
+  "card1Desc": "Ağız ve diş sağlığınız için uzman hekimlerimizle doğrudan görüşün, şeffaf fiyatlandırma ve kişiye özel tedavi planınızı ücretsiz oluşturun.",
+  "card1Btn": "Ücretsiz Danışma Al",
+  "card2Badge": "RANDEVU",
+  "card2Title": "RANDEVUNUZU HEMEN PLANLAYIN",
+  "card2Desc": "WhatsApp, telefon veya web formumuz üzerinden istediğiniz tarih ve saatte beklemeden randevunuzu saniyeler içinde oluşturun.",
+  "card2Btn": "Randevunu Planla"
 }

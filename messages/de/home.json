@@ -1,99 +1,65 @@
 {
-  "welcome": "Lächeln Design",
+  "welcome": "Smile Design",
   "description": "Starten Sie Ihre Reise mit einer kostenlosen Online-Beratung. Wir erstellen Ihren individuellen Behandlungsplan vor Ihrem Flug.",
   "ctaConsultation": "Kostenlose Beratung",
   "ctaTreatments": "Behandlungen",
   "transformations": {
-    "title": "Vom ersten Besuch zum perfekten Lächeln.",
-    "subtitle": "Entdecken Sie echte Patientengeschichten. Das ist mehr als nur ein Lächeln — es ist neues Selbstvertrauen, geschaffen mit Sorgfalt im Master Smile Studio."
-  },
-  "process": {
-    "heading": "Master Smile Studio",
-    "subtitle": "Vom ersten Kontakt an bieten wir eine transparente Beratung und detaillierte Behandlungspläne unserer Zahnärzte. Wir streben absolute Klarheit an.",
-    "step1": {
-      "title": "Erstkontakt",
-      "subtitle": "Formular - WhatsApp - E-Mail",
-      "content": "Wenn Sie uns kontaktieren, hört unser Team auf Ihre Wünsche. Ihre Angaben werden von Experten ausgewertet und Sie erhalten erste Informationen."
-    },
-    "step2": {
-      "title": "Terminvereinbarung",
-      "subtitle": "Informationen zu Ihrem Ablauf",
-      "content": "Während Ihrer Beratung werden Röntgenbilder und Fotos ausgewertet, um Ihnen optimale Behandlungsmöglichkeiten transparent vorzustellen."
-    },
-    "step3": {
-      "title": "Behandlungsablauf",
-      "subtitle": "Begleitung bei jedem Schritt",
-      "content": "Bei Ihrer Ankunft in unserer Klinik empfängt Sie unser Team und begleitet Sie durch die Behandlung mit modernster Zahntechnik."
-    },
-    "step4": {
-      "title": "Nachsorge & Betreuung",
-      "subtitle": "Leitfaden für die Zeit danach",
-      "content": "Vor der Abreise besprechen wir alle Nachsorgehinweise, übergeben Ihre Unterlagen und garantieren langfristige Unterstützung."
-    },
-    "contactTitle": "Schnelle Kontaktwege",
-    "btnWhatsapp": "WhatsApp",
-    "btnCall": "Rufen Sie uns an",
-    "btnForm": "Schnellformular",
-    "btnEmail": "E-Mail"
-  },
-  "team": {
-    "title": "Unser Expertenteam",
-    "subtitle": "Lernen Sie unser hochqualifiziertes zahnärztliches Team kennen, das internationale Standards bietet.",
-    "doc1": {
-      "title": "Prothetiker & Smile Designer",
-      "bio": "Absolvent der Zahnmedizin an der Universität Istanbul. Spezialisiert auf digitale Lächelngestaltung und Keramikrestaurationen mit 14+ Jahren Erfahrung."
-    },
-    "doc2": {
-      "title": "Mund-, Kiefer- und Gesichtschirurg",
-      "bio": "Spezialistin von der Universität Ankara mit über 12 Jahren Erfahrung in All-on-4 / All-on-6 Implantaten und Knochenaufbau."
-    },
-    "doc3": {
-      "title": "Ästhetische Zahnärztin",
-      "bio": "Absolventin der Ege Universität. Spezialisiert auf hauchdünne Porzellan-Veneers für natürliche Hollywood-Lächeln."
-    },
-    "doc4": {
-      "title": "Chefarzt & Spezialist für Kosmetische Zahnmedizin",
-      "bio": "Absolvent der Universität Hacettepe und Chefarzt im Master Smile Studio. Nach Ausbildungen in London und Zürich leitet er seit 16+ Jahren Lächelnttransformationen."
-    },
-    "doc5": {
-      "title": "Endodontie & Restaurative Zahnmedizin",
-      "bio": "Spezialistin der Marmara Universität für mikroskopgestützte Wurzelkanalbehandlungen und biokompatible Restaurationen."
-    },
-    "doc6": {
-      "title": "Kieferorthopäde",
-      "bio": "Spezialist der Gazi Universität für unsichtbare Zahnschienen (Invisalign) und digitale Kieferkorrekturen."
-    },
-    "doc7": {
-      "title": "Parodontologie & Zahnfleischästhetik",
-      "bio": "Spezialistin der Yeditepe Universität mit 8 Jahren Erfahrung in Rosa Ästhetik und Parodontaltherapie."
-    }
-  },
-  "brands": {
-    "eyebrow": "✦ Unsere Marken",
-    "title": "Weltklasse-Zahnimplantat-Marken",
-    "straumannSub": "Schweizer Präzisionsimplantate",
-    "nobelSub": "Premium-Implantologie",
-    "astraSub": "Dentsply Sirona Gruppe",
-    "medentikaSub": "Straumann Gruppe Qualität",
-    "bredentSub": "Deutsche Dental-Innovation"
+    "title": "Vom ersten Besuch bis zum perfekten Lächeln.",
+    "subtitle": "Entdecken Sie echte Patientengeschichten. Mehr als nur ein Lächeln — ein neues Lebensgefühl mit Master Smile Studio."
   },
   "patients": {
-    "badge": "Glückliche Patienten",
-    "title": "Unsere Patienten & Geschichten",
-    "subtitle": "Echte Verwandlungserfahrungen unserer Patienten aus aller Welt."
+    "badge": "Glückliche Patientenerfahrungen",
+    "title": "Unsere Patienten & Lächeln-Geschichten",
+    "subtitle": "Echte Transformationserfahrungen unserer Patienten aus der ganzen Welt.",
+    "card1": {
+      "name": "Sarah Jenkins",
+      "country": "🇬🇧 Großbritannien",
+      "treatment": "Full Hollywood Smile",
+      "quote": "Das Team von Master Smile Studio hat mir ein viel natürlicheres und atemberaubenderes Lächeln geschenkt, als ich mir je vorstellen konnte."
+    },
+    "card2": {
+      "name": "Markus Weber",
+      "country": "🇩🇪 Deutschland",
+      "treatment": "Zirkonkronen",
+      "quote": "Weltklasse-Zahnbehandlung in 5-Sterne-Luxus zu einem Bruchteil der deutschen Kosten."
+    },
+    "card3": {
+      "name": "Elena Rostova",
+      "country": "🇷🇺 Russland",
+      "treatment": "E-max Veneers",
+      "quote": "Vom ersten Tag an waren die Betreuung, Gastfreundschaft und die digitale Lächelvorschau absolut fehlerfrei."
+    },
+    "card4": {
+      "name": "Sophie Martin",
+      "country": "🇫🇷 Frankreich",
+      "treatment": "Implantate & Bleaching",
+      "quote": "Schmerzlose, schnelle und bemerkenswert ästhetische Ergebnisse. Mein neues Lächeln gab mir mein volles Selbstvertrauen zurück."
+    },
+    "card5": {
+      "name": "David Miller",
+      "country": "🇺🇸 USA",
+      "treatment": "Zirkon Smile Makeover",
+      "quote": "Ich habe in Antalya Spitzentechnologie und Luxus-Zahntourismus erlebt, den ich zu Hause nicht finden konnte."
+    },
+    "card6": {
+      "name": "Anna Kowalska",
+      "country": "🇵🇱 Polen",
+      "treatment": "All-on-4 Zahnimplantate",
+      "quote": "Der gesamte Prozess wurde von Anfang bis Ende hochprofessionell geführt. Jetzt kann ich wieder voller Selbstvertrauen lächeln."
+    }
   },
   "form": {
     "title": "Kostenlose Beratung anfordern",
-    "subtitle": "Füllen Sie das Formular aus, unser Berater meldet sich umgehend.",
+    "subtitle": "Füllen Sie das Formular aus und unser Berater wird Sie kontaktieren.",
     "fullName": "Vor- und Nachname",
-    "fullNamePlaceholder": "Ihr Name",
+    "fullNamePlaceholder": "Ihr vollständiger Name",
     "phone": "Telefonnummer",
-    "phonePlaceholder": "+49 (151) 0000 0000",
+    "phonePlaceholder": "+49 (0) 000 000000",
     "treatment": "Behandlung",
     "treatmentSelectPlaceholder": "— Behandlung wählen —",
     "language": "Sprache",
     "languageSelectPlaceholder": "— Sprache wählen —",
-    "submit": "Kostenlosen Termin buchen",
-    "success": "Ihre Anfrage ist eingegangen. Wir kontaktieren Sie in Kürze."
+    "submit": "Kostenlosen Termin anfragen",
+    "success": "Ihre Anfrage ist eingegangen. Wir werden uns in Kürze bei Ihnen melden."
   }
 }

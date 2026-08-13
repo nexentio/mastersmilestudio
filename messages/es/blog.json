@@ -1,31 +1,12 @@
 {
-  "eyebrow": "✦ Blog & Salúd Dental",
-  "title": "Últimos Artículos y Noticias",
-  "subtitle": "Descubra consejos de expertos y guías dentales completas escritas por los médicos de Master Smile Studio.",
-  "readMore": "Leer Artículo",
-  "readTime": "min de lectura",
-  "post1": {
-    "category": "Diseño de Sonrisa",
-    "title": "¿Circonio o E-Max Veneers? ¿Cuál es mejor para su sonrisa?",
-    "excerpt": "Compare resistencia, translucidez y estética entre coronas de Circonio y carillas de porcelana E-Max.",
-    "date": "10 Ago 2026",
-    "author": "Dr. Ozan Öztürk",
-    "readTime": "5"
-  },
-  "post2": {
-    "category": "Implantología",
-    "title": "Implantes All-on-4: Guía Completa y Rehabilitación",
-    "excerpt": "Aprenda cómo los implantes All-on-4 restauran la función masticatoria y la estética facial en solo 5 días.",
-    "date": "06 Ago 2026",
-    "author": "Dr. Tülay Kaya",
-    "readTime": "7"
-  },
-  "post3": {
-    "category": "Turismo Dental",
-    "title": "Hollywood Smile en Antalya: Planificando sus Vacaciones Dentales",
-    "excerpt": "Todo sobre traslados VIP, hoteles de 5 estrellas y su tratamiento estético dental en Turquía.",
-    "date": "01 Ago 2026",
-    "author": "Dr. Fırat İskender",
-    "readTime": "6"
-  }
+  "leftDesc": "Descubra las guías clínicas más recientes, consejos de salud bucal, implantes y estética dental de los especialistas de Master Smile Studio.",
+  "headingMain": "Explore Our Clinical",
+  "headingItalic": "Insights",
+  "subtitle": "Salud Bucodental, Tratamientos Estéticos y Consejos de Especialistas",
+  "card1Title": "Design Tips",
+  "card1Desc": "Recomendaciones odontológicas para un diseño de sonrisa saludable, natural y estético.",
+  "card2Title": "Brand Stories",
+  "card2Desc": "Fases completas de tratamiento para carillas de porcelana, láminas y coronas de zirconio.",
+  "card3Title": "Creative Notes",
+  "card3Desc": "Guía de implantes guiados por ordenador sin suturas y métodos de rápida recuperación."
 }

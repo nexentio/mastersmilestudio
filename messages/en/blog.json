@@ -1,31 +1,12 @@
 {
-  "eyebrow": "✦ Dental Health & Insights",
-  "title": "Latest Blog & News",
-  "subtitle": "Discover expert tips, comprehensive dental guides, and stories from Master Smile Studio.",
-  "readMore": "Read Article",
-  "readTime": "min read",
-  "post1": {
-    "category": "Smile Design",
-    "title": "Zirconium vs. E-Max Veneers: Which is Best for Your Smile?",
-    "excerpt": "Compare strength, translucency, and aesthetics between Zirconium crowns and E-Max porcelain veneers to choose your ideal makeover.",
-    "date": "Aug 10, 2026",
-    "author": "Dr. Ozan Öztürk",
-    "readTime": "5"
-  },
-  "post2": {
-    "category": "Implantology",
-    "title": "All-on-4 Dental Implants: Complete Guide & Rehabilitation",
-    "excerpt": "Learn how full-arch All-on-4 implants restore your chewing functionality and youthful facial structure in just 5 days.",
-    "date": "Aug 06, 2026",
-    "author": "Dr. Tülay Kaya",
-    "readTime": "7"
-  },
-  "post3": {
-    "category": "Dental Tourism",
-    "title": "Hollywood Smile in Antalya: Planning Your Dental Holiday",
-    "excerpt": "Everything you need to know about VIP transfers, 5-star hotel arrangements, and seamless cosmetic treatment in Turkey.",
-    "date": "Aug 01, 2026",
-    "author": "Dr. Fırat İskender",
-    "readTime": "6"
-  }
+  "leftDesc": "Discover the latest clinical guides, oral health insights, implant solutions, and aesthetic dental tips from Master Smile Studio specialists.",
+  "headingMain": "Explore Our Clinical",
+  "headingItalic": "Insights",
+  "subtitle": "Oral Health, Aesthetic Dental Treatments & Expert Recommendations",
+  "card1Title": "Design Tips",
+  "card1Desc": "Expert dental recommendations for a healthy, natural, and harmonious smile makeover.",
+  "card2Title": "Brand Stories",
+  "card2Desc": "Complete step-by-step treatment phases for porcelain veneers, laminates, and zirconia crowns.",
+  "card3Title": "Creative Notes",
+  "card3Desc": "Flapless digital implant guide, recovery timelines, and advanced dental surgical protocols."
 }

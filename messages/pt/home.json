@@ -1,98 +1,64 @@
 {
   "welcome": "Design de Sorriso",
-  "description": "Comece sua jornada com uma consulta online gratuita. Elaboramos seu plano de tratamento personalizado antes do seu voo.",
+  "description": "Comece sua jornada com uma consulta online gratuita. Criaremos seu plano de tratamento personalizado antes do seu voo.",
   "ctaConsultation": "Consulta Gratuita",
   "ctaTreatments": "Tratamentos",
   "transformations": {
-    "title": "Da primeira visita ao sorriso perfeito.",
-    "subtitle": "Descubra histórias reais de pacientes. É mais do que um sorriso — é uma nova autoconfiança no Master Smile Studio."
-  },
-  "process": {
-    "heading": "Master Smile Studio",
-    "subtitle": "Desde o primeiro contato, fornecemos transparência e planos de tratamento detalhados avaliados por especialistas.",
-    "step1": {
-      "title": "Primeiro Contato",
-      "subtitle": "Formulário - WhatsApp - Email",
-      "content": "Ao entrar em contato, nossa equipe ouve suas expectativas. Avaliamos seu caso e fornecemos orientações iniciais."
-    },
-    "step2": {
-      "title": "Agendamento e Planejamento",
-      "subtitle": "Informações sobre seu processo",
-      "content": "Avaliamos radiografias e fotos médicas para apresentar as melhores opções de tratamento com total transparência."
-    },
-    "step3": {
-      "title": "Processo de Tratamento",
-      "subtitle": "Acompanhamento em cada etapa",
-      "content": "Ao chegar à clínica, nossa equipe o acolhe e o guia pelo tratamento com tecnologia de alta precisão."
-    },
-    "step4": {
-      "title": "Pós-Tratamento",
-      "subtitle": "Orientações pós-procedimento",
-      "content": "Antes de sua partida, compartilhamos as instruções de cuidados posteriores e entregamos seus documentos médicos."
-    },
-    "contactTitle": "Canais de Contato Rápido",
-    "btnWhatsapp": "WhatsApp",
-    "btnCall": "Ligue para Nós",
-    "btnForm": "Formulário Rápido",
-    "btnEmail": "Email"
-  },
-  "team": {
-    "title": "Nossa Equipe de Especialistas",
-    "subtitle": "Conheça nossos dentistas de classe mundial dedicados a oferecer os mais altos padrões estéticos.",
-    "doc1": {
-      "title": "Prostodontista e Smile Designer",
-      "bio": "Graduado com honras pela Universidade de Istambul. Especialista em design digital de sorriso com mais de 14 anos de experiência clínica."
-    },
-    "doc2": {
-      "title": "Cirurgiã Bucomaxilofacial",
-      "bio": "Especialista pela Universidade de Ancara com mais de 12 anos de experiência em implantes All-on-4 / All-on-6 e enxerto ósseo."
-    },
-    "doc3": {
-      "title": "Dentista Estética",
-      "bio": "Graduada pela Universidade de Ege. Especialista em facetas de porcelana ultra finas para sorrisos Hollywood naturais."
-    },
-    "doc4": {
-      "title": "Diretor Clínico e Especialista em Estética Dentária",
-      "bio": "Graduado pela Universidade de Hacettepe, Diretor Clínico no Master Smile Studio. Com especialização em Londres e Zurique, transforma sorrisos há mais de 16 anos."
-    },
-    "doc5": {
-      "title": "Endodontista e Restauradora",
-      "bio": "Especialista pela Universidade de Marmara em endodontia microscópica e restaurações biocompatíveis."
-    },
-    "doc6": {
-      "title": "Ortodontista",
-      "bio": "Especialista pela Universidade de Gazi certificado em alinhadores invisíveis (Invisalign) e alinhamento digital."
-    },
-    "doc7": {
-      "title": "Periodontista e Estética Gengival",
-      "bio": "Especialista pela Universidade de Yeditepe com 8 anos de experiência em estética rosa (plástica gengival)."
-    }
-  },
-  "brands": {
-    "eyebrow": "✦ Nossas Marcas",
-    "title": "Marcas de Implantes Dentários de Padrão Mundial",
-    "straumannSub": "Implantes Suíços de Precisão",
-    "nobelSub": "Implantologia Premium",
-    "astraSub": "Grupo Dentsply Sirona",
-    "medentikaSub": "Qualidade Grupo Straumann",
-    "bredentSub": "Inovação Dentária Alemã"
+    "title": "Da primeira consulta ao sorriso perfeito.",
+    "subtitle": "Descubra histórias reais de pacientes capturadas em cada transformação. Mais do que sorrisos — uma confiança renovada no Master Smile Studio."
   },
   "patients": {
-    "badge": "Pacientes Felices",
-    "title": "Nossos Pacientes e Histórias",
-    "subtitle": "Experiências reais de transformação de pacientes de todo o mundo."
+    "badge": "Experiências de Pacientes Felizes",
+    "title": "Nossos Pacientes e Histórias de Sorrisos",
+    "subtitle": "Experiências reais de transformação de pacientes que vêm de todas as partes do mundo.",
+    "card1": {
+      "name": "Sarah Jenkins",
+      "country": "🇬🇧 Reino Unido",
+      "treatment": "Full Hollywood Smile",
+      "quote": "A equipe do Master Smile Studio me deu um sorriso muito mais natural e deslumbrante do que eu jamais imaginei."
+    },
+    "card2": {
+      "name": "Markus Weber",
+      "country": "🇩🇪 Alemanha",
+      "treatment": "Coroas de Zircônio",
+      "quote": "Tratamento dentário de nível internacional com conforto 5 estrelas por uma fração dos custos alemães."
+    },
+    "card3": {
+      "name": "Elena Rostova",
+      "country": "🇷🇺 Rússia",
+      "treatment": "Lentes de Contato E-max",
+      "quote": "Desde o primeiro dia, o atendimento, a hospitalidade e a prévia digital do sorriso foram absolutamente impecáveis."
+    },
+    "card4": {
+      "name": "Sophie Martin",
+      "country": "🇫🇷 França",
+      "treatment": "Implantes e Clareamento",
+      "quote": "Resultados indolores, rápidos e incrivelmente estéticos. Meu novo sorriso restaurou minha autoconfiança por completo."
+    },
+    "card5": {
+      "name": "David Miller",
+      "country": "🇺🇸 EUA",
+      "treatment": "Transformação em Zircônio",
+      "quote": "Experimentei alta tecnologia e luxo no turismo odontológico em Antalya que não encontrei no meu país."
+    },
+    "card6": {
+      "name": "Anna Kowalska",
+      "country": "🇵🇱 Polônia",
+      "treatment": "Implantes All-on-4",
+      "quote": "Todo o processo foi conduzido de forma extremamente profissional do início ao fim. Agora posso sorrir com total confiança."
+    }
   },
   "form": {
-    "title": "Obter Consulta Gratuita",
-    "subtitle": "Preencha o formulário e nosso representante entrará em contato.",
+    "title": "Obtenha Consulta Gratuita",
+    "subtitle": "Preencha o formulário e nosso especialista entrará em contato.",
     "fullName": "Nome Completo",
-    "fullNamePlaceholder": "Seu nome e sobrenome",
+    "fullNamePlaceholder": "Seu nome completo",
     "phone": "Telefone",
-    "phonePlaceholder": "+351 (910) 000-000",
+    "phonePlaceholder": "+351 000 000 000",
     "treatment": "Tratamento",
-    "treatmentSelectPlaceholder": "— Selecionar Tratamento —",
+    "treatmentSelectPlaceholder": "— Selecione o Tratamento —",
     "language": "Idioma",
-    "languageSelectPlaceholder": "— Selecionar Idioma —",
+    "languageSelectPlaceholder": "— Selecione o Idioma —",
     "submit": "Agendar Consulta Gratuita",
     "success": "Sua solicitação foi recebida. Entraremos em contato em breve."
   }

@@ -1,0 +1,44 @@
+{
+  "colTreatmentsTitle": "// Tedaviler",
+  "treatmentZirconium": "Zirkonyum Kaplama",
+  "treatmentEmax": "E-Max Lamine Porselen",
+  "treatmentImplant": "All-on-4 / All-on-6 İmplant",
+  "treatmentHollywood": "Hollywood Smile",
+  "treatmentWhitening": "Diş Beyazlatma",
+  "treatmentSurgery": "Çene Cerrahisi",
+
+  "colSupportTitle": "// Destek",
+  "supportProcess": "Tedavi Süreçleri",
+  "supportTourism": "Sağlık Turizmi Rehberi",
+  "supportReviews": "Hasta Yorumları",
+  "supportFaq": "Sıkça Sorulan Sorular",
+  "supportContact": "İletişim & Lokasyon",
+  "supportWhatsapp": "WhatsApp Danışma",
+
+  "colCorporateTitle": "// Kurumsal",
+  "corpAbout": "Hakkımızda & Vizyon",
+  "corpTeam": "Uzman Hekim Kadromuz",
+  "corpRooms": "VIP Klinik Odalarımız",
+  "corpTech": "3D Tomografi & Teknoloji",
+  "corpCertificates": "Kalite Sertifikaları",
+  "corpBlog": "Dental Blog & Yayınlar",
+
+  "colLegalTitle": "// İletişim & Yasal",
+  "legalClinic": "Antalya Klinik HQ",
+  "legalSupport": "Randevu & Destek Hattı",
+  "legalKvkk": "KVKK Aydınlatma Metni",
+  "legalPrivacy": "Gizlilik Politikası",
+  "legalCookies": "Çerez Tercihleri",
+  "legalTerms": "Kullanım Koşulları",
+
+  "newsletterTitle": "Gelişmelerden ve Özel Tekliflerden Haberdar Olun",
+  "newsletterDesc": "Master Smile Studio'dan en yeni diş estetiği rehberleri, tedavi yenilikleri ve avantajlı duyurular doğrudan gelen kutunuza gelsin.",
+  "newsletterPlaceholder": "ornek@gmail.com",
+  "newsletterBtn": "Katıl",
+  "newsletterSuccess": "Katıldınız ✓",
+  "newsletterConsent": "Master Smile Studio'dan bilgilendirme e-postaları almayı onaylıyorum.",
+
+  "copyright": "©2026 Master Smile Studio. Tüm hakları saklıdır.",
+  "privacyPolicy": "Gizlilik Politikası",
+  "termsOfUse": "Kullanım Koşulları"
+}

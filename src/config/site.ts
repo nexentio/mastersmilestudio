@@ -1,25 +1,67 @@
-export const WHATSAPP_LINKS: Record<string, string> = {
-  tr: 'https://api.whatsapp.com/send/?phone=905346963163&text=Merhaba%2C+web+siteniz+%C3%BCzerinden+ula%C5%9F%C4%B1yorum.+Bilgi+almak+istiyorum.&type=phone_number&app_absent=0',
-  en: 'https://api.whatsapp.com/send/?phone=905373059947&text=Hello%2C+I+am+contacting+you+through+your+website.+I%27d+like+to+get+information.&type=phone_number&app_absent=0',
-  de: 'https://api.whatsapp.com/send/?phone=905373059941&text=Hallo%2C+ich+kontaktiere+Sie+%C3%BCber+Ihre+Website.+Ich+m%C3%B6chte+gerne+Informationen+erhalten.&type=phone_number&app_absent=0',
-  ru: 'https://api.whatsapp.com/send/?phone=905346963189&text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C+%D1%8F+%D0%BF%D0%B8%D1%88%D1%83+%D0%B2%D0%B0%D0%BC+%D1%81+%D0%B2%D0%B0%D1%88%D0%B5%D0%B3%D0%BE+%D1%81%D0%B0%D0%B9%D1%82%D0%B0.+%D0%AF+%D1%85%D0%BE%D1%82%D0%B5%D0%BB+%D0%B1%D1%8B+%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B8%D1%82%D1%8C+%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8E.&type=phone_number&app_absent=0',
-  pt: 'https://api.whatsapp.com/send/?phone=905373059947&text=Ol%C3%A1%2C+estou+entrando+em+contato+atrav%C3%A9s+do+seu+site.+Gostaria+de+obter+informa%C3%A7%C3%B5es.&type=phone_number&app_absent=0',
-  es: 'https://api.whatsapp.com/send/?phone=905346963163&text=Hola%2C+me+pongo+en+contacto+con+usted+a+trav%C3%A9s+de+su+sitio+web.+Me+gustar%C3%ADa+recibir+informaci%C3%B3n.&type=phone_number&app_absent=0',
-  pl: 'https://api.whatsapp.com/send/?phone=905331973907&text=Dzie%C5%84+dobry%2C+kontaktuj%C4%99+si%C4%99+przez+Pa%C5%84stwa+stron%C4%99+internetow%C4%85.+Chcia%C5%82bym+uzyska%C4%87+wi%C4%99cej+informacji.&type=phone_number&app_absent=0',
-};
-
-export function getWhatsAppLink(locale: string = 'tr'): string {
-  return WHATSAPP_LINKS[locale] || WHATSAPP_LINKS['tr'];
-}
-
-export const SITE_CONFIG = {
+export const siteConfig = {
   name: 'Master Smile Studio',
-  domain: 'mastersmilestudio.com',
+  legalName: 'Master Smile Studio Diş Polikliniği',
+  domain: process.env.NEXT_PUBLIC_SITE_URL || 'https://mastersmilestudio.com',
   email: 'info@mastersmilestudio.com',
-  phone: '+90 543 456 80 80',
+  phone: '+90 537 305 99 47',
+  whatsapp: '+90 534 696 31 63',
+  whatsappNumbers: {
+    tr: '905346963163', // Türkçe
+    en: '905373059947', // English
+    de: '905373059941', // Deutsch
+    ru: '905346963189', // Русский
+    pl: '905331973907', // Polski (Dr. Julia)
+    es: '905373059947', // Español
+    pt: '905373059947', // Português
+  } as Record<string, string>,
+  address: {
+    streetAddress: 'Güzeloba Mah. Çağlayangil Cad. No: 6-B',
+    addressLocality: 'Muratpaşa',
+    addressRegion: 'Antalya',
+    postalCode: '07230',
+    addressCountry: 'TR',
+  },
+  geo: {
+    latitude: '36.8525',
+    longitude: '30.7760',
+    region: 'TR-07',
+    placename: 'Güzeloba, Muratpaşa, Antalya',
+  },
+  openingHours: [
+    'Monday 09:00-18:00',
+    'Tuesday 09:00-18:00',
+    'Wednesday 09:00-18:00',
+    'Thursday 09:00-18:00',
+    'Friday 09:00-18:00',
+    'Saturday 09:00-16:00',
+  ],
   socials: {
+    instagram: 'https://www.instagram.com/mastersmilestudio/',
     facebook: 'https://www.facebook.com/p/Mastersmilestudio-61569392717782/',
     youtube: 'https://www.youtube.com/@dentmastersmile',
-    instagram: 'https://www.instagram.com/mastersmilestudio/',
+    googleMaps: 'https://maps.google.com/?q=Master+Smile+Studio+Guzeloba+Antalya',
   },
-} as const;
+  priceRange: '$$$',
+  currenciesAccepted: 'EUR, USD, GBP, TRY',
+  paymentAccepted: 'Cash, Credit Card, Bank Transfer',
+  languagesSpoken: ['Turkish', 'English', 'German', 'Russian', 'Spanish', 'Portuguese', 'Polish'],
+};
+
+export const SITE_CONFIG = siteConfig;
+
+export function getWhatsAppLink(locale: string = 'tr', message?: string): string {
+  const phone = siteConfig.whatsappNumbers[locale] || siteConfig.whatsappNumbers.en || '905346963163';
+  
+  const defaultMessages: Record<string, string> = {
+    tr: 'Merhaba, Master Smile Studio hakkında bilgi ve randevu almak istiyorum.',
+    en: 'Hello, I would like to get information and make an appointment at Master Smile Studio.',
+    de: 'Hallo, ich möchte Informationen erhalten und einen Termin bei Master Smile Studio vereinbaren.',
+    ru: 'Здравствуйте! Я хотел бы получить консультацию и записаться на прием в Master Smile Studio.',
+    pl: 'Dzień dobry, chciałbym uzyskać informacje i umówić się na wizytę w Master Smile Studio.',
+    es: 'Hola, me gustaría obtener información y solicitar una cita en Master Smile Studio.',
+    pt: 'Olá, gostaria de obter informações e agendar uma consulta no Master Smile Studio.',
+  };
+
+  const text = message || defaultMessages[locale] || defaultMessages.en;
+  return `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
+}

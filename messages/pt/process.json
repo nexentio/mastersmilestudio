@@ -1,29 +1,33 @@
 {
   "heading": "Master Smile Studio",
-  "subtitle": "Desde o primeiro contato, fornecemos transparência e planos de tratamento detalhados avaliados por especialistas.",
+  "subtitle": "Desde o primeiro contacto, oferecemos orientação transparente e planos de tratamento personalizados avaliados pela nossa equipa de dentistas seniores.",
   "step1": {
-    "title": "Primeiro Contato",
+    "title": "Primeiro Contacto",
     "subtitle": "Formulário - WhatsApp - Email",
-    "content": "Ao entrar em contato, nossa equipe ouve suas expectativas. Avaliamos seu caso e fornecemos orientações iniciais."
+    "content": "Ao contactar-nos, a nossa equipa ouve as suas necessidades. Os seus dados são avaliados pelos nossos especialistas e fornecemos orientações iniciais."
   },
   "step2": {
-    "title": "Agendamento e Planejamento",
-    "subtitle": "Informações sobre seu processo",
-    "content": "Avaliamos radiografias e fotos médicas para apresentar as melhores opções de tratamento com total transparência."
+    "title": "Consulta e Planeamento",
+    "subtitle": "Informação Clara e Transparente",
+    "content": "Durante a consulta, avaliamos detalhadamente os seus exames digitais para apresentar as melhores soluções de tratamento com total transparência."
   },
   "step3": {
     "title": "Processo de Tratamento",
-    "subtitle": "Acompanhamento em cada etapa",
-    "content": "Ao chegar à clínica, nossa equipe o acolhe e o guia pelo tratamento com tecnologia de alta precisão."
+    "subtitle": "Acompanhamento Passo a Passo",
+    "content": "Na nossa clínica, será recebido com excelência e tratado por dentistas especializados com recurso a tecnologia de precisão avançada."
   },
   "step4": {
-    "title": "Pós-Tratamento",
-    "subtitle": "Orientações pós-procedimento",
-    "content": "Antes de sua partida, compartilhamos as instruções de cuidados posteriores e entregamos seus documentos médicos."
+    "title": "Cuidados Pós-Tratamento",
+    "subtitle": "Suporte e Orientação Contínua",
+    "content": "Antes da sua partida, entregamos todos os documentos médicos, garantias e recomendações de saúde oral com apoio permanente 24/7."
   },
-  "contactTitle": "Canais de Contato Rápido",
-  "btnWhatsapp": "WhatsApp",
-  "btnCall": "Ligue para Nós",
-  "btnForm": "Formulário Rápido",
-  "btnEmail": "Email"
+  "contactLink": "CONTACTE A NOSSA CLÍNICA",
+  "card1Badge": "100% GRATUITO",
+  "card1Title": "FALE COM OS NOSSOS DENTISTAS ESPECIALISTAS",
+  "card1Desc": "Consulte diretamente os nossos especialistas, receba orçamentos transparentes e obtenha o seu plano de tratamento gratuito e personalizado.",
+  "card1Btn": "Consulta Gratuita",
+  "card2Badge": "MARCAÇÃO",
+  "card2Title": "AGENDE A SUA CONSULTA AGORA",
+  "card2Desc": "Marque a sua consulta em segundos para a data e hora pretendida via WhatsApp, telefone ou formulário online sem esperas.",
+  "card2Btn": "Agendar Consulta"
 }

@@ -1,0 +1,44 @@
+{
+  "colTreatmentsTitle": "// Tratamientos",
+  "treatmentZirconium": "Coronas de Circonio",
+  "treatmentEmax": "Carillas de Porcelana E-Max",
+  "treatmentImplant": "Implantes All-on-4 / All-on-6",
+  "treatmentHollywood": "Sonrisa Hollywood",
+  "treatmentWhitening": "Blanqueamiento Dental",
+  "treatmentSurgery": "Cirugía Oral y Maxilofacial",
+
+  "colSupportTitle": "// Soporte",
+  "supportProcess": "Proceso de Tratamiento",
+  "supportTourism": "Guía de Turismo Dental",
+  "supportReviews": "Testimonios de Pacientes",
+  "supportFaq": "Preguntas Frecuentes",
+  "supportContact": "Contacto y Ubicación",
+  "supportWhatsapp": "Consulta por WhatsApp",
+
+  "colCorporateTitle": "// Corporativo",
+  "corpAbout": "Sobre Nosotros y Visión",
+  "corpTeam": "Nuestros Especialistas",
+  "corpRooms": "Salas Clínicas VIP",
+  "corpTech": "Tomografía 3D y Tecnología",
+  "corpCertificates": "Certificados de Calidad",
+  "corpBlog": "Blog Dental y Noticias",
+
+  "colLegalTitle": "// Contacto y Legal",
+  "legalClinic": "Clínica Antalya HQ",
+  "legalSupport": "Línea de Citas y Soporte",
+  "legalKvkk": "Aviso de Privacidad (RGPD)",
+  "legalPrivacy": "Política de Privacidad",
+  "legalCookies": "Preferencias de Cookies",
+  "legalTerms": "Términos y Condiciones",
+
+  "newsletterTitle": "Manténgase Informado sobre Novedades y Ofertas",
+  "newsletterDesc": "Reciba las últimas guías de estética dental, innovaciones de tratamiento y ofertas exclusivas de Master Smile Studio directamente en su bandeja de entrada.",
+  "newsletterPlaceholder": "ejemplo@gmail.com",
+  "newsletterBtn": "Suscribirse",
+  "newsletterSuccess": "Suscrito ✓",
+  "newsletterConsent": "Acepto recibir correos electrónicos informativos de Master Smile Studio.",
+
+  "copyright": "©2026 Master Smile Studio. Todos los derechos reservados.",
+  "privacyPolicy": "Política de Privacidad",
+  "termsOfUse": "Términos y Condiciones"
+}

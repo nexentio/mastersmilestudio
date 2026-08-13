@@ -1,0 +1,44 @@
+{
+  "colTreatmentsTitle": "// Behandlungen",
+  "treatmentZirconium": "Zirkonkronen",
+  "treatmentEmax": "E-Max Porzellan-Veneers",
+  "treatmentImplant": "All-on-4 / All-on-6 Implantate",
+  "treatmentHollywood": "Hollywood Smile",
+  "treatmentWhitening": "Zahnaufhellung (Bleaching)",
+  "treatmentSurgery": "Mund- und Kieferchirurgie",
+
+  "colSupportTitle": "// Support",
+  "supportProcess": "Behandlungsablauf",
+  "supportTourism": "Zahntourismus-Leitfaden",
+  "supportReviews": "Patientenbewertungen",
+  "supportFaq": "Häufig gestellte Fragen",
+  "supportContact": "Kontakt & Klinikstandort",
+  "supportWhatsapp": "WhatsApp-Beratung",
+
+  "colCorporateTitle": "// Unternehmen",
+  "corpAbout": "Über uns & Vision",
+  "corpTeam": "Unser Spezialistenteam",
+  "corpRooms": "VIP-Klinikräume",
+  "corpTech": "3D-Tomographie & Technologie",
+  "corpCertificates": "Qualitätszertifikate",
+  "corpBlog": "Dental-Blog & Fachartikel",
+
+  "colLegalTitle": "// Kontakt & Rechtliches",
+  "legalClinic": "Antalya Klinik HQ",
+  "legalSupport": "Termin- & Support-Hotline",
+  "legalKvkk": "DSGVO-Hinweise",
+  "legalPrivacy": "Datenschutzerklärung",
+  "legalCookies": "Cookie-Einstellungen",
+  "legalTerms": "Nutzungsbedingungen",
+
+  "newsletterTitle": "Bleiben Sie über Angebote und Neuigkeiten informiert",
+  "newsletterDesc": "Erhalten Sie die neuesten Leitfäden zur Zahnästhetik, Behandlungsinnovationen und exklusive Angebote direkt in Ihr Postfach.",
+  "newsletterPlaceholder": "beispiel@gmail.com",
+  "newsletterBtn": "Abonnieren",
+  "newsletterSuccess": "Abonniert ✓",
+  "newsletterConsent": "Ich stimme dem Erhalt von Informations-E-Mails von Master Smile Studio zu.",
+
+  "copyright": "©2026 Master Smile Studio. Alle Rechte vorbehalten.",
+  "privacyPolicy": "Datenschutzerklärung",
+  "termsOfUse": "Nutzungsbedingungen"
+}

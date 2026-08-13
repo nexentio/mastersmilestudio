@@ -1,0 +1,44 @@
+{
+  "colTreatmentsTitle": "// Treatments",
+  "treatmentZirconium": "Zirconium Crowns",
+  "treatmentEmax": "E-Max Porcelain Veneers",
+  "treatmentImplant": "All-on-4 / All-on-6 Implants",
+  "treatmentHollywood": "Hollywood Smile",
+  "treatmentWhitening": "Teeth Whitening",
+  "treatmentSurgery": "Oral & Maxillofacial Surgery",
+
+  "colSupportTitle": "// Support",
+  "supportProcess": "Treatment Procedures",
+  "supportTourism": "Dental Tourism Guide",
+  "supportReviews": "Patient Testimonials",
+  "supportFaq": "Frequently Asked Questions",
+  "supportContact": "Contact & Clinic Location",
+  "supportWhatsapp": "WhatsApp Consultation",
+
+  "colCorporateTitle": "// Corporate",
+  "corpAbout": "About Us & Vision",
+  "corpTeam": "Our Expert Dentists",
+  "corpRooms": "VIP Clinic Suites",
+  "corpTech": "3D Tomography & Tech",
+  "corpCertificates": "Quality Certifications",
+  "corpBlog": "Dental Blog & Insights",
+
+  "colLegalTitle": "// Contact & Legal",
+  "legalClinic": "Antalya Clinic HQ",
+  "legalSupport": "Appointment & Support Line",
+  "legalKvkk": "GDPR / KVKK Clarification",
+  "legalPrivacy": "Privacy Policy",
+  "legalCookies": "Cookie Preferences",
+  "legalTerms": "Terms of Service",
+
+  "newsletterTitle": "Stay Informed on Clinical Updates & Exclusive Offers",
+  "newsletterDesc": "Get the latest aesthetic dentistry guides, clinical innovations, and exclusive offers from Master Smile Studio straight to your inbox.",
+  "newsletterPlaceholder": "example@gmail.com",
+  "newsletterBtn": "Subscribe",
+  "newsletterSuccess": "Subscribed ✓",
+  "newsletterConsent": "I agree to receive informative clinical emails from Master Smile Studio.",
+
+  "copyright": "©2026 Master Smile Studio. All rights reserved.",
+  "privacyPolicy": "Privacy Policy",
+  "termsOfUse": "Terms of Service"
+}

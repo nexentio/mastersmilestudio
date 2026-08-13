@@ -1,0 +1,676 @@
+'use client';
+
+import React, { useState } from 'react';
+import Image from 'next/image';
+import { getWhatsAppLink } from '@/config/site';
+
+interface GalleryItem {
+  id: string;
+  category: string;
+  name: string;
+  treatment: string;
+  shade: string;
+  quote?: string;
+  icons?: string[];
+  beforeImage: string;
+  afterImage: string;
+  portraitImage: string;
+}
+
+const galleryData: GalleryItem[] = [
+  {
+    id: 'case-1',
+    category: 'zirconium',
+    name: 'Deniz Kaya',
+    treatment: 'Implants & Zirkonyum Kaplama',
+    shade: 'OM1',
+    icons: ['Crowns', 'Implants', 'Whitening', 'Veneers'],
+    beforeImage: '/transformations/t1.jpg',
+    afterImage: '/transformations/t1.jpg',
+    portraitImage: '/patients/patient-2.jpeg',
+  },
+  {
+    id: 'case-2',
+    category: 'emax',
+    name: 'Kerem Öztürk',
+    treatment: 'E-max Laminate',
+    shade: 'OM1',
+    quote: 'Hayalimdeki gülüşe kavuştum!',
+    beforeImage: '/transformations/t2.jpg',
+    afterImage: '/transformations/t2.jpg',
+    portraitImage: '/patients/patient-4.jpeg',
+  },
+  {
+    id: 'case-3',
+    category: 'implant',
+    name: 'Deniz Kaya',
+    treatment: 'Dental İmplant',
+    shade: 'OM1',
+    quote: 'Dişlerimi geri kazandım!',
+    beforeImage: '/transformations/t3.jpg',
+    afterImage: '/transformations/t3.jpg',
+    portraitImage: '/patients/patient-1.jpeg',
+  },
+  {
+    id: 'case-4',
+    category: 'zirconium',
+    name: 'Deniz Kaya',
+    treatment: 'Implants & Zirkonyum Kaplama',
+    shade: 'OM1',
+    icons: ['Crowns', 'Implants', 'Whitening', 'Veneers'],
+    beforeImage: '/transformations/t4.jpg',
+    afterImage: '/transformations/t4.jpg',
+    portraitImage: '/patients/patient-3.jpeg',
+  },
+  {
+    id: 'case-5',
+    category: 'makeover',
+    name: 'Elif Aydın',
+    treatment: 'Smile Makeover',
+    shade: 'OM1',
+    icons: ['Crowns', 'Implants', 'Whitening', 'Veneers'],
+    beforeImage: '/transformations/t5.jpg',
+    afterImage: '/transformations/t5.jpg',
+    portraitImage: '/patients/patient-5.jpeg',
+  },
+  {
+    id: 'case-6',
+    category: 'whitening',
+    name: 'Elif Aydın',
+    treatment: 'Smile Makeover',
+    shade: 'OM1',
+    icons: ['Crowns', 'Implants', 'Whitening'],
+    beforeImage: '/transformations/t6.jpg',
+    afterImage: '/transformations/t6.jpg',
+    portraitImage: '/patients/patient-6.jpeg',
+  },
+];
+
+const categories = [
+  { id: 'all', label: 'Tüm Sonuçlar' },
+  { id: 'makeover', label: 'Smile Makeover' },
+  { id: 'implant', label: 'Dental İmplant' },
+  { id: 'emax', label: 'E-max Lamine' },
+  { id: 'zirconium', label: 'Zirkonyum Kaplama' },
+  { id: 'whitening', label: 'Diş Beyazlatma' },
+];
+
+export default function GalleryGrid({ locale = 'tr' }: { locale?: string }) {
+  const [activeCategory, setActiveCategory] = useState('all');
+  const [selectedCase, setSelectedCase] = useState<GalleryItem | null>(null);
+
+  const filteredItems = activeCategory === 'all'
+    ? galleryData
+    : galleryData.filter((item) => item.category === activeCategory);
+
+  return (
+    <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 1.5rem 6rem 1.5rem' }}>
+      {/* Category Filter Tabs (Pill Bars) */}
+      <div
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          gap: '0.65rem',
+          flexWrap: 'wrap',
+          marginBottom: '3.5rem',
+        }}
+      >
+        {categories.map((cat) => {
+          const isActive = activeCategory === cat.id;
+          return (
+            <button
+              key={cat.id}
+              onClick={() => setActiveCategory(cat.id)}
+              style={{
+                backgroundColor: isActive ? '#0f172a' : '#ffffff',
+                color: isActive ? '#ffffff' : '#475569',
+                border: isActive ? '1px solid #0f172a' : '1px solid #e2e8f0',
+                padding: '0.6rem 1.25rem',
+                borderRadius: '9999px',
+                fontSize: '0.9rem',
+                fontWeight: 500,
+                cursor: 'pointer',
+                transition: 'all 0.2s ease',
+                boxShadow: isActive ? '0 4px 12px rgba(15, 23, 42, 0.15)' : 'none',
+              }}
+              className="gallery-tab-btn"
+            >
+              {cat.label}
+            </button>
+          );
+        })}
+      </div>
+
+      {/* Featured / Spotlight Hero Transformation Card */}
+      <div
+        style={{
+          backgroundColor: '#ffffff',
+          borderRadius: '24px',
+          border: '1px solid #e2e8f0',
+          boxShadow: '0 8px 30px rgba(0, 0, 0, 0.05)',
+          overflow: 'hidden',
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))',
+          alignItems: 'center',
+          marginBottom: '4rem',
+        }}
+      >
+        {/* Left Half: Dark Media Box */}
+        <div
+          style={{
+            backgroundColor: '#121215',
+            padding: '1.75rem',
+            position: 'relative',
+            display: 'grid',
+            gridTemplateColumns: '1.1fr 1.3fr',
+            gap: '1.25rem',
+            alignItems: 'center',
+            minHeight: '380px',
+          }}
+        >
+          {/* OM1 Badge Top Right */}
+          <div
+            style={{
+              position: 'absolute',
+              top: '1.25rem',
+              right: '1.25rem',
+              backgroundColor: '#d97706',
+              color: '#ffffff',
+              fontSize: '0.75rem',
+              fontWeight: 700,
+              padding: '0.25rem 0.65rem',
+              borderRadius: '6px',
+              zIndex: 3,
+              letterSpacing: '0.04em',
+            }}
+          >
+            OM1
+          </div>
+
+          {/* Stacked 2 Teeth Closeups */}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+            {/* Top: Before */}
+            <div
+              style={{
+                position: 'relative',
+                height: '140px',
+                borderRadius: '12px',
+                overflow: 'hidden',
+                border: '1px solid rgba(255, 255, 255, 0.12)',
+              }}
+            >
+              <Image
+                src="/transformations/t1.jpg"
+                alt="Tedavi Öncesi"
+                fill
+                unoptimized
+                style={{ objectFit: 'cover', objectPosition: 'center' }}
+              />
+              <span
+                style={{
+                  position: 'absolute',
+                  bottom: '0.5rem',
+                  left: '0.5rem',
+                  backgroundColor: 'rgba(0, 0, 0, 0.75)',
+                  color: '#ffffff',
+                  fontSize: '0.7rem',
+                  fontWeight: 600,
+                  padding: '0.15rem 0.5rem',
+                  borderRadius: '4px',
+                }}
+              >
+                Önce
+              </span>
+            </div>
+
+            {/* Down Arrow in Between */}
+            <div style={{ textAlign: 'center', color: '#fbbf24', fontSize: '0.9rem', lineHeight: 1 }}>
+              ↓
+            </div>
+
+            {/* Bottom: After */}
+            <div
+              style={{
+                position: 'relative',
+                height: '140px',
+                borderRadius: '12px',
+                overflow: 'hidden',
+                border: '1px solid rgba(255, 255, 255, 0.12)',
+              }}
+            >
+              <Image
+                src="/transformations/t1.jpg"
+                alt="Tedavi Sonrası"
+                fill
+                unoptimized
+                style={{ objectFit: 'cover', objectPosition: 'center' }}
+              />
+              <span
+                style={{
+                  position: 'absolute',
+                  bottom: '0.5rem',
+                  left: '0.5rem',
+                  backgroundColor: '#d97706',
+                  color: '#ffffff',
+                  fontSize: '0.7rem',
+                  fontWeight: 600,
+                  padding: '0.15rem 0.5rem',
+                  borderRadius: '4px',
+                }}
+              >
+                Sonra
+              </span>
+            </div>
+          </div>
+
+          {/* Right: Smiling Patient Portrait */}
+          <div
+            style={{
+              position: 'relative',
+              height: '320px',
+              borderRadius: '16px',
+              overflow: 'hidden',
+              border: '1px solid rgba(255, 255, 255, 0.15)',
+            }}
+          >
+            <Image
+              src="/patients/patient-1.jpeg"
+              alt="Sema Yılmaz - Full Hollywood Smile"
+              fill
+              unoptimized
+              style={{ objectFit: 'cover', objectPosition: 'top center' }}
+            />
+          </div>
+        </div>
+
+        {/* Right Half: Story & Details */}
+        <div style={{ padding: '3rem 2.5rem' }}>
+          <h3
+            style={{
+              fontSize: '1.75rem',
+              fontWeight: 300,
+              color: '#0f172a',
+              margin: '0 0 0.5rem 0',
+              letterSpacing: '-0.02em',
+            }}
+          >
+            Sema Yılmaz
+          </h3>
+          <div
+            style={{
+              fontSize: '1.1rem',
+              fontWeight: 400,
+              color: '#475569',
+              marginBottom: '1rem',
+            }}
+          >
+            Full Hollywood Smile
+          </div>
+          <blockquote
+            style={{
+              fontSize: '1.05rem',
+              color: '#64748b',
+              fontStyle: 'italic',
+              margin: 0,
+              lineHeight: 1.6,
+              fontWeight: 300,
+            }}
+          >
+            &ldquo;Daha özgüvenli hissediyorum&rdquo;
+          </blockquote>
+
+          <div style={{ marginTop: '2rem' }}>
+            <a
+              href={getWhatsAppLink(locale, 'Merhaba, Sema Yılmaz vakasındaki Hollywood Smile tedavisi hakkında bilgi almak istiyorum.')}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.5rem',
+                backgroundColor: '#0f172a',
+                color: '#ffffff',
+                padding: '0.8rem 1.75rem',
+                borderRadius: '10px',
+                fontSize: '0.95rem',
+                fontWeight: 400,
+                textDecoration: 'none',
+                transition: 'all 0.2s ease',
+              }}
+              className="gallery-cta-btn"
+            >
+              <span>Benzer Tedavi İçin Bilgi Al</span>
+              <span>→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* 3-Column Patient Cases Grid (6 Cards Matching Screenshot) */}
+      <div
+        style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
+          gap: '2rem',
+        }}
+      >
+        {filteredItems.map((item) => (
+          <div
+            key={item.id}
+            style={{
+              backgroundColor: '#ffffff',
+              borderRadius: '20px',
+              border: '1px solid #e2e8f0',
+              boxShadow: '0 4px 16px rgba(0, 0, 0, 0.04)',
+              overflow: 'hidden',
+              display: 'flex',
+              flexDirection: 'column',
+              transition: 'transform 0.25s ease, box-shadow 0.25s ease',
+            }}
+            className="gallery-case-card"
+          >
+            {/* Top Media Split (Left 2 Stacked Teeth | Right Portrait) */}
+            <div
+              style={{
+                display: 'grid',
+                gridTemplateColumns: '1.05fr 1.3fr',
+                backgroundColor: '#09090b',
+                minHeight: '280px',
+              }}
+            >
+              {/* Left Column: 2 Closeups */}
+              <div
+                style={{
+                  display: 'flex',
+                  flexDirection: 'column',
+                  borderRight: '1px solid rgba(255, 255, 255, 0.08)',
+                }}
+              >
+                {/* Top Closeup (Önce) */}
+                <div style={{ position: 'relative', height: '140px', overflow: 'hidden' }}>
+                  <Image
+                    src={item.beforeImage}
+                    alt={`${item.name} Öncesi`}
+                    fill
+                    unoptimized
+                    style={{ objectFit: 'cover' }}
+                  />
+                  <span
+                    style={{
+                      position: 'absolute',
+                      bottom: '0.4rem',
+                      left: '50%',
+                      transform: 'translateX(-50%)',
+                      backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                      color: '#ffffff',
+                      fontSize: '0.7rem',
+                      fontWeight: 500,
+                      padding: '0.15rem 0.5rem',
+                      borderRadius: '4px',
+                    }}
+                  >
+                    Önce
+                  </span>
+                </div>
+
+                {/* Bottom Closeup (Önce / Detay) */}
+                <div style={{ position: 'relative', height: '140px', overflow: 'hidden', borderTop: '1px solid rgba(255, 255, 255, 0.08)' }}>
+                  <Image
+                    src={item.afterImage}
+                    alt={`${item.name} Detayı`}
+                    fill
+                    unoptimized
+                    style={{ objectFit: 'cover' }}
+                  />
+                  <span
+                    style={{
+                      position: 'absolute',
+                      bottom: '0.4rem',
+                      left: '50%',
+                      transform: 'translateX(-50%)',
+                      backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                      color: '#ffffff',
+                      fontSize: '0.7rem',
+                      fontWeight: 500,
+                      padding: '0.15rem 0.5rem',
+                      borderRadius: '4px',
+                    }}
+                  >
+                    Önce
+                  </span>
+                </div>
+              </div>
+
+              {/* Right Column: Full Smiling Portrait (Sonra) */}
+              <div style={{ position: 'relative', height: '280px' }}>
+                <Image
+                  src={item.portraitImage}
+                  alt={`${item.name} Sonrası`}
+                  fill
+                  unoptimized
+                  style={{ objectFit: 'cover', objectPosition: 'top center' }}
+                />
+                <span
+                  style={{
+                    position: 'absolute',
+                    bottom: '0.5rem',
+                    left: '50%',
+                    transform: 'translateX(-50%)',
+                    backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                    color: '#ffffff',
+                    fontSize: '0.75rem',
+                    fontWeight: 500,
+                    padding: '0.2rem 0.75rem',
+                    borderRadius: '4px',
+                  }}
+                >
+                  Sonra
+                </span>
+              </div>
+            </div>
+
+            {/* Bottom Card Content */}
+            <div style={{ padding: '1.5rem', display: 'flex', flexDirection: 'column', flex: 1 }}>
+              {/* Header: Name + Shade Badge */}
+              <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', marginBottom: '0.35rem' }}>
+                <div>
+                  <h4 style={{ fontSize: '1.1rem', fontWeight: 400, color: '#0f172a', margin: '0 0 0.15rem 0' }}>
+                    {item.name}
+                  </h4>
+                  <div style={{ fontSize: '0.9rem', fontWeight: 300, color: '#64748b' }}>
+                    {item.treatment}
+                  </div>
+                </div>
+
+                <span
+                  style={{
+                    backgroundColor: '#d97706',
+                    color: '#ffffff',
+                    fontSize: '0.7rem',
+                    fontWeight: 500,
+                    padding: '0.2rem 0.5rem',
+                    borderRadius: '5px',
+                  }}
+                >
+                  {item.shade}
+                </span>
+              </div>
+
+              {/* Middle Feature: Quote or Tooth Icons */}
+              <div style={{ minHeight: '40px', display: 'flex', alignItems: 'center', margin: '0.75rem 0 1.25rem 0' }}>
+                {item.quote ? (
+                  <p style={{ fontSize: '0.875rem', color: '#64748b', margin: 0, fontStyle: 'italic', fontWeight: 300 }}>
+                    &ldquo;{item.quote}&rdquo;
+                  </p>
+                ) : (
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.85rem', flexWrap: 'wrap' }}>
+                    {item.icons?.map((icon) => (
+                      <div key={icon} style={{ display: 'flex', alignItems: 'center', gap: '0.3rem', fontSize: '0.75rem', color: '#64748b', fontWeight: 300 }}>
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path d="M12 2C8.5 2 6 4.5 6 8c0 3 1.5 5.5 2 9 .3 2.1 1.5 3 4 3s3.7-.9 4-3c.5-3.5 2-6 2-9 0-3.5-2.5-6-6-6z" />
+                        </svg>
+                        <span>{icon}</span>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+
+              {/* Action Button: Dönüşümü İncele */}
+              <div style={{ marginTop: 'auto' }}>
+                <button
+                  onClick={() => setSelectedCase(item)}
+                  style={{
+                    width: '100%',
+                    backgroundColor: '#0f172a',
+                    color: '#ffffff',
+                    border: 'none',
+                    borderRadius: '10px',
+                    padding: '0.8rem',
+                    fontSize: '0.9rem',
+                    fontWeight: 400,
+                    cursor: 'pointer',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    gap: '0.4rem',
+                    transition: 'all 0.2s ease',
+                  }}
+                  className="gallery-cta-btn"
+                >
+                  <span>Dönüşümü İncele</span>
+                  <span>→</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Lightbox / Modal when clicking 'Dönüşümü İncele' */}
+      {selectedCase && (
+        <div
+          style={{
+            position: 'fixed',
+            inset: 0,
+            backgroundColor: 'rgba(0, 0, 0, 0.85)',
+            backdropFilter: 'blur(8px)',
+            zIndex: 9999,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            padding: '1.5rem',
+          }}
+          onClick={() => setSelectedCase(null)}
+        >
+          <div
+            style={{
+              backgroundColor: '#ffffff',
+              borderRadius: '24px',
+              maxWidth: '720px',
+              width: '100%',
+              overflow: 'hidden',
+              boxShadow: '0 20px 50px rgba(0, 0, 0, 0.5)',
+              position: 'relative',
+              padding: '2rem',
+            }}
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Close Button */}
+            <button
+              onClick={() => setSelectedCase(null)}
+              style={{
+                position: 'absolute',
+                top: '1.25rem',
+                right: '1.25rem',
+                backgroundColor: '#f1f5f9',
+                border: 'none',
+                width: '36px',
+                height: '36px',
+                borderRadius: '50%',
+                cursor: 'pointer',
+                fontSize: '1.25rem',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                color: '#64748b',
+              }}
+            >
+              ✕
+            </button>
+
+            {/* Modal Header */}
+            <div style={{ marginBottom: '1.5rem' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.25rem' }}>
+                <h3 style={{ fontSize: '1.5rem', fontWeight: 400, color: '#0f172a', margin: 0 }}>
+                  {selectedCase.name}
+                </h3>
+                <span style={{ backgroundColor: '#d97706', color: '#fff', fontSize: '0.75rem', fontWeight: 500, padding: '0.2rem 0.5rem', borderRadius: '4px' }}>
+                  {selectedCase.shade}
+                </span>
+              </div>
+              <p style={{ fontSize: '1rem', color: '#64748b', margin: 0, fontWeight: 300 }}>
+                {selectedCase.treatment}
+              </p>
+            </div>
+
+            {/* Comparison Images */}
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginBottom: '1.5rem' }}>
+              {/* Before */}
+              <div style={{ position: 'relative', height: '240px', borderRadius: '12px', overflow: 'hidden', backgroundColor: '#09090b' }}>
+                <Image
+                  src={selectedCase.beforeImage}
+                  alt="Önceki Durum"
+                  fill
+                  unoptimized
+                  style={{ objectFit: 'cover' }}
+                />
+                <span style={{ position: 'absolute', bottom: '0.75rem', left: '0.75rem', backgroundColor: 'rgba(0,0,0,0.8)', color: '#fff', padding: '0.25rem 0.75rem', borderRadius: '6px', fontSize: '0.8rem', fontWeight: 400 }}>
+                  Önce
+                </span>
+              </div>
+
+              {/* After */}
+              <div style={{ position: 'relative', height: '240px', borderRadius: '12px', overflow: 'hidden', backgroundColor: '#09090b' }}>
+                <Image
+                  src={selectedCase.portraitImage}
+                  alt="Sonraki Durum"
+                  fill
+                  unoptimized
+                  style={{ objectFit: 'cover', objectPosition: 'top center' }}
+                />
+                <span style={{ position: 'absolute', bottom: '0.75rem', left: '0.75rem', backgroundColor: '#d97706', color: '#fff', padding: '0.25rem 0.75rem', borderRadius: '6px', fontSize: '0.8rem', fontWeight: 500 }}>
+                  Sonra
+                </span>
+              </div>
+            </div>
+
+            {/* WhatsApp Consultation Button */}
+            <a
+              href={getWhatsAppLink(locale, `Merhaba, ${selectedCase.name} hastasının ${selectedCase.treatment} tedavisi hakkında ücretsiz konsültasyon ve fiyat almak istiyorum.`)}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: '0.6rem',
+                backgroundColor: '#25d366',
+                color: '#ffffff',
+                padding: '0.95rem',
+                borderRadius: '12px',
+                fontWeight: 500,
+                fontSize: '1rem',
+                textDecoration: 'none',
+              }}
+            >
+              <span>WhatsApp ile Bu Tedavi İçin Randevu Al</span>
+              <span>→</span>
+            </a>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}

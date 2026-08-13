@@ -1,0 +1,44 @@
+{
+  "colTreatmentsTitle": "// Zabiegi",
+  "treatmentZirconium": "Korony Cyrkonowe",
+  "treatmentEmax": "Licówki Porcelanowe E-Max",
+  "treatmentImplant": "Implanty All-on-4 / All-on-6",
+  "treatmentHollywood": "Hollywood Smile",
+  "treatmentWhitening": "Wybielanie Zębów",
+  "treatmentSurgery": "Chirurgia Szczękowo-Twarzowa",
+
+  "colSupportTitle": "// Wsparcie",
+  "supportProcess": "Przebieg Leczenia",
+  "supportTourism": "Przewodnik po Turystyce Medycznej",
+  "supportReviews": "Opinie Pacjentów",
+  "supportFaq": "Najczęściej Zadawane Pytania",
+  "supportContact": "Kontakt i Lokalizacja",
+  "supportWhatsapp": "Konsultacja WhatsApp",
+
+  "colCorporateTitle": "// O Klinice",
+  "corpAbout": "O Nas i Nasza Wizja",
+  "corpTeam": "Nasz Zespół Specjalistów",
+  "corpRooms": "Gabinety VIP",
+  "corpTech": "Tomografia 3D i Technologia",
+  "corpCertificates": "Certyfikaty Jakości",
+  "corpBlog": "Blog Stomatologiczny i Artykuły",
+
+  "colLegalTitle": "// Kontakt i Informacje Prawne",
+  "legalClinic": "Klinika Antalya HQ",
+  "legalSupport": "Infolinia Rezerwacji i Wsparcia",
+  "legalKvkk": "Informacja RODO",
+  "legalPrivacy": "Polityka Prywatności",
+  "legalCookies": "Ustawienia Plików Cookie",
+  "legalTerms": "Regulamin Świadczenia Usług",
+
+  "newsletterTitle": "Bądź na Bieżąco z Nowościami i Ofertami",
+  "newsletterDesc": "Otrzymuj najnowsze przewodniki po estetyce stomatologicznej, innowacje w leczeniu oraz ekskluzywne oferty bezpośrednio na swoją skrzynkę.",
+  "newsletterPlaceholder": "przyklad@gmail.com",
+  "newsletterBtn": "Dołącz",
+  "newsletterSuccess": "Dołączono ✓",
+  "newsletterConsent": "Zgadzam się na otrzymywanie wiadomości informacyjnych od Master Smile Studio.",
+
+  "copyright": "©2026 Master Smile Studio. Wszelkie prawa zastrzeżone.",
+  "privacyPolicy": "Polityka Prywatności",
+  "termsOfUse": "Regulamin"
+}

@@ -1,29 +1,33 @@
 {
   "heading": "Master Smile Studio",
-  "subtitle": "Od pierwszego kontaktu zapewniamy pełną przejrzystość i szczegółowe plany leczenia przygotowane przez naszych lekarzy.",
+  "subtitle": "Od pierwszego kontaktu zapewniamy przejrzyste informacje i indywidualny plan leczenia opracowany przez nasz zespół doświadczonych stomatologów.",
   "step1": {
     "title": "Pierwszy Kontakt",
-    "subtitle": "Formularz - WhatsApp - Email",
-    "content": "Gdy się z nami skontaktujesz, nasz zespół wysłucha Twoich potrzeb. Nasi eksperci ocenią przypadek i udzielą informacji."
+    "subtitle": "Formularz - WhatsApp - E-mail",
+    "content": "Gdy się z nami kontaktujesz, nasz zespół uważnie słucha Twoich potrzeb. Nasi specjaliści oceniają sytuację i udzielają wstępnych zaleceń."
   },
   "step2": {
-    "title": "Planowanie Wizyty",
-    "subtitle": "Informacje o procesie",
-    "content": "Analizujemy zdjęcia RTG i medyczne, aby przedstawić najlepsze opcje leczenia z pełną przejrzystością."
+    "title": "Konsultacja i Planowanie",
+    "subtitle": "Przejrzyste Informacje",
+    "content": "Na podstawie cyfrowych zdjęć RTG i analizy 3D przedstawiamy optymalne i w pełni przejrzyste opcje leczenia dopasowane do Ciebie."
   },
   "step3": {
-    "title": "Proces Leczenia",
-    "subtitle": "Opieka na każdym etapie",
-    "content": "Po przyjeździe do kliniki nasz zespół wita Cię i prowadzi przez cały proces przy użyciu najnowszej technologii."
+    "title": "Przebieg Leczenia",
+    "subtitle": "Opieka Krok po Kroku",
+    "content": "W naszej klinice powita Cię dedykowany opiekun, a leczenie przeprowadzą doświadczeni lekarze specjaliści przy użyciu nowoczesnych technologii."
   },
   "step4": {
-    "title": "Zalecenia Po Zabiegu",
-    "subtitle": "Wsparcie po leczeniu",
-    "content": "Przed wyjazdem przekazujemy instrukcje dotyczące pielęgnacji oraz komplet dokumentacji medycznej."
+    "title": "Opieka Po Zakończeniu",
+    "subtitle": "Zalecenia i Wsparcie 24/7",
+    "content": "Przed wyjazdem przekazujemy pełną dokumentację medyczną, certyfikaty gwarancyjne oraz zalecenia z całodobowym wsparciem pozabiegowym."
   },
-  "contactTitle": "Szybkie Kanały Kontaktowe",
-  "btnWhatsapp": "WhatsApp",
-  "btnCall": "Zadzwoń do Nas",
-  "btnForm": "Szybki Formularz",
-  "btnEmail": "Email"
+  "contactLink": "SKONTAKTUJ SIĘ Z NAMI",
+  "card1Badge": "100% BEZPŁATNIE",
+  "card1Title": "SKONSULTUJ SIĘ Z NASZYMI LEKARZAMI",
+  "card1Desc": "Porozmawiaj bezpośrednio z naszymi specjalistami, uzyskaj przejrzystą wycenę i bezpłatny indywidualny plan leczenia.",
+  "card1Btn": "Bezpłatna Konsultacja",
+  "card2Badge": "WIZYTA",
+  "card2Title": "ZAPLANUJ SWOJĄ WIZYTĘ JUŻ TERAZ",
+  "card2Desc": "Zarezerwuj wizytę w dogodnym terminie przez WhatsApp, telefon lub formularz online w kilka sekund bez czekania.",
+  "card2Btn": "Umów Wizytę"
 }

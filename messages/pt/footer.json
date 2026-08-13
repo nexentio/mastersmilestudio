@@ -1,0 +1,44 @@
+{
+  "colTreatmentsTitle": "// Tratamentos",
+  "treatmentZirconium": "Coroas de Zircônio",
+  "treatmentEmax": "Lentes de Contato E-Max",
+  "treatmentImplant": "Implantes All-on-4 / All-on-6",
+  "treatmentHollywood": "Hollywood Smile",
+  "treatmentWhitening": "Clareamento Dental",
+  "treatmentSurgery": "Cirurgia Bucomaxilofacial",
+
+  "colSupportTitle": "// Suporte",
+  "supportProcess": "Etapas do Tratamento",
+  "supportTourism": "Guia de Turismo Odontológico",
+  "supportReviews": "Depoimentos de Pacientes",
+  "supportFaq": "Perguntas Frequentes",
+  "supportContact": "Contato e Localização",
+  "supportWhatsapp": "Consulta via WhatsApp",
+
+  "colCorporateTitle": "// Institucional",
+  "corpAbout": "Sobre Nós e Visão",
+  "corpTeam": "Nossos Especialistas",
+  "corpRooms": "Salas Clínicas VIP",
+  "corpTech": "Tomografia 3D e Tecnologia",
+  "corpCertificates": "Certificados de Qualidade",
+  "corpBlog": "Blog Odontológico e Artigos",
+
+  "colLegalTitle": "// Contato e Jurídico",
+  "legalClinic": "Clínica Antalya HQ",
+  "legalSupport": "Linha de Agendamento e Suporte",
+  "legalKvkk": "Aviso de Privacidade (RGPD)",
+  "legalPrivacy": "Política de Privacidade",
+  "legalCookies": "Preferências de Cookies",
+  "legalTerms": "Termos de Uso",
+
+  "newsletterTitle": "Fique por Dentro das Novidades e Ofertas",
+  "newsletterDesc": "Receba os mais recentes guias de estética dentária, inovações de tratamento e comunicados vantajosos do Master Smile Studio diretamente no seu e-mail.",
+  "newsletterPlaceholder": "exemplo@gmail.com",
+  "newsletterBtn": "Inscrever-se",
+  "newsletterSuccess": "Inscrito ✓",
+  "newsletterConsent": "Concordo em receber e-mails informativos do Master Smile Studio.",
+
+  "copyright": "©2026 Master Smile Studio. Todos os direitos reservados.",
+  "privacyPolicy": "Política de Privacidade",
+  "termsOfUse": "Termos de Uso"
+}

@@ -9,25 +9,22 @@ export default function BlogSection() {
   const blogCards = [
     {
       id: 'post1',
-      title: 'Design Tips',
-      subTitle: 'Gülüş Estetiği İpuçları',
-      description: 'Sağlıklı, doğal ve estetik bir gülüş tasarımı için hekim tavsiyeleri.',
+      title: t('card1Title'),
+      description: t('card1Desc'),
       image: '/e-max-lamine-treatment-mss.jpeg',
       imageHeight: '520px', // Tallest left card
     },
     {
       id: 'post2',
-      title: 'Brand Stories',
-      subTitle: 'Diş Estetiği Süreçleri',
-      description: 'Vener porselen, lamine ve zirkonyum kaplama tedavi aşamaları.',
+      title: t('card2Title'),
+      description: t('card2Desc'),
       image: '/dental-implant-mss.jpeg',
       imageHeight: '340px', // Shorter middle card
     },
     {
       id: 'post3',
-      title: 'Creative Notes',
-      subTitle: 'İmplant & Tedavi Rehberi',
-      description: 'Dikişsiz dijital implant rehberi ve hızlı iyileşme yöntemleri.',
+      title: t('card3Title'),
+      description: t('card3Desc'),
       image: '/smile-makeover.jpg',
       imageHeight: '440px', // Medium right card
     },
@@ -74,7 +71,7 @@ export default function BlogSection() {
               paddingBottom: '0.5rem',
             }}
           >
-            Master Smile Studio hekimlerinin ağız ve diş sağlığı, implant tedavisi ve diş estetiğine dair en güncel rehber ve tavsiyelerini keşfedin.
+            {t('leftDesc')}
           </p>
 
           {/* Right Header Text Stack */}
@@ -89,7 +86,7 @@ export default function BlogSection() {
                 margin: 0,
               }}
             >
-              Explore Our Clinical <br />
+              {t('headingMain')} <br />
               <span
                 style={{
                   fontStyle: 'italic',
@@ -97,7 +94,7 @@ export default function BlogSection() {
                   color: '#64748b',
                 }}
               >
-                Insights
+                {t('headingItalic')}
               </span>
             </h2>
 
@@ -111,7 +108,7 @@ export default function BlogSection() {
                 fontWeight: 400,
               }}
             >
-              Ağız ve Diş Sağlığı, Estetik Tedaviler ve Uzman Tavsiyeleri
+              {t('subtitle')}
             </p>
           </div>
         </div>

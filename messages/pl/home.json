@@ -1,99 +1,65 @@
 {
   "welcome": "Projektowanie Uśmiechu",
-  "description": "Rozpocznij swoją podróż od bezpłatnej konsultacji online. Przygotujemy Twój spersonalizowany plan leczenia przed wylotem.",
+  "description": "Rozpocznij swoją podróż od bezpłatnej konsultacji online. Przygotujemy Twój spersonalizowany plan leczenia przed Twoim lotem.",
   "ctaConsultation": "Bezpłatna Konsultacja",
   "ctaTreatments": "Zabiegi",
   "transformations": {
     "title": "Od pierwszej wizyty do idealnego uśmiechu.",
-    "subtitle": "Odkryj prawdziwe historie pacjentów. To coś więcej niż uśmiech — to nowa pewność siebie zdobyta w Master Smile Studio."
-  },
-  "process": {
-    "heading": "Master Smile Studio",
-    "subtitle": "Od pierwszego kontaktu zapewniamy pełną przejrzystość i szczegółowe plany leczenia przygotowane przez naszych lekarzy.",
-    "step1": {
-      "title": "Pierwszy Kontakt",
-      "subtitle": "Formularz - WhatsApp - Email",
-      "content": "Gdy się z nami skontaktujesz, nasz zespół wysłucha Twoich potrzeb. Nasi eksperci ocenią przypadek i udzielą informacji."
-    },
-    "step2": {
-      "title": "Planowanie Wizyty",
-      "subtitle": "Informacje o procesie",
-      "content": "Analizujemy zdjęcia RTG i medyczne, aby przedstawić najlepsze opcje leczenia z pełną przejrzystością."
-    },
-    "step3": {
-      "title": "Proces Leczenia",
-      "subtitle": "Opieka na każdym etapie",
-      "content": "Po przyjeździe do kliniki nasz zespół wita Cię i prowadzi przez cały proces przy użyciu najnowszej technologii."
-    },
-    "step4": {
-      "title": "Zalecenia Po Zabiegu",
-      "subtitle": "Wsparcie po leczeniu",
-      "content": "Przed wyjazdem przekazujemy instrukcje dotyczące pielęgnacji oraz komplet dokumentacji medycznej."
-    },
-    "contactTitle": "Szybkie Kanały Kontaktowe",
-    "btnWhatsapp": "WhatsApp",
-    "btnCall": "Zadzwoń do Nas",
-    "btnForm": "Szybki Formularz",
-    "btnEmail": "Email"
-  },
-  "team": {
-    "title": "Nasz Zespół Ekspertów",
-    "subtitle": "Poznaj naszych wybitnych lekarzy stomatologów świadczących usługi na najwyższym światowym poziomie.",
-    "doc1": {
-      "title": "Protetyk i Projektant Uśmiechu",
-      "bio": "Absolwent Uniwersytetu Stambulskiego z wyróżnieniem. Specjalizuje się w cyfrowym projektowaniu uśmiechu z ponad 14-letnim doświadczeniem."
-    },
-    "doc2": {
-      "title": "Chirurg Stomatologiczny i Szczękowy",
-      "bio": "Specjalista Uniwersytetu w Ankarze z ponad 12-letnim doświadczeniem w implantach All-on-4 / All-on-6 oraz odbudowie kości."
-    },
-    "doc3": {
-      "title": "Stomatolog Estetyczny",
-      "bio": "Absolwentka Uniwersytetu Ege. Specjalizuje się w ultracienkich licówkach porcelanowych dla uzyskania naturalnego uśmiechu Hollywood."
-    },
-    "doc4": {
-      "title": "Lekarz Naczelny i Ekspert Stomatologii Estetycznej",
-      "bio": "Absolwent Uniwersytetu Hacettepe, Lekarz Naczelny w Master Smile Studio. Po szkoleniach w Londynie i Zurychu od ponad 16 lat kieruje metamorfozami uśmiechów."
-    },
-    "doc5": {
-      "title": "Endodonta i Stomatolog Restrawacyjny",
-      "bio": "Specjalistka Uniwersytetu Marmara w mikroskopowym leczeniu kanałowym i biokompatybilnych odbudowach."
-    },
-    "doc6": {
-      "title": "Ortodonta",
-      "bio": "Specjalista Uniwersytetu Gazi certyfikowany w zakresie nakładek prostujących (Invisalign) i cyfrowej korekcji zgryzu."
-    },
-    "doc7": {
-      "title": "Periodontolog i Estetyka Dziąseł",
-      "bio": "Specjalistka Uniwersytetu Yeditepe z 8-letnim doświadczeniem w estetyce różowej (plastyce dziąseł)."
-    }
-  },
-  "brands": {
-    "eyebrow": "✦ Nasze Marki",
-    "title": "Światowej Klasy Marki Implantów Stomatologicznych",
-    "straumannSub": "Szwajcarska Precyzja Implantów",
-    "nobelSub": "Implantologia Premium",
-    "astraSub": "Grupa Dentsply Sirona",
-    "medentikaSub": "Jakość Grupy Straumann",
-    "bredentSub": "Niemiecka Innowacja Stomatologiczna"
+    "subtitle": "Odkryj prawdziwe historie przemian naszych pacjentów. To więcej niż uśmiech — to odzyskana pewność siebie z Master Smile Studio."
   },
   "patients": {
-    "badge": "Szczęśliwi Pacjenci",
-    "title": "Nasi Pacjenci i Historie",
-    "subtitle": "Prawdziwe doświadczenia metamorfoz pacjentów z całego świata."
+    "badge": "Doświadczenia Zadowolonych Pacjentów",
+    "title": "Nasi Pacjenci i Historie Uśmiechów",
+    "subtitle": "Prawdziwe historie transformacji pacjentów przybywających do nas z całego świata.",
+    "card1": {
+      "name": "Sarah Jenkins",
+      "country": "🇬🇧 Wielka Brytania",
+      "treatment": "Full Hollywood Smile",
+      "quote": "Zespół Master Smile Studio podarował mi znacznie bardziej naturalny i oszałamiający uśmiech, niż mogłam sobie wyobrazić."
+    },
+    "card2": {
+      "name": "Markus Weber",
+      "country": "🇩🇪 Niemcy",
+      "treatment": "Korony Cyrkonowe",
+      "quote": "Leczenie stomatologiczne światowej klasy w warunkach 5-gwiazdkowego luksusu za ułamek kosztów w Niemczech."
+    },
+    "card3": {
+      "name": "Elena Rostova",
+      "country": "🇷🇺 Rosja",
+      "treatment": "Licówki E-max",
+      "quote": "Od pierwszego dnia opieka, gościnność i cyfrowy podgląd uśmiechu były absolutnie bezbłędne."
+    },
+    "card4": {
+      "name": "Sophie Martin",
+      "country": "🇫🇷 Francja",
+      "treatment": "Implanty i Wybielanie",
+      "quote": "Bezbolesne, szybkie i niezwykle estetyczne efekty. Mój nowy uśmiech całkowicie przywrócił mi pewność siebie."
+    },
+    "card5": {
+      "name": "David Miller",
+      "country": "🇺🇸 USA",
+      "treatment": "Metamorfoza Cyrkonowa",
+      "quote": "Doświadczyłem w Antalyi zaawansowanej technologii i luksusowej turystyki medycznej, której nie mogłem znaleźć u siebie."
+    },
+    "card6": {
+      "name": "Anna Kowalska",
+      "country": "🇵🇱 Polska",
+      "treatment": "Implanty All-on-4",
+      "quote": "Cały proces był prowadzony niezwykle profesjonalnie od początku do końca. Teraz mogę uśmiechać się z pełną pewnością."
+    }
   },
   "form": {
     "title": "Uzyskaj Bezpłatną Konsultację",
-    "subtitle": "Wypełnij formularz, a nasz doradca skontaktuje się z Tobą.",
+    "subtitle": "Wypełnij formularz, a nasz konsultant skontaktuje się z Tobą.",
     "fullName": "Imię i Nazwisko",
     "fullNamePlaceholder": "Twoje imię i nazwisko",
-    "phone": "Numer Telefonu",
-    "phonePlaceholder": "+48 (500) 000-000",
+    "phone": "Numer telefonu",
+    "phonePlaceholder": "+48 000 000 000",
     "treatment": "Zabieg",
-    "treatmentSelectPlaceholder": "— Wybierz Zabieg —",
+    "treatmentSelectPlaceholder": "— Wybierz zabieg —",
     "language": "Język",
-    "languageSelectPlaceholder": "— Wybierz Język —",
+    "languageSelectPlaceholder": "— Wybierz język —",
     "submit": "Zarezerwuj Bezpłatną Wizytę",
-    "success": "Twoje zgłoszenie zostało przyjęte. Skontaktujemy się wkrótce."
+    "success": "Twoje zgłoszenie zostało przyjęte. Wkrótce się z Tobą skontaktujemy."
   }
 }

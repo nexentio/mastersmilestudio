@@ -3,6 +3,7 @@ import Header from '@/components/Header';
 import TeamSection from '@/components/TeamSection';
 import BrandsSection from '@/components/BrandsSection';
 import ContactSection from '@/components/ContactSection';
+import Footer from '@/components/Footer';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -29,109 +30,86 @@ export default async function AboutPage({
   setRequestLocale(locale);
 
   return (
-    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', backgroundColor: '#09090b', color: '#ffffff' }}>
+    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', backgroundColor: '#fcfcfd', color: '#0f172a' }}>
       {/* Global Navigation Header */}
       <Header />
 
-      {/* Hero Section: Dark Studio Vibe with Emoji Orange Ambient Radial Glow */}
+      {/* Main About Page Hero Header (Split Layout Matching Treatments Page) */}
       <section
         style={{
+          padding: '3.5rem 1.5rem 2rem 1.5rem',
           position: 'relative',
-          padding: '5rem 1.5rem 6rem 1.5rem',
-          overflow: 'hidden',
-          backgroundColor: '#09090b',
-          borderBottom: '1px solid #1e293b',
         }}
       >
-        {/* Ambient Glow Orbs */}
-        <div
-          style={{
-            position: 'absolute',
-            top: '-150px',
-            right: '-150px',
-            width: '700px',
-            height: '700px',
-            borderRadius: '50%',
-            background: 'radial-gradient(circle, rgba(255, 165, 82, 0.22) 0%, rgba(255, 145, 36, 0.06) 50%, transparent 75%)',
-            filter: 'blur(50px)',
-            pointerEvents: 'none',
-          }}
-        />
-
-        <div
-          style={{
-            maxWidth: '1280px',
-            margin: '0 auto',
-            position: 'relative',
-            zIndex: 2,
-          }}
-        >
-          {/* Main Hero Headline */}
-          <h1
-            style={{
-              fontSize: 'clamp(2.5rem, 5.5vw, 4.25rem)',
-              fontWeight: 300,
-              color: '#ffffff',
-              lineHeight: 1.1,
-              letterSpacing: '-0.035em',
-              marginBottom: '1.75rem',
-              maxWidth: '900px',
-            }}
-          >
-            Bilim, Sanat ve Teknolojinin <br />
-            <span
+        <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
+          {/* Breadcrumb Pill Badge */}
+          <div style={{ marginBottom: '2.5rem' }}>
+            <Link
+              href="/"
               style={{
-                background: 'linear-gradient(135deg, #ffffff 0%, #cbd5e1 40%, #FFA552 100%)',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-                fontWeight: 300,
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.55rem',
+                backgroundColor: '#ffffff',
+                border: '1px solid #e2e8f0',
+                borderRadius: '9999px',
+                padding: '0.45rem 1.15rem',
+                fontSize: '0.85rem',
+                fontWeight: 400,
+                color: '#64748b',
+                boxShadow: '0 2px 8px rgba(0, 0, 0, 0.03)',
+                textDecoration: 'none',
               }}
             >
-              Buluştuğu Gülüş Mimarisi
-            </span>
-          </h1>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                <polyline points="9 22 9 12 15 12 15 22" />
+              </svg>
+              <span>Anasayfa</span>
+              <span style={{ color: '#cbd5e1' }}>›</span>
+              <span style={{ color: '#0f172a', fontWeight: 500 }}>Hakkımızda</span>
+            </Link>
+          </div>
 
-          <p
-            style={{
-              fontSize: '1.2rem',
-              color: '#cbd5e1',
-              lineHeight: 1.7,
-              fontWeight: 300,
-              maxWidth: '740px',
-              marginBottom: '3.5rem',
-            }}
-          >
-            Master Smile Studio; uluslararası diş hekimliği standartlarında, 16 farklı tedavi branşını ve en ileri dijital teknolojileri tek çatı altında sunan premium ağız ve diş sağlığı polikliniğidir. Beş ayrı tedavi ünitemiz ile hastalarımıza beklemeden, yüksek konforda ve kişiselleştirilmiş hizmet sunuyoruz.
-          </p>
-
-          {/* Key Statistics Strip */}
+          {/* Split Header: Left Title | Right Subtitle */}
           <div
             style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
-              gap: '1.5rem',
-              paddingTop: '2rem',
-              borderTop: '1px solid rgba(255, 255, 255, 0.1)',
+              display: 'flex',
+              alignItems: 'flex-end',
+              justifyContent: 'space-between',
+              flexWrap: 'wrap',
+              gap: '2rem',
+              borderBottom: '1px solid #f1f5f9',
+              paddingBottom: '2.5rem',
             }}
           >
-            <div style={{ display: 'flex', flexDirection: 'column' }}>
-              <span style={{ fontSize: '2.5rem', fontWeight: 600, color: '#FFA552', lineHeight: 1 }}>16+</span>
-              <span style={{ fontSize: '0.95rem', color: '#94a3b8', marginTop: '0.5rem', fontWeight: 400 }}>Uzman Tedavi Branşı</span>
+            <div>
+              <h1
+                style={{
+                  fontSize: 'clamp(2.5rem, 5vw, 3.75rem)',
+                  fontWeight: 300,
+                  color: '#0f172a',
+                  letterSpacing: '-0.035em',
+                  lineHeight: 1.05,
+                  margin: 0,
+                }}
+              >
+                Hakkımızda
+              </h1>
             </div>
 
-            <div style={{ display: 'flex', flexDirection: 'column' }}>
-              <span style={{ fontSize: '2.5rem', fontWeight: 600, color: '#ffffff', lineHeight: 1 }}>5</span>
-              <span style={{ fontSize: '0.95rem', color: '#94a3b8', marginTop: '0.5rem', fontWeight: 400 }}>İleri Klinik Tedavi Ünitesi</span>
-            </div>
-
-            <div style={{ display: 'flex', flexDirection: 'column' }}>
-              <span style={{ fontSize: '2.5rem', fontWeight: 600, color: '#FFA552', lineHeight: 1 }}>500+</span>
-              <span style={{ fontSize: '0.95rem', color: '#94a3b8', marginTop: '0.5rem', fontWeight: 400 }}>5-Yıldızlı Google Yorumu</span>
-            </div>
-
-            <div style={{ display: 'flex', flexDirection: 'column' }}>
-              <span style={{ fontSize: '2.5rem', fontWeight: 600, color: '#ffffff', lineHeight: 1 }}>10,000+</span>
-              <span style={{ fontSize: '0.95rem', color: '#94a3b8', marginTop: '0.5rem', fontWeight: 400 }}>Mutlu Gülüş Tasarımı</span>
+            <div style={{ maxWidth: '440px', textAlign: 'right' }}>
+              <p
+                style={{
+                  fontSize: '0.925rem',
+                  color: '#64748b',
+                  margin: 0,
+                  lineHeight: 1.6,
+                  fontWeight: 300,
+                }}
+              >
+                Her gülüşün bir hikayesi vardır. Hastalarımızla kurduğumuz güven ve mutluluk dolu bağın meyvelerini, ileri dijital diş hekimliği ve uzman kadromuzla sunuyoruz.
+              </p>
             </div>
           </div>
         </div>
@@ -162,7 +140,7 @@ export default async function AboutPage({
               alignItems: 'start',
             }}
           >
-            <div style={{ fontSize: '0.95rem', fontWeight: 600, color: '#0f172a' }}>
+            <div style={{ fontSize: '0.95rem', fontWeight: 400, color: '#64748b' }}>
               / Vizyonumuz
             </div>
 
@@ -186,7 +164,7 @@ export default async function AboutPage({
                   color: '#64748b',
                   lineHeight: 1.6,
                   margin: 0,
-                  fontWeight: 400,
+                  fontWeight: 300,
                   maxWidth: '720px',
                 }}
               >
@@ -232,8 +210,8 @@ export default async function AboutPage({
                   color: '#ffffff',
                 }}
               >
-                <div style={{ fontSize: '1.35rem', fontWeight: 600 }}>Rose Glow</div>
-                <div style={{ fontSize: '0.9rem', color: 'rgba(255, 255, 255, 0.9)', lineHeight: 1.5 }}>
+                <div style={{ fontSize: '1.35rem', fontWeight: 400 }}>Rose Glow</div>
+                <div style={{ fontSize: '0.9rem', color: 'rgba(255, 255, 255, 0.9)', lineHeight: 1.5, fontWeight: 300 }}>
                   Yüz anatomisi ve dudak çizginize tam uyumlu kişiselleştirilmiş dijital gülüş mimarisi.
                 </div>
               </div>
@@ -268,8 +246,8 @@ export default async function AboutPage({
                   color: '#ffffff',
                 }}
               >
-                <div style={{ fontSize: '1.35rem', fontWeight: 600 }}>Indigo Insight</div>
-                <div style={{ fontSize: '0.9rem', color: 'rgba(255, 255, 255, 0.9)', lineHeight: 1.5 }}>
+                <div style={{ fontSize: '1.35rem', fontWeight: 400 }}>Indigo Insight</div>
+                <div style={{ fontSize: '0.9rem', color: 'rgba(255, 255, 255, 0.9)', lineHeight: 1.5, fontWeight: 300 }}>
                   Sıfır hata ile 3D çene yapısı analizi ve dikişsiz hızlı iyileşen implant planlaması.
                 </div>
               </div>
@@ -292,10 +270,11 @@ export default async function AboutPage({
               <h3
                 style={{
                   fontSize: '1.65rem',
-                  fontWeight: 500,
+                  fontWeight: 300,
                   color: '#ffffff',
                   lineHeight: 1.25,
                   marginBottom: '1.75rem',
+                  letterSpacing: '-0.02em',
                 }}
               >
                 Gülüşünüzü Bugün Yeniden Keşfedin.
@@ -308,7 +287,7 @@ export default async function AboutPage({
                   color: '#000000',
                   padding: '0.85rem 1.85rem',
                   borderRadius: '9999px',
-                  fontWeight: 600,
+                  fontWeight: 400,
                   fontSize: '0.95rem',
                   textDecoration: 'none',
                   display: 'inline-block',
@@ -374,7 +353,7 @@ export default async function AboutPage({
                 <p
                   style={{
                     fontSize: '1.05rem',
-                    fontWeight: 500,
+                    fontWeight: 300,
                     lineHeight: 1.5,
                     margin: 0,
                     maxWidth: '640px',
@@ -386,7 +365,7 @@ export default async function AboutPage({
                 <span
                   style={{
                     fontSize: '4.25rem',
-                    fontWeight: 600,
+                    fontWeight: 300,
                     letterSpacing: '-0.04em',
                     lineHeight: 1,
                     color: '#ffffff',
@@ -424,7 +403,7 @@ export default async function AboutPage({
                 <p
                   style={{
                     fontSize: '1.05rem',
-                    fontWeight: 500,
+                    fontWeight: 300,
                     lineHeight: 1.5,
                     margin: 0,
                     maxWidth: '640px',
@@ -436,7 +415,7 @@ export default async function AboutPage({
                 <span
                   style={{
                     fontSize: '4.25rem',
-                    fontWeight: 600,
+                    fontWeight: 300,
                     letterSpacing: '-0.04em',
                     lineHeight: 1,
                     color: '#ffffff',
@@ -474,7 +453,7 @@ export default async function AboutPage({
                 <p
                   style={{
                     fontSize: '1.05rem',
-                    fontWeight: 500,
+                    fontWeight: 300,
                     lineHeight: 1.5,
                     margin: 0,
                     maxWidth: '640px',
@@ -486,7 +465,7 @@ export default async function AboutPage({
                 <span
                   style={{
                     fontSize: '4.25rem',
-                    fontWeight: 600,
+                    fontWeight: 300,
                     letterSpacing: '-0.04em',
                     lineHeight: 1,
                     color: '#ffffff',
@@ -507,20 +486,19 @@ export default async function AboutPage({
               alignItems: 'start',
             }}
           >
-            {/* Left Column: Uppercase Headline & Pill CTA */}
+            {/* Left Column: Headline & Pill CTA */}
             <div>
               <h2
                 style={{
                   fontSize: 'clamp(1.75rem, 3vw, 2.25rem)',
-                  fontWeight: 600,
+                  fontWeight: 300,
                   color: '#0f172a',
                   lineHeight: 1.25,
                   letterSpacing: '-0.025em',
-                  textTransform: 'uppercase',
                   marginBottom: '2rem',
                 }}
               >
-                BİNLERCE HASTAMIZIN SAĞLIKLI GÜLÜŞLERE KAVUŞTUĞU GÜVENİLİR TEDAVİ SÜRECİ
+                Binlerce hastamızın sağlıklı gülüşlere kavuştuğu güvenilir tedavi süreci
               </h2>
 
               <a
@@ -534,15 +512,14 @@ export default async function AboutPage({
                   color: '#d97706',
                   padding: '0.65rem 1.35rem',
                   borderRadius: '9999px',
-                  fontWeight: 700,
+                  fontWeight: 400,
                   fontSize: '0.85rem',
                   letterSpacing: '0.04em',
                   textDecoration: 'none',
-                  textTransform: 'uppercase',
                   boxShadow: '0 4px 16px rgba(255, 165, 82, 0.12)',
                 }}
               >
-                <span>MEMNUNİYET RAPORU</span>
+                <span>Memnuniyet Raporu</span>
                 <span
                   style={{
                     width: '24px',
@@ -569,7 +546,7 @@ export default async function AboutPage({
                   color: '#475569',
                   lineHeight: 1.7,
                   margin: 0,
-                  fontWeight: 400,
+                  fontWeight: 300,
                   maxWidth: '520px',
                 }}
               >
@@ -588,6 +565,9 @@ export default async function AboutPage({
 
       {/* Contact & Free Consultation Form Section */}
       <ContactSection />
+
+      {/* Luxury Studio Footer */}
+      <Footer />
     </div>
   );
 }
