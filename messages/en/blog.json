@@ -1,12 +1,14 @@
 {
-  "leftDesc": "Discover the latest clinical guides, oral health insights, implant solutions, and aesthetic dental tips from Master Smile Studio specialists.",
+  "leftDesc": "Discover the latest clinical guides, oral health advice, dental implants, and smile makeover insights from Master Smile Studio specialists.",
   "headingMain": "Explore Our Clinical",
   "headingItalic": "Insights",
-  "subtitle": "Oral Health, Aesthetic Dental Treatments & Expert Recommendations",
+  "headingSub": "and Stories",
+  "subtitle": "Oral Health, Aesthetic Dentistry & Expert Dental Advice",
+  "readMore": "Read Article",
   "card1Title": "Design Tips",
-  "card1Desc": "Expert dental recommendations for a healthy, natural, and harmonious smile makeover.",
+  "card1Desc": "Expert recommendations for a healthy, natural, and aesthetic smile design.",
   "card2Title": "Brand Stories",
-  "card2Desc": "Complete step-by-step treatment phases for porcelain veneers, laminates, and zirconia crowns.",
+  "card2Desc": "Complete clinical stages for porcelain veneers, laminates, and zirconia crowns.",
   "card3Title": "Creative Notes",
-  "card3Desc": "Flapless digital implant guide, recovery timelines, and advanced dental surgical protocols."
+  "card3Desc": "Sutureless digital implant guide and rapid healing recovery techniques."
 }

@@ -1,80 +1,84 @@
 {
   "title": "Unsere Behandlungen",
-  "subtitle": "Unsere zahnmedizinischen Leistungen orientieren sich an modernsten zahnärztlichen Standards und individuellen Diagnosen.",
+  "subtitle": "Zahnärztliche Leistungen und moderne Verfahren, abgestimmt auf individuelle klinische Beratungen.",
   "metaTitle": "Umfassende Zahnbehandlungen | Master Smile Studio",
-  "metaDescription": "Über 16 moderne zahnmedizinische Fachbereiche mit modernster Technologie und erfahrenen Spezialisten für Ihre Zahngesundheit.",
+  "metaDescription": "Entdecken Sie über 16 fortschrittliche Zahnbehandlungen mit modernster Technologie und erfahrenen Spezialistenteams.",
   "breadcrumbHome": "Startseite",
   "breadcrumbTreatments": "Behandlungen",
   "pageTitle": "Unsere Behandlungen",
-  "pageSubtitle": "Entdecken Sie die Details unserer ästhetischen und klinischen Zahnbehandlungen mit modernster digitaler Technologie.",
+  "pageSubtitle": "Erfahren Sie mehr über unsere ästhetischen und klinischen Zahnbehandlungen mit modernster digitaler Präzision.",
   "getAppointmentBtn": "Beratung & Termin Buchen",
+  "inquireBtn": "Beratung & Termin Buchen",
   "whatsappInquiry": "Hallo, ich möchte detaillierte Informationen und einen Termin für die {treatment}-Behandlung anfragen.",
   "exploreCasesBtn": "Klinische Fälle Ansehen",
   "casesTitle": "Klinische Fallstudien",
-  "casesSubtitle": "Erleben Sie Vorher-Nachher-Ergebnisse digitaler Lächeln-Planungen und klinische Aufnahmen unserer Patienten.",
+  "casesHeading": "Klinische Fallstudien",
+  "casesSubtitle": "Sehen Sie sich die Vorher-Nachher-Ergebnisse, digitale Lächeln-Planungen und klinische Aufnahmen unserer Patienten an.",
   "prevCase": "Vorheriger Fall",
   "nextCase": "Nächster Fall",
-  "doctorsTitle": "Unsere Fachärzte & Spezialisierungen",
-  "doctorTulayTitle": "Fachärztin für Mund-, Kiefer- und Gesichtschirurgie",
-  "doctorAliKemalTitle": "Zahnarzt & Spezialist",
-  "doctorAbdullahTitle": "Endodontie & Restaurative Zahnheilkunde",
+  "doctorsTitle": "Unsere Ärzte & Fachgebiete",
+  "doctorsHeading": "Unsere Ärzte & Fachgebiete",
+  "doctorsSubtitle": "Lernen Sie unser erfahrenes Fachärzteteam für klinische Zahnmedizin kennen.",
+  "doctorTulayTitle": "Mund-, Kiefer- und Gesichtschirurgin",
+  "doctorAliKemalTitle": "Zahnarzt für Ästhetik",
+  "doctorAbdullahTitle": "Endodontie & Zahnerhaltung",
   "smileDesign": { "title": "Smile Design", "description": "Individuelle digitale Lächeln-Architektur nach dem Goldenen Schnitt." },
-  "implant": { "title": "Zahnimplantate", "description": "Biokompatible Titanimplantate für ein natürliches Zahngefühl auf Lebenszeit." },
-  "emax": { "title": "E-Max Veneers", "description": "Hauchdünne Keramikschalen mit natürlicher Lichtdurchlässigkeit." },
-  "zirconia": { "title": "Zirkonkronen", "description": "Metallfreie Kronen mit hoher Stabilität und brillanter Ästhetik." },
-  "whitening": { "title": "Zahnaufhellung", "description": "Professionelles klinisches Laser-Bleaching für strahlend weiße Zähne." },
-  "rootCanal": { "title": "Wurzelkanalbehandlung", "description": "Schmerzfreie Zahnrettung mit moderner Mikroskopie und flexiblen Instrumenten." },
-  "dentures": { "title": "Zahnersatz & Prothetik", "description": "Komfortabler, festsitzender und herausnehmbarer Zahnersatz." },
-  "bonding": { "title": "Komposit-Bonding", "description": "Ästhetische Korrektur von Lücken und Absplitterungen in nur einer Sitzung." },
-  "orthodontics": { "title": "Kieferorthopädie", "description": "Unsichtbare Zahnschienen und ästhetische Brackets für perfekte Zahnreihen." },
+  "implant": { "title": "Zahnimplantate", "description": "Biokompatible Titanimplantate für ein natürliches Zahngefühl ein Leben lang." },
+  "emax": { "title": "E-max Veneers", "description": "Hauchdünne Porzellan-Veneers mit herausragender natürlicher Lichtdurchlässigkeit." },
+  "zirconia": { "title": "Zirkonkronen", "description": "Metallfreie, hochstabile Kronen mit erstklassiger Ästhetik." },
+  "whitening": { "title": "Zahnaufhellung", "description": "Sicheres klinisches Laser-Bleaching für ein strahlend weißes Lächeln." },
+  "rootCanal": { "title": "Wurzelbehandlung", "description": "Schmerzfreie Zahnerhaltung mit mikroskopischer Präzision." },
+  "dentures": { "title": "Zahnprothesen", "description": "Komfortable, natürliche festsitzende und herausnehmbare Prothesensysteme." },
+  "bonding": { "title": "Komposit Bonding", "description": "Ästhetische Korrektur von Zahnlücken und Absplitterungen in nur einer Sitzung." },
+  "orthodontics": { "title": "Kieferorthopädie", "description": "Unsichtbare Zahnschienen und moderne Brackets für gerade Zähne." },
   "items": {
     "smileDesign": {
       "title": "SMILE DESIGN",
-      "description": "Ihr Traumlächeln durch maßgeschneiderte Goldener-Schnitt-Analyse und 3D-Digitalarchitektur."
+      "description": "Ihr Traumlächeln – maßgeschneidert durch 3D-Digitalanalyse und Prinzipien des Goldenen Schnitts."
     },
     "implant": {
       "title": "ZAHNIMPLANTATE",
-      "description": "Gewebefreundliche Titanimplantate für dauerhaften Komfort und natürliches Kaugefühl bei Zahnverlust."
+      "description": "Biokompatible Titansysteme für dauerhafte Stabilität und ein vollkommen natürliches Kaugefühl."
     },
     "emax": {
       "title": "E-MAX VENEERS",
-      "description": "Ultradünne, hochtransluzente Keramik-Veneers bei minimalem Zahnabtrag."
+      "description": "Ultradünne Keramikschalen mit maximaler Lichtdurchlässigkeit für natürliche Schönheit."
     },
     "zirconia": {
       "title": "ZIRKONKRONEN",
-      "description": "Metallfreie Zahnkronen mit maximaler Stärke und natürlicher Lichtdurchlässigkeit wie echter Zahnschmelz."
+      "description": "Metallfreie Rekonstruktionen mit höchster Bruchfestigkeit und natürlicher Zahnoptik."
     },
     "whitening": {
       "title": "ZAHNAUFHELLUNG",
-      "description": "Klinisches Laser-Bleaching für eine sichere Aufhellung um 3–4 Nuancen in kurzer Zeit."
+      "description": "Professionelles klinisches Laser-Bleaching für 3–4 Nuancen weißere Zähne in einer Sitzung."
     },
     "rootCanal": {
-      "title": "WURZELKANALBEHANDLUNG",
-      "description": "Präzise und schmerzfreie Zahnerhaltung mit moderner mikroskopischer Endodontie."
+      "title": "WURZELBEHANDLUNG",
+      "description": "Schmerzfreie Zahnerhaltung mittels moderner rotierender Instrumente und Mikroskopie."
     },
     "dentures": {
-      "title": "ZAHNERSATZ & PROTHETIK",
-      "description": "Moderne festsitzende und herausnehmbare Prothesen zur Wiederherstellung von Funktion und Ästhetik."
+      "title": "ZAHNPROTHESEN",
+      "description": "Moderne festsitzende und herausnehmbare Prothetik für volle Kaufunktion und Ästhetik."
     },
     "bonding": {
-      "title": "KOMPOSIT-BONDING",
-      "description": "Ästhetische Reparatur von Zahnlücken, Rissen und Formunregelmäßigkeiten in einer Sitzung."
+      "title": "KOMPOSIT BONDING",
+      "description": "Direkte ästhetische Korrekturen bei Absplitterungen und Zahnlücken in nur einer Sitzung."
     },
     "bridge": {
       "title": "ZAHNBRÜCKEN",
-      "description": "Präzise Brückensysteme auf Nachbarzähnen zum langlebigen Schließen von Zahnlücken."
+      "description": "Stabile Brückensysteme, gestützt auf Nachbarzähne, für einen ästhetischen Lückenschluss."
     },
     "periodontology": {
       "title": "PARODONTOLOGIE (ZAHNFLEISCHPFLEGE)",
-      "description": "Fachgerechte Parodontalbehandlungen gegen Zahnfleischrückgang, Entzündungen und Blutungen."
+      "description": "Gezielte Therapien gegen Zahnfleischrückgang und Entzündungen zum Schutz des Zahnbetts."
     },
     "allOnX": {
       "title": "FESTE ZÄHNE AN EINEM TAG (ALL-ON-X)",
-      "description": "Modernes chirurgisches Konzept für Sofortimplantate und feste Zähne an nur einem Tag bei zahnlosem Kiefer."
+      "description": "Fortschrittliches chirurgisches Protokoll mit Sofortimplantaten und festsitzendem Zahnersatz in 24 Stunden."
     },
     "surgery": {
-      "title": "MUND-, KIEFER- & GESICHTSCHIRURGIE",
-      "description": "Chirurgische Expertise bei Weisheitszahnentfernungen, Zystenoperationen und Knochenaufbau."
+      "title": "MUND-, KIEFER- UND GESICHTSCHIRURGIE",
+      "description": "Chirurgische Expertise bei Weisheitszahnentfernungen, Zysten und Knochenaufbau."
     }
   }
 }

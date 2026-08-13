@@ -1,80 +1,84 @@
 {
   "title": "Nossos Tratamentos",
-  "subtitle": "Os serviços dentários oferecidos adaptam-se aos mais altos padrões odontológicos e avaliações clínicas individuais.",
-  "metaTitle": "Tratamentos Dentários Abrangentes | Master Smile Studio",
-  "metaDescription": "Mais de 16 especialidades dentárias avançadas com tecnologia de ponta e equipa experiente para a sua saúde oral.",
+  "subtitle": "Serviços odontológicos e procedimentos modernos personalizados após consultas clínicas aprofundadas.",
+  "metaTitle": "Tratamentos Dentários Completos | Master Smile Studio",
+  "metaDescription": "Mais de 16 especialidades odontológicas avançadas com tecnologia de ponta e equipa especializada.",
   "breadcrumbHome": "Início",
   "breadcrumbTreatments": "Tratamentos",
   "pageTitle": "Nossos Tratamentos",
-  "pageSubtitle": "Descubra os detalhes dos nossos tratamentos dentários estéticos e clínicos realizados com tecnologia digital de ponta.",
-  "getAppointmentBtn": "Agendar Consulta & Info",
+  "pageSubtitle": "Conheça detalhadamente as nossas soluções em odontologia estética e clínica com precisão digital.",
+  "getAppointmentBtn": "Agendar Consulta & Informações",
+  "inquireBtn": "Agendar Consulta & Informações",
   "whatsappInquiry": "Olá, gostaria de obter informações detalhadas e agendar uma consulta para o tratamento de {treatment}.",
   "exploreCasesBtn": "Ver Casos Clínicos",
   "casesTitle": "Casos Clínicos",
-  "casesSubtitle": "Examine o planeamento digital de sorrisos antes e depois e as fotografias clínicas dos nossos pacientes.",
+  "casesHeading": "Casos Clínicos",
+  "casesSubtitle": "Acompanhe os resultados antes e depois, o planeamento digital de sorrisos e a fotografia clínica.",
   "prevCase": "Caso Anterior",
-  "nextCase": "Caso Seguinte",
-  "doctorsTitle": "Nossos Médicos & Especialidades",
-  "doctorTulayTitle": "Cirurgiã Oral e Maxilofacial",
+  "nextCase": "Próximo Caso",
+  "doctorsTitle": "Nossos Médicos & Tratamentos",
+  "doctorsHeading": "Nossos Médicos & Tratamentos",
+  "doctorsSubtitle": "Conheça o nosso corpo clínico altamente qualificado.",
+  "doctorTulayTitle": "Cirurgiã Bucomaxilofacial",
   "doctorAliKemalTitle": "Médico Dentista Especialista",
   "doctorAbdullahTitle": "Endodontia e Dentisteria Restauradora",
-  "smileDesign": { "title": "Design do Sorriso", "description": "Design de sorriso digital personalizado de acordo com a proporção áurea facial." },
-  "implant": { "title": "Implantes Dentários", "description": "Implantes de titânio biocompatíveis para uma sensação dental natural e duradoura." },
-  "emax": { "title": "Facetas E-max", "description": "Facetas ultrafinas de porcelana com elevada translucidez natural." },
-  "zirconia": { "title": "Coroas de Zircónia", "description": "Coroas sem metal de alta durabilidade e estética natural impecável." },
-  "whitening": { "title": "Branqueamento Dentário", "description": "Branqueamento a laser clínico profissional rápido e seguro." },
-  "rootCanal": { "title": "Desvitalização (Endodontia)", "description": "Tratamento indolor com microscópio para salvar dentes naturais." },
+  "smileDesign": { "title": "Design de Sorriso", "description": "Design digital de sorriso personalizado de acordo com a proporção áurea facial." },
+  "implant": { "title": "Implantes Dentários", "description": "Implantes de titânio biocompatíveis para uma sensação natural duradoura." },
+  "emax": { "title": "Facetas E-max", "description": "Laminados cerâmicos ultrafinos com máxima translucidez natural." },
+  "zirconia": { "title": "Coroas de Zircónia", "description": "Coroas sem metal com resistência excecional e estética impecável." },
+  "whitening": { "title": "Branqueamento Dentário", "description": "Branqueamento a laser clínico rápido, seguro e eficaz." },
+  "rootCanal": { "title": "Desvitalização", "description": "Preservação dentária indolor guiada por microscópio clínico." },
   "dentures": { "title": "Próteses Dentárias", "description": "Próteses fixas e removíveis confortáveis com aparência natural." },
-  "bonding": { "title": "Bonding Compósito", "description": "Reparação estética em sessão única para dentes fraturados ou espaçados." },
+  "bonding": { "title": "Bonding Composto", "description": "Restauração estética direta para dentes fraturados ou espaçados em 1 sessão." },
   "orthodontics": { "title": "Ortodontia", "description": "Alinhadores transparentes e aparelhos estéticos para um alinhamento perfeito." },
   "items": {
     "smileDesign": {
-      "title": "DESIGN DO SORRISO",
-      "description": "O seu sorriso de sonho através da análise da proporção áurea e arquitetura digital 3D."
+      "title": "DESIGN DE SORRISO",
+      "description": "O sorriso dos seus sonhos planeado através de arquitetura digital 3D e proporção áurea."
     },
     "implant": {
       "title": "IMPLANTES DENTÁRIOS",
-      "description": "Soluções de titânio biocompatíveis que proporcionam sensação natural e conforto duradouro na falta de dentes."
+      "description": "Sistemas de titânio biocompatíveis que devolvem a função mastigatória e o conforto permanente."
     },
     "emax": {
       "title": "FACETAS E-MAX",
-      "description": "Facetas cerâmicas ultrafinas com excelente translucidez aplicadas com mínimo desgaste dentário."
+      "description": "Facetas de cerâmica ultrafinas com acabamento natural aplicadas com desgaste mínimo."
     },
     "zirconia": {
       "title": "COROAS DE ZIRCÓNIA",
-      "description": "Coroas livres de metal com máxima resistência e passagem de luz semelhante ao esmalte natural."
+      "description": "Reabilitações sem metal que combinam extrema resistência mecânica com brilho natural."
     },
     "whitening": {
       "title": "BRANQUEAMENTO DENTÁRIO",
-      "description": "Branqueamento a laser em clínica para clarear de 3 a 4 tons de forma rápida e segura."
+      "description": "Protocolos clínicos a laser seguros que clareiam de 3 a 4 tons numa única sessão."
     },
     "rootCanal": {
       "title": "DESVITALIZAÇÃO (ENDODONTIA)",
-      "description": "Terapia indolor de preservação dentária com instrumentação rotatória e microscopia clínica."
+      "description": "Tratamento conservador indolor realizado com instrumentação rotatória e microscopia."
     },
     "dentures": {
       "title": "PRÓTESES DENTÁRIAS",
-      "description": "Próteses modernas fixas e removíveis que restauram a função mastigatória e estética."
+      "description": "Dispositivos protéticos modernos fixos e removíveis para restauração funcional e estética."
     },
     "bonding": {
-      "title": "BONDING COMPÓSITO",
-      "description": "Correção estética direta de fraturas, diastemas e formato dentário numa única consulta."
+      "title": "BONDING COMPOSTO",
+      "description": "Correções estéticas imediatas para encerramento de diastemas e restauração de pequenas fraturas."
     },
     "bridge": {
       "title": "PONTES DENTÁRIAS",
-      "description": "Pontes apoiadas em dentes vizinhos para fechar espaços dentários com firmeza e beleza."
+      "description": "Estruturas protéticas fixadas em dentes adjacentes para preenchimento estético de espaços vazios."
     },
     "periodontology": {
-      "title": "PERIODONTOLOGIA (TRATAMENTO GENGIVAL)",
-      "description": "Tratamentos especializados para conter sangramento, retração gengival e proteger os tecidos de suporte."
+      "title": "PERIODONTOLOGIA (CUIDADO GENGIVAL)",
+      "description": "Tratamentos avançados para tratar a retração gengival e proteger os tecidos de suporte."
     },
     "allOnX": {
       "title": "DENTES FIXOS NO MESMO DIA (ALL-ON-X)",
-      "description": "Protocolo cirúrgico avançado que permite colocar implantes e dentes fixos no mesmo dia para desdentados totais."
+      "description": "Protocolo cirúrgico imediato para colocação de implantes e prótese fixa provisória em 24 horas."
     },
     "surgery": {
-      "title": "CIRURGIA ORAL E MAXILOFACIAL",
-      "description": "Especialização cirúrgica em extrações de dentes do siso, quistos e enxertos ósseos."
+      "title": "CIRURGIA BUCOMAXILOFACIAL",
+      "description": "Extrações de dentes do siso complexos, remoção de quistos e enxertos ósseos avançados."
     }
   }
 }

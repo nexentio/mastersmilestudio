@@ -142,6 +142,8 @@ export default function ServicesGrid() {
                     src={item.image}
                     alt={title}
                     fill
+                    unoptimized
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     className="card-bg-img"
                     style={{ objectFit: 'cover', zIndex: 0, transition: 'transform 0.4s ease' }}
                   />

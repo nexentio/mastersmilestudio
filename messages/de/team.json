@@ -1,32 +1,44 @@
 {
   "title": "Unser Expertenteam",
-  "subtitle": "Lernen Sie unser hochqualifiziertes zahnärztliches Team kennen, das internationale Standards bietet.",
+  "subtitle": "Lernen Sie unser spezialisiertes Zahnärzteteam kennen, das erstklassige Zahnmedizin nach internationalen Standards bietet.",
   "doc1": {
-    "title": "Prothetiker & Smile Designer",
-    "bio": "Absolvent der Zahnmedizin an der Universität Istanbul. Spezialisiert auf digitale Lächelngestaltung und Keramikrestaurationen mit 14+ Jahren Erfahrung."
+    "title": "Prothetik-Spezialist & Smile Designer",
+    "experience": "14+ Jahre Erfahrung",
+    "bio": "Dr. Fırat İskender hat sich auf Prothetik, digitale Lächelnarchitektur und Keramikrestaurationen spezialisiert."
   },
   "doc2": {
-    "title": "Mund-, Kiefer- und Gesichtschirurg",
-    "bio": "Spezialistin von der Universität Ankara mit über 12 Jahren Erfahrung in All-on-4 / All-on-6 Implantaten und Knochenaufbau."
+    "title": "Smile Design & Ästhetik-Spezialistin",
+    "experience": "12+ Jahre Erfahrung",
+    "bio": "Dr. Tülay Kaya ist spezialisiert auf Keramik-Veneers und ganzheitliches Smile Makeover mit über 12 Jahren Erfahrung."
   },
   "doc3": {
-    "title": "Ästhetische Zahnärztin",
-    "bio": "Absolventin der Ege Universität. Spezialisiert auf hauchdünne Porzellan-Veneers für natürliche Hollywood-Lächeln."
+    "title": "Kieferorthopädie-Spezialist",
+    "experience": "10+ Jahre Erfahrung",
+    "bio": "Dr. Ali Kemal Demir ist zertifizierter Experte für unsichtbare Aligner (Invisalign) und digitale Kieferausrichtung."
   },
   "doc4": {
-    "title": "Chefarzt & Spezialist für Kosmetische Zahnmedizin",
-    "bio": "Absolvent der Universität Hacettepe und Chefarzt im Master Smile Studio. Nach Ausbildungen in London und Zürich leitet er seit 16+ Jahren Lächelnttransformationen."
+    "title": "Mund-, Kiefer- und Gesichtschirurg",
+    "experience": "16+ Jahre Erfahrung",
+    "bio": "Dr. Ozan Öztürk verfügt über mehr als 16 Jahre chirurgische Erfahrung in All-on-4 / All-on-6 Implantationen."
   },
   "doc5": {
-    "title": "Endodontie & Restaurative Zahnmedizin",
-    "bio": "Spezialistin der Marmara Universität für mikroskopgestützte Wurzelkanalbehandlungen und biokompatible Restaurationen."
+    "title": "Restorative & Kosmetische Zahnheilkunde",
+    "experience": "9+ Jahre Erfahrung",
+    "bio": "Dr. Julia Rostova ist Expertin für Komposit-Bonding, Zahnaufhellung und mikroskopgestützte Rekonstruktionen."
   },
   "doc6": {
-    "title": "Kieferorthopäde",
-    "bio": "Spezialist der Gazi Universität für unsichtbare Zahnschienen (Invisalign) und digitale Kieferkorrekturen."
+    "title": "Endodontie-Spezialist",
+    "experience": "11+ Jahre Erfahrung",
+    "bio": "Dr. Abdullah Yılmaz ist spezialisiert auf moderne Mikroskop-Wurzelkanalbehandlungen und Zahnerhalt."
   },
   "doc7": {
-    "title": "Parodontologie & Zahnfleischästhetik",
-    "bio": "Spezialistin der Yeditepe Universität mit 8 Jahren Erfahrung in Rosa Ästhetik und Parodontaltherapie."
+    "title": "Parodontologie & Rosa Ästhetik",
+    "experience": "8+ Jahre Erfahrung",
+    "bio": "Dr. Selin Aksoy ist spezialisiert auf lasergestützte Zahnfleischkorrekturen und Gingivoplastik."
+  },
+  "doc8": {
+    "title": "Kinderzahnheilkunde",
+    "experience": "9+ Jahre Erfahrung",
+    "bio": "Dr. Burak Çelik ist spezialisiert auf vorbeugende Kinderzahnheilkunde und angstfreie Behandlungen."
   }
 }

@@ -1,11 +1,13 @@
 'use client';
 
 import React, { useState } from 'react';
-import Link from 'next/link';
-import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/routing';
+import { useTranslations, useLocale } from 'next-intl';
+import { getWhatsAppLink } from '@/config/site';
 
 export default function Footer() {
   const t = useTranslations('footer');
+  const locale = useLocale();
 
   const [email, setEmail] = useState('');
   const [agreed, setAgreed] = useState(false);
@@ -21,21 +23,21 @@ export default function Footer() {
   };
 
   const treatmentsList = [
-    { label: t('treatmentZirconium'), href: '/#treatments' },
-    { label: t('treatmentEmax'), href: '/#treatments' },
-    { label: t('treatmentImplant'), href: '/#treatments' },
-    { label: t('treatmentHollywood'), href: '/#treatments' },
-    { label: t('treatmentWhitening'), href: '/#treatments' },
-    { label: t('treatmentSurgery'), href: '/#treatments' },
+    { label: t('treatmentZirconium'), href: '/treatments' },
+    { label: t('treatmentEmax'), href: '/treatments' },
+    { label: t('treatmentImplant'), href: '/treatments' },
+    { label: t('treatmentHollywood'), href: '/treatments' },
+    { label: t('treatmentWhitening'), href: '/treatments' },
+    { label: t('treatmentSurgery'), href: '/treatments' },
   ];
 
   const supportList = [
-    { label: t('supportProcess'), href: '/#faq' },
+    { label: t('supportProcess'), href: '/#treatment-process' },
     { label: t('supportTourism'), href: '/#faq' },
-    { label: t('supportReviews'), href: '/#faq' },
+    { label: t('supportReviews'), href: '/#patients' },
     { label: t('supportFaq'), href: '/#faq' },
-    { label: t('supportContact'), href: '/#faq' },
-    { label: t('supportWhatsapp'), href: 'https://wa.me/905346963163' },
+    { label: t('supportContact'), href: '/contact' },
+    { label: t('supportWhatsapp'), href: getWhatsAppLink(locale), isExternal: true },
   ];
 
   const corporateList = [
@@ -44,7 +46,7 @@ export default function Footer() {
     { label: t('corpRooms'), href: '/about' },
     { label: t('corpTech'), href: '/about' },
     { label: t('corpCertificates'), href: '/about' },
-    { label: t('corpBlog'), href: '/about' },
+    { label: t('corpBlog'), href: '/#blog' },
   ];
 
   const legalList = [
@@ -55,6 +57,48 @@ export default function Footer() {
     { label: t('legalCookies'), href: '/#cookies' },
     { label: t('legalTerms'), href: '/#terms' },
   ];
+
+  const renderLinkItem = (item: { label: string; href: string; isExternal?: boolean }, idx: number) => {
+    if (item.isExternal || item.href.startsWith('http')) {
+      return (
+        <li key={idx}>
+          <a
+            href={item.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              fontSize: '0.95rem',
+              color: '#f8fafc',
+              textDecoration: 'none',
+              transition: 'color 0.2s ease',
+              fontWeight: 400,
+            }}
+            className="footer-nav-link"
+          >
+            {item.label}
+          </a>
+        </li>
+      );
+    }
+
+    return (
+      <li key={idx}>
+        <Link
+          href={item.href}
+          style={{
+            fontSize: '0.95rem',
+            color: '#f8fafc',
+            textDecoration: 'none',
+            transition: 'color 0.2s ease',
+            fontWeight: 400,
+          }}
+          className="footer-nav-link"
+        >
+          {item.label}
+        </Link>
+      </li>
+    );
+  };
 
   return (
     <footer
@@ -103,23 +147,7 @@ export default function Footer() {
               {t('colTreatmentsTitle')}
             </div>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.9rem' }}>
-              {treatmentsList.map((item, idx) => (
-                <li key={idx}>
-                  <Link
-                    href={item.href}
-                    style={{
-                      fontSize: '0.95rem',
-                      color: '#f8fafc',
-                      textDecoration: 'none',
-                      transition: 'color 0.2s ease',
-                      fontWeight: 400,
-                    }}
-                    className="footer-nav-link"
-                  >
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
+              {treatmentsList.map(renderLinkItem)}
             </ul>
           </div>
 
@@ -137,23 +165,7 @@ export default function Footer() {
               {t('colSupportTitle')}
             </div>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.9rem' }}>
-              {supportList.map((item, idx) => (
-                <li key={idx}>
-                  <Link
-                    href={item.href}
-                    style={{
-                      fontSize: '0.95rem',
-                      color: '#f8fafc',
-                      textDecoration: 'none',
-                      transition: 'color 0.2s ease',
-                      fontWeight: 400,
-                    }}
-                    className="footer-nav-link"
-                  >
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
+              {supportList.map(renderLinkItem)}
             </ul>
           </div>
 
@@ -171,23 +183,7 @@ export default function Footer() {
               {t('colCorporateTitle')}
             </div>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.9rem' }}>
-              {corporateList.map((item, idx) => (
-                <li key={idx}>
-                  <Link
-                    href={item.href}
-                    style={{
-                      fontSize: '0.95rem',
-                      color: '#f8fafc',
-                      textDecoration: 'none',
-                      transition: 'color 0.2s ease',
-                      fontWeight: 400,
-                    }}
-                    className="footer-nav-link"
-                  >
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
+              {corporateList.map(renderLinkItem)}
             </ul>
           </div>
 
@@ -205,23 +201,7 @@ export default function Footer() {
               {t('colLegalTitle')}
             </div>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.9rem' }}>
-              {legalList.map((item, idx) => (
-                <li key={idx}>
-                  <Link
-                    href={item.href}
-                    style={{
-                      fontSize: '0.95rem',
-                      color: '#f8fafc',
-                      textDecoration: 'none',
-                      transition: 'color 0.2s ease',
-                      fontWeight: 400,
-                    }}
-                    className="footer-nav-link"
-                  >
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
+              {legalList.map(renderLinkItem)}
             </ul>
           </div>
         </div>

@@ -2,33 +2,10 @@
 
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
+import { BLOG_CARDS } from '@/data/blog';
 
 export default function BlogSection() {
   const t = useTranslations('blog');
-
-  const blogCards = [
-    {
-      id: 'post1',
-      title: t('card1Title'),
-      description: t('card1Desc'),
-      image: '/e-max-lamine-treatment-mss.jpeg',
-      imageHeight: '520px', // Tallest left card
-    },
-    {
-      id: 'post2',
-      title: t('card2Title'),
-      description: t('card2Desc'),
-      image: '/dental-implant-mss.jpeg',
-      imageHeight: '340px', // Shorter middle card
-    },
-    {
-      id: 'post3',
-      title: t('card3Title'),
-      description: t('card3Desc'),
-      image: '/smile-makeover.jpg',
-      imageHeight: '440px', // Medium right card
-    },
-  ];
 
   return (
     <section
@@ -90,113 +67,126 @@ export default function BlogSection() {
               <span
                 style={{
                   fontStyle: 'italic',
+                  fontFamily: 'serif',
                   fontWeight: 400,
-                  color: '#64748b',
+                  fontSize: 'clamp(2.5rem, 4.5vw, 3.25rem)',
+                  color: '#0f172a',
                 }}
               >
                 {t('headingItalic')}
-              </span>
+              </span>{' '}
+              {t('headingSub')}
             </h2>
-
-            <p
-              style={{
-                fontSize: '0.95rem',
-                color: '#475569',
-                lineHeight: 1.5,
-                marginTop: '1rem',
-                marginBottom: 0,
-                fontWeight: 400,
-              }}
-            >
-              {t('subtitle')}
-            </p>
           </div>
         </div>
 
-        {/* 3-Column Asymmetric Staggered Blog Cards Grid */}
+        {/* 3 Asymmetric Vertical Image Cards Grid */}
         <div
           style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
             gap: '2rem',
-            alignItems: 'flex-start',
+            alignItems: 'start', // Allows differing heights to sit naturally
           }}
         >
-          {blogCards.map((card) => (
-            <div
-              key={card.id}
-              style={{
-                display: 'flex',
-                flexDirection: 'column',
-                cursor: 'pointer',
-              }}
-              className="blog-asymmetric-card"
-            >
-              {/* Rounded Image Container with Staggered Height */}
-              <div
-                style={{
-                  width: '100%',
-                  height: card.imageHeight,
-                  borderRadius: '24px',
-                  overflow: 'hidden',
-                  position: 'relative',
-                  boxShadow: '0 10px 30px rgba(0, 0, 0, 0.05)',
-                  transition: 'transform 0.35s cubic-bezier(0.25, 1, 0.5, 1)',
-                }}
-                className="blog-img-frame"
-              >
-                <Image
-                  src={card.image}
-                  alt={card.title}
-                  fill
-                  unoptimized
-                  style={{
-                    objectFit: 'cover',
-                    objectPosition: 'center',
-                    transition: 'transform 0.5s ease',
-                  }}
-                  className="blog-card-img"
-                />
-              </div>
+          {BLOG_CARDS.map((card) => {
+            const title = t(card.titleKey as any);
+            const description = t(card.descKey as any);
 
-              {/* Text Portion directly below the image */}
-              <div style={{ marginTop: '1.25rem', paddingRight: '0.5rem' }}>
-                <h3
+            return (
+              <article
+                key={card.id}
+                style={{
+                  display: 'flex',
+                  flexDirection: 'column',
+                  gap: '1.25rem',
+                }}
+                className="blog-article-card"
+              >
+                {/* Image Container with Dynamic Height */}
+                <div
                   style={{
-                    fontSize: '1.35rem',
-                    fontWeight: 600,
-                    color: '#0f172a',
-                    lineHeight: 1.25,
-                    letterSpacing: '-0.02em',
-                    margin: '0 0 0.35rem 0',
+                    position: 'relative',
+                    width: '100%',
+                    height: card.imageHeight,
+                    borderRadius: '24px',
+                    overflow: 'hidden',
+                    backgroundColor: '#e2e8f0',
+                    boxShadow: '0 10px 25px rgba(0, 0, 0, 0.05)',
                   }}
                 >
-                  {card.title}
-                </h3>
-                <p
-                  style={{
-                    fontSize: '0.95rem',
-                    color: '#64748b',
-                    lineHeight: 1.5,
-                    margin: 0,
-                    fontWeight: 400,
-                  }}
-                >
-                  {card.description}
-                </p>
-              </div>
-            </div>
-          ))}
+                  <Image
+                    src={card.image}
+                    alt={title}
+                    fill
+                    unoptimized
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    style={{
+                      objectFit: 'cover',
+                      transition: 'transform 0.4s ease',
+                    }}
+                    className="blog-card-img"
+                  />
+                </div>
+
+                {/* Text Content */}
+                <div>
+                  <h3
+                    style={{
+                      fontSize: '1.25rem',
+                      fontWeight: 600,
+                      color: '#0f172a',
+                      margin: '0 0 0.5rem 0',
+                      letterSpacing: '-0.02em',
+                      lineHeight: 1.3,
+                    }}
+                  >
+                    {title}
+                  </h3>
+
+                  <p
+                    style={{
+                      fontSize: '0.95rem',
+                      color: '#475569',
+                      lineHeight: 1.55,
+                      margin: '0 0 1rem 0',
+                      fontWeight: 400,
+                    }}
+                  >
+                    {description}
+                  </p>
+
+                  <a
+                    href="#contact"
+                    style={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '0.35rem',
+                      fontSize: '0.9rem',
+                      fontWeight: 600,
+                      color: '#d97706',
+                      textDecoration: 'none',
+                      transition: 'gap 0.2s ease',
+                    }}
+                    className="blog-read-link"
+                  >
+                    <span>{t('readMore')}</span>
+                    <span>→</span>
+                  </a>
+                </div>
+              </article>
+            );
+          })}
         </div>
       </div>
 
       <style jsx global>{`
-        .blog-asymmetric-card:hover .blog-img-frame {
-          transform: translateY(-6px);
-          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12) !important;
+        .blog-article-card:hover .blog-card-img {
+          transform: scale(1.04);
         }
-        .blog-asymmetric-card:hover .blog-card-img {
-          transform: scale(1.05);
+        .blog-article-card:hover .blog-read-link {
+          gap: 0.6rem !important;
+          color: '#b45309' !important;
         }
       `}</style>
     </section>

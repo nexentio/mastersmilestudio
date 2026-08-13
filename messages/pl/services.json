@@ -1,80 +1,84 @@
 {
   "title": "Nasze Zabiegi",
-  "subtitle": "Oferowane usługi stomatologiczne są dostosowane do najnowszych standardów medycznych i indywidualnej diagnozy.",
-  "metaTitle": "Kompleksowe Zabiegi Stomatologiczne | Master Smile Studio",
-  "metaDescription": "Ponad 16 zaawansowanych dziedzin stomatologii z wykorzystaniem nowoczesnych technologii i doświadczonych specjalistów.",
+  "subtitle": "Usługi stomatologiczne i nowoczesne procedury dostosowane na podstawie indywidualnych konsultacji klinicznych.",
+  "metaTitle": "Kompleksowe Leczenie Stomatologiczne | Master Smile Studio",
+  "metaDescription": "Ponad 16 zaawansowanych dziedzin leczenia stomatologicznego prowadzonych przez zespół specjalistów z użyciem nowoczesnych technologii.",
   "breadcrumbHome": "Strona Główna",
   "breadcrumbTreatments": "Zabiegi",
   "pageTitle": "Nasze Zabiegi",
-  "pageSubtitle": "Poznaj szczegóły naszych estetycznych i klinicznych zabiegów stomatologicznych wykonywanych przy użyciu nowoczesnych technologii cyfrowych.",
-  "getAppointmentBtn": "Umów Konsultację & Info",
-  "whatsappInquiry": "Dzień dobry, chciał(a)bym uzyskać szczegółowe informacje i umówić wizytę na zabieg {treatment}.",
+  "pageSubtitle": "Poznaj szczegóły naszych estetycznych i klinicznych zabiegów stomatologicznych realizowanych z cyfrową precyzją.",
+  "getAppointmentBtn": "Umów Konsultację i Uzyskaj Informacje",
+  "inquireBtn": "Umów Konsultację i Uzyskaj Informacje",
+  "whatsappInquiry": "Dzień dobry, chciał(a)bym uzyskać szczegółowe informacje i umówić wizytę na zabieg: {treatment}.",
   "exploreCasesBtn": "Zobacz Przypadki Kliniczne",
   "casesTitle": "Przypadki Kliniczne",
-  "casesSubtitle": "Zobacz efekty cyfrowego projektowania uśmiechu przed i po leczeniu oraz zdjęcia kliniczne naszych pacjentów.",
+  "casesHeading": "Przypadki Kliniczne",
+  "casesSubtitle": "Zobacz rezultaty przed i po, cyfrowe projektowanie uśmiechu oraz zdjęcia kliniczne naszych pacjentów.",
   "prevCase": "Poprzedni Przypadek",
   "nextCase": "Następny Przypadek",
   "doctorsTitle": "Nasi Lekarze i Specjalizacje",
-  "doctorTulayTitle": "Chirurg Szczękowo-Twarzowy i Stomatologiczny",
+  "doctorsHeading": "Nasi Lekarze i Specjalizacje",
+  "doctorsSubtitle": "Poznaj nasz doświadczony zespół lekarzy stomatologów.",
+  "doctorTulayTitle": "Chirurg Szczękowo-Twarzowy",
   "doctorAliKemalTitle": "Lekarz Stomatolog Specjalista",
   "doctorAbdullahTitle": "Endodoncja i Stomatologia Odtwórcza",
-  "smileDesign": { "title": "Projektowanie Uśmiechu", "description": "Cyfrowy projekt uśmiechu dopasowany do indywidualnych proporcji twarzy." },
-  "implant": { "title": "Implanty Zębowe", "description": "Biokompatybilne implanty tytanowe dające uczucie własnych zębów na całe życie." },
-  "emax": { "title": "Licówki E-max", "description": "Ultra cienkie licówki porcelanowe o naturalnej przepuszczalności światła." },
+  "smileDesign": { "title": "Projektowanie Uśmiechu", "description": "Cyfrowy projekt uśmiechu dopasowany do złotej proporcji twarzy." },
+  "implant": { "title": "Implanty Stomatologiczne", "description": "Biokompatybilne implanty tytanowe zapewniające naturalny komfort na całe życie." },
+  "emax": { "title": "Licówki E-max", "description": "Ultra cienkie licówki porcelanowe o maksymalnej przezierności światła." },
   "zirconia": { "title": "Korony Cyrkonowe", "description": "Bezmetalowe korony o wyjątkowej trwałości i naturalnej estetyce." },
-  "whitening": { "title": "Wybielanie Zębów", "description": "Bezpieczne i szybkie profesjonalne laserowe wybielanie w gabinecie." },
-  "rootCanal": { "title": "Leczenie Kanałowe", "description": "Bezbolesne ratowanie zębów pod mikroskopem stomatologicznym." },
-  "dentures": { "title": "Protezy Zębowe", "description": "Komfortowe, naturalnie wyglądające protezy stałe i ruchome." },
-  "bonding": { "title": "Bonding Kompozytowy", "description": "Estetyczna naprawa ukruszeń i przerw między zębami podczas jednej wizyty." },
-  "orthodontics": { "title": "Ortodoncja", "description": "Niewidoczne nakładki i aparaty estetyczne dla idealnie prostych zębów." },
+  "whitening": { "title": "Wybielanie Zębów", "description": "Bezpieczne kliniczne wybielanie laserowe w krótkim czasie." },
+  "rootCanal": { "title": "Leczenie Kanałowe", "description": "Bezbolesne ratowanie zębów pod mikroskopem." },
+  "dentures": { "title": "Protezy Zębowe", "description": "Wygodne protezy stałe i ruchome o naturalnym wyglądzie." },
+  "bonding": { "title": "Bonding Kompozytowy", "description": "Estetyczna odbudowa wyszczerbionych lub rozstawionych zębów podczas jednej wizyty." },
+  "orthodontics": { "title": "Ortodoncja", "description": "Niewidoczne nakładki i estetyczne aparaty dla idealnie prostych zębów." },
   "items": {
     "smileDesign": {
       "title": "PROJEKTOWANIE UŚMIECHU",
-      "description": "Twój wymarzony estetyczny uśmiech dzięki analizie złotego podziału i cyfrowej architekturze 3D."
+      "description": "Twój wymarzony uśmiech dzięki trójwymiarowej analizie cyfrowej i zasadom złotego podziału."
     },
     "implant": {
-      "title": "IMPLANTY ZĘBOWE",
-      "description": "Biokompatybilne implanty tytanowe gwarantujące dożywotni komfort i naturalne odczucie brakujących zębów."
+      "title": "IMPLANTY STOMATOLOGICZNE",
+      "description": "Biokompatybilne implanty tytanowe przywracające pełną funkcję żucia i naturalny wygląd."
     },
     "emax": {
       "title": "LICÓWKI E-MAX",
-      "description": "Ultra cienkie licówki porcelanowe o wysokiej przezierności nakładane przy minimalnej preparacji zęba."
+      "description": "Ultra cienkie licówki ceramiczne o naturalnej przezierności nakładane przy minimalnej preparacji."
     },
     "zirconia": {
       "title": "KORONY CYRKONOWE",
-      "description": "Bezmetalowe korony o maksymalnej wytrzymałości i przepuszczalności światła zbliżonej do naturalnego szkliwa."
+      "description": "Uzupełnienia bezmetalowe o najwyższej odporności na pęknięcia i naturalnej głębi optycznej."
     },
     "whitening": {
       "title": "WYBIELANIE ZĘBÓW",
-      "description": "Profesjonalne gabinetowe wybielanie laserowe rozjaśniające zęby o 3–4 odcienie w krótkim czasie."
+      "description": "Profesjonalne gabinetowe wybielanie laserowe rozjaśniające zęby o 3–4 odcienie."
     },
     "rootCanal": {
       "title": "LECZENIE KANAŁOWE",
-      "description": "Bezbolesna terapia ratowania naturalnych zębów przy użyciu mikroskopu i narzędzi maszynowych."
+      "description": "Bezbolesna terapia ratująca zęby z użyciem mikroskopu i narzędzi maszynowych."
     },
     "dentures": {
       "title": "PROTEZY ZĘBOWE",
-      "description": "Nowoczesne protezy stałe i ruchome przywracające pełną funkcję żucia oraz piękny wygląd."
+      "description": "Nowoczesne protezy stałe i ruchome przywracające funkcję i estetykę zgryzu."
     },
     "bonding": {
       "title": "BONDING KOMPOZYTOWY",
-      "description": "Estetyczne usuwanie pęknięć, przerw (diastem) i nierówności zębów podczas jednej wizyty."
+      "description": "Szybka estetyczna korekta diastem, ukruszeń i drobnych nierówności w 1 wizytę."
     },
     "bridge": {
-      "title": "MOSTY ZĘBOWE",
-      "description": "Mosty wsparte na sąsiednich zębach, które trwale i estetycznie uzupełniają brakujące zęby."
+      "title": "MOSTKI STOMATOLOGICZNE",
+      "description": "Trwałe uzupełnienia protetyczne oparte na sąsiednich zębach zamykające luki zębowe."
     },
     "periodontology": {
-      "title": "PERIODONTOLOGIA (LECZENIE DZIĄSEŁ)",
-      "description": "Specjalistyczne leczenie krwawienia, recesji dziąseł i ochrona tkanek przyzębia."
+      "title": "PERIODONTOLOGIA (ZDROWIE DZIĄSEŁ)",
+      "description": "Specjalistyczne terapie zwalczające cofanie się dziąseł i chroniące tkanki przyzębia."
     },
     "allOnX": {
       "title": "ZĘBY W JEDEN DZIEŃ (ALL-ON-X)",
-      "description": "Zaawansowany protokół chirurgiczny umożliwiający implantację i stałe zęby w jeden dzień."
+      "description": "Zaawansowany protokół chirurgiczny umożliwiający natychmiastowe założenie mostu na implantach w 24h."
     },
     "surgery": {
       "title": "CHIRURGIA STOMATOLOGICZNA",
-      "description": "Doświadczenie w ekstrakcji zatrzymanych ósemek, usuwaniu torbieli oraz odbudowie kości."
+      "description": "Ekstrakcje zębów ósmych, zabiegi usuwania torbieli oraz odbudowa kości."
     }
   }
 }

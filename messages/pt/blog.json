@@ -1,12 +1,14 @@
 {
-  "leftDesc": "Descubra os mais recentes guias clínicos, conselhos de saúde oral, implantes e estética dentária dos especialistas da Master Smile Studio.",
+  "leftDesc": "Descubra os guias clínicos mais recentes, conselhos de saúde oral, implantes e medicina dentária estética dos especialistas do Master Smile Studio.",
   "headingMain": "Explore Our Clinical",
   "headingItalic": "Insights",
-  "subtitle": "Saúde Oral, Tratamentos Estéticos e Recomendações Especializadas",
+  "headingSub": "and Stories",
+  "subtitle": "Saúde Oral, Tratamentos Estéticos e Conselhos de Especialistas",
+  "readMore": "Ler Artigo",
   "card1Title": "Design Tips",
   "card1Desc": "Recomendações clínicas para um design de sorriso saudável, natural e harmonioso.",
   "card2Title": "Brand Stories",
-  "card2Desc": "Etapas completas de tratamento para facetas de porcelana, lentes de contacto e zircónia.",
+  "card2Desc": "Etapas de tratamento para facetas de porcelana, laminados e coroas de zircónia.",
   "card3Title": "Creative Notes",
-  "card3Desc": "Guia de implantes digitais guiados e métodos de recuperação rápida e confortável."
+  "card3Desc": "Guia de implantes digitais sem suturas e processos de cicatrização rápida."
 }

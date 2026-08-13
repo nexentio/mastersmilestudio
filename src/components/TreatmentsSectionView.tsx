@@ -4,69 +4,7 @@ import React, { useRef } from 'react';
 import Image from 'next/image';
 import { useTranslations, useLocale } from 'next-intl';
 import { getWhatsAppLink } from '@/config/site';
-
-const treatmentKeys = [
-  { key: 'smileDesign', image: '/smile-makeover.jpg' },
-  { key: 'implant', image: '/dental-implant-mss.jpeg' },
-  { key: 'emax', image: '/e-max-lamine-treatment-mss.jpeg' },
-  { key: 'zirconia', image: '/transformations/t1.jpg' },
-  { key: 'whitening', image: '/teeth-whiting-treatment.jpeg' },
-  { key: 'rootCanal', image: '/transformations/t4.jpg' },
-  { key: 'dentures', image: '/transformations/t3.jpg' },
-  { key: 'bonding', image: '/transformations/t5.jpg' },
-  { key: 'bridge', image: '/transformations/t6.jpg' },
-  { key: 'periodontology', image: '/transformations/t2.jpg' },
-  { key: 'allOnX', image: '/dental-implant-mss.jpeg' },
-  { key: 'surgery', image: '/smile-between-section.png' },
-] as const;
-
-const caseStudies = [
-  {
-    id: 'case-img-1',
-    src: '/mastersmilestudio_1781430682_3919246906335743176_70887948899.jpg',
-    alt: 'Master Smile Studio Full Mouth Case 1',
-  },
-  {
-    id: 'case-img-2',
-    src: '/mastersmilestudio_1783158972_3933743875695538963_70887948899.jpg',
-    alt: 'Master Smile Studio Zirconia Case 2',
-  },
-  {
-    id: 'case-img-3',
-    src: '/mastersmilestudio_1784098986_3941630290953391467_70887948899.jpg',
-    alt: 'Master Smile Studio Hollywood Smile Case 3',
-  },
-  {
-    id: 'case-img-4',
-    src: '/mastersmilestudio_1784465233_3944702579575983298_70887948899.jpg',
-    alt: 'Master Smile Studio E-Max Veneers Case 4',
-  },
-  {
-    id: 'case-img-5',
-    src: '/smile-makeover.jpg',
-    alt: 'Master Smile Studio Smile Makeover Case 5',
-  },
-  {
-    id: 'case-img-6',
-    src: '/e-max-lamine-treatment-mss.jpeg',
-    alt: 'Master Smile Studio E-Max Laminates Case 6',
-  },
-  {
-    id: 'case-img-7',
-    src: '/dental-implant-mss.jpeg',
-    alt: 'Master Smile Studio Dental Implant Case 7',
-  },
-  {
-    id: 'case-img-8',
-    src: '/teeth-whiting-treatment.jpeg',
-    alt: 'Master Smile Studio Teeth Whitening Case 8',
-  },
-  {
-    id: 'case-img-9',
-    src: '/smile-between-section.png',
-    alt: 'Master Smile Studio Aesthetic Smile Case 9',
-  },
-];
+import { TREATMENT_KEYS, TREATMENT_CASE_STUDIES, TREATMENT_DOCTORS } from '@/data/treatments';
 
 export default function TreatmentsSectionView({ locale: propsLocale }: { locale?: string }) {
   const t = useTranslations('services');
@@ -84,24 +22,6 @@ export default function TreatmentsSectionView({ locale: propsLocale }: { locale?
     }
   };
 
-  const doctors = [
-    {
-      name: 'Dr. Tülay Kaya',
-      title: t('doctorTulayTitle'),
-      image: '/team/tulay.webp',
-    },
-    {
-      name: 'Dr. Ali Kemal Demir',
-      title: t('doctorAliKemalTitle'),
-      image: '/team/ali-kemal.webp',
-    },
-    {
-      name: 'Dr. Abdullah Yılmaz',
-      title: t('doctorAbdullahTitle'),
-      image: '/team/abdullah.webp',
-    },
-  ];
-
   return (
     <div style={{ width: '100%', overflow: 'hidden' }}>
       {/* 1. Main Unified 12 Treatment Cards Grid */}
@@ -114,7 +34,7 @@ export default function TreatmentsSectionView({ locale: propsLocale }: { locale?
             marginBottom: '4rem',
           }}
         >
-          {treatmentKeys.map((item) => {
+          {TREATMENT_KEYS.map((item) => {
             const title = t(`items.${item.key}.title` as any);
             const description = t(`items.${item.key}.description` as any);
             const whatsappMsg = t('whatsappInquiry', { treatment: title });
@@ -141,47 +61,79 @@ export default function TreatmentsSectionView({ locale: propsLocale }: { locale?
                     alt={title}
                     fill
                     unoptimized
-                    style={{ objectFit: 'cover', objectPosition: 'center' }}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    style={{ objectFit: 'cover', transition: 'transform 0.5s ease' }}
+                    className="treatment-card-img"
                   />
+                  <div
+                    style={{
+                      position: 'absolute',
+                      top: '1rem',
+                      right: '1rem',
+                      backgroundColor: 'rgba(15, 23, 42, 0.85)',
+                      backdropFilter: 'blur(8px)',
+                      color: '#FFA552',
+                      padding: '0.35rem 0.75rem',
+                      borderRadius: '9999px',
+                      fontSize: '0.75rem',
+                      fontWeight: 600,
+                      letterSpacing: '0.03em',
+                    }}
+                  >
+                    Master Smile
+                  </div>
                 </div>
 
-                {/* Lower Info Text */}
-                <div style={{ padding: '1.5rem', display: 'flex', flexDirection: 'column', flex: 1, justifyContent: 'space-between' }}>
-                  <div>
-                    <h4
-                      style={{
-                        fontSize: '1rem',
-                        fontWeight: 500,
-                        color: '#0f172a',
-                        letterSpacing: '0.03em',
-                        margin: '0 0 0.5rem 0',
-                        textTransform: 'uppercase',
-                      }}
-                    >
-                      {title}
-                    </h4>
-                    <p style={{ fontSize: '0.85rem', color: '#64748b', lineHeight: 1.55, margin: 0, fontWeight: 300 }}>
-                      {description}
-                    </p>
-                  </div>
+                {/* Lower Content Box */}
+                <div style={{ padding: '1.75rem', display: 'flex', flexDirection: 'column', flex: 1 }}>
+                  <h3
+                    style={{
+                      fontSize: '1.35rem',
+                      fontWeight: 400,
+                      color: '#0f172a',
+                      marginBottom: '0.75rem',
+                      letterSpacing: '-0.02em',
+                      lineHeight: 1.25,
+                    }}
+                  >
+                    {title}
+                  </h3>
 
-                  <div style={{ marginTop: '1.25rem' }}>
+                  <p
+                    style={{
+                      fontSize: '0.92rem',
+                      color: '#64748b',
+                      lineHeight: 1.6,
+                      fontWeight: 300,
+                      margin: '0 0 1.5rem 0',
+                    }}
+                  >
+                    {description}
+                  </p>
+
+                  <div style={{ marginTop: 'auto' }}>
                     <a
                       href={getWhatsAppLink(locale, whatsappMsg)}
                       target="_blank"
                       rel="noopener noreferrer"
                       style={{
-                        display: 'inline-flex',
+                        display: 'flex',
                         alignItems: 'center',
-                        gap: '0.45rem',
-                        fontSize: '0.85rem',
+                        justifyContent: 'center',
+                        gap: '0.5rem',
+                        width: '100%',
+                        backgroundColor: '#0f172a',
+                        color: '#ffffff',
+                        padding: '0.85rem',
+                        borderRadius: '12px',
+                        fontSize: '0.9rem',
                         fontWeight: 400,
-                        color: '#d97706',
                         textDecoration: 'none',
-                        transition: 'transform 0.2s ease',
+                        transition: 'all 0.2s ease',
                       }}
+                      className="treatment-inquire-btn"
                     >
-                      <span>{t('getAppointmentBtn')}</span>
+                      <span>{t('inquireBtn')}</span>
                       <span>→</span>
                     </a>
                   </div>
@@ -190,235 +142,231 @@ export default function TreatmentsSectionView({ locale: propsLocale }: { locale?
             );
           })}
         </div>
-
-        {/* Center Action Button */}
-        <div style={{ textAlign: 'center' }}>
-          <a
-            href="#cases"
-            style={{
-              display: 'inline-flex',
-              alignItems: 'center',
-              gap: '0.5rem',
-              backgroundColor: '#ffffff',
-              border: '1.5px solid #e2e8f0',
-              color: '#0f172a',
-              padding: '0.75rem 2rem',
-              borderRadius: '9999px',
-              fontSize: '0.85rem',
-              fontWeight: 400,
-              letterSpacing: '0.06em',
-              textTransform: 'uppercase',
-              textDecoration: 'none',
-              boxShadow: '0 2px 10px rgba(0, 0, 0, 0.04)',
-              transition: 'all 0.2s ease',
-            }}
-          >
-            <span>{t('exploreCasesBtn')}</span>
-            <span>↓</span>
-          </a>
-        </div>
       </div>
 
-      {/* 2. Middle Section: KLİNİK VAKA İNCELEMELERİ (True 100% Full-Bleed Container) */}
-      <section
-        id="cases"
+      {/* 2. Before & After Case Studies Carousel Section */}
+      <div
         style={{
-          width: '100%',
-          backgroundColor: '#f8fafc',
-          borderTop: '1px solid #e2e8f0',
-          borderBottom: '1px solid #e2e8f0',
-          padding: '4.5rem 0 5.5rem 0',
-          marginBottom: '5rem',
+          backgroundColor: '#09090b',
+          color: '#ffffff',
+          padding: '6rem 1.5rem',
           position: 'relative',
         }}
       >
-        {/* Section Header Row */}
-        <div
-          style={{
-            maxWidth: '1280px',
-            margin: '0 auto 2.5rem auto',
-            padding: '0 1.5rem',
-            display: 'flex',
-            alignItems: 'flex-end',
-            justifyContent: 'space-between',
-            flexWrap: 'wrap',
-            gap: '1.5rem',
-          }}
-        >
-          <div>
-            <h3
-              style={{
-                fontSize: 'clamp(1.75rem, 3.5vw, 2.35rem)',
-                fontWeight: 300,
-                color: '#0f172a',
-                letterSpacing: '-0.03em',
-                margin: '0 0 0.25rem 0',
-              }}
-            >
-              {t('casesTitle')}
-            </h3>
+        <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
+          {/* Section Header with Carousel Navigation Buttons */}
+          <div
+            style={{
+              display: 'flex',
+              alignItems: 'flex-end',
+              justifyContent: 'space-between',
+              marginBottom: '3rem',
+              flexWrap: 'wrap',
+              gap: '1.5rem',
+            }}
+          >
+            <div>
+              <span
+                style={{
+                  fontSize: '0.8rem',
+                  fontWeight: 600,
+                  color: '#FFA552',
+                  letterSpacing: '0.08em',
+                  textTransform: 'uppercase',
+                  display: 'block',
+                  marginBottom: '0.5rem',
+                }}
+              >
+                Master Smile Studio
+              </span>
+              <h2
+                style={{
+                  fontSize: 'clamp(2rem, 3.5vw, 2.75rem)',
+                  fontWeight: 300,
+                  color: '#ffffff',
+                  letterSpacing: '-0.03em',
+                  margin: 0,
+                }}
+              >
+                {t('casesHeading')}
+              </h2>
+            </div>
+
+            {/* Arrows */}
+            <div style={{ display: 'flex', gap: '0.75rem' }}>
+              <button
+                onClick={() => handleScroll('left')}
+                aria-label="Scroll Carousel Left"
+                style={{
+                  width: '44px',
+                  height: '44px',
+                  borderRadius: '50%',
+                  backgroundColor: '#18181b',
+                  border: '1px solid #27272a',
+                  color: '#ffffff',
+                  fontSize: '1.2rem',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  cursor: 'pointer',
+                  transition: 'all 0.2s ease',
+                }}
+              >
+                ←
+              </button>
+              <button
+                onClick={() => handleScroll('right')}
+                aria-label="Scroll Carousel Right"
+                style={{
+                  width: '44px',
+                  height: '44px',
+                  borderRadius: '50%',
+                  backgroundColor: '#FFA552',
+                  border: 'none',
+                  color: '#0f172a',
+                  fontSize: '1.2rem',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  cursor: 'pointer',
+                  transition: 'all 0.2s ease',
+                }}
+              >
+                →
+              </button>
+            </div>
           </div>
 
-          <div style={{ maxWidth: '440px', textAlign: 'right' }}>
-            <p style={{ fontSize: '0.9rem', color: '#64748b', lineHeight: 1.5, margin: 0, fontWeight: 300 }}>
-              {t('casesSubtitle')}
-            </p>
-          </div>
-        </div>
-
-        {/* 100% Full-Bleed Edge-to-Edge Carousel Track Container */}
-        <div style={{ position: 'relative', width: '100%' }}>
-          {/* Left Arrow Button */}
-          <button
-            onClick={() => handleScroll('left')}
-            style={{
-              position: 'absolute',
-              left: '1.5rem',
-              top: '50%',
-              transform: 'translateY(-50%)',
-              width: '52px',
-              height: '52px',
-              borderRadius: '50%',
-              backgroundColor: 'rgba(15, 23, 42, 0.9)',
-              color: '#ffffff',
-              border: '1.5px solid rgba(255, 255, 255, 0.2)',
-              cursor: 'pointer',
-              zIndex: 10,
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              fontSize: '1.5rem',
-              boxShadow: '0 10px 25px rgba(0, 0, 0, 0.3)',
-              backdropFilter: 'blur(8px)',
-              transition: 'all 0.2s ease',
-            }}
-            aria-label={t('prevCase')}
-          >
-            ‹
-          </button>
-
-          {/* Right Arrow Button */}
-          <button
-            onClick={() => handleScroll('right')}
-            style={{
-              position: 'absolute',
-              right: '1.5rem',
-              top: '50%',
-              transform: 'translateY(-50%)',
-              width: '52px',
-              height: '52px',
-              borderRadius: '50%',
-              backgroundColor: 'rgba(15, 23, 42, 0.9)',
-              color: '#ffffff',
-              border: '1.5px solid rgba(255, 255, 255, 0.2)',
-              cursor: 'pointer',
-              zIndex: 10,
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              fontSize: '1.5rem',
-              boxShadow: '0 10px 25px rgba(0, 0, 0, 0.3)',
-              backdropFilter: 'blur(8px)',
-              transition: 'all 0.2s ease',
-            }}
-            aria-label={t('nextCase')}
-          >
-            ›
-          </button>
-
-          {/* 100% Width Scrollable Track with Edge-to-Edge Fluid Padding */}
+          {/* Carousel Track */}
           <div
             ref={carouselRef}
             style={{
               display: 'flex',
-              gap: '1.75rem',
+              gap: '1.5rem',
               overflowX: 'auto',
               scrollSnapType: 'x mandatory',
-              padding: '0.5rem 2rem 1.5rem 2rem',
               scrollbarWidth: 'none',
-              width: '100%',
+              paddingBottom: '1rem',
             }}
           >
-            {caseStudies.map((cs) => (
+            {TREATMENT_CASE_STUDIES.map((study) => (
               <div
-                key={cs.id}
+                key={study.id}
                 style={{
                   flex: '0 0 360px',
-                  height: '360px',
-                  borderRadius: '24px',
-                  overflow: 'hidden',
+                  height: '440px',
                   position: 'relative',
+                  borderRadius: '20px',
+                  overflow: 'hidden',
                   scrollSnapAlign: 'start',
-                  backgroundColor: '#121215',
-                  boxShadow: '0 12px 32px rgba(0, 0, 0, 0.16)',
                   border: '1px solid rgba(255, 255, 255, 0.1)',
-                  transition: 'transform 0.3s ease',
+                  boxShadow: '0 10px 30px rgba(0, 0, 0, 0.4)',
                 }}
-                className="case-study-card"
               >
                 <Image
-                  src={cs.src}
-                  alt={cs.alt}
+                  src={study.src}
+                  alt={study.alt}
                   fill
                   unoptimized
+                  sizes="360px"
                   style={{ objectFit: 'cover' }}
                 />
+                <div
+                  style={{
+                    position: 'absolute',
+                    inset: 0,
+                    background: 'linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.1) 60%, transparent 100%)',
+                  }}
+                />
+                <div
+                  style={{
+                    position: 'absolute',
+                    bottom: '1.5rem',
+                    left: '1.5rem',
+                    right: '1.5rem',
+                  }}
+                >
+                  <span
+                    style={{
+                      backgroundColor: '#d97706',
+                      color: '#ffffff',
+                      fontSize: '0.75rem',
+                      fontWeight: 600,
+                      padding: '0.25rem 0.65rem',
+                      borderRadius: '6px',
+                      display: 'inline-block',
+                      marginBottom: '0.5rem',
+                    }}
+                  >
+                    Clinical Case
+                  </span>
+                  <div style={{ fontSize: '1rem', fontWeight: 300, color: '#f1f5f9' }}>
+                    Master Smile Studio Result
+                  </div>
+                </div>
               </div>
             ))}
           </div>
         </div>
-      </section>
+      </div>
 
-      {/* 3. Bottom Section: Doctors (Constrained to 1280px) */}
-      <section style={{ maxWidth: '1280px', margin: '0 auto', textAlign: 'center', padding: '0 1.5rem 6rem 1.5rem' }}>
-        <h3
-          style={{
-            fontSize: 'clamp(1.75rem, 3.5vw, 2.35rem)',
-            fontWeight: 300,
-            color: '#0f172a',
-            letterSpacing: '-0.03em',
-            marginBottom: '3rem',
-          }}
-        >
-          {t('doctorsTitle')}
-        </h3>
+      {/* 3. Expert Doctors Section */}
+      <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '6rem 1.5rem 4rem 1.5rem' }}>
+        <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
+          <h2
+            style={{
+              fontSize: 'clamp(2rem, 3.5vw, 2.75rem)',
+              fontWeight: 300,
+              color: '#0f172a',
+              letterSpacing: '-0.03em',
+              margin: '0 0 0.75rem 0',
+            }}
+          >
+            {t('doctorsHeading')}
+          </h2>
+          <p
+            style={{
+              fontSize: '1rem',
+              color: '#64748b',
+              margin: 0,
+              fontWeight: 300,
+            }}
+          >
+            {t('doctorsSubtitle')}
+          </p>
+        </div>
 
-        {/* 3 Doctor Pill Cards Grid */}
         <div
           style={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            gap: '2.5rem',
-            flexWrap: 'wrap',
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+            gap: '2rem',
           }}
         >
-          {doctors.map((doc) => (
+          {TREATMENT_DOCTORS.map((doc, idx) => (
             <div
-              key={doc.name}
+              key={idx}
               style={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: '1.25rem',
                 backgroundColor: '#ffffff',
-                border: '1.5px solid #e2e8f0',
-                borderRadius: '9999px',
-                padding: '0.75rem 1.75rem 0.75rem 0.75rem',
-                boxShadow: '0 4px 16px rgba(0, 0, 0, 0.04)',
-                textAlign: 'left',
+                borderRadius: '20px',
+                border: '1px solid #e2e8f0',
+                padding: '2rem 1.5rem',
+                textAlign: 'center',
+                boxShadow: '0 4px 16px rgba(0, 0, 0, 0.03)',
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
               }}
             >
-              {/* Doctor Avatar */}
               <div
                 style={{
-                  position: 'relative',
-                  width: '64px',
-                  height: '64px',
+                  width: '120px',
+                  height: '120px',
                   borderRadius: '50%',
                   overflow: 'hidden',
-                  backgroundColor: '#09090b',
-                  flexShrink: 0,
-                  border: '2px solid #FFA552',
+                  position: 'relative',
+                  marginBottom: '1.25rem',
+                  border: '3px solid #ffedd5',
                 }}
               >
                 <Image
@@ -426,23 +374,19 @@ export default function TreatmentsSectionView({ locale: propsLocale }: { locale?
                   alt={doc.name}
                   fill
                   unoptimized
-                  style={{ objectFit: 'cover', objectPosition: 'top' }}
+                  style={{ objectFit: 'cover' }}
                 />
               </div>
-
-              {/* Doctor Info */}
-              <div>
-                <h4 style={{ fontSize: '1rem', fontWeight: 400, color: '#0f172a', margin: '0 0 0.15rem 0' }}>
-                  {doc.name}
-                </h4>
-                <p style={{ fontSize: '0.85rem', color: '#64748b', margin: 0, fontWeight: 300 }}>
-                  {doc.title}
-                </p>
+              <h3 style={{ fontSize: '1.2rem', fontWeight: 400, color: '#0f172a', margin: '0 0 0.35rem 0' }}>
+                {doc.name}
+              </h3>
+              <div style={{ fontSize: '0.875rem', color: '#64748b', fontWeight: 300 }}>
+                {t(doc.titleKey as any)}
               </div>
             </div>
           ))}
         </div>
-      </section>
+      </div>
     </div>
   );
 }

@@ -4,81 +4,8 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import { useTranslations, useLocale } from 'next-intl';
 import { getWhatsAppLink } from '@/config/site';
-
-interface GalleryItem {
-  id: string;
-  category: string;
-  name: string;
-  shade: string;
-  hasQuote?: boolean;
-  icons?: string[];
-  beforeImage: string;
-  afterImage: string;
-  portraitImage: string;
-}
-
-const rawGalleryData: GalleryItem[] = [
-  {
-    id: 'case1',
-    category: 'zirconium',
-    name: 'Deniz Kaya',
-    shade: 'OM1',
-    icons: ['Crowns', 'Implants', 'Whitening', 'Veneers'],
-    beforeImage: '/transformations/t1.jpg',
-    afterImage: '/transformations/t1.jpg',
-    portraitImage: '/patients/patient-2.jpeg',
-  },
-  {
-    id: 'case2',
-    category: 'emax',
-    name: 'Kerem Öztürk',
-    shade: 'OM1',
-    hasQuote: true,
-    beforeImage: '/transformations/t2.jpg',
-    afterImage: '/transformations/t2.jpg',
-    portraitImage: '/patients/patient-4.jpeg',
-  },
-  {
-    id: 'case3',
-    category: 'implant',
-    name: 'Deniz Kaya',
-    shade: 'OM1',
-    hasQuote: true,
-    beforeImage: '/transformations/t3.jpg',
-    afterImage: '/transformations/t3.jpg',
-    portraitImage: '/patients/patient-1.jpeg',
-  },
-  {
-    id: 'case4',
-    category: 'zirconium',
-    name: 'Deniz Kaya',
-    shade: 'OM1',
-    icons: ['Crowns', 'Implants', 'Whitening', 'Veneers'],
-    beforeImage: '/transformations/t4.jpg',
-    afterImage: '/transformations/t4.jpg',
-    portraitImage: '/patients/patient-3.jpeg',
-  },
-  {
-    id: 'case5',
-    category: 'makeover',
-    name: 'Elif Aydın',
-    shade: 'OM1',
-    icons: ['Crowns', 'Implants', 'Whitening', 'Veneers'],
-    beforeImage: '/transformations/t5.jpg',
-    afterImage: '/transformations/t5.jpg',
-    portraitImage: '/patients/patient-5.jpeg',
-  },
-  {
-    id: 'case6',
-    category: 'whitening',
-    name: 'Elif Aydın',
-    shade: 'OM1',
-    icons: ['Crowns', 'Implants', 'Whitening'],
-    beforeImage: '/transformations/t6.jpg',
-    afterImage: '/transformations/t6.jpg',
-    portraitImage: '/patients/patient-6.jpeg',
-  },
-];
+import { GALLERY_ITEMS } from '@/data/gallery';
+import { SelectedGalleryModal } from '@/types';
 
 export default function GalleryGrid({ locale: propsLocale }: { locale?: string }) {
   const t = useTranslations('gallery');
@@ -86,14 +13,7 @@ export default function GalleryGrid({ locale: propsLocale }: { locale?: string }
   const locale = propsLocale || contextLocale || 'tr';
 
   const [activeCategory, setActiveCategory] = useState('all');
-  const [selectedCase, setSelectedCase] = useState<{
-    id: string;
-    name: string;
-    treatment: string;
-    shade: string;
-    beforeImage: string;
-    portraitImage: string;
-  } | null>(null);
+  const [selectedCase, setSelectedCase] = useState<SelectedGalleryModal | null>(null);
 
   const categories = [
     { id: 'all', label: t('categories.all') },
@@ -105,8 +25,8 @@ export default function GalleryGrid({ locale: propsLocale }: { locale?: string }
   ];
 
   const filteredItems = activeCategory === 'all'
-    ? rawGalleryData
-    : rawGalleryData.filter((item) => item.category === activeCategory);
+    ? GALLERY_ITEMS
+    : GALLERY_ITEMS.filter((item) => item.category === activeCategory);
 
   return (
     <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 1.5rem 6rem 1.5rem' }}>
@@ -164,7 +84,7 @@ export default function GalleryGrid({ locale: propsLocale }: { locale?: string }
         {/* Left Half: Dark Media Box */}
         <div
           style={{
-            backgroundColor: '#121215',
+            backgroundColor: '#121214',
             padding: '1.75rem',
             position: 'relative',
             display: 'grid',
@@ -447,7 +367,7 @@ export default function GalleryGrid({ locale: propsLocale }: { locale?: string }
                         borderRadius: '4px',
                       }}
                     >
-                      {t('before')}
+                      {t('after')}
                     </span>
                   </div>
                 </div>

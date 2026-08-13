@@ -1,80 +1,84 @@
 {
   "title": "Our Treatments",
-  "subtitle": "Offered dental services are shaped in line with dentistry practices and clinical evaluations.",
+  "subtitle": "Dental services and modern procedures tailored through detailed clinical consultations.",
   "metaTitle": "Comprehensive Dental Treatments | Master Smile Studio",
-  "metaDescription": "16+ advanced dental treatment branches offered with state-of-the-art technologies and specialist teams for your oral health.",
+  "metaDescription": "Explore over 16 advanced dental treatment disciplines delivered by specialist teams using state-of-the-art technology.",
   "breadcrumbHome": "Home",
-  "breadcrumbTreatments": "Our Treatments",
+  "breadcrumbTreatments": "Treatments",
   "pageTitle": "Our Treatments",
-  "pageSubtitle": "Explore the details of our aesthetic and clinical dental treatments performed with clinical expertise and cutting-edge digital technologies.",
+  "pageSubtitle": "Explore the full spectrum of our clinical and cosmetic dentistry solutions backed by digital precision and decades of expertise.",
   "getAppointmentBtn": "Book Consultation & Info",
-  "whatsappInquiry": "Hello, I would like to get detailed information and an appointment for {treatment} treatment.",
+  "inquireBtn": "Book Consultation & Info",
+  "whatsappInquiry": "Hello, I would like to get detailed information and book an appointment for {treatment}.",
   "exploreCasesBtn": "Explore Clinical Cases",
   "casesTitle": "Clinical Case Studies",
-  "casesSubtitle": "Examine before-and-after digital smile designs and clinical photographs of our valued patients.",
+  "casesHeading": "Clinical Case Studies",
+  "casesSubtitle": "Examine our before-and-after digital smile designs, clinical photography, and transformational patient journeys.",
   "prevCase": "Previous Case",
   "nextCase": "Next Case",
-  "doctorsTitle": "Our Doctors & Specialties",
-  "doctorTulayTitle": "Oral, Dental & Maxillofacial Surgeon",
+  "doctorsTitle": "Our Doctors & Treatments",
+  "doctorsHeading": "Our Doctors & Treatments",
+  "doctorsSubtitle": "Meet the experienced dental specialists leading our clinical operations.",
+  "doctorTulayTitle": "Oral & Maxillofacial Surgeon",
   "doctorAliKemalTitle": "Specialist Dentist",
-  "doctorAbdullahTitle": "Endodontics & Restorative Dentistry",
-  "smileDesign": { "title": "Smile Design", "description": "Custom digital smile design tailored to your facial proportions." },
-  "implant": { "title": "Dental Implants", "description": "Long-lasting titanium implants providing a natural tooth feel." },
-  "emax": { "title": "E-max Laminates", "description": "Ultra-thin porcelain veneers with high light translucency." },
-  "zirconia": { "title": "Zirconia Crowns", "description": "Highly durable zirconia crowns offering natural aesthetics." },
-  "whitening": { "title": "Teeth Whitening", "description": "Safe and fast professional laser whitening treatment." },
-  "rootCanal": { "title": "Root Canal Treatment", "description": "Painless microscope-assisted tooth preservation therapy." },
-  "dentures": { "title": "Dental Prosthetics", "description": "Comfortable, natural-looking fixed and removable dentures." },
-  "bonding": { "title": "Composite Bonding", "description": "Single-visit aesthetic repair of chipped or spaced teeth." },
-  "orthodontics": { "title": "Orthodontics", "description": "Clear aligners and aesthetic braces for perfectly straight teeth." },
+  "doctorAbdullahTitle": "Endodontics & Restorative Dentist",
+  "smileDesign": { "title": "Smile Design", "description": "Custom digital smile architecture tailored to facial golden proportions." },
+  "implant": { "title": "Dental Implants", "description": "Lifelong biocompatible titanium implant solutions offering a natural tooth feel." },
+  "emax": { "title": "E-max Veneers", "description": "Ultra-thin porcelain laminates with maximum natural light translucency." },
+  "zirconia": { "title": "Zirconia Crowns", "description": "Metal-free, exceptionally durable crowns with natural aesthetics." },
+  "whitening": { "title": "Teeth Whitening", "description": "Safe, clinic-grade laser whitening achieving multiple shades brighter." },
+  "rootCanal": { "title": "Root Canal Treatment", "description": "Painless microscopic natural tooth preservation and endodontic care." },
+  "dentures": { "title": "Dentures & Prosthetics", "description": "Comfortable, natural-looking fixed and removable prosthetics." },
+  "bonding": { "title": "Composite Bonding", "description": "Same-day cosmetic enhancement for chipped, spaced, or irregular teeth." },
+  "orthodontics": { "title": "Orthodontics", "description": "Clear aligners and modern aesthetic brackets for flawless alignment." },
   "items": {
     "smileDesign": {
       "title": "SMILE DESIGN",
-      "description": "Your dream aesthetic smile crafted with custom golden ratio analysis and 3D digital smile architecture."
+      "description": "Your dream aesthetic smile crafted via 3D digital facial architecture and golden ratio principles."
     },
     "implant": {
       "title": "DENTAL IMPLANTS",
-      "description": "Tissue-friendly titanium implants offering lifelong comfort and a genuine natural tooth feel for missing teeth."
+      "description": "Biocompatible titanium implant systems restoring lost teeth with permanent strength and natural comfort."
     },
     "emax": {
       "title": "E-MAX VENEERS",
-      "description": "Ultra-thin, high-translucency aesthetic porcelain veneers applied with minimal tooth preparation."
+      "description": "Ultra-thin, highly translucent ceramic laminates applied with minimal preparation for lifelike beauty."
     },
     "zirconia": {
       "title": "ZIRCONIA CROWNS",
-      "description": "Metal-free dental crowns providing maximum durability and natural light transmission closest to enamel."
+      "description": "Metal-free restorations offering superior fracture resistance and optical depth mirroring natural enamel."
     },
     "whitening": {
       "title": "TEETH WHITENING",
-      "description": "Professional clinic-grade laser whitening safely providing 3-4 shades of brightness in a short time."
+      "description": "Safe, in-office laser whitening protocols brightening teeth by 3–4 shades in a single appointment."
     },
     "rootCanal": {
       "title": "ROOT CANAL TREATMENT",
-      "description": "Painless natural tooth rescue therapy performed with advanced rotary equipment and dental microscopy."
+      "description": "Painless tooth-saving therapy performed with advanced rotary instrumentation and magnification."
     },
     "dentures": {
       "title": "DENTAL PROSTHETICS",
-      "description": "Modern fixed and removable prostheses restoring chewing function and aesthetics in partial or full tooth loss."
+      "description": "Precision fixed and removable prosthetic appliances restoring full chewing performance and aesthetics."
     },
     "bonding": {
       "title": "COMPOSITE BONDING",
-      "description": "Aesthetic composite applications resolving fractures, gaps, and shape irregularities in a single visit."
+      "description": "Single-visit aesthetic corrections resolving gaps, chips, and tooth discolorations seamlessly."
     },
     "bridge": {
       "title": "DENTAL BRIDGES",
-      "description": "Bridge systems supported by adjacent teeth to seamlessly and durably close dental gaps."
+      "description": "Stable tooth replacement systems anchored to adjacent teeth for durable aesthetics."
     },
     "periodontology": {
       "title": "PERIODONTOLOGY (GUM CARE)",
-      "description": "Specialized gum therapies preserving the health of surrounding oral tissues and treating gum recession and bleeding."
+      "description": "Specialized therapies combating gum recession, inflammation, and safeguarding supporting tissues."
     },
     "allOnX": {
       "title": "SAME-DAY TEETH (ALL-ON-X)",
-      "description": "Advanced surgical protocol enabling implants and fixed provisional teeth in a single day for edentulous jaws."
+      "description": "Advanced surgical full-arch protocol providing immediate implants and fixed temporary teeth in 24 hours."
     },
     "surgery": {
       "title": "ORAL & MAXILLOFACIAL SURGERY",
-      "description": "Surgical expertise in impacted wisdom tooth extractions, cyst removals, and bone augmentation procedures."
+      "description": "Surgical expertise in wisdom tooth removal, cyst management, and advanced bone grafting."
     }
   }
 }

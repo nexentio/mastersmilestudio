@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
+import { PROCESS_STEPS } from '@/data/process';
 
 export default function TreatmentProcessSection() {
   const t = useTranslations('process');
@@ -10,38 +11,8 @@ export default function TreatmentProcessSection() {
   const [activeStep, setActiveStep] = useState<number>(1);
   const [isVideoModalOpen, setIsVideoModalOpen] = useState<boolean>(false);
 
-  const stepDetails = [
-    {
-      id: 1,
-      num: '1',
-      title: t('step1.title'),
-      sub: t('step1.subtitle'),
-      desc: t('step1.content'),
-    },
-    {
-      id: 2,
-      num: '2',
-      title: t('step2.title'),
-      sub: t('step2.subtitle'),
-      desc: t('step2.content'),
-    },
-    {
-      id: 3,
-      num: '3',
-      title: t('step3.title'),
-      sub: t('step3.subtitle'),
-      desc: t('step3.content'),
-    },
-    {
-      id: 4,
-      num: '4',
-      title: t('step4.title'),
-      sub: t('step4.subtitle'),
-      desc: t('step4.content'),
-    },
-  ];
-
-  const currentStep = stepDetails.find((s) => s.id === activeStep) || stepDetails[0];
+  const currentStepConfig = PROCESS_STEPS.find((s) => s.id === activeStep) || PROCESS_STEPS[0];
+  const currentStepDesc = t(`${currentStepConfig.key}.content` as any);
 
   return (
     <section
@@ -99,16 +70,11 @@ export default function TreatmentProcessSection() {
               {t('subtitle')}
             </p>
 
-            {/* Step Selection List */}
-            <div
-              style={{
-                display: 'flex',
-                flexDirection: 'column',
-                gap: '1.75rem',
-              }}
-            >
-              {stepDetails.map((step) => {
+            {/* 4 Interactive Step Buttons */}
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+              {PROCESS_STEPS.map((step) => {
                 const isActive = activeStep === step.id;
+                const stepTitle = t(`${step.key}.title` as any);
 
                 return (
                   <div
@@ -131,7 +97,7 @@ export default function TreatmentProcessSection() {
                     </span>
                     <span style={{ fontSize: '1.25rem', fontWeight: 300, color: '#cbd5e1', lineHeight: 1 }}>/</span>
                     <span style={{ fontSize: '1.125rem', fontWeight: 500, color: '#0f172a', lineHeight: 1.2 }}>
-                      {step.title}
+                      {stepTitle}
                     </span>
                   </div>
                 );
@@ -157,7 +123,7 @@ export default function TreatmentProcessSection() {
                 minHeight: '80px',
               }}
             >
-              {currentStep.desc}
+              {currentStepDesc}
             </p>
 
             <a
@@ -218,18 +184,16 @@ export default function TreatmentProcessSection() {
                     width: '64px',
                     height: '64px',
                     borderRadius: '50%',
-                    backgroundColor: 'rgba(255, 255, 255, 0.75)',
-                    backdropFilter: 'blur(8px)',
+                    backgroundColor: '#ffffff',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
-                    color: '#0f172a',
-                    boxShadow: '0 8px 24px rgba(0, 0, 0, 0.2)',
-                    transition: 'transform 0.3s ease',
+                    boxShadow: '0 4px 20px rgba(0, 0, 0, 0.25)',
+                    transition: 'transform 0.25s ease',
                   }}
-                  className="play-icon-badge"
+                  className="play-icon-bubble"
                 >
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="#0f172a" style={{ marginLeft: '3px' }}>
                     <polygon points="5 3 19 12 5 21 5 3" />
                   </svg>
                 </div>
@@ -238,305 +202,141 @@ export default function TreatmentProcessSection() {
           </div>
         </div>
 
-        {/* Bottom Row: 2 Feature Cards (Left Emoji Orange Card | Right Light Off-White Card with Photo) */}
+        {/* Bottom Feature Cards Grid (4 Clean Process Pillars) */}
         <div
           style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))',
             gap: '2rem',
-            alignItems: 'stretch',
+            borderTop: '1px solid #f1f5f9',
+            paddingTop: '3.5rem',
           }}
         >
-          {/* Card 1: Lighter Emoji Orange Pastel Card */}
-          <div
-            style={{
-              background: 'linear-gradient(135deg, #FFF2E5 0%, #FFE5CA 50%, #FFD8AF 100%)',
-              borderRadius: '24px',
-              padding: '2.5rem',
-              color: '#0f172a',
-              display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'space-between',
-              minHeight: '380px',
-              boxShadow: '0 10px 30px rgba(255, 165, 82, 0.12)',
-              border: '1.5px solid #ffedd5',
-              position: 'relative',
-            }}
-          >
-            {/* Top Area: Vertical Badge & Title Vertically Centered */}
-            <div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '1.25rem', marginBottom: '1.5rem' }}>
-                <div
-                  style={{
-                    backgroundColor: 'rgba(15, 23, 42, 0.15)',
-                    color: '#0f172a',
-                    fontSize: '0.75rem',
-                    fontWeight: 700,
-                    letterSpacing: '0.06em',
-                    padding: '0.75rem 0.45rem',
-                    borderRadius: '9999px',
-                    writingMode: 'vertical-rl',
-                    transform: 'rotate(180deg)',
-                    textTransform: 'uppercase',
-                    flexShrink: 0,
-                  }}
-                >
-                  {t('card1Badge')}
-                </div>
-
-                <h3
-                  style={{
-                    fontSize: '1.65rem',
-                    fontWeight: 600,
-                    color: '#0f172a',
-                    lineHeight: 1.25,
-                    letterSpacing: '-0.02em',
-                    margin: 0,
-                    textTransform: 'uppercase',
-                  }}
-                >
-                  {t('card1Title')}
-                </h3>
-              </div>
-
-              {/* Text Paragraph */}
-              <p
-                style={{
-                  fontSize: '1rem',
-                  color: '#1e293b',
-                  lineHeight: 1.6,
-                  margin: 0,
-                  fontWeight: 400,
-                }}
-              >
-                {t('card1Desc')}
-              </p>
-            </div>
-
-            {/* Action CTA Button */}
-            <div style={{ marginTop: '2rem' }}>
-              <a
-                href="#contact"
-                style={{
-                  display: 'inline-flex',
-                  alignItems: 'center',
-                  gap: '0.5rem',
-                  backgroundColor: '#0f172a',
-                  color: '#ffffff',
-                  padding: '0.9rem 1.75rem',
-                  borderRadius: '14px',
-                  fontWeight: 600,
-                  fontSize: '0.95rem',
-                  textDecoration: 'none',
-                  boxShadow: '0 4px 16px rgba(15, 23, 42, 0.2)',
-                  transition: 'all 0.25s ease',
-                }}
-                className="process-card-btn"
-              >
-                <span>{t('card1Btn')}</span>
-                <span>→</span>
-              </a>
-            </div>
+          {/* Pillar 1 */}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.65rem' }}>
+            <span style={{ fontSize: '0.875rem', fontWeight: 700, color: '#d97706', letterSpacing: '0.04em' }}>
+              01. {t('step1.subtitle')}
+            </span>
+            <h3 style={{ fontSize: '1.25rem', fontWeight: 600, color: '#0f172a', margin: 0 }}>
+              {t('step1.title')}
+            </h3>
+            <p style={{ fontSize: '0.925rem', color: '#64748b', lineHeight: 1.6, margin: 0, fontWeight: 400 }}>
+              {t('step1.content')}
+            </p>
           </div>
 
-          {/* Card 2: Light Off-White Card with Right Side Doctor Photo */}
-          <div
-            style={{
-              backgroundColor: '#fffdfa',
-              border: '1.5px solid #ffedd5',
-              borderRadius: '24px',
-              padding: '2.5rem',
-              color: '#0f172a',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'space-between',
-              gap: '1.75rem',
-              minHeight: '380px',
-              boxShadow: '0 8px 30px rgba(255, 165, 82, 0.08)',
-              position: 'relative',
-              flexWrap: 'wrap',
-            }}
-          >
-            {/* Left Content Area inside Card 2 */}
-            <div
-              style={{
-                flex: '1 1 240px',
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'space-between',
-                height: '100%',
-              }}
-            >
-              <div>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '1.25rem', marginBottom: '1.5rem' }}>
-                  <div
-                    style={{
-                      backgroundColor: '#FFA552',
-                      color: '#0f172a',
-                      fontSize: '0.75rem',
-                      fontWeight: 700,
-                      letterSpacing: '0.06em',
-                      padding: '0.75rem 0.45rem',
-                      borderRadius: '9999px',
-                      writingMode: 'vertical-rl',
-                      transform: 'rotate(180deg)',
-                      textTransform: 'uppercase',
-                      flexShrink: 0,
-                    }}
-                  >
-                    {t('card2Badge')}
-                  </div>
+          {/* Pillar 2 */}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.65rem' }}>
+            <span style={{ fontSize: '0.875rem', fontWeight: 700, color: '#d97706', letterSpacing: '0.04em' }}>
+              02. {t('step2.subtitle')}
+            </span>
+            <h3 style={{ fontSize: '1.25rem', fontWeight: 600, color: '#0f172a', margin: 0 }}>
+              {t('step2.title')}
+            </h3>
+            <p style={{ fontSize: '0.925rem', color: '#64748b', lineHeight: 1.6, margin: 0, fontWeight: 400 }}>
+              {t('step2.content')}
+            </p>
+          </div>
 
-                  <h3
-                    style={{
-                      fontSize: '1.65rem',
-                      fontWeight: 600,
-                      color: '#0f172a',
-                      lineHeight: 1.25,
-                      letterSpacing: '-0.02em',
-                      margin: 0,
-                      textTransform: 'uppercase',
-                    }}
-                  >
-                    {t('card2Title')}
-                  </h3>
-                </div>
+          {/* Pillar 3 */}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.65rem' }}>
+            <span style={{ fontSize: '0.875rem', fontWeight: 700, color: '#d97706', letterSpacing: '0.04em' }}>
+              03. {t('step3.subtitle')}
+            </span>
+            <h3 style={{ fontSize: '1.25rem', fontWeight: 600, color: '#0f172a', margin: 0 }}>
+              {t('step3.title')}
+            </h3>
+            <p style={{ fontSize: '0.925rem', color: '#64748b', lineHeight: 1.6, margin: 0, fontWeight: 400 }}>
+              {t('step3.content')}
+            </p>
+          </div>
 
-                <p
-                  style={{
-                    fontSize: '1rem',
-                    color: '#475569',
-                    lineHeight: 1.6,
-                    margin: 0,
-                    fontWeight: 400,
-                  }}
-                >
-                  {t('card2Desc')}
-                </p>
-              </div>
-
-              {/* Action CTA Button */}
-              <div style={{ marginTop: '2rem' }}>
-                <a
-                  href="#contact"
-                  style={{
-                    display: 'inline-flex',
-                    alignItems: 'center',
-                    gap: '0.5rem',
-                    backgroundColor: '#FFA552',
-                    color: '#0f172a',
-                    padding: '0.9rem 1.75rem',
-                    borderRadius: '14px',
-                    fontWeight: 600,
-                    fontSize: '0.95rem',
-                    textDecoration: 'none',
-                    boxShadow: '0 4px 16px rgba(255, 165, 82, 0.25)',
-                    transition: 'all 0.25s ease',
-                  }}
-                  className="process-card-btn"
-                >
-                  <span>{t('card2Btn')}</span>
-                  <span>→</span>
-                </a>
-              </div>
-            </div>
-
-            {/* Right Side Doctor Portrait Photo Frame */}
-            <div
-              style={{
-                flex: '0 0 220px',
-                height: '300px',
-                borderRadius: '20px',
-                overflow: 'hidden',
-                position: 'relative',
-                boxShadow: '0 10px 25px rgba(0, 0, 0, 0.1)',
-              }}
-            >
-              <Image
-                src="/team/dr-ozan-ozturk.jpg"
-                alt="Master Smile Studio Specialist"
-                fill
-                unoptimized
-                style={{
-                  objectFit: 'cover',
-                  objectPosition: 'top center',
-                }}
-              />
-            </div>
+          {/* Pillar 4 */}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.65rem' }}>
+            <span style={{ fontSize: '0.875rem', fontWeight: 700, color: '#d97706', letterSpacing: '0.04em' }}>
+              04. {t('step4.subtitle')}
+            </span>
+            <h3 style={{ fontSize: '1.25rem', fontWeight: 600, color: '#0f172a', margin: 0 }}>
+              {t('step4.title')}
+            </h3>
+            <p style={{ fontSize: '0.925rem', color: '#64748b', lineHeight: 1.6, margin: 0, fontWeight: 400 }}>
+              {t('step4.content')}
+            </p>
           </div>
         </div>
       </div>
 
-      {/* Video Tour Modal */}
+      {/* Video Lightbox Modal */}
       {isVideoModalOpen && (
         <div
-          onClick={() => setIsVideoModalOpen(false)}
           style={{
             position: 'fixed',
             inset: 0,
-            zIndex: 99999,
-            backgroundColor: 'rgba(15, 23, 42, 0.85)',
-            backdropFilter: 'blur(10px)',
+            backgroundColor: 'rgba(0, 0, 0, 0.85)',
+            backdropFilter: 'blur(8px)',
+            zIndex: 9999,
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
             padding: '1.5rem',
           }}
+          onClick={() => setIsVideoModalOpen(false)}
         >
           <div
-            onClick={(e) => e.stopPropagation()}
             style={{
               position: 'relative',
               width: '100%',
               maxWidth: '900px',
               aspectRatio: '16/9',
               backgroundColor: '#000000',
-              borderRadius: '24px',
+              borderRadius: '20px',
               overflow: 'hidden',
-              boxShadow: '0 25px 60px rgba(0, 0, 0, 0.5)',
+              boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.75)',
             }}
+            onClick={(e) => e.stopPropagation()}
           >
+            {/* Close Button */}
             <button
               onClick={() => setIsVideoModalOpen(false)}
               style={{
                 position: 'absolute',
                 top: '1rem',
                 right: '1rem',
-                zIndex: 10,
-                backgroundColor: 'rgba(255, 255, 255, 0.2)',
-                color: '#ffffff',
+                backgroundColor: 'rgba(0, 0, 0, 0.6)',
                 border: 'none',
+                color: '#ffffff',
                 width: '40px',
                 height: '40px',
                 borderRadius: '50%',
                 cursor: 'pointer',
-                fontSize: '1.2rem',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
+                fontSize: '1.25rem',
+                zIndex: 10,
               }}
             >
               ✕
             </button>
-            <iframe
-              src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?autoplay=1"
-              title="Master Smile Studio Tour"
+
+            {/* Video Player */}
+            <video
+              src="/dental-implant-treatment.mp4"
+              controls
+              autoPlay
               style={{
                 width: '100%',
                 height: '100%',
-                border: 'none',
+                objectFit: 'cover',
               }}
-              allow="autoplay; encrypted-media"
-              allowFullScreen
             />
           </div>
         </div>
       )}
 
       <style jsx global>{`
-        .video-thumb-card:hover .play-icon-badge {
-          transform: scale(1.15);
-          background-color: #ffffff !important;
+        .video-thumb-card:hover .play-icon-bubble {
+          transform: scale(1.12);
         }
       `}</style>
     </section>

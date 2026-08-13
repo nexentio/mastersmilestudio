@@ -31,7 +31,7 @@ export default function Header() {
     { label: t('navigation.about'), href: '/about' },
     { label: t('navigation.treatments'), href: '/treatments' },
     { label: t('navigation.gallery'), href: '/gallery' },
-    { label: t('navigation.contact'), href: '/#contact' },
+    { label: t('navigation.contact'), href: '/contact' },
   ];
 
   return (

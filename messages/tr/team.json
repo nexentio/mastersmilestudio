@@ -3,30 +3,42 @@
   "subtitle": "Ağız ve diş sağlığınız için uluslararası standartlarda hizmet sunan, alanında uzman diş hekimi kadromuz ile tanışın.",
   "doc1": {
     "title": "Protez Uzmanı & Gülüş Tasarımcısı",
-    "bio": "İstanbul Üniversitesi Diş Hekimliği Fakültesi’nden dereceyle mezun olan Dr. Mehmet Yılmaz, Protetik Diş Tedavisi alanında uzmanlaşmıştır. Dijital gülüş tasarımı ve seramik restorasyonlarda 14 yılı aşkın tecrübeye sahiptir."
+    "experience": "14+ Yıl Deneyim",
+    "bio": "İstanbul Üniversitesi Diş Hekimliği Fakültesi’nden dereceyle mezun olan Dr. Fırat İskender, Protetik Diş Tedavisi alanında uzmanlaşmıştır. Dijital gülüş tasarımı ve seramik restorasyonlarda 14 yılı aşkın tecrübeye sahiptir."
   },
   "doc2": {
-    "title": "Ağız, Diş ve Çene Cerrahı",
-    "bio": "Ankara Üniversitesi Ağız, Diş ve Çene Cerrahısı Uzmanı Dr. Ayşe Kaya, All-on-4 / All-on-6 tam çene implant tedavileri ve cerrahi operasyonlarda 12 yılı aşkın tecrübeye sahiptir."
+    "title": "Gülüş Tasarımı & Estetik Uzmanı",
+    "experience": "12+ Yıl Deneyim",
+    "bio": "Ankara Üniversitesi Diş Hekimliği mezunu Dr. Tülay Kaya, lamine veneer ve estetik gülüş tasarımlarında 12 yılı aşkın tecrübeye sahiptir."
   },
   "doc3": {
-    "title": "Estetik Diş Hekimi",
-    "bio": "Ege Üniversitesi mezunu olan Dr. Canan Demir, estetik diş hekimliği ve ultra ince lamine porselen kaplamalarda uzmanlaşmıştır. Doğal Hollywood gülüşleri tasarlamaktadır."
+    "title": "Ortodonti Uzmanı",
+    "experience": "10+ Yıl Deneyim",
+    "bio": "Ege Üniversitesi mezunu olan Dr. Ali Kemal Demir, şeffaf plaklar (Invisalign) ve dijital çene hizalama sistemlerinde uzmanlaşmıştır."
   },
   "doc4": {
-    "title": "Başhekim & Kozmetik Diş Uzmanı",
-    "bio": "Hacettepe Üniversitesi Diş Hekimliği Fakültesi mezunu olan Dr. Emre Şahin, Master Smile Studio bünyesinde başhekim olarak görev yapmaktadır. Londra ve Zürih’te kozmetik diş hekimliği uzmanlık eğitimleri almıştır. 16 yılı aşkın deneyimiyle uluslararası binlerce hastanın estetik gülüş dönüşümünü yönetmiştir."
+    "title": "Ağız, Diş ve Çene Cerrahı",
+    "experience": "16+ Yıl Deneyim",
+    "bio": "Hacettepe Üniversitesi Diş Hekimliği Fakültesi mezunu olan Dr. Ozan Öztürk, All-on-4 / All-on-6 tam çene implant tedavileri ve ileri cerrahi operasyonlarda 16 yılı aşkın deneyime sahiptir."
   },
   "doc5": {
-    "title": "Endodonti & Restoratif Tedavi",
-    "bio": "Marmara Üniversitesi Endodonti Anabilim Dalı uzmanı Dr. Zeynep Arslan, mikroskop destekli kanal tedavileri ve estetik restoratif tedaviler uygulamaktadır."
+    "title": "Restoratif & Kozmetik Diş Hekimi",
+    "experience": "9+ Yıl Deneyim",
+    "bio": "Uluslararası eğitimli Dr. Julia Rostova, kompozit bonding, diş beyazlatma ve mikroskop destekli estetik restorasyonlarda uzmandır."
   },
   "doc6": {
-    "title": "Ortodonti Uzmanı",
-    "bio": "Gazi Üniversitesi Ortodonti Uzmanı Dr. Burak Çelik, şeffaf plaklar (Invisalign) ve dijital çene hizalama sistemlerinde uluslararası sertifikalı uzmandır."
+    "title": "Endodonti & Konservatif Tedavi",
+    "experience": "11+ Yıl Deneyim",
+    "bio": "Gazi Üniversitesi mezunu Dr. Abdullah Yılmaz, mikroskopik kanal tedavileri ve diş kurtarma tedavilerinde 11 yıllık uzmanlığa sahiptir."
   },
   "doc7": {
-    "title": "Periodontoloji & Diş Eti Estetiği",
-    "bio": "Yeditepe Üniversitesi Periodontoloji Uzmanı Dr. Elif Öztürk, pembe estetik (diş eti seviyeleme) ve diş eti tedavilerinde 8 yıllık tecrübeye sahiptir."
+    "title": "Periodontoloji & Pembe Estetik",
+    "experience": "8+ Yıl Deneyim",
+    "bio": "Dr. Selin Aksoy, lazer destekli diş eti şekillendirme ve pembe estetik alanında 8 yıllık tecrübeye sahiptir."
+  },
+  "doc8": {
+    "title": "Pedodonti & Çocuk Diş Hekimi",
+    "experience": "9+ Yıl Deneyim",
+    "bio": "Dr. Burak Çelik, çocuk diş hekimliği ve koruyucu ortodontik tedavilerde uzmandır."
   }
 }

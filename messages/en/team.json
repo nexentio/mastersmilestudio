@@ -1,32 +1,44 @@
 {
   "title": "Our Expert Team",
-  "subtitle": "Meet our team of world-class dental specialists dedicated to delivering exceptional aesthetic and oral healthcare standards.",
+  "subtitle": "Meet our specialized team of dentists providing international standard oral and dental health services.",
   "doc1": {
     "title": "Prosthodontist & Smile Designer",
-    "bio": "Graduated with honors from Istanbul University Faculty of Dentistry, Dr. Mehmet Yılmaz specializes in prosthodontics and CAD/CAM ceramic smile makeovers with over 14 years of clinical experience."
+    "experience": "14+ Years Experience",
+    "bio": "Graduated with honors from Istanbul University Faculty of Dentistry, Dr. Fırat İskender specializes in Prosthodontics, digital smile architecture, and ceramic restorations."
   },
   "doc2": {
-    "title": "Oral & Maxillofacial Surgeon",
-    "bio": "Specialist in oral surgery from Ankara University, Dr. Ayşe Kaya has over 12 years of experience in All-on-4 / All-on-6 full mouth dental implants and advanced bone grafting."
+    "title": "Smile Design & Aesthetic Specialist",
+    "experience": "12+ Years Experience",
+    "bio": "Dr. Tülay Kaya specializes in porcelain laminate veneers and smile makeovers with over 12 years of clinical expertise."
   },
   "doc3": {
-    "title": "Aesthetic Dentist",
-    "bio": "Graduate of Ege University, Dr. Canan Demir specializes in ultra-thin porcelain veneers and minimally invasive smile design to create natural Hollywood smiles."
+    "title": "Orthodontics Specialist",
+    "experience": "10+ Years Experience",
+    "bio": "Dr. Ali Kemal Demir is an internationally certified orthodontist specializing in Invisalign clear aligners and digital jaw alignment."
   },
   "doc4": {
-    "title": "Head Dentist & Cosmetic Specialist",
-    "bio": "Graduated from Hacettepe University Faculty of Dentistry, Dr. Emre Şahin serves as Head Dentist at Master Smile Studio. Having completed postgraduate cosmetic dental training in London and Zurich, he has transformed thousands of international smiles over 16+ years."
+    "title": "Oral & Maxillofacial Surgeon",
+    "experience": "16+ Years Experience",
+    "bio": "Dr. Ozan Öztürk has over 16 years of surgical excellence in All-on-4 / All-on-6 full arch dental implants and complex bone augmentations."
   },
   "doc5": {
-    "title": "Endodontic & Restorative Specialist",
-    "bio": "Marmara University endodontics specialist Dr. Zeynep Arslan applies microscope-guided root canal therapies and biocompatible restorative treatments."
+    "title": "Restorative & Cosmetic Dentist",
+    "experience": "9+ Years Experience",
+    "bio": "Dr. Julia Rostova is dedicated to composite bonding, teeth whitening, and microscope-assisted aesthetic restorations."
   },
   "doc6": {
-    "title": "Orthodontic Specialist",
-    "bio": "Gazi University orthodontist Dr. Burak Çelik is an internationally certified specialist in clear aligners (Invisalign) and digital jaw alignment."
+    "title": "Endodontics & Conservative Specialist",
+    "experience": "11+ Years Experience",
+    "bio": "Dr. Abdullah Yılmaz specializes in microscope-guided root canal therapies and advanced tooth preservation."
   },
   "doc7": {
-    "title": "Periodontics & Gum Aesthetics",
-    "bio": "Yeditepe University periodontics specialist Dr. Elif Öztürk brings 8 years of expertise in pink aesthetics (gum contouring) and advanced periodontal health."
+    "title": "Periodontology & Pink Aesthetics",
+    "experience": "8+ Years Experience",
+    "bio": "Dr. Selin Aksoy specializes in laser-assisted gum contouring, gingivoplasty, and periodontal health."
+  },
+  "doc8": {
+    "title": "Pediatric Dentist",
+    "experience": "9+ Years Experience",
+    "bio": "Dr. Burak Çelik specializes in pediatric oral health, preventive dentistry, and early orthodontic interventions."
   }
 }
