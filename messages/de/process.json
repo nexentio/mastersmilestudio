@@ -1,0 +1,29 @@
+{
+  "heading": "Master Smile Studio",
+  "subtitle": "Vom ersten Kontakt an bieten wir eine transparente Beratung und detaillierte Behandlungspläne unserer Zahnärzte. Wir streben absolute Klarheit an.",
+  "step1": {
+    "title": "Erstkontakt",
+    "subtitle": "Formular - WhatsApp - E-Mail",
+    "content": "Wenn Sie uns kontaktieren, hört unser Team auf Ihre Wünsche. Ihre Angaben werden von Experten ausgewertet und Sie erhalten erste Informationen."
+  },
+  "step2": {
+    "title": "Terminvereinbarung",
+    "subtitle": "Informationen zu Ihrem Ablauf",
+    "content": "Während Ihrer Beratung werden Röntgenbilder und Fotos ausgewertet, um Ihnen optimale Behandlungsmöglichkeiten transparent vorzustellen."
+  },
+  "step3": {
+    "title": "Behandlungsablauf",
+    "subtitle": "Begleitung bei jedem Schritt",
+    "content": "Bei Ihrer Ankunft in unserer Klinik empfängt Sie unser Team und begleitet Sie durch die Behandlung mit modernster Zahntechnik."
+  },
+  "step4": {
+    "title": "Nachsorge & Betreuung",
+    "subtitle": "Leitfaden für die Zeit danach",
+    "content": "Vor der Abreise besprechen wir alle Nachsorgehinweise, übergeben Ihre Unterlagen und garantieren langfristige Unterstützung."
+  },
+  "contactTitle": "Schnelle Kontaktwege",
+  "btnWhatsapp": "WhatsApp",
+  "btnCall": "Rufen Sie uns an",
+  "btnForm": "Schnellformular",
+  "btnEmail": "E-Mail"
+}

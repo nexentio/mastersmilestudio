@@ -1,61 +1,99 @@
 {
   "welcome": "Projektowanie Uśmiechu",
-  "description": "Rozpocznij swoją podróż od bezpłatnej konsultacji online. Stwórzmy Twój indywidualny plan leczenia przed Twoim przylotem.",
+  "description": "Rozpocznij swoją podróż od bezpłatnej konsultacji online. Przygotujemy Twój spersonalizowany plan leczenia przed wylotem.",
   "ctaConsultation": "Bezpłatna Konsultacja",
   "ctaTreatments": "Zabiegi",
-  "patients": {
-    "badge": "Opinie Naszych Pacjentów",
-    "title": "Nasi Pacjenci i Historie Uśmiechu",
-    "subtitle": "Prawdziwe doświadczenia i metamorfozy uśmiechu pacjentów z całego świata.",
-    "card1": {
-      "name": "Sarah Jenkins",
-      "country": "🇬🇧 Wielka Brytania",
-      "treatment": "Full Hollywood Smile",
-      "quote": "Zespół Master Smile Studio podarował mi uśmiech znacznie bardziej naturalny i piękny niż marzyłam."
+  "transformations": {
+    "title": "Od pierwszej wizyty do idealnego uśmiechu.",
+    "subtitle": "Odkryj prawdziwe historie pacjentów. To coś więcej niż uśmiech — to nowa pewność siebie zdobyta w Master Smile Studio."
+  },
+  "process": {
+    "heading": "Master Smile Studio",
+    "subtitle": "Od pierwszego kontaktu zapewniamy pełną przejrzystość i szczegółowe plany leczenia przygotowane przez naszych lekarzy.",
+    "step1": {
+      "title": "Pierwszy Kontakt",
+      "subtitle": "Formularz - WhatsApp - Email",
+      "content": "Gdy się z nami skontaktujesz, nasz zespół wysłucha Twoich potrzeb. Nasi eksperci ocenią przypadek i udzielą informacji."
     },
-    "card2": {
-      "name": "Markus Weber",
-      "country": "🇩🇪 Niemcy",
-      "treatment": "Korony Cyrkonowe",
-      "quote": "Leczenie stomatologiczne w luksusie 5-gwiazdkowego hotelu za połowę ceny klinik w Niemczech."
+    "step2": {
+      "title": "Planowanie Wizyty",
+      "subtitle": "Informacje o procesie",
+      "content": "Analizujemy zdjęcia RTG i medyczne, aby przedstawić najlepsze opcje leczenia z pełną przejrzystością."
     },
-    "card3": {
-      "name": "Elena Rostova",
-      "country": "🇷🇺 Rosja",
-      "treatment": "Licówki E-max",
-      "quote": "Od pierwszego dnia opieka, gościnność i cyfrowy podgląd uśmiechu były absolutnie doskonałe."
+    "step3": {
+      "title": "Proces Leczenia",
+      "subtitle": "Opieka na każdym etapie",
+      "content": "Po przyjeździe do kliniki nasz zespół wita Cię i prowadzi przez cały proces przy użyciu najnowszej technologii."
     },
-    "card4": {
-      "name": "Sophie Martin",
-      "country": "🇫🇷 Francja",
-      "treatment": "Implanty & Wybielanie",
-      "quote": "Bezbolesne, szybkie i niezwykle estetyczne efekty. Nowy uśmiech w pełni przywrócił mi pewność siebie."
+    "step4": {
+      "title": "Zalecenia Po Zabiegu",
+      "subtitle": "Wsparcie po leczeniu",
+      "content": "Przed wyjazdem przekazujemy instrukcje dotyczące pielęgnacji oraz komplet dokumentacji medycznej."
     },
-    "card5": {
-      "name": "David Miller",
-      "country": "🇺🇸 USA",
-      "treatment": "Projektowanie Uśmiechu",
-      "quote": "Doświadczyłem najwyższej technologii i luksusu turystyki medycznej w Antalyi."
+    "contactTitle": "Szybkie Kanały Kontaktowe",
+    "btnWhatsapp": "WhatsApp",
+    "btnCall": "Zadzwoń do Nas",
+    "btnForm": "Szybki Formularz",
+    "btnEmail": "Email"
+  },
+  "team": {
+    "title": "Nasz Zespół Ekspertów",
+    "subtitle": "Poznaj naszych wybitnych lekarzy stomatologów świadczących usługi na najwyższym światowym poziomie.",
+    "doc1": {
+      "title": "Protetyk i Projektant Uśmiechu",
+      "bio": "Absolwent Uniwersytetu Stambulskiego z wyróżnieniem. Specjalizuje się w cyfrowym projektowaniu uśmiechu z ponad 14-letnim doświadczeniem."
     },
-    "card6": {
-      "name": "Anna Kowalska",
-      "country": "🇵🇱 Polska",
-      "treatment": "Implanty All-on-4",
-      "quote": "Cały proces był prowadzony z pełnym profesjonalizmem od początku do końca."
+    "doc2": {
+      "title": "Chirurg Stomatologiczny i Szczękowy",
+      "bio": "Specjalista Uniwersytetu w Ankarze z ponad 12-letnim doświadczeniem w implantach All-on-4 / All-on-6 oraz odbudowie kości."
+    },
+    "doc3": {
+      "title": "Stomatolog Estetyczny",
+      "bio": "Absolwentka Uniwersytetu Ege. Specjalizuje się w ultracienkich licówkach porcelanowych dla uzyskania naturalnego uśmiechu Hollywood."
+    },
+    "doc4": {
+      "title": "Lekarz Naczelny i Ekspert Stomatologii Estetycznej",
+      "bio": "Absolwent Uniwersytetu Hacettepe, Lekarz Naczelny w Master Smile Studio. Po szkoleniach w Londynie i Zurychu od ponad 16 lat kieruje metamorfozami uśmiechów."
+    },
+    "doc5": {
+      "title": "Endodonta i Stomatolog Restrawacyjny",
+      "bio": "Specjalistka Uniwersytetu Marmara w mikroskopowym leczeniu kanałowym i biokompatybilnych odbudowach."
+    },
+    "doc6": {
+      "title": "Ortodonta",
+      "bio": "Specjalista Uniwersytetu Gazi certyfikowany w zakresie nakładek prostujących (Invisalign) i cyfrowej korekcji zgryzu."
+    },
+    "doc7": {
+      "title": "Periodontolog i Estetyka Dziąseł",
+      "bio": "Specjalistka Uniwersytetu Yeditepe z 8-letnim doświadczeniem w estetyce różowej (plastyce dziąseł)."
     }
+  },
+  "brands": {
+    "eyebrow": "✦ Nasze Marki",
+    "title": "Światowej Klasy Marki Implantów Stomatologicznych",
+    "straumannSub": "Szwajcarska Precyzja Implantów",
+    "nobelSub": "Implantologia Premium",
+    "astraSub": "Grupa Dentsply Sirona",
+    "medentikaSub": "Jakość Grupy Straumann",
+    "bredentSub": "Niemiecka Innowacja Stomatologiczna"
+  },
+  "patients": {
+    "badge": "Szczęśliwi Pacjenci",
+    "title": "Nasi Pacjenci i Historie",
+    "subtitle": "Prawdziwe doświadczenia metamorfoz pacjentów z całego świata."
   },
   "form": {
     "title": "Uzyskaj Bezpłatną Konsultację",
     "subtitle": "Wypełnij formularz, a nasz doradca skontaktuje się z Tobą.",
     "fullName": "Imię i Nazwisko",
     "fullNamePlaceholder": "Twoje imię i nazwisko",
-    "phone": "Telefon",
-    "phonePlaceholder": "+48 000 000 000",
+    "phone": "Numer Telefonu",
+    "phonePlaceholder": "+48 (500) 000-000",
     "treatment": "Zabieg",
-    "treatmentSelectPlaceholder": "— Zabieg —",
+    "treatmentSelectPlaceholder": "— Wybierz Zabieg —",
     "language": "Język",
-    "languageSelectPlaceholder": "— Język —",
-    "submit": "Umów Bezpłatną Wizytę",
-    "success": "Zgłoszenie zostało przyjęte. Skontaktujemy się wkrótce."
+    "languageSelectPlaceholder": "— Wybierz Język —",
+    "submit": "Zarezerwuj Bezpłatną Wizytę",
+    "success": "Twoje zgłoszenie zostało przyjęte. Skontaktujemy się wkrótce."
   }
 }

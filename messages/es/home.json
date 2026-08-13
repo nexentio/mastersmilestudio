@@ -1,61 +1,99 @@
 {
-  "welcome": "Diseño Sonrisa",
-  "description": "Comience su viaje con una consulta online gratuita. Creamos su plan de tratamiento personalizado antes de su vuelo.",
+  "welcome": "Diseño de Sonrisa",
+  "description": "Comience su viaje con una consulta gratuita en línea. Diseñaremos su plan personalizado antes de su vuelo.",
   "ctaConsultation": "Consulta Gratuita",
   "ctaTreatments": "Tratamientos",
-  "patients": {
-    "badge": "Experiencias de Pacientes",
-    "title": "Nuestros Pacientes y Historias de Sonrisas",
-    "subtitle": "Experiencias reales de nuestros pacientes en todo el mundo.",
-    "card1": {
-      "name": "Sarah Jenkins",
-      "country": "🇬🇧 Reino Unido",
-      "treatment": "Full Hollywood Smile",
-      "quote": "El equipo de Master Smile Studio me dio una sonrisa mucho más natural y espectacular de lo que imaginaba."
+  "transformations": {
+    "title": "De la primera visita a la sonrisa perfecta.",
+    "subtitle": "Descubra historias reales de pacientes. Más que sonrisas: es una confianza renovada en Master Smile Studio."
+  },
+  "process": {
+    "heading": "Master Smile Studio",
+    "subtitle": "Desde el primer contacto, brindamos transparencia y planes de tratamiento detallados evaluados por nuestro equipo.",
+    "step1": {
+      "title": "Primer Contacto",
+      "subtitle": "Formulario - WhatsApp - Email",
+      "content": "Al contactarnos, nuestro equipo escucha sus necesidades. Evaluamos su caso y le proporcionamos información personalizada."
     },
-    "card2": {
-      "name": "Markus Weber",
-      "country": "🇩🇪 Alemania",
-      "treatment": "Coronas de Circonio",
-      "quote": "Tratamiento de clase mundial con la comodidad de un hotel de 5 estrellas a la mitad de precio."
+    "step2": {
+      "title": "Cita y Planificación",
+      "subtitle": "Información sobre su proceso",
+      "content": "Evaluamos radiografías y fotos médicas para presentarle las mejores opciones de tratamiento con total transparencia."
     },
-    "card3": {
-      "name": "Elena Rostova",
-      "country": "🇷🇺 Rusia",
-      "treatment": "Carillas E-max",
-      "quote": "Desde el primer día, la atención, el trato y la vista previa digital de mi sonrisa fueron impecables."
+    "step3": {
+      "title": "Proceso de Tratamiento",
+      "subtitle": "Guía en cada etapa",
+      "content": "A su llegada a la clínica, nuestro equipo le da la bienvenida y le guía a través del tratamiento con tecnología avanzada."
     },
-    "card4": {
-      "name": "Sophie Martin",
-      "country": "🇫🇷 Francia",
-      "treatment": "Implantes & Blanqueamiento",
-      "quote": "Sin dolor, rápido y con un resultado estético extraordinario. Mi nueva sonrisa me devolvió la confianza."
+    "step4": {
+      "title": "Cuidados Posteriores",
+      "subtitle": "Guía tras el tratamiento",
+      "content": "Antes de su viaje, compartimos las instrucciones de cuidado posterior y le entregamos todos sus documentos médicos."
     },
-    "card5": {
-      "name": "David Miller",
-      "country": "🇺🇸 EE.UU.",
-      "treatment": "Diseño de Sonrisa en Circonio",
-      "quote": "Experimenté alta tecnología y confort de turismo médico de lujo en Antalya."
+    "contactTitle": "Canales de Contacto Rápido",
+    "btnWhatsapp": "WhatsApp",
+    "btnCall": "Llámenos",
+    "btnForm": "Formulario Rápido",
+    "btnEmail": "Email"
+  },
+  "team": {
+    "title": "Nuestro Equipo Médico",
+    "subtitle": "Conozca a nuestros especialistas dentales de clase mundial dedicados a su salud bucal.",
+    "doc1": {
+      "title": "Prostodoncista y Diseñador de Sonrisas",
+      "bio": "Graduado con honores de la Universidad de Estambul. Especialista en diseño digital de sonrisas y carillas de porcelana con más de 14 años de experiencia."
     },
-    "card6": {
-      "name": "Anna Kowalska",
-      "country": "🇵🇱 Polonia",
-      "treatment": "Implantes All-on-4",
-      "quote": "Todo el proceso se gestionó con el máximo profesionalismo de principio a fin."
+    "doc2": {
+      "title": "Cirujano Oral y Maxilofacial",
+      "bio": "Especialista de la Universidad de Ankara con más de 12 años de experiencia en implantes All-on-4 / All-on-6 y regeneración ósea."
+    },
+    "doc3": {
+      "title": "Odontóloga Estética",
+      "bio": "Graduada de la Universidad de Ege. Especialista en carillas ultra finas de porcelana para sonrisas Hollywood naturales."
+    },
+    "doc4": {
+      "title": "Director Médico y Especialista en Cosmética Dental",
+      "bio": "Graduado de la Universidad de Hacettepe y Director Médico en Master Smile Studio. Tras posgrados en Londres y Zúrich, lidera transformaciones estéticas desde hace 16+ años."
+    },
+    "doc5": {
+      "title": "Endodoncista y Restauradora",
+      "bio": "Especialista de la Universidad de Marmara en endodoncia guiada por microscopio y restauraciones biocompatibles."
+    },
+    "doc6": {
+      "title": "Ortodoncista",
+      "bio": "Especialista de la Universidad de Gazi certificado en alineadores invisibles (Invisalign) y alineamiento digital."
+    },
+    "doc7": {
+      "title": "Periodoncista y Estética Gengival",
+      "bio": "Especialista de la Universidad de Yeditepe con 8 años de experiencia en estética rosa (contorneado gengival)."
     }
+  },
+  "brands": {
+    "eyebrow": "✦ Nuestras Marcas",
+    "title": "Marcas de Implantes de Estándar Mundial",
+    "straumannSub": "Implantes Suizos de Precisión",
+    "nobelSub": "Implantología Premium",
+    "astraSub": "Grupo Dentsply Sirona",
+    "medentikaSub": "Calidad Grupo Straumann",
+    "bredentSub": "Innovación Dental Alemana"
+  },
+  "patients": {
+    "badge": "Pacientes Felices",
+    "title": "Nuestros Pacientes y Historias",
+    "subtitle": "Experiencias reales de transformación de pacientes de todo el mundo."
   },
   "form": {
     "title": "Obtenga Consulta Gratuita",
-    "subtitle": "Rellene el formulario y nuestro asesor se pondrá en contacto.",
+    "subtitle": "Complete el formulario y nuestro representante se comunicará con usted.",
     "fullName": "Nombre Completo",
-    "fullNamePlaceholder": "Su nombre completo",
+    "fullNamePlaceholder": "Su nombre y apellido",
     "phone": "Teléfono",
-    "phonePlaceholder": "+34 600 000 000",
+    "phonePlaceholder": "+34 (600) 000-000",
     "treatment": "Tratamiento",
-    "treatmentSelectPlaceholder": "— Tratamiento —",
+    "treatmentSelectPlaceholder": "— Seleccionar Tratamiento —",
     "language": "Idioma",
-    "languageSelectPlaceholder": "— Idioma —",
-    "submit": "Solicitar Cita Gratuita",
+    "languageSelectPlaceholder": "— Seleccionar Idioma —",
+    "submit": "Reservar Cita Gratuita",
     "success": "Su solicitud ha sido recibida. Nos pondremos en contacto pronto."
   }
 }

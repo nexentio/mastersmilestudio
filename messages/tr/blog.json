@@ -1,0 +1,31 @@
+{
+  "eyebrow": "✦ Dental Rehber & Blog",
+  "title": "Son Yazılar ve Haberler",
+  "subtitle": "Master Smile Studio uzman hekimlerinin kaleme aldığı ağız sağlığı rehberleri ve estetik diş hekimliği ipuçları.",
+  "readMore": "Makaleyi Oku",
+  "readTime": "dk okuma",
+  "post1": {
+    "category": "Gülüş Tasarımı",
+    "title": "Zirkonyum mu E-Max mi? Gülüşünüz İçin En Uygun Kaplama Hangisi?",
+    "excerpt": "Zirkonyum kaplamalar ile E-Max porselen veneerler arasındaki dayanıklılık, ışık geçirgenliği ve estetik farkları inceleyin.",
+    "date": "10 Ağu 2026",
+    "author": "Dr. Ozan Öztürk",
+    "readTime": "5"
+  },
+  "post2": {
+    "category": "İmplantoloji",
+    "title": "All-on-4 İmplant Tedavisi: Tam Çene Tedavi ve İyileşme Rehberi",
+    "excerpt": "All-on-4 tekniğinin sabit diş konforuyla çiğneme fonksiyonunu ve genç yüz yapısını 5 günde nasıl geri kazandırdığını öğrenin.",
+    "date": "06 Ağu 2026",
+    "author": "Dr. Tülay Kaya",
+    "readTime": "7"
+  },
+  "post3": {
+    "category": "Dental Turizm",
+    "title": "Antalya'da Hollywood Smile: Dental Tatil Planlaması Nasıl Yapılır?",
+    "excerpt": "VIP transfer hizmetlerinden 5 yıldızlı otel konaklamasına, Antalya'da konforlu estetik diş tedavinizin tüm detayları.",
+    "date": "01 Ağu 2026",
+    "author": "Dr. Fırat İskender",
+    "readTime": "6"
+  }
+}

@@ -58,10 +58,10 @@ export default function HeroForm() {
       }}
     >
       <div style={{ marginBottom: '1.5rem' }}>
-        <h3 style={{ fontSize: '1.4rem', fontWeight: 800, color: '#0f172a', marginBottom: '0.4rem', letterSpacing: '-0.02em' }}>
+        <h3 style={{ fontSize: '1.4rem', fontWeight: 500, color: '#0f172a', marginBottom: '0.4rem', letterSpacing: '-0.02em' }}>
           {t('form.title')}
         </h3>
-        <p style={{ fontSize: '0.85rem', color: '#475569', lineHeight: 1.4 }}>
+        <p style={{ fontSize: '0.85rem', color: '#475569', lineHeight: 1.4, fontWeight: 400 }}>
           {t('form.subtitle')}
         </p>
       </div>
@@ -81,7 +81,7 @@ export default function HeroForm() {
             <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
             <polyline points="22 4 12 14.01 9 11.01" />
           </svg>
-          <p style={{ fontSize: '0.95rem', fontWeight: 600, color: '#0f172a', margin: 0 }}>
+          <p style={{ fontSize: '0.95rem', fontWeight: 500, color: '#0f172a', margin: 0 }}>
             {t('form.success')}
           </p>
         </div>
@@ -89,7 +89,7 @@ export default function HeroForm() {
         <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.15rem' }}>
           {/* İsim Soyisim */}
           <div>
-            <label style={{ display: 'block', fontSize: '0.82rem', fontWeight: 700, color: '#0f172a', marginBottom: '0.4rem' }}>
+            <label style={{ display: 'block', fontSize: '0.82rem', fontWeight: 500, color: '#0f172a', marginBottom: '0.4rem' }}>
               {t('form.fullName')} <span style={{ color: '#ef4444' }}>*</span>
             </label>
             <input
@@ -114,7 +114,7 @@ export default function HeroForm() {
 
           {/* Telefon */}
           <div>
-            <label style={{ display: 'block', fontSize: '0.82rem', fontWeight: 700, color: '#0f172a', marginBottom: '0.4rem' }}>
+            <label style={{ display: 'block', fontSize: '0.82rem', fontWeight: 500, color: '#0f172a', marginBottom: '0.4rem' }}>
               {t('form.phone')} <span style={{ color: '#ef4444' }}>*</span>
             </label>
             <input
@@ -139,7 +139,7 @@ export default function HeroForm() {
 
           {/* Tedavi */}
           <div>
-            <label style={{ display: 'block', fontSize: '0.82rem', fontWeight: 700, color: '#0f172a', marginBottom: '0.4rem' }}>
+            <label style={{ display: 'block', fontSize: '0.82rem', fontWeight: 500, color: '#0f172a', marginBottom: '0.4rem' }}>
               {t('form.treatment')} <span style={{ color: '#ef4444' }}>*</span>
             </label>
             <select
@@ -171,7 +171,7 @@ export default function HeroForm() {
 
           {/* Dil */}
           <div>
-            <label style={{ display: 'block', fontSize: '0.82rem', fontWeight: 700, color: '#0f172a', marginBottom: '0.4rem' }}>
+            <label style={{ display: 'block', fontSize: '0.82rem', fontWeight: 500, color: '#0f172a', marginBottom: '0.4rem' }}>
               {t('form.language')} <span style={{ color: '#ef4444' }}>*</span>
             </label>
             <select
@@ -215,7 +215,7 @@ export default function HeroForm() {
               borderRadius: '12px', // İç elementlerin köşeleri yuvarlak
               backgroundColor: '#0f172a',
               color: '#ffffff',
-              fontWeight: 700,
+              fontWeight: 500,
               fontSize: '0.95rem',
               border: 'none',
               cursor: 'pointer',

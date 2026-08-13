@@ -1,0 +1,32 @@
+{
+  "title": "Nossa Equipe de Especialistas",
+  "subtitle": "Conheça nossos dentistas de classe mundial dedicados a oferecer os mais altos padrões estéticos.",
+  "doc1": {
+    "title": "Prostodontista e Smile Designer",
+    "bio": "Graduado com honras pela Universidade de Istambul. Especialista em design digital de sorriso com mais de 14 anos de experiência clínica."
+  },
+  "doc2": {
+    "title": "Cirurgiã Bucomaxilofacial",
+    "bio": "Especialista pela Universidade de Ancara com mais de 12 anos de experiência em implantes All-on-4 / All-on-6 e enxerto ósseo."
+  },
+  "doc3": {
+    "title": "Dentista Estética",
+    "bio": "Graduada pela Universidade de Ege. Especialista em facetas de porcelana ultra finas para sorrisos Hollywood naturais."
+  },
+  "doc4": {
+    "title": "Diretor Clínico e Especialista em Estética Dentária",
+    "bio": "Graduado pela Universidade de Hacettepe, Diretor Clínico no Master Smile Studio. Com especialização em Londres e Zurique, transforma sorrisos há mais de 16 anos."
+  },
+  "doc5": {
+    "title": "Endodontista e Restauradora",
+    "bio": "Especialista pela Universidade de Marmara em endodontia microscópica e restaurações biocompatíveis."
+  },
+  "doc6": {
+    "title": "Ortodontista",
+    "bio": "Especialista pela Universidade de Gazi certificado em alinhadores invisíveis (Invisalign) e alinhamento digital."
+  },
+  "doc7": {
+    "title": "Periodontista e Estética Gengival",
+    "bio": "Especialista pela Universidade de Yeditepe com 8 anos de experiência em estética rosa (plástica gengival)."
+  }
+}

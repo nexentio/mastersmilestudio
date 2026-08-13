@@ -1,0 +1,32 @@
+{
+  "title": "Unser Expertenteam",
+  "subtitle": "Lernen Sie unser hochqualifiziertes zahnärztliches Team kennen, das internationale Standards bietet.",
+  "doc1": {
+    "title": "Prothetiker & Smile Designer",
+    "bio": "Absolvent der Zahnmedizin an der Universität Istanbul. Spezialisiert auf digitale Lächelngestaltung und Keramikrestaurationen mit 14+ Jahren Erfahrung."
+  },
+  "doc2": {
+    "title": "Mund-, Kiefer- und Gesichtschirurg",
+    "bio": "Spezialistin von der Universität Ankara mit über 12 Jahren Erfahrung in All-on-4 / All-on-6 Implantaten und Knochenaufbau."
+  },
+  "doc3": {
+    "title": "Ästhetische Zahnärztin",
+    "bio": "Absolventin der Ege Universität. Spezialisiert auf hauchdünne Porzellan-Veneers für natürliche Hollywood-Lächeln."
+  },
+  "doc4": {
+    "title": "Chefarzt & Spezialist für Kosmetische Zahnmedizin",
+    "bio": "Absolvent der Universität Hacettepe und Chefarzt im Master Smile Studio. Nach Ausbildungen in London und Zürich leitet er seit 16+ Jahren Lächelnttransformationen."
+  },
+  "doc5": {
+    "title": "Endodontie & Restaurative Zahnmedizin",
+    "bio": "Spezialistin der Marmara Universität für mikroskopgestützte Wurzelkanalbehandlungen und biokompatible Restaurationen."
+  },
+  "doc6": {
+    "title": "Kieferorthopäde",
+    "bio": "Spezialist der Gazi Universität für unsichtbare Zahnschienen (Invisalign) und digitale Kieferkorrekturen."
+  },
+  "doc7": {
+    "title": "Parodontologie & Zahnfleischästhetik",
+    "bio": "Spezialistin der Yeditepe Universität mit 8 Jahren Erfahrung in Rosa Ästhetik und Parodontaltherapie."
+  }
+}

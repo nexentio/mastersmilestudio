@@ -1,0 +1,29 @@
+{
+  "heading": "Master Smile Studio",
+  "subtitle": "İlk iletişim aşamasından itibaren, süreç hakkında gerekli bilgilendirmeleri sağlıyoruz. Tedaviyle ilgili adımlar, diş hekimi değerlendirmesi sonrasında tarafınıza aktarılır. Tüm süreç boyunca şeffaf iletişim ve düzenli bilgilendirme sunmayı amaçlıyoruz.",
+  "step1": {
+    "title": "İletişim",
+    "subtitle": "Form - WhatsApp - E-mail",
+    "content": "Bizimle iletişime geçtiğinizde ekibimiz ihtiyaçlarınızı ve beklentilerinizi dinler. Paylaştığınız bilgiler uzmanlarımız tarafından değerlendirilir ve sürece dair bilgilendirmeler size aktarılır."
+  },
+  "step2": {
+    "title": "Randevu Oluşturulması",
+    "subtitle": "Sürecinize Dair Bilgilendirme",
+    "content": "Randevunuz sırasında alınan röntgen ve fotoğraf gibi medikal görüntülerinizle birlikte, vakanız değerlendirilir ve uygun olan tedavi seçenekleri hakkında tarafınıza bilgi verilir. Süreçle ilgili tüm detaylar şeffaf biçimde paylaşılır."
+  },
+  "step3": {
+    "title": "Tedavi Süreci",
+    "subtitle": "Tedavi Sürecinin Her Aşamasında Bilgilendirme",
+    "content": "Kliniğimizi ziyaret ettiğinizde ekip üyelerimiz sizi karşılar ve süreçle ilgili gerekli yönlendirmeleri yapar. Diş tedavileriniz, ilgili uzmanlık birimi tarafından yapılan değerlendirme doğrultusunda yürütülür."
+  },
+  "step4": {
+    "title": "Tedavi Sonrası",
+    "subtitle": "Tedavi Sonrası Sürece İlişkin Rehberlik",
+    "content": "Ayrılmadan önce, tedavi sonrası döneme ilişkin gerekli bilgilendirmeleri sizinle paylaşır ve ilgili tıbbi belgelerinizi teslim ederiz. Süreçle ilgili sorularınızı yanıtlamaya özen gösteririz."
+  },
+  "contactTitle": "Hızlı İletişim Yolları",
+  "btnWhatsapp": "WhatsApp",
+  "btnCall": "Bizi Arayın",
+  "btnForm": "Hızlı Form",
+  "btnEmail": "E-mail"
+}

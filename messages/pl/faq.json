@@ -1,0 +1,46 @@
+{
+  "eyebrow": "✦ Co Warto Wiedzieć",
+  "title": "Często Zadawane Pytania i Przewodnik",
+  "subtitle": "Poznaj klinikię Master Smile Studio, procedury zabiegowe, przejrzyste ceny i procedury rezerwacji wizyt.",
+  "aboutHeading": "Klinika Stomatologiczna Master Smile Studio",
+  "aboutP1": "Master Smile Studio to nowocześnie wyposażona klinika stomatologii estetycznej i leczenia uzębienia działająca według międzynarodowych standardów.",
+  "aboutP2": "Status polikliniki oznacza komfort: kilka gabinetów pozwala na równoległą obsługę pacjentów bez kolejek.",
+  "aboutP3": "Oferujemy 16 dziedzin stomatologii pod jednym dachem — od koron cyrkonowych po implanty All-on-4 / All-on-6 i cyfrowe projektowanie uśmiechu.",
+  "aboutP4": "Zaufali nam pacjenci z ponad 40 krajów, a nasza ocena w Google wynosi 4.9/5.",
+  "appointmentHeading": "Rezerwacja Wizyty i Pierwsza Konsultacja",
+  "appointmentP1": "Wizytę można zarezerwować telefonicznie, przez WhatsApp lub formularz online.",
+  "appointmentP2": "Pierwsza wizyta to bezpłatna konsultacja obejmująca cyfrowe zdjęcie RTG o niskiej dawce promieniowania.",
+  "appointmentP3": "Po badaniu otrzymasz pisemny plan leczenia oraz przejrzysty kosztorys bez ukrytych opłat.",
+  "appointmentP4": "W przypadkach nagłego bólu zęba przyjmujemy pacjentów w tym samym dniu.",
+  "seoTags": [
+    "Master Smile Studio",
+    "Wizyta Master Smile Studio",
+    "Klinika Stomatologii Estetycznej",
+    "Korony Cyrkonowe Ceny",
+    "Implanty All-on-4 Turcja",
+    "Bezpłatna Konsultacja",
+    "Cyfrowe RTG"
+  ],
+  "faqList": [
+    {
+      "question": "Czy pierwsza konsultacja i zdjęcie RTG są bezpłatne?",
+      "answer": "Tak, w Master Smile Studio pierwsza konsultacja i badanie są całkowicie bezpłatne."
+    },
+    {
+      "question": "Ile trwa leczenie uśmiechu?",
+      "answer": "Dzięki technologii CAD/CAM licówki i korony cyrkonowe wykonujemy w 3 do 5 dni roboczych."
+    },
+    {
+      "question": "Jak wygląda organizacja pobytu dla pacjentów z zagranicy?",
+      "answer": "Zapewniamy transfery VIP z lotniska, rezerwację hoteli 5-gwiazdkowych i opiekę polskojęzycznego opiekuna."
+    },
+    {
+      "question": "Czy zabiegi są objęte gwarancją?",
+      "answer": "Tak, wszystkie implanty i korony posiadają międzynarodowe certyfikaty i pisemną gwarancję."
+    },
+    {
+      "question": "Czy w przypadku bólu zostanę przyjęty w tym samym dniu?",
+      "answer": "Tak, pacjentów z nagłym bólem przyjmujemy priorytetowo w tym samym dniu."
+    }
+  ]
+}

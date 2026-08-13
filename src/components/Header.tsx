@@ -15,10 +15,10 @@ export default function Header() {
 
   const navLinks = [
     { label: t('navigation.home'), href: '/' },
-    { label: t('navigation.about'), href: '#about' },
-    { label: t('navigation.treatments'), href: '#treatments' },
-    { label: t('navigation.gallery'), href: '#gallery' },
-    { label: t('navigation.contact'), href: '#contact' },
+    { label: t('navigation.about'), href: '/about' },
+    { label: t('navigation.treatments'), href: '/#treatments' },
+    { label: t('navigation.gallery'), href: '/#gallery' },
+    { label: t('navigation.contact'), href: '/#contact' },
   ];
 
   return (

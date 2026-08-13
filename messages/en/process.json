@@ -1,0 +1,29 @@
+{
+  "heading": "Master Smile Studio",
+  "subtitle": "From your initial contact, we provide transparent guidance and detailed treatment plans evaluated by our senior dental team. We aim for complete clarity at every stage.",
+  "step1": {
+    "title": "First Contact",
+    "subtitle": "Form - WhatsApp - Email",
+    "content": "When you reach out, our dedicated team listens to your goals. Shared details are carefully evaluated by our dental experts, and personalized initial guidance is provided."
+  },
+  "step2": {
+    "title": "Consultation & Planning",
+    "subtitle": "Clear & Transparent Information",
+    "content": "During your consultation, your medical imaging and dental photos are thoroughly assessed to present optimal treatment options with complete transparency."
+  },
+  "step3": {
+    "title": "Treatment Experience",
+    "subtitle": "Guided Step-by-Step Care",
+    "content": "Upon arriving at our clinic, our team welcomes and guides you through your treatment journey, carried out by specialized dentists with high-precision technology."
+  },
+  "step4": {
+    "title": "Post-Treatment Guidance",
+    "subtitle": "Aftercare & Long-term Support",
+    "content": "Before departure, we review all aftercare guidelines, hand over your medical documents, and ensure ongoing support for a lifelong healthy smile."
+  },
+  "contactTitle": "Quick Contact Channels",
+  "btnWhatsapp": "WhatsApp",
+  "btnCall": "Call Us",
+  "btnForm": "Quick Form",
+  "btnEmail": "Email"
+}

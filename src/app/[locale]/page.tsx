@@ -5,6 +5,12 @@ import HeroForm from '@/components/HeroForm';
 import ServicesGrid from '@/components/ServicesGrid';
 import PatientsSection from '@/components/PatientsSection';
 import TransformationsSection from '@/components/TransformationsSection';
+import TreatmentProcessSection from '@/components/TreatmentProcessSection';
+import TeamSection from '@/components/TeamSection';
+import BrandsSection from '@/components/BrandsSection';
+import BlogSection from '@/components/BlogSection';
+import FaqSection from '@/components/FaqSection';
+import ContactSection from '@/components/ContactSection';
 
 export default async function Home({
   params
@@ -70,7 +76,7 @@ export default async function Home({
               <h1
                 style={{
                   fontSize: '3.75rem',
-                  fontWeight: 850,
+                  fontWeight: 400,
                   lineHeight: 1.08,
                   color: '#ffffff',
                   marginBottom: '1.25rem',
@@ -109,7 +115,7 @@ export default async function Home({
                     color: '#0f172a',
                     padding: '0.85rem 1.85rem',
                     borderRadius: '9999px',
-                    fontWeight: 700,
+                    fontWeight: 500,
                     fontSize: '0.95rem',
                     textDecoration: 'none',
                     boxShadow: '0 10px 25px -5px rgba(255, 255, 255, 0.2)',
@@ -145,7 +151,7 @@ export default async function Home({
                     border: '1px solid rgba(255, 255, 255, 0.25)',
                     padding: '0.85rem 1.75rem',
                     borderRadius: '9999px',
-                    fontWeight: 600,
+                    fontWeight: 400,
                     fontSize: '0.95rem',
                     textDecoration: 'none',
                     backdropFilter: 'blur(8px)',
@@ -173,6 +179,24 @@ export default async function Home({
 
       {/* From First Visit to Final Smile Transformations Carousel */}
       <TransformationsSection />
+
+      {/* Interactive Treatment Process & Quick Contact Section */}
+      <TreatmentProcessSection />
+
+      {/* Uzman Kadromuz 3D Perspective Team Carousel */}
+      <TeamSection />
+
+      {/* Brands Infinite Marquee Banner Section */}
+      <BrandsSection />
+
+      {/* Blog & Dental Health Articles Section */}
+      <BlogSection />
+
+      {/* SEO-Rich FAQ & Clinical Guide Section */}
+      <FaqSection />
+
+      {/* Contact & Free Consultation Form Section */}
+      <ContactSection />
     </div>
   );
 }

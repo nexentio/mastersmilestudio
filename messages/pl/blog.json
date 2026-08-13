@@ -1,0 +1,31 @@
+{
+  "eyebrow": "✦ Blog i Porady Stomatologiczne",
+  "title": "Najnowsze Artykuły i Aktualności",
+  "subtitle": "Poznaj porady ekspertów i przewodniki stomatologiczne przygotowane przez lekarzy Master Smile Studio.",
+  "readMore": "Przeczytaj Artykuł",
+  "readTime": "min czytania",
+  "post1": {
+    "category": "Projektowanie Uśmiechu",
+    "title": "Cyrkon czy Licówki E-Max? Co jest najlepsze dla Twojego uśmiechu?",
+    "excerpt": "Porównaj wytrzymałość, przepuszczalność światła i estetykę koron cyrkonowych i licówek E-Max.",
+    "date": "10 sie 2026",
+    "author": "Dr. Ozan Öztürk",
+    "readTime": "5"
+  },
+  "post2": {
+    "category": "Implantologia",
+    "title": "Implanty All-on-4: Pełny Przewodnik i Odbudowa Zgryzu",
+    "excerpt": "Dowiedz się, jak implanty All-on-4 przywracają funkcję żucia i młody wygląd twarzy w zaledwie 5 dni.",
+    "date": "06 sie 2026",
+    "author": "Dr. Tülay Kaya",
+    "readTime": "7"
+  },
+  "post3": {
+    "category": "Turystyka Stomatologiczna",
+    "title": "Hollywood Smile w Antalyi: Jak Zaplanować Wakacje Stomatologiczne",
+    "excerpt": "Wszystko o transferach VIP, 5-gwiazdkowym hotelu i komfortowym leczeniu estetycznym w Turcji.",
+    "date": "01 sie 2026",
+    "author": "Dr. Fırat İskender",
+    "readTime": "6"
+  }
+}

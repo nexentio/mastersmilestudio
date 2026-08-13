@@ -1,0 +1,29 @@
+{
+  "heading": "Master Smile Studio",
+  "subtitle": "Desde o primeiro contato, fornecemos transparência e planos de tratamento detalhados avaliados por especialistas.",
+  "step1": {
+    "title": "Primeiro Contato",
+    "subtitle": "Formulário - WhatsApp - Email",
+    "content": "Ao entrar em contato, nossa equipe ouve suas expectativas. Avaliamos seu caso e fornecemos orientações iniciais."
+  },
+  "step2": {
+    "title": "Agendamento e Planejamento",
+    "subtitle": "Informações sobre seu processo",
+    "content": "Avaliamos radiografias e fotos médicas para apresentar as melhores opções de tratamento com total transparência."
+  },
+  "step3": {
+    "title": "Processo de Tratamento",
+    "subtitle": "Acompanhamento em cada etapa",
+    "content": "Ao chegar à clínica, nossa equipe o acolhe e o guia pelo tratamento com tecnologia de alta precisão."
+  },
+  "step4": {
+    "title": "Pós-Tratamento",
+    "subtitle": "Orientações pós-procedimento",
+    "content": "Antes de sua partida, compartilhamos as instruções de cuidados posteriores e entregamos seus documentos médicos."
+  },
+  "contactTitle": "Canais de Contato Rápido",
+  "btnWhatsapp": "WhatsApp",
+  "btnCall": "Ligue para Nós",
+  "btnForm": "Formulário Rápido",
+  "btnEmail": "Email"
+}

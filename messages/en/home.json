@@ -7,6 +7,76 @@
     "title": "From First Visit to Final Smile.",
     "subtitle": "Explore real patient stories captured in every transformation. These are more than smiles — they are renewed confidence, achieved with care and precision at Master Smile Studio."
   },
+  "process": {
+    "heading": "Master Smile Studio",
+    "subtitle": "From your initial contact, we provide transparent guidance and detailed treatment plans evaluated by our senior dental team. We aim for complete clarity at every stage.",
+    "step1": {
+      "title": "First Contact",
+      "subtitle": "Form - WhatsApp - Email",
+      "content": "When you reach out, our dedicated team listens to your goals. Shared details are carefully evaluated by our dental experts, and personalized initial guidance is provided."
+    },
+    "step2": {
+      "title": "Consultation & Planning",
+      "subtitle": "Clear & Transparent Information",
+      "content": "During your consultation, your medical imaging and dental photos are thoroughly assessed to present optimal treatment options with complete transparency."
+    },
+    "step3": {
+      "title": "Treatment Experience",
+      "subtitle": "Guided Step-by-Step Care",
+      "content": "Upon arriving at our clinic, our team welcomes and guides you through your treatment journey, carried out by specialized dentists with high-precision technology."
+    },
+    "step4": {
+      "title": "Post-Treatment Guidance",
+      "subtitle": "Aftercare & Long-term Support",
+      "content": "Before departure, we review all aftercare guidelines, hand over your medical documents, and ensure ongoing support for a lifelong healthy smile."
+    },
+    "contactTitle": "Quick Contact Channels",
+    "btnWhatsapp": "WhatsApp",
+    "btnCall": "Call Us",
+    "btnForm": "Quick Form",
+    "btnEmail": "Email"
+  },
+  "team": {
+    "title": "Our Expert Team",
+    "subtitle": "Meet our team of world-class dental specialists dedicated to delivering exceptional aesthetic and oral healthcare standards.",
+    "doc1": {
+      "title": "Prosthodontist & Smile Designer",
+      "bio": "Graduated with honors from Istanbul University Faculty of Dentistry, Dr. Mehmet Yılmaz specializes in prosthodontics and CAD/CAM ceramic smile makeovers with over 14 years of clinical experience."
+    },
+    "doc2": {
+      "title": "Oral & Maxillofacial Surgeon",
+      "bio": "Specialist in oral surgery from Ankara University, Dr. Ayşe Kaya has over 12 years of experience in All-on-4 / All-on-6 full mouth dental implants and advanced bone grafting."
+    },
+    "doc3": {
+      "title": "Aesthetic Dentist",
+      "bio": "Graduate of Ege University, Dr. Canan Demir specializes in ultra-thin porcelain veneers and minimally invasive smile design to create natural Hollywood smiles."
+    },
+    "doc4": {
+      "title": "Head Dentist & Cosmetic Specialist",
+      "bio": "Graduated from Hacettepe University Faculty of Dentistry, Dr. Emre Şahin serves as Head Dentist at Master Smile Studio. Having completed postgraduate cosmetic dental training in London and Zurich, he has transformed thousands of international smiles over 16+ years."
+    },
+    "doc5": {
+      "title": "Endodontic & Restorative Specialist",
+      "bio": "Marmara University endodontics specialist Dr. Zeynep Arslan applies microscope-guided root canal therapies and biocompatible restorative treatments."
+    },
+    "doc6": {
+      "title": "Orthodontic Specialist",
+      "bio": "Gazi University orthodontist Dr. Burak Çelik is an internationally certified specialist in clear aligners (Invisalign) and digital jaw alignment."
+    },
+    "doc7": {
+      "title": "Periodontics & Gum Aesthetics",
+      "bio": "Yeditepe University periodontics specialist Dr. Elif Öztürk brings 8 years of expertise in pink aesthetics (gum contouring) and advanced periodontal health."
+    }
+  },
+  "brands": {
+    "eyebrow": "✦ Our Brands",
+    "title": "World-Class Dental Implant & Material Partners",
+    "straumannSub": "Swiss Precision Implants",
+    "nobelSub": "Premium Implantology",
+    "astraSub": "Dentsply Sirona Group",
+    "medentikaSub": "Straumann Group Quality",
+    "bredentSub": "German Dental Innovation"
+  },
   "patients": {
     "badge": "Happy Patient Experiences",
     "title": "Our Patients & Smile Stories",

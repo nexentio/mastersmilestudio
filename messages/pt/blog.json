@@ -1,0 +1,31 @@
+{
+  "eyebrow": "✦ Blog & Saúde Dentária",
+  "title": "Últimos Artigos e Notícias",
+  "subtitle": "Descubra dicas de especialistas e guias dentários completos escritos pelos médicos do Master Smile Studio.",
+  "readMore": "Ler Artigo",
+  "readTime": "min de leitura",
+  "post1": {
+    "category": "Design do Sorriso",
+    "title": "Zircônio ou Facetas E-Max: Qual é o melhor para o seu sorriso?",
+    "excerpt": "Compare resistência, translucidez e estética entre coroas de Zircônio e facetas de porcelana E-Max.",
+    "date": "10 Ago 2026",
+    "author": "Dr. Ozan Öztürk",
+    "readTime": "5"
+  },
+  "post2": {
+    "category": "Implantologia",
+    "title": "Implantes All-on-4: Guia Completo e Reabilitação",
+    "excerpt": "Saiba como os implantes All-on-4 restauram a função mastigatória e o rejuvenescimento facial em 5 dias.",
+    "date": "06 Ago 2026",
+    "author": "Dr. Tülay Kaya",
+    "readTime": "7"
+  },
+  "post3": {
+    "category": "Turismo Dentário",
+    "title": "Hollywood Smile em Antalya: Planejando suas Férias Dentárias",
+    "excerpt": "Tudo sobre traslados VIP, hotéis de 5 estrelas e seu tratamento estético na Turquia.",
+    "date": "01 Ago 2026",
+    "author": "Dr. Fırat İskender",
+    "readTime": "6"
+  }
+}
