@@ -171,10 +171,10 @@ export default function TreatmentFAQSection() {
   ];
 
   return (
-    <div className={styles.wrapper}>
+    <section aria-labelledby="faq-section-heading" className={styles.wrapper}>
       <div className="treatment-container max-w-4xl">
         <div className="text-center mb-12">
-          <h2 className="treatment-heading-title">
+          <h2 id="faq-section-heading" className="treatment-heading-title">
             {locale === 'tr' ? 'Sıkça Sorulan Sorular' : 'Frequently Asked Questions'}
           </h2>
           <p className="treatment-text-p text-slate-500 max-w-xl mx-auto">
@@ -196,19 +196,20 @@ export default function TreatmentFAQSection() {
                   onClick={() => setOpenIdx(isOpen ? null : idx)}
                   className={styles.questionBtn}
                   aria-expanded={isOpen}
+                  aria-controls={`faq-answer-${idx}`}
                 >
                   <span className={styles.questionText}>
                     {locale === 'tr' ? faq.q.tr : faq.q.en}
                   </span>
                   <span className={`${styles.chevron} ${isOpen ? styles.chevronActive : ''}`}>
-                    <svg width="12" height="12" viewBox="0 0 448 512" fill="currentColor">
+                    <svg width="12" height="12" viewBox="0 0 448 512" fill="currentColor" aria-hidden="true">
                       <path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
                     </svg>
                   </span>
                 </button>
 
                 {isOpen && (
-                  <div className={styles.answerBox}>
+                  <div id={`faq-answer-${idx}`} className={styles.answerBox}>
                     {locale === 'tr' ? faq.a.tr : faq.a.en}
                   </div>
                 )}
@@ -217,6 +218,6 @@ export default function TreatmentFAQSection() {
           })}
         </div>
       </div>
-    </div>
+    </section>
   );
 }

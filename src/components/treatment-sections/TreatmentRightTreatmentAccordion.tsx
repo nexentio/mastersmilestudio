@@ -69,13 +69,13 @@ export default function TreatmentRightTreatmentAccordion() {
   ];
 
   return (
-    <div className={styles.wrapper}>
+    <section aria-labelledby="right-treatment-heading" className={styles.wrapper}>
       <div className="treatment-container">
         {/* Head */}
         <div className="head mb-12">
           <div className="grid1 grid grid-cols-1 md:grid-cols-2 gap-8 items-end">
             <div className="s s1">
-              <h2 className="treatment-heading-title m-0">
+              <h2 id="right-treatment-heading" className="treatment-heading-title m-0">
                 {locale === 'tr' ? 'Sizin İçin En Doğru Tedavi Hangisi?' : 'Find the Right Treatment for You'}
               </h2>
             </div>
@@ -136,6 +136,7 @@ export default function TreatmentRightTreatmentAccordion() {
                             <Link
                               className={styles.btn}
                               href={item.href}
+                              aria-label={`Read more about ${item.title}`}
                             >
                               READ MORE
                             </Link>
@@ -153,6 +154,7 @@ export default function TreatmentRightTreatmentAccordion() {
               <Link
                 href={treatments[activeIdx].href}
                 className={styles.previewCard}
+                aria-label={`Explore ${treatments[activeIdx].title}`}
               >
                 <img
                   width="600"
@@ -166,6 +168,6 @@ export default function TreatmentRightTreatmentAccordion() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

@@ -10,13 +10,13 @@ export default function TreatmentParallaxBanner() {
   const locale = useLocale();
 
   return (
-    <section className={styles.section}>
+    <section aria-labelledby="parallax-banner-heading" className={styles.section}>
       <div className={styles.container}>
         <span className={styles.subtitle}>
           {locale === 'tr' ? 'KUSURSUZ TEDAVİ DENEYİMİ' : 'YOUR JOURNEY, SEAMLESSLY DESIGNED'}
         </span>
 
-        <h2 className={styles.title}>
+        <h2 id="parallax-banner-heading" className={styles.title}>
           {locale === 'tr'
             ? 'İlk Mesajınızdan Yeni Gülüşünüze Kadar Her Adımda Yanınızdayız'
             : 'From Your First Message to Your Final Smile — Guided with World-Class Care'}
@@ -33,6 +33,7 @@ export default function TreatmentParallaxBanner() {
           <Link
             href="/contact"
             className="treatment-btn-gold"
+            aria-label={locale === 'tr' ? 'Master Smile Studio randevusu oluşturun' : 'Book a dental treatment appointment'}
           >
             <span>📅 {locale === 'tr' ? 'Randevu Oluştur' : 'Book Appointment'}</span>
             <span>→</span>
@@ -43,6 +44,7 @@ export default function TreatmentParallaxBanner() {
             target="_blank"
             rel="noopener noreferrer"
             className="treatment-btn-whatsapp"
+            aria-label="Direct WhatsApp consultation"
           >
             <span>💬 WhatsApp Live Chat</span>
           </a>
@@ -50,6 +52,7 @@ export default function TreatmentParallaxBanner() {
           <a
             href={`tel:${SITE_CONFIG.phone}`}
             className={styles.btnPhone}
+            aria-label={`Call clinic phone ${SITE_CONFIG.phone}`}
           >
             <span>📞 {SITE_CONFIG.phone}</span>
           </a>

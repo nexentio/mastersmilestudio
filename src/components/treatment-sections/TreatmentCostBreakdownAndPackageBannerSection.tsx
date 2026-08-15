@@ -46,7 +46,7 @@ export default function TreatmentCostBreakdownAndPackageBannerSection() {
   };
 
   return (
-    <section className={styles.section}>
+    <section aria-labelledby="cost-breakdown-heading" className={styles.section}>
       <div className="treatment-container">
         <TreatmentDivider />
 
@@ -61,7 +61,7 @@ export default function TreatmentCostBreakdownAndPackageBannerSection() {
         </div>
 
         {/* Narrative & Pricing Table */}
-        <h2 className="treatment-heading-title">
+        <h2 id="cost-breakdown-heading" className="treatment-heading-title">
           <strong>{locale === 'tr' ? 'İstanbul’da Dental İmplant Fiyatları' : 'Dental Implant Costs in Istanbul'}</strong>
         </h2>
 

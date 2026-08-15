@@ -7,6 +7,7 @@ import Footer from '@/components/Footer';
 import TreatmentDetailView from '@/components/TreatmentDetailView';
 import DentalImplantsDetailView from '@/components/DentalImplantsDetailView';
 import AllOnSixImplantDetailView from '@/components/AllOnSixImplantDetailView';
+import { generateTreatmentJsonLd } from '@/lib/treatment-schema';
 
 interface Props {
   params: Promise<{
@@ -18,7 +19,6 @@ interface Props {
 export async function generateMetadata({ params }: Props) {
   const { locale, slug } = await params;
   setRequestLocale(locale);
-  const t = await getTranslations({ locale, namespace: 'treatments' });
 
   const titleMap: Record<string, { en: string; tr: string }> = {
     'dental-implants': {
@@ -60,12 +60,18 @@ export async function generateMetadata({ params }: Props) {
     tr: 'İstanbul Diş Tedavileri | Master Smile Studio',
   };
 
+  const title = locale === 'tr' ? currentMeta.tr : currentMeta.en;
+  const description =
+    locale === 'tr'
+      ? 'İstanbul’da dünya standartlarında diş tedavisi, dijital gülüş tasarımı ve implant uygulamaları. Ücretsiz online konsültasyon alın.'
+      : 'World-class dental treatments, digital smile design, and implants in Istanbul, Turkey. Get your free online consultation.';
+
   return {
-    title: locale === 'tr' ? currentMeta.tr : currentMeta.en,
-    description:
-      locale === 'tr'
-        ? 'İstanbul’da dünya standartlarında diş tedavisi, dijital gülüş tasarımı ve implant uygulamaları. Ücretsiz online konsültasyon alın.'
-        : 'World-class dental treatments, digital smile design, and implants in Istanbul, Turkey. Get your free online consultation.',
+    title,
+    description,
+    alternates: {
+      canonical: `https://mastersmilestudio.com/${locale}/treatments/${slug}`,
+    },
   };
 }
 
@@ -101,13 +107,28 @@ export default async function TreatmentDetailPage({ params }: Props) {
         : 'Restore your entire smile with permanent fixed zirconia teeth supported by premium titanium implants.';
   }
 
+  const canonicalUrl = `https://mastersmilestudio.com/${locale}/treatments/${slug}`;
+  const jsonLd = generateTreatmentJsonLd({
+    locale,
+    slug,
+    title: heroTitle,
+    description: heroSubtitle,
+    canonicalUrl,
+  });
+
   return (
     <div className="treatment-layout-root">
+      {/* Schema.org Advanced JSON-LD @graph */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
       {/* Global Navigation Header */}
       <Header />
 
       {/* 1:1 Treatment Hero Section */}
-      <div className="treatment-hero-banner">
+      <header className="treatment-hero-banner" role="banner">
         <Image
           src="/treatment-hero-bg.webp"
           alt={heroTitle}
@@ -121,11 +142,16 @@ export default async function TreatmentDetailPage({ params }: Props) {
             {locale === 'tr' ? 'TEDAVİLERİMİZ' : 'TREATMENTS'}
           </div>
           <h1 className="treatment-hero-heading">{heroTitle}</h1>
-          <h4 className="treatment-hero-subheading">{heroSubtitle}</h4>
+          <p className="treatment-hero-subheading">{heroSubtitle}</p>
           <div className="treatment-hero-btns">
             <Link
               href="/contact"
               className="treatment-hero-primary-btn"
+              aria-label={
+                locale === 'tr'
+                  ? 'Randevu ve bilgi almak için iletişim sayfasına gidin'
+                  : 'Contact Master Smile Studio for appointment and consultation'
+              }
             >
               <span>
                 {locale === 'tr' ? 'Randevu & Bilgi Al' : 'Contact & Appointment'}
@@ -138,14 +164,20 @@ export default async function TreatmentDetailPage({ params }: Props) {
                 stroke="currentColor"
                 strokeWidth="2.2"
                 className="btn-arrow-icon"
+                aria-hidden="true"
               >
                 <path d="M5 12h14M12 5l7 7-7 7" />
               </svg>
             </Link>
 
             <a
-              href="#treatment-detail-content"
+              href="#main-content"
               className="treatment-hero-secondary-btn"
+              aria-label={
+                locale === 'tr'
+                  ? 'Tedavi paketlerini ve ayrıntılarını incelemek için aşağı kaydırın'
+                  : 'Scroll down to explore treatment packages and medical details'
+              }
             >
               <span>
                 {locale === 'tr' ? 'Paketleri İncele' : 'View Packages & Details'}
@@ -153,10 +185,10 @@ export default async function TreatmentDetailPage({ params }: Props) {
             </a>
           </div>
         </div>
-      </div>
+      </header>
 
-      {/* Main Content Area */}
-      <main id="treatment-detail-content" className="treatment-main-content">
+      {/* Main Content Area Landmark */}
+      <main id="main-content" className="treatment-main-content">
         {isDentalImplants ? (
           <DentalImplantsDetailView />
         ) : isAllOnSix ? (

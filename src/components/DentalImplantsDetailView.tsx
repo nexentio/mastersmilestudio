@@ -26,9 +26,9 @@ export default function DentalImplantsDetailView() {
   return (
     <div className="treatment-page-wrapper">
       {/* 1. INTRO & WHAT ARE DENTAL IMPLANTS */}
-      <section className="treatment-section-white-top">
+      <section aria-labelledby="intro-implants-heading" className="treatment-section-white-top">
         <div className="treatment-container">
-          <h2 className="treatment-heading-hero">
+          <h2 id="intro-implants-heading" className="treatment-heading-hero">
             <span>{locale === 'tr' ? 'İstanbul Diş İmplantı' : 'Dental Implants'}</span>
             <span>{locale === 'tr' ? ' – Master Smile Studio Türkiye' : ' in Istanbul – Master Smile Studio Turkey'}</span>
           </h2>
@@ -103,7 +103,7 @@ export default function DentalImplantsDetailView() {
           <TreatmentTripleVideoSlider />
 
           {/* WHY CHOOSE DENTAL IMPLANTS IN ISTANBUL */}
-          <h2 className="treatment-heading-title">
+          <h2 id="why-choose-implants-heading" className="treatment-heading-title">
             <span>{locale === 'tr' ? 'Neden İstanbul’da Diş İmplantı Yaptırmalısınız?' : 'Why Choose Dental Implants in Istanbul?'}</span>
           </h2>
 
@@ -234,7 +234,7 @@ export default function DentalImplantsDetailView() {
             {locale === 'tr' ? (
               <>
                 Kemik kaybınız olsa bile, <strong>sinüs lifting</strong> veya <strong>kemik tozu (greftleme)</strong> gibi ileri cerrahi tekniklerle implant tedavisine hazır hale gelebilirsiniz. Uzman cerrahlarımızla{' '}
-                <Link href="/contact" className="treatment-link-gold">
+                <Link href="/contact" className="treatment-link-gold" aria-label={locale === 'tr' ? 'Ücretsiz değerlendirme için iletişim sayfasına gidin' : 'Contact team for free personalized evaluation'}>
                   iletişime geçerek
                 </Link>{' '}
                 uygunluğunuzu ücretsiz olarak öğrenebilirsiniz.
@@ -242,7 +242,7 @@ export default function DentalImplantsDetailView() {
             ) : (
               <>
                 Even if you have experienced bone loss, procedures like <strong>bone grafting</strong> or <strong>sinus lifting</strong> can help build a strong foundation for implants. You can{' '}
-                <Link href="/contact" className="treatment-link-gold">
+                <Link href="/contact" className="treatment-link-gold" aria-label="Contact Master Smile Studio team for personalized evaluation">
                   contact our team
                 </Link>{' '}
                 to get a personalized evaluation.
@@ -253,7 +253,7 @@ export default function DentalImplantsDetailView() {
           <TreatmentDivider />
 
           {/* DENTAL IMPLANT TYPES SECTION */}
-          <h2 className="treatment-heading-title mt-10">
+          <h2 id="types-implants-heading" className="treatment-heading-title mt-10">
             <strong>{locale === 'tr' ? 'İstanbul’da Uygulanan Diş İmplantı Türleri' : 'Types of Dental Implants Available in Istanbul'}</strong>
           </h2>
 
@@ -288,7 +288,7 @@ export default function DentalImplantsDetailView() {
             {locale === 'tr' ? (
               <>
                 Detaylı bilgi için{' '}
-                <Link href="/treatments/dental-implants" className="treatment-link-gold">
+                <Link href="/treatments/dental-implants" className="treatment-link-gold" aria-label="Tek Diş İmplant sayfasını inceleyin">
                   Tek Diş İmplant sayfamızı
                 </Link>{' '}
                 inceleyin.
@@ -296,7 +296,7 @@ export default function DentalImplantsDetailView() {
             ) : (
               <>
                 Learn more about{' '}
-                <Link href="/treatments/dental-implants" className="treatment-link-gold">
+                <Link href="/treatments/dental-implants" className="treatment-link-gold" aria-label="Learn more about single tooth implants">
                   Single Tooth Implants in Istanbul
                 </Link>.
               </>
@@ -338,7 +338,7 @@ export default function DentalImplantsDetailView() {
             {locale === 'tr' ? (
               <>
                 Detaylı bilgi için{' '}
-                <Link href="/treatments/dental-implants/full-mouth-implants" className="treatment-link-gold">
+                <Link href="/treatments/dental-implants/full-mouth-implants" className="treatment-link-gold" aria-label="Tam Ağız İmplant sayfasını inceleyin">
                   Tam Ağız İmplant sayfamızı
                 </Link>{' '}
                 inceleyin.
@@ -346,7 +346,7 @@ export default function DentalImplantsDetailView() {
             ) : (
               <>
                 Learn more about{' '}
-                <Link href="/treatments/dental-implants/full-mouth-implants" className="treatment-link-gold">
+                <Link href="/treatments/dental-implants/full-mouth-implants" className="treatment-link-gold" aria-label="Learn more about full mouth implants in Istanbul">
                   Full Mouth Implants in Istanbul
                 </Link>.
               </>
@@ -372,7 +372,7 @@ export default function DentalImplantsDetailView() {
             {locale === 'tr' ? (
               <>
                 Detaylı bilgi için{' '}
-                <Link href="/treatments/dental-implants/all-on-4-implants" className="treatment-link-gold">
+                <Link href="/treatments/dental-implants/all-on-4-implants" className="treatment-link-gold" aria-label="All-on-4 İmplant sayfasını inceleyin">
                   All-on-4 İmplant sayfamızı
                 </Link>{' '}
                 inceleyin.
@@ -380,7 +380,7 @@ export default function DentalImplantsDetailView() {
             ) : (
               <>
                 Learn more about{' '}
-                <Link href="/treatments/dental-implants/all-on-4-implants" className="treatment-link-gold">
+                <Link href="/treatments/dental-implants/all-on-4-implants" className="treatment-link-gold" aria-label="Learn more about All-on-4 implants in Istanbul">
                   All-on-4 Implants in Istanbul
                 </Link>.
               </>
@@ -406,7 +406,7 @@ export default function DentalImplantsDetailView() {
             {locale === 'tr' ? (
               <>
                 Detaylı bilgi için{' '}
-                <Link href="/treatments/dental-implants/all-on-6-implants" className="treatment-link-gold">
+                <Link href="/treatments/dental-implants/all-on-6-implants" className="treatment-link-gold" aria-label="All-on-6 İmplant sayfasını inceleyin">
                   All-on-6 İmplant sayfamızı
                 </Link>{' '}
                 inceleyin.
@@ -414,7 +414,7 @@ export default function DentalImplantsDetailView() {
             ) : (
               <>
                 Learn more about{' '}
-                <Link href="/treatments/dental-implants/all-on-6-implants" className="treatment-link-gold">
+                <Link href="/treatments/dental-implants/all-on-6-implants" className="treatment-link-gold" aria-label="Learn more about All-on-6 implants in Istanbul">
                   All-on-6 Implants in Istanbul
                 </Link>.
               </>
@@ -463,9 +463,9 @@ export default function DentalImplantsDetailView() {
       <TreatmentInteractiveQuoteForm defaultTreatment="Implants" />
 
       {/* 15. BOTTOM CTA BANNER */}
-      <section className="treatment-cta-banner">
+      <section aria-labelledby="bottom-cta-heading" className="treatment-cta-banner">
         <div className="treatment-container-narrow">
-          <h2 className="treatment-heading-title text-white">
+          <h2 id="bottom-cta-heading" className="treatment-heading-title text-white">
             {locale === 'tr' ? 'Hayalinizdeki Gülüşe Bugün Kavuşun' : 'Ready to Start Your Smile Transformation?'}
           </h2>
           <p className="treatment-cta-desc">
@@ -477,6 +477,7 @@ export default function DentalImplantsDetailView() {
             <Link
               href="/contact"
               className="treatment-btn-gold"
+              aria-label={locale === 'tr' ? 'Ücretsiz teklif formuna gidin' : 'Get a free personalized quote'}
             >
               <span>{locale === 'tr' ? 'Ücretsiz Teklif Alın' : 'Get a Free Quote'}</span>
               <span>→</span>
@@ -486,6 +487,7 @@ export default function DentalImplantsDetailView() {
               target="_blank"
               rel="noopener noreferrer"
               className="treatment-btn-whatsapp"
+              aria-label="Direct WhatsApp consultation with our dental team"
             >
               <span>💬 WhatsApp Live Chat</span>
             </a>

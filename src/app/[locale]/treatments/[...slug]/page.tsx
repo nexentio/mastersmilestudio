@@ -12,6 +12,7 @@ import ZirconiumImplantDetailView from '@/components/ZirconiumImplantDetailView'
 import ImplantSupportedDenturesDetailView from '@/components/ImplantSupportedDenturesDetailView';
 import SinusLiftingDetailView from '@/components/SinusLiftingDetailView';
 import { Link } from '@/i18n/routing';
+import { generateTreatmentJsonLd } from '@/lib/treatment-schema';
 
 interface PageProps {
   params: Promise<{ locale: string; slug: string[] }>;
@@ -23,67 +24,43 @@ export async function generateMetadata({ params }: PageProps) {
 
   const slugList = Array.isArray(slug) ? slug : [slug];
   const lastSlug = slugList[slugList.length - 1];
+  const slugPath = slugList.join('/');
+
+  let title = locale === 'tr' ? 'Tüm Ağız İmplant Tedavisi İstanbul (Full Mouth) | Master Smile Studio' : 'Full Mouth Dental Implants in Istanbul, Turkey | Master Smile Studio';
+  let description = locale === 'tr' ? 'İstanbul’da tüm ağız diş implantı tedavisi ve paket fiyatları. Ömür boyu garantili sabit zirkonyum dişler.' : 'Full mouth dental implants in Istanbul, Turkey. All-inclusive packages with Straumann & NucleOSS implants.';
 
   if (lastSlug === 'dental-implants' || lastSlug === 'dental-implant-istanbul-turkey' || lastSlug === 'implants') {
-    return {
-      title: locale === 'tr' ? 'İstanbul Diş İmplantı Tedavisi ve Fiyatları | Master Smile Studio' : 'Dental Implants Cost (Price) in Istanbul, Turkey | Master Smile Studio',
-      description: locale === 'tr' ? 'İstanbul’da uzman çene cerrahları ile dünya markası titanyum implant tedavisi. Şeffaf her şey dahil paket fiyatları.' : 'Dental implants in Istanbul, Turkey starting from £350. Highest quality Swiss & German titanium implants with lifetime guarantee.',
-    };
+    title = locale === 'tr' ? 'İstanbul Diş İmplantı Tedavisi ve Fiyatları | Master Smile Studio' : 'Dental Implants Cost (Price) in Istanbul, Turkey | Master Smile Studio';
+    description = locale === 'tr' ? 'İstanbul’da uzman çene cerrahları ile dünya markası titanyum implant tedavisi. Şeffaf her şey dahil paket fiyatları.' : 'Dental implants in Istanbul, Turkey starting from £350. Highest quality Swiss & German titanium implants with lifetime guarantee.';
+  } else if (lastSlug === 'all-on-4-implants' || lastSlug === 'all-on-four-implant-istanbul-turkey' || lastSlug === 'all-on-4') {
+    title = locale === 'tr' ? 'All-on-4 Diş İmplantı Fiyatları İstanbul | Master Smile Studio' : 'All on 4 Dental Implants Cost in Istanbul, Turkey | Master Smile Studio';
+    description = locale === 'tr' ? 'All-on-4 tekniği ile aynı gün sabit dişler. Kemik tozu gerekmeden ekonomik tam çene implant tedavisi.' : 'All-on-4 dental implants in Istanbul, Turkey. Permanent fixed teeth in 2 visits without bone grafting.';
+  } else if (lastSlug === 'all-on-6-implants' || lastSlug === 'all-on-six-dental-implant-istanbul-turkey' || lastSlug === 'all-on-6') {
+    title = locale === 'tr' ? 'All-on-6 Diş İmplantı Fiyatları İstanbul | Master Smile Studio' : 'All on 6 Dental Implants Cost in Istanbul, Turkey | Master Smile Studio';
+    description = locale === 'tr' ? 'Tam dişsiz çeneler için 6 implantlı All-on-6 tedavisi. 2 ziyarette kalıcı zirkonyum sabit dişler.' : 'All-on-6 dental implants in Istanbul, Turkey. Strongest full-arch teeth restoration with 6 implants per jaw.';
+  } else if (lastSlug === 'immediate-implant-treatment' || lastSlug === 'immediate-implants') {
+    title = locale === 'tr' ? 'Aynı Gün İmplant Tedavisi İstanbul | Master Smile Studio' : 'Immediate Same-Day Dental Implants in Istanbul, Turkey | Master Smile Studio';
+    description = locale === 'tr' ? 'Diş çekimi ile aynı seansta implant uygulaması. Aylarca beklemeden aynı gün sabit diş.' : 'Same-day dental implants placed immediately after tooth extraction with zero waiting period.';
+  } else if (lastSlug === 'zygomatic-implants' || lastSlug === 'zygomatic-implants-istanbul-turkey') {
+    title = locale === 'tr' ? 'Zigoma (Elmacık Kemiği) İmplantı İstanbul | Master Smile Studio' : 'Zygomatic Dental Implants in Istanbul, Turkey | Master Smile Studio';
+    description = locale === 'tr' ? 'Aşırı kemik erimesi olan üst çeneler için zigomatik implant çözümü. Kemik greftine gerek kalmadan sabit diş.' : 'Zygomatic cheekbone implants for severe upper jawbone loss without bone grafting.';
+  } else if (lastSlug === 'zirconium-implants' || lastSlug === 'zirconium-implants-istanbul-turkey') {
+    title = locale === 'tr' ? 'Zirkonyum Seramik İmplant Tedavisi İstanbul | Master Smile Studio' : 'Zirconium Metal-Free Ceramic Implants in Istanbul, Turkey | Master Smile Studio';
+    description = locale === 'tr' ? '%100 metalsiz beyaz seramik zirkonyum implantlar. Alerji yapmayan üstün diş eti estetiği.' : '100% metal-free biocompatible white zirconia ceramic dental implants for optimal gum aesthetics.';
+  } else if (lastSlug === 'implant-supported-dentures' || lastSlug === 'implant-dentures') {
+    title = locale === 'tr' ? 'İmplant Destekli Çıt Çıtlı Protez İstanbul | Master Smile Studio' : 'Implant Supported Dentures (Overdentures) in Istanbul, Turkey | Master Smile Studio';
+    description = locale === 'tr' ? 'Kaymayan ve oynamayan çıtçıtlı damak protezleri. 2-4 implantla konforlu tutuculuk.' : 'Locking snap-on implant-supported overdentures for secure and comfortable chewing.';
+  } else if (lastSlug === 'sinus-lifting' || lastSlug === 'sinus-lift') {
+    title = locale === 'tr' ? 'Sinüs Lifting & Kemik Grefti İstanbul | Master Smile Studio' : 'Sinus Lifting & Bone Augmentation in Istanbul, Turkey | Master Smile Studio';
+    description = locale === 'tr' ? 'Üst çenede sarkan sinüs tabanının yükseltilmesi ve kemik tozu takviyesiyle güvenli implant zemini.' : 'Sinus floor elevation and bone grafting surgery for upper jaw implant placement.';
   }
 
-  if (lastSlug === 'all-on-4-implants' || lastSlug === 'all-on-four-implant-istanbul-turkey' || lastSlug === 'all-on-4') {
-    return {
-      title: locale === 'tr' ? 'All-on-4 Diş İmplantı Fiyatları İstanbul | Master Smile Studio' : 'All on 4 Dental Implants Cost in Istanbul, Turkey | Master Smile Studio',
-      description: locale === 'tr' ? 'All-on-4 tekniği ile aynı gün sabit dişler. Kemik tozu gerekmeden ekonomik tam çene implant tedavisi.' : 'All-on-4 dental implants in Istanbul, Turkey. Permanent fixed teeth in 2 visits without bone grafting.',
-    };
-  }
-
-  if (lastSlug === 'all-on-6-implants' || lastSlug === 'all-on-six-dental-implant-istanbul-turkey' || lastSlug === 'all-on-6') {
-    return {
-      title: locale === 'tr' ? 'All-on-6 Diş İmplantı Fiyatları İstanbul | Master Smile Studio' : 'All on 6 Dental Implants Cost in Istanbul, Turkey | Master Smile Studio',
-      description: locale === 'tr' ? 'Tam dişsiz çeneler için 6 implantlı All-on-6 tedavisi. 2 ziyarette kalıcı zirkonyum sabit dişler.' : 'All-on-6 dental implants in Istanbul, Turkey. Strongest full-arch teeth restoration with 6 implants per jaw.',
-    };
-  }
-
-  if (lastSlug === 'immediate-implant-treatment' || lastSlug === 'immediate-implants') {
-    return {
-      title: locale === 'tr' ? 'Aynı Gün İmplant Tedavisi İstanbul | Master Smile Studio' : 'Immediate Same-Day Dental Implants in Istanbul, Turkey | Master Smile Studio',
-      description: locale === 'tr' ? 'Diş çekimi ile aynı seansta implant uygulaması. Aylarca beklemeden aynı gün sabit diş.' : 'Same-day dental implants placed immediately after tooth extraction with zero waiting period.',
-    };
-  }
-
-  if (lastSlug === 'zygomatic-implants' || lastSlug === 'zygomatic-implants-istanbul-turkey') {
-    return {
-      title: locale === 'tr' ? 'Zigoma (Elmacık Kemiği) İmplantı İstanbul | Master Smile Studio' : 'Zygomatic Dental Implants in Istanbul, Turkey | Master Smile Studio',
-      description: locale === 'tr' ? 'Aşırı kemik erimesi olan üst çeneler için zigomatik implant çözümü. Kemik greftine gerek kalmadan sabit diş.' : 'Zygomatic cheekbone implants for severe upper jawbone loss without bone grafting.',
-    };
-  }
-
-  if (lastSlug === 'zirconium-implants' || lastSlug === 'zirconium-implants-istanbul-turkey') {
-    return {
-      title: locale === 'tr' ? 'Zirkonyum Seramik İmplant Tedavisi İstanbul | Master Smile Studio' : 'Zirconium Metal-Free Ceramic Implants in Istanbul, Turkey | Master Smile Studio',
-      description: locale === 'tr' ? '%100 metalsiz beyaz seramik zirkonyum implantlar. Alerji yapmayan üstün diş eti estetiği.' : '100% metal-free biocompatible white zirconia ceramic dental implants for optimal gum aesthetics.',
-    };
-  }
-
-  if (lastSlug === 'implant-supported-dentures' || lastSlug === 'implant-dentures') {
-    return {
-      title: locale === 'tr' ? 'İmplant Destekli Çıt Çıtlı Protez İstanbul | Master Smile Studio' : 'Implant Supported Dentures (Overdentures) in Istanbul, Turkey | Master Smile Studio',
-      description: locale === 'tr' ? 'Kaymayan ve oynamayan çıtçıtlı damak protezleri. 2-4 implantla konforlu tutuculuk.' : 'Locking snap-on implant-supported overdentures for secure and comfortable chewing.',
-    };
-  }
-
-  if (lastSlug === 'sinus-lifting' || lastSlug === 'sinus-lift') {
-    return {
-      title: locale === 'tr' ? 'Sinüs Lifting & Kemik Grefti İstanbul | Master Smile Studio' : 'Sinus Lifting & Bone Augmentation in Istanbul, Turkey | Master Smile Studio',
-      description: locale === 'tr' ? 'Üst çenede sarkan sinüs tabanının yükseltilmesi ve kemik tozu takviyesiyle güvenli implant zemini.' : 'Sinus floor elevation and bone grafting surgery for upper jaw implant placement.',
-    };
-  }
-
-  // Default / Full Mouth
   return {
-    title: locale === 'tr' ? 'Tüm Ağız İmplant Tedavisi İstanbul (Full Mouth) | Master Smile Studio' : 'Full Mouth Dental Implants in Istanbul, Turkey | Master Smile Studio',
-    description: locale === 'tr' ? 'İstanbul’da tüm ağız diş implantı tedavisi ve paket fiyatları. Ömür boyu garantili sabit zirkonyum dişler.' : 'Full mouth dental implants in Istanbul, Turkey. All-inclusive packages with Straumann & NucleOSS implants.',
+    title,
+    description,
+    alternates: {
+      canonical: `https://mastersmilestudio.com/${locale}/treatments/${slugPath}`,
+    },
   };
 }
 
@@ -95,6 +72,7 @@ export default async function HierarchicalTreatmentPage({ params }: PageProps) {
   const slugList = Array.isArray(slug) ? slug : [slug];
   const lastSlug = slugList[slugList.length - 1];
   const isCategoryOnly = slugList.length === 1;
+  const slugPath = slugList.join('/');
 
   // Route matching
   const isDentalImplantsCategory =
@@ -150,38 +128,63 @@ export default async function HierarchicalTreatmentPage({ params }: PageProps) {
     heroSubtitle = locale === 'tr' ? 'Komple dişsizlik durumunda ömür boyu garantili sabit zirkonyum dişlerle yepyeni bir gülüş.' : 'Restore your entire smile with permanent fixed zirconia teeth supported by premium titanium implants.';
   }
 
+  const canonicalUrl = `https://mastersmilestudio.com/${locale}/treatments/${slugPath}`;
+  const jsonLd = generateTreatmentJsonLd({
+    locale,
+    slug: lastSlug,
+    title: heroTitle,
+    description: heroSubtitle,
+    canonicalUrl,
+  });
+
   return (
     <div className="treatment-layout-root">
+      {/* Schema.org Advanced JSON-LD @graph */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
       <Header />
 
-      <div className="treatment-hero-banner">
+      <header className="treatment-hero-banner" role="banner">
         <Image src="/treatment-hero-bg.webp" alt={heroTitle} fill priority sizes="100vw" className="treatment-hero-bg-img" />
         <div className="treatment-hero-content">
           <div className="treatment-hero-tag">{heroBadge}</div>
           <h1 className="treatment-hero-heading">{heroTitle}</h1>
-          <h4 className="treatment-hero-subheading">{heroSubtitle}</h4>
+          <p className="treatment-hero-subheading">{heroSubtitle}</p>
           <div className="treatment-hero-btns">
             <Link
               href="/contact"
               className="treatment-hero-primary-btn"
+              aria-label={
+                locale === 'tr'
+                  ? 'Randevu ve bilgi almak için iletişim sayfasına gidin'
+                  : 'Contact Master Smile Studio for appointment and consultation'
+              }
             >
               <span>{locale === 'tr' ? 'Randevu & Bilgi Al' : 'Contact & Appointment'}</span>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" className="btn-arrow-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" className="btn-arrow-icon" aria-hidden="true">
                 <path d="M5 12h14M12 5l7 7-7 7" />
               </svg>
             </Link>
 
             <a
-              href="#treatment-detail-view-anchor"
+              href="#main-content"
               className="treatment-hero-secondary-btn"
+              aria-label={
+                locale === 'tr'
+                  ? 'Tedavi ayrıntılarını incelemek için aşağı kaydırın'
+                  : 'Scroll down to explore treatment details'
+              }
             >
               <span>{locale === 'tr' ? 'Tedaviyi İncele' : 'View Treatment Details'}</span>
             </a>
           </div>
         </div>
-      </div>
+      </header>
 
-      <main id="treatment-detail-view-anchor" className="treatment-main-content">
+      <main id="main-content" className="treatment-main-content">
         {isDentalImplantsCategory ? (
           <DentalImplantsDetailView />
         ) : isAllOnFour ? (

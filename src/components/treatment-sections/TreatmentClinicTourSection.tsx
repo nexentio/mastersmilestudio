@@ -13,13 +13,13 @@ export default function TreatmentClinicTourSection({}: Props) {
   const [isPlaying, setIsPlaying] = useState(false);
 
   return (
-    <div className={styles.wrapper}>
+    <section aria-labelledby="clinic-tour-heading" className={styles.wrapper}>
       <div className="treatment-container">
         {/* Head */}
         <div className="head mb-10">
           <div className="grid1 grid grid-cols-1 md:grid-cols-2 gap-8 items-end">
             <div className="s s1">
-              <h2 className="treatment-heading-title m-0">
+              <h2 id="clinic-tour-heading" className="treatment-heading-title m-0">
                 {locale === 'tr' ? 'Master Smile Studio Kliniğimizi Keşfedin' : 'Step Inside Master Smile Studio'}
               </h2>
             </div>
@@ -51,6 +51,12 @@ export default function TreatmentClinicTourSection({}: Props) {
             <div
               onClick={() => setIsPlaying(true)}
               className={styles.coverWrap}
+              role="button"
+              tabIndex={0}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') setIsPlaying(true);
+              }}
+              aria-label="Play Master Smile Studio clinic virtual tour video"
             >
               <img
                 src="https://sohodent.com/doc/static/yvcover1.jpg.webp"
@@ -59,7 +65,7 @@ export default function TreatmentClinicTourSection({}: Props) {
               />
               <div className={styles.playOverlay}>
                 <div className={styles.playBtn}>
-                  <svg width="32" height="32" viewBox="0 0 512 512" fill="currentColor">
+                  <svg width="32" height="32" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true">
                     <path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9l0 176c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z" />
                   </svg>
                 </div>
@@ -68,6 +74,6 @@ export default function TreatmentClinicTourSection({}: Props) {
           )}
         </div>
       </div>
-    </div>
+    </section>
   );
 }

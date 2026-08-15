@@ -56,12 +56,12 @@ export default function TreatmentBeforeAfterSliderSection() {
   };
 
   return (
-    <div className={styles.wrapper}>
+    <section aria-labelledby="before-after-heading" className={styles.wrapper}>
       <div className="treatment-container relative">
         {/* Head */}
         <div className={styles.head}>
           <div>
-            <h2 className="treatment-heading-navy">
+            <h2 id="before-after-heading" className="treatment-heading-navy">
               {locale === 'tr' ? (
                 <>
                   İlk Ziyaretten<br />Son Gülüşe.
@@ -140,11 +140,12 @@ export default function TreatmentBeforeAfterSliderSection() {
           <Link
             href="/gallery"
             className="treatment-btn-taupe"
+            aria-label={locale === 'tr' ? 'Tüm öncesi ve sonrası fotoğraflarını görmek için galeri sayfasına gidin' : 'View full before and after patient smile gallery'}
           >
             {locale === 'tr' ? 'Galeriyi İncele' : 'View Gallery'}
           </Link>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

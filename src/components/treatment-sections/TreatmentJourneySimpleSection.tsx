@@ -117,12 +117,12 @@ export default function TreatmentJourneySimpleSection({
   ];
 
   return (
-    <div className={styles.section}>
+    <section aria-labelledby="journey-simple-heading" className={styles.section}>
       <div className="treatment-container">
         {/* Head */}
         <div className={styles.head}>
           <div>
-            <h2 className="treatment-heading-navy">
+            <h2 id="journey-simple-heading" className="treatment-heading-navy">
               {locale === 'tr' ? 'Kolaylaştırılmış Tedavi Yolculuğunuz' : 'Your Dental Journey Made Simple'}
             </h2>
           </div>
@@ -258,6 +258,6 @@ export default function TreatmentJourneySimpleSection({
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

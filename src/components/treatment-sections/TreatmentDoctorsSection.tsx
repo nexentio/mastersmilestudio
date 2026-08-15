@@ -12,21 +12,21 @@ export default function TreatmentDoctorsSection() {
     {
       title: 'Dr. Dt.',
       name: 'Onur Utku Yüksel',
-      role: 'Co-Founder',
+      role: 'Co-Founder & Oral Surgeon',
       img: 'https://sohodent.com/doc/data1/Dr.Dt.-Onur-Utku-Yuksel.jpg',
       href: '/team',
     },
     {
       title: 'Dt.',
       name: 'Ufuk Ağdaşan',
-      role: 'Co-Founder',
+      role: 'Co-Founder & Aesthetic Dentist',
       img: 'https://sohodent.com/doc/data1/Dt.Ufuk-Agdasan.jpg',
       href: '/team',
     },
     {
       title: 'MSc. Dt.',
       name: 'Hakkı Serdar Ünal',
-      role: 'Co-Founder',
+      role: 'Co-Founder & Prosthodontist',
       img: 'https://sohodent.com/doc/data1/Dt.Hakki-Serdar-unal.jpg',
       href: '/team',
     },
@@ -40,21 +40,26 @@ export default function TreatmentDoctorsSection() {
   ];
 
   return (
-    <div className={styles.wrapper}>
+    <section aria-labelledby="section-doctors-title" className={styles.wrapper}>
       <div className="treatment-container">
-        <h2 className={styles.heading}>
+        <h2 id="section-doctors-title" className={styles.heading}>
           <span>{locale === 'tr' ? 'UZMAN DOKTORLARIMIZ' : 'OUR DENTISTS'}</span>
         </h2>
 
         <div className={styles.grid}>
           {doctors.map((doc, idx) => (
-            <div key={idx} className={styles.card}>
-              <Link href={doc.href} className="no-underline block">
+            <article key={idx} className={styles.card} itemScope itemType="https://schema.org/Physician">
+              <Link
+                href={doc.href}
+                className="no-underline block"
+                aria-label={`View doctor profile for ${doc.title} ${doc.name}`}
+              >
                 <div className={styles.imgWrap}>
                   <img
                     src={doc.img}
                     alt={`${doc.title} ${doc.name}`}
                     loading="lazy"
+                    itemProp="image"
                   />
                 </div>
 
@@ -62,18 +67,18 @@ export default function TreatmentDoctorsSection() {
                   <span className={styles.badge}>
                     {doc.title}
                   </span>
-                  <strong className={styles.name}>
+                  <h3 className={styles.name} itemProp="name">
                     {doc.name}
-                  </strong>
-                  <span className={styles.specialty}>
+                  </h3>
+                  <span className={styles.specialty} itemProp="jobTitle">
                     {doc.role}
                   </span>
                 </div>
               </Link>
-            </div>
+            </article>
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }

@@ -114,13 +114,13 @@ export default function TreatmentPatientReelsSection() {
   };
 
   return (
-    <div className={styles.wrapper}>
+    <section aria-labelledby="reels-section-heading" className={styles.wrapper}>
       <div className="treatment-container">
         {/* Head */}
         <div className="head mb-12">
           <div className="grid1 grid grid-cols-1 md:grid-cols-2 gap-8 items-end">
             <div className="s s1">
-              <h2 className="treatment-heading-title m-0">
+              <h2 id="reels-section-heading" className="treatment-heading-title m-0">
                 {locale === 'tr' ? 'Gerçek Hastalar. Gerçek Gülüşler.' : 'Real Patients. Real Smiles.'}
               </h2>
             </div>
@@ -132,6 +132,7 @@ export default function TreatmentPatientReelsSection() {
               </p>
               <div className="flex gap-2 shrink-0">
                 <button
+                  type="button"
                   onClick={handlePrev}
                   className="treatment-nav-circle-btn"
                   aria-label="Previous reels"
@@ -139,6 +140,7 @@ export default function TreatmentPatientReelsSection() {
                   ‹
                 </button>
                 <button
+                  type="button"
                   onClick={handleNext}
                   className="treatment-nav-circle-btn"
                   aria-label="Next reels"
@@ -157,6 +159,12 @@ export default function TreatmentPatientReelsSection() {
               key={idx}
               onClick={() => setActiveVideo(reel.videoUrl)}
               className={styles.card}
+              role="button"
+              tabIndex={0}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') setActiveVideo(reel.videoUrl);
+              }}
+              aria-label={`Play patient story video: ${reel.text}`}
             >
               <img
                 src={reel.img}
@@ -165,7 +173,7 @@ export default function TreatmentPatientReelsSection() {
               />
               <div className={styles.overlay}>
                 <div className={styles.playBadge}>
-                  <svg width="14" height="14" viewBox="0 0 512 512" fill="currentColor">
+                  <svg width="14" height="14" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true">
                     <path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9l0 176c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z" />
                   </svg>
                 </div>
@@ -191,6 +199,7 @@ export default function TreatmentPatientReelsSection() {
             <button
               onClick={() => setActiveVideo(null)}
               className="absolute top-4 right-4 z-10 w-9 h-9 rounded-full bg-black/60 text-white flex items-center justify-center font-bold text-lg hover:bg-black"
+              aria-label="Close video modal"
             >
               ✕
             </button>
@@ -203,6 +212,6 @@ export default function TreatmentPatientReelsSection() {
           </div>
         </div>
       )}
-    </div>
+    </section>
   );
 }

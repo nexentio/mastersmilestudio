@@ -20,7 +20,7 @@ export default function TreatmentTripleVideoSlider({
   ],
 }: Props) {
   return (
-    <div className={styles.wrapper}>
+    <section aria-label="Patient Procedure and Transformation Videos" className={styles.wrapper}>
       <div className={styles.grid}>
         {videos.map((vid, idx) => (
           <div key={idx} className={styles.card}>
@@ -33,6 +33,6 @@ export default function TreatmentTripleVideoSlider({
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }

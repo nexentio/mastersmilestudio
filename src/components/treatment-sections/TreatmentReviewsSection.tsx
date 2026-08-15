@@ -131,13 +131,13 @@ export default function TreatmentReviewsSection() {
   };
 
   return (
-    <div className={styles.wrapper}>
+    <section aria-labelledby="reviews-section-heading" className={styles.wrapper}>
       <div className="treatment-container">
         {/* Head */}
         <div className="head mb-12">
           <div className="grid1 grid grid-cols-1 md:grid-cols-2 gap-8 items-end">
             <div className="s s1">
-              <h2 className="treatment-heading-title m-0">
+              <h2 id="reviews-section-heading" className="treatment-heading-title m-0">
                 {locale === 'tr' ? 'Her Gülüşün Bir Hikayesi Var' : 'Every Smile Has a Story'}
               </h2>
             </div>
@@ -149,6 +149,7 @@ export default function TreatmentReviewsSection() {
               </p>
               <div className="flex gap-2 shrink-0">
                 <button
+                  type="button"
                   onClick={handlePrev}
                   className="treatment-nav-circle-btn"
                   aria-label="Previous reviews"
@@ -156,6 +157,7 @@ export default function TreatmentReviewsSection() {
                   ‹
                 </button>
                 <button
+                  type="button"
                   onClick={handleNext}
                   className="treatment-nav-circle-btn"
                   aria-label="Next reviews"
@@ -170,7 +172,7 @@ export default function TreatmentReviewsSection() {
         {/* Reviews Grid */}
         <div className={styles.grid}>
           {reviews.slice(startIndex, startIndex + visibleCount).map((rev, idx) => (
-            <div key={idx} className={styles.card}>
+            <article key={idx} className={styles.card} itemScope itemType="https://schema.org/Review">
               <div>
                 <div className="flex items-center justify-between mb-3">
                   <div className="flex items-center gap-3">
@@ -178,13 +180,18 @@ export default function TreatmentReviewsSection() {
                       {rev.name.charAt(0)}
                     </div>
                     <div>
-                      <h4 className={styles.author}>{rev.name}</h4>
-                      <div className={styles.rating}>★★★★★</div>
+                      <h3 className={styles.author} itemProp="author">
+                        {rev.name}
+                      </h3>
+                      <div className={styles.rating} itemProp="reviewRating" itemScope itemType="https://schema.org/Rating">
+                        <meta itemProp="ratingValue" content="5" />
+                        ★★★★★
+                      </div>
                     </div>
                   </div>
                 </div>
 
-                <p className={styles.comment}>
+                <p className={styles.comment} itemProp="reviewBody">
                   &ldquo;{rev.comment}&rdquo;
                 </p>
               </div>
@@ -200,10 +207,10 @@ export default function TreatmentReviewsSection() {
                   loading="lazy"
                 />
               </div>
-            </div>
+            </article>
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }

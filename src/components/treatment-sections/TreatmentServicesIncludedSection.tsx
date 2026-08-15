@@ -22,11 +22,11 @@ export default function TreatmentServicesIncludedSection() {
   const col2 = [services[1], services[3], services[5], services[7]];
 
   return (
-    <div className={styles.wrapper}>
+    <section aria-labelledby="services-included-heading" className={styles.wrapper}>
       <div className="treatment-container max-w-5xl">
         <div className={styles.card}>
           <div className="mb-7">
-            <h2 className={styles.title}>
+            <h2 id="services-included-heading" className={styles.title}>
               <span>{locale === 'tr' ? 'Dahil Olan En İyi Hizmetlerimiz' : 'Our Best Services Included'}</span>
             </h2>
             <div className={styles.divider} />
@@ -37,7 +37,7 @@ export default function TreatmentServicesIncludedSection() {
               {col1.map((item, idx) => (
                 <div key={idx} className={styles.item}>
                   <div className={styles.iconBadge}>
-                    <svg width="12" height="12" viewBox="0 0 512 512" fill="currentColor">
+                    <svg width="12" height="12" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true">
                       <path d="M294.6 151.2c-4.2-4.6-10.1-7.2-16.4-7.2C266 144 256 154 256 166.3l0 41.7-96 0c-17.7 0-32 14.3-32 32l0 32c0 17.7 14.3 32 32 32l96 0 0 41.7c0 12.3 10 22.3 22.3 22.3c6.2 0 12.1-2.6 16.4-7.2l84-91c3.5-3.8 5.4-8.7 5.4-13.9s-1.9-10.1-5.4-13.9l-84-91z" />
                     </svg>
                   </div>
@@ -52,7 +52,7 @@ export default function TreatmentServicesIncludedSection() {
               {col2.map((item, idx) => (
                 <div key={idx} className={styles.item}>
                   <div className={styles.iconBadge}>
-                    <svg width="12" height="12" viewBox="0 0 512 512" fill="currentColor">
+                    <svg width="12" height="12" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true">
                       <path d="M294.6 151.2c-4.2-4.6-10.1-7.2-16.4-7.2C266 144 256 154 256 166.3l0 41.7-96 0c-17.7 0-32 14.3-32 32l0 32c0 17.7 14.3 32 32 32l96 0 0 41.7c0 12.3 10 22.3 22.3 22.3c6.2 0 12.1-2.6 16.4-7.2l84-91c3.5-3.8 5.4-8.7 5.4-13.9s-1.9-10.1-5.4-13.9l-84-91z" />
                     </svg>
                   </div>
@@ -65,6 +65,6 @@ export default function TreatmentServicesIncludedSection() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

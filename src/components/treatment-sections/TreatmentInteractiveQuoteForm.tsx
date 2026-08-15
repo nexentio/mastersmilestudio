@@ -90,12 +90,12 @@ export default function TreatmentInteractiveQuoteForm({ defaultTreatment = 'Impl
   };
 
   return (
-    <div id="js_target1" className="treatment-container py-20 px-6">
+    <section aria-labelledby="interactive-quote-form-heading" id="js_target1" className="treatment-container py-20 px-6">
       {/* Head */}
       <div className="head mb-10">
         <div className="grid1 grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
           <div className="s s1">
-            <h2 className="treatment-heading-navy">
+            <h2 id="interactive-quote-form-heading" className="treatment-heading-navy">
               {locale === 'tr' ? 'Kusursuz Gülüş Planınızı Oluşturalım' : 'Let’s Create Your Perfect Smile Plan'}
             </h2>
           </div>
@@ -453,6 +453,6 @@ export default function TreatmentInteractiveQuoteForm({ defaultTreatment = 'Impl
           )}
         </div>
       </div>
-    </div>
+    </section>
   );
 }

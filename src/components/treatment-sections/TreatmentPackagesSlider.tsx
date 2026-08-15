@@ -264,14 +264,14 @@ export default function TreatmentPackagesSlider() {
   };
 
   return (
-    <div className={styles.wrapper}>
+    <section aria-labelledby="packages-slider-heading" className={styles.wrapper}>
       <div className="treatment-container">
         {/* Header with Nav Buttons */}
         <div className="treatment-packages-carousel-header">
           <div>
-            <h3 className="treatment-heading-title m-0">
+            <h2 id="packages-slider-heading" className="treatment-heading-title m-0">
               {locale === 'tr' ? 'Popüler İmplant Paketlerimiz' : 'Popular Implant Packages'}
-            </h3>
+            </h2>
             <p className="treatment-text-p mt-2 text-slate-500">
               {locale === 'tr'
                 ? 'Her şey dahil her bütçeye uygun komple implant paketleri'
@@ -281,6 +281,7 @@ export default function TreatmentPackagesSlider() {
 
           <div className="flex gap-2">
             <button
+              type="button"
               onClick={handlePrev}
               className="treatment-nav-circle-btn"
               aria-label="Previous packages"
@@ -288,6 +289,7 @@ export default function TreatmentPackagesSlider() {
               ‹
             </button>
             <button
+              type="button"
               onClick={handleNext}
               className="treatment-nav-circle-btn"
               aria-label="Next packages"
@@ -300,11 +302,11 @@ export default function TreatmentPackagesSlider() {
         {/* Carousel Grid */}
         <div className={styles.grid}>
           {packages.slice(startIndex, startIndex + visibleCount).map((pkg, idx) => (
-            <div key={idx} className={styles.card}>
+            <article key={idx} className={styles.card}>
               <div>
-                <h4 className={styles.header}>
+                <h3 className={styles.header}>
                   {pkg.title}
-                </h4>
+                </h3>
 
                 <div className={styles.imgWrap}>
                   <img
@@ -347,14 +349,15 @@ export default function TreatmentPackagesSlider() {
                 <Link
                   href="/contact"
                   className={styles.btn}
+                  aria-label={`Get a free quote for ${pkg.title}`}
                 >
                   {locale === 'tr' ? 'Fiyat Teklifi Al' : 'Get a Free Quote'}
                 </Link>
               </div>
-            </div>
+            </article>
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
