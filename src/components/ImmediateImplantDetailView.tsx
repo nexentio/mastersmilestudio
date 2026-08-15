@@ -16,90 +16,6 @@ import TreatmentReviewsSection from '@/components/treatment-sections/TreatmentRe
 import TreatmentBeforeAfterSliderSection from '@/components/treatment-sections/TreatmentBeforeAfterSliderSection';
 import TreatmentInteractiveQuoteForm from '@/components/treatment-sections/TreatmentInteractiveQuoteForm';
 
-interface MediaPlaceholderProps {
-  num: number | string;
-  label: string;
-  type: 'video' | 'image';
-  color: string;
-  aspectRatio?: string;
-  height?: string;
-}
-
-function MediaPlaceholder({ num, label, type, color, aspectRatio = '16/9', height }: MediaPlaceholderProps) {
-  return (
-    <div
-      style={{
-        position: 'relative',
-        width: '100%',
-        height: height || 'auto',
-        aspectRatio: height ? undefined : aspectRatio,
-        backgroundColor: '#18181b',
-        borderRadius: '16px',
-        border: `2px dashed ${color}`,
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        gap: '0.75rem',
-        padding: '1.5rem',
-        boxShadow: `0 8px 30px ${color}20`,
-      }}
-    >
-      <div
-        style={{
-          position: 'absolute',
-          top: '12px',
-          left: '12px',
-          backgroundColor: color,
-          color: '#ffffff',
-          fontWeight: 800,
-          fontSize: '0.85rem',
-          padding: '0.35rem 0.85rem',
-          borderRadius: '9999px',
-          boxShadow: `0 4px 14px ${color}60`,
-        }}
-      >
-        <span>#{num}</span>
-      </div>
-
-      <div
-        style={{
-          width: '52px',
-          height: '52px',
-          borderRadius: '50%',
-          backgroundColor: `${color}25`,
-          border: `1.5px solid ${color}`,
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          color: color,
-        }}
-      >
-        {type === 'video' ? (
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M8 5v14l11-7z" />
-          </svg>
-        ) : (
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-            <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
-            <circle cx="8.5" cy="8.5" r="1.5" />
-            <polyline points="21 15 16 10 5 21" />
-          </svg>
-        )}
-      </div>
-
-      <div style={{ textAlign: 'center', maxWidth: '85%' }}>
-        <span style={{ color: '#ffffff', fontWeight: 600, fontSize: '0.95rem', display: 'block', marginBottom: '0.2rem' }}>
-          {label}
-        </span>
-        <span style={{ color: color, fontSize: '0.78rem', textTransform: 'uppercase', letterSpacing: '0.08em', fontWeight: 700 }}>
-          {type.toUpperCase()} PLACEHOLDER
-        </span>
-      </div>
-    </div>
-  );
-}
-
 export default function ImmediateImplantDetailView() {
   const locale = useLocale();
   const [activeFaq, setActiveFaq] = useState<number | null>(null);
@@ -122,6 +38,12 @@ export default function ImmediateImplantDetailView() {
       a: locale === 'tr'
         ? 'Cerrahi seans sayısını azaltır, diş eti formunu ve çene kemiğini korur, tedavi süresini 3-4 ay kısaltır ve hastanın asla dişsiz kalmamasını sağlar.'
         : 'It reduces overall treatment time by 3-4 months, preserves natural gum contours and alveolar bone, and requires only one surgical appointment.',
+    },
+    {
+      q: locale === 'tr' ? 'Aynı gün takılan geçici diş ile yemek yenebilir mi?' : 'Can I eat with the same-day temporary teeth?',
+      a: locale === 'tr'
+        ? 'Evet, ilk birkaç hafta yumuşak gıdalarla beslenmek kaydıyla normal günlük fonksiyonlarınıza devam edebilirsiniz.'
+        : 'Yes! While adhering to a soft-food diet for the first few weeks to protect osseointegration, you can confidently return to your daily lifestyle.',
     },
   ];
 
@@ -163,13 +85,12 @@ export default function ImmediateImplantDetailView() {
               </div>
             </div>
 
-            <div>
-              <MediaPlaceholder
-                num={1}
-                label={locale === 'tr' ? 'Aynı Gün İmplant Uygulaması (3D Animasyon)' : 'Immediate Implant Surgery Workflow (3D Video)'}
-                type="video"
-                color="#f59e0b"
-                aspectRatio="16/10"
+            <div style={{ borderRadius: '20px', overflow: 'hidden', boxShadow: '0 20px 40px rgba(0,0,0,0.1)' }}>
+              <img
+                src="https://sohodent.com/doc/data1/immediate-copy.webp"
+                alt="Immediate Dental Implant Istanbul"
+                style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover' }}
+                loading="lazy"
               />
             </div>
           </div>
@@ -178,47 +99,28 @@ export default function ImmediateImplantDetailView() {
 
       <TreatmentDivider />
 
-      {/* 2. MEDIA & CASES */}
-      <section style={{ padding: '4.5rem 1.5rem', backgroundColor: '#09090b', color: '#ffffff' }}>
-        <div style={{ maxWidth: '1240px', margin: '0 auto' }}>
-          <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
-            <span style={{ color: '#D58936', fontSize: '0.85rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em' }}>
-              {locale === 'tr' ? 'VAKALAR' : 'CLINICAL CASES'}
-            </span>
-            <h2 style={{ fontSize: '2rem', fontWeight: 800, marginTop: '0.4rem' }}>
-              {locale === 'tr' ? 'Aynı Gün İmplant Dönüşümleri' : 'Immediate Implant Transformations'}
-            </h2>
-          </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.5rem' }}>
-            <MediaPlaceholder num={2} label="Single Front Tooth Immediate Implant Case #1" type="image" color="#f59e0b" aspectRatio="1/1" />
-            <MediaPlaceholder num={3} label="Immediate Loading Molar Replacement Case #2" type="image" color="#3b82f6" aspectRatio="1/1" />
-            <MediaPlaceholder num={4} label="Immediate Aesthetic Smile Result Case #3" type="image" color="#10b981" aspectRatio="1/1" />
-          </div>
-        </div>
-      </section>
-
-      {/* 3. REUSABLE: SERVICES INCLUDED */}
+      {/* 2. REUSABLE: SERVICES INCLUDED */}
       <TreatmentServicesIncludedSection />
 
-      {/* 4. REUSABLE: CLINIC TOUR */}
+      {/* 3. REUSABLE: CLINIC TOUR */}
       <TreatmentClinicTourSection placeholderNum="IMM-TOUR" />
 
-      {/* 5. REUSABLE: DOCTORS SECTION */}
+      {/* 4. REUSABLE: DOCTORS SECTION */}
       <TreatmentDoctorsSection />
 
-      {/* 6. BEFORE & AFTER TRANSFORMATIONS GALLERY (sectba) */}
+      {/* 5. BEFORE & AFTER TRANSFORMATIONS GALLERY */}
       <TreatmentBeforeAfterSliderSection />
 
-      {/* 7. REVIEWS & TRUSTPILOT / GOOGLE 5-STAR (sectyorum) */}
+      {/* 6. REVIEWS & TRUSTPILOT / GOOGLE 5-STAR */}
       <TreatmentReviewsSection />
 
-      {/* 8. REUSABLE: PARALLAX BANNER */}
+      {/* 7. REUSABLE: PARALLAX BANNER */}
       <TreatmentParallaxBanner />
 
-      {/* 9. REUSABLE: PATIENT VIDEO REELS */}
+      {/* 8. REUSABLE: PATIENT VIDEO REELS */}
       <TreatmentPatientReelsSection />
 
-      {/* 10. REUSABLE: SIMPLE JOURNEY ACCORDION */}
+      {/* 9. REUSABLE: SIMPLE JOURNEY ACCORDION */}
       <TreatmentJourneySimpleSection
         stayDuration="3-5 Working Days"
         visitCount="1 Visit for Immediate Crown + 1 Follow-up"
@@ -226,13 +128,13 @@ export default function ImmediateImplantDetailView() {
         priceEstimate="Starting from €450 / £380 per single tooth"
       />
 
-      {/* 11. REUSABLE: INTERACTIVE LEAD & QUOTE FORM (sectformtedavi) */}
+      {/* 10. REUSABLE: INTERACTIVE LEAD & QUOTE FORM */}
       <TreatmentInteractiveQuoteForm defaultTreatment="Dental Implants" />
 
-      {/* 12. REUSABLE: RIGHT TREATMENT FINDER */}
+      {/* 11. REUSABLE: RIGHT TREATMENT FINDER */}
       <TreatmentRightTreatmentAccordion />
 
-      {/* 13. FAQS */}
+      {/* 12. FAQS */}
       <section style={{ padding: '5rem 1.5rem', backgroundColor: '#f8fafc' }}>
         <div style={{ maxWidth: '850px', margin: '0 auto' }}>
           <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
@@ -262,7 +164,7 @@ export default function ImmediateImplantDetailView() {
         </div>
       </section>
 
-      {/* 14. CTA */}
+      {/* 13. CTA */}
       <section style={{ padding: '4.5rem 1.5rem', backgroundColor: '#09090b', color: '#ffffff', textAlign: 'center' }}>
         <div style={{ maxWidth: '800px', margin: '0 auto' }}>
           <h2 style={{ fontSize: '2.2rem', fontWeight: 800, marginBottom: '1rem' }}>

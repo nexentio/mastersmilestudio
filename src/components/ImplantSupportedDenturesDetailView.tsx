@@ -16,90 +16,6 @@ import TreatmentReviewsSection from '@/components/treatment-sections/TreatmentRe
 import TreatmentBeforeAfterSliderSection from '@/components/treatment-sections/TreatmentBeforeAfterSliderSection';
 import TreatmentInteractiveQuoteForm from '@/components/treatment-sections/TreatmentInteractiveQuoteForm';
 
-interface MediaPlaceholderProps {
-  num: number | string;
-  label: string;
-  type: 'video' | 'image';
-  color: string;
-  aspectRatio?: string;
-  height?: string;
-}
-
-function MediaPlaceholder({ num, label, type, color, aspectRatio = '16/9', height }: MediaPlaceholderProps) {
-  return (
-    <div
-      style={{
-        position: 'relative',
-        width: '100%',
-        height: height || 'auto',
-        aspectRatio: height ? undefined : aspectRatio,
-        backgroundColor: '#18181b',
-        borderRadius: '16px',
-        border: `2px dashed ${color}`,
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        gap: '0.75rem',
-        padding: '1.5rem',
-        boxShadow: `0 8px 30px ${color}20`,
-      }}
-    >
-      <div
-        style={{
-          position: 'absolute',
-          top: '12px',
-          left: '12px',
-          backgroundColor: color,
-          color: '#ffffff',
-          fontWeight: 800,
-          fontSize: '0.85rem',
-          padding: '0.35rem 0.85rem',
-          borderRadius: '9999px',
-          boxShadow: `0 4px 14px ${color}60`,
-        }}
-      >
-        <span>#{num}</span>
-      </div>
-
-      <div
-        style={{
-          width: '52px',
-          height: '52px',
-          borderRadius: '50%',
-          backgroundColor: `${color}25`,
-          border: `1.5px solid ${color}`,
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          color: color,
-        }}
-      >
-        {type === 'video' ? (
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M8 5v14l11-7z" />
-          </svg>
-        ) : (
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-            <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
-            <circle cx="8.5" cy="8.5" r="1.5" />
-            <polyline points="21 15 16 10 5 21" />
-          </svg>
-        )}
-      </div>
-
-      <div style={{ textAlign: 'center', maxWidth: '85%' }}>
-        <span style={{ color: '#ffffff', fontWeight: 600, fontSize: '0.95rem', display: 'block', marginBottom: '0.2rem' }}>
-          {label}
-        </span>
-        <span style={{ color: color, fontSize: '0.78rem', textTransform: 'uppercase', letterSpacing: '0.08em', fontWeight: 700 }}>
-          {type.toUpperCase()} PLACEHOLDER
-        </span>
-      </div>
-    </div>
-  );
-}
-
 export default function ImplantSupportedDenturesDetailView() {
   const locale = useLocale();
   const [activeFaq, setActiveFaq] = useState<number | null>(null);
@@ -116,6 +32,12 @@ export default function ImplantSupportedDenturesDetailView() {
       a: locale === 'tr'
         ? 'Damak yapıştırıcısına gerek kalmaz, çiğneme kuvveti 3-4 kat artar, damak kubbesi açık kaldığı için tat alma duyusu etkilenmez ve hasta güvenle gülebilir.'
         : 'They eliminate the need for messy denture adhesives, provide 3-4x stronger biting force, enhance taste sensation, and will never slip out when talking or laughing.',
+    },
+    {
+      q: locale === 'tr' ? 'Çıtçıtlı protezler geceleri çıkarılmalı mıdır?' : 'Do I need to take off snap-on dentures at night?',
+      a: locale === 'tr'
+        ? 'Çıtçıtlı protezler kolayca takılıp çıkarılabilir. Ağız hijyeni ve diş eti dinlenmesi için geceleri çıkarılıp temizlenmesi önerilir.'
+        : 'Yes, overdentures can be snapped on and off easily. Cleaning them thoroughly and removing them before sleep is recommended for optimal gum tissue health.',
     },
   ];
 
@@ -157,13 +79,12 @@ export default function ImplantSupportedDenturesDetailView() {
               </div>
             </div>
 
-            <div>
-              <MediaPlaceholder
-                num={1}
-                label={locale === 'tr' ? 'Çıt Çıtlı Protez Nasıl Çalışır? (3D Video)' : 'Snap-on Overdenture Mechanism (3D Video)'}
-                type="video"
-                color="#eab308"
-                aspectRatio="16/10"
+            <div style={{ borderRadius: '20px', overflow: 'hidden', boxShadow: '0 20px 40px rgba(0,0,0,0.1)' }}>
+              <img
+                src="https://sohodent.com/doc/data1/implant-supported-dentures-copy.webp"
+                alt="Implant Supported Dentures Istanbul"
+                style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover' }}
+                loading="lazy"
               />
             </div>
           </div>
@@ -176,15 +97,15 @@ export default function ImplantSupportedDenturesDetailView() {
       <TreatmentServicesIncludedSection />
 
       {/* 3. REUSABLE: CLINIC TOUR */}
-      <TreatmentClinicTourSection placeholderNum="DENT-TOUR" />
+      <TreatmentClinicTourSection placeholderNum="DEN-TOUR" />
 
       {/* 4. REUSABLE: DOCTORS SECTION */}
       <TreatmentDoctorsSection />
 
-      {/* 5. BEFORE & AFTER TRANSFORMATIONS GALLERY (sectba) */}
+      {/* 5. BEFORE & AFTER TRANSFORMATIONS GALLERY */}
       <TreatmentBeforeAfterSliderSection />
 
-      {/* 6. REVIEWS & TRUSTPILOT / GOOGLE 5-STAR (sectyorum) */}
+      {/* 6. REVIEWS & TRUSTPILOT / GOOGLE 5-STAR */}
       <TreatmentReviewsSection />
 
       {/* 7. REUSABLE: PARALLAX BANNER */}
@@ -195,14 +116,14 @@ export default function ImplantSupportedDenturesDetailView() {
 
       {/* 9. REUSABLE: SIMPLE JOURNEY ACCORDION */}
       <TreatmentJourneySimpleSection
-        stayDuration="3-5 Working Days"
-        visitCount="1 or 2 Visits"
-        recoveryTime="Immediate Stabilization"
-        priceEstimate="Starting from €2,500 / £2,100 per arch"
+        stayDuration="5-7 Working Days"
+        visitCount="2 Visits"
+        recoveryTime="2-3 months"
+        priceEstimate="Starting from €2,200 / £1,900 per arch"
       />
 
-      {/* 10. REUSABLE: INTERACTIVE LEAD & QUOTE FORM (sectformtedavi) */}
-      <TreatmentInteractiveQuoteForm defaultTreatment="Dental Implants" />
+      {/* 10. REUSABLE: INTERACTIVE LEAD & QUOTE FORM */}
+      <TreatmentInteractiveQuoteForm defaultTreatment="Dentures" />
 
       {/* 11. REUSABLE: RIGHT TREATMENT FINDER */}
       <TreatmentRightTreatmentAccordion />
@@ -241,12 +162,12 @@ export default function ImplantSupportedDenturesDetailView() {
       <section style={{ padding: '4.5rem 1.5rem', backgroundColor: '#09090b', color: '#ffffff', textAlign: 'center' }}>
         <div style={{ maxWidth: '800px', margin: '0 auto' }}>
           <h2 style={{ fontSize: '2.2rem', fontWeight: 800, marginBottom: '1rem' }}>
-            {locale === 'tr' ? 'Çıt Çıtlı Protez Teklifi Alın' : 'Get a Quote for Implant Supported Dentures'}
+            {locale === 'tr' ? 'Çıt Çıtlı Protez Uygunluğunuzu Öğrenin' : 'Find Out If Overdentures Are Right for You'}
           </h2>
           <p style={{ color: '#a1a1aa', marginBottom: '2rem' }}>
             {locale === 'tr'
-              ? 'Mevcut protezinizi implantlarla sabitlemek veya yeni çıtçıtlı protez yaptırmak için bize ulaşın.'
-              : 'Contact our dental team via WhatsApp to upgrade your smile with stable snap-on dentures.'}
+              ? 'Mevcut damak protezinizden memnun değilseniz, WhatsApp ile bize ulaşarak implant destekli seçeneklerimizi öğrenin.'
+              : 'If you are tired of loose dentures, message our dental team on WhatsApp to explore your snap-on implant options.'}
           </p>
           <a
             href={getWhatsAppLink(locale)}

@@ -16,90 +16,6 @@ import TreatmentReviewsSection from '@/components/treatment-sections/TreatmentRe
 import TreatmentBeforeAfterSliderSection from '@/components/treatment-sections/TreatmentBeforeAfterSliderSection';
 import TreatmentInteractiveQuoteForm from '@/components/treatment-sections/TreatmentInteractiveQuoteForm';
 
-interface MediaPlaceholderProps {
-  num: number | string;
-  label: string;
-  type: 'video' | 'image';
-  color: string;
-  aspectRatio?: string;
-  height?: string;
-}
-
-function MediaPlaceholder({ num, label, type, color, aspectRatio = '16/9', height }: MediaPlaceholderProps) {
-  return (
-    <div
-      style={{
-        position: 'relative',
-        width: '100%',
-        height: height || 'auto',
-        aspectRatio: height ? undefined : aspectRatio,
-        backgroundColor: '#18181b',
-        borderRadius: '16px',
-        border: `2px dashed ${color}`,
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        gap: '0.75rem',
-        padding: '1.5rem',
-        boxShadow: `0 8px 30px ${color}20`,
-      }}
-    >
-      <div
-        style={{
-          position: 'absolute',
-          top: '12px',
-          left: '12px',
-          backgroundColor: color,
-          color: '#ffffff',
-          fontWeight: 800,
-          fontSize: '0.85rem',
-          padding: '0.35rem 0.85rem',
-          borderRadius: '9999px',
-          boxShadow: `0 4px 14px ${color}60`,
-        }}
-      >
-        <span>#{num}</span>
-      </div>
-
-      <div
-        style={{
-          width: '52px',
-          height: '52px',
-          borderRadius: '50%',
-          backgroundColor: `${color}25`,
-          border: `1.5px solid ${color}`,
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          color: color,
-        }}
-      >
-        {type === 'video' ? (
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M8 5v14l11-7z" />
-          </svg>
-        ) : (
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-            <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
-            <circle cx="8.5" cy="8.5" r="1.5" />
-            <polyline points="21 15 16 10 5 21" />
-          </svg>
-        )}
-      </div>
-
-      <div style={{ textAlign: 'center', maxWidth: '85%' }}>
-        <span style={{ color: '#ffffff', fontWeight: 600, fontSize: '0.95rem', display: 'block', marginBottom: '0.2rem' }}>
-          {label}
-        </span>
-        <span style={{ color: color, fontSize: '0.78rem', textTransform: 'uppercase', letterSpacing: '0.08em', fontWeight: 700 }}>
-          {type.toUpperCase()} PLACEHOLDER
-        </span>
-      </div>
-    </div>
-  );
-}
-
 export default function SinusLiftingDetailView() {
   const locale = useLocale();
   const [activeFaq, setActiveFaq] = useState<number | null>(null);
@@ -116,6 +32,12 @@ export default function SinusLiftingDetailView() {
       a: locale === 'tr'
         ? 'Eğer hastada en az 4-5 mm mevcut kemik yüksekliği varsa kapalı sinüs lifting yöntemiyle implant aynı seansta yerleştirilebilir. Kemik çok ince ise açık sinüs lifting yapılarak 4-6 ay kemikleşme beklenir.'
         : 'If there is at least 4-5mm of existing bone, implants can often be placed simultaneously (internal sinus lift). If bone is very thin (<3mm), bone graft is placed first and allowed to mature before implant placement.',
+    },
+    {
+      q: locale === 'tr' ? 'Sinüs lifting ameliyatı sonrası iyileşme ne kadar sürer?' : 'How long does recovery take after sinus lift surgery?',
+      a: locale === 'tr'
+        ? 'İlk birkaç gün hafif ödem görülebilir ve reçete edilen ilaçlarla kolayca kontrol altına alınır. Kemik tozunun canlı kemiğe dönüşmesi ortalama 4 ila 6 ay sürer.'
+        : 'Mild swelling is normal for the first 2-3 days and managed with prescribed medications. The bone graft fully integrates into solid living bone over 4 to 6 months.',
     },
   ];
 
@@ -157,13 +79,12 @@ export default function SinusLiftingDetailView() {
               </div>
             </div>
 
-            <div>
-              <MediaPlaceholder
-                num={1}
-                label={locale === 'tr' ? 'Sinüs Lifting Ameliyatı (3D Cerrahi Animasyon)' : 'Sinus Lifting Surgical Procedure (3D Video)'}
-                type="video"
-                color="#f97316"
-                aspectRatio="16/10"
+            <div style={{ borderRadius: '20px', overflow: 'hidden', boxShadow: '0 20px 40px rgba(0,0,0,0.1)' }}>
+              <img
+                src="https://sohodent.com/doc/data1/sinus-lifting-copy.webp"
+                alt="Sinus Lifting Istanbul"
+                style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover' }}
+                loading="lazy"
               />
             </div>
           </div>
@@ -176,15 +97,15 @@ export default function SinusLiftingDetailView() {
       <TreatmentServicesIncludedSection />
 
       {/* 3. REUSABLE: CLINIC TOUR */}
-      <TreatmentClinicTourSection placeholderNum="SINUS-TOUR" />
+      <TreatmentClinicTourSection placeholderNum="SIN-TOUR" />
 
       {/* 4. REUSABLE: DOCTORS SECTION */}
       <TreatmentDoctorsSection />
 
-      {/* 5. BEFORE & AFTER TRANSFORMATIONS GALLERY (sectba) */}
+      {/* 5. BEFORE & AFTER TRANSFORMATIONS GALLERY */}
       <TreatmentBeforeAfterSliderSection />
 
-      {/* 6. REVIEWS & TRUSTPILOT / GOOGLE 5-STAR (sectyorum) */}
+      {/* 6. REVIEWS & TRUSTPILOT / GOOGLE 5-STAR */}
       <TreatmentReviewsSection />
 
       {/* 7. REUSABLE: PARALLAX BANNER */}
@@ -196,13 +117,13 @@ export default function SinusLiftingDetailView() {
       {/* 9. REUSABLE: SIMPLE JOURNEY ACCORDION */}
       <TreatmentJourneySimpleSection
         stayDuration="3-5 Working Days"
-        visitCount="1 or 2 Visits depending on Bone Height"
-        recoveryTime="4 to 6 months bone maturation"
-        priceEstimate="Starting from €300 / £260 per sinus graft"
+        visitCount="1-2 Visits"
+        recoveryTime="4-6 months bone integration"
+        priceEstimate="Starting from €250 / £210 per sinus area"
       />
 
-      {/* 10. REUSABLE: INTERACTIVE LEAD & QUOTE FORM (sectformtedavi) */}
-      <TreatmentInteractiveQuoteForm defaultTreatment="Sinus Lift / Other Surgery" />
+      {/* 10. REUSABLE: INTERACTIVE LEAD & QUOTE FORM */}
+      <TreatmentInteractiveQuoteForm defaultTreatment="Dental Implants" />
 
       {/* 11. REUSABLE: RIGHT TREATMENT FINDER */}
       <TreatmentRightTreatmentAccordion />
@@ -241,12 +162,12 @@ export default function SinusLiftingDetailView() {
       <section style={{ padding: '4.5rem 1.5rem', backgroundColor: '#09090b', color: '#ffffff', textAlign: 'center' }}>
         <div style={{ maxWidth: '800px', margin: '0 auto' }}>
           <h2 style={{ fontSize: '2.2rem', fontWeight: 800, marginBottom: '1rem' }}>
-            {locale === 'tr' ? 'Kemik Yapınız İçin Ücretsiz 3D Analiz' : 'Get a Free 3D Bone Analysis for Sinus Lifting'}
+            {locale === 'tr' ? 'Kemik Hacmi ve Sinüs Değerlendirmesi Alın' : 'Get a Free Bone Volume Evaluation'}
           </h2>
           <p style={{ color: '#a1a1aa', marginBottom: '2rem' }}>
             {locale === 'tr'
-              ? '3D tomografinizi iletin, cerrahlarımız sinüs yüksekliğinizi ve kemik durumunuzu değerlendirsin.'
-              : 'Send your 3D CBCT scan via WhatsApp to get a detailed sinus assessment from our surgeons.'}
+              ? 'Röntgeninizi WhatsApp ile ileterek çene cerrahlarımızdan sinüs lifting gerekliliği hakkında anında bilgi alın.'
+              : 'Send your panoramic X-ray via WhatsApp to find out if sinus lifting is required for your implants.'}
           </p>
           <a
             href={getWhatsAppLink(locale)}
@@ -254,7 +175,7 @@ export default function SinusLiftingDetailView() {
             rel="noopener noreferrer"
             style={{ display: 'inline-flex', padding: '0.95rem 2rem', backgroundColor: '#25D366', color: '#ffffff', borderRadius: '9999px', fontWeight: 700, textDecoration: 'none' }}
           >
-            WhatsApp Consultation →
+            WhatsApp Sinus Consultation →
           </a>
         </div>
       </section>

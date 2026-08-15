@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import { useTranslations, useLocale } from 'next-intl';
+import { useLocale } from 'next-intl';
 import { Link } from '@/i18n/routing';
 import { SITE_CONFIG, getWhatsAppLink } from '@/config/site';
 import TreatmentDivider from '@/components/treatment-sections/TreatmentDivider';
@@ -16,108 +16,7 @@ import TreatmentReviewsSection from '@/components/treatment-sections/TreatmentRe
 import TreatmentBeforeAfterSliderSection from '@/components/treatment-sections/TreatmentBeforeAfterSliderSection';
 import TreatmentInteractiveQuoteForm from '@/components/treatment-sections/TreatmentInteractiveQuoteForm';
 
-interface MediaPlaceholderProps {
-  num: number | string;
-  label: string;
-  type: 'video' | 'image' | 'carousel' | 'slider';
-  color: string;
-  aspectRatio?: string;
-  height?: string;
-  style?: React.CSSProperties;
-}
-
-function MediaPlaceholder({
-  num,
-  label,
-  type,
-  color,
-  aspectRatio = '16/9',
-  height,
-  style,
-}: MediaPlaceholderProps) {
-  return (
-    <div
-      style={{
-        position: 'relative',
-        width: '100%',
-        height: height || 'auto',
-        aspectRatio: height ? undefined : aspectRatio,
-        backgroundColor: '#18181b',
-        borderRadius: '16px',
-        border: `2px dashed ${color}`,
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        gap: '0.75rem',
-        padding: '1.5rem',
-        overflow: 'hidden',
-        boxShadow: `0 8px 30px ${color}20`,
-        ...style,
-      }}
-    >
-      <div
-        style={{
-          position: 'absolute',
-          top: '12px',
-          left: '12px',
-          backgroundColor: color,
-          color: '#ffffff',
-          fontWeight: 800,
-          fontSize: '0.85rem',
-          padding: '0.35rem 0.85rem',
-          borderRadius: '9999px',
-          boxShadow: `0 4px 14px ${color}60`,
-          display: 'flex',
-          alignItems: 'center',
-          gap: '0.35rem',
-          letterSpacing: '0.02em',
-          zIndex: 5,
-        }}
-      >
-        <span>#{num}</span>
-      </div>
-
-      <div
-        style={{
-          width: '52px',
-          height: '52px',
-          borderRadius: '50%',
-          backgroundColor: `${color}25`,
-          border: `1.5px solid ${color}`,
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          color: color,
-        }}
-      >
-        {type === 'video' ? (
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M8 5v14l11-7z" />
-          </svg>
-        ) : (
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-            <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
-            <circle cx="8.5" cy="8.5" r="1.5" />
-            <polyline points="21 15 16 10 5 21" />
-          </svg>
-        )}
-      </div>
-
-      <div style={{ textAlign: 'center', maxWidth: '85%' }}>
-        <span style={{ color: '#ffffff', fontWeight: 600, fontSize: '0.95rem', display: 'block', marginBottom: '0.2rem' }}>
-          {label}
-        </span>
-        <span style={{ color: color, fontSize: '0.78rem', textTransform: 'uppercase', letterSpacing: '0.08em', fontWeight: 700 }}>
-          {type.toUpperCase()} PLACEHOLDER
-        </span>
-      </div>
-    </div>
-  );
-}
-
 export default function AllOnFourImplantDetailView() {
-  const t = useTranslations('common');
   const locale = useLocale();
 
   const [activeFaq, setActiveFaq] = useState<number | null>(null);
@@ -128,6 +27,7 @@ export default function AllOnFourImplantDetailView() {
       name: 'ALL-ON-4 – NUCLEOSS',
       brand: 'NucleOSS (Turkish Premium Quality)',
       duration: '3+7 Working Days (2 Visits)',
+      img: 'https://sohodent.com/doc/data1/All-on-4-package-10.jpg',
       included: [
         '4x NucleOSS Dental Implants per Arch',
         '12x Fixed Temporary Teeth (Same Visit)',
@@ -139,13 +39,12 @@ export default function AllOnFourImplantDetailView() {
         'Laboratory Work Included',
       ],
       price: { USD: '$5,700', EUR: '€4,900', GBP: '£4,200' },
-      color: '#3b82f6',
-      placeholderNum: 1,
     },
     {
       name: 'ALL-ON-4 – DXL GERMAN',
       brand: 'DXL (German Engineering)',
       duration: '3+7 Working Days (2 Visits)',
+      img: 'https://sohodent.com/doc/data1/All-on-4-implant-package-2.jpg',
       included: [
         '4x DXL German Titanium Implants',
         '12x Fixed Temporary Teeth',
@@ -157,13 +56,12 @@ export default function AllOnFourImplantDetailView() {
         'Laboratory Work Included',
       ],
       price: { USD: '$6,400', EUR: '€5,500', GBP: '£4,750' },
-      color: '#10b981',
-      placeholderNum: 2,
     },
     {
       name: 'ALL-ON-4 – STRAUMANN',
       brand: 'Straumann (Swiss Gold Standard)',
       duration: '3+7 Working Days (2 Visits)',
+      img: 'https://sohodent.com/doc/data1/All-on-4-implant-package-3.jpg',
       included: [
         '4x Straumann Swiss Dental Implants',
         '12x Fixed High-Grade Temporary Teeth',
@@ -174,14 +72,13 @@ export default function AllOnFourImplantDetailView() {
         'Dedicated Personal Patient Host',
       ],
       price: { USD: '$9,300', EUR: '€8,000', GBP: '£6,900' },
-      color: '#D58936',
       popular: true,
-      placeholderNum: 3,
     },
     {
       name: 'ALL-ON-4 – MEGAGEN',
       brand: 'Megagen (AnyRidge Korean Technology)',
       duration: '3+7 Working Days (2 Visits)',
+      img: 'https://sohodent.com/doc/data1/All-on-6-implant-package-1.jpg',
       included: [
         '4x Megagen AnyRidge Dental Implants',
         '12x Fixed Temporary Teeth',
@@ -192,13 +89,12 @@ export default function AllOnFourImplantDetailView() {
         'Laboratory Work Included',
       ],
       price: { USD: '$6,900', EUR: '€6,000', GBP: '£5,100' },
-      color: '#8b5cf6',
-      placeholderNum: 4,
     },
     {
       name: 'ALL-ON-4 – NEODENT',
       brand: 'Neodent (by Straumann Group)',
       duration: '3+7 Working Days (2 Visits)',
+      img: 'https://sohodent.com/doc/data1/All-on-6-implant-package-2.jpg',
       included: [
         '4x Neodent Implants (Straumann Family)',
         '12x Fixed Temporary Teeth',
@@ -209,13 +105,12 @@ export default function AllOnFourImplantDetailView() {
         'Laboratory Work Included',
       ],
       price: { USD: '$6,900', EUR: '€6,000', GBP: '£5,100' },
-      color: '#06b6d4',
-      placeholderNum: 5,
     },
     {
       name: 'ALL-ON-4 – HIOSSEN',
       brand: 'Hiossen (American Premium Quality)',
       duration: '3+7 Working Days (2 Visits)',
+      img: 'https://sohodent.com/doc/data1/All-on-6-implant-package-3.jpg',
       included: [
         '4x Hiossen American Dental Implants',
         '12x Fixed Temporary Teeth',
@@ -226,8 +121,6 @@ export default function AllOnFourImplantDetailView() {
         'Laboratory Work Included',
       ],
       price: { USD: '$6,600', EUR: '€5,750', GBP: '£4,900' },
-      color: '#ec4899',
-      placeholderNum: 6,
     },
   ];
 
@@ -296,13 +189,12 @@ export default function AllOnFourImplantDetailView() {
               </div>
             </div>
 
-            <div>
-              <MediaPlaceholder
-                num={7}
-                label={locale === 'tr' ? 'All-on-4 Tedavi Aşamaları (3D Cerrahi Animasyon)' : 'All-on-4 Procedure Step-by-Step (3D Animation)'}
-                type="video"
-                color="#10b981"
-                aspectRatio="16/10"
+            <div style={{ borderRadius: '20px', overflow: 'hidden', boxShadow: '0 20px 40px rgba(0,0,0,0.1)' }}>
+              <img
+                src="https://sohodent.com/doc/data1/all-on-4-copy.webp"
+                alt="All-on-4 Dental Implants Istanbul"
+                style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover' }}
+                loading="lazy"
               />
             </div>
           </div>
@@ -376,8 +268,13 @@ export default function AllOnFourImplantDetailView() {
                     {pkg.brand}
                   </span>
 
-                  <div style={{ marginBottom: '1.25rem' }}>
-                    <MediaPlaceholder num={pkg.placeholderNum} label={`${pkg.name} Specimen`} type="image" color={pkg.color} aspectRatio="16/9" />
+                  <div style={{ borderRadius: '12px', overflow: 'hidden', marginBottom: '1.25rem', height: '180px' }}>
+                    <img
+                      src={pkg.img}
+                      alt={pkg.name}
+                      style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                      loading="lazy"
+                    />
                   </div>
 
                   <div style={{ display: 'flex', justifyContent: 'space-between', padding: '0.65rem 0.85rem', backgroundColor: '#f8fafc', borderRadius: '10px', fontSize: '0.84rem', color: '#334155', marginBottom: '1rem', fontWeight: 600 }}>
