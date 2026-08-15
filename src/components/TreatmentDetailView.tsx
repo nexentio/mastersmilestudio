@@ -4,6 +4,9 @@ import React, { useState } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
 import { Link } from '@/i18n/routing';
 import { SITE_CONFIG, getWhatsAppLink } from '@/config/site';
+import TreatmentReviewsSection from '@/components/treatment-sections/TreatmentReviewsSection';
+import TreatmentBeforeAfterSliderSection from '@/components/treatment-sections/TreatmentBeforeAfterSliderSection';
+import TreatmentInteractiveQuoteForm from '@/components/treatment-sections/TreatmentInteractiveQuoteForm';
 
 interface MediaPlaceholderProps {
   num: number | string;
@@ -976,6 +979,15 @@ export default function TreatmentDetailView() {
           </div>
         </div>
       </section>
+
+      {/* Before & After Transformations Gallery */}
+      <TreatmentBeforeAfterSliderSection />
+
+      {/* Patient Reviews on Google & Trustpilot 5-Star Slider */}
+      <TreatmentReviewsSection />
+
+      {/* Interactive Step-by-Step Smile Plan & Consultation Quote Form */}
+      <TreatmentInteractiveQuoteForm defaultTreatment="Full Mouth Implants" />
 
       {/* 11. Section SSS: Frequently Asked Questions */}
       <section style={{ padding: '5rem 1.5rem', maxWidth: '960px', margin: '0 auto' }}>

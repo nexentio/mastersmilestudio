@@ -38,16 +38,16 @@ const TREATMENTS_NAV_TREE: TreatmentCategory[] = [
   {
     id: 'implants',
     title: { tr: 'Dental İmplant', en: 'Dental Implants', de: 'Zahnimplantate', ru: 'Имплантация зубов', es: 'Implantes Dentales', pt: 'Implantes Dentários', pl: 'Implanty Zębowe' },
-    href: '/treatments#implants',
+    href: '/treatments/dental-implants',
     subitems: [
-      { title: { tr: 'Tüm Ağız İmplant (Full Mouth)', en: 'Full Mouth Implants', de: 'Vollmund-Implantate', ru: 'Имплантация всей челюсти', es: 'Implantes de Boca Completa', pt: 'Implantes de Boca Completa', pl: 'Implanty Całej Szczęki' }, href: '/treatments#full-mouth' },
-      { title: { tr: 'All-on-4 İmplant Tedavisi', en: 'All-on-4 Implants', de: 'All-on-4 Implantate', ru: 'Имплантация All-on-4', es: 'Implantes All-on-4', pt: 'Implantes All-on-4', pl: 'Implanty All-on-4' }, href: '/treatments#all-on-4' },
-      { title: { tr: 'All-on-6 İmplant Tedavisi', en: 'All-on-6 Implants', de: 'All-on-6 Implantate', ru: 'Имплантация All-on-6', es: 'Implantes All-on-6', pt: 'Implantes All-on-6', pl: 'Implanty All-on-6' }, href: '/treatments#all-on-6' },
-      { title: { tr: 'Aynı Gün İmplant (Immediate)', en: 'Immediate Implant Treatment', de: 'Sofortimplantate', ru: 'Одномоментная имплантация', es: 'Implantes Inmediatos', pt: 'Implantes Imediatos', pl: 'Implanty Natychmiastowe' }, href: '/treatments#immediate' },
-      { title: { tr: 'Zigoma & Pterigoid İmplant', en: 'Zygomatic and Pterygoid Implants', de: 'Jochbein- & Pterygoidimplantate', ru: 'Зигоматические импланты', es: 'Implantes Cigomáticos', pt: 'Implantes Zigomáticos', pl: 'Implanty Jarzmowe' }, href: '/treatments#zygomatic' },
-      { title: { tr: 'Zirkonyum İmplant', en: 'Zirconium Implants', de: 'Zirkonimplantate', ru: 'Циркониевые импланты', es: 'Implantes de Circonio', pt: 'Implantes de Zircónia', pl: 'Implanty Cyrkonowe' }, href: '/treatments#zirconium-implants' },
-      { title: { tr: 'İmplant Destekli Protez', en: 'Implant Supported Dentures', de: 'Implantatgetragene Prothesen', ru: 'Протезы на имплантах', es: 'Prótesis sobre Implantes', pt: 'Próteses sobre Implantes', pl: 'Protezy na Implantach' }, href: '/treatments#implant-dentures' },
-      { title: { tr: 'Sinüs Lift & Kemik Grefti', en: 'Sinus Lifting', de: 'Sinuslift & Knochenaufbau', ru: 'Синус-лифтинг и костная пластика', es: 'Elevación de Seno Maxilar', pt: 'Elevação de Seio Maxilar', pl: 'Podniesienie Dna Zatoki' }, href: '/treatments#sinus-lift' },
+      { title: { tr: 'Tüm Ağız İmplant (Full Mouth)', en: 'Full Mouth Implants', de: 'Vollmund-Implantate', ru: 'Имплантация всей челюсти', es: 'Implantes de Boca Completa', pt: 'Implantes de Boca Completa', pl: 'Implanty Całej Szczęki' }, href: '/treatments/dental-implants/full-mouth-implants' },
+      { title: { tr: 'All-on-4 İmplant Tedavisi', en: 'All-on-4 Implants', de: 'All-on-4 Implantate', ru: 'Имплантация All-on-4', es: 'Implantes All-on-4', pt: 'Implantes All-on-4', pl: 'Implanty All-on-4' }, href: '/treatments/dental-implants/all-on-4-implants' },
+      { title: { tr: 'All-on-6 İmplant Tedavisi', en: 'All-on-6 Implants', de: 'All-on-6 Implantate', ru: 'Имплантация All-on-6', es: 'Implantes All-on-6', pt: 'Implantes All-on-6', pl: 'Implanty All-on-6' }, href: '/treatments/dental-implants/all-on-6-implants' },
+      { title: { tr: 'Aynı Gün İmplant (Immediate)', en: 'Immediate Implant Treatment', de: 'Sofortimplantate', ru: 'Одномоментная имплантация', es: 'Implantes Inmediatos', pt: 'Implantes Imediatos', pl: 'Implanty Natychmiastowe' }, href: '/treatments/dental-implants/immediate-implant-treatment' },
+      { title: { tr: 'Zigoma & Pterigoid İmplant', en: 'Zygomatic and Pterygoid Implants', de: 'Jochbein- & Pterygoidimplantate', ru: 'Зигоматические импланты', es: 'Implantes Cigomáticos', pt: 'Implantes Zigomáticos', pl: 'Implanty Jarzmowe' }, href: '/treatments/dental-implants/zygomatic-implants' },
+      { title: { tr: 'Zirkonyum İmplant', en: 'Zirconium Implants', de: 'Zirkonimplantate', ru: 'Циркониевые импланты', es: 'Implantes de Circonio', pt: 'Implantes de Zircónia', pl: 'Implanty Cyrkonowe' }, href: '/treatments/dental-implants/zirconium-implants' },
+      { title: { tr: 'İmplant Destekli Protez', en: 'Implant Supported Dentures', de: 'Implantatgetragene Prothesen', ru: 'Протезы на имплантах', es: 'Prótesis sobre Implantes', pt: 'Próteses sobre Implantes', pl: 'Protezy na Implantach' }, href: '/treatments/dental-implants/implant-supported-dentures' },
+      { title: { tr: 'Sinüs Lift & Kemik Grefti', en: 'Sinus Lifting', de: 'Sinuslift & Knochenaufbau', ru: 'Синус-лифтинг и костная пластика', es: 'Elevación de Seno Maxilar', pt: 'Elevação de Seio Maxilar', pl: 'Podniesienie Dna Zatoki' }, href: '/treatments/dental-implants/sinus-lifting' },
     ],
   },
   {
@@ -138,12 +138,19 @@ export default function Header() {
   const t = useTranslations('common');
   const locale = useLocale();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [mobileTreatmentsOpen, setMobileTreatmentsOpen] = useState(false);
-  const [mobileExploreOpen, setMobileExploreOpen] = useState(false);
-  const [activeMobileCat, setActiveMobileCat] = useState<string | null>(null);
+  const [mobileView, setMobileView] = useState<'main' | 'treatments' | 'explore' | 'treatment-category'>('main');
+  const [selectedCategory, setSelectedCategory] = useState<typeof TREATMENTS_NAV_TREE[0] | null>(null);
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<'treatments' | 'explore' | null>(null);
   const [hoveredCategory, setHoveredCategory] = useState<string | null>(null);
+
+  const handleCloseMobileMenu = () => {
+    setMobileMenuOpen(false);
+    setTimeout(() => {
+      setMobileView('main');
+      setSelectedCategory(null);
+    }, 250);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -286,19 +293,22 @@ export default function Header() {
       {/* Main Global Navigation Bar */}
       <header
         style={{
-          position: 'sticky',
+          position: mobileMenuOpen ? 'fixed' : 'sticky',
           top: 0,
-          zIndex: 50,
+          left: 0,
+          right: 0,
+          zIndex: 1000000,
           width: '100%',
-          backgroundColor: isScrolled ? 'rgba(255, 255, 255, 0.94)' : 'rgba(255, 255, 255, 0.85)',
-          backdropFilter: 'blur(16px)',
-          WebkitBackdropFilter: 'blur(16px)',
-          borderBottom: isScrolled ? '1px solid rgba(226, 232, 240, 0.9)' : '1px solid rgba(241, 245, 249, 0.8)',
-          boxShadow: isScrolled ? '0 4px 20px -2px rgba(0, 0, 0, 0.08)' : '0 1px 3px rgba(0, 0, 0, 0.02)',
-          transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+          backgroundColor: (mobileMenuOpen || isScrolled) ? '#ffffff' : 'rgba(255, 255, 255, 0.85)',
+          backdropFilter: (mobileMenuOpen || isScrolled) ? 'none' : 'blur(16px)',
+          WebkitBackdropFilter: (mobileMenuOpen || isScrolled) ? 'none' : 'blur(16px)',
+          borderBottom: isScrolled || mobileMenuOpen ? '1px solid rgba(226, 232, 240, 0.9)' : '1px solid rgba(241, 245, 249, 0.8)',
+          boxShadow: isScrolled && !mobileMenuOpen ? '0 4px 20px -2px rgba(0, 0, 0, 0.08)' : 'none',
+          transition: 'padding 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
         }}
       >
         <div
+          className="header-main-nav"
           style={{
             width: '94%',
             maxWidth: '1400px',
@@ -314,6 +324,7 @@ export default function Header() {
           {/* Logo Section (Responsive: Compact on Mobile, Full on Desktop) */}
           <Link
             href="/"
+            onClick={handleCloseMobileMenu}
             style={{
               display: 'flex',
               alignItems: 'center',
@@ -626,27 +637,33 @@ export default function Header() {
               </div>
             </a>
 
-            {/* Mobile Hamburger Button with Smooth Micro-interactions */}
+            {/* Mobile Hamburger / Morphing Close (X) Button (Clean & Seamless) */}
             <button
               type="button"
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              onClick={() => {
+                if (mobileMenuOpen) {
+                  handleCloseMobileMenu();
+                } else {
+                  setMobileMenuOpen(true);
+                }
+              }}
               style={{
-                backgroundColor: mobileMenuOpen ? '#0f172a' : '#f1f5f9',
-                color: mobileMenuOpen ? '#ffffff' : '#0f172a',
-                border: '1px solid #e2e8f0',
-                borderRadius: '10px',
+                backgroundColor: 'transparent',
+                color: '#0f172a',
+                border: 'none',
                 cursor: 'pointer',
-                width: '40px',
-                height: '40px',
+                width: '38px',
+                height: '38px',
+                display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
                 padding: 0,
-                transition: 'all 0.25s ease',
+                transition: 'all 0.2s ease',
               }}
               className="mobile-toggle"
               aria-label="Toggle Navigation Menu"
             >
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                 {mobileMenuOpen ? (
                   <path d="M18 6L6 18M6 6l12 12" />
                 ) : (
@@ -658,255 +675,291 @@ export default function Header() {
         </div>
       </header>
 
-      {/* Enhanced Mobile Drawer Full Screen Overlay (Zero cut-off, gold-standard UX) */}
+      {/* Enhanced Mobile Drawer (Full Viewport Behind Permanent Header, Zero-Shift, Zero-Repaint) */}
       {mobileMenuOpen && (
         <div
           style={{
             position: 'fixed',
             inset: 0,
-            zIndex: 99999,
+            width: '100vw',
+            height: '100dvh',
+            maxHeight: '100dvh',
+            zIndex: 999998,
             backgroundColor: '#ffffff',
             display: 'flex',
             flexDirection: 'column',
+            overflow: 'hidden',
+            paddingTop: '52px',
+            boxSizing: 'border-box',
           }}
           className="mobile-menu-drawer"
         >
-          {/* Top Bar of Mobile Drawer with Logo + Close Button */}
-          <div
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'space-between',
-              padding: '0.75rem 1.25rem',
-              borderBottom: '1px solid #f1f5f9',
-              backgroundColor: '#ffffff',
-              flexShrink: 0,
-            }}
-          >
-            <Link
-              href="/"
-              onClick={() => setMobileMenuOpen(false)}
-              style={{ display: 'flex', alignItems: 'center' }}
-            >
-              <div style={{ position: 'relative', width: '130px', height: '32px' }}>
-                <Image
-                  src="/logo-mastersmilestudio-no-bg.webp"
-                  alt="Master Smile Studio Logo"
-                  fill
-                  priority
-                  sizes="130px"
-                  style={{
-                    objectFit: 'contain',
-                    objectPosition: 'left center',
-                    filter: 'brightness(0)',
-                  }}
-                />
-              </div>
-            </Link>
-
-            {/* Prominent Close (X) Button */}
-            <button
-              type="button"
-              onClick={() => setMobileMenuOpen(false)}
-              style={{
-                width: '40px',
-                height: '40px',
-                borderRadius: '10px',
-                backgroundColor: '#f1f5f9',
-                color: '#0f172a',
-                border: '1px solid #e2e8f0',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                cursor: 'pointer',
-              }}
-              aria-label="Close Menu"
-            >
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M18 6L6 18M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-
-          {/* Smooth Scrollable Menu Body */}
+          {/* Zero-Scroll Middle Body Container */}
           <div
             style={{
               flex: 1,
-              overflowY: 'auto',
-              WebkitOverflowScrolling: 'touch',
-              padding: '1.25rem 1.25rem 4rem 1.25rem',
+              overflow: 'hidden',
+              padding: '0.65rem 1.25rem',
               display: 'flex',
               flexDirection: 'column',
-              gap: '0.85rem',
+              justifyContent: 'space-between',
             }}
           >
-            {/* 1. Expandable Treatments Accordion */}
-            <div style={{ border: '1px solid #e2e8f0', borderRadius: '14px', overflow: 'hidden', backgroundColor: '#f8fafc' }}>
+            {/* VIEW 1: Main Menu Root (Huge Typography, Perfectly Fitted) */}
+            {mobileView === 'main' && (
               <div
-                onClick={() => setMobileTreatmentsOpen(!mobileTreatmentsOpen)}
+                className="mobile-drilldown-view"
                 style={{
+                  flex: 1,
                   display: 'flex',
+                  flexDirection: 'column',
+                  justifyContent: 'space-evenly',
                   alignItems: 'center',
-                  justifyContent: 'space-between',
-                  padding: '0.95rem 1.15rem',
-                  cursor: 'pointer',
-                  fontWeight: 700,
-                  fontSize: '1.05rem',
-                  color: mobileTreatmentsOpen ? '#D58936' : '#0f172a',
-                  backgroundColor: '#ffffff',
+                  textAlign: 'center',
+                  padding: '0.5rem 0',
                 }}
               >
-                <span>{t('navigation.treatments')}</span>
-                <svg
-                  width="18"
-                  height="18"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2.5"
-                  style={{
-                    transform: mobileTreatmentsOpen ? 'rotate(180deg)' : 'rotate(0deg)',
-                    transition: 'transform 0.2s ease',
-                  }}
+                {/* 1. Treatments Drill-Down Trigger */}
+                <button
+                  type="button"
+                  onClick={() => setMobileView('treatments')}
+                  className="mobile-main-hero-link"
                 >
-                  <path d="M6 9l6 6 6-6" />
-                </svg>
+                  <span>{t('navigation.treatments')}</span>
+                  <span style={{ color: '#D58936', fontSize: '1.6rem', fontWeight: 300 }}>›</span>
+                </button>
+
+                {/* 2. Explore Drill-Down Trigger */}
+                <button
+                  type="button"
+                  onClick={() => setMobileView('explore')}
+                  className="mobile-main-hero-link"
+                >
+                  <span>{t('navigation.explore')}</span>
+                  <span style={{ color: '#D58936', fontSize: '1.6rem', fontWeight: 300 }}>›</span>
+                </button>
+
+                {/* 3. About Link */}
+                <Link
+                  href="/about"
+                  onClick={handleCloseMobileMenu}
+                  className="mobile-main-hero-link"
+                >
+                  <span>{t('navigation.about')}</span>
+                </Link>
+
+                {/* 4. Contact Link */}
+                <Link
+                  href="/contact"
+                  onClick={handleCloseMobileMenu}
+                  className="mobile-main-hero-link"
+                >
+                  <span>{t('navigation.contact')}</span>
+                </Link>
               </div>
+            )}
 
-              {mobileTreatmentsOpen && (
-                <div style={{ padding: '0.75rem', display: 'flex', flexDirection: 'column', gap: '0.4rem', borderTop: '1px solid #f1f5f9' }}>
-                  {TREATMENTS_NAV_TREE.map((cat) => {
-                    const isCatOpen = activeMobileCat === cat.id;
-                    return (
-                      <div key={cat.id} style={{ borderRadius: '10px', overflow: 'hidden', backgroundColor: '#ffffff', border: '1px solid #f1f5f9' }}>
-                        <div
-                          onClick={() => setActiveMobileCat(isCatOpen ? null : cat.id)}
-                          style={{
-                            display: 'flex',
-                            alignItems: 'center',
-                            justifyContent: 'space-between',
-                            padding: '0.75rem 1rem',
-                            cursor: 'pointer',
-                            fontSize: '0.92rem',
-                            fontWeight: 600,
-                            color: isCatOpen ? '#D58936' : '#334155',
-                          }}
-                        >
-                          <span>{getLocalized(cat.title)}</span>
-                          <svg
-                            width="14"
-                            height="14"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            strokeWidth="2.5"
-                            style={{
-                              transform: isCatOpen ? 'rotate(180deg)' : 'rotate(0deg)',
-                              transition: 'transform 0.2s ease',
-                            }}
-                          >
-                            <path d="M6 9l6 6 6-6" />
-                          </svg>
-                        </div>
+            {/* VIEW 2: Treatments Level 1 (With Treatments Anchor Item, Centered, Large Font, Borderless) */}
+            {mobileView === 'treatments' && (() => {
+              return (
+                <div className="mobile-drilldown-view" style={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+                  {/* Header Back Bar */}
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', paddingBottom: '0.4rem', borderBottom: '1px solid #f1f5f9' }}>
+                    <button
+                      type="button"
+                      onClick={() => setMobileView('main')}
+                      className="mobile-back-btn"
+                    >
+                      <span style={{ fontSize: '1.15rem', lineHeight: 1, fontWeight: 400 }}>‹</span>
+                      <span>{locale === 'tr' ? 'Ana Menü' : 'Main Menu'}</span>
+                    </button>
+                    <span style={{ fontSize: '0.8rem', fontWeight: 750, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
+                      {t('navigation.treatments')}
+                    </span>
+                  </div>
 
-                        {isCatOpen && (
-                          <div style={{ padding: '0.4rem 0.6rem 0.6rem 0.6rem', display: 'flex', flexDirection: 'column', gap: '0.2rem', backgroundColor: '#fafafa', borderTop: '1px solid #f1f5f9' }}>
-                            {cat.subitems.map((sub, sIdx) => (
-                              <Link
-                                key={sIdx}
-                                href={sub.href}
-                                onClick={() => setMobileMenuOpen(false)}
-                                className="mobile-sub-link"
-                              >
-                                <span>{getLocalized(sub.title)}</span>
-                                <span style={{ color: '#D58936' }}>›</span>
-                              </Link>
-                            ))}
-                          </div>
-                        )}
-                      </div>
-                    );
-                  })}
+                  {/* 8 Treatment Items (Treatments Anchor + 7 Categories) */}
+                  <div
+                    style={{
+                      flex: 1,
+                      display: 'flex',
+                      flexDirection: 'column',
+                      justifyContent: 'space-evenly',
+                      alignItems: 'center',
+                      textAlign: 'center',
+                      padding: '0.35rem 0',
+                    }}
+                  >
+                    {/* Anchor: All Treatments Overview Direct Link */}
+                    <Link
+                      href="/treatments"
+                      onClick={handleCloseMobileMenu}
+                      className="mobile-drilldown-text-link"
+                      style={{ fontSize: 'clamp(1.05rem, 2.5vh, 1.25rem)' }}
+                    >
+                      <span>{t('navigation.treatments')}</span>
+                      <span style={{ color: '#D58936', fontSize: '1.25rem', fontWeight: 300 }}>›</span>
+                    </Link>
+
+                    {/* 7 Category Sub-menus */}
+                    {TREATMENTS_NAV_TREE.map((cat) => (
+                      <button
+                        key={cat.id}
+                        type="button"
+                        onClick={() => {
+                          setSelectedCategory(cat);
+                          setMobileView('treatment-category');
+                        }}
+                        className="mobile-drilldown-text-link"
+                        style={{ fontSize: 'clamp(1.05rem, 2.5vh, 1.25rem)' }}
+                      >
+                        <span>{getLocalized(cat.title)}</span>
+                        <span style={{ color: '#D58936', fontSize: '1.25rem', fontWeight: 300 }}>›</span>
+                      </button>
+                    ))}
+                  </div>
                 </div>
-              )}
-            </div>
+              );
+            })()}
 
-            {/* 2. Expandable Explore Accordion */}
-            <div style={{ border: '1px solid #e2e8f0', borderRadius: '14px', overflow: 'hidden', backgroundColor: '#f8fafc' }}>
-              <div
-                onClick={() => setMobileExploreOpen(!mobileExploreOpen)}
-                style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'space-between',
-                  padding: '0.95rem 1.15rem',
-                  cursor: 'pointer',
-                  fontWeight: 700,
-                  fontSize: '1.05rem',
-                  color: mobileExploreOpen ? '#D58936' : '#0f172a',
-                  backgroundColor: '#ffffff',
-                }}
-              >
-                <span>{t('navigation.explore')}</span>
-                <svg
-                  width="18"
-                  height="18"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2.5"
+            {/* VIEW 3: Specific Treatment Category Subitems (With Parent Anchor Item, Proportionally Scaled, Centered, Borderless) */}
+            {mobileView === 'treatment-category' && selectedCategory && (() => {
+              const allCategoryItems = [
+                { title: selectedCategory.title, href: selectedCategory.href, isParent: true },
+                ...selectedCategory.subitems,
+              ];
+              const count = allCategoryItems.length;
+              const dynamicFontSize = count <= 4
+                ? 'clamp(1.45rem, 4.2vh, 1.95rem)'
+                : count <= 6
+                ? 'clamp(1.26rem, 3.3vh, 1.55rem)'
+                : count <= 7
+                ? 'clamp(1.12rem, 2.8vh, 1.35rem)'
+                : 'clamp(0.94rem, 2.25vh, 1.15rem)';
+              const dynamicFontWeight = count <= 4 ? 750 : count <= 6 ? 700 : 650;
+
+              return (
+                <div className="mobile-drilldown-view" style={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+                  {/* Header Back Bar */}
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', paddingBottom: '0.4rem', borderBottom: '1px solid #f1f5f9' }}>
+                    <button
+                      type="button"
+                      onClick={() => setMobileView('treatments')}
+                      className="mobile-back-btn"
+                    >
+                      <span style={{ fontSize: '1.15rem', lineHeight: 1, fontWeight: 400 }}>‹</span>
+                      <span>{locale === 'tr' ? 'Tedaviler' : 'All Treatments'}</span>
+                    </button>
+                    <span style={{ fontSize: '0.8rem', fontWeight: 750, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
+                      {getLocalized(selectedCategory.title)}
+                    </span>
+                  </div>
+
+                  {/* Complete List (Parent Category Anchor + All Sub-treatments) */}
+                  <div
+                    style={{
+                      flex: 1,
+                      display: 'flex',
+                      flexDirection: 'column',
+                      justifyContent: 'space-evenly',
+                      alignItems: 'center',
+                      textAlign: 'center',
+                      padding: '0.35rem 0',
+                    }}
+                  >
+                    {allCategoryItems.map((item, idx) => (
+                      <Link
+                        key={idx}
+                        href={item.href}
+                        onClick={handleCloseMobileMenu}
+                        className="mobile-subitem-text-link"
+                        style={{
+                          fontSize: dynamicFontSize,
+                          fontWeight: 700,
+                          color: '#0f172a',
+                        }}
+                      >
+                        <span>{getLocalized(item.title)}</span>
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              );
+            })()}
+
+            {/* VIEW 4: Explore Menu Items (With Explore Anchor Item, Centered, Large, Borderless, Direct Links) */}
+            {mobileView === 'explore' && (
+              <div className="mobile-drilldown-view" style={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+                {/* Header Back Bar */}
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', paddingBottom: '0.4rem', borderBottom: '1px solid #f1f5f9' }}>
+                  <button
+                    type="button"
+                    onClick={() => setMobileView('main')}
+                    className="mobile-back-btn"
+                  >
+                    <span style={{ fontSize: '1.15rem', lineHeight: 1, fontWeight: 400 }}>‹</span>
+                    <span>{locale === 'tr' ? 'Ana Menü' : 'Main Menu'}</span>
+                  </button>
+                  <span style={{ fontSize: '0.8rem', fontWeight: 750, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
+                    {t('navigation.explore')}
+                  </span>
+                </div>
+
+                {/* Explore Links (Explore Anchor + 7 Explore Sub-links) */}
+                <div
                   style={{
-                    transform: mobileExploreOpen ? 'rotate(180deg)' : 'rotate(0deg)',
-                    transition: 'transform 0.2s ease',
+                    flex: 1,
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'space-evenly',
+                    alignItems: 'center',
+                    textAlign: 'center',
+                    padding: '0.35rem 0',
                   }}
                 >
-                  <path d="M6 9l6 6 6-6" />
-                </svg>
-              </div>
+                  {/* Anchor: Explore Overview Link */}
+                  <Link
+                    href="/gallery"
+                    onClick={handleCloseMobileMenu}
+                    className="mobile-drilldown-text-link"
+                    style={{ fontSize: 'clamp(1.05rem, 2.5vh, 1.25rem)' }}
+                  >
+                    <span>{t('navigation.explore')}</span>
+                  </Link>
 
-              {mobileExploreOpen && (
-                <div style={{ padding: '0.6rem', display: 'flex', flexDirection: 'column', gap: '0.3rem', borderTop: '1px solid #f1f5f9' }}>
+                  {/* 7 Explore Links */}
                   {EXPLORE_DROPDOWN.map((item, eIdx) => (
                     <Link
                       key={eIdx}
                       href={item.href}
-                      onClick={() => setMobileMenuOpen(false)}
-                      className="mobile-sub-link"
-                      style={{ backgroundColor: '#ffffff', border: '1px solid #f1f5f9' }}
+                      onClick={handleCloseMobileMenu}
+                      className="mobile-drilldown-text-link"
+                      style={{ fontSize: 'clamp(1.05rem, 2.5vh, 1.25rem)' }}
                     >
                       <span>{getLocalized(item.title)}</span>
-                      <span style={{ color: '#D58936' }}>›</span>
                     </Link>
                   ))}
                 </div>
-              )}
-            </div>
+              </div>
+            )}
 
-            {/* 3. Direct Link: About */}
-            <Link
-              href="/about"
-              onClick={() => setMobileMenuOpen(false)}
-              className="mobile-nav-link"
+            {/* Pinned Bottom Action Hub (WP & Journey Buttons Always at Bottom) */}
+            <div
+              style={{
+                width: '100%',
+                maxWidth: '360px',
+                margin: 'auto auto 0 auto',
+                paddingTop: '0.5rem',
+                paddingBottom: 'calc(env(safe-area-inset-bottom, 0px) + 0.5rem)',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '0.45rem',
+                flexShrink: 0,
+              }}
             >
-              <span>{t('navigation.about')}</span>
-              <span style={{ color: '#94a3b8' }}>›</span>
-            </Link>
-
-            {/* 4. Direct Link: Contact */}
-            <Link
-              href="/contact"
-              onClick={() => setMobileMenuOpen(false)}
-              className="mobile-nav-link"
-            >
-              <span>{t('navigation.contact')}</span>
-              <span style={{ color: '#94a3b8' }}>›</span>
-            </Link>
-
-            {/* 5. Mobile Drawer Bottom Action Hub */}
-            <div style={{ marginTop: 'auto', paddingTop: '1.5rem', display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
               <Link
                 href="/contact"
-                onClick={() => setMobileMenuOpen(false)}
+                onClick={handleCloseMobileMenu}
                 style={{
                   display: 'flex',
                   alignItems: 'center',
@@ -914,12 +967,12 @@ export default function Header() {
                   gap: '0.5rem',
                   backgroundColor: '#D58936',
                   color: '#ffffff',
-                  padding: '0.95rem 1.5rem',
+                  padding: '0.85rem 1.5rem',
                   borderRadius: '9999px',
                   fontWeight: 700,
-                  fontSize: '0.98rem',
+                  fontSize: '0.96rem',
                   textDecoration: 'none',
-                  boxShadow: '0 8px 20px rgba(213, 137, 54, 0.4)',
+                  boxShadow: '0 6px 18px rgba(213, 137, 54, 0.35)',
                 }}
               >
                 <span>{locale === 'tr' ? 'Gülüş Yolculuğunu Başlat' : 'Start My Smile Journey'}</span>
@@ -934,25 +987,24 @@ export default function Header() {
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  gap: '0.6rem',
+                  gap: '0.5rem',
                   backgroundColor: '#22c55e',
                   color: '#ffffff',
-                  padding: '0.85rem 1.5rem',
+                  padding: '0.75rem 1.25rem',
                   borderRadius: '9999px',
                   fontWeight: 700,
-                  fontSize: '0.95rem',
+                  fontSize: '0.92rem',
                   textDecoration: 'none',
-                  boxShadow: '0 6px 18px rgba(34, 197, 94, 0.3)',
+                  boxShadow: '0 4px 14px rgba(34, 197, 94, 0.25)',
                 }}
               >
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.971.54 1.764.814 2.8.814 3.18 0 5.766-2.587 5.766-5.766 0-3.18-2.586-5.766-5.77-5.766zm0 10.355c-.933 0-1.636-.263-2.383-.717l-.17-.104-1.77.464.473-1.727-.113-.18c-.49-.785-.778-1.579-.778-2.325 0-2.531 2.059-4.59 4.592-4.59 2.532 0 4.591 2.059 4.591 4.59 0 2.531-2.059 4.589-4.591 4.589z" />
                 </svg>
                 <span>WhatsApp 7/24 Support</span>
               </a>
 
-              {/* Trust Badge */}
-              <div style={{ textAlign: 'center', marginTop: '0.5rem', fontSize: '0.78rem', color: '#64748b' }}>
+              <div style={{ textAlign: 'center', fontSize: '0.76rem', color: '#64748b' }}>
                 <span style={{ color: '#f59e0b', fontWeight: 700 }}>★★★★★</span> 4.9/5 Google Reviews • Antalya, Turkey
               </div>
             </div>

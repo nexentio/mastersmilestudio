@@ -1,0 +1,461 @@
+/* ==========================================================================
+   NAVIGATION, HEADER, DROPDOWNS & MOBILE DRAWER STYLES
+   ========================================================================== */
+
+/* Header Links & Elements Hover Effects */
+.nav-link-item {
+  position: relative;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  padding: 0.45rem 0.85rem;
+  border-radius: 9999px;
+}
+
+.nav-link-item:hover {
+  color: #0f172a !important;
+  background-color: #f1f5f9 !important;
+}
+
+.header-logo-link {
+  transition: transform 0.25s ease !important;
+}
+
+.header-logo-link:hover {
+  transform: scale(1.03) !important;
+}
+
+.lang-switcher-trigger {
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.lang-switcher-trigger:hover {
+  border-color: #cbd5e1 !important;
+  background-color: #f8fafc !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Compact Navigation Dropdown Menus (White/Light Theme) */
+.dropdown-menu-card {
+  width: max-content;
+  min-width: 220px;
+  background-color: #ffffff;
+  border-radius: 14px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 16px 36px -4px rgba(0, 0, 0, 0.1), 0 4px 12px rgba(0, 0, 0, 0.04);
+  padding: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.dropdown-item-link {
+  padding: 0.6rem 0.95rem;
+  border-radius: 8px;
+  font-size: 0.86rem;
+  font-weight: 500;
+  color: #334155;
+  text-decoration: none;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.dropdown-item-link:hover,
+.dropdown-item-link.active-flyout {
+  background-color: #f8fafc !important;
+  color: #D58936 !important;
+  padding-left: 1.15rem !important;
+}
+
+.dropdown-item-link:hover svg,
+.dropdown-item-link.active-flyout svg {
+  stroke: #D58936 !important;
+  transform: translateX(2px);
+  opacity: 1 !important;
+}
+
+/* 2nd Level Flyout Submenu Card */
+.dropdown-subcard {
+  position: absolute;
+  left: calc(100% + 4px);
+  top: -4px;
+  width: max-content;
+  min-width: 230px;
+  background-color: #ffffff;
+  border-radius: 14px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 16px 36px -4px rgba(0, 0, 0, 0.12), 0 4px 12px rgba(0, 0, 0, 0.04);
+  padding: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  z-index: 110;
+}
+
+/* Pinned Start My Journey Side Tab */
+.start-journey-side-tab {
+  position: fixed;
+  left: 0;
+  top: 38%;
+  z-index: 45;
+  background-color: #D58936;
+  color: #ffffff;
+  padding: 0.75rem 0.85rem 0.75rem 0.65rem;
+  border-radius: 12px 0 0 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-right: none;
+  box-shadow: 4px 0 20px rgba(0, 0, 0, 0.3);
+  font-weight: 750;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.start-journey-side-tab:hover {
+  background-color: #b87128 !important;
+  box-shadow: 6px 0 24px rgba(213, 137, 54, 0.45) !important;
+  transform: rotate(180deg) translateX(2px) !important;
+}
+
+/* Social Icon Buttons */
+.social-icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  color: #ffffff;
+  transition: transform 0.2s ease;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.social-icon-btn:hover {
+  transform: translateY(-2px) scale(1.08);
+}
+
+.social-icon-ig {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.social-icon-yt {
+  background-color: #ff0000;
+}
+
+.social-icon-fb {
+  background-color: #1877f2;
+}
+
+.social-icon-wa {
+  background-color: #25d366;
+}
+
+.social-icon-mail {
+  background-color: #0d9488;
+}
+
+/* Mobile Header UI/UX Enhancements & SSR FOUC Prevention */
+.header-logo-container {
+  position: relative;
+  width: 185px;
+  height: 46px;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.top-bar-inner {
+  width: 94%;
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: #D58936;
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.4rem 1.25rem;
+  border-radius: 0 0 16px 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: nowrap;
+}
+
+/* Mobile-First Navigation (Prevents desktop nav flashing on mobile SSR) */
+.desktop-nav {
+  display: none !important;
+}
+
+.mobile-toggle {
+  display: flex !important;
+}
+
+.customer-service-btn {
+  display: none !important;
+}
+
+@media (max-width: 868px) {
+  .header-logo-container {
+    width: 125px !important;
+    height: 30px !important;
+  }
+  .header-main-nav {
+    height: 52px !important;
+    padding: 0.45rem 1rem !important;
+  }
+  .top-bar-inner {
+    justify-content: center !important;
+    padding: 0.35rem 0.75rem !important;
+    font-size: 0.73rem !important;
+    border-radius: 0 0 10px 10px !important;
+  }
+  .top-bar-socials {
+    display: none !important;
+  }
+  .top-bar-subtext {
+    display: none !important;
+  }
+}
+
+@media (min-width: 869px) {
+  .desktop-nav {
+    display: flex !important;
+    align-items: center;
+  }
+  .mobile-toggle {
+    display: none !important;
+  }
+  .customer-service-btn {
+    display: inline-flex !important;
+  }
+}
+
+/* Mobile Menu Drawer */
+.mobile-menu-drawer {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100dvh;
+  max-height: 100dvh;
+  z-index: 999999;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.mobile-nav-link-centered {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 1.45rem;
+  font-weight: 600;
+  color: #0f172a;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  letter-spacing: -0.02em;
+  transition: all 0.2s ease;
+  width: auto;
+  max-width: 100%;
+}
+
+.mobile-nav-link-centered:hover,
+.mobile-nav-link-centered:active {
+  color: #D58936;
+  background-color: #fff7ed;
+}
+
+.mobile-main-hero-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  font-size: clamp(1.85rem, 5.4vh, 2.6rem);
+  font-weight: 750;
+  color: #0f172a;
+  text-decoration: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  letter-spacing: -0.035em;
+  line-height: 1.1;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  width: auto;
+}
+
+.mobile-main-hero-link:hover,
+.mobile-main-hero-link:active {
+  color: #D58936;
+  transform: scale(1.04);
+}
+
+.mobile-drilldown-text-link,
+.mobile-subitem-text-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-family: inherit !important;
+  font-size: clamp(1.05rem, 2.5vh, 1.25rem);
+  font-weight: 700 !important;
+  color: #0f172a !important;
+  text-decoration: none !important;
+  border: none !important;
+  background: none !important;
+  cursor: pointer;
+  padding: 0.15rem 0.4rem;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  text-align: center;
+  width: auto;
+  max-width: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.mobile-drilldown-text-link:hover,
+.mobile-drilldown-text-link:active,
+.mobile-subitem-text-link:hover,
+.mobile-subitem-text-link:active {
+  color: #D58936 !important;
+  transform: scale(1.03);
+}
+
+.mobile-drilldown-view {
+  animation: fadeInDrilldown 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  width: 100%;
+}
+
+@keyframes fadeInDrilldown {
+  from {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile-drilldown-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.95rem 1.25rem;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #0f172a;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.mobile-drilldown-item:hover,
+.mobile-drilldown-item:active {
+  background-color: #fff7ed;
+  border-color: #fed7aa;
+  color: #D58936;
+}
+
+.mobile-back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.86rem;
+  font-weight: 650;
+  color: #0f172a;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  padding: 0.38rem 0.95rem;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.mobile-back-btn:hover,
+.mobile-back-btn:active {
+  background-color: #f1f5f9;
+  color: #000000;
+  border-color: #cbd5e1;
+}
+
+.mobile-sub-link-centered {
+  display: block;
+  text-align: center;
+  font-size: 0.98rem;
+  font-weight: 500;
+  color: #475569;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.mobile-sub-link-centered:hover,
+.mobile-sub-link-centered:active {
+  color: #D58936;
+  background-color: #f1f5f9;
+}
+
+.mobile-nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 1rem;
+  border-radius: 12px;
+  font-size: 1.02rem;
+  font-weight: 600;
+  color: #1e293b;
+  text-decoration: none;
+  background-color: #f8fafc;
+  border: 1px solid #f1f5f9;
+  transition: all 0.2s ease;
+}
+
+.mobile-nav-link:hover,
+.mobile-nav-link:active {
+  background-color: #f1f5f9;
+  color: #D58936;
+}
+
+.mobile-sub-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.65rem 0.85rem;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: #475569;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.mobile-sub-link:hover,
+.mobile-sub-link:active {
+  background-color: #fff7ed;
+  color: #D58936;
+  padding-left: 1.05rem;
+}
