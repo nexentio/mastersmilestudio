@@ -1,0 +1,62 @@
+.section {
+  padding: 4.5rem 0;
+  background-color: #ffffff;
+}
+
+.videoCard {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 18px;
+  overflow: hidden;
+  background-color: #09090b;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  margin-bottom: 2.5rem;
+}
+
+.videoCard iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.carouselHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 2rem;
+}
+
+.bannersGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.bannerCard {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+  background-color: #ffffff;
+}
+
+.bannerCard:hover {
+  transform: translateY(-4px);
+}
+
+.bannerImgWrap {
+  position: relative;
+  width: 100%;
+  height: 220px;
+}
+
+.bannerImgWrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}

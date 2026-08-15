@@ -1,0 +1,104 @@
+.section {
+  padding: 4.5rem 0;
+  background-color: #f8fafc;
+}
+
+.head {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
+  align-items: start;
+  margin-bottom: 2.5rem;
+}
+
+.box {
+  background-color: #f1f3f5;
+  border-radius: 24px;
+  padding: 2.5rem 3rem;
+}
+
+@media (max-width: 768px) {
+  .box {
+    padding: 1.5rem 1.25rem;
+    border-radius: 18px;
+  }
+}
+
+.item {
+  border-bottom: 1px solid #e2e8f0;
+  padding: 1.25rem 0;
+}
+
+.titleRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.iconBadge {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: #869d9e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.content {
+  padding: 1rem 0 0.5rem 4rem;
+  color: #334155;
+  font-size: 0.96rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding: 0.75rem 0 0.25rem 0;
+  }
+}
+
+.chevron {
+  color: #6b7280;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+
+.chevronOpen {
+  transform: rotate(180deg);
+}
+
+.contactPill {
+  background-color: #ffffff;
+  border: 1.5px solid #dca13c;
+  border-radius: 10px;
+  padding: 0.55rem 1.25rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: all 0.2s ease;
+}
+
+.contactPill:hover {
+  background-color: #fefce8;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(220, 161, 60, 0.2);
+}
+
+.contactIcon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.contactText {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #0c1b4d;
+}

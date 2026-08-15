@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { useLocale } from 'next-intl';
+import styles from './TreatmentReviewsSection.module.css';
 
 export default function TreatmentReviewsSection() {
   const locale = useLocale();
@@ -87,9 +88,33 @@ export default function TreatmentReviewsSection() {
       platformImg: 'https://sohodent.com/doc/static/yorumlar/google.webp',
     },
     {
-      name: 'Shadid Mahmood',
+      name: 'Marek Jankowski',
       comment:
-        'This was my second time returning where the latest technology enabled the efficiency and accuracy of my treatment. We are returning to the UK following the implants treatment completed and New full mouth of permanent teeth fitted.',
+        'Jestem pod ogromnym wrażeniem profesjonalizmu całego zespołu Master Smile Studio. Przyjechałem z Polski na pełną odbudowę uśmiechu (implanty All-on-6). Wszystko – od transferu z lotniska, przez luksusowy hotel, po bezbolesny zabieg – było zorganizowane perfekcyjnie. Lekarze to wybitni specjaliści z pasją. Mój nowy uśmiech wygląda niewiarygodnie naturalnie. Dziękuję!',
+      platformImg: 'https://sohodent.com/doc/static/yorumlar/trustpilot.webp',
+    },
+    {
+      name: 'Sarah Jenkins',
+      comment:
+        'Traveling from London to Istanbul for dental work was a huge decision for me, but Master Smile Studio made every single moment effortless and comfortable. The technology they use is far beyond anything I had seen before. The 3D planning, temporary teeth on the very first day, and the final zirconia crowns exceeded all my expectations. Highly recommended!',
+      platformImg: 'https://sohodent.com/doc/static/yorumlar/google.webp',
+    },
+    {
+      name: 'Sophie Dubois',
+      comment:
+        'Une expérience absolument formidable chez Master Smile Studio à Istanbul. L’équipe médicale est à l’écoute, bienveillante et d’une précision remarquable. Après des années d’hésitation, j’ai enfin retrouvé le plaisir de sourire sans complexe. Merci à toute l’équipe pour votre accueil chaleureux et vos soins de très haute qualité.',
+      platformImg: 'https://sohodent.com/doc/static/yorumlar/trustpilot.webp',
+    },
+    {
+      name: 'Michael Becker',
+      comment:
+        'Von der ersten Online-Beratung bis zum letzten Kontrolltermin lief alles absolut reibungslos. Das gesamte Team von Master Smile Studio spricht hervorragend Englisch und Deutsch, die Klinik ist hochmodern und extrem sauber. Meine Zahnimplantate sitzen perfekt und ich habe mich zu jedem Zeitpunkt sicher und bestens betreut gefühlt.',
+      platformImg: 'https://sohodent.com/doc/static/yorumlar/google.webp',
+    },
+    {
+      name: 'Elena Rossi',
+      comment:
+        'Clinica dentistica eccezionale! Ho fatto un trattamento combinato di faccette e sbiancamento dentale. Risultato impeccabile, naturale e luminoso. I dottori sono veri artisti del sorriso e il personale è incredibilmente gentile. Istanbul è una città meravigliosa e questo viaggio mi ha regalato il sorriso che ho sempre sognato.',
       platformImg: 'https://sohodent.com/doc/static/yorumlar/google.webp',
     },
   ];
@@ -106,7 +131,7 @@ export default function TreatmentReviewsSection() {
   };
 
   return (
-    <div className="treatment-reviews-wrapper">
+    <div className={styles.wrapper}>
       <div className="treatment-container">
         {/* Head */}
         <div className="head mb-12">
@@ -143,9 +168,9 @@ export default function TreatmentReviewsSection() {
         </div>
 
         {/* Reviews Grid */}
-        <div className="treatment-reviews-grid">
+        <div className={styles.grid}>
           {reviews.slice(startIndex, startIndex + visibleCount).map((rev, idx) => (
-            <div key={idx} className="treatment-review-card">
+            <div key={idx} className={styles.card}>
               <div>
                 <div className="flex items-center justify-between mb-3">
                   <div className="flex items-center gap-3">
@@ -153,18 +178,18 @@ export default function TreatmentReviewsSection() {
                       {rev.name.charAt(0)}
                     </div>
                     <div>
-                      <h4 className="treatment-review-author">{rev.name}</h4>
-                      <div className="treatment-review-rating">★★★★★</div>
+                      <h4 className={styles.author}>{rev.name}</h4>
+                      <div className={styles.rating}>★★★★★</div>
                     </div>
                   </div>
                 </div>
 
-                <p className="treatment-review-text">
+                <p className={styles.comment}>
                   &ldquo;{rev.comment}&rdquo;
                 </p>
               </div>
 
-              <div className="treatment-review-footer">
+              <div className={styles.footer}>
                 <span className="text-xs text-emerald-600 font-bold flex items-center gap-1">
                   <span>✓</span> Verified Patient
                 </span>

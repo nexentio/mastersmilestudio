@@ -1,0 +1,14 @@
+.dividerInner {
+  max-width: 1240px;
+  margin: 2.5rem auto;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dividerLineGold {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #ad9678, transparent);
+}

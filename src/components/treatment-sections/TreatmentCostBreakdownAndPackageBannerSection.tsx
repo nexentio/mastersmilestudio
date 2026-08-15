@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { useLocale } from 'next-intl';
 import TreatmentDivider from './TreatmentDivider';
+import styles from './TreatmentCostBreakdownAndPackageBannerSection.module.css';
 
 export default function TreatmentCostBreakdownAndPackageBannerSection() {
   const locale = useLocale();
@@ -45,12 +46,12 @@ export default function TreatmentCostBreakdownAndPackageBannerSection() {
   };
 
   return (
-    <section className="treatment-section-white">
+    <section className={styles.section}>
       <div className="treatment-container">
         <TreatmentDivider />
 
         {/* Video LR_r40rBzb4 */}
-        <div className="treatment-video-card">
+        <div className={styles.videoCard}>
           <iframe
             src="https://www.youtube.com/embed/LR_r40rBzb4"
             title="Dental Implant Costs in Istanbul Procedure Video"
@@ -129,7 +130,7 @@ export default function TreatmentCostBreakdownAndPackageBannerSection() {
 
         {/* Treatment Packages Carousel */}
         <div className="mt-12">
-          <div className="treatment-packages-carousel-header">
+          <div className={styles.carouselHeader}>
             <div>
               <h3 className="treatment-heading-title m-0">
                 {locale === 'tr' ? 'Tedavi Paketleri' : 'Treatment Packages'}
@@ -161,10 +162,10 @@ export default function TreatmentCostBreakdownAndPackageBannerSection() {
             </div>
           </div>
 
-          <div className="treatment-package-banners-grid">
+          <div className={styles.bannersGrid}>
             {packageBanners.slice(currentIdx, currentIdx + 3).map((item, idx) => (
-              <div key={idx} className="treatment-package-banner-card">
-                <div className="treatment-package-banner-img-wrap">
+              <div key={idx} className={styles.bannerCard}>
+                <div className={styles.bannerImgWrap}>
                   <img
                     src={item.img}
                     alt={item.title}

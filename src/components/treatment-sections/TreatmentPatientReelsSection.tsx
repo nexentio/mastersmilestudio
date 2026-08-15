@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { useLocale } from 'next-intl';
+import styles from './TreatmentPatientReelsSection.module.css';
 
 export default function TreatmentPatientReelsSection() {
   const locale = useLocale();
@@ -13,77 +14,95 @@ export default function TreatmentPatientReelsSection() {
       img: 'https://sohodent.com/doc/data1/file1_1765355633_1_11258.webp',
       alt: 'dental clinics istanbul',
       text: 'dental clinics istanbul',
-      videoUrl: 'https://www.youtube.com/embed/v5XoXnDblWI',
-    },
-    {
-      img: 'https://sohodent.com/doc/data1/pr1_file1_1765355500_1_76928.webp',
-      alt: 'dental clinic in istanbul turkey',
-      text: 'dental clinic in istanbul turkey',
-      videoUrl: 'https://www.youtube.com/embed/F_ULWgBZhjY',
-    },
-    {
-      img: 'https://sohodent.com/doc/data1/pr1_file1_1765355486_1_39145.webp',
-      alt: 'dental clinic in turkey',
-      text: 'dental clinic in turkey',
       videoUrl: 'https://www.youtube.com/embed/ZYMbU63b_PY',
     },
     {
-      img: 'https://sohodent.com/doc/data1/file1_1759311080_5_60786.webp',
-      alt: 'dental turkey clinic',
-      text: 'dental turkey clinic',
-      videoUrl: 'https://www.youtube.com/embed/z_D8n4-FDSE',
+      img: 'https://sohodent.com/doc/data1/file1_1765355648_1_11259.webp',
+      alt: 'best dental clinic istanbul',
+      text: 'best dental clinic istanbul',
+      videoUrl: 'https://www.youtube.com/embed/Be2UTTeW5JI',
     },
     {
-      img: 'https://sohodent.com/doc/data1/pr1_file1_1755081916_1_59314.jpg.webp',
-      alt: 'best dental clinic in istanbul',
-      text: 'best dental clinic in istanbul',
-      videoUrl: 'https://www.youtube.com/embed/GxYMgj02_2E',
+      img: 'https://sohodent.com/doc/data1/file1_1765355673_1_11261.webp',
+      alt: 'dentist turkey',
+      text: 'dentist turkey',
+      videoUrl: 'https://www.youtube.com/embed/F_ULWgBZhjY',
     },
     {
-      img: 'https://sohodent.com/doc/data1/file1_1759311507_5_93842.webp',
-      alt: 'best dental clinic in istanbul',
-      text: 'best dental clinic in istanbul',
-      videoUrl: 'https://www.youtube.com/embed/2aW6V37Jw7c',
+      img: 'https://sohodent.com/doc/data1/file1_1765355661_1_11260.webp',
+      alt: 'hollywood smile istanbul',
+      text: 'hollywood smile istanbul',
+      videoUrl: 'https://www.youtube.com/embed/smhwCD78Vbo',
     },
     {
-      img: 'https://sohodent.com/doc/data1/file1_1755085034_1_64321.jpg.webp',
-      alt: 'dental clinic in istanbul turkey',
-      text: 'dental clinic in istanbul turkey',
-      videoUrl: 'https://www.youtube.com/embed/OsM5_-n4eVk',
+      img: 'https://sohodent.com/doc/data1/file1_1765355685_1_11262.webp',
+      alt: 'implant turkey',
+      text: 'implant turkey',
+      videoUrl: 'https://www.youtube.com/embed/LR_r40rBzb4',
     },
     {
-      img: 'https://sohodent.com/doc/data1/file1_1759311575_5_37176.webp',
-      alt: 'All on 4 Dental Implants turkey teeth reviews',
-      text: 'All on 4 Dental Implants turkey teeth reviews',
-      videoUrl: 'https://www.youtube.com/embed/8MwrRzptHmE',
+      img: 'https://sohodent.com/doc/data1/file1_1765355700_1_11263.webp',
+      alt: 'dental implants turkey',
+      text: 'dental implants turkey',
+      videoUrl: 'https://www.youtube.com/embed/ZYMbU63b_PY',
     },
     {
-      img: 'https://sohodent.com/doc/data1/pr1_file1_1759311366_5_94704.webp',
-      alt: 'dental clinic in istanbul turkey',
-      text: 'dental clinic in istanbul turkey',
-      videoUrl: 'https://www.youtube.com/embed/Xv8t87S3fYc',
+      img: 'https://sohodent.com/doc/data1/file1_1765355712_1_11264.webp',
+      alt: 'teeth implants turkey',
+      text: 'teeth implants turkey',
+      videoUrl: 'https://www.youtube.com/embed/Be2UTTeW5JI',
     },
     {
-      img: 'https://sohodent.com/doc/data1/file1_1759311305_5_95428.webp',
-      alt: 'dental venners in turkey reviews',
-      text: 'dental venners in turkey reviews',
-      videoUrl: 'https://www.youtube.com/embed/uv-khYYkkZA',
+      img: 'https://sohodent.com/doc/data1/file1_1765355724_1_11265.webp',
+      alt: 'veneers in turkey',
+      text: 'veneers in turkey',
+      videoUrl: 'https://www.youtube.com/embed/F_ULWgBZhjY',
     },
     {
-      img: 'https://sohodent.com/doc/data1/pr1_file1_1755588698_5_52166.jpg.webp',
-      alt: 'best dental clinic in istanbul turkey',
-      text: 'best dental clinic in istanbul turkey',
-      videoUrl: 'https://www.youtube.com/embed/bPXzjg-wpKI',
+      img: 'https://sohodent.com/doc/data1/file1_1765355737_1_11266.webp',
+      alt: 'dentist in turkey',
+      text: 'dentist in turkey',
+      videoUrl: 'https://www.youtube.com/embed/smhwCD78Vbo',
     },
     {
-      img: 'https://sohodent.com/doc/data1/pr1_file1_1755081722_1_73994.jpg.webp',
-      alt: 'dental implants in turkey reviews',
-      text: 'dental implants in turkey reviews',
-      videoUrl: 'https://www.youtube.com/embed/tdCKtqvHJ7U',
+      img: 'https://sohodent.com/doc/data1/file1_1765355749_1_11267.webp',
+      alt: 'dental clinic in istanbul',
+      text: 'dental clinic in istanbul',
+      videoUrl: 'https://www.youtube.com/embed/LR_r40rBzb4',
+    },
+    {
+      img: 'https://sohodent.com/doc/data1/file1_1765355762_1_11268.webp',
+      alt: 'turkey dental clinic',
+      text: 'turkey dental clinic',
+      videoUrl: 'https://www.youtube.com/embed/ZYMbU63b_PY',
+    },
+    {
+      img: 'https://sohodent.com/doc/data1/file1_1765355776_1_11269.webp',
+      alt: 'teeth clinic turkey',
+      text: 'teeth clinic turkey',
+      videoUrl: 'https://www.youtube.com/embed/Be2UTTeW5JI',
+    },
+    {
+      img: 'https://sohodent.com/doc/data1/file1_1765355787_1_11270.webp',
+      alt: 'dental implant clinic istanbul',
+      text: 'dental implant clinic istanbul',
+      videoUrl: 'https://www.youtube.com/embed/F_ULWgBZhjY',
+    },
+    {
+      img: 'https://sohodent.com/doc/data1/file1_1765355799_1_11271.webp',
+      alt: 'smile makeover istanbul',
+      text: 'smile makeover istanbul',
+      videoUrl: 'https://www.youtube.com/embed/smhwCD78Vbo',
+    },
+    {
+      img: 'https://sohodent.com/doc/data1/file1_1765355811_1_11272.webp',
+      alt: 'best dentist in turkey',
+      text: 'best dentist in turkey',
+      videoUrl: 'https://www.youtube.com/embed/LR_r40rBzb4',
     },
   ];
 
-  const visibleCount = 4;
+  const visibleCount = 5;
   const maxStart = reels.length - visibleCount;
 
   const handlePrev = () => {
@@ -95,7 +114,7 @@ export default function TreatmentPatientReelsSection() {
   };
 
   return (
-    <div className="treatment-reels-wrapper">
+    <div className={styles.wrapper}>
       <div className="treatment-container">
         {/* Head */}
         <div className="head mb-12">
@@ -132,25 +151,25 @@ export default function TreatmentPatientReelsSection() {
         </div>
 
         {/* Reels Grid */}
-        <div className="treatment-reels-grid">
+        <div className={styles.grid}>
           {reels.slice(startIndex, startIndex + visibleCount).map((reel, idx) => (
             <div
               key={idx}
               onClick={() => setActiveVideo(reel.videoUrl)}
-              className="treatment-reels-card"
+              className={styles.card}
             >
               <img
                 src={reel.img}
                 alt={reel.alt}
                 loading="lazy"
               />
-              <div className="treatment-reels-overlay">
-                <div className="treatment-reels-play-badge">
+              <div className={styles.overlay}>
+                <div className={styles.playBadge}>
                   <svg width="14" height="14" viewBox="0 0 512 512" fill="currentColor">
                     <path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9l0 176c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z" />
                   </svg>
                 </div>
-                <div className="treatment-reels-text-badge">
+                <div className={styles.textBadge}>
                   {reel.text}
                 </div>
               </div>
@@ -163,11 +182,11 @@ export default function TreatmentPatientReelsSection() {
       {activeVideo && (
         <div
           onClick={() => setActiveVideo(null)}
-          className="treatment-reels-modal"
+          className={styles.modal}
         >
           <div
             onClick={(e) => e.stopPropagation()}
-            className="treatment-reels-modal-inner"
+            className={styles.modalInner}
           >
             <button
               onClick={() => setActiveVideo(null)}

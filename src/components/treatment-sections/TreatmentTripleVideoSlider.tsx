@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import styles from './TreatmentTripleVideoSlider.module.css';
 
 interface VideoItem {
   id: string;
@@ -19,10 +20,10 @@ export default function TreatmentTripleVideoSlider({
   ],
 }: Props) {
   return (
-    <div className="treatment-triple-shorts-wrapper">
-      <div className="treatment-triple-shorts-grid">
+    <div className={styles.wrapper}>
+      <div className={styles.grid}>
         {videos.map((vid, idx) => (
-          <div key={idx} className="treatment-shorts-card">
+          <div key={idx} className={styles.card}>
             <iframe
               src={`https://www.youtube.com/embed/${vid.id}`}
               title={vid.title || `Dental Patient Short Video ${idx + 1}`}

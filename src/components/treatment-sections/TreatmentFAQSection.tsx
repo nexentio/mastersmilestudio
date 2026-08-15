@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { useLocale } from 'next-intl';
+import styles from './TreatmentFAQSection.module.css';
 
 interface FAQItem {
   q: { en: string; tr: string };
@@ -170,7 +171,7 @@ export default function TreatmentFAQSection() {
   ];
 
   return (
-    <div className="treatment-faq-wrapper">
+    <div className={styles.wrapper}>
       <div className="treatment-container max-w-4xl">
         <div className="text-center mb-12">
           <h2 className="treatment-heading-title">
@@ -183,23 +184,23 @@ export default function TreatmentFAQSection() {
           </p>
         </div>
 
-        <div className="treatment-faq-list">
+        <div className={styles.list}>
           {faqs.map((faq, idx) => {
             const isOpen = openIdx === idx;
             return (
               <div
                 key={idx}
-                className={`treatment-faq-item ${isOpen ? 'active' : ''}`}
+                className={`${styles.item} ${isOpen ? styles.itemActive : ''}`}
               >
                 <button
                   onClick={() => setOpenIdx(isOpen ? null : idx)}
-                  className="treatment-faq-question-btn"
+                  className={styles.questionBtn}
                   aria-expanded={isOpen}
                 >
-                  <span className="treatment-faq-question-text">
+                  <span className={styles.questionText}>
                     {locale === 'tr' ? faq.q.tr : faq.q.en}
                   </span>
-                  <span className={`treatment-faq-chevron ${isOpen ? 'active' : ''}`}>
+                  <span className={`${styles.chevron} ${isOpen ? styles.chevronActive : ''}`}>
                     <svg width="12" height="12" viewBox="0 0 448 512" fill="currentColor">
                       <path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
                     </svg>
@@ -207,7 +208,7 @@ export default function TreatmentFAQSection() {
                 </button>
 
                 {isOpen && (
-                  <div className="treatment-faq-answer-box">
+                  <div className={styles.answerBox}>
                     {locale === 'tr' ? faq.a.tr : faq.a.en}
                   </div>
                 )}

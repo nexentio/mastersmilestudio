@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { useLocale } from 'next-intl';
 import { Link } from '@/i18n/routing';
+import styles from './TreatmentBeforeAfterSliderSection.module.css';
 
 export default function TreatmentBeforeAfterSliderSection() {
   const locale = useLocale();
@@ -55,10 +56,10 @@ export default function TreatmentBeforeAfterSliderSection() {
   };
 
   return (
-    <div className="treatment-transformation-wrapper">
+    <div className={styles.wrapper}>
       <div className="treatment-container relative">
         {/* Head */}
-        <div className="treatment-transformation-head">
+        <div className={styles.head}>
           <div>
             <h2 className="treatment-heading-navy">
               {locale === 'tr' ? (
@@ -89,16 +90,16 @@ export default function TreatmentBeforeAfterSliderSection() {
               type="button"
               onClick={handlePrev}
               aria-label="Previous cases"
-              className="treatment-transformation-nav-btn prev"
+              className={`${styles.navBtn} ${styles.navBtnPrev}`}
             >
               ‹
             </button>
           )}
 
           {/* 4 Cards Grid Row */}
-          <div className="treatment-transformation-grid">
+          <div className={styles.grid}>
             {visibleCases.map((c, idx) => (
-              <div key={idx} className="treatment-transformation-card">
+              <div key={idx} className={styles.card}>
                 <img
                   src={c.img}
                   alt={c.alt}
@@ -114,7 +115,7 @@ export default function TreatmentBeforeAfterSliderSection() {
               type="button"
               onClick={handleNext}
               aria-label="Next cases"
-              className="treatment-transformation-nav-btn next"
+              className={`${styles.navBtn} ${styles.navBtnNext}`}
             >
               ›
             </button>
@@ -122,14 +123,14 @@ export default function TreatmentBeforeAfterSliderSection() {
         </div>
 
         {/* Pagination Dots (Centered) */}
-        <div className="treatment-transformation-dots">
+        <div className={styles.dots}>
           {Array.from({ length: totalPages }).map((_, dotIdx) => (
             <button
               key={dotIdx}
               type="button"
               onClick={() => setActivePage(dotIdx)}
               aria-label={`Slide page ${dotIdx + 1}`}
-              className={`treatment-transformation-dot ${activePage === dotIdx ? 'active' : 'inactive'}`}
+              className={`${styles.dot} ${activePage === dotIdx ? styles.dotActive : styles.dotInactive}`}
             />
           ))}
         </div>

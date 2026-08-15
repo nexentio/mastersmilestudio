@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { useLocale } from 'next-intl';
 import { SITE_CONFIG } from '@/config/site';
+import styles from './TreatmentInteractiveQuoteForm.module.css';
 
 interface Props {
   defaultTreatment?: string;
@@ -85,7 +86,7 @@ export default function TreatmentInteractiveQuoteForm({ defaultTreatment = 'Impl
     const text = encodeURIComponent(
       `Hello Master Smile Studio! 👋\n\nI would like to get my Free Dental Consultation.\n\n• Name: ${fullName || 'Guest'}\n• Country: ${country}\n• Phone: ${phone}\n• Treatments: ${selectedTreatments.join(', ')}\n• Age: ${ageGroup}\n• Spoken to Dentist: ${spokenToDentist}\n• Timeline: ${timeline}\n• Preferred Contact: ${commChannel}\n• Message: ${message || 'None'}\n\nPlease prepare my custom treatment plan and price quote.`
     );
-    window.open(`https://wa.me/${SITE_CONFIG.whatsappNumber.replace(/[^0-9]/g, '')}?text=${text}`, '_blank');
+    window.open(`https://wa.me/${SITE_CONFIG.whatsapp.replace(/[^0-9]/g, '')}?text=${text}`, '_blank');
   };
 
   return (
@@ -109,56 +110,56 @@ export default function TreatmentInteractiveQuoteForm({ defaultTreatment = 'Impl
       </div>
 
       {/* Outer Dual-Pane Container with Stable Fixed Height */}
-      <div className="quote-dual-pane">
+      <div className={styles.dualPane}>
         {/* Left Column Stepper */}
-        <div className="quote-pane-left">
+        <div className={styles.paneLeft}>
           <div className="table">
             <div className="flex flex-col">
               {/* Step 1 */}
-              <div className="quote-step-row">
-                <div className={`quote-step-circle ${step >= 1 ? 'active' : ''}`}>
-                  {step > 1 && <div className="quote-step-dot" />}
+              <div className={styles.stepRow}>
+                <div className={`${styles.stepCircle} ${step >= 1 ? styles.stepCircleActive : ''}`}>
+                  {step > 1 && <div className={styles.stepDot} />}
                 </div>
-                <div className="quote-step-text">
+                <div className={styles.stepText}>
                   Great! Let&apos;s get a bit more specific…
                 </div>
               </div>
 
               {/* Line 1 */}
-              <div className="quote-step-line" />
+              <div className={styles.stepLine} />
 
               {/* Step 2 */}
-              <div className="quote-step-row">
-                <div className={`quote-step-circle ${step >= 2 ? 'active' : ''}`}>
-                  {step > 2 && <div className="quote-step-dot" />}
+              <div className={styles.stepRow}>
+                <div className={`${styles.stepCircle} ${step >= 2 ? styles.stepCircleActive : ''}`}>
+                  {step > 2 && <div className={styles.stepDot} />}
                 </div>
-                <div className="quote-step-text">
+                <div className={styles.stepText}>
                   Almost there! Just a few details to personalize your experience.
                 </div>
               </div>
 
               {/* Line 2 */}
-              <div className="quote-step-line" />
+              <div className={styles.stepLine} />
 
               {/* Step 3 */}
-              <div className="quote-step-row">
-                <div className={`quote-step-circle ${step >= 3 ? 'active' : ''}`}>
-                  {step > 3 && <div className="quote-step-dot" />}
+              <div className={styles.stepRow}>
+                <div className={`${styles.stepCircle} ${step >= 3 ? styles.stepCircleActive : ''}`}>
+                  {step > 3 && <div className={styles.stepDot} />}
                 </div>
-                <div className="quote-step-text">
+                <div className={styles.stepText}>
                   Final step! Let us know how we can contact you.
                 </div>
               </div>
 
               {/* Line 3 */}
-              <div className="quote-step-line" />
+              <div className={styles.stepLine} />
 
               {/* Step 4 */}
-              <div className="quote-step-row">
-                <div className={`quote-step-circle ${step >= 4 ? 'active' : ''}`}>
-                  {step >= 4 && <div className="quote-step-dot" />}
+              <div className={styles.stepRow}>
+                <div className={`${styles.stepCircle} ${step >= 4 ? styles.stepCircleActive : ''}`}>
+                  {step >= 4 && <div className={styles.stepDot} />}
                 </div>
-                <div className="quote-step-text">
+                <div className={styles.stepText}>
                   All done! We are preparing your smile plan.
                 </div>
               </div>
@@ -167,12 +168,12 @@ export default function TreatmentInteractiveQuoteForm({ defaultTreatment = 'Impl
         </div>
 
         {/* Right Column Step Form Area */}
-        <div className="quote-pane-right">
+        <div className={styles.paneRight}>
           {/* STEP 1: Treatments & Age */}
           {step === 1 && (
             <div className="flex flex-col justify-between h-full">
               <div>
-                <div className="quote-step-badge">
+                <div className={styles.stepBadge}>
                   <span className="text-xs font-bold text-amber-600 uppercase tracking-wider">Step 1 of 3</span>
                   <span className="text-xs font-bold text-slate-400">Treatment Details</span>
                 </div>
@@ -181,7 +182,7 @@ export default function TreatmentInteractiveQuoteForm({ defaultTreatment = 'Impl
                   <label className="block text-sm font-bold text-slate-900 mb-3">
                     1. Which treatments are you interested in? (You can select multiple)
                   </label>
-                  <div className="quote-options-grid">
+                  <div className={styles.optionsGrid}>
                     {treatmentList.map((t) => {
                       const isSelected = selectedTreatments.includes(t);
                       return (
@@ -189,7 +190,7 @@ export default function TreatmentInteractiveQuoteForm({ defaultTreatment = 'Impl
                           key={t}
                           type="button"
                           onClick={() => handleToggleTreatment(t)}
-                          className={`quote-option-btn ${isSelected ? 'selected' : ''}`}
+                          className={`${styles.optionBtn} ${isSelected ? styles.optionBtnSelected : ''}`}
                         >
                           <span>{t}</span>
                           {isSelected && <span>✓</span>}
@@ -203,13 +204,13 @@ export default function TreatmentInteractiveQuoteForm({ defaultTreatment = 'Impl
                   <label className="block text-sm font-bold text-slate-900 mb-3">
                     2. What is your age group?
                   </label>
-                  <div className="quote-options-grid">
+                  <div className={styles.optionsGrid}>
                     {ageList.map((age) => (
                       <button
                         key={age}
                         type="button"
                         onClick={() => setAgeGroup(age)}
-                        className={`quote-option-btn ${ageGroup === age ? 'selected' : ''}`}
+                        className={`${styles.optionBtn} ${ageGroup === age ? styles.optionBtnSelected : ''}`}
                       >
                         <span>{age}</span>
                         {ageGroup === age && <span>✓</span>}
@@ -219,11 +220,11 @@ export default function TreatmentInteractiveQuoteForm({ defaultTreatment = 'Impl
                 </div>
               </div>
 
-              <div className="quote-nav-row justify-end">
+              <div className={`${styles.navRow} justify-end`}>
                 <button
                   type="button"
                   onClick={handleNext}
-                  className="quote-nav-next"
+                  className={styles.navNext}
                 >
                   Continue →
                 </button>
@@ -235,7 +236,7 @@ export default function TreatmentInteractiveQuoteForm({ defaultTreatment = 'Impl
           {step === 2 && (
             <div className="flex flex-col justify-between h-full">
               <div>
-                <div className="quote-step-badge">
+                <div className={styles.stepBadge}>
                   <span className="text-xs font-bold text-amber-600 uppercase tracking-wider">Step 2 of 3</span>
                   <span className="text-xs font-bold text-slate-400">Timeline & Background</span>
                 </div>
@@ -250,7 +251,7 @@ export default function TreatmentInteractiveQuoteForm({ defaultTreatment = 'Impl
                         key={opt}
                         type="button"
                         onClick={() => setSpokenToDentist(opt)}
-                        className={`quote-option-btn justify-center ${spokenToDentist === opt ? 'selected' : ''}`}
+                        className={`${styles.optionBtn} justify-center ${spokenToDentist === opt ? styles.optionBtnSelected : ''}`}
                       >
                         {opt}
                       </button>
@@ -262,13 +263,13 @@ export default function TreatmentInteractiveQuoteForm({ defaultTreatment = 'Impl
                   <label className="block text-sm font-bold text-slate-900 mb-3">
                     2. When are you looking to start your treatment?
                   </label>
-                  <div className="quote-options-grid">
+                  <div className={styles.optionsGrid}>
                     {timelineList.map((time) => (
                       <button
                         key={time}
                         type="button"
                         onClick={() => setTimeline(time)}
-                        className={`quote-option-btn ${timeline === time ? 'selected' : ''}`}
+                        className={`${styles.optionBtn} ${timeline === time ? styles.optionBtnSelected : ''}`}
                       >
                         <span>{time}</span>
                         {timeline === time && <span>✓</span>}
@@ -278,18 +279,18 @@ export default function TreatmentInteractiveQuoteForm({ defaultTreatment = 'Impl
                 </div>
               </div>
 
-              <div className="quote-nav-row">
+              <div className={styles.navRow}>
                 <button
                   type="button"
                   onClick={handlePrev}
-                  className="quote-nav-prev"
+                  className={styles.navPrev}
                 >
                   ← Back
                 </button>
                 <button
                   type="button"
                   onClick={handleNext}
-                  className="quote-nav-next"
+                  className={styles.navNext}
                 >
                   Continue →
                 </button>
@@ -301,7 +302,7 @@ export default function TreatmentInteractiveQuoteForm({ defaultTreatment = 'Impl
           {step === 3 && (
             <form onSubmit={handleSubmit} className="flex flex-col justify-between h-full">
               <div>
-                <div className="quote-step-badge">
+                <div className={styles.stepBadge}>
                   <span className="text-xs font-bold text-amber-600 uppercase tracking-wider">Step 3 of 3</span>
                   <span className="text-xs font-bold text-slate-400">Personal Details</span>
                 </div>
@@ -317,7 +318,7 @@ export default function TreatmentInteractiveQuoteForm({ defaultTreatment = 'Impl
                       placeholder="e.g. John Doe"
                       value={fullName}
                       onChange={(e) => setFullName(e.target.value)}
-                      className="quote-input"
+                      className={styles.input}
                     />
                   </div>
                   <div>
@@ -327,7 +328,7 @@ export default function TreatmentInteractiveQuoteForm({ defaultTreatment = 'Impl
                     <select
                       value={country}
                       onChange={(e) => setCountry(e.target.value)}
-                      className="quote-input"
+                      className={styles.input}
                     >
                       {countries.map((c, i) => (
                         <option key={i} value={c}>
@@ -349,7 +350,7 @@ export default function TreatmentInteractiveQuoteForm({ defaultTreatment = 'Impl
                       placeholder="+44 7123 456789"
                       value={phone}
                       onChange={(e) => setPhone(e.target.value)}
-                      className="quote-input"
+                      className={styles.input}
                     />
                   </div>
                   <div>
@@ -362,7 +363,7 @@ export default function TreatmentInteractiveQuoteForm({ defaultTreatment = 'Impl
                       placeholder="john@example.com"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
-                      className="quote-input"
+                      className={styles.input}
                     />
                   </div>
                 </div>
@@ -371,13 +372,13 @@ export default function TreatmentInteractiveQuoteForm({ defaultTreatment = 'Impl
                   <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
                     Preferred Communication Channel
                   </label>
-                  <div className="quote-options-grid">
+                  <div className={styles.optionsGrid}>
                     {commList.map((ch) => (
                       <button
                         key={ch}
                         type="button"
                         onClick={() => setCommChannel(ch)}
-                        className={`quote-option-btn ${commChannel === ch ? 'selected' : ''}`}
+                        className={`${styles.optionBtn} ${commChannel === ch ? styles.optionBtnSelected : ''}`}
                       >
                         <span>{ch}</span>
                         {commChannel === ch && <span>✓</span>}
@@ -395,22 +396,22 @@ export default function TreatmentInteractiveQuoteForm({ defaultTreatment = 'Impl
                     placeholder="Tell us about your teeth condition, missing teeth, or specific aesthetic goals..."
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
-                    className="quote-input"
+                    className={styles.input}
                   />
                 </div>
               </div>
 
-              <div className="quote-nav-row">
+              <div className={styles.navRow}>
                 <button
                   type="button"
                   onClick={handlePrev}
-                  className="quote-nav-prev"
+                  className={styles.navPrev}
                 >
                   ← Back
                 </button>
                 <button
                   type="submit"
-                  className="quote-nav-next"
+                  className={styles.navNext}
                 >
                   Get My Free Treatment Plan & Price →
                 </button>
@@ -421,7 +422,7 @@ export default function TreatmentInteractiveQuoteForm({ defaultTreatment = 'Impl
           {/* STEP 4: Success Screen */}
           {step === 4 && (
             <div className="flex flex-col items-center justify-center text-center py-10 my-auto">
-              <div className="quote-success-badge">
+              <div className={styles.successBadge}>
                 ✓
               </div>
 

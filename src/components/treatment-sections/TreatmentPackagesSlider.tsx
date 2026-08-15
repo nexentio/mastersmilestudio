@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { useLocale } from 'next-intl';
 import { Link } from '@/i18n/routing';
+import styles from './TreatmentPackagesSlider.module.css';
 
 export default function TreatmentPackagesSlider() {
   const locale = useLocale();
@@ -263,7 +264,7 @@ export default function TreatmentPackagesSlider() {
   };
 
   return (
-    <div className="treatment-packages-slider-wrapper">
+    <div className={styles.wrapper}>
       <div className="treatment-container">
         {/* Header with Nav Buttons */}
         <div className="treatment-packages-carousel-header">
@@ -297,15 +298,15 @@ export default function TreatmentPackagesSlider() {
         </div>
 
         {/* Carousel Grid */}
-        <div className="treatment-packages-grid">
+        <div className={styles.grid}>
           {packages.slice(startIndex, startIndex + visibleCount).map((pkg, idx) => (
-            <div key={idx} className="treatment-package-item-card">
+            <div key={idx} className={styles.card}>
               <div>
-                <h4 className="treatment-package-item-header">
+                <h4 className={styles.header}>
                   {pkg.title}
                 </h4>
 
-                <div className="treatment-package-item-img-wrap">
+                <div className={styles.imgWrap}>
                   <img
                     src={pkg.img}
                     alt={pkg.alt}
@@ -313,15 +314,15 @@ export default function TreatmentPackagesSlider() {
                   />
                 </div>
 
-                <div className="treatment-package-item-duration">
+                <div className={styles.duration}>
                   <span className="text-slate-500 font-medium">Duration:</span>
                   <span className="text-slate-900 font-bold">{pkg.duration}</span>
                 </div>
 
-                <div className="treatment-package-item-features-title">
+                <div className={styles.featuresTitle}>
                   Included in this package:
                 </div>
-                <ul className="treatment-package-item-features-list">
+                <ul className={styles.featuresList}>
                   {pkg.included.map((inc, i) => (
                     <li key={i}>
                       <span>{inc}</span>
@@ -331,7 +332,7 @@ export default function TreatmentPackagesSlider() {
               </div>
 
               <div>
-                <div className="treatment-package-item-price-box">
+                <div className={styles.priceBox}>
                   <div className="text-xs text-slate-400 uppercase tracking-wider font-semibold mb-1">
                     Package Price
                   </div>
@@ -345,7 +346,7 @@ export default function TreatmentPackagesSlider() {
 
                 <Link
                   href="/contact"
-                  className="treatment-package-item-btn"
+                  className={styles.btn}
                 >
                   {locale === 'tr' ? 'Fiyat Teklifi Al' : 'Get a Free Quote'}
                 </Link>

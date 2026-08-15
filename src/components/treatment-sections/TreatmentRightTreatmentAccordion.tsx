@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { useLocale } from 'next-intl';
 import { Link } from '@/i18n/routing';
+import styles from './TreatmentRightTreatmentAccordion.module.css';
 
 export default function TreatmentRightTreatmentAccordion() {
   const locale = useLocale();
@@ -68,7 +69,7 @@ export default function TreatmentRightTreatmentAccordion() {
   ];
 
   return (
-    <div className="treatment-finder-wrapper">
+    <div className={styles.wrapper}>
       <div className="treatment-container">
         {/* Head */}
         <div className="head mb-12">
@@ -90,7 +91,7 @@ export default function TreatmentRightTreatmentAccordion() {
 
         {/* Center Grid */}
         <div className="center">
-          <div className="treatment-finder-grid">
+          <div className={styles.grid}>
             {/* Left Column: Accordion List */}
             <div>
               <div className="accordion flex flex-col">
@@ -99,24 +100,24 @@ export default function TreatmentRightTreatmentAccordion() {
                   return (
                     <div
                       key={idx}
-                      className={`treatment-finder-item ${isActive ? 'active' : ''}`}
+                      className={`${styles.item} ${isActive ? styles.itemActive : ''}`}
                     >
                       {/* Title Bar */}
                       <div
-                        className="treatment-finder-title-row"
+                        className={styles.titleRow}
                         onClick={() => setActiveIdx(idx)}
                       >
                         <span className="flex flex-col">
-                          <span className="treatment-finder-title-text">
+                          <span className={styles.titleText}>
                             {item.title}
                           </span>
-                          <span className="treatment-finder-target-text">
+                          <span className={styles.targetText}>
                             {item.target}
                           </span>
                         </span>
 
                         {/* Chevron Icon */}
-                        <span className={`treatment-finder-chevron ${isActive ? 'active' : ''}`}>
+                        <span className={`${styles.chevron} ${isActive ? styles.chevronActive : ''}`}>
                           <svg width="16" height="16" viewBox="0 0 448 512" fill="currentColor">
                             <path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
                           </svg>
@@ -125,7 +126,7 @@ export default function TreatmentRightTreatmentAccordion() {
 
                       {/* Expanded Content */}
                       {isActive && (
-                        <div className="treatment-finder-content-box">
+                        <div className={styles.contentBox}>
                           <p className="treatment-text-p font-medium text-slate-800 mb-5">
                             {item.desc}
                           </p>
@@ -133,7 +134,7 @@ export default function TreatmentRightTreatmentAccordion() {
                           {/* Button */}
                           <div className="mt-3">
                             <Link
-                              className="treatment-finder-btn"
+                              className={styles.btn}
                               href={item.href}
                             >
                               READ MORE
@@ -148,10 +149,10 @@ export default function TreatmentRightTreatmentAccordion() {
             </div>
 
             {/* Right Column: Sticky Preview Image */}
-            <div className="treatment-finder-sticky-preview">
+            <div className={styles.stickyPreview}>
               <Link
                 href={treatments[activeIdx].href}
-                className="treatment-finder-preview-card"
+                className={styles.previewCard}
               >
                 <img
                   width="600"

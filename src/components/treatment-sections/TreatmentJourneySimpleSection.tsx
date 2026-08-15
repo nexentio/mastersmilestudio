@@ -4,8 +4,21 @@ import React, { useState } from 'react';
 import { useLocale } from 'next-intl';
 import { Link } from '@/i18n/routing';
 import { getWhatsAppLink } from '@/config/site';
+import styles from './TreatmentJourneySimpleSection.module.css';
 
-export default function TreatmentJourneySimpleSection() {
+interface Props {
+  stayDuration?: string;
+  visitCount?: string;
+  recoveryTime?: string;
+  priceEstimate?: string;
+}
+
+export default function TreatmentJourneySimpleSection({
+  stayDuration,
+  visitCount,
+  recoveryTime,
+  priceEstimate,
+}: Props) {
   const locale = useLocale();
   const [openIdx, setOpenIdx] = useState<number | null>(0); // First item open by default
 
@@ -104,10 +117,10 @@ export default function TreatmentJourneySimpleSection() {
   ];
 
   return (
-    <div className="treatment-section-gray">
+    <div className={styles.section}>
       <div className="treatment-container">
         {/* Head */}
-        <div className="treatment-transformation-head">
+        <div className={styles.head}>
           <div>
             <h2 className="treatment-heading-navy">
               {locale === 'tr' ? 'Kolaylaştırılmış Tedavi Yolculuğunuz' : 'Your Dental Journey Made Simple'}
@@ -123,20 +136,20 @@ export default function TreatmentJourneySimpleSection() {
         </div>
 
         {/* Center Box */}
-        <div className="treatment-journey-box">
+        <div className={styles.box}>
           {/* Accordion List */}
           <div className="accordion flex flex-col">
             {items.map((item, idx) => {
               const isOpen = openIdx === idx;
               return (
-                <div key={idx} className="treatment-journey-item">
+                <div key={idx} className={styles.item}>
                   <div
-                    className="treatment-journey-title-row"
+                    className={styles.titleRow}
                     onClick={() => setOpenIdx(isOpen ? null : idx)}
                   >
                     <div className="flex items-center gap-5">
                       {/* Sage/Teal Circular Icon Badge */}
-                      <span className="treatment-journey-icon-badge">
+                      <span className={styles.iconBadge}>
                         {item.iconSvg}
                       </span>
 
@@ -147,7 +160,7 @@ export default function TreatmentJourneySimpleSection() {
                       </span>
                     </div>
 
-                    <span className={`treatment-journey-chevron ${isOpen ? 'open' : ''}`}>
+                    <span className={`${styles.chevron} ${isOpen ? styles.chevronOpen : ''}`}>
                       <svg
                         width="14"
                         height="14"
@@ -160,7 +173,7 @@ export default function TreatmentJourneySimpleSection() {
                   </div>
 
                   {isOpen && (
-                    <div className="treatment-journey-content">
+                    <div className={styles.content}>
                       {item.content}
                     </div>
                   )}
@@ -181,7 +194,7 @@ export default function TreatmentJourneySimpleSection() {
                 href={getWhatsAppLink(locale)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="treatment-journey-contact-pill"
+                className={styles.contactPill}
               >
                 <img
                   loading="lazy"
@@ -189,15 +202,15 @@ export default function TreatmentJourneySimpleSection() {
                   height="20"
                   src="https://sohodent.com/doc/static/a1/contact-icon-10.png.webp"
                   alt="WhatsApp"
-                  className="treatment-journey-contact-icon"
+                  className={styles.contactIcon}
                 />
-                <span className="treatment-journey-contact-text">WhatsApp</span>
+                <span className={styles.contactText}>WhatsApp</span>
               </a>
 
               {/* Phone Call Button */}
               <a
                 href="tel:+905434568080"
-                className="treatment-journey-contact-pill"
+                className={styles.contactPill}
               >
                 <img
                   loading="lazy"
@@ -205,15 +218,15 @@ export default function TreatmentJourneySimpleSection() {
                   height="20"
                   src="https://sohodent.com/doc/static/a1/contact-icon-11.png.webp"
                   alt="Phone Call"
-                  className="treatment-journey-contact-icon"
+                  className={styles.contactIcon}
                 />
-                <span className="treatment-journey-contact-text">Phone Call</span>
+                <span className={styles.contactText}>Phone Call</span>
               </a>
 
               {/* Quick Form Button */}
               <Link
                 href="/contact"
-                className="treatment-journey-contact-pill"
+                className={styles.contactPill}
               >
                 <img
                   loading="lazy"
@@ -221,15 +234,15 @@ export default function TreatmentJourneySimpleSection() {
                   height="20"
                   src="https://sohodent.com/doc/static/a1/contact-icon-12.png.webp"
                   alt="Quick Form"
-                  className="treatment-journey-contact-icon"
+                  className={styles.contactIcon}
                 />
-                <span className="treatment-journey-contact-text">Quick Form</span>
+                <span className={styles.contactText}>Quick Form</span>
               </Link>
 
               {/* E-mail Button */}
               <a
                 href="mailto:info@mastersmilestudio.com"
-                className="treatment-journey-contact-pill"
+                className={styles.contactPill}
               >
                 <img
                   loading="lazy"
@@ -237,9 +250,9 @@ export default function TreatmentJourneySimpleSection() {
                   height="20"
                   src="https://sohodent.com/doc/static/a1/contact-icon-13.png.webp"
                   alt="E-mail"
-                  className="treatment-journey-contact-icon"
+                  className={styles.contactIcon}
                 />
-                <span className="treatment-journey-contact-text">E-mail</span>
+                <span className={styles.contactText}>E-mail</span>
               </a>
             </div>
           </div>
