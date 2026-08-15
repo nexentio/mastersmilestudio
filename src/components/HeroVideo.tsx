@@ -22,7 +22,6 @@ export default function HeroVideo() {
         muted
         playsInline
         preload="auto"
-        poster="/dental-implant-mss.jpeg"
         style={{
           position: 'absolute',
           top: 0,

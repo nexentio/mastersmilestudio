@@ -264,6 +264,181 @@ a {
   box-shadow: 0 16px 36px rgba(0, 0, 0, 0.1) !important;
 }
 
+/* SohoDent Exact 1:1 Treatment Hero Section (100vh - 100px) */
+.sect20 {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  min-height: calc(100vh - 100px);
+  min-height: calc(100dvh - 100px);
+  overflow: hidden;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  background-color: #09090b;
+}
+
+.sect20 img.back1,
+.sect20 .back1 {
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sect20:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.sect20 .content {
+  position: absolute;
+  z-index: 1;
+  left: 6%;
+  top: 50%;
+  width: min(90%, 820px);
+  transform: translateY(-50%);
+}
+
+.sect20 .content .text1 {
+  font-size: clamp(0.85rem, 1.1vw, 1.15rem);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.sect20 .content .text2 {
+  font-weight: 400;
+  margin: 20px 0 0 0;
+  font-size: clamp(2.2rem, 3.4vw, 3.8rem);
+  line-height: 1.15;
+  color: #ffffff;
+}
+
+.sect20 .content .text3 {
+  font-weight: 400;
+  margin: 20px 0 0 0;
+  font-size: clamp(0.95rem, 1.15vw, 1.2rem);
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.sect20 .content .buton {
+  margin: 28px 0 0 0;
+}
+
+.sect20 .content .buton a.gototedaviform {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  padding: 12px 30px;
+  color: #000000;
+  border-radius: 30px;
+  overflow: hidden;
+  border: 2px solid #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.sect20 .content .buton a.gototedaviform:before {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #D58936;
+  color: #000000;
+}
+
+.sect20 .content .buton a.gototedaviform:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  border-radius: 30px;
+  transform: translate(-100%, 0);
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sect20 .content .buton a.gototedaviform:hover:after {
+  transform: translate(100%, 0);
+}
+
+.sect20 .content .buton a.gototedaviform .xgrid {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sect20 .content .buton a.gototedaviform .xgrids.s2 {
+  display: flex;
+  align-items: center;
+}
+
+.sect20 .content .buton a.gototedaviform .xgrids.s2 svg {
+  width: 14px;
+  height: 14px;
+  fill: #000000;
+  transition: transform 0.2s ease;
+}
+
+.sect20 .content .buton a.gototedaviform:hover .xgrids.s2 svg {
+  transform: translateX(3px);
+}
+
+@media only screen and (max-width: 900px) {
+  .sect20 {
+    min-height: calc(100vh - 100px);
+    min-height: calc(100dvh - 100px);
+  }
+  .sect20 .content {
+    left: 6%;
+    width: 88%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .sect20 {
+    min-height: calc(100vh - 100px);
+    min-height: calc(100dvh - 100px);
+  }
+  .sect20 .content {
+    left: 6%;
+    width: 88%;
+  }
+  .sect20 .content .text1 {
+    font-size: 0.95rem;
+  }
+  .sect20 .content .text2 {
+    font-size: clamp(1.9rem, 6.5vw, 2.75rem);
+    line-height: 1.2;
+  }
+  .sect20 .content .text3 {
+    font-size: clamp(0.9rem, 3.2vw, 1.05rem);
+  }
+  .sect20 .content .buton a.gototedaviform {
+    padding: 10px 24px;
+  }
+}
+
 .gallery-cta-btn {
   transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
 }
@@ -286,6 +461,133 @@ a {
 .treatment-showcase-card:hover {
   transform: translateY(-6px) !important;
   box-shadow: 0 16px 36px rgba(0, 0, 0, 0.12) !important;
+}
+
+/* Mobile Header UI/UX Enhancements & SSR FOUC Prevention */
+.header-logo-container {
+  position: relative;
+  width: 185px;
+  height: 46px;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.top-bar-inner {
+  width: 94%;
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: #D58936;
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.4rem 1.25rem;
+  border-radius: 0 0 16px 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: nowrap;
+}
+
+/* Mobile-First Navigation (Prevents desktop nav flashing on mobile SSR) */
+.desktop-nav {
+  display: none !important;
+}
+
+.mobile-toggle {
+  display: flex !important;
+}
+
+.customer-service-btn {
+  display: none !important;
+}
+
+@media (max-width: 868px) {
+  .header-logo-container {
+    width: 125px !important;
+    height: 30px !important;
+  }
+  .top-bar-inner {
+    justify-content: center !important;
+    padding: 0.35rem 0.75rem !important;
+    font-size: 0.73rem !important;
+    border-radius: 0 0 10px 10px !important;
+  }
+  .top-bar-socials {
+    display: none !important;
+  }
+  .top-bar-subtext {
+    display: none !important;
+  }
+}
+
+@media (min-width: 869px) {
+  .desktop-nav {
+    display: flex !important;
+    align-items: center;
+  }
+  .mobile-toggle {
+    display: none !important;
+  }
+  .customer-service-btn {
+    display: inline-flex !important;
+  }
+}
+
+.mobile-menu-drawer {
+  animation: slideDownMobile 0.28s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes slideDownMobile {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mobile-nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 1rem;
+  border-radius: 12px;
+  font-size: 1.02rem;
+  font-weight: 600;
+  color: #1e293b;
+  text-decoration: none;
+  background-color: #f8fafc;
+  border: 1px solid #f1f5f9;
+  transition: all 0.2s ease;
+}
+
+.mobile-nav-link:hover,
+.mobile-nav-link:active {
+  background-color: #f1f5f9;
+  color: #D58936;
+}
+
+.mobile-sub-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.65rem 0.85rem;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: #475569;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.mobile-sub-link:hover,
+.mobile-sub-link:active {
+  background-color: #fff7ed;
+  color: #D58936;
+  padding-left: 1.05rem;
 }
 
 

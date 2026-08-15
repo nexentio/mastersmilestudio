@@ -1,7 +1,8 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
+import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import TreatmentsSectionView from '@/components/TreatmentsSectionView';
+import TreatmentDetailView from '@/components/TreatmentDetailView';
 import { Link } from '@/i18n/routing';
 
 export async function generateMetadata({
@@ -33,90 +34,88 @@ export default async function TreatmentsPage({
       {/* Global Navigation Header */}
       <Header />
 
-      {/* Main Treatments Page Hero Header */}
-      <section
-        style={{
-          padding: '3.5rem 1.5rem 2rem 1.5rem',
-          position: 'relative',
-        }}
-      >
-        <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
-          {/* Breadcrumb Pill Badge */}
-          <div style={{ marginBottom: '2.5rem' }}>
+      {/* Exact 1:1 SohoDent Treatment Hero Section */}
+      <div className="sect20">
+        <Image
+          src="/treatment-hero-bg.webp"
+          alt={t('pageTitle')}
+          fill
+          priority
+          sizes="100vw"
+          className="back1"
+        />
+        <div className="content">
+          <div className="text1">
+            {locale === 'tr' ? 'TEDAVİLERİMİZ' : 'TREATMENTS'}
+          </div>
+          <h1 className="text2">
+            {t('pageTitle')}
+          </h1>
+          <h4 className="text3">
+            {t('pageSubtitle')}
+          </h4>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap', marginTop: '2rem' }}>
             <Link
-              href="/"
+              href="/contact"
+              className="hero-btn-primary"
               style={{
                 display: 'inline-flex',
                 alignItems: 'center',
-                gap: '0.55rem',
+                gap: '0.65rem',
                 backgroundColor: '#ffffff',
-                border: '1px solid #e2e8f0',
+                color: '#0f172a',
+                padding: '0.85rem 1.85rem',
                 borderRadius: '9999px',
-                padding: '0.45rem 1.15rem',
-                fontSize: '0.85rem',
-                fontWeight: 500,
-                color: '#64748b',
-                boxShadow: '0 2px 8px rgba(0, 0, 0, 0.03)',
+                fontWeight: 600,
+                fontSize: '0.95rem',
                 textDecoration: 'none',
+                boxShadow: '0 10px 25px -5px rgba(0, 0, 0, 0.3)',
+                transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
               }}
             >
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
-                <polyline points="9 22 9 12 15 12 15 22" />
+              <span>{t('inquireBtn') || (locale === 'tr' ? 'Randevu & Bilgi Al' : 'Contact & Appointment')}</span>
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.2"
+                className="btn-arrow-icon"
+                style={{ transition: 'transform 0.3s ease' }}
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
               </svg>
-              <span>{t('breadcrumbHome')}</span>
-              <span style={{ color: '#cbd5e1' }}>›</span>
-              <span style={{ color: '#0f172a', fontWeight: 600 }}>{t('breadcrumbTreatments')}</span>
             </Link>
-          </div>
 
-          {/* Split Header: Left Title | Right Subtitle */}
-          <div
-            style={{
-              display: 'flex',
-              alignItems: 'flex-end',
-              justifyContent: 'space-between',
-              flexWrap: 'wrap',
-              gap: '2rem',
-              borderBottom: '1px solid #f1f5f9',
-              paddingBottom: '2.5rem',
-            }}
-          >
-            <div>
-              <h1
-                style={{
-                  fontSize: 'clamp(2.5rem, 5vw, 3.75rem)',
-                  fontWeight: 300,
-                  color: '#0f172a',
-                  letterSpacing: '-0.035em',
-                  lineHeight: 1.05,
-                  margin: 0,
-                }}
-              >
-                {t('pageTitle')}
-              </h1>
-            </div>
-
-            <div style={{ maxWidth: '420px', textAlign: 'right' }}>
-              <p
-                style={{
-                  fontSize: '0.925rem',
-                  color: '#64748b',
-                  margin: 0,
-                  lineHeight: 1.6,
-                  fontWeight: 400,
-                }}
-              >
-                {t('pageSubtitle')}
-              </p>
-            </div>
+            <a
+              href="#treatments-content"
+              className="hero-btn-secondary"
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.6rem',
+                backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                color: '#ffffff',
+                border: '1px solid rgba(255, 255, 255, 0.25)',
+                padding: '0.85rem 1.75rem',
+                borderRadius: '9999px',
+                fontWeight: 500,
+                fontSize: '0.95rem',
+                textDecoration: 'none',
+                backdropFilter: 'blur(8px)',
+                WebkitBackdropFilter: 'blur(8px)',
+              }}
+            >
+              <span>{t('exploreCasesBtn') || (locale === 'tr' ? 'Tedavileri İncele' : 'Explore Treatments')}</span>
+            </a>
           </div>
         </div>
-      </section>
+      </div>
 
-      {/* Interactive Treatments Cards, Clinical Guides & FAQ */}
-      <main style={{ flex: 1 }}>
-        <TreatmentsSectionView />
+      {/* Replicated Full Mouth Implant Section Layout with Numbered Placeholders */}
+      <main id="treatments-content" style={{ flex: 1 }}>
+        <TreatmentDetailView />
       </main>
 
       {/* Luxury Studio Footer */}
