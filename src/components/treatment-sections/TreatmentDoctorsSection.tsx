@@ -3,6 +3,7 @@
 import React from 'react';
 import { useLocale } from 'next-intl';
 import { Link } from '@/i18n/routing';
+import styles from './TreatmentDoctorsSection.module.css';
 
 export default function TreatmentDoctorsSection() {
   const locale = useLocale();
@@ -39,17 +40,17 @@ export default function TreatmentDoctorsSection() {
   ];
 
   return (
-    <div className="treatment-doctors-wrapper">
+    <div className={styles.wrapper}>
       <div className="treatment-container">
-        <h2 className="treatment-doctors-heading">
+        <h2 className={styles.heading}>
           <span>{locale === 'tr' ? 'UZMAN DOKTORLARIMIZ' : 'OUR DENTISTS'}</span>
         </h2>
 
-        <div className="treatment-doctors-grid">
+        <div className={styles.grid}>
           {doctors.map((doc, idx) => (
-            <div key={idx} className="treatment-doctor-card">
+            <div key={idx} className={styles.card}>
               <Link href={doc.href} className="no-underline block">
-                <div className="treatment-doctor-img-wrap">
+                <div className={styles.imgWrap}>
                   <img
                     src={doc.img}
                     alt={`${doc.title} ${doc.name}`}
@@ -57,14 +58,14 @@ export default function TreatmentDoctorsSection() {
                   />
                 </div>
 
-                <div className="treatment-doctor-info">
-                  <span className="treatment-doctor-badge">
+                <div className={styles.info}>
+                  <span className={styles.badge}>
                     {doc.title}
                   </span>
-                  <strong className="treatment-doctor-name">
+                  <strong className={styles.name}>
                     {doc.name}
                   </strong>
-                  <span className="treatment-doctor-specialty">
+                  <span className={styles.specialty}>
                     {doc.role}
                   </span>
                 </div>

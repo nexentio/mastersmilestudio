@@ -4,31 +4,32 @@ import React from 'react';
 import { useLocale } from 'next-intl';
 import { Link } from '@/i18n/routing';
 import { SITE_CONFIG, getWhatsAppLink } from '@/config/site';
+import styles from './TreatmentParallaxBanner.module.css';
 
 export default function TreatmentParallaxBanner() {
   const locale = useLocale();
 
   return (
-    <section className="parallax-section">
-      <div className="parallax-container">
-        <span className="parallax-subtitle">
+    <section className={styles.section}>
+      <div className={styles.container}>
+        <span className={styles.subtitle}>
           {locale === 'tr' ? 'KUSURSUZ TEDAVİ DENEYİMİ' : 'YOUR JOURNEY, SEAMLESSLY DESIGNED'}
         </span>
 
-        <h2 className="parallax-title">
+        <h2 className={styles.title}>
           {locale === 'tr'
             ? 'İlk Mesajınızdan Yeni Gülüşünüze Kadar Her Adımda Yanınızdayız'
             : 'From Your First Message to Your Final Smile — Guided with World-Class Care'}
         </h2>
 
-        <p className="parallax-desc">
+        <p className={styles.desc}>
           {locale === 'tr'
             ? 'Kişiye özel tedavi planlaması, net ve şeffaf iletişim, 5 yıldızlı konfor ve alanında uzman kurucu cerrahlarımızla sağlık turizmini unutulmaz bir deneyime dönüştürüyoruz.'
             : 'Personalized care, transparent communication, luxury 5-star hotel accommodation, and direct treatment by our clinic founders ensure a smooth and joyful journey in Istanbul.'}
         </p>
 
         {/* 3 Quick Action Buttons */}
-        <div className="parallax-buttons-row">
+        <div className={styles.buttonsRow}>
           <Link
             href="/contact"
             className="treatment-btn-gold"
@@ -48,7 +49,7 @@ export default function TreatmentParallaxBanner() {
 
           <a
             href={`tel:${SITE_CONFIG.phone}`}
-            className="parallax-btn-phone"
+            className={styles.btnPhone}
           >
             <span>📞 {SITE_CONFIG.phone}</span>
           </a>
