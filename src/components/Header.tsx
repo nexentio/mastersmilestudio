@@ -7,163 +7,144 @@ import LanguageSwitcher from './LanguageSwitcher';
 import { useState, useEffect } from 'react';
 import { SITE_CONFIG, getWhatsAppLink } from '@/config/site';
 
-const TREATMENTS_MEGA_MENU = [
+interface LocalizedString {
+  tr: string;
+  en: string;
+  de?: string;
+  ru?: string;
+  es?: string;
+  pt?: string;
+  pl?: string;
+}
+
+interface SubItem {
+  title: LocalizedString;
+  href: string;
+}
+
+interface TreatmentCategory {
+  id: string;
+  title: LocalizedString;
+  href: string;
+  subitems: SubItem[];
+}
+
+interface DropdownItem {
+  title: LocalizedString;
+  href: string;
+}
+
+const TREATMENTS_NAV_TREE: TreatmentCategory[] = [
   {
     id: 'implants',
-    title: { tr: 'İmplant Tedavisi', en: 'Dental Implants' },
+    title: { tr: 'Dental İmplant', en: 'Dental Implants', de: 'Zahnimplantate', ru: 'Имплантация зубов', es: 'Implantes Dentales', pt: 'Implantes Dentários', pl: 'Implanty Zębowe' },
     href: '/treatments#implants',
     subitems: [
-      { tr: 'Tüm Ağız İmplant (Full Mouth)', en: 'Full Mouth Implants', href: '/treatments#full-mouth' },
-      { tr: 'All-on-4 İmplant Tedavisi', en: 'All-on-4 Implants', href: '/treatments#all-on-4' },
-      { tr: 'All-on-6 İmplant Tedavisi', en: 'All-on-6 Implants', href: '/treatments#all-on-6' },
-      { tr: 'Aynı Gün İmplant (Immediate)', en: 'Immediate Implant Treatment', href: '/treatments#immediate' },
-      { tr: 'Zigoma & Pterigoid İmplant', en: 'Zygomatic & Pterygoid Implants', href: '/treatments#zygomatic' },
-      { tr: 'Zirkonyum İmplant', en: 'Zirconium Implants', href: '/treatments#zirconium-implants' },
-      { tr: 'İmplant Destekli Protez', en: 'Implant Supported Dentures', href: '/treatments#implant-dentures' },
-      { tr: 'Sinüs Lift & Kemik Grefti', en: 'Sinus Lifting & Bone Graft', href: '/treatments#sinus-lift' },
+      { title: { tr: 'Tüm Ağız İmplant (Full Mouth)', en: 'Full Mouth Implants', de: 'Vollmund-Implantate', ru: 'Имплантация всей челюсти', es: 'Implantes de Boca Completa', pt: 'Implantes de Boca Completa', pl: 'Implanty Całej Szczęki' }, href: '/treatments#full-mouth' },
+      { title: { tr: 'All-on-4 İmplant Tedavisi', en: 'All-on-4 Implants', de: 'All-on-4 Implantate', ru: 'Имплантация All-on-4', es: 'Implantes All-on-4', pt: 'Implantes All-on-4', pl: 'Implanty All-on-4' }, href: '/treatments#all-on-4' },
+      { title: { tr: 'All-on-6 İmplant Tedavisi', en: 'All-on-6 Implants', de: 'All-on-6 Implantate', ru: 'Имплантация All-on-6', es: 'Implantes All-on-6', pt: 'Implantes All-on-6', pl: 'Implanty All-on-6' }, href: '/treatments#all-on-6' },
+      { title: { tr: 'Aynı Gün İmplant (Immediate)', en: 'Immediate Implant Treatment', de: 'Sofortimplantate', ru: 'Одномоментная имплантация', es: 'Implantes Inmediatos', pt: 'Implantes Imediatos', pl: 'Implanty Natychmiastowe' }, href: '/treatments#immediate' },
+      { title: { tr: 'Zigoma & Pterigoid İmplant', en: 'Zygomatic and Pterygoid Implants', de: 'Jochbein- & Pterygoidimplantate', ru: 'Зигоматические импланты', es: 'Implantes Cigomáticos', pt: 'Implantes Zigomáticos', pl: 'Implanty Jarzmowe' }, href: '/treatments#zygomatic' },
+      { title: { tr: 'Zirkonyum İmplant', en: 'Zirconium Implants', de: 'Zirkonimplantate', ru: 'Циркониевые импланты', es: 'Implantes de Circonio', pt: 'Implantes de Zircónia', pl: 'Implanty Cyrkonowe' }, href: '/treatments#zirconium-implants' },
+      { title: { tr: 'İmplant Destekli Protez', en: 'Implant Supported Dentures', de: 'Implantatgetragene Prothesen', ru: 'Протезы на имплантах', es: 'Prótesis sobre Implantes', pt: 'Próteses sobre Implantes', pl: 'Protezy na Implantach' }, href: '/treatments#implant-dentures' },
+      { title: { tr: 'Sinüs Lift & Kemik Grefti', en: 'Sinus Lifting', de: 'Sinuslift & Knochenaufbau', ru: 'Синус-лифтинг и костная пластика', es: 'Elevación de Seno Maxilar', pt: 'Elevação de Seio Maxilar', pl: 'Podniesienie Dna Zatoki' }, href: '/treatments#sinus-lift' },
     ],
   },
   {
     id: 'crowns',
-    title: { tr: 'Zirkonyum & Kaplama', en: 'Dental Crowns' },
+    title: { tr: 'Zirkonyum & Kron Kaplama', en: 'Dental Crowns', de: 'Zahnkronen', ru: 'Зубные коронки', es: 'Coronas Dentales', pt: 'Coroas Dentárias', pl: 'Korony Zębowe' },
     href: '/treatments#crowns',
     subitems: [
-      { tr: 'Zirkonyum Kron Kaplama', en: 'Zirconium Crowns', href: '/treatments#zirconium-crowns' },
-      { tr: 'Metal Porselen Kaplama (PFM)', en: 'Metal Porcelain Crowns (PFM)', href: '/treatments#pfm-crowns' },
-      { tr: 'E-max Full Seramik Kaplama', en: 'E-max Crowns', href: '/treatments#emax-crowns' },
-      { tr: 'Tam Seramik Kron', en: 'Full Ceramic Crowns', href: '/treatments#full-ceramic' },
+      { title: { tr: 'Zirkonyum Kron Kaplama', en: 'Zirconium Crowns', de: 'Zirkonkronen', ru: 'Циркониевые коронки', es: 'Coronas de Circonio', pt: 'Coroas de Zircónia', pl: 'Korony Cyrkonowe' }, href: '/treatments#zirconium-crowns' },
+      { title: { tr: 'Metal Porselen Kaplama (PFM)', en: 'Metal Porcelain Crowns (PFM)', de: 'Metallkeramikkronen', ru: 'Металлокерамические коронки', es: 'Coronas de Metal-Porcelana', pt: 'Coroas de Metal-Porcelana', pl: 'Korony Metalowo-Porcelanowe' }, href: '/treatments#pfm-crowns' },
+      { title: { tr: 'E-max Full Seramik Kaplama', en: 'E-max Crowns', de: 'E-max Vollkeramikkronen', ru: 'Коронки E-max', es: 'Coronas E-max', pt: 'Coroas E-max', pl: 'Korony E-max' }, href: '/treatments#emax-crowns' },
+      { title: { tr: 'Tam Seramik Kron', en: 'Full Ceramic Crowns', de: 'Vollkeramikkronen', ru: 'Цельнокерамические коронки', es: 'Coronas Completamente Cerámicas', pt: 'Coroas Cerâmicas Puras', pl: 'Korony Pełnoceramiczne' }, href: '/treatments#full-ceramic' },
     ],
   },
   {
     id: 'veneers',
-    title: { tr: 'Lamine Veneer', en: 'Dental Veneers' },
+    title: { tr: 'Lamine Veneer (Kaplama)', en: 'Dental Veneers', de: 'Veneers', ru: 'Виниры', es: 'Carillas Dentales', pt: 'Facetas Dentárias', pl: 'Licówki Dentystyczne' },
     href: '/treatments#veneers',
     subitems: [
-      { tr: 'Porselen Lamine Veneer', en: 'Porcelain Veneers', href: '/treatments#porcelain-veneers' },
-      { tr: 'E-max Lamine Veneer', en: 'E-max Veneers', href: '/treatments#emax-veneers' },
-      { tr: 'Zirkonyum Lamine', en: 'Zirconium Veneers', href: '/treatments#zirconium-veneers' },
-      { tr: 'Kompozit Lamine (Bonding)', en: 'Composite Veneers', href: '/treatments#composite-veneers' },
-      { tr: 'Lumineers İnce Lamine', en: 'Lumineers', href: '/treatments#lumineers' },
-      { tr: 'Empress Estetik Lamine', en: 'Empress Veneers', href: '/treatments#empress-veneers' },
+      { title: { tr: 'Porselen Lamine Veneer', en: 'Porcelain Veneers', de: 'Porzellan-Veneers', ru: 'Фарфоровые виниры', es: 'Carillas de Porcelana', pt: 'Facetas de Porcelana', pl: 'Licówki Porcelanowe' }, href: '/treatments#porcelain-veneers' },
+      { title: { tr: 'E-max Lamine Veneer', en: 'E-max Veneers', de: 'E-max Veneers', ru: 'Виниры E-max', es: 'Carillas E-max', pt: 'Facetas E-max', pl: 'Licówki E-max' }, href: '/treatments#emax-veneers' },
+      { title: { tr: 'Zirkonyum Lamine', en: 'Zirconium Veneers', de: 'Zirkon-Veneers', ru: 'Циркониевые виниры', es: 'Carillas de Circonio', pt: 'Facetas de Zircónia', pl: 'Licówki Cyrkonowe' }, href: '/treatments#zirconium-veneers' },
+      { title: { tr: 'Kompozit Lamine (Bonding)', en: 'Composite Veneers', de: 'Komposit-Veneers', ru: 'Композитные виниры', es: 'Carillas de Composite', pt: 'Facetas de Compósito', pl: 'Licówki Kompozytowe' }, href: '/treatments#composite-veneers' },
+      { title: { tr: 'Lumineers İnce Lamine', en: 'Lumineers', de: 'Lumineers', ru: 'Люминиры', es: 'Lumineers', pt: 'Lumineers', pl: 'Lumineers' }, href: '/treatments#lumineers' },
+      { title: { tr: 'Empress Estetik Lamine', en: 'Empress Veneers', de: 'Empress-Veneers', ru: 'Виниры Empress', es: 'Carillas Empress', pt: 'Facetas Empress', pl: 'Licówki Empress' }, href: '/treatments#empress-veneers' },
     ],
   },
   {
     id: 'bridge',
-    title: { tr: 'Diş Köprüsü', en: 'Dental Bridge' },
+    title: { tr: 'Diş Köprüsü', en: 'Dental Bridge', de: 'Zahnbrücke', ru: 'Зубные мосты', es: 'Puentes Dentales', pt: 'Pontes Dentárias', pl: 'Mosty Protetyczne' },
     href: '/treatments#bridge',
     subitems: [
-      { tr: 'Zirkonyum Diş Köprüsü', en: 'Zirconium Dental Bridge', href: '/treatments#zirconium-bridge' },
-      { tr: 'Porselen Diş Köprüsü', en: 'Porcelain Dental Bridge', href: '/treatments#porcelain-bridge' },
-      { tr: 'İmplant Destekli Köprü', en: 'Implant Supported Bridge', href: '/treatments#implant-bridge' },
+      { title: { tr: 'Geleneksel Diş Köprüsü', en: 'Traditional Bridges', de: 'Traditionelle Brücken', ru: 'Традиционные мосты', es: 'Puentes Tradicionales', pt: 'Pontes Tradicionais', pl: 'Tradycyjne Mosty' }, href: '/treatments#traditional-bridges' },
+      { title: { tr: 'Maryland Kanatlı Köprü', en: 'Maryland Bridges', de: 'Maryland-Brücken', ru: 'Мэрилендские мосты', es: 'Puentes Maryland', pt: 'Pontes Maryland', pl: 'Mosty Maryland' }, href: '/treatments#maryland-bridges' },
+      { title: { tr: 'Balkon (Asma) Diş Köprüsü', en: 'Cantilever Bridges', de: 'Freiendbrücken', ru: 'Консольные мосты', es: 'Puentes Cantilever', pt: 'Pontes Cantilever', pl: 'Mosty Wspornikowe' }, href: '/treatments#cantilever-bridges' },
     ],
   },
   {
     id: 'dentures',
-    title: { tr: 'Protez Diş', en: 'Dentures' },
+    title: { tr: 'Protez Diş', en: 'Dentures', de: 'Zahnersatz', ru: 'Зубные протезы', es: 'Prótesis Dentales', pt: 'Próteses Dentárias', pl: 'Protezy Zębowe' },
     href: '/treatments#dentures',
     subitems: [
-      { tr: 'Hareketli Protez Diş', en: 'Removable Dentures', href: '/treatments#removable-dentures' },
-      { tr: 'Çıt Çıtlı Hassas Tutuculu Protez', en: 'Precision Attachment Dentures', href: '/treatments#precision-dentures' },
-      { tr: 'Sabit Protez', en: 'Fixed Dentures', href: '/treatments#fixed-dentures' },
+      { title: { tr: 'Tam (Total) Protez', en: 'Complete Dentures', de: 'Vollprothesen', ru: 'Полные съемные протезы', es: 'Prótesis Completas', pt: 'Próteses Totais', pl: 'Protezy Całkowite' }, href: '/treatments#complete-dentures' },
+      { title: { tr: 'Bölümlü (Parsiyel) Protez', en: 'Partial Dentures', de: 'Teilprothesen', ru: 'Частичные съемные протезы', es: 'Prótesis Parciales', pt: 'Próteses Parciais', pl: 'Protezy Częściowe' }, href: '/treatments#partial-dentures' },
+      { title: { tr: 'İmplant Üstü Çıt Çıtlı Protez', en: 'Implant Supported Dentures / Overdentures', de: 'Deckprothesen / Overdentures', ru: 'Покрывные протезы на имплантах', es: 'Sobredentaduras sobre Implantes', pt: 'Sobredentaduras sobre Implantes', pl: 'Protezy Nakładkowe Overdenture' }, href: '/treatments#overdentures' },
     ],
   },
   {
     id: 'cosmetic',
-    title: { tr: 'Estetik Diş Hekimliği', en: 'Cosmetic Dentistry' },
+    title: { tr: 'Estetik Diş Hekimliği', en: 'Cosmetic Dentistry', de: 'Ästhetische Zahnheilkunde', ru: 'Эстетическая стоматология', es: 'Odontología Estética', pt: 'Dentistería Estética', pl: 'Stomatologia Estetyczna' },
     href: '/treatments#cosmetic',
     subitems: [
-      { tr: 'Hollywood Smile Gülüş Tasarımı', en: 'Hollywood Smile Makeover', href: '/treatments#hollywood-smile' },
-      { tr: 'Lazerle Diş Beyazlatma (Bleaching)', en: 'Teeth Whitening (Bleaching)', href: '/treatments#whitening' },
-      { tr: 'Diş Eti Estetiği (Gingivektomi)', en: 'Gum Aesthetics (Gingivectomy)', href: '/treatments#gum-aesthetics' },
-      { tr: '3D Dijital Gülüş Simülasyonu', en: 'Digital Smile Simulation 3D', href: '/treatments#digital-smile' },
+      { title: { tr: 'Gülüş Tasarımı (Smile Makeover)', en: 'Smile Makeover', de: 'Smile Makeover', ru: 'Преображение улыбки', es: 'Diseño de Sonrisa', pt: 'Transformação do Sorriso', pl: 'Metamorfoza Uśmiechu' }, href: '/treatments#smile-makeover' },
+      { title: { tr: 'Hollywood Smile', en: 'Hollywood Smile', de: 'Hollywood Smile', ru: 'Голливудская улыбка', es: 'Hollywood Smile', pt: 'Hollywood Smile', pl: 'Hollywood Smile' }, href: '/treatments#hollywood-smile' },
+      { title: { tr: 'Diş Eti Estetiği (Gummy Smile)', en: 'Gummy Smile Treatment', de: 'Gummy Smile Behandlung', ru: 'Коррекция десневой улыбки', es: 'Tratamiento de Sonrisa Gingival', pt: 'Tratamento de Sorriso Gengival', pl: 'Leczenie Uśmiechu Dziąsłowego' }, href: '/treatments#gummy-smile' },
+      { title: { tr: 'Lazerle Diş Beyazlatma', en: 'Teeth Whitening', de: 'Zahnaufhellung', ru: 'Отбеливание зубов', es: 'Blanqueamiento Dental', pt: 'Branqueamento Dentário', pl: 'Wybielanie Zębów' }, href: '/treatments#teeth-whitening' },
+      { title: { tr: 'Diş Şekillendirme & Kontür', en: 'Tooth Contouring & Shaping', de: 'Zahnkonturierung', ru: 'Контурирование зубов', es: 'Contorneado Dental', pt: 'Contorno Dentário', pl: 'Konturowanie Zębów' }, href: '/treatments#tooth-contouring' },
+      { title: { tr: 'Ayrık Diş Kapatma (Diastema)', en: 'Diastema Closure', de: 'Diastema-Schluss', ru: 'Закрытие диастемы', es: 'Cierre de Diastemas', pt: 'Fecho de Diastemas', pl: 'Zamykanie Diastemy' }, href: '/treatments#diastema-closure' },
     ],
   },
   {
     id: 'general',
-    title: { tr: 'Genel Diş Hekimliği', en: 'General Dentistry' },
+    title: { tr: 'Genel Diş Hekimliği', en: 'General Dentistry', de: 'Allgemeine Zahnheilkunde', ru: 'Общая стоматология', es: 'Odontología General', pt: 'Medicina Dentária Geral', pl: 'Stomatologia Ogólna' },
     href: '/treatments#general',
     subitems: [
-      { tr: 'Kanal Tedavisi (Endodonti)', en: 'Root Canal Treatment', href: '/treatments#root-canal' },
-      { tr: 'Estetik Kompozit Dolgu', en: 'Composite Filling', href: '/treatments#composite-filling' },
-      { tr: 'Diş Taşı Temizliği & Detertraj', en: 'Dental Cleaning & Scaling', href: '/treatments#scaling' },
-      { tr: 'Gömülü 20\'lik Diş Çekimi', en: 'Wisdom Tooth Extraction', href: '/treatments#wisdom-tooth' },
+      { title: { tr: 'Diş Taşı Temizliği & Polisaj', en: 'Dental Cleaning (Scaling & Polishing)', de: 'Professionelle Zahnreinigung', ru: 'Профессиональная чистка зубов', es: 'Limpieza Dental y Pulido', pt: 'Destartarização e Polimento', pl: 'Higienizacja i Skaling' }, href: '/treatments#dental-cleaning' },
+      { title: { tr: 'Estetik Kompozit Dolgu', en: 'Tooth Fillings (Amalgam/Composite)', de: 'Zahnfüllungen', ru: 'Эстетические пломбы', es: 'Empastes Dentales', pt: 'Restaurações Dentárias', pl: 'Wypełnienia Zębowe' }, href: '/treatments#tooth-fillings' },
+      { title: { tr: 'Kanal Tedavisi (Endodonti)', en: 'Root Canal Treatment', de: 'Wurzelkanalbehandlung', ru: 'Лечение каналов', es: 'Endodoncia', pt: 'Desvitalização Dentária', pl: 'Leczenie Kanałowe' }, href: '/treatments#root-canal' },
+      { title: { tr: '20\'lik ve Normal Diş Çekimi', en: 'Tooth Extraction', de: 'Zahnextraktion', ru: 'Удаление зубов', es: 'Extracción Dental', pt: 'Extração Dentária', pl: 'Ekstrakcja Zęba' }, href: '/treatments#tooth-extraction' },
+      { title: { tr: 'İnley & Onley Porselen Dolgu', en: 'Inlay & Onlay', de: 'Inlays & Onlays', ru: 'Вкладки Inlay & Onlay', es: 'Incrustaciones Inlay & Onlay', pt: 'Inlays & Onlays', pl: 'Wkłady i Nakłady Inlay/Onlay' }, href: '/treatments#inlay-onlay' },
+      { title: { tr: 'Fissür Örtücü (Sealants)', en: 'Dental Sealants', de: 'Fissurenversiegelung', ru: 'Герметизация фиссур', es: 'Selladores Dentales', pt: 'Selantes Dentários', pl: 'Lakowanie Zębów' }, href: '/treatments#dental-sealants' },
+      { title: { tr: 'Florür Uygulaması', en: 'Fluoride Treatment', de: 'Fluoridierung', ru: 'Фторирование зубов', es: 'Tratamiento con Flúor', pt: 'Tratamento com Flúor', pl: 'Fluoryzacja' }, href: '/treatments#fluoride-treatment' },
+      { title: { tr: 'Gece Plağı (Bruksizm Tedavisi)', en: 'Bruxism Treatment (Night Guard)', de: 'Aufbissschiene (Bruxismus)', ru: 'Лечение бруксизма (ночные капы)', es: 'Tratamiento de Bruxismo (Férula)', pt: 'Tratamento de Bruxismo (Goteira)', pl: 'Leczenie Bruksizmu (Szyna Nocna)' }, href: '/treatments#bruxism-treatment' },
     ],
   },
 ];
 
-const EXPLORE_MEGA_MENU = [
-  {
-    id: 'prices',
-    title: { tr: 'Fiyatlar & Paketler', en: 'Prices' },
-    href: '/treatments#pricing',
-    subitems: [
-      { tr: 'Fiyat Listesi', en: 'Price List', href: '/treatments#pricing' },
-      { tr: 'VIP Diş Turizmi Paketleri', en: 'Packages', href: '/#contact' },
-    ],
-  },
-  {
-    id: 'gallery',
-    title: { tr: 'Galeri', en: 'Gallery' },
-    href: '/gallery',
-    subitems: [
-      { tr: 'Fotoğraf Galerisi', en: 'Photo Gallery', href: '/gallery' },
-      { tr: 'Video Hasta Hikayeleri', en: 'Video Stories', href: '/#real-patients' },
-    ],
-  },
-  {
-    id: 'blog',
-    title: { tr: 'Blog', en: 'Blog' },
-    href: '/#blog',
-    subitems: [
-      { tr: 'Diş Sağlığı Makaleleri', en: 'Dental Health Articles', href: '/#blog' },
-      { tr: 'Diş Turizmi Rehberi', en: 'Dental Tourism Guide', href: '/#blog' },
-    ],
-  },
-  {
-    id: 'reviews',
-    title: { tr: 'Hasta Yorumları', en: 'Reviews' },
-    href: '/#patients',
-    subitems: [
-      { tr: 'Google Yorumları (4.9 ★)', en: 'Google Reviews (4.9 ★)', href: '/#patients' },
-      { tr: 'Trustpilot Yorumları (5.0 ★)', en: 'Trustpilot Reviews (5.0 ★)', href: '/#patients' },
-      { tr: 'Hasta Deneyimleri', en: 'Patient Stories', href: '/#real-patients' },
-    ],
-  },
-  {
-    id: 'before-after',
-    title: { tr: 'Öncesi / Sonrası', en: 'Before/After' },
-    href: '/#transformations',
-    subitems: [
-      { tr: 'Hollywood Smile Vakaları', en: 'Hollywood Smile Cases', href: '/#transformations' },
-      { tr: 'İmplant Dönüşümleri', en: 'Implant Transformations', href: '/#transformations' },
-      { tr: 'Lamine Veneer Dönüşümleri', en: 'Veneer Transformations', href: '/#transformations' },
-    ],
-  },
-  {
-    id: 'faq',
-    title: { tr: 'Sıkça Sorulan Sorular (SSS)', en: 'Frequently Asked Questions (FAQ)' },
-    href: '/#faq',
-    subitems: [
-      { tr: 'Tedavi Süreci SSS', en: 'Treatment Process FAQ', href: '/#faq' },
-      { tr: 'Konaklama ve VIP Transfer SSS', en: 'Travel & VIP Stay FAQ', href: '/#faq' },
-      { tr: 'Uluslararası Garanti SSS', en: 'Guarantee FAQ', href: '/#faq' },
-    ],
-  },
+const EXPLORE_DROPDOWN: DropdownItem[] = [
+  { title: { tr: 'Fotoğraf Galerisi', en: 'Photo Gallery', de: 'Fotogalerie', ru: 'Фотогалерея', es: 'Galería de Fotos', pt: 'Galeria de Fotos', pl: 'Galeria Zdjęć' }, href: '/gallery' },
+  { title: { tr: 'Hasta Hikayeleri & Video', en: 'Patient Stories & Videos', de: 'Patientengeschichten & Videos', ru: 'Истории пациентов и видео', es: 'Historias de Pacientes y Videos', pt: 'Histórias de Pacientes e Vídeos', pl: 'Historie Pacjentów i Wideo' }, href: '/#real-patients' },
+  { title: { tr: 'Öncesi & Sonrası', en: 'Before & After', de: 'Vorher & Nachher', ru: 'До и После', es: 'Antes y Después', pt: 'Antes e Depois', pl: 'Przed i Po' }, href: '/#transformations' },
+  { title: { tr: 'Hasta Yorumları', en: 'Patient Reviews', de: 'Patientenbewertungen', ru: 'Отзывы пациентов', es: 'Opiniones de Pacientes', pt: 'Avaliações de Pacientes', pl: 'Opinie Pacjentów' }, href: '/#patients' },
+  { title: { tr: 'Tedavi Süreci', en: 'Treatment Process', de: 'Behandlungsablauf', ru: 'Процесс лечения', es: 'Proceso de Tratamiento', pt: 'Processo de Tratamento', pl: 'Przebieg Leczenia' }, href: '/#treatment-process' },
+  { title: { tr: 'Sıkça Sorulan Sorular', en: 'Frequently Asked Questions', de: 'Häufig gestellte Fragen', ru: 'Частые вопросы', es: 'Preguntas Frecuentes', pt: 'Perguntas Frequentes', pl: 'Często Zadawane Pytania' }, href: '/#faq' },
+  { title: { tr: 'Blog & Makaleler', en: 'Blog & Articles', de: 'Blog & Artikel', ru: 'Блог и статьи', es: 'Blog y Artículos', pt: 'Blog e Artigos', pl: 'Blog i Artykuły' }, href: '/#blog' },
 ];
 
 export default function Header() {
   const t = useTranslations('common');
   const locale = useLocale();
-  const whatsappUrl = getWhatsAppLink(locale);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<'treatments' | 'explore' | null>(null);
-  const [activeTreatmentCat, setActiveTreatmentCat] = useState<string>('implants');
-  const [activeExploreCat, setActiveExploreCat] = useState<string>('prices');
+  const [hoveredCategory, setHoveredCategory] = useState<string | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 30) {
+      if (window.scrollY > 20) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
@@ -174,11 +155,15 @@ export default function Header() {
   }, []);
 
   const navLinks = [
-    { label: t('navigation.treatments'), href: '/treatments', menuType: 'treatments' },
-    { label: t('navigation.explore'), href: '/gallery', menuType: 'explore' },
+    { label: t('navigation.treatments'), href: '/treatments', menuType: 'treatments' as const },
+    { label: t('navigation.explore'), href: '/gallery', menuType: 'explore' as const },
     { label: t('navigation.about'), href: '/about' },
     { label: t('navigation.contact'), href: '/contact' },
   ];
+
+  const getLocalized = (locObj: LocalizedString) => {
+    return (locObj as any)[locale] || locObj.en || locObj.tr;
+  };
 
   return (
     <>
@@ -254,94 +239,54 @@ export default function Header() {
               suppressHydrationWarning
             >
               <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
               </svg>
             </a>
 
             {/* WhatsApp */}
             <a
               aria-label="WhatsApp"
-              href={whatsappUrl}
+              href={getWhatsAppLink(locale)}
               target="_blank"
               rel="noopener noreferrer"
               className="social-icon-btn social-icon-wa"
               suppressHydrationWarning
             >
-              <Image
-                src="/whatsapp-icon-mss.webp"
-                alt="WhatsApp"
-                width={22}
-                height={22}
-                style={{
-                  width: '100%',
-                  height: '100%',
-                  objectFit: 'cover',
-                }}
-              />
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.971.54 1.764.814 2.8.814 3.18 0 5.766-2.587 5.766-5.766 0-3.18-2.586-5.766-5.77-5.766zm0 10.355c-.933 0-1.636-.263-2.383-.717l-.17-.104-1.77.464.473-1.727-.113-.18c-.49-.785-.778-1.579-.778-2.325 0-2.531 2.059-4.59 4.592-4.59 2.532 0 4.591 2.059 4.591 4.59 0 2.531-2.059 4.589-4.591 4.589z" />
+              </svg>
             </a>
 
             {/* Email */}
             <a
               aria-label="Email"
-              href={`mailto:${SITE_CONFIG.email}`}
-              target="_blank"
-              rel="noopener noreferrer"
+              href="mailto:info@mastersmilestudio.com"
               className="social-icon-btn social-icon-mail"
               suppressHydrationWarning
             >
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <rect x="2" y="4" width="20" height="16" rx="2" />
-                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
               </svg>
             </a>
           </div>
 
-          {/* Center: Google Reviews Badge */}
-          <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.78rem' }}>
-            <span style={{ fontWeight: 700, color: '#ffffff' }}>{t('topBar.googleReviews')}</span>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 0 }}>
-              {[1, 2, 3, 4, 5].map((starIdx) => (
-                <Image
-                  key={starIdx}
-                  src="/neon-star.png"
-                  alt="Rating Star"
-                  width={14}
-                  height={14}
-                  style={{
-                    objectFit: 'contain',
-                    filter: 'drop-shadow(0px 0px 4px rgba(255, 255, 255, 0.85))',
-                  }}
-                />
-              ))}
+          {/* Center/Right: Google Reviews Rating */}
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', flexWrap: 'wrap' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
+              <span style={{ fontWeight: 700, letterSpacing: '0.02em' }}>{t('topBar.googleReviews')}</span>
+              <span style={{ color: '#fef08a' }}>★★★★★</span>
+              <span style={{ fontWeight: 800 }}>{t('topBar.rating')}</span>
             </div>
-            <span style={{ fontWeight: 750, color: '#ffffff' }}>{t('topBar.rating')}</span>
-            <span style={{ opacity: 0.6, color: '#ffffff' }}>·</span>
-            <span style={{ color: '#ffffff' }}>{t('topBar.happyPatients')}</span>
-          </div>
-
-          {/* Right: Contact Links */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', fontSize: '0.78rem', fontWeight: 650 }}>
-            <a
-              href="mailto:info@mastersmilestudio.com"
-              style={{ color: '#ffffff', textDecoration: 'none', transition: 'opacity 0.2s ease' }}
-              onMouseEnter={(e) => (e.currentTarget.style.opacity = '0.8')}
-              onMouseLeave={(e) => (e.currentTarget.style.opacity = '1')}
-            >
-              info@mastersmilestudio.com
-            </a>
-            <a
-              href="tel:+905434568080"
-              style={{ color: '#ffffff', textDecoration: 'none', transition: 'opacity 0.2s ease' }}
-              onMouseEnter={(e) => (e.currentTarget.style.opacity = '0.8')}
-              onMouseLeave={(e) => (e.currentTarget.style.opacity = '1')}
-            >
-              +90 543 456 80 80
-            </a>
+            <span style={{ opacity: 0.6 }}>•</span>
+            <span>{t('topBar.happyPatients')}</span>
+            <span style={{ opacity: 0.6 }}>•</span>
+            <span>{t('topBar.countries')}</span>
           </div>
         </div>
       </div>
 
-      {/* Main Sticky Header - Smoothly shrinks and becomes compact on scroll */}
+      {/* Main Global Navigation Bar */}
       <header
         style={{
           position: 'sticky',
@@ -351,50 +296,58 @@ export default function Header() {
           backgroundColor: isScrolled ? 'rgba(255, 255, 255, 0.94)' : 'rgba(255, 255, 255, 0.85)',
           backdropFilter: 'blur(16px)',
           WebkitBackdropFilter: 'blur(16px)',
-          borderBottom: isScrolled ? '1px solid rgba(226, 232, 240, 0.95)' : '1px solid rgba(226, 232, 240, 0.65)',
-          boxShadow: isScrolled ? '0 10px 30px -10px rgba(0, 0, 0, 0.08)' : 'none',
+          borderBottom: isScrolled ? '1px solid rgba(226, 232, 240, 0.9)' : '1px solid rgba(241, 245, 249, 0.8)',
+          boxShadow: isScrolled ? '0 4px 20px -2px rgba(0, 0, 0, 0.08)' : '0 1px 3px rgba(0, 0, 0, 0.02)',
           transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
         }}
       >
         <div
           style={{
-            maxWidth: '1280px',
+            width: '94%',
+            maxWidth: '1400px',
             margin: '0 auto',
-            padding: isScrolled ? '0.45rem 1.5rem' : '0.85rem 1.5rem',
+            padding: isScrolled ? '0.55rem 1rem' : '0.85rem 1rem',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'space-between',
+            gap: '1rem',
             transition: 'padding 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
           }}
         >
           {/* Logo Section */}
           <Link
             href="/"
-            className="header-logo-link"
             style={{
               display: 'flex',
               alignItems: 'center',
-              gap: '0.75rem',
               textDecoration: 'none',
             }}
+            className="header-logo-link"
           >
-            <Image
-              src="/logo-mastersmilestudio-no-bg.webp"
-              alt="Master Smile Studio Logo"
-              width={180}
-              height={48}
-              priority
+            <div
               style={{
-                objectFit: 'contain',
-                height: isScrolled ? '34px' : '44px',
-                width: 'auto',
-                filter: 'brightness(0)',
-                transition: 'height 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+                position: 'relative',
+                width: isScrolled ? '170px' : '200px',
+                height: isScrolled ? '42px' : '52px',
+                transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
               }}
-            />
+            >
+              <Image
+                src="/logo-mastersmilestudio-no-bg.webp"
+                alt="Master Smile Studio Logo"
+                fill
+                priority
+                sizes="200px"
+                style={{
+                  objectFit: 'contain',
+                  objectPosition: 'left center',
+                  filter: 'brightness(0)',
+                }}
+              />
+            </div>
           </Link>
 
-          {/* Desktop Navigation Links with Treatments Mega Menu */}
+          {/* Desktop Navigation Links */}
           <nav
             style={{
               display: 'flex',
@@ -415,7 +368,10 @@ export default function Header() {
                     key={idx}
                     style={{ position: 'relative' }}
                     onMouseEnter={() => setActiveDropdown('treatments')}
-                    onMouseLeave={() => setActiveDropdown(null)}
+                    onMouseLeave={() => {
+                      setActiveDropdown(null);
+                      setHoveredCategory(null);
+                    }}
                   >
                     <Link
                       href={link.href}
@@ -423,7 +379,8 @@ export default function Header() {
                       style={{
                         fontSize: isScrolled ? '0.9rem' : '0.95rem',
                         fontWeight: 600,
-                        color: isOpen ? '#D58936' : '#334155',
+                        color: isOpen ? '#0f172a' : '#334155',
+                        backgroundColor: isOpen ? '#f1f5f9' : 'transparent',
                         textDecoration: 'none',
                         display: 'inline-flex',
                         alignItems: 'center',
@@ -448,7 +405,7 @@ export default function Header() {
                       </svg>
                     </Link>
 
-                    {/* Treatments Mega Menu Dropdown */}
+                    {/* Level 1 Treatments Dropdown Menu with 2nd Level Flyout */}
                     {isOpen && (
                       <div
                         style={{
@@ -456,123 +413,71 @@ export default function Header() {
                           top: '100%',
                           left: '50%',
                           transform: 'translateX(-50%)',
-                          paddingTop: '0.85rem',
+                          paddingTop: '0.65rem',
                           zIndex: 100,
                         }}
                       >
-                        <div
-                          style={{
-                            width: '680px',
-                            backgroundColor: 'rgba(24, 24, 27, 0.96)',
-                            backdropFilter: 'blur(20px)',
-                            WebkitBackdropFilter: 'blur(20px)',
-                            borderRadius: '18px',
-                            border: '1px solid rgba(213, 137, 54, 0.4)',
-                            boxShadow: '0 24px 50px rgba(0, 0, 0, 0.45)',
-                            padding: '0.85rem',
-                            display: 'grid',
-                            gridTemplateColumns: '240px 1fr',
-                            gap: '0.85rem',
-                          }}
-                        >
-                          {/* Left Column: Level 1 Main Categories */}
-                          <div
-                            style={{
-                              backgroundColor: 'rgba(255, 255, 255, 0.04)',
-                              borderRadius: '12px',
-                              padding: '0.5rem',
-                              display: 'flex',
-                              flexDirection: 'column',
-                              gap: '0.35rem',
-                            }}
-                          >
-                            {TREATMENTS_MEGA_MENU.map((cat) => {
-                              const isActive = activeTreatmentCat === cat.id;
-                              const label = locale === 'tr' ? cat.title.tr : cat.title.en;
-                              return (
-                                <div
-                                  key={cat.id}
-                                  onMouseEnter={() => setActiveTreatmentCat(cat.id)}
-                                  onClick={() => setActiveTreatmentCat(cat.id)}
-                                  style={{
-                                    padding: '0.65rem 0.95rem',
-                                    borderRadius: '8px',
-                                    fontSize: '0.88rem',
-                                    fontWeight: isActive ? 700 : 500,
-                                    color: isActive ? '#ffffff' : '#cbd5e1',
-                                    backgroundColor: isActive ? '#D58936' : 'transparent',
-                                    boxShadow: isActive ? '0 4px 14px rgba(213, 137, 54, 0.35)' : 'none',
-                                    cursor: 'pointer',
-                                    transition: 'all 0.2s cubic-bezier(0.4, 0, 0.2, 1)',
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                    justifyContent: 'space-between',
-                                  }}
-                                >
-                                  <span>{label}</span>
-                                  <svg
-                                    width="14"
-                                    height="14"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2.2"
-                                    style={{ opacity: isActive ? 1 : 0.4, transition: 'opacity 0.2s ease' }}
-                                  >
-                                    <path d="M9 18l6-6-6-6" />
-                                  </svg>
-                                </div>
-                              );
-                            })}
-                          </div>
+                        <div className="dropdown-menu-card">
+                          {TREATMENTS_NAV_TREE.map((cat) => {
+                            const isCatHovered = hoveredCategory === cat.id;
+                            const hasSubitems = cat.subitems && cat.subitems.length > 0;
 
-                          {/* Right Column: Level 2 Dynamic Sub-treatments */}
-                          <div
-                            style={{
-                              backgroundColor: 'rgba(255, 255, 255, 0.02)',
-                              borderRadius: '12px',
-                              padding: '0.65rem 0.85rem',
-                              display: 'flex',
-                              flexDirection: 'column',
-                              gap: '0.2rem',
-                              maxHeight: '380px',
-                              overflowY: 'auto',
-                            }}
-                          >
-                            {(() => {
-                              const selectedCat =
-                                TREATMENTS_MEGA_MENU.find((c) => c.id === activeTreatmentCat) || TREATMENTS_MEGA_MENU[0];
-                              return selectedCat.subitems.map((sub, sIdx) => {
-                                const subLabel = locale === 'tr' ? sub.tr : sub.en;
-                                return (
-                                  <Link
-                                    key={sIdx}
-                                    href={sub.href}
-                                    onClick={() => setActiveDropdown(null)}
-                                    className="mega-subitem-link"
-                                    style={{
-                                      padding: '0.65rem 0.85rem',
-                                      borderRadius: '6px',
-                                      fontSize: '0.86rem',
-                                      fontWeight: 500,
-                                      color: '#f8fafc',
-                                      borderBottom: '1px solid rgba(255, 255, 255, 0.06)',
-                                      display: 'flex',
-                                      alignItems: 'center',
-                                      justifyContent: 'space-between',
-                                      textDecoration: 'none',
-                                      transition: 'all 0.2s ease',
-                                    }}
-                                  >
-                                    <span>{subLabel}</span>
-                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#D58936" strokeWidth="2.2">
-                                      <path d="M5 12h14M12 5l7 7-7 7" />
+                            return (
+                              <div
+                                key={cat.id}
+                                style={{ position: 'relative' }}
+                                onMouseEnter={() => setHoveredCategory(cat.id)}
+                              >
+                                <Link
+                                  href={cat.href}
+                                  onClick={() => {
+                                    setActiveDropdown(null);
+                                    setHoveredCategory(null);
+                                  }}
+                                  className={`dropdown-item-link ${isCatHovered ? 'active-flyout' : ''}`}
+                                >
+                                  <span>{getLocalized(cat.title)}</span>
+                                  {hasSubitems && (
+                                    <svg
+                                      width="12"
+                                      height="12"
+                                      viewBox="0 0 24 24"
+                                      fill="none"
+                                      stroke="currentColor"
+                                      strokeWidth="2.5"
+                                      style={{
+                                        opacity: isCatHovered ? 1 : 0.45,
+                                        stroke: isCatHovered ? '#D58936' : 'currentColor',
+                                        transition: 'all 0.2s ease',
+                                      }}
+                                    >
+                                      <path d="M9 18l6-6-6-6" />
                                     </svg>
-                                  </Link>
-                                );
-                              });
-                            })()}
-                          </div>
+                                  )}
+                                </Link>
+
+                                {/* Level 2 Flyout Submenu */}
+                                {isCatHovered && hasSubitems && (
+                                  <div className="dropdown-subcard">
+                                    {cat.subitems.map((sub, sIdx) => (
+                                      <Link
+                                        key={sIdx}
+                                        href={sub.href}
+                                        onClick={() => {
+                                          setActiveDropdown(null);
+                                          setHoveredCategory(null);
+                                        }}
+                                        className="dropdown-item-link"
+                                        style={{ justifyContent: 'flex-start' }}
+                                      >
+                                        <span>{getLocalized(sub.title)}</span>
+                                      </Link>
+                                    ))}
+                                  </div>
+                                )}
+                              </div>
+                            );
+                          })}
                         </div>
                       </div>
                     )}
@@ -595,7 +500,8 @@ export default function Header() {
                       style={{
                         fontSize: isScrolled ? '0.9rem' : '0.95rem',
                         fontWeight: 600,
-                        color: isOpen ? '#D58936' : '#334155',
+                        color: isOpen ? '#0f172a' : '#334155',
+                        backgroundColor: isOpen ? '#f1f5f9' : 'transparent',
                         textDecoration: 'none',
                         display: 'inline-flex',
                         alignItems: 'center',
@@ -620,7 +526,7 @@ export default function Header() {
                       </svg>
                     </Link>
 
-                    {/* Explore Mega Menu Dropdown */}
+                    {/* Explore Dropdown Menu */}
                     {isOpen && (
                       <div
                         style={{
@@ -628,123 +534,22 @@ export default function Header() {
                           top: '100%',
                           left: '50%',
                           transform: 'translateX(-50%)',
-                          paddingTop: '0.85rem',
+                          paddingTop: '0.65rem',
                           zIndex: 100,
                         }}
                       >
-                        <div
-                          style={{
-                            width: '600px',
-                            backgroundColor: 'rgba(24, 24, 27, 0.96)',
-                            backdropFilter: 'blur(20px)',
-                            WebkitBackdropFilter: 'blur(20px)',
-                            borderRadius: '18px',
-                            border: '1px solid rgba(213, 137, 54, 0.4)',
-                            boxShadow: '0 24px 50px rgba(0, 0, 0, 0.45)',
-                            padding: '0.85rem',
-                            display: 'grid',
-                            gridTemplateColumns: '230px 1fr',
-                            gap: '0.85rem',
-                          }}
-                        >
-                          {/* Left Column: Level 1 Explore Categories */}
-                          <div
-                            style={{
-                              backgroundColor: 'rgba(255, 255, 255, 0.04)',
-                              borderRadius: '12px',
-                              padding: '0.5rem',
-                              display: 'flex',
-                              flexDirection: 'column',
-                              gap: '0.35rem',
-                            }}
-                          >
-                            {EXPLORE_MEGA_MENU.map((cat) => {
-                              const isActive = activeExploreCat === cat.id;
-                              const label = locale === 'tr' ? cat.title.tr : cat.title.en;
-                              return (
-                                <div
-                                  key={cat.id}
-                                  onMouseEnter={() => setActiveExploreCat(cat.id)}
-                                  onClick={() => setActiveExploreCat(cat.id)}
-                                  style={{
-                                    padding: '0.65rem 0.95rem',
-                                    borderRadius: '8px',
-                                    fontSize: '0.88rem',
-                                    fontWeight: isActive ? 700 : 500,
-                                    color: isActive ? '#ffffff' : '#cbd5e1',
-                                    backgroundColor: isActive ? '#D58936' : 'transparent',
-                                    boxShadow: isActive ? '0 4px 14px rgba(213, 137, 54, 0.35)' : 'none',
-                                    cursor: 'pointer',
-                                    transition: 'all 0.2s cubic-bezier(0.4, 0, 0.2, 1)',
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                    justifyContent: 'space-between',
-                                  }}
-                                >
-                                  <span>{label}</span>
-                                  <svg
-                                    width="14"
-                                    height="14"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2.2"
-                                    style={{ opacity: isActive ? 1 : 0.4, transition: 'opacity 0.2s ease' }}
-                                  >
-                                    <path d="M9 18l6-6-6-6" />
-                                  </svg>
-                                </div>
-                              );
-                            })}
-                          </div>
-
-                          {/* Right Column: Level 2 Explore Dynamic Sub-items */}
-                          <div
-                            style={{
-                              backgroundColor: 'rgba(255, 255, 255, 0.02)',
-                              borderRadius: '12px',
-                              padding: '0.65rem 0.85rem',
-                              display: 'flex',
-                              flexDirection: 'column',
-                              gap: '0.2rem',
-                              maxHeight: '380px',
-                              overflowY: 'auto',
-                            }}
-                          >
-                            {(() => {
-                              const selectedCat =
-                                EXPLORE_MEGA_MENU.find((c) => c.id === activeExploreCat) || EXPLORE_MEGA_MENU[0];
-                              return selectedCat.subitems.map((sub, sIdx) => {
-                                const subLabel = locale === 'tr' ? sub.tr : sub.en;
-                                return (
-                                  <Link
-                                    key={sIdx}
-                                    href={sub.href}
-                                    onClick={() => setActiveDropdown(null)}
-                                    className="mega-subitem-link"
-                                    style={{
-                                      padding: '0.65rem 0.85rem',
-                                      borderRadius: '6px',
-                                      fontSize: '0.86rem',
-                                      fontWeight: 500,
-                                      color: '#f8fafc',
-                                      borderBottom: '1px solid rgba(255, 255, 255, 0.06)',
-                                      display: 'flex',
-                                      alignItems: 'center',
-                                      justifyContent: 'space-between',
-                                      textDecoration: 'none',
-                                      transition: 'all 0.2s ease',
-                                    }}
-                                  >
-                                    <span>{subLabel}</span>
-                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#D58936" strokeWidth="2.2">
-                                      <path d="M5 12h14M12 5l7 7-7 7" />
-                                    </svg>
-                                  </Link>
-                                );
-                              });
-                            })()}
-                          </div>
+                        <div className="dropdown-menu-card">
+                          {EXPLORE_DROPDOWN.map((item, eIdx) => (
+                            <Link
+                              key={eIdx}
+                              href={item.href}
+                              onClick={() => setActiveDropdown(null)}
+                              className="dropdown-item-link"
+                              style={{ justifyContent: 'flex-start' }}
+                            >
+                              <span>{getLocalized(item.title)}</span>
+                            </Link>
+                          ))}
                         </div>
                       </div>
                     )}
@@ -911,32 +716,6 @@ export default function Header() {
       <a
         href="#contact"
         className="start-journey-side-tab"
-        style={{
-          position: 'fixed',
-          left: 0,
-          top: '38%',
-          zIndex: 45,
-          backgroundColor: '#D58936',
-          color: '#ffffff',
-          padding: '0.75rem 0.85rem 0.75rem 0.65rem',
-          borderRadius: '0 12px 12px 0',
-          boxShadow: '4px 0 20px rgba(0, 0, 0, 0.3)',
-          fontWeight: 750,
-          fontSize: '0.78rem',
-          letterSpacing: '0.04em',
-          textTransform: 'uppercase',
-          writingMode: 'vertical-lr',
-          transform: 'rotate(180deg)',
-          cursor: 'pointer',
-          textDecoration: 'none',
-          display: 'inline-flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          gap: '0.4rem',
-          transition: 'all 0.3s ease',
-          border: '1px solid rgba(255, 255, 255, 0.3)',
-          borderLeft: 'none',
-        }}
       >
         <span>{locale === 'tr' ? 'GÜLÜŞ YOLCULUĞUMU BAŞLAT!' : 'START MY JOURNEY!'}</span>
       </a>

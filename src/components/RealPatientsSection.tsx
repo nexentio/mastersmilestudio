@@ -313,6 +313,8 @@ export default function RealPatientsSection() {
                       src={story.image}
                       alt={story.country}
                       fill
+                      unoptimized
+                      sizes="(max-width: 768px) 100vw, 250px"
                       style={{
                         objectFit: 'cover',
                         objectPosition: 'center top',
