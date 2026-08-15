@@ -5,6 +5,7 @@ import { getMessages, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import { siteConfig } from '@/config/site';
+import { getI18nAlternates } from '@/lib/i18n-seo';
 import "../globals.css";
 
 const outfit = Outfit({
@@ -59,20 +60,14 @@ export async function generateMetadata({
   const { locale } = await params;
   const seo = seoConfig[locale] || seoConfig.tr;
 
-  const languagesMap: Record<string, string> = {};
-  routing.locales.forEach((loc) => {
-    languagesMap[loc] = `${siteConfig.domain}/${loc}`;
-  });
+  const alternates = getI18nAlternates('', locale);
 
   return {
     metadataBase: new URL(siteConfig.domain),
     title: seo.title,
     description: seo.description,
     keywords: seo.keywords,
-    alternates: {
-      canonical: `${siteConfig.domain}/${locale}`,
-      languages: languagesMap,
-    },
+    alternates,
     openGraph: {
       title: seo.title,
       description: seo.description,

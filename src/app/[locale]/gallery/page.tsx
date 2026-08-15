@@ -4,6 +4,8 @@ import Footer from '@/components/Footer';
 import GalleryGrid from '@/components/GalleryGrid';
 import { Link } from '@/i18n/routing';
 
+import { getI18nAlternates } from '@/lib/i18n-seo';
+
 export async function generateMetadata({
   params,
 }: {
@@ -16,6 +18,7 @@ export async function generateMetadata({
   return {
     title: t('metaTitle'),
     description: t('metaDescription'),
+    alternates: getI18nAlternates('/gallery', locale),
   };
 }
 

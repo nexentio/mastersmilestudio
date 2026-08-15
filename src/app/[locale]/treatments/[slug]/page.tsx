@@ -8,6 +8,7 @@ import TreatmentDetailView from '@/components/TreatmentDetailView';
 import DentalImplantsDetailView from '@/components/DentalImplantsDetailView';
 import AllOnSixImplantDetailView from '@/components/AllOnSixImplantDetailView';
 import { generateTreatmentJsonLd } from '@/lib/treatment-schema';
+import { getI18nAlternates } from '@/lib/i18n-seo';
 
 interface Props {
   params: Promise<{
@@ -69,9 +70,7 @@ export async function generateMetadata({ params }: Props) {
   return {
     title,
     description,
-    alternates: {
-      canonical: `https://mastersmilestudio.com/${locale}/treatments/${slug}`,
-    },
+    alternates: getI18nAlternates(`/treatments/${slug}`, locale),
   };
 }
 

@@ -13,6 +13,7 @@ import ImplantSupportedDenturesDetailView from '@/components/ImplantSupportedDen
 import SinusLiftingDetailView from '@/components/SinusLiftingDetailView';
 import { Link } from '@/i18n/routing';
 import { generateTreatmentJsonLd } from '@/lib/treatment-schema';
+import { getI18nAlternates } from '@/lib/i18n-seo';
 
 interface PageProps {
   params: Promise<{ locale: string; slug: string[] }>;
@@ -58,9 +59,7 @@ export async function generateMetadata({ params }: PageProps) {
   return {
     title,
     description,
-    alternates: {
-      canonical: `https://mastersmilestudio.com/${locale}/treatments/${slugPath}`,
-    },
+    alternates: getI18nAlternates(`/treatments/${slugPath}`, locale),
   };
 }
 

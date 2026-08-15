@@ -5,6 +5,7 @@ import { Link } from '@/i18n/routing';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import TreatmentDetailView from '@/components/TreatmentDetailView';
+import { getI18nAlternates } from '@/lib/i18n-seo';
 
 interface Props {
   params: Promise<{
@@ -15,13 +16,14 @@ interface Props {
 export async function generateMetadata({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const t = await getTranslations({ locale, namespace: 'treatments' });
+  const t = await getTranslations({ locale, namespace: 'services' });
 
   return {
     title: t('metaTitle') || 'Dental Treatments in Istanbul | Master Smile Studio',
     description:
       t('metaDescription') ||
       'Explore world-class dental treatments, digital smile design, and implants in Istanbul, Turkey.',
+    alternates: getI18nAlternates('/treatments', locale),
   };
 }
 
@@ -49,18 +51,16 @@ export default async function TreatmentsPage({ params }: Props) {
           <div className="treatment-hero-tag">
             {locale === 'tr' ? 'TEDAVİLERİMİZ' : 'TREATMENTS'}
           </div>
-          <h1 className="treatment-hero-heading">
-            {t('pageTitle')}
-          </h1>
-          <h4 className="treatment-hero-subheading">
-            {t('pageSubtitle')}
-          </h4>
+          <h1 className="treatment-hero-heading">{t('pageTitle')}</h1>
+          <p className="treatment-hero-subheading">{t('pageSubtitle')}</p>
           <div className="treatment-hero-btns">
             <Link
               href="/contact"
               className="treatment-hero-primary-btn"
             >
-              <span>{t('inquireBtn') || (locale === 'tr' ? 'Randevu & Bilgi Al' : 'Contact & Appointment')}</span>
+              <span>
+                {locale === 'tr' ? 'Randevu & Bilgi Al' : 'Contact & Appointment'}
+              </span>
               <svg
                 width="18"
                 height="18"
@@ -75,21 +75,22 @@ export default async function TreatmentsPage({ params }: Props) {
             </Link>
 
             <a
-              href="#treatments-content"
+              href="#treatment-detail-view"
               className="treatment-hero-secondary-btn"
             >
-              <span>{t('exploreCasesBtn') || (locale === 'tr' ? 'Tedavileri İncele' : 'Explore Treatments')}</span>
+              <span>
+                {locale === 'tr' ? 'Detayları İncele' : 'View Details'}
+              </span>
             </a>
           </div>
         </div>
       </div>
 
-      {/* Main Content Area */}
-      <main id="treatments-content" className="treatment-main-content">
+      <div id="treatment-detail-view">
         <TreatmentDetailView />
-      </main>
+      </div>
 
-      {/* Luxury Studio Footer */}
+      {/* Studio Luxury Footer */}
       <Footer />
     </div>
   );

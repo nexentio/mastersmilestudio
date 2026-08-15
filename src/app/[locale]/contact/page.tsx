@@ -2,6 +2,8 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
+import { getI18nAlternates } from '@/lib/i18n-seo';
+
 export async function generateMetadata({
   params,
 }: {
@@ -14,6 +16,7 @@ export async function generateMetadata({
   return {
     title: t('metaTitle'),
     description: t('metaDescription'),
+    alternates: getI18nAlternates('/contact', locale),
   };
 }
 
