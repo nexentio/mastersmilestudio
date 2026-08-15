@@ -8,7 +8,7 @@ import TreatmentDetailView from '@/components/TreatmentDetailView';
 import DentalImplantsDetailView from '@/components/DentalImplantsDetailView';
 import AllOnSixImplantDetailView from '@/components/AllOnSixImplantDetailView';
 import { generateTreatmentJsonLd } from '@/lib/treatment-schema';
-import { getI18nAlternates } from '@/lib/i18n-seo';
+import { getI18nAlternates, TREATMENT_LOCALES } from '@/lib/i18n-seo';
 
 interface Props {
   params: Promise<{
@@ -70,7 +70,7 @@ export async function generateMetadata({ params }: Props) {
   return {
     title,
     description,
-    alternates: getI18nAlternates(`/treatments/${slug}`, locale),
+    alternates: getI18nAlternates(`/treatments/${slug}`, locale, TREATMENT_LOCALES),
   };
 }
 

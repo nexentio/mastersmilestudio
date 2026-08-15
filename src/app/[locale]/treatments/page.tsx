@@ -5,7 +5,7 @@ import { Link } from '@/i18n/routing';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import TreatmentDetailView from '@/components/TreatmentDetailView';
-import { getI18nAlternates } from '@/lib/i18n-seo';
+import { getI18nAlternates, TREATMENT_LOCALES } from '@/lib/i18n-seo';
 
 interface Props {
   params: Promise<{
@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: Props) {
     description:
       t('metaDescription') ||
       'Explore world-class dental treatments, digital smile design, and implants in Istanbul, Turkey.',
-    alternates: getI18nAlternates('/treatments', locale),
+    alternates: getI18nAlternates('/treatments', locale, TREATMENT_LOCALES),
   };
 }
 
