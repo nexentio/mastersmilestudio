@@ -58,6 +58,16 @@ a {
 }
 
 /* TopBar Social Media Icon Buttons */
+.mega-subitem-link:hover {
+  background-color: rgba(213, 137, 54, 0.18) !important;
+  color: #ffffff !important;
+  padding-left: 1.05rem !important;
+}
+
+.start-journey-side-tab:hover {
+  background-color: #b87128 !important;
+  box-shadow: 6px 0 24px rgba(213, 137, 54, 0.45) !important;
+}
 .social-icon-btn {
   display: inline-flex;
   align-items: center;

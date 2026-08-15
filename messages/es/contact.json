@@ -9,6 +9,7 @@
   "heroSubtitle": "Odontología de excelencia internacional en nuestra moderna clínica en Antalya. Solicite su simulación 3D gratuita y paquete dental VIP personalizado.",
 
   "cardTitle": "Contáctenos",
+  "heading": "Contáctenos",
   "visitTitle": "Ubicación de la Clínica",
   "visitDesc": "Visítenos en nuestras modernas instalaciones.",
   "address": "Güzeloba Mah. Çağlayangil Cad. No: 6-B Muratpaşa / Antalya TR",
@@ -28,6 +29,8 @@
   "formHeading": "Formulario de Consulta y Cita Online",
   "formSubtitle": "Rellene el formulario y nuestro equipo clínico le proporcionará su plan de tratamiento y presupuesto en 15 minutos.",
   "treatmentLabel": "Tratamiento de Interés",
+  "labelTreatment": "Tratamiento de Interés",
+  "placeholderTreatment": "ej. Implantes, Carillas, Blanqueamiento",
   "treatmentSmileDesign": "Diseño de Sonrisa",
   "treatmentImplant": "Implantes Dentales",
   "treatmentZirconia": "Coronas de Circonio",

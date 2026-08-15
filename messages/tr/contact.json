@@ -9,6 +9,7 @@
   "heroSubtitle": "Antalya'daki modern klinik merkezimizde uluslararası standartlarda diş hekimliği, ücretsiz 3D dijital gülüş analizi ve VIP sağlık turizmi hizmetleri için bizimle iletişime geçin.",
 
   "cardTitle": "Bize Ulaşın",
+  "heading": "Bize Ulaşın",
   "visitTitle": "Klinik Adresimiz",
   "visitDesc": "Modern kliniğimize kahveye bekleriz.",
   "address": "Güzeloba Mah. Çağlayangil Cad. No: 6-B Muratpaşa / Antalya TR",
@@ -28,6 +29,8 @@
   "formHeading": "Online Konsültasyon & Randevu Formu",
   "formSubtitle": "Formu doldurun; uzman diş hekimlerimiz 15 dakika içinde kişiselleştirilmiş tedavi planınızla dönüş yapsın.",
   "treatmentLabel": "İlgilendiğiniz Tedavi",
+  "labelTreatment": "İlgilendiğiniz Tedavi",
+  "placeholderTreatment": "Örn. İmplant, Zirkonyum, Beyazlatma",
   "treatmentSmileDesign": "Gülüş Tasarımı",
   "treatmentImplant": "İmplant Tedavisi",
   "treatmentZirconia": "Zirkonyum Kron",

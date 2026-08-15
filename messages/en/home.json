@@ -61,5 +61,9 @@
     "languageSelectPlaceholder": "— Language —",
     "submit": "Get Free Appointment",
     "success": "Your request has been received. We will contact you shortly."
+  },
+  "map": {
+    "title": "Master Smile Studio — Closer Than You Think",
+    "subtitle": "Easily locate us on the map and take the first step toward world-class dental treatment in Antalya."
   }
 }

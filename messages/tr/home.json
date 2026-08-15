@@ -61,5 +61,9 @@
     "languageSelectPlaceholder": "— Dil Seçin —",
     "submit": "Ücretsiz Randevu Al",
     "success": "Talebiniz başarıyla alındı. En kısa sürede sizinle iletişime geçeceğiz."
+  },
+  "map": {
+    "title": "Master Smile Studio — Sandığınızdan Çok Daha Yakın",
+    "subtitle": "Haritada konumumuzu kolayca bulun ve Antalya'da dünya standartlarında diş tedavisine doğru ilk adımı atın."
   }
 }

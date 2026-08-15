@@ -7,12 +7,159 @@ import LanguageSwitcher from './LanguageSwitcher';
 import { useState, useEffect } from 'react';
 import { SITE_CONFIG, getWhatsAppLink } from '@/config/site';
 
+const TREATMENTS_MEGA_MENU = [
+  {
+    id: 'implants',
+    title: { tr: 'İmplant Tedavisi', en: 'Dental Implants' },
+    href: '/treatments#implants',
+    subitems: [
+      { tr: 'Tüm Ağız İmplant (Full Mouth)', en: 'Full Mouth Implants', href: '/treatments#full-mouth' },
+      { tr: 'All-on-4 İmplant Tedavisi', en: 'All-on-4 Implants', href: '/treatments#all-on-4' },
+      { tr: 'All-on-6 İmplant Tedavisi', en: 'All-on-6 Implants', href: '/treatments#all-on-6' },
+      { tr: 'Aynı Gün İmplant (Immediate)', en: 'Immediate Implant Treatment', href: '/treatments#immediate' },
+      { tr: 'Zigoma & Pterigoid İmplant', en: 'Zygomatic & Pterygoid Implants', href: '/treatments#zygomatic' },
+      { tr: 'Zirkonyum İmplant', en: 'Zirconium Implants', href: '/treatments#zirconium-implants' },
+      { tr: 'İmplant Destekli Protez', en: 'Implant Supported Dentures', href: '/treatments#implant-dentures' },
+      { tr: 'Sinüs Lift & Kemik Grefti', en: 'Sinus Lifting & Bone Graft', href: '/treatments#sinus-lift' },
+    ],
+  },
+  {
+    id: 'crowns',
+    title: { tr: 'Zirkonyum & Kaplama', en: 'Dental Crowns' },
+    href: '/treatments#crowns',
+    subitems: [
+      { tr: 'Zirkonyum Kron Kaplama', en: 'Zirconium Crowns', href: '/treatments#zirconium-crowns' },
+      { tr: 'Metal Porselen Kaplama (PFM)', en: 'Metal Porcelain Crowns (PFM)', href: '/treatments#pfm-crowns' },
+      { tr: 'E-max Full Seramik Kaplama', en: 'E-max Crowns', href: '/treatments#emax-crowns' },
+      { tr: 'Tam Seramik Kron', en: 'Full Ceramic Crowns', href: '/treatments#full-ceramic' },
+    ],
+  },
+  {
+    id: 'veneers',
+    title: { tr: 'Lamine Veneer', en: 'Dental Veneers' },
+    href: '/treatments#veneers',
+    subitems: [
+      { tr: 'Porselen Lamine Veneer', en: 'Porcelain Veneers', href: '/treatments#porcelain-veneers' },
+      { tr: 'E-max Lamine Veneer', en: 'E-max Veneers', href: '/treatments#emax-veneers' },
+      { tr: 'Zirkonyum Lamine', en: 'Zirconium Veneers', href: '/treatments#zirconium-veneers' },
+      { tr: 'Kompozit Lamine (Bonding)', en: 'Composite Veneers', href: '/treatments#composite-veneers' },
+      { tr: 'Lumineers İnce Lamine', en: 'Lumineers', href: '/treatments#lumineers' },
+      { tr: 'Empress Estetik Lamine', en: 'Empress Veneers', href: '/treatments#empress-veneers' },
+    ],
+  },
+  {
+    id: 'bridge',
+    title: { tr: 'Diş Köprüsü', en: 'Dental Bridge' },
+    href: '/treatments#bridge',
+    subitems: [
+      { tr: 'Zirkonyum Diş Köprüsü', en: 'Zirconium Dental Bridge', href: '/treatments#zirconium-bridge' },
+      { tr: 'Porselen Diş Köprüsü', en: 'Porcelain Dental Bridge', href: '/treatments#porcelain-bridge' },
+      { tr: 'İmplant Destekli Köprü', en: 'Implant Supported Bridge', href: '/treatments#implant-bridge' },
+    ],
+  },
+  {
+    id: 'dentures',
+    title: { tr: 'Protez Diş', en: 'Dentures' },
+    href: '/treatments#dentures',
+    subitems: [
+      { tr: 'Hareketli Protez Diş', en: 'Removable Dentures', href: '/treatments#removable-dentures' },
+      { tr: 'Çıt Çıtlı Hassas Tutuculu Protez', en: 'Precision Attachment Dentures', href: '/treatments#precision-dentures' },
+      { tr: 'Sabit Protez', en: 'Fixed Dentures', href: '/treatments#fixed-dentures' },
+    ],
+  },
+  {
+    id: 'cosmetic',
+    title: { tr: 'Estetik Diş Hekimliği', en: 'Cosmetic Dentistry' },
+    href: '/treatments#cosmetic',
+    subitems: [
+      { tr: 'Hollywood Smile Gülüş Tasarımı', en: 'Hollywood Smile Makeover', href: '/treatments#hollywood-smile' },
+      { tr: 'Lazerle Diş Beyazlatma (Bleaching)', en: 'Teeth Whitening (Bleaching)', href: '/treatments#whitening' },
+      { tr: 'Diş Eti Estetiği (Gingivektomi)', en: 'Gum Aesthetics (Gingivectomy)', href: '/treatments#gum-aesthetics' },
+      { tr: '3D Dijital Gülüş Simülasyonu', en: 'Digital Smile Simulation 3D', href: '/treatments#digital-smile' },
+    ],
+  },
+  {
+    id: 'general',
+    title: { tr: 'Genel Diş Hekimliği', en: 'General Dentistry' },
+    href: '/treatments#general',
+    subitems: [
+      { tr: 'Kanal Tedavisi (Endodonti)', en: 'Root Canal Treatment', href: '/treatments#root-canal' },
+      { tr: 'Estetik Kompozit Dolgu', en: 'Composite Filling', href: '/treatments#composite-filling' },
+      { tr: 'Diş Taşı Temizliği & Detertraj', en: 'Dental Cleaning & Scaling', href: '/treatments#scaling' },
+      { tr: 'Gömülü 20\'lik Diş Çekimi', en: 'Wisdom Tooth Extraction', href: '/treatments#wisdom-tooth' },
+    ],
+  },
+];
+
+const EXPLORE_MEGA_MENU = [
+  {
+    id: 'prices',
+    title: { tr: 'Fiyatlar & Paketler', en: 'Prices' },
+    href: '/treatments#pricing',
+    subitems: [
+      { tr: 'Fiyat Listesi', en: 'Price List', href: '/treatments#pricing' },
+      { tr: 'VIP Diş Turizmi Paketleri', en: 'Packages', href: '/#contact' },
+    ],
+  },
+  {
+    id: 'gallery',
+    title: { tr: 'Galeri', en: 'Gallery' },
+    href: '/gallery',
+    subitems: [
+      { tr: 'Fotoğraf Galerisi', en: 'Photo Gallery', href: '/gallery' },
+      { tr: 'Video Hasta Hikayeleri', en: 'Video Stories', href: '/#real-patients' },
+    ],
+  },
+  {
+    id: 'blog',
+    title: { tr: 'Blog', en: 'Blog' },
+    href: '/#blog',
+    subitems: [
+      { tr: 'Diş Sağlığı Makaleleri', en: 'Dental Health Articles', href: '/#blog' },
+      { tr: 'Diş Turizmi Rehberi', en: 'Dental Tourism Guide', href: '/#blog' },
+    ],
+  },
+  {
+    id: 'reviews',
+    title: { tr: 'Hasta Yorumları', en: 'Reviews' },
+    href: '/#patients',
+    subitems: [
+      { tr: 'Google Yorumları (4.9 ★)', en: 'Google Reviews (4.9 ★)', href: '/#patients' },
+      { tr: 'Trustpilot Yorumları (5.0 ★)', en: 'Trustpilot Reviews (5.0 ★)', href: '/#patients' },
+      { tr: 'Hasta Deneyimleri', en: 'Patient Stories', href: '/#real-patients' },
+    ],
+  },
+  {
+    id: 'before-after',
+    title: { tr: 'Öncesi / Sonrası', en: 'Before/After' },
+    href: '/#transformations',
+    subitems: [
+      { tr: 'Hollywood Smile Vakaları', en: 'Hollywood Smile Cases', href: '/#transformations' },
+      { tr: 'İmplant Dönüşümleri', en: 'Implant Transformations', href: '/#transformations' },
+      { tr: 'Lamine Veneer Dönüşümleri', en: 'Veneer Transformations', href: '/#transformations' },
+    ],
+  },
+  {
+    id: 'faq',
+    title: { tr: 'Sıkça Sorulan Sorular (SSS)', en: 'Frequently Asked Questions (FAQ)' },
+    href: '/#faq',
+    subitems: [
+      { tr: 'Tedavi Süreci SSS', en: 'Treatment Process FAQ', href: '/#faq' },
+      { tr: 'Konaklama ve VIP Transfer SSS', en: 'Travel & VIP Stay FAQ', href: '/#faq' },
+      { tr: 'Uluslararası Garanti SSS', en: 'Guarantee FAQ', href: '/#faq' },
+    ],
+  },
+];
+
 export default function Header() {
   const t = useTranslations('common');
   const locale = useLocale();
   const whatsappUrl = getWhatsAppLink(locale);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [activeDropdown, setActiveDropdown] = useState<'treatments' | 'explore' | null>(null);
+  const [activeTreatmentCat, setActiveTreatmentCat] = useState<string>('implants');
+  const [activeExploreCat, setActiveExploreCat] = useState<string>('prices');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,10 +174,9 @@ export default function Header() {
   }, []);
 
   const navLinks = [
-    { label: t('navigation.home'), href: '/' },
+    { label: t('navigation.treatments'), href: '/treatments', menuType: 'treatments' },
+    { label: t('navigation.explore'), href: '/gallery', menuType: 'explore' },
     { label: t('navigation.about'), href: '/about' },
-    { label: t('navigation.treatments'), href: '/treatments' },
-    { label: t('navigation.gallery'), href: '/gallery' },
     { label: t('navigation.contact'), href: '/contact' },
   ];
 
@@ -248,7 +394,7 @@ export default function Header() {
             />
           </Link>
 
-          {/* Desktop Navigation Links */}
+          {/* Desktop Navigation Links with Treatments Mega Menu */}
           <nav
             style={{
               display: 'flex',
@@ -258,22 +404,371 @@ export default function Header() {
             }}
             className="desktop-nav"
           >
-            {navLinks.map((link, idx) => (
-              <Link
-                key={idx}
-                href={link.href}
-                className="nav-link-item"
-                style={{
-                  fontSize: isScrolled ? '0.9rem' : '0.95rem',
-                  fontWeight: 600,
-                  color: '#334155',
-                  textDecoration: 'none',
-                  transition: 'font-size 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
-                }}
-              >
-                {link.label}
-              </Link>
-            ))}
+            {navLinks.map((link, idx) => {
+              const isTreatments = link.menuType === 'treatments';
+              const isExplore = link.menuType === 'explore';
+
+              if (isTreatments) {
+                const isOpen = activeDropdown === 'treatments';
+                return (
+                  <div
+                    key={idx}
+                    style={{ position: 'relative' }}
+                    onMouseEnter={() => setActiveDropdown('treatments')}
+                    onMouseLeave={() => setActiveDropdown(null)}
+                  >
+                    <Link
+                      href={link.href}
+                      className="nav-link-item"
+                      style={{
+                        fontSize: isScrolled ? '0.9rem' : '0.95rem',
+                        fontWeight: 600,
+                        color: isOpen ? '#D58936' : '#334155',
+                        textDecoration: 'none',
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '0.35rem',
+                        transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+                      }}
+                    >
+                      <span>{link.label}</span>
+                      <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2.5"
+                        style={{
+                          transform: isOpen ? 'rotate(180deg)' : 'rotate(0deg)',
+                          transition: 'transform 0.25s ease',
+                        }}
+                      >
+                        <path d="M6 9l6 6 6-6" />
+                      </svg>
+                    </Link>
+
+                    {/* Treatments Mega Menu Dropdown */}
+                    {isOpen && (
+                      <div
+                        style={{
+                          position: 'absolute',
+                          top: '100%',
+                          left: '50%',
+                          transform: 'translateX(-50%)',
+                          paddingTop: '0.85rem',
+                          zIndex: 100,
+                        }}
+                      >
+                        <div
+                          style={{
+                            width: '680px',
+                            backgroundColor: 'rgba(24, 24, 27, 0.96)',
+                            backdropFilter: 'blur(20px)',
+                            WebkitBackdropFilter: 'blur(20px)',
+                            borderRadius: '18px',
+                            border: '1px solid rgba(213, 137, 54, 0.4)',
+                            boxShadow: '0 24px 50px rgba(0, 0, 0, 0.45)',
+                            padding: '0.85rem',
+                            display: 'grid',
+                            gridTemplateColumns: '240px 1fr',
+                            gap: '0.85rem',
+                          }}
+                        >
+                          {/* Left Column: Level 1 Main Categories */}
+                          <div
+                            style={{
+                              backgroundColor: 'rgba(255, 255, 255, 0.04)',
+                              borderRadius: '12px',
+                              padding: '0.5rem',
+                              display: 'flex',
+                              flexDirection: 'column',
+                              gap: '0.35rem',
+                            }}
+                          >
+                            {TREATMENTS_MEGA_MENU.map((cat) => {
+                              const isActive = activeTreatmentCat === cat.id;
+                              const label = locale === 'tr' ? cat.title.tr : cat.title.en;
+                              return (
+                                <div
+                                  key={cat.id}
+                                  onMouseEnter={() => setActiveTreatmentCat(cat.id)}
+                                  onClick={() => setActiveTreatmentCat(cat.id)}
+                                  style={{
+                                    padding: '0.65rem 0.95rem',
+                                    borderRadius: '8px',
+                                    fontSize: '0.88rem',
+                                    fontWeight: isActive ? 700 : 500,
+                                    color: isActive ? '#ffffff' : '#cbd5e1',
+                                    backgroundColor: isActive ? '#D58936' : 'transparent',
+                                    boxShadow: isActive ? '0 4px 14px rgba(213, 137, 54, 0.35)' : 'none',
+                                    cursor: 'pointer',
+                                    transition: 'all 0.2s cubic-bezier(0.4, 0, 0.2, 1)',
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'space-between',
+                                  }}
+                                >
+                                  <span>{label}</span>
+                                  <svg
+                                    width="14"
+                                    height="14"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    strokeWidth="2.2"
+                                    style={{ opacity: isActive ? 1 : 0.4, transition: 'opacity 0.2s ease' }}
+                                  >
+                                    <path d="M9 18l6-6-6-6" />
+                                  </svg>
+                                </div>
+                              );
+                            })}
+                          </div>
+
+                          {/* Right Column: Level 2 Dynamic Sub-treatments */}
+                          <div
+                            style={{
+                              backgroundColor: 'rgba(255, 255, 255, 0.02)',
+                              borderRadius: '12px',
+                              padding: '0.65rem 0.85rem',
+                              display: 'flex',
+                              flexDirection: 'column',
+                              gap: '0.2rem',
+                              maxHeight: '380px',
+                              overflowY: 'auto',
+                            }}
+                          >
+                            {(() => {
+                              const selectedCat =
+                                TREATMENTS_MEGA_MENU.find((c) => c.id === activeTreatmentCat) || TREATMENTS_MEGA_MENU[0];
+                              return selectedCat.subitems.map((sub, sIdx) => {
+                                const subLabel = locale === 'tr' ? sub.tr : sub.en;
+                                return (
+                                  <Link
+                                    key={sIdx}
+                                    href={sub.href}
+                                    onClick={() => setActiveDropdown(null)}
+                                    className="mega-subitem-link"
+                                    style={{
+                                      padding: '0.65rem 0.85rem',
+                                      borderRadius: '6px',
+                                      fontSize: '0.86rem',
+                                      fontWeight: 500,
+                                      color: '#f8fafc',
+                                      borderBottom: '1px solid rgba(255, 255, 255, 0.06)',
+                                      display: 'flex',
+                                      alignItems: 'center',
+                                      justifyContent: 'space-between',
+                                      textDecoration: 'none',
+                                      transition: 'all 0.2s ease',
+                                    }}
+                                  >
+                                    <span>{subLabel}</span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#D58936" strokeWidth="2.2">
+                                      <path d="M5 12h14M12 5l7 7-7 7" />
+                                    </svg>
+                                  </Link>
+                                );
+                              });
+                            })()}
+                          </div>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                );
+              }
+
+              if (isExplore) {
+                const isOpen = activeDropdown === 'explore';
+                return (
+                  <div
+                    key={idx}
+                    style={{ position: 'relative' }}
+                    onMouseEnter={() => setActiveDropdown('explore')}
+                    onMouseLeave={() => setActiveDropdown(null)}
+                  >
+                    <Link
+                      href={link.href}
+                      className="nav-link-item"
+                      style={{
+                        fontSize: isScrolled ? '0.9rem' : '0.95rem',
+                        fontWeight: 600,
+                        color: isOpen ? '#D58936' : '#334155',
+                        textDecoration: 'none',
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '0.35rem',
+                        transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+                      }}
+                    >
+                      <span>{link.label}</span>
+                      <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2.5"
+                        style={{
+                          transform: isOpen ? 'rotate(180deg)' : 'rotate(0deg)',
+                          transition: 'transform 0.25s ease',
+                        }}
+                      >
+                        <path d="M6 9l6 6 6-6" />
+                      </svg>
+                    </Link>
+
+                    {/* Explore Mega Menu Dropdown */}
+                    {isOpen && (
+                      <div
+                        style={{
+                          position: 'absolute',
+                          top: '100%',
+                          left: '50%',
+                          transform: 'translateX(-50%)',
+                          paddingTop: '0.85rem',
+                          zIndex: 100,
+                        }}
+                      >
+                        <div
+                          style={{
+                            width: '600px',
+                            backgroundColor: 'rgba(24, 24, 27, 0.96)',
+                            backdropFilter: 'blur(20px)',
+                            WebkitBackdropFilter: 'blur(20px)',
+                            borderRadius: '18px',
+                            border: '1px solid rgba(213, 137, 54, 0.4)',
+                            boxShadow: '0 24px 50px rgba(0, 0, 0, 0.45)',
+                            padding: '0.85rem',
+                            display: 'grid',
+                            gridTemplateColumns: '230px 1fr',
+                            gap: '0.85rem',
+                          }}
+                        >
+                          {/* Left Column: Level 1 Explore Categories */}
+                          <div
+                            style={{
+                              backgroundColor: 'rgba(255, 255, 255, 0.04)',
+                              borderRadius: '12px',
+                              padding: '0.5rem',
+                              display: 'flex',
+                              flexDirection: 'column',
+                              gap: '0.35rem',
+                            }}
+                          >
+                            {EXPLORE_MEGA_MENU.map((cat) => {
+                              const isActive = activeExploreCat === cat.id;
+                              const label = locale === 'tr' ? cat.title.tr : cat.title.en;
+                              return (
+                                <div
+                                  key={cat.id}
+                                  onMouseEnter={() => setActiveExploreCat(cat.id)}
+                                  onClick={() => setActiveExploreCat(cat.id)}
+                                  style={{
+                                    padding: '0.65rem 0.95rem',
+                                    borderRadius: '8px',
+                                    fontSize: '0.88rem',
+                                    fontWeight: isActive ? 700 : 500,
+                                    color: isActive ? '#ffffff' : '#cbd5e1',
+                                    backgroundColor: isActive ? '#D58936' : 'transparent',
+                                    boxShadow: isActive ? '0 4px 14px rgba(213, 137, 54, 0.35)' : 'none',
+                                    cursor: 'pointer',
+                                    transition: 'all 0.2s cubic-bezier(0.4, 0, 0.2, 1)',
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'space-between',
+                                  }}
+                                >
+                                  <span>{label}</span>
+                                  <svg
+                                    width="14"
+                                    height="14"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    strokeWidth="2.2"
+                                    style={{ opacity: isActive ? 1 : 0.4, transition: 'opacity 0.2s ease' }}
+                                  >
+                                    <path d="M9 18l6-6-6-6" />
+                                  </svg>
+                                </div>
+                              );
+                            })}
+                          </div>
+
+                          {/* Right Column: Level 2 Explore Dynamic Sub-items */}
+                          <div
+                            style={{
+                              backgroundColor: 'rgba(255, 255, 255, 0.02)',
+                              borderRadius: '12px',
+                              padding: '0.65rem 0.85rem',
+                              display: 'flex',
+                              flexDirection: 'column',
+                              gap: '0.2rem',
+                              maxHeight: '380px',
+                              overflowY: 'auto',
+                            }}
+                          >
+                            {(() => {
+                              const selectedCat =
+                                EXPLORE_MEGA_MENU.find((c) => c.id === activeExploreCat) || EXPLORE_MEGA_MENU[0];
+                              return selectedCat.subitems.map((sub, sIdx) => {
+                                const subLabel = locale === 'tr' ? sub.tr : sub.en;
+                                return (
+                                  <Link
+                                    key={sIdx}
+                                    href={sub.href}
+                                    onClick={() => setActiveDropdown(null)}
+                                    className="mega-subitem-link"
+                                    style={{
+                                      padding: '0.65rem 0.85rem',
+                                      borderRadius: '6px',
+                                      fontSize: '0.86rem',
+                                      fontWeight: 500,
+                                      color: '#f8fafc',
+                                      borderBottom: '1px solid rgba(255, 255, 255, 0.06)',
+                                      display: 'flex',
+                                      alignItems: 'center',
+                                      justifyContent: 'space-between',
+                                      textDecoration: 'none',
+                                      transition: 'all 0.2s ease',
+                                    }}
+                                  >
+                                    <span>{subLabel}</span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#D58936" strokeWidth="2.2">
+                                      <path d="M5 12h14M12 5l7 7-7 7" />
+                                    </svg>
+                                  </Link>
+                                );
+                              });
+                            })()}
+                          </div>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                );
+              }
+
+              return (
+                <Link
+                  key={idx}
+                  href={link.href}
+                  className="nav-link-item"
+                  style={{
+                    fontSize: isScrolled ? '0.9rem' : '0.95rem',
+                    fontWeight: 600,
+                    color: '#334155',
+                    textDecoration: 'none',
+                    transition: 'font-size 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+                  }}
+                >
+                  {link.label}
+                </Link>
+              );
+            })}
           </nav>
 
           {/* Right Section: Language Switcher + Customer Service CTA + Mobile Toggle */}
@@ -411,6 +906,40 @@ export default function Header() {
           }
         `}</style>
       </header>
+
+      {/* Pinned Side Tab Badge: Start My Journey! */}
+      <a
+        href="#contact"
+        className="start-journey-side-tab"
+        style={{
+          position: 'fixed',
+          left: 0,
+          top: '38%',
+          zIndex: 45,
+          backgroundColor: '#D58936',
+          color: '#ffffff',
+          padding: '0.75rem 0.85rem 0.75rem 0.65rem',
+          borderRadius: '0 12px 12px 0',
+          boxShadow: '4px 0 20px rgba(0, 0, 0, 0.3)',
+          fontWeight: 750,
+          fontSize: '0.78rem',
+          letterSpacing: '0.04em',
+          textTransform: 'uppercase',
+          writingMode: 'vertical-lr',
+          transform: 'rotate(180deg)',
+          cursor: 'pointer',
+          textDecoration: 'none',
+          display: 'inline-flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          gap: '0.4rem',
+          transition: 'all 0.3s ease',
+          border: '1px solid rgba(255, 255, 255, 0.3)',
+          borderLeft: 'none',
+        }}
+      >
+        <span>{locale === 'tr' ? 'GÜLÜŞ YOLCULUĞUMU BAŞLAT!' : 'START MY JOURNEY!'}</span>
+      </a>
     </>
   );
 }

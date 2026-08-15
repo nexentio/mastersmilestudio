@@ -9,6 +9,7 @@
   "heroSubtitle": "Experience world-class dental excellence at our modern clinic in Antalya. Reach out for complimentary 3D digital smile simulations and tailored VIP dental packages.",
 
   "cardTitle": "Contact Us",
+  "heading": "Contact Us",
   "visitTitle": "Clinic Location",
   "visitDesc": "Come say hello at our modern clinic.",
   "address": "Güzeloba Mah. Çağlayangil Cad. No: 6-B Muratpaşa / Antalya TR",
@@ -28,6 +29,8 @@
   "formHeading": "Online Consultation & Booking Form",
   "formSubtitle": "Fill out the form below; our dental specialists will provide your personalized quotation within 15 minutes.",
   "treatmentLabel": "Treatment of Interest",
+  "labelTreatment": "Treatment of Interest",
+  "placeholderTreatment": "e.g. Dental Implants, Veneers, Whitening",
   "treatmentSmileDesign": "Smile Makeover",
   "treatmentImplant": "Dental Implants",
   "treatmentZirconia": "Zirconia Crowns",

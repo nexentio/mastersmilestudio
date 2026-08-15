@@ -27,6 +27,12 @@ export default function ContactSection() {
   const t = useTranslations('contact');
   const currentLocale = useLocale();
 
+  const getSafeText = (key: string, fallbackKey?: string, fallbackString: string = '') => {
+    if (t.has(key as any)) return t(key as any);
+    if (fallbackKey && t.has(fallbackKey as any)) return t(fallbackKey as any);
+    return fallbackString;
+  };
+
   const initialCountry =
     COUNTRIES.find((c) => c.code === (currentLocale === 'en' ? 'gb' : currentLocale)) || COUNTRIES[0];
 
@@ -160,7 +166,7 @@ export default function ContactSection() {
                 margin: 0,
               }}
             >
-              {t('heading')}
+              {getSafeText('heading', 'cardTitle', 'Contact Us')}
             </h2>
 
             {/* 1. Visit us */}
@@ -232,6 +238,7 @@ export default function ContactSection() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook"
+                suppressHydrationWarning
                 style={{ color: '#0f172a', opacity: 0.85, transition: 'opacity 0.2s' }}
               >
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -244,6 +251,7 @@ export default function ContactSection() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="YouTube"
+                suppressHydrationWarning
                 style={{ color: '#0f172a', opacity: 0.85, transition: 'opacity 0.2s' }}
               >
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -256,6 +264,7 @@ export default function ContactSection() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
+                suppressHydrationWarning
                 style={{ color: '#0f172a', opacity: 0.85, transition: 'opacity 0.2s' }}
               >
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -270,6 +279,7 @@ export default function ContactSection() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Twitter"
+                suppressHydrationWarning
                 style={{ color: '#0f172a', opacity: 0.85, transition: 'opacity 0.2s' }}
               >
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -381,11 +391,11 @@ export default function ContactSection() {
                     marginBottom: '0.5rem',
                   }}
                 >
-                  {t('labelTreatment')}
+                  {getSafeText('labelTreatment', 'treatmentLabel', 'Treatment of Interest')}
                 </label>
                 <input
                   type="text"
-                  placeholder={t('placeholderTreatment')}
+                  placeholder={getSafeText('placeholderTreatment', 'treatmentOther', 'e.g. Dental Implants, Veneers')}
                   value={formData.treatment}
                   onChange={(e) => setFormData({ ...formData, treatment: e.target.value })}
                   style={{

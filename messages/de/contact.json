@@ -9,6 +9,7 @@
   "heroSubtitle": "Erleben Sie zahnmedizinische Spitzenklasse in unserer modernen Klinik in Antalya. Kostenlose 3D-Smile-Design-Simulation und maßgeschneiderte VIP-Behandlungspakete.",
 
   "cardTitle": "Kontaktieren Sie Uns",
+  "heading": "Kontaktieren Sie Uns",
   "visitTitle": "Klinikstandort",
   "visitDesc": "Besuchen Sie uns in unserer modernen Klinik.",
   "address": "Güzeloba Mah. Çağlayangil Cad. No: 6-B Muratpaşa / Antalya TR",
@@ -28,6 +29,8 @@
   "formHeading": "Online-Beratung & Terminformular",
   "formSubtitle": "Füllen Sie das Formular aus – unsere Fachzahnärzte melden sich innerhalb von 15 Minuten mit Ihrem Behandlungsplan.",
   "treatmentLabel": "Gewünschte Behandlung",
+  "labelTreatment": "Gewünschte Behandlung",
+  "placeholderTreatment": "z. B. Implantate, Veneers, Bleaching",
   "treatmentSmileDesign": "Smile Makeover",
   "treatmentImplant": "Zahnimplantate",
   "treatmentZirconia": "Zirkonkronen",
