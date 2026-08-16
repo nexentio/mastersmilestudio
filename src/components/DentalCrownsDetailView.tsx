@@ -445,7 +445,7 @@ const CROWN_DATA: Record<string, CrownI18n> = {
     singleLinkText: 'Монолитный цирконий →',
     multipleTitle: '2. Керамические коронки Ivoclar E-Max',
     multipleP: 'Идеальная естественность для передних зубов.',
-    singleLinkLead: 'Узнать больше: ',
+    multipleLinkLead: 'Узнать больше: ',
     multipleLinkText: 'Коронки E-Max →',
     allOn4Title: '3. Цирконий с нанесением керамики',
     allOn4P: 'Сочетание прочности каркаса и ручной росписи.',

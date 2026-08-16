@@ -245,7 +245,6 @@ const BRIDGE_DATA: Record<string, BridgeI18n> = {
     singleLinkText: 'Zirkonbrücken →',
     multipleTitle: '2. Implantatgetragene Zahnbrücken',
     multipleP: '3-4 Zähne auf nur 2 Implantaten ohne Nachbarzähne zu beschädigen.',
-    singleLinkLead2: 'Entdecken Sie ',
     multipleLinkLead: 'Entdecken Sie ',
     multipleLinkText: 'Implantatbrücken →',
     allOn4Title: '3. Maryland-Klebebrücken (Minimal-Prep)',
