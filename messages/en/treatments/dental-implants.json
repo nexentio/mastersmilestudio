@@ -1,0 +1,159 @@
+{
+  "slug": "dental-implants",
+  "hero": {
+    "badge": "JCI & ISO Certified Dental Surgery Clinic",
+    "title": "Dental Implants in Istanbul",
+    "subtitle": "Restore your smile with confidence, lifelong guarantees, and expert oral surgeons in Istanbul.",
+    "features": [
+      "Lifetime Guarantee on Premium Brands",
+      "3D CBCT Digital Precision Planning",
+      "VIP 5-Star Hotel & Chauffeur Transfers"
+    ],
+    "primaryBtn": "Free Online Consultation",
+    "secondaryBtn": "View Packages & Details"
+  },
+  "intro": {
+    "title": "Dental Implants in Istanbul – Master Smile Studio Turkey",
+    "whatIsTitle": "What Are Dental Implants?",
+    "whatIsP1": "A dental implant is an artificial tooth root that replaces a missing tooth. It looks like a small screw, usually made of titanium, and is placed into the jawbone to hold a new tooth securely. For a full tooth replacement, three main parts are used:",
+    "parts": [
+      {
+        "title": "Dental implant (titanium screw)",
+        "desc": "works as the tooth root."
+      },
+      {
+        "title": "Abutment",
+        "desc": "connects the implant to the crown."
+      },
+      {
+        "title": "Crown",
+        "desc": "the visible part that looks like a natural tooth."
+      }
+    ],
+    "healingP": "Once the implant has healed and bonded strongly with the bone, the crown is made and attached. At Master Smile Studio in Istanbul, our expert team specializing in oral surgery ensures a seamless and high-quality dental implant procedure to restore your smile.",
+    "solutionP": "If you are missing one or more teeth, dental implants in Istanbul can be a safe, long-lasting, and aesthetic solution.",
+    "videoUrl": "https://www.youtube.com/embed/R081L98DAls?t=21"
+  },
+  "rightTreatment": {
+    "heading": "Find the Right Treatment for You",
+    "subtitle": "Not sure which dental treatment suits your needs? Browse through our treatment options to see who each procedure is for and what it offers so you can make informed decisions about your dental care.",
+    "readMore": "READ MORE",
+    "items": {
+      "fullMouth": {
+        "title": "Full Mouth Implants",
+        "target": "Patients who have no teeth left in their upper and lower jaws",
+        "desc": "It is a full mouth restoration where all teeth are fixed with implants."
+      },
+      "allOn4": {
+        "title": "All-on-4 Implants",
+        "target": "Patients who are toothless or have teeth that need to be extracted, and who want fixed teeth in a short time.",
+        "desc": "A fixed prosthesis is made with 4 implants; it can also be applied to those with insufficient jawbone."
+      },
+      "allOn6": {
+        "title": "All-on-6 Implants",
+        "target": "Toothless patients who want stronger jaw support.",
+        "desc": "A more durable and long-lasting fixed prosthesis is made with 6 implants."
+      },
+      "immediate": {
+        "title": "Immediate Implant Treatment",
+        "target": "Patients who have just had a tooth extracted and want an implant without losing time",
+        "desc": "The implant is placed in the same session as the tooth extraction, which saves time."
+      },
+      "zygomatic": {
+        "title": "Zygomatic Implants",
+        "target": "Patients with bone loss in the upper jaw where traditional implants cannot be placed",
+        "desc": "These are special implants placed in the cheekbone. A bone graft is not required."
+      },
+      "zirconium": {
+        "title": "Zirconium Implants",
+        "target": "Those with metal allergies or high aesthetic concerns",
+        "desc": "It is a biocompatible implant type that is aesthetically closest to a natural tooth."
+      },
+      "dentures": {
+        "title": "Implant Supported Dentures",
+        "target": "Toothless patients or those who use dentures but want a fixed solution",
+        "desc": "It is a more stable and comfortable solution compared to removable dentures."
+      },
+      "sinusLifting": {
+        "title": "Sinus Lifting",
+        "target": "Patients who do not have enough bone volume in the upper jaw for an implant",
+        "desc": "The ground is prepared for the implant by adding bone powder to the sinus area."
+      }
+    }
+  },
+  "whyChoose": {
+    "title": "Why Choose Dental Implants in Istanbul?",
+    "intro": "Istanbul has become one of the top destinations worldwide for patients looking for high-quality, affordable dental care. Here is why so many international patients choose Master Smile Studio Turkey for their dental implants:",
+    "reasons": [
+      {
+        "title": "Affordable Costs",
+        "desc": "Save up to 70% compared to prices in the UK, Europe, or the US, without compromising on quality."
+      },
+      {
+        "title": "Experienced Specialists",
+        "desc": "Our dentists have placed thousands of implants with high success rates and extensive training."
+      },
+      {
+        "title": "High-Quality Brands",
+        "desc": "We use globally recognized implant brands such as Straumann, DXL, and NucleOSS that come with international certifications and lifetime warranties."
+      },
+      {
+        "title": "Advanced Technology",
+        "desc": "From 3D tomography (CBCT) to digital smile design, we use cutting-edge technology for precise and painless treatments."
+      },
+      {
+        "title": "All-Inclusive Packages",
+        "desc": "Many clinics offer packages that include VIP transfers, 4/5-star hotel accommodation, and personal translators."
+      },
+      {
+        "title": "Tourism and Culture",
+        "desc": "Enjoy a unique vacation in Istanbul, a historic city that bridges Europe and Asia, while getting world-class dental care."
+      }
+    ]
+  },
+  "cost": {
+    "heading": "Dental Implants Cost (Price) in Istanbul, Turkey",
+    "tableIntro": "Here is a comparison of average dental implant costs between Turkey and other countries:",
+    "comparisonTable": [
+      {
+        "treatment": "Single Dental Implant (Standard)",
+        "turkey": "€400 – €700",
+        "uk": "£1,800 – £2,500",
+        "usa": "$3,000 – $4,500",
+        "savings": "Up to 75%"
+      },
+      {
+        "treatment": "Single Dental Implant (Straumann / Swiss)",
+        "turkey": "€750 – €1,100",
+        "uk": "£2,500 – £3,500",
+        "usa": "$4,000 – $6,000",
+        "savings": "Up to 70%"
+      },
+      {
+        "treatment": "All-on-4 (Per Jaw with Final Zirconia)",
+        "turkey": "€2,900 – €4,500",
+        "uk": "£9,000 – £14,000",
+        "usa": "$15,000 – $24,000",
+        "savings": "Up to 70%"
+      },
+      {
+        "treatment": "All-on-6 (Per Jaw with Final Zirconia)",
+        "turkey": "€3,900 – €5,900",
+        "uk": "£12,000 – £18,000",
+        "usa": "$19,000 – $30,000",
+        "savings": "Up to 70%"
+      },
+      {
+        "treatment": "Sinus Lifting / Bone Grafting",
+        "turkey": "€250 – €450",
+        "uk": "£800 – £1,500",
+        "usa": "$1,200 – $2,500",
+        "savings": "Up to 75%"
+      }
+    ]
+  },
+  "seo": {
+    "title": "Dental Implants in Istanbul | Master Smile Studio",
+    "description": "World-class dental treatments, digital smile design, and implants in Istanbul, Turkey. Get your free online consultation."
+  }
+}

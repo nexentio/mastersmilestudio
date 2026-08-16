@@ -1,5 +1,5 @@
 import React from 'react';
-import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { setRequestLocale } from 'next-intl/server';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import TreatmentHeroBanner from '@/components/treatment-sections/TreatmentHeroBanner';
@@ -8,6 +8,7 @@ import DentalImplantsDetailView from '@/components/DentalImplantsDetailView';
 import AllOnSixImplantDetailView from '@/components/AllOnSixImplantDetailView';
 import { generateTreatmentJsonLd } from '@/lib/treatment-schema';
 import { getI18nAlternates, TREATMENT_LOCALES } from '@/lib/i18n-seo';
+import { getTreatmentContent } from '@/lib/treatment-content';
 
 interface Props {
   params: Promise<{
@@ -19,6 +20,8 @@ interface Props {
 export async function generateMetadata({ params }: Props) {
   const { locale, slug } = await params;
   setRequestLocale(locale);
+
+  const content = await getTreatmentContent(locale, slug);
 
   const titleMap: Record<string, { en: string; tr: string }> = {
     'dental-implants': {
@@ -60,11 +63,15 @@ export async function generateMetadata({ params }: Props) {
     tr: 'İstanbul Diş Tedavileri | Master Smile Studio',
   };
 
-  const title = locale === 'tr' ? currentMeta.tr : currentMeta.en;
+  const title =
+    content?.seo?.title ||
+    (locale === 'tr' ? currentMeta.tr : currentMeta.en);
+
   const description =
-    locale === 'tr'
+    content?.seo?.description ||
+    (locale === 'tr'
       ? 'İstanbul’da dünya standartlarında diş tedavisi, dijital gülüş tasarımı ve implant uygulamaları. Ücretsiz online konsültasyon alın.'
-      : 'World-class dental treatments, digital smile design, and implants in Istanbul, Turkey. Get your free online consultation.';
+      : 'World-class dental treatments, digital smile design, and implants in Istanbul, Turkey. Get your free online consultation.');
 
   return {
     title,
@@ -77,24 +84,20 @@ export default async function TreatmentDetailPage({ params }: Props) {
   const { locale, slug } = await params;
   setRequestLocale(locale);
 
+  const content = await getTreatmentContent(locale, slug);
+
   const isDentalImplants = slug === 'dental-implants';
   const isAllOnSix = slug === 'all-on-6-implants';
 
-  let heroTitle =
-    locale === 'tr' ? 'İstanbul Diş İmplantı' : 'Dental Implants in Istanbul';
+  let heroBadge = content?.hero?.badge || (locale === 'tr' ? 'TEDAVİLERİMİZ' : 'TREATMENTS');
+  let heroTitle = content?.hero?.title || (locale === 'tr' ? 'İstanbul Diş İmplantı' : 'Dental Implants in Istanbul');
   let heroSubtitle =
-    locale === 'tr'
+    content?.hero?.subtitle ||
+    (locale === 'tr'
       ? 'İstanbul’daki kliniğimizde ömür boyu garantili premium implant markaları ve uzman cerrahlarımızla eksiksiz bir gülüşe kavuşun.'
-      : 'Restore your smile with confidence, lifelong guarantees, and expert oral surgeons in Istanbul.';
+      : 'Restore your smile with confidence, lifelong guarantees, and expert oral surgeons in Istanbul.');
 
-  if (isDentalImplants) {
-    heroTitle =
-      locale === 'tr' ? 'İstanbul Diş İmplantı' : 'Dental Implants in Istanbul';
-    heroSubtitle =
-      locale === 'tr'
-        ? 'İstanbul’daki kliniğimizde ömür boyu garantili premium implant markaları ve uzman cerrahlarımızla eksiksiz bir gülüşe kavuşun.'
-        : 'Restore your smile with confidence, lifelong guarantees, and expert oral surgeons in Istanbul.';
-  } else if (isAllOnSix) {
+  if (isAllOnSix && !content?.hero) {
     heroTitle =
       locale === 'tr'
         ? 'All-on-6 Diş İmplantı İstanbul'
