@@ -67,7 +67,7 @@ export default function DentalImplantsDetailView() {
             <iframe
               src="https://www.youtube.com/embed/R081L98DAls?t=21"
               title="Dental Implants in Istanbul Procedure Video"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             />
           </div>

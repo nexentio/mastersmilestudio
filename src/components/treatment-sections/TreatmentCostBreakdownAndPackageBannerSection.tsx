@@ -55,7 +55,7 @@ export default function TreatmentCostBreakdownAndPackageBannerSection() {
           <iframe
             src="https://www.youtube.com/embed/LR_r40rBzb4"
             title="Dental Implant Costs in Istanbul Procedure Video"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           />
         </div>

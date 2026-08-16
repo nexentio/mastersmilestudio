@@ -1,72 +1,198 @@
 'use client';
 
 import React, { useState } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { Link } from '@/i18n/routing';
 import styles from './TreatmentRightTreatmentAccordion.module.css';
 
-export default function TreatmentRightTreatmentAccordion() {
+interface TreatmentRightTreatmentAccordionProps {
+  customHeading?: string;
+  customSubtitle?: string;
+  customItems?: Array<{
+    title: string;
+    target: string;
+    desc: string;
+    img: string;
+    href: string;
+  }>;
+}
+
+export default function TreatmentRightTreatmentAccordion({
+  customHeading,
+  customSubtitle,
+  customItems,
+}: TreatmentRightTreatmentAccordionProps) {
+  const locale = useLocale();
   const t = useTranslations('services');
   const [activeIdx, setActiveIdx] = useState<number>(0);
 
-  const treatments = [
+  const safeT = (key: string, fallback: string) => {
+    try {
+      const val = t(key);
+      return val || fallback;
+    } catch {
+      return fallback;
+    }
+  };
+
+  const defaultTreatments = [
     {
-      title: t('rightTreatment.items.fullMouth.title'),
-      target: t('rightTreatment.items.fullMouth.target'),
-      desc: t('rightTreatment.items.fullMouth.desc'),
+      title: safeT('rightTreatment.items.fullMouth.title', 'Full Mouth Implants'),
+      target: safeT(
+        'rightTreatment.items.fullMouth.target',
+        locale === 'tr'
+          ? 'Üst ve alt çenesinde hiç dişi kalmayan hastalar'
+          : 'Patients who have no teeth left in their upper and lower jaws'
+      ),
+      desc: safeT(
+        'rightTreatment.items.fullMouth.desc',
+        locale === 'tr'
+          ? 'Tüm dişlerin implantlarla sabitlendiği komple bir tam ağız restorasyonudur.'
+          : 'It is a full mouth restoration where all teeth are fixed with implants.'
+      ),
       img: 'https://sohodent.com/doc/data1/full-mouth-implant-copy.webp',
       href: '/treatments/dental-implants/full-mouth-implants',
     },
     {
-      title: t('rightTreatment.items.allOn4.title'),
-      target: t('rightTreatment.items.allOn4.target'),
-      desc: t('rightTreatment.items.allOn4.desc'),
+      title: safeT('rightTreatment.items.allOn4.title', 'All-on-4 Implants'),
+      target: safeT(
+        'rightTreatment.items.allOn4.target',
+        locale === 'tr'
+          ? 'Dişsiz olan veya dişlerinin çekilmesi gereken ve kısa sürede sabit diş isteyen hastalar'
+          : 'Patients who are toothless or have teeth that need to be extracted, and who want fixed teeth in a short time.'
+      ),
+      desc: safeT(
+        'rightTreatment.items.allOn4.desc',
+        locale === 'tr'
+          ? '4 implant ile sabit protez yapılır; çene kemiği yetersiz olanlara da uygulanabilir.'
+          : 'A fixed prosthesis is made with 4 implants; it can also be applied to those with insufficient jawbone.'
+      ),
       img: 'https://sohodent.com/doc/data1/all-on-4-copy.webp',
       href: '/treatments/dental-implants/all-on-4-implants',
     },
     {
-      title: t('rightTreatment.items.allOn6.title'),
-      target: t('rightTreatment.items.allOn6.target'),
-      desc: t('rightTreatment.items.allOn6.desc'),
+      title: safeT('rightTreatment.items.allOn6.title', 'All-on-6 Implants'),
+      target: safeT(
+        'rightTreatment.items.allOn6.target',
+        locale === 'tr'
+          ? 'Daha güçlü çene desteği isteyen dişsiz hastalar'
+          : 'Toothless patients who want stronger jaw support.'
+      ),
+      desc: safeT(
+        'rightTreatment.items.allOn6.desc',
+        locale === 'tr'
+          ? '6 implant ile daha dayanıklı ve uzun ömürlü bir sabit protez yapılır.'
+          : 'A more durable and long-lasting fixed prosthesis is made with 6 implants.'
+      ),
       img: 'https://sohodent.com/doc/data1/all-on-six-copy.webp',
       href: '/treatments/dental-implants/all-on-6-implants',
     },
     {
-      title: t('rightTreatment.items.immediate.title'),
-      target: t('rightTreatment.items.immediate.target'),
-      desc: t('rightTreatment.items.immediate.desc'),
+      title: safeT('rightTreatment.items.immediate.title', 'Immediate Implant Treatment'),
+      target: safeT(
+        'rightTreatment.items.immediate.target',
+        locale === 'tr'
+          ? 'Yeni diş çektirmiş ve zaman kaybetmeden implant isteyen hastalar'
+          : 'Patients who have just had a tooth extracted and want an implant without losing time'
+      ),
+      desc: safeT(
+        'rightTreatment.items.immediate.desc',
+        locale === 'tr'
+          ? 'İmplant, diş çekimi ile aynı seansta yerleştirilerek zamandan tasarruf sağlar.'
+          : 'The implant is placed in the same session as the tooth extraction, which saves time.'
+      ),
       img: 'https://sohodent.com/doc/data1/immediate-copy.webp',
       href: '/treatments/dental-implants/immediate-implant-treatment',
     },
     {
-      title: t('rightTreatment.items.zygomatic.title'),
-      target: t('rightTreatment.items.zygomatic.target'),
-      desc: t('rightTreatment.items.zygomatic.desc'),
+      title: safeT('rightTreatment.items.zygomatic.title', 'Zygomatic Implants'),
+      target: safeT(
+        'rightTreatment.items.zygomatic.target',
+        locale === 'tr'
+          ? 'Üst çenede geleneksel implantların yapılamadığı kemik kaybı olan hastalar'
+          : 'Patients with bone loss in the upper jaw where traditional implants cannot be placed'
+      ),
+      desc: safeT(
+        'rightTreatment.items.zygomatic.desc',
+        locale === 'tr'
+          ? 'Elmacık kemiğine yerleştirilen özel implantlardır. Kemik grefti gerekmez.'
+          : 'These are special implants placed in the cheekbone. A bone graft is not required.'
+      ),
       img: 'https://sohodent.com/doc/data1/zygomatic-implant-copy.webp',
       href: '/treatments/dental-implants/zygomatic-implants',
     },
     {
-      title: t('rightTreatment.items.zirconium.title'),
-      target: t('rightTreatment.items.zirconium.target'),
-      desc: t('rightTreatment.items.zirconium.desc'),
+      title: safeT('rightTreatment.items.zirconium.title', 'Zirconium Implants'),
+      target: safeT(
+        'rightTreatment.items.zirconium.target',
+        locale === 'tr'
+          ? 'Metal alerjisi olan veya yüksek estetik kaygısı olanlar'
+          : 'Those with metal allergies or high aesthetic concerns'
+      ),
+      desc: safeT(
+        'rightTreatment.items.zirconium.desc',
+        locale === 'tr'
+          ? 'Doğal dişe estetik olarak en yakın, biyouyumlu beyaz seramik implant türüdür.'
+          : 'It is a biocompatible implant type that is aesthetically closest to a natural tooth.'
+      ),
       img: 'https://sohodent.com/doc/data1/zirconium-implant-copy.webp',
       href: '/treatments/dental-implants/zirconium-implants',
     },
     {
-      title: t('rightTreatment.items.dentures.title'),
-      target: t('rightTreatment.items.dentures.target'),
-      desc: t('rightTreatment.items.dentures.desc'),
+      title: safeT('rightTreatment.items.dentures.title', 'Implant Supported Dentures'),
+      target: safeT(
+        'rightTreatment.items.dentures.target',
+        locale === 'tr'
+          ? 'Dişsiz hastalar veya hareketli protez kullanıp sabit bir çözüm isteyenler'
+          : 'Toothless patients or those who use dentures but want a fixed solution'
+      ),
+      desc: safeT(
+        'rightTreatment.items.dentures.desc',
+        locale === 'tr'
+          ? 'Hareketli protezlere kıyasla çok daha stabil, oynamayan ve konforlu bir çözümdür.'
+          : 'It is a more stable and comfortable solution compared to removable dentures.'
+      ),
       img: 'https://sohodent.com/doc/data1/implant-supported-dentures-copy.webp',
       href: '/treatments/dental-implants/implant-supported-dentures',
     },
     {
-      title: t('rightTreatment.items.sinusLifting.title'),
-      target: t('rightTreatment.items.sinusLifting.target'),
-      desc: t('rightTreatment.items.sinusLifting.desc'),
+      title: safeT('rightTreatment.items.sinusLifting.title', 'Sinus Lifting'),
+      target: safeT(
+        'rightTreatment.items.sinusLifting.target',
+        locale === 'tr'
+          ? 'Üst çenede implant için yeterli kemik hacmi bulunmayan hastalar'
+          : 'Patients who do not have enough bone volume in the upper jaw for an implant'
+      ),
+      desc: safeT(
+        'rightTreatment.items.sinusLifting.desc',
+        locale === 'tr'
+          ? 'Sinüs bölgesine kemik tozu eklenerek implant için gerekli zemin hazırlanır.'
+          : 'The ground is prepared for the implant by adding bone powder to the sinus area.'
+      ),
       img: 'https://sohodent.com/doc/data1/sinus-lifting-copy.webp',
       href: '/treatments/dental-implants/sinus-lifting',
     },
   ];
+
+  const treatments = customItems || defaultTreatments;
+  const headingText =
+    customHeading ||
+    safeT(
+      'rightTreatment.heading',
+      locale === 'tr' ? 'Sizin İçin En Doğru Tedavi Hangisi?' : 'Find the Right Treatment for You'
+    );
+  const subtitleText =
+    customSubtitle ||
+    safeT(
+      'rightTreatment.subtitle',
+      locale === 'tr'
+        ? 'Hangi dental tedavinin ihtiyaçlarınıza uygun olduğundan emin değil misiniz? Her prosedürün kimler için olduğunu ve neler sunduğunu görmek için seçeneklerimize göz atın.'
+        : 'Not sure which dental treatment suits your needs? Browse through our treatment options to see who each procedure is for and what it offers so you can make informed decisions about your dental care.'
+    );
+  const readMoreText = safeT(
+    'rightTreatment.readMore',
+    locale === 'tr' ? 'DETAYLI BİLGİ' : 'READ MORE'
+  );
 
   return (
     <section aria-labelledby="right-treatment-heading" className={styles.section}>
@@ -75,13 +201,11 @@ export default function TreatmentRightTreatmentAccordion() {
         <div className={styles.headerRow}>
           <div>
             <h2 id="right-treatment-heading" className={styles.heading}>
-              {t('rightTreatment.heading')}
+              {headingText}
             </h2>
           </div>
           <div>
-            <p className={styles.subText}>
-              {t('rightTreatment.subtitle')}
-            </p>
+            <p className={styles.subText}>{subtitleText}</p>
           </div>
         </div>
 
@@ -148,7 +272,7 @@ export default function TreatmentRightTreatmentAccordion() {
                             href={item.href}
                             aria-label={`Read more about ${item.title}`}
                           >
-                            {t('rightTreatment.readMore')}
+                            {readMoreText}
                           </Link>
                         </div>
                       </div>

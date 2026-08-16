@@ -44,7 +44,7 @@ export default function TreatmentClinicTourSection({}: Props) {
             <iframe
               src="https://www.youtube.com/embed/smhwCD78Vbo?autoplay=1"
               title="Step Inside Master Smile Studio Virtual Tour"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             />
           ) : (
