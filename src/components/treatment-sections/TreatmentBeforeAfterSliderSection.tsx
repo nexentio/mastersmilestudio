@@ -57,7 +57,7 @@ export default function TreatmentBeforeAfterSliderSection() {
 
   return (
     <section aria-labelledby="before-after-heading" className={styles.wrapper}>
-      <div className="treatment-container relative">
+      <div className={styles.container}>
         {/* Head */}
         <div className={styles.head}>
           <div>
@@ -82,8 +82,8 @@ export default function TreatmentBeforeAfterSliderSection() {
           </div>
         </div>
 
-        {/* Carousel Container with Left & Right Arrows */}
-        <div className="relative mb-7">
+        {/* Carousel Container with Left & Right Arrows strictly contained */}
+        <div className={styles.carouselWrapper}>
           {/* Left Arrow (Only visible when activePage > 0) */}
           {activePage > 0 && (
             <button
@@ -100,6 +100,7 @@ export default function TreatmentBeforeAfterSliderSection() {
           <div className={styles.grid}>
             {visibleCases.map((c, idx) => (
               <div key={idx} className={styles.card}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={c.img}
                   alt={c.alt}
@@ -136,7 +137,7 @@ export default function TreatmentBeforeAfterSliderSection() {
         </div>
 
         {/* View Gallery Button */}
-        <div className="flex justify-end">
+        <div className={styles.btnRow}>
           <Link
             href="/gallery"
             className="treatment-btn-taupe"

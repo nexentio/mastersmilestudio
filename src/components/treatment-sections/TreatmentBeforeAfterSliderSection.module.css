@@ -1,7 +1,15 @@
 .wrapper {
-  padding: 3.5rem 0;
+  padding: 4rem 0;
   background-color: #ffffff;
   color: #111827;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  position: relative;
 }
 
 .head {
@@ -12,25 +20,42 @@
   margin-bottom: 2.5rem;
 }
 
+.carouselWrapper {
+  position: relative;
+  margin-bottom: 1.75rem;
+}
+
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 1.25rem;
 }
 
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .card {
-  border-radius: 12px;
+  border-radius: 14px;
   overflow: hidden;
   background-color: #ffffff;
   aspect-ratio: 1 / 1;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.09);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
   border: 1px solid #e2e8f0;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  transform: translateY(-3px);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.13);
 }
 
 .card img {
@@ -62,16 +87,27 @@
 }
 
 .navBtn:hover {
-  background-color: #f8fafc;
+  background-color: #0c1b4d;
+  color: #ffffff;
+  border-color: #0c1b4d;
   transform: translateY(-50%) scale(1.06);
 }
 
 .navBtnPrev {
-  left: -20px;
+  left: -22px;
 }
 
 .navBtnNext {
-  right: -20px;
+  right: -22px;
+}
+
+@media (max-width: 768px) {
+  .navBtnPrev {
+    left: 8px;
+  }
+  .navBtnNext {
+    right: 8px;
+  }
 }
 
 .dots {
@@ -93,11 +129,16 @@
 .dotActive {
   width: 10px;
   height: 10px;
-  background-color: #3898a0;
+  background-color: #d58936;
 }
 
 .dotInactive {
   width: 8px;
   height: 8px;
   background-color: #cbd5e1;
+}
+
+.btnRow {
+  display: flex;
+  justify-content: flex-end;
 }
