@@ -1,9 +1,8 @@
 import React from 'react';
-import Image from 'next/image';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
-import { Link } from '@/i18n/routing';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import TreatmentHeroBanner from '@/components/treatment-sections/TreatmentHeroBanner';
 import TreatmentDetailView from '@/components/TreatmentDetailView';
 import DentalImplantsDetailView from '@/components/DentalImplantsDetailView';
 import AllOnSixImplantDetailView from '@/components/AllOnSixImplantDetailView';
@@ -126,65 +125,26 @@ export default async function TreatmentDetailPage({ params }: Props) {
       {/* Global Navigation Header */}
       <Header />
 
-      {/* 1:1 Treatment Hero Section */}
-      <header className="treatment-hero-banner" role="banner">
-        <Image
-          src="/treatment-hero-bg.webp"
-          alt={heroTitle}
-          fill
-          priority
-          sizes="100vw"
-          className="treatment-hero-bg-img"
-        />
-        <div className="treatment-hero-content">
-          <div className="treatment-hero-tag">
-            {locale === 'tr' ? 'TEDAVİLERİMİZ' : 'TREATMENTS'}
-          </div>
-          <h1 className="treatment-hero-heading">{heroTitle}</h1>
-          <p className="treatment-hero-subheading">{heroSubtitle}</p>
-          <div className="treatment-hero-btns">
-            <Link
-              href="/contact"
-              className="treatment-hero-primary-btn"
-              aria-label={
-                locale === 'tr'
-                  ? 'Randevu ve bilgi almak için iletişim sayfasına gidin'
-                  : 'Contact Master Smile Studio for appointment and consultation'
-              }
-            >
-              <span>
-                {locale === 'tr' ? 'Randevu & Bilgi Al' : 'Contact & Appointment'}
-              </span>
-              <svg
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2.2"
-                className="btn-arrow-icon"
-                aria-hidden="true"
-              >
-                <path d="M5 12h14M12 5l7 7-7 7" />
-              </svg>
-            </Link>
-
-            <a
-              href="#main-content"
-              className="treatment-hero-secondary-btn"
-              aria-label={
-                locale === 'tr'
-                  ? 'Tedavi paketlerini ve ayrıntılarını incelemek için aşağı kaydırın'
-                  : 'Scroll down to explore treatment packages and medical details'
-              }
-            >
-              <span>
-                {locale === 'tr' ? 'Paketleri İncele' : 'View Packages & Details'}
-              </span>
-            </a>
-          </div>
-        </div>
-      </header>
+      {/* 1:1 Modular Treatment Hero Section */}
+      <TreatmentHeroBanner
+        tag={locale === 'tr' ? 'TEDAVİLERİMİZ' : 'TREATMENTS'}
+        title={heroTitle}
+        subtitle={heroSubtitle}
+        primaryBtnText={locale === 'tr' ? 'Randevu & Bilgi Al' : 'Contact & Appointment'}
+        primaryBtnHref="/contact"
+        primaryBtnAriaLabel={
+          locale === 'tr'
+            ? 'Randevu ve bilgi almak için iletişim sayfasına gidin'
+            : 'Contact Master Smile Studio for appointment and consultation'
+        }
+        secondaryBtnText={locale === 'tr' ? 'Paketleri İncele' : 'View Packages & Details'}
+        secondaryBtnHref="#main-content"
+        secondaryBtnAriaLabel={
+          locale === 'tr'
+            ? 'Tedavi paketlerini ve ayrıntılarını incelemek için aşağı kaydırın'
+            : 'Scroll down to explore treatment packages and medical details'
+        }
+      />
 
       {/* Main Content Area Landmark */}
       <main id="main-content" className="treatment-main-content">
