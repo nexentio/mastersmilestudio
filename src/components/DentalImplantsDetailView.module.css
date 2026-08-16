@@ -1,0 +1,115 @@
+.introSection {
+  padding: 4.5rem 1.5rem 2rem 1.5rem;
+  background-color: #ffffff;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.mainHeading {
+  font-size: clamp(1.85rem, 3.2vw, 2.5rem);
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.25;
+  margin: 0 0 1.5rem 0;
+  letter-spacing: -0.02em;
+}
+
+.subHeading {
+  font-size: clamp(1.15rem, 1.8vw, 1.35rem);
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 1.25rem 0;
+}
+
+.textP {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #334155;
+  margin-bottom: 1.25rem;
+}
+
+.bulletList {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin: 0 0 1.75rem 0;
+  color: #334155;
+  line-height: 1.85;
+  font-size: 1.02rem;
+}
+
+.bulletList li {
+  margin-bottom: 0.5rem;
+}
+
+.mainVideoWrap {
+  width: 100%;
+  max-width: 960px;
+  margin: 3rem auto;
+  position: relative;
+  aspect-ratio: 16 / 9;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #09090b;
+  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.mainVideoWrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.dividerWrap {
+  margin: 3.5rem 0;
+}
+
+.costHeading {
+  text-align: center;
+  font-size: clamp(1.85rem, 3.2vw, 2.5rem);
+  font-weight: 700;
+  color: #0f172a;
+  margin: 3.5rem 0 2rem 0;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+
+.sectionTitle {
+  font-size: clamp(1.6rem, 2.6vw, 2.1rem);
+  font-weight: 700;
+  color: #0f172a;
+  margin: 3rem 0 1.25rem 0;
+  letter-spacing: -0.015em;
+  line-height: 1.3;
+}
+
+.sectionSubTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 2.25rem 0 0.75rem 0;
+}
+
+.textItalic {
+  font-style: italic;
+  font-size: 0.96rem;
+  color: #64748b;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.linkGold {
+  color: #D58936;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.linkGold:hover {
+  text-decoration: underline;
+}

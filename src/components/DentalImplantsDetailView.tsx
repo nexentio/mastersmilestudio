@@ -19,6 +19,7 @@ import TreatmentTripleVideoSlider from '@/components/treatment-sections/Treatmen
 import TreatmentPackagesSlider from '@/components/treatment-sections/TreatmentPackagesSlider';
 import TreatmentCostBreakdownAndPackageBannerSection from '@/components/treatment-sections/TreatmentCostBreakdownAndPackageBannerSection';
 import TreatmentFAQSection from '@/components/treatment-sections/TreatmentFAQSection';
+import styles from './DentalImplantsDetailView.module.css';
 
 export default function DentalImplantsDetailView() {
   const locale = useLocale();
@@ -26,18 +27,18 @@ export default function DentalImplantsDetailView() {
   return (
     <div className="treatment-page-wrapper">
       {/* 1. INTRO & WHAT ARE DENTAL IMPLANTS */}
-      <section aria-labelledby="intro-implants-heading" className="treatment-section-white-top">
-        <div className="treatment-container">
-          <h2 id="intro-implants-heading" className="treatment-heading-hero">
+      <section aria-labelledby="intro-implants-heading" className={styles.introSection}>
+        <div className={styles.container}>
+          <h2 id="intro-implants-heading" className={styles.mainHeading}>
             <span>{locale === 'tr' ? 'İstanbul Diş İmplantı' : 'Dental Implants'}</span>
             <span>{locale === 'tr' ? ' – Master Smile Studio Türkiye' : ' in Istanbul – Master Smile Studio Turkey'}</span>
           </h2>
 
-          <h3 className="treatment-heading-h3-gray">
-            <strong>{locale === 'tr' ? 'Diş İmplantı Nedir?' : 'What Are Dental Implants?'}</strong>
+          <h3 className={styles.subHeading}>
+            {locale === 'tr' ? 'Diş İmplantı Nedir?' : 'What Are Dental Implants?'}
           </h3>
 
-          <p className="treatment-text-p">
+          <p className={styles.textP}>
             {locale === 'tr' ? (
               <>
                 Bir <strong>diş implantı</strong>, eksik bir dişin yerine konan yapay bir diş köküdür. Genellikle titanyumdan üretilen küçük bir vida görünümündedir ve yeni dişi güvenli bir şekilde tutmak için çene kemiğine yerleştirilir. Tam bir diş restorasyonu için üç ana parça kullanılır:
@@ -49,7 +50,7 @@ export default function DentalImplantsDetailView() {
             )}
           </p>
 
-          <ul className="treatment-bullet-list">
+          <ul className={styles.bulletList}>
             <li>
               <strong>{locale === 'tr' ? 'Dental implant (titanyum vida)' : 'Dental implant (titanium screw)'}</strong> – {locale === 'tr' ? 'diş kökü gibi görev yapar.' : 'works as the tooth root.'}
             </li>
@@ -61,19 +62,19 @@ export default function DentalImplantsDetailView() {
             </li>
           </ul>
 
-          <p className="treatment-text-p">
+          <p className={styles.textP}>
             {locale === 'tr' ? (
               <>
                 İmplant iyileşip kemikle güçlü bir şekilde kaynaştıktan sonra kuron hazırlanır ve takılır. <strong>İstanbul</strong>&apos;daki <strong>Master Smile Studio</strong> kliniğimizde, çene cerrahisi alanında uzman hekim kadromuz gülüşünüzü yeniden kazandırmak için kusursuz ve yüksek kaliteli bir diş implantı prosedürü sağlar.
               </>
             ) : (
               <>
-                Once the implant has healed and bonded strongly with the bone, the crown is made and attached. At <strong>Master Smile Studio Clinic</strong> in <strong>Istanbul</strong>, our expert team specializing in oral surgery ensures a seamless and high-quality dental implant procedure to restore your smile.
+                Once the implant has healed and bonded strongly with the bone, the crown is made and attached. At <strong>Master Smile Studio</strong> in <strong>Istanbul</strong>, our expert team specializing in oral surgery ensures a seamless and high-quality dental implant procedure to restore your smile.
               </>
             )}
           </p>
 
-          <p className="treatment-text-p font-semibold text-slate-900">
+          <p className={styles.textP}>
             {locale === 'tr' ? (
               <>
                 Bir veya daha fazla dişiniz eksikse, <strong>İstanbul&apos;da diş implantı</strong> tedavisi güvenli, uzun ömürlü ve estetik bir çözümdür.
@@ -86,7 +87,7 @@ export default function DentalImplantsDetailView() {
           </p>
 
           {/* Fullwidth Horizontal Video Embed (YouTube R081L98DAls) */}
-          <div className="treatment-video-card">
+          <div className={styles.mainVideoWrap}>
             <iframe
               src="https://www.youtube.com/embed/R081L98DAls?t=21"
               title="Dental Implants in Istanbul Procedure Video"
@@ -95,19 +96,28 @@ export default function DentalImplantsDetailView() {
             />
           </div>
 
-          <div className="treatment-divider-wrap">
+          <div className={styles.dividerWrap}>
             <TreatmentDivider />
           </div>
 
           {/* TRIPLE VIDEO SHORTS SLIDER */}
           <TreatmentTripleVideoSlider />
 
+          {/* DENTAL IMPLANTS COST HEADING */}
+          <h2 id="cost-heading-center" className={styles.costHeading}>
+            <span>
+              {locale === 'tr'
+                ? 'İstanbul Diş İmplantı Fiyatları (Paket Ücretleri)'
+                : 'Dental Implants Cost (Price) in Istanbul, Turkey'}
+            </span>
+          </h2>
+
           {/* WHY CHOOSE DENTAL IMPLANTS IN ISTANBUL */}
-          <h2 id="why-choose-implants-heading" className="treatment-heading-title">
+          <h2 id="why-choose-implants-heading" className={styles.sectionTitle}>
             <span>{locale === 'tr' ? 'Neden İstanbul’da Diş İmplantı Yaptırmalısınız?' : 'Why Choose Dental Implants in Istanbul?'}</span>
           </h2>
 
-          <p className="treatment-text-p">
+          <p className={styles.textP}>
             {locale === 'tr' ? (
               <>
                 İstanbul, yüksek kaliteli ve uygun fiyatlı diş tedavisi arayan uluslararası hastalar için dünyanın en popüler destinasyonlarından biri haline gelmiştir. Hastaların diş implantları için <strong>Master Smile Studio Türkiye</strong>&apos;yi tercih etmelerinin başlıca nedenleri:
