@@ -1,0 +1,184 @@
+.wrapper {
+  padding: 5rem 0;
+  background-color: #ffffff;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.head {
+  display: grid;
+  grid-template-columns: 1.15fr 1.35fr;
+  gap: 3rem;
+  align-items: start;
+  margin-bottom: 3rem;
+}
+
+.title {
+  font-size: clamp(2rem, 3.2vw, 2.75rem);
+  font-weight: 800;
+  color: #0c1b4d;
+  line-height: 1.18;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.subText {
+  font-size: 1.02rem;
+  color: #475569;
+  line-height: 1.65;
+  margin: 0;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.item {
+  border: 1.5px solid #e2e8f0;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: #ffffff;
+  transition: all 0.2s ease;
+}
+
+.item:hover {
+  border-color: #cbd5e1;
+}
+
+.itemActive {
+  border-color: #d58936;
+  box-shadow: 0 6px 20px rgba(213, 137, 54, 0.08);
+}
+
+.itemHeader {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  padding: 1.25rem 1.75rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+}
+
+.questionText {
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: #0c1b4d;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+}
+
+.iconBadge {
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  border-radius: 50%;
+  background-color: #f1f5f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #64748b;
+  transition: transform 0.25s ease, background-color 0.25s ease, color 0.25s ease;
+}
+
+.iconBadgeActive {
+  transform: rotate(45deg);
+  background-color: #fff7ed;
+  color: #d58936;
+}
+
+.contentBox {
+  padding: 0 1.75rem 1.5rem 1.75rem;
+  color: #334155;
+  font-size: 1rem;
+  line-height: 1.75;
+  border-top: 1px solid #f1f5f9;
+  margin-top: 0.25rem;
+  padding-top: 1.25rem;
+}
+
+.contentBox p {
+  margin: 0 0 0.85rem 0;
+}
+
+.contentBox p:last-child {
+  margin-bottom: 0;
+}
+
+/* Compact Mobile Responsive Styles */
+@media (max-width: 860px) {
+  .wrapper {
+    padding: 2.75rem 0 2rem;
+  }
+
+  .container {
+    padding: 0 0.85rem;
+  }
+
+  .head {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .title {
+    font-size: 1.65rem;
+  }
+
+  .subText {
+    font-size: 0.88rem;
+    line-height: 1.5;
+  }
+
+  .accordion {
+    gap: 0.5rem;
+  }
+
+  .item {
+    border-radius: 10px;
+    border-width: 1px;
+  }
+
+  .itemHeader {
+    padding: 0.85rem 0.95rem;
+    gap: 0.75rem;
+  }
+
+  .questionText {
+    font-size: 0.88rem;
+    line-height: 1.35;
+    font-weight: 650;
+  }
+
+  .iconBadge {
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+  }
+
+  .iconBadge svg {
+    width: 11px;
+    height: 11px;
+  }
+
+  .contentBox {
+    padding: 0.75rem 0.95rem 0.95rem 0.95rem;
+    font-size: 0.84rem;
+    line-height: 1.55;
+    padding-top: 0.75rem;
+  }
+
+  .contentBox p {
+    margin-bottom: 0.5rem;
+  }
+}
