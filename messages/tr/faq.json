@@ -43,5 +43,227 @@
       "question": "Acil diş ağrısı durumunda aynı gün randevu alabilir miyim?",
       "answer": "Evet, şiddetli diş ağrısı veya acil durumlarda WhatsApp hattımız veya telefon numaramız üzerinden ulaştığınızda hastalarımızı aynı gün içerisinde kliniğe kabul ediyoruz."
     }
-  ]
+  ],
+  "treatmentFaq": {
+    "title": "Bu Tedavi Hakkında Sıkça Sorulan Sorular",
+    "subText": "Bu tedavi hakkında sorularınız mı var? Yalnız değilsiniz. Tedavi sürelerinden maliyetlere ve iyileşme sürecine kadar, her adımda net yanıtlar, uzman tavsiyesi ve kişiselleştirilmiş destekle yanınızdayız.",
+    "items": [
+      {
+        "q": "İstanbul’a geldiğimde bana verilen tedavi planı veya fiyat değişir mi?",
+        "a": [
+          "Çok haklı bir soru. Ne yazık ki yurt dışından gelen birçok hasta, bazı kliniklerde sonradan çıkarılan sürpriz ek maliyetlerle karşılaşabiliyor.",
+          "Sizinle paylaştığımız plan ve fiyat; seyahatinizden önce bize gönderdiğiniz fotoğraflar, röntgenler ve beklentileriniz doğrultusunda titizlikle hazırlanır. Kliniğimize geldiğinizde tedaviye başlamadan önce detaylı bir yüz yüze muayene ile her şeyi teyit ederiz.",
+          "Bazen fotoğraflarda veya röntgenlerde görülemeyen küçük bir ayrıntı klinik muayenesinde ortaya çıkabilir. Örneğin bu, çene kemiğinizi greftleme ve sinüs lifting prosedürüyle güçlendirme ihtiyacı olabilir. Uluslararası hastalarla çalışan çoğu kliniğin aksine, bu detayların fiyatlandırması ve olasılığı tedavi planınızda baştan şeffaf olarak paylaşılır.",
+          "Böyle bir durum ortaya çıkarsa bunu açıkça açıklar, durumu gösterir ve herhangi bir değişiklik yapmadan önce tüm seçenekleri sizinle tartışırız. Onayınız olmadan asla hiçbir işlem yapılmaz.",
+          "Kontrolünüz sırasında yeni bir durum keşfedilmedikçe tedavi planınız ve fiyatınız tamamen aynı kalacaktır. Yeni bir durum olsa bile herhangi bir tedaviye geçmeden önce seçeneklerinize sizinle birlikte karar veririz."
+        ]
+      },
+      {
+        "q": "Konaklama konusunda yardımcı oluyor musunuz?",
+        "a": [
+          "Evet, elbette. Hastalarımız düzenli olarak yurt dışından seyahat ettiği için sadece diş tedavinizde değil, İstanbul'daki konaklamanızda da kendinizi desteklenmiş hissetmenizi sağlıyoruz. Kliniğimize yakın güvenilir oteller önerebilir ve dilerseniz rezervasyonunuzun ayarlanmasına yardımcı olabiliriz.",
+          "Amacımız seyahatinizi olabildiğince sorunsuz ve stressiz hale getirmektir; böylece tedavinize odaklanabilir ve şehirdeki zamanınızın tadını çıkarabilirsiniz. Konaklama konusunda size memnuniyetle yardımcı olur ve ziyaretiniz sırasında konforlu seçeneklere sahip olmanızı sağlarız."
+        ]
+      },
+      {
+        "q": "Türkiye’ye seyahat etmek güvenli mi?",
+        "a": [
+          "Evet! Türkiye uluslararası ziyaretçiler için son derece popüler bir destinasyondur ve her yıl milyonlarca turist buraya güvenle seyahat etmektedir. İstanbul gibi şehirler sadece kültürel ve tarihi merkezler olmakla kalmayıp, modern klinikler, oteller, ulaşım hizmetleri ve dünyaca ünlü turistik cazibe merkezleriyle yurt dışından gelen hastaları ağırlamaya mükemmel şekilde hazırdır.",
+          "Her büyük şehirde olduğu gibi, değerli eşyalarınızı güvende tutmak ve çevrenizin farkında olmak gibi normal seyahat önlemlerini almak her zaman akıllıcadır. Kliniğimiz ayrıca konaklamanız boyunca rahat ve güvende hissetmeniz için güvenilir ulaşım ve konaklama seçeneklerinin ayarlanmasına yardımcı olur. Sağladığımız bu ekstra destekle diş seyahatiniz sorunsuz ve endişesiz bir deneyim haline gelir."
+        ]
+      },
+      {
+        "q": "Kliniğinizde diş kuronları için hangi malzemeler kullanılmaktadır?",
+        "a": [
+          "Diş hekimliğinde mevcut olan en son teknolojileri ve tedavi protokollerini kullanıyoruz.",
+          "Diş protezleri konusunda kaplamalarda Ivoclar (İsviçre) markası kullanılırken, implant üstü All-on-4/6 tedavilerinde Amann-Girrbach markası tercih edilmektedir."
+        ]
+      },
+      {
+        "q": "Dişlerim hazırlanmadan önce şeklini ve rengini görebilir miyim?",
+        "a": [
+          "Evet, kesinlikle. Gülüş tasarımı sırasında yeni dişlerinizin simülasyonunu henüz üretilmeden önce size gösteriyoruz. Bir “mock-up” modeliyle müstakbel dişlerinizin hem rengini hem şeklini, hatta ağzınızın içinde nasıl görüneceğini görebilirsiniz. Mock-up'ı onayladıktan sonra nihai dişler tercihinize göre üretilir.",
+          "Önemli bir not: Restorasyonlarınız yapıldıktan sonra daha fazla beyazlatılamaz, ancak gerekirse biraz daha koyu bir tona ayarlanabilir. Bu nedenle tüm ayrıntıları önceden sizinle tartışıyor ve geri bildirimlerinizi ciddiye alıyoruz; böylece nihai sonuç tam olarak istediğinizle eşleşir.",
+          "Kısacası: Evet, tedaviden önce yeni gülüşünüzün bir önizlemesini göreceksiniz ve kalıcı dişler üretilmeden önce görünümü onaylama şansınız olacak."
+        ]
+      },
+      {
+        "q": "İmplant ameliyatından sonra çok fazla ağrı hisseder miyim?",
+        "a": [
+          "İlk birkaç gün içinde diş çekildikten sonra hissedeceğinize benzer bir miktar rahatsızlık, şişlik veya hafif sızı hissedebilirsiniz. Ancak bu durum genellikle reçetesiz ağrı kesiciler ve size reçete edeceğimiz ilaçlarla kolayca kontrol altına alınır.",
+          "Ameliyatınızın ilk gününde size temin edeceğimiz buz torbasını 5 dakika uygulayıp 5 dakika dinlendirme kuralına uymanız istenecektir. Bu, şişliği önlemenize yardımcı olur ve aynı zamanda anti-enflamatuar görevi görecek olan reçete edeceğimiz ağrı kesici ilaçlarla daha da desteklenir. Ağrı genellikle ilk 48 saatte en belirgindir ve ardından hızla düzelir.",
+          "Ayrıca işlem sırasında lokal anestezi kullandığımız ve rahat, konforlu kalmanız veya dilerseniz işlem boyunca uyumanız için sedasyon seçenekleri sunduğumuz için hiçbir ağrı hissetmezsiniz."
+        ]
+      },
+      {
+        "q": "Online ödeme yöntemlerini destekliyor musunuz?",
+        "a": [
+          "Kliniğimiz, hastalarımızın ihtiyaçlarını karşılamak üzere tasarlanmış çeşitli ödeme seçenekleri sunmaktadır.",
+          "Daha detaylı bilgi için lütfen bizimle iletişime geçmekten çekinmeyin."
+        ]
+      },
+      {
+        "q": "Paketleriniz otel ve transfer hizmetlerini kapsıyor mu?",
+        "a": [
+          "Paketlerimizin içeriği seçilen tedaviye göre değişiklik gösterebilir.",
+          "Size en uygun seçeneği öğrenmek için lütfen bizimle iletişime geçmekten çekinmeyin."
+        ]
+      },
+      {
+        "q": "Tedavi veya paket ücretlerimi taksitle ödeyebilir miyim?",
+        "a": [
+          "Kliniğimizde tedavi ve paket ücretleri için çeşitli ödeme seçenekleri sunuyoruz.",
+          "Taksit planları hakkında detaylı bilgi için lütfen bizimle iletişime geçin."
+        ]
+      },
+      {
+        "q": "Garanti veya sigorta sunuyor musunuz?",
+        "a": [
+          "Kliniğimizdeki tüm tedaviler belirtilen süre ve koşullar dahilinde garanti kapsamındadır.",
+          "Daha detaylı bilgi için lütfen bizimle iletişime geçmekten çekinmeyin."
+        ]
+      },
+      {
+        "q": "Diş tedavilerimi güvenle erteleyebilir miyim?",
+        "a": [
+          "Diş tedavisini ertelemek mümkündür ancak en güvenli seçenek değildir. Diş sağlığı sorunları genellikle büyük belirtiler göstermeden ortaya çıkma eğilimindedir ve ilerleyicidir. Çürük veya diş eti sorunları gibi küçük problemler genellikle ağrısız başlar. Ancak zamanla büyüyebilir ve enfeksiyonlar, diş kaybı, ardından kemik kaybı veya daha karmaşık tedavilere duyulan ihtiyaç gibi daha büyük sorunlara yol açabilir.",
+          "Durumunuz acil değilse kısa bir gecikme zarar vermeyebilir. Ancak ne kadar uzun süre beklerseniz, sorunun daha ciddi ve düzeltilmesinin daha maliyetli hale gelme riski o kadar artar. Daha fazla gecikme, ağız ve diş sağlığınızın kötüleşmesi için daha fazla şans anlamına gelir.",
+          "Diş tedavisini geciktirmemek en doğrusudur. Zamanlama konusunda endişeleriniz varsa diş hekiminize danışın. İhtiyaçlarınıza uygun bir planı birlikte yapabilirsiniz."
+        ]
+      },
+      {
+        "q": "İmplant üstüne hangi kron daha iyidir, E-Max mi yoksa Zirkonyum mu?",
+        "a": [
+          "İmplantlar için zirkonyum genellikle daha güçlü ve daha güvenli bir seçimdir. Çok dayanıklıdır; bu da onu arka çiğneme dişleri ve tam ağız restorasyonları için ideal kılar. Zirkonyum, ısırma ve çiğnemenin yüksek basıncını sorunsuz bir şekilde kaldırabilir.",
+          "E-Max kuronlar ise tamamen porselenden üretilir ve daha doğal, gerçeğe yakın bir görünüm sağlar. Bu nedenle özellikle gülüş hattında sadece 1-2 implant yerleştirildiğinde ön dişler için önerilir. İmplantlar üzerinde gayet iyi çalışır ve orada kolayca kırılmazlar ancak çiğneme kuvvetinin çok daha güçlü olduğu arka dişler için tavsiye edilmezler.",
+          "Zirkonyum ağzın her yerinde çalışır ve implant kuronları için en güvenilir seçenektir; E-Max ise hastanın en doğal görünümlü gülüşü istediği durumlarda bazen ön dişler için tercih edilir."
+        ]
+      },
+      {
+        "q": "All-on-6 protezim kırılırsa ne yapmalıyım?",
+        "a": [
+          "All-on-6 protezinizde bir kırık veya çatlak yaşarsanız, mümkün olan en kısa sürede kliniğimizi ziyaret etmeniz önemlidir.",
+          "Gerekirse onarım veya değişim uzman diş hekimlerimiz tarafından gerçekleştirilecektir. Hem implantlarınıza hem de diş etlerinize zarar verebileceğinden lütfen kendi kendinize herhangi bir onarım yapmaktan kaçının.",
+          "Daha fazla bilgi almak veya acil randevu planlamak için doğrudan bizimle iletişime geçebilirsiniz."
+        ]
+      },
+      {
+        "q": "All-on-6 protezleri reçine, akrilik veya plastik malzemeden mi yapılır?",
+        "a": [
+          "All-on-6 protezleri genellikle hem estetik hem de uzun vadeli güç sağlayan porselen veya zirkonyum gibi dayanıklı malzemelerden yapılır.",
+          "Reçine, akrilik veya plastik malzemeler genellikle sadece geçici protezler için kullanılır.",
+          "Kalıcı proteziniz için en uygun malzeme kliniğimizde yapılacak detaylı muayene sonrasında belirlenecektir. Daha fazla bilgi almak veya randevu planlamak için lütfen bizimle iletişime geçin."
+        ]
+      },
+      {
+        "q": "Kliniğinizde implant tedavisi için sedasyon mevcut mu? Hangi sedasyon türleri uygulanıyor?",
+        "a": [
+          "Kesinlikle. Kliniğimizde hasta konforu en önemli önceliktir. Özellikle diş işlemlerinden endişe duyan kişiler için tedavilerinizi olabildiğince konforlu ve stressiz tutmak istiyoruz.",
+          "İhtiyaçlarınıza ve tıbbi geçmişinize bağlı olarak üç tür sedasyon sunuyoruz. Bunlar:",
+          "• Yalnızca ameliyat edilen bölgeyi uyuşturan lokal anestezi. Tüm implant prosedürlerimize dahil olan en yaygın ve yaygın yöntemdir.",
+          "• Alacakaranlık sedasyonu olarak da adlandırılan ve tedavi sırasında uyanıkken rahat ve sakin kalmanızı sağlayan IV Sedasyon. Birçok hasta işlemden sonrasını hatırlamaz bile.",
+          "• Daha derin sedasyonun gerekli olduğu durumlar için kullanılan genel anestezi. Bu tür sedasyon genellikle bir anestezi uzmanı eşliğinde yapılır.",
+          "Tedavinizden önce seçeneklerinizi kapsamlı bir şekilde tartışacak, aklınıza gelebilecek tüm soruları yanıtlayacak ve tedavi planınıza özel olarak uyarlanmış en güvenli, en konforlu çözümü seçeceğiz. İçinizin rahat olması bizim için gülüşünüz kadar önemlidir."
+        ]
+      },
+      {
+        "q": "Diş kaybı durumlarında neden köprü yerine implant tercih edilir?",
+        "a": [
+          "Diş kaybının neden olduğu boşluk birden fazla implant gerektirmediği sürece, diş implantları sağlıklı dişlerinizi etkilemeden uzun ömürlü bir çözüm sundukları için köprülere tercih edilir.",
+          "Köprü tedavisi, ortadaki yedek dişi destekleyebilmeleri için boşluğunuzun her iki tarafındaki sağlıklı dişlerin tıraşlanmasını (kesilmesini) gerektirir. Bu, sadece eksik bir dişi düzeltmek için sağlıklı dişlerinizi kalıcı olarak değiştirmek anlamına gelir. Burada bir implant, sağlıklı dişlerinizi kesmeden kullanılır, kaybedilenin yerini alır ve sağlıklı dişlerinizin dokunulmadan kalmasını sağlar.",
+          "İmplantlar ayrıca çenenizdeki kemiğin korunmasına yardımcı olur. Bir diş eksik olduğunda, alttaki kemik dokusu zamanla küçülmeye başlar. İmplantlar tıpkı bir diş kökü gibi kemik dokusuna bağlanır ve onu uyararak sağlam bir tutuş sağlar ve yüz yapınızı sağlam tutar. Köprüler bunu yapamaz."
+        ]
+      },
+      {
+        "q": "HIV, Hepatit vb. hastalıkları olan hastalara implant veya cerrahi tedavi uygulanabilir mi?",
+        "a": [
+          "Cevap Evet. Hastanın genel sağlık durumu stabil ve iyi yönetildiği sürece HIV, Hep B, Hep C gibi rahatsızlıkları olan hastalar güvenle diş implantı tedavisi ve diğer prosedürleri alabilirler.",
+          "Burada dikkate alınması gereken hususlar bağışıklık durumunuz, viral yükünüz ve uygun tıbbi bakım ve izleme altında olup olmadığınızdır. Doğru önlemler ve planlama sayesinde diş tedavisi ve cerrahi güvenli ve başarılı bir şekilde yapılabilir.",
+          "Ameliyat sonrası iyileşme süreciniz için zamanlamanın ve koşulların doğru olduğundan emin olmak için gerektiğinde tıbbi ekibinizle her zaman koordinasyon sağlarız.",
+          "Tüm hastalarımız için katı evrensel enfeksiyon kontrol protokolleri uyguluyoruz; bu nedenle diğer herkesle aynı düzeyde bakım ve saygıyla tedavi edilirsiniz. Tıbbi geçmişiniz gizli kalacak ve sağlığınız ve esenliğiniz bizim en büyük önceliğimiz olacaktır. Durumu ne olursa olsun sağlık hizmeti talep etmek her hastanın hakkıdır ve biz yolculuğunuzun her adımında sizi desteklemek için buradayız."
+        ]
+      },
+      {
+        "q": "Diyabet gibi kronik rahatsızlığı olan hastalar implant yaptırabilir mi?",
+        "a": [
+          "Elbette! Kronik rahatsızlıkları olan hastalar yine de diş implantı yaptırabilirler. Bu durum rahatsızlığınızın ne kadar iyi kontrol edildiğine bağlıdır. Diyabetiniz iyi yönetiliyorsa (yani kan şekeriniz stabil seviyelerdeyse), vücudunuz implant ameliyatından sonra düzgün bir şekilde iyileşme yeteneğine sahip olacaktır.",
+          "HbA1c Testinizden kan şekeri seviyenizi paylaşmanızı rica edeceğiz. Test değerleri izin veriyorsa, diş implantı yaptırmanızı gerçekten engelleyecek başka bir durum olmadığı sürece implant ameliyatı olabileceksiniz.",
+          "Bu nedenle benzersiz vakanızın tedavisini planlamadan önce her zaman tıbbi geçmişinizi sorar ve genel sağlığınızı anlamak için kan testi sonuçları talep edebiliriz."
+        ]
+      },
+      {
+        "q": "Sigara kullanıyorsam yine de implant yaptırabilir miyim?",
+        "a": [
+          "Evet, sigara içiyor olsanız bile implant yaptırabilirsiniz. Bu durum sizi implantasyon için diskalifiye etmez. Ancak sigara içmenin komplikasyon riskini artırdığını bilmek önemlidir.",
+          "Sigara içmek kan akışınızı ve vücudunuzun iyileşme kapasitesini etkiler. Bunların her ikisi de implantlarınızın çene kemiğinizle başarılı bir şekilde kaynaşması için gereklidir. Ayrıca cerrahi alanınızın etrafında enfeksiyon olasılığını artırabilir ve bu da özellikle iyileşme sürecinizin erken aşamalarında implant başarısızlığına yol açabilir. Bu nedenle implant ameliyatınızdan önce ve sonra sigarayı bırakmanızı veya en azından azaltmanızı şiddetle tavsiye ediyoruz.",
+          "Tıpkı bir bitki yetiştirmek gibidir. Saksının toprağı kuruysa ve koşullar zorsa bitki yine de büyüyebilir ancak daha fazla bakıma ve ilgiye ihtiyaç duyacaktır. Diş implantları söz konusu olduğunda da durum aynıdır. Çevreniz ne kadar destekleyici olursa tedavi sonucunuz o kadar iyi olacaktır.",
+          "Konsültasyonlarımız sırasında her zaman yaşam tarzınız hakkında açıkça konuşmayı, ağız sağlığınızın durumunu değerlendirmeyi ve implantlarınıza başarılı olma konusunda en iyi şansı veren bir plan yapmayı hedefleriz."
+        ]
+      },
+      {
+        "q": "İmplant tutmazsa veya başarısız olursa ne olur?",
+        "a": [
+          "Diş implantlarının %95'in üzerinde çok yüksek bir başarı oranına sahip olduğu gösterilmiştir. Nadir durumlarda bir implantın düzgün şekilde iyileşmemesi veya zamanla başarısız olması mümkündür. Böyle bir durumda endişelenmenize gerek yok, bu sizin için yolun sonu değildir.",
+          "Erken iyileşme aşamasında böyle bir durum meydana gelirse implantı çıkarır, bölgenin iyileşmesini bekler ve ardından ikinci bir deneme planlarız. Bu tür prosedürlerde kemik greftlemesi daha ileri düzeyde değerlendirilebilir.",
+          "Orta ön bölgenizdeki (kesici dişlerinizin bulunduğu yer) kemik dokusu daha yumuşak kemik dokusuna sahiptir ve diş implantları için tercih edilmez. Bu nedenle uzman implantoloji cerrahı, all on 4 veya all on 6 gibi tedavi protokollerini uygularken benzersiz vakanız için ağzınızdaki en iyi açıyı ve konumu değerlendirir ve ölçer.",
+          "Çoğu durumda çözüm basittir ve başarılıdır; özellikle de bu tür vakaları ele alma konusunda deneyimli bir klinikte tedavi edildiğinizde. Uzman implantoloji cerrahı tarafından ele alınan ve sizin uğraşmak zorunda kalmadığınız oldukça fazla parametre vardır. Ucuz kliniklerle devam etmemeyi ve şüpheli niteliklere sahip diş hekimlerini seçmemeyi önermemizin ana nedeni budur. Diş implantı cerrahisi yine de bir ameliyattır ve uygun bilgi ve deneyimle yeterli hazırlık gerektirir.",
+          "Kliniğimizde riskleri en aza indirmeye ve implantlarınızı yıllarca sağlıklı tutmaya yardımcı olmak için takip bakımı ve net rehberlik de sağlıyoruz. Ayrıca tedaviniz kliniğimizde yapıldığı takdirde komplikasyon sigortasına tabi olacaktır. Ek olarak, yaptığımız işin arkasındayız — bu yüzden bir şeyler ters giderse yalnız bırakılmayacaksınız."
+        ]
+      },
+      {
+        "q": "All-on-4 ile All-on-6 tedavileri arasındaki fark nedir? Hangisinin benim için doğru olduğuna nasıl karar veriyorsunuz?",
+        "a": [
+          "Bu iki tedavi arasındaki temel fark tedavide kullanılan implant miktarıdır: Çene başına 4 implant ve çene başına 6 implant.",
+          "Her iki yöntem de hastalara tam bir sabit diş seti sağlar. All on 6 ekstra destek ve stabilite sunar. Bu, daha güçlü kemik yoğunluğuna sahipseniz veya uzun vadeli dayanıklılık için daha da güvenli bir temel istiyorsanız faydalı olabilir.",
+          "Buna bir örnekle bakalım: Bir köprü inşa ediyorsunuz ve dört destek kirişiyle güvenli, güçlü bir köprü inşa edebilirsiniz. Ancak zemin izin veriyorsa, iki ekstra destek ekleyerek gücü ve dengeyi daha da artırabilir ve onu daha da dayanıklı hale getirebilirsiniz.",
+          "Karar kemik yapısına, genel ağız sağlığı durumunuza ve ısırma kuvvetinize bağlıdır. Vakanızın değerlendirilmesinin ardından cerrahınız vakanıza en uygun seçeneği önerecektir. Evet, diş hekimliğinde her vaka benzersizdir ve uzman planlaması ile değerlendirme gerektirir.",
+          "Her iki tedavi protokolü de ömür boyu harika sonuçlar sunar. İşin anahtarı, vakanızı titizlikle değerlendirecek doğru uzmanı bulmaktır. Master Smile Studio Kliniğinde tüm hastalarımız için yaptığımız tam olarak budur."
+        ]
+      },
+      {
+        "q": "Diş implantı için yeterli kemik dokum yoksa yine de implant yaptırabilir miyim?",
+        "a": [
+          "Çoğu durumda evet! Daha önce kemik kaybetmiş olsanız bile implant yaptırabileceksiniz. Bu, hastalarda düzenli olarak karşılaşılan yaygın bir durumdur; özellikle de diş kaybının uzun süredir mevcut olduğu vakalarda. Ancak bunun etrafından dolaşan gelişmiş tedavi çözümleri mevcuttur.",
+          "Genellikle All-on-4 veya All-on-6 gibi tedavi protokollerinde, tutuculuk açısından kemiğin doğal olarak daha güçlü olduğu bölgelere implant yerleştiririz; böylece greftlemeye gerek kalmayabilir.",
+          "Ancak kemik kaybı nedeniyle sinüsleriniz çene kemiğinize kadar uzanmışsa kemik greftlemesi adı verilen bir işlem tercih edilir. Bu prosedürde, implantasyon için o bölgede kemik oluşturmak amacıyla tıbbi sınıf kemik dokusu yerleştirmek üzere sinüs boşluğunuz içinde yer açmayı içeren sinüs lifting adı verilen cerrahi bir müdahale vardır.",
+          "Bunu bir evi yenilemek gibi düşünebilirsiniz. Temel bir noktada yeterince güçlü değilse, bir uzman yapıyı güvenli bir şekilde desteklemenin başka bir yolunu bulur. İmplant tedavisinde de durum tamamen aynıdır. Tedavi planınızı ihtiyaçlarınıza ve mevcut sağlık durumunuza uyacak şekilde uyarlıyoruz.",
+          "Konsültasyonunuz sırasında mevcut durumu değerlendirmek ve ihtiyaçlarınız için en iyi ve en konforlu çözümü sunmak üzere 3D taramalar yapacağız. Size elimizden gelen en iyi şekilde hizmet etmek için neyi, nasıl ve ne zaman yapacağımızı her zaman açıklayacağız."
+        ]
+      },
+      {
+        "q": "İmplant markaları gerçekten önemli mi? (Neden fiyat farkı var?)",
+        "a": [
+          "Elbette önemlidir. Köklü ve uzun süredir faaliyet gösteren implant markaları, isimlerinin arkasında onlarca yıllık araştırma ve geliştirmenin yanı sıra katı üretim standartlarına ve küresel destek ağlarına sahiptir. Bu, kendi ülkenize döndüğünüzde bile implantlarınız için bakıma ihtiyaç duyarsanız uyumlu bileşenleri çok daha kolay bulabileceğiniz anlamına gelir.",
+          "Daha az bilinen veya çok düşük maliyetli markalar aynı güvenilirliği sunmayabilir. Bir araba satın alırken hayal edin; güvenilir, uluslararası bir marka nereye giderseniz gidin yedek parça ve servis merkezleri bulacağınız konusunda size güven verir.",
+          "Ancak burada kesinlikle dikkate alınması gereken ana nokta, tercih ettiğiniz çene cerrahının uzmanlığıdır. Bir hasta olarak doktorunuzu akıllıca seçmeniz çok önemlidir çünkü marka ne olursa olsun, en iyi implant markaları bile uygun deneyime ve cerrahi uzmanlığa sahip olmayan diş hekimleri tarafından uygulandığında ameliyattan sonra başarısız olabilir.",
+          "Başarılı bir implantasyon, çene kemiğinizde implantlarınızı yerleştirmek için en uygun yerin neresi olduğunu bilmek, greft adı verilen kemik tozuyla güçlendirmek için sinüsünüzün kaldırılmasına gerek olup olmadığı gibi kilit noktaları içerir.",
+          "Cerrahi uzmanlıktan ve köklü implant markalarından kısmak için mümkün olan en düşük maliyete gittiğinizi hayal edin. Kimse sağlığıyla kumar oynamak istemez. En azından iş ahlakımız ve sağduyumuz bize bunu söylüyor."
+        ]
+      },
+      {
+        "q": "All-on-4 / All-on-6 gibi tam ağız implant tedavilerinde bazı klinikler 10 günde tamamlayabileceklerini söylerken siz neden 3 günde yapabileceğinizi söylüyorsunuz?",
+        "a": [
+          "Harika bir soru. Tedavi süresindeki fark, tedavide kullanılan tekniğe bağlıdır.",
+          "Master Smile Studio'da kemiğinize ve diş etlerinize aşırı cerrahi travmayı önleyen modern, minimal invaziv bir yöntem izliyoruz. Ameliyatınızı ilk gününüzde gerçekleştiriyor ve iyileşme başlıklarınızı takıyoruz. Bu iyileşme başlıklarını “gingivaformer” veya “iyileşme abutmentı” olarak duymuş olabilirsiniz. Bunlar, implantın etrafındaki sert ve yumuşak dokunun bir diş restorasyonu ile tamamlanacak şekilde düzgün bir şekilde iyileşmesini sağlar.",
+          "İyileşme başlıklarınız takıldıktan sonra, implantlarınızdaki vidalara takılacak olan sabit geçici dişlerinizi üretmek için ölçünüzü alıyoruz. Üçüncü gününüzde sabit geçici dişlerinizi takıyoruz ve evinize uçabiliyorsunuz."
+        ]
+      },
+      {
+        "q": "İmplant tedavim için neden kliniğinizi ikinci kez ziyaret etmek zorundayım?",
+        "a": [
+          "Diş implantı tedavi protokolü tüm dünyada aynıdır. İki ziyarette ele alınır. Bu temel olarak vücudunuzun ihtiyaç duyduğu cerrahi iyileşme süresi ve kemiğinizin implantla tamamen kaynaşması (osteointegrasyon adı verilen bir süreç) nedeniyledir.",
+          "İlk ziyaretinizde diş implantlarınızı cerrahi aletler kullanarak çene kemiğinize yerleştireceğiz. Bunu takiben vücudunuzun implantın kemik dokunuzla kaynaşması için genellikle yaklaşık 3 ila 6 ay zamana ihtiyacı olacaktır. Bu iyileşme adımı tedavinizin uzun vadeli başarısı için çok önemlidir.",
+          "Bu operasyonu bir ağaç dikmek gibi hayal edin: Önce tohumu eker ve tohumunuzun kök salması için zaman tanırsınız. Ağacınız ancak güçlü ve stabil hale geldikten sonra tamamen büyüyebilecek ve dallarını destekleyebilecektir. Diş restorasyonunuz bu süreç tamamlandıktan sonra implantınızın üzerine eklenecektir."
+        ]
+      },
+      {
+        "q": "Abutment nedir? Zaten implantım varsa ve kuron takılacaksa neden bir abutment’a ihtiyacım var?",
+        "a": [
+          "Abutment, görünür diş restorasyonunuz için implant vidanızın üzerine yerleştirilen kuron ile implant arasında bağlantı kurmak için kullanılan bir implantın konektör parçasıdır.",
+          "Ağzınıza daha önce cerrahi olarak yerleştirilmiş implantlarınız olabilir. Ancak kuronunuzu güvenli bir şekilde yerine takabilmemiz için abutmentlara yine de ihtiyaç vardır. Abutment, kuronun düzgün oturmasını, stabil kalmasını ve doğal bir diş pozisyonuna sahip olmasını sağlar.",
+          "Mevcut implantlarınız bir süre önce farklı bir sağlayıcı tarafından yerleştirilmişse, laboratuvar çalışmamız tarafından üretilen ve ısırma tipinize uyumlu kuron tasarımıyla eşleşen yeni özel abutmentlar kullanmamız gerekebilir."
+        ]
+      }
+    ]
+  }
 }

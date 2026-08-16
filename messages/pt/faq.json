@@ -1,46 +1,232 @@
 {
-  "eyebrow": "✦ O que Precisa Saber",
-  "title": "Perguntas Frequentes & Guia da Clínica",
-  "subtitle": "Descubra tudo sobre o Master Smile Studio, nossos tratamentos especializados, transparência de preços e agendamento.",
-  "aboutHeading": "Clínica Dentária Master Smile Studio",
-  "aboutP1": "O Master Smile Studio é uma clínica dentária completa com equipamentos de última geração e padrões internacionais de estética dentária.",
-  "aboutP2": "Possuímos múltiplos consultórios equipados para oferecer atendimento rápido e sem filas.",
-  "aboutP3": "Oferecemos 16 especialidades dentárias, desde facetas de zircônio até implantes All-on-4 / All-on-6 e Hollywood Smile.",
-  "aboutP4": "Atendemos milhares de pacientes de mais de 40 países com avaliação de 4.9/5 no Google.",
+  "eyebrow": "✦ O Que Precisa Saber",
+  "title": "Perguntas Frequentes e Guia Clínico",
+  "subtitle": "Descubra tudo sobre a Master Smile Studio, nossos procedimentos especializados, preços transparentes e agendamentos.",
+  "aboutHeading": "Policlínica Odontológica Master Smile Studio",
+  "aboutP1": "A Master Smile Studio é uma policlínica odontológica moderna que opera sob padrões internacionais de odontologia estética e saúde bucal.",
+  "aboutP2": "Nossa estrutura de policlínica oferece comodidade real: múltiplos consultórios especializados permitem atendimento simultâneo sem filas de espera.",
+  "aboutP3": "Oferecemos 16 tratamentos sob o mesmo teto, desde coroas de zircônia e implantes All-on-4 / All-on-6 até design de sorriso.",
+  "aboutP4": "Atendemos milhares de pacientes de mais de 40 países com avaliação média de 4.9/5 no Google.",
   "appointmentHeading": "Agendamento e Primeira Consulta",
-  "appointmentP1": "Agende sua consulta por telefone, WhatsApp ou formulário online.",
-  "appointmentP2": "A primeira visita includes exame preliminar gratuito e radiografia panorâmica digital de baixa radiação.",
-  "appointmentP3": "Ao final, você recebe um plano de tratamento por escrito e orçamento transparente sem custos surpresa.",
-  "appointmentP4": "Em casos de dor aguda, atendemos no mesmo dia com prioridade.",
+  "appointmentP1": "O agendamento pode ser feito por telefone, WhatsApp ou formulário online.",
+  "appointmentP2": "A primeira consulta inclui avaliação e radiografia panorâmica digital com baixa emissão de radiação.",
+  "appointmentP3": "Ao final, você recebe um plano de tratamento detalhado e valores transparentes sem custos ocultos.",
+  "appointmentP4": "Para urgências ou dores agudas, disponibilizamos atendimento prioritário no mesmo dia.",
   "seoTags": [
     "Master Smile Studio",
     "Agendamento Master Smile Studio",
-    "Clínica Dentária Estética",
-    "Preços Zircônio Dentário",
+    "Policlínica Odontológica",
+    "Preços Coroas Zircônia",
     "Implantes All-on-4 Turquia",
     "Consulta Gratuita",
-    "Radiografia Digital"
+    "Raio-X Digital"
   ],
   "faqList": [
     {
-      "question": "A primeira consulta e a radiografia digital são gratuitas?",
-      "answer": "Sim, no Master Smile Studio a primeira avaliação e o diagnóstico são gratuitos."
+      "question": "A primeira consulta e o raio-X são gratuitos?",
+      "answer": "Sim, na Master Smile Studio a primeira avaliação preliminar e o exame são gratuitos."
     },
     {
       "question": "Quanto tempo dura o tratamento de transformação do sorriso?",
-      "answer": "Com a tecnologia CAD/CAM, facetas e coroas de zircônio são concluídas em apenas 3 a 5 dias úteis."
+      "answer": "Graças à tecnologia digital CAD/CAM, coroas de zircônia e facetas E-Max são concluídas em 3 a 5 dias úteis."
     },
     {
       "question": "Como é organizada a viagem para pacientes internacionais?",
-      "answer": "Oferecemos traslados VIP do aeroporto, reservas em hotéis 5 estrelas e assistentes bilíngues."
+      "answer": "Oferecemos traslados VIP do aeroporto, reservas em hotéis 5 estrelas e assistência em múltiplos idiomas."
     },
     {
-      "question": "Os tratamentos possuem garantia oficial?",
-      "answer": "Sim, todos os implantes e peças de zircônio possuem certificados internacionais e garantia oficial por escrito."
+      "question": "Os tratamentos possuem garantia e certificados?",
+      "answer": "Sim, todos os implantes e coroas possuem certificados internacionais e garantia oficial da clínica."
     },
     {
-      "question": "Posso ser atendido no mesmo dia em caso de emergência?",
-      "answer": "Sim, em casos de dor aguda ou urgência atendemos no mesmo dia."
+      "question": "Posso agendar no mesmo dia em caso de dor urgente?",
+      "answer": "Sim, casos de dor aguda têm prioridade de atendimento no mesmo dia."
     }
-  ]
+  ],
+  "treatmentFaq": {
+    "title": "Perguntas Frequentes Sobre Este Tratamento",
+    "subText": "Tem dúvidas sobre o tratamento? Desde prazos até custos e recuperação, estamos aqui para orientá-lo com respostas claras e suporte especializado em cada etapa.",
+    "items": [
+      {
+        "q": "O meu plano de tratamento ou o preço fornecido mudarão quando eu chegar?",
+        "a": [
+          "Boa pergunta. Infelizmente, muitos pacientes que viajam para tratamento enfrentam práticas antiéticas em algumas clínicas, como cobranças surpresa.",
+          "O plano e o preço que compartilhamos com você são preparados com cuidado com base nas fotos, radiografias e nas suas expectativas enviadas antes da viagem. Ao chegar, confirmamos tudo presencialmente em um exame clínico antes de iniciar o tratamento.",
+          "Às vezes, um pequeno detalhe que não pôde ser visto nas radiografias pode aparecer durante o exame presencial (como a necessidade de enxerto ósseo ou elevação do seio maxilar). Ao contrário da maioria das clínicas, a possibilidade e os custos desses procedimentos são compartilhados previamente com total transparência.",
+          "Se isso acontecer, explicaremos tudo claramente, mostraremos a questão no monitor e discutiremos todas as opções antes de realizar qualquer alteração. Nada é feito sem o seu consentimento expresso.",
+          "Seu plano de tratamento e valor permanecerão os mesmos, a menos que descubramos algo novo durante a consulta presencial."
+        ]
+      },
+      {
+        "q": "Vocês ajudam com a acomodação?",
+        "a": [
+          "Sim, claro. Nossos pacientes viajam frequentemente do exterior, por isso garantimos que você se sinta acolhido não apenas com o tratamento dentário, mas com toda a estadia em Istambul. Recomendamos hotéis parceiros de confiança próximos à clínica e podemos auxiliar na sua reserva.",
+          "Nosso objetivo é tornar a sua viagem o mais tranquila e confortável possível para que você possa aproveitar seu tempo na cidade e focar no seu novo sorriso."
+        ]
+      },
+      {
+        "q": "É seguro viajar para a Turquia?",
+        "a": [
+          "Sim! A Turquia é um dos destinos turísticos mais procurados do mundo e recebe milhões de visitantes internacionais com segurança todos os anos. Istambul possui infraestrutura hospitalar de primeiro nível, hotéis modernos e transporte seguro.",
+          "Nossa clínica disponibiliza transfers privativos VIP e acomodações selecionadas para que você se sinta seguro e confortável durante toda a estadia."
+        ]
+      },
+      {
+        "q": "Quais materiais são usados para as coroas dentárias na sua clínica?",
+        "a": [
+          "Utilizamos as tecnologias e protocolos mais avançados da odontologia moderna.",
+          "Para facetas e lentes de contato, utilizamos a cerâmica suíça Ivoclar E-Max, enquanto para próteses sobre implantes All-on-4 / All-on-6 preferimos a zircônia monolítica austríaca/alemã Amann Girrbach."
+        ]
+      },
+      {
+        "q": "Posso ver o formato e a cor dos meus dentes antes de serem fabricados?",
+        "a": [
+          "Sim, com certeza. Durante o planejamento digital do sorriso (Digital Smile Design), apresentamos uma simulação 3D dos seus dentes. Com o modelo de mock-up, você pode experimentar e visualizar tanto a cor quanto o formato diretamente na boca antes da confecção definitiva.",
+          "Após a confecção final, as peças não podem ser clareadas, mas podem ser levemente escurecidas caso necessário. Por isso, definimos todos os detalhes com você antecipadamente."
+        ]
+      },
+      {
+        "q": "Sentirei muita dor após a cirurgia de implante?",
+        "a": [
+          "Nos primeiros dias pode haver um leve inchaço ou sensibilidade, semelhante ao pós-operatório de uma extração dental simples. Isso é facilmente controlado com os analgésicos e anti-inflamatórios receitados por nossa equipe.",
+          "No primeiro dia da cirurgia, fornecemos bolsas de gelo para aplicação (5 minutos com gelo e 5 minutos de pausa) para prevenir edemas. O desconforto costuma diminuir rapidamente nas primeiras 48 horas.",
+          "Durante a cirurgia em si, você não sente nenhuma dor graças à anestesia local de alta precisão e opções de sedação."
+        ]
+      },
+      {
+        "q": "Vocês aceitam pagamentos online?",
+        "a": [
+          "Nossa clínica oferece diversas formas de pagamento seguras e práticas para atender às necessidades dos nossos pacientes internacionais.",
+          "Para mais detalhes sobre formas de pagamento e transferências internacionais, entre em contato conosco."
+        ]
+      },
+      {
+        "q": "Os seus pacotes incluem hotéis e traslados?",
+        "a": [
+          "O conteúdo dos pacotes varia conforme o tratamento escolhido. Nossos pacotes de arco total (All-on-4 / All-on-6) incluem hospedagem em hotel 4/5 estrelas com café da manhã e transporte privativo VIP."
+        ]
+      },
+      {
+        "q": "Posso pagar as taxas de tratamento ou pacotes em parcelas?",
+        "a": [
+          "Em nossa clínica, o pagamento é dividido confortavelmente entre as duas visitas necessárias para o tratamento em Istambul."
+        ]
+      },
+      {
+        "q": "Vocês oferecem garantia ou seguro?",
+        "a": [
+          "Todos os procedimentos contam com garantia oficial da clínica dentro dos prazos e condições estabelecidos. Nossos implantes de padrão ouro (como Straumann) possuem garantia vitalícia internacional e passaporte de identificação."
+        ]
+      },
+      {
+        "q": "Posso adiar meus tratamentos dentários com segurança?",
+        "a": [
+          "Adiar o tratamento é possível, mas não é a escolha mais recomendada. Problemas bucais são progressivos e a ausência dentária prolongada leva à reabsorção e perda óssea no maxilar.",
+          "Quanto mais tempo se espera, maior o risco de o tratamento se tornar mais complexo e exigir cirurgias prévias de enxerto.",
+          "O ideal é não protelar; caso tenha dúvidas sobre datas, conversaremos para elaborar um cronograma conveniente para você."
+        ]
+      },
+      {
+        "q": "Qual coroa é melhor sobre implantes: E-Max ou Coroa de Zircônia?",
+        "a": [
+          "Para implantes e áreas posteriores com forte carga mastigatória, a zircônia monolítica é a opção mais resistente, estável e segura.",
+          "As coroas E-Max são em porcelana pura e oferecem alta translucidez e naturalidade, sendo indicadas principalmente para os dentes anteriores na linha do sorriso.",
+          "A zircônia atua como padrão de durabilidade absoluta sobre implantes, enquanto o E-Max oferece estética superior para dentes frontais individuais."
+        ]
+      },
+      {
+        "q": "O que devo fazer se uma prótese All-on-6 quebrar?",
+        "a": [
+          "Caso ocorra qualquer trinca ou fratura na sua prótese All-on-6, entre em contato imediato com a nossa clínica.",
+          "O reparo ou substituição será realizado por nossos especialistas com garantia. Evite qualquer tentativa de conserto caseiro para não danificar os implantes e a gengiva."
+        ]
+      },
+      {
+        "q": "As próteses All-on-6 são feitas de resina, acrílico ou material plástico?",
+        "a": [
+          "Nossas próteses definitivas All-on-6 são confeccionadas em zircônia monolítica ou porcelana de alta resistência, garantindo estética impecável e longevidade.",
+          "Resina e acrílico são empregados apenas nos dentes provisórios durante o período de cicatrização óssea."
+        ]
+      },
+      {
+        "q": "A sedação está disponível na sua clínica para tratamento com implantes dentários? Quais tipos estão disponíveis?",
+        "a": [
+          "Sim, o conforto e a tranquilidade do paciente são nossa prioridade máxima.",
+          "Disponibilizamos três opções: Anestesia local (anestesia apenas a área operada), Sedação consciente IV (o paciente permanece calmo e relaxado durante todo o ato) e Anestesia geral com presença contínua de médico anestesiologista."
+        ]
+      },
+      {
+        "q": "Por que o implante é preferido em vez de uma ponte em casos de perda dentária?",
+        "a": [
+          "O implante não necessita do desgaste ou desgaste dos dentes vizinhos saudáveis para servir de pilar de apoio.",
+          "Além disso, o implante estimula o osso maxilar exatamente como a raiz natural, evitando a reabsorção óssea e preservando os contornos faciais."
+        ]
+      },
+      {
+        "q": "Cirurgias de implante podem ser realizadas em pacientes com doenças como HIV, Hepatite etc.?",
+        "a": [
+          "A resposta é sim. Desde que a saúde geral esteja estável e monitorada por seu médico, pacientes com HIV ou Hepatite podem receber implantes com total segurança.",
+          "Seguimos rigorosos protocolos internacionais de biossegurança e esterilização, mantendo absoluto sigilo sobre seu histórico médico."
+        ]
+      },
+      {
+        "q": "Pacientes com condições crônicas, como diabetes, podem colocar implantes?",
+        "a": [
+          "Com certeza! O fator decisivo é o controle dos níveis de glicose e a estabilidade do exame de hemoglobina glicada (HbA1c).",
+          "Solicitamos exames laboratoriais prévios para planejar o procedimento com a máxima segurança clínica."
+        ]
+      },
+      {
+        "q": "Ainda posso colocar implantes se eu for fumante?",
+        "a": [
+          "Sim, ser fumante não impede o procedimento, mas o tabaco pode reduzir o fluxo sanguíneo e interferir na cicatrização.",
+          "Recomendamos diminuir ou pausar o fumo antes e depois da cirurgia para proporcionar as melhores condições de osseointegração."
+        ]
+      },
+      {
+        "q": "O que acontece se o implante falhar?",
+        "a": [
+          "Os implantes apresentam índice de sucesso superior a 98%. Em casos raros de não integração, o implante é removido, o local é tratado e um novo implante é instalado sem custos cirúrgicos adicionais sob nossa garantia."
+        ]
+      },
+      {
+        "q": "Qual é a diferença entre os tratamentos All-on-4 e All-on-6? Como vocês decidem qual é o certo para mim?",
+        "a": [
+          "A diferença é a quantidade de implantes: 4 no All-on-4 e 6 no All-on-6.",
+          "O All-on-6 oferece maior estabilidade e distribuição de força mastigatória em ossos com boa densidade, enquanto o All-on-4 é ideal para pacientes com perda óssea posterior.",
+          "Nossa equipe cirúrgica analisa as tomografias 3D para indicar a técnica mais indicada para a sua anatomia."
+        ]
+      },
+      {
+        "q": "Se eu não tiver tecido ósseo suficiente para implantes dentários, ainda posso colocá-los?",
+        "a": [
+          "Na grande maioria dos casos, sim! Realizamos enxertos ósseos avançados, levantamento de seio maxilar e implantes zigomáticos para viabilizar dentes fixos mesmo com pouco osso."
+        ]
+      },
+      {
+        "q": "As marcas de implantes realmente importam? (Por que há diferença de preço?)",
+        "a": [
+          "Sim, marcas líderes mundiais (como Straumann) possuem décadas de respaldo científico, titânio de grau médico superior e componentes universais em qualquer país."
+        ]
+      },
+      {
+        "q": "Para tratamentos de boca completa como All-on-4 / All-on-6, por que algumas clínicas dizem que levam 10 dias enquanto vocês dizem 3 dias?",
+        "a": [
+          "Isso se deve ao nosso fluxo de trabalho digital minimamente invasivo e laboratório CAD/CAM próprio. Operamos no dia 1 e fixamos os dentes provisórios definitivos no dia 3."
+        ]
+      },
+      {
+        "q": "Por que tenho que visitar sua clínica uma segunda vez para o meu tratamento com implantes?",
+        "a": [
+          "O protocolo biológico exige de 3 a 6 meses para que o implante se funda completamente ao osso (osseointegração). Na segunda visita, instalamos as próteses finais de zircônia permanente."
+        ]
+      },
+      {
+        "q": "O que é um pilar (abutment)? Por que preciso de um se já tenho implantes e vou colocar uma coroa?",
+        "a": [
+          "O abutment é o conector de precisão que une o parafuso de titânio fixado no osso à coroa dentária visível, garantindo suporte, estabilidade e formato gengival natural."
+        ]
+      }
+    ]
+  }
 }

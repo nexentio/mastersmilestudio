@@ -42,5 +42,203 @@
       "question": "Kann ich bei Schmerzen am selben Tag behandelt werden?",
       "answer": "Ja, Notfallpatienten mit Schmerzen werden noch am selben Tag bevorzugt aufgenommen."
     }
-  ]
+  ],
+  "treatmentFaq": {
+    "title": "Häufig Gestellte Fragen zu Dieser Behandlung",
+    "subText": "Haben Sie Fragen zu dieser Behandlung? Sie sind nicht allein. Von Zeitplänen bis hin zu Kosten und Genesung – wir begleiten Sie mit klaren Antworten, fachkundiger Beratung und persönlicher Unterstützung bei jedem Schritt.",
+    "items": [
+      {
+        "q": "Ändert sich mein Behandlungsplan oder der angebotene Preis bei meiner Ankunft?",
+        "a": [
+          "Gute Frage. Leider erleben viele Patienten, die für ihre Behandlung ins Ausland reisen, unethische Praktiken in manchen Kliniken, wie z. B. überraschende Zusatzkosten.",
+          "Der Behandlungsplan und der Preis, den wir Ihnen mitteilen, werden sorgfältig auf der Grundlage Ihrer Fotos, Röntgenaufnahmen und Erwartungen erstellt. Nach Ihrer Ankunft bestätigen wir alles im Rahmen einer persönlichen Untersuchung vor Ort, bevor wir mit der Behandlung beginnen.",
+          "Manchmal kann bei der klinischen Untersuchung jedoch ein kleines Detail sichtbar werden, das auf den Vorab-Bildern nicht zu erkennen war – beispielsweise die Notwendigkeit eines Knochenaufbaus oder Sinuslifts. Im Gegensatz zu vielen anderen Kliniken werden die Kosten und Möglichkeiten solcher Details bereits vorab transparent in Ihrem Plan aufgeführt.",
+          "Sollte dies der Fall sein, erklären wir es Ihnen ausführlich, zeigen Ihnen den Befund und besprechen alle Optionen, bevor Änderungen vorgenommen werden. Nichts geschieht ohne Ihre ausdrückliche Zustimmung.",
+          "Ihr Behandlungsplan und Preis bleiben genau wie vereinbart, sofern bei der Kontrolluntersuchung keine neuen anatomischen Besonderheiten festgestellt werden."
+        ]
+      },
+      {
+        "q": "Helfen Sie mir bei der Unterkunft?",
+        "a": [
+          "Ja, selbstverständlich. Da unsere Patienten regelmäßig aus dem Ausland anreisen, unterstützen wir Sie nicht nur bei der zahnärztlichen Behandlung, sondern auch bei Ihrem gesamten Aufenthalt in Istanbul. Wir empfehlen bewährte Partnerhotels in direkter Kliniknähe und übernehmen auf Wunsch gerne die Buchung für Sie.",
+          "Unser Ziel ist es, Ihre Reise so reibungslos und stressfrei wie möglich zu gestalten, damit Sie sich ganz auf Ihre Behandlung konzentrieren und Ihren Aufenthalt in der Stadt genießen können."
+        ]
+      },
+      {
+        "q": "Ist es sicher, für eine Zahnbehandlung in die Türkei zu reisen?",
+        "a": [
+          "Ja! Die Türkei ist eines der beliebtesten Reiseziele weltweit und Millionen von Touristen reisen jedes Jahr sicher hierher. Großstädte wie Istanbul sind mit modernen Kliniken, erstklassigen Hotels, Chauffeur-Diensten und weltberühmten Sehenswürdigkeiten hervorragend auf internationale Patienten vorbereitet.",
+          "Wie in jeder Weltmetropole ist es ratsam, normale Reisevorkehrungen zu treffen. Unsere Klinik organisiert verlässliche VIP-Transfers und sichere Unterkünfte, damit Sie sich während Ihres gesamten Aufenthalts rundum geborgen und geschützt fühlen."
+        ]
+      },
+      {
+        "q": "Welche Materialien werden für Zahnkronen in Ihrer Klinik verwendet?",
+        "a": [
+          "Wir nutzen die modernsten Technologien und Behandlungsprotokolle der modernen Zahnmedizin.",
+          "Für Veneers und ästhetische Kronen wird Schweizer Ivoclar E-Max verwendet, während für All-on-4 / All-on-6 Implantatbrücken monolithisches Zirkonium der Spitzenmarke Amann Girrbach (Österreich/Deutschland) bevorzugt wird."
+        ]
+      },
+      {
+        "q": "Kann ich Form und Farbe meiner Zähne sehen, bevor sie hergestellt werden?",
+        "a": [
+          "Ja, absolut. Beim digitalen Smile Design zeigen wir Ihnen eine Simulation Ihrer neuen Zähne, bevor sie hergestellt werden. Mit einem „Mock-Up“-Modell können Sie sowohl die Zahnfarbe als auch die Form direkt in Ihrem Mund begutachten. Erst nach Ihrer Freigabe werden die endgültigen Zähne produziert.",
+          "Ein wichtiger Hinweis: Nach der Fertigstellung können Restaurationen nicht weiter aufgehellt, bei Bedarf aber leicht abgedunkelt werden. Deshalb besprechen wir alle Details vorab ausführlich mit Ihnen, damit das Endergebnis exakt Ihren Wünschen entspricht.",
+          "Kurz gesagt: Ja, Sie sehen vorab eine Vorschau und haben die volle Kontrolle über das Aussehen Ihrer neuen Zähne."
+        ]
+      },
+      {
+        "q": "Werde ich nach der Implantatoperation starke Schmerzen haben?",
+        "a": [
+          "In den ersten Tagen können leichte Schwellungen oder ein leichtes Wundgefühl auftreten, ähnlich wie nach einer normalen Zahnziehung. Dies lässt sich mit den von uns verschriebenen Schmerzmitteln und entzündungshemmenden Medikamenten hervorragend kontrollieren.",
+          "Am ersten Operationstag erhalten Sie von uns Kühlpads, die Sie im Rhythmus von 5 Minuten Auflegen und 5 Minuten Pause anwenden. Dies beugt Schwellungen effektiv vor. Die stärksten Empfindungen klingen typischerweise innerhalb der ersten 48 Stunden rasch ab.",
+          "Während des Eingriffs selbst verspüren Sie dank moderner Lokalanästhesie und optionaler Sedierung keinerlei Schmerzen."
+        ]
+      },
+      {
+        "q": "Unterstützen Sie Online-Zahlungen?",
+        "a": [
+          "Unsere Klinik bietet eine Vielzahl bequemer Zahlungsmöglichkeiten, die auf die Bedürfnisse internationaler Patienten zugeschnitten sind.",
+          "Für detaillierte Informationen zu Zahlungsmethoden und Banküberweisungen können Sie uns jederzeit gerne kontaktieren."
+        ]
+      },
+      {
+        "q": "Beinhalten Ihre Pakete Hotels und Transfers?",
+        "a": [
+          "Die Inhalte unserer Pakete richten sich nach der gewählten Behandlung.",
+          "Alle All-on-4/6 und Vollmund-Implantat-Pakete beinhalten standardmäßig 4- bis 5-Sterne-Hotelunterkunft (Übernachtung mit Frühstück) und private VIP-Transfers zwischen Flughafen, Hotel und Klinik."
+        ]
+      },
+      {
+        "q": "Kann ich meine Behandlungs- oder Paketgebühren in Raten zahlen?",
+        "a": [
+          "In unserer Klinik bieten wir flexible Zahlungspläne an, die auf Ihre Behandlungsbesuche aufgeteilt werden können.",
+          "Für genaue Details zu Zahlungsstaffelungen beraten wir Sie gerne persönlich."
+        ]
+      },
+      {
+        "q": "Bieten Sie Garantie oder Versicherung an?",
+        "a": [
+          "Alle Behandlungen in unserer Klinik unterliegen einer offiziellen Garantie unter festgelegten Bedingungen.",
+          "Unsere Premium-Implantatmarken (wie Straumann) verfügen über eine lebenslange weltweite Herstellergarantie inklusive individuellem Implantatpass."
+        ]
+      },
+      {
+        "q": "Kann ich meine Zahnbehandlungen sicher aufschieben?",
+        "a": [
+          "Ein Aufschieben ist möglich, aber selten ratsam. Zahnprobleme verlaufen meist schleichend und schmerzlos, führen im Laufe der Zeit jedoch zu Infektionen, Zahnverlust und fortschreitendem Knochenabbau.",
+          "Je länger Sie warten, desto größer ist das Risiko, dass später aufwendige und kostspielige Knochenaufbauten notwendig werden.",
+          "Es empfiehlt sich, die Behandlung zeitnah durchzuführen. Bei Fragen zum optimalen Zeitpunkt erstellen wir gerne einen maßgeschneiderten Zeitplan für Sie."
+        ]
+      },
+      {
+        "q": "Welche Krone ist auf Implantaten besser: E-Max oder Zirkonkrone?",
+        "a": [
+          "Für Implantate ist Zirkon in der Regel die stabilere und sicherere Wahl. Es ist extrem widerstandsfähig und hält dem hohen Kaudruck im Seitenzahnbereich sowie bei Ganzkieferbrücken mühelos stand.",
+          "E-Max-Kronen bestehen aus Vollkeramik und bieten eine unübertroffene Transluzenz und natürliche Lichtbrechung. Daher werden sie vor allem für Frontzähne im sichtbaren Lächelbereich empfohlen.",
+          "Zirkon ist der universelle Goldstandard für Stabilität auf Implantaten, während E-Max bei einzelnen Frontzähnen für maximale Natürlichkeit sorgt."
+        ]
+      },
+      {
+        "q": "Was mache ich, wenn eine All-on-6 Prothese bricht?",
+        "a": [
+          "Sollte ein Riss oder Bruch an Ihrer All-on-6 Prothese auftreten, ist es wichtig, zeitnah unsere Klinik zu kontaktieren.",
+          "Reparaturen oder Neuanfertigungen werden von unseren spezialisierten Zahnärzten fachgerecht und im Rahmen der Garantie durchgeführt. Bitte unternehmen Sie keine Selbstreparaturen, um Implantate und Zahnfleisch nicht zu beschädigen.",
+          "Für dringende Termine oder Beratungen steht Ihnen unser Team jederzeit direkt zur Verfügung."
+        ]
+      },
+      {
+        "q": "Werden All-on-6 Prothesen aus Harz, Acryl oder Kunststoff hergestellt?",
+        "a": [
+          "Dauerhafte All-on-6 Versorgungen werden aus hochfestem monolithischem Zirkon oder Porzellan gefertigt, um höchste Ästhetik und jahrzehntelange Haltbarkeit zu garantieren.",
+          "Kunststoff-, Acryl- oder Kompositmaterialien werden ausschließlich für die temporären Zähne während der Einheilphase verwendet.",
+          "Das ideale Material für Ihren dauerhaften Zahnersatz wird nach einer ausführlichen 3D-Diagnostik in unserer Klinik festgelegt."
+        ]
+      },
+      {
+        "q": "Ist in Ihrer Klinik eine Sedierung für Zahnimplantate verfügbar? Welche Arten von Sedierung gibt es?",
+        "a": [
+          "Selbstverständlich. Der Patientenkomfort steht bei uns an erster Stelle, insbesondere bei Patienten mit Zahnarztangst.",
+          "Wir bieten drei Sedierungsstufen an: Lokalanästhesie (schaltet das Schmerzempfinden im Behandlungsbereich vollständig aus), Dämmerschlaf / IV-Sedierung (Sie bleiben entspannt und ruhig bei vollem Bewusstsein) und Vollnarkose unter ständiger Aufsicht eines Facharztes für Anästhesie.",
+          "Vor der Behandlung besprechen wir alle Optionen ausführlich mit Ihnen, um die sicherste und angenehmste Lösung für Sie zu wählen."
+        ]
+      },
+      {
+        "q": "Warum wird bei Zahnverlust ein Implantat gegenüber einer Brücke bevorzugt?",
+        "a": [
+          "Implantate sind herkömmlichen Zahnbrücken vorzuziehen, da sie eine dauerhafte Lösung bieten, ohne gesunde Nachbarzähne zu beschädigen.",
+          "Für eine Brücke müssen die gesunden Nachbarzähne abgeschliffen werden, um als Pfeiler zu dienen. Ein Implantat ersetzt die Zahnwurzel eigenständig, sodass Ihre gesunden Zähne unberührt bleiben.",
+          "Darüber hinaus stimulieren Implantate den Kieferknochen wie eine natürliche Wurzel und verhindern so den gefürchteten Knochenschwund und Veränderungen der Gesichtszüge."
+        ]
+      },
+      {
+        "q": "Können Implantatoperationen oder andere Behandlungen bei Patienten mit Krankheiten wie HIV, Hepatitis usw. durchgeführt werden?",
+        "a": [
+          "Ja. Sofern der allgemeine Gesundheitszustand stabil und gut überwacht ist, können Patienten mit Erkrankungen wie HIV oder Hepatitis sicher mit Zahnimplantaten versorgt werden.",
+          "Entscheidend sind die Immunwerte, die Viruslast und eine enge Abstimmung mit Ihrem behandelnden Arzt.",
+          "Wir wenden bei allen Patienten strengste universelle Sterilisations- und Infektionsschutzprotokolle an. Ihre Privatsphäre und medizinischen Daten werden streng vertraulich behandelt."
+        ]
+      },
+      {
+        "q": "Können Patienten mit chronischen Erkrankungen wie Diabetes Implantate erhalten?",
+        "a": [
+          "Natürlich! Bei gut eingestelltem Diabetes (stabilen Blutzuckerwerten und gesundem HbA1c-Wert) heilen Zahnimplantate hervorragend ein.",
+          "Wir bitten Sie vorab um Ihre aktuellen Blutwerte, um Ihren individuellen Eingriff unter maximalen Sicherheitsbedingungen zu planen."
+        ]
+      },
+      {
+        "q": "Kann ich als Raucher trotzdem Implantate bekommen?",
+        "a": [
+          "Ja, Rauchen schließt eine Implantation nicht aus. Es ist jedoch wichtig zu wissen, dass Rauchen die Durchblutung und Wundheilung beeinträchtigen kann.",
+          "Um die Einheilung (Osseointegration) optimal zu unterstützen, empfehlen wir dringend, das Rauchen vor und nach der Operation so weit wie möglich zu reduzieren.",
+          "Wir besprechen Ihren Lebensstil offen bei der Beratung, um die besten Erfolgsvoraussetzungen für Ihre Implantate zu schaffen."
+        ]
+      },
+      {
+        "q": "Was passiert, wenn das Implantat fehlschlägt?",
+        "a": [
+          "Zahnimplantate weisen eine Erfolgsquote von über 98% auf. Sollte ein Implantat in seltenen Fällen nicht optimal einheilen, wird es entfernt, der Bereich ausheilen gelassen und das Implantat im Rahmen unserer Garantie kostenfrei neu gesetzt.",
+          "Unsere erfahrenen Mund-Kiefer-Gesichtschirurgen planen jede Positionierung millimetergenau anhand von 3D-CBCT-Aufnahmen, um Risiken von vornherein zu minimieren."
+        ]
+      },
+      {
+        "q": "Was ist der Unterschied zwischen All-on-4 und All-on-6 Behandlungen? Wie entscheiden Sie, welche für mich die richtige ist?",
+        "a": [
+          "Der Hauptunterschied liegt in der Anzahl der Implantate pro Kiefer: 4 Implantate bei All-on-4 und 6 Implantate bei All-on-6.",
+          "All-on-6 bietet zusätzliche Stabilität und Kaukraftverteilung, ideal bei guter Knochendichte. All-on-4 wurde speziell für Kiefer mit reduziertem Knochenangebot entwickelt.",
+          "Ihr Chirurg empfiehlt Ihnen nach Auswertung der 3D-Scans die für Ihre Anatomie am besten geeignete Lösung."
+        ]
+      },
+      {
+        "q": "Wenn ich nicht genügend Knochengewebe für Zahnimplantate habe, kann ich trotzdem Implantate bekommen?",
+        "a": [
+          "In den allermeisten Fällen: Ja! Dank moderner Verfahren wie Sinuslift, Knochentransplantation (Greft) oder Zygoma-Implantaten können wir auch bei starkem Knochenrückgang feste Zähne ermöglichen."
+        ]
+      },
+      {
+        "q": "Spielen Implantatmarken wirklich eine Rolle? (Warum gibt es einen Preisunterschied?)",
+        "a": [
+          "Ja, renommierte Marken wie Straumann (Schweiz), DXL (Deutschland) und NucleOSS verfügen über jahrzehntelange klinische Studien, höchste Titan-Reinheit und weltweite Ersatzteilverfügbarkeit.",
+          "Niedrigpreisige Marken bieten oft nicht dieselbe Sicherheit. Bei der Gesundheit sollte man auf zertifizierte Qualität und erfahrene Chirurgen setzen."
+        ]
+      },
+      {
+        "q": "Warum sagen manche Kliniken bei All-on-4 / All-on-6, dass sie 10 Tage brauchen, während Sie sagen, dass Sie es in 3 Tagen schaffen?",
+        "a": [
+          "Der Unterschied liegt in unseren modernen, digital gestützten Protokollen. Durch minimalinvasive Chirurgie und unser hauseigenes CAD/CAM-Labor setzen wir die Implantate an Tag 1 und befestigen Ihre festen provisorischen Zähne bereits an Tag 3."
+        ]
+      },
+      {
+        "q": "Warum muss ich Ihre Klinik für meine Implantatbehandlung ein zweites Mal besuchen?",
+        "a": [
+          "Das internationale Protokoll sieht 3 bis 6 Monate Einheilzeit für die vollständige biologische Verwachsung des Implantats mit dem Kieferknochen (Osseointegration) vor. Beim zweiten Besuch werden Ihre maßgefertigten, permanenten Zirkonzähne dauerhaft eingesetzt."
+        ]
+      },
+      {
+        "q": "Was ist ein Abutment? Warum brauche ich eines, wenn ich bereits Implantate habe und eine Krone bekomme?",
+        "a": [
+          "Ein Abutment ist das präzise Verbindungsstück zwischen der im Knochen sitzenden Titanschraube und der sichtbaren Zahnkrone, das für festen Halt und natürlichen Zahnfleischverlauf sorgt."
+        ]
+      }
+    ]
+  }
 }

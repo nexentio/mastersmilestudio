@@ -38,12 +38,54 @@ export default async function TreatmentsPage({ params }: Props) {
 
       {/* 1:1 Modular Treatment Hero Section */}
       <TreatmentHeroBanner
-        tag={locale === 'tr' ? 'TEDAVİLERİMİZ' : 'TREATMENTS'}
+        tag={
+          locale === 'tr'
+            ? 'TEDAVİLERİMİZ'
+            : locale === 'de'
+            ? 'BEHANDLUNGEN'
+            : locale === 'pl'
+            ? 'ZABIEGI'
+            : locale === 'pt'
+            ? 'TRATAMENTOS'
+            : locale === 'es'
+            ? 'TRATAMIENTOS'
+            : locale === 'ru'
+            ? 'ПРОЦЕДУРЫ'
+            : 'TREATMENTS'
+        }
         title={t('pageTitle')}
         subtitle={t('pageSubtitle')}
-        primaryBtnText={locale === 'tr' ? 'Randevu & Bilgi Al' : 'Contact & Appointment'}
+        primaryBtnText={
+          locale === 'tr'
+            ? 'Randevu & Bilgi Al'
+            : locale === 'de'
+            ? 'Kontakt & Termin'
+            : locale === 'pl'
+            ? 'Kontakt i Rezerwacja'
+            : locale === 'pt'
+            ? 'Contato e Agendamento'
+            : locale === 'es'
+            ? 'Contacto y Cita'
+            : locale === 'ru'
+            ? 'Консультация и Запись'
+            : 'Contact & Appointment'
+        }
         primaryBtnHref="/contact"
-        secondaryBtnText={locale === 'tr' ? 'Detayları İncele' : 'View Details'}
+        secondaryBtnText={
+          locale === 'tr'
+            ? 'Detayları İncele'
+            : locale === 'de'
+            ? 'Details ansehen'
+            : locale === 'pl'
+            ? 'Zobacz Szczegóły'
+            : locale === 'pt'
+            ? 'Ver Detalhes'
+            : locale === 'es'
+            ? 'Ver Detalles'
+            : locale === 'ru'
+            ? 'Посмотреть Детали'
+            : 'View Details'
+        }
         secondaryBtnHref="#treatment-detail-view"
       />
 

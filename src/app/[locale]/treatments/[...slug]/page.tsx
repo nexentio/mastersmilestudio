@@ -149,19 +149,49 @@ export default async function HierarchicalTreatmentPage({ params }: PageProps) {
         tag={heroBadge}
         title={heroTitle}
         subtitle={heroSubtitle}
-        primaryBtnText={locale === 'tr' ? 'Randevu & Bilgi Al' : 'Contact & Appointment'}
+        primaryBtnText={
+          content?.hero?.primaryBtn ||
+          (locale === 'tr'
+            ? 'Randevu & Bilgi Al'
+            : locale === 'de'
+            ? 'Kontakt & Termin'
+            : locale === 'pl'
+            ? 'Kontakt i Rezerwacja'
+            : locale === 'pt'
+            ? 'Contato e Agendamento'
+            : locale === 'es'
+            ? 'Contacto y Cita'
+            : locale === 'ru'
+            ? 'Консультация и Запись'
+            : 'Contact & Appointment')
+        }
         primaryBtnHref="/contact"
         primaryBtnAriaLabel={
           locale === 'tr'
             ? 'Randevu ve bilgi almak için iletişim sayfasına gidin'
             : 'Contact Master Smile Studio for appointment and consultation'
         }
-        secondaryBtnText={locale === 'tr' ? 'Tedaviyi İncele' : 'View Treatment Details'}
+        secondaryBtnText={
+          content?.hero?.secondaryBtn ||
+          (locale === 'tr'
+            ? 'Paketleri İncele'
+            : locale === 'de'
+            ? 'Pakete & Details ansehen'
+            : locale === 'pl'
+            ? 'Zobacz Pakiety i Szczegóły'
+            : locale === 'pt'
+            ? 'Ver Pacotes e Detalhes'
+            : locale === 'es'
+            ? 'Ver Paquetes y Detalles'
+            : locale === 'ru'
+            ? 'Посмотреть Пакеты и Детали'
+            : 'View Packages & Details')
+        }
         secondaryBtnHref="#main-content"
         secondaryBtnAriaLabel={
           locale === 'tr'
-            ? 'Tedavi ayrıntılarını incelemek için aşağı kaydırın'
-            : 'Scroll down to explore treatment details'
+            ? 'Tedavi paketlerini ve ayrıntılarını incelemek için aşağı kaydırın'
+            : 'Scroll down to explore treatment packages and medical details'
         }
       />
 

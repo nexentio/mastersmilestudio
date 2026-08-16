@@ -6,6 +6,300 @@ import { Link } from '@/i18n/routing';
 import { getWhatsAppLink } from '@/config/site';
 import styles from './TreatmentJourneySimpleSection.module.css';
 
+interface JourneyItem {
+  id: string;
+  icon: string;
+  title: string;
+  content: string;
+}
+
+interface LocaleContent {
+  sectionTitle: string;
+  subText: string;
+  contactHeading: string;
+  whatsappLabel: string;
+  phoneLabel: string;
+  quickFormLabel: string;
+  emailLabel: string;
+  items: JourneyItem[];
+}
+
+const JOURNEY_DATA: Record<string, LocaleContent> = {
+  en: {
+    sectionTitle: 'Your Dental Journey Made Simple',
+    subText:
+      'From your very first inquiry to the final results, we ensure a smooth and transparent treatment journey in Istanbul. Learn about how long you’ll stay, how many visits you’ll need, your recovery time, and estimated pricing — all designed with international patients in mind. Let us take care of the details, so you can focus on your smile.',
+    contactHeading: 'Reach Out to Us - Quickly and Easily',
+    whatsappLabel: 'WhatsApp',
+    phoneLabel: 'Phone Call',
+    quickFormLabel: 'Quick Form',
+    emailLabel: 'E-mail',
+    items: [
+      {
+        id: 'stay',
+        icon: 'https://sohodent.com/doc/static/tedaviicon/icon01.webp',
+        title: 'Average Length of Stay in Istanbul',
+        content:
+          'The duration of dental implant treatment may vary depending on the number of implants to be placed and any additional procedures required (such as bone grafting, sinus lifting, etc.)',
+      },
+      {
+        id: 'visits',
+        icon: 'https://sohodent.com/doc/static/tedaviicon/icon02.webp',
+        title: 'Number of Visits Required',
+        content: 'In general, the procedure is completed in one or two visits.',
+      },
+      {
+        id: 'recovery',
+        icon: 'https://sohodent.com/doc/static/tedaviicon/icon03.webp',
+        title: 'Recovery Time',
+        content:
+          'In general, it takes 3 to 6 months for the implants to integrate with the bone.',
+      },
+      {
+        id: 'price',
+        icon: 'https://sohodent.com/doc/static/tedaviicon/icon04.webp',
+        title: 'Price',
+        content:
+          'On average, the cost per implant ranges around $450, €400, or £335. For a detailed quote tailored to your needs, please contact us.',
+      },
+    ],
+  },
+  tr: {
+    sectionTitle: 'Diş Tedavisi Yolculuğunuz Artık Çok Kolay',
+    subText:
+      'İlk danışmanızdan nihai sonuçlara kadar İstanbul\'da sorunsuz ve şeffaf bir tedavi süreci sunuyoruz. Uluslararası hastalarımız için tasarlanan kalış süresi, ziyaret sayısı, iyileşme süreci ve tahmini fiyatları keşfedin. Siz gülüşünüze odaklanın, detayları bize bırakın.',
+    contactHeading: 'Bize Hızlı ve Kolayca Ulaşın',
+    whatsappLabel: 'WhatsApp',
+    phoneLabel: 'Telefon Görüşmesi',
+    quickFormLabel: 'Hızlı Form',
+    emailLabel: 'E-posta',
+    items: [
+      {
+        id: 'stay',
+        icon: 'https://sohodent.com/doc/static/tedaviicon/icon01.webp',
+        title: 'İstanbul’da Ortalama Kalış Süresi',
+        content:
+          'İmplant tedavisinin süresi, yerleştirilecek implant sayısına ve gereken ek prosedürlere (kemik tozu greftleme, sinüs kaldırma vb.) bağlı olarak değişebilir.',
+      },
+      {
+        id: 'visits',
+        icon: 'https://sohodent.com/doc/static/tedaviicon/icon02.webp',
+        title: 'Gereken Ziyaret Sayısı',
+        content: 'Genellikle implant tedavisi bir veya iki ziyarette tamamlanır.',
+      },
+      {
+        id: 'recovery',
+        icon: 'https://sohodent.com/doc/static/tedaviicon/icon03.webp',
+        title: 'İyileşme Süresi',
+        content:
+          'Genel olarak implantların çene kemiği ile kaynaşması (osteointegrasyon) 3 ila 6 ay sürer.',
+      },
+      {
+        id: 'price',
+        icon: 'https://sohodent.com/doc/static/tedaviicon/icon04.webp',
+        title: 'Fiyat Bilgisi',
+        content:
+          'Ortalama olarak tek bir implant maliyeti 450 $, 400 € veya 335 £ civarındadır. Size özel detaylı teklif için lütfen bizimle iletişime geçin.',
+      },
+    ],
+  },
+  de: {
+    sectionTitle: 'Ihre Zahnbehandlungsreise Einfach Gemacht',
+    subText:
+      'Von Ihrer ersten Anfrage bis zum Endergebnis sorgen wir für eine reibungslose und transparente Behandlungsreise in Istanbul. Erfahren Sie mehr über Aufenthaltsdauer, Besuche, Heilungszeit und Preise.',
+    contactHeading: 'Erreichen Sie uns – schnell und einfach',
+    whatsappLabel: 'WhatsApp',
+    phoneLabel: 'Telefonanruf',
+    quickFormLabel: 'Schnellformular',
+    emailLabel: 'E-Mail',
+    items: [
+      {
+        id: 'stay',
+        icon: 'https://sohodent.com/doc/static/tedaviicon/icon01.webp',
+        title: 'Durchschnittliche Aufenthaltsdauer in Istanbul',
+        content:
+          'Die Dauer der Zahnimplantatbehandlung kann je nach Anzahl der Implantate und zusätzlichen Eingriffen (z. B. Knochenaufbau, Sinuslift) variieren.',
+      },
+      {
+        id: 'visits',
+        icon: 'https://sohodent.com/doc/static/tedaviicon/icon02.webp',
+        title: 'Erforderliche Anzahl der Besuche',
+        content: 'Im Allgemeinen wird das Verfahren in einem oder zwei Besuchen abgeschlossen.',
+      },
+      {
+        id: 'recovery',
+        icon: 'https://sohodent.com/doc/static/tedaviicon/icon03.webp',
+        title: 'Heilungszeit',
+        content:
+          'Im Allgemeinen dauert es 3 bis 6 Monate, bis die Implantate mit dem Knochen verwachsen.',
+      },
+      {
+        id: 'price',
+        icon: 'https://sohodent.com/doc/static/tedaviicon/icon04.webp',
+        title: 'Preise',
+        content:
+          'Durchschnittlich liegen die Kosten pro Implantat bei ca. $450, €400 oder £335. Kontaktieren Sie uns für ein detailliertes Angebot.',
+      },
+    ],
+  },
+  pl: {
+    sectionTitle: 'Twoja Podróż Stomatologiczna w Prosty Sposób',
+    subText:
+      'Od pierwszego zapytania po ostateczne rezultaty zapewniamy bezproblemową podróż leczniczą w Stambule. Poznaj czas pobytu, liczbę wizyt, okres rekonwalescencji i szacunkowe ceny.',
+    contactHeading: 'Skontaktuj się z nami – szybko i łatwo',
+    whatsappLabel: 'WhatsApp',
+    phoneLabel: 'Telefon',
+    quickFormLabel: 'Szybki formularz',
+    emailLabel: 'E-mail',
+    items: [
+      {
+        id: 'stay',
+        icon: 'https://sohodent.com/doc/static/tedaviicon/icon01.webp',
+        title: 'Średni czas pobytu w Stambule',
+        content:
+          'Czas trwania leczenia implantologicznego może się różnić w zależności od liczby wszczepianych implantów i ewentualnych procedur dodatkowych.',
+      },
+      {
+        id: 'visits',
+        icon: 'https://sohodent.com/doc/static/tedaviicon/icon02.webp',
+        title: 'Wymagana liczba wizyt',
+        content: 'Zazwyczaj zabieg kończy się w trakcie jednej lub dwóch wizyt.',
+      },
+      {
+        id: 'recovery',
+        icon: 'https://sohodent.com/doc/static/tedaviicon/icon03.webp',
+        title: 'Czas rekonwalescencji',
+        content:
+          'Zazwyczaj integracja implantów z kością trwa od 3 do 6 miesięcy.',
+      },
+      {
+        id: 'price',
+        icon: 'https://sohodent.com/doc/static/tedaviicon/icon04.webp',
+        title: 'Cena',
+        content:
+          'Średnio koszt jednego implantu wynosi około $450, €400 lub £335. Skontaktuj się z nami, aby uzyskać szczegółową wycenę.',
+      },
+    ],
+  },
+  pt: {
+    sectionTitle: 'Sua Jornada Dentária de Forma Simples',
+    subText:
+      'Desde sua primeira consulta até o resultado final, garantimos uma jornada tranquila e transparente em Istambul. Conheça a duração da estadia, visitas necessárias, recuperação e preços.',
+    contactHeading: 'Fale Conosco - Rápido e Fácil',
+    whatsappLabel: 'WhatsApp',
+    phoneLabel: 'Ligação',
+    quickFormLabel: 'Formulário Rápido',
+    emailLabel: 'E-mail',
+    items: [
+      {
+        id: 'stay',
+        icon: 'https://sohodent.com/doc/static/tedaviicon/icon01.webp',
+        title: 'Duração Média da Estadia em Istambul',
+        content:
+          'A duração do tratamento com implantes pode variar dependendo do número de implantes e de procedimentos adicionais necessários.',
+      },
+      {
+        id: 'visits',
+        icon: 'https://sohodent.com/doc/static/tedaviicon/icon02.webp',
+        title: 'Número de Visitas Necessárias',
+        content: 'Geralmente, o procedimento é concluído em uma ou duas visitas.',
+      },
+      {
+        id: 'recovery',
+        icon: 'https://sohodent.com/doc/static/tedaviicon/icon03.webp',
+        title: 'Tempo de Recuperação',
+        content:
+          'Geralmente, leva de 3 a 6 meses para que os implantes se integrem ao osso.',
+      },
+      {
+        id: 'price',
+        icon: 'https://sohodent.com/doc/static/tedaviicon/icon04.webp',
+        title: 'Preço',
+        content:
+          'Em média, o custo por implante varia em torno de $450, €400 ou £335. Entre em contato para um orçamento personalizado.',
+      },
+    ],
+  },
+  es: {
+    sectionTitle: 'Su Viaje Dental de Forma Sencilla',
+    subText:
+      'Desde su primera consulta hasta los resultados finales, garantizamos un viaje de tratamiento fluido y transparente en Estambul. Conozca la estancia, visitas, recuperación y precios.',
+    contactHeading: 'Contáctenos - Rápida y Fácilmente',
+    whatsappLabel: 'WhatsApp',
+    phoneLabel: 'Llamada',
+    quickFormLabel: 'Formulario Rápido',
+    emailLabel: 'Correo Electrónico',
+    items: [
+      {
+        id: 'stay',
+        icon: 'https://sohodent.com/doc/static/tedaviicon/icon01.webp',
+        title: 'Estancia Media en Estambul',
+        content:
+          'La duración del tratamiento puede variar según la cantidad de implantes y cualquier procedimiento adicional necesario.',
+      },
+      {
+        id: 'visits',
+        icon: 'https://sohodent.com/doc/static/tedaviicon/icon02.webp',
+        title: 'Número de Visitas Requeridas',
+        content: 'En general, el procedimiento se completa en una o dos visitas.',
+      },
+      {
+        id: 'recovery',
+        icon: 'https://sohodent.com/doc/static/tedaviicon/icon03.webp',
+        title: 'Tiempo de Recuperación',
+        content:
+          'En general, los implantes tardan de 3 a 6 meses en integrarse con el hueso.',
+      },
+      {
+        id: 'price',
+        icon: 'https://sohodent.com/doc/static/tedaviicon/icon04.webp',
+        title: 'Precio',
+        content:
+          'En promedio, el costo por implante ronda los $450, €400 o £335. Contáctenos para un presupuesto detallado.',
+      },
+    ],
+  },
+  ru: {
+    sectionTitle: 'Ваше стоматологическое путешествие стало проще',
+    subText:
+      'От вашего первого запроса до финального результата мы обеспечиваем прозрачный процесс лечения в Стамбуле. Узнайте о длительности пребывания, визитах, восстановлении и ценах.',
+    contactHeading: 'Свяжитесь с нами — быстро и просто',
+    whatsappLabel: 'WhatsApp',
+    phoneLabel: 'Телефон',
+    quickFormLabel: 'Быстрая форма',
+    emailLabel: 'Эл. почта',
+    items: [
+      {
+        id: 'stay',
+        icon: 'https://sohodent.com/doc/static/tedaviicon/icon01.webp',
+        title: 'Средняя продолжительность пребывания в Стамбуле',
+        content:
+          'Продолжительность лечения может варьироваться в зависимости от количества имплантатов и дополнительных процедур.',
+      },
+      {
+        id: 'visits',
+        icon: 'https://sohodent.com/doc/static/tedaviicon/icon02.webp',
+        title: 'Необходимое количество визитов',
+        content: 'Как правило, процедура завершается за один или два визита.',
+      },
+      {
+        id: 'recovery',
+        icon: 'https://sohodent.com/doc/static/tedaviicon/icon03.webp',
+        title: 'Время восстановления',
+        content:
+          'В среднем приживление имплантатов к кости занимает от 3 до 6 месяцев.',
+      },
+      {
+        id: 'price',
+        icon: 'https://sohodent.com/doc/static/tedaviicon/icon04.webp',
+        title: 'Стоимость',
+        content:
+          'В среднем стоимость одного имплантата составляет около $450, €400 или £335. Свяжитесь с нами для индивидуального расчета.',
+      },
+    ],
+  },
+};
+
 interface Props {
   stayDuration?: string;
   visitCount?: string;
@@ -20,153 +314,74 @@ export default function TreatmentJourneySimpleSection({
   priceEstimate,
 }: Props) {
   const locale = useLocale();
-  const [openIdx, setOpenIdx] = useState<number | null>(0); // First item open by default
+  const data = JOURNEY_DATA[locale] || JOURNEY_DATA.en;
+  const [openIdx, setOpenIdx] = useState<number | null>(null);
 
-  const items = [
-    {
-      title: locale === 'tr' ? '1. Online Konsültasyon ve Fiyat Teklifi' : '1. Online Consultation and Quote',
-      iconSvg: (
-        <svg width="22" height="22" viewBox="0 0 512 512" fill="#ffffff">
-          <path d="M256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM127 281.4l51.6-51.6 36.7 36.7c6.2 6.2 16.4 6.2 22.6 0l116.6-116.6c6.2-6.2 16.4-6.2 22.6 0l22.6 22.6c6.2 6.2 6.2 16.4 0 22.6L249 344.2c-6.2 6.2-16.4 6.2-22.6 0l-76.7-76.7c-6.2-6.2-6.2-16.4 0-22.6l22.6-22.6c6.2-6.2 16.4-6.2 22.6 0z" />
-        </svg>
-      ),
-      content: locale === 'tr' ? (
-        <div>
-          <p>
-            Her şey evinizin konforunda başlar. Mevcut diş fotoğraflarınızı, varsa panoramik röntgeninizi ve beklentilerinizi bize ilettiğinizde, uzman cerrahlarımız durumunuzu titizlikle inceler.
-          </p>
-          <ul className="treatment-bullet-list mt-3">
-            <li>Kişiselleştirilmiş tedavi planı ve net fiyat dökümü hazırlanır.</li>
-            <li>Gerekli ziyaret sayısı ve İstanbul’da kalış süresi belirlenir.</li>
-            <li>Hiçbir gizli maliyet olmadan tüm detaylar şeffafça paylaşılır.</li>
-          </ul>
-        </div>
-      ) : (
-        <div>
-          <p>
-            Your journey begins comfortably from home. By sending us your dental photos, recent X-rays (if available), and your personal expectations, our senior dental surgeons will conduct a comprehensive evaluation.
-          </p>
-          <ul className="treatment-bullet-list mt-3">
-            <li>We prepare a personalized treatment plan and transparent price quote.</li>
-            <li>We estimate the required duration of stay and number of visits needed.</li>
-            <li>Everything is 100% transparent with zero hidden fees.</li>
-          </ul>
-        </div>
-      ),
-    },
-    {
-      title: locale === 'tr' ? '2. İstanbul Seyahati ve VIP Karşılama' : '2. Travel to Istanbul & VIP Reception',
-      iconSvg: (
-        <svg width="22" height="22" viewBox="0 0 576 512" fill="#ffffff">
-          <path d="M482.3 192c34.2 0 93.7 29 93.7 64 0 36-59.5 64-93.7 64l-116.6 0L266 495.6c-4.6 8.5-13.5 13.8-23.2 13.8l-40.4 0c-17.7 0-30.7-16.6-26.4-33.8L211 320 86.8 320l-35.6 47.5c-4.4 5.8-11.2 9.2-18.5 9.2L8 376.7c-6.2 0-10.7-6.2-8.7-12.1L24 256 -.7 147.4C-2.7 141.5 1.8 135.3 8 135.3l24.7 0c7.3 0 14.1 3.4 18.5 9.2L86.8 192l124.2 0L171 36.4C166.7 19.2 179.7 2.6 197.4 2.6l40.4 0c9.7 0 18.6 5.3 23.2 13.8L365.7 192l116.6 0z" />
-        </svg>
-      ),
-      content: locale === 'tr' ? (
-        <div>
-          <p>
-            Tarihlerinizi netleştirdiğinizde geriye sadece uçak biletinizi almak kalır. İstanbul Havalimanı’na indiğiniz andan itibaren özel VIP şoförümüz sizi karşılar ve anlaşmalı lüks 5 yıldızlı otelinize transferinizi sağlar.
-          </p>
-          <ul className="treatment-bullet-list mt-3">
-            <li>Havalimanı - Otel - Klinik arasındaki tüm transferler kliniğimizce organize edilir.</li>
-            <li>Kişisel hasta asistanınız seyahatiniz boyunca her an yanınızdadır.</li>
-          </ul>
-        </div>
-      ) : (
-        <div>
-          <p>
-            Once you book your flight tickets, our dedicated international team takes over the logistics. The moment you land at Istanbul Airport, our private VIP chauffeur will welcome you and escort you to your 5-star hotel.
-          </p>
-          <ul className="treatment-bullet-list mt-3">
-            <li>All VIP transfers between Airport, Hotel, and Clinic are smoothly coordinated.</li>
-            <li>Your personal multilingual patient host will assist you throughout your stay.</li>
-          </ul>
-        </div>
-      ),
-    },
-    {
-      title: locale === 'tr' ? '3. Tedavi, İyileşme ve Yeni Gülüşünüz' : '3. Treatment, Recovery & Your New Smile',
-      iconSvg: (
-        <svg width="22" height="22" viewBox="0 0 512 512" fill="#ffffff">
-          <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z" />
-        </svg>
-      ),
-      content: locale === 'tr' ? (
-        <div>
-          <p>
-            Kliniğimizdeki ilk gününüzde 3D CBCT tomografi ve detaylı yüz yüze planlama yapılır. İmplant yerleşimi ağrısız ve konforlu bir şekilde tamamlanır.
-          </p>
-          <ul className="treatment-bullet-list mt-3">
-            <li>İlk seansta geçici sabit dişleriniz takılarak estetik ve çiğneme fonksiyonunuz korunur.</li>
-            <li>İyileşme sürecinin ardından kalıcı, doğal görünümlü zirkonyum dişleriniz hazırlanır ve takılır.</li>
-            <li>Uluslararası ömür boyu garanti sertifikası ile ülkenize güvenle dönersiniz.</li>
-          </ul>
-        </div>
-      ) : (
-        <div>
-          <p>
-            On your first clinic day, 3D CBCT imaging and precise guided planning are conducted. The implant procedure is performed painlessly under advanced local anesthesia.
-          </p>
-          <ul className="treatment-bullet-list mt-3">
-            <li>Fixed temporary teeth are placed on the first visit so you never leave without teeth.</li>
-            <li>After healing, permanent high-strength zirconia teeth are precision-crafted and fitted.</li>
-            <li>You return home with a radiant smile backed by international lifetime warranty certificates.</li>
-          </ul>
-        </div>
-      ),
-    },
-  ];
+  const toggleItem = (idx: number) => {
+    setOpenIdx((prev) => (prev === idx ? null : idx));
+  };
+
+  const getCustomContent = (id: string, defaultContent: string) => {
+    if (id === 'stay' && stayDuration) return stayDuration;
+    if (id === 'visits' && visitCount) return visitCount;
+    if (id === 'recovery' && recoveryTime) return recoveryTime;
+    if (id === 'price' && priceEstimate) return priceEstimate;
+    return defaultContent;
+  };
 
   return (
-    <section aria-labelledby="journey-simple-heading" className={styles.section}>
-      <div className="treatment-container">
-        {/* Head */}
+    <section aria-labelledby="journey-simple-heading" className={styles.wrapper}>
+      <div className={styles.container}>
+        {/* Head Section */}
         <div className={styles.head}>
-          <div>
-            <h2 id="journey-simple-heading" className="treatment-heading-navy">
-              {locale === 'tr' ? 'Kolaylaştırılmış Tedavi Yolculuğunuz' : 'Your Dental Journey Made Simple'}
-            </h2>
-          </div>
-          <div>
-            <p className="treatment-text-p m-0">
-              {locale === 'tr'
-                ? 'İlk başvurunuzdan nihai sonuçlara kadar İstanbul’da sorunsuz ve şeffaf bir tedavi süreci sağlıyoruz. Ne kadar kalacağınızı, kaç ziyaret gerekeceğini, iyileşme sürenizi ve tahmini fiyatları öğrenin — hepsi uluslararası hastalar düşünülerek tasarlandı. Ayrıntıları bize bırakın, siz sadece gülüşünüze odaklanın.'
-                : 'From your very first inquiry to the final results, we ensure a smooth and transparent treatment journey in Istanbul. Learn about how long you’ll stay, how many visits you’ll need, your recovery time, and estimated pricing — all designed with international patients in mind. Let us take care of the details, so you can focus on your smile.'}
-            </p>
-          </div>
+          <h2 id="journey-simple-heading" className={styles.title}>
+            {data.sectionTitle}
+          </h2>
+          <p className={styles.subText}>{data.subText}</p>
         </div>
 
-        {/* Center Box */}
+        {/* Main Card */}
         <div className={styles.box}>
-          {/* Accordion List */}
-          <div className="accordion flex flex-col">
-            {items.map((item, idx) => {
+          <div className={styles.accordion}>
+            {data.items.map((item, idx) => {
               const isOpen = openIdx === idx;
               return (
-                <div key={idx} className={styles.item}>
+                <div key={item.id} className={styles.item}>
                   <div
                     className={styles.titleRow}
-                    onClick={() => setOpenIdx(isOpen ? null : idx)}
+                    onClick={() => toggleItem(idx)}
+                    role="button"
+                    tabIndex={0}
+                    aria-expanded={isOpen}
+                    onKeyDown={(e) => {
+                      if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        toggleItem(idx);
+                      }
+                    }}
                   >
-                    <div className="flex items-center gap-5">
-                      {/* Sage/Teal Circular Icon Badge */}
-                      <span className={styles.iconBadge}>
-                        {item.iconSvg}
-                      </span>
-
-                      <span className="text">
-                        <span className="text-lg font-extrabold text-slate-900 leading-tight">
-                          {item.title}
-                        </span>
-                      </span>
+                    <div className={styles.leftGroup}>
+                      <div className={styles.iconBadge}>
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img
+                          src={item.icon}
+                          alt={item.title}
+                          width={52}
+                          height={52}
+                          className={styles.iconImg}
+                          loading="lazy"
+                        />
+                      </div>
+                      <div className={styles.textCol}>
+                        <span className={styles.itemTitle}>{item.title}</span>
+                      </div>
                     </div>
 
-                    <span className={`${styles.chevron} ${isOpen ? styles.chevronOpen : ''}`}>
-                      <svg
-                        width="14"
-                        height="14"
-                        viewBox="0 0 448 512"
-                        fill="currentColor"
-                      >
+                    <span
+                      className={`${styles.chevron} ${isOpen ? styles.chevronOpen : ''}`}
+                      aria-hidden="true"
+                    >
+                      <svg width="18" height="18" viewBox="0 0 448 512" fill="currentColor">
                         <path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
                       </svg>
                     </span>
@@ -174,7 +389,7 @@ export default function TreatmentJourneySimpleSection({
 
                   {isOpen && (
                     <div className={styles.content}>
-                      {item.content}
+                      <p style={{ margin: 0 }}>{getCustomContent(item.id, item.content)}</p>
                     </div>
                   )}
                 </div>
@@ -182,77 +397,66 @@ export default function TreatmentJourneySimpleSection({
             })}
           </div>
 
-          {/* Grid2: Reach Out to Us */}
-          <div className="mt-10 text-center">
-            <div className="text-base font-extrabold text-slate-900 mb-5">
-              {locale === 'tr' ? 'Bize Ulaşın - Hızlı ve Kolayca' : 'Reach Out to Us - Quickly and Easily'}
-            </div>
-
-            <div className="flex items-center justify-center gap-3.5 flex-wrap">
-              {/* WhatsApp Button */}
+          {/* Contact Bar Inside Card */}
+          <div className={styles.contactWrap}>
+            <h3 className={styles.contactHead}>{data.contactHeading}</h3>
+            <div className={styles.buttonRow}>
+              {/* WhatsApp */}
               <a
                 href={getWhatsAppLink(locale)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.contactPill}
+                aria-label="WhatsApp"
               >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  loading="lazy"
-                  width="20"
-                  height="20"
                   src="https://sohodent.com/doc/static/a1/contact-icon-10.png.webp"
-                  alt="WhatsApp"
-                  className={styles.contactIcon}
+                  alt=""
+                  width={22}
+                  height={22}
+                  className={styles.contactIconImg}
                 />
-                <span className={styles.contactText}>WhatsApp</span>
+                <span className={styles.contactLabel}>{data.whatsappLabel}</span>
               </a>
 
-              {/* Phone Call Button */}
-              <a
-                href="tel:+905434568080"
-                className={styles.contactPill}
-              >
+              {/* Phone Call */}
+              <a href="tel:+905434568080" className={styles.contactPill} aria-label="Phone Call">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  loading="lazy"
-                  width="20"
-                  height="20"
                   src="https://sohodent.com/doc/static/a1/contact-icon-11.png.webp"
-                  alt="Phone Call"
-                  className={styles.contactIcon}
+                  alt=""
+                  width={22}
+                  height={22}
+                  className={styles.contactIconImg}
                 />
-                <span className={styles.contactText}>Phone Call</span>
+                <span className={styles.contactLabel}>{data.phoneLabel}</span>
               </a>
 
-              {/* Quick Form Button */}
-              <Link
-                href="/contact"
-                className={styles.contactPill}
-              >
+              {/* Quick Form */}
+              <Link href="/contact" className={styles.contactPill} aria-label="Quick Form">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  loading="lazy"
-                  width="20"
-                  height="20"
                   src="https://sohodent.com/doc/static/a1/contact-icon-12.png.webp"
-                  alt="Quick Form"
-                  className={styles.contactIcon}
+                  alt=""
+                  width={22}
+                  height={22}
+                  className={styles.contactIconImg}
                 />
-                <span className={styles.contactText}>Quick Form</span>
+                <span className={styles.contactLabel}>{data.quickFormLabel}</span>
               </Link>
 
-              {/* E-mail Button */}
-              <a
-                href="mailto:info@mastersmilestudio.com"
-                className={styles.contactPill}
-              >
+              {/* E-mail */}
+              <a href="mailto:info@sohodent.com" className={styles.contactPill} aria-label="E-mail">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  loading="lazy"
-                  width="20"
-                  height="20"
                   src="https://sohodent.com/doc/static/a1/contact-icon-13.png.webp"
-                  alt="E-mail"
-                  className={styles.contactIcon}
+                  alt=""
+                  width={22}
+                  height={22}
+                  className={styles.contactIconImg}
                 />
-                <span className={styles.contactText}>E-mail</span>
+                <span className={styles.contactLabel}>{data.emailLabel}</span>
               </a>
             </div>
           </div>

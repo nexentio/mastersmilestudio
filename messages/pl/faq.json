@@ -42,5 +42,192 @@
       "question": "Czy w przypadku bólu zostanę przyjęty w tym samym dniu?",
       "answer": "Tak, pacjentów z nagłym bólem przyjmujemy priorytetowo w tym samym dniu."
     }
-  ]
+  ],
+  "treatmentFaq": {
+    "title": "Często Zadawane Pytania Dotyczące Zabiegu",
+    "subText": "Masz pytania dotyczące leczenia? Od czasu trwania po koszty i rekonwalescencję – służymy fachową pomocą i przejrzystymi odpowiedziami na każdym etapie.",
+    "items": [
+      {
+        "q": "Czy mój plan leczenia lub podana cena ulegną zmianie po moim przyjeździe?",
+        "a": [
+          "Dobre pytanie. Niestety wielu pacjentów podróżujących na leczenie spotyka się w niektórych klinikach z nieetycznymi praktykami, takimi jak ukryte dopłaty.",
+          "Plan i wycena, które Państwu przedstawiamy, są starannie przygotowywane na podstawie przesłanych zdjęć, badań RTG i Państwa oczekiwań. Po przyjeździe potwierdzamy wszystko osobiście podczas badania przed rozpoczęciem leczenia.",
+          "Czasami podczas badania w klinice może ujawnić się drobny szczegół niewidoczny na zdjęciach, np. potrzeba odbudowy kości lub podniesienia dna zatoki (sinus lift). W przeciwieństwie do wielu klinik, ewentualność i koszty takich procedur są zawsze przejrzyście przedstawiane w planie leczenia.",
+          "W takim przypadku dokładnie wszystko wyjaśniamy, pokazujemy problem na monitorze i omawiamy opcje przed wprowadzeniem jakichkolwiek zmian. Nic nie odbywa się bez Państwa zgody.",
+          "Plan leczenia i cena pozostaną bez zmian, chyba że podczas badania odkryjemy nowe uwarunkowania anatomiczne."
+        ]
+      },
+      {
+        "q": "Czy pomagacie w organizacji zakwaterowania?",
+        "a": [
+          "Tak, oczywiście. Nasi pacjenci regularnie podróżują z zagranicy, dlatego dbamy o Państwa komfort nie tylko podczas leczenia stomatologicznego, ale także podczas całego pobytu w Stambule. Rekomendujemy sprawdzone hotele partnerskie blisko kliniki i chętnie pomagamy w rezerwacji.",
+          "Naszym celem jest zapewnienie maksymalnie bezstresowego i komfortowego pobytu."
+        ]
+      },
+      {
+        "q": "Czy podróż do Turcji jest bezpieczna?",
+        "a": [
+          "Tak! Turcja jest jednym z najpopularniejszych kierunków turystycznych na świecie, a miliony turystów podróżują tu bezpiecznie każdego roku. Stambuł oferuje nowoczesne kliniki, bezpieczny transport i światowej klasy infrastrukturę medyczną.",
+          "Nasza klinika zapewnia prywatne transfery VIP z kierowcą oraz bezpieczne hotele, gwarantując pełen spokój podczas całej wizyty."
+        ]
+      },
+      {
+        "q": "Jakie materiały są stosowane do koron zębowych w Państwa klinice?",
+        "a": [
+          "Stosujemy najnowocześniejsze technologie i certyfikowane materiały stomatologiczne.",
+          "W przypadku licówek stosujemy szwajcarską ceramikę Ivoclar E-Max, natomiast do mostów na implantach All-on-4 / All-on-6 wykorzystujemy monolityczny tlenek cyrkonu austriackiej/niemieckiej marki Amann Girrbach."
+        ]
+      },
+      {
+        "q": "Czy mogę zobaczyć kształt i kolor moich zębów przed ich wykonaniem?",
+        "a": [
+          "Tak, jak najbardziej. Podczas projektowania uśmiechu (Digital Smile Design) pokazujemy symulację 3D nowych zębów. Dzięki modelowi mock-up można przymierzyć zęby w jamie ustnej i ocenić ich kształt oraz kolor przed ostateczną produkcją.",
+          "Po wyprodukowaniu gotowych koron nie można ich bardziej rozjaśnić, ale można je delikatnie przyciemnić. Dlatego wszystkie szczegóły ustalamy dokładnie przed finalnym wykonaniem."
+        ]
+      },
+      {
+        "q": "Czy po operacji wszczepienia implantów będę odczuwać silny ból?",
+        "a": [
+          "W pierwszych dniach może wystąpić lekki obrzęk lub tkliwość, podobnie jak po usunięciu zęba. Jest to z łatwością kontrolowane za pomocą przepisanych leków przeciwbólowych i przeciwzapalnych.",
+          "W pierwszym dniu operacji zalecamy stosowanie okładów z lodu (5 minut aplikacji / 5 minut przerwy), co zapobiega powstawaniu opuchlizny. Dolegliwości ustępują zazwyczaj w ciągu pierwszych 48 godzin.",
+          "Podczas samego zabiegu nie odczuwa się żadnego bólu dzięki zaawansowanemu znieczuleniu miejscowemu i opcjonalnej sedacji."
+        ]
+      },
+      {
+        "q": "Czy obsługują Państwo płatności online?",
+        "a": [
+          "Nasza klinika oferuje różnorodne dogodne metody płatności, w tym karty płatnicze, przelewy bankowe i bezpieczne płatności elektroniczne.",
+          "W celu uzyskania szczegółowych informacji prosimy o kontakt z naszym zespołem."
+        ]
+      },
+      {
+        "q": "Czy pakiety obejmują hotele i transfery?",
+        "a": [
+          "Zawartość pakietów zależy od wybranego leczenia. Wszystkie pakiety All-on-4/6 obejmują zakwaterowanie w hotelu 4/5* ze śniadaniem oraz prywatne transfery VIP."
+        ]
+      },
+      {
+        "q": "Czy mogę opłacić leczenie lub pakiet w ratach?",
+        "a": [
+          "W naszej klinice płatność jest dzielona etapami pomiędzy Państwa dwie wizyty w Stambule.",
+          "Szczegółowy harmonogram płatności ustalamy indywidualnie."
+        ]
+      },
+      {
+        "q": "Czy oferują Państwo gwarancję lub ubezpieczenie?",
+        "a": [
+          "Wszystkie zabiegi w naszej klinice objęte są oficjalną gwarancją. Nasze implanty klasy premium (Straumann, DXL) posiadają dożywotnią międzynarodową gwarancję producenta i paszport implantologiczny."
+        ]
+      },
+      {
+        "q": "Czy mogę bezpiecznie odłożyć leczenie stomatologiczne na później?",
+        "a": [
+          "Odłożenie leczenia jest możliwe, lecz niezalecane. Brak zębów prowadzi do postępującego zaniku kości wyrostka zębodołowego.",
+          "Im dłużej Państwo zwlekają, tym większe ryzyko konieczności wykonania skomplikowanej i kosztownej odbudowy kości w przyszłości.",
+          "Najlepiej nie odkładać leczenia, aby zachować optymalne warunki anatomiczne."
+        ]
+      },
+      {
+        "q": "Która korona na implantach jest lepsza: E-Max czy korona cyrkonowa?",
+        "a": [
+          "W przypadku implantów tlenek cyrkonu jest zazwyczaj trwalszym i bezpieczniejszym wyborem, doskonale znoszącym duże siły żucia w odcinku bocznym.",
+          "Korony E-Max wykonane są z pełnej ceramiki szklanej i zapewniają najwyższą estetykę w odcinku przednim uśmiechu.",
+          "Cyrkon jest bezkonkurencyjnym standardem na implantach, podczas gdy E-Max stosuje się dla pojedynczych zębów przednich."
+        ]
+      },
+      {
+        "q": "Co zrobić, jeśli proteza All-on-6 pęknie lub ulegnie uszkodzeniu?",
+        "a": [
+          "W przypadku pęknięcia należy niezwłocznie skontaktować się z naszą kliniką.",
+          "Nasi specjaliści przeprowadzą naprawę lub wymianę w ramach gwarancji. Prosimy unikać samodzielnych prób naprawy, aby nie uszkodzić implantów ani dziąseł."
+        ]
+      },
+      {
+        "q": "Czy protezy All-on-6 są wykonane z żywicy, akrylu lub tworzywa sztucznego?",
+        "a": [
+          "Ostateczne mosty All-on-6 wykonujemy z trwałego monolitycznego tlenku cyrkonu lub porcelany, co gwarantuje wieloletnią trwałość.",
+          "Akryl i żywice stosowane są wyłącznie w przypadku zębów tymczasowych na czas gojenia."
+        ]
+      },
+      {
+        "q": "Czy w Państwa klinice dostępna jest sedacja przy zabiegu implantacji? Jakie rodzaje sedacji są dostępne?",
+        "a": [
+          "Tak, komfort pacjenta jest dla nas priorytetem.",
+          "Oferujemy trzy rodzaje znieczulenia: znieczulenie miejscowe, sedację dożylną (płytki sen, podczas którego pacjent pozostaje zrelaksowany) oraz znieczulenie ogólne z udziałem lekarza anestezjologa."
+        ]
+      },
+      {
+        "q": "Dlaczego w przypadku utraty zęba preferuje się implant zamiast mostu?",
+        "a": [
+          "Implant nie wymaga szlifowania sąsiednich, zdrowych zębów w celu oparcia mostu.",
+          "Dodatkowo implant stymuluje tkankę kostną dokładnie tak jak naturalny korzeń zęba, zapobiegając zanikowi kości i zmianom rysów twarzy."
+        ]
+      },
+      {
+        "q": "Czy zabieg implantacji można przeprowadzić u pacjentów z chorobami takimi jak HIV, WZW itp.?",
+        "a": [
+          "Tak. Przy stabilnym stanie zdrowia i odpowiedniej kontroli lekarskiej zabiegi implantacji są w pełni bezpieczne.",
+          "Stosujemy rygorystyczne procedury sterylizacji i kontroli zakażeń, a dane medyczne pacjentów pozostają w 100% poufne."
+        ]
+      },
+      {
+        "q": "Czy pacjenci z chorobami przewlekłymi, takimi jak cukrzyca, mogą mieć wszczepione implanty?",
+        "a": [
+          "Oczywiście! Kluczowe jest wyrównanie poziomu glikemii i prawidłowy wynik badania HbA1c.",
+          "Przed zabiegiem prosimy o dostarczenie aktualnych wyników badań krwi w celu zapewnienia maksymalnego bezpieczeństwa."
+        ]
+      },
+      {
+        "q": "Czy nadal mogę mieć implanty, jeśli palę papierosy?",
+        "a": [
+          "Tak, palenie tytoniu nie wyklucza zabiegu, jednak może spowolnić proces gojenia i osteointegracji.",
+          "Zalecamy ograniczenie palenia przed i po zabiegu, aby zapewnić najwyższy odsetek powodzenia leczenia."
+        ]
+      },
+      {
+        "q": "Co się stanie, jeśli implant się nie przyjmie?",
+        "a": [
+          "Wskaźnik sukcesu implantacji wynosi ponad 98%. W rzadkich przypadkach braku integracji implant jest usuwany, a po wygojeniu wszczepiany ponownie bezpłatnie w ramach gwarancji."
+        ]
+      },
+      {
+        "q": "Jaka jest różnica między leczeniem All-on-4 a All-on-6? Jak decydują Państwo, które rozwiązanie jest dla mnie odpowiednie?",
+        "a": [
+          "Różnica polega na liczbie implantów: 4 implanty w All-on-4 oraz 6 implantów w All-on-6.",
+          "All-on-6 zapewnia dodatkowe punkty podparcia i stabilność przy dobrej gęstości kości, natomiast All-on-4 jest idealny przy zanikach kości w odcinkach bocznych.",
+          "Nasi chirurdzy dobierają optymalną metodę na podstawie tomografii 3D CBCT."
+        ]
+      },
+      {
+        "q": "Czy jeśli nie mam wystarczającej ilości tkanki kostnej, nadal mogę mieć wszczepione implanty?",
+        "a": [
+          "W zdecydowanej większości przypadków tak! Wykonujemy zaawansowaną augmentację kości (greft), podniesienie dna zatoki lub implanty jarzmowe (Zygoma)."
+        ]
+      },
+      {
+        "q": "Czy marki implantów naprawdę mają znaczenie? (Skąd wynika różnica w cenie?)",
+        "a": [
+          "Tak, renomowane marki (np. Straumann, DXL) to dekady badań klinicznych, najwyższa czystość tytanu oraz gwarancja dostępności części zamiennych na całym świecie."
+        ]
+      },
+      {
+        "q": "Dlaczego niektóre kliniki mówią, że leczenie All-on-4 / All-on-6 zajmuje 10 dni, a Państwo mówią, że w 3 dni?",
+        "a": [
+          "Wynika to z naszych nowoczesnych procedur cyfrowych. Pierwszego dnia wszczepiamy implanty i pobieramy skany 3D, a trzeciego dnia mocujemy gotowe stałe zęby tymczasowe."
+        ]
+      },
+      {
+        "q": "Dlaczego muszę odwiedzić klinikę po raz drugi na leczenie implantologiczne?",
+        "a": [
+          "Biologiczny proces zrastania się implantu z kością (osteointegracja) trwa od 3 do 6 miesięcy. Druga wizyta służy założeniu docelowych, trwałych zębów cyrkonowych."
+        ]
+      },
+      {
+        "q": "Czym jest łącznik (abutment)? Dlaczego go potrzebuję, jeśli mam już implanty i zakładam koronę?",
+        "a": [
+          "Łącznik to precyzyjny element łączący śrubę implantu w kości z widoczną w jamie ustnej koroną zębową, zapewniający jej stabilność i naturalny profil dziąsła."
+        ]
+      }
+    ]
+  }
 }

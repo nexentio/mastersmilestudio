@@ -1,46 +1,232 @@
 {
-  "eyebrow": "✦ Lo que Debe Saber",
+  "eyebrow": "✦ Lo Que Necesita Saber",
   "title": "Preguntas Frecuentes y Guía de la Clínica",
-  "subtitle": "Descubra todo sobre Master Smile Studio, los procedimientos de tratamiento, la transparencia de precios y las citas.",
-  "aboutHeading": "Clínica Dental Master Smile Studio",
-  "aboutP1": "Master Smile Studio es una clínica dental integral equipada con tecnología de última generación y estándares internacionales de estética dental.",
-  "aboutP2": "Contamos con múltiples gabinetes especializados que garantizan atención sin esperas innecesarias.",
-  "aboutP3": "Ofrecemos 16 áreas de especialización, desde carillas de circonio hasta implantes All-on-4 / All-on-6 y diseño de sonrisa Hollywood.",
-  "aboutP4": "Hemos atendido a miles de pacientes de más de 40 países con una valoración de 4.9/5 en Google.",
+  "subtitle": "Descubra todo sobre Master Smile Studio, nuestros procedimientos de tratamiento especializados, precios transparentes y pautas para citas.",
+  "aboutHeading": "Policlínica Dental Master Smile Studio",
+  "aboutP1": "Master Smile Studio es una policlínica dental de última generación que opera bajo estándares internacionales de odontología estética y salud bucal.",
+  "aboutP2": "Nuestra estructura como policlínica ofrece una gran comodidad: múltiples salas de tratamiento permiten atender a varios pacientes simultáneamente sin esperas.",
+  "aboutP3": "Ofrecemos 16 tratamientos integrales bajo un mismo techo, desde coronas de circonio e implantes All-on-4 / All-on-6 hasta diseño de sonrisa.",
+  "aboutP4": "Hemos atendido a miles de pacientes de más de 40 países con una calificación de 4.9/5 en Google.",
   "appointmentHeading": "Proceso de Cita y Primera Consulta",
-  "appointmentP1": "Puede solicitar su cita llamando por teléfono, escribiendo a WhatsApp o completando el formulario web.",
-  "appointmentP2": "La primera consulta incluye revisión gratuita y radiografía panorámica digital con baja radiación.",
-  "appointmentP3": "Al finalizar, recibe un plan de tratamiento escrito y un presupuesto transparente sin costes sorpresa.",
-  "appointmentP4": "En caso de dolor agudo, le atendemos el mismo día con prioridad de urgencia.",
+  "appointmentP1": "Puede reservar su cita por teléfono, WhatsApp o a través de nuestro formulario en línea.",
+  "appointmentP2": "Su primera visita es una consulta preliminar gratuita que incluye radiografía panorámica digital con mínima radiación.",
+  "appointmentP3": "Al finalizar la revisión, recibirá un plan de tratamiento por escrito y un presupuesto detallado sin costos ocultos.",
+  "appointmentP4": "En casos de dolor dental agudo o urgencias, ofrecemos atención prioritaria en el mismo día.",
   "seoTags": [
     "Master Smile Studio",
     "Cita Master Smile Studio",
-    "Clínica Dental Estética",
-    "Precios Circonio Dental",
+    "Policlínica Dental",
+    "Precios Coronas Circonio",
     "Implantes All-on-4 Turquía",
     "Consulta Gratuita",
     "Radiografía Digital"
   ],
   "faqList": [
     {
-      "question": "¿La primera consulta y la radiografía son gratuitas?",
-      "answer": "Sí, en Master Smile Studio la primera evaluación es totalmente gratuita."
+      "question": "¿La consulta inicial y la radiografía digital son gratuitas?",
+      "answer": "Sí, en Master Smile Studio la primera evaluación diagnóstica y la consulta son gratuitas."
     },
     {
-      "question": "¿Cuánto tiempo dura el tratamiento de sonrisa?",
-      "answer": "Gracias a la tecnología CAD/CAM, los tratamientos de circonio y carillas se completan en solo 3 a 5 días."
+      "question": "¿Cuánto dura un tratamiento de diseño de sonrisa?",
+      "answer": "Gracias a la tecnología digital CAD/CAM, las coronas de circonio y carillas E-Max se completan en 3 a 5 días laborables."
     },
     {
-      "question": "¿Cómo se organiza la estancia para pacientes internacionales?",
-      "answer": "Ofrecemos traslados VIP desde el aeropuerto, reservas en hoteles de 5 estrellas y coordinadores bilingües."
+      "question": "¿Cómo se organiza el viaje para pacientes internacionales?",
+      "answer": "Ofrecemos traslados VIP desde el aeropuerto, reservas en hoteles de 5 estrellas y coordinadores en varios idiomas."
     },
     {
-      "question": "¿Los tratamientos cuentan con garantía oficial?",
-      "answer": "Sí, todos los implantes y piezas de circonio incluyen certificado internacional de autenticidad y garantía escrita."
+      "question": "¿Los tratamientos están respaldados por garantías oficiales?",
+      "answer": "Sí, todos los implantes y restauraciones de circonio cuentan con certificados internacionales y garantía oficial."
     },
     {
-      "question": "¿Puedo acudir el mismo día en caso de urgencia dental?",
-      "answer": "Sí, en casos de dolor agudo o urgencia le atendemos el mismo día."
+      "question": "¿Puedo obtener una cita el mismo día para dolor urgente?",
+      "answer": "Sí, en caso de dolor agudo o urgencias, atendemos a los pacientes con prioridad en el mismo día."
     }
-  ]
+  ],
+  "treatmentFaq": {
+    "title": "Preguntas Frecuentes Sobre Este Tratamiento",
+    "subText": "¿Tiene preguntas sobre su tratamiento? Desde los plazos hasta los costos y la recuperación, estamos aquí para guiarle con respuestas claras y asesoramiento experto en cada paso.",
+    "items": [
+      {
+        "q": "¿Cambiará mi plan de tratamiento o el precio acordado cuando llegue a la clínica?",
+        "a": [
+          "Buena pregunta. Lamentablemente, muchos pacientes que viajan al extranjero se enfrentan a prácticas poco éticas en ciertas clínicas, como costos sorpresa inesperados.",
+          "El plan y el presupuesto que compartimos con usted se preparan minuciosamente a partir de sus fotos, radiografías y expectativas enviadas antes del viaje. Al llegar a la clínica, simplemente confirmamos todo en persona mediante un examen presencial antes de iniciar el tratamiento.",
+          "A veces, un pequeño detalle que no se apreciaba en las imágenes previas puede detectarse en la exploración clínica (como la necesidad de un injerto óseo o una elevación de seno). A diferencia de la mayoría de las clínicas, la posibilidad y los costos de estos procedimientos se detallan previamente con total transparencia en su plan.",
+          "Si esto ocurre, se lo explicaremos con claridad, le mostraremos el diagnóstico en pantalla y analizaremos todas las alternativas antes de realizar cualquier cambio. Nunca se realiza ninguna intervención sin su consentimiento expreso.",
+          "Su plan de tratamiento y precio se mantendrán exactamente igual, a menos que se descubra una nueva necesidad anatómica durante la revisión."
+        ]
+      },
+      {
+        "q": "¿Me ayudarán con el alojamiento?",
+        "a": [
+          "Sí, por supuesto. Nuestros pacientes viajan habitualmente desde el extranjero, por lo que nos aseguramos de que se sienta acompañado tanto en su tratamiento dental como durante toda su estancia en Estambul. Le recomendamos hoteles colaboradores de confianza cerca de la clínica y, si lo prefiere, gestionamos su reserva directamente.",
+          "Nuestro objetivo es que su viaje sea lo más fluido, cómodo y libre de estrés posible."
+        ]
+      },
+      {
+        "q": "¿Es seguro viajar a Turquía?",
+        "a": [
+          "¡Sí! Turquía es uno de los destinos turísticos y médicos más concurridos y seguros del mundo. Millones de personas viajan cada año sin inconvenientes. Estambul cuenta con clínicas modernas, hoteles de categoría internacional y servicios de transporte privado.",
+          "Nuestra clínica se encarga de coordinar traslados VIP y alojamientos seguros para que disfrute de una estancia agradable y con total tranquilidad."
+        ]
+      },
+      {
+        "q": "¿Qué materiales se utilizan para las coronas dentales en su clínica?",
+        "a": [
+          "Utilizamos las tecnologías más avanzadas y materiales de estándar internacional.",
+          "Para carillas y coronas estéticas utilizamos cerámica suiza Ivoclar E-Max, mientras que para prótesis sobre implantes All-on-4 / All-on-6 empleamos circonio monolítico austríaco/alemán de la prestigiosa marca Amann Girrbach."
+        ]
+      },
+      {
+        "q": "¿Puedo ver la forma y el color de mis dientes antes de que se fabriquen?",
+        "a": [
+          "Sí, por supuesto. Durante el diseño digital de sonrisa (Digital Smile Design), le mostramos una simulación 3D de sus nuevos dientes. Con un modelo de prueba (mock-up), puede ver y probar el color y la forma directamente en su boca antes de la fabricación definitiva.",
+          "Tenga en cuenta que una vez terminadas las prótesis definitivas no se pueden aclarar más, aunque sí oscurecer ligeramente si fuese necesario. Por eso acordamos y aprobamos cada detalle con usted de antemano."
+        ]
+      },
+      {
+        "q": "¿Sentiré demasiado dolor después de la cirugía de implantes?",
+        "a": [
+          "Durante los primeros días puede experimentar una leve inflamación o molestia, muy similar a la de una extracción dental habitual. Esto se controla perfectamente con la medicación analgésica y antiinflamatoria que le pautaremos.",
+          "El primer día le facilitaremos compresas de frío para aplicar en intervalos de 5 minutos, lo que reduce de forma muy eficaz la hinchazón. El pico de molestia suele remitir rápidamente en las primeras 48 horas.",
+          "Durante la intervención no sentirá ningún dolor, ya que aplicamos anestesia local de alta precisión y disponemos de opciones de sedación."
+        ]
+      },
+      {
+        "q": "¿Admiten pagos en línea?",
+        "a": [
+          "Nuestra clínica ofrece diversas opciones de pago seguras y flexibles adaptadas a las necesidades de los pacientes internacionales.",
+          "Para consultar métodos de pago y transferencias bancarias, no dude en consultarnos."
+        ]
+      },
+      {
+        "q": "¿Sus paquetes incluyen hoteles y traslados?",
+        "a": [
+          "El contenido de los paquetes depende del tratamiento acordado. Nuestros paquetes completos All-on-4 / All-on-6 incluyen alojamiento en hotel 4/5 estrellas con desayuno y servicio de chófer privado VIP."
+        ]
+      },
+      {
+        "q": "¿Puedo pagar el tratamiento o los paquetes a plazos?",
+        "a": [
+          "En nuestra clínica el pago se fracciona cómodamente en dos partes, correspondientes a sus dos visitas a Estambul."
+        ]
+      },
+      {
+        "q": "¿Ofrecen garantía o seguro?",
+        "a": [
+          "Todos nuestros procedimientos cuentan con garantía oficial de la clínica. Nuestros implantes dentales de gama prémium (como Straumann) disponen de garantía internacional de por vida del fabricante y pasaporte de implante."
+        ]
+      },
+      {
+        "q": "¿Puedo posponer mis tratamientos dentales de manera segura?",
+        "a": [
+          "Posponer el tratamiento es posible, pero no es la opción más conveniente. La falta de piezas dentales provoca una pérdida progresiva de hueso maxilar a lo largo del tiempo.",
+          "Cuanto más tiempo pase, mayor es el riesgo de necesitar cirugías complementarias de regeneración ósea en el futuro.",
+          "Le aconsejamos no demorar el tratamiento para preservar las mejores condiciones anatómicas."
+        ]
+      },
+      {
+        "q": "¿Qué corona es mejor sobre implantes: E-Max o Corona de Circonio?",
+        "a": [
+          "Para implantes y molares que soportan elevadas presiones al masticar, el circonio monolítico es la opción más resistente y fiable.",
+          "Las coronas E-Max están fabricadas en porcelana vítrea de alta pureza y ofrecen una estética inigualable en el sector frontal de la sonrisa.",
+          "El circonio es la referencia absoluta en resistencia sobre implantes, mientras que el E-Max destaca para dientes frontales individuales."
+        ]
+      },
+      {
+        "q": "¿Qué hago si se rompe una prótesis All-on-6?",
+        "a": [
+          "Si sufre una fisura o rotura en su prótesis All-on-6, póngase en contacto inmediato con nuestra clínica.",
+          "Nuestros especialistas repararán o sustituirán la estructura con cobertura de garantía. Evite intentar arreglarla usted mismo para no comprometer los implantes ni la encía."
+        ]
+      },
+      {
+        "q": "¿Las prótesis All-on-6 están hechas de resina, acrílico o material plástico?",
+        "a": [
+          "Nuestras prótesis definitivas All-on-6 se fabrican en circonio monolítico o porcelana de alta resistencia para garantizar máxima durabilidad y estética natural.",
+          "Las resinas y acrílicos solo se emplean en los dientes provisionales durante los meses de cicatrización."
+        ]
+      },
+      {
+        "q": "¿Hay sedación disponible en su clínica para el tratamiento con implantes? ¿Qué tipos de sedación ofrecen?",
+        "a": [
+          "Sí, el confort del paciente es nuestra máxima prioridad, sobre todo en personas con odontofobia o ansiedad.",
+          "Ofrecemos tres modalidades: Anestesia local (adormece solo la zona a intervenir), Sedación intravenosa consciente (permanece despierto pero en un estado de profunda relajación) y Anestesia general con médico especialista en anestesiología."
+        ]
+      },
+      {
+        "q": "¿Por qué se prefiere un implante en lugar de un puente en casos de pérdida dental?",
+        "a": [
+          "El implante no necesita tallar ni dañar los dientes sanos contiguos para apoyarse.",
+          "Además, el implante estimula el hueso maxilar igual que una raíz natural, previniendo la reabsorción ósea y conservando la estructura del rostro."
+        ]
+      },
+      {
+        "q": "¿Se pueden realizar cirugías de implantes en pacientes con enfermedades como VIH, Hepatitis, etc.?",
+        "a": [
+          "La respuesta es sí. Siempre que el estado general de salud esté controlado y bajo seguimiento médico, los pacientes con estas patologías pueden recibir implantes con total seguridad.",
+          "Aplicamos estrictos protocolos internacionales de esterilización y bioseguridad, garantizando la total confidencialidad de su historial clínico."
+        ]
+      },
+      {
+        "q": "¿Los pacientes con enfermedades crónicas como la diabetes pueden ponerse implantes?",
+        "a": [
+          "¡Por supuesto! Lo fundamental es que la diabetes esté bien controlada con niveles estables de glucosa y un valor adecuado de hemoglobina glicada (HbA1c).",
+          "Le solicitaremos analíticas previas para planificar la intervención con las máximas garantías de seguridad."
+        ]
+      },
+      {
+        "q": "¿Puedo ponerme implantes si soy fumador?",
+        "a": [
+          "Sí, el tabaquismo no le excluye del tratamiento, pero el tabaco reduce el riego sanguíneo y puede ralentizar la osteointegración.",
+          "Recomendamos suspender o reducir el consumo de cigarrillos antes y después de la cirugía para asegurar el mayor éxito del implante."
+        ]
+      },
+      {
+        "q": "¿Qué pasa si el implante falla o no se integra?",
+        "a": [
+          "Nuestros implantes presentan una tasa de éxito superior al 98%. En el caso excepcional de que un implante no se integre, se retira, se deja cicatrizar la zona y se coloca uno nuevo sin coste quirúrgico añadido bajo nuestra garantía."
+        ]
+      },
+      {
+        "q": "¿Cuál es la diferencia entre los tratamientos All-on-4 y All-on-6? ¿Cómo deciden cuál es el adecuado para mí?",
+        "a": [
+          "La diferencia radica en el número de implantes: 4 implantes en All-on-4 y 6 en All-on-6.",
+          "El sistema All-on-6 ofrece una mayor firmeza y reparto de cargas en huesos densos, mientras que el All-on-4 es perfecto para pacientes con menor volumen óseo posterior.",
+          "Nuestros cirujanos le recomendarán la solución idónea tras analizar su tomografía 3D CBCT."
+        ]
+      },
+      {
+        "q": "Si no tengo suficiente tejido óseo para implantes dentales, ¿aún puedo ponerme implantes?",
+        "a": [
+          "¡En la gran mayoría de los casos sí! Gracias a técnicas como el injerto de hueso, la elevación de seno maxilar o los implantes cigomáticos, podemos rehabilitar su dentadura fija incluso con escaso hueso remanente."
+        ]
+      },
+      {
+        "q": "¿Realmente importan las marcas de implantes? (¿Por qué hay diferencia de precio?)",
+        "a": [
+          "Sí. Marcas líderes como Straumann acumulan décadas de investigación científica, máxima pureza de titanio y compatibilidad de componentes en clínicas de cualquier país del mundo."
+        ]
+      },
+      {
+        "q": "En tratamientos de boca completa como All-on-4 / All-on-6, ¿por qué algunas clínicas dicen que tardan 10 días mientras ustedes dicen 3 días?",
+        "a": [
+          "La diferencia está en nuestro protocolo digital y laboratorio propio CAD/CAM. Colocamos los implantes el primer día y ajustamos sus dientes fijos temporales en solo 3 días hábiles."
+        ]
+      },
+      {
+        "q": "¿Por qué tengo que visitar su clínica por segunda vez para mi tratamiento de implantes?",
+        "a": [
+          "El protocolo biológico de osteointegración requiere entre 3 y 6 meses para que el implante se fusione con el hueso de forma permanente. En la segunda visita colocamos las coronas de circonio definitivas."
+        ]
+      },
+      {
+        "q": "¿Qué es un pilar (abutment)? ¿Por qué necesito uno si ya tengo implantes y me van a poner una corona?",
+        "a": [
+          "El pilar es la pieza de unión intermedia entre el tornillo del implante insertado en el hueso y la corona dental visible, asegurando estabilidad y un perfil gingival natural."
+        ]
+      }
+    ]
+  }
 }

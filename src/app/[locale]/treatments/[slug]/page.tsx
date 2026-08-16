@@ -17,61 +17,109 @@ interface Props {
   }>;
 }
 
+const HERO_I18N: Record<
+  string,
+  {
+    defaultBadge: string;
+    defaultTitle: string;
+    defaultSubtitle: string;
+    primaryBtnText: string;
+    primaryBtnAria: string;
+    secondaryBtnText: string;
+    secondaryBtnAria: string;
+  }
+> = {
+  en: {
+    defaultBadge: 'TREATMENTS',
+    defaultTitle: 'Dental Implants in Istanbul',
+    defaultSubtitle:
+      'Restore your smile with confidence, lifelong guarantees, and expert oral surgeons in Istanbul.',
+    primaryBtnText: 'Contact & Appointment',
+    primaryBtnAria: 'Contact Master Smile Studio for appointment and consultation',
+    secondaryBtnText: 'View Packages & Details',
+    secondaryBtnAria: 'Scroll down to explore treatment packages and medical details',
+  },
+  tr: {
+    defaultBadge: 'TEDAVİLERİMİZ',
+    defaultTitle: 'İstanbul Diş İmplantı Tedavisi',
+    defaultSubtitle:
+      'İstanbul’daki kliniğimizde ömür boyu garantili premium implant markaları ve uzman cerrahlarımızla eksiksiz bir gülüşe kavuşun.',
+    primaryBtnText: 'Randevu & Bilgi Al',
+    primaryBtnAria: 'Randevu ve bilgi almak için iletişim sayfasına gidin',
+    secondaryBtnText: 'Paketleri İncele',
+    secondaryBtnAria: 'Tedavi paketlerini ve ayrıntılarını incelemek için aşağı kaydırın',
+  },
+  de: {
+    defaultBadge: 'BEHANDLUNGEN',
+    defaultTitle: 'Zahnimplantate in Istanbul',
+    defaultSubtitle:
+      'Stellen Sie Ihr Lächeln wieder her mit lebenslanger Garantie auf Premium-Implantate und erfahrenen Chirurgen in Istanbul.',
+    primaryBtnText: 'Kontakt & Termin',
+    primaryBtnAria: 'Kontaktieren Sie Master Smile Studio für Beratung und Termin',
+    secondaryBtnText: 'Pakete & Details ansehen',
+    secondaryBtnAria: 'Nach unten scrollen, um Behandlungspakete zu entdecken',
+  },
+  pl: {
+    defaultBadge: 'ZABIEGI',
+    defaultTitle: 'Implanty zębowe w Stambule',
+    defaultSubtitle:
+      'Odzyskaj piękny uśmiech dzięki dożywotniej gwarancji na implanty premium i doświadczonym chirurgom w Stambule.',
+    primaryBtnText: 'Kontakt i Rezerwacja',
+    primaryBtnAria:
+      'Skontaktuj się z Master Smile Studio w celu rezerwacji wizyty i konsultacji',
+    secondaryBtnText: 'Zobacz Pakiety i Szczegóły',
+    secondaryBtnAria:
+      'Przewiń w dół, aby sprawdzić pakiety leczenia i szczegóły medyczne',
+  },
+  pt: {
+    defaultBadge: 'TRATAMENTOS',
+    defaultTitle: 'Implantes Dentários em Istambul',
+    defaultSubtitle:
+      'Recupere seu sorriso com garantia vitalícia em implantes premium e cirurgiões especialistas em Istambul.',
+    primaryBtnText: 'Contato e Agendamento',
+    primaryBtnAria:
+      'Entre em contato com a Master Smile Studio para agendamento e consulta',
+    secondaryBtnText: 'Ver Pacotes e Detalhes',
+    secondaryBtnAria: 'Role para baixo para explorar pacotes de tratamento e detalhes',
+  },
+  es: {
+    defaultBadge: 'TRATAMIENTOS',
+    defaultTitle: 'Implantes Dentales en Estambul',
+    defaultSubtitle:
+      'Recupere su sonrisa con garantía de por vida en implantes prémium y cirujanos expertos en Estambul.',
+    primaryBtnText: 'Contacto y Cita',
+    primaryBtnAria: 'Póngase en contacto con Master Smile Studio para consultas y citas',
+    secondaryBtnText: 'Ver Paquetes y Detalles',
+    secondaryBtnAria:
+      'Desplácese hacia abajo para ver los paquetes de tratamiento y detalles',
+  },
+  ru: {
+    defaultBadge: 'ПРОЦЕДУРЫ',
+    defaultTitle: 'Имплантация зубов в Стамбуле',
+    defaultSubtitle:
+      'Верните красивую улыбку с пожизненной гарантией на премиальные имплантаты и опытными хирургами в Стамбуле.',
+    primaryBtnText: 'Консультация и Запись',
+    primaryBtnAria:
+      'Свяжитесь с Master Smile Studio для консультации и записи на прием',
+    secondaryBtnText: 'Посмотреть Пакеты и Детали',
+    secondaryBtnAria:
+      'Прокрутите вниз, чтобы изучить пакеты лечения и медицинские детали',
+  },
+};
+
 export async function generateMetadata({ params }: Props) {
   const { locale, slug } = await params;
   setRequestLocale(locale);
 
   const content = await getTreatmentContent(locale, slug);
-
-  const titleMap: Record<string, { en: string; tr: string }> = {
-    'dental-implants': {
-      en: 'Dental Implants in Istanbul | Master Smile Studio',
-      tr: 'İstanbul Diş İmplantı Tedavisi | Master Smile Studio',
-    },
-    'all-on-4-implants': {
-      en: 'All-on-4 Dental Implants in Istanbul | Master Smile Studio',
-      tr: 'All-on-4 Diş İmplantı İstanbul | Master Smile Studio',
-    },
-    'all-on-6-implants': {
-      en: 'All-on-6 Dental Implants in Istanbul | Master Smile Studio',
-      tr: 'All-on-6 Diş İmplantı İstanbul | Master Smile Studio',
-    },
-    'full-mouth-implants': {
-      en: 'Full Mouth Dental Implants in Istanbul | Master Smile Studio',
-      tr: 'Tam Ağız Diş İmplantı İstanbul | Master Smile Studio',
-    },
-    'porcelain-veneers': {
-      en: 'Porcelain Veneers in Istanbul | Master Smile Studio',
-      tr: 'Porselen Lamine Kaplama İstanbul | Master Smile Studio',
-    },
-    'zirconia-crowns': {
-      en: 'Zirconia Crowns in Istanbul | Master Smile Studio',
-      tr: 'Zirkonyum Diş Kaplama İstanbul | Master Smile Studio',
-    },
-    'hollywood-smile': {
-      en: 'Hollywood Smile Design in Istanbul | Master Smile Studio',
-      tr: 'Hollywood Smile Gülüş Tasarımı İstanbul | Master Smile Studio',
-    },
-    'teeth-whitening': {
-      en: 'Laser Teeth Whitening in Istanbul | Master Smile Studio',
-      tr: 'Lazer Diş Beyazlatma İstanbul | Master Smile Studio',
-    },
-  };
-
-  const currentMeta = titleMap[slug] || {
-    en: 'Dental Treatments in Istanbul | Master Smile Studio',
-    tr: 'İstanbul Diş Tedavileri | Master Smile Studio',
-  };
+  const fallbackMeta = HERO_I18N[locale] || HERO_I18N.en;
 
   const title =
     content?.seo?.title ||
-    (locale === 'tr' ? currentMeta.tr : currentMeta.en);
+    `${fallbackMeta.defaultTitle} | Master Smile Studio`;
 
   const description =
-    content?.seo?.description ||
-    (locale === 'tr'
-      ? 'İstanbul’da dünya standartlarında diş tedavisi, dijital gülüş tasarımı ve implant uygulamaları. Ücretsiz online konsültasyon alın.'
-      : 'World-class dental treatments, digital smile design, and implants in Istanbul, Turkey. Get your free online consultation.');
+    content?.seo?.description || fallbackMeta.defaultSubtitle;
 
   return {
     title,
@@ -85,28 +133,17 @@ export default async function TreatmentDetailPage({ params }: Props) {
   setRequestLocale(locale);
 
   const content = await getTreatmentContent(locale, slug);
+  const heroFallback = HERO_I18N[locale] || HERO_I18N.en;
 
   const isDentalImplants = slug === 'dental-implants';
   const isAllOnSix = slug === 'all-on-6-implants';
 
-  let heroBadge = content?.hero?.badge || (locale === 'tr' ? 'TEDAVİLERİMİZ' : 'TREATMENTS');
-  let heroTitle = content?.hero?.title || (locale === 'tr' ? 'İstanbul Diş İmplantı' : 'Dental Implants in Istanbul');
-  let heroSubtitle =
-    content?.hero?.subtitle ||
-    (locale === 'tr'
-      ? 'İstanbul’daki kliniğimizde ömür boyu garantili premium implant markaları ve uzman cerrahlarımızla eksiksiz bir gülüşe kavuşun.'
-      : 'Restore your smile with confidence, lifelong guarantees, and expert oral surgeons in Istanbul.');
+  const heroBadge = content?.hero?.badge || heroFallback.defaultBadge;
+  const heroTitle = content?.hero?.title || heroFallback.defaultTitle;
+  const heroSubtitle = content?.hero?.subtitle || heroFallback.defaultSubtitle;
 
-  if (isAllOnSix && !content?.hero) {
-    heroTitle =
-      locale === 'tr'
-        ? 'All-on-6 Diş İmplantı İstanbul'
-        : 'All-on-6 Dental Implants in Istanbul';
-    heroSubtitle =
-      locale === 'tr'
-        ? 'Komple dişsizlik durumunda ömür boyu garantili sabit zirkonyum dişlerle yepyeni bir gülüşe kavuşun.'
-        : 'Restore your entire smile with permanent fixed zirconia teeth supported by premium titanium implants.';
-  }
+  const primaryBtnText = content?.hero?.primaryBtn || heroFallback.primaryBtnText;
+  const secondaryBtnText = content?.hero?.secondaryBtn || heroFallback.secondaryBtnText;
 
   const canonicalUrl = `https://mastersmilestudio.com/${locale}/treatments/${slug}`;
   const jsonLd = generateTreatmentJsonLd({
@@ -128,25 +165,17 @@ export default async function TreatmentDetailPage({ params }: Props) {
       {/* Global Navigation Header */}
       <Header />
 
-      {/* 1:1 Modular Treatment Hero Section */}
+      {/* 1:1 Modular Treatment Hero Section with 7-Language i18n */}
       <TreatmentHeroBanner
-        tag={locale === 'tr' ? 'TEDAVİLERİMİZ' : 'TREATMENTS'}
+        tag={heroBadge}
         title={heroTitle}
         subtitle={heroSubtitle}
-        primaryBtnText={locale === 'tr' ? 'Randevu & Bilgi Al' : 'Contact & Appointment'}
+        primaryBtnText={primaryBtnText}
         primaryBtnHref="/contact"
-        primaryBtnAriaLabel={
-          locale === 'tr'
-            ? 'Randevu ve bilgi almak için iletişim sayfasına gidin'
-            : 'Contact Master Smile Studio for appointment and consultation'
-        }
-        secondaryBtnText={locale === 'tr' ? 'Paketleri İncele' : 'View Packages & Details'}
+        primaryBtnAriaLabel={heroFallback.primaryBtnAria}
+        secondaryBtnText={secondaryBtnText}
         secondaryBtnHref="#main-content"
-        secondaryBtnAriaLabel={
-          locale === 'tr'
-            ? 'Tedavi paketlerini ve ayrıntılarını incelemek için aşağı kaydırın'
-            : 'Scroll down to explore treatment packages and medical details'
-        }
+        secondaryBtnAriaLabel={heroFallback.secondaryBtnAria}
       />
 
       {/* Main Content Area Landmark */}
