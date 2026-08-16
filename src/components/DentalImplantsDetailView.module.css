@@ -1,3 +1,8 @@
+.pageWrapper {
+  background-color: #ffffff;
+  color: #111827;
+}
+
 .introSection {
   padding: 4.5rem 1.5rem 2rem 1.5rem;
   background-color: #ffffff;
@@ -6,21 +11,22 @@
 .container {
   max-width: 1140px;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .mainHeading {
   font-size: clamp(1.85rem, 3.2vw, 2.5rem);
-  font-weight: 700;
-  color: #0f172a;
+  font-weight: 800;
+  color: #0c1b4d;
   line-height: 1.25;
   margin: 0 0 1.5rem 0;
   letter-spacing: -0.02em;
 }
 
 .subHeading {
-  font-size: clamp(1.15rem, 1.8vw, 1.35rem);
+  font-size: clamp(1.2rem, 2vw, 1.45rem);
   font-weight: 700;
-  color: #0f172a;
+  color: #0c1b4d;
   margin: 0 0 1.25rem 0;
 }
 
@@ -29,6 +35,11 @@
   line-height: 1.8;
   color: #334155;
   margin-bottom: 1.25rem;
+}
+
+.textP strong {
+  color: #0f172a;
+  font-weight: 700;
 }
 
 .bulletList {
@@ -50,11 +61,11 @@
   margin: 3rem auto;
   position: relative;
   aspect-ratio: 16 / 9;
-  border-radius: 20px;
+  border-radius: 18px;
   overflow: hidden;
   background-color: #09090b;
   box-shadow: 0 16px 45px rgba(0, 0, 0, 0.12);
-  border: 1px solid rgba(0, 0, 0, 0.08);
+  border: 1px solid #e2e8f0;
 }
 
 .mainVideoWrap iframe {
@@ -70,30 +81,52 @@
   margin: 3.5rem 0;
 }
 
-.costHeading {
-  text-align: center;
-  font-size: clamp(1.85rem, 3.2vw, 2.5rem);
-  font-weight: 700;
-  color: #0f172a;
-  margin: 3.5rem 0 2rem 0;
-  letter-spacing: -0.02em;
-  line-height: 1.25;
-}
-
 .sectionTitle {
-  font-size: clamp(1.6rem, 2.6vw, 2.1rem);
-  font-weight: 700;
-  color: #0f172a;
-  margin: 3rem 0 1.25rem 0;
+  font-size: clamp(1.6rem, 2.6vw, 2.2rem);
+  font-weight: 800;
+  color: #0c1b4d;
+  margin: 3.5rem 0 1.25rem 0;
   letter-spacing: -0.015em;
   line-height: 1.3;
 }
 
 .sectionSubTitle {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: #0f172a;
-  margin: 2.25rem 0 0.75rem 0;
+  font-size: 1.28rem;
+  font-weight: 800;
+  color: #0c1b4d;
+  margin: 2.25rem 0 0.85rem 0;
+}
+
+.reasonNumber {
+  color: #d58936;
+  font-weight: 800;
+  margin-right: 0.35rem;
+}
+
+.miniJourneyBanner {
+  background: linear-gradient(135deg, #0c1b4d 0%, #172a6b 100%);
+  color: #ffffff;
+  border-radius: 16px;
+  padding: 1.75rem 2rem;
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  box-shadow: 0 10px 30px rgba(12, 27, 77, 0.15);
+}
+
+.miniJourneyTitle {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0;
+}
+
+.miniJourneyText {
+  font-size: 0.95rem;
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin: 0;
 }
 
 .textItalic {
@@ -105,11 +138,110 @@
 }
 
 .linkGold {
-  color: #D58936;
+  color: #d58936;
   font-weight: 700;
   text-decoration: none;
 }
 
 .linkGold:hover {
   text-decoration: underline;
+}
+
+.btnWrap {
+  margin: 1.5rem 0 2rem 0;
+}
+
+.btnPrimary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.75rem;
+  border-radius: 9999px;
+  background-color: #d58936;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(213, 137, 54, 0.35);
+  transition: all 0.2s ease;
+}
+
+.btnPrimary:hover {
+  background-color: #b87128;
+  transform: translateY(-2px);
+}
+
+.ctaBanner {
+  background: linear-gradient(135deg, #0c1b4d 0%, #070f2c 100%);
+  color: #ffffff;
+  padding: 5rem 1.5rem;
+  text-align: center;
+  position: relative;
+}
+
+.ctaContainer {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.ctaTitle {
+  font-size: clamp(1.85rem, 3.2vw, 2.5rem);
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 1rem 0;
+}
+
+.ctaDesc {
+  font-size: 1.08rem;
+  color: #cbd5e1;
+  line-height: 1.7;
+  margin: 0 0 2rem 0;
+}
+
+.ctaBtnRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.ctaBtnGold {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.95rem 2rem;
+  border-radius: 9999px;
+  background-color: #d58936;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(213, 137, 54, 0.4);
+  transition: all 0.2s ease;
+}
+
+.ctaBtnGold:hover {
+  background-color: #b87128;
+  transform: translateY(-2px);
+}
+
+.ctaBtnWhatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.95rem 2rem;
+  border-radius: 9999px;
+  background-color: #25d366;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.35);
+  transition: all 0.2s ease;
+}
+
+.ctaBtnWhatsapp:hover {
+  background-color: #1eb956;
+  transform: translateY(-2px);
 }

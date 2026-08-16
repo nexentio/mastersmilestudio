@@ -5,20 +5,20 @@ import { useLocale, useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
 import { getWhatsAppLink } from '@/config/site';
 import TreatmentDivider from '@/components/treatment-sections/TreatmentDivider';
-import TreatmentServicesIncludedSection from '@/components/treatment-sections/TreatmentServicesIncludedSection';
-import TreatmentParallaxBanner from '@/components/treatment-sections/TreatmentParallaxBanner';
-import TreatmentDoctorsSection from '@/components/treatment-sections/TreatmentDoctorsSection';
-import TreatmentJourneySimpleSection from '@/components/treatment-sections/TreatmentJourneySimpleSection';
-import TreatmentPatientReelsSection from '@/components/treatment-sections/TreatmentPatientReelsSection';
-import TreatmentClinicTourSection from '@/components/treatment-sections/TreatmentClinicTourSection';
-import TreatmentRightTreatmentAccordion from '@/components/treatment-sections/TreatmentRightTreatmentAccordion';
-import TreatmentReviewsSection from '@/components/treatment-sections/TreatmentReviewsSection';
-import TreatmentBeforeAfterSliderSection from '@/components/treatment-sections/TreatmentBeforeAfterSliderSection';
-import TreatmentInteractiveQuoteForm from '@/components/treatment-sections/TreatmentInteractiveQuoteForm';
 import TreatmentTripleVideoSlider from '@/components/treatment-sections/TreatmentTripleVideoSlider';
-import TreatmentPackagesSlider from '@/components/treatment-sections/TreatmentPackagesSlider';
+import TreatmentRightTreatmentAccordion from '@/components/treatment-sections/TreatmentRightTreatmentAccordion';
+import TreatmentDoctorsSection from '@/components/treatment-sections/TreatmentDoctorsSection';
+import TreatmentBeforeAfterSliderSection from '@/components/treatment-sections/TreatmentBeforeAfterSliderSection';
+import TreatmentJourneySimpleSection from '@/components/treatment-sections/TreatmentJourneySimpleSection';
+import TreatmentClinicTourSection from '@/components/treatment-sections/TreatmentClinicTourSection';
+import TreatmentServicesIncludedSection from '@/components/treatment-sections/TreatmentServicesIncludedSection';
+import TreatmentPatientReelsSection from '@/components/treatment-sections/TreatmentPatientReelsSection';
 import TreatmentCostBreakdownAndPackageBannerSection from '@/components/treatment-sections/TreatmentCostBreakdownAndPackageBannerSection';
+import TreatmentPackagesSlider from '@/components/treatment-sections/TreatmentPackagesSlider';
+import TreatmentReviewsSection from '@/components/treatment-sections/TreatmentReviewsSection';
+import TreatmentParallaxBanner from '@/components/treatment-sections/TreatmentParallaxBanner';
 import TreatmentFAQSection from '@/components/treatment-sections/TreatmentFAQSection';
+import TreatmentInteractiveQuoteForm from '@/components/treatment-sections/TreatmentInteractiveQuoteForm';
 import styles from './DentalImplantsDetailView.module.css';
 
 export default function DentalImplantsDetailView() {
@@ -26,7 +26,7 @@ export default function DentalImplantsDetailView() {
   const t = useTranslations('services');
 
   return (
-    <div className="treatment-page-wrapper">
+    <div className={styles.pageWrapper}>
       {/* 1. INTRO & WHAT ARE DENTAL IMPLANTS */}
       <section aria-labelledby="intro-implants-heading" className={styles.introSection}>
         <div className={styles.container}>
@@ -78,387 +78,393 @@ export default function DentalImplantsDetailView() {
 
           {/* TRIPLE VIDEO SHORTS SLIDER */}
           <TreatmentTripleVideoSlider />
+        </div>
+      </section>
 
-          {/* DENTAL IMPLANTS COST HEADING */}
-          <h2 id="cost-heading-center" className={styles.costHeading}>
-            <span>{t('dentalImplantsIntro.costHeading')}</span>
-          </h2>
+      {/* 2. FIND THE RIGHT TREATMENT FOR YOU ACCORDION */}
+      <TreatmentRightTreatmentAccordion />
 
-          {/* WHY CHOOSE DENTAL IMPLANTS IN ISTANBUL */}
-          <h2 id="why-choose-implants-heading" className={styles.sectionTitle}>
-            <span>{locale === 'tr' ? 'Neden İstanbul’da Diş İmplantı Yaptırmalısınız?' : 'Why Choose Dental Implants in Istanbul?'}</span>
+      {/* 3. WHY CHOOSE DENTAL IMPLANTS IN ISTANBUL */}
+      <section aria-labelledby="why-choose-heading" className={styles.introSection}>
+        <div className={styles.container}>
+          <h2 id="why-choose-heading" className={styles.sectionTitle}>
+            {locale === 'tr'
+              ? 'Neden İstanbul’da Diş İmplantı Yaptırmalısınız?'
+              : 'Why Choose Dental Implants in Istanbul?'}
           </h2>
 
           <p className={styles.textP}>
             {locale === 'tr' ? (
               <>
-                İstanbul, yüksek kaliteli ve uygun fiyatlı diş tedavisi arayan uluslararası hastalar için dünyanın en popüler destinasyonlarından biri haline gelmiştir. Hastaların diş implantları için <strong>Master Smile Studio Türkiye</strong>&apos;yi tercih etmelerinin başlıca nedenleri:
-              </>
-            ) : (
-              <>
-                Istanbul has become one of the top destinations worldwide for patients looking for high-quality, affordable dental care. Here is why so many international patients choose <strong>Master Smile Studio Turkey</strong> for their dental implants:
-              </>
-            )}
-          </p>
-
-          <ul className="treatment-bullet-list">
-            <li>
-              <strong>{locale === 'tr' ? 'Uygun Fiyatlar:' : 'Affordable Costs:'}</strong>{' '}
-              {locale === 'tr'
-                ? 'İngiltere, Avrupa veya ABD’ye kıyasla %70’e varan tasarruf sağlarken birinci sınıf kalite korunur.'
-                : 'Save up to 70% compared to prices in the UK, Europe, or the US, without compromising on quality.'}
-            </li>
-            <li>
-              <strong>{locale === 'tr' ? 'Deneyimli ve Uzman Cerrahlar:' : 'Experienced Specialists:'}</strong>{' '}
-              {locale === 'tr'
-                ? 'Cerrahlarımız binlerce başarılı implant ameliyatı gerçekleştirmiş olup uluslararası sertifikalara sahiptir.'
-                : 'Our dentists have placed thousands of implants with high success rates and extensive training.'}
-            </li>
-            <li>
-              <strong>{locale === 'tr' ? 'Premium İmplant Markaları:' : 'High-Quality Brands:'}</strong>{' '}
-              {locale === 'tr'
-                ? 'Yalnızca Straumann, DXL ve Nucleoss gibi ömür boyu garantili lider markaları kullanıyoruz.'
-                : 'We use globally recognized implant brands such as Straumann, DXL, and NucleOSS that come with international certifications and lifetime warranties.'}
-            </li>
-            <li>
-              <strong>{locale === 'tr' ? 'Gelişmiş Teknoloji:' : 'Modern Clinics:'}</strong>{' '}
-              {locale === 'tr'
-                ? '3D CBCT tomografi ve dijital tarayıcılar ile milimetrik cerrahi planlama yapıyoruz.'
-                : 'From 3D CT scans to digital guided surgery, we use cutting-edge technology for precise and comfortable treatment.'}
-            </li>
-            <li>
-              <strong>{locale === 'tr' ? 'Her Şey Dahil Paketler:' : 'All-Inclusive Packages:'}</strong>{' '}
-              {locale === 'tr'
-                ? 'Otel konaklaması, VIP transferler ve kişisel hasta danışmanı ile sorunsuz bir deneyim.'
-                : 'Many clinics, including ours, offer packages that include 5-star accommodation, VIP airport transfers, and translation services to make your visit effortless.'}
-            </li>
-          </ul>
-
-          <p className="treatment-text-p">
-            {locale === 'tr' ? (
-              <>
-                Diş implantı için İstanbul’u seçerek sadece sağlıklı ve özgüvenli bir gülümsemeye kavuşmakla kalmaz, aynı zamanda tarihi ve büyüleyici bir şehirde unutulmaz bir tatil deneyimi yaşarsınız.
-              </>
-            ) : (
-              <>
-                Choosing Istanbul for your dental implants means you can restore your smile with confidence while exploring one of the most vibrant and historical cities in the world.
-              </>
-            )}
-          </p>
-
-          <TreatmentDivider />
-
-          {/* ADVANTAGES OF DENTAL IMPLANTS */}
-          <h3 className="treatment-heading-h3-alt mt-0">
-            <strong>{locale === 'tr' ? 'Diş İmplantının Avantajları Nelerdir?' : 'What Are the Advantages of Dental Implants?'}</strong>
-          </h3>
-
-          <p className="treatment-text-p">
-            {locale === 'tr' ? (
-              <>
-                Diş implantları hem sağlık hem de estetik açısından sayısız fayda sunar:
-              </>
-            ) : (
-              <>
-                Dental implants offer many benefits for both your oral health and daily life:
-              </>
-            )}
-          </p>
-
-          <TreatmentDivider />
-
-          {/* WHO IS A SUITABLE CANDIDATE */}
-          <h3 className="treatment-heading-h3-alt mt-0">
-            <strong>{locale === 'tr' ? 'Kimler Diş İmplantı İçin Uygundur?' : 'Who Is a Suitable Candidate for Dental Implants?'}</strong>
-          </h3>
-
-          <p className="treatment-text-p">
-            {locale === 'tr' ? (
-              <>
-                Genel sağlık durumu iyi olan çoğu yetişkin diş implantı yaptırabilir. İdeal bir adayda aranan özellikler:
-              </>
-            ) : (
-              <>
-                Most adults in good general health are candidates for dental implants. You may be an ideal candidate if you:
-              </>
-            )}
-          </p>
-
-          <ul className="treatment-bullet-list">
-            <li>
-              {locale === 'tr'
-                ? 'Bir veya birden fazla eksik dişi olan veya çekilmesi gereken dişi bulunanlar'
-                : 'Have one or more missing teeth'}
-            </li>
-            <li>
-              {locale === 'tr'
-                ? 'İmplantı destekleyecek yeterli çene kemiğine sahip olanlar (veya kemik grefti için uygun olanlar)'
-                : 'Have sufficient jawbone density (or are suitable for bone grafting / sinus lifting)'}
-            </li>
-            <li>
-              {locale === 'tr'
-                ? 'Sağlıklı diş etlerine sahip ve ağız hijyenine özen gösterenler'
-                : 'Have healthy gums and practice good oral hygiene'}
-            </li>
-            <li>
-              {locale === 'tr'
-                ? 'Hareketli protezler yerine kalıcı ve sabit bir çözüm isteyenler'
-                : 'Do not want removable dentures and prefer a fixed, permanent option'}
-            </li>
-            <li>
-              {locale === 'tr'
-                ? 'Kemik gelişimini tamamlamış bireyler (genellikle 18 yaş ve üzeri)'
-                : 'Have completed jaw growth (typically over 18 years old)'}
-            </li>
-          </ul>
-
-          <p className="treatment-text-p">
-            {locale === 'tr' ? (
-              <>
-                Kemik kaybınız olsa bile, <strong>sinüs lifting</strong> veya <strong>kemik tozu (greftleme)</strong> gibi ileri cerrahi tekniklerle implant tedavisine hazır hale gelebilirsiniz. Uzman cerrahlarımızla{' '}
-                <Link href="/contact" className="treatment-link-gold" aria-label={locale === 'tr' ? 'Ücretsiz değerlendirme için iletişim sayfasına gidin' : 'Contact team for free personalized evaluation'}>
-                  iletişime geçerek
+                İstanbul, dünya standartlarında sağlık altyapısı, yüksek nitelikli cerrahları ve{' '}
+                <Link href="/treatments/dental-implants" className={styles.linkGold}>
+                  uygun fiyatları
                 </Link>{' '}
-                uygunluğunuzu ücretsiz olarak öğrenebilirsiniz.
+                sayesinde diş implantı tedavisinde küresel bir lider haline gelmiştir. Hastaların Master Smile Studio Türkiye’yi tercih etmelerinin başlıca nedenleri:
               </>
             ) : (
               <>
-                Even if you have experienced bone loss, procedures like <strong>bone grafting</strong> or <strong>sinus lifting</strong> can help build a strong foundation for implants. You can{' '}
-                <Link href="/contact" className="treatment-link-gold" aria-label="Contact Master Smile Studio team for personalized evaluation">
-                  contact our team
+                Istanbul has become a top destination for dental implants due to its world-class healthcare system, highly skilled dental professionals, and{' '}
+                <Link href="/treatments/dental-implants" className={styles.linkGold}>
+                  affordable prices.
                 </Link>{' '}
-                to get a personalized evaluation.
+                Here’s why choosing dental implants in Istanbul is a great option:
               </>
             )}
           </p>
 
-          <TreatmentDivider />
-
-          {/* DENTAL IMPLANT TYPES SECTION */}
-          <h2 id="types-implants-heading" className="treatment-heading-title mt-10">
-            <strong>{locale === 'tr' ? 'İstanbul’da Uygulanan Diş İmplantı Türleri' : 'Types of Dental Implants Available in Istanbul'}</strong>
-          </h2>
-
-          <p className="treatment-text-p">
-            {locale === 'tr' ? (
-              <>
-                <strong>Master Smile Studio</strong>&apos;da her hastanın ihtiyacına, kemik yapısına ve estetik beklentisine uygun farklı implant seçenekleri sunuyoruz:
-              </>
-            ) : (
-              <>
-                At <strong>Master Smile Studio</strong>, we offer different types of dental implant solutions depending on your needs, bone structure, and smile goals:
-              </>
-            )}
-          </p>
-
-          {/* 1. Single Tooth */}
-          <h3 className="treatment-heading-h3">
-            <strong>{locale === 'tr' ? '1. Tek Diş İmplantı' : '1. Single Tooth Dental Implant'}</strong>
+          {/* 1. Expert Dental Implant Surgeons */}
+          <h3 className={styles.sectionSubTitle}>
+            <span className={styles.reasonNumber}>1.</span>{' '}
+            {locale === 'tr' ? 'Uzman Diş İmplantı Cerrahları' : 'Expert Dental Implant Surgeons'}
           </h3>
-          <p className="treatment-text-p">
+          <p className={styles.textP}>
             {locale === 'tr' ? (
               <>
-                Tek bir eksik dişin yerine komşu dişlere dokunmadan (kesilmeden) uygulanan en ideal çözümdür. Doğal diş gibi görünür ve hissedilir.
+                Master Smile Studio&apos;da tüm hekimlerimiz alanında üst düzey eğitim almış uzmanlar olup kliniğimizin kurucu ortaklarıdır. Hekimlerimizin her biri Türkiye&apos;nin en prestijli üniversitelerinden mezun olmuş, güçlü bir akademik altyapı ve derin klinik uzmanlık kazanmıştır.
               </>
             ) : (
               <>
-                Ideal if you are missing just one tooth. An implant and crown replace the missing tooth without affecting the neighboring healthy teeth.
+                At Master Smile Studio, all of our dentists are not only highly trained professionals but also the founders of the clinic. Each doctor has received advanced education from some of the most prestigious universities in Turkey, ensuring a strong academic background and deep clinical expertise.
               </>
             )}
           </p>
-          <p className="treatment-text-italic">
+          <p className={styles.textP}>
             {locale === 'tr' ? (
               <>
-                Detaylı bilgi için{' '}
-                <Link href="/treatments/dental-implants" className="treatment-link-gold" aria-label="Tek Diş İmplant sayfasını inceleyin">
-                  Tek Diş İmplant sayfamızı
-                </Link>{' '}
-                inceleyin.
+                Diş implantları, tam çene restorasyonları, kemik greftleme ve karmaşık cerrahiler dahil tüm operasyonlar asistanlar veya stajyerler tarafından değil, doğrudan deneyimli cerrahi ekibimiz tarafından bizzat gerçekleştirilir. Bu sayede her hastamız güvenilir uzmanlarımızdan en yüksek kalitede tedavi alır.
               </>
             ) : (
               <>
-                Learn more about{' '}
-                <Link href="/treatments/dental-implants" className="treatment-link-gold" aria-label="Learn more about single tooth implants">
-                  Single Tooth Implants in Istanbul
-                </Link>.
+                All surgical procedures — including dental implants, full-arch restorations, bone grafting, and complex oral surgeries — are performed directly by our experienced oral surgery team, not by assistants or visiting dentists. This means every patient receives consistent, high-quality treatment from trusted specialists.
               </>
             )}
           </p>
-
-          {/* 2. Multiple Teeth */}
-          <h3 className="treatment-heading-h3">
-            <strong>{locale === 'tr' ? '2. Çoklu Diş İmplantı (İmplant Destekli Köprü)' : '2. Multiple Teeth Implants (Implant-Supported Bridge)'}</strong>
-          </h3>
-          <p className="treatment-text-p">
+          <p className={styles.textP}>
             {locale === 'tr' ? (
               <>
-                Yan yana birkaç diş eksik olduğunda, her diş için ayrı implant yapmak yerine 2 veya 3 implant üzerine bir köprü yerleştirilir. Bu hem maliyeti düşürür hem de mükemmel stabilite sağlar.
+                Marka kalitesi ve hasta güvenliğine odaklanan Master Smile Studio, ileri ve zorlu dental vakalardaki tecrübesiyle tanınmaktadır. Uzman cerrahlarımız, ihtiyaçlarınıza özel uzun ömürlü ve doğal görünümlü implant sonuçları sunmak için modern teknikler ve hassas dijital planlama kullanır.
               </>
             ) : (
               <>
-                If you have several missing teeth in a row, an implant-supported bridge uses two or more implants to support multiple connected crowns.
+                With a strong focus on brand quality and patient safety, Master Smile Studio is recognized for its experience in advanced and challenging dental cases. Our expert surgeons use modern techniques and precise planning to provide long-lasting, natural-looking implant results tailored to your needs.
               </>
             )}
           </p>
 
-          {/* 3. Full Mouth */}
-          <h3 className="treatment-heading-h3">
-            <strong>{locale === 'tr' ? '3. Tam Ağız Diş İmplantı (Full Mouth Implants)' : '3. Full Mouth Dental Implants'}</strong>
+          {/* INSERT: OUR DENTISTS */}
+          <div className="my-8">
+            <TreatmentDoctorsSection />
+          </div>
+
+          {/* Mini Journey Banner */}
+          <div className={styles.miniJourneyBanner}>
+            <h4 className={styles.miniJourneyTitle}>
+              {locale === 'tr' ? 'Kusursuz Tasarlanmış Tedavi Yolculuğunuz' : 'Your Journey, Seamlessly Designed'}
+            </h4>
+            <p className={styles.miniJourneyText}>
+              {locale === 'tr'
+                ? 'İlk mesajınızdan son gülüşünüze kadar — kişiselleştirilmiş bakım, şeffaf iletişim ve dünya standartlarında uzmanlıkla her adımda yanınızdayız.'
+                : 'From your first message to your final smile — we guide you through every step with personalized care, clear communication, and world-class expertise.'}
+            </p>
+          </div>
+
+          {/* 2. Dental Implant Cost in Istanbul */}
+          <h3 className={styles.sectionSubTitle}>
+            <span className={styles.reasonNumber}>2.</span>{' '}
+            {locale === 'tr'
+              ? 'İstanbul’da Diş İmplantı Maliyeti – Master Smile Studio'
+              : 'Dental Implant Cost in Istanbul - Master Smile Studio'}
           </h3>
-          <p className="treatment-text-p">
+          <p className={styles.textP}>
             {locale === 'tr' ? (
               <>
-                Tüm dişlerini kaybetmiş veya mevcut dişlerinin çekilmesi gereken hastalar için komple bir çene restorasyonudur. Genellikle çene başına 6 ila 8 implant yerleştirilerek sabit porselen/zirkonyum protezler takılır.
+                Birçok ülkeyle karşılaştırıldığında, İstanbul&apos;da diş implantı maliyetleri önemli ölçüde daha düşüktür; bu da bütçenizi sarsmadan birinci sınıf lüks tedavi almanızı sağlar.
               </>
             ) : (
               <>
-                For patients who have lost most or all of their teeth, full mouth dental implants replace an entire arch (upper, lower, or both) with a permanent, secure set of teeth.
+                Compared to many other countries, dental implant costs in Istanbul are significantly lower, allowing you to receive high-end care without breaking the bank.
               </>
             )}
           </p>
-          <p className="treatment-text-italic">
+          <div className={styles.btnWrap}>
+            <Link href="/treatments" className={styles.btnPrimary}>
+              {locale === 'tr' ? 'Tüm Paketleri İncele →' : 'View All Packages →'}
+            </Link>
+          </div>
+
+          {/* 3. Advanced Technology */}
+          <h3 className={styles.sectionSubTitle}>
+            <span className={styles.reasonNumber}>3.</span>{' '}
+            {locale === 'tr' ? 'İleri Teknoloji ve Dijital Planlama' : 'Advanced Technology'}
+          </h3>
+          <p className={styles.textP}>
             {locale === 'tr' ? (
               <>
-                Detaylı bilgi için{' '}
-                <Link href="/treatments/dental-implants/full-mouth-implants" className="treatment-link-gold" aria-label="Tam Ağız İmplant sayfasını inceleyin">
-                  Tam Ağız İmplant sayfamızı
-                </Link>{' '}
-                inceleyin.
+                İmplantolojide en son dijital teknolojileri kullanarak daha hızlı iyileşme süreleri ve milimetrik hassasiyette sonuçlar elde ediyoruz. Master Smile Studio kliniğimiz, tedavinizi mümkün olduğunca konforlu ve etkili kılmak için son teknoloji 3D tomografi ve dijital tarayıcılarla donatılmıştır.
               </>
             ) : (
               <>
-                Learn more about{' '}
-                <Link href="/treatments/dental-implants/full-mouth-implants" className="treatment-link-gold" aria-label="Learn more about full mouth implants in Istanbul">
-                  Full Mouth Implants in Istanbul
-                </Link>.
+                We use the latest technology in implantology, ensuring faster healing times and more accurate results. Istanbul’s dental clinics, like Master Smile Studio, are equipped with state-of-the-art facilities to make your treatment as comfortable and effective as possible.
               </>
             )}
           </p>
 
-          {/* 4. All-on-4 */}
-          <h3 className="treatment-heading-h3">
-            <strong>{locale === 'tr' ? '4. All-on-4 Diş İmplantı' : '4. All-on-4 Dental Implants'}</strong>
+          {/* 4. Before - After Dental Implant at Master Smile Studio */}
+          <h3 className={styles.sectionSubTitle}>
+            <span className={styles.reasonNumber}>4.</span>{' '}
+            {locale === 'tr'
+              ? 'Master Smile Studio İstanbul’da Öncesi & Sonrası Sonuçlar'
+              : 'Before - After Dental Implant at Master Smile Studio in Istanbul'}
           </h3>
-          <p className="treatment-text-p">
+          <p className={styles.textP}>
             {locale === 'tr' ? (
               <>
-                Özel açılarla yerleştirilen yalnızca 4 implant üzerine tam bir sabit diş arkı monte edilir. Kemik grefti ihtiyacını en aza indirir ve aynı gün geçici sabit diş takılmasına olanak tanır.
+                İstanbul&apos;da diş implantları sadece işlevsel değil; aynı zamanda doğal dişlerinizle kusursuz bir uyum yakalayacak şekilde estetik olarak tasarlanır. Uzman ekibimiz yeni gülüşünüzün hem son derece doğal hem de büyüleyici görünmesini sağlar.
               </>
             ) : (
               <>
-                This popular technique uses just four strategically placed implants to support a full arch of fixed teeth. It is often recommended for patients with reduced bone density and allows for same-day temporary teeth.
-              </>
-            )}
-          </p>
-          <p className="treatment-text-italic">
-            {locale === 'tr' ? (
-              <>
-                Detaylı bilgi için{' '}
-                <Link href="/treatments/dental-implants/all-on-4-implants" className="treatment-link-gold" aria-label="All-on-4 İmplant sayfasını inceleyin">
-                  All-on-4 İmplant sayfamızı
-                </Link>{' '}
-                inceleyin.
-              </>
-            ) : (
-              <>
-                Learn more about{' '}
-                <Link href="/treatments/dental-implants/all-on-4-implants" className="treatment-link-gold" aria-label="Learn more about All-on-4 implants in Istanbul">
-                  All-on-4 Implants in Istanbul
-                </Link>.
+                Dental implants in Istanbul are not just about function; they are designed to blend seamlessly with your natural teeth. Our expert team works to ensure your new smile looks natural and beautiful.
               </>
             )}
           </p>
 
-          {/* 5. All-on-6 */}
-          <h3 className="treatment-heading-h3">
-            <strong>{locale === 'tr' ? '5. All-on-6 Diş İmplantı' : '5. All-on-6 Dental Implants'}</strong>
+          {/* INSERT: BEFORE - AFTER SLIDER */}
+          <div className="my-8">
+            <TreatmentBeforeAfterSliderSection />
+          </div>
+
+          {/* 5. Travel and Treatment in One */}
+          <h3 className={styles.sectionSubTitle}>
+            <span className={styles.reasonNumber}>5.</span>{' '}
+            {locale === 'tr' ? 'Seyahat ve Tedavi Bir Arada' : 'Travel and Treatment in One'}
           </h3>
-          <p className="treatment-text-p">
+          <p className={styles.textP}>
             {locale === 'tr' ? (
               <>
-                All-on-4 sistemine benzer şekilde çalışır ancak çene kemiğine 6 implant yerleştirilerek çiğneme kuvvetlerine karşı ekstra güç ve dayanıklılık sağlanır.
+                İstanbul kültür, tarih ve modern konforun kusursuz bir karışımını sunan büyüleyici bir şehirdir. En üst düzey dental tedaviyi alırken aynı zamanda unutulmaz bir tatil deneyimi yaşayabilirsiniz. İstanbul&apos;da diş implantı yaptırmayı düşünüyorsanız, Master Smile Studio Avrupa fiyatlarının çok altında uzman bakım sunmaktadır.{' '}
+                <Link href="/contact" className={styles.linkGold}>
+                  Detaylı bilgi için bugün bizimle iletişime geçin!
+                </Link>
               </>
             ) : (
               <>
-                Similar to All-on-4, but uses six implants per arch for added stability and strength, making it an excellent long-term option for patients with sufficient bone volume.
-              </>
-            )}
-          </p>
-          <p className="treatment-text-italic">
-            {locale === 'tr' ? (
-              <>
-                Detaylı bilgi için{' '}
-                <Link href="/treatments/dental-implants/all-on-6-implants" className="treatment-link-gold" aria-label="All-on-6 İmplant sayfasını inceleyin">
-                  All-on-6 İmplant sayfamızı
-                </Link>{' '}
-                inceleyin.
-              </>
-            ) : (
-              <>
-                Learn more about{' '}
-                <Link href="/treatments/dental-implants/all-on-6-implants" className="treatment-link-gold" aria-label="Learn more about All-on-6 implants in Istanbul">
-                  All-on-6 Implants in Istanbul
-                </Link>.
+                Istanbul is a vibrant city, offering the perfect mix of culture, history, and modern amenities. You can enjoy a relaxing holiday while receiving top-tier dental treatment. If you’re considering dental implants in Istanbul, Master Smile Studio offers expert care at a fraction of the cost.{' '}
+                <Link href="/contact" className={styles.linkGold}>
+                  Contact us today to learn more!
+                </Link>
               </>
             )}
           </p>
         </div>
       </section>
 
-      {/* 2. FIND THE RIGHT TREATMENT ACCORDION (sect77) */}
-      <TreatmentRightTreatmentAccordion />
-
-      {/* 3. REAL PATIENTS. REAL SMILES. (sectinsta REELS) */}
-      <TreatmentPatientReelsSection />
-
-      {/* 4. FROM FIRST VISIT TO FINAL SMILE (sectba BEFORE/AFTER SLIDER) */}
-      <TreatmentBeforeAfterSliderSection />
-
-      {/* 5. DENTAL IMPLANT COSTS IN ISTANBUL & PACKAGES (LR_r40rBzb4 + Price Cards + Carousel) */}
-      <TreatmentCostBreakdownAndPackageBannerSection />
-
-      {/* 6. POPULAR ALL-ON-4 / ALL-ON-6 PACKAGES SLIDER (12 Cards with Nucleoss, DXL, Straumann, Megagen, Neodent, Hiossen) */}
-      <TreatmentPackagesSlider />
-
-      {/* 7. OUR BEST SERVICES INCLUDED (8 Included VIP Services) */}
-      <TreatmentServicesIncludedSection />
-
-      {/* 8. OUR DOCTORS SECTION (4 Specialists) */}
-      <TreatmentDoctorsSection />
-
-      {/* 9. PARALLAX CTA BANNER */}
-      <TreatmentParallaxBanner />
-
-      {/* 10. CLINIC VIRTUAL TOUR (YouTube smhwCD78Vbo) */}
-      <TreatmentClinicTourSection />
-
-      {/* 11. 3-STEP TREATMENT JOURNEY ACCORDION (sectacc) */}
+      {/* 4. YOUR DENTAL JOURNEY MADE SIMPLE (4-Step Timeline / Accordion) */}
       <TreatmentJourneySimpleSection />
 
-      {/* 12. GOOGLE & TRUSTPILOT REVIEWS CAROUSEL (sectyorum) */}
+      {/* 5. TYPES OF DENTAL IMPLANTS (Single, Multiple, All-on-4, All-on-6) */}
+      <section aria-labelledby="types-implants-heading" className={styles.introSection}>
+        <div className={styles.container}>
+          <h2 id="types-implants-heading" className={styles.sectionTitle}>
+            {locale === 'tr'
+              ? 'İstanbul’da Uygulanan Diş İmplantı Türleri (Tek, Çoklu, All-on-4, All-on-6)'
+              : 'Types of Dental Implants (Single, Multiple, All-on-4, All-on-6) in Istanbul'}
+          </h2>
+
+          <p className={styles.textP}>
+            {locale === 'tr' ? (
+              <>
+                Diş implantları kaç dişinizin eksik olduğuna ve çene kemiğinizin durumuna göre farklı türlerde uygulanır. Master Smile Studio&apos;da ağız cerrahisi uzmanlarımız ihtiyaçlarınıza en uygun seçeneği belirlemenize yardımcı olur:
+              </>
+            ) : (
+              <>
+                Dental implants come in different types depending on how many teeth are missing and the condition of your jawbone. At Master Smile Studio in Istanbul, our oral surgery specialists help you choose the best option for your needs. Here are the most common types:
+              </>
+            )}
+          </p>
+
+          {/* Single Dental Implant */}
+          <h3 className={styles.sectionSubTitle}>
+            {locale === 'tr' ? 'İstanbul’da Tek Diş İmplantı' : 'Single Dental Implant in Istanbul'}
+          </h3>
+          <p className={styles.textP}>
+            {locale === 'tr' ? (
+              <>
+                Tek bir eksik dişin yerine uygulanır. Bir titanyum vida, bir abutment ve bir kron içerir. Sağlıklı bir çene kemiğine ve yalnızca bir diş boşluğuna sahipseniz bu seçenek idealdir.
+              </>
+            ) : (
+              <>
+                A single implant replaces one missing tooth. It includes one titanium screw, one abutment, and one crown. This option is ideal if you have a healthy jawbone and only one tooth gap.
+              </>
+            )}
+          </p>
+          <p className={styles.textItalic}>
+            {locale === 'tr' ? (
+              <>
+                Tek bir eksik dişi yenilemek hakkında daha fazla bilgi edinmek için{' '}
+                <Link href="/treatments/dental-implants" className={styles.linkGold}>
+                  Tek Diş İmplant rehberimizi
+                </Link>{' '}
+                inceleyebilirsiniz.
+              </>
+            ) : (
+              <>
+                If you want to learn more about replacing a single missing tooth, you can read our{' '}
+                <Link href="/treatments/dental-implants" className={styles.linkGold}>
+                  full Single Dental Implant guide.
+                </Link>
+              </>
+            )}
+          </p>
+
+          {/* Multiple Dental Implants */}
+          <h3 className={styles.sectionSubTitle}>
+            {locale === 'tr' ? 'İstanbul’da Çoklu Diş İmplantı' : 'Multiple Dental Implants in Istanbul'}
+          </h3>
+          <p className={styles.textP}>
+            {locale === 'tr' ? (
+              <>
+                Farklı bölgelerde birden fazla dişiniz eksikse, çoklu implant uygulanabilir. Her eksik diş tek tek bir implantla değiştirilebilir veya iki ya da daha fazla implant tarafından desteklenen bir köprü yerleştirilebilir. Bu seçenek güçlü çiğneme kabiliyeti ve doğal bir görünüm sağlar.
+              </>
+            ) : (
+              <>
+                If you are missing several teeth in different areas, multiple implants can be placed. Each missing tooth can be replaced with an individual implant, or a bridge can be supported by two or more implants. This option provides strong chewing ability and a natural look.
+              </>
+            )}
+          </p>
+          <p className={styles.textItalic}>
+            {locale === 'tr' ? (
+              <>
+                Birden fazla eksik dişi tamamlamakla ilgileniyorsanız, detaylı{' '}
+                <Link href="/treatments/dental-implants/full-mouth-implants" className={styles.linkGold}>
+                  Çoklu Diş İmplantı sayfamızı
+                </Link>{' '}
+                keşfedebilirsiniz.
+              </>
+            ) : (
+              <>
+                If you are interested in restoring several missing teeth, you can explore our detailed{' '}
+                <Link href="/treatments/dental-implants/full-mouth-implants" className={styles.linkGold}>
+                  Multiple Dental Implants page.
+                </Link>
+              </>
+            )}
+          </p>
+
+          {/* INSERT: CLINIC TOUR */}
+          <div className="my-8">
+            <TreatmentClinicTourSection />
+          </div>
+
+          {/* All-on-4 Dental Implants */}
+          <h3 className={styles.sectionSubTitle}>
+            {locale === 'tr' ? 'İstanbul’da All-on-4 Diş İmplantı' : 'All-on-4 Dental Implants in Istanbul'}
+          </h3>
+          <p className={styles.textP}>
+            {locale === 'tr' ? (
+              <>
+                All-on-4, dişlerinin çoğunu veya tamamını kaybetmiş hastalar için tam çene sabit protez çözümüdür. Çeneye özel açılarla yalnızca dört implant yerleştirilir ve üzerine sabit bir diş arkı monte edilir. Bu yöntem hızlı sonuçlar, yüksek stabilite sağlar ve genellikle düşük kemik yoğunluğuna sahip hastalar için de uygundur.
+              </>
+            ) : (
+              <>
+                All-on-4 is a full-arch solution for patients who have lost most or all of their teeth. Four implants are placed in the jaw, and a fixed full-arch prosthesis is attached. This method offers fast results, strong stability, and is often suitable even for patients with lower bone density.
+              </>
+            )}
+          </p>
+          <p className={styles.textItalic}>
+            {locale === 'tr' ? (
+              <>
+                Hızlı ve sabit bir tam çene çözümü için{' '}
+                <Link href="/treatments/dental-implants/all-on-4-implants" className={styles.linkGold}>
+                  All-on-4 Diş İmplantı sayfamızı
+                </Link>{' '}
+                okumaya devam edebilirsiniz.
+              </>
+            ) : (
+              <>
+                For a fast and stable full-arch solution, you can continue reading on our{' '}
+                <Link href="/treatments/dental-implants/all-on-4-implants" className={styles.linkGold}>
+                  All-on-4 Dental Implants page.
+                </Link>
+              </>
+            )}
+          </p>
+
+          {/* All-on-6 Dental Implants */}
+          <h3 className={styles.sectionSubTitle}>
+            {locale === 'tr' ? 'İstanbul’da All-on-6 Diş İmplantı' : 'All-on-6 Dental Implants in Istanbul'}
+          </h3>
+          <p className={styles.textP}>
+            {locale === 'tr' ? (
+              <>
+                All-on-6 sistemi All-on-4&apos;e benzer ancak ekstra destek ve çiğneme kuvveti dağılımı için altı implant kullanır. Doğal dişlere en yakın deneyimi ve maksimum dayanıklılığı arayan hastalar için idealdir.
+              </>
+            ) : (
+              <>
+                All-on-6 is similar to All-on-4 but uses six implants for extra support. It provides more strength and durability, especially for patients who want the closest experience to natural teeth. This option is ideal for long-term stability and higher chewing comfort.
+              </>
+            )}
+          </p>
+          <p className={styles.textItalic}>
+            {locale === 'tr' ? (
+              <>
+                Maksimum çiğneme gücü ve stabilite için{' '}
+                <Link href="/treatments/dental-implants/all-on-6-implants" className={styles.linkGold}>
+                  All-on-6 Diş İmplantı sayfamızı
+                </Link>{' '}
+                ziyaret edebilirsiniz.
+              </>
+            ) : (
+              <>
+                If you prefer maximum stability for full-arch restoration, you can visit our{' '}
+                <Link href="/treatments/dental-implants/all-on-6-implants" className={styles.linkGold}>
+                  All-on-6 Dental Implants page for more information.
+                </Link>
+              </>
+            )}
+          </p>
+        </div>
+      </section>
+
+      {/* 6. OUR BEST SERVICES INCLUDED */}
+      <TreatmentServicesIncludedSection />
+
+      {/* 7. REAL PATIENTS. REAL SMILES. (Patient Reels) */}
+      <TreatmentPatientReelsSection />
+
+      {/* 8. DENTAL IMPLANT COSTS IN ISTANBUL (Video & Brand Prices) */}
+      <TreatmentCostBreakdownAndPackageBannerSection />
+
+      {/* 9. POPULAR ALL-ON-4 / ALL-ON-6 PACKAGES SLIDER */}
+      <TreatmentPackagesSlider />
+
+      {/* 10. REVIEWS SECTION (Google & Trustpilot Reviews) */}
       <TreatmentReviewsSection />
 
-      {/* 13. FREQUENTLY ASKED QUESTIONS (26 Dental Implant FAQs) */}
+      {/* 11. PARALLAX CTA BANNER */}
+      <TreatmentParallaxBanner />
+
+      {/* 12. FREQUENTLY ASKED QUESTIONS (26 FAQs) */}
       <TreatmentFAQSection />
 
-      {/* 14. INTERACTIVE 4-STEP QUOTE FORM */}
+      {/* 13. INTERACTIVE 4-STEP QUOTE FORM */}
       <TreatmentInteractiveQuoteForm defaultTreatment="Implants" />
 
-      {/* 15. BOTTOM CTA BANNER */}
-      <section aria-labelledby="bottom-cta-heading" className="treatment-cta-banner">
-        <div className="treatment-container-narrow">
-          <h2 id="bottom-cta-heading" className="treatment-heading-title text-white">
+      {/* 14. BOTTOM CTA BANNER */}
+      <section aria-labelledby="bottom-cta-heading" className={styles.ctaBanner}>
+        <div className={styles.ctaContainer}>
+          <h2 id="bottom-cta-heading" className={styles.ctaTitle}>
             {locale === 'tr' ? 'Hayalinizdeki Gülüşe Bugün Kavuşun' : 'Ready to Start Your Smile Transformation?'}
           </h2>
-          <p className="treatment-cta-desc">
+          <p className={styles.ctaDesc}>
             {locale === 'tr'
               ? 'Uzman hekimlerimizle ücretsiz online konsültasyon yapın, tedavi planınızı ve her şey dahil fiyat teklifinizi hemen alın.'
               : 'Get your free, no-obligation treatment plan and price quote today. Our team in Istanbul is ready to guide you every step of the way.'}
           </p>
-          <div className="treatment-cta-btn-row">
+          <div className={styles.ctaBtnRow}>
             <Link
               href="/contact"
-              className="treatment-btn-gold"
+              className={styles.ctaBtnGold}
               aria-label={locale === 'tr' ? 'Ücretsiz teklif formuna gidin' : 'Get a free personalized quote'}
             >
               <span>{locale === 'tr' ? 'Ücretsiz Teklif Alın' : 'Get a Free Quote'}</span>
@@ -468,7 +474,7 @@ export default function DentalImplantsDetailView() {
               href={getWhatsAppLink(locale)}
               target="_blank"
               rel="noopener noreferrer"
-              className="treatment-btn-whatsapp"
+              className={styles.ctaBtnWhatsapp}
               aria-label="Direct WhatsApp consultation with our dental team"
             >
               <span>💬 WhatsApp Live Chat</span>

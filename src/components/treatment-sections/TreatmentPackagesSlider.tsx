@@ -11,249 +11,111 @@ export default function TreatmentPackagesSlider() {
 
   const packages = [
     {
-      title: 'ALL-ON-4 IMPLANT PACKAGE – NUCLEOSS',
-      img: 'https://sohodent.com/doc/static/paketler/1.jpg.webp',
-      alt: 'All-on-4 Dental Implant Package – Nucleoss Implants',
-      duration: '3+7 Working Days (2 Visits)',
+      title: 'Full Jaw All on 4 Implant Package (Nucleoss)',
+      img: 'https://sohodent.com/doc/data1/All-on-4-package-10.jpg',
+      alt: 'All on 4 Dental Implant Package Nucleoss Istanbul Turkey',
+      duration: '4-5 Days',
+      priceUSD: '$4,900',
+      priceEUR: '€4,500',
+      priceGBP: '£3,850',
       included: [
-        '4x NucleOSS (Turkish Brand) Dental Implants',
-        '12x Fixed Temporary Teeth',
-        '12x Final Permanent Teeth',
-        'Surgical planning (with CBCT)',
-        'Local anesthesia',
-        'Follow-up checks during stay',
-        'Airport-hotel transfers',
-        'Hotel Stay with Bed & Breakfast',
-        'Laboratory Work',
+        '4 Nucleoss Dental Implants',
+        'Fixed Temporary Teeth (Same Day)',
+        'Final Hybrid/Zirconia Bridge',
+        '5-Star Luxury Hotel (4 Nights)',
+        'VIP Airport & Clinic Transfers',
+        'Free Panoramic X-Ray & 3D CT Scan',
       ],
-      priceUSD: '$5,700',
-      priceEUR: '€4,900',
-      priceGBP: '£4,200',
     },
     {
-      title: 'ALL-ON-4 IMPLANT PACKAGE – DXL GERMAN',
-      img: 'https://sohodent.com/doc/static/paketler/2.jpg.webp',
-      alt: 'All-on-4 Dental Implant Package – DXL German Implants',
-      duration: '3+7 Working Days (2 Visits)',
+      title: 'Full Jaw All on 4 Implant Package (DXL)',
+      img: 'https://sohodent.com/doc/data1/All-on-4-implant-package-2.jpg',
+      alt: 'All on 4 Dental Implant Package DXL German Brand',
+      duration: '4-5 Days',
+      priceUSD: '$5,800',
+      priceEUR: '€5,350',
+      priceGBP: '£4,550',
       included: [
-        '4x DXL (German Brand) Dental Implants',
-        '12x Fixed Temporary Teeth',
-        '12x Final Permanent Teeth',
-        'Surgical planning (with CBCT)',
-        'Local anesthesia',
-        'Follow-up checks during stay',
-        'Airport-hotel transfers',
-        'Hotel Stay with Bed & Breakfast',
-        'Laboratory Work',
+        '4 German DXL Titanium Implants',
+        'Fixed Temporary Teeth',
+        'Final High-Grade Zirconia Arch',
+        '5-Star Luxury Hotel (4 Nights)',
+        'VIP Airport & Clinic Transfers',
+        'Free 3D Tomography & Consultation',
       ],
-      priceUSD: '$6,400',
-      priceEUR: '€5,500',
-      priceGBP: '£4,750',
     },
     {
-      title: 'ALL-ON-4 IMPLANT PACKAGE – STRAUMANN',
-      img: 'https://sohodent.com/doc/static/paketler/3.jpg.webp',
-      alt: 'All-on-4 Dental Implant Package – Straumann Swiss Implants',
-      duration: '3+7 Working Days (2 Visits)',
+      title: 'Full Jaw All on 4 Implant Package (Straumann)',
+      img: 'https://sohodent.com/doc/data1/All-on-4-implant-package-3.jpg',
+      alt: 'All on 4 Dental Implant Package Straumann Swiss Brand',
+      duration: '4-5 Days',
+      priceUSD: '$7,600',
+      priceEUR: '€7,000',
+      priceGBP: '£5,950',
       included: [
-        '4x Straumann (Swiss Brand) Dental Implants',
-        '12x Fixed Temporary Teeth',
-        '12x Final Permanent Teeth',
-        'Surgical planning (with CBCT)',
-        'Local anesthesia',
-        'Follow-up checks during stay',
-        'Airport-hotel transfers',
-        'Hotel Stay with Bed & Breakfast',
-        'Laboratory Work',
+        '4 Premium Swiss Straumann Implants',
+        'Lifetime International Guarantee',
+        'Fixed Temporary Prosthesis',
+        'Final Custom Zirconia Bridge',
+        '5-Star Luxury Hotel (4 Nights)',
+        'VIP Airport & Clinic Chauffeur',
       ],
-      priceUSD: '$9,300',
-      priceEUR: '€8,000',
-      priceGBP: '£6,900',
     },
     {
-      title: 'ALL-ON-4 IMPLANT PACKAGE – MEGAGEN',
-      img: 'https://sohodent.com/doc/data1/soho-paket-01-178350143919239.jpg.avif',
-      alt: 'All-on-4 Dental Implant Package – Megagen Implants',
-      duration: '3+7 Working Days (2 Visits)',
+      title: 'Full Jaw All on 6 Implant Package (Nucleoss)',
+      img: 'https://sohodent.com/doc/data1/All-on-6-implant-package-1.jpg',
+      alt: 'All on 6 Dental Implant Package Nucleoss',
+      duration: '5-6 Days',
+      priceUSD: '$5,900',
+      priceEUR: '€5,450',
+      priceGBP: '£4,650',
       included: [
-        '4x Megagen (Korean Brand) Dental Implants',
-        '12x Fixed Temporary Teeth',
-        '12x Final Permanent Teeth',
-        'Surgical planning (with CBCT)',
-        'Local anesthesia',
-        'Follow-up checks during stay',
-        'Airport-hotel transfers',
-        'Hotel Stay with Bed & Breakfast',
-        'Laboratory Work',
+        '6 Nucleoss Dental Implants',
+        'Maximum Stability 6-Point Support',
+        'Fixed Temporary Teeth in 24h',
+        'Final 12-14 Unit Zirconia Arch',
+        '5-Star Luxury Hotel (5 Nights)',
+        'VIP Chauffeur & Personal Host',
       ],
+    },
+    {
+      title: 'Full Jaw All on 6 Implant Package (DXL)',
+      img: 'https://sohodent.com/doc/data1/All-on-6-implant-package-2.jpg',
+      alt: 'All on 6 Dental Implant Package DXL German Brand',
+      duration: '5-6 Days',
       priceUSD: '$6,900',
-      priceEUR: '€6,000',
-      priceGBP: '£5,100',
+      priceEUR: '€6,350',
+      priceGBP: '£5,400',
+      included: [
+        '6 German DXL Titanium Implants',
+        'Heavy Chewing Force Distribution',
+        'Fixed Temporary & Final Zirconia Arch',
+        '5-Star Luxury Hotel (5 Nights)',
+        'VIP Airport & Clinic Transfers',
+        'Lifetime Implant Guarantee',
+      ],
     },
     {
-      title: 'ALL-ON-4 IMPLANT PACKAGE – NEODENT',
-      img: 'https://sohodent.com/doc/data1/soho-paket-03-178350147064002.jpg.webp',
-      alt: 'All-on-4 Dental Implant Package – Neodent Implants',
-      duration: '3+7 Working Days (2 Visits)',
+      title: 'Full Jaw All on 6 Implant Package (Straumann)',
+      img: 'https://sohodent.com/doc/data1/All-on-6-implant-package-3.jpg',
+      alt: 'All on 6 Dental Implant Package Straumann Swiss Brand',
+      duration: '5-6 Days',
+      priceUSD: '$8,900',
+      priceEUR: '€8,200',
+      priceGBP: '£6,980',
       included: [
-        '4x Neodent (Brazilian Brand) Dental Implants',
-        '12x Fixed Temporary Teeth',
-        '12x Final Permanent Teeth',
-        'Surgical planning (with CBCT)',
-        'Local anesthesia',
-        'Follow-up checks during stay',
-        'Airport-hotel transfers',
-        'Hotel Stay with Bed & Breakfast',
-        'Laboratory Work',
+        '6 Swiss Straumann Roxolid Implants',
+        'Official Swiss Straumann Passport',
+        'Immediate Fixed Temporary Bridge',
+        'Final Multi-Layered Zirconia Arch',
+        '5-Star Luxury Hotel Suite (5 Nights)',
+        'VIP Private Chauffeur Transfers',
       ],
-      priceUSD: '$8,400',
-      priceEUR: '€7,300',
-      priceGBP: '£6,300',
-    },
-    {
-      title: 'ALL-ON-4 IMPLANT PACKAGE – HIOSSEN',
-      img: 'https://sohodent.com/doc/data1/soho-paket-02-178350145524674.jpg.avif',
-      alt: 'All-on-4 Dental Implant Package – Hiossen Implants',
-      duration: '3+7 Working Days (2 Visits)',
-      included: [
-        '4x Hiossen (USA Brand) Dental Implants',
-        '12x Fixed Temporary Teeth',
-        '12x Final Permanent Teeth',
-        'Surgical planning (with CBCT)',
-        'Local anesthesia',
-        'Follow-up checks during stay',
-        'Airport-hotel transfers',
-        'Hotel Stay with Bed & Breakfast',
-        'Laboratory Work',
-      ],
-      priceUSD: '$7,900',
-      priceEUR: '€6,800',
-      priceGBP: '£5,850',
-    },
-    {
-      title: 'ALL-ON-6 IMPLANT PACKAGE – NUCLEOSS',
-      img: 'https://sohodent.com/doc/static/paketler/4.jpg.webp',
-      alt: 'All-on-6 Dental Implant Package – Nucleoss Implants',
-      duration: '3+7 Working Days (2 Visits)',
-      included: [
-        '6x NucleOSS (Turkish Brand) Dental Implants',
-        '12-14x Fixed Temporary Teeth',
-        '12-14x Final Permanent Teeth',
-        'Surgical planning (with CBCT)',
-        'Local anesthesia',
-        'Follow-up checks during stay',
-        'Airport-hotel transfers',
-        'Hotel Stay with Bed & Breakfast',
-        'Laboratory Work',
-      ],
-      priceUSD: '$6,900',
-      priceEUR: '€6,000',
-      priceGBP: '£5,150',
-    },
-    {
-      title: 'ALL-ON-6 IMPLANT PACKAGE – DXL GERMAN',
-      img: 'https://sohodent.com/doc/static/paketler/5.jpg.webp',
-      alt: 'All-on-6 Dental Implant Package – DXL German Implants',
-      duration: '3+7 Working Days (2 Visits)',
-      included: [
-        '6x DXL (German Brand) Dental Implants',
-        '12-14x Fixed Temporary Teeth',
-        '12-14x Final Permanent Teeth',
-        'Surgical planning (with CBCT)',
-        'Local anesthesia',
-        'Follow-up checks during stay',
-        'Airport-hotel transfers',
-        'Hotel Stay with Bed & Breakfast',
-        'Laboratory Work',
-      ],
-      priceUSD: '$7,800',
-      priceEUR: '€6,750',
-      priceGBP: '£5,800',
-    },
-    {
-      title: 'ALL-ON-6 IMPLANT PACKAGE – STRAUMANN',
-      img: 'https://sohodent.com/doc/static/paketler/6.jpg.webp',
-      alt: 'All-on-6 Dental Implant Package – Straumann Swiss Implants',
-      duration: '3+7 Working Days (2 Visits)',
-      included: [
-        '6x Straumann (Swiss Brand) Dental Implants',
-        '12-14x Fixed Temporary Teeth',
-        '12-14x Final Permanent Teeth',
-        'Surgical planning (with CBCT)',
-        'Local anesthesia',
-        'Follow-up checks during stay',
-        'Airport-hotel transfers',
-        'Hotel Stay with Bed & Breakfast',
-        'Laboratory Work',
-      ],
-      priceUSD: '$11,500',
-      priceEUR: '€10,000',
-      priceGBP: '£8,600',
-    },
-    {
-      title: 'ALL-ON-6 IMPLANT PACKAGE – MEGAGEN',
-      img: 'https://sohodent.com/doc/data1/soho-paket-01-178350143919239.jpg.avif',
-      alt: 'All-on-6 Dental Implant Package – Megagen Implants',
-      duration: '3+7 Working Days (2 Visits)',
-      included: [
-        '6x Megagen (Korean Brand) Dental Implants',
-        '12-14x Fixed Temporary Teeth',
-        '12-14x Final Permanent Teeth',
-        'Surgical planning (with CBCT)',
-        'Local anesthesia',
-        'Follow-up checks during stay',
-        'Airport-hotel transfers',
-        'Hotel Stay with Bed & Breakfast',
-        'Laboratory Work',
-      ],
-      priceUSD: '$8,400',
-      priceEUR: '€7,300',
-      priceGBP: '£6,300',
-    },
-    {
-      title: 'ALL-ON-6 IMPLANT PACKAGE – NEODENT',
-      img: 'https://sohodent.com/doc/data1/soho-paket-03-178350147064002.jpg.webp',
-      alt: 'All-on-6 Dental Implant Package – Neodent Implants',
-      duration: '3+7 Working Days (2 Visits)',
-      included: [
-        '6x Neodent (Brazilian Brand) Dental Implants',
-        '12-14x Fixed Temporary Teeth',
-        '12-14x Final Permanent Teeth',
-        'Surgical planning (with CBCT)',
-        'Local anesthesia',
-        'Follow-up checks during stay',
-        'Airport-hotel transfers',
-        'Hotel Stay with Bed & Breakfast',
-        'Laboratory Work',
-      ],
-      priceUSD: '$10,200',
-      priceEUR: '€8,900',
-      priceGBP: '£7,650',
-    },
-    {
-      title: 'ALL-ON-6 IMPLANT PACKAGE – HIOSSEN',
-      img: 'https://sohodent.com/doc/data1/soho-paket-02-178350145524674.jpg.avif',
-      alt: 'All-on-6 Dental Implant Package – Hiossen Implants',
-      duration: '3+7 Working Days (2 Visits)',
-      included: [
-        '6x Hiossen (USA Brand) Dental Implants',
-        '12-14x Fixed Temporary Teeth',
-        '12-14x Final Permanent Teeth',
-        'Surgical planning (with CBCT)',
-        'Local anesthesia',
-        'Follow-up checks during stay',
-        'Airport-hotel transfers',
-        'Hotel Stay with Bed & Breakfast',
-        'Laboratory Work',
-      ],
-      priceUSD: '$9,800',
-      priceEUR: '€8,500',
-      priceGBP: '£7,300',
     },
   ];
 
   const visibleCount = 3;
-  const maxStart = packages.length - visibleCount;
+  const maxStart = Math.max(0, packages.length - visibleCount);
 
   const handlePrev = () => {
     setStartIndex((prev) => (prev > 0 ? prev - 1 : maxStart));
@@ -265,25 +127,25 @@ export default function TreatmentPackagesSlider() {
 
   return (
     <section aria-labelledby="packages-slider-heading" className={styles.wrapper}>
-      <div className="treatment-container">
-        {/* Header with Nav Buttons */}
-        <div className="treatment-packages-carousel-header">
-          <div>
-            <h2 id="packages-slider-heading" className="treatment-heading-title m-0">
+      <div className={styles.container}>
+        {/* Header with Side-by-Side Nav Buttons */}
+        <div className={styles.carouselHeader}>
+          <div className={styles.titleGroup}>
+            <h2 id="packages-slider-heading" className={styles.heading}>
               {locale === 'tr' ? 'Popüler İmplant Paketlerimiz' : 'Popular Implant Packages'}
             </h2>
-            <p className="treatment-text-p mt-2 text-slate-500">
+            <p className={styles.subText}>
               {locale === 'tr'
                 ? 'Her şey dahil her bütçeye uygun komple implant paketleri'
                 : 'All-inclusive premium packages tailored for international patients'}
             </p>
           </div>
 
-          <div className="flex gap-2">
+          <div className={styles.navBtnGroup}>
             <button
               type="button"
               onClick={handlePrev}
-              className="treatment-nav-circle-btn"
+              className={styles.navCircleBtn}
               aria-label="Previous packages"
             >
               ‹
@@ -291,7 +153,7 @@ export default function TreatmentPackagesSlider() {
             <button
               type="button"
               onClick={handleNext}
-              className="treatment-nav-circle-btn"
+              className={styles.navCircleBtn}
               aria-label="Next packages"
             >
               ›
@@ -304,16 +166,11 @@ export default function TreatmentPackagesSlider() {
           {packages.slice(startIndex, startIndex + visibleCount).map((pkg, idx) => (
             <article key={idx} className={styles.card}>
               <div>
-                <h3 className={styles.header}>
-                  {pkg.title}
-                </h3>
+                <h3 className={styles.header}>{pkg.title}</h3>
 
                 <div className={styles.imgWrap}>
-                  <img
-                    src={pkg.img}
-                    alt={pkg.alt}
-                    loading="lazy"
-                  />
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={pkg.img} alt={pkg.alt} loading="lazy" />
                 </div>
 
                 <div className={styles.duration}>
@@ -321,9 +178,7 @@ export default function TreatmentPackagesSlider() {
                   <span className="text-slate-900 font-bold">{pkg.duration}</span>
                 </div>
 
-                <div className={styles.featuresTitle}>
-                  Included in this package:
-                </div>
+                <div className={styles.featuresTitle}>Included in this package:</div>
                 <ul className={styles.featuresList}>
                   {pkg.included.map((inc, i) => (
                     <li key={i}>
@@ -338,9 +193,7 @@ export default function TreatmentPackagesSlider() {
                   <div className="text-xs text-slate-400 uppercase tracking-wider font-semibold mb-1">
                     Package Price
                   </div>
-                  <div className="text-2xl font-extrabold text-amber-400">
-                    {pkg.priceUSD}
-                  </div>
+                  <div className="text-2xl font-extrabold text-amber-400">{pkg.priceUSD}</div>
                   <div className="text-xs text-slate-300 mt-0.5">
                     ({pkg.priceEUR} / {pkg.priceGBP})
                   </div>
