@@ -22,14 +22,156 @@
 
 ## 1. 🛑 Zero-Tolerance Operational Rules
 
-Any AI Agent making changes to this codebase MUST follow these four non-negotiable rules:
+Any AI Agent making changes to this codebase MUST follow these core non-negotiable rules:
 
 | Rule | Mandate | Consequence of Violation |
 | :--- | :--- | :--- |
 | **1. Never Reduce/Summarize Content** | **100% of authentic medical/clinical copy must be preserved.** Every anatomical breakdown (implant screw, abutment, crown), table row, reason, and FAQ answer must be fully translated and kept intact. | Immediate task failure and rejection. |
-| **2. Pure CSS Modules Only** | **All styles must reside in `*.module.css` files.** Never use Tailwind utility classes (e.g., `relative`, `flex`, `mb-7`, `justify-end`) in JSX. | Layout breakage, floating buttons outside viewport. |
-| **3. Relative Anchor Rule** | **Any element containing `position: absolute` children MUST have `position: relative;` declared directly on its CSS class in the module.** | Absolute elements jumping to page top/hero. |
-| **4. Zero Build Errors** | Every change must pass `npm run build` with **0 TypeScript and 0 Next.js errors (Exit Code: 0)** before completion. | Production deployment failure. |
+| **2. Pure CSS Modules for EVERY Section** | **Every single section/component created MUST have its own `[SectionName].module.css`.** Never use inline styles or assume Tailwind utility classes exist. | Layout breakage, style bleed, floating buttons. |
+| **3. 7-Language i18n for EVERY Section** | **Every new section MUST provide translations for all 7 languages (`tr`, `en`, `de`, `pl`, `pt`, `es`, `ru`).** Never hardcode text strings in TSX/JSX. | Broken multi-locale user experience. |
+| **4. Relative Anchor Rule** | **Any element containing `position: absolute` children MUST have `position: relative;` declared directly on its CSS class in the module.** | Absolute elements jumping to page top/hero. |
+| **5. Zero Build Errors** | Every change must pass `npm run build` with **0 TypeScript and 0 Next.js errors (Exit Code: 0)** before completion. | Production deployment failure. |
+
+---
+
+### 🧱 Atomic Section Creation Protocol
+
+Whenever you create, refactor, or add **ANY section or UI component**, you MUST strictly follow this exact 3-file atomic pattern:
+
+#### File 1: The TSX Component (`src/components/treatment-sections/Treatment[Feature]Section.tsx`)
+```tsx
+'use client';
+
+import React from 'react';
+import { useLocale } from 'next-intl';
+import { Link } from '@/i18n/routing';
+import styles from './Treatment[Feature]Section.module.css';
+
+interface FeatureItem {
+  title: string;
+  desc: string;
+}
+
+interface Props {
+  customHeading?: string;
+  customItems?: FeatureItem[];
+}
+
+// 100% Type-safe, Zero MISSING_MESSAGE runtime errors across all 7 languages:
+const FEATURE_DATA: Record<string, { heading: string; items: FeatureItem[] }> = {
+  tr: { heading: 'Türkçe Başlık', items: [{ title: '...', desc: '...' }] },
+  en: { heading: 'English Title', items: [{ title: '...', desc: '...' }] },
+  de: { heading: 'Deutscher Titel', items: [{ title: '...', desc: '...' }] },
+  pl: { heading: 'Polski Tytuł', items: [{ title: '...', desc: '...' }] },
+  pt: { heading: 'Título em Português', items: [{ title: '...', desc: '...' }] },
+  es: { heading: 'Título en Español', items: [{ title: '...', desc: '...' }] },
+  ru: { heading: 'Русский Заголовок', items: [{ title: '...', desc: '...' }] },
+};
+
+export default function Treatment[Feature]Section({ customHeading, customItems }: Props) {
+  const locale = useLocale();
+  const data = FEATURE_DATA[locale] || FEATURE_DATA.en;
+
+  const heading = customHeading || data.heading;
+  const items = customItems || data.items;
+
+  return (
+    <section aria-labelledby="feature-heading" className={styles.section}>
+      <div className={styles.container}>
+        <h2 id="feature-heading" className={styles.heading}>{heading}</h2>
+        <div className={styles.grid}>
+          {items.map((item, idx) => (
+            <div key={idx} className={styles.card}>
+              <h3 className={styles.cardTitle}>{item.title}</h3>
+              <p className={styles.cardDesc}>{item.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+```
+
+#### File 2: The CSS Module (`src/components/treatment-sections/Treatment[Feature]Section.module.css`)
+```css
+.section {
+  padding: 4.5rem 0;
+  background-color: #ffffff;
+  color: #111827;
+  position: relative;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  position: relative;
+}
+
+.heading {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #0c1b4d;
+  line-height: 1.25;
+  margin-bottom: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 2rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0c1b4d;
+  margin-bottom: 0.75rem;
+}
+
+.cardDesc {
+  font-size: 0.95rem;
+  color: #475569;
+  line-height: 1.6;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .section {
+    padding: 3rem 0;
+  }
+  .heading {
+    font-size: 1.75rem;
+  }
+}
+```
+
+#### File 3: The 7-Language JSON Entries
+Ensure `messages/[locale]/treatments/[slug].json` across all 7 locales (`tr`, `en`, `de`, `pl`, `pt`, `es`, `ru`) contains any route-specific data required by the section.
 
 ---
 
