@@ -108,19 +108,19 @@
 }
 
 .titleText {
-  font-size: 1.15rem;
-  font-weight: 800;
-  color: #0f172a;
-  line-height: 1.35;
+  font-size: clamp(1.25rem, 1.8vw, 1.42rem);
+  font-weight: 600;
+  color: #0c1b4d;
+  line-height: 1.3;
   letter-spacing: -0.01em;
 }
 
 .targetText {
-  font-size: 0.92rem;
-  font-weight: 600;
-  color: #D58936;
+  font-size: 0.94rem;
+  font-weight: 500;
+  color: #d58936;
   line-height: 1.5;
-  margin-top: 0.25rem;
+  margin-top: 0.3rem;
 }
 
 .chevron {
