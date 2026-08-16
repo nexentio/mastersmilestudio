@@ -66,24 +66,24 @@ const DETAIL_I18N: Record<string, DetailI18n> = {
       'Istanbul has become a top destination for dental implants due to its world-class healthcare system, highly skilled dental professionals, and ',
     whyChooseIntroLink: 'affordable prices.',
     whyChooseIntroTail: ' Here’s why choosing dental implants in Istanbul is a great option:',
-    reason1Title: '1. Expert Dental Implant Surgeons',
+    reason1Title: 'Expert Dental Implant Surgeons',
     reason1P1:
       'At Master Smile Studio, all of our dentists are not only highly trained professionals but also the founders of the clinic. Each doctor has received advanced education from some of the most prestigious universities in Turkey, ensuring a strong academic background and deep clinical expertise.',
     reason1P2:
       'All surgical procedures — including dental implants, full-arch restorations, bone grafting, and complex oral surgeries — are performed directly by our experienced oral surgery team, not by assistants or visiting dentists. This means every patient receives consistent, high-quality treatment from trusted specialists.',
     reason1P3:
       'With a strong focus on brand quality and patient safety, Master Smile Studio is recognized for its experience in advanced and challenging dental cases. Our expert surgeons use modern techniques and precise planning to provide long-lasting, natural-looking implant results tailored to your needs.',
-    reason2Title: '2. Dental Implant Cost in Istanbul - Master Smile Studio',
+    reason2Title: 'Dental Implant Cost in Istanbul - Master Smile Studio',
     reason2P:
       'Compared to many other countries, dental implant costs in Istanbul are significantly lower, allowing you to receive high-end luxury care without breaking the bank.',
     viewAllPackagesBtn: 'View All Packages →',
-    reason3Title: '3. Advanced Technology & 3D Digital Precision',
+    reason3Title: 'Advanced Technology & 3D Digital Precision',
     reason3P:
       'We use the latest technology in implantology, ensuring faster healing times and more accurate results. Master Smile Studio in Istanbul is equipped with state-of-the-art 3D CBCT imaging and intraoral scanners to make your treatment as comfortable and effective as possible.',
-    reason4Title: '4. Before - After Dental Implant at Master Smile Studio in Istanbul',
+    reason4Title: 'Before - After Dental Implant at Master Smile Studio in Istanbul',
     reason4P:
       'Dental implants in Istanbul are not just about function; they are designed to blend seamlessly with your natural teeth. Our expert team works to ensure your new smile looks natural, radiant, and beautiful.',
-    reason5Title: '5. Travel and Treatment in One',
+    reason5Title: 'Travel and Treatment in One',
     reason5PText:
       'Istanbul is a vibrant world metropolis, offering the perfect mix of culture, history, and modern luxury. You can enjoy a relaxing holiday while receiving top-tier dental treatment. Master Smile Studio offers expert care at a fraction of Western costs. ',
     reason5PLink: 'Contact us today to learn more!',
@@ -118,24 +118,24 @@ const DETAIL_I18N: Record<string, DetailI18n> = {
     whyChooseIntroLink: 'uygun fiyatları',
     whyChooseIntroTail:
       ' sayesinde diş implantı tedavisinde küresel bir lider haline gelmiştir. Hastaların Master Smile Studio Türkiye’yi tercih etmelerinin başlıca nedenleri:',
-    reason1Title: '1. Uzman Diş İmplantı Cerrahları',
+    reason1Title: 'Uzman Diş İmplantı Cerrahları',
     reason1P1:
       'Master Smile Studio’da tüm hekimlerimiz alanında üst düzey eğitim almış uzmanlar olup kliniğimizin kurucu ortaklarıdır. Hekimlerimizin her biri Türkiye’nin en prestijli üniversitelerinden mezun olmuş, güçlü bir akademik altyapı ve derin klinik uzmanlık kazanmıştır.',
     reason1P2:
       'Diş implantları, tam çene restorasyonları, kemik greftleme ve karmaşık cerrahiler dahil tüm operasyonlar asistanlar veya stajyerler tarafından değil, doğrudan deneyimli cerrahi ekibimiz tarafından bizzat gerçekleştirilir. Bu sayede her hastamız güvenilir uzmanlarımızdan en yüksek kalitede tedavi alır.',
     reason1P3:
       'Marka kalitesi ve hasta güvenliğine odaklanan Master Smile Studio, ileri ve zorlu dental vakalardaki tecrübesiyle tanınmaktadır. Uzman cerrahlarımız, ihtiyaçlarınıza özel uzun ömürlü ve doğal görünümlü implant sonuçları sunmak için modern teknikler ve hassas dijital planlama kullanır.',
-    reason2Title: '2. İstanbul’da Diş İmplantı Maliyeti – Master Smile Studio',
+    reason2Title: 'İstanbul’da Diş İmplantı Maliyeti – Master Smile Studio',
     reason2P:
       'Birçok ülkeyle karşılaştırıldığında, İstanbul’da diş implantı maliyetleri önemli ölçüde daha düşüktür; bu da bütçenizi sarsmadan birinci sınıf lüks tedavi almanızı sağlar.',
     viewAllPackagesBtn: 'Tüm Paketleri İncele →',
-    reason3Title: '3. İleri Teknoloji ve Dijital Planlama',
+    reason3Title: 'İleri Teknoloji ve Dijital Planlama',
     reason3P:
       'İmplantolojide en son dijital teknolojileri kullanarak daha hızlı iyileşme süreleri ve milimetrik hassasiyette sonuçlar elde ediyoruz. Master Smile Studio kliniğimiz, tedavinizi mümkün olduğunca konforlu ve etkili kılmak için son teknoloji 3D tomografi ve dijital tarayıcılarla donatılmıştır.',
-    reason4Title: '4. Master Smile Studio İstanbul’da Öncesi & Sonrası Sonuçlar',
+    reason4Title: 'Master Smile Studio İstanbul’da Öncesi & Sonrası Sonuçlar',
     reason4P:
       'İstanbul’da diş implantları sadece işlevsel değil; aynı zamanda doğal dişlerinizle kusursuz bir uyum yakalayacak şekilde estetik olarak tasarlanır. Uzman ekibimiz yeni gülüşünüzün hem son derece doğal hem de büyüleyici görünmesini sağlar.',
-    reason5Title: '5. Seyahat ve Tedavi Bir Arada',
+    reason5Title: 'Seyahat ve Tedavi Bir Arada',
     reason5PText:
       'İstanbul kültür, tarih ve modern konforun kusursuz bir karışımını sunan büyüleyici bir şehirdir. En üst düzey dental tedaviyi alırken aynı zamanda unutulmaz bir tatil deneyimi yaşayabilirsiniz. ',
     reason5PLink: 'Detaylı bilgi için bugün bizimle iletişime geçin!',
@@ -169,24 +169,24 @@ const DETAIL_I18N: Record<string, DetailI18n> = {
       'Stambuł stał się wiodącym kierunkiem turystyki stomatologicznej na świecie dzięki doskonałemu systemowi opieki medycznej, wybitnym chirurgom oraz ',
     whyChooseIntroLink: 'przystępnym cenom.',
     whyChooseIntroTail: ' Oto dlaczego warto wybrać implanty zębowe w Stambule:',
-    reason1Title: '1. Doświadczeni chirurdzy implantolodzy',
+    reason1Title: 'Doświadczeni chirurdzy implantolodzy',
     reason1P1:
       'W Master Smile Studio wszyscy nasi stomatolodzy to nie tylko wysoce wykwalifikowani specjaliści, ale także współzałożyciele kliniki. Każdy lekarz ukończył najbardziej prestiżowe uniwersytety w Turcji, co zapewnia solidne zaplecze akademickie i głębokie doświadczenie kliniczne.',
     reason1P2:
       'Wszystkie zabiegi chirurgiczne — w tym implanty zębowe, rekonstrukcje pełnołukowe, przeszczepy kości i skomplikowane operacje stomatologiczne — są wykonywane bezpośrednio przez nasz doświadczony zespół chirurgów, a nie przez asystentów czy lekarzy rezydentów. Gwarantuje to najwyższą jakość leczenia.',
     reason1P3:
       'Kładąc nacisk na jakość marek i bezpieczeństwo pacjentów, Master Smile Studio słynie z doświadczenia w leczeniu zaawansowanych i wymagających przypadków. Nasi chirurdzy stosują nowoczesne techniki i precyzyjne planowanie cyfrowe, aby zapewnić trwałe rezultaty.',
-    reason2Title: '2. Koszt implantów zębowych w Stambule – Master Smile Studio',
+    reason2Title: 'Koszt implantów zębowych w Stambule – Master Smile Studio',
     reason2P:
       'W porównaniu z wieloma innymi krajami, koszty implantów zębowych w Stambule są znacznie niższe, co pozwala na otrzymanie opieki medycznej klasy premium bez nadwyrężania budżetu.',
     viewAllPackagesBtn: 'Zobacz wszystkie pakiety →',
-    reason3Title: '3. Zaawansowana technologia i planowanie 3D',
+    reason3Title: 'Zaawansowana technologia i planowanie 3D',
     reason3P:
       'Stosujemy najnowocześniejszą technologię w implantologii, zapewniając szybszy czas gojenia i milimetrową precyzję. Klinika Master Smile Studio w Stambule jest wyposażona w tomografię 3D CBCT i skanery cyfrowe.',
-    reason4Title: '4. Wyniki przed i po w Master Smile Studio w Stambule',
+    reason4Title: 'Wyniki przed i po w Master Smile Studio w Stambule',
     reason4P:
       'Implanty zębowe w Stambule to nie tylko funkcjonalność żucia; są one projektowane tak, aby idealnie współgrały z Twoimi naturalnymi zębami i rysami twarzy.',
-    reason5Title: '5. Podróż i leczenie w jednym',
+    reason5Title: 'Podróż i leczenie w jednym',
     reason5PText:
       'Stambuł to tętniąca życiem metropolia oferująca idealne połączenie kultury, historii i nowoczesnego komfortu. Możesz cieszyć się niezapomnianymi wakacjami podczas leczenia stomatologicznego na najwyższym poziomie. ',
     reason5PLink: 'Skontaktuj się z nami już dziś!',
@@ -220,24 +220,24 @@ const DETAIL_I18N: Record<string, DetailI18n> = {
       'Istanbul ist dank seines erstklassigen Gesundheitssystems, erfahrener Chirurgen und ',
     whyChooseIntroLink: 'attraktiver Preise',
     whyChooseIntroTail: ' ein weltweites Spitzenziel für Zahnimplantate:',
-    reason1Title: '1. Erfahrene Mund-Kiefer-Gesichtschirurgen',
+    reason1Title: 'Erfahrene Mund-Kiefer-Gesichtschirurgen',
     reason1P1:
       'Bei Master Smile Studio sind alle unsere Zahnärzte nicht nur hochqualifizierte Spezialisten, sondern auch die Gründer der Klinik. Jeder Arzt verfügt über eine renommierte universitäre Ausbildung und tiefgreifende chirurgische Erfahrung.',
     reason1P2:
       'Alle Eingriffe — einschließlich Zahnimplantate, Ganzkieferrestaurationen und Knochenaufbau — werden direkt von unserem erfahrenen Chirurgenteam durchgeführt, niemals von Assistenten.',
     reason1P3:
       'Mit höchstem Fokus auf Markenqualität und Patientensicherheit setzt Master Smile Studio moderne 3D-Planung für langlebige und natürliche Ergebnisse ein.',
-    reason2Title: '2. Kosten für Zahnimplantate in Istanbul – Master Smile Studio',
+    reason2Title: 'Kosten für Zahnimplantate in Istanbul – Master Smile Studio',
     reason2P:
       'Im Vergleich zu Deutschland, Österreich und der Schweiz sind die Kosten für Zahnimplantate in Istanbul deutlich günstiger bei identischer Premium-Qualität.',
     viewAllPackagesBtn: 'Alle Pakete ansehen →',
-    reason3Title: '3. Modernste Technologie & 3D-Präzision',
+    reason3Title: 'Modernste Technologie & 3D-Präzision',
     reason3P:
       'Wir setzen modernste DVT-3D-Diagnostik und digitale Scanner ein, um Behandlungszeiten zu verkürzen und maximale Behandlungspräzision zu gewährleisten.',
-    reason4Title: '4. Vorher-Nachher-Ergebnisse bei Master Smile Studio',
+    reason4Title: 'Vorher-Nachher-Ergebnisse bei Master Smile Studio',
     reason4P:
       'Zahnimplantate in Istanbul verbinden perfekte Kaufunktion mit höchster Ästhetik für ein strahlendes, natürliches Lächeln.',
-    reason5Title: '5. Reise und Behandlung kombiniert',
+    reason5Title: 'Reise und Behandlung kombiniert',
     reason5PText:
       'Genießen Sie einen erholsamen Aufenthalt in der Weltmetropole Istanbul, während Sie Ihre Zähne behandeln lassen. ',
     reason5PLink: 'Kontaktieren Sie uns noch heute!',
@@ -271,24 +271,24 @@ const DETAIL_I18N: Record<string, DetailI18n> = {
       'Istambul tornou-se um dos principais destinos para implantes dentários devido ao seu sistema de saúde de excelência e ',
     whyChooseIntroLink: 'preços acessíveis.',
     whyChooseIntroTail: ' Veja por que escolher implantes em Istambul é a melhor opção:',
-    reason1Title: '1. Cirurgiões Especialistas em Implantes Dentários',
+    reason1Title: 'Cirurgiões Especialistas em Implantes Dentários',
     reason1P1:
       'Na Master Smile Studio, todos os nossos cirurgiões são sócios-fundadores da clínica com formação nas universidades mais renomadas da Turquia.',
     reason1P2:
       'Todos os procedimentos cirúrgicos são realizados diretamente pela nossa equipe de especialistas seniores, sem assistentes ou estagiários.',
     reason1P3:
       'Com foco rigoroso em marcas premium e segurança, proporcionamos resultados estéticos duradouros e altamente naturais.',
-    reason2Title: '2. Custos de Implantes Dentários em Istambul – Master Smile Studio',
+    reason2Title: 'Custos de Implantes Dentários em Istambul – Master Smile Studio',
     reason2P:
       'Os custos em Istambul são consideravelmente mais acessíveis, permitindo que você receba um tratamento de alto padrão com grande economia.',
     viewAllPackagesBtn: 'Ver Todos os Pacotes →',
-    reason3Title: '3. Tecnologia Avançada e Precisão Digital 3D',
+    reason3Title: 'Tecnologia Avançada e Precisão Digital 3D',
     reason3P:
       'Utilizamos tomografia 3D e scanners intraorais para planejamentos precisos e recuperações rápidas.',
-    reason4Title: '4. Resultados Antes e Depois na Master Smile Studio',
+    reason4Title: 'Resultados Antes e Depois na Master Smile Studio',
     reason4P:
       'Nossos implantes são projetados para harmonizar perfeitamente com os seus dentes naturais e contornos faciais.',
-    reason5Title: '5. Viagem e Tratamento em uma Só Experiência',
+    reason5Title: 'Viagem e Tratamento em uma Só Experiência',
     reason5PText:
       'Desfrute de uma estadia inesquecível em Istambul enquanto renova completamente o seu sorriso. ',
     reason5PLink: 'Fale conosco hoje mesmo!',
@@ -322,24 +322,24 @@ const DETAIL_I18N: Record<string, DetailI18n> = {
       'Estambul es un destino líder mundial en implantes dentales gracias a su avanzada tecnología médica y ',
     whyChooseIntroLink: 'precios accesibles.',
     whyChooseIntroTail: ' Razones principales para elegir Master Smile Studio en Estambul:',
-    reason1Title: '1. Cirujanos Expertos en Implantes Dentales',
+    reason1Title: 'Cirujanos Expertos en Implantes Dentales',
     reason1P1:
       'En Master Smile Studio, todos nuestros doctores son cirujanos experimentados y socios fundadores de la clínica con formación académica de élite.',
     reason1P2:
       'Todas las cirugías son realizadas directamente por nuestro equipo de especialistas sénior, garantizando la máxima seguridad y precisión.',
     reason1P3:
       'Combinamos marcas de implantes de estándar suizo y alemán con tecnología digital 3D para resultados estéticos de por vida.',
-    reason2Title: '2. Costo de Implantes Dentales en Estambul – Master Smile Studio',
+    reason2Title: 'Costo de Implantes Dentales en Estambul – Master Smile Studio',
     reason2P:
       'Los precios en Estambul son notablemente más económicos, ofreciéndole atención médica prémium a una fracción del costo internacional.',
     viewAllPackagesBtn: 'Ver Todos los Paquetes →',
-    reason3Title: '3. Tecnología Avanzada y Planificación Digital 3D',
+    reason3Title: 'Tecnología Avanzada y Planificación Digital 3D',
     reason3P:
       'Contamos con tomografía 3D CBCT y escáneres digitales para una colocación guiada y una rápida recuperación.',
-    reason4Title: '4. Resultados Antes y Después en Master Smile Studio',
+    reason4Title: 'Resultados Antes y Después en Master Smile Studio',
     reason4P:
       'Nuestros implantes están diseñados para brindar una masticación potente y una estética totalmente natural.',
-    reason5Title: '5. Turismo y Tratamiento Dental en un Mismo Viaje',
+    reason5Title: 'Turismo y Tratamiento Dental en un Mismo Viaje',
     reason5PText:
       'Disfrute de los atractivos históricos de Estambul mientras transforma su sonrisa con total comodidad. ',
     reason5PLink: '¡Contáctenos hoy mismo!',
@@ -373,24 +373,24 @@ const DETAIL_I18N: Record<string, DetailI18n> = {
       'Стамбул стал мировым центром стоматологического туризма благодаря передовой медицине и ',
     whyChooseIntroLink: 'доступным ценам.',
     whyChooseIntroTail: ' Главные преимущества выбора Master Smile Studio в Стамбуле:',
-    reason1Title: '1. Опытные хирурги-имплантологи',
+    reason1Title: 'Опытные хирурги-имплантологи',
     reason1P1:
       'В Master Smile Studio все врачи являются не только признанными специалистами, но и основателями клиники с академическим образованием в ведущих университетах Турции.',
     reason1P2:
       'Все операции проводятся лично нашими ведущими челюстно-лицевыми хирургами, без участия ассистентов или стажеров.',
     reason1P3:
       'Мы используем цифровое 3D-планирование и проверенные мировые бренды имплантатов для достижения идеального и долговечного результата.',
-    reason2Title: '2. Стоимость имплантации зубов в Стамбуле – Master Smile Studio',
+    reason2Title: 'Стоимость имплантации зубов в Стамбуле – Master Smile Studio',
     reason2P:
       'Цены на имплантацию в Стамбуле значительно выгоднее, что позволяет получить премиальное лечение с существенной экономией.',
     viewAllPackagesBtn: 'Посмотреть все пакеты →',
-    reason3Title: '3. Передовые технологии и 3D-точность',
+    reason3Title: 'Передовые технологии и 3D-точность',
     reason3P:
       'Мы используем 3D-томографию CBCT и цифровые интраоральные сканеры для быстрого заживления и идеальной точности.',
-    reason4Title: '4. Результаты До и После в Master Smile Studio',
+    reason4Title: 'Результаты До и После в Master Smile Studio',
     reason4P:
       'Имплантаты в Стамбуле дарят не только уверенное жевание, но и великолепную естественную улыбку.',
-    reason5Title: '5. Путешествие и лечение в одной поездке',
+    reason5Title: 'Путешествие и лечение в одной поездке',
     reason5PText:
       'Совместите первоклассное лечение с незабываемым отдыхом в великолепном Стамбуле. ',
     reason5PLink: 'Свяжитесь с нами сегодня!',

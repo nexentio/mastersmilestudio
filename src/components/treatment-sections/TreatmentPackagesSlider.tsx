@@ -817,6 +817,7 @@ export default function TreatmentPackagesSlider() {
   const locale = useLocale();
   const currentData = PACKAGES_DATA[locale] || PACKAGES_DATA.en;
   const [startIndex, setStartIndex] = useState(0);
+  const [mobileIndex, setMobileIndex] = useState(0);
 
   const visibleCount = 3;
   const maxStart = Math.max(0, currentData.packages.length - visibleCount);
@@ -829,10 +830,18 @@ export default function TreatmentPackagesSlider() {
     setStartIndex((prev) => (prev < maxStart ? prev + 1 : 0));
   };
 
+  const handleMobilePrev = () => {
+    setMobileIndex((prev) => (prev > 0 ? prev - 1 : currentData.packages.length - 1));
+  };
+
+  const handleMobileNext = () => {
+    setMobileIndex((prev) => (prev < currentData.packages.length - 1 ? prev + 1 : 0));
+  };
+
   return (
     <section aria-labelledby="packages-slider-heading" className={styles.wrapper}>
       <div className={styles.container}>
-        {/* Header with Side-by-Side Nav Buttons */}
+        {/* Header with Side-by-Side Nav Buttons (Desktop) */}
         <div className={styles.carouselHeader}>
           <div className={styles.titleGroup}>
             <h2 id="packages-slider-heading" className={styles.heading}>
@@ -863,16 +872,16 @@ export default function TreatmentPackagesSlider() {
           </div>
         </div>
 
-        {/* Carousel Grid */}
+        {/* Desktop Carousel Grid */}
         <div className={styles.grid}>
           {currentData.packages.slice(startIndex, startIndex + visibleCount).map((pkg, idx) => (
-            <article key={idx} className={styles.card}>
+            <article key={`${startIndex}-${idx}`} className={`${styles.card} ${styles.fadeSlide}`}>
               <div>
                 <h3 className={styles.header}>{pkg.title}</h3>
 
                 <div className={styles.imgWrap}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={pkg.img} alt={pkg.alt} loading="lazy" />
+                  <img key={pkg.img} src={pkg.img} alt={pkg.alt} loading="lazy" className={styles.packageImg} />
                 </div>
 
                 <div className={styles.duration}>
@@ -911,6 +920,100 @@ export default function TreatmentPackagesSlider() {
               </div>
             </article>
           ))}
+        </div>
+
+        {/* Mobile 1-Card Carousel with Side Arrow Buttons */}
+        <div className={styles.mobileContainer}>
+          <div className={styles.mobileCardWrapper}>
+            <button
+              type="button"
+              onClick={handleMobilePrev}
+              className={`${styles.sideArrowBtn} ${styles.sideArrowLeft}`}
+              aria-label="Previous package"
+            >
+              ‹
+            </button>
+
+            <div className={styles.mobileCardInner}>
+              {(() => {
+                const pkg = currentData.packages[mobileIndex];
+                return (
+                  <article key={mobileIndex} className={`${styles.card} ${styles.fadeSlide}`}>
+                    <div>
+                      <h3 className={styles.header}>{pkg.title}</h3>
+
+                      <div className={styles.imgWrap}>
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img
+                          key={pkg.img}
+                          src={pkg.img}
+                          alt={pkg.alt}
+                          loading="lazy"
+                          className={styles.packageImg}
+                        />
+                      </div>
+
+                      <div className={styles.duration}>
+                        <span className="text-slate-500 font-medium">{currentData.durationLabel}</span>
+                        <span className="text-slate-900 font-bold">{pkg.duration}</span>
+                      </div>
+
+                      <div className={styles.featuresTitle}>{currentData.includedLabel}</div>
+                      <ul className={styles.featuresList}>
+                        {pkg.included.map((inc, i) => (
+                          <li key={i}>
+                            <span>{inc}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+
+                    <div>
+                      <div className={styles.priceBox}>
+                        <div className="text-xs text-slate-400 uppercase tracking-wider font-semibold mb-1">
+                          {currentData.priceLabel}
+                        </div>
+                        <div className="text-2xl font-extrabold text-amber-400">{pkg.priceUSD}</div>
+                        <div className="text-xs text-slate-300 mt-0.5">
+                          ({pkg.priceEUR} / {pkg.priceGBP})
+                        </div>
+                      </div>
+
+                      <Link
+                        href="/contact"
+                        className={styles.btn}
+                        aria-label={`${currentData.quoteBtn} - ${pkg.title}`}
+                      >
+                        {currentData.quoteBtn}
+                      </Link>
+                    </div>
+                  </article>
+                );
+              })()}
+            </div>
+
+            <button
+              type="button"
+              onClick={handleMobileNext}
+              className={`${styles.sideArrowBtn} ${styles.sideArrowRight}`}
+              aria-label="Next package"
+            >
+              ›
+            </button>
+          </div>
+
+          {/* Mobile Dots */}
+          <div className={styles.mobileDots}>
+            {currentData.packages.map((_, dotIdx) => (
+              <button
+                key={dotIdx}
+                type="button"
+                onClick={() => setMobileIndex(dotIdx)}
+                aria-label={`Go to package ${dotIdx + 1}`}
+                className={`${styles.dot} ${mobileIndex === dotIdx ? styles.dotActive : styles.dotInactive}`}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>
