@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
 import { getWhatsAppLink } from '@/config/site';
 import TreatmentDivider from '@/components/treatment-sections/TreatmentDivider';
@@ -23,6 +23,7 @@ import styles from './DentalImplantsDetailView.module.css';
 
 export default function DentalImplantsDetailView() {
   const locale = useLocale();
+  const t = useTranslations('services');
 
   return (
     <div className="treatment-page-wrapper">
@@ -30,60 +31,35 @@ export default function DentalImplantsDetailView() {
       <section aria-labelledby="intro-implants-heading" className={styles.introSection}>
         <div className={styles.container}>
           <h2 id="intro-implants-heading" className={styles.mainHeading}>
-            <span>{locale === 'tr' ? 'İstanbul Diş İmplantı' : 'Dental Implants'}</span>
-            <span>{locale === 'tr' ? ' – Master Smile Studio Türkiye' : ' in Istanbul – Master Smile Studio Turkey'}</span>
+            {t('dentalImplantsIntro.title')}
           </h2>
 
           <h3 className={styles.subHeading}>
-            {locale === 'tr' ? 'Diş İmplantı Nedir?' : 'What Are Dental Implants?'}
+            {t('dentalImplantsIntro.whatIsTitle')}
           </h3>
 
           <p className={styles.textP}>
-            {locale === 'tr' ? (
-              <>
-                Bir <strong>diş implantı</strong>, eksik bir dişin yerine konan yapay bir diş köküdür. Genellikle titanyumdan üretilen küçük bir vida görünümündedir ve yeni dişi güvenli bir şekilde tutmak için çene kemiğine yerleştirilir. Tam bir diş restorasyonu için üç ana parça kullanılır:
-              </>
-            ) : (
-              <>
-                A <strong>dental implant</strong> is an artificial tooth root that replaces a missing tooth. It looks like a small screw, usually made of titanium, and is placed into the jawbone to hold a new tooth securely. For a full tooth replacement, three main parts are used:
-              </>
-            )}
+            {t('dentalImplantsIntro.whatIsP1')}
           </p>
 
           <ul className={styles.bulletList}>
             <li>
-              <strong>{locale === 'tr' ? 'Dental implant (titanyum vida)' : 'Dental implant (titanium screw)'}</strong> – {locale === 'tr' ? 'diş kökü gibi görev yapar.' : 'works as the tooth root.'}
+              <strong>{t('dentalImplantsIntro.part1Label')}</strong> – {t('dentalImplantsIntro.part1Desc')}
             </li>
             <li>
-              <strong>{locale === 'tr' ? 'Abutment (bağlantı parçası)' : 'Abutment'}</strong> – {locale === 'tr' ? 'implantı kurona bağlar.' : 'connects the implant to the crown.'}
+              <strong>{t('dentalImplantsIntro.part2Label')}</strong> – {t('dentalImplantsIntro.part2Desc')}
             </li>
             <li>
-              <strong>{locale === 'tr' ? 'Kuron (kaplama diş)' : 'Crown'}</strong> – {locale === 'tr' ? 'doğal diş gibi görünen görünür üst kısımdır.' : 'the visible part that looks like a natural tooth.'}
+              <strong>{t('dentalImplantsIntro.part3Label')}</strong> – {t('dentalImplantsIntro.part3Desc')}
             </li>
           </ul>
 
           <p className={styles.textP}>
-            {locale === 'tr' ? (
-              <>
-                İmplant iyileşip kemikle güçlü bir şekilde kaynaştıktan sonra kuron hazırlanır ve takılır. <strong>İstanbul</strong>&apos;daki <strong>Master Smile Studio</strong> kliniğimizde, çene cerrahisi alanında uzman hekim kadromuz gülüşünüzü yeniden kazandırmak için kusursuz ve yüksek kaliteli bir diş implantı prosedürü sağlar.
-              </>
-            ) : (
-              <>
-                Once the implant has healed and bonded strongly with the bone, the crown is made and attached. At <strong>Master Smile Studio</strong> in <strong>Istanbul</strong>, our expert team specializing in oral surgery ensures a seamless and high-quality dental implant procedure to restore your smile.
-              </>
-            )}
+            {t('dentalImplantsIntro.healingP')}
           </p>
 
           <p className={styles.textP}>
-            {locale === 'tr' ? (
-              <>
-                Bir veya daha fazla dişiniz eksikse, <strong>İstanbul&apos;da diş implantı</strong> tedavisi güvenli, uzun ömürlü ve estetik bir çözümdür.
-              </>
-            ) : (
-              <>
-                If you are missing one or more teeth, <strong>dental implants in Istanbul</strong> can be a safe, long-lasting, and aesthetic solution.
-              </>
-            )}
+            {t('dentalImplantsIntro.solutionP')}
           </p>
 
           {/* Fullwidth Horizontal Video Embed (YouTube R081L98DAls) */}
@@ -105,11 +81,7 @@ export default function DentalImplantsDetailView() {
 
           {/* DENTAL IMPLANTS COST HEADING */}
           <h2 id="cost-heading-center" className={styles.costHeading}>
-            <span>
-              {locale === 'tr'
-                ? 'İstanbul Diş İmplantı Fiyatları (Paket Ücretleri)'
-                : 'Dental Implants Cost (Price) in Istanbul, Turkey'}
-            </span>
+            <span>{t('dentalImplantsIntro.costHeading')}</span>
           </h2>
 
           {/* WHY CHOOSE DENTAL IMPLANTS IN ISTANBUL */}

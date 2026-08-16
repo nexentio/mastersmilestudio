@@ -80,5 +80,66 @@
       "title": "AĞIZ, DİŞ VE ÇENE CERRAHİSİ",
       "description": "Gömülü 20'lik diş çekimleri, kist operasyonları ve kemik ogmentasyonu cerrahi uzmanlığı."
     }
+  },
+  "rightTreatment": {
+    "heading": "Sizin İçin En Doğru Tedavi Hangisi?",
+    "subtitle": "Hangi dental tedavinin ihtiyaçlarınıza uygun olduğundan emin değil misiniz? Her prosedürün kimler için olduğunu ve neler sunduğunu görmek için seçeneklerimize göz atın.",
+    "readMore": "DETAYLI BİLGİ",
+    "items": {
+      "fullMouth": {
+        "title": "Full Mouth İmplant",
+        "target": "Üst ve alt çenesinde hiç dişi kalmayan hastalar",
+        "desc": "Tüm dişlerin implantlarla sabitlendiği komple bir tam ağız restorasyonudur."
+      },
+      "allOn4": {
+        "title": "All-on-4 İmplant",
+        "target": "Dişsiz olan veya dişlerinin çekilmesi gereken ve kısa sürede sabit diş isteyen hastalar",
+        "desc": "4 implant ile sabit protez yapılır; çene kemiği yetersiz olanlara da uygulanabilir."
+      },
+      "allOn6": {
+        "title": "All-on-6 İmplant",
+        "target": "Daha güçlü çene desteği isteyen dişsiz hastalar",
+        "desc": "6 implant ile daha dayanıklı ve uzun ömürlü bir sabit protez yapılır."
+      },
+      "immediate": {
+        "title": "Aynı Gün İmplant Tedavisi",
+        "target": "Yeni diş çektirmiş ve zaman kaybetmeden implant isteyen hastalar",
+        "desc": "İmplant, diş çekimi ile aynı seansta yerleştirilerek zamandan tasarruf sağlar."
+      },
+      "zygomatic": {
+        "title": "Zigoma (Elmacık Kemiği) İmplantı",
+        "target": "Üst çenede geleneksel implantların yapılamadığı kemik kaybı olan hastalar",
+        "desc": "Elmacık kemiğine yerleştirilen özel implantlardır. Kemik grefti gerekmez."
+      },
+      "zirconium": {
+        "title": "Zirkonyum İmplant",
+        "target": "Metal alerjisi olan veya yüksek estetik kaygısı olanlar",
+        "desc": "Doğal dişe estetik olarak en yakın, biyouyumlu beyaz seramik implant türüdür."
+      },
+      "dentures": {
+        "title": "İmplant Destekli Protez (Çıt Çıtlı)",
+        "target": "Dişsiz hastalar veya hareketli protez kullanıp sabit bir çözüm isteyenler",
+        "desc": "Hareketli protezlere kıyasla çok daha stabil, oynamayan ve konforlu bir çözümdür."
+      },
+      "sinusLifting": {
+        "title": "Sinüs Lifting",
+        "target": "Üst çenede implant için yeterli kemik hacmi bulunmayan hastalar",
+        "desc": "Sinüs bölgesine kemik tozu eklenerek implant için gerekli zemin hazırlanır."
+      }
+    }
+  },
+  "dentalImplantsIntro": {
+    "title": "İstanbul Diş İmplantı – Master Smile Studio Türkiye",
+    "whatIsTitle": "Diş İmplantı Nedir?",
+    "whatIsP1": "Bir diş implantı, eksik bir dişin yerine konan yapay bir diş köküdür. Genellikle titanyumdan üretilen küçük bir vida görünümündedir ve yeni dişi güvenli bir şekilde tutmak için çene kemiğine yerleştirilir. Tam bir diş restorasyonu için üç ana parça kullanılır:",
+    "part1Label": "Dental implant (titanyum vida)",
+    "part1Desc": "diş kökü gibi görev yapar.",
+    "part2Label": "Abutment (bağlantı parçası)",
+    "part2Desc": "implantı kurona bağlar.",
+    "part3Label": "Kuron (kaplama diş)",
+    "part3Desc": "doğal diş gibi görünen görünür üst kısımdır.",
+    "healingP": "İmplant iyileşip kemikle güçlü bir şekilde kaynaştıktan sonra kuron hazırlanır ve takılır. İstanbul'daki Master Smile Studio kliniğimizde, çene cerrahisi alanında uzman hekim kadromuz gülüşünüzü yeniden kazandırmak için kusursuz ve yüksek kaliteli bir diş implantı prosedürü sağlar.",
+    "solutionP": "Bir veya daha fazla dişiniz eksikse, İstanbul'da diş implantı tedavisi güvenli, uzun ömürlü ve estetik bir çözümdür.",
+    "costHeading": "İstanbul Diş İmplantı Fiyatları (Paket Ücretleri)"
   }
 }

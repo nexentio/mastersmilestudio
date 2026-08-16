@@ -80,5 +80,66 @@
       "title": "CIRURGIA BUCOMAXILOFACIAL",
       "description": "Extrações de dentes do siso complexos, remoção de quistos e enxertos ósseos avançados."
     }
+  },
+  "rightTreatment": {
+    "heading": "Encontre o tratamento ideal para você",
+    "subtitle": "Não tem certeza de qual tratamento dentário é o mais indicado? Conheça nossas opções para tomar a melhor decisão para o seu sorriso.",
+    "readMore": "SABER MAIS",
+    "items": {
+      "fullMouth": {
+        "title": "Implantes de Boca Toda (Full Mouth)",
+        "target": "Pacientes sem dentes na arcada superior e inferior",
+        "desc": "Uma restauração completa onde todos os dentes são fixados sobre implantes."
+      },
+      "allOn4": {
+        "title": "Implantes All-on-4",
+        "target": "Pacientes desdentados que desejam dentes fixos rapidamente.",
+        "desc": "Prótese fixa suportada por 4 implantes; indicado mesmo para quem tem perda óssea."
+      },
+      "allOn6": {
+        "title": "Implantes All-on-6",
+        "target": "Pacientes que desejam maior suporte e estabilidade mastigatória.",
+        "desc": "Prótese fixa extremamente durável e resistente com 6 implantes."
+      },
+      "immediate": {
+        "title": "Implantes Imediatos",
+        "target": "Pacientes que acabaram de extrair um dente e não querem esperar",
+        "desc": "O implante é colocado na mesma sessão da extração, poupando tempo."
+      },
+      "zygomatic": {
+        "title": "Implantes Zigomáticos",
+        "target": "Pacientes com perda óssea severa onde implantes tradicionais não são viáveis",
+        "desc": "Implantes ancorados no osso zigomático. Dispensa enxerto ósseo prévio."
+      },
+      "zirconium": {
+        "title": "Implantes de Zircônia",
+        "target": "Pessoas com alergia a metais ou alta exigência estética",
+        "desc": "Implantes cerâmicos biocompatíveis brancos, com estética natural perfeita."
+      },
+      "dentures": {
+        "title": "Próteses Sobre Implantes (Overdenture)",
+        "target": "Pacientes desdentados que usam dentadura e buscam fixação firme",
+        "desc": "Solução muito mais estável e confortável do que dentaduras convencionais."
+      },
+      "sinusLifting": {
+        "title": "Elevação de Seio Maxilar (Sinus Lift)",
+        "target": "Pacientes com altura óssea insuficiente na região posterior superior",
+        "desc": "Preparação da base óssea com biomaterial para fixação segura dos implantes."
+      }
+    }
+  },
+  "dentalImplantsIntro": {
+    "title": "Implantes Dentários em Istambul – Master Smile Studio Turquia",
+    "whatIsTitle": "O que são implantes dentários?",
+    "whatIsP1": "Um implante dentário é uma raiz artificial que substitui um dente perdido. Tem o formato de um pequeno parafuso de titânio fixado no osso maxilar. Para a reconstrução completa, são usadas três partes principais:",
+    "part1Label": "Implante dentário (parafuso de titânio)",
+    "part1Desc": "atua como a raiz do dente.",
+    "part2Label": "Pilar (Abutment)",
+    "part2Desc": "conecta o implante à coroa.",
+    "part3Label": "Coroa dentária",
+    "part3Desc": "a parte visível idêntica ao dente natural.",
+    "healingP": "Após a osteointegração do implante com o osso, a coroa é instalada. No Master Smile Studio em Istambul, nossa equipe cirúrgica oferece um procedimento de alta precisão e conforto.",
+    "solutionP": "Se você perdeu um ou mais dentes, os implantes dentários em Istambul são uma solução segura, duradoura e estética.",
+    "costHeading": "Preços e Custos de Implantes Dentários em Istambul, Turquia"
   }
 }

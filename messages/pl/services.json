@@ -80,5 +80,66 @@
       "title": "CHIRURGIA STOMATOLOGICZNA",
       "description": "Ekstrakcje zębów ósmych, zabiegi usuwania torbieli oraz odbudowa kości."
     }
+  },
+  "rightTreatment": {
+    "heading": "Wybierz idealne leczenie dla siebie",
+    "subtitle": "Nie jesteś pewien, który zabieg stomatologiczny jest dla Ciebie najlepszy? Poznaj nasze procedury, aby podjąć świadomą decyzję.",
+    "readMore": "WIĘCEJ INFORMACJI",
+    "items": {
+      "fullMouth": {
+        "title": "Implanty całej szczęki (Full Mouth)",
+        "target": "Pacjenci z całkowitym bezzębiem w górnej i dolnej szczęce",
+        "desc": "Pełna rekonstrukcja uzębienia, w której wszystkie zęby są trwale osadzone na implantach."
+      },
+      "allOn4": {
+        "title": "Implanty All-on-4",
+        "target": "Pacjenci bezzębni lub wymagający usunięcia zębów, oczekujący stałych zębów w krótkim czasie.",
+        "desc": "Stała proteza oparta na 4 implantach; możliwość zastosowania przy ograniczonej ilości kości."
+      },
+      "allOn6": {
+        "title": "Implanty All-on-6",
+        "target": "Pacjenci bezzębni oczekujący maksymalnej stabilności i siły żucia.",
+        "desc": "Wyjątkowo trwała i stabilna odbudowa na 6 implantach zębowych."
+      },
+      "immediate": {
+        "title": "Implanty natychmiastowe",
+        "target": "Pacjenci bezpośrednio po ekstrakcji zęba, którzy nie chcą czekać na wszczepienie implantu",
+        "desc": "Implant jest wprowadzany podczas tej samej wizyty co usunięcie zęba, co oszczędza czas."
+      },
+      "zygomatic": {
+        "title": "Implanty jarzmowe (Zygoma)",
+        "target": "Pacjenci ze znacznym zanikiem kości w szczęce, gdzie tradycyjne implanty są niemożliwe",
+        "desc": "Specjalne implanty kotwiczone w kości jarzmowej. Bez konieczności przeszczepu kości."
+      },
+      "zirconium": {
+        "title": "Implanty cyrkonowe",
+        "target": "Osoby z alergiami na metale lub najwyższymi wymaganiami estetycznymi",
+        "desc": "Biokompatybilne białe implanty ceramiczne, najbardziej zbliżone do naturalnego zęba."
+      },
+      "dentures": {
+        "title": "Protezy na implantach (na zatrzaskach)",
+        "target": "Pacjenci bezzębni szukający stabilnego, nieprzesuwającego się rozwiązania",
+        "desc": "Znacznie bardziej stabilne i komfortowe rozwiązanie w porównaniu z tradycyjną ruchomą protezą."
+      },
+      "sinusLifting": {
+        "title": "Podniesienie dna zatoki (Sinus Lift)",
+        "target": "Pacjenci ze zbyt małą objętością kości w bocznych odcinkach szczęki",
+        "desc": "Przygotowanie podłoża pod implanty poprzez wprowadzenie biomateriału kostnego."
+      }
+    }
+  },
+  "dentalImplantsIntro": {
+    "title": "Implanty zębowe w Stambule – Master Smile Studio Turcja",
+    "whatIsTitle": "Czym są implanty zębowe?",
+    "whatIsP1": "Implant zębowy to sztuczny korzeń zęba, który zastępuje brakujący ząb. Wygląda jak mała śruba, zwykle wykonana z tytanu, i jest wprowadzany do kości szczęki. Do pełnej odbudowy zęba stosuje się trzy główne elementy:",
+    "part1Label": "Implant zębowy (śruba tytanowa)",
+    "part1Desc": "pełni funkcję korzenia zęba.",
+    "part2Label": "Łącznik (Abutment)",
+    "part2Desc": "łączy implant z koroną.",
+    "part3Label": "Korona (widoczny ząb)",
+    "part3Desc": "widoczna część wyglądająca jak naturalny ząb.",
+    "healingP": "Gdy implant zrośnie się z kością (osteointegracja), zakładana jest korona. W Master Smile Studio w Stambule nasz zespół chirurgów stomatologicznych zapewnia bezbolesny i bezpieczny zabieg.",
+    "solutionP": "Jeśli brakuje Ci jednego lub więcej zębów, implanty zębowe w Stambule są trwałym, bezpiecznym i estetycznym rozwiązaniem.",
+    "costHeading": "Implanty zębowe – Koszt i Ceny w Stambule, Turcja"
   }
 }

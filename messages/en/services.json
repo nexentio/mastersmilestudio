@@ -80,5 +80,66 @@
       "title": "ORAL & MAXILLOFACIAL SURGERY",
       "description": "Surgical expertise in wisdom tooth removal, cyst management, and advanced bone grafting."
     }
+  },
+  "rightTreatment": {
+    "heading": "Find the Right Treatment for You",
+    "subtitle": "Not sure which dental treatment suits your needs? Browse through our treatment options to see who each procedure is for and what it offers so you can make informed decisions about your dental care.",
+    "readMore": "READ MORE",
+    "items": {
+      "fullMouth": {
+        "title": "Full Mouth Implants",
+        "target": "Patients who have no teeth left in their upper and lower jaws",
+        "desc": "It is a full mouth restoration where all teeth are fixed with implants."
+      },
+      "allOn4": {
+        "title": "All-on-4 Implants",
+        "target": "Patients who are toothless or have teeth that need to be extracted, and who want fixed teeth in a short time.",
+        "desc": "A fixed prosthesis is made with 4 implants; it can also be applied to those with insufficient jawbone."
+      },
+      "allOn6": {
+        "title": "All-on-6 Implants",
+        "target": "Toothless patients who want stronger jaw support.",
+        "desc": "A more durable and long-lasting fixed prosthesis is made with 6 implants."
+      },
+      "immediate": {
+        "title": "Immediate Implant Treatment",
+        "target": "Patients who have just had a tooth extracted and want an implant without losing time",
+        "desc": "The implant is placed in the same session as the tooth extraction, which saves time."
+      },
+      "zygomatic": {
+        "title": "Zygomatic Implants",
+        "target": "Patients with bone loss in the upper jaw where traditional implants cannot be placed",
+        "desc": "These are special implants placed in the cheekbone. A bone graft is not required."
+      },
+      "zirconium": {
+        "title": "Zirconium Implants",
+        "target": "Those with metal allergies or high aesthetic concerns",
+        "desc": "It is a biocompatible implant type that is aesthetically closest to a natural tooth."
+      },
+      "dentures": {
+        "title": "Implant Supported Dentures",
+        "target": "Toothless patients or those who use dentures but want a fixed solution",
+        "desc": "It is a more stable and comfortable solution compared to removable dentures."
+      },
+      "sinusLifting": {
+        "title": "Sinus Lifting",
+        "target": "Patients who do not have enough bone volume in the upper jaw for an implant",
+        "desc": "The ground is prepared for the implant by adding bone powder to the sinus area."
+      }
+    }
+  },
+  "dentalImplantsIntro": {
+    "title": "Dental Implants in Istanbul – Master Smile Studio Turkey",
+    "whatIsTitle": "What Are Dental Implants?",
+    "whatIsP1": "A dental implant is an artificial tooth root that replaces a missing tooth. It looks like a small screw, usually made of titanium, and is placed into the jawbone to hold a new tooth securely. For a full tooth replacement, three main parts are used:",
+    "part1Label": "Dental implant (titanium screw)",
+    "part1Desc": "works as the tooth root.",
+    "part2Label": "Abutment",
+    "part2Desc": "connects the implant to the crown.",
+    "part3Label": "Crown",
+    "part3Desc": "the visible part that looks like a natural tooth.",
+    "healingP": "Once the implant has healed and bonded strongly with the bone, the crown is made and attached. At Master Smile Studio in Istanbul, our expert team specializing in oral surgery ensures a seamless and high-quality dental implant procedure to restore your smile.",
+    "solutionP": "If you are missing one or more teeth, dental implants in Istanbul can be a safe, long-lasting, and aesthetic solution.",
+    "costHeading": "Dental Implants Cost (Price) in Istanbul, Turkey"
   }
 }

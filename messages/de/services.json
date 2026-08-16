@@ -80,5 +80,66 @@
       "title": "MUND-, KIEFER- UND GESICHTSCHIRURGIE",
       "description": "Chirurgische Expertise bei Weisheitszahnentfernungen, Zysten und Knochenaufbau."
     }
+  },
+  "rightTreatment": {
+    "heading": "Finden Sie die passende Behandlung für sich",
+    "subtitle": "Sie sind nicht sicher, welche Zahnbehandlung am besten zu Ihnen passt? Entdecken Sie unsere Optionen, um zu erfahren, für wen jedes Verfahren geeignet ist.",
+    "readMore": "MEHR ERFAHREN",
+    "items": {
+      "fullMouth": {
+        "title": "Full Mouth Implantate",
+        "target": "Patienten ohne eigene Zähne im Ober- und Unterkiefer",
+        "desc": "Eine vollständige Gebisssanierung, bei der alle Zähne fest auf Implantaten verankert werden."
+      },
+      "allOn4": {
+        "title": "All-on-4 Implantate",
+        "target": "Zahnlose Patienten oder Patienten mit nicht erhaltungswürdigen Zähnen, die schnell feste Zähne wünschen.",
+        "desc": "Fester Zahnersatz auf 4 Implantaten; auch bei geringem Kieferknochenangebot anwendbar."
+      },
+      "allOn6": {
+        "title": "All-on-6 Implantate",
+        "target": "Zahnlose Patienten, die maximale Stabilität und Kaukraft wünschen.",
+        "desc": "Besonders langlebiger und stabiler festsitzender Zahnersatz auf 6 Implantaten."
+      },
+      "immediate": {
+        "title": "Sofortimplantate",
+        "target": "Patienten direkt nach einer Zahnextraktion, die ohne Wartezeit ein Implantat wünschen",
+        "desc": "Das Implantat wird in derselben Sitzung wie die Zahnentfernung eingesetzt, was Zeit spart."
+      },
+      "zygomatic": {
+        "title": "Zygoma (Jochbein) Implantate",
+        "target": "Patienten mit starkem Knochenschwund im Oberkiefer, bei denen herkömmliche Implantate nicht möglich sind",
+        "desc": "Spezielle Implantate im Jochbein verankert. Kein vorheriger Knochenaufbau erforderlich."
+      },
+      "zirconium": {
+        "title": "Zirkonimplantate",
+        "target": "Patienten mit Metallallergien oder höchsten ästhetischen Ansprüchen",
+        "desc": "Biokompatible weiße Keramikimplantate, die dem natürlichen Zahn optisch am nächsten kommen."
+      },
+      "dentures": {
+        "title": "Implantatgetragene Prothesen (Druckknopf)",
+        "target": "Zahnlose Patienten, die eine wackelfreie, feste Lösung für herausnehmbare Prothesen suchen",
+        "desc": "Eine deutlich stabilere, rutschfeste und komfortable Lösung im Vergleich zu herkömmlichen Prothesen."
+      },
+      "sinusLifting": {
+        "title": "Sinuslift & Knochenaufbau",
+        "target": "Patienten mit unzureichendem Knochenvolumen im Oberkiefer",
+        "desc": "Durch Einbringen von Knochenersatzmaterial wird das Fundament für sichere Implantate geschaffen."
+      }
+    }
+  },
+  "dentalImplantsIntro": {
+    "title": "Zahnimplantate in Istanbul – Master Smile Studio Türkei",
+    "whatIsTitle": "Was sind Zahnimplantate?",
+    "whatIsP1": "Ein Zahnimplantat ist eine künstliche Zahnwurzel, die einen fehlenden Zahn ersetzt. Es sieht aus wie eine kleine Schraube, meist aus Titan gefertigt, und wird in den Kieferknochen eingesetzt, um den neuen Zahn sicher zu tragen. Für einen vollständigen Zahnersatz werden drei Hauptkomponenten verwendet:",
+    "part1Label": "Zahnimplantat (Titanschraube)",
+    "part1Desc": "fungiert als künstliche Zahnwurzel.",
+    "part2Label": "Abutment (Verbindungsstück)",
+    "part2Desc": "verbindet das Implantat mit der Krone.",
+    "part3Label": "Krone (Sichtbarer Zahn)",
+    "part3Desc": "der sichtbare Teil, der wie ein echter Zahn aussieht.",
+    "healingP": "Sobald das Implantat eingeheilt und fest mit dem Knochen verwachsen ist, wird die Krone angefertigt und befestigt. Im Master Smile Studio in Istanbul sorgt unser hochspezialisiertes Team für Oralchirurgie für eine reibungslose und erstklassige Behandlung.",
+    "solutionP": "Wenn Ihnen ein oder mehrere Zähne fehlen, sind Zahnimplantate in Istanbul eine sichere, dauerhafte und ästhetische Lösung.",
+    "costHeading": "Zahnimplantate Kosten & Preise in Istanbul, Türkei"
   }
 }
