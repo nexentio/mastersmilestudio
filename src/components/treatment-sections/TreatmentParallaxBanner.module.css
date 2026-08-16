@@ -1,6 +1,6 @@
 .section {
   position: relative;
-  padding: 6rem 1.5rem;
+  padding: 5rem 1.5rem;
   background-image: linear-gradient(rgba(15, 23, 42, 0.88), rgba(15, 23, 42, 0.92)), url(/treatment-hero-bg.webp);
   background-size: cover;
   background-position: center;
@@ -8,6 +8,8 @@
   color: #ffffff;
   text-align: center;
   overflow: hidden;
+  border-radius: 24px;
+  margin: 1.5rem auto;
 }
 
 .container {
@@ -38,36 +40,110 @@
 .desc {
   font-size: 1.05rem;
   color: #cbd5e1;
-  line-height: 1.8;
+  line-height: 1.75;
   max-width: 720px;
-  margin: 0 auto 2.5rem;
+  margin: 0 auto 2rem;
 }
 
+/* Side-by-side Circular Buttons Row */
 .buttonsRow {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 1.25rem;
-  flex-wrap: wrap;
 }
 
-.btnPhone {
-  display: inline-flex;
+/* Base Circular Button */
+.circleBtnGold,
+.circleBtnWhatsApp,
+.circleBtnPhone {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  display: flex;
   align-items: center;
-  gap: 0.65rem;
-  background-color: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  color: #ffffff;
-  padding: 0.95rem 1.85rem;
-  border-radius: 9999px;
-  font-weight: 600;
-  font-size: 0.95rem;
+  justify-content: center;
   text-decoration: none;
-  backdrop-filter: blur(8px);
-  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s ease, background-color 0.25s ease;
+  flex-shrink: 0;
 }
 
-.btnPhone:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  transform: translateY(-2px);
+.circleBtnGold:hover,
+.circleBtnWhatsApp:hover,
+.circleBtnPhone:hover {
+  transform: translateY(-4px) scale(1.06);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.45);
+}
+
+.circleBtnGold:active,
+.circleBtnWhatsApp:active,
+.circleBtnPhone:active {
+  transform: scale(0.94);
+}
+
+/* 1. Appointment (Gold) */
+.circleBtnGold {
+  background: linear-gradient(135deg, #e59840, #c47927);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* 2. WhatsApp (Green) */
+.circleBtnWhatsApp {
+  background-color: #25D366;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* 3. Phone Call (Glass / Dark Blue) */
+.circleBtnPhone {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(10px);
+}
+
+/* Compact Mobile Layout */
+@media (max-width: 768px) {
+  .section {
+    padding: 2.5rem 1.15rem;
+    background-attachment: scroll;
+    border-radius: 18px;
+    margin: 1rem auto;
+  }
+
+  .subtitle {
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.4rem;
+  }
+
+  .title {
+    font-size: clamp(1.3rem, 5.2vw, 1.65rem);
+    line-height: 1.25;
+    margin-bottom: 0.65rem;
+  }
+
+  .desc {
+    font-size: 0.86rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+    color: #e2e8f0;
+  }
+
+  .buttonsRow {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .circleBtnGold,
+  .circleBtnWhatsApp,
+  .circleBtnPhone {
+    width: 52px;
+    height: 52px;
+  }
 }

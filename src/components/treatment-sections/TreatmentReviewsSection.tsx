@@ -85,6 +85,7 @@ export default function TreatmentReviewsSection() {
   const locale = useLocale();
   const editorial = EDITORIAL_DATA[locale] || EDITORIAL_DATA.en;
   const [startIndex, setStartIndex] = useState(0);
+  const [mobileIndex, setMobileIndex] = useState(0);
 
   const reviews = [
     {
@@ -154,6 +155,14 @@ export default function TreatmentReviewsSection() {
     setStartIndex((prev) => (prev < maxStart ? prev + 1 : 0));
   };
 
+  const handleMobilePrev = () => {
+    setMobileIndex((prev) => (prev > 0 ? prev - 1 : reviews.length - 1));
+  };
+
+  const handleMobileNext = () => {
+    setMobileIndex((prev) => (prev < reviews.length - 1 ? prev + 1 : 0));
+  };
+
   return (
     <section aria-labelledby="reviews-section-heading" className={styles.wrapper}>
       <div className={styles.container}>
@@ -187,7 +196,7 @@ export default function TreatmentReviewsSection() {
           </div>
         </div>
 
-        {/* Reviews Grid */}
+        {/* Desktop Reviews Grid */}
         <div className={styles.grid}>
           {reviews.slice(startIndex, startIndex + visibleCount).map((rev, idx) => (
             <article key={idx} className={styles.card} itemScope itemType="https://schema.org/Review">
@@ -213,6 +222,77 @@ export default function TreatmentReviewsSection() {
               </div>
             </article>
           ))}
+        </div>
+
+        {/* Mobile 1-Card Carousel with Side Arrow Navigation */}
+        <div className={styles.mobileContainer}>
+          <div className={styles.mobileCardWrapper}>
+            <button
+              type="button"
+              onClick={handleMobilePrev}
+              className={`${styles.sideArrowBtn} ${styles.sideArrowLeft}`}
+              aria-label="Previous review"
+            >
+              ‹
+            </button>
+
+            <div className={styles.mobileCardInner}>
+              {(() => {
+                const rev = reviews[mobileIndex];
+                return (
+                  <article
+                    key={mobileIndex}
+                    className={`${styles.card} ${styles.fadeSlide}`}
+                    itemScope
+                    itemType="https://schema.org/Review"
+                  >
+                    <div>
+                      <div className={styles.author} itemProp="author">
+                        {rev.author}
+                      </div>
+                      <div className={styles.rating} aria-label={`${rev.rating} out of 5 stars`}>
+                        ★★★★★
+                      </div>
+                      <p className={styles.comment} itemProp="reviewBody">
+                        &ldquo;{rev.comment}&rdquo;
+                      </p>
+                    </div>
+
+                    <div className={styles.footer}>
+                      <span className="text-xs font-bold text-teal-700 bg-teal-50 px-2.5 py-1 rounded-full border border-teal-100">
+                        {rev.treatment}
+                      </span>
+                      <span className="text-xs text-slate-400 font-medium">
+                        {rev.country}
+                      </span>
+                    </div>
+                  </article>
+                );
+              })()}
+            </div>
+
+            <button
+              type="button"
+              onClick={handleMobileNext}
+              className={`${styles.sideArrowBtn} ${styles.sideArrowRight}`}
+              aria-label="Next review"
+            >
+              ›
+            </button>
+          </div>
+
+          {/* Mobile Dots */}
+          <div className={styles.mobileDots}>
+            {reviews.map((_, dotIdx) => (
+              <button
+                key={dotIdx}
+                type="button"
+                onClick={() => setMobileIndex(dotIdx)}
+                aria-label={`Go to review ${dotIdx + 1}`}
+                className={`${styles.dot} ${mobileIndex === dotIdx ? styles.dotActive : styles.dotInactive}`}
+              />
+            ))}
+          </div>
         </div>
 
         {/* Editorial Narrative Under Reviews */}

@@ -185,7 +185,7 @@
   transform: translateY(-1px);
 }
 
-/* Mobile Responsive - Extra Wide Cards (Full Screen Utilization) */
+/* Mobile Responsive */
 @media (max-width: 768px) {
   .wrapper {
     padding: 2.75rem 0 2rem;

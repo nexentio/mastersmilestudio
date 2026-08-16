@@ -40,3 +40,7 @@ Before reading, generating, or modifying any code in this repository, you **MUST
 5. **Zero Errors & Pre-flight Verification:**
    * Every change must build cleanly with zero TypeScript errors and zero Next.js runtime errors.
    * Always verify that pages resolve and render cleanly across all locales (`/en/...`, `/pl/...`, `/de/...`, `/tr/...`).
+
+6. **Merge & Conflict Resolution Protocol:**
+   * In case of git merge conflicts or parallel branch synchronization (e.g. Explore feature vs Treatments), AI agents **MUST READ AND FOLLOW** [MERGE_AND_SYNC_GUIDE.md](file:///home/asroyx/Desktop/mastersmilestudio/MERGE_AND_SYNC_GUIDE.md).
+

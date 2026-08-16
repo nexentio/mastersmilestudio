@@ -4,6 +4,12 @@ import Footer from '@/components/Footer';
 import TreatmentHeroBanner from '@/components/treatment-sections/TreatmentHeroBanner';
 import TreatmentDetailView from '@/components/TreatmentDetailView';
 import DentalImplantsDetailView from '@/components/DentalImplantsDetailView';
+import DentalVeneersDetailView from '@/components/DentalVeneersDetailView';
+import DentalCrownsDetailView from '@/components/DentalCrownsDetailView';
+import DentalBridgeDetailView from '@/components/DentalBridgeDetailView';
+import DenturesDetailView from '@/components/DenturesDetailView';
+import CosmeticDentistryDetailView from '@/components/CosmeticDentistryDetailView';
+import GeneralDentistryDetailView from '@/components/GeneralDentistryDetailView';
 import AllOnSixImplantDetailView from '@/components/AllOnSixImplantDetailView';
 import AllOnFourImplantDetailView from '@/components/AllOnFourImplantDetailView';
 import ImmediateImplantDetailView from '@/components/ImmediateImplantDetailView';
@@ -27,33 +33,91 @@ export async function generateMetadata({ params }: PageProps) {
   const lastSlug = slugList[slugList.length - 1];
   const slugPath = slugList.join('/');
 
-  let title = locale === 'tr' ? 'Tüm Ağız İmplant Tedavisi İstanbul (Full Mouth) | Master Smile Studio' : 'Full Mouth Dental Implants in Istanbul, Turkey | Master Smile Studio';
-  let description = locale === 'tr' ? 'İstanbul’da tüm ağız diş implantı tedavisi ve paket fiyatları. Ömür boyu garantili sabit zirkonyum dişler.' : 'Full mouth dental implants in Istanbul, Turkey. All-inclusive packages with Straumann & NucleOSS implants.';
+  const content = await getTreatmentContent(locale, lastSlug);
 
-  if (lastSlug === 'dental-implants' || lastSlug === 'dental-implant-istanbul-turkey' || lastSlug === 'implants') {
-    title = locale === 'tr' ? 'İstanbul Diş İmplantı Tedavisi ve Fiyatları | Master Smile Studio' : 'Dental Implants Cost (Price) in Istanbul, Turkey | Master Smile Studio';
-    description = locale === 'tr' ? 'İstanbul’da uzman çene cerrahları ile dünya markası titanyum implant tedavisi. Şeffaf her şey dahil paket fiyatları.' : 'Dental implants in Istanbul, Turkey starting from £350. Highest quality Swiss & German titanium implants with lifetime guarantee.';
-  } else if (lastSlug === 'all-on-4-implants' || lastSlug === 'all-on-four-implant-istanbul-turkey' || lastSlug === 'all-on-4') {
-    title = locale === 'tr' ? 'All-on-4 Diş İmplantı Fiyatları İstanbul | Master Smile Studio' : 'All on 4 Dental Implants Cost in Istanbul, Turkey | Master Smile Studio';
-    description = locale === 'tr' ? 'All-on-4 tekniği ile aynı gün sabit dişler. Kemik tozu gerekmeden ekonomik tam çene implant tedavisi.' : 'All-on-4 dental implants in Istanbul, Turkey. Permanent fixed teeth in 2 visits without bone grafting.';
-  } else if (lastSlug === 'all-on-6-implants' || lastSlug === 'all-on-six-dental-implant-istanbul-turkey' || lastSlug === 'all-on-6') {
-    title = locale === 'tr' ? 'All-on-6 Diş İmplantı Fiyatları İstanbul | Master Smile Studio' : 'All on 6 Dental Implants Cost in Istanbul, Turkey | Master Smile Studio';
-    description = locale === 'tr' ? 'Tam dişsiz çeneler için 6 implantlı All-on-6 tedavisi. 2 ziyarette kalıcı zirkonyum sabit dişler.' : 'All-on-6 dental implants in Istanbul, Turkey. Strongest full-arch teeth restoration with 6 implants per jaw.';
-  } else if (lastSlug === 'immediate-implant-treatment' || lastSlug === 'immediate-implants') {
-    title = locale === 'tr' ? 'Aynı Gün İmplant Tedavisi İstanbul | Master Smile Studio' : 'Immediate Same-Day Dental Implants in Istanbul, Turkey | Master Smile Studio';
-    description = locale === 'tr' ? 'Diş çekimi ile aynı seansta implant uygulaması. Aylarca beklemeden aynı gün sabit diş.' : 'Same-day dental implants placed immediately after tooth extraction with zero waiting period.';
-  } else if (lastSlug === 'zygomatic-implants' || lastSlug === 'zygomatic-implants-istanbul-turkey') {
-    title = locale === 'tr' ? 'Zigoma (Elmacık Kemiği) İmplantı İstanbul | Master Smile Studio' : 'Zygomatic Dental Implants in Istanbul, Turkey | Master Smile Studio';
-    description = locale === 'tr' ? 'Aşırı kemik erimesi olan üst çeneler için zigomatik implant çözümü. Kemik greftine gerek kalmadan sabit diş.' : 'Zygomatic cheekbone implants for severe upper jawbone loss without bone grafting.';
-  } else if (lastSlug === 'zirconium-implants' || lastSlug === 'zirconium-implants-istanbul-turkey') {
-    title = locale === 'tr' ? 'Zirkonyum Seramik İmplant Tedavisi İstanbul | Master Smile Studio' : 'Zirconium Metal-Free Ceramic Implants in Istanbul, Turkey | Master Smile Studio';
-    description = locale === 'tr' ? '%100 metalsiz beyaz seramik zirkonyum implantlar. Alerji yapmayan üstün diş eti estetiği.' : '100% metal-free biocompatible white zirconia ceramic dental implants for optimal gum aesthetics.';
-  } else if (lastSlug === 'implant-supported-dentures' || lastSlug === 'implant-dentures') {
-    title = locale === 'tr' ? 'İmplant Destekli Çıt Çıtlı Protez İstanbul | Master Smile Studio' : 'Implant Supported Dentures (Overdentures) in Istanbul, Turkey | Master Smile Studio';
-    description = locale === 'tr' ? 'Kaymayan ve oynamayan çıtçıtlı damak protezleri. 2-4 implantla konforlu tutuculuk.' : 'Locking snap-on implant-supported overdentures for secure and comfortable chewing.';
-  } else if (lastSlug === 'sinus-lifting' || lastSlug === 'sinus-lift') {
-    title = locale === 'tr' ? 'Sinüs Lifting & Kemik Grefti İstanbul | Master Smile Studio' : 'Sinus Lifting & Bone Augmentation in Istanbul, Turkey | Master Smile Studio';
-    description = locale === 'tr' ? 'Üst çenede sarkan sinüs tabanının yükseltilmesi ve kemik tozu takviyesiyle güvenli implant zemini.' : 'Sinus floor elevation and bone grafting surgery for upper jaw implant placement.';
+  let title =
+    content?.seo?.title ||
+    (locale === 'tr'
+      ? 'İstanbul Diş Tedavisi ve Fiyatları | Master Smile Studio'
+      : 'Dental Treatments in Istanbul, Turkey | Master Smile Studio');
+
+  let description =
+    content?.seo?.description ||
+    (locale === 'tr'
+      ? 'İstanbul’da uzman diş hekimleri ve cerrahlarımızla dünya standartlarında dental tedaviler.'
+      : 'World-class dental treatments in Istanbul, Turkey with expert dentists, 5-star hotel and VIP transfers.');
+
+  if (
+    lastSlug.includes('general') ||
+    lastSlug.includes('root-canal') ||
+    lastSlug.includes('cleaning') ||
+    lastSlug.includes('filling') ||
+    lastSlug.includes('extraction') ||
+    lastSlug.includes('periodont')
+  ) {
+    title =
+      locale === 'tr'
+        ? 'İstanbul Genel Diş Hekimliği & Tedavi Fiyatları | Master Smile Studio'
+        : 'General & Preventive Dentistry in Istanbul, Turkey | Master Smile Studio';
+    description =
+      locale === 'tr'
+        ? 'Ağrısız mikroskobik kanal tedavisi, Air-Flow diş temizliği, estetik nanokompozit dolgular ve 20’lik diş çekimleri.'
+        : 'Microscopic root canal therapy, ultrasonic Swiss Air-Flow scaling, composite fillings, and wisdom tooth extractions in Istanbul.';
+  } else if (
+    lastSlug.includes('cosmetic') ||
+    lastSlug.includes('hollywood') ||
+    lastSlug.includes('makeover') ||
+    lastSlug.includes('whitening') ||
+    lastSlug.includes('diastema') ||
+    lastSlug.includes('contouring')
+  ) {
+    title =
+      locale === 'tr'
+        ? 'İstanbul Estetik Diş Hekimliği & Hollywood Smile Fiyatları | Master Smile Studio'
+        : 'Hollywood Smile & Cosmetic Dentistry in Istanbul, Turkey | Master Smile Studio';
+    description =
+      locale === 'tr'
+        ? '3D Dijital Gülüş Tasarımı, İsviçre Ivoclar E-Max laminalar, lazer diş beyazlatma ve diş eti estetiği (Gummy Smile).'
+        : 'Transform your smile with bespoke 3D Digital Smile Design, Swiss Ivoclar E-Max laminates, and laser gum contouring in Istanbul.';
+  } else if (lastSlug.includes('denture') || lastSlug.includes('protez') || lastSlug.includes('overdenture')) {
+    title =
+      locale === 'tr'
+        ? 'İstanbul Protez Diş & Çıt Çıtlı Damak Fiyatları | Master Smile Studio'
+        : 'Dentures Cost in Istanbul, Turkey (Snap-On Overdentures) | Master Smile Studio';
+    description =
+      locale === 'tr'
+        ? 'Oynayan damaklara son veren implant destekli çıtçıtlı protezler ve kırılmaya dayanıklı tam damak protezleri.'
+        : 'Snap-On implant overdentures and precision complete dentures in Istanbul. Rock-solid retention with zero slipping.';
+  } else if (lastSlug.includes('bridge') || lastSlug.includes('kopru')) {
+    title =
+      locale === 'tr'
+        ? 'İstanbul Diş Köprüsü Fiyatları ve Tedavisi | Master Smile Studio'
+        : 'Dental Bridges in Istanbul, Turkey (Zirconia & Implant Bridges) | Master Smile Studio';
+    description =
+      locale === 'tr'
+        ? 'Eksik dişleriniz için Alman Zirkonyum ve implant destekli sabit köprü tedavisi. 4-6 günde 5 yıldızlı otel konforuyla yeni bir gülüş.'
+        : 'High-strength Zirconia and Implant-supported dental bridges in Istanbul, Turkey. Restore missing teeth and bite function in 4-6 days with 5-star VIP care.';
+  } else if (lastSlug.includes('veneer') || lastSlug.includes('lumineer') || lastSlug.includes('lamine')) {
+    title =
+      locale === 'tr'
+        ? 'İstanbul Diş Kaplama & Lamina Fiyatları | Master Smile Studio'
+        : 'Dental Veneers in Istanbul, Turkey (E-Max Laminates) | Master Smile Studio';
+    description =
+      locale === 'tr'
+        ? 'İsviçre menşeli Ivoclar E-Max porselen laminalarla 4-6 günde kusursuz Hollywood gülüşü.'
+        : 'Swiss Ivoclar E-Max porcelain veneers and laminates in Istanbul. Natural, stain-resistant smile transformations in 4-6 days.';
+  } else if (lastSlug.includes('crown') || lastSlug.includes('kron')) {
+    title =
+      locale === 'tr'
+        ? 'İstanbul Zirkonyum & Kron Diş Kaplama Fiyatları | Master Smile Studio'
+        : 'Dental Crowns Cost in Istanbul, Turkey (Zirconia & E-Max) | Master Smile Studio';
+    description =
+      locale === 'tr'
+        ? '1200+ MPa Alman Zirkonyum ve Ivoclar E-Max kron kaplamalarla kırık ve kanal tedavili dişlerinizi kurtarın.'
+        : 'Premium German Zirconia & E-Max dental crowns in Istanbul. High fracture resistance, natural translucency, and 5-year warranty.';
+  } else if (lastSlug === 'dental-implants' || lastSlug === 'dental-implant-istanbul-turkey' || lastSlug === 'implants') {
+    title = locale === 'tr' ? 'İstanbul Diş İmplantı Tedavisi ve Fiyatları | Master Smile Studio' : 'Dental Implants Cost in Istanbul, Turkey | Master Smile Studio';
+    description = locale === 'tr' ? 'İstanbul’da uzman çene cerrahları ile dünya markası titanyum implant tedavisi. Şeffaf her şey dahil paket fiyatları.' : 'Dental implants in Istanbul, Turkey. Highest quality Swiss & German titanium implants with lifetime guarantee.';
   }
 
   return {
@@ -79,54 +143,86 @@ export default async function HierarchicalTreatmentPage({ params }: PageProps) {
   const isDentalImplantsCategory =
     isCategoryOnly && (lastSlug === 'dental-implants' || lastSlug === 'dental-implant-istanbul-turkey' || lastSlug === 'implants');
 
+  const isGeneral =
+    lastSlug.includes('general') ||
+    lastSlug.includes('root-canal') ||
+    lastSlug.includes('cleaning') ||
+    lastSlug.includes('filling') ||
+    lastSlug.includes('extraction') ||
+    lastSlug.includes('periodont') ||
+    lastSlug === 'general-dentistry';
+
+  const isCosmetic =
+    lastSlug.includes('cosmetic') ||
+    lastSlug.includes('hollywood') ||
+    lastSlug.includes('makeover') ||
+    lastSlug.includes('whitening') ||
+    lastSlug.includes('diastema') ||
+    lastSlug.includes('contouring') ||
+    lastSlug === 'cosmetic-dentistry';
+
+  const isDentalVeneers =
+    lastSlug.includes('veneer') ||
+    lastSlug.includes('lumineer') ||
+    lastSlug.includes('lamine') ||
+    lastSlug === 'dental-veneers';
+
+  const isDentalCrowns =
+    lastSlug.includes('crown') ||
+    lastSlug.includes('kron') ||
+    lastSlug.includes('full-ceramic') ||
+    lastSlug === 'dental-crowns';
+
+  const isDentalBridges =
+    lastSlug.includes('bridge') ||
+    lastSlug.includes('kopru') ||
+    lastSlug === 'dental-bridge';
+
+  const isDentures =
+    lastSlug.includes('denture') ||
+    lastSlug.includes('protez') ||
+    lastSlug.includes('overdenture') ||
+    lastSlug === 'dentures';
+
   const isAllOnFour = lastSlug === 'all-on-4-implants' || lastSlug === 'all-on-four-implant-istanbul-turkey' || lastSlug === 'all-on-4';
   const isAllOnSix = lastSlug === 'all-on-6-implants' || lastSlug === 'all-on-six-dental-implant-istanbul-turkey' || lastSlug === 'all-on-6';
   const isImmediate = lastSlug === 'immediate-implant-treatment' || lastSlug === 'immediate-implants' || lastSlug === 'immediate';
   const isZygomatic = lastSlug === 'zygomatic-implants' || lastSlug === 'zygomatic-implants-istanbul-turkey' || lastSlug === 'zygomatic';
   const isZirconium = lastSlug === 'zirconium-implants' || lastSlug === 'zirconium-implants-istanbul-turkey';
-  const isDentures = lastSlug === 'implant-supported-dentures' || lastSlug === 'implant-dentures' || lastSlug === 'overdentures';
   const isSinusLift = lastSlug === 'sinus-lifting' || lastSlug === 'sinus-lift';
 
-  let heroBadge = locale === 'tr' ? 'TEDAVİLERİMİZ' : 'TREATMENTS';
-  let heroTitle = t('pageTitle');
-  let heroSubtitle = t('pageSubtitle');
+  let heroBadge = content?.hero?.badge || (locale === 'tr' ? 'TEDAVİLERİMİZ' : 'TREATMENTS');
+  let heroTitle = content?.hero?.title || t('pageTitle');
+  let heroSubtitle = content?.hero?.subtitle || t('pageSubtitle');
 
-  if (isDentalImplantsCategory) {
+  if (isGeneral) {
+    heroBadge = locale === 'tr' ? 'GENEL & KORUYUCU DİŞ HEKİMLİĞİ' : 'GENERAL & PREVENTIVE DENTISTRY';
+    heroTitle = locale === 'tr' ? 'İstanbul Genel Diş Hekimliği & Tedavileri' : 'General Dentistry & Oral Health in Istanbul';
+    heroSubtitle = locale === 'tr' ? 'Ağrısız mikroskobik kanal tedavisi, İsviçre Air-Flow ultrasonik diş temizliği ve estetik nanokompozit dolgular.' : 'Pain-free microscopic root canal therapy, ultrasonic Swiss Air-Flow scaling, and tooth-colored composite restorations.';
+  } else if (isCosmetic) {
+    heroBadge = locale === 'tr' ? 'ESTETİK DİŞ HEKİMLİĞİ & GÜLÜŞ TASARIMI' : 'COSMETIC DENTISTRY & SMILE DESIGN';
+    heroTitle = locale === 'tr' ? 'İstanbul Hollywood Smile & Estetik Diş Tedavisi' : 'Hollywood Smile & Cosmetic Dentistry in Istanbul';
+    heroSubtitle = locale === 'tr' ? 'Yüzün altın oranına özel 3D Dijital Gülüş Tasarımı, İsviçre Ivoclar E-Max laminalar ve lazerle pembe estetik.' : 'Transform your smile with bespoke 3D Digital Smile Design, Swiss Ivoclar E-Max laminates, and laser gum contouring in Istanbul.';
+  } else if (isDentures) {
+    heroBadge = locale === 'tr' ? 'PROTEZ DİŞ TEDAVİSİ' : 'DENTURES & OVERDENTURES';
+    heroTitle = locale === 'tr' ? 'İstanbul Protez Diş & Çıt Çıtlı Damak Tedavisi' : 'Dentures & Snap-On Overdentures in Istanbul';
+    heroSubtitle = locale === 'tr' ? 'Oynayan damak sorununa son veren implant destekli çıtçıtlı overdenture sistemleri ve estetik tam protezler.' : 'Eliminate loose dentures with rock-solid Snap-On implant overdentures and precision complete dentures in Istanbul.';
+  } else if (isDentalBridges) {
+    heroBadge = locale === 'tr' ? 'DİŞ KÖPRÜSÜ' : 'DENTAL BRIDGES';
+    heroTitle = locale === 'tr' ? 'İstanbul Diş Köprüsü & Zirkonyum Tedavisi' : 'Dental Bridges & Zirconia in Istanbul';
+    heroSubtitle = locale === 'tr' ? 'Eksik dişlerinizi 1200+ MPa Alman Zirkonyum ve implant destekli köprülerle kalıcı olarak tamamlayın.' : 'Replace missing teeth permanently with high-strength German Zirconia & Implant-supported bridges in Istanbul.';
+  } else if (isDentalCrowns) {
+    heroBadge = locale === 'tr' ? 'ZİRKONYUM & KRON' : 'DENTAL CROWNS';
+    heroTitle = locale === 'tr' ? 'İstanbul Zirkonyum & Kron Kaplama Tedavisi' : 'Dental Crowns & Zirconia in Istanbul';
+    heroSubtitle = locale === 'tr' ? '1200+ MPa dayanıklılıkta Alman Zirkonyum ve Ivoclar E-Max kalitesiyle eksiksiz gülüş dönüşümü.' : 'Restore damaged teeth with 1200+ MPa German Zirconia & Ivoclar E-Max crowns with 5-star VIP care in Istanbul.';
+  } else if (isDentalVeneers) {
+    heroBadge = locale === 'tr' ? 'DİŞ KAPLAMA & LAMİNA' : 'DENTAL VENEERS';
+    heroTitle = locale === 'tr' ? 'İstanbul Diş Kaplama & Lamina Tedavisi' : 'Dental Veneers & Laminates in Istanbul';
+    heroSubtitle = locale === 'tr' ? 'İsviçre menşeli Ivoclar E-Max porselen laminalarla 4-6 günde kusursuz Hollywood gülüşü.' : 'Transform your smile with Swiss Ivoclar E-Max porcelain veneers and 5-star VIP care in Istanbul.';
+  } else if (isDentalImplantsCategory) {
     heroBadge = locale === 'tr' ? 'DİŞ İMPLANTLARI' : 'DENTAL IMPLANTS';
     heroTitle = locale === 'tr' ? 'İstanbul Diş İmplantı Tedavisi & Fiyatları' : 'Dental Implants Cost (Price) Istanbul Turkey';
     heroSubtitle = locale === 'tr' ? 'Uzman cerrahlarımız ve en son 3D tomografi teknolojisiyle doğal dişinize en yakın kalıcı implant sonuçları.' : 'Achieve results closest to natural teeth with implant treatment performed under the supervision of expert oral surgeons.';
-  } else if (isAllOnFour) {
-    heroBadge = locale === 'tr' ? 'ALL-ON-4 İMPLANT' : 'ALL-ON-4 IMPLANTS';
-    heroTitle = locale === 'tr' ? 'All on 4 Diş İmplantı Tedavisi İstanbul' : 'All on 4 Dental Implants Cost in Istanbul, Turkey';
-    heroSubtitle = locale === 'tr' ? 'Kemik grefti gerekmeden 4 implant üzerine aynı gün sabit diş konforu.' : 'Permanent fixed teeth in 2 visits — restore your entire smile with only 4 implants per jaw.';
-  } else if (isAllOnSix) {
-    heroBadge = locale === 'tr' ? 'ALL-ON-6 İMPLANT' : 'ALL-ON-6 IMPLANTS';
-    heroTitle = locale === 'tr' ? 'All on 6 Diş İmplantı Tedavisi İstanbul' : 'All on 6 Dental Implants Cost in Istanbul, Turkey';
-    heroSubtitle = locale === 'tr' ? 'Maksimum stabilite, güçlü çiğneme performansı ve ömür boyu dayanıklı zirkonyum tam çene restorasyonu.' : 'A stronger, more stable full-arch solution designed for long-term comfort and maximum chewing power.';
-  } else if (isImmediate) {
-    heroBadge = locale === 'tr' ? 'AYNI GÜN İMPLANT' : 'IMMEDIATE IMPLANTS';
-    heroTitle = locale === 'tr' ? 'Aynı Gün İmplant Tedavisi İstanbul' : 'Immediate Implant Treatment in Istanbul, Turkey';
-    heroSubtitle = locale === 'tr' ? 'Diş çekimiyle aynı seansta implant ve geçici diş takılarak aylarca bekleme süresine son.' : 'Same-day dental implants placed immediately after extraction for fast recovery and zero waiting.';
-  } else if (isZygomatic) {
-    heroBadge = locale === 'tr' ? 'ZİGOMA İMPLANT' : 'ZYGOMATIC IMPLANTS';
-    heroTitle = locale === 'tr' ? 'Zigoma (Elmacık Kemiği) İmplantı İstanbul' : 'Zygomatic Dental Implants in Istanbul, Turkey';
-    heroSubtitle = locale === 'tr' ? 'İleri derece kemik erimesi olan üst çenelerde elmacık kemiğinden destek alan kalıcı çözüm.' : 'Revolutionary cheekbone implants for severe upper jawbone loss without bone grafting.';
-  } else if (isZirconium) {
-    heroBadge = locale === 'tr' ? 'ZİRKONYUM İMPLANT' : 'ZIRCONIUM IMPLANTS';
-    heroTitle = locale === 'tr' ? 'Zirkonyum (Seramik) Diş İmplantı İstanbul' : 'Zirconium Ceramic Dental Implants in Istanbul';
-    heroSubtitle = locale === 'tr' ? '%100 metalsiz, biyouyumlu beyaz seramik gövdeyle en yüksek diş eti estetiği.' : '100% metal-free, white biocompatible ceramic implants for pristine gum aesthetics.';
-  } else if (isDentures) {
-    heroBadge = locale === 'tr' ? 'ÇIT ÇITLI PROTEZ' : 'OVERDENTURES';
-    heroTitle = locale === 'tr' ? 'İmplant Destekli Protez (Çıt Çıtlı Damak) İstanbul' : 'Implant Supported Dentures (Overdentures) in Istanbul';
-    heroSubtitle = locale === 'tr' ? 'Gevşeyen ve oynayan damak protezlerine son veren kilitli çıtçıt sistemi.' : 'Say goodbye to loose, slipping dentures with stable snap-on implant retention.';
-  } else if (isSinusLift) {
-    heroBadge = locale === 'tr' ? 'SİNÜS LİFTİNG' : 'SINUS LIFTING';
-    heroTitle = locale === 'tr' ? 'Sinüs Lifting & Kemik Grefti İstanbul' : 'Sinus Lifting & Bone Augmentation in Istanbul, Turkey';
-    heroSubtitle = locale === 'tr' ? 'Üst çene arka bölgede kemik yüksekliği yetersiz olan hastalar için güvenli kemik oluşturma.' : 'Creating a solid bone foundation in the upper posterior jaw for lifelong implants.';
-  } else {
-    heroBadge = locale === 'tr' ? 'FULL MOUTH İMPLANT' : 'FULL MOUTH IMPLANTS';
-    heroTitle = locale === 'tr' ? 'Tüm Ağız İmplant Tedavisi İstanbul (Full Mouth)' : 'Full Mouth Dental Implants Cost in Istanbul, Turkey';
-    heroSubtitle = locale === 'tr' ? 'Komple dişsizlik durumunda ömür boyu garantili sabit zirkonyum dişlerle yepyeni bir gülüş.' : 'Restore your entire smile with permanent fixed zirconia teeth supported by premium titanium implants.';
   }
 
   const canonicalUrl = `https://mastersmilestudio.com/${locale}/treatments/${slugPath}`;
@@ -199,7 +295,19 @@ export default async function HierarchicalTreatmentPage({ params }: PageProps) {
       />
 
       <main id="main-content" className="treatment-main-content">
-        {isDentalImplantsCategory ? (
+        {isGeneral ? (
+          <GeneralDentistryDetailView />
+        ) : isCosmetic ? (
+          <CosmeticDentistryDetailView />
+        ) : isDentures ? (
+          <DenturesDetailView />
+        ) : isDentalBridges ? (
+          <DentalBridgeDetailView />
+        ) : isDentalCrowns ? (
+          <DentalCrownsDetailView />
+        ) : isDentalVeneers ? (
+          <DentalVeneersDetailView />
+        ) : isDentalImplantsCategory ? (
           <DentalImplantsDetailView />
         ) : isAllOnFour ? (
           <AllOnFourImplantDetailView />
@@ -211,8 +319,6 @@ export default async function HierarchicalTreatmentPage({ params }: PageProps) {
           <ZygomaticImplantDetailView />
         ) : isZirconium ? (
           <ZirconiumImplantDetailView />
-        ) : isDentures ? (
-          <ImplantSupportedDenturesDetailView />
         ) : isSinusLift ? (
           <SinusLiftingDetailView />
         ) : (

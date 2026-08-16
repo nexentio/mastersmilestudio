@@ -12,10 +12,22 @@
   text-transform: uppercase;
 }
 
-.grid {
+/* Desktop: 4 Columns Grid */
+.desktopGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1.5rem;
+}
+
+/* Mobile Slider: hidden on desktop */
+.mobileSlider {
+  display: none;
+}
+
+.linkWrapper {
+  text-decoration: none;
+  display: block;
+  color: inherit;
 }
 
 .card {
@@ -76,4 +88,91 @@
   font-size: 0.88rem;
   color: #64748b;
   font-weight: 500;
+}
+
+/* Mobile Responsive: Single card per slide with right/left navigation arrow */
+@media (max-width: 768px) {
+  .desktopGrid {
+    display: none;
+  }
+
+  .mobileSlider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .mobileCardWrapper {
+    width: 100%;
+    max-width: 290px;
+  }
+
+  .mobileNavRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 290px;
+    margin-top: 1.25rem;
+    padding: 0 0.5rem;
+    box-sizing: border-box;
+  }
+
+  .arrowBtn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    color: #0f172a;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    font-size: 1.6rem;
+    line-height: 1;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+  }
+
+  .arrowBtn:active {
+    transform: scale(0.92);
+  }
+
+  .arrowBtnNext {
+    background-color: #0f172a;
+    color: #ffffff;
+    border-color: #0f172a;
+  }
+
+  .mobileDots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .dotActive {
+    background-color: #0f172a;
+    width: 24px;
+    border-radius: 9999px;
+  }
+
+  .dotInactive {
+    background-color: #cbd5e1;
+  }
 }

@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import { useLocale } from 'next-intl';
 import { Link } from '@/i18n/routing';
 import styles from './TreatmentDoctorsSection.module.css';
@@ -255,6 +255,15 @@ const DOCTORS_I18N: Record<string, DoctorsSectionI18n> = {
 export default function TreatmentDoctorsSection() {
   const locale = useLocale();
   const current = DOCTORS_I18N[locale] || DOCTORS_I18N.en;
+  const [activeDoctorIdx, setActiveDoctorIdx] = useState(0);
+
+  const handlePrev = () => {
+    setActiveDoctorIdx((prev) => (prev > 0 ? prev - 1 : current.doctors.length - 1));
+  };
+
+  const handleNext = () => {
+    setActiveDoctorIdx((prev) => (prev < current.doctors.length - 1 ? prev + 1 : 0));
+  };
 
   return (
     <section aria-labelledby="section-doctors-title" className={styles.wrapper}>
@@ -263,12 +272,13 @@ export default function TreatmentDoctorsSection() {
           <span>{current.heading}</span>
         </h2>
 
-        <div className={styles.grid}>
+        {/* Desktop 4-Column Grid */}
+        <div className={styles.desktopGrid}>
           {current.doctors.map((doc, idx) => (
             <article key={idx} className={styles.card} itemScope itemType="https://schema.org/Physician">
               <Link
                 href={doc.href}
-                className="no-underline block"
+                className={styles.linkWrapper}
                 aria-label={`View doctor profile for ${doc.title} ${doc.name}`}
               >
                 <div className={styles.imgWrap}>
@@ -294,6 +304,78 @@ export default function TreatmentDoctorsSection() {
               </Link>
             </article>
           ))}
+        </div>
+
+        {/* Mobile Single Doctor Card Carousel with Right/Left Navigation Arrow */}
+        <div className={styles.mobileSlider}>
+          <div className={styles.mobileCardWrapper}>
+            {(() => {
+              const doc = current.doctors[activeDoctorIdx];
+              return (
+                <article className={styles.card} itemScope itemType="https://schema.org/Physician">
+                  <Link
+                    href={doc.href}
+                    className={styles.linkWrapper}
+                    aria-label={`View doctor profile for ${doc.title} ${doc.name}`}
+                  >
+                    <div className={styles.imgWrap}>
+                      <img
+                        src={doc.img}
+                        alt={`${doc.title} ${doc.name}`}
+                        loading="lazy"
+                        itemProp="image"
+                      />
+                    </div>
+
+                    <div className={styles.info}>
+                      <span className={styles.badge}>
+                        {doc.title}
+                      </span>
+                      <h3 className={styles.name} itemProp="name">
+                        {doc.name}
+                      </h3>
+                      <span className={styles.specialty} itemProp="jobTitle">
+                        {doc.role}
+                      </span>
+                    </div>
+                  </Link>
+                </article>
+              );
+            })()}
+          </div>
+
+          {/* Mobile Navigation Row with Arrows & Dots */}
+          <div className={styles.mobileNavRow}>
+            <button
+              type="button"
+              onClick={handlePrev}
+              className={styles.arrowBtn}
+              aria-label="Previous doctor"
+            >
+              ‹
+            </button>
+
+            <div className={styles.mobileDots}>
+              {current.doctors.map((_, dotIdx) => (
+                <button
+                  key={dotIdx}
+                  type="button"
+                  onClick={() => setActiveDoctorIdx(dotIdx)}
+                  aria-label={`Doctor slide ${dotIdx + 1}`}
+                  className={`${styles.dot} ${activeDoctorIdx === dotIdx ? styles.dotActive : styles.dotInactive}`}
+                />
+              ))}
+            </div>
+
+            <button
+              type="button"
+              onClick={handleNext}
+              className={`${styles.arrowBtn} ${styles.arrowBtnNext}`}
+              aria-label="Next doctor"
+            >
+              ›
+            </button>
+          </div>
         </div>
       </div>
     </section>
