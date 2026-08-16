@@ -13,6 +13,7 @@ import ImplantSupportedDenturesDetailView from '@/components/ImplantSupportedDen
 import SinusLiftingDetailView from '@/components/SinusLiftingDetailView';
 import { generateTreatmentJsonLd } from '@/lib/treatment-schema';
 import { getI18nAlternates, TREATMENT_LOCALES } from '@/lib/i18n-seo';
+import { getTreatmentContent } from '@/lib/treatment-content';
 
 interface PageProps {
   params: Promise<{ locale: string; slug: string[] }>;
@@ -71,6 +72,8 @@ export default async function HierarchicalTreatmentPage({ params }: PageProps) {
   const lastSlug = slugList[slugList.length - 1];
   const isCategoryOnly = slugList.length === 1;
   const slugPath = slugList.join('/');
+
+  const content = await getTreatmentContent(locale, lastSlug);
 
   // Route matching
   const isDentalImplantsCategory =

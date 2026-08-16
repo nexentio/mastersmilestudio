@@ -2,8 +2,8 @@ import React from 'react';
 import { setRequestLocale } from 'next-intl/server';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import GalleryHeroBanner from '@/components/gallery-sections/GalleryHeroBanner';
-import GalleryMainSection from '@/components/gallery-sections/GalleryMainSection';
+import ReviewsHeroBanner from '@/components/reviews-sections/ReviewsHeroBanner';
+import ReviewsMainSection from '@/components/reviews-sections/ReviewsMainSection';
 
 interface Props {
   params: Promise<{
@@ -18,16 +18,16 @@ export async function generateMetadata({ params }: Props) {
   return {
     title:
       locale === 'tr'
-        ? 'Klinik Genel Galerisi | Master Smile Studio İstanbul'
-        : 'Clinic Gallery | Master Smile Studio Istanbul',
+        ? 'Hasta Yorumları | Master Smile Studio İstanbul'
+        : 'Master Smile Studio Reviews in Turkey, Istanbul',
     description:
       locale === 'tr'
-        ? 'Master Smile Studio son teknoloji klinik alanları, VIP odalar ve tedavi üniteleri genel galerisi.'
-        : 'Explore Master Smile Studio modern dental clinic, luxury VIP suites and cutting-edge facilities in Istanbul.',
+        ? 'Master Smile Studio doğrulanmış Google ve Trustpilot hasta yorumları ve deneyimleri.'
+        : 'Read verified patient reviews on Google & Trustpilot for dental treatments at Master Smile Studio in Istanbul.',
   };
 }
 
-export default async function GalleryPage({ params }: Props) {
+export default async function ReviewsPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
 
@@ -35,12 +35,12 @@ export default async function GalleryPage({ params }: Props) {
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', backgroundColor: '#ffffff', color: '#0f172a' }}>
       <Header />
 
-      {/* 1:1 Modular Clinic Gallery Hero Banner */}
-      <GalleryHeroBanner />
+      {/* 1:1 Modular Reviews Hero Banner */}
+      <ReviewsHeroBanner />
 
       <main id="main-content" style={{ flex: 1 }}>
-        {/* 1:1 Modular Interactive Gallery Grid & Sticky Sidebar */}
-        <GalleryMainSection />
+        {/* 1:1 Modular Reviews List Grid & Sticky Sidebar */}
+        <ReviewsMainSection />
       </main>
 
       <Footer />

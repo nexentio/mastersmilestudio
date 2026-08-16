@@ -124,31 +124,136 @@ const TREATMENTS_NAV_TREE: TreatmentCategory[] = [
   },
 ];
 
-const EXPLORE_DROPDOWN: DropdownItem[] = [
-  { title: { tr: 'Fotoğraf Galerisi', en: 'Photo Gallery', de: 'Fotogalerie', ru: 'Фотогалерея', es: 'Galería de Fotos', pt: 'Galeria de Fotos', pl: 'Galeria Zdjęć' }, href: '/gallery' },
-  { title: { tr: 'Hasta Hikayeleri & Video', en: 'Patient Stories & Videos', de: 'Patientengeschichten & Videos', ru: 'Истории пациентов и видео', es: 'Historias de Pacientes y Videos', pt: 'Histórias de Pacientes e Vídeos', pl: 'Historie Pacjentów i Wideo' }, href: '/#real-patients' },
-  { title: { tr: 'Öncesi & Sonrası', en: 'Before & After', de: 'Vorher & Nachher', ru: 'До и После', es: 'Antes y Después', pt: 'Antes e Depois', pl: 'Przed i Po' }, href: '/#transformations' },
-  { title: { tr: 'Hasta Yorumları', en: 'Patient Reviews', de: 'Patientenbewertungen', ru: 'Отзывы пациентов', es: 'Opiniones de Pacientes', pt: 'Avaliações de Pacientes', pl: 'Opinie Pacjentów' }, href: '/#patients' },
-  { title: { tr: 'Tedavi Süreci', en: 'Treatment Process', de: 'Behandlungsablauf', ru: 'Процесс лечения', es: 'Proceso de Tratamiento', pt: 'Processo de Tratamento', pl: 'Przebieg Leczenia' }, href: '/#treatment-process' },
-  { title: { tr: 'Sıkça Sorulan Sorular', en: 'Frequently Asked Questions', de: 'Häufig gestellte Fragen', ru: 'Частые вопросы', es: 'Preguntas Frecuentes', pt: 'Perguntas Frequentes', pl: 'Często Zadawane Pytania' }, href: '/#faq' },
-  { title: { tr: 'Blog & Makaleler', en: 'Blog & Articles', de: 'Blog & Artikel', ru: 'Блог и статьи', es: 'Blog y Artículos', pt: 'Blog e Artigos', pl: 'Blog i Artykuły' }, href: '/#blog' },
+const EXPLORE_NAV_TREE: TreatmentCategory[] = [
+  {
+    id: 'prices',
+    title: {
+      tr: 'Fiyatlar & Paketler',
+      en: 'Prices',
+      de: 'Preise',
+      ru: 'Цены',
+      es: 'Precios',
+      pt: 'Preços',
+      pl: 'Ceny',
+    },
+    href: '/prices',
+    subitems: [
+      {
+        title: {
+          tr: 'Fiyat Listesi',
+          en: 'Price List',
+          de: 'Preisliste',
+          ru: 'Прайс-лист',
+          es: 'Lista de Precios',
+          pt: 'Lista de Preços',
+          pl: 'Cennik',
+        },
+        href: '/prices',
+      },
+      {
+        title: {
+          tr: 'Paketler',
+          en: 'Packages',
+          de: 'Pakete',
+          ru: 'Пакеты',
+          es: 'Paquetes',
+          pt: 'Pacotes',
+          pl: 'Pakiety',
+        },
+        href: '/packages',
+      },
+    ],
+  },
+  {
+    id: 'gallery',
+    title: {
+      tr: 'Galeri',
+      en: 'Gallery',
+      de: 'Galerie',
+      ru: 'Галерея',
+      es: 'Galería',
+      pt: 'Galeria',
+      pl: 'Galeria',
+    },
+    href: '/gallery',
+    subitems: [],
+  },
+  {
+    id: 'blog',
+    title: {
+      tr: 'Blog',
+      en: 'Blog',
+      de: 'Blog',
+      ru: 'Блог',
+      es: 'Blog',
+      pt: 'Blog',
+      pl: 'Blog',
+    },
+    href: '/blog',
+    subitems: [],
+  },
+  {
+    id: 'reviews',
+    title: {
+      tr: 'Hasta Yorumları',
+      en: 'Reviews',
+      de: 'Bewertungen',
+      ru: 'Отзывы',
+      es: 'Reseñas',
+      pt: 'Avaliações',
+      pl: 'Opinie',
+    },
+    href: '/reviews',
+    subitems: [],
+  },
+  {
+    id: 'before-after',
+    title: {
+      tr: 'Öncesi / Sonrası',
+      en: 'Before/After',
+      de: 'Vorher / Nachher',
+      ru: 'До / После',
+      es: 'Antes / Después',
+      pt: 'Antes / Depois',
+      pl: 'Przed / Po',
+    },
+    href: '/before-after',
+    subitems: [],
+  },
+  {
+    id: 'faq',
+    title: {
+      tr: 'Sıkça Sorulan Sorular (FAQ)',
+      en: 'Frequently Asked Questions (FAQ)',
+      de: 'Häufig gestellte Fragen (FAQ)',
+      ru: 'Часто задаваемые вопросы (FAQ)',
+      es: 'Preguntas Frecuentes (FAQ)',
+      pt: 'Perguntas Frequentes (FAQ)',
+      pl: 'Często Zadawane Pytania (FAQ)',
+    },
+    href: '/faq',
+    subitems: [],
+  },
 ];
 
 export default function Header() {
   const t = useTranslations('common');
   const locale = useLocale();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [mobileView, setMobileView] = useState<'main' | 'treatments' | 'explore' | 'treatment-category'>('main');
+  const [mobileView, setMobileView] = useState<'main' | 'treatments' | 'explore' | 'treatment-category' | 'explore-category'>('main');
   const [selectedCategory, setSelectedCategory] = useState<typeof TREATMENTS_NAV_TREE[0] | null>(null);
+  const [selectedExploreCategory, setSelectedExploreCategory] = useState<typeof EXPLORE_NAV_TREE[0] | null>(null);
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<'treatments' | 'explore' | null>(null);
   const [hoveredCategory, setHoveredCategory] = useState<string | null>(null);
+  const [hoveredExploreCategory, setHoveredExploreCategory] = useState<string | null>('prices');
 
   const handleCloseMobileMenu = () => {
     setMobileMenuOpen(false);
     setTimeout(() => {
       setMobileView('main');
       setSelectedCategory(null);
+      setSelectedExploreCategory(null);
     }, 250);
   };
 
@@ -491,8 +596,15 @@ export default function Header() {
                   <div
                     key={idx}
                     style={{ position: 'relative' }}
-                    onMouseEnter={() => setActiveDropdown('explore')}
-                    onMouseLeave={() => setActiveDropdown(null)}
+                    onMouseEnter={() => {
+                      setActiveDropdown('explore');
+                      setHoveredCategory(null);
+                      setHoveredExploreCategory('prices');
+                    }}
+                    onMouseLeave={() => {
+                      setActiveDropdown(null);
+                      setHoveredExploreCategory(null);
+                    }}
                   >
                     <Link
                       href={link.href}
@@ -526,7 +638,7 @@ export default function Header() {
                       </svg>
                     </Link>
 
-                    {/* Explore Dropdown Menu */}
+                    {/* Level 1 Explore Dropdown Menu with 2nd Level Flyout */}
                     {isOpen && (
                       <div
                         style={{
@@ -539,17 +651,73 @@ export default function Header() {
                         }}
                       >
                         <div className="dropdown-menu-card">
-                          {EXPLORE_DROPDOWN.map((item, eIdx) => (
-                            <Link
-                              key={eIdx}
-                              href={item.href}
-                              onClick={() => setActiveDropdown(null)}
-                              className="dropdown-item-link"
-                              style={{ justifyContent: 'flex-start' }}
-                            >
-                              <span>{getLocalized(item.title)}</span>
-                            </Link>
-                          ))}
+                          {EXPLORE_NAV_TREE.map((cat) => {
+                            const isCatHovered = (hoveredExploreCategory || 'prices') === cat.id;
+                            const hasSubitems = cat.subitems && cat.subitems.length > 0;
+
+                            return (
+                              <div
+                                key={cat.id}
+                                style={{ position: 'relative' }}
+                                onMouseEnter={() => setHoveredExploreCategory(cat.id)}
+                              >
+                                {hasSubitems ? (
+                                  <div
+                                    className={`dropdown-item-link ${isCatHovered ? 'active-flyout' : ''}`}
+                                    style={{ cursor: 'default' }}
+                                  >
+                                    <span>{getLocalized(cat.title)}</span>
+                                    <svg
+                                      width="12"
+                                      height="12"
+                                      viewBox="0 0 24 24"
+                                      fill="none"
+                                      stroke="currentColor"
+                                      strokeWidth="2.5"
+                                      style={{
+                                        opacity: isCatHovered ? 1 : 0.45,
+                                        stroke: isCatHovered ? '#D58936' : 'currentColor',
+                                        transition: 'all 0.2s ease',
+                                      }}
+                                    >
+                                      <path d="M9 18l6-6-6-6" />
+                                    </svg>
+                                  </div>
+                                ) : (
+                                  <Link
+                                    href={cat.href}
+                                    onClick={() => {
+                                      setActiveDropdown(null);
+                                      setHoveredExploreCategory(null);
+                                    }}
+                                    className={`dropdown-item-link ${isCatHovered ? 'active-flyout' : ''}`}
+                                  >
+                                    <span>{getLocalized(cat.title)}</span>
+                                  </Link>
+                                )}
+
+                                {/* Level 2 Flyout Submenu */}
+                                {isCatHovered && hasSubitems && (
+                                  <div className="dropdown-subcard">
+                                    {cat.subitems.map((sub, sIdx) => (
+                                      <Link
+                                        key={sIdx}
+                                        href={sub.href}
+                                        onClick={() => {
+                                          setActiveDropdown(null);
+                                          setHoveredExploreCategory(null);
+                                        }}
+                                        className="dropdown-item-link"
+                                        style={{ justifyContent: 'flex-start' }}
+                                      >
+                                        <span>{getLocalized(sub.title)}</span>
+                                      </Link>
+                                    ))}
+                                  </div>
+                                )}
+                              </div>
+                            );
+                          })}
                         </div>
                       </div>
                     )}
@@ -887,61 +1055,131 @@ export default function Header() {
               );
             })()}
 
-            {/* VIEW 4: Explore Menu Items (With Explore Anchor Item, Centered, Large, Borderless, Direct Links) */}
-            {mobileView === 'explore' && (
-              <div className="mobile-drilldown-view" style={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
-                {/* Header Back Bar */}
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', paddingBottom: '0.4rem', borderBottom: '1px solid #f1f5f9' }}>
-                  <button
-                    type="button"
-                    onClick={() => setMobileView('main')}
-                    className="mobile-back-btn"
-                  >
-                    <span style={{ fontSize: '1.15rem', lineHeight: 1, fontWeight: 400 }}>‹</span>
-                    <span>{locale === 'tr' ? 'Ana Menü' : 'Main Menu'}</span>
-                  </button>
-                  <span style={{ fontSize: '0.8rem', fontWeight: 750, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
-                    {t('navigation.explore')}
-                  </span>
-                </div>
-
-                {/* Explore Links (Explore Anchor + 7 Explore Sub-links) */}
-                <div
-                  style={{
-                    flex: 1,
-                    display: 'flex',
-                    flexDirection: 'column',
-                    justifyContent: 'space-evenly',
-                    alignItems: 'center',
-                    textAlign: 'center',
-                    padding: '0.35rem 0',
-                  }}
-                >
-                  {/* Anchor: Explore Overview Link */}
-                  <Link
-                    href="/gallery"
-                    onClick={handleCloseMobileMenu}
-                    className="mobile-drilldown-text-link"
-                    style={{ fontSize: 'clamp(1.05rem, 2.5vh, 1.25rem)' }}
-                  >
-                    <span>{t('navigation.explore')}</span>
-                  </Link>
-
-                  {/* 7 Explore Links */}
-                  {EXPLORE_DROPDOWN.map((item, eIdx) => (
-                    <Link
-                      key={eIdx}
-                      href={item.href}
-                      onClick={handleCloseMobileMenu}
-                      className="mobile-drilldown-text-link"
-                      style={{ fontSize: 'clamp(1.05rem, 2.5vh, 1.25rem)' }}
+            {/* VIEW 4: Explore Level 1 (With Explore Anchor Item, Centered, Large Font, Borderless) */}
+            {mobileView === 'explore' && (() => {
+              return (
+                <div className="mobile-drilldown-view" style={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+                  {/* Header Back Bar */}
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', paddingBottom: '0.4rem', borderBottom: '1px solid #f1f5f9' }}>
+                    <button
+                      type="button"
+                      onClick={() => setMobileView('main')}
+                      className="mobile-back-btn"
                     >
-                      <span>{getLocalized(item.title)}</span>
-                    </Link>
-                  ))}
+                      <span style={{ fontSize: '1.15rem', lineHeight: 1, fontWeight: 400 }}>‹</span>
+                      <span>{locale === 'tr' ? 'Ana Menü' : 'Main Menu'}</span>
+                    </button>
+                    <span style={{ fontSize: '0.8rem', fontWeight: 750, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
+                      {t('navigation.explore')}
+                    </span>
+                  </div>
+
+                  {/* 6 Explore Categories */}
+                  <div
+                    style={{
+                      flex: 1,
+                      display: 'flex',
+                      flexDirection: 'column',
+                      justifyContent: 'space-evenly',
+                      alignItems: 'center',
+                      textAlign: 'center',
+                      padding: '0.35rem 0',
+                    }}
+                  >
+                    {EXPLORE_NAV_TREE.map((cat) => {
+                      const hasSub = cat.subitems && cat.subitems.length > 0;
+                      if (hasSub) {
+                        return (
+                          <button
+                            key={cat.id}
+                            type="button"
+                            onClick={() => {
+                              setSelectedExploreCategory(cat);
+                              setMobileView('explore-category');
+                            }}
+                            className="mobile-drilldown-text-link"
+                            style={{ fontSize: 'clamp(1.05rem, 2.5vh, 1.25rem)' }}
+                          >
+                            <span>{getLocalized(cat.title)}</span>
+                            <span style={{ color: '#D58936', fontSize: '1.25rem', fontWeight: 300 }}>›</span>
+                          </button>
+                        );
+                      }
+                      return (
+                        <Link
+                          key={cat.id}
+                          href={cat.href}
+                          onClick={handleCloseMobileMenu}
+                          className="mobile-drilldown-text-link"
+                          style={{ fontSize: 'clamp(1.05rem, 2.5vh, 1.25rem)' }}
+                        >
+                          <span>{getLocalized(cat.title)}</span>
+                        </Link>
+                      );
+                    })}
+                  </div>
                 </div>
-              </div>
-            )}
+              );
+            })()}
+
+            {/* VIEW 5: Specific Explore Category Subitems */}
+            {mobileView === 'explore-category' && selectedExploreCategory && (() => {
+              const exploreSubitems = selectedExploreCategory.subitems;
+              const count = exploreSubitems.length;
+              const dynamicFontSize = count <= 3
+                ? 'clamp(1.35rem, 4vh, 1.85rem)'
+                : count <= 5
+                ? 'clamp(1.15rem, 3vh, 1.45rem)'
+                : 'clamp(0.95rem, 2.3vh, 1.2rem)';
+
+              return (
+                <div className="mobile-drilldown-view" style={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+                  {/* Header Back Bar */}
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', paddingBottom: '0.4rem', borderBottom: '1px solid #f1f5f9' }}>
+                    <button
+                      type="button"
+                      onClick={() => setMobileView('explore')}
+                      className="mobile-back-btn"
+                    >
+                      <span style={{ fontSize: '1.15rem', lineHeight: 1, fontWeight: 400 }}>‹</span>
+                      <span>{locale === 'tr' ? 'Keşfet' : 'Explore'}</span>
+                    </button>
+                    <span style={{ fontSize: '0.8rem', fontWeight: 750, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
+                      {getLocalized(selectedExploreCategory.title)}
+                    </span>
+                  </div>
+
+                  {/* Complete Subitem List */}
+                  <div
+                    style={{
+                      flex: 1,
+                      display: 'flex',
+                      flexDirection: 'column',
+                      justifyContent: 'space-evenly',
+                      alignItems: 'center',
+                      textAlign: 'center',
+                      padding: '0.35rem 0',
+                    }}
+                  >
+                    {exploreSubitems.map((item, idx) => (
+                      <Link
+                        key={idx}
+                        href={item.href}
+                        onClick={handleCloseMobileMenu}
+                        className="mobile-subitem-text-link"
+                        style={{
+                          fontSize: dynamicFontSize,
+                          fontWeight: 700,
+                          color: '#0f172a',
+                        }}
+                      >
+                        <span>{getLocalized(item.title)}</span>
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              );
+            })()}
 
             {/* Pinned Bottom Action Hub (WP & Journey Buttons Always at Bottom) */}
             <div

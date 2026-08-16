@@ -1,0 +1,464 @@
+.standardCenter3 {
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 5rem 1.5rem;
+  background-color: #ffffff;
+}
+
+.pagegrid {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+/* Left Column */
+.s1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+.catgrup {
+  display: flex;
+  flex-direction: column;
+}
+
+.catgrup h2 {
+  font-family: var(--font-outfit), sans-serif;
+  font-size: clamp(1.35rem, 2vw, 1.75rem);
+  font-weight: 800;
+  color: #0c1b4d;
+  margin: 0 0 1.75rem 0;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid #f1f5f9;
+  letter-spacing: -0.015em;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+/* Review Card */
+.s {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 1.4rem;
+  box-shadow: 0 4px 18px rgba(15, 23, 42, 0.04);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+}
+
+.s:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.09);
+  border-color: #cbd5e1;
+}
+
+.ad {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-family: var(--font-outfit), sans-serif;
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #0c1b4d;
+  margin-bottom: 0.75rem;
+}
+
+.userAvatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0c1b4d 0%, #1e3a8a 100%);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.yorum {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: #475569;
+  margin-bottom: 1.25rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  flex: 1;
+}
+
+.cardFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.85rem;
+  border-top: 1px solid #f1f5f9;
+}
+
+.platform {
+  position: relative;
+  width: 85px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+}
+
+.platformImg {
+  object-fit: contain;
+  object-position: left center;
+}
+
+.stars {
+  position: relative;
+  width: 88px;
+  height: 18px;
+}
+
+.starsImg {
+  object-fit: contain;
+  object-position: right center;
+}
+
+/* Lightbox Modal */
+.modalBackdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  background: rgba(10, 15, 30, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  backdrop-filter: blur(6px);
+}
+
+.modalCard {
+  position: relative;
+  width: 100%;
+  max-width: 680px;
+  max-height: 85vh;
+  overflow-y: auto;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 2.25rem;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
+}
+
+.modalCloseBtn {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  background: #f1f5f9;
+  border: none;
+  color: #0c1b4d;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.modalCloseBtn:hover {
+  background-color: #e2e8f0;
+  color: #D58936;
+}
+
+.modalHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid #f1f5f9;
+  margin-bottom: 1.25rem;
+}
+
+.modalAuthor {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.modalAvatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0c1b4d 0%, #D58936 100%);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.modalAuthorName {
+  font-family: var(--font-outfit), sans-serif;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #0c1b4d;
+  margin: 0;
+}
+
+.modalRatingRow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.modalBody {
+  font-size: 0.98rem;
+  line-height: 1.75;
+  color: #334155;
+  white-space: pre-line;
+}
+
+/* Right Column: Sticky Sidebar */
+.s2 {
+  position: relative;
+}
+
+.sticky {
+  position: sticky;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.minikart {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 1.25rem;
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.04);
+  text-align: center;
+}
+
+.adSide {
+  font-family: var(--font-outfit), sans-serif;
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #0c1b4d;
+  margin-bottom: 0.85rem;
+}
+
+.imSide {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 0.85rem;
+  background-color: #f1f5f9;
+}
+
+.imLink {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.imImgSide {
+  object-fit: cover;
+}
+
+.infoSide {
+  font-family: var(--font-outfit), sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #334155;
+  margin-bottom: 1rem;
+}
+
+.butonlarwrap {
+  width: 100%;
+}
+
+.butonlar {
+  display: grid;
+  grid-template-columns: 1fr 48px 48px;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.tip1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 44px;
+  background-color: #0c1b4d;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.03em;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.tip1:hover {
+  background-color: #D58936;
+}
+
+.tip2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 44px;
+  border-radius: 8px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.tip2:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.whatsappBtn {
+  background-color: #25d366;
+}
+
+.phoneBtn {
+  background-color: #3b82f6;
+}
+
+/* Miniblog Treatments List */
+.miniblog1 {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 1.25rem;
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.04);
+}
+
+.xtitle {
+  font-family: var(--font-outfit), sans-serif;
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #0c1b4d;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #f1f5f9;
+}
+
+.treatmentList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.treatmentItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.treatmentThumb {
+  position: relative;
+  width: 100%;
+  height: 120px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 0.35rem;
+}
+
+.treatmentThumbLink {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.treatmentLink {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #334155;
+  text-decoration: none;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid #f1f5f9;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.treatmentLink:hover {
+  color: #D58936;
+  transform: translateX(4px);
+}
+
+.arrowIcon {
+  font-size: 0.8rem;
+  color: #64748b;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .pagegrid {
+    grid-template-columns: 1fr;
+  }
+
+  .sticky {
+    position: static;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .standardCenter3 {
+    padding: 2rem 1rem 3.5rem 1rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sticky {
+    grid-template-columns: 1fr;
+  }
+
+  .modalCard {
+    padding: 1.5rem;
+  }
+
+  .modalHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+}
