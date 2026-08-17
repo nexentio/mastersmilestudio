@@ -1,14 +1,12 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { useLocale } from 'next-intl';
 import { Link } from '@/i18n/routing';
 import TreatmentServicesIncludedSection from '@/components/treatment-sections/TreatmentServicesIncludedSection';
 import TreatmentParallaxBanner from '@/components/treatment-sections/TreatmentParallaxBanner';
-import TreatmentDoctorsSection from '@/components/treatment-sections/TreatmentDoctorsSection';
 import TreatmentJourneySimpleSection from '@/components/treatment-sections/TreatmentJourneySimpleSection';
 import TreatmentPatientReelsSection from '@/components/treatment-sections/TreatmentPatientReelsSection';
-import TreatmentClinicTourSection from '@/components/treatment-sections/TreatmentClinicTourSection';
 import TreatmentReviewsSection from '@/components/treatment-sections/TreatmentReviewsSection';
 import TreatmentRightTreatmentAccordion from '@/components/treatment-sections/TreatmentRightTreatmentAccordion';
 import TreatmentBeforeAfterSliderSection from '@/components/treatment-sections/TreatmentBeforeAfterSliderSection';
@@ -3824,6 +3822,17 @@ export default function ZirconiumImplantDetailView() {
   const d = DICTIONARIES[locale] || DICTIONARIES.en;
   const [activeFaq, setActiveFaq] = useState<number | null>(null);
   const [currency, setCurrency] = useState<'USD' | 'EUR' | 'GBP'>('EUR');
+  const pkgSliderRef = useRef<HTMLDivElement>(null);
+
+  const scrollPackages = (direction: 'left' | 'right') => {
+    if (pkgSliderRef.current) {
+      const scrollAmount = 400;
+      pkgSliderRef.current.scrollBy({
+        left: direction === 'right' ? scrollAmount : -scrollAmount,
+        behavior: 'smooth',
+      });
+    }
+  };
 
   return (
     <div className={styles.wrapper}>
@@ -3856,16 +3865,6 @@ export default function ZirconiumImplantDetailView() {
             </Link>
             {d.introP3Tail}
           </p>
-
-          {/* Full-width 16:9 Clinical Zirconium Procedure Video */}
-          <div className={styles.mainVideoWrap}>
-            <iframe
-              src="https://www.youtube.com/embed/kY1y7sV0uU4"
-              title="Zirconium Ceramic Dental Implants Clinical Procedure in Istanbul"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
-          </div>
 
           {/* 1.5 CANDIDACY & CLINICAL INDICATION CHECKLIST */}
           <div className={styles.candidacySection}>
@@ -3934,144 +3933,7 @@ export default function ZirconiumImplantDetailView() {
         </div>
       </section>
 
-      {/* 3. 3-PHASE PRECISION PROTOCOL (HORIZONTAL PEEK CAROUSEL ON MOBILE) */}
-      <section aria-labelledby="zirc-process-heading" className={styles.processSection}>
-        <div className={styles.container}>
-          <div className={styles.processHeader}>
-            <h2 id="zirc-process-heading" className={styles.processTitle}>
-              {d.processTitle}
-            </h2>
-            <p className={styles.processSubtitle}>{d.processSubtitle}</p>
-          </div>
-
-          <div className={styles.processGrid}>
-            {d.processCards.map((card, pIdx) => (
-              <div key={pIdx} className={styles.processCard}>
-                <div>
-                  <span className={styles.processStepNum}>{card.step}</span>
-                  <h3 className={styles.processCardTitle}>{card.title}</h3>
-                  <p className={styles.processCardText}>{card.text}</p>
-                </div>
-                <div className={styles.processCardSpecs}>
-                  {card.specs.map((sp, sIdx) => (
-                    <div key={sIdx} className={styles.processSpecItem}>
-                      <span className={styles.processSpecKey}>{sp.key}:</span>
-                      <span className={styles.processSpecVal}>{sp.val}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* 4. PERMANENT CROWN & BRIDGE MATERIALS COMPARISON */}
-      <section aria-labelledby="zirc-materials-heading" className={styles.materialsSection}>
-        <div className={styles.container}>
-          <div className={styles.materialsHeader}>
-            <h2 id="zirc-materials-heading" className={styles.materialsTitle}>
-              {d.materialsTitle}
-            </h2>
-            <p className={styles.materialsSubtitle}>{d.materialsSubtitle}</p>
-          </div>
-
-          {/* 3 Material Cards */}
-          <div className={styles.materialsGrid}>
-            {d.materialsCards.map((card, cIdx) => (
-              <div
-                key={cIdx}
-                className={`${styles.materialCard} ${card.isGold ? styles.materialCardGold : ''}`}
-              >
-                {card.badge && (
-                  <span className={styles.materialStandardBadge}>{card.badge}</span>
-                )}
-
-                <div>
-                  <h3 className={styles.materialCardTitle}>{card.title}</h3>
-                  <span className={styles.materialCardSub}>{card.sub}</span>
-
-                  <div className={styles.materialSpecsBox}>
-                    <div className={styles.materialSpecRow}>
-                      <span className={styles.materialSpecLabel}>{d.materialsSpecLabels.material}</span>
-                      <span className={card.isGold ? styles.materialSpecValGold : styles.materialSpecVal}>
-                        {card.material}
-                      </span>
-                    </div>
-                    <div className={styles.materialSpecRow}>
-                      <span className={styles.materialSpecLabel}>{d.materialsSpecLabels.strength}</span>
-                      <span className={card.isGold ? styles.materialSpecValGold : styles.materialSpecVal}>
-                        {card.strength}
-                      </span>
-                    </div>
-                    <div className={styles.materialSpecRow}>
-                      <span className={styles.materialSpecLabel}>{d.materialsSpecLabels.chipping}</span>
-                      <span className={card.isGold ? styles.materialSpecValGold : styles.materialSpecVal}>
-                        {card.chippingRisk}
-                      </span>
-                    </div>
-                    <div className={styles.materialSpecRow}>
-                      <span className={styles.materialSpecLabel}>{d.materialsSpecLabels.lifespan}</span>
-                      <span className={card.isGold ? styles.materialSpecValGold : styles.materialSpecVal}>
-                        {card.lifespan}
-                      </span>
-                    </div>
-                  </div>
-
-                  <ul className={styles.materialList}>
-                    {card.features.map((feat, fIdx) => (
-                      <li key={fIdx} className={styles.materialListItem}>
-                        <span
-                          className={
-                            feat.status === 'good'
-                              ? styles.matCheck
-                              : feat.status === 'bad'
-                              ? styles.matCross
-                              : styles.matWarn
-                          }
-                        >
-                          {feat.status === 'good' ? '•' : feat.status === 'bad' ? '—' : '–'}
-                        </span>
-                        <span>{feat.text}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Comparison Matrix Table */}
-          <div className={styles.materialsTableWrap}>
-            <table className={styles.materialsTable}>
-              <thead>
-                <tr>
-                  <th className={styles.materialsTh}>{d.materialsTableHeaders.criteria}</th>
-                  <th className={styles.materialsThGold}>{d.materialsTableHeaders.zirconia}</th>
-                  <th className={styles.materialsTh}>{d.materialsTableHeaders.emax}</th>
-                  <th className={styles.materialsTh}>{d.materialsTableHeaders.pfm}</th>
-                </tr>
-              </thead>
-              <tbody>
-                {d.materialsTableRows.map((row, rIdx) => (
-                  <tr key={rIdx}>
-                    <td className={styles.materialsTd}>
-                      <strong>{row.criteria}</strong>
-                    </td>
-                    <td className={`${styles.materialsTd} ${styles.materialsTdHighlight}`}>
-                      {row.zirconia}
-                    </td>
-                    <td className={styles.materialsTd}>{row.emax}</td>
-                    <td className={styles.materialsTd}>{row.pfm}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
-
-      {/* 5. TRANSPARENT PACKAGES & DYNAMIC CURRENCY SWITCHER */}
+      {/* 3. TRANSPARENT PACKAGES & DYNAMIC CURRENCY SWITCHER */}
       <section aria-labelledby="zirc-packages-heading" className={styles.packagesSection}>
         <div className={styles.container}>
           <div className={styles.packagesHeader}>
@@ -4081,34 +3943,59 @@ export default function ZirconiumImplantDetailView() {
             <p className={styles.packagesSubtitle}>{d.packagesSubtitle}</p>
           </div>
 
-          {/* Interactive Currency Switcher */}
-          <div className={styles.currencyBar} role="group" aria-label="Select Currency">
-            <span className={styles.currencyLabel}>Currency:</span>
-            <button
-              type="button"
-              className={`${styles.currencyBtn} ${currency === 'EUR' ? styles.currencyBtnActive : ''}`}
-              onClick={() => setCurrency('EUR')}
-            >
-              EUR (€)
-            </button>
-            <button
-              type="button"
-              className={`${styles.currencyBtn} ${currency === 'GBP' ? styles.currencyBtnActive : ''}`}
-              onClick={() => setCurrency('GBP')}
-            >
-              GBP (£)
-            </button>
-            <button
-              type="button"
-              className={`${styles.currencyBtn} ${currency === 'USD' ? styles.currencyBtnActive : ''}`}
-              onClick={() => setCurrency('USD')}
-            >
-              USD ($)
-            </button>
+          {/* Controls: Currency Switcher & Carousel Left/Right Buttons */}
+          <div className={styles.pkgSliderControls}>
+            <div className={styles.currencyBar} role="group" aria-label="Select Currency">
+              <span className={styles.currencyLabel}>Currency:</span>
+              <button
+                type="button"
+                className={`${styles.currencyBtn} ${currency === 'EUR' ? styles.currencyBtnActive : ''}`}
+                onClick={() => setCurrency('EUR')}
+              >
+                EUR (€)
+              </button>
+              <button
+                type="button"
+                className={`${styles.currencyBtn} ${currency === 'GBP' ? styles.currencyBtnActive : ''}`}
+                onClick={() => setCurrency('GBP')}
+              >
+                GBP (£)
+              </button>
+              <button
+                type="button"
+                className={`${styles.currencyBtn} ${currency === 'USD' ? styles.currencyBtnActive : ''}`}
+                onClick={() => setCurrency('USD')}
+              >
+                USD ($)
+              </button>
+            </div>
+
+            <div className={styles.sliderNavBtns}>
+              <button
+                type="button"
+                className={styles.sliderNavBtn}
+                onClick={() => scrollPackages('left')}
+                aria-label="Previous Package"
+              >
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+              </button>
+              <button
+                type="button"
+                className={styles.sliderNavBtn}
+                onClick={() => scrollPackages('right')}
+                aria-label="Next Package"
+              >
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </button>
+            </div>
           </div>
 
-          {/* 6 Real Implant Brand Package Cards */}
-          <div className={styles.pkgGrid}>
+          {/* Single-row Horizontal Carousel Track */}
+          <div className={styles.pkgSliderTrack} ref={pkgSliderRef}>
             {d.packages.map((pkg, pIdx) => (
               <div
                 key={pIdx}
@@ -4210,14 +4097,8 @@ export default function ZirconiumImplantDetailView() {
         </div>
       </section>
 
-      {/* 7. REUSABLE: SERVICES INCLUDED */}
+      {/* 5. REUSABLE: SERVICES INCLUDED */}
       <TreatmentServicesIncludedSection />
-
-      {/* 8. REUSABLE: CLINIC TOUR */}
-      <TreatmentClinicTourSection placeholderNum="ZIRC-TOUR" />
-
-      {/* 9. REUSABLE: FOUNDING SURGEONS */}
-      <TreatmentDoctorsSection />
 
       {/* 10. BEFORE & AFTER TRANSFORMATIONS GALLERY */}
       <TreatmentBeforeAfterSliderSection />
