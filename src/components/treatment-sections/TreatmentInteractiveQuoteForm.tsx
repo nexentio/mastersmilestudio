@@ -405,7 +405,7 @@ export default function TreatmentInteractiveQuoteForm({ defaultTreatment = 'Impl
 
   const handleWhatsAppInstantSend = () => {
     const text = encodeURIComponent(
-      `Hello Master Smile Studio! 👋\n\nI would like to get my Free Dental Consultation.\n\n• Name: ${fullName || 'Guest'}\n• Country: ${country}\n• Phone: ${phone}\n• Treatments: ${selectedTreatments.join(', ')}\n• Age: ${ageGroup}\n• Spoken to Dentist: ${spokenToDentist}\n• Timeline: ${timeline}\n• Preferred Contact: ${commChannel}\n• Message: ${message || 'None'}\n\nPlease prepare my custom treatment plan and price quote.`
+      `Hello Master Smile Studio!\n\nI would like to get my Free Dental Consultation.\n\n• Name: ${fullName || 'Guest'}\n• Country: ${country}\n• Phone: ${phone}\n• Treatments: ${selectedTreatments.join(', ')}\n• Age: ${ageGroup}\n• Spoken to Dentist: ${spokenToDentist}\n• Timeline: ${timeline}\n• Preferred Contact: ${commChannel}\n• Message: ${message || 'None'}\n\nPlease prepare my custom treatment plan and price quote.`
     );
     window.open(
       `https://wa.me/${SITE_CONFIG.whatsapp.replace(/[^0-9]/g, '')}?text=${text}`,
@@ -798,7 +798,6 @@ export default function TreatmentInteractiveQuoteForm({ defaultTreatment = 'Impl
                     onClick={handleWhatsAppInstantSend}
                     className={styles.whatsappActionBtn}
                   >
-                    <span>💬</span>
                     <span>{dict.whatsappBtn}</span>
                   </button>
                   <button

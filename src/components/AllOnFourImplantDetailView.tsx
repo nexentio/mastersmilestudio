@@ -30,7 +30,42 @@ interface FaqItem {
   a: string;
 }
 
+interface MaterialCardItem {
+  title: string;
+  sub: string;
+  badge?: string;
+  isGold?: boolean;
+  material: string;
+  strength: string;
+  chippingRisk: string;
+  lifespan: string;
+  features: { text: string; status: 'good' | 'bad' | 'warn' }[];
+}
+
+interface MaterialTableRow {
+  criteria: string;
+  zirconia: string;
+  acrylic: string;
+  pfm: string;
+}
+
 interface DetailDictionary {
+  materialsTitle: string;
+  materialsSubtitle: string;
+  materialsSpecLabels: {
+    material: string;
+    strength: string;
+    chipping: string;
+    lifespan: string;
+  };
+  materialsCards: MaterialCardItem[];
+  materialsTableHeaders: {
+    criteria: string;
+    zirconia: string;
+    acrylic: string;
+    pfm: string;
+  };
+  materialsTableRows: MaterialTableRow[];
   introBadge: string;
   introTitle: string;
   introLead: string;
@@ -43,7 +78,105 @@ interface DetailDictionary {
   introP3And: string;
   introP3LinkSinus: string;
   introP3Tail: string;
-  packagesTitle: string;
+      materialsTitle: 'Materiales de Prótesis All-on-4: Por qué Usamos Circonio Monolítico',
+    materialsSubtitle: 'En All-on-4, 4 implantes soportan toda la fuerza masticatoria de la mandíbula (200 a 600 Newtons). Descubra por qué diseñamos exclusivamente Circonio Monolítico Multicapa en lugar de acrílico o metal.',
+    materialsSpecLabels: {
+      material: 'Tipo de Material',
+      strength: 'Resistencia a la Flexión',
+      chipping: 'Riesgo de Fractura',
+      lifespan: 'Vida Útil',
+    },
+    materialsCards: [
+      {
+        title: 'Circonio Monolítico Multicapa',
+        sub: '100% Circonio Alemán Macizo + Barra de Titanio Fresada',
+        badge: 'ESTÁNDAR DE ORO MASTER SMILE',
+        isGold: true,
+        material: '1200+ MPa CAD/CAM Circonio',
+        strength: '1200 – 1400 MPa (Ultra Alta)',
+        chippingRisk: 'Casi Cero (Monolítico Sólido)',
+        lifespan: '25+ Años / De por Vida',
+        features: [
+          { text: 'Cero fracturas o astillamiento bajo fuerte masticación', status: 'good' },
+          { text: 'Superficie ultra lisa previene placa y Periimplantitis', status: 'good' },
+          { text: 'No poroso: 100% resistente a manchas y malos olores', status: 'good' },
+          { text: 'Gradiente multicapa para una estética natural translúcida', status: 'good' },
+        ],
+      },
+      {
+        title: 'Puente Híbrido Titanio-Acrílico',
+        sub: 'Estructura Metálica + Resina Acrílica y Dientes Plásticos',
+        material: 'Acrílico PMMA + Estructura Metálica',
+        strength: '80 – 120 MPa (Baja)',
+        chippingRisk: 'Alto (Dientes pueden desprenderse)',
+        lifespan: '3 – 7 Años',
+        features: [
+          { text: 'Desgaste abrasivo acorta dientes y causa dolor articular', status: 'bad' },
+          { text: 'Resina porosa absorbe bacterias, café y olores', status: 'bad' },
+          { text: 'Dientes individuales pueden soltarse con alimentos duros', status: 'bad' },
+          { text: 'Requiere mantenimiento frecuente y reemplazo total', status: 'warn' },
+        ],
+      },
+      {
+        title: 'Metal-Porcelana (PFM)',
+        sub: 'Estructura Cobalto-Cromo + Cerámica Horneada',
+        material: 'Porcelana Feldespática en Capas',
+        strength: '350 – 450 MPa (Media)',
+        chippingRisk: 'Moderado a Alto (Astillamiento)',
+        lifespan: '8 – 12 Años',
+        features: [
+          { text: 'La porcelana se astilla bajo las intensas fuerzas de 4 implantes', status: 'bad' },
+          { text: 'Margen metálico oscuro visible si la encía se retrae', status: 'bad' },
+          { text: 'Peso elevado causa sensación pesada en la boca', status: 'warn' },
+          { text: 'Reparar porcelana astillada en boca es inviable', status: 'bad' },
+        ],
+      },
+    ],
+    materialsTableHeaders: {
+      criteria: 'Criterio de Comparación',
+      zirconia: 'Circonio Monolítico (Nuestro Estándar)',
+      acrylic: 'Híbrido Acrílico (Opción Económica)',
+      pfm: 'Metal-Porcelana (PFM)',
+    },
+    materialsTableRows: [
+      {
+        criteria: 'Riesgo de Fractura / Astillamiento',
+        zirconia: 'Casi Cero (Sólido 1200+ MPa)',
+        acrylic: 'Alto (Dientes pueden soltarse)',
+        pfm: 'Moderado (Porcelana se astilla)',
+      },
+      {
+        criteria: 'Desgaste y Pérdida de Altura Oclusal',
+        zirconia: 'Cero Desgaste (Mordida Estable)',
+        acrylic: 'Se desgasta en 3–5 años (Dolor ATM)',
+        pfm: 'Muy resistente al desgaste',
+      },
+      {
+        criteria: 'Manchas y Absorción de Olores',
+        zirconia: '100% No Poroso (Cero Manchas)',
+        acrylic: 'Poroso (Absorbe café y olores)',
+        pfm: 'Esmaltado (Resiste manchas)',
+      },
+      {
+        criteria: 'Biocompatibilidad con la Encía',
+        zirconia: 'Antibacteriano (Protege la encía)',
+        acrylic: 'Retiene placa (Riesgo de infección)',
+        pfm: 'Posible sensibilidad al metal',
+      },
+      {
+        criteria: 'Translucidez y Estética Natural',
+        zirconia: 'Vitalidad Natural Multicapa',
+        acrylic: 'Opacidad plástica artificial',
+        pfm: 'Reflejo metálico grisáceo',
+      },
+      {
+        criteria: 'Durabilidad Clínica',
+        zirconia: 'De por Vida / 25+ Años',
+        acrylic: '3 – 7 Años',
+        pfm: '8 – 12 Años',
+      },
+    ],
+    packagesTitle: string;
   packagesSubtitle: string;
   durationLabel: string;
   includedLabel: string;
@@ -79,6 +212,104 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     introP3And: ', and ',
     introP3LinkSinus: 'Sinus Lifting Procedures',
     introP3Tail: ' — all seamlessly integrated within our clinic.',
+        materialsTitle: 'All-on-4 Permanent Bridge Materials: Why We Use Monolithic Zirconia',
+    materialsSubtitle: 'In All-on-4 restorations, 4 implants bear your entire jaw chewing load (200 to 600 Newtons). Discover why we exclusively engineer 100% Monolithic Multilayer Zirconia instead of cheaper acrylic or fragile porcelain.',
+    materialsSpecLabels: {
+      material: 'Material Type',
+      strength: 'Flexural Strength',
+      chipping: 'Chipping Risk',
+      lifespan: 'Expected Lifespan',
+    },
+    materialsCards: [
+      {
+        title: 'Monolithic Multilayer Zirconia',
+        sub: '100% Solid German Zirconia + Milled Titanium Bar',
+        badge: 'MASTER SMILE GOLD STANDARD',
+        isGold: true,
+        material: '1200+ MPa CAD/CAM Zirconia',
+        strength: '1200 – 1400 MPa (Ultra-High)',
+        chippingRisk: 'Near Zero (Monolithic Solid)',
+        lifespan: '25+ Years / Lifetime',
+        features: [
+          { text: 'Zero chipping or fractures under heavy chewing force', status: 'good' },
+          { text: 'Ultra-smooth surface prevents plaque & Peri-Implantitis', status: 'good' },
+          { text: 'Non-porous: 100% stain-resistant & zero odor retention', status: 'good' },
+          { text: 'Multilayer gradient creates natural tooth translucency', status: 'good' },
+        ],
+      },
+      {
+        title: 'Hybrid Titanium-Acrylic Bridge',
+        sub: 'Cast Metal Frame + Denture Acrylic & Resin Teeth',
+        material: 'PMMA Acrylic + Metal Frame',
+        strength: '80 – 120 MPa (Low)',
+        chippingRisk: 'High (Teeth can pop off)',
+        lifespan: '3 – 7 Years',
+        features: [
+          { text: 'Abrasive wear flattens teeth, altering vertical bite', status: 'bad' },
+          { text: 'Porous resin absorbs bacteria, food oils & causes odor', status: 'bad' },
+          { text: 'Individual teeth can detach when biting hard foods', status: 'bad' },
+          { text: 'Requires frequent maintenance and total replacement', status: 'warn' },
+        ],
+      },
+      {
+        title: 'Porcelain-Fused-to-Metal (PFM)',
+        sub: 'Cast Cobalt-Chromium Frame + Baked Ceramic',
+        material: 'Layered Feldspathic Porcelain',
+        strength: '350 – 450 MPa (Medium)',
+        chippingRisk: 'Moderate to High (Chipping)',
+        lifespan: '8 – 12 Years',
+        features: [
+          { text: 'Porcelain delaminates & chips under heavy 4-implant load', status: 'bad' },
+          { text: 'Dark metal margin becomes visible if gums recede', status: 'bad' },
+          { text: 'Heavier weight creates a bulky oral sensation', status: 'warn' },
+          { text: 'Intraoral repair of chipped porcelain is impossible', status: 'bad' },
+        ],
+      },
+    ],
+    materialsTableHeaders: {
+      criteria: 'Comparison Criteria',
+      zirconia: 'Monolithic Zirconia (Our Standard)',
+      acrylic: 'Hybrid Acrylic (Budget Option)',
+      pfm: 'Metal-Porcelain (PFM)',
+    },
+    materialsTableRows: [
+      {
+        criteria: 'Fracture / Chipping Risk',
+        zirconia: 'Near Zero (Solid 1200+ MPa)',
+        acrylic: 'High (Teeth can detach)',
+        pfm: 'Moderate (Porcelain chips)',
+      },
+      {
+        criteria: 'Chewing Wear & Tooth Shortening',
+        zirconia: 'Zero Wear (Stable Bite)',
+        acrylic: 'Wears in 3–5 yrs (TMJ pain)',
+        pfm: 'Highly wear-resistant',
+      },
+      {
+        criteria: 'Staining & Odor Absorption',
+        zirconia: '100% Non-porous (Zero Stains)',
+        acrylic: 'Porous (Absorbs coffee & odors)',
+        pfm: 'Glazed (Resists stains)',
+      },
+      {
+        criteria: 'Gum Biocompatibility',
+        zirconia: 'Anti-bacterial (Protects gums)',
+        acrylic: 'Plaque trap (High infection risk)',
+        pfm: 'Potential metal sensitivity',
+      },
+      {
+        criteria: 'Aesthetic Light Translucency',
+        zirconia: 'Multilayer Natural Vitality',
+        acrylic: 'Flat plastic opacity',
+        pfm: 'Dull background metal reflection',
+      },
+      {
+        criteria: 'Clinical Longevity',
+        zirconia: 'Lifetime / 25+ Years',
+        acrylic: '3 – 7 Years',
+        pfm: '8 – 12 Years',
+      },
+    ],
     packagesTitle: 'All-on-4 Implant Package Deals & Pricing in Istanbul',
     packagesSubtitle: 'Transparent, all-inclusive pricing per arch with premium titanium implants, CAD/CAM zirconia bridge, 5-star hotel stay, and private VIP transfers.',
     durationLabel: 'Treatment Duration:',
@@ -283,6 +514,104 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     introP3And: ' ve ',
     introP3LinkSinus: 'Sinüs Lifting Tedavisi',
     introP3Tail: ' seçeneklerimizi de inceleyebilirsiniz.',
+        materialsTitle: 'All-on-4 Kalıcı Köprü Materyalleri: Neden Monolitik Zirkonyum Kullanıyoruz?',
+    materialsSubtitle: 'All-on-4 tedavisinde 4 implant tüm çenenin 200 ila 600 Newtonluk çiğneme kuvvetini taşır. Kliniğimizde neden ucuz akrilik veya kırılgan porselen yerine %100 Monolitik Çok Katmanlı Zirkonyum ürettiğimizi keşfedin.',
+    materialsSpecLabels: {
+      material: 'Materyal Türü',
+      strength: 'Kırılma Dayanımı',
+      chipping: 'Kırılma / Çatlama Riski',
+      lifespan: 'Klinik Ömrü',
+    },
+    materialsCards: [
+      {
+        title: 'Monolitik Çok Katmanlı Zirkonyum',
+        sub: '100% Yekpare Alman Zirkonyumu + Frezelenmiş Titanyum Bar',
+        badge: 'MASTER SMILE ALTIN STANDARDI',
+        isGold: true,
+        material: '1200+ MPa CAD/CAM Zirkonyum',
+        strength: '1200 – 1400 MPa (Ultra Yüksek)',
+        chippingRisk: 'Sıfıra Yakın (Yekpare Blok)',
+        lifespan: '25+ Yıl / Ömür Boyu',
+        features: [
+          { text: 'Yoğun çiğneme baskısında sıfır kırılma ve parça atma', status: 'good' },
+          { text: 'Pürüzsüz yüzey bakteri tutmaz, Peri-implantitis riskini sıfırlar', status: 'good' },
+          { text: 'Gözeneksiz yapı: Asla leke tutmaz, koku yapmaz', status: 'good' },
+          { text: 'Çok katmanlı doğal ışık geçirgenliği ile canlı estetik', status: 'good' },
+        ],
+      },
+      {
+        title: 'Hibrit Titanyum-Akrilik Köprü',
+        sub: 'Metal İskelet + Protez Akriliği ve Plastik Dişler',
+        material: 'PMMA Akrilik + Metal İskelet',
+        strength: '80 – 120 MPa (Düşük)',
+        chippingRisk: 'Yüksek (Dişler kopabilir)',
+        lifespan: '3 – 7 Yıl',
+        features: [
+          { text: 'Çiğneme ile dişler aşınır, kapanış kısalır ve eklem ağrısı yapar', status: 'bad' },
+          { text: 'Gözenekli yapı bakterileri çeker, sararır ve koku yapar', status: 'bad' },
+          { text: 'Sert gıdalarda tek tek dişlerin kopma riski yüksektir', status: 'bad' },
+          { text: 'Sık bakım ve birkaç yılda bir komple değişim gerektirir', status: 'warn' },
+        ],
+      },
+      {
+        title: 'Metal Destekli Porselen (PFM)',
+        sub: 'Döküm Kobalt-Krom Altyapı + Fırınlanmış Porselen',
+        material: 'Katmanlı Feldspatik Porselen',
+        strength: '350 – 450 MPa (Orta)',
+        chippingRisk: 'Orta - Yüksek (Porselen Atması)',
+        lifespan: '8 – 12 Yıl',
+        features: [
+          { text: '4 implant yükünde porselen kırılması (chipping) sık görülür', status: 'bad' },
+          { text: 'Diş eti çekilirse alttaki gri metal çizgi görünür', status: 'bad' },
+          { text: 'Ağır yapısı ağızda kaba ve hantal bir his bırakır', status: 'warn' },
+          { text: 'Ağız içinde kırılan porselenin tamiri mümkün değildir', status: 'bad' },
+        ],
+      },
+    ],
+    materialsTableHeaders: {
+      criteria: 'Karşılaştırma Kriteri',
+      zirconia: 'Monolitik Zirkonyum (Standartımız)',
+      acrylic: 'Hibrit Akrilik (Ucuz Seçenek)',
+      pfm: 'Metal Destekli Porselen (PFM)',
+    },
+    materialsTableRows: [
+      {
+        criteria: 'Kırılma / Çatlama Riski',
+        zirconia: 'Sıfıra Yakın (Yekpare 1200+ MPa)',
+        acrylic: 'Yüksek (Diş kopabilir)',
+        pfm: 'Orta (Porselen atabilir)',
+      },
+      {
+        criteria: 'Çiğneme Aşınması & Boy Kısalması',
+        zirconia: 'Sıfır Aşınma (Sabit Kapanış)',
+        acrylic: '3–5 Yılda aşınır (Çene eklem ağrısı)',
+        pfm: 'Aşınmaya çok dayanıklı',
+      },
+      {
+        criteria: 'Leke & Koku Tutma',
+        zirconia: '100% Gözeneksiz (Sıfır Leke)',
+        acrylic: 'Gözenekli (Kahve/koku emer)',
+        pfm: 'Glaze cila (Leke tutmaz)',
+      },
+      {
+        criteria: 'Diş Eti Biyouyumluluğu',
+        zirconia: 'Antibakteriyel (Eti korur)',
+        acrylic: 'Plak biriktirir (Enfeksiyon riski)',
+        pfm: 'Metal alerjisi riski',
+      },
+      {
+        criteria: 'Doğal Işık Geçirgenliği',
+        zirconia: 'Çok Katmanlı Doğal Canlılık',
+        acrylic: 'Yapay plastik matlığı',
+        pfm: 'Alttan gri metal yansıması',
+      },
+      {
+        criteria: 'Klinik Ömrü',
+        zirconia: 'Ömür Boyu / 25+ Yıl',
+        acrylic: '3 – 7 Yıl',
+        pfm: '8 – 12 Yıl',
+      },
+    ],
     packagesTitle: 'İstanbul All-on-4 İmplant Paket Fiyatları',
     packagesSubtitle: 'Titanyum implantlar, kalıcı monolitik zirkonyum köprü, 5 yıldızlı otel konaklaması ve VIP transfer dahil şeffaf çene başı paket fiyatları.',
     durationLabel: 'Tedavi Süresi:',
@@ -487,6 +816,104 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     introP3And: ' sowie ',
     introP3LinkSinus: 'Sinuslift-Behandlungen',
     introP3Tail: ' in unserer modernen Klinik.',
+        materialsTitle: 'All-on-4 Brückenmaterialien: Warum wir monolithisches Zirkon verwenden',
+    materialsSubtitle: 'Bei All-on-4 tragen 4 Implantate die gesamte Kaukraft des Kiefers (200 bis 600 Newton). Erfahren Sie, warum wir ausschließlich 100% monolithisches Mehrschicht-Zirkon anstelle von billigem Acryl oder brüchiger Keramik einsetzen.',
+    materialsSpecLabels: {
+      material: 'Materialtyp',
+      strength: 'Biegefestigkeit',
+      chipping: 'Chipping-Risiko',
+      lifespan: 'Lebensdauer',
+    },
+    materialsCards: [
+      {
+        title: 'Monolithisches Mehrschicht-Zirkon',
+        sub: '100% solides deutsches Zirkon + gefräster Titansteg',
+        badge: 'MASTER SMILE GOLDSTANDARD',
+        isGold: true,
+        material: '1200+ MPa CAD/CAM Zirkon',
+        strength: '1200 – 1400 MPa (Extrem hoch)',
+        chippingRisk: 'Nahezu Null (Vollmonolithisch)',
+        lifespan: '25+ Jahre / Lebenslang',
+        features: [
+          { text: 'Kein Chipping oder Bruch bei starken Kaukräften', status: 'good' },
+          { text: 'Ultra-glatte Oberfläche verhindert Plaque & Periimplantitis', status: 'good' },
+          { text: 'Porenfrei: 100% fleckenresistent & geruchsneutral', status: 'good' },
+          { text: 'Mehrschicht-Farbverlauf für natürliche Zahnästhetik', status: 'good' },
+        ],
+      },
+      {
+        title: 'Hybrid-Titan-Acryl-Brücke',
+        sub: 'Gussmetallrahmen + Prothesen-Acryl & Kunststoffzähne',
+        material: 'PMMA-Acryl + Metallgerüst',
+        strength: '80 – 120 MPa (Gering)',
+        chippingRisk: 'Hoch (Zähne können abplatzen)',
+        lifespan: '3 – 7 Jahre',
+        features: [
+          { text: 'Abrasiver Abrieb verkürzt Zähne & verursacht Kiefergelenkschmerzen', status: 'bad' },
+          { text: 'Poröses Harz absorbiert Bakterien, Öle & Gerüche', status: 'bad' },
+          { text: 'Einzelne Zähne können sich bei harter Kost lösen', status: 'bad' },
+          { text: 'Erfordert häufige Wartung und Gesamterneuerung', status: 'warn' },
+        ],
+      },
+      {
+        title: 'Metallkeramik (PFM)',
+        sub: 'Guss-Kobalt-Chrom-Gerüst + gebrannte Keramik',
+        material: 'Geschichtete Feldspatkeramik',
+        strength: '350 – 450 MPa (Mittel)',
+        chippingRisk: 'Mäßig bis hoch (Keramikabplatzungen)',
+        lifespan: '8 – 12 Jahre',
+        features: [
+          { text: 'Keramik splittert unter hoher 4-Implantat-Last leicht ab', status: 'bad' },
+          { text: 'Dunkler Metallrand wird sichtbar bei Zahnfleischrückgang', status: 'bad' },
+          { text: 'Hohes Eigengewicht fühlt sich im Mund sperrig an', status: 'warn' },
+          { text: 'Reparatur im Mund bei abgeplatzter Keramik unmöglich', status: 'bad' },
+        ],
+      },
+    ],
+    materialsTableHeaders: {
+      criteria: 'Vergleichskriterium',
+      zirconia: 'Monolithisches Zirkon (Unser Standard)',
+      acrylic: 'Hybrid-Acryl (Budget-Kliniken)',
+      pfm: 'Metallkeramik (PFM)',
+    },
+    materialsTableRows: [
+      {
+        criteria: 'Bruch- & Chipping-Risiko',
+        zirconia: 'Nahezu Null (Solide 1200+ MPa)',
+        acrylic: 'Hoch (Zähne können ausbrechen)',
+        pfm: 'Mittel (Keramikabplatzungen)',
+      },
+      {
+        criteria: 'Kauabrieb & Bissabsenkung',
+        zirconia: 'Kein Abrieb (Stabiler Biss)',
+        acrylic: 'Nutzt sich in 3–5 J. ab (Kiefergelenkschmerz)',
+        pfm: 'Sehr abriebfest',
+      },
+      {
+        criteria: 'Verfärbung & Geruchsaufnahme',
+        zirconia: '100% Porenfrei (Keine Flecken)',
+        acrylic: 'Porös (Nimmt Kaffee & Gerüche an)',
+        pfm: 'Glasiert (Fleckenresistent)',
+      },
+      {
+        criteria: 'Zahnfleisch-Biokompatibilität',
+        zirconia: 'Antibakteriell (Schützt Gewebe)',
+        acrylic: 'Plaquefalle (Infektionsrisiko)',
+        pfm: 'Mögliche Metallsensibilität',
+      },
+      {
+        criteria: 'Natürliche Lichtdurchlässigkeit',
+        zirconia: 'Natürliche Mehrschicht-Vitalität',
+        acrylic: 'Flache Kunststoff-Opazität',
+        pfm: 'Dunkle Metallreflexion',
+      },
+      {
+        criteria: 'Klinische Lebensdauer',
+        zirconia: 'Lebenslang / 25+ Jahre',
+        acrylic: '3 – 7 Jahre',
+        pfm: '8 – 12 Jahre',
+      },
+    ],
     packagesTitle: 'All-on-4 Paketpreise & Kosten in Istanbul',
     packagesSubtitle: 'Transparente Komplettpakete pro Kiefer inklusive Titanimplantaten, Zirkonbrücke, 5-Sterne-Hotel und VIP-Transfers.',
     durationLabel: 'Behandlungsdauer:',
@@ -681,6 +1108,104 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     introP3And: ' oraz ',
     introP3LinkSinus: 'Podniesienie Dna Zatoki (Sinus Lift)',
     introP3Tail: ' w naszej klinice.',
+        materialsTitle: 'Materiały Mostów All-on-4: Dlaczego Wybieramy Monolityczny Cyrkon?',
+    materialsSubtitle: 'W protokole All-on-4 4 implanty przenoszą całą siłę żucia (od 200 do 600 N). Zobacz, dlaczego standardowo wykonujemy mosty w 100% z monolitycznego cyrkonu zamiast nietrwałego akrylu lub metalu.',
+    materialsSpecLabels: {
+      material: 'Typ Materiału',
+      strength: 'Wytrzymałość na Zginanie',
+      chipping: 'Ryzyko Ukruszenia',
+      lifespan: 'Żywotność',
+    },
+    materialsCards: [
+      {
+        title: 'Monolityczny Wielowarstwowy Cyrkon',
+        sub: '100% lity niemiecki cyrkon + frezowana belka tytanowa',
+        badge: 'ZŁOTY STANDARD MASTER SMILE',
+        isGold: true,
+        material: '1200+ MPa CAD/CAM Cyrkon',
+        strength: '1200 – 1400 MPa (Ultra Wysoka)',
+        chippingRisk: 'Prawie Zero (Monolit)',
+        lifespan: '25+ Lat / Dożywotnio',
+        features: [
+          { text: 'Zero ukruszeń i pęknięć przy dużym nacisku żucia', status: 'good' },
+          { text: 'Idealnie gładka powierzchnia zapobiega periimplantitis', status: 'good' },
+          { text: 'Brak porowatości: odporny na plamy i zapachy', status: 'good' },
+          { text: 'Wielowarstwowa przezierność daje w pełni naturalny uśmiech', status: 'good' },
+        ],
+      },
+      {
+        title: 'Most Hybrydowy Tytanowo-Akrylowy',
+        sub: 'Odlewany szkielet metalowy + akryl i zęby kompozytowe',
+        material: 'Akryl PMMA + Metal',
+        strength: '80 – 120 MPa (Niska)',
+        chippingRisk: 'Wysokie (Zęby mogą odpadać)',
+        lifespan: '3 – 7 Lat',
+        features: [
+          { text: 'Ścieranie zębów obniża zgryz i powoduje ból stawu skroniowego', status: 'bad' },
+          { text: 'Porowaty akryl chłonie bakterie, kawę i powoduje nieświeży oddech', status: 'bad' },
+          { text: 'Pojedyncze zęby mogą odpaść przy twardym jedzeniu', status: 'bad' },
+          { text: 'Wymaga częstego serwisu i całkowitej wymiany po paru latach', status: 'warn' },
+        ],
+      },
+      {
+        title: 'Most Metalowo-Ceramiczny (PFM)',
+        sub: 'Szkielet Co-Cr + napalana porcelana',
+        material: 'Warstwowa Porcelana Skaleniowa',
+        strength: '350 – 450 MPa (Średnia)',
+        chippingRisk: 'Umiarkowane do Wysokiego (Odpryski)',
+        lifespan: '8 – 12 Lat',
+        features: [
+          { text: 'Porcelana odpryskuje pod wpływem sił na 4 implantach', status: 'bad' },
+          { text: 'Ciemna linia metalu widoczna przy cofnięciu dziąseł', status: 'bad' },
+          { text: 'Duża waga daje uczucie ciężkości w jamie ustnej', status: 'warn' },
+          { text: 'Naprawa odprysku w ustach jest technicznie niemożliwa', status: 'bad' },
+        ],
+      },
+    ],
+    materialsTableHeaders: {
+      criteria: 'Kryterium Porównania',
+      zirconia: 'Monolityczny Cyrkon (Nasz Standard)',
+      acrylic: 'Hybryda Akrylowa (Tanie Kliniki)',
+      pfm: 'Metaloceramika (PFM)',
+    },
+    materialsTableRows: [
+      {
+        criteria: 'Ryzyko Pęknięcia / Odprysku',
+        zirconia: 'Bliskie Zeru (Lity 1200+ MPa)',
+        acrylic: 'Wysokie (Zęby odpadają)',
+        pfm: 'Umiarkowane (Odpryski ceramiki)',
+      },
+      {
+        criteria: 'Ścieranie i Obniżenie Zgryzu',
+        zirconia: 'Brak Ścierania (Stabilny Zgryz)',
+        acrylic: 'Ściera się w 3–5 l. (Ból stawów)',
+        pfm: 'Bardzo odporny na ścieranie',
+      },
+      {
+        criteria: 'Przebarwienia i Zapachy',
+        zirconia: '100% Bezporowy (Zero Plam)',
+        acrylic: 'Porowaty (Chłonie kawę i zapachy)',
+        pfm: 'Glazurowany (Odporny)',
+      },
+      {
+        criteria: 'Biozgodność z Dziąsłem',
+        zirconia: 'Przeciwbakteryjny (Chroni kość)',
+        acrylic: 'Gromadzi płytkę (Ryzyko infekcji)',
+        pfm: 'Możliwa wrażliwość na metal',
+      },
+      {
+        criteria: 'Naturalna Przezierność',
+        zirconia: 'Wielowarstwowa Naturalność',
+        acrylic: 'Sztuczny matowy plastik',
+        pfm: 'Szary odblask metalu',
+      },
+      {
+        criteria: 'Trwałość Kliniczna',
+        zirconia: 'Dożywotnia / 25+ Lat',
+        acrylic: '3 – 7 Lat',
+        pfm: '8 – 12 Lat',
+      },
+    ],
     packagesTitle: 'Pakiety i Ceny All-on-4 w Stambule',
     packagesSubtitle: 'Przejrzyste pakiety cenowe za łuk zębowy z implantami tytanowymi, mostem cyrkonowym, hotelem 5-gwiazdkowym i transferami VIP.',
     durationLabel: 'Czas leczenia:',
@@ -858,6 +1383,104 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     introP3And: ' e ',
     introP3LinkSinus: 'Elevação de Seio Maxilar (Sinus Lift)',
     introP3Tail: ' na nossa clínica.',
+        materialsTitle: 'Materiais de Prótese All-on-4: Por que Usamos Zircônia Monolítica',
+    materialsSubtitle: 'No All-on-4, 4 implantes suportam toda a força mastigatória da mandíbula (200 a 600 Newtons). Saiba por que produzimos exclusivamente Zircônia Monolítica Multicamadas em vez de acrílico ou metal.',
+    materialsSpecLabels: {
+      material: 'Tipo de Material',
+      strength: 'Resistência Flexural',
+      chipping: 'Risco de Fratura',
+      lifespan: 'Vida Útil',
+    },
+    materialsCards: [
+      {
+        title: 'Zircônia Monolítica Multicamadas',
+        sub: '100% Zircônia Alemã Maciça + Barra de Titânio Fresada',
+        badge: 'PADRÃO OURO MASTER SMILE',
+        isGold: true,
+        material: '1200+ MPa CAD/CAM Zircônia',
+        strength: '1200 – 1400 MPa (Ultra Alta)',
+        chippingRisk: 'Praticamente Zero (Monolítica)',
+        lifespan: '25+ Anos / Toda a Vida',
+        features: [
+          { text: 'Zero lascamento ou fraturas sob forte mastigação', status: 'good' },
+          { text: 'Superfície lisa previne placa bacteriana e Peri-implantite', status: 'good' },
+          { text: 'Não poroso: 100% resistente a manchas e odores', status: 'good' },
+          { text: 'Degradê multicamadas com translucidez natural', status: 'good' },
+        ],
+      },
+      {
+        title: 'Ponte Híbrida Titânio-Acrílico',
+        sub: 'Estrutura Metálica + Resina Acrílica e Dentes Plásticos',
+        material: 'Acrílico PMMA + Estrutura Metálica',
+        strength: '80 – 120 MPa (Baixa)',
+        chippingRisk: 'Alto (Dentes podem soltar)',
+        lifespan: '3 – 7 Anos',
+        features: [
+          { text: 'Desgaste abrasivo encurta dentes e causa dores articulares', status: 'bad' },
+          { text: 'Resina porosa absorve bactérias, café e odores', status: 'bad' },
+          { text: 'Dentes individuais podem se soltar com alimentos duros', status: 'bad' },
+          { text: 'Requer manutenção constante e substituição completa', status: 'warn' },
+        ],
+      },
+      {
+        title: 'Metalocerâmica (PFM)',
+        sub: 'Estrutura de Cobalto-Cromo + Porcelana Fundida',
+        material: 'Porcelana Feldspática em Camadas',
+        strength: '350 – 450 MPa (Média)',
+        chippingRisk: 'Moderado a Alto (Lascamento)',
+        lifespan: '8 – 12 Anos',
+        features: [
+          { text: 'A porcelana lasca com frequência sob forças de 4 implantes', status: 'bad' },
+          { text: 'Borda metálica escura visível se a gengiva retrair', status: 'bad' },
+          { text: 'Peso elevado causa sensação pesada na boca', status: 'warn' },
+          { text: 'Reparo de porcelana lascada na boca é inviável', status: 'bad' },
+        ],
+      },
+    ],
+    materialsTableHeaders: {
+      criteria: 'Critério de Comparação',
+      zirconia: 'Zircônia Monolítica (Nosso Padrão)',
+      acrylic: 'Híbrido Acrílico (Opção Econômica)',
+      pfm: 'Metalocerâmica (PFM)',
+    },
+    materialsTableRows: [
+      {
+        criteria: 'Risco de Fratura / Lascamento',
+        zirconia: 'Próximo de Zero (Sólido 1200+ MPa)',
+        acrylic: 'Alto (Dentes podem descolar)',
+        pfm: 'Moderado (Porcelana lasca)',
+      },
+      {
+        criteria: 'Desgaste Mastigatório e Oclusão',
+        zirconia: 'Zero Desgaste (Mordida Estável)',
+        acrylic: 'Desgasta em 3–5 anos (Dor na ATM)',
+        pfm: 'Altamente resistente',
+      },
+      {
+        criteria: 'Manchas e Retenção de Odores',
+        zirconia: '100% Não Poroso (Zero Manchas)',
+        acrylic: 'Poroso (Absorve café e odores)',
+        pfm: 'Esmaltado (Resiste a manchas)',
+      },
+      {
+        criteria: 'Biocompatibilidade Gengival',
+        zirconia: 'Antibacteriano (Protege a gengiva)',
+        acrylic: 'Retém placa (Risco de infecção)',
+        pfm: 'Possível sensibilidade ao metal',
+      },
+      {
+        criteria: 'Translucidez e Estética',
+        zirconia: 'Vitalidade Natural Multicamadas',
+        acrylic: 'Opacidade plástica artificial',
+        pfm: 'Reflexo metálico acinzentado',
+      },
+      {
+        criteria: 'Durabilidade Clínica',
+        zirconia: 'Toda a Vida / 25+ Anos',
+        acrylic: '3 – 7 Anos',
+        pfm: '8 – 12 Anos',
+      },
+    ],
     packagesTitle: 'Preços e Pacotes All-on-4 em Istambul',
     packagesSubtitle: 'Preços com tudo incluído por arcada com implantes de titânio, ponte definitiva de zircônia, hotel 5 estrelas e transfers VIP.',
     durationLabel: 'Duração do Tratamento:',
@@ -1034,6 +1657,104 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     introP3And: ' y ',
     introP3LinkSinus: 'Elevación de Seno Maxilar',
     introP3Tail: ' en nuestra clínica.',
+    materialsTitle: 'Materiales de Prótesis All-on-4: Por qué Usamos Circonio Monolítico',
+    materialsSubtitle: 'En All-on-4, 4 implantes soportan toda la fuerza masticatoria de la mandíbula (200 a 600 Newtons). Descubra por qué diseñamos exclusivamente Circonio Monolítico Multicapa en lugar de acrílico o metal.',
+    materialsSpecLabels: {
+      material: 'Tipo de Material',
+      strength: 'Resistencia a la Flexión',
+      chipping: 'Riesgo de Fractura',
+      lifespan: 'Vida Útil',
+    },
+    materialsCards: [
+      {
+        title: 'Circonio Monolítico Multicapa',
+        sub: '100% Circonio Alemán Macizo + Barra de Titanio Fresada',
+        badge: 'ESTÁNDAR DE ORO MASTER SMILE',
+        isGold: true,
+        material: '1200+ MPa CAD/CAM Circonio',
+        strength: '1200 – 1400 MPa (Ultra Alta)',
+        chippingRisk: 'Casi Cero (Monolítico Sólido)',
+        lifespan: '25+ Años / De por Vida',
+        features: [
+          { text: 'Cero fracturas o astillamiento bajo fuerte masticación', status: 'good' },
+          { text: 'Superficie ultra lisa previene placa y Periimplantitis', status: 'good' },
+          { text: 'No poroso: 100% resistente a manchas y malos olores', status: 'good' },
+          { text: 'Gradiente multicapa para una estética natural translúcida', status: 'good' },
+        ],
+      },
+      {
+        title: 'Puente Híbrido Titanio-Acrílico',
+        sub: 'Estructura Metálica + Resina Acrílica y Dientes Plásticos',
+        material: 'Acrílico PMMA + Estructura Metálica',
+        strength: '80 – 120 MPa (Baja)',
+        chippingRisk: 'Alto (Dientes pueden desprenderse)',
+        lifespan: '3 – 7 Años',
+        features: [
+          { text: 'Desgaste abrasivo acorta dientes y causa dolor articular', status: 'bad' },
+          { text: 'Resina porosa absorbe bacterias, café y olores', status: 'bad' },
+          { text: 'Dientes individuales pueden soltarse con alimentos duros', status: 'bad' },
+          { text: 'Requiere mantenimiento frecuente y reemplazo total', status: 'warn' },
+        ],
+      },
+      {
+        title: 'Metal-Porcelana (PFM)',
+        sub: 'Estructura Cobalto-Cromo + Cerámica Horneada',
+        material: 'Porcelana Feldespática en Capas',
+        strength: '350 – 450 MPa (Media)',
+        chippingRisk: 'Moderado a Alto (Astillamiento)',
+        lifespan: '8 – 12 Años',
+        features: [
+          { text: 'La porcelana se astilla bajo las intensas fuerzas de 4 implantes', status: 'bad' },
+          { text: 'Margen metálico oscuro visible si la encía se retrae', status: 'bad' },
+          { text: 'Peso elevado causa sensación pesada en la boca', status: 'warn' },
+          { text: 'Reparar porcelana astillada en boca es inviable', status: 'bad' },
+        ],
+      },
+    ],
+    materialsTableHeaders: {
+      criteria: 'Criterio de Comparación',
+      zirconia: 'Circonio Monolítico (Nuestro Estándar)',
+      acrylic: 'Híbrido Acrílico (Opción Económica)',
+      pfm: 'Metal-Porcelana (PFM)',
+    },
+    materialsTableRows: [
+      {
+        criteria: 'Riesgo de Fractura / Astillamiento',
+        zirconia: 'Casi Cero (Sólido 1200+ MPa)',
+        acrylic: 'Alto (Dientes pueden soltarse)',
+        pfm: 'Moderado (Porcelana se astilla)',
+      },
+      {
+        criteria: 'Desgaste y Pérdida de Altura Oclusal',
+        zirconia: 'Cero Desgaste (Mordida Estable)',
+        acrylic: 'Se desgasta en 3–5 años (Dolor ATM)',
+        pfm: 'Muy resistente al desgaste',
+      },
+      {
+        criteria: 'Manchas y Absorción de Olores',
+        zirconia: '100% No Poroso (Cero Manchas)',
+        acrylic: 'Poroso (Absorbe café y olores)',
+        pfm: 'Esmaltado (Resiste manchas)',
+      },
+      {
+        criteria: 'Biocompatibilidad con la Encía',
+        zirconia: 'Antibacteriano (Protege la encía)',
+        acrylic: 'Retiene placa (Riesgo de infección)',
+        pfm: 'Posible sensibilidad al metal',
+      },
+      {
+        criteria: 'Translucidez y Estética Natural',
+        zirconia: 'Vitalidad Natural Multicapa',
+        acrylic: 'Opacidad plástica artificial',
+        pfm: 'Reflejo metálico grisáceo',
+      },
+      {
+        criteria: 'Durabilidad Clínica',
+        zirconia: 'De por Vida / 25+ Años',
+        acrylic: '3 – 7 Años',
+        pfm: '8 – 12 Años',
+      },
+    ],
     packagesTitle: 'Precios y Paquetes All-on-4 en Estambul',
     packagesSubtitle: 'Precios transparentes por arcada con implantes de titanio, puente de circonio definitivo, hotel de 5 estrellas y traslados VIP.',
     durationLabel: 'Duración del Tratamiento:',
@@ -1210,6 +1931,104 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     introP3And: ' и ',
     introP3LinkSinus: 'Синус-лифтинг',
     introP3Tail: ' в нашей клинике.',
+        materialsTitle: 'Материалы Постоянных Мостов All-on-4: Почему Мы Используем Монолитный Цирконий',
+    materialsSubtitle: 'В протоколе All-on-4 4 импланта несут всю жевательную нагрузку челюсти (от 200 до 600 Н). Узнайте, почему мы изготавливаем мосты исключительно из 100% монолитного циркония, а не из акрила или металлокерамики.',
+    materialsSpecLabels: {
+      material: 'Тип Материала',
+      strength: 'Прочность на Изгиб',
+      chipping: 'Риск Сколов',
+      lifespan: 'Срок Службы',
+    },
+    materialsCards: [
+      {
+        title: 'Монолитный Многослойный Цирконий',
+        sub: '100% Цельный Немецкий Цирконий + Фрезерованная Титановая Балка',
+        badge: 'ЗОЛОТОЙ СТАНДАРТ MASTER SMILE',
+        isGold: true,
+        material: '1200+ МПа CAD/CAM Цирконий',
+        strength: '1200 – 1400 МПа (Сверхвысокая)',
+        chippingRisk: 'Близок к нулю (Монолит)',
+        lifespan: '25+ Лет / Пожизненно',
+        features: [
+          { text: 'Ноль сколов и переломов при интенсивном жевании', status: 'good' },
+          { text: 'Гладкая поверхность препятствует налёту и периимплантиту', status: 'good' },
+          { text: 'Непористая структура: не окрашивается и не впитывает запахи', status: 'good' },
+          { text: 'Многослойный градиент создаёт естественную прозрачность зубов', status: 'good' },
+        ],
+      },
+      {
+        title: 'Гибридный Титано-Акриловый Мост',
+        sub: 'Металлический Каркас + Протезный Акрил и Пластмассовые Зубы',
+        material: 'PMMA Акрил + Металл',
+        strength: '80 – 120 МПа (Низкая)',
+        chippingRisk: 'Высокий (Зубы могут отклеиваться)',
+        lifespan: '3 – 7 Лет',
+        features: [
+          { text: 'Истирание зубов снижает прикус и вызывает боли в суставе', status: 'bad' },
+          { text: 'Пористый акрил впитывает бактерии, красители и запахи', status: 'bad' },
+          { text: 'Отдельные зубы могут отламываться при твёрдой пище', status: 'bad' },
+          { text: 'Требует частого ремонта и полной замены через несколько лет', status: 'warn' },
+        ],
+      },
+      {
+        title: 'Металлокерамика (PFM)',
+        sub: 'Кобальт-Хромовый Каркас + Напечённая Керамика',
+        material: 'Послойная Полевошпатная Керамика',
+        strength: '350 – 450 МПа (Средняя)',
+        chippingRisk: 'От умеренного до высокого (Сколы)',
+        lifespan: '8 – 12 Лет',
+        features: [
+          { text: 'Керамика часто скалывается под давлением на 4 имплантах', status: 'bad' },
+          { text: 'Тёмный край металла становится виден при убыли десны', status: 'bad' },
+          { text: 'Большой вес создаёт ощущение тяжести во рту', status: 'warn' },
+          { text: 'Ремонт сколотой керамики прямо во рту невозможен', status: 'bad' },
+        ],
+      },
+    ],
+    materialsTableHeaders: {
+      criteria: 'Критерий Сравнения',
+      zirconia: 'Монолитный Цирконий (Наш Стандарт)',
+      acrylic: 'Гибридный Акрил (Эконом-Вариант)',
+      pfm: 'Металлокерамика (PFM)',
+    },
+    materialsTableRows: [
+      {
+        criteria: 'Риск Сколов / Переломов',
+        zirconia: 'Близок к нулю (Монолит 1200+ МПа)',
+        acrylic: 'Высокий (Зубы отпадают)',
+        pfm: 'Умеренный (Сколы керамики)',
+      },
+      {
+        criteria: 'Истирание и Снижение Прикуса',
+        zirconia: 'Ноль Истирания (Стабильный Прикус)',
+        acrylic: 'Стирается за 3–5 л. (Боль в ВНЧС)',
+        pfm: 'Высокая устойчивость к истиранию',
+      },
+      {
+        criteria: 'Окрашивание и Запахи',
+        zirconia: '100% Без Пор (Ноль Пятен)',
+        acrylic: 'Пористый (Впитывает кофе и запахи)',
+        pfm: 'Глазурованный (Не красится)',
+      },
+      {
+        criteria: 'Биосовместимость с Десной',
+        zirconia: 'Антибактериальный (Защищает десну)',
+        acrylic: 'Скапливает налёт (Риск инфекции)',
+        pfm: 'Возможная реакция на металл',
+      },
+      {
+        criteria: 'Естественная Прозрачность',
+        zirconia: 'Натуральная Многослойность',
+        acrylic: 'Искусственная матовость пластика',
+        pfm: 'Серый отблеск металла',
+      },
+      {
+        criteria: 'Клинический Срок Службы',
+        zirconia: 'Пожизненно / 25+ Лет',
+        acrylic: '3 – 7 Лет',
+        pfm: '8 – 12 Лет',
+      },
+    ],
     packagesTitle: 'Цены и пакеты All-on-4 в Стамбуле',
     packagesSubtitle: 'Прозрачные пакетные цены за челюсть «под ключ» с титановыми имплантами, циркониевым мостом, отелем 5* и VIP-трансфером.',
     durationLabel: 'Срок лечения:',
@@ -1425,7 +2244,112 @@ export default function AllOnFourImplantDetailView() {
         </div>
       </section>
 
-      {/* 2. TRANSPARENT PACKAGES & DYNAMIC CURRENCY SWITCHER */}
+      {/* 2. ALL-ON-4 PERMANENT BRIDGE MATERIALS COMPARISON */}
+      <section aria-labelledby="allon4-materials-heading" className={styles.materialsSection}>
+        <div className={styles.container}>
+          <div className={styles.materialsHeader}>
+            <h2 id="allon4-materials-heading" className={styles.materialsTitle}>
+              {d.materialsTitle}
+            </h2>
+            <p className={styles.materialsSubtitle}>{d.materialsSubtitle}</p>
+          </div>
+
+          {/* 3 Material Cards */}
+          <div className={styles.materialsGrid}>
+            {d.materialsCards.map((card, cIdx) => (
+              <div
+                key={cIdx}
+                className={`${styles.materialCard} ${card.isGold ? styles.materialCardGold : ''}`}
+              >
+                {card.badge && (
+                  <span className={styles.materialStandardBadge}>{card.badge}</span>
+                )}
+
+                <div>
+                  <h3 className={styles.materialCardTitle}>{card.title}</h3>
+                  <span className={styles.materialCardSub}>{card.sub}</span>
+
+                  <div className={styles.materialSpecsBox}>
+                    <div className={styles.materialSpecRow}>
+                      <span className={styles.materialSpecLabel}>{d.materialsSpecLabels.material}</span>
+                      <span className={card.isGold ? styles.materialSpecValGold : styles.materialSpecVal}>
+                        {card.material}
+                      </span>
+                    </div>
+                    <div className={styles.materialSpecRow}>
+                      <span className={styles.materialSpecLabel}>{d.materialsSpecLabels.strength}</span>
+                      <span className={card.isGold ? styles.materialSpecValGold : styles.materialSpecVal}>
+                        {card.strength}
+                      </span>
+                    </div>
+                    <div className={styles.materialSpecRow}>
+                      <span className={styles.materialSpecLabel}>{d.materialsSpecLabels.chipping}</span>
+                      <span className={card.isGold ? styles.materialSpecValGold : styles.materialSpecVal}>
+                        {card.chippingRisk}
+                      </span>
+                    </div>
+                    <div className={styles.materialSpecRow}>
+                      <span className={styles.materialSpecLabel}>{d.materialsSpecLabels.lifespan}</span>
+                      <span className={card.isGold ? styles.materialSpecValGold : styles.materialSpecVal}>
+                        {card.lifespan}
+                      </span>
+                    </div>
+                  </div>
+
+                  <ul className={styles.materialList}>
+                    {card.features.map((feat, fIdx) => (
+                      <li key={fIdx} className={styles.materialListItem}>
+                        <span
+                          className={
+                            feat.status === 'good'
+                              ? styles.matCheck
+                              : feat.status === 'bad'
+                              ? styles.matCross
+                              : styles.matWarn
+                          }
+                        >
+                          {feat.status === 'good' ? '•' : feat.status === 'bad' ? '—' : '–'}
+                        </span>
+                        <span>{feat.text}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Comparison Matrix Table */}
+          <div className={styles.materialsTableWrap}>
+            <table className={styles.materialsTable}>
+              <thead>
+                <tr>
+                  <th className={styles.materialsTh}>{d.materialsTableHeaders.criteria}</th>
+                  <th className={styles.materialsThGold}>{d.materialsTableHeaders.zirconia}</th>
+                  <th className={styles.materialsTh}>{d.materialsTableHeaders.acrylic}</th>
+                  <th className={styles.materialsTh}>{d.materialsTableHeaders.pfm}</th>
+                </tr>
+              </thead>
+              <tbody>
+                {d.materialsTableRows.map((row, rIdx) => (
+                  <tr key={rIdx}>
+                    <td className={styles.materialsTd}>
+                      <strong>{row.criteria}</strong>
+                    </td>
+                    <td className={`${styles.materialsTd} ${styles.materialsTdHighlight}`}>
+                      {row.zirconia}
+                    </td>
+                    <td className={styles.materialsTd}>{row.acrylic}</td>
+                    <td className={styles.materialsTd}>{row.pfm}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      {/* 3. TRANSPARENT PACKAGES & DYNAMIC CURRENCY SWITCHER */}
       <section aria-labelledby="allon4-packages-heading" className={styles.packagesSection}>
         <div className={styles.container}>
           <div className={styles.packagesHeader}>
