@@ -31,17 +31,16 @@ interface FeaturedFlagshipItem extends DisciplineItem {
   highlights: string[];
 }
 
-interface FilterPill {
+interface FilterNavTab {
   id: FilterCategory;
   label: string;
-  icon: string;
 }
 
 interface HubShowcaseDictionary {
   badge: string;
   heading: string;
   subText: string;
-  filterPills: FilterPill[];
+  filterTabs: FilterNavTab[];
   featured: FeaturedFlagshipItem;
   gridItems: DisciplineItem[];
 }
@@ -52,12 +51,12 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
     heading: 'Explore Our World-Class Dental Treatments in Istanbul',
     subText:
       'From full-arch titanium dental implants and Swiss Ivoclar E-Max veneers to microscopic endodontics, discover our 7 core medical specialties designed for international patients.',
-    filterPills: [
-      { id: 'all', label: 'All 7 Dental Disciplines', icon: '🏛️' },
-      { id: 'missing', label: 'Missing Teeth & Chewing', icon: '🦷' },
-      { id: 'aesthetic', label: 'Smile Makeover & Aesthetics', icon: '✨' },
-      { id: 'full_arch', label: 'Total Tooth Loss & Full-Arch', icon: '💎' },
-      { id: 'tooth_pain', label: 'Tooth Pain, Decay & Preservation', icon: '🩺' },
+    filterTabs: [
+      { id: 'all', label: 'All Disciplines (7)' },
+      { id: 'missing', label: 'Missing Teeth' },
+      { id: 'aesthetic', label: 'Smile Design' },
+      { id: 'full_arch', label: 'Full-Arch Restorations' },
+      { id: 'tooth_pain', label: 'General & Therapeutic' },
     ],
     featured: {
       id: 'implants',
@@ -201,12 +200,12 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
     heading: 'İstanbul’da Dünya Standartlarında Diş Tedavilerimizi Keşfedin',
     subText:
       'Tam çene titanyum implantlardan İsviçre Ivoclar E-Max laminalara, mikroskobik kanal tedavisinden Hollywood Smile gülüş tasarımına kadar tüm uzmanlık alanlarımız.',
-    filterPills: [
-      { id: 'all', label: 'Tüm 7 Tedavi Disiplini', icon: '🏛️' },
-      { id: 'missing', label: 'Eksik Diş & Çiğneme Tedavileri', icon: '🦷' },
-      { id: 'aesthetic', label: 'Gülüş Tasarımı & Estetik', icon: '✨' },
-      { id: 'full_arch', label: 'Tam Dişsizlik & Çene Yenileme', icon: '💎' },
-      { id: 'tooth_pain', label: 'Diş Ağrısı, Çürük & Kurtarma', icon: '🩺' },
+    filterTabs: [
+      { id: 'all', label: 'Tüm Disiplinler (7)' },
+      { id: 'missing', label: 'Eksik Diş Tedavileri' },
+      { id: 'aesthetic', label: 'Gülüş Tasarımı & Estetik' },
+      { id: 'full_arch', label: 'Tam Çene Tedavileri' },
+      { id: 'tooth_pain', label: 'Genel & Koruyucu Bakım' },
     ],
     featured: {
       id: 'implants',
@@ -350,12 +349,12 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
     heading: 'Entdecken Sie unsere erstklassigen Zahnbehandlungen in Istanbul',
     subText:
       'Von Zahnimplantaten aus Titan und Schweizer E-Max Veneers bis hin zu mikroskopischer Endodontie und Hollywood Smile Makeover.',
-    filterPills: [
-      { id: 'all', label: 'Alle 7 Fachdisziplinen', icon: '🏛️' },
-      { id: 'missing', label: 'Fehlende Zähne & Kaukraft', icon: '🦷' },
-      { id: 'aesthetic', label: 'Smile Makeover & Ästhetik', icon: '✨' },
-      { id: 'full_arch', label: 'Zahnloser Kiefer & Feste Zähne', icon: '💎' },
-      { id: 'tooth_pain', label: 'Zahnschmerzen, Karies & Erhalt', icon: '🩺' },
+    filterTabs: [
+      { id: 'all', label: 'Alle Disziplinen (7)' },
+      { id: 'missing', label: 'Zahnersatz & Lücken' },
+      { id: 'aesthetic', label: 'Smile Design & Ästhetik' },
+      { id: 'full_arch', label: 'Feste Zähne & Kiefer' },
+      { id: 'tooth_pain', label: 'Allgemein & Zahnerhalt' },
     ],
     featured: {
       id: 'implants',
@@ -499,12 +498,12 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
     heading: 'Odkryj Nasze Zabiegi Stomatologiczne w Stambule',
     subText:
       'Od implantów tytanowych i szwajcarskich licówek E-Max po mikroskopową endodoncję i metamorfozę Hollywood Smile.',
-    filterPills: [
-      { id: 'all', label: 'Wszystkie 7 Dziedzin', icon: '🏛️' },
-      { id: 'missing', label: 'Braki Zębowe i Gryzienie', icon: '🦷' },
-      { id: 'aesthetic', label: 'Projektowanie Uśmiechu i Estetyka', icon: '✨' },
-      { id: 'full_arch', label: 'Całkowite Bezzębie i Całe Łuki', icon: '💎' },
-      { id: 'tooth_pain', label: 'Ból Zęba, Próchnica i Leczenie', icon: '🩺' },
+    filterTabs: [
+      { id: 'all', label: 'Wszystkie Dziedziny (7)' },
+      { id: 'missing', label: 'Braki Zębowe' },
+      { id: 'aesthetic', label: 'Projektowanie Uśmiechu' },
+      { id: 'full_arch', label: 'Całe Łuki Zębowe' },
+      { id: 'tooth_pain', label: 'Stomatologia Ogólna' },
     ],
     featured: {
       id: 'implants',
@@ -648,12 +647,12 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
     heading: 'Explore Nossos Tratamentos Odontológicos em Istambul',
     subText:
       'De implantes em titânio e facetas suíças E-Max a endodontia microscópica e transformações Hollywood Smile.',
-    filterPills: [
-      { id: 'all', label: 'Todas as 7 Disciplinas', icon: '🏛️' },
-      { id: 'missing', label: 'Dentes Ausentes & Mastigação', icon: '🦷' },
-      { id: 'aesthetic', label: 'Design do Sorriso & Estética', icon: '✨' },
-      { id: 'full_arch', label: 'Arcada Total & Edentulismo', icon: '💎' },
-      { id: 'tooth_pain', label: 'Dor de Dente, Canal & Cuidados', icon: '🩺' },
+    filterTabs: [
+      { id: 'all', label: 'Todas as Especialidades (7)' },
+      { id: 'missing', label: 'Dentes Ausentes' },
+      { id: 'aesthetic', label: 'Design do Sorriso' },
+      { id: 'full_arch', label: 'Reabilitação Total' },
+      { id: 'tooth_pain', label: 'Clínica Geral & Cuidados' },
     ],
     featured: {
       id: 'implants',
@@ -797,12 +796,12 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
     heading: 'Descubra Nuestros Tratamientos Dentales en Estambul',
     subText:
       'Desde implantes de titanio y carillas suizas E-Max hasta endodoncia microscópica y transformaciones Hollywood Smile.',
-    filterPills: [
-      { id: 'all', label: 'Las 7 Especialidades', icon: '🏛️' },
-      { id: 'missing', label: 'Pérdida Dental & Masticación', icon: '🦷' },
-      { id: 'aesthetic', label: 'Diseño de Sonrisa & Estética', icon: '✨' },
-      { id: 'full_arch', label: 'Arcada Completa & Edentulismo', icon: '💎' },
-      { id: 'tooth_pain', label: 'Dolor Dental, Caries & Endodoncia', icon: '🩺' },
+    filterTabs: [
+      { id: 'all', label: 'Todas las Especialidades (7)' },
+      { id: 'missing', label: 'Pérdida Dental' },
+      { id: 'aesthetic', label: 'Diseño de Sonrisa' },
+      { id: 'full_arch', label: 'Reconstrucción Total' },
+      { id: 'tooth_pain', label: 'Odontología General' },
     ],
     featured: {
       id: 'implants',
@@ -946,12 +945,12 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
     heading: 'Исследуйте наши передовые стоматологические процедуры в Стамбуле',
     subText:
       'От титановых имплантов и швейцарских виниров E-Max до лечения каналов под микроскопом и Голливудской улыбки.',
-    filterPills: [
-      { id: 'all', label: 'Все 7 направлений', icon: '🏛️' },
-      { id: 'missing', label: 'Отсутствие зубов & Жевательная функция', icon: '🦷' },
-      { id: 'aesthetic', label: 'Дизайн улыбки & Эстетика', icon: '✨' },
-      { id: 'full_arch', label: 'Полная адентия & Восстановление челюсти', icon: '💎' },
-      { id: 'tooth_pain', label: 'Боль, кариес & Лечение каналов', icon: '🩺' },
+    filterTabs: [
+      { id: 'all', label: 'Все направления (7)' },
+      { id: 'missing', label: 'Отсутствие зубов' },
+      { id: 'aesthetic', label: 'Дизайн улыбки' },
+      { id: 'full_arch', label: 'Полная адентия' },
+      { id: 'tooth_pain', label: 'Терапия и каналы' },
     ],
     featured: {
       id: 'implants',
@@ -1117,34 +1116,34 @@ export default function TreatmentsHubDisciplineShowcase() {
           <p className={styles.subText}>{data.subText}</p>
         </div>
 
-        {/* 0. INTERACTIVE SYMPTOM & PROBLEM FILTER PILLS */}
-        <div className={styles.filterPillsContainer} role="tablist">
-          {data.filterPills.map((pill) => {
-            const isActive = selectedFilter === pill.id;
+        {/* 0. REFINED SEGMENTED FILTER BAR (ZERO EMOJIS) */}
+        <nav className={styles.filterNav} aria-label="Treatment Category Filters">
+          {data.filterTabs.map((tab) => {
+            const isActive = selectedFilter === tab.id;
             return (
               <button
-                key={pill.id}
+                key={tab.id}
                 type="button"
-                role="tab"
-                aria-selected={isActive}
-                onClick={() => setSelectedFilter(pill.id)}
-                className={`${styles.filterPill} ${
-                  isActive ? styles.filterPillActive : ''
+                aria-pressed={isActive}
+                onClick={() => setSelectedFilter(tab.id)}
+                className={`${styles.filterBtn} ${
+                  isActive ? styles.filterBtnActive : ''
                 }`}
               >
-                <span>{pill.icon}</span>
-                <span>{pill.label}</span>
+                {tab.label}
               </button>
             );
           })}
-        </div>
+        </nav>
 
         {/* 1. TOP FULL-WIDTH FLAGSHIP IMPLANT CARD */}
         {showFeatured && (
           <article className={styles.featuredCard}>
             <div className={styles.featuredImageWrap}>
-              <span className={styles.featuredTagBadge}>{f.tag}</span>
-              <span className={styles.featuredDurationBadge}>{f.duration}</span>
+              <div className={styles.featuredMetaBadges}>
+                <span className={styles.featuredTagBadge}>{f.tag}</span>
+                <span className={styles.featuredDurationBadge}>{f.duration}</span>
+              </div>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={f.img}
@@ -1156,30 +1155,22 @@ export default function TreatmentsHubDisciplineShowcase() {
 
             <div className={styles.featuredContent}>
               <div>
-                <span className={styles.featuredEyebrow}>
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                  </svg>
-                  {f.eyebrow}
-                </span>
+                <span className={styles.featuredEyebrow}>{f.eyebrow}</span>
                 <h3 className={styles.featuredTitle}>{f.title}</h3>
                 <p className={styles.featuredDesc}>{f.desc}</p>
 
-                {/* Gold Feature Checklist */}
-                <ul className={styles.featuredChecklist}>
+                {/* Key Specifications */}
+                <div className={styles.specGrid}>
                   {f.highlights.map((h, hIdx) => (
-                    <li key={hIdx} className={styles.checkItem}>
-                      <span className={styles.checkIcon}>✓</span>
+                    <div key={hIdx} className={styles.specItem}>
+                      <span className={styles.specBullet} />
                       <span>{h}</span>
-                    </li>
+                    </div>
                   ))}
-                </ul>
+                </div>
 
                 {/* Sublinks */}
                 <div className={styles.subLinksTitle}>
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z" />
-                  </svg>
                   <span>{f.popularTechniquesLabel}</span>
                 </div>
 
@@ -1192,11 +1183,9 @@ export default function TreatmentsHubDisciplineShowcase() {
                 </ul>
               </div>
 
-              <div className={styles.actionRow}>
-                <Link href={f.href} className={styles.featuredBtn}>
-                  <span>{f.btnText}</span>
-                </Link>
-              </div>
+              <Link href={f.href} className={styles.featuredBtn}>
+                <span>{f.btnText}</span>
+              </Link>
             </div>
           </article>
         )}
@@ -1222,9 +1211,6 @@ export default function TreatmentsHubDisciplineShowcase() {
                 <p className={styles.cardDesc}>{item.desc}</p>
 
                 <div className={styles.subLinksTitle}>
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z" />
-                  </svg>
                   <span>{item.popularTechniquesLabel}</span>
                 </div>
 
