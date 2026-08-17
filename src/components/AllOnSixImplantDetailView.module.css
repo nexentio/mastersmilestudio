@@ -950,9 +950,6 @@
    RESPONSIVE BREAKPOINTS
    ========================================================================= */
 @media (max-width: 1024px) {
-  .processGrid {
-    grid-template-columns: 1fr;
-  }
   .compareDecisionBox {
     grid-template-columns: 1fr;
   }
@@ -989,6 +986,53 @@
   .costSubtitle {
     font-size: 0.9rem;
     line-height: 1.55;
+  }
+
+  /* 3-Phase Surgical Cards: Horizontal Carousel with Peek Effect */
+  .processGrid {
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 0 1.5rem;
+    gap: 1rem;
+    padding: 0.5rem 1.5rem 1.5rem 1.5rem;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    scrollbar-width: none;
+  }
+
+  .processGrid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .processCard {
+    flex: 0 0 82%;
+    max-width: 82%;
+    scroll-snap-align: start;
+    padding: 1.65rem 1.35rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  }
+
+  .processCardTitle {
+    font-size: 1.12rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .processCardText {
+    font-size: 0.88rem;
+    line-height: 1.6;
+    margin-bottom: 1.15rem;
+  }
+
+  .processCardSpecs {
+    padding: 0.75rem 0.85rem;
+  }
+
+  .processSpecItem {
+    font-size: 0.82rem;
+    padding: 0.3rem 0;
   }
 
   /* Compact Mobile Tables */
@@ -1079,6 +1123,12 @@
 }
 
 @media (max-width: 480px) {
+  .processCard {
+    flex: 0 0 84%;
+    max-width: 84%;
+    padding: 1.4rem 1.15rem;
+  }
+
   .compareTable,
   .materialsTable,
   .costTable {
