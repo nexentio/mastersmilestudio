@@ -225,6 +225,18 @@ export default async function HierarchicalTreatmentPage({ params }: PageProps) {
     heroBadge = locale === 'tr' ? 'DİŞ KAPLAMA & LAMİNA' : 'DENTAL VENEERS';
     heroTitle = locale === 'tr' ? 'İstanbul Diş Kaplama & Lamina Tedavisi' : 'Dental Veneers & Laminates in Istanbul';
     heroSubtitle = locale === 'tr' ? 'İsviçre menşeli Ivoclar E-Max porselen laminalarla 4-6 günde kusursuz Hollywood gülüşü.' : 'Transform your smile with Swiss Ivoclar E-Max porcelain veneers and 5-star VIP care in Istanbul.';
+  } else if (isAllOnFour) {
+    heroBadge = locale === 'tr' ? 'ALL-ON-4 İMPLANT' : 'ALL-ON-4 DENTAL IMPLANTS';
+    heroTitle = locale === 'tr' ? 'İstanbul All-on-4 Diş İmplantı Tedavisi' : 'All-on-4 Dental Implants in Istanbul Turkey';
+    heroSubtitle = locale === 'tr' ? 'Kemik erimesi olan vakalarda sinüs liftinge gerek kalmadan 4 açılı implantla 24 saatte sabit dişler.' : 'Same-day fixed full-arch teeth with 4 angled titanium implants without bone grafting in Istanbul.';
+  } else if (isAllOnSix) {
+    heroBadge = locale === 'tr' ? 'ALL-ON-6 İMPLANT' : 'ALL-ON-6 DENTAL IMPLANTS';
+    heroTitle = locale === 'tr' ? 'İstanbul All-on-6 Diş İmplantı Tedavisi' : 'All-on-6 Dental Implants in Istanbul Turkey';
+    heroSubtitle = locale === 'tr' ? 'Tek çenede 6 implant desteği ile 14 dişlik eksiksiz çiğneme arkı ve 1200+ MPa Alman Zirkonyum köprü.' : 'Full-arch 14-tooth restoration with 6 titanium implants per jaw and 1200+ MPa Monolithic German Zirconia bridges.';
+  } else if (isImmediate) {
+    heroBadge = locale === 'tr' ? 'AYNI GÜN İMPLANT' : 'IMMEDIATE DENTAL IMPLANTS';
+    heroTitle = locale === 'tr' ? 'İstanbul Aynı Gün İmplant Tedavisi (Same-Day Teeth)' : 'Immediate Dental Implants in Istanbul (Same-Day Teeth)';
+    heroSubtitle = locale === 'tr' ? 'Diş çekimi ile aynı seansta yüksek tutuculuklu implant yerleşimi ve 24 saat içinde sabit geçici kuron.' : 'Same-day tooth extraction, high-torque titanium implant placement, and fixed aesthetic teeth in 24 hours in Istanbul.';
   } else if (isDentalImplantsCategory) {
     heroBadge = locale === 'tr' ? 'DİŞ İMPLANTLARI' : 'DENTAL IMPLANTS';
     heroTitle = locale === 'tr' ? 'İstanbul Diş İmplantı Tedavisi & Fiyatları' : 'Dental Implants Cost (Price) Istanbul Turkey';

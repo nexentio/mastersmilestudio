@@ -1,4 +1,4 @@
-/* CSS Module for AllOnFourImplantDetailView with Full 15-Part Luxury Standard */
+/* CSS Module for ImmediateImplantDetailView with Full Editorial Depth */
 .wrapper {
   width: 100%;
   position: relative;
@@ -63,16 +63,14 @@
 }
 
 .mainVideoWrap {
-  width: 100%;
-  max-width: 100%;
-  margin: 2.5rem 0;
   position: relative;
+  width: 100%;
   aspect-ratio: 16 / 9;
-  border-radius: 18px;
+  border-radius: 20px;
   overflow: hidden;
-  background-color: #09090b;
-  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.12);
-  border: 1px solid #e2e8f0;
+  box-shadow: 0 20px 45px rgba(12, 27, 77, 0.12);
+  margin-top: 2.5rem;
+  background-color: #000000;
 }
 
 .mainVideoWrap iframe {
@@ -85,7 +83,7 @@
 }
 
 /* =========================================================================
-   2. OBJECTIVE COMPARISON: ALL-ON-4 vs ALL-ON-5 vs ALL-ON-6
+   2. OBJECTIVE COMPARISON: IMMEDIATE LOADING vs DELAYED vs PLACEMENT ONLY
    ========================================================================= */
 .compareSection {
   padding: 5rem 0;
@@ -195,7 +193,7 @@
 }
 
 /* =========================================================================
-   3. 3-PHASE PRECISION PROTOCOL
+   3. 3-PHASE DIGITAL SURGICAL & CAD/CAM PROTOCOL
    ========================================================================= */
 .processSection {
   padding: 5rem 0;
@@ -308,12 +306,11 @@
 }
 
 /* =========================================================================
-   4. ALL-ON-4 PERMANENT BRIDGE MATERIALS COMPARISON
+   4. PERMANENT CROWN & BRIDGE MATERIALS COMPARISON
    ========================================================================= */
 .materialsSection {
   padding: 5rem 0;
   background-color: #ffffff;
-  border-top: 1px solid #e2e8f0;
 }
 
 .materialsHeader {
@@ -996,7 +993,7 @@
     line-height: 1.55;
   }
 
-  /* 3-Phase Process Cards: Horizontal Carousel with Peek Effect */
+  /* 3-Phase Surgical Cards: Horizontal Carousel with Peek Effect */
   .processGrid {
     display: flex;
     overflow-x: auto;
