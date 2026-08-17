@@ -166,33 +166,42 @@ export default function ReviewsMainSection() {
                       }}
                       aria-label={`Read full review by ${rev.author}`}
                     >
+                      {/* Top: User Icon + Author Name */}
                       <div className={styles.ad}>
-                        <div className={styles.userAvatar}>
-                          {rev.author.charAt(0)}
-                        </div>
+                        <svg
+                          width="14"
+                          height="14"
+                          viewBox="0 0 448 512"
+                          fill="currentColor"
+                          className={styles.userIcon}
+                        >
+                          <path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z" />
+                        </svg>
                         <span>{rev.author}</span>
                       </div>
 
+                      {/* Middle: Review text */}
                       <div className={styles.yorum}>
                         {getLocalized(rev.text)}
                       </div>
 
+                      {/* Bottom: Platform Logo + 5 Stars */}
                       <div className={styles.cardFooter}>
                         <div className={styles.platform}>
                           <Image
                             src={rev.platformImg}
-                            alt={rev.platform}
+                            alt={rev.author}
                             fill
-                            sizes="85px"
+                            sizes="120px"
                             className={styles.platformImg}
                           />
                         </div>
                         <div className={styles.stars}>
                           <Image
                             src="/reviews/5star.webp"
-                            alt="5 Stars Rating"
+                            alt="5 Stars"
                             fill
-                            sizes="88px"
+                            sizes="100px"
                             className={styles.starsImg}
                           />
                         </div>
@@ -205,7 +214,7 @@ export default function ReviewsMainSection() {
           </div>
         </div>
 
-        {/* Right Column: Sticky Sidebar */}
+        {/* Right Column: Sticky Sidebar in Dark Teal (#517A7D) */}
         <aside className={styles.s2}>
           <div className={styles.sticky}>
             {/* Consultation Minikart */}
@@ -217,7 +226,7 @@ export default function ReviewsMainSection() {
                     src="/prices-consultation.webp"
                     alt="Master Smile Studio VIP Consultation"
                     fill
-                    sizes="320px"
+                    sizes="160px"
                     className={styles.imImgSide}
                   />
                 </Link>
@@ -321,7 +330,7 @@ export default function ReviewsMainSection() {
                     src={activeReview.platformImg}
                     alt={activeReview.platform}
                     fill
-                    sizes="85px"
+                    sizes="110px"
                     className={styles.platformImg}
                   />
                 </div>
@@ -330,7 +339,7 @@ export default function ReviewsMainSection() {
                     src="/reviews/5star.webp"
                     alt="5 Stars Rating"
                     fill
-                    sizes="88px"
+                    sizes="95px"
                     className={styles.starsImg}
                   />
                 </div>
