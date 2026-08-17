@@ -1,1088 +1,797 @@
 'use client';
 
-import React, { useState } from 'react';
-import { useTranslations, useLocale } from 'next-intl';
+import React from 'react';
+import { useLocale } from 'next-intl';
 import { Link } from '@/i18n/routing';
-import { SITE_CONFIG, getWhatsAppLink } from '@/config/site';
-import TreatmentReviewsSection from '@/components/treatment-sections/TreatmentReviewsSection';
+import TreatmentDivider from '@/components/treatment-sections/TreatmentDivider';
+import TreatmentTripleVideoSlider from '@/components/treatment-sections/TreatmentTripleVideoSlider';
+import TreatmentsHubDisciplineShowcase from '@/components/treatment-sections/TreatmentsHubDisciplineShowcase';
+import TreatmentDoctorsSection from '@/components/treatment-sections/TreatmentDoctorsSection';
 import TreatmentBeforeAfterSliderSection from '@/components/treatment-sections/TreatmentBeforeAfterSliderSection';
+import TreatmentJourneySimpleSection from '@/components/treatment-sections/TreatmentJourneySimpleSection';
+import TreatmentServicesIncludedSection from '@/components/treatment-sections/TreatmentServicesIncludedSection';
+import TreatmentPatientReelsSection from '@/components/treatment-sections/TreatmentPatientReelsSection';
+import TreatmentCostBreakdownAndPackageBannerSection from '@/components/treatment-sections/TreatmentCostBreakdownAndPackageBannerSection';
+import TreatmentPackagesSlider from '@/components/treatment-sections/TreatmentPackagesSlider';
+import TreatmentReviewsSection from '@/components/treatment-sections/TreatmentReviewsSection';
+import TreatmentParallaxBanner from '@/components/treatment-sections/TreatmentParallaxBanner';
+import TreatmentsHubFAQSection from '@/components/treatment-sections/TreatmentsHubFAQSection';
 import TreatmentInteractiveQuoteForm from '@/components/treatment-sections/TreatmentInteractiveQuoteForm';
+import styles from './DentalImplantsDetailView.module.css';
 
-interface MediaPlaceholderProps {
-  num: number | string;
-  label: string;
-  type: 'video' | 'image' | 'carousel' | 'slider';
-  color: string;
-  aspectRatio?: string;
-  height?: string;
-  style?: React.CSSProperties;
+interface HubI18n {
+  introHeading: string;
+  introP1: string;
+  partsTitle: string;
+  part1Label: string;
+  part1Desc: string;
+  part2Label: string;
+  part2Desc: string;
+  part3Label: string;
+  part3Desc: string;
+  healingP: string;
+  solutionP: string;
+  whyChooseHeading: string;
+  whyChooseIntroLead: string;
+  whyChooseIntroLink: string;
+  whyChooseIntroTail: string;
+  reason1Title: string;
+  reason1P1: string;
+  reason1P2: string;
+  reason1P3: string;
+  reason2Title: string;
+  reason2P: string;
+  viewAllPackagesBtn: string;
+  reason3Title: string;
+  reason3P: string;
+  reason4Title: string;
+  reason4P: string;
+  reason5Title: string;
+  reason5PText: string;
+  reason5PLink: string;
+  typesHeading: string;
+  typesIntro: string;
+  singleTitle: string;
+  singleP: string;
+  singleLinkLead: string;
+  singleLinkText: string;
+  multipleTitle: string;
+  multipleP: string;
+  multipleLinkLead: string;
+  multipleLinkText: string;
+  allOn4Title: string;
+  allOn4P: string;
+  allOn4LinkLead: string;
+  allOn4LinkText: string;
+  allOn6Title: string;
+  allOn6P: string;
+  allOn6LinkLead: string;
+  allOn6LinkText: string;
 }
 
-function MediaPlaceholder({
-  num,
-  label,
-  type,
-  color,
-  aspectRatio = '16/9',
-  height,
-  style,
-}: MediaPlaceholderProps) {
-  return (
-    <div
-      style={{
-        position: 'relative',
-        width: '100%',
-        height: height || 'auto',
-        aspectRatio: height ? undefined : aspectRatio,
-        backgroundColor: '#18181b',
-        borderRadius: '16px',
-        border: `2px dashed ${color}`,
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        gap: '0.75rem',
-        padding: '1.5rem',
-        overflow: 'hidden',
-        boxShadow: `0 8px 30px ${color}20`,
-        ...style,
-      }}
-    >
-      {/* Top Floating Number Badge */}
-      <div
-        style={{
-          position: 'absolute',
-          top: '12px',
-          left: '12px',
-          backgroundColor: color,
-          color: '#ffffff',
-          fontWeight: 800,
-          fontSize: '0.85rem',
-          padding: '0.35rem 0.85rem',
-          borderRadius: '9999px',
-          boxShadow: `0 4px 14px ${color}60`,
-          display: 'flex',
-          alignItems: 'center',
-          gap: '0.35rem',
-          letterSpacing: '0.02em',
-          zIndex: 5,
-        }}
-      >
-        <span>#{num}</span>
-      </div>
-
-      {/* Media Type Icon */}
-      <div
-        style={{
-          width: '52px',
-          height: '52px',
-          borderRadius: '50%',
-          backgroundColor: `${color}25`,
-          border: `1.5px solid ${color}`,
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          color: color,
-        }}
-      >
-        {type === 'video' ? (
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M8 5v14l11-7z" />
-          </svg>
-        ) : (
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-            <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
-            <circle cx="8.5" cy="8.5" r="1.5" />
-            <polyline points="21 15 16 10 5 21" />
-          </svg>
-        )}
-      </div>
-
-      {/* Label */}
-      <div style={{ textAlign: 'center', maxWidth: '85%' }}>
-        <span style={{ color: '#ffffff', fontWeight: 600, fontSize: '0.95rem', display: 'block', marginBottom: '0.2rem' }}>
-          {label}
-        </span>
-        <span style={{ color: '#a1a1aa', fontSize: '0.78rem', textTransform: 'uppercase', letterSpacing: '0.06em' }}>
-          {type === 'video' ? 'Video Player Placeholder' : 'Görsel / Image Placeholder'}
-        </span>
-      </div>
-    </div>
-  );
-}
+const HUB_DATA: Record<string, HubI18n> = {
+  en: {
+    introHeading: 'World-Class Dental Treatments & Smile Makeovers in Istanbul, Turkey',
+    introP1:
+      'Master Smile Studio Istanbul is an internationally acclaimed multidisciplinary center for aesthetic dentistry, oral implantology, and smile reconstructions. Whether you are seeking full-arch titanium dental implants, bespoke Swiss Ivoclar E-Max veneers, monolithic German zirconia crowns, or pain-free microscopic restorative care, our board-certified oral surgeons and master prosthodontists provide world-class clinical excellence with up to 70% savings compared to the UK, US, and Europe.',
+    partsTitle: 'The 3 Core Pillars of Our Multidisciplinary Dental Excellence:',
+    part1Label: '1. Advanced 3D Diagnostics & CAD/CAM In-House Laboratory',
+    part1Desc:
+      'Ultra-low-radiation 3D CBCT tomography, high-precision intraoral optical scanners, and automated German CAD/CAM 5-axis milling units ensuring micron-level accuracy.',
+    part2Label: '2. Multidisciplinary Surgical, Aesthetic & Endodontic Team',
+    part2Desc:
+      'Dedicated oral surgeons, prosthodontists, cosmetic dentists, and endodontists working collaboratively on every complex case under one roof.',
+    part3Label: '3. Certified European Materials & Lifetime Guarantees',
+    part3Desc:
+      'We use exclusively genuine Swiss Straumann implants, German Amann Girrbach monolithic zirconia, and Swiss Ivoclar Vivadent E-Max lithium disilicate ceramics.',
+    healingP:
+      'Every procedure is performed under gentle computer-guided local anesthesia or conscious IV sedation, ensuring a 100% painless and relaxing treatment journey. Immediate high-precision temporary restorations guarantee that you never spend a single hour without teeth.',
+    solutionP:
+      'With transparent all-inclusive VIP packages including 5-star hotel accommodation in central Istanbul, private Mercedes airport and clinic transfers, and personal multilingual patient hosting, we make your dental journey smooth, luxurious, and stress-free.',
+    whyChooseHeading: 'Why Choose Master Smile Studio for Your Dental Treatments in Istanbul?',
+    whyChooseIntroLead: 'For international patients seeking uncompromising quality and transparent care, ',
+    whyChooseIntroLink: 'Master Smile Studio Istanbul',
+    whyChooseIntroTail:
+      ' is the trusted European reference center for comprehensive smile transformations. Here is why patients worldwide choose our clinic:',
+    reason1Title: 'Multidisciplinary Specialist Team Under One Roof',
+    reason1P1:
+      'Complex smile makeovers require multiple specialized disciplines: oral maxillofacial surgery, aesthetic prosthodontics, periodontology, and master ceramic artistry.',
+    reason1P2:
+      'Our clinic houses all dental specialties in-house, eliminating external referrals and ensuring seamless communication between doctors and ceramists.',
+    reason1P3:
+      'Direct, dedicated treatment by our senior founding surgeons from initial 3D digital diagnosis to final bite calibration and long-term follow-up.',
+    reason2Title: 'Transparent All-Inclusive Packages & Up to 70% Cost Savings',
+    reason2P:
+      'High-quality dental care in the UK, Europe, and the US can cost tens of thousands of pounds. At Master Smile Studio, favorable operational costs allow us to provide genuine Swiss and German dental treatments at up to 70% lower prices with transparent fixed packages.',
+    viewAllPackagesBtn: 'View All Dental Packages & Pricing →',
+    reason3Title: 'High-Definition 3D CBCT Tomography & In-House Digital Lab',
+    reason3P:
+      'We utilize Carl Zeiss optical dental microscopes, 3D CBCT bone scanners, and automated milling machines to fabricate biocompatible crowns and veneers with microscopic precision in just 4 to 6 days.',
+    reason4Title: 'Documented Before & After Patient Transformations',
+    reason4P:
+      'Browse hundreds of verified clinical cases showing full-mouth implant rehabilitations, dramatic Hollywood Smile makeovers, and natural tooth preservation.',
+    reason5Title: 'Luxury 5-Star Hotel & VIP Mercedes Chauffeur in Istanbul',
+    reason5PText:
+      'Enjoy a stress-free dental holiday with central 5-star hotel accommodation, private VIP airport and clinic transfers, and dedicated multi-lingual translation coordinators. ',
+    reason5PLink: 'Contact our clinical team for a free instant consultation.',
+    typesHeading: 'Overview of Core Dental Disciplines at Master Smile Studio',
+    typesIntro:
+      'Explore our comprehensive range of specialized dental treatments designed to restore your chewing power, dental health, and facial aesthetics:',
+    singleTitle: '1. Dental Implants & Full-Arch Restorations (All-on-4 / All-on-6)',
+    singleP:
+      'Permanent titanium tooth replacement for missing teeth with Straumann implants, bone grafting, sinus lifting, and monolithic zirconia bridges.',
+    singleLinkLead: 'Learn more about ',
+    singleLinkText: 'Dental Implants & All-on-4/6 →',
+    multipleTitle: '2. Dental Veneers & Porcelain Laminates (Ivoclar E-Max)',
+    multipleP:
+      'Custom-crafted ultra-thin Swiss E-Max porcelain laminates to correct discoloration, gaps, chips, and achieve a radiant Hollywood Smile in 5 days.',
+    multipleLinkLead: 'Explore ',
+    multipleLinkText: 'Dental Veneers & E-Max Laminates →',
+    allOn4Title: '3. Dental Crowns & Fixed Bridges (German Zirconia)',
+    allOn4P:
+      'High-strength 1200+ MPa multi-layered German zirconia crowns and fixed bridges to restore broken, root-canal treated, or missing teeth permanently.',
+    allOn4LinkLead: 'Discover ',
+    allOn4LinkText: 'Dental Crowns & Fixed Bridges →',
+    allOn6Title: '4. Cosmetic Dentistry, Dentures & General Oral Health',
+    allOn6P:
+      'Snap-On implant overdentures, 3D Digital Smile Design, Philips Zoom laser whitening, microscopic root canal therapy, and Air-Flow deep cleaning.',
+    allOn6LinkLead: 'Read about ',
+    allOn6LinkText: 'Dentures, Cosmetic & General Dentistry →',
+  },
+  tr: {
+    introHeading: 'İstanbul’da Dünya Standartlarında Diş Tedavileri & Gülüş Tasarımı',
+    introP1:
+      'Master Smile Studio İstanbul; estetik diş hekimliği, cerrahi implantoloji ve ileri gülüş rekonstrüksiyonunda Avrupa standartlarında hizmet veren uluslararası referans merkezidir. İster tam çene titanyum implantlar, ister İsviçre Ivoclar E-Max laminalar, Alman Zirkonyum kronlar veya mikroskobik kanal tedavisi olsun; uzman çene cerrahlarımız ve protetik hekimlerimiz %70’e varan fiyat avantajıyla en üst düzey sağlık hizmetini sunar.',
+    partsTitle: 'Multidisipliner Klinik Mükemmelliğimizin 3 Ana Temeli:',
+    part1Label: '1. İleri 3D Teşhis & Klinik İçi CAD/CAM Laboratuvarı',
+    part1Desc:
+      'Düşük radyasyonlu 3D CBCT tomografi, yüksek hassasiyetli ağız içi 3D tarayıcılar ve mikron düzeyinde üretim yapan 5 eksenli Alman CAD/CAM freze üniteleri.',
+    part2Label: '2. Cerrahi, Protetik & Endodontik Uzman Hekim Kadrosu',
+    part2Desc:
+      'Ağız, diş ve çene cerrahları, protetik diş tedavisi uzmanları ve endodontistlerin tek çatı altında vaka bazlı entegre çalışması.',
+    part3Label: '3. Orijinal Avrupa Malzemeleri & Ömür Boyu Garanti',
+    part3Desc:
+      'Tüm tedavilerde yalnızca İsviçre Straumann ve Medentika implantlar, Alman Amann Girrbach zirkonyum ve İsviçre Ivoclar E-Max porselenler kullanılır.',
+    healingP:
+      'Gelişmiş bilgisayarlı lokal anestezi ve sedasyon seçenekleri sayesinde tüm cerrahi ve estetik işlemler %100 ağrısız olarak tamamlanır. İlk seansta takılan estetik geçici dişler ile tedavi boyunca asla dişsiz kalmazsınız.',
+    solutionP:
+      'İstanbul’un kalbinde 5 yıldızlı otel konaklaması, havalimanı ve klinik arası özel VIP Mercedes şoförlü transferler ve kendi dilinizde kişisel hasta danışmanlığı ile diş tedaviniz konforlu bir tatile dönüşür.',
+    whyChooseHeading: 'Neden İstanbul’da Diş Tedavisi İçin Master Smile Studio?',
+    whyChooseIntroLead: 'Güvenilir, şeffaf ve dünya standartlarında diş tedavisi arayan uluslararası hastalar için ',
+    whyChooseIntroLink: 'Master Smile Studio İstanbul',
+    whyChooseIntroTail:
+      ', kapsamlı gülüş dönüşümlerinde öncü sağlık merkezidir. Bizi tercih etmeniz için başlıca nedenler:',
+    reason1Title: 'Alanında Uzman Multidisipliner Hekim Kadrosu',
+    reason1P1:
+      'Kapsamlı bir gülüş tasarımı; çene cerrahisi, protetik diş hekimliği, diş eti uzmanlığı ve seramik sanatçılığının ortak çalışmasını gerektirir.',
+    reason1P2:
+      'Kliniğimizde tüm uzmanlıklar tek çatı altındadır; dışarıya sevk olmadan hekimler ve seramistler anlık koordinasyonla çalışır.',
+    reason1P3:
+      'İlk 3D dijital teşhisinizden kontrol randevunuza kadar doğrudan kurucu uzman hekimlerimiz tarafından tedavi edilirsiniz.',
+    reason2Title: 'Şeffaf Her Şey Dahil Paketler & %70’e Varan Fiyat Tasarrufu',
+    reason2P:
+      'Avrupa ve İngiltere’de on binlerce Euro tutan uzman implant ve kaplama tedavileri, Türkiye’deki avantajlı operasyonel maliyetler sayesinde kliniğimizde %70 daha uygundur.',
+    viewAllPackagesBtn: 'Tüm Tedavi Paketleri ve Fiyatları İncele →',
+    reason3Title: '3D CBCT Tomografi & Yüksek Çözünürlüklü Dental Mikroskoplar',
+    reason3P:
+      'Carl Zeiss dental mikroskoplar, 3D tomografi ve CAD/CAM teknolojimiz ile tedavileriniz 4 ila 6 gün gibi rekor bir sürede sıfır hata ile tamamlanır.',
+    reason4Title: 'Kayıtlı Öncesi & Sonrası Gerçek Hasta Vakaları',
+    reason4P:
+      'Kliniğimizde başarıyla tamamlanan tam çene implant rekonstrüksiyonları, Hollywood Smile gülüş dönüşümleri ve estetik vaka galerimizi inceleyin.',
+    reason5Title: '5 Yıldızlı Otel Konaklaması & VIP Mercedes Transfer',
+    reason5PText:
+      'İstanbul’un merkezinde 5 yıldızlı otel konaklaması, özel VIP Mercedes transferleri ve kendi dilinizde hasta koordinatörlüğü. ',
+    reason5PLink: 'Ücretsiz dijital konsültasyon için hemen klinik ekibimizle iletişime geçin.',
+    typesHeading: 'Master Smile Studio’da Uygulanan Ana Diş Tedavisi Alanları',
+    typesIntro:
+      'Çiğneme fonksiyonunuzu ve estetiğinizi eksiksiz geri kazandırmak için sunduğumuz ileri klinik tedaviler:',
+    singleTitle: '1. Diş İmplantı & Tam Çene Çözümleri (All-on-4 / All-on-6)',
+    singleP:
+      'Eksik dişler için ömür boyu garantili Straumann implantlar, kemik grefti, sinüs lifting ve monolitik zirkonyum köprüler.',
+    singleLinkLead: 'Detaylı bilgi için: ',
+    singleLinkText: 'Diş İmplantları & All-on-4/6 →',
+    multipleTitle: '2. Lamine Veneer & Yaprak Porselen (Ivoclar E-Max)',
+    multipleP:
+      'Renk bozukluğu, kırık ve aralıklı dişlerde 3D Dijital Gülüş Tasarımı ile 5 günde kusursuz Hollywood gülüşü.',
+    multipleLinkLead: 'İnceleyin: ',
+    multipleLinkText: 'Lamine Veneer & E-Max →',
+    allOn4Title: '3. Zirkonyum Kron & Sabit Diş Köprüleri',
+    allOn4P:
+      '1200+ MPa dayanıklılıkta Alman Zirkonyumu ile kırık veya kanal tedavili dişleri 360 derece sararak ömür boyu koruyan kaplamalar.',
+    allOn4LinkLead: 'Keşfedin: ',
+    allOn4LinkText: 'Zirkonyum Kron & Diş Köprüsü →',
+    allOn6Title: '4. Estetik Diş Hekimliği, Protezler & Genel Diş Sağlığı',
+    allOn6P:
+      'Çıt çıtlı damaksız protezler, Philips Zoom lazer beyazlatma, mikroskobik kanal tedavisi ve Air-Flow derin diş temizliği.',
+    allOn6LinkLead: 'Bilgi alın: ',
+    allOn6LinkText: 'Protez, Estetik & Genel Diş Tedavileri →',
+  },
+  de: {
+    introHeading: 'Erstklassige Zahnbehandlungen & Smile Makeover in Istanbul, Türkei',
+    introP1:
+      'Master Smile Studio Istanbul ist ein international anerkanntes Zentrum für ästhetische Zahnheilkunde, Implantologie und ganzheitliche Lächeln-Rekonstruktionen. Ob festsitzende Titan-Zahnimplantate, hauchdünne Schweizer E-Max Veneers, bruchfeste Zirkonkronen oder schmerzfreie mikroskopische Wurzelbehandlungen — unsere Fachzahnärzte bieten Spitzenmedizin mit bis zu 70% Ersparnis gegenüber Deutschland, Österreich und der Schweiz.',
+    partsTitle: 'Die 3 Säulen unserer interdisziplinären Zahnmedizin:',
+    part1Label: '1. 3D-Diagnostik & Eigenes CAD/CAM-Meisterlabor',
+    part1Desc:
+      'Niedrig dosierte 3D CBCT Tomographie, digitale Intraoralscanner und deutsche 5-Achs-Fräseinheiten für mikrometergenaue Passung.',
+    part2Label: '2. Spezialisiertes Team aus Chirurgen & Prothetikern',
+    part2Desc:
+      'Erfahrene Oralchirurgen, Prothetiker, Endodontologen und Zahntechnikermeister arbeiten Hand in Hand.',
+    part3Label: '3. Zertifizierte europäische Materialien & Lebenslange Garantie',
+    part3Desc:
+      'Ausschließliche Verwendung von Schweizer Straumann Implantaten, deutschem Amann Girrbach Zirkon und Ivoclar E-Max Glaskeramik.',
+    healingP:
+      'Alle Behandlungen erfolgen vollkommen schmerzfrei unter moderner Lokalanästhesie mit Sedierungsoption. Durch sofortige Provisorien sind Sie zu keinem Zeitpunkt zahnlos.',
+    solutionP:
+      'Mit transparenten All-Inclusive-Paketen inklusive 5-Sterne-Hotel, privatem Mercedes VIP-Chauffeur und deutschsprachiger Betreuung wird Ihre Zahnbehandlung zu einem entspannten Aufenthalt.',
+    whyChooseHeading: 'Warum Master Smile Studio für Ihre Zahnbehandlung in Istanbul?',
+    whyChooseIntroLead: 'Für Patienten aus ganz Europa ist ',
+    whyChooseIntroLink: 'Master Smile Studio Istanbul',
+    whyChooseIntroTail:
+      ' die führende Adresse für schmerzfreie und hochpräzise Zahnmedizin. Unsere Vorteile:',
+    reason1Title: 'Interdisziplinäres Fachärzteteam unter einem Dach',
+    reason1P1:
+      'Komplexe Smile Makeovers erfordern das Zusammenspiel von Chirurgie, Prothetik, Parodontologie und Meisterkeramik.',
+    reason1P2:
+      'In unserer Klinik arbeiten alle Fachbereiche zusammen, was perfekte Abstimmung ohne externe Wege garantiert.',
+    reason1P3:
+      'Direkte Betreuung durch unsere Chefärzte von der Erstdiagnostik bis zur Abschlusskontrolle.',
+    reason2Title: 'Transparente Festpreise & Bis zu 70% Ersparnis',
+    reason2P:
+      'In Deutschland und der Schweiz kosten Gesamtsanierungen oft ein Vermögen. Bei uns erhalten Sie dieselbe Schweizer Spitzenqualität zu 70% günstigeren Preisen.',
+    viewAllPackagesBtn: 'Alle Behandlungs-Pakete & Preise ansehen →',
+    reason3Title: '3D CBCT Tomographie & Carl Zeiss Dentalmikroskope',
+    reason3P:
+      'Modernste Technik ermöglicht eine präzise Fertigung Ihrer Kronen und Veneers in nur 4 bis 6 Tagen.',
+    reason4Title: 'Dokumentierte Vorher & Nachher Patientenfälle',
+    reason4P:
+      'Sehen Sie reale Patientenfälle mit festen Zähnen auf Implantaten und ästhetischen Hollywood Smile Transformationen.',
+    reason5Title: '5-Sterne-Hotel & VIP-Chauffeur in Istanbul',
+    reason5PText:
+      'Entspannter Aufenthalt mit 5-Sterne-Hotel im Herzen Istanbuls, VIP-Transfers und deutschsprachiger Betreuung. ',
+    reason5PLink: 'Kontaktieren Sie unser Ärzteteam für eine kostenlose Beratung.',
+    typesHeading: 'Überblick über unsere zahnmedizinischen Kernbereiche',
+    typesIntro:
+      'Entdecken Sie unser breites Spektrum modernster Zahnheilkunde für perfekte Ästhetik und Funktion:',
+    singleTitle: '1. Zahnimplantate & Feste Zähne (All-on-4 / All-on-6)',
+    singleP:
+      'Dauerhafter Zahnersatz mit lebenslanger Garantie auf Straumann Implantate und monolithische Zirkonbrücken.',
+    singleLinkLead: 'Mehr erfahren über ',
+    singleLinkText: 'Zahnimplantate & All-on-4/6 →',
+    multipleTitle: '2. Veneers & Porzellan-Laminate (Ivoclar E-Max)',
+    multipleP:
+      'Hauchdünne Schweizer Glaskeramik für perfekt weiße Zähne und Smile Design in 5 Tagen.',
+    multipleLinkLead: 'Entdecken Sie ',
+    multipleLinkText: 'Veneers & E-Max Laminate →',
+    allOn4Title: '3. Zahnkronen & Feste Zirkonbrücken',
+    allOn4P:
+      'Hochstabiles deutsches Zirkon (1200+ MPa) zum 360°-Schutz geschädigter Zähne.',
+    allOn4LinkLead: 'Details zu ',
+    allOn4LinkText: 'Zahnkronen & Brücken →',
+    allOn6Title: '4. Ästhetik, Prothetik & Allgemeine Zahnheilkunde',
+    allOn6P:
+      'Snap-On Klick-Prothesen, Philips Zoom Laser-Bleaching, mikroskopische Endodontie und Air-Flow Reinigung.',
+    allOn6LinkLead: 'Informationen zu ',
+    allOn6LinkText: 'Prothesen, Ästhetik & Prophylaxe →',
+  },
+  pl: {
+    introHeading: 'Światowej Klasy Zabiegi Stomatologiczne i Metamorfozy Uśmiechu w Stambule',
+    introP1:
+      'Master Smile Studio Stambuł to renomowane międzynarodowe centrum stomatologii estetycznej, implantologii i kompleksowych odbudów uśmiechu. Od tytanowych implantów całych łuków zębowych i szwajcarskich licówek Ivoclar E-Max po korony z niemieckiego tlenku cyrkonu i mikroskopowe leczenie zachowawcze — nasz zespół chirurgów i protetyków zapewnia najwyższy standard leczenia z oszczędnością do 70%.',
+    partsTitle: '3 Filary Naszej Doskonałości Stomatologicznej:',
+    part1Label: '1. Diagnostyka 3D i Własne Cyfrowe Laboratorium CAD/CAM',
+    part1Desc:
+      'Niskodawkowa tomografia 3D CBCT, skanery wewnątrzustne i 5-osiowe niemieckie frezarki CAD/CAM z mikronową precyzją.',
+    part2Label: '2. Zespół Chirurgów, Protetyków i Mistrzów Ceramiki',
+    part2Desc:
+      'Chirurdzy szczękowi, protetycy, endodonci i ceramicy współpracujący przy każdym złożonym przypadku pod jednym dachem.',
+    part3Label: '3. Certyfikowane Europejskie Materiały i Dożywotnia Gwarancja',
+    part3Desc:
+      'Stosujemy wyłącznie szwajcarskie implanty Straumann, niemiecki tlenek cyrkonu Amann Girrbach i ceramikę Ivoclar E-Max.',
+    healingP:
+      'Wszystkie zabiegi są w 100% bezbolesne w komputerowym znieczuleniu miejscowym z opcją sedacji. Zęby tymczasowe montowane są na pierwszej wizycie.',
+    solutionP:
+      'Pakiety VIP z 5-gwiazdkowym hotelem w centrum Stambułu, transferami Mercedesem i polskojęzyczną opieką gwarantują pełen komfort leczenia.',
+    whyChooseHeading: 'Dlaczego Warto Wybrać Master Smile Studio w Stambule?',
+    whyChooseIntroLead: 'Dla pacjentów z Polski i całej Europy poszukujących bezkompromisowej jakości, ',
+    whyChooseIntroLink: 'Master Smile Studio Stambuł',
+    whyChooseIntroTail:
+      ' to wiodący ośrodek leczenia stomatologicznego. Nasze kluczowe atuty:',
+    reason1Title: 'Interdyscyplinarny Zespół Specjalistów pod Jednym Dachem',
+    reason1P1:
+      'Kompleksowa metamorfoza wymaga ścisłej współpracy chirurgii, protetyki, periodontologii i mistrzowskiej ceramiki.',
+    reason1P2:
+      'Wszystkie specjalizacje posiadamy w klinice, co eliminuje konieczność odsyłania pacjentów do zewnętrznych placówek.',
+    reason1P3:
+      'Opieka bezpośrednio prowadzona przez lekarzy założycieli od diagnostyki 3D po finalną kontrolę zgryzu.',
+    reason2Title: 'Przejrzyste Pakiety All-Inclusive i Oszczędność do 70%',
+    reason2P:
+      'Oferujemy oryginalne szwajcarskie i niemieckie materiały medyczne z oszczędnością do 70% w porównaniu z cenami w Europie.',
+    viewAllPackagesBtn: 'Zobacz Wszystkie Pakiety i Ceny →',
+    reason3Title: 'Tomografia 3D CBCT i Mikroskopy Carl Zeiss',
+    reason3P:
+      'Nowoczesny park technologiczny umożliwia wykonanie pełnej metamorfozy w zaledwie 4 do 6 dni.',
+    reason4Title: 'Udokumentowane Przypadki Kliniczne Pacjentów',
+    reason4P:
+      'Zobacz setki udokumentowanych przypadków odbudowy bezzębia na implantach i metamorfoz Hollywood Smile.',
+    reason5Title: 'Hotel 5★ i Prywatny Transfer Mercedesem w Stambule',
+    reason5PText:
+      'Komfortowy pobyt w 5-gwiazdkowym hotelu, transfery VIP oraz pełna opieka polskojęzycznego koordynatora. ',
+    reason5PLink: 'Skontaktuj się z naszym zespołem medycznym po bezpłatną konsultację.',
+    typesHeading: 'Główne Dziedziny Stomatologii w Master Smile Studio',
+    typesIntro:
+      'Poznaj pełen zakres nowoczesnych procedur przywracających idealny uśmiech i funkcję żucia:',
+    singleTitle: '1. Implanty Zębowe i Odbudowy Całych Łuków (All-on-4 / All-on-6)',
+    singleP:
+      'Trwałe uzupełnienie braków na implantach Straumann z mostami z tlenku cyrkonu i dożywotnią gwarancją.',
+    singleLinkLead: 'Dowiedz się więcej o ',
+    singleLinkText: 'Implantach Zębowych & All-on-4/6 →',
+    multipleTitle: '2. Licówki Porcelanowe i E-Max (Hollywood Smile)',
+    multipleP:
+      'Szwajcarska ceramika Ivoclar E-Max korygująca kształt i kolor zębów w 5 dni z projektem 3D DSD.',
+    multipleLinkLead: 'Poznaj szczegóły ',
+    multipleLinkText: 'Licówek Porcelanowych →',
+    allOn4Title: '3. Korony Zębowe i Mosty Cyrkonowe',
+    allOn4P:
+      'Wytrzymały niemiecki tlenek cyrkonu (1200+ MPa) chroniący zniszczone zęby 360 stopni.',
+    allOn4LinkLead: 'Sprawdź ',
+    allOn4LinkText: 'Korony i Mosty Cyrkonowe →',
+    allOn6Title: '4. Stomatologia Estetyczna, Protezy i Profilaktyka',
+    allOn6P:
+      'Protezy na zatrzaskach bez podniebienia, wybielanie Philips Zoom, leczenie kanałowe i higienizacja Air-Flow.',
+    allOn6LinkLead: 'Czytaj o ',
+    allOn6LinkText: 'Protezach i Stomatologii Ogólnej →',
+  },
+  pt: {
+    introHeading: 'Tratamentos Odontológicos de Excelência & Design do Sorriso em Istambul',
+    introP1:
+      'A Master Smile Studio Istambul é um centro internacional de referência em odontologia estética, implantodontia cirúrgica e reabilitações completas do sorriso. Sejam implantes em titânio para arcada total, facetas suíças Ivoclar E-Max, coroas em zircônia alemã ou endodontia microscópica — nossos cirurgiões oferecem máxima excelência com até 70% de economia.',
+    partsTitle: 'Os 3 Pilares da Nossa Excelência Multidisciplinar:',
+    part1Label: '1. Diagnóstico 3D Avançado & Laboratório Digital CAD/CAM Próprio',
+    part1Desc:
+      'Tomografia 3D CBCT de baixa radiação, scanners intraorais ópticos e fresadoras alemãs de 5 eixos com precisão micrométrica.',
+    part2Label: '2. Equipe Integrada de Cirurgiões, Protesistas e Ceramistas',
+    part2Desc:
+      'Especialistas em cirurgia bucomaxilofacial, reabilitação oral, estética e endodontia trabalhando integrados.',
+    part3Label: '3. Materiais Europeus Certificados & Garantia Vitalícia',
+    part3Desc:
+      'Utilizamos exclusivamente implantes suíços Straumann, zircônia alemã Amann Girrbach e cerâmica Ivoclar E-Max.',
+    healingP:
+      'Todos os tratamentos são 100% livres de dor com anestesia local computadorizada e opção de sedação consciente. Provisórios imediatos garantem que você nunca fique sem dentes.',
+    solutionP:
+      'Pacotes VIP All-Inclusive com hospedagem em hotel 5 estrelas no centro de Istambul, traslados privativos em Mercedes e atendimento em português.',
+    whyChooseHeading: 'Por Que Escolher a Master Smile Studio em Istambul?',
+    whyChooseIntroLead: 'Para pacientes de todo o mundo que buscam qualidade internacional e atendimento transparente, ',
+    whyChooseIntroLink: 'Master Smile Studio Istambul',
+    whyChooseIntroTail:
+      ' é a clínica de referência em reabilitação oral. Nossos diferenciais:',
+    reason1Title: 'Equipe Multidisciplinar Completa sob o Mesmo Teto',
+    reason1P1:
+      'Transformações complexas exigem a atuação conjunta de cirurgia, prótese, periodontia e mestres ceramistas.',
+    reason1P2:
+      'Nossa clínica integra todas as especialidades internamente, garantindo comunicação direta sem intermediários.',
+    reason1P3:
+      'Atendimento direto pelos cirurgiões fundadores desde o diagnóstico digital até o ajuste oclusal final.',
+    reason2Title: 'Pacotes Transparentes All-Inclusive com até 70% de Economia',
+    reason2P:
+      'Oferecemos materiais suíços e alemães originais com até 70% de economia em relação aos custos praticados na Europa e América do Norte.',
+    viewAllPackagesBtn: 'Ver Todos os Pacotes e Preços →',
+    reason3Title: 'Tomografia 3D CBCT e Microscópios Ópticos Carl Zeiss',
+    reason3P:
+      'Nossa tecnologia avançada permite a confecção de próteses e facetas com precisão absoluta em apenas 4 a 6 dias.',
+    reason4Title: 'Casos Clínicos Reais Documentados',
+    reason4P:
+      'Confira centenas de casos reais de reabilitação total sobre implantes e transformações Hollywood Smile.',
+    reason5Title: 'Hotel 5★ e Transfers VIP Mercedes em Istambul',
+    reason5PText:
+      'Hospedagem de alto padrão, transporte privativo e assistência completa em português. ',
+    reason5PLink: 'Entre em contato com nossa equipe médica para avaliação gratuita.',
+    typesHeading: 'Principais Disciplinas Odontológicas na Master Smile Studio',
+    typesIntro:
+      'Conheça nossa linha completa de procedimentos para recuperar a estética e a mastigação:',
+    singleTitle: '1. Implantes Dentários & Arcada Total (All-on-4 / All-on-6)',
+    singleP:
+      'Substituição definitiva de dentes com implantes Straumann, enxertos e pontes fixas em zircônia com garantia vitalícia.',
+    singleLinkLead: 'Saiba mais sobre ',
+    singleLinkText: 'Implantes Dentários & All-on-4/6 →',
+    multipleTitle: '2. Facetas Dentárias & Lentes de Contato E-Max',
+    multipleP:
+      'Cerâmica vítrea suíça Ivoclar E-Max para corrigir cor, formato e diastemas em apenas 5 dias.',
+    multipleLinkLead: 'Conheça ',
+    multipleLinkText: 'Facetas Dentárias & E-Max →',
+    allOn4Title: '3. Coroas Dentárias & Pontes Fixas em Zircônia',
+    allOn4P:
+      'Zircônia alemã pura (1200+ MPa) para proteger dentes fraturados ou desvitalizados em 360 graus.',
+    allOn4LinkLead: 'Descubra ',
+    allOn4LinkText: 'Coroas e Pontes em Zircônia →',
+    allOn6Title: '4. Odontologia Estética, Próteses & Clínica Geral',
+    allOn6P:
+      'Overdentures de clique sem céu da boca, clareamento Philips Zoom, canal microscópico e profilaxia Air-Flow.',
+    allOn6LinkLead: 'Leia sobre ',
+    allOn6LinkText: 'Próteses, Estética & Clínica Geral →',
+  },
+  es: {
+    introHeading: 'Tratamientos Dentales de Excelencia & Diseño de Sonrisa en Estambul, Turquía',
+    introP1:
+      'Master Smile Studio Estambul es un centro de referencia internacional en odontología estética, implantología oral avanzada y reconstrucciones completas de la sonrisa. Ya sean implantes de titanio para toda la arcada, carillas suizas Ivoclar E-Max, coronas de zirconio alemán o endodoncia microscópica — nuestros cirujanos ofrecen máxima precisión clínica con hasta un 70% de ahorro frente a España, Reino Unido y resto de Europa.',
+    partsTitle: 'Los 3 Pilares de Nuestra Excelencia Multidisciplinar:',
+    part1Label: '1. Diagnóstico 3D Avanzado & Laboratorio Digital CAD/CAM Propio',
+    part1Desc:
+      'Tomografía 3D CBCT de baja radiación, escáneres intraorales y fresadoras alemanas de 5 ejes con precisión micrométrica.',
+    part2Label: '2. Equipo Integrado de Cirujanos, Prostodoncistas y Ceramistas',
+    part2Desc:
+      'Cirujanos maxilofaciales, rehabilitadores orales, endodoncistas y maestros ceramistas trabajando juntos bajo un mismo techo.',
+    part3Label: '3. Materiales Europeos Certificados & Garantía de por Vida',
+    part3Desc:
+      'Empleamos exclusivamente implantes suizos Straumann, zirconio alemán Amann Girrbach y cerámica pura Ivoclar E-Max.',
+    healingP:
+      'Todos los procedimientos son 100% indoloros gracias a la anestesia local computarizada y opción de sedación consciente. Los dientes provisionales inmediatos aseguran que nunca esté sin dientes.',
+    solutionP:
+      'Con paquetes VIP Todo Incluido con hotel de 5 estrellas en el centro de Estambul, traslados privados en Mercedes y atención en español durante todo el viaje.',
+    whyChooseHeading: '¿Por Qué Elegir Master Smile Studio para su Tratamiento en Estambul?',
+    whyChooseIntroLead: 'Para pacientes de todo el mundo que buscan calidad hospitalaria y transparencia, ',
+    whyChooseIntroLink: 'Master Smile Studio Estambul',
+    whyChooseIntroTail:
+      ' es el centro de referencia en odontología avanzada. Nuestras ventajas:',
+    reason1Title: 'Equipo Multidisciplinar Integrado bajo un Mismo Techo',
+    reason1P1:
+      'Un diseño de sonrisa integral requiere la coordinación entre cirugía maxilofacial, prótesis, periodoncia y cerámica estética.',
+    reason1P2:
+      'Nuestra clínica reúne todas las especialidades internamente, garantizando máxima sincronización entre odontólogos y ceramistas.',
+    reason1P3:
+      'Atención directa por nuestros directores médicos desde el diagnóstico 3D hasta la calibración oclusal final.',
+    reason2Title: 'Paquetes Todo Incluido y Ahorro de hasta el 70%',
+    reason2P:
+      'Ofrecemos materiales suizos y alemanes originales con un 70% de ahorro respecto a las tarifas de clínicas en Europa y EE.UU.',
+    viewAllPackagesBtn: 'Ver Todos los Paquetes y Precios →',
+    reason3Title: 'TAC 3D CBCT y Microscopios Ópticos Carl Zeiss',
+    reason3P:
+      'Nuestra tecnología permite confeccionar coronas y carillas con ajuste microscópico en tan solo 4 a 6 días.',
+    reason4Title: 'Casos Clínicos Reales Documentados',
+    reason4P:
+      'Compruebe cientos de casos documentados de rehabilitaciones completas sobre implantes y transformaciones Hollywood Smile.',
+    reason5Title: 'Hotel 5★ y Traslados VIP en Mercedes en Estambul',
+    reason5PText:
+      'Estancia de lujo en hotel de 5 estrellas, transporte privado y asistencia en español durante todo el viaje. ',
+    reason5PLink: 'Contacte con nuestro equipo para una valoración inmediata.',
+    typesHeading: 'Principales Especialidades Odontológicas en Master Smile Studio',
+    typesIntro:
+      'Explore nuestro catálogo completo de tratamientos avanzados para recuperar la función masticatoria y la sonrisa:',
+    singleTitle: '1. Implantes Dentales & Arcada Completa (All-on-4 / All-on-6)',
+    singleP:
+      'Reposición fija con implantes Straumann, elevación de seno y puentes de zirconio con garantía de por vida.',
+    singleLinkLead: 'Más información sobre ',
+    singleLinkText: 'Implantes Dentales & All-on-4/6 →',
+    multipleTitle: '2. Carillas Dentales & Porcelana E-Max (Hollywood Smile)',
+    multipleP:
+      'Cerámica vítrea suiza Ivoclar E-Max para corregir forma y color en solo 5 días con Diseño Digital 3D.',
+    multipleLinkLead: 'Ver detalles de ',
+    multipleLinkText: 'Carillas Dentales & E-Max →',
+    allOn4Title: '3. Coronas Dentales & Puentes Fijos de Zirconio',
+    allOn4P:
+      'Zirconio alemán puro (1200+ MPa) para recubrir dientes destruidos o endodonciados en 360 grados.',
+    allOn4LinkLead: 'Descubra ',
+    allOn4LinkText: 'Coronas y Puentes de Zirconio →',
+    allOn6Title: '4. Estética Dental, Sobredentaduras & Odontología General',
+    allOn6P:
+      'Sobredentaduras con anclaje sin paladar, blanqueamiento Philips Zoom, endodoncia microscópica y limpieza Air-Flow.',
+    allOn6LinkLead: 'Detalles sobre ',
+    allOn6LinkText: 'Prótesis, Estética & Odontología General →',
+  },
+  ru: {
+    introHeading: 'Стоматологическое лечение европейского уровня & Дизайн улыбки в Стамбуле',
+    introP1:
+      'Master Smile Studio Стамбул — международный экспертный центр эстетической стоматологии, хирургической имплантологии и полного восстановления зубов. Будь то титановые имплантаты All-on-4/6, швейцарские виниры Ivoclar E-Max, коронки из немецкого циркония или лечение каналов под микроскопом — наши ведущие хирурги и ортопеды обеспечивают высочайшее качество с экономией до 70%.',
+    partsTitle: '3 основы нашего междисциплинарного клинического превосходства:',
+    part1Label: '1. Цифровая 3D-диагностика & Собственная лаборатория CAD/CAM',
+    part1Desc:
+      'Низкодозовая томография 3D CBCT, оптические интраоральные сканеры и 5-осевые немецкие фрезерные станки с микронной точностью.',
+    part2Label: '2. Команда хирургов, ортопедов и мастеров керамики',
+    part2Desc:
+      'Челюстно-лицевые хирурги, ортопеды, эндодонтисты и техники работают совместно над каждым клиническим случаем.',
+    part3Label: '3. Сертифицированные европейские материалы и пожизненная гарантия',
+    part3Desc:
+      'Используются исключительно оригинальные швейцарские импланты Straumann, немецкий цирконий Amann Girrbach и керамика Ivoclar E-Max.',
+    healingP:
+      'Все процедуры проходят на 100% безболезненно благодаря компьютерной анестезии и возможности седации во сне. Временные зубы ставятся в первый день.',
+    solutionP:
+      'Пакеты «Все включено» с проживанием в 5-звездочном отеле в центре Стамбула, VIP-трансфером на автомобилях Mercedes и русскоговорящим куратором.',
+    whyChooseHeading: 'Почему выбирают Master Smile Studio в Стамбуле?',
+    whyChooseIntroLead: 'Для пациентов со всего мира, ценящих бескомпромиссное качество, ',
+    whyChooseIntroLink: 'Master Smile Studio Стамбул',
+    whyChooseIntroTail:
+      ' — ведущий центр комплексного восстановления улыбки. Наши преимущества:',
+    reason1Title: 'Команда специалистов всех направлений под одной крышей',
+    reason1P1:
+      'Комплексное преображение улыбки требует слаженной работы хирургии, ортопедии, пародонтологии и керамического искусства.',
+    reason1P2:
+      'Вся диагностика и производство находятся внутри клиники, что исключает обращение к сторонним подрядчикам.',
+    reason1P3:
+      'Постоянный контроль ведущих врачей клиники от первой 3D томографии до финальной проверки прикуса.',
+    reason2Title: 'Пакеты «Все включено» и экономия до 70%',
+    reason2P:
+      'Мы предлагаем швейцарские и немецкие материалы со скидкой до 70% по сравнению с ценами в клиниках Европы и СНГ.',
+    viewAllPackagesBtn: 'Все пакеты лечения и цены →',
+    reason3Title: '3D CBCT томография и микроскопы Carl Zeiss',
+    reason3P:
+      'Высокоточные технологии позволяют изготовить ваши коронки и виниры за рекордные 4–6 дней.',
+    reason4Title: 'Реальные результаты До и После',
+    reason4P:
+      'Ознакомьтесь с сотнями подтвержденных клинических случаев полного восстановления челюстей и Голливудской улыбки.',
+    reason5Title: 'Отель 5★ и трансфер на Mercedes в Стамбуле',
+    reason5PText:
+      'Проживание в 5-звездочном отеле, трансфер на автомобилях Mercedes и русскоговорящий куратор. ',
+    reason5PLink: 'Свяжитесь с нами для бесплатной медицинской консультации.',
+    typesHeading: 'Основные направления стоматологии в Master Smile Studio',
+    typesIntro:
+      'Ознакомьтесь с полным спектром современных процедур для восстановления здоровья и красоты зубов:',
+    singleTitle: '1. Имплантация зубов и восстановление челюсти (All-on-4 / All-on-6)',
+    singleP:
+      'Пожизненная гарантия на швейцарские импланты Straumann, синус-лифтинг и циркониевые мосты.',
+    singleLinkLead: 'Подробнее об ',
+    singleLinkText: 'Имплантации зубов & All-on-4/6 →',
+    multipleTitle: '2. Керамические виниры Ivoclar E-Max (Hollywood Smile)',
+    multipleP:
+      'Швейцарская стеклокерамика Ivoclar E-Max для идеальной формы и белизны зубов за 5 дней с 3D дизайном DSD.',
+    multipleLinkLead: 'Ознакомьтесь с ',
+    multipleLinkText: 'Керамическими винирами E-Max →',
+    allOn4Title: '3. Зубные коронки и мосты из немецкого циркония',
+    allOn4P:
+      'Сверхпрочный цирконий (1200+ МПа) для защиты разрушенных зубов на 360 градусов.',
+    allOn4LinkLead: 'Узнать больше о ',
+    allOn4LinkText: 'Циркониевых коронках и мостах →',
+    allOn6Title: '4. Эстетическая стоматология, протезы и терапия',
+    allOn6P:
+      'Замковые протезы без неба, отбеливание Philips Zoom, лечение каналов под микроскопом и гигиена Air-Flow.',
+    allOn6LinkLead: 'Читать о ',
+    allOn6LinkText: 'Протезах, эстетике и терапии →',
+  },
+};
 
 export default function TreatmentDetailView() {
   const locale = useLocale();
-  const [activeFaq, setActiveFaq] = useState<number | null>(0);
-  const [activeSect77, setActiveSect77] = useState<number>(0);
-  const [activeJourneyStep, setActiveJourneyStep] = useState<number | null>(0);
-
-  // Treatment Options for Section 77
-  const treatmentOptions = [
-    {
-      title: 'Full Mouth Implants',
-      target: 'Patients who have lost most or all teeth in both jaws',
-      desc: 'Complete full mouth restoration where all teeth are fixed securely with dental implants for natural function.',
-      color: '#14b8a6', // Teal
-      placeholderNum: 9,
-    },
-    {
-      title: 'All-on-4 Implants',
-      target: 'Toothless patients seeking immediate fixed teeth with minimal bone requirement',
-      desc: 'Fixed full-arch prosthesis supported by 4 precisely angled implants, suitable even with reduced jawbone density.',
-      color: '#e11d48', // Rose
-      placeholderNum: 10,
-    },
-    {
-      title: 'All-on-6 Implants',
-      target: 'Patients wanting maximum bite strength, stability, and long-term durability',
-      desc: 'Premium full-arch fixed restoration supported by 6 robust implants for optimal load distribution.',
-      color: '#84cc16', // Lime
-      placeholderNum: 11,
-    },
-    {
-      title: 'Immediate Implant Treatment',
-      target: 'Patients needing extraction and implant in the same surgical session',
-      desc: 'Implant is placed right after tooth extraction to preserve natural bone contours and save treatment time.',
-      color: '#a855f7', // Violet
-      placeholderNum: 12,
-    },
-    {
-      title: 'Zygomatic Implants',
-      target: 'Severe upper jaw bone loss where bone grafting is not desired',
-      desc: 'Specialized longer implants anchored directly into the zygomatic cheekbone without extensive bone grafts.',
-      color: '#0284c7', // Sky Blue
-      placeholderNum: 13,
-    },
-    {
-      title: 'Zirconium Implants',
-      target: 'Patients with metal sensitivity seeking 100% metal-free biocompatibility',
-      desc: 'Ceramic zirconium implants providing natural tissue integration and superior soft tissue aesthetics.',
-      color: '#d97706', // Amber
-      placeholderNum: 14,
-    },
-    {
-      title: 'Implant Supported Dentures',
-      target: 'Removable denture wearers seeking snap-on stability and comfort',
-      desc: 'Overdentures anchored with locator attachments, offering strong hold without palate coverage.',
-      color: '#4f46e5', // Indigo
-      placeholderNum: 15,
-    },
-    {
-      title: 'Sinus Lifting & Bone Grafting',
-      target: 'Patients requiring bone height augmentation in the upper posterior jaw',
-      desc: 'Lifting sinus floor and placing natural bone mineral powder to create solid foundations for implants.',
-      color: '#059669', // Emerald
-      placeholderNum: 16,
-    },
-  ];
-
-  // Package Deals List
-  const packages = [
-    {
-      name: 'ALL-ON-4 PACKAGE – NUCLEOSS',
-      brand: 'NucleOSS (Turkish Precision)',
-      duration: '3 + 7 Working Days (2 Visits)',
-      inclusions: [
-        '4x NucleOSS Implants',
-        '12x Fixed Temporary Teeth',
-        '12x Final Permanent Teeth',
-        '3D CBCT Surgical Planning',
-        'Local Anesthesia',
-        'VIP Airport & Hotel Transfers',
-        '4-Star Hotel Stay with Breakfast',
-        'Certified Laboratory Fees',
-      ],
-      priceUSD: '$5,700',
-      priceEUR: '€4,900',
-      priceGBP: '£4,200',
-      color: '#10b981',
-      placeholderNum: 3,
-    },
-    {
-      name: 'ALL-ON-4 PACKAGE – DXL GERMAN',
-      brand: 'DXL (German Engineered)',
-      duration: '3 + 7 Working Days (2 Visits)',
-      inclusions: [
-        '4x DXL German Implants',
-        '12x Fixed Temporary Teeth',
-        '12x Final Permanent Teeth',
-        '3D CBCT Surgical Planning',
-        'Local Anesthesia',
-        'VIP Airport & Hotel Transfers',
-        '4-Star Hotel Stay with Breakfast',
-        'Certified Laboratory Fees',
-      ],
-      priceUSD: '$6,400',
-      priceEUR: '€5,500',
-      priceGBP: '£4,750',
-      color: '#8b5cf6',
-      placeholderNum: 4,
-    },
-    {
-      name: 'ALL-ON-4 PACKAGE – STRAUMANN',
-      brand: 'Straumann (Swiss Premium)',
-      duration: '3 + 7 Working Days (2 Visits)',
-      inclusions: [
-        '4x Straumann Swiss Implants',
-        '12x Fixed Temporary Teeth',
-        '12x Final Permanent Teeth',
-        '3D CBCT Surgical Planning',
-        'Local Anesthesia',
-        'VIP Airport & Hotel Transfers',
-        '5-Star Luxury Hotel Stay',
-        'Lifetime Global Warranty',
-      ],
-      priceUSD: '$9,300',
-      priceEUR: '€8,000',
-      priceGBP: '£6,900',
-      color: '#ec4899',
-      placeholderNum: 5,
-    },
-    {
-      name: 'ALL-ON-6 PACKAGE – MEGAGEN',
-      brand: 'Megagen (Korean Technology)',
-      duration: '3 + 7 Working Days (2 Visits)',
-      inclusions: [
-        '6x Megagen Implants',
-        '12x Fixed Temporary Teeth',
-        '12x Final Permanent Teeth',
-        '3D CBCT Surgical Planning',
-        'Local Anesthesia',
-        'VIP Airport & Hotel Transfers',
-        '4-Star Hotel Stay with Breakfast',
-        'Certified Laboratory Fees',
-      ],
-      priceUSD: '$8,000',
-      priceEUR: '€7,000',
-      priceGBP: '£6,000',
-      color: '#06b6d4',
-      placeholderNum: 6,
-    },
-    {
-      name: 'ALL-ON-6 PACKAGE – NEODENT',
-      brand: 'Neodent by Straumann',
-      duration: '3 + 7 Working Days (2 Visits)',
-      inclusions: [
-        '6x Neodent Implants',
-        '12x Fixed Temporary Teeth',
-        '12x Final Permanent Teeth',
-        '3D CBCT Surgical Planning',
-        'Local Anesthesia',
-        'VIP Airport & Hotel Transfers',
-        '4-Star Hotel Stay with Breakfast',
-        'Certified Laboratory Fees',
-      ],
-      priceUSD: '$8,000',
-      priceEUR: '€7,000',
-      priceGBP: '£6,000',
-      color: '#f97316',
-      placeholderNum: 7,
-    },
-    {
-      name: 'ALL-ON-6 PACKAGE – HIOSSEN',
-      brand: 'Hiossen (American Brand)',
-      duration: '3 + 7 Working Days (2 Visits)',
-      inclusions: [
-        '6x Hiossen Implants',
-        '12x Fixed Temporary Teeth',
-        '12x Final Permanent Teeth',
-        '3D CBCT Surgical Planning',
-        'Local Anesthesia',
-        'VIP Airport & Hotel Transfers',
-        '4-Star Hotel Stay with Breakfast',
-        'Certified Laboratory Fees',
-      ],
-      priceUSD: '$7,700',
-      priceEUR: '€6,750',
-      priceGBP: '£5,780',
-      color: '#6366f1',
-      placeholderNum: 8,
-    },
-  ];
-
-  // Journey Steps Accordion (Section ACC)
-  const journeySteps = [
-    {
-      title: 'Average Length of Stay in Antalya',
-      content: 'For full mouth dental implants, most patients stay 3-5 days for the first surgery visit, and 5-7 days for the final permanent smile fitting visit. We handle all scheduling to fit your flight times seamlessly.',
-      icon: '01',
-    },
-    {
-      title: 'Number of Visits Required',
-      content: 'Treatment is carried out in two comfortable visits. Visit 1: 3D tomography planning, extractions (if needed), implant placement, and fixed temporary teeth. Visit 2: Final permanent zirconia teeth attachment after osseointegration (3-6 months).',
-      icon: '02',
-    },
-    {
-      title: 'Recovery & Osseointegration Time',
-      content: 'Implants fuse naturally with your bone over 3 to 6 months. During this healing period, you can comfortably chew and smile with your fixed temporary teeth while living your regular life at home.',
-      icon: '03',
-    },
-    {
-      title: 'Transparent Pricing & Warranty',
-      content: 'Our prices include all stages with no hidden hospital or laboratory extras. Every implant comes with an official manufacturer passport and lifetime international guarantee certificate.',
-      icon: '04',
-    },
-  ];
-
-  // Doctors / Specialist Surgeons
-  const doctors = [
-    {
-      name: 'Dr. Dt. Onur Utku Yüksel',
-      title: 'Oral & Maxillofacial Surgeon',
-      role: 'Head of Implantology',
-      placeholderNum: 19,
-      color: '#ea580c',
-    },
-    {
-      name: 'Dt. Ufuk Ağdaşan',
-      title: 'Aesthetic & Cosmetic Dentist',
-      role: 'Smile Makeover Lead',
-      placeholderNum: 20,
-      color: '#9333ea',
-    },
-    {
-      name: 'MSc. Dt. Hakkı Serdar Ünal',
-      title: 'Oral Implantology Specialist',
-      role: 'Surgical Prosthodontist',
-      placeholderNum: 21,
-      color: '#0891b2',
-    },
-    {
-      name: 'Dt. Çağatay Çakır',
-      title: 'Restorative & Endodontist',
-      role: 'Clinical Specialist',
-      placeholderNum: 22,
-      color: '#16a34a',
-    },
-  ];
-
-  // Included Services Badges (Sectinfo1)
-  const servicesIncluded = [
-    'Specialist Dental Consultation',
-    '3D CBCT Panoramic Tomography',
-    'Surgeon Work & Surgical Planning',
-    'VIP Airport & Clinic Transfers',
-    'Local Anesthesia & Comfort Protocol',
-    'Full Medication & Aftercare Kit',
-    'Certified Digital Lab Artistry',
-    '4/5-Star Hotel Stay with Breakfast',
-  ];
-
-  // Video Stories Reels
-  const videoStories = [
-    { title: 'Full Mouth Transformation', placeholderNum: 23, color: '#db2777' },
-    { title: 'All-on-4 Patient Experience', placeholderNum: 24, color: '#7c3aed' },
-    { title: 'UK Patient Journey to Antalya', placeholderNum: 25, color: '#2563eb' },
-    { title: 'German Patient Dental Story', placeholderNum: 26, color: '#059669' },
-    { title: 'Immediate Implant Recovery', placeholderNum: 27, color: '#d97706' },
-    { title: 'Smile Makeover Result', placeholderNum: 28, color: '#4f46e5' },
-  ];
-
-  // FAQs
-  const faqs = [
-    {
-      q: 'What are full mouth dental implants and how do they work?',
-      a: 'Full mouth dental implants replace all missing or damaged teeth in an upper or lower jaw (or both) using 4, 6, or more titanium implants anchored firmly into the jawbone, topped with a custom fixed bridge.',
-    },
-    {
-      q: 'Is the dental implant procedure painful?',
-      a: 'Not at all. The entire surgery is performed under local anesthesia or optional conscious sedation. Patients report minimal discomfort similar to a standard filling, easily managed with mild painkillers.',
-    },
-    {
-      q: 'How many days do I need to stay in Antalya for full dental implants?',
-      a: 'The first visit requires 3 to 5 days for implant placement and temporary teeth attachment. The second visit (3-6 months later) takes 5 to 7 days for the final custom zirconia teeth fitting.',
-    },
-    {
-      q: 'What is the difference between All-on-4 and All-on-6 implants?',
-      a: 'All-on-4 uses 4 implants per arch (ideal when posterior bone volume is limited). All-on-6 uses 6 implants for increased biting force and stability if sufficient bone is present.',
-    },
-    {
-      q: 'Are the dental implants guaranteed?',
-      a: 'Yes. All our premium implant brands (Straumann, Megagen, NucleOSS, DXL, Neodent) come with international lifetime warranties and official brand passports.',
-    },
-    {
-      q: 'Will I be left without teeth during the healing period?',
-      a: 'No. You will receive fixed temporary teeth on the very first visit, so you can eat, speak, and smile with confidence throughout the healing period.',
-    },
-  ];
+  const d = HUB_DATA[locale] || HUB_DATA.en;
 
   return (
-    <div style={{ backgroundColor: '#ffffff', color: '#0f172a' }}>
-      {/* 1. Introduction Overview Section */}
-      <section style={{ padding: '4.5rem 1.5rem 2rem 1.5rem', maxWidth: '1280px', margin: '0 auto' }}>
-        <div style={{ maxWidth: '900px', marginBottom: '2.5rem' }}>
-          <h2 style={{ fontSize: 'clamp(1.8rem, 3.5vw, 2.75rem)', fontWeight: 600, color: '#0f172a', letterSpacing: '-0.02em', lineHeight: 1.2, marginBottom: '1.25rem' }}>
-            Full Mouth Dental Implants in Antalya, Turkey
-          </h2>
-          <p style={{ fontSize: '1.05rem', color: '#475569', lineHeight: 1.7, marginBottom: '1.25rem' }}>
-            Full dental implants in Turkey are a complete and permanent solution for patients who have lost most or all of their natural teeth. At <strong>Master Smile Studio</strong>, our oral surgery specialists provide safe, cutting-edge, and long-lasting full mouth treatments designed specifically for international patients seeking five-star results at affordable prices.
-          </p>
-          <p style={{ fontSize: '1rem', color: '#64748b', lineHeight: 1.6 }}>
-            Our full mouth options include: <strong>All-on-4 Implants</strong>, <strong>All-on-6 Implants</strong>, <strong>Zygomatic Implants</strong>, <strong>Zirconium Implants</strong>, and <strong>Implant-Supported Overdentures</strong>.
-          </p>
-        </div>
+    <div className={styles.pageWrapper}>
+      {/* 1. INTRO EDITORIAL CLINICAL SECTION */}
+      <section aria-labelledby="hub-intro-heading" className={styles.introSection}>
+        <div className={styles.container}>
+          <h1 id="hub-intro-heading" className={styles.mainHeading}>
+            {d.introHeading}
+          </h1>
+          <p className={styles.textP}>{d.introP1}</p>
 
-        {/* Media Placeholder #2: Overview YouTube Video */}
-        <div style={{ maxWidth: '960px', margin: '0 auto 4rem auto' }}>
-          <MediaPlaceholder
-            num={2}
-            label="Full Mouth Implant Video Overview (YouTube Embedded Video)"
-            type="video"
-            color="#3b82f6"
-            aspectRatio="16/9"
-          />
-        </div>
-      </section>
+          {/* 3-Part Breakdown */}
+          <h2 className={styles.subHeading}>{d.partsTitle}</h2>
+          <ul className={styles.bulletList}>
+            <li>
+              <strong>{d.part1Label}</strong> – {d.part1Desc}
+            </li>
+            <li>
+              <strong>{d.part2Label}</strong> – {d.part2Desc}
+            </li>
+            <li>
+              <strong>{d.part3Label}</strong> – {d.part3Desc}
+            </li>
+          </ul>
 
-      {/* 2. Package Deals & Price Comparison Section */}
-      <section style={{ backgroundColor: '#f8fafc', padding: '5rem 1.5rem', borderTop: '1px solid #e2e8f0', borderBottom: '1px solid #e2e8f0' }}>
-        <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
-          <div style={{ textAlign: 'center', maxWidth: '780px', margin: '0 auto 3.5rem auto' }}>
-            <span style={{ fontSize: '0.82rem', fontWeight: 700, color: '#D58936', textTransform: 'uppercase', letterSpacing: '0.12em', display: 'block', marginBottom: '0.5rem' }}>
-              All-Inclusive Dental Tourism
-            </span>
-            <h2 style={{ fontSize: 'clamp(2rem, 4vw, 2.75rem)', fontWeight: 600, color: '#0f172a', letterSpacing: '-0.02em', lineHeight: 1.2, margin: '0 0 1rem 0' }}>
-              Full Mouth Dental Implants Turkey Package Deals & Prices
-            </h2>
-            <p style={{ fontSize: '1rem', color: '#64748b', lineHeight: 1.6 }}>
-              Transparent pricing with no hidden clinic or surgical fees. Packages include surgical CBCT scans, temporary teeth, hotel stay, and private VIP transfers.
-            </p>
-          </div>
+          <p className={styles.textP}>{d.healingP}</p>
+          <p className={styles.textP}>{d.solutionP}</p>
 
-          {/* Packages 3-Column Grid */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))', gap: '2rem' }}>
-            {packages.map((pkg, idx) => (
-              <div
-                key={idx}
-                style={{
-                  backgroundColor: '#ffffff',
-                  borderRadius: '20px',
-                  border: '1px solid #e2e8f0',
-                  padding: '1.75rem',
-                  boxShadow: '0 10px 30px rgba(0, 0, 0, 0.05)',
-                  display: 'flex',
-                  flexDirection: 'column',
-                  justifyContent: 'space-between',
-                  transition: 'transform 0.3s ease, box-shadow 0.3s ease',
-                }}
-                className="package-card"
-              >
-                <div>
-                  <h3 style={{ fontSize: '1.15rem', fontWeight: 700, color: '#0f172a', marginBottom: '1rem', minHeight: '44px' }}>
-                    {pkg.name}
-                  </h3>
-
-                  {/* Package Media Placeholder (Placeholders #3 to #8) */}
-                  <div style={{ marginBottom: '1.25rem' }}>
-                    <MediaPlaceholder
-                      num={pkg.placeholderNum}
-                      label={`${pkg.brand} Package Image`}
-                      type="image"
-                      color={pkg.color}
-                      aspectRatio="16/9"
-                    />
-                  </div>
-
-                  {/* Duration Badge */}
-                  <div style={{ backgroundColor: '#f1f5f9', padding: '0.6rem 0.9rem', borderRadius: '10px', marginBottom: '1.25rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                    <span style={{ fontSize: '0.82rem', color: '#64748b', fontWeight: 600 }}>Duration:</span>
-                    <span style={{ fontSize: '0.85rem', color: '#0f172a', fontWeight: 700 }}>{pkg.duration}</span>
-                  </div>
-
-                  {/* What's Included */}
-                  <div style={{ marginBottom: '1.5rem' }}>
-                    <span style={{ fontSize: '0.88rem', fontWeight: 700, color: '#0f172a', display: 'block', marginBottom: '0.65rem' }}>
-                      What’s Included?
-                    </span>
-                    <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.45rem' }}>
-                      {pkg.inclusions.map((item, iIdx) => (
-                        <li key={iIdx} style={{ fontSize: '0.86rem', color: '#475569', display: 'flex', alignItems: 'flex-start', gap: '0.5rem' }}>
-                          <span style={{ color: '#D58936', fontWeight: 700 }}>✓</span>
-                          <span>{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-
-                <div>
-                  {/* Prices in 3 Currencies */}
-                  <div style={{ borderTop: '1px solid #f1f5f9', paddingTop: '1.25rem', marginBottom: '1.25rem' }}>
-                    <span style={{ fontSize: '0.78rem', color: '#94a3b8', display: 'block', marginBottom: '0.4rem' }}>
-                      Package price per arch (one jaw):
-                    </span>
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', backgroundColor: '#09090b', color: '#ffffff', borderRadius: '12px', padding: '0.75rem 1rem' }}>
-                      <span style={{ fontSize: '1.1rem', fontWeight: 800, color: '#FFA552' }}>{pkg.priceUSD}</span>
-                      <span style={{ fontSize: '1.05rem', fontWeight: 700, color: '#e4e4e7' }}>{pkg.priceEUR}</span>
-                      <span style={{ fontSize: '1.05rem', fontWeight: 700, color: '#e4e4e7' }}>{pkg.priceGBP}</span>
-                    </div>
-                  </div>
-
-                  {/* Action CTA Button */}
-                  <Link
-                    href="/contact"
-                    style={{
-                      display: 'block',
-                      textAlign: 'center',
-                      backgroundColor: '#D58936',
-                      color: '#ffffff',
-                      fontWeight: 700,
-                      fontSize: '0.9rem',
-                      padding: '0.85rem 1.25rem',
-                      borderRadius: '9999px',
-                      textDecoration: 'none',
-                      boxShadow: '0 6px 18px rgba(213, 137, 54, 0.35)',
-                      transition: 'all 0.2s ease',
-                    }}
-                  >
-                    Get Personalized Quote Now
-                  </Link>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* 3. Section 77: Interactive Treatment Finder Accordion */}
-      <section style={{ padding: '5rem 1.5rem', maxWidth: '1280px', margin: '0 auto' }}>
-        <div style={{ maxWidth: '800px', marginBottom: '3rem' }}>
-          <span style={{ fontSize: '0.82rem', fontWeight: 700, color: '#D58936', textTransform: 'uppercase', letterSpacing: '0.12em', display: 'block', marginBottom: '0.5rem' }}>
-            Interactive Decision Guide
-          </span>
-          <h2 style={{ fontSize: 'clamp(1.9rem, 3.8vw, 2.6rem)', fontWeight: 600, color: '#0f172a', letterSpacing: '-0.02em', lineHeight: 1.2, margin: '0 0 1rem 0' }}>
-            Find the Right Treatment for You
-          </h2>
-          <p style={{ fontSize: '1rem', color: '#64748b', lineHeight: 1.6 }}>
-            Not sure which dental treatment suits your needs? Browse through our full mouth options to see who each procedure is for and what it delivers.
-          </p>
-        </div>
-
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2.5rem', alignItems: 'start' }}>
-          {/* Left: Accordion List */}
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-            {treatmentOptions.map((opt, idx) => {
-              const isOpen = activeSect77 === idx;
-              return (
-                <div
-                  key={idx}
-                  onClick={() => setActiveSect77(idx)}
-                  style={{
-                    backgroundColor: isOpen ? '#ffffff' : '#f8fafc',
-                    borderRadius: '16px',
-                    border: isOpen ? `2px solid ${opt.color}` : '1px solid #e2e8f0',
-                    padding: '1.25rem 1.5rem',
-                    cursor: 'pointer',
-                    boxShadow: isOpen ? `0 10px 25px ${opt.color}15` : 'none',
-                    transition: 'all 0.25s ease',
-                  }}
-                >
-                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '1rem' }}>
-                    <div>
-                      <span style={{ fontSize: '1.05rem', fontWeight: 700, color: isOpen ? opt.color : '#0f172a', display: 'block' }}>
-                        {opt.title}
-                      </span>
-                      <span style={{ fontSize: '0.84rem', color: '#64748b', display: 'block', marginTop: '0.2rem' }}>
-                        {opt.target}
-                      </span>
-                    </div>
-                    <svg
-                      width="18"
-                      height="18"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke={isOpen ? opt.color : '#94a3b8'}
-                      strokeWidth="2.5"
-                      style={{
-                        transform: isOpen ? 'rotate(90deg)' : 'rotate(0deg)',
-                        transition: 'transform 0.2s ease',
-                        flexShrink: 0,
-                      }}
-                    >
-                      <path d="M9 18l6-6-6-6" />
-                    </svg>
-                  </div>
-
-                  {isOpen && (
-                    <div style={{ marginTop: '1rem', paddingTop: '1rem', borderTop: '1px solid #f1f5f9' }}>
-                      <p style={{ fontSize: '0.92rem', color: '#475569', lineHeight: 1.6, margin: '0 0 1rem 0' }}>
-                        {opt.desc}
-                      </p>
-                      <Link
-                        href="/contact"
-                        style={{
-                          fontSize: '0.85rem',
-                          fontWeight: 700,
-                          color: opt.color,
-                          textDecoration: 'none',
-                          display: 'inline-flex',
-                          alignItems: 'center',
-                          gap: '0.4rem',
-                        }}
-                      >
-                        <span>BOOK FREE CONSULTATION</span>
-                        <span>→</span>
-                      </Link>
-                    </div>
-                  )}
-                </div>
-              );
-            })}
-          </div>
-
-          {/* Right: Dynamic Selected Treatment Visual Placeholder (Placeholders #9 to #16) */}
-          <div style={{ position: 'sticky', top: '100px' }}>
-            <MediaPlaceholder
-              num={treatmentOptions[activeSect77].placeholderNum}
-              label={`${treatmentOptions[activeSect77].title} Treatment Showcase Visual`}
-              type="image"
-              color={treatmentOptions[activeSect77].color}
-              aspectRatio="4/3"
+          {/* Fullwidth Horizontal Video Embed */}
+          <div className={styles.mainVideoWrap}>
+            <iframe
+              src="https://www.youtube.com/embed/R081L98DAls?t=21"
+              title="Dental Treatments and Smile Transformations at Master Smile Studio Istanbul"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
             />
           </div>
+
+          <div className={styles.dividerWrap}>
+            <TreatmentDivider />
+          </div>
+
+          {/* TRIPLE VIDEO SHORTS SLIDER */}
+          <TreatmentTripleVideoSlider />
         </div>
       </section>
 
-      {/* 4. Parallax Journey Quote Banner */}
-      <section style={{ position: 'relative', width: '100%', minHeight: '440px', display: 'flex', alignItems: 'center', backgroundColor: '#09090b', overflow: 'hidden', padding: '4rem 1.5rem' }}>
-        {/* Parallax Background Placeholder (Placeholder #17) */}
-        <div style={{ position: 'absolute', inset: 0, opacity: 0.35, zIndex: 0 }}>
-          <MediaPlaceholder
-            num={17}
-            label="Parallax Background Banner Image"
-            type="image"
-            color="#f43f5e"
-            height="100%"
-            style={{ borderRadius: 0, border: 'none' }}
-          />
-        </div>
+      {/* 2. MASTER 7-DISCIPLINE SHOWCASE WITH INTERNAL DEEP LINKS */}
+      <TreatmentsHubDisciplineShowcase />
 
-        <div style={{ position: 'relative', zIndex: 2, maxWidth: '960px', margin: '0 auto', textAlign: 'center', color: '#ffffff' }}>
-          <span style={{ fontSize: '0.85rem', fontWeight: 700, color: '#FFA552', letterSpacing: '0.15em', textTransform: 'uppercase', display: 'block', marginBottom: '1rem' }}>
-            Master Smile Studio Patient Promise
-          </span>
-          <h2 style={{ fontSize: 'clamp(2rem, 4.5vw, 3.2rem)', fontWeight: 600, letterSpacing: '-0.02em', lineHeight: 1.2, margin: '0 0 1.5rem 0' }}>
-            Your Journey, Seamlessly Designed
+      {/* 3. WHY CHOOSE MASTER SMILE STUDIO IN ISTANBUL */}
+      <section aria-labelledby="why-choose-hub-heading" className={styles.whyChooseSection}>
+        <div className={styles.container}>
+          <div className={styles.dividerWrap}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              width="1240"
+              height="49"
+              src="https://sohodent.com/doc/static/cizgi.webp"
+              alt=""
+              loading="lazy"
+              style={{ width: '100%', maxWidth: '1200px', height: 'auto', display: 'block', opacity: 0.85 }}
+            />
+          </div>
+
+          <h2 id="why-choose-hub-heading" className={styles.sectionTitle}>
+            {d.whyChooseHeading}
           </h2>
-          <p style={{ fontSize: 'clamp(1rem, 2vw, 1.2rem)', color: '#cbd5e1', lineHeight: 1.7, maxWidth: '780px', margin: '0 auto 2.5rem auto' }}>
-            From your first message to your final smile — we guide you through every step with personalized care, clear communication, and world-class dental expertise.
-          </p>
 
-          {/* Quick Action Buttons */}
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap' }}>
-            <Link
-              href="/contact"
-              className="hero-btn-primary"
-              style={{
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: '0.65rem',
-                backgroundColor: '#ffffff',
-                color: '#0f172a',
-                padding: '0.85rem 1.85rem',
-                borderRadius: '9999px',
-                fontWeight: 700,
-                fontSize: '0.95rem',
-                textDecoration: 'none',
-              }}
-            >
-              <span>Book Appointment</span>
+          <p className={styles.textP}>
+            {d.whyChooseIntroLead}
+            <Link href="/treatments" className={styles.linkGold}>
+              {d.whyChooseIntroLink}
             </Link>
+            {d.whyChooseIntroTail}
+          </p>
 
-            <a
-              href={getWhatsAppLink(locale)}
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: '0.65rem',
-                backgroundColor: '#22c55e',
-                color: '#ffffff',
-                padding: '0.85rem 1.85rem',
-                borderRadius: '9999px',
-                fontWeight: 700,
-                fontSize: '0.95rem',
-                textDecoration: 'none',
-                boxShadow: '0 8px 20px rgba(34, 197, 94, 0.4)',
-              }}
-            >
-              <span>WhatsApp Consultation</span>
-            </a>
-          </div>
-        </div>
-      </section>
+          {/* 1. Multidisciplinary Specialist Team */}
+          <h3 className={styles.sectionSubTitle}>
+            <span className={styles.reasonNumber}>1.</span> {d.reason1Title}
+          </h3>
+          <p className={styles.textP}>{d.reason1P1}</p>
+          <p className={styles.textP}>{d.reason1P2}</p>
+          <p className={styles.textP}>{d.reason1P3}</p>
 
-      {/* 5. Stay Details, Number of Visits & Recovery Accordion (Section ACC) */}
-      <section style={{ padding: '5rem 1.5rem', maxWidth: '1280px', margin: '0 auto' }}>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '3rem', alignItems: 'center' }}>
-          {/* Left Column: Accordion */}
-          <div>
-            <span style={{ fontSize: '0.82rem', fontWeight: 700, color: '#D58936', textTransform: 'uppercase', letterSpacing: '0.12em', display: 'block', marginBottom: '0.5rem' }}>
-              Simple & Predictable Process
-            </span>
-            <h2 style={{ fontSize: 'clamp(1.9rem, 3.8vw, 2.6rem)', fontWeight: 600, color: '#0f172a', letterSpacing: '-0.02em', lineHeight: 1.2, margin: '0 0 1.5rem 0' }}>
-              Your Dental Journey Made Simple
-            </h2>
-            <p style={{ fontSize: '0.95rem', color: '#64748b', lineHeight: 1.6, marginBottom: '2rem' }}>
-              From initial online consultation to final smile delivery in Antalya, everything is planned with international travelers in mind.
-            </p>
-
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-              {journeySteps.map((step, sIdx) => {
-                const isOpen = activeJourneyStep === sIdx;
-                return (
-                  <div
-                    key={sIdx}
-                    onClick={() => setActiveJourneyStep(isOpen ? null : sIdx)}
-                    style={{
-                      backgroundColor: isOpen ? '#f8fafc' : '#ffffff',
-                      borderRadius: '14px',
-                      border: '1px solid #e2e8f0',
-                      padding: '1.2rem',
-                      cursor: 'pointer',
-                      transition: 'all 0.2s ease',
-                    }}
-                  >
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '1rem' }}>
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '0.85rem' }}>
-                        <span style={{ width: '32px', height: '32px', borderRadius: '50%', backgroundColor: '#D58936', color: '#ffffff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.85rem', fontWeight: 800 }}>
-                          {step.icon}
-                        </span>
-                        <span style={{ fontSize: '1rem', fontWeight: 700, color: '#0f172a' }}>
-                          {step.title}
-                        </span>
-                      </div>
-                      <svg
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="#64748b"
-                        strokeWidth="2.5"
-                        style={{
-                          transform: isOpen ? 'rotate(180deg)' : 'rotate(0deg)',
-                          transition: 'transform 0.2s ease',
-                        }}
-                      >
-                        <path d="M6 9l6 6 6-6" />
-                      </svg>
-                    </div>
-
-                    {isOpen && (
-                      <p style={{ marginTop: '0.85rem', paddingTop: '0.85rem', borderTop: '1px solid #e2e8f0', fontSize: '0.9rem', color: '#475569', lineHeight: 1.6, margin: '0.85rem 0 0 0' }}>
-                        {step.content}
-                      </p>
-                    )}
-                  </div>
-                );
-              })}
-            </div>
+          {/* INSERT: OUR DENTISTS */}
+          <div className="my-8">
+            <TreatmentDoctorsSection />
           </div>
 
-          {/* Right Column: Media Placeholder #18 (Journey Explainer Video) */}
-          <div>
-            <MediaPlaceholder
-              num={18}
-              label="Treatment Journey & Recovery Guide Video (YouTube)"
-              type="video"
-              color="#2563eb"
-              aspectRatio="16/9"
+          {/* INSERT: PARALLAX BANNER */}
+          <div className="my-8">
+            <TreatmentParallaxBanner />
+          </div>
+
+          {/* 2. Cost & Packages */}
+          <h3 className={styles.sectionSubTitle}>
+            <span className={styles.reasonNumber}>2.</span> {d.reason2Title}
+          </h3>
+          <p className={styles.textP}>{d.reason2P}</p>
+
+          {/* INSERT: ALL PACKAGES SLIDER */}
+          <div className="my-8">
+            <TreatmentPackagesSlider />
+          </div>
+
+          <div className={styles.btnWrap}>
+            <Link href="/treatments" className={styles.btnPrimary}>
+              {d.viewAllPackagesBtn}
+            </Link>
+          </div>
+
+          {/* 3. 3D CBCT Tomography & CAD/CAM Lab */}
+          <h3 className={styles.sectionSubTitle}>
+            <span className={styles.reasonNumber}>3.</span> {d.reason3Title}
+          </h3>
+          <p className={styles.textP}>{d.reason3P}</p>
+
+          {/* Full-width Video */}
+          <div className={styles.mainVideoWrap}>
+            <iframe
+              src="https://www.youtube.com/embed/K4Xpx7JMyr8"
+              title="Advanced Dental Lab Technology Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
             />
           </div>
+
+          {/* 4. Before & After Real Cases */}
+          <h3 className={styles.sectionSubTitle}>
+            <span className={styles.reasonNumber}>4.</span> {d.reason4Title}
+          </h3>
+          <p className={styles.textP}>{d.reason4P}</p>
+
+          {/* INSERT: BEFORE - AFTER SLIDER */}
+          <div className="my-8">
+            <TreatmentBeforeAfterSliderSection />
+          </div>
+
+          {/* 5. Luxury Travel & VIP Care */}
+          <h3 className={styles.sectionSubTitle}>
+            <span className={styles.reasonNumber}>5.</span> {d.reason5Title}
+          </h3>
+          <p className={styles.textP}>
+            {d.reason5PText}
+            <Link href="/contact" className={styles.linkGold}>
+              {d.reason5PLink}
+            </Link>
+          </p>
         </div>
       </section>
 
-      {/* 6. Section DOC: Our Specialist Surgeons */}
-      <section style={{ backgroundColor: '#f8fafc', padding: '5rem 1.5rem', borderTop: '1px solid #e2e8f0', borderBottom: '1px solid #e2e8f0' }}>
-        <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
-          <div style={{ textAlign: 'center', maxWidth: '780px', margin: '0 auto 3.5rem auto' }}>
-            <span style={{ fontSize: '0.82rem', fontWeight: 700, color: '#D58936', textTransform: 'uppercase', letterSpacing: '0.12em', display: 'block', marginBottom: '0.5rem' }}>
-              Clinical Team
-            </span>
-            <h2 style={{ fontSize: 'clamp(2rem, 4vw, 2.75rem)', fontWeight: 600, color: '#0f172a', letterSpacing: '-0.02em', lineHeight: 1.2, margin: '0 0 1rem 0' }}>
-              Meet Our Specialist Dental Surgeons
-            </h2>
-            <p style={{ fontSize: '1rem', color: '#64748b', lineHeight: 1.6 }}>
-              All surgical procedures are conducted by board-certified oral surgeons and aesthetic dental specialists with decades of combined clinical success.
-            </p>
-          </div>
+      {/* 4. YOUR DENTAL JOURNEY MADE SIMPLE (4-Step Timeline) */}
+      <TreatmentJourneySimpleSection />
 
-          {/* Doctors 4-Column Grid with Placeholders #19 to #22 */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '1.75rem' }}>
-            {doctors.map((doc, dIdx) => (
-              <div
-                key={dIdx}
-                style={{
-                  backgroundColor: '#ffffff',
-                  borderRadius: '20px',
-                  border: '1px solid #e2e8f0',
-                  overflow: 'hidden',
-                  boxShadow: '0 8px 24px rgba(0, 0, 0, 0.04)',
-                  display: 'flex',
-                  flexDirection: 'column',
-                }}
-              >
-                <div style={{ padding: '0.75rem' }}>
-                  <MediaPlaceholder
-                    num={doc.placeholderNum}
-                    label={`${doc.name} Portrait Photo`}
-                    type="image"
-                    color={doc.color}
-                    aspectRatio="3/4"
-                  />
-                </div>
-                <div style={{ padding: '1.25rem', textAlign: 'center' }}>
-                  <h3 style={{ fontSize: '1.1rem', fontWeight: 700, color: '#0f172a', margin: '0 0 0.25rem 0' }}>
-                    {doc.name}
-                  </h3>
-                  <span style={{ fontSize: '0.85rem', color: '#D58936', fontWeight: 600, display: 'block', marginBottom: '0.2rem' }}>
-                    {doc.title}
-                  </span>
-                  <span style={{ fontSize: '0.78rem', color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
-                    {doc.role}
-                  </span>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* 7. Section INFO1: All-Inclusive Service Inclusions Grid */}
-      <section style={{ padding: '5rem 1.5rem', maxWidth: '1280px', margin: '0 auto' }}>
-        <div style={{ textAlign: 'center', maxWidth: '780px', margin: '0 auto 3rem auto' }}>
-          <span style={{ fontSize: '0.82rem', fontWeight: 700, color: '#D58936', textTransform: 'uppercase', letterSpacing: '0.12em', display: 'block', marginBottom: '0.5rem' }}>
-            Everything You Need
-          </span>
-          <h2 style={{ fontSize: 'clamp(1.9rem, 3.8vw, 2.5rem)', fontWeight: 600, color: '#0f172a', letterSpacing: '-0.02em', lineHeight: 1.2, margin: '0 0 1rem 0' }}>
-            Our Best Services Included in Your Package
+      {/* 5. CORE DENTAL DISCIPLINES & SOLUTIONS */}
+      <section aria-labelledby="types-hub-heading" className={styles.introSection}>
+        <div className={styles.container}>
+          <h2 id="types-hub-heading" className={styles.sectionTitle}>
+            {d.typesHeading}
           </h2>
-        </div>
+          <p className={styles.textP}>{d.typesIntro}</p>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '1.25rem' }}>
-          {servicesIncluded.map((srv, sIdx) => (
-            <div
-              key={sIdx}
-              style={{
-                backgroundColor: '#ffffff',
-                borderRadius: '16px',
-                border: '1px solid #e2e8f0',
-                padding: '1.25rem 1.5rem',
-                display: 'flex',
-                alignItems: 'center',
-                gap: '1rem',
-                boxShadow: '0 4px 12px rgba(0, 0, 0, 0.03)',
-              }}
-            >
-              <div
-                style={{
-                  width: '36px',
-                  height: '36px',
-                  borderRadius: '50%',
-                  backgroundColor: 'rgba(213, 137, 54, 0.15)',
-                  color: '#D58936',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  flexShrink: 0,
-                  fontWeight: 800,
-                }}
-              >
-                ✓
-              </div>
-              <span style={{ fontSize: '0.92rem', fontWeight: 600, color: '#1e293b' }}>
-                {srv}
-              </span>
-            </div>
-          ))}
-        </div>
-      </section>
+          {/* 1. Dental Implants */}
+          <h3 className={styles.sectionSubTitle}>{d.singleTitle}</h3>
+          <p className={styles.textP}>{d.singleP}</p>
+          <p className={styles.textItalic}>
+            {d.singleLinkLead}
+            <Link href="/treatments/dental-implants" className={styles.linkGold}>
+              {d.singleLinkText}
+            </Link>
+          </p>
 
-      {/* 8. Section INSTA: Real Patients Video Stories */}
-      <section style={{ backgroundColor: '#09090b', color: '#ffffff', padding: '5rem 1.5rem' }}>
-        <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
-          <div style={{ textAlign: 'center', maxWidth: '780px', margin: '0 auto 3.5rem auto' }}>
-            <span style={{ fontSize: '0.82rem', fontWeight: 700, color: '#FFA552', textTransform: 'uppercase', letterSpacing: '0.12em', display: 'block', marginBottom: '0.5rem' }}>
-              Patient Testimonials
-            </span>
-            <h2 style={{ fontSize: 'clamp(2rem, 4vw, 2.75rem)', fontWeight: 600, color: '#ffffff', letterSpacing: '-0.02em', lineHeight: 1.2, margin: '0 0 1rem 0' }}>
-              Real Patients. Real Smiles.
-            </h2>
-            <p style={{ fontSize: '1rem', color: '#94a3b8', lineHeight: 1.6 }}>
-              Explore the journey of our international patients through authentic video reels, testimonials, and smile reveals.
-            </p>
-          </div>
+          {/* 2. Dental Veneers */}
+          <h3 className={styles.sectionSubTitle}>{d.multipleTitle}</h3>
+          <p className={styles.textP}>{d.multipleP}</p>
+          <p className={styles.textItalic}>
+            {d.multipleLinkLead}
+            <Link href="/treatments/dental-veneers" className={styles.linkGold}>
+              {d.multipleLinkText}
+            </Link>
+          </p>
 
-          {/* 6 Reels Grid with Placeholders #23 to #28 */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '1.25rem' }}>
-            {videoStories.map((reel, rIdx) => (
-              <div key={rIdx}>
-                <MediaPlaceholder
-                  num={reel.placeholderNum}
-                  label={reel.title}
-                  type="video"
-                  color={reel.color}
-                  aspectRatio="9/16"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* 9. Section BA: Before & After Transformation Slider */}
-      <section style={{ padding: '5rem 1.5rem', maxWidth: '1280px', margin: '0 auto' }}>
-        <div style={{ textAlign: 'center', maxWidth: '780px', margin: '0 auto 3rem auto' }}>
-          <span style={{ fontSize: '0.82rem', fontWeight: 700, color: '#D58936', textTransform: 'uppercase', letterSpacing: '0.12em', display: 'block', marginBottom: '0.5rem' }}>
-            Clinical Outcomes
-          </span>
-          <h2 style={{ fontSize: 'clamp(1.9rem, 3.8vw, 2.6rem)', fontWeight: 600, color: '#0f172a', letterSpacing: '-0.02em', lineHeight: 1.2, margin: '0 0 1rem 0' }}>
-            Before & After Full Mouth Transformations
-          </h2>
-        </div>
-
-        {/* Media Placeholder #29: Before / After Slider */}
-        <div style={{ maxWidth: '920px', margin: '0 auto' }}>
-          <MediaPlaceholder
-            num={29}
-            label="Interactive Before / After Smile Split Slider"
-            type="slider"
-            color="#e11d48"
-            aspectRatio="16/9"
-          />
-        </div>
-      </section>
-
-      {/* 10. Patient Full Experience Video Showcase */}
-      <section style={{ backgroundColor: '#f8fafc', padding: '5rem 1.5rem', borderTop: '1px solid #e2e8f0' }}>
-        <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
-          <div style={{ textAlign: 'center', maxWidth: '780px', margin: '0 auto 3rem auto' }}>
-            <span style={{ fontSize: '0.82rem', fontWeight: 700, color: '#D58936', textTransform: 'uppercase', letterSpacing: '0.12em', display: 'block', marginBottom: '0.5rem' }}>
-              Full Video Review
-            </span>
-            <h2 style={{ fontSize: 'clamp(1.9rem, 3.8vw, 2.6rem)', fontWeight: 600, color: '#0f172a', letterSpacing: '-0.02em', lineHeight: 1.2, margin: '0 0 1rem 0' }}>
-              Full Mouth Dental Implants Reviews in Antalya, Turkey
-            </h2>
-          </div>
-
-          {/* Media Placeholder #30: Full Patient Video */}
-          <div style={{ maxWidth: '880px', margin: '0 auto' }}>
-            <MediaPlaceholder
-              num={30}
-              label="Full Patient Video Testimonial (YouTube Embed)"
-              type="video"
-              color="#0284c7"
-              aspectRatio="16/9"
+          {/* Video */}
+          <div className={styles.mainVideoWrap}>
+            <iframe
+              src="https://www.youtube.com/embed/smhwCD78Vbo"
+              title="Comprehensive Dental Treatments in Istanbul Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
             />
           </div>
+
+          {/* 3. Dental Crowns & Bridges */}
+          <h3 className={styles.sectionSubTitle}>{d.allOn4Title}</h3>
+          <p className={styles.textP}>{d.allOn4P}</p>
+          <p className={styles.textItalic}>
+            {d.allOn4LinkLead}
+            <Link href="/treatments/dental-crowns" className={styles.linkGold}>
+              {d.allOn4LinkText}
+            </Link>
+          </p>
+
+          {/* 4. Cosmetic & General */}
+          <h3 className={styles.sectionSubTitle}>{d.allOn6Title}</h3>
+          <p className={styles.textP}>{d.allOn6P}</p>
+          <p className={styles.textItalic}>
+            {d.allOn6LinkLead}
+            <Link href="/treatments/cosmetic-dentistry" className={styles.linkGold}>
+              {d.allOn6LinkText}
+            </Link>
+          </p>
         </div>
       </section>
 
-      {/* Before & After Transformations Gallery */}
+      {/* 6. OUR BEST SERVICES INCLUDED */}
+      <TreatmentServicesIncludedSection />
+
+      {/* 7. PATIENT VIDEO REELS CAROUSEL */}
+      <TreatmentPatientReelsSection />
+
+      {/* 8. BEFORE - AFTER SLIDER (Second Placement) */}
       <TreatmentBeforeAfterSliderSection />
 
-      {/* Patient Reviews on Google & Trustpilot 5-Star Slider */}
+      {/* 9. COST BREAKDOWN & PACKAGE PROMO BANNER */}
+      <TreatmentCostBreakdownAndPackageBannerSection />
+
+      {/* 10. PACKAGES SLIDER */}
+      <TreatmentPackagesSlider />
+
+      {/* 11. REVIEWS SECTION (Google & Trustpilot) */}
       <TreatmentReviewsSection />
 
-      {/* Interactive Step-by-Step Smile Plan & Consultation Quote Form */}
-      <TreatmentInteractiveQuoteForm defaultTreatment="Full Mouth Implants" />
+      {/* 12. PARALLAX CTA BANNER */}
+      <TreatmentParallaxBanner />
 
-      {/* 11. Section SSS: Frequently Asked Questions */}
-      <section style={{ padding: '5rem 1.5rem', maxWidth: '960px', margin: '0 auto' }}>
-        <div style={{ textAlign: 'center', marginBottom: '3.5rem' }}>
-          <span style={{ fontSize: '0.82rem', fontWeight: 700, color: '#D58936', textTransform: 'uppercase', letterSpacing: '0.12em', display: 'block', marginBottom: '0.5rem' }}>
-            Got Questions?
-          </span>
-          <h2 style={{ fontSize: 'clamp(1.9rem, 3.8vw, 2.6rem)', fontWeight: 600, color: '#0f172a', letterSpacing: '-0.02em', lineHeight: 1.2 }}>
-            Frequently Asked Questions
-          </h2>
-        </div>
+      {/* 13. MASTER 16-QUESTION FREQUENTLY ASKED QUESTIONS */}
+      <TreatmentsHubFAQSection />
 
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.85rem' }}>
-          {faqs.map((faq, fIdx) => {
-            const isOpen = activeFaq === fIdx;
-            return (
-              <div
-                key={fIdx}
-                onClick={() => setActiveFaq(isOpen ? null : fIdx)}
-                style={{
-                  backgroundColor: isOpen ? '#f8fafc' : '#ffffff',
-                  borderRadius: '16px',
-                  border: '1px solid #e2e8f0',
-                  padding: '1.25rem 1.5rem',
-                  cursor: 'pointer',
-                  transition: 'all 0.2s ease',
-                }}
-              >
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '1rem' }}>
-                  <h3 style={{ fontSize: '1rem', fontWeight: 600, color: '#0f172a', margin: 0 }}>
-                    {faq.q}
-                  </h3>
-                  <svg
-                    width="18"
-                    height="18"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="#D58936"
-                    strokeWidth="2.5"
-                    style={{
-                      transform: isOpen ? 'rotate(180deg)' : 'rotate(0deg)',
-                      transition: 'transform 0.2s ease',
-                      flexShrink: 0,
-                    }}
-                  >
-                    <path d="M6 9l6 6 6-6" />
-                  </svg>
-                </div>
-
-                {isOpen && (
-                  <p style={{ marginTop: '0.85rem', paddingTop: '0.85rem', borderTop: '1px solid #e2e8f0', fontSize: '0.92rem', color: '#475569', lineHeight: 1.6, margin: '0.85rem 0 0 0' }}>
-                    {faq.a}
-                  </p>
-                )}
-              </div>
-            );
-          })}
-        </div>
-      </section>
-
-      {/* 12. Direct Medical Quote & Consultation Form */}
-      <section style={{ backgroundColor: '#09090b', color: '#ffffff', padding: '5rem 1.5rem' }}>
-        <div style={{ maxWidth: '820px', margin: '0 auto', textAlign: 'center' }}>
-          <span style={{ fontSize: '0.82rem', fontWeight: 700, color: '#FFA552', textTransform: 'uppercase', letterSpacing: '0.12em', display: 'block', marginBottom: '0.5rem' }}>
-            Start Your Smile Transformation
-          </span>
-          <h2 style={{ fontSize: 'clamp(2rem, 4vw, 2.75rem)', fontWeight: 600, letterSpacing: '-0.02em', lineHeight: 1.2, margin: '0 0 1.25rem 0' }}>
-            Get Your Free Personalized Treatment Plan & Quote
-          </h2>
-          <p style={{ fontSize: '1rem', color: '#94a3b8', lineHeight: 1.6, marginBottom: '2.5rem' }}>
-            Send your panoramic X-ray or dental photos. Our chief oral surgeon will prepare a customized treatment schedule and quotation within 24 hours.
-          </p>
-
-          <Link
-            href="/contact"
-            style={{
-              display: 'inline-flex',
-              alignItems: 'center',
-              gap: '0.75rem',
-              backgroundColor: '#D58936',
-              color: '#ffffff',
-              padding: '1rem 2.25rem',
-              borderRadius: '9999px',
-              fontWeight: 700,
-              fontSize: '1rem',
-              textDecoration: 'none',
-              boxShadow: '0 8px 24px rgba(213, 137, 54, 0.45)',
-              transition: 'all 0.3s ease',
-            }}
-          >
-            <span>Claim Your Free Consultation</span>
-            <span>→</span>
-          </Link>
-        </div>
-      </section>
+      {/* 14. INTERACTIVE 4-STEP QUOTE FORM */}
+      <TreatmentInteractiveQuoteForm defaultTreatment="Dental Implants" />
     </div>
   );
 }
