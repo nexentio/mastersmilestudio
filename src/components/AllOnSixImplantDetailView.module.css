@@ -114,7 +114,9 @@
 }
 
 .compareTableWrap {
+  width: 100%;
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
   background-color: #ffffff;
   border-radius: 16px;
   border: 1px solid #e2e8f0;
@@ -124,6 +126,7 @@
 
 .compareTable {
   width: 100%;
+  min-width: 680px;
   border-collapse: collapse;
   text-align: left;
   font-size: 0.92rem;
@@ -456,7 +459,9 @@
 }
 
 .materialsTableWrap {
+  width: 100%;
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
   background-color: #ffffff;
   border-radius: 16px;
   border: 1px solid #e2e8f0;
@@ -465,6 +470,7 @@
 
 .materialsTable {
   width: 100%;
+  min-width: 680px;
   border-collapse: collapse;
   text-align: left;
   font-size: 0.92rem;
@@ -783,7 +789,9 @@
 }
 
 .costTableWrap {
+  width: 100%;
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
   background-color: #ffffff;
   border-radius: 16px;
   border: 1px solid #e2e8f0;
@@ -792,6 +800,7 @@
 
 .costTable {
   width: 100%;
+  min-width: 680px;
   border-collapse: collapse;
   text-align: left;
   font-size: 0.92rem;
@@ -938,35 +947,6 @@
 }
 
 /* =========================================================================
-   SCROLLBAR STYLING FOR HORIZONTAL TABLES
-   ========================================================================= */
-.compareTableWrap::-webkit-scrollbar,
-.materialsTableWrap::-webkit-scrollbar,
-.costTableWrap::-webkit-scrollbar {
-  height: 6px;
-}
-
-.compareTableWrap::-webkit-scrollbar-track,
-.materialsTableWrap::-webkit-scrollbar-track,
-.costTableWrap::-webkit-scrollbar-track {
-  background: #f1f5f9;
-  border-radius: 9999px;
-}
-
-.compareTableWrap::-webkit-scrollbar-thumb,
-.materialsTableWrap::-webkit-scrollbar-thumb,
-.costTableWrap::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
-  border-radius: 9999px;
-}
-
-.compareTableWrap::-webkit-scrollbar-thumb:hover,
-.materialsTableWrap::-webkit-scrollbar-thumb:hover,
-.costTableWrap::-webkit-scrollbar-thumb:hover {
-  background: #94a3b8;
-}
-
-/* =========================================================================
    RESPONSIVE BREAKPOINTS
    ========================================================================= */
 @media (max-width: 1024px) {
@@ -993,90 +973,8 @@
   .materialsSection,
   .packagesSection,
   .costSection {
-    padding: 3rem 0;
+    padding: 3.5rem 0;
   }
-
-  /* Compare Table Mobile Compact */
-  .compareHeader {
-    margin-bottom: 1.75rem;
-  }
-  .compareTableWrap {
-    margin-bottom: 1.75rem;
-    border-radius: 12px;
-    -webkit-overflow-scrolling: touch;
-  }
-  .compareTable {
-    min-width: 580px;
-    font-size: 0.82rem;
-  }
-  .compareTh {
-    padding: 0.75rem 0.65rem;
-    font-size: 0.8rem;
-    white-space: nowrap;
-  }
-  .compareThHighlight {
-    padding: 0.75rem 0.65rem;
-    font-size: 0.8rem;
-    white-space: nowrap;
-  }
-  .compareTd {
-    padding: 0.65rem 0.75rem;
-    font-size: 0.82rem;
-    line-height: 1.45;
-  }
-  .compareDecisionBox {
-    padding: 1.25rem 1rem;
-    gap: 1.25rem;
-    border-radius: 12px;
-  }
-  .compareDecisionTitle {
-    font-size: 1.02rem;
-  }
-  .compareDecisionText {
-    font-size: 0.86rem;
-    line-height: 1.6;
-  }
-
-  /* Materials Table Mobile Compact */
-  .materialsTableWrap {
-    border-radius: 12px;
-    -webkit-overflow-scrolling: touch;
-  }
-  .materialsTable {
-    min-width: 540px;
-    font-size: 0.82rem;
-  }
-  .materialsTh, .materialsThGold {
-    padding: 0.75rem 0.65rem;
-    font-size: 0.8rem;
-    white-space: nowrap;
-  }
-  .materialsTd {
-    padding: 0.65rem 0.75rem;
-    font-size: 0.82rem;
-    line-height: 1.45;
-  }
-
-  /* Cost Table Mobile Compact */
-  .costTableWrap {
-    border-radius: 12px;
-    -webkit-overflow-scrolling: touch;
-  }
-  .costTable {
-    min-width: 560px;
-    font-size: 0.82rem;
-  }
-  .costTh, .costThHighlight {
-    padding: 0.75rem 0.65rem;
-    font-size: 0.8rem;
-    white-space: nowrap;
-  }
-  .costTd {
-    padding: 0.65rem 0.75rem;
-    font-size: 0.82rem;
-    line-height: 1.45;
-  }
-
   .pkgGrid {
     grid-template-columns: 1fr;
   }
@@ -1100,3 +998,5 @@
     font-size: 0.88rem;
   }
 }
+
+
