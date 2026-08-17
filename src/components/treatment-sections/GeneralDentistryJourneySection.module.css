@@ -1,0 +1,286 @@
+.sectionWrap {
+  position: relative;
+  width: 100%;
+  padding: 50px 0 85px 0;
+  background-color: #ffffff;
+  color: #1f2937;
+}
+
+.standard_center4 {
+  width: 1200px;
+  max-width: 94%;
+  margin: 0 auto;
+}
+
+.head {
+  margin-bottom: 2.2rem;
+}
+
+.grid1 {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 35px;
+  align-items: center;
+}
+
+.headS1 {
+  font-family: var(--font-outfit), sans-serif;
+  font-size: clamp(2.2rem, 3.2vw, 2.9rem);
+  font-weight: 800;
+  color: #0c1b4d;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.headS2 {
+  font-family: var(--font-outfit), sans-serif;
+  font-size: 0.95rem;
+  color: #0c1b4d;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.center {
+  background-color: #f6f8fa;
+  border-radius: 28px;
+  padding: 42px 48px;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 20px 0;
+  transition: all 0.2s ease;
+}
+
+.item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.item:first-child {
+  padding-top: 0;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  cursor: pointer;
+  user-select: none;
+  background: transparent;
+}
+
+.titleLeft {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.iconfirst {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.iconfirst img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.text1 {
+  font-family: var(--font-outfit), sans-serif;
+  font-size: 1.18rem;
+  font-weight: 700;
+  color: #0c1b4d;
+  line-height: 1.3;
+}
+
+.text2 {
+  font-family: var(--font-outfit), sans-serif;
+  font-size: 0.88rem;
+  color: #c4a482;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background: transparent;
+  color: #64748b;
+  transition: transform 0.25s ease, color 0.2s ease;
+  flex-shrink: 0;
+  margin-left: 12px;
+}
+
+.item.active .icon {
+  transform: rotate(180deg);
+  color: #0c1b4d;
+}
+
+.icon svg {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+}
+
+.content {
+  padding: 14px 0 4px 72px;
+  border: none;
+  background: transparent;
+  animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-3px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.descP {
+  font-family: var(--font-outfit), sans-serif;
+  font-size: 0.94rem;
+  color: #0c1b4d;
+  line-height: 1.65;
+  margin: 0;
+  font-weight: 500;
+}
+
+.grid2 {
+  margin-top: 36px;
+  padding-top: 28px;
+  border-top: 1px solid #e2e8f0;
+  text-align: center;
+}
+
+.xhead {
+  font-family: var(--font-outfit), sans-serif;
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #0c1b4d;
+  margin-bottom: 18px;
+  letter-spacing: -0.01em;
+}
+
+.butonlar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.contactBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #ffffff;
+  border: 1.5px solid #d4a359;
+  padding: 8px 20px;
+  border-radius: 12px;
+  font-family: var(--font-outfit), sans-serif;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #0c1b4d;
+  text-decoration: none;
+  transition: all 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+}
+
+.contactBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(212, 163, 89, 0.28);
+  border-color: #b87b28;
+}
+
+.btnIcon {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  display: block;
+}
+
+@media (max-width: 992px) {
+  .grid1 {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .center {
+    padding: 28px 22px;
+    border-radius: 20px;
+  }
+
+  .headS1 {
+    font-size: clamp(1.85rem, 5.5vw, 2.3rem);
+  }
+
+  .content {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .sectionWrap {
+    padding: 35px 0 55px 0;
+  }
+
+  .center {
+    padding: 20px 16px;
+  }
+
+  .titleLeft {
+    gap: 14px;
+  }
+
+  .iconfirst {
+    width: 44px;
+    height: 44px;
+  }
+
+  .text1 {
+    font-size: 1.02rem;
+  }
+
+  .text2 {
+    font-size: 0.82rem;
+  }
+
+  .butonlar {
+    gap: 10px;
+  }
+
+  .contactBtn {
+    width: 100%;
+    justify-content: center;
+  }
+}
