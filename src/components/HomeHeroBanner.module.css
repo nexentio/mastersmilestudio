@@ -1,0 +1,120 @@
+.heroSection {
+  position: relative;
+  overflow: hidden;
+  min-height: calc(100vh - 100px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 1.5rem;
+  width: 100%;
+}
+
+.contentWrapper {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.subtitle {
+  font-family: var(--font-outfit), sans-serif;
+  font-size: clamp(1.15rem, 2vw, 1.65rem);
+  font-weight: 500;
+  color: #ffffff;
+  margin: 0 0 1.25rem 0;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
+  letter-spacing: -0.01em;
+}
+
+.mainTitle {
+  font-family: var(--font-outfit), sans-serif;
+  font-size: clamp(2.4rem, 5vw, 4.4rem);
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.14;
+  letter-spacing: -0.025em;
+  margin: 0 0 2.25rem 0;
+  text-shadow: 0 4px 24px rgba(0, 0, 0, 0.7);
+  max-width: 900px;
+}
+
+.buttonGroup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.pillBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0.8rem 1.85rem;
+  border-radius: 9999px;
+  font-family: var(--font-outfit), sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: rgba(184, 154, 122, 0.45);
+  border: 1.5px solid rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: all 0.25s ease;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.pillBtn:hover {
+  background-color: rgba(184, 154, 122, 0.85);
+  border-color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  color: #ffffff;
+}
+
+.iconSvg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.pillBtn:hover .iconSvg {
+  transform: translateX(3px);
+}
+
+@media (max-width: 768px) {
+  .heroSection {
+    min-height: 85vh;
+    padding: 3rem 1rem;
+  }
+
+  .mainTitle {
+    font-size: 2.2rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+  }
+
+  .buttonGroup {
+    flex-direction: column;
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .pillBtn {
+    width: 100%;
+    padding: 0.75rem 1.5rem;
+  }
+}
