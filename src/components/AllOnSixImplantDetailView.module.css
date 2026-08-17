@@ -1,3 +1,4 @@
+/* CSS Module for AllOnSixImplantDetailView with Full Editorial Depth */
 .wrapper {
   width: 100%;
   position: relative;
@@ -11,7 +12,7 @@
   position: relative;
 }
 
-/* Intro Section */
+/* 1. Intro Section */
 .introSection {
   padding: 5rem 0 3.5rem 0;
 }
@@ -59,14 +60,6 @@
   color: #0c1b4d;
 }
 
-.sectionSubTitle {
-  font-size: clamp(1.4rem, 2.2vw, 1.85rem);
-  font-weight: 800;
-  color: #0c1b4d;
-  margin: 2.25rem 0 0.85rem 0;
-  letter-spacing: -0.015em;
-}
-
 .mainVideoWrap {
   width: 100%;
   max-width: 100%;
@@ -90,7 +83,222 @@
 }
 
 /* =========================================================================
-   ALL-ON-6 PERMANENT BRIDGE MATERIALS COMPARISON SECTION
+   2. OBJECTIVE COMPARISON: ALL-ON-4 vs ALL-ON-5 vs ALL-ON-6
+   ========================================================================= */
+.compareSection {
+  padding: 5rem 0;
+  background-color: #ffffff;
+  border-top: 1px solid #e2e8f0;
+}
+
+.compareHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+  max-width: 860px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.compareTitle {
+  font-size: clamp(1.85rem, 3vw, 2.5rem);
+  font-weight: 800;
+  color: #0c1b4d;
+  margin-bottom: 0.85rem;
+  letter-spacing: -0.02em;
+}
+
+.compareSubtitle {
+  font-size: 1.05rem;
+  color: #64748b;
+  line-height: 1.7;
+}
+
+.compareTableWrap {
+  overflow-x: auto;
+  background-color: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  margin-bottom: 2.5rem;
+}
+
+.compareTable {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.92rem;
+}
+
+.compareTh {
+  background-color: #0c1b4d;
+  color: #ffffff;
+  padding: 1.1rem 1.25rem;
+  font-weight: 700;
+  font-size: 0.88rem;
+  letter-spacing: 0.02em;
+}
+
+.compareThHighlight {
+  background-color: #D58936;
+  color: #ffffff;
+  padding: 1.1rem 1.25rem;
+  font-weight: 800;
+}
+
+.compareTd {
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid #f1f5f9;
+  color: #334155;
+  vertical-align: middle;
+  line-height: 1.6;
+}
+
+.compareTdHighlight {
+  background-color: #fdfbf7;
+  font-weight: 700;
+  color: #0c1b4d;
+  border-left: 2px solid #D58936;
+  border-right: 2px solid #D58936;
+}
+
+.compareDecisionBox {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 2.25rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.compareDecisionCol {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.compareDecisionTitle {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #0c1b4d;
+}
+
+.compareDecisionText {
+  font-size: 0.94rem;
+  color: #475569;
+  line-height: 1.7;
+}
+
+/* =========================================================================
+   3. 3-PHASE SURGICAL & CAD/CAM ENGINEERING ARCHITECTURE
+   ========================================================================= */
+.processSection {
+  padding: 5rem 0;
+  background-color: #f8fafc;
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.processHeader {
+  text-align: center;
+  margin-bottom: 3.5rem;
+  max-width: 860px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.processTitle {
+  font-size: clamp(1.85rem, 3vw, 2.5rem);
+  font-weight: 800;
+  color: #0c1b4d;
+  margin-bottom: 0.85rem;
+  letter-spacing: -0.02em;
+}
+
+.processSubtitle {
+  font-size: 1.05rem;
+  color: #64748b;
+  line-height: 1.7;
+}
+
+.processGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.processCard {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  padding: 2.25rem 1.75rem;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.processCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(12, 27, 77, 0.08);
+}
+
+.processStepNum {
+  font-size: 0.78rem;
+  font-weight: 800;
+  color: #D58936;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.processCardTitle {
+  font-size: 1.22rem;
+  font-weight: 800;
+  color: #0c1b4d;
+  margin-bottom: 0.75rem;
+  line-height: 1.35;
+}
+
+.processCardText {
+  font-size: 0.92rem;
+  color: #475569;
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+}
+
+.processCardSpecs {
+  background-color: #f8fafc;
+  border-radius: 12px;
+  padding: 0.85rem 1rem;
+  border: 1px solid #f1f5f9;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 0.82rem;
+  color: #334155;
+}
+
+.processSpecItem {
+  display: flex;
+  justify-content: space-between;
+}
+
+.processSpecKey {
+  color: #64748b;
+  font-weight: 500;
+}
+
+.processSpecVal {
+  font-weight: 700;
+  color: #0c1b4d;
+}
+
+/* =========================================================================
+   4. PERMANENT BRIDGE MATERIALS COMPARISON SECTION
    ========================================================================= */
 .materialsSection {
   padding: 5rem 0;
@@ -247,7 +455,6 @@
   flex-shrink: 0;
 }
 
-/* Detailed Comparison Table */
 .materialsTableWrap {
   overflow-x: auto;
   background-color: #ffffff;
@@ -292,7 +499,9 @@
   color: #0c1b4d;
 }
 
-/* Currency & Packages Section */
+/* =========================================================================
+   5. PACKAGES & CURRENCY SECTION
+   ========================================================================= */
 .packagesSection {
   padding: 5rem 0;
   background-color: #f8fafc;
@@ -543,7 +752,85 @@
 }
 
 /* =========================================================================
-   FAQ SECTION (17 CLINICAL & HEALTH TOURISM QUESTIONS)
+   6. INTERNATIONAL COST COMPARISON SECTION (UK / GERMANY vs ISTANBUL)
+   ========================================================================= */
+.costSection {
+  padding: 5rem 0;
+  background-color: #ffffff;
+  border-top: 1px solid #e2e8f0;
+}
+
+.costHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+  max-width: 860px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.costTitle {
+  font-size: clamp(1.85rem, 3vw, 2.5rem);
+  font-weight: 800;
+  color: #0c1b4d;
+  margin-bottom: 0.85rem;
+  letter-spacing: -0.02em;
+}
+
+.costSubtitle {
+  font-size: 1.05rem;
+  color: #64748b;
+  line-height: 1.7;
+}
+
+.costTableWrap {
+  overflow-x: auto;
+  background-color: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+}
+
+.costTable {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.92rem;
+}
+
+.costTh {
+  background-color: #0c1b4d;
+  color: #ffffff;
+  padding: 1.1rem 1.25rem;
+  font-weight: 700;
+  font-size: 0.88rem;
+  letter-spacing: 0.02em;
+}
+
+.costThHighlight {
+  background-color: #D58936;
+  color: #ffffff;
+  padding: 1.1rem 1.25rem;
+  font-weight: 800;
+}
+
+.costTd {
+  padding: 1.15rem 1.25rem;
+  border-bottom: 1px solid #f1f5f9;
+  color: #334155;
+  vertical-align: top;
+  line-height: 1.6;
+}
+
+.costTdHighlight {
+  background-color: #fdfbf7;
+  font-weight: 700;
+  color: #0c1b4d;
+  border-left: 2px solid #D58936;
+  border-right: 2px solid #D58936;
+}
+
+/* =========================================================================
+   7. FAQ SECTION (17 CLINICAL & HEALTH TOURISM QUESTIONS)
    ========================================================================= */
 .faqSection {
   padding: 5.5rem 0;
@@ -654,6 +941,12 @@
    RESPONSIVE BREAKPOINTS
    ========================================================================= */
 @media (max-width: 1024px) {
+  .processGrid {
+    grid-template-columns: 1fr;
+  }
+  .compareDecisionBox {
+    grid-template-columns: 1fr;
+  }
   .materialsGrid {
     grid-template-columns: 1fr;
   }
@@ -666,10 +959,11 @@
   .introSection {
     padding: 3.5rem 0 2rem 0;
   }
-  .materialsSection {
-    padding: 3.5rem 0;
-  }
-  .packagesSection {
+  .compareSection,
+  .processSection,
+  .materialsSection,
+  .packagesSection,
+  .costSection {
     padding: 3.5rem 0;
   }
   .pkgGrid {
