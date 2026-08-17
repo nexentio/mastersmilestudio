@@ -2795,7 +2795,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "costIntroTitle1": "Coste de los Implantes Cigomáticos en Turquía:",
     "costIntroTitle2": "Tratamiento de Máxima Calidad en Master Smile Studio, Estambul",
     "costIntroP1": "Una de las principales razones del éxito de Turquía en implantes cigomáticos es el ahorro de hasta un 70% respecto a otros países.",
-    "costIntroP2": "El coste de un implante cigomático en Turquía en 2026 oscila entre 2.350 € y 4.500 $.",
+    "costIntroP2": "El coste de un implante cigomático en Turquía en 2026 oscila entre 2.350 € ve 4.500 $.",
     "costIntroP3": "En Master Smile Studio el precio por implante cigomático es de 2.350 EUR / 2.770 USD / 2.050 GBP con quirófano y diagnóstico 3D incluidos.",
     "packagesTitle": "Paquetes Cigomáticos y Conversor de Divisas",
     "packagesSubtitle": "All-inclusive packages per jaw featuring certified Straumann, Nobel Biocare, NucleOSS, DXL, Megagen, Neodent, and Hiossen.",
@@ -4153,13 +4153,10 @@ export default function ZygomaticImplantDetailView() {
         </div>
       </section>
 
-      {/* 7. BEFORE & AFTER TRANSFORMATIONS GALLERY (SECTBA STYLE) */}
-      <TreatmentBeforeAfterSliderSection />
-
-      {/* 8. REUSABLE: SERVICES INCLUDED */}
+      {/* 7. REUSABLE: SERVICES INCLUDED */}
       <TreatmentServicesIncludedSection />
 
-      {/* 9. CANDIDATE EVALUATION & HEALTH CONSIDERATIONS (UNDER SERVICES INCLUDED) */}
+      {/* 8. CANDIDATE EVALUATION & HEALTH CONSIDERATIONS (UNDER SERVICES INCLUDED) */}
       <section aria-labelledby="zygoma-eval-heading" className={styles.introSection} style={{ backgroundColor: '#f8fafc', borderTop: '1px solid #e2e8f0', borderBottom: '1px solid #e2e8f0' }}>
         <div className={styles.container}>
           <h2 id="zygoma-eval-heading" className={styles.introHeading}>
@@ -4203,6 +4200,9 @@ export default function ZygomaticImplantDetailView() {
           </p>
         </div>
       </section>
+
+      {/* 9. BEFORE & AFTER TRANSFORMATIONS GALLERY (FROM FIRST VISIT TO FINAL SMILE) */}
+      <TreatmentBeforeAfterSliderSection />
 
       {/* 10. REUSABLE: CLINIC TOUR */}
       <TreatmentClinicTourSection placeholderNum="ZYG-TOUR" />
