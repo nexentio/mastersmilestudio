@@ -305,6 +305,10 @@ export default async function HierarchicalTreatmentPage({ params }: PageProps) {
     heroBadge = locale === 'tr' ? 'ZİRKONYUM SERAMİK İMPLANT' : 'ZIRCONIUM CERAMIC IMPLANTS';
     heroTitle = locale === 'tr' ? 'İstanbul Zirkonyum (Seramik) Diş İmplantı Tedavisi' : 'Zirconium Ceramic Dental Implants in Istanbul';
     heroSubtitle = locale === 'tr' ? '%100 metalsiz, biyouyumlu beyaz seramik yapısıyla diş etinde grileşme yapmayan en estetik ve alerjisiz implant çözümü.' : '100% metal-free, biocompatible white ceramic implants for natural gum aesthetics without dark shadows or metal allergies.';
+  } else if (isSinusLift) {
+    heroBadge = locale === 'tr' ? 'SİNÜS LİFTİNG & KEMİK GREFTİ' : 'SINUS LIFTING & BONE AUGMENTATION';
+    heroTitle = locale === 'tr' ? 'İstanbul Sinüs Lifting (Sinüs Yükseltme) Tedavisi' : 'Sinus Lifting in Istanbul, Turkey';
+    heroSubtitle = locale === 'tr' ? 'Üst çenede kemik yetersizliği olan durumlarda sinüs tabanı yükseltilerek güvenli ve ömür boyu kalıcı implant temeli oluşturulur.' : 'Gentle sinus membrane elevation and precision bone grafting to create a solid foundation for permanent dental implants in Istanbul.';
   } else if (isDentalImplantsCategory) {
     heroBadge = locale === 'tr' ? 'DİŞ İMPLANTLARI' : 'DENTAL IMPLANTS';
     heroTitle = locale === 'tr' ? 'İstanbul Diş İmplantı Tedavisi & Fiyatları' : 'Dental Implants Cost (Price) Istanbul Turkey';
@@ -350,14 +354,18 @@ export default async function HierarchicalTreatmentPage({ params }: PageProps) {
           title={heroTitle}
           subtitle={heroSubtitle}
           imageSrc={
-            isImplantSupportedDentures
+            isSinusLift
+              ? 'https://sohodent.com/doc/data1/sinus-lifting.webp?v=1'
+              : isImplantSupportedDentures
               ? 'https://sohodent.com/doc/data1/implant-supported-dentures.webp?v=1'
               : isDentalImplantsCategory
               ? 'https://sohodent.com/doc/data1/zirconium-implant.webp?v=1'
               : undefined
           }
           imageAlt={
-            isImplantSupportedDentures
+            isSinusLift
+              ? 'Sinus Lifting in Istanbul, Turkey'
+              : isImplantSupportedDentures
               ? 'Dental Implant Supported Dentures in Istanbul, Turkey'
               : isDentalImplantsCategory
               ? 'Zirconium Implants'
