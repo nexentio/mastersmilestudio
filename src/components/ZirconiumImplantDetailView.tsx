@@ -3855,16 +3855,6 @@ export default function ZirconiumImplantDetailView() {
             {d.introP3Tail}
           </p>
 
-          {/* Full-width 16:9 Clinical Zirconium Procedure Video */}
-          <div className={styles.mainVideoWrap}>
-            <iframe
-              src="https://www.youtube.com/embed/kY1y7sV0uU4"
-              title="Zirconium Ceramic Dental Implants Clinical Procedure in Istanbul"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
-          </div>
-
           {/* 1.5 CANDIDACY & CLINICAL INDICATION CHECKLIST */}
           <div className={styles.candidacySection}>
             <div className={styles.candidacyHeader}>
