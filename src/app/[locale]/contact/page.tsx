@@ -1,7 +1,8 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import Header from '@/components/Header';
+import ContactSection from '@/components/ContactSection';
+import LocationMapSection from '@/components/LocationMapSection';
 import Footer from '@/components/Footer';
-
 import { getI18nAlternates } from '@/lib/i18n-seo';
 
 export async function generateMetadata({
@@ -29,12 +30,15 @@ export default async function ContactPage({
   setRequestLocale(locale);
 
   return (
-    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', backgroundColor: '#09090b', color: '#ffffff' }}>
+    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', backgroundColor: '#f5f5f5', color: '#111827' }}>
       {/* Global Studio Header */}
       <Header />
 
-      {/* Empty Main Container */}
-      <main style={{ flex: 1 }} />
+      {/* Main Container */}
+      <main id="main-content" style={{ flex: 1 }}>
+        <ContactSection />
+        <LocationMapSection />
+      </main>
 
       {/* Global Studio Footer */}
       <Footer />
