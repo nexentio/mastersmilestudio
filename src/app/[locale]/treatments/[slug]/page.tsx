@@ -17,6 +17,7 @@ import GeneralDentistryHeroBanner from '@/components/treatment-sections/GeneralD
 import GeneralDentistryIntroSection from '@/components/treatment-sections/GeneralDentistryIntroSection';
 import GeneralDentistryAccordionSection from '@/components/treatment-sections/GeneralDentistryAccordionSection';
 import GeneralDentistryJourneySection from '@/components/treatment-sections/GeneralDentistryJourneySection';
+import TreatmentServicesIncludedSection from '@/components/treatment-sections/TreatmentServicesIncludedSection';
 import { generateTreatmentJsonLd } from '@/lib/treatment-schema';
 import { getI18nAlternates, TREATMENT_LOCALES } from '@/lib/i18n-seo';
 import { getTreatmentContent } from '@/lib/treatment-content';
@@ -831,6 +832,7 @@ export default async function TreatmentDetailPage({ params }: Props) {
             <GeneralDentistryIntroSection />
             <GeneralDentistryAccordionSection />
             <GeneralDentistryJourneySection />
+            <TreatmentServicesIncludedSection />
           </>
         ) : isGeneralSub ? (
           <div style={{ minHeight: '120px' }} />
