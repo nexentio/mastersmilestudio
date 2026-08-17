@@ -17,6 +17,7 @@ import ZygomaticImplantDetailView from '@/components/ZygomaticImplantDetailView'
 import ZirconiumImplantDetailView from '@/components/ZirconiumImplantDetailView';
 import ImplantSupportedDenturesDetailView from '@/components/ImplantSupportedDenturesDetailView';
 import SinusLiftingDetailView from '@/components/SinusLiftingDetailView';
+import ZirconiumCrownsDetailView from '@/components/ZirconiumCrownsDetailView';
 import DentalCleaningHeroBanner from '@/components/treatment-sections/DentalCleaningHeroBanner';
 import GeneralDentistryHeroBanner from '@/components/treatment-sections/GeneralDentistryHeroBanner';
 import CosmeticDentistryHeroBanner from '@/components/treatment-sections/CosmeticDentistryHeroBanner';
@@ -194,11 +195,19 @@ export default async function HierarchicalTreatmentPage({ params }: PageProps) {
     lastSlug.includes('lamine') ||
     lastSlug === 'dental-veneers';
 
+  const isZirconiumCrowns =
+    lastSlug === 'zirconium-crowns' ||
+    lastSlug === 'zirconium-crown' ||
+    lastSlug === 'zirconia-crowns' ||
+    lastSlug === 'zirkonyum-kaplama' ||
+    lastSlug === 'zirconium-dental-crowns';
+
   const isDentalCrowns =
-    lastSlug.includes('crown') ||
+    !isZirconiumCrowns &&
+    (lastSlug.includes('crown') ||
     lastSlug.includes('kron') ||
     lastSlug.includes('full-ceramic') ||
-    lastSlug === 'dental-crowns';
+    lastSlug === 'dental-crowns');
 
   const isDentalBridges =
     lastSlug.includes('bridge') ||
@@ -344,6 +353,8 @@ export default async function HierarchicalTreatmentPage({ params }: PageProps) {
         <DentalBridgesHeroBanner />
       ) : isDentalVeneers ? (
         <DentalVeneersHeroBanner />
+      ) : isZirconiumCrowns ? (
+        null
       ) : isDentalCrowns ? (
         <DentalCrownsHeroBanner />
       ) : isDentalCleaning ? (
@@ -442,6 +453,8 @@ export default async function HierarchicalTreatmentPage({ params }: PageProps) {
           <DenturesDetailView />
         ) : isDentalBridges ? (
           <DentalBridgeDetailView />
+        ) : isZirconiumCrowns ? (
+          <ZirconiumCrownsDetailView />
         ) : isDentalCrowns ? (
           <DentalCrownsDetailView />
         ) : isDentalVeneers ? (

@@ -1,0 +1,6 @@
+.wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 50vh;
+  background-color: var(--color-bg, #0b0c10);
+}
