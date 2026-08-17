@@ -24,6 +24,7 @@ import GeneralDentistryAccordionSection from '@/components/treatment-sections/Ge
 import GeneralDentistryJourneySection from '@/components/treatment-sections/GeneralDentistryJourneySection';
 import TreatmentServicesIncludedSection from '@/components/treatment-sections/TreatmentServicesIncludedSection';
 import TreatmentPatientReelsSection from '@/components/treatment-sections/TreatmentPatientReelsSection';
+import TreatmentReviewsSection from '@/components/treatment-sections/TreatmentReviewsSection';
 import { generateTreatmentJsonLd } from '@/lib/treatment-schema';
 import { getI18nAlternates, TREATMENT_LOCALES } from '@/lib/i18n-seo';
 import { getTreatmentContent } from '@/lib/treatment-content';
@@ -386,6 +387,7 @@ export default async function HierarchicalTreatmentPage({ params }: PageProps) {
             <GeneralDentistryJourneySection />
             <TreatmentServicesIncludedSection />
             <TreatmentPatientReelsSection />
+            <TreatmentReviewsSection />
           </>
         ) : isGeneralSub ? (
           <div style={{ minHeight: '120px' }} />
