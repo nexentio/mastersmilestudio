@@ -52,57 +52,57 @@
   gap: 1.25rem;
 }
 
-/* 1:1 Light Blue Review Card (glightbox_comment1 350x212) */
+/* 1:1 Clean Off-White Review Card (glightbox_comment1 350x212) */
 .s {
-  background-color: #94bbe9;
-  border-radius: 12px;
-  padding: 1.15rem 1.15rem 0.95rem 1.15rem;
-  min-height: 212px;
+  background-color: #f6f8fa;
+  border-radius: 16px;
+  padding: 1.35rem 1.25rem 1.15rem 1.25rem;
+  min-height: 218px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   justify-content: space-between;
-  box-shadow: 0 4px 15px rgba(35, 77, 133, 0.08);
-  transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.2s ease;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.03);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.2s ease, border-color 0.2s ease;
   cursor: pointer;
   text-decoration: none;
   position: relative;
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  border: 1px solid #edf0f4;
 }
 
 .s:hover {
   transform: translateY(-4px);
-  box-shadow: 0 10px 25px rgba(35, 77, 133, 0.18);
-  filter: brightness(0.97);
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
+  background-color: #ffffff;
+  border-color: #e2e8f0;
 }
 
 .ad {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 7px;
+  gap: 8px;
   font-family: var(--font-outfit), sans-serif;
-  font-size: 1.05rem;
-  font-weight: 700;
-  color: #234d85;
-  margin-bottom: 6px;
+  font-size: 1.08rem;
+  font-weight: 800;
+  color: #0c1b4d;
+  margin-bottom: 8px;
   width: 100%;
 }
 
 .userIcon {
-  width: 16px;
-  height: 16px;
-  color: #234d85;
-  opacity: 0.85;
+  width: 17px;
+  height: 17px;
+  color: #c4a482;
   flex-shrink: 0;
 }
 
 .yorum {
-  font-size: 0.88rem;
-  line-height: 1.48;
-  color: #234d85;
-  margin-bottom: 8px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #0c1b4d;
+  margin-bottom: 12px;
   font-weight: 500;
   display: -webkit-box;
   -webkit-line-clamp: 4;
@@ -120,13 +120,13 @@
   justify-content: center;
   width: 100%;
   margin-top: auto;
-  gap: 3px;
+  gap: 4px;
 }
 
 .platform {
   position: relative;
   width: 110px;
-  height: 24px;
+  height: 26px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -139,8 +139,8 @@
 
 .stars {
   position: relative;
-  width: 95px;
-  height: 18px;
+  width: 100px;
+  height: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
