@@ -67,9 +67,7 @@ export default function GeneralDentistryIntroSection() {
           <strong className={styles.strongText}>{d.strong}</strong>
           {d.p1}
           <br />
-          <br />
           {d.p2}
-          <br />
           <br />
           {d.p3}
         </p>

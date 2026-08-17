@@ -1,37 +1,38 @@
 .ekcontent {
   position: relative;
   width: 100%;
-  padding: 30px 0 15px 0;
+  padding: 30px 0 10px 0;
   background-color: #ffffff;
-  color: #374151;
+  color: #010147;
 }
 
 .standard_center4 {
   width: 1200px;
-  max-width: 92%;
+  max-width: 94%;
   margin: 0 auto;
 }
 
 .paragraph {
   font-family: var(--font-outfit), sans-serif;
-  font-size: clamp(1.02rem, 1.2vw, 1.15rem);
-  line-height: 1.85;
-  color: #374151;
+  font-size: 15.84px;
+  line-height: 1.55;
+  color: #010147;
+  padding: 0 0 8px 0;
   margin: 0;
 }
 
 .strongText {
-  color: #0c1b4d;
+  color: #010147;
   font-weight: 700;
 }
 
 @media (max-width: 768px) {
   .ekcontent {
-    padding: 38px 0;
+    padding: 20px 0 10px 0;
   }
 
   .paragraph {
-    font-size: 0.98rem;
-    line-height: 1.75;
+    font-size: 14.5px;
+    line-height: 1.55;
   }
 }
