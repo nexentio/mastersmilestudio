@@ -14,6 +14,7 @@ import GeneralDentistryDetailView from '@/components/GeneralDentistryDetailView'
 import AllOnSixImplantDetailView from '@/components/AllOnSixImplantDetailView';
 import DentalCleaningHeroBanner from '@/components/treatment-sections/DentalCleaningHeroBanner';
 import GeneralDentistryHeroBanner from '@/components/treatment-sections/GeneralDentistryHeroBanner';
+import CosmeticDentistryHeroBanner from '@/components/treatment-sections/CosmeticDentistryHeroBanner';
 import GeneralDentistryIntroSection from '@/components/treatment-sections/GeneralDentistryIntroSection';
 import GeneralDentistryAccordionSection from '@/components/treatment-sections/GeneralDentistryAccordionSection';
 import GeneralDentistryJourneySection from '@/components/treatment-sections/GeneralDentistryJourneySection';
@@ -813,6 +814,8 @@ export default async function TreatmentDetailPage({ params }: Props) {
       {/* 1:1 Modular Treatment Hero Section with 7-Language i18n */}
       {isGeneralMain ? (
         <GeneralDentistryHeroBanner />
+      ) : isCosmetic ? (
+        <CosmeticDentistryHeroBanner />
       ) : isDentalCleaning ? (
         <DentalCleaningHeroBanner />
       ) : (
