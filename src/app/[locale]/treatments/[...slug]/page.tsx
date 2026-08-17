@@ -237,6 +237,10 @@ export default async function HierarchicalTreatmentPage({ params }: PageProps) {
     heroBadge = locale === 'tr' ? 'AYNI GÜN İMPLANT' : 'IMMEDIATE DENTAL IMPLANTS';
     heroTitle = locale === 'tr' ? 'İstanbul Aynı Gün İmplant Tedavisi (Same-Day Teeth)' : 'Immediate Dental Implants in Istanbul (Same-Day Teeth)';
     heroSubtitle = locale === 'tr' ? 'Diş çekimi ile aynı seansta yüksek tutuculuklu implant yerleşimi ve 24 saat içinde sabit geçici kuron.' : 'Same-day tooth extraction, high-torque titanium implant placement, and fixed aesthetic teeth in 24 hours in Istanbul.';
+  } else if (isZygomatic) {
+    heroBadge = locale === 'tr' ? 'ZİGOMATİK İMPLANT' : 'ZYGOMATIC DENTAL IMPLANTS';
+    heroTitle = locale === 'tr' ? 'İstanbul Zigoma (Elmacık Kemiği) İmplant Tedavisi' : 'Zygomatic Dental Implants in Istanbul Turkey';
+    heroSubtitle = locale === 'tr' ? 'Aşırı kemik erimesi olan vakalarda kemik nakli beklemeden elmacık kemiğine sabitlenen 24 saatte kalıcı diş çözümü.' : 'Fixed full-arch teeth in 24 hours anchored into the dense zygoma (cheekbone) for severe bone loss cases without bone grafting.';
   } else if (isDentalImplantsCategory) {
     heroBadge = locale === 'tr' ? 'DİŞ İMPLANTLARI' : 'DENTAL IMPLANTS';
     heroTitle = locale === 'tr' ? 'İstanbul Diş İmplantı Tedavisi & Fiyatları' : 'Dental Implants Cost (Price) Istanbul Turkey';
