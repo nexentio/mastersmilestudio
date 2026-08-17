@@ -18,6 +18,7 @@ import ZirconiumImplantDetailView from '@/components/ZirconiumImplantDetailView'
 import ImplantSupportedDenturesDetailView from '@/components/ImplantSupportedDenturesDetailView';
 import SinusLiftingDetailView from '@/components/SinusLiftingDetailView';
 import DentalCleaningHeroBanner from '@/components/treatment-sections/DentalCleaningHeroBanner';
+import GeneralDentistryHeroBanner from '@/components/treatment-sections/GeneralDentistryHeroBanner';
 import { generateTreatmentJsonLd } from '@/lib/treatment-schema';
 import { getI18nAlternates, TREATMENT_LOCALES } from '@/lib/i18n-seo';
 import { getTreatmentContent } from '@/lib/treatment-content';
@@ -305,7 +306,9 @@ export default async function HierarchicalTreatmentPage({ params }: PageProps) {
 
       <Header />
 
-      {isGeneralMain ? null : isDentalCleaning ? (
+      {isGeneralMain ? (
+        <GeneralDentistryHeroBanner />
+      ) : isDentalCleaning ? (
         <DentalCleaningHeroBanner />
       ) : (
         <TreatmentHeroBanner
