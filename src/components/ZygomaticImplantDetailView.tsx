@@ -35,12 +35,6 @@ interface CandidacyPoint {
   desc: string;
 }
 
-interface BenefitItem {
-  num: string;
-  title: string;
-  desc: string;
-}
-
 interface CompareTableRow {
   criteria: string;
   grafting: string;
@@ -100,27 +94,18 @@ interface DetailDictionary {
     whenZygomaticText: string;
   };
 
-  journeyTitle: string;
-  journeyLead: string;
-  journeyStayLabel: string;
-  journeyStayVal: string;
-  journeyVisitsLabel: string;
-  journeyVisitsVal: string;
-  journeyRecoveryLabel: string;
-  journeyRecoveryVal: string;
-  journeyPriceLabel: string;
-  journeyPriceVal: string;
-  reachOutLabel: string;
-  reachOutWhatsapp: string;
-  reachOutPhone: string;
-  reachOutForm: string;
-  reachOutEmail: string;
-
-  advantagesTitle: string;
+  advantagesH2: string;
   advantagesP1: string;
   advantagesP2: string;
-  keyBenefitsHeading: string;
-  benefits: BenefitItem[];
+  keyBenefitsH3: string;
+  benefit1Title: string;
+  benefit1Desc: string;
+  benefit2Title: string;
+  benefit2Desc: string;
+  benefit3Title: string;
+  benefit3Desc: string;
+  benefit4Title: string;
+  benefit4Desc: string;
 
   faqTitle: string;
   faqSubtitle: string;
@@ -548,47 +533,18 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       "whenZygomaticTitle": "When are Zygomatic Implants the Only Viable Solution?",
       "whenZygomaticText": "Zygomatic implants are the definitive gold standard when the upper jaw is completely hollowed out, previous bone grafts have failed, or the patient cannot tolerate 18 months without fixed teeth."
     },
-    "journeyTitle": "Your Dental Journey Made Simple",
-    "journeyLead": "From your very first inquiry to the final results, we ensure a smooth and transparent treatment journey in Istanbul. Learn about how long you’ll stay, how many visits you’ll need, your recovery time, and estimated pricing — all designed with international patients in mind. Let us take care of the details, so you can focus on your smile.",
-    "journeyStayLabel": "Average Length of Stay in Istanbul",
-    "journeyStayVal": "5 – 7 Days",
-    "journeyVisitsLabel": "Number of Visits Required",
-    "journeyVisitsVal": "2 Visits Total",
-    "journeyRecoveryLabel": "Recovery Time",
-    "journeyRecoveryVal": "24–48 Hours (Fixed Teeth)",
-    "journeyPriceLabel": "Estimated Pricing",
-    "journeyPriceVal": "From €2,350 / $2,770",
-    "reachOutLabel": "Reach Out to Us - Quickly and Easily",
-    "reachOutWhatsapp": "WhatsApp",
-    "reachOutPhone": "Phone Call",
-    "reachOutForm": "Quick Form",
-    "reachOutEmail": "E-mail",
-    "advantagesTitle": "Advantages of Zygomatic and Pterygoid (Cheekbone) Implants Over Traditional Dental Implants at Master Smile Studio, Istanbul, Turkey",
+    "advantagesH2": "Advantages of Zygomatic and Pterygoid (Cheekbone) Implants Over Traditional Dental Implants at Master Smile Studio, Istanbul, Turkey",
     "advantagesP1": "One of the primary advantages of zygomatic implants is their ability to provide a solution for patients with severe bone loss in the upper jaw. Traditional dental implants require a sufficient amount of healthy, dense bone to anchor into, but in cases of extensive bone loss, this may not be possible.",
     "advantagesP2": "Zygomatic implants, on the other hand, bypass the need for a robust jawbone by utilizing the stronger and more stable cheekbone (zygomatic bone) as the anchor point. This eliminates the requirement for bone grafting procedures, which can be time-consuming, invasive, and costly.",
-    "keyBenefitsHeading": "Key Benefits of Zygomatic (Cheekbone) Implants:",
-    "benefits": [
-      {
-        "num": "1",
-        "title": "No Need for Bone Grafting",
-        "desc": "Zygomatic implants offer a significant advantage for patients who have experienced extensive bone loss in the upper jaw. While traditional implants typically require bone grafting to rebuild lost bone, zygomatic implants make use of the zygomatic bone, which is often dense and stable enough to support implants. This reduces the need for expensive and invasive bone grafting procedures."
-      },
-      {
-        "num": "2",
-        "title": "Faster Treatment Timeline",
-        "desc": "In Turkey, zygomatic implants provide a faster solution compared to traditional implants. Traditional implants often require several months of healing and osseointegration before the final restoration can be placed. With zygomatic implants, however, dental prosthetics can be attached much sooner — typically within a few weeks, significantly shortening the overall treatment time and allowing patients to regain their smile much quicker."
-      },
-      {
-        "num": "3",
-        "title": "Higher Success Rate in Severe Bone Loss Cases",
-        "desc": "Studies have shown that zygomatic implants have a success rate of up to 97%, making them a reliable and predictable solution for patients with significant bone loss. This is a significant advantage over traditional implants, which may have a lower success rate when there's insufficient bone volume. Zygomatic implants are designed to provide a secure foundation in cases where conventional methods may fail."
-      },
-      {
-        "num": "4",
-        "title": "Restores Function and Aesthetics Quickly",
-        "desc": "Another major benefit of zygomatic implants is that they allow for the restoration of both function and aesthetics in a shorter amount of time compared to traditional implants. Patients who may have had difficulty chewing, speaking, or smiling due to severe bone loss can quickly restore their natural functions and regain their confidence."
-      }
-    ],
+    "keyBenefitsH3": "Key Benefits of Zygomatic (Cheekbone) Implants:",
+    "benefit1Title": "1. No Need for Bone Grafting",
+    "benefit1Desc": "Zygomatic implants offer a significant advantage for patients who have experienced extensive bone loss in the upper jaw. While traditional implants typically require bone grafting to rebuild lost bone, zygomatic implants make use of the zygomatic bone, which is often dense and stable enough to support implants. This reduces the need for expensive and invasive bone grafting procedures.",
+    "benefit2Title": "2. Faster Treatment Timeline",
+    "benefit2Desc": "In Turkey, zygomatic implants provide a faster solution compared to traditional implants. Traditional implants often require several months of healing and osseointegration before the final restoration can be placed. With zygomatic implants, however, dental prosthetics can be attached much sooner — typically within a few weeks, significantly shortening the overall treatment time and allowing patients to regain their smile much quicker.",
+    "benefit3Title": "3. Higher Success Rate in Severe Bone Loss Cases",
+    "benefit3Desc": "Studies have shown that zygomatic implants have a success rate of up to 97%, making them a reliable and predictable solution for patients with significant bone loss. This is a significant advantage over traditional implants, which may have a lower success rate when there's insufficient bone volume. Zygomatic implants are designed to provide a secure foundation in cases where conventional methods may fail.",
+    "benefit4Title": "4. Restores Function and Aesthetics Quickly",
+    "benefit4Desc": "Another major benefit of zygomatic implants is that they allow for the restoration of both function and aesthetics in a shorter amount of time compared to traditional implants. Patients who may have had difficulty chewing, speaking, or smiling due to severe bone loss can quickly restore their natural functions and regain their confidence.",
     "faqTitle": "Frequently Asked Questions: Zygomatic Implants",
     "faqSubtitle": "Clinically verified answers regarding cheekbone anchoring, surgical recovery, bone grafting alternatives, and health tourism in Istanbul.",
     "faqGroup1Title": "Clinical & Surgical Zygomatic FAQ (Severe Bone Loss Solutions)",
@@ -1083,47 +1039,18 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       "whenZygomaticTitle": "Zigoma İmplantları Ne Zaman Tek Çözümdür?",
       "whenZygomaticText": "Üst çene kemiği tamamen eridiğinde, önceki kemik tozları tutmadığında ve hastanın 18 ay dişsiz beklemek istemediği durumlarda tartışmasız tek seçenektir."
     },
-    "journeyTitle": "Dental Tedavi Süreciniz Artık Çok Daha Kolay",
-    "journeyLead": "İlk başvurunuzdan nihai gülüşünüze kadar İstanbul’da şeffaf ve konforlu bir tedavi süreci sunuyoruz. Kalış süreniz, gerekli ziyaret sayısı, iyileşme zamanınız ve tahmini maliyetler gibi tüm detayları uluslararası hastalarımızın konforu için planladık. Siz yalnızca yeni gülüşünüze odaklanın.",
-    "journeyStayLabel": "İstanbul’da Ortalama Kalış Süresi",
-    "journeyStayVal": "5 – 7 Gün",
-    "journeyVisitsLabel": "Gerekli Ziyaret Sayısı",
-    "journeyVisitsVal": "Toplam 2 Ziyaret",
-    "journeyRecoveryLabel": "İyileşme & Sabit Diş Süresi",
-    "journeyRecoveryVal": "24–48 Saatte Sabit Diş",
-    "journeyPriceLabel": "Tahmini Paket Fiyatı",
-    "journeyPriceVal": "2.350 € / 2.770 $'dan Başlayan",
-    "reachOutLabel": "Bize Kolayca ve Hızla Ulaşın",
-    "reachOutWhatsapp": "WhatsApp",
-    "reachOutPhone": "Telefon",
-    "reachOutForm": "Hızlı Form",
-    "reachOutEmail": "E-posta",
-    "advantagesTitle": "Master Smile Studio İstanbul’da Zigoma ve Pterigoid (Elmacık Kemiği) İmplantlarının Geleneksel İmplantlara Göre Avantajları",
+    "advantagesH2": "Master Smile Studio İstanbul’da Zigoma ve Pterigoid (Elmacık Kemiği) İmplantlarının Geleneksel İmplantlara Göre Avantajları",
     "advantagesP1": "Zigoma implantlarının en büyük avantajı, üst çenesinde ileri derecede kemik kaybı yaşayan hastalara kesin ve kalıcı bir sabit diş çözümü sunabilmesidir. Geleneksel diş implantları tutunabilmek için yeterli hacim ve yoğunlukta sağlıklı çene kemiğine ihtiyaç duyar; ancak aşırı kemik erimesi vakalarında bu mümkün olmayabilir.",
     "advantagesP2": "Buna karşılık zigoma implantları, erimiş üst çene kemiğini tamamen baypas ederek çok daha güçlü ve stabil olan elmacık kemiğini (zigomatik kemik) dayanak noktası olarak kullanır. Bu sayede aylar süren, maliyetli ve yorucu kemik tozu (greft) ameliyatlarına olan ihtiyaç tamamen ortadan kalkar.",
-    "keyBenefitsHeading": "Zigoma (Elmacık Kemiği) İmplantlarının Temel Avantajları:",
-    "benefits": [
-      {
-        "num": "1",
-        "title": "Kemik Tozu ve Sinüs Lifting İhtiyacını Ortadan Kaldırır",
-        "desc": "Zigoma implantları, üst çenesinde yoğun kemik kaybı olan hastalar için devrim niteliğinde bir avantaj sağlar. Geleneksel implantlar kaybolan kemiği yeniden oluşturmak için kemik grefti gerektirirken, zigoma implantları elmacık kemiğinin doğal yoğunluğundan güç alır. Bu da hastayı ek ameliyatlardan ve yüksek greft maliyetlerinden kurtarır."
-      },
-      {
-        "num": "2",
-        "title": "Çok Daha Hızlı Tedavi ve Sabit Diş Süreci",
-        "desc": "Türkiye’de zigoma implantları geleneksel yöntemlere kıyasla çok daha hızlı sonuç verir. Klasik implantlarda protez takılmadan önce kemik kaynaması için aylarca beklenmesi gerekirken; zigoma implantlarında güçlü tutuculuk sayesinde 24-48 saat içinde sabit dişler vidalanır ve hasta hızla yeni gülüşüne kavuşur."
-      },
-      {
-        "num": "3",
-        "title": "İleri Kemik Kaybı Vakalarında En Yüksek Başarı Oranı",
-        "desc": "Klinik çalışmalar zigoma implantlarının %97'nin üzerinde bir başarı oranına sahip olduğunu kanıtlamıştır. Yetersiz kemik hacmi nedeniyle klasik implantların başarısız olabileceği en zorlu vakalarda dahi elmacık kemiğinin yoğun kortikal yapısı sayesinde ömür boyu güvenli bir temel oluşturur."
-      },
-      {
-        "num": "4",
-        "title": "Çiğneme Fonksiyonunu ve Estetiği Hızla Geri Kazandırır",
-        "desc": "Zigoma implantlarının en önemli faydalarından biri de çiğneme fonksiyonunu ve yüz estetiğini çok kısa sürede restore etmesidir. Kemik kaybı nedeniyle çiğnemede, konuşmada veya gülümsemede güçlük çeken hastalarımız doğal çiğneme kuvvetine ve özgüvenlerine hızla yeniden kavuşur."
-      }
-    ],
+    "keyBenefitsH3": "Zigoma (Elmacık Kemiği) İmplantlarının Temel Avantajları:",
+    "benefit1Title": "1. Kemik Grefti ve Sinüs Lifting İhtiyacını Ortadan Kaldırır",
+    "benefit1Desc": "Zigoma implantları, üst çenesinde yoğun kemik kaybı olan hastalar için devrim niteliğinde bir avantaj sağlar. Geleneksel implantlar kaybolan kemiği yeniden oluşturmak için kemik grefti gerektirirken, zigoma implantları elmacık kemiğinin doğal yoğunluğundan güç alır. Bu da hastayı ek ameliyatlardan ve yüksek greft maliyetlerinden kurtarır.",
+    "benefit2Title": "2. Çok Daha Hızlı Tedavi ve Sabit Diş Süreci",
+    "benefit2Desc": "Türkiye’de zigoma implantları geleneksel yöntemlere kıyasla çok daha hızlı sonuç verir. Klasik implantlarda protez takılmadan önce kemik kaynaması için aylarca beklenmesi gerekirken; zigoma implantlarında güçlü tutuculuk sayesinde 24-48 saat içinde sabit dişler vidalanır ve hasta hızla yeni gülüşüne kavuşur.",
+    "benefit3Title": "3. İleri Kemik Kaybı Vakalarında En Yüksek Başarı Oranı",
+    "benefit3Desc": "Klinik çalışmalar zigoma implantlarının %97'nin üzerinde bir başarı oranına sahip olduğunu kanıtlamıştır. Yetersiz kemik hacmi nedeniyle klasik implantların başarısız olabileceği en zorlu vakalarda dahi elmacık kemiğinin yoğun kortikal yapısı sayesinde ömür boyu güvenli bir temel oluşturur.",
+    "benefit4Title": "4. Çiğneme Fonksiyonunu ve Estetiği Hızla Geri Kazandırır",
+    "benefit4Desc": "Zigoma implantlarının en önemli faydalarından biri de çiğneme fonksiyonunu ve yüz estetiğini çok kısa sürede restore etmesidir. Kemik kaybı nedeniyle çiğnemede, konuşmada veya gülümsemede güçlük çeken hastalarımız doğal çiğneme kuvvetine ve özgüvenlerine hızla yeniden kavuşur.",
     "faqTitle": "Sıkça Sorulan Sorular: Zigoma (Elmacık Kemiği) İmplantları",
     "faqSubtitle": "Elmacık kemiği tutunumu, cerrahi iyileşme, kemik nakli alternatifleri ve İstanbul sağlık turizmi hakkında hekim onaylı yanıtlar.",
     "faqGroup1Title": "Klinik ve Cerrahi Zigoma SSS (İleri Kemik Erimesi Çözümleri)",
@@ -1618,47 +1545,18 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       "whenZygomaticTitle": "When are Zygomatic Implants the Only Viable Solution?",
       "whenZygomaticText": "Zygomatic implants are the definitive gold standard when the upper jaw is completely hollowed out, previous bone grafts have failed, or the patient cannot tolerate 18 months without fixed teeth."
     },
-    "journeyTitle": "Ihre Zahnbehandlung Einfach Erklärt",
-    "journeyLead": "Von Ihrer ersten Anfrage bis zum finalen Ergebnis garantieren wir einen reibungslosen und transparenten Ablauf in Istanbul.",
-    "journeyStayLabel": "Durchschnittliche Aufenthaltsdauer",
-    "journeyStayVal": "5 – 7 Days",
-    "journeyVisitsLabel": "Erforderliche Besuche",
-    "journeyVisitsVal": "2 Visits Total",
-    "journeyRecoveryLabel": "Genesungszeit",
-    "journeyRecoveryVal": "24–48 Hours (Fixed Teeth)",
-    "journeyPriceLabel": "Geschätzter Preis",
-    "journeyPriceVal": "From €2,350 / $2,770",
-    "reachOutLabel": "Kontaktieren Sie uns einfach & schnell",
-    "reachOutWhatsapp": "WhatsApp",
-    "reachOutPhone": "Phone Call",
-    "reachOutForm": "Quick Form",
-    "reachOutEmail": "E-mail",
-    "advantagesTitle": "Vorteile von Zygoma- und Pterygoid-Implantaten gegenüber herkömmlichen Implantaten bei Master Smile Studio, Istanbul",
+    "advantagesH2": "Vorteile von Zygoma- und Pterygoid-Implantaten gegenüber herkömmlichen Implantaten bei Master Smile Studio, Istanbul",
     "advantagesP1": "One of the primary advantages of zygomatic implants is their ability to provide a solution for patients with severe bone loss in the upper jaw. Traditional dental implants require a sufficient amount of healthy, dense bone to anchor into, but in cases of extensive bone loss, this may not be possible.",
     "advantagesP2": "Zygomatic implants, on the other hand, bypass the need for a robust jawbone by utilizing the stronger and more stable cheekbone (zygomatic bone) as the anchor point. This eliminates the requirement for bone grafting procedures, which can be time-consuming, invasive, and costly.",
-    "keyBenefitsHeading": "Key Benefits of Zygomatic (Cheekbone) Implants:",
-    "benefits": [
-      {
-        "num": "1",
-        "title": "No Need for Bone Grafting",
-        "desc": "Zygomatic implants offer a significant advantage for patients who have experienced extensive bone loss in the upper jaw. While traditional implants typically require bone grafting to rebuild lost bone, zygomatic implants make use of the zygomatic bone, which is often dense and stable enough to support implants. This reduces the need for expensive and invasive bone grafting procedures."
-      },
-      {
-        "num": "2",
-        "title": "Faster Treatment Timeline",
-        "desc": "In Turkey, zygomatic implants provide a faster solution compared to traditional implants. Traditional implants often require several months of healing and osseointegration before the final restoration can be placed. With zygomatic implants, however, dental prosthetics can be attached much sooner — typically within a few weeks, significantly shortening the overall treatment time and allowing patients to regain their smile much quicker."
-      },
-      {
-        "num": "3",
-        "title": "Higher Success Rate in Severe Bone Loss Cases",
-        "desc": "Studies have shown that zygomatic implants have a success rate of up to 97%, making them a reliable and predictable solution for patients with significant bone loss. This is a significant advantage over traditional implants, which may have a lower success rate when there's insufficient bone volume. Zygomatic implants are designed to provide a secure foundation in cases where conventional methods may fail."
-      },
-      {
-        "num": "4",
-        "title": "Restores Function and Aesthetics Quickly",
-        "desc": "Another major benefit of zygomatic implants is that they allow for the restoration of both function and aesthetics in a shorter amount of time compared to traditional implants. Patients who may have had difficulty chewing, speaking, or smiling due to severe bone loss can quickly restore their natural functions and regain their confidence."
-      }
-    ],
+    "keyBenefitsH3": "Key Benefits of Zygomatic (Cheekbone) Implants:",
+    "benefit1Title": "1. No Need for Bone Grafting",
+    "benefit1Desc": "Zygomatic implants offer a significant advantage for patients who have experienced extensive bone loss in the upper jaw. While traditional implants typically require bone grafting to rebuild lost bone, zygomatic implants make use of the zygomatic bone, which is often dense and stable enough to support implants. This reduces the need for expensive and invasive bone grafting procedures.",
+    "benefit2Title": "2. Faster Treatment Timeline",
+    "benefit2Desc": "In Turkey, zygomatic implants provide a faster solution compared to traditional implants. Traditional implants often require several months of healing and osseointegration before the final restoration can be placed. With zygomatic implants, however, dental prosthetics can be attached much sooner — typically within a few weeks, significantly shortening the overall treatment time and allowing patients to regain their smile much quicker.",
+    "benefit3Title": "3. Higher Success Rate in Severe Bone Loss Cases",
+    "benefit3Desc": "Studies have shown that zygomatic implants have a success rate of up to 97%, making them a reliable and predictable solution for patients with significant bone loss. This is a significant advantage over traditional implants, which may have a lower success rate when there's insufficient bone volume. Zygomatic implants are designed to provide a secure foundation in cases where conventional methods may fail.",
+    "benefit4Title": "4. Restores Function and Aesthetics Quickly",
+    "benefit4Desc": "Another major benefit of zygomatic implants is that they allow for the restoration of both function and aesthetics in a shorter amount of time compared to traditional implants. Patients who may have had difficulty chewing, speaking, or smiling due to severe bone loss can quickly restore their natural functions and regain their confidence.",
     "faqTitle": "Häufig gestellte Fragen: Zygoma-Implantate",
     "faqSubtitle": "Clinically verified answers regarding cheekbone anchoring, surgical recovery, bone grafting alternatives, and health tourism in Istanbul.",
     "faqGroup1Title": "Clinical & Surgical Zygomatic FAQ (Severe Bone Loss Solutions)",
@@ -2153,47 +2051,18 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       "whenZygomaticTitle": "When are Zygomatic Implants the Only Viable Solution?",
       "whenZygomaticText": "Zygomatic implants are the definitive gold standard when the upper jaw is completely hollowed out, previous bone grafts have failed, or the patient cannot tolerate 18 months without fixed teeth."
     },
-    "journeyTitle": "Twoja Podróż Stomatologiczna w Prosty Sposób",
-    "journeyLead": "Od pierwszego kontaktu po ostateczny rezultat zapewniamy przejrzysty i komfortowy proces leczenia w Stambule.",
-    "journeyStayLabel": "Średni czas pobytu w Stambule",
-    "journeyStayVal": "5 – 7 Days",
-    "journeyVisitsLabel": "Liczba wymaganych wizyt",
-    "journeyVisitsVal": "2 Visits Total",
-    "journeyRecoveryLabel": "Czas rekonwalescencji",
-    "journeyRecoveryVal": "24–48 Hours (Fixed Teeth)",
-    "journeyPriceLabel": "Szacowany koszt",
-    "journeyPriceVal": "From €2,350 / $2,770",
-    "reachOutLabel": "Skontaktuj się z nami szybko i wygodnie",
-    "reachOutWhatsapp": "WhatsApp",
-    "reachOutPhone": "Phone Call",
-    "reachOutForm": "Quick Form",
-    "reachOutEmail": "E-mail",
-    "advantagesTitle": "Zalety Implantów Jarzmowych (Zygoma) w Porównaniu do Tradycyjnych Implantów w Master Smile Studio",
+    "advantagesH2": "Zalety Implantów Jarzmowych (Zygoma) w Porównaniu do Tradycyjnych Implantów w Master Smile Studio",
     "advantagesP1": "One of the primary advantages of zygomatic implants is their ability to provide a solution for patients with severe bone loss in the upper jaw. Traditional dental implants require a sufficient amount of healthy, dense bone to anchor into, but in cases of extensive bone loss, this may not be possible.",
     "advantagesP2": "Zygomatic implants, on the other hand, bypass the need for a robust jawbone by utilizing the stronger and more stable cheekbone (zygomatic bone) as the anchor point. This eliminates the requirement for bone grafting procedures, which can be time-consuming, invasive, and costly.",
-    "keyBenefitsHeading": "Key Benefits of Zygomatic (Cheekbone) Implants:",
-    "benefits": [
-      {
-        "num": "1",
-        "title": "No Need for Bone Grafting",
-        "desc": "Zygomatic implants offer a significant advantage for patients who have experienced extensive bone loss in the upper jaw. While traditional implants typically require bone grafting to rebuild lost bone, zygomatic implants make use of the zygomatic bone, which is often dense and stable enough to support implants. This reduces the need for expensive and invasive bone grafting procedures."
-      },
-      {
-        "num": "2",
-        "title": "Faster Treatment Timeline",
-        "desc": "In Turkey, zygomatic implants provide a faster solution compared to traditional implants. Traditional implants often require several months of healing and osseointegration before the final restoration can be placed. With zygomatic implants, however, dental prosthetics can be attached much sooner — typically within a few weeks, significantly shortening the overall treatment time and allowing patients to regain their smile much quicker."
-      },
-      {
-        "num": "3",
-        "title": "Higher Success Rate in Severe Bone Loss Cases",
-        "desc": "Studies have shown that zygomatic implants have a success rate of up to 97%, making them a reliable and predictable solution for patients with significant bone loss. This is a significant advantage over traditional implants, which may have a lower success rate when there's insufficient bone volume. Zygomatic implants are designed to provide a secure foundation in cases where conventional methods may fail."
-      },
-      {
-        "num": "4",
-        "title": "Restores Function and Aesthetics Quickly",
-        "desc": "Another major benefit of zygomatic implants is that they allow for the restoration of both function and aesthetics in a shorter amount of time compared to traditional implants. Patients who may have had difficulty chewing, speaking, or smiling due to severe bone loss can quickly restore their natural functions and regain their confidence."
-      }
-    ],
+    "keyBenefitsH3": "Key Benefits of Zygomatic (Cheekbone) Implants:",
+    "benefit1Title": "1. No Need for Bone Grafting",
+    "benefit1Desc": "Zygomatic implants offer a significant advantage for patients who have experienced extensive bone loss in the upper jaw. While traditional implants typically require bone grafting to rebuild lost bone, zygomatic implants make use of the zygomatic bone, which is often dense and stable enough to support implants. This reduces the need for expensive and invasive bone grafting procedures.",
+    "benefit2Title": "2. Faster Treatment Timeline",
+    "benefit2Desc": "In Turkey, zygomatic implants provide a faster solution compared to traditional implants. Traditional implants often require several months of healing and osseointegration before the final restoration can be placed. With zygomatic implants, however, dental prosthetics can be attached much sooner — typically within a few weeks, significantly shortening the overall treatment time and allowing patients to regain their smile much quicker.",
+    "benefit3Title": "3. Higher Success Rate in Severe Bone Loss Cases",
+    "benefit3Desc": "Studies have shown that zygomatic implants have a success rate of up to 97%, making them a reliable and predictable solution for patients with significant bone loss. This is a significant advantage over traditional implants, which may have a lower success rate when there's insufficient bone volume. Zygomatic implants are designed to provide a secure foundation in cases where conventional methods may fail.",
+    "benefit4Title": "4. Restores Function and Aesthetics Quickly",
+    "benefit4Desc": "Another major benefit of zygomatic implants is that they allow for the restoration of both function and aesthetics in a shorter amount of time compared to traditional implants. Patients who may have had difficulty chewing, speaking, or smiling due to severe bone loss can quickly restore their natural functions and regain their confidence.",
     "faqTitle": "Często Zadawane Pytania: Implanty Zygoma",
     "faqSubtitle": "Clinically verified answers regarding cheekbone anchoring, surgical recovery, bone grafting alternatives, and health tourism in Istanbul.",
     "faqGroup1Title": "Clinical & Surgical Zygomatic FAQ (Severe Bone Loss Solutions)",
@@ -2688,47 +2557,18 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       "whenZygomaticTitle": "When are Zygomatic Implants the Only Viable Solution?",
       "whenZygomaticText": "Zygomatic implants are the definitive gold standard when the upper jaw is completely hollowed out, previous bone grafts have failed, or the patient cannot tolerate 18 months without fixed teeth."
     },
-    "journeyTitle": "Sua Jornada Odontológica Simplificada",
-    "journeyLead": "Desde sua primeira consulta até o resultado final, garantimos uma experiência transparente e confortável em Istambul.",
-    "journeyStayLabel": "Tempo médio de estadia em Istambul",
-    "journeyStayVal": "5 – 7 Days",
-    "journeyVisitsLabel": "Número de visitas necessárias",
-    "journeyVisitsVal": "2 Visits Total",
-    "journeyRecoveryLabel": "Tempo de recuperação",
-    "journeyRecoveryVal": "24–48 Hours (Fixed Teeth)",
-    "journeyPriceLabel": "Preço estimado",
-    "journeyPriceVal": "From €2,350 / $2,770",
-    "reachOutLabel": "Entre em contato com facilidade e rapidez",
-    "reachOutWhatsapp": "WhatsApp",
-    "reachOutPhone": "Phone Call",
-    "reachOutForm": "Quick Form",
-    "reachOutEmail": "E-mail",
-    "advantagesTitle": "Vantagens dos Implantes Zigomáticos e Pterigoideos sobre os Tradicionais no Master Smile Studio",
+    "advantagesH2": "Vantagens dos Implantes Zigomáticos e Pterigoideos sobre os Tradicionais no Master Smile Studio",
     "advantagesP1": "One of the primary advantages of zygomatic implants is their ability to provide a solution for patients with severe bone loss in the upper jaw. Traditional dental implants require a sufficient amount of healthy, dense bone to anchor into, but in cases of extensive bone loss, this may not be possible.",
     "advantagesP2": "Zygomatic implants, on the other hand, bypass the need for a robust jawbone by utilizing the stronger and more stable cheekbone (zygomatic bone) as the anchor point. This eliminates the requirement for bone grafting procedures, which can be time-consuming, invasive, and costly.",
-    "keyBenefitsHeading": "Key Benefits of Zygomatic (Cheekbone) Implants:",
-    "benefits": [
-      {
-        "num": "1",
-        "title": "No Need for Bone Grafting",
-        "desc": "Zygomatic implants offer a significant advantage for patients who have experienced extensive bone loss in the upper jaw. While traditional implants typically require bone grafting to rebuild lost bone, zygomatic implants make use of the zygomatic bone, which is often dense and stable enough to support implants. This reduces the need for expensive and invasive bone grafting procedures."
-      },
-      {
-        "num": "2",
-        "title": "Faster Treatment Timeline",
-        "desc": "In Turkey, zygomatic implants provide a faster solution compared to traditional implants. Traditional implants often require several months of healing and osseointegration before the final restoration can be placed. With zygomatic implants, however, dental prosthetics can be attached much sooner — typically within a few weeks, significantly shortening the overall treatment time and allowing patients to regain their smile much quicker."
-      },
-      {
-        "num": "3",
-        "title": "Higher Success Rate in Severe Bone Loss Cases",
-        "desc": "Studies have shown that zygomatic implants have a success rate of up to 97%, making them a reliable and predictable solution for patients with significant bone loss. This is a significant advantage over traditional implants, which may have a lower success rate when there's insufficient bone volume. Zygomatic implants are designed to provide a secure foundation in cases where conventional methods may fail."
-      },
-      {
-        "num": "4",
-        "title": "Restores Function and Aesthetics Quickly",
-        "desc": "Another major benefit of zygomatic implants is that they allow for the restoration of both function and aesthetics in a shorter amount of time compared to traditional implants. Patients who may have had difficulty chewing, speaking, or smiling due to severe bone loss can quickly restore their natural functions and regain their confidence."
-      }
-    ],
+    "keyBenefitsH3": "Key Benefits of Zygomatic (Cheekbone) Implants:",
+    "benefit1Title": "1. No Need for Bone Grafting",
+    "benefit1Desc": "Zygomatic implants offer a significant advantage for patients who have experienced extensive bone loss in the upper jaw. While traditional implants typically require bone grafting to rebuild lost bone, zygomatic implants make use of the zygomatic bone, which is often dense and stable enough to support implants. This reduces the need for expensive and invasive bone grafting procedures.",
+    "benefit2Title": "2. Faster Treatment Timeline",
+    "benefit2Desc": "In Turkey, zygomatic implants provide a faster solution compared to traditional implants. Traditional implants often require several months of healing and osseointegration before the final restoration can be placed. With zygomatic implants, however, dental prosthetics can be attached much sooner — typically within a few weeks, significantly shortening the overall treatment time and allowing patients to regain their smile much quicker.",
+    "benefit3Title": "3. Higher Success Rate in Severe Bone Loss Cases",
+    "benefit3Desc": "Studies have shown that zygomatic implants have a success rate of up to 97%, making them a reliable and predictable solution for patients with significant bone loss. This is a significant advantage over traditional implants, which may have a lower success rate when there's insufficient bone volume. Zygomatic implants are designed to provide a secure foundation in cases where conventional methods may fail.",
+    "benefit4Title": "4. Restores Function and Aesthetics Quickly",
+    "benefit4Desc": "Another major benefit of zygomatic implants is that they allow for the restoration of both function and aesthetics in a shorter amount of time compared to traditional implants. Patients who may have had difficulty chewing, speaking, or smiling due to severe bone loss can quickly restore their natural functions and regain their confidence.",
     "faqTitle": "Perguntas Frequentes: Implantes Zigomáticos",
     "faqSubtitle": "Clinically verified answers regarding cheekbone anchoring, surgical recovery, bone grafting alternatives, and health tourism in Istanbul.",
     "faqGroup1Title": "Clinical & Surgical Zygomatic FAQ (Severe Bone Loss Solutions)",
@@ -3223,47 +3063,18 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       "whenZygomaticTitle": "When are Zygomatic Implants the Only Viable Solution?",
       "whenZygomaticText": "Zygomatic implants are the definitive gold standard when the upper jaw is completely hollowed out, previous bone grafts have failed, or the patient cannot tolerate 18 months without fixed teeth."
     },
-    "journeyTitle": "Su Viaje Dental Simplificado",
-    "journeyLead": "Desde su primera consulta hasta el resultado final, aseguramos un tratamiento transparente y fluido en Estambul.",
-    "journeyStayLabel": "Estancia media en Estambul",
-    "journeyStayVal": "5 – 7 Days",
-    "journeyVisitsLabel": "Número de visitas requeridas",
-    "journeyVisitsVal": "2 Visits Total",
-    "journeyRecoveryLabel": "Tiempo de recuperación",
-    "journeyRecoveryVal": "24–48 Hours (Fixed Teeth)",
-    "journeyPriceLabel": "Precio estimado",
-    "journeyPriceVal": "From €2,350 / $2,770",
-    "reachOutLabel": "Contáctenos de forma rápida y sencilla",
-    "reachOutWhatsapp": "WhatsApp",
-    "reachOutPhone": "Phone Call",
-    "reachOutForm": "Quick Form",
-    "reachOutEmail": "E-mail",
-    "advantagesTitle": "Ventajas de los Implantes Cigomáticos y Pterigoideos frente a los Tradicionales en Master Smile Studio",
+    "advantagesH2": "Ventajas de los Implantes Cigomáticos y Pterigoideos frente a los Tradicionales en Master Smile Studio",
     "advantagesP1": "One of the primary advantages of zygomatic implants is their ability to provide a solution for patients with severe bone loss in the upper jaw. Traditional dental implants require a sufficient amount of healthy, dense bone to anchor into, but in cases of extensive bone loss, this may not be possible.",
     "advantagesP2": "Zygomatic implants, on the other hand, bypass the need for a robust jawbone by utilizing the stronger and more stable cheekbone (zygomatic bone) as the anchor point. This eliminates the requirement for bone grafting procedures, which can be time-consuming, invasive, and costly.",
-    "keyBenefitsHeading": "Key Benefits of Zygomatic (Cheekbone) Implants:",
-    "benefits": [
-      {
-        "num": "1",
-        "title": "No Need for Bone Grafting",
-        "desc": "Zygomatic implants offer a significant advantage for patients who have experienced extensive bone loss in the upper jaw. While traditional implants typically require bone grafting to rebuild lost bone, zygomatic implants make use of the zygomatic bone, which is often dense and stable enough to support implants. This reduces the need for expensive and invasive bone grafting procedures."
-      },
-      {
-        "num": "2",
-        "title": "Faster Treatment Timeline",
-        "desc": "In Turkey, zygomatic implants provide a faster solution compared to traditional implants. Traditional implants often require several months of healing and osseointegration before the final restoration can be placed. With zygomatic implants, however, dental prosthetics can be attached much sooner — typically within a few weeks, significantly shortening the overall treatment time and allowing patients to regain their smile much quicker."
-      },
-      {
-        "num": "3",
-        "title": "Higher Success Rate in Severe Bone Loss Cases",
-        "desc": "Studies have shown that zygomatic implants have a success rate of up to 97%, making them a reliable and predictable solution for patients with significant bone loss. This is a significant advantage over traditional implants, which may have a lower success rate when there's insufficient bone volume. Zygomatic implants are designed to provide a secure foundation in cases where conventional methods may fail."
-      },
-      {
-        "num": "4",
-        "title": "Restores Function and Aesthetics Quickly",
-        "desc": "Another major benefit of zygomatic implants is that they allow for the restoration of both function and aesthetics in a shorter amount of time compared to traditional implants. Patients who may have had difficulty chewing, speaking, or smiling due to severe bone loss can quickly restore their natural functions and regain their confidence."
-      }
-    ],
+    "keyBenefitsH3": "Key Benefits of Zygomatic (Cheekbone) Implants:",
+    "benefit1Title": "1. No Need for Bone Grafting",
+    "benefit1Desc": "Zygomatic implants offer a significant advantage for patients who have experienced extensive bone loss in the upper jaw. While traditional implants typically require bone grafting to rebuild lost bone, zygomatic implants make use of the zygomatic bone, which is often dense and stable enough to support implants. This reduces the need for expensive and invasive bone grafting procedures.",
+    "benefit2Title": "2. Faster Treatment Timeline",
+    "benefit2Desc": "In Turkey, zygomatic implants provide a faster solution compared to traditional implants. Traditional implants often require several months of healing and osseointegration before the final restoration can be placed. With zygomatic implants, however, dental prosthetics can be attached much sooner — typically within a few weeks, significantly shortening the overall treatment time and allowing patients to regain their smile much quicker.",
+    "benefit3Title": "3. Higher Success Rate in Severe Bone Loss Cases",
+    "benefit3Desc": "Studies have shown that zygomatic implants have a success rate of up to 97%, making them a reliable and predictable solution for patients with significant bone loss. This is a significant advantage over traditional implants, which may have a lower success rate when there's insufficient bone volume. Zygomatic implants are designed to provide a secure foundation in cases where conventional methods may fail.",
+    "benefit4Title": "4. Restores Function and Aesthetics Quickly",
+    "benefit4Desc": "Another major benefit of zygomatic implants is that they allow for the restoration of both function and aesthetics in a shorter amount of time compared to traditional implants. Patients who may have had difficulty chewing, speaking, or smiling due to severe bone loss can quickly restore their natural functions and regain their confidence.",
     "faqTitle": "Preguntas Frecuentes: Implantes Cigomáticos",
     "faqSubtitle": "Clinically verified answers regarding cheekbone anchoring, surgical recovery, bone grafting alternatives, and health tourism in Istanbul.",
     "faqGroup1Title": "Clinical & Surgical Zygomatic FAQ (Severe Bone Loss Solutions)",
@@ -3758,47 +3569,18 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       "whenZygomaticTitle": "When are Zygomatic Implants the Only Viable Solution?",
       "whenZygomaticText": "Zygomatic implants are the definitive gold standard when the upper jaw is completely hollowed out, previous bone grafts have failed, or the patient cannot tolerate 18 months without fixed teeth."
     },
-    "journeyTitle": "Ваш Путь к Идеальной Улыбке — Легко и Понятно",
-    "journeyLead": "От первого обращения до готовой улыбки мы гарантируем комфортное и прозрачное лечение в Стамбуле.",
-    "journeyStayLabel": "Средняя длительность визита в Стамбул",
-    "journeyStayVal": "5 – 7 Days",
-    "journeyVisitsLabel": "Количество визитов",
-    "journeyVisitsVal": "2 Visits Total",
-    "journeyRecoveryLabel": "Время восстановления",
-    "journeyRecoveryVal": "24–48 Hours (Fixed Teeth)",
-    "journeyPriceLabel": "Ориентировочная стоимость",
-    "journeyPriceVal": "From €2,350 / $2,770",
-    "reachOutLabel": "Свяжитесь с нами быстро и удобно",
-    "reachOutWhatsapp": "WhatsApp",
-    "reachOutPhone": "Phone Call",
-    "reachOutForm": "Quick Form",
-    "reachOutEmail": "E-mail",
-    "advantagesTitle": "Преимущества скуловых и птеригоидных имплантов перед классическими в Master Smile Studio",
+    "advantagesH2": "Преимущества скуловых и птеригоидных имплантов перед классическими в Master Smile Studio",
     "advantagesP1": "One of the primary advantages of zygomatic implants is their ability to provide a solution for patients with severe bone loss in the upper jaw. Traditional dental implants require a sufficient amount of healthy, dense bone to anchor into, but in cases of extensive bone loss, this may not be possible.",
     "advantagesP2": "Zygomatic implants, on the other hand, bypass the need for a robust jawbone by utilizing the stronger and more stable cheekbone (zygomatic bone) as the anchor point. This eliminates the requirement for bone grafting procedures, which can be time-consuming, invasive, and costly.",
-    "keyBenefitsHeading": "Key Benefits of Zygomatic (Cheekbone) Implants:",
-    "benefits": [
-      {
-        "num": "1",
-        "title": "No Need for Bone Grafting",
-        "desc": "Zygomatic implants offer a significant advantage for patients who have experienced extensive bone loss in the upper jaw. While traditional implants typically require bone grafting to rebuild lost bone, zygomatic implants make use of the zygomatic bone, which is often dense and stable enough to support implants. This reduces the need for expensive and invasive bone grafting procedures."
-      },
-      {
-        "num": "2",
-        "title": "Faster Treatment Timeline",
-        "desc": "In Turkey, zygomatic implants provide a faster solution compared to traditional implants. Traditional implants often require several months of healing and osseointegration before the final restoration can be placed. With zygomatic implants, however, dental prosthetics can be attached much sooner — typically within a few weeks, significantly shortening the overall treatment time and allowing patients to regain their smile much quicker."
-      },
-      {
-        "num": "3",
-        "title": "Higher Success Rate in Severe Bone Loss Cases",
-        "desc": "Studies have shown that zygomatic implants have a success rate of up to 97%, making them a reliable and predictable solution for patients with significant bone loss. This is a significant advantage over traditional implants, which may have a lower success rate when there's insufficient bone volume. Zygomatic implants are designed to provide a secure foundation in cases where conventional methods may fail."
-      },
-      {
-        "num": "4",
-        "title": "Restores Function and Aesthetics Quickly",
-        "desc": "Another major benefit of zygomatic implants is that they allow for the restoration of both function and aesthetics in a shorter amount of time compared to traditional implants. Patients who may have had difficulty chewing, speaking, or smiling due to severe bone loss can quickly restore their natural functions and regain their confidence."
-      }
-    ],
+    "keyBenefitsH3": "Key Benefits of Zygomatic (Cheekbone) Implants:",
+    "benefit1Title": "1. No Need for Bone Grafting",
+    "benefit1Desc": "Zygomatic implants offer a significant advantage for patients who have experienced extensive bone loss in the upper jaw. While traditional implants typically require bone grafting to rebuild lost bone, zygomatic implants make use of the zygomatic bone, which is often dense and stable enough to support implants. This reduces the need for expensive and invasive bone grafting procedures.",
+    "benefit2Title": "2. Faster Treatment Timeline",
+    "benefit2Desc": "In Turkey, zygomatic implants provide a faster solution compared to traditional implants. Traditional implants often require several months of healing and osseointegration before the final restoration can be placed. With zygomatic implants, however, dental prosthetics can be attached much sooner — typically within a few weeks, significantly shortening the overall treatment time and allowing patients to regain their smile much quicker.",
+    "benefit3Title": "3. Higher Success Rate in Severe Bone Loss Cases",
+    "benefit3Desc": "Studies have shown that zygomatic implants have a success rate of up to 97%, making them a reliable and predictable solution for patients with significant bone loss. This is a significant advantage over traditional implants, which may have a lower success rate when there's insufficient bone volume. Zygomatic implants are designed to provide a secure foundation in cases where conventional methods may fail.",
+    "benefit4Title": "4. Restores Function and Aesthetics Quickly",
+    "benefit4Desc": "Another major benefit of zygomatic implants is that they allow for the restoration of both function and aesthetics in a shorter amount of time compared to traditional implants. Patients who may have had difficulty chewing, speaking, or smiling due to severe bone loss can quickly restore their natural functions and regain their confidence.",
     "faqTitle": "Часто Задаваемые Вопросы: Скуловые Импланты",
     "faqSubtitle": "Clinically verified answers regarding cheekbone anchoring, surgical recovery, bone grafting alternatives, and health tourism in Istanbul.",
     "faqGroup1Title": "Clinical & Surgical Zygomatic FAQ (Severe Bone Loss Solutions)",
@@ -4177,98 +3959,63 @@ export default function ZygomaticImplantDetailView() {
         </div>
       </section>
 
-      {/* 6. EDITORIAL PROSE: YOUR DENTAL JOURNEY MADE SIMPLE & QUICK REACH OUT */}
-      <section aria-labelledby="zygoma-journey-heading" className={styles.editorialSection}>
+      {/* 6. CLEAN EDITORIAL PROSE (STANDARD_CENTER4 STYLE: EXACT TEXT & 3RD CLINICAL VIDEO) */}
+      <section aria-labelledby="zygoma-advantages-heading" className={styles.introSection} style={{ backgroundColor: '#fcfdfd', borderTop: '1px solid #eef2f6', borderBottom: '1px solid #eef2f6' }}>
         <div className={styles.container}>
-          <div className={styles.editorialHeader}>
-            <h2 id="zygoma-journey-heading" className={styles.editorialHeading}>
-              {d.journeyTitle}
-            </h2>
-            <p className={styles.editorialLead}>{d.journeyLead}</p>
-          </div>
+          <h2 id="zygoma-advantages-heading" className={styles.introHeading}>
+            {d.advantagesH2}
+          </h2>
 
-          {/* Quick Summary Grid */}
-          <div className={styles.journeySummaryBox}>
-            <div className={styles.journeySummaryGrid}>
-              <div className={styles.journeySummaryItem}>
-                <span className={styles.journeySummaryLabel}>{d.journeyStayLabel}</span>
-                <strong className={styles.journeySummaryVal}>{d.journeyStayVal}</strong>
-              </div>
-              <div className={styles.journeySummaryItem}>
-                <span className={styles.journeySummaryLabel}>{d.journeyVisitsLabel}</span>
-                <strong className={styles.journeySummaryVal}>{d.journeyVisitsVal}</strong>
-              </div>
-              <div className={styles.journeySummaryItem}>
-                <span className={styles.journeySummaryLabel}>{d.journeyRecoveryLabel}</span>
-                <strong className={styles.journeySummaryVal}>{d.journeyRecoveryVal}</strong>
-              </div>
-              <div className={styles.journeySummaryItem}>
-                <span className={styles.journeySummaryLabel}>{d.journeyPriceLabel}</span>
-                <strong className={styles.journeySummaryVal}>{d.journeyPriceVal}</strong>
-              </div>
-            </div>
+          <p className={styles.textP}>{d.advantagesP1}</p>
+          <p className={styles.textP}>{d.advantagesP2}</p>
 
-            {/* Reach Out Quick Links Bar */}
-            <div className={styles.reachOutBar}>
-              <span className={styles.reachOutLabel}>{d.reachOutLabel}</span>
-              <div className={styles.reachOutBtns}>
-                <a
-                  href="https://wa.me/905434568080"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`${styles.reachOutBtn} ${styles.reachOutBtnWhatsapp}`}
-                >
-                  <span>{d.reachOutWhatsapp}</span>
-                </a>
-                <a href="tel:+905434568080" className={styles.reachOutBtn}>
-                  <span>{d.reachOutPhone}</span>
-                </a>
-                <a href="#js_target1" className={styles.reachOutBtn}>
-                  <span>{d.reachOutForm}</span>
-                </a>
-                <a href="mailto:info@mastersmilestudio.com" className={styles.reachOutBtn}>
-                  <span>{d.reachOutEmail}</span>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          {/* ADVANTAGES OF ZYGOMATIC IMPLANTS (EDITORIAL PROSE) */}
-          <h3 className={styles.editorialSubheading}>
-            {d.advantagesTitle}
+          <h3 className={styles.introHeading} style={{ fontSize: 'clamp(1.4rem, 2.2vw, 1.8rem)', marginTop: '2.5rem', marginBottom: '1.25rem', color: '#D58936' }}>
+            {d.keyBenefitsH3}
           </h3>
-          <p className={styles.editorialParagraph}>{d.advantagesP1}</p>
-          <p className={styles.editorialParagraph}>{d.advantagesP2}</p>
 
-          {/* 4 Key Benefits List */}
-          <h4 className={styles.editorialHeading} style={{ fontSize: 'clamp(1.3rem, 2vw, 1.6rem)', marginTop: '2rem' }}>
-            {d.keyBenefitsHeading}
+          <h4 className={styles.introHeading} style={{ fontSize: 'clamp(1.15rem, 1.8vw, 1.35rem)', marginTop: '1.5rem', marginBottom: '0.5rem' }}>
+            {d.benefit1Title}
           </h4>
-          <div className={styles.benefitsList}>
-            {d.benefits.map((b, bIdx) => (
-              <div key={bIdx} className={styles.benefitItem}>
-                <div className={styles.benefitTitleRow}>
-                  <span className={styles.benefitNum}>{b.num}.</span>
-                  <h5 className={styles.benefitTitle}>{b.title}</h5>
-                </div>
-                <p className={styles.benefitDesc}>{b.desc}</p>
-              </div>
-            ))}
+          <p className={styles.textP}>{d.benefit1Desc}</p>
+
+          <h4 className={styles.introHeading} style={{ fontSize: 'clamp(1.15rem, 1.8vw, 1.35rem)', marginTop: '1.5rem', marginBottom: '0.5rem' }}>
+            {d.benefit2Title}
+          </h4>
+          <p className={styles.textP}>{d.benefit2Desc}</p>
+
+          <h4 className={styles.introHeading} style={{ fontSize: 'clamp(1.15rem, 1.8vw, 1.35rem)', marginTop: '1.5rem', marginBottom: '0.5rem' }}>
+            {d.benefit3Title}
+          </h4>
+          <p className={styles.textP}>{d.benefit3Desc}</p>
+
+          <h4 className={styles.introHeading} style={{ fontSize: 'clamp(1.15rem, 1.8vw, 1.35rem)', marginTop: '1.5rem', marginBottom: '0.5rem' }}>
+            {d.benefit4Title}
+          </h4>
+          <p className={styles.textP}>{d.benefit4Desc}</p>
+
+          {/* 3rd Clinical YouTube Video (R081L98DAls) */}
+          <div className={styles.mainVideoWrap} style={{ marginTop: '2.5rem' }}>
+            <iframe
+              src="https://www.youtube.com/embed/R081L98DAls"
+              title="Zygomatic and Cheekbone Dental Implants Real Patient Case Istanbul"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
           </div>
         </div>
       </section>
 
-      {/* 7. REUSABLE: SERVICES INCLUDED */}
+      {/* 7. BEFORE & AFTER TRANSFORMATIONS GALLERY (SECTBA STYLE) */}
+      <TreatmentBeforeAfterSliderSection />
+
+      {/* 8. REUSABLE: SERVICES INCLUDED */}
       <TreatmentServicesIncludedSection />
 
-      {/* 8. REUSABLE: CLINIC TOUR */}
+      {/* 9. REUSABLE: CLINIC TOUR */}
       <TreatmentClinicTourSection placeholderNum="ZYG-TOUR" />
 
-      {/* 9. REUSABLE: FOUNDING SURGEONS */}
+      {/* 10. REUSABLE: FOUNDING SURGEONS */}
       <TreatmentDoctorsSection />
-
-      {/* 10. BEFORE & AFTER TRANSFORMATIONS GALLERY */}
-      <TreatmentBeforeAfterSliderSection />
 
       {/* 11. REVIEWS & TRUSTPILOT / GOOGLE 5-STAR */}
       <TreatmentReviewsSection />
