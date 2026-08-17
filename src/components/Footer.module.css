@@ -3,12 +3,11 @@
   background-color: #ffffff;
   background-image: 
     radial-gradient(ellipse 95% 65% at 75% 100%, rgba(255, 165, 82, 0.42) 0%, rgba(255, 145, 36, 0.25) 35%, rgba(217, 119, 6, 0.12) 60%, rgba(255, 255, 255, 0.05) 85%, transparent 100%),
-    radial-gradient(ellipse 55% 75% at 100% 70%, rgba(255, 165, 82, 0.35) 0%, rgba(217, 119, 6, 0.18) 35%, rgba(146, 64, 14, 0.08) 65%, transparent 85%),
-    radial-gradient(ellipse 45% 45% at 50% 0%, rgba(255, 165, 82, 0.08) 0%, transparent 60%);
+    radial-gradient(ellipse 55% 75% at 100% 70%, rgba(255, 165, 82, 0.35) 0%, rgba(217, 119, 6, 0.18) 35%, rgba(146, 64, 14, 0.08) 65%, transparent 85%);
   color: #0c1b4d;
   padding: 5rem 1.5rem 3.5rem 1.5rem;
   overflow: hidden;
-  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  border-top: none;
 }
 
 .container {
@@ -54,13 +53,13 @@
 }
 
 .navLink:hover {
-  color: #b45309;
+  color: #0c1b4d;
   transform: translateX(3px);
 }
 
 .divider {
   height: 1px;
-  background-color: rgba(0, 0, 0, 0.08);
+  background-color: rgba(0, 0, 0, 0.06);
   margin-bottom: 3.5rem;
 }
 
@@ -121,8 +120,8 @@
 }
 
 .emailInput:focus {
-  border-color: #b45309;
-  box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.15);
+  border-color: #0c1b4d;
+  box-shadow: 0 0 0 3px rgba(12, 27, 77, 0.1);
 }
 
 .emailInput::placeholder {
@@ -163,7 +162,7 @@
 .checkboxInput {
   width: 16px;
   height: 16px;
-  accent-color: #d97706;
+  accent-color: #0c1b4d;
   cursor: pointer;
   border-radius: 4px;
 }
