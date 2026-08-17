@@ -17,6 +17,7 @@ import ZygomaticImplantDetailView from '@/components/ZygomaticImplantDetailView'
 import ZirconiumImplantDetailView from '@/components/ZirconiumImplantDetailView';
 import ImplantSupportedDenturesDetailView from '@/components/ImplantSupportedDenturesDetailView';
 import SinusLiftingDetailView from '@/components/SinusLiftingDetailView';
+import DentalCleaningHeroBanner from '@/components/treatment-sections/DentalCleaningHeroBanner';
 import { generateTreatmentJsonLd } from '@/lib/treatment-schema';
 import { getI18nAlternates, TREATMENT_LOCALES } from '@/lib/i18n-seo';
 import { getTreatmentContent } from '@/lib/treatment-content';
@@ -196,6 +197,7 @@ export default async function HierarchicalTreatmentPage({ params }: PageProps) {
   const isZygomatic = lastSlug === 'zygomatic-implants' || lastSlug === 'zygomatic-implants-istanbul-turkey' || lastSlug === 'zygomatic';
   const isZirconium = lastSlug === 'zirconium-implants' || lastSlug === 'zirconium-implants-istanbul-turkey';
   const isSinusLift = lastSlug === 'sinus-lifting' || lastSlug === 'sinus-lift';
+  const isDentalCleaning = lastSlug === 'dental-cleaning' || lastSlug === 'dental-cleaning-in-istanbul-turkey' || lastSlug === 'scaling-polishing';
 
   let heroBadge = content?.hero?.badge || (locale === 'tr' ? 'TEDAVİLERİMİZ' : 'TREATMENTS');
   let heroTitle = content?.hero?.title || t('pageTitle');
@@ -262,55 +264,59 @@ export default async function HierarchicalTreatmentPage({ params }: PageProps) {
 
       <Header />
 
-      <TreatmentHeroBanner
-        tag={heroBadge}
-        title={heroTitle}
-        subtitle={heroSubtitle}
-        primaryBtnText={
-          content?.hero?.primaryBtn ||
-          (locale === 'tr'
-            ? 'Randevu & Bilgi Al'
-            : locale === 'de'
-            ? 'Kontakt & Termin'
-            : locale === 'pl'
-            ? 'Kontakt i Rezerwacja'
-            : locale === 'pt'
-            ? 'Contato e Agendamento'
-            : locale === 'es'
-            ? 'Contacto y Cita'
-            : locale === 'ru'
-            ? 'Консультация и Запись'
-            : 'Contact & Appointment')
-        }
-        primaryBtnHref="/contact"
-        primaryBtnAriaLabel={
-          locale === 'tr'
-            ? 'Randevu ve bilgi almak için iletişim sayfasına gidin'
-            : 'Contact Master Smile Studio for appointment and consultation'
-        }
-        secondaryBtnText={
-          content?.hero?.secondaryBtn ||
-          (locale === 'tr'
-            ? 'Paketleri İncele'
-            : locale === 'de'
-            ? 'Pakete & Details ansehen'
-            : locale === 'pl'
-            ? 'Zobacz Pakiety i Szczegóły'
-            : locale === 'pt'
-            ? 'Ver Pacotes e Detalhes'
-            : locale === 'es'
-            ? 'Ver Paquetes y Detalles'
-            : locale === 'ru'
-            ? 'Посмотреть Пакеты и Детали'
-            : 'View Packages & Details')
-        }
-        secondaryBtnHref="#main-content"
-        secondaryBtnAriaLabel={
-          locale === 'tr'
-            ? 'Tedavi paketlerini ve ayrıntılarını incelemek için aşağı kaydırın'
-            : 'Scroll down to explore treatment packages and medical details'
-        }
-      />
+      {isDentalCleaning ? (
+        <DentalCleaningHeroBanner />
+      ) : (
+        <TreatmentHeroBanner
+          tag={heroBadge}
+          title={heroTitle}
+          subtitle={heroSubtitle}
+          primaryBtnText={
+            content?.hero?.primaryBtn ||
+            (locale === 'tr'
+              ? 'Randevu & Bilgi Al'
+              : locale === 'de'
+              ? 'Kontakt & Termin'
+              : locale === 'pl'
+              ? 'Kontakt i Rezerwacja'
+              : locale === 'pt'
+              ? 'Contato e Agendamento'
+              : locale === 'es'
+              ? 'Contacto y Cita'
+              : locale === 'ru'
+              ? 'Консультация и Запись'
+              : 'Contact & Appointment')
+          }
+          primaryBtnHref="/contact"
+          primaryBtnAriaLabel={
+            locale === 'tr'
+              ? 'Randevu ve bilgi almak için iletişim sayfasına gidin'
+              : 'Contact Master Smile Studio for appointment and consultation'
+          }
+          secondaryBtnText={
+            content?.hero?.secondaryBtn ||
+            (locale === 'tr'
+              ? 'Paketleri İncele'
+              : locale === 'de'
+              ? 'Pakete & Details ansehen'
+              : locale === 'pl'
+              ? 'Zobacz Pakiety i Szczegóły'
+              : locale === 'pt'
+              ? 'Ver Pacotes e Detalhes'
+              : locale === 'es'
+              ? 'Ver Paquetes y Detalles'
+              : locale === 'ru'
+              ? 'Посмотреть Пакеты и Детали'
+              : 'View Packages & Details')
+          }
+          secondaryBtnHref="#main-content"
+          secondaryBtnAriaLabel={
+            locale === 'tr'
+              ? 'Tedavi paketlerini ve ayrıntılarını incelemek için aşağı kaydırın'
+              : 'Scroll down to explore treatment packages and medical details'
+          }
+        />
+      )}
 
       <main id="main-content" className="treatment-main-content">
         {isGeneral ? (
