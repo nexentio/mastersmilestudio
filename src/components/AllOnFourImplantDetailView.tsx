@@ -10,7 +10,6 @@ import TreatmentDoctorsSection from '@/components/treatment-sections/TreatmentDo
 import TreatmentJourneySimpleSection from '@/components/treatment-sections/TreatmentJourneySimpleSection';
 import TreatmentPatientReelsSection from '@/components/treatment-sections/TreatmentPatientReelsSection';
 import TreatmentClinicTourSection from '@/components/treatment-sections/TreatmentClinicTourSection';
-import TreatmentRightTreatmentAccordion from '@/components/treatment-sections/TreatmentRightTreatmentAccordion';
 import TreatmentReviewsSection from '@/components/treatment-sections/TreatmentReviewsSection';
 import TreatmentBeforeAfterSliderSection from '@/components/treatment-sections/TreatmentBeforeAfterSliderSection';
 import TreatmentInteractiveQuoteForm from '@/components/treatment-sections/TreatmentInteractiveQuoteForm';
@@ -1426,10 +1425,7 @@ export default function AllOnFourImplantDetailView() {
         </div>
       </section>
 
-      {/* 2. FIND THE RIGHT TREATMENT ACCORDION (8 Sub-treatments) */}
-      <TreatmentRightTreatmentAccordion />
-
-      {/* 3. TRANSPARENT PACKAGES & DYNAMIC CURRENCY SWITCHER */}
+      {/* 2. TRANSPARENT PACKAGES & DYNAMIC CURRENCY SWITCHER */}
       <section aria-labelledby="allon4-packages-heading" className={styles.packagesSection}>
         <div className={styles.container}>
           <div className={styles.packagesHeader}>
@@ -1556,10 +1552,7 @@ export default function AllOnFourImplantDetailView() {
         priceEstimate="Starting from €4,900 / £4,200 per arch"
       />
 
-      {/* 12. REUSABLE: INTERACTIVE 4-STEP QUOTE FORM */}
-      <TreatmentInteractiveQuoteForm defaultTreatment="All-on-4 / All-on-6" />
-
-      {/* 13. MASTER 17-QUESTION FAQ SECTION (PART 1 + PART 2) */}
+      {/* 12. MASTER 17-QUESTION FAQ SECTION (CLINICAL & HEALTH TOURISM) */}
       <section aria-labelledby="allon4-faq-heading" className={styles.faqSection}>
         <div className={styles.faqContainer}>
           <div className={styles.faqHeader}>
@@ -1641,30 +1634,8 @@ export default function AllOnFourImplantDetailView() {
         </div>
       </section>
 
-      {/* 14. WHATSAPP & QUOTE CTA BANNER */}
-      <section className={styles.ctaBannerSection}>
-        <div className={styles.ctaBannerContainer}>
-          <h2 className={styles.ctaBannerTitle}>{d.ctaTitle}</h2>
-          <p className={styles.ctaBannerDesc}>{d.ctaDesc}</p>
-
-          <div className={styles.ctaBtnRow}>
-            <a
-              href={getWhatsAppLink(locale)}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.whatsappBtn}
-            >
-              <span>{d.whatsappBtn}</span>
-              <span>→</span>
-            </a>
-
-            <Link href="/contact" className={styles.quoteFormBtn}>
-              <span>{d.quoteBtn}</span>
-              <span>→</span>
-            </Link>
-          </div>
-        </div>
-      </section>
+      {/* 13. LET'S CREATE YOUR PERFECT SMILE PLAN (4-STEP INTERACTIVE QUOTE FUNNEL) */}
+      <TreatmentInteractiveQuoteForm defaultTreatment="All-on-4 / All-on-6" />
     </div>
   );
 }
