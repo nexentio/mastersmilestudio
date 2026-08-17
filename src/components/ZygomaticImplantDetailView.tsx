@@ -35,44 +35,11 @@ interface CandidacyPoint {
   desc: string;
 }
 
-interface MaterialCardItem {
-  title: string;
-  sub: string;
-  badge?: string;
-  isGold?: boolean;
-  material: string;
-  strength: string;
-  chippingRisk: string;
-  lifespan: string;
-  features: { text: string; status: 'good' | 'bad' | 'warn' }[];
-}
-
-interface MaterialTableRow {
-  criteria: string;
-  zirconia: string;
-  acrylic: string;
-  pfm: string;
-}
-
 interface CompareTableRow {
   criteria: string;
   grafting: string;
   hybrid: string;
   quad: string;
-}
-
-interface ProcessCardItem {
-  step: string;
-  title: string;
-  text: string;
-  specs: { key: string; val: string }[];
-}
-
-interface CostTableRow {
-  country: string;
-  costPerArch: string;
-  inclusions: string;
-  valueAdvantage: string;
 }
 
 interface DetailDictionary {
@@ -127,36 +94,18 @@ interface DetailDictionary {
     whenZygomaticText: string;
   };
 
-  processTitle: string;
-  processSubtitle: string;
-  processCards: ProcessCardItem[];
-
-  materialsTitle: string;
-  materialsSubtitle: string;
-  materialsSpecLabels: {
-    material: string;
-    strength: string;
-    chipping: string;
-    lifespan: string;
-  };
-  materialsCards: MaterialCardItem[];
-  materialsTableHeaders: {
-    criteria: string;
-    zirconia: string;
-    acrylic: string;
-    pfm: string;
-  };
-  materialsTableRows: MaterialTableRow[];
-
-  costTitle: string;
-  costSubtitle: string;
-  costTableHeaders: {
-    country: string;
-    costPerArch: string;
-    inclusions: string;
-    valueAdvantage: string;
-  };
-  costTableRows: CostTableRow[];
+  advantagesH2: string;
+  advantagesP1: string;
+  advantagesP2: string;
+  keyBenefitsH3: string;
+  benefit1Title: string;
+  benefit1Desc: string;
+  benefit2Title: string;
+  benefit2Desc: string;
+  benefit3Title: string;
+  benefit3Desc: string;
+  benefit4Title: string;
+  benefit4Desc: string;
 
   faqTitle: string;
   faqSubtitle: string;
@@ -532,7 +481,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       "criteria": "Clinical Parameter",
       "grafting": "Complex Sinus Lift & Bone Grafting",
       "hybrid": "Hybrid Zygoma (2 Zygoma + 2-4 Std)",
-      "quad": "Quad Zygoma (4 Zygomatic Implants) [Gold Standard]"
+      "quad": "Quad Zygoma (4 Zygomatic Implants) [Clinical Gold Standard]"
     },
     "compareTableRows": [
       {
@@ -584,233 +533,18 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       "whenZygomaticTitle": "When are Zygomatic Implants the Only Viable Solution?",
       "whenZygomaticText": "Zygomatic implants are the definitive gold standard when the upper jaw is completely hollowed out, previous bone grafts have failed, or the patient cannot tolerate 18 months without fixed teeth."
     },
-    "processTitle": "3-Phase Precision Protocol for Zygomatic Implants",
-    "processSubtitle": "Every zygomatic intervention at Master Smile Studio follows military-grade 3D CBCT computer guidance and hospital-grade surgical theater protocols.",
-    "processCards": [
-      {
-        "step": "PHASE 01",
-        "title": "3D Craniofacial CBCT Bone Mapping & Stereolithographic Guide",
-        "text": "High-definition 3D tomography scans the entire maxillofacial skeleton. A virtual surgery plan determines the exact 30–55mm trajectory through the zygomatic arch.",
-        "specs": [
-          {
-            "key": "CBCT Precision",
-            "val": "< 0.1 mm accuracy"
-          },
-          {
-            "key": "Virtual Simulation",
-            "val": "Craniofacial Angulation Plan"
-          },
-          {
-            "key": "Surgical Guide",
-            "val": "Custom 3D CAD/CAM Guide"
-          }
-        ]
-      },
-      {
-        "step": "PHASE 02",
-        "title": "Maxillofacial Surgery & Same-Day Fixed Bridge (24h)",
-        "text": "Performed under conscious IV sedation or general anesthesia. 2 to 4 extra-long titanium implants achieve 50–65 Ncm torque, allowing immediate screw-retained teeth in 24h.",
-        "specs": [
-          {
-            "key": "Anesthesia",
-            "val": "Conscious IV Sedation / GA"
-          },
-          {
-            "key": "Insertion Torque",
-            "val": "50 – 65 Ncm (Immediate load)"
-          },
-          {
-            "key": "Provisional Bridge",
-            "val": "Fixed CAD/CAM Acrylic in 24h"
-          }
-        ]
-      },
-      {
-        "step": "PHASE 03",
-        "title": "CAD/CAM Monolithic Zirconia Permanent Full-Arch Bridge",
-        "text": "After 3 months of complete cheekbone osseointegration, digital intraoral scans capture the soft-tissue profile. A 1200+ MPa German monolithic zirconia bridge is secured.",
-        "specs": [
-          {
-            "key": "Restoration Type",
-            "val": "Monolithic Multilayer Zirconia"
-          },
-          {
-            "key": "Flexural Strength",
-            "val": "1200 – 1400 MPa"
-          },
-          {
-            "key": "Substructure",
-            "val": "Titanium Framework Reinforced"
-          }
-        ]
-      }
-    ],
-    "materialsTitle": "Zygomatic Full-Arch Bridge Materials: What Works Best?",
-    "materialsSubtitle": "Restoring a zygomatic full arch requires maximum flexural strength and zero chipping risk under intense masticatory forces.",
-    "materialsSpecLabels": {
-      "material": "Material Composition",
-      "strength": "Flexural Strength",
-      "chipping": "Chipping / Fracture Risk",
-      "lifespan": "Expected Longevity"
-    },
-    "materialsCards": [
-      {
-        "title": "Monolithic Multilayer Zirconia",
-        "sub": "100% Solid German Zirconia on Titanium Substructure",
-        "badge": "Our Golden Standard",
-        "isGold": true,
-        "material": "1200+ MPa CAD/CAM Monolithic Multilayer Zirconia",
-        "strength": "1200 – 1400 MPa (Indestructible)",
-        "chippingRisk": "0% (Zero layered porcelain chipping)",
-        "lifespan": "Lifetime (Maximum Durability)",
-        "features": [
-          {
-            "text": "Unrestricted bite force: easily handles 600+ Newtons of mastication",
-            "status": "good"
-          },
-          {
-            "text": "Ultra-smooth non-porous surface prevents plaque & Peri-implantitis",
-            "status": "good"
-          },
-          {
-            "text": "Custom titanium substructure eliminates micro-flexing across implants",
-            "status": "good"
-          },
-          {
-            "text": "Natural multi-layer light translucency matching adjacent features",
-            "status": "good"
-          }
-        ]
-      },
-      {
-        "title": "Titanium-Bar Acrylic Hybrid",
-        "sub": "Cast Metal Substructure with Acrylic Resin & Plastic Teeth",
-        "badge": "Economy Alternative",
-        "isGold": false,
-        "material": "PMMA Acrylic Resin + Cast Titanium Bar",
-        "strength": "80 – 120 MPa (Low)",
-        "chippingRisk": "High (Plastic teeth pop off or wear down)",
-        "lifespan": "3 – 7 Years",
-        "features": [
-          {
-            "text": "Lower initial manufacturing cost",
-            "status": "good"
-          },
-          {
-            "text": "Abrasive wear flattens teeth, shifting jaw alignment",
-            "status": "bad"
-          },
-          {
-            "text": "Porcelain/acrylic resin absorbs stains, odors, and bacteria",
-            "status": "bad"
-          },
-          {
-            "text": "Requires frequent maintenance, relining, and total replacement",
-            "status": "warn"
-          }
-        ]
-      },
-      {
-        "title": "Porcelain-Fused-to-Metal (PFM)",
-        "sub": "Cast Cobalt-Chromium Frame with Baked Porcelain",
-        "badge": "Legacy Standard",
-        "isGold": false,
-        "material": "Cast Cobalt-Chromium Alloy + Feldspathic Porcelain",
-        "strength": "350 – 450 MPa (Moderate)",
-        "chippingRisk": "Moderate to High (Porcelain delamination risk)",
-        "lifespan": "8 – 12 Years",
-        "features": [
-          {
-            "text": "Rigid metal substructure",
-            "status": "good"
-          },
-          {
-            "text": "Porcelain prone to fractures under heavy zygomatic bite forces",
-            "status": "bad"
-          },
-          {
-            "text": "Dark grey metal margin shows over time if gums recede",
-            "status": "bad"
-          },
-          {
-            "text": "Heavy bulk creates an uncomfortable foreign-body sensation",
-            "status": "bad"
-          }
-        ]
-      }
-    ],
-    "materialsTableHeaders": {
-      "criteria": "Comparison Criteria",
-      "zirconia": "Monolithic Zirconia [Top Choice]",
-      "acrylic": "Acrylic Hybrid (PMMA)",
-      "pfm": "Porcelain-to-Metal (PFM)"
-    },
-    "materialsTableRows": [
-      {
-        "criteria": "Flexural Strength",
-        "zirconia": "1200 – 1400 MPa (Indestructible)",
-        "acrylic": "80 – 120 MPa (Fragile)",
-        "pfm": "350 – 450 MPa (Moderate)"
-      },
-      {
-        "criteria": "Chipping & Breakage Risk",
-        "zirconia": "0% (Solid homogeneous block)",
-        "acrylic": "High (Teeth detach or fracture)",
-        "pfm": "High (Porcelain chips off metal)"
-      },
-      {
-        "criteria": "Hygiene & Odor Resistance",
-        "zirconia": "100% Non-porous (Zero odor/stains)",
-        "acrylic": "Porous (Absorbs bacteria & odor)",
-        "pfm": "Moderate (Plaque traps at metal line)"
-      },
-      {
-        "criteria": "Digital CAD/CAM Robotic Milling",
-        "zirconia": "5-axis robotic precision (< 5 µm)",
-        "acrylic": "Manual flasking & pressing",
-        "pfm": "Manual casting and hand-layering"
-      },
-      {
-        "criteria": "Suitability for Zygomatic Arches",
-        "zirconia": "100% Recommended (Maximum stability)",
-        "acrylic": "Temporary use only (High flex)",
-        "pfm": "Not Recommended (Chipping risk)"
-      },
-      {
-        "criteria": "Expected Clinical Longevity",
-        "zirconia": "Lifetime Guarantee",
-        "acrylic": "3 – 7 Years",
-        "pfm": "8 – 12 Years"
-      }
-    ],
-    "costTitle": "International Cost Comparison: Zygomatic Implants (UK / US vs Istanbul)",
-    "costSubtitle": "Compare real clinical costs per full arch including extractions, zygomatic implants, hospital fees, sedation, hotel, and VIP transfers.",
-    "costTableHeaders": {
-      "country": "Location & Hospital Tier",
-      "costPerArch": "Cost per Full Upper Arch (Zygomatic)",
-      "inclusions": "Package Coverage & Surgical Theater Work",
-      "valueAdvantage": "Master Smile Studio Advantage"
-    },
-    "costTableRows": [
-      {
-        "country": "United Kingdom (Harley Street / Private London)",
-        "costPerArch": "£22,000 – £35,000 ($28,000 – $45,000)",
-        "inclusions": "Surgical fee and zygomatic implants only. Hospital bed (£2,500), general anesthesia (£1,800), CBCT (£350), and zirconia bridge (£4,500) billed separately.",
-        "valueAdvantage": "Baseline UK Private Market Cost"
-      },
-      {
-        "country": "United States (Maxillofacial Surgery Centers)",
-        "costPerArch": "$30,000 – $55,000 (€28,000 – €50,000)",
-        "inclusions": "Surgical center fee and implants. Anesthesiologist fee, bone profiling, laboratory work, hotel, and transport billed as extra line-items.",
-        "valueAdvantage": "Baseline US Private Market Cost"
-      },
-      {
-        "country": "Master Smile Studio (Istanbul, Turkey) [Direct Clinic]",
-        "costPerArch": "€6,900 – €8,900 (£5,950 – £7,700)",
-        "inclusions": "100% All-Inclusive: Certified Zygomatic Implants, hospital surgical suite, IV sedation, 24h provisional bridge, German Zirconia final bridge, 5-star hotel & VIP transfers.",
-        "valueAdvantage": "70% – 75% Net Savings (World-Class Maxillofacial Team)"
-      }
-    ],
+    "advantagesH2": "Advantages of Zygomatic and Pterygoid (Cheekbone) Implants Over Traditional Dental Implants at Master Smile Studio, Istanbul, Turkey",
+    "advantagesP1": "One of the primary advantages of zygomatic implants is their ability to provide a solution for patients with severe bone loss in the upper jaw. Traditional dental implants require a sufficient amount of healthy, dense bone to anchor into, but in cases of extensive bone loss, this may not be possible.",
+    "advantagesP2": "Zygomatic implants, on the other hand, bypass the need for a robust jawbone by utilizing the stronger and more stable cheekbone (zygomatic bone) as the anchor point. This eliminates the requirement for bone grafting procedures, which can be time-consuming, invasive, and costly.",
+    "keyBenefitsH3": "Key Benefits of Zygomatic (Cheekbone) Implants:",
+    "benefit1Title": "1. No Need for Bone Grafting",
+    "benefit1Desc": "Zygomatic implants offer a significant advantage for patients who have experienced extensive bone loss in the upper jaw. While traditional implants typically require bone grafting to rebuild lost bone, zygomatic implants make use of the zygomatic bone, which is often dense and stable enough to support implants. This reduces the need for expensive and invasive bone grafting procedures.",
+    "benefit2Title": "2. Faster Treatment Timeline",
+    "benefit2Desc": "In Turkey, zygomatic implants provide a faster solution compared to traditional implants. Traditional implants often require several months of healing and osseointegration before the final restoration can be placed. With zygomatic implants, however, dental prosthetics can be attached much sooner — typically within a few weeks, significantly shortening the overall treatment time and allowing patients to regain their smile much quicker.",
+    "benefit3Title": "3. Higher Success Rate in Severe Bone Loss Cases",
+    "benefit3Desc": "Studies have shown that zygomatic implants have a success rate of up to 97%, making them a reliable and predictable solution for patients with significant bone loss. This is a significant advantage over traditional implants, which may have a lower success rate when there's insufficient bone volume. Zygomatic implants are designed to provide a secure foundation in cases where conventional methods may fail.",
+    "benefit4Title": "4. Restores Function and Aesthetics Quickly",
+    "benefit4Desc": "Another major benefit of zygomatic implants is that they allow for the restoration of both function and aesthetics in a shorter amount of time compared to traditional implants. Patients who may have had difficulty chewing, speaking, or smiling due to severe bone loss can quickly restore their natural functions and regain their confidence.",
     "faqTitle": "Frequently Asked Questions: Zygomatic Implants",
     "faqSubtitle": "Clinically verified answers regarding cheekbone anchoring, surgical recovery, bone grafting alternatives, and health tourism in Istanbul.",
     "faqGroup1Title": "Clinical & Surgical Zygomatic FAQ (Severe Bone Loss Solutions)",
@@ -1253,7 +987,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       "criteria": "Klinik Parametre",
       "grafting": "İleri Sinüs Lifting & Kemik Grefti",
       "hybrid": "Hibrit Zigoma (2 Zigoma + 2-4 Standart)",
-      "quad": "Dörtlü (Quad) Zigoma (4 Zigoma İmplant) [Altın Standart]"
+      "quad": "Dörtlü (Quad) Zigoma (4 Zigoma İmplant) [Klinik Altın Standart]"
     },
     "compareTableRows": [
       {
@@ -1305,233 +1039,18 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       "whenZygomaticTitle": "Zigoma İmplantları Ne Zaman Tek Çözümdür?",
       "whenZygomaticText": "Üst çene kemiği tamamen eridiğinde, önceki kemik tozları tutmadığında ve hastanın 18 ay dişsiz beklemek istemediği durumlarda tartışmasız tek seçenektir."
     },
-    "processTitle": "3 Aşamalı Hassas Zigoma İmplant Protokolü",
-    "processSubtitle": "Master Smile Studio’da her zigoma operasyonu 3D kraniyofasiyal tomografi ve tam teşekküllü ameliyathane koşullarında gerçekleştirilir.",
-    "processCards": [
-      {
-        "step": "AŞAMA 01",
-        "title": "3D Kraniyofasiyal Tomografi & Bilgisayarlı Cerrahi Kılavuz",
-        "text": "Yüksek çözünürlüklü tomografi ile yüz iskeleti taranır. 30-55 mm uzunluğundaki implantın elmacık kemiğine giriş açısı dijital simülasyonla milimetrik planlanır.",
-        "specs": [
-          {
-            "key": "CBCT Hassasiyeti",
-            "val": "< 0.1 mm netlik"
-          },
-          {
-            "key": "Açısal Simülasyon",
-            "val": "Kraniyofasiyal Rehber Planı"
-          },
-          {
-            "key": "Cerrahi Kılavuz",
-            "val": "Kişiye Özel 3D Kılavuz Stent"
-          }
-        ]
-      },
-      {
-        "step": "AŞAMA 02",
-        "title": "Sedasyon Altında Ameliyat ve 24 Saatte Sabit Geçici Dişler",
-        "text": "Uzman anestezi hekimi eşliğinde IV sedasyonla konforlu cerrahi yapılır. 50-65 Ncm yüksek tork elde edilerek 24 saat içinde vidalı sabit geçici köprü takılır.",
-        "specs": [
-          {
-            "key": "Anestezi Türü",
-            "val": "Bilinçli IV Sedasyon / Genel Anestezi"
-          },
-          {
-            "key": "Sıkma Torku",
-            "val": "50 – 65 Ncm (Anında yükleme)"
-          },
-          {
-            "key": "Geçici Diş",
-            "val": "24 Saatte Vidalı Sabit Köprü"
-          }
-        ]
-      },
-      {
-        "step": "AŞAMA 03",
-        "title": "CAD/CAM Monolitik Zirkonyum Kalıcı Master Köprü",
-        "text": "3 aylık kemik kaynamasının ardından 3D dijital ağız içi tarama yapılır. Titanyum bar destekli 1200+ MPa Alman monolitik zirkonyum kalıcı köprü sabitlenir.",
-        "specs": [
-          {
-            "key": "Kalıcı Protez",
-            "val": "Monolitik Çok Katmanlı Zirkonyum"
-          },
-          {
-            "key": "Bükülme Direnci",
-            "val": "1200 – 1400 MPa (Kırılmaz)"
-          },
-          {
-            "key": "Altyapı",
-            "val": "Titanyum Bar Güçlendirmeli"
-          }
-        ]
-      }
-    ],
-    "materialsTitle": "Zigoma İmplant Üstü Köprü Malzemeleri: Hangisi Daha Dayanıklı?",
-    "materialsSubtitle": "Zigoma implantlarının yüksek çiğneme kuvvetine dayanabilmesi için yalnızca bükülmez ve kırılmaz masif materyaller kullanılmalıdır.",
-    "materialsSpecLabels": {
-      "material": "Malzeme Yapısı",
-      "strength": "Bükülme Direnci",
-      "chipping": "Kırılma / Atma Riski",
-      "lifespan": "Klinik Ömür"
-    },
-    "materialsCards": [
-      {
-        "title": "Monolitik Çok Katmanlı Zirkonyum",
-        "sub": "Titanyum Altyapı Üzerine %100 Masif Alman Zirkonyum",
-        "badge": "Klinik Standartımız",
-        "isGold": true,
-        "material": "1200+ MPa CAD/CAM Masif Çok Katmanlı Zirkonyum",
-        "strength": "1200 – 1400 MPa (Kırılmaz Masif)",
-        "chippingRisk": "%0 (Porselen atma riski sıfır)",
-        "lifespan": "Ömür Boyu Dayanıklılık",
-        "features": [
-          {
-            "text": "Sınırsız çiğneme gücü: 600+ Newton çiğneme baskısına tam dayanıklı",
-            "status": "good"
-          },
-          {
-            "text": "Gözeneksiz cam cilalı yüzey bakteri ve leke tutmaz",
-            "status": "good"
-          },
-          {
-            "text": "Titanyum bar desteği sayesinde implantlar arası esneme sıfırlanır",
-            "status": "good"
-          },
-          {
-            "text": "Doğal diş minesini taklit eden çok katmanlı ışık geçirgenliği",
-            "status": "good"
-          }
-        ]
-      },
-      {
-        "title": "Titanyum Barlı Akrilik Hibrit",
-        "sub": "Döküm Metal Altyapılı Plastik Dişli Protez",
-        "badge": "Ekonomik Alternatif",
-        "isGold": false,
-        "material": "PMMA Akrilik Rezin + Döküm Titanyum Bar",
-        "strength": "80 – 120 MPa (Düşük)",
-        "chippingRisk": "Yüksek (Plastik dişler düşer veya aşınır)",
-        "lifespan": "3 – 7 Yıl",
-        "features": [
-          {
-            "text": "Daha düşük başlangıç maliyeti",
-            "status": "good"
-          },
-          {
-            "text": "Plastik dişler çiğnemeyle aşınır ve çene kapanışı çöker",
-            "status": "bad"
-          },
-          {
-            "text": "Akrilik gövde zamanla koku, leke ve bakteri çeker",
-            "status": "bad"
-          },
-          {
-            "text": "Sık sık astar ve tamir gerektirir, kalıcı çözüm değildir",
-            "status": "warn"
-          }
-        ]
-      },
-      {
-        "title": "Metal Destekli Porselen (PFM)",
-        "sub": "Kobalt-Krom Altyapılı Klasik Porselen",
-        "badge": "Eski Tip Standart",
-        "isGold": false,
-        "material": "Döküm Kobalt-Krom Alaşım + Porselen",
-        "strength": "350 – 450 MPa (Orta)",
-        "chippingRisk": "Orta - Yüksek (Porselen kırılma riski)",
-        "lifespan": "8 – 12 Yıl",
-        "features": [
-          {
-            "text": "Rijit metal altyapı",
-            "status": "good"
-          },
-          {
-            "text": "Zigoma çiğneme kuvveti altında porselen metalden ayrılabilir",
-            "status": "bad"
-          },
-          {
-            "text": "Diş eti çekildiğinde siyah metal kenar yansıması yapar",
-            "status": "bad"
-          },
-          {
-            "text": "Ağır gövdesi ağızda yabancı cisim hissi yaratır",
-            "status": "bad"
-          }
-        ]
-      }
-    ],
-    "materialsTableHeaders": {
-      "criteria": "Karşılaştırma Kriteri",
-      "zirconia": "Monolitik Zirkonyum [En İyi Tercih]",
-      "acrylic": "Akrilik Hibrit (PMMA)",
-      "pfm": "Metal Destekli Porselen (PFM)"
-    },
-    "materialsTableRows": [
-      {
-        "criteria": "Bükülme Direnci",
-        "zirconia": "1200 – 1400 MPa (Kırılmaz)",
-        "acrylic": "80 – 120 MPa (Kırılgan)",
-        "pfm": "350 – 450 MPa (Orta)"
-      },
-      {
-        "criteria": "Kırılma ve Porselen Atma Riski",
-        "zirconia": "%0 (Masif homojen blok)",
-        "acrylic": "Yüksek (Plastik diş kırılır)",
-        "pfm": "Yüksek (Porselen metalden kopar)"
-      },
-      {
-        "criteria": "Leke ve Koku Direnci",
-        "zirconia": "%100 Gözeneksiz (Sıfır koku/leke)",
-        "acrylic": "Gözenekli (Koku ve leke çeker)",
-        "pfm": "Orta (Metal sınırında bakteri birikir)"
-      },
-      {
-        "criteria": "Dijital CAD/CAM Robotik Frezeleme",
-        "zirconia": "5 eksenli mikron hassasiyet (< 5 µm)",
-        "acrylic": "Manuel mufla ve presleme",
-        "pfm": "Manuel döküm ve fırınlama"
-      },
-      {
-        "criteria": "Zigoma Çenesine Uygunluk",
-        "zirconia": "%100 Tavsiye Edilir (Maksimum dayanım)",
-        "acrylic": "Yalnızca geçici dönem için uygundur",
-        "pfm": "Tavsiye Edilmez (Kırılma riski taşır)"
-      },
-      {
-        "criteria": "Beklenen Klinik Ömür",
-        "zirconia": "Ömür Boyu Garanti",
-        "acrylic": "3 – 7 Yıl",
-        "pfm": "8 – 12 Yıl"
-      }
-    ],
-    "costTitle": "Uluslararası Maliyet Karşılaştırması: Zigoma İmplantları (İngiltere / ABD vs İstanbul)",
-    "costSubtitle": "Çekimler, zigoma implantları, ameliyathane, sedasyon, otel ve VIP transferler dahil tek çene maliyet analizi.",
-    "costTableHeaders": {
-      "country": "Ülke ve Hastane Seviyesi",
-      "costPerArch": "Üst Çene Zigoma Maliyeti (Tam Çene)",
-      "inclusions": "Paket Kapsamı ve Cerrahi Ameliyathane Hizmetleri",
-      "valueAdvantage": "Master Smile Studio Avantajı"
-    },
-    "costTableRows": [
-      {
-        "country": "İngiltere (Harley Street / Özel Londra Hastaneleri)",
-        "costPerArch": "£22,000 – £35,000 ($28,000 – $45,000)",
-        "inclusions": "Yalnızca cerrah ve implant ücreti. Ameliyathane (£2,500), Genel anestezi (£1,800), Tomografi (£350) ve zirkonyum köprü (£4,500) ayrı faturalandırılır.",
-        "valueAdvantage": "İngiltere Piyasa Tabanı"
-      },
-      {
-        "country": "Amerika Birleşik Devletleri (Maksillofasiyal Merkezler)",
-        "costPerArch": "$30,000 – $55,000 (€28,000 – €50,000)",
-        "inclusions": "Cerrahi merkez ve implant materyali. Anestezi uzmanı, laboratuvar, otel ve ulaşım ekstra kalemlerdir.",
-        "valueAdvantage": "ABD Piyasa Tabanı"
-      },
-      {
-        "country": "Master Smile Studio (İstanbul, Türkiye) [Direkt Klinik]",
-        "costPerArch": "€6,900 – €8,900 (£5,950 – £7,700)",
-        "inclusions": "%100 Her Şey Dahil: Sertifikalı Zigoma implantları, ameliyathane, IV sedasyon, 24 saatte geçici köprü, Alman Zirkonyum kalıcı köprü, 5 yıldızlı otel ve VIP transferler.",
-        "valueAdvantage": "%70 – %75 Net Tasarruf (Dünya Standartlarında Çene Cerrahisi)"
-      }
-    ],
+    "advantagesH2": "Master Smile Studio İstanbul’da Zigoma ve Pterigoid (Elmacık Kemiği) İmplantlarının Geleneksel İmplantlara Göre Avantajları",
+    "advantagesP1": "Zigoma implantlarının en büyük avantajı, üst çenesinde ileri derecede kemik kaybı yaşayan hastalara kesin ve kalıcı bir sabit diş çözümü sunabilmesidir. Geleneksel diş implantları tutunabilmek için yeterli hacim ve yoğunlukta sağlıklı çene kemiğine ihtiyaç duyar; ancak aşırı kemik erimesi vakalarında bu mümkün olmayabilir.",
+    "advantagesP2": "Buna karşılık zigoma implantları, erimiş üst çene kemiğini tamamen baypas ederek çok daha güçlü ve stabil olan elmacık kemiğini (zigomatik kemik) dayanak noktası olarak kullanır. Bu sayede aylar süren, maliyetli ve yorucu kemik tozu (greft) ameliyatlarına olan ihtiyaç tamamen ortadan kalkar.",
+    "keyBenefitsH3": "Zigoma (Elmacık Kemiği) İmplantlarının Temel Avantajları:",
+    "benefit1Title": "1. Kemik Grefti ve Sinüs Lifting İhtiyacını Ortadan Kaldırır",
+    "benefit1Desc": "Zigoma implantları, üst çenesinde yoğun kemik kaybı olan hastalar için devrim niteliğinde bir avantaj sağlar. Geleneksel implantlar kaybolan kemiği yeniden oluşturmak için kemik grefti gerektirirken, zigoma implantları elmacık kemiğinin doğal yoğunluğundan güç alır. Bu da hastayı ek ameliyatlardan ve yüksek greft maliyetlerinden kurtarır.",
+    "benefit2Title": "2. Çok Daha Hızlı Tedavi ve Sabit Diş Süreci",
+    "benefit2Desc": "Türkiye’de zigoma implantları geleneksel yöntemlere kıyasla çok daha hızlı sonuç verir. Klasik implantlarda protez takılmadan önce kemik kaynaması için aylarca beklenmesi gerekirken; zigoma implantlarında güçlü tutuculuk sayesinde 24-48 saat içinde sabit dişler vidalanır ve hasta hızla yeni gülüşüne kavuşur.",
+    "benefit3Title": "3. İleri Kemik Kaybı Vakalarında En Yüksek Başarı Oranı",
+    "benefit3Desc": "Klinik çalışmalar zigoma implantlarının %97'nin üzerinde bir başarı oranına sahip olduğunu kanıtlamıştır. Yetersiz kemik hacmi nedeniyle klasik implantların başarısız olabileceği en zorlu vakalarda dahi elmacık kemiğinin yoğun kortikal yapısı sayesinde ömür boyu güvenli bir temel oluşturur.",
+    "benefit4Title": "4. Çiğneme Fonksiyonunu ve Estetiği Hızla Geri Kazandırır",
+    "benefit4Desc": "Zigoma implantlarının en önemli faydalarından biri de çiğneme fonksiyonunu ve yüz estetiğini çok kısa sürede restore etmesidir. Kemik kaybı nedeniyle çiğnemede, konuşmada veya gülümsemede güçlük çeken hastalarımız doğal çiğneme kuvvetine ve özgüvenlerine hızla yeniden kavuşur.",
     "faqTitle": "Sıkça Sorulan Sorular: Zigoma (Elmacık Kemiği) İmplantları",
     "faqSubtitle": "Elmacık kemiği tutunumu, cerrahi iyileşme, kemik nakli alternatifleri ve İstanbul sağlık turizmi hakkında hekim onaylı yanıtlar.",
     "faqGroup1Title": "Klinik ve Cerrahi Zigoma SSS (İleri Kemik Erimesi Çözümleri)",
@@ -1974,7 +1493,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       "criteria": "Clinical Parameter",
       "grafting": "Complex Sinus Lift & Bone Grafting",
       "hybrid": "Hybrid Zygoma (2 Zygoma + 2-4 Std)",
-      "quad": "Quad Zygoma (4 Zygomatic Implants) [Gold Standard]"
+      "quad": "Quad Zygoma (4 Zygomatic Implants) [Clinical Gold Standard]"
     },
     "compareTableRows": [
       {
@@ -2026,233 +1545,18 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       "whenZygomaticTitle": "When are Zygomatic Implants the Only Viable Solution?",
       "whenZygomaticText": "Zygomatic implants are the definitive gold standard when the upper jaw is completely hollowed out, previous bone grafts have failed, or the patient cannot tolerate 18 months without fixed teeth."
     },
-    "processTitle": "3-Phasen-Präzisionsprotokoll für Zygoma-Implantate",
-    "processSubtitle": "Every zygomatic intervention at Master Smile Studio follows military-grade 3D CBCT computer guidance and hospital-grade surgical theater protocols.",
-    "processCards": [
-      {
-        "step": "PHASE 01",
-        "title": "3D Craniofacial CBCT Bone Mapping & Stereolithographic Guide",
-        "text": "High-definition 3D tomography scans the entire maxillofacial skeleton. A virtual surgery plan determines the exact 30–55mm trajectory through the zygomatic arch.",
-        "specs": [
-          {
-            "key": "CBCT Precision",
-            "val": "< 0.1 mm accuracy"
-          },
-          {
-            "key": "Virtual Simulation",
-            "val": "Craniofacial Angulation Plan"
-          },
-          {
-            "key": "Surgical Guide",
-            "val": "Custom 3D CAD/CAM Guide"
-          }
-        ]
-      },
-      {
-        "step": "PHASE 02",
-        "title": "Maxillofacial Surgery & Same-Day Fixed Bridge (24h)",
-        "text": "Performed under conscious IV sedation or general anesthesia. 2 to 4 extra-long titanium implants achieve 50–65 Ncm torque, allowing immediate screw-retained teeth in 24h.",
-        "specs": [
-          {
-            "key": "Anesthesia",
-            "val": "Conscious IV Sedation / GA"
-          },
-          {
-            "key": "Insertion Torque",
-            "val": "50 – 65 Ncm (Immediate load)"
-          },
-          {
-            "key": "Provisional Bridge",
-            "val": "Fixed CAD/CAM Acrylic in 24h"
-          }
-        ]
-      },
-      {
-        "step": "PHASE 03",
-        "title": "CAD/CAM Monolithic Zirconia Permanent Full-Arch Bridge",
-        "text": "After 3 months of complete cheekbone osseointegration, digital intraoral scans capture the soft-tissue profile. A 1200+ MPa German monolithic zirconia bridge is secured.",
-        "specs": [
-          {
-            "key": "Restoration Type",
-            "val": "Monolithic Multilayer Zirconia"
-          },
-          {
-            "key": "Flexural Strength",
-            "val": "1200 – 1400 MPa"
-          },
-          {
-            "key": "Substructure",
-            "val": "Titanium Framework Reinforced"
-          }
-        ]
-      }
-    ],
-    "materialsTitle": "Brückenmaterialien für Zygoma-Versorgungen",
-    "materialsSubtitle": "Restoring a zygomatic full arch requires maximum flexural strength and zero chipping risk under intense masticatory forces.",
-    "materialsSpecLabels": {
-      "material": "Material Composition",
-      "strength": "Flexural Strength",
-      "chipping": "Chipping / Fracture Risk",
-      "lifespan": "Expected Longevity"
-    },
-    "materialsCards": [
-      {
-        "title": "Monolithic Multilayer Zirconia",
-        "sub": "100% Solid German Zirconia on Titanium Substructure",
-        "badge": "Our Golden Standard",
-        "isGold": true,
-        "material": "1200+ MPa CAD/CAM Monolithic Multilayer Zirconia",
-        "strength": "1200 – 1400 MPa (Indestructible)",
-        "chippingRisk": "0% (Zero layered porcelain chipping)",
-        "lifespan": "Lifetime (Maximum Durability)",
-        "features": [
-          {
-            "text": "Unrestricted bite force: easily handles 600+ Newtons of mastication",
-            "status": "good"
-          },
-          {
-            "text": "Ultra-smooth non-porous surface prevents plaque & Peri-implantitis",
-            "status": "good"
-          },
-          {
-            "text": "Custom titanium substructure eliminates micro-flexing across implants",
-            "status": "good"
-          },
-          {
-            "text": "Natural multi-layer light translucency matching adjacent features",
-            "status": "good"
-          }
-        ]
-      },
-      {
-        "title": "Titanium-Bar Acrylic Hybrid",
-        "sub": "Cast Metal Substructure with Acrylic Resin & Plastic Teeth",
-        "badge": "Economy Alternative",
-        "isGold": false,
-        "material": "PMMA Acrylic Resin + Cast Titanium Bar",
-        "strength": "80 – 120 MPa (Low)",
-        "chippingRisk": "High (Plastic teeth pop off or wear down)",
-        "lifespan": "3 – 7 Years",
-        "features": [
-          {
-            "text": "Lower initial manufacturing cost",
-            "status": "good"
-          },
-          {
-            "text": "Abrasive wear flattens teeth, shifting jaw alignment",
-            "status": "bad"
-          },
-          {
-            "text": "Porcelain/acrylic resin absorbs stains, odors, and bacteria",
-            "status": "bad"
-          },
-          {
-            "text": "Requires frequent maintenance, relining, and total replacement",
-            "status": "warn"
-          }
-        ]
-      },
-      {
-        "title": "Porcelain-Fused-to-Metal (PFM)",
-        "sub": "Cast Cobalt-Chromium Frame with Baked Porcelain",
-        "badge": "Legacy Standard",
-        "isGold": false,
-        "material": "Cast Cobalt-Chromium Alloy + Feldspathic Porcelain",
-        "strength": "350 – 450 MPa (Moderate)",
-        "chippingRisk": "Moderate to High (Porcelain delamination risk)",
-        "lifespan": "8 – 12 Years",
-        "features": [
-          {
-            "text": "Rigid metal substructure",
-            "status": "good"
-          },
-          {
-            "text": "Porcelain prone to fractures under heavy zygomatic bite forces",
-            "status": "bad"
-          },
-          {
-            "text": "Dark grey metal margin shows over time if gums recede",
-            "status": "bad"
-          },
-          {
-            "text": "Heavy bulk creates an uncomfortable foreign-body sensation",
-            "status": "bad"
-          }
-        ]
-      }
-    ],
-    "materialsTableHeaders": {
-      "criteria": "Comparison Criteria",
-      "zirconia": "Monolithic Zirconia [Top Choice]",
-      "acrylic": "Acrylic Hybrid (PMMA)",
-      "pfm": "Porcelain-to-Metal (PFM)"
-    },
-    "materialsTableRows": [
-      {
-        "criteria": "Flexural Strength",
-        "zirconia": "1200 – 1400 MPa (Indestructible)",
-        "acrylic": "80 – 120 MPa (Fragile)",
-        "pfm": "350 – 450 MPa (Moderate)"
-      },
-      {
-        "criteria": "Chipping & Breakage Risk",
-        "zirconia": "0% (Solid homogeneous block)",
-        "acrylic": "High (Teeth detach or fracture)",
-        "pfm": "High (Porcelain chips off metal)"
-      },
-      {
-        "criteria": "Hygiene & Odor Resistance",
-        "zirconia": "100% Non-porous (Zero odor/stains)",
-        "acrylic": "Porous (Absorbs bacteria & odor)",
-        "pfm": "Moderate (Plaque traps at metal line)"
-      },
-      {
-        "criteria": "Digital CAD/CAM Robotic Milling",
-        "zirconia": "5-axis robotic precision (< 5 µm)",
-        "acrylic": "Manual flasking & pressing",
-        "pfm": "Manual casting and hand-layering"
-      },
-      {
-        "criteria": "Suitability for Zygomatic Arches",
-        "zirconia": "100% Recommended (Maximum stability)",
-        "acrylic": "Temporary use only (High flex)",
-        "pfm": "Not Recommended (Chipping risk)"
-      },
-      {
-        "criteria": "Expected Clinical Longevity",
-        "zirconia": "Lifetime Guarantee",
-        "acrylic": "3 – 7 Years",
-        "pfm": "8 – 12 Years"
-      }
-    ],
-    "costTitle": "Internationaler Kostenvergleich: Zygoma-Implantate (UK / USA vs. Istanbul)",
-    "costSubtitle": "Compare real clinical costs per full arch including extractions, zygomatic implants, hospital fees, sedation, hotel, and VIP transfers.",
-    "costTableHeaders": {
-      "country": "Location & Hospital Tier",
-      "costPerArch": "Cost per Full Upper Arch (Zygomatic)",
-      "inclusions": "Package Coverage & Surgical Theater Work",
-      "valueAdvantage": "Master Smile Studio Advantage"
-    },
-    "costTableRows": [
-      {
-        "country": "United Kingdom (Harley Street / Private London)",
-        "costPerArch": "£22,000 – £35,000 ($28,000 – $45,000)",
-        "inclusions": "Surgical fee and zygomatic implants only. Hospital bed (£2,500), general anesthesia (£1,800), CBCT (£350), and zirconia bridge (£4,500) billed separately.",
-        "valueAdvantage": "Baseline UK Private Market Cost"
-      },
-      {
-        "country": "United States (Maxillofacial Surgery Centers)",
-        "costPerArch": "$30,000 – $55,000 (€28,000 – €50,000)",
-        "inclusions": "Surgical center fee and implants. Anesthesiologist fee, bone profiling, laboratory work, hotel, and transport billed as extra line-items.",
-        "valueAdvantage": "Baseline US Private Market Cost"
-      },
-      {
-        "country": "Master Smile Studio (Istanbul, Turkey) [Direct Clinic]",
-        "costPerArch": "€6,900 – €8,900 (£5,950 – £7,700)",
-        "inclusions": "100% All-Inclusive: Certified Zygomatic Implants, hospital surgical suite, IV sedation, 24h provisional bridge, German Zirconia final bridge, 5-star hotel & VIP transfers.",
-        "valueAdvantage": "70% – 75% Net Savings (World-Class Maxillofacial Team)"
-      }
-    ],
+    "advantagesH2": "Vorteile von Zygoma- und Pterygoid-Implantaten gegenüber herkömmlichen Implantaten bei Master Smile Studio, Istanbul",
+    "advantagesP1": "One of the primary advantages of zygomatic implants is their ability to provide a solution for patients with severe bone loss in the upper jaw. Traditional dental implants require a sufficient amount of healthy, dense bone to anchor into, but in cases of extensive bone loss, this may not be possible.",
+    "advantagesP2": "Zygomatic implants, on the other hand, bypass the need for a robust jawbone by utilizing the stronger and more stable cheekbone (zygomatic bone) as the anchor point. This eliminates the requirement for bone grafting procedures, which can be time-consuming, invasive, and costly.",
+    "keyBenefitsH3": "Key Benefits of Zygomatic (Cheekbone) Implants:",
+    "benefit1Title": "1. No Need for Bone Grafting",
+    "benefit1Desc": "Zygomatic implants offer a significant advantage for patients who have experienced extensive bone loss in the upper jaw. While traditional implants typically require bone grafting to rebuild lost bone, zygomatic implants make use of the zygomatic bone, which is often dense and stable enough to support implants. This reduces the need for expensive and invasive bone grafting procedures.",
+    "benefit2Title": "2. Faster Treatment Timeline",
+    "benefit2Desc": "In Turkey, zygomatic implants provide a faster solution compared to traditional implants. Traditional implants often require several months of healing and osseointegration before the final restoration can be placed. With zygomatic implants, however, dental prosthetics can be attached much sooner — typically within a few weeks, significantly shortening the overall treatment time and allowing patients to regain their smile much quicker.",
+    "benefit3Title": "3. Higher Success Rate in Severe Bone Loss Cases",
+    "benefit3Desc": "Studies have shown that zygomatic implants have a success rate of up to 97%, making them a reliable and predictable solution for patients with significant bone loss. This is a significant advantage over traditional implants, which may have a lower success rate when there's insufficient bone volume. Zygomatic implants are designed to provide a secure foundation in cases where conventional methods may fail.",
+    "benefit4Title": "4. Restores Function and Aesthetics Quickly",
+    "benefit4Desc": "Another major benefit of zygomatic implants is that they allow for the restoration of both function and aesthetics in a shorter amount of time compared to traditional implants. Patients who may have had difficulty chewing, speaking, or smiling due to severe bone loss can quickly restore their natural functions and regain their confidence.",
     "faqTitle": "Häufig gestellte Fragen: Zygoma-Implantate",
     "faqSubtitle": "Clinically verified answers regarding cheekbone anchoring, surgical recovery, bone grafting alternatives, and health tourism in Istanbul.",
     "faqGroup1Title": "Clinical & Surgical Zygomatic FAQ (Severe Bone Loss Solutions)",
@@ -2695,7 +1999,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       "criteria": "Clinical Parameter",
       "grafting": "Complex Sinus Lift & Bone Grafting",
       "hybrid": "Hybrid Zygoma (2 Zygoma + 2-4 Std)",
-      "quad": "Quad Zygoma (4 Zygomatic Implants) [Gold Standard]"
+      "quad": "Quad Zygoma (4 Zygomatic Implants) [Clinical Gold Standard]"
     },
     "compareTableRows": [
       {
@@ -2747,233 +2051,18 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       "whenZygomaticTitle": "When are Zygomatic Implants the Only Viable Solution?",
       "whenZygomaticText": "Zygomatic implants are the definitive gold standard when the upper jaw is completely hollowed out, previous bone grafts have failed, or the patient cannot tolerate 18 months without fixed teeth."
     },
-    "processTitle": "3-Etapowy Protokół Implantacji Jarzmowej",
-    "processSubtitle": "Every zygomatic intervention at Master Smile Studio follows military-grade 3D CBCT computer guidance and hospital-grade surgical theater protocols.",
-    "processCards": [
-      {
-        "step": "PHASE 01",
-        "title": "3D Craniofacial CBCT Bone Mapping & Stereolithographic Guide",
-        "text": "High-definition 3D tomography scans the entire maxillofacial skeleton. A virtual surgery plan determines the exact 30–55mm trajectory through the zygomatic arch.",
-        "specs": [
-          {
-            "key": "CBCT Precision",
-            "val": "< 0.1 mm accuracy"
-          },
-          {
-            "key": "Virtual Simulation",
-            "val": "Craniofacial Angulation Plan"
-          },
-          {
-            "key": "Surgical Guide",
-            "val": "Custom 3D CAD/CAM Guide"
-          }
-        ]
-      },
-      {
-        "step": "PHASE 02",
-        "title": "Maxillofacial Surgery & Same-Day Fixed Bridge (24h)",
-        "text": "Performed under conscious IV sedation or general anesthesia. 2 to 4 extra-long titanium implants achieve 50–65 Ncm torque, allowing immediate screw-retained teeth in 24h.",
-        "specs": [
-          {
-            "key": "Anesthesia",
-            "val": "Conscious IV Sedation / GA"
-          },
-          {
-            "key": "Insertion Torque",
-            "val": "50 – 65 Ncm (Immediate load)"
-          },
-          {
-            "key": "Provisional Bridge",
-            "val": "Fixed CAD/CAM Acrylic in 24h"
-          }
-        ]
-      },
-      {
-        "step": "PHASE 03",
-        "title": "CAD/CAM Monolithic Zirconia Permanent Full-Arch Bridge",
-        "text": "After 3 months of complete cheekbone osseointegration, digital intraoral scans capture the soft-tissue profile. A 1200+ MPa German monolithic zirconia bridge is secured.",
-        "specs": [
-          {
-            "key": "Restoration Type",
-            "val": "Monolithic Multilayer Zirconia"
-          },
-          {
-            "key": "Flexural Strength",
-            "val": "1200 – 1400 MPa"
-          },
-          {
-            "key": "Substructure",
-            "val": "Titanium Framework Reinforced"
-          }
-        ]
-      }
-    ],
-    "materialsTitle": "Materiały Mostów na Implantach Jarzmowych",
-    "materialsSubtitle": "Restoring a zygomatic full arch requires maximum flexural strength and zero chipping risk under intense masticatory forces.",
-    "materialsSpecLabels": {
-      "material": "Material Composition",
-      "strength": "Flexural Strength",
-      "chipping": "Chipping / Fracture Risk",
-      "lifespan": "Expected Longevity"
-    },
-    "materialsCards": [
-      {
-        "title": "Monolithic Multilayer Zirconia",
-        "sub": "100% Solid German Zirconia on Titanium Substructure",
-        "badge": "Our Golden Standard",
-        "isGold": true,
-        "material": "1200+ MPa CAD/CAM Monolithic Multilayer Zirconia",
-        "strength": "1200 – 1400 MPa (Indestructible)",
-        "chippingRisk": "0% (Zero layered porcelain chipping)",
-        "lifespan": "Lifetime (Maximum Durability)",
-        "features": [
-          {
-            "text": "Unrestricted bite force: easily handles 600+ Newtons of mastication",
-            "status": "good"
-          },
-          {
-            "text": "Ultra-smooth non-porous surface prevents plaque & Peri-implantitis",
-            "status": "good"
-          },
-          {
-            "text": "Custom titanium substructure eliminates micro-flexing across implants",
-            "status": "good"
-          },
-          {
-            "text": "Natural multi-layer light translucency matching adjacent features",
-            "status": "good"
-          }
-        ]
-      },
-      {
-        "title": "Titanium-Bar Acrylic Hybrid",
-        "sub": "Cast Metal Substructure with Acrylic Resin & Plastic Teeth",
-        "badge": "Economy Alternative",
-        "isGold": false,
-        "material": "PMMA Acrylic Resin + Cast Titanium Bar",
-        "strength": "80 – 120 MPa (Low)",
-        "chippingRisk": "High (Plastic teeth pop off or wear down)",
-        "lifespan": "3 – 7 Years",
-        "features": [
-          {
-            "text": "Lower initial manufacturing cost",
-            "status": "good"
-          },
-          {
-            "text": "Abrasive wear flattens teeth, shifting jaw alignment",
-            "status": "bad"
-          },
-          {
-            "text": "Porcelain/acrylic resin absorbs stains, odors, and bacteria",
-            "status": "bad"
-          },
-          {
-            "text": "Requires frequent maintenance, relining, and total replacement",
-            "status": "warn"
-          }
-        ]
-      },
-      {
-        "title": "Porcelain-Fused-to-Metal (PFM)",
-        "sub": "Cast Cobalt-Chromium Frame with Baked Porcelain",
-        "badge": "Legacy Standard",
-        "isGold": false,
-        "material": "Cast Cobalt-Chromium Alloy + Feldspathic Porcelain",
-        "strength": "350 – 450 MPa (Moderate)",
-        "chippingRisk": "Moderate to High (Porcelain delamination risk)",
-        "lifespan": "8 – 12 Years",
-        "features": [
-          {
-            "text": "Rigid metal substructure",
-            "status": "good"
-          },
-          {
-            "text": "Porcelain prone to fractures under heavy zygomatic bite forces",
-            "status": "bad"
-          },
-          {
-            "text": "Dark grey metal margin shows over time if gums recede",
-            "status": "bad"
-          },
-          {
-            "text": "Heavy bulk creates an uncomfortable foreign-body sensation",
-            "status": "bad"
-          }
-        ]
-      }
-    ],
-    "materialsTableHeaders": {
-      "criteria": "Comparison Criteria",
-      "zirconia": "Monolithic Zirconia [Top Choice]",
-      "acrylic": "Acrylic Hybrid (PMMA)",
-      "pfm": "Porcelain-to-Metal (PFM)"
-    },
-    "materialsTableRows": [
-      {
-        "criteria": "Flexural Strength",
-        "zirconia": "1200 – 1400 MPa (Indestructible)",
-        "acrylic": "80 – 120 MPa (Fragile)",
-        "pfm": "350 – 450 MPa (Moderate)"
-      },
-      {
-        "criteria": "Chipping & Breakage Risk",
-        "zirconia": "0% (Solid homogeneous block)",
-        "acrylic": "High (Teeth detach or fracture)",
-        "pfm": "High (Porcelain chips off metal)"
-      },
-      {
-        "criteria": "Hygiene & Odor Resistance",
-        "zirconia": "100% Non-porous (Zero odor/stains)",
-        "acrylic": "Porous (Absorbs bacteria & odor)",
-        "pfm": "Moderate (Plaque traps at metal line)"
-      },
-      {
-        "criteria": "Digital CAD/CAM Robotic Milling",
-        "zirconia": "5-axis robotic precision (< 5 µm)",
-        "acrylic": "Manual flasking & pressing",
-        "pfm": "Manual casting and hand-layering"
-      },
-      {
-        "criteria": "Suitability for Zygomatic Arches",
-        "zirconia": "100% Recommended (Maximum stability)",
-        "acrylic": "Temporary use only (High flex)",
-        "pfm": "Not Recommended (Chipping risk)"
-      },
-      {
-        "criteria": "Expected Clinical Longevity",
-        "zirconia": "Lifetime Guarantee",
-        "acrylic": "3 – 7 Years",
-        "pfm": "8 – 12 Years"
-      }
-    ],
-    "costTitle": "Międzynarodowe Porównanie Kosztów: Zygoma (UK / USA vs Stambuł)",
-    "costSubtitle": "Compare real clinical costs per full arch including extractions, zygomatic implants, hospital fees, sedation, hotel, and VIP transfers.",
-    "costTableHeaders": {
-      "country": "Location & Hospital Tier",
-      "costPerArch": "Cost per Full Upper Arch (Zygomatic)",
-      "inclusions": "Package Coverage & Surgical Theater Work",
-      "valueAdvantage": "Master Smile Studio Advantage"
-    },
-    "costTableRows": [
-      {
-        "country": "United Kingdom (Harley Street / Private London)",
-        "costPerArch": "£22,000 – £35,000 ($28,000 – $45,000)",
-        "inclusions": "Surgical fee and zygomatic implants only. Hospital bed (£2,500), general anesthesia (£1,800), CBCT (£350), and zirconia bridge (£4,500) billed separately.",
-        "valueAdvantage": "Baseline UK Private Market Cost"
-      },
-      {
-        "country": "United States (Maxillofacial Surgery Centers)",
-        "costPerArch": "$30,000 – $55,000 (€28,000 – €50,000)",
-        "inclusions": "Surgical center fee and implants. Anesthesiologist fee, bone profiling, laboratory work, hotel, and transport billed as extra line-items.",
-        "valueAdvantage": "Baseline US Private Market Cost"
-      },
-      {
-        "country": "Master Smile Studio (Istanbul, Turkey) [Direct Clinic]",
-        "costPerArch": "€6,900 – €8,900 (£5,950 – £7,700)",
-        "inclusions": "100% All-Inclusive: Certified Zygomatic Implants, hospital surgical suite, IV sedation, 24h provisional bridge, German Zirconia final bridge, 5-star hotel & VIP transfers.",
-        "valueAdvantage": "70% – 75% Net Savings (World-Class Maxillofacial Team)"
-      }
-    ],
+    "advantagesH2": "Zalety Implantów Jarzmowych (Zygoma) w Porównaniu do Tradycyjnych Implantów w Master Smile Studio",
+    "advantagesP1": "One of the primary advantages of zygomatic implants is their ability to provide a solution for patients with severe bone loss in the upper jaw. Traditional dental implants require a sufficient amount of healthy, dense bone to anchor into, but in cases of extensive bone loss, this may not be possible.",
+    "advantagesP2": "Zygomatic implants, on the other hand, bypass the need for a robust jawbone by utilizing the stronger and more stable cheekbone (zygomatic bone) as the anchor point. This eliminates the requirement for bone grafting procedures, which can be time-consuming, invasive, and costly.",
+    "keyBenefitsH3": "Key Benefits of Zygomatic (Cheekbone) Implants:",
+    "benefit1Title": "1. No Need for Bone Grafting",
+    "benefit1Desc": "Zygomatic implants offer a significant advantage for patients who have experienced extensive bone loss in the upper jaw. While traditional implants typically require bone grafting to rebuild lost bone, zygomatic implants make use of the zygomatic bone, which is often dense and stable enough to support implants. This reduces the need for expensive and invasive bone grafting procedures.",
+    "benefit2Title": "2. Faster Treatment Timeline",
+    "benefit2Desc": "In Turkey, zygomatic implants provide a faster solution compared to traditional implants. Traditional implants often require several months of healing and osseointegration before the final restoration can be placed. With zygomatic implants, however, dental prosthetics can be attached much sooner — typically within a few weeks, significantly shortening the overall treatment time and allowing patients to regain their smile much quicker.",
+    "benefit3Title": "3. Higher Success Rate in Severe Bone Loss Cases",
+    "benefit3Desc": "Studies have shown that zygomatic implants have a success rate of up to 97%, making them a reliable and predictable solution for patients with significant bone loss. This is a significant advantage over traditional implants, which may have a lower success rate when there's insufficient bone volume. Zygomatic implants are designed to provide a secure foundation in cases where conventional methods may fail.",
+    "benefit4Title": "4. Restores Function and Aesthetics Quickly",
+    "benefit4Desc": "Another major benefit of zygomatic implants is that they allow for the restoration of both function and aesthetics in a shorter amount of time compared to traditional implants. Patients who may have had difficulty chewing, speaking, or smiling due to severe bone loss can quickly restore their natural functions and regain their confidence.",
     "faqTitle": "Często Zadawane Pytania: Implanty Zygoma",
     "faqSubtitle": "Clinically verified answers regarding cheekbone anchoring, surgical recovery, bone grafting alternatives, and health tourism in Istanbul.",
     "faqGroup1Title": "Clinical & Surgical Zygomatic FAQ (Severe Bone Loss Solutions)",
@@ -3416,7 +2505,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       "criteria": "Clinical Parameter",
       "grafting": "Complex Sinus Lift & Bone Grafting",
       "hybrid": "Hybrid Zygoma (2 Zygoma + 2-4 Std)",
-      "quad": "Quad Zygoma (4 Zygomatic Implants) [Gold Standard]"
+      "quad": "Quad Zygoma (4 Zygomatic Implants) [Clinical Gold Standard]"
     },
     "compareTableRows": [
       {
@@ -3468,233 +2557,18 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       "whenZygomaticTitle": "When are Zygomatic Implants the Only Viable Solution?",
       "whenZygomaticText": "Zygomatic implants are the definitive gold standard when the upper jaw is completely hollowed out, previous bone grafts have failed, or the patient cannot tolerate 18 months without fixed teeth."
     },
-    "processTitle": "Protocolo de Precisão em 3 Fases para Implantes Zigomáticos",
-    "processSubtitle": "Every zygomatic intervention at Master Smile Studio follows military-grade 3D CBCT computer guidance and hospital-grade surgical theater protocols.",
-    "processCards": [
-      {
-        "step": "PHASE 01",
-        "title": "3D Craniofacial CBCT Bone Mapping & Stereolithographic Guide",
-        "text": "High-definition 3D tomography scans the entire maxillofacial skeleton. A virtual surgery plan determines the exact 30–55mm trajectory through the zygomatic arch.",
-        "specs": [
-          {
-            "key": "CBCT Precision",
-            "val": "< 0.1 mm accuracy"
-          },
-          {
-            "key": "Virtual Simulation",
-            "val": "Craniofacial Angulation Plan"
-          },
-          {
-            "key": "Surgical Guide",
-            "val": "Custom 3D CAD/CAM Guide"
-          }
-        ]
-      },
-      {
-        "step": "PHASE 02",
-        "title": "Maxillofacial Surgery & Same-Day Fixed Bridge (24h)",
-        "text": "Performed under conscious IV sedation or general anesthesia. 2 to 4 extra-long titanium implants achieve 50–65 Ncm torque, allowing immediate screw-retained teeth in 24h.",
-        "specs": [
-          {
-            "key": "Anesthesia",
-            "val": "Conscious IV Sedation / GA"
-          },
-          {
-            "key": "Insertion Torque",
-            "val": "50 – 65 Ncm (Immediate load)"
-          },
-          {
-            "key": "Provisional Bridge",
-            "val": "Fixed CAD/CAM Acrylic in 24h"
-          }
-        ]
-      },
-      {
-        "step": "PHASE 03",
-        "title": "CAD/CAM Monolithic Zirconia Permanent Full-Arch Bridge",
-        "text": "After 3 months of complete cheekbone osseointegration, digital intraoral scans capture the soft-tissue profile. A 1200+ MPa German monolithic zirconia bridge is secured.",
-        "specs": [
-          {
-            "key": "Restoration Type",
-            "val": "Monolithic Multilayer Zirconia"
-          },
-          {
-            "key": "Flexural Strength",
-            "val": "1200 – 1400 MPa"
-          },
-          {
-            "key": "Substructure",
-            "val": "Titanium Framework Reinforced"
-          }
-        ]
-      }
-    ],
-    "materialsTitle": "Materiais de Próteses sobre Implantes Zigomáticos",
-    "materialsSubtitle": "Restoring a zygomatic full arch requires maximum flexural strength and zero chipping risk under intense masticatory forces.",
-    "materialsSpecLabels": {
-      "material": "Material Composition",
-      "strength": "Flexural Strength",
-      "chipping": "Chipping / Fracture Risk",
-      "lifespan": "Expected Longevity"
-    },
-    "materialsCards": [
-      {
-        "title": "Monolithic Multilayer Zirconia",
-        "sub": "100% Solid German Zirconia on Titanium Substructure",
-        "badge": "Our Golden Standard",
-        "isGold": true,
-        "material": "1200+ MPa CAD/CAM Monolithic Multilayer Zirconia",
-        "strength": "1200 – 1400 MPa (Indestructible)",
-        "chippingRisk": "0% (Zero layered porcelain chipping)",
-        "lifespan": "Lifetime (Maximum Durability)",
-        "features": [
-          {
-            "text": "Unrestricted bite force: easily handles 600+ Newtons of mastication",
-            "status": "good"
-          },
-          {
-            "text": "Ultra-smooth non-porous surface prevents plaque & Peri-implantitis",
-            "status": "good"
-          },
-          {
-            "text": "Custom titanium substructure eliminates micro-flexing across implants",
-            "status": "good"
-          },
-          {
-            "text": "Natural multi-layer light translucency matching adjacent features",
-            "status": "good"
-          }
-        ]
-      },
-      {
-        "title": "Titanium-Bar Acrylic Hybrid",
-        "sub": "Cast Metal Substructure with Acrylic Resin & Plastic Teeth",
-        "badge": "Economy Alternative",
-        "isGold": false,
-        "material": "PMMA Acrylic Resin + Cast Titanium Bar",
-        "strength": "80 – 120 MPa (Low)",
-        "chippingRisk": "High (Plastic teeth pop off or wear down)",
-        "lifespan": "3 – 7 Years",
-        "features": [
-          {
-            "text": "Lower initial manufacturing cost",
-            "status": "good"
-          },
-          {
-            "text": "Abrasive wear flattens teeth, shifting jaw alignment",
-            "status": "bad"
-          },
-          {
-            "text": "Porcelain/acrylic resin absorbs stains, odors, and bacteria",
-            "status": "bad"
-          },
-          {
-            "text": "Requires frequent maintenance, relining, and total replacement",
-            "status": "warn"
-          }
-        ]
-      },
-      {
-        "title": "Porcelain-Fused-to-Metal (PFM)",
-        "sub": "Cast Cobalt-Chromium Frame with Baked Porcelain",
-        "badge": "Legacy Standard",
-        "isGold": false,
-        "material": "Cast Cobalt-Chromium Alloy + Feldspathic Porcelain",
-        "strength": "350 – 450 MPa (Moderate)",
-        "chippingRisk": "Moderate to High (Porcelain delamination risk)",
-        "lifespan": "8 – 12 Years",
-        "features": [
-          {
-            "text": "Rigid metal substructure",
-            "status": "good"
-          },
-          {
-            "text": "Porcelain prone to fractures under heavy zygomatic bite forces",
-            "status": "bad"
-          },
-          {
-            "text": "Dark grey metal margin shows over time if gums recede",
-            "status": "bad"
-          },
-          {
-            "text": "Heavy bulk creates an uncomfortable foreign-body sensation",
-            "status": "bad"
-          }
-        ]
-      }
-    ],
-    "materialsTableHeaders": {
-      "criteria": "Comparison Criteria",
-      "zirconia": "Monolithic Zirconia [Top Choice]",
-      "acrylic": "Acrylic Hybrid (PMMA)",
-      "pfm": "Porcelain-to-Metal (PFM)"
-    },
-    "materialsTableRows": [
-      {
-        "criteria": "Flexural Strength",
-        "zirconia": "1200 – 1400 MPa (Indestructible)",
-        "acrylic": "80 – 120 MPa (Fragile)",
-        "pfm": "350 – 450 MPa (Moderate)"
-      },
-      {
-        "criteria": "Chipping & Breakage Risk",
-        "zirconia": "0% (Solid homogeneous block)",
-        "acrylic": "High (Teeth detach or fracture)",
-        "pfm": "High (Porcelain chips off metal)"
-      },
-      {
-        "criteria": "Hygiene & Odor Resistance",
-        "zirconia": "100% Non-porous (Zero odor/stains)",
-        "acrylic": "Porous (Absorbs bacteria & odor)",
-        "pfm": "Moderate (Plaque traps at metal line)"
-      },
-      {
-        "criteria": "Digital CAD/CAM Robotic Milling",
-        "zirconia": "5-axis robotic precision (< 5 µm)",
-        "acrylic": "Manual flasking & pressing",
-        "pfm": "Manual casting and hand-layering"
-      },
-      {
-        "criteria": "Suitability for Zygomatic Arches",
-        "zirconia": "100% Recommended (Maximum stability)",
-        "acrylic": "Temporary use only (High flex)",
-        "pfm": "Not Recommended (Chipping risk)"
-      },
-      {
-        "criteria": "Expected Clinical Longevity",
-        "zirconia": "Lifetime Guarantee",
-        "acrylic": "3 – 7 Years",
-        "pfm": "8 – 12 Years"
-      }
-    ],
-    "costTitle": "Comparativo Internacional de Custos: Zigomáticos (Reino Unido / EUA vs Istambul)",
-    "costSubtitle": "Compare real clinical costs per full arch including extractions, zygomatic implants, hospital fees, sedation, hotel, and VIP transfers.",
-    "costTableHeaders": {
-      "country": "Location & Hospital Tier",
-      "costPerArch": "Cost per Full Upper Arch (Zygomatic)",
-      "inclusions": "Package Coverage & Surgical Theater Work",
-      "valueAdvantage": "Master Smile Studio Advantage"
-    },
-    "costTableRows": [
-      {
-        "country": "United Kingdom (Harley Street / Private London)",
-        "costPerArch": "£22,000 – £35,000 ($28,000 – $45,000)",
-        "inclusions": "Surgical fee and zygomatic implants only. Hospital bed (£2,500), general anesthesia (£1,800), CBCT (£350), and zirconia bridge (£4,500) billed separately.",
-        "valueAdvantage": "Baseline UK Private Market Cost"
-      },
-      {
-        "country": "United States (Maxillofacial Surgery Centers)",
-        "costPerArch": "$30,000 – $55,000 (€28,000 – €50,000)",
-        "inclusions": "Surgical center fee and implants. Anesthesiologist fee, bone profiling, laboratory work, hotel, and transport billed as extra line-items.",
-        "valueAdvantage": "Baseline US Private Market Cost"
-      },
-      {
-        "country": "Master Smile Studio (Istanbul, Turkey) [Direct Clinic]",
-        "costPerArch": "€6,900 – €8,900 (£5,950 – £7,700)",
-        "inclusions": "100% All-Inclusive: Certified Zygomatic Implants, hospital surgical suite, IV sedation, 24h provisional bridge, German Zirconia final bridge, 5-star hotel & VIP transfers.",
-        "valueAdvantage": "70% – 75% Net Savings (World-Class Maxillofacial Team)"
-      }
-    ],
+    "advantagesH2": "Vantagens dos Implantes Zigomáticos e Pterigoideos sobre os Tradicionais no Master Smile Studio",
+    "advantagesP1": "One of the primary advantages of zygomatic implants is their ability to provide a solution for patients with severe bone loss in the upper jaw. Traditional dental implants require a sufficient amount of healthy, dense bone to anchor into, but in cases of extensive bone loss, this may not be possible.",
+    "advantagesP2": "Zygomatic implants, on the other hand, bypass the need for a robust jawbone by utilizing the stronger and more stable cheekbone (zygomatic bone) as the anchor point. This eliminates the requirement for bone grafting procedures, which can be time-consuming, invasive, and costly.",
+    "keyBenefitsH3": "Key Benefits of Zygomatic (Cheekbone) Implants:",
+    "benefit1Title": "1. No Need for Bone Grafting",
+    "benefit1Desc": "Zygomatic implants offer a significant advantage for patients who have experienced extensive bone loss in the upper jaw. While traditional implants typically require bone grafting to rebuild lost bone, zygomatic implants make use of the zygomatic bone, which is often dense and stable enough to support implants. This reduces the need for expensive and invasive bone grafting procedures.",
+    "benefit2Title": "2. Faster Treatment Timeline",
+    "benefit2Desc": "In Turkey, zygomatic implants provide a faster solution compared to traditional implants. Traditional implants often require several months of healing and osseointegration before the final restoration can be placed. With zygomatic implants, however, dental prosthetics can be attached much sooner — typically within a few weeks, significantly shortening the overall treatment time and allowing patients to regain their smile much quicker.",
+    "benefit3Title": "3. Higher Success Rate in Severe Bone Loss Cases",
+    "benefit3Desc": "Studies have shown that zygomatic implants have a success rate of up to 97%, making them a reliable and predictable solution for patients with significant bone loss. This is a significant advantage over traditional implants, which may have a lower success rate when there's insufficient bone volume. Zygomatic implants are designed to provide a secure foundation in cases where conventional methods may fail.",
+    "benefit4Title": "4. Restores Function and Aesthetics Quickly",
+    "benefit4Desc": "Another major benefit of zygomatic implants is that they allow for the restoration of both function and aesthetics in a shorter amount of time compared to traditional implants. Patients who may have had difficulty chewing, speaking, or smiling due to severe bone loss can quickly restore their natural functions and regain their confidence.",
     "faqTitle": "Perguntas Frequentes: Implantes Zigomáticos",
     "faqSubtitle": "Clinically verified answers regarding cheekbone anchoring, surgical recovery, bone grafting alternatives, and health tourism in Istanbul.",
     "faqGroup1Title": "Clinical & Surgical Zygomatic FAQ (Severe Bone Loss Solutions)",
@@ -4137,7 +3011,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       "criteria": "Clinical Parameter",
       "grafting": "Complex Sinus Lift & Bone Grafting",
       "hybrid": "Hybrid Zygoma (2 Zygoma + 2-4 Std)",
-      "quad": "Quad Zygoma (4 Zygomatic Implants) [Gold Standard]"
+      "quad": "Quad Zygoma (4 Zygomatic Implants) [Clinical Gold Standard]"
     },
     "compareTableRows": [
       {
@@ -4189,233 +3063,18 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       "whenZygomaticTitle": "When are Zygomatic Implants the Only Viable Solution?",
       "whenZygomaticText": "Zygomatic implants are the definitive gold standard when the upper jaw is completely hollowed out, previous bone grafts have failed, or the patient cannot tolerate 18 months without fixed teeth."
     },
-    "processTitle": "Protocolo de Precisão em 3 Fases para Implantes Cigomáticos",
-    "processSubtitle": "Every zygomatic intervention at Master Smile Studio follows military-grade 3D CBCT computer guidance and hospital-grade surgical theater protocols.",
-    "processCards": [
-      {
-        "step": "PHASE 01",
-        "title": "3D Craniofacial CBCT Bone Mapping & Stereolithographic Guide",
-        "text": "High-definition 3D tomography scans the entire maxillofacial skeleton. A virtual surgery plan determines the exact 30–55mm trajectory through the zygomatic arch.",
-        "specs": [
-          {
-            "key": "CBCT Precision",
-            "val": "< 0.1 mm accuracy"
-          },
-          {
-            "key": "Virtual Simulation",
-            "val": "Craniofacial Angulation Plan"
-          },
-          {
-            "key": "Surgical Guide",
-            "val": "Custom 3D CAD/CAM Guide"
-          }
-        ]
-      },
-      {
-        "step": "PHASE 02",
-        "title": "Maxillofacial Surgery & Same-Day Fixed Bridge (24h)",
-        "text": "Performed under conscious IV sedation or general anesthesia. 2 to 4 extra-long titanium implants achieve 50–65 Ncm torque, allowing immediate screw-retained teeth in 24h.",
-        "specs": [
-          {
-            "key": "Anesthesia",
-            "val": "Conscious IV Sedation / GA"
-          },
-          {
-            "key": "Insertion Torque",
-            "val": "50 – 65 Ncm (Immediate load)"
-          },
-          {
-            "key": "Provisional Bridge",
-            "val": "Fixed CAD/CAM Acrylic in 24h"
-          }
-        ]
-      },
-      {
-        "step": "PHASE 03",
-        "title": "CAD/CAM Monolithic Zirconia Permanent Full-Arch Bridge",
-        "text": "After 3 months of complete cheekbone osseointegration, digital intraoral scans capture the soft-tissue profile. A 1200+ MPa German monolithic zirconia bridge is secured.",
-        "specs": [
-          {
-            "key": "Restoration Type",
-            "val": "Monolithic Multilayer Zirconia"
-          },
-          {
-            "key": "Flexural Strength",
-            "val": "1200 – 1400 MPa"
-          },
-          {
-            "key": "Substructure",
-            "val": "Titanium Framework Reinforced"
-          }
-        ]
-      }
-    ],
-    "materialsTitle": "Materiales de Prótesis sobre Implantes Cigomáticos",
-    "materialsSubtitle": "Restoring a zygomatic full arch requires maximum flexural strength and zero chipping risk under intense masticatory forces.",
-    "materialsSpecLabels": {
-      "material": "Material Composition",
-      "strength": "Flexural Strength",
-      "chipping": "Chipping / Fracture Risk",
-      "lifespan": "Expected Longevity"
-    },
-    "materialsCards": [
-      {
-        "title": "Monolithic Multilayer Zirconia",
-        "sub": "100% Solid German Zirconia on Titanium Substructure",
-        "badge": "Our Golden Standard",
-        "isGold": true,
-        "material": "1200+ MPa CAD/CAM Monolithic Multilayer Zirconia",
-        "strength": "1200 – 1400 MPa (Indestructible)",
-        "chippingRisk": "0% (Zero layered porcelain chipping)",
-        "lifespan": "Lifetime (Maximum Durability)",
-        "features": [
-          {
-            "text": "Unrestricted bite force: easily handles 600+ Newtons of mastication",
-            "status": "good"
-          },
-          {
-            "text": "Ultra-smooth non-porous surface prevents plaque & Peri-implantitis",
-            "status": "good"
-          },
-          {
-            "text": "Custom titanium substructure eliminates micro-flexing across implants",
-            "status": "good"
-          },
-          {
-            "text": "Natural multi-layer light translucency matching adjacent features",
-            "status": "good"
-          }
-        ]
-      },
-      {
-        "title": "Titanium-Bar Acrylic Hybrid",
-        "sub": "Cast Metal Substructure with Acrylic Resin & Plastic Teeth",
-        "badge": "Economy Alternative",
-        "isGold": false,
-        "material": "PMMA Acrylic Resin + Cast Titanium Bar",
-        "strength": "80 – 120 MPa (Low)",
-        "chippingRisk": "High (Plastic teeth pop off or wear down)",
-        "lifespan": "3 – 7 Years",
-        "features": [
-          {
-            "text": "Lower initial manufacturing cost",
-            "status": "good"
-          },
-          {
-            "text": "Abrasive wear flattens teeth, shifting jaw alignment",
-            "status": "bad"
-          },
-          {
-            "text": "Porcelain/acrylic resin absorbs stains, odors, and bacteria",
-            "status": "bad"
-          },
-          {
-            "text": "Requires frequent maintenance, relining, and total replacement",
-            "status": "warn"
-          }
-        ]
-      },
-      {
-        "title": "Porcelain-Fused-to-Metal (PFM)",
-        "sub": "Cast Cobalt-Chromium Frame with Baked Porcelain",
-        "badge": "Legacy Standard",
-        "isGold": false,
-        "material": "Cast Cobalt-Chromium Alloy + Feldspathic Porcelain",
-        "strength": "350 – 450 MPa (Moderate)",
-        "chippingRisk": "Moderate to High (Porcelain delamination risk)",
-        "lifespan": "8 – 12 Years",
-        "features": [
-          {
-            "text": "Rigid metal substructure",
-            "status": "good"
-          },
-          {
-            "text": "Porcelain prone to fractures under heavy zygomatic bite forces",
-            "status": "bad"
-          },
-          {
-            "text": "Dark grey metal margin shows over time if gums recede",
-            "status": "bad"
-          },
-          {
-            "text": "Heavy bulk creates an uncomfortable foreign-body sensation",
-            "status": "bad"
-          }
-        ]
-      }
-    ],
-    "materialsTableHeaders": {
-      "criteria": "Comparison Criteria",
-      "zirconia": "Monolithic Zirconia [Top Choice]",
-      "acrylic": "Acrylic Hybrid (PMMA)",
-      "pfm": "Porcelain-to-Metal (PFM)"
-    },
-    "materialsTableRows": [
-      {
-        "criteria": "Flexural Strength",
-        "zirconia": "1200 – 1400 MPa (Indestructible)",
-        "acrylic": "80 – 120 MPa (Fragile)",
-        "pfm": "350 – 450 MPa (Moderate)"
-      },
-      {
-        "criteria": "Chipping & Breakage Risk",
-        "zirconia": "0% (Solid homogeneous block)",
-        "acrylic": "High (Teeth detach or fracture)",
-        "pfm": "High (Porcelain chips off metal)"
-      },
-      {
-        "criteria": "Hygiene & Odor Resistance",
-        "zirconia": "100% Non-porous (Zero odor/stains)",
-        "acrylic": "Porous (Absorbs bacteria & odor)",
-        "pfm": "Moderate (Plaque traps at metal line)"
-      },
-      {
-        "criteria": "Digital CAD/CAM Robotic Milling",
-        "zirconia": "5-axis robotic precision (< 5 µm)",
-        "acrylic": "Manual flasking & pressing",
-        "pfm": "Manual casting and hand-layering"
-      },
-      {
-        "criteria": "Suitability for Zygomatic Arches",
-        "zirconia": "100% Recommended (Maximum stability)",
-        "acrylic": "Temporary use only (High flex)",
-        "pfm": "Not Recommended (Chipping risk)"
-      },
-      {
-        "criteria": "Expected Clinical Longevity",
-        "zirconia": "Lifetime Guarantee",
-        "acrylic": "3 – 7 Years",
-        "pfm": "8 – 12 Years"
-      }
-    ],
-    "costTitle": "Comparativa Internacional de Costes: Cigomáticos (Reino Unido / EE.UU. vs Estambul)",
-    "costSubtitle": "Compare real clinical costs per full arch including extractions, zygomatic implants, hospital fees, sedation, hotel, and VIP transfers.",
-    "costTableHeaders": {
-      "country": "Location & Hospital Tier",
-      "costPerArch": "Cost per Full Upper Arch (Zygomatic)",
-      "inclusions": "Package Coverage & Surgical Theater Work",
-      "valueAdvantage": "Master Smile Studio Advantage"
-    },
-    "costTableRows": [
-      {
-        "country": "United Kingdom (Harley Street / Private London)",
-        "costPerArch": "£22,000 – £35,000 ($28,000 – $45,000)",
-        "inclusions": "Surgical fee and zygomatic implants only. Hospital bed (£2,500), general anesthesia (£1,800), CBCT (£350), and zirconia bridge (£4,500) billed separately.",
-        "valueAdvantage": "Baseline UK Private Market Cost"
-      },
-      {
-        "country": "United States (Maxillofacial Surgery Centers)",
-        "costPerArch": "$30,000 – $55,000 (€28,000 – €50,000)",
-        "inclusions": "Surgical center fee and implants. Anesthesiologist fee, bone profiling, laboratory work, hotel, and transport billed as extra line-items.",
-        "valueAdvantage": "Baseline US Private Market Cost"
-      },
-      {
-        "country": "Master Smile Studio (Istanbul, Turkey) [Direct Clinic]",
-        "costPerArch": "€6,900 – €8,900 (£5,950 – £7,700)",
-        "inclusions": "100% All-Inclusive: Certified Zygomatic Implants, hospital surgical suite, IV sedation, 24h provisional bridge, German Zirconia final bridge, 5-star hotel & VIP transfers.",
-        "valueAdvantage": "70% – 75% Net Savings (World-Class Maxillofacial Team)"
-      }
-    ],
+    "advantagesH2": "Ventajas de los Implantes Cigomáticos y Pterigoideos frente a los Tradicionales en Master Smile Studio",
+    "advantagesP1": "One of the primary advantages of zygomatic implants is their ability to provide a solution for patients with severe bone loss in the upper jaw. Traditional dental implants require a sufficient amount of healthy, dense bone to anchor into, but in cases of extensive bone loss, this may not be possible.",
+    "advantagesP2": "Zygomatic implants, on the other hand, bypass the need for a robust jawbone by utilizing the stronger and more stable cheekbone (zygomatic bone) as the anchor point. This eliminates the requirement for bone grafting procedures, which can be time-consuming, invasive, and costly.",
+    "keyBenefitsH3": "Key Benefits of Zygomatic (Cheekbone) Implants:",
+    "benefit1Title": "1. No Need for Bone Grafting",
+    "benefit1Desc": "Zygomatic implants offer a significant advantage for patients who have experienced extensive bone loss in the upper jaw. While traditional implants typically require bone grafting to rebuild lost bone, zygomatic implants make use of the zygomatic bone, which is often dense and stable enough to support implants. This reduces the need for expensive and invasive bone grafting procedures.",
+    "benefit2Title": "2. Faster Treatment Timeline",
+    "benefit2Desc": "In Turkey, zygomatic implants provide a faster solution compared to traditional implants. Traditional implants often require several months of healing and osseointegration before the final restoration can be placed. With zygomatic implants, however, dental prosthetics can be attached much sooner — typically within a few weeks, significantly shortening the overall treatment time and allowing patients to regain their smile much quicker.",
+    "benefit3Title": "3. Higher Success Rate in Severe Bone Loss Cases",
+    "benefit3Desc": "Studies have shown that zygomatic implants have a success rate of up to 97%, making them a reliable and predictable solution for patients with significant bone loss. This is a significant advantage over traditional implants, which may have a lower success rate when there's insufficient bone volume. Zygomatic implants are designed to provide a secure foundation in cases where conventional methods may fail.",
+    "benefit4Title": "4. Restores Function and Aesthetics Quickly",
+    "benefit4Desc": "Another major benefit of zygomatic implants is that they allow for the restoration of both function and aesthetics in a shorter amount of time compared to traditional implants. Patients who may have had difficulty chewing, speaking, or smiling due to severe bone loss can quickly restore their natural functions and regain their confidence.",
     "faqTitle": "Preguntas Frecuentes: Implantes Cigomáticos",
     "faqSubtitle": "Clinically verified answers regarding cheekbone anchoring, surgical recovery, bone grafting alternatives, and health tourism in Istanbul.",
     "faqGroup1Title": "Clinical & Surgical Zygomatic FAQ (Severe Bone Loss Solutions)",
@@ -4858,7 +3517,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       "criteria": "Clinical Parameter",
       "grafting": "Complex Sinus Lift & Bone Grafting",
       "hybrid": "Hybrid Zygoma (2 Zygoma + 2-4 Std)",
-      "quad": "Quad Zygoma (4 Zygomatic Implants) [Gold Standard]"
+      "quad": "Quad Zygoma (4 Zygomatic Implants) [Clinical Gold Standard]"
     },
     "compareTableRows": [
       {
@@ -4910,233 +3569,18 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       "whenZygomaticTitle": "When are Zygomatic Implants the Only Viable Solution?",
       "whenZygomaticText": "Zygomatic implants are the definitive gold standard when the upper jaw is completely hollowed out, previous bone grafts have failed, or the patient cannot tolerate 18 months without fixed teeth."
     },
-    "processTitle": "3-Этапный Протокол Скуловой Имплантации",
-    "processSubtitle": "Every zygomatic intervention at Master Smile Studio follows military-grade 3D CBCT computer guidance and hospital-grade surgical theater protocols.",
-    "processCards": [
-      {
-        "step": "PHASE 01",
-        "title": "3D Craniofacial CBCT Bone Mapping & Stereolithographic Guide",
-        "text": "High-definition 3D tomography scans the entire maxillofacial skeleton. A virtual surgery plan determines the exact 30–55mm trajectory through the zygomatic arch.",
-        "specs": [
-          {
-            "key": "CBCT Precision",
-            "val": "< 0.1 mm accuracy"
-          },
-          {
-            "key": "Virtual Simulation",
-            "val": "Craniofacial Angulation Plan"
-          },
-          {
-            "key": "Surgical Guide",
-            "val": "Custom 3D CAD/CAM Guide"
-          }
-        ]
-      },
-      {
-        "step": "PHASE 02",
-        "title": "Maxillofacial Surgery & Same-Day Fixed Bridge (24h)",
-        "text": "Performed under conscious IV sedation or general anesthesia. 2 to 4 extra-long titanium implants achieve 50–65 Ncm torque, allowing immediate screw-retained teeth in 24h.",
-        "specs": [
-          {
-            "key": "Anesthesia",
-            "val": "Conscious IV Sedation / GA"
-          },
-          {
-            "key": "Insertion Torque",
-            "val": "50 – 65 Ncm (Immediate load)"
-          },
-          {
-            "key": "Provisional Bridge",
-            "val": "Fixed CAD/CAM Acrylic in 24h"
-          }
-        ]
-      },
-      {
-        "step": "PHASE 03",
-        "title": "CAD/CAM Monolithic Zirconia Permanent Full-Arch Bridge",
-        "text": "After 3 months of complete cheekbone osseointegration, digital intraoral scans capture the soft-tissue profile. A 1200+ MPa German monolithic zirconia bridge is secured.",
-        "specs": [
-          {
-            "key": "Restoration Type",
-            "val": "Monolithic Multilayer Zirconia"
-          },
-          {
-            "key": "Flexural Strength",
-            "val": "1200 – 1400 MPa"
-          },
-          {
-            "key": "Substructure",
-            "val": "Titanium Framework Reinforced"
-          }
-        ]
-      }
-    ],
-    "materialsTitle": "Материалы Мостовидных Протезов Zygoma",
-    "materialsSubtitle": "Restoring a zygomatic full arch requires maximum flexural strength and zero chipping risk under intense masticatory forces.",
-    "materialsSpecLabels": {
-      "material": "Material Composition",
-      "strength": "Flexural Strength",
-      "chipping": "Chipping / Fracture Risk",
-      "lifespan": "Expected Longevity"
-    },
-    "materialsCards": [
-      {
-        "title": "Monolithic Multilayer Zirconia",
-        "sub": "100% Solid German Zirconia on Titanium Substructure",
-        "badge": "Our Golden Standard",
-        "isGold": true,
-        "material": "1200+ MPa CAD/CAM Monolithic Multilayer Zirconia",
-        "strength": "1200 – 1400 MPa (Indestructible)",
-        "chippingRisk": "0% (Zero layered porcelain chipping)",
-        "lifespan": "Lifetime (Maximum Durability)",
-        "features": [
-          {
-            "text": "Unrestricted bite force: easily handles 600+ Newtons of mastication",
-            "status": "good"
-          },
-          {
-            "text": "Ultra-smooth non-porous surface prevents plaque & Peri-implantitis",
-            "status": "good"
-          },
-          {
-            "text": "Custom titanium substructure eliminates micro-flexing across implants",
-            "status": "good"
-          },
-          {
-            "text": "Natural multi-layer light translucency matching adjacent features",
-            "status": "good"
-          }
-        ]
-      },
-      {
-        "title": "Titanium-Bar Acrylic Hybrid",
-        "sub": "Cast Metal Substructure with Acrylic Resin & Plastic Teeth",
-        "badge": "Economy Alternative",
-        "isGold": false,
-        "material": "PMMA Acrylic Resin + Cast Titanium Bar",
-        "strength": "80 – 120 MPa (Low)",
-        "chippingRisk": "High (Plastic teeth pop off or wear down)",
-        "lifespan": "3 – 7 Years",
-        "features": [
-          {
-            "text": "Lower initial manufacturing cost",
-            "status": "good"
-          },
-          {
-            "text": "Abrasive wear flattens teeth, shifting jaw alignment",
-            "status": "bad"
-          },
-          {
-            "text": "Porcelain/acrylic resin absorbs stains, odors, and bacteria",
-            "status": "bad"
-          },
-          {
-            "text": "Requires frequent maintenance, relining, and total replacement",
-            "status": "warn"
-          }
-        ]
-      },
-      {
-        "title": "Porcelain-Fused-to-Metal (PFM)",
-        "sub": "Cast Cobalt-Chromium Frame with Baked Porcelain",
-        "badge": "Legacy Standard",
-        "isGold": false,
-        "material": "Cast Cobalt-Chromium Alloy + Feldspathic Porcelain",
-        "strength": "350 – 450 MPa (Moderate)",
-        "chippingRisk": "Moderate to High (Porcelain delamination risk)",
-        "lifespan": "8 – 12 Years",
-        "features": [
-          {
-            "text": "Rigid metal substructure",
-            "status": "good"
-          },
-          {
-            "text": "Porcelain prone to fractures under heavy zygomatic bite forces",
-            "status": "bad"
-          },
-          {
-            "text": "Dark grey metal margin shows over time if gums recede",
-            "status": "bad"
-          },
-          {
-            "text": "Heavy bulk creates an uncomfortable foreign-body sensation",
-            "status": "bad"
-          }
-        ]
-      }
-    ],
-    "materialsTableHeaders": {
-      "criteria": "Comparison Criteria",
-      "zirconia": "Monolithic Zirconia [Top Choice]",
-      "acrylic": "Acrylic Hybrid (PMMA)",
-      "pfm": "Porcelain-to-Metal (PFM)"
-    },
-    "materialsTableRows": [
-      {
-        "criteria": "Flexural Strength",
-        "zirconia": "1200 – 1400 MPa (Indestructible)",
-        "acrylic": "80 – 120 MPa (Fragile)",
-        "pfm": "350 – 450 MPa (Moderate)"
-      },
-      {
-        "criteria": "Chipping & Breakage Risk",
-        "zirconia": "0% (Solid homogeneous block)",
-        "acrylic": "High (Teeth detach or fracture)",
-        "pfm": "High (Porcelain chips off metal)"
-      },
-      {
-        "criteria": "Hygiene & Odor Resistance",
-        "zirconia": "100% Non-porous (Zero odor/stains)",
-        "acrylic": "Porous (Absorbs bacteria & odor)",
-        "pfm": "Moderate (Plaque traps at metal line)"
-      },
-      {
-        "criteria": "Digital CAD/CAM Robotic Milling",
-        "zirconia": "5-axis robotic precision (< 5 µm)",
-        "acrylic": "Manual flasking & pressing",
-        "pfm": "Manual casting and hand-layering"
-      },
-      {
-        "criteria": "Suitability for Zygomatic Arches",
-        "zirconia": "100% Recommended (Maximum stability)",
-        "acrylic": "Temporary use only (High flex)",
-        "pfm": "Not Recommended (Chipping risk)"
-      },
-      {
-        "criteria": "Expected Clinical Longevity",
-        "zirconia": "Lifetime Guarantee",
-        "acrylic": "3 – 7 Years",
-        "pfm": "8 – 12 Years"
-      }
-    ],
-    "costTitle": "Международное Сравнение Цен: Zygoma (Великобритания / США vs Стамбул)",
-    "costSubtitle": "Compare real clinical costs per full arch including extractions, zygomatic implants, hospital fees, sedation, hotel, and VIP transfers.",
-    "costTableHeaders": {
-      "country": "Location & Hospital Tier",
-      "costPerArch": "Cost per Full Upper Arch (Zygomatic)",
-      "inclusions": "Package Coverage & Surgical Theater Work",
-      "valueAdvantage": "Master Smile Studio Advantage"
-    },
-    "costTableRows": [
-      {
-        "country": "United Kingdom (Harley Street / Private London)",
-        "costPerArch": "£22,000 – £35,000 ($28,000 – $45,000)",
-        "inclusions": "Surgical fee and zygomatic implants only. Hospital bed (£2,500), general anesthesia (£1,800), CBCT (£350), and zirconia bridge (£4,500) billed separately.",
-        "valueAdvantage": "Baseline UK Private Market Cost"
-      },
-      {
-        "country": "United States (Maxillofacial Surgery Centers)",
-        "costPerArch": "$30,000 – $55,000 (€28,000 – €50,000)",
-        "inclusions": "Surgical center fee and implants. Anesthesiologist fee, bone profiling, laboratory work, hotel, and transport billed as extra line-items.",
-        "valueAdvantage": "Baseline US Private Market Cost"
-      },
-      {
-        "country": "Master Smile Studio (Istanbul, Turkey) [Direct Clinic]",
-        "costPerArch": "€6,900 – €8,900 (£5,950 – £7,700)",
-        "inclusions": "100% All-Inclusive: Certified Zygomatic Implants, hospital surgical suite, IV sedation, 24h provisional bridge, German Zirconia final bridge, 5-star hotel & VIP transfers.",
-        "valueAdvantage": "70% – 75% Net Savings (World-Class Maxillofacial Team)"
-      }
-    ],
+    "advantagesH2": "Преимущества скуловых и птеригоидных имплантов перед классическими в Master Smile Studio",
+    "advantagesP1": "One of the primary advantages of zygomatic implants is their ability to provide a solution for patients with severe bone loss in the upper jaw. Traditional dental implants require a sufficient amount of healthy, dense bone to anchor into, but in cases of extensive bone loss, this may not be possible.",
+    "advantagesP2": "Zygomatic implants, on the other hand, bypass the need for a robust jawbone by utilizing the stronger and more stable cheekbone (zygomatic bone) as the anchor point. This eliminates the requirement for bone grafting procedures, which can be time-consuming, invasive, and costly.",
+    "keyBenefitsH3": "Key Benefits of Zygomatic (Cheekbone) Implants:",
+    "benefit1Title": "1. No Need for Bone Grafting",
+    "benefit1Desc": "Zygomatic implants offer a significant advantage for patients who have experienced extensive bone loss in the upper jaw. While traditional implants typically require bone grafting to rebuild lost bone, zygomatic implants make use of the zygomatic bone, which is often dense and stable enough to support implants. This reduces the need for expensive and invasive bone grafting procedures.",
+    "benefit2Title": "2. Faster Treatment Timeline",
+    "benefit2Desc": "In Turkey, zygomatic implants provide a faster solution compared to traditional implants. Traditional implants often require several months of healing and osseointegration before the final restoration can be placed. With zygomatic implants, however, dental prosthetics can be attached much sooner — typically within a few weeks, significantly shortening the overall treatment time and allowing patients to regain their smile much quicker.",
+    "benefit3Title": "3. Higher Success Rate in Severe Bone Loss Cases",
+    "benefit3Desc": "Studies have shown that zygomatic implants have a success rate of up to 97%, making them a reliable and predictable solution for patients with significant bone loss. This is a significant advantage over traditional implants, which may have a lower success rate when there's insufficient bone volume. Zygomatic implants are designed to provide a secure foundation in cases where conventional methods may fail.",
+    "benefit4Title": "4. Restores Function and Aesthetics Quickly",
+    "benefit4Desc": "Another major benefit of zygomatic implants is that they allow for the restoration of both function and aesthetics in a shorter amount of time compared to traditional implants. Patients who may have had difficulty chewing, speaking, or smiling due to severe bone loss can quickly restore their natural functions and regain their confidence.",
     "faqTitle": "Часто Задаваемые Вопросы: Скуловые Импланты",
     "faqSubtitle": "Clinically verified answers regarding cheekbone anchoring, surgical recovery, bone grafting alternatives, and health tourism in Istanbul.",
     "faqGroup1Title": "Clinical & Surgical Zygomatic FAQ (Severe Bone Loss Solutions)",
@@ -5515,209 +3959,77 @@ export default function ZygomaticImplantDetailView() {
         </div>
       </section>
 
-      {/* 6. 3-PHASE PRECISION PROTOCOL (HORIZONTAL PEEK CAROUSEL ON MOBILE) */}
-      <section aria-labelledby="zygoma-process-heading" className={styles.processSection}>
+      {/* 6. CLEAN EDITORIAL PROSE (STANDARD_CENTER4 STYLE: EXACT TEXT & 3RD CLINICAL VIDEO) */}
+      <section aria-labelledby="zygoma-advantages-heading" className={styles.introSection} style={{ backgroundColor: '#fcfdfd', borderTop: '1px solid #eef2f6', borderBottom: '1px solid #eef2f6' }}>
         <div className={styles.container}>
-          <div className={styles.processHeader}>
-            <h2 id="zygoma-process-heading" className={styles.processTitle}>
-              {d.processTitle}
-            </h2>
-            <p className={styles.processSubtitle}>{d.processSubtitle}</p>
-          </div>
+          <h2 id="zygoma-advantages-heading" className={styles.introHeading}>
+            {d.advantagesH2}
+          </h2>
 
-          <div className={styles.processGrid}>
-            {d.processCards.map((card, pIdx) => (
-              <div key={pIdx} className={styles.processCard}>
-                <div>
-                  <span className={styles.processStepNum}>{card.step}</span>
-                  <h3 className={styles.processCardTitle}>{card.title}</h3>
-                  <p className={styles.processCardText}>{card.text}</p>
-                </div>
-                <div className={styles.processCardSpecs}>
-                  {card.specs.map((sp, sIdx) => (
-                    <div key={sIdx} className={styles.processSpecItem}>
-                      <span className={styles.processSpecKey}>{sp.key}:</span>
-                      <span className={styles.processSpecVal}>{sp.val}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
+          <p className={styles.textP}>{d.advantagesP1}</p>
+          <p className={styles.textP}>{d.advantagesP2}</p>
+
+          <h3 className={styles.introHeading} style={{ fontSize: 'clamp(1.4rem, 2.2vw, 1.8rem)', marginTop: '2.5rem', marginBottom: '1.25rem', color: '#D58936' }}>
+            {d.keyBenefitsH3}
+          </h3>
+
+          <h4 className={styles.introHeading} style={{ fontSize: 'clamp(1.15rem, 1.8vw, 1.35rem)', marginTop: '1.5rem', marginBottom: '0.5rem' }}>
+            {d.benefit1Title}
+          </h4>
+          <p className={styles.textP}>{d.benefit1Desc}</p>
+
+          <h4 className={styles.introHeading} style={{ fontSize: 'clamp(1.15rem, 1.8vw, 1.35rem)', marginTop: '1.5rem', marginBottom: '0.5rem' }}>
+            {d.benefit2Title}
+          </h4>
+          <p className={styles.textP}>{d.benefit2Desc}</p>
+
+          <h4 className={styles.introHeading} style={{ fontSize: 'clamp(1.15rem, 1.8vw, 1.35rem)', marginTop: '1.5rem', marginBottom: '0.5rem' }}>
+            {d.benefit3Title}
+          </h4>
+          <p className={styles.textP}>{d.benefit3Desc}</p>
+
+          <h4 className={styles.introHeading} style={{ fontSize: 'clamp(1.15rem, 1.8vw, 1.35rem)', marginTop: '1.5rem', marginBottom: '0.5rem' }}>
+            {d.benefit4Title}
+          </h4>
+          <p className={styles.textP}>{d.benefit4Desc}</p>
+
+          {/* 3rd Clinical YouTube Video (R081L98DAls) */}
+          <div className={styles.mainVideoWrap} style={{ marginTop: '2.5rem' }}>
+            <iframe
+              src="https://www.youtube.com/embed/R081L98DAls"
+              title="Zygomatic and Cheekbone Dental Implants Real Patient Case Istanbul"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
           </div>
         </div>
       </section>
 
-      {/* 7. PERMANENT BRIDGE MATERIALS COMPARISON */}
-      <section aria-labelledby="zygoma-materials-heading" className={styles.materialsSection}>
-        <div className={styles.container}>
-          <div className={styles.materialsHeader}>
-            <h2 id="zygoma-materials-heading" className={styles.materialsTitle}>
-              {d.materialsTitle}
-            </h2>
-            <p className={styles.materialsSubtitle}>{d.materialsSubtitle}</p>
-          </div>
-
-          {/* 3 Material Cards */}
-          <div className={styles.materialsGrid}>
-            {d.materialsCards.map((card, cIdx) => (
-              <div
-                key={cIdx}
-                className={`${styles.materialCard} ${card.isGold ? styles.materialCardGold : ''}`}
-              >
-                {card.badge && (
-                  <span className={styles.materialStandardBadge}>{card.badge}</span>
-                )}
-
-                <div>
-                  <h3 className={styles.materialCardTitle}>{card.title}</h3>
-                  <span className={styles.materialCardSub}>{card.sub}</span>
-
-                  <div className={styles.materialSpecsBox}>
-                    <div className={styles.materialSpecRow}>
-                      <span className={styles.materialSpecLabel}>{d.materialsSpecLabels.material}</span>
-                      <span className={card.isGold ? styles.materialSpecValGold : styles.materialSpecVal}>
-                        {card.material}
-                      </span>
-                    </div>
-                    <div className={styles.materialSpecRow}>
-                      <span className={styles.materialSpecLabel}>{d.materialsSpecLabels.strength}</span>
-                      <span className={card.isGold ? styles.materialSpecValGold : styles.materialSpecVal}>
-                        {card.strength}
-                      </span>
-                    </div>
-                    <div className={styles.materialSpecRow}>
-                      <span className={styles.materialSpecLabel}>{d.materialsSpecLabels.chipping}</span>
-                      <span className={card.isGold ? styles.materialSpecValGold : styles.materialSpecVal}>
-                        {card.chippingRisk}
-                      </span>
-                    </div>
-                    <div className={styles.materialSpecRow}>
-                      <span className={styles.materialSpecLabel}>{d.materialsSpecLabels.lifespan}</span>
-                      <span className={card.isGold ? styles.materialSpecValGold : styles.materialSpecVal}>
-                        {card.lifespan}
-                      </span>
-                    </div>
-                  </div>
-
-                  <ul className={styles.materialList}>
-                    {card.features.map((feat, fIdx) => (
-                      <li key={fIdx} className={styles.materialListItem}>
-                        <span
-                          className={
-                            feat.status === 'good'
-                              ? styles.matCheck
-                              : feat.status === 'bad'
-                              ? styles.matCross
-                              : styles.matWarn
-                          }
-                        >
-                          {feat.status === 'good' ? '•' : feat.status === 'bad' ? '—' : '–'}
-                        </span>
-                        <span>{feat.text}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Comparison Matrix Table */}
-          <div className={styles.materialsTableWrap}>
-            <table className={styles.materialsTable}>
-              <thead>
-                <tr>
-                  <th className={styles.materialsTh}>{d.materialsTableHeaders.criteria}</th>
-                  <th className={styles.materialsThGold}>{d.materialsTableHeaders.zirconia}</th>
-                  <th className={styles.materialsTh}>{d.materialsTableHeaders.acrylic}</th>
-                  <th className={styles.materialsTh}>{d.materialsTableHeaders.pfm}</th>
-                </tr>
-              </thead>
-              <tbody>
-                {d.materialsTableRows.map((row, rIdx) => (
-                  <tr key={rIdx}>
-                    <td className={styles.materialsTd}>
-                      <strong>{row.criteria}</strong>
-                    </td>
-                    <td className={`${styles.materialsTd} ${styles.materialsTdHighlight}`}>
-                      {row.zirconia}
-                    </td>
-                    <td className={styles.materialsTd}>{row.acrylic}</td>
-                    <td className={styles.materialsTd}>{row.pfm}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
-
-      {/* 8. INTERNATIONAL COST COMPARISON SECTION (UK / US vs ISTANBUL) */}
-      <section aria-labelledby="zygoma-cost-heading" className={styles.costSection}>
-        <div className={styles.container}>
-          <div className={styles.costHeader}>
-            <h2 id="zygoma-cost-heading" className={styles.costTitle}>
-              {d.costTitle}
-            </h2>
-            <p className={styles.costSubtitle}>{d.costSubtitle}</p>
-          </div>
-
-          <div className={styles.costTableWrap}>
-            <table className={styles.costTable}>
-              <thead>
-                <tr>
-                  <th className={styles.costTh}>{d.costTableHeaders.country}</th>
-                  <th className={styles.costTh}>{d.costTableHeaders.costPerArch}</th>
-                  <th className={styles.costTh}>{d.costTableHeaders.inclusions}</th>
-                  <th className={styles.costThHighlight}>{d.costTableHeaders.valueAdvantage}</th>
-                </tr>
-              </thead>
-              <tbody>
-                {d.costTableRows.map((row, rIdx) => (
-                  <tr key={rIdx}>
-                    <td className={styles.costTd}>
-                      <strong>{row.country}</strong>
-                    </td>
-                    <td className={styles.costTd}>
-                      <strong>{row.costPerArch}</strong>
-                    </td>
-                    <td className={styles.costTd}>{row.inclusions}</td>
-                    <td className={`${styles.costTd} ${styles.costTdHighlight}`}>
-                      {row.valueAdvantage}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
-
-      {/* 9. REUSABLE: SERVICES INCLUDED */}
-      <TreatmentServicesIncludedSection />
-
-      {/* 10. REUSABLE: CLINIC TOUR */}
-      <TreatmentClinicTourSection placeholderNum="ZYG-TOUR" />
-
-      {/* 11. REUSABLE: FOUNDING SURGEONS */}
-      <TreatmentDoctorsSection />
-
-      {/* 12. BEFORE & AFTER TRANSFORMATIONS GALLERY */}
+      {/* 7. BEFORE & AFTER TRANSFORMATIONS GALLERY (SECTBA STYLE) */}
       <TreatmentBeforeAfterSliderSection />
 
-      {/* 13. REVIEWS & TRUSTPILOT / GOOGLE 5-STAR */}
+      {/* 8. REUSABLE: SERVICES INCLUDED */}
+      <TreatmentServicesIncludedSection />
+
+      {/* 9. REUSABLE: CLINIC TOUR */}
+      <TreatmentClinicTourSection placeholderNum="ZYG-TOUR" />
+
+      {/* 10. REUSABLE: FOUNDING SURGEONS */}
+      <TreatmentDoctorsSection />
+
+      {/* 11. REVIEWS & TRUSTPILOT / GOOGLE 5-STAR */}
       <TreatmentReviewsSection />
 
-      {/* 14. REUSABLE: PARALLAX BANNER */}
+      {/* 12. REUSABLE: PARALLAX BANNER */}
       <TreatmentParallaxBanner />
 
-      {/* 15. REUSABLE: PATIENT VIDEO REELS */}
+      {/* 13. REUSABLE: PATIENT VIDEO REELS */}
       <TreatmentPatientReelsSection />
 
-      {/* 16. REUSABLE: DENTAL JOURNEY TIMELINE */}
+      {/* 14. REUSABLE: DENTAL JOURNEY TIMELINE */}
       <TreatmentJourneySimpleSection />
 
-      {/* 17. MASTER 17-QUESTION FAQ SECTION (CLINICAL & HEALTH TOURISM) */}
+      {/* 15. MASTER 17-QUESTION FAQ SECTION (CLINICAL & HEALTH TOURISM) */}
       <section aria-labelledby="zygoma-faq-heading" className={styles.faqSection}>
         <div className={styles.faqContainer}>
           <div className={styles.faqHeader}>
@@ -5799,7 +4111,7 @@ export default function ZygomaticImplantDetailView() {
         </div>
       </section>
 
-      {/* 18. LET'S CREATE YOUR PERFECT SMILE PLAN (4-STEP INTERACTIVE QUOTE FUNNEL) */}
+      {/* 16. LET'S CREATE YOUR PERFECT SMILE PLAN (4-STEP INTERACTIVE QUOTE FUNNEL) */}
       <TreatmentInteractiveQuoteForm defaultTreatment="Zygomatic Implants" />
     </div>
   );
