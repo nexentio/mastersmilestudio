@@ -92,6 +92,12 @@ interface DetailDictionary {
   introP3LinkSinus: string;
   introP3Tail: string;
 
+  costIntroTitle1: string;
+  costIntroTitle2: string;
+  costIntroP1: string;
+  costIntroP2: string;
+  costIntroP3: string;
+
   candidacyTitle: string;
   candidacySubtitle: string;
   candidacyPoints: CandidacyPoint[];
@@ -177,6 +183,11 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "introP3And": ", or ",
     "introP3LinkSinus": "Sinus Lifting & Bone Grafting",
     "introP3Tail": " solutions in Istanbul.",
+    "costIntroTitle1": "Cost of Zygomatic and Pterygoid (Cheekbone) Implants in Turkey:",
+    "costIntroTitle2": "Affordable, High-Quality Maxillofacial Treatment at Master Smile Studio, Istanbul",
+    "costIntroP1": "One of the primary reasons why Turkey has become a leading international destination for zygomatic implants is the significantly lower cost compared to many other countries. Turkey’s dental tourism industry has flourished in recent years, offering high-quality hospital-grade care at a fraction of the price you might find elsewhere.",
+    "costIntroP2": "The cost of zygomatic implants in Turkey, Istanbul can vary depending on several factors, such as the experience and qualifications of the dentist, the location of the clinic, and the complexity of the procedure. However, as a general guideline, the cost of a single zygomatic implant in Turkey can range from $2,770 to $5,000 in 2026.",
+    "costIntroP3": "At Master Smile Studio, we offer zygomatic implant treatments at competitive prices without compromising on clinical quality. Our current cost for zygomatic implants is $2,770 USD / 2,350 EUR / 2,050 GBP, subject to change depending on additional procedures such as bone grafting, sinus lift, etc.",
     "candidacyTitle": "Are You a Candidate for Zygomatic & Pterygoid Implants?",
     "candidacySubtitle": "If you have been told by other dentists that you \"have no bone left\" for regular implants, zygomatic surgery is your definitive answer.",
     "candidacyPoints": [
@@ -454,24 +465,288 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "pfm": "8 – 12 Years"
       }
     ],
-    "packagesTitle": "Zygomatic & Full-Arch Packages with Dynamic Currency Calculator",
-    "packagesSubtitle": "All-inclusive packages per jaw featuring certified Nobel Biocare, Straumann, and specialized Zygomatic & All-on systems.",
+    "packagesTitle": "Zygomatic & Full-Arch Packages (All-on-4 / All-on-6 / Zygoma)",
+    "packagesSubtitle": "All-inclusive packages per jaw featuring certified Straumann, Nobel Biocare, NucleOSS, DXL, Megagen, Neodent, and Hiossen.",
     "durationLabel": "Treatment Duration:",
-    "includedLabel": "Package Inclusions:",
-    "pricePerArchLabel": "Price per Arch (All-Inclusive):",
-    "getQuoteBtn": "Get Your Free Quote",
+    "includedLabel": "What’s Included:",
+    "pricePerArchLabel": "Package Price (Per Arch / One Jaw):",
+    "getQuoteBtn": "Get Personalized Quote Now",
     "mostPopularBadge": "Most Popular Choice",
     "packages": [
       {
-        "name": "Hybrid Zygomatic Package",
-        "brand": "Nobel Biocare / Straumann (2 Zygoma + 2-4 Anterior Implants)",
-        "duration": "5-7 Days in Istanbul (2 Visits Total)",
+        "name": "ALL-ON-6 IMPLANT PACKAGE – NUCLEOSS",
+        "brand": "NucleOSS (Turkish Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/nucleoss.webp",
+        "price": {
+          "USD": "$6,400",
+          "EUR": "€5,500",
+          "GBP": "£4,700"
+        },
+        "included": [
+          "6x NucleOSS (Turkish Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (CAD/CAM)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & sterile consumables",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Full Laboratory Work & Medical Passport"
+        ]
+      },
+      {
+        "name": "ALL-ON-6 IMPLANT PACKAGE – DXL GERMAN",
+        "brand": "DXL (German Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/dxl.webp",
+        "price": {
+          "USD": "$7,500",
+          "EUR": "€6,500",
+          "GBP": "£5,600"
+        },
+        "included": [
+          "6x DXL (German Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (CAD/CAM)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & surgical medications",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Laboratory Work & Lifetime Warranty"
+        ]
+      },
+      {
+        "name": "ALL-ON-6 IMPLANT PACKAGE – STRAUMANN",
+        "brand": "Straumann (Swiss Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/straumann.webp",
         "popular": true,
         "price": {
+          "USD": "$11,600",
+          "EUR": "€10,000",
+          "GBP": "£8,600"
+        },
+        "included": [
+          "6x Straumann (Swiss Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (Monolithic Zirconia)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & sedation support",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Lifetime Global Straumann Guarantee Passport"
+        ]
+      },
+      {
+        "name": "ALL-ON-6 IMPLANT PACKAGE – MEGAGEN",
+        "brand": "Megagen (Korean Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/megagen.webp",
+        "price": {
+          "USD": "$8,000",
+          "EUR": "€7,000",
+          "GBP": "£6,000"
+        },
+        "included": [
+          "6x Megagen (Korean Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (CAD/CAM)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & medication pack",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Laboratory Work & Warranty Passport"
+        ]
+      },
+      {
+        "name": "ALL-ON-6 IMPLANT PACKAGE – NEODENT",
+        "brand": "Neodent (Swiss / Straumann Group) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/neodent.webp",
+        "price": {
+          "USD": "$8,000",
+          "EUR": "€7,000",
+          "GBP": "£6,000"
+        },
+        "included": [
+          "6x Neodent (Swiss Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (CAD/CAM)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & post-op pack",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Laboratory Work & Lifetime Passport"
+        ]
+      },
+      {
+        "name": "ALL-ON-6 IMPLANT PACKAGE – HIOSSEN",
+        "brand": "Hiossen (American Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/hiossen.webp",
+        "price": {
+          "USD": "$7,700",
+          "EUR": "€6,750",
+          "GBP": "£5,780"
+        },
+        "included": [
+          "6x Hiossen (American Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (CAD/CAM)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & medications",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Laboratory Work & Medical Passport"
+        ]
+      },
+      {
+        "name": "ALL-ON-4 IMPLANT PACKAGE – NUCLEOSS",
+        "brand": "NucleOSS (Turkish Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/nucleoss.webp",
+        "price": {
+          "USD": "$5,700",
+          "EUR": "€4,900",
+          "GBP": "£4,200"
+        },
+        "included": [
+          "4x NucleOSS (Turkish Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (CAD/CAM)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & sterile packs",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Laboratory Work & Warranty Certificate"
+        ]
+      },
+      {
+        "name": "ALL-ON-4 IMPLANT PACKAGE – DXL GERMAN",
+        "brand": "DXL (German Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/dxl.webp",
+        "price": {
+          "USD": "$6,400",
+          "EUR": "€5,500",
+          "GBP": "£4,750"
+        },
+        "included": [
+          "4x DXL (German Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (CAD/CAM)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & medications",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Laboratory Work & Lifetime Warranty"
+        ]
+      },
+      {
+        "name": "ALL-ON-4 IMPLANT PACKAGE – STRAUMANN",
+        "brand": "Straumann (Swiss Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/straumann.webp",
+        "price": {
+          "USD": "$9,300",
+          "EUR": "€8,000",
+          "GBP": "£6,900"
+        },
+        "included": [
+          "4x Straumann (Swiss Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (Monolithic Zirconia)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & sedation support",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Lifetime Global Straumann Guarantee"
+        ]
+      },
+      {
+        "name": "ALL-ON-4 IMPLANT PACKAGE – MEGAGEN",
+        "brand": "Megagen (Korean Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/megagen.webp",
+        "price": {
+          "USD": "$6,900",
+          "EUR": "€6,000",
+          "GBP": "£5,100"
+        },
+        "included": [
+          "4x Megagen (Korean Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (CAD/CAM)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & post-op pack",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Laboratory Work & Warranty Passport"
+        ]
+      },
+      {
+        "name": "ALL-ON-4 IMPLANT PACKAGE – NEODENT",
+        "brand": "Neodent (Brazilian Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/neodent.webp",
+        "price": {
+          "USD": "$6,900",
+          "EUR": "€6,000",
+          "GBP": "£5,100"
+        },
+        "included": [
+          "4x Neodent (Brazilian Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (CAD/CAM)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & sterile consumables",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Laboratory Work & Lifetime Passport"
+        ]
+      },
+      {
+        "name": "ALL-ON-4 IMPLANT PACKAGE – HIOSSEN",
+        "brand": "Hiossen (American Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/hiossen.webp",
+        "price": {
+          "USD": "$6,600",
+          "EUR": "€5,750",
+          "GBP": "£4,900"
+        },
+        "included": [
+          "4x Hiossen (American Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (CAD/CAM)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & medication package",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Laboratory Work & Medical Passport"
+        ]
+      },
+      {
+        "name": "HYBRID ZYGOMATIC PACKAGE",
+        "brand": "Nobel Biocare / Straumann (2 Zygoma + 2-4 Anterior Implants)",
+        "duration": "5-7 Days in Istanbul (2 Visits Total)",
+        "img": "/packages/straumann.webp",
+        "price": {
+          "USD": "$7,600",
           "EUR": "€6,900",
-          "GBP": "£5,950",
-          "USD": "$7,600"
+          "GBP": "£5,950"
         },
         "included": [
           "2x Extra-long Zygomatic Implants (NobelZygoma / Southern)",
@@ -486,14 +761,14 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         ]
       },
       {
-        "name": "Quad Zygoma Total Reconstruction",
+        "name": "QUAD ZYGOMA TOTAL RECONSTRUCTION",
         "brand": "4 Zygomatic Implants (For 100% Maxillary Bone Loss)",
         "duration": "5-7 Days in Istanbul (2 Visits Total)",
         "img": "/packages/dxl.webp",
         "price": {
+          "USD": "$9,800",
           "EUR": "€8,900",
-          "GBP": "£7,700",
-          "USD": "$9,800"
+          "GBP": "£7,700"
         },
         "included": [
           "4x Extra-long Zygomatic Implants (Bilateral Cheekbone Anchors)",
@@ -505,90 +780,6 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
           "7 Nights 5-Star Luxury Hotel Partner Accommodation",
           "VIP Private Mercedes Transfers throughout entire stay",
           "Lifetime Global Manufacturer Guarantee & Medical Passport"
-        ]
-      },
-      {
-        "name": "All-on-6 Package – Straumann Swiss",
-        "brand": "Straumann Group (Swiss Roxolid SLActive)",
-        "duration": "3+7 Working Days (2 Visits)",
-        "img": "/packages/straumann.webp",
-        "price": {
-          "EUR": "€10,000",
-          "GBP": "£8,600",
-          "USD": "$11,600"
-        },
-        "included": [
-          "6x Straumann (Swiss Brand) Dental Implants",
-          "12-14x Fixed Temporary Teeth in 24 hours",
-          "12-14x Final Monolithic Zirconia Permanent Teeth",
-          "Surgical planning with 3D CBCT & local anesthesia/sedation",
-          "Follow-up checks and post-op medication pack",
-          "Airport, hotel & clinic VIP transfers",
-          "Hotel Stay with Bed & Breakfast included",
-          "Lifetime Global Straumann Guarantee Passport"
-        ]
-      },
-      {
-        "name": "All-on-6 Package – DXL German",
-        "brand": "DXL Dental Implants (German Precision)",
-        "duration": "3+7 Working Days (2 Visits)",
-        "img": "/packages/dxl.webp",
-        "price": {
-          "EUR": "€6,500",
-          "GBP": "£5,600",
-          "USD": "$7,500"
-        },
-        "included": [
-          "6x DXL (German Brand) Dental Implants",
-          "12-14x Fixed Temporary Teeth in 24 hours",
-          "12-14x Final Monolithic Zirconia Permanent Teeth",
-          "Surgical planning with 3D CBCT & local anesthesia",
-          "Follow-up checks during stay & sterile pack",
-          "Airport-hotel-clinic VIP transfers",
-          "Hotel Stay with Bed & Breakfast included",
-          "Lifetime International Manufacturer Warranty"
-        ]
-      },
-      {
-        "name": "All-on-4 Package – Straumann Swiss",
-        "brand": "Straumann Group (Swiss Roxolid Implants)",
-        "duration": "3+7 Working Days (2 Visits)",
-        "img": "/packages/straumann.webp",
-        "price": {
-          "EUR": "€8,000",
-          "GBP": "£6,900",
-          "USD": "$9,300"
-        },
-        "included": [
-          "4x Straumann (Swiss Brand) Dental Implants",
-          "12x Fixed Temporary Teeth in 24 hours",
-          "12x Final Monolithic Zirconia Permanent Teeth",
-          "Surgical planning with 3D CBCT & local anesthesia",
-          "Follow-up checks during stay & medications",
-          "Airport-hotel-clinic VIP transfers",
-          "Hotel Stay with Bed & Breakfast included",
-          "Lifetime Global Straumann Warranty Passport"
-        ]
-      },
-      {
-        "name": "All-on-4 Package – NucleOSS",
-        "brand": "NucleOSS Dental Implants (Certified Turkish Brand)",
-        "duration": "3+7 Working Days (2 Visits)",
-        "img": "/packages/nucleoss.webp",
-        "price": {
-          "EUR": "€4,900",
-          "GBP": "£4,200",
-          "USD": "$5,700"
-        },
-        "included": [
-          "4x NucleOSS Dental Implants with SLA surface",
-          "12x Fixed Temporary Teeth in 24 hours",
-          "12x Final Monolithic Zirconia Permanent Teeth",
-          "Surgical planning with 3D CBCT & local anesthesia",
-          "Follow-up checks and post-op medication pack",
-          "Airport-hotel-clinic VIP transfers",
-          "Hotel Stay with Bed & Breakfast included",
-          "Lifetime International Manufacturer Warranty"
         ]
       }
     ],
@@ -713,6 +904,11 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "introP3And": " veya ",
     "introP3LinkSinus": "Sinüs Lifting & Kemik Tozu",
     "introP3Tail": " çözümlerimizi inceleyebilirsiniz.",
+    "costIntroTitle1": "Türkiye’de Zigoma ve Pterigoid (Elmacık Kemiği) İmplant Fiyatları:",
+    "costIntroTitle2": "Master Smile Studio İstanbul’da Erişilebilir ve Yüksek Kaliteli Çene Cerrahisi",
+    "costIntroP1": "Türkiye’nin zigoma (elmacık kemiği) implantı tedavisinde dünyanın önde gelen destinasyonlarından biri olmasının başlıca nedeni, birçok ülkeye kıyasla önemli ölçüde daha uygun fiyatlar sunmasıdır. Türkiye’nin gelişmiş sağlık turizmi altyapısı, Avrupa ve Amerika’daki maliyetlerin çok altında hastane standartlarında cerrahi bakım sağlar.",
+    "costIntroP2": "İstanbul’da zigoma implantı fiyatları cerrahın tecrübesine, kliniğin donanımına ve prosedürün karmaşıklığına göre değişiklik gösterebilir. Genel bir kılavuz olarak, 2026 yılında Türkiye’de tek bir zigoma implantının maliyeti 2.770 $ ile 5.000 $ (2.350 € - 4.500 €) arasında değişmektedir.",
+    "costIntroP3": "Master Smile Studio’da zigoma implant tedavilerini kaliteden ödün vermeden son derece rekabetçi fiyatlarla sunuyoruz. Güncel zigoma implant birim maliyetimiz 2.770 USD / 2.350 EUR / 2.050 GBP olup kemik grefti, sinüs lifting gibi ek prosedürlere göre netleştirilmektedir.",
     "candidacyTitle": "Zigoma & Pterigoid İmplant İçin Uygun Bir Aday Mısınız?",
     "candidacySubtitle": "Başka hekimler tarafından \"hiç kemiğiniz kalmamış, implant yapılamaz\" denildiyse, zigoma cerrahisi kesin çözümünüzdür.",
     "candidacyPoints": [
@@ -990,24 +1186,288 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "pfm": "8 – 12 Yıl"
       }
     ],
-    "packagesTitle": "Zigoma ve Tam Çene İmplant Paketleri ve Para Birimi Seçicisi",
-    "packagesSubtitle": "Nobel Biocare, Straumann ve orijinal zigoma cerrahi sistemleri dahil her şey dahil paketler.",
+    "packagesTitle": "Zigoma ve Tam Çene İmplant Paketleri (All-on-4 / All-on-6 / Zigoma)",
+    "packagesSubtitle": "Straumann, Nobel Biocare, NucleOSS, DXL, Megagen, Neodent ve Hiossen dahil çene başına her şey dahil paketler.",
     "durationLabel": "Tedavi Süresi:",
     "includedLabel": "Paket Kapsamı:",
     "pricePerArchLabel": "Çene Başına Fiyat (Her Şey Dahil):",
-    "getQuoteBtn": "Ücretsiz Teklif Alın",
+    "getQuoteBtn": "Kişiselleştirilmiş Teklif Alın",
     "mostPopularBadge": "En Çok Tercih Edilen",
     "packages": [
       {
-        "name": "Hibrit Zigoma Paketi",
-        "brand": "Nobel Biocare / Straumann (2 Zigoma + 2-4 Standart İmplant)",
-        "duration": "İstanbul’da 5-7 Gün (Toplam 2 Ziyaret)",
+        "name": "ALL-ON-6 İMPLANT PAKETİ – NUCLEOSS",
+        "brand": "NucleOSS (Türk Markası) Dental İmplant",
+        "duration": "3+7 İş Günü (2 Ziyaret)",
+        "img": "/packages/nucleoss.webp",
+        "price": {
+          "USD": "$6,400",
+          "EUR": "€5,500",
+          "GBP": "£4,700"
+        },
+        "included": [
+          "6x NucleOSS Dental İmplant",
+          "24 saat içinde 12x Sabit Geçici Diş",
+          "12x Kalıcı Master Diş (CAD/CAM)",
+          "3D Tomografi (CBCT) cerrahi planlama",
+          "Lokal anestezi & steril cerrahi sarf",
+          "Seyahat boyunca tüm takip kontrolleri",
+          "VIP Mercedes Havalimanı-Otel-Klinik Transferleri",
+          "5 Yıldızlı Otel Konaklaması (Oda & Kahvaltı)",
+          "Laboratuvar İşçiliği & Garanti Pasaportu"
+        ]
+      },
+      {
+        "name": "ALL-ON-6 İMPLANT PAKETİ – DXL ALMAN",
+        "brand": "DXL (Alman Markası) Dental İmplant",
+        "duration": "3+7 İş Günü (2 Ziyaret)",
+        "img": "/packages/dxl.webp",
+        "price": {
+          "USD": "$7,500",
+          "EUR": "€6,500",
+          "GBP": "£5,600"
+        },
+        "included": [
+          "6x DXL (Alman Menşeli) Dental İmplant",
+          "24 saat içinde 12x Sabit Geçici Diş",
+          "12x Kalıcı Master Diş (CAD/CAM)",
+          "3D Tomografi (CBCT) cerrahi planlama",
+          "Lokal anestezi & post-op ilaç paketi",
+          "Seyahat boyunca tüm takip kontrolleri",
+          "VIP Mercedes Havalimanı-Otel-Klinik Transferleri",
+          "5 Yıldızlı Otel Konaklaması (Oda & Kahvaltı)",
+          "Laboratuvar İşçiliği & Ömür Boyu Garanti"
+        ]
+      },
+      {
+        "name": "ALL-ON-6 İMPLANT PAKETİ – STRAUMANN",
+        "brand": "Straumann (İsviçre Markası) Dental İmplant",
+        "duration": "3+7 İş Günü (2 Ziyaret)",
         "img": "/packages/straumann.webp",
         "popular": true,
         "price": {
+          "USD": "$11,600",
+          "EUR": "€10,000",
+          "GBP": "£8,600"
+        },
+        "included": [
+          "6x Straumann (İsviçre) Dental İmplant",
+          "24 saat içinde 12x Sabit Geçici Diş",
+          "12x Kalıcı Monolitik Zirkonyum Master Diş",
+          "3D Tomografi (CBCT) cerrahi planlama",
+          "Lokal anestezi & sedasyon desteği",
+          "Seyahat boyunca tüm takip kontrolleri",
+          "VIP Mercedes Havalimanı-Otel-Klinik Transferleri",
+          "5 Yıldızlı Otel Konaklaması (Oda & Kahvaltı)",
+          "Ömür Boyu Uluslararası Straumann Pasaportu"
+        ]
+      },
+      {
+        "name": "ALL-ON-6 İMPLANT PAKETİ – MEGAGEN",
+        "brand": "Megagen (Kore Markası) Dental İmplant",
+        "duration": "3+7 İş Günü (2 Ziyaret)",
+        "img": "/packages/megagen.webp",
+        "price": {
+          "USD": "$8,000",
+          "EUR": "€7,000",
+          "GBP": "£6,000"
+        },
+        "included": [
+          "6x Megagen (Kore Menşeli) Dental İmplant",
+          "24 saat içinde 12x Sabit Geçici Diş",
+          "12x Kalıcı Master Diş (CAD/CAM)",
+          "3D Tomografi (CBCT) cerrahi planlama",
+          "Lokal anestezi & medikal bakım paketi",
+          "Seyahat boyunca tüm takip kontrolleri",
+          "VIP Mercedes Havalimanı-Otel-Klinik Transferleri",
+          "5 Yıldızlı Otel Konaklaması (Oda & Kahvaltı)",
+          "Laboratuvar İşçiliği & Garanti Pasaportu"
+        ]
+      },
+      {
+        "name": "ALL-ON-6 İMPLANT PAKETİ – NEODENT",
+        "brand": "Neodent (İsviçre / Straumann Grubu) Dental İmplant",
+        "duration": "3+7 İş Günü (2 Ziyaret)",
+        "img": "/packages/neodent.webp",
+        "price": {
+          "USD": "$8,000",
+          "EUR": "€7,000",
+          "GBP": "£6,000"
+        },
+        "included": [
+          "6x Neodent (İsviçre Grubu) Dental İmplant",
+          "24 saat içinde 12x Sabit Geçici Diş",
+          "12x Kalıcı Master Diş (CAD/CAM)",
+          "3D Tomografi (CBCT) cerrahi planlama",
+          "Lokal anestezi & steril cerrahi sarf",
+          "Seyahat boyunca tüm takip kontrolleri",
+          "VIP Mercedes Havalimanı-Otel-Klinik Transferleri",
+          "5 Yıldızlı Otel Konaklaması (Oda & Kahvaltı)",
+          "Laboratuvar İşçiliği & Ömür Boyu Pasaport"
+        ]
+      },
+      {
+        "name": "ALL-ON-6 İMPLANT PAKETİ – HIOSSEN",
+        "brand": "Hiossen (Amerikan Markası) Dental İmplant",
+        "duration": "3+7 İş Günü (2 Ziyaret)",
+        "img": "/packages/hiossen.webp",
+        "price": {
+          "USD": "$7,700",
+          "EUR": "€6,750",
+          "GBP": "£5,780"
+        },
+        "included": [
+          "6x Hiossen (Amerikan Menşeli) Dental İmplant",
+          "24 saat içinde 12x Sabit Geçici Diş",
+          "12x Kalıcı Master Diş (CAD/CAM)",
+          "3D Tomografi (CBCT) cerrahi planlama",
+          "Lokal anestezi & ameliyat sonrası ilaçlar",
+          "Seyahat boyunca tüm takip kontrolleri",
+          "VIP Mercedes Havalimanı-Otel-Klinik Transferleri",
+          "5 Yıldızlı Otel Konaklaması (Oda & Kahvaltı)",
+          "Laboratuvar İşçiliği & Medikal Pasaport"
+        ]
+      },
+      {
+        "name": "ALL-ON-4 İMPLANT PAKETİ – NUCLEOSS",
+        "brand": "NucleOSS (Türk Markası) Dental İmplant",
+        "duration": "3+7 İş Günü (2 Ziyaret)",
+        "img": "/packages/nucleoss.webp",
+        "price": {
+          "USD": "$5,700",
+          "EUR": "€4,900",
+          "GBP": "£4,200"
+        },
+        "included": [
+          "4x NucleOSS (Türk Menşeli) Dental İmplant",
+          "24 saat içinde 12x Sabit Geçici Diş",
+          "12x Kalıcı Master Diş (CAD/CAM)",
+          "3D Tomografi (CBCT) cerrahi planlama",
+          "Lokal anestezi & cerrahi sarf paketi",
+          "Seyahat boyunca tüm takip kontrolleri",
+          "VIP Mercedes Havalimanı-Otel-Klinik Transferleri",
+          "5 Yıldızlı Otel Konaklaması (Oda & Kahvaltı)",
+          "Laboratuvar İşçiliği & Garanti Sertifikası"
+        ]
+      },
+      {
+        "name": "ALL-ON-4 İMPLANT PAKETİ – DXL ALMAN",
+        "brand": "DXL (Alman Markası) Dental İmplant",
+        "duration": "3+7 İş Günü (2 Ziyaret)",
+        "img": "/packages/dxl.webp",
+        "price": {
+          "USD": "$6,400",
+          "EUR": "€5,500",
+          "GBP": "£4,750"
+        },
+        "included": [
+          "4x DXL (Alman Menşeli) Dental İmplant",
+          "24 saat içinde 12x Sabit Geçici Diş",
+          "12x Kalıcı Master Diş (CAD/CAM)",
+          "3D Tomografi (CBCT) cerrahi planlama",
+          "Lokal anestezi & ilaç tedavi paketi",
+          "Seyahat boyunca tüm takip kontrolleri",
+          "VIP Mercedes Havalimanı-Otel-Klinik Transferleri",
+          "5 Yıldızlı Otel Konaklaması (Oda & Kahvaltı)",
+          "Laboratuvar İşçiliği & Ömür Boyu Garanti"
+        ]
+      },
+      {
+        "name": "ALL-ON-4 İMPLANT PAKETİ – STRAUMANN",
+        "brand": "Straumann (İsviçre Markası) Dental İmplant",
+        "duration": "3+7 İş Günü (2 Ziyaret)",
+        "img": "/packages/straumann.webp",
+        "price": {
+          "USD": "$9,300",
+          "EUR": "€8,000",
+          "GBP": "£6,900"
+        },
+        "included": [
+          "4x Straumann (İsviçre) Dental İmplant",
+          "24 saat içinde 12x Sabit Geçici Diş",
+          "12x Kalıcı Monolitik Zirkonyum Master Diş",
+          "3D Tomografi (CBCT) cerrahi planlama",
+          "Lokal anestezi & sedasyon desteği",
+          "Seyahat boyunca tüm takip kontrolleri",
+          "VIP Mercedes Havalimanı-Otel-Klinik Transferleri",
+          "5 Yıldızlı Otel Konaklaması (Oda & Kahvaltı)",
+          "Ömür Boyu Küresel Straumann Garantisi"
+        ]
+      },
+      {
+        "name": "ALL-ON-4 İMPLANT PAKETİ – MEGAGEN",
+        "brand": "Megagen (Kore Markası) Dental İmplant",
+        "duration": "3+7 İş Günü (2 Ziyaret)",
+        "img": "/packages/megagen.webp",
+        "price": {
+          "USD": "$6,900",
+          "EUR": "€6,000",
+          "GBP": "£5,100"
+        },
+        "included": [
+          "4x Megagen (Kore Menşeli) Dental İmplant",
+          "24 saat içinde 12x Sabit Geçici Diş",
+          "12x Kalıcı Master Diş (CAD/CAM)",
+          "3D Tomografi (CBCT) cerrahi planlama",
+          "Lokal anestezi & medikal bakım kiti",
+          "Seyahat boyunca tüm takip kontrolleri",
+          "VIP Mercedes Havalimanı-Otel-Klinik Transferleri",
+          "5 Yıldızlı Otel Konaklaması (Oda & Kahvaltı)",
+          "Laboratuvar İşçiliği & Garanti Pasaportu"
+        ]
+      },
+      {
+        "name": "ALL-ON-4 İMPLANT PAKETİ – NEODENT",
+        "brand": "Neodent (Brezilya / Straumann) Dental İmplant",
+        "duration": "3+7 İş Günü (2 Ziyaret)",
+        "img": "/packages/neodent.webp",
+        "price": {
+          "USD": "$6,900",
+          "EUR": "€6,000",
+          "GBP": "£5,100"
+        },
+        "included": [
+          "4x Neodent (Brezilya Grubu) Dental İmplant",
+          "24 saat içinde 12x Sabit Geçici Diş",
+          "12x Kalıcı Master Diş (CAD/CAM)",
+          "3D Tomografi (CBCT) cerrahi planlama",
+          "Lokal anestezi & steril cerrahi sarf",
+          "Seyahat boyunca tüm takip kontrolleri",
+          "VIP Mercedes Havalimanı-Otel-Klinik Transferleri",
+          "5 Yıldızlı Otel Konaklaması (Oda & Kahvaltı)",
+          "Laboratuvar İşçiliği & Ömür Boyu Pasaport"
+        ]
+      },
+      {
+        "name": "ALL-ON-4 İMPLANT PAKETİ – HIOSSEN",
+        "brand": "Hiossen (Amerikan Markası) Dental İmplant",
+        "duration": "3+7 İş Günü (2 Ziyaret)",
+        "img": "/packages/hiossen.webp",
+        "price": {
+          "USD": "$6,600",
+          "EUR": "€5,750",
+          "GBP": "£4,900"
+        },
+        "included": [
+          "4x Hiossen (Amerikan Menşeli) Dental İmplant",
+          "24 saat içinde 12x Sabit Geçici Diş",
+          "12x Kalıcı Master Diş (CAD/CAM)",
+          "3D Tomografi (CBCT) cerrahi planlama",
+          "Lokal anestezi & ameliyat sonrası ilaçlar",
+          "Seyahat boyunca tüm takip kontrolleri",
+          "VIP Mercedes Havalimanı-Otel-Klinik Transferleri",
+          "5 Yıldızlı Otel Konaklaması (Oda & Kahvaltı)",
+          "Laboratuvar İşçiliği & Medikal Pasaport"
+        ]
+      },
+      {
+        "name": "HİBRİT ZİGOMA PAKETİ",
+        "brand": "Nobel Biocare / Straumann (2 Zigoma + 2-4 Standart İmplant)",
+        "duration": "5-7 Gün (Toplam 2 Ziyaret)",
+        "img": "/packages/straumann.webp",
+        "price": {
+          "USD": "$7,600",
           "EUR": "€6,900",
-          "GBP": "£5,950",
-          "USD": "$7,600"
+          "GBP": "£5,950"
         },
         "included": [
           "2x Özel Uzunlukta Zigoma İmplantı (NobelZygoma / Southern)",
@@ -1022,14 +1482,14 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         ]
       },
       {
-        "name": "Dörtlü (Quad) Zigoma Rekonstrüksiyon",
-        "brand": "4 Zigoma İmplantı (%100 Üst Çene Kemik Erimesi Olanlar)",
-        "duration": "İstanbul’da 5-7 Gün (Toplam 2 Ziyaret)",
+        "name": "DÖRTLÜ (QUAD) ZİGOMA REKONSTRÜKSİYON",
+        "brand": "4 Zigoma İmplantı (%100 Üst Çene Kemik Erimesi)",
+        "duration": "5-7 Gün (Toplam 2 Ziyaret)",
         "img": "/packages/dxl.webp",
         "price": {
+          "USD": "$9,800",
           "EUR": "€8,900",
-          "GBP": "£7,700",
-          "USD": "$9,800"
+          "GBP": "£7,700"
         },
         "included": [
           "4x Çift Taraflı Elmacık Kemiğine Sabitlenen Zigoma İmplantı",
@@ -1041,90 +1501,6 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
           "7 Gece 5 Yıldızlı Lüks Otel Konaklaması Dahil",
           "Tüm seyahat boyunca VIP Mercedes Özel Transfer Hizmeti",
           "Ömür Boyu Küresel Üretici Pasaportu ve Garantisi"
-        ]
-      },
-      {
-        "name": "All-on-6 Paketi – Straumann İsviçre",
-        "brand": "Straumann Group (İsviçre Roxolid SLActive)",
-        "duration": "İstanbul’da 3+7 Gün (Toplam 2 Ziyaret)",
-        "img": "/packages/straumann.webp",
-        "price": {
-          "EUR": "€10,000",
-          "GBP": "£8,600",
-          "USD": "$11,600"
-        },
-        "included": [
-          "6x Orijinal Straumann (İsviçre) Dental İmplant",
-          "24 saat içinde takılan 12-14 dişlik sabit geçici köprü",
-          "Kalıcı 12-14 dişlik Monolitik Zirkonyum Master Köprü",
-          "3D Tomografi planlaması ve lokal anestezi/sedasyon",
-          "Tüm kontrol seansları ve ameliyat sonrası ilaç paketi",
-          "VIP Mercedes Havalimanı, Otel ve Klinik Transferleri",
-          "5 Yıldızlı Lüks Otel Konaklaması (Oda & Kahvaltı)",
-          "Ömür Boyu Uluslararası Straumann Garanti Pasaportu"
-        ]
-      },
-      {
-        "name": "All-on-6 Paketi – DXL Alman",
-        "brand": "DXL Dental Implants (Alman Hassas Mühendisliği)",
-        "duration": "İstanbul’da 3+7 Gün (Toplam 2 Ziyaret)",
-        "img": "/packages/dxl.webp",
-        "price": {
-          "EUR": "€6,500",
-          "GBP": "£5,600",
-          "USD": "$7,500"
-        },
-        "included": [
-          "6x DXL (Alman Menşeli) Dental İmplant",
-          "24 saat içinde takılan 12-14 dişlik sabit geçici köprü",
-          "Kalıcı 12-14 dişlik Monolitik Zirkonyum Master Köprü",
-          "3D Tomografi planlaması ve lokal anestezi",
-          "Tüm takip kontrolleri ve steril cerrahi sarf paketi",
-          "VIP Havalimanı-Otel-Klinik Transferleri",
-          "5 Yıldızlı Otel Konaklaması (Oda & Kahvaltı)",
-          "Ömür Boyu Uluslararası Üretici Garanti Belgesi"
-        ]
-      },
-      {
-        "name": "All-on-4 Paketi – Straumann İsviçre",
-        "brand": "Straumann Group (İsviçre Roxolid İmplant)",
-        "duration": "İstanbul’da 3+7 Gün (Toplam 2 Ziyaret)",
-        "img": "/packages/straumann.webp",
-        "price": {
-          "EUR": "€8,000",
-          "GBP": "£6,900",
-          "USD": "$9,300"
-        },
-        "included": [
-          "4x Straumann (İsviçre) Dental İmplant",
-          "24 saat içinde takılan 12 dişlik sabit geçici köprü",
-          "Kalıcı Monolitik Zirkonyum Master Köprü",
-          "3D Tomografi planlaması ve cerrahi sarflar",
-          "Takip kontrolleri ve operasyon sonrası ilaç paketi",
-          "VIP Mercedes Özel Şoförlü Transfer Hizmeti",
-          "5 Yıldızlı Otel Konaklaması Dahil",
-          "Ömür Boyu Küresel Straumann Garanti Pasaportu"
-        ]
-      },
-      {
-        "name": "All-on-4 Paketi – NucleOSS",
-        "brand": "NucleOSS Dental Implants (Sertifikalı Türk Markası)",
-        "duration": "İstanbul’da 3+7 Gün (Toplam 2 Ziyaret)",
-        "img": "/packages/nucleoss.webp",
-        "price": {
-          "EUR": "€4,900",
-          "GBP": "£4,200",
-          "USD": "$5,700"
-        },
-        "included": [
-          "4x NucleOSS SLA Yüzeyli Dental İmplant",
-          "24 saat içinde takılan 12 dişlik sabit geçici köprü",
-          "Kalıcı Monolitik Zirkonyum Master Köprü",
-          "3D Tomografi analizi ve lokal anestezi",
-          "Takip kontrolleri ve medikal bakım paketi",
-          "VIP Havalimanı ve Klinik Transferleri",
-          "5 Yıldızlı Otel Konaklaması Dahil",
-          "Ömür Boyu Uluslararası Üretici Garantisi"
         ]
       }
     ],
@@ -1249,6 +1625,11 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "introP3And": ", or ",
     "introP3LinkSinus": "Sinus Lifting & Bone Grafting",
     "introP3Tail": " solutions in Istanbul.",
+    "costIntroTitle1": "Kosten für Zygoma- und Pterygoid-Implantate in der Türkei:",
+    "costIntroTitle2": "Erschwingliche, erstklassige Behandlung bei Master Smile Studio, Istanbul",
+    "costIntroP1": "Einer der Hauptgründe für den Erfolg der Türkei bei Zygoma-Implantaten sind die deutlich geringeren Kosten bei höchster chirurgischer Qualität.",
+    "costIntroP2": "Die Kosten für ein einzelnes Zygoma-Implantat in der Türkei liegen 2026 zwischen 2.350 € und 4.500 $.",
+    "costIntroP3": "Bei Master Smile Studio beträgt der Preis pro Zygoma-Implantat 2.350 EUR / 2.770 USD / 2.050 GBP inklusive 3D-Planung und OP-Saal.",
     "candidacyTitle": "Are You a Candidate for Zygomatic & Pterygoid Implants?",
     "candidacySubtitle": "If you have been told by other dentists that you \"have no bone left\" for regular implants, zygomatic surgery is your definitive answer.",
     "candidacyPoints": [
@@ -1527,23 +1908,287 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       }
     ],
     "packagesTitle": "Zygoma & All-on-Pakete & Währungsrechner",
-    "packagesSubtitle": "All-inclusive packages per jaw featuring certified Nobel Biocare, Straumann, and specialized Zygomatic & All-on systems.",
+    "packagesSubtitle": "All-inclusive packages per jaw featuring certified Straumann, Nobel Biocare, NucleOSS, DXL, Megagen, Neodent, and Hiossen.",
     "durationLabel": "Treatment Duration:",
-    "includedLabel": "Package Inclusions:",
-    "pricePerArchLabel": "Price per Arch (All-Inclusive):",
-    "getQuoteBtn": "Get Your Free Quote",
+    "includedLabel": "What’s Included:",
+    "pricePerArchLabel": "Package Price (Per Arch / One Jaw):",
+    "getQuoteBtn": "Get Personalized Quote Now",
     "mostPopularBadge": "Most Popular Choice",
     "packages": [
       {
-        "name": "Hybrid Zygomatic Package",
-        "brand": "Nobel Biocare / Straumann (2 Zygoma + 2-4 Anterior Implants)",
-        "duration": "5-7 Days in Istanbul (2 Visits Total)",
+        "name": "ALL-ON-6 IMPLANT PACKAGE – NUCLEOSS",
+        "brand": "NucleOSS (Turkish Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/nucleoss.webp",
+        "price": {
+          "USD": "$6,400",
+          "EUR": "€5,500",
+          "GBP": "£4,700"
+        },
+        "included": [
+          "6x NucleOSS (Turkish Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (CAD/CAM)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & sterile consumables",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Full Laboratory Work & Medical Passport"
+        ]
+      },
+      {
+        "name": "ALL-ON-6 IMPLANT PACKAGE – DXL GERMAN",
+        "brand": "DXL (German Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/dxl.webp",
+        "price": {
+          "USD": "$7,500",
+          "EUR": "€6,500",
+          "GBP": "£5,600"
+        },
+        "included": [
+          "6x DXL (German Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (CAD/CAM)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & surgical medications",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Laboratory Work & Lifetime Warranty"
+        ]
+      },
+      {
+        "name": "ALL-ON-6 IMPLANT PACKAGE – STRAUMANN",
+        "brand": "Straumann (Swiss Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/straumann.webp",
         "popular": true,
         "price": {
+          "USD": "$11,600",
+          "EUR": "€10,000",
+          "GBP": "£8,600"
+        },
+        "included": [
+          "6x Straumann (Swiss Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (Monolithic Zirconia)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & sedation support",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Lifetime Global Straumann Guarantee Passport"
+        ]
+      },
+      {
+        "name": "ALL-ON-6 IMPLANT PACKAGE – MEGAGEN",
+        "brand": "Megagen (Korean Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/megagen.webp",
+        "price": {
+          "USD": "$8,000",
+          "EUR": "€7,000",
+          "GBP": "£6,000"
+        },
+        "included": [
+          "6x Megagen (Korean Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (CAD/CAM)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & medication pack",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Laboratory Work & Warranty Passport"
+        ]
+      },
+      {
+        "name": "ALL-ON-6 IMPLANT PACKAGE – NEODENT",
+        "brand": "Neodent (Swiss / Straumann Group) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/neodent.webp",
+        "price": {
+          "USD": "$8,000",
+          "EUR": "€7,000",
+          "GBP": "£6,000"
+        },
+        "included": [
+          "6x Neodent (Swiss Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (CAD/CAM)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & post-op pack",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Laboratory Work & Lifetime Passport"
+        ]
+      },
+      {
+        "name": "ALL-ON-6 IMPLANT PACKAGE – HIOSSEN",
+        "brand": "Hiossen (American Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/hiossen.webp",
+        "price": {
+          "USD": "$7,700",
+          "EUR": "€6,750",
+          "GBP": "£5,780"
+        },
+        "included": [
+          "6x Hiossen (American Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (CAD/CAM)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & medications",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Laboratory Work & Medical Passport"
+        ]
+      },
+      {
+        "name": "ALL-ON-4 IMPLANT PACKAGE – NUCLEOSS",
+        "brand": "NucleOSS (Turkish Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/nucleoss.webp",
+        "price": {
+          "USD": "$5,700",
+          "EUR": "€4,900",
+          "GBP": "£4,200"
+        },
+        "included": [
+          "4x NucleOSS (Turkish Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (CAD/CAM)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & sterile packs",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Laboratory Work & Warranty Certificate"
+        ]
+      },
+      {
+        "name": "ALL-ON-4 IMPLANT PACKAGE – DXL GERMAN",
+        "brand": "DXL (German Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/dxl.webp",
+        "price": {
+          "USD": "$6,400",
+          "EUR": "€5,500",
+          "GBP": "£4,750"
+        },
+        "included": [
+          "4x DXL (German Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (CAD/CAM)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & medications",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Laboratory Work & Lifetime Warranty"
+        ]
+      },
+      {
+        "name": "ALL-ON-4 IMPLANT PACKAGE – STRAUMANN",
+        "brand": "Straumann (Swiss Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/straumann.webp",
+        "price": {
+          "USD": "$9,300",
+          "EUR": "€8,000",
+          "GBP": "£6,900"
+        },
+        "included": [
+          "4x Straumann (Swiss Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (Monolithic Zirconia)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & sedation support",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Lifetime Global Straumann Guarantee"
+        ]
+      },
+      {
+        "name": "ALL-ON-4 IMPLANT PACKAGE – MEGAGEN",
+        "brand": "Megagen (Korean Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/megagen.webp",
+        "price": {
+          "USD": "$6,900",
+          "EUR": "€6,000",
+          "GBP": "£5,100"
+        },
+        "included": [
+          "4x Megagen (Korean Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (CAD/CAM)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & post-op pack",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Laboratory Work & Warranty Passport"
+        ]
+      },
+      {
+        "name": "ALL-ON-4 IMPLANT PACKAGE – NEODENT",
+        "brand": "Neodent (Brazilian Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/neodent.webp",
+        "price": {
+          "USD": "$6,900",
+          "EUR": "€6,000",
+          "GBP": "£5,100"
+        },
+        "included": [
+          "4x Neodent (Brazilian Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (CAD/CAM)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & sterile consumables",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Laboratory Work & Lifetime Passport"
+        ]
+      },
+      {
+        "name": "ALL-ON-4 IMPLANT PACKAGE – HIOSSEN",
+        "brand": "Hiossen (American Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/hiossen.webp",
+        "price": {
+          "USD": "$6,600",
+          "EUR": "€5,750",
+          "GBP": "£4,900"
+        },
+        "included": [
+          "4x Hiossen (American Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (CAD/CAM)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & medication package",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Laboratory Work & Medical Passport"
+        ]
+      },
+      {
+        "name": "HYBRID ZYGOMATIC PACKAGE",
+        "brand": "Nobel Biocare / Straumann (2 Zygoma + 2-4 Anterior Implants)",
+        "duration": "5-7 Days in Istanbul (2 Visits Total)",
+        "img": "/packages/straumann.webp",
+        "price": {
+          "USD": "$7,600",
           "EUR": "€6,900",
-          "GBP": "£5,950",
-          "USD": "$7,600"
+          "GBP": "£5,950"
         },
         "included": [
           "2x Extra-long Zygomatic Implants (NobelZygoma / Southern)",
@@ -1558,14 +2203,14 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         ]
       },
       {
-        "name": "Quad Zygoma Total Reconstruction",
+        "name": "QUAD ZYGOMA TOTAL RECONSTRUCTION",
         "brand": "4 Zygomatic Implants (For 100% Maxillary Bone Loss)",
         "duration": "5-7 Days in Istanbul (2 Visits Total)",
         "img": "/packages/dxl.webp",
         "price": {
+          "USD": "$9,800",
           "EUR": "€8,900",
-          "GBP": "£7,700",
-          "USD": "$9,800"
+          "GBP": "£7,700"
         },
         "included": [
           "4x Extra-long Zygomatic Implants (Bilateral Cheekbone Anchors)",
@@ -1577,90 +2222,6 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
           "7 Nights 5-Star Luxury Hotel Partner Accommodation",
           "VIP Private Mercedes Transfers throughout entire stay",
           "Lifetime Global Manufacturer Guarantee & Medical Passport"
-        ]
-      },
-      {
-        "name": "All-on-6 Package – Straumann Swiss",
-        "brand": "Straumann Group (Swiss Roxolid SLActive)",
-        "duration": "3+7 Working Days (2 Visits)",
-        "img": "/packages/straumann.webp",
-        "price": {
-          "EUR": "€10,000",
-          "GBP": "£8,600",
-          "USD": "$11,600"
-        },
-        "included": [
-          "6x Straumann (Swiss Brand) Dental Implants",
-          "12-14x Fixed Temporary Teeth in 24 hours",
-          "12-14x Final Monolithic Zirconia Permanent Teeth",
-          "Surgical planning with 3D CBCT & local anesthesia/sedation",
-          "Follow-up checks and post-op medication pack",
-          "Airport, hotel & clinic VIP transfers",
-          "Hotel Stay with Bed & Breakfast included",
-          "Lifetime Global Straumann Guarantee Passport"
-        ]
-      },
-      {
-        "name": "All-on-6 Package – DXL German",
-        "brand": "DXL Dental Implants (German Precision)",
-        "duration": "3+7 Working Days (2 Visits)",
-        "img": "/packages/dxl.webp",
-        "price": {
-          "EUR": "€6,500",
-          "GBP": "£5,600",
-          "USD": "$7,500"
-        },
-        "included": [
-          "6x DXL (German Brand) Dental Implants",
-          "12-14x Fixed Temporary Teeth in 24 hours",
-          "12-14x Final Monolithic Zirconia Permanent Teeth",
-          "Surgical planning with 3D CBCT & local anesthesia",
-          "Follow-up checks during stay & sterile pack",
-          "Airport-hotel-clinic VIP transfers",
-          "Hotel Stay with Bed & Breakfast included",
-          "Lifetime International Manufacturer Warranty"
-        ]
-      },
-      {
-        "name": "All-on-4 Package – Straumann Swiss",
-        "brand": "Straumann Group (Swiss Roxolid Implants)",
-        "duration": "3+7 Working Days (2 Visits)",
-        "img": "/packages/straumann.webp",
-        "price": {
-          "EUR": "€8,000",
-          "GBP": "£6,900",
-          "USD": "$9,300"
-        },
-        "included": [
-          "4x Straumann (Swiss Brand) Dental Implants",
-          "12x Fixed Temporary Teeth in 24 hours",
-          "12x Final Monolithic Zirconia Permanent Teeth",
-          "Surgical planning with 3D CBCT & local anesthesia",
-          "Follow-up checks during stay & medications",
-          "Airport-hotel-clinic VIP transfers",
-          "Hotel Stay with Bed & Breakfast included",
-          "Lifetime Global Straumann Warranty Passport"
-        ]
-      },
-      {
-        "name": "All-on-4 Package – NucleOSS",
-        "brand": "NucleOSS Dental Implants (Certified Turkish Brand)",
-        "duration": "3+7 Working Days (2 Visits)",
-        "img": "/packages/nucleoss.webp",
-        "price": {
-          "EUR": "€4,900",
-          "GBP": "£4,200",
-          "USD": "$5,700"
-        },
-        "included": [
-          "4x NucleOSS Dental Implants with SLA surface",
-          "12x Fixed Temporary Teeth in 24 hours",
-          "12x Final Monolithic Zirconia Permanent Teeth",
-          "Surgical planning with 3D CBCT & local anesthesia",
-          "Follow-up checks and post-op medication pack",
-          "Airport-hotel-clinic VIP transfers",
-          "Hotel Stay with Bed & Breakfast included",
-          "Lifetime International Manufacturer Warranty"
         ]
       }
     ],
@@ -1785,6 +2346,11 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "introP3And": ", or ",
     "introP3LinkSinus": "Sinus Lifting & Bone Grafting",
     "introP3Tail": " solutions in Istanbul.",
+    "costIntroTitle1": "Koszt implantów jarzmowych Zygoma w Turcji:",
+    "costIntroTitle2": "Dostępne leczenie najwyższej jakości w Master Smile Studio, Stambuł",
+    "costIntroP1": "Głównym powodem popularności Turcji w zabiegach Zygoma są koszty niższe nawet o 70% w porównaniu do Europy Zachodniej.",
+    "costIntroP2": "Koszt pojedynczego implantu jarzmowego w Turcji w 2026 r. wynosi od 2 350 € do 4 500 $.",
+    "costIntroP3": "W Master Smile Studio koszt implantu jarzmowego wynosi 2 350 EUR / 2 770 USD / 2 050 GBP z pełnym pakietem diagnostycznym.",
     "candidacyTitle": "Are You a Candidate for Zygomatic & Pterygoid Implants?",
     "candidacySubtitle": "If you have been told by other dentists that you \"have no bone left\" for regular implants, zygomatic surgery is your definitive answer.",
     "candidacyPoints": [
@@ -2063,23 +2629,287 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       }
     ],
     "packagesTitle": "Pakiety Implantów Zygoma i Przelicznik Walut",
-    "packagesSubtitle": "All-inclusive packages per jaw featuring certified Nobel Biocare, Straumann, and specialized Zygomatic & All-on systems.",
+    "packagesSubtitle": "All-inclusive packages per jaw featuring certified Straumann, Nobel Biocare, NucleOSS, DXL, Megagen, Neodent, and Hiossen.",
     "durationLabel": "Treatment Duration:",
-    "includedLabel": "Package Inclusions:",
-    "pricePerArchLabel": "Price per Arch (All-Inclusive):",
-    "getQuoteBtn": "Get Your Free Quote",
+    "includedLabel": "What’s Included:",
+    "pricePerArchLabel": "Package Price (Per Arch / One Jaw):",
+    "getQuoteBtn": "Get Personalized Quote Now",
     "mostPopularBadge": "Most Popular Choice",
     "packages": [
       {
-        "name": "Hybrid Zygomatic Package",
-        "brand": "Nobel Biocare / Straumann (2 Zygoma + 2-4 Anterior Implants)",
-        "duration": "5-7 Days in Istanbul (2 Visits Total)",
+        "name": "ALL-ON-6 IMPLANT PACKAGE – NUCLEOSS",
+        "brand": "NucleOSS (Turkish Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/nucleoss.webp",
+        "price": {
+          "USD": "$6,400",
+          "EUR": "€5,500",
+          "GBP": "£4,700"
+        },
+        "included": [
+          "6x NucleOSS (Turkish Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (CAD/CAM)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & sterile consumables",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Full Laboratory Work & Medical Passport"
+        ]
+      },
+      {
+        "name": "ALL-ON-6 IMPLANT PACKAGE – DXL GERMAN",
+        "brand": "DXL (German Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/dxl.webp",
+        "price": {
+          "USD": "$7,500",
+          "EUR": "€6,500",
+          "GBP": "£5,600"
+        },
+        "included": [
+          "6x DXL (German Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (CAD/CAM)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & surgical medications",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Laboratory Work & Lifetime Warranty"
+        ]
+      },
+      {
+        "name": "ALL-ON-6 IMPLANT PACKAGE – STRAUMANN",
+        "brand": "Straumann (Swiss Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/straumann.webp",
         "popular": true,
         "price": {
+          "USD": "$11,600",
+          "EUR": "€10,000",
+          "GBP": "£8,600"
+        },
+        "included": [
+          "6x Straumann (Swiss Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (Monolithic Zirconia)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & sedation support",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Lifetime Global Straumann Guarantee Passport"
+        ]
+      },
+      {
+        "name": "ALL-ON-6 IMPLANT PACKAGE – MEGAGEN",
+        "brand": "Megagen (Korean Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/megagen.webp",
+        "price": {
+          "USD": "$8,000",
+          "EUR": "€7,000",
+          "GBP": "£6,000"
+        },
+        "included": [
+          "6x Megagen (Korean Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (CAD/CAM)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & medication pack",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Laboratory Work & Warranty Passport"
+        ]
+      },
+      {
+        "name": "ALL-ON-6 IMPLANT PACKAGE – NEODENT",
+        "brand": "Neodent (Swiss / Straumann Group) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/neodent.webp",
+        "price": {
+          "USD": "$8,000",
+          "EUR": "€7,000",
+          "GBP": "£6,000"
+        },
+        "included": [
+          "6x Neodent (Swiss Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (CAD/CAM)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & post-op pack",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Laboratory Work & Lifetime Passport"
+        ]
+      },
+      {
+        "name": "ALL-ON-6 IMPLANT PACKAGE – HIOSSEN",
+        "brand": "Hiossen (American Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/hiossen.webp",
+        "price": {
+          "USD": "$7,700",
+          "EUR": "€6,750",
+          "GBP": "£5,780"
+        },
+        "included": [
+          "6x Hiossen (American Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (CAD/CAM)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & medications",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Laboratory Work & Medical Passport"
+        ]
+      },
+      {
+        "name": "ALL-ON-4 IMPLANT PACKAGE – NUCLEOSS",
+        "brand": "NucleOSS (Turkish Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/nucleoss.webp",
+        "price": {
+          "USD": "$5,700",
+          "EUR": "€4,900",
+          "GBP": "£4,200"
+        },
+        "included": [
+          "4x NucleOSS (Turkish Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (CAD/CAM)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & sterile packs",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Laboratory Work & Warranty Certificate"
+        ]
+      },
+      {
+        "name": "ALL-ON-4 IMPLANT PACKAGE – DXL GERMAN",
+        "brand": "DXL (German Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/dxl.webp",
+        "price": {
+          "USD": "$6,400",
+          "EUR": "€5,500",
+          "GBP": "£4,750"
+        },
+        "included": [
+          "4x DXL (German Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (CAD/CAM)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & medications",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Laboratory Work & Lifetime Warranty"
+        ]
+      },
+      {
+        "name": "ALL-ON-4 IMPLANT PACKAGE – STRAUMANN",
+        "brand": "Straumann (Swiss Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/straumann.webp",
+        "price": {
+          "USD": "$9,300",
+          "EUR": "€8,000",
+          "GBP": "£6,900"
+        },
+        "included": [
+          "4x Straumann (Swiss Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (Monolithic Zirconia)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & sedation support",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Lifetime Global Straumann Guarantee"
+        ]
+      },
+      {
+        "name": "ALL-ON-4 IMPLANT PACKAGE – MEGAGEN",
+        "brand": "Megagen (Korean Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/megagen.webp",
+        "price": {
+          "USD": "$6,900",
+          "EUR": "€6,000",
+          "GBP": "£5,100"
+        },
+        "included": [
+          "4x Megagen (Korean Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (CAD/CAM)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & post-op pack",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Laboratory Work & Warranty Passport"
+        ]
+      },
+      {
+        "name": "ALL-ON-4 IMPLANT PACKAGE – NEODENT",
+        "brand": "Neodent (Brazilian Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/neodent.webp",
+        "price": {
+          "USD": "$6,900",
+          "EUR": "€6,000",
+          "GBP": "£5,100"
+        },
+        "included": [
+          "4x Neodent (Brazilian Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (CAD/CAM)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & sterile consumables",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Laboratory Work & Lifetime Passport"
+        ]
+      },
+      {
+        "name": "ALL-ON-4 IMPLANT PACKAGE – HIOSSEN",
+        "brand": "Hiossen (American Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/hiossen.webp",
+        "price": {
+          "USD": "$6,600",
+          "EUR": "€5,750",
+          "GBP": "£4,900"
+        },
+        "included": [
+          "4x Hiossen (American Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (CAD/CAM)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & medication package",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Laboratory Work & Medical Passport"
+        ]
+      },
+      {
+        "name": "HYBRID ZYGOMATIC PACKAGE",
+        "brand": "Nobel Biocare / Straumann (2 Zygoma + 2-4 Anterior Implants)",
+        "duration": "5-7 Days in Istanbul (2 Visits Total)",
+        "img": "/packages/straumann.webp",
+        "price": {
+          "USD": "$7,600",
           "EUR": "€6,900",
-          "GBP": "£5,950",
-          "USD": "$7,600"
+          "GBP": "£5,950"
         },
         "included": [
           "2x Extra-long Zygomatic Implants (NobelZygoma / Southern)",
@@ -2094,14 +2924,14 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         ]
       },
       {
-        "name": "Quad Zygoma Total Reconstruction",
+        "name": "QUAD ZYGOMA TOTAL RECONSTRUCTION",
         "brand": "4 Zygomatic Implants (For 100% Maxillary Bone Loss)",
         "duration": "5-7 Days in Istanbul (2 Visits Total)",
         "img": "/packages/dxl.webp",
         "price": {
+          "USD": "$9,800",
           "EUR": "€8,900",
-          "GBP": "£7,700",
-          "USD": "$9,800"
+          "GBP": "£7,700"
         },
         "included": [
           "4x Extra-long Zygomatic Implants (Bilateral Cheekbone Anchors)",
@@ -2113,90 +2943,6 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
           "7 Nights 5-Star Luxury Hotel Partner Accommodation",
           "VIP Private Mercedes Transfers throughout entire stay",
           "Lifetime Global Manufacturer Guarantee & Medical Passport"
-        ]
-      },
-      {
-        "name": "All-on-6 Package – Straumann Swiss",
-        "brand": "Straumann Group (Swiss Roxolid SLActive)",
-        "duration": "3+7 Working Days (2 Visits)",
-        "img": "/packages/straumann.webp",
-        "price": {
-          "EUR": "€10,000",
-          "GBP": "£8,600",
-          "USD": "$11,600"
-        },
-        "included": [
-          "6x Straumann (Swiss Brand) Dental Implants",
-          "12-14x Fixed Temporary Teeth in 24 hours",
-          "12-14x Final Monolithic Zirconia Permanent Teeth",
-          "Surgical planning with 3D CBCT & local anesthesia/sedation",
-          "Follow-up checks and post-op medication pack",
-          "Airport, hotel & clinic VIP transfers",
-          "Hotel Stay with Bed & Breakfast included",
-          "Lifetime Global Straumann Guarantee Passport"
-        ]
-      },
-      {
-        "name": "All-on-6 Package – DXL German",
-        "brand": "DXL Dental Implants (German Precision)",
-        "duration": "3+7 Working Days (2 Visits)",
-        "img": "/packages/dxl.webp",
-        "price": {
-          "EUR": "€6,500",
-          "GBP": "£5,600",
-          "USD": "$7,500"
-        },
-        "included": [
-          "6x DXL (German Brand) Dental Implants",
-          "12-14x Fixed Temporary Teeth in 24 hours",
-          "12-14x Final Monolithic Zirconia Permanent Teeth",
-          "Surgical planning with 3D CBCT & local anesthesia",
-          "Follow-up checks during stay & sterile pack",
-          "Airport-hotel-clinic VIP transfers",
-          "Hotel Stay with Bed & Breakfast included",
-          "Lifetime International Manufacturer Warranty"
-        ]
-      },
-      {
-        "name": "All-on-4 Package – Straumann Swiss",
-        "brand": "Straumann Group (Swiss Roxolid Implants)",
-        "duration": "3+7 Working Days (2 Visits)",
-        "img": "/packages/straumann.webp",
-        "price": {
-          "EUR": "€8,000",
-          "GBP": "£6,900",
-          "USD": "$9,300"
-        },
-        "included": [
-          "4x Straumann (Swiss Brand) Dental Implants",
-          "12x Fixed Temporary Teeth in 24 hours",
-          "12x Final Monolithic Zirconia Permanent Teeth",
-          "Surgical planning with 3D CBCT & local anesthesia",
-          "Follow-up checks during stay & medications",
-          "Airport-hotel-clinic VIP transfers",
-          "Hotel Stay with Bed & Breakfast included",
-          "Lifetime Global Straumann Warranty Passport"
-        ]
-      },
-      {
-        "name": "All-on-4 Package – NucleOSS",
-        "brand": "NucleOSS Dental Implants (Certified Turkish Brand)",
-        "duration": "3+7 Working Days (2 Visits)",
-        "img": "/packages/nucleoss.webp",
-        "price": {
-          "EUR": "€4,900",
-          "GBP": "£4,200",
-          "USD": "$5,700"
-        },
-        "included": [
-          "4x NucleOSS Dental Implants with SLA surface",
-          "12x Fixed Temporary Teeth in 24 hours",
-          "12x Final Monolithic Zirconia Permanent Teeth",
-          "Surgical planning with 3D CBCT & local anesthesia",
-          "Follow-up checks and post-op medication pack",
-          "Airport-hotel-clinic VIP transfers",
-          "Hotel Stay with Bed & Breakfast included",
-          "Lifetime International Manufacturer Warranty"
         ]
       }
     ],
@@ -2321,6 +3067,11 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "introP3And": ", or ",
     "introP3LinkSinus": "Sinus Lifting & Bone Grafting",
     "introP3Tail": " solutions in Istanbul.",
+    "costIntroTitle1": "Custo dos Implantes Zigomáticos na Turquia:",
+    "costIntroTitle2": "Tratamento de Alta Qualidade e Acessível no Master Smile Studio, Istambul",
+    "costIntroP1": "Um dos principais motivos pelos quais a Turquia é referência em implantes zigomáticos é o custo significativamente inferior com padrões hospitalares.",
+    "costIntroP2": "O custo de um implante zigomático na Turquia em 2026 varia entre 2.350 € e 4.500 $.",
+    "costIntroP3": "No Master Smile Studio o custo unitário é de 2.350 EUR / 2.770 USD / 2.050 GBP com planejamento 3D e bloco cirúrgico incluídos.",
     "candidacyTitle": "Are You a Candidate for Zygomatic & Pterygoid Implants?",
     "candidacySubtitle": "If you have been told by other dentists that you \"have no bone left\" for regular implants, zygomatic surgery is your definitive answer.",
     "candidacyPoints": [
@@ -2599,23 +3350,287 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       }
     ],
     "packagesTitle": "Pacotes Zigomáticos e Conversor de Moedas",
-    "packagesSubtitle": "All-inclusive packages per jaw featuring certified Nobel Biocare, Straumann, and specialized Zygomatic & All-on systems.",
+    "packagesSubtitle": "All-inclusive packages per jaw featuring certified Straumann, Nobel Biocare, NucleOSS, DXL, Megagen, Neodent, and Hiossen.",
     "durationLabel": "Treatment Duration:",
-    "includedLabel": "Package Inclusions:",
-    "pricePerArchLabel": "Price per Arch (All-Inclusive):",
-    "getQuoteBtn": "Get Your Free Quote",
+    "includedLabel": "What’s Included:",
+    "pricePerArchLabel": "Package Price (Per Arch / One Jaw):",
+    "getQuoteBtn": "Get Personalized Quote Now",
     "mostPopularBadge": "Most Popular Choice",
     "packages": [
       {
-        "name": "Hybrid Zygomatic Package",
-        "brand": "Nobel Biocare / Straumann (2 Zygoma + 2-4 Anterior Implants)",
-        "duration": "5-7 Days in Istanbul (2 Visits Total)",
+        "name": "ALL-ON-6 IMPLANT PACKAGE – NUCLEOSS",
+        "brand": "NucleOSS (Turkish Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/nucleoss.webp",
+        "price": {
+          "USD": "$6,400",
+          "EUR": "€5,500",
+          "GBP": "£4,700"
+        },
+        "included": [
+          "6x NucleOSS (Turkish Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (CAD/CAM)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & sterile consumables",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Full Laboratory Work & Medical Passport"
+        ]
+      },
+      {
+        "name": "ALL-ON-6 IMPLANT PACKAGE – DXL GERMAN",
+        "brand": "DXL (German Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/dxl.webp",
+        "price": {
+          "USD": "$7,500",
+          "EUR": "€6,500",
+          "GBP": "£5,600"
+        },
+        "included": [
+          "6x DXL (German Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (CAD/CAM)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & surgical medications",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Laboratory Work & Lifetime Warranty"
+        ]
+      },
+      {
+        "name": "ALL-ON-6 IMPLANT PACKAGE – STRAUMANN",
+        "brand": "Straumann (Swiss Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/straumann.webp",
         "popular": true,
         "price": {
+          "USD": "$11,600",
+          "EUR": "€10,000",
+          "GBP": "£8,600"
+        },
+        "included": [
+          "6x Straumann (Swiss Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (Monolithic Zirconia)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & sedation support",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Lifetime Global Straumann Guarantee Passport"
+        ]
+      },
+      {
+        "name": "ALL-ON-6 IMPLANT PACKAGE – MEGAGEN",
+        "brand": "Megagen (Korean Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/megagen.webp",
+        "price": {
+          "USD": "$8,000",
+          "EUR": "€7,000",
+          "GBP": "£6,000"
+        },
+        "included": [
+          "6x Megagen (Korean Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (CAD/CAM)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & medication pack",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Laboratory Work & Warranty Passport"
+        ]
+      },
+      {
+        "name": "ALL-ON-6 IMPLANT PACKAGE – NEODENT",
+        "brand": "Neodent (Swiss / Straumann Group) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/neodent.webp",
+        "price": {
+          "USD": "$8,000",
+          "EUR": "€7,000",
+          "GBP": "£6,000"
+        },
+        "included": [
+          "6x Neodent (Swiss Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (CAD/CAM)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & post-op pack",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Laboratory Work & Lifetime Passport"
+        ]
+      },
+      {
+        "name": "ALL-ON-6 IMPLANT PACKAGE – HIOSSEN",
+        "brand": "Hiossen (American Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/hiossen.webp",
+        "price": {
+          "USD": "$7,700",
+          "EUR": "€6,750",
+          "GBP": "£5,780"
+        },
+        "included": [
+          "6x Hiossen (American Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (CAD/CAM)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & medications",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Laboratory Work & Medical Passport"
+        ]
+      },
+      {
+        "name": "ALL-ON-4 IMPLANT PACKAGE – NUCLEOSS",
+        "brand": "NucleOSS (Turkish Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/nucleoss.webp",
+        "price": {
+          "USD": "$5,700",
+          "EUR": "€4,900",
+          "GBP": "£4,200"
+        },
+        "included": [
+          "4x NucleOSS (Turkish Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (CAD/CAM)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & sterile packs",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Laboratory Work & Warranty Certificate"
+        ]
+      },
+      {
+        "name": "ALL-ON-4 IMPLANT PACKAGE – DXL GERMAN",
+        "brand": "DXL (German Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/dxl.webp",
+        "price": {
+          "USD": "$6,400",
+          "EUR": "€5,500",
+          "GBP": "£4,750"
+        },
+        "included": [
+          "4x DXL (German Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (CAD/CAM)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & medications",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Laboratory Work & Lifetime Warranty"
+        ]
+      },
+      {
+        "name": "ALL-ON-4 IMPLANT PACKAGE – STRAUMANN",
+        "brand": "Straumann (Swiss Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/straumann.webp",
+        "price": {
+          "USD": "$9,300",
+          "EUR": "€8,000",
+          "GBP": "£6,900"
+        },
+        "included": [
+          "4x Straumann (Swiss Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (Monolithic Zirconia)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & sedation support",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Lifetime Global Straumann Guarantee"
+        ]
+      },
+      {
+        "name": "ALL-ON-4 IMPLANT PACKAGE – MEGAGEN",
+        "brand": "Megagen (Korean Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/megagen.webp",
+        "price": {
+          "USD": "$6,900",
+          "EUR": "€6,000",
+          "GBP": "£5,100"
+        },
+        "included": [
+          "4x Megagen (Korean Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (CAD/CAM)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & post-op pack",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Laboratory Work & Warranty Passport"
+        ]
+      },
+      {
+        "name": "ALL-ON-4 IMPLANT PACKAGE – NEODENT",
+        "brand": "Neodent (Brazilian Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/neodent.webp",
+        "price": {
+          "USD": "$6,900",
+          "EUR": "€6,000",
+          "GBP": "£5,100"
+        },
+        "included": [
+          "4x Neodent (Brazilian Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (CAD/CAM)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & sterile consumables",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Laboratory Work & Lifetime Passport"
+        ]
+      },
+      {
+        "name": "ALL-ON-4 IMPLANT PACKAGE – HIOSSEN",
+        "brand": "Hiossen (American Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/hiossen.webp",
+        "price": {
+          "USD": "$6,600",
+          "EUR": "€5,750",
+          "GBP": "£4,900"
+        },
+        "included": [
+          "4x Hiossen (American Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (CAD/CAM)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & medication package",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Laboratory Work & Medical Passport"
+        ]
+      },
+      {
+        "name": "HYBRID ZYGOMATIC PACKAGE",
+        "brand": "Nobel Biocare / Straumann (2 Zygoma + 2-4 Anterior Implants)",
+        "duration": "5-7 Days in Istanbul (2 Visits Total)",
+        "img": "/packages/straumann.webp",
+        "price": {
+          "USD": "$7,600",
           "EUR": "€6,900",
-          "GBP": "£5,950",
-          "USD": "$7,600"
+          "GBP": "£5,950"
         },
         "included": [
           "2x Extra-long Zygomatic Implants (NobelZygoma / Southern)",
@@ -2630,14 +3645,14 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         ]
       },
       {
-        "name": "Quad Zygoma Total Reconstruction",
+        "name": "QUAD ZYGOMA TOTAL RECONSTRUCTION",
         "brand": "4 Zygomatic Implants (For 100% Maxillary Bone Loss)",
         "duration": "5-7 Days in Istanbul (2 Visits Total)",
         "img": "/packages/dxl.webp",
         "price": {
+          "USD": "$9,800",
           "EUR": "€8,900",
-          "GBP": "£7,700",
-          "USD": "$9,800"
+          "GBP": "£7,700"
         },
         "included": [
           "4x Extra-long Zygomatic Implants (Bilateral Cheekbone Anchors)",
@@ -2649,90 +3664,6 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
           "7 Nights 5-Star Luxury Hotel Partner Accommodation",
           "VIP Private Mercedes Transfers throughout entire stay",
           "Lifetime Global Manufacturer Guarantee & Medical Passport"
-        ]
-      },
-      {
-        "name": "All-on-6 Package – Straumann Swiss",
-        "brand": "Straumann Group (Swiss Roxolid SLActive)",
-        "duration": "3+7 Working Days (2 Visits)",
-        "img": "/packages/straumann.webp",
-        "price": {
-          "EUR": "€10,000",
-          "GBP": "£8,600",
-          "USD": "$11,600"
-        },
-        "included": [
-          "6x Straumann (Swiss Brand) Dental Implants",
-          "12-14x Fixed Temporary Teeth in 24 hours",
-          "12-14x Final Monolithic Zirconia Permanent Teeth",
-          "Surgical planning with 3D CBCT & local anesthesia/sedation",
-          "Follow-up checks and post-op medication pack",
-          "Airport, hotel & clinic VIP transfers",
-          "Hotel Stay with Bed & Breakfast included",
-          "Lifetime Global Straumann Guarantee Passport"
-        ]
-      },
-      {
-        "name": "All-on-6 Package – DXL German",
-        "brand": "DXL Dental Implants (German Precision)",
-        "duration": "3+7 Working Days (2 Visits)",
-        "img": "/packages/dxl.webp",
-        "price": {
-          "EUR": "€6,500",
-          "GBP": "£5,600",
-          "USD": "$7,500"
-        },
-        "included": [
-          "6x DXL (German Brand) Dental Implants",
-          "12-14x Fixed Temporary Teeth in 24 hours",
-          "12-14x Final Monolithic Zirconia Permanent Teeth",
-          "Surgical planning with 3D CBCT & local anesthesia",
-          "Follow-up checks during stay & sterile pack",
-          "Airport-hotel-clinic VIP transfers",
-          "Hotel Stay with Bed & Breakfast included",
-          "Lifetime International Manufacturer Warranty"
-        ]
-      },
-      {
-        "name": "All-on-4 Package – Straumann Swiss",
-        "brand": "Straumann Group (Swiss Roxolid Implants)",
-        "duration": "3+7 Working Days (2 Visits)",
-        "img": "/packages/straumann.webp",
-        "price": {
-          "EUR": "€8,000",
-          "GBP": "£6,900",
-          "USD": "$9,300"
-        },
-        "included": [
-          "4x Straumann (Swiss Brand) Dental Implants",
-          "12x Fixed Temporary Teeth in 24 hours",
-          "12x Final Monolithic Zirconia Permanent Teeth",
-          "Surgical planning with 3D CBCT & local anesthesia",
-          "Follow-up checks during stay & medications",
-          "Airport-hotel-clinic VIP transfers",
-          "Hotel Stay with Bed & Breakfast included",
-          "Lifetime Global Straumann Warranty Passport"
-        ]
-      },
-      {
-        "name": "All-on-4 Package – NucleOSS",
-        "brand": "NucleOSS Dental Implants (Certified Turkish Brand)",
-        "duration": "3+7 Working Days (2 Visits)",
-        "img": "/packages/nucleoss.webp",
-        "price": {
-          "EUR": "€4,900",
-          "GBP": "£4,200",
-          "USD": "$5,700"
-        },
-        "included": [
-          "4x NucleOSS Dental Implants with SLA surface",
-          "12x Fixed Temporary Teeth in 24 hours",
-          "12x Final Monolithic Zirconia Permanent Teeth",
-          "Surgical planning with 3D CBCT & local anesthesia",
-          "Follow-up checks and post-op medication pack",
-          "Airport-hotel-clinic VIP transfers",
-          "Hotel Stay with Bed & Breakfast included",
-          "Lifetime International Manufacturer Warranty"
         ]
       }
     ],
@@ -2857,6 +3788,11 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "introP3And": ", or ",
     "introP3LinkSinus": "Sinus Lifting & Bone Grafting",
     "introP3Tail": " solutions in Istanbul.",
+    "costIntroTitle1": "Coste de los Implantes Cigomáticos en Turquía:",
+    "costIntroTitle2": "Tratamiento de Máxima Calidad en Master Smile Studio, Estambul",
+    "costIntroP1": "Una de las principales razones del éxito de Turquía en implantes cigomáticos es el ahorro de hasta un 70% respecto a otros países.",
+    "costIntroP2": "El coste de un implante cigomático en Turquía en 2026 oscila entre 2.350 € y 4.500 $.",
+    "costIntroP3": "En Master Smile Studio el precio por implante cigomático es de 2.350 EUR / 2.770 USD / 2.050 GBP con quirófano y diagnóstico 3D incluidos.",
     "candidacyTitle": "Are You a Candidate for Zygomatic & Pterygoid Implants?",
     "candidacySubtitle": "If you have been told by other dentists that you \"have no bone left\" for regular implants, zygomatic surgery is your definitive answer.",
     "candidacyPoints": [
@@ -2935,7 +3871,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       "whenZygomaticTitle": "When are Zygomatic Implants the Only Viable Solution?",
       "whenZygomaticText": "Zygomatic implants are the definitive gold standard when the upper jaw is completely hollowed out, previous bone grafts have failed, or the patient cannot tolerate 18 months without fixed teeth."
     },
-    "processTitle": "Protocolo de Precisión en 3 Fases para Implantes Cigomáticos",
+    "processTitle": "Protocolo de Precisão em 3 Fases para Implantes Cigomáticos",
     "processSubtitle": "Every zygomatic intervention at Master Smile Studio follows military-grade 3D CBCT computer guidance and hospital-grade surgical theater protocols.",
     "processCards": [
       {
@@ -3135,23 +4071,287 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       }
     ],
     "packagesTitle": "Paquetes Cigomáticos y Conversor de Divisas",
-    "packagesSubtitle": "All-inclusive packages per jaw featuring certified Nobel Biocare, Straumann, and specialized Zygomatic & All-on systems.",
+    "packagesSubtitle": "All-inclusive packages per jaw featuring certified Straumann, Nobel Biocare, NucleOSS, DXL, Megagen, Neodent, and Hiossen.",
     "durationLabel": "Treatment Duration:",
-    "includedLabel": "Package Inclusions:",
-    "pricePerArchLabel": "Price per Arch (All-Inclusive):",
-    "getQuoteBtn": "Get Your Free Quote",
+    "includedLabel": "What’s Included:",
+    "pricePerArchLabel": "Package Price (Per Arch / One Jaw):",
+    "getQuoteBtn": "Get Personalized Quote Now",
     "mostPopularBadge": "Most Popular Choice",
     "packages": [
       {
-        "name": "Hybrid Zygomatic Package",
-        "brand": "Nobel Biocare / Straumann (2 Zygoma + 2-4 Anterior Implants)",
-        "duration": "5-7 Days in Istanbul (2 Visits Total)",
+        "name": "ALL-ON-6 IMPLANT PACKAGE – NUCLEOSS",
+        "brand": "NucleOSS (Turkish Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/nucleoss.webp",
+        "price": {
+          "USD": "$6,400",
+          "EUR": "€5,500",
+          "GBP": "£4,700"
+        },
+        "included": [
+          "6x NucleOSS (Turkish Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (CAD/CAM)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & sterile consumables",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Full Laboratory Work & Medical Passport"
+        ]
+      },
+      {
+        "name": "ALL-ON-6 IMPLANT PACKAGE – DXL GERMAN",
+        "brand": "DXL (German Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/dxl.webp",
+        "price": {
+          "USD": "$7,500",
+          "EUR": "€6,500",
+          "GBP": "£5,600"
+        },
+        "included": [
+          "6x DXL (German Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (CAD/CAM)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & surgical medications",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Laboratory Work & Lifetime Warranty"
+        ]
+      },
+      {
+        "name": "ALL-ON-6 IMPLANT PACKAGE – STRAUMANN",
+        "brand": "Straumann (Swiss Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/straumann.webp",
         "popular": true,
         "price": {
+          "USD": "$11,600",
+          "EUR": "€10,000",
+          "GBP": "£8,600"
+        },
+        "included": [
+          "6x Straumann (Swiss Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (Monolithic Zirconia)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & sedation support",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Lifetime Global Straumann Guarantee Passport"
+        ]
+      },
+      {
+        "name": "ALL-ON-6 IMPLANT PACKAGE – MEGAGEN",
+        "brand": "Megagen (Korean Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/megagen.webp",
+        "price": {
+          "USD": "$8,000",
+          "EUR": "€7,000",
+          "GBP": "£6,000"
+        },
+        "included": [
+          "6x Megagen (Korean Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (CAD/CAM)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & medication pack",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Laboratory Work & Warranty Passport"
+        ]
+      },
+      {
+        "name": "ALL-ON-6 IMPLANT PACKAGE – NEODENT",
+        "brand": "Neodent (Swiss / Straumann Group) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/neodent.webp",
+        "price": {
+          "USD": "$8,000",
+          "EUR": "€7,000",
+          "GBP": "£6,000"
+        },
+        "included": [
+          "6x Neodent (Swiss Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (CAD/CAM)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & post-op pack",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Laboratory Work & Lifetime Passport"
+        ]
+      },
+      {
+        "name": "ALL-ON-6 IMPLANT PACKAGE – HIOSSEN",
+        "brand": "Hiossen (American Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/hiossen.webp",
+        "price": {
+          "USD": "$7,700",
+          "EUR": "€6,750",
+          "GBP": "£5,780"
+        },
+        "included": [
+          "6x Hiossen (American Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (CAD/CAM)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & medications",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Laboratory Work & Medical Passport"
+        ]
+      },
+      {
+        "name": "ALL-ON-4 IMPLANT PACKAGE – NUCLEOSS",
+        "brand": "NucleOSS (Turkish Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/nucleoss.webp",
+        "price": {
+          "USD": "$5,700",
+          "EUR": "€4,900",
+          "GBP": "£4,200"
+        },
+        "included": [
+          "4x NucleOSS (Turkish Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (CAD/CAM)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & sterile packs",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Laboratory Work & Warranty Certificate"
+        ]
+      },
+      {
+        "name": "ALL-ON-4 IMPLANT PACKAGE – DXL GERMAN",
+        "brand": "DXL (German Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/dxl.webp",
+        "price": {
+          "USD": "$6,400",
+          "EUR": "€5,500",
+          "GBP": "£4,750"
+        },
+        "included": [
+          "4x DXL (German Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (CAD/CAM)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & medications",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Laboratory Work & Lifetime Warranty"
+        ]
+      },
+      {
+        "name": "ALL-ON-4 IMPLANT PACKAGE – STRAUMANN",
+        "brand": "Straumann (Swiss Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/straumann.webp",
+        "price": {
+          "USD": "$9,300",
+          "EUR": "€8,000",
+          "GBP": "£6,900"
+        },
+        "included": [
+          "4x Straumann (Swiss Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (Monolithic Zirconia)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & sedation support",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Lifetime Global Straumann Guarantee"
+        ]
+      },
+      {
+        "name": "ALL-ON-4 IMPLANT PACKAGE – MEGAGEN",
+        "brand": "Megagen (Korean Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/megagen.webp",
+        "price": {
+          "USD": "$6,900",
+          "EUR": "€6,000",
+          "GBP": "£5,100"
+        },
+        "included": [
+          "4x Megagen (Korean Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (CAD/CAM)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & post-op pack",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Laboratory Work & Warranty Passport"
+        ]
+      },
+      {
+        "name": "ALL-ON-4 IMPLANT PACKAGE – NEODENT",
+        "brand": "Neodent (Brazilian Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/neodent.webp",
+        "price": {
+          "USD": "$6,900",
+          "EUR": "€6,000",
+          "GBP": "£5,100"
+        },
+        "included": [
+          "4x Neodent (Brazilian Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (CAD/CAM)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & sterile consumables",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Laboratory Work & Lifetime Passport"
+        ]
+      },
+      {
+        "name": "ALL-ON-4 IMPLANT PACKAGE – HIOSSEN",
+        "brand": "Hiossen (American Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/hiossen.webp",
+        "price": {
+          "USD": "$6,600",
+          "EUR": "€5,750",
+          "GBP": "£4,900"
+        },
+        "included": [
+          "4x Hiossen (American Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (CAD/CAM)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & medication package",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Laboratory Work & Medical Passport"
+        ]
+      },
+      {
+        "name": "HYBRID ZYGOMATIC PACKAGE",
+        "brand": "Nobel Biocare / Straumann (2 Zygoma + 2-4 Anterior Implants)",
+        "duration": "5-7 Days in Istanbul (2 Visits Total)",
+        "img": "/packages/straumann.webp",
+        "price": {
+          "USD": "$7,600",
           "EUR": "€6,900",
-          "GBP": "£5,950",
-          "USD": "$7,600"
+          "GBP": "£5,950"
         },
         "included": [
           "2x Extra-long Zygomatic Implants (NobelZygoma / Southern)",
@@ -3166,14 +4366,14 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         ]
       },
       {
-        "name": "Quad Zygoma Total Reconstruction",
+        "name": "QUAD ZYGOMA TOTAL RECONSTRUCTION",
         "brand": "4 Zygomatic Implants (For 100% Maxillary Bone Loss)",
         "duration": "5-7 Days in Istanbul (2 Visits Total)",
         "img": "/packages/dxl.webp",
         "price": {
+          "USD": "$9,800",
           "EUR": "€8,900",
-          "GBP": "£7,700",
-          "USD": "$9,800"
+          "GBP": "£7,700"
         },
         "included": [
           "4x Extra-long Zygomatic Implants (Bilateral Cheekbone Anchors)",
@@ -3185,90 +4385,6 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
           "7 Nights 5-Star Luxury Hotel Partner Accommodation",
           "VIP Private Mercedes Transfers throughout entire stay",
           "Lifetime Global Manufacturer Guarantee & Medical Passport"
-        ]
-      },
-      {
-        "name": "All-on-6 Package – Straumann Swiss",
-        "brand": "Straumann Group (Swiss Roxolid SLActive)",
-        "duration": "3+7 Working Days (2 Visits)",
-        "img": "/packages/straumann.webp",
-        "price": {
-          "EUR": "€10,000",
-          "GBP": "£8,600",
-          "USD": "$11,600"
-        },
-        "included": [
-          "6x Straumann (Swiss Brand) Dental Implants",
-          "12-14x Fixed Temporary Teeth in 24 hours",
-          "12-14x Final Monolithic Zirconia Permanent Teeth",
-          "Surgical planning with 3D CBCT & local anesthesia/sedation",
-          "Follow-up checks and post-op medication pack",
-          "Airport, hotel & clinic VIP transfers",
-          "Hotel Stay with Bed & Breakfast included",
-          "Lifetime Global Straumann Guarantee Passport"
-        ]
-      },
-      {
-        "name": "All-on-6 Package – DXL German",
-        "brand": "DXL Dental Implants (German Precision)",
-        "duration": "3+7 Working Days (2 Visits)",
-        "img": "/packages/dxl.webp",
-        "price": {
-          "EUR": "€6,500",
-          "GBP": "£5,600",
-          "USD": "$7,500"
-        },
-        "included": [
-          "6x DXL (German Brand) Dental Implants",
-          "12-14x Fixed Temporary Teeth in 24 hours",
-          "12-14x Final Monolithic Zirconia Permanent Teeth",
-          "Surgical planning with 3D CBCT & local anesthesia",
-          "Follow-up checks during stay & sterile pack",
-          "Airport-hotel-clinic VIP transfers",
-          "Hotel Stay with Bed & Breakfast included",
-          "Lifetime International Manufacturer Warranty"
-        ]
-      },
-      {
-        "name": "All-on-4 Package – Straumann Swiss",
-        "brand": "Straumann Group (Swiss Roxolid Implants)",
-        "duration": "3+7 Working Days (2 Visits)",
-        "img": "/packages/straumann.webp",
-        "price": {
-          "EUR": "€8,000",
-          "GBP": "£6,900",
-          "USD": "$9,300"
-        },
-        "included": [
-          "4x Straumann (Swiss Brand) Dental Implants",
-          "12x Fixed Temporary Teeth in 24 hours",
-          "12x Final Monolithic Zirconia Permanent Teeth",
-          "Surgical planning with 3D CBCT & local anesthesia",
-          "Follow-up checks during stay & medications",
-          "Airport-hotel-clinic VIP transfers",
-          "Hotel Stay with Bed & Breakfast included",
-          "Lifetime Global Straumann Warranty Passport"
-        ]
-      },
-      {
-        "name": "All-on-4 Package – NucleOSS",
-        "brand": "NucleOSS Dental Implants (Certified Turkish Brand)",
-        "duration": "3+7 Working Days (2 Visits)",
-        "img": "/packages/nucleoss.webp",
-        "price": {
-          "EUR": "€4,900",
-          "GBP": "£4,200",
-          "USD": "$5,700"
-        },
-        "included": [
-          "4x NucleOSS Dental Implants with SLA surface",
-          "12x Fixed Temporary Teeth in 24 hours",
-          "12x Final Monolithic Zirconia Permanent Teeth",
-          "Surgical planning with 3D CBCT & local anesthesia",
-          "Follow-up checks and post-op medication pack",
-          "Airport-hotel-clinic VIP transfers",
-          "Hotel Stay with Bed & Breakfast included",
-          "Lifetime International Manufacturer Warranty"
         ]
       }
     ],
@@ -3393,6 +4509,11 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "introP3And": ", or ",
     "introP3LinkSinus": "Sinus Lifting & Bone Grafting",
     "introP3Tail": " solutions in Istanbul.",
+    "costIntroTitle1": "Стоимость скуловых имплантов Zygoma в Турции:",
+    "costIntroTitle2": "Доступное лечение премиум-класса в Master Smile Studio, Стамбул",
+    "costIntroP1": "Главная причина популярности Турции в скуловой имплантации — доступные цены при высочайших госпитальных стандартах хирургии.",
+    "costIntroP2": "Стоимость одного скулового импланта в Турции в 2026 году составляет от 2 350 € до 4 500 $.",
+    "costIntroP3": "В Master Smile Studio цена одного скулового импланта составляет 2 350 EUR / 2 770 USD / 2 050 GBP включая 3D-планирование и операционный блок.",
     "candidacyTitle": "Are You a Candidate for Zygomatic & Pterygoid Implants?",
     "candidacySubtitle": "If you have been told by other dentists that you \"have no bone left\" for regular implants, zygomatic surgery is your definitive answer.",
     "candidacyPoints": [
@@ -3671,23 +4792,287 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       }
     ],
     "packagesTitle": "Пакеты Скуловой Имплантации и Калькулятор Валют",
-    "packagesSubtitle": "All-inclusive packages per jaw featuring certified Nobel Biocare, Straumann, and specialized Zygomatic & All-on systems.",
+    "packagesSubtitle": "All-inclusive packages per jaw featuring certified Straumann, Nobel Biocare, NucleOSS, DXL, Megagen, Neodent, and Hiossen.",
     "durationLabel": "Treatment Duration:",
-    "includedLabel": "Package Inclusions:",
-    "pricePerArchLabel": "Price per Arch (All-Inclusive):",
-    "getQuoteBtn": "Get Your Free Quote",
+    "includedLabel": "What’s Included:",
+    "pricePerArchLabel": "Package Price (Per Arch / One Jaw):",
+    "getQuoteBtn": "Get Personalized Quote Now",
     "mostPopularBadge": "Most Popular Choice",
     "packages": [
       {
-        "name": "Hybrid Zygomatic Package",
-        "brand": "Nobel Biocare / Straumann (2 Zygoma + 2-4 Anterior Implants)",
-        "duration": "5-7 Days in Istanbul (2 Visits Total)",
+        "name": "ALL-ON-6 IMPLANT PACKAGE – NUCLEOSS",
+        "brand": "NucleOSS (Turkish Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/nucleoss.webp",
+        "price": {
+          "USD": "$6,400",
+          "EUR": "€5,500",
+          "GBP": "£4,700"
+        },
+        "included": [
+          "6x NucleOSS (Turkish Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (CAD/CAM)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & sterile consumables",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Full Laboratory Work & Medical Passport"
+        ]
+      },
+      {
+        "name": "ALL-ON-6 IMPLANT PACKAGE – DXL GERMAN",
+        "brand": "DXL (German Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/dxl.webp",
+        "price": {
+          "USD": "$7,500",
+          "EUR": "€6,500",
+          "GBP": "£5,600"
+        },
+        "included": [
+          "6x DXL (German Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (CAD/CAM)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & surgical medications",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Laboratory Work & Lifetime Warranty"
+        ]
+      },
+      {
+        "name": "ALL-ON-6 IMPLANT PACKAGE – STRAUMANN",
+        "brand": "Straumann (Swiss Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/straumann.webp",
         "popular": true,
         "price": {
+          "USD": "$11,600",
+          "EUR": "€10,000",
+          "GBP": "£8,600"
+        },
+        "included": [
+          "6x Straumann (Swiss Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (Monolithic Zirconia)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & sedation support",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Lifetime Global Straumann Guarantee Passport"
+        ]
+      },
+      {
+        "name": "ALL-ON-6 IMPLANT PACKAGE – MEGAGEN",
+        "brand": "Megagen (Korean Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/megagen.webp",
+        "price": {
+          "USD": "$8,000",
+          "EUR": "€7,000",
+          "GBP": "£6,000"
+        },
+        "included": [
+          "6x Megagen (Korean Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (CAD/CAM)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & medication pack",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Laboratory Work & Warranty Passport"
+        ]
+      },
+      {
+        "name": "ALL-ON-6 IMPLANT PACKAGE – NEODENT",
+        "brand": "Neodent (Swiss / Straumann Group) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/neodent.webp",
+        "price": {
+          "USD": "$8,000",
+          "EUR": "€7,000",
+          "GBP": "£6,000"
+        },
+        "included": [
+          "6x Neodent (Swiss Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (CAD/CAM)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & post-op pack",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Laboratory Work & Lifetime Passport"
+        ]
+      },
+      {
+        "name": "ALL-ON-6 IMPLANT PACKAGE – HIOSSEN",
+        "brand": "Hiossen (American Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/hiossen.webp",
+        "price": {
+          "USD": "$7,700",
+          "EUR": "€6,750",
+          "GBP": "£5,780"
+        },
+        "included": [
+          "6x Hiossen (American Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (CAD/CAM)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & medications",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Laboratory Work & Medical Passport"
+        ]
+      },
+      {
+        "name": "ALL-ON-4 IMPLANT PACKAGE – NUCLEOSS",
+        "brand": "NucleOSS (Turkish Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/nucleoss.webp",
+        "price": {
+          "USD": "$5,700",
+          "EUR": "€4,900",
+          "GBP": "£4,200"
+        },
+        "included": [
+          "4x NucleOSS (Turkish Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (CAD/CAM)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & sterile packs",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Laboratory Work & Warranty Certificate"
+        ]
+      },
+      {
+        "name": "ALL-ON-4 IMPLANT PACKAGE – DXL GERMAN",
+        "brand": "DXL (German Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/dxl.webp",
+        "price": {
+          "USD": "$6,400",
+          "EUR": "€5,500",
+          "GBP": "£4,750"
+        },
+        "included": [
+          "4x DXL (German Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (CAD/CAM)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & medications",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Laboratory Work & Lifetime Warranty"
+        ]
+      },
+      {
+        "name": "ALL-ON-4 IMPLANT PACKAGE – STRAUMANN",
+        "brand": "Straumann (Swiss Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/straumann.webp",
+        "price": {
+          "USD": "$9,300",
+          "EUR": "€8,000",
+          "GBP": "£6,900"
+        },
+        "included": [
+          "4x Straumann (Swiss Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (Monolithic Zirconia)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & sedation support",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Lifetime Global Straumann Guarantee"
+        ]
+      },
+      {
+        "name": "ALL-ON-4 IMPLANT PACKAGE – MEGAGEN",
+        "brand": "Megagen (Korean Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/megagen.webp",
+        "price": {
+          "USD": "$6,900",
+          "EUR": "€6,000",
+          "GBP": "£5,100"
+        },
+        "included": [
+          "4x Megagen (Korean Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (CAD/CAM)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & post-op pack",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Laboratory Work & Warranty Passport"
+        ]
+      },
+      {
+        "name": "ALL-ON-4 IMPLANT PACKAGE – NEODENT",
+        "brand": "Neodent (Brazilian Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/neodent.webp",
+        "price": {
+          "USD": "$6,900",
+          "EUR": "€6,000",
+          "GBP": "£5,100"
+        },
+        "included": [
+          "4x Neodent (Brazilian Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (CAD/CAM)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & sterile consumables",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Laboratory Work & Lifetime Passport"
+        ]
+      },
+      {
+        "name": "ALL-ON-4 IMPLANT PACKAGE – HIOSSEN",
+        "brand": "Hiossen (American Brand) Dental Implants",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/hiossen.webp",
+        "price": {
+          "USD": "$6,600",
+          "EUR": "€5,750",
+          "GBP": "£4,900"
+        },
+        "included": [
+          "4x Hiossen (American Brand) Dental Implants",
+          "12x Fixed Temporary Teeth in 24 hours",
+          "12x Final Permanent Teeth (CAD/CAM)",
+          "Surgical planning (with 3D CBCT)",
+          "Local anesthesia & medication package",
+          "Follow-up checks during stay",
+          "Airport-hotel-clinic VIP transfers",
+          "Hotel Stay with Bed & Breakfast included",
+          "Laboratory Work & Medical Passport"
+        ]
+      },
+      {
+        "name": "HYBRID ZYGOMATIC PACKAGE",
+        "brand": "Nobel Biocare / Straumann (2 Zygoma + 2-4 Anterior Implants)",
+        "duration": "5-7 Days in Istanbul (2 Visits Total)",
+        "img": "/packages/straumann.webp",
+        "price": {
+          "USD": "$7,600",
           "EUR": "€6,900",
-          "GBP": "£5,950",
-          "USD": "$7,600"
+          "GBP": "£5,950"
         },
         "included": [
           "2x Extra-long Zygomatic Implants (NobelZygoma / Southern)",
@@ -3702,14 +5087,14 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         ]
       },
       {
-        "name": "Quad Zygoma Total Reconstruction",
+        "name": "QUAD ZYGOMA TOTAL RECONSTRUCTION",
         "brand": "4 Zygomatic Implants (For 100% Maxillary Bone Loss)",
         "duration": "5-7 Days in Istanbul (2 Visits Total)",
         "img": "/packages/dxl.webp",
         "price": {
+          "USD": "$9,800",
           "EUR": "€8,900",
-          "GBP": "£7,700",
-          "USD": "$9,800"
+          "GBP": "£7,700"
         },
         "included": [
           "4x Extra-long Zygomatic Implants (Bilateral Cheekbone Anchors)",
@@ -3721,90 +5106,6 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
           "7 Nights 5-Star Luxury Hotel Partner Accommodation",
           "VIP Private Mercedes Transfers throughout entire stay",
           "Lifetime Global Manufacturer Guarantee & Medical Passport"
-        ]
-      },
-      {
-        "name": "All-on-6 Package – Straumann Swiss",
-        "brand": "Straumann Group (Swiss Roxolid SLActive)",
-        "duration": "3+7 Working Days (2 Visits)",
-        "img": "/packages/straumann.webp",
-        "price": {
-          "EUR": "€10,000",
-          "GBP": "£8,600",
-          "USD": "$11,600"
-        },
-        "included": [
-          "6x Straumann (Swiss Brand) Dental Implants",
-          "12-14x Fixed Temporary Teeth in 24 hours",
-          "12-14x Final Monolithic Zirconia Permanent Teeth",
-          "Surgical planning with 3D CBCT & local anesthesia/sedation",
-          "Follow-up checks and post-op medication pack",
-          "Airport, hotel & clinic VIP transfers",
-          "Hotel Stay with Bed & Breakfast included",
-          "Lifetime Global Straumann Guarantee Passport"
-        ]
-      },
-      {
-        "name": "All-on-6 Package – DXL German",
-        "brand": "DXL Dental Implants (German Precision)",
-        "duration": "3+7 Working Days (2 Visits)",
-        "img": "/packages/dxl.webp",
-        "price": {
-          "EUR": "€6,500",
-          "GBP": "£5,600",
-          "USD": "$7,500"
-        },
-        "included": [
-          "6x DXL (German Brand) Dental Implants",
-          "12-14x Fixed Temporary Teeth in 24 hours",
-          "12-14x Final Monolithic Zirconia Permanent Teeth",
-          "Surgical planning with 3D CBCT & local anesthesia",
-          "Follow-up checks during stay & sterile pack",
-          "Airport-hotel-clinic VIP transfers",
-          "Hotel Stay with Bed & Breakfast included",
-          "Lifetime International Manufacturer Warranty"
-        ]
-      },
-      {
-        "name": "All-on-4 Package – Straumann Swiss",
-        "brand": "Straumann Group (Swiss Roxolid Implants)",
-        "duration": "3+7 Working Days (2 Visits)",
-        "img": "/packages/straumann.webp",
-        "price": {
-          "EUR": "€8,000",
-          "GBP": "£6,900",
-          "USD": "$9,300"
-        },
-        "included": [
-          "4x Straumann (Swiss Brand) Dental Implants",
-          "12x Fixed Temporary Teeth in 24 hours",
-          "12x Final Monolithic Zirconia Permanent Teeth",
-          "Surgical planning with 3D CBCT & local anesthesia",
-          "Follow-up checks during stay & medications",
-          "Airport-hotel-clinic VIP transfers",
-          "Hotel Stay with Bed & Breakfast included",
-          "Lifetime Global Straumann Warranty Passport"
-        ]
-      },
-      {
-        "name": "All-on-4 Package – NucleOSS",
-        "brand": "NucleOSS Dental Implants (Certified Turkish Brand)",
-        "duration": "3+7 Working Days (2 Visits)",
-        "img": "/packages/nucleoss.webp",
-        "price": {
-          "EUR": "€4,900",
-          "GBP": "£4,200",
-          "USD": "$5,700"
-        },
-        "included": [
-          "4x NucleOSS Dental Implants with SLA surface",
-          "12x Fixed Temporary Teeth in 24 hours",
-          "12x Final Monolithic Zirconia Permanent Teeth",
-          "Surgical planning with 3D CBCT & local anesthesia",
-          "Follow-up checks and post-op medication pack",
-          "Airport-hotel-clinic VIP transfers",
-          "Hotel Stay with Bed & Breakfast included",
-          "Lifetime International Manufacturer Warranty"
         ]
       }
     ],
@@ -4002,6 +5303,132 @@ export default function ZygomaticImplantDetailView() {
       {/* 2. FIND THE RIGHT TREATMENT FOR YOU (SECT77 ACCORDION) */}
       <TreatmentRightTreatmentAccordion />
 
+      {/* 2.5 COST OF ZYGOMATIC IMPLANTS IN TURKEY & SECOND VIDEO + FULL PACKAGE CATALOG */}
+      <section aria-labelledby="zygoma-cost-intro-heading" className={styles.introSection} style={{ paddingTop: '2.5rem' }}>
+        <div className={styles.container}>
+          <h2 id="zygoma-cost-intro-heading" className={styles.introHeading}>
+            {d.costIntroTitle1}
+          </h2>
+          <h3 className={styles.introHeading} style={{ fontSize: 'clamp(1.4rem, 2.3vw, 1.85rem)', color: '#D58936', marginBottom: '1.25rem' }}>
+            {d.costIntroTitle2}
+          </h3>
+
+          <p className={styles.textP}>{d.costIntroP1}</p>
+          <p className={styles.textP}>{d.costIntroP2}</p>
+          <p className={styles.textP} style={{ fontWeight: 600, color: '#0c1b4d' }}>
+            {d.costIntroP3}
+          </p>
+
+          {/* Second Clinical Video: K4Xpx7JMyr8 */}
+          <div className={styles.mainVideoWrap}>
+            <iframe
+              src="https://www.youtube.com/embed/K4Xpx7JMyr8?t=1"
+              title="Zygomatic and Cheekbone Dental Implants Cost and Procedure in Istanbul"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* 2.6 FULL-ARCH & ZYGOMATIC PACKAGES CATALOG WITH DYNAMIC CURRENCY CALCULATOR */}
+      <section aria-labelledby="zygoma-packages-heading" className={styles.packagesSection} style={{ borderTop: 'none' }}>
+        <div className={styles.container}>
+          <div className={styles.packagesHeader}>
+            <h2 id="zygoma-packages-heading" className={styles.packagesTitle}>
+              {d.packagesTitle}
+            </h2>
+            <p className={styles.packagesSubtitle}>{d.packagesSubtitle}</p>
+          </div>
+
+          {/* Interactive Currency Switcher */}
+          <div className={styles.currencyBar} role="group" aria-label="Select Currency">
+            <span className={styles.currencyLabel}>Currency:</span>
+            <button
+              type="button"
+              className={`${styles.currencyBtn} ${currency === 'EUR' ? styles.currencyBtnActive : ''}`}
+              onClick={() => setCurrency('EUR')}
+            >
+              EUR (€)
+            </button>
+            <button
+              type="button"
+              className={`${styles.currencyBtn} ${currency === 'GBP' ? styles.currencyBtnActive : ''}`}
+              onClick={() => setCurrency('GBP')}
+            >
+              GBP (£)
+            </button>
+            <button
+              type="button"
+              className={`${styles.currencyBtn} ${currency === 'USD' ? styles.currencyBtnActive : ''}`}
+              onClick={() => setCurrency('USD')}
+            >
+              USD ($)
+            </button>
+          </div>
+
+          {/* Real Implant Brand Package Cards */}
+          <div className={styles.pkgGrid}>
+            {d.packages.map((pkg, pIdx) => (
+              <div
+                key={pIdx}
+                className={`${styles.pkgCard} ${pkg.popular ? styles.pkgCardPopular : ''}`}
+              >
+                {pkg.popular && (
+                  <span className={styles.popularBadge}>{d.mostPopularBadge}</span>
+                )}
+
+                <div>
+                  <h3 className={styles.pkgName}>{pkg.name}</h3>
+                  <span className={styles.pkgBrand}>{pkg.brand}</span>
+
+                  <div className={styles.pkgImageWrap}>
+                    <img
+                      src={pkg.img}
+                      alt={pkg.name}
+                      className={styles.pkgImage}
+                      loading="lazy"
+                    />
+                  </div>
+
+                  <div className={styles.pkgDurationRow}>
+                    <span>{d.durationLabel}</span>
+                    <span>{pkg.duration}</span>
+                  </div>
+
+                  <strong className={styles.pkgListTitle}>{d.includedLabel}</strong>
+
+                  <ul className={styles.pkgList}>
+                    {pkg.included.map((inc, iIdx) => (
+                      <li key={iIdx} className={styles.pkgListItem}>
+                        <span className={styles.pkgCheck}>✓</span>
+                        <span>{inc}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div className={styles.pkgFooter}>
+                  <div className={styles.pkgPriceRow}>
+                    <span className={styles.pkgPriceLabel}>{d.pricePerArchLabel}</span>
+                    <strong className={styles.pkgPriceValue}>
+                      {pkg.price[currency]}
+                    </strong>
+                  </div>
+
+                  <a
+                    href="#js_target1"
+                    className={`${styles.pkgCtaBtn} ${pkg.popular ? styles.pkgCtaBtnPopular : ''}`}
+                  >
+                    <span>{d.getQuoteBtn}</span>
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* 3. OBJECTIVE COMPARISON: QUAD ZYGOMA vs HYBRID ZYGOMA vs COMPLEX SINUS GRAFTING */}
       <section aria-labelledby="zygoma-compare-heading" className={styles.compareSection}>
         <div className={styles.container}>
@@ -4189,105 +5616,7 @@ export default function ZygomaticImplantDetailView() {
         </div>
       </section>
 
-      {/* 6. TRANSPARENT PACKAGES & DYNAMIC CURRENCY SWITCHER */}
-      <section aria-labelledby="zygoma-packages-heading" className={styles.packagesSection}>
-        <div className={styles.container}>
-          <div className={styles.packagesHeader}>
-            <h2 id="zygoma-packages-heading" className={styles.packagesTitle}>
-              {d.packagesTitle}
-            </h2>
-            <p className={styles.packagesSubtitle}>{d.packagesSubtitle}</p>
-          </div>
-
-          {/* Interactive Currency Switcher */}
-          <div className={styles.currencyBar} role="group" aria-label="Select Currency">
-            <span className={styles.currencyLabel}>Currency:</span>
-            <button
-              type="button"
-              className={`${styles.currencyBtn} ${currency === 'EUR' ? styles.currencyBtnActive : ''}`}
-              onClick={() => setCurrency('EUR')}
-            >
-              EUR (€)
-            </button>
-            <button
-              type="button"
-              className={`${styles.currencyBtn} ${currency === 'GBP' ? styles.currencyBtnActive : ''}`}
-              onClick={() => setCurrency('GBP')}
-            >
-              GBP (£)
-            </button>
-            <button
-              type="button"
-              className={`${styles.currencyBtn} ${currency === 'USD' ? styles.currencyBtnActive : ''}`}
-              onClick={() => setCurrency('USD')}
-            >
-              USD ($)
-            </button>
-          </div>
-
-          {/* 6 Real Implant Brand Package Cards */}
-          <div className={styles.pkgGrid}>
-            {d.packages.map((pkg, pIdx) => (
-              <div
-                key={pIdx}
-                className={`${styles.pkgCard} ${pkg.popular ? styles.pkgCardPopular : ''}`}
-              >
-                {pkg.popular && (
-                  <span className={styles.popularBadge}>{d.mostPopularBadge}</span>
-                )}
-
-                <div>
-                  <h3 className={styles.pkgName}>{pkg.name}</h3>
-                  <span className={styles.pkgBrand}>{pkg.brand}</span>
-
-                  <div className={styles.pkgImageWrap}>
-                    <img
-                      src={pkg.img}
-                      alt={pkg.name}
-                      className={styles.pkgImage}
-                      loading="lazy"
-                    />
-                  </div>
-
-                  <div className={styles.pkgDurationRow}>
-                    <span>{d.durationLabel}</span>
-                    <span>{pkg.duration}</span>
-                  </div>
-
-                  <strong className={styles.pkgListTitle}>{d.includedLabel}</strong>
-
-                  <ul className={styles.pkgList}>
-                    {pkg.included.map((inc, iIdx) => (
-                      <li key={iIdx} className={styles.pkgListItem}>
-                        <span className={styles.pkgCheck}>✓</span>
-                        <span>{inc}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                <div className={styles.pkgFooter}>
-                  <div className={styles.pkgPriceRow}>
-                    <span className={styles.pkgPriceLabel}>{d.pricePerArchLabel}</span>
-                    <strong className={styles.pkgPriceValue}>
-                      {pkg.price[currency]}
-                    </strong>
-                  </div>
-
-                  <a
-                    href="#js_target1"
-                    className={`${styles.pkgCtaBtn} ${pkg.popular ? styles.pkgCtaBtnPopular : ''}`}
-                  >
-                    <span>{d.getQuoteBtn}</span>
-                  </a>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* 7. INTERNATIONAL COST COMPARISON SECTION (UK / US vs ISTANBUL) */}
+      {/* 6. INTERNATIONAL COST COMPARISON SECTION (UK / US vs ISTANBUL) */}
       <section aria-labelledby="zygoma-cost-heading" className={styles.costSection}>
         <div className={styles.container}>
           <div className={styles.costHeader}>
@@ -4328,31 +5657,31 @@ export default function ZygomaticImplantDetailView() {
         </div>
       </section>
 
-      {/* 8. REUSABLE: SERVICES INCLUDED */}
+      {/* 7. REUSABLE: SERVICES INCLUDED */}
       <TreatmentServicesIncludedSection />
 
-      {/* 9. REUSABLE: CLINIC TOUR */}
+      {/* 8. REUSABLE: CLINIC TOUR */}
       <TreatmentClinicTourSection placeholderNum="ZYG-TOUR" />
 
-      {/* 10. REUSABLE: FOUNDING SURGEONS */}
+      {/* 9. REUSABLE: FOUNDING SURGEONS */}
       <TreatmentDoctorsSection />
 
-      {/* 11. BEFORE & AFTER TRANSFORMATIONS GALLERY */}
+      {/* 10. BEFORE & AFTER TRANSFORMATIONS GALLERY */}
       <TreatmentBeforeAfterSliderSection />
 
-      {/* 12. REVIEWS & TRUSTPILOT / GOOGLE 5-STAR */}
+      {/* 11. REVIEWS & TRUSTPILOT / GOOGLE 5-STAR */}
       <TreatmentReviewsSection />
 
-      {/* 13. REUSABLE: PARALLAX BANNER */}
+      {/* 12. REUSABLE: PARALLAX BANNER */}
       <TreatmentParallaxBanner />
 
-      {/* 14. REUSABLE: PATIENT VIDEO REELS */}
+      {/* 13. REUSABLE: PATIENT VIDEO REELS */}
       <TreatmentPatientReelsSection />
 
-      {/* 15. REUSABLE: DENTAL JOURNEY TIMELINE */}
+      {/* 14. REUSABLE: DENTAL JOURNEY TIMELINE */}
       <TreatmentJourneySimpleSection />
 
-      {/* 16. MASTER 17-QUESTION FAQ SECTION (CLINICAL & HEALTH TOURISM) */}
+      {/* 15. MASTER 17-QUESTION FAQ SECTION (CLINICAL & HEALTH TOURISM) */}
       <section aria-labelledby="zygoma-faq-heading" className={styles.faqSection}>
         <div className={styles.faqContainer}>
           <div className={styles.faqHeader}>
@@ -4434,7 +5763,7 @@ export default function ZygomaticImplantDetailView() {
         </div>
       </section>
 
-      {/* 17. LET'S CREATE YOUR PERFECT SMILE PLAN (4-STEP INTERACTIVE QUOTE FUNNEL) */}
+      {/* 16. LET'S CREATE YOUR PERFECT SMILE PLAN (4-STEP INTERACTIVE QUOTE FUNNEL) */}
       <TreatmentInteractiveQuoteForm defaultTreatment="Zygomatic Implants" />
     </div>
   );
