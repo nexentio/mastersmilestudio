@@ -7,6 +7,7 @@ import TreatmentDetailView from '@/components/TreatmentDetailView';
 import DentalImplantsDetailView from '@/components/DentalImplantsDetailView';
 import DentalVeneersDetailView from '@/components/DentalVeneersDetailView';
 import DentalCrownsDetailView from '@/components/DentalCrownsDetailView';
+import ZirconiumCrownsDetailView from '@/components/ZirconiumCrownsDetailView';
 import DentalBridgeDetailView from '@/components/DentalBridgeDetailView';
 import DenturesDetailView from '@/components/DenturesDetailView';
 import CosmeticDentistryDetailView from '@/components/CosmeticDentistryDetailView';
@@ -724,13 +725,19 @@ export default async function TreatmentDetailPage({ params }: Props) {
     slug === 'porcelain-veneers' ||
     slug === 'dental-veneers-istanbul';
 
-  const isDentalCrowns =
-    slug === 'dental-crowns' ||
+  const isZirconiumCrowns =
     slug === 'zirconium-crowns' ||
+    slug === 'zirconia-crowns' ||
+    slug === 'zirkonyum-kaplama' ||
+    slug === 'zirconium-crown';
+
+  const isDentalCrowns =
+    !isZirconiumCrowns &&
+    (slug === 'dental-crowns' ||
     slug === 'crowns' ||
     slug === 'dental-crowns-istanbul' ||
     slug === 'emax-crowns' ||
-    slug === 'pfm-crowns';
+    slug === 'pfm-crowns');
 
   const isDentalBridges =
     slug === 'dental-bridge' ||
@@ -826,6 +833,8 @@ export default async function TreatmentDetailPage({ params }: Props) {
         <DentalBridgesHeroBanner />
       ) : isDentalVeneers ? (
         <DentalVeneersHeroBanner />
+      ) : isZirconiumCrowns ? (
+        null
       ) : isDentalCrowns ? (
         <DentalCrownsHeroBanner />
       ) : isDentalCleaning ? (
@@ -871,6 +880,8 @@ export default async function TreatmentDetailPage({ params }: Props) {
           <DentalImplantsDetailView />
         ) : isDentalVeneers ? (
           <DentalVeneersDetailView />
+        ) : isZirconiumCrowns ? (
+          <ZirconiumCrownsDetailView />
         ) : isDentalCrowns ? (
           <DentalCrownsDetailView />
         ) : isDentalBridges ? (
