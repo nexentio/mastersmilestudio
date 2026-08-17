@@ -18,9 +18,10 @@ import GeneralDentistryIntroSection from '@/components/treatment-sections/Genera
 import GeneralDentistryAccordionSection from '@/components/treatment-sections/GeneralDentistryAccordionSection';
 import GeneralDentistryJourneySection from '@/components/treatment-sections/GeneralDentistryJourneySection';
 import TreatmentServicesIncludedSection from '@/components/treatment-sections/TreatmentServicesIncludedSection';
-import TreatmentPatientReelsSection from '@/components/treatment-sections/TreatmentPatientReelsSection';
+import RealPatientsSection from '@/components/RealPatientsSection';
 import TreatmentReviewsSection from '@/components/treatment-sections/TreatmentReviewsSection';
 import GeneralDentistryFaqSection from '@/components/treatment-sections/GeneralDentistryFaqSection';
+import TreatmentInteractiveQuoteForm from '@/components/treatment-sections/TreatmentInteractiveQuoteForm';
 import { generateTreatmentJsonLd } from '@/lib/treatment-schema';
 import { getI18nAlternates, TREATMENT_LOCALES } from '@/lib/i18n-seo';
 import { getTreatmentContent } from '@/lib/treatment-content';
@@ -836,9 +837,12 @@ export default async function TreatmentDetailPage({ params }: Props) {
             <GeneralDentistryAccordionSection />
             <GeneralDentistryJourneySection />
             <TreatmentServicesIncludedSection />
-            <TreatmentPatientReelsSection />
+            <RealPatientsSection />
             <TreatmentReviewsSection />
             <GeneralDentistryFaqSection />
+            <div id="contact">
+              <TreatmentInteractiveQuoteForm defaultTreatment="General Dentistry" />
+            </div>
           </>
         ) : isGeneralSub ? (
           <div style={{ minHeight: '120px' }} />
