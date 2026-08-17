@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { useLocale } from 'next-intl';
 import { Link } from '@/i18n/routing';
 import TreatmentServicesIncludedSection from '@/components/treatment-sections/TreatmentServicesIncludedSection';
@@ -3822,6 +3822,17 @@ export default function ZirconiumImplantDetailView() {
   const d = DICTIONARIES[locale] || DICTIONARIES.en;
   const [activeFaq, setActiveFaq] = useState<number | null>(null);
   const [currency, setCurrency] = useState<'USD' | 'EUR' | 'GBP'>('EUR');
+  const pkgSliderRef = useRef<HTMLDivElement>(null);
+
+  const scrollPackages = (direction: 'left' | 'right') => {
+    if (pkgSliderRef.current) {
+      const scrollAmount = 400;
+      pkgSliderRef.current.scrollBy({
+        left: direction === 'right' ? scrollAmount : -scrollAmount,
+        behavior: 'smooth',
+      });
+    }
+  };
 
   return (
     <div className={styles.wrapper}>
@@ -3932,34 +3943,59 @@ export default function ZirconiumImplantDetailView() {
             <p className={styles.packagesSubtitle}>{d.packagesSubtitle}</p>
           </div>
 
-          {/* Interactive Currency Switcher */}
-          <div className={styles.currencyBar} role="group" aria-label="Select Currency">
-            <span className={styles.currencyLabel}>Currency:</span>
-            <button
-              type="button"
-              className={`${styles.currencyBtn} ${currency === 'EUR' ? styles.currencyBtnActive : ''}`}
-              onClick={() => setCurrency('EUR')}
-            >
-              EUR (€)
-            </button>
-            <button
-              type="button"
-              className={`${styles.currencyBtn} ${currency === 'GBP' ? styles.currencyBtnActive : ''}`}
-              onClick={() => setCurrency('GBP')}
-            >
-              GBP (£)
-            </button>
-            <button
-              type="button"
-              className={`${styles.currencyBtn} ${currency === 'USD' ? styles.currencyBtnActive : ''}`}
-              onClick={() => setCurrency('USD')}
-            >
-              USD ($)
-            </button>
+          {/* Controls: Currency Switcher & Carousel Left/Right Buttons */}
+          <div className={styles.pkgSliderControls}>
+            <div className={styles.currencyBar} role="group" aria-label="Select Currency">
+              <span className={styles.currencyLabel}>Currency:</span>
+              <button
+                type="button"
+                className={`${styles.currencyBtn} ${currency === 'EUR' ? styles.currencyBtnActive : ''}`}
+                onClick={() => setCurrency('EUR')}
+              >
+                EUR (€)
+              </button>
+              <button
+                type="button"
+                className={`${styles.currencyBtn} ${currency === 'GBP' ? styles.currencyBtnActive : ''}`}
+                onClick={() => setCurrency('GBP')}
+              >
+                GBP (£)
+              </button>
+              <button
+                type="button"
+                className={`${styles.currencyBtn} ${currency === 'USD' ? styles.currencyBtnActive : ''}`}
+                onClick={() => setCurrency('USD')}
+              >
+                USD ($)
+              </button>
+            </div>
+
+            <div className={styles.sliderNavBtns}>
+              <button
+                type="button"
+                className={styles.sliderNavBtn}
+                onClick={() => scrollPackages('left')}
+                aria-label="Previous Package"
+              >
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+              </button>
+              <button
+                type="button"
+                className={styles.sliderNavBtn}
+                onClick={() => scrollPackages('right')}
+                aria-label="Next Package"
+              >
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </button>
+            </div>
           </div>
 
-          {/* 6 Real Implant Brand Package Cards */}
-          <div className={styles.pkgGrid}>
+          {/* Single-row Horizontal Carousel Track */}
+          <div className={styles.pkgSliderTrack} ref={pkgSliderRef}>
             {d.packages.map((pkg, pIdx) => (
               <div
                 key={pIdx}
