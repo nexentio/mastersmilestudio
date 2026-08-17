@@ -1,9 +1,11 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import { useLocale } from 'next-intl';
 import { Link } from '@/i18n/routing';
 import styles from './TreatmentsHubDisciplineShowcase.module.css';
+
+type FilterCategory = 'all' | 'missing' | 'aesthetic' | 'full_arch' | 'tooth_pain';
 
 interface SubLink {
   label: string;
@@ -11,6 +13,8 @@ interface SubLink {
 }
 
 interface DisciplineItem {
+  id: string;
+  categories: FilterCategory[];
   tag: string;
   duration: string;
   title: string;
@@ -27,10 +31,17 @@ interface FeaturedFlagshipItem extends DisciplineItem {
   highlights: string[];
 }
 
+interface FilterPill {
+  id: FilterCategory;
+  label: string;
+  icon: string;
+}
+
 interface HubShowcaseDictionary {
   badge: string;
   heading: string;
   subText: string;
+  filterPills: FilterPill[];
   featured: FeaturedFlagshipItem;
   gridItems: DisciplineItem[];
 }
@@ -41,7 +52,16 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
     heading: 'Explore Our World-Class Dental Treatments in Istanbul',
     subText:
       'From full-arch titanium dental implants and Swiss Ivoclar E-Max veneers to microscopic endodontics, discover our 7 core medical specialties designed for international patients.',
+    filterPills: [
+      { id: 'all', label: 'All 7 Dental Disciplines', icon: '🏛️' },
+      { id: 'missing', label: 'Missing Teeth & Chewing', icon: '🦷' },
+      { id: 'aesthetic', label: 'Smile Makeover & Aesthetics', icon: '✨' },
+      { id: 'full_arch', label: 'Total Tooth Loss & Full-Arch', icon: '💎' },
+      { id: 'tooth_pain', label: 'Tooth Pain, Decay & Preservation', icon: '🩺' },
+    ],
     featured: {
+      id: 'implants',
+      categories: ['missing', 'full_arch'],
       eyebrow: 'FLAGSHIP SURGICAL DISCIPLINE',
       tag: 'SURGICAL IMPLANTOLOGY',
       duration: '1–2 Visits (3–5 Days)',
@@ -67,6 +87,8 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
     },
     gridItems: [
       {
+        id: 'veneers',
+        categories: ['aesthetic'],
         tag: 'COSMETIC SMILE DESIGN',
         duration: '4–6 Days (1 Visit)',
         title: 'Dental Veneers & Porcelain Laminates',
@@ -83,6 +105,8 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         ],
       },
       {
+        id: 'crowns',
+        categories: ['aesthetic', 'tooth_pain', 'missing'],
         tag: 'RESTORATIVE PROSTHODONTICS',
         duration: '4–6 Days (1 Visit)',
         title: 'Dental Crowns & German Zirconia',
@@ -99,6 +123,8 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         ],
       },
       {
+        id: 'bridge',
+        categories: ['missing'],
         tag: 'FIXED BRIDGEWORK',
         duration: '4–6 Days (1 Visit)',
         title: 'Dental Bridges & Gap Restoration',
@@ -114,6 +140,8 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         ],
       },
       {
+        id: 'dentures',
+        categories: ['missing', 'full_arch'],
         tag: 'REMOVABLE PROSTHETICS',
         duration: '4–6 Days / 2 Visits',
         title: 'Dentures & Snap-On Overdentures',
@@ -129,6 +157,8 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         ],
       },
       {
+        id: 'cosmetic',
+        categories: ['aesthetic'],
         tag: 'AESTHETIC MAKEOVER',
         duration: '4–6 Days (1 Visit)',
         title: 'Cosmetic Dentistry & Hollywood Smile',
@@ -146,6 +176,8 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         ],
       },
       {
+        id: 'general',
+        categories: ['tooth_pain'],
         tag: 'PREVENTIVE & THERAPEUTIC',
         duration: '1–3 Days (1 Visit)',
         title: 'General Dentistry & Tooth Preservation',
@@ -169,7 +201,16 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
     heading: 'İstanbul’da Dünya Standartlarında Diş Tedavilerimizi Keşfedin',
     subText:
       'Tam çene titanyum implantlardan İsviçre Ivoclar E-Max laminalara, mikroskobik kanal tedavisinden Hollywood Smile gülüş tasarımına kadar tüm uzmanlık alanlarımız.',
+    filterPills: [
+      { id: 'all', label: 'Tüm 7 Tedavi Disiplini', icon: '🏛️' },
+      { id: 'missing', label: 'Eksik Diş & Çiğneme Tedavileri', icon: '🦷' },
+      { id: 'aesthetic', label: 'Gülüş Tasarımı & Estetik', icon: '✨' },
+      { id: 'full_arch', label: 'Tam Dişsizlik & Çene Yenileme', icon: '💎' },
+      { id: 'tooth_pain', label: 'Diş Ağrısı, Çürük & Kurtarma', icon: '🩺' },
+    ],
     featured: {
+      id: 'implants',
+      categories: ['missing', 'full_arch'],
       eyebrow: 'ÖNCÜ CERRAHİ UZMANLIK ALANIMIZ',
       tag: 'CERRAHİ İMPLANTOLOJİ',
       duration: '1–2 Ziyaret (3–5 Gün)',
@@ -195,6 +236,8 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
     },
     gridItems: [
       {
+        id: 'veneers',
+        categories: ['aesthetic'],
         tag: 'ESTETİK GÜLÜŞ TASARIMI',
         duration: '4–6 Gün (Tek Ziyaret)',
         title: 'Lamine Veneer (Yaprak Porselen)',
@@ -211,6 +254,8 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         ],
       },
       {
+        id: 'crowns',
+        categories: ['aesthetic', 'tooth_pain', 'missing'],
         tag: 'RESTORATİF PROTETİK',
         duration: '4–6 Gün (Tek Ziyaret)',
         title: 'Zirkonyum & Kron Kaplama',
@@ -227,6 +272,8 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         ],
       },
       {
+        id: 'bridge',
+        categories: ['missing'],
         tag: 'SABİT DİŞ KÖPRÜLERİ',
         duration: '4–6 Gün (Tek Ziyaret)',
         title: 'Diş Köprüsü & Boşluk Tamamlama',
@@ -242,6 +289,8 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         ],
       },
       {
+        id: 'dentures',
+        categories: ['missing', 'full_arch'],
         tag: 'HAREKETLİ PROTEZLER',
         duration: '4–6 Gün / 2 Ziyaret',
         title: 'Protez Diş & Çıt Çıtlı Damak',
@@ -257,6 +306,8 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         ],
       },
       {
+        id: 'cosmetic',
+        categories: ['aesthetic'],
         tag: 'ESTETİK DÖNÜŞÜM',
         duration: '4–6 Gün (Tek Ziyaret)',
         title: 'Hollywood Smile & Estetik Diş',
@@ -274,6 +325,8 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         ],
       },
       {
+        id: 'general',
+        categories: ['tooth_pain'],
         tag: 'KORUYUCU & TEDAVİ EDİCİ',
         duration: '1–3 Gün (Tek Ziyaret)',
         title: 'Genel Diş Hekimliği & Diş Kurtarma',
@@ -297,7 +350,16 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
     heading: 'Entdecken Sie unsere erstklassigen Zahnbehandlungen in Istanbul',
     subText:
       'Von Zahnimplantaten aus Titan und Schweizer E-Max Veneers bis hin zu mikroskopischer Endodontie und Hollywood Smile Makeover.',
+    filterPills: [
+      { id: 'all', label: 'Alle 7 Fachdisziplinen', icon: '🏛️' },
+      { id: 'missing', label: 'Fehlende Zähne & Kaukraft', icon: '🦷' },
+      { id: 'aesthetic', label: 'Smile Makeover & Ästhetik', icon: '✨' },
+      { id: 'full_arch', label: 'Zahnloser Kiefer & Feste Zähne', icon: '💎' },
+      { id: 'tooth_pain', label: 'Zahnschmerzen, Karies & Erhalt', icon: '🩺' },
+    ],
     featured: {
+      id: 'implants',
+      categories: ['missing', 'full_arch'],
       eyebrow: 'FÜHRENDE CHIRURGISCHE DISZIPLIN',
       tag: 'IMPLANTOLOGIE & CHIRURGIE',
       duration: '1–2 Reisen (3–5 Tage)',
@@ -323,6 +385,8 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
     },
     gridItems: [
       {
+        id: 'veneers',
+        categories: ['aesthetic'],
         tag: 'ÄSTHETISCHES SMILE DESIGN',
         duration: '4–6 Tage (1 Reise)',
         title: 'Veneers & Porzellan-Laminate',
@@ -339,6 +403,8 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         ],
       },
       {
+        id: 'crowns',
+        categories: ['aesthetic', 'tooth_pain', 'missing'],
         tag: 'RESTAURATIVE PROTHETIK',
         duration: '4–6 Tage (1 Reise)',
         title: 'Zahnkronen & Deutsches Zirkon',
@@ -355,6 +421,8 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         ],
       },
       {
+        id: 'bridge',
+        categories: ['missing'],
         tag: 'FESTSITZENDE BRÜCKEN',
         duration: '4–6 Tage (1 Reise)',
         title: 'Zahnbrücken & Lückenschluss',
@@ -370,6 +438,8 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         ],
       },
       {
+        id: 'dentures',
+        categories: ['missing', 'full_arch'],
         tag: 'HERAUSNEHMBARER ZAHNERSATZ',
         duration: '4–6 Tage / 2 Reisen',
         title: 'Zahnprothesen & Overdentures',
@@ -385,6 +455,8 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         ],
       },
       {
+        id: 'cosmetic',
+        categories: ['aesthetic'],
         tag: 'ÄSTHETISCHES MAKEOVER',
         duration: '4–6 Tage (1 Reise)',
         title: 'Cosmetic Dentistry & Hollywood Smile',
@@ -402,6 +474,8 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         ],
       },
       {
+        id: 'general',
+        categories: ['tooth_pain'],
         tag: 'PROPHYLAXE & ERHALT',
         duration: '1–3 Tage (1 Reise)',
         title: 'Allgemeine Zahnheilkunde & Zahnerhalt',
@@ -425,7 +499,16 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
     heading: 'Odkryj Nasze Zabiegi Stomatologiczne w Stambule',
     subText:
       'Od implantów tytanowych i szwajcarskich licówek E-Max po mikroskopową endodoncję i metamorfozę Hollywood Smile.',
+    filterPills: [
+      { id: 'all', label: 'Wszystkie 7 Dziedzin', icon: '🏛️' },
+      { id: 'missing', label: 'Braki Zębowe i Gryzienie', icon: '🦷' },
+      { id: 'aesthetic', label: 'Projektowanie Uśmiechu i Estetyka', icon: '✨' },
+      { id: 'full_arch', label: 'Całkowite Bezzębie i Całe Łuki', icon: '💎' },
+      { id: 'tooth_pain', label: 'Ból Zęba, Próchnica i Leczenie', icon: '🩺' },
+    ],
     featured: {
+      id: 'implants',
+      categories: ['missing', 'full_arch'],
       eyebrow: 'WIODĄCA SPECJALIZACJA CHIRURGICZNA',
       tag: 'CHIRURGIA I IMPLANTOLOGIA',
       duration: '1–2 Wizyty (3–5 Dni)',
@@ -451,6 +534,8 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
     },
     gridItems: [
       {
+        id: 'veneers',
+        categories: ['aesthetic'],
         tag: 'PROJEKTOWANIE UŚMIECHU',
         duration: '4–6 Dni (1 Wizyta)',
         title: 'Licówki Porcelanowe i E-Max',
@@ -467,6 +552,8 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         ],
       },
       {
+        id: 'crowns',
+        categories: ['aesthetic', 'tooth_pain', 'missing'],
         tag: 'PROTETYKA ZACHOWAWCZA',
         duration: '4–6 Dni (1 Wizyta)',
         title: 'Korony Zębowe i Niemiecki Cyrkon',
@@ -483,6 +570,8 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         ],
       },
       {
+        id: 'bridge',
+        categories: ['missing'],
         tag: 'MOSTY STAŁE',
         duration: '4–6 Dni (1 Wizyta)',
         title: 'Mosty Zębowe i Odbudowa Luk',
@@ -498,6 +587,8 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         ],
       },
       {
+        id: 'dentures',
+        categories: ['missing', 'full_arch'],
         tag: 'PROTEZY RUCHOME',
         duration: '4–6 Dni / 2 Wizyty',
         title: 'Protezy Zębowe i Overdentures na Zatrzaskach',
@@ -513,6 +604,8 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         ],
       },
       {
+        id: 'cosmetic',
+        categories: ['aesthetic'],
         tag: 'METAMORFOZA ESTETYCZNA',
         duration: '4–6 Dni (1 Wizyta)',
         title: 'Hollywood Smile i Stomatologia Estetyczna',
@@ -530,6 +623,8 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         ],
       },
       {
+        id: 'general',
+        categories: ['tooth_pain'],
         tag: 'PROFILAKTYKA I LECZENIE',
         duration: '1–3 Dni (1 Wizyta)',
         title: 'Stomatologia Ogólna i Zachowawcza',
@@ -553,7 +648,16 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
     heading: 'Explore Nossos Tratamentos Odontológicos em Istambul',
     subText:
       'De implantes em titânio e facetas suíças E-Max a endodontia microscópica e transformações Hollywood Smile.',
+    filterPills: [
+      { id: 'all', label: 'Todas as 7 Disciplinas', icon: '🏛️' },
+      { id: 'missing', label: 'Dentes Ausentes & Mastigação', icon: '🦷' },
+      { id: 'aesthetic', label: 'Design do Sorriso & Estética', icon: '✨' },
+      { id: 'full_arch', label: 'Arcada Total & Edentulismo', icon: '💎' },
+      { id: 'tooth_pain', label: 'Dor de Dente, Canal & Cuidados', icon: '🩺' },
+    ],
     featured: {
+      id: 'implants',
+      categories: ['missing', 'full_arch'],
       eyebrow: 'PRINCIPAL ESPECIALIDADE CIRÚRGICA',
       tag: 'IMPLANTODONTIA & CIRURGIA',
       duration: '1–2 Viagens (3–5 Dias)',
@@ -579,6 +683,8 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
     },
     gridItems: [
       {
+        id: 'veneers',
+        categories: ['aesthetic'],
         tag: 'DESIGN DO SORRISO',
         duration: '4–6 Dias (1 Viagem)',
         title: 'Facetas Dentárias & Lentes de Contato E-Max',
@@ -595,6 +701,8 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         ],
       },
       {
+        id: 'crowns',
+        categories: ['aesthetic', 'tooth_pain', 'missing'],
         tag: 'PRÓTESE & REABILITAÇÃO',
         duration: '4–6 Dias (1 Viagem)',
         title: 'Coroas Dentárias & Zircônia Alemã',
@@ -611,6 +719,8 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         ],
       },
       {
+        id: 'bridge',
+        categories: ['missing'],
         tag: 'PRÓTESE FIXA',
         duration: '4–6 Dias (1 Viagem)',
         title: 'Pontes Dentárias & Reposição de Dentes',
@@ -626,6 +736,8 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         ],
       },
       {
+        id: 'dentures',
+        categories: ['missing', 'full_arch'],
         tag: 'PRÓTESE REMOVÍVEL',
         duration: '4–6 Dias / 2 Viagens',
         title: 'Próteses Dentárias & Overdentures de Clique',
@@ -641,6 +753,8 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         ],
       },
       {
+        id: 'cosmetic',
+        categories: ['aesthetic'],
         tag: 'TRANSFORMAÇÃO ESTÉTICA',
         duration: '4–6 Dias (1 Viagem)',
         title: 'Hollywood Smile & Odontologia Estética',
@@ -658,6 +772,8 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         ],
       },
       {
+        id: 'general',
+        categories: ['tooth_pain'],
         tag: 'PREVENÇÃO & PRESERVAÇÃO',
         duration: '1–3 Dias (1 Viagem)',
         title: 'Clínica Geral & Preservação Dental',
@@ -681,7 +797,16 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
     heading: 'Descubra Nuestros Tratamientos Dentales en Estambul',
     subText:
       'Desde implantes de titanio y carillas suizas E-Max hasta endodoncia microscópica y transformaciones Hollywood Smile.',
+    filterPills: [
+      { id: 'all', label: 'Las 7 Especialidades', icon: '🏛️' },
+      { id: 'missing', label: 'Pérdida Dental & Masticación', icon: '🦷' },
+      { id: 'aesthetic', label: 'Diseño de Sonrisa & Estética', icon: '✨' },
+      { id: 'full_arch', label: 'Arcada Completa & Edentulismo', icon: '💎' },
+      { id: 'tooth_pain', label: 'Dolor Dental, Caries & Endodoncia', icon: '🩺' },
+    ],
     featured: {
+      id: 'implants',
+      categories: ['missing', 'full_arch'],
       eyebrow: 'DISCIPLINA QUIRÚRGICA DE REFERENCIA',
       tag: 'IMPLANTOLOGÍA Y CIRUGÍA',
       duration: '1–2 Viajes (3–5 Días)',
@@ -707,6 +832,8 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
     },
     gridItems: [
       {
+        id: 'veneers',
+        categories: ['aesthetic'],
         tag: 'DISEÑO DE SONRISA',
         duration: '4–6 Días (1 Viaje)',
         title: 'Carillas Dentales de Porcelana y E-Max',
@@ -723,6 +850,8 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         ],
       },
       {
+        id: 'crowns',
+        categories: ['aesthetic', 'tooth_pain', 'missing'],
         tag: 'PRÓTESIS Y REHABILITACIÓN',
         duration: '4–6 Días (1 Viaje)',
         title: 'Coronas Dentales y Zirconio Alemán',
@@ -739,6 +868,8 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         ],
       },
       {
+        id: 'bridge',
+        categories: ['missing'],
         tag: 'PRÓTESIS FIJA',
         duration: '4–6 Días (1 Viaje)',
         title: 'Puentes Dentales y Cierre de Espacios',
@@ -754,6 +885,8 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         ],
       },
       {
+        id: 'dentures',
+        categories: ['missing', 'full_arch'],
         tag: 'PRÓTESIS REMOVIBLE',
         duration: '4–6 Días / 2 Viajes',
         title: 'Prótesis Dentales y Sobredentaduras',
@@ -769,6 +902,8 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         ],
       },
       {
+        id: 'cosmetic',
+        categories: ['aesthetic'],
         tag: 'ESTÉTICA INTEGRAL',
         duration: '4–6 Días (1 Viaje)',
         title: 'Hollywood Smile y Estética Dental',
@@ -786,6 +921,8 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         ],
       },
       {
+        id: 'general',
+        categories: ['tooth_pain'],
         tag: 'PREVENCIÓN Y TRATAMIENTO',
         duration: '1–3 Días (1 Viaje)',
         title: 'Odontología General y Conservadora',
@@ -809,7 +946,16 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
     heading: 'Исследуйте наши передовые стоматологические процедуры в Стамбуле',
     subText:
       'От титановых имплантов и швейцарских виниров E-Max до лечения каналов под микроскопом и Голливудской улыбки.',
+    filterPills: [
+      { id: 'all', label: 'Все 7 направлений', icon: '🏛️' },
+      { id: 'missing', label: 'Отсутствие зубов & Жевательная функция', icon: '🦷' },
+      { id: 'aesthetic', label: 'Дизайн улыбки & Эстетика', icon: '✨' },
+      { id: 'full_arch', label: 'Полная адентия & Восстановление челюсти', icon: '💎' },
+      { id: 'tooth_pain', label: 'Боль, кариес & Лечение каналов', icon: '🩺' },
+    ],
     featured: {
+      id: 'implants',
+      categories: ['missing', 'full_arch'],
       eyebrow: 'ФЛАГМАНСКАЯ ХИРУРГИЧЕСКАЯ ДИСЦИПЛИНА',
       tag: 'ХИРУРГИЯ И ИМПЛАНТАЦИЯ',
       duration: '1–2 Визита (3–5 Дней)',
@@ -835,6 +981,8 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
     },
     gridItems: [
       {
+        id: 'veneers',
+        categories: ['aesthetic'],
         tag: 'ДИЗАЙН УЛЫБКИ',
         duration: '4–6 Дней (1 Визит)',
         title: 'Керамические виниры и люминиры E-Max',
@@ -851,6 +999,8 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         ],
       },
       {
+        id: 'crowns',
+        categories: ['aesthetic', 'tooth_pain', 'missing'],
         tag: 'ОРТОПЕДИЯ И ПРОТЕЗИРОВАНИЕ',
         duration: '4–6 Дней (1 Визит)',
         title: 'Зубные коронки и немецкий цирконий',
@@ -867,6 +1017,8 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         ],
       },
       {
+        id: 'bridge',
+        categories: ['missing'],
         tag: 'НЕСЪЕМНЫЕ МОСТЫ',
         duration: '4–6 Дней (1 Визит)',
         title: 'Зубные мостовидные протезы',
@@ -882,6 +1034,8 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         ],
       },
       {
+        id: 'dentures',
+        categories: ['missing', 'full_arch'],
         tag: 'СЪЕМНОЕ ПРОТЕЗИРОВАНИЕ',
         duration: '4–6 Дней / 2 Визита',
         title: 'Зубные протезы и замковые Overdentures',
@@ -897,6 +1051,8 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         ],
       },
       {
+        id: 'cosmetic',
+        categories: ['aesthetic'],
         tag: 'ЭСТЕТИКА И ПРЕОБРАЖЕНИЕ',
         duration: '4–6 Дней (1 Визит)',
         title: 'Голливудская улыбка (Hollywood Smile)',
@@ -914,6 +1070,8 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         ],
       },
       {
+        id: 'general',
+        categories: ['tooth_pain'],
         tag: 'ТЕРАПИЯ И ПРОФИЛАКТИКА',
         duration: '1–3 Дня (1 Визит)',
         title: 'Терапевтическая стоматология и лечение',
@@ -921,7 +1079,7 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         img: 'https://sohodent.com/doc/data1/root-canal-copy.webp',
         href: '/treatments/general-dentistry',
         btnText: 'Изучить Терапию →',
-        popularTechniquesLabel: 'Популярные методиki и страницы:',
+        popularTechniquesLabel: 'Популярные методики и страницы:',
         sublinks: [
           { label: 'Лечение каналов под микроскопом', href: '/treatments/general-dentistry/root-canal' },
           { label: 'Чистка зубов Swiss Air-Flow', href: '/treatments/general-dentistry/dental-cleaning' },
@@ -937,7 +1095,15 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
 export default function TreatmentsHubDisciplineShowcase() {
   const locale = useLocale();
   const data = SHOWCASE_DATA[locale] || SHOWCASE_DATA.en;
+  const [selectedFilter, setSelectedFilter] = useState<FilterCategory>('all');
+
   const f = data.featured;
+  const showFeatured =
+    selectedFilter === 'all' || f.categories.includes(selectedFilter);
+
+  const filteredGridItems = data.gridItems.filter((item) =>
+    selectedFilter === 'all' ? true : item.categories.includes(selectedFilter)
+  );
 
   return (
     <section aria-labelledby="hub-disciplines-heading" className={styles.wrapper}>
@@ -951,69 +1117,93 @@ export default function TreatmentsHubDisciplineShowcase() {
           <p className={styles.subText}>{data.subText}</p>
         </div>
 
+        {/* 0. INTERACTIVE SYMPTOM & PROBLEM FILTER PILLS */}
+        <div className={styles.filterPillsContainer} role="tablist">
+          {data.filterPills.map((pill) => {
+            const isActive = selectedFilter === pill.id;
+            return (
+              <button
+                key={pill.id}
+                type="button"
+                role="tab"
+                aria-selected={isActive}
+                onClick={() => setSelectedFilter(pill.id)}
+                className={`${styles.filterPill} ${
+                  isActive ? styles.filterPillActive : ''
+                }`}
+              >
+                <span>{pill.icon}</span>
+                <span>{pill.label}</span>
+              </button>
+            );
+          })}
+        </div>
+
         {/* 1. TOP FULL-WIDTH FLAGSHIP IMPLANT CARD */}
-        <article className={styles.featuredCard}>
-          <div className={styles.featuredImageWrap}>
-            <span className={styles.featuredTagBadge}>{f.tag}</span>
-            <span className={styles.featuredDurationBadge}>{f.duration}</span>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={f.img}
-              alt={f.title}
-              className={styles.featuredImage}
-              loading="lazy"
-            />
-          </div>
+        {showFeatured && (
+          <article className={styles.featuredCard}>
+            <div className={styles.featuredImageWrap}>
+              <span className={styles.featuredTagBadge}>{f.tag}</span>
+              <span className={styles.featuredDurationBadge}>{f.duration}</span>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={f.img}
+                alt={f.title}
+                className={styles.featuredImage}
+                loading="lazy"
+              />
+            </div>
 
-          <div className={styles.featuredContent}>
-            <div>
-              <span className={styles.featuredEyebrow}>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                </svg>
-                {f.eyebrow}
-              </span>
-              <h3 className={styles.featuredTitle}>{f.title}</h3>
-              <p className={styles.featuredDesc}>{f.desc}</p>
+            <div className={styles.featuredContent}>
+              <div>
+                <span className={styles.featuredEyebrow}>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                  </svg>
+                  {f.eyebrow}
+                </span>
+                <h3 className={styles.featuredTitle}>{f.title}</h3>
+                <p className={styles.featuredDesc}>{f.desc}</p>
 
-              {/* Gold Feature Checklist */}
-              <ul className={styles.featuredChecklist}>
-                {f.highlights.map((h, hIdx) => (
-                  <li key={hIdx} className={styles.checkItem}>
-                    <span className={styles.checkIcon}>✓</span>
-                    <span>{h}</span>
-                  </li>
-                ))}
-              </ul>
+                {/* Gold Feature Checklist */}
+                <ul className={styles.featuredChecklist}>
+                  {f.highlights.map((h, hIdx) => (
+                    <li key={hIdx} className={styles.checkItem}>
+                      <span className={styles.checkIcon}>✓</span>
+                      <span>{h}</span>
+                    </li>
+                  ))}
+                </ul>
 
-              {/* Sublinks */}
-              <div className={styles.subLinksTitle}>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z" />
-                </svg>
-                <span>{f.popularTechniquesLabel}</span>
+                {/* Sublinks */}
+                <div className={styles.subLinksTitle}>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z" />
+                  </svg>
+                  <span>{f.popularTechniquesLabel}</span>
+                </div>
+
+                <ul className={styles.subLinksList}>
+                  {f.sublinks.map((sub, sIdx) => (
+                    <li key={sIdx} className={styles.subLinkItem}>
+                      <Link href={sub.href}>{sub.label}</Link>
+                    </li>
+                  ))}
+                </ul>
               </div>
 
-              <ul className={styles.subLinksList}>
-                {f.sublinks.map((sub, sIdx) => (
-                  <li key={sIdx} className={styles.subLinkItem}>
-                    <Link href={sub.href}>{sub.label}</Link>
-                  </li>
-                ))}
-              </ul>
+              <div className={styles.actionRow}>
+                <Link href={f.href} className={styles.featuredBtn}>
+                  <span>{f.btnText}</span>
+                </Link>
+              </div>
             </div>
+          </article>
+        )}
 
-            <div className={styles.actionRow}>
-              <Link href={f.href} className={styles.featuredBtn}>
-                <span>{f.btnText}</span>
-              </Link>
-            </div>
-          </div>
-        </article>
-
-        {/* 2. BALANCED 2x3 GRID FOR REMAINING 6 DISCIPLINES */}
+        {/* 2. BALANCED GRID FOR FILTERED DISCIPLINES */}
         <div className={styles.grid}>
-          {data.gridItems.map((item, idx) => (
+          {filteredGridItems.map((item, idx) => (
             <article key={idx} className={styles.card}>
               <div className={styles.imageWrap}>
                 <span className={styles.tagBadge}>{item.tag}</span>

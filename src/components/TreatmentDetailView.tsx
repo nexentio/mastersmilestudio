@@ -6,6 +6,7 @@ import { Link } from '@/i18n/routing';
 import TreatmentDivider from '@/components/treatment-sections/TreatmentDivider';
 import TreatmentTripleVideoSlider from '@/components/treatment-sections/TreatmentTripleVideoSlider';
 import TreatmentsHubDisciplineShowcase from '@/components/treatment-sections/TreatmentsHubDisciplineShowcase';
+import TreatmentComparisonMatrix from '@/components/treatment-sections/TreatmentComparisonMatrix';
 import TreatmentDoctorsSection from '@/components/treatment-sections/TreatmentDoctorsSection';
 import TreatmentBeforeAfterSliderSection from '@/components/treatment-sections/TreatmentBeforeAfterSliderSection';
 import TreatmentJourneySimpleSection from '@/components/treatment-sections/TreatmentJourneySimpleSection';
@@ -600,6 +601,9 @@ export default function TreatmentDetailView() {
 
       {/* 2. MASTER 7-DISCIPLINE SHOWCASE WITH INTERNAL DEEP LINKS */}
       <TreatmentsHubDisciplineShowcase />
+
+      {/* 2.5 CLINICAL DECISION & TREATMENT COMPARISON MATRIX */}
+      <TreatmentComparisonMatrix />
 
       {/* 3. WHY CHOOSE MASTER SMILE STUDIO IN ISTANBUL */}
       <section aria-labelledby="why-choose-hub-heading" className={styles.whyChooseSection}>
