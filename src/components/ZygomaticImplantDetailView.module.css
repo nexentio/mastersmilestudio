@@ -1330,3 +1330,217 @@
     line-height: 1.4;
   }
 }
+
+/* =========================================================================
+   EDITORIAL PROSE, DENTAL JOURNEY SUMMARY & ADVANTAGES
+   ========================================================================= */
+.editorialSection {
+  padding: 4.5rem 0 3.5rem 0;
+  background-color: #f8fafc;
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.editorialHeader {
+  margin-bottom: 2.25rem;
+}
+
+.editorialHeading {
+  font-size: clamp(1.85rem, 3vw, 2.5rem);
+  font-weight: 800;
+  color: #0c1b4d;
+  line-height: 1.25;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.editorialSubheading {
+  font-size: clamp(1.35rem, 2.2vw, 1.75rem);
+  font-weight: 700;
+  color: #D58936;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.editorialLead {
+  font-size: 1.08rem;
+  color: #334155;
+  line-height: 1.75;
+  margin-bottom: 2rem;
+}
+
+.editorialParagraph {
+  font-size: 1rem;
+  color: #475569;
+  line-height: 1.75;
+  margin-bottom: 1.25rem;
+}
+
+.journeySummaryBox {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+.journeySummaryGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.journeySummaryItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 1rem 1.25rem;
+  background-color: #f8fafc;
+  border-radius: 12px;
+  border: 1px solid #edf2f7;
+}
+
+.journeySummaryLabel {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.journeySummaryVal {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #0c1b4d;
+}
+
+.reachOutBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #f1f5f9;
+}
+
+.reachOutLabel {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #0c1b4d;
+}
+
+.reachOutBtns {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.reachOutBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1.25rem;
+  border-radius: 9999px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  background-color: #0c1b4d;
+  color: #ffffff;
+  border: 1px solid #0c1b4d;
+}
+
+.reachOutBtn:hover {
+  background-color: #D58936;
+  border-color: #D58936;
+  transform: translateY(-2px);
+}
+
+.reachOutBtnWhatsapp {
+  background-color: #25D366;
+  border-color: #25D366;
+  color: #ffffff;
+}
+
+.reachOutBtnWhatsapp:hover {
+  background-color: #1ebd5a;
+  border-color: #1ebd5a;
+  color: #ffffff;
+}
+
+.benefitsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.benefitItem {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 1.75rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  position: relative;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.benefitItem:hover {
+  transform: translateY(-2px);
+  border-color: #cbd5e1;
+}
+
+.benefitTitleRow {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.benefitNum {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #D58936;
+}
+
+.benefitTitle {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #0c1b4d;
+}
+
+.benefitDesc {
+  font-size: 0.98rem;
+  color: #475569;
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+  .journeySummaryGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .reachOutBar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 600px) {
+  .journeySummaryGrid {
+    grid-template-columns: 1fr;
+  }
+  .reachOutBtns {
+    width: 100%;
+  }
+  .reachOutBtn {
+    flex: 1 1 calc(50% - 0.5rem);
+    justify-content: center;
+    font-size: 0.82rem;
+    padding: 0.6rem 0.85rem;
+  }
+}
+
