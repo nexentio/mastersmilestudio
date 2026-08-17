@@ -802,7 +802,7 @@ export default async function TreatmentDetailPage({ params }: Props) {
       <Header />
 
       {/* 1:1 Modular Treatment Hero Section with 7-Language i18n */}
-      {isDentalCleaning ? (
+      {isGeneralMain ? null : isDentalCleaning ? (
         <DentalCleaningHeroBanner />
       ) : (
         <TreatmentHeroBanner
@@ -820,10 +820,8 @@ export default async function TreatmentDetailPage({ params }: Props) {
 
       {/* Main Content Area Landmark */}
       <main id="main-content" className="treatment-main-content">
-        {isGeneralSub ? (
+        {isGeneral ? (
           <div style={{ minHeight: '120px' }} />
-        ) : isGeneralMain ? (
-          <GeneralDentistryDetailView />
         ) : isDentalImplants ? (
           <DentalImplantsDetailView />
         ) : isDentalVeneers ? (

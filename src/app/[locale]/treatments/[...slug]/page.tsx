@@ -305,7 +305,7 @@ export default async function HierarchicalTreatmentPage({ params }: PageProps) {
 
       <Header />
 
-      {isDentalCleaning ? (
+      {isGeneralMain ? null : isDentalCleaning ? (
         <DentalCleaningHeroBanner />
       ) : (
         <TreatmentHeroBanner
@@ -360,10 +360,8 @@ export default async function HierarchicalTreatmentPage({ params }: PageProps) {
       )}
 
       <main id="main-content" className="treatment-main-content">
-        {isGeneralSub ? (
+        {isGeneral ? (
           <div style={{ minHeight: '120px' }} />
-        ) : isGeneralMain ? (
-          <GeneralDentistryDetailView />
         ) : isCosmetic ? (
           <CosmeticDentistryDetailView />
         ) : isDentures ? (
