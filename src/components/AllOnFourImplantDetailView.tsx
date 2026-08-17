@@ -1414,13 +1414,13 @@ export default function AllOnFourImplantDetailView() {
             {d.introP3Tail}
           </p>
 
-          {/* Clinical Gold Accent Divider */}
-          <div className={styles.dividerWrap}>
-            <img
-              src="https://sohodent.com/doc/data1/divider-gold.png"
-              alt="Clinical Section Divider"
-              className={styles.dividerImg}
-              loading="lazy"
+          {/* Full-width 16:9 Clinical All-on-4 Procedure Video */}
+          <div className={styles.mainVideoWrap}>
+            <iframe
+              src="https://www.youtube.com/embed/fJAx9CUxhk4"
+              title="All-on-4 Dental Implants in Istanbul Clinical Procedure"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
             />
           </div>
         </div>

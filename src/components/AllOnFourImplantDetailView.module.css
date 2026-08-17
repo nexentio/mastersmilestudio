@@ -67,18 +67,26 @@
   letter-spacing: -0.015em;
 }
 
-.dividerWrap {
+.mainVideoWrap {
+  width: 100%;
+  max-width: 100%;
   margin: 2.5rem 0;
-  display: flex;
-  justify-content: center;
+  position: relative;
+  aspect-ratio: 16 / 9;
+  border-radius: 18px;
+  overflow: hidden;
+  background-color: #09090b;
+  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.12);
+  border: 1px solid #e2e8f0;
 }
 
-.dividerImg {
+.mainVideoWrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  max-width: 1200px;
-  height: auto;
-  display: block;
-  opacity: 0.85;
+  height: 100%;
+  border: none;
 }
 
 /* Currency & Packages Section */
