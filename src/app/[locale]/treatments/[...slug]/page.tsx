@@ -337,6 +337,14 @@ export default async function HierarchicalTreatmentPage({ params }: PageProps) {
           tag={heroBadge}
           title={heroTitle}
           subtitle={heroSubtitle}
+          imageSrc={
+            isDentalImplantsCategory
+              ? 'https://sohodent.com/doc/data1/zirconium-implant.webp?v=1'
+              : undefined
+          }
+          imageAlt={
+            isDentalImplantsCategory ? 'Zirconium Implants' : undefined
+          }
           primaryBtnText={
             content?.hero?.primaryBtn ||
             (locale === 'tr'

@@ -823,6 +823,12 @@ export default async function TreatmentDetailPage({ params }: Props) {
           tag={heroBadge}
           title={heroTitle}
           subtitle={heroSubtitle}
+          imageSrc={
+            isDentalImplants
+              ? 'https://sohodent.com/doc/data1/zirconium-implant.webp?v=1'
+              : undefined
+          }
+          imageAlt={isDentalImplants ? 'Zirconium Implants' : undefined}
           primaryBtnText={primaryBtnText}
           primaryBtnHref="/contact"
           primaryBtnAriaLabel={heroFallback.primaryBtnAria}
