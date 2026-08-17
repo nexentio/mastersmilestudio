@@ -251,32 +251,27 @@
   position: relative;
   background-color: #7b9f9d;
   color: #ffffff;
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 8px;
   padding: 0.62rem 0.75rem;
   font-size: 0.9rem;
   font-weight: 500;
   text-align: center;
   cursor: pointer;
-  transition: background-color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+  transition: all 0.2s ease;
   user-select: none;
 }
 
 .pillBtn:hover {
-  background-color: #688e8c;
+  background-color: #6a908e;
 }
 
-/* Active State - high specificity to prevent :hover or :focus from reverting background */
 .pillBtn.pillBtnActive,
 .pillBtn.pillBtnActive:hover,
-.pillBtn.pillBtnActive:focus,
-.pillBtn.pillBtnActive:active {
-  background-color: #1a3d3e;
+.pillBtn.pillBtnActive:focus {
+  background-color: #3b6b6c;
   color: #ffffff;
-  font-weight: 700;
-  border-color: #ffffff;
-  box-shadow: inset 0 0 0 2px #ffffff, 0 4px 12px rgba(26, 61, 62, 0.35);
-  transform: translateY(-1px);
+  font-weight: 650;
 }
 
 /* Navigation Buttons */
