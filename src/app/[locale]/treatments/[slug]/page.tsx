@@ -15,6 +15,7 @@ import AllOnSixImplantDetailView from '@/components/AllOnSixImplantDetailView';
 import DentalCleaningHeroBanner from '@/components/treatment-sections/DentalCleaningHeroBanner';
 import GeneralDentistryHeroBanner from '@/components/treatment-sections/GeneralDentistryHeroBanner';
 import GeneralDentistryIntroSection from '@/components/treatment-sections/GeneralDentistryIntroSection';
+import GeneralDentistryAccordionSection from '@/components/treatment-sections/GeneralDentistryAccordionSection';
 import { generateTreatmentJsonLd } from '@/lib/treatment-schema';
 import { getI18nAlternates, TREATMENT_LOCALES } from '@/lib/i18n-seo';
 import { getTreatmentContent } from '@/lib/treatment-content';
@@ -825,7 +826,10 @@ export default async function TreatmentDetailPage({ params }: Props) {
       {/* Main Content Area Landmark */}
       <main id="main-content" className="treatment-main-content">
         {isGeneralMain ? (
-          <GeneralDentistryIntroSection />
+          <>
+            <GeneralDentistryIntroSection />
+            <GeneralDentistryAccordionSection />
+          </>
         ) : isGeneralSub ? (
           <div style={{ minHeight: '120px' }} />
         ) : isDentalImplants ? (
