@@ -22,11 +22,17 @@ interface DisciplineItem {
   sublinks: SubLink[];
 }
 
+interface FeaturedFlagshipItem extends DisciplineItem {
+  eyebrow: string;
+  highlights: string[];
+}
+
 interface HubShowcaseDictionary {
   badge: string;
   heading: string;
   subText: string;
-  items: DisciplineItem[];
+  featured: FeaturedFlagshipItem;
+  gridItems: DisciplineItem[];
 }
 
 const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
@@ -35,24 +41,31 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
     heading: 'Explore Our World-Class Dental Treatments in Istanbul',
     subText:
       'From full-arch titanium dental implants and Swiss Ivoclar E-Max veneers to microscopic endodontics, discover our 7 core medical specialties designed for international patients.',
-    items: [
-      {
-        tag: 'SURGICAL IMPLANTOLOGY',
-        duration: '1–2 Visits (3–5 Days)',
-        title: 'Dental Implants & Full-Arch Restorations',
-        desc: 'Permanent titanium tooth replacement for single, multiple, or totally missing teeth with lifetime international warranties and Swiss Straumann technology.',
-        img: 'https://sohodent.com/doc/data1/All-on-6-implant-package-3.jpg',
-        href: '/treatments/dental-implants',
-        btnText: 'Explore Dental Implants →',
-        popularTechniquesLabel: 'Popular Techniques & Subpages:',
-        sublinks: [
-          { label: 'All-on-4 Implants', href: '/treatments/dental-implants/all-on-4-implants' },
-          { label: 'All-on-6 Implants', href: '/treatments/dental-implants/all-on-6-implants' },
-          { label: 'Same-Day Implants', href: '/treatments/dental-implants/immediate-implants' },
-          { label: 'Zygomatic Implants', href: '/treatments/dental-implants/zygomatic-implants' },
-          { label: 'Sinus Lifting', href: '/treatments/dental-implants/sinus-lifting' },
-        ],
-      },
+    featured: {
+      eyebrow: 'FLAGSHIP SURGICAL DISCIPLINE',
+      tag: 'SURGICAL IMPLANTOLOGY',
+      duration: '1–2 Visits (3–5 Days)',
+      title: 'Dental Implants & Full-Arch Restorations',
+      desc: 'Permanent titanium tooth replacement for single, multiple, or totally missing teeth with lifetime international warranties. We utilize Swiss Straumann, Medentika, and German titanium systems paired with 3D CBCT surgical guides and monolithic zirconia bridges for unmatched chewing stability.',
+      highlights: [
+        'Lifetime International Implant Warranty',
+        '3D CBCT Guided Computer Navigation',
+        'Monolithic German Zirconia Bridges',
+        'Same-Day Fixed Temporary Teeth',
+      ],
+      img: 'https://sohodent.com/doc/data1/All-on-6-implant-package-3.jpg',
+      href: '/treatments/dental-implants',
+      btnText: 'Explore Dental Implants & Packages →',
+      popularTechniquesLabel: 'Specialized Techniques & Subpages:',
+      sublinks: [
+        { label: 'All-on-4 Implants', href: '/treatments/dental-implants/all-on-4-implants' },
+        { label: 'All-on-6 Implants', href: '/treatments/dental-implants/all-on-6-implants' },
+        { label: 'Same-Day Implants', href: '/treatments/dental-implants/immediate-implants' },
+        { label: 'Zygomatic Implants', href: '/treatments/dental-implants/zygomatic-implants' },
+        { label: 'Sinus Lifting', href: '/treatments/dental-implants/sinus-lifting' },
+      ],
+    },
+    gridItems: [
       {
         tag: 'COSMETIC SMILE DESIGN',
         duration: '4–6 Days (1 Visit)',
@@ -156,24 +169,31 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
     heading: 'İstanbul’da Dünya Standartlarında Diş Tedavilerimizi Keşfedin',
     subText:
       'Tam çene titanyum implantlardan İsviçre Ivoclar E-Max laminalara, mikroskobik kanal tedavisinden Hollywood Smile gülüş tasarımına kadar tüm uzmanlık alanlarımız.',
-    items: [
-      {
-        tag: 'CERRAHİ İMPLANTOLOJİ',
-        duration: '1–2 Ziyaret (3–5 Gün)',
-        title: 'Diş İmplantı & Tam Çene Tedavileri',
-        desc: 'Tek diş, çoklu diş veya tam dişsizlik durumlarında ömür boyu garantili İsviçre Straumann ve Alman titanyum implantlarla doğal çiğneme gücü.',
-        img: 'https://sohodent.com/doc/data1/All-on-6-implant-package-3.jpg',
-        href: '/treatments/dental-implants',
-        btnText: 'İmplant Tedavilerini İncele →',
-        popularTechniquesLabel: 'Popüler Teknikler & Alt Sayfalar:',
-        sublinks: [
-          { label: 'All-on-4 İmplant', href: '/treatments/dental-implants/all-on-4-implants' },
-          { label: 'All-on-6 İmplant', href: '/treatments/dental-implants/all-on-6-implants' },
-          { label: 'Aynı Gün İmplant', href: '/treatments/dental-implants/immediate-implants' },
-          { label: 'Zigomatik İmplant', href: '/treatments/dental-implants/zygomatic-implants' },
-          { label: 'Sinüs Lifting & Kemik Grefti', href: '/treatments/dental-implants/sinus-lifting' },
-        ],
-      },
+    featured: {
+      eyebrow: 'ÖNCÜ CERRAHİ UZMANLIK ALANIMIZ',
+      tag: 'CERRAHİ İMPLANTOLOJİ',
+      duration: '1–2 Ziyaret (3–5 Gün)',
+      title: 'Diş İmplantı & Tam Çene Rekonstrüksiyonu',
+      desc: 'Tek diş, çoklu diş veya tam dişsizlik vakalarında ömür boyu uluslararası garantili İsviçre Straumann, Medentika ve Alman titanyum implant sistemleri. Düşük radyasyonlu 3D CBCT cerrahi rehberler ve yekpare monolitik zirkonyum köprüler ile doğal diş hissi ve maksimum çiğneme stabilitesi.',
+      highlights: [
+        'Ömür Boyu Uluslararası İmplant Garantisi',
+        '3D Tomografi ve Bilgisayarlı Cerrahi Kılavuz',
+        '1200+ MPa Monolitik Zirkonyum Köprüler',
+        'Aynı Gün Takılan Sabit Geçici Dişler',
+      ],
+      img: 'https://sohodent.com/doc/data1/All-on-6-implant-package-3.jpg',
+      href: '/treatments/dental-implants',
+      btnText: 'İmplant Tedavilerini ve Paketleri İncele →',
+      popularTechniquesLabel: 'Özel Teknikler & Alt Sayfalar:',
+      sublinks: [
+        { label: 'All-on-4 İmplant', href: '/treatments/dental-implants/all-on-4-implants' },
+        { label: 'All-on-6 İmplant', href: '/treatments/dental-implants/all-on-6-implants' },
+        { label: 'Aynı Gün İmplant', href: '/treatments/dental-implants/immediate-implants' },
+        { label: 'Zigomatik İmplant', href: '/treatments/dental-implants/zygomatic-implants' },
+        { label: 'Sinüs Lifting & Kemik Grefti', href: '/treatments/dental-implants/sinus-lifting' },
+      ],
+    },
+    gridItems: [
       {
         tag: 'ESTETİK GÜLÜŞ TASARIMI',
         duration: '4–6 Gün (Tek Ziyaret)',
@@ -277,24 +297,31 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
     heading: 'Entdecken Sie unsere erstklassigen Zahnbehandlungen in Istanbul',
     subText:
       'Von Zahnimplantaten aus Titan und Schweizer E-Max Veneers bis hin zu mikroskopischer Endodontie und Hollywood Smile Makeover.',
-    items: [
-      {
-        tag: 'IMPLANTOLOGIE & CHIRURGIE',
-        duration: '1–2 Reisen (3–5 Tage)',
-        title: 'Zahnimplantate & Feste Zähne',
-        desc: 'Dauerhafter Zahnersatz mit lebenslanger Garantie auf Schweizer Straumann und deutsche Titanimplantate für höchste Kaufunktion.',
-        img: 'https://sohodent.com/doc/data1/All-on-6-implant-package-3.jpg',
-        href: '/treatments/dental-implants',
-        btnText: 'Zahnimplantate entdecken →',
-        popularTechniquesLabel: 'Beliebte Verfahren & Unterseiten:',
-        sublinks: [
-          { label: 'All-on-4 Implantate', href: '/treatments/dental-implants/all-on-4-implants' },
-          { label: 'All-on-6 Implantate', href: '/treatments/dental-implants/all-on-6-implants' },
-          { label: 'Sofortimplantate', href: '/treatments/dental-implants/immediate-implants' },
-          { label: 'Zygoma-Implantate', href: '/treatments/dental-implants/zygomatic-implants' },
-          { label: 'Sinuslift & Knochenaufbau', href: '/treatments/dental-implants/sinus-lifting' },
-        ],
-      },
+    featured: {
+      eyebrow: 'FÜHRENDE CHIRURGISCHE DISZIPLIN',
+      tag: 'IMPLANTOLOGIE & CHIRURGIE',
+      duration: '1–2 Reisen (3–5 Tage)',
+      title: 'Zahnimplantate & Feste Zähne auf Implantaten',
+      desc: 'Dauerhafter Zahnersatz für einzelne, mehrere oder alle Zähne mit lebenslanger internationaler Garantie. Wir verwenden Schweizer Straumann- und deutsche Titansysteme mit 3D CBCT Navigationsschablonen und monolithischen Zirkonbrücken für höchste Kauleistung.',
+      highlights: [
+        'Lebenslange internationale Implantat-Garantie',
+        '3D CBCT computergestützte Navigationsführung',
+        'Monolithische deutsche Zirkonbrücken (1200 MPa)',
+        'Festsitzende Provisorien am selben Tag',
+      ],
+      img: 'https://sohodent.com/doc/data1/All-on-6-implant-package-3.jpg',
+      href: '/treatments/dental-implants',
+      btnText: 'Zahnimplantate & Pakete ansehen →',
+      popularTechniquesLabel: 'Spezielle Verfahren & Unterseiten:',
+      sublinks: [
+        { label: 'All-on-4 Implantate', href: '/treatments/dental-implants/all-on-4-implants' },
+        { label: 'All-on-6 Implantate', href: '/treatments/dental-implants/all-on-6-implants' },
+        { label: 'Sofortimplantate', href: '/treatments/dental-implants/immediate-implants' },
+        { label: 'Zygoma-Implantate', href: '/treatments/dental-implants/zygomatic-implants' },
+        { label: 'Sinuslift & Knochenaufbau', href: '/treatments/dental-implants/sinus-lifting' },
+      ],
+    },
+    gridItems: [
       {
         tag: 'ÄSTHETISCHES SMILE DESIGN',
         duration: '4–6 Tage (1 Reise)',
@@ -398,24 +425,31 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
     heading: 'Odkryj Nasze Zabiegi Stomatologiczne w Stambule',
     subText:
       'Od implantów tytanowych i szwajcarskich licówek E-Max po mikroskopową endodoncję i metamorfozę Hollywood Smile.',
-    items: [
-      {
-        tag: 'CHIRURGIA I IMPLANTOLOGIA',
-        duration: '1–2 Wizyty (3–5 Dni)',
-        title: 'Implanty Zębowe i Odbudowy Całych Łuków',
-        desc: 'Trwałe uzupełnienie braków zębowych z dożywotnią gwarancją na szwajcarskie implanty Straumann i niemiecką inżynierię.',
-        img: 'https://sohodent.com/doc/data1/All-on-6-implant-package-3.jpg',
-        href: '/treatments/dental-implants',
-        btnText: 'Poznaj Implanty Zębowe →',
-        popularTechniquesLabel: 'Popularne Techniki i Podstrony:',
-        sublinks: [
-          { label: 'Implanty All-on-4', href: '/treatments/dental-implants/all-on-4-implants' },
-          { label: 'Implanty All-on-6', href: '/treatments/dental-implants/all-on-6-implants' },
-          { label: 'Implanty Jednodniowe', href: '/treatments/dental-implants/immediate-implants' },
-          { label: 'Implanty Zygomatyczne', href: '/treatments/dental-implants/zygomatic-implants' },
-          { label: 'Podniesienie Dna Zatoki', href: '/treatments/dental-implants/sinus-lifting' },
-        ],
-      },
+    featured: {
+      eyebrow: 'WIODĄCA SPECJALIZACJA CHIRURGICZNA',
+      tag: 'CHIRURGIA I IMPLANTOLOGIA',
+      duration: '1–2 Wizyty (3–5 Dni)',
+      title: 'Implanty Zębowe i Odbudowy Całych Łuków',
+      desc: 'Trwałe uzupełnienie pojedynczych, mnogich braków zębowych lub całkowitego bezzębia z dożywotnią międzynarodową gwarancją. Wykorzystujemy szwajcarskie implanty Straumann, Medentika i niemiecki tlenek cyrkonu z nawigacją komputerową 3D CBCT.',
+      highlights: [
+        'Dożywotnia Międzynarodowa Gwarancja na Implanty',
+        'Nawigacja Komputerowa z Tomografią 3D CBCT',
+        'Monolityczne Mosty Cyrkonowe (1200 MPa)',
+        'Natychmiastowe Zęby Tymczasowe w Dniu Zabiegu',
+      ],
+      img: 'https://sohodent.com/doc/data1/All-on-6-implant-package-3.jpg',
+      href: '/treatments/dental-implants',
+      btnText: 'Zobacz Implanty Zębowe i Pakiety →',
+      popularTechniquesLabel: 'Specjalistyczne Techniki i Podstrony:',
+      sublinks: [
+        { label: 'Implanty All-on-4', href: '/treatments/dental-implants/all-on-4-implants' },
+        { label: 'Implanty All-on-6', href: '/treatments/dental-implants/all-on-6-implants' },
+        { label: 'Implanty Jednodniowe', href: '/treatments/dental-implants/immediate-implants' },
+        { label: 'Implanty Zygomatyczne', href: '/treatments/dental-implants/zygomatic-implants' },
+        { label: 'Podniesienie Dna Zatoki', href: '/treatments/dental-implants/sinus-lifting' },
+      ],
+    },
+    gridItems: [
       {
         tag: 'PROJEKTOWANIE UŚMIECHU',
         duration: '4–6 Dni (1 Wizyta)',
@@ -519,24 +553,31 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
     heading: 'Explore Nossos Tratamentos Odontológicos em Istambul',
     subText:
       'De implantes em titânio e facetas suíças E-Max a endodontia microscópica e transformações Hollywood Smile.',
-    items: [
-      {
-        tag: 'IMPLANTODONTIA & CIRURGIA',
-        duration: '1–2 Viagens (3–5 Dias)',
-        title: 'Implantes Dentários & Reabilitação Total',
-        desc: 'Substituição definitiva de dentes com garantia vitalícia em implantes suíços Straumann e titânio de alta precisão.',
-        img: 'https://sohodent.com/doc/data1/All-on-6-implant-package-3.jpg',
-        href: '/treatments/dental-implants',
-        btnText: 'Ver Implantes Dentários →',
-        popularTechniquesLabel: 'Técnicas e Subpáginas Populares:',
-        sublinks: [
-          { label: 'Implantes All-on-4', href: '/treatments/dental-implants/all-on-4-implants' },
-          { label: 'Implantes All-on-6', href: '/treatments/dental-implants/all-on-6-implants' },
-          { label: 'Implantes Imediatos', href: '/treatments/dental-implants/immediate-implants' },
-          { label: 'Implantes Zigomáticos', href: '/treatments/dental-implants/zygomatic-implants' },
-          { label: 'Levantamento de Seio Maxilar', href: '/treatments/dental-implants/sinus-lifting' },
-        ],
-      },
+    featured: {
+      eyebrow: 'PRINCIPAL ESPECIALIDADE CIRÚRGICA',
+      tag: 'IMPLANTODONTIA & CIRURGIA',
+      duration: '1–2 Viagens (3–5 Dias)',
+      title: 'Implantes Dentários & Reabilitação Total',
+      desc: 'Substituição definitiva de dentes unitários, múltiplos ou edentulismo total com garantia vitalícia internacional. Utilizamos sistemas suíços Straumann, Medentika e titânio alemão guiados por tomografia 3D CBCT com pontes em zircônia monolítica.',
+      highlights: [
+        'Garantia Vitalícia Internacional em Implantes',
+        'Cirurgia Guiada por Tomografia 3D CBCT',
+        'Pontes em Zircônia Monolítica (1200 MPa)',
+        'Dentes Provisórios Fixos no Mesmo Dia',
+      ],
+      img: 'https://sohodent.com/doc/data1/All-on-6-implant-package-3.jpg',
+      href: '/treatments/dental-implants',
+      btnText: 'Ver Implantes Dentários e Pacotes →',
+      popularTechniquesLabel: 'Técnicas Especializadas e Subpáginas:',
+      sublinks: [
+        { label: 'Implantes All-on-4', href: '/treatments/dental-implants/all-on-4-implants' },
+        { label: 'Implantes All-on-6', href: '/treatments/dental-implants/all-on-6-implants' },
+        { label: 'Implantes Imediatos', href: '/treatments/dental-implants/immediate-implants' },
+        { label: 'Implantes Zigomáticos', href: '/treatments/dental-implants/zygomatic-implants' },
+        { label: 'Levantamento de Seio Maxilar', href: '/treatments/dental-implants/sinus-lifting' },
+      ],
+    },
+    gridItems: [
       {
         tag: 'DESIGN DO SORRISO',
         duration: '4–6 Dias (1 Viagem)',
@@ -640,24 +681,31 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
     heading: 'Descubra Nuestros Tratamientos Dentales en Estambul',
     subText:
       'Desde implantes de titanio y carillas suizas E-Max hasta endodoncia microscópica y transformaciones Hollywood Smile.',
-    items: [
-      {
-        tag: 'IMPLANTOLOGÍA Y CIRUGÍA',
-        duration: '1–2 Viajes (3–5 Días)',
-        title: 'Implantes Dentales y Dientes Fijos',
-        desc: 'Reposición permanente de piezas ausentes con garantía de por vida en implantes suizos Straumann y titanio de máxima pureza.',
-        img: 'https://sohodent.com/doc/data1/All-on-6-implant-package-3.jpg',
-        href: '/treatments/dental-implants',
-        btnText: 'Ver Implantes Dentales →',
-        popularTechniquesLabel: 'Técnicas y Subpáginas Populares:',
-        sublinks: [
-          { label: 'Implantes All-on-4', href: '/treatments/dental-implants/all-on-4-implants' },
-          { label: 'Implantes All-on-6', href: '/treatments/dental-implants/all-on-6-implants' },
-          { label: 'Implantes Inmediatos', href: '/treatments/dental-implants/immediate-implants' },
-          { label: 'Implantes Cigomáticos', href: '/treatments/dental-implants/zygomatic-implants' },
-          { label: 'Elevación de Seno Maxilar', href: '/treatments/dental-implants/sinus-lifting' },
-        ],
-      },
+    featured: {
+      eyebrow: 'DISCIPLINA QUIRÚRGICA DE REFERENCIA',
+      tag: 'IMPLANTOLOGÍA Y CIRUGÍA',
+      duration: '1–2 Viajes (3–5 Días)',
+      title: 'Implantes Dentales y Reconstrucción Total',
+      desc: 'Reposición fija de piezas ausentes o edentulismo total con garantía internacional de por vida. Empleamos implantes suizos Straumann, Medentika y titanio alemán guiados por TAC 3D CBCT y puentes de zirconio monolítico para máxima fuerza masticatoria.',
+      highlights: [
+        'Garantía Internacional de por Vida en Implantes',
+        'Cirugía Guiada por Navegación TAC 3D CBCT',
+        'Puentes de Zirconio Monolítico (1200 MPa)',
+        'Dientes Provisionales Fijos el Mismo Día',
+      ],
+      img: 'https://sohodent.com/doc/data1/All-on-6-implant-package-3.jpg',
+      href: '/treatments/dental-implants',
+      btnText: 'Ver Implantes Dentales y Paquetes →',
+      popularTechniquesLabel: 'Técnicas Especializadas y Subpáginas:',
+      sublinks: [
+        { label: 'Implantes All-on-4', href: '/treatments/dental-implants/all-on-4-implants' },
+        { label: 'Implantes All-on-6', href: '/treatments/dental-implants/all-on-6-implants' },
+        { label: 'Implantes Inmediatos', href: '/treatments/dental-implants/immediate-implants' },
+        { label: 'Implantes Cigomáticos', href: '/treatments/dental-implants/zygomatic-implants' },
+        { label: 'Elevación de Seno Maxilar', href: '/treatments/dental-implants/sinus-lifting' },
+      ],
+    },
+    gridItems: [
       {
         tag: 'DISEÑO DE SONRISA',
         duration: '4–6 Días (1 Viaje)',
@@ -761,24 +809,31 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
     heading: 'Исследуйте наши передовые стоматологические процедуры в Стамбуле',
     subText:
       'От титановых имплантов и швейцарских виниров E-Max до лечения каналов под микроскопом и Голливудской улыбки.',
-    items: [
-      {
-        tag: 'ХИРУРГИЯ И ИМПЛАНТАЦИЯ',
-        duration: '1–2 Визита (3–5 Дней)',
-        title: 'Имплантация зубов и восстановление челюсти',
-        desc: 'Пожизненная гарантия на швейцарские импланты Straumann и титановые системы при частичном и полном отсутствии зубов.',
-        img: 'https://sohodent.com/doc/data1/All-on-6-implant-package-3.jpg',
-        href: '/treatments/dental-implants',
-        btnText: 'Изучить Имплантацию →',
-        popularTechniquesLabel: 'Популярные методики и страницы:',
-        sublinks: [
-          { label: 'Имплантация All-on-4', href: '/treatments/dental-implants/all-on-4-implants' },
-          { label: 'Имплантация All-on-6', href: '/treatments/dental-implants/all-on-6-implants' },
-          { label: 'Одномоментная имплантация', href: '/treatments/dental-implants/immediate-implants' },
-          { label: 'Скуловые импланты Zygoma', href: '/treatments/dental-implants/zygomatic-implants' },
-          { label: 'Синус-лифтинг', href: '/treatments/dental-implants/sinus-lifting' },
-        ],
-      },
+    featured: {
+      eyebrow: 'ФЛАГМАНСКАЯ ХИРУРГИЧЕСКАЯ ДИСЦИПЛИНА',
+      tag: 'ХИРУРГИЯ И ИМПЛАНТАЦИЯ',
+      duration: '1–2 Визита (3–5 Дней)',
+      title: 'Имплантация зубов и восстановление челюсти',
+      desc: 'Постоянное восстановление зубов при частичной и полной адентии с пожизненной международной гарантией. Мы используем швейцарские системы Straumann, Medentika и немецкий титан под контролем 3D КТ с монолитными циркониевыми мостами для непревзойденной жевательной прочности.',
+      highlights: [
+        'Пожизненная международная гарантия на имплантаты',
+        'Компьютерная 3D навигация по хирургическим шаблонам',
+        'Монолитные немецкие циркониевые мосты (1200 МПа)',
+        'Несъемные временные зубы в первый день операции',
+      ],
+      img: 'https://sohodent.com/doc/data1/All-on-6-implant-package-3.jpg',
+      href: '/treatments/dental-implants',
+      btnText: 'Изучить Имплантацию и Пакеты →',
+      popularTechniquesLabel: 'Специализированные методики и подстраницы:',
+      sublinks: [
+        { label: 'Имплантация All-on-4', href: '/treatments/dental-implants/all-on-4-implants' },
+        { label: 'Имплантация All-on-6', href: '/treatments/dental-implants/all-on-6-implants' },
+        { label: 'Одномоментная имплантация', href: '/treatments/dental-implants/immediate-implants' },
+        { label: 'Скуловые импланты Zygoma', href: '/treatments/dental-implants/zygomatic-implants' },
+        { label: 'Синус-лифтинг', href: '/treatments/dental-implants/sinus-lifting' },
+      ],
+    },
+    gridItems: [
       {
         tag: 'ДИЗАЙН УЛЫБКИ',
         duration: '4–6 Дней (1 Визит)',
@@ -866,7 +921,7 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         img: 'https://sohodent.com/doc/data1/root-canal-copy.webp',
         href: '/treatments/general-dentistry',
         btnText: 'Изучить Терапию →',
-        popularTechniquesLabel: 'Популярные методики и страницы:',
+        popularTechniquesLabel: 'Популярные методиki и страницы:',
         sublinks: [
           { label: 'Лечение каналов под микроскопом', href: '/treatments/general-dentistry/root-canal' },
           { label: 'Чистка зубов Swiss Air-Flow', href: '/treatments/general-dentistry/dental-cleaning' },
@@ -882,10 +937,12 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
 export default function TreatmentsHubDisciplineShowcase() {
   const locale = useLocale();
   const data = SHOWCASE_DATA[locale] || SHOWCASE_DATA.en;
+  const f = data.featured;
 
   return (
     <section aria-labelledby="hub-disciplines-heading" className={styles.wrapper}>
       <div className={styles.container}>
+        {/* Section Header */}
         <div className={styles.headerWrap}>
           <span className={styles.badge}>{data.badge}</span>
           <h2 id="hub-disciplines-heading" className={styles.mainHeading}>
@@ -894,8 +951,69 @@ export default function TreatmentsHubDisciplineShowcase() {
           <p className={styles.subText}>{data.subText}</p>
         </div>
 
+        {/* 1. TOP FULL-WIDTH FLAGSHIP IMPLANT CARD */}
+        <article className={styles.featuredCard}>
+          <div className={styles.featuredImageWrap}>
+            <span className={styles.featuredTagBadge}>{f.tag}</span>
+            <span className={styles.featuredDurationBadge}>{f.duration}</span>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={f.img}
+              alt={f.title}
+              className={styles.featuredImage}
+              loading="lazy"
+            />
+          </div>
+
+          <div className={styles.featuredContent}>
+            <div>
+              <span className={styles.featuredEyebrow}>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+                {f.eyebrow}
+              </span>
+              <h3 className={styles.featuredTitle}>{f.title}</h3>
+              <p className={styles.featuredDesc}>{f.desc}</p>
+
+              {/* Gold Feature Checklist */}
+              <ul className={styles.featuredChecklist}>
+                {f.highlights.map((h, hIdx) => (
+                  <li key={hIdx} className={styles.checkItem}>
+                    <span className={styles.checkIcon}>✓</span>
+                    <span>{h}</span>
+                  </li>
+                ))}
+              </ul>
+
+              {/* Sublinks */}
+              <div className={styles.subLinksTitle}>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z" />
+                </svg>
+                <span>{f.popularTechniquesLabel}</span>
+              </div>
+
+              <ul className={styles.subLinksList}>
+                {f.sublinks.map((sub, sIdx) => (
+                  <li key={sIdx} className={styles.subLinkItem}>
+                    <Link href={sub.href}>{sub.label}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className={styles.actionRow}>
+              <Link href={f.href} className={styles.featuredBtn}>
+                <span>{f.btnText}</span>
+              </Link>
+            </div>
+          </div>
+        </article>
+
+        {/* 2. BALANCED 2x3 GRID FOR REMAINING 6 DISCIPLINES */}
         <div className={styles.grid}>
-          {data.items.map((item, idx) => (
+          {data.gridItems.map((item, idx) => (
             <article key={idx} className={styles.card}>
               <div className={styles.imageWrap}>
                 <span className={styles.tagBadge}>{item.tag}</span>

@@ -14,7 +14,7 @@
 .headerWrap {
   text-align: center;
   margin-bottom: 3.5rem;
-  max-width: 800px;
+  max-width: 840px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -44,9 +44,240 @@
   line-height: 1.7;
 }
 
+/* =========================================================================
+   FEATURED FLAGSHIP IMPLANT CARD (FULL WIDTH)
+   ========================================================================= */
+.featuredCard {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  border-radius: 24px;
+  border: 2px solid #e2e8f0;
+  overflow: hidden;
+  box-shadow: 0 20px 45px rgba(12, 27, 77, 0.07);
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 0;
+  margin-bottom: 3rem;
+  transition: all 0.35s ease;
+  position: relative;
+}
+
+.featuredCard:hover {
+  transform: translateY(-4px);
+  border-color: #D58936;
+  box-shadow: 0 30px 60px rgba(213, 137, 54, 0.15);
+}
+
+.featuredImageWrap {
+  position: relative;
+  width: 100%;
+  min-height: 420px;
+  background-color: #0f172a;
+  overflow: hidden;
+}
+
+.featuredImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s ease;
+}
+
+.featuredCard:hover .featuredImage {
+  transform: scale(1.04);
+}
+
+.featuredTagBadge {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  background: rgba(12, 27, 77, 0.9);
+  backdrop-filter: blur(8px);
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.45rem 1rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  z-index: 2;
+}
+
+.featuredDurationBadge {
+  position: absolute;
+  bottom: 18px;
+  right: 18px;
+  background: #D58936;
+  color: #ffffff;
+  font-size: 0.82rem;
+  font-weight: 800;
+  padding: 0.45rem 1.1rem;
+  border-radius: 9999px;
+  box-shadow: 0 4px 14px rgba(213, 137, 54, 0.45);
+  z-index: 2;
+}
+
+.featuredContent {
+  padding: 3rem 2.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.featuredEyebrow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #D58936;
+  font-size: 0.85rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.75rem;
+}
+
+.featuredTitle {
+  font-size: clamp(1.6rem, 2.3vw, 2.15rem);
+  font-weight: 800;
+  color: #0c1b4d;
+  line-height: 1.25;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.featuredDesc {
+  font-size: 1.02rem;
+  color: #475569;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.featuredChecklist {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin-bottom: 1.75rem;
+  padding: 0;
+  list-style: none;
+}
+
+.checkItem {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.checkIcon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fef3c7;
+  color: #b45309;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  flex-shrink: 0;
+}
+
+.subLinksTitle {
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #D58936;
+  margin-bottom: 0.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.subLinksList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  padding: 0;
+  list-style: none;
+}
+
+.subLinkItem a {
+  display: inline-block;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #334155;
+  background-color: #f1f5f9;
+  padding: 0.4rem 0.85rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: 1px solid #e2e8f0;
+}
+
+.subLinkItem a:hover {
+  background-color: #0c1b4d;
+  color: #ffffff;
+  border-color: #0c1b4d;
+}
+
+.actionRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  padding-top: 1.25rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.primaryBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #0c1b4d;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 0.85rem 1.6rem;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.primaryBtn:hover {
+  background-color: #D58936;
+  box-shadow: 0 8px 25px rgba(213, 137, 54, 0.35);
+  transform: translateX(4px);
+}
+
+.featuredBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #0c1b4d;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 1rem;
+  padding: 0.95rem 2rem;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.featuredBtn:hover {
+  background-color: #D58936;
+  box-shadow: 0 8px 25px rgba(213, 137, 54, 0.4);
+  transform: translateX(4px);
+}
+
+/* =========================================================================
+   2x3 GRID FOR REMAINING 6 TREATMENTS
+   ========================================================================= */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
 
@@ -141,89 +372,29 @@
   flex-grow: 1;
 }
 
-.subLinksTitle {
-  font-size: 0.8rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: #D58936;
-  margin-bottom: 0.6rem;
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-}
-
-.subLinksList {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-bottom: 1.75rem;
-  padding: 0;
-  list-style: none;
-}
-
-.subLinkItem a {
-  display: inline-block;
-  font-size: 0.82rem;
-  font-weight: 600;
-  color: #334155;
-  background-color: #f1f5f9;
-  padding: 0.35rem 0.75rem;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: all 0.2s ease;
-  border: 1px solid transparent;
-}
-
-.subLinkItem a:hover {
-  background-color: #0c1b4d;
-  color: #ffffff;
-  border-color: #0c1b4d;
-}
-
-.actionRow {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: auto;
-  padding-top: 1.25rem;
-  border-top: 1px solid #f1f5f9;
-}
-
-.primaryBtn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  background-color: #0c1b4d;
-  color: #ffffff;
-  font-weight: 700;
-  font-size: 0.92rem;
-  padding: 0.75rem 1.4rem;
-  border-radius: 12px;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.primaryBtn:hover {
-  background-color: #D58936;
-  box-shadow: 0 6px 20px rgba(213, 137, 54, 0.35);
-  transform: translateX(3px);
-}
-
-.priceEstimate {
-  font-size: 0.85rem;
-  color: #64748b;
-  font-weight: 600;
-}
-
-.priceHighlight {
-  color: #0c1b4d;
-  font-weight: 800;
-  font-size: 0.95rem;
+/* =========================================================================
+   RESPONSIVE BREAKPOINTS
+   ========================================================================= */
+@media (max-width: 1024px) {
+  .featuredCard {
+    grid-template-columns: 1fr;
+  }
+  .featuredImageWrap {
+    min-height: 320px;
+  }
+  .featuredContent {
+    padding: 2rem;
+  }
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 768px) {
   .grid {
+    grid-template-columns: 1fr;
+  }
+  .featuredChecklist {
     grid-template-columns: 1fr;
   }
   .content {
