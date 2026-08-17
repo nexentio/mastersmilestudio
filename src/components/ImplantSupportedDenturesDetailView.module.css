@@ -1,4 +1,4 @@
-/* Clean CSS Module for ImplantSupportedDenturesDetailView with Full 15-Part Luxury Standard */
+/* Clean, Dedicated CSS Module for ImplantSupportedDenturesDetailView */
 .wrapper {
   width: 100%;
   position: relative;
@@ -13,575 +13,7 @@
 }
 
 /* =========================================================================
-   1. INTRO & CLINICAL BIOMECHANICS SECTION
-   ========================================================================= */
-.introSection {
-  padding: 5rem 0 3.5rem 0;
-}
-
-.introHeading {
-  font-size: clamp(2rem, 3.5vw, 2.75rem);
-  font-weight: 800;
-  color: #0c1b4d;
-  line-height: 1.2;
-  margin-bottom: 1rem;
-  letter-spacing: -0.025em;
-}
-
-.introLead {
-  font-size: 1.12rem;
-  color: #D58936;
-  font-weight: 700;
-  margin-bottom: 1.25rem;
-  line-height: 1.6;
-}
-
-.textP {
-  font-size: 1.02rem;
-  color: #475569;
-  line-height: 1.75;
-  margin-bottom: 1.25rem;
-}
-
-.textItalic {
-  font-size: 0.95rem;
-  color: #64748b;
-  font-style: italic;
-  margin-bottom: 1.25rem;
-}
-
-.linkGold {
-  color: #D58936;
-  font-weight: 700;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  transition: color 0.2s ease;
-}
-
-.linkGold:hover {
-  color: #0c1b4d;
-}
-
-.mainVideoWrap {
-  width: 100%;
-  max-width: 100%;
-  margin: 2.5rem 0;
-  position: relative;
-  aspect-ratio: 16 / 9;
-  border-radius: 18px;
-  overflow: hidden;
-  background-color: #09090b;
-  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.12);
-  border: 1px solid #e2e8f0;
-}
-
-.mainVideoWrap iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-
-/* =========================================================================
-   1.5. CANDIDACY & CLINICAL INDICATION CHECKLIST
-   ========================================================================= */
-.candidacySection {
-  margin: 3.5rem 0 1rem 0;
-  background-color: #f8fafc;
-  border-radius: 18px;
-  padding: 2.5rem 2rem;
-  border: 1px solid #e2e8f0;
-}
-
-.candidacyHeader {
-  margin-bottom: 2rem;
-  text-align: left;
-}
-
-.candidacyTitle {
-  font-size: clamp(1.4rem, 2.2vw, 1.85rem);
-  font-weight: 800;
-  color: #0c1b4d;
-  margin-bottom: 0.5rem;
-}
-
-.candidacySubtitle {
-  font-size: 0.98rem;
-  color: #64748b;
-  line-height: 1.6;
-}
-
-.candidacyGrid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
-}
-
-.candidacyCard {
-  background-color: #ffffff;
-  border-radius: 14px;
-  padding: 1.35rem 1.25rem;
-  border: 1px solid #e2e8f0;
-  display: flex;
-  flex-direction: column;
-  gap: 0.35rem;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
-}
-
-.candidacyCardTitle {
-  font-size: 1.05rem;
-  font-weight: 800;
-  color: #0c1b4d;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.candidacyCardTitle::before {
-  content: '✓';
-  color: #10b981;
-  font-weight: 900;
-}
-
-.candidacyCardDesc {
-  font-size: 0.88rem;
-  color: #475569;
-  line-height: 1.6;
-}
-
-/* =========================================================================
-   2. OBJECTIVE COMPARISON: SNAP-ON vs BAR-RETAINED vs TRADITIONAL DENTURES vs ALL-ON-4
-   ========================================================================= */
-.compareSection {
-  padding: 5rem 0;
-  background-color: #ffffff;
-  border-top: 1px solid #e2e8f0;
-}
-
-.compareHeader {
-  text-align: center;
-  margin-bottom: 3rem;
-  max-width: 860px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.compareTitle {
-  font-size: clamp(1.85rem, 3vw, 2.5rem);
-  font-weight: 800;
-  color: #0c1b4d;
-  margin-bottom: 0.85rem;
-  letter-spacing: -0.02em;
-}
-
-.compareSubtitle {
-  font-size: 1.05rem;
-  color: #64748b;
-  line-height: 1.7;
-}
-
-.compareTableWrap {
-  width: 100%;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  background-color: #ffffff;
-  border-radius: 16px;
-  border: 1px solid #e2e8f0;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
-  margin-bottom: 2.5rem;
-}
-
-.compareTable {
-  width: 100%;
-  min-width: 680px;
-  border-collapse: collapse;
-  text-align: left;
-  font-size: 0.92rem;
-}
-
-.compareTh {
-  background-color: #0c1b4d;
-  color: #ffffff;
-  padding: 1.1rem 1.25rem;
-  font-weight: 700;
-  font-size: 0.88rem;
-  letter-spacing: 0.02em;
-}
-
-.compareThHighlight {
-  background-color: #D58936;
-  color: #ffffff;
-  padding: 1.1rem 1.25rem;
-  font-weight: 800;
-}
-
-.compareTd {
-  padding: 1rem 1.25rem;
-  border-bottom: 1px solid #f1f5f9;
-  color: #334155;
-  vertical-align: middle;
-  line-height: 1.6;
-}
-
-.compareTdHighlight {
-  background-color: #fdfbf7;
-  font-weight: 700;
-  color: #0c1b4d;
-  border-left: 2px solid #D58936;
-  border-right: 2px solid #D58936;
-}
-
-.compareDecisionBox {
-  background-color: #f8fafc;
-  border: 1px solid #e2e8f0;
-  border-radius: 16px;
-  padding: 2.25rem;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-}
-
-.compareDecisionCol {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.compareDecisionTitle {
-  font-size: 1.15rem;
-  font-weight: 800;
-  color: #0c1b4d;
-}
-
-.compareDecisionText {
-  font-size: 0.94rem;
-  color: #475569;
-  line-height: 1.7;
-}
-
-/* =========================================================================
-   3. 3-PHASE PRECISION PROTOCOL
-   ========================================================================= */
-.processSection {
-  padding: 5rem 0;
-  background-color: #f8fafc;
-  border-top: 1px solid #e2e8f0;
-  border-bottom: 1px solid #e2e8f0;
-}
-
-.processHeader {
-  text-align: center;
-  margin-bottom: 3.5rem;
-  max-width: 860px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.processTitle {
-  font-size: clamp(1.85rem, 3vw, 2.5rem);
-  font-weight: 800;
-  color: #0c1b4d;
-  margin-bottom: 0.85rem;
-  letter-spacing: -0.02em;
-}
-
-.processSubtitle {
-  font-size: 1.05rem;
-  color: #64748b;
-  line-height: 1.7;
-}
-
-.processGrid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-}
-
-.processCard {
-  background-color: #ffffff;
-  border: 1px solid #e2e8f0;
-  border-radius: 18px;
-  padding: 2.25rem 1.75rem;
-  position: relative;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.processCard:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 30px rgba(12, 27, 77, 0.08);
-}
-
-.processStepNum {
-  font-size: 0.78rem;
-  font-weight: 800;
-  color: #D58936;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  margin-bottom: 0.5rem;
-  display: block;
-}
-
-.processCardTitle {
-  font-size: 1.22rem;
-  font-weight: 800;
-  color: #0c1b4d;
-  margin-bottom: 0.75rem;
-  line-height: 1.35;
-}
-
-.processCardText {
-  font-size: 0.92rem;
-  color: #475569;
-  line-height: 1.7;
-  margin-bottom: 1.25rem;
-}
-
-.processCardSpecs {
-  background-color: #f8fafc;
-  border-radius: 12px;
-  padding: 0.85rem 1rem;
-  border: 1px solid #f1f5f9;
-  display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
-}
-
-.processSpecItem {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.84rem;
-  padding: 0.25rem 0;
-  border-bottom: 1px dashed #e2e8f0;
-}
-
-.processSpecItem:last-child {
-  border-bottom: none;
-}
-
-.processSpecKey {
-  color: #64748b;
-  font-weight: 600;
-}
-
-.processSpecVal {
-  color: #0c1b4d;
-  font-weight: 700;
-}
-
-/* =========================================================================
-   4. PERMANENT OVERDENTURE MATERIALS COMPARISON
-   ========================================================================= */
-.materialsSection {
-  padding: 5rem 0;
-  background-color: #ffffff;
-  border-top: 1px solid #e2e8f0;
-}
-
-.materialsHeader {
-  text-align: center;
-  margin-bottom: 3.5rem;
-  max-width: 860px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.materialsTitle {
-  font-size: clamp(1.85rem, 3vw, 2.5rem);
-  font-weight: 800;
-  color: #0c1b4d;
-  margin-bottom: 0.85rem;
-  letter-spacing: -0.02em;
-}
-
-.materialsSubtitle {
-  font-size: 1.05rem;
-  color: #64748b;
-  line-height: 1.7;
-}
-
-.materialsGrid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  margin-bottom: 3.5rem;
-}
-
-.materialCard {
-  background-color: #ffffff;
-  border: 1px solid #e2e8f0;
-  border-radius: 20px;
-  padding: 2.25rem 1.75rem;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
-  transition: transform 0.2s ease, border-color 0.2s ease;
-}
-
-.materialCard:hover {
-  transform: translateY(-4px);
-  border-color: #cbd5e1;
-}
-
-.materialCardGold {
-  border: 2px solid #D58936;
-  background-color: #fdfbf7;
-  box-shadow: 0 10px 30px rgba(213, 137, 54, 0.12);
-}
-
-.materialStandardBadge {
-  position: absolute;
-  top: -13px;
-  left: 20px;
-  background-color: #D58936;
-  color: #ffffff;
-  font-size: 0.72rem;
-  font-weight: 800;
-  padding: 0.25rem 0.85rem;
-  border-radius: 9999px;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-}
-
-.materialCardTitle {
-  font-size: 1.25rem;
-  font-weight: 800;
-  color: #0c1b4d;
-  margin-bottom: 0.25rem;
-}
-
-.materialCardSub {
-  font-size: 0.86rem;
-  color: #64748b;
-  margin-bottom: 1.25rem;
-  display: block;
-}
-
-.materialSpecsBox {
-  background-color: #ffffff;
-  border: 1px solid #e2e8f0;
-  border-radius: 12px;
-  padding: 0.85rem 1rem;
-  margin-bottom: 1.25rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.45rem;
-}
-
-.materialSpecRow {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.84rem;
-  color: #334155;
-}
-
-.materialSpecLabel {
-  color: #64748b;
-  font-weight: 500;
-}
-
-.materialSpecVal {
-  font-weight: 700;
-  color: #0c1b4d;
-}
-
-.materialSpecValGold {
-  color: #b45309;
-  font-weight: 800;
-}
-
-.materialList {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0.65rem;
-}
-
-.materialListItem {
-  font-size: 0.88rem;
-  color: #475569;
-  display: flex;
-  align-items: flex-start;
-  gap: 0.5rem;
-  line-height: 1.5;
-}
-
-.matCheck {
-  color: #10b981;
-  font-weight: 800;
-  flex-shrink: 0;
-}
-
-.matCross {
-  color: #ef4444;
-  font-weight: 800;
-  flex-shrink: 0;
-}
-
-.matWarn {
-  color: #f59e0b;
-  font-weight: 800;
-  flex-shrink: 0;
-}
-
-.materialsTableWrap {
-  width: 100%;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  background-color: #ffffff;
-  border-radius: 16px;
-  border: 1px solid #e2e8f0;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
-}
-
-.materialsTable {
-  width: 100%;
-  min-width: 680px;
-  border-collapse: collapse;
-  text-align: left;
-  font-size: 0.92rem;
-}
-
-.materialsTh {
-  background-color: #0c1b4d;
-  color: #ffffff;
-  padding: 1.1rem 1.25rem;
-  font-weight: 700;
-  font-size: 0.88rem;
-  letter-spacing: 0.02em;
-}
-
-.materialsThGold {
-  background-color: #D58936;
-  color: #ffffff;
-  padding: 1.1rem 1.25rem;
-  font-weight: 800;
-}
-
-.materialsTd {
-  padding: 1rem 1.25rem;
-  border-bottom: 1px solid #f1f5f9;
-  color: #334155;
-  vertical-align: middle;
-}
-
-.materialsTdHighlight {
-  background-color: #fdfbf7;
-  font-weight: 700;
-  color: #0c1b4d;
-}
-
-/* =========================================================================
-   5. PACKAGES & CURRENCY SECTION
+   PACKAGES & DYNAMIC CURRENCY SECTION (SINGLE-ROW HORIZONTAL SLIDER)
    ========================================================================= */
 .packagesSection {
   padding: 5rem 0;
@@ -603,12 +35,22 @@
   font-weight: 800;
   color: #0c1b4d;
   margin-bottom: 0.75rem;
+  letter-spacing: -0.02em;
 }
 
 .packagesSubtitle {
-  font-size: 1rem;
+  font-size: 1.02rem;
   color: #64748b;
-  line-height: 1.6;
+  line-height: 1.65;
+}
+
+.pkgSliderControls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1.25rem;
 }
 
 .currencyBar {
@@ -616,14 +58,12 @@
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  margin-bottom: 3rem;
   background-color: #ffffff;
   padding: 0.35rem;
   border-radius: 14px;
   border: 1px solid #e2e8f0;
   width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0;
 }
 
 .currencyLabel {
@@ -661,14 +101,59 @@
   color: #ffffff;
 }
 
-/* Package Grid */
-.pkgGrid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+.sliderNavBtns {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.sliderNavBtn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  color: #0c1b4d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.sliderNavBtn:hover {
+  background-color: #0c1b4d;
+  color: #ffffff;
+  border-color: #0c1b4d;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(12, 27, 77, 0.15);
+}
+
+.sliderNavBtn:active {
+  transform: translateY(0);
+}
+
+/* Single-row Horizontal Package Track */
+.pkgSliderTrack {
+  display: flex;
+  flex-direction: row;
+  gap: 1.75rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding: 1rem 0.25rem 2rem 0.25rem;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.pkgSliderTrack::-webkit-scrollbar {
+  display: none;
 }
 
 .pkgCard {
+  flex: 0 0 380px;
+  scroll-snap-align: start;
   background-color: #ffffff;
   border-radius: 20px;
   border: 1px solid #e2e8f0;
@@ -679,6 +164,13 @@
   position: relative;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
   transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+@media (max-width: 480px) {
+  .pkgCard {
+    flex: 0 0 300px;
+    padding: 1.5rem 1.25rem;
+  }
 }
 
 .pkgCard:hover {
@@ -769,8 +261,9 @@
   font-size: 0.86rem;
   color: #475569;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 0.5rem;
+  line-height: 1.45;
 }
 
 .pkgCheck {
@@ -833,409 +326,149 @@
 }
 
 /* =========================================================================
-   6. INTERNATIONAL COST COMPARISON SECTION (UK / GERMANY vs ISTANBUL)
-   ========================================================================= */
-.costSection {
-  padding: 5rem 0;
-  background-color: #ffffff;
-  border-top: 1px solid #e2e8f0;
-}
-
-.costHeader {
-  text-align: center;
-  margin-bottom: 3rem;
-  max-width: 860px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.costTitle {
-  font-size: clamp(1.85rem, 3vw, 2.5rem);
-  font-weight: 800;
-  color: #0c1b4d;
-  margin-bottom: 0.85rem;
-  letter-spacing: -0.02em;
-}
-
-.costSubtitle {
-  font-size: 1.05rem;
-  color: #64748b;
-  line-height: 1.7;
-}
-
-.costTableWrap {
-  width: 100%;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  background-color: #ffffff;
-  border-radius: 16px;
-  border: 1px solid #e2e8f0;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
-}
-
-.costTable {
-  width: 100%;
-  min-width: 680px;
-  border-collapse: collapse;
-  text-align: left;
-  font-size: 0.92rem;
-}
-
-.costTh {
-  background-color: #0c1b4d;
-  color: #ffffff;
-  padding: 1.1rem 1.25rem;
-  font-weight: 700;
-  font-size: 0.88rem;
-  letter-spacing: 0.02em;
-}
-
-.costThHighlight {
-  background-color: #D58936;
-  color: #ffffff;
-  padding: 1.1rem 1.25rem;
-  font-weight: 800;
-}
-
-.costTd {
-  padding: 1.15rem 1.25rem;
-  border-bottom: 1px solid #f1f5f9;
-  color: #334155;
-  vertical-align: top;
-  line-height: 1.6;
-}
-
-.costTdHighlight {
-  background-color: #fdfbf7;
-  font-weight: 700;
-  color: #0c1b4d;
-  border-left: 2px solid #D58936;
-  border-right: 2px solid #D58936;
-}
-
-/* =========================================================================
-   7. FAQ SECTION (17 CLINICAL & HEALTH TOURISM QUESTIONS)
+   FAQ SECTION (1:1 ACCORDION STYLE)
    ========================================================================= */
 .faqSection {
   padding: 5.5rem 0;
-  background-color: #f8fafc;
+  background-color: #ffffff;
   border-top: 1px solid #e2e8f0;
 }
 
 .faqContainer {
-  max-width: 920px;
+  max-width: 960px;
   margin: 0 auto;
   padding: 0 1.5rem;
 }
 
 .faqHeader {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 3.5rem;
 }
 
 .faqTitle {
-  font-size: clamp(2rem, 3.2vw, 2.75rem);
+  font-size: clamp(2rem, 3.5vw, 2.75rem);
   font-weight: 800;
   color: #0c1b4d;
-  margin-bottom: 0.75rem;
-  letter-spacing: -0.02em;
+  margin-bottom: 0.85rem;
+  letter-spacing: -0.025em;
 }
 
 .faqSubtitle {
   font-size: 1.05rem;
   color: #64748b;
-  line-height: 1.65;
+  line-height: 1.7;
 }
 
-.faqCategoryGroup {
-  margin-bottom: 2.75rem;
-}
-
-.faqCategoryTitle {
-  font-size: 1.25rem;
-  font-weight: 800;
-  color: #0c1b4d;
-  margin-bottom: 1.25rem;
-  padding-bottom: 0.65rem;
-  border-bottom: 2px solid #e2e8f0;
-  display: flex;
-  align-items: center;
-}
-
-.faqList {
+.faqAccordion {
   display: flex;
   flex-direction: column;
-  gap: 0.85rem;
+  gap: 1rem;
 }
 
-.faqCard {
-  background-color: #ffffff;
-  border-radius: 14px;
+.faqItem {
   border: 1px solid #e2e8f0;
-  overflow: hidden;
+  border-radius: 16px;
+  background-color: #ffffff;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  overflow: hidden;
 }
 
-.faqCardOpen {
-  border-color: #D58936;
-  box-shadow: 0 4px 16px rgba(213, 137, 54, 0.08);
+.faqItem:hover {
+  border-color: #cbd5e1;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
 }
 
 .faqQuestionBtn {
   width: 100%;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 1.25rem 1.5rem;
-  background-color: transparent;
+  align-items: center;
+  padding: 1.35rem 1.75rem;
+  background: transparent;
   border: none;
   text-align: left;
   cursor: pointer;
-  font-size: 1.02rem;
-  font-weight: 700;
-  color: #0c1b4d;
   gap: 1rem;
 }
 
-.faqQuestionBtn:hover {
-  color: #D58936;
+.faqQuestionText {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #0c1b4d;
+  line-height: 1.45;
 }
 
-.faqToggleIcon {
-  color: #D58936;
-  font-size: 1.35rem;
-  font-weight: 800;
-  transition: transform 0.2s ease;
+.faqIconWrap {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #f1f5f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-shrink: 0;
+  color: #0c1b4d;
+  transition: transform 0.25s ease, background-color 0.25s ease, color 0.25s ease;
 }
 
-.faqToggleIconOpen {
-  transform: rotate(45deg);
+.faqIconActive {
+  transform: rotate(180deg);
+  background-color: #D58936;
+  color: #ffffff;
 }
 
 .faqAnswer {
-  padding: 0 1.5rem 1.35rem 1.5rem;
+  padding: 0 1.75rem 1.5rem 1.75rem;
   color: #475569;
   font-size: 0.95rem;
-  line-height: 1.72;
-  border-top: 1px solid #f8fafc;
+  line-height: 1.75;
+  border-top: 1px dashed #f1f5f9;
+  padding-top: 1rem;
+}
+
+.faqParagraph {
+  margin-bottom: 0.85rem;
+}
+
+.faqParagraph:last-child {
+  margin-bottom: 0;
 }
 
 /* =========================================================================
-   RESPONSIVE BREAKPOINTS
+   RESPONSIVE DESIGN BREAKPOINTS
    ========================================================================= */
-@media (max-width: 1024px) {
-  .candidacyGrid {
-    grid-template-columns: 1fr;
-  }
-  .compareDecisionBox {
-    grid-template-columns: 1fr;
-  }
-  .materialsGrid {
-    grid-template-columns: 1fr;
-  }
-  .pkgGrid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
 @media (max-width: 768px) {
-  .introSection {
-    padding: 3rem 0 1.5rem 0;
-  }
-  .candidacySection {
-    padding: 1.75rem 1.25rem;
-    margin: 2rem 0 0.5rem 0;
-  }
-  .compareSection,
-  .processSection,
-  .materialsSection,
   .packagesSection,
-  .costSection {
-    padding: 3rem 0;
+  .faqSection {
+    padding: 3.5rem 0;
   }
-  .compareHeader,
-  .processHeader,
-  .materialsHeader,
+
   .packagesHeader,
-  .costHeader {
-    margin-bottom: 1.75rem;
-  }
-  .compareSubtitle,
-  .processSubtitle,
-  .materialsSubtitle,
-  .packagesSubtitle,
-  .costSubtitle {
-    font-size: 0.9rem;
-    line-height: 1.55;
+  .faqHeader {
+    margin-bottom: 2rem;
   }
 
-  /* 3-Phase Process Cards: Horizontal Carousel with Peek Effect */
-  .processGrid {
-    display: flex;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    scroll-snap-type: x mandatory;
-    scroll-padding: 0 1.5rem;
-    gap: 1rem;
-    padding: 0.5rem 1.5rem 1.5rem 1.5rem;
-    margin-left: -1.5rem;
-    margin-right: -1.5rem;
-    scrollbar-width: none;
+  .pkgSliderControls {
+    flex-direction: column;
+    align-items: stretch;
   }
 
-  .processGrid::-webkit-scrollbar {
-    display: none;
-  }
-
-  .processCard {
-    flex: 0 0 82%;
-    max-width: 82%;
-    scroll-snap-align: start;
-    padding: 1.65rem 1.35rem;
-    border-radius: 16px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
-  }
-
-  .processCardTitle {
-    font-size: 1.12rem;
-    margin-bottom: 0.6rem;
-  }
-
-  .processCardText {
-    font-size: 0.88rem;
-    line-height: 1.6;
-    margin-bottom: 1.15rem;
-  }
-
-  .processCardSpecs {
-    padding: 0.75rem 0.85rem;
-  }
-
-  .processSpecItem {
-    font-size: 0.82rem;
-    padding: 0.3rem 0;
-  }
-
-  /* Compact Mobile Tables */
-  .compareTableWrap,
-  .materialsTableWrap,
-  .costTableWrap {
-    border-radius: 12px;
-    margin-bottom: 1.75rem;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
-  }
-
-  .compareTable,
-  .materialsTable,
-  .costTable {
-    min-width: 520px;
-    font-size: 0.82rem;
-  }
-
-  .compareTh,
-  .materialsTh,
-  .costTh {
-    padding: 0.65rem 0.7rem;
-    font-size: 0.76rem;
-    line-height: 1.3;
-  }
-
-  .compareThHighlight,
-  .materialsThGold,
-  .costThHighlight {
-    padding: 0.65rem 0.7rem;
-    font-size: 0.76rem;
-    line-height: 1.3;
-  }
-
-  .compareTd,
-  .materialsTd,
-  .costTd {
-    padding: 0.6rem 0.7rem;
-    font-size: 0.8rem;
-    line-height: 1.45;
-  }
-
-  .compareTdHighlight,
-  .materialsTdHighlight,
-  .costTdHighlight {
-    padding: 0.6rem 0.7rem;
-    font-size: 0.8rem;
-  }
-
-  .compareDecisionBox {
-    padding: 1.25rem 1rem;
-    gap: 1.25rem;
-    border-radius: 12px;
-  }
-
-  .compareDecisionTitle {
-    font-size: 1rem;
-  }
-
-  .compareDecisionText {
-    font-size: 0.84rem;
-    line-height: 1.55;
-  }
-
-  .pkgGrid {
-    grid-template-columns: 1fr;
-  }
   .currencyBar {
     width: 100%;
     justify-content: space-between;
   }
-  .currencyBtn {
-    padding: 0.45rem 0.85rem;
-    font-size: 0.8rem;
+
+  .sliderNavBtns {
+    justify-content: flex-end;
   }
-  .faqSection {
-    padding: 3rem 0;
-  }
+
   .faqQuestionBtn {
-    padding: 1rem 1.25rem;
-    font-size: 0.92rem;
+    padding: 1.1rem 1.25rem;
+    font-size: 0.95rem;
   }
+
   .faqAnswer {
-    padding: 0 1.25rem 1.15rem 1.25rem;
-    font-size: 0.86rem;
-    line-height: 1.6;
-  }
-}
-
-@media (max-width: 480px) {
-  .processCard {
-    flex: 0 0 84%;
-    max-width: 84%;
-    padding: 1.4rem 1.15rem;
-  }
-
-  .compareTable,
-  .materialsTable,
-  .costTable {
-    min-width: 480px;
-    font-size: 0.78rem;
-  }
-
-  .compareTh,
-  .materialsTh,
-  .costTh,
-  .compareThHighlight,
-  .materialsThGold,
-  .costThHighlight {
-    padding: 0.55rem 0.55rem;
-    font-size: 0.72rem;
-  }
-
-  .compareTd,
-  .materialsTd,
-  .costTd,
-  .compareTdHighlight,
-  .materialsTdHighlight,
-  .costTdHighlight {
-    padding: 0.5rem 0.55rem;
-    font-size: 0.76rem;
-    line-height: 1.4;
+    padding: 0 1.25rem 1.25rem 1.25rem;
+    font-size: 0.9rem;
   }
 }
