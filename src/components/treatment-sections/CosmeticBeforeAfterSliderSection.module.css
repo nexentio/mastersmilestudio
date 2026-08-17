@@ -1,0 +1,132 @@
+.sectba {
+  position: relative;
+  width: 100%;
+  padding: 30px 0 35px 0;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.standard_center4 {
+  width: 1200px;
+  max-width: 94%;
+  margin: 0 auto;
+}
+
+.head {
+  margin-bottom: 2.2rem;
+}
+
+.grid1 {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 35px;
+  align-items: center;
+}
+
+.headS1 {
+  font-family: var(--font-outfit), sans-serif;
+  font-size: clamp(2.2rem, 3.2vw, 2.9rem);
+  font-weight: 800;
+  color: #0c1b4d;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.headS2 {
+  font-family: var(--font-outfit), sans-serif;
+  font-size: 0.95rem;
+  color: #0c1b4d;
+  line-height: 1.6;
+  font-weight: 500;
+  margin: 0;
+}
+
+.sliderContainer {
+  position: relative;
+  width: 100%;
+}
+
+.sliderTrack {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding: 6px 4px 18px 4px;
+}
+
+.sliderTrack::-webkit-scrollbar {
+  display: none;
+}
+
+.cardItem {
+  flex: 0 0 calc((100% - 48px) / 4);
+  min-width: 260px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  background-color: #f8fafc;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+}
+
+.cardItem:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.14);
+}
+
+.imageWrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+
+.baImg {
+  object-fit: cover;
+}
+
+.dotsWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #cbd5e1;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.activeDot {
+  background-color: #38bdf8;
+  width: 18px;
+  border-radius: 4px;
+}
+
+@media (max-width: 1024px) {
+  .grid1 {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .cardItem {
+    flex: 0 0 calc((100% - 16px) / 2);
+    min-width: 240px;
+  }
+}
+
+@media (max-width: 640px) {
+  .cardItem {
+    flex: 0 0 85%;
+    min-width: 240px;
+  }
+}
