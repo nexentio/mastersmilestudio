@@ -5,10 +5,8 @@ import { useLocale } from 'next-intl';
 import { Link } from '@/i18n/routing';
 import TreatmentServicesIncludedSection from '@/components/treatment-sections/TreatmentServicesIncludedSection';
 import TreatmentParallaxBanner from '@/components/treatment-sections/TreatmentParallaxBanner';
-import TreatmentDoctorsSection from '@/components/treatment-sections/TreatmentDoctorsSection';
 import TreatmentJourneySimpleSection from '@/components/treatment-sections/TreatmentJourneySimpleSection';
 import TreatmentPatientReelsSection from '@/components/treatment-sections/TreatmentPatientReelsSection';
-import TreatmentClinicTourSection from '@/components/treatment-sections/TreatmentClinicTourSection';
 import TreatmentRightTreatmentAccordion from '@/components/treatment-sections/TreatmentRightTreatmentAccordion';
 import TreatmentReviewsSection from '@/components/treatment-sections/TreatmentReviewsSection';
 import TreatmentBeforeAfterSliderSection from '@/components/treatment-sections/TreatmentBeforeAfterSliderSection';
@@ -4369,25 +4367,19 @@ export default function ZygomaticImplantDetailView() {
         </div>
       </section>
 
-      {/* 11. REUSABLE: CLINIC TOUR */}
-      <TreatmentClinicTourSection placeholderNum="ZYG-TOUR" />
-
-      {/* 12. REUSABLE: FOUNDING SURGEONS */}
-      <TreatmentDoctorsSection />
-
-      {/* 13. REVIEWS & TRUSTPILOT / GOOGLE 5-STAR */}
-      <TreatmentReviewsSection />
-
-      {/* 14. REUSABLE: PARALLAX BANNER */}
-      <TreatmentParallaxBanner />
-
-      {/* 15. REUSABLE: PATIENT VIDEO REELS */}
+      {/* 11. REUSABLE: REAL PATIENTS. REAL SMILES. (PATIENT VIDEO REELS) */}
       <TreatmentPatientReelsSection />
 
-      {/* 16. REUSABLE: DENTAL JOURNEY TIMELINE */}
+      {/* 12. REVIEWS & TRUSTPILOT / GOOGLE 5-STAR */}
+      <TreatmentReviewsSection />
+
+      {/* 13. REUSABLE: PARALLAX BANNER */}
+      <TreatmentParallaxBanner />
+
+      {/* 14. REUSABLE: DENTAL JOURNEY TIMELINE */}
       <TreatmentJourneySimpleSection />
 
-      {/* 17. MASTER 17-QUESTION FAQ SECTION (CLINICAL & HEALTH TOURISM) */}
+      {/* 15. MASTER 17-QUESTION FAQ SECTION (CLINICAL & HEALTH TOURISM) */}
       <section aria-labelledby="zygoma-faq-heading" className={styles.faqSection}>
         <div className={styles.faqContainer}>
           <div className={styles.faqHeader}>
@@ -4469,7 +4461,7 @@ export default function ZygomaticImplantDetailView() {
         </div>
       </section>
 
-      {/* 18. LET'S CREATE YOUR PERFECT SMILE PLAN (4-STEP INTERACTIVE QUOTE FUNNEL) */}
+      {/* 16. LET'S CREATE YOUR PERFECT SMILE PLAN (4-STEP INTERACTIVE QUOTE FUNNEL) */}
       <TreatmentInteractiveQuoteForm defaultTreatment="Zygomatic Implants" />
     </div>
   );
