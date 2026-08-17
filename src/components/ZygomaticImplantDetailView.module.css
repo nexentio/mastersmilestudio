@@ -84,6 +84,34 @@
   border: none;
 }
 
+.xrayWrap {
+  width: 100%;
+  max-width: 800px;
+  margin: 2.5rem auto;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e2e8f0;
+  background-color: #09090b;
+}
+
+.xrayImg {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.xrayCaption {
+  padding: 0.85rem 1.25rem;
+  font-size: 0.88rem;
+  color: #64748b;
+  text-align: center;
+  background-color: #f8fafc;
+  border-top: 1px solid #e2e8f0;
+  font-weight: 500;
+}
+
 /* =========================================================================
    1.5. CANDIDACY & CLINICAL INDICATION CHECKLIST
    ========================================================================= */
