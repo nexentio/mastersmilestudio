@@ -1,0 +1,13 @@
+/* Dedicated CSS Module for SinusLiftingDetailView */
+.wrapper {
+  width: 100%;
+  position: relative;
+  background-color: #ffffff;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  position: relative;
+}
