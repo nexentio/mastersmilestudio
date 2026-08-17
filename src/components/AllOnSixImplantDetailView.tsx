@@ -48,6 +48,27 @@ interface MaterialTableRow {
   pfm: string;
 }
 
+interface CompareTableRow {
+  criteria: string;
+  all4: string;
+  all5: string;
+  all6: string;
+}
+
+interface ProcessCardItem {
+  step: string;
+  title: string;
+  text: string;
+  specs: { key: string; val: string }[];
+}
+
+interface CostTableRow {
+  country: string;
+  costPerArch: string;
+  inclusions: string;
+  valueAdvantage: string;
+}
+
 interface DetailDictionary {
   introBadge: string;
   introTitle: string;
@@ -61,6 +82,27 @@ interface DetailDictionary {
   introP3And: string;
   introP3LinkSinus: string;
   introP3Tail: string;
+
+  compareTitle: string;
+  compareSubtitle: string;
+  compareTableHeaders: {
+    criteria: string;
+    all4: string;
+    all5: string;
+    all6: string;
+  };
+  compareTableRows: CompareTableRow[];
+  compareDecision: {
+    whenAll4Title: string;
+    whenAll4Text: string;
+    whenAll6Title: string;
+    whenAll6Text: string;
+  };
+
+  processTitle: string;
+  processSubtitle: string;
+  processCards: ProcessCardItem[];
+
   materialsTitle: string;
   materialsSubtitle: string;
   materialsSpecLabels: {
@@ -77,6 +119,7 @@ interface DetailDictionary {
     pfm: string;
   };
   materialsTableRows: MaterialTableRow[];
+
   packagesTitle: string;
   packagesSubtitle: string;
   durationLabel: string;
@@ -84,6 +127,17 @@ interface DetailDictionary {
   pricePerArchLabel: string;
   getQuoteBtn: string;
   mostPopularBadge: string;
+
+  costTitle: string;
+  costSubtitle: string;
+  costTableHeaders: {
+    country: string;
+    costPerArch: string;
+    inclusions: string;
+    valueAdvantage: string;
+  };
+  costTableRows: CostTableRow[];
+
   faqTitle: string;
   faqSubtitle: string;
   faqGroup1Title: string;
@@ -444,6 +498,153 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "q": "How is post-operative follow-up managed in my home country?",
         "a": "Our international patient coordination department provides 24/7 direct WhatsApp support, scheduled video check-ins with our chief surgeons, and ongoing clinical guidance throughout your healing phase."
       }
+    ],
+    "compareTitle": "Objective Full-Arch Comparison: All-on-4 vs. All-on-5 vs. All-on-6",
+    "compareSubtitle": "Choosing between 4, 5, or 6 implants depends strictly on your posterior bone volume, occlusal masticatory force, and anatomical jaw width.",
+    "compareTableHeaders": {
+      "criteria": "Clinical & Biomechanical Dimension",
+      "all4": "All-on-4 Protocol",
+      "all5": "All-on-5 (All-on-X)",
+      "all6": "All-on-6 Protocol (Gold Standard)"
+    },
+    "compareTableRows": [
+      {
+        "criteria": "Number of Implants per Arch",
+        "all4": "4 Titanium Implants (2 straight, 2 angled at 45°)",
+        "all5": "5 Titanium Implants (Used for asymmetric bone loss)",
+        "all6": "6 Titanium Implants (2 anterior, 4 posterior anchors)"
+      },
+      {
+        "criteria": "Full-Arch Tooth Capacity",
+        "all4": "10 to 12 Teeth (Terminates at 1st Molar)",
+        "all5": "12 Teeth",
+        "all6": "14 Teeth (Full arch including 2nd Molars)"
+      },
+      {
+        "criteria": "Masticatory Bite Force Distribution",
+        "all4": "Moderate to High (200 – 350 N)",
+        "all5": "High (350 – 450 N)",
+        "all6": "Maximum (450 – 600+ N, Heavy Chewers)"
+      },
+      {
+        "criteria": "Bone Grafting / Sinus Lifting Requirement",
+        "all4": "Avoided in 90% of cases via 45° angled bypass",
+        "all5": "May be required on one side of the jaw",
+        "all6": "May require minor sinus lift if posterior bone is atrophied"
+      },
+      {
+        "criteria": "Posterior Cantilever Overhang",
+        "all4": "Moderate cantilever (10 – 15 mm overhang)",
+        "all5": "Reduced cantilever overhang",
+        "all6": "Zero or minimal cantilever (Maximum mechanical rigidity)"
+      },
+      {
+        "criteria": "Structural Redundancy / Safety Factor",
+        "all4": "If 1 implant fails, the entire bridge must be replaced",
+        "all5": "Remaining 4 implants can temporarily maintain bridge",
+        "all6": "If 1 implant fails, the remaining 5 fixtures maintain bridge stability"
+      },
+      {
+        "criteria": "Primary Patient Suitability",
+        "all4": "Moderate-to-severe bone atrophy, patients avoiding graft surgery",
+        "all5": "Asymmetric bone volume between left and right jaws",
+        "all6": "Adequate bone height (>10 mm), strong bite force, younger/active patients"
+      }
+    ],
+    "compareDecision": {
+      "whenAll4Title": "When is All-on-4 the Right Solution?",
+      "whenAll4Text": "All-on-4 is clinically indicated when significant bone resorption has occurred in the posterior upper or lower jaw. By angling the two rear implants up to 45 degrees, our surgeons anchor into dense anterior bone, avoiding the need for sinus lifts or costly bone graft harvesting.",
+      "whenAll6Title": "When is All-on-6 the Superior Clinical Choice?",
+      "whenAll6Text": "All-on-6 is recommended whenever posterior bone height (>10 mm) is preserved, in patients who clench or grind their teeth (bruxism), or in younger and active individuals desiring a full 14-tooth dental arch with unrestricted chewing power."
+    },
+    "processTitle": "3-Phase Precision Protocol: From 3D Digital Planning to Permanent Zirconia",
+    "processSubtitle": "Every All-on-6 transformation at Master Smile Studio follows a strict sub-millimeter computer-guided surgical and robotic milling protocol.",
+    "processCards": [
+      {
+        "step": "PHASE 01",
+        "title": "3D CBCT Virtual Surgery & Guided Template",
+        "text": "High-resolution Cone Beam Tomography maps bone density in Hounsfield Units (HU) and identifies exact nerve and sinus boundaries. A custom stereolithographic template guides all 6 implants with sub-millimeter precision.",
+        "specs": [
+          {
+            "key": "Accuracy",
+            "val": "< 0.1 mm"
+          },
+          {
+            "key": "Incision Type",
+            "val": "Minimally Invasive Guided"
+          },
+          {
+            "key": "Bone Analysis",
+            "val": "3D Hounsfield Scale"
+          }
+        ]
+      },
+      {
+        "step": "PHASE 02",
+        "title": "24-Hour Immediate Fixed Loading",
+        "text": "With primary insertion torque achieving 35–50 Ncm, multi-unit abutments are secured. Within 24 hours, a high-density reinforced temporary bridge is screwed onto the 6 fixtures so you leave with functional teeth on day one.",
+        "specs": [
+          {
+            "key": "Insertion Torque",
+            "val": "35 – 50 Ncm"
+          },
+          {
+            "key": "Delivery Time",
+            "val": "Within 24 Hours"
+          },
+          {
+            "key": "Functionality",
+            "val": "Immediate Soft Diet"
+          }
+        ]
+      },
+      {
+        "step": "PHASE 03",
+        "title": "5-Axis Robotic CAD/CAM Zirconia Milling",
+        "text": "After 3 months of bone healing, 3D optical scanning captures your gum contours. A monolithic multilayer German Zirconia bridge (1200+ MPa) is robotic-milled and sintered at 1500°C for lifetime fracture resistance.",
+        "specs": [
+          {
+            "key": "Flexural Strength",
+            "val": "1200 – 1400 MPa"
+          },
+          {
+            "key": "Material Grade",
+            "val": "Solid German Zirconia"
+          },
+          {
+            "key": "Sintering Temp",
+            "val": "1500°C High-Density"
+          }
+        ]
+      }
+    ],
+    "costTitle": "International Price & Treatment Comparison: UK / Germany vs. Istanbul",
+    "costSubtitle": "Understand why thousands of European and UK patients choose Master Smile Studio for full-arch All-on-6 restoration without sacrificing material quality.",
+    "costTableHeaders": {
+      "country": "Destination / Clinic Tier",
+      "costPerArch": "All-on-6 Cost (Per Jaw)",
+      "inclusions": "What Is Included in the Price",
+      "valueAdvantage": "Master Smile Studio Advantage"
+    },
+    "costTableRows": [
+      {
+        "country": "United Kingdom (Harley Street / Private)",
+        "costPerArch": "£14,000 – £18,000",
+        "inclusions": "Surgery and standard bridge only. 3D CBCT, temporary teeth, sedation, and check-ups billed separately.",
+        "valueAdvantage": "Save 65% – 70% (£4,700 – £8,600 with us) on genuine Straumann/German systems."
+      },
+      {
+        "country": "Germany / Switzerland (Private Clinic)",
+        "costPerArch": "€13,000 – €17,000",
+        "inclusions": "Surgical fees and lab work. Hotel accommodation, VIP transfers, and medications not covered.",
+        "valueAdvantage": "Save 60% – 65% (€5,500 – €10,000 with us) with identical German/Swiss titanium."
+      },
+      {
+        "country": "Master Smile Studio (Istanbul, Turkey)",
+        "costPerArch": "€5,500 – €10,000 / £4,700 – £8,600",
+        "inclusions": "All-Inclusive: 6 Implants, Temporary Bridge, Final Zirconia Bridge, 3D CBCT, 5-Star Hotel, VIP Mercedes Transfers, Lifetime Warranty Passport.",
+        "valueAdvantage": "100% Fixed Transparent Package Price Guarantee with Zero Hidden Medical or Travel Fees."
+      }
     ]
   },
   "tr": {
@@ -788,6 +989,153 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       {
         "q": "Kendi ülkeme döndüğümde takip süreci nasıl yürütülür?",
         "a": "Uluslararası hasta koordinasyon ekibimiz 7/24 WhatsApp üzerinden iletişimde kalır ve düzenli video görüşmelerle iyileşme sürecinizi takip eder."
+      }
+    ],
+    "compareTitle": "Objektif Tam Çene Karşılaştırması: All-on-4 vs. All-on-5 vs. All-on-6",
+    "compareSubtitle": "4, 5 veya 6 implant arasındaki seçim; arka bölge kemik hacminize, çiğneme kuvvetinize ve çene genişliğinize bağlı olarak belirlenir.",
+    "compareTableHeaders": {
+      "criteria": "Klinik ve Biyomekanik Kriter",
+      "all4": "All-on-4 Protokolü",
+      "all5": "All-on-5 (All-on-X)",
+      "all6": "All-on-6 Protokolü (Altın Standart)"
+    },
+    "compareTableRows": [
+      {
+        "criteria": "Çene Başına İmplant Sayısı",
+        "all4": "4 Titanyum İmplant (2 düz ön, 2 adet 45° açılı arka)",
+        "all5": "5 Titanyum İmplant (Asimetrik kemik erimelerinde)",
+        "all6": "6 Titanyum İmplant (2 ön, 4 arka azı desteği)"
+      },
+      {
+        "criteria": "Kalıcı Köprüdeki Diş Sayısı",
+        "all4": "10 ila 12 Diş (1. Büyük azı dişine kadar)",
+        "all5": "12 Diş",
+        "all6": "14 Diş (2. Büyük azı dahil tam çiğneme arkı)"
+      },
+      {
+        "criteria": "Çiğneme Kuvveti Dağılımı (Bite Force)",
+        "all4": "Orta - Yüksek (200 – 350 N)",
+        "all5": "Yüksek (350 – 450 N)",
+        "all6": "Maksimum (450 – 600+ N, Güçlü Isırık)"
+      },
+      {
+        "criteria": "Kemik Tozu / Sinüs Lifting İhtiyacı",
+        "all4": "%90 Oranında Gerekmez (Açılı implantlar sinüsü bypass eder)",
+        "all5": "Tek taraflı greft gerekebilir",
+        "all6": "Arka bölgede kemik azsa küçük bir sinüs lifting gerekebilir"
+      },
+      {
+        "criteria": "Arka Diş Uzantı (Cantilever) Gerilimi",
+        "all4": "Orta düzeyde uzantı mevcuttur (10 – 15 mm)",
+        "all5": "Azaltılmış uzantı gerilimi",
+        "all6": "Sıfıra Yakın (Uzantı stresi yoktur, maksimum rijitlik)"
+      },
+      {
+        "criteria": "Güvenlik Payı ve Yedeklilik (Redundancy)",
+        "all4": "1 implant kaybedilirse tüm köprünün yenilenmesi gerekir",
+        "all5": "Kalan 4 implant köprüyü geçici olarak taşıyabilir",
+        "all6": "1 implant kaybedilse dahi kalan 5 implant köprüyü güvenle taşır"
+      },
+      {
+        "criteria": "İdeal Hasta Profili",
+        "all4": "İleri kemik erimesi olan, ek greft cerrahisi istemeyen hastalar",
+        "all5": "Sağ ve sol çene kemiği asimetrik olan ara vakalar",
+        "all6": "Yeterli kemiği olan (>10 mm), güçlü çiğneme kaslı, genç ve aktif hastalar"
+      }
+    ],
+    "compareDecision": {
+      "whenAll4Title": "All-on-4 Hangi Durumlarda Doğru Seçenektir?",
+      "whenAll4Text": "All-on-4, üst veya alt çenenin arka bölgelerinde ileri düzeyde kemik erimesi bulunan ve sinüs lifting gibi ek cerrahilerden kaçınmak isteyen hastalar için en uygun biyomekanik çözümdür. 45 derecelik açılı arka implantlar ön bölgedeki yoğun kemikten maksimum destek alır.",
+      "whenAll6Title": "All-on-6 Hangi Durumlarda Üstün Seçenektir?",
+      "whenAll6Text": "All-on-6, arka azı kemik yüksekliği yeterli olan (>10 mm), gece diş sıkan (bruksizm), güçlü çiğneme kaslarına sahip veya arka azı dişlerini de içeren 14 dişlik eksiksiz bir ark talep eden hastalar için tavsiye edilir."
+    },
+    "processTitle": "3 Aşamalı Dijital Cerrahi ve CAD/CAM Mühendislik Süreci",
+    "processSubtitle": "Master Smile Studio’daki her All-on-6 tedavisi, milimetrik bilgisayarlı cerrahi rehber ve robotik frezeleme protokolüyle yürütülür.",
+    "processCards": [
+      {
+        "step": "AŞAMA 01",
+        "title": "3D Tomografi ve Sanal Cerrahi Kılavuzu",
+        "text": "Yüksek çözünürlüklü 3D tomografi çene kemiği sertliğini Hounsfield biriminde analiz eder, sinir ve sinüs sınırlarını belirler. Özel üretilen cerrahi rehber ile 6 implant milimetrenin onda biri hassasiyetle yerleştirilir.",
+        "specs": [
+          {
+            "key": "Cerrahi Hassasiyet",
+            "val": "< 0.1 mm"
+          },
+          {
+            "key": "Kesi Türü",
+            "val": "Minimal İnvaziv / Kılavuzlu"
+          },
+          {
+            "key": "Kemik Analizi",
+            "val": "3D Hounsfield Skalası"
+          }
+        ]
+      },
+      {
+        "step": "AŞAMA 02",
+        "title": "24 Saatte Vidalı Sabit Geçici Dişler",
+        "text": "İmplantlar kemiğe 35–50 Ncm torkla kilitlendiğinde multi-unit abutmentlar takılır. İlk 24 saat içinde 6 implant üzerine vidalanan sabit geçici köprü teslim edilir; klinikten asla dişsiz ayrılmazsınız.",
+        "specs": [
+          {
+            "key": "Primer Tork",
+            "val": "35 – 50 Ncm"
+          },
+          {
+            "key": "Teslim Süresi",
+            "val": "24 Saat İçinde"
+          },
+          {
+            "key": "Çiğneme Fonksiyonu",
+            "val": "Yumuşak Diyetle Anında"
+          }
+        ]
+      },
+      {
+        "step": "AŞAMA 03",
+        "title": "5 Eksenli Robotik CAD/CAM Monolitik Zirkonyum",
+        "text": "3 aylık kemikleşmenin ardından 3D optik tarama ile ölçü alınır. 1200+ MPa dirençli monolitik Alman zirkonyum bloğu 5 eksenli CNC cihazında frezelenip 1500°C’de fırınlanarak ömür boyu kırılmaz köprü üretilir.",
+        "specs": [
+          {
+            "key": "Kırılma Dayanımı",
+            "val": "1200 – 1400 MPa"
+          },
+          {
+            "key": "Materyal Standardı",
+            "val": "Yekpare Alman Zirkonyumu"
+          },
+          {
+            "key": "Fırınlama Sıcaklığı",
+            "val": "1500°C Yüksek Yoğunluk"
+          }
+        ]
+      }
+    ],
+    "costTitle": "Uluslararası Fiyat ve Tedavi Kıyaslaması: İngiltere / Almanya vs. İstanbul",
+    "costSubtitle": "Binlerce Avrupalı ve İngiliz hastanın neden malzeme kalitesinden ödün vermeden Master Smile Studio’yu tercih ettiğini keşfedin.",
+    "costTableHeaders": {
+      "country": "Ülke / Klinik Standardı",
+      "costPerArch": "Tek Çene All-on-6 Maliyeti",
+      "inclusions": "Fiyata Dahil Olan Hizmetler",
+      "valueAdvantage": "Master Smile Studio Avantajı"
+    },
+    "costTableRows": [
+      {
+        "country": "İngiltere (UK - Özel Klinikler / Harley Street)",
+        "costPerArch": "£14,000 – £18,000",
+        "inclusions": "Yalnızca cerrahi ve standart köprü. 3D tomografi, geçici dişler ve ek randevular ayrı faturalandırılır.",
+        "valueAdvantage": "Orijinal İsviçre/Alman sistemlerinde %65 – %70 Tasarruf (£4,700 – £8,600)."
+      },
+      {
+        "country": "Almanya / İsviçre (Özel Klinikler)",
+        "costPerArch": "€13,000 – €17,000",
+        "inclusions": "Cerrahi ve laboratuvar ücreti. Otel konaklaması, VIP transfer ve ilaçlar fiyata dahil değildir.",
+        "valueAdvantage": "Aynı Alman/İsviçre titanyumu ile %60 – %65 Tasarruf (€5,500 – €10,000)."
+      },
+      {
+        "country": "Master Smile Studio (İstanbul, Türkiye)",
+        "costPerArch": "€5,500 – €10,000 / £4,700 – £8,600",
+        "inclusions": "Her Şey Dahil: 6 İmplant, Geçici Diş, Kalıcı Zirkonyum Köprü, 3D Tomografi, 5 Yıldızlı Otel, VIP Mercedes Transferler, Ömür Boyu Garanti Pasaportu.",
+        "valueAdvantage": "Gizli Masrafsız Sabit Fiyat Garantisi ve VIP Seyahat Konforu."
       }
     ]
   },
@@ -1134,6 +1482,153 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "q": "Wie erfolgt die Nachsorge in meinem Heimatland?",
         "a": "Unser internationales Patiententeam steht Ihnen rund um die Uhr per WhatsApp und regelmäßigen Video-Sprechstunden zur Seite."
       }
+    ],
+    "compareTitle": "Objektiver Vollbogen-Vergleich: All-on-4 vs. All-on-5 vs. All-on-6",
+    "compareSubtitle": "Die Wahl zwischen 4, 5 oder 6 Implantaten richtet sich nach Knochenvolumen, Kaukraft und anatomischer Kieferbreite.",
+    "compareTableHeaders": {
+      "criteria": "Klinisches & biomechanisches Kriterium",
+      "all4": "All-on-4 Protokoll",
+      "all5": "All-on-5 (All-on-X)",
+      "all6": "All-on-6 Protokoll (Goldstandard)"
+    },
+    "compareTableRows": [
+      {
+        "criteria": "Anzahl Implantate pro Kiefer",
+        "all4": "4 Titanimplantate (2 gerade, 2 um 45° abgewinkelt)",
+        "all5": "5 Titanimplantate (bei asymmetrischem Knochenabbau)",
+        "all6": "6 Titanimplantate (2 vorne, 4 im Seitenzahnbereich)"
+      },
+      {
+        "criteria": "Anzahl der Zähne auf der Brücke",
+        "all4": "10 bis 12 Zähne (bis zum 1. Molaren)",
+        "all5": "12 Zähne",
+        "all6": "14 Zähne (Vollständiger Bogen inkl. 2. Molaren)"
+      },
+      {
+        "criteria": "Kaukraft-Verteilung (Bite Force)",
+        "all4": "Mittel bis hoch (200 – 350 N)",
+        "all5": "Hoch (350 – 450 N)",
+        "all6": "Maximal (450 – 600+ N, starke Beißer)"
+      },
+      {
+        "criteria": "Knochenaufbau / Sinuslift erforderlich",
+        "all4": "In 90% der Fälle vermeidbar durch 45°-Winkelung",
+        "all5": "Möglicherweise einseitig erforderlich",
+        "all6": "Eventuell kleiner Sinuslift bei Knochenschwund im Seitenzahnbereich"
+      },
+      {
+        "criteria": "Freiend-Hebelwirkung (Cantilever)",
+        "all4": "Mäßiger Hebelarm (10 – 15 mm)",
+        "all5": "Reduzierter Hebelarm",
+        "all6": "Nahezu Null (Höchste mechanische Stabilität)"
+      },
+      {
+        "criteria": "Sicherheitsfaktor bei Implantatverlust",
+        "all4": "Verlust von 1 Implantat erfordert Neuanfertigung der Brücke",
+        "all5": "Verbleibende 4 Implantate können Brücke vorübergehend tragen",
+        "all6": "Bei Verlust von 1 Implantat tragen 5 Pfeiler die Brücke sicher weiter"
+      },
+      {
+        "criteria": "Primäre Patienteneignung",
+        "all4": "Fortgeschrittener Knochenabbau, Vermeidung von Knochenaufbau",
+        "all5": "Asymmetrischer Knochenverlust zwischen linker und rechter Seite",
+        "all6": "Gutes Knochenangebot (>10 mm), hohe Kaukraft, aktive Patienten"
+      }
+    ],
+    "compareDecision": {
+      "whenAll4Title": "Wann ist All-on-4 die richtige Wahl?",
+      "whenAll4Text": "All-on-4 ist ideal bei starkem Knochenschwund im Seitenzahnbereich, wenn ein Sinuslift vermieden werden soll. Die 45-Grad-Winkelung nutzt den dichten Frontknochen optimal aus.",
+      "whenAll6Title": "Wann ist All-on-6 die überlegene Wahl?",
+      "whenAll6Text": "All-on-6 empfiehlt sich bei ausreichendem Knochen im Seitenzahnbereich (>10 mm), bei Zähneknirschen (Bruxismus) oder bei jüngeren, aktiven Patienten, die einen vollständigen 14-Zähne-Bogen wünschen."
+    },
+    "processTitle": "3-Phasen-Präzisionsprotokoll: Von der 3D-Planung bis zum Zirkon-Unikat",
+    "processSubtitle": "Jede All-on-6 Behandlung bei Master Smile Studio folgt einem strengen navigierten 3D-Chirurgie- und Roboter-Fräsprotokoll.",
+    "processCards": [
+      {
+        "step": "PHASE 01",
+        "title": "3D-DVT Virtuelle OP & Navigierte Bohrschablone",
+        "text": "Hochauflösende 3D-DVT-Röntgenbilder erfassen die Knochendichte in Hounsfield-Einheiten und Nervenbahnen. Eine individuelle 3D-Bohrschablone führt alle 6 Implantate mit Submillimeter-Präzision.",
+        "specs": [
+          {
+            "key": "Präzision",
+            "val": "< 0.1 mm"
+          },
+          {
+            "key": "Schnittführung",
+            "val": "Minimalinvasiv geführt"
+          },
+          {
+            "key": "Knochenanalyse",
+            "val": "3D-Hounsfield-Skala"
+          }
+        ]
+      },
+      {
+        "step": "PHASE 02",
+        "title": "Feste provisorische Zähne innerhalb von 24 Stunden",
+        "text": "Bei einem Primärtork von 35–50 Ncm werden Multi-Unit-Abutments verschraubt. Innerhalb von 24 Stunden wird eine festsitzende provisorische Brücke eingesetzt – Sie sind vom ersten Tag an voll versorgt.",
+        "specs": [
+          {
+            "key": "Eindrehmoment",
+            "val": "35 – 50 Ncm"
+          },
+          {
+            "key": "Fertigstellung",
+            "val": "Innerhalb von 24h"
+          },
+          {
+            "key": "Funktion",
+            "val": "Sofortige weiche Kost"
+          }
+        ]
+      },
+      {
+        "step": "PHASE 03",
+        "title": "5-Achs-CAD/CAM Monolithisches Zirkon",
+        "text": "Nach 3 Monaten Einheilphase erfasst ein 3D-Intraoralscan die exakte Implantatposition. Eine monolithische Mehrschicht-Zirkonbrücke (1200+ MPa) wird robotergefräst und bei 1500°C gesintert.",
+        "specs": [
+          {
+            "key": "Biegefestigkeit",
+            "val": "1200 – 1400 MPa"
+          },
+          {
+            "key": "Materialqualität",
+            "val": "100% deutsches Zirkon"
+          },
+          {
+            "key": "Sintertemperatur",
+            "val": "1500°C Hochdichte"
+          }
+        ]
+      }
+    ],
+    "costTitle": "Internationaler Preis- & Leistungsvergleich: UK / Deutschland vs. Istanbul",
+    "costSubtitle": "Erfahren Sie, warum tausende europäische Patienten Master Smile Studio für All-on-6 wählen – ohne Kompromisse bei der Materialqualität.",
+    "costTableHeaders": {
+      "country": "Land / Klinik-Standard",
+      "costPerArch": "All-on-6 Kosten (pro Kiefer)",
+      "inclusions": "Im Preis enthaltene Leistungen",
+      "valueAdvantage": "Master Smile Studio Vorteil"
+    },
+    "costTableRows": [
+      {
+        "country": "Großbritannien (Harley Street / Privatklinik)",
+        "costPerArch": "£14.000 – £18.000",
+        "inclusions": "Nur OP und Standardbrücke. 3D-DVT, Provisorien und Nachkontrollen werden extra berechnet.",
+        "valueAdvantage": "65% – 70% Ersparnis (£4.700 – £8.600) bei originalen Straumann/deutschen Systemen."
+      },
+      {
+        "country": "Deutschland / Schweiz (Privatzahnarzt)",
+        "costPerArch": "€13.000 – €17.000",
+        "inclusions": "Chirurgie und Laborkosten. Hotelübernachtungen, VIP-Transfers und Medikamente nicht enthalten.",
+        "valueAdvantage": "60% – 65% Ersparnis (€5.500 – €10.000) bei identischem deutschem/Schweizer Titan."
+      },
+      {
+        "country": "Master Smile Studio (Istanbul, Türkei)",
+        "costPerArch": "€5.500 – €10.000 / £4.700 – £8.600",
+        "inclusions": "All-inclusive: 6 Implantate, provisorische Zähne, Zirkonbrücke, 3D-DVT, 5-Sterne-Hotel, VIP-Transfers, lebenslange Garantie.",
+        "valueAdvantage": "Garantierter Festpreis ohne versteckte Zusatzkosten mit erstklassigem VIP-Service."
+      }
     ]
   },
   "pl": {
@@ -1478,6 +1973,153 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       {
         "q": "Jak wygląda opieka po powrocie do mojego kraju?",
         "a": "Nasz międzynarodowy zespół zapewnia stały kontakt przez WhatsApp i regularne wideokonsultacje z głównym chirurgiem."
+      }
+    ],
+    "compareTitle": "Obiektywne Porównanie Odbudowy Pełnołukowej: All-on-4 vs. All-on-5 vs. All-on-6",
+    "compareSubtitle": "Wybór między 4, 5 a 6 implantami zależy ściśle od objętości kości, siły żucia i szerokości anatomicznej szczęki.",
+    "compareTableHeaders": {
+      "criteria": "Kryterium Kliniczne i Biomechaniczne",
+      "all4": "Protokół All-on-4",
+      "all5": "All-on-5 (All-on-X)",
+      "all6": "Protokół All-on-6 (Złoty Standard)"
+    },
+    "compareTableRows": [
+      {
+        "criteria": "Liczba Implantów na Łuk",
+        "all4": "4 Implanty Tytanowe (2 proste, 2 nachylone pod kątem 45°)",
+        "all5": "5 Implantów Tytanowych (Asymetria kości)",
+        "all6": "6 Implantów Tytanowych (2 z przodu, 4 w odcinkach bocznych)"
+      },
+      {
+        "criteria": "Liczba Zębów w Moście",
+        "all4": "10 do 12 Zębów (do 1. trzonowca)",
+        "all5": "12 Zębów",
+        "all6": "14 Zębów (Pełny łuk łącznie z 2. trzonowcami)"
+      },
+      {
+        "criteria": "Rozkład Siły Żucia (Nacisk)",
+        "all4": "Średni do Wysokiego (200 – 350 N)",
+        "all5": "Wysoki (350 – 450 N)",
+        "all6": "Maksymalny (450 – 600+ N, Silny Zgryz)"
+      },
+      {
+        "criteria": "Konieczność Sinus Liftu / Odbudowy Kości",
+        "all4": "Unikana w 90% przypadków dzięki kątowi 45°",
+        "all5": "Możliwa jednostronna odbudowa",
+        "all6": "Może wymagać drobnego sinus liftu przy zaniku kości z tyłu"
+      },
+      {
+        "criteria": "Naprężenia Dźwigni (Cantilever)",
+        "all4": "Umiarkowane ramię dźwigni (10 – 15 mm)",
+        "all5": "Zmniejszone ramię dźwigni",
+        "all6": "Bliskie Zeru (Brak naprężeń dźwigni, maksymalna sztywność)"
+      },
+      {
+        "criteria": "Margines Bezpieczeństwa",
+        "all4": "Utrata 1 implantu wymaga wymiany całego mostu",
+        "all5": "Pozostałe 4 implanty mogą tymczasowo utrzymać most",
+        "all6": "Utrata 1 implantu pozwala 5 pozostałym bezpiecznie utrzymać most"
+      },
+      {
+        "criteria": "Główny Profil Pacjenta",
+        "all4": "Zaawansowany zanik kości, unikanie przeszczepów",
+        "all5": "Asymetria ilości kości między lewą a prawą stroną",
+        "all6": "Dobra kość (>10 mm), duża siła żucia, młodsi i aktywni pacjenci"
+      }
+    ],
+    "compareDecision": {
+      "whenAll4Title": "Kiedy All-on-4 jest właściwym wyborem?",
+      "whenAll4Text": "All-on-4 jest wskazany w przypadku znacznego zaniku kości w odcinkach bocznych, gdy pacjent pragnie uniknąć podnoszenia dna zatoki. Kąt 45 stopni pozwala zakotwiczyć implanty w gęstej kości przedniej.",
+      "whenAll6Title": "Kiedy All-on-6 jest wyborem nadrzędnym?",
+      "whenAll6Text": "All-on-6 jest zalecany przy odpowiedniej wysokości kości bocznej (>10 mm), u osób z bruksizmem (zgrzytaniem zębami) oraz u pacjentów oczekujących pełnego łuku 14 zębów o najwyższej wytrzymałości."
+    },
+    "processTitle": "3-Etapowy Protokół Precyzyjny: Od Cyfrowego 3D do Stałego Cyrkonu",
+    "processSubtitle": "Każdy zabieg All-on-6 w Master Smile Studio realizowany jest w oparciu o cyfrowe szablony chirurgiczne i frezowanie robotyczne.",
+    "processCards": [
+      {
+        "step": "ETAP 01",
+        "title": "Tomografia 3D CBCT i Szablon Chirurgiczny",
+        "text": "Tomografia 3D o wysokiej rozdzielczości analizuje gęstość kości w jednostkach Hounsfielda oraz przebieg nerwów. Dedykowany szablon chirurgiczny pozycjonuje 6 implantów z dokładnością poniżej 0,1 mm.",
+        "specs": [
+          {
+            "key": "Precyzja",
+            "val": "< 0.1 mm"
+          },
+          {
+            "key": "Zabieg",
+            "val": "Małoinwazyjny z nawigacją"
+          },
+          {
+            "key": "Badanie Kości",
+            "val": "Skala Hounsfielda 3D"
+          }
+        ]
+      },
+      {
+        "step": "ETAP 02",
+        "title": "Stałe Zęby Tymczasowe w 24 Godziny",
+        "text": "Gdy siła dokręcenia implantów osiąga 35–50 Ncm, montowane są łączniki multi-unit. W ciągu 24 godzin przykręcany jest stały most tymczasowy, zapewniając natychmiastową funkcjonalność.",
+        "specs": [
+          {
+            "key": "Moment Wkręcania",
+            "val": "35 – 50 Ncm"
+          },
+          {
+            "key": "Czas Oddania",
+            "val": "W 24 godziny"
+          },
+          {
+            "key": "Funkcja",
+            "val": "Natychmiastowa miękka dieta"
+          }
+        ]
+      },
+      {
+        "step": "ETAP 03",
+        "title": "5-Osiowe Frezowanie CAD/CAM Cyrkonu Monolitycznego",
+        "text": "Po 3 miesiącach gojenia skaner wewnątrzustny 3D rejestruje ułożenie implantów. Monolityczny most z niemieckiego cyrkonu (1200+ MPa) jest frezowany cyfrowo i spiekany w 1500°C.",
+        "specs": [
+          {
+            "key": "Wytrzymałość",
+            "val": "1200 – 1400 MPa"
+          },
+          {
+            "key": "Materiał",
+            "val": "Lity Cyrkon Niemiecki"
+          },
+          {
+            "key": "Temp. Spiekania",
+            "val": "1500°C Wysoka Gęstość"
+          }
+        ]
+      }
+    ],
+    "costTitle": "Międzynarodowe Porównanie Cen i Standardu: UK / Niemcy vs. Stambuł",
+    "costSubtitle": "Zobacz, dlaczego pacjenci z całej Europy wybierają Master Smile Studio na zabieg All-on-6 bez kompromisów jakościowych.",
+    "costTableHeaders": {
+      "country": "Kraj / Standard Kliniki",
+      "costPerArch": "Koszt All-on-6 (za 1 łuk)",
+      "inclusions": "Co jest wliczone w cenę",
+      "valueAdvantage": "Przewaga Master Smile Studio"
+    },
+    "costTableRows": [
+      {
+        "country": "Wielka Brytania (Harley Street / Prywatnie)",
+        "costPerArch": "£14,000 – £18,000",
+        "inclusions": "Tylko zabieg i most standardowy. Tomografia 3D, zęby tymczasowe i wizyty płatne osobno.",
+        "valueAdvantage": "65% – 70% Oszczędności (£4,700 – £8,600) na systemach Straumann/DXL."
+      },
+      {
+        "country": "Niemcy / Szwajcaria (Kliniki Prywatne)",
+        "costPerArch": "€13,000 – €17,000",
+        "inclusions": "Zabieg i laboratorium. Koszty hotelu, transferów i leków nie są pokrywane.",
+        "valueAdvantage": "60% – 65% Oszczędności (€5,500 – €10,000) przy tym samym tytanie."
+      },
+      {
+        "country": "Master Smile Studio (Stambuł, Turcja)",
+        "costPerArch": "€5,500 – €10,000 / £4,700 – £8,600",
+        "inclusions": "Pakiet All-Inclusive: 6 Implantów, Most Tymczasowy, Most Cyrkonowy, Tomografia 3D, Hotel 5*, Transfery VIP Mercedes, Dożywotnia Gwarancja.",
+        "valueAdvantage": "Gwarancja Stałej Ceny bez ukrytych opłat i luksusowa obsługa pacjenta."
       }
     ]
   },
@@ -1824,6 +2466,153 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "q": "Como é feito o acompanhamento pós-operatório no meu país?",
         "a": "Nossa equipe internacional oferece suporte contínuo via WhatsApp e videochamadas programadas com nossos cirurgiões chefes."
       }
+    ],
+    "compareTitle": "Comparação Objetiva de Arcada Total: All-on-4 vs. All-on-5 vs. All-on-6",
+    "compareSubtitle": "A escolha entre 4, 5 ou 6 implantes depende do volume ósseo posterior, força mastigatória e largura da arcada.",
+    "compareTableHeaders": {
+      "criteria": "Critério Clínico e Biomecânico",
+      "all4": "Protocolo All-on-4",
+      "all5": "All-on-5 (All-on-X)",
+      "all6": "Protocolo All-on-6 (Padrão Ouro)"
+    },
+    "compareTableRows": [
+      {
+        "criteria": "Número de Implantes por Arcada",
+        "all4": "4 Implantes de Titânio (2 retos, 2 angulados a 45°)",
+        "all5": "5 Implantes de Titânio (Perda óssea assimétrica)",
+        "all6": "6 Implantes de Titânio (2 anteriores, 4 posteriores)"
+      },
+      {
+        "criteria": "Capacidade de Dentes na Prótese",
+        "all4": "10 a 12 Dentes (até o 1º molar)",
+        "all5": "12 Dentes",
+        "all6": "14 Dentes (Arcada completa com 2ºs molares)"
+      },
+      {
+        "criteria": "Distribuição da Força Mastigatória",
+        "all4": "Moderada a Alta (200 – 350 N)",
+        "all5": "Alta (350 – 450 N)",
+        "all6": "Máxima (450 – 600+ N, Mordida Potente)"
+      },
+      {
+        "criteria": "Necessidade de Enxerto / Sinus Lift",
+        "all4": "Evitada em 90% dos casos via angulação de 45°",
+        "all5": "Pode ser necessário enxerto unilateral",
+        "all6": "Pode exigir pequeno sinus lift se houver atrofia posterior"
+      },
+      {
+        "criteria": "Tensão de Cantilever (Extensão Posterior)",
+        "all4": "Cantilever moderado (10 – 15 mm)",
+        "all5": "Cantilever reduzido",
+        "all6": "Praticamente Zero (Rigidez mecânica máxima)"
+      },
+      {
+        "criteria": "Fator de Redundância e Segurança",
+        "all4": "A perda de 1 implante exige substituição total da ponte",
+        "all5": "Os 4 implantes restantes sustentam temporariamente",
+        "all6": "Se 1 implante falhar, os outros 5 mantêm a ponte com segurança"
+      },
+      {
+        "criteria": "Perfil de Paciente Indicado",
+        "all4": "Perda óssea acentuada, pacientes que evitam enxertos",
+        "all5": "Volume ósseo assimétrico entre os lados",
+        "all6": "Boa altura óssea (>10 mm), mordida forte, pacientes ativos"
+      }
+    ],
+    "compareDecision": {
+      "whenAll4Title": "Quando o All-on-4 é a melhor escolha?",
+      "whenAll4Text": "O All-on-4 é indicado para perda óssea moderada a severa na região posterior, permitindo evitar enxertos ou sinus lift através da angulação de 45 graus dos implantes posteriores.",
+      "whenAll6Title": "Quando o All-on-6 é a escolha superior?",
+      "whenAll6Text": "O All-on-6 é recomendado quando há altura óssea posterior adequada (>10 mm), em pacientes com bruxismo ou que exigem uma arcada completa de 14 dentes com força mastigatória irrestrita."
+    },
+    "processTitle": "Protocolo de Precisão em 3 Fases: Do Planejamento 3D à Zircônia Definitiva",
+    "processSubtitle": "Cada reabilitação All-on-6 no Master Smile Studio segue um rigoroso fluxo cirúrgico guiado por computador e fresagem robótica.",
+    "processCards": [
+      {
+        "step": "FASE 01",
+        "title": "Tomografia 3D CBCT e Guia Cirúrgico Computadorizado",
+        "text": "A tomografia de alta resolução mapeia a densidade óssea em unidades Hounsfield e os trajetos nervosos. Um guia cirúrgico exclusivo posiciona os 6 implantes com precisão submilimétrica.",
+        "specs": [
+          {
+            "key": "Precisão",
+            "val": "< 0.1 mm"
+          },
+          {
+            "key": "Incisão",
+            "val": "Minimamente Invasiva Guiada"
+          },
+          {
+            "key": "Análise Óssea",
+            "val": "Escala 3D Hounsfield"
+          }
+        ]
+      },
+      {
+        "step": "FASE 02",
+        "title": "Carga Imediata Fixa em até 24 Horas",
+        "text": "Com torque de inserção primário atingindo 35–50 Ncm, são instalados os pilares multi-unit. Em até 24 horas, uma ponte provisória aparafusada é fixada sobre os 6 implantes.",
+        "specs": [
+          {
+            "key": "Torque Primário",
+            "val": "35 – 50 Ncm"
+          },
+          {
+            "key": "Tempo de Entrega",
+            "val": "Em até 24 horas"
+          },
+          {
+            "key": "Mastigação",
+            "val": "Imediata com Dieta Macia"
+          }
+        ]
+      },
+      {
+        "step": "FASE 03",
+        "title": "Fresagem Robótica CAD/CAM de Zircônia Monolítica",
+        "text": "Após 3 meses de osseointegração, o escaneamento intraoral 3D captura a posição dos implantes. Uma ponte monolítica de zircônia alemã (1200+ MPa) é fresada e sinterizada a 1500°C.",
+        "specs": [
+          {
+            "key": "Resistência Flexural",
+            "val": "1200 – 1400 MPa"
+          },
+          {
+            "key": "Grau do Material",
+            "val": "Zircônia Maciça Alemã"
+          },
+          {
+            "key": "Temp. Sinterização",
+            "val": "1500°C Alta Densidade"
+          }
+        ]
+      }
+    ],
+    "costTitle": "Comparativo Internacional de Preços: Reino Unido / Alemanha vs. Istambul",
+    "costSubtitle": "Entenda por que milhares de pacientes europeus escolhem o Master Smile Studio para o All-on-6 mantendo a máxima qualidade.",
+    "costTableHeaders": {
+      "country": "País / Padrão Clínico",
+      "costPerArch": "Custo All-on-6 (por arcada)",
+      "inclusions": "O que está incluído no preço",
+      "valueAdvantage": "Vantagem Master Smile Studio"
+    },
+    "costTableRows": [
+      {
+        "country": "Reino Unido (Harley Street / Particular)",
+        "costPerArch": "£14,000 – £18,000",
+        "inclusions": "Apenas cirurgia e prótese básica. Tomografia 3D, provisórios e consultas cobrados à parte.",
+        "valueAdvantage": "Economia de 65% a 70% (£4,700 – £8,600) em sistemas Straumann/DXL."
+      },
+      {
+        "country": "Alemanha / Suíça (Clínicas Privadas)",
+        "costPerArch": "€13,000 – €17,000",
+        "inclusions": "Honorários cirúrgicos e laboratoriais. Hospedagem em hotel e transfers não inclusos.",
+        "valueAdvantage": "Economia de 60% a 65% (€5,500 – €10,000) com titânio suíço/alemão idêntico."
+      },
+      {
+        "country": "Master Smile Studio (Istambul, Turquia)",
+        "costPerArch": "€5,500 – €10,000 / £4,700 – £8,600",
+        "inclusions": "Tudo Incluído: 6 Implantes, Ponte Provisória, Ponte de Zircônia, Tomografia 3D, Hotel 5 Estrelas, Transfers VIP Mercedes, Garantia Vitalícia.",
+        "valueAdvantage": "Garantia de Preço Fixo Transparente sem Custos Ocultos."
+      }
     ]
   },
   "es": {
@@ -2167,6 +2956,153 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       {
         "q": "¿Cómo se realiza el seguimiento postoperatorio en mi país?",
         "a": "Nuestro equipo internacional mantiene contacto directo continuo por WhatsApp y videollamadas con nuestros cirujanos jefes."
+      }
+    ],
+    "compareTitle": "Comparación Objetiva de Arcada Completa: All-on-4 vs. All-on-5 vs. All-on-6",
+    "compareSubtitle": "La elección entre 4, 5 o 6 implantes depende del volumen óseo posterior, fuerza masticatoria y anchura maxilar.",
+    "compareTableHeaders": {
+      "criteria": "Criterio Clínico y Biomecánico",
+      "all4": "Protocolo All-on-4",
+      "all5": "All-on-5 (All-on-X)",
+      "all6": "Protocolo All-on-6 (Estándar de Oro)"
+    },
+    "compareTableRows": [
+      {
+        "criteria": "Número de Implantes por Arcada",
+        "all4": "4 Implantes de Titanio (2 rectos, 2 inclinados a 45°)",
+        "all5": "5 Implantes de Titanio (Pérdida ósea asimétrica)",
+        "all6": "6 Implantes de Titanio (2 frontales, 4 posteriores)"
+      },
+      {
+        "criteria": "Capacidad de Dientes en la Prótesis",
+        "all4": "10 a 12 Dientes (hasta el 1er molar)",
+        "all5": "12 Dientes",
+        "all6": "14 Dientes (Arcada completa con 2ºs molares)"
+      },
+      {
+        "criteria": "Distribución de Fuerza Masticatoria",
+        "all4": "Moderada a Alta (200 – 350 N)",
+        "all5": "Alta (350 – 450 N)",
+        "all6": "Máxima (450 – 600+ N, Mordida Fuerte)"
+      },
+      {
+        "criteria": "Necesidad de Injerto Óseo / Sinus Lift",
+        "all4": "Evitado en el 90% gracias a la inclinación a 45°",
+        "all5": "Puede requerir injerto unilateral",
+        "all6": "Puede requerir elevación de seno menor si hay atrofia posterior"
+      },
+      {
+        "criteria": "Tensión de Cantilever (Extensión)",
+        "all4": "Cantilever moderado (10 – 15 mm)",
+        "all5": "Cantilever reducido",
+        "all6": "Casi Cero (Rigidez mecánica y soporte total)"
+      },
+      {
+        "criteria": "Factor de Seguridad ante Pérdida",
+        "all4": "La pérdida de 1 implante obliga a rehacer toda la prótesis",
+        "all5": "Los 4 implantes restantes sostienen temporalmente",
+        "all6": "Si se pierde 1 implante, los otros 5 sostienen la prótesis con seguridad"
+      },
+      {
+        "criteria": "Perfil de Paciente Recomendado",
+        "all4": "Pérdida ósea avanzada, pacientes que evitan injertos",
+        "all5": "Volumen óseo asimétrico entre izquierda y derecha",
+        "all6": "Buen hueso posterior (>10 mm), mordida potente, pacientes activos"
+      }
+    ],
+    "compareDecision": {
+      "whenAll4Title": "¿Cuándo es All-on-4 la elección adecuada?",
+      "whenAll4Text": "All-on-4 está indicado ante reabsorción ósea posterior severa para evitar elevaciones de seno o injertos complejos. Los implantes angulados a 45° se anclan en hueso frontal denso.",
+      "whenAll6Title": "¿Cuándo es All-on-6 la opción superior?",
+      "whenAll6Text": "All-on-6 se recomienda cuando se conserva altura ósea posterior (>10 mm), en pacientes con bruxismo o que buscan una arcada de 14 dientes con masticación sin restricciones."
+    },
+    "processTitle": "Protocolo de Precisión en 3 Fases: De la Planificación 3D al Circonio Definitivo",
+    "processSubtitle": "Cada rehabilitación All-on-6 en Master Smile Studio sigue un estricto protocolo de cirugía guiada por ordenador y fresado robótico.",
+    "processCards": [
+      {
+        "step": "FASE 01",
+        "title": "TAC 3D CBCT y Guía Quirúrgica Computerizada",
+        "text": "El TAC 3D de alta resolución analiza la densidad ósea en unidades Hounsfield y delimita nervios y senos. Una férula quirúrgica posiciona los 6 implantes con precisión submilimétrica.",
+        "specs": [
+          {
+            "key": "Precisión",
+            "val": "< 0.1 mm"
+          },
+          {
+            "key": "Tipo de Cirugía",
+            "val": "Mínimamente Invasiva Guiada"
+          },
+          {
+            "key": "Estudio Óseo",
+            "val": "Escala 3D Hounsfield"
+          }
+        ]
+      },
+      {
+        "step": "FASE 02",
+        "title": "Carga Inmediata Fija en 24 Horas",
+        "text": "Al alcanzar un torque primario de 35–50 Ncm, se fijan los pilares multi-unit. En menos de 24 horas se atornilla un puente provisional reforzado sobre los 6 implantes.",
+        "specs": [
+          {
+            "key": "Torque de Inserción",
+            "val": "35 – 50 Ncm"
+          },
+          {
+            "key": "Tiempo de Entrega",
+            "val": "En 24 horas"
+          },
+          {
+            "key": "Función",
+            "val": "Dieta Blanda Inmediata"
+          }
+        ]
+      },
+      {
+        "step": "FASE 03",
+        "title": "Fresado Robótico CAD/CAM de Circonio Monolítico",
+        "text": "Tras 3 meses de osteointegración, el escáner intraoral 3D registra la posición exacta de los implantes. Un puente de circonio monolítico alemán (1200+ MPa) se fresa y sinteriza a 1500°C.",
+        "specs": [
+          {
+            "key": "Resistencia Flexión",
+            "val": "1200 – 1400 MPa"
+          },
+          {
+            "key": "Calidad Material",
+            "val": "Circonio Puro Alemán"
+          },
+          {
+            "key": "Temp. Sinterizado",
+            "val": "1500°C Alta Densidad"
+          }
+        ]
+      }
+    ],
+    "costTitle": "Comparativa Internacional de Precios: Reino Unido / Alemania vs. Estambul",
+    "costSubtitle": "Descubra por qué miles de pacientes europeos eligen Master Smile Studio para su tratamiento All-on-6 con los más altos estándares.",
+    "costTableHeaders": {
+      "country": "País / Nivel Clínico",
+      "costPerArch": "Coste All-on-6 (por arcada)",
+      "inclusions": "Qué incluye el precio",
+      "valueAdvantage": "Ventaja Master Smile Studio"
+    },
+    "costTableRows": [
+      {
+        "country": "Reino Unido (Harley Street / Privado)",
+        "costPerArch": "£14,000 – £18,000",
+        "inclusions": "Solo cirugía y puente estándar. TAC 3D, provisionales y revisiones facturados aparte.",
+        "valueAdvantage": "Ahorro del 65% – 70% (£4,700 – £8,600) en sistemas Straumann/DXL."
+      },
+      {
+        "country": "Alemania / Suiza (Clínica Privada)",
+        "costPerArch": "€13,000 – €17,000",
+        "inclusions": "Cirugía y costes de laboratorio. Hotel, traslados y medicación no incluidos.",
+        "valueAdvantage": "Ahorro del 60% – 65% (€5,500 – €10,000) con idéntico titanio suizo/alemán."
+      },
+      {
+        "country": "Master Smile Studio (Estambul, Turquía)",
+        "costPerArch": "€5,500 – €10,000 / £4,700 – £8,600",
+        "inclusions": "Todo Incluido: 6 Implantes, Puente Provisional, Puente de Circonio, TAC 3D, Hotel de 5 Estrellas, Traslados VIP Mercedes, Garantía de por Vida.",
+        "valueAdvantage": "Garantía de Precio Fijo Transparente sin Costes Ocultos."
       }
     ]
   },
@@ -2513,6 +3449,153 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "q": "Как проводится контроль после возвращения домой?",
         "a": "Международный отдел координирует наблюдение через WhatsApp и организует регулярные видеоконсультации с нашими ведущими хирургами."
       }
+    ],
+    "compareTitle": "Объективное Сравнение Протоколов: All-on-4 vs. All-on-5 vs. All-on-6",
+    "compareSubtitle": "Выбор между 4, 5 или 6 имплантами зависит от объема кости в боковых отделах, силы прикуса и ширины челюсти.",
+    "compareTableHeaders": {
+      "criteria": "Клинический и Биомеханический Критерий",
+      "all4": "Протокол All-on-4",
+      "all5": "All-on-5 (All-on-X)",
+      "all6": "Протокол All-on-6 (Золотой Стандарт)"
+    },
+    "compareTableRows": [
+      {
+        "criteria": "Количество Имплантов на Челюсть",
+        "all4": "4 Титановых Импланта (2 прямых, 2 под углом 45°)",
+        "all5": "5 Титановых Имплантов (При асимметричной атрофии)",
+        "all6": "6 Титановых Имплантов (2 передних, 4 боковых)"
+      },
+      {
+        "criteria": "Количество Зубов в Мостовидном Протезе",
+        "all4": "От 10 до 12 Зубов (до 1-го моляра)",
+        "all5": "12 Зубов",
+        "all6": "14 Зубов (Полный зубной ряд включая 2-е моляры)"
+      },
+      {
+        "criteria": "Распределение Жевательного Давления",
+        "all4": "Среднее - Высокое (200 – 350 Н)",
+        "all5": "Высокое (350 – 450 Н)",
+        "all6": "Максимальное (450 – 600+ Н, Мощный Прикус)"
+      },
+      {
+        "criteria": "Необходимость Костной Пластики / Синус-Лифтинга",
+        "all4": "Исключается в 90% случаев за счет наклона 45°",
+        "all5": "Может потребоваться с одной стороны",
+        "all6": "Может потребоваться малый синус-лифтинг при атрофии сзади"
+      },
+      {
+        "criteria": "Консольное Напряжение (Cantilever)",
+        "all4": "Умеренная консоль (10 – 15 мм)",
+        "all5": "Уменьшенная консоль",
+        "all6": "Близко к нулю (Максимальная жесткость конструкции)"
+      },
+      {
+        "criteria": "Запас Прочности при Отторжении",
+        "all4": "Потеря 1 импланта требует полной переделки моста",
+        "all5": "Оставшиеся 4 импланта временно удерживают мост",
+        "all6": "При потере 1 импланта оставшиеся 5 надежно удерживают мост"
+      },
+      {
+        "criteria": "Основной Профиль Пациента",
+        "all4": "Выраженная атрофия кости, нежелание делать костную пластику",
+        "all5": "Асимметрия объема кости слева и справа",
+        "all6": "Достаточный объем кости (>10 мм), сильный прикус, активные пациенты"
+      }
+    ],
+    "compareDecision": {
+      "whenAll4Title": "Когда All-on-4 является правильным выбором?",
+      "whenAll4Text": "All-on-4 показан при выраженной атрофии кости в боковых отделах челюсти, позволяя избежать сложного синус-лифтинга. Наклон задних имплантов под 45 градусов использует плотную переднюю кость.",
+      "whenAll6Title": "Когда All-on-6 является наилучшим выбором?",
+      "whenAll6Text": "All-on-6 рекомендуется при сохраненной высоте кости (>10 мм), при бруксизме (сжимании зубов) и для пациентов, желающих полноценный зубной ряд из 14 зубов с максимальной жевательной силой."
+    },
+    "processTitle": "3-Этапный Протокол Точности: От 3D-Планирования до Монолитного Циркония",
+    "processSubtitle": "Каждая имплантация All-on-6 в Master Smile Studio выполняется по протоколу навигационной хирургии и роботизированного фрезерования.",
+    "processCards": [
+      {
+        "step": "ЭТАП 01",
+        "title": "3D-КТ Диагностика и Навигационный Шаблон",
+        "text": "Высокоточное 3D-КТ сканирование оценивает плотность кости в единицах Хаунсфилда (HU) и траекторию нервов. Индивидуальный хирургический шаблон позиционирует 6 имплантов с точностью до 0,1 мм.",
+        "specs": [
+          {
+            "key": "Точность",
+            "val": "< 0.1 мм"
+          },
+          {
+            "key": "Метод",
+            "val": "Малоинвазивный навигационный"
+          },
+          {
+            "key": "Анализ Кости",
+            "val": "Шкала Хаунсфилда 3D"
+          }
+        ]
+      },
+      {
+        "step": "ЭТАП 02",
+        "title": "Несъемный Мост с Немедленной Нагрузкой за 24 Часа",
+        "text": "При первичном торке 35–50 Нсм устанавливаются мультиюнит-абатменты. В течение 24 часов фиксируется прочный временный винтовой мост, обеспечивая полноценную улыбку в первый день.",
+        "specs": [
+          {
+            "key": "Первичный Торк",
+            "val": "35 – 50 Нсм"
+          },
+          {
+            "key": "Срок Установки",
+            "val": "В течение 24 часов"
+          },
+          {
+            "key": "Функция",
+            "val": "Мягкая диета с 1-го дня"
+          }
+        ]
+      },
+      {
+        "step": "ЭТАП 03",
+        "title": "5-Осевое Роботизированное CAD/CAM Фрезерование Циркония",
+        "text": "Через 3 месяца остеоинтеграции 3D-сканер фиксирует положение опор. Монолитный многослойный немецкий циркониевый мост (1200+ МПа) фрезеруется на станке и запекается при 1500°C.",
+        "specs": [
+          {
+            "key": "Прочность на Изгиб",
+            "val": "1200 – 1400 МПа"
+          },
+          {
+            "key": "Материал",
+            "val": "Цельный Немецкий Цирконий"
+          },
+          {
+            "key": "Темп. Спекания",
+            "val": "1500°C Высокая Плотность"
+          }
+        ]
+      }
+    ],
+    "costTitle": "Международное Сравнение Стоимости: Великобритания / Германия vs. Стамбул",
+    "costSubtitle": "Узнайте, почему европейские пациенты выбирают Master Smile Studio для восстановления All-on-6 без компромиссов в качестве.",
+    "costTableHeaders": {
+      "country": "Страна / Уровень Клиники",
+      "costPerArch": "Стоимость All-on-6 (за челюсть)",
+      "inclusions": "Что включено в стоимость",
+      "valueAdvantage": "Преимущество Master Smile Studio"
+    },
+    "costTableRows": [
+      {
+        "country": "Великобритания (Harley Street / Частные)",
+        "costPerArch": "£14,000 – £18,000",
+        "inclusions": "Только операция и базовый мост. 3D-КТ, временные зубы и приемы оплачиваются отдельно.",
+        "valueAdvantage": "Экономия 65% – 70% (£4,700 – £8,600) на системах Straumann/DXL."
+      },
+      {
+        "country": "Германия / Швейцария (Частные Клиники)",
+        "costPerArch": "€13,000 – €17,000",
+        "inclusions": "Операция и лаборатория. Отель, VIP-трансфер и медикаменты не входят в счет.",
+        "valueAdvantage": "Экономия 60% – 65% (€5,500 – €10,000) при идентичном титане."
+      },
+      {
+        "country": "Master Smile Studio (Стамбул, Турция)",
+        "costPerArch": "€5,500 – €10,000 / £4,700 – £8,600",
+        "inclusions": "Все Включено: 6 Имплантов, Временный Мост, Постоянный Циркониевый Мост, 3D-КТ, Отель 5*, VIP-Трансфер Mercedes, Пожизненная Гарантия.",
+        "valueAdvantage": "Гарантия Фиксированной Цены без скрытых медицинских доплат."
+      }
     ]
   }
 };
@@ -2564,7 +3647,89 @@ export default function AllOnSixImplantDetailView() {
         </div>
       </section>
 
-      {/* 2. ALL-ON-6 PERMANENT BRIDGE MATERIALS COMPARISON */}
+      {/* 2. OBJECTIVE FULL-ARCH COMPARISON: ALL-ON-4 vs ALL-ON-5 vs ALL-ON-6 */}
+      <section aria-labelledby="allon6-compare-heading" className={styles.compareSection}>
+        <div className={styles.container}>
+          <div className={styles.compareHeader}>
+            <h2 id="allon6-compare-heading" className={styles.compareTitle}>
+              {d.compareTitle}
+            </h2>
+            <p className={styles.compareSubtitle}>{d.compareSubtitle}</p>
+          </div>
+
+          <div className={styles.compareTableWrap}>
+            <table className={styles.compareTable}>
+              <thead>
+                <tr>
+                  <th className={styles.compareTh}>{d.compareTableHeaders.criteria}</th>
+                  <th className={styles.compareTh}>{d.compareTableHeaders.all4}</th>
+                  <th className={styles.compareTh}>{d.compareTableHeaders.all5}</th>
+                  <th className={styles.compareThHighlight}>{d.compareTableHeaders.all6}</th>
+                </tr>
+              </thead>
+              <tbody>
+                {d.compareTableRows.map((row, rIdx) => (
+                  <tr key={rIdx}>
+                    <td className={styles.compareTd}>
+                      <strong>{row.criteria}</strong>
+                    </td>
+                    <td className={styles.compareTd}>{row.all4}</td>
+                    <td className={styles.compareTd}>{row.all5}</td>
+                    <td className={`${styles.compareTd} ${styles.compareTdHighlight}`}>
+                      {row.all6}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          <div className={styles.compareDecisionBox}>
+            <div className={styles.compareDecisionCol}>
+              <h3 className={styles.compareDecisionTitle}>{d.compareDecision.whenAll4Title}</h3>
+              <p className={styles.compareDecisionText}>{d.compareDecision.whenAll4Text}</p>
+            </div>
+            <div className={styles.compareDecisionCol}>
+              <h3 className={styles.compareDecisionTitle}>{d.compareDecision.whenAll6Title}</h3>
+              <p className={styles.compareDecisionText}>{d.compareDecision.whenAll6Text}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 3. 3-PHASE SURGICAL & CAD/CAM ENGINEERING PROTOCOL */}
+      <section aria-labelledby="allon6-process-heading" className={styles.processSection}>
+        <div className={styles.container}>
+          <div className={styles.processHeader}>
+            <h2 id="allon6-process-heading" className={styles.processTitle}>
+              {d.processTitle}
+            </h2>
+            <p className={styles.processSubtitle}>{d.processSubtitle}</p>
+          </div>
+
+          <div className={styles.processGrid}>
+            {d.processCards.map((card, pIdx) => (
+              <div key={pIdx} className={styles.processCard}>
+                <div>
+                  <span className={styles.processStepNum}>{card.step}</span>
+                  <h3 className={styles.processCardTitle}>{card.title}</h3>
+                  <p className={styles.processCardText}>{card.text}</p>
+                </div>
+                <div className={styles.processCardSpecs}>
+                  {card.specs.map((sp, sIdx) => (
+                    <div key={sIdx} className={styles.processSpecItem}>
+                      <span className={styles.processSpecKey}>{sp.key}:</span>
+                      <span className={styles.processSpecVal}>{sp.val}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 4. ALL-ON-6 PERMANENT BRIDGE MATERIALS COMPARISON */}
       <section aria-labelledby="allon6-materials-heading" className={styles.materialsSection}>
         <div className={styles.container}>
           <div className={styles.materialsHeader}>
@@ -2669,7 +3834,7 @@ export default function AllOnSixImplantDetailView() {
         </div>
       </section>
 
-      {/* 3. TRANSPARENT PACKAGES & DYNAMIC CURRENCY SWITCHER */}
+      {/* 5. TRANSPARENT PACKAGES & DYNAMIC CURRENCY SWITCHER */}
       <section aria-labelledby="allon6-packages-heading" className={styles.packagesSection}>
         <div className={styles.container}>
           <div className={styles.packagesHeader}>
@@ -2767,31 +3932,72 @@ export default function AllOnSixImplantDetailView() {
         </div>
       </section>
 
-      {/* 4. REUSABLE: SERVICES INCLUDED */}
+      {/* 6. INTERNATIONAL COST COMPARISON SECTION (UK / GERMANY vs ISTANBUL) */}
+      <section aria-labelledby="allon6-cost-heading" className={styles.costSection}>
+        <div className={styles.container}>
+          <div className={styles.costHeader}>
+            <h2 id="allon6-cost-heading" className={styles.costTitle}>
+              {d.costTitle}
+            </h2>
+            <p className={styles.costSubtitle}>{d.costSubtitle}</p>
+          </div>
+
+          <div className={styles.costTableWrap}>
+            <table className={styles.costTable}>
+              <thead>
+                <tr>
+                  <th className={styles.costTh}>{d.costTableHeaders.country}</th>
+                  <th className={styles.costTh}>{d.costTableHeaders.costPerArch}</th>
+                  <th className={styles.costTh}>{d.costTableHeaders.inclusions}</th>
+                  <th className={styles.costThHighlight}>{d.costTableHeaders.valueAdvantage}</th>
+                </tr>
+              </thead>
+              <tbody>
+                {d.costTableRows.map((row, rIdx) => (
+                  <tr key={rIdx}>
+                    <td className={styles.costTd}>
+                      <strong>{row.country}</strong>
+                    </td>
+                    <td className={styles.costTd}>
+                      <strong>{row.costPerArch}</strong>
+                    </td>
+                    <td className={styles.costTd}>{row.inclusions}</td>
+                    <td className={`${styles.costTd} ${styles.costTdHighlight}`}>
+                      {row.valueAdvantage}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      {/* 7. REUSABLE: SERVICES INCLUDED */}
       <TreatmentServicesIncludedSection />
 
-      {/* 5. REUSABLE: CLINIC TOUR */}
+      {/* 8. REUSABLE: CLINIC TOUR */}
       <TreatmentClinicTourSection placeholderNum="A6-TOUR" />
 
-      {/* 6. REUSABLE: FOUNDING SURGEONS */}
+      {/* 9. REUSABLE: FOUNDING SURGEONS */}
       <TreatmentDoctorsSection />
 
-      {/* 7. BEFORE & AFTER TRANSFORMATIONS GALLERY */}
+      {/* 10. BEFORE & AFTER TRANSFORMATIONS GALLERY */}
       <TreatmentBeforeAfterSliderSection />
 
-      {/* 8. REVIEWS & TRUSTPILOT / GOOGLE 5-STAR */}
+      {/* 11. REVIEWS & TRUSTPILOT / GOOGLE 5-STAR */}
       <TreatmentReviewsSection />
 
-      {/* 9. REUSABLE: PARALLAX BANNER */}
+      {/* 12. REUSABLE: PARALLAX BANNER */}
       <TreatmentParallaxBanner />
 
-      {/* 10. REUSABLE: PATIENT VIDEO REELS */}
+      {/* 13. REUSABLE: PATIENT VIDEO REELS */}
       <TreatmentPatientReelsSection />
 
-      {/* 11. REUSABLE: DENTAL JOURNEY TIMELINE */}
+      {/* 14. REUSABLE: DENTAL JOURNEY TIMELINE */}
       <TreatmentJourneySimpleSection />
 
-      {/* 12. MASTER 17-QUESTION FAQ SECTION (CLINICAL & HEALTH TOURISM) */}
+      {/* 15. MASTER 17-QUESTION FAQ SECTION (CLINICAL & HEALTH TOURISM) */}
       <section aria-labelledby="allon6-faq-heading" className={styles.faqSection}>
         <div className={styles.faqContainer}>
           <div className={styles.faqHeader}>
@@ -2873,7 +4079,7 @@ export default function AllOnSixImplantDetailView() {
         </div>
       </section>
 
-      {/* 13. LET'S CREATE YOUR PERFECT SMILE PLAN (4-STEP INTERACTIVE QUOTE FUNNEL) */}
+      {/* 16. LET'S CREATE YOUR PERFECT SMILE PLAN (4-STEP INTERACTIVE QUOTE FUNNEL) */}
       <TreatmentInteractiveQuoteForm defaultTreatment="All-on-6" />
     </div>
   );
