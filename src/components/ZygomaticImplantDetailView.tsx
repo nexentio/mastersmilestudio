@@ -29,6 +29,11 @@ interface FaqItem {
   a: string;
 }
 
+interface CandidacyPoint {
+  title: string;
+  desc: string;
+}
+
 interface MaterialCardItem {
   title: string;
   sub: string;
@@ -82,6 +87,10 @@ interface DetailDictionary {
   introP3And: string;
   introP3LinkSinus: string;
   introP3Tail: string;
+
+  candidacyTitle: string;
+  candidacySubtitle: string;
+  candidacyPoints: CandidacyPoint[];
 
   compareTitle: string;
   compareSubtitle: string;
@@ -149,42 +158,62 @@ interface DetailDictionary {
 
 const DICTIONARIES: Record<string, DetailDictionary> = {
   "en": {
-    "introBadge": "ZYGOMATIC CHEEKBONE FULL-ARCH RESCUE PROTOCOL",
-    "introTitle": "Zygomatic Dental Implants in Istanbul: Same-Day Teeth for Severe Bone Loss",
-    "introLead": "Eliminate 12–18 months of painful bone grafting with extra-long (30–55mm) titanium implants anchored directly into the dense, non-resorbable zygomatic arch (cheekbone)—giving you fixed, load-bearing teeth in 24 hours.",
-    "introP1": "Zygomatic implant placement is the ultimate clinical salvation for patients suffering from severe maxillary (upper jaw) bone atrophy, failed sinus lifts, or long-term denture wear. Because the zygomatic cheekbone possesses extraordinary cortical bone density that never resorbs with age, our maxillofacial surgeons bypass the hollow sinus cavity completely.",
-    "introP2": "Under computer-guided 3D CBCT navigation and conscious IV sedation or general anesthesia, we achieve primary insertion stability exceeding 45–65 Ncm. This unmatched anchoring power permits immediate loading with a rigid, screw-retained provisional bridge in 24 hours, followed by a permanent 1200+ MPa monolithic multilayer German zirconia full arch.",
-    "introP3Lead": "For patients with sufficient residual bone, explore our ",
+    "introBadge": "ZYGOMATIC & PTERYGOID CHEEKBONE RESCUE PROTOCOL",
+    "introTitle": "Zygomatic and Pterygoid Dental Implants in Istanbul: Same-Day Fixed Teeth for Severe Bone Loss",
+    "introLead": "Developed from the pioneering 1990s research of Prof. Per-Ingvar Brånemark, extra-long (30–55mm) titanium implants anchor directly into the non-resorbable zygomatic arch (cheekbone) and pterygomaxillary plate—delivering fixed, load-bearing teeth in 24 hours without 12–18 months of painful bone grafts.",
+    "introP1": "Zygomatic and pterygoid dental implants are the ultimate clinical solution for patients suffering from catastrophic maxillary (upper jaw) bone resorption, failed sinus lifts, or decades of loose complete denture wear. Because the zygomatic cheekbone possesses the highest cortical bone density in the craniofacial skeleton and never resorbs with age or tooth loss, our maxillofacial surgeons bypass hollowed maxillary sinuses completely.",
+    "introP2": "Using advanced 3D CBCT craniofacial mapping and stereolithographic surgical guides under conscious IV sedation or general anesthesia, we achieve exceptional primary insertion torque values exceeding 50–65 Ncm. This allows safe immediate loading with a rigid screw-retained temporary bridge in 24 hours, followed by a permanent 1200+ MPa monolithic multilayer German zirconia full arch.",
+    "introP3Lead": "For patients with localized or moderate residual bone, explore our ",
     "introP3LinkAll4": "All-on-4 Dental Implants",
     "introP3Mid": ", ",
     "introP3LinkAll6": "All-on-6 Dental Implants",
     "introP3And": ", or ",
-    "introP3LinkSinus": "Sinus Lifting Procedures",
-    "introP3Tail": " in Istanbul.",
-    "compareTitle": "Objective Clinical Comparison: Quad Zygoma vs. Hybrid Zygoma vs. Complex Bone Grafting",
-    "compareSubtitle": "A scientific analysis of clinical timelines, surgical invasiveness, and graft resorption risks for terminal upper jawbone atrophy.",
+    "introP3LinkSinus": "Sinus Lifting & Bone Grafting",
+    "introP3Tail": " solutions in Istanbul.",
+    "candidacyTitle": "Are You a Candidate for Zygomatic & Pterygoid Implants?",
+    "candidacySubtitle": "If you have been told by other dentists that you \"have no bone left\" for regular implants, zygomatic surgery is your definitive answer.",
+    "candidacyPoints": [
+      {
+        "title": "Severe Upper Jaw Bone Atrophy",
+        "desc": "Patients with pencil-thin or razor-sharp upper jaw ridges where traditional 8–12mm implants cannot be anchored."
+      },
+      {
+        "title": "Failed Previous Sinus Bone Grafts",
+        "desc": "Patients who underwent sinus lifts or block bone augmentations that failed, resorbed, or became chronically infected."
+      },
+      {
+        "title": "Decades of Complete Denture Wear",
+        "desc": "Long-term denture pressure accelerates alveolar bone loss; cheekbone anchoring restores solid fixed bite stability."
+      },
+      {
+        "title": "Post-Trauma or Oncological Resection",
+        "desc": "Maxillofacial reconstruction following cyst removal, tumor resection, or major facial trauma."
+      }
+    ],
+    "compareTitle": "Objective Clinical Comparison: Quad Zygoma vs. Hybrid Zygoma vs. Complex Sinus Bone Grafting",
+    "compareSubtitle": "A scientific analysis of clinical timelines, surgical stages, graft resorption risks, and permanent chewing strength.",
     "compareTableHeaders": {
       "criteria": "Clinical Parameter",
-      "grafting": "Complex Sinus Lift & Grafting",
-      "hybrid": "Hybrid Zygoma (2 Zygoma + 2 Std)",
+      "grafting": "Complex Sinus Lift & Bone Grafting",
+      "hybrid": "Hybrid Zygoma (2 Zygoma + 2-4 Std)",
       "quad": "Quad Zygoma (4 Zygomatic Implants) ⭐"
     },
     "compareTableRows": [
       {
         "criteria": "Bone Grafting Requirement",
-        "grafting": "Extensive block / sinus bone grafts",
+        "grafting": "Extensive block / sinus bone grafts (Hip/bovine)",
         "hybrid": "0% Bone Grafting (Cheekbone anchor)",
         "quad": "0% Bone Grafting (Complete bypass)"
       },
       {
         "criteria": "Total Treatment Duration",
         "grafting": "12 – 18 months total wait",
-        "hybrid": "24–48 hours fixed temporary (3 Mo final)",
-        "quad": "24–48 hours fixed temporary (3 Mo final)"
+        "hybrid": "24–48 hours for fixed teeth (Final at 3 Mo)",
+        "quad": "24–48 hours for fixed teeth (Final at 3 Mo)"
       },
       {
         "criteria": "Surgical Operating Stages",
-        "grafting": "2–4 separate surgeries over 1 year",
+        "grafting": "2–4 separate surgeries over 1.5 years",
         "hybrid": "1 single surgery (Sedation/GA)",
         "quad": "1 single surgery (Sedation/GA)"
       },
@@ -215,7 +244,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     ],
     "compareDecision": {
       "whenGraftingTitle": "When is Complex Sinus Grafting Clinically Feasible?",
-      "whenGraftingText": "Sinus grafting is only advisable for younger patients with localized bone deficits who have at least 4–5mm of native subantral bone to stabilize grafts without total jawbone atrophy.",
+      "whenGraftingText": "Sinus grafting is only advisable for patients with localized bone deficits who have at least 4–5mm of native subantral bone to stabilize grafts, without total jawbone atrophy.",
       "whenZygomaticTitle": "When are Zygomatic Implants the Only Viable Solution?",
       "whenZygomaticText": "Zygomatic implants are the definitive gold standard when the upper jaw is completely hollowed out, previous bone grafts have failed, or the patient cannot tolerate 18 months without fixed teeth."
     },
@@ -224,7 +253,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "processCards": [
       {
         "step": "PHASE 01",
-        "title": "3D CBCT Craniofacial Mapping & Virtual Guided Stent",
+        "title": "3D CBCT Craniofacial Mapping & Stereolithographic Guided Stent",
         "text": "High-resolution 3D tomography analyzes zygomatic bone density, sinus contours, and orbital margins. A stereolithographic surgical guide determines the exact 3D entry trajectory.",
         "specs": [
           {
@@ -661,10 +690,10 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
   },
   "tr": {
     "introBadge": "İLERİ CERRAHİ: ELMACIK KEMİĞİ İMPLANT PROTOKOLÜ",
-    "introTitle": "İstanbul Zigoma (Elmacık Kemiği) İmplant Tedavisi: Aşırı Kemik Erimesinde 24 Saatte Sabit Diş",
-    "introLead": "12–18 ay süren ağrılı kemik tozu ve greft ameliyatlarını unutun: Özel 30–55 mm titanyum implantlarla elmacık kemiğine tutunarak aşırı kemik erimesi olan vakalarda bile 24 saat içinde sabit dişlerinize kavuşun.",
-    "introP1": "Zigomatik implantlar, üst çene kemiği tamamen erimiş, sinüs lifting ameliyatları başarısız olmuş veya uzun yıllar damak protez kullanarak kemik desteğini kaybetmiş hastalar için dünyadaki en gelişmiş cerrahi kurtarıcı yöntemdir. Elmacık kemiği yaşlanmayla asla erimeyen çok yoğun bir kortikal yapıya sahip olduğu için cerrahlarımız sinüs boşluğunu tamamen bypass eder.",
-    "introP2": "3D Tomografi (CBCT) kılavuzluğunda ve tam teşekküllü ameliyathanemizde sedasyon veya genel anestezi altında uygulanan zigomatik implantlar 50–65 Ncm gibi muazzam bir tutuculuk sağlar. Bu sayede ameliyattan 24 saat sonra vidalı sabit geçici köprünüz takılır ve 3 ay sonra 1200+ MPa monolitik Alman zirkonyum kalıcı dişlerinize geçilir.",
+    "introTitle": "İstanbul Zigoma ve Pterigoid İmplant Tedavisi: Aşırı Kemik Erimesinde 24 Saatte Sabit Diş",
+    "introLead": "1990’larda Prof. Per-Ingvar Brånemark’ın öncü araştırmalarıyla geliştirilen 30–55 mm titanyum implantlar, ömür boyu erimeyen elmacık (zigoma) kemiğine ve pterigoid kemiğe sabitlenerek 12–18 ay süren ağrılı kemik tozu ameliyatlarına gerek kalmadan 24 saat içinde sabit dişler sağlar.",
+    "introP1": "Zigomatik ve pterigoid implantlar, üst çene kemiği tamamen erimiş, sinüs lifting ameliyatları başarısız olmuş veya uzun yıllar damak protez kullanarak kemik desteğini kaybetmiş hastalar için dünyadaki en gelişmiş cerrahi kurtarıcı yöntemdir. Elmacık kemiği insan iskeletinin en yoğun kortikal kemiğidir ve diş kaybıyla asla erimez.",
+    "introP2": "3D Tomografi (CBCT) kılavuzluğunda ve tam teşekküllü cerrahi ameliyathanemizde sedasyon veya genel anestezi altında uygulanan zigomatik implantlar 50–65 Ncm gibi muazzam bir tutuculuk sağlar. Bu sayede ameliyattan 24 saat sonra vidalı sabit geçici köprünüz takılır ve 3 ay sonra 1200+ MPa monolitik Alman zirkonyum kalıcı dişlerinize geçilir.",
     "introP3Lead": "Yeterli kemik hacmi bulunan vakalarda ",
     "introP3LinkAll4": "All-on-4 İmplant Tedavisi",
     "introP3Mid": ", ",
@@ -672,12 +701,32 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "introP3And": " veya ",
     "introP3LinkSinus": "Sinüs Lifting Operasyonlarımızı",
     "introP3Tail": " inceleyebilirsiniz.",
+    "candidacyTitle": "Zigomatik ve Pterigoid İmplant İçin Uygun Bir Aday Mısınız?",
+    "candidacySubtitle": "Başka diş hekimleri tarafından \"kemik kalmamış, implant yapılamaz\" denildiyse, zigomatik cerrahi kesin çözümünüzdür.",
+    "candidacyPoints": [
+      {
+        "title": "İleri Derecede Üst Çene Kemik Erimesi",
+        "desc": "Standart 8–12 mm implantların tutunamayacağı kadar incelmiş jilet kalınlığındaki kemik yapıları."
+      },
+      {
+        "title": "Başarısız Olmuş Sinüs Kemik Greftleri",
+        "desc": "Daha önce yapılan sinüs lifting veya blok kemik tozu ameliyatları erimiş ya da enfekte olmuş hastalar."
+      },
+      {
+        "title": "Uzun Yıllar Damak Protez Kullanımı",
+        "desc": "Protez baskısı kemiği tamamen erittiğinde elmacık kemiği tutunması sabit çiğneme gücünü geri kazandırır."
+      },
+      {
+        "title": "Kist, Tümör veya Travma Sonrası Vakalar",
+        "desc": "Tümör cerrahisi veya ileri çene travması sonrası üst çene rekonstrüksiyonu gereken hastalar."
+      }
+    ],
     "compareTitle": "Objektif Klinik Karşılaştırma: Quad Zigoma vs. Hibrit Zigoma vs. Kemik Grefti",
     "compareSubtitle": "Aşırı üst çene kemik erimesi vakalarında tedavi süreleri, cerrahi riskler ve kemik erime oranlarının bilimsel analizi.",
     "compareTableHeaders": {
       "criteria": "Klinik Parametre",
       "grafting": "İleri Sinüs Lifting & Kemik Grefti",
-      "hybrid": "Hibrit Zigoma (2 Zigoma + 2 Std)",
+      "hybrid": "Hibrit Zigoma (2 Zigoma + 2-4 Std)",
       "quad": "Quad Zigoma (4 Zigoma İmplantı) ⭐"
     },
     "compareTableRows": [
@@ -695,7 +744,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       },
       {
         "criteria": "Cerrahi Operasyon Sayısı",
-        "grafting": "1 yılda 2–4 ayrı cerrahi operasyon",
+        "grafting": "1.5 yılda 2–4 ayrı cerrahi operasyon",
         "hybrid": "Tek cerrahi seans (Sedasyon/Genel Anestezi)",
         "quad": "Tek cerrahi seans (Sedasyon/Genel Anestezi)"
       },
@@ -1171,42 +1220,62 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     ]
   },
   "de": {
-    "introBadge": "JOCHBEIN-IMPLANTATE BEI KNOCSCHWUND",
-    "introTitle": "Zygoma-Implantate in Istanbul: Feste Zähne bei extremem Knochenabbau",
-    "introLead": "Verzichten Sie auf 12–18 Monate schmerzhaften Knochenaufbau: Mit 30–55 mm langen Titanimplantaten, die direkt im dichten Jochbein verankert werden, erhalten Sie feste Zähne innerhalb von 24 Stunden.",
-    "introP1": "Zygomatic implant placement is the ultimate clinical salvation for patients suffering from severe maxillary (upper jaw) bone atrophy, failed sinus lifts, or long-term denture wear. Because the zygomatic cheekbone possesses extraordinary cortical bone density that never resorbs with age, our maxillofacial surgeons bypass the hollow sinus cavity completely.",
-    "introP2": "Under computer-guided 3D CBCT navigation and conscious IV sedation or general anesthesia, we achieve primary insertion stability exceeding 45–65 Ncm. This unmatched anchoring power permits immediate loading with a rigid, screw-retained provisional bridge in 24 hours, followed by a permanent 1200+ MPa monolithic multilayer German zirconia full arch.",
-    "introP3Lead": "For patients with sufficient residual bone, explore our ",
+    "introBadge": "JOCHBEIN-IMPLANTATE BEI KNOCHENSCHWUND",
+    "introTitle": "Zygoma- und Pterygoid-Implantate in Istanbul: Feste Zähne bei extremem Knochenabbau",
+    "introLead": "Verzichten Sie auf 12–18 Monate schmerzhaften Knochenaufbau: 30–55 mm lange Titanimplantate, verankert im dichten Jochbein, liefern feste Zähne innerhalb von 24 Stunden.",
+    "introP1": "Zygomatic and pterygoid dental implants are the ultimate clinical solution for patients suffering from catastrophic maxillary (upper jaw) bone resorption, failed sinus lifts, or decades of loose complete denture wear. Because the zygomatic cheekbone possesses the highest cortical bone density in the craniofacial skeleton and never resorbs with age or tooth loss, our maxillofacial surgeons bypass hollowed maxillary sinuses completely.",
+    "introP2": "Using advanced 3D CBCT craniofacial mapping and stereolithographic surgical guides under conscious IV sedation or general anesthesia, we achieve exceptional primary insertion torque values exceeding 50–65 Ncm. This allows safe immediate loading with a rigid screw-retained temporary bridge in 24 hours, followed by a permanent 1200+ MPa monolithic multilayer German zirconia full arch.",
+    "introP3Lead": "For patients with localized or moderate residual bone, explore our ",
     "introP3LinkAll4": "All-on-4 Dental Implants",
     "introP3Mid": ", ",
     "introP3LinkAll6": "All-on-6 Dental Implants",
     "introP3And": ", or ",
-    "introP3LinkSinus": "Sinus Lifting Procedures",
-    "introP3Tail": " in Istanbul.",
+    "introP3LinkSinus": "Sinus Lifting & Bone Grafting",
+    "introP3Tail": " solutions in Istanbul.",
+    "candidacyTitle": "Are You a Candidate for Zygomatic & Pterygoid Implants?",
+    "candidacySubtitle": "If you have been told by other dentists that you \"have no bone left\" for regular implants, zygomatic surgery is your definitive answer.",
+    "candidacyPoints": [
+      {
+        "title": "Severe Upper Jaw Bone Atrophy",
+        "desc": "Patients with pencil-thin or razor-sharp upper jaw ridges where traditional 8–12mm implants cannot be anchored."
+      },
+      {
+        "title": "Failed Previous Sinus Bone Grafts",
+        "desc": "Patients who underwent sinus lifts or block bone augmentations that failed, resorbed, or became chronically infected."
+      },
+      {
+        "title": "Decades of Complete Denture Wear",
+        "desc": "Long-term denture pressure accelerates alveolar bone loss; cheekbone anchoring restores solid fixed bite stability."
+      },
+      {
+        "title": "Post-Trauma or Oncological Resection",
+        "desc": "Maxillofacial reconstruction following cyst removal, tumor resection, or major facial trauma."
+      }
+    ],
     "compareTitle": "Objektiver Klinischer Vergleich: Quad Zygoma vs. Hybrid Zygoma vs. Sinuslift",
-    "compareSubtitle": "A scientific analysis of clinical timelines, surgical invasiveness, and graft resorption risks for terminal upper jawbone atrophy.",
+    "compareSubtitle": "A scientific analysis of clinical timelines, surgical stages, graft resorption risks, and permanent chewing strength.",
     "compareTableHeaders": {
       "criteria": "Clinical Parameter",
-      "grafting": "Complex Sinus Lift & Grafting",
-      "hybrid": "Hybrid Zygoma (2 Zygoma + 2 Std)",
+      "grafting": "Complex Sinus Lift & Bone Grafting",
+      "hybrid": "Hybrid Zygoma (2 Zygoma + 2-4 Std)",
       "quad": "Quad Zygoma (4 Zygomatic Implants) ⭐"
     },
     "compareTableRows": [
       {
         "criteria": "Bone Grafting Requirement",
-        "grafting": "Extensive block / sinus bone grafts",
+        "grafting": "Extensive block / sinus bone grafts (Hip/bovine)",
         "hybrid": "0% Bone Grafting (Cheekbone anchor)",
         "quad": "0% Bone Grafting (Complete bypass)"
       },
       {
         "criteria": "Total Treatment Duration",
         "grafting": "12 – 18 months total wait",
-        "hybrid": "24–48 hours fixed temporary (3 Mo final)",
-        "quad": "24–48 hours fixed temporary (3 Mo final)"
+        "hybrid": "24–48 hours for fixed teeth (Final at 3 Mo)",
+        "quad": "24–48 hours for fixed teeth (Final at 3 Mo)"
       },
       {
         "criteria": "Surgical Operating Stages",
-        "grafting": "2–4 separate surgeries over 1 year",
+        "grafting": "2–4 separate surgeries over 1.5 years",
         "hybrid": "1 single surgery (Sedation/GA)",
         "quad": "1 single surgery (Sedation/GA)"
       },
@@ -1237,7 +1306,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     ],
     "compareDecision": {
       "whenGraftingTitle": "When is Complex Sinus Grafting Clinically Feasible?",
-      "whenGraftingText": "Sinus grafting is only advisable for younger patients with localized bone deficits who have at least 4–5mm of native subantral bone to stabilize grafts without total jawbone atrophy.",
+      "whenGraftingText": "Sinus grafting is only advisable for patients with localized bone deficits who have at least 4–5mm of native subantral bone to stabilize grafts, without total jawbone atrophy.",
       "whenZygomaticTitle": "When are Zygomatic Implants the Only Viable Solution?",
       "whenZygomaticText": "Zygomatic implants are the definitive gold standard when the upper jaw is completely hollowed out, previous bone grafts have failed, or the patient cannot tolerate 18 months without fixed teeth."
     },
@@ -1246,7 +1315,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "processCards": [
       {
         "step": "PHASE 01",
-        "title": "3D CBCT Craniofacial Mapping & Virtual Guided Stent",
+        "title": "3D CBCT Craniofacial Mapping & Stereolithographic Guided Stent",
         "text": "High-resolution 3D tomography analyzes zygomatic bone density, sinus contours, and orbital margins. A stereolithographic surgical guide determines the exact 3D entry trajectory.",
         "specs": [
           {
@@ -1683,41 +1752,61 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
   },
   "pl": {
     "introBadge": "IMPLANTY JARZMOWE PRZY BRAKU KOŚCI",
-    "introTitle": "Implanty Zygomatyczne w Stambule: Stałe Zęby w 24h przy Zaniku Kości",
-    "introLead": "Zapomnij o wielomiesięcznych bolesnych przeszczepach kości: Specjalne implanty o długości 30–55 mm kotwiczone w kości jarzmowej zapewniają stałe zęby w 24 godziny.",
-    "introP1": "Zygomatic implant placement is the ultimate clinical salvation for patients suffering from severe maxillary (upper jaw) bone atrophy, failed sinus lifts, or long-term denture wear. Because the zygomatic cheekbone possesses extraordinary cortical bone density that never resorbs with age, our maxillofacial surgeons bypass the hollow sinus cavity completely.",
-    "introP2": "Under computer-guided 3D CBCT navigation and conscious IV sedation or general anesthesia, we achieve primary insertion stability exceeding 45–65 Ncm. This unmatched anchoring power permits immediate loading with a rigid, screw-retained provisional bridge in 24 hours, followed by a permanent 1200+ MPa monolithic multilayer German zirconia full arch.",
-    "introP3Lead": "For patients with sufficient residual bone, explore our ",
+    "introTitle": "Implanty Zygomatyczne i Skrzydłowe w Stambule: Stałe Zęby w 24h",
+    "introLead": "Koniec z wielomiesięcznymi przeszczepami kości: Specjalne implanty 30–55 mm kotwiczone w kości jarzmowej zapewniają stałe zęby w 24 godziny.",
+    "introP1": "Zygomatic and pterygoid dental implants are the ultimate clinical solution for patients suffering from catastrophic maxillary (upper jaw) bone resorption, failed sinus lifts, or decades of loose complete denture wear. Because the zygomatic cheekbone possesses the highest cortical bone density in the craniofacial skeleton and never resorbs with age or tooth loss, our maxillofacial surgeons bypass hollowed maxillary sinuses completely.",
+    "introP2": "Using advanced 3D CBCT craniofacial mapping and stereolithographic surgical guides under conscious IV sedation or general anesthesia, we achieve exceptional primary insertion torque values exceeding 50–65 Ncm. This allows safe immediate loading with a rigid screw-retained temporary bridge in 24 hours, followed by a permanent 1200+ MPa monolithic multilayer German zirconia full arch.",
+    "introP3Lead": "For patients with localized or moderate residual bone, explore our ",
     "introP3LinkAll4": "All-on-4 Dental Implants",
     "introP3Mid": ", ",
     "introP3LinkAll6": "All-on-6 Dental Implants",
     "introP3And": ", or ",
-    "introP3LinkSinus": "Sinus Lifting Procedures",
-    "introP3Tail": " in Istanbul.",
+    "introP3LinkSinus": "Sinus Lifting & Bone Grafting",
+    "introP3Tail": " solutions in Istanbul.",
+    "candidacyTitle": "Are You a Candidate for Zygomatic & Pterygoid Implants?",
+    "candidacySubtitle": "If you have been told by other dentists that you \"have no bone left\" for regular implants, zygomatic surgery is your definitive answer.",
+    "candidacyPoints": [
+      {
+        "title": "Severe Upper Jaw Bone Atrophy",
+        "desc": "Patients with pencil-thin or razor-sharp upper jaw ridges where traditional 8–12mm implants cannot be anchored."
+      },
+      {
+        "title": "Failed Previous Sinus Bone Grafts",
+        "desc": "Patients who underwent sinus lifts or block bone augmentations that failed, resorbed, or became chronically infected."
+      },
+      {
+        "title": "Decades of Complete Denture Wear",
+        "desc": "Long-term denture pressure accelerates alveolar bone loss; cheekbone anchoring restores solid fixed bite stability."
+      },
+      {
+        "title": "Post-Trauma or Oncological Resection",
+        "desc": "Maxillofacial reconstruction following cyst removal, tumor resection, or major facial trauma."
+      }
+    ],
     "compareTitle": "Obiektywne Porównanie: Quad Zygoma vs. Hybrid Zygoma vs. Sinus Lift",
-    "compareSubtitle": "A scientific analysis of clinical timelines, surgical invasiveness, and graft resorption risks for terminal upper jawbone atrophy.",
+    "compareSubtitle": "A scientific analysis of clinical timelines, surgical stages, graft resorption risks, and permanent chewing strength.",
     "compareTableHeaders": {
       "criteria": "Clinical Parameter",
-      "grafting": "Complex Sinus Lift & Grafting",
-      "hybrid": "Hybrid Zygoma (2 Zygoma + 2 Std)",
+      "grafting": "Complex Sinus Lift & Bone Grafting",
+      "hybrid": "Hybrid Zygoma (2 Zygoma + 2-4 Std)",
       "quad": "Quad Zygoma (4 Zygomatic Implants) ⭐"
     },
     "compareTableRows": [
       {
         "criteria": "Bone Grafting Requirement",
-        "grafting": "Extensive block / sinus bone grafts",
+        "grafting": "Extensive block / sinus bone grafts (Hip/bovine)",
         "hybrid": "0% Bone Grafting (Cheekbone anchor)",
         "quad": "0% Bone Grafting (Complete bypass)"
       },
       {
         "criteria": "Total Treatment Duration",
         "grafting": "12 – 18 months total wait",
-        "hybrid": "24–48 hours fixed temporary (3 Mo final)",
-        "quad": "24–48 hours fixed temporary (3 Mo final)"
+        "hybrid": "24–48 hours for fixed teeth (Final at 3 Mo)",
+        "quad": "24–48 hours for fixed teeth (Final at 3 Mo)"
       },
       {
         "criteria": "Surgical Operating Stages",
-        "grafting": "2–4 separate surgeries over 1 year",
+        "grafting": "2–4 separate surgeries over 1.5 years",
         "hybrid": "1 single surgery (Sedation/GA)",
         "quad": "1 single surgery (Sedation/GA)"
       },
@@ -1748,7 +1837,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     ],
     "compareDecision": {
       "whenGraftingTitle": "When is Complex Sinus Grafting Clinically Feasible?",
-      "whenGraftingText": "Sinus grafting is only advisable for younger patients with localized bone deficits who have at least 4–5mm of native subantral bone to stabilize grafts without total jawbone atrophy.",
+      "whenGraftingText": "Sinus grafting is only advisable for patients with localized bone deficits who have at least 4–5mm of native subantral bone to stabilize grafts, without total jawbone atrophy.",
       "whenZygomaticTitle": "When are Zygomatic Implants the Only Viable Solution?",
       "whenZygomaticText": "Zygomatic implants are the definitive gold standard when the upper jaw is completely hollowed out, previous bone grafts have failed, or the patient cannot tolerate 18 months without fixed teeth."
     },
@@ -1757,7 +1846,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "processCards": [
       {
         "step": "PHASE 01",
-        "title": "3D CBCT Craniofacial Mapping & Virtual Guided Stent",
+        "title": "3D CBCT Craniofacial Mapping & Stereolithographic Guided Stent",
         "text": "High-resolution 3D tomography analyzes zygomatic bone density, sinus contours, and orbital margins. A stereolithographic surgical guide determines the exact 3D entry trajectory.",
         "specs": [
           {
@@ -2194,41 +2283,61 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
   },
   "pt": {
     "introBadge": "IMPLANTES ZIGOMÁTICOS EM OSSO SEVERO",
-    "introTitle": "Implantes Zigomáticos em Istambul: Dentes Fixos em 24h sem Enxerto Ósseo",
-    "introLead": "Elimine 12 a 18 meses de enxertos ósseos dolorosos: Implantes de 30 a 55 mm ancorados diretamente no osso zigomático (maçã do rosto) proporcionam dentes fixos em 24 horas.",
-    "introP1": "Zygomatic implant placement is the ultimate clinical salvation for patients suffering from severe maxillary (upper jaw) bone atrophy, failed sinus lifts, or long-term denture wear. Because the zygomatic cheekbone possesses extraordinary cortical bone density that never resorbs with age, our maxillofacial surgeons bypass the hollow sinus cavity completely.",
-    "introP2": "Under computer-guided 3D CBCT navigation and conscious IV sedation or general anesthesia, we achieve primary insertion stability exceeding 45–65 Ncm. This unmatched anchoring power permits immediate loading with a rigid, screw-retained provisional bridge in 24 hours, followed by a permanent 1200+ MPa monolithic multilayer German zirconia full arch.",
-    "introP3Lead": "For patients with sufficient residual bone, explore our ",
+    "introTitle": "Implantes Zigomáticos e Pterigóideos em Istambul: Dentes Fixos em 24h",
+    "introLead": "Elimine 12 a 18 meses de enxertos ósseos dolorosos: Implantes de 30 a 55 mm ancorados no osso zigomático proporcionam dentes fixos em 24 horas.",
+    "introP1": "Zygomatic and pterygoid dental implants are the ultimate clinical solution for patients suffering from catastrophic maxillary (upper jaw) bone resorption, failed sinus lifts, or decades of loose complete denture wear. Because the zygomatic cheekbone possesses the highest cortical bone density in the craniofacial skeleton and never resorbs with age or tooth loss, our maxillofacial surgeons bypass hollowed maxillary sinuses completely.",
+    "introP2": "Using advanced 3D CBCT craniofacial mapping and stereolithographic surgical guides under conscious IV sedation or general anesthesia, we achieve exceptional primary insertion torque values exceeding 50–65 Ncm. This allows safe immediate loading with a rigid screw-retained temporary bridge in 24 hours, followed by a permanent 1200+ MPa monolithic multilayer German zirconia full arch.",
+    "introP3Lead": "For patients with localized or moderate residual bone, explore our ",
     "introP3LinkAll4": "All-on-4 Dental Implants",
     "introP3Mid": ", ",
     "introP3LinkAll6": "All-on-6 Dental Implants",
     "introP3And": ", or ",
-    "introP3LinkSinus": "Sinus Lifting Procedures",
-    "introP3Tail": " in Istanbul.",
+    "introP3LinkSinus": "Sinus Lifting & Bone Grafting",
+    "introP3Tail": " solutions in Istanbul.",
+    "candidacyTitle": "Are You a Candidate for Zygomatic & Pterygoid Implants?",
+    "candidacySubtitle": "If you have been told by other dentists that you \"have no bone left\" for regular implants, zygomatic surgery is your definitive answer.",
+    "candidacyPoints": [
+      {
+        "title": "Severe Upper Jaw Bone Atrophy",
+        "desc": "Patients with pencil-thin or razor-sharp upper jaw ridges where traditional 8–12mm implants cannot be anchored."
+      },
+      {
+        "title": "Failed Previous Sinus Bone Grafts",
+        "desc": "Patients who underwent sinus lifts or block bone augmentations that failed, resorbed, or became chronically infected."
+      },
+      {
+        "title": "Decades of Complete Denture Wear",
+        "desc": "Long-term denture pressure accelerates alveolar bone loss; cheekbone anchoring restores solid fixed bite stability."
+      },
+      {
+        "title": "Post-Trauma or Oncological Resection",
+        "desc": "Maxillofacial reconstruction following cyst removal, tumor resection, or major facial trauma."
+      }
+    ],
     "compareTitle": "Comparativo Clínico: Quad Zygoma vs. Hybrid Zygoma vs. Enxerto Ósseo",
-    "compareSubtitle": "A scientific analysis of clinical timelines, surgical invasiveness, and graft resorption risks for terminal upper jawbone atrophy.",
+    "compareSubtitle": "A scientific analysis of clinical timelines, surgical stages, graft resorption risks, and permanent chewing strength.",
     "compareTableHeaders": {
       "criteria": "Clinical Parameter",
-      "grafting": "Complex Sinus Lift & Grafting",
-      "hybrid": "Hybrid Zygoma (2 Zygoma + 2 Std)",
+      "grafting": "Complex Sinus Lift & Bone Grafting",
+      "hybrid": "Hybrid Zygoma (2 Zygoma + 2-4 Std)",
       "quad": "Quad Zygoma (4 Zygomatic Implants) ⭐"
     },
     "compareTableRows": [
       {
         "criteria": "Bone Grafting Requirement",
-        "grafting": "Extensive block / sinus bone grafts",
+        "grafting": "Extensive block / sinus bone grafts (Hip/bovine)",
         "hybrid": "0% Bone Grafting (Cheekbone anchor)",
         "quad": "0% Bone Grafting (Complete bypass)"
       },
       {
         "criteria": "Total Treatment Duration",
         "grafting": "12 – 18 months total wait",
-        "hybrid": "24–48 hours fixed temporary (3 Mo final)",
-        "quad": "24–48 hours fixed temporary (3 Mo final)"
+        "hybrid": "24–48 hours for fixed teeth (Final at 3 Mo)",
+        "quad": "24–48 hours for fixed teeth (Final at 3 Mo)"
       },
       {
         "criteria": "Surgical Operating Stages",
-        "grafting": "2–4 separate surgeries over 1 year",
+        "grafting": "2–4 separate surgeries over 1.5 years",
         "hybrid": "1 single surgery (Sedation/GA)",
         "quad": "1 single surgery (Sedation/GA)"
       },
@@ -2259,7 +2368,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     ],
     "compareDecision": {
       "whenGraftingTitle": "When is Complex Sinus Grafting Clinically Feasible?",
-      "whenGraftingText": "Sinus grafting is only advisable for younger patients with localized bone deficits who have at least 4–5mm of native subantral bone to stabilize grafts without total jawbone atrophy.",
+      "whenGraftingText": "Sinus grafting is only advisable for patients with localized bone deficits who have at least 4–5mm of native subantral bone to stabilize grafts, without total jawbone atrophy.",
       "whenZygomaticTitle": "When are Zygomatic Implants the Only Viable Solution?",
       "whenZygomaticText": "Zygomatic implants are the definitive gold standard when the upper jaw is completely hollowed out, previous bone grafts have failed, or the patient cannot tolerate 18 months without fixed teeth."
     },
@@ -2268,7 +2377,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "processCards": [
       {
         "step": "PHASE 01",
-        "title": "3D CBCT Craniofacial Mapping & Virtual Guided Stent",
+        "title": "3D CBCT Craniofacial Mapping & Stereolithographic Guided Stent",
         "text": "High-resolution 3D tomography analyzes zygomatic bone density, sinus contours, and orbital margins. A stereolithographic surgical guide determines the exact 3D entry trajectory.",
         "specs": [
           {
@@ -2705,41 +2814,61 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
   },
   "es": {
     "introBadge": "IMPLANTES CIGOMÁTICOS EN PÉRDIDA ÓSEA",
-    "introTitle": "Implantes Cigomáticos en Estambul: Dientes Fijos en 24h sin Injertos Óseos",
-    "introLead": "Olvídese de 12 a 18 meses de dolorosos injertos óseos: Implantes de 30 a 55 mm anclados directamente en el hueso cigomático (pómulo) para dientes fijos en 24 horas.",
-    "introP1": "Zygomatic implant placement is the ultimate clinical salvation for patients suffering from severe maxillary (upper jaw) bone atrophy, failed sinus lifts, or long-term denture wear. Because the zygomatic cheekbone possesses extraordinary cortical bone density that never resorbs with age, our maxillofacial surgeons bypass the hollow sinus cavity completely.",
-    "introP2": "Under computer-guided 3D CBCT navigation and conscious IV sedation or general anesthesia, we achieve primary insertion stability exceeding 45–65 Ncm. This unmatched anchoring power permits immediate loading with a rigid, screw-retained provisional bridge in 24 hours, followed by a permanent 1200+ MPa monolithic multilayer German zirconia full arch.",
-    "introP3Lead": "For patients with sufficient residual bone, explore our ",
+    "introTitle": "Implantes Cigomáticos y Pterigoideos en Estambul: Dientes Fijos en 24h",
+    "introLead": "Olvídese de 12 a 18 meses de dolorosos injertos óseos: Implantes de 30 a 55 mm anclados en el hueso cigomático para dientes fijos en 24 horas.",
+    "introP1": "Zygomatic and pterygoid dental implants are the ultimate clinical solution for patients suffering from catastrophic maxillary (upper jaw) bone resorption, failed sinus lifts, or decades of loose complete denture wear. Because the zygomatic cheekbone possesses the highest cortical bone density in the craniofacial skeleton and never resorbs with age or tooth loss, our maxillofacial surgeons bypass hollowed maxillary sinuses completely.",
+    "introP2": "Using advanced 3D CBCT craniofacial mapping and stereolithographic surgical guides under conscious IV sedation or general anesthesia, we achieve exceptional primary insertion torque values exceeding 50–65 Ncm. This allows safe immediate loading with a rigid screw-retained temporary bridge in 24 hours, followed by a permanent 1200+ MPa monolithic multilayer German zirconia full arch.",
+    "introP3Lead": "For patients with localized or moderate residual bone, explore our ",
     "introP3LinkAll4": "All-on-4 Dental Implants",
     "introP3Mid": ", ",
     "introP3LinkAll6": "All-on-6 Dental Implants",
     "introP3And": ", or ",
-    "introP3LinkSinus": "Sinus Lifting Procedures",
-    "introP3Tail": " in Istanbul.",
+    "introP3LinkSinus": "Sinus Lifting & Bone Grafting",
+    "introP3Tail": " solutions in Istanbul.",
+    "candidacyTitle": "Are You a Candidate for Zygomatic & Pterygoid Implants?",
+    "candidacySubtitle": "If you have been told by other dentists that you \"have no bone left\" for regular implants, zygomatic surgery is your definitive answer.",
+    "candidacyPoints": [
+      {
+        "title": "Severe Upper Jaw Bone Atrophy",
+        "desc": "Patients with pencil-thin or razor-sharp upper jaw ridges where traditional 8–12mm implants cannot be anchored."
+      },
+      {
+        "title": "Failed Previous Sinus Bone Grafts",
+        "desc": "Patients who underwent sinus lifts or block bone augmentations that failed, resorbed, or became chronically infected."
+      },
+      {
+        "title": "Decades of Complete Denture Wear",
+        "desc": "Long-term denture pressure accelerates alveolar bone loss; cheekbone anchoring restores solid fixed bite stability."
+      },
+      {
+        "title": "Post-Trauma or Oncological Resection",
+        "desc": "Maxillofacial reconstruction following cyst removal, tumor resection, or major facial trauma."
+      }
+    ],
     "compareTitle": "Comparación Clínica: Quad Zygoma vs. Hybrid Zygoma vs. Injertos de Seno",
-    "compareSubtitle": "A scientific analysis of clinical timelines, surgical invasiveness, and graft resorption risks for terminal upper jawbone atrophy.",
+    "compareSubtitle": "A scientific analysis of clinical timelines, surgical stages, graft resorption risks, and permanent chewing strength.",
     "compareTableHeaders": {
       "criteria": "Clinical Parameter",
-      "grafting": "Complex Sinus Lift & Grafting",
-      "hybrid": "Hybrid Zygoma (2 Zygoma + 2 Std)",
+      "grafting": "Complex Sinus Lift & Bone Grafting",
+      "hybrid": "Hybrid Zygoma (2 Zygoma + 2-4 Std)",
       "quad": "Quad Zygoma (4 Zygomatic Implants) ⭐"
     },
     "compareTableRows": [
       {
         "criteria": "Bone Grafting Requirement",
-        "grafting": "Extensive block / sinus bone grafts",
+        "grafting": "Extensive block / sinus bone grafts (Hip/bovine)",
         "hybrid": "0% Bone Grafting (Cheekbone anchor)",
         "quad": "0% Bone Grafting (Complete bypass)"
       },
       {
         "criteria": "Total Treatment Duration",
         "grafting": "12 – 18 months total wait",
-        "hybrid": "24–48 hours fixed temporary (3 Mo final)",
-        "quad": "24–48 hours fixed temporary (3 Mo final)"
+        "hybrid": "24–48 hours for fixed teeth (Final at 3 Mo)",
+        "quad": "24–48 hours for fixed teeth (Final at 3 Mo)"
       },
       {
         "criteria": "Surgical Operating Stages",
-        "grafting": "2–4 separate surgeries over 1 year",
+        "grafting": "2–4 separate surgeries over 1.5 years",
         "hybrid": "1 single surgery (Sedation/GA)",
         "quad": "1 single surgery (Sedation/GA)"
       },
@@ -2770,16 +2899,16 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     ],
     "compareDecision": {
       "whenGraftingTitle": "When is Complex Sinus Grafting Clinically Feasible?",
-      "whenGraftingText": "Sinus grafting is only advisable for younger patients with localized bone deficits who have at least 4–5mm of native subantral bone to stabilize grafts without total jawbone atrophy.",
+      "whenGraftingText": "Sinus grafting is only advisable for patients with localized bone deficits who have at least 4–5mm of native subantral bone to stabilize grafts, without total jawbone atrophy.",
       "whenZygomaticTitle": "When are Zygomatic Implants the Only Viable Solution?",
       "whenZygomaticText": "Zygomatic implants are the definitive gold standard when the upper jaw is completely hollowed out, previous bone grafts have failed, or the patient cannot tolerate 18 months without fixed teeth."
     },
-    "processTitle": "Protocolo de Precisión en 3 Fases: De la Tomografía 3D al Zirconio",
+    "processTitle": "Protocolo de Precisão em 3 Fases: De la Tomografía 3D al Zirconio",
     "processSubtitle": "Every zygomatic procedure at Master Smile Studio follows a strict craniofacial surgical protocol for 98% long-term success.",
     "processCards": [
       {
         "step": "PHASE 01",
-        "title": "3D CBCT Craniofacial Mapping & Virtual Guided Stent",
+        "title": "3D CBCT Craniofacial Mapping & Stereolithographic Guided Stent",
         "text": "High-resolution 3D tomography analyzes zygomatic bone density, sinus contours, and orbital margins. A stereolithographic surgical guide determines the exact 3D entry trajectory.",
         "specs": [
           {
@@ -3216,41 +3345,61 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
   },
   "ru": {
     "introBadge": "СКУЛОВАЯ ИМПЛАНТАЦИЯ ZYGOMA ПРИ АТРОФИИ КОСТИ",
-    "introTitle": "Скуловые импланты Zygoma в Стамбуле: Несъемные зубы за 24 часа без костной пластики",
-    "introLead": "Забудьте о долгих месяцах сложной костной пластики: Специальные импланты длиной 30–55 мм фиксируются в плотную скуловую кость и дают несъемные зубы за 24 часа.",
-    "introP1": "Zygomatic implant placement is the ultimate clinical salvation for patients suffering from severe maxillary (upper jaw) bone atrophy, failed sinus lifts, or long-term denture wear. Because the zygomatic cheekbone possesses extraordinary cortical bone density that never resorbs with age, our maxillofacial surgeons bypass the hollow sinus cavity completely.",
-    "introP2": "Under computer-guided 3D CBCT navigation and conscious IV sedation or general anesthesia, we achieve primary insertion stability exceeding 45–65 Ncm. This unmatched anchoring power permits immediate loading with a rigid, screw-retained provisional bridge in 24 hours, followed by a permanent 1200+ MPa monolithic multilayer German zirconia full arch.",
-    "introP3Lead": "For patients with sufficient residual bone, explore our ",
+    "introTitle": "Скуловые и птеригоидные импланты Zygoma в Стамбуле: Зубы за 24 часа",
+    "introLead": "Забудьте о долгих месяцах сложной костной пластики: Специальные импланты 30–55 мм фиксируются в скуловую кость и дают несъемные зубы за 24 часа.",
+    "introP1": "Zygomatic and pterygoid dental implants are the ultimate clinical solution for patients suffering from catastrophic maxillary (upper jaw) bone resorption, failed sinus lifts, or decades of loose complete denture wear. Because the zygomatic cheekbone possesses the highest cortical bone density in the craniofacial skeleton and never resorbs with age or tooth loss, our maxillofacial surgeons bypass hollowed maxillary sinuses completely.",
+    "introP2": "Using advanced 3D CBCT craniofacial mapping and stereolithographic surgical guides under conscious IV sedation or general anesthesia, we achieve exceptional primary insertion torque values exceeding 50–65 Ncm. This allows safe immediate loading with a rigid screw-retained temporary bridge in 24 hours, followed by a permanent 1200+ MPa monolithic multilayer German zirconia full arch.",
+    "introP3Lead": "For patients with localized or moderate residual bone, explore our ",
     "introP3LinkAll4": "All-on-4 Dental Implants",
     "introP3Mid": ", ",
     "introP3LinkAll6": "All-on-6 Dental Implants",
     "introP3And": ", or ",
-    "introP3LinkSinus": "Sinus Lifting Procedures",
-    "introP3Tail": " in Istanbul.",
+    "introP3LinkSinus": "Sinus Lifting & Bone Grafting",
+    "introP3Tail": " solutions in Istanbul.",
+    "candidacyTitle": "Are You a Candidate for Zygomatic & Pterygoid Implants?",
+    "candidacySubtitle": "If you have been told by other dentists that you \"have no bone left\" for regular implants, zygomatic surgery is your definitive answer.",
+    "candidacyPoints": [
+      {
+        "title": "Severe Upper Jaw Bone Atrophy",
+        "desc": "Patients with pencil-thin or razor-sharp upper jaw ridges where traditional 8–12mm implants cannot be anchored."
+      },
+      {
+        "title": "Failed Previous Sinus Bone Grafts",
+        "desc": "Patients who underwent sinus lifts or block bone augmentations that failed, resorbed, or became chronically infected."
+      },
+      {
+        "title": "Decades of Complete Denture Wear",
+        "desc": "Long-term denture pressure accelerates alveolar bone loss; cheekbone anchoring restores solid fixed bite stability."
+      },
+      {
+        "title": "Post-Trauma or Oncological Resection",
+        "desc": "Maxillofacial reconstruction following cyst removal, tumor resection, or major facial trauma."
+      }
+    ],
     "compareTitle": "Объективное Сравнение: Quad Zygoma vs. Hybrid Zygoma vs. Синус-Лифтинг",
-    "compareSubtitle": "A scientific analysis of clinical timelines, surgical invasiveness, and graft resorption risks for terminal upper jawbone atrophy.",
+    "compareSubtitle": "A scientific analysis of clinical timelines, surgical stages, graft resorption risks, and permanent chewing strength.",
     "compareTableHeaders": {
       "criteria": "Clinical Parameter",
-      "grafting": "Complex Sinus Lift & Grafting",
-      "hybrid": "Hybrid Zygoma (2 Zygoma + 2 Std)",
+      "grafting": "Complex Sinus Lift & Bone Grafting",
+      "hybrid": "Hybrid Zygoma (2 Zygoma + 2-4 Std)",
       "quad": "Quad Zygoma (4 Zygomatic Implants) ⭐"
     },
     "compareTableRows": [
       {
         "criteria": "Bone Grafting Requirement",
-        "grafting": "Extensive block / sinus bone grafts",
+        "grafting": "Extensive block / sinus bone grafts (Hip/bovine)",
         "hybrid": "0% Bone Grafting (Cheekbone anchor)",
         "quad": "0% Bone Grafting (Complete bypass)"
       },
       {
         "criteria": "Total Treatment Duration",
         "grafting": "12 – 18 months total wait",
-        "hybrid": "24–48 hours fixed temporary (3 Mo final)",
-        "quad": "24–48 hours fixed temporary (3 Mo final)"
+        "hybrid": "24–48 hours for fixed teeth (Final at 3 Mo)",
+        "quad": "24–48 hours for fixed teeth (Final at 3 Mo)"
       },
       {
         "criteria": "Surgical Operating Stages",
-        "grafting": "2–4 separate surgeries over 1 year",
+        "grafting": "2–4 separate surgeries over 1.5 years",
         "hybrid": "1 single surgery (Sedation/GA)",
         "quad": "1 single surgery (Sedation/GA)"
       },
@@ -3281,7 +3430,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     ],
     "compareDecision": {
       "whenGraftingTitle": "When is Complex Sinus Grafting Clinically Feasible?",
-      "whenGraftingText": "Sinus grafting is only advisable for younger patients with localized bone deficits who have at least 4–5mm of native subantral bone to stabilize grafts without total jawbone atrophy.",
+      "whenGraftingText": "Sinus grafting is only advisable for patients with localized bone deficits who have at least 4–5mm of native subantral bone to stabilize grafts, without total jawbone atrophy.",
       "whenZygomaticTitle": "When are Zygomatic Implants the Only Viable Solution?",
       "whenZygomaticText": "Zygomatic implants are the definitive gold standard when the upper jaw is completely hollowed out, previous bone grafts have failed, or the patient cannot tolerate 18 months without fixed teeth."
     },
@@ -3290,7 +3439,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "processCards": [
       {
         "step": "PHASE 01",
-        "title": "3D CBCT Craniofacial Mapping & Virtual Guided Stent",
+        "title": "3D CBCT Craniofacial Mapping & Stereolithographic Guided Stent",
         "text": "High-resolution 3D tomography analyzes zygomatic bone density, sinus contours, and orbital margins. A stereolithographic surgical guide determines the exact 3D entry trajectory.",
         "specs": [
           {
@@ -3770,6 +3919,23 @@ export default function ZygomaticImplantDetailView() {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             />
+          </div>
+
+          {/* 1.5 CANDIDACY & CLINICAL INDICATION CHECKLIST */}
+          <div className={styles.candidacySection}>
+            <div className={styles.candidacyHeader}>
+              <h3 className={styles.candidacyTitle}>{d.candidacyTitle}</h3>
+              <p className={styles.candidacySubtitle}>{d.candidacySubtitle}</p>
+            </div>
+
+            <div className={styles.candidacyGrid}>
+              {d.candidacyPoints.map((item, idx) => (
+                <div key={idx} className={styles.candidacyCard}>
+                  <strong className={styles.candidacyCardTitle}>{item.title}</strong>
+                  <span className={styles.candidacyCardDesc}>{item.desc}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
