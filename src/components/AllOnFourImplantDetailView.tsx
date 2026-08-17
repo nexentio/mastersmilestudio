@@ -77,7 +77,7 @@ interface DetailDictionary {
   introP2: string;
   introP3Lead: string;
   introP3LinkAll4?: string;
-  introP3LinkAll6: string;
+  introP3LinkAll6?: string;
   introP3Mid: string;
   introP3LinkZygoma: string;
   introP3And: string;
@@ -3666,7 +3666,7 @@ export default function AllOnFourImplantDetailView() {
           <p className={styles.textItalic}>
             {d.introP3Lead}
             <Link href="/treatments/dental-implants/all-on-6-implants" className={styles.linkGold}>
-              {d.introP3LinkAll6}
+              {d.introP3LinkAll6 || d.introP3LinkAll4}
             </Link>
             {d.introP3Mid}
             <Link href="/treatments/dental-implants/zygomatic-implants" className={styles.linkGold}>
