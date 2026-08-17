@@ -107,6 +107,21 @@ interface DetailDictionary {
   benefit4Title: string;
   benefit4Desc: string;
 
+  evalH2: string;
+  evalP1: string;
+  evalHowDetermineH3: string;
+  evalHowDetermineP: string;
+  evalExamTitle: string;
+  evalExamDesc: string;
+  evalScansTitle: string;
+  evalScansDesc: string;
+  evalDensityTitle: string;
+  evalDensityDesc: string;
+  evalHealthH3: string;
+  evalHealthP: string;
+  evalHealthList: string[];
+  evalHealthTail: string;
+
   faqTitle: string;
   faqSubtitle: string;
   faqGroup1Title: string;
@@ -545,6 +560,25 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "benefit3Desc": "Studies have shown that zygomatic implants have a success rate of up to 97%, making them a reliable and predictable solution for patients with significant bone loss. This is a significant advantage over traditional implants, which may have a lower success rate when there's insufficient bone volume. Zygomatic implants are designed to provide a secure foundation in cases where conventional methods may fail.",
     "benefit4Title": "4. Restores Function and Aesthetics Quickly",
     "benefit4Desc": "Another major benefit of zygomatic implants is that they allow for the restoration of both function and aesthetics in a shorter amount of time compared to traditional implants. Patients who may have had difficulty chewing, speaking, or smiling due to severe bone loss can quickly restore their natural functions and regain their confidence.",
+    "evalH2": "Are You a Candidate for Zygomatic (Cheekbone) Implants? | Master Smile Studio, Istanbul, Turkey",
+    "evalP1": "Zygomatic implants are primarily recommended for individuals who have experienced significant bone loss in the upper jaw, often caused by factors such as long-term tooth loss, periodontal disease, or trauma. If you’ve been told that you are not a suitable candidate for traditional dental implants, zygomatic implants may be the solution you’ve been searching for.",
+    "evalHowDetermineH3": "How to Determine if You Are a Candidate for Zygomatic Implants?",
+    "evalHowDetermineP": "To assess whether zygomatic implants are the right option for you, your dentist or oral surgeon at Master Smile Studio, Istanbul, Turkey will conduct a thorough evaluation. This evaluation typically includes:",
+    "evalExamTitle": "Comprehensive Dental Examination",
+    "evalExamDesc": "A detailed oral examination will be conducted to assess the overall health of your teeth and gums.",
+    "evalScansTitle": "X-Rays and CT Scans",
+    "evalScansDesc": "Advanced imaging tools, such as X-rays and CT scans, will be used to evaluate the condition of your jawbone and cheekbone. These diagnostic tools are essential in determining the amount of available bone and any potential anatomical issues that could affect the placement of zygomatic implants.",
+    "evalDensityTitle": "Assessment of Bone Density and Quality",
+    "evalDensityDesc": "Zygomatic implants are ideal for patients with severe bone loss in the upper jaw. Through imaging, the dentist will assess the density and volume of your bone to ensure there is enough strong bone in the zygomatic region to support the implants.",
+    "evalHealthH3": "Health Considerations for Zygomatic Implants",
+    "evalHealthP": "In addition to evaluating the physical characteristics of your jaw and cheekbone, your dentist will consider your overall health and medical history. Certain conditions may affect the success of the procedure:",
+    "evalHealthList": [
+      "Uncontrolled diabetes",
+      "Weakened immune system",
+      "Smoking",
+      "Blood disorders or medications that may affect healing"
+    ],
+    "evalHealthTail": "It’s essential to ensure that any medical conditions are well-managed before proceeding with zygomatic implants to achieve the best possible outcome.",
     "faqTitle": "Frequently Asked Questions: Zygomatic Implants",
     "faqSubtitle": "Clinically verified answers regarding cheekbone anchoring, surgical recovery, bone grafting alternatives, and health tourism in Istanbul.",
     "faqGroup1Title": "Clinical & Surgical Zygomatic FAQ (Severe Bone Loss Solutions)",
@@ -1051,6 +1085,25 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "benefit3Desc": "Klinik çalışmalar zigoma implantlarının %97'nin üzerinde bir başarı oranına sahip olduğunu kanıtlamıştır. Yetersiz kemik hacmi nedeniyle klasik implantların başarısız olabileceği en zorlu vakalarda dahi elmacık kemiğinin yoğun kortikal yapısı sayesinde ömür boyu güvenli bir temel oluşturur.",
     "benefit4Title": "4. Çiğneme Fonksiyonunu ve Estetiği Hızla Geri Kazandırır",
     "benefit4Desc": "Zigoma implantlarının en önemli faydalarından biri de çiğneme fonksiyonunu ve yüz estetiğini çok kısa sürede restore etmesidir. Kemik kaybı nedeniyle çiğnemede, konuşmada veya gülümsemede güçlük çeken hastalarımız doğal çiğneme kuvvetine ve özgüvenlerine hızla yeniden kavuşur.",
+    "evalH2": "Zigoma (Elmacık Kemiği) İmplantı İçin Aday Mısınız? | Master Smile Studio, İstanbul, Türkiye",
+    "evalP1": "Zigoma implantları öncelikle uzun süreli diş kaybı, ileri diş eti hastalıkları veya travma gibi nedenlerle üst çene kemiğinde ciddi kayıp yaşamış bireyler için önerilmektedir. Klasik diş implantları için uygun bir aday olmadığınız söylendiyse, zigoma implantları aradığınız kalıcı çözüm olabilir.",
+    "evalHowDetermineH3": "Zigoma İmplantı İçin Uygun Bir Aday Olup Olmadığınız Nasıl Belirlenir?",
+    "evalHowDetermineP": "Zigoma implantlarının sizin için doğru seçenek olup olmadığını değerlendirmek üzere Master Smile Studio İstanbul’daki uzman çene cerrahlarımız kapsamlı bir klinik muayene gerçekleştirir. Bu değerlendirme şunları içerir:",
+    "evalExamTitle": "Kapsamlı Ağız ve Diş Muayenesi",
+    "evalExamDesc": "Dişlerinizin ve diş etlerinizin genel sağlığını değerlendirmek için detaylı bir oral muayene yapılır.",
+    "evalScansTitle": "3D Tomografi (CBCT) ve Röntgen Taramaları",
+    "evalScansDesc": "Çene ve elmacık kemiğinizin durumunu incelemek için gelişmiş 3D tomografi cihazları kullanılır. Bu tanı araçları, mevcut kemik miktarını ve implant yerleşimini etkileyebilecek anatomik yapıları belirlemede hayati öneme sahiptir.",
+    "evalDensityTitle": "Kemik Yoğunluğu ve Kalitesinin Analizi",
+    "evalDensityDesc": "Zigoma implantları üst çenede ileri kemik kaybı olan hastalar için idealdir. 3D görüntüleme yoluyla cerrahımız elmacık kemiği bölgesinde implantı taşıyacak yeterli sertlikte kortikal kemik bulunduğunu doğrular.",
+    "evalHealthH3": "Zigoma İmplant Tedavisi İçin Genel Sağlık Faktörleri",
+    "evalHealthP": "Çene ve elmacık kemiğinizin fiziksel özelliklerinin yanı sıra, cerrahınız genel sağlık durumunuzu ve tıbbi geçmişinizi de dikkate alacaktır. Bazı durumlar iyileşme sürecini etkileyebilir:",
+    "evalHealthList": [
+      "Kontrol altında olmayan diyabet (şeker hastalığı)",
+      "Zayıflamış bağışıklık sistemi",
+      "Yoğun sigara kullanımı",
+      "Kan hastalıkları veya iyileşmeyi geciktiren ilaç kullanımı"
+    ],
+    "evalHealthTail": "En iyi klinik sonucu elde etmek ve operasyon başarısını garantilemek için mevcut tıbbi durumların operasyon öncesinde kontrol altında olması esastır.",
     "faqTitle": "Sıkça Sorulan Sorular: Zigoma (Elmacık Kemiği) İmplantları",
     "faqSubtitle": "Elmacık kemiği tutunumu, cerrahi iyileşme, kemik nakli alternatifleri ve İstanbul sağlık turizmi hakkında hekim onaylı yanıtlar.",
     "faqGroup1Title": "Klinik ve Cerrahi Zigoma SSS (İleri Kemik Erimesi Çözümleri)",
@@ -1557,6 +1610,25 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "benefit3Desc": "Studies have shown that zygomatic implants have a success rate of up to 97%, making them a reliable and predictable solution for patients with significant bone loss. This is a significant advantage over traditional implants, which may have a lower success rate when there's insufficient bone volume. Zygomatic implants are designed to provide a secure foundation in cases where conventional methods may fail.",
     "benefit4Title": "4. Restores Function and Aesthetics Quickly",
     "benefit4Desc": "Another major benefit of zygomatic implants is that they allow for the restoration of both function and aesthetics in a shorter amount of time compared to traditional implants. Patients who may have had difficulty chewing, speaking, or smiling due to severe bone loss can quickly restore their natural functions and regain their confidence.",
+    "evalH2": "Sind Sie ein Kandidat für Zygoma-Implantate? | Master Smile Studio, Istanbul",
+    "evalP1": "Zygomatic implants are primarily recommended for individuals who have experienced significant bone loss in the upper jaw, often caused by factors such as long-term tooth loss, periodontal disease, or trauma. If you’ve been told that you are not a suitable candidate for traditional dental implants, zygomatic implants may be the solution you’ve been searching for.",
+    "evalHowDetermineH3": "How to Determine if You Are a Candidate for Zygomatic Implants?",
+    "evalHowDetermineP": "To assess whether zygomatic implants are the right option for you, your dentist or oral surgeon at Master Smile Studio, Istanbul, Turkey will conduct a thorough evaluation. This evaluation typically includes:",
+    "evalExamTitle": "Comprehensive Dental Examination",
+    "evalExamDesc": "A detailed oral examination will be conducted to assess the overall health of your teeth and gums.",
+    "evalScansTitle": "X-Rays and CT Scans",
+    "evalScansDesc": "Advanced imaging tools, such as X-rays and CT scans, will be used to evaluate the condition of your jawbone and cheekbone. These diagnostic tools are essential in determining the amount of available bone and any potential anatomical issues that could affect the placement of zygomatic implants.",
+    "evalDensityTitle": "Assessment of Bone Density and Quality",
+    "evalDensityDesc": "Zygomatic implants are ideal for patients with severe bone loss in the upper jaw. Through imaging, the dentist will assess the density and volume of your bone to ensure there is enough strong bone in the zygomatic region to support the implants.",
+    "evalHealthH3": "Health Considerations for Zygomatic Implants",
+    "evalHealthP": "In addition to evaluating the physical characteristics of your jaw and cheekbone, your dentist will consider your overall health and medical history. Certain conditions may affect the success of the procedure:",
+    "evalHealthList": [
+      "Uncontrolled diabetes",
+      "Weakened immune system",
+      "Smoking",
+      "Blood disorders or medications that may affect healing"
+    ],
+    "evalHealthTail": "It’s essential to ensure that any medical conditions are well-managed before proceeding with zygomatic implants to achieve the best possible outcome.",
     "faqTitle": "Häufig gestellte Fragen: Zygoma-Implantate",
     "faqSubtitle": "Clinically verified answers regarding cheekbone anchoring, surgical recovery, bone grafting alternatives, and health tourism in Istanbul.",
     "faqGroup1Title": "Clinical & Surgical Zygomatic FAQ (Severe Bone Loss Solutions)",
@@ -2063,6 +2135,25 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "benefit3Desc": "Studies have shown that zygomatic implants have a success rate of up to 97%, making them a reliable and predictable solution for patients with significant bone loss. This is a significant advantage over traditional implants, which may have a lower success rate when there's insufficient bone volume. Zygomatic implants are designed to provide a secure foundation in cases where conventional methods may fail.",
     "benefit4Title": "4. Restores Function and Aesthetics Quickly",
     "benefit4Desc": "Another major benefit of zygomatic implants is that they allow for the restoration of both function and aesthetics in a shorter amount of time compared to traditional implants. Patients who may have had difficulty chewing, speaking, or smiling due to severe bone loss can quickly restore their natural functions and regain their confidence.",
+    "evalH2": "Czy jesteś kandydatem do implantów Zygoma? | Master Smile Studio, Stambuł",
+    "evalP1": "Zygomatic implants are primarily recommended for individuals who have experienced significant bone loss in the upper jaw, often caused by factors such as long-term tooth loss, periodontal disease, or trauma. If you’ve been told that you are not a suitable candidate for traditional dental implants, zygomatic implants may be the solution you’ve been searching for.",
+    "evalHowDetermineH3": "How to Determine if You Are a Candidate for Zygomatic Implants?",
+    "evalHowDetermineP": "To assess whether zygomatic implants are the right option for you, your dentist or oral surgeon at Master Smile Studio, Istanbul, Turkey will conduct a thorough evaluation. This evaluation typically includes:",
+    "evalExamTitle": "Comprehensive Dental Examination",
+    "evalExamDesc": "A detailed oral examination will be conducted to assess the overall health of your teeth and gums.",
+    "evalScansTitle": "X-Rays and CT Scans",
+    "evalScansDesc": "Advanced imaging tools, such as X-rays and CT scans, will be used to evaluate the condition of your jawbone and cheekbone. These diagnostic tools are essential in determining the amount of available bone and any potential anatomical issues that could affect the placement of zygomatic implants.",
+    "evalDensityTitle": "Assessment of Bone Density and Quality",
+    "evalDensityDesc": "Zygomatic implants are ideal for patients with severe bone loss in the upper jaw. Through imaging, the dentist will assess the density and volume of your bone to ensure there is enough strong bone in the zygomatic region to support the implants.",
+    "evalHealthH3": "Health Considerations for Zygomatic Implants",
+    "evalHealthP": "In addition to evaluating the physical characteristics of your jaw and cheekbone, your dentist will consider your overall health and medical history. Certain conditions may affect the success of the procedure:",
+    "evalHealthList": [
+      "Uncontrolled diabetes",
+      "Weakened immune system",
+      "Smoking",
+      "Blood disorders or medications that may affect healing"
+    ],
+    "evalHealthTail": "It’s essential to ensure that any medical conditions are well-managed before proceeding with zygomatic implants to achieve the best possible outcome.",
     "faqTitle": "Często Zadawane Pytania: Implanty Zygoma",
     "faqSubtitle": "Clinically verified answers regarding cheekbone anchoring, surgical recovery, bone grafting alternatives, and health tourism in Istanbul.",
     "faqGroup1Title": "Clinical & Surgical Zygomatic FAQ (Severe Bone Loss Solutions)",
@@ -2569,6 +2660,25 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "benefit3Desc": "Studies have shown that zygomatic implants have a success rate of up to 97%, making them a reliable and predictable solution for patients with significant bone loss. This is a significant advantage over traditional implants, which may have a lower success rate when there's insufficient bone volume. Zygomatic implants are designed to provide a secure foundation in cases where conventional methods may fail.",
     "benefit4Title": "4. Restores Function and Aesthetics Quickly",
     "benefit4Desc": "Another major benefit of zygomatic implants is that they allow for the restoration of both function and aesthetics in a shorter amount of time compared to traditional implants. Patients who may have had difficulty chewing, speaking, or smiling due to severe bone loss can quickly restore their natural functions and regain their confidence.",
+    "evalH2": "Você é um candidato a implantes zigomáticos? | Master Smile Studio, Istambul",
+    "evalP1": "Zygomatic implants are primarily recommended for individuals who have experienced significant bone loss in the upper jaw, often caused by factors such as long-term tooth loss, periodontal disease, or trauma. If you’ve been told that you are not a suitable candidate for traditional dental implants, zygomatic implants may be the solution you’ve been searching for.",
+    "evalHowDetermineH3": "How to Determine if You Are a Candidate for Zygomatic Implants?",
+    "evalHowDetermineP": "To assess whether zygomatic implants are the right option for you, your dentist or oral surgeon at Master Smile Studio, Istanbul, Turkey will conduct a thorough evaluation. This evaluation typically includes:",
+    "evalExamTitle": "Comprehensive Dental Examination",
+    "evalExamDesc": "A detailed oral examination will be conducted to assess the overall health of your teeth and gums.",
+    "evalScansTitle": "X-Rays and CT Scans",
+    "evalScansDesc": "Advanced imaging tools, such as X-rays and CT scans, will be used to evaluate the condition of your jawbone and cheekbone. These diagnostic tools are essential in determining the amount of available bone and any potential anatomical issues that could affect the placement of zygomatic implants.",
+    "evalDensityTitle": "Assessment of Bone Density and Quality",
+    "evalDensityDesc": "Zygomatic implants are ideal for patients with severe bone loss in the upper jaw. Through imaging, the dentist will assess the density and volume of your bone to ensure there is enough strong bone in the zygomatic region to support the implants.",
+    "evalHealthH3": "Health Considerations for Zygomatic Implants",
+    "evalHealthP": "In addition to evaluating the physical characteristics of your jaw and cheekbone, your dentist will consider your overall health and medical history. Certain conditions may affect the success of the procedure:",
+    "evalHealthList": [
+      "Uncontrolled diabetes",
+      "Weakened immune system",
+      "Smoking",
+      "Blood disorders or medications that may affect healing"
+    ],
+    "evalHealthTail": "It’s essential to ensure that any medical conditions are well-managed before proceeding with zygomatic implants to achieve the best possible outcome.",
     "faqTitle": "Perguntas Frequentes: Implantes Zigomáticos",
     "faqSubtitle": "Clinically verified answers regarding cheekbone anchoring, surgical recovery, bone grafting alternatives, and health tourism in Istanbul.",
     "faqGroup1Title": "Clinical & Surgical Zygomatic FAQ (Severe Bone Loss Solutions)",
@@ -2685,7 +2795,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "costIntroTitle1": "Coste de los Implantes Cigomáticos en Turquía:",
     "costIntroTitle2": "Tratamiento de Máxima Calidad en Master Smile Studio, Estambul",
     "costIntroP1": "Una de las principales razones del éxito de Turquía en implantes cigomáticos es el ahorro de hasta un 70% respecto a otros países.",
-    "costIntroP2": "El coste de un implante cigomático en Turquía en 2026 oscila entre 2.350 € y 4.500 $.",
+    "costIntroP2": "El coste de un implante cigomático en Turquía en 2026 oscila entre 2.350 € ve 4.500 $.",
     "costIntroP3": "En Master Smile Studio el precio por implante cigomático es de 2.350 EUR / 2.770 USD / 2.050 GBP con quirófano y diagnóstico 3D incluidos.",
     "packagesTitle": "Paquetes Cigomáticos y Conversor de Divisas",
     "packagesSubtitle": "All-inclusive packages per jaw featuring certified Straumann, Nobel Biocare, NucleOSS, DXL, Megagen, Neodent, and Hiossen.",
@@ -3075,6 +3185,25 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "benefit3Desc": "Studies have shown that zygomatic implants have a success rate of up to 97%, making them a reliable and predictable solution for patients with significant bone loss. This is a significant advantage over traditional implants, which may have a lower success rate when there's insufficient bone volume. Zygomatic implants are designed to provide a secure foundation in cases where conventional methods may fail.",
     "benefit4Title": "4. Restores Function and Aesthetics Quickly",
     "benefit4Desc": "Another major benefit of zygomatic implants is that they allow for the restoration of both function and aesthetics in a shorter amount of time compared to traditional implants. Patients who may have had difficulty chewing, speaking, or smiling due to severe bone loss can quickly restore their natural functions and regain their confidence.",
+    "evalH2": "¿Es usted candidato a implantes cigomáticos? | Master Smile Studio, Estambul",
+    "evalP1": "Zygomatic implants are primarily recommended for individuals who have experienced significant bone loss in the upper jaw, often caused by factors such as long-term tooth loss, periodontal disease, or trauma. If you’ve been told that you are not a suitable candidate for traditional dental implants, zygomatic implants may be the solution you’ve been searching for.",
+    "evalHowDetermineH3": "How to Determine if You Are a Candidate for Zygomatic Implants?",
+    "evalHowDetermineP": "To assess whether zygomatic implants are the right option for you, your dentist or oral surgeon at Master Smile Studio, Istanbul, Turkey will conduct a thorough evaluation. This evaluation typically includes:",
+    "evalExamTitle": "Comprehensive Dental Examination",
+    "evalExamDesc": "A detailed oral examination will be conducted to assess the overall health of your teeth and gums.",
+    "evalScansTitle": "X-Rays and CT Scans",
+    "evalScansDesc": "Advanced imaging tools, such as X-rays and CT scans, will be used to evaluate the condition of your jawbone and cheekbone. These diagnostic tools are essential in determining the amount of available bone and any potential anatomical issues that could affect the placement of zygomatic implants.",
+    "evalDensityTitle": "Assessment of Bone Density and Quality",
+    "evalDensityDesc": "Zygomatic implants are ideal for patients with severe bone loss in the upper jaw. Through imaging, the dentist will assess the density and volume of your bone to ensure there is enough strong bone in the zygomatic region to support the implants.",
+    "evalHealthH3": "Health Considerations for Zygomatic Implants",
+    "evalHealthP": "In addition to evaluating the physical characteristics of your jaw and cheekbone, your dentist will consider your overall health and medical history. Certain conditions may affect the success of the procedure:",
+    "evalHealthList": [
+      "Uncontrolled diabetes",
+      "Weakened immune system",
+      "Smoking",
+      "Blood disorders or medications that may affect healing"
+    ],
+    "evalHealthTail": "It’s essential to ensure that any medical conditions are well-managed before proceeding with zygomatic implants to achieve the best possible outcome.",
     "faqTitle": "Preguntas Frecuentes: Implantes Cigomáticos",
     "faqSubtitle": "Clinically verified answers regarding cheekbone anchoring, surgical recovery, bone grafting alternatives, and health tourism in Istanbul.",
     "faqGroup1Title": "Clinical & Surgical Zygomatic FAQ (Severe Bone Loss Solutions)",
@@ -3581,6 +3710,25 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "benefit3Desc": "Studies have shown that zygomatic implants have a success rate of up to 97%, making them a reliable and predictable solution for patients with significant bone loss. This is a significant advantage over traditional implants, which may have a lower success rate when there's insufficient bone volume. Zygomatic implants are designed to provide a secure foundation in cases where conventional methods may fail.",
     "benefit4Title": "4. Restores Function and Aesthetics Quickly",
     "benefit4Desc": "Another major benefit of zygomatic implants is that they allow for the restoration of both function and aesthetics in a shorter amount of time compared to traditional implants. Patients who may have had difficulty chewing, speaking, or smiling due to severe bone loss can quickly restore their natural functions and regain their confidence.",
+    "evalH2": "Подходите ли вы для скуловой имплантации? | Master Smile Studio, Стамбул",
+    "evalP1": "Zygomatic implants are primarily recommended for individuals who have experienced significant bone loss in the upper jaw, often caused by factors such as long-term tooth loss, periodontal disease, or trauma. If you’ve been told that you are not a suitable candidate for traditional dental implants, zygomatic implants may be the solution you’ve been searching for.",
+    "evalHowDetermineH3": "How to Determine if You Are a Candidate for Zygomatic Implants?",
+    "evalHowDetermineP": "To assess whether zygomatic implants are the right option for you, your dentist or oral surgeon at Master Smile Studio, Istanbul, Turkey will conduct a thorough evaluation. This evaluation typically includes:",
+    "evalExamTitle": "Comprehensive Dental Examination",
+    "evalExamDesc": "A detailed oral examination will be conducted to assess the overall health of your teeth and gums.",
+    "evalScansTitle": "X-Rays and CT Scans",
+    "evalScansDesc": "Advanced imaging tools, such as X-rays and CT scans, will be used to evaluate the condition of your jawbone and cheekbone. These diagnostic tools are essential in determining the amount of available bone and any potential anatomical issues that could affect the placement of zygomatic implants.",
+    "evalDensityTitle": "Assessment of Bone Density and Quality",
+    "evalDensityDesc": "Zygomatic implants are ideal for patients with severe bone loss in the upper jaw. Through imaging, the dentist will assess the density and volume of your bone to ensure there is enough strong bone in the zygomatic region to support the implants.",
+    "evalHealthH3": "Health Considerations for Zygomatic Implants",
+    "evalHealthP": "In addition to evaluating the physical characteristics of your jaw and cheekbone, your dentist will consider your overall health and medical history. Certain conditions may affect the success of the procedure:",
+    "evalHealthList": [
+      "Uncontrolled diabetes",
+      "Weakened immune system",
+      "Smoking",
+      "Blood disorders or medications that may affect healing"
+    ],
+    "evalHealthTail": "It’s essential to ensure that any medical conditions are well-managed before proceeding with zygomatic implants to achieve the best possible outcome.",
     "faqTitle": "Часто Задаваемые Вопросы: Скуловые Импланты",
     "faqSubtitle": "Clinically verified answers regarding cheekbone anchoring, surgical recovery, bone grafting alternatives, and health tourism in Istanbul.",
     "faqGroup1Title": "Clinical & Surgical Zygomatic FAQ (Severe Bone Loss Solutions)",
@@ -4005,31 +4153,76 @@ export default function ZygomaticImplantDetailView() {
         </div>
       </section>
 
-      {/* 7. BEFORE & AFTER TRANSFORMATIONS GALLERY (SECTBA STYLE) */}
-      <TreatmentBeforeAfterSliderSection />
-
-      {/* 8. REUSABLE: SERVICES INCLUDED */}
+      {/* 7. REUSABLE: SERVICES INCLUDED */}
       <TreatmentServicesIncludedSection />
 
-      {/* 9. REUSABLE: CLINIC TOUR */}
+      {/* 8. CANDIDATE EVALUATION & HEALTH CONSIDERATIONS (UNDER SERVICES INCLUDED) */}
+      <section aria-labelledby="zygoma-eval-heading" className={styles.introSection} style={{ backgroundColor: '#f8fafc', borderTop: '1px solid #e2e8f0', borderBottom: '1px solid #e2e8f0' }}>
+        <div className={styles.container}>
+          <h2 id="zygoma-eval-heading" className={styles.introHeading}>
+            {d.evalH2}
+          </h2>
+          <p className={styles.textP}>{d.evalP1}</p>
+
+          <h3 className={styles.introHeading} style={{ fontSize: 'clamp(1.35rem, 2.2vw, 1.75rem)', marginTop: '2.5rem', marginBottom: '1rem', color: '#D58936' }}>
+            {d.evalHowDetermineH3}
+          </h3>
+          <p className={styles.textP}>{d.evalHowDetermineP}</p>
+
+          <h4 className={styles.introHeading} style={{ fontSize: 'clamp(1.15rem, 1.8vw, 1.35rem)', marginTop: '1.5rem', marginBottom: '0.5rem' }}>
+            {d.evalExamTitle}
+          </h4>
+          <p className={styles.textP}>{d.evalExamDesc}</p>
+
+          <h4 className={styles.introHeading} style={{ fontSize: 'clamp(1.15rem, 1.8vw, 1.35rem)', marginTop: '1.5rem', marginBottom: '0.5rem' }}>
+            {d.evalScansTitle}
+          </h4>
+          <p className={styles.textP}>{d.evalScansDesc}</p>
+
+          <h4 className={styles.introHeading} style={{ fontSize: 'clamp(1.15rem, 1.8vw, 1.35rem)', marginTop: '1.5rem', marginBottom: '0.5rem' }}>
+            {d.evalDensityTitle}
+          </h4>
+          <p className={styles.textP}>{d.evalDensityDesc}</p>
+
+          <h3 className={styles.introHeading} style={{ fontSize: 'clamp(1.35rem, 2.2vw, 1.75rem)', marginTop: '2.5rem', marginBottom: '1rem', color: '#D58936' }}>
+            {d.evalHealthH3}
+          </h3>
+          <p className={styles.textP}>{d.evalHealthP}</p>
+
+          <ul style={{ listStyleType: 'disc', paddingLeft: '1.5rem', marginBottom: '1.25rem', color: '#475569', lineHeight: 1.8, fontSize: '1.02rem' }}>
+            {d.evalHealthList.map((item, idx) => (
+              <li key={idx}><strong>{item}</strong></li>
+            ))}
+          </ul>
+
+          <p className={styles.textP} style={{ fontWeight: 600, color: '#0c1b4d' }}>
+            {d.evalHealthTail}
+          </p>
+        </div>
+      </section>
+
+      {/* 9. BEFORE & AFTER TRANSFORMATIONS GALLERY (FROM FIRST VISIT TO FINAL SMILE) */}
+      <TreatmentBeforeAfterSliderSection />
+
+      {/* 10. REUSABLE: CLINIC TOUR */}
       <TreatmentClinicTourSection placeholderNum="ZYG-TOUR" />
 
-      {/* 10. REUSABLE: FOUNDING SURGEONS */}
+      {/* 11. REUSABLE: FOUNDING SURGEONS */}
       <TreatmentDoctorsSection />
 
-      {/* 11. REVIEWS & TRUSTPILOT / GOOGLE 5-STAR */}
+      {/* 12. REVIEWS & TRUSTPILOT / GOOGLE 5-STAR */}
       <TreatmentReviewsSection />
 
-      {/* 12. REUSABLE: PARALLAX BANNER */}
+      {/* 13. REUSABLE: PARALLAX BANNER */}
       <TreatmentParallaxBanner />
 
-      {/* 13. REUSABLE: PATIENT VIDEO REELS */}
+      {/* 14. REUSABLE: PATIENT VIDEO REELS */}
       <TreatmentPatientReelsSection />
 
-      {/* 14. REUSABLE: DENTAL JOURNEY TIMELINE */}
+      {/* 15. REUSABLE: DENTAL JOURNEY TIMELINE */}
       <TreatmentJourneySimpleSection />
 
-      {/* 15. MASTER 17-QUESTION FAQ SECTION (CLINICAL & HEALTH TOURISM) */}
+      {/* 16. MASTER 17-QUESTION FAQ SECTION (CLINICAL & HEALTH TOURISM) */}
       <section aria-labelledby="zygoma-faq-heading" className={styles.faqSection}>
         <div className={styles.faqContainer}>
           <div className={styles.faqHeader}>
@@ -4111,7 +4304,7 @@ export default function ZygomaticImplantDetailView() {
         </div>
       </section>
 
-      {/* 16. LET'S CREATE YOUR PERFECT SMILE PLAN (4-STEP INTERACTIVE QUOTE FUNNEL) */}
+      {/* 17. LET'S CREATE YOUR PERFECT SMILE PLAN (4-STEP INTERACTIVE QUOTE FUNNEL) */}
       <TreatmentInteractiveQuoteForm defaultTreatment="Zygomatic Implants" />
     </div>
   );
