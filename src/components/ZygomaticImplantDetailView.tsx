@@ -4369,20 +4369,20 @@ export default function ZygomaticImplantDetailView() {
         </div>
       </section>
 
-      {/* 11. REUSABLE: CLINIC TOUR */}
+      {/* 11. REUSABLE: REAL PATIENTS. REAL SMILES. (PATIENT VIDEO REELS) */}
+      <TreatmentPatientReelsSection />
+
+      {/* 12. REUSABLE: CLINIC TOUR */}
       <TreatmentClinicTourSection placeholderNum="ZYG-TOUR" />
 
-      {/* 12. REUSABLE: FOUNDING SURGEONS */}
+      {/* 13. REUSABLE: FOUNDING SURGEONS */}
       <TreatmentDoctorsSection />
 
-      {/* 13. REVIEWS & TRUSTPILOT / GOOGLE 5-STAR */}
+      {/* 14. REVIEWS & TRUSTPILOT / GOOGLE 5-STAR */}
       <TreatmentReviewsSection />
 
-      {/* 14. REUSABLE: PARALLAX BANNER */}
+      {/* 15. REUSABLE: PARALLAX BANNER */}
       <TreatmentParallaxBanner />
-
-      {/* 15. REUSABLE: PATIENT VIDEO REELS */}
-      <TreatmentPatientReelsSection />
 
       {/* 16. REUSABLE: DENTAL JOURNEY TIMELINE */}
       <TreatmentJourneySimpleSection />
