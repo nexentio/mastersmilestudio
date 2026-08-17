@@ -141,7 +141,13 @@ export default async function HierarchicalTreatmentPage({ params }: PageProps) {
 
   // Route matching
   const isDentalImplantsCategory =
-    isCategoryOnly && (lastSlug === 'dental-implants' || lastSlug === 'dental-implant-istanbul-turkey' || lastSlug === 'implants');
+    lastSlug === 'dental-implants' ||
+    lastSlug === 'dental-implant-istanbul-turkey' ||
+    lastSlug === 'implants' ||
+    lastSlug.includes('implant') ||
+    lastSlug.includes('full-mouth') ||
+    lastSlug.includes('bone-graft') ||
+    slugList.includes('dental-implants');
 
   const isGeneral =
     lastSlug.includes('general') ||
@@ -307,8 +313,6 @@ export default async function HierarchicalTreatmentPage({ params }: PageProps) {
           <DentalCrownsDetailView />
         ) : isDentalVeneers ? (
           <DentalVeneersDetailView />
-        ) : isDentalImplantsCategory ? (
-          <DentalImplantsDetailView />
         ) : isAllOnFour ? (
           <AllOnFourImplantDetailView />
         ) : isAllOnSix ? (
@@ -321,6 +325,8 @@ export default async function HierarchicalTreatmentPage({ params }: PageProps) {
           <ZirconiumImplantDetailView />
         ) : isSinusLift ? (
           <SinusLiftingDetailView />
+        ) : isDentalImplantsCategory ? (
+          <DentalImplantsDetailView />
         ) : (
           <TreatmentDetailView />
         )}
