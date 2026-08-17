@@ -17,6 +17,7 @@ import GeneralDentistryHeroBanner from '@/components/treatment-sections/GeneralD
 import CosmeticDentistryHeroBanner from '@/components/treatment-sections/CosmeticDentistryHeroBanner';
 import DenturesHeroBanner from '@/components/treatment-sections/DenturesHeroBanner';
 import DentalBridgesHeroBanner from '@/components/treatment-sections/DentalBridgesHeroBanner';
+import DentalVeneersHeroBanner from '@/components/treatment-sections/DentalVeneersHeroBanner';
 import GeneralDentistryIntroSection from '@/components/treatment-sections/GeneralDentistryIntroSection';
 import GeneralDentistryAccordionSection from '@/components/treatment-sections/GeneralDentistryAccordionSection';
 import GeneralDentistryJourneySection from '@/components/treatment-sections/GeneralDentistryJourneySection';
@@ -822,6 +823,8 @@ export default async function TreatmentDetailPage({ params }: Props) {
         <DenturesHeroBanner />
       ) : isDentalBridges ? (
         <DentalBridgesHeroBanner />
+      ) : isDentalVeneers ? (
+        <DentalVeneersHeroBanner />
       ) : isDentalCleaning ? (
         <DentalCleaningHeroBanner />
       ) : (
