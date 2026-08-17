@@ -276,6 +276,10 @@ export default async function HierarchicalTreatmentPage({ params }: PageProps) {
     heroBadge = locale === 'tr' ? 'ZİGOMATİK İMPLANT' : 'ZYGOMATIC DENTAL IMPLANTS';
     heroTitle = locale === 'tr' ? 'İstanbul Zigoma (Elmacık Kemiği) İmplant Tedavisi' : 'Zygomatic Dental Implants in Istanbul Turkey';
     heroSubtitle = locale === 'tr' ? 'Aşırı kemik erimesi olan vakalarda kemik nakli beklemeden elmacık kemiğine sabitlenen 24 saatte kalıcı diş çözümü.' : 'Fixed full-arch teeth in 24 hours anchored into the dense zygoma (cheekbone) for severe bone loss cases without bone grafting.';
+  } else if (isZirconium) {
+    heroBadge = locale === 'tr' ? 'ZİRKONYUM SERAMİK İMPLANT' : 'ZIRCONIUM CERAMIC IMPLANTS';
+    heroTitle = locale === 'tr' ? 'İstanbul Zirkonyum (Seramik) Diş İmplantı Tedavisi' : 'Zirconium Ceramic Dental Implants in Istanbul';
+    heroSubtitle = locale === 'tr' ? '%100 metalsiz, biyouyumlu beyaz seramik yapısıyla diş etinde grileşme yapmayan en estetik ve alerjisiz implant çözümü.' : '100% metal-free, biocompatible white ceramic implants for natural gum aesthetics without dark shadows or metal allergies.';
   } else if (isDentalImplantsCategory) {
     heroBadge = locale === 'tr' ? 'DİŞ İMPLANTLARI' : 'DENTAL IMPLANTS';
     heroTitle = locale === 'tr' ? 'İstanbul Diş İmplantı Tedavisi & Fiyatları' : 'Dental Implants Cost (Price) Istanbul Turkey';
