@@ -108,7 +108,7 @@
 }
 
 .matrixTable th {
-  padding: 1.15rem 1.25rem;
+  padding: 1.2rem 1.4rem;
   font-size: 0.82rem;
   font-weight: 800;
   text-transform: uppercase;
@@ -117,8 +117,8 @@
 }
 
 .matrixTable td {
-  padding: 1.25rem 1.25rem;
-  font-size: 0.92rem;
+  padding: 1.35rem 1.4rem;
+  font-size: 0.94rem;
   color: #334155;
   border-bottom: 1px solid #f1f5f9;
   line-height: 1.55;
@@ -129,15 +129,31 @@
   border-bottom: none;
 }
 
-.matrixTable tbody tr:hover {
+.clickableRow {
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.clickableRow:hover {
   background-color: #f8fafc;
+}
+
+.clickableRow:hover .treatmentCell {
+  color: #D58936;
+}
+
+.treatmentLink {
+  text-decoration: none;
+  display: block;
+  color: inherit;
 }
 
 .treatmentCell {
   font-weight: 800;
   color: #0c1b4d;
-  font-size: 1rem;
+  font-size: 1.02rem;
   white-space: nowrap;
+  transition: color 0.2s ease;
 }
 
 .treatmentCellSub {
@@ -147,7 +163,7 @@
   color: #D58936;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  margin-top: 0.2rem;
+  margin-top: 0.25rem;
   white-space: nowrap;
 }
 
@@ -156,9 +172,9 @@
   background-color: #f1f5f9;
   color: #0f172a;
   border: 1px solid #e2e8f0;
-  font-size: 0.8rem;
+  font-size: 0.82rem;
   font-weight: 700;
-  padding: 0.25rem 0.6rem;
+  padding: 0.3rem 0.65rem;
   border-radius: 6px;
   white-space: nowrap;
 }
@@ -166,31 +182,9 @@
 .metricBadge {
   display: inline-block;
   color: #0c1b4d;
-  font-size: 0.85rem;
+  font-size: 0.88rem;
   font-weight: 700;
   white-space: nowrap;
-}
-
-.actionLink {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-  background-color: #f8fafc;
-  color: #0c1b4d;
-  font-weight: 700;
-  font-size: 0.82rem;
-  padding: 0.5rem 0.95rem;
-  border-radius: 6px;
-  text-decoration: none;
-  transition: all 0.2s ease;
-  white-space: nowrap;
-  border: 1px solid #e2e8f0;
-}
-
-.actionLink:hover {
-  background-color: #0c1b4d;
-  color: #ffffff;
-  border-color: #0c1b4d;
 }
 
 .noteFooter {
@@ -204,7 +198,7 @@
 
 @media (max-width: 1024px) {
   .matrixTable {
-    min-width: 900px;
+    min-width: 800px;
   }
 }
 

@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { useLocale } from 'next-intl';
-import { Link } from '@/i18n/routing';
+import { Link, useRouter } from '@/i18n/routing';
 import styles from './TreatmentComparisonMatrix.module.css';
 
 interface MatrixRow {
@@ -14,7 +14,6 @@ interface MatrixRow {
   preparation: string;
   clinicalMetric: string;
   href: string;
-  actionText: string;
 }
 
 interface MatrixCategory {
@@ -23,7 +22,6 @@ interface MatrixCategory {
 }
 
 interface MatrixDictionary {
-  badge: string;
   heading: string;
   subText: string;
   thTreatment: string;
@@ -32,7 +30,6 @@ interface MatrixDictionary {
   thDuration: string;
   thPreparation: string;
   thScore: string;
-  thAction: string;
   footerNote: string;
   categories: {
     missing: MatrixCategory;
@@ -42,17 +39,15 @@ interface MatrixDictionary {
 
 const MATRIX_DATA: Record<string, MatrixDictionary> = {
   en: {
-    badge: 'CLINICAL DECISION MATRIX',
     heading: 'Which Dental Treatment Is Right for Your Needs?',
     subText:
-      'Compare our core dental disciplines across durability, treatment duration, invasiveness, and clinical strength metrics to make an informed medical decision.',
+      'Compare our core dental disciplines across durability, treatment duration, invasiveness, and clinical strength metrics. Click any treatment row to explore complete clinical specifications.',
     thTreatment: 'Treatment Solution',
     thIdealFor: 'Primary Clinical Indication',
     thLifespan: 'Lifespan & Guarantee',
     thDuration: 'Time in Istanbul',
     thPreparation: 'Tooth Preparation',
     thScore: 'Clinical Strength Metric',
-    thAction: 'Specification',
     footerNote:
       'Clinical Note: Final bespoke treatment plans are calibrated via 3D CBCT tomography and intraoral optical scans during your initial in-clinic consultation.',
     categories: {
@@ -68,7 +63,6 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
             preparation: 'Zero damage to adjacent teeth (100% preservation)',
             clinicalMetric: '100% Osseointegrated Stability',
             href: '/treatments/dental-implants',
-            actionText: 'View Implants →',
           },
           {
             treatmentName: 'Fixed Dental Bridge',
@@ -79,7 +73,6 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
             preparation: 'Circumferential reduction of neighbor teeth',
             clinicalMetric: '1200+ MPa Flexural Strength',
             href: '/treatments/dental-bridge',
-            actionText: 'View Bridges →',
           },
           {
             treatmentName: 'Snap-On Overdenture',
@@ -90,7 +83,6 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
             preparation: 'Anchored over 2–4 titanium implants',
             clinicalMetric: 'Zero Palate Coverage & Zero Slipping',
             href: '/treatments/dentures',
-            actionText: 'View Overdentures →',
           },
           {
             treatmentName: 'All-on-4 / All-on-6',
@@ -101,7 +93,6 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
             preparation: 'Full-arch computer guided implantation',
             clinicalMetric: '100% Full-Arch Chewing Restoration',
             href: '/treatments/dental-implants/all-on-4-implants',
-            actionText: 'View All-on-4 →',
           },
         ],
       },
@@ -117,7 +108,6 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
             preparation: 'Micro-preparation (0.3–0.5 mm)',
             clinicalMetric: 'Natural Opalescent Translucency',
             href: '/treatments/dental-veneers',
-            actionText: 'View Veneers →',
           },
           {
             treatmentName: 'German Zirconia Crowns',
@@ -128,7 +118,6 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
             preparation: '360° full circumferential protection',
             clinicalMetric: '1200+ MPa Fracture Resistance',
             href: '/treatments/dental-crowns',
-            actionText: 'View Crowns →',
           },
           {
             treatmentName: 'Hollywood Smile Makeover',
@@ -139,7 +128,6 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
             preparation: 'Customized based on veneer/crown mix',
             clinicalMetric: 'Golden Proportion DSD Alignment',
             href: '/treatments/cosmetic-dentistry',
-            actionText: 'View Hollywood Smile →',
           },
           {
             treatmentName: 'Microscopic Root Canal',
@@ -150,24 +138,21 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
             preparation: 'Internal root canal debridement & 3D seal',
             clinicalMetric: 'Carl Zeiss 25x Optical Precision',
             href: '/treatments/general-dentistry',
-            actionText: 'View General Dentistry →',
           },
         ],
       },
     },
   },
   tr: {
-    badge: 'KLİNİK KARAR MATRİSİ',
     heading: 'Hangi Diş Tedavisi Sizin İçin En Doğru Çözüm?',
     subText:
-      'Dayanıklılık, İstanbul’da kalış süresi, diş dokusu koruma ve klinik direnç değerlerini kıyaslayarak size en uygun tedaviyi belirleyin.',
+      'Dayanıklılık, İstanbul’da kalış süresi, diş dokusu koruma ve klinik direnç değerlerini kıyaslayın. Detaylı tedavi sayfasına gitmek için ilgili satıra tıklayabilirsiniz.',
     thTreatment: 'Tedavi Çözümü',
     thIdealFor: 'Birincil Klinik Endikasyon',
     thLifespan: 'Ömür & Garanti',
     thDuration: 'İstanbul’da Kalış',
     thPreparation: 'Diş Kesimi / Müdahale',
     thScore: 'Klinik Mukavemet Değeri',
-    thAction: 'Spesifikasyon',
     footerNote:
       'Klinik Not: Kesin tedavi planı, Master Smile Studio kliniğimizdeki ilk 3D tomografi ve dijital konsültasyon sonrası hekimlerimizce belirlenir.',
     categories: {
@@ -183,7 +168,6 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
             preparation: 'Komşu dişlere sıfır dokunma (100% koruma)',
             clinicalMetric: '100% Osseointegrasyon Stabilitesi',
             href: '/treatments/dental-implants',
-            actionText: 'İmplantı İncele →',
           },
           {
             treatmentName: 'Sabit Diş Köprüsü',
@@ -194,7 +178,6 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
             preparation: 'Komşu destek dişlerin çepeçevre küçültülmesi',
             clinicalMetric: '1200+ MPa Bükülme Direnci',
             href: '/treatments/dental-bridge',
-            actionText: 'Köprüyü İncele →',
           },
           {
             treatmentName: 'Çıt Çıtlı Overdenture',
@@ -205,7 +188,6 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
             preparation: '2–4 adet mini implant üzerine kilitlenir',
             clinicalMetric: 'Sıfır Damak Örtüsü & Sıfır Oynama',
             href: '/treatments/dentures',
-            actionText: 'Protezi İncele →',
           },
           {
             treatmentName: 'All-on-4 / All-on-6',
@@ -216,7 +198,6 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
             preparation: 'Tek seansta tam çene cerrahi implantasyon',
             clinicalMetric: '100% Tam Çene Çiğneme Gücü',
             href: '/treatments/dental-implants/all-on-4-implants',
-            actionText: 'All-on-4 İncele →',
           },
         ],
       },
@@ -232,7 +213,6 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
             preparation: 'Minimal mikro aşındırma (0.3–0.5 mm)',
             clinicalMetric: 'Doğal Opalesan Işık Geçirgenliği',
             href: '/treatments/dental-veneers',
-            actionText: 'Lamineyi İncele →',
           },
           {
             treatmentName: 'Alman Zirkonyum Kron',
@@ -243,7 +223,6 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
             preparation: 'Dişin 360 derece estetik kaplanması',
             clinicalMetric: '1200+ MPa Kırılma Direnci',
             href: '/treatments/dental-crowns',
-            actionText: 'Kronu İncele →',
           },
           {
             treatmentName: 'Hollywood Smile Dönüşümü',
@@ -254,7 +233,6 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
             preparation: 'Kişiye özel lamina / zirkon kombinasyonu',
             clinicalMetric: 'Altın Oran 3D DSD Hizalaması',
             href: '/treatments/cosmetic-dentistry',
-            actionText: 'Gülüş Tasarımını İncele →',
           },
           {
             treatmentName: 'Mikroskobik Kanal Tedavisi',
@@ -265,24 +243,21 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
             preparation: 'Kanal içi temizlik ve hermetik dolum',
             clinicalMetric: 'Carl Zeiss 25x Büyütme Hassasiyeti',
             href: '/treatments/general-dentistry',
-            actionText: 'Genel Dişi İncele →',
           },
         ],
       },
     },
   },
   de: {
-    badge: 'KLINISCHE ENTSCHEIDUNGSMATRIX',
     heading: 'Welche Zahnbehandlung ist die richtige für Sie?',
     subText:
-      'Vergleichen Sie Haltbarkeit, Behandlungsdauer in Istanbul, Zahnhartsubstanzschonung und klinische Festigkeitswerte.',
+      'Vergleichen Sie Haltbarkeit, Behandlungsdauer in Istanbul, Zahnhartsubstanzschonung und klinische Festigkeitswerte. Klicken Sie auf eine Zeile, um die Detailseite zu öffnen.',
     thTreatment: 'Behandlungslösung',
     thIdealFor: 'Klinische Indikation',
     thLifespan: 'Haltbarkeit & Garantie',
     thDuration: 'Dauer in Istanbul',
     thPreparation: 'Präparation / Zahnschonung',
     thScore: 'Klinischer Festigkeitswert',
-    thAction: 'Spezifikation',
     footerNote:
       'Klinischer Hinweis: Ihr individueller Behandlungsplan wird nach 3D-CBCT-Diagnostik im Master Smile Studio von unseren Chefärzten festgelegt.',
     categories: {
@@ -298,7 +273,6 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
             preparation: 'Kein Beschleifen gesunder Nachbarzähne',
             clinicalMetric: '100% Osseointegrations-Stabilität',
             href: '/treatments/dental-implants',
-            actionText: 'Implantate ansehen →',
           },
           {
             treatmentName: 'Festsitzende Brücke',
@@ -309,7 +283,6 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
             preparation: 'Zirkuläres Beschleifen der Pfeilerzähne',
             clinicalMetric: '1200+ MPa Biegefestigkeit',
             href: '/treatments/dental-bridge',
-            actionText: 'Brücken ansehen →',
           },
           {
             treatmentName: 'Snap-On Klickprothese',
@@ -320,7 +293,6 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
             preparation: 'Verankerung auf 2–4 Mini-Implantaten',
             clinicalMetric: 'Gaumenfreie Verankerung ohne Verrutschen',
             href: '/treatments/dentures',
-            actionText: 'Prothesen ansehen →',
           },
           {
             treatmentName: 'All-on-4 / All-on-6',
@@ -331,7 +303,6 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
             preparation: 'Chirurgische Implantation des gesamten Kiefers',
             clinicalMetric: '100% Wiederherstellung der Kaukraft',
             href: '/treatments/dental-implants/all-on-4-implants',
-            actionText: 'All-on-4 ansehen →',
           },
         ],
       },
@@ -347,7 +318,6 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
             preparation: 'Minimale Mikro-Präparation (0,3–0,5 mm)',
             clinicalMetric: 'Natürliche opaleszierende Transluzenz',
             href: '/treatments/dental-veneers',
-            actionText: 'Veneers ansehen →',
           },
           {
             treatmentName: 'Deutsches Zirkon Kronen',
@@ -358,7 +328,6 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
             preparation: '360° zirkuläre Überkronung',
             clinicalMetric: '1200+ MPa Bruchfestigkeit',
             href: '/treatments/dental-crowns',
-            actionText: 'Kronen ansehen →',
           },
           {
             treatmentName: 'Hollywood Smile Makeover',
@@ -369,7 +338,6 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
             preparation: 'Individuelle Veneer- & Kronenkombination',
             clinicalMetric: 'Goldener Schnitt 3D DSD Passung',
             href: '/treatments/cosmetic-dentistry',
-            actionText: 'Hollywood Smile →',
           },
           {
             treatmentName: 'Mikroskopische Endodontie',
@@ -380,24 +348,21 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
             preparation: 'Wurzelkanalreinigung & Versiegelung',
             clinicalMetric: 'Carl Zeiss 25-fache optische Präzision',
             href: '/treatments/general-dentistry',
-            actionText: 'Zahnheilkunde →',
           },
         ],
       },
     },
   },
   pl: {
-    badge: 'KLINICZNA MACIERZ DECYZYJNA',
     heading: 'Który Zabieg Stomatologiczny Jest Dla Ciebie Odpowiedni?',
     subText:
-      'Porównaj trwałość, czas pobytu w Stambule, stopień ingerencji w ząb i kliniczne parametry wytrzymałości.',
+      'Porównaj trwałość, czas pobytu w Stambule, stopień ingerencji w ząb i kliniczne parametry wytrzymałości. Kliknij wiersz, aby przejść do szczegółów zabiegu.',
     thTreatment: 'Rozwiązanie Lecznicze',
     thIdealFor: 'Główne Wskazanie Kliniczne',
     thLifespan: 'Trwałość i Gwarancja',
     thDuration: 'Czas w Stambule',
     thPreparation: 'Szlifowanie Zębów',
     thScore: 'Wytrzymałość Kliniczna',
-    thAction: 'Specyfikacja',
     footerNote:
       'Uwaga kliniczna: Ostateczny plan leczenia jest ustalany po wykonaniu tomografii 3D CBCT podczas pierwszej wizyty w Master Smile Studio.',
     categories: {
@@ -413,7 +378,6 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
             preparation: 'Brak naruszania sąsiednich zębów (100% ochrony)',
             clinicalMetric: '100% Stabilności Osteointegracji',
             href: '/treatments/dental-implants',
-            actionText: 'Zobacz Implanty →',
           },
           {
             treatmentName: 'Mosty Cyrkonowe',
@@ -424,7 +388,6 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
             preparation: 'Szlifowanie zębów sąsiadujących',
             clinicalMetric: 'Wytrzymałość 1200+ MPa',
             href: '/treatments/dental-bridge',
-            actionText: 'Zobacz Mosty →',
           },
           {
             treatmentName: 'Proteza na Zatrzaskach Overdenture',
@@ -435,7 +398,6 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
             preparation: 'Mocowanie na 2–4 mini implantach',
             clinicalMetric: 'Konstrukcja bez podniebienia',
             href: '/treatments/dentures',
-            actionText: 'Zobacz Protezy →',
           },
           {
             treatmentName: 'All-on-4 / All-on-6',
@@ -446,7 +408,6 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
             preparation: 'Zabieg implantacji całego łuku',
             clinicalMetric: '100% Przywrócenia Siły Gryzienia',
             href: '/treatments/dental-implants/all-on-4-implants',
-            actionText: 'Zobacz All-on-4 →',
           },
         ],
       },
@@ -462,7 +423,6 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
             preparation: 'Minimalne mikro-szlifowanie (0.3–0.5 mm)',
             clinicalMetric: 'Naturalna Opalescencyjna Przezierzytość',
             href: '/treatments/dental-veneers',
-            actionText: 'Zobacz Licówki →',
           },
           {
             treatmentName: 'Niemieckie Korony Cyrkonowe',
@@ -473,7 +433,6 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
             preparation: 'Opracowanie zęba 360 stopni',
             clinicalMetric: 'Odporność na Złamania 1200+ MPa',
             href: '/treatments/dental-crowns',
-            actionText: 'Zobacz Korony →',
           },
           {
             treatmentName: 'Metamorfoza Hollywood Smile',
@@ -484,7 +443,6 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
             preparation: 'Indywidualna kombinacja licówek i koron',
             clinicalMetric: 'Projektowanie Złotego Podziału 3D DSD',
             href: '/treatments/cosmetic-dentistry',
-            actionText: 'Hollywood Smile →',
           },
           {
             treatmentName: 'Leczenie Kanałowe pod Mikroskopem',
@@ -495,24 +453,21 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
             preparation: 'Oczyszczenie i szczelne wypełnienie kanałów',
             clinicalMetric: 'Optyka Carl Zeiss z Powiększeniem 25x',
             href: '/treatments/general-dentistry',
-            actionText: 'Stomatologia Ogólna →',
           },
         ],
       },
     },
   },
   pt: {
-    badge: 'MATRIZ DE DECISÃO CLÍNICA',
     heading: 'Qual Tratamento Odontológico É o Ideal para Você?',
     subText:
-      'Compare durabilidade, tempo de estadia em Istambul, nível de desgaste dental e valores de resistência clínica.',
+      'Compare durabilidade, tempo de estadia em Istambul, nível de desgaste dental e valores de resistência clínica. Clique em qualquer linha para abrir a página detalhada.',
     thTreatment: 'Solução Clínica',
     thIdealFor: 'Indicação Clínica Principal',
     thLifespan: 'Durabilidade & Garantia',
     thDuration: 'Tempo em Istambul',
     thPreparation: 'Preparo Dental',
     thScore: 'Resistência Clínica',
-    thAction: 'Especificação',
     footerNote:
       'Nota Clínica: O plano definitivo é calibrado após tomografia 3D CBCT e escaneamento digital em sua primeira consulta na Master Smile Studio.',
     categories: {
@@ -528,7 +483,6 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
             preparation: 'Sem desgaste dos dentes vizinhos (100% de preservação)',
             clinicalMetric: '100% Estabilidade de Osseointegração',
             href: '/treatments/dental-implants',
-            actionText: 'Ver Implantes →',
           },
           {
             treatmentName: 'Ponte Fixa em Zircônia',
@@ -539,7 +493,6 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
             preparation: 'Desgaste dos dentes de suporte',
             clinicalMetric: '1200+ MPa de Resistência Flexural',
             href: '/treatments/dental-bridge',
-            actionText: 'Ver Pontes →',
           },
           {
             treatmentName: 'Overdenture de Clique',
@@ -550,7 +503,6 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
             preparation: 'Fixada em 2–4 mini implantes',
             clinicalMetric: 'Sem Cobertura Palatina e Sem Deslocamentos',
             href: '/treatments/dentures',
-            actionText: 'Ver Próteses →',
           },
           {
             treatmentName: 'All-on-4 / All-on-6',
@@ -561,7 +513,6 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
             preparation: 'Implantes cirúrgicos guiados na arcada total',
             clinicalMetric: '100% de Recuperação Mastigatória',
             href: '/treatments/dental-implants/all-on-4-implants',
-            actionText: 'Ver All-on-4 →',
           },
         ],
       },
@@ -577,7 +528,6 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
             preparation: 'Micro desgaste mínimo (0,3–0,5 mm)',
             clinicalMetric: 'Translucidez Opalescente Natural',
             href: '/treatments/dental-veneers',
-            actionText: 'Ver Facetas →',
           },
           {
             treatmentName: 'Coroas de Zircônia Alemã',
@@ -588,7 +538,6 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
             preparation: 'Preparo 360° ao redor do dente',
             clinicalMetric: '1200+ MPa Resistência à Fratura',
             href: '/treatments/dental-crowns',
-            actionText: 'Ver Coroas →',
           },
           {
             treatmentName: 'Hollywood Smile Makeover',
@@ -599,7 +548,6 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
             preparation: 'Personalizada com facetas e coroas',
             clinicalMetric: 'Alinhamento 3D DSD na Proporção Áurea',
             href: '/treatments/cosmetic-dentistry',
-            actionText: 'Hollywood Smile →',
           },
           {
             treatmentName: 'Canal sob Microscópio',
@@ -610,24 +558,21 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
             preparation: 'Desinfecção e selamento hermético',
             clinicalMetric: 'Precisão Óptica Carl Zeiss 25x',
             href: '/treatments/general-dentistry',
-            actionText: 'Clínica Geral →',
           },
         ],
       },
     },
   },
   es: {
-    badge: 'MATRIZ DE DECISIÓN CLÍNICA',
     heading: '¿Qué Tratamiento Dental Es el Más Adecuado para Usted?',
     subText:
-      'Compare durabilidad, tiempo de estancia en Estambul, conservación del diente y métricas de resistencia clínica.',
+      'Compare durabilidad, tiempo de estancia en Estambul, conservación del diente y métricas de resistencia clínica. Haga clic en cualquier fila para explorar la página del tratamiento.',
     thTreatment: 'Solución Dental',
     thIdealFor: 'Indicación Clínica Primaria',
     thLifespan: 'Durabilidad & Garantía',
     thDuration: 'Tiempo en Estambul',
     thPreparation: 'Preparación Dental',
     thScore: 'Métrica de Resistencia Clínica',
-    thAction: 'Especificación',
     footerNote:
       'Nota Clínica: El plan médico final se calibra tras el TAC 3D CBCT y escaneo intraoral en su primera consulta en Master Smile Studio.',
     categories: {
@@ -643,7 +588,6 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
             preparation: 'Sin tallar dientes sanos contiguos (100% de preservación)',
             clinicalMetric: '100% Estabilidad de Osteointegración',
             href: '/treatments/dental-implants',
-            actionText: 'Ver Implantes →',
           },
           {
             treatmentName: 'Puentes Fijos de Zirconio',
@@ -654,7 +598,6 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
             preparation: 'Tallado de dientes contiguos',
             clinicalMetric: '1200+ MPa Resistencia a la Flexión',
             href: '/treatments/dental-bridge',
-            actionText: 'Ver Puentes →',
           },
           {
             treatmentName: 'Sobredentadura con Anclaje',
@@ -665,7 +608,6 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
             preparation: 'Fijada sobre 2–4 mini implantes',
             clinicalMetric: 'Sin Cobertura Palatina y Sin Movimiento',
             href: '/treatments/dentures',
-            actionText: 'Ver Prótesis →',
           },
           {
             treatmentName: 'All-on-4 / All-on-6',
@@ -676,7 +618,6 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
             preparation: 'Implantes guiados por TAC en toda la arcada',
             clinicalMetric: '100% de Restauración de la Masticación',
             href: '/treatments/dental-implants/all-on-4-implants',
-            actionText: 'Ver All-on-4 →',
           },
         ],
       },
@@ -692,7 +633,6 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
             preparation: 'Micro-tallado mínimo (0.3–0.5 mm)',
             clinicalMetric: 'Translucidez Opalescente Natural',
             href: '/treatments/dental-veneers',
-            actionText: 'Ver Carillas →',
           },
           {
             treatmentName: 'Coronas de Zirconio Alemán',
@@ -703,7 +643,6 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
             preparation: 'Recubrimiento 360° del diente',
             clinicalMetric: '1200+ MPa Resistencia a la Fractura',
             href: '/treatments/dental-crowns',
-            actionText: 'Ver Coronas →',
           },
           {
             treatmentName: 'Hollywood Smile Makeover',
@@ -714,7 +653,6 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
             preparation: 'Combinación personalizada de carillas y coronas',
             clinicalMetric: 'Alineación 3D DSD en Proporción Áurea',
             href: '/treatments/cosmetic-dentistry',
-            actionText: 'Hollywood Smile →',
           },
           {
             treatmentName: 'Endodoncia Microscópica',
@@ -725,24 +663,21 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
             preparation: 'Desinfección y sellado de conductos',
             clinicalMetric: 'Precisión Óptica Carl Zeiss 25x',
             href: '/treatments/general-dentistry',
-            actionText: 'Odontología General →',
           },
         ],
       },
     },
   },
   ru: {
-    badge: 'КЛИНИЧЕСКАЯ МАТРИЦА РЕШЕНИЙ',
     heading: 'Какое стоматологическое лечение подходит именно вам?',
     subText:
-      'Сравните долговечность, время пребывания в Стамбуле, степень обточки зубов и клинические показатели прочности.',
+      'Сравните долговечность, время пребывания в Стамбуле, степень обточки зубов и клинические показатели прочности. Нажмите на любую строку для перехода к деталям процедуры.',
     thTreatment: 'Метод лечения',
     thIdealFor: 'Клинические показания',
     thLifespan: 'Срок службы и гарантия',
     thDuration: 'Срок в Стамбуле',
     thPreparation: 'Обработка зубов',
     thScore: 'Клинический показатель прочности',
-    thAction: 'Спецификация',
     footerNote:
       'Клиническое примечание: Индивидуальный план лечения утверждается врачами после 3D КТ диагностики на консультации в Master Smile Studio.',
     categories: {
@@ -758,7 +693,6 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
             preparation: 'Соседние зубы не обтачиваются (100% сохранность)',
             clinicalMetric: '100% Стабильность Остеоинтеграции',
             href: '/treatments/dental-implants',
-            actionText: 'Импланты →',
           },
           {
             treatmentName: 'Мостовидный протез',
@@ -769,7 +703,6 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
             preparation: 'Круговое обтачивание опорных зубов',
             clinicalMetric: 'Прочность на изгиб 1200+ МПа',
             href: '/treatments/dental-bridge',
-            actionText: 'Мосты →',
           },
           {
             treatmentName: 'Замковый протез Overdenture',
@@ -780,7 +713,6 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
             preparation: 'Фиксация на 2–4 мини-имплантах',
             clinicalMetric: 'Конструкция без неба без смещения',
             href: '/treatments/dentures',
-            actionText: 'Протезы →',
           },
           {
             treatmentName: 'All-on-4 / All-on-6',
@@ -791,7 +723,6 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
             preparation: 'Хирургическая имплантация всей челюсти',
             clinicalMetric: '100% Восстановление жевательной силы',
             href: '/treatments/dental-implants/all-on-4-implants',
-            actionText: 'All-on-4 →',
           },
         ],
       },
@@ -807,7 +738,6 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
             preparation: 'Минимальное препарирование (0.3–0.5 мм)',
             clinicalMetric: 'Естественная опалесцирующая прозрачность',
             href: '/treatments/dental-veneers',
-            actionText: 'Виниры →',
           },
           {
             treatmentName: 'Немецкие коронки из циркония',
@@ -818,7 +748,6 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
             preparation: 'Круговое препарирование на 360°',
             clinicalMetric: 'Устойчивость к трещинам 1200+ МПа',
             href: '/treatments/dental-crowns',
-            actionText: 'Коронки →',
           },
           {
             treatmentName: 'Голливудская улыбка Makeover',
@@ -829,7 +758,6 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
             preparation: 'Индивидуальный подбор виниров и коронок',
             clinicalMetric: 'Дизайн 3D DSD по золотому сечению',
             href: '/treatments/cosmetic-dentistry',
-            actionText: 'Hollywood Smile →',
           },
           {
             treatmentName: 'Лечение каналов под микроскопом',
@@ -840,7 +768,6 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
             preparation: 'Очистка и герметизация каналов',
             clinicalMetric: 'Оптическая точность Carl Zeiss 25x',
             href: '/treatments/general-dentistry',
-            actionText: 'Терапия →',
           },
         ],
       },
@@ -850,6 +777,7 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
 
 export default function TreatmentComparisonMatrix() {
   const locale = useLocale();
+  const router = useRouter();
   const dict = MATRIX_DATA[locale] || MATRIX_DATA.en;
   const [activeTab, setActiveTab] = useState<'missing' | 'aesthetic'>('missing');
 
@@ -899,19 +827,36 @@ export default function TreatmentComparisonMatrix() {
                   <th>{dict.thDuration}</th>
                   <th>{dict.thPreparation}</th>
                   <th>{dict.thScore}</th>
-                  <th>{dict.thAction}</th>
                 </tr>
               </thead>
               <tbody>
                 {currentCategory.rows.map((row, idx) => (
-                  <tr key={idx}>
+                  <tr
+                    key={idx}
+                    className={styles.clickableRow}
+                    onClick={() => router.push(row.href)}
+                    role="link"
+                    tabIndex={0}
+                    onKeyDown={(e) => {
+                      if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        router.push(row.href);
+                      }
+                    }}
+                  >
                     <td>
-                      <span className={styles.treatmentCell}>
-                        {row.treatmentName}
-                      </span>
-                      <span className={styles.treatmentCellSub}>
-                        {row.treatmentSub}
-                      </span>
+                      <Link
+                        href={row.href}
+                        className={styles.treatmentLink}
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        <span className={styles.treatmentCell}>
+                          {row.treatmentName}
+                        </span>
+                        <span className={styles.treatmentCellSub}>
+                          {row.treatmentSub}
+                        </span>
+                      </Link>
                     </td>
                     <td>{row.idealFor}</td>
                     <td>
@@ -925,11 +870,6 @@ export default function TreatmentComparisonMatrix() {
                       <span className={styles.metricBadge}>
                         {row.clinicalMetric}
                       </span>
-                    </td>
-                    <td>
-                      <Link href={row.href} className={styles.actionLink}>
-                        <span>{row.actionText}</span>
-                      </Link>
                     </td>
                   </tr>
                 ))}
