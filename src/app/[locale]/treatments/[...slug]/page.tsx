@@ -350,12 +350,18 @@ export default async function HierarchicalTreatmentPage({ params }: PageProps) {
           title={heroTitle}
           subtitle={heroSubtitle}
           imageSrc={
-            isDentalImplantsCategory
+            isImplantSupportedDentures
+              ? 'https://sohodent.com/doc/data1/implant-supported-dentures.webp?v=1'
+              : isDentalImplantsCategory
               ? 'https://sohodent.com/doc/data1/zirconium-implant.webp?v=1'
               : undefined
           }
           imageAlt={
-            isDentalImplantsCategory ? 'Zirconium Implants' : undefined
+            isImplantSupportedDentures
+              ? 'Dental Implant Supported Dentures in Istanbul, Turkey'
+              : isDentalImplantsCategory
+              ? 'Zirconium Implants'
+              : undefined
           }
           primaryBtnText={
             content?.hero?.primaryBtn ||
