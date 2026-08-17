@@ -122,6 +122,22 @@ interface DetailDictionary {
   evalHealthList: string[];
   evalHealthTail: string;
 
+  prepH2: string;
+  prepLead: string;
+  prep1Title: string;
+  prep1Desc: string;
+  prep2Title: string;
+  prep2Desc: string;
+  prep3Title: string;
+  prep3Desc: string;
+  prep4Title: string;
+  prep4Desc: string;
+  prep5Title: string;
+  prep5Desc: string;
+  prep6Title: string;
+  prep6Desc: string;
+  prepTail: string;
+
   faqTitle: string;
   faqSubtitle: string;
   faqGroup1Title: string;
@@ -579,6 +595,21 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       "Blood disorders or medications that may affect healing"
     ],
     "evalHealthTail": "It’s essential to ensure that any medical conditions are well-managed before proceeding with zygomatic implants to achieve the best possible outcome.",
+    "prepH2": "Preparing for Zygomatic (Cheekbone) Implant Surgery at Master Smile Studio, Istanbul",
+    "prepLead": "Preparing for your zygomatic implant surgery is crucial to ensure a smooth and successful procedure. Here are some general guidelines to follow before your surgery at Master Smile Studio:",
+    "prep1Title": "1. Comprehensive Dental Evaluation",
+    "prep1Desc": "Before scheduling your zygomatic implant surgery in Istanbul, your dentist will conduct a thorough examination, including X-rays and advanced imaging techniques like CT scans. This evaluation will assess the condition of your jawbone and cheekbone, ensuring there’s enough bone volume to support the implant.",
+    "prep2Title": "2. Medical History Review",
+    "prep2Desc": "Your dentist will review your medical history, including existing health conditions, medications, and past surgeries. This information is essential to determine if you are a suitable candidate for zygomatic implants and to identify any potential risks or complications.",
+    "prep3Title": "3. Quit Smoking",
+    "prep3Desc": "If you smoke, it is important to quit smoking well in advance of your zygomatic implant surgery. Smoking can impair the healing process and increase the risk of complications, such as infection and implant failure.",
+    "prep4Title": "4. Maintain Good Oral Hygiene",
+    "prep4Desc": "Maintaining good oral hygiene before the procedure is critical for reducing the risk of infection. This includes regular brushing, flossing, and using an antimicrobial mouthwash.",
+    "prep5Title": "5. Arrange for Transportation",
+    "prep5Desc": "Since you will likely be under the influence of anesthesia or sedation on the day of your surgery, it’s essential to arrange for a trusted friend, family member, or our dedicated VIP chauffeur team to drive you to and from the clinic.",
+    "prep6Title": "6. Prepare for the Recovery Period",
+    "prep6Desc": "Your dentist will provide you with detailed instructions on what to expect during the recovery process, including dietary restrictions, pain management, and follow-up appointments. Make sure to familiarize yourself with these guidelines. You may also want to prepare by stocking up on soft, easy-to-eat foods.",
+    "prepTail": "By following these preparation steps, you can ensure a smoother and more successful zygomatic implant procedure, setting the stage for a beautiful and confident new smile at Master Smile Studio in Istanbul.",
     "faqTitle": "Frequently Asked Questions: Zygomatic Implants",
     "faqSubtitle": "Clinically verified answers regarding cheekbone anchoring, surgical recovery, bone grafting alternatives, and health tourism in Istanbul.",
     "faqGroup1Title": "Clinical & Surgical Zygomatic FAQ (Severe Bone Loss Solutions)",
@@ -1104,6 +1135,21 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       "Kan hastalıkları veya iyileşmeyi geciktiren ilaç kullanımı"
     ],
     "evalHealthTail": "En iyi klinik sonucu elde etmek ve operasyon başarısını garantilemek için mevcut tıbbi durumların operasyon öncesinde kontrol altında olması esastır.",
+    "prepH2": "Master Smile Studio İstanbul’da Zigoma (Elmacık Kemiği) İmplant Ameliyatına Hazırlık",
+    "prepLead": "Zigoma implant ameliyatınıza doğru şekilde hazırlanmak, cerrahi sürecin konforlu ve başarılı geçmesi için kritik öneme sahiptir. Master Smile Studio’da operasyon öncesi dikkat edilmesi gereken temel adımlar şunlardır:",
+    "prep1Title": "1. Kapsamlı Ağız ve Diş Muayenesi",
+    "prep1Desc": "İstanbul’da zigoma implant randevunuz planlanmadan önce cerrahımız 3D tomografi (CBCT) ve dijital panoramik röntgenler dahil derinlemesine bir inceleme yapar. Bu değerlendirme, çene ve elmacık kemiğinizin durumunu ve implant tutuculuğunu garanti altına alır.",
+    "prep2Title": "2. Genel Tıbbi Geçmişin İncelenmesi",
+    "prep2Desc": "Cerrahımız mevcut sağlık durumunuzu, düzenli kullandığınız ilaçları ve geçmiş operasyonlarınızı inceler. Bu bilgiler, zigoma implantları için en güvenli anestezi ve cerrahi protokolü belirlemek açısından hayati önem taşır.",
+    "prep3Title": "3. Sigarayı Bırakma / Azaltma",
+    "prep3Desc": "Sigara kullanıyorsanız, zigoma implant ameliyatından en az birkaç hafta önce sigarayı bırakmanız veya minimuma indirmeniz önerilir. Sigara iyileşme sürecini yavaşlatabilir ve enfeksiyon riskini artırabilir.",
+    "prep4Title": "4. Ağız Hijyenini En Üst Düzeyde Tutmak",
+    "prep4Desc": "Operasyon öncesinde düzenli diş fırçalama, diş ipi kullanımı ve hekiminizin önereceği antibakteriyel ağız gargaraları ile ağız içi bakteri yükünü minimize etmek enfeksiyon riskini sıfıra indirir.",
+    "prep5Title": "5. Ulaşım ve Transfer Planlaması",
+    "prep5Desc": "Ameliyat günü sedasyon veya anestezi etkisi altında olacağınız için kliniğe ve otele ulaşımınız Master Smile Studio’nun özel VIP Mercedes transfer ekibi tarafından güvenle sağlanır.",
+    "prep6Title": "6. İyileşme Dönemine Hazırlık",
+    "prep6Desc": "Cerrahımız operasyon sonrası beslenme kısıtlamaları, ağrı kontrolü ve kontrol randevuları hakkında size detaylı bir rehber sunacaktır. İlk birkaç gün için yumuşak ve çiğnemesi kolay besinler hazırlamanız konforunuzu artıracaktır.",
+    "prepTail": "Bu hazırlık adımlarını takip ederek zigoma implant operasyonunuzun sorunsuz, hızlı ve maksimum konforla tamamlanmasını sağlayabilir; Master Smile Studio İstanbul’da yepyeni gülüşünüze güvenle adım atabilirsiniz.",
     "faqTitle": "Sıkça Sorulan Sorular: Zigoma (Elmacık Kemiği) İmplantları",
     "faqSubtitle": "Elmacık kemiği tutunumu, cerrahi iyileşme, kemik nakli alternatifleri ve İstanbul sağlık turizmi hakkında hekim onaylı yanıtlar.",
     "faqGroup1Title": "Klinik ve Cerrahi Zigoma SSS (İleri Kemik Erimesi Çözümleri)",
@@ -1629,6 +1675,21 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       "Blood disorders or medications that may affect healing"
     ],
     "evalHealthTail": "It’s essential to ensure that any medical conditions are well-managed before proceeding with zygomatic implants to achieve the best possible outcome.",
+    "prepH2": "Vorbereitung auf die Zygoma- (Jochbein-) Implantatoperation bei Master Smile Studio, Istanbul",
+    "prepLead": "Preparing for your zygomatic implant surgery is crucial to ensure a smooth and successful procedure. Here are some general guidelines to follow before your surgery at Master Smile Studio:",
+    "prep1Title": "1. Comprehensive Dental Evaluation",
+    "prep1Desc": "Before scheduling your zygomatic implant surgery in Istanbul, your dentist will conduct a thorough examination, including X-rays and advanced imaging techniques like CT scans. This evaluation will assess the condition of your jawbone and cheekbone, ensuring there’s enough bone volume to support the implant.",
+    "prep2Title": "2. Medical History Review",
+    "prep2Desc": "Your dentist will review your medical history, including existing health conditions, medications, and past surgeries. This information is essential to determine if you are a suitable candidate for zygomatic implants and to identify any potential risks or complications.",
+    "prep3Title": "3. Quit Smoking",
+    "prep3Desc": "If you smoke, it is important to quit smoking well in advance of your zygomatic implant surgery. Smoking can impair the healing process and increase the risk of complications, such as infection and implant failure.",
+    "prep4Title": "4. Maintain Good Oral Hygiene",
+    "prep4Desc": "Maintaining good oral hygiene before the procedure is critical for reducing the risk of infection. This includes regular brushing, flossing, and using an antimicrobial mouthwash.",
+    "prep5Title": "5. Arrange for Transportation",
+    "prep5Desc": "Since you will likely be under the influence of anesthesia or sedation on the day of your surgery, it’s essential to arrange for a trusted friend, family member, or our dedicated VIP chauffeur team to drive you to and from the clinic.",
+    "prep6Title": "6. Prepare for the Recovery Period",
+    "prep6Desc": "Your dentist will provide you with detailed instructions on what to expect during the recovery process, including dietary restrictions, pain management, and follow-up appointments. Make sure to familiarize yourself with these guidelines. You may also want to prepare by stocking up on soft, easy-to-eat foods.",
+    "prepTail": "By following these preparation steps, you can ensure a smoother and more successful zygomatic implant procedure, setting the stage for a beautiful and confident new smile at Master Smile Studio in Istanbul.",
     "faqTitle": "Häufig gestellte Fragen: Zygoma-Implantate",
     "faqSubtitle": "Clinically verified answers regarding cheekbone anchoring, surgical recovery, bone grafting alternatives, and health tourism in Istanbul.",
     "faqGroup1Title": "Clinical & Surgical Zygomatic FAQ (Severe Bone Loss Solutions)",
@@ -2154,6 +2215,21 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       "Blood disorders or medications that may affect healing"
     ],
     "evalHealthTail": "It’s essential to ensure that any medical conditions are well-managed before proceeding with zygomatic implants to achieve the best possible outcome.",
+    "prepH2": "Przygotowanie do zabiegu implantacji jarzmowej (Zygoma) w Master Smile Studio, Stambuł",
+    "prepLead": "Preparing for your zygomatic implant surgery is crucial to ensure a smooth and successful procedure. Here are some general guidelines to follow before your surgery at Master Smile Studio:",
+    "prep1Title": "1. Comprehensive Dental Evaluation",
+    "prep1Desc": "Before scheduling your zygomatic implant surgery in Istanbul, your dentist will conduct a thorough examination, including X-rays and advanced imaging techniques like CT scans. This evaluation will assess the condition of your jawbone and cheekbone, ensuring there’s enough bone volume to support the implant.",
+    "prep2Title": "2. Medical History Review",
+    "prep2Desc": "Your dentist will review your medical history, including existing health conditions, medications, and past surgeries. This information is essential to determine if you are a suitable candidate for zygomatic implants and to identify any potential risks or complications.",
+    "prep3Title": "3. Quit Smoking",
+    "prep3Desc": "If you smoke, it is important to quit smoking well in advance of your zygomatic implant surgery. Smoking can impair the healing process and increase the risk of complications, such as infection and implant failure.",
+    "prep4Title": "4. Maintain Good Oral Hygiene",
+    "prep4Desc": "Maintaining good oral hygiene before the procedure is critical for reducing the risk of infection. This includes regular brushing, flossing, and using an antimicrobial mouthwash.",
+    "prep5Title": "5. Arrange for Transportation",
+    "prep5Desc": "Since you will likely be under the influence of anesthesia or sedation on the day of your surgery, it’s essential to arrange for a trusted friend, family member, or our dedicated VIP chauffeur team to drive you to and from the clinic.",
+    "prep6Title": "6. Prepare for the Recovery Period",
+    "prep6Desc": "Your dentist will provide you with detailed instructions on what to expect during the recovery process, including dietary restrictions, pain management, and follow-up appointments. Make sure to familiarize yourself with these guidelines. You may also want to prepare by stocking up on soft, easy-to-eat foods.",
+    "prepTail": "By following these preparation steps, you can ensure a smoother and more successful zygomatic implant procedure, setting the stage for a beautiful and confident new smile at Master Smile Studio in Istanbul.",
     "faqTitle": "Często Zadawane Pytania: Implanty Zygoma",
     "faqSubtitle": "Clinically verified answers regarding cheekbone anchoring, surgical recovery, bone grafting alternatives, and health tourism in Istanbul.",
     "faqGroup1Title": "Clinical & Surgical Zygomatic FAQ (Severe Bone Loss Solutions)",
@@ -2679,6 +2755,21 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       "Blood disorders or medications that may affect healing"
     ],
     "evalHealthTail": "It’s essential to ensure that any medical conditions are well-managed before proceeding with zygomatic implants to achieve the best possible outcome.",
+    "prepH2": "Preparação para a Cirurgia de Implantes Zigomáticos no Master Smile Studio, Istambul",
+    "prepLead": "Preparing for your zygomatic implant surgery is crucial to ensure a smooth and successful procedure. Here are some general guidelines to follow before your surgery at Master Smile Studio:",
+    "prep1Title": "1. Comprehensive Dental Evaluation",
+    "prep1Desc": "Before scheduling your zygomatic implant surgery in Istanbul, your dentist will conduct a thorough examination, including X-rays and advanced imaging techniques like CT scans. This evaluation will assess the condition of your jawbone and cheekbone, ensuring there’s enough bone volume to support the implant.",
+    "prep2Title": "2. Medical History Review",
+    "prep2Desc": "Your dentist will review your medical history, including existing health conditions, medications, and past surgeries. This information is essential to determine if you are a suitable candidate for zygomatic implants and to identify any potential risks or complications.",
+    "prep3Title": "3. Quit Smoking",
+    "prep3Desc": "If you smoke, it is important to quit smoking well in advance of your zygomatic implant surgery. Smoking can impair the healing process and increase the risk of complications, such as infection and implant failure.",
+    "prep4Title": "4. Maintain Good Oral Hygiene",
+    "prep4Desc": "Maintaining good oral hygiene before the procedure is critical for reducing the risk of infection. This includes regular brushing, flossing, and using an antimicrobial mouthwash.",
+    "prep5Title": "5. Arrange for Transportation",
+    "prep5Desc": "Since you will likely be under the influence of anesthesia or sedation on the day of your surgery, it’s essential to arrange for a trusted friend, family member, or our dedicated VIP chauffeur team to drive you to and from the clinic.",
+    "prep6Title": "6. Prepare for the Recovery Period",
+    "prep6Desc": "Your dentist will provide you with detailed instructions on what to expect during the recovery process, including dietary restrictions, pain management, and follow-up appointments. Make sure to familiarize yourself with these guidelines. You may also want to prepare by stocking up on soft, easy-to-eat foods.",
+    "prepTail": "By following these preparation steps, you can ensure a smoother and more successful zygomatic implant procedure, setting the stage for a beautiful and confident new smile at Master Smile Studio in Istanbul.",
     "faqTitle": "Perguntas Frequentes: Implantes Zigomáticos",
     "faqSubtitle": "Clinically verified answers regarding cheekbone anchoring, surgical recovery, bone grafting alternatives, and health tourism in Istanbul.",
     "faqGroup1Title": "Clinical & Surgical Zygomatic FAQ (Severe Bone Loss Solutions)",
@@ -2797,7 +2888,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "costIntroP1": "Una de las principales razones del éxito de Turquía en implantes cigomáticos es el ahorro de hasta un 70% respecto a otros países.",
     "costIntroP2": "El coste de un implante cigomático en Turquía en 2026 oscila entre 2.350 € ve 4.500 $.",
     "costIntroP3": "En Master Smile Studio el precio por implante cigomático es de 2.350 EUR / 2.770 USD / 2.050 GBP con quirófano y diagnóstico 3D incluidos.",
-    "packagesTitle": "Paquetes Cigomáticos y Conversor de Divisas",
+    "packagesTitle": "Paquetes Cigomáticos ve Conversor de Divisas",
     "packagesSubtitle": "All-inclusive packages per jaw featuring certified Straumann, Nobel Biocare, NucleOSS, DXL, Megagen, Neodent, and Hiossen.",
     "durationLabel": "Treatment Duration:",
     "includedLabel": "What’s Included:",
@@ -3204,6 +3295,21 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       "Blood disorders or medications that may affect healing"
     ],
     "evalHealthTail": "It’s essential to ensure that any medical conditions are well-managed before proceeding with zygomatic implants to achieve the best possible outcome.",
+    "prepH2": "Preparación para la Cirugía de Implantes Cigomáticos en Master Smile Studio, Estambul",
+    "prepLead": "Preparing for your zygomatic implant surgery is crucial to ensure a smooth and successful procedure. Here are some general guidelines to follow before your surgery at Master Smile Studio:",
+    "prep1Title": "1. Comprehensive Dental Evaluation",
+    "prep1Desc": "Before scheduling your zygomatic implant surgery in Istanbul, your dentist will conduct a thorough examination, including X-rays and advanced imaging techniques like CT scans. This evaluation will assess the condition of your jawbone and cheekbone, ensuring there’s enough bone volume to support the implant.",
+    "prep2Title": "2. Medical History Review",
+    "prep2Desc": "Your dentist will review your medical history, including existing health conditions, medications, and past surgeries. This information is essential to determine if you are a suitable candidate for zygomatic implants and to identify any potential risks or complications.",
+    "prep3Title": "3. Quit Smoking",
+    "prep3Desc": "If you smoke, it is important to quit smoking well in advance of your zygomatic implant surgery. Smoking can impair the healing process and increase the risk of complications, such as infection and implant failure.",
+    "prep4Title": "4. Maintain Good Oral Hygiene",
+    "prep4Desc": "Maintaining good oral hygiene before the procedure is critical for reducing the risk of infection. This includes regular brushing, flossing, and using an antimicrobial mouthwash.",
+    "prep5Title": "5. Arrange for Transportation",
+    "prep5Desc": "Since you will likely be under the influence of anesthesia or sedation on the day of your surgery, it’s essential to arrange for a trusted friend, family member, or our dedicated VIP chauffeur team to drive you to and from the clinic.",
+    "prep6Title": "6. Prepare for the Recovery Period",
+    "prep6Desc": "Your dentist will provide you with detailed instructions on what to expect during the recovery process, including dietary restrictions, pain management, and follow-up appointments. Make sure to familiarize yourself with these guidelines. You may also want to prepare by stocking up on soft, easy-to-eat foods.",
+    "prepTail": "By following these preparation steps, you can ensure a smoother and more successful zygomatic implant procedure, setting the stage for a beautiful and confident new smile at Master Smile Studio in Istanbul.",
     "faqTitle": "Preguntas Frecuentes: Implantes Cigomáticos",
     "faqSubtitle": "Clinically verified answers regarding cheekbone anchoring, surgical recovery, bone grafting alternatives, and health tourism in Istanbul.",
     "faqGroup1Title": "Clinical & Surgical Zygomatic FAQ (Severe Bone Loss Solutions)",
@@ -3729,6 +3835,21 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       "Blood disorders or medications that may affect healing"
     ],
     "evalHealthTail": "It’s essential to ensure that any medical conditions are well-managed before proceeding with zygomatic implants to achieve the best possible outcome.",
+    "prepH2": "Подготовка к операции по установке скуловых имплантов в Master Smile Studio, Стамбул",
+    "prepLead": "Preparing for your zygomatic implant surgery is crucial to ensure a smooth and successful procedure. Here are some general guidelines to follow before your surgery at Master Smile Studio:",
+    "prep1Title": "1. Comprehensive Dental Evaluation",
+    "prep1Desc": "Before scheduling your zygomatic implant surgery in Istanbul, your dentist will conduct a thorough examination, including X-rays and advanced imaging techniques like CT scans. This evaluation will assess the condition of your jawbone and cheekbone, ensuring there’s enough bone volume to support the implant.",
+    "prep2Title": "2. Medical History Review",
+    "prep2Desc": "Your dentist will review your medical history, including existing health conditions, medications, and past surgeries. This information is essential to determine if you are a suitable candidate for zygomatic implants and to identify any potential risks or complications.",
+    "prep3Title": "3. Quit Smoking",
+    "prep3Desc": "If you smoke, it is important to quit smoking well in advance of your zygomatic implant surgery. Smoking can impair the healing process and increase the risk of complications, such as infection and implant failure.",
+    "prep4Title": "4. Maintain Good Oral Hygiene",
+    "prep4Desc": "Maintaining good oral hygiene before the procedure is critical for reducing the risk of infection. This includes regular brushing, flossing, and using an antimicrobial mouthwash.",
+    "prep5Title": "5. Arrange for Transportation",
+    "prep5Desc": "Since you will likely be under the influence of anesthesia or sedation on the day of your surgery, it’s essential to arrange for a trusted friend, family member, or our dedicated VIP chauffeur team to drive you to and from the clinic.",
+    "prep6Title": "6. Prepare for the Recovery Period",
+    "prep6Desc": "Your dentist will provide you with detailed instructions on what to expect during the recovery process, including dietary restrictions, pain management, and follow-up appointments. Make sure to familiarize yourself with these guidelines. You may also want to prepare by stocking up on soft, easy-to-eat foods.",
+    "prepTail": "By following these preparation steps, you can ensure a smoother and more successful zygomatic implant procedure, setting the stage for a beautiful and confident new smile at Master Smile Studio in Istanbul.",
     "faqTitle": "Часто Задаваемые Вопросы: Скуловые Импланты",
     "faqSubtitle": "Clinically verified answers regarding cheekbone anchoring, surgical recovery, bone grafting alternatives, and health tourism in Istanbul.",
     "faqGroup1Title": "Clinical & Surgical Zygomatic FAQ (Severe Bone Loss Solutions)",
@@ -4204,25 +4325,69 @@ export default function ZygomaticImplantDetailView() {
       {/* 9. BEFORE & AFTER TRANSFORMATIONS GALLERY (FROM FIRST VISIT TO FINAL SMILE) */}
       <TreatmentBeforeAfterSliderSection />
 
-      {/* 10. REUSABLE: CLINIC TOUR */}
+      {/* 10. PREPARING FOR ZYGOMATIC IMPLANT SURGERY (UNDER BEFORE & AFTER GALLERY) */}
+      <section aria-labelledby="zygoma-prep-heading" className={styles.introSection} style={{ backgroundColor: '#ffffff', borderTop: '1px solid #eef2f6', borderBottom: '1px solid #eef2f6' }}>
+        <div className={styles.container}>
+          <h2 id="zygoma-prep-heading" className={styles.introHeading}>
+            {d.prepH2}
+          </h2>
+          <p className={styles.textP}>{d.prepLead}</p>
+
+          <h4 className={styles.introHeading} style={{ fontSize: 'clamp(1.15rem, 1.8vw, 1.35rem)', marginTop: '1.5rem', marginBottom: '0.5rem' }}>
+            {d.prep1Title}
+          </h4>
+          <p className={styles.textP}>{d.prep1Desc}</p>
+
+          <h4 className={styles.introHeading} style={{ fontSize: 'clamp(1.15rem, 1.8vw, 1.35rem)', marginTop: '1.5rem', marginBottom: '0.5rem' }}>
+            {d.prep2Title}
+          </h4>
+          <p className={styles.textP}>{d.prep2Desc}</p>
+
+          <h4 className={styles.introHeading} style={{ fontSize: 'clamp(1.15rem, 1.8vw, 1.35rem)', marginTop: '1.5rem', marginBottom: '0.5rem' }}>
+            {d.prep3Title}
+          </h4>
+          <p className={styles.textP}>{d.prep3Desc}</p>
+
+          <h4 className={styles.introHeading} style={{ fontSize: 'clamp(1.15rem, 1.8vw, 1.35rem)', marginTop: '1.5rem', marginBottom: '0.5rem' }}>
+            {d.prep4Title}
+          </h4>
+          <p className={styles.textP}>{d.prep4Desc}</p>
+
+          <h4 className={styles.introHeading} style={{ fontSize: 'clamp(1.15rem, 1.8vw, 1.35rem)', marginTop: '1.5rem', marginBottom: '0.5rem' }}>
+            {d.prep5Title}
+          </h4>
+          <p className={styles.textP}>{d.prep5Desc}</p>
+
+          <h4 className={styles.introHeading} style={{ fontSize: 'clamp(1.15rem, 1.8vw, 1.35rem)', marginTop: '1.5rem', marginBottom: '0.5rem' }}>
+            {d.prep6Title}
+          </h4>
+          <p className={styles.textP}>{d.prep6Desc}</p>
+
+          <p className={styles.textP} style={{ fontWeight: 600, color: '#0c1b4d', marginTop: '1.5rem' }}>
+            {d.prepTail}
+          </p>
+        </div>
+      </section>
+
+      {/* 11. REUSABLE: CLINIC TOUR */}
       <TreatmentClinicTourSection placeholderNum="ZYG-TOUR" />
 
-      {/* 11. REUSABLE: FOUNDING SURGEONS */}
+      {/* 12. REUSABLE: FOUNDING SURGEONS */}
       <TreatmentDoctorsSection />
 
-      {/* 12. REVIEWS & TRUSTPILOT / GOOGLE 5-STAR */}
+      {/* 13. REVIEWS & TRUSTPILOT / GOOGLE 5-STAR */}
       <TreatmentReviewsSection />
 
-      {/* 13. REUSABLE: PARALLAX BANNER */}
+      {/* 14. REUSABLE: PARALLAX BANNER */}
       <TreatmentParallaxBanner />
 
-      {/* 14. REUSABLE: PATIENT VIDEO REELS */}
+      {/* 15. REUSABLE: PATIENT VIDEO REELS */}
       <TreatmentPatientReelsSection />
 
-      {/* 15. REUSABLE: DENTAL JOURNEY TIMELINE */}
+      {/* 16. REUSABLE: DENTAL JOURNEY TIMELINE */}
       <TreatmentJourneySimpleSection />
 
-      {/* 16. MASTER 17-QUESTION FAQ SECTION (CLINICAL & HEALTH TOURISM) */}
+      {/* 17. MASTER 17-QUESTION FAQ SECTION (CLINICAL & HEALTH TOURISM) */}
       <section aria-labelledby="zygoma-faq-heading" className={styles.faqSection}>
         <div className={styles.faqContainer}>
           <div className={styles.faqHeader}>
@@ -4304,7 +4469,7 @@ export default function ZygomaticImplantDetailView() {
         </div>
       </section>
 
-      {/* 17. LET'S CREATE YOUR PERFECT SMILE PLAN (4-STEP INTERACTIVE QUOTE FUNNEL) */}
+      {/* 18. LET'S CREATE YOUR PERFECT SMILE PLAN (4-STEP INTERACTIVE QUOTE FUNNEL) */}
       <TreatmentInteractiveQuoteForm defaultTreatment="Zygomatic Implants" />
     </div>
   );
