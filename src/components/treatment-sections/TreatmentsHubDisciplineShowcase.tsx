@@ -1189,8 +1189,48 @@ export default function TreatmentsHubDisciplineShowcase() {
           </article>
         )}
 
-        {/* 2. BALANCED GRID FOR FILTERED DISCIPLINES */}
+        {/* 2. BALANCED GRID (ON DESKTOP: 2x3, ON MOBILE: 100% WIDTH HORIZONTAL SWIPE WITH PEEK) */}
         <div className={styles.grid}>
+          {/* Mobile-Only Implant Card (Ensures 1st card in mobile swipe row is Dental Implants) */}
+          {showFeatured && (
+            <article className={`${styles.card} ${styles.mobileOnlyCard}`}>
+              <div className={styles.imageWrap}>
+                <span className={styles.tagBadge}>{f.tag}</span>
+                <span className={styles.durationBadge}>{f.duration}</span>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={f.img}
+                  alt={f.title}
+                  className={styles.image}
+                  loading="lazy"
+                />
+              </div>
+
+              <div className={styles.content}>
+                <h3 className={styles.cardTitle}>{f.title}</h3>
+                <p className={styles.cardDesc}>{f.desc}</p>
+
+                <div className={styles.subLinksTitle}>
+                  <span>{f.popularTechniquesLabel}</span>
+                </div>
+
+                <ul className={styles.subLinksList}>
+                  {f.sublinks.map((sub, sIdx) => (
+                    <li key={sIdx} className={styles.subLinkItem}>
+                      <Link href={sub.href}>{sub.label}</Link>
+                    </li>
+                  ))}
+                </ul>
+
+                <div className={styles.actionRow}>
+                  <Link href={f.href} className={styles.primaryBtn}>
+                    <span>{f.btnText}</span>
+                  </Link>
+                </div>
+              </div>
+            </article>
+          )}
+
           {filteredGridItems.map((item, idx) => (
             <article key={idx} className={styles.card}>
               <div className={styles.imageWrap}>

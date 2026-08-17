@@ -19,16 +19,6 @@
   margin-right: auto;
 }
 
-.badge {
-  display: inline-block;
-  color: #D58936;
-  font-size: 0.8rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  margin-bottom: 0.75rem;
-}
-
 .mainHeading {
   font-size: clamp(2rem, 3.2vw, 2.75rem);
   font-weight: 800;
@@ -45,7 +35,7 @@
 }
 
 /* =========================================================================
-   REFINED SEGMENTED FILTER BAR (ZERO EMOJIS, PURE SWISS MEDICAL PRECISION)
+   REFINED SEGMENTED FILTER BAR
    ========================================================================= */
 .filterNav {
   display: flex;
@@ -93,7 +83,7 @@
 }
 
 /* =========================================================================
-   FLAGSHIP IMPLANT CARD (EDITORIAL BESPOKE LUXURY)
+   DESKTOP FLAGSHIP IMPLANT CARD
    ========================================================================= */
 .featuredCard {
   background: #ffffff;
@@ -279,7 +269,7 @@
 }
 
 /* =========================================================================
-   2x3 CLINICAL GRID FOR REMAINING 6 DISCIPLINES
+   GRID & CARD STYLES
    ========================================================================= */
 .grid {
   display: grid;
@@ -399,6 +389,11 @@
   background-color: #D58936;
 }
 
+/* Hidden on desktop */
+.mobileOnlyCard {
+  display: none;
+}
+
 /* =========================================================================
    RESPONSIVE BREAKPOINTS
    ========================================================================= */
@@ -419,24 +414,77 @@
 
 @media (max-width: 768px) {
   .wrapper {
-    padding: 3.5rem 1rem;
+    padding: 3.5rem 0;
+    overflow-x: hidden;
   }
-  .filterNav {
+
+  .container {
     width: 100%;
+    max-width: 100%;
+  }
+
+  .headerWrap {
+    padding: 0 1.25rem;
+  }
+
+  .filterNav {
+    width: calc(100% - 2rem);
+    margin: 0 1rem 2rem 1rem;
     justify-content: flex-start;
     overflow-x: auto;
     padding: 0.25rem;
+    scrollbar-width: none;
   }
+
+  .filterNav::-webkit-scrollbar {
+    display: none;
+  }
+
   .filterBtn {
     padding: 0.5rem 0.9rem;
     font-size: 0.8rem;
   }
+
+  /* Hide huge desktop featured card on mobile */
+  .featuredCard {
+    display: none;
+  }
+
+  /* Show mobile-adapted card in swipe track */
+  .mobileOnlyCard {
+    display: flex;
+  }
+
+  /* Single Horizontal Swipe Track on Mobile with 1st card full & 2nd card peek */
   .grid {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    scroll-padding-left: 1.25rem;
+    gap: 1rem;
+    width: 100%;
+    padding: 0.5rem 1.25rem 1.75rem 1.25rem;
+    scrollbar-width: none;
   }
-  .specGrid {
-    grid-template-columns: 1fr;
+
+  .grid::-webkit-scrollbar {
+    display: none;
   }
+
+  .card {
+    flex: 0 0 78vw;
+    width: 78vw;
+    min-width: 78vw;
+    max-width: 320px;
+    scroll-snap-align: start;
+    height: auto;
+    border-radius: 16px;
+  }
+
   .content {
     padding: 1.35rem;
   }
