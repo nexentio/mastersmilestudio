@@ -49,7 +49,7 @@ interface MaterialCardItem {
 interface MaterialTableRow {
   criteria: string;
   highImpact: string;
-  titaniumBar: string;
+  titaniumBar?: string;
   coldCure: string;
 }
 
