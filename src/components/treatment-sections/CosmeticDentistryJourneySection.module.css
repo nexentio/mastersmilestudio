@@ -1,0 +1,196 @@
+.sectionWrap {
+  position: relative;
+  width: 100%;
+  padding: 25px 0 35px 0;
+  background-color: #ffffff;
+  color: #1f2937;
+}
+
+.standard_center4 {
+  width: 1200px;
+  max-width: 94%;
+  margin: 0 auto;
+}
+
+.head {
+  margin-bottom: 2.2rem;
+}
+
+.grid1 {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 35px;
+  align-items: center;
+}
+
+.headS1 {
+  font-family: var(--font-outfit), sans-serif;
+  font-size: clamp(2.2rem, 3.2vw, 2.9rem);
+  font-weight: 800;
+  color: #0c1b4d;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.headS2 {
+  font-family: var(--font-outfit), sans-serif;
+  font-size: 0.95rem;
+  color: #0c1b4d;
+  line-height: 1.6;
+  font-weight: 500;
+  margin: 0;
+}
+
+.center {
+  background-color: #f3f3f3;
+  border-radius: 20px;
+  padding: 30px 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.s1 {
+  width: 100%;
+}
+
+.journeyList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.journeyItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  background-color: #ffffff;
+  padding: 18px 22px;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.03);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.journeyItem:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+.iconWrap {
+  position: relative;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.iconImg {
+  object-fit: cover;
+}
+
+.textContent {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.itemTitle {
+  font-family: var(--font-outfit), sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #0c1b4d;
+}
+
+.itemDesc {
+  font-family: var(--font-outfit), sans-serif;
+  font-size: 0.9rem;
+  color: #64748b;
+  line-height: 1.5;
+}
+
+.s2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 14px;
+}
+
+.contactBtn {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 24px;
+  border-radius: 16px;
+  border: 1.5px solid #c4a482;
+  background-color: #ffffff;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 12px rgba(196, 164, 130, 0.08);
+}
+
+.contactBtn:hover {
+  background-color: #c4a482;
+  transform: translateX(4px);
+  box-shadow: 0 6px 18px rgba(196, 164, 130, 0.25);
+}
+
+.contactIconWrap {
+  position: relative;
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+}
+
+.contactIconImg {
+  object-fit: contain;
+}
+
+.contactBtnText {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactBtnLabel {
+  font-family: var(--font-outfit), sans-serif;
+  font-size: 0.78rem;
+  color: #8c765c;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  transition: color 0.25s ease;
+}
+
+.contactBtnValue {
+  font-family: var(--font-outfit), sans-serif;
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: #0c1b4d;
+  transition: color 0.25s ease;
+}
+
+.contactBtn:hover .contactBtnLabel,
+.contactBtn:hover .contactBtnValue {
+  color: #ffffff;
+}
+
+@media (max-width: 992px) {
+  .grid1 {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .center {
+    padding: 24px 20px;
+  }
+}

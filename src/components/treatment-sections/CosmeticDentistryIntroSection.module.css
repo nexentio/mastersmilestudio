@@ -1,0 +1,38 @@
+.ekcontent {
+  position: relative;
+  width: 100%;
+  padding: 30px 0 10px 0;
+  background-color: #ffffff;
+  color: #010147;
+}
+
+.standard_center4 {
+  width: 1200px;
+  max-width: 94%;
+  margin: 0 auto;
+}
+
+.paragraph {
+  font-family: var(--font-outfit), sans-serif;
+  font-size: 15.84px;
+  line-height: 1.55;
+  color: #010147;
+  padding: 0 0 8px 0;
+  margin: 0;
+}
+
+.strongText {
+  color: #010147;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .ekcontent {
+    padding: 20px 0 10px 0;
+  }
+
+  .paragraph {
+    font-size: 14.5px;
+    line-height: 1.55;
+  }
+}
