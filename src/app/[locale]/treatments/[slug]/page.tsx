@@ -12,6 +12,7 @@ import DenturesDetailView from '@/components/DenturesDetailView';
 import CosmeticDentistryDetailView from '@/components/CosmeticDentistryDetailView';
 import GeneralDentistryDetailView from '@/components/GeneralDentistryDetailView';
 import AllOnSixImplantDetailView from '@/components/AllOnSixImplantDetailView';
+import DentalCleaningHeroBanner from '@/components/treatment-sections/DentalCleaningHeroBanner';
 import { generateTreatmentJsonLd } from '@/lib/treatment-schema';
 import { getI18nAlternates, TREATMENT_LOCALES } from '@/lib/i18n-seo';
 import { getTreatmentContent } from '@/lib/treatment-content';
@@ -740,14 +741,24 @@ export default async function TreatmentDetailPage({ params }: Props) {
     slug === 'gum-contouring' ||
     slug === 'cosmetic-dentistry-istanbul';
 
-  const isGeneral =
-    slug === 'general-dentistry' ||
-    slug === 'root-canal-treatment' ||
-    slug === 'teeth-cleaning-scaling' ||
-    slug === 'dental-fillings' ||
-    slug === 'tooth-extractions' ||
-    slug === 'periodontology' ||
-    slug === 'general-dentistry-istanbul';
+  const isGeneralMain = slug === 'general-dentistry';
+  const isGeneralSub = [
+    'dental-cleaning',
+    'tooth-fillings',
+    'root-canal',
+    'tooth-extraction',
+    'inlay-onlay',
+    'dental-sealants',
+    'fluoride-treatment',
+    'bruxism-treatment',
+    'root-canal-treatment',
+    'teeth-cleaning-scaling',
+    'dental-fillings',
+    'tooth-extractions',
+    'periodontology',
+  ].includes(slug);
+  const isGeneral = isGeneralMain || isGeneralSub;
+  const isDentalCleaning = slug === 'dental-cleaning' || slug === 'teeth-cleaning-scaling';
 
   const heroFallback = isGeneral
     ? GENERAL_HERO_I18N[locale] || GENERAL_HERO_I18N.en
@@ -791,21 +802,29 @@ export default async function TreatmentDetailPage({ params }: Props) {
       <Header />
 
       {/* 1:1 Modular Treatment Hero Section with 7-Language i18n */}
-      <TreatmentHeroBanner
-        tag={heroBadge}
-        title={heroTitle}
-        subtitle={heroSubtitle}
-        primaryBtnText={primaryBtnText}
-        primaryBtnHref="/contact"
-        primaryBtnAriaLabel={heroFallback.primaryBtnAria}
-        secondaryBtnText={secondaryBtnText}
-        secondaryBtnHref="#main-content"
-        secondaryBtnAriaLabel={heroFallback.secondaryBtnAria}
-      />
+      {isDentalCleaning ? (
+        <DentalCleaningHeroBanner />
+      ) : (
+        <TreatmentHeroBanner
+          tag={heroBadge}
+          title={heroTitle}
+          subtitle={heroSubtitle}
+          primaryBtnText={primaryBtnText}
+          primaryBtnHref="/contact"
+          primaryBtnAriaLabel={heroFallback.primaryBtnAria}
+          secondaryBtnText={secondaryBtnText}
+          secondaryBtnHref="#main-content"
+          secondaryBtnAriaLabel={heroFallback.secondaryBtnAria}
+        />
+      )}
 
       {/* Main Content Area Landmark */}
       <main id="main-content" className="treatment-main-content">
-        {isDentalImplants ? (
+        {isGeneralSub ? (
+          <div style={{ minHeight: '120px' }} />
+        ) : isGeneralMain ? (
+          <GeneralDentistryDetailView />
+        ) : isDentalImplants ? (
           <DentalImplantsDetailView />
         ) : isDentalVeneers ? (
           <DentalVeneersDetailView />
@@ -817,8 +836,6 @@ export default async function TreatmentDetailPage({ params }: Props) {
           <DenturesDetailView />
         ) : isCosmetic ? (
           <CosmeticDentistryDetailView />
-        ) : isGeneral ? (
-          <GeneralDentistryDetailView />
         ) : isAllOnSix ? (
           <AllOnSixImplantDetailView />
         ) : (

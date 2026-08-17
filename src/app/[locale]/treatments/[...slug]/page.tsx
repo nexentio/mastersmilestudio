@@ -150,14 +150,20 @@ export default async function HierarchicalTreatmentPage({ params }: PageProps) {
     lastSlug.includes('bone-graft') ||
     slugList.includes('dental-implants');
 
-  const isGeneral =
-    lastSlug.includes('general') ||
-    lastSlug.includes('root-canal') ||
-    lastSlug.includes('cleaning') ||
-    lastSlug.includes('filling') ||
-    lastSlug.includes('extraction') ||
-    lastSlug.includes('periodont') ||
-    lastSlug === 'general-dentistry';
+  const isGeneralMain = lastSlug === 'general-dentistry';
+  const isGeneralSub =
+    (slugList.includes('general-dentistry') && lastSlug !== 'general-dentistry') ||
+    [
+      'dental-cleaning',
+      'tooth-fillings',
+      'root-canal',
+      'tooth-extraction',
+      'inlay-onlay',
+      'dental-sealants',
+      'fluoride-treatment',
+      'bruxism-treatment',
+    ].includes(lastSlug);
+  const isGeneral = isGeneralMain || isGeneralSub;
 
   const isCosmetic =
     lastSlug.includes('cosmetic') ||
@@ -203,7 +209,34 @@ export default async function HierarchicalTreatmentPage({ params }: PageProps) {
   let heroTitle = content?.hero?.title || t('pageTitle');
   let heroSubtitle = content?.hero?.subtitle || t('pageSubtitle');
 
-  if (isGeneral) {
+  if (isGeneralSub) {
+    heroBadge = locale === 'tr' ? 'GENEL DİŞ HEKİMLİĞİ' : 'GENERAL DENTISTRY';
+    if (lastSlug === 'dental-cleaning' || lastSlug === 'scaling-polishing') {
+      heroTitle = locale === 'tr' ? 'İstanbul Diş Taşı Temizliği (Scaling & Polishing)' : 'Dental Cleaning (Scaling & Polishing) in Istanbul, Turkey';
+      heroSubtitle = locale === 'tr' ? 'Ağrısız ultrasonik kavitron, İsviçre Air-Flow leke temizliği ve florürlü profesyonel cila uygulaması.' : 'Pain-free ultrasonic scaling, Swiss Air-Flow plaque removal, and high-gloss polishing performed by expert dental hygienists.';
+    } else if (lastSlug === 'tooth-fillings') {
+      heroTitle = locale === 'tr' ? 'İstanbul Estetik Kompozit Dolgu Tedavisi' : 'Tooth Fillings (Amalgam / Composite) in Istanbul, Turkey';
+      heroSubtitle = locale === 'tr' ? 'Doğal diş renginde estetik nanokompozit dolgular ve amalgam dolgu değişimi.' : 'Tooth-colored composite restorations and safe amalgam filling replacements in Istanbul.';
+    } else if (lastSlug === 'root-canal') {
+      heroTitle = locale === 'tr' ? 'İstanbul Kanal Tedavisi (Endodonti)' : 'Root Canal Treatment (Endodontics) in Istanbul, Turkey';
+      heroSubtitle = locale === 'tr' ? 'Ağrısız mikroskobik kanal tedavisi ile enfekte dişlerinizi çekilmekten kurtarın.' : 'Pain-free microscopic root canal therapy to save your natural teeth in Istanbul.';
+    } else if (lastSlug === 'tooth-extraction') {
+      heroTitle = locale === 'tr' ? 'İstanbul 20’lik ve Cerrahi Diş Çekimi' : 'Tooth & Wisdom Tooth Extraction in Istanbul, Turkey';
+      heroSubtitle = locale === 'tr' ? 'Ağrısız, travmasız cerrahi çekimler ve gömülü 20 yaş dişi operasyonları.' : 'Painless surgical extractions and impacted wisdom tooth removal under local anesthesia.';
+    } else if (lastSlug === 'inlay-onlay') {
+      heroTitle = locale === 'tr' ? 'İstanbul İnley & Onley Porselen Dolgu' : 'Inlay & Onlay Ceramic Restorations in Istanbul, Turkey';
+      heroSubtitle = locale === 'tr' ? 'CAD/CAM ile üretilen mikroskobik uyumlu porselen inley ve onley restorasyonlar.' : 'Precision CAD/CAM ceramic inlays and onlays preserving natural tooth structure.';
+    } else if (lastSlug === 'dental-sealants') {
+      heroTitle = locale === 'tr' ? 'İstanbul Fissür Örtücü Koruyucu Tedavi' : 'Dental Sealants (Fissure Protection) in Istanbul, Turkey';
+      heroSubtitle = locale === 'tr' ? 'Azı dişlerindeki derin olukları kapatarak çürük oluşumunu %90 engelleyen koruyucu kalkan.' : 'Protective fissure sealants preventing tooth decay and safeguarding enamel.';
+    } else if (lastSlug === 'fluoride-treatment') {
+      heroTitle = locale === 'tr' ? 'İstanbul Profesyonel Florür Uygulaması' : 'Professional Fluoride Treatment in Istanbul, Turkey';
+      heroSubtitle = locale === 'tr' ? 'Diş minesini güçlendiren ve hassasiyeti azaltan profesyonel flor uygulaması.' : 'Clinical fluoride varnish strengthening enamel and remineralizing sensitive teeth.';
+    } else if (lastSlug === 'bruxism-treatment') {
+      heroTitle = locale === 'tr' ? 'İstanbul Gece Plağı ve Bruksizm Tedavisi' : 'Bruxism Treatment & Night Guard in Istanbul, Turkey';
+      heroSubtitle = locale === 'tr' ? 'Diş sıkma ve gıcırdatmaya karşı kişiye özel 3D gece koruyucu plakları ve botoks uygulaması.' : 'Custom 3D night guards and masseter treatment for teeth grinding and TMJ relief.';
+    }
+  } else if (isGeneralMain) {
     heroBadge = locale === 'tr' ? 'GENEL & KORUYUCU DİŞ HEKİMLİĞİ' : 'GENERAL & PREVENTIVE DENTISTRY';
     heroTitle = locale === 'tr' ? 'İstanbul Genel Diş Hekimliği & Tedavileri' : 'General Dentistry & Oral Health in Istanbul';
     heroSubtitle = locale === 'tr' ? 'Ağrısız mikroskobik kanal tedavisi, İsviçre Air-Flow ultrasonik diş temizliği ve estetik nanokompozit dolgular.' : 'Pain-free microscopic root canal therapy, ultrasonic Swiss Air-Flow scaling, and tooth-colored composite restorations.';
@@ -323,7 +356,9 @@ export default async function HierarchicalTreatmentPage({ params }: PageProps) {
       )}
 
       <main id="main-content" className="treatment-main-content">
-        {isGeneral ? (
+        {isGeneralSub ? (
+          <div style={{ minHeight: '120px' }} />
+        ) : isGeneralMain ? (
           <GeneralDentistryDetailView />
         ) : isCosmetic ? (
           <CosmeticDentistryDetailView />
