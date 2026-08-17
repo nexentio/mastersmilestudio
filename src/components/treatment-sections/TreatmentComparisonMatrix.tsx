@@ -859,7 +859,6 @@ export default function TreatmentComparisonMatrix() {
     <section aria-labelledby="matrix-heading" className={styles.wrapper}>
       <div className={styles.container}>
         <div className={styles.headerWrap}>
-          <span className={styles.badge}>{dict.badge}</span>
           <h2 id="matrix-heading" className={styles.mainHeading}>
             {dict.heading}
           </h2>

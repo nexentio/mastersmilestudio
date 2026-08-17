@@ -1109,7 +1109,6 @@ export default function TreatmentsHubDisciplineShowcase() {
       <div className={styles.container}>
         {/* Section Header */}
         <div className={styles.headerWrap}>
-          <span className={styles.badge}>{data.badge}</span>
           <h2 id="hub-disciplines-heading" className={styles.mainHeading}>
             {data.heading}
           </h2>
