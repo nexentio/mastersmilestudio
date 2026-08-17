@@ -194,11 +194,18 @@ export default async function HierarchicalTreatmentPage({ params }: PageProps) {
     lastSlug.includes('kopru') ||
     lastSlug === 'dental-bridge';
 
+  const isImplantSupportedDentures =
+    lastSlug === 'implant-supported-dentures' ||
+    lastSlug === 'implant-supported-dentures-istanbul-turkey' ||
+    lastSlug === 'implant-supported-overdentures' ||
+    lastSlug === 'implant-destekli-protezler-istanbul';
+
   const isDentures =
-    lastSlug.includes('denture') ||
+    !isImplantSupportedDentures &&
+    (lastSlug.includes('denture') ||
     lastSlug.includes('protez') ||
     lastSlug.includes('overdenture') ||
-    lastSlug === 'dentures';
+    lastSlug === 'dentures');
 
   const isAllOnFour = lastSlug === 'all-on-4-implants' || lastSlug === 'all-on-four-implant-istanbul-turkey' || lastSlug === 'all-on-4';
   const isAllOnSix = lastSlug === 'all-on-6-implants' || lastSlug === 'all-on-six-dental-implant-istanbul-turkey' || lastSlug === 'all-on-6';
@@ -247,6 +254,10 @@ export default async function HierarchicalTreatmentPage({ params }: PageProps) {
     heroBadge = locale === 'tr' ? 'ESTETİK DİŞ HEKİMLİĞİ & GÜLÜŞ TASARIMI' : 'COSMETIC DENTISTRY & SMILE DESIGN';
     heroTitle = locale === 'tr' ? 'İstanbul Hollywood Smile & Estetik Diş Tedavisi' : 'Hollywood Smile & Cosmetic Dentistry in Istanbul';
     heroSubtitle = locale === 'tr' ? 'Yüzün altın oranına özel 3D Dijital Gülüş Tasarımı, İsviçre Ivoclar E-Max laminalar ve lazerle pembe estetik.' : 'Transform your smile with bespoke 3D Digital Smile Design, Swiss Ivoclar E-Max laminates, and laser gum contouring in Istanbul.';
+  } else if (isImplantSupportedDentures) {
+    heroBadge = locale === 'tr' ? 'İMPLANT DESTEKLİ ÇIT ÇITLI DAMAK' : 'IMPLANT SUPPORTED OVERDENTURES';
+    heroTitle = locale === 'tr' ? 'İstanbul İmplant Destekli Protez & Çıt Çıtlı Damak Tedavisi' : 'Implant-Supported Dentures (Snap-On) in Istanbul';
+    heroSubtitle = locale === 'tr' ? 'Oynayan damak sorununa son: 2 ila 4 implant desteğiyle kilitlenen, damağı kapatmayan açık tasarımıyla %100 sabit çiğneme konforu.' : 'Eliminate loose slipping dentures with 2–4 implant-retained Snap-On overdentures and palateless horseshoe designs in Istanbul.';
   } else if (isDentures) {
     heroBadge = locale === 'tr' ? 'PROTEZ DİŞ TEDAVİSİ' : 'DENTURES & OVERDENTURES';
     heroTitle = locale === 'tr' ? 'İstanbul Protez Diş & Çıt Çıtlı Damak Tedavisi' : 'Dentures & Snap-On Overdentures in Istanbul';
@@ -374,6 +385,8 @@ export default async function HierarchicalTreatmentPage({ params }: PageProps) {
           <div style={{ minHeight: '120px' }} />
         ) : isCosmetic ? (
           <CosmeticDentistryDetailView />
+        ) : isImplantSupportedDentures ? (
+          <ImplantSupportedDenturesDetailView />
         ) : isDentures ? (
           <DenturesDetailView />
         ) : isDentalBridges ? (
