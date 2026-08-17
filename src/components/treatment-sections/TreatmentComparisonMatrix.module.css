@@ -8,7 +8,8 @@
 }
 
 .container {
-  max-width: 1240px;
+  max-width: 1440px;
+  width: 100%;
   margin: 0 auto;
   position: relative;
 }
@@ -16,19 +17,9 @@
 .headerWrap {
   text-align: center;
   margin-bottom: 2.5rem;
-  max-width: 780px;
+  max-width: 840px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.badge {
-  display: inline-block;
-  color: #D58936;
-  font-size: 0.8rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  margin-bottom: 0.75rem;
 }
 
 .mainHeading {
@@ -65,9 +56,9 @@
   background: transparent;
   color: #475569;
   border: none;
-  padding: 0.65rem 1.4rem;
+  padding: 0.65rem 1.6rem;
   border-radius: 10px;
-  font-size: 0.9rem;
+  font-size: 0.92rem;
   font-weight: 700;
   cursor: pointer;
   transition: all 0.2s ease;
@@ -93,10 +84,10 @@
 /* Responsive Table Wrapper */
 .tableCard {
   background-color: #ffffff;
-  border-radius: 16px;
+  border-radius: 20px;
   border: 1px solid #e2e8f0;
   overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 10px 30px rgba(12, 27, 77, 0.04);
 }
 
 .tableScroll {
@@ -109,7 +100,6 @@
   width: 100%;
   border-collapse: collapse;
   text-align: left;
-  min-width: 860px;
 }
 
 .matrixTable thead {
@@ -118,20 +108,20 @@
 }
 
 .matrixTable th {
-  padding: 1.1rem 1.4rem;
+  padding: 1.15rem 1.25rem;
   font-size: 0.82rem;
   font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 0.07em;
+  letter-spacing: 0.06em;
   white-space: nowrap;
 }
 
 .matrixTable td {
-  padding: 1.25rem 1.4rem;
+  padding: 1.25rem 1.25rem;
   font-size: 0.92rem;
   color: #334155;
   border-bottom: 1px solid #f1f5f9;
-  line-height: 1.6;
+  line-height: 1.55;
   vertical-align: middle;
 }
 
@@ -147,6 +137,7 @@
   font-weight: 800;
   color: #0c1b4d;
   font-size: 1rem;
+  white-space: nowrap;
 }
 
 .treatmentCellSub {
@@ -155,8 +146,9 @@
   font-weight: 700;
   color: #D58936;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.05em;
   margin-top: 0.2rem;
+  white-space: nowrap;
 }
 
 .highlightBadge {
@@ -176,6 +168,7 @@
   color: #0c1b4d;
   font-size: 0.85rem;
   font-weight: 700;
+  white-space: nowrap;
 }
 
 .actionLink {
@@ -186,7 +179,7 @@
   color: #0c1b4d;
   font-weight: 700;
   font-size: 0.82rem;
-  padding: 0.45rem 0.85rem;
+  padding: 0.5rem 0.95rem;
   border-radius: 6px;
   text-decoration: none;
   transition: all 0.2s ease;
@@ -201,12 +194,18 @@
 }
 
 .noteFooter {
-  padding: 1.1rem 1.4rem;
+  padding: 1.15rem 1.4rem;
   background-color: #ffffff;
   border-top: 1px solid #f1f5f9;
   font-size: 0.85rem;
   color: #64748b;
   line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+  .matrixTable {
+    min-width: 900px;
+  }
 }
 
 @media (max-width: 768px) {
