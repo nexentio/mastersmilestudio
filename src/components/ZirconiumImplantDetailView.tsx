@@ -10,6 +10,7 @@ import TreatmentJourneySimpleSection from '@/components/treatment-sections/Treat
 import TreatmentPatientReelsSection from '@/components/treatment-sections/TreatmentPatientReelsSection';
 import TreatmentClinicTourSection from '@/components/treatment-sections/TreatmentClinicTourSection';
 import TreatmentReviewsSection from '@/components/treatment-sections/TreatmentReviewsSection';
+import TreatmentRightTreatmentAccordion from '@/components/treatment-sections/TreatmentRightTreatmentAccordion';
 import TreatmentBeforeAfterSliderSection from '@/components/treatment-sections/TreatmentBeforeAfterSliderSection';
 import TreatmentInteractiveQuoteForm from '@/components/treatment-sections/TreatmentInteractiveQuoteForm';
 import styles from './ZirconiumImplantDetailView.module.css';
@@ -3826,7 +3827,10 @@ export default function ZirconiumImplantDetailView() {
 
   return (
     <div className={styles.wrapper}>
-      {/* 1. CLINICAL INTRODUCTION & BIOMECHANICS */}
+      {/* 1. FIND THE RIGHT TREATMENT FOR YOU ACCORDION (DIRECTLY UNDER HERO) */}
+      <TreatmentRightTreatmentAccordion />
+
+      {/* 2. CLINICAL INTRODUCTION & BIOMECHANICS */}
       <section aria-labelledby="zirc-intro-heading" className={styles.introSection}>
         <div className={styles.container}>
           <h2 id="zirc-intro-heading" className={styles.introHeading}>
