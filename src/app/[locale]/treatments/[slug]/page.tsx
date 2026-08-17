@@ -20,6 +20,7 @@ import GeneralDentistryJourneySection from '@/components/treatment-sections/Gene
 import TreatmentServicesIncludedSection from '@/components/treatment-sections/TreatmentServicesIncludedSection';
 import TreatmentPatientReelsSection from '@/components/treatment-sections/TreatmentPatientReelsSection';
 import TreatmentReviewsSection from '@/components/treatment-sections/TreatmentReviewsSection';
+import GeneralDentistryFaqSection from '@/components/treatment-sections/GeneralDentistryFaqSection';
 import { generateTreatmentJsonLd } from '@/lib/treatment-schema';
 import { getI18nAlternates, TREATMENT_LOCALES } from '@/lib/i18n-seo';
 import { getTreatmentContent } from '@/lib/treatment-content';
@@ -837,6 +838,7 @@ export default async function TreatmentDetailPage({ params }: Props) {
             <TreatmentServicesIncludedSection />
             <TreatmentPatientReelsSection />
             <TreatmentReviewsSection />
+            <GeneralDentistryFaqSection />
           </>
         ) : isGeneralSub ? (
           <div style={{ minHeight: '120px' }} />
