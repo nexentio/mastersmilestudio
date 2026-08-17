@@ -427,7 +427,10 @@ export default function DentalImplantsDetailView() {
 
   return (
     <div className={styles.pageWrapper}>
-      {/* 1. INTRO & WHAT ARE DENTAL IMPLANTS */}
+      {/* 1. FIND THE RIGHT TREATMENT FOR YOU ACCORDION (DIRECTLY UNDER HERO) */}
+      <TreatmentRightTreatmentAccordion />
+
+      {/* 2. INTRO & WHAT ARE DENTAL IMPLANTS */}
       <section aria-labelledby="intro-implants-heading" className={styles.introSection}>
         <div className={styles.container}>
           <h2 id="intro-implants-heading" className={styles.mainHeading}>
@@ -480,9 +483,6 @@ export default function DentalImplantsDetailView() {
           <TreatmentTripleVideoSlider />
         </div>
       </section>
-
-      {/* 2. FIND THE RIGHT TREATMENT FOR YOU ACCORDION */}
-      <TreatmentRightTreatmentAccordion />
 
       {/* 3. WHY CHOOSE DENTAL IMPLANTS IN ISTANBUL */}
       <section aria-labelledby="why-choose-heading" className={styles.whyChooseSection}>
