@@ -28,7 +28,7 @@ const JOURNEY_DATA: Record<string, LocaleContent> = {
   en: {
     sectionTitle: 'Your Dental Journey Made Simple',
     subText:
-      'From your very first inquiry to the final results, we ensure a smooth and transparent treatment journey in Istanbul. Learn about how long you’ll stay, how many visits you’ll need, your recovery time, and estimated pricing — all designed with international patients in mind. Let us take care of the details, so you can focus on your smile.',
+      'From your very first inquiry to your permanent final smile, we guarantee a predictable, luxury, and transparent treatment journey in Istanbul. Learn about exact stay durations, visit milestones, recovery times, and all-inclusive pricing designed for international patients.',
     contactHeading: 'Reach Out to Us - Quickly and Easily',
     whatsappLabel: 'WhatsApp',
     phoneLabel: 'Phone Call',
@@ -40,34 +40,35 @@ const JOURNEY_DATA: Record<string, LocaleContent> = {
         icon: 'https://sohodent.com/doc/static/tedaviicon/icon01.webp',
         title: 'Average Length of Stay in Istanbul',
         content:
-          'The duration of dental implant treatment may vary depending on the number of implants to be placed and any additional procedures required (such as bone grafting, sinus lifting, etc.)',
+          '<strong>3 to 5 days for the 1st visit, 5 to 7 days for the 2nd visit.</strong><br><br>During your 1st visit (3–5 days), our senior oral surgeons complete 3D digital CBCT diagnostics, tooth extractions, computer-guided implant surgery, and the same-day fitting of your fixed temporary bridge. Your 2nd visit (5–7 days, after 3 months of healing) is dedicated to digital shade matching, precision try-ins, and final permanent Zirconia bridge delivery.',
       },
       {
         id: 'visits',
         icon: 'https://sohodent.com/doc/static/tedaviicon/icon02.webp',
         title: 'Number of Visits Required',
-        content: 'In general, the procedure is completed in one or two visits.',
+        content:
+          '<strong>Exactly 2 visits are required for a complete, permanent full-arch restoration.</strong><br><br>• <strong>Visit 1 (3–5 Days):</strong> Implant placement and immediate fixed temporary teeth (you never leave the clinic without teeth).<br>• <strong>Healing Period (3 Months):</strong> Osseointegration occurs comfortably at home while you live and work normally.<br>• <strong>Visit 2 (5–7 Days):</strong> CAD/CAM milling and final screw-retained permanent Zirconia bridge placement.',
       },
       {
         id: 'recovery',
         icon: 'https://sohodent.com/doc/static/tedaviicon/icon03.webp',
-        title: 'Recovery Time',
+        title: 'Recovery Time & Healing Process',
         content:
-          'In general, it takes 3 to 6 months for the implants to integrate with the bone.',
+          '<strong>24 to 48 hours for immediate surgical recovery, 3 months for complete bone osseointegration.</strong><br><br>Thanks to computerized local anesthesia and minimally invasive guided surgery, post-op swelling and discomfort are minimal. Most patients return to light activities and remote work within 2 days. During the 3-month healing phase, your screw-retained temporary bridge allows comfortable eating of a soft diet while protecting the titanium fixtures.',
       },
       {
         id: 'price',
         icon: 'https://sohodent.com/doc/static/tedaviicon/icon04.webp',
-        title: 'Price',
+        title: 'Price & Package Transparency',
         content:
-          'On average, the cost per implant ranges around $450, €400, or £335. For a detailed quote tailored to your needs, please contact us.',
+          '<strong>All-inclusive package prices start from €4,900 / £4,200 ($5,700) per arch.</strong><br><br>Packages include 4 premium titanium implants (Straumann, DXL, NucleOSS), same-day fixed temporary bridge, final monolithic Zirconia bridge, 3D CBCT tomography, 4/5-star hotel accommodation with breakfast, and private VIP Mercedes airport-hotel transfers with guaranteed zero hidden fees.',
       },
     ],
   },
   tr: {
     sectionTitle: 'Diş Tedavisi Yolculuğunuz Artık Çok Kolay',
     subText:
-      'İlk danışmanızdan nihai sonuçlara kadar İstanbul\'da sorunsuz ve şeffaf bir tedavi süreci sunuyoruz. Uluslararası hastalarımız için tasarlanan kalış süresi, ziyaret sayısı, iyileşme süreci ve tahmini fiyatları keşfedin. Siz gülüşünüze odaklanın, detayları bize bırakın.',
+      'İlk danışmanızdan kalıcı yeni gülüşünüze kadar İstanbul’da şeffaf, konforlu ve güvenli bir tedavi süreci sunuyoruz. Kalış süreleri, aşamalar, iyileşme süreci ve her şey dahil paket fiyatları hakkında tüm detayları keşfedin.',
     contactHeading: 'Bize Hızlı ve Kolayca Ulaşın',
     whatsappLabel: 'WhatsApp',
     phoneLabel: 'Telefon Görüşmesi',
@@ -79,35 +80,36 @@ const JOURNEY_DATA: Record<string, LocaleContent> = {
         icon: 'https://sohodent.com/doc/static/tedaviicon/icon01.webp',
         title: 'İstanbul’da Ortalama Kalış Süresi',
         content:
-          'İmplant tedavisinin süresi, yerleştirilecek implant sayısına ve gereken ek prosedürlere (kemik tozu greftleme, sinüs kaldırma vb.) bağlı olarak değişebilir.',
+          '<strong>1. Ziyaret için 3–5 gün, 2. Ziyaret için 5–7 gün.</strong><br><br>1. Ziyaretinizde (3–5 gün); 3D tomografi planlaması, hasarlı diş çekimleri, 4 implant cerrahisi ve aynı gün vidalanan sabit geçici köprünüz takılır. 3 aylık kemikleşme sonrasındaki 2. Ziyaretinizde (5–7 gün) ise kalıcı monolitik zirkonyum köprünüzün dijital provaları yapılıp kalıcı teslimatı gerçekleştirilir.',
       },
       {
         id: 'visits',
         icon: 'https://sohodent.com/doc/static/tedaviicon/icon02.webp',
         title: 'Gereken Ziyaret Sayısı',
-        content: 'Genellikle implant tedavisi bir veya iki ziyarette tamamlanır.',
+        content:
+          '<strong>Kalıcı ve eksiksiz bir tam çene tedavisi için toplam 2 ziyaret gerekir.</strong><br><br>• <strong>1. Ziyaret (3–5 Gün):</strong> İmplant cerrahisi ve aynı gün sabit geçici dişlerin takılması (asla dişsiz kalmazsınız).<br>• <strong>İyileşme Dönemi (3 Ay):</strong> İmplantların kemikle kaynaşması kendi ülkenizde normal yaşamınıza devam ederken gerçekleşir.<br>• <strong>2. Ziyaret (5–7 Gün):</strong> Kalıcı monolitik zirkonyum köprünüzün vidalanarak takılması.',
       },
       {
         id: 'recovery',
         icon: 'https://sohodent.com/doc/static/tedaviicon/icon03.webp',
-        title: 'İyileşme Süresi',
+        title: 'İyileşme Süreci (Recovery)',
         content:
-          'Genel olarak implantların çene kemiği ile kaynaşması (osteointegrasyon) 3 ila 6 ay sürer.',
+          '<strong>Cerrahi toparlanma 24–48 saat, tam kemikleşme (osteointegrasyon) 3 ay sürer.</strong><br><br>Bilgisayarlı lokal anestezi ve kılavuzlu cerrahi sayesinde ameliyat sonrası ağrı ve şişlik minimumdur; hastalarımızın çoğu 2 gün içinde normal günlük yaşamına döner. 3 aylık kaynaşma döneminde vidalı geçici köprünüz implantları korurken yumuşak gıdaları rahatça çiğnemenizi sağlar.',
       },
       {
         id: 'price',
         icon: 'https://sohodent.com/doc/static/tedaviicon/icon04.webp',
-        title: 'Fiyat Bilgisi',
+        title: 'Fiyat & Paket Şeffaflığı',
         content:
-          'Ortalama olarak tek bir implant maliyeti 450 $, 400 € veya 335 £ civarındadır. Size özel detaylı teklif için lütfen bizimle iletişime geçin.',
+          '<strong>Her şey dahil All-on-4 paket fiyatları çene başına €4,900 / £4,200 ($5,700)’dan başlar.</strong><br><br>Paketlerimize; 4 adet premium titanyum implant (Straumann, DXL, NucleOSS), aynı gün sabit geçici dişler, kalıcı monolitik zirkonyum köprü, 3D tomografi, oda-kahvaltı dahil 4/5 yıldızlı otel ve VIP Mercedes transferler dahildir. Asla gizli ek ücret talep edilmez.',
       },
     ],
   },
   de: {
-    sectionTitle: 'Ihre Zahnbehandlungsreise Einfach Gemacht',
+    sectionTitle: 'Ihre Zahnbehandlung in Istanbul – Einfach & Transparent',
     subText:
-      'Von Ihrer ersten Anfrage bis zum Endergebnis sorgen wir für eine reibungslose und transparente Behandlungsreise in Istanbul. Erfahren Sie mehr über Aufenthaltsdauer, Besuche, Heilungszeit und Preise.',
-    contactHeading: 'Erreichen Sie uns – schnell und einfach',
+      'Von der ersten Beratung bis zu Ihren dauerhaften Zähnen garantieren wir einen reibungslosen, erstklassigen Ablauf in Istanbul. Erfahren Sie alles über Aufenthaltsdauer, Besuche, Heilung und transparente Paketpreise.',
+    contactHeading: 'Erreichen Sie uns schnell & unkompliziert',
     whatsappLabel: 'WhatsApp',
     phoneLabel: 'Telefonanruf',
     quickFormLabel: 'Schnellformular',
@@ -118,183 +120,188 @@ const JOURNEY_DATA: Record<string, LocaleContent> = {
         icon: 'https://sohodent.com/doc/static/tedaviicon/icon01.webp',
         title: 'Durchschnittliche Aufenthaltsdauer in Istanbul',
         content:
-          'Die Dauer der Zahnimplantatbehandlung kann je nach Anzahl der Implantate und zusätzlichen Eingriffen (z. B. Knochenaufbau, Sinuslift) variieren.',
+          '<strong>3 bis 5 Tage für den 1. Besuch, 5 bis 7 Tage für den 2. Besuch.</strong><br><br>Beim 1. Besuch (3–5 Tage) erfolgen 3D-DVT-Diagnostik, Zahnentfernungen, 4-Implantat-OP und das Einsetzen der festsitzenden provisorischen Brücke. Der 2. Besuch (5–7 Tage, nach 3 Monaten Einheilung) dient der finalen Anprobe und Einsetzung Ihrer permanenten Zirkonbrücke.',
       },
       {
         id: 'visits',
         icon: 'https://sohodent.com/doc/static/tedaviicon/icon02.webp',
-        title: 'Erforderliche Anzahl der Besuche',
-        content: 'Im Allgemeinen wird das Verfahren in einem oder zwei Besuchen abgeschlossen.',
+        title: 'Erforderliche Anzahl an Besuchen',
+        content:
+          '<strong>Für eine vollständige permanente Restauration sind genau 2 Besuche erforderlich.</strong><br><br>• <strong>1. Besuch (3–5 Tage):</strong> Implantation und festsitzende provisorische Zähne (Sie verlassen die Klinik nie zahnlos).<br>• <strong>Einheilphase (3 Monate):</strong> Die Osseointegration erfolgt bequem zu Hause bei normalem Alltag.<br>• <strong>2. Besuch (5–7 Tage):</strong> Fertigstellung und Einsetzen der permanenten verschraubten Zirkonbrücke.',
       },
       {
         id: 'recovery',
         icon: 'https://sohodent.com/doc/static/tedaviicon/icon03.webp',
-        title: 'Heilungszeit',
+        title: 'Erholungszeit & Heilungsprozess',
         content:
-          'Im Allgemeinen dauert es 3 bis 6 Monate, bis die Implantate mit dem Knochen verwachsen.',
+          '<strong>24 bis 48 Stunden für die chirurgische Erholung, 3 Monate für die vollständige Osseointegration.</strong><br><br>Dank digitaler Lokalanästhesie und navigierter Chirurgie sind Schwellungen und Schmerzen minimal; die meisten Patienten sind nach 2 Tagen wieder voll einsatzfähig. Während der 3-monatigen Einheilphase schützt die provisorische Brücke die Implantate bei weicher Kost.',
       },
       {
         id: 'price',
         icon: 'https://sohodent.com/doc/static/tedaviicon/icon04.webp',
-        title: 'Preise',
+        title: 'Preise & Paket-Transparenz',
         content:
-          'Durchschnittlich liegen die Kosten pro Implantat bei ca. $450, €400 oder £335. Kontaktieren Sie uns für ein detailliertes Angebot.',
+          '<strong>All-inclusive All-on-4 Paketpreise starten ab €4.900 / £4.200 ($5.700) pro Kiefer.</strong><br><br>Die Pakete enthalten 4 Premium-Titanimplantate (Straumann, DXL, NucleOSS), feste provisorische Zähne am selben Tag, finale Zirkonbrücke, 3D-DVT-Röntgen, 4/5-Sterne-Hotel mit Frühstück und private VIP-Transfers ohne versteckte Zusatzkosten.',
       },
     ],
   },
   pl: {
-    sectionTitle: 'Twoja Podróż Stomatologiczna w Prosty Sposób',
+    sectionTitle: 'Twoja Podróż Stomatologiczna Krok po Kroku',
     subText:
-      'Od pierwszego zapytania po ostateczne rezultaty zapewniamy bezproblemową podróż leczniczą w Stambule. Poznaj czas pobytu, liczbę wizyt, okres rekonwalescencji i szacunkowe ceny.',
-    contactHeading: 'Skontaktuj się z nami – szybko i łatwo',
+      'Od pierwszej konsultacji po ostateczny uśmiech gwarantujemy bezpieczny, przewidywalny i luksusowy pobyt w Stambule. Poznaj dokładne ramy czasowe, liczbę wizyt, okres gojenia i pakiety all-inclusive.',
+    contactHeading: 'Skontaktuj się z Nami – Szybko i Wygodnie',
     whatsappLabel: 'WhatsApp',
     phoneLabel: 'Telefon',
-    quickFormLabel: 'Szybki formularz',
+    quickFormLabel: 'Szybki Formularz',
     emailLabel: 'E-mail',
     items: [
       {
         id: 'stay',
         icon: 'https://sohodent.com/doc/static/tedaviicon/icon01.webp',
-        title: 'Średni czas pobytu w Stambule',
+        title: 'Średni Czas Pobytu w Stambule',
         content:
-          'Czas trwania leczenia implantologicznego może się różnić w zależności od liczby wszczepianych implantów i ewentualnych procedur dodatkowych.',
+          '<strong>3 do 5 dni na 1. wizytę, 5 do 7 dni na 2. wizytę.</strong><br><br>Podczas 1. wizyty (3–5 dni) wykonujemy diagnostykę 3D CBCT, ekstrakcje, zabieg wszczepienia 4 implantów oraz montaż stałego mostu tymczasowego. 2. wizyta (5–7 dni, po 3 miesiącach gojenia) obejmuje przymiarki i ostateczne oddanie stałego mostu cyrkonowego.',
       },
       {
         id: 'visits',
         icon: 'https://sohodent.com/doc/static/tedaviicon/icon02.webp',
-        title: 'Wymagana liczba wizyt',
-        content: 'Zazwyczaj zabieg kończy się w trakcie jednej lub dwóch wizyt.',
+        title: 'Wymagana Liczba Wizyt',
+        content:
+          '<strong>Do pełnej, stałej odbudowy łuku zębowego wymagane są dokładnie 2 wizyty.</strong><br><br>• <strong>1. Wizyta (3–5 Dni):</strong> Wszczepienie implantów i stałe zęby tymczasowe (nigdy nie zostajesz bez zębów).<br>• <strong>Okres Gojenia (3 Miesiące):</strong> Integracja kości przebiega w Twoim kraju podczas normalnego życia i pracy.<br>• <strong>2. Wizyta (5–7 Dni):</strong> Montaż ostatecznego, przykręcanego mostu cyrkonowego.',
       },
       {
         id: 'recovery',
         icon: 'https://sohodent.com/doc/static/tedaviicon/icon03.webp',
-        title: 'Czas rekonwalescencji',
+        title: 'Czas Rekonwalescencji i Gojenie',
         content:
-          'Zazwyczaj integracja implantów z kością trwa od 3 do 6 miesięcy.',
+          '<strong>24 do 48 godzin na rekonwalescencję po zabiegu, 3 miesiące na pełną osteointegrację kości.</strong><br><br>Dzięki komputerowemu znieczuleniu miejscowemu obrzęk i dolegliwości są minimalne; pacjenci wracają do codziennych zajęć w ciągu 2 dni. W okresie 3 miesięcy most tymczasowy chroni implanty podczas spożywania miękkich pokarmów.',
       },
       {
         id: 'price',
         icon: 'https://sohodent.com/doc/static/tedaviicon/icon04.webp',
-        title: 'Cena',
+        title: 'Przejrzyste Ceny i Pakiety',
         content:
-          'Średnio koszt jednego implantu wynosi około $450, €400 lub £335. Skontaktuj się z nami, aby uzyskać szczegółową wycenę.',
+          '<strong>Pakiety All-on-4 all-inclusive zaczynają się od €4,900 / £4,200 ($5,700) za łuk zębowy.</strong><br><br>Pakiety obejmują 4 implanty tytanowe premium (Straumann, DXL, NucleOSS), stałe zęby tymczasowe, ostateczny most cyrkonowy, tomografię 3D, hotel 4/5-gwiazdkowy ze śniadaniami i transfery VIP Mercedes bez ukrytych kosztów.',
       },
     ],
   },
   pt: {
-    sectionTitle: 'Sua Jornada Dentária de Forma Simples',
+    sectionTitle: 'Sua Jornada Odontológica Simplificada',
     subText:
-      'Desde sua primeira consulta até o resultado final, garantimos uma jornada tranquila e transparente em Istambul. Conheça a duração da estadia, visitas necessárias, recuperação e preços.',
-    contactHeading: 'Fale Conosco - Rápido e Fácil',
+      'Desde a primeira consulta até o seu sorriso definitivo, garantimos uma experiência transparente e de alto padrão em Istambul. Conheça o tempo de estadia, etapas, recuperação e preços de pacotes.',
+    contactHeading: 'Fale Conosco com Facilidade',
     whatsappLabel: 'WhatsApp',
-    phoneLabel: 'Ligação',
+    phoneLabel: 'Ligação Telefônica',
     quickFormLabel: 'Formulário Rápido',
     emailLabel: 'E-mail',
     items: [
       {
         id: 'stay',
         icon: 'https://sohodent.com/doc/static/tedaviicon/icon01.webp',
-        title: 'Duração Média da Estadia em Istambul',
+        title: 'Tempo Médio de Estadia em Istambul',
         content:
-          'A duração do tratamento com implantes pode variar dependendo do número de implantes e de procedimentos adicionais necessários.',
+          '<strong>3 a 5 dias para a 1ª visita, 5 a 7 dias para a 2ª visita.</strong><br><br>Na 1ª visita (3–5 dias), nossos cirurgiões realizam a tomografia 3D, extrações necessárias, cirurgia dos 4 implantes e fixação da ponte provisória no mesmo dia. A 2ª visita (5–7 dias, após 3 meses) é dedicada às provas estéticas e entrega da ponte definitiva de zircônia.',
       },
       {
         id: 'visits',
         icon: 'https://sohodent.com/doc/static/tedaviicon/icon02.webp',
         title: 'Número de Visitas Necessárias',
-        content: 'Geralmente, o procedimento é concluído em uma ou duas visitas.',
+        content:
+          '<strong>São necessárias exatamente 2 visitas para uma restauração completa e permanente.</strong><br><br>• <strong>1ª Visita (3–5 Dias):</strong> Cirurgia de implantes e colocação dos dentes provisórios fixos imediatos.<br>• <strong>Período de Cicatrização (3 Meses):</strong> A osseointegração ocorre em seu país de origem com vida normal.<br>• <strong>2ª Visita (5–7 Dias):</strong> Instalação da ponte definitiva aparafusada em zircônia.',
       },
       {
         id: 'recovery',
         icon: 'https://sohodent.com/doc/static/tedaviicon/icon03.webp',
-        title: 'Tempo de Recuperação',
+        title: 'Recuperação e Cicatrização',
         content:
-          'Geralmente, leva de 3 a 6 meses para que os implantes se integrem ao osso.',
+          '<strong>24 a 48 horas para recuperação cirúrgica imediata, 3 meses para osseointegração completa.</strong><br><br>Graças à anestesia local computadorizada e cirurgia guiada, o inchaço e desconforto são mínimos, permitindo retorno às atividades em 2 dias. Durante os 3 meses de cicatrização, a prótese provisória protege os implantes com dieta macia.',
       },
       {
         id: 'price',
         icon: 'https://sohodent.com/doc/static/tedaviicon/icon04.webp',
-        title: 'Preço',
+        title: 'Preço e Transparência',
         content:
-          'Em média, o custo por implante varia em torno de $450, €400 ou £335. Entre em contato para um orçamento personalizado.',
+          '<strong>Os pacotes All-on-4 com tudo incluído começam a partir de €4.900 / £4.200 ($5.700) por arcada.</strong><br><br>Inclui 4 implantes de titânio premium (Straumann, DXL, NucleOSS), dentes provisórios fixos imediatos, ponte definitiva de zircônia, tomografia 3D, hotel 4/5 estrelas com café da manhã e transfers VIP Mercedes sem taxas ocultas.',
       },
     ],
   },
   es: {
-    sectionTitle: 'Su Viaje Dental de Forma Sencilla',
+    sectionTitle: 'Su Viaje Dental Hecho Simple y Transparente',
     subText:
-      'Desde su primera consulta hasta los resultados finales, garantizamos un viaje de tratamiento fluido y transparente en Estambul. Conozca la estancia, visitas, recuperación y precios.',
-    contactHeading: 'Contáctenos - Rápida y Fácilmente',
+      'Desde su primera consulta hasta su sonrisa definitiva, garantizamos un viaje predecible y de lujo en Estambul. Conozca tiempos de estancia, visitas necesarias, proceso de recuperación y precios con todo incluido.',
+    contactHeading: 'Contáctenos de Forma Rápida y Sencilla',
     whatsappLabel: 'WhatsApp',
-    phoneLabel: 'Llamada',
+    phoneLabel: 'Llamada Telefónica',
     quickFormLabel: 'Formulario Rápido',
     emailLabel: 'Correo Electrónico',
     items: [
       {
         id: 'stay',
         icon: 'https://sohodent.com/doc/static/tedaviicon/icon01.webp',
-        title: 'Estancia Media en Estambul',
+        title: 'Duración Media de la Estancia en Estambul',
         content:
-          'La duración del tratamiento puede variar según la cantidad de implantes y cualquier procedimiento adicional necesario.',
+          '<strong>De 3 a 5 días para la 1ª visita, de 5 a 7 días para la 2ª visita.</strong><br><br>En la 1ª visita (3–5 días) se realiza el TAC 3D, extracciones, colocación de 4 implantes y ajuste del puente provisional fijo en el mismo día. La 2ª visita (5–7 días, tras 3 meses) se dedica a las pruebas estéticas y entrega final del puente permanente de circonio.',
       },
       {
         id: 'visits',
         icon: 'https://sohodent.com/doc/static/tedaviicon/icon02.webp',
         title: 'Número de Visitas Requeridas',
-        content: 'En general, el procedimiento se completa en una o dos visitas.',
+        content:
+          '<strong>Se requieren exactamente 2 visitas para una restauración completa y permanente.</strong><br><br>• <strong>1ª Visita (3–5 Días):</strong> Cirugía de implantes y colocación de dientes provisionales fijos inmediatos.<br>• <strong>Período de Cicatrización (3 Meses):</strong> La osteointegración ocurre en su país de origen con vida normal.<br>• <strong>2ª Visita (5–7 Días):</strong> Colocación del puente definitivo atornillado de circonio.',
       },
       {
         id: 'recovery',
         icon: 'https://sohodent.com/doc/static/tedaviicon/icon03.webp',
-        title: 'Tiempo de Recuperación',
+        title: 'Tiempo de Recuperación y Cicatrización',
         content:
-          'En general, los implantes tardan de 3 a 6 meses en integrarse con el hueso.',
+          '<strong>De 24 a 48 horas para recuperación quirúrgica inmediata, 3 meses para osteointegración completa.</strong><br><br>Gracias a la anestesia local computerizada y cirugía guiada, la inflamación y molestias son mínimas; la vuelta a la rutina se produce en 2 días. Durante los 3 meses de cicatrización, el puente provisional protege los implantes con dieta blanda.',
       },
       {
         id: 'price',
         icon: 'https://sohodent.com/doc/static/tedaviicon/icon04.webp',
-        title: 'Precio',
+        title: 'Precios y Transparencia en Paquetes',
         content:
-          'En promedio, el costo por implante ronda los $450, €400 o £335. Contáctenos para un presupuesto detallado.',
+          '<strong>Los paquetes All-on-4 todo incluido comienzan desde €4.900 / £4.200 ($5.700) por arcada.</strong><br><br>Incluye 4 implantes de titanio premium (Straumann, DXL, NucleOSS), dientes provisionales fijos inmediatos, puente definitivo de circonio, TAC 3D, hotel de 4/5 estrellas con desayuno y traslados VIP Mercedes sin costes ocultos.',
       },
     ],
   },
   ru: {
-    sectionTitle: 'Ваше стоматологическое путешествие стало проще',
+    sectionTitle: 'Ваш Стоматологический Путь – Просто и Понятно',
     subText:
-      'От вашего первого запроса до финального результата мы обеспечиваем прозрачный процесс лечения в Стамбуле. Узнайте о длительности пребывания, визитах, восстановлении и ценах.',
-    contactHeading: 'Свяжитесь с нами — быстро и просто',
+      'От первого обращения до вашей постоянной новой улыбки мы обеспечиваем предсказуемый и комфортный процесс в Стамбуле. Узнайте точные сроки пребывания, этапы визитов, процесс восстановления и прозрачные пакетные цены.',
+    contactHeading: 'Свяжитесь с Нами – Быстро и Удобно',
     whatsappLabel: 'WhatsApp',
-    phoneLabel: 'Телефон',
+    phoneLabel: 'Телефонный звонок',
     quickFormLabel: 'Быстрая форма',
-    emailLabel: 'Эл. почта',
+    emailLabel: 'Электронная почта',
     items: [
       {
         id: 'stay',
         icon: 'https://sohodent.com/doc/static/tedaviicon/icon01.webp',
-        title: 'Средняя продолжительность пребывания в Стамбуле',
+        title: 'Средняя Продолжительность Пребывания в Стамбуле',
         content:
-          'Продолжительность лечения может варьироваться в зависимости от количества имплантатов и дополнительных процедур.',
+          '<strong>От 3 до 5 дней на 1-й визит, от 5 до 7 дней на 2-й визит.</strong><br><br>В 1-й визит (3–5 дней) проводятся 3D-КТ диагностика, удаление зубов, установка 4 имплантов и фиксация несъемного временного моста. Во 2-й визит (5–7 дней, через 3 месяца) выполняются цифровые примерки и установка постоянного циркониевого моста.',
       },
       {
         id: 'visits',
         icon: 'https://sohodent.com/doc/static/tedaviicon/icon02.webp',
-        title: 'Необходимое количество визитов',
-        content: 'Как правило, процедура завершается за один или два визита.',
+        title: 'Количество Необходимых Визитов',
+        content:
+          '<strong>Для постоянного восстановления челюсти требуется ровно 2 визита.</strong><br><br>• <strong>1-й Визит (3–5 Дней):</strong> Установка имплантов и фиксация несъемных временных зубов.<br>• <strong>Период Приживления (3 Месяца):</strong> Остеоинтеграция проходит дома в привычном ритме жизни.<br>• <strong>2-й Визит (5–7 Дней):</strong> Установка постоянного винтового циркониевого моста.',
       },
       {
         id: 'recovery',
         icon: 'https://sohodent.com/doc/static/tedaviicon/icon03.webp',
-        title: 'Время восстановления',
+        title: 'Сроки Восстановления и Приживление',
         content:
-          'В среднем приживление имплантатов к кости занимает от 3 до 6 месяцев.',
+          '<strong>24–48 часов на первичное заживление, 3 месяца на полную остеоинтеграцию с костью.</strong><br><br>Благодаря компьютерной местной анестезии и навигационной хирургии отек и дискомфорт минимальны; большинство пациентов возвращаются к делам через 2 дня. В течение 3 месяцев временный мост защищает импланты при мягкой диете.',
       },
       {
         id: 'price',
         icon: 'https://sohodent.com/doc/static/tedaviicon/icon04.webp',
-        title: 'Стоимость',
+        title: 'Цены и Прозрачность Пакетов',
         content:
-          'В среднем стоимость одного имплантата составляет около $450, €400 или £335. Свяжитесь с нами для индивидуального расчета.',
+          '<strong>Пакетные цены «все включено» на All-on-4 начинаются от €4,900 / £4,200 ($5,700) за челюсть.</strong><br><br>В стоимость входят 4 премиальных импланта (Straumann, DXL, NucleOSS), временный несъемный мост, постоянный циркониевый мост, 3D-КТ, отель 4/5* с завтраками и VIP-трансфер Mercedes без скрытых доплат.',
       },
     ],
   },
@@ -315,7 +322,7 @@ export default function TreatmentJourneySimpleSection({
 }: Props) {
   const locale = useLocale();
   const data = JOURNEY_DATA[locale] || JOURNEY_DATA.en;
-  const [openIdx, setOpenIdx] = useState<number | null>(null);
+  const [openIdx, setOpenIdx] = useState<number | null>(0);
 
   const toggleItem = (idx: number) => {
     setOpenIdx((prev) => (prev === idx ? null : idx));
@@ -389,7 +396,12 @@ export default function TreatmentJourneySimpleSection({
 
                   {isOpen && (
                     <div className={styles.content}>
-                      <p style={{ margin: 0 }}>{getCustomContent(item.id, item.content)}</p>
+                      <div
+                        style={{ margin: 0, lineHeight: 1.75, color: '#475569', fontSize: '0.96rem' }}
+                        dangerouslySetInnerHTML={{
+                          __html: getCustomContent(item.id, item.content),
+                        }}
+                      />
                     </div>
                   )}
                 </div>
@@ -434,7 +446,7 @@ export default function TreatmentJourneySimpleSection({
               </a>
 
               {/* Quick Form */}
-              <Link href="/contact" className={styles.contactPill} aria-label="Quick Form">
+              <a href="#js_target1" className={styles.contactPill} aria-label="Quick Form">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src="https://sohodent.com/doc/static/a1/contact-icon-12.png.webp"
@@ -444,7 +456,7 @@ export default function TreatmentJourneySimpleSection({
                   className={styles.contactIconImg}
                 />
                 <span className={styles.contactLabel}>{data.quickFormLabel}</span>
-              </Link>
+              </a>
 
               {/* E-mail */}
               <a href="mailto:info@sohodent.com" className={styles.contactPill} aria-label="E-mail">

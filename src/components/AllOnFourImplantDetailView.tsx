@@ -1510,12 +1510,12 @@ export default function AllOnFourImplantDetailView() {
                     </strong>
                   </div>
 
-                  <Link
-                    href="/contact"
+                  <a
+                    href="#js_target1"
                     className={`${styles.pkgCtaBtn} ${pkg.popular ? styles.pkgCtaBtnPopular : ''}`}
                   >
                     <span>{d.getQuoteBtn}</span>
-                  </Link>
+                  </a>
                 </div>
               </div>
             ))}
@@ -1545,12 +1545,7 @@ export default function AllOnFourImplantDetailView() {
       <TreatmentPatientReelsSection />
 
       {/* 11. REUSABLE: DENTAL JOURNEY TIMELINE */}
-      <TreatmentJourneySimpleSection
-        stayDuration="3+7 Working Days (2 Visits)"
-        visitCount="2 Visits (3 Days + 7 Days)"
-        recoveryTime="3 months"
-        priceEstimate="Starting from €4,900 / £4,200 per arch"
-      />
+      <TreatmentJourneySimpleSection />
 
       {/* 12. MASTER 17-QUESTION FAQ SECTION (CLINICAL & HEALTH TOURISM) */}
       <section aria-labelledby="allon4-faq-heading" className={styles.faqSection}>
