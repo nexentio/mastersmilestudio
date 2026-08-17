@@ -150,11 +150,11 @@ interface DetailDictionary {
 
 const DICTIONARIES: Record<string, DetailDictionary> = {
   "en": {
-    "introBadge": "IMMEDIATE-LOAD FIXED FULL-ARCH RESTORATION",
-    "introTitle": "All-on-4 Dental Implants in Istanbul: Same-Day Fixed Teeth Without Bone Grafting",
-    "introLead": "Restore a complete, non-removable 10–12 tooth dental arch in a single surgical visit using 4 strategically angled implants (two anterior upright, two posterior tilted up to 45°)—bypassing maxillary sinuses and mental nerves without expensive, invasive bone grafts.",
-    "introP1": "The All-on-4 biomechanical concept utilizes tilted posterior fixtures to maximize bone-to-implant contact in dense anterior cortical bone, avoiding maxillary sinus cavities in the upper jaw and the inferior alveolar nerve in the lower jaw.",
-    "introP2": "At Master Smile Studio, computer-guided surgical stents guarantee sub-millimetric accuracy and high primary insertion torque (>35–50 Ncm), allowing immediate loading with a screw-retained provisional bridge within 24 hours of surgery.",
+    "introBadge": "MAXIMUM OCCLUSAL STABILITY",
+    "introTitle": "All-on-6 Dental Implants in Istanbul, Turkey",
+    "introLead": "Complete 14-tooth full-arch restoration anchored on 6 titanium implants — delivering the highest bite force and structural longevity.",
+    "introP1": "At Master Smile Studio, All-on-6 dental implants represent the pinnacle of fixed full-arch oral rehabilitation. By distributing chewing forces across six strategically positioned titanium fixtures rather than four, this procedure provides uncompromising mechanical stability for patients requiring a comprehensive 14-tooth dental arch. Every surgery is planned with 3D digital precision and performed directly by our senior oral surgeons and clinic founders.",
+    "introP2": "The All-on-6 protocol places two anterior upright implants and four posterior fixtures across the jawbone arch. This wider anchorage foundation spreads occlusal masticatory forces evenly across your natural bone architecture, virtually eliminating cantilever strain and enabling patients with heavy bite forces to chew without restriction.",
     "introP3Lead": "Depending on your individual bone volume or clinical goals, you can also explore our ",
     "introP3LinkAll4": "All-on-4 Dental Implants",
     "introP3Mid": ", specialized ",
@@ -162,8 +162,8 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "introP3And": ", and ",
     "introP3LinkSinus": "Sinus Lifting Procedures",
     "introP3Tail": " — all available in our Istanbul center.",
-    "materialsTitle": "All-on-6 Permanent Bridge Materials: Why We Use Monolithic Zirconia",
-    "materialsSubtitle": "In All-on-6 restorations, 6 implants bear your entire jaw chewing load (200 to 600 Newtons). Discover why we exclusively engineer 100% Monolithic Multilayer Zirconia instead of cheaper acrylic or fragile porcelain.",
+    "materialsTitle": "All-on-4 Permanent Bridge Materials: Why We Use Monolithic Zirconia",
+    "materialsSubtitle": "In All-on-4 restorations, 4 implants bear your entire jaw chewing load (200 to 600 Newtons). Discover why we exclusively engineer 100% Monolithic Multilayer Zirconia instead of cheaper acrylic or fragile porcelain.",
     "materialsSpecLabels": {
       "material": "Material Type",
       "strength": "Flexural Strength",
@@ -296,8 +296,8 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "pfm": "8 – 12 Years (Chipping risk)"
       }
     ],
-    "packagesTitle": "All-on-6 Implant Package Deals & Pricing in Istanbul",
-    "packagesSubtitle": "Transparent, all-inclusive pricing per arch with 6 premium titanium implants, CAD/CAM zirconia bridge, 5-star hotel stay, and private VIP transfers.",
+    "packagesTitle": "All-on-4 Implant Package Deals & Pricing in Istanbul",
+    "packagesSubtitle": "Transparent, all-inclusive pricing per arch with 4 premium titanium implants, CAD/CAM zirconia bridge, 5-star hotel stay, and private VIP transfers.",
     "durationLabel": "Treatment Duration:",
     "includedLabel": "What's Included in This Package:",
     "pricePerArchLabel": "Price per jaw / arch",
@@ -309,123 +309,123 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "faqGroup2Title": "Health Tourism, Inclusions & Lifetime Warranty FAQs",
     "packages": [
       {
-        "name": "ALL-ON-6 – NUCLEOSS",
-        "brand": "NucleOSS (Turkish Premium Quality)",
+        "name": "ALL-ON-4 – NUCLEOSS",
+        "brand": "NucleOSS (Grade 4 Pure Titanium)",
         "duration": "3+7 Working Days (2 Visits)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-1.jpg",
+        "img": "/packages/nucleoss.webp",
+        "price": {
+          "USD": "$4,250",
+          "EUR": "€3,900",
+          "GBP": "£3,350"
+        },
         "included": [
-          "6x NucleOSS Dental Implants per Arch",
-          "12-14x Fixed Temporary Teeth (Same Visit)",
-          "12-14x Final Permanent Zirconia Teeth",
+          "4x NucleOSS Dental Implants per Arch",
+          "10-12x Fixed Temporary Teeth (Same Visit)",
+          "10-12x Final Permanent Zirconia Teeth",
           "3D CBCT Surgical Planning Guide",
           "Local Anesthesia & Post-op Medication Pack",
           "Airport-Hotel VIP Transfers",
           "Hotel Stay with Bed & Breakfast",
           "Full Laboratory Work Included"
-        ],
-        "price": {
-          "USD": "$6,400",
-          "EUR": "€5,500",
-          "GBP": "£4,700"
-        }
+        ]
       },
       {
-        "name": "ALL-ON-6 – DXL GERMAN",
+        "name": "ALL-ON-4 – DXL GERMAN",
         "brand": "DXL (German Engineering)",
         "duration": "3+7 Working Days (2 Visits)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-2.jpg",
+        "img": "/packages/dxl.webp",
+        "price": {
+          "USD": "$5,350",
+          "EUR": "€4,900",
+          "GBP": "£4,200"
+        },
         "included": [
-          "6x DXL German Titanium Implants",
-          "12-14x Fixed Temporary Teeth",
-          "12-14x Final Permanent Zirconia Teeth",
+          "4x DXL German Titanium Implants",
+          "10-12x Fixed Temporary Teeth",
+          "10-12x Final Permanent Zirconia Teeth",
           "3D CBCT Surgical Planning Guide",
           "VIP Airport & Hotel Transfers",
           "Hotel Stay with Bed & Breakfast",
           "Full Laboratory & CAD/CAM Milling"
-        ],
-        "price": {
-          "USD": "$7,500",
-          "EUR": "€6,500",
-          "GBP": "£5,600"
-        }
+        ]
       },
       {
-        "name": "ALL-ON-6 – STRAUMANN",
+        "name": "ALL-ON-4 – STRAUMANN",
         "brand": "Straumann (Swiss Gold Standard)",
         "duration": "3+7 Working Days (2 Visits)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-3.jpg",
+        "img": "/packages/straumann.webp",
+        "popular": true,
+        "price": {
+          "USD": "$8,600",
+          "EUR": "€7,900",
+          "GBP": "£6,800"
+        },
         "included": [
-          "6x Straumann Swiss Titanium Implants",
-          "12-14x Fixed High-Grade Temporary Teeth",
-          "12-14x Final Monolithic Zirconia Teeth",
+          "4x Straumann Swiss Titanium Implants",
+          "10-12x Fixed High-Grade Temporary Teeth",
+          "10-12x Final Monolithic Zirconia Teeth",
           "Lifetime International Manufacturer Passport",
           "Luxury 5-Star Hotel Stay Included",
           "VIP Mercedes Chauffeur Transfers",
           "Dedicated Personal Patient Host"
-        ],
-        "price": {
-          "USD": "$11,600",
-          "EUR": "€10,000",
-          "GBP": "£8,600"
-        },
-        "popular": true
+        ]
       },
       {
-        "name": "ALL-ON-6 – MEGAGEN",
-        "brand": "Megagen AnyRidge (Korean Technology)",
+        "name": "ALL-ON-4 – MEGAGEN",
+        "brand": "Megagen AnyRidge (Knife-Thread Tech)",
         "duration": "3+7 Working Days (2 Visits)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-package-10.jpg",
+        "img": "/packages/megagen.webp",
+        "price": {
+          "USD": "$5,900",
+          "EUR": "€5,400",
+          "GBP": "£4,650"
+        },
         "included": [
-          "6x Megagen AnyRidge Implants per Arch",
-          "12-14x Fixed Temporary Teeth",
-          "12-14x Final Zirconia Bridge Teeth",
+          "4x Megagen AnyRidge Implants per Arch",
+          "10-12x Fixed Temporary Teeth",
+          "10-12x Final Zirconia Bridge Teeth",
           "3D CBCT Tomography & Surgical Guide",
           "VIP Airport-Hotel Transfers",
           "Hotel Stay with Bed & Breakfast"
-        ],
-        "price": {
-          "USD": "$8,000",
-          "EUR": "€7,000",
-          "GBP": "£6,000"
-        }
+        ]
       },
       {
-        "name": "ALL-ON-6 – NEODENT",
+        "name": "ALL-ON-4 – NEODENT",
         "brand": "Neodent (Straumann Group)",
         "duration": "3+7 Working Days (2 Visits)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-implant-package-2.jpg",
+        "img": "/packages/neodent.webp",
+        "price": {
+          "USD": "$5,700",
+          "EUR": "€5,200",
+          "GBP": "£4,450"
+        },
         "included": [
-          "6x Neodent Implants per Arch",
-          "12-14x Fixed Temporary Teeth",
-          "12-14x Final Zirconia Bridge Teeth",
+          "4x Neodent Implants per Arch",
+          "10-12x Fixed Temporary Teeth",
+          "10-12x Final Zirconia Bridge Teeth",
           "3D CBCT Tomography & Planning",
           "VIP Airport-Hotel Transfers",
           "Hotel Stay with Bed & Breakfast"
-        ],
-        "price": {
-          "USD": "$8,000",
-          "EUR": "€7,000",
-          "GBP": "£6,000"
-        }
+        ]
       },
       {
-        "name": "ALL-ON-6 – HIOSSEN",
+        "name": "ALL-ON-4 – HIOSSEN",
         "brand": "Hiossen (American Brand)",
         "duration": "3+7 Working Days (2 Visits)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-implant-package-3.jpg",
+        "img": "/packages/hiossen.webp",
+        "price": {
+          "USD": "$5,600",
+          "EUR": "€5,100",
+          "GBP": "£4,380"
+        },
         "included": [
-          "6x Hiossen American Implants per Arch",
-          "12-14x Fixed Temporary Teeth",
-          "12-14x Final Zirconia Bridge Teeth",
+          "4x Hiossen American Implants per Arch",
+          "10-12x Fixed Temporary Teeth",
+          "10-12x Final Zirconia Bridge Teeth",
           "3D CBCT Tomography & Planning",
           "VIP Airport-Hotel Transfers",
           "Hotel Stay with Bed & Breakfast"
-        ],
-        "price": {
-          "USD": "$7,700",
-          "EUR": "€6,750",
-          "GBP": "£5,780"
-        }
+        ]
       }
     ],
     "faqsPart1": [
@@ -559,31 +559,31 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       "whenAll6Text": "All-on-6 is recommended whenever posterior bone height (>10 mm) is preserved, in patients who clench or grind their teeth (bruxism), or in younger and active individuals desiring a full 14-tooth dental arch with unrestricted chewing power."
     },
     "processTitle": "3-Phase Precision Protocol: From 3D Digital Planning to Permanent Zirconia",
-    "processSubtitle": "Every All-on-4 restoration follows a rigid computer-guided surgical workflow and 5-axis robotic CAD/CAM milling for 98.2% osseointegration success.",
+    "processSubtitle": "Every All-on-6 transformation at Master Smile Studio follows a strict sub-millimeter computer-guided surgical and robotic milling protocol.",
     "processCards": [
       {
         "step": "PHASE 01",
-        "title": "3D CBCT Tomography & Virtual Surgical Stent",
-        "text": "High-resolution CBCT mapping assesses bone volume and anatomical danger zones, planning tilted posterior implants to maximize bone anchoring without bone grafting.",
+        "title": "3D CBCT Virtual Surgery & Guided Template",
+        "text": "High-resolution Cone Beam Tomography maps bone density in Hounsfield Units (HU) and identifies exact nerve and sinus boundaries. A custom stereolithographic template guides all 6 implants with sub-millimeter precision.",
         "specs": [
           {
-            "key": "Precision",
+            "key": "Accuracy",
             "val": "< 0.1 mm"
           },
           {
-            "key": "Implant Angulation",
-            "val": "45° Posterior Tilted"
+            "key": "Incision Type",
+            "val": "Minimally Invasive Guided"
           },
           {
-            "key": "Bone Grafting",
-            "val": "Zero Graft (Bypassed)"
+            "key": "Bone Analysis",
+            "val": "3D Hounsfield Scale"
           }
         ]
       },
       {
         "step": "PHASE 02",
-        "title": "Same-Day Immediate Fixed Bridge (24h)",
-        "text": "Screw-retained multi-unit abutments receive an immediate full-arch temporary bridge within 24 hours, ensuring functional chewing and aesthetic confidence.",
+        "title": "24-Hour Immediate Fixed Loading",
+        "text": "With primary insertion torque achieving 35–50 Ncm, multi-unit abutments are secured. Within 24 hours, a high-density reinforced temporary bridge is screwed onto the 6 fixtures so you leave with functional teeth on day one.",
         "specs": [
           {
             "key": "Insertion Torque",
@@ -591,69 +591,69 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
           },
           {
             "key": "Delivery Time",
-            "val": "24 Hours"
+            "val": "Within 24 Hours"
           },
           {
-            "key": "Retention",
-            "val": "Screw-Retained"
+            "key": "Functionality",
+            "val": "Immediate Soft Diet"
           }
         ]
       },
       {
         "step": "PHASE 03",
-        "title": "5-Axis CAD/CAM Monolithic Zirconia Bridge",
-        "text": "After 3 months of osseointegration, intraoral scans capture the soft tissue, robotically milling a 1200+ MPa monolithic multilayer German zirconia bridge.",
+        "title": "5-Axis Robotic CAD/CAM Zirconia Milling",
+        "text": "After 3 months of bone healing, 3D optical scanning captures your gum contours. A monolithic multilayer German Zirconia bridge (1200+ MPa) is robotic-milled and sintered at 1500°C for lifetime fracture resistance.",
         "specs": [
           {
             "key": "Flexural Strength",
             "val": "1200 – 1400 MPa"
           },
           {
-            "key": "Substructure",
-            "val": "Solid Zirconia + Titanium"
+            "key": "Material Grade",
+            "val": "Solid German Zirconia"
           },
           {
-            "key": "Longevity",
-            "val": "Lifetime Warranty"
+            "key": "Sintering Temp",
+            "val": "1500°C High-Density"
           }
         ]
       }
     ],
-    "costTitle": "International Price & Treatment Comparison: UK / Germany vs. Istanbul",
-    "costSubtitle": "Understand why thousands of European and UK patients choose Master Smile Studio for full-arch All-on-6 restoration without sacrificing material quality.",
+    "costTitle": "International Price & Treatment Comparison: UK / Germany vs. Istanbul (All-on-4)",
+    "costSubtitle": "Understand why thousands of European and UK patients choose Master Smile Studio for full-arch All-on-4 restoration without sacrificing material quality.",
     "costTableHeaders": {
       "country": "Destination / Clinic Tier",
-      "costPerArch": "All-on-6 Cost (Per Jaw)",
+      "costPerArch": "All-on-4 Cost (Per Jaw)",
       "inclusions": "What Is Included in the Price",
       "valueAdvantage": "Master Smile Studio Advantage"
     },
     "costTableRows": [
       {
         "country": "United Kingdom (Harley Street / Private)",
-        "costPerArch": "£14,000 – £18,000",
+        "costPerArch": "£10,000 – £14,000 ($12,800 – $17,900)",
         "inclusions": "Surgery and standard bridge only. 3D CBCT, temporary teeth, sedation, and check-ups billed separately.",
-        "valueAdvantage": "Save 65% – 70% (£4,700 – £8,600 with us) on genuine Straumann/German systems."
+        "valueAdvantage": "Save 65% – 70% (£3,350 – £6,800 with us) on genuine Straumann/German systems."
       },
       {
         "country": "Germany / Switzerland (Private Clinic)",
-        "costPerArch": "€13,000 – €17,000",
+        "costPerArch": "€9,500 – €13,500 ($10,500 – $14,900)",
         "inclusions": "Surgical fees and lab work. Hotel accommodation, VIP transfers, and medications not covered.",
-        "valueAdvantage": "Save 60% – 65% (€5,500 – €10,000 with us) with identical German/Swiss titanium."
+        "valueAdvantage": "Save 60% – 65% (€3,900 – €7,900 with us) with identical German/Swiss titanium."
       },
       {
-        "country": "Master Smile Studio (Istanbul, Turkey)",
-        "costPerArch": "€5,500 – €10,000 / £4,700 – £8,600",
-        "inclusions": "All-Inclusive: 6 Implants, Temporary Bridge, Final Zirconia Bridge, 3D CBCT, 5-Star Hotel, VIP Mercedes Transfers, Lifetime Warranty Passport.",
+        "country": "Master Smile Studio (Istanbul, Turkey) ⭐",
+        "costPerArch": "€3,900 – €7,900 / £3,350 – £6,800",
+        "inclusions": "All-Inclusive: 4 Implants, Temporary Bridge, Final Zirconia Bridge, 3D CBCT, 5-Star Hotel, VIP Mercedes Transfers, Lifetime Warranty Passport.",
         "valueAdvantage": "100% Fixed Transparent Package Price Guarantee with Zero Hidden Medical or Travel Fees."
       }
     ]
   },
   "tr": {
-    "introBadge": "HEMEN YÜKLEMELİ SABİT TAM ÇENE RESTORASYONU",
-    "introTitle": "İstanbul All-on-4 İmplant Tedavisi: Sinüs Lifting Olmadan 24 Saatte Sabit Dişler",
-    "introLead": "İleri derecede kemik erimesi olan vakalarda bile, arka bölgeye 45 derece açıyla yerleştirilen 4 titanyum implant sayesinde sinüs lifting ameliyatına gerek kalmadan 24 saat içinde sabit dişlerinize kavuşun.",
-    "introP1": "All-on-4 protokolü, arka azı bölgelerinde kemik yetersizliği yaşayan hastalar için geliştirilmiş bilimsel bir mühendislik harikasıdır. Arka implantların 45 derece açıyla yerleştirilmesi, mevcut kemik temas alanını maksimuma çıkarır ve sinüs lifting cerrahisini tamamen ortadan kaldırır.",
-    "introP2": "Master Smile Studio’da bilgisayarlı 3D Tomografi (CBCT) kılavuzluğunda yerleştirilen implantlar 35–50 Ncm üzerinde primer tutuculuğa ulaşır. Bu sayede ameliyattan 24 saat sonra vidalı geçici sabit köprünüz takılır ve 3 ay sonra 1200+ MPa monolitik Alman zirkonyum kalıcı dişlerinize geçilir.",
+    "introBadge": "MAKSİMUM ÇİĞNEME STABİLİTESİ",
+    "introTitle": "All-on-6 Diş İmplantı Tedavisi İstanbul",
+    "introLead": "6 titanyum implant üzerine sabitlenen 14 dişlik tam çene restorasyonu — en yüksek çiğneme gücü ve yapısal dayanıklılık.",
+    "introP1": "Master Smile Studio’da All-on-6 diş implantı tedavisi, sabit tam çene restorasyonlarında en üst dayanıklılık seviyesini temsil eder. Çiğneme kuvvetlerini dört yerine altı titanyum implanta dağıtarak, 14 dişe kadar uzanan eksiksiz bir arkta rakipsiz bir stabilite sağlar. Tüm cerrahi işlemler doğrudan kurucu çene cerrahlarımız tarafından 3D dijital kılavuzlarla gerçekleştirilir.",
+    "introP2": "All-on-6 protokolü; çenenin ön bölgesine iki düz, arka azı bölgelerine ise dört implant konumlandırır. Bu geniş temel, çiğneme baskısını çene kemiğine eşit yayarak uzantı (cantilever) stresini sıfırlar ve güçlü çiğneme kuvvetine sahip bireylerin kısıtlama olmaksızın yemek yemesini sağlar.",
     "introP3Lead": "Kemik yoğunluğunuza ve klinik hedeflerinize göre kliniğimizde ayrıca ",
     "introP3LinkAll4": "All-on-4 Diş İmplantı",
     "introP3Mid": ", ileri kemik erimeleri için ",
@@ -661,8 +661,8 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "introP3And": " ve ",
     "introP3LinkSinus": "Sinüs Lifting Operasyonu",
     "introP3Tail": " seçeneklerini de değerlendirebilirsiniz.",
-    "materialsTitle": "All-on-6 Kalıcı Köprü Materyalleri: Neden Monolitik Zirkonyum Kullanıyoruz?",
-    "materialsSubtitle": "All-on-6 tedavisinde 6 implant tüm çenenin 200 ila 600 Newtonluk çiğneme kuvvetini taşır. Kliniğimizde neden ucuz akrilik veya kırılgan porselen yerine %100 Monolitik Çok Katmanlı Zirkonyum ürettiğimizi keşfedin.",
+    "materialsTitle": "All-on-4 Kalıcı Köprü Malzemeleri: Neden Monolitik Zirkonyum?",
+    "materialsSubtitle": "All-on-4 restorasyonlarında 4 implant tüm çenenin 200 ila 600 Newtonluk çiğneme yükünü taşır. Ucuz akrilik veya kırılgan porselen yerine neden %100 Monolitik Çok Katmanlı Zirkonyum ürettiğimizi keşfedin.",
     "materialsSpecLabels": {
       "material": "Materyal Türü",
       "strength": "Kırılma Dayanımı",
@@ -795,8 +795,8 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "pfm": "8 – 12 Yıl (Kırılma riski)"
       }
     ],
-    "packagesTitle": "İstanbul All-on-6 İmplant Paketleri ve Fiyatları",
-    "packagesSubtitle": "6 titanyum implant, monolitik zirkonyum köprü, 5 yıldızlı otel konaklaması ve VIP transfer dahil çene başı şeffaf paket fiyatları.",
+    "packagesTitle": "İstanbul All-on-4 İmplant Paketleri ve Fiyatları",
+    "packagesSubtitle": "4 adet birinci sınıf titanyum implant, CAD/CAM zirkonyum köprü, 5 yıldızlı otel konaklaması ve özel VIP transferler dahil şeffaf tam çene fiyatlandırması.",
     "durationLabel": "Tedavi Süresi:",
     "includedLabel": "Bu Pakete Dahil Olan Hizmetler:",
     "pricePerArchLabel": "Tek Çene Paket Fiyatı",
@@ -808,116 +808,123 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "faqGroup2Title": "Sağlık Turizmi, Paket Kapsamı ve Ömür Boyu Garanti",
     "packages": [
       {
-        "name": "ALL-ON-6 – NUCLEOSS",
-        "brand": "NucleOSS (Türk Premium Kalite)",
+        "name": "ALL-ON-4 – NUCLEOSS",
+        "brand": "NucleOSS (Grade 4 Pure Titanium)",
         "duration": "3+7 İş Günü (2 Ziyaret)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-1.jpg",
-        "included": [
-          "Çene Başına 6x NucleOSS Titanyum İmplant",
-          "12-14x Aynı Gün Vidalı Sabit Geçici Diş",
-          "12-14x Kalıcı Monolitik Zirkonyum Diş",
-          "3D Tomografi ve Cerrahi Kılavuz",
-          "Lokal Anestezi ve Cerrahi İlaç Seti",
-          "Havalimanı-Otel-Klinik VIP Transfer",
-          "Oda & Kahvaltı Dahil Otel Konaklaması",
-          "Tüm Laboratuvar ve Frezeleme Masrafları"
-        ],
+        "img": "/packages/nucleoss.webp",
         "price": {
-          "USD": "$6,400",
-          "EUR": "€5,500",
-          "GBP": "£4,700"
-        }
-      },
-      {
-        "name": "ALL-ON-6 – DXL GERMAN",
-        "brand": "DXL (Alman Mühendisliği)",
-        "duration": "3+7 İş Günü (2 Ziyaret)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-2.jpg",
-        "included": [
-          "6x DXL Alman Titanyum İmplant",
-          "12-14x Sabit Geçici Dişler",
-          "12-14x Kalıcı Zirkonyum Köprü",
-          "3D Tomografi & Cerrahi Planlama",
-          "VIP Transferler ve Otel Konaklaması",
-          "Tüm Laboratuvar İşçiliği Dahil"
-        ],
-        "price": {
-          "USD": "$7,500",
-          "EUR": "€6,500",
-          "GBP": "£5,600"
-        }
-      },
-      {
-        "name": "ALL-ON-6 – STRAUMANN",
-        "brand": "Straumann (İsviçre Altın Standart)",
-        "duration": "3+7 İş Günü (2 Ziyaret)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-3.jpg",
-        "included": [
-          "6x Straumann İsviçre Titanyum İmplant",
-          "12-14x Üst Düzey Sabit Geçici Dişler",
-          "12-14x Kalıcı Monolitik Zirkonyum Dişler",
-          "Uluslararası Ömür Boyu Üretici Pasaportu",
-          "5 Yıldızlı Lüks Otel Konaklaması",
-          "VIP Mercedes Şoförlü Transferler",
-          "Özel Kişisel Hasta Danışmanı"
-        ],
-        "price": {
-          "USD": "$11,600",
-          "EUR": "€10,000",
-          "GBP": "£8,600"
+          "USD": "$4,250",
+          "EUR": "€3,900",
+          "GBP": "£3,350"
         },
-        "popular": true
+        "included": [
+          "Çene başına 4x NucleOSS Titanyum İmplant",
+          "10-12x Sabit Geçici Diş (24 Saatte)",
+          "10-12x Kalıcı Monolitik Zirkonyum Diş",
+          "3D Tomografi (CBCT) ve Cerrahi Kılavuz",
+          "Lokal Anestezi ve İlaç Paketi",
+          "VIP Havalimanı-Otel-Klinik Transferleri",
+          "Otel Konaklaması (Oda & Kahvaltı)",
+          "Tüm Laboratuvar ve CAD/CAM Üretimi"
+        ]
       },
       {
-        "name": "ALL-ON-6 – MEGAGEN",
-        "brand": "Megagen AnyRidge",
+        "name": "ALL-ON-4 – DXL GERMAN",
+        "brand": "DXL (German Engineering)",
         "duration": "3+7 İş Günü (2 Ziyaret)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-package-10.jpg",
-        "included": [
-          "6x Megagen İmplant",
-          "12-14x Sabit Geçici Dişler",
-          "12-14x Kalıcı Zirkonyum Dişler",
-          "3D Tomografi, Otel ve VIP Transferler"
-        ],
+        "img": "/packages/dxl.webp",
         "price": {
-          "USD": "$8,000",
-          "EUR": "€7,000",
-          "GBP": "£6,000"
-        }
+          "USD": "$5,350",
+          "EUR": "€4,900",
+          "GBP": "£4,200"
+        },
+        "included": [
+          "Çene başına 4x DXL Alman Titanyum İmplant",
+          "10-12x Sabit Geçici Diş (24 Saatte)",
+          "10-12x Kalıcı Monolitik Zirkonyum Diş",
+          "3D Tomografi (CBCT) ve Cerrahi Kılavuz",
+          "VIP Havalimanı ve Otel Transferleri",
+          "Otel Konaklaması (Oda & Kahvaltı)",
+          "Tam Laboratuvar ve CAD/CAM Frezeleme"
+        ]
       },
       {
-        "name": "ALL-ON-6 – NEODENT",
-        "brand": "Neodent (Straumann Grubu)",
+        "name": "ALL-ON-4 – STRAUMANN",
+        "brand": "Straumann (Swiss Gold Standard)",
         "duration": "3+7 İş Günü (2 Ziyaret)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-implant-package-2.jpg",
-        "included": [
-          "6x Neodent İmplant",
-          "12-14x Sabit Geçici Dişler",
-          "12-14x Kalıcı Zirkonyum Dişler",
-          "3D Tomografi, Otel ve VIP Transferler"
-        ],
+        "img": "/packages/straumann.webp",
+        "popular": true,
         "price": {
-          "USD": "$8,000",
-          "EUR": "€7,000",
-          "GBP": "£6,000"
-        }
+          "USD": "$8,600",
+          "EUR": "€7,900",
+          "GBP": "£6,800"
+        },
+        "included": [
+          "Çene başına 4x Straumann İsviçre Titanyum İmplant",
+          "10-12x Sabit Geçici Diş (24 Saatte)",
+          "10-12x Kalıcı Monolitik Zirkonyum Diş",
+          "Ömür Boyu Uluslararası Üretici Pasaportu",
+          "Lüks 5 Yıldızlı Otel Konaklaması Dahil",
+          "Özel Mercedes VIP Şoförlü Transferler",
+          "Kişisel Hasta Danışmanı ve Tercüman"
+        ]
       },
       {
-        "name": "ALL-ON-6 – HIOSSEN",
-        "brand": "Hiossen USA",
+        "name": "ALL-ON-4 – MEGAGEN",
+        "brand": "Megagen AnyRidge (Knife-Thread Tech)",
         "duration": "3+7 İş Günü (2 Ziyaret)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-implant-package-3.jpg",
-        "included": [
-          "6x Hiossen Amerikan İmplant",
-          "12-14x Sabit Geçici Dişler",
-          "12-14x Kalıcı Zirkonyum Dişler",
-          "3D Tomografi, Otel ve VIP Transferler"
-        ],
+        "img": "/packages/megagen.webp",
         "price": {
-          "USD": "$7,700",
-          "EUR": "€6,750",
-          "GBP": "£5,780"
-        }
+          "USD": "$5,900",
+          "EUR": "€5,400",
+          "GBP": "£4,650"
+        },
+        "included": [
+          "Çene başına 4x Megagen AnyRidge İmplant",
+          "10-12x Sabit Geçici Diş (24 Saatte)",
+          "10-12x Kalıcı Zirkonyum Köprü Dişleri",
+          "3D Tomografi (CBCT) ve Cerrahi Kılavuz",
+          "VIP Havalimanı-Otel Transferleri",
+          "Otel Konaklaması (Oda & Kahvaltı)"
+        ]
+      },
+      {
+        "name": "ALL-ON-4 – NEODENT",
+        "brand": "Neodent (Straumann Group)",
+        "duration": "3+7 İş Günü (2 Ziyaret)",
+        "img": "/packages/neodent.webp",
+        "price": {
+          "USD": "$5,700",
+          "EUR": "€5,200",
+          "GBP": "£4,450"
+        },
+        "included": [
+          "Çene başına 4x Neodent Grand Morse İmplant",
+          "10-12x Sabit Geçici Diş (24 Saatte)",
+          "10-12x Kalıcı Zirkonyum Köprü Dişleri",
+          "3D Tomografi (CBCT) ve Dijital Planlama",
+          "VIP Havalimanı-Otel Transferleri",
+          "Otel Konaklaması (Oda & Kahvaltı)"
+        ]
+      },
+      {
+        "name": "ALL-ON-4 – HIOSSEN",
+        "brand": "Hiossen (American Brand)",
+        "duration": "3+7 İş Günü (2 Ziyaret)",
+        "img": "/packages/hiossen.webp",
+        "price": {
+          "USD": "$5,600",
+          "EUR": "€5,100",
+          "GBP": "£4,380"
+        },
+        "included": [
+          "Çene başına 4x Hiossen ETIII İmplant",
+          "10-12x Sabit Geçici Diş (24 Saatte)",
+          "10-12x Kalıcı Zirkonyum Köprü Dişleri",
+          "3D Tomografi (CBCT) ve Dijital Planlama",
+          "VIP Havalimanı-Otel Transferleri",
+          "Otel Konaklaması (Oda & Kahvaltı)"
+        ]
       }
     ],
     "faqsPart1": [
@@ -1050,32 +1057,32 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       "whenAll6Title": "All-on-6 Hangi Durumlarda Üstün Seçenektir?",
       "whenAll6Text": "All-on-6, arka azı kemik yüksekliği yeterli olan (>10 mm), gece diş sıkan (bruksizm), güçlü çiğneme kaslarına sahip veya arka azı dişlerini de içeren 14 dişlik eksiksiz bir ark talep eden hastalar için tavsiye edilir."
     },
-    "processTitle": "All-on-4 Hassas Protokolü: 3D Tomografiden Monolitik Zirkonyuma",
-    "processSubtitle": "Master Smile Studio’da her All-on-4 tedavisi bilgisayarlı cerrahi rehber ve robotik frezeleme ile %98.2 başarı oranıyla uygulanır.",
+    "processTitle": "3 Aşamalı Dijital Cerrahi ve CAD/CAM Mühendislik Süreci",
+    "processSubtitle": "Master Smile Studio’daki her All-on-6 tedavisi, milimetrik bilgisayarlı cerrahi rehber ve robotik frezeleme protokolüyle yürütülür.",
     "processCards": [
       {
-        "step": "PHASE 01",
-        "title": "3D Tomografi & Sanal Cerrahi Kılavuz",
-        "text": "Yüksek çözünürlüklü tomografi ile sinüs boşlukları ve sinir hatları taranır. 4 implantın 45 derecelik optimum açıları milimetrik olarak planlanır.",
+        "step": "AŞAMA 01",
+        "title": "3D Tomografi ve Sanal Cerrahi Kılavuzu",
+        "text": "Yüksek çözünürlüklü 3D tomografi çene kemiği sertliğini Hounsfield biriminde analiz eder, sinir ve sinüs sınırlarını belirler. Özel üretilen cerrahi rehber ile 6 implant milimetrenin onda biri hassasiyetle yerleştirilir.",
         "specs": [
           {
-            "key": "Hassasiyet",
+            "key": "Cerrahi Hassasiyet",
             "val": "< 0.1 mm"
           },
           {
-            "key": "İmplant Açısı",
-            "val": "45° Posterior Tilted"
+            "key": "Kesi Türü",
+            "val": "Minimal İnvaziv / Kılavuzlu"
           },
           {
-            "key": "Greft İhtiyacı",
-            "val": "Sıfır Greft (Bypass)"
+            "key": "Kemik Analizi",
+            "val": "3D Hounsfield Skalası"
           }
         ]
       },
       {
-        "step": "PHASE 02",
-        "title": "24 Saatte Sabit Vidalı Geçici Diş",
-        "text": "35–50 Ncm torkla yerleştirilen multi-unit dayanaklar üzerine 24 saat içinde sabit vidalı estetik geçici köprü takılır; hasta asla dişsiz kalmaz.",
+        "step": "AŞAMA 02",
+        "title": "24 Saatte Vidalı Sabit Geçici Dişler",
+        "text": "İmplantlar kemiğe 35–50 Ncm torkla kilitlendiğinde multi-unit abutmentlar takılır. İlk 24 saat içinde 6 implant üzerine vidalanan sabit geçici köprü teslim edilir; klinikten asla dişsiz ayrılmazsınız.",
         "specs": [
           {
             "key": "Primer Tork",
@@ -1083,69 +1090,69 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
           },
           {
             "key": "Teslim Süresi",
-            "val": "24 Hours"
+            "val": "24 Saat İçinde"
           },
           {
-            "key": "Tutuculuk",
-            "val": "Vidalı Sabit"
+            "key": "Çiğneme Fonksiyonu",
+            "val": "Yumuşak Diyetle Anında"
           }
         ]
       },
       {
-        "step": "PHASE 03",
-        "title": "Robotik CAD/CAM Monolitik Zirkonyum Köprü",
-        "text": "3 aylık osteointegrasyon sonrası dijital tarama yapılır. 1200+ MPa monolitik çok katmanlı Alman zirkonyum köprü robotik olarak üretilir.",
+        "step": "AŞAMA 03",
+        "title": "5 Eksenli Robotik CAD/CAM Monolitik Zirkonyum",
+        "text": "3 aylık kemikleşmenin ardından 3D optik tarama ile ölçü alınır. 1200+ MPa dirençli monolitik Alman zirkonyum bloğu 5 eksenli CNC cihazında frezelenip 1500°C’de fırınlanarak ömür boyu kırılmaz köprü üretilir.",
         "specs": [
           {
-            "key": "Bükülme Gücü",
+            "key": "Kırılma Dayanımı",
             "val": "1200 – 1400 MPa"
           },
           {
-            "key": "Altyapı",
-            "val": "Masif Zirkonyum + Titanyum"
+            "key": "Materyal Standardı",
+            "val": "Yekpare Alman Zirkonyumu"
           },
           {
-            "key": "Ömür",
-            "val": "Ömür Boyu Garanti"
+            "key": "Fırınlama Sıcaklığı",
+            "val": "1500°C Yüksek Yoğunluk"
           }
         ]
       }
     ],
-    "costTitle": "Uluslararası Fiyat ve Tedavi Kıyaslaması: İngiltere / Almanya vs. İstanbul",
-    "costSubtitle": "Binlerce Avrupalı ve İngiliz hastanın neden malzeme kalitesinden ödün vermeden Master Smile Studio’yu tercih ettiğini keşfedin.",
+    "costTitle": "Uluslararası Fiyat Karşılaştırması: İngiltere / Almanya vs. İstanbul (All-on-4)",
+    "costSubtitle": "Binlerce Avrupalı ve İngiliz hastanın malzeme kalitesinden ödün vermeden tam çene All-on-4 tedavisi için neden Master Smile Studio’yu tercih ettiğini keşfedin.",
     "costTableHeaders": {
-      "country": "Ülke / Klinik Standardı",
-      "costPerArch": "Tek Çene All-on-6 Maliyeti",
+      "country": "Lokasyon ve Klinik Seviyesi",
+      "costPerArch": "All-on-4 Maliyeti (Çene Başına)",
       "inclusions": "Fiyata Dahil Olan Hizmetler",
-      "valueAdvantage": "Master Smile Studio Avantajı"
+      "valueAdvantage": "Master Smile Studio Fiyat Avantajı"
     },
     "costTableRows": [
       {
-        "country": "İngiltere (UK - Özel Klinikler / Harley Street)",
-        "costPerArch": "£14,000 – £18,000",
-        "inclusions": "Yalnızca cerrahi ve standart köprü. 3D tomografi, geçici dişler ve ek randevular ayrı faturalandırılır.",
-        "valueAdvantage": "Orijinal İsviçre/Alman sistemlerinde %65 – %70 Tasarruf (£4,700 – £8,600)."
+        "country": "İngiltere (Harley Street / Özel Londra Klinikler)",
+        "costPerArch": "£10,000 – £14,000 ($12,800 – $17,900)",
+        "inclusions": "Yalnızca cerrahi ve standart köprü. 3D Tomografi, geçici protez, sedasyon ve kontroller ayrı faturalandırılır.",
+        "valueAdvantage": "%65 – %70 Tasarruf (Bizde £3,350 – £6,800) Orijinal İsviçre/Alman İmplant Garantisi."
       },
       {
-        "country": "Almanya / İsviçre (Özel Klinikler)",
-        "costPerArch": "€13,000 – €17,000",
-        "inclusions": "Cerrahi ve laboratuvar ücreti. Otel konaklaması, VIP transfer ve ilaçlar fiyata dahil değildir.",
-        "valueAdvantage": "Aynı Alman/İsviçre titanyumu ile %60 – %65 Tasarruf (€5,500 – €10,000)."
+        "country": "Almanya / İsviçre (Özel Diş Klinikleri)",
+        "costPerArch": "€9,500 – €13,500 ($10,500 – $14,900)",
+        "inclusions": "Cerrahi ücretler ve laboratuvar. Otel konaklaması, VIP transferler ve ilaçlar dahil değildir.",
+        "valueAdvantage": "%60 – %65 Tasarruf (Bizde €3,900 – €7,900) Birebir aynı Alman/İsviçre Titanyum Kalitesi."
       },
       {
-        "country": "Master Smile Studio (İstanbul, Türkiye)",
-        "costPerArch": "€5,500 – €10,000 / £4,700 – £8,600",
-        "inclusions": "Her Şey Dahil: 6 İmplant, Geçici Diş, Kalıcı Zirkonyum Köprü, 3D Tomografi, 5 Yıldızlı Otel, VIP Mercedes Transferler, Ömür Boyu Garanti Pasaportu.",
-        "valueAdvantage": "Gizli Masrafsız Sabit Fiyat Garantisi ve VIP Seyahat Konforu."
+        "country": "Master Smile Studio (İstanbul, Türkiye) ⭐",
+        "costPerArch": "€3,900 – €7,900 / £3,350 – £6,800",
+        "inclusions": "%100 Her Şey Dahil: 4 İmplant, Geçici Sabit Köprü, Kalıcı Zirkonyum Köprü, 3D Tomografi, 5 Yıldızlı Otel, VIP Transferler, Ömür Boyu Garanti Pasaportu.",
+        "valueAdvantage": "Sıfır Gizli Maliyet Garantisiyle %100 Şeffaf Sabit Paket Fiyatı."
       }
     ]
   },
   "de": {
-    "introBadge": "SOFORTBELASTBARE FESTE GESAMTBRÜCKE",
-    "introTitle": "All-on-4 Zahnimplantate in Istanbul: Feste Zähne in 24 Stunden ohne Sinuslift",
-    "introLead": "Selbst bei starkem Knochenschwund im Seitenzahnbereich ermöglichen 4 speziell abgewinkelte Titanimplantate festsitzende Zähne innerhalb von 24 Stunden – ganz ohne aufwendigen Knochenaufbau oder Sinuslift.",
-    "introP1": "Das All-on-4-Konzept ist ein biomechanischer Meilenstein für Patienten mit Knochenresorption. Durch die 45-Grad-Neigung der hinteren Implantate wird das vorhandene Knochenvolumen optimal genutzt und der Sinuslift vermieden.",
-    "introP2": "Mit computergestützter 3D-DVT-Planung erreichen unsere Chirurgen Primärstabilitäten von über 35–50 Ncm. Innerhalb von 24 Stunden wird eine festsitzende provisorische Brücke montiert, gefolgt von einer 1200+ MPa Zirkonbrücke nach 3 Monaten.",
+    "introBadge": "MAXIMALE KAU-STABILITÄT",
+    "introTitle": "All-on-6 Zahnimplantate in Istanbul, Türkei",
+    "introLead": "Vollständige 14-Zahn-Restauration auf 6 Titanimplantaten — maximale Kaukraft und langfristige strukturelle Stabilität.",
+    "introP1": "Bei Master Smile Studio stellt das All-on-6 Verfahren die Königsklasse der festsitzenden Zahnrehabilitation dar. Durch die Verteilung der Kaukräfte auf sechs strategisch gesetzte Titanimplantate bietet dieses Verfahren eine kompromisslose Stabilität für Patienten, die einen vollständigen 14-Zähne-Bogen benötigen.",
+    "introP2": "Das All-on-6 Protokoll verankert zwei vordere und vier hintere Implantate im Kieferknochen. Diese breite Basis verteilt den Kaudruck gleichmäßig, minimiert Hebelkräfte und ermöglicht uneingeschränktes Kauen bei hoher Beißkraft.",
     "introP3Lead": "Entdecken Sie bei Bedarf auch unsere ",
     "introP3LinkAll4": "All-on-4 Zahnimplantate",
     "introP3Mid": ", spezialisierte ",
@@ -1153,8 +1160,8 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "introP3And": " sowie ",
     "introP3LinkSinus": "Sinuslift-Behandlungen",
     "introP3Tail": " in unserer Istanbuler Fachklinik.",
-    "materialsTitle": "All-on-6 Brückenmaterialien: Warum wir monolithisches Zirkon verwenden",
-    "materialsSubtitle": "Bei All-on-6 tragen 6 Implantate die gesamte Kaukraft des Kiefers (200 bis 600 Newton). Erfahren Sie, warum wir ausschließlich 100% monolithisches Mehrschicht-Zirkon anstelle von billigem Acryl oder brüchiger Keramik einsetzen.",
+    "materialsTitle": "All-on-4 Brückenmaterialien: Warum wir monolithisches Zirkon verwenden",
+    "materialsSubtitle": "Bei All-on-4 tragen 4 Implantate die gesamte Kaukraft Ihres Kiefers (200 bis 600 Newton). Erfahren Sie, warum wir ausschließlich 100 % monolithisches Zirkon anstelle von billigem Acryl oder bruchanfälligem Porzellan verwenden.",
     "materialsSpecLabels": {
       "material": "Materialtyp",
       "strength": "Biegefestigkeit",
@@ -1287,8 +1294,8 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "pfm": "8 – 12 Jahre"
       }
     ],
-    "packagesTitle": "All-on-6 Implantat-Pakete & Preise in Istanbul",
-    "packagesSubtitle": "Transparente Festpreise pro Kiefer inklusive 6 Titanimplantaten, Zirkonbrücke, 5-Sterne-Hotel und VIP-Transfers.",
+    "packagesTitle": "All-on-4 Implantat-Pakete & Preise in Istanbul",
+    "packagesSubtitle": "Transparente All-inclusive-Preise pro Kiefer mit 4 Premium-Titanimplantaten, CAD/CAM-Zirkonbrücke, 5-Sterne-Hotel und privaten VIP-Transfers.",
     "durationLabel": "Behandlungsdauer:",
     "includedLabel": "In diesem Paket enthalten:",
     "pricePerArchLabel": "Preis pro Kiefer",
@@ -1300,116 +1307,123 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "faqGroup2Title": "Medizintourismus, Paketleistungen & Garantie",
     "packages": [
       {
-        "name": "ALL-ON-6 – NUCLEOSS",
-        "brand": "NucleOSS (Türkische Premium-Qualität)",
-        "duration": "3+7 Werktage (2 Besuche)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-1.jpg",
-        "included": [
-          "6x NucleOSS Titanimplantate pro Kiefer",
-          "12-14x Feste provisorische Zähne",
-          "12-14x Finale Zirkonbrücke",
-          "3D-DVT-Röntgen und OP-Schablone",
-          "Lokalanästhesie und Medikamentenset",
-          "Flughafen-Hotel VIP-Transfers",
-          "Hotelaufenthalt mit Frühstück",
-          "Komplette Laborarbeiten inklusive"
-        ],
+        "name": "ALL-ON-4 – NUCLEOSS",
+        "brand": "NucleOSS (Grade 4 Pure Titanium)",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/nucleoss.webp",
         "price": {
-          "USD": "$6,400",
-          "EUR": "€5,500",
-          "GBP": "£4,700"
-        }
-      },
-      {
-        "name": "ALL-ON-6 – DXL GERMAN",
-        "brand": "DXL (Deutsche Ingenieurskunst)",
-        "duration": "3+7 Werktage (2 Besuche)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-2.jpg",
-        "included": [
-          "6x DXL Deutsche Titanimplantate",
-          "12-14x Feste provisorische Zähne",
-          "12-14x Finale Zirkonbrücke",
-          "3D-DVT & chirurgische Planung",
-          "VIP-Transfers und Hotel inklusive",
-          "Labor- und Fräsarbeiten inklusive"
-        ],
-        "price": {
-          "USD": "$7,500",
-          "EUR": "€6,500",
-          "GBP": "£5,600"
-        }
-      },
-      {
-        "name": "ALL-ON-6 – STRAUMANN",
-        "brand": "Straumann (Schweizer Goldstandard)",
-        "duration": "3+7 Werktage (2 Besuche)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-3.jpg",
-        "included": [
-          "6x Straumann Schweizer Titanimplantate",
-          "12-14x Hochwertige provisorische Zähne",
-          "12-14x Monolithische Zirkonzähne",
-          "Lebenslanger Hersteller-Garantiepass",
-          "5-Sterne-Luxushotel inklusive",
-          "VIP-Mercedes Chauffeur-Transfers",
-          "Persönliche deutschsprachige Betreuung"
-        ],
-        "price": {
-          "USD": "$11,600",
-          "EUR": "€10,000",
-          "GBP": "£8,600"
+          "USD": "$4,250",
+          "EUR": "€3,900",
+          "GBP": "£3,350"
         },
-        "popular": true
+        "included": [
+          "4x NucleOSS Dental Implants per Arch",
+          "10-12x Fixed Temporary Teeth (Same Visit)",
+          "10-12x Final Permanent Zirconia Teeth",
+          "3D CBCT Surgical Planning Guide",
+          "Local Anesthesia & Post-op Medication Pack",
+          "Airport-Hotel VIP Transfers",
+          "Hotel Stay with Bed & Breakfast",
+          "Full Laboratory Work Included"
+        ]
       },
       {
-        "name": "ALL-ON-6 – MEGAGEN",
-        "brand": "Megagen AnyRidge",
-        "duration": "3+7 Werktage (2 Besuche)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-package-10.jpg",
-        "included": [
-          "6x Megagen Implantate",
-          "12-14x Provisorische Zähne",
-          "12-14x Zirkonbrücke",
-          "Hotel und Transfers"
-        ],
+        "name": "ALL-ON-4 – DXL GERMAN",
+        "brand": "DXL (German Engineering)",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/dxl.webp",
         "price": {
-          "USD": "$8,000",
-          "EUR": "€7,000",
-          "GBP": "£6,000"
-        }
+          "USD": "$5,350",
+          "EUR": "€4,900",
+          "GBP": "£4,200"
+        },
+        "included": [
+          "4x DXL German Titanium Implants",
+          "10-12x Fixed Temporary Teeth",
+          "10-12x Final Permanent Zirconia Teeth",
+          "3D CBCT Surgical Planning Guide",
+          "VIP Airport & Hotel Transfers",
+          "Hotel Stay with Bed & Breakfast",
+          "Full Laboratory & CAD/CAM Milling"
+        ]
       },
       {
-        "name": "ALL-ON-6 – NEODENT",
-        "brand": "Neodent (Straumann Gruppe)",
-        "duration": "3+7 Werktage (2 Besuche)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-implant-package-2.jpg",
-        "included": [
-          "6x Neodent Implantate",
-          "12-14x Provisorische Zähne",
-          "12-14x Zirkonbrücke",
-          "Hotel und Transfers"
-        ],
+        "name": "ALL-ON-4 – STRAUMANN",
+        "brand": "Straumann (Swiss Gold Standard)",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/straumann.webp",
+        "popular": true,
         "price": {
-          "USD": "$8,000",
-          "EUR": "€7,000",
-          "GBP": "£6,000"
-        }
+          "USD": "$8,600",
+          "EUR": "€7,900",
+          "GBP": "£6,800"
+        },
+        "included": [
+          "4x Straumann Swiss Titanium Implants",
+          "10-12x Fixed High-Grade Temporary Teeth",
+          "10-12x Final Monolithic Zirconia Teeth",
+          "Lifetime International Manufacturer Passport",
+          "Luxury 5-Star Hotel Stay Included",
+          "VIP Mercedes Chauffeur Transfers",
+          "Dedicated Personal Patient Host"
+        ]
       },
       {
-        "name": "ALL-ON-6 – HIOSSEN",
-        "brand": "Hiossen USA",
-        "duration": "3+7 Werktage (2 Besuche)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-implant-package-3.jpg",
-        "included": [
-          "6x Hiossen Implantate",
-          "12-14x Provisorische Zähne",
-          "12-14x Zirkonbrücke",
-          "Hotel und Transfers"
-        ],
+        "name": "ALL-ON-4 – MEGAGEN",
+        "brand": "Megagen AnyRidge (Knife-Thread Tech)",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/megagen.webp",
         "price": {
-          "USD": "$7,700",
-          "EUR": "€6,750",
-          "GBP": "£5,780"
-        }
+          "USD": "$5,900",
+          "EUR": "€5,400",
+          "GBP": "£4,650"
+        },
+        "included": [
+          "4x Megagen AnyRidge Implants per Arch",
+          "10-12x Fixed Temporary Teeth",
+          "10-12x Final Zirconia Bridge Teeth",
+          "3D CBCT Tomography & Surgical Guide",
+          "VIP Airport-Hotel Transfers",
+          "Hotel Stay with Bed & Breakfast"
+        ]
+      },
+      {
+        "name": "ALL-ON-4 – NEODENT",
+        "brand": "Neodent (Straumann Group)",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/neodent.webp",
+        "price": {
+          "USD": "$5,700",
+          "EUR": "€5,200",
+          "GBP": "£4,450"
+        },
+        "included": [
+          "4x Neodent Implants per Arch",
+          "10-12x Fixed Temporary Teeth",
+          "10-12x Final Zirconia Bridge Teeth",
+          "3D CBCT Tomography & Planning",
+          "VIP Airport-Hotel Transfers",
+          "Hotel Stay with Bed & Breakfast"
+        ]
+      },
+      {
+        "name": "ALL-ON-4 – HIOSSEN",
+        "brand": "Hiossen (American Brand)",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/hiossen.webp",
+        "price": {
+          "USD": "$5,600",
+          "EUR": "€5,100",
+          "GBP": "£4,380"
+        },
+        "included": [
+          "4x Hiossen American Implants per Arch",
+          "10-12x Fixed Temporary Teeth",
+          "10-12x Final Zirconia Bridge Teeth",
+          "3D CBCT Tomography & Planning",
+          "VIP Airport-Hotel Transfers",
+          "Hotel Stay with Bed & Breakfast"
+        ]
       }
     ],
     "faqsPart1": [
@@ -1542,102 +1556,102 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       "whenAll6Title": "Wann ist All-on-6 die überlegene Wahl?",
       "whenAll6Text": "All-on-6 empfiehlt sich bei ausreichendem Knochen im Seitenzahnbereich (>10 mm), bei Zähneknirschen (Bruxismus) oder bei jüngeren, aktiven Patienten, die einen vollständigen 14-Zähne-Bogen wünschen."
     },
-    "processTitle": "All-on-4 Präzisionsprotokoll: Vom 3D-DVT zur Zirkonbrücke",
-    "processSubtitle": "Jede All-on-4-Behandlung im Master Smile Studio folgt einem strengen computergeführten Protokoll für 98,2 % Erfolg.",
+    "processTitle": "3-Phasen-Präzisionsprotokoll: Von der 3D-Planung bis zum Zirkon-Unikat",
+    "processSubtitle": "Jede All-on-6 Behandlung bei Master Smile Studio folgt einem strengen navigierten 3D-Chirurgie- und Roboter-Fräsprotokoll.",
     "processCards": [
       {
         "step": "PHASE 01",
-        "title": "3D-DVT-Diagnostik & Bohrschablone",
-        "text": "Hochauflösende 3D-Volumentomographie vermisst Knochendichte und Nervenbahnen. Die 45-Grad-Winkelung wird virtuell exakt festgelegt.",
+        "title": "3D-DVT Virtuelle OP & Navigierte Bohrschablone",
+        "text": "Hochauflösende 3D-DVT-Röntgenbilder erfassen die Knochendichte in Hounsfield-Einheiten und Nervenbahnen. Eine individuelle 3D-Bohrschablone führt alle 6 Implantate mit Submillimeter-Präzision.",
         "specs": [
           {
-            "key": "Precision",
+            "key": "Präzision",
             "val": "< 0.1 mm"
           },
           {
-            "key": "Implant Angulation",
-            "val": "45° Posterior Tilted"
+            "key": "Schnittführung",
+            "val": "Minimalinvasiv geführt"
           },
           {
-            "key": "Bone Grafting",
-            "val": "Zero Graft (Bypassed)"
+            "key": "Knochenanalyse",
+            "val": "3D-Hounsfield-Skala"
           }
         ]
       },
       {
         "step": "PHASE 02",
-        "title": "Feste Zähne in 24 Stunden",
-        "text": "Auf Multi-Unit-Abutments mit >35 Ncm wird innerhalb von 24 Stunden eine festsitzende provisorische Brücke verschraubt.",
+        "title": "Feste provisorische Zähne innerhalb von 24 Stunden",
+        "text": "Bei einem Primärtork von 35–50 Ncm werden Multi-Unit-Abutments verschraubt. Innerhalb von 24 Stunden wird eine festsitzende provisorische Brücke eingesetzt – Sie sind vom ersten Tag an voll versorgt.",
         "specs": [
           {
-            "key": "Insertion Torque",
+            "key": "Eindrehmoment",
             "val": "35 – 50 Ncm"
           },
           {
-            "key": "Delivery Time",
-            "val": "24 Hours"
+            "key": "Fertigstellung",
+            "val": "Innerhalb von 24h"
           },
           {
-            "key": "Retention",
-            "val": "Screw-Retained"
+            "key": "Funktion",
+            "val": "Sofortige weiche Kost"
           }
         ]
       },
       {
         "step": "PHASE 03",
-        "title": "CAD/CAM Monolithische Zirkonbrücke",
-        "text": "Nach 3 Monaten Einheilung wird die endgültige 1200+ MPa Monolithische Zirkonbrücke 5-achsig robotisch gefräst.",
+        "title": "5-Achs-CAD/CAM Monolithisches Zirkon",
+        "text": "Nach 3 Monaten Einheilphase erfasst ein 3D-Intraoralscan die exakte Implantatposition. Eine monolithische Mehrschicht-Zirkonbrücke (1200+ MPa) wird robotergefräst und bei 1500°C gesintert.",
         "specs": [
           {
-            "key": "Flexural Strength",
+            "key": "Biegefestigkeit",
             "val": "1200 – 1400 MPa"
           },
           {
-            "key": "Substructure",
-            "val": "Solid Zirconia + Titanium"
+            "key": "Materialqualität",
+            "val": "100% deutsches Zirkon"
           },
           {
-            "key": "Longevity",
-            "val": "Lifetime Warranty"
+            "key": "Sintertemperatur",
+            "val": "1500°C Hochdichte"
           }
         ]
       }
     ],
-    "costTitle": "Internationaler Preis- & Leistungsvergleich: UK / Deutschland vs. Istanbul",
-    "costSubtitle": "Erfahren Sie, warum tausende europäische Patienten Master Smile Studio für All-on-6 wählen – ohne Kompromisse bei der Materialqualität.",
+    "costTitle": "Internationaler Preisvergleich: UK / Deutschland vs. Istanbul (All-on-4)",
+    "costSubtitle": "Erfahren Sie, warum tausende europäische Patienten das Master Smile Studio für ihre All-on-4-Behandlung ohne Qualitätskompromisse wählen.",
     "costTableHeaders": {
-      "country": "Land / Klinik-Standard",
-      "costPerArch": "All-on-6 Kosten (pro Kiefer)",
-      "inclusions": "Im Preis enthaltene Leistungen",
+      "country": "Standort & Klinikebene",
+      "costPerArch": "All-on-4 Kosten (Pro Kiefer)",
+      "inclusions": "Inbegriffene Leistungen",
       "valueAdvantage": "Master Smile Studio Vorteil"
     },
     "costTableRows": [
       {
-        "country": "Großbritannien (Harley Street / Privatklinik)",
-        "costPerArch": "£14.000 – £18.000",
-        "inclusions": "Nur OP und Standardbrücke. 3D-DVT, Provisorien und Nachkontrollen werden extra berechnet.",
-        "valueAdvantage": "65% – 70% Ersparnis (£4.700 – £8.600) bei originalen Straumann/deutschen Systemen."
+        "country": "Großbritannien (Harley Street / Private Kliniken)",
+        "costPerArch": "£10,000 – £14,000 ($12,800 – $17,900)",
+        "inclusions": "Nur Operation und Standardbrücke. 3D-DVT, Provisorium, Sedierung und Nachsorge werden extra berechnet.",
+        "valueAdvantage": "65 % – 70 % Ersparnis (£3.350 – £6.800 bei uns) auf Schweizer/Deutsche Originalsysteme."
       },
       {
-        "country": "Deutschland / Schweiz (Privatzahnarzt)",
-        "costPerArch": "€13.000 – €17.000",
-        "inclusions": "Chirurgie und Laborkosten. Hotelübernachtungen, VIP-Transfers und Medikamente nicht enthalten.",
-        "valueAdvantage": "60% – 65% Ersparnis (€5.500 – €10.000) bei identischem deutschem/Schweizer Titan."
+        "country": "Deutschland / Schweiz (Private Zahnkliniken)",
+        "costPerArch": "€9,500 – €13,500 ($10,500 – $14,900)",
+        "inclusions": "Chirurgische Gebühren und Labor. Hotelunterkunft, VIP-Transfers und Medikamente nicht enthalten.",
+        "valueAdvantage": "60 % – 65 % Ersparnis (€3.900 – €7.900 bei uns) bei identischem deutschem/schweizerischem Titan."
       },
       {
-        "country": "Master Smile Studio (Istanbul, Türkei)",
-        "costPerArch": "€5.500 – €10.000 / £4.700 – £8.600",
-        "inclusions": "All-inclusive: 6 Implantate, provisorische Zähne, Zirkonbrücke, 3D-DVT, 5-Sterne-Hotel, VIP-Transfers, lebenslange Garantie.",
-        "valueAdvantage": "Garantierter Festpreis ohne versteckte Zusatzkosten mit erstklassigem VIP-Service."
+        "country": "Master Smile Studio (Istanbul, Türkei) ⭐",
+        "costPerArch": "€3,900 – €7,900 / £3,350 – £6,800",
+        "inclusions": "100 % All-Inclusive: 4 Implantate, feste provisorische Brücke, endgültige Zirkonbrücke, 3D-DVT, 5-Sterne-Hotel, VIP-Transfers, lebenslanger Garantiepass.",
+        "valueAdvantage": "100 % transparente Festpreis-Garantie ohne versteckte medizinische Kosten."
       }
     ]
   },
   "pl": {
-    "introBadge": "NATYCHMIASTOWO OBCIAŻANY STAŁY ŁUK ZĘBOWY",
-    "introTitle": "Implanty All-on-4 w Stambule: Stałe Zęby w 24 Godziny bez Sinus Liftu",
-    "introLead": "Nawet przy zaawansowanym zaniku kości, 4 implanty tytanowe wprowadzone pod kątem 45 stopni pozwalają ominąć zatoki i zamocować stałe zęby w 24 godziny bez konieczności przeszczepu kości.",
-    "introP1": "Koncepcja All-on-4 to biomechaniczny przełom dla pacjentów z zanikiem kości. Kątowe wprowadzenie implantów bocznych maksymalizuje stabilizację w gęstej kości przedniej bez konieczności augmentacji.",
-    "introP2": "Dzięki nawigacji 3D CBCT implanty osiągają stabilizację ponad 35–50 Ncm, co pozwala na zamocowanie stałego mostu tymczasowego w 24 godziny, a po 3 miesiącach ostatecznego mostu z niemieckiego cyrkonu 1200+ MPa.",
+    "introBadge": "MAKSYMALNA STABILNOŚĆ ZGRYZU",
+    "introTitle": "Implanty All-on-6 w Stambule, Turcja",
+    "introLead": "Odbudowa pełnego łuku 14 zębów na 6 implantach tytanowych — najwyższa siła żucia i trwałość strukturalna.",
+    "introP1": "W Master Smile Studio metoda All-on-6 stanowi szczytowe osiągnięcie stałej rekonstrukcji bezzębia. Rozkładając siły żucia na sześć strategicznie rozmieszczonych implantów tytanowych, zabieg ten zapewnia bezkompromisową stabilność łuku 14 zębów. Każdy zabieg planowany jest cyfrowo w 3D i wykonywany bezpośrednio przez naszych głównych chirurgów.",
+    "introP2": "Protokół All-on-6 opiera się na dwóch implantach przednich oraz czterech bocznych. Taka szeroka podstawa równomiernie przenosi obciążenia na kość, eliminując naprężenia i umożliwiając pacjentom o silnym zgryzie swobodne spożywanie wszelkich pokarmów.",
     "introP3Lead": "W zależności od warunków anatomicznych poznaj także nasze ",
     "introP3LinkAll4": "Implanty All-on-4",
     "introP3Mid": ", dedykowane ",
@@ -1645,8 +1659,8 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "introP3And": " oraz ",
     "introP3LinkSinus": "Zabieg Podniesienia Dna Zatoki",
     "introP3Tail": " w naszej klinice w Stambule.",
-    "materialsTitle": "Materiały Mostów All-on-6: Dlaczego Wybieramy Monolityczny Cyrkon?",
-    "materialsSubtitle": "W protokole All-on-6 6 implantów przenosi całą siłę żucia (od 200 do 600 N). Zobacz, dlaczego standardowo wykonujemy mosty w 100% z monolitycznego cyrkonu zamiast nietrwałego akrylu lub metalu.",
+    "materialsTitle": "Materiały Mostów All-on-4: Dlaczego Stosujemy Monolityczny Cyrkon",
+    "materialsSubtitle": "W All-on-4 tylko 4 implanty przenoszą całą siłę żucia szczęki (od 200 do 600 N). Zobacz, dlaczego wykonujemy wyłącznie lity cyrkon wielowarstwowy zamiast taniego akrylu czy kruchej porcelany.",
     "materialsSpecLabels": {
       "material": "Typ Materiału",
       "strength": "Wytrzymałość na Zginanie",
@@ -1779,8 +1793,8 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "pfm": "8 – 12 Lat"
       }
     ],
-    "packagesTitle": "Pakiety i Ceny Implantów All-on-6 w Stambule",
-    "packagesSubtitle": "Przejrzyste ceny all-inclusive za łuk zębowy z 6 implantami tytanowymi, mostem cyrkonowym, hotelem 5-gwiazdkowym i transferami VIP.",
+    "packagesTitle": "Pakiety i Ceny Implantów All-on-4 w Stambule",
+    "packagesSubtitle": "Przejrzyste pakiety all-inclusive za cały łuk z 4 implantami tytanowymi premium, mostem cyrkonowym CAD/CAM, hotelem 5* i transferami VIP.",
     "durationLabel": "Czas Trwania Leczenia:",
     "includedLabel": "Co zawiera ten pakiet:",
     "pricePerArchLabel": "Cena za 1 łuk zębowy",
@@ -1792,116 +1806,123 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "faqGroup2Title": "Turystyka Medyczna, Pakiet i Gwarancja",
     "packages": [
       {
-        "name": "ALL-ON-6 – NUCLEOSS",
-        "brand": "NucleOSS (Turecka Jakość Premium)",
-        "duration": "3+7 Dni Roboczych (2 Wizyty)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-1.jpg",
-        "included": [
-          "6x Implantów Tytanowych NucleOSS na łuk",
-          "12-14x Stałych Zębów Tymczasowych",
-          "12-14x Ostatecznych Zębów Cyrkonowych",
-          "Tomografia 3D CBCT i Szablon Chirurgiczny",
-          "Znieczulenie i Zestaw Leków",
-          "Transfery VIP Lotnisko-Hotel",
-          "Pobyt w Hotelu ze Śniadaniem",
-          "Pełne Prace Laboratoryjne"
-        ],
+        "name": "ALL-ON-4 – NUCLEOSS",
+        "brand": "NucleOSS (Grade 4 Pure Titanium)",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/nucleoss.webp",
         "price": {
-          "USD": "$6,400",
-          "EUR": "€5,500",
-          "GBP": "£4,700"
-        }
-      },
-      {
-        "name": "ALL-ON-6 – DXL GERMAN",
-        "brand": "DXL (Niemiecka Inżynieria)",
-        "duration": "3+7 Dni Roboczych (2 Wizyty)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-2.jpg",
-        "included": [
-          "6x Niemieckich Implantów DXL",
-          "12-14x Zębów Tymczasowych",
-          "12-14x Mostu Cyrkonowego",
-          "Planowanie 3D CBCT",
-          "Transfery VIP i Hotel w Cenie",
-          "Prace Laboratoryjne CAD/CAM"
-        ],
-        "price": {
-          "USD": "$7,500",
-          "EUR": "€6,500",
-          "GBP": "£5,600"
-        }
-      },
-      {
-        "name": "ALL-ON-6 – STRAUMANN",
-        "brand": "Straumann (Szwajcarski Złoty Standard)",
-        "duration": "3+7 Dni Roboczych (2 Wizyty)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-3.jpg",
-        "included": [
-          "6x Szwajcarskich Implantów Straumann",
-          "12-14x Zębów Tymczasowych Premium",
-          "12-14x Monolitycznych Zębów Cyrkonowych",
-          "Międzynarodowy Paszport z Dożywotnią Gwarancją",
-          "Luksusowy Hotel 5-Gwiazdkowy",
-          "Transfery VIP Mercedesem z Szoferem",
-          "Osobisty Opiekun Pacjenta"
-        ],
-        "price": {
-          "USD": "$11,600",
-          "EUR": "€10,000",
-          "GBP": "£8,600"
+          "USD": "$4,250",
+          "EUR": "€3,900",
+          "GBP": "£3,350"
         },
-        "popular": true
+        "included": [
+          "4x NucleOSS Dental Implants per Arch",
+          "10-12x Fixed Temporary Teeth (Same Visit)",
+          "10-12x Final Permanent Zirconia Teeth",
+          "3D CBCT Surgical Planning Guide",
+          "Local Anesthesia & Post-op Medication Pack",
+          "Airport-Hotel VIP Transfers",
+          "Hotel Stay with Bed & Breakfast",
+          "Full Laboratory Work Included"
+        ]
       },
       {
-        "name": "ALL-ON-6 – MEGAGEN",
-        "brand": "Megagen AnyRidge",
-        "duration": "3+7 Dni Roboczych (2 Wizyty)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-package-10.jpg",
-        "included": [
-          "6x Implantów Megagen",
-          "12-14x Zębów Tymczasowych",
-          "12-14x Most Cyrkonowy",
-          "Hotel i Transfery"
-        ],
+        "name": "ALL-ON-4 – DXL GERMAN",
+        "brand": "DXL (German Engineering)",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/dxl.webp",
         "price": {
-          "USD": "$8,000",
-          "EUR": "€7,000",
-          "GBP": "£6,000"
-        }
+          "USD": "$5,350",
+          "EUR": "€4,900",
+          "GBP": "£4,200"
+        },
+        "included": [
+          "4x DXL German Titanium Implants",
+          "10-12x Fixed Temporary Teeth",
+          "10-12x Final Permanent Zirconia Teeth",
+          "3D CBCT Surgical Planning Guide",
+          "VIP Airport & Hotel Transfers",
+          "Hotel Stay with Bed & Breakfast",
+          "Full Laboratory & CAD/CAM Milling"
+        ]
       },
       {
-        "name": "ALL-ON-6 – NEODENT",
-        "brand": "Neodent (Grupa Straumann)",
-        "duration": "3+7 Dni Roboczych (2 Wizyty)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-implant-package-2.jpg",
-        "included": [
-          "6x Implantów Neodent",
-          "12-14x Zębów Tymczasowych",
-          "12-14x Most Cyrkonowy",
-          "Hotel i Transfery"
-        ],
+        "name": "ALL-ON-4 – STRAUMANN",
+        "brand": "Straumann (Swiss Gold Standard)",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/straumann.webp",
+        "popular": true,
         "price": {
-          "USD": "$8,000",
-          "EUR": "€7,000",
-          "GBP": "£6,000"
-        }
+          "USD": "$8,600",
+          "EUR": "€7,900",
+          "GBP": "£6,800"
+        },
+        "included": [
+          "4x Straumann Swiss Titanium Implants",
+          "10-12x Fixed High-Grade Temporary Teeth",
+          "10-12x Final Monolithic Zirconia Teeth",
+          "Lifetime International Manufacturer Passport",
+          "Luxury 5-Star Hotel Stay Included",
+          "VIP Mercedes Chauffeur Transfers",
+          "Dedicated Personal Patient Host"
+        ]
       },
       {
-        "name": "ALL-ON-6 – HIOSSEN",
-        "brand": "Hiossen USA",
-        "duration": "3+7 Dni Roboczych (2 Wizyty)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-implant-package-3.jpg",
-        "included": [
-          "6x Implantów Hiossen",
-          "12-14x Zębów Tymczasowych",
-          "12-14x Most Cyrkonowy",
-          "Hotel i Transfery"
-        ],
+        "name": "ALL-ON-4 – MEGAGEN",
+        "brand": "Megagen AnyRidge (Knife-Thread Tech)",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/megagen.webp",
         "price": {
-          "USD": "$7,700",
-          "EUR": "€6,750",
-          "GBP": "£5,780"
-        }
+          "USD": "$5,900",
+          "EUR": "€5,400",
+          "GBP": "£4,650"
+        },
+        "included": [
+          "4x Megagen AnyRidge Implants per Arch",
+          "10-12x Fixed Temporary Teeth",
+          "10-12x Final Zirconia Bridge Teeth",
+          "3D CBCT Tomography & Surgical Guide",
+          "VIP Airport-Hotel Transfers",
+          "Hotel Stay with Bed & Breakfast"
+        ]
+      },
+      {
+        "name": "ALL-ON-4 – NEODENT",
+        "brand": "Neodent (Straumann Group)",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/neodent.webp",
+        "price": {
+          "USD": "$5,700",
+          "EUR": "€5,200",
+          "GBP": "£4,450"
+        },
+        "included": [
+          "4x Neodent Implants per Arch",
+          "10-12x Fixed Temporary Teeth",
+          "10-12x Final Zirconia Bridge Teeth",
+          "3D CBCT Tomography & Planning",
+          "VIP Airport-Hotel Transfers",
+          "Hotel Stay with Bed & Breakfast"
+        ]
+      },
+      {
+        "name": "ALL-ON-4 – HIOSSEN",
+        "brand": "Hiossen (American Brand)",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/hiossen.webp",
+        "price": {
+          "USD": "$5,600",
+          "EUR": "€5,100",
+          "GBP": "£4,380"
+        },
+        "included": [
+          "4x Hiossen American Implants per Arch",
+          "10-12x Fixed Temporary Teeth",
+          "10-12x Final Zirconia Bridge Teeth",
+          "3D CBCT Tomography & Planning",
+          "VIP Airport-Hotel Transfers",
+          "Hotel Stay with Bed & Breakfast"
+        ]
       }
     ],
     "faqsPart1": [
@@ -2034,102 +2055,102 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       "whenAll6Title": "Kiedy All-on-6 jest wyborem nadrzędnym?",
       "whenAll6Text": "All-on-6 jest zalecany przy odpowiedniej wysokości kości bocznej (>10 mm), u osób z bruksizmem (zgrzytaniem zębami) oraz u pacjentów oczekujących pełnego łuku 14 zębów o najwyższej wytrzymałości."
     },
-    "processTitle": "Protokół Precyzji All-on-4: Od Tomografii 3D do Mostu Cyrkonowego",
-    "processSubtitle": "Każdy zabieg All-on-4 w Master Smile Studio prowadzony jest z użyciem cyfrowego szablonu dla 98,2% skuteczności.",
+    "processTitle": "3-Etapowy Protokół Precyzyjny: Od Cyfrowego 3D do Stałego Cyrkonu",
+    "processSubtitle": "Każdy zabieg All-on-6 w Master Smile Studio realizowany jest w oparciu o cyfrowe szablony chirurgiczne i frezowanie robotyczne.",
     "processCards": [
       {
-        "step": "PHASE 01",
+        "step": "ETAP 01",
         "title": "Tomografia 3D CBCT i Szablon Chirurgiczny",
-        "text": "Tomografia 3D skanuje przebieg nerwów i zatok. Szablon wyznacza optymalny kąt 45 stopni dla implantów bocznych.",
+        "text": "Tomografia 3D o wysokiej rozdzielczości analizuje gęstość kości w jednostkach Hounsfielda oraz przebieg nerwów. Dedykowany szablon chirurgiczny pozycjonuje 6 implantów z dokładnością poniżej 0,1 mm.",
         "specs": [
           {
-            "key": "Precision",
+            "key": "Precyzja",
             "val": "< 0.1 mm"
           },
           {
-            "key": "Implant Angulation",
-            "val": "45° Posterior Tilted"
+            "key": "Zabieg",
+            "val": "Małoinwazyjny z nawigacją"
           },
           {
-            "key": "Bone Grafting",
-            "val": "Zero Graft (Bypassed)"
+            "key": "Badanie Kości",
+            "val": "Skala Hounsfielda 3D"
           }
         ]
       },
       {
-        "step": "PHASE 02",
-        "title": "Stały Most Tymczasowy w 24h",
-        "text": "Na łącznikach Multi-Unit montowany jest przykręcany most tymczasowy w 24 godziny, zapewniając natychmiastową estetykę.",
+        "step": "ETAP 02",
+        "title": "Stałe Zęby Tymczasowe w 24 Godziny",
+        "text": "Gdy siła dokręcenia implantów osiąga 35–50 Ncm, montowane są łączniki multi-unit. W ciągu 24 godzin przykręcany jest stały most tymczasowy, zapewniając natychmiastową funkcjonalność.",
         "specs": [
           {
-            "key": "Insertion Torque",
+            "key": "Moment Wkręcania",
             "val": "35 – 50 Ncm"
           },
           {
-            "key": "Delivery Time",
-            "val": "24 Hours"
+            "key": "Czas Oddania",
+            "val": "W 24 godziny"
           },
           {
-            "key": "Retention",
-            "val": "Screw-Retained"
+            "key": "Funkcja",
+            "val": "Natychmiastowa miękka dieta"
           }
         ]
       },
       {
-        "step": "PHASE 03",
-        "title": "Monolityczny Most Cyrkonowy CAD/CAM",
-        "text": "Po 3 miesiącach frezujemy w technologii 5-osiowej ostateczny most z niemieckiego wielowarstwowego cyrkonu (1200+ MPa).",
+        "step": "ETAP 03",
+        "title": "5-Osiowe Frezowanie CAD/CAM Cyrkonu Monolitycznego",
+        "text": "Po 3 miesiącach gojenia skaner wewnątrzustny 3D rejestruje ułożenie implantów. Monolityczny most z niemieckiego cyrkonu (1200+ MPa) jest frezowany cyfrowo i spiekany w 1500°C.",
         "specs": [
           {
-            "key": "Flexural Strength",
+            "key": "Wytrzymałość",
             "val": "1200 – 1400 MPa"
           },
           {
-            "key": "Substructure",
-            "val": "Solid Zirconia + Titanium"
+            "key": "Materiał",
+            "val": "Lity Cyrkon Niemiecki"
           },
           {
-            "key": "Longevity",
-            "val": "Lifetime Warranty"
+            "key": "Temp. Spiekania",
+            "val": "1500°C Wysoka Gęstość"
           }
         ]
       }
     ],
-    "costTitle": "Międzynarodowe Porównanie Cen i Standardu: UK / Niemcy vs. Stambuł",
-    "costSubtitle": "Zobacz, dlaczego pacjenci z całej Europy wybierają Master Smile Studio na zabieg All-on-6 bez kompromisów jakościowych.",
+    "costTitle": "Międzynarodowe Porównanie Cen: UK / Niemcy vs. Stambuł (All-on-4)",
+    "costSubtitle": "Zobacz, dlaczego tysiące pacjentów z Europy wybiera Master Smile Studio do odbudowy All-on-4 bez kompromisów jakościowych.",
     "costTableHeaders": {
-      "country": "Kraj / Standard Kliniki",
-      "costPerArch": "Koszt All-on-6 (za 1 łuk)",
-      "inclusions": "Co jest wliczone w cenę",
-      "valueAdvantage": "Przewaga Master Smile Studio"
+      "country": "Lokalizacja i Standard Kliniki",
+      "costPerArch": "Koszt All-on-4 (Za 1 Łuk)",
+      "inclusions": "Zakres Usług w Cenie",
+      "valueAdvantage": "Korzyść Master Smile Studio"
     },
     "costTableRows": [
       {
-        "country": "Wielka Brytania (Harley Street / Prywatnie)",
-        "costPerArch": "£14,000 – £18,000",
-        "inclusions": "Tylko zabieg i most standardowy. Tomografia 3D, zęby tymczasowe i wizyty płatne osobno.",
-        "valueAdvantage": "65% – 70% Oszczędności (£4,700 – £8,600) na systemach Straumann/DXL."
+        "country": "Wielka Brytania (Harley Street / Kliniki Prywatne)",
+        "costPerArch": "£10,000 – £14,000 ($12,800 – $17,900)",
+        "inclusions": "Tylko zabieg i standardowy most. Tomografia 3D, zęby tymczasowe i sedacja płatne dodatkowo.",
+        "valueAdvantage": "Oszczędność 65% – 70% (£3,350 – £6,800 u nas) na oryginalnych systemach szwajcarskich/niemieckich."
       },
       {
         "country": "Niemcy / Szwajcaria (Kliniki Prywatne)",
-        "costPerArch": "€13,000 – €17,000",
-        "inclusions": "Zabieg i laboratorium. Koszty hotelu, transferów i leków nie są pokrywane.",
-        "valueAdvantage": "60% – 65% Oszczędności (€5,500 – €10,000) przy tym samym tytanie."
+        "costPerArch": "€9,500 – €13,500 ($10,500 – $14,900)",
+        "inclusions": "Koszty chirurgiczne i laboratoryjne. Hotel, transfery VIP i leki nie są wliczone.",
+        "valueAdvantage": "Oszczędność 60% – 65% (€3,900 – €7,900 u nas) z identycznym tytanem niemieckim/szwajcarskim."
       },
       {
-        "country": "Master Smile Studio (Stambuł, Turcja)",
-        "costPerArch": "€5,500 – €10,000 / £4,700 – £8,600",
-        "inclusions": "Pakiet All-Inclusive: 6 Implantów, Most Tymczasowy, Most Cyrkonowy, Tomografia 3D, Hotel 5*, Transfery VIP Mercedes, Dożywotnia Gwarancja.",
-        "valueAdvantage": "Gwarancja Stałej Ceny bez ukrytych opłat i luksusowa obsługa pacjenta."
+        "country": "Master Smile Studio (Stambuł, Turcja) ⭐",
+        "costPerArch": "€3,900 – €7,900 / £3,350 – £6,800",
+        "inclusions": "100% All-Inclusive: 4 Implanty, Stały Most Tymczasowy, Ostateczny Most Cyrkonowy, Tomografia 3D, Hotel 5*, Transfery VIP, Dożywotni Paszport Gwarancyjny.",
+        "valueAdvantage": "100% gwarancja stałej, przejrzystej ceny pakietowej bez ukrytych opłat."
       }
     ]
   },
   "pt": {
-    "introBadge": "CARGA IMEDIATA DE ARCADA COMPLETA",
-    "introTitle": "Implantes Dentários All-on-4 em Istambul: Dentes Fixos em 24 Horas sem Enxerto",
-    "introLead": "Mesmo com perda óssea severa, 4 implantes angulados a 45 graus contornam o seio maxilar e sustentam uma arcada fixa completa em 24 horas sem necessidade de enxertos invasivos.",
-    "introP1": "O protocolo All-on-4 é um avanço biomecânico comprovado. A inclinação de 45 graus dos implantes posteriores maximiza o contato ósseo e elimina cirurgias complexas de levantamento de seio nasal.",
-    "introP2": "Com planejamento 3D CBCT, os implantes atingem torque primário acima de 35–50 Ncm. Em 24 horas fixamos uma ponte provisória aparafusada e, após 3 meses, a ponte definitiva em zircônia alemã 1200+ MPa.",
+    "introBadge": "ESTABILIDADE OCLUSAL MÁXIMA",
+    "introTitle": "Implantes Dentários All-on-6 em Istambul, Turquia",
+    "introLead": "Restauração completa de 14 dentes sobre 6 implantes de titânio — máxima força mastigatória e estabilidade estrutural.",
+    "introP1": "No Master Smile Studio, o procedimento All-on-6 representa o padrão mais elevado em reabilitação oral fixa. Ao distribuir as forças oclusais em seis implantes de titânio estrategicamente posicionados, este tratamento proporciona uma estabilidade incomparável para uma arcada completa de 14 dentes.",
+    "introP2": "O protocolo All-on-6 fixa dois implantes anteriores e quatro posteriores. Essa base ampla distribui a mastigação uniformemente, eliminando a tensão dos cantilevers e permitindo que pacientes com forte mordida mastiguem com total liberdade.",
     "introP3Lead": "Conheça também na nossa clínica os tratamentos de ",
     "introP3LinkAll4": "Implantes All-on-4",
     "introP3Mid": ", ",
@@ -2137,8 +2158,8 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "introP3And": " e ",
     "introP3LinkSinus": "Elevação do Seio Maxilar (Sinus Lift)",
     "introP3Tail": " em Istambul.",
-    "materialsTitle": "Materiais de Prótese All-on-6: Por que Usamos Zircônia Monolítica",
-    "materialsSubtitle": "No All-on-6, 6 implantes suportam toda a força mastigatória da mandíbula (200 a 600 Newtons). Saiba por que produzimos exclusivamente Zircônia Monolítica Multicamadas em vez de acrílico ou metal.",
+    "materialsTitle": "Materiais da Prótese All-on-4: Por que Usamos Zircônia Monolítica",
+    "materialsSubtitle": "No All-on-4, 4 implantes suportam toda a carga mastigatória da mandíbula (200 a 600 Newtons). Descubra por que produzimos exclusivamente Zircônia Monolítica Multicamadas em vez de acrílico ou porcelana frágil.",
     "materialsSpecLabels": {
       "material": "Tipo de Material",
       "strength": "Resistência Flexural",
@@ -2271,8 +2292,8 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "pfm": "8 – 12 Anos"
       }
     ],
-    "packagesTitle": "Pacotes e Preços de Implantes All-on-6 em Istambul",
-    "packagesSubtitle": "Preços transparentes com tudo incluído por arcada com 6 implantes de titânio, ponte de zircônia, hotel 5 estrelas e transfers VIP.",
+    "packagesTitle": "Pacotes e Preços de Implantes All-on-4 em Istambul",
+    "packagesSubtitle": "Preços transparentes all-inclusive por arcada com 4 implantes de titânio premium, ponte de zircônia CAD/CAM, hotel 5 estrelas e transfers VIP.",
     "durationLabel": "Duração do Tratamento:",
     "includedLabel": "O que está incluído neste pacote:",
     "pricePerArchLabel": "Preço por arcada dentária",
@@ -2284,116 +2305,123 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "faqGroup2Title": "Turismo de Saúde, Pacotes e Garantia",
     "packages": [
       {
-        "name": "ALL-ON-6 – NUCLEOSS",
-        "brand": "NucleOSS (Qualidade Premium Turca)",
-        "duration": "3+7 Dias Úteis (2 Visitas)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-1.jpg",
-        "included": [
-          "6x Implantes de Titânio NucleOSS por arcada",
-          "12-14x Dentes Provisórios Fixos no mesmo dia",
-          "12-14x Dentes Definitivos de Zircônia",
-          "Tomografia 3D CBCT e Guia Cirúrgico",
-          "Anestesia Local e Kit de Medicamentos",
-          "Transfers VIP Aeroporto-Hotel",
-          "Hospedagem em Hotel com Café da Manhã",
-          "Trabalho Laboratorial Completo"
-        ],
+        "name": "ALL-ON-4 – NUCLEOSS",
+        "brand": "NucleOSS (Grade 4 Pure Titanium)",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/nucleoss.webp",
         "price": {
-          "USD": "$6,400",
-          "EUR": "€5,500",
-          "GBP": "£4,700"
-        }
-      },
-      {
-        "name": "ALL-ON-6 – DXL GERMAN",
-        "brand": "DXL (Engenharia Alemã)",
-        "duration": "3+7 Dias Úteis (2 Visitas)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-2.jpg",
-        "included": [
-          "6x Implantes Alemães DXL",
-          "12-14x Dentes Provisórios Fixos",
-          "12-14x Ponte Definitiva de Zircônia",
-          "Tomografia 3D CBCT & Planejamento",
-          "Transfers VIP e Hotel Incluídos",
-          "Laboratório e Fresagem CAD/CAM"
-        ],
-        "price": {
-          "USD": "$7,500",
-          "EUR": "€6,500",
-          "GBP": "£5,600"
-        }
-      },
-      {
-        "name": "ALL-ON-6 – STRAUMANN",
-        "brand": "Straumann (Padrão Ouro Suíço)",
-        "duration": "3+7 Dias Úteis (2 Visitas)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-3.jpg",
-        "included": [
-          "6x Implantes Suíços Straumann",
-          "12-14x Dentes Provisórios Fixos Premium",
-          "12-14x Dentes Definitivos em Zircônia Monolítica",
-          "Passaporte de Garantia Vitalícia do Fabricante",
-          "Hospedagem em Hotel 5 Estrelas de Luxo",
-          "Transfers VIP Mercedes com Motorista",
-          "Coordenador de Paciente Dedicado"
-        ],
-        "price": {
-          "USD": "$11,600",
-          "EUR": "€10,000",
-          "GBP": "£8,600"
+          "USD": "$4,250",
+          "EUR": "€3,900",
+          "GBP": "£3,350"
         },
-        "popular": true
+        "included": [
+          "4x NucleOSS Dental Implants per Arch",
+          "10-12x Fixed Temporary Teeth (Same Visit)",
+          "10-12x Final Permanent Zirconia Teeth",
+          "3D CBCT Surgical Planning Guide",
+          "Local Anesthesia & Post-op Medication Pack",
+          "Airport-Hotel VIP Transfers",
+          "Hotel Stay with Bed & Breakfast",
+          "Full Laboratory Work Included"
+        ]
       },
       {
-        "name": "ALL-ON-6 – MEGAGEN",
-        "brand": "Megagen AnyRidge",
-        "duration": "3+7 Dias Úteis (2 Visitas)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-package-10.jpg",
-        "included": [
-          "6x Implantes Megagen",
-          "12-14x Dentes Provisórios",
-          "12-14x Ponte Zircônia",
-          "Hotel e Transfers"
-        ],
+        "name": "ALL-ON-4 – DXL GERMAN",
+        "brand": "DXL (German Engineering)",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/dxl.webp",
         "price": {
-          "USD": "$8,000",
-          "EUR": "€7,000",
-          "GBP": "£6,000"
-        }
+          "USD": "$5,350",
+          "EUR": "€4,900",
+          "GBP": "£4,200"
+        },
+        "included": [
+          "4x DXL German Titanium Implants",
+          "10-12x Fixed Temporary Teeth",
+          "10-12x Final Permanent Zirconia Teeth",
+          "3D CBCT Surgical Planning Guide",
+          "VIP Airport & Hotel Transfers",
+          "Hotel Stay with Bed & Breakfast",
+          "Full Laboratory & CAD/CAM Milling"
+        ]
       },
       {
-        "name": "ALL-ON-6 – NEODENT",
-        "brand": "Neodent (Grupo Straumann)",
-        "duration": "3+7 Dias Úteis (2 Visitas)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-implant-package-2.jpg",
-        "included": [
-          "6x Implantes Neodent",
-          "12-14x Dentes Provisórios",
-          "12-14x Ponte Zircônia",
-          "Hotel e Transfers"
-        ],
+        "name": "ALL-ON-4 – STRAUMANN",
+        "brand": "Straumann (Swiss Gold Standard)",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/straumann.webp",
+        "popular": true,
         "price": {
-          "USD": "$8,000",
-          "EUR": "€7,000",
-          "GBP": "£6,000"
-        }
+          "USD": "$8,600",
+          "EUR": "€7,900",
+          "GBP": "£6,800"
+        },
+        "included": [
+          "4x Straumann Swiss Titanium Implants",
+          "10-12x Fixed High-Grade Temporary Teeth",
+          "10-12x Final Monolithic Zirconia Teeth",
+          "Lifetime International Manufacturer Passport",
+          "Luxury 5-Star Hotel Stay Included",
+          "VIP Mercedes Chauffeur Transfers",
+          "Dedicated Personal Patient Host"
+        ]
       },
       {
-        "name": "ALL-ON-6 – HIOSSEN",
-        "brand": "Hiossen USA",
-        "duration": "3+7 Dias Úteis (2 Visitas)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-implant-package-3.jpg",
-        "included": [
-          "6x Implantes Hiossen",
-          "12-14x Dentes Provisórios",
-          "12-14x Ponte Zircônia",
-          "Hotel e Transfers"
-        ],
+        "name": "ALL-ON-4 – MEGAGEN",
+        "brand": "Megagen AnyRidge (Knife-Thread Tech)",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/megagen.webp",
         "price": {
-          "USD": "$7,700",
-          "EUR": "€6,750",
-          "GBP": "£5,780"
-        }
+          "USD": "$5,900",
+          "EUR": "€5,400",
+          "GBP": "£4,650"
+        },
+        "included": [
+          "4x Megagen AnyRidge Implants per Arch",
+          "10-12x Fixed Temporary Teeth",
+          "10-12x Final Zirconia Bridge Teeth",
+          "3D CBCT Tomography & Surgical Guide",
+          "VIP Airport-Hotel Transfers",
+          "Hotel Stay with Bed & Breakfast"
+        ]
+      },
+      {
+        "name": "ALL-ON-4 – NEODENT",
+        "brand": "Neodent (Straumann Group)",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/neodent.webp",
+        "price": {
+          "USD": "$5,700",
+          "EUR": "€5,200",
+          "GBP": "£4,450"
+        },
+        "included": [
+          "4x Neodent Implants per Arch",
+          "10-12x Fixed Temporary Teeth",
+          "10-12x Final Zirconia Bridge Teeth",
+          "3D CBCT Tomography & Planning",
+          "VIP Airport-Hotel Transfers",
+          "Hotel Stay with Bed & Breakfast"
+        ]
+      },
+      {
+        "name": "ALL-ON-4 – HIOSSEN",
+        "brand": "Hiossen (American Brand)",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/hiossen.webp",
+        "price": {
+          "USD": "$5,600",
+          "EUR": "€5,100",
+          "GBP": "£4,380"
+        },
+        "included": [
+          "4x Hiossen American Implants per Arch",
+          "10-12x Fixed Temporary Teeth",
+          "10-12x Final Zirconia Bridge Teeth",
+          "3D CBCT Tomography & Planning",
+          "VIP Airport-Hotel Transfers",
+          "Hotel Stay with Bed & Breakfast"
+        ]
       }
     ],
     "faqsPart1": [
@@ -2526,102 +2554,102 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       "whenAll6Title": "Quando o All-on-6 é a escolha superior?",
       "whenAll6Text": "O All-on-6 é recomendado quando há altura óssea posterior adequada (>10 mm), em pacientes com bruxismo ou que exigem uma arcada completa de 14 dentes com força mastigatória irrestrita."
     },
-    "processTitle": "Protocolo de Precisão All-on-4: Da Tomografia 3D à Zircônia Monolítica",
-    "processSubtitle": "Cada reabilitação All-on-4 no Master Smile Studio segue fluxo cirúrgico guiado por computador para 98,2% de sucesso.",
+    "processTitle": "Protocolo de Precisão em 3 Fases: Do Planejamento 3D à Zircônia Definitiva",
+    "processSubtitle": "Cada reabilitação All-on-6 no Master Smile Studio segue um rigoroso fluxo cirúrgico guiado por computador e fresagem robótica.",
     "processCards": [
       {
-        "step": "PHASE 01",
-        "title": "Tomografia 3D CBCT e Guia Cirúrgico",
-        "text": "A tomografia mapeia a densidade óssea e o seio maxilar. O guia cirúrgico posiciona os 4 implantes com angulação ideal de 45°.",
+        "step": "FASE 01",
+        "title": "Tomografia 3D CBCT e Guia Cirúrgico Computadorizado",
+        "text": "A tomografia de alta resolução mapeia a densidade óssea em unidades Hounsfield e os trajetos nervosos. Um guia cirúrgico exclusivo posiciona os 6 implantes com precisão submilimétrica.",
         "specs": [
           {
-            "key": "Precision",
+            "key": "Precisão",
             "val": "< 0.1 mm"
           },
           {
-            "key": "Implant Angulation",
-            "val": "45° Posterior Tilted"
+            "key": "Incisão",
+            "val": "Minimamente Invasiva Guiada"
           },
           {
-            "key": "Bone Grafting",
-            "val": "Zero Graft (Bypassed)"
+            "key": "Análise Óssea",
+            "val": "Escala 3D Hounsfield"
           }
         ]
       },
       {
-        "step": "PHASE 02",
-        "title": "Carga Imediata Fixa em 24 Horas",
-        "text": "Sobre os pilares multi-unit é fixada uma ponte provisória aparafusada em até 24 horas com mastigação imediata.",
+        "step": "FASE 02",
+        "title": "Carga Imediata Fixa em até 24 Horas",
+        "text": "Com torque de inserção primário atingindo 35–50 Ncm, são instalados os pilares multi-unit. Em até 24 horas, uma ponte provisória aparafusada é fixada sobre os 6 implantes.",
         "specs": [
           {
-            "key": "Insertion Torque",
+            "key": "Torque Primário",
             "val": "35 – 50 Ncm"
           },
           {
-            "key": "Delivery Time",
-            "val": "24 Hours"
+            "key": "Tempo de Entrega",
+            "val": "Em até 24 horas"
           },
           {
-            "key": "Retention",
-            "val": "Screw-Retained"
+            "key": "Mastigação",
+            "val": "Imediata com Dieta Macia"
           }
         ]
       },
       {
-        "step": "PHASE 03",
-        "title": "Ponte Monolítica de Zircônia CAD/CAM",
-        "text": "Após 3 meses de cicatrização, a ponte definitiva em zircônia monolítica alemã (1200+ MPa) é fresada com precisão robótica.",
+        "step": "FASE 03",
+        "title": "Fresagem Robótica CAD/CAM de Zircônia Monolítica",
+        "text": "Após 3 meses de osseointegração, o escaneamento intraoral 3D captura a posição dos implantes. Uma ponte monolítica de zircônia alemã (1200+ MPa) é fresada e sinterizada a 1500°C.",
         "specs": [
           {
-            "key": "Flexural Strength",
+            "key": "Resistência Flexural",
             "val": "1200 – 1400 MPa"
           },
           {
-            "key": "Substructure",
-            "val": "Solid Zirconia + Titanium"
+            "key": "Grau do Material",
+            "val": "Zircônia Maciça Alemã"
           },
           {
-            "key": "Longevity",
-            "val": "Lifetime Warranty"
+            "key": "Temp. Sinterização",
+            "val": "1500°C Alta Densidade"
           }
         ]
       }
     ],
-    "costTitle": "Comparativo Internacional de Preços: Reino Unido / Alemanha vs. Istambul",
-    "costSubtitle": "Entenda por que milhares de pacientes europeus escolhem o Master Smile Studio para o All-on-6 mantendo a máxima qualidade.",
+    "costTitle": "Comparativo Internacional de Preços: Reino Unido / Alemanha vs. Istambul (All-on-4)",
+    "costSubtitle": "Entenda por que milhares de pacientes europeus escolhem o Master Smile Studio para reabilitação All-on-4 sem abrir mão da qualidade.",
     "costTableHeaders": {
-      "country": "País / Padrão Clínico",
-      "costPerArch": "Custo All-on-6 (por arcada)",
-      "inclusions": "O que está incluído no preço",
+      "country": "Localização e Nível da Clínica",
+      "costPerArch": "Custo All-on-4 (Por Arcada)",
+      "inclusions": "Serviços Inclusos no Pacote",
       "valueAdvantage": "Vantagem Master Smile Studio"
     },
     "costTableRows": [
       {
-        "country": "Reino Unido (Harley Street / Particular)",
-        "costPerArch": "£14,000 – £18,000",
-        "inclusions": "Apenas cirurgia e prótese básica. Tomografia 3D, provisórios e consultas cobrados à parte.",
-        "valueAdvantage": "Economia de 65% a 70% (£4,700 – £8,600) em sistemas Straumann/DXL."
+        "country": "Reino Unido (Harley Street / Clínicas Privadas)",
+        "costPerArch": "£10,000 – £14,000 ($12,800 – $17,900)",
+        "inclusions": "Apenas cirurgia e prótese básica. Tomografia 3D, provisório, sedação e consultas cobrados à parte.",
+        "valueAdvantage": "Economia de 65% a 70% (£3.350 a £6.800 connosco) em sistemas suíços/alemães autênticos."
       },
       {
         "country": "Alemanha / Suíça (Clínicas Privadas)",
-        "costPerArch": "€13,000 – €17,000",
-        "inclusions": "Honorários cirúrgicos e laboratoriais. Hospedagem em hotel e transfers não inclusos.",
-        "valueAdvantage": "Economia de 60% a 65% (€5,500 – €10,000) com titânio suíço/alemão idêntico."
+        "costPerArch": "€9,500 – €13,500 ($10,500 – $14,900)",
+        "inclusions": "Honorários cirúrgicos e laboratoriais. Hospedagem, transfers VIP e medicamentos não incluídos.",
+        "valueAdvantage": "Economia de 60% a 65% (€3.900 a €7.900 connosco) com titânio alemão/suíço idêntico."
       },
       {
-        "country": "Master Smile Studio (Istambul, Turquia)",
-        "costPerArch": "€5,500 – €10,000 / £4,700 – £8,600",
-        "inclusions": "Tudo Incluído: 6 Implantes, Ponte Provisória, Ponte de Zircônia, Tomografia 3D, Hotel 5 Estrelas, Transfers VIP Mercedes, Garantia Vitalícia.",
-        "valueAdvantage": "Garantia de Preço Fixo Transparente sem Custos Ocultos."
+        "country": "Master Smile Studio (Istambul, Turquia) ⭐",
+        "costPerArch": "€3,900 – €7,900 / £3,350 – £6,800",
+        "inclusions": "100% All-Inclusive: 4 Implantes, Ponte Provisória Fixa, Ponte Definitiva em Zircônia, Tomografia 3D, Hotel 5 Estrelas, Transfers VIP, Passaporte de Garantia Vitalícia.",
+        "valueAdvantage": "Garantia de preço fixo 100% transparente, sem custos ocultos ou taxas adicionais."
       }
     ]
   },
   "es": {
-    "introBadge": "CARGA INMEDIATA DE ARCADA COMPLETA",
-    "introTitle": "Implantes Dentales All-on-4 en Estambul: Dientes Fijos en 24 Horas sin Injerto",
-    "introLead": "Incluso con pérdida ósea severa, 4 implantes angulados a 45 grados evitan el seno maxilar y fijan una dentadura completa en 24 horas sin injertos óseos invasivos.",
-    "introP1": "El protocolo All-on-4 es un hito biomecánico para pacientes con reabsorción ósea. La angulación de 45 grados aprovecha al máximo el hueso cortical denso evitando el levantamiento de seno.",
-    "introP2": "Con navegación 3D CBCT alcanzamos torques superiores a 35–50 Ncm. En 24 horas se atornilla el puente fijo provisional y, tras 3 meses, la prótesis definitiva de zirconio alemán de 1200+ MPa.",
+    "introBadge": "ESTABILIDAD OCLUSAL MÁXIMA",
+    "introTitle": "Implantes Dentales All-on-6 en Estambul, Turquía",
+    "introLead": "Restauración completa de 14 dientes fijada sobre 6 implantes de titanio — máxima fuerza masticatoria y estabilidad estructural.",
+    "introP1": "En Master Smile Studio, el tratamiento All-on-6 representa la cima de la rehabilitación fija del arco dental. Al distribuir las fuerzas masticatorias entre seis implantes de titanio estratégicamente ubicados, este procedimiento proporciona una estabilidad insuperable para una arcada completa de 14 dientes. Cada cirugía es planificada digitalmente en 3D y realizada directamente por nuestros cirujanos maxilofaciales fundadores.",
+    "introP2": "El protocolo All-on-6 coloca dos implantes anteriores y cuatro posteriores en el hueso maxilar. Esta amplia base distribuye la masticación uniformemente, eliminando tensiones y permitiendo a pacientes con mordida potente comer sin restricciones.",
     "introP3Lead": "Según su densidad ósea, explore también en nuestra clínica ",
     "introP3LinkAll4": "Implantes All-on-4",
     "introP3Mid": ", ",
@@ -2629,8 +2657,8 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "introP3And": " y ",
     "introP3LinkSinus": "Elevación de Seno Maxilar",
     "introP3Tail": " en Estambul.",
-    "materialsTitle": "Materiales de Prótesis All-on-6: Por qué Usamos Circonio Monolítico",
-    "materialsSubtitle": "En All-on-6, 6 implantes soportan toda la fuerza masticatoria de la mandíbula (200 a 600 Newtons). Descubra por qué diseñamos exclusivamente Circonio Monolítico Multicapa en lugar de acrílico o metal.",
+    "materialsTitle": "Materiales de Prótesis All-on-4: Por qué Usamos Circonio Monolítico",
+    "materialsSubtitle": "En All-on-4, 4 implantes soportan toda la fuerza masticatoria de la mandíbula (200 a 600 Newtons). Descubra por qué diseñamos exclusivamente Circonio Monolítico Multicapa en lugar de acrílico o metal.",
     "materialsSpecLabels": {
       "material": "Tipo de Material",
       "strength": "Resistencia a la Flexión",
@@ -2763,8 +2791,8 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "pfm": "8 – 12 Años"
       }
     ],
-    "packagesTitle": "Precios y Paquetes All-on-6 en Estambul",
-    "packagesSubtitle": "Precios transparentes por arcada con 6 implantes de titanio, puente de circonio definitivo, hotel de 5 estrellas y traslados VIP.",
+    "packagesTitle": "Paquetes y Precios de Implantes All-on-4 en Estambul",
+    "packagesSubtitle": "Precios transparentes todo incluido por arcada con 4 implantes de titanio premium, puente de zirconio CAD/CAM, hotel 5 estrellas y traslados VIP.",
     "durationLabel": "Duración del Tratamiento:",
     "includedLabel": "Qué incluye el paquete:",
     "pricePerArchLabel": "Precio por arcada",
@@ -2776,115 +2804,123 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "faqGroup2Title": "Turismo Dental, Paquete y Garantía de por Vida",
     "packages": [
       {
-        "name": "ALL-ON-6 – NUCLEOSS",
-        "brand": "NucleOSS (Calidad Premium Turca)",
-        "duration": "3+7 Días Laborables (2 Visitas)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-1.jpg",
-        "included": [
-          "6x Implantes de Titanio NucleOSS por arcada",
-          "12-14x Dientes Provisionales Fijos",
-          "12-14x Puente Definitivo de Circonio",
-          "Guía Quirúrgica 3D CBCT",
-          "Anestesia y Medicamentos Postoperatorios",
-          "Traslados VIP Aeropuerto-Hotel",
-          "Estancia en Hotel con Desayuno",
-          "Laboratorio Completo Incluido"
-        ],
+        "name": "ALL-ON-4 – NUCLEOSS",
+        "brand": "NucleOSS (Grade 4 Pure Titanium)",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/nucleoss.webp",
         "price": {
-          "USD": "$6,400",
-          "EUR": "€5,500",
-          "GBP": "£4,700"
-        }
-      },
-      {
-        "name": "ALL-ON-6 – DXL GERMAN",
-        "brand": "DXL (Ingeniería Alemana)",
-        "duration": "3+7 Días Laborables (2 Visitas)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-2.jpg",
-        "included": [
-          "6x Implantes Alemanes DXL",
-          "12-14x Dientes Provisionales Fijos",
-          "12-14x Puente Definitivo de Circonio",
-          "Planificación 3D CBCT",
-          "Traslados VIP y Hotel Incluidos",
-          "Laboratorio y Fresado CAD/CAM"
-        ],
-        "price": {
-          "USD": "$7,500",
-          "EUR": "€6,500",
-          "GBP": "£5,600"
-        }
-      },
-      {
-        "name": "ALL-ON-6 – STRAUMANN",
-        "brand": "Straumann (Estándar de Oro Suizo)",
-        "duration": "3+7 Días Laborables (2 Visitas)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-3.jpg",
-        "included": [
-          "6x Implantes Suizos Straumann",
-          "12-14x Provisionales Fijos de Alta Gama",
-          "12-14x Puente Monolítico Multicapa de Circonio",
-          "Pasaporte de Garantía Internacional de por Vida",
-          "Traslados VIP y Hotel de Lujo 5 Estrellas",
-          "Asesor Personal en Español"
-        ],
-        "price": {
-          "USD": "$11,600",
-          "EUR": "€10,000",
-          "GBP": "£8,600"
+          "USD": "$4,250",
+          "EUR": "€3,900",
+          "GBP": "£3,350"
         },
-        "popular": true
+        "included": [
+          "4x NucleOSS Dental Implants per Arch",
+          "10-12x Fixed Temporary Teeth (Same Visit)",
+          "10-12x Final Permanent Zirconia Teeth",
+          "3D CBCT Surgical Planning Guide",
+          "Local Anesthesia & Post-op Medication Pack",
+          "Airport-Hotel VIP Transfers",
+          "Hotel Stay with Bed & Breakfast",
+          "Full Laboratory Work Included"
+        ]
       },
       {
-        "name": "ALL-ON-6 – MEGAGEN",
-        "brand": "Megagen AnyRidge",
-        "duration": "3+7 Días Laborables (2 Visitas)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-package-10.jpg",
-        "included": [
-          "6x Implantes Megagen",
-          "12-14x Dientes Provisionales",
-          "12-14x Puente Circonio",
-          "Hotel y Traslados"
-        ],
+        "name": "ALL-ON-4 – DXL GERMAN",
+        "brand": "DXL (German Engineering)",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/dxl.webp",
         "price": {
-          "USD": "$8,000",
-          "EUR": "€7,000",
-          "GBP": "£6,000"
-        }
+          "USD": "$5,350",
+          "EUR": "€4,900",
+          "GBP": "£4,200"
+        },
+        "included": [
+          "4x DXL German Titanium Implants",
+          "10-12x Fixed Temporary Teeth",
+          "10-12x Final Permanent Zirconia Teeth",
+          "3D CBCT Surgical Planning Guide",
+          "VIP Airport & Hotel Transfers",
+          "Hotel Stay with Bed & Breakfast",
+          "Full Laboratory & CAD/CAM Milling"
+        ]
       },
       {
-        "name": "ALL-ON-6 – NEODENT",
-        "brand": "Neodent (Grupo Straumann)",
-        "duration": "3+7 Días Laborables (2 Visitas)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-implant-package-2.jpg",
-        "included": [
-          "6x Implantes Neodent",
-          "12-14x Dientes Provisionales",
-          "12-14x Puente Circonio",
-          "Hotel y Traslados"
-        ],
+        "name": "ALL-ON-4 – STRAUMANN",
+        "brand": "Straumann (Swiss Gold Standard)",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/straumann.webp",
+        "popular": true,
         "price": {
-          "USD": "$8,000",
-          "EUR": "€7,000",
-          "GBP": "£6,000"
-        }
+          "USD": "$8,600",
+          "EUR": "€7,900",
+          "GBP": "£6,800"
+        },
+        "included": [
+          "4x Straumann Swiss Titanium Implants",
+          "10-12x Fixed High-Grade Temporary Teeth",
+          "10-12x Final Monolithic Zirconia Teeth",
+          "Lifetime International Manufacturer Passport",
+          "Luxury 5-Star Hotel Stay Included",
+          "VIP Mercedes Chauffeur Transfers",
+          "Dedicated Personal Patient Host"
+        ]
       },
       {
-        "name": "ALL-ON-6 – HIOSSEN",
-        "brand": "Hiossen USA",
-        "duration": "3+7 Días Laborables (2 Visitas)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-implant-package-3.jpg",
-        "included": [
-          "6x Implantes Hiossen",
-          "12-14x Dientes Provisionales",
-          "12-14x Puente Circonio",
-          "Hotel y Traslados"
-        ],
+        "name": "ALL-ON-4 – MEGAGEN",
+        "brand": "Megagen AnyRidge (Knife-Thread Tech)",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/megagen.webp",
         "price": {
-          "USD": "$7,700",
-          "EUR": "€6,750",
-          "GBP": "£5,780"
-        }
+          "USD": "$5,900",
+          "EUR": "€5,400",
+          "GBP": "£4,650"
+        },
+        "included": [
+          "4x Megagen AnyRidge Implants per Arch",
+          "10-12x Fixed Temporary Teeth",
+          "10-12x Final Zirconia Bridge Teeth",
+          "3D CBCT Tomography & Surgical Guide",
+          "VIP Airport-Hotel Transfers",
+          "Hotel Stay with Bed & Breakfast"
+        ]
+      },
+      {
+        "name": "ALL-ON-4 – NEODENT",
+        "brand": "Neodent (Straumann Group)",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/neodent.webp",
+        "price": {
+          "USD": "$5,700",
+          "EUR": "€5,200",
+          "GBP": "£4,450"
+        },
+        "included": [
+          "4x Neodent Implants per Arch",
+          "10-12x Fixed Temporary Teeth",
+          "10-12x Final Zirconia Bridge Teeth",
+          "3D CBCT Tomography & Planning",
+          "VIP Airport-Hotel Transfers",
+          "Hotel Stay with Bed & Breakfast"
+        ]
+      },
+      {
+        "name": "ALL-ON-4 – HIOSSEN",
+        "brand": "Hiossen (American Brand)",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/hiossen.webp",
+        "price": {
+          "USD": "$5,600",
+          "EUR": "€5,100",
+          "GBP": "£4,380"
+        },
+        "included": [
+          "4x Hiossen American Implants per Arch",
+          "10-12x Fixed Temporary Teeth",
+          "10-12x Final Zirconia Bridge Teeth",
+          "3D CBCT Tomography & Planning",
+          "VIP Airport-Hotel Transfers",
+          "Hotel Stay with Bed & Breakfast"
+        ]
       }
     ],
     "faqsPart1": [
@@ -3017,102 +3053,102 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       "whenAll6Title": "¿Cuándo es All-on-6 la opción superior?",
       "whenAll6Text": "All-on-6 se recomienda cuando se conserva altura ósea posterior (>10 mm), en pacientes con bruxismo o que buscan una arcada de 14 dientes con masticación sin restricciones."
     },
-    "processTitle": "Protocolo de Precisión All-on-4: De la Tomografía 3D al Zirconio Monolítico",
-    "processSubtitle": "Cada tratamiento All-on-4 en Master Smile Studio sigue cirugía guiada digital para un 98.2% de éxito clínico.",
+    "processTitle": "Protocolo de Precisión en 3 Fases: De la Planificación 3D al Circonio Definitivo",
+    "processSubtitle": "Cada rehabilitación All-on-6 en Master Smile Studio sigue un estricto protocolo de cirugía guiada por ordenador y fresado robótico.",
     "processCards": [
       {
-        "step": "PHASE 01",
-        "title": "Tomografía 3D CBCT y Guía Quirúrgica",
-        "text": "La tomografía analiza el hueso cortical y el seno maxilar. La guía digital posiciona los 4 implantes a 45 grados con precisión.",
+        "step": "FASE 01",
+        "title": "TAC 3D CBCT y Guía Quirúrgica Computerizada",
+        "text": "El TAC 3D de alta resolución analiza la densidad ósea en unidades Hounsfield y delimita nervios y senos. Una férula quirúrgica posiciona los 6 implantes con precisión submilimétrica.",
         "specs": [
           {
-            "key": "Precision",
+            "key": "Precisión",
             "val": "< 0.1 mm"
           },
           {
-            "key": "Implant Angulation",
-            "val": "45° Posterior Tilted"
+            "key": "Tipo de Cirugía",
+            "val": "Mínimamente Invasiva Guiada"
           },
           {
-            "key": "Bone Grafting",
-            "val": "Zero Graft (Bypassed)"
+            "key": "Estudio Óseo",
+            "val": "Escala 3D Hounsfield"
           }
         ]
       },
       {
-        "step": "PHASE 02",
+        "step": "FASE 02",
         "title": "Carga Inmediata Fija en 24 Horas",
-        "text": "Sobre los pilares multi-unit se atornilla un puente provisional fijo en 24 horas sin periodos de desdentismo.",
+        "text": "Al alcanzar un torque primario de 35–50 Ncm, se fijan los pilares multi-unit. En menos de 24 horas se atornilla un puente provisional reforzado sobre los 6 implantes.",
         "specs": [
           {
-            "key": "Insertion Torque",
+            "key": "Torque de Inserción",
             "val": "35 – 50 Ncm"
           },
           {
-            "key": "Delivery Time",
-            "val": "24 Hours"
+            "key": "Tiempo de Entrega",
+            "val": "En 24 horas"
           },
           {
-            "key": "Retention",
-            "val": "Screw-Retained"
+            "key": "Función",
+            "val": "Dieta Blanda Inmediata"
           }
         ]
       },
       {
-        "step": "PHASE 03",
-        "title": "Puente Monolítico de Zirconio CAD/CAM",
-        "text": "A los 3 meses se fresa el puente definitivo de zirconio monolítico alemán multicapa de 1200+ MPa sin riesgo de fracturas.",
+        "step": "FASE 03",
+        "title": "Fresado Robótico CAD/CAM de Circonio Monolítico",
+        "text": "Tras 3 meses de osteointegración, el escáner intraoral 3D registra la posición exacta de los implantes. Un puente de circonio monolítico alemán (1200+ MPa) se fresa y sinteriza a 1500°C.",
         "specs": [
           {
-            "key": "Flexural Strength",
+            "key": "Resistencia Flexión",
             "val": "1200 – 1400 MPa"
           },
           {
-            "key": "Substructure",
-            "val": "Solid Zirconia + Titanium"
+            "key": "Calidad Material",
+            "val": "Circonio Puro Alemán"
           },
           {
-            "key": "Longevity",
-            "val": "Lifetime Warranty"
+            "key": "Temp. Sinterizado",
+            "val": "1500°C Alta Densidad"
           }
         ]
       }
     ],
-    "costTitle": "Comparativa Internacional de Precios: Reino Unido / Alemania vs. Estambul",
-    "costSubtitle": "Descubra por qué miles de pacientes europeos eligen Master Smile Studio para su tratamiento All-on-6 con los más altos estándares.",
+    "costTitle": "Comparativa Internacional de Precios: Reino Unido / Alemania vs. Estambul (All-on-4)",
+    "costSubtitle": "Descubra por qué miles de pacientes europeos eligen Master Smile Studio para su tratamiento All-on-4 sin renunciar a la máxima calidad.",
     "costTableHeaders": {
-      "country": "País / Nivel Clínico",
-      "costPerArch": "Coste All-on-6 (por arcada)",
-      "inclusions": "Qué incluye el precio",
+      "country": "Ubicación y Nivel de Clínica",
+      "costPerArch": "Coste All-on-4 (Por Arcada)",
+      "inclusions": "Servicios Incluidos en el Precio",
       "valueAdvantage": "Ventaja Master Smile Studio"
     },
     "costTableRows": [
       {
-        "country": "Reino Unido (Harley Street / Privado)",
-        "costPerArch": "£14,000 – £18,000",
-        "inclusions": "Solo cirugía y puente estándar. TAC 3D, provisionales y revisiones facturados aparte.",
-        "valueAdvantage": "Ahorro del 65% – 70% (£4,700 – £8,600) en sistemas Straumann/DXL."
+        "country": "Reino Unido (Harley Street / Clínicas Privadas)",
+        "costPerArch": "£10,000 – £14,000 ($12,800 – $17,900)",
+        "inclusions": "Sólo cirugía y puente básico. Tomografía 3D, provisional, sedación y revisiones se facturan por separado.",
+        "valueAdvantage": "Ahorro del 65% al 70% (£3,350 a £6,800 con nosotros) en sistemas suizos/alemanes auténticos."
       },
       {
-        "country": "Alemania / Suiza (Clínica Privada)",
-        "costPerArch": "€13,000 – €17,000",
-        "inclusions": "Cirugía y costes de laboratorio. Hotel, traslados y medicación no incluidos.",
-        "valueAdvantage": "Ahorro del 60% – 65% (€5,500 – €10,000) con idéntico titanio suizo/alemán."
+        "country": "Alemania / Suiza (Clínicas Privadas)",
+        "costPerArch": "€9,500 – €13,500 ($10,500 – $14,900)",
+        "inclusions": "Honorarios quirúrgicos y laboratorio. Alojamiento en hotel, traslados VIP y medicación no incluidos.",
+        "valueAdvantage": "Ahorro del 60% al 65% (€3,900 a €7,900 con nosotros) con titanio alemán/suizo idéntico."
       },
       {
-        "country": "Master Smile Studio (Estambul, Turquía)",
-        "costPerArch": "€5,500 – €10,000 / £4,700 – £8,600",
-        "inclusions": "Todo Incluido: 6 Implantes, Puente Provisional, Puente de Circonio, TAC 3D, Hotel de 5 Estrellas, Traslados VIP Mercedes, Garantía de por Vida.",
-        "valueAdvantage": "Garantía de Precio Fijo Transparente sin Costes Ocultos."
+        "country": "Master Smile Studio (Estambul, Turquía) ⭐",
+        "costPerArch": "€3,900 – €7,900 / £3,350 – £6,800",
+        "inclusions": "100% Todo Incluido: 4 Implantes, Puente Provisional Fijo, Puente Definitivo de Zirconio, Tomografía 3D, Hotel 5 Estrellas, Traslados VIP, Pasaporte de Garantía Vitalicia.",
+        "valueAdvantage": "Garantía de precio fijo 100% transparente sin costes ocultos ni sorpresas."
       }
     ]
   },
   "ru": {
-    "introBadge": "НЕМЕДЛЕННАЯ НАГРУЗКА НА ВСЮ ЧЕЛЮСТЬ",
-    "introTitle": "Имплантация All-on-4 в Стамбуле: Несъемные Зубы за 24 Часа без Синус-Лифтинга",
-    "introLead": "Даже при выраженной атрофии кости 4 импланта, установленные под углом 45 градусов, обходят гайморовы пазухи и фиксируют несъемный мост за 24 часа без сложного синус-лифтинга.",
-    "introP1": "Концепция All-on-4 — доказанный золотой стандарт при атрофии кости. Наклон боковых имплантов под 45 градусов задействует плотную переднюю кость и исключает дорогостоящую костную пластику.",
-    "introP2": "Благодаря 3D КТ импланты получают первичную стабильность более 35–50 Нсм. За 24 часа фиксируется несъемный временный мост, а через 3 месяца — монолитный немецкий циркониевый мост 1200+ МПа.",
+    "introBadge": "МАКСИМАЛЬНАЯ ОККЛЮЗИОННАЯ СТАБИЛЬНОСТЬ",
+    "introTitle": "Имплантация All-on-6 в Стамбуле, Турция",
+    "introLead": "Полное восстановление зубного ряда на 14 зубов на 6 титановых имплантах — непревзойденная жевательная сила и долговечность.",
+    "introP1": "В клинике Master Smile Studio имплантация All-on-6 представляет собой золотой стандарт постоянной реабилитации челюсти. Благодаря распределению жевательной нагрузки на шесть титановых опор, этот метод обеспечивает бескомпромиссную прочность для зубного ряда из 14 зубов. Все операции планируются с цифровой точностью 3D и проводятся нашими ведущими челюстно-лицевыми хирургами.",
+    "introP2": "Протокол All-on-6 фиксирует два передних и четыре боковых импланта. Широкая опора равномерно распределяет нагрузку на челюсть, устраняя рычажные напряжения и позволяя пациентам с мощным прикусом питаться без ограничений.",
     "introP3Lead": "В зависимости от объема кости ознакомьтесь также с методами ",
     "introP3LinkAll4": "Имплантация All-on-4",
     "introP3Mid": ", ",
@@ -3120,8 +3156,8 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "introP3And": " и ",
     "introP3LinkSinus": "Операция Синус-Лифтинга",
     "introP3Tail": " в нашей клинике в Стамбуле.",
-    "materialsTitle": "Материалы Постоянных Мостов All-on-6: Почему Мы Используем Монолитный Цирконий",
-    "materialsSubtitle": "В протоколе All-on-6 6 имплантов несут всю жевательную нагрузку челюсти (от 200 до 600 Н). Узнайте, почему мы изготавливаем мосты исключительно из 100% монолитного циркония, а не из акрила или металлокерамики.",
+    "materialsTitle": "Материалы Мостов All-on-4: Почему Мы Используем Монолитный Цирконий",
+    "materialsSubtitle": "В All-on-4 всего 4 импланта несут всю жевательную нагрузку челюсти (от 200 до 600 Н). Узнайте, почему мы изготавливаем монолитный многослойный цирконий вместо дешевого акрила или хрупкого металла.",
     "materialsSpecLabels": {
       "material": "Тип Материала",
       "strength": "Прочность на Изгиб",
@@ -3254,8 +3290,8 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "pfm": "8 – 12 Лет"
       }
     ],
-    "packagesTitle": "Пакетные Цены на Имплантацию All-on-6 в Стамбуле",
-    "packagesSubtitle": "Прозрачные цены «все включено» за челюсть с 6 премиальными титановыми имплантами, циркониевым мостом, отелем 5* и VIP-трансфером.",
+    "packagesTitle": "Пакеты и Цены на Имплантацию All-on-4 в Стамбуле",
+    "packagesSubtitle": "Прозрачные цены «все включено» за челюсть с 4 премиальными титановыми имплантами, циркониевым мостом CAD/CAM, отелем 5* и VIP-трансфером.",
     "durationLabel": "Длительность Лечения:",
     "includedLabel": "Что входит в этот пакет:",
     "pricePerArchLabel": "Цена за 1 челюсть",
@@ -3267,116 +3303,123 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "faqGroup2Title": "Медицинский Туризм, Пакет и Пожизненная Гарантия",
     "packages": [
       {
-        "name": "ALL-ON-6 – NUCLEOSS",
-        "brand": "NucleOSS (Премиум Турция)",
-        "duration": "3+7 Рабочих Дней (2 Визита)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-1.jpg",
-        "included": [
-          "6x Титановых Имплантов NucleOSS на челюсть",
-          "12-14x Несъемных Временных Зубов",
-          "12-14x Постоянных Циркониевых Зубов",
-          "3D-КТ Диагностика и Хирургический Шаблон",
-          "Местная Анестезия и Набор Медикаментов",
-          "VIP-Трансфер Аэропорт-Отель",
-          "Проживание в Отеле с Завтраками",
-          "Все Лабораторные Работы Включены"
-        ],
+        "name": "ALL-ON-4 – NUCLEOSS",
+        "brand": "NucleOSS (Grade 4 Pure Titanium)",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/nucleoss.webp",
         "price": {
-          "USD": "$6,400",
-          "EUR": "€5,500",
-          "GBP": "£4,700"
-        }
-      },
-      {
-        "name": "ALL-ON-6 – DXL GERMAN",
-        "brand": "DXL (Немецкая Инженерия)",
-        "duration": "3+7 Рабочих Дней (2 Визита)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-2.jpg",
-        "included": [
-          "6x Немецких Имплантов DXL",
-          "12-14x Временных Зубов",
-          "12-14x Постоянного Циркониевого Моста",
-          "3D-КТ Планирование",
-          "VIP-Трансфер и Отель Включены",
-          "Лабораторные и CAD/CAM Работы"
-        ],
-        "price": {
-          "USD": "$7,500",
-          "EUR": "€6,500",
-          "GBP": "£5,600"
-        }
-      },
-      {
-        "name": "ALL-ON-6 – STRAUMANN",
-        "brand": "Straumann (Швейцарский Золотой Стандарт)",
-        "duration": "3+7 Рабочих Дней (2 Визита)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-3.jpg",
-        "included": [
-          "6x Швейцарских Имплантов Straumann",
-          "12-14x Премиальных Временных Зубов",
-          "12-14x Монолитных Циркониевых Зубов",
-          "Международный Паспорт с Пожизненной Гарантией",
-          "Проживание в Люкс-Отеле 5 Звезд",
-          "VIP-Трансфер Mercedes с Личным Водителем",
-          "Персональный Русскоязычный Координатор"
-        ],
-        "price": {
-          "USD": "$11,600",
-          "EUR": "€10,000",
-          "GBP": "£8,600"
+          "USD": "$4,250",
+          "EUR": "€3,900",
+          "GBP": "£3,350"
         },
-        "popular": true
+        "included": [
+          "4x NucleOSS Dental Implants per Arch",
+          "10-12x Fixed Temporary Teeth (Same Visit)",
+          "10-12x Final Permanent Zirconia Teeth",
+          "3D CBCT Surgical Planning Guide",
+          "Local Anesthesia & Post-op Medication Pack",
+          "Airport-Hotel VIP Transfers",
+          "Hotel Stay with Bed & Breakfast",
+          "Full Laboratory Work Included"
+        ]
       },
       {
-        "name": "ALL-ON-6 – MEGAGEN",
-        "brand": "Megagen AnyRidge",
-        "duration": "3+7 Рабочих Дней (2 Визита)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-package-10.jpg",
-        "included": [
-          "6x Имплантов Megagen",
-          "12-14x Временных Зубов",
-          "12-14x Циркониевый Мост",
-          "Отель и Трансфер"
-        ],
+        "name": "ALL-ON-4 – DXL GERMAN",
+        "brand": "DXL (German Engineering)",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/dxl.webp",
         "price": {
-          "USD": "$8,000",
-          "EUR": "€7,000",
-          "GBP": "£6,000"
-        }
+          "USD": "$5,350",
+          "EUR": "€4,900",
+          "GBP": "£4,200"
+        },
+        "included": [
+          "4x DXL German Titanium Implants",
+          "10-12x Fixed Temporary Teeth",
+          "10-12x Final Permanent Zirconia Teeth",
+          "3D CBCT Surgical Planning Guide",
+          "VIP Airport & Hotel Transfers",
+          "Hotel Stay with Bed & Breakfast",
+          "Full Laboratory & CAD/CAM Milling"
+        ]
       },
       {
-        "name": "ALL-ON-6 – NEODENT",
-        "brand": "Neodent (Группа Straumann)",
-        "duration": "3+7 Рабочих Дней (2 Визита)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-implant-package-2.jpg",
-        "included": [
-          "6x Имплантов Neodent",
-          "12-14x Временных Зубов",
-          "12-14x Циркониевый Мост",
-          "Отель и Трансфер"
-        ],
+        "name": "ALL-ON-4 – STRAUMANN",
+        "brand": "Straumann (Swiss Gold Standard)",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/straumann.webp",
+        "popular": true,
         "price": {
-          "USD": "$8,000",
-          "EUR": "€7,000",
-          "GBP": "£6,000"
-        }
+          "USD": "$8,600",
+          "EUR": "€7,900",
+          "GBP": "£6,800"
+        },
+        "included": [
+          "4x Straumann Swiss Titanium Implants",
+          "10-12x Fixed High-Grade Temporary Teeth",
+          "10-12x Final Monolithic Zirconia Teeth",
+          "Lifetime International Manufacturer Passport",
+          "Luxury 5-Star Hotel Stay Included",
+          "VIP Mercedes Chauffeur Transfers",
+          "Dedicated Personal Patient Host"
+        ]
       },
       {
-        "name": "ALL-ON-6 – HIOSSEN",
-        "brand": "Hiossen USA",
-        "duration": "3+7 Рабочих Дней (2 Визита)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-implant-package-3.jpg",
-        "included": [
-          "6x Имплантов Hiossen",
-          "12-14x Временных Зубов",
-          "12-14x Циркониевый Мост",
-          "Отель и Трансфер"
-        ],
+        "name": "ALL-ON-4 – MEGAGEN",
+        "brand": "Megagen AnyRidge (Knife-Thread Tech)",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/megagen.webp",
         "price": {
-          "USD": "$7,700",
-          "EUR": "€6,750",
-          "GBP": "£5,780"
-        }
+          "USD": "$5,900",
+          "EUR": "€5,400",
+          "GBP": "£4,650"
+        },
+        "included": [
+          "4x Megagen AnyRidge Implants per Arch",
+          "10-12x Fixed Temporary Teeth",
+          "10-12x Final Zirconia Bridge Teeth",
+          "3D CBCT Tomography & Surgical Guide",
+          "VIP Airport-Hotel Transfers",
+          "Hotel Stay with Bed & Breakfast"
+        ]
+      },
+      {
+        "name": "ALL-ON-4 – NEODENT",
+        "brand": "Neodent (Straumann Group)",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/neodent.webp",
+        "price": {
+          "USD": "$5,700",
+          "EUR": "€5,200",
+          "GBP": "£4,450"
+        },
+        "included": [
+          "4x Neodent Implants per Arch",
+          "10-12x Fixed Temporary Teeth",
+          "10-12x Final Zirconia Bridge Teeth",
+          "3D CBCT Tomography & Planning",
+          "VIP Airport-Hotel Transfers",
+          "Hotel Stay with Bed & Breakfast"
+        ]
+      },
+      {
+        "name": "ALL-ON-4 – HIOSSEN",
+        "brand": "Hiossen (American Brand)",
+        "duration": "3+7 Working Days (2 Visits)",
+        "img": "/packages/hiossen.webp",
+        "price": {
+          "USD": "$5,600",
+          "EUR": "€5,100",
+          "GBP": "£4,380"
+        },
+        "included": [
+          "4x Hiossen American Implants per Arch",
+          "10-12x Fixed Temporary Teeth",
+          "10-12x Final Zirconia Bridge Teeth",
+          "3D CBCT Tomography & Planning",
+          "VIP Airport-Hotel Transfers",
+          "Hotel Stay with Bed & Breakfast"
+        ]
       }
     ],
     "faqsPart1": [
@@ -3509,93 +3552,93 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       "whenAll6Title": "Когда All-on-6 является наилучшим выбором?",
       "whenAll6Text": "All-on-6 рекомендуется при сохраненной высоте кости (>10 мм), при бруксизме (сжимании зубов) и для пациентов, желающих полноценный зубной ряд из 14 зубов с максимальной жевательной силой."
     },
-    "processTitle": "Протокол Точности All-on-4: От 3D КТ до Монолитного Циркония",
-    "processSubtitle": "Каждая процедура All-on-4 в Master Smile Studio выполняется по цифровому хирургическому шаблону с успехом 98.2%.",
+    "processTitle": "3-Этапный Протокол Точности: От 3D-Планирования до Монолитного Циркония",
+    "processSubtitle": "Каждая имплантация All-on-6 в Master Smile Studio выполняется по протоколу навигационной хирургии и роботизированного фрезерования.",
     "processCards": [
       {
-        "step": "PHASE 01",
-        "title": "3D КТ и Хирургический Шаблон",
-        "text": "3D томография исследует костную ткань и пазухи. Шаблон задает угол наклона 45 градусов для максимальной фиксации.",
+        "step": "ЭТАП 01",
+        "title": "3D-КТ Диагностика и Навигационный Шаблон",
+        "text": "Высокоточное 3D-КТ сканирование оценивает плотность кости в единицах Хаунсфилда (HU) и траекторию нервов. Индивидуальный хирургический шаблон позиционирует 6 имплантов с точностью до 0,1 мм.",
         "specs": [
           {
-            "key": "Precision",
-            "val": "< 0.1 mm"
+            "key": "Точность",
+            "val": "< 0.1 мм"
           },
           {
-            "key": "Implant Angulation",
-            "val": "45° Posterior Tilted"
+            "key": "Метод",
+            "val": "Малоинвазивный навигационный"
           },
           {
-            "key": "Bone Grafting",
-            "val": "Zero Graft (Bypassed)"
+            "key": "Анализ Кости",
+            "val": "Шкала Хаунсфилда 3D"
           }
         ]
       },
       {
-        "step": "PHASE 02",
-        "title": "Несъемный Мост за 24 Часа",
-        "text": "На мультиюнит-абатменты за 24 часа фиксируется винтовой временный мост, возвращающий улыбку сразу.",
+        "step": "ЭТАП 02",
+        "title": "Несъемный Мост с Немедленной Нагрузкой за 24 Часа",
+        "text": "При первичном торке 35–50 Нсм устанавливаются мультиюнит-абатменты. В течение 24 часов фиксируется прочный временный винтовой мост, обеспечивая полноценную улыбку в первый день.",
         "specs": [
           {
-            "key": "Insertion Torque",
-            "val": "35 – 50 Ncm"
+            "key": "Первичный Торк",
+            "val": "35 – 50 Нсм"
           },
           {
-            "key": "Delivery Time",
-            "val": "24 Hours"
+            "key": "Срок Установки",
+            "val": "В течение 24 часов"
           },
           {
-            "key": "Retention",
-            "val": "Screw-Retained"
+            "key": "Функция",
+            "val": "Мягкая диета с 1-го дня"
           }
         ]
       },
       {
-        "step": "PHASE 03",
-        "title": "Монолитный Циркониевый Мост CAD/CAM",
-        "text": "Через 3 месяца изготавливается постоянный мост из немецкого многослойного циркония 1200+ МПа на 5-осевом станке.",
+        "step": "ЭТАП 03",
+        "title": "5-Осевое Роботизированное CAD/CAM Фрезерование Циркония",
+        "text": "Через 3 месяца остеоинтеграции 3D-сканер фиксирует положение опор. Монолитный многослойный немецкий циркониевый мост (1200+ МПа) фрезеруется на станке и запекается при 1500°C.",
         "specs": [
           {
-            "key": "Flexural Strength",
-            "val": "1200 – 1400 MPa"
+            "key": "Прочность на Изгиб",
+            "val": "1200 – 1400 МПа"
           },
           {
-            "key": "Substructure",
-            "val": "Solid Zirconia + Titanium"
+            "key": "Материал",
+            "val": "Цельный Немецкий Цирконий"
           },
           {
-            "key": "Longevity",
-            "val": "Lifetime Warranty"
+            "key": "Темп. Спекания",
+            "val": "1500°C Высокая Плотность"
           }
         ]
       }
     ],
-    "costTitle": "Международное Сравнение Стоимости: Великобритания / Германия vs. Стамбул",
-    "costSubtitle": "Узнайте, почему европейские пациенты выбирают Master Smile Studio для восстановления All-on-6 без компромиссов в качестве.",
+    "costTitle": "Международное Сравнение Цен: Великобритания / Германия vs Стамбул (All-on-4)",
+    "costSubtitle": "Узнайте, почему тысячи европейских пациентов выбирают Master Smile Studio для восстановления All-on-4 без компромиссов в качестве.",
     "costTableHeaders": {
-      "country": "Страна / Уровень Клиники",
-      "costPerArch": "Стоимость All-on-6 (за челюсть)",
-      "inclusions": "Что включено в стоимость",
+      "country": "Страна и Уровень Клиники",
+      "costPerArch": "Стоимость All-on-4 (За Челюсть)",
+      "inclusions": "Включенные Услуги",
       "valueAdvantage": "Преимущество Master Smile Studio"
     },
     "costTableRows": [
       {
-        "country": "Великобритания (Harley Street / Частные)",
-        "costPerArch": "£14,000 – £18,000",
-        "inclusions": "Только операция и базовый мост. 3D-КТ, временные зубы и приемы оплачиваются отдельно.",
-        "valueAdvantage": "Экономия 65% – 70% (£4,700 – £8,600) на системах Straumann/DXL."
+        "country": "Великобритания (Harley Street / Частные Клиники)",
+        "costPerArch": "£10,000 – £14,000 ($12,800 – $17,900)",
+        "inclusions": "Только операция и базовый мост. 3D КТ, временные зубы, седация и осмотры оплачиваются отдельно.",
+        "valueAdvantage": "Экономия 65% – 70% (£3,350 – £6,800 у нас) на оригинальных швейцарских/немецких системах."
       },
       {
         "country": "Германия / Швейцария (Частные Клиники)",
-        "costPerArch": "€13,000 – €17,000",
-        "inclusions": "Операция и лаборатория. Отель, VIP-трансфер и медикаменты не входят в счет.",
-        "valueAdvantage": "Экономия 60% – 65% (€5,500 – €10,000) при идентичном титане."
+        "costPerArch": "€9,500 – €13,500 ($10,500 – $14,900)",
+        "inclusions": "Хирургические расходы и лаборатория. Проживание в отеле, VIP-трансферы и медикаменты не включены.",
+        "valueAdvantage": "Экономия 60% – 65% (€3,900 – €7,900 у нас) на идентичном немецком/швейцарском титане."
       },
       {
-        "country": "Master Smile Studio (Стамбул, Турция)",
-        "costPerArch": "€5,500 – €10,000 / £4,700 – £8,600",
-        "inclusions": "Все Включено: 6 Имплантов, Временный Мост, Постоянный Циркониевый Мост, 3D-КТ, Отель 5*, VIP-Трансфер Mercedes, Пожизненная Гарантия.",
-        "valueAdvantage": "Гарантия Фиксированной Цены без скрытых медицинских доплат."
+        "country": "Master Smile Studio (Стамбул, Турция) ⭐",
+        "costPerArch": "€3,900 – €7,900 / £3,350 – £6,800",
+        "inclusions": "100% Все Включено: 4 Импланта, Временный Несъемный Мост, Постоянный Циркониевый Мост, 3D КТ, Отель 5*, VIP Трансферы, Пожизненный Паспорт Гарантии.",
+        "valueAdvantage": "100% прозрачная фиксированная стоимость пакета без скрытых платежей."
       }
     ]
   }
