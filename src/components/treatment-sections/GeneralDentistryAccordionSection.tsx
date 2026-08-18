@@ -30,7 +30,7 @@ const SECTION_I18N: Record<string, SectionDictionary> = {
       {
         id: 'cleaning',
         href: '/treatments/general-dentistry/dental-cleaning',
-        img: '/treatments/general/scaling-polishing-copy.webp',
+        img: '/treatments/dental-cleaning-scaling.jpg',
         title: 'Dental Cleaning (Scaling & Polishing)',
         forWho: 'Patients with gum bleeding, bad breath, or tartar buildup',
         desc: 'Gum health is preserved and enamel protected by cleaning hardened tartar, bacterial plaque, and surface stains with ultrasonic scaling and Swiss Air-Flow polishing.',
@@ -39,7 +39,7 @@ const SECTION_I18N: Record<string, SectionDictionary> = {
       {
         id: 'fillings',
         href: '/treatments/general-dentistry/tooth-fillings',
-        img: '/treatments/general/amalgam-kompozit-copy.webp',
+        img: '/treatments/tooth-fillings-amalgam-composite.jpg',
         title: 'Tooth Fillings (Amalgam/Composite)',
         forWho: 'Patients with decayed, chipped, or broken teeth',
         desc: 'The decayed portion of the tooth is gently cleaned and rebuilt using high-strength, tooth-colored aesthetic nanocomposite material.',
@@ -48,7 +48,7 @@ const SECTION_I18N: Record<string, SectionDictionary> = {
       {
         id: 'root-canal',
         href: '/treatments/general-dentistry/root-canal',
-        img: '/treatments/general/root-canal-treatment-copy.webp',
+        img: '/treatments/root-canal-treatment-endodontics.jpg',
         title: 'Root Canal Treatment',
         forWho: 'Patients with an inflamed tooth nerve due to deep decay and severe pain',
         desc: 'The infected dental pulp is meticulously cleaned and disinfected under a dental microscope, sealing the canals to save your natural tooth.',
@@ -57,7 +57,7 @@ const SECTION_I18N: Record<string, SectionDictionary> = {
       {
         id: 'extraction',
         href: '/treatments/general-dentistry/tooth-extraction',
-        img: '/treatments/general/tooth-extraction-copy.webp',
+        img: '/treatments/tooth-extraction-surgical.jpg',
         title: 'Tooth Extraction',
         forWho: 'Patients with a tooth that is too decayed to be saved, problematic, or impacted',
         desc: 'The tooth is painlessly removed under local anesthesia; advanced minimally invasive surgical techniques are applied for complex or wisdom teeth.',
@@ -66,7 +66,7 @@ const SECTION_I18N: Record<string, SectionDictionary> = {
       {
         id: 'inlay-onlay',
         href: '/treatments/general-dentistry/inlay-onlay',
-        img: '/treatments/general/inlay-onlay-copy.webp',
+        img: '/treatments/inlay-onlay-comparison.jpg',
         title: 'Inlay & Onlay',
         forWho: 'Patients with a large cavity looking for a more durable solution than a classic filling',
         desc: 'Custom-milled porcelain or composite restorations fabricated via digital CAD/CAM technology to restore massive chewing tooth surface loss.',
@@ -75,7 +75,7 @@ const SECTION_I18N: Record<string, SectionDictionary> = {
       {
         id: 'sealants',
         href: '/treatments/general-dentistry/dental-sealants',
-        img: '/treatments/general/dental-sealants-copy.webp',
+        img: '/treatments/dental-sealants-fissure.jpg',
         title: 'Dental Sealants',
         forWho: 'Patients, especially children, who want to protect their high-risk back teeth from decay',
         desc: 'A transparent protective resin barrier applied directly over deep molar grooves, preventing bacterial food impaction and blocking up to 90% of cavities.',
@@ -108,7 +108,7 @@ const SECTION_I18N: Record<string, SectionDictionary> = {
       {
         id: 'cleaning',
         href: '/treatments/general-dentistry/dental-cleaning',
-        img: '/treatments/general/scaling-polishing-copy.webp',
+        img: '/treatments/dental-cleaning-scaling.jpg',
         title: 'Diş Taşı Temizliği (Detertraj & Polisaj)',
         forWho: 'Diş eti kanaması, ağız kokusu veya diş taşı birikimi yaşayan hastalar',
         desc: 'Ultrasonik kavitron ve İsviçre Air-Flow hava akımıyla diş taşları, bakteri plağı ve yüzey lekeleri temizlenerek diş eti sağlığı korunur.',
@@ -117,7 +117,7 @@ const SECTION_I18N: Record<string, SectionDictionary> = {
       {
         id: 'fillings',
         href: '/treatments/general-dentistry/tooth-fillings',
-        img: '/treatments/general/amalgam-kompozit-copy.webp',
+        img: '/treatments/tooth-fillings-amalgam-composite.jpg',
         title: 'Estetik Kompozit Diş Dolgusu',
         forWho: 'Çürük, kırık veya aşınmış dişi olan hastalar',
         desc: 'Dişteki çürük veya hasarlı doku hassasça temizlenir ve doğal diş renginde yüksek dayanımlı nanokompozit dolgu ile restore edilir.',
@@ -126,7 +126,7 @@ const SECTION_I18N: Record<string, SectionDictionary> = {
       {
         id: 'root-canal',
         href: '/treatments/general-dentistry/root-canal',
-        img: '/treatments/general/root-canal-treatment-copy.webp',
+        img: '/treatments/root-canal-treatment-endodontics.jpg',
         title: 'Kanal Tedavisi (Endodonti)',
         forWho: 'Derin çürük nedeniyle diş siniri iltihaplanmış ve şiddetli ağrısı olan hastalar',
         desc: 'Dişin içindeki enfekte pulpa dokusu mikroskop altında temizlenir, kanallar dezenfekte edilip sızdırmaz şekilde doldurularak diş kurtarılır.',
@@ -135,7 +135,7 @@ const SECTION_I18N: Record<string, SectionDictionary> = {
       {
         id: 'extraction',
         href: '/treatments/general-dentistry/tooth-extraction',
-        img: '/treatments/general/tooth-extraction-copy.webp',
+        img: '/treatments/tooth-extraction-surgical.jpg',
         title: 'Diş & 20’lik Yaş Dişi Çekimi',
         forWho: 'Kurtarılamayacak kadar çürümüş, kırık, problemli veya gömülü dişi olan hastalar',
         desc: 'Lokal anestezi altında tamamen ağrısız şekilde diş çekimi gerçekleştirilir; gömülü 20 yaş dişlerinde minimal invaziv cerrahi uygulanır.',
@@ -144,7 +144,7 @@ const SECTION_I18N: Record<string, SectionDictionary> = {
       {
         id: 'inlay-onlay',
         href: '/treatments/general-dentistry/inlay-onlay',
-        img: '/treatments/general/inlay-onlay-copy.webp',
+        img: '/treatments/inlay-onlay-comparison.jpg',
         title: 'İnley & Onley Porselen Dolgu',
         forWho: 'Geniş madde kaybı olan ve klasik dolgudan daha dayanıklı estetik çözüm arayan hastalar',
         desc: 'Laboratuvarda 3D CAD/CAM ile mikron hassasiyetinde üretilen porselen restorasyonlarla dişin sağlam dokusu korunarak çiğneme kuvveti artırılır.',
@@ -153,7 +153,7 @@ const SECTION_I18N: Record<string, SectionDictionary> = {
       {
         id: 'sealants',
         href: '/treatments/general-dentistry/dental-sealants',
-        img: '/treatments/general/dental-sealants-copy.webp',
+        img: '/treatments/dental-sealants-fissure.jpg',
         title: 'Fissür Örtücü (Koruyucu Dolgu)',
         forWho: 'Özellikle çocuklar ve azı dişlerinde derin girinti olup çürük riski yüksek olan hastalar',
         desc: 'Azı dişlerinin çiğneyici yüzeylerindeki derin çukurcuklara uygulanan koruyucu tabaka ile bakteri birikimi engellenir ve çürük oluşumu önlenir.',
@@ -186,7 +186,7 @@ const SECTION_I18N: Record<string, SectionDictionary> = {
       {
         id: 'cleaning',
         href: '/treatments/general-dentistry/dental-cleaning',
-        img: '/treatments/general/scaling-polishing-copy.webp',
+        img: '/treatments/dental-cleaning-scaling.jpg',
         title: 'Professionelle Zahnreinigung (PZR)',
         forWho: 'Patienten mit Zahnfleischbluten, Mundgeruch oder Zahnsteinbildung',
         desc: 'Zahnfleischgesundheit wird durch schmerzfreie Ultraschall-Zahnsteinentfernung, Plaque-Beseitigung und Air-Flow-Politur optimal geschützt.',
@@ -195,7 +195,7 @@ const SECTION_I18N: Record<string, SectionDictionary> = {
       {
         id: 'fillings',
         href: '/treatments/general-dentistry/tooth-fillings',
-        img: '/treatments/general/amalgam-kompozit-copy.webp',
+        img: '/treatments/tooth-fillings-amalgam-composite.jpg',
         title: 'Zahnfüllungen (Komposit / Ästhetisch)',
         forWho: 'Patienten mit Karies, abgebrochenen oder abgenutzten Zähnen',
         desc: 'Der beschädigte Zahnanteil wird sorgfältig gereinigt und mit hochwertigem zahnfarbenem Nanokomposit stabil und unsichtbar versorgt.',
@@ -204,7 +204,7 @@ const SECTION_I18N: Record<string, SectionDictionary> = {
       {
         id: 'root-canal',
         href: '/treatments/general-dentistry/root-canal',
-        img: '/treatments/general/root-canal-treatment-copy.webp',
+        img: '/treatments/root-canal-treatment-endodontics.jpg',
         title: 'Wurzelkanalbehandlung (Endodontie)',
         forWho: 'Patienten mit entzündetem Zahnnerv durch tiefe Karies und Zahnschmerzen',
         desc: 'Das infizierte Nervengewebe wird unter dem Mikroskop vollständig entfernt, desinfiziert und biokompatibel versiegelt.',
@@ -213,7 +213,7 @@ const SECTION_I18N: Record<string, SectionDictionary> = {
       {
         id: 'extraction',
         href: '/treatments/general-dentistry/tooth-extraction',
-        img: '/treatments/general/tooth-extraction-copy.webp',
+        img: '/treatments/tooth-extraction-surgical.jpg',
         title: 'Zahnextraktion & Weisheitszahn-OP',
         forWho: 'Patienten mit nicht erhaltungswürdigen, zerstörten oder retinierten Zähnen',
         desc: 'Der Zahn wird unter lokaler Betäubung schonend und schmerzfrei entfernt; bei verlagerten Weisheitszähnen erfolgt ein mikrochirurgischer Eingriff.',
@@ -222,7 +222,7 @@ const SECTION_I18N: Record<string, SectionDictionary> = {
       {
         id: 'inlay-onlay',
         href: '/treatments/general-dentistry/inlay-onlay',
-        img: '/treatments/general/inlay-onlay-copy.webp',
+        img: '/treatments/inlay-onlay-comparison.jpg',
         title: 'Inlays & Onlays (Keramikeinlage)',
         forWho: 'Patienten mit großem Zahnhartsubstanzverlust für langlebige Versorgung',
         desc: 'Präzise im Meisterlabor gefertigte vollkeramische Passkörper, die exakt eingefügt werden und maximale Kaukraft garantieren.',
@@ -231,7 +231,7 @@ const SECTION_I18N: Record<string, SectionDictionary> = {
       {
         id: 'sealants',
         href: '/treatments/general-dentistry/dental-sealants',
-        img: '/treatments/general/dental-sealants-copy.webp',
+        img: '/treatments/dental-sealants-fissure.jpg',
         title: 'Fissurenversiegelung',
         forWho: 'Kinder und Erwachsene zur Kariesprävention an Backenzähnen',
         desc: 'Tiefe Grübchen und Furchen der Backenzähne werden mit einem Schutzlack versiegelt, um Kariesbildung dauerhaft zu verhindern.',
@@ -264,7 +264,7 @@ const SECTION_I18N: Record<string, SectionDictionary> = {
       {
         id: 'cleaning',
         href: '/treatments/general-dentistry/dental-cleaning',
-        img: '/treatments/general/scaling-polishing-copy.webp',
+        img: '/treatments/dental-cleaning-scaling.jpg',
         title: 'Higienizacja i Skaling Zębów',
         forWho: 'Pacjenci z krwawieniem dziąseł, nieświeżym oddechem lub kamieniem nazębnym',
         desc: 'Zdrowie dziąseł zostaje zachowane dzięki bezbolesnemu usuwaniu kamienia ultradźwiękami, piaskowaniu Air-Flow i polerowaniu zębów.',
@@ -273,7 +273,7 @@ const SECTION_I18N: Record<string, SectionDictionary> = {
       {
         id: 'fillings',
         href: '/treatments/general-dentistry/tooth-fillings',
-        img: '/treatments/general/amalgam-kompozit-copy.webp',
+        img: '/treatments/tooth-fillings-amalgam-composite.jpg',
         title: 'Wypełnienia Zębowe (Kompozytowe)',
         forWho: 'Pacjenci z próchnicą, pękniętymi lub ukruszonymi zębami',
         desc: 'Uszkodzona część zęba zostaje dokładnie oczyszczona i odbudowana wysoce estetycznym nanokompozytem w naturalnym odcieniu.',
@@ -282,7 +282,7 @@ const SECTION_I18N: Record<string, SectionDictionary> = {
       {
         id: 'root-canal',
         href: '/treatments/general-dentistry/root-canal',
-        img: '/treatments/general/root-canal-treatment-copy.webp',
+        img: '/treatments/root-canal-treatment-endodontics.jpg',
         title: 'Leczenie Kanałowe (Endodoncja)',
         forWho: 'Pacjenci ze stanem zapalnym miazgi i silnym bólem zęba',
         desc: 'Zainfekowana miazga zostaje usunięta pod mikroskopem, a kanały zdezynfekowane i szczelnie wypełnione, ratując naturalny ząb.',
@@ -291,7 +291,7 @@ const SECTION_I18N: Record<string, SectionDictionary> = {
       {
         id: 'extraction',
         href: '/treatments/general-dentistry/tooth-extraction',
-        img: '/treatments/general/tooth-extraction-copy.webp',
+        img: '/treatments/tooth-extraction-surgical.jpg',
         title: 'Ekstrakcja Zęba i Zębów Mądrości',
         forWho: 'Pacjenci ze zniszczonymi zębami lub zatrzymanymi ósemkami',
         desc: 'Ząb jest bezboleśnie usuwany w znieczuleniu miejscowym z zachowaniem kości otaczającej i tkanek miękkich.',
@@ -300,7 +300,7 @@ const SECTION_I18N: Record<string, SectionDictionary> = {
       {
         id: 'inlay-onlay',
         href: '/treatments/general-dentistry/inlay-onlay',
-        img: '/treatments/general/inlay-onlay-copy.webp',
+        img: '/treatments/inlay-onlay-comparison.jpg',
         title: 'Wkłady i Nakłady Inlay / Onlay',
         forWho: 'Pacjenci z dużymi ubytkami poszukujący trwałych rekonstrukcji',
         desc: 'Indywidualnie projektowane ceramiczne wypełnienia CAD/CAM odbudowujące anatomiczny kształt i wytrzymałość zęba.',
@@ -309,7 +309,7 @@ const SECTION_I18N: Record<string, SectionDictionary> = {
       {
         id: 'sealants',
         href: '/treatments/general-dentistry/dental-sealants',
-        img: '/treatments/general/dental-sealants-copy.webp',
+        img: '/treatments/dental-sealants-fissure.jpg',
         title: 'Lakowanie Zębów (Fissure Sealants)',
         forWho: 'Dzieci i dorośli chcący zabezpieczyć zęby trzonowe przed próchnicą',
         desc: 'Głębokie bruzdy zębów bocznych zostają uszczelnione warstwą ochronną laku, co zapobiega odkładaniu się płytki i rozwojowi próchnicy.',
@@ -342,7 +342,7 @@ const SECTION_I18N: Record<string, SectionDictionary> = {
       {
         id: 'cleaning',
         href: '/treatments/general-dentistry/dental-cleaning',
-        img: '/treatments/general/scaling-polishing-copy.webp',
+        img: '/treatments/dental-cleaning-scaling.jpg',
         title: 'Destartarização e Polimento Dentário',
         forWho: 'Pacientes com sangramento gengival, mau hálito ou tártaro acumulado',
         desc: 'A saúde das gengivas é preservada através da remoção ultrassónica de tártaro, placa bacteriana e polimento Air-Flow de alto brilho.',
@@ -351,7 +351,7 @@ const SECTION_I18N: Record<string, SectionDictionary> = {
       {
         id: 'fillings',
         href: '/treatments/general-dentistry/tooth-fillings',
-        img: '/treatments/general/amalgam-kompozit-copy.webp',
+        img: '/treatments/tooth-fillings-amalgam-composite.jpg',
         title: 'Restaurações Dentárias (Compósito)',
         forWho: 'Pacientes com cáries, dentes fraturados ou desgastados',
         desc: 'A parte danificada do dente é limpa e restaurada com resina composta estética de alta resistência e tonalidade natural.',
@@ -360,7 +360,7 @@ const SECTION_I18N: Record<string, SectionDictionary> = {
       {
         id: 'root-canal',
         href: '/treatments/general-dentistry/root-canal',
-        img: '/treatments/general/root-canal-treatment-copy.webp',
+        img: '/treatments/root-canal-treatment-endodontics.jpg',
         title: 'Desvitalização Dentária (Endodontia)',
         forWho: 'Pacientes com inflamação do nervo dentário por cárie profunda e dor aguda',
         desc: 'A polpa infetada é removida sob microscópio clínico e os canais são selados hermeticamente, preservando o dente natural.',
@@ -369,7 +369,7 @@ const SECTION_I18N: Record<string, SectionDictionary> = {
       {
         id: 'extraction',
         href: '/treatments/general-dentistry/tooth-extraction',
-        img: '/treatments/general/tooth-extraction-copy.webp',
+        img: '/treatments/tooth-extraction-surgical.jpg',
         title: 'Extração Dentária & Dentes do Siso',
         forWho: 'Pacientes com dentes irrecuperáveis, fraturados ou sisos inclusos',
         desc: 'O dente é extraído sem qualquer dor sob anestesia local, utilizando técnicas cirúrgicas minimamente invasivas.',
@@ -378,7 +378,7 @@ const SECTION_I18N: Record<string, SectionDictionary> = {
       {
         id: 'inlay-onlay',
         href: '/treatments/general-dentistry/inlay-onlay',
-        img: '/treatments/general/inlay-onlay-copy.webp',
+        img: '/treatments/inlay-onlay-comparison.jpg',
         title: 'Inlays & Onlays Cerâmicos',
         forWho: 'Pacientes com perda dentária extensa que procuram durabilidade superior',
         desc: 'Restaurações indiretas de cerâmica personalizadas produzidas por CAD/CAM para recuperar perfeitamente a oclusão e estética.',
@@ -387,7 +387,7 @@ const SECTION_I18N: Record<string, SectionDictionary> = {
       {
         id: 'sealants',
         href: '/treatments/general-dentistry/dental-sealants',
-        img: '/treatments/general/dental-sealants-copy.webp',
+        img: '/treatments/dental-sealants-fissure.jpg',
         title: 'Selantes Dentários (Fissuras)',
         forWho: 'Crianças e adultos que desejam proteger os dentes molares contra cáries',
         desc: 'Aplicação de uma camada protetora nas fissuras dos dentes mastigatórios para impedir a acumulação bacteriana e evitar cáries.',
@@ -420,7 +420,7 @@ const SECTION_I18N: Record<string, SectionDictionary> = {
       {
         id: 'cleaning',
         href: '/treatments/general-dentistry/dental-cleaning',
-        img: '/treatments/general/scaling-polishing-copy.webp',
+        img: '/treatments/dental-cleaning-scaling.jpg',
         title: 'Limpieza Dental Profesional (Tartrectomía)',
         forWho: 'Pacientes con sangrado de encías, mal aliento o sarro acumulado',
         desc: 'La salud de las encías se preserva eliminando sarro, placa bacteriana y manchas con ultrasonidos y aeropulidor Swiss Air-Flow.',
@@ -429,7 +429,7 @@ const SECTION_I18N: Record<string, SectionDictionary> = {
       {
         id: 'fillings',
         href: '/treatments/general-dentistry/tooth-fillings',
-        img: '/treatments/general/amalgam-kompozit-copy.webp',
+        img: '/treatments/tooth-fillings-amalgam-composite.jpg',
         title: 'Empastes Dentales (Composite Estético)',
         forWho: 'Pacientes con caries, dientes fracturados o desgastados',
         desc: 'La parte dañada del diente se limpia y se reconstruye con composite estético de alta resistencia que imita el diente natural.',
@@ -438,7 +438,7 @@ const SECTION_I18N: Record<string, SectionDictionary> = {
       {
         id: 'root-canal',
         href: '/treatments/general-dentistry/root-canal',
-        img: '/treatments/general/root-canal-treatment-copy.webp',
+        img: '/treatments/root-canal-treatment-endodontics.jpg',
         title: 'Endodoncia (Tratamiento de Conductos)',
         forWho: 'Pacientes con el nervio dental infectado por caries profunda y dolor agudo',
         desc: 'El tejido pulpar infectado se elimina bajo magnificación microscópica y los conductos se sellan de forma hermética para salvar el diente.',
@@ -447,7 +447,7 @@ const SECTION_I18N: Record<string, SectionDictionary> = {
       {
         id: 'extraction',
         href: '/treatments/general-dentistry/tooth-extraction',
-        img: '/treatments/general/tooth-extraction-copy.webp',
+        img: '/treatments/tooth-extraction-surgical.jpg',
         title: 'Extracción Dental y Muelas del Juicio',
         forWho: 'Pacientes con dientes irrecuperables, problemáticos o muelas incluidas',
         desc: 'El diente se extrae de forma indolora con anestesia local; se aplican técnicas quirúrgicas mínimamente invasivas para muelas del juicio.',
@@ -456,7 +456,7 @@ const SECTION_I18N: Record<string, SectionDictionary> = {
       {
         id: 'inlay-onlay',
         href: '/treatments/general-dentistry/inlay-onlay',
-        img: '/treatments/general/inlay-onlay-copy.webp',
+        img: '/treatments/inlay-onlay-comparison.jpg',
         title: 'Incrustaciones Inlay & Onlay',
         forWho: 'Pacientes con gran pérdida de estructura dental que buscan máxima durabilidad',
         desc: 'Restauraciones cerámicas a medida fabricadas con tecnología CAD/CAM que devuelven la fuerza masticatoria y estética natural.',
@@ -465,7 +465,7 @@ const SECTION_I18N: Record<string, SectionDictionary> = {
       {
         id: 'sealants',
         href: '/treatments/general-dentistry/dental-sealants',
-        img: '/treatments/general/dental-sealants-copy.webp',
+        img: '/treatments/dental-sealants-fissure.jpg',
         title: 'Selladores Dentales (Fisuras)',
         forWho: 'Niños y adultos con riesgo de caries en las muelas posteriores',
         desc: 'Se aplica una película protectora en las fisuras de los molares que bloquea las bacterias y previene la aparición de caries.',
@@ -498,7 +498,7 @@ const SECTION_I18N: Record<string, SectionDictionary> = {
       {
         id: 'cleaning',
         href: '/treatments/general-dentistry/dental-cleaning',
-        img: '/treatments/general/scaling-polishing-copy.webp',
+        img: '/treatments/dental-cleaning-scaling.jpg',
         title: 'Профессиональная чистка зубов (Air-Flow и УЗ)',
         forWho: 'Пациенты с кровоточивостью десен, налетом или зубным камнем',
         desc: 'Здоровье десен и эмали сохраняется за счет бережного ультразвукового удаления зубного камня и швейцарской чистки Air-Flow.',
@@ -507,7 +507,7 @@ const SECTION_I18N: Record<string, SectionDictionary> = {
       {
         id: 'fillings',
         href: '/treatments/general-dentistry/tooth-fillings',
-        img: '/treatments/general/amalgam-kompozit-copy.webp',
+        img: '/treatments/tooth-fillings-amalgam-composite.jpg',
         title: 'Эстетические пломбы (Фотополимерные)',
         forWho: 'Пациенты с кариесом, сколами или разрушением зубов',
         desc: 'Пораженные кариесом ткани аккуратно удаляются, а форма и цвет зуба восстанавливаются прочным светоотверждаемым нанокомпозитом.',
@@ -516,7 +516,7 @@ const SECTION_I18N: Record<string, SectionDictionary> = {
       {
         id: 'root-canal',
         href: '/treatments/general-dentistry/root-canal',
-        img: '/treatments/general/root-canal-treatment-copy.webp',
+        img: '/treatments/root-canal-treatment-endodontics.jpg',
         title: 'Лечение каналов (Эндодонтия)',
         forWho: 'Пациенты с воспалением зубного нерва из-за глубокого кариеса и острой болью',
         desc: 'Инфицированная пульпа аккуратно удаляется под микроскопом, корневые каналы дезинфицируются и герметично пломбируются.',
@@ -525,7 +525,7 @@ const SECTION_I18N: Record<string, SectionDictionary> = {
       {
         id: 'extraction',
         href: '/treatments/general-dentistry/tooth-extraction',
-        img: '/treatments/general/tooth-extraction-copy.webp',
+        img: '/treatments/tooth-extraction-surgical.jpg',
         title: 'Удаление зубов и зубов мудрости',
         forWho: 'Пациенты с сильно разрушенными, воспаленными или ретинированными зубами',
         desc: 'Безболезненное удаление зуба под местной анестезией с сохранением костной ткани; малотравматичные хирургические методики.',
@@ -534,7 +534,7 @@ const SECTION_I18N: Record<string, SectionDictionary> = {
       {
         id: 'inlay-onlay',
         href: '/treatments/general-dentistry/inlay-onlay',
-        img: '/treatments/general/inlay-onlay-copy.webp',
+        img: '/treatments/inlay-onlay-comparison.jpg',
         title: 'Вкладки Inlay & Onlay (Керамические)',
         forWho: 'Пациенты с обширными разрушениями зуба для долговечной реставрации',
         desc: 'Индивидуальные керамические микропротезы CAD/CAM, идеально восстанавливающие анатомию и выдерживающие жевательную нагрузку.',
@@ -543,7 +543,7 @@ const SECTION_I18N: Record<string, SectionDictionary> = {
       {
         id: 'sealants',
         href: '/treatments/general-dentistry/dental-sealants',
-        img: '/treatments/general/dental-sealants-copy.webp',
+        img: '/treatments/dental-sealants-fissure.jpg',
         title: 'Герметизация фиссур',
         forWho: 'Дети и взрослые с глубокими бороздками на жевательных зубах',
         desc: 'Нанесение защитного полимерного слоя на жевательную поверхность зубов для 100% защиты от скопления налета и кариеса.',

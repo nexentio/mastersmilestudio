@@ -28,6 +28,7 @@ import ImplantSupportedDenturesDetailView from '@/components/ImplantSupportedDen
 import CosmeticDentistryDetailView from '@/components/CosmeticDentistryDetailView';
 import SmileMakeoverDetailView from '@/components/SmileMakeoverDetailView';
 import GeneralDentistryDetailView from '@/components/GeneralDentistryDetailView';
+import DentalCleaningDetailView from '@/components/DentalCleaningDetailView';
 import AllOnSixImplantDetailView from '@/components/AllOnSixImplantDetailView';
 import DentalCleaningHeroBanner from '@/components/treatment-sections/DentalCleaningHeroBanner';
 import GeneralDentistryHeroBanner from '@/components/treatment-sections/GeneralDentistryHeroBanner';
@@ -3021,6 +3022,13 @@ export default async function TreatmentDetailPage({ params }: Props) {
   ].includes(slug);
   const isGeneral = isGeneralMain || isGeneralSub;
   const isDentalCleaning = slug === 'dental-cleaning' || slug === 'teeth-cleaning-scaling';
+  const isToothFillings = slug === 'tooth-fillings' || slug === 'dental-fillings' || slug === 'composite-fillings' || slug === 'amalgam-fillings';
+  const isRootCanal = slug === 'root-canal' || slug === 'root-canal-treatment' || slug === 'endodontics' || slug === 'kanal-tedavisi';
+  const isToothExtraction = slug === 'tooth-extraction' || slug === 'tooth-extractions' || slug === 'wisdom-teeth' || slug === 'wisdom-tooth' || slug === 'dis-cekimi';
+  const isInlayOnlay = slug === 'inlay-onlay' || slug === 'inlays-onlays' || slug === 'inlay-onlay-dental-restorations' || slug === 'inley-onley';
+  const isDentalSealants = slug === 'dental-sealants' || slug === 'dental-sealant' || slug === 'fissure-sealants' || slug === 'fissur-ortucu';
+  const isFluoride = slug === 'fluoride-treatment' || slug === 'fluoride' || slug === 'florur-tedavisi';
+  const isBruxism = slug === 'bruxism-treatment' || slug === 'bruxism' || slug === 'night-guard' || slug === 'gece-plagi';
 
   const heroFallback = isGeneral
     ? GENERAL_HERO_I18N[locale] || GENERAL_HERO_I18N.en
@@ -3120,8 +3128,6 @@ export default async function TreatmentDetailPage({ params }: Props) {
         <DentalVeneersHeroBanner />
       ) : isDentalCrowns ? (
         <DentalCrownsHeroBanner />
-      ) : isDentalCleaning ? (
-        <DentalCleaningHeroBanner />
       ) : (
         <TreatmentHeroBanner
           tag={heroBadge}
@@ -3132,6 +3138,22 @@ export default async function TreatmentDetailPage({ params }: Props) {
               ? 'https://sohodent.com/doc/data1/smile-makeover.webp?v=1'
               : isHollywoodSmile
               ? 'https://sohodent.com/doc/data1/hoolywood-smile.webp?v=1'
+              : isDentalCleaning
+              ? '/treatments/scaling-polishing.webp'
+              : isToothFillings
+              ? 'https://sohodent.com/doc/data1/amalgam-kompozit.webp?v=1'
+              : isRootCanal
+              ? 'https://sohodent.com/doc/data1/root-canal-treatment.webp?v=1'
+              : isToothExtraction
+              ? 'https://sohodent.com/doc/data1/tooth-extractin.webp?v=1'
+              : isInlayOnlay
+              ? 'https://sohodent.com/doc/data1/inlay-onlay.webp.avif?v=1'
+              : isDentalSealants
+              ? 'https://sohodent.com/doc/data1/dental-sealants.webp?v=1'
+              : isFluoride
+              ? 'https://sohodent.com/doc/data1/fluoride-treatment.webp.avif?v=1'
+              : isBruxism
+              ? 'https://sohodent.com/doc/data1/gece-plagi.webp?v=1'
               : isGummySmile
               ? 'https://sohodent.com/doc/data1/gummy-smile-treatment.webp?v=1'
               : isTeethWhitening
@@ -3181,6 +3203,22 @@ export default async function TreatmentDetailPage({ params }: Props) {
               ? 'Smile Makeover in Istanbul, Turkey'
               : isHollywoodSmile
               ? 'Hollywood Smile in Istanbul, Turkey'
+              : isDentalCleaning
+              ? 'Dental Cleaning & Scaling in Istanbul, Turkey'
+              : isToothFillings
+              ? 'Tooth Fillings (Amalgam & Composite) in Istanbul, Turkey'
+              : isRootCanal
+              ? 'Root Canal Treatment in Istanbul, Turkey'
+              : isToothExtraction
+              ? 'Tooth Extraction in Istanbul, Turkey'
+              : isInlayOnlay
+              ? 'Inlay & Onlay Dental Restorations in Istanbul, Turkey'
+              : isDentalSealants
+              ? 'Dental Sealants in Istanbul, Turkey'
+              : isFluoride
+              ? 'Fluoride Treatment in Istanbul, Turkey'
+              : isBruxism
+              ? 'Bruxism Treatment (Night Guard) in Istanbul, Turkey'
               : isGummySmile
               ? 'Gummy Smile Treatment in Istanbul, Turkey'
               : isTeethWhitening
@@ -3249,8 +3287,8 @@ export default async function TreatmentDetailPage({ params }: Props) {
               <TreatmentInteractiveQuoteForm defaultTreatment="General Dentistry" />
             </div>
           </>
-        ) : isGeneralSub ? (
-          <div style={{ minHeight: '120px' }} />
+        ) : isDentalCleaning || isGeneralSub ? (
+          <DentalCleaningDetailView />
         ) : isDentalImplants ? (
           <DentalImplantsDetailView />
         ) : isCompleteDentures ? (

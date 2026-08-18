@@ -31,28 +31,28 @@ const CROWN_ACCORDION_DATA: Record<
         "title": "Zirconium Crowns",
         "target": "Patients with high aesthetic concerns who want a natural-looking and durable crown",
         "desc": "It is metal-free, offers an appearance closest to a natural tooth. It is durable and frequently preferred for front teeth.",
-        "img": "https://sohodent.com/doc/data1/zirconium-crowns-copy.webp",
+        "img": "/treatments/accordion/zirconium-crowns.webp",
         "href": "/treatments/dental-crowns/zirconium-crowns"
       },
       {
         "title": "Metal Porcelain Crowns (PFM Crowns)",
         "target": "Patients looking for a more economical solution and durability in their back teeth",
         "desc": "The inner part is metal, the outer is porcelain. It is long-lasting but not as natural as zirconium aesthetically.",
-        "img": "https://sohodent.com/doc/data1/metal-porcelain-crown-copy.webp",
+        "img": "/treatments/accordion/metal-porcelain-crown.webp",
         "href": "/treatments/dental-crowns/pfm-crowns"
       },
       {
         "title": "E-max Crowns",
         "target": "Patients who want maximum aesthetics on their front teeth",
         "desc": "It is full ceramic, has high light translucency, and looks almost identical to a natural tooth.",
-        "img": "https://sohodent.com/doc/data1/e-max-crown-copy.webp",
+        "img": "/treatments/accordion/e-max-crown.webp",
         "href": "/treatments/dental-crowns/emax-crowns"
       },
       {
         "title": "Full Ceramic Crowns",
         "target": "Patients who want to avoid allergy risks and prefer a natural, metal-free option",
         "desc": "It is made entirely of ceramic, is gum-friendly, and is aesthetically top-tier.",
-        "img": "https://sohodent.com/doc/data1/full-ceramic-crown-copy.webp",
+        "img": "/treatments/accordion/full-ceramic-crown.webp",
         "href": "/treatments/dental-crowns/full-ceramic"
       }
     ]
@@ -66,28 +66,28 @@ const CROWN_ACCORDION_DATA: Record<
         "title": "Zirkonyum Kron Kaplama",
         "target": "Yüksek estetik beklentisi olan, doğal ve dayanıklı bir kaplama isteyen hastalar",
         "desc": "Metalsizdir, doğal dişe en yakın görünümü sunar. Dayanıklıdır ve ön dişlerde sıklıkla tercih edilir.",
-        "img": "https://sohodent.com/doc/data1/zirconium-crowns-copy.webp",
+        "img": "/treatments/accordion/zirconium-crowns.webp",
         "href": "/treatments/dental-crowns/zirconium-crowns"
       },
       {
         "title": "Metal Destekli Porselen Kronlar (PFM)",
         "target": "Daha ekonomik çözüm ve arka dişlerde yüksek sağlamlık arayan hastalar",
         "desc": "İç kısmı metal, dış kısmı porselendir. Uzun ömürlüdür ancak estetik olarak zirkonyum kadar doğal değildir.",
-        "img": "https://sohodent.com/doc/data1/metal-porcelain-crown-copy.webp",
+        "img": "/treatments/accordion/metal-porcelain-crown.webp",
         "href": "/treatments/dental-crowns/pfm-crowns"
       },
       {
         "title": "E-max Kron Kaplama",
         "target": "Ön dişlerinde maksimum estetik ve ışık geçirgenliği isteyen hastalar",
         "desc": "Tam seramiktir, ışık geçirgenliği yüksektir ve doğal diş ile neredeyse birebir aynı görünür.",
-        "img": "https://sohodent.com/doc/data1/e-max-crown-copy.webp",
+        "img": "/treatments/accordion/e-max-crown.webp",
         "href": "/treatments/dental-crowns/emax-crowns"
       },
       {
         "title": "Tam Seramik Kronlar",
         "target": "Alerji riskinden kaçınmak isteyen ve metalsiz, doğal bir seçenek arayan hastalar",
         "desc": "Tamamen seramikten üretilir, diş eti dostudur ve estetik açıdan en üst seviyededir.",
-        "img": "https://sohodent.com/doc/data1/full-ceramic-crown-copy.webp",
+        "img": "/treatments/accordion/full-ceramic-crown.webp",
         "href": "/treatments/dental-crowns/full-ceramic"
       }
     ]
@@ -101,28 +101,28 @@ const CROWN_ACCORDION_DATA: Record<
         "title": "Zirkonkronen",
         "target": "Patienten mit hohen ästhetischen Ansprüchen, die eine natürliche und langlebige Krone wünschen",
         "desc": "Metallfrei, bietet das Aussehen, das einem natürlichen Zahn am nächsten kommt. Hochbelastbar und ideal für Front- und Seitenzähne.",
-        "img": "https://sohodent.com/doc/data1/zirconium-crowns-copy.webp",
+        "img": "/treatments/accordion/zirconium-crowns.webp",
         "href": "/treatments/dental-crowns/zirconium-crowns"
       },
       {
         "title": "Metallkeramikkronen (PFM)",
         "target": "Patienten, die eine wirtschaftliche Lösung und hohe Stabilität im Backenzahnbereich suchen",
         "desc": "Der innere Teil besteht aus Metall, der äußere aus Porzellan. Langlebig, jedoch ästhetisch nicht so transluzent wie Zirkon.",
-        "img": "https://sohodent.com/doc/data1/metal-porcelain-crown-copy.webp",
+        "img": "/treatments/accordion/metal-porcelain-crown.webp",
         "href": "/treatments/dental-crowns/pfm-crowns"
       },
       {
         "title": "E-max Kronen",
         "target": "Patienten, die maximale Ästhetik im sichtbaren Frontzahnbereich wünschen",
         "desc": "Vollkeramik mit höchster Lichtdurchlässigkeit – sieht echtem Zahnschmelz zum Verwechseln ähnlich.",
-        "img": "https://sohodent.com/doc/data1/e-max-crown-copy.webp",
+        "img": "/treatments/accordion/e-max-crown.webp",
         "href": "/treatments/dental-crowns/emax-crowns"
       },
       {
         "title": "Vollkeramikkronen",
         "target": "Patienten, die Allergierisiken vermeiden und eine metallfreie, natürliche Option bevorzugen",
         "desc": "Vollständig aus biokompatibler Keramik gefertigt, zahnfleischfreundlich und ästhetisch auf höchstem Niveau.",
-        "img": "https://sohodent.com/doc/data1/full-ceramic-crown-copy.webp",
+        "img": "/treatments/accordion/full-ceramic-crown.webp",
         "href": "/treatments/dental-crowns/full-ceramic"
       }
     ]
@@ -136,28 +136,28 @@ const CROWN_ACCORDION_DATA: Record<
         "title": "Korony Cyrkonowe",
         "target": "Pacjenci o wysokich wymaganiach estetycznych, oczekujący naturalnego i trwałego efektu",
         "desc": "Bezmetalowe korony o wyglądzie najbardziej zbliżonym do naturalnego zęba. Wyjątkowo trwałe i często wybierane na zęby przednie.",
-        "img": "https://sohodent.com/doc/data1/zirconium-crowns-copy.webp",
+        "img": "/treatments/accordion/zirconium-crowns.webp",
         "href": "/treatments/dental-crowns/zirconium-crowns"
       },
       {
         "title": "Korony Porcelanowe na Podbudowie Metalowej (PFM)",
         "target": "Pacjenci poszukujący bardziej ekonomicznego rozwiązania i dużej wytrzymałości w odcinku bocznym",
         "desc": "Wnętrze wykonane z metalu, z zewnątrz licowane porcelaną. Bardzo trwałe, choć estetycznie mniej naturalne niż cyrkon.",
-        "img": "https://sohodent.com/doc/data1/metal-porcelain-crown-copy.webp",
+        "img": "/treatments/accordion/metal-porcelain-crown.webp",
         "href": "/treatments/dental-crowns/pfm-crowns"
       },
       {
         "title": "Korony E-max",
         "target": "Pacjenci pragnący maksymalnej estetyki i przezierności w strefie uśmiechu",
         "desc": "Pełna ceramika o wysokiej przepuszczalności światła, wyglądająca niemal identycznie jak naturalny ząb.",
-        "img": "https://sohodent.com/doc/data1/e-max-crown-copy.webp",
+        "img": "/treatments/accordion/e-max-crown.webp",
         "href": "/treatments/dental-crowns/emax-crowns"
       },
       {
         "title": "Korony Pełnoceramiczne",
         "target": "Pacjenci chcący uniknąć ryzyka alergii i preferujący bezmetalowe, naturalne rozwiązania",
         "desc": "Wykonane w całości z ceramiki, w 100% przyjazne dla dziąseł i reprezentujące najwyższą klasę estetyki.",
-        "img": "https://sohodent.com/doc/data1/full-ceramic-crown-copy.webp",
+        "img": "/treatments/accordion/full-ceramic-crown.webp",
         "href": "/treatments/dental-crowns/full-ceramic"
       }
     ]
@@ -171,28 +171,28 @@ const CROWN_ACCORDION_DATA: Record<
         "title": "Coroas de Zircónia",
         "target": "Pacientes com altas exigências estéticas que buscam uma coroa natural e duradoura",
         "desc": "Livre de metal, oferece a aparência mais próxima do dente natural. É altamente durável e frequentemente indicada para dentes anteriores.",
-        "img": "https://sohodent.com/doc/data1/zirconium-crowns-copy.webp",
+        "img": "/treatments/accordion/zirconium-crowns.webp",
         "href": "/treatments/dental-crowns/zirconium-crowns"
       },
       {
         "title": "Coroas Metalocerâmicas (PFM)",
         "target": "Pacientes que procuram uma solução mais econômica e resistência para os dentes posteriores",
         "desc": "A estrutura interna é de metal e a externa de porcelana. Longa durabilidade, mas com estética menos translúcida que a zircônia.",
-        "img": "https://sohodent.com/doc/data1/metal-porcelain-crown-copy.webp",
+        "img": "/treatments/accordion/metal-porcelain-crown.webp",
         "href": "/treatments/dental-crowns/pfm-crowns"
       },
       {
         "title": "Coroas E-max",
         "target": "Pacientes que desejam máxima estética nos dentes da frente",
         "desc": "Totalmente cerâmica, com alta translucidez de luz e aparência praticamente idêntica ao esmalte dental natural.",
-        "img": "https://sohodent.com/doc/data1/e-max-crown-copy.webp",
+        "img": "/treatments/accordion/e-max-crown.webp",
         "href": "/treatments/dental-crowns/emax-crowns"
       },
       {
         "title": "Coroas Cerâmicas Puras",
         "target": "Pacientes que desejam evitar alergias e preferem uma opção biocompátivel sem metal",
         "desc": "Feita inteiramente de cerâmica, excelente integração gengival e padrão estético de alto nível.",
-        "img": "https://sohodent.com/doc/data1/full-ceramic-crown-copy.webp",
+        "img": "/treatments/accordion/full-ceramic-crown.webp",
         "href": "/treatments/dental-crowns/full-ceramic"
       }
     ]
@@ -206,28 +206,28 @@ const CROWN_ACCORDION_DATA: Record<
         "title": "Coronas de Circonio",
         "target": "Pacientes con altas exigencias estéticas que buscan una corona de aspecto natural y duradera",
         "desc": "Sin metal, ofrece la apariencia más cercana a un diente natural. Es duradera y se prefiere frecuentemente para dientes frontales.",
-        "img": "https://sohodent.com/doc/data1/zirconium-crowns-copy.webp",
+        "img": "/treatments/accordion/zirconium-crowns.webp",
         "href": "/treatments/dental-crowns/zirconium-crowns"
       },
       {
         "title": "Coronas Metal-Porcelana (Coronas PFM)",
         "target": "Pacientes que buscan una solución más económica y durabilidad en dientes posteriores",
         "desc": "La parte interna es de metal y la externa de porcelana. Larga vida útil, aunque estéticamente no tan natural como el circonio.",
-        "img": "https://sohodent.com/doc/data1/metal-porcelain-crown-copy.webp",
+        "img": "/treatments/accordion/metal-porcelain-crown.webp",
         "href": "/treatments/dental-crowns/pfm-crowns"
       },
       {
         "title": "Coronas E-max",
         "target": "Pacientes que buscan la máxima estética en sus dientes frontales",
         "desc": "Completamente de cerámica, tiene alta translucidez y aspecto prácticamente idéntico al de un diente natural.",
-        "img": "https://sohodent.com/doc/data1/e-max-crown-copy.webp",
+        "img": "/treatments/accordion/e-max-crown.webp",
         "href": "/treatments/dental-crowns/emax-crowns"
       },
       {
         "title": "Coronas Totalmente Cerámicas",
         "target": "Pacientes que quieren evitar riesgos de alergias y prefieren una opción sin metal",
         "desc": "Fabricadas íntegramente en cerámica, cuidan la encía y ofrecen el más alto nivel estético.",
-        "img": "https://sohodent.com/doc/data1/full-ceramic-crown-copy.webp",
+        "img": "/treatments/accordion/full-ceramic-crown.webp",
         "href": "/treatments/dental-crowns/full-ceramic"
       }
     ]
@@ -241,28 +241,28 @@ const CROWN_ACCORDION_DATA: Record<
         "title": "Циркониевые коронки",
         "target": "Пациенты с высокими эстетическими требованиями, желающие получить естественные и прочные коронки",
         "desc": "Не содержат металла, обеспечивают максимально естественный вид. Высокая прочность, идеально подходят для передних и жевательных зубов.",
-        "img": "https://sohodent.com/doc/data1/zirconium-crowns-copy.webp",
+        "img": "/treatments/accordion/zirconium-crowns.webp",
         "href": "/treatments/dental-crowns/zirconium-crowns"
       },
       {
         "title": "Металлокерамические коронки (PFM)",
         "target": "Пациенты, которые ищут экономичное решение и долговечность для жевательных зубов",
         "desc": "Внутренняя часть металлическая, внешняя — керамическая. Долговечны, но менее прозрачны, чем оксид циркония.",
-        "img": "https://sohodent.com/doc/data1/metal-porcelain-crown-copy.webp",
+        "img": "/treatments/accordion/metal-porcelain-crown.webp",
         "href": "/treatments/dental-crowns/pfm-crowns"
       },
       {
         "title": "Коронки E-max",
         "target": "Пациенты, желающие добиться максимальной эстетики на передних зубах",
         "desc": "Цельная керамика с высокой светопроницаемостью, практически неотличимая от натуральной эмали.",
-        "img": "https://sohodent.com/doc/data1/e-max-crown-copy.webp",
+        "img": "/treatments/accordion/e-max-crown.webp",
         "href": "/treatments/dental-crowns/emax-crowns"
       },
       {
         "title": "Цельнокерамические коронки",
         "target": "Пациенты, желающие исключить риск аллергии и выбирающие биосовместимый вариант без металла",
         "desc": "Полностью выполнены из керамики, бережно контактируют с десной и обеспечивают высший уровень эстетики.",
-        "img": "https://sohodent.com/doc/data1/full-ceramic-crown-copy.webp",
+        "img": "/treatments/accordion/full-ceramic-crown.webp",
         "href": "/treatments/dental-crowns/full-ceramic"
       }
     ]
