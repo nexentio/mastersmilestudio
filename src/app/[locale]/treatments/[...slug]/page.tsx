@@ -1081,7 +1081,7 @@ export default async function HierarchicalTreatmentPage({ params }: PageProps) {
           subtitle={heroSubtitle}
           imageSrc={
             isSmileMakeover
-              ? 'https://sohodent.com/doc/data1/diestema-closure.webp?v=1'
+              ? 'https://sohodent.com/doc/data1/smile-makeover.webp?v=1'
               : isHollywoodSmile
               ? 'https://sohodent.com/doc/data1/hoolywood-smile.webp?v=1'
               : isGummySmile
