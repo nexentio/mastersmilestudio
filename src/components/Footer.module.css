@@ -1,0 +1,235 @@
+.footer {
+  position: relative;
+  background-color: #ffffff;
+  background-image: 
+    radial-gradient(ellipse 95% 65% at 75% 100%, rgba(255, 165, 82, 0.42) 0%, rgba(255, 145, 36, 0.25) 35%, rgba(217, 119, 6, 0.12) 60%, rgba(255, 255, 255, 0.05) 85%, transparent 100%),
+    radial-gradient(ellipse 55% 75% at 100% 70%, rgba(255, 165, 82, 0.35) 0%, rgba(217, 119, 6, 0.18) 35%, rgba(146, 64, 14, 0.08) 65%, transparent 85%);
+  color: #0c1b4d;
+  padding: 5rem 1.5rem 3.5rem 1.5rem;
+  overflow: hidden;
+  border-top: none;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.navGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2.5rem;
+  margin-bottom: 4rem;
+}
+
+.colTitle {
+  font-size: 0.85rem;
+  font-family: monospace, -apple-system, sans-serif;
+  color: #8c765c;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.navList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.navLink {
+  font-family: var(--font-outfit), sans-serif;
+  font-size: 0.95rem;
+  color: #334155;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+.navLink:hover {
+  color: #0c1b4d;
+  transform: translateX(3px);
+}
+
+.divider {
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.06);
+  margin-bottom: 3.5rem;
+}
+
+.newsletterRow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+
+.newsletterTitle {
+  font-family: var(--font-outfit), sans-serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #0c1b4d;
+  margin: 0 0 0.5rem 0;
+  letter-spacing: -0.02em;
+}
+
+.newsletterDesc {
+  font-family: var(--font-outfit), sans-serif;
+  font-size: 0.92rem;
+  color: #64748b;
+  line-height: 1.6;
+  max-width: 480px;
+  margin: 0;
+}
+
+.newsletterFormWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-self: end;
+  width: 100%;
+  max-width: 460px;
+}
+
+.newsletterForm {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+}
+
+.emailInput {
+  flex: 1;
+  background-color: #ffffff;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 12px;
+  padding: 0.8rem 1.15rem;
+  color: #0c1b4d;
+  font-size: 0.95rem;
+  outline: none;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.emailInput:focus {
+  border-color: #0c1b4d;
+  box-shadow: 0 0 0 3px rgba(12, 27, 77, 0.1);
+}
+
+.emailInput::placeholder {
+  color: #94a3b8;
+}
+
+.submitBtn {
+  background-color: #0c1b4d;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  padding: 0.8rem 1.85rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 14px rgba(12, 27, 77, 0.2);
+  white-space: nowrap;
+}
+
+.submitBtn:hover {
+  background-color: #1e3a8a;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(12, 27, 77, 0.3);
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 0.85rem;
+  font-size: 0.825rem;
+  color: #64748b;
+  cursor: pointer;
+  user-select: none;
+}
+
+.checkboxInput {
+  width: 16px;
+  height: 16px;
+  accent-color: #0c1b4d;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.bottomRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  font-size: 0.88rem;
+  color: #64748b;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.legalLinks {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.legalLink {
+  color: #64748b;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.legalLink:hover {
+  color: #0c1b4d;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 3.5rem 1rem 2.5rem 1rem;
+  }
+
+  .navGrid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .newsletterRow {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .newsletterForm {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .emailInput,
+  .submitBtn {
+    width: 100%;
+  }
+
+  .bottomRow {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .legalLinks {
+    flex-wrap: wrap;
+    gap: 1.25rem;
+  }
+}

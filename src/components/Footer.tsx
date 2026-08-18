@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { Link } from '@/i18n/routing';
 import { useTranslations, useLocale } from 'next-intl';
 import { getWhatsAppLink } from '@/config/site';
+import styles from './Footer.module.css';
 
 export default function Footer() {
   const t = useTranslations('footer');
@@ -66,14 +67,7 @@ export default function Footer() {
             href={item.href}
             target="_blank"
             rel="noopener noreferrer"
-            style={{
-              fontSize: '0.95rem',
-              color: '#f8fafc',
-              textDecoration: 'none',
-              transition: 'color 0.2s ease',
-              fontWeight: 400,
-            }}
-            className="footer-nav-link"
+            className={styles.navLink}
           >
             {item.label}
           </a>
@@ -83,17 +77,7 @@ export default function Footer() {
 
     return (
       <li key={idx}>
-        <Link
-          href={item.href}
-          style={{
-            fontSize: '0.95rem',
-            color: '#f8fafc',
-            textDecoration: 'none',
-            transition: 'color 0.2s ease',
-            fontWeight: 400,
-          }}
-          className="footer-nav-link"
-        >
+        <Link href={item.href} className={styles.navLink}>
           {item.label}
         </Link>
       </li>
@@ -101,234 +85,77 @@ export default function Footer() {
   };
 
   return (
-    <footer
-      style={{
-        position: 'relative',
-        backgroundColor: '#08080a',
-        backgroundImage: `
-          radial-gradient(ellipse 95% 65% at 75% 100%, rgba(255, 165, 82, 0.55) 0%, rgba(255, 145, 36, 0.32) 35%, rgba(217, 119, 6, 0.16) 60%, rgba(8, 8, 10, 0.05) 85%, transparent 100%),
-          radial-gradient(ellipse 55% 75% at 100% 70%, rgba(255, 165, 82, 0.45) 0%, rgba(217, 119, 6, 0.22) 35%, rgba(146, 64, 14, 0.1) 65%, transparent 85%),
-          radial-gradient(ellipse 45% 45% at 50% 0%, rgba(255, 165, 82, 0.07) 0%, transparent 60%)
-        `,
-        color: '#ffffff',
-        padding: '5.5rem 1.5rem 3.5rem 1.5rem',
-        overflow: 'hidden',
-        borderTop: '1px solid rgba(255, 255, 255, 0.08)',
-      }}
-    >
-      <div
-        style={{
-          maxWidth: '1280px',
-          margin: '0 auto',
-          position: 'relative',
-          zIndex: 2,
-        }}
-      >
+    <footer className={styles.footer}>
+      <div className={styles.container}>
         {/* Top 4 Navigation Columns */}
-        <div
-          style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
-            gap: '2.5rem',
-            marginBottom: '4.5rem',
-          }}
-        >
-          {/* Column 1: // Treatments */}
+        <div className={styles.navGrid}>
+          {/* Column 1: Treatments */}
           <div>
-            <div
-              style={{
-                fontSize: '0.85rem',
-                fontFamily: 'monospace, -apple-system, sans-serif',
-                color: '#94a3b8',
-                letterSpacing: '0.04em',
-                marginBottom: '1.75rem',
-              }}
-            >
-              {t('colTreatmentsTitle')}
-            </div>
-            <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.9rem' }}>
+            <div className={styles.colTitle}>{t('colTreatmentsTitle')}</div>
+            <ul className={styles.navList}>
               {treatmentsList.map(renderLinkItem)}
             </ul>
           </div>
 
-          {/* Column 2: // Support */}
+          {/* Column 2: Support */}
           <div>
-            <div
-              style={{
-                fontSize: '0.85rem',
-                fontFamily: 'monospace, -apple-system, sans-serif',
-                color: '#94a3b8',
-                letterSpacing: '0.04em',
-                marginBottom: '1.75rem',
-              }}
-            >
-              {t('colSupportTitle')}
-            </div>
-            <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.9rem' }}>
+            <div className={styles.colTitle}>{t('colSupportTitle')}</div>
+            <ul className={styles.navList}>
               {supportList.map(renderLinkItem)}
             </ul>
           </div>
 
-          {/* Column 3: // Corporate */}
+          {/* Column 3: Corporate */}
           <div>
-            <div
-              style={{
-                fontSize: '0.85rem',
-                fontFamily: 'monospace, -apple-system, sans-serif',
-                color: '#94a3b8',
-                letterSpacing: '0.04em',
-                marginBottom: '1.75rem',
-              }}
-            >
-              {t('colCorporateTitle')}
-            </div>
-            <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.9rem' }}>
+            <div className={styles.colTitle}>{t('colCorporateTitle')}</div>
+            <ul className={styles.navList}>
               {corporateList.map(renderLinkItem)}
             </ul>
           </div>
 
-          {/* Column 4: // Legal & Contact */}
+          {/* Column 4: Legal & Contact */}
           <div>
-            <div
-              style={{
-                fontSize: '0.85rem',
-                fontFamily: 'monospace, -apple-system, sans-serif',
-                color: '#94a3b8',
-                letterSpacing: '0.04em',
-                marginBottom: '1.75rem',
-              }}
-            >
-              {t('colLegalTitle')}
-            </div>
-            <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.9rem' }}>
+            <div className={styles.colTitle}>{t('colLegalTitle')}</div>
+            <ul className={styles.navList}>
               {legalList.map(renderLinkItem)}
             </ul>
           </div>
         </div>
 
         {/* Subtle Full-Width Divider Line */}
-        <div
-          style={{
-            height: '1px',
-            backgroundColor: 'rgba(255, 255, 255, 0.12)',
-            marginBottom: '3.5rem',
-          }}
-        />
+        <div className={styles.divider} />
 
         {/* Middle Newsletter Subscription Row */}
-        <div
-          style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
-            gap: '2.5rem',
-            alignItems: 'flex-start',
-            justifyContent: 'space-between',
-            marginBottom: '4.5rem',
-          }}
-        >
+        <div className={styles.newsletterRow}>
           {/* Left Text */}
           <div>
-            <h4
-              style={{
-                fontSize: '1.25rem',
-                fontWeight: 500,
-                color: '#ffffff',
-                margin: '0 0 0.5rem 0',
-                letterSpacing: '-0.02em',
-              }}
-            >
-              {t('newsletterTitle')}
-            </h4>
-            <p
-              style={{
-                fontSize: '0.9rem',
-                color: '#94a3b8',
-                lineHeight: 1.6,
-                maxWidth: '480px',
-                margin: 0,
-              }}
-            >
-              {t('newsletterDesc')}
-            </p>
+            <h4 className={styles.newsletterTitle}>{t('newsletterTitle')}</h4>
+            <p className={styles.newsletterDesc}>{t('newsletterDesc')}</p>
           </div>
 
           {/* Right Newsletter Form */}
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', justifySelf: 'end' }}>
-            <form
-              onSubmit={handleSubmit}
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: '0.75rem',
-                width: '100%',
-                maxWidth: '450px',
-              }}
-            >
+          <div className={styles.newsletterFormWrap}>
+            <form onSubmit={handleSubmit} className={styles.newsletterForm}>
               <input
                 type="email"
                 required
                 placeholder={t('newsletterPlaceholder')}
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                style={{
-                  flex: 1,
-                  backgroundColor: 'rgba(255, 255, 255, 0.08)',
-                  border: '1px solid rgba(255, 255, 255, 0.18)',
-                  borderRadius: '10px',
-                  padding: '0.8rem 1.15rem',
-                  color: '#ffffff',
-                  fontSize: '0.95rem',
-                  outline: 'none',
-                  backdropFilter: 'blur(8px)',
-                  transition: 'border-color 0.2s ease',
-                }}
-                className="footer-email-input"
+                className={styles.emailInput}
               />
-              <button
-                type="submit"
-                style={{
-                  backgroundColor: '#ffffff',
-                  color: '#09090b',
-                  border: 'none',
-                  borderRadius: '10px',
-                  padding: '0.8rem 1.85rem',
-                  fontSize: '0.95rem',
-                  fontWeight: 600,
-                  cursor: 'pointer',
-                  transition: 'all 0.25s ease',
-                  boxShadow: '0 4px 14px rgba(255, 255, 255, 0.15)',
-                  whiteSpace: 'nowrap',
-                }}
-                className="footer-join-btn"
-              >
+              <button type="submit" className={styles.submitBtn}>
                 {submitted ? t('newsletterSuccess') : t('newsletterBtn')}
               </button>
             </form>
 
             {/* Checkbox Agreement */}
-            <label
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: '0.6rem',
-                marginTop: '0.85rem',
-                fontSize: '0.825rem',
-                color: '#94a3b8',
-                cursor: 'pointer',
-                userSelect: 'none',
-              }}
-            >
+            <label className={styles.checkboxLabel}>
               <input
                 type="checkbox"
                 checked={agreed}
                 onChange={(e) => setAgreed(e.target.checked)}
-                style={{
-                  width: '16px',
-                  height: '16px',
-                  accentColor: '#FFA552',
-                  cursor: 'pointer',
-                  borderRadius: '4px',
-                }}
+                className={styles.checkboxInput}
               />
               <span>{t('newsletterConsent')}</span>
             </label>
@@ -336,34 +163,14 @@ export default function Footer() {
         </div>
 
         {/* Bottom Copyright & Legal Links */}
-        <div
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'space-between',
-            flexWrap: 'wrap',
-            gap: '1.5rem',
-            fontSize: '0.85rem',
-            color: '#64748b',
-          }}
-        >
-          <div>
-            {t('copyright')}
-          </div>
+        <div className={styles.bottomRow}>
+          <div>{t('copyright')}</div>
 
-          <div style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>
-            <Link
-              href="/#privacy"
-              style={{ color: '#94a3b8', textDecoration: 'none', transition: 'color 0.2s ease' }}
-              className="footer-nav-link"
-            >
+          <div className={styles.legalLinks}>
+            <Link href="/#privacy" className={styles.legalLink}>
               {t('privacyPolicy')}
             </Link>
-            <Link
-              href="/#terms"
-              style={{ color: '#94a3b8', textDecoration: 'none', transition: 'color 0.2s ease' }}
-              className="footer-nav-link"
-            >
+            <Link href="/#terms" className={styles.legalLink}>
               {t('termsOfUse')}
             </Link>
           </div>
