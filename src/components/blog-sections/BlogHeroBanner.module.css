@@ -41,7 +41,7 @@
 .text1 {
   font-family: var(--font-outfit), sans-serif;
   font-size: clamp(2.4rem, 5vw, 3.8rem);
-  font-weight: 800;
+  font-weight: 600;
   color: #ffffff;
   margin: 0 0 0.5rem 0;
   letter-spacing: 0.05em;

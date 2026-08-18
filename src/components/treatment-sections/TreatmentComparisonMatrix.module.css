@@ -24,7 +24,7 @@
 
 .mainHeading {
   font-size: clamp(2rem, 3.2vw, 2.75rem);
-  font-weight: 800;
+  font-weight: 600;
   color: #0c1b4d;
   line-height: 1.2;
   letter-spacing: -0.025em;
@@ -110,7 +110,7 @@
 .matrixTable th {
   padding: 1.2rem 1.4rem;
   font-size: 0.82rem;
-  font-weight: 800;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   white-space: nowrap;
@@ -149,7 +149,7 @@
 }
 
 .treatmentCell {
-  font-weight: 800;
+  font-weight: 600;
   color: #0c1b4d;
   font-size: 1.02rem;
   white-space: nowrap;

@@ -26,7 +26,7 @@
 .headS1 {
   font-family: var(--font-outfit), sans-serif;
   font-size: clamp(2.2rem, 3.2vw, 2.9rem);
-  font-weight: 800;
+  font-weight: 600;
   color: #0c1b4d;
   line-height: 1.15;
   letter-spacing: -0.02em;
@@ -185,7 +185,7 @@
 .xhead {
   font-family: var(--font-outfit), sans-serif;
   font-size: 1.15rem;
-  font-weight: 800;
+  font-weight: 600;
   color: #0c1b4d;
   margin-bottom: 18px;
   letter-spacing: -0.01em;

@@ -55,7 +55,7 @@
 /* Typography & Headings */
 .heading {
   font-size: 2.35rem;
-  font-weight: 800;
+  font-weight: 600;
   color: #0c1b4d;
   line-height: 1.2;
   letter-spacing: -0.02em;
@@ -82,7 +82,7 @@
 
 .subHeading {
   font-size: 1.28rem;
-  font-weight: 800;
+  font-weight: 600;
   color: #0c1b4d;
   line-height: 1.45;
   margin: 2rem 0 1.25rem 0;
@@ -118,7 +118,7 @@
 
 .brandHighlight {
   color: #0c1b4d;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 /* Description Text Blocks */

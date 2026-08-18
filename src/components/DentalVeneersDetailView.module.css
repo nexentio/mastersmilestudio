@@ -16,7 +16,7 @@
 
 .mainHeading {
   font-size: clamp(1.85rem, 3.2vw, 2.5rem);
-  font-weight: 800;
+  font-weight: 600;
   color: #0c1b4d;
   line-height: 1.25;
   margin: 0 0 1.5rem 0;
@@ -53,7 +53,7 @@
 
 .typesTitle {
   font-size: clamp(1.6rem, 2.6vw, 2.15rem);
-  font-weight: 800;
+  font-weight: 600;
   color: #0c1b4d;
   line-height: 1.25;
   margin: 0;
@@ -228,7 +228,7 @@
 
 .statsTitle {
   font-size: clamp(1.6rem, 2.5vw, 2.15rem);
-  font-weight: 800;
+  font-weight: 600;
   color: #0c1b4d;
   margin: 0 0 0.5rem 0;
 }
@@ -289,7 +289,7 @@
 
 .sectionMainTitle {
   font-size: clamp(1.75rem, 2.8vw, 2.3rem);
-  font-weight: 800;
+  font-weight: 600;
   color: #0c1b4d;
   line-height: 1.25;
   margin: 0 0 0.5rem 0;
@@ -310,7 +310,7 @@
 
 .reasonNumber {
   color: #d58936;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .linkGold {
@@ -328,7 +328,7 @@
 
 .timelineHeading {
   font-size: clamp(1.65rem, 2.8vw, 2.25rem);
-  font-weight: 800;
+  font-weight: 600;
   color: #0c1b4d;
   text-align: center;
   margin: 0 0 2.5rem 0;
@@ -370,7 +370,7 @@
 
 .timelineStepNumber {
   font-size: 1.15rem;
-  font-weight: 800;
+  font-weight: 600;
   color: #d58936;
   background-color: #fff7ed;
   padding: 0.25rem 0.65rem;

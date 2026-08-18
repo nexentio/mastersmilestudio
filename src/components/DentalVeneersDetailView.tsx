@@ -1,32 +1,8 @@
 'use client';
 
 import React from 'react';
-import GeneralDentistryIntroSection from '@/components/treatment-sections/GeneralDentistryIntroSection';
-import GeneralDentistryAccordionSection from '@/components/treatment-sections/GeneralDentistryAccordionSection';
-import GeneralDentistryJourneySection from '@/components/treatment-sections/GeneralDentistryJourneySection';
-import TreatmentServicesIncludedSection from '@/components/treatment-sections/TreatmentServicesIncludedSection';
-import RealPatientsSection from '@/components/RealPatientsSection';
-import CosmeticBeforeAfterSliderSection from '@/components/treatment-sections/CosmeticBeforeAfterSliderSection';
-import CosmeticPackagesSliderSection from '@/components/treatment-sections/CosmeticPackagesSliderSection';
-import TreatmentReviewsSection from '@/components/treatment-sections/TreatmentReviewsSection';
-import GeneralDentistryFaqSection from '@/components/treatment-sections/GeneralDentistryFaqSection';
-import TreatmentInteractiveQuoteForm from '@/components/treatment-sections/TreatmentInteractiveQuoteForm';
+import PorcelainVeneersDetailView from '@/components/PorcelainVeneersDetailView';
 
 export default function DentalVeneersDetailView() {
-  return (
-    <>
-      <GeneralDentistryIntroSection />
-      <GeneralDentistryAccordionSection />
-      <GeneralDentistryJourneySection />
-      <TreatmentServicesIncludedSection />
-      <RealPatientsSection />
-      <CosmeticBeforeAfterSliderSection />
-      <CosmeticPackagesSliderSection />
-      <TreatmentReviewsSection />
-      <GeneralDentistryFaqSection />
-      <div id="contact">
-        <TreatmentInteractiveQuoteForm defaultTreatment="Dental Veneers" />
-      </div>
-    </>
-  );
+  return <PorcelainVeneersDetailView />;
 }

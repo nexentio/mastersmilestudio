@@ -22,398 +22,293 @@ const CROWN_ACCORDION_DATA: Record<
     items: TreatmentItem[];
   }
 > = {
-  tr: {
-    heading: 'Sizin İçin En Doğru Kron Kaplama Hangisi?',
-    subtitle:
-      'Hangi diş kronu materyalinin çiğneme kuvvetinize ve estetik beklentilerinize uygun olduğundan emin değil misiniz? Seçeneklerimizi inceleyerek doğru kararı verin.',
-    readMore: 'DETAYLI BİLGİ',
-    items: [
+  "en": {
+    "heading": "Find the Right Treatment for You",
+    "subtitle": "Not sure which dental treatment suits your needs? Browse through our treatment options to see who each procedure is for and what it offers so you can make informed decisions about your dental care.",
+    "readMore": "READ MORE",
+    "items": [
       {
-        title: 'Zirkonyum Kron Kaplama',
-        target: 'Yüksek dayanıklılık ve doğal beyazlık isteyen hastalar',
-        desc: '1200+ MPa kırılma direncine sahip, metalsiz, biyouyumlu ve diş eti dostu monolitik zirkonyum kaplama.',
-        img: 'https://sohodent.com/doc/data1/zirconium-implant-copy.webp',
-        href: '/treatments/dental-crowns/zirconium-crowns',
+        "title": "Zirconium Crowns",
+        "target": "Patients with high aesthetic concerns who want a natural-looking and durable crown",
+        "desc": "It is metal-free, offers an appearance closest to a natural tooth. It is durable and frequently preferred for front teeth.",
+        "img": "https://sohodent.com/doc/data1/zirconium-crowns-copy.webp",
+        "href": "/treatments/dental-crowns/zirconium-crowns"
       },
       {
-        title: 'Ivoclar E-Max Kron Kaplama',
-        target: 'Ön dişlerinde maksimum ışık geçirgenliği ve saydamlık arayanlar',
-        desc: 'Doğal diş minesini birebir taklit eden lityum disilikat cam seramik ile kusursuz ön bölge estetiği.',
-        img: 'https://sohodent.com/doc/data1/e-max-laminate-copy.webp',
-        href: '/treatments/dental-crowns/emax-crowns',
+        "title": "Metal Porcelain Crowns (PFM Crowns)",
+        "target": "Patients looking for a more economical solution and durability in their back teeth",
+        "desc": "The inner part is metal, the outer is porcelain. It is long-lasting but not as natural as zirconium aesthetically.",
+        "img": "https://sohodent.com/doc/data1/metal-porcelain-crown-copy.webp",
+        "href": "/treatments/dental-crowns/pfm-crowns"
       },
       {
-        title: 'Metal Destekli Porselen (PFM)',
-        target: 'Arka dişlerde ekonomik ve geleneksel sağlamlık arayan hastalar',
-        desc: 'Metal alaşım altyapı üzerine porselen işlenen klasik ve dayanıklı kaplama türü.',
-        img: 'https://sohodent.com/doc/data1/porcelain-laminate-copy.webp',
-        href: '/treatments/dental-crowns/pfm-crowns',
+        "title": "E-max Crowns",
+        "target": "Patients who want maximum aesthetics on their front teeth",
+        "desc": "It is full ceramic, has high light translucency, and looks almost identical to a natural tooth.",
+        "img": "https://sohodent.com/doc/data1/e-max-crown-copy.webp",
+        "href": "/treatments/dental-crowns/emax-crowns"
       },
       {
-        title: 'Tam Seramik Kronlar',
-        target: 'Metal alerjisi olan ve doğal diş dokusuna en yakın uyumu isteyenler',
-        desc: '%100 metalsiz cam seramik bloklardan üretilen yüksek biyouyumlu restorasyonlar.',
-        img: 'https://sohodent.com/doc/data1/porcelain-laminate-copy.webp',
-        href: '/treatments/dental-crowns/full-ceramic',
-      },
-      {
-        title: 'Zirkon Üstü Porselen (Layered Zirconia)',
-        target: 'Hem zirkonyum gücü hem de porselen el işçiliği derinliği isteyenler',
-        desc: 'Zirkonyum gövde üzerine usta seramistler tarafından elle işlenen çok katmanlı estetik kaplama.',
-        img: 'https://sohodent.com/doc/data1/zirconium-implant-copy.webp',
-        href: '/treatments/dental-crowns/zirconium-crowns',
-      },
-      {
-        title: 'Geçici Kronlar (Same-Day PMMA)',
-        target: 'Kalıcı dişler üretilirken dişsiz kalmak istemeyen tüm hastalar',
-        desc: 'Diş kesimi ile aynı gün takılan, sıcak-soğuk hassasiyetini önleyen ve çiğnemeyi sağlayan geçici dişler.',
-        img: 'https://sohodent.com/doc/data1/lumineer-copy.webp',
-        href: '/treatments/dental-crowns',
-      },
-    ],
+        "title": "Full Ceramic Crowns",
+        "target": "Patients who want to avoid allergy risks and prefer a natural, metal-free option",
+        "desc": "It is made entirely of ceramic, is gum-friendly, and is aesthetically top-tier.",
+        "img": "https://sohodent.com/doc/data1/full-ceramic-crown-copy.webp",
+        "href": "/treatments/dental-crowns/full-ceramic"
+      }
+    ]
   },
-  en: {
-    heading: 'Find the Right Dental Crown for You',
-    subtitle:
-      'Not sure which crown material suits your bite force and aesthetic requirements? Explore our options below to discover the ideal treatment for your smile.',
-    readMore: 'READ MORE',
-    items: [
+  "tr": {
+    "heading": "Sizin İçin En Doğru Tedaviyi Bulun",
+    "subtitle": "Hangi diş tedavisinin ihtiyaçlarınıza uygun olduğundan emin değil misiniz? Tedavi seçeneklerimizi inceleyerek doğru kararı verin.",
+    "readMore": "DETAYLI BİLGİ",
+    "items": [
       {
-        title: 'Monolithic Zirconia Crowns',
-        target: 'Patients seeking maximum fracture resistance and lifelike vitality',
-        desc: '1200+ MPa strength monolithic biocompatible zirconia for heavy bite forces and multi-unit bridges.',
-        img: 'https://sohodent.com/doc/data1/zirconium-implant-copy.webp',
-        href: '/treatments/dental-crowns/zirconium-crowns',
+        "title": "Zirkonyum Kron Kaplama",
+        "target": "Yüksek estetik beklentisi olan, doğal ve dayanıklı bir kaplama isteyen hastalar",
+        "desc": "Metalsizdir, doğal dişe en yakın görünümü sunar. Dayanıklıdır ve ön dişlerde sıklıkla tercih edilir.",
+        "img": "https://sohodent.com/doc/data1/zirconium-crowns-copy.webp",
+        "href": "/treatments/dental-crowns/zirconium-crowns"
       },
       {
-        title: 'Ivoclar E-Max Ceramic Crowns',
-        target: 'Patients demanding exceptional front teeth aesthetics and opalescence',
-        desc: 'Swiss lithium disilicate glass-ceramic with unmatched natural light transmission for anterior teeth.',
-        img: 'https://sohodent.com/doc/data1/e-max-laminate-copy.webp',
-        href: '/treatments/dental-crowns/emax-crowns',
+        "title": "Metal Destekli Porselen Kronlar (PFM)",
+        "target": "Daha ekonomik çözüm ve arka dişlerde yüksek sağlamlık arayan hastalar",
+        "desc": "İç kısmı metal, dış kısmı porselendir. Uzun ömürlüdür ancak estetik olarak zirkonyum kadar doğal değildir.",
+        "img": "https://sohodent.com/doc/data1/metal-porcelain-crown-copy.webp",
+        "href": "/treatments/dental-crowns/pfm-crowns"
       },
       {
-        title: 'Porcelain Fused to Metal (PFM)',
-        target: 'Patients seeking traditional, budget-friendly posterior strength',
-        desc: 'Time-tested medical alloy core layered with high-fused aesthetic dental porcelain.',
-        img: 'https://sohodent.com/doc/data1/porcelain-laminate-copy.webp',
-        href: '/treatments/dental-crowns/pfm-crowns',
+        "title": "E-max Kron Kaplama",
+        "target": "Ön dişlerinde maksimum estetik ve ışık geçirgenliği isteyen hastalar",
+        "desc": "Tam seramiktir, ışık geçirgenliği yüksektir ve doğal diş ile neredeyse birebir aynı görünür.",
+        "img": "https://sohodent.com/doc/data1/e-max-crown-copy.webp",
+        "href": "/treatments/dental-crowns/emax-crowns"
       },
       {
-        title: 'Full Ceramic Crowns',
-        target: 'Patients with metal sensitivities wanting organic gumline integration',
-        desc: '100% metal-free, gentle on opposing teeth with harmonious translucency and zero dark margins.',
-        img: 'https://sohodent.com/doc/data1/porcelain-laminate-copy.webp',
-        href: '/treatments/dental-crowns/full-ceramic',
-      },
-      {
-        title: 'Layered Zirconia Crowns',
-        target: 'Combining the core strength of zirconia with ceramist hand-layering',
-        desc: 'Precision CAD/CAM zirconia substructure hand-layered with feldspathic porcelain for lifelike depth.',
-        img: 'https://sohodent.com/doc/data1/zirconium-implant-copy.webp',
-        href: '/treatments/dental-crowns/zirconium-crowns',
-      },
-      {
-        title: 'Immediate Temporary Crowns',
-        target: 'All patients to protect teeth and maintain aesthetics during fabrication',
-        desc: 'Same-day custom milled PMMA temporary teeth preventing sensitivity and ensuring normal chewing.',
-        img: 'https://sohodent.com/doc/data1/lumineer-copy.webp',
-        href: '/treatments/dental-crowns',
-      },
-    ],
+        "title": "Tam Seramik Kronlar",
+        "target": "Alerji riskinden kaçınmak isteyen ve metalsiz, doğal bir seçenek arayan hastalar",
+        "desc": "Tamamen seramikten üretilir, diş eti dostudur ve estetik açıdan en üst seviyededir.",
+        "img": "https://sohodent.com/doc/data1/full-ceramic-crown-copy.webp",
+        "href": "/treatments/dental-crowns/full-ceramic"
+      }
+    ]
   },
-  de: {
-    heading: 'Finden Sie die passende Zahnkrone für sich',
-    subtitle:
-      'Unsicher, welches Material für Ihre Kaukraft und Ästhetik am besten geeignet ist? Vergleichen Sie unsere Optionen.',
-    readMore: 'MEHR ERFAHREN',
-    items: [
+  "de": {
+    "heading": "Finden Sie die passende Behandlung für sich",
+    "subtitle": "Unsicher, welche Zahnbehandlung am besten zu Ihren Bedürfnissen passt? Vergleichen Sie unsere Optionen, um die beste Entscheidung für Ihre Zahngesundheit zu treffen.",
+    "readMore": "MEHR ERFAHREN",
+    "items": [
       {
-        title: 'Monolithische Zirkonkronen',
-        target: 'Maximale Bruchfestigkeit und Langlebigkeit',
-        desc: '1200+ MPa biokompatibles Zirkonoxid für höchste Kaukraft im Backenzahnbereich.',
-        img: 'https://sohodent.com/doc/data1/zirconium-implant-copy.webp',
-        href: '/treatments/dental-crowns/zirconium-crowns',
+        "title": "Zirkonkronen",
+        "target": "Patienten mit hohen ästhetischen Ansprüchen, die eine natürliche und langlebige Krone wünschen",
+        "desc": "Metallfrei, bietet das Aussehen, das einem natürlichen Zahn am nächsten kommt. Hochbelastbar und ideal für Front- und Seitenzähne.",
+        "img": "https://sohodent.com/doc/data1/zirconium-crowns-copy.webp",
+        "href": "/treatments/dental-crowns/zirconium-crowns"
       },
       {
-        title: 'Ivoclar E-Max Vollkeramikkronen',
-        target: 'Höchste Ästhetik im sichtbaren Frontzahnbereich',
-        desc: 'Schweizer Lithium-Disilikat mit natürlicher Lichtbrechung wie echter Zahnschmelz.',
-        img: 'https://sohodent.com/doc/data1/e-max-laminate-copy.webp',
-        href: '/treatments/dental-crowns/emax-crowns',
+        "title": "Metallkeramikkronen (PFM)",
+        "target": "Patienten, die eine wirtschaftliche Lösung und hohe Stabilität im Backenzahnbereich suchen",
+        "desc": "Der innere Teil besteht aus Metall, der äußere aus Porzellan. Langlebig, jedoch ästhetisch nicht so transluzent wie Zirkon.",
+        "img": "https://sohodent.com/doc/data1/metal-porcelain-crown-copy.webp",
+        "href": "/treatments/dental-crowns/pfm-crowns"
       },
       {
-        title: 'Metallkeramik-Kronen (PFM)',
-        target: 'Klassische, wirtschaftliche Lösung für Seitenzähne',
-        desc: 'Bewährte Metalllegierung mit Keramikverblendung.',
-        img: 'https://sohodent.com/doc/data1/porcelain-laminate-copy.webp',
-        href: '/treatments/dental-crowns/pfm-crowns',
+        "title": "E-max Kronen",
+        "target": "Patienten, die maximale Ästhetik im sichtbaren Frontzahnbereich wünschen",
+        "desc": "Vollkeramik mit höchster Lichtdurchlässigkeit – sieht echtem Zahnschmelz zum Verwechseln ähnlich.",
+        "img": "https://sohodent.com/doc/data1/e-max-crown-copy.webp",
+        "href": "/treatments/dental-crowns/emax-crowns"
       },
       {
-        title: 'Vollkeramikkronen',
-        target: 'Metallfreie Versorgung für Allergiker',
-        desc: '100% metallfrei mit perfektem Übergang zum Zahnfleisch.',
-        img: 'https://sohodent.com/doc/data1/porcelain-laminate-copy.webp',
-        href: '/treatments/dental-crowns/full-ceramic',
-      },
-      {
-        title: 'Geschichtete Zirkonkronen',
-        target: 'Kombination aus Zirkonstärke und Handarbeit',
-        desc: 'Zirkongerüst mit handgeschichteter Meisterkeramik.',
-        img: 'https://sohodent.com/doc/data1/zirconium-implant-copy.webp',
-        href: '/treatments/dental-crowns/zirconium-crowns',
-      },
-      {
-        title: 'Provisorische Kronen',
-        target: 'Sofortiger Schutz während der Laborherstellung',
-        desc: 'Passgenaue provisorische Zähne am selben Tag.',
-        img: 'https://sohodent.com/doc/data1/lumineer-copy.webp',
-        href: '/treatments/dental-crowns',
-      },
-    ],
+        "title": "Vollkeramikkronen",
+        "target": "Patienten, die Allergierisiken vermeiden und eine metallfreie, natürliche Option bevorzugen",
+        "desc": "Vollständig aus biokompatibler Keramik gefertigt, zahnfleischfreundlich und ästhetisch auf höchstem Niveau.",
+        "img": "https://sohodent.com/doc/data1/full-ceramic-crown-copy.webp",
+        "href": "/treatments/dental-crowns/full-ceramic"
+      }
+    ]
   },
-  pl: {
-    heading: 'Wybierz idealną koronę zębową dla siebie',
-    subtitle:
-      'Nie wiesz, jaki materiał korony najlepiej sprawdzi się w Twoim przypadku? Sprawdź nasze opcje.',
-    readMore: 'WIĘCEJ INFORMACJI',
-    items: [
+  "pl": {
+    "heading": "Wybierz odpowiednie leczenie dla siebie",
+    "subtitle": "Nie masz pewności, które leczenie stomatologiczne odpowiada Twoim potrzebom? Sprawdź nasze opcje, aby podjąć świadomą decyzję o swoim uśmiechu.",
+    "readMore": "DOWIEDZ SIĘ WIĘCEJ",
+    "items": [
       {
-        title: 'Monolityczne Korony Cyrkonowe',
-        target: 'Maksymalna wytrzymałość i biozgodność w odcinku bocznym',
-        desc: 'Tlenek cyrkonu o twardości 1200+ MPa, odporny na pęknięcia i ścieranie.',
-        img: 'https://sohodent.com/doc/data1/zirconium-implant-copy.webp',
-        href: '/treatments/dental-crowns/zirconium-crowns',
+        "title": "Korony Cyrkonowe",
+        "target": "Pacjenci o wysokich wymaganiach estetycznych, oczekujący naturalnego i trwałego efektu",
+        "desc": "Bezmetalowe korony o wyglądzie najbardziej zbliżonym do naturalnego zęba. Wyjątkowo trwałe i często wybierane na zęby przednie.",
+        "img": "https://sohodent.com/doc/data1/zirconium-crowns-copy.webp",
+        "href": "/treatments/dental-crowns/zirconium-crowns"
       },
       {
-        title: 'Korony Pełnoceramiczne Ivoclar E-Max',
-        target: 'Maksymalna estetyka i naturalna przezierność zębów przednich',
-        desc: 'Szwajcarski dwukrzemian litu perfekcyjnie imitujący naturalne szkliwo.',
-        img: 'https://sohodent.com/doc/data1/e-max-laminate-copy.webp',
-        href: '/treatments/dental-crowns/emax-crowns',
+        "title": "Korony Porcelanowe na Podbudowie Metalowej (PFM)",
+        "target": "Pacjenci poszukujący bardziej ekonomicznego rozwiązania i dużej wytrzymałości w odcinku bocznym",
+        "desc": "Wnętrze wykonane z metalu, z zewnątrz licowane porcelaną. Bardzo trwałe, choć estetycznie mniej naturalne niż cyrkon.",
+        "img": "https://sohodent.com/doc/data1/metal-porcelain-crown-copy.webp",
+        "href": "/treatments/dental-crowns/pfm-crowns"
       },
       {
-        title: 'Korony Porcelanowe na Metalu (PFM)',
-        target: 'Tradycyjna i ekonomiczna odbudowa zębów trzonowych',
-        desc: 'Klasyczna podbudowa metalowa licowana porcelaną stomatologiczną.',
-        img: 'https://sohodent.com/doc/data1/porcelain-laminate-copy.webp',
-        href: '/treatments/dental-crowns/pfm-crowns',
+        "title": "Korony E-max",
+        "target": "Pacjenci pragnący maksymalnej estetyki i przezierności w strefie uśmiechu",
+        "desc": "Pełna ceramika o wysokiej przepuszczalności światła, wyglądająca niemal identycznie jak naturalny ząb.",
+        "img": "https://sohodent.com/doc/data1/e-max-crown-copy.webp",
+        "href": "/treatments/dental-crowns/emax-crowns"
       },
       {
-        title: 'Korony Pełnoceramiczne',
-        target: 'Osoby z alergiami na metale i wysokie wymagania estetyczne',
-        desc: 'W 100% bezmetalowe korony zapewniające idealną linię dziąseł bez sinienia.',
-        img: 'https://sohodent.com/doc/data1/porcelain-laminate-copy.webp',
-        href: '/treatments/dental-crowns/full-ceramic',
-      },
-      {
-        title: 'Cyrkon Warstwowany (Layered)',
-        target: 'Połączenie siły cyrkonu z ręcznym kunsztem ceramika',
-        desc: 'Cyrkonowa baza z indywidualnie nakładanymi warstwami porcelany.',
-        img: 'https://sohodent.com/doc/data1/zirconium-implant-copy.webp',
-        href: '/treatments/dental-crowns/zirconium-crowns',
-      },
-      {
-        title: 'Korony Tymczasowe (PMMA)',
-        target: 'Ochrona oszlifowanych zębów na czas produkcji',
-        desc: 'Dopasowane korony tymczasowe zakładane w tym samym dniu.',
-        img: 'https://sohodent.com/doc/data1/lumineer-copy.webp',
-        href: '/treatments/dental-crowns',
-      },
-    ],
+        "title": "Korony Pełnoceramiczne",
+        "target": "Pacjenci chcący uniknąć ryzyka alergii i preferujący bezmetalowe, naturalne rozwiązania",
+        "desc": "Wykonane w całości z ceramiki, w 100% przyjazne dla dziąseł i reprezentujące najwyższą klasę estetyki.",
+        "img": "https://sohodent.com/doc/data1/full-ceramic-crown-copy.webp",
+        "href": "/treatments/dental-crowns/full-ceramic"
+      }
+    ]
   },
-  pt: {
-    heading: 'Encontre a Coroa Dentária Ideal para Você',
-    subtitle:
-      'Em dúvida sobre o melhor material para sua mastigação e estética? Conheça nossas opções em Istambul.',
-    readMore: 'SAIBA MAIS',
-    items: [
+  "pt": {
+    "heading": "Encontre o Tratamento Ideal para Você",
+    "subtitle": "Não tem certeza de qual tratamento dentário atende às suas necessidades? Explore nossas opções para tomar a melhor decisão para o seu sorriso.",
+    "readMore": "SAIBA MAIS",
+    "items": [
       {
-        title: 'Coroas de Zircônia Monolítica',
-        target: 'Máxima resistência à fratura e biocompatibilidade',
-        desc: 'Zircônia 1200+ MPa alemã para alta carga mastigatória e pontes extensas.',
-        img: 'https://sohodent.com/doc/data1/zirconium-implant-copy.webp',
-        href: '/treatments/dental-crowns/zirconium-crowns',
+        "title": "Coroas de Zircónia",
+        "target": "Pacientes com altas exigências estéticas que buscam uma coroa natural e duradoura",
+        "desc": "Livre de metal, oferece a aparência mais próxima do dente natural. É altamente durável e frequentemente indicada para dentes anteriores.",
+        "img": "https://sohodent.com/doc/data1/zirconium-crowns-copy.webp",
+        "href": "/treatments/dental-crowns/zirconium-crowns"
       },
       {
-        title: 'Coroas Cerâmicas Ivoclar E-Max',
-        target: 'Excelência estética e translucidez para dentes anteriores',
-        desc: 'Dissilicato de lítio suíço com passagem de luz idêntica ao esmalte dental.',
-        img: 'https://sohodent.com/doc/data1/e-max-laminate-copy.webp',
-        href: '/treatments/dental-crowns/emax-crowns',
+        "title": "Coroas Metalocerâmicas (PFM)",
+        "target": "Pacientes que procuram uma solução mais econômica e resistência para os dentes posteriores",
+        "desc": "A estrutura interna é de metal e a externa de porcelana. Longa durabilidade, mas com estética menos translúcida que a zircônia.",
+        "img": "https://sohodent.com/doc/data1/metal-porcelain-crown-copy.webp",
+        "href": "/treatments/dental-crowns/pfm-crowns"
       },
       {
-        title: 'Coroas Metalocerâmicas (PFM)',
-        target: 'Opção tradicional e econômica para dentes posteriores',
-        desc: 'Estrutura metálica recoberta por porcelana de alta fusão.',
-        img: 'https://sohodent.com/doc/data1/porcelain-laminate-copy.webp',
-        href: '/treatments/dental-crowns/pfm-crowns',
+        "title": "Coroas E-max",
+        "target": "Pacientes que desejam máxima estética nos dentes da frente",
+        "desc": "Totalmente cerâmica, com alta translucidez de luz e aparência praticamente idêntica ao esmalte dental natural.",
+        "img": "https://sohodent.com/doc/data1/e-max-crown-copy.webp",
+        "href": "/treatments/dental-crowns/emax-crowns"
       },
       {
-        title: 'Coroas Cerâmicas Puras',
-        target: 'Pacientes com sensibilidade a metais e foco em gengiva saudável',
-        desc: '100% livres de metal, garantindo margens sem linhas escuras.',
-        img: 'https://sohodent.com/doc/data1/porcelain-laminate-copy.webp',
-        href: '/treatments/dental-crowns/full-ceramic',
-      },
-      {
-        title: 'Zircônia Estratificada',
-        target: 'Força estrutural combinada com arte artesanal',
-        desc: 'Núcleo de zircônia com estratificação manual por ceramista.',
-        img: 'https://sohodent.com/doc/data1/zirconium-implant-copy.webp',
-        href: '/treatments/dental-crowns/zirconium-crowns',
-      },
-      {
-        title: 'Coroas Provisórias',
-        target: 'Proteção imediata durante a confecção definitiva',
-        desc: 'Instalação no mesmo dia para manter mastigação e estética.',
-        img: 'https://sohodent.com/doc/data1/lumineer-copy.webp',
-        href: '/treatments/dental-crowns',
-      },
-    ],
+        "title": "Coroas Cerâmicas Puras",
+        "target": "Pacientes que desejam evitar alergias e preferem uma opção biocompátivel sem metal",
+        "desc": "Feita inteiramente de cerâmica, excelente integração gengival e padrão estético de alto nível.",
+        "img": "https://sohodent.com/doc/data1/full-ceramic-crown-copy.webp",
+        "href": "/treatments/dental-crowns/full-ceramic"
+      }
+    ]
   },
-  es: {
-    heading: 'Encuentre la Corona Dental Ideal para Usted',
-    subtitle:
-      '¿No sabe qué material se adapta mejor a su fuerza de mordida y estética? Explore nuestras opciones clínicas.',
-    readMore: 'MÁS INFORMACIÓN',
-    items: [
+  "es": {
+    "heading": "Encuentre el Tratamiento Adecuado para Usted",
+    "subtitle": "¿No está seguro de qué tratamiento dental se adapta a sus necesidades? Revise nuestras opciones para tomar una decisión informada sobre su salud dental.",
+    "readMore": "MÁS INFORMACIÓN",
+    "items": [
       {
-        title: 'Coronas de Zirconio Monolítico',
-        target: 'Máxima resistencia a la fractura y biointegración',
-        desc: 'Zirconio alemán de 1200+ MPa ideal para molares y puentes de varias piezas.',
-        img: 'https://sohodent.com/doc/data1/zirconium-implant-copy.webp',
-        href: '/treatments/dental-crowns/zirconium-crowns',
+        "title": "Coronas de Circonio",
+        "target": "Pacientes con altas exigencias estéticas que buscan una corona de aspecto natural y duradera",
+        "desc": "Sin metal, ofrece la apariencia más cercana a un diente natural. Es duradera y se prefiere frecuentemente para dientes frontales.",
+        "img": "https://sohodent.com/doc/data1/zirconium-crowns-copy.webp",
+        "href": "/treatments/dental-crowns/zirconium-crowns"
       },
       {
-        title: 'Coronas Cerámicas Ivoclar E-Max',
-        target: 'Máxima translucidez y naturalidad para dientes frontales',
-        desc: 'Disilicato de litio suizo con refracción de luz idéntica al esmalte natural.',
-        img: 'https://sohodent.com/doc/data1/e-max-laminate-copy.webp',
-        href: '/treatments/dental-crowns/emax-crowns',
+        "title": "Coronas Metal-Porcelana (Coronas PFM)",
+        "target": "Pacientes que buscan una solución más económica y durabilidad en dientes posteriores",
+        "desc": "La parte interna es de metal y la externa de porcelana. Larga vida útil, aunque estéticamente no tan natural como el circonio.",
+        "img": "https://sohodent.com/doc/data1/metal-porcelain-crown-copy.webp",
+        "href": "/treatments/dental-crowns/pfm-crowns"
       },
       {
-        title: 'Metal-Porcelana (PFM)',
-        target: 'Opción clásica y económica para sectores posteriores',
-        desc: 'Estructura metálica resistente recubierta de porcelana estética.',
-        img: 'https://sohodent.com/doc/data1/porcelain-laminate-copy.webp',
-        href: '/treatments/dental-crowns/pfm-crowns',
+        "title": "Coronas E-max",
+        "target": "Pacientes que buscan la máxima estética en sus dientes frontales",
+        "desc": "Completamente de cerámica, tiene alta translucidez y aspecto prácticamente idéntico al de un diente natural.",
+        "img": "https://sohodent.com/doc/data1/e-max-crown-copy.webp",
+        "href": "/treatments/dental-crowns/emax-crowns"
       },
       {
-        title: 'Coronas Completamente Cerámicas',
-        target: 'Pacientes con alergias al metal y encías sensibles',
-        desc: '100% libres de metal sin sombras oscuras en el borde gingival.',
-        img: 'https://sohodent.com/doc/data1/porcelain-laminate-copy.webp',
-        href: '/treatments/dental-crowns/full-ceramic',
-      },
-      {
-        title: 'Zirconio Estratificado',
-        target: 'Resistencia del zirconio con estratificación artesanal',
-        desc: 'Base de zirconio recubierta manualmente por maestros ceramistas.',
-        img: 'https://sohodent.com/doc/data1/zirconium-implant-copy.webp',
-        href: '/treatments/dental-crowns/zirconium-crowns',
-      },
-      {
-        title: 'Coronas Provisionales',
-        target: 'Protección dental inmediata durante el tratamiento',
-        desc: 'Colocadas el mismo día para asegurar estética y función.',
-        img: 'https://sohodent.com/doc/data1/lumineer-copy.webp',
-        href: '/treatments/dental-crowns',
-      },
-    ],
+        "title": "Coronas Totalmente Cerámicas",
+        "target": "Pacientes que quieren evitar riesgos de alergias y prefieren una opción sin metal",
+        "desc": "Fabricadas íntegramente en cerámica, cuidan la encía y ofrecen el más alto nivel estético.",
+        "img": "https://sohodent.com/doc/data1/full-ceramic-crown-copy.webp",
+        "href": "/treatments/dental-crowns/full-ceramic"
+      }
+    ]
   },
-  ru: {
-    heading: 'Выберите подходящий вид зубной коронки',
-    subtitle:
-      'Не знаете, какой материал лучше всего подходит для вашей жевательной нагрузки и эстетики? Ознакомьтесь с вариантами.',
-    readMore: 'ПОДРОБНЕЕ',
-    items: [
+  "ru": {
+    "heading": "Найдите подходящее лечение для себя",
+    "subtitle": "Не уверены, какое стоматологическое лечение подходит именно вам? Ознакомьтесь с вариантами, чтобы принять взвешенное решение о здоровье зубов.",
+    "readMore": "ПОДРОБНЕЕ",
+    "items": [
       {
-        title: 'Монолитные циркониевые коронки',
-        target: 'Максимальная прочность и долговечность',
-        desc: 'Диоксид циркония (1200+ МПа) для моляров, мостовидных протезов и бруксизма.',
-        img: 'https://sohodent.com/doc/data1/zirconium-implant-copy.webp',
-        href: '/treatments/dental-crowns/zirconium-crowns',
+        "title": "Циркониевые коронки",
+        "target": "Пациенты с высокими эстетическими требованиями, желающие получить естественные и прочные коронки",
+        "desc": "Не содержат металла, обеспечивают максимально естественный вид. Высокая прочность, идеально подходят для передних и жевательных зубов.",
+        "img": "https://sohodent.com/doc/data1/zirconium-crowns-copy.webp",
+        "href": "/treatments/dental-crowns/zirconium-crowns"
       },
       {
-        title: 'Керамические коронки Ivoclar E-Max',
-        target: 'Безупречная эстетика и прозрачность передних зубов',
-        desc: 'Швейцарская стеклокерамика из дисиликата лития с естественным преломлением света.',
-        img: 'https://sohodent.com/doc/data1/e-max-laminate-copy.webp',
-        href: '/treatments/dental-crowns/emax-crowns',
+        "title": "Металлокерамические коронки (PFM)",
+        "target": "Пациенты, которые ищут экономичное решение и долговечность для жевательных зубов",
+        "desc": "Внутренняя часть металлическая, внешняя — керамическая. Долговечны, но менее прозрачны, чем оксид циркония.",
+        "img": "https://sohodent.com/doc/data1/metal-porcelain-crown-copy.webp",
+        "href": "/treatments/dental-crowns/pfm-crowns"
       },
       {
-        title: 'Металлокерамические коронки (PFM)',
-        target: 'Экономичная и прочная классика для жевательных зубов',
-        desc: 'Прочный металлический каркас, облицованный керамической массой.',
-        img: 'https://sohodent.com/doc/data1/porcelain-laminate-copy.webp',
-        href: '/treatments/dental-crowns/pfm-crowns',
+        "title": "Коронки E-max",
+        "target": "Пациенты, желающие добиться максимальной эстетики на передних зубах",
+        "desc": "Цельная керамика с высокой светопроницаемостью, практически неотличимая от натуральной эмали.",
+        "img": "https://sohodent.com/doc/data1/e-max-crown-copy.webp",
+        "href": "/treatments/dental-crowns/emax-crowns"
       },
       {
-        title: 'Цельнокерамические коронки',
-        target: 'Для пациентов с аллергией на металлы и чувствительными деснами',
-        desc: '100% безметалловая керамика без темной полосы у шейки зуба.',
-        img: 'https://sohodent.com/doc/data1/porcelain-laminate-copy.webp',
-        href: '/treatments/dental-crowns/full-ceramic',
-      },
-      {
-        title: 'Коронки из циркония с нанесением керамики',
-        target: 'Сочетание прочности циркония и ручной работы мастера',
-        desc: 'Циркониевый каркас с индивидуальной послойной керамикой.',
-        img: 'https://sohodent.com/doc/data1/zirconium-implant-copy.webp',
-        href: '/treatments/dental-crowns/zirconium-crowns',
-      },
-      {
-        title: 'Временные коронки (PMMA)',
-        target: 'Защита зубов на время изготовления постоянных коронок',
-        desc: 'Устанавливаются в день обточки для комфортного приема пищи и улыбки.',
-        img: 'https://sohodent.com/doc/data1/lumineer-copy.webp',
-        href: '/treatments/dental-crowns',
-      },
-    ],
-  },
+        "title": "Цельнокерамические коронки",
+        "target": "Пациенты, желающие исключить риск аллергии и выбирающие биосовместимый вариант без металла",
+        "desc": "Полностью выполнены из керамики, бережно контактируют с десной и обеспечивают высший уровень эстетики.",
+        "img": "https://sohodent.com/doc/data1/full-ceramic-crown-copy.webp",
+        "href": "/treatments/dental-crowns/full-ceramic"
+      }
+    ]
+  }
 };
 
 export default function TreatmentCrownsRightTreatmentAccordion() {
   const locale = useLocale();
-  const currentData =
-    CROWN_ACCORDION_DATA[locale] || CROWN_ACCORDION_DATA.en;
-
+  const currentData = CROWN_ACCORDION_DATA[locale] || CROWN_ACCORDION_DATA.en;
   const [activeIndex, setActiveIndex] = useState<number>(0);
 
   const toggleAccordion = (index: number) => {
-    setActiveIndex(index);
+    setActiveIndex((prev) => (prev === index ? -1 : index));
   };
 
-  const activeItem = currentData.items[activeIndex] || currentData.items[0];
+  const activeItem =
+    activeIndex >= 0 && activeIndex < currentData.items.length
+      ? currentData.items[activeIndex]
+      : currentData.items[0];
 
   return (
-    <section
-      aria-labelledby="crown-right-treatment-heading"
-      className={styles.section}
-    >
+    <section aria-labelledby="right-treatment-heading" className={styles.section}>
       <div className={styles.container}>
+        {/* Header Row: Left Big Title, Right Subtitle */}
+        <div className={styles.headerRow}>
+          <div>
+            <h2 id="right-treatment-heading" className={styles.heading}>
+              {currentData.heading}
+            </h2>
+          </div>
+          <div>
+            <p className={styles.subText}>{currentData.subtitle}</p>
+          </div>
+        </div>
+
+        {/* Surface Card Container */}
         <div className={styles.surfaceCard}>
           <div className={styles.grid}>
-            {/* Left Column: Accordion List */}
+            {/* Left Column: Accordion Items */}
             <div className={styles.accordionList}>
-              <h2
-                id="crown-right-treatment-heading"
-                className={styles.mainTitle}
-              >
-                {currentData.heading}
-              </h2>
-              <p className={styles.subTitle}>{currentData.subtitle}</p>
-
               {currentData.items.map((item, idx) => {
                 const isActive = activeIndex === idx;
-
                 return (
                   <div
                     key={idx}
-                    className={`${styles.item} ${
-                      isActive ? styles.itemActive : ''
-                    }`}
+                    className={`${styles.item} ${isActive ? styles.itemActive : ''}`}
                   >
                     <div
                       className={styles.titleRow}
@@ -438,12 +333,16 @@ export default function TreatmentCrownsRightTreatmentAccordion() {
                         }`}
                       >
                         <svg
-                          width="15"
-                          height="15"
-                          viewBox="0 0 448 512"
-                          fill="currentColor"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         >
-                          <path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
+                          <polyline points="6 9 12 15 18 9"></polyline>
                         </svg>
                       </span>
                     </div>

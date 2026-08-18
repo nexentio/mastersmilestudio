@@ -1,29 +1,27 @@
 'use client';
 
 import React from 'react';
-import GeneralDentistryIntroSection from '@/components/treatment-sections/GeneralDentistryIntroSection';
-import GeneralDentistryAccordionSection from '@/components/treatment-sections/GeneralDentistryAccordionSection';
-import GeneralDentistryJourneySection from '@/components/treatment-sections/GeneralDentistryJourneySection';
+import TreatmentDenturesRightTreatmentAccordion from '@/components/treatment-sections/TreatmentDenturesRightTreatmentAccordion';
+import TreatmentJourneySimpleSection from '@/components/treatment-sections/TreatmentJourneySimpleSection';
 import TreatmentServicesIncludedSection from '@/components/treatment-sections/TreatmentServicesIncludedSection';
-import RealPatientsSection from '@/components/RealPatientsSection';
-import CosmeticBeforeAfterSliderSection from '@/components/treatment-sections/CosmeticBeforeAfterSliderSection';
-import CosmeticPackagesSliderSection from '@/components/treatment-sections/CosmeticPackagesSliderSection';
+import TreatmentPatientReelsSection from '@/components/treatment-sections/TreatmentPatientReelsSection';
+import TreatmentBeforeAfterSliderSection from '@/components/treatment-sections/TreatmentBeforeAfterSliderSection';
+import TreatmentPackagesSlider from '@/components/treatment-sections/TreatmentPackagesSlider';
 import TreatmentReviewsSection from '@/components/treatment-sections/TreatmentReviewsSection';
-import GeneralDentistryFaqSection from '@/components/treatment-sections/GeneralDentistryFaqSection';
+import TreatmentFAQSection from '@/components/treatment-sections/TreatmentFAQSection';
 import TreatmentInteractiveQuoteForm from '@/components/treatment-sections/TreatmentInteractiveQuoteForm';
 
 export default function DenturesDetailView() {
   return (
     <>
-      <GeneralDentistryIntroSection />
-      <GeneralDentistryAccordionSection />
-      <GeneralDentistryJourneySection />
+      <TreatmentDenturesRightTreatmentAccordion />
+      <TreatmentJourneySimpleSection />
       <TreatmentServicesIncludedSection />
-      <RealPatientsSection />
-      <CosmeticBeforeAfterSliderSection />
-      <CosmeticPackagesSliderSection />
+      <TreatmentPatientReelsSection />
+      <TreatmentBeforeAfterSliderSection />
+      <TreatmentPackagesSlider />
       <TreatmentReviewsSection />
-      <GeneralDentistryFaqSection />
+      <TreatmentFAQSection />
       <div id="contact">
         <TreatmentInteractiveQuoteForm defaultTreatment="Dentures" />
       </div>

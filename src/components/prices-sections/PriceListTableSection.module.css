@@ -229,7 +229,7 @@
 .miniAd {
   font-family: var(--font-outfit), sans-serif;
   font-size: 1.2rem;
-  font-weight: 800;
+  font-weight: 600;
   color: #0c1b4d;
   margin-bottom: 1rem;
   letter-spacing: -0.02em;
@@ -330,7 +330,7 @@
 .xtitle {
   font-family: var(--font-outfit), sans-serif;
   font-size: 1.15rem;
-  font-weight: 800;
+  font-weight: 600;
   color: #0c1b4d;
   margin-bottom: 1.25rem;
   padding-bottom: 0.65rem;

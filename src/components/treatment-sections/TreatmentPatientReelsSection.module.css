@@ -32,7 +32,7 @@
 
 .heading {
   font-size: 2.5rem;
-  font-weight: 800;
+  font-weight: 600;
   color: #0c1b4d;
   line-height: 1.15;
   letter-spacing: -0.02em;
@@ -112,7 +112,7 @@
   writing-mode: vertical-rl;
   transform: rotate(180deg);
   color: #ffffff;
-  font-weight: 800;
+  font-weight: 600;
   font-size: 0.8rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -150,7 +150,7 @@
 
 .happyPatientText {
   font-size: 0.72rem;
-  font-weight: 800;
+  font-weight: 600;
   letter-spacing: 0.12em;
   color: #71717a;
   text-transform: uppercase;
@@ -214,7 +214,7 @@
 
 .treatmentTag {
   font-size: 0.88rem;
-  font-weight: 800;
+  font-weight: 600;
   letter-spacing: 0.08em;
   color: #ffffff;
   text-transform: uppercase;

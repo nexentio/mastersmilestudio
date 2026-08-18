@@ -34,7 +34,7 @@
 .catgrup h2 {
   font-family: var(--font-outfit), sans-serif;
   font-size: clamp(1.35rem, 2vw, 1.75rem);
-  font-weight: 800;
+  font-weight: 600;
   color: #0c1b4d;
   margin: 0 0 1.75rem 0;
   padding-bottom: 0.75rem;
@@ -253,7 +253,7 @@
 .adSide {
   font-family: var(--font-outfit), sans-serif;
   font-size: 1.15rem;
-  font-weight: 800;
+  font-weight: 600;
   color: #0c1b4d;
   margin-bottom: 0.85rem;
 }
@@ -355,7 +355,7 @@
 .xtitle {
   font-family: var(--font-outfit), sans-serif;
   font-size: 1.1rem;
-  font-weight: 800;
+  font-weight: 600;
   color: #0c1b4d;
   margin-bottom: 1rem;
   padding-bottom: 0.5rem;

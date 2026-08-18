@@ -393,18 +393,25 @@ export default function TreatmentCosmeticRightTreatmentAccordion() {
       className={styles.section}
     >
       <div className={styles.container}>
+        {/* Header Row: Left Big Title, Right Subtitle */}
+        <div className={styles.headerRow}>
+          <div>
+            <h2
+              id="cosmetic-right-treatment-heading"
+              className={styles.heading}
+            >
+              {currentData.heading}
+            </h2>
+          </div>
+          <div>
+            <p className={styles.subText}>{currentData.subtitle}</p>
+          </div>
+        </div>
+
         <div className={styles.surfaceCard}>
           <div className={styles.grid}>
             {/* Left Column: Accordion List */}
             <div className={styles.accordionList}>
-              <h2
-                id="cosmetic-right-treatment-heading"
-                className={styles.mainTitle}
-              >
-                {currentData.heading}
-              </h2>
-              <p className={styles.subTitle}>{currentData.subtitle}</p>
-
               {currentData.items.map((item, idx) => {
                 const isActive = activeIndex === idx;
 

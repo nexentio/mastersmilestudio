@@ -16,7 +16,7 @@
 
 .mainHeading {
   font-size: clamp(1.85rem, 3.2vw, 2.5rem);
-  font-weight: 800;
+  font-weight: 600;
   color: #0c1b4d;
   line-height: 1.25;
   margin: 0 0 1.5rem 0;
@@ -84,7 +84,7 @@
 
 .sectionTitle {
   font-size: clamp(1.6rem, 2.6vw, 2.2rem);
-  font-weight: 800;
+  font-weight: 600;
   color: #0c1b4d;
   margin: 0 0 1.25rem 0;
   letter-spacing: -0.015em;
@@ -93,14 +93,14 @@
 
 .sectionSubTitle {
   font-size: 1.28rem;
-  font-weight: 800;
+  font-weight: 600;
   color: #0c1b4d;
   margin: 2.25rem 0 0.85rem 0;
 }
 
 .reasonNumber {
   color: #d58936;
-  font-weight: 800;
+  font-weight: 600;
   margin-right: 0.35rem;
 }
 
@@ -118,7 +118,7 @@
 
 .miniJourneyTitle {
   font-size: 1.2rem;
-  font-weight: 800;
+  font-weight: 600;
   color: #ffffff;
   margin: 0;
 }
@@ -187,7 +187,7 @@
 
 .ctaTitle {
   font-size: clamp(1.85rem, 3.2vw, 2.5rem);
-  font-weight: 800;
+  font-weight: 600;
   color: #ffffff;
   margin: 0 0 1rem 0;
 }

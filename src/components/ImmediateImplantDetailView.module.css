@@ -21,7 +21,7 @@
 
 .introHeading {
   font-size: clamp(2rem, 3.5vw, 2.75rem);
-  font-weight: 800;
+  font-weight: 600;
   color: #0c1b4d;
   line-height: 1.2;
   margin-bottom: 1rem;
@@ -101,7 +101,7 @@
 
 .compareTitle {
   font-size: clamp(1.85rem, 3vw, 2.5rem);
-  font-weight: 800;
+  font-weight: 600;
   color: #0c1b4d;
   margin-bottom: 0.85rem;
   letter-spacing: -0.02em;
@@ -145,7 +145,7 @@
   background-color: #D58936;
   color: #ffffff;
   padding: 1.1rem 1.25rem;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .compareTd {
@@ -182,7 +182,7 @@
 
 .compareDecisionTitle {
   font-size: 1.15rem;
-  font-weight: 800;
+  font-weight: 600;
   color: #0c1b4d;
 }
 
@@ -212,7 +212,7 @@
 
 .processTitle {
   font-size: clamp(1.85rem, 3vw, 2.5rem);
-  font-weight: 800;
+  font-weight: 600;
   color: #0c1b4d;
   margin-bottom: 0.85rem;
   letter-spacing: -0.02em;
@@ -250,7 +250,7 @@
 
 .processStepNum {
   font-size: 0.78rem;
-  font-weight: 800;
+  font-weight: 600;
   color: #D58936;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -260,7 +260,7 @@
 
 .processCardTitle {
   font-size: 1.22rem;
-  font-weight: 800;
+  font-weight: 600;
   color: #0c1b4d;
   margin-bottom: 0.75rem;
   line-height: 1.35;
@@ -323,7 +323,7 @@
 
 .materialsTitle {
   font-size: clamp(1.85rem, 3vw, 2.5rem);
-  font-weight: 800;
+  font-weight: 600;
   color: #0c1b4d;
   margin-bottom: 0.85rem;
   letter-spacing: -0.02em;
@@ -373,7 +373,7 @@
   background-color: #D58936;
   color: #ffffff;
   font-size: 0.72rem;
-  font-weight: 800;
+  font-weight: 600;
   padding: 0.25rem 0.85rem;
   border-radius: 9999px;
   text-transform: uppercase;
@@ -382,7 +382,7 @@
 
 .materialCardTitle {
   font-size: 1.25rem;
-  font-weight: 800;
+  font-weight: 600;
   color: #0c1b4d;
   margin-bottom: 0.25rem;
 }
@@ -424,7 +424,7 @@
 
 .materialSpecValGold {
   color: #b45309;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .materialList {
@@ -447,19 +447,19 @@
 
 .matCheck {
   color: #10b981;
-  font-weight: 800;
+  font-weight: 600;
   flex-shrink: 0;
 }
 
 .matCross {
   color: #ef4444;
-  font-weight: 800;
+  font-weight: 600;
   flex-shrink: 0;
 }
 
 .matWarn {
   color: #f59e0b;
-  font-weight: 800;
+  font-weight: 600;
   flex-shrink: 0;
 }
 
@@ -494,7 +494,7 @@
   background-color: #D58936;
   color: #ffffff;
   padding: 1.1rem 1.25rem;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .materialsTd {
@@ -530,7 +530,7 @@
 
 .packagesTitle {
   font-size: clamp(1.85rem, 3vw, 2.5rem);
-  font-weight: 800;
+  font-weight: 600;
   color: #0c1b4d;
   margin-bottom: 0.75rem;
 }
@@ -629,7 +629,7 @@
   background-color: #D58936;
   color: #ffffff;
   font-size: 0.72rem;
-  font-weight: 800;
+  font-weight: 600;
   padding: 0.25rem 0.85rem;
   border-radius: 9999px;
   text-transform: uppercase;
@@ -638,7 +638,7 @@
 
 .pkgName {
   font-size: 1.2rem;
-  font-weight: 800;
+  font-weight: 600;
   color: #0c1b4d;
   margin-bottom: 0.25rem;
 }
@@ -705,7 +705,7 @@
 
 .pkgCheck {
   color: #10b981;
-  font-weight: 800;
+  font-weight: 600;
   flex-shrink: 0;
 }
 
@@ -730,7 +730,7 @@
 
 .pkgPriceValue {
   font-size: 1.85rem;
-  font-weight: 900;
+  font-weight: 700;
   color: #0c1b4d;
 }
 
@@ -781,7 +781,7 @@
 
 .costTitle {
   font-size: clamp(1.85rem, 3vw, 2.5rem);
-  font-weight: 800;
+  font-weight: 600;
   color: #0c1b4d;
   margin-bottom: 0.85rem;
   letter-spacing: -0.02em;
@@ -824,7 +824,7 @@
   background-color: #D58936;
   color: #ffffff;
   padding: 1.1rem 1.25rem;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .costTd {
@@ -865,7 +865,7 @@
 
 .faqTitle {
   font-size: clamp(2rem, 3.2vw, 2.75rem);
-  font-weight: 800;
+  font-weight: 600;
   color: #0c1b4d;
   margin-bottom: 0.75rem;
   letter-spacing: -0.02em;
@@ -883,7 +883,7 @@
 
 .faqCategoryTitle {
   font-size: 1.25rem;
-  font-weight: 800;
+  font-weight: 600;
   color: #0c1b4d;
   margin-bottom: 1.25rem;
   padding-bottom: 0.65rem;
@@ -934,7 +934,7 @@
 .faqToggleIcon {
   color: #D58936;
   font-size: 1.35rem;
-  font-weight: 800;
+  font-weight: 600;
   transition: transform 0.2s ease;
   flex-shrink: 0;
 }

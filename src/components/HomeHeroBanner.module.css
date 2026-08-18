@@ -35,7 +35,7 @@
 .mainTitle {
   font-family: var(--font-outfit), sans-serif;
   font-size: clamp(2.4rem, 5vw, 4.4rem);
-  font-weight: 800;
+  font-weight: 600;
   color: #ffffff;
   line-height: 1.14;
   letter-spacing: -0.025em;

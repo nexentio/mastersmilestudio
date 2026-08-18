@@ -26,7 +26,7 @@
 
 .headerTitle {
   font-size: 2.75rem;
-  font-weight: 800;
+  font-weight: 600;
   line-height: 1.15;
   color: #0b1938;
   margin: 0;
@@ -446,7 +446,7 @@
 
 .successHeading {
   font-size: 1.85rem;
-  font-weight: 800;
+  font-weight: 600;
   color: #1e293b;
   margin: 0 0 0.75rem 0;
 }

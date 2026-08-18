@@ -1,32 +1,35 @@
 .section {
-  padding: 3.5rem 1.5rem 1.5rem 1.5rem;
+  padding: 3.5rem 1.5rem 2.5rem 1.5rem;
   background-color: #ffffff;
 }
 
 .container {
-  max-width: 1240px;
+  width: 1200px;
+  max-width: 94%;
   margin: 0 auto;
 }
 
 .headerRow {
   display: grid;
-  grid-template-columns: 1.1fr 1fr;
-  gap: 3rem;
-  align-items: flex-start;
-  margin-bottom: 2.5rem;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 35px;
+  align-items: center;
+  margin-bottom: 2.2rem;
 }
 
 @media (max-width: 860px) {
   .headerRow {
     grid-template-columns: 1fr;
-    gap: 1.25rem;
-    margin-bottom: 2rem;
+    gap: 1rem;
+    align-items: flex-start;
+    margin-bottom: 1.75rem;
   }
 }
 
 .heading {
-  font-size: clamp(2rem, 3.2vw, 2.75rem);
-  font-weight: 800;
+  font-family: var(--font-outfit), sans-serif;
+  font-size: clamp(2.2rem, 3.2vw, 2.9rem);
+  font-weight: 600;
   color: #0c1b4d;
   line-height: 1.15;
   margin: 0;
@@ -34,30 +37,32 @@
 }
 
 .subText {
-  font-size: 1.02rem;
-  color: #475569;
-  line-height: 1.65;
+  font-family: var(--font-outfit), sans-serif;
+  font-size: 0.95rem;
+  color: #0c1b4d;
+  line-height: 1.6;
   margin: 0;
+  font-weight: 500;
 }
 
 .surfaceCard {
-  background-color: #f8fafc;
+  background-color: #f4f4f6;
   border-radius: 28px;
-  padding: 3rem 2.75rem;
-  border: 1px solid #eef2f6;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.03);
+  padding: 3.25rem 3rem;
+  border: 1px solid #edf0f5;
+  box-shadow: none;
 }
 
 @media (max-width: 768px) {
   .surfaceCard {
-    padding: 1.75rem 1.25rem;
+    padding: 2rem 1.25rem;
     border-radius: 20px;
   }
 }
 
 .grid {
   display: grid;
-  grid-template-columns: 1.15fr 1fr;
+  grid-template-columns: 1.1fr 1fr;
   gap: 3.5rem;
   align-items: center;
 }
@@ -76,7 +81,7 @@
 
 .item {
   border-bottom: 1px solid #e2e8f0;
-  padding: 1.25rem 0;
+  padding: 1.5rem 0;
   transition: all 0.2s ease;
 }
 
@@ -85,17 +90,17 @@
 }
 
 .item:first-child {
-  padding-top: 0;
+  padding-top: 0.25rem;
 }
 
 .item:last-child {
   border-bottom: none;
-  padding-bottom: 0;
+  padding-bottom: 0.25rem;
 }
 
 .titleRow {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 1.25rem;
   cursor: pointer;
@@ -108,18 +113,18 @@
 }
 
 .titleText {
-  font-size: clamp(1.38rem, 2.1vw, 1.65rem);
-  font-weight: 500;
+  font-size: clamp(1.2rem, 1.8vw, 1.45rem);
+  font-weight: 600;
   color: #0c1b4d;
   line-height: 1.3;
   letter-spacing: -0.015em;
 }
 
 .targetText {
-  font-size: 0.96rem;
-  font-weight: 450;
+  font-size: 0.94rem;
+  font-weight: 700;
   color: #d58936;
-  line-height: 1.5;
+  line-height: 1.45;
   margin-top: 0.35rem;
 }
 
@@ -129,12 +134,13 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  margin-top: 0.25rem;
   transition: transform 0.25s ease, color 0.25s ease;
 }
 
 .chevronActive {
   transform: rotate(180deg);
-  color: #0f172a;
+  color: #0c1b4d;
 }
 
 .contentBox {
@@ -154,9 +160,9 @@
 }
 
 .descText {
-  font-size: 0.98rem;
+  font-size: 0.95rem;
   color: #334155;
-  line-height: 1.7;
+  line-height: 1.65;
   margin: 0 0 1.25rem 0;
 }
 
@@ -182,31 +188,33 @@
 }
 
 .btnWrap {
-  margin-top: 0.75rem;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
 }
 
 .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(180deg, #dca13c 0%, #b4751c 100%);
-  border: 1px solid #8d560c;
+  background: linear-gradient(180deg, #dfa84a 0%, #b87b1c 100%);
+  border: 1px solid #9c6310;
   color: #ffffff;
-  padding: 0.5rem 1.65rem;
+  padding: 0.6rem 1.85rem;
   border-radius: 9999px;
-  font-weight: 750;
+  font-weight: 600;
   font-size: 0.78rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-decoration: none;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 4px 14px rgba(180, 117, 28, 0.35), inset 0 1px 1px rgba(255, 255, 255, 0.5);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 14px rgba(184, 123, 28, 0.35), inset 0 1px 1px rgba(255, 255, 255, 0.6);
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 .btn:hover {
   transform: translateY(-1px);
-  box-shadow: 0 6px 18px rgba(180, 117, 28, 0.45);
+  box-shadow: 0 6px 18px rgba(184, 123, 28, 0.45);
 }
 
 .stickyPreview {
@@ -227,9 +235,9 @@
   display: block;
   width: 100%;
   max-width: 540px;
-  border-radius: 22px;
+  border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
   background-color: #ffffff;
   transition: transform 0.25s ease;
 }
@@ -242,6 +250,6 @@
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 22px;
+  border-radius: 20px;
   object-fit: cover;
 }
