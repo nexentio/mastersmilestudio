@@ -26,7 +26,7 @@ interface LocalizedText {
 const COSMETIC_I18N_DATA: Record<string, LocalizedText> = {
   en: {
     heading: 'From Insecurity to a Radiant Hollywood Smile',
-    desc: 'Real patient smile design transformations with Swiss Ivoclar E-Max, laser gum contouring, and Philips Zoom whitening at Master Smile Studio Istanbul.',
+    desc: 'Real patient smile design transformations with Swiss Ivoclar E-Max, laser gum contouring, and Philips Zoom whitening at Master Smile Studio Antalya.',
     viewGallery: 'View Full Smile Makeover Gallery →',
     cases: [
       {
@@ -49,7 +49,7 @@ const COSMETIC_I18N_DATA: Record<string, LocalizedText> = {
   },
   tr: {
     heading: 'Kusursuz Gülüş Dönüşümleri & Hollywood Smile',
-    desc: 'Master Smile Studio İstanbul’da İsviçre Ivoclar E-Max, lazerle diş eti şekillendirme ve Philips Zoom beyazlatma ile tamamlanan gerçek hasta vakaları.',
+    desc: 'Master Smile Studio Antalya’da İsviçre Ivoclar E-Max, lazerle diş eti şekillendirme ve Philips Zoom beyazlatma ile tamamlanan gerçek hasta vakaları.',
     viewGallery: 'Tüm Gülüş Galerisini İncele →',
     cases: [
       {
@@ -72,7 +72,7 @@ const COSMETIC_I18N_DATA: Record<string, LocalizedText> = {
   },
   de: {
     heading: 'Von Unsicherheit zu einem strahlenden Hollywood-Lächeln',
-    desc: 'Echte Patiententransformationen mit Ivoclar E-Max, Laser-Zahnfleischkorrektur und Philips Zoom Bleaching bei Master Smile Studio Istanbul.',
+    desc: 'Echte Patiententransformationen mit Ivoclar E-Max, Laser-Zahnfleischkorrektur und Philips Zoom Bleaching bei Master Smile Studio Antalya.',
     viewGallery: 'Vollständige Smile-Design-Galerie ansehen →',
     cases: [
       {
@@ -95,7 +95,7 @@ const COSMETIC_I18N_DATA: Record<string, LocalizedText> = {
   },
   pl: {
     heading: 'Od kompleksów do olśniewającego uśmiechu Hollywood Smile',
-    desc: 'Prawdziwe metamorfozy uśmiechu z licówkami Ivoclar E-Max, laserową plastyką dziąseł i wybielaniem Philips Zoom w Master Smile Studio Stambuł.',
+    desc: 'Prawdziwe metamorfozy uśmiechu z licówkami Ivoclar E-Max, laserową plastyką dziąseł i wybielaniem Philips Zoom w Master Smile Studio Antalya.',
     viewGallery: 'Zobacz całą galerię metamorfoz →',
     cases: [
       {
@@ -118,7 +118,7 @@ const COSMETIC_I18N_DATA: Record<string, LocalizedText> = {
   },
   pt: {
     heading: 'Da insegurança a um sorriso Hollywoodiano deslumbrante',
-    desc: 'Transformações reais com facetas Ivoclar E-Max, plástica gengival a laser e clareamento Philips Zoom na Master Smile Studio Istambul.',
+    desc: 'Transformações reais com facetas Ivoclar E-Max, plástica gengival a laser e clareamento Philips Zoom na Master Smile Studio Antalya.',
     viewGallery: 'Ver galeria completa de Smile Makeover →',
     cases: [
       {
@@ -141,7 +141,7 @@ const COSMETIC_I18N_DATA: Record<string, LocalizedText> = {
   },
   es: {
     heading: 'De la timidez a una deslumbrante sonrisa Hollywood',
-    desc: 'Transformaciones reales con carillas Ivoclar E-Max, contorneado gingival con láser y blanqueamiento Philips Zoom en Master Smile Studio Estambul.',
+    desc: 'Transformaciones reales con carillas Ivoclar E-Max, contorneado gingival con láser y blanqueamiento Philips Zoom en Master Smile Studio Antalya.',
     viewGallery: 'Ver galería completa de diseño de sonrisa →',
     cases: [
       {
@@ -188,10 +188,10 @@ const COSMETIC_I18N_DATA: Record<string, LocalizedText> = {
 };
 
 const COSMETIC_CASE_IMAGES = [
-  'https://sohodent.com/doc/data1/e-max-laminate-copy.webp',
-  'https://sohodent.com/doc/data1/porcelain-laminate-copy.webp',
-  'https://sohodent.com/doc/data1/lumineer-copy.webp',
-  'https://sohodent.com/doc/data1/zirconium-implant-copy.webp',
+  '/treatments/accordion/e-max-laminate-copy.webp',
+  '/treatments/accordion/porcelain-laminate-copy.webp',
+  '/treatments/accordion/lumineers.webp',
+  '/treatments/accordion/zirconium-implant-copy.webp',
 ];
 
 export default function TreatmentCosmeticBeforeAfterSliderSection() {

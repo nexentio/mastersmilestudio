@@ -28,7 +28,7 @@ const JOURNEY_DATA: Record<string, LocaleContent> = {
   en: {
     sectionTitle: 'Your Dental Journey Made Simple',
     subText:
-      'From your very first inquiry to your permanent final smile, we guarantee a predictable, luxury, and transparent treatment journey in Istanbul. Learn about exact stay durations, visit milestones, recovery times, and all-inclusive pricing designed for international patients.',
+      'From your very first inquiry to your permanent final smile, we guarantee a predictable, luxury, and transparent treatment journey in Antalya. Learn about exact stay durations, visit milestones, recovery times, and all-inclusive pricing designed for international patients.',
     contactHeading: 'Reach Out to Us - Quickly and Easily',
     whatsappLabel: 'WhatsApp',
     phoneLabel: 'Phone Call',
@@ -38,7 +38,7 @@ const JOURNEY_DATA: Record<string, LocaleContent> = {
       {
         id: 'stay',
         icon: 'https://sohodent.com/doc/static/tedaviicon/icon01.webp',
-        title: 'Average Length of Stay in Istanbul',
+        title: 'Average Length of Stay in Antalya',
         content:
           '<strong>3 to 5 days for the 1st visit, 5 to 7 days for the 2nd visit.</strong> During your 1st visit (3–5 days), our senior oral surgeons complete 3D digital CBCT diagnostics, tooth extractions, computer-guided implant surgery, and the same-day fitting of your fixed temporary bridge. Your 2nd visit (5–7 days, after 3 months of healing) is dedicated to digital shade matching, precision try-ins, and final permanent Zirconia bridge delivery.',
       },
@@ -68,7 +68,7 @@ const JOURNEY_DATA: Record<string, LocaleContent> = {
   tr: {
     sectionTitle: 'Diş Tedavisi Yolculuğunuz Artık Çok Kolay',
     subText:
-      'İlk danışmanızdan kalıcı yeni gülüşünüze kadar İstanbul’da şeffaf, konforlu ve güvenli bir tedavi süreci sunuyoruz. Kalış süreleri, aşamalar, iyileşme süreci ve her şey dahil paket fiyatları hakkında tüm detayları keşfedin.',
+      'İlk danışmanızdan kalıcı yeni gülüşünüze kadar Antalya’da şeffaf, konforlu ve güvenli bir tedavi süreci sunuyoruz. Kalış süreleri, aşamalar, iyileşme süreci ve her şey dahil paket fiyatları hakkında tüm detayları keşfedin.',
     contactHeading: 'Bize Hızlı ve Kolayca Ulaşın',
     whatsappLabel: 'WhatsApp',
     phoneLabel: 'Telefon Görüşmesi',
@@ -78,7 +78,7 @@ const JOURNEY_DATA: Record<string, LocaleContent> = {
       {
         id: 'stay',
         icon: 'https://sohodent.com/doc/static/tedaviicon/icon01.webp',
-        title: 'İstanbul’da Ortalama Kalış Süresi',
+        title: 'Antalya’da Ortalama Kalış Süresi',
         content:
           '<strong>1. Ziyaret için 3–5 gün, 2. Ziyaret için 5–7 gün.</strong> 1. Ziyaretinizde (3–5 gün); 3D tomografi planlaması, hasarlı diş çekimleri, 4 implant cerrahisi ve aynı gün vidalanan sabit geçici köprünüz takılır. 3 aylık kemikleşme sonrasındaki 2. Ziyaretinizde (5–7 gün) ise kalıcı monolitik zirkonyum köprünüzün dijital provaları yapılıp kalıcı teslimatı gerçekleştirilir.',
       },
@@ -106,9 +106,9 @@ const JOURNEY_DATA: Record<string, LocaleContent> = {
     ],
   },
   de: {
-    sectionTitle: 'Ihre Zahnbehandlung in Istanbul – Einfach & Transparent',
+    sectionTitle: 'Ihre Zahnbehandlung in Antalya – Einfach & Transparent',
     subText:
-      'Von der ersten Beratung bis zu Ihren dauerhaften Zähnen garantieren wir einen reibungslosen, erstklassigen Ablauf in Istanbul. Erfahren Sie alles über Aufenthaltsdauer, Besuche, Heilung und transparente Paketpreise.',
+      'Von der ersten Beratung bis zu Ihren dauerhaften Zähnen garantieren wir einen reibungslosen, erstklassigen Ablauf in Antalya. Erfahren Sie alles über Aufenthaltsdauer, Besuche, Heilung und transparente Paketpreise.',
     contactHeading: 'Erreichen Sie uns schnell & unkompliziert',
     whatsappLabel: 'WhatsApp',
     phoneLabel: 'Telefonanruf',
@@ -118,7 +118,7 @@ const JOURNEY_DATA: Record<string, LocaleContent> = {
       {
         id: 'stay',
         icon: 'https://sohodent.com/doc/static/tedaviicon/icon01.webp',
-        title: 'Durchschnittliche Aufenthaltsdauer in Istanbul',
+        title: 'Durchschnittliche Aufenthaltsdauer in Antalya',
         content:
           '<strong>3 bis 5 Tage für den 1. Besuch, 5 bis 7 Tage für den 2. Besuch.</strong> Beim 1. Besuch (3–5 Tage) erfolgen 3D-DVT-Diagnostik, Zahnentfernungen, 4-Implantat-OP und das Einsetzen der festsitzenden provisorischen Brücke. Der 2. Besuch (5–7 Tage, nach 3 Monaten Einheilung) dient der finalen Anprobe und Einsetzung Ihrer permanenten Zirkonbrücke.',
       },
@@ -148,7 +148,7 @@ const JOURNEY_DATA: Record<string, LocaleContent> = {
   pl: {
     sectionTitle: 'Twoja Podróż Stomatologiczna Krok po Kroku',
     subText:
-      'Od pierwszej konsultacji po ostateczny uśmiech gwarantujemy bezpieczny, przewidywalny i luksusowy pobyt w Stambule. Poznaj dokładne ramy czasowe, liczbę wizyt, okres gojenia i pakiety all-inclusive.',
+      'Od pierwszej konsultacji po ostateczny uśmiech gwarantujemy bezpieczny, przewidywalny i luksusowy pobyt w Antalyi. Poznaj dokładne ramy czasowe, liczbę wizyt, okres gojenia i pakiety all-inclusive.',
     contactHeading: 'Skontaktuj się z Nami – Szybko i Wygodnie',
     whatsappLabel: 'WhatsApp',
     phoneLabel: 'Telefon',
@@ -158,7 +158,7 @@ const JOURNEY_DATA: Record<string, LocaleContent> = {
       {
         id: 'stay',
         icon: 'https://sohodent.com/doc/static/tedaviicon/icon01.webp',
-        title: 'Średni Czas Pobytu w Stambule',
+        title: 'Średni Czas Pobytu w Antalyi',
         content:
           '<strong>3 do 5 dni na 1. wizytę, 5 do 7 dni na 2. wizytę.</strong> Podczas 1. wizyty (3–5 dni) wykonujemy diagnostykę 3D CBCT, ekstrakcje, zabieg wszczepienia 4 implantów oraz montaż stałego mostu tymczasowego. 2. wizyta (5–7 dni, po 3 miesiącach gojenia) obejmuje przymiarki i ostateczne oddanie stałego mostu cyrkonowego.',
       },
@@ -188,7 +188,7 @@ const JOURNEY_DATA: Record<string, LocaleContent> = {
   pt: {
     sectionTitle: 'Sua Jornada Odontológica Simplificada',
     subText:
-      'Desde a primeira consulta até o seu sorriso definitivo, garantimos uma experiência transparente e de alto padrão em Istambul. Conheça o tempo de estadia, etapas, recuperação e preços de pacotes.',
+      'Desde a primeira consulta até o seu sorriso definitivo, garantimos uma experiência transparente e de alto padrão em Antalya. Conheça o tempo de estadia, etapas, recuperação e preços de pacotes.',
     contactHeading: 'Fale Conosco com Facilidade',
     whatsappLabel: 'WhatsApp',
     phoneLabel: 'Ligação Telefônica',
@@ -198,7 +198,7 @@ const JOURNEY_DATA: Record<string, LocaleContent> = {
       {
         id: 'stay',
         icon: 'https://sohodent.com/doc/static/tedaviicon/icon01.webp',
-        title: 'Tempo Médio de Estadia em Istambul',
+        title: 'Tempo Médio de Estadia em Antalya',
         content:
           '<strong>3 a 5 dias para a 1ª visita, 5 a 7 dias para a 2ª visita.</strong> Na 1ª visita (3–5 dias), nossos cirurgiões realizam a tomografia 3D, extrações necessárias, cirurgia dos 4 implantes e fixação da ponte provisória no mesmo dia. A 2ª visita (5–7 dias, após 3 meses) é dedicada às provas estéticas e entrega da ponte definitiva de zircônia.',
       },
@@ -228,7 +228,7 @@ const JOURNEY_DATA: Record<string, LocaleContent> = {
   es: {
     sectionTitle: 'Su Viaje Dental Hecho Simple y Transparente',
     subText:
-      'Desde su primera consulta hasta su sonrisa definitiva, garantizamos un viaje predecible y de lujo en Estambul. Conozca tiempos de estancia, visitas necesarias, proceso de recuperación y precios con todo incluido.',
+      'Desde su primera consulta hasta su sonrisa definitiva, garantizamos un viaje predecible y de lujo en Antalya. Conozca tiempos de estancia, visitas necesarias, proceso de recuperación y precios con todo incluido.',
     contactHeading: 'Contáctenos de Forma Rápida y Sencilla',
     whatsappLabel: 'WhatsApp',
     phoneLabel: 'Llamada Telefónica',
@@ -238,7 +238,7 @@ const JOURNEY_DATA: Record<string, LocaleContent> = {
       {
         id: 'stay',
         icon: 'https://sohodent.com/doc/static/tedaviicon/icon01.webp',
-        title: 'Duración Media de la Estancia en Estambul',
+        title: 'Duración Media de la Estancia en Antalya',
         content:
           '<strong>De 3 a 5 días para la 1ª visita, de 5 a 7 días para la 2ª visita.</strong> En la 1ª visita (3–5 días) se realiza el TAC 3D, extracciones, colocación de 4 implantes y ajuste del puente provisional fijo en el mismo día. La 2ª visita (5–7 días, tras 3 meses) se dedica a las pruebas estéticas y entrega final del puente permanente de circonio.',
       },
@@ -268,7 +268,7 @@ const JOURNEY_DATA: Record<string, LocaleContent> = {
   ru: {
     sectionTitle: 'Ваш Стоматологический Путь – Просто и Понятно',
     subText:
-      'От первого обращения до вашей постоянной новой улыбки мы обеспечиваем предсказуемый и комфортный процесс в Стамбуле. Узнайте точные сроки пребывания, этапы визитов, процесс восстановления и прозрачные пакетные цены.',
+      'От первого обращения до вашей постоянной новой улыбки мы обеспечиваем предсказуемый и комфортный процесс в Анталье. Узнайте точные сроки пребывания, этапы визитов, процесс восстановления и прозрачные пакетные цены.',
     contactHeading: 'Свяжитесь с Нами – Быстро и Удобно',
     whatsappLabel: 'WhatsApp',
     phoneLabel: 'Телефонный звонок',
@@ -278,7 +278,7 @@ const JOURNEY_DATA: Record<string, LocaleContent> = {
       {
         id: 'stay',
         icon: 'https://sohodent.com/doc/static/tedaviicon/icon01.webp',
-        title: 'Средняя Продолжительность Пребывания в Стамбуле',
+        title: 'Средняя Продолжительность Пребывания в Анталье',
         content:
           '<strong>От 3 до 5 дней на 1-й визит, от 5 до 7 дней на 2-й визит.</strong> В 1-й визит (3–5 дней) проводятся 3D-КТ диагностика, удаление зубов, установка 4 имплантов и фиксация несъемного временного моста. Во 2-й визит (5–7 дней, через 3 месяца) выполняются цифровые примерки и установка постоянного циркониевого моста.',
       },

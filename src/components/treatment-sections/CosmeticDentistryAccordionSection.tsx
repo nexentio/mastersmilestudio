@@ -153,7 +153,7 @@ const COSMETIC_ACCORDION_DATA: Record<string, AccordionDictionary> = {
   de: {
     heading: 'Finden Sie die passende ästhetische Zahnbehandlung',
     subtitle:
-      'Entdecken Sie unsere kosmetischen Behandlungsoptionen für Ihr strahlendes Hollywood Lächeln in Istanbul.',
+      'Entdecken Sie unsere kosmetischen Behandlungsoptionen für Ihr strahlendes Hollywood Lächeln in Antalya.',
     readMore: 'MEHR ERFAHREN',
     items: [
       {
@@ -217,7 +217,7 @@ const COSMETIC_ACCORDION_DATA: Record<string, AccordionDictionary> = {
   pl: {
     heading: 'Znajdź odpowiedni zabieg stomatologii estetycznej',
     subtitle:
-      'Wybierz najlepsze rozwiązanie dla swojego nowego uśmiechu w Master Smile Studio w Stambule.',
+      'Wybierz najlepsze rozwiązanie dla swojego nowego uśmiechu w Master Smile Studio w Antalyi.',
     readMore: 'WIĘCEJ INFORMACJI',
     items: [
       {
@@ -281,7 +281,7 @@ const COSMETIC_ACCORDION_DATA: Record<string, AccordionDictionary> = {
   pt: {
     heading: 'Encontre o Tratamento Estético Ideal para Si',
     subtitle:
-      'Descubra a melhor opção para transformar o seu sorriso em Istambul com tecnologia de ponta.',
+      'Descubra a melhor opção para transformar o seu sorriso em Antalya com tecnologia de ponta.',
     readMore: 'SABER MAIS',
     items: [
       {
@@ -409,7 +409,7 @@ const COSMETIC_ACCORDION_DATA: Record<string, AccordionDictionary> = {
   ru: {
     heading: 'Выберите подходящую эстетическую процедуру',
     subtitle:
-      'Изучите варианты преображения улыбки в Master Smile Studio в Стамбуле для безупречного результата.',
+      'Изучите варианты преображения улыбки в Master Smile Studio в Анталье для безупречного результата.',
     readMore: 'ПОДРОБНЕЕ',
     items: [
       {

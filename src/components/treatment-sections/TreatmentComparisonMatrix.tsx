@@ -45,7 +45,7 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
     thTreatment: 'Treatment Solution',
     thIdealFor: 'Primary Clinical Indication',
     thLifespan: 'Lifespan & Guarantee',
-    thDuration: 'Time in Istanbul',
+    thDuration: 'Time in Antalya',
     thPreparation: 'Tooth Preparation',
     thScore: 'Clinical Strength Metric',
     footerNote:
@@ -146,11 +146,11 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
   tr: {
     heading: 'Hangi Diş Tedavisi Sizin İçin En Doğru Çözüm?',
     subText:
-      'Dayanıklılık, İstanbul’da kalış süresi, diş dokusu koruma ve klinik direnç değerlerini kıyaslayın. Detaylı tedavi sayfasına gitmek için ilgili satıra tıklayabilirsiniz.',
+      'Dayanıklılık, Antalya’da kalış süresi, diş dokusu koruma ve klinik direnç değerlerini kıyaslayın. Detaylı tedavi sayfasına gitmek için ilgili satıra tıklayabilirsiniz.',
     thTreatment: 'Tedavi Çözümü',
     thIdealFor: 'Birincil Klinik Endikasyon',
     thLifespan: 'Ömür & Garanti',
-    thDuration: 'İstanbul’da Kalış',
+    thDuration: 'Antalya’da Kalış',
     thPreparation: 'Diş Kesimi / Müdahale',
     thScore: 'Klinik Mukavemet Değeri',
     footerNote:
@@ -251,11 +251,11 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
   de: {
     heading: 'Welche Zahnbehandlung ist die richtige für Sie?',
     subText:
-      'Vergleichen Sie Haltbarkeit, Behandlungsdauer in Istanbul, Zahnhartsubstanzschonung und klinische Festigkeitswerte. Klicken Sie auf eine Zeile, um die Detailseite zu öffnen.',
+      'Vergleichen Sie Haltbarkeit, Behandlungsdauer in Antalya, Zahnhartsubstanzschonung und klinische Festigkeitswerte. Klicken Sie auf eine Zeile, um die Detailseite zu öffnen.',
     thTreatment: 'Behandlungslösung',
     thIdealFor: 'Klinische Indikation',
     thLifespan: 'Haltbarkeit & Garantie',
-    thDuration: 'Dauer in Istanbul',
+    thDuration: 'Dauer in Antalya',
     thPreparation: 'Präparation / Zahnschonung',
     thScore: 'Klinischer Festigkeitswert',
     footerNote:
@@ -356,11 +356,11 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
   pl: {
     heading: 'Który Zabieg Stomatologiczny Jest Dla Ciebie Odpowiedni?',
     subText:
-      'Porównaj trwałość, czas pobytu w Stambule, stopień ingerencji w ząb i kliniczne parametry wytrzymałości. Kliknij wiersz, aby przejść do szczegółów zabiegu.',
+      'Porównaj trwałość, czas pobytu w Antalyi, stopień ingerencji w ząb i kliniczne parametry wytrzymałości. Kliknij wiersz, aby przejść do szczegółów zabiegu.',
     thTreatment: 'Rozwiązanie Lecznicze',
     thIdealFor: 'Główne Wskazanie Kliniczne',
     thLifespan: 'Trwałość i Gwarancja',
-    thDuration: 'Czas w Stambule',
+    thDuration: 'Czas w Antalyi',
     thPreparation: 'Szlifowanie Zębów',
     thScore: 'Wytrzymałość Kliniczna',
     footerNote:
@@ -461,11 +461,11 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
   pt: {
     heading: 'Qual Tratamento Odontológico É o Ideal para Você?',
     subText:
-      'Compare durabilidade, tempo de estadia em Istambul, nível de desgaste dental e valores de resistência clínica. Clique em qualquer linha para abrir a página detalhada.',
+      'Compare durabilidade, tempo de estadia em Antalya, nível de desgaste dental e valores de resistência clínica. Clique em qualquer linha para abrir a página detalhada.',
     thTreatment: 'Solução Clínica',
     thIdealFor: 'Indicação Clínica Principal',
     thLifespan: 'Durabilidade & Garantia',
-    thDuration: 'Tempo em Istambul',
+    thDuration: 'Tempo em Antalya',
     thPreparation: 'Preparo Dental',
     thScore: 'Resistência Clínica',
     footerNote:
@@ -566,11 +566,11 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
   es: {
     heading: '¿Qué Tratamiento Dental Es el Más Adecuado para Usted?',
     subText:
-      'Compare durabilidad, tiempo de estancia en Estambul, conservación del diente y métricas de resistencia clínica. Haga clic en cualquier fila para explorar la página del tratamiento.',
+      'Compare durabilidad, tiempo de estancia en Antalya, conservación del diente y métricas de resistencia clínica. Haga clic en cualquier fila para explorar la página del tratamiento.',
     thTreatment: 'Solución Dental',
     thIdealFor: 'Indicación Clínica Primaria',
     thLifespan: 'Durabilidad & Garantía',
-    thDuration: 'Tiempo en Estambul',
+    thDuration: 'Tiempo en Antalya',
     thPreparation: 'Preparación Dental',
     thScore: 'Métrica de Resistencia Clínica',
     footerNote:
@@ -671,11 +671,11 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
   ru: {
     heading: 'Какое стоматологическое лечение подходит именно вам?',
     subText:
-      'Сравните долговечность, время пребывания в Стамбуле, степень обточки зубов и клинические показатели прочности. Нажмите на любую строку для перехода к деталям процедуры.',
+      'Сравните долговечность, время пребывания в Анталье, степень обточки зубов и клинические показатели прочности. Нажмите на любую строку для перехода к деталям процедуры.',
     thTreatment: 'Метод лечения',
     thIdealFor: 'Клинические показания',
     thLifespan: 'Срок службы и гарантия',
-    thDuration: 'Срок в Стамбуле',
+    thDuration: 'Срок в Анталье',
     thPreparation: 'Обработка зубов',
     thScore: 'Клинический показатель прочности',
     footerNote:

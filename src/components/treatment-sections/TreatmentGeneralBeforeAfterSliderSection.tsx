@@ -26,7 +26,7 @@ interface LocalizedText {
 const GENERAL_I18N_DATA: Record<string, LocalizedText> = {
   en: {
     heading: 'Restoring Oral Health, Comfort & Healthy Foundations',
-    desc: 'Real patient general dentistry transformations with microscopic root canal therapy, ultrasonic Air-Flow deep cleaning, and aesthetic composite fillings at Master Smile Studio Istanbul.',
+    desc: 'Real patient general dentistry transformations with microscopic root canal therapy, ultrasonic Air-Flow deep cleaning, and aesthetic composite fillings at Master Smile Studio Antalya.',
     viewGallery: 'View Full Dental Case Gallery →',
     cases: [
       {
@@ -49,7 +49,7 @@ const GENERAL_I18N_DATA: Record<string, LocalizedText> = {
   },
   tr: {
     heading: 'Sağlıklı Dişler, Ağrısız Çiğneme ve Güçlü Diş Etleri',
-    desc: 'Master Smile Studio İstanbul’da mikroskobik kanal tedavisi, ultrasonik Air-Flow diş temizliği ve estetik nanokompozit dolgularla tamamlanan gerçek klinik vakalar.',
+    desc: 'Master Smile Studio Antalya’da mikroskobik kanal tedavisi, ultrasonik Air-Flow diş temizliği ve estetik nanokompozit dolgularla tamamlanan gerçek klinik vakalar.',
     viewGallery: 'Tüm Klinik Tedavi Galerisini İncele →',
     cases: [
       {
@@ -72,7 +72,7 @@ const GENERAL_I18N_DATA: Record<string, LocalizedText> = {
   },
   de: {
     heading: 'Wiederherstellung von Mundgesundheit, Komfort & gesundem Zahnfleisch',
-    desc: 'Echte klinische Fälle mit mikroskopischer Wurzelbehandlung, Air-Flow Tiefenreinigung und ästhetischen Kompositfüllungen bei Master Smile Studio Istanbul.',
+    desc: 'Echte klinische Fälle mit mikroskopischer Wurzelbehandlung, Air-Flow Tiefenreinigung und ästhetischen Kompositfüllungen bei Master Smile Studio Antalya.',
     viewGallery: 'Vollständige Fall-Galerie ansehen →',
     cases: [
       {
@@ -95,7 +95,7 @@ const GENERAL_I18N_DATA: Record<string, LocalizedText> = {
   },
   pl: {
     heading: 'Odbudowa zdrowia jamy ustnej, komfortu i mocnych dziąseł',
-    desc: 'Prawdziwe przypadki leczenia kanałowego pod mikroskopem, higienizacji Air-Flow i estetycznych wypełnień nanokompozytowych w Master Smile Studio Stambuł.',
+    desc: 'Prawdziwe przypadki leczenia kanałowego pod mikroskopem, higienizacji Air-Flow i estetycznych wypełnień nanokompozytowych w Master Smile Studio Antalya.',
     viewGallery: 'Zobacz całą galerię przypadków medycznych →',
     cases: [
       {
@@ -118,7 +118,7 @@ const GENERAL_I18N_DATA: Record<string, LocalizedText> = {
   },
   pt: {
     heading: 'Restaurando a saúde bucal, conforto e gengivas saudáveis',
-    desc: 'Casos clínicos reais de tratamento de canal microscópico, profilaxia profunda Air-Flow e restaurações em resina composta na Master Smile Studio Istambul.',
+    desc: 'Casos clínicos reais de tratamento de canal microscópico, profilaxia profunda Air-Flow e restaurações em resina composta na Master Smile Studio Antalya.',
     viewGallery: 'Ver galeria completa de tratamentos clínicos →',
     cases: [
       {
@@ -141,7 +141,7 @@ const GENERAL_I18N_DATA: Record<string, LocalizedText> = {
   },
   es: {
     heading: 'Restaurando la salud bucodental, el confort y las encías sanas',
-    desc: 'Casos clínicos reales de endodoncia microscópica, limpieza profunda Air-Flow y empastes estéticos de composite en Master Smile Studio Estambul.',
+    desc: 'Casos clínicos reales de endodoncia microscópica, limpieza profunda Air-Flow y empastes estéticos de composite en Master Smile Studio Antalya.',
     viewGallery: 'Ver galería completa de casos clínicos →',
     cases: [
       {
@@ -188,10 +188,10 @@ const GENERAL_I18N_DATA: Record<string, LocalizedText> = {
 };
 
 const GENERAL_CASE_IMAGES = [
-  'https://sohodent.com/doc/data1/lumineer-copy.webp',
-  'https://sohodent.com/doc/data1/porcelain-laminate-copy.webp',
-  'https://sohodent.com/doc/data1/e-max-laminate-copy.webp',
-  'https://sohodent.com/doc/data1/zirconium-implant-copy.webp',
+  '/treatments/accordion/lumineers.webp',
+  '/treatments/accordion/porcelain-laminate-copy.webp',
+  '/treatments/accordion/e-max-laminate-copy.webp',
+  '/treatments/accordion/zirconium-implant-copy.webp',
 ];
 
 export default function TreatmentGeneralBeforeAfterSliderSection() {

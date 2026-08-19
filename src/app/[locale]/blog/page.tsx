@@ -18,12 +18,12 @@ export async function generateMetadata({ params }: Props) {
   return {
     title:
       locale === 'tr'
-        ? 'Blog & Rehber | Master Smile Studio İstanbul'
-        : 'Dental Blog & Guides | Master Smile Studio Istanbul',
+        ? 'Blog & Rehber | Master Smile Studio Antalya'
+        : 'Dental Blog & Guides | Master Smile Studio Antalya',
     description:
       locale === 'tr'
         ? 'Diş sağlığı, implant, estetik kaplamalar, ünlülerin dişleri ve Türkiye diş turizmi hakkında uzman rehberler ve makaleler.'
-        : 'Expert clinical guides and articles on dental implants, veneers, crowns, celebrity smile makeovers and dental tourism in Istanbul, Turkey.',
+        : 'Expert clinical guides and articles on dental implants, veneers, crowns, celebrity smile makeovers and dental tourism in Antalya, Turkey.',
   };
 }
 

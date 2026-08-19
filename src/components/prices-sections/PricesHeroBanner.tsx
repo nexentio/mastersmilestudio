@@ -13,31 +13,31 @@ interface PricesHeroBannerProps {
 
 const HERO_DATA: Record<string, { title: string; subtitle: string }> = {
   en: {
-    title: 'Affordable Turkey Teeth Prices in Istanbul',
+    title: 'Affordable Turkey Teeth Prices in Antalya',
     subtitle: 'Get Your Dream Smile at Master Smile Studio',
   },
   tr: {
-    title: 'İstanbul Diş Tedavisi ve İmplant Fiyatları',
+    title: 'Antalya Diş Tedavisi ve İmplant Fiyatları',
     subtitle: 'Master Smile Studio ile Hayalinizdeki Gülüşe Kavuşun',
   },
   de: {
-    title: 'Erschwingliche Zahnbehandlungspreise in Istanbul',
+    title: 'Erschwingliche Zahnbehandlungspreise in Antalya',
     subtitle: 'Holen Sie sich Ihr Traumlächeln im Master Smile Studio',
   },
   pl: {
-    title: 'Przystępne Ceny Zabiegów Stomatologicznych w Stambule',
+    title: 'Przystępne Ceny Zabiegów Stomatologicznych w Antalyi',
     subtitle: 'Uzyskaj Swój Wymarzony Uśmiech w Master Smile Studio',
   },
   pt: {
-    title: 'Preços Acessíveis de Tratamentos Dentários em Istambul',
+    title: 'Preços Acessíveis de Tratamentos Dentários em Antalya',
     subtitle: 'Conquiste o Seu Sorriso de Sonho no Master Smile Studio',
   },
   es: {
-    title: 'Precios Asequibles de Tratamientos Dentales en Estambul',
+    title: 'Precios Asequibles de Tratamientos Dentales en Antalya',
     subtitle: 'Consigue la Sonrisa de Tus Sueños en Master Smile Studio',
   },
   ru: {
-    title: 'Доступные Цены на Стоматологическое Лечение в Стамбуле',
+    title: 'Доступные Цены на Стоматологическое Лечение в Анталье',
     subtitle: 'Обретите Улыбку Своей Мечты в Master Smile Studio',
   },
 };

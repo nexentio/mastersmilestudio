@@ -1,8 +1,14 @@
 .sect20 {
   position: relative;
   width: 100%;
-  min-height: 100vh;
   height: 100vh;
+  height: 100dvh;
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding: 0 1.5rem;
+  padding-top: 100px;
+  margin-top: -100px;
+  box-sizing: border-box;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -138,14 +144,19 @@
   transform: translateX(4px);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 868px) {
   .sect20 {
-    height: 380px;
-    min-height: 340px;
+    height: 100vh;
+    height: 100dvh;
+    min-height: 100vh;
+    min-height: 100dvh;
+    padding: 0 1rem;
+    padding-top: 80px;
+    margin-top: -80px;
   }
 
   .text2 {
-    font-size: 1.75rem;
+    font-size: clamp(1.6rem, 5.5vw, 2.2rem);
     margin-bottom: 0.75rem;
   }
 

@@ -17,8 +17,8 @@ export async function generateMetadata({ params }: Props) {
   setRequestLocale(locale);
 
   return {
-    title: locale === 'tr' ? 'İstanbul Diş Tedavisi ve İmplant Fiyatları | Master Smile Studio' : 'Affordable Turkey Teeth Prices in Istanbul | Master Smile Studio',
-    description: locale === 'tr' ? 'Master Smile Studio şeffaf diş tedavi ve implant fiyatları.' : 'Affordable Turkey teeth prices in Istanbul at Master Smile Studio.',
+    title: locale === 'tr' ? 'Antalya Diş Tedavisi ve İmplant Fiyatları | Master Smile Studio' : 'Affordable Turkey Teeth Prices in Antalya | Master Smile Studio',
+    description: locale === 'tr' ? 'Master Smile Studio şeffaf diş tedavi ve implant fiyatları.' : 'Affordable Turkey teeth prices in Antalya at Master Smile Studio.',
   };
 }
 

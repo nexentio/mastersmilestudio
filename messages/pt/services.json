@@ -22,15 +22,42 @@
   "doctorTulayTitle": "Cirurgiã Bucomaxilofacial",
   "doctorAliKemalTitle": "Médico Dentista Especialista",
   "doctorAbdullahTitle": "Endodontia e Dentisteria Restauradora",
-  "smileDesign": { "title": "Design de Sorriso", "description": "Design digital de sorriso personalizado de acordo com a proporção áurea facial." },
-  "implant": { "title": "Implantes Dentários", "description": "Implantes de titânio biocompatíveis para uma sensação natural duradoura." },
-  "emax": { "title": "Facetas E-max", "description": "Laminados cerâmicos ultrafinos com máxima translucidez natural." },
-  "zirconia": { "title": "Coroas de Zircónia", "description": "Coroas sem metal com resistência excecional e estética impecável." },
-  "whitening": { "title": "Branqueamento Dentário", "description": "Branqueamento a laser clínico rápido, seguro e eficaz." },
-  "rootCanal": { "title": "Desvitalização", "description": "Preservação dentária indolor guiada por microscópio clínico." },
-  "dentures": { "title": "Próteses Dentárias", "description": "Próteses fixas e removíveis confortáveis com aparência natural." },
-  "bonding": { "title": "Bonding Composto", "description": "Restauração estética direta para dentes fraturados ou espaçados em 1 sessão." },
-  "orthodontics": { "title": "Ortodontia", "description": "Alinhadores transparentes e aparelhos estéticos para um alinhamento perfeito." },
+  "smileDesign": {
+    "title": "Design de Sorriso",
+    "description": "Design digital de sorriso personalizado de acordo com a proporção áurea facial."
+  },
+  "implant": {
+    "title": "Implantes Dentários",
+    "description": "Implantes de titânio biocompatíveis para uma sensação natural duradoura."
+  },
+  "emax": {
+    "title": "Facetas E-max",
+    "description": "Laminados cerâmicos ultrafinos com máxima translucidez natural."
+  },
+  "zirconia": {
+    "title": "Coroas de Zircónia",
+    "description": "Coroas sem metal com resistência excecional e estética impecável."
+  },
+  "whitening": {
+    "title": "Branqueamento Dentário",
+    "description": "Branqueamento a laser clínico rápido, seguro e eficaz."
+  },
+  "rootCanal": {
+    "title": "Desvitalização",
+    "description": "Preservação dentária indolor guiada por microscópio clínico."
+  },
+  "dentures": {
+    "title": "Próteses Dentárias",
+    "description": "Próteses fixas e removíveis confortáveis com aparência natural."
+  },
+  "bonding": {
+    "title": "Bonding Composto",
+    "description": "Restauração estética direta para dentes fraturados ou espaçados em 1 sessão."
+  },
+  "orthodontics": {
+    "title": "Ortodontia",
+    "description": "Alinhadores transparentes e aparelhos estéticos para um alinhamento perfeito."
+  },
   "items": {
     "smileDesign": {
       "title": "DESIGN DE SORRISO",
@@ -129,7 +156,7 @@
     }
   },
   "dentalImplantsIntro": {
-    "title": "Implantes Dentários em Istambul – Master Smile Studio Turquia",
+    "title": "Implantes Dentários em Antalya – Master Smile Studio Turquia",
     "whatIsTitle": "O que são implantes dentários?",
     "whatIsP1": "Um implante dentário é uma raiz artificial que substitui um dente perdido. Tem o formato de um pequeno parafuso de titânio fixado no osso maxilar. Para a reconstrução completa, são usadas três partes principais:",
     "part1Label": "Implante dentário (parafuso de titânio)",
@@ -138,8 +165,10 @@
     "part2Desc": "conecta o implante à coroa.",
     "part3Label": "Coroa dentária",
     "part3Desc": "a parte visível idêntica ao dente natural.",
-    "healingP": "Após a osteointegração do implante com o osso, a coroa é instalada. No Master Smile Studio em Istambul, nossa equipe cirúrgica oferece um procedimento de alta precisão e conforto.",
-    "solutionP": "Se você perdeu um ou mais dentes, os implantes dentários em Istambul são uma solução segura, duradoura e estética.",
-    "costHeading": "Preços e Custos de Implantes Dentários em Istambul, Turquia"
-  }
+    "healingP": "Após a osteointegração do implante com o osso, a coroa é instalada. No Master Smile Studio em Antalya, nossa equipe cirúrgica oferece um procedimento de alta precisão e conforto.",
+    "solutionP": "Se você perdeu um ou mais dentes, os implantes dentários em Antalya são uma solução segura, duradoura e estética.",
+    "costHeading": "Preços e Custos de Implantes Dentários em Antalya, Turquia"
+  },
+  "doctorFiratTitle": "Cirurgião Oral e Maxilofacial",
+  "doctorOzanTitle": "Especialista em Prótese e Estética"
 }

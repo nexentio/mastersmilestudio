@@ -17,6 +17,42 @@
   z-index: 2;
 }
 
+.brandSignatureWrap {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 3.5rem;
+  user-select: none;
+}
+
+.brandMaster {
+  font-family: 'Posterama Text Black', 'Posterama', sans-serif;
+  font-size: clamp(2.6rem, 5.8vw, 4.5rem);
+  font-weight: 900;
+  color: #000000;
+  letter-spacing: 0.28em;
+  margin-right: -0.28em;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  width: 100%;
+}
+
+.brandSubtitle {
+  font-family: 'Posterama Text Black', 'Posterama', var(--font-outfit), sans-serif;
+  font-size: clamp(0.72rem, 1.25vw, 1rem);
+  font-weight: 700;
+  color: #000000;
+  letter-spacing: 0.42em;
+  margin-right: -0.42em;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+}
+
 .navGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -177,6 +213,29 @@
   color: #64748b;
   padding-top: 1.5rem;
   border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.copyrightText {
+  font-family: var(--font-outfit), sans-serif;
+  color: #64748b;
+  font-size: 0.88rem;
+}
+
+.healthTurkiyeLogo {
+  height: 38px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+  opacity: 0.95;
+}
+
+.healthTurkiyeLogo:hover {
+  transform: translateY(-2px) scale(1.04);
+  opacity: 1;
 }
 
 .legalLinks {

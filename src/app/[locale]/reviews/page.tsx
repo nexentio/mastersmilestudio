@@ -18,12 +18,12 @@ export async function generateMetadata({ params }: Props) {
   return {
     title:
       locale === 'tr'
-        ? 'Hasta Yorumları | Master Smile Studio İstanbul'
-        : 'Master Smile Studio Reviews in Turkey, Istanbul',
+        ? 'Hasta Yorumları | Master Smile Studio Antalya'
+        : 'Master Smile Studio Reviews in Turkey, Antalya',
     description:
       locale === 'tr'
         ? 'Master Smile Studio doğrulanmış Google ve Trustpilot hasta yorumları ve deneyimleri.'
-        : 'Read verified patient reviews on Google & Trustpilot for dental treatments at Master Smile Studio in Istanbul.',
+        : 'Read verified patient reviews on Google & Trustpilot for dental treatments at Master Smile Studio in Antalya.',
   };
 }
 

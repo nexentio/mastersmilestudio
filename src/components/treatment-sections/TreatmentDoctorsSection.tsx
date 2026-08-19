@@ -23,32 +23,18 @@ const DOCTORS_I18N: Record<string, DoctorsSectionI18n> = {
     heading: 'OUR DENTISTS',
     doctors: [
       {
-        title: 'Dr. Dt.',
-        name: 'Onur Utku Yüksel',
-        role: 'Co-Founder & Oral Surgeon',
-        img: 'https://sohodent.com/doc/data1/Dr.Dt.-Onur-Utku-Yuksel.jpg',
-        href: '/team',
-      },
-      {
         title: 'Dt.',
-        name: 'Ufuk Ağdaşan',
-        role: 'Co-Founder & Aesthetic Dentist',
-        img: 'https://sohodent.com/doc/data1/Dt.Ufuk-Agdasan.jpg',
-        href: '/team',
+        name: 'Fırat İskender',
+        role: 'Oral & Maxillofacial Surgeon',
+        img: '/team/firat-iskender.webp',
+        href: '/about',
       },
       {
-        title: 'MSc. Dt.',
-        name: 'Hakkı Serdar Ünal',
-        role: 'Co-Founder & Prosthodontist',
-        img: 'https://sohodent.com/doc/data1/Dt.Hakki-Serdar-unal.jpg',
-        href: '/team',
-      },
-      {
-        title: 'Dt.',
-        name: 'Çağatay Çakır',
-        role: 'Dentist',
-        img: 'https://sohodent.com/doc/data1/cagatay-cakir.jpg',
-        href: '/team',
+        title: 'Dr.',
+        name: 'Ozan Öztürk',
+        role: 'Prosthodontist & Aesthetic Dentist',
+        img: '/team/ozan-ozturk.webp',
+        href: '/about',
       },
     ],
   },
@@ -56,32 +42,18 @@ const DOCTORS_I18N: Record<string, DoctorsSectionI18n> = {
     heading: 'UZMAN DOKTORLARIMIZ',
     doctors: [
       {
-        title: 'Dr. Dt.',
-        name: 'Onur Utku Yüksel',
-        role: 'Kurucu Ortak & Ağız, Diş ve Çene Cerrahisi Uzmanı',
-        img: 'https://sohodent.com/doc/data1/Dr.Dt.-Onur-Utku-Yuksel.jpg',
-        href: '/team',
-      },
-      {
         title: 'Dt.',
-        name: 'Ufuk Ağdaşan',
-        role: 'Kurucu Ortak & Estetik Diş Hekimi',
-        img: 'https://sohodent.com/doc/data1/Dt.Ufuk-Agdasan.jpg',
-        href: '/team',
+        name: 'Fırat İskender',
+        role: 'Çene Cerrahisi Uzmanı',
+        img: '/team/firat-iskender.webp',
+        href: '/about',
       },
       {
-        title: 'MSc. Dt.',
-        name: 'Hakkı Serdar Ünal',
-        role: 'Kurucu Ortak & Protetik Diş Tedavisi Uzmanı',
-        img: 'https://sohodent.com/doc/data1/Dt.Hakki-Serdar-unal.jpg',
-        href: '/team',
-      },
-      {
-        title: 'Dt.',
-        name: 'Çağatay Çakır',
-        role: 'Diş Hekimi',
-        img: 'https://sohodent.com/doc/data1/cagatay-cakir.jpg',
-        href: '/team',
+        title: 'Dr.',
+        name: 'Ozan Öztürk',
+        role: 'Protez Diş Uzmanı',
+        img: '/team/ozan-ozturk.webp',
+        href: '/about',
       },
     ],
   },
@@ -89,65 +61,37 @@ const DOCTORS_I18N: Record<string, DoctorsSectionI18n> = {
     heading: 'UNSERE ZAHNÄRZTE',
     doctors: [
       {
-        title: 'Dr. Dt.',
-        name: 'Onur Utku Yüksel',
-        role: 'Mitgründer & Mund-, Kiefer- und Gesichtschirurg',
-        img: 'https://sohodent.com/doc/data1/Dr.Dt.-Onur-Utku-Yuksel.jpg',
-        href: '/team',
-      },
-      {
         title: 'Dt.',
-        name: 'Ufuk Ağdaşan',
-        role: 'Mitgründer & Ästhetischer Zahnarzt',
-        img: 'https://sohodent.com/doc/data1/Dt.Ufuk-Agdasan.jpg',
-        href: '/team',
+        name: 'Fırat İskender',
+        role: 'Mund-, Kiefer- und Gesichtschirurg',
+        img: '/team/firat-iskender.webp',
+        href: '/about',
       },
       {
-        title: 'MSc. Dt.',
-        name: 'Hakkı Serdar Ünal',
-        role: 'Mitgründer & Fachzahnarzt für Prothetik',
-        img: 'https://sohodent.com/doc/data1/Dt.Hakki-Serdar-unal.jpg',
-        href: '/team',
-      },
-      {
-        title: 'Dt.',
-        name: 'Çağatay Çakır',
-        role: 'Zahnarzt',
-        img: 'https://sohodent.com/doc/data1/cagatay-cakir.jpg',
-        href: '/team',
+        title: 'Dr.',
+        name: 'Ozan Öztürk',
+        role: 'Spezialist für Prothetik und Ästhetische Zahnmedizin',
+        img: '/team/ozan-ozturk.webp',
+        href: '/about',
       },
     ],
   },
   pl: {
-    heading: 'NASI DENTYŚCI',
+    heading: 'NASI LEKARZE',
     doctors: [
       {
-        title: 'Dr. Dt.',
-        name: 'Onur Utku Yüksel',
-        role: 'Współzałożyciel i Chirurg Stomatologiczny',
-        img: 'https://sohodent.com/doc/data1/Dr.Dt.-Onur-Utku-Yuksel.jpg',
-        href: '/team',
+        title: 'Lek. stom.',
+        name: 'Fırat İskender',
+        role: 'Chirurg Szczękowo-Twarzowy',
+        img: '/team/firat-iskender.webp',
+        href: '/about',
       },
       {
-        title: 'Dt.',
-        name: 'Ufuk Ağdaşan',
-        role: 'Współzałożyciel i Stomatolog Estetyczny',
-        img: 'https://sohodent.com/doc/data1/Dt.Ufuk-Agdasan.jpg',
-        href: '/team',
-      },
-      {
-        title: 'MSc. Dt.',
-        name: 'Hakkı Serdar Ünal',
-        role: 'Współzałożyciel i Protetyk Stomatologiczny',
-        img: 'https://sohodent.com/doc/data1/Dt.Hakki-Serdar-unal.jpg',
-        href: '/team',
-      },
-      {
-        title: 'Dt.',
-        name: 'Çağatay Çakır',
-        role: 'Lekarz Stomatolog',
-        img: 'https://sohodent.com/doc/data1/cagatay-cakir.jpg',
-        href: '/team',
+        title: 'Dr n. med.',
+        name: 'Ozan Öztürk',
+        role: 'Protetyk i Lekarz Stomatologii Estetycznej',
+        img: '/team/ozan-ozturk.webp',
+        href: '/about',
       },
     ],
   },
@@ -155,32 +99,18 @@ const DOCTORS_I18N: Record<string, DoctorsSectionI18n> = {
     heading: 'NOSSOS DENTISTAS',
     doctors: [
       {
-        title: 'Dr. Dt.',
-        name: 'Onur Utku Yüksel',
-        role: 'Cofundador e Cirurgião Bucomaxilofacial',
-        img: 'https://sohodent.com/doc/data1/Dr.Dt.-Onur-Utku-Yuksel.jpg',
-        href: '/team',
-      },
-      {
         title: 'Dt.',
-        name: 'Ufuk Ağdaşan',
-        role: 'Cofundador e Dentista Estético',
-        img: 'https://sohodent.com/doc/data1/Dt.Ufuk-Agdasan.jpg',
-        href: '/team',
+        name: 'Fırat İskender',
+        role: 'Cirurgião Oral e Maxilofacial',
+        img: '/team/firat-iskender.webp',
+        href: '/about',
       },
       {
-        title: 'MSc. Dt.',
-        name: 'Hakkı Serdar Ünal',
-        role: 'Cofundador e Especialista em Prótese Dentária',
-        img: 'https://sohodent.com/doc/data1/Dt.Hakki-Serdar-unal.jpg',
-        href: '/team',
-      },
-      {
-        title: 'Dt.',
-        name: 'Çağatay Çakır',
-        role: 'Cirurgião Dentista',
-        img: 'https://sohodent.com/doc/data1/cagatay-cakir.jpg',
-        href: '/team',
+        title: 'Dr.',
+        name: 'Ozan Öztürk',
+        role: 'Especialista em Prótese e Estética Dentária',
+        img: '/team/ozan-ozturk.webp',
+        href: '/about',
       },
     ],
   },
@@ -188,65 +118,37 @@ const DOCTORS_I18N: Record<string, DoctorsSectionI18n> = {
     heading: 'NUESTROS DENTISTAS',
     doctors: [
       {
-        title: 'Dr. Dt.',
-        name: 'Onur Utku Yüksel',
-        role: 'Cofundador y Cirujano Oral y Maxilofacial',
-        img: 'https://sohodent.com/doc/data1/Dr.Dt.-Onur-Utku-Yuksel.jpg',
-        href: '/team',
-      },
-      {
         title: 'Dt.',
-        name: 'Ufuk Ağdaşan',
-        role: 'Cofundador y Odontólogo Estético',
-        img: 'https://sohodent.com/doc/data1/Dt.Ufuk-Agdasan.jpg',
-        href: '/team',
+        name: 'Fırat İskender',
+        role: 'Cirujano Maxilofacial',
+        img: '/team/firat-iskender.webp',
+        href: '/about',
       },
       {
-        title: 'MSc. Dt.',
-        name: 'Hakkı Serdar Ünal',
-        role: 'Cofundador y Especialista en Prótesis Dental',
-        img: 'https://sohodent.com/doc/data1/Dt.Hakki-Serdar-unal.jpg',
-        href: '/team',
-      },
-      {
-        title: 'Dt.',
-        name: 'Çağatay Çakır',
-        role: 'Odontólogo',
-        img: 'https://sohodent.com/doc/data1/cagatay-cakir.jpg',
-        href: '/team',
+        title: 'Dr.',
+        name: 'Ozan Öztürk',
+        role: 'Especialista en Prótesis y Estética Dental',
+        img: '/team/ozan-ozturk.webp',
+        href: '/about',
       },
     ],
   },
   ru: {
-    heading: 'НАШИ ВРАЧИ-СТОМАТОЛОГИ',
+    heading: 'НАШИ ВРАЧИ',
     doctors: [
       {
+        title: 'Врач',
+        name: 'Fırat İskender',
+        role: 'Челюстно-лицевой хирург и имплантолог',
+        img: '/team/firat-iskender.webp',
+        href: '/about',
+      },
+      {
         title: 'Д-р',
-        name: 'Онур Утку Юксель',
-        role: 'Сооснователь и Челюстно-лицевой хирург',
-        img: 'https://sohodent.com/doc/data1/Dr.Dt.-Onur-Utku-Yuksel.jpg',
-        href: '/team',
-      },
-      {
-        title: 'Врач',
-        name: 'Уфук Агдашан',
-        role: 'Сооснователь и Эстетический стоматолог',
-        img: 'https://sohodent.com/doc/data1/Dt.Ufuk-Agdasan.jpg',
-        href: '/team',
-      },
-      {
-        title: 'Магистр',
-        name: 'Хаккы Сердар Юнал',
-        role: 'Сооснователь и Стоматолог-ортопед',
-        img: 'https://sohodent.com/doc/data1/Dt.Hakki-Serdar-unal.jpg',
-        href: '/team',
-      },
-      {
-        title: 'Врач',
-        name: 'Чагатай Чакыр',
-        role: 'Врач-стоматолог',
-        img: 'https://sohodent.com/doc/data1/cagatay-cakir.jpg',
-        href: '/team',
+        name: 'Ozan Öztürk',
+        role: 'Врач-ортопед и эстетический стоматолог',
+        img: '/team/ozan-ozturk.webp',
+        href: '/about',
       },
     ],
   },
@@ -267,111 +169,87 @@ export default function TreatmentDoctorsSection() {
 
   return (
     <section aria-labelledby="section-doctors-title" className={styles.wrapper}>
-      <div className="treatment-container">
+      <div className={styles.container}>
         <h2 id="section-doctors-title" className={styles.heading}>
-          <span>{current.heading}</span>
+          {current.heading}
         </h2>
 
-        {/* Desktop 4-Column Grid */}
+        {/* Desktop 2-Card Grid */}
         <div className={styles.desktopGrid}>
           {current.doctors.map((doc, idx) => (
-            <article key={idx} className={styles.card} itemScope itemType="https://schema.org/Physician">
-              <Link
-                href={doc.href}
-                className={styles.linkWrapper}
-                aria-label={`View doctor profile for ${doc.title} ${doc.name}`}
-              >
+            <Link key={idx} href={doc.href} className={styles.linkWrapper}>
+              <div className={styles.card}>
                 <div className={styles.imgWrap}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src={doc.img}
                     alt={`${doc.title} ${doc.name}`}
                     loading="lazy"
-                    itemProp="image"
                   />
                 </div>
-
                 <div className={styles.info}>
-                  <span className={styles.badge}>
-                    {doc.title}
-                  </span>
-                  <h3 className={styles.name} itemProp="name">
-                    {doc.name}
-                  </h3>
-                  <span className={styles.specialty} itemProp="jobTitle">
-                    {doc.role}
-                  </span>
+                  <span className={styles.badge}>{doc.title}</span>
+                  <strong className={styles.name}>{doc.name}</strong>
+                  <span className={styles.specialty}>{doc.role}</span>
                 </div>
-              </Link>
-            </article>
+              </div>
+            </Link>
           ))}
         </div>
 
-        {/* Mobile Single Doctor Card Carousel with Right/Left Navigation Arrow */}
+        {/* Mobile Single Slide Carousel */}
         <div className={styles.mobileSlider}>
-          <div className={styles.mobileCardWrapper}>
+          <div className={styles.carouselTrack}>
             {(() => {
               const doc = current.doctors[activeDoctorIdx];
+              if (!doc) return null;
               return (
-                <article className={styles.card} itemScope itemType="https://schema.org/Physician">
-                  <Link
-                    href={doc.href}
-                    className={styles.linkWrapper}
-                    aria-label={`View doctor profile for ${doc.title} ${doc.name}`}
-                  >
+                <Link href={doc.href} className={styles.linkWrapper}>
+                  <div className={styles.card}>
                     <div className={styles.imgWrap}>
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img
                         src={doc.img}
                         alt={`${doc.title} ${doc.name}`}
                         loading="lazy"
-                        itemProp="image"
                       />
                     </div>
-
                     <div className={styles.info}>
-                      <span className={styles.badge}>
-                        {doc.title}
-                      </span>
-                      <h3 className={styles.name} itemProp="name">
-                        {doc.name}
-                      </h3>
-                      <span className={styles.specialty} itemProp="jobTitle">
-                        {doc.role}
-                      </span>
+                      <span className={styles.badge}>{doc.title}</span>
+                      <strong className={styles.name}>{doc.name}</strong>
+                      <span className={styles.specialty}>{doc.role}</span>
                     </div>
-                  </Link>
-                </article>
+                  </div>
+                </Link>
               );
             })()}
           </div>
 
-          {/* Mobile Navigation Row with Arrows & Dots */}
-          <div className={styles.mobileNavRow}>
+          <div className={styles.controls}>
             <button
               type="button"
               onClick={handlePrev}
-              className={styles.arrowBtn}
-              aria-label="Previous doctor"
+              className={styles.navBtn}
+              aria-label="Previous Doctor"
             >
               ‹
             </button>
-
-            <div className={styles.mobileDots}>
+            <div className={styles.dots}>
               {current.doctors.map((_, dotIdx) => (
                 <button
                   key={dotIdx}
                   type="button"
                   onClick={() => setActiveDoctorIdx(dotIdx)}
-                  aria-label={`Doctor slide ${dotIdx + 1}`}
-                  className={`${styles.dot} ${activeDoctorIdx === dotIdx ? styles.dotActive : styles.dotInactive}`}
+                  className={`${styles.dot} ${activeDoctorIdx === dotIdx ? styles.dotActive : ''}`}
+                  aria-label={`Go to doctor ${dotIdx + 1}`}
                 />
               ))}
             </div>
-
             <button
               type="button"
               onClick={handleNext}
-              className={`${styles.arrowBtn} ${styles.arrowBtnNext}`}
-              aria-label="Next doctor"
+              className={styles.navBtn}
+              aria-label="Next Doctor"
             >
               ›
             </button>

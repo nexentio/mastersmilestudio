@@ -13,31 +13,31 @@ interface ReviewsHeroBannerProps {
 
 const REVIEWS_HERO_DATA: Record<string, { title: string; subtitle: string }> = {
   en: {
-    title: 'Master Smile Studio Reviews in Turkey, Istanbul',
+    title: 'Master Smile Studio Reviews in Turkey, Antalya',
     subtitle: 'Verified Patient Reviews on Google & Trustpilot for Implants, Veneers, Crowns, and Dentures',
   },
   tr: {
-    title: 'Master Smile Studio Hasta Yorumları | İstanbul, Türkiye',
+    title: 'Master Smile Studio Hasta Yorumları | Antalya, Türkiye',
     subtitle: 'İmplant, Zirkonyum Kaplama, Lamine ve Protez Tedavileri İçin Doğrulanmış Google & Trustpilot Yorumları',
   },
   de: {
-    title: 'Master Smile Studio Bewertungen in der Türkei, Istanbul',
+    title: 'Master Smile Studio Bewertungen in der Türkei, Antalya',
     subtitle: 'Verifizierte Patientenbewertungen auf Google & Trustpilot für Implantate, Veneers, Kronen und Zahnersatz',
   },
   pl: {
-    title: 'Opinie o Master Smile Studio w Turcji, Stambuł',
+    title: 'Opinie o Master Smile Studio w Turcji, Antalya',
     subtitle: 'Zweryfikowane opinie pacjentów na Google i Trustpilot dotyczące implantów, licówek, koron i protez',
   },
   pt: {
-    title: 'Avaliações do Master Smile Studio na Turquia, Istambul',
+    title: 'Avaliações do Master Smile Studio na Turquia, Antalya',
     subtitle: 'Avaliações verificadas de pacientes no Google e Trustpilot para implantes, facetas, coroas e próteses',
   },
   es: {
-    title: 'Opiniones de Master Smile Studio en Turquía, Estambul',
+    title: 'Opiniones de Master Smile Studio en Turquía, Antalya',
     subtitle: 'Opiniones verificadas de pacientes en Google y Trustpilot para implantes, carillas, coronas y dentaduras',
   },
   ru: {
-    title: 'Отзывы о Master Smile Studio в Турции, Стамбул',
+    title: 'Отзывы о Master Smile Studio в Турции, Анталья',
     subtitle: 'Проверенные отзывы пациентов на Google и Trustpilot об имплантах, винирах, коронках и протезах',
   },
 };

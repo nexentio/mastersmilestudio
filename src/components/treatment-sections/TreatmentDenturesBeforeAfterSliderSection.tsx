@@ -26,7 +26,7 @@ interface LocalizedText {
 const DENTURES_I18N_DATA: Record<string, LocalizedText> = {
   en: {
     heading: 'Restoring Complete Smiles & Confident Chewing',
-    desc: 'Real patient transformations with custom Snap-On implant overdentures and precision complete dentures at Master Smile Studio Istanbul.',
+    desc: 'Real patient transformations with custom Snap-On implant overdentures and precision complete dentures at Master Smile Studio Antalya.',
     viewGallery: 'View Full Denture Gallery →',
     cases: [
       {
@@ -49,7 +49,7 @@ const DENTURES_I18N_DATA: Record<string, LocalizedText> = {
   },
   tr: {
     heading: 'Oynamayan Damaklar ve Yeniden Güçlü Çiğneme',
-    desc: 'Master Smile Studio İstanbul’da implant destekli çıtçıtlı protezler ve hassas tutuculu damaklarla tamamlanan gerçek hasta dönüşümleri.',
+    desc: 'Master Smile Studio Antalya’da implant destekli çıtçıtlı protezler ve hassas tutuculu damaklarla tamamlanan gerçek hasta dönüşümleri.',
     viewGallery: 'Tüm Protez Galerisini İncele →',
     cases: [
       {
@@ -72,7 +72,7 @@ const DENTURES_I18N_DATA: Record<string, LocalizedText> = {
   },
   de: {
     heading: 'Fester Halt und wieder kraftvolles Kauen',
-    desc: 'Echte Patiententransformationen mit implantatgetragenen Druckknopf-Prothesen und Vollprothesen bei Master Smile Studio Istanbul.',
+    desc: 'Echte Patiententransformationen mit implantatgetragenen Druckknopf-Prothesen und Vollprothesen bei Master Smile Studio Antalya.',
     viewGallery: 'Vollständige Prothesen-Galerie ansehen →',
     cases: [
       {
@@ -95,7 +95,7 @@ const DENTURES_I18N_DATA: Record<string, LocalizedText> = {
   },
   pl: {
     heading: 'Maksymalna stabilność i pewne żucie każdego dnia',
-    desc: 'Metamorfozy pacjentów z użyciem protez na zatrzaskach (Overdentures) i protez całkowitych w Master Smile Studio Stambuł.',
+    desc: 'Metamorfozy pacjentów z użyciem protez na zatrzaskach (Overdentures) i protez całkowitych w Master Smile Studio Antalya.',
     viewGallery: 'Zobacz całą galerię protez →',
     cases: [
       {
@@ -118,7 +118,7 @@ const DENTURES_I18N_DATA: Record<string, LocalizedText> = {
   },
   pt: {
     heading: 'Estabilidade absoluta e segurança ao sorrir',
-    desc: 'Transformações reais com overdentures tipo clique sobre implantes e próteses totais na Master Smile Studio Istambul.',
+    desc: 'Transformações reais com overdentures tipo clique sobre implantes e próteses totais na Master Smile Studio Antalya.',
     viewGallery: 'Ver galeria completa de próteses →',
     cases: [
       {
@@ -141,7 +141,7 @@ const DENTURES_I18N_DATA: Record<string, LocalizedText> = {
   },
   es: {
     heading: 'Máxima fijación y seguridad total al masticar',
-    desc: 'Transformaciones de pacientes con sobredentaduras sobre implantes y dentaduras completas en Master Smile Studio Estambul.',
+    desc: 'Transformaciones de pacientes con sobredentaduras sobre implantes y dentaduras completas en Master Smile Studio Antalya.',
     viewGallery: 'Ver galería completa de prótesis →',
     cases: [
       {
@@ -188,10 +188,10 @@ const DENTURES_I18N_DATA: Record<string, LocalizedText> = {
 };
 
 const DENTURE_CASE_IMAGES = [
-  'https://sohodent.com/doc/data1/full-mouth-implant-copy.webp',
-  'https://sohodent.com/doc/data1/zirconium-implant-copy.webp',
-  'https://sohodent.com/doc/data1/porcelain-laminate-copy.webp',
-  'https://sohodent.com/doc/data1/lumineer-copy.webp',
+  '/treatments/accordion/full-mouth-implant.webp',
+  '/treatments/accordion/zirconium-implant-copy.webp',
+  '/treatments/accordion/porcelain-laminate-copy.webp',
+  '/treatments/accordion/lumineers.webp',
 ];
 
 export default function TreatmentDenturesBeforeAfterSliderSection() {

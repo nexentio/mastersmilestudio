@@ -14,31 +14,31 @@ interface PackagesHeroBannerProps {
 const PACKAGES_HERO_DATA: Record<string, { title: string; subtitle: string }> = {
   en: {
     title: 'Turkey Teeth Packages | Dental Packages in Turkey',
-    subtitle: 'Master Smile Studio in Istanbul offers premium Turkey teeth packages and dental treatments for your perfect smile',
+    subtitle: 'Master Smile Studio in Antalya offers premium Turkey teeth packages and dental treatments for your perfect smile',
   },
   tr: {
-    title: 'Türkiye Diş Tedavi Paketleri | İstanbul VIP Diş Paketleri',
+    title: 'Türkiye Diş Tedavi Paketleri | Antalya VIP Diş Paketleri',
     subtitle: 'Master Smile Studio ile kusursuz bir gülüş için her şey dahil VIP diş turizmi ve tedavi paketleri',
   },
   de: {
-    title: 'Zahnbehandlungspakete in der Türkei | Zahn-Pakete in Istanbul',
-    subtitle: 'Master Smile Studio in Istanbul bietet erstklassige All-Inclusive-Zahnpakete für Ihr perfektes Lächeln',
+    title: 'Zahnbehandlungspakete in der Türkei | Zahn-Pakete in Antalya',
+    subtitle: 'Master Smile Studio in Antalya bietet erstklassige All-Inclusive-Zahnpakete für Ihr perfektes Lächeln',
   },
   pl: {
-    title: 'Pakiety Stomatologiczne w Turcji | Pakiety Dentystyczne w Stambule',
-    subtitle: 'Master Smile Studio w Stambule oferuje pakiety stomatologiczne premium dla Twojego idealnego uśmiechu',
+    title: 'Pakiety Stomatologiczne w Turcji | Pakiety Dentystyczne w Antalyi',
+    subtitle: 'Master Smile Studio w Antalyi oferuje pakiety stomatologiczne premium dla Twojego idealnego uśmiechu',
   },
   pt: {
-    title: 'Pacotes Dentários na Turquia | Pacotes de Tratamento em Istambul',
-    subtitle: 'O Master Smile Studio em Istambul oferece pacotes dentários premium para o seu sorriso perfeito',
+    title: 'Pacotes Dentários na Turquia | Pacotes de Tratamento em Antalya',
+    subtitle: 'O Master Smile Studio em Antalya oferece pacotes dentários premium para o seu sorriso perfeito',
   },
   es: {
-    title: 'Paquetes Dentales en Turquía | Paquetes de Tratamientos en Estambul',
-    subtitle: 'Master Smile Studio en Estambul ofrece paquetes dentales premium para su sonrisa perfecta',
+    title: 'Paquetes Dentales en Turquía | Paquetes de Tratamientos en Antalya',
+    subtitle: 'Master Smile Studio en Antalya ofrece paquetes dentales premium para su sonrisa perfecta',
   },
   ru: {
-    title: 'Пакеты стоматологического лечения в Турции | VIP пакеты в Стамбуле',
-    subtitle: 'Master Smile Studio в Стамбуле предлагает премиальные пакеты стоматологического лечения «все включено»',
+    title: 'Пакеты стоматологического лечения в Турции | VIP пакеты в Анталье',
+    subtitle: 'Master Smile Studio в Анталье предлагает премиальные пакеты стоматологического лечения «все включено»',
   },
 };
 

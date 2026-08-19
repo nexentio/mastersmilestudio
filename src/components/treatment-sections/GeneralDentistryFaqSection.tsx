@@ -37,7 +37,7 @@ const FAQ_I18N: Record<string, FaqDictionary> = {
         id: 'faq-2',
         q: 'Will you help me with accommodation?',
         a: [
-          'Yes, of course. Our patients regularly travel from abroad, so we make sure you feel supported not only with your dental treatment but also with your stay in Istanbul. We can recommend trusted hotels close to our clinic, and if you prefer, we can also help arrange your booking.',
+          'Yes, of course. Our patients regularly travel from abroad, so we make sure you feel supported not only with your dental treatment but also with your stay in Antalya. We can recommend trusted hotels close to our clinic, and if you prefer, we can also help arrange your booking.',
           'Our goal is to make your trip as smooth and stress-free as possible, so you can focus on your treatment and enjoy your time in the city. We’ll gladly assist you with accommodation and make sure you have comfortable options during your visit.',
         ],
       },
@@ -45,7 +45,7 @@ const FAQ_I18N: Record<string, FaqDictionary> = {
         id: 'faq-3',
         q: 'Is it safe to travel to Turkey?',
         a: [
-          'Yes! Turkey is a very popular destination for international visitors and millions of tourists travel here safely every year. Cities like Istanbul are not only cultural and historical centers but also well-prepared to welcome patients from abroad with modern clinics, hotels, and transport services and many world-renowned touristic attractions.',
+          'Yes! Turkey is a very popular destination for international visitors and millions of tourists travel here safely every year. Cities like Antalya are not only cultural and historical centers but also well-prepared to welcome patients from abroad with modern clinics, hotels, and transport services and many world-renowned touristic attractions.',
           'Like in any big city, it’s always wise to take normal travel precautions — such as keeping your valuables safe and being aware of your surroundings. Our clinic also helps arrange trusted transportation and accommodation options to make sure you feel comfortable and secure during your stay. With the extra support we provide, your dental trip can also be a smooth and worry-free experience.',
         ],
       },
@@ -227,7 +227,7 @@ const FAQ_I18N: Record<string, FaqDictionary> = {
     items: [
       {
         id: 'faq-1',
-        q: 'İstanbul’a geldiğimde bana verilen tedavi planı veya fiyat değişir mi?',
+        q: 'Antalya’ya geldiğimde bana verilen tedavi planı veya fiyat değişir mi?',
         a: [
           'Harika bir soru. Ne yazık ki, sağlık turizmi için seyahat eden birçok hasta, sonradan çıkarılan sürpriz ücretlerle karşılaşmaktadır.',
           'Sizinle paylaştığımız plan ve fiyat; seyahatiniz öncesinde bize ilettiğiniz fotoğraflar, panoramik röntgenler ve beklentileriniz doğrultusunda titizlikle hazırlanır. Geldiğinizde, tedaviye başlamadan önce klinik muayeneyle tüm detayları teyit ederiz.',
@@ -240,7 +240,7 @@ const FAQ_I18N: Record<string, FaqDictionary> = {
         id: 'faq-2',
         q: 'Konaklama konusunda yardımcı oluyor musunuz?',
         a: [
-          'Evet, elbette. Uluslararası hastalarımızın büyük bir kısmı yurt dışından geldiği için sadece diş tedavinizde değil, İstanbul’daki konaklamanızda da tam destek sağlıyoruz. Kliniğimize yakın anlaşmalı 4 ve 5 yıldızlı otelleri rezerve edebiliyoruz.',
+          'Evet, elbette. Uluslararası hastalarımızın büyük bir kısmı yurt dışından geldiği için sadece diş tedavinizde değil, Antalya’daki konaklamanızda da tam destek sağlıyoruz. Kliniğimize yakın anlaşmalı 4 ve 5 yıldızlı otelleri rezerve edebiliyoruz.',
           'Amacımız seyahatinizi tamamen konforlu ve stressiz hale getirmektir.',
         ],
       },
@@ -248,7 +248,7 @@ const FAQ_I18N: Record<string, FaqDictionary> = {
         id: 'faq-3',
         q: 'Türkiye’ye seyahat etmek güvenli mi?',
         a: [
-          'Evet! Türkiye her yıl milyonlarca turistin güvenle ziyaret ettiği dünyanın en popüler destinasyonlarından biridir. İstanbul, modern klinikleri, lüks otelleri ve gelişmiş ulaşım ağıyla sağlık turistlerini en yüksek standartlarda ağırlar.',
+          'Evet! Türkiye her yıl milyonlarca turistin güvenle ziyaret ettiği dünyanın en popüler destinasyonlarından biridir. Antalya, modern klinikleri, lüks otelleri ve gelişmiş ulaşım ağıyla sağlık turistlerini en yüksek standartlarda ağırlar.',
           'Kliniğimiz ayrıca özel VIP transfer ve konaklama hizmetleri organize ederek tüm seyahatinizi güvenli ve konforlu kılar.',
         ],
       },
@@ -399,7 +399,7 @@ const FAQ_I18N: Record<string, FaqDictionary> = {
   de: {
     title: 'Häufig gestellte Fragen zu dieser Behandlung',
     subtitle:
-      'Haben Sie Fragen zu Ihrer Zahnbehandlung in Istanbul? Wir bieten Ihnen klare, transparente und fachlich fundierte Antworten für jeden Schritt.',
+      'Haben Sie Fragen zu Ihrer Zahnbehandlung in Antalya? Wir bieten Ihnen klare, transparente und fachlich fundierte Antworten für jeden Schritt.',
     items: [
       {
         id: 'faq-1',
@@ -420,7 +420,7 @@ const FAQ_I18N: Record<string, FaqDictionary> = {
         id: 'faq-3',
         q: 'Ist es sicher, für eine Zahnbehandlung in die Türkei zu reisen?',
         a: [
-          'Ja! Istanbul ist ein weltweites Zentrum des Medizintourismus mit modernsten Kliniken, höchsten Hygienestandards und internationaler Betreuung.',
+          'Ja! Antalya ist ein weltweites Zentrum des Medizintourismus mit modernsten Kliniken, höchsten Hygienestandards und internationaler Betreuung.',
         ],
       },
       {
@@ -568,7 +568,7 @@ const FAQ_I18N: Record<string, FaqDictionary> = {
   pl: {
     title: 'Najczęściej zadawane pytania dotyczące tego leczenia',
     subtitle:
-      'Masz pytania dotyczące leczenia stomatologicznego w Stambule? Odpowiadamy na wszystkie kwestie dotyczące kosztów, przebiegu i rekonwalescencji.',
+      'Masz pytania dotyczące leczenia stomatologicznego w Antalyi? Odpowiadamy na wszystkie kwestie dotyczące kosztów, przebiegu i rekonwalescencji.',
     items: [
       {
         id: 'faq-1',
@@ -588,7 +588,7 @@ const FAQ_I18N: Record<string, FaqDictionary> = {
         id: 'faq-3',
         q: 'Czy podróż do Turcji na leczenie jest bezpieczna?',
         a: [
-          'Tak, Stambuł to renomowane europejskie centrum turystyki medycznej o najwyższych standardach bezpieczeństwa.',
+          'Tak, Antalya to renomowane europejskie centrum turystyki medycznej o najwyższych standardach bezpieczeństwa.',
         ],
       },
       {
@@ -736,7 +736,7 @@ const FAQ_I18N: Record<string, FaqDictionary> = {
   pt: {
     title: 'Perguntas Frequentes Sobre Este Tratamento',
     subtitle:
-      'Tem dúvidas sobre o seu tratamento dentário em Istambul? Respondemos de forma clara e transparente a todas as suas questões.',
+      'Tem dúvidas sobre o seu tratamento dentário em Antalya? Respondemos de forma clara e transparente a todas as suas questões.',
     items: [
       {
         id: 'faq-1',
@@ -756,7 +756,7 @@ const FAQ_I18N: Record<string, FaqDictionary> = {
         id: 'faq-3',
         q: 'É seguro viajar para a Turquia para tratamento dentário?',
         a: [
-          'Sim, Istambul é um dos principais destinos mundiais com infraestruturas hospitalares de topo.',
+          'Sim, Antalya é um dos principais destinos mundiais com infraestruturas hospitalares de topo.',
         ],
       },
       {
@@ -904,7 +904,7 @@ const FAQ_I18N: Record<string, FaqDictionary> = {
   es: {
     title: 'Preguntas Frecuentes Sobre Este Tratamiento',
     subtitle:
-      '¿Tiene dudas sobre su tratamiento dental en Estambul? Le ofrecemos respuestas claras y asesoramiento experto en cada paso.',
+      '¿Tiene dudas sobre su tratamiento dental en Antalya? Le ofrecemos respuestas claras y asesoramiento experto en cada paso.',
     items: [
       {
         id: 'faq-1',
@@ -924,7 +924,7 @@ const FAQ_I18N: Record<string, FaqDictionary> = {
         id: 'faq-3',
         q: '¿Es seguro viajar a Turquía para un tratamiento dental?',
         a: [
-          'Totalmente. Estambul es un referente mundial de turismo médico con estándares de primer nivel.',
+          'Totalmente. Antalya es un referente mundial de turismo médico con estándares de primer nivel.',
         ],
       },
       {
@@ -1072,11 +1072,11 @@ const FAQ_I18N: Record<string, FaqDictionary> = {
   ru: {
     title: 'Часто задаваемые вопросы о процедуре',
     subtitle:
-      'У вас есть вопросы о стоматологическом лечении в Стамбуле? Мы предоставим исчерпывающие ответы и профессиональную поддержку на каждом этапе.',
+      'У вас есть вопросы о стоматологическом лечении в Анталье? Мы предоставим исчерпывающие ответы и профессиональную поддержку на каждом этапе.',
     items: [
       {
         id: 'faq-1',
-        q: 'Изменится ли мой план лечения или цена по прибытии в Стамбул?',
+        q: 'Изменится ли мой план лечения или цена по прибытии в Анталью?',
         a: [
           'План и стоимость, составленные по вашим снимкам, остаются неизменными и прозрачными без скрытых платежей.',
         ],
@@ -1092,7 +1092,7 @@ const FAQ_I18N: Record<string, FaqDictionary> = {
         id: 'faq-3',
         q: 'Безопасно ли приезжать в Турцию на лечение?',
         a: [
-          'Да, Стамбул — мировой центр медицинского туризма с высочайшими международными стандартами.',
+          'Да, Анталья — мировой центр медицинского туризма с высочайшими международными стандартами.',
         ],
       },
       {

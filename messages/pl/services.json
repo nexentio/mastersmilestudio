@@ -22,15 +22,42 @@
   "doctorTulayTitle": "Chirurg Szczękowo-Twarzowy",
   "doctorAliKemalTitle": "Lekarz Stomatolog Specjalista",
   "doctorAbdullahTitle": "Endodoncja i Stomatologia Odtwórcza",
-  "smileDesign": { "title": "Projektowanie Uśmiechu", "description": "Cyfrowy projekt uśmiechu dopasowany do złotej proporcji twarzy." },
-  "implant": { "title": "Implanty Stomatologiczne", "description": "Biokompatybilne implanty tytanowe zapewniające naturalny komfort na całe życie." },
-  "emax": { "title": "Licówki E-max", "description": "Ultra cienkie licówki porcelanowe o maksymalnej przezierności światła." },
-  "zirconia": { "title": "Korony Cyrkonowe", "description": "Bezmetalowe korony o wyjątkowej trwałości i naturalnej estetyce." },
-  "whitening": { "title": "Wybielanie Zębów", "description": "Bezpieczne kliniczne wybielanie laserowe w krótkim czasie." },
-  "rootCanal": { "title": "Leczenie Kanałowe", "description": "Bezbolesne ratowanie zębów pod mikroskopem." },
-  "dentures": { "title": "Protezy Zębowe", "description": "Wygodne protezy stałe i ruchome o naturalnym wyglądzie." },
-  "bonding": { "title": "Bonding Kompozytowy", "description": "Estetyczna odbudowa wyszczerbionych lub rozstawionych zębów podczas jednej wizyty." },
-  "orthodontics": { "title": "Ortodoncja", "description": "Niewidoczne nakładki i estetyczne aparaty dla idealnie prostych zębów." },
+  "smileDesign": {
+    "title": "Projektowanie Uśmiechu",
+    "description": "Cyfrowy projekt uśmiechu dopasowany do złotej proporcji twarzy."
+  },
+  "implant": {
+    "title": "Implanty Stomatologiczne",
+    "description": "Biokompatybilne implanty tytanowe zapewniające naturalny komfort na całe życie."
+  },
+  "emax": {
+    "title": "Licówki E-max",
+    "description": "Ultra cienkie licówki porcelanowe o maksymalnej przezierności światła."
+  },
+  "zirconia": {
+    "title": "Korony Cyrkonowe",
+    "description": "Bezmetalowe korony o wyjątkowej trwałości i naturalnej estetyce."
+  },
+  "whitening": {
+    "title": "Wybielanie Zębów",
+    "description": "Bezpieczne kliniczne wybielanie laserowe w krótkim czasie."
+  },
+  "rootCanal": {
+    "title": "Leczenie Kanałowe",
+    "description": "Bezbolesne ratowanie zębów pod mikroskopem."
+  },
+  "dentures": {
+    "title": "Protezy Zębowe",
+    "description": "Wygodne protezy stałe i ruchome o naturalnym wyglądzie."
+  },
+  "bonding": {
+    "title": "Bonding Kompozytowy",
+    "description": "Estetyczna odbudowa wyszczerbionych lub rozstawionych zębów podczas jednej wizyty."
+  },
+  "orthodontics": {
+    "title": "Ortodoncja",
+    "description": "Niewidoczne nakładki i estetyczne aparaty dla idealnie prostych zębów."
+  },
   "items": {
     "smileDesign": {
       "title": "PROJEKTOWANIE UŚMIECHU",
@@ -129,7 +156,7 @@
     }
   },
   "dentalImplantsIntro": {
-    "title": "Implanty zębowe w Stambule – Master Smile Studio Turcja",
+    "title": "Implanty zębowe w Antalyi – Master Smile Studio Turcja",
     "whatIsTitle": "Czym są implanty zębowe?",
     "whatIsP1": "Implant zębowy to sztuczny korzeń zęba, który zastępuje brakujący ząb. Wygląda jak mała śruba, zwykle wykonana z tytanu, i jest wprowadzany do kości szczęki. Do pełnej odbudowy zęba stosuje się trzy główne elementy:",
     "part1Label": "Implant zębowy (śruba tytanowa)",
@@ -138,8 +165,10 @@
     "part2Desc": "łączy implant z koroną.",
     "part3Label": "Korona (widoczny ząb)",
     "part3Desc": "widoczna część wyglądająca jak naturalny ząb.",
-    "healingP": "Gdy implant zrośnie się z kością (osteointegracja), zakładana jest korona. W Master Smile Studio w Stambule nasz zespół chirurgów stomatologicznych zapewnia bezbolesny i bezpieczny zabieg.",
-    "solutionP": "Jeśli brakuje Ci jednego lub więcej zębów, implanty zębowe w Stambule są trwałym, bezpiecznym i estetycznym rozwiązaniem.",
-    "costHeading": "Implanty zębowe – Koszt i Ceny w Stambule, Turcja"
-  }
+    "healingP": "Gdy implant zrośnie się z kością (osteointegracja), zakładana jest korona. W Master Smile Studio w Antalyi nasz zespół chirurgów stomatologicznych zapewnia bezbolesny i bezpieczny zabieg.",
+    "solutionP": "Jeśli brakuje Ci jednego lub więcej zębów, implanty zębowe w Antalyi są trwałym, bezpiecznym i estetycznym rozwiązaniem.",
+    "costHeading": "Implanty zębowe – Koszt i Ceny w Antalyi, Turcja"
+  },
+  "doctorFiratTitle": "Chirurg Szczękowo-Twarzowy",
+  "doctorOzanTitle": "Protetyk i Stomatolog Estetyczny"
 }

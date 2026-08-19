@@ -147,10 +147,10 @@ interface DetailDictionary {
 const DICTIONARIES: Record<string, DetailDictionary> = {
   "en": {
     "introBadge": "ZYGOMATIC & PTERYGOID CHEEKBONE RESCUE PROTOCOL",
-    "introTitle": "What Are Zygomatic (Cheekbone) Implants? | Master Smile Studio, Istanbul, Turkey",
+    "introTitle": "What Are Zygomatic (Cheekbone) Implants? | Master Smile Studio, Antalya, Turkey",
     "introLead": "Zygomatic (Cheekbone) implants are a revolutionary dental solution designed to address severe cases of tooth loss or bone loss in the upper jaw. Unlike traditional dental implants that rely on the jawbone for support, zygomatic implants are anchored into the cheekbone (zygomatic bone), a stronger and more stable structure.",
     "introP1": "This innovative approach was developed in the 1990s by a Swedish professor, Per-Ingvar Brånemark, who pioneered the concept of osseointegration – the process of fusing dental implants with the surrounding bone. Zygomatic implants take this concept a step further by utilizing the zygomatic bone (cheekbone), which often remains strong and dense even when the upper jaw has deteriorated due to tooth loss or other factors.",
-    "xrayImgAlt": "Zygomatic and Pterygoid (Cheekbone) Implants in Istanbul - dental implants in cheekbone",
+    "xrayImgAlt": "Zygomatic and Pterygoid (Cheekbone) Implants in Antalya - dental implants in cheekbone",
     "xrayCaption": "3D Panoramic Craniofacial X-Ray: Quad Zygomatic & Pterygoid Implants Anchored Directly into Dense Cortical Cheekbone",
     "howWorkTitle": "How Do Zygomatic (Cheekbone) Implants Work?",
     "howWorkP": "The length of zygomatic implants, which can range from 30 to 55 millimeters, allows them to extend beyond the upper jaw and into the cheekbone, providing a secure and reliable foundation for dental prosthetics. This game-changing technology has opened up new possibilities for individuals who were previously deemed unsuitable for traditional implants due to inadequate bone volume or quality.",
@@ -160,7 +160,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "introP3LinkAll6": "All-on-6 Dental Implants",
     "introP3And": ", or ",
     "introP3LinkSinus": "Sinus Lifting & Bone Grafting",
-    "introP3Tail": " solutions in Istanbul.",
+    "introP3Tail": " solutions in Antalya.",
     "candidacyTitle": "Are You a Candidate for Zygomatic & Pterygoid Implants?",
     "candidacySubtitle": "If you have been told by other dentists that you \"have no bone left\" for regular implants, zygomatic surgery is your definitive answer.",
     "candidacyPoints": [
@@ -182,9 +182,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       }
     ],
     "costIntroTitle1": "Cost of Zygomatic and Pterygoid (Cheekbone) Implants in Turkey:",
-    "costIntroTitle2": "Affordable, High-Quality Maxillofacial Treatment at Master Smile Studio, Istanbul",
+    "costIntroTitle2": "Affordable, High-Quality Maxillofacial Treatment at Master Smile Studio, Antalya",
     "costIntroP1": "One of the primary reasons why Turkey has become a leading international destination for zygomatic implants is the significantly lower cost compared to many other countries. Turkey’s dental tourism industry has flourished in recent years, offering high-quality hospital-grade care at a fraction of the price you might find elsewhere.",
-    "costIntroP2": "The cost of zygomatic implants in Turkey, Istanbul can vary depending on several factors, such as the experience and qualifications of the dentist, the location of the clinic, and the complexity of the procedure. However, as a general guideline, the cost of a single zygomatic implant in Turkey can range from $2,770 to $5,000 in 2026.",
+    "costIntroP2": "The cost of zygomatic implants in Turkey, Antalya can vary depending on several factors, such as the experience and qualifications of the dentist, the location of the clinic, and the complexity of the procedure. However, as a general guideline, the cost of a single zygomatic implant in Turkey can range from $2,770 to $5,000 in 2026.",
     "costIntroP3": "At Master Smile Studio, we offer zygomatic implant treatments at competitive prices without compromising on clinical quality. Our current cost for zygomatic implants is $2,770 USD / 2,350 EUR / 2,050 GBP, subject to change depending on additional procedures such as bone grafting, sinus lift, etc.",
     "packagesTitle": "Zygomatic & Full-Arch Packages (All-on-4 / All-on-6 / Zygoma)",
     "packagesSubtitle": "All-inclusive packages per jaw featuring certified Straumann, Nobel Biocare, NucleOSS, DXL, Megagen, Neodent, and Hiossen.",
@@ -462,7 +462,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       {
         "name": "HYBRID ZYGOMATIC PACKAGE",
         "brand": "Nobel Biocare / Straumann (2 Zygoma + 2-4 Anterior Implants)",
-        "duration": "5-7 Days in Istanbul (2 Visits Total)",
+        "duration": "5-7 Days in Antalya (2 Visits Total)",
         "img": "/packages/straumann.webp",
         "price": {
           "USD": "$7,600",
@@ -484,7 +484,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       {
         "name": "QUAD ZYGOMA TOTAL RECONSTRUCTION",
         "brand": "4 Zygomatic Implants (For 100% Maxillary Bone Loss)",
-        "duration": "5-7 Days in Istanbul (2 Visits Total)",
+        "duration": "5-7 Days in Antalya (2 Visits Total)",
         "img": "/packages/dxl.webp",
         "price": {
           "USD": "$9,800",
@@ -562,7 +562,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       "whenZygomaticTitle": "When are Zygomatic Implants the Only Viable Solution?",
       "whenZygomaticText": "Zygomatic implants are the definitive gold standard when the upper jaw is completely hollowed out, previous bone grafts have failed, or the patient cannot tolerate 18 months without fixed teeth."
     },
-    "advantagesH2": "Advantages of Zygomatic and Pterygoid (Cheekbone) Implants Over Traditional Dental Implants at Master Smile Studio, Istanbul, Turkey",
+    "advantagesH2": "Advantages of Zygomatic and Pterygoid (Cheekbone) Implants Over Traditional Dental Implants at Master Smile Studio, Antalya, Turkey",
     "advantagesP1": "One of the primary advantages of zygomatic implants is their ability to provide a solution for patients with severe bone loss in the upper jaw. Traditional dental implants require a sufficient amount of healthy, dense bone to anchor into, but in cases of extensive bone loss, this may not be possible.",
     "advantagesP2": "Zygomatic implants, on the other hand, bypass the need for a robust jawbone by utilizing the stronger and more stable cheekbone (zygomatic bone) as the anchor point. This eliminates the requirement for bone grafting procedures, which can be time-consuming, invasive, and costly.",
     "keyBenefitsH3": "Key Benefits of Zygomatic (Cheekbone) Implants:",
@@ -574,10 +574,10 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "benefit3Desc": "Studies have shown that zygomatic implants have a success rate of up to 97%, making them a reliable and predictable solution for patients with significant bone loss. This is a significant advantage over traditional implants, which may have a lower success rate when there's insufficient bone volume. Zygomatic implants are designed to provide a secure foundation in cases where conventional methods may fail.",
     "benefit4Title": "4. Restores Function and Aesthetics Quickly",
     "benefit4Desc": "Another major benefit of zygomatic implants is that they allow for the restoration of both function and aesthetics in a shorter amount of time compared to traditional implants. Patients who may have had difficulty chewing, speaking, or smiling due to severe bone loss can quickly restore their natural functions and regain their confidence.",
-    "evalH2": "Are You a Candidate for Zygomatic (Cheekbone) Implants? | Master Smile Studio, Istanbul, Turkey",
+    "evalH2": "Are You a Candidate for Zygomatic (Cheekbone) Implants? | Master Smile Studio, Antalya, Turkey",
     "evalP1": "Zygomatic implants are primarily recommended for individuals who have experienced significant bone loss in the upper jaw, often caused by factors such as long-term tooth loss, periodontal disease, or trauma. If you’ve been told that you are not a suitable candidate for traditional dental implants, zygomatic implants may be the solution you’ve been searching for.",
     "evalHowDetermineH3": "How to Determine if You Are a Candidate for Zygomatic Implants?",
-    "evalHowDetermineP": "To assess whether zygomatic implants are the right option for you, your dentist or oral surgeon at Master Smile Studio, Istanbul, Turkey will conduct a thorough evaluation. This evaluation typically includes:",
+    "evalHowDetermineP": "To assess whether zygomatic implants are the right option for you, your dentist or oral surgeon at Master Smile Studio, Antalya, Turkey will conduct a thorough evaluation. This evaluation typically includes:",
     "evalExamTitle": "Comprehensive Dental Examination",
     "evalExamDesc": "A detailed oral examination will be conducted to assess the overall health of your teeth and gums.",
     "evalScansTitle": "X-Rays and CT Scans",
@@ -593,10 +593,10 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       "Blood disorders or medications that may affect healing"
     ],
     "evalHealthTail": "It’s essential to ensure that any medical conditions are well-managed before proceeding with zygomatic implants to achieve the best possible outcome.",
-    "prepH2": "Preparing for Zygomatic (Cheekbone) Implant Surgery at Master Smile Studio, Istanbul",
+    "prepH2": "Preparing for Zygomatic (Cheekbone) Implant Surgery at Master Smile Studio, Antalya",
     "prepLead": "Preparing for your zygomatic implant surgery is crucial to ensure a smooth and successful procedure. Here are some general guidelines to follow before your surgery at Master Smile Studio:",
     "prep1Title": "1. Comprehensive Dental Evaluation",
-    "prep1Desc": "Before scheduling your zygomatic implant surgery in Istanbul, your dentist will conduct a thorough examination, including X-rays and advanced imaging techniques like CT scans. This evaluation will assess the condition of your jawbone and cheekbone, ensuring there’s enough bone volume to support the implant.",
+    "prep1Desc": "Before scheduling your zygomatic implant surgery in Antalya, your dentist will conduct a thorough examination, including X-rays and advanced imaging techniques like CT scans. This evaluation will assess the condition of your jawbone and cheekbone, ensuring there’s enough bone volume to support the implant.",
     "prep2Title": "2. Medical History Review",
     "prep2Desc": "Your dentist will review your medical history, including existing health conditions, medications, and past surgeries. This information is essential to determine if you are a suitable candidate for zygomatic implants and to identify any potential risks or complications.",
     "prep3Title": "3. Quit Smoking",
@@ -607,9 +607,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "prep5Desc": "Since you will likely be under the influence of anesthesia or sedation on the day of your surgery, it’s essential to arrange for a trusted friend, family member, or our dedicated VIP chauffeur team to drive you to and from the clinic.",
     "prep6Title": "6. Prepare for the Recovery Period",
     "prep6Desc": "Your dentist will provide you with detailed instructions on what to expect during the recovery process, including dietary restrictions, pain management, and follow-up appointments. Make sure to familiarize yourself with these guidelines. You may also want to prepare by stocking up on soft, easy-to-eat foods.",
-    "prepTail": "By following these preparation steps, you can ensure a smoother and more successful zygomatic implant procedure, setting the stage for a beautiful and confident new smile at Master Smile Studio in Istanbul.",
+    "prepTail": "By following these preparation steps, you can ensure a smoother and more successful zygomatic implant procedure, setting the stage for a beautiful and confident new smile at Master Smile Studio in Antalya.",
     "faqTitle": "Frequently Asked Questions: Zygomatic Implants",
-    "faqSubtitle": "Clinically verified answers regarding cheekbone anchoring, surgical recovery, bone grafting alternatives, and health tourism in Istanbul.",
+    "faqSubtitle": "Clinically verified answers regarding cheekbone anchoring, surgical recovery, bone grafting alternatives, and health tourism in Antalya.",
     "faqGroup1Title": "Clinical & Surgical Zygomatic FAQ (Severe Bone Loss Solutions)",
     "faqGroup2Title": "Health Tourism, VIP Inclusions & Warranty FAQ",
     "faqsPart1": [
@@ -656,8 +656,8 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     ],
     "faqsPart2": [
       {
-        "q": "How many days do I need to stay in Istanbul for Zygomatic implant surgery?",
-        "a": "Your first visit requires 5 to 7 days in Istanbul for 3D CBCT planning, hospital surgery, and delivery of your 24h fixed temporary teeth. After 3 months of osseointegration, you return for a 5-day visit for your final monolithic zirconia bridge."
+        "q": "How many days do I need to stay in Antalya for Zygomatic implant surgery?",
+        "a": "Your first visit requires 5 to 7 days in Antalya for 3D CBCT planning, hospital surgery, and delivery of your 24h fixed temporary teeth. After 3 months of osseointegration, you return for a 5-day visit for your final monolithic zirconia bridge."
       },
       {
         "q": "What is included in the Master Smile Studio Zygomatic Package?",
@@ -668,8 +668,8 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "a": "We work exclusively with globally certified manufacturers including Nobel Biocare (NobelZygoma), Straumann Group, and Southern Implants, all backed by official international guarantee passports."
       },
       {
-        "q": "Why are Zygomatic implants 70% more affordable in Istanbul than in the UK or US?",
-        "a": "Lower hospital facility costs, favorable exchange rates, and high clinical specialization in Istanbul allow us to deliver world-class maxillofacial surgery at transparent, accessible rates without compromising safety."
+        "q": "Why are Zygomatic implants 70% more affordable in Antalya than in the UK or US?",
+        "a": "Lower hospital facility costs, favorable exchange rates, and high clinical specialization in Antalya allow us to deliver world-class maxillofacial surgery at transparent, accessible rates without compromising safety."
       },
       {
         "q": "Do Zygomatic implants carry a lifetime warranty?",
@@ -687,10 +687,10 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
   },
   "tr": {
     "introBadge": "ZİGOMA & PTERİGOİD ELMACIK KEMİĞİ KURTARMA PROTOKOLÜ",
-    "introTitle": "Zigoma (Elmacık Kemiği) İmplantı Nedir? | Master Smile Studio, İstanbul, Türkiye",
+    "introTitle": "Zigoma (Elmacık Kemiği) İmplantı Nedir? | Master Smile Studio, Antalya, Türkiye",
     "introLead": "Zigoma (Elmacık Kemiği) implantları, üst çenede ileri derecede diş ve kemik kaybı yaşayan hastalar için devrim niteliğinde bir çözümdür. Çene kemiğine dayanan geleneksel implantların aksine, zigoma implantları çok daha güçlü ve stabil bir yapı olan elmacık kemiğine (zigomatik kemik) sabitlenir.",
     "introP1": "Bu yenilikçi cerrahi yaklaşım, 1990'lı yıllarda diş implantlarının kemikle kaynaması (osseointegrasyon) kavramının öncüsü olan İsveçli profesör Per-Ingvar Brånemark tarafından geliştirilmiştir. Zigoma implantları, diş kaybı veya yaşa bağlı olarak üst çene kemiği tamamen eridiğinde bile sert ve yoğun yapısını koruyan elmacık kemiğinden destek alarak bu konsepti bir adım ileri taşır.",
-    "xrayImgAlt": "İstanbul Zigoma ve Pterigoid Elmacık Kemiği İmplantı - kemik erimesi tedavisi",
+    "xrayImgAlt": "Antalya Zigoma ve Pterigoid Elmacık Kemiği İmplantı - kemik erimesi tedavisi",
     "xrayCaption": "3D Tomografi Teşhisi: Elmacık Kemiğine Sabitlenen Dörtlü Zigoma ve Pterigoid İmplantlar",
     "howWorkTitle": "Zigoma (Elmacık Kemiği) İmplantları Nasıl Çalışır?",
     "howWorkP": "Uzunlukları 30 ila 55 milimetre arasında değişen özel zigoma implantları, erimiş üst çene kemiğini tamamen aşarak elmacık kemiğine ulaşır ve protezler için son derece sağlam bir temel oluşturur. Bu dönüştürücü teknoloji, daha önce yetersiz kemik nedeniyle \"implant yapılamaz\" denilen hastalar için yepyeni bir sabit diş imkanı sunar.",
@@ -722,9 +722,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       }
     ],
     "costIntroTitle1": "Türkiye’de Zigoma ve Pterigoid (Elmacık Kemiği) İmplant Fiyatları:",
-    "costIntroTitle2": "Master Smile Studio İstanbul’da Erişilebilir ve Yüksek Kaliteli Çene Cerrahisi",
+    "costIntroTitle2": "Master Smile Studio Antalya’da Erişilebilir ve Yüksek Kaliteli Çene Cerrahisi",
     "costIntroP1": "Türkiye’nin zigoma (elmacık kemiği) implantı tedavisinde dünyanın önde gelen destinasyonlarından biri olmasının başlıca nedeni, birçok ülkeye kıyasla önemli ölçüde daha uygun fiyatlar sunmasıdır. Türkiye’nin gelişmiş sağlık turizmi altyapısı, Avrupa ve Amerika’daki maliyetlerin çok altında hastane standartlarında cerrahi bakım sağlar.",
-    "costIntroP2": "İstanbul’da zigoma implantı fiyatları cerrahın tecrübesine, kliniğin donanımına ve prosedürün karmaşıklığına göre değişiklik gösterebilir. Genel bir kılavuz olarak, 2026 yılında Türkiye’de tek bir zigoma implantının maliyeti 2.770 $ ile 5.000 $ (2.350 € - 4.500 €) arasında değişmektedir.",
+    "costIntroP2": "Antalya’da zigoma implantı fiyatları cerrahın tecrübesine, kliniğin donanımına ve prosedürün karmaşıklığına göre değişiklik gösterebilir. Genel bir kılavuz olarak, 2026 yılında Türkiye’de tek bir zigoma implantının maliyeti 2.770 $ ile 5.000 $ (2.350 € - 4.500 €) arasında değişmektedir.",
     "costIntroP3": "Master Smile Studio’da zigoma implant tedavilerini kaliteden ödün vermeden son derece rekabetçi fiyatlarla sunuyoruz. Güncel zigoma implant birim maliyetimiz 2.770 USD / 2.350 EUR / 2.050 GBP olup kemik grefti, sinüs lifting gibi ek prosedürlere göre netleştirilmektedir.",
     "packagesTitle": "Zigoma ve Tam Çene İmplant Paketleri (All-on-4 / All-on-6 / Zigoma)",
     "packagesSubtitle": "Straumann, Nobel Biocare, NucleOSS, DXL, Megagen, Neodent ve Hiossen dahil çene başına her şey dahil paketler.",
@@ -1102,7 +1102,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       "whenZygomaticTitle": "Zigoma İmplantları Ne Zaman Tek Çözümdür?",
       "whenZygomaticText": "Üst çene kemiği tamamen eridiğinde, önceki kemik tozları tutmadığında ve hastanın 18 ay dişsiz beklemek istemediği durumlarda tartışmasız tek seçenektir."
     },
-    "advantagesH2": "Master Smile Studio İstanbul’da Zigoma ve Pterigoid (Elmacık Kemiği) İmplantlarının Geleneksel İmplantlara Göre Avantajları",
+    "advantagesH2": "Master Smile Studio Antalya’da Zigoma ve Pterigoid (Elmacık Kemiği) İmplantlarının Geleneksel İmplantlara Göre Avantajları",
     "advantagesP1": "Zigoma implantlarının en büyük avantajı, üst çenesinde ileri derecede kemik kaybı yaşayan hastalara kesin ve kalıcı bir sabit diş çözümü sunabilmesidir. Geleneksel diş implantları tutunabilmek için yeterli hacim ve yoğunlukta sağlıklı çene kemiğine ihtiyaç duyar; ancak aşırı kemik erimesi vakalarında bu mümkün olmayabilir.",
     "advantagesP2": "Buna karşılık zigoma implantları, erimiş üst çene kemiğini tamamen baypas ederek çok daha güçlü ve stabil olan elmacık kemiğini (zigomatik kemik) dayanak noktası olarak kullanır. Bu sayede aylar süren, maliyetli ve yorucu kemik tozu (greft) ameliyatlarına olan ihtiyaç tamamen ortadan kalkar.",
     "keyBenefitsH3": "Zigoma (Elmacık Kemiği) İmplantlarının Temel Avantajları:",
@@ -1114,10 +1114,10 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "benefit3Desc": "Klinik çalışmalar zigoma implantlarının %97'nin üzerinde bir başarı oranına sahip olduğunu kanıtlamıştır. Yetersiz kemik hacmi nedeniyle klasik implantların başarısız olabileceği en zorlu vakalarda dahi elmacık kemiğinin yoğun kortikal yapısı sayesinde ömür boyu güvenli bir temel oluşturur.",
     "benefit4Title": "4. Çiğneme Fonksiyonunu ve Estetiği Hızla Geri Kazandırır",
     "benefit4Desc": "Zigoma implantlarının en önemli faydalarından biri de çiğneme fonksiyonunu ve yüz estetiğini çok kısa sürede restore etmesidir. Kemik kaybı nedeniyle çiğnemede, konuşmada veya gülümsemede güçlük çeken hastalarımız doğal çiğneme kuvvetine ve özgüvenlerine hızla yeniden kavuşur.",
-    "evalH2": "Zigoma (Elmacık Kemiği) İmplantı İçin Aday Mısınız? | Master Smile Studio, İstanbul, Türkiye",
+    "evalH2": "Zigoma (Elmacık Kemiği) İmplantı İçin Aday Mısınız? | Master Smile Studio, Antalya, Türkiye",
     "evalP1": "Zigoma implantları öncelikle uzun süreli diş kaybı, ileri diş eti hastalıkları veya travma gibi nedenlerle üst çene kemiğinde ciddi kayıp yaşamış bireyler için önerilmektedir. Klasik diş implantları için uygun bir aday olmadığınız söylendiyse, zigoma implantları aradığınız kalıcı çözüm olabilir.",
     "evalHowDetermineH3": "Zigoma İmplantı İçin Uygun Bir Aday Olup Olmadığınız Nasıl Belirlenir?",
-    "evalHowDetermineP": "Zigoma implantlarının sizin için doğru seçenek olup olmadığını değerlendirmek üzere Master Smile Studio İstanbul’daki uzman çene cerrahlarımız kapsamlı bir klinik muayene gerçekleştirir. Bu değerlendirme şunları içerir:",
+    "evalHowDetermineP": "Zigoma implantlarının sizin için doğru seçenek olup olmadığını değerlendirmek üzere Master Smile Studio Antalya’daki uzman çene cerrahlarımız kapsamlı bir klinik muayene gerçekleştirir. Bu değerlendirme şunları içerir:",
     "evalExamTitle": "Kapsamlı Ağız ve Diş Muayenesi",
     "evalExamDesc": "Dişlerinizin ve diş etlerinizin genel sağlığını değerlendirmek için detaylı bir oral muayene yapılır.",
     "evalScansTitle": "3D Tomografi (CBCT) ve Röntgen Taramaları",
@@ -1133,10 +1133,10 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       "Kan hastalıkları veya iyileşmeyi geciktiren ilaç kullanımı"
     ],
     "evalHealthTail": "En iyi klinik sonucu elde etmek ve operasyon başarısını garantilemek için mevcut tıbbi durumların operasyon öncesinde kontrol altında olması esastır.",
-    "prepH2": "Master Smile Studio İstanbul’da Zigoma (Elmacık Kemiği) İmplant Ameliyatına Hazırlık",
+    "prepH2": "Master Smile Studio Antalya’da Zigoma (Elmacık Kemiği) İmplant Ameliyatına Hazırlık",
     "prepLead": "Zigoma implant ameliyatınıza doğru şekilde hazırlanmak, cerrahi sürecin konforlu ve başarılı geçmesi için kritik öneme sahiptir. Master Smile Studio’da operasyon öncesi dikkat edilmesi gereken temel adımlar şunlardır:",
     "prep1Title": "1. Kapsamlı Ağız ve Diş Muayenesi",
-    "prep1Desc": "İstanbul’da zigoma implant randevunuz planlanmadan önce cerrahımız 3D tomografi (CBCT) ve dijital panoramik röntgenler dahil derinlemesine bir inceleme yapar. Bu değerlendirme, çene ve elmacık kemiğinizin durumunu ve implant tutuculuğunu garanti altına alır.",
+    "prep1Desc": "Antalya’da zigoma implant randevunuz planlanmadan önce cerrahımız 3D tomografi (CBCT) ve dijital panoramik röntgenler dahil derinlemesine bir inceleme yapar. Bu değerlendirme, çene ve elmacık kemiğinizin durumunu ve implant tutuculuğunu garanti altına alır.",
     "prep2Title": "2. Genel Tıbbi Geçmişin İncelenmesi",
     "prep2Desc": "Cerrahımız mevcut sağlık durumunuzu, düzenli kullandığınız ilaçları ve geçmiş operasyonlarınızı inceler. Bu bilgiler, zigoma implantları için en güvenli anestezi ve cerrahi protokolü belirlemek açısından hayati önem taşır.",
     "prep3Title": "3. Sigarayı Bırakma / Azaltma",
@@ -1147,9 +1147,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "prep5Desc": "Ameliyat günü sedasyon veya anestezi etkisi altında olacağınız için kliniğe ve otele ulaşımınız Master Smile Studio’nun özel VIP Mercedes transfer ekibi tarafından güvenle sağlanır.",
     "prep6Title": "6. İyileşme Dönemine Hazırlık",
     "prep6Desc": "Cerrahımız operasyon sonrası beslenme kısıtlamaları, ağrı kontrolü ve kontrol randevuları hakkında size detaylı bir rehber sunacaktır. İlk birkaç gün için yumuşak ve çiğnemesi kolay besinler hazırlamanız konforunuzu artıracaktır.",
-    "prepTail": "Bu hazırlık adımlarını takip ederek zigoma implant operasyonunuzun sorunsuz, hızlı ve maksimum konforla tamamlanmasını sağlayabilir; Master Smile Studio İstanbul’da yepyeni gülüşünüze güvenle adım atabilirsiniz.",
+    "prepTail": "Bu hazırlık adımlarını takip ederek zigoma implant operasyonunuzun sorunsuz, hızlı ve maksimum konforla tamamlanmasını sağlayabilir; Master Smile Studio Antalya’da yepyeni gülüşünüze güvenle adım atabilirsiniz.",
     "faqTitle": "Sıkça Sorulan Sorular: Zigoma (Elmacık Kemiği) İmplantları",
-    "faqSubtitle": "Elmacık kemiği tutunumu, cerrahi iyileşme, kemik nakli alternatifleri ve İstanbul sağlık turizmi hakkında hekim onaylı yanıtlar.",
+    "faqSubtitle": "Elmacık kemiği tutunumu, cerrahi iyileşme, kemik nakli alternatifleri ve Antalya sağlık turizmi hakkında hekim onaylı yanıtlar.",
     "faqGroup1Title": "Klinik ve Cerrahi Zigoma SSS (İleri Kemik Erimesi Çözümleri)",
     "faqGroup2Title": "Sağlık Turizmi, VIP Hizmetler ve Garanti SSS",
     "faqsPart1": [
@@ -1196,7 +1196,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     ],
     "faqsPart2": [
       {
-        "q": "Zigoma implant tedavisi için İstanbulda kaç gün kalmalıyım?",
+        "q": "Zigoma implant tedavisi için Antalyada kaç gün kalmalıyım?",
         "a": "İlk ziyaretinizde 3D tomografi planlaması, ameliyat ve 24 saatte sabit geçici diş teslimi için 5-7 gün kalmanız yeterlidir. 3 ay sonra kalıcı zirkonyum köprünüz için 5 günlük ikinci bir ziyaret gereklidir."
       },
       {
@@ -1209,7 +1209,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       },
       {
         "q": "Türkiye’de zigoma implant fiyatları neden İngiltere ve ABDye göre %70 daha uygundur?",
-        "a": "İstanbuldaki ameliyathane işletme ve cerrahi merkez avantajları sayesinde aynı orijinal İsviçre sistemlerini Avrupa ve Amerika fiyatlarının üçte birine sunabiliyoruz."
+        "a": "Antalyadaki ameliyathane işletme ve cerrahi merkez avantajları sayesinde aynı orijinal İsviçre sistemlerini Avrupa ve Amerika fiyatlarının üçte birine sunabiliyoruz."
       },
       {
         "q": "Ömür boyu garanti ve medikal pasaport veriliyor mu?",
@@ -1227,10 +1227,10 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
   },
   "de": {
     "introBadge": "ZYGOMA & PTERYGOID JOCHBEIN-IMPLANTATE",
-    "introTitle": "Was sind Zygoma- (Jochbein-) Implantate? | Master Smile Studio, Istanbul, Türkei",
+    "introTitle": "Was sind Zygoma- (Jochbein-) Implantate? | Master Smile Studio, Antalya, Türkei",
     "introLead": "Zygoma- (Jochbein-) Implantate sind eine revolutionäre Lösung bei starkem Knochenschwund im Oberkiefer. Verankert im dichten Jochbein bieten sie feste Zähne in 24 Stunden ohne Knochenaufbau.",
     "introP1": "This innovative approach was developed in the 1990s by a Swedish professor, Per-Ingvar Brånemark, who pioneered the concept of osseointegration – the process of fusing dental implants with the surrounding bone. Zygomatic implants take this concept a step further by utilizing the zygomatic bone (cheekbone), which often remains strong and dense even when the upper jaw has deteriorated due to tooth loss or other factors.",
-    "xrayImgAlt": "Zygomatic and Pterygoid (Cheekbone) Implants in Istanbul - dental implants in cheekbone",
+    "xrayImgAlt": "Zygomatic and Pterygoid (Cheekbone) Implants in Antalya - dental implants in cheekbone",
     "xrayCaption": "3D Panoramic Craniofacial X-Ray: Quad Zygomatic & Pterygoid Implants Anchored Directly into Dense Cortical Cheekbone",
     "howWorkTitle": "Wie funktionieren Zygoma- (Jochbein-) Implantate?",
     "howWorkP": "Mit Längen von 30 bis 55 mm überbrücken Zygoma-Implantate den abgebauten Oberkiefer und verankern sich im stabilen Jochbein – für sicheren Zahnersatz selbst bei extremem Knochenverlust.",
@@ -1240,7 +1240,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "introP3LinkAll6": "All-on-6 Dental Implants",
     "introP3And": ", or ",
     "introP3LinkSinus": "Sinus Lifting & Bone Grafting",
-    "introP3Tail": " solutions in Istanbul.",
+    "introP3Tail": " solutions in Antalya.",
     "candidacyTitle": "Are You a Candidate for Zygomatic & Pterygoid Implants?",
     "candidacySubtitle": "If you have been told by other dentists that you \"have no bone left\" for regular implants, zygomatic surgery is your definitive answer.",
     "candidacyPoints": [
@@ -1262,7 +1262,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       }
     ],
     "costIntroTitle1": "Kosten für Zygoma- und Pterygoid-Implantate in der Türkei:",
-    "costIntroTitle2": "Erschwingliche, erstklassige Behandlung bei Master Smile Studio, Istanbul",
+    "costIntroTitle2": "Erschwingliche, erstklassige Behandlung bei Master Smile Studio, Antalya",
     "costIntroP1": "Einer der Hauptgründe für den Erfolg der Türkei bei Zygoma-Implantaten sind die deutlich geringeren Kosten bei höchster chirurgischer Qualität.",
     "costIntroP2": "Die Kosten für ein einzelnes Zygoma-Implantat in der Türkei liegen 2026 zwischen 2.350 € und 4.500 $.",
     "costIntroP3": "Bei Master Smile Studio beträgt der Preis pro Zygoma-Implantat 2.350 EUR / 2.770 USD / 2.050 GBP inklusive 3D-Planung und OP-Saal.",
@@ -1542,7 +1542,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       {
         "name": "HYBRID ZYGOMATIC PACKAGE",
         "brand": "Nobel Biocare / Straumann (2 Zygoma + 2-4 Anterior Implants)",
-        "duration": "5-7 Days in Istanbul (2 Visits Total)",
+        "duration": "5-7 Days in Antalya (2 Visits Total)",
         "img": "/packages/straumann.webp",
         "price": {
           "USD": "$7,600",
@@ -1564,7 +1564,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       {
         "name": "QUAD ZYGOMA TOTAL RECONSTRUCTION",
         "brand": "4 Zygomatic Implants (For 100% Maxillary Bone Loss)",
-        "duration": "5-7 Days in Istanbul (2 Visits Total)",
+        "duration": "5-7 Days in Antalya (2 Visits Total)",
         "img": "/packages/dxl.webp",
         "price": {
           "USD": "$9,800",
@@ -1642,7 +1642,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       "whenZygomaticTitle": "When are Zygomatic Implants the Only Viable Solution?",
       "whenZygomaticText": "Zygomatic implants are the definitive gold standard when the upper jaw is completely hollowed out, previous bone grafts have failed, or the patient cannot tolerate 18 months without fixed teeth."
     },
-    "advantagesH2": "Vorteile von Zygoma- und Pterygoid-Implantaten gegenüber herkömmlichen Implantaten bei Master Smile Studio, Istanbul",
+    "advantagesH2": "Vorteile von Zygoma- und Pterygoid-Implantaten gegenüber herkömmlichen Implantaten bei Master Smile Studio, Antalya",
     "advantagesP1": "One of the primary advantages of zygomatic implants is their ability to provide a solution for patients with severe bone loss in the upper jaw. Traditional dental implants require a sufficient amount of healthy, dense bone to anchor into, but in cases of extensive bone loss, this may not be possible.",
     "advantagesP2": "Zygomatic implants, on the other hand, bypass the need for a robust jawbone by utilizing the stronger and more stable cheekbone (zygomatic bone) as the anchor point. This eliminates the requirement for bone grafting procedures, which can be time-consuming, invasive, and costly.",
     "keyBenefitsH3": "Key Benefits of Zygomatic (Cheekbone) Implants:",
@@ -1654,10 +1654,10 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "benefit3Desc": "Studies have shown that zygomatic implants have a success rate of up to 97%, making them a reliable and predictable solution for patients with significant bone loss. This is a significant advantage over traditional implants, which may have a lower success rate when there's insufficient bone volume. Zygomatic implants are designed to provide a secure foundation in cases where conventional methods may fail.",
     "benefit4Title": "4. Restores Function and Aesthetics Quickly",
     "benefit4Desc": "Another major benefit of zygomatic implants is that they allow for the restoration of both function and aesthetics in a shorter amount of time compared to traditional implants. Patients who may have had difficulty chewing, speaking, or smiling due to severe bone loss can quickly restore their natural functions and regain their confidence.",
-    "evalH2": "Sind Sie ein Kandidat für Zygoma-Implantate? | Master Smile Studio, Istanbul",
+    "evalH2": "Sind Sie ein Kandidat für Zygoma-Implantate? | Master Smile Studio, Antalya",
     "evalP1": "Zygomatic implants are primarily recommended for individuals who have experienced significant bone loss in the upper jaw, often caused by factors such as long-term tooth loss, periodontal disease, or trauma. If you’ve been told that you are not a suitable candidate for traditional dental implants, zygomatic implants may be the solution you’ve been searching for.",
     "evalHowDetermineH3": "How to Determine if You Are a Candidate for Zygomatic Implants?",
-    "evalHowDetermineP": "To assess whether zygomatic implants are the right option for you, your dentist or oral surgeon at Master Smile Studio, Istanbul, Turkey will conduct a thorough evaluation. This evaluation typically includes:",
+    "evalHowDetermineP": "To assess whether zygomatic implants are the right option for you, your dentist or oral surgeon at Master Smile Studio, Antalya, Turkey will conduct a thorough evaluation. This evaluation typically includes:",
     "evalExamTitle": "Comprehensive Dental Examination",
     "evalExamDesc": "A detailed oral examination will be conducted to assess the overall health of your teeth and gums.",
     "evalScansTitle": "X-Rays and CT Scans",
@@ -1673,10 +1673,10 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       "Blood disorders or medications that may affect healing"
     ],
     "evalHealthTail": "It’s essential to ensure that any medical conditions are well-managed before proceeding with zygomatic implants to achieve the best possible outcome.",
-    "prepH2": "Vorbereitung auf die Zygoma- (Jochbein-) Implantatoperation bei Master Smile Studio, Istanbul",
+    "prepH2": "Vorbereitung auf die Zygoma- (Jochbein-) Implantatoperation bei Master Smile Studio, Antalya",
     "prepLead": "Preparing for your zygomatic implant surgery is crucial to ensure a smooth and successful procedure. Here are some general guidelines to follow before your surgery at Master Smile Studio:",
     "prep1Title": "1. Comprehensive Dental Evaluation",
-    "prep1Desc": "Before scheduling your zygomatic implant surgery in Istanbul, your dentist will conduct a thorough examination, including X-rays and advanced imaging techniques like CT scans. This evaluation will assess the condition of your jawbone and cheekbone, ensuring there’s enough bone volume to support the implant.",
+    "prep1Desc": "Before scheduling your zygomatic implant surgery in Antalya, your dentist will conduct a thorough examination, including X-rays and advanced imaging techniques like CT scans. This evaluation will assess the condition of your jawbone and cheekbone, ensuring there’s enough bone volume to support the implant.",
     "prep2Title": "2. Medical History Review",
     "prep2Desc": "Your dentist will review your medical history, including existing health conditions, medications, and past surgeries. This information is essential to determine if you are a suitable candidate for zygomatic implants and to identify any potential risks or complications.",
     "prep3Title": "3. Quit Smoking",
@@ -1687,9 +1687,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "prep5Desc": "Since you will likely be under the influence of anesthesia or sedation on the day of your surgery, it’s essential to arrange for a trusted friend, family member, or our dedicated VIP chauffeur team to drive you to and from the clinic.",
     "prep6Title": "6. Prepare for the Recovery Period",
     "prep6Desc": "Your dentist will provide you with detailed instructions on what to expect during the recovery process, including dietary restrictions, pain management, and follow-up appointments. Make sure to familiarize yourself with these guidelines. You may also want to prepare by stocking up on soft, easy-to-eat foods.",
-    "prepTail": "By following these preparation steps, you can ensure a smoother and more successful zygomatic implant procedure, setting the stage for a beautiful and confident new smile at Master Smile Studio in Istanbul.",
+    "prepTail": "By following these preparation steps, you can ensure a smoother and more successful zygomatic implant procedure, setting the stage for a beautiful and confident new smile at Master Smile Studio in Antalya.",
     "faqTitle": "Häufig gestellte Fragen: Zygoma-Implantate",
-    "faqSubtitle": "Clinically verified answers regarding cheekbone anchoring, surgical recovery, bone grafting alternatives, and health tourism in Istanbul.",
+    "faqSubtitle": "Clinically verified answers regarding cheekbone anchoring, surgical recovery, bone grafting alternatives, and health tourism in Antalya.",
     "faqGroup1Title": "Clinical & Surgical Zygomatic FAQ (Severe Bone Loss Solutions)",
     "faqGroup2Title": "Health Tourism, VIP Inclusions & Warranty FAQ",
     "faqsPart1": [
@@ -1736,8 +1736,8 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     ],
     "faqsPart2": [
       {
-        "q": "How many days do I need to stay in Istanbul for Zygomatic implant surgery?",
-        "a": "Your first visit requires 5 to 7 days in Istanbul for 3D CBCT planning, hospital surgery, and delivery of your 24h fixed temporary teeth. After 3 months of osseointegration, you return for a 5-day visit for your final monolithic zirconia bridge."
+        "q": "How many days do I need to stay in Antalya for Zygomatic implant surgery?",
+        "a": "Your first visit requires 5 to 7 days in Antalya for 3D CBCT planning, hospital surgery, and delivery of your 24h fixed temporary teeth. After 3 months of osseointegration, you return for a 5-day visit for your final monolithic zirconia bridge."
       },
       {
         "q": "What is included in the Master Smile Studio Zygomatic Package?",
@@ -1748,8 +1748,8 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "a": "We work exclusively with globally certified manufacturers including Nobel Biocare (NobelZygoma), Straumann Group, and Southern Implants, all backed by official international guarantee passports."
       },
       {
-        "q": "Why are Zygomatic implants 70% more affordable in Istanbul than in the UK or US?",
-        "a": "Lower hospital facility costs, favorable exchange rates, and high clinical specialization in Istanbul allow us to deliver world-class maxillofacial surgery at transparent, accessible rates without compromising safety."
+        "q": "Why are Zygomatic implants 70% more affordable in Antalya than in the UK or US?",
+        "a": "Lower hospital facility costs, favorable exchange rates, and high clinical specialization in Antalya allow us to deliver world-class maxillofacial surgery at transparent, accessible rates without compromising safety."
       },
       {
         "q": "Do Zygomatic implants carry a lifetime warranty?",
@@ -1767,10 +1767,10 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
   },
   "pl": {
     "introBadge": "PROTOKÓŁ IMPLANTACJI JARZMOWEJ ZYGOMA",
-    "introTitle": "Czym są implanty jarzmowe (Zygoma)? | Master Smile Studio, Stambuł, Turcja",
+    "introTitle": "Czym są implanty jarzmowe (Zygoma)? | Master Smile Studio, Antalya, Turcja",
     "introLead": "Implanty jarzmowe (Zygoma) to przełomowe rozwiązanie dla pacjentów ze znacznym zanikiem kości szczęki. Kotwiczone w kości jarzmowej zapewniają stałe zęby w 24h bez przeszczepu kości.",
     "introP1": "This innovative approach was developed in the 1990s by a Swedish professor, Per-Ingvar Brånemark, who pioneered the concept of osseointegration – the process of fusing dental implants with the surrounding bone. Zygomatic implants take this concept a step further by utilizing the zygomatic bone (cheekbone), which often remains strong and dense even when the upper jaw has deteriorated due to tooth loss or other factors.",
-    "xrayImgAlt": "Zygomatic and Pterygoid (Cheekbone) Implants in Istanbul - dental implants in cheekbone",
+    "xrayImgAlt": "Zygomatic and Pterygoid (Cheekbone) Implants in Antalya - dental implants in cheekbone",
     "xrayCaption": "3D Panoramic Craniofacial X-Ray: Quad Zygomatic & Pterygoid Implants Anchored Directly into Dense Cortical Cheekbone",
     "howWorkTitle": "Jak działają implanty jarzmowe (Zygoma)?",
     "howWorkP": "Długość implantów Zygoma (od 30 do 55 mm) pozwala ominąć zanikłą kość szczęki i zakotwiczyć się w gęstej kości jarzmowej, tworząc stabilny fundament pod stały most.",
@@ -1780,7 +1780,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "introP3LinkAll6": "All-on-6 Dental Implants",
     "introP3And": ", or ",
     "introP3LinkSinus": "Sinus Lifting & Bone Grafting",
-    "introP3Tail": " solutions in Istanbul.",
+    "introP3Tail": " solutions in Antalya.",
     "candidacyTitle": "Are You a Candidate for Zygomatic & Pterygoid Implants?",
     "candidacySubtitle": "If you have been told by other dentists that you \"have no bone left\" for regular implants, zygomatic surgery is your definitive answer.",
     "candidacyPoints": [
@@ -1802,7 +1802,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       }
     ],
     "costIntroTitle1": "Koszt implantów jarzmowych Zygoma w Turcji:",
-    "costIntroTitle2": "Dostępne leczenie najwyższej jakości w Master Smile Studio, Stambuł",
+    "costIntroTitle2": "Dostępne leczenie najwyższej jakości w Master Smile Studio, Antalya",
     "costIntroP1": "Głównym powodem popularności Turcji w zabiegach Zygoma są koszty niższe nawet o 70% w porównaniu do Europy Zachodniej.",
     "costIntroP2": "Koszt pojedynczego implantu jarzmowego w Turcji w 2026 r. wynosi od 2 350 € do 4 500 $.",
     "costIntroP3": "W Master Smile Studio koszt implantu jarzmowego wynosi 2 350 EUR / 2 770 USD / 2 050 GBP z pełnym pakietem diagnostycznym.",
@@ -2082,7 +2082,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       {
         "name": "HYBRID ZYGOMATIC PACKAGE",
         "brand": "Nobel Biocare / Straumann (2 Zygoma + 2-4 Anterior Implants)",
-        "duration": "5-7 Days in Istanbul (2 Visits Total)",
+        "duration": "5-7 Days in Antalya (2 Visits Total)",
         "img": "/packages/straumann.webp",
         "price": {
           "USD": "$7,600",
@@ -2104,7 +2104,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       {
         "name": "QUAD ZYGOMA TOTAL RECONSTRUCTION",
         "brand": "4 Zygomatic Implants (For 100% Maxillary Bone Loss)",
-        "duration": "5-7 Days in Istanbul (2 Visits Total)",
+        "duration": "5-7 Days in Antalya (2 Visits Total)",
         "img": "/packages/dxl.webp",
         "price": {
           "USD": "$9,800",
@@ -2194,10 +2194,10 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "benefit3Desc": "Studies have shown that zygomatic implants have a success rate of up to 97%, making them a reliable and predictable solution for patients with significant bone loss. This is a significant advantage over traditional implants, which may have a lower success rate when there's insufficient bone volume. Zygomatic implants are designed to provide a secure foundation in cases where conventional methods may fail.",
     "benefit4Title": "4. Restores Function and Aesthetics Quickly",
     "benefit4Desc": "Another major benefit of zygomatic implants is that they allow for the restoration of both function and aesthetics in a shorter amount of time compared to traditional implants. Patients who may have had difficulty chewing, speaking, or smiling due to severe bone loss can quickly restore their natural functions and regain their confidence.",
-    "evalH2": "Czy jesteś kandydatem do implantów Zygoma? | Master Smile Studio, Stambuł",
+    "evalH2": "Czy jesteś kandydatem do implantów Zygoma? | Master Smile Studio, Antalya",
     "evalP1": "Zygomatic implants are primarily recommended for individuals who have experienced significant bone loss in the upper jaw, often caused by factors such as long-term tooth loss, periodontal disease, or trauma. If you’ve been told that you are not a suitable candidate for traditional dental implants, zygomatic implants may be the solution you’ve been searching for.",
     "evalHowDetermineH3": "How to Determine if You Are a Candidate for Zygomatic Implants?",
-    "evalHowDetermineP": "To assess whether zygomatic implants are the right option for you, your dentist or oral surgeon at Master Smile Studio, Istanbul, Turkey will conduct a thorough evaluation. This evaluation typically includes:",
+    "evalHowDetermineP": "To assess whether zygomatic implants are the right option for you, your dentist or oral surgeon at Master Smile Studio, Antalya, Turkey will conduct a thorough evaluation. This evaluation typically includes:",
     "evalExamTitle": "Comprehensive Dental Examination",
     "evalExamDesc": "A detailed oral examination will be conducted to assess the overall health of your teeth and gums.",
     "evalScansTitle": "X-Rays and CT Scans",
@@ -2213,10 +2213,10 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       "Blood disorders or medications that may affect healing"
     ],
     "evalHealthTail": "It’s essential to ensure that any medical conditions are well-managed before proceeding with zygomatic implants to achieve the best possible outcome.",
-    "prepH2": "Przygotowanie do zabiegu implantacji jarzmowej (Zygoma) w Master Smile Studio, Stambuł",
+    "prepH2": "Przygotowanie do zabiegu implantacji jarzmowej (Zygoma) w Master Smile Studio, Antalya",
     "prepLead": "Preparing for your zygomatic implant surgery is crucial to ensure a smooth and successful procedure. Here are some general guidelines to follow before your surgery at Master Smile Studio:",
     "prep1Title": "1. Comprehensive Dental Evaluation",
-    "prep1Desc": "Before scheduling your zygomatic implant surgery in Istanbul, your dentist will conduct a thorough examination, including X-rays and advanced imaging techniques like CT scans. This evaluation will assess the condition of your jawbone and cheekbone, ensuring there’s enough bone volume to support the implant.",
+    "prep1Desc": "Before scheduling your zygomatic implant surgery in Antalya, your dentist will conduct a thorough examination, including X-rays and advanced imaging techniques like CT scans. This evaluation will assess the condition of your jawbone and cheekbone, ensuring there’s enough bone volume to support the implant.",
     "prep2Title": "2. Medical History Review",
     "prep2Desc": "Your dentist will review your medical history, including existing health conditions, medications, and past surgeries. This information is essential to determine if you are a suitable candidate for zygomatic implants and to identify any potential risks or complications.",
     "prep3Title": "3. Quit Smoking",
@@ -2227,9 +2227,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "prep5Desc": "Since you will likely be under the influence of anesthesia or sedation on the day of your surgery, it’s essential to arrange for a trusted friend, family member, or our dedicated VIP chauffeur team to drive you to and from the clinic.",
     "prep6Title": "6. Prepare for the Recovery Period",
     "prep6Desc": "Your dentist will provide you with detailed instructions on what to expect during the recovery process, including dietary restrictions, pain management, and follow-up appointments. Make sure to familiarize yourself with these guidelines. You may also want to prepare by stocking up on soft, easy-to-eat foods.",
-    "prepTail": "By following these preparation steps, you can ensure a smoother and more successful zygomatic implant procedure, setting the stage for a beautiful and confident new smile at Master Smile Studio in Istanbul.",
+    "prepTail": "By following these preparation steps, you can ensure a smoother and more successful zygomatic implant procedure, setting the stage for a beautiful and confident new smile at Master Smile Studio in Antalya.",
     "faqTitle": "Często Zadawane Pytania: Implanty Zygoma",
-    "faqSubtitle": "Clinically verified answers regarding cheekbone anchoring, surgical recovery, bone grafting alternatives, and health tourism in Istanbul.",
+    "faqSubtitle": "Clinically verified answers regarding cheekbone anchoring, surgical recovery, bone grafting alternatives, and health tourism in Antalya.",
     "faqGroup1Title": "Clinical & Surgical Zygomatic FAQ (Severe Bone Loss Solutions)",
     "faqGroup2Title": "Health Tourism, VIP Inclusions & Warranty FAQ",
     "faqsPart1": [
@@ -2276,8 +2276,8 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     ],
     "faqsPart2": [
       {
-        "q": "How many days do I need to stay in Istanbul for Zygomatic implant surgery?",
-        "a": "Your first visit requires 5 to 7 days in Istanbul for 3D CBCT planning, hospital surgery, and delivery of your 24h fixed temporary teeth. After 3 months of osseointegration, you return for a 5-day visit for your final monolithic zirconia bridge."
+        "q": "How many days do I need to stay in Antalya for Zygomatic implant surgery?",
+        "a": "Your first visit requires 5 to 7 days in Antalya for 3D CBCT planning, hospital surgery, and delivery of your 24h fixed temporary teeth. After 3 months of osseointegration, you return for a 5-day visit for your final monolithic zirconia bridge."
       },
       {
         "q": "What is included in the Master Smile Studio Zygomatic Package?",
@@ -2288,8 +2288,8 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "a": "We work exclusively with globally certified manufacturers including Nobel Biocare (NobelZygoma), Straumann Group, and Southern Implants, all backed by official international guarantee passports."
       },
       {
-        "q": "Why are Zygomatic implants 70% more affordable in Istanbul than in the UK or US?",
-        "a": "Lower hospital facility costs, favorable exchange rates, and high clinical specialization in Istanbul allow us to deliver world-class maxillofacial surgery at transparent, accessible rates without compromising safety."
+        "q": "Why are Zygomatic implants 70% more affordable in Antalya than in the UK or US?",
+        "a": "Lower hospital facility costs, favorable exchange rates, and high clinical specialization in Antalya allow us to deliver world-class maxillofacial surgery at transparent, accessible rates without compromising safety."
       },
       {
         "q": "Do Zygomatic implants carry a lifetime warranty?",
@@ -2307,10 +2307,10 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
   },
   "pt": {
     "introBadge": "IMPLANTES ZIGOMÁTICOS E PTERIGOIDEOS",
-    "introTitle": "O que são implantes zigomáticos (maçã do rosto)? | Master Smile Studio, Istambul, Turquia",
+    "introTitle": "O que são implantes zigomáticos (maçã do rosto)? | Master Smile Studio, Antalya, Turquia",
     "introLead": "Os implantes zigomáticos são uma solução revolucionária para casos severos de perda óssea na maxila superior, ancorando-se na maçã do rosto sem necessidade de enxertos ósseos.",
     "introP1": "This innovative approach was developed in the 1990s by a Swedish professor, Per-Ingvar Brånemark, who pioneered the concept of osseointegration – the process of fusing dental implants with the surrounding bone. Zygomatic implants take this concept a step further by utilizing the zygomatic bone (cheekbone), which often remains strong and dense even when the upper jaw has deteriorated due to tooth loss or other factors.",
-    "xrayImgAlt": "Zygomatic and Pterygoid (Cheekbone) Implants in Istanbul - dental implants in cheekbone",
+    "xrayImgAlt": "Zygomatic and Pterygoid (Cheekbone) Implants in Antalya - dental implants in cheekbone",
     "xrayCaption": "3D Panoramic Craniofacial X-Ray: Quad Zygomatic & Pterygoid Implants Anchored Directly into Dense Cortical Cheekbone",
     "howWorkTitle": "Como funcionam os implantes zigomáticos?",
     "howWorkP": "Com comprimentos de 30 a 55 mm, os implantes zigomáticos alcançam o osso zigomático, criando uma base sólida para dentes fixos imediatos em 24 horas.",
@@ -2320,7 +2320,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "introP3LinkAll6": "All-on-6 Dental Implants",
     "introP3And": ", or ",
     "introP3LinkSinus": "Sinus Lifting & Bone Grafting",
-    "introP3Tail": " solutions in Istanbul.",
+    "introP3Tail": " solutions in Antalya.",
     "candidacyTitle": "Are You a Candidate for Zygomatic & Pterygoid Implants?",
     "candidacySubtitle": "If you have been told by other dentists that you \"have no bone left\" for regular implants, zygomatic surgery is your definitive answer.",
     "candidacyPoints": [
@@ -2342,7 +2342,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       }
     ],
     "costIntroTitle1": "Custo dos Implantes Zigomáticos na Turquia:",
-    "costIntroTitle2": "Tratamento de Alta Qualidade e Acessível no Master Smile Studio, Istambul",
+    "costIntroTitle2": "Tratamento de Alta Qualidade e Acessível no Master Smile Studio, Antalya",
     "costIntroP1": "Um dos principais motivos pelos quais a Turquia é referência em implantes zigomáticos é o custo significativamente inferior com padrões hospitalares.",
     "costIntroP2": "O custo de um implante zigomático na Turquia em 2026 varia entre 2.350 € e 4.500 $.",
     "costIntroP3": "No Master Smile Studio o custo unitário é de 2.350 EUR / 2.770 USD / 2.050 GBP com planejamento 3D e bloco cirúrgico incluídos.",
@@ -2622,7 +2622,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       {
         "name": "HYBRID ZYGOMATIC PACKAGE",
         "brand": "Nobel Biocare / Straumann (2 Zygoma + 2-4 Anterior Implants)",
-        "duration": "5-7 Days in Istanbul (2 Visits Total)",
+        "duration": "5-7 Days in Antalya (2 Visits Total)",
         "img": "/packages/straumann.webp",
         "price": {
           "USD": "$7,600",
@@ -2644,7 +2644,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       {
         "name": "QUAD ZYGOMA TOTAL RECONSTRUCTION",
         "brand": "4 Zygomatic Implants (For 100% Maxillary Bone Loss)",
-        "duration": "5-7 Days in Istanbul (2 Visits Total)",
+        "duration": "5-7 Days in Antalya (2 Visits Total)",
         "img": "/packages/dxl.webp",
         "price": {
           "USD": "$9,800",
@@ -2734,10 +2734,10 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "benefit3Desc": "Studies have shown that zygomatic implants have a success rate of up to 97%, making them a reliable and predictable solution for patients with significant bone loss. This is a significant advantage over traditional implants, which may have a lower success rate when there's insufficient bone volume. Zygomatic implants are designed to provide a secure foundation in cases where conventional methods may fail.",
     "benefit4Title": "4. Restores Function and Aesthetics Quickly",
     "benefit4Desc": "Another major benefit of zygomatic implants is that they allow for the restoration of both function and aesthetics in a shorter amount of time compared to traditional implants. Patients who may have had difficulty chewing, speaking, or smiling due to severe bone loss can quickly restore their natural functions and regain their confidence.",
-    "evalH2": "Você é um candidato a implantes zigomáticos? | Master Smile Studio, Istambul",
+    "evalH2": "Você é um candidato a implantes zigomáticos? | Master Smile Studio, Antalya",
     "evalP1": "Zygomatic implants are primarily recommended for individuals who have experienced significant bone loss in the upper jaw, often caused by factors such as long-term tooth loss, periodontal disease, or trauma. If you’ve been told that you are not a suitable candidate for traditional dental implants, zygomatic implants may be the solution you’ve been searching for.",
     "evalHowDetermineH3": "How to Determine if You Are a Candidate for Zygomatic Implants?",
-    "evalHowDetermineP": "To assess whether zygomatic implants are the right option for you, your dentist or oral surgeon at Master Smile Studio, Istanbul, Turkey will conduct a thorough evaluation. This evaluation typically includes:",
+    "evalHowDetermineP": "To assess whether zygomatic implants are the right option for you, your dentist or oral surgeon at Master Smile Studio, Antalya, Turkey will conduct a thorough evaluation. This evaluation typically includes:",
     "evalExamTitle": "Comprehensive Dental Examination",
     "evalExamDesc": "A detailed oral examination will be conducted to assess the overall health of your teeth and gums.",
     "evalScansTitle": "X-Rays and CT Scans",
@@ -2753,10 +2753,10 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       "Blood disorders or medications that may affect healing"
     ],
     "evalHealthTail": "It’s essential to ensure that any medical conditions are well-managed before proceeding with zygomatic implants to achieve the best possible outcome.",
-    "prepH2": "Preparação para a Cirurgia de Implantes Zigomáticos no Master Smile Studio, Istambul",
+    "prepH2": "Preparação para a Cirurgia de Implantes Zigomáticos no Master Smile Studio, Antalya",
     "prepLead": "Preparing for your zygomatic implant surgery is crucial to ensure a smooth and successful procedure. Here are some general guidelines to follow before your surgery at Master Smile Studio:",
     "prep1Title": "1. Comprehensive Dental Evaluation",
-    "prep1Desc": "Before scheduling your zygomatic implant surgery in Istanbul, your dentist will conduct a thorough examination, including X-rays and advanced imaging techniques like CT scans. This evaluation will assess the condition of your jawbone and cheekbone, ensuring there’s enough bone volume to support the implant.",
+    "prep1Desc": "Before scheduling your zygomatic implant surgery in Antalya, your dentist will conduct a thorough examination, including X-rays and advanced imaging techniques like CT scans. This evaluation will assess the condition of your jawbone and cheekbone, ensuring there’s enough bone volume to support the implant.",
     "prep2Title": "2. Medical History Review",
     "prep2Desc": "Your dentist will review your medical history, including existing health conditions, medications, and past surgeries. This information is essential to determine if you are a suitable candidate for zygomatic implants and to identify any potential risks or complications.",
     "prep3Title": "3. Quit Smoking",
@@ -2767,9 +2767,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "prep5Desc": "Since you will likely be under the influence of anesthesia or sedation on the day of your surgery, it’s essential to arrange for a trusted friend, family member, or our dedicated VIP chauffeur team to drive you to and from the clinic.",
     "prep6Title": "6. Prepare for the Recovery Period",
     "prep6Desc": "Your dentist will provide you with detailed instructions on what to expect during the recovery process, including dietary restrictions, pain management, and follow-up appointments. Make sure to familiarize yourself with these guidelines. You may also want to prepare by stocking up on soft, easy-to-eat foods.",
-    "prepTail": "By following these preparation steps, you can ensure a smoother and more successful zygomatic implant procedure, setting the stage for a beautiful and confident new smile at Master Smile Studio in Istanbul.",
+    "prepTail": "By following these preparation steps, you can ensure a smoother and more successful zygomatic implant procedure, setting the stage for a beautiful and confident new smile at Master Smile Studio in Antalya.",
     "faqTitle": "Perguntas Frequentes: Implantes Zigomáticos",
-    "faqSubtitle": "Clinically verified answers regarding cheekbone anchoring, surgical recovery, bone grafting alternatives, and health tourism in Istanbul.",
+    "faqSubtitle": "Clinically verified answers regarding cheekbone anchoring, surgical recovery, bone grafting alternatives, and health tourism in Antalya.",
     "faqGroup1Title": "Clinical & Surgical Zygomatic FAQ (Severe Bone Loss Solutions)",
     "faqGroup2Title": "Health Tourism, VIP Inclusions & Warranty FAQ",
     "faqsPart1": [
@@ -2816,8 +2816,8 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     ],
     "faqsPart2": [
       {
-        "q": "How many days do I need to stay in Istanbul for Zygomatic implant surgery?",
-        "a": "Your first visit requires 5 to 7 days in Istanbul for 3D CBCT planning, hospital surgery, and delivery of your 24h fixed temporary teeth. After 3 months of osseointegration, you return for a 5-day visit for your final monolithic zirconia bridge."
+        "q": "How many days do I need to stay in Antalya for Zygomatic implant surgery?",
+        "a": "Your first visit requires 5 to 7 days in Antalya for 3D CBCT planning, hospital surgery, and delivery of your 24h fixed temporary teeth. After 3 months of osseointegration, you return for a 5-day visit for your final monolithic zirconia bridge."
       },
       {
         "q": "What is included in the Master Smile Studio Zygomatic Package?",
@@ -2828,8 +2828,8 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "a": "We work exclusively with globally certified manufacturers including Nobel Biocare (NobelZygoma), Straumann Group, and Southern Implants, all backed by official international guarantee passports."
       },
       {
-        "q": "Why are Zygomatic implants 70% more affordable in Istanbul than in the UK or US?",
-        "a": "Lower hospital facility costs, favorable exchange rates, and high clinical specialization in Istanbul allow us to deliver world-class maxillofacial surgery at transparent, accessible rates without compromising safety."
+        "q": "Why are Zygomatic implants 70% more affordable in Antalya than in the UK or US?",
+        "a": "Lower hospital facility costs, favorable exchange rates, and high clinical specialization in Antalya allow us to deliver world-class maxillofacial surgery at transparent, accessible rates without compromising safety."
       },
       {
         "q": "Do Zygomatic implants carry a lifetime warranty?",
@@ -2847,10 +2847,10 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
   },
   "es": {
     "introBadge": "IMPLANTES CIGOMÁTICOS Y PTERIGOIDEOS",
-    "introTitle": "¿Qué son los implantes cigomáticos (pómulo)? | Master Smile Studio, Estambul, Turquía",
+    "introTitle": "¿Qué son los implantes cigomáticos (pómulo)? | Master Smile Studio, Antalya, Turquía",
     "introLead": "Los implantes cigomáticos son una solución revolucionaria para casos graves de pérdida ósea maxilar, anclándose en el pómulo para ofrecer dientes fijos en 24h sin injertos óseos.",
     "introP1": "This innovative approach was developed in the 1990s by a Swedish professor, Per-Ingvar Brånemark, who pioneered the concept of osseointegration – the process of fusing dental implants with the surrounding bone. Zygomatic implants take this concept a step further by utilizing the zygomatic bone (cheekbone), which often remains strong and dense even when the upper jaw has deteriorated due to tooth loss or other factors.",
-    "xrayImgAlt": "Zygomatic and Pterygoid (Cheekbone) Implants in Istanbul - dental implants in cheekbone",
+    "xrayImgAlt": "Zygomatic and Pterygoid (Cheekbone) Implants in Antalya - dental implants in cheekbone",
     "xrayCaption": "3D Panoramic Craniofacial X-Ray: Quad Zygomatic & Pterygoid Implants Anchored Directly into Dense Cortical Cheekbone",
     "howWorkTitle": "¿Cómo funcionan los implantes cigomáticos?",
     "howWorkP": "Con una longitud de 30 a 55 mm, los implantes cigomáticos sobrepasan el maxilar atrofiado y se anclan en el hueso cigomático, proporcionando una fijación inquebrantable.",
@@ -2860,7 +2860,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "introP3LinkAll6": "All-on-6 Dental Implants",
     "introP3And": ", or ",
     "introP3LinkSinus": "Sinus Lifting & Bone Grafting",
-    "introP3Tail": " solutions in Istanbul.",
+    "introP3Tail": " solutions in Antalya.",
     "candidacyTitle": "Are You a Candidate for Zygomatic & Pterygoid Implants?",
     "candidacySubtitle": "If you have been told by other dentists that you \"have no bone left\" for regular implants, zygomatic surgery is your definitive answer.",
     "candidacyPoints": [
@@ -2882,7 +2882,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       }
     ],
     "costIntroTitle1": "Coste de los Implantes Cigomáticos en Turquía:",
-    "costIntroTitle2": "Tratamiento de Máxima Calidad en Master Smile Studio, Estambul",
+    "costIntroTitle2": "Tratamiento de Máxima Calidad en Master Smile Studio, Antalya",
     "costIntroP1": "Una de las principales razones del éxito de Turquía en implantes cigomáticos es el ahorro de hasta un 70% respecto a otros países.",
     "costIntroP2": "El coste de un implante cigomático en Turquía en 2026 oscila entre 2.350 € ve 4.500 $.",
     "costIntroP3": "En Master Smile Studio el precio por implante cigomático es de 2.350 EUR / 2.770 USD / 2.050 GBP con quirófano y diagnóstico 3D incluidos.",
@@ -3162,7 +3162,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       {
         "name": "HYBRID ZYGOMATIC PACKAGE",
         "brand": "Nobel Biocare / Straumann (2 Zygoma + 2-4 Anterior Implants)",
-        "duration": "5-7 Days in Istanbul (2 Visits Total)",
+        "duration": "5-7 Days in Antalya (2 Visits Total)",
         "img": "/packages/straumann.webp",
         "price": {
           "USD": "$7,600",
@@ -3184,7 +3184,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       {
         "name": "QUAD ZYGOMA TOTAL RECONSTRUCTION",
         "brand": "4 Zygomatic Implants (For 100% Maxillary Bone Loss)",
-        "duration": "5-7 Days in Istanbul (2 Visits Total)",
+        "duration": "5-7 Days in Antalya (2 Visits Total)",
         "img": "/packages/dxl.webp",
         "price": {
           "USD": "$9,800",
@@ -3274,10 +3274,10 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "benefit3Desc": "Studies have shown that zygomatic implants have a success rate of up to 97%, making them a reliable and predictable solution for patients with significant bone loss. This is a significant advantage over traditional implants, which may have a lower success rate when there's insufficient bone volume. Zygomatic implants are designed to provide a secure foundation in cases where conventional methods may fail.",
     "benefit4Title": "4. Restores Function and Aesthetics Quickly",
     "benefit4Desc": "Another major benefit of zygomatic implants is that they allow for the restoration of both function and aesthetics in a shorter amount of time compared to traditional implants. Patients who may have had difficulty chewing, speaking, or smiling due to severe bone loss can quickly restore their natural functions and regain their confidence.",
-    "evalH2": "¿Es usted candidato a implantes cigomáticos? | Master Smile Studio, Estambul",
+    "evalH2": "¿Es usted candidato a implantes cigomáticos? | Master Smile Studio, Antalya",
     "evalP1": "Zygomatic implants are primarily recommended for individuals who have experienced significant bone loss in the upper jaw, often caused by factors such as long-term tooth loss, periodontal disease, or trauma. If you’ve been told that you are not a suitable candidate for traditional dental implants, zygomatic implants may be the solution you’ve been searching for.",
     "evalHowDetermineH3": "How to Determine if You Are a Candidate for Zygomatic Implants?",
-    "evalHowDetermineP": "To assess whether zygomatic implants are the right option for you, your dentist or oral surgeon at Master Smile Studio, Istanbul, Turkey will conduct a thorough evaluation. This evaluation typically includes:",
+    "evalHowDetermineP": "To assess whether zygomatic implants are the right option for you, your dentist or oral surgeon at Master Smile Studio, Antalya, Turkey will conduct a thorough evaluation. This evaluation typically includes:",
     "evalExamTitle": "Comprehensive Dental Examination",
     "evalExamDesc": "A detailed oral examination will be conducted to assess the overall health of your teeth and gums.",
     "evalScansTitle": "X-Rays and CT Scans",
@@ -3293,10 +3293,10 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       "Blood disorders or medications that may affect healing"
     ],
     "evalHealthTail": "It’s essential to ensure that any medical conditions are well-managed before proceeding with zygomatic implants to achieve the best possible outcome.",
-    "prepH2": "Preparación para la Cirugía de Implantes Cigomáticos en Master Smile Studio, Estambul",
+    "prepH2": "Preparación para la Cirugía de Implantes Cigomáticos en Master Smile Studio, Antalya",
     "prepLead": "Preparing for your zygomatic implant surgery is crucial to ensure a smooth and successful procedure. Here are some general guidelines to follow before your surgery at Master Smile Studio:",
     "prep1Title": "1. Comprehensive Dental Evaluation",
-    "prep1Desc": "Before scheduling your zygomatic implant surgery in Istanbul, your dentist will conduct a thorough examination, including X-rays and advanced imaging techniques like CT scans. This evaluation will assess the condition of your jawbone and cheekbone, ensuring there’s enough bone volume to support the implant.",
+    "prep1Desc": "Before scheduling your zygomatic implant surgery in Antalya, your dentist will conduct a thorough examination, including X-rays and advanced imaging techniques like CT scans. This evaluation will assess the condition of your jawbone and cheekbone, ensuring there’s enough bone volume to support the implant.",
     "prep2Title": "2. Medical History Review",
     "prep2Desc": "Your dentist will review your medical history, including existing health conditions, medications, and past surgeries. This information is essential to determine if you are a suitable candidate for zygomatic implants and to identify any potential risks or complications.",
     "prep3Title": "3. Quit Smoking",
@@ -3307,9 +3307,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "prep5Desc": "Since you will likely be under the influence of anesthesia or sedation on the day of your surgery, it’s essential to arrange for a trusted friend, family member, or our dedicated VIP chauffeur team to drive you to and from the clinic.",
     "prep6Title": "6. Prepare for the Recovery Period",
     "prep6Desc": "Your dentist will provide you with detailed instructions on what to expect during the recovery process, including dietary restrictions, pain management, and follow-up appointments. Make sure to familiarize yourself with these guidelines. You may also want to prepare by stocking up on soft, easy-to-eat foods.",
-    "prepTail": "By following these preparation steps, you can ensure a smoother and more successful zygomatic implant procedure, setting the stage for a beautiful and confident new smile at Master Smile Studio in Istanbul.",
+    "prepTail": "By following these preparation steps, you can ensure a smoother and more successful zygomatic implant procedure, setting the stage for a beautiful and confident new smile at Master Smile Studio in Antalya.",
     "faqTitle": "Preguntas Frecuentes: Implantes Cigomáticos",
-    "faqSubtitle": "Clinically verified answers regarding cheekbone anchoring, surgical recovery, bone grafting alternatives, and health tourism in Istanbul.",
+    "faqSubtitle": "Clinically verified answers regarding cheekbone anchoring, surgical recovery, bone grafting alternatives, and health tourism in Antalya.",
     "faqGroup1Title": "Clinical & Surgical Zygomatic FAQ (Severe Bone Loss Solutions)",
     "faqGroup2Title": "Health Tourism, VIP Inclusions & Warranty FAQ",
     "faqsPart1": [
@@ -3356,8 +3356,8 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     ],
     "faqsPart2": [
       {
-        "q": "How many days do I need to stay in Istanbul for Zygomatic implant surgery?",
-        "a": "Your first visit requires 5 to 7 days in Istanbul for 3D CBCT planning, hospital surgery, and delivery of your 24h fixed temporary teeth. After 3 months of osseointegration, you return for a 5-day visit for your final monolithic zirconia bridge."
+        "q": "How many days do I need to stay in Antalya for Zygomatic implant surgery?",
+        "a": "Your first visit requires 5 to 7 days in Antalya for 3D CBCT planning, hospital surgery, and delivery of your 24h fixed temporary teeth. After 3 months of osseointegration, you return for a 5-day visit for your final monolithic zirconia bridge."
       },
       {
         "q": "What is included in the Master Smile Studio Zygomatic Package?",
@@ -3368,8 +3368,8 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "a": "We work exclusively with globally certified manufacturers including Nobel Biocare (NobelZygoma), Straumann Group, and Southern Implants, all backed by official international guarantee passports."
       },
       {
-        "q": "Why are Zygomatic implants 70% more affordable in Istanbul than in the UK or US?",
-        "a": "Lower hospital facility costs, favorable exchange rates, and high clinical specialization in Istanbul allow us to deliver world-class maxillofacial surgery at transparent, accessible rates without compromising safety."
+        "q": "Why are Zygomatic implants 70% more affordable in Antalya than in the UK or US?",
+        "a": "Lower hospital facility costs, favorable exchange rates, and high clinical specialization in Antalya allow us to deliver world-class maxillofacial surgery at transparent, accessible rates without compromising safety."
       },
       {
         "q": "Do Zygomatic implants carry a lifetime warranty?",
@@ -3387,10 +3387,10 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
   },
   "ru": {
     "introBadge": "СКУЛОВАЯ ИМПЛАНТАЦИЯ ZYGOMA И PTERYGOID",
-    "introTitle": "Что такое скуловые импланты (Zygoma)? | Master Smile Studio, Стамбул, Турция",
+    "introTitle": "Что такое скуловые импланты (Zygoma)? | Master Smile Studio, Анталья, Турция",
     "introLead": "Скуловые импланты Zygoma — революционное решение при критической атрофии верхней челюсти, фиксируемое в плотной скуловой кости без костной пластики.",
     "introP1": "This innovative approach was developed in the 1990s by a Swedish professor, Per-Ingvar Brånemark, who pioneered the concept of osseointegration – the process of fusing dental implants with the surrounding bone. Zygomatic implants take this concept a step further by utilizing the zygomatic bone (cheekbone), which often remains strong and dense even when the upper jaw has deteriorated due to tooth loss or other factors.",
-    "xrayImgAlt": "Zygomatic and Pterygoid (Cheekbone) Implants in Istanbul - dental implants in cheekbone",
+    "xrayImgAlt": "Zygomatic and Pterygoid (Cheekbone) Implants in Antalya - dental implants in cheekbone",
     "xrayCaption": "3D Panoramic Craniofacial X-Ray: Quad Zygomatic & Pterygoid Implants Anchored Directly into Dense Cortical Cheekbone",
     "howWorkTitle": "Как работают скуловые импланты?",
     "howWorkP": "Длина имплантов Zygoma (от 30 do 55 мм) позволяет закрепить их в стабильной скуловой кости в обход гайморовых пазух, обеспечивая несъемные зубы за 24 часа.",
@@ -3400,7 +3400,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "introP3LinkAll6": "All-on-6 Dental Implants",
     "introP3And": ", or ",
     "introP3LinkSinus": "Sinus Lifting & Bone Grafting",
-    "introP3Tail": " solutions in Istanbul.",
+    "introP3Tail": " solutions in Antalya.",
     "candidacyTitle": "Are You a Candidate for Zygomatic & Pterygoid Implants?",
     "candidacySubtitle": "If you have been told by other dentists that you \"have no bone left\" for regular implants, zygomatic surgery is your definitive answer.",
     "candidacyPoints": [
@@ -3422,7 +3422,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       }
     ],
     "costIntroTitle1": "Стоимость скуловых имплантов Zygoma в Турции:",
-    "costIntroTitle2": "Доступное лечение премиум-класса в Master Smile Studio, Стамбул",
+    "costIntroTitle2": "Доступное лечение премиум-класса в Master Smile Studio, Анталья",
     "costIntroP1": "Главная причина популярности Турции в скуловой имплантации — доступные цены при высочайших госпитальных стандартах хирургии.",
     "costIntroP2": "Стоимость одного скулового импланта в Турции в 2026 году составляет от 2 350 € до 4 500 $.",
     "costIntroP3": "В Master Smile Studio цена одного скулового импланта составляет 2 350 EUR / 2 770 USD / 2 050 GBP включая 3D-планирование и операционный блок.",
@@ -3702,7 +3702,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       {
         "name": "HYBRID ZYGOMATIC PACKAGE",
         "brand": "Nobel Biocare / Straumann (2 Zygoma + 2-4 Anterior Implants)",
-        "duration": "5-7 Days in Istanbul (2 Visits Total)",
+        "duration": "5-7 Days in Antalya (2 Visits Total)",
         "img": "/packages/straumann.webp",
         "price": {
           "USD": "$7,600",
@@ -3724,7 +3724,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       {
         "name": "QUAD ZYGOMA TOTAL RECONSTRUCTION",
         "brand": "4 Zygomatic Implants (For 100% Maxillary Bone Loss)",
-        "duration": "5-7 Days in Istanbul (2 Visits Total)",
+        "duration": "5-7 Days in Antalya (2 Visits Total)",
         "img": "/packages/dxl.webp",
         "price": {
           "USD": "$9,800",
@@ -3814,10 +3814,10 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "benefit3Desc": "Studies have shown that zygomatic implants have a success rate of up to 97%, making them a reliable and predictable solution for patients with significant bone loss. This is a significant advantage over traditional implants, which may have a lower success rate when there's insufficient bone volume. Zygomatic implants are designed to provide a secure foundation in cases where conventional methods may fail.",
     "benefit4Title": "4. Restores Function and Aesthetics Quickly",
     "benefit4Desc": "Another major benefit of zygomatic implants is that they allow for the restoration of both function and aesthetics in a shorter amount of time compared to traditional implants. Patients who may have had difficulty chewing, speaking, or smiling due to severe bone loss can quickly restore their natural functions and regain their confidence.",
-    "evalH2": "Подходите ли вы для скуловой имплантации? | Master Smile Studio, Стамбул",
+    "evalH2": "Подходите ли вы для скуловой имплантации? | Master Smile Studio, Анталья",
     "evalP1": "Zygomatic implants are primarily recommended for individuals who have experienced significant bone loss in the upper jaw, often caused by factors such as long-term tooth loss, periodontal disease, or trauma. If you’ve been told that you are not a suitable candidate for traditional dental implants, zygomatic implants may be the solution you’ve been searching for.",
     "evalHowDetermineH3": "How to Determine if You Are a Candidate for Zygomatic Implants?",
-    "evalHowDetermineP": "To assess whether zygomatic implants are the right option for you, your dentist or oral surgeon at Master Smile Studio, Istanbul, Turkey will conduct a thorough evaluation. This evaluation typically includes:",
+    "evalHowDetermineP": "To assess whether zygomatic implants are the right option for you, your dentist or oral surgeon at Master Smile Studio, Antalya, Turkey will conduct a thorough evaluation. This evaluation typically includes:",
     "evalExamTitle": "Comprehensive Dental Examination",
     "evalExamDesc": "A detailed oral examination will be conducted to assess the overall health of your teeth and gums.",
     "evalScansTitle": "X-Rays and CT Scans",
@@ -3833,10 +3833,10 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       "Blood disorders or medications that may affect healing"
     ],
     "evalHealthTail": "It’s essential to ensure that any medical conditions are well-managed before proceeding with zygomatic implants to achieve the best possible outcome.",
-    "prepH2": "Подготовка к операции по установке скуловых имплантов в Master Smile Studio, Стамбул",
+    "prepH2": "Подготовка к операции по установке скуловых имплантов в Master Smile Studio, Анталья",
     "prepLead": "Preparing for your zygomatic implant surgery is crucial to ensure a smooth and successful procedure. Here are some general guidelines to follow before your surgery at Master Smile Studio:",
     "prep1Title": "1. Comprehensive Dental Evaluation",
-    "prep1Desc": "Before scheduling your zygomatic implant surgery in Istanbul, your dentist will conduct a thorough examination, including X-rays and advanced imaging techniques like CT scans. This evaluation will assess the condition of your jawbone and cheekbone, ensuring there’s enough bone volume to support the implant.",
+    "prep1Desc": "Before scheduling your zygomatic implant surgery in Antalya, your dentist will conduct a thorough examination, including X-rays and advanced imaging techniques like CT scans. This evaluation will assess the condition of your jawbone and cheekbone, ensuring there’s enough bone volume to support the implant.",
     "prep2Title": "2. Medical History Review",
     "prep2Desc": "Your dentist will review your medical history, including existing health conditions, medications, and past surgeries. This information is essential to determine if you are a suitable candidate for zygomatic implants and to identify any potential risks or complications.",
     "prep3Title": "3. Quit Smoking",
@@ -3847,9 +3847,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "prep5Desc": "Since you will likely be under the influence of anesthesia or sedation on the day of your surgery, it’s essential to arrange for a trusted friend, family member, or our dedicated VIP chauffeur team to drive you to and from the clinic.",
     "prep6Title": "6. Prepare for the Recovery Period",
     "prep6Desc": "Your dentist will provide you with detailed instructions on what to expect during the recovery process, including dietary restrictions, pain management, and follow-up appointments. Make sure to familiarize yourself with these guidelines. You may also want to prepare by stocking up on soft, easy-to-eat foods.",
-    "prepTail": "By following these preparation steps, you can ensure a smoother and more successful zygomatic implant procedure, setting the stage for a beautiful and confident new smile at Master Smile Studio in Istanbul.",
+    "prepTail": "By following these preparation steps, you can ensure a smoother and more successful zygomatic implant procedure, setting the stage for a beautiful and confident new smile at Master Smile Studio in Antalya.",
     "faqTitle": "Часто Задаваемые Вопросы: Скуловые Импланты",
-    "faqSubtitle": "Clinically verified answers regarding cheekbone anchoring, surgical recovery, bone grafting alternatives, and health tourism in Istanbul.",
+    "faqSubtitle": "Clinically verified answers regarding cheekbone anchoring, surgical recovery, bone grafting alternatives, and health tourism in Antalya.",
     "faqGroup1Title": "Clinical & Surgical Zygomatic FAQ (Severe Bone Loss Solutions)",
     "faqGroup2Title": "Health Tourism, VIP Inclusions & Warranty FAQ",
     "faqsPart1": [
@@ -3896,8 +3896,8 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     ],
     "faqsPart2": [
       {
-        "q": "How many days do I need to stay in Istanbul for Zygomatic implant surgery?",
-        "a": "Your first visit requires 5 to 7 days in Istanbul for 3D CBCT planning, hospital surgery, and delivery of your 24h fixed temporary teeth. After 3 months of osseointegration, you return for a 5-day visit for your final monolithic zirconia bridge."
+        "q": "How many days do I need to stay in Antalya for Zygomatic implant surgery?",
+        "a": "Your first visit requires 5 to 7 days in Antalya for 3D CBCT planning, hospital surgery, and delivery of your 24h fixed temporary teeth. After 3 months of osseointegration, you return for a 5-day visit for your final monolithic zirconia bridge."
       },
       {
         "q": "What is included in the Master Smile Studio Zygomatic Package?",
@@ -3908,8 +3908,8 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "a": "We work exclusively with globally certified manufacturers including Nobel Biocare (NobelZygoma), Straumann Group, and Southern Implants, all backed by official international guarantee passports."
       },
       {
-        "q": "Why are Zygomatic implants 70% more affordable in Istanbul than in the UK or US?",
-        "a": "Lower hospital facility costs, favorable exchange rates, and high clinical specialization in Istanbul allow us to deliver world-class maxillofacial surgery at transparent, accessible rates without compromising safety."
+        "q": "Why are Zygomatic implants 70% more affordable in Antalya than in the UK or US?",
+        "a": "Lower hospital facility costs, favorable exchange rates, and high clinical specialization in Antalya allow us to deliver world-class maxillofacial surgery at transparent, accessible rates without compromising safety."
       },
       {
         "q": "Do Zygomatic implants carry a lifetime warranty?",
@@ -3996,8 +3996,8 @@ export default function ZygomaticImplantDetailView() {
           {/* Full-width 16:9 Clinical Zygomatic Procedure Video (LR_r40rBzb4) */}
           <div className={styles.mainVideoWrap}>
             <iframe
-              src="https://www.youtube.com/embed/LR_r40rBzb4"
-              title="Zygomatic and Pterygoid Dental Implants in Istanbul Clinical Procedure"
+              src="https://www.youtube.com/embed/eiTTit9PLrQ"
+              title="Zygomatic and Pterygoid Dental Implants in Antalya Clinical Procedure"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             />
@@ -4044,8 +4044,8 @@ export default function ZygomaticImplantDetailView() {
           {/* Second Clinical Video: K4Xpx7JMyr8 */}
           <div className={styles.mainVideoWrap}>
             <iframe
-              src="https://www.youtube.com/embed/K4Xpx7JMyr8?t=1"
-              title="Zygomatic and Cheekbone Dental Implants Cost and Procedure in Istanbul"
+              src="https://www.youtube.com/embed/haSWVr2smMM?t=1"
+              title="Zygomatic and Cheekbone Dental Implants Cost and Procedure in Antalya"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             />
@@ -4263,8 +4263,8 @@ export default function ZygomaticImplantDetailView() {
           {/* 3rd Clinical YouTube Video (R081L98DAls) */}
           <div className={styles.mainVideoWrap} style={{ marginTop: '2.5rem' }}>
             <iframe
-              src="https://www.youtube.com/embed/R081L98DAls"
-              title="Zygomatic and Cheekbone Dental Implants Real Patient Case Istanbul"
+              src="https://www.youtube.com/embed/eiTTit9PLrQ"
+              title="Zygomatic and Cheekbone Dental Implants Real Patient Case Antalya"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             />

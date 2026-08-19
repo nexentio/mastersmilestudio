@@ -26,7 +26,7 @@ interface LocalizedText {
 const I18N_DATA: Record<string, LocalizedText> = {
   en: {
     heading: 'From First Consultation to Your Dream Smile',
-    desc: 'Real patient smile transformations with custom Ivoclar E-Max and porcelain veneers at Master Smile Studio Istanbul.',
+    desc: 'Real patient smile transformations with custom Ivoclar E-Max and porcelain veneers at Master Smile Studio Antalya.',
     viewGallery: 'View Full Veneer Gallery →',
     cases: [
       {
@@ -49,7 +49,7 @@ const I18N_DATA: Record<string, LocalizedText> = {
   },
   tr: {
     heading: 'İlk Muayeneden Kusursuz Gülüşe',
-    desc: 'Master Smile Studio İstanbul’da kişiye özel Ivoclar E-Max ve porselen laminalarla hayata geçirilen gerçek hasta dönüşümleri.',
+    desc: 'Master Smile Studio Antalya’da kişiye özel Ivoclar E-Max ve porselen laminalarla hayata geçirilen gerçek hasta dönüşümleri.',
     viewGallery: 'Tüm Lamina Galerisini İncele →',
     cases: [
       {
@@ -72,7 +72,7 @@ const I18N_DATA: Record<string, LocalizedText> = {
   },
   de: {
     heading: 'Von der ersten Beratung zum perfekten Lächeln',
-    desc: 'Echte Patiententransformationen mit Ivoclar E-Max und Porzellan-Veneers bei Master Smile Studio Istanbul.',
+    desc: 'Echte Patiententransformationen mit Ivoclar E-Max und Porzellan-Veneers bei Master Smile Studio Antalya.',
     viewGallery: 'Vollständige Galerie ansehen →',
     cases: [
       {
@@ -95,7 +95,7 @@ const I18N_DATA: Record<string, LocalizedText> = {
   },
   pl: {
     heading: 'Od pierwszej wizyty do wymarzonego uśmiechu',
-    desc: 'Prawdziwe metamorfozy uśmiechów pacjentów z użyciem licówek Ivoclar E-Max w Master Smile Studio Stambuł.',
+    desc: 'Prawdziwe metamorfozy uśmiechów pacjentów z użyciem licówek Ivoclar E-Max w Master Smile Studio Antalya.',
     viewGallery: 'Zobacz całą galerię licówek →',
     cases: [
       {
@@ -118,7 +118,7 @@ const I18N_DATA: Record<string, LocalizedText> = {
   },
   pt: {
     heading: 'Da primeira consulta ao seu sorriso dos sonhos',
-    desc: 'Transformações reais com facetas de porcelana Ivoclar E-Max na Master Smile Studio Istambul.',
+    desc: 'Transformações reais com facetas de porcelana Ivoclar E-Max na Master Smile Studio Antalya.',
     viewGallery: 'Ver galeria completa de facetas →',
     cases: [
       {
@@ -141,7 +141,7 @@ const I18N_DATA: Record<string, LocalizedText> = {
   },
   es: {
     heading: 'De la primera consulta a su sonrisa soñada',
-    desc: 'Transformaciones reales de pacientes con carillas de porcelana Ivoclar E-Max en Master Smile Studio Estambul.',
+    desc: 'Transformaciones reales de pacientes con carillas de porcelana Ivoclar E-Max en Master Smile Studio Antalya.',
     viewGallery: 'Ver galería completa de carillas →',
     cases: [
       {
@@ -164,7 +164,7 @@ const I18N_DATA: Record<string, LocalizedText> = {
   },
   ru: {
     heading: 'От первой консультации до идеальной улыбки',
-    desc: 'Реальные преображения пациентов с помощью виниров Ivoclar E-Max в Master Smile Studio Стамбул.',
+    desc: 'Реальные преображения пациентов с помощью виниров Ivoclar E-Max в Master Smile Studio Анталья.',
     viewGallery: 'Посмотреть всю галерею виниров →',
     cases: [
       {
@@ -188,10 +188,10 @@ const I18N_DATA: Record<string, LocalizedText> = {
 };
 
 const VENEER_CASE_IMAGES = [
-  'https://sohodent.com/doc/data1/porcelain-laminate-copy.webp',
-  'https://sohodent.com/doc/data1/e-max-laminate-copy.webp',
-  'https://sohodent.com/doc/data1/lumineer-copy.webp',
-  'https://sohodent.com/doc/data1/composite-laminate-copy.webp',
+  '/treatments/accordion/porcelain-laminate-copy.webp',
+  '/treatments/accordion/e-max-laminate-copy.webp',
+  '/treatments/accordion/lumineers.webp',
+  '/treatments/accordion/composite-laminate.webp',
 ];
 
 export default function TreatmentVeneerBeforeAfterSliderSection() {

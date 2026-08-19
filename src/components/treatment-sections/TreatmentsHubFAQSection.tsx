@@ -17,20 +17,20 @@ interface FAQDictionary {
 
 const HUB_FAQ_DATA: Record<string, FAQDictionary> = {
   en: {
-    title: 'Frequently Asked Questions About Dental Treatments in Istanbul',
+    title: 'Frequently Asked Questions About Dental Treatments in Antalya',
     subText:
-      'Everything you need to know about planning your dental trip to Istanbul, treatment timelines, materials, guarantees, and VIP medical travel.',
+      'Everything you need to know about planning your dental trip to Antalya, treatment timelines, materials, guarantees, and VIP medical travel.',
     items: [
       {
         q: 'How do I know which dental treatment is right for me?',
-        a: 'Before your journey to Istanbul, our senior clinical team conducts a comprehensive digital consultation. By reviewing your panoramic X-rays, 3D CBCT scans, or high-resolution facial photos, we create a bespoke treatment plan detailing whether you need dental implants, zirconia crowns, E-Max veneers, or general restorative care.',
+        a: 'Before your journey to Antalya, our senior clinical team conducts a comprehensive digital consultation. By reviewing your panoramic X-rays, 3D CBCT scans, or high-resolution facial photos, we create a bespoke treatment plan detailing whether you need dental implants, zirconia crowns, E-Max veneers, or general restorative care.',
       },
       {
-        q: 'Why are dental treatments in Istanbul, Turkey up to 70% more affordable than the UK, US, or Europe?',
+        q: 'Why are dental treatments in Antalya, Turkey up to 70% more affordable than the UK, US, or Europe?',
         a: 'The significant cost advantage is due to lower operational costs, competitive laboratory fees, and favorable currency exchange rates in Turkey — not a compromise in quality. At Master Smile Studio, we use genuine Swiss Straumann implants, German Zirconia, and Swiss Ivoclar E-Max ceramics.',
       },
       {
-        q: 'How many days do I need to stay in Istanbul for my treatment?',
+        q: 'How many days do I need to stay in Antalya for my treatment?',
         a: 'Most cosmetic transformations (Veneers, Zirconia Crowns, Dental Bridges, Hollywood Smile) take only 4 to 6 days in a single visit. For full-arch dental implants (All-on-4 / All-on-6), treatment is typically completed in two short visits (Visit 1: 3 days for surgical implant placement; Visit 2: 4–5 days for permanent zirconia teeth).',
       },
       {
@@ -43,7 +43,7 @@ const HUB_FAQ_DATA: Record<string, FAQDictionary> = {
       },
       {
         q: 'What is included in your VIP Dental Tourism packages?',
-        a: 'Our all-inclusive packages include 5-star hotel accommodation in central Istanbul, private Mercedes VIP airport and clinic transfers, all 3D tomography scans and medications, personalized multilingual patient hosting, and complete laboratory work.',
+        a: 'Our all-inclusive packages include 5-star hotel accommodation in central Antalya, private Mercedes VIP airport and clinic transfers, all 3D tomography scans and medications, personalized multilingual patient hosting, and complete laboratory work.',
       },
       {
         q: 'Can I see a 3D digital simulation of my new smile before treatment starts?',
@@ -71,15 +71,15 @@ const HUB_FAQ_DATA: Record<string, FAQDictionary> = {
       },
       {
         q: 'Can I pay for my dental package in installments?',
-        a: 'Yes. An initial deposit confirms your treatment and hotel booking, with the remaining balance payable across your clinic appointments in Istanbul.',
+        a: 'Yes. An initial deposit confirms your treatment and hotel booking, with the remaining balance payable across your clinic appointments in Antalya.',
       },
       {
         q: 'What safety and sterilization standards are practiced in the clinic?',
         a: 'Our clinic operates under strict European hospital-grade sterilization protocols using Class-B autoclaves, ultrasonic instrument disinfection, and single-use surgical barrier packs.',
       },
       {
-        q: 'Is it safe to travel to Istanbul, Turkey for medical and dental care?',
-        a: 'Yes! Istanbul is one of the world’s top medical tourism capitals, welcoming millions of international patients annually. With our private VIP chauffeur and dedicated patient coordinators, your entire journey is comfortable and secure.',
+        q: 'Is it safe to travel to Antalya, Turkey for medical and dental care?',
+        a: 'Yes! Antalya is one of the world’s top medical tourism capitals, welcoming millions of international patients annually. With our private VIP chauffeur and dedicated patient coordinators, your entire journey is comfortable and secure.',
       },
       {
         q: 'How do I start and get a free dental quote?',
@@ -88,20 +88,20 @@ const HUB_FAQ_DATA: Record<string, FAQDictionary> = {
     ],
   },
   tr: {
-    title: 'İstanbul Diş Tedavileri Hakkında Sıkça Sorulan Sorular',
+    title: 'Antalya Diş Tedavileri Hakkında Sıkça Sorulan Sorular',
     subText:
-      'İstanbul’daki diş tedavisi seyahatiniz, tedavi süreleri, malzemeler, uluslararası garantiler ve VIP sağlık turizmi hizmetlerimiz hakkında tüm klinik detaylar.',
+      'Antalya’daki diş tedavisi seyahatiniz, tedavi süreleri, malzemeler, uluslararası garantiler ve VIP sağlık turizmi hizmetlerimiz hakkında tüm klinik detaylar.',
     items: [
       {
         q: 'Benim için en doğru diş tedavisinin hangisi olduğunu nasıl öğrenebilirim?',
-        a: 'İstanbul’a gelmeden önce uzman hekim kadromuz dijital ön konsültasyon gerçekleştirir. Bize ilettiğiniz panoramik röntgen, 3D tomografi veya net fotoğraflar incelenerek implant, zirkonyum, lamina veya genel diş tedavilerinden hangisinin size uygun olduğu belirlenir.',
+        a: 'Antalya’ya gelmeden önce uzman hekim kadromuz dijital ön konsültasyon gerçekleştirir. Bize ilettiğiniz panoramik röntgen, 3D tomografi veya net fotoğraflar incelenerek implant, zirkonyum, lamina veya genel diş tedavilerinden hangisinin size uygun olduğu belirlenir.',
       },
       {
-        q: 'İstanbul’da diş tedavileri Avrupa ve İngiltere’ye göre neden %70 daha uygun?',
+        q: 'Antalya’da diş tedavileri Avrupa ve İngiltere’ye göre neden %70 daha uygun?',
         a: 'Fiyat avantajı kaliteden ödün verildiği için değil; Türkiye’deki klinik işletme maliyetlerinin düşüklüğü, rekabetçi laboratuvar ücretleri ve kur farkından kaynaklanır. Kliniğimizde orijinal İsviçre Straumann ve Alman Zirkonyum kullanılmaktadır.',
       },
       {
-        q: 'Diş tedavim için İstanbul’da kaç gün kalmam gerekir?',
+        q: 'Diş tedavim için Antalya’da kaç gün kalmam gerekir?',
         a: 'Estetik gülüş tasarımları (Lamine, Zirkonyum Kron, Diş Köprüsü) tek ziyarette 4 ila 6 günde tamamlanır. Tam çene implant tedavileri (All-on-4 / All-on-6) ise 2 ziyarette tamamlanır (1. Ziyaret: 3 gün implant cerrahisi; 2. Ziyaret: 4–5 gün kalıcı zirkonyum dişler).',
       },
       {
@@ -114,7 +114,7 @@ const HUB_FAQ_DATA: Record<string, FAQDictionary> = {
       },
       {
         q: 'VIP Sağlık Turizmi paketlerine neler dahildir?',
-        a: 'Her şey dahil paketlerimize İstanbul’un merkezinde 5 yıldızlı otel konaklaması, havalimanı ve klinik arası VIP Mercedes transferler, tüm 3D tomografi ve ilaçlar ile kendi dilinizde hasta danışmanlığı dahildir.',
+        a: 'Her şey dahil paketlerimize Antalya’nın merkezinde 5 yıldızlı otel konaklaması, havalimanı ve klinik arası VIP Mercedes transferler, tüm 3D tomografi ve ilaçlar ile kendi dilinizde hasta danışmanlığı dahildir.',
       },
       {
         q: 'Tedaviye başlamadan önce yeni gülüşümü 3D olarak görebilir miyim?',
@@ -142,15 +142,15 @@ const HUB_FAQ_DATA: Record<string, FAQDictionary> = {
       },
       {
         q: 'Tedavi ücretini taksitle ödeyebilir miyim?',
-        a: 'Evet, tedavi onayında cüzi bir ön depozito alınır, kalan tutar ise İstanbul’daki seanslarınıza bölünerek ödenebilir.',
+        a: 'Evet, tedavi onayında cüzi bir ön depozito alınır, kalan tutar ise Antalya’daki seanslarınıza bölünerek ödenebilir.',
       },
       {
         q: 'Kliniğinizde hijyen ve sterilizasyon standartları nasıl sağlanıyor?',
         a: 'Kliniğimizde B-sınıfı hastane tipi otoklavlar, ultrasonik alet dezenfeksiyonu ve tek kullanımlık steril cerrahi setler ile Avrupa standartlarında hijyen uygulanır.',
       },
       {
-        q: 'Diş tedavisi için İstanbul’a seyahat etmek güvenli midir?',
-        a: 'Evet! İstanbul dünyanın en popüler sağlık turizmi merkezidir. Özel VIP transfer şoförünüz ve kişisel hasta koordinatörünüz sayesinde tüm seyahatiniz güvenli ve konforlu geçer.',
+        q: 'Diş tedavisi için Antalya’ya seyahat etmek güvenli midir?',
+        a: 'Evet! Antalya dünyanın en popüler sağlık turizmi merkezidir. Özel VIP transfer şoförünüz ve kişisel hasta koordinatörünüz sayesinde tüm seyahatiniz güvenli ve konforlu geçer.',
       },
       {
         q: 'Ücretsiz fiyat teklifi ve tedavi planı nasıl alabilirim?',
@@ -159,20 +159,20 @@ const HUB_FAQ_DATA: Record<string, FAQDictionary> = {
     ],
   },
   de: {
-    title: 'Häufig gestellte Fragen zu Zahnbehandlungen in Istanbul',
+    title: 'Häufig gestellte Fragen zu Zahnbehandlungen in Antalya',
     subText:
-      'Alles über Ihre Zahnreise nach Istanbul, Behandlungszeiten, Materialien, Garantien und VIP-Gesundheitstourismus.',
+      'Alles über Ihre Zahnreise nach Antalya, Behandlungszeiten, Materialien, Garantien und VIP-Gesundheitstourismus.',
     items: [
       {
         q: 'Woher weiß ich, welche Zahnbehandlung für mich die richtige ist?',
         a: 'Vor Ihrer Reise führt unser Ärzteteam eine digitale Beratung anhand Ihrer Röntgenbilder und Fotos durch und erstellt einen maßgeschneiderten Behandlungsplan.',
       },
       {
-        q: 'Warum sind Behandlungen in Istanbul bis zu 70% günstiger als in Europa?',
+        q: 'Warum sind Behandlungen in Antalya bis zu 70% günstiger als in Europa?',
         a: 'Die Ersparnis basiert auf niedrigeren Betriebskosten und Wechselkursen in der Türkei — bei absolut kompromissloser Qualität mit Schweizer Straumann und deutschem Zirkon.',
       },
       {
-        q: 'Wie viele Tage Aufenthalt in Istanbul sind erforderlich?',
+        q: 'Wie viele Tage Aufenthalt in Antalya sind erforderlich?',
         a: 'Ästhetische Behandlungen (Veneers, Kronen, Brücken) dauern 4–6 Tage. Implantatbehandlungen erfolgen in 2 kurzen Reisen (1. Reise: 3 Tage; 2. Reise: 4–5 Tage).',
       },
       {
@@ -185,7 +185,7 @@ const HUB_FAQ_DATA: Record<string, FAQDictionary> = {
       },
       {
         q: 'Was ist in den VIP-Behandlungspaketen enthalten?',
-        a: '5-Sterne-Hotel im Herzen Istanbuls, VIP-Transfers mit Mercedes, 3D-Diagnostik, Medikamente und deutschsprachige Betreuung.',
+        a: '5-Sterne-Hotel im Herzen Antalyas, VIP-Transfers mit Mercedes, 3D-Diagnostik, Medikamente und deutschsprachige Betreuung.',
       },
       {
         q: 'Kann ich mein neues Lächeln vor der Behandlung in 3D sehen?',
@@ -213,15 +213,15 @@ const HUB_FAQ_DATA: Record<string, FAQDictionary> = {
       },
       {
         q: 'Kann ich die Behandlung in Raten zahlen?',
-        a: 'Ja, nach einer Anzahlung kann der Restbetrag auf die Behandlungstage in Istanbul aufgeteilt werden.',
+        a: 'Ja, nach einer Anzahlung kann der Restbetrag auf die Behandlungstage in Antalya aufgeteilt werden.',
       },
       {
         q: 'Welche Sterilisationsstandards gelten in der Klinik?',
         a: 'Europäische Krankenhaus-Hygienestandards mit B-Klasse Autoklaven und sterilen Einweg-Sets.',
       },
       {
-        q: 'Ist eine Reise zur Zahnbehandlung nach Istanbul sicher?',
-        a: 'Ja, Istanbul ist eine weltweite Metropole für Gesundheitstourismus. Mit eigenem Chauffeur und Koordinator verläuft Ihre Reise absolut sicher.',
+        q: 'Ist eine Reise zur Zahnbehandlung nach Antalya sicher?',
+        a: 'Ja, Antalya ist eine weltweite Metropole für Gesundheitstourismus. Mit eigenem Chauffeur und Koordinator verläuft Ihre Reise absolut sicher.',
       },
       {
         q: 'Wie erhalte ich ein kostenloses Angebot?',
@@ -230,20 +230,20 @@ const HUB_FAQ_DATA: Record<string, FAQDictionary> = {
     ],
   },
   pl: {
-    title: 'Często Zadawane Pytania o Leczenie Stomatologiczne w Stambule',
+    title: 'Często Zadawane Pytania o Leczenie Stomatologiczne w Antalyi',
     subText:
-      'Wszystko o planowaniu podróży do Stambułu, czasie trwania leczenia, materiałach, gwarancjach i pakietach VIP.',
+      'Wszystko o planowaniu podróży do Antalyi, czasie trwania leczenia, materiałach, gwarancjach i pakietach VIP.',
     items: [
       {
         q: 'Skąd mam wiedzieć, jaki zabieg jest dla mnie odpowiedni?',
-        a: 'Nasz zespół medyczny przeprowadza bezpłatną konsultację cyfrową na podstawie zdjęć RTG lub tomografii 3D przed Twoim przylotem do Stambułu.',
+        a: 'Nasz zespół medyczny przeprowadza bezpłatną konsultację cyfrową na podstawie zdjęć RTG lub tomografii 3D przed Twoim przylotem do Antalyi.',
       },
       {
-        q: 'Dlaczego leczenie w Stambule jest o 70% tańsze niż w Polsce i Europie Zachodniej?',
+        q: 'Dlaczego leczenie w Antalyi jest o 70% tańsze niż w Polsce i Europie Zachodniej?',
         a: 'Różnica wynika z niższych kosztów operacyjnych w Turcji przy zachowaniu najwyższej jakości materiałów Straumann i Ivoclar E-Max.',
       },
       {
-        q: 'Ile dni trwa pobyt w Stambule?',
+        q: 'Ile dni trwa pobyt w Antalyi?',
         a: 'Licówki i korony cyrkonowe: 4–6 dni. Implanty zębowe: 2 krótkie wizyty (1. wizyta: 3 dni na implantację; 2. wizyta: 4–5 dni na zęby stałe).',
       },
       {
@@ -256,7 +256,7 @@ const HUB_FAQ_DATA: Record<string, FAQDictionary> = {
       },
       {
         q: 'Co zawierają pakiety VIP All-Inclusive?',
-        a: 'Hotel 5★ w centrum Stambułu, prywatne transfery Mercedesem VIP, tomografię 3D, leki i polskojęzyczną opiekę.',
+        a: 'Hotel 5★ w centrum Antalyi, prywatne transfery Mercedesem VIP, tomografię 3D, leki i polskojęzyczną opiekę.',
       },
       {
         q: 'Czy mogę zobaczyć nowy uśmiech w 3D przed rozpoczęciem prac?',
@@ -291,8 +291,8 @@ const HUB_FAQ_DATA: Record<string, FAQDictionary> = {
         a: 'Szpitalne standardy sterylizacji w autoklawach klasy B i jednorazowe pakiety chirurgiczne.',
       },
       {
-        q: 'Czy podróż do Stambułu na leczenie zębów jest bezpieczna?',
-        a: 'Tak, Stambuł to światowa stolica turystyki medycznej. Z prywatnym kierowcą i koordynatorem podróż jest w pełni komfortowa.',
+        q: 'Czy podróż do Antalyi na leczenie zębów jest bezpieczna?',
+        a: 'Tak, Antalya to światowa stolica turystyki medycznej. Z prywatnym kierowcą i koordynatorem podróż jest w pełni komfortowa.',
       },
       {
         q: 'Jak uzyskać darmową wycenę i plan leczenia?',
@@ -301,20 +301,20 @@ const HUB_FAQ_DATA: Record<string, FAQDictionary> = {
     ],
   },
   pt: {
-    title: 'Perguntas Frequentes Sobre Tratamentos Dentários em Istambul',
+    title: 'Perguntas Frequentes Sobre Tratamentos Dentários em Antalya',
     subText:
-      'Tudo sobre sua viagem odontológica a Istambul, prazos de tratamento, materiais, garantias e turismo médico VIP.',
+      'Tudo sobre sua viagem odontológica a Antalya, prazos de tratamento, materiais, garantias e turismo médico VIP.',
     items: [
       {
         q: 'Como saber qual tratamento é o mais indicado para mim?',
-        a: 'Nossa equipe realiza uma pré-avaliação digital completa através de suas radiografias ou fotos antes de sua viagem a Istambul.',
+        a: 'Nossa equipe realiza uma pré-avaliação digital completa através de suas radiografias ou fotos antes de sua viagem a Antalya.',
       },
       {
-        q: 'Por que os tratamentos em Istambul são até 70% mais econômicos?',
+        q: 'Por que os tratamentos em Antalya são até 70% mais econômicos?',
         a: 'Devido aos custos operacionais menores na Turquia, mantendo 100% da qualidade com materiais suíços Straumann e zircônia alemã.',
       },
       {
-        q: 'Quantos dias preciso ficar em Istambul?',
+        q: 'Quantos dias preciso ficar em Antalya?',
         a: 'Facetas e coroas: 4–6 dias em viagem única. Implante de arcada total: 2 viagens curtas (1ª viagem: 3 dias; 2ª viagem: 4–5 dias).',
       },
       {
@@ -327,7 +327,7 @@ const HUB_FAQ_DATA: Record<string, FAQDictionary> = {
       },
       {
         q: 'O que está incluído nos pacotes VIP All-Inclusive?',
-        a: 'Hotel 5★ no centro de Istambul, traslados privativos em Mercedes VIP, tomografia 3D, medicamentos e suporte em português.',
+        a: 'Hotel 5★ no centro de Antalya, traslados privativos em Mercedes VIP, tomografia 3D, medicamentos e suporte em português.',
       },
       {
         q: 'Posso ver meu novo sorriso em 3D antes de começar?',
@@ -355,15 +355,15 @@ const HUB_FAQ_DATA: Record<string, FAQDictionary> = {
       },
       {
         q: 'Posso parcelar meu tratamento?',
-        a: 'Sim, o pagamento é dividido de forma escalonada entre suas consultas em Istambul.',
+        a: 'Sim, o pagamento é dividido de forma escalonada entre suas consultas em Antalya.',
       },
       {
         q: 'Quais os padrões de esterilização da clínica?',
         a: 'Protocolos hospitalares europeus com autoclaves de Classe B e kits cirúrgicos descartáveis.',
       },
       {
-        q: 'É seguro viajar para Istambul para tratamento dentário?',
-        a: 'Sim, Istambul é o maior polo de turismo de saúde da Europa com estrutura moderna e total segurança.',
+        q: 'É seguro viajar para Antalya para tratamento dentário?',
+        a: 'Sim, Antalya é o maior polo de turismo de saúde da Europa com estrutura moderna e total segurança.',
       },
       {
         q: 'Como solicitar um orçamento gratuito?',
@@ -372,20 +372,20 @@ const HUB_FAQ_DATA: Record<string, FAQDictionary> = {
     ],
   },
   es: {
-    title: 'Preguntas Frecuentes Sobre Tratamientos Dentales en Estambul',
+    title: 'Preguntas Frecuentes Sobre Tratamientos Dentales en Antalya',
     subText:
-      'Todo lo que necesita saber sobre su viaje dental a Estambul, duración de tratamientos, materiales, garantías y turismo médico VIP.',
+      'Todo lo que necesita saber sobre su viaje dental a Antalya, duración de tratamientos, materiales, garantías y turismo médico VIP.',
     items: [
       {
         q: '¿Cómo sé cuál es el tratamiento dental adecuado para mí?',
-        a: 'Nuestro equipo médico realiza una valoración digital previa mediante sus radiografías o fotografías antes de su llegada a Estambul.',
+        a: 'Nuestro equipo médico realiza una valoración digital previa mediante sus radiografías o fotografías antes de su llegada a Antalya.',
       },
       {
-        q: '¿Por qué los tratamientos en Estambul son hasta un 70% más asequibles?',
+        q: '¿Por qué los tratamientos en Antalya son hasta un 70% más asequibles?',
         a: 'Por los menores costes operativos en Turquía, utilizando siempre las mejores marcas europeas como Straumann e Ivoclar E-Max.',
       },
       {
-        q: '¿Cuántos días de estancia en Estambul se necesitan?',
+        q: '¿Cuántos días de estancia en Antalya se necesitan?',
         a: 'Carillas y coronas: 4–6 días en un solo viaje. Implantes de arcada completa: 2 viajes cortos (1º viaje: 3 días; 2º viaje: 4–5 días).',
       },
       {
@@ -398,7 +398,7 @@ const HUB_FAQ_DATA: Record<string, FAQDictionary> = {
       },
       {
         q: '¿Qué incluyen los paquetes VIP Todo Incluido?',
-        a: 'Hotel de 5 estrellas en el centro de Estambul, traslados privados en Mercedes VIP, TAC 3D, medicamentos y atención en español.',
+        a: 'Hotel de 5 estrellas en el centro de Antalya, traslados privados en Mercedes VIP, TAC 3D, medicamentos y atención en español.',
       },
       {
         q: '¿Puedo ver mi nueva sonrisa en 3D antes de comenzar?',
@@ -426,15 +426,15 @@ const HUB_FAQ_DATA: Record<string, FAQDictionary> = {
       },
       {
         q: '¿Se puede pagar a plazos el tratamiento?',
-        a: 'Sí, el importe se abona de manera escalonada en cada fase del tratamiento en Estambul.',
+        a: 'Sí, el importe se abona de manera escalonada en cada fase del tratamiento en Antalya.',
       },
       {
         q: '¿Qué normas de esterilización se siguen en la clínica?',
         a: 'Protocolos hospitalarios europeos con autoclaves de Clase B y material quirúrgico estéril desechable.',
       },
       {
-        q: '¿Es seguro viajar a Estambul para recibir atención dental?',
-        a: 'Sí, Estambul es un destino líder mundial en turismo de salud con atención privada VIP y total seguridad.',
+        q: '¿Es seguro viajar a Antalya para recibir atención dental?',
+        a: 'Sí, Antalya es un destino líder mundial en turismo de salud con atención privada VIP y total seguridad.',
       },
       {
         q: '¿Cómo puedo solicitar un presupuesto gratuito?',
@@ -443,20 +443,20 @@ const HUB_FAQ_DATA: Record<string, FAQDictionary> = {
     ],
   },
   ru: {
-    title: 'Часто задаваемые вопросы о стоматологическом лечении в Стамбуле',
+    title: 'Часто задаваемые вопросы о стоматологическом лечении в Анталье',
     subText:
-      'Все о планировании вашей поездки в Стамбул, сроках лечения, материалах, международных гарантиях и VIP-сервисе.',
+      'Все о планировании вашей поездки в Анталью, сроках лечения, материалах, международных гарантиях и VIP-сервисе.',
     items: [
       {
         q: 'Как узнать, какое стоматологическое лечение мне подходит?',
         a: 'Перед поездкой наша команда врачей проводит цифровую консультацию на основе ваших снимков КТ или панорамного рентгена.',
       },
       {
-        q: 'Почему лечение в Стамбуле выгоднее до 70% по сравнению с Европой?',
+        q: 'Почему лечение в Анталье выгоднее до 70% по сравнению с Европой?',
         a: 'Благодаря оптимизации операционных расходов в Турции при сохранении эталонного качества швейцарских имплантов Straumann и немецкого циркония.',
       },
       {
-        q: 'Сколько дней необходимо провести в Стамбуле?',
+        q: 'Сколько дней необходимо провести в Анталье?',
         a: 'Виниры и коронки: 4–6 дней за 1 визит. Полная имплантация челюсти: 2 коротких визита (1-й визит: 3 дня; 2-й визит: 4–5 дней).',
       },
       {
@@ -469,7 +469,7 @@ const HUB_FAQ_DATA: Record<string, FAQDictionary> = {
       },
       {
         q: 'Что входит в пакеты медицинского туризма «Все включено»?',
-        a: 'Отель 5★ в центре Стамбула, VIP-трансфер на автомобилях Mercedes, томография 3D, медикаменты и русскоговорящий куратор.',
+        a: 'Отель 5★ в центре Антальи, VIP-трансфер на автомобилях Mercedes, томография 3D, медикаменты и русскоговорящий куратор.',
       },
       {
         q: 'Могу ли я увидеть будущую улыбку в 3D до начала процедур?',
@@ -504,8 +504,8 @@ const HUB_FAQ_DATA: Record<string, FAQDictionary> = {
         a: 'Европейские госпитальные стандарты с автоклавами класса B и одноразовыми хирургическими наборами.',
       },
       {
-        q: 'Безопасно ли приезжать в Стамбул на лечение зубов?',
-        a: 'Да, Стамбул — мировой лидер медицинского туризма с высочайшим уровнем сервиса и безопасности.',
+        q: 'Безопасно ли приезжать в Анталью на лечение зубов?',
+        a: 'Да, Анталья — мировой лидер медицинского туризма с высочайшим уровнем сервиса и безопасности.',
       },
       {
         q: 'Как получить бесплатный расчет стоимости лечения?',

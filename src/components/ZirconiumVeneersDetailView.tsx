@@ -47,16 +47,16 @@ interface LocaleDictionary {
 const DICTIONARIES: Record<string, LocaleDictionary> = {
   "en": {
     "packagesTitle": "High-Strength Zirconium Laminate Veneer Packages",
-    "packagesSubtitle": "All-inclusive digital smile design packages with multi-layered German monolithic zirconia, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers in Istanbul.",
+    "packagesSubtitle": "All-inclusive digital smile design packages with multi-layered German monolithic zirconia, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers in Antalya.",
     "mostPopularBadge": "Most Popular Choice",
     "durationLabel": "Procedure Time:",
     "includedLabel": "Package Inclusions:",
     "priceLabel": "Price (All-Inclusive):",
     "getQuoteBtn": "Get Your Free Quote",
     "faqTitle": "Frequently Asked Questions About Zirconium Veneers",
-    "faqSubtitle": "Explore answers regarding German multi-layer zirconia veneers, fracture resistance, smile aesthetics, procedure timelines, and international warranties in Istanbul.",
-    "stayDuration": "<strong>5 to 7 days in Istanbul.</strong> During this single trip, 3D intraoral digital scanning, precision micro-preparation, 5-axis CAD/CAM milling of German zirconia veneers, and final resin cementation are completed.",
-    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Istanbul once. Your complete smile makeover (from 4 to 20 Zirconium laminate veneers) is designed, fabricated, and permanently placed during this single visit.",
+    "faqSubtitle": "Explore answers regarding German multi-layer zirconia veneers, fracture resistance, smile aesthetics, procedure timelines, and international warranties in Antalya.",
+    "stayDuration": "<strong>5 to 7 days in Antalya.</strong> During this single trip, 3D intraoral digital scanning, precision micro-preparation, 5-axis CAD/CAM milling of German zirconia veneers, and final resin cementation are completed.",
+    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Antalya once. Your complete smile makeover (from 4 to 20 Zirconium laminate veneers) is designed, fabricated, and permanently placed during this single visit.",
     "recoveryTime": "<strong>24 to 48 hours adaptation.</strong> Minimally invasive tooth preparation ensures fast gum tissue healing and immediate functional comfort with zero downtime.",
     "priceEstimate": "<strong>Zirconium Laminate Veneer prices start at £210 / €240 / $260 per tooth.</strong> All-inclusive smile makeover packages (8, 16, or 20 veneers) include 3D Digital Smile Design, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
@@ -64,7 +64,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Zirconium Veneer",
         "brand": "German Katana / Vita Multi-Layered Zirconia",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-1.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "1x High-Translucency German Multi-Layer Zirconium Veneer",
           "3D Digital Intraoral Scan & Smile Line Analysis",
@@ -83,14 +83,14 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "8-Unit Smile Line Makeover (Upper Arch)",
         "brand": "German Multi-Layered Zirconia",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-2.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "popular": true,
         "included": [
           "8x High-Translucency Zirconium Laminate Veneers (Upper Social Smile)",
           "Bespoke 3D Digital Smile Design (DSD) & Facial Symmetry Simulation",
           "Laser gum recontouring & aesthetic gingival leveling (if required)",
           "Aesthetic temporary smile trial fitted on Day 1",
-          "4-Star Hotel Stay with Breakfast in Istanbul (6 Nights)",
+          "4-Star Hotel Stay with Breakfast in Antalya (6 Nights)",
           "VIP Mercedes Chauffeur Transfers (Airport - Hotel - Clinic)",
           "10-Year warranty against veneer debonding and chipping"
         ],
@@ -104,12 +104,12 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "16-Unit Full Smile Makeover (8 Upper + 8 Lower)",
         "brand": "German Multi-Layered Zirconia (1100+ MPa)",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-3.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "16x Custom Zirconium Laminate Veneers (8 Upper + 8 Lower Arches)",
           "Full 3D Facial Aesthetic Mapping & Golden Ratio Smile Harmony",
           "Dual arch aesthetic temporary mock-up for live smile preview",
-          "5-Star Luxury Hotel Accommodation in Istanbul (6 Nights)",
+          "5-Star Luxury Hotel Accommodation in Antalya (6 Nights)",
           "Private VIP Mercedes Airport & Clinic Chauffeur",
           "Professional clinical teeth whitening for non-veneered molars",
           "Comprehensive post-op care pack & custom night guard"
@@ -124,7 +124,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Hollywood Smile Makeover",
         "brand": "German Katana / Vita Ultra-Translucent Zirconia",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-3.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "included": [
           "20x Ultra-Translucent Zirconium Veneers (10 Upper + 10 Lower Arches)",
           "Complete gnathological bite balancing & aesthetic harmony",
@@ -143,12 +143,12 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Combination Smile Makeover (Zirconia + E-Max)",
         "brand": "German Zirconia + Swiss Ivoclar IPS e.max",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-2.jpg",
+        "img": "/packages/pkg-emax.webp",
         "included": [
           "Hybrid combination: E-Max veneers on front teeth + Zirconia on premolars",
           "Maximum anterior translucency with posterior strength",
           "Bespoke 3D Digital Smile Design",
-          "4-Star Luxury Hotel Stay in Istanbul for 6 Nights",
+          "4-Star Luxury Hotel Stay in Antalya for 6 Nights",
           "VIP Mercedes Chauffeur Service for all transfers",
           "10-Year Clinical Warranty"
         ],
@@ -162,7 +162,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Monolithic Zirconia Veneer",
         "brand": "German 3D Pro Multilayer Zirconia",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/composite-laminate-copy.webp",
+        "img": "/treatments/accordion/composite-laminate.webp",
         "included": [
           "1x Heavy-Bite Resistant Monolithic Zirconia Veneer",
           "High fracture toughness for patients with mild bruxism",
@@ -206,15 +206,15 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         ]
       },
       {
-        "q": "How many days does the treatment take in Istanbul?",
+        "q": "How many days does the treatment take in Antalya?",
         "a": [
-          "The complete treatment requires 5 to 7 days in Istanbul during a single visit. We handle digital scanning, smile design mock-ups, CAD/CAM milling, and permanent bonding."
+          "The complete treatment requires 5 to 7 days in Antalya during a single visit. We handle digital scanning, smile design mock-ups, CAD/CAM milling, and permanent bonding."
         ]
       },
       {
         "q": "What is included in the all-inclusive Zirconium Veneer package?",
         "a": [
-          "Our packages include genuine German multi-layer zirconia veneers, 3D Digital Smile Design, 4-star or 5-star hotel accommodation with breakfast, and private VIP Mercedes transfers between Istanbul Airport (IST / SAW), hotel, and our clinic with zero hidden fees."
+          "Our packages include genuine German multi-layer zirconia veneers, 3D Digital Smile Design, 4-star or 5-star hotel accommodation with breakfast, and private VIP Mercedes transfers between Antalya Airport (IST / SAW), hotel, and our clinic with zero hidden fees."
         ]
       }
     ]
@@ -228,9 +228,9 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "priceLabel": "Her Şey Dahil Fiyat:",
     "getQuoteBtn": "Ücretsiz Fiyat Teklifi Al",
     "faqTitle": "Zirkonyum Lamina (Yaprak Porselen) Hakkında Sıkça Sorulan Sorular",
-    "faqSubtitle": "İstanbul'da Alman zirkonyum lamina kaplama, kırılma direnci, diş kesimi, leke tutmazlık, tedavi süresi ve garanti koşulları hakkında en çok merak edilen soruların yanıtları.",
-    "stayDuration": "<strong>5 to 7 days in Istanbul.</strong> During this single trip, 3D intraoral digital scanning, precision micro-preparation, 5-axis CAD/CAM milling of German zirconia veneers, and final resin cementation are completed.",
-    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Istanbul once. Your complete smile makeover (from 4 to 20 Zirconium laminate veneers) is designed, fabricated, and permanently placed during this single visit.",
+    "faqSubtitle": "Antalya'da Alman zirkonyum lamina kaplama, kırılma direnci, diş kesimi, leke tutmazlık, tedavi süresi ve garanti koşulları hakkında en çok merak edilen soruların yanıtları.",
+    "stayDuration": "<strong>5 to 7 days in Antalya.</strong> During this single trip, 3D intraoral digital scanning, precision micro-preparation, 5-axis CAD/CAM milling of German zirconia veneers, and final resin cementation are completed.",
+    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Antalya once. Your complete smile makeover (from 4 to 20 Zirconium laminate veneers) is designed, fabricated, and permanently placed during this single visit.",
     "recoveryTime": "<strong>24 to 48 hours adaptation.</strong> Minimally invasive tooth preparation ensures fast gum tissue healing and immediate functional comfort with zero downtime.",
     "priceEstimate": "<strong>Zirconium Laminate Veneer prices start at £210 / €240 / $260 per tooth.</strong> All-inclusive smile makeover packages (8, 16, or 20 veneers) include 3D Digital Smile Design, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
@@ -238,7 +238,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Zirconium Veneer",
         "brand": "German Katana / Vita Multi-Layered Zirconia",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-1.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "1x High-Translucency German Multi-Layer Zirconium Veneer",
           "3D Digital Intraoral Scan & Smile Line Analysis",
@@ -257,14 +257,14 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "8-Unit Smile Line Makeover (Upper Arch)",
         "brand": "German Multi-Layered Zirconia",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-2.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "popular": true,
         "included": [
           "8x High-Translucency Zirconium Laminate Veneers (Upper Social Smile)",
           "Bespoke 3D Digital Smile Design (DSD) & Facial Symmetry Simulation",
           "Laser gum recontouring & aesthetic gingival leveling (if required)",
           "Aesthetic temporary smile trial fitted on Day 1",
-          "4-Star Hotel Stay with Breakfast in Istanbul (6 Nights)",
+          "4-Star Hotel Stay with Breakfast in Antalya (6 Nights)",
           "VIP Mercedes Chauffeur Transfers (Airport - Hotel - Clinic)",
           "10-Year warranty against veneer debonding and chipping"
         ],
@@ -278,12 +278,12 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "16-Unit Full Smile Makeover (8 Upper + 8 Lower)",
         "brand": "German Multi-Layered Zirconia (1100+ MPa)",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-3.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "16x Custom Zirconium Laminate Veneers (8 Upper + 8 Lower Arches)",
           "Full 3D Facial Aesthetic Mapping & Golden Ratio Smile Harmony",
           "Dual arch aesthetic temporary mock-up for live smile preview",
-          "5-Star Luxury Hotel Accommodation in Istanbul (6 Nights)",
+          "5-Star Luxury Hotel Accommodation in Antalya (6 Nights)",
           "Private VIP Mercedes Airport & Clinic Chauffeur",
           "Professional clinical teeth whitening for non-veneered molars",
           "Comprehensive post-op care pack & custom night guard"
@@ -298,7 +298,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Hollywood Smile Makeover",
         "brand": "German Katana / Vita Ultra-Translucent Zirconia",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-3.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "included": [
           "20x Ultra-Translucent Zirconium Veneers (10 Upper + 10 Lower Arches)",
           "Complete gnathological bite balancing & aesthetic harmony",
@@ -317,12 +317,12 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Combination Smile Makeover (Zirconia + E-Max)",
         "brand": "German Zirconia + Swiss Ivoclar IPS e.max",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-2.jpg",
+        "img": "/packages/pkg-emax.webp",
         "included": [
           "Hybrid combination: E-Max veneers on front teeth + Zirconia on premolars",
           "Maximum anterior translucency with posterior strength",
           "Bespoke 3D Digital Smile Design",
-          "4-Star Luxury Hotel Stay in Istanbul for 6 Nights",
+          "4-Star Luxury Hotel Stay in Antalya for 6 Nights",
           "VIP Mercedes Chauffeur Service for all transfers",
           "10-Year Clinical Warranty"
         ],
@@ -336,7 +336,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Monolithic Zirconia Veneer",
         "brand": "German 3D Pro Multilayer Zirconia",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/composite-laminate-copy.webp",
+        "img": "/treatments/accordion/composite-laminate.webp",
         "included": [
           "1x Heavy-Bite Resistant Monolithic Zirconia Veneer",
           "High fracture toughness for patients with mild bruxism",
@@ -380,31 +380,31 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         ]
       },
       {
-        "q": "How many days does the treatment take in Istanbul?",
+        "q": "How many days does the treatment take in Antalya?",
         "a": [
-          "The complete treatment requires 5 to 7 days in Istanbul during a single visit. We handle digital scanning, smile design mock-ups, CAD/CAM milling, and permanent bonding."
+          "The complete treatment requires 5 to 7 days in Antalya during a single visit. We handle digital scanning, smile design mock-ups, CAD/CAM milling, and permanent bonding."
         ]
       },
       {
         "q": "What is included in the all-inclusive Zirconium Veneer package?",
         "a": [
-          "Our packages include genuine German multi-layer zirconia veneers, 3D Digital Smile Design, 4-star or 5-star hotel accommodation with breakfast, and private VIP Mercedes transfers between Istanbul Airport (IST / SAW), hotel, and our clinic with zero hidden fees."
+          "Our packages include genuine German multi-layer zirconia veneers, 3D Digital Smile Design, 4-star or 5-star hotel accommodation with breakfast, and private VIP Mercedes transfers between Antalya Airport (IST / SAW), hotel, and our clinic with zero hidden fees."
         ]
       }
     ]
   },
   "de": {
     "packagesTitle": "High-Strength Zirconium Laminate Veneer Packages",
-    "packagesSubtitle": "All-inclusive digital smile design packages with multi-layered German monolithic zirconia, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers in Istanbul.",
+    "packagesSubtitle": "All-inclusive digital smile design packages with multi-layered German monolithic zirconia, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers in Antalya.",
     "mostPopularBadge": "Most Popular Choice",
     "durationLabel": "Procedure Time:",
     "includedLabel": "Package Inclusions:",
     "priceLabel": "Price (All-Inclusive):",
     "getQuoteBtn": "Get Your Free Quote",
     "faqTitle": "Frequently Asked Questions About Zirconium Veneers",
-    "faqSubtitle": "Explore answers regarding German multi-layer zirconia veneers, fracture resistance, smile aesthetics, procedure timelines, and international warranties in Istanbul.",
-    "stayDuration": "<strong>5 to 7 days in Istanbul.</strong> During this single trip, 3D intraoral digital scanning, precision micro-preparation, 5-axis CAD/CAM milling of German zirconia veneers, and final resin cementation are completed.",
-    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Istanbul once. Your complete smile makeover (from 4 to 20 Zirconium laminate veneers) is designed, fabricated, and permanently placed during this single visit.",
+    "faqSubtitle": "Explore answers regarding German multi-layer zirconia veneers, fracture resistance, smile aesthetics, procedure timelines, and international warranties in Antalya.",
+    "stayDuration": "<strong>5 to 7 days in Antalya.</strong> During this single trip, 3D intraoral digital scanning, precision micro-preparation, 5-axis CAD/CAM milling of German zirconia veneers, and final resin cementation are completed.",
+    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Antalya once. Your complete smile makeover (from 4 to 20 Zirconium laminate veneers) is designed, fabricated, and permanently placed during this single visit.",
     "recoveryTime": "<strong>24 to 48 hours adaptation.</strong> Minimally invasive tooth preparation ensures fast gum tissue healing and immediate functional comfort with zero downtime.",
     "priceEstimate": "<strong>Zirconium Laminate Veneer prices start at £210 / €240 / $260 per tooth.</strong> All-inclusive smile makeover packages (8, 16, or 20 veneers) include 3D Digital Smile Design, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
@@ -412,7 +412,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Zirconium Veneer",
         "brand": "German Katana / Vita Multi-Layered Zirconia",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-1.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "1x High-Translucency German Multi-Layer Zirconium Veneer",
           "3D Digital Intraoral Scan & Smile Line Analysis",
@@ -431,14 +431,14 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "8-Unit Smile Line Makeover (Upper Arch)",
         "brand": "German Multi-Layered Zirconia",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-2.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "popular": true,
         "included": [
           "8x High-Translucency Zirconium Laminate Veneers (Upper Social Smile)",
           "Bespoke 3D Digital Smile Design (DSD) & Facial Symmetry Simulation",
           "Laser gum recontouring & aesthetic gingival leveling (if required)",
           "Aesthetic temporary smile trial fitted on Day 1",
-          "4-Star Hotel Stay with Breakfast in Istanbul (6 Nights)",
+          "4-Star Hotel Stay with Breakfast in Antalya (6 Nights)",
           "VIP Mercedes Chauffeur Transfers (Airport - Hotel - Clinic)",
           "10-Year warranty against veneer debonding and chipping"
         ],
@@ -452,12 +452,12 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "16-Unit Full Smile Makeover (8 Upper + 8 Lower)",
         "brand": "German Multi-Layered Zirconia (1100+ MPa)",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-3.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "16x Custom Zirconium Laminate Veneers (8 Upper + 8 Lower Arches)",
           "Full 3D Facial Aesthetic Mapping & Golden Ratio Smile Harmony",
           "Dual arch aesthetic temporary mock-up for live smile preview",
-          "5-Star Luxury Hotel Accommodation in Istanbul (6 Nights)",
+          "5-Star Luxury Hotel Accommodation in Antalya (6 Nights)",
           "Private VIP Mercedes Airport & Clinic Chauffeur",
           "Professional clinical teeth whitening for non-veneered molars",
           "Comprehensive post-op care pack & custom night guard"
@@ -472,7 +472,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Hollywood Smile Makeover",
         "brand": "German Katana / Vita Ultra-Translucent Zirconia",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-3.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "included": [
           "20x Ultra-Translucent Zirconium Veneers (10 Upper + 10 Lower Arches)",
           "Complete gnathological bite balancing & aesthetic harmony",
@@ -491,12 +491,12 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Combination Smile Makeover (Zirconia + E-Max)",
         "brand": "German Zirconia + Swiss Ivoclar IPS e.max",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-2.jpg",
+        "img": "/packages/pkg-emax.webp",
         "included": [
           "Hybrid combination: E-Max veneers on front teeth + Zirconia on premolars",
           "Maximum anterior translucency with posterior strength",
           "Bespoke 3D Digital Smile Design",
-          "4-Star Luxury Hotel Stay in Istanbul for 6 Nights",
+          "4-Star Luxury Hotel Stay in Antalya for 6 Nights",
           "VIP Mercedes Chauffeur Service for all transfers",
           "10-Year Clinical Warranty"
         ],
@@ -510,7 +510,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Monolithic Zirconia Veneer",
         "brand": "German 3D Pro Multilayer Zirconia",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/composite-laminate-copy.webp",
+        "img": "/treatments/accordion/composite-laminate.webp",
         "included": [
           "1x Heavy-Bite Resistant Monolithic Zirconia Veneer",
           "High fracture toughness for patients with mild bruxism",
@@ -554,31 +554,31 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         ]
       },
       {
-        "q": "How many days does the treatment take in Istanbul?",
+        "q": "How many days does the treatment take in Antalya?",
         "a": [
-          "The complete treatment requires 5 to 7 days in Istanbul during a single visit. We handle digital scanning, smile design mock-ups, CAD/CAM milling, and permanent bonding."
+          "The complete treatment requires 5 to 7 days in Antalya during a single visit. We handle digital scanning, smile design mock-ups, CAD/CAM milling, and permanent bonding."
         ]
       },
       {
         "q": "What is included in the all-inclusive Zirconium Veneer package?",
         "a": [
-          "Our packages include genuine German multi-layer zirconia veneers, 3D Digital Smile Design, 4-star or 5-star hotel accommodation with breakfast, and private VIP Mercedes transfers between Istanbul Airport (IST / SAW), hotel, and our clinic with zero hidden fees."
+          "Our packages include genuine German multi-layer zirconia veneers, 3D Digital Smile Design, 4-star or 5-star hotel accommodation with breakfast, and private VIP Mercedes transfers between Antalya Airport (IST / SAW), hotel, and our clinic with zero hidden fees."
         ]
       }
     ]
   },
   "pl": {
     "packagesTitle": "High-Strength Zirconium Laminate Veneer Packages",
-    "packagesSubtitle": "All-inclusive digital smile design packages with multi-layered German monolithic zirconia, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers in Istanbul.",
+    "packagesSubtitle": "All-inclusive digital smile design packages with multi-layered German monolithic zirconia, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers in Antalya.",
     "mostPopularBadge": "Most Popular Choice",
     "durationLabel": "Procedure Time:",
     "includedLabel": "Package Inclusions:",
     "priceLabel": "Price (All-Inclusive):",
     "getQuoteBtn": "Get Your Free Quote",
     "faqTitle": "Frequently Asked Questions About Zirconium Veneers",
-    "faqSubtitle": "Explore answers regarding German multi-layer zirconia veneers, fracture resistance, smile aesthetics, procedure timelines, and international warranties in Istanbul.",
-    "stayDuration": "<strong>5 to 7 days in Istanbul.</strong> During this single trip, 3D intraoral digital scanning, precision micro-preparation, 5-axis CAD/CAM milling of German zirconia veneers, and final resin cementation are completed.",
-    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Istanbul once. Your complete smile makeover (from 4 to 20 Zirconium laminate veneers) is designed, fabricated, and permanently placed during this single visit.",
+    "faqSubtitle": "Explore answers regarding German multi-layer zirconia veneers, fracture resistance, smile aesthetics, procedure timelines, and international warranties in Antalya.",
+    "stayDuration": "<strong>5 to 7 days in Antalya.</strong> During this single trip, 3D intraoral digital scanning, precision micro-preparation, 5-axis CAD/CAM milling of German zirconia veneers, and final resin cementation are completed.",
+    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Antalya once. Your complete smile makeover (from 4 to 20 Zirconium laminate veneers) is designed, fabricated, and permanently placed during this single visit.",
     "recoveryTime": "<strong>24 to 48 hours adaptation.</strong> Minimally invasive tooth preparation ensures fast gum tissue healing and immediate functional comfort with zero downtime.",
     "priceEstimate": "<strong>Zirconium Laminate Veneer prices start at £210 / €240 / $260 per tooth.</strong> All-inclusive smile makeover packages (8, 16, or 20 veneers) include 3D Digital Smile Design, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
@@ -586,7 +586,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Zirconium Veneer",
         "brand": "German Katana / Vita Multi-Layered Zirconia",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-1.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "1x High-Translucency German Multi-Layer Zirconium Veneer",
           "3D Digital Intraoral Scan & Smile Line Analysis",
@@ -605,14 +605,14 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "8-Unit Smile Line Makeover (Upper Arch)",
         "brand": "German Multi-Layered Zirconia",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-2.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "popular": true,
         "included": [
           "8x High-Translucency Zirconium Laminate Veneers (Upper Social Smile)",
           "Bespoke 3D Digital Smile Design (DSD) & Facial Symmetry Simulation",
           "Laser gum recontouring & aesthetic gingival leveling (if required)",
           "Aesthetic temporary smile trial fitted on Day 1",
-          "4-Star Hotel Stay with Breakfast in Istanbul (6 Nights)",
+          "4-Star Hotel Stay with Breakfast in Antalya (6 Nights)",
           "VIP Mercedes Chauffeur Transfers (Airport - Hotel - Clinic)",
           "10-Year warranty against veneer debonding and chipping"
         ],
@@ -626,12 +626,12 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "16-Unit Full Smile Makeover (8 Upper + 8 Lower)",
         "brand": "German Multi-Layered Zirconia (1100+ MPa)",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-3.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "16x Custom Zirconium Laminate Veneers (8 Upper + 8 Lower Arches)",
           "Full 3D Facial Aesthetic Mapping & Golden Ratio Smile Harmony",
           "Dual arch aesthetic temporary mock-up for live smile preview",
-          "5-Star Luxury Hotel Accommodation in Istanbul (6 Nights)",
+          "5-Star Luxury Hotel Accommodation in Antalya (6 Nights)",
           "Private VIP Mercedes Airport & Clinic Chauffeur",
           "Professional clinical teeth whitening for non-veneered molars",
           "Comprehensive post-op care pack & custom night guard"
@@ -646,7 +646,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Hollywood Smile Makeover",
         "brand": "German Katana / Vita Ultra-Translucent Zirconia",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-3.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "included": [
           "20x Ultra-Translucent Zirconium Veneers (10 Upper + 10 Lower Arches)",
           "Complete gnathological bite balancing & aesthetic harmony",
@@ -665,12 +665,12 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Combination Smile Makeover (Zirconia + E-Max)",
         "brand": "German Zirconia + Swiss Ivoclar IPS e.max",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-2.jpg",
+        "img": "/packages/pkg-emax.webp",
         "included": [
           "Hybrid combination: E-Max veneers on front teeth + Zirconia on premolars",
           "Maximum anterior translucency with posterior strength",
           "Bespoke 3D Digital Smile Design",
-          "4-Star Luxury Hotel Stay in Istanbul for 6 Nights",
+          "4-Star Luxury Hotel Stay in Antalya for 6 Nights",
           "VIP Mercedes Chauffeur Service for all transfers",
           "10-Year Clinical Warranty"
         ],
@@ -684,7 +684,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Monolithic Zirconia Veneer",
         "brand": "German 3D Pro Multilayer Zirconia",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/composite-laminate-copy.webp",
+        "img": "/treatments/accordion/composite-laminate.webp",
         "included": [
           "1x Heavy-Bite Resistant Monolithic Zirconia Veneer",
           "High fracture toughness for patients with mild bruxism",
@@ -728,31 +728,31 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         ]
       },
       {
-        "q": "How many days does the treatment take in Istanbul?",
+        "q": "How many days does the treatment take in Antalya?",
         "a": [
-          "The complete treatment requires 5 to 7 days in Istanbul during a single visit. We handle digital scanning, smile design mock-ups, CAD/CAM milling, and permanent bonding."
+          "The complete treatment requires 5 to 7 days in Antalya during a single visit. We handle digital scanning, smile design mock-ups, CAD/CAM milling, and permanent bonding."
         ]
       },
       {
         "q": "What is included in the all-inclusive Zirconium Veneer package?",
         "a": [
-          "Our packages include genuine German multi-layer zirconia veneers, 3D Digital Smile Design, 4-star or 5-star hotel accommodation with breakfast, and private VIP Mercedes transfers between Istanbul Airport (IST / SAW), hotel, and our clinic with zero hidden fees."
+          "Our packages include genuine German multi-layer zirconia veneers, 3D Digital Smile Design, 4-star or 5-star hotel accommodation with breakfast, and private VIP Mercedes transfers between Antalya Airport (IST / SAW), hotel, and our clinic with zero hidden fees."
         ]
       }
     ]
   },
   "pt": {
     "packagesTitle": "High-Strength Zirconium Laminate Veneer Packages",
-    "packagesSubtitle": "All-inclusive digital smile design packages with multi-layered German monolithic zirconia, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers in Istanbul.",
+    "packagesSubtitle": "All-inclusive digital smile design packages with multi-layered German monolithic zirconia, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers in Antalya.",
     "mostPopularBadge": "Most Popular Choice",
     "durationLabel": "Procedure Time:",
     "includedLabel": "Package Inclusions:",
     "priceLabel": "Price (All-Inclusive):",
     "getQuoteBtn": "Get Your Free Quote",
     "faqTitle": "Frequently Asked Questions About Zirconium Veneers",
-    "faqSubtitle": "Explore answers regarding German multi-layer zirconia veneers, fracture resistance, smile aesthetics, procedure timelines, and international warranties in Istanbul.",
-    "stayDuration": "<strong>5 to 7 days in Istanbul.</strong> During this single trip, 3D intraoral digital scanning, precision micro-preparation, 5-axis CAD/CAM milling of German zirconia veneers, and final resin cementation are completed.",
-    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Istanbul once. Your complete smile makeover (from 4 to 20 Zirconium laminate veneers) is designed, fabricated, and permanently placed during this single visit.",
+    "faqSubtitle": "Explore answers regarding German multi-layer zirconia veneers, fracture resistance, smile aesthetics, procedure timelines, and international warranties in Antalya.",
+    "stayDuration": "<strong>5 to 7 days in Antalya.</strong> During this single trip, 3D intraoral digital scanning, precision micro-preparation, 5-axis CAD/CAM milling of German zirconia veneers, and final resin cementation are completed.",
+    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Antalya once. Your complete smile makeover (from 4 to 20 Zirconium laminate veneers) is designed, fabricated, and permanently placed during this single visit.",
     "recoveryTime": "<strong>24 to 48 hours adaptation.</strong> Minimally invasive tooth preparation ensures fast gum tissue healing and immediate functional comfort with zero downtime.",
     "priceEstimate": "<strong>Zirconium Laminate Veneer prices start at £210 / €240 / $260 per tooth.</strong> All-inclusive smile makeover packages (8, 16, or 20 veneers) include 3D Digital Smile Design, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
@@ -760,7 +760,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Zirconium Veneer",
         "brand": "German Katana / Vita Multi-Layered Zirconia",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-1.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "1x High-Translucency German Multi-Layer Zirconium Veneer",
           "3D Digital Intraoral Scan & Smile Line Analysis",
@@ -779,14 +779,14 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "8-Unit Smile Line Makeover (Upper Arch)",
         "brand": "German Multi-Layered Zirconia",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-2.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "popular": true,
         "included": [
           "8x High-Translucency Zirconium Laminate Veneers (Upper Social Smile)",
           "Bespoke 3D Digital Smile Design (DSD) & Facial Symmetry Simulation",
           "Laser gum recontouring & aesthetic gingival leveling (if required)",
           "Aesthetic temporary smile trial fitted on Day 1",
-          "4-Star Hotel Stay with Breakfast in Istanbul (6 Nights)",
+          "4-Star Hotel Stay with Breakfast in Antalya (6 Nights)",
           "VIP Mercedes Chauffeur Transfers (Airport - Hotel - Clinic)",
           "10-Year warranty against veneer debonding and chipping"
         ],
@@ -800,12 +800,12 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "16-Unit Full Smile Makeover (8 Upper + 8 Lower)",
         "brand": "German Multi-Layered Zirconia (1100+ MPa)",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-3.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "16x Custom Zirconium Laminate Veneers (8 Upper + 8 Lower Arches)",
           "Full 3D Facial Aesthetic Mapping & Golden Ratio Smile Harmony",
           "Dual arch aesthetic temporary mock-up for live smile preview",
-          "5-Star Luxury Hotel Accommodation in Istanbul (6 Nights)",
+          "5-Star Luxury Hotel Accommodation in Antalya (6 Nights)",
           "Private VIP Mercedes Airport & Clinic Chauffeur",
           "Professional clinical teeth whitening for non-veneered molars",
           "Comprehensive post-op care pack & custom night guard"
@@ -820,7 +820,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Hollywood Smile Makeover",
         "brand": "German Katana / Vita Ultra-Translucent Zirconia",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-3.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "included": [
           "20x Ultra-Translucent Zirconium Veneers (10 Upper + 10 Lower Arches)",
           "Complete gnathological bite balancing & aesthetic harmony",
@@ -839,12 +839,12 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Combination Smile Makeover (Zirconia + E-Max)",
         "brand": "German Zirconia + Swiss Ivoclar IPS e.max",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-2.jpg",
+        "img": "/packages/pkg-emax.webp",
         "included": [
           "Hybrid combination: E-Max veneers on front teeth + Zirconia on premolars",
           "Maximum anterior translucency with posterior strength",
           "Bespoke 3D Digital Smile Design",
-          "4-Star Luxury Hotel Stay in Istanbul for 6 Nights",
+          "4-Star Luxury Hotel Stay in Antalya for 6 Nights",
           "VIP Mercedes Chauffeur Service for all transfers",
           "10-Year Clinical Warranty"
         ],
@@ -858,7 +858,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Monolithic Zirconia Veneer",
         "brand": "German 3D Pro Multilayer Zirconia",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/composite-laminate-copy.webp",
+        "img": "/treatments/accordion/composite-laminate.webp",
         "included": [
           "1x Heavy-Bite Resistant Monolithic Zirconia Veneer",
           "High fracture toughness for patients with mild bruxism",
@@ -902,31 +902,31 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         ]
       },
       {
-        "q": "How many days does the treatment take in Istanbul?",
+        "q": "How many days does the treatment take in Antalya?",
         "a": [
-          "The complete treatment requires 5 to 7 days in Istanbul during a single visit. We handle digital scanning, smile design mock-ups, CAD/CAM milling, and permanent bonding."
+          "The complete treatment requires 5 to 7 days in Antalya during a single visit. We handle digital scanning, smile design mock-ups, CAD/CAM milling, and permanent bonding."
         ]
       },
       {
         "q": "What is included in the all-inclusive Zirconium Veneer package?",
         "a": [
-          "Our packages include genuine German multi-layer zirconia veneers, 3D Digital Smile Design, 4-star or 5-star hotel accommodation with breakfast, and private VIP Mercedes transfers between Istanbul Airport (IST / SAW), hotel, and our clinic with zero hidden fees."
+          "Our packages include genuine German multi-layer zirconia veneers, 3D Digital Smile Design, 4-star or 5-star hotel accommodation with breakfast, and private VIP Mercedes transfers between Antalya Airport (IST / SAW), hotel, and our clinic with zero hidden fees."
         ]
       }
     ]
   },
   "es": {
     "packagesTitle": "High-Strength Zirconium Laminate Veneer Packages",
-    "packagesSubtitle": "All-inclusive digital smile design packages with multi-layered German monolithic zirconia, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers in Istanbul.",
+    "packagesSubtitle": "All-inclusive digital smile design packages with multi-layered German monolithic zirconia, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers in Antalya.",
     "mostPopularBadge": "Most Popular Choice",
     "durationLabel": "Procedure Time:",
     "includedLabel": "Package Inclusions:",
     "priceLabel": "Price (All-Inclusive):",
     "getQuoteBtn": "Get Your Free Quote",
     "faqTitle": "Frequently Asked Questions About Zirconium Veneers",
-    "faqSubtitle": "Explore answers regarding German multi-layer zirconia veneers, fracture resistance, smile aesthetics, procedure timelines, and international warranties in Istanbul.",
-    "stayDuration": "<strong>5 to 7 days in Istanbul.</strong> During this single trip, 3D intraoral digital scanning, precision micro-preparation, 5-axis CAD/CAM milling of German zirconia veneers, and final resin cementation are completed.",
-    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Istanbul once. Your complete smile makeover (from 4 to 20 Zirconium laminate veneers) is designed, fabricated, and permanently placed during this single visit.",
+    "faqSubtitle": "Explore answers regarding German multi-layer zirconia veneers, fracture resistance, smile aesthetics, procedure timelines, and international warranties in Antalya.",
+    "stayDuration": "<strong>5 to 7 days in Antalya.</strong> During this single trip, 3D intraoral digital scanning, precision micro-preparation, 5-axis CAD/CAM milling of German zirconia veneers, and final resin cementation are completed.",
+    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Antalya once. Your complete smile makeover (from 4 to 20 Zirconium laminate veneers) is designed, fabricated, and permanently placed during this single visit.",
     "recoveryTime": "<strong>24 to 48 hours adaptation.</strong> Minimally invasive tooth preparation ensures fast gum tissue healing and immediate functional comfort with zero downtime.",
     "priceEstimate": "<strong>Zirconium Laminate Veneer prices start at £210 / €240 / $260 per tooth.</strong> All-inclusive smile makeover packages (8, 16, or 20 veneers) include 3D Digital Smile Design, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
@@ -934,7 +934,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Zirconium Veneer",
         "brand": "German Katana / Vita Multi-Layered Zirconia",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-1.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "1x High-Translucency German Multi-Layer Zirconium Veneer",
           "3D Digital Intraoral Scan & Smile Line Analysis",
@@ -953,14 +953,14 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "8-Unit Smile Line Makeover (Upper Arch)",
         "brand": "German Multi-Layered Zirconia",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-2.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "popular": true,
         "included": [
           "8x High-Translucency Zirconium Laminate Veneers (Upper Social Smile)",
           "Bespoke 3D Digital Smile Design (DSD) & Facial Symmetry Simulation",
           "Laser gum recontouring & aesthetic gingival leveling (if required)",
           "Aesthetic temporary smile trial fitted on Day 1",
-          "4-Star Hotel Stay with Breakfast in Istanbul (6 Nights)",
+          "4-Star Hotel Stay with Breakfast in Antalya (6 Nights)",
           "VIP Mercedes Chauffeur Transfers (Airport - Hotel - Clinic)",
           "10-Year warranty against veneer debonding and chipping"
         ],
@@ -974,12 +974,12 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "16-Unit Full Smile Makeover (8 Upper + 8 Lower)",
         "brand": "German Multi-Layered Zirconia (1100+ MPa)",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-3.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "16x Custom Zirconium Laminate Veneers (8 Upper + 8 Lower Arches)",
           "Full 3D Facial Aesthetic Mapping & Golden Ratio Smile Harmony",
           "Dual arch aesthetic temporary mock-up for live smile preview",
-          "5-Star Luxury Hotel Accommodation in Istanbul (6 Nights)",
+          "5-Star Luxury Hotel Accommodation in Antalya (6 Nights)",
           "Private VIP Mercedes Airport & Clinic Chauffeur",
           "Professional clinical teeth whitening for non-veneered molars",
           "Comprehensive post-op care pack & custom night guard"
@@ -994,7 +994,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Hollywood Smile Makeover",
         "brand": "German Katana / Vita Ultra-Translucent Zirconia",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-3.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "included": [
           "20x Ultra-Translucent Zirconium Veneers (10 Upper + 10 Lower Arches)",
           "Complete gnathological bite balancing & aesthetic harmony",
@@ -1013,12 +1013,12 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Combination Smile Makeover (Zirconia + E-Max)",
         "brand": "German Zirconia + Swiss Ivoclar IPS e.max",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-2.jpg",
+        "img": "/packages/pkg-emax.webp",
         "included": [
           "Hybrid combination: E-Max veneers on front teeth + Zirconia on premolars",
           "Maximum anterior translucency with posterior strength",
           "Bespoke 3D Digital Smile Design",
-          "4-Star Luxury Hotel Stay in Istanbul for 6 Nights",
+          "4-Star Luxury Hotel Stay in Antalya for 6 Nights",
           "VIP Mercedes Chauffeur Service for all transfers",
           "10-Year Clinical Warranty"
         ],
@@ -1032,7 +1032,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Monolithic Zirconia Veneer",
         "brand": "German 3D Pro Multilayer Zirconia",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/composite-laminate-copy.webp",
+        "img": "/treatments/accordion/composite-laminate.webp",
         "included": [
           "1x Heavy-Bite Resistant Monolithic Zirconia Veneer",
           "High fracture toughness for patients with mild bruxism",
@@ -1076,31 +1076,31 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         ]
       },
       {
-        "q": "How many days does the treatment take in Istanbul?",
+        "q": "How many days does the treatment take in Antalya?",
         "a": [
-          "The complete treatment requires 5 to 7 days in Istanbul during a single visit. We handle digital scanning, smile design mock-ups, CAD/CAM milling, and permanent bonding."
+          "The complete treatment requires 5 to 7 days in Antalya during a single visit. We handle digital scanning, smile design mock-ups, CAD/CAM milling, and permanent bonding."
         ]
       },
       {
         "q": "What is included in the all-inclusive Zirconium Veneer package?",
         "a": [
-          "Our packages include genuine German multi-layer zirconia veneers, 3D Digital Smile Design, 4-star or 5-star hotel accommodation with breakfast, and private VIP Mercedes transfers between Istanbul Airport (IST / SAW), hotel, and our clinic with zero hidden fees."
+          "Our packages include genuine German multi-layer zirconia veneers, 3D Digital Smile Design, 4-star or 5-star hotel accommodation with breakfast, and private VIP Mercedes transfers between Antalya Airport (IST / SAW), hotel, and our clinic with zero hidden fees."
         ]
       }
     ]
   },
   "ru": {
     "packagesTitle": "High-Strength Zirconium Laminate Veneer Packages",
-    "packagesSubtitle": "All-inclusive digital smile design packages with multi-layered German monolithic zirconia, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers in Istanbul.",
+    "packagesSubtitle": "All-inclusive digital smile design packages with multi-layered German monolithic zirconia, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers in Antalya.",
     "mostPopularBadge": "Most Popular Choice",
     "durationLabel": "Procedure Time:",
     "includedLabel": "Package Inclusions:",
     "priceLabel": "Price (All-Inclusive):",
     "getQuoteBtn": "Get Your Free Quote",
     "faqTitle": "Frequently Asked Questions About Zirconium Veneers",
-    "faqSubtitle": "Explore answers regarding German multi-layer zirconia veneers, fracture resistance, smile aesthetics, procedure timelines, and international warranties in Istanbul.",
-    "stayDuration": "<strong>5 to 7 days in Istanbul.</strong> During this single trip, 3D intraoral digital scanning, precision micro-preparation, 5-axis CAD/CAM milling of German zirconia veneers, and final resin cementation are completed.",
-    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Istanbul once. Your complete smile makeover (from 4 to 20 Zirconium laminate veneers) is designed, fabricated, and permanently placed during this single visit.",
+    "faqSubtitle": "Explore answers regarding German multi-layer zirconia veneers, fracture resistance, smile aesthetics, procedure timelines, and international warranties in Antalya.",
+    "stayDuration": "<strong>5 to 7 days in Antalya.</strong> During this single trip, 3D intraoral digital scanning, precision micro-preparation, 5-axis CAD/CAM milling of German zirconia veneers, and final resin cementation are completed.",
+    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Antalya once. Your complete smile makeover (from 4 to 20 Zirconium laminate veneers) is designed, fabricated, and permanently placed during this single visit.",
     "recoveryTime": "<strong>24 to 48 hours adaptation.</strong> Minimally invasive tooth preparation ensures fast gum tissue healing and immediate functional comfort with zero downtime.",
     "priceEstimate": "<strong>Zirconium Laminate Veneer prices start at £210 / €240 / $260 per tooth.</strong> All-inclusive smile makeover packages (8, 16, or 20 veneers) include 3D Digital Smile Design, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
@@ -1108,7 +1108,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Zirconium Veneer",
         "brand": "German Katana / Vita Multi-Layered Zirconia",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-1.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "1x High-Translucency German Multi-Layer Zirconium Veneer",
           "3D Digital Intraoral Scan & Smile Line Analysis",
@@ -1127,14 +1127,14 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "8-Unit Smile Line Makeover (Upper Arch)",
         "brand": "German Multi-Layered Zirconia",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-2.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "popular": true,
         "included": [
           "8x High-Translucency Zirconium Laminate Veneers (Upper Social Smile)",
           "Bespoke 3D Digital Smile Design (DSD) & Facial Symmetry Simulation",
           "Laser gum recontouring & aesthetic gingival leveling (if required)",
           "Aesthetic temporary smile trial fitted on Day 1",
-          "4-Star Hotel Stay with Breakfast in Istanbul (6 Nights)",
+          "4-Star Hotel Stay with Breakfast in Antalya (6 Nights)",
           "VIP Mercedes Chauffeur Transfers (Airport - Hotel - Clinic)",
           "10-Year warranty against veneer debonding and chipping"
         ],
@@ -1148,12 +1148,12 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "16-Unit Full Smile Makeover (8 Upper + 8 Lower)",
         "brand": "German Multi-Layered Zirconia (1100+ MPa)",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-3.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "16x Custom Zirconium Laminate Veneers (8 Upper + 8 Lower Arches)",
           "Full 3D Facial Aesthetic Mapping & Golden Ratio Smile Harmony",
           "Dual arch aesthetic temporary mock-up for live smile preview",
-          "5-Star Luxury Hotel Accommodation in Istanbul (6 Nights)",
+          "5-Star Luxury Hotel Accommodation in Antalya (6 Nights)",
           "Private VIP Mercedes Airport & Clinic Chauffeur",
           "Professional clinical teeth whitening for non-veneered molars",
           "Comprehensive post-op care pack & custom night guard"
@@ -1168,7 +1168,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Hollywood Smile Makeover",
         "brand": "German Katana / Vita Ultra-Translucent Zirconia",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-3.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "included": [
           "20x Ultra-Translucent Zirconium Veneers (10 Upper + 10 Lower Arches)",
           "Complete gnathological bite balancing & aesthetic harmony",
@@ -1187,12 +1187,12 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Combination Smile Makeover (Zirconia + E-Max)",
         "brand": "German Zirconia + Swiss Ivoclar IPS e.max",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-2.jpg",
+        "img": "/packages/pkg-emax.webp",
         "included": [
           "Hybrid combination: E-Max veneers on front teeth + Zirconia on premolars",
           "Maximum anterior translucency with posterior strength",
           "Bespoke 3D Digital Smile Design",
-          "4-Star Luxury Hotel Stay in Istanbul for 6 Nights",
+          "4-Star Luxury Hotel Stay in Antalya for 6 Nights",
           "VIP Mercedes Chauffeur Service for all transfers",
           "10-Year Clinical Warranty"
         ],
@@ -1206,7 +1206,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Monolithic Zirconia Veneer",
         "brand": "German 3D Pro Multilayer Zirconia",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/composite-laminate-copy.webp",
+        "img": "/treatments/accordion/composite-laminate.webp",
         "included": [
           "1x Heavy-Bite Resistant Monolithic Zirconia Veneer",
           "High fracture toughness for patients with mild bruxism",
@@ -1250,15 +1250,15 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         ]
       },
       {
-        "q": "How many days does the treatment take in Istanbul?",
+        "q": "How many days does the treatment take in Antalya?",
         "a": [
-          "The complete treatment requires 5 to 7 days in Istanbul during a single visit. We handle digital scanning, smile design mock-ups, CAD/CAM milling, and permanent bonding."
+          "The complete treatment requires 5 to 7 days in Antalya during a single visit. We handle digital scanning, smile design mock-ups, CAD/CAM milling, and permanent bonding."
         ]
       },
       {
         "q": "What is included in the all-inclusive Zirconium Veneer package?",
         "a": [
-          "Our packages include genuine German multi-layer zirconia veneers, 3D Digital Smile Design, 4-star or 5-star hotel accommodation with breakfast, and private VIP Mercedes transfers between Istanbul Airport (IST / SAW), hotel, and our clinic with zero hidden fees."
+          "Our packages include genuine German multi-layer zirconia veneers, 3D Digital Smile Design, 4-star or 5-star hotel accommodation with breakfast, and private VIP Mercedes transfers between Antalya Airport (IST / SAW), hotel, and our clinic with zero hidden fees."
         ]
       }
     ]

@@ -15,37 +15,37 @@ const PKG_I18N: Record<string, PackageDictionary> = {
   en: {
     headTitle: 'Treatment Packages',
     headSub:
-      'Master Smile Studio in Istanbul offers premium packages with dental treatments for your perfect smile',
+      'Master Smile Studio in Antalya offers premium packages with dental treatments for your perfect smile',
   },
   tr: {
     headTitle: 'Tedavi Paketleri',
     headSub:
-      'İstanbul Master Smile Studio, kusursuz gülüşünüz için her şey dahil ayrıcalıklı estetik tedavi paketleri sunar',
+      'Antalya Master Smile Studio, kusursuz gülüşünüz için her şey dahil ayrıcalıklı estetik tedavi paketleri sunar',
   },
   de: {
     headTitle: 'Behandlungspakete',
     headSub:
-      'Master Smile Studio in Istanbul bietet erstklassige Komplettpakete für Ihr perfektes Lächeln',
+      'Master Smile Studio in Antalya bietet erstklassige Komplettpakete für Ihr perfektes Lächeln',
   },
   pl: {
     headTitle: 'Pakiety Zabiegowe',
     headSub:
-      'Master Smile Studio w Stambule oferuje ekskluzywne pakiety stomatologiczne dla Twojego idealnego uśmiechu',
+      'Master Smile Studio w Antalyi oferuje ekskluzywne pakiety stomatologiczne dla Twojego idealnego uśmiechu',
   },
   pt: {
     headTitle: 'Pacotes de Tratamento',
     headSub:
-      'O Master Smile Studio em Istambul oferece pacotes premium com tratamentos dentários para o seu sorriso perfeito',
+      'O Master Smile Studio em Antalya oferece pacotes premium com tratamentos dentários para o seu sorriso perfeito',
   },
   es: {
     headTitle: 'Paquetes de Tratamiento',
     headSub:
-      'Master Smile Studio en Estambul ofrece paquetes exclusivos con tratamientos dentales para su sonrisa ideal',
+      'Master Smile Studio en Antalya ofrece paquetes exclusivos con tratamientos dentales para su sonrisa ideal',
   },
   ru: {
     headTitle: 'Пакеты Лечения',
     headSub:
-      'Master Smile Studio в Стамбуле предлагает премиальные пакеты стоматологического лечения «Все включено»',
+      'Master Smile Studio в Анталье предлагает премиальные пакеты стоматологического лечения «Все включено»',
   },
 };
 

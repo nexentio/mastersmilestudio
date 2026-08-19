@@ -43,7 +43,7 @@ interface PackageDict {
 const DENTURES_PACKAGES_I18N: Record<string, PackageDict> = {
   en: {
     badge: 'ALL-INCLUSIVE DENTURE PACKAGES',
-    title: 'Popular Denture & Overdenture Packages in Istanbul',
+    title: 'Popular Denture & Overdenture Packages in Antalya',
     subtitle: 'High-retention Snap-On implant overdentures and precision complete dentures with 5-star hotel accommodation and VIP transfers.',
     durationLabel: 'Treatment Duration:',
     featuresTitle: 'Package Inclusions:',
@@ -86,7 +86,7 @@ const DENTURES_PACKAGES_I18N: Record<string, PackageDict> = {
   },
   tr: {
     badge: 'HER ŞEY DAHİL PROTEZ DİŞ PAKETLERİ',
-    title: 'İstanbul Popüler Protez Diş & Çıt Çıtlı Damak Paketleri',
+    title: 'Antalya Popüler Protez Diş & Çıt Çıtlı Damak Paketleri',
     subtitle: 'İmplant destekli çıtçıtlı protezler ve hassas tutuculu damaklar, 5 yıldızlı otel konaklaması ve VIP transfer ile.',
     durationLabel: 'Tedavi Süresi:',
     featuresTitle: 'Pakete Dahil Hizmetler:',
@@ -129,7 +129,7 @@ const DENTURES_PACKAGES_I18N: Record<string, PackageDict> = {
   },
   de: {
     badge: 'ALL-INCLUSIVE PROTHESEN-PAKETE',
-    title: 'Beliebte Zahnprothesen-Pakete in Istanbul',
+    title: 'Beliebte Zahnprothesen-Pakete in Antalya',
     subtitle: 'Implantatgetragene Druckknopf-Prothesen und Vollprothesen inklusive 5-Sterne-Hotel und VIP-Transfers.',
     durationLabel: 'Behandlungsdauer:',
     featuresTitle: 'Im Paket enthalten:',
@@ -172,7 +172,7 @@ const DENTURES_PACKAGES_I18N: Record<string, PackageDict> = {
   },
   pl: {
     badge: 'PAKIETY PROTEZ ZĘBOWYCH ALL-INCLUSIVE',
-    title: 'Popularne Pakiety Protez Zębowych w Stambule',
+    title: 'Popularne Pakiety Protez Zębowych w Antalyi',
     subtitle: 'Protezy na zatrzaskach (Overdentures) i protezy całkowite z 5-gwiazdkowym hotelem i transferami VIP.',
     durationLabel: 'Czas trwania:',
     featuresTitle: 'W pakiecie zawarte:',
@@ -215,7 +215,7 @@ const DENTURES_PACKAGES_I18N: Record<string, PackageDict> = {
   },
   pt: {
     badge: 'PACOTES DE PRÓTESES DENTÁRIAS ALL-INCLUSIVE',
-    title: 'Pacotes Populares de Próteses Dentárias em Istambul',
+    title: 'Pacotes Populares de Próteses Dentárias em Antalya',
     subtitle: 'Overdentures com encaixe tipo clique sobre implantes e próteses totais com hotel 5 estrelas e transfers VIP.',
     durationLabel: 'Duração do Tratamento:',
     featuresTitle: 'Incluso no Pacote:',
@@ -258,7 +258,7 @@ const DENTURES_PACKAGES_I18N: Record<string, PackageDict> = {
   },
   es: {
     badge: 'PAQUETES DE PRÓTESIS DENTALES TODO INCLUIDO',
-    title: 'Paquetes Populares de Prótesis Dentales en Estambul',
+    title: 'Paquetes Populares de Prótesis Dentales en Antalya',
     subtitle: 'Sobredentaduras con anclaje sobre implantes y dentaduras completas con hotel 5 estrellas y traslados VIP.',
     durationLabel: 'Duración del Tratamiento:',
     featuresTitle: 'Incluido en el Paquete:',
@@ -301,7 +301,7 @@ const DENTURES_PACKAGES_I18N: Record<string, PackageDict> = {
   },
   ru: {
     badge: 'ПАКЕТЫ СЪЕМНЫХ ПРОТЕЗОВ «ВСЕ ВКЛЮЧЕНО»',
-    title: 'Популярные пакеты зубных протезов в Стамбуле',
+    title: 'Популярные пакеты зубных протезов в Анталье',
     subtitle: 'Покрывные протезы на имплантах (Overdentures) и полные съемные протезы с проживанием в 5★ отеле и VIP-трансфером.',
     durationLabel: 'Длительность лечения:',
     featuresTitle: 'В пакет включено:',
@@ -345,9 +345,9 @@ const DENTURES_PACKAGES_I18N: Record<string, PackageDict> = {
 };
 
 const DENTURES_IMAGES = [
-  'https://sohodent.com/doc/data1/full-mouth-implant-copy.webp',
-  'https://sohodent.com/doc/data1/zirconium-implant-copy.webp',
-  'https://sohodent.com/doc/data1/porcelain-laminate-copy.webp',
+  '/treatments/accordion/full-mouth-implant.webp',
+  '/treatments/accordion/zirconium-implant-copy.webp',
+  '/treatments/accordion/porcelain-laminate-copy.webp',
 ];
 
 export default function TreatmentDenturesPackagesSlider() {

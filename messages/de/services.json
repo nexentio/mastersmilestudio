@@ -22,15 +22,42 @@
   "doctorTulayTitle": "Mund-, Kiefer- und Gesichtschirurgin",
   "doctorAliKemalTitle": "Zahnarzt für Ästhetik",
   "doctorAbdullahTitle": "Endodontie & Zahnerhaltung",
-  "smileDesign": { "title": "Smile Design", "description": "Individuelle digitale Lächeln-Architektur nach dem Goldenen Schnitt." },
-  "implant": { "title": "Zahnimplantate", "description": "Biokompatible Titanimplantate für ein natürliches Zahngefühl ein Leben lang." },
-  "emax": { "title": "E-max Veneers", "description": "Hauchdünne Porzellan-Veneers mit herausragender natürlicher Lichtdurchlässigkeit." },
-  "zirconia": { "title": "Zirkonkronen", "description": "Metallfreie, hochstabile Kronen mit erstklassiger Ästhetik." },
-  "whitening": { "title": "Zahnaufhellung", "description": "Sicheres klinisches Laser-Bleaching für ein strahlend weißes Lächeln." },
-  "rootCanal": { "title": "Wurzelbehandlung", "description": "Schmerzfreie Zahnerhaltung mit mikroskopischer Präzision." },
-  "dentures": { "title": "Zahnprothesen", "description": "Komfortable, natürliche festsitzende und herausnehmbare Prothesensysteme." },
-  "bonding": { "title": "Komposit Bonding", "description": "Ästhetische Korrektur von Zahnlücken und Absplitterungen in nur einer Sitzung." },
-  "orthodontics": { "title": "Kieferorthopädie", "description": "Unsichtbare Zahnschienen und moderne Brackets für gerade Zähne." },
+  "smileDesign": {
+    "title": "Smile Design",
+    "description": "Individuelle digitale Lächeln-Architektur nach dem Goldenen Schnitt."
+  },
+  "implant": {
+    "title": "Zahnimplantate",
+    "description": "Biokompatible Titanimplantate für ein natürliches Zahngefühl ein Leben lang."
+  },
+  "emax": {
+    "title": "E-max Veneers",
+    "description": "Hauchdünne Porzellan-Veneers mit herausragender natürlicher Lichtdurchlässigkeit."
+  },
+  "zirconia": {
+    "title": "Zirkonkronen",
+    "description": "Metallfreie, hochstabile Kronen mit erstklassiger Ästhetik."
+  },
+  "whitening": {
+    "title": "Zahnaufhellung",
+    "description": "Sicheres klinisches Laser-Bleaching für ein strahlend weißes Lächeln."
+  },
+  "rootCanal": {
+    "title": "Wurzelbehandlung",
+    "description": "Schmerzfreie Zahnerhaltung mit mikroskopischer Präzision."
+  },
+  "dentures": {
+    "title": "Zahnprothesen",
+    "description": "Komfortable, natürliche festsitzende und herausnehmbare Prothesensysteme."
+  },
+  "bonding": {
+    "title": "Komposit Bonding",
+    "description": "Ästhetische Korrektur von Zahnlücken und Absplitterungen in nur einer Sitzung."
+  },
+  "orthodontics": {
+    "title": "Kieferorthopädie",
+    "description": "Unsichtbare Zahnschienen und moderne Brackets für gerade Zähne."
+  },
   "items": {
     "smileDesign": {
       "title": "SMILE DESIGN",
@@ -129,7 +156,7 @@
     }
   },
   "dentalImplantsIntro": {
-    "title": "Zahnimplantate in Istanbul – Master Smile Studio Türkei",
+    "title": "Zahnimplantate in Antalya – Master Smile Studio Türkei",
     "whatIsTitle": "Was sind Zahnimplantate?",
     "whatIsP1": "Ein Zahnimplantat ist eine künstliche Zahnwurzel, die einen fehlenden Zahn ersetzt. Es sieht aus wie eine kleine Schraube, meist aus Titan gefertigt, und wird in den Kieferknochen eingesetzt, um den neuen Zahn sicher zu tragen. Für einen vollständigen Zahnersatz werden drei Hauptkomponenten verwendet:",
     "part1Label": "Zahnimplantat (Titanschraube)",
@@ -138,8 +165,10 @@
     "part2Desc": "verbindet das Implantat mit der Krone.",
     "part3Label": "Krone (Sichtbarer Zahn)",
     "part3Desc": "der sichtbare Teil, der wie ein echter Zahn aussieht.",
-    "healingP": "Sobald das Implantat eingeheilt und fest mit dem Knochen verwachsen ist, wird die Krone angefertigt und befestigt. Im Master Smile Studio in Istanbul sorgt unser hochspezialisiertes Team für Oralchirurgie für eine reibungslose und erstklassige Behandlung.",
-    "solutionP": "Wenn Ihnen ein oder mehrere Zähne fehlen, sind Zahnimplantate in Istanbul eine sichere, dauerhafte und ästhetische Lösung.",
-    "costHeading": "Zahnimplantate Kosten & Preise in Istanbul, Türkei"
-  }
+    "healingP": "Sobald das Implantat eingeheilt und fest mit dem Knochen verwachsen ist, wird die Krone angefertigt und befestigt. Im Master Smile Studio in Antalya sorgt unser hochspezialisiertes Team für Oralchirurgie für eine reibungslose und erstklassige Behandlung.",
+    "solutionP": "Wenn Ihnen ein oder mehrere Zähne fehlen, sind Zahnimplantate in Antalya eine sichere, dauerhafte und ästhetische Lösung.",
+    "costHeading": "Zahnimplantate Kosten & Preise in Antalya, Türkei"
+  },
+  "doctorFiratTitle": "Mund-, Kiefer- und Gesichtschirurg",
+  "doctorOzanTitle": "Spezialist für Prothetik & Ästhetik"
 }

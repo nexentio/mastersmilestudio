@@ -18,12 +18,12 @@ export async function generateMetadata({ params }: Props) {
   return {
     title:
       locale === 'tr'
-        ? 'Klinik Genel Galerisi | Master Smile Studio İstanbul'
-        : 'Clinic Gallery | Master Smile Studio Istanbul',
+        ? 'Klinik Genel Galerisi | Master Smile Studio Antalya'
+        : 'Clinic Gallery | Master Smile Studio Antalya',
     description:
       locale === 'tr'
         ? 'Master Smile Studio son teknoloji klinik alanları, VIP odalar ve tedavi üniteleri genel galerisi.'
-        : 'Explore Master Smile Studio modern dental clinic, luxury VIP suites and cutting-edge facilities in Istanbul.',
+        : 'Explore Master Smile Studio modern dental clinic, luxury VIP suites and cutting-edge facilities in Antalya.',
   };
 }
 

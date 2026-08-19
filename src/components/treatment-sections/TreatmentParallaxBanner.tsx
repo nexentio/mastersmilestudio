@@ -19,7 +19,7 @@ const BANNER_TRANSLATIONS: Record<string, BannerContent> = {
   en: {
     tag: 'YOUR JOURNEY, SEAMLESSLY DESIGNED',
     title: 'From Your First Message to Your Final Smile — Guided with World-Class Care',
-    desc: 'Personalized care, transparent communication, luxury 5-star hotel accommodation, and direct treatment by our clinic founders ensure a smooth and joyful journey in Istanbul.',
+    desc: 'Personalized care, transparent communication, luxury 5-star hotel accommodation, and direct treatment by our clinic founders ensure a smooth and joyful journey in Antalya.',
     bookBtn: 'Book Appointment',
     bookAria: 'Book a dental treatment appointment with Master Smile Studio',
     whatsappBtn: 'WhatsApp Live Chat',
@@ -35,7 +35,7 @@ const BANNER_TRANSLATIONS: Record<string, BannerContent> = {
   de: {
     tag: 'IHRE BEHANDLUNGSREISE, NAHTLOS GEPLANT',
     title: 'Von Ihrer ersten Nachricht bis zu Ihrem finalen Lächeln — Erstklassige Betreuung',
-    desc: 'Individuelle Behandlungsplanung, transparente Kommunikation, erstklassige 5-Sterne-Unterkunft und direkte Behandlung durch unsere Chefärzte garantieren einen sorgenfreien Aufenthalt in Istanbul.',
+    desc: 'Individuelle Behandlungsplanung, transparente Kommunikation, erstklassige 5-Sterne-Unterkunft und direkte Behandlung durch unsere Chefärzte garantieren einen sorgenfreien Aufenthalt in Antalya.',
     bookBtn: 'Termin Buchen',
     bookAria: 'Buchen Sie einen Termin für Ihre Zahnbehandlung bei Master Smile Studio',
     whatsappBtn: 'WhatsApp Live-Chat',
@@ -43,7 +43,7 @@ const BANNER_TRANSLATIONS: Record<string, BannerContent> = {
   pl: {
     tag: 'TWOJA PODRÓŻ, IDEALNIE ZAPLANOWANA',
     title: 'Od pierwszej wiadomości do wymarzonego uśmiechu — Światowej klasy opieka',
-    desc: 'Indywidualna opieka, przejrzysta komunikacja, luksusowe zakwaterowanie w 5-gwiazdkowym hotelu oraz bezpośrednie leczenie przez naszych założycieli kliniki zapewniają komfortowy pobyt w Stambule.',
+    desc: 'Indywidualna opieka, przejrzysta komunikacja, luksusowe zakwaterowanie w 5-gwiazdkowym hotelu oraz bezpośrednie leczenie przez naszych założycieli kliniki zapewniają komfortowy pobyt w Antalyi.',
     bookBtn: 'Zarezerwuj Wizytę',
     bookAria: 'Zarezerwuj wizytę na leczenie stomatologiczne w Master Smile Studio',
     whatsappBtn: 'Czat WhatsApp Live',
@@ -51,7 +51,7 @@ const BANNER_TRANSLATIONS: Record<string, BannerContent> = {
   pt: {
     tag: 'SUA JORNADA, PERFEITAMENTE PLANEJADA',
     title: 'Da sua primeira mensagem ao sorriso final — Cuidado de classe mundial',
-    desc: 'Atendimento personalizado, comunicação transparente, hospedagem de luxo em hotel 5 estrelas e tratamento direto com os fundadores da nossa clínica garantem uma estadia tranquila em Istambul.',
+    desc: 'Atendimento personalizado, comunicação transparente, hospedagem de luxo em hotel 5 estrelas e tratamento direto com os fundadores da nossa clínica garantem uma estadia tranquila em Antalya.',
     bookBtn: 'Agendar Consulta',
     bookAria: 'Agende uma consulta odontológica na Master Smile Studio',
     whatsappBtn: 'Chat WhatsApp ao Vivo',
@@ -59,7 +59,7 @@ const BANNER_TRANSLATIONS: Record<string, BannerContent> = {
   es: {
     tag: 'SU VIAJE, DISEÑADO A LA PERFECCIÓN',
     title: 'Desde su primer mensaje hasta su sonrisa final — Atención médica de primer nivel',
-    desc: 'Atención personalizada, comunicación transparente, alojamiento de lujo en hotel de 5 estrellas y tratamiento directo con los cirujanos fundadores de nuestra clínica garantizan una experiencia inolvidable en Estambul.',
+    desc: 'Atención personalizada, comunicación transparente, alojamiento de lujo en hotel de 5 estrellas y tratamiento directo con los cirujanos fundadores de nuestra clínica garantizan una experiencia inolvidable en Antalya.',
     bookBtn: 'Reservar Cita',
     bookAria: 'Reserve una cita para su tratamiento dental en Master Smile Studio',
     whatsappBtn: 'Chat en Vivo por WhatsApp',
@@ -67,7 +67,7 @@ const BANNER_TRANSLATIONS: Record<string, BannerContent> = {
   ru: {
     tag: 'ВАШЕ ПУТЕШЕСТВИЕ, ИДЕАЛЬНО СПЛАНИРОВАННОЕ',
     title: 'От первого сообщения до вашей идеальной улыбки — Забота мирового уровня',
-    desc: 'Персонализированный подход, прозрачная коммуникация, проживание в 5-звездочном отеле и лечение у ведущих хирургов-основателей клиники гарантируют комфортное пребывание в Стамбуле.',
+    desc: 'Персонализированный подход, прозрачная коммуникация, проживание в 5-звездочном отеле и лечение у ведущих хирургов-основателей клиники гарантируют комфортное пребывание в Анталье.',
     bookBtn: 'Записаться на Приём',
     bookAria: 'Запишитесь на консультацию по лечению зубов в Master Smile Studio',
     whatsappBtn: 'Чат в WhatsApp',

@@ -15,26 +15,26 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
   {
     id: 'all-on-x-before-after',
     title: {
-      en: 'All-On-4-6-8 Before After in Istanbul, Turkey | Master Smile Studio',
-      tr: 'İstanbul All-On-4-6-8 İmplant Tedavisi Öncesi ve Sonrası | Master Smile Studio',
-      de: 'All-On-4-6-8 Vorher-Nachher in Istanbul, Türkei | Master Smile Studio',
-      pl: 'All-On-4-6-8 Przed i Po w Stambule, Turcja | Master Smile Studio',
-      pt: 'All-On-4-6-8 Antes e Depois em Istambul, Turquia | Master Smile Studio',
-      es: 'All-On-4-6-8 Antes y Después en Estambul, Turquía | Master Smile Studio',
-      ru: 'All-On-4-6-8 До и После в Стамбуле, Турция | Master Smile Studio',
+      en: 'All-On-4-6-8 Before After in Antalya, Turkey | Master Smile Studio',
+      tr: 'Antalya All-On-4-6-8 İmplant Tedavisi Öncesi ve Sonrası | Master Smile Studio',
+      de: 'All-On-4-6-8 Vorher-Nachher in Antalya, Türkei | Master Smile Studio',
+      pl: 'All-On-4-6-8 Przed i Po w Antalyi, Turcja | Master Smile Studio',
+      pt: 'All-On-4-6-8 Antes e Depois em Antalya, Turquia | Master Smile Studio',
+      es: 'All-On-4-6-8 Antes y Después en Antalya, Turquía | Master Smile Studio',
+      ru: 'All-On-4-6-8 До и После в Анталье, Турция | Master Smile Studio',
     },
     items: [
       {
         id: 'allon-1',
-        image: '/before-after/all-on-six-istanbul-turkey26.webp',
+        image: '/before-after/all-on-six-antalya-turkey26.webp',
         alt: {
-          en: 'All-on-6 dental implants before and after Istanbul Turkey',
-          tr: 'İstanbul All-on-6 dental implant tedavisi öncesi ve sonrası',
-          de: 'All-on-6 Zahnimplantate Vorher und Nachher Istanbul Türkei',
-          pl: 'Implanty zębowe All-on-6 przed i po Stambuł Turcja',
-          pt: 'Implantes dentários All-on-6 antes e depois Istambul Turquia',
-          es: 'Implantes dentales All-on-6 antes y después Estambul Turquía',
-          ru: 'Зубные импланты All-on-6 до и после Стамбул Турция',
+          en: 'All-on-6 dental implants before and after Antalya Turkey',
+          tr: 'Antalya All-on-6 dental implant tedavisi öncesi ve sonrası',
+          de: 'All-on-6 Zahnimplantate Vorher und Nachher Antalya Türkei',
+          pl: 'Implanty zębowe All-on-6 przed i po Antalya Turcja',
+          pt: 'Implantes dentários All-on-6 antes e depois Antalya Turquia',
+          es: 'Implantes dentales All-on-6 antes y después Antalya Turquía',
+          ru: 'Зубные импланты All-on-6 до и после Анталья Турция',
         },
         treatmentName: {
           en: 'All-on-6 Dental Implants',
@@ -48,15 +48,15 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'allon-2',
-        image: '/before-after/all-on-six-istanbul-turkey25.webp',
+        image: '/before-after/all-on-six-antalya-turkey25.webp',
         alt: {
-          en: 'All-on-6 dental implants transformation Istanbul',
-          tr: 'All-on-6 tam çene implant dönüşümü İstanbul',
-          de: 'All-on-6 Zahnimplantat Transformation Istanbul',
-          pl: 'Transformacja implantów All-on-6 Stambuł',
-          pt: 'Transformação de implantes All-on-6 Istambul',
-          es: 'Transformación de implantes All-on-6 Estambul',
-          ru: 'Трансформация с имплантами All-on-6 Стамбул',
+          en: 'All-on-6 dental implants transformation Antalya',
+          tr: 'All-on-6 tam çene implant dönüşümü Antalya',
+          de: 'All-on-6 Zahnimplantat Transformation Antalya',
+          pl: 'Transformacja implantów All-on-6 Antalya',
+          pt: 'Transformação de implantes All-on-6 Antalya',
+          es: 'Transformación de implantes All-on-6 Antalya',
+          ru: 'Трансформация с имплантами All-on-6 Анталья',
         },
         treatmentName: {
           en: 'All-on-6 Full Arch Implants',
@@ -70,10 +70,10 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'allon-3',
-        image: '/before-after/all-on-4-istanbul-turkey-24.webp',
+        image: '/before-after/all-on-4-antalya-turkey-24.webp',
         alt: {
-          en: 'All-on-4 dental implants before and after Istanbul Turkey',
-          tr: 'All-on-4 implant öncesi sonrası İstanbul',
+          en: 'All-on-4 dental implants before and after Antalya Turkey',
+          tr: 'All-on-4 implant öncesi sonrası Antalya',
           de: 'All-on-4 Zahnimplantate Vorher-Nachher Türkei',
           pl: 'All-on-4 implanty zębowe przed i po Turcja',
           pt: 'All-on-4 implantes dentários antes e depois Turquia',
@@ -92,7 +92,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'allon-4',
-        image: '/before-after/all-on-4-istanbul-turkey22.webp',
+        image: '/before-after/all-on-4-antalya-turkey22.webp',
         alt: {
           en: 'All on 4 dental implants smile design',
           tr: 'All-on-4 implant gülüş tasarımı',
@@ -114,7 +114,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'allon-5',
-        image: '/before-after/all-on-6-istanbul-turkey23.webp',
+        image: '/before-after/all-on-6-antalya-turkey23.webp',
         alt: {
           en: 'All on 6 permanent teeth before and after',
           tr: 'All-on-6 sabit dişler öncesi ve sonrası',
@@ -136,7 +136,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'allon-6',
-        image: '/before-after/all-on-4-istanbul-turkey21.webp',
+        image: '/before-after/all-on-4-antalya-turkey21.webp',
         alt: {
           en: 'All on 4 upper jaw restoration',
           tr: 'All-on-4 üst çene implant restorasyonu',
@@ -158,7 +158,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'allon-7',
-        image: '/before-after/all-on-four-istanbul-turkey-27.webp',
+        image: '/before-after/all-on-four-antalya-turkey-27.webp',
         alt: {
           en: 'All-on-4 dental implants full mouth makeover',
           tr: 'All-on-4 tam ağız implant dönüşümü',
@@ -180,7 +180,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'allon-8',
-        image: '/before-after/All-on-4-istanbul-turkey-20.webp',
+        image: '/before-after/All-on-4-antalya-turkey-20.webp',
         alt: {
           en: 'All On 4 before and after in Turkey',
           tr: 'Türkiye All-on-4 öncesi ve sonrası',
@@ -202,7 +202,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'allon-9',
-        image: '/before-after/All-on-4-istanbul-turkey-19.webp',
+        image: '/before-after/All-on-4-antalya-turkey-19.webp',
         alt: {
           en: 'All on 4 dental implants natural result',
           tr: 'All-on-4 implant doğal görünüm',
@@ -224,7 +224,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'allon-10',
-        image: '/before-after/All-on-6-istanbul-Turkey-18.webp',
+        image: '/before-after/All-on-6-antalya-Turkey-18.webp',
         alt: {
           en: 'All on 6 dental implants surgery result',
           tr: 'All-on-6 implant cerrahi sonucu',
@@ -270,13 +270,13 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
         id: 'allon-12',
         image: '/before-after/5.webp',
         alt: {
-          en: 'All-on-6 before and after Istanbul',
-          tr: 'İstanbul All-on-6 öncesi ve sonrası',
-          de: 'All-on-6 Vorher-Nachher Istanbul',
-          pl: 'All-on-6 przed i po Stambuł',
-          pt: 'All-on-6 antes e depois Istambul',
-          es: 'All-on-6 antes y después Estambul',
-          ru: 'All-on-6 до и после Стамбул',
+          en: 'All-on-6 before and after Antalya',
+          tr: 'Antalya All-on-6 öncesi ve sonrası',
+          de: 'All-on-6 Vorher-Nachher Antalya',
+          pl: 'All-on-6 przed i po Antalya',
+          pt: 'All-on-6 antes e depois Antalya',
+          es: 'All-on-6 antes y después Antalya',
+          ru: 'All-on-6 до и после Анталья',
         },
         treatmentName: {
           en: 'All-on-6 Full Restoration',
@@ -424,13 +424,13 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
         id: 'allon-19',
         image: '/before-after/6-1.webp',
         alt: {
-          en: 'All on 6 dental implants Istanbul clinic',
-          tr: 'İstanbul All-on-6 implant kliniği',
-          de: 'All-on-6 Zahnimplantate Istanbul Klinik',
-          pl: 'Implanty All-on-6 klinika Stambuł',
-          pt: 'Clínica de implantes All-on-6 em Istambul',
-          es: 'Clínica de implantes All-on-6 en Estambul',
-          ru: 'Клиника имплантации All-on-6 в Стамбуле',
+          en: 'All on 6 dental implants Antalya clinic',
+          tr: 'Antalya All-on-6 implant kliniği',
+          de: 'All-on-6 Zahnimplantate Antalya Klinik',
+          pl: 'Implanty All-on-6 klinika Antalya',
+          pt: 'Clínica de implantes All-on-6 em Antalya',
+          es: 'Clínica de implantes All-on-6 en Antalya',
+          ru: 'Клиника имплантации All-on-6 в Анталье',
         },
         treatmentName: {
           en: 'All-on-6 Clinical Case',
@@ -468,13 +468,13 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
         id: 'allon-21',
         image: '/before-after/17.webp',
         alt: {
-          en: 'All On 4 Before After Istanbul Turkey',
-          tr: 'All-on-4 Öncesi Sonrası İstanbul Türkiye',
-          de: 'All-on-4 Vorher-Nachher Istanbul Türkei',
-          pl: 'All-on-4 Przed i Po Stambuł Turcja',
-          pt: 'All-on-4 Antes e Depois Istambul Turquia',
-          es: 'All-on-4 Antes y Después Estambul Turquía',
-          ru: 'All-on-4 До и После Стамбул Турция',
+          en: 'All On 4 Before After Antalya Turkey',
+          tr: 'All-on-4 Öncesi Sonrası Antalya Türkiye',
+          de: 'All-on-4 Vorher-Nachher Antalya Türkei',
+          pl: 'All-on-4 Przed i Po Antalya Turcja',
+          pt: 'All-on-4 Antes e Depois Antalya Turquia',
+          es: 'All-on-4 Antes y Después Antalya Turquía',
+          ru: 'All-on-4 До и После Анталья Турция',
         },
         treatmentName: {
           en: 'All-on-4 Fixed Teeth',
@@ -512,7 +512,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
         id: 'allon-23',
         image: '/before-after/15.webp',
         alt: {
-          en: 'All On 4 Before After Istanbul Case',
+          en: 'All On 4 Before After Antalya Case',
           tr: 'All-on-4 Öncesi Sonrası Vaka',
           de: 'All-on-4 Fallbericht',
           pl: 'Przypadek All-on-4',
@@ -601,26 +601,26 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
   {
     id: 'zirconium-crowns-before-after',
     title: {
-      en: 'Zirconium Crowns Before - After in Istanbul, Turkey | Master Smile Studio',
-      tr: 'İstanbul Zirkonyum Diş Kaplama Öncesi ve Sonrası | Master Smile Studio',
-      de: 'Zirkonkronen Vorher - Nachher in Istanbul, Türkei | Master Smile Studio',
-      pl: 'Korony Cyrkonowe Przed - Po w Stambule, Turcja | Master Smile Studio',
-      pt: 'Coroas de Zircónio Antes - Depois em Istambul, Turquia | Master Smile Studio',
-      es: 'Coronas de Zirconio Antes - Después en Estambul, Turquía | Master Smile Studio',
-      ru: 'Циркониевые коронки До - После в Стамбуле, Турция | Master Smile Studio',
+      en: 'Zirconium Crowns Before - After in Antalya, Turkey | Master Smile Studio',
+      tr: 'Antalya Zirkonyum Diş Kaplama Öncesi ve Sonrası | Master Smile Studio',
+      de: 'Zirkonkronen Vorher - Nachher in Antalya, Türkei | Master Smile Studio',
+      pl: 'Korony Cyrkonowe Przed - Po w Antalyi, Turcja | Master Smile Studio',
+      pt: 'Coroas de Zircónio Antes - Depois em Antalya, Turquia | Master Smile Studio',
+      es: 'Coronas de Zirconio Antes - Después en Antalya, Turquía | Master Smile Studio',
+      ru: 'Циркониевые коронки До - После в Анталье, Турция | Master Smile Studio',
     },
     items: [
       {
         id: 'crown-1',
-        image: '/before-after/hollywood-smile-istanbul-turkey-10.webp',
+        image: '/before-after/hollywood-smile-antalya-turkey-10.webp',
         alt: {
-          en: 'Zirconium Crown Before After Istanbul Turkey',
-          tr: 'Zirkonyum Kaplama Öncesi Sonrası İstanbul Türkiye',
-          de: 'Zirkonkrone Vorher-Nachher Istanbul Türkei',
-          pl: 'Korony cyrkonowe przed i po Stambuł Turcja',
-          pt: 'Coroas de zircónio antes e depois Istambul Turquia',
-          es: 'Coronas de zirconio antes y después Estambul Turquía',
-          ru: 'Циркониевые коронки до и после Стамбул Турция',
+          en: 'Zirconium Crown Before After Antalya Turkey',
+          tr: 'Zirkonyum Kaplama Öncesi Sonrası Antalya Türkiye',
+          de: 'Zirkonkrone Vorher-Nachher Antalya Türkei',
+          pl: 'Korony cyrkonowe przed i po Antalya Turcja',
+          pt: 'Coroas de zircónio antes e depois Antalya Turquia',
+          es: 'Coronas de zirconio antes y después Antalya Turquía',
+          ru: 'Циркониевые коронки до и после Анталья Турция',
         },
         treatmentName: {
           en: 'Zirconium Hollywood Smile',
@@ -634,11 +634,11 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'crown-2',
-        image: '/before-after/hollywood-smile-istanbul-turkey-9.webp',
+        image: '/before-after/hollywood-smile-antalya-turkey-9.webp',
         alt: {
-          en: 'Turkish crowns - Zirconium Crown Before After Istanbul Turkey',
+          en: 'Turkish crowns - Zirconium Crown Before After Antalya Turkey',
           tr: 'Zirkonyum diş kaplama öncesi ve sonrası',
-          de: 'Zirkonkronen Vorher-Nachher Istanbul',
+          de: 'Zirkonkronen Vorher-Nachher Antalya',
           pl: 'Korony cyrkonowe przed i po Turcja',
           pt: 'Coroas de zircónio antes e depois Turquia',
           es: 'Coronas de zirconio antes y después Turquía',
@@ -656,9 +656,9 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'crown-3',
-        image: '/before-after/hollywood-smile-istanbul-turkey-8.webp',
+        image: '/before-after/hollywood-smile-antalya-turkey-8.webp',
         alt: {
-          en: 'Zirconium Crown Before After Istanbul Turkey',
+          en: 'Zirconium Crown Before After Antalya Turkey',
           tr: 'Zirkonyum kron öncesi ve sonrası',
           de: 'Zirkonkrone Vorher Nachher',
           pl: 'Korona cyrkonowa przed po',
@@ -678,15 +678,15 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'crown-4',
-        image: '/before-after/hollywood-smile-istanbul-turkey-7.webp',
+        image: '/before-after/hollywood-smile-antalya-turkey-7.webp',
         alt: {
-          en: 'Affordable dental crowns near me Istanbul',
-          tr: 'İstanbul zirkonyum kaplama estetiği',
-          de: 'Zirkonkronen Ästhetik Istanbul',
-          pl: 'Estetyka koron cyrkonowych Stambuł',
-          pt: 'Estética de coroas de zircónio Istambul',
-          es: 'Estética de coronas de zirconio Estambul',
-          ru: 'Эстетика циркониевых коронок Стамбул',
+          en: 'Affordable dental crowns near me Antalya',
+          tr: 'Antalya zirkonyum kaplama estetiği',
+          de: 'Zirkonkronen Ästhetik Antalya',
+          pl: 'Estetyka koron cyrkonowych Antalya',
+          pt: 'Estética de coroas de zircónio Antalya',
+          es: 'Estética de coronas de zirconio Antalya',
+          ru: 'Эстетика циркониевых коронок Анталья',
         },
         treatmentName: {
           en: 'Aesthetic Zirconium Crowns',
@@ -700,9 +700,9 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'crown-5',
-        image: '/before-after/hollywood-smile-istanbul-turkey-5.webp',
+        image: '/before-after/hollywood-smile-antalya-turkey-5.webp',
         alt: {
-          en: 'Zirconium Crown Before After Istanbul Turkey',
+          en: 'Zirconium Crown Before After Antalya Turkey',
           tr: 'Zirkonyum kaplama gülüş dönüşümü',
           de: 'Zirkonkrone Lächeln Transformation',
           pl: 'Transformacja uśmiechu koronami cyrkonowymi',
@@ -744,15 +744,15 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'crown-7',
-        image: '/before-after/hollywood-smile-istanbul-turkey-2.webp',
+        image: '/before-after/hollywood-smile-antalya-turkey-2.webp',
         alt: {
-          en: 'Istanbul dental clinic turkey dentist crowns',
-          tr: 'İstanbul zirkonyum kaplama klinik uygulaması',
-          de: 'Istanbul Zirkonkronen Klinikbehandlung',
-          pl: 'Zabieg koronami cyrkonowymi Stambuł',
-          pt: 'Procedimento com coroas de zircónio em Istambul',
-          es: 'Tratamiento de coronas de zirconio en Estambul',
-          ru: 'Лечение циркониевыми коронками в Стамбуле',
+          en: 'Antalya dental clinic turkey dentist crowns',
+          tr: 'Antalya zirkonyum kaplama klinik uygulaması',
+          de: 'Antalya Zirkonkronen Klinikbehandlung',
+          pl: 'Zabieg koronami cyrkonowymi Antalya',
+          pt: 'Procedimento com coroas de zircónio em Antalya',
+          es: 'Tratamiento de coronas de zirconio en Antalya',
+          ru: 'Лечение циркониевыми коронками в Анталье',
         },
         treatmentName: {
           en: 'Zirconium Dental Art',
@@ -766,7 +766,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'crown-8',
-        image: '/before-after/hollywood-smile-istanbul-turkey-3.webp',
+        image: '/before-after/hollywood-smile-antalya-turkey-3.webp',
         alt: {
           en: 'Front teeth crowns before and after',
           tr: 'Ön diş kaplama öncesi ve sonrası',
@@ -788,7 +788,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'crown-9',
-        image: '/before-after/hollywood-smile-istanbul-turkey-4.webp',
+        image: '/before-after/hollywood-smile-antalya-turkey-4.webp',
         alt: {
           en: 'Dental crowns before and after transformation',
           tr: 'Diş kaplamaları dönüşüm sonucu',
@@ -835,26 +835,26 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
   {
     id: 'laminate-veneers-before-after',
     title: {
-      en: 'Laminate Veneers Before - After in Istanbul, Turkey | Master Smile Studio',
-      tr: 'İstanbul Lamine Diş (Veneer) Öncesi ve Sonrası | Master Smile Studio',
-      de: 'Laminat-Veneers Vorher - Nachher in Istanbul, Türkei | Master Smile Studio',
-      pl: 'Licówki Porcelanowe Przed - Po w Stambule, Turcja | Master Smile Studio',
-      pt: 'Facetas Laminadas Antes - Depois em Istambul, Turquia | Master Smile Studio',
-      es: 'Carillas Laminadas Antes - Después en Estambul, Turquía | Master Smile Studio',
-      ru: 'Керамические виниры До - После в Стамбуле, Турция | Master Smile Studio',
+      en: 'Laminate Veneers Before - After in Antalya, Turkey | Master Smile Studio',
+      tr: 'Antalya Lamine Diş (Veneer) Öncesi ve Sonrası | Master Smile Studio',
+      de: 'Laminat-Veneers Vorher - Nachher in Antalya, Türkei | Master Smile Studio',
+      pl: 'Licówki Porcelanowe Przed - Po w Antalyi, Turcja | Master Smile Studio',
+      pt: 'Facetas Laminadas Antes - Depois em Antalya, Turquia | Master Smile Studio',
+      es: 'Carillas Laminadas Antes - Después en Antalya, Turquía | Master Smile Studio',
+      ru: 'Керамические виниры До - После в Анталье, Турция | Master Smile Studio',
     },
     items: [
       {
         id: 'veneer-1',
-        image: '/before-after/Laminate-Veneer-Istanbul-Turkey-18.webp',
+        image: '/before-after/Laminate-Veneer-Antalya-Turkey-18.webp',
         alt: {
-          en: 'Veneer teeth near me Istanbul',
-          tr: 'İstanbul lamine diş kaplama',
-          de: 'Veneers Istanbul',
-          pl: 'Licówki Stambuł',
-          pt: 'Facetas Istambul',
-          es: 'Carillas Estambul',
-          ru: 'Виниры Стамбул',
+          en: 'Veneer teeth near me Antalya',
+          tr: 'Antalya lamine diş kaplama',
+          de: 'Veneers Antalya',
+          pl: 'Licówki Antalya',
+          pt: 'Facetas Antalya',
+          es: 'Carillas Antalya',
+          ru: 'Виниры Анталья',
         },
         treatmentName: {
           en: 'E-Max Laminate Veneers',
@@ -868,7 +868,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'veneer-2',
-        image: '/before-after/Laminate-Veneer-Istanbul-Turkey-17.webp',
+        image: '/before-after/Laminate-Veneer-Antalya-Turkey-17.webp',
         alt: {
           en: 'Dental veneers before and after transformation',
           tr: 'Lamine kaplama öncesi ve sonrası',
@@ -890,15 +890,15 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'veneer-3',
-        image: '/before-after/Laminate-Veneer-Istanbul-Turkey-16.webp',
+        image: '/before-after/Laminate-Veneer-Antalya-Turkey-16.webp',
         alt: {
-          en: 'Veneers turkey istanbul result',
-          tr: 'Türkiye İstanbul lamine diş sonucu',
-          de: 'Veneers Türkei Istanbul Ergebnis',
-          pl: 'Licówki Turcja Stambuł efekt',
-          pt: 'Facetas Turquia Istambul resultado',
-          es: 'Carillas Turquía Estambul resultado',
-          ru: 'Виниры Турция Стамбул результат',
+          en: 'Veneers turkey antalya result',
+          tr: 'Türkiye Antalya lamine diş sonucu',
+          de: 'Veneers Türkei Antalya Ergebnis',
+          pl: 'Licówki Turcja Antalya efekt',
+          pt: 'Facetas Turquia Antalya resultado',
+          es: 'Carillas Turquía Antalya resultado',
+          ru: 'Виниры Турция Анталья результат',
         },
         treatmentName: {
           en: 'Minimal Prep Veneers',
@@ -912,7 +912,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'veneer-4',
-        image: '/before-after/Laminate-Veneer-Istanbul-Turkey-15.webp',
+        image: '/before-after/Laminate-Veneer-Antalya-Turkey-15.webp',
         alt: {
           en: '4 veneers on front teeth before and after',
           tr: 'Ön 4 dişe lamine veneer öncesi sonrası',
@@ -934,7 +934,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'veneer-5',
-        image: '/before-after/Laminate-Veneer-Istanbul-Turkey-14.webp',
+        image: '/before-after/Laminate-Veneer-Antalya-Turkey-14.webp',
         alt: {
           en: 'Turkey teeth before and after veneers',
           tr: 'Türkiye diş estetiği lamine öncesi sonrası',
@@ -956,15 +956,15 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'veneer-6',
-        image: '/before-after/Laminate-Veneer-Istanbul-Turkey-13.webp',
+        image: '/before-after/Laminate-Veneer-Antalya-Turkey-13.webp',
         alt: {
-          en: 'Dental veneers near me in Istanbul',
-          tr: 'İstanbul estetik lamine diş kaplama',
-          de: 'Ästhetische Veneers Istanbul',
-          pl: 'Estetyczne licówki Stambuł',
-          pt: 'Facetas estéticas Istambul',
-          es: 'Carillas estéticas Estambul',
-          ru: 'Эстетические виниры Стамбул',
+          en: 'Dental veneers near me in Antalya',
+          tr: 'Antalya estetik lamine diş kaplama',
+          de: 'Ästhetische Veneers Antalya',
+          pl: 'Estetyczne licówki Antalya',
+          pt: 'Facetas estéticas Antalya',
+          es: 'Carillas estéticas Antalya',
+          ru: 'Эстетические виниры Анталья',
         },
         treatmentName: {
           en: 'Aesthetic Smile Veneers',
@@ -978,7 +978,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'veneer-7',
-        image: '/before-after/Laminate-Veneer-Istanbul-Turkey-12.webp',
+        image: '/before-after/Laminate-Veneer-Antalya-Turkey-12.webp',
         alt: {
           en: 'Dental veneers transformation',
           tr: 'Lamine diş dönüşümü',
@@ -1000,15 +1000,15 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'veneer-8',
-        image: '/before-after/Laminate-Veneer-Istanbul-Turkey-11.webp',
+        image: '/before-after/Laminate-Veneer-Antalya-Turkey-11.webp',
         alt: {
-          en: 'Laminate Veneer Before After Istanbul Turkey',
-          tr: 'Lamine Veneer Öncesi Sonrası İstanbul Türkiye',
-          de: 'Laminat-Veneer Vorher-Nachher Istanbul',
-          pl: 'Licówki przed i po Stambuł Turcja',
-          pt: 'Facetas antes e depois Istambul Turquia',
-          es: 'Carillas antes y después Estambul Turquía',
-          ru: 'Виниры до и после Стамбул Турция',
+          en: 'Laminate Veneer Before After Antalya Turkey',
+          tr: 'Lamine Veneer Öncesi Sonrası Antalya Türkiye',
+          de: 'Laminat-Veneer Vorher-Nachher Antalya',
+          pl: 'Licówki przed i po Antalya Turcja',
+          pt: 'Facetas antes e depois Antalya Turquia',
+          es: 'Carillas antes y después Antalya Turquía',
+          ru: 'Виниры до и после Анталья Турция',
         },
         treatmentName: {
           en: 'Custom E-Max Laminate',
@@ -1022,15 +1022,15 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'veneer-9',
-        image: '/before-after/Laminate-Veneer-Before-After-Istanbul-Turkey-4.webp',
+        image: '/before-after/Laminate-Veneer-Before-After-Antalya-Turkey-4.webp',
         alt: {
-          en: 'Affordable veneers in Istanbul',
-          tr: 'İstanbul lamine diş tedavisi',
-          de: 'Veneer-Behandlung Istanbul',
-          pl: 'Leczenie licówkami Stambuł',
-          pt: 'Tratamento com facetas Istambul',
-          es: 'Tratamiento con carillas Estambul',
-          ru: 'Лечение винирами Стамбул',
+          en: 'Affordable veneers in Antalya',
+          tr: 'Antalya lamine diş tedavisi',
+          de: 'Veneer-Behandlung Antalya',
+          pl: 'Leczenie licówkami Antalya',
+          pt: 'Tratamento com facetas Antalya',
+          es: 'Tratamiento con carillas Antalya',
+          ru: 'Лечение винирами Анталья',
         },
         treatmentName: {
           en: 'Natural Translucency Veneers',
@@ -1044,7 +1044,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'veneer-10',
-        image: '/before-after/Laminate-Veneer-Before-After-Istanbul-Turkey-3.webp',
+        image: '/before-after/Laminate-Veneer-Before-After-Antalya-Turkey-3.webp',
         alt: {
           en: 'Veneers before and after photos',
           tr: 'Lamine diş öncesi sonrası fotoğrafları',
@@ -1066,7 +1066,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'veneer-11',
-        image: '/before-after/Laminate-Veneer-Before-After-Istanbul-Turkey-1.webp',
+        image: '/before-after/Laminate-Veneer-Before-After-Antalya-Turkey-1.webp',
         alt: {
           en: 'Where can I get veneers near me',
           tr: 'Lamine kaplama öncesi ve sonrası',
@@ -1088,10 +1088,10 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'veneer-12',
-        image: '/before-after/Laminate-Veneer-Before-After-Istanbul-Turkey-10.webp',
+        image: '/before-after/Laminate-Veneer-Before-After-Antalya-Turkey-10.webp',
         alt: {
-          en: 'Emax veneers Before After Istanbul Turkey',
-          tr: 'E-Max lamine öncesi ve sonrası İstanbul Türkiye',
+          en: 'Emax veneers Before After Antalya Turkey',
+          tr: 'E-Max lamine öncesi ve sonrası Antalya Türkiye',
           de: 'E-Max Veneers Vorher-Nachher Türkei',
           pl: 'Licówki E-Max przed i po Turcja',
           pt: 'Facetas E-Max antes e depois Turquia',
@@ -1110,15 +1110,15 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'veneer-13',
-        image: '/before-after/Laminate-Veneer-Before-After-Istanbul-Turkey-9.webp',
+        image: '/before-after/Laminate-Veneer-Before-After-Antalya-Turkey-9.webp',
         alt: {
           en: 'Best place to get veneers in Turkey',
-          tr: 'İstanbul lamine diş hekimliği',
-          de: 'Veneers Zahnmedizin Istanbul',
-          pl: 'Stomatologia estetyczna licówki Stambuł',
-          pt: 'Medicina dentária estética de facetas Istambul',
-          es: 'Odontología estética de carillas Estambul',
-          ru: 'Стоматология виниров Стамбул',
+          tr: 'Antalya lamine diş hekimliği',
+          de: 'Veneers Zahnmedizin Antalya',
+          pl: 'Stomatologia estetyczna licówki Antalya',
+          pt: 'Medicina dentária estética de facetas Antalya',
+          es: 'Odontología estética de carillas Antalya',
+          ru: 'Стоматология виниров Анталью',
         },
         treatmentName: {
           en: 'Precision Veneer Design',
@@ -1132,7 +1132,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'veneer-14',
-        image: '/before-after/Laminate-Veneer-Before-After-Istanbul-Turkey-8.webp',
+        image: '/before-after/Laminate-Veneer-Before-After-Antalya-Turkey-8.webp',
         alt: {
           en: 'Emax veneers turkey result',
           tr: 'E-Max lamine diş sonucu Türkiye',
@@ -1154,15 +1154,15 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'veneer-15',
-        image: '/before-after/Laminate-Veneer-Before-After-Istanbul-Turkey-7.webp',
+        image: '/before-after/Laminate-Veneer-Before-After-Antalya-Turkey-7.webp',
         alt: {
-          en: 'Veneers istanbul turkey clinic',
-          tr: 'İstanbul lamine diş kliniği',
-          de: 'Veneers Istanbul Klinik',
-          pl: 'Klinika licówek Stambuł',
-          pt: 'Clínica de facetas em Istambul',
-          es: 'Clínica de carillas en Estambul',
-          ru: 'Клиника виниров в Стамбуле',
+          en: 'Veneers antalya turkey clinic',
+          tr: 'Antalya lamine diş kliniği',
+          de: 'Veneers Antalya Klinik',
+          pl: 'Klinika licówek Antalya',
+          pt: 'Clínica de facetas em Antalya',
+          es: 'Clínica de carillas en Antalya',
+          ru: 'Клиника виниров в Анталье',
         },
         treatmentName: {
           en: 'Flawless Smile Veneers',
@@ -1176,7 +1176,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'veneer-16',
-        image: '/before-after/Laminate-Veneer-Before-After-Istanbul-Turkey-6.webp',
+        image: '/before-after/Laminate-Veneer-Before-After-Antalya-Turkey-6.webp',
         alt: {
           en: 'Veneer teeth before after',
           tr: 'Lamine diş öncesi sonrası',
@@ -1198,15 +1198,15 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'veneer-17',
-        image: '/before-after/Laminate-Veneer-Before-After-Istanbul-Turkey-5.webp',
+        image: '/before-after/Laminate-Veneer-Before-After-Antalya-Turkey-5.webp',
         alt: {
-          en: 'Veneers turkey istanbul before after',
-          tr: 'Türkiye İstanbul lamine diş öncesi sonrası',
-          de: 'Veneers Türkei Istanbul Vorher-Nachher',
-          pl: 'Licówki Turcja Stambuł przed i po',
-          pt: 'Facetas Turquia Istambul antes e depois',
-          es: 'Carillas Turquía Estambul antes y después',
-          ru: 'Виниры Турция Стамбул до и после',
+          en: 'Veneers turkey antalya before after',
+          tr: 'Türkiye Antalya lamine diş öncesi sonrası',
+          de: 'Veneers Türkei Antalya Vorher-Nachher',
+          pl: 'Licówki Turcja Antalya przed i po',
+          pt: 'Facetas Turquia Antalya antes e depois',
+          es: 'Carillas Turquía Antalya antes y después',
+          ru: 'Виниры Турция Анталья до и после',
         },
         treatmentName: {
           en: 'High Aesthetic Laminates',
@@ -1220,7 +1220,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'veneer-18',
-        image: '/before-after/Laminate-Veneer-Before-After-Istanbul-Turkey-2-.webp',
+        image: '/before-after/Laminate-Veneer-Before-After-Antalya-Turkey-2-.webp',
         alt: {
           en: 'Veneer on one tooth before after',
           tr: 'Tek dişe lamine kaplama öncesi ve sonrası',

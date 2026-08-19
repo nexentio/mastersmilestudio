@@ -18,10 +18,10 @@ export async function generateMetadata({ params }: Props) {
   const t = await getTranslations({ locale, namespace: 'services' });
 
   return {
-    title: t('metaTitle') || 'Dental Treatments in Istanbul | Master Smile Studio',
+    title: t('metaTitle') || 'Dental Treatments in Antalya | Master Smile Studio',
     description:
       t('metaDescription') ||
-      'Explore world-class dental treatments, digital smile design, and implants in Istanbul, Turkey.',
+      'Explore world-class dental treatments, digital smile design, and implants in Antalya, Turkey.',
     alternates: getI18nAlternates('/treatments', locale, TREATMENT_LOCALES),
   };
 }

@@ -47,16 +47,16 @@ interface LocaleDictionary {
 const DICTIONARIES: Record<string, LocaleDictionary> = {
   "en": {
     "packagesTitle": "IPS Empress Leucite Glass-Ceramic Veneer Packages",
-    "packagesSubtitle": "Exquisite hand-layered Swiss Ivoclar IPS Empress glass-ceramic veneers providing unparalleled light dispersion, luxury hotel accommodation, and VIP Mercedes transfers in Istanbul.",
+    "packagesSubtitle": "Exquisite hand-layered Swiss Ivoclar IPS Empress glass-ceramic veneers providing unparalleled light dispersion, luxury hotel accommodation, and VIP Mercedes transfers in Antalya.",
     "mostPopularBadge": "Most Popular Choice",
     "durationLabel": "Procedure Time:",
     "includedLabel": "Package Inclusions:",
     "priceLabel": "Price (All-Inclusive):",
     "getQuoteBtn": "Get Your Free Quote",
     "faqTitle": "Frequently Asked Questions About IPS Empress Veneers",
-    "faqSubtitle": "Detailed clinical insights on leucite-reinforced glass-ceramic veneers, optical depth, chameleon effect, procedure steps, and warranties in Istanbul.",
-    "stayDuration": "<strong>5 to 7 days in Istanbul.</strong> 3D digital impressions, micro-preparation, bespoke master ceramist layering of IPS Empress ceramic, and permanent adhesive cementation are completed during 1 visit.",
-    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel once to Istanbul. Your complete smile makeover is designed and permanently placed during this single trip.",
+    "faqSubtitle": "Detailed clinical insights on leucite-reinforced glass-ceramic veneers, optical depth, chameleon effect, procedure steps, and warranties in Antalya.",
+    "stayDuration": "<strong>5 to 7 days in Antalya.</strong> 3D digital impressions, micro-preparation, bespoke master ceramist layering of IPS Empress ceramic, and permanent adhesive cementation are completed during 1 visit.",
+    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel once to Antalya. Your complete smile makeover is designed and permanently placed during this single trip.",
     "recoveryTime": "<strong>24 to 48 hours adaptation.</strong> Minimally invasive preparation ensures fast tissue healing and comfortable bite adaptation immediately.",
     "priceEstimate": "<strong>IPS Empress Veneer prices start at £230 / €260 / $285 per tooth.</strong> All-inclusive smile makeover packages (8, 16, or 20 veneers) include 3D Digital Smile Design, 4/5-star hotel stay, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
@@ -64,7 +64,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single IPS Empress Veneer",
         "brand": "Swiss Ivoclar Vivadent IPS Empress Leucite Glass-Ceramic",
         "duration": "4 – 6 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-1.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "included": [
           "1x Custom Hand-Layered IPS Empress Glass-Ceramic Veneer",
           "Micro-preparation (0.3 – 0.5 mm) & temporary veneer",
@@ -83,13 +83,13 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "8-Unit Empress Smile Line Makeover",
         "brand": "Swiss Ivoclar Vivadent IPS Empress Esthetic",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-2.jpg",
+        "img": "/packages/pkg-emax.webp",
         "popular": true,
         "included": [
           "8x Hand-Crafted IPS Empress Veneers (Upper Social Smile)",
           "Bespoke 3D Digital Smile Design & Facial Proportion Analysis",
           "Temporary trial smile fitted on Day 1",
-          "4-Star Luxury Hotel Stay in Istanbul (6 Nights)",
+          "4-Star Luxury Hotel Stay in Antalya (6 Nights)",
           "VIP Mercedes Chauffeur Airport & Clinic Transfers",
           "10-Year Comprehensive Warranty against chipping or debonding"
         ],
@@ -103,12 +103,12 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "16-Unit Full Empress Smile Makeover",
         "brand": "Swiss Ivoclar IPS Empress (8 Upper + 8 Lower)",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-3.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "included": [
           "16x Custom IPS Empress Glass-Ceramic Veneers (8 Upper + 8 Lower)",
           "Full 3D Facial Aesthetic Mapping & Golden Ratio Smile Harmony",
           "Dual arch aesthetic temporary mock-up for live preview",
-          "5-Star Luxury Hotel Accommodation in Istanbul (6 Nights)",
+          "5-Star Luxury Hotel Accommodation in Antalya (6 Nights)",
           "Private VIP Mercedes Airport & Clinic Chauffeur",
           "Custom night guard & post-op care kit",
           "10-Year Clinical Warranty"
@@ -123,7 +123,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Hollywood Empress Makeover",
         "brand": "Swiss Ivoclar IPS Empress High-Translucency",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-3.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "20x Ultra-Natural IPS Empress Veneers (10 Upper + 10 Lower Teeth)",
           "Chameleon effect optical blending with supreme lifelike depth",
@@ -154,9 +154,9 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         ]
       },
       {
-        "q": "How many days does an Empress Veneer treatment take in Istanbul?",
+        "q": "How many days does an Empress Veneer treatment take in Antalya?",
         "a": [
-          "The complete treatment requires 5 to 7 days in Istanbul during a single visit, including 3D scanning, laboratory fabrication by master ceramists, and final resin bonding."
+          "The complete treatment requires 5 to 7 days in Antalya during a single visit, including 3D scanning, laboratory fabrication by master ceramists, and final resin bonding."
         ]
       }
     ]
@@ -170,9 +170,9 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "priceLabel": "Price (All-Inclusive):",
     "getQuoteBtn": "Get Your Free Quote",
     "faqTitle": "IPS Empress Lamina Hakkında Sıkça Sorulan Sorular",
-    "faqSubtitle": "Detailed clinical insights on leucite-reinforced glass-ceramic veneers, optical depth, chameleon effect, procedure steps, and warranties in Istanbul.",
-    "stayDuration": "<strong>5 to 7 days in Istanbul.</strong> 3D digital impressions, micro-preparation, bespoke master ceramist layering of IPS Empress ceramic, and permanent adhesive cementation are completed during 1 visit.",
-    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel once to Istanbul. Your complete smile makeover is designed and permanently placed during this single trip.",
+    "faqSubtitle": "Detailed clinical insights on leucite-reinforced glass-ceramic veneers, optical depth, chameleon effect, procedure steps, and warranties in Antalya.",
+    "stayDuration": "<strong>5 to 7 days in Antalya.</strong> 3D digital impressions, micro-preparation, bespoke master ceramist layering of IPS Empress ceramic, and permanent adhesive cementation are completed during 1 visit.",
+    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel once to Antalya. Your complete smile makeover is designed and permanently placed during this single trip.",
     "recoveryTime": "<strong>24 to 48 hours adaptation.</strong> Minimally invasive preparation ensures fast tissue healing and comfortable bite adaptation immediately.",
     "priceEstimate": "<strong>IPS Empress Veneer prices start at £230 / €260 / $285 per tooth.</strong> All-inclusive smile makeover packages (8, 16, or 20 veneers) include 3D Digital Smile Design, 4/5-star hotel stay, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
@@ -180,7 +180,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single IPS Empress Veneer",
         "brand": "Swiss Ivoclar Vivadent IPS Empress Leucite Glass-Ceramic",
         "duration": "4 – 6 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-1.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "included": [
           "1x Custom Hand-Layered IPS Empress Glass-Ceramic Veneer",
           "Micro-preparation (0.3 – 0.5 mm) & temporary veneer",
@@ -199,13 +199,13 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "8-Unit Empress Smile Line Makeover",
         "brand": "Swiss Ivoclar Vivadent IPS Empress Esthetic",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-2.jpg",
+        "img": "/packages/pkg-emax.webp",
         "popular": true,
         "included": [
           "8x Hand-Crafted IPS Empress Veneers (Upper Social Smile)",
           "Bespoke 3D Digital Smile Design & Facial Proportion Analysis",
           "Temporary trial smile fitted on Day 1",
-          "4-Star Luxury Hotel Stay in Istanbul (6 Nights)",
+          "4-Star Luxury Hotel Stay in Antalya (6 Nights)",
           "VIP Mercedes Chauffeur Airport & Clinic Transfers",
           "10-Year Comprehensive Warranty against chipping or debonding"
         ],
@@ -219,12 +219,12 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "16-Unit Full Empress Smile Makeover",
         "brand": "Swiss Ivoclar IPS Empress (8 Upper + 8 Lower)",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-3.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "included": [
           "16x Custom IPS Empress Glass-Ceramic Veneers (8 Upper + 8 Lower)",
           "Full 3D Facial Aesthetic Mapping & Golden Ratio Smile Harmony",
           "Dual arch aesthetic temporary mock-up for live preview",
-          "5-Star Luxury Hotel Accommodation in Istanbul (6 Nights)",
+          "5-Star Luxury Hotel Accommodation in Antalya (6 Nights)",
           "Private VIP Mercedes Airport & Clinic Chauffeur",
           "Custom night guard & post-op care kit",
           "10-Year Clinical Warranty"
@@ -239,7 +239,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Hollywood Empress Makeover",
         "brand": "Swiss Ivoclar IPS Empress High-Translucency",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-3.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "20x Ultra-Natural IPS Empress Veneers (10 Upper + 10 Lower Teeth)",
           "Chameleon effect optical blending with supreme lifelike depth",
@@ -270,25 +270,25 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         ]
       },
       {
-        "q": "How many days does an Empress Veneer treatment take in Istanbul?",
+        "q": "How many days does an Empress Veneer treatment take in Antalya?",
         "a": [
-          "The complete treatment requires 5 to 7 days in Istanbul during a single visit, including 3D scanning, laboratory fabrication by master ceramists, and final resin bonding."
+          "The complete treatment requires 5 to 7 days in Antalya during a single visit, including 3D scanning, laboratory fabrication by master ceramists, and final resin bonding."
         ]
       }
     ]
   },
   "de": {
     "packagesTitle": "IPS Empress Leucite Glass-Ceramic Veneer Packages",
-    "packagesSubtitle": "Exquisite hand-layered Swiss Ivoclar IPS Empress glass-ceramic veneers providing unparalleled light dispersion, luxury hotel accommodation, and VIP Mercedes transfers in Istanbul.",
+    "packagesSubtitle": "Exquisite hand-layered Swiss Ivoclar IPS Empress glass-ceramic veneers providing unparalleled light dispersion, luxury hotel accommodation, and VIP Mercedes transfers in Antalya.",
     "mostPopularBadge": "Most Popular Choice",
     "durationLabel": "Procedure Time:",
     "includedLabel": "Package Inclusions:",
     "priceLabel": "Price (All-Inclusive):",
     "getQuoteBtn": "Get Your Free Quote",
     "faqTitle": "Frequently Asked Questions About IPS Empress Veneers",
-    "faqSubtitle": "Detailed clinical insights on leucite-reinforced glass-ceramic veneers, optical depth, chameleon effect, procedure steps, and warranties in Istanbul.",
-    "stayDuration": "<strong>5 to 7 days in Istanbul.</strong> 3D digital impressions, micro-preparation, bespoke master ceramist layering of IPS Empress ceramic, and permanent adhesive cementation are completed during 1 visit.",
-    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel once to Istanbul. Your complete smile makeover is designed and permanently placed during this single trip.",
+    "faqSubtitle": "Detailed clinical insights on leucite-reinforced glass-ceramic veneers, optical depth, chameleon effect, procedure steps, and warranties in Antalya.",
+    "stayDuration": "<strong>5 to 7 days in Antalya.</strong> 3D digital impressions, micro-preparation, bespoke master ceramist layering of IPS Empress ceramic, and permanent adhesive cementation are completed during 1 visit.",
+    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel once to Antalya. Your complete smile makeover is designed and permanently placed during this single trip.",
     "recoveryTime": "<strong>24 to 48 hours adaptation.</strong> Minimally invasive preparation ensures fast tissue healing and comfortable bite adaptation immediately.",
     "priceEstimate": "<strong>IPS Empress Veneer prices start at £230 / €260 / $285 per tooth.</strong> All-inclusive smile makeover packages (8, 16, or 20 veneers) include 3D Digital Smile Design, 4/5-star hotel stay, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
@@ -296,7 +296,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single IPS Empress Veneer",
         "brand": "Swiss Ivoclar Vivadent IPS Empress Leucite Glass-Ceramic",
         "duration": "4 – 6 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-1.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "included": [
           "1x Custom Hand-Layered IPS Empress Glass-Ceramic Veneer",
           "Micro-preparation (0.3 – 0.5 mm) & temporary veneer",
@@ -315,13 +315,13 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "8-Unit Empress Smile Line Makeover",
         "brand": "Swiss Ivoclar Vivadent IPS Empress Esthetic",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-2.jpg",
+        "img": "/packages/pkg-emax.webp",
         "popular": true,
         "included": [
           "8x Hand-Crafted IPS Empress Veneers (Upper Social Smile)",
           "Bespoke 3D Digital Smile Design & Facial Proportion Analysis",
           "Temporary trial smile fitted on Day 1",
-          "4-Star Luxury Hotel Stay in Istanbul (6 Nights)",
+          "4-Star Luxury Hotel Stay in Antalya (6 Nights)",
           "VIP Mercedes Chauffeur Airport & Clinic Transfers",
           "10-Year Comprehensive Warranty against chipping or debonding"
         ],
@@ -335,12 +335,12 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "16-Unit Full Empress Smile Makeover",
         "brand": "Swiss Ivoclar IPS Empress (8 Upper + 8 Lower)",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-3.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "included": [
           "16x Custom IPS Empress Glass-Ceramic Veneers (8 Upper + 8 Lower)",
           "Full 3D Facial Aesthetic Mapping & Golden Ratio Smile Harmony",
           "Dual arch aesthetic temporary mock-up for live preview",
-          "5-Star Luxury Hotel Accommodation in Istanbul (6 Nights)",
+          "5-Star Luxury Hotel Accommodation in Antalya (6 Nights)",
           "Private VIP Mercedes Airport & Clinic Chauffeur",
           "Custom night guard & post-op care kit",
           "10-Year Clinical Warranty"
@@ -355,7 +355,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Hollywood Empress Makeover",
         "brand": "Swiss Ivoclar IPS Empress High-Translucency",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-3.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "20x Ultra-Natural IPS Empress Veneers (10 Upper + 10 Lower Teeth)",
           "Chameleon effect optical blending with supreme lifelike depth",
@@ -386,25 +386,25 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         ]
       },
       {
-        "q": "How many days does an Empress Veneer treatment take in Istanbul?",
+        "q": "How many days does an Empress Veneer treatment take in Antalya?",
         "a": [
-          "The complete treatment requires 5 to 7 days in Istanbul during a single visit, including 3D scanning, laboratory fabrication by master ceramists, and final resin bonding."
+          "The complete treatment requires 5 to 7 days in Antalya during a single visit, including 3D scanning, laboratory fabrication by master ceramists, and final resin bonding."
         ]
       }
     ]
   },
   "pl": {
     "packagesTitle": "IPS Empress Leucite Glass-Ceramic Veneer Packages",
-    "packagesSubtitle": "Exquisite hand-layered Swiss Ivoclar IPS Empress glass-ceramic veneers providing unparalleled light dispersion, luxury hotel accommodation, and VIP Mercedes transfers in Istanbul.",
+    "packagesSubtitle": "Exquisite hand-layered Swiss Ivoclar IPS Empress glass-ceramic veneers providing unparalleled light dispersion, luxury hotel accommodation, and VIP Mercedes transfers in Antalya.",
     "mostPopularBadge": "Most Popular Choice",
     "durationLabel": "Procedure Time:",
     "includedLabel": "Package Inclusions:",
     "priceLabel": "Price (All-Inclusive):",
     "getQuoteBtn": "Get Your Free Quote",
     "faqTitle": "Frequently Asked Questions About IPS Empress Veneers",
-    "faqSubtitle": "Detailed clinical insights on leucite-reinforced glass-ceramic veneers, optical depth, chameleon effect, procedure steps, and warranties in Istanbul.",
-    "stayDuration": "<strong>5 to 7 days in Istanbul.</strong> 3D digital impressions, micro-preparation, bespoke master ceramist layering of IPS Empress ceramic, and permanent adhesive cementation are completed during 1 visit.",
-    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel once to Istanbul. Your complete smile makeover is designed and permanently placed during this single trip.",
+    "faqSubtitle": "Detailed clinical insights on leucite-reinforced glass-ceramic veneers, optical depth, chameleon effect, procedure steps, and warranties in Antalya.",
+    "stayDuration": "<strong>5 to 7 days in Antalya.</strong> 3D digital impressions, micro-preparation, bespoke master ceramist layering of IPS Empress ceramic, and permanent adhesive cementation are completed during 1 visit.",
+    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel once to Antalya. Your complete smile makeover is designed and permanently placed during this single trip.",
     "recoveryTime": "<strong>24 to 48 hours adaptation.</strong> Minimally invasive preparation ensures fast tissue healing and comfortable bite adaptation immediately.",
     "priceEstimate": "<strong>IPS Empress Veneer prices start at £230 / €260 / $285 per tooth.</strong> All-inclusive smile makeover packages (8, 16, or 20 veneers) include 3D Digital Smile Design, 4/5-star hotel stay, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
@@ -412,7 +412,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single IPS Empress Veneer",
         "brand": "Swiss Ivoclar Vivadent IPS Empress Leucite Glass-Ceramic",
         "duration": "4 – 6 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-1.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "included": [
           "1x Custom Hand-Layered IPS Empress Glass-Ceramic Veneer",
           "Micro-preparation (0.3 – 0.5 mm) & temporary veneer",
@@ -431,13 +431,13 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "8-Unit Empress Smile Line Makeover",
         "brand": "Swiss Ivoclar Vivadent IPS Empress Esthetic",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-2.jpg",
+        "img": "/packages/pkg-emax.webp",
         "popular": true,
         "included": [
           "8x Hand-Crafted IPS Empress Veneers (Upper Social Smile)",
           "Bespoke 3D Digital Smile Design & Facial Proportion Analysis",
           "Temporary trial smile fitted on Day 1",
-          "4-Star Luxury Hotel Stay in Istanbul (6 Nights)",
+          "4-Star Luxury Hotel Stay in Antalya (6 Nights)",
           "VIP Mercedes Chauffeur Airport & Clinic Transfers",
           "10-Year Comprehensive Warranty against chipping or debonding"
         ],
@@ -451,12 +451,12 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "16-Unit Full Empress Smile Makeover",
         "brand": "Swiss Ivoclar IPS Empress (8 Upper + 8 Lower)",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-3.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "included": [
           "16x Custom IPS Empress Glass-Ceramic Veneers (8 Upper + 8 Lower)",
           "Full 3D Facial Aesthetic Mapping & Golden Ratio Smile Harmony",
           "Dual arch aesthetic temporary mock-up for live preview",
-          "5-Star Luxury Hotel Accommodation in Istanbul (6 Nights)",
+          "5-Star Luxury Hotel Accommodation in Antalya (6 Nights)",
           "Private VIP Mercedes Airport & Clinic Chauffeur",
           "Custom night guard & post-op care kit",
           "10-Year Clinical Warranty"
@@ -471,7 +471,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Hollywood Empress Makeover",
         "brand": "Swiss Ivoclar IPS Empress High-Translucency",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-3.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "20x Ultra-Natural IPS Empress Veneers (10 Upper + 10 Lower Teeth)",
           "Chameleon effect optical blending with supreme lifelike depth",
@@ -502,25 +502,25 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         ]
       },
       {
-        "q": "How many days does an Empress Veneer treatment take in Istanbul?",
+        "q": "How many days does an Empress Veneer treatment take in Antalya?",
         "a": [
-          "The complete treatment requires 5 to 7 days in Istanbul during a single visit, including 3D scanning, laboratory fabrication by master ceramists, and final resin bonding."
+          "The complete treatment requires 5 to 7 days in Antalya during a single visit, including 3D scanning, laboratory fabrication by master ceramists, and final resin bonding."
         ]
       }
     ]
   },
   "pt": {
     "packagesTitle": "IPS Empress Leucite Glass-Ceramic Veneer Packages",
-    "packagesSubtitle": "Exquisite hand-layered Swiss Ivoclar IPS Empress glass-ceramic veneers providing unparalleled light dispersion, luxury hotel accommodation, and VIP Mercedes transfers in Istanbul.",
+    "packagesSubtitle": "Exquisite hand-layered Swiss Ivoclar IPS Empress glass-ceramic veneers providing unparalleled light dispersion, luxury hotel accommodation, and VIP Mercedes transfers in Antalya.",
     "mostPopularBadge": "Most Popular Choice",
     "durationLabel": "Procedure Time:",
     "includedLabel": "Package Inclusions:",
     "priceLabel": "Price (All-Inclusive):",
     "getQuoteBtn": "Get Your Free Quote",
     "faqTitle": "Frequently Asked Questions About IPS Empress Veneers",
-    "faqSubtitle": "Detailed clinical insights on leucite-reinforced glass-ceramic veneers, optical depth, chameleon effect, procedure steps, and warranties in Istanbul.",
-    "stayDuration": "<strong>5 to 7 days in Istanbul.</strong> 3D digital impressions, micro-preparation, bespoke master ceramist layering of IPS Empress ceramic, and permanent adhesive cementation are completed during 1 visit.",
-    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel once to Istanbul. Your complete smile makeover is designed and permanently placed during this single trip.",
+    "faqSubtitle": "Detailed clinical insights on leucite-reinforced glass-ceramic veneers, optical depth, chameleon effect, procedure steps, and warranties in Antalya.",
+    "stayDuration": "<strong>5 to 7 days in Antalya.</strong> 3D digital impressions, micro-preparation, bespoke master ceramist layering of IPS Empress ceramic, and permanent adhesive cementation are completed during 1 visit.",
+    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel once to Antalya. Your complete smile makeover is designed and permanently placed during this single trip.",
     "recoveryTime": "<strong>24 to 48 hours adaptation.</strong> Minimally invasive preparation ensures fast tissue healing and comfortable bite adaptation immediately.",
     "priceEstimate": "<strong>IPS Empress Veneer prices start at £230 / €260 / $285 per tooth.</strong> All-inclusive smile makeover packages (8, 16, or 20 veneers) include 3D Digital Smile Design, 4/5-star hotel stay, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
@@ -528,7 +528,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single IPS Empress Veneer",
         "brand": "Swiss Ivoclar Vivadent IPS Empress Leucite Glass-Ceramic",
         "duration": "4 – 6 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-1.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "included": [
           "1x Custom Hand-Layered IPS Empress Glass-Ceramic Veneer",
           "Micro-preparation (0.3 – 0.5 mm) & temporary veneer",
@@ -547,13 +547,13 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "8-Unit Empress Smile Line Makeover",
         "brand": "Swiss Ivoclar Vivadent IPS Empress Esthetic",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-2.jpg",
+        "img": "/packages/pkg-emax.webp",
         "popular": true,
         "included": [
           "8x Hand-Crafted IPS Empress Veneers (Upper Social Smile)",
           "Bespoke 3D Digital Smile Design & Facial Proportion Analysis",
           "Temporary trial smile fitted on Day 1",
-          "4-Star Luxury Hotel Stay in Istanbul (6 Nights)",
+          "4-Star Luxury Hotel Stay in Antalya (6 Nights)",
           "VIP Mercedes Chauffeur Airport & Clinic Transfers",
           "10-Year Comprehensive Warranty against chipping or debonding"
         ],
@@ -567,12 +567,12 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "16-Unit Full Empress Smile Makeover",
         "brand": "Swiss Ivoclar IPS Empress (8 Upper + 8 Lower)",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-3.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "included": [
           "16x Custom IPS Empress Glass-Ceramic Veneers (8 Upper + 8 Lower)",
           "Full 3D Facial Aesthetic Mapping & Golden Ratio Smile Harmony",
           "Dual arch aesthetic temporary mock-up for live preview",
-          "5-Star Luxury Hotel Accommodation in Istanbul (6 Nights)",
+          "5-Star Luxury Hotel Accommodation in Antalya (6 Nights)",
           "Private VIP Mercedes Airport & Clinic Chauffeur",
           "Custom night guard & post-op care kit",
           "10-Year Clinical Warranty"
@@ -587,7 +587,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Hollywood Empress Makeover",
         "brand": "Swiss Ivoclar IPS Empress High-Translucency",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-3.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "20x Ultra-Natural IPS Empress Veneers (10 Upper + 10 Lower Teeth)",
           "Chameleon effect optical blending with supreme lifelike depth",
@@ -618,25 +618,25 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         ]
       },
       {
-        "q": "How many days does an Empress Veneer treatment take in Istanbul?",
+        "q": "How many days does an Empress Veneer treatment take in Antalya?",
         "a": [
-          "The complete treatment requires 5 to 7 days in Istanbul during a single visit, including 3D scanning, laboratory fabrication by master ceramists, and final resin bonding."
+          "The complete treatment requires 5 to 7 days in Antalya during a single visit, including 3D scanning, laboratory fabrication by master ceramists, and final resin bonding."
         ]
       }
     ]
   },
   "es": {
     "packagesTitle": "IPS Empress Leucite Glass-Ceramic Veneer Packages",
-    "packagesSubtitle": "Exquisite hand-layered Swiss Ivoclar IPS Empress glass-ceramic veneers providing unparalleled light dispersion, luxury hotel accommodation, and VIP Mercedes transfers in Istanbul.",
+    "packagesSubtitle": "Exquisite hand-layered Swiss Ivoclar IPS Empress glass-ceramic veneers providing unparalleled light dispersion, luxury hotel accommodation, and VIP Mercedes transfers in Antalya.",
     "mostPopularBadge": "Most Popular Choice",
     "durationLabel": "Procedure Time:",
     "includedLabel": "Package Inclusions:",
     "priceLabel": "Price (All-Inclusive):",
     "getQuoteBtn": "Get Your Free Quote",
     "faqTitle": "Frequently Asked Questions About IPS Empress Veneers",
-    "faqSubtitle": "Detailed clinical insights on leucite-reinforced glass-ceramic veneers, optical depth, chameleon effect, procedure steps, and warranties in Istanbul.",
-    "stayDuration": "<strong>5 to 7 days in Istanbul.</strong> 3D digital impressions, micro-preparation, bespoke master ceramist layering of IPS Empress ceramic, and permanent adhesive cementation are completed during 1 visit.",
-    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel once to Istanbul. Your complete smile makeover is designed and permanently placed during this single trip.",
+    "faqSubtitle": "Detailed clinical insights on leucite-reinforced glass-ceramic veneers, optical depth, chameleon effect, procedure steps, and warranties in Antalya.",
+    "stayDuration": "<strong>5 to 7 days in Antalya.</strong> 3D digital impressions, micro-preparation, bespoke master ceramist layering of IPS Empress ceramic, and permanent adhesive cementation are completed during 1 visit.",
+    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel once to Antalya. Your complete smile makeover is designed and permanently placed during this single trip.",
     "recoveryTime": "<strong>24 to 48 hours adaptation.</strong> Minimally invasive preparation ensures fast tissue healing and comfortable bite adaptation immediately.",
     "priceEstimate": "<strong>IPS Empress Veneer prices start at £230 / €260 / $285 per tooth.</strong> All-inclusive smile makeover packages (8, 16, or 20 veneers) include 3D Digital Smile Design, 4/5-star hotel stay, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
@@ -644,7 +644,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single IPS Empress Veneer",
         "brand": "Swiss Ivoclar Vivadent IPS Empress Leucite Glass-Ceramic",
         "duration": "4 – 6 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-1.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "included": [
           "1x Custom Hand-Layered IPS Empress Glass-Ceramic Veneer",
           "Micro-preparation (0.3 – 0.5 mm) & temporary veneer",
@@ -663,13 +663,13 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "8-Unit Empress Smile Line Makeover",
         "brand": "Swiss Ivoclar Vivadent IPS Empress Esthetic",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-2.jpg",
+        "img": "/packages/pkg-emax.webp",
         "popular": true,
         "included": [
           "8x Hand-Crafted IPS Empress Veneers (Upper Social Smile)",
           "Bespoke 3D Digital Smile Design & Facial Proportion Analysis",
           "Temporary trial smile fitted on Day 1",
-          "4-Star Luxury Hotel Stay in Istanbul (6 Nights)",
+          "4-Star Luxury Hotel Stay in Antalya (6 Nights)",
           "VIP Mercedes Chauffeur Airport & Clinic Transfers",
           "10-Year Comprehensive Warranty against chipping or debonding"
         ],
@@ -683,12 +683,12 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "16-Unit Full Empress Smile Makeover",
         "brand": "Swiss Ivoclar IPS Empress (8 Upper + 8 Lower)",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-3.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "included": [
           "16x Custom IPS Empress Glass-Ceramic Veneers (8 Upper + 8 Lower)",
           "Full 3D Facial Aesthetic Mapping & Golden Ratio Smile Harmony",
           "Dual arch aesthetic temporary mock-up for live preview",
-          "5-Star Luxury Hotel Accommodation in Istanbul (6 Nights)",
+          "5-Star Luxury Hotel Accommodation in Antalya (6 Nights)",
           "Private VIP Mercedes Airport & Clinic Chauffeur",
           "Custom night guard & post-op care kit",
           "10-Year Clinical Warranty"
@@ -703,7 +703,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Hollywood Empress Makeover",
         "brand": "Swiss Ivoclar IPS Empress High-Translucency",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-3.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "20x Ultra-Natural IPS Empress Veneers (10 Upper + 10 Lower Teeth)",
           "Chameleon effect optical blending with supreme lifelike depth",
@@ -734,25 +734,25 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         ]
       },
       {
-        "q": "How many days does an Empress Veneer treatment take in Istanbul?",
+        "q": "How many days does an Empress Veneer treatment take in Antalya?",
         "a": [
-          "The complete treatment requires 5 to 7 days in Istanbul during a single visit, including 3D scanning, laboratory fabrication by master ceramists, and final resin bonding."
+          "The complete treatment requires 5 to 7 days in Antalya during a single visit, including 3D scanning, laboratory fabrication by master ceramists, and final resin bonding."
         ]
       }
     ]
   },
   "ru": {
     "packagesTitle": "IPS Empress Leucite Glass-Ceramic Veneer Packages",
-    "packagesSubtitle": "Exquisite hand-layered Swiss Ivoclar IPS Empress glass-ceramic veneers providing unparalleled light dispersion, luxury hotel accommodation, and VIP Mercedes transfers in Istanbul.",
+    "packagesSubtitle": "Exquisite hand-layered Swiss Ivoclar IPS Empress glass-ceramic veneers providing unparalleled light dispersion, luxury hotel accommodation, and VIP Mercedes transfers in Antalya.",
     "mostPopularBadge": "Most Popular Choice",
     "durationLabel": "Procedure Time:",
     "includedLabel": "Package Inclusions:",
     "priceLabel": "Price (All-Inclusive):",
     "getQuoteBtn": "Get Your Free Quote",
     "faqTitle": "Frequently Asked Questions About IPS Empress Veneers",
-    "faqSubtitle": "Detailed clinical insights on leucite-reinforced glass-ceramic veneers, optical depth, chameleon effect, procedure steps, and warranties in Istanbul.",
-    "stayDuration": "<strong>5 to 7 days in Istanbul.</strong> 3D digital impressions, micro-preparation, bespoke master ceramist layering of IPS Empress ceramic, and permanent adhesive cementation are completed during 1 visit.",
-    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel once to Istanbul. Your complete smile makeover is designed and permanently placed during this single trip.",
+    "faqSubtitle": "Detailed clinical insights on leucite-reinforced glass-ceramic veneers, optical depth, chameleon effect, procedure steps, and warranties in Antalya.",
+    "stayDuration": "<strong>5 to 7 days in Antalya.</strong> 3D digital impressions, micro-preparation, bespoke master ceramist layering of IPS Empress ceramic, and permanent adhesive cementation are completed during 1 visit.",
+    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel once to Antalya. Your complete smile makeover is designed and permanently placed during this single trip.",
     "recoveryTime": "<strong>24 to 48 hours adaptation.</strong> Minimally invasive preparation ensures fast tissue healing and comfortable bite adaptation immediately.",
     "priceEstimate": "<strong>IPS Empress Veneer prices start at £230 / €260 / $285 per tooth.</strong> All-inclusive smile makeover packages (8, 16, or 20 veneers) include 3D Digital Smile Design, 4/5-star hotel stay, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
@@ -760,7 +760,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single IPS Empress Veneer",
         "brand": "Swiss Ivoclar Vivadent IPS Empress Leucite Glass-Ceramic",
         "duration": "4 – 6 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-1.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "included": [
           "1x Custom Hand-Layered IPS Empress Glass-Ceramic Veneer",
           "Micro-preparation (0.3 – 0.5 mm) & temporary veneer",
@@ -779,13 +779,13 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "8-Unit Empress Smile Line Makeover",
         "brand": "Swiss Ivoclar Vivadent IPS Empress Esthetic",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-2.jpg",
+        "img": "/packages/pkg-emax.webp",
         "popular": true,
         "included": [
           "8x Hand-Crafted IPS Empress Veneers (Upper Social Smile)",
           "Bespoke 3D Digital Smile Design & Facial Proportion Analysis",
           "Temporary trial smile fitted on Day 1",
-          "4-Star Luxury Hotel Stay in Istanbul (6 Nights)",
+          "4-Star Luxury Hotel Stay in Antalya (6 Nights)",
           "VIP Mercedes Chauffeur Airport & Clinic Transfers",
           "10-Year Comprehensive Warranty against chipping or debonding"
         ],
@@ -799,12 +799,12 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "16-Unit Full Empress Smile Makeover",
         "brand": "Swiss Ivoclar IPS Empress (8 Upper + 8 Lower)",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-3.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "included": [
           "16x Custom IPS Empress Glass-Ceramic Veneers (8 Upper + 8 Lower)",
           "Full 3D Facial Aesthetic Mapping & Golden Ratio Smile Harmony",
           "Dual arch aesthetic temporary mock-up for live preview",
-          "5-Star Luxury Hotel Accommodation in Istanbul (6 Nights)",
+          "5-Star Luxury Hotel Accommodation in Antalya (6 Nights)",
           "Private VIP Mercedes Airport & Clinic Chauffeur",
           "Custom night guard & post-op care kit",
           "10-Year Clinical Warranty"
@@ -819,7 +819,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Hollywood Empress Makeover",
         "brand": "Swiss Ivoclar IPS Empress High-Translucency",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-3.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "20x Ultra-Natural IPS Empress Veneers (10 Upper + 10 Lower Teeth)",
           "Chameleon effect optical blending with supreme lifelike depth",
@@ -850,9 +850,9 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         ]
       },
       {
-        "q": "How many days does an Empress Veneer treatment take in Istanbul?",
+        "q": "How many days does an Empress Veneer treatment take in Antalya?",
         "a": [
-          "The complete treatment requires 5 to 7 days in Istanbul during a single visit, including 3D scanning, laboratory fabrication by master ceramists, and final resin bonding."
+          "The complete treatment requires 5 to 7 days in Antalya during a single visit, including 3D scanning, laboratory fabrication by master ceramists, and final resin bonding."
         ]
       }
     ]

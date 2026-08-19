@@ -19,7 +19,7 @@ const FAQ_DATA: Record<string, FAQDictionary> = {
   en: {
     title: 'Frequently Asked Questions About Dental Veneers',
     subText:
-      'Everything you need to know about porcelain laminates, E-Max veneers, tooth preparation, and your smile transformation in Istanbul.',
+      'Everything you need to know about porcelain laminates, E-Max veneers, tooth preparation, and your smile transformation in Antalya.',
     items: [
       {
         q: 'Which veneer material is the best: Ivoclar E-Max, Zirconia, or Composite?',
@@ -75,22 +75,22 @@ const FAQ_DATA: Record<string, FAQDictionary> = {
       },
       {
         q: 'Can I pay for my veneer package in installments?',
-        a: 'Yes, flexible payment schedules are available. A deposit is placed upon treatment confirmation, with the remainder payable across your clinic visits in Istanbul.',
+        a: 'Yes, flexible payment schedules are available. A deposit is placed upon treatment confirmation, with the remainder payable across your clinic visits in Antalya.',
       },
       {
         q: 'What guarantees do you offer for dental veneers?',
         a: 'All our custom-crafted Ivoclar E-Max and porcelain restorations come with an official 5-Year Studio Quality Certificate guaranteeing against manufacturing defects, chipping, or debonding under normal oral use.',
       },
       {
-        q: 'How many days do I need to stay in Istanbul for a complete smile makeover?',
-        a: 'A standard veneer smile makeover takes only 4 to 6 days in Istanbul. During this period, you will have 3 short appointments: 1) Consultation, digital scan & mock-up; 2) Enamel preparation & high-precision digital impression; 3) Try-in, final aesthetic check & permanent bonding.',
+        q: 'How many days do I need to stay in Antalya for a complete smile makeover?',
+        a: 'A standard veneer smile makeover takes only 4 to 6 days in Antalya. During this period, you will have 3 short appointments: 1) Consultation, digital scan & mock-up; 2) Enamel preparation & high-precision digital impression; 3) Try-in, final aesthetic check & permanent bonding.',
       },
     ],
   },
   tr: {
     title: 'Diş Kaplamaları & Lamina Hakkında Sıkça Sorulan Sorular',
     subText:
-      'Porselen lamina, E-Max kaplamalar, törpüleme miktarı ve İstanbul’daki gülüş dönüşümünüz hakkında merak ettiğiniz tüm klinik detaylar.',
+      'Porselen lamina, E-Max kaplamalar, törpüleme miktarı ve Antalya’daki gülüş dönüşümünüz hakkında merak ettiğiniz tüm klinik detaylar.',
     items: [
       {
         q: 'Kliniğinizde hangi kaplama materyalleri kullanılıyor? E-Max mi Zirkonyum mu daha iyidir?',
@@ -146,22 +146,22 @@ const FAQ_DATA: Record<string, FAQDictionary> = {
       },
       {
         q: 'Tedavi ücretini taksitle ödeyebilir miyim?',
-        a: 'Evet, esnek ödeme planlarımız mevcuttur. Tedavi onayında cüzi bir ön depozito alınır, kalan tutar ise İstanbul’daki seanslarınıza bölünerek ödenebilir.',
+        a: 'Evet, esnek ödeme planlarımız mevcuttur. Tedavi onayında cüzi bir ön depozito alınır, kalan tutar ise Antalya’daki seanslarınıza bölünerek ödenebilir.',
       },
       {
         q: 'Lamina kaplamalara garanti veriyor musunuz?',
         a: 'Evet, uygulanan tüm orijinal Ivoclar E-Max restorasyonlar üretim ve malzeme hatalarına karşı 5 Yıl Resmi Klinik Kalite Sertifikası ve Garantisi ile teslim edilir.',
       },
       {
-        q: 'Tam bir gülüş tasarımı için İstanbul’da kaç gün kalmam gerekir?',
-        a: 'Lamina gülüş tasarımı tedavisi genellikle 4 ila 6 gün (3 klinik seansı) içinde tamamlanır. Kalan vakitlerinizde İstanbul’un tarihi ve turistik güzelliklerinin tadını çıkarabilirsiniz.',
+        q: 'Tam bir gülüş tasarımı için Antalya’da kaç gün kalmam gerekir?',
+        a: 'Lamina gülüş tasarımı tedavisi genellikle 4 ila 6 gün (3 klinik seansı) içinde tamamlanır. Kalan vakitlerinizde Antalya’nın tarihi ve turistik güzelliklerinin tadını çıkarabilirsiniz.',
       },
     ],
   },
   de: {
     title: 'Häufig gestellte Fragen zu Veneers & Zahnverblendungen',
     subText:
-      'Klinische Details zu Porzellan-Laminaten, E-Max Veneers, Vorbereitung und Ihrer Lächeln-Transformation in Istanbul.',
+      'Klinische Details zu Porzellan-Laminaten, E-Max Veneers, Vorbereitung und Ihrer Lächeln-Transformation in Antalya.',
     items: [
       {
         q: 'Welches Veneer-Material ist das beste: Ivoclar E-Max oder Zirkon?',
@@ -217,14 +217,14 @@ const FAQ_DATA: Record<string, FAQDictionary> = {
       },
       {
         q: 'Kann ich die Behandlung in Raten zahlen?',
-        a: 'Ja, nach einer Anzahlung kann der Restbetrag auf die Behandlungstage in Istanbul aufgeteilt werden.',
+        a: 'Ja, nach einer Anzahlung kann der Restbetrag auf die Behandlungstage in Antalya aufgeteilt werden.',
       },
       {
         q: 'Welche Garantie erhalte ich auf meine Veneers?',
         a: 'Sie erhalten ein offizielles 5-Jahres-Garantiezertifikat auf alle Ivoclar E-Max Restaurationen.',
       },
       {
-        q: 'Wie viele Tage Aufenthalt in Istanbul sind für ein Smile Makeover nötig?',
+        q: 'Wie viele Tage Aufenthalt in Antalya sind für ein Smile Makeover nötig?',
         a: 'Ein komplettes Veneer Makeover dauert nur 4 bis 6 Tage (3 kurze Termine in unserer Klinik).',
       },
     ],
@@ -232,7 +232,7 @@ const FAQ_DATA: Record<string, FAQDictionary> = {
   pl: {
     title: 'Często Zadawane Pytania o Licówki Dentystyczne',
     subText:
-      'Wszystko o licówkach porcelanowych E-Max, przygotowaniu zębów i Twojej metamorfozie uśmiechu w Stambule.',
+      'Wszystko o licówkach porcelanowych E-Max, przygotowaniu zębów i Twojej metamorfozie uśmiechu w Antalyi.',
     items: [
       {
         q: 'Jaki materiał na licówki jest najlepszy: Ivoclar E-Max czy Cyrkon?',
@@ -288,14 +288,14 @@ const FAQ_DATA: Record<string, FAQDictionary> = {
       },
       {
         q: 'Czy mogę rozłożyć płatność na raty?',
-        a: 'Tak, po wpłacie zalipki reszta kwoty może być płacona etapami podczas wizyt w klinice w Stambule.',
+        a: 'Tak, po wpłacie zalipki reszta kwoty może być płacona etapami podczas wizyt w klinice w Antalyi.',
       },
       {
         q: 'Jaką gwarancję otrzymuję na licówki?',
         a: 'Każdy pacjent otrzymuje Certyfikat Gwarancji Jakości na 5 lat na wszystkie uzupełnienia Ivoclar E-Max.',
       },
       {
-        q: 'Ile dni trwa pełna metamorfoza uśmiechu w Stambule?',
+        q: 'Ile dni trwa pełna metamorfoza uśmiechu w Antalyi?',
         a: 'Zabieg trwa od 4 do 6 dni (obejmuje 3 krótkie wizyty w klinice).',
       },
     ],
@@ -303,7 +303,7 @@ const FAQ_DATA: Record<string, FAQDictionary> = {
   pt: {
     title: 'Perguntas Frequentes Sobre Facetas Dentárias',
     subText:
-      'Tudo sobre lentes de contato dental, facetas E-Max, preparo e sua transformação de sorriso em Istambul.',
+      'Tudo sobre lentes de contato dental, facetas E-Max, preparo e sua transformação de sorriso em Antalya.',
     items: [
       {
         q: 'Qual material de faceta é o melhor: Ivoclar E-Max ou Zircônia?',
@@ -359,14 +359,14 @@ const FAQ_DATA: Record<string, FAQDictionary> = {
       },
       {
         q: 'Posso parcelar meu tratamento?',
-        a: 'Sim, após o sinal de reserva, o restante pode ser quitado ao longo dos dias de consulta em Istambul.',
+        a: 'Sim, após o sinal de reserva, o restante pode ser quitado ao longo dos dias de consulta em Antalya.',
       },
       {
         q: 'Qual a garantia oferecida nas facetas?',
         a: 'Garantia Clínica Oficial por escrito de 5 Anos em todas as restaurações originais Ivoclar E-Max.',
       },
       {
-        q: 'Quantos dias preciso ficar em Istambul?',
+        q: 'Quantos dias preciso ficar em Antalya?',
         a: 'A transformação completa do sorriso com facetas leva apenas de 4 a 6 dias (3 consultas clínicas).',
       },
     ],
@@ -374,7 +374,7 @@ const FAQ_DATA: Record<string, FAQDictionary> = {
   es: {
     title: 'Preguntas Frecuentes Sobre Carillas Dentales',
     subText:
-      'Todo lo que necesita saber sobre carillas de porcelana E-Max, tallado y su diseño de sonrisa en Estambul.',
+      'Todo lo que necesita saber sobre carillas de porcelana E-Max, tallado y su diseño de sonrisa en Antalya.',
     items: [
       {
         q: '¿Qué material de carillas es mejor: Ivoclar E-Max o Zirconio?',
@@ -430,14 +430,14 @@ const FAQ_DATA: Record<string, FAQDictionary> = {
       },
       {
         q: '¿Se puede pagar a plazos el tratamiento?',
-        a: 'Sí, tras un depósito inicial, el resto se abona fraccionado durante las citas en la clínica en Estambul.',
+        a: 'Sí, tras un depósito inicial, el resto se abona fraccionado durante las citas en la clínica en Antalya.',
       },
       {
         q: '¿Qué garantía tienen las carillas?',
         a: 'Entregamos Certificado de Garantía Clínica Oficial de 5 Años en todas las restauraciones Ivoclar E-Max.',
       },
       {
-        q: '¿Cuántos días de estancia en Estambul son necesarios?',
+        q: '¿Cuántos días de estancia en Antalya son necesarios?',
         a: 'El tratamiento completo de carillas se realiza en tan solo 4 a 6 días (3 citas clínicas).',
       },
     ],
@@ -445,7 +445,7 @@ const FAQ_DATA: Record<string, FAQDictionary> = {
   ru: {
     title: 'Часто задаваемые вопросы о винирах для зубов',
     subText:
-      'Все о керамических винирах E-Max, обработке эмали и преображении вашей улыбки в Стамбуле.',
+      'Все о керамических винирах E-Max, обработке эмали и преображении вашей улыбки в Анталье.',
     items: [
       {
         q: 'Какой материал для виниров лучше: Ivoclar E-Max или Диоксид циркония?',
@@ -501,14 +501,14 @@ const FAQ_DATA: Record<string, FAQDictionary> = {
       },
       {
         q: 'Возможна ли оплата в рассрочку?',
-        a: 'Да, после внесения депозита остаток суммы распределяется по дням визитов в Стамбуле.',
+        a: 'Да, после внесения депозита остаток суммы распределяется по дням визитов в Анталье.',
       },
       {
         q: 'Какая гарантия предоставляется на виниры?',
         a: 'Выдается официальный Сертификат качества с гарантией 5 лет на все реставрации Ivoclar E-Max.',
       },
       {
-        q: 'Сколько дней занимает установка виниров в Стамбуле?',
+        q: 'Сколько дней занимает установка виниров в Анталье?',
         a: 'Полное преображение улыбки занимает от 4 до 6 дней (всего 3 комфортных визита в клинику).',
       },
     ],

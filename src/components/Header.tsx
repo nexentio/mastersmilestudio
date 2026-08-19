@@ -258,13 +258,23 @@ export default function Header() {
   };
 
   useEffect(() => {
+    let ticking = false;
     const handleScroll = () => {
-      if (window.scrollY > 20) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          const currentScrollY = window.scrollY;
+          // Hysteresis threshold to permanently prevent scroll oscillation / jitter loop
+          if (currentScrollY > 75) {
+            setIsScrolled(true);
+          } else if (currentScrollY < 15) {
+            setIsScrolled(false);
+          }
+          ticking = false;
+        });
+        ticking = true;
       }
     };
+
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -294,109 +304,9 @@ export default function Header() {
 
   return (
     <>
-      {/* Top Banner Bar - In normal document flow, scrolls away naturally */}
-      <div
-        style={{
-          width: '100%',
-          backgroundColor: 'rgba(255, 255, 255, 0.85)',
-          backdropFilter: 'blur(16px)',
-          WebkitBackdropFilter: 'blur(16px)',
-          position: 'relative',
-          zIndex: 49,
-        }}
-      >
-        <div className="top-bar-inner">
-          {/* Left: Social Media Icons (Visible on Desktop) */}
-          <div className="top-bar-socials" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-            {/* Instagram */}
-            <a
-              aria-label="Instagram"
-              href={SITE_CONFIG.socials.instagram}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="social-icon-btn social-icon-ig"
-              suppressHydrationWarning
-            >
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-              </svg>
-            </a>
-
-            {/* YouTube */}
-            <a
-              aria-label="YouTube"
-              href={SITE_CONFIG.socials.youtube}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="social-icon-btn social-icon-yt"
-              suppressHydrationWarning
-            >
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
-              </svg>
-            </a>
-
-            {/* Facebook */}
-            <a
-              aria-label="Facebook"
-              href={SITE_CONFIG.socials.facebook}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="social-icon-btn social-icon-fb"
-              suppressHydrationWarning
-            >
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-              </svg>
-            </a>
-
-            {/* WhatsApp */}
-            <a
-              aria-label="WhatsApp"
-              href={getWhatsAppLink(locale)}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="social-icon-btn social-icon-wa"
-              suppressHydrationWarning
-            >
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.971.54 1.764.814 2.8.814 3.18 0 5.766-2.587 5.766-5.766 0-3.18-2.586-5.766-5.77-5.766zm0 10.355c-.933 0-1.636-.263-2.383-.717l-.17-.104-1.77.464.473-1.727-.113-.18c-.49-.785-.778-1.579-.778-2.325 0-2.531 2.059-4.59 4.592-4.59 2.532 0 4.591 2.059 4.591 4.59 0 2.531-2.059 4.589-4.591 4.589z" />
-              </svg>
-            </a>
-
-            {/* Email */}
-            <a
-              aria-label="Email"
-              href="mailto:info@mastersmilestudio.com"
-              className="social-icon-btn social-icon-mail"
-              suppressHydrationWarning
-            >
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                <polyline points="22,6 12,13 2,6" />
-              </svg>
-            </a>
-          </div>
-
-          {/* Center/Right: Google Reviews Rating (1 sleek line on mobile & desktop) */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', whiteSpace: 'nowrap' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
-              <span style={{ fontWeight: 700, letterSpacing: '0.02em' }}>{t('topBar.googleReviews')}</span>
-              <span style={{ color: '#fef08a' }}>★★★★★</span>
-              <span style={{ fontWeight: 800 }}>{t('topBar.rating')}</span>
-            </div>
-            <span className="top-bar-subtext" style={{ opacity: 0.6 }}>•</span>
-            <span className="top-bar-subtext">{t('topBar.happyPatients')}</span>
-            <span className="top-bar-subtext" style={{ opacity: 0.6 }}>•</span>
-            <span className="top-bar-subtext">{t('topBar.countries')}</span>
-          </div>
-        </div>
-      </div>
-
-      {/* Main Global Navigation Bar */}
+      {/* Unified Global Navigation & Top Banner Header */}
       <header
+        className="global-header-wrapper"
         style={{
           position: mobileMenuOpen ? 'fixed' : 'sticky',
           top: 0,
@@ -404,26 +314,130 @@ export default function Header() {
           right: 0,
           zIndex: 1000000,
           width: '100%',
-          backgroundColor: (mobileMenuOpen || isScrolled) ? '#ffffff' : 'rgba(255, 255, 255, 0.85)',
-          backdropFilter: (mobileMenuOpen || isScrolled) ? 'none' : 'blur(16px)',
-          WebkitBackdropFilter: (mobileMenuOpen || isScrolled) ? 'none' : 'blur(16px)',
-          borderBottom: isScrolled || mobileMenuOpen ? '1px solid rgba(226, 232, 240, 0.9)' : '1px solid rgba(241, 245, 249, 0.8)',
-          boxShadow: isScrolled && !mobileMenuOpen ? '0 4px 20px -2px rgba(0, 0, 0, 0.08)' : 'none',
-          transition: 'padding 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+          backgroundColor: mobileMenuOpen ? '#ffffff' : 'rgba(255, 255, 255, 0.8)',
+          borderBottom: isScrolled || mobileMenuOpen ? '1px solid rgba(226, 232, 240, 0.85)' : '1px solid rgba(255, 255, 255, 0.35)',
+          boxShadow: isScrolled && !mobileMenuOpen ? '0 4px 16px -2px rgba(0, 0, 0, 0.07)' : 'none',
+          transition: 'background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease, border-color 0.3s ease',
         }}
       >
+        {/* Top Banner Bar - Seamlessly integrated within header */}
+        <div
+          className="top-bar-wrapper"
+          style={{
+            width: '100%',
+            backgroundColor: 'transparent',
+            position: 'relative',
+            zIndex: 49,
+            transition: 'max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.25s ease',
+            maxHeight: isScrolled ? '0px' : '45px',
+            opacity: isScrolled ? 0 : 1,
+            overflow: 'hidden',
+          }}
+        >
+          <div className="top-bar-inner">
+            {/* Left: Social Media Icons (Visible on Desktop) */}
+            <div className="top-bar-socials" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+              {/* Instagram */}
+              <a
+                aria-label="Instagram"
+                href={SITE_CONFIG.socials.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-icon-btn social-icon-ig"
+                suppressHydrationWarning
+              >
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                </svg>
+              </a>
+
+              {/* YouTube */}
+              <a
+                aria-label="YouTube"
+                href={SITE_CONFIG.socials.youtube}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-icon-btn social-icon-yt"
+                suppressHydrationWarning
+              >
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                </svg>
+              </a>
+
+              {/* Facebook */}
+              <a
+                aria-label="Facebook"
+                href={SITE_CONFIG.socials.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-icon-btn social-icon-fb"
+                suppressHydrationWarning
+              >
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                </svg>
+              </a>
+
+              {/* WhatsApp */}
+              <a
+                aria-label="WhatsApp"
+                href={getWhatsAppLink(locale)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-icon-btn social-icon-wa"
+                suppressHydrationWarning
+              >
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.971.54 1.764.814 2.8.814 3.18 0 5.766-2.587 5.766-5.766 0-3.18-2.586-5.766-5.77-5.766zm0 10.355c-.933 0-1.636-.263-2.383-.717l-.17-.104-1.77.464.473-1.727-.113-.18c-.49-.785-.778-1.579-.778-2.325 0-2.531 2.059-4.59 4.592-4.59 2.532 0 4.591 2.059 4.591 4.59 0 2.531-2.059 4.589-4.591 4.589z" />
+                </svg>
+              </a>
+
+              {/* Email */}
+              <a
+                aria-label="Email"
+                href="mailto:info@mastersmilestudio.com"
+                className="social-icon-btn social-icon-mail"
+                suppressHydrationWarning
+              >
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+              </a>
+            </div>
+
+            {/* Center/Right: Google Reviews Rating (1 sleek line on mobile & desktop) */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', whiteSpace: 'nowrap' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
+                <span style={{ fontWeight: 700, letterSpacing: '0.02em' }}>{t('topBar.googleReviews')}</span>
+                <span style={{ color: '#fef08a' }}>★★★★★</span>
+                <span style={{ fontWeight: 800 }}>{t('topBar.rating')}</span>
+              </div>
+              <span className="top-bar-subtext" style={{ opacity: 0.6 }}>•</span>
+              <span className="top-bar-subtext">{t('topBar.happyPatients')}</span>
+              <span className="top-bar-subtext" style={{ opacity: 0.6 }}>•</span>
+              <span className="top-bar-subtext">{t('topBar.countries')}</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Main Global Navigation Bar */}
         <div
           className="header-main-nav"
           style={{
             width: '94%',
             maxWidth: '1400px',
             margin: '0 auto',
-            padding: isScrolled ? '0.45rem 1rem' : '0.7rem 1rem',
+            padding: isScrolled ? '0.25rem 1rem' : '0.65rem 1rem',
+            minHeight: isScrolled ? '46px' : '62px',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'space-between',
             gap: '1rem',
-            transition: 'padding 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+            transition: 'padding 0.3s cubic-bezier(0.4, 0, 0.2, 1), min-height 0.3s ease',
           }}
         >
           {/* Logo Section (Responsive: Compact on Mobile, Full on Desktop) */}
@@ -437,7 +451,13 @@ export default function Header() {
             }}
             className="header-logo-link"
           >
-            <div className="header-logo-container">
+            <div
+              className="header-logo-container"
+              style={{
+                width: isScrolled ? '145px' : undefined,
+                height: isScrolled ? '34px' : undefined,
+              }}
+            >
               <Image
                 src="/logo-mastersmilestudio-no-bg.webp"
                 alt="Master Smile Studio Logo"
@@ -457,7 +477,7 @@ export default function Header() {
           <nav
             style={{
               alignItems: 'center',
-              gap: isScrolled ? '0.6rem' : '0.75rem',
+              gap: isScrolled ? '0.45rem' : '0.75rem',
               transition: 'gap 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
             }}
             className="desktop-nav"
@@ -482,7 +502,8 @@ export default function Header() {
                       href={link.href}
                       className="nav-link-item"
                       style={{
-                        fontSize: isScrolled ? '0.9rem' : '0.95rem',
+                        fontSize: isScrolled ? '0.86rem' : '0.95rem',
+                        padding: isScrolled ? '0.28rem 0.65rem' : undefined,
                         fontWeight: 600,
                         color: isOpen ? '#0f172a' : '#334155',
                         backgroundColor: isOpen ? '#f1f5f9' : 'transparent',
@@ -610,7 +631,8 @@ export default function Header() {
                       href={link.href}
                       className="nav-link-item"
                       style={{
-                        fontSize: isScrolled ? '0.9rem' : '0.95rem',
+                        fontSize: isScrolled ? '0.86rem' : '0.95rem',
+                        padding: isScrolled ? '0.28rem 0.65rem' : undefined,
                         fontWeight: 600,
                         color: isOpen ? '#0f172a' : '#334155',
                         backgroundColor: isOpen ? '#f1f5f9' : 'transparent',
@@ -731,11 +753,12 @@ export default function Header() {
                   href={link.href}
                   className="nav-link-item"
                   style={{
-                    fontSize: isScrolled ? '0.9rem' : '0.95rem',
+                    fontSize: isScrolled ? '0.86rem' : '0.95rem',
+                    padding: isScrolled ? '0.28rem 0.65rem' : undefined,
                     fontWeight: 600,
                     color: '#334155',
                     textDecoration: 'none',
-                    transition: 'font-size 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+                    transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
                   }}
                 >
                   {link.label}
@@ -753,13 +776,13 @@ export default function Header() {
               href="#contact"
               style={{
                 alignItems: 'center',
-                gap: isScrolled ? '0.55rem' : '0.75rem',
+                gap: isScrolled ? '0.45rem' : '0.75rem',
                 backgroundColor: '#09090b',
                 color: '#ffffff',
-                padding: isScrolled ? '0.35rem 0.95rem' : '0.5rem 1.15rem',
+                padding: isScrolled ? '0.25rem 0.85rem' : '0.5rem 1.15rem',
                 borderRadius: '9999px',
                 textDecoration: 'none',
-                boxShadow: isScrolled ? '0 3px 12px rgba(0, 0, 0, 0.2)' : '0 4px 16px rgba(0, 0, 0, 0.25)',
+                boxShadow: isScrolled ? '0 2px 8px rgba(0, 0, 0, 0.18)' : '0 4px 16px rgba(0, 0, 0, 0.25)',
                 transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
                 border: '1px solid #27272a',
               }}
@@ -770,8 +793,8 @@ export default function Header() {
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  width: isScrolled ? '26px' : '32px',
-                  height: isScrolled ? '26px' : '32px',
+                  width: isScrolled ? '24px' : '32px',
+                  height: isScrolled ? '24px' : '32px',
                   borderRadius: '50%',
                   backgroundColor: '#18181b',
                   color: '#ffffff',
@@ -780,26 +803,26 @@ export default function Header() {
                   transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
                 }}
               >
-                <svg width={isScrolled ? 13 : 16} height={isScrolled ? 13 : 16} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                <svg width={isScrolled ? 12 : 16} height={isScrolled ? 12 : 16} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
                 </svg>
               </div>
               <div style={{ display: 'flex', flexDirection: 'column', textAlign: 'left' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.3rem' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.25rem' }}>
                   <span
                     style={{
-                      width: isScrolled ? '5px' : '6px',
-                      height: isScrolled ? '5px' : '6px',
+                      width: isScrolled ? '4px' : '6px',
+                      height: isScrolled ? '4px' : '6px',
                       borderRadius: '50%',
                       backgroundColor: '#22c55e',
                       boxShadow: '0 0 8px #22c55e',
                     }}
                   />
-                  <span style={{ fontSize: isScrolled ? '0.62rem' : '0.68rem', fontWeight: 700, color: '#e4e4e7', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
+                  <span style={{ fontSize: isScrolled ? '0.58rem' : '0.68rem', fontWeight: 700, color: '#e4e4e7', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
                     {t('customerService.badge')}
                   </span>
                 </div>
-                <span style={{ fontSize: isScrolled ? '0.76rem' : '0.82rem', fontWeight: 600, color: '#ffffff', lineHeight: 1.25 }}>
+                <span style={{ fontSize: isScrolled ? '0.72rem' : '0.82rem', fontWeight: 600, color: '#ffffff', lineHeight: 1.2 }}>
                   {t('customerService.title')}
                 </span>
               </div>

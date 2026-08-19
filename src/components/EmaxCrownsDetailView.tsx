@@ -54,9 +54,9 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "priceLabel": "Price (All-Inclusive):",
     "getQuoteBtn": "Get Your Free Quote",
     "faqTitle": "Frequently Asked Questions About E-Max Crowns & Veneers",
-    "faqSubtitle": "Explore answers to the most common clinical and travel questions regarding E-Max crowns, smile makeovers, procedure timelines, and international warranties in Istanbul.",
-    "stayDuration": "<strong>6 to 7 days in Istanbul.</strong> During this single trip, 3D intraoral digital scanning, minimally invasive tooth preparation, CAD/CAM milling of IPS e.max ingots, and final aesthetic glaze cementation are completed with precision.",
-    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Istanbul once. Your complete dental crown makeover (from 1 tooth to full mouth 20-28 crowns) is designed and placed during this single visit.",
+    "faqSubtitle": "Explore answers to the most common clinical and travel questions regarding E-Max crowns, smile makeovers, procedure timelines, and international warranties in Antalya.",
+    "stayDuration": "<strong>6 to 7 days in Antalya.</strong> During this single trip, 3D intraoral digital scanning, minimally invasive tooth preparation, CAD/CAM milling of IPS e.max ingots, and final aesthetic glaze cementation are completed with precision.",
+    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Antalya once. Your complete dental crown makeover (from 1 tooth to full mouth 20-28 crowns) is designed and placed during this single visit.",
     "recoveryTime": "<strong>2 to 3 days adaptation.</strong> There is virtually no surgical recovery time. Any mild sensitivity subsides within 48-72 hours, allowing you to comfortably enjoy eating and normal activities immediately.",
     "priceEstimate": "<strong>E-Max Dental Crown prices start at £220 / €260 / $285 per tooth.</strong> All-inclusive multi-crown packages (10, 20 or 24 crowns) include digital smile design, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
@@ -64,7 +64,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single E-Max Porcelain Crown",
         "brand": "Swiss Ivoclar Vivadent IPS e.max (450–500 MPa)",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-1.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "included": [
           "1x Authentic Swiss Ivoclar IPS e.max Lithium Disilicate Crown",
           "3D Digital Intraoral Scan & CAD/CAM Precision Milling",
@@ -83,14 +83,14 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "10-Unit Anterior Smile Makeover (E-Max)",
         "brand": "Swiss Ivoclar IPS e.max Press",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-2.jpg",
+        "img": "/packages/pkg-emax.webp",
         "popular": true,
         "included": [
           "10x High-Translucency E-Max Crowns/Veneers (Upper Smile Zone)",
           "Bespoke 3D Digital Smile Design (DSD) & Facial Harmony Analysis",
           "Laser gum contouring & smile symmetry adjustment (if needed)",
           "Custom temporary crowns for complete comfort during manufacturing",
-          "4-Star Hotel Stay with Breakfast in Istanbul (6 Nights)",
+          "4-Star Hotel Stay with Breakfast in Antalya (6 Nights)",
           "VIP Mercedes Chauffeur Transfers (Airport - Hotel - Clinic)",
           "10-Year warranty against crown fracture & porcelain chipping"
         ],
@@ -104,13 +104,13 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Mouth E-Max Makeover",
         "brand": "Ivoclar IPS e.max CAD/Press",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-3.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "included": [
           "20x High-Translucency E-Max Crowns (10 Upper + 10 Lower Arches)",
           "Comprehensive 3D CT Diagnostic Scan & Bite Balance Simulation",
           "Full aesthetic & functional bite balancing (gnathological alignment)",
           "Complete temporary smile set fitted on Day 1",
-          "5-Star Luxury Hotel Accommodation in Istanbul (6 Nights)",
+          "5-Star Luxury Hotel Accommodation in Antalya (6 Nights)",
           "Private VIP Mercedes Airport & Clinic Chauffeur",
           "Comprehensive post-op care pack & custom night guard protection"
         ],
@@ -124,7 +124,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Zirconium Crown (Amman-Girrbach)",
         "brand": "Amman-Girrbach / Vita (1200+ MPa)",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-1.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "1x Genuine German Monolithic Zirconia Crown (1200+ MPa)",
           "3D Digital Intraoral Scan & CAD/CAM Precision Milling",
@@ -143,7 +143,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Premium Zirconia Hollywood Smile",
         "brand": "Monolithic Multi-Layer 3D Pro Zirconia",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-3.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "20x High-Translucency Monolithic Zirconia Crowns (10 Upper + 10 Lower Arches)",
           "3D Digital Facial Aesthetics & golden ratio smile planning",
@@ -163,7 +163,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Combination Makeover (E-Max Front + Zirconia Back)",
         "brand": "Swiss E-Max + German Zirconia",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Porcelain-Crown-Package-2.jpg",
+        "img": "/treatments/accordion/Porcelain-Crown-Package-2.jpg",
         "included": [
           "8-10 Anterior E-Max Crowns for ultimate aesthetics + Posterior Zirconia for bite strength",
           "Precision CAD/CAM digital margin adaptation",
@@ -190,20 +190,20 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "q": "Will my treatment plan or price change when I arrive at the clinic?",
         "a": [
           "No. The personalized treatment plan and cost quotation provided during your online consultation (based on your dental photos and panoramic X-ray) are fixed and binding.",
-          "Upon your arrival in Istanbul, we perform a complimentary 3D CBCT scan. Unless an unforeseen internal dental infection or severe root pathology requiring endodontic intervention is discovered, your package price remains 100% transparent with zero hidden charges."
+          "Upon your arrival in Antalya, we perform a complimentary 3D CBCT scan. Unless an unforeseen internal dental infection or severe root pathology requiring endodontic intervention is discovered, your package price remains 100% transparent with zero hidden charges."
         ]
       },
       {
         "q": "Do you assist with accommodation and hotel booking?",
         "a": [
-          "Yes. All of our multi-unit crown packages (10, 20, or 24 teeth) include complimentary 4-star or 5-star hotel accommodation with daily breakfast located in safe, upscale central districts of Istanbul near our clinic.",
+          "Yes. All of our multi-unit crown packages (10, 20, or 24 teeth) include complimentary 4-star or 5-star hotel accommodation with daily breakfast located in safe, upscale central districts of Antalya near our clinic.",
           "Our dedicated international patient team handles your hotel reservations, check-in, and daily VIP Mercedes clinic transfers for a completely stress-free experience."
         ]
       },
       {
         "q": "Is it safe to travel to Turkey for dental treatments?",
         "a": [
-          "Yes, absolutely. Istanbul is one of the world's most reputable and advanced centers for medical and dental tourism, welcoming over 500,000 international dental patients every year.",
+          "Yes, absolutely. Antalya is one of the world's most reputable and advanced centers for medical and dental tourism, welcoming over 500,000 international dental patients every year.",
           "Our clinic operates under strict Ministry of Health regulations, employing hospital-grade HEPA filtration, class-B autoclave sterilization, and CE/FDA-certified German and Swiss biomaterials."
         ]
       },
@@ -238,7 +238,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
       {
         "q": "Are airport transfers and hotel stays really included in the packages?",
         "a": [
-          "Yes! All smile makeover packages include complimentary private VIP Mercedes Vito transfers between Istanbul Airport (IST / SAW), your hotel, and the clinic for all appointments.",
+          "Yes! All smile makeover packages include complimentary private VIP Mercedes Vito transfers between Antalya Airport (IST / SAW), your hotel, and the clinic for all appointments.",
           "Your personal driver greets you at the arrival gate, ensuring seamless transportation throughout your entire stay."
         ]
       },
@@ -303,9 +303,9 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "priceLabel": "Her Şey Dahil Fiyat:",
     "getQuoteBtn": "Ücretsiz Fiyat Teklifi Al",
     "faqTitle": "E-Max Porselen Kaplama Hakkında Sıkça Sorulan Sorular",
-    "faqSubtitle": "İstanbul'da E-Max diş kaplama, estetik saydamlık, tedavi süresi, garanti koşulları ve seyahat planlaması hakkında en çok merak edilen soruların yanıtları.",
-    "stayDuration": "<strong>6 to 7 days in Istanbul.</strong> During this single trip, 3D intraoral digital scanning, minimally invasive tooth preparation, CAD/CAM milling of IPS e.max ingots, and final aesthetic glaze cementation are completed with precision.",
-    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Istanbul once. Your complete dental crown makeover (from 1 tooth to full mouth 20-28 crowns) is designed and placed during this single visit.",
+    "faqSubtitle": "Antalya'da E-Max diş kaplama, estetik saydamlık, tedavi süresi, garanti koşulları ve seyahat planlaması hakkında en çok merak edilen soruların yanıtları.",
+    "stayDuration": "<strong>6 to 7 days in Antalya.</strong> During this single trip, 3D intraoral digital scanning, minimally invasive tooth preparation, CAD/CAM milling of IPS e.max ingots, and final aesthetic glaze cementation are completed with precision.",
+    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Antalya once. Your complete dental crown makeover (from 1 tooth to full mouth 20-28 crowns) is designed and placed during this single visit.",
     "recoveryTime": "<strong>2 to 3 days adaptation.</strong> There is virtually no surgical recovery time. Any mild sensitivity subsides within 48-72 hours, allowing you to comfortably enjoy eating and normal activities immediately.",
     "priceEstimate": "<strong>E-Max Dental Crown prices start at £220 / €260 / $285 per tooth.</strong> All-inclusive multi-crown packages (10, 20 or 24 crowns) include digital smile design, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
@@ -313,7 +313,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single E-Max Porcelain Crown",
         "brand": "Swiss Ivoclar Vivadent IPS e.max (450–500 MPa)",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-1.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "included": [
           "1x Authentic Swiss Ivoclar IPS e.max Lithium Disilicate Crown",
           "3D Digital Intraoral Scan & CAD/CAM Precision Milling",
@@ -332,14 +332,14 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "10-Unit Anterior Smile Makeover (E-Max)",
         "brand": "Swiss Ivoclar IPS e.max Press",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-2.jpg",
+        "img": "/packages/pkg-emax.webp",
         "popular": true,
         "included": [
           "10x High-Translucency E-Max Crowns/Veneers (Upper Smile Zone)",
           "Bespoke 3D Digital Smile Design (DSD) & Facial Harmony Analysis",
           "Laser gum contouring & smile symmetry adjustment (if needed)",
           "Custom temporary crowns for complete comfort during manufacturing",
-          "4-Star Hotel Stay with Breakfast in Istanbul (6 Nights)",
+          "4-Star Hotel Stay with Breakfast in Antalya (6 Nights)",
           "VIP Mercedes Chauffeur Transfers (Airport - Hotel - Clinic)",
           "10-Year warranty against crown fracture & porcelain chipping"
         ],
@@ -353,13 +353,13 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Mouth E-Max Makeover",
         "brand": "Ivoclar IPS e.max CAD/Press",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-3.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "included": [
           "20x High-Translucency E-Max Crowns (10 Upper + 10 Lower Arches)",
           "Comprehensive 3D CT Diagnostic Scan & Bite Balance Simulation",
           "Full aesthetic & functional bite balancing (gnathological alignment)",
           "Complete temporary smile set fitted on Day 1",
-          "5-Star Luxury Hotel Accommodation in Istanbul (6 Nights)",
+          "5-Star Luxury Hotel Accommodation in Antalya (6 Nights)",
           "Private VIP Mercedes Airport & Clinic Chauffeur",
           "Comprehensive post-op care pack & custom night guard protection"
         ],
@@ -373,7 +373,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Zirconium Crown (Amman-Girrbach)",
         "brand": "Amman-Girrbach / Vita (1200+ MPa)",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-1.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "1x Genuine German Monolithic Zirconia Crown (1200+ MPa)",
           "3D Digital Intraoral Scan & CAD/CAM Precision Milling",
@@ -392,7 +392,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Premium Zirconia Hollywood Smile",
         "brand": "Monolithic Multi-Layer 3D Pro Zirconia",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-3.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "20x High-Translucency Monolithic Zirconia Crowns (10 Upper + 10 Lower Arches)",
           "3D Digital Facial Aesthetics & golden ratio smile planning",
@@ -412,7 +412,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Combination Makeover (E-Max Front + Zirconia Back)",
         "brand": "Swiss E-Max + German Zirconia",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Porcelain-Crown-Package-2.jpg",
+        "img": "/treatments/accordion/Porcelain-Crown-Package-2.jpg",
         "included": [
           "8-10 Anterior E-Max Crowns for ultimate aesthetics + Posterior Zirconia for bite strength",
           "Precision CAD/CAM digital margin adaptation",
@@ -439,20 +439,20 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "q": "Will my treatment plan or price change when I arrive at the clinic?",
         "a": [
           "No. The personalized treatment plan and cost quotation provided during your online consultation (based on your dental photos and panoramic X-ray) are fixed and binding.",
-          "Upon your arrival in Istanbul, we perform a complimentary 3D CBCT scan. Unless an unforeseen internal dental infection or severe root pathology requiring endodontic intervention is discovered, your package price remains 100% transparent with zero hidden charges."
+          "Upon your arrival in Antalya, we perform a complimentary 3D CBCT scan. Unless an unforeseen internal dental infection or severe root pathology requiring endodontic intervention is discovered, your package price remains 100% transparent with zero hidden charges."
         ]
       },
       {
         "q": "Do you assist with accommodation and hotel booking?",
         "a": [
-          "Yes. All of our multi-unit crown packages (10, 20, or 24 teeth) include complimentary 4-star or 5-star hotel accommodation with daily breakfast located in safe, upscale central districts of Istanbul near our clinic.",
+          "Yes. All of our multi-unit crown packages (10, 20, or 24 teeth) include complimentary 4-star or 5-star hotel accommodation with daily breakfast located in safe, upscale central districts of Antalya near our clinic.",
           "Our dedicated international patient team handles your hotel reservations, check-in, and daily VIP Mercedes clinic transfers for a completely stress-free experience."
         ]
       },
       {
         "q": "Is it safe to travel to Turkey for dental treatments?",
         "a": [
-          "Yes, absolutely. Istanbul is one of the world's most reputable and advanced centers for medical and dental tourism, welcoming over 500,000 international dental patients every year.",
+          "Yes, absolutely. Antalya is one of the world's most reputable and advanced centers for medical and dental tourism, welcoming over 500,000 international dental patients every year.",
           "Our clinic operates under strict Ministry of Health regulations, employing hospital-grade HEPA filtration, class-B autoclave sterilization, and CE/FDA-certified German and Swiss biomaterials."
         ]
       },
@@ -487,7 +487,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
       {
         "q": "Are airport transfers and hotel stays really included in the packages?",
         "a": [
-          "Yes! All smile makeover packages include complimentary private VIP Mercedes Vito transfers between Istanbul Airport (IST / SAW), your hotel, and the clinic for all appointments.",
+          "Yes! All smile makeover packages include complimentary private VIP Mercedes Vito transfers between Antalya Airport (IST / SAW), your hotel, and the clinic for all appointments.",
           "Your personal driver greets you at the arrival gate, ensuring seamless transportation throughout your entire stay."
         ]
       },
@@ -552,9 +552,9 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "priceLabel": "Price (All-Inclusive):",
     "getQuoteBtn": "Get Your Free Quote",
     "faqTitle": "Frequently Asked Questions About E-Max Crowns & Veneers",
-    "faqSubtitle": "Explore answers to the most common clinical and travel questions regarding E-Max crowns, smile makeovers, procedure timelines, and international warranties in Istanbul.",
-    "stayDuration": "<strong>6 to 7 days in Istanbul.</strong> During this single trip, 3D intraoral digital scanning, minimally invasive tooth preparation, CAD/CAM milling of IPS e.max ingots, and final aesthetic glaze cementation are completed with precision.",
-    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Istanbul once. Your complete dental crown makeover (from 1 tooth to full mouth 20-28 crowns) is designed and placed during this single visit.",
+    "faqSubtitle": "Explore answers to the most common clinical and travel questions regarding E-Max crowns, smile makeovers, procedure timelines, and international warranties in Antalya.",
+    "stayDuration": "<strong>6 to 7 days in Antalya.</strong> During this single trip, 3D intraoral digital scanning, minimally invasive tooth preparation, CAD/CAM milling of IPS e.max ingots, and final aesthetic glaze cementation are completed with precision.",
+    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Antalya once. Your complete dental crown makeover (from 1 tooth to full mouth 20-28 crowns) is designed and placed during this single visit.",
     "recoveryTime": "<strong>2 to 3 days adaptation.</strong> There is virtually no surgical recovery time. Any mild sensitivity subsides within 48-72 hours, allowing you to comfortably enjoy eating and normal activities immediately.",
     "priceEstimate": "<strong>E-Max Dental Crown prices start at £220 / €260 / $285 per tooth.</strong> All-inclusive multi-crown packages (10, 20 or 24 crowns) include digital smile design, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
@@ -562,7 +562,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single E-Max Porcelain Crown",
         "brand": "Swiss Ivoclar Vivadent IPS e.max (450–500 MPa)",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-1.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "included": [
           "1x Authentic Swiss Ivoclar IPS e.max Lithium Disilicate Crown",
           "3D Digital Intraoral Scan & CAD/CAM Precision Milling",
@@ -581,14 +581,14 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "10-Unit Anterior Smile Makeover (E-Max)",
         "brand": "Swiss Ivoclar IPS e.max Press",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-2.jpg",
+        "img": "/packages/pkg-emax.webp",
         "popular": true,
         "included": [
           "10x High-Translucency E-Max Crowns/Veneers (Upper Smile Zone)",
           "Bespoke 3D Digital Smile Design (DSD) & Facial Harmony Analysis",
           "Laser gum contouring & smile symmetry adjustment (if needed)",
           "Custom temporary crowns for complete comfort during manufacturing",
-          "4-Star Hotel Stay with Breakfast in Istanbul (6 Nights)",
+          "4-Star Hotel Stay with Breakfast in Antalya (6 Nights)",
           "VIP Mercedes Chauffeur Transfers (Airport - Hotel - Clinic)",
           "10-Year warranty against crown fracture & porcelain chipping"
         ],
@@ -602,13 +602,13 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Mouth E-Max Makeover",
         "brand": "Ivoclar IPS e.max CAD/Press",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-3.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "included": [
           "20x High-Translucency E-Max Crowns (10 Upper + 10 Lower Arches)",
           "Comprehensive 3D CT Diagnostic Scan & Bite Balance Simulation",
           "Full aesthetic & functional bite balancing (gnathological alignment)",
           "Complete temporary smile set fitted on Day 1",
-          "5-Star Luxury Hotel Accommodation in Istanbul (6 Nights)",
+          "5-Star Luxury Hotel Accommodation in Antalya (6 Nights)",
           "Private VIP Mercedes Airport & Clinic Chauffeur",
           "Comprehensive post-op care pack & custom night guard protection"
         ],
@@ -622,7 +622,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Zirconium Crown (Amman-Girrbach)",
         "brand": "Amman-Girrbach / Vita (1200+ MPa)",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-1.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "1x Genuine German Monolithic Zirconia Crown (1200+ MPa)",
           "3D Digital Intraoral Scan & CAD/CAM Precision Milling",
@@ -641,7 +641,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Premium Zirconia Hollywood Smile",
         "brand": "Monolithic Multi-Layer 3D Pro Zirconia",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-3.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "20x High-Translucency Monolithic Zirconia Crowns (10 Upper + 10 Lower Arches)",
           "3D Digital Facial Aesthetics & golden ratio smile planning",
@@ -661,7 +661,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Combination Makeover (E-Max Front + Zirconia Back)",
         "brand": "Swiss E-Max + German Zirconia",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Porcelain-Crown-Package-2.jpg",
+        "img": "/treatments/accordion/Porcelain-Crown-Package-2.jpg",
         "included": [
           "8-10 Anterior E-Max Crowns for ultimate aesthetics + Posterior Zirconia for bite strength",
           "Precision CAD/CAM digital margin adaptation",
@@ -688,20 +688,20 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "q": "Will my treatment plan or price change when I arrive at the clinic?",
         "a": [
           "No. The personalized treatment plan and cost quotation provided during your online consultation (based on your dental photos and panoramic X-ray) are fixed and binding.",
-          "Upon your arrival in Istanbul, we perform a complimentary 3D CBCT scan. Unless an unforeseen internal dental infection or severe root pathology requiring endodontic intervention is discovered, your package price remains 100% transparent with zero hidden charges."
+          "Upon your arrival in Antalya, we perform a complimentary 3D CBCT scan. Unless an unforeseen internal dental infection or severe root pathology requiring endodontic intervention is discovered, your package price remains 100% transparent with zero hidden charges."
         ]
       },
       {
         "q": "Do you assist with accommodation and hotel booking?",
         "a": [
-          "Yes. All of our multi-unit crown packages (10, 20, or 24 teeth) include complimentary 4-star or 5-star hotel accommodation with daily breakfast located in safe, upscale central districts of Istanbul near our clinic.",
+          "Yes. All of our multi-unit crown packages (10, 20, or 24 teeth) include complimentary 4-star or 5-star hotel accommodation with daily breakfast located in safe, upscale central districts of Antalya near our clinic.",
           "Our dedicated international patient team handles your hotel reservations, check-in, and daily VIP Mercedes clinic transfers for a completely stress-free experience."
         ]
       },
       {
         "q": "Is it safe to travel to Turkey for dental treatments?",
         "a": [
-          "Yes, absolutely. Istanbul is one of the world's most reputable and advanced centers for medical and dental tourism, welcoming over 500,000 international dental patients every year.",
+          "Yes, absolutely. Antalya is one of the world's most reputable and advanced centers for medical and dental tourism, welcoming over 500,000 international dental patients every year.",
           "Our clinic operates under strict Ministry of Health regulations, employing hospital-grade HEPA filtration, class-B autoclave sterilization, and CE/FDA-certified German and Swiss biomaterials."
         ]
       },
@@ -736,7 +736,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
       {
         "q": "Are airport transfers and hotel stays really included in the packages?",
         "a": [
-          "Yes! All smile makeover packages include complimentary private VIP Mercedes Vito transfers between Istanbul Airport (IST / SAW), your hotel, and the clinic for all appointments.",
+          "Yes! All smile makeover packages include complimentary private VIP Mercedes Vito transfers between Antalya Airport (IST / SAW), your hotel, and the clinic for all appointments.",
           "Your personal driver greets you at the arrival gate, ensuring seamless transportation throughout your entire stay."
         ]
       },
@@ -801,9 +801,9 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "priceLabel": "Price (All-Inclusive):",
     "getQuoteBtn": "Get Your Free Quote",
     "faqTitle": "Frequently Asked Questions About E-Max Crowns & Veneers",
-    "faqSubtitle": "Explore answers to the most common clinical and travel questions regarding E-Max crowns, smile makeovers, procedure timelines, and international warranties in Istanbul.",
-    "stayDuration": "<strong>6 to 7 days in Istanbul.</strong> During this single trip, 3D intraoral digital scanning, minimally invasive tooth preparation, CAD/CAM milling of IPS e.max ingots, and final aesthetic glaze cementation are completed with precision.",
-    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Istanbul once. Your complete dental crown makeover (from 1 tooth to full mouth 20-28 crowns) is designed and placed during this single visit.",
+    "faqSubtitle": "Explore answers to the most common clinical and travel questions regarding E-Max crowns, smile makeovers, procedure timelines, and international warranties in Antalya.",
+    "stayDuration": "<strong>6 to 7 days in Antalya.</strong> During this single trip, 3D intraoral digital scanning, minimally invasive tooth preparation, CAD/CAM milling of IPS e.max ingots, and final aesthetic glaze cementation are completed with precision.",
+    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Antalya once. Your complete dental crown makeover (from 1 tooth to full mouth 20-28 crowns) is designed and placed during this single visit.",
     "recoveryTime": "<strong>2 to 3 days adaptation.</strong> There is virtually no surgical recovery time. Any mild sensitivity subsides within 48-72 hours, allowing you to comfortably enjoy eating and normal activities immediately.",
     "priceEstimate": "<strong>E-Max Dental Crown prices start at £220 / €260 / $285 per tooth.</strong> All-inclusive multi-crown packages (10, 20 or 24 crowns) include digital smile design, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
@@ -811,7 +811,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single E-Max Porcelain Crown",
         "brand": "Swiss Ivoclar Vivadent IPS e.max (450–500 MPa)",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-1.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "included": [
           "1x Authentic Swiss Ivoclar IPS e.max Lithium Disilicate Crown",
           "3D Digital Intraoral Scan & CAD/CAM Precision Milling",
@@ -830,14 +830,14 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "10-Unit Anterior Smile Makeover (E-Max)",
         "brand": "Swiss Ivoclar IPS e.max Press",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-2.jpg",
+        "img": "/packages/pkg-emax.webp",
         "popular": true,
         "included": [
           "10x High-Translucency E-Max Crowns/Veneers (Upper Smile Zone)",
           "Bespoke 3D Digital Smile Design (DSD) & Facial Harmony Analysis",
           "Laser gum contouring & smile symmetry adjustment (if needed)",
           "Custom temporary crowns for complete comfort during manufacturing",
-          "4-Star Hotel Stay with Breakfast in Istanbul (6 Nights)",
+          "4-Star Hotel Stay with Breakfast in Antalya (6 Nights)",
           "VIP Mercedes Chauffeur Transfers (Airport - Hotel - Clinic)",
           "10-Year warranty against crown fracture & porcelain chipping"
         ],
@@ -851,13 +851,13 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Mouth E-Max Makeover",
         "brand": "Ivoclar IPS e.max CAD/Press",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-3.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "included": [
           "20x High-Translucency E-Max Crowns (10 Upper + 10 Lower Arches)",
           "Comprehensive 3D CT Diagnostic Scan & Bite Balance Simulation",
           "Full aesthetic & functional bite balancing (gnathological alignment)",
           "Complete temporary smile set fitted on Day 1",
-          "5-Star Luxury Hotel Accommodation in Istanbul (6 Nights)",
+          "5-Star Luxury Hotel Accommodation in Antalya (6 Nights)",
           "Private VIP Mercedes Airport & Clinic Chauffeur",
           "Comprehensive post-op care pack & custom night guard protection"
         ],
@@ -871,7 +871,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Zirconium Crown (Amman-Girrbach)",
         "brand": "Amman-Girrbach / Vita (1200+ MPa)",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-1.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "1x Genuine German Monolithic Zirconia Crown (1200+ MPa)",
           "3D Digital Intraoral Scan & CAD/CAM Precision Milling",
@@ -890,7 +890,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Premium Zirconia Hollywood Smile",
         "brand": "Monolithic Multi-Layer 3D Pro Zirconia",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-3.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "20x High-Translucency Monolithic Zirconia Crowns (10 Upper + 10 Lower Arches)",
           "3D Digital Facial Aesthetics & golden ratio smile planning",
@@ -910,7 +910,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Combination Makeover (E-Max Front + Zirconia Back)",
         "brand": "Swiss E-Max + German Zirconia",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Porcelain-Crown-Package-2.jpg",
+        "img": "/treatments/accordion/Porcelain-Crown-Package-2.jpg",
         "included": [
           "8-10 Anterior E-Max Crowns for ultimate aesthetics + Posterior Zirconia for bite strength",
           "Precision CAD/CAM digital margin adaptation",
@@ -937,20 +937,20 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "q": "Will my treatment plan or price change when I arrive at the clinic?",
         "a": [
           "No. The personalized treatment plan and cost quotation provided during your online consultation (based on your dental photos and panoramic X-ray) are fixed and binding.",
-          "Upon your arrival in Istanbul, we perform a complimentary 3D CBCT scan. Unless an unforeseen internal dental infection or severe root pathology requiring endodontic intervention is discovered, your package price remains 100% transparent with zero hidden charges."
+          "Upon your arrival in Antalya, we perform a complimentary 3D CBCT scan. Unless an unforeseen internal dental infection or severe root pathology requiring endodontic intervention is discovered, your package price remains 100% transparent with zero hidden charges."
         ]
       },
       {
         "q": "Do you assist with accommodation and hotel booking?",
         "a": [
-          "Yes. All of our multi-unit crown packages (10, 20, or 24 teeth) include complimentary 4-star or 5-star hotel accommodation with daily breakfast located in safe, upscale central districts of Istanbul near our clinic.",
+          "Yes. All of our multi-unit crown packages (10, 20, or 24 teeth) include complimentary 4-star or 5-star hotel accommodation with daily breakfast located in safe, upscale central districts of Antalya near our clinic.",
           "Our dedicated international patient team handles your hotel reservations, check-in, and daily VIP Mercedes clinic transfers for a completely stress-free experience."
         ]
       },
       {
         "q": "Is it safe to travel to Turkey for dental treatments?",
         "a": [
-          "Yes, absolutely. Istanbul is one of the world's most reputable and advanced centers for medical and dental tourism, welcoming over 500,000 international dental patients every year.",
+          "Yes, absolutely. Antalya is one of the world's most reputable and advanced centers for medical and dental tourism, welcoming over 500,000 international dental patients every year.",
           "Our clinic operates under strict Ministry of Health regulations, employing hospital-grade HEPA filtration, class-B autoclave sterilization, and CE/FDA-certified German and Swiss biomaterials."
         ]
       },
@@ -985,7 +985,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
       {
         "q": "Are airport transfers and hotel stays really included in the packages?",
         "a": [
-          "Yes! All smile makeover packages include complimentary private VIP Mercedes Vito transfers between Istanbul Airport (IST / SAW), your hotel, and the clinic for all appointments.",
+          "Yes! All smile makeover packages include complimentary private VIP Mercedes Vito transfers between Antalya Airport (IST / SAW), your hotel, and the clinic for all appointments.",
           "Your personal driver greets you at the arrival gate, ensuring seamless transportation throughout your entire stay."
         ]
       },
@@ -1050,9 +1050,9 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "priceLabel": "Price (All-Inclusive):",
     "getQuoteBtn": "Get Your Free Quote",
     "faqTitle": "Frequently Asked Questions About E-Max Crowns & Veneers",
-    "faqSubtitle": "Explore answers to the most common clinical and travel questions regarding E-Max crowns, smile makeovers, procedure timelines, and international warranties in Istanbul.",
-    "stayDuration": "<strong>6 to 7 days in Istanbul.</strong> During this single trip, 3D intraoral digital scanning, minimally invasive tooth preparation, CAD/CAM milling of IPS e.max ingots, and final aesthetic glaze cementation are completed with precision.",
-    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Istanbul once. Your complete dental crown makeover (from 1 tooth to full mouth 20-28 crowns) is designed and placed during this single visit.",
+    "faqSubtitle": "Explore answers to the most common clinical and travel questions regarding E-Max crowns, smile makeovers, procedure timelines, and international warranties in Antalya.",
+    "stayDuration": "<strong>6 to 7 days in Antalya.</strong> During this single trip, 3D intraoral digital scanning, minimally invasive tooth preparation, CAD/CAM milling of IPS e.max ingots, and final aesthetic glaze cementation are completed with precision.",
+    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Antalya once. Your complete dental crown makeover (from 1 tooth to full mouth 20-28 crowns) is designed and placed during this single visit.",
     "recoveryTime": "<strong>2 to 3 days adaptation.</strong> There is virtually no surgical recovery time. Any mild sensitivity subsides within 48-72 hours, allowing you to comfortably enjoy eating and normal activities immediately.",
     "priceEstimate": "<strong>E-Max Dental Crown prices start at £220 / €260 / $285 per tooth.</strong> All-inclusive multi-crown packages (10, 20 or 24 crowns) include digital smile design, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
@@ -1060,7 +1060,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single E-Max Porcelain Crown",
         "brand": "Swiss Ivoclar Vivadent IPS e.max (450–500 MPa)",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-1.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "included": [
           "1x Authentic Swiss Ivoclar IPS e.max Lithium Disilicate Crown",
           "3D Digital Intraoral Scan & CAD/CAM Precision Milling",
@@ -1079,14 +1079,14 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "10-Unit Anterior Smile Makeover (E-Max)",
         "brand": "Swiss Ivoclar IPS e.max Press",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-2.jpg",
+        "img": "/packages/pkg-emax.webp",
         "popular": true,
         "included": [
           "10x High-Translucency E-Max Crowns/Veneers (Upper Smile Zone)",
           "Bespoke 3D Digital Smile Design (DSD) & Facial Harmony Analysis",
           "Laser gum contouring & smile symmetry adjustment (if needed)",
           "Custom temporary crowns for complete comfort during manufacturing",
-          "4-Star Hotel Stay with Breakfast in Istanbul (6 Nights)",
+          "4-Star Hotel Stay with Breakfast in Antalya (6 Nights)",
           "VIP Mercedes Chauffeur Transfers (Airport - Hotel - Clinic)",
           "10-Year warranty against crown fracture & porcelain chipping"
         ],
@@ -1100,13 +1100,13 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Mouth E-Max Makeover",
         "brand": "Ivoclar IPS e.max CAD/Press",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-3.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "included": [
           "20x High-Translucency E-Max Crowns (10 Upper + 10 Lower Arches)",
           "Comprehensive 3D CT Diagnostic Scan & Bite Balance Simulation",
           "Full aesthetic & functional bite balancing (gnathological alignment)",
           "Complete temporary smile set fitted on Day 1",
-          "5-Star Luxury Hotel Accommodation in Istanbul (6 Nights)",
+          "5-Star Luxury Hotel Accommodation in Antalya (6 Nights)",
           "Private VIP Mercedes Airport & Clinic Chauffeur",
           "Comprehensive post-op care pack & custom night guard protection"
         ],
@@ -1120,7 +1120,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Zirconium Crown (Amman-Girrbach)",
         "brand": "Amman-Girrbach / Vita (1200+ MPa)",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-1.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "1x Genuine German Monolithic Zirconia Crown (1200+ MPa)",
           "3D Digital Intraoral Scan & CAD/CAM Precision Milling",
@@ -1139,7 +1139,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Premium Zirconia Hollywood Smile",
         "brand": "Monolithic Multi-Layer 3D Pro Zirconia",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-3.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "20x High-Translucency Monolithic Zirconia Crowns (10 Upper + 10 Lower Arches)",
           "3D Digital Facial Aesthetics & golden ratio smile planning",
@@ -1159,7 +1159,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Combination Makeover (E-Max Front + Zirconia Back)",
         "brand": "Swiss E-Max + German Zirconia",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Porcelain-Crown-Package-2.jpg",
+        "img": "/treatments/accordion/Porcelain-Crown-Package-2.jpg",
         "included": [
           "8-10 Anterior E-Max Crowns for ultimate aesthetics + Posterior Zirconia for bite strength",
           "Precision CAD/CAM digital margin adaptation",
@@ -1186,20 +1186,20 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "q": "Will my treatment plan or price change when I arrive at the clinic?",
         "a": [
           "No. The personalized treatment plan and cost quotation provided during your online consultation (based on your dental photos and panoramic X-ray) are fixed and binding.",
-          "Upon your arrival in Istanbul, we perform a complimentary 3D CBCT scan. Unless an unforeseen internal dental infection or severe root pathology requiring endodontic intervention is discovered, your package price remains 100% transparent with zero hidden charges."
+          "Upon your arrival in Antalya, we perform a complimentary 3D CBCT scan. Unless an unforeseen internal dental infection or severe root pathology requiring endodontic intervention is discovered, your package price remains 100% transparent with zero hidden charges."
         ]
       },
       {
         "q": "Do you assist with accommodation and hotel booking?",
         "a": [
-          "Yes. All of our multi-unit crown packages (10, 20, or 24 teeth) include complimentary 4-star or 5-star hotel accommodation with daily breakfast located in safe, upscale central districts of Istanbul near our clinic.",
+          "Yes. All of our multi-unit crown packages (10, 20, or 24 teeth) include complimentary 4-star or 5-star hotel accommodation with daily breakfast located in safe, upscale central districts of Antalya near our clinic.",
           "Our dedicated international patient team handles your hotel reservations, check-in, and daily VIP Mercedes clinic transfers for a completely stress-free experience."
         ]
       },
       {
         "q": "Is it safe to travel to Turkey for dental treatments?",
         "a": [
-          "Yes, absolutely. Istanbul is one of the world's most reputable and advanced centers for medical and dental tourism, welcoming over 500,000 international dental patients every year.",
+          "Yes, absolutely. Antalya is one of the world's most reputable and advanced centers for medical and dental tourism, welcoming over 500,000 international dental patients every year.",
           "Our clinic operates under strict Ministry of Health regulations, employing hospital-grade HEPA filtration, class-B autoclave sterilization, and CE/FDA-certified German and Swiss biomaterials."
         ]
       },
@@ -1234,7 +1234,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
       {
         "q": "Are airport transfers and hotel stays really included in the packages?",
         "a": [
-          "Yes! All smile makeover packages include complimentary private VIP Mercedes Vito transfers between Istanbul Airport (IST / SAW), your hotel, and the clinic for all appointments.",
+          "Yes! All smile makeover packages include complimentary private VIP Mercedes Vito transfers between Antalya Airport (IST / SAW), your hotel, and the clinic for all appointments.",
           "Your personal driver greets you at the arrival gate, ensuring seamless transportation throughout your entire stay."
         ]
       },
@@ -1299,9 +1299,9 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "priceLabel": "Price (All-Inclusive):",
     "getQuoteBtn": "Get Your Free Quote",
     "faqTitle": "Frequently Asked Questions About E-Max Crowns & Veneers",
-    "faqSubtitle": "Explore answers to the most common clinical and travel questions regarding E-Max crowns, smile makeovers, procedure timelines, and international warranties in Istanbul.",
-    "stayDuration": "<strong>6 to 7 days in Istanbul.</strong> During this single trip, 3D intraoral digital scanning, minimally invasive tooth preparation, CAD/CAM milling of IPS e.max ingots, and final aesthetic glaze cementation are completed with precision.",
-    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Istanbul once. Your complete dental crown makeover (from 1 tooth to full mouth 20-28 crowns) is designed and placed during this single visit.",
+    "faqSubtitle": "Explore answers to the most common clinical and travel questions regarding E-Max crowns, smile makeovers, procedure timelines, and international warranties in Antalya.",
+    "stayDuration": "<strong>6 to 7 days in Antalya.</strong> During this single trip, 3D intraoral digital scanning, minimally invasive tooth preparation, CAD/CAM milling of IPS e.max ingots, and final aesthetic glaze cementation are completed with precision.",
+    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Antalya once. Your complete dental crown makeover (from 1 tooth to full mouth 20-28 crowns) is designed and placed during this single visit.",
     "recoveryTime": "<strong>2 to 3 days adaptation.</strong> There is virtually no surgical recovery time. Any mild sensitivity subsides within 48-72 hours, allowing you to comfortably enjoy eating and normal activities immediately.",
     "priceEstimate": "<strong>E-Max Dental Crown prices start at £220 / €260 / $285 per tooth.</strong> All-inclusive multi-crown packages (10, 20 or 24 crowns) include digital smile design, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
@@ -1309,7 +1309,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single E-Max Porcelain Crown",
         "brand": "Swiss Ivoclar Vivadent IPS e.max (450–500 MPa)",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-1.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "included": [
           "1x Authentic Swiss Ivoclar IPS e.max Lithium Disilicate Crown",
           "3D Digital Intraoral Scan & CAD/CAM Precision Milling",
@@ -1328,14 +1328,14 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "10-Unit Anterior Smile Makeover (E-Max)",
         "brand": "Swiss Ivoclar IPS e.max Press",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-2.jpg",
+        "img": "/packages/pkg-emax.webp",
         "popular": true,
         "included": [
           "10x High-Translucency E-Max Crowns/Veneers (Upper Smile Zone)",
           "Bespoke 3D Digital Smile Design (DSD) & Facial Harmony Analysis",
           "Laser gum contouring & smile symmetry adjustment (if needed)",
           "Custom temporary crowns for complete comfort during manufacturing",
-          "4-Star Hotel Stay with Breakfast in Istanbul (6 Nights)",
+          "4-Star Hotel Stay with Breakfast in Antalya (6 Nights)",
           "VIP Mercedes Chauffeur Transfers (Airport - Hotel - Clinic)",
           "10-Year warranty against crown fracture & porcelain chipping"
         ],
@@ -1349,13 +1349,13 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Mouth E-Max Makeover",
         "brand": "Ivoclar IPS e.max CAD/Press",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-3.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "included": [
           "20x High-Translucency E-Max Crowns (10 Upper + 10 Lower Arches)",
           "Comprehensive 3D CT Diagnostic Scan & Bite Balance Simulation",
           "Full aesthetic & functional bite balancing (gnathological alignment)",
           "Complete temporary smile set fitted on Day 1",
-          "5-Star Luxury Hotel Accommodation in Istanbul (6 Nights)",
+          "5-Star Luxury Hotel Accommodation in Antalya (6 Nights)",
           "Private VIP Mercedes Airport & Clinic Chauffeur",
           "Comprehensive post-op care pack & custom night guard protection"
         ],
@@ -1369,7 +1369,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Zirconium Crown (Amman-Girrbach)",
         "brand": "Amman-Girrbach / Vita (1200+ MPa)",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-1.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "1x Genuine German Monolithic Zirconia Crown (1200+ MPa)",
           "3D Digital Intraoral Scan & CAD/CAM Precision Milling",
@@ -1388,7 +1388,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Premium Zirconia Hollywood Smile",
         "brand": "Monolithic Multi-Layer 3D Pro Zirconia",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-3.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "20x High-Translucency Monolithic Zirconia Crowns (10 Upper + 10 Lower Arches)",
           "3D Digital Facial Aesthetics & golden ratio smile planning",
@@ -1408,7 +1408,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Combination Makeover (E-Max Front + Zirconia Back)",
         "brand": "Swiss E-Max + German Zirconia",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Porcelain-Crown-Package-2.jpg",
+        "img": "/treatments/accordion/Porcelain-Crown-Package-2.jpg",
         "included": [
           "8-10 Anterior E-Max Crowns for ultimate aesthetics + Posterior Zirconia for bite strength",
           "Precision CAD/CAM digital margin adaptation",
@@ -1435,20 +1435,20 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "q": "Will my treatment plan or price change when I arrive at the clinic?",
         "a": [
           "No. The personalized treatment plan and cost quotation provided during your online consultation (based on your dental photos and panoramic X-ray) are fixed and binding.",
-          "Upon your arrival in Istanbul, we perform a complimentary 3D CBCT scan. Unless an unforeseen internal dental infection or severe root pathology requiring endodontic intervention is discovered, your package price remains 100% transparent with zero hidden charges."
+          "Upon your arrival in Antalya, we perform a complimentary 3D CBCT scan. Unless an unforeseen internal dental infection or severe root pathology requiring endodontic intervention is discovered, your package price remains 100% transparent with zero hidden charges."
         ]
       },
       {
         "q": "Do you assist with accommodation and hotel booking?",
         "a": [
-          "Yes. All of our multi-unit crown packages (10, 20, or 24 teeth) include complimentary 4-star or 5-star hotel accommodation with daily breakfast located in safe, upscale central districts of Istanbul near our clinic.",
+          "Yes. All of our multi-unit crown packages (10, 20, or 24 teeth) include complimentary 4-star or 5-star hotel accommodation with daily breakfast located in safe, upscale central districts of Antalya near our clinic.",
           "Our dedicated international patient team handles your hotel reservations, check-in, and daily VIP Mercedes clinic transfers for a completely stress-free experience."
         ]
       },
       {
         "q": "Is it safe to travel to Turkey for dental treatments?",
         "a": [
-          "Yes, absolutely. Istanbul is one of the world's most reputable and advanced centers for medical and dental tourism, welcoming over 500,000 international dental patients every year.",
+          "Yes, absolutely. Antalya is one of the world's most reputable and advanced centers for medical and dental tourism, welcoming over 500,000 international dental patients every year.",
           "Our clinic operates under strict Ministry of Health regulations, employing hospital-grade HEPA filtration, class-B autoclave sterilization, and CE/FDA-certified German and Swiss biomaterials."
         ]
       },
@@ -1483,7 +1483,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
       {
         "q": "Are airport transfers and hotel stays really included in the packages?",
         "a": [
-          "Yes! All smile makeover packages include complimentary private VIP Mercedes Vito transfers between Istanbul Airport (IST / SAW), your hotel, and the clinic for all appointments.",
+          "Yes! All smile makeover packages include complimentary private VIP Mercedes Vito transfers between Antalya Airport (IST / SAW), your hotel, and the clinic for all appointments.",
           "Your personal driver greets you at the arrival gate, ensuring seamless transportation throughout your entire stay."
         ]
       },
@@ -1548,9 +1548,9 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "priceLabel": "Price (All-Inclusive):",
     "getQuoteBtn": "Get Your Free Quote",
     "faqTitle": "Frequently Asked Questions About E-Max Crowns & Veneers",
-    "faqSubtitle": "Explore answers to the most common clinical and travel questions regarding E-Max crowns, smile makeovers, procedure timelines, and international warranties in Istanbul.",
-    "stayDuration": "<strong>6 to 7 days in Istanbul.</strong> During this single trip, 3D intraoral digital scanning, minimally invasive tooth preparation, CAD/CAM milling of IPS e.max ingots, and final aesthetic glaze cementation are completed with precision.",
-    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Istanbul once. Your complete dental crown makeover (from 1 tooth to full mouth 20-28 crowns) is designed and placed during this single visit.",
+    "faqSubtitle": "Explore answers to the most common clinical and travel questions regarding E-Max crowns, smile makeovers, procedure timelines, and international warranties in Antalya.",
+    "stayDuration": "<strong>6 to 7 days in Antalya.</strong> During this single trip, 3D intraoral digital scanning, minimally invasive tooth preparation, CAD/CAM milling of IPS e.max ingots, and final aesthetic glaze cementation are completed with precision.",
+    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Antalya once. Your complete dental crown makeover (from 1 tooth to full mouth 20-28 crowns) is designed and placed during this single visit.",
     "recoveryTime": "<strong>2 to 3 days adaptation.</strong> There is virtually no surgical recovery time. Any mild sensitivity subsides within 48-72 hours, allowing you to comfortably enjoy eating and normal activities immediately.",
     "priceEstimate": "<strong>E-Max Dental Crown prices start at £220 / €260 / $285 per tooth.</strong> All-inclusive multi-crown packages (10, 20 or 24 crowns) include digital smile design, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
@@ -1558,7 +1558,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single E-Max Porcelain Crown",
         "brand": "Swiss Ivoclar Vivadent IPS e.max (450–500 MPa)",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-1.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "included": [
           "1x Authentic Swiss Ivoclar IPS e.max Lithium Disilicate Crown",
           "3D Digital Intraoral Scan & CAD/CAM Precision Milling",
@@ -1577,14 +1577,14 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "10-Unit Anterior Smile Makeover (E-Max)",
         "brand": "Swiss Ivoclar IPS e.max Press",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-2.jpg",
+        "img": "/packages/pkg-emax.webp",
         "popular": true,
         "included": [
           "10x High-Translucency E-Max Crowns/Veneers (Upper Smile Zone)",
           "Bespoke 3D Digital Smile Design (DSD) & Facial Harmony Analysis",
           "Laser gum contouring & smile symmetry adjustment (if needed)",
           "Custom temporary crowns for complete comfort during manufacturing",
-          "4-Star Hotel Stay with Breakfast in Istanbul (6 Nights)",
+          "4-Star Hotel Stay with Breakfast in Antalya (6 Nights)",
           "VIP Mercedes Chauffeur Transfers (Airport - Hotel - Clinic)",
           "10-Year warranty against crown fracture & porcelain chipping"
         ],
@@ -1598,13 +1598,13 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Mouth E-Max Makeover",
         "brand": "Ivoclar IPS e.max CAD/Press",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-3.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "included": [
           "20x High-Translucency E-Max Crowns (10 Upper + 10 Lower Arches)",
           "Comprehensive 3D CT Diagnostic Scan & Bite Balance Simulation",
           "Full aesthetic & functional bite balancing (gnathological alignment)",
           "Complete temporary smile set fitted on Day 1",
-          "5-Star Luxury Hotel Accommodation in Istanbul (6 Nights)",
+          "5-Star Luxury Hotel Accommodation in Antalya (6 Nights)",
           "Private VIP Mercedes Airport & Clinic Chauffeur",
           "Comprehensive post-op care pack & custom night guard protection"
         ],
@@ -1618,7 +1618,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Zirconium Crown (Amman-Girrbach)",
         "brand": "Amman-Girrbach / Vita (1200+ MPa)",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-1.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "1x Genuine German Monolithic Zirconia Crown (1200+ MPa)",
           "3D Digital Intraoral Scan & CAD/CAM Precision Milling",
@@ -1637,7 +1637,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Premium Zirconia Hollywood Smile",
         "brand": "Monolithic Multi-Layer 3D Pro Zirconia",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-3.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "20x High-Translucency Monolithic Zirconia Crowns (10 Upper + 10 Lower Arches)",
           "3D Digital Facial Aesthetics & golden ratio smile planning",
@@ -1657,7 +1657,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Combination Makeover (E-Max Front + Zirconia Back)",
         "brand": "Swiss E-Max + German Zirconia",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Porcelain-Crown-Package-2.jpg",
+        "img": "/treatments/accordion/Porcelain-Crown-Package-2.jpg",
         "included": [
           "8-10 Anterior E-Max Crowns for ultimate aesthetics + Posterior Zirconia for bite strength",
           "Precision CAD/CAM digital margin adaptation",
@@ -1684,20 +1684,20 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "q": "Will my treatment plan or price change when I arrive at the clinic?",
         "a": [
           "No. The personalized treatment plan and cost quotation provided during your online consultation (based on your dental photos and panoramic X-ray) are fixed and binding.",
-          "Upon your arrival in Istanbul, we perform a complimentary 3D CBCT scan. Unless an unforeseen internal dental infection or severe root pathology requiring endodontic intervention is discovered, your package price remains 100% transparent with zero hidden charges."
+          "Upon your arrival in Antalya, we perform a complimentary 3D CBCT scan. Unless an unforeseen internal dental infection or severe root pathology requiring endodontic intervention is discovered, your package price remains 100% transparent with zero hidden charges."
         ]
       },
       {
         "q": "Do you assist with accommodation and hotel booking?",
         "a": [
-          "Yes. All of our multi-unit crown packages (10, 20, or 24 teeth) include complimentary 4-star or 5-star hotel accommodation with daily breakfast located in safe, upscale central districts of Istanbul near our clinic.",
+          "Yes. All of our multi-unit crown packages (10, 20, or 24 teeth) include complimentary 4-star or 5-star hotel accommodation with daily breakfast located in safe, upscale central districts of Antalya near our clinic.",
           "Our dedicated international patient team handles your hotel reservations, check-in, and daily VIP Mercedes clinic transfers for a completely stress-free experience."
         ]
       },
       {
         "q": "Is it safe to travel to Turkey for dental treatments?",
         "a": [
-          "Yes, absolutely. Istanbul is one of the world's most reputable and advanced centers for medical and dental tourism, welcoming over 500,000 international dental patients every year.",
+          "Yes, absolutely. Antalya is one of the world's most reputable and advanced centers for medical and dental tourism, welcoming over 500,000 international dental patients every year.",
           "Our clinic operates under strict Ministry of Health regulations, employing hospital-grade HEPA filtration, class-B autoclave sterilization, and CE/FDA-certified German and Swiss biomaterials."
         ]
       },
@@ -1732,7 +1732,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
       {
         "q": "Are airport transfers and hotel stays really included in the packages?",
         "a": [
-          "Yes! All smile makeover packages include complimentary private VIP Mercedes Vito transfers between Istanbul Airport (IST / SAW), your hotel, and the clinic for all appointments.",
+          "Yes! All smile makeover packages include complimentary private VIP Mercedes Vito transfers between Antalya Airport (IST / SAW), your hotel, and the clinic for all appointments.",
           "Your personal driver greets you at the arrival gate, ensuring seamless transportation throughout your entire stay."
         ]
       },

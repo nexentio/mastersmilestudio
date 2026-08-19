@@ -200,7 +200,7 @@ const FORM_I18N = {
     heading: 'Создадим ваш идеальный план лечения и преображения улыбки',
     extraTitle: 'Начните преображение с бесплатной консультации без каких-либо обязательств.',
     description:
-      'Заполните форму всего за одну минуту, и наш международный координатор лично свяжется с вами, чтобы бесплатно подготовить индивидуальный план лечения, расчет стоимости и план поездки. Мы сделаем вашу поездку в Стамбул максимально комфортной, безопасной и результативной.',
+      'Заполните форму всего за одну минуту, и наш международный координатор лично свяжется с вами, чтобы бесплатно подготовить индивидуальный план лечения, расчет стоимости и план поездки. Мы сделаем вашу поездку в Анталью максимально комфортной, безопасной и результативной.',
     nameLabel: 'Ваше Имя *',
     namePlaceholder: 'Иван Иванов',
     countryLabel: 'Ваша Страна *',
@@ -261,8 +261,8 @@ export default function ContactSection() {
           <div className={styles.imCol}>
             <div className={styles.im}>
               <Image
-                src="/form1.webp"
-                alt="Master Smile Studio Istanbul VIP Consultation"
+                src="/mss-afterpics-patients.png"
+                alt="Master Smile Studio Antalya VIP Consultation"
                 fill
                 sizes="(max-width: 768px) 100vw, 580px"
                 className={styles.formImg}

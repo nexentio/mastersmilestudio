@@ -9,43 +9,43 @@ import styles from './DentalCrownsHeroBanner.module.css';
 const HERO_I18N = {
   en: {
     tag: 'TREATMENTS',
-    title: 'Dental Crowns in Istanbul, Turkey',
+    title: 'Dental Crowns in Antalya, Turkey',
     subtitle: 'Restore strength, function, and aesthetics with custom zirconia and E-Max dental crowns.',
     btnText: 'Contact',
   },
   tr: {
     tag: 'TEDAVİLERİMİZ',
-    title: 'İstanbul Diş Kaplama & Kron Tedavisi | Zirkonyum ve E-Max Kronlar',
+    title: 'Antalya Diş Kaplama & Kron Tedavisi | Zirkonyum ve E-Max Kronlar',
     subtitle: 'Özel zirkonyum ve E-Max diş kronlarıyla sağlamlığı, fonksiyonu ve estetiği geri kazanın.',
     btnText: 'İletişime Geç',
   },
   de: {
     tag: 'BEHANDLUNGEN',
-    title: 'Zahnkronen in Istanbul, Türkei | Zirkon- & E-Max Kronen',
+    title: 'Zahnkronen in Antalya, Türkei | Zirkon- & E-Max Kronen',
     subtitle: 'Stellen Sie Stärke, Funktion und Ästhetik mit maßgefertigten Zahnkronen wieder her.',
     btnText: 'Kontakt',
   },
   pl: {
     tag: 'ZABIEGI',
-    title: 'Korony Zębowe w Stambule, Turcja | Korony Cyrkonowe i E-Max',
+    title: 'Korony Zębowe w Antalyi, Turcja | Korony Cyrkonowe i E-Max',
     subtitle: 'Odbuduj siłę, funkcję i estetykę zębów dzięki precyzyjnym koronom cyrkonowym.',
     btnText: 'Kontakt',
   },
   pt: {
     tag: 'TRATAMENTOS',
-    title: 'Coroas Dentárias em Istambul, Turquia | Zircónia e E-Max',
+    title: 'Coroas Dentárias em Antalya, Turquia | Zircónia e E-Max',
     subtitle: 'Restaure a força, a função e a estética com coroas dentárias personalizadas.',
     btnText: 'Contato',
   },
   es: {
     tag: 'TRATAMIENTOS',
-    title: 'Coronas Dentales en Estambul, Turquía | Zirconio y E-Max',
+    title: 'Coronas Dentales en Antalya, Turquía | Zirconio y E-Max',
     subtitle: 'Restaure la resistencia, función y estética dental con coronas de alta precisión.',
     btnText: 'Contacto',
   },
   ru: {
     tag: 'ЛЕЧЕНИЕ',
-    title: 'Зубные коронки в Стамбуле | Циркониевые и E-Max коронки',
+    title: 'Зубные коронки в Анталье | Циркониевые и E-Max коронки',
     subtitle: 'Восстановите прочность, функцию и эстетику зубов с помощью высокоточных коронок.',
     btnText: 'Записаться',
   },
@@ -60,10 +60,9 @@ export default function DentalCrownsHeroBanner() {
       <Image
         src="/images/treatments/crowns.jpg"
         alt={d.title}
-        width={1600}
-        height={800}
+        fill
         priority
-        fetchPriority="high"
+        sizes="100vw"
         className={styles.back1}
       />
       <div className={styles.content}>

@@ -56,7 +56,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Closed Internal Sinus Lift (1 Side)",
         "brand": "Geistlich Bio-Oss (Swiss Made)",
         "duration": "45 – 60 Minutes (Single Visit)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-package-10.jpg",
+        "img": "/packages/pkg-4.webp",
         "popular": true,
         "included": [
           "Internal crestal sinus elevation (osteotome technique)",
@@ -77,7 +77,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Open Lateral Window Sinus Lift (1 Side)",
         "brand": "Geistlich Bio-Oss + Bio-Gide Membrane",
         "duration": "60 – 90 Minutes (Single Visit)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-implant-package-2.jpg",
+        "img": "/packages/pkg-5.webp",
         "included": [
           "Direct lateral window sinus membrane elevation",
           "2.0 cc Swiss Geistlich Bio-Oss granules for maximum vertical height",
@@ -97,7 +97,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Bilateral Open Sinus Lift (Both Sides)",
         "brand": "Geistlich Swiss Bio-Oss + Bio-Gide (Double)",
         "duration": "90 – 120 Minutes (Single Visit)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-implant-package-3.jpg",
+        "img": "/packages/pkg-6.webp",
         "included": [
           "Bilateral lateral sinus augmentation (left & right upper jaw)",
           "4.0 cc Swiss Bio-Oss bone matrix + 2x Bio-Gide membranes",
@@ -116,7 +116,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Sinus Lift + 2 Straumann Implants Package",
         "brand": "Straumann SLA + Geistlich Bio-Oss",
         "duration": "3+5 Working Days (2 Visits)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-1.jpg",
+        "img": "/packages/pkg-1.webp",
         "included": [
           "1x Lateral or Crestal Sinus Lift + Swiss Bio-Oss Graft",
           "2x Genuine Straumann SLA Swiss Titanium Implants",
@@ -135,7 +135,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Sinus Lift + 4 Nobel Implants Upper Arch",
         "brand": "Nobel Biocare CC + Geistlich Bone Graft",
         "duration": "3+5 Working Days (2 Visits)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-2.jpg",
+        "img": "/packages/pkg-2.webp",
         "included": [
           "Bilateral Sinus Lift + Full Bone Reconstruction",
           "4x NobelParallel CC Grade 4 Titanium Implants",
@@ -154,7 +154,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Full Upper Arch Reconstruction & 6 Implants",
         "brand": "Straumann / Nobel + Complete Bone Grafting",
         "duration": "3+5 Working Days (2 Visits)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-3.jpg",
+        "img": "/packages/pkg-3.webp",
         "included": [
           "Comprehensive Bilateral Sinus Lift & Ridge Augmentation",
           "6x High-torque Titanium Implants for 14-tooth upper arch",
@@ -185,14 +185,14 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
       {
         "q": "Will you help me with accommodation?",
         "a": [
-          "Yes, of course. Our patients regularly travel from abroad, so we make sure you feel supported not only with your dental treatment but also with your stay in Istanbul. We can recommend trusted hotels close to our clinic, and if you prefer, we can also help arrange your booking.",
+          "Yes, of course. Our patients regularly travel from abroad, so we make sure you feel supported not only with your dental treatment but also with your stay in Antalya. We can recommend trusted hotels close to our clinic, and if you prefer, we can also help arrange your booking.",
           "Our goal is to make your trip as smooth and stress-free as possible, so you can focus on your treatment and enjoy your time in the city. We’ll gladly assist you with accommodation and make sure you have comfortable options during your visit."
         ]
       },
       {
         "q": "Is it safe to travel to Turkey?",
         "a": [
-          "Yes! Turkey is a very popular destination for international visitors and millions of tourists travel here safely every year. Cities like Istanbul are not only cultural and historical centers but also well-prepared to welcome patients from abroad with modern clinics, hotels, and transport services and many world-renowned touristic attractions.",
+          "Yes! Turkey is a very popular destination for international visitors and millions of tourists travel here safely every year. Cities like Antalya are not only cultural and historical centers but also well-prepared to welcome patients from abroad with modern clinics, hotels, and transport services and many world-renowned touristic attractions.",
           "Like in any big city, it’s always wise to take normal travel precautions — such as keeping your valuables safe and being aware of your surroundings. Our clinic also helps arrange trusted transportation and accommodation options to make sure you feel comfortable and secure during your stay. With the extra support we provide, your dental trip can also be a smooth and worry-free experience."
         ]
       },
@@ -359,7 +359,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Kapalı Sinüs Lifting (Tek Taraf)",
         "brand": "Geistlich Bio-Oss (İsviçre Üretimi)",
         "duration": "45 – 60 Dakika (Tek Seans)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-package-10.jpg",
+        "img": "/packages/pkg-4.webp",
         "popular": true,
         "included": [
           "Kret tepesinden osteotom yardımıyla kapalı sinüs yükseltme",
@@ -380,7 +380,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Açık Sinüs Lifting (Lateral Pencere - Tek Taraf)",
         "brand": "Geistlich Bio-Oss + Bio-Gide Membran",
         "duration": "60 – 90 Dakika (Tek Seans)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-implant-package-2.jpg",
+        "img": "/packages/pkg-5.webp",
         "included": [
           "Yanal pencere yöntemiyle doğrudan sinüs zarı yükseltme",
           "2.0 cc İsviçre Geistlich Bio-Oss granülleri ile maksimum dikey kemik kazanımı",
@@ -400,7 +400,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Çift Taraflı Açık Sinüs Lifting (Bilateral)",
         "brand": "Geistlich İsviçre Bio-Oss + Bio-Gide (Çift)",
         "duration": "90 – 120 Dakika (Tek Seans)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-implant-package-3.jpg",
+        "img": "/packages/pkg-6.webp",
         "included": [
           "Sağ ve sol üst çene sinüslerinin aynı anda kemiklendirilmesi",
           "4.0 cc İsviçre Bio-Oss kemik grefti + 2 adet Bio-Gide membran",
@@ -419,7 +419,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Sinüs Lifting + 2 Straumann İmplant Paketi",
         "brand": "Straumann SLA + Geistlich Bio-Oss",
         "duration": "3+5 İş Günü (2 Ziyaret)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-1.jpg",
+        "img": "/packages/pkg-1.webp",
         "included": [
           "1 Adet Açık/Kapalı Sinüs Lifting + İsviçre Bio-Oss Kemik Tozu",
           "2 Adet Orijinal Straumann SLA İsviçre Titanyum İmplant",
@@ -438,7 +438,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Sinüs Lifting + 4 Nobel İmplant Üst Çene",
         "brand": "Nobel Biocare CC + Geistlich Kemik Grefti",
         "duration": "3+5 İş Günü (2 Ziyaret)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-2.jpg",
+        "img": "/packages/pkg-2.webp",
         "included": [
           "Çift Taraflı Sinüs Lifting ve Tam Kemik Rekonstrüksiyonu",
           "4 Adet NobelParallel CC Saf Titanyum İmplant",
@@ -457,7 +457,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Tam Üst Çene Kemik Yapımı & 6 İmplant Paketi",
         "brand": "Straumann / Nobel + Kapsamlı Kemik Nakli",
         "duration": "3+5 İş Günü (2 Ziyaret)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-3.jpg",
+        "img": "/packages/pkg-3.webp",
         "included": [
           "Kapsamlı Bilateral Sinüs Lifting ve Çene Kemiği Genişletme",
           "14 dişlik tam ark desteği için 6 adet Titanyum İmplant",
@@ -488,14 +488,14 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "q": "Konaklama konusunda yardımcı oluyor musunuz?",
         "a": [
           "Evet, kesinlikle. Yurtdışından ve şehir dışından gelen hastalarımızın konforu için kliniğimize yakın 4 ve 5 yıldızlı anlaşmalı otellerimizde konaklama rezervasyonlarınızı organize ediyoruz.",
-          "Amacımız İstanbul seyahatinizi tamamen stressiz hale getirmek ve sadece yeni gülüşünüze odaklanmanızı sağlamaktır."
+          "Amacımız Antalya seyahatinizi tamamen stressiz hale getirmek ve sadece yeni gülüşünüze odaklanmanızı sağlamaktır."
         ]
       },
       {
         "q": "Türkiye’ye seyahat etmek güvenli mi?",
         "a": [
           "Evet! Türkiye her yıl milyonlarca uluslararası ziyaretçiyi ve sağlık turistini ağırlayan güvenli bir ülkedir.",
-          "İstanbul dünya standartlarında modern kliniklere, otellere ve VIP transfer hizmetlerine ev sahipliği yapmaktadır. Kliniğimiz tüm transfer ve rehberlik süreçlerinizde yanınızdadır."
+          "Antalya dünya standartlarında modern kliniklere, otellere ve VIP transfer hizmetlerine ev sahipliği yapmaktadır. Kliniğimiz tüm transfer ve rehberlik süreçlerinizde yanınızdadır."
         ]
       },
       {
@@ -627,7 +627,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Zamknięty Sinus Lift (Metoda Wewnętrzna - 1 Strona)",
         "brand": "Geistlich Bio-Oss (Made in Switzerland)",
         "duration": "45 – 60 Minut (1 Wizyta)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-package-10.jpg",
+        "img": "/packages/pkg-4.webp",
         "popular": true,
         "included": [
           "Wewnętrzne uniesienie błony śluzowej zatoki metodą osteotomową",
@@ -648,7 +648,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Otwarty Sinus Lift (Okno Boczne - 1 Strona)",
         "brand": "Geistlich Bio-Oss + Membrana Kolagenowa Bio-Gide",
         "duration": "60 – 90 Minut (1 Wizyta)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-implant-package-2.jpg",
+        "img": "/packages/pkg-5.webp",
         "included": [
           "Bezpośrednie uniesienie dna zatoki szczękowej z bocznego okna kostnego",
           "2.0 cc Szwajcarskiego biomateriału Geistlich Bio-Oss dla maksymalnej wysokości pionowej",
@@ -668,7 +668,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Obustronny Otwarty Sinus Lift (Bilateralny)",
         "brand": "Geistlich Swiss Bio-Oss + Bio-Gide (Pakiet Podwójny)",
         "duration": "90 – 120 Minut (1 Wizyta)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-implant-package-3.jpg",
+        "img": "/packages/pkg-6.webp",
         "included": [
           "Jednoczesna obustronna augmentacja zatok szczękowych (prawa i lewa strona)",
           "4.0 cc Szwajcarskiego materiału Bio-Oss + 2 szt. barierowych membran kolagenowych Bio-Gide",
@@ -687,14 +687,14 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Pakiet Sinus Lift + 2 Implanty Straumann",
         "brand": "Straumann SLA + Szwajcarski Geistlich Bio-Oss",
         "duration": "3+5 Dni Roboczych (2 Wizyty)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-1.jpg",
+        "img": "/packages/pkg-1.webp",
         "included": [
           "1x Sinus Lift (otwarty lub zamknięty) + Szwajcarski przeszczep Bio-Oss",
           "2x Oryginalne tytanowe implanty szwajcarskie Straumann SLA",
           "2x Monolityczne niemieckie korony cyrkonowe lub Ivoclar E-Max",
           "Tomografia 3D CBCT, szablon chirurgiczny i znieczulenie",
           "Dożywotni Międzynarodowy Paszport Gwarancyjny Straumann",
-          "Transfery lotniskowe VIP + Hotel w centrum Stambułu"
+          "Transfery lotniskowe VIP + Hotel w centrum Antalyi"
         ],
         "price": {
           "USD": "$1,950",
@@ -706,7 +706,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Pakiet Sinus Lift + 4 Implanty Nobel Biocare",
         "brand": "Nobel Biocare CC + Biomateriał Geistlich",
         "duration": "3+5 Dni Roboczych (2 Wizyty)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-2.jpg",
+        "img": "/packages/pkg-2.webp",
         "included": [
           "Obustronny Sinus Lift + Pełna rekonstrukcja wyrostka zębodołowego",
           "4x Implanty tytanowe klasy 4 NobelParallel CC",
@@ -725,7 +725,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Pełna Rekonstrukcja Szczęki & 6 Implantów",
         "brand": "Straumann / Nobel + Pełna Augmentacja Kości",
         "duration": "3+5 Dni Roboczych (2 Wizyty)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-3.jpg",
+        "img": "/packages/pkg-3.webp",
         "included": [
           "Kompleksowy obustronny Sinus Lift i poszerzenie wyrostka zębodołowego",
           "6x Wysokomomentowych implantów tytanowych dla pełnego łuku 14 zębów",
@@ -756,14 +756,14 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
       {
         "q": "Czy pomagacie w organizacji zakwaterowania?",
         "a": [
-          "Tak, oczywiście. Nasi pacjenci regularnie przylatują z Polski i całej Europy, dlatego dbamy o pełen komfort nie tylko podczas wizyt w gabinecie, ale także w trakcie całego pobytu w Stambule. Polecamy i rezerwujemy sprawdzone, komfortowe hotele 4- i 5-gwiazdkowe położone blisko naszej kliniki.",
-          "Naszym celem jest zapewnienie Państwu bezstresowej podróży, aby mogli Państwo skupić się na metamorfozie uśmiechu i cieszyć się urokami Stambułu."
+          "Tak, oczywiście. Nasi pacjenci regularnie przylatują z Polski i całej Europy, dlatego dbamy o pełen komfort nie tylko podczas wizyt w gabinecie, ale także w trakcie całego pobytu w Antalyi. Polecamy i rezerwujemy sprawdzone, komfortowe hotele 4- i 5-gwiazdkowe położone blisko naszej kliniki.",
+          "Naszym celem jest zapewnienie Państwu bezstresowej podróży, aby mogli Państwo skupić się na metamorfozie uśmiechu i cieszyć się urokami Antalyi."
         ]
       },
       {
         "q": "Czy podróż do Turcji na leczenie stomatologiczne jest bezpieczna?",
         "a": [
-          "Tak! Turcja jest jednym z najpopularniejszych i najbezpieczniejszych kierunków turystyki medycznej na świecie, goszczącym miliony pacjentów rocznie. Stambuł oferuje ultra-nowoczesne kliniki, luksusowe hotele i wysokie standardy medyczne.",
+          "Tak! Turcja jest jednym z najpopularniejszych i najbezpieczniejszych kierunków turystyki medycznej na świecie, goszczącym miliony pacjentów rocznie. Antalya oferuje ultra-nowoczesne kliniki, luksusowe hotele i wysokie standardy medyczne.",
           "Zapewniamy prywatne transfery VIP z lotniska do hotelu i kliniki oraz dedykowaną opiekę koordynatora, co gwarantuje pełne poczucie bezpieczeństwa i komfortu od momentu lądowania."
         ]
       },
@@ -799,7 +799,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
       {
         "q": "Czy Wasze pakiety zawierają hotel i transfery VIP?",
         "a": [
-          "Tak, nasze pakiety leczenia implantologicznego i pełnej rekonstrukcji obejmują prywatne transfery VIP Mercedes (lotnisko-hotel-klinika) oraz pobyt ze śniadaniem w partnerskich hotelach 4- i 5-gwiazdkowych w centrum Stambułu."
+          "Tak, nasze pakiety leczenia implantologicznego i pełnej rekonstrukcji obejmują prywatne transfery VIP Mercedes (lotnisko-hotel-klinika) oraz pobyt ze śniadaniem w partnerskich hotelach 4- i 5-gwiazdkowych w centrum Antalyi."
         ]
       },
       {
@@ -903,7 +903,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Geschlossener interner Sinuslift (1 Seite)",
         "brand": "Geistlich Bio-Oss (Schweizer Qualität)",
         "duration": "45 – 60 Minuten (1 Sitzung)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-package-10.jpg",
+        "img": "/packages/pkg-4.webp",
         "popular": true,
         "included": [
           "Interner krestaler Sinuslift mit Osteotom-Präzisionstechnik",
@@ -924,7 +924,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Offener Sinuslift (Laterales Fenster - 1 Seite)",
         "brand": "Geistlich Bio-Oss + Bio-Gide Kollagenmembran",
         "duration": "60 – 90 Minuten (1 Sitzung)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-implant-package-2.jpg",
+        "img": "/packages/pkg-5.webp",
         "included": [
           "Direkte Anhebung der Sinusmembran über laterales Knochenfenster",
           "2.0 cc Geistlich Bio-Oss Granulat für maximale vertikale Knochenhöhe",
@@ -944,7 +944,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Beidseitiger offener Sinuslift (Bilateral)",
         "brand": "Geistlich Swiss Bio-Oss + Bio-Gide (Doppelset)",
         "duration": "90 – 120 Minuten (1 Sitzung)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-implant-package-3.jpg",
+        "img": "/packages/pkg-6.webp",
         "included": [
           "Gleichzeitiger beidseitiger Sinuslift im rechten und linken Oberkiefer",
           "4.0 cc Schweizer Bio-Oss Knochenmatrix + 2x Bio-Gide Membranen",
@@ -963,7 +963,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Sinuslift + 2 Straumann Implantate Paket",
         "brand": "Straumann SLA + Geistlich Bio-Oss",
         "duration": "3+5 Werktage (2 Besuche)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-1.jpg",
+        "img": "/packages/pkg-1.webp",
         "included": [
           "1x Sinuslift (offen oder geschlossen) + Schweizer Bio-Oss Knochenaufbau",
           "2x Original Straumann SLA Schweizer Titanimplantate",
@@ -982,7 +982,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Sinuslift + 4 Nobel Biocare Oberkiefer",
         "brand": "Nobel Biocare CC + Geistlich Knochentransplantat",
         "duration": "3+5 Werktage (2 Besuche)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-2.jpg",
+        "img": "/packages/pkg-2.webp",
         "included": [
           "Bilateraler Sinuslift & vollständige Knochenrekonstruktion",
           "4x NobelParallel CC Grad 4 Titanimplantate",
@@ -1001,7 +1001,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Vollständige Oberkiefer-Rekonstruktion & 6 Implantate",
         "brand": "Straumann / Nobel + Kompletter Knochenaufbau",
         "duration": "3+5 Werktage (2 Besuche)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-3.jpg",
+        "img": "/packages/pkg-3.webp",
         "included": [
           "Umfassender beidseitiger Sinuslift & Kieferkammverbreiterung",
           "6x High-Torque Titanimplantate für vollen 14-Zahn Oberkieferbogen",
@@ -1029,7 +1029,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         ]
       },
       {
-        "q": "Helfen Sie bei der Organisation der Unterkunft in Istanbul?",
+        "q": "Helfen Sie bei der Organisation der Unterkunft in Antalya?",
         "a": [
           "Ja, selbstverständlich. Wir organisieren für unsere internationalen Patienten den Aufenthalt in geprüften 4- und 5-Sterne-Partnerhotels in direkter Nähe unserer Klinik inklusive Frühstück und privatem VIP-Shuttleservice.",
           "Unser Ziel ist ein rundum stressfreier Aufenthalt, damit Sie sich voll auf Ihr neues Lächeln konzentrieren können."
@@ -1038,7 +1038,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
       {
         "q": "Ist eine Zahnbehandlungsreise in die Türkei sicher?",
         "a": [
-          "Ja! Die Türkei ist weltweit eines der führenden Länder im Medizintourismus mit strengen europäischen Hygienestandards. Istanbul empfängt jährlich Millionen internationale Gäste sicher und gastfreundlich.",
+          "Ja! Die Türkei ist weltweit eines der führenden Länder im Medizintourismus mit strengen europäischen Hygienestandards. Antalya empfängt jährlich Millionen internationale Gäste sicher und gastfreundlich.",
           "Mit unserem privaten VIP-Fahrservice vom Flughafen zur Klinik und deutschsprachiger Betreuung sind Sie zu jedem Zeitpunkt bestens geschützt und versorgt."
         ]
       },
@@ -1169,7 +1169,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Elevación de Seno Cerrada (Técnica Interna - 1 Lado)",
         "brand": "Geistlich Bio-Oss (Fabricación Suiza)",
         "duration": "45 – 60 Minutos (1 Sesión)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-package-10.jpg",
+        "img": "/packages/pkg-4.webp",
         "popular": true,
         "included": [
           "Elevación crestal atraumática con instrumental de osteotomo",
@@ -1190,7 +1190,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Elevación de Seno Abierta (Ventana Lateral - 1 Lado)",
         "brand": "Geistlich Bio-Oss + Membrana Bio-Gide",
         "duration": "60 – 90 Minutos (1 Sesión)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-implant-package-2.jpg",
+        "img": "/packages/pkg-5.webp",
         "included": [
           "Elevación directa de la membrana sinusal mediante ventana lateral",
           "2.0 cc Gránulos suizos Geistlich Bio-Oss para máxima ganancia vertical",
@@ -1210,7 +1210,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Elevación de Seno Bilateral (Ambos Lados)",
         "brand": "Geistlich Swiss Bio-Oss + Bio-Gide (Set Doble)",
         "duration": "90 – 120 Minutos (1 Sesión)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-implant-package-3.jpg",
+        "img": "/packages/pkg-6.webp",
         "included": [
           "Regeneración ósea bilateral simultánea en maxilar superior",
           "4.0 cc Matriz ósea suiza Bio-Oss + 2 membranas Bio-Gide",
@@ -1229,7 +1229,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Paquete Elevación de Seno + 2 Implantes Straumann",
         "brand": "Straumann SLA + Geistlich Bio-Oss Suizo",
         "duration": "3+5 Días Hábiles (2 Visitas)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-1.jpg",
+        "img": "/packages/pkg-1.webp",
         "included": [
           "1x Elevación de Seno + Injerto óseo suizo Bio-Oss",
           "2x Implantes de titanio suizo genuinos Straumann SLA",
@@ -1248,7 +1248,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Paquete Elevación de Seno + 4 Implantes Nobel Biocare",
         "brand": "Nobel Biocare CC + Injerto Geistlich",
         "duration": "3+5 Días Hábiles (2 Visitas)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-2.jpg",
+        "img": "/packages/pkg-2.webp",
         "included": [
           "Elevación bilateral de seno y reconstrucción ósea total",
           "4x Implantes de titanio grado 4 NobelParallel CC",
@@ -1267,7 +1267,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Reconstrucción Maxilar Completa & 6 Implantes",
         "brand": "Straumann / Nobel + Regeneración Ósea Total",
         "duration": "3+5 Días Hábiles (2 Visitas)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-3.jpg",
+        "img": "/packages/pkg-3.webp",
         "included": [
           "Elevación bilateral integral y ensanchamiento de cresta",
           "6x Implantes de alto torque para arco superior de 14 dientes",
@@ -1289,7 +1289,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "q": "¿Cambiará mi plan de tratamiento o el precio cuando llegue a la clínica?",
         "a": [
           "Excelente pregunta. En Master Smile Studio garantizamos transparencia absoluta sin costes ocultos ni sorpresas de última hora.",
-          "El presupuesto y plan que enviamos se basan minuciosamente en sus radiografías y fotografías. Al llegar a la clínica en Estambul, se confirma mediante una tomografía 3D antes de iniciar el procedimiento.",
+          "El presupuesto y plan que enviamos se basan minuciosamente en sus radiografías y fotografías. Al llegar a la clínica en Antalya, se confirma mediante una tomografía 3D antes de iniciar el procedimiento.",
           "Si excepcionalmente se detecta una necesidad anatómica no visible previamente (como elevación de seno o injerto), se le explica en detalle y nada se realiza sin su total consentimiento."
         ]
       },
@@ -1302,7 +1302,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
       {
         "q": "¿Es seguro viajar a Turquía para tratamientos dentales?",
         "a": [
-          "Sí, totalmente. Estambul es un destino líder a nivel mundial en turismo médico, con estándares hospitalarios de vanguardia y millones de pacientes satisfechos cada año."
+          "Sí, totalmente. Antalya es un destino líder a nivel mundial en turismo médico, con estándares hospitalarios de vanguardia y millones de pacientes satisfechos cada año."
         ]
       },
       {
@@ -1430,7 +1430,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Sinus Lift Fechado (Técnica Interna - 1 Lado)",
         "brand": "Geistlich Bio-Oss (Fabricação Suíça)",
         "duration": "45 – 60 Minutos (1 Sessão)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-package-10.jpg",
+        "img": "/packages/pkg-4.webp",
         "popular": true,
         "included": [
           "Elevação crestal do seio com técnica atraumática de osteótomo",
@@ -1451,7 +1451,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Sinus Lift Aberto (Janela Lateral - 1 Lado)",
         "brand": "Geistlich Bio-Oss + Membrana de Colagénio Bio-Gide",
         "duration": "60 – 90 Minutos (1 Sessão)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-implant-package-2.jpg",
+        "img": "/packages/pkg-5.webp",
         "included": [
           "Elevação direta da membrana sinusal por janela lateral",
           "2.0 cc Grânulos suíços Geistlich Bio-Oss para ganho vertical máximo",
@@ -1471,7 +1471,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Sinus Lift Aberto Bilateral (Ambos os Lados)",
         "brand": "Geistlich Swiss Bio-Oss + Bio-Gide (Conjunto Duplo)",
         "duration": "90 – 120 Minutos (1 Sessão)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-implant-package-3.jpg",
+        "img": "/packages/pkg-6.webp",
         "included": [
           "Regeneração óssea bilateral simultânea na maxila superior",
           "4.0 cc Matriz óssea suíça Bio-Oss + 2 membranas Bio-Gide",
@@ -1490,7 +1490,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Pacote Sinus Lift + 2 Implantes Straumann",
         "brand": "Straumann SLA + Enxerto Geistlich Bio-Oss",
         "duration": "3+5 Dias Úteis (2 Visitas)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-1.jpg",
+        "img": "/packages/pkg-1.webp",
         "included": [
           "1x Sinus Lift + Enxerto ósseo suíço Bio-Oss",
           "2x Implantes de titânio suíço genuínos Straumann SLA",
@@ -1509,7 +1509,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Pacote Sinus Lift + 4 Implantes Nobel Biocare",
         "brand": "Nobel Biocare CC + Enxerto Geistlich",
         "duration": "3+5 Dias Úteis (2 Visitas)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-2.jpg",
+        "img": "/packages/pkg-2.webp",
         "included": [
           "Sinus Lift bilateral e reconstrução óssea total",
           "4x Implantes de titânio grau 4 NobelParallel CC",
@@ -1528,7 +1528,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Reconstrução Maxilar Completa & 6 Implantes",
         "brand": "Straumann / Nobel + Regeneração Óssea Total",
         "duration": "3+5 Dias Úteis (2 Visitas)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-3.jpg",
+        "img": "/packages/pkg-3.webp",
         "included": [
           "Sinus Lift bilateral abrangente e aumento de crista alveolar",
           "6x Implantes de alto torque para arco superior de 14 dentes",
@@ -1550,7 +1550,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "q": "O meu plano de tratamento ou o preço apresentado podem mudar à chegada?",
         "a": [
           "Excelente questão. Na Master Smile Studio seguimos uma política de transparência absoluta, sem custos ocultos.",
-          "O plano e o valor enviados baseiam-se nas suas radiografias e fotografias. À chegada à nossa clínica em Istambul, confirmamos tudo através de uma tomografia 3D antes de qualquer procedimento.",
+          "O plano e o valor enviados baseiam-se nas suas radiografias e fotografias. À chegada à nossa clínica em Antalya, confirmamos tudo através de uma tomografia 3D antes de qualquer procedimento.",
           "Caso surja alguma necessidade cirúrgica adicional não visível anteriormente, tudo será detalhadamente explicado e decidido consigo antes de avançar."
         ]
       },
@@ -1599,7 +1599,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
       {
         "q": "Posso efetuar o pagamento do tratamento em prestações?",
         "a": [
-          "O pagamento pode ser faseado entre a primeira e a segunda visita a Istambul com total flexibilidade."
+          "O pagamento pode ser faseado entre a primeira e a segunda visita a Antalya com total flexibilidade."
         ]
       },
       {
@@ -1691,7 +1691,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Закрытый синус-лифтинг (Мягкая методика - 1 сторона)",
         "brand": "Geistlich Bio-Oss (Производство Швейцария)",
         "duration": "45 – 60 Минут (1 Визит)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-package-10.jpg",
+        "img": "/packages/pkg-4.webp",
         "popular": true,
         "included": [
           "Внутреннее поднятие дна гайморовой пазухи остеотомом",
@@ -1712,7 +1712,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Открытый синус-лифтинг (Латеральное окно - 1 сторона)",
         "brand": "Geistlich Bio-Oss + Мембрана Bio-Gide",
         "duration": "60 – 90 Минут (1 Визит)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-implant-package-2.jpg",
+        "img": "/packages/pkg-5.webp",
         "included": [
           "Прямой доступ и поднятие мембраны Шнайдера через боковое окно",
           "2.0 см³ Швейцарского костного трансплантата Geistlich Bio-Oss",
@@ -1732,7 +1732,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Двусторонний открытый синус-лифтинг (Обе стороны)",
         "brand": "Geistlich Swiss Bio-Oss + Bio-Gide (Двойной набор)",
         "duration": "90 – 120 Минут (1 Визит)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-implant-package-3.jpg",
+        "img": "/packages/pkg-6.webp",
         "included": [
           "Одновременная костная пластика пазух с правой и левой стороны",
           "4.0 см³ Швейцарского костного матрикса Bio-Oss + 2 мембраны Bio-Gide",
@@ -1751,7 +1751,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Синус-лифтинг + 2 Импланта Straumann",
         "brand": "Straumann SLA + Швейцарский Geistlich Bio-Oss",
         "duration": "3+5 Рабочих дней (2 Визита)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-1.jpg",
+        "img": "/packages/pkg-1.webp",
         "included": [
           "1x Синус-лифтинг + Швейцарская костная пластика Bio-Oss",
           "2x Оригинальных швейцарских титановых импланта Straumann SLA",
@@ -1770,7 +1770,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Синус-лифтинг + 4 Импланта Nobel Biocare",
         "brand": "Nobel Biocare CC + Костный трансплантат Geistlich",
         "duration": "3+5 Рабочих дней (2 Визита)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-2.jpg",
+        "img": "/packages/pkg-2.webp",
         "included": [
           "Двусторонний синус-лифтинг и полная костная реконструкция",
           "4x Титановых импланта 4 класса NobelParallel CC",
@@ -1789,7 +1789,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Полная реконструкция верхней челюсти & 6 имплантов",
         "brand": "Straumann / Nobel + Комплексная костная пластика",
         "duration": "3+5 Рабочих дней (2 Визита)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-3.jpg",
+        "img": "/packages/pkg-3.webp",
         "included": [
           "Комплексный двусторонний синус-лифтинг и расширение альвеолярного гребня",
           "6x Высокостабильных титановых имплантов для полной дуги из 14 зубов",
@@ -1811,7 +1811,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "q": "Может ли измениться план лечения или названная стоимость по моему приезду?",
         "a": [
           "Отличный вопрос. Мы гарантируем полную финансовую прозрачность без скрытых платежей и неожиданных доплат.",
-          "Ваш план и стоимость формируются на основе КТ-снимков и фотографий. По прибытии в Стамбул мы подтверждаем детали на очной 3D-томографии перед началом лечения.",
+          "Ваш план и стоимость формируются на основе КТ-снимков и фотографий. По прибытии в Анталью мы подтверждаем детали на очной 3D-томографии перед началом лечения.",
           "Если выявляются скрытые анатомические особенности (необходимость синус-лифтинга или наращивания кости), мы детально согласовываем все варианты с вами. Никаких действий без вашего согласия не проводится."
         ]
       },

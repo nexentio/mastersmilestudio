@@ -1,6 +1,89 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
+import styles from './BrandsSection.module.css';
+
+interface BrandLogo {
+  id: string;
+  name: string;
+  png: string;
+  width: number;
+  height: number;
+}
+
+const BRANDS: BrandLogo[] = [
+  {
+    id: 'straumann',
+    name: 'Straumann',
+    png: '/brands/straumann.png',
+    width: 3001,
+    height: 676,
+  },
+  {
+    id: 'nobel-biocare',
+    name: 'Nobel Biocare',
+    png: '/brands/nobel-biocare.png',
+    width: 2989,
+    height: 1297,
+  },
+  {
+    id: 'zimmer-biomet',
+    name: 'Zimmer Biomet',
+    png: '/brands/zimmer-biomet.png',
+    width: 3011,
+    height: 562,
+  },
+  {
+    id: 'dentsply-sirona',
+    name: 'Dentsply Sirona',
+    png: '/brands/dentsply-sirona.png',
+    width: 1261,
+    height: 554,
+  },
+  {
+    id: 'biohorizons',
+    name: 'BioHorizons',
+    png: '/brands/biohorizons.png',
+    width: 660,
+    height: 178,
+  },
+  {
+    id: 'mis-implants',
+    name: 'MIS Implants',
+    png: '/brands/mis-implants.png',
+    width: 564,
+    height: 319,
+  },
+  {
+    id: 'astra-tech',
+    name: 'Astra Tech',
+    png: '/brands/astra-tech.png',
+    width: 332,
+    height: 345,
+  },
+  {
+    id: 'neodent',
+    name: 'Neodent',
+    png: '/brands/neodent.png',
+    width: 678,
+    height: 204,
+  },
+  {
+    id: 'osstem',
+    name: 'Osstem Implant',
+    png: '/brands/osstem.png',
+    width: 810,
+    height: 298,
+  },
+  {
+    id: 'bicon',
+    name: 'Bicon Dental',
+    png: '/brands/bicon.png',
+    width: 1723,
+    height: 690,
+  },
+];
 
 export default function BrandsSection() {
   const t = useTranslations('brands');
@@ -13,204 +96,56 @@ export default function BrandsSection() {
     }
   };
 
-  const brands = [
-    {
-      name: 'Straumann',
-      subtitle: getSafeText('straumannSub', 'Swiss Precision Implants'),
-      icon: '✦',
-      origin: 'İsviçre / Swiss Made',
-    },
-    {
-      name: 'Nobel Biocare',
-      subtitle: getSafeText('nobelSub', 'Premium Implantology'),
-      icon: '✧',
-      origin: 'İsveç / Sweden',
-    },
-    {
-      name: 'Astra Tech',
-      subtitle: getSafeText('astraSub', 'Dentsply Sirona Group'),
-      icon: '✦',
-      origin: 'Dentsply Sirona',
-    },
-    {
-      name: 'Medentika',
-      subtitle: getSafeText('medentikaSub', 'Straumann Group Quality'),
-      icon: '✧',
-      origin: 'Straumann Group',
-    },
-    {
-      name: 'Bredent SKY',
-      subtitle: getSafeText('bredentSub', 'German Dental Innovation'),
-      icon: '✦',
-      origin: 'Almanya / Germany',
-    },
-  ];
-
   // Tripled array for seamless infinite marquee loop
-  const marqueeItems = [...brands, ...brands, ...brands];
+  const marqueeItems = [...BRANDS, ...BRANDS, ...BRANDS];
 
   return (
     <section
-      className="section home-brands"
-      style={{
-        background: 'linear-gradient(180deg, #ffffff 0%, #FFE5CA 20%, #FFA552 50%, #1e1e24 80%, #09090b 100%)',
-        color: '#ffffff',
-        padding: '6rem 0',
-        position: 'relative',
-        overflow: 'hidden',
-        borderTop: 'none',
-        borderBottom: 'none',
-      }}
+      id="brands"
+      className={styles.section}
+      aria-label={getSafeText('title', 'World-Class Dental Implant & Material Partners')}
     >
       {/* Warm Ambient Glow Orb at Center */}
-      <div
-        style={{
-          position: 'absolute',
-          top: '50%',
-          left: '50%',
-          transform: 'translate(-50%, -50%)',
-          width: '700px',
-          height: '700px',
-          borderRadius: '50%',
-          background: 'radial-gradient(circle, rgba(255, 165, 82, 0.25) 0%, rgba(255, 145, 36, 0.08) 55%, transparent 75%)',
-          filter: 'blur(50px)',
-          pointerEvents: 'none',
-          zIndex: 0,
-        }}
-      />
+      <div className={styles.ambientGlow} aria-hidden="true" />
 
-      <div
-        style={{
-          maxWidth: '1280px',
-          margin: '0 auto',
-          padding: '0 1.5rem',
-          textAlign: 'center',
-          marginBottom: '3.5rem',
-          position: 'relative',
-          zIndex: 1,
-        }}
-      >
-        <h2
-          style={{
-            fontSize: 'clamp(2rem, 3.5vw, 2.75rem)',
-            fontWeight: 600,
-            color: '#0f172a',
-            letterSpacing: '-0.035em',
-            margin: '0 0 1rem 0',
-            lineHeight: 1.15,
-          }}
-        >
+      {/* Header Container */}
+      <div className={styles.headerContainer}>
+        <h2 className={styles.title}>
           {getSafeText('title', 'Dünya Standartlarında Dental İmplant & Materyal Ortakları')}
         </h2>
 
-        <p
-          style={{
-            fontSize: '1.05rem',
-            color: '#1e293b',
-            maxWidth: '640px',
-            margin: '0 auto',
-            fontWeight: 500,
-            lineHeight: 1.6,
-          }}
-        >
-          {getSafeText('subtitle', 'Polikliniğimizde kullanılan tüm implant ve kaplama sistemleri ömür boyu orijinal garanti sertifikalıdır.')}
+        <p className={styles.subtitle}>
+          {getSafeText(
+            'subtitle',
+            'Polikliniğimizde kullanılan tüm implant ve kaplama sistemleri ömür boyu orijinal garanti sertifikalıdır.'
+          )}
         </p>
       </div>
 
-      {/* Infinite Scrolling Marquee Track */}
-      <div
-        className="brands-marquee"
-        style={{
-          width: '100%',
-          overflow: 'hidden',
-          position: 'relative',
-          zIndex: 1,
-          padding: '1rem 0',
-        }}
-      >
-        <div
-          className="marquee-track"
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            gap: '2rem',
-            width: 'max-content',
-            animation: 'marquee 35s linear infinite',
-          }}
-        >
+      {/* Pure Floating PNG Logos Marquee (No cards, no boxes, no text below) */}
+      <div className={styles.marqueeWrapper} role="region" aria-label="Dental Implant Brands">
+        <div className={styles.marqueeTrack}>
           {marqueeItems.map((brand, idx) => (
             <div
-              key={`${brand.name}-${idx}`}
-              style={{
-                backgroundColor: '#18181b',
-                border: '1.5px solid #27272a',
-                borderRadius: '20px',
-                padding: '1.5rem 2.25rem',
-                display: 'flex',
-                alignItems: 'center',
-                gap: '1.5rem',
-                minWidth: '280px',
-                boxShadow: 'none',
-                transition: 'all 0.3s ease',
-              }}
-              className="brand-glass-card"
+              key={`${brand.id}-${idx}`}
+              className={styles.logoItem}
+              title={brand.name}
             >
-              <span
-                style={{
-                  fontSize: '1.35rem',
-                  color: '#FFA552',
-                  lineHeight: 1,
-                }}
-              >
-                {brand.icon}
-              </span>
-
-              <div>
-                <h3
-                  style={{
-                    fontSize: '1.25rem',
-                    fontWeight: 600,
-                    color: '#ffffff',
-                    margin: '0 0 0.2rem 0',
-                    letterSpacing: '-0.02em',
-                  }}
-                >
-                  {brand.name}
-                </h3>
-                <p
-                  style={{
-                    fontSize: '0.85rem',
-                    color: '#94a3b8',
-                    margin: 0,
-                    fontWeight: 400,
-                  }}
-                >
-                  {brand.subtitle}
-                </p>
-              </div>
+              <Image
+                src={brand.png}
+                alt={`${brand.name} Logo`}
+                width={brand.width}
+                height={brand.height}
+                className={styles.logoImage}
+                loading={idx < 10 ? 'eager' : 'lazy'}
+                unoptimized
+              />
             </div>
           ))}
         </div>
       </div>
-
-      <style jsx global>{`
-        @keyframes marquee {
-          0% {
-            transform: translateX(0%);
-          }
-          100% {
-            transform: translateX(-33.333%);
-          }
-        }
-        .brands-marquee:hover .marquee-track {
-          animation-play-state: paused;
-        }
-        .brand-glass-card:hover {
-          border-color: rgba(255, 165, 82, 0.4) !important;
-          transform: translateY(-4px);
-          box-shadow: 0 12px 30px rgba(255, 165, 82, 0.15) !important;
-        }
-      `}</style>
     </section>
   );
 }
+
+

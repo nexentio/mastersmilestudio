@@ -2,6 +2,13 @@
   padding: 3.5rem 0;
 }
 
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
 .heading {
   font-size: clamp(1.75rem, 3.2vw, 2.35rem);
   font-weight: 600;
@@ -12,11 +19,13 @@
   text-transform: uppercase;
 }
 
-/* Desktop: 4 Columns Grid */
+/* Desktop: 2 Columns Grid (Centered & Balanced) */
 .desktopGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 720px;
+  margin: 0 auto;
 }
 
 /* Mobile Slider: hidden on desktop */
@@ -32,7 +41,7 @@
 
 .card {
   background-color: #ffffff;
-  border-radius: 20px;
+  border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
   border: 1px solid #f1f5f9;
@@ -77,20 +86,20 @@
 }
 
 .name {
-  font-size: 1.12rem;
-  font-weight: 600;
+  font-size: 1.15rem;
+  font-weight: 700;
   color: #0f172a;
   display: block;
   margin: 0.2rem 0;
 }
 
 .specialty {
-  font-size: 0.88rem;
+  font-size: 0.9rem;
   color: #64748b;
   font-weight: 500;
 }
 
-/* Mobile Responsive: Single card per slide with right/left navigation arrow */
+/* Mobile Responsive */
 @media (max-width: 768px) {
   .desktopGrid {
     display: none;
@@ -100,66 +109,56 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
     max-width: 320px;
     margin: 0 auto;
   }
 
-  .mobileCardWrapper {
+  .carouselTrack {
     width: 100%;
-    max-width: 290px;
   }
 
-  .mobileNavRow {
+  .controls {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 290px;
+    justify-content: center;
+    gap: 1.5rem;
     margin-top: 1.25rem;
-    padding: 0 0.5rem;
-    box-sizing: border-box;
+    width: 100%;
   }
 
-  .arrowBtn {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
+  .navBtn {
     background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.35rem;
     color: #0f172a;
-    border: 1px solid rgba(0, 0, 0, 0.12);
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
-    font-size: 1.6rem;
-    line-height: 1;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     cursor: pointer;
-    transition: transform 0.2s ease, background-color 0.2s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: all 0.2s ease;
   }
 
-  .arrowBtn:active {
-    transform: scale(0.92);
-  }
-
-  .arrowBtnNext {
-    background-color: #0f172a;
+  .navBtn:hover {
+    background-color: #D58936;
     color: #ffffff;
-    border-color: #0f172a;
+    border-color: #D58936;
   }
 
-  .mobileDots {
+  .dots {
     display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 0.5rem;
+    align-items: center;
   }
 
   .dot {
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     border-radius: 50%;
+    background-color: #cbd5e1;
     border: none;
     padding: 0;
     cursor: pointer;
@@ -167,12 +166,8 @@
   }
 
   .dotActive {
-    background-color: #0f172a;
-    width: 24px;
-    border-radius: 9999px;
-  }
-
-  .dotInactive {
-    background-color: #cbd5e1;
+    background-color: #D58936;
+    width: 22px;
+    border-radius: 4px;
   }
 }

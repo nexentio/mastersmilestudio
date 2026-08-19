@@ -1,0 +1,130 @@
+/* ==========================================================================
+   MASTER SMILE STUDIO - FLOATING BRANDS MARQUEE (PURE PNG LOGOS)
+   ========================================================================== */
+
+.section {
+  position: relative;
+  width: 100%;
+  padding: 6rem 0;
+  overflow: hidden;
+  background: linear-gradient(180deg, #ffffff 0%, #faf6f0 30%, #f6ede0 65%, #f2e3ce 100%);
+  border-top: none;
+  border-bottom: none;
+  color: #0f172a;
+}
+
+.ambientGlow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(750px, 90vw);
+  height: min(750px, 90vw);
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(242, 227, 206, 0.45) 0%, rgba(246, 237, 224, 0.2) 50%, transparent 75%);
+  filter: blur(50px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.headerContainer {
+  max-width: 1280px;
+  margin: 0 auto 3.5rem auto;
+  padding: 0 1.5rem;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.title {
+  font-size: clamp(2rem, 3.5vw, 2.75rem);
+  font-weight: 600;
+  color: #0f172a;
+  letter-spacing: -0.035em;
+  margin: 0 0 1rem 0;
+  line-height: 1.15;
+}
+
+.subtitle {
+  font-size: 1.05rem;
+  color: #1e293b;
+  max-width: 640px;
+  margin: 0 auto;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.marqueeWrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  padding: 1.75rem 0;
+  mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+}
+
+.marqueeTrack {
+  display: flex;
+  align-items: center;
+  gap: clamp(3.5rem, 6vw, 5.5rem);
+  width: max-content;
+  animation: marqueeScroll 35s linear infinite;
+  will-change: transform;
+}
+
+.marqueeWrapper:hover .marqueeTrack {
+  animation-play-state: paused;
+}
+
+.logoItem {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 0.75rem;
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), filter 0.35s ease;
+  user-select: none;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.logoItem:hover {
+  transform: translateY(-6px) scale(1.08);
+}
+
+.logoImage {
+  height: clamp(46px, 5vw, 62px);
+  width: auto;
+  max-width: 220px;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.08));
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.logoItem:hover .logoImage {
+  filter: drop-shadow(0 10px 22px rgba(217, 119, 6, 0.25)) drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+}
+
+@keyframes marqueeScroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-33.333%);
+  }
+}
+
+@media (max-width: 768px) {
+  .logoImage {
+    height: 38px;
+    max-width: 140px;
+  }
+  .marqueeTrack {
+    gap: 2.5rem;
+    animation-duration: 25s;
+  }
+  .marqueeWrapper {
+    padding: 1.25rem 0;
+  }
+}

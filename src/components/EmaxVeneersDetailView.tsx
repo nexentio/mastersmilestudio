@@ -47,16 +47,16 @@ interface LocaleDictionary {
 const DICTIONARIES: Record<string, LocaleDictionary> = {
   "en": {
     "packagesTitle": "Swiss Ivoclar E-Max Laminate Veneer Packages",
-    "packagesSubtitle": "All-inclusive digital smile design packages with genuine Swiss Ivoclar IPS e.max lithium disilicate, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers in Istanbul.",
+    "packagesSubtitle": "All-inclusive digital smile design packages with genuine Swiss Ivoclar IPS e.max lithium disilicate, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers in Antalya.",
     "mostPopularBadge": "Most Popular Choice",
     "durationLabel": "Procedure Time:",
     "includedLabel": "Package Inclusions:",
     "priceLabel": "Price (All-Inclusive):",
     "getQuoteBtn": "Get Your Free Quote",
     "faqTitle": "Frequently Asked Questions About E-Max Veneers",
-    "faqSubtitle": "Detailed clinical answers regarding Swiss Ivoclar IPS e.max lithium disilicate veneers, translucency, preparation thickness, treatment timelines, and warranties in Istanbul.",
-    "stayDuration": "<strong>5 to 7 days in Istanbul.</strong> During this single trip, 3D intraoral digital scanning, minimally invasive tooth preparation (0.3–0.5 mm), CAD/CAM milling of IPS e.max veneers, and final resin bonding are completed with microscopic precision.",
-    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Istanbul once. Your complete smile makeover (from 4 to 20 E-Max laminate veneers) is designed, fabricated, and permanently placed during this single visit.",
+    "faqSubtitle": "Detailed clinical answers regarding Swiss Ivoclar IPS e.max lithium disilicate veneers, translucency, preparation thickness, treatment timelines, and warranties in Antalya.",
+    "stayDuration": "<strong>5 to 7 days in Antalya.</strong> During this single trip, 3D intraoral digital scanning, minimally invasive tooth preparation (0.3–0.5 mm), CAD/CAM milling of IPS e.max veneers, and final resin bonding are completed with microscopic precision.",
+    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Antalya once. Your complete smile makeover (from 4 to 20 E-Max laminate veneers) is designed, fabricated, and permanently placed during this single visit.",
     "recoveryTime": "<strong>24 to 48 hours adaptation.</strong> Because preparation is strictly confined to the enamel surface, there is virtually zero downtime or discomfort. You can immediately resume eating and normal activities with your brand-new smile.",
     "priceEstimate": "<strong>Swiss Ivoclar E-Max Veneer prices start at £250 / €285 / $310 per tooth.</strong> All-inclusive smile makeover packages (8, 16, or 20 veneers) include 3D Digital Smile Design, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
@@ -64,7 +64,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single E-Max Veneer (Ivoclar IPS e.max)",
         "brand": "Swiss Ivoclar Vivadent IPS e.max Press",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-1.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "included": [
           "1x Authentic Swiss Ivoclar IPS e.max Laminate Veneer",
           "3D Digital Intraoral Scan & Smile Line Analysis",
@@ -83,14 +83,14 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "8-Unit Smile Line Makeover (Upper Arch)",
         "brand": "Swiss Ivoclar IPS e.max",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-2.jpg",
+        "img": "/packages/pkg-emax.webp",
         "popular": true,
         "included": [
           "8x High-Translucency E-Max Laminate Veneers (Upper Social Smile)",
           "Bespoke 3D Digital Smile Design (DSD) & Facial Symmetry Simulation",
           "Laser gum recontouring & aesthetic gingival leveling (if required)",
           "Aesthetic temporary smile trial fitted on Day 1",
-          "4-Star Hotel Stay with Breakfast in Istanbul (6 Nights)",
+          "4-Star Hotel Stay with Breakfast in Antalya (6 Nights)",
           "VIP Mercedes Chauffeur Transfers (Airport - Hotel - Clinic)",
           "10-Year warranty against veneer debonding and porcelain chipping"
         ],
@@ -104,12 +104,12 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "16-Unit Full Smile Makeover (8 Upper + 8 Lower)",
         "brand": "Swiss Ivoclar IPS e.max Press",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-3.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "included": [
           "16x Custom E-Max Laminate Veneers (8 Upper + 8 Lower Arches)",
           "Full 3D Facial Aesthetic Mapping & Golden Ratio Smile Harmony",
           "Dual arch aesthetic temporary mock-up for live smile preview",
-          "5-Star Luxury Hotel Accommodation in Istanbul (6 Nights)",
+          "5-Star Luxury Hotel Accommodation in Antalya (6 Nights)",
           "Private VIP Mercedes Airport & Clinic Chauffeur",
           "Professional clinical teeth whitening for non-veneered molars",
           "Comprehensive post-op care pack & custom night guard"
@@ -124,7 +124,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Hollywood Smile Makeover",
         "brand": "Swiss Ivoclar IPS e.max CAD / Press",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-3.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "20x Ultra-Thin E-Max Laminate Veneers (10 Upper + 10 Lower Arches)",
           "Complete gnathological bite balancing & aesthetic harmony",
@@ -143,7 +143,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Lumineers (Prepless / Ultra-Thin)",
         "brand": "Cerinate / E-Max Ultra-Thin (0.2 mm)",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/lumineer-copy.webp",
+        "img": "/treatments/accordion/lumineers.webp",
         "included": [
           "1x Ultra-Thin Prepless Lumineer Veneer (No Drilling / No Injections)",
           "High-Precision 3D Digital Intraoral Impression",
@@ -161,7 +161,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Combination Makeover (10 E-Max + Laser Whitening)",
         "brand": "Swiss Ivoclar IPS e.max + Philips Zoom Laser",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/composite-laminate-copy.webp",
+        "img": "/treatments/accordion/composite-laminate.webp",
         "included": [
           "10x E-Max Laminate Veneers for Upper Visible Smile",
           "Philips Zoom 2 Laser In-Clinic Whitening for Lower Arch",
@@ -207,15 +207,15 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         ]
       },
       {
-        "q": "How many days do I need to stay in Istanbul for E-Max veneers?",
+        "q": "How many days do I need to stay in Antalya for E-Max veneers?",
         "a": [
-          "A standard E-Max smile makeover requires 5 to 7 days in Istanbul. During this single visit, we perform the 3D digital scan, custom smile design, shade matching trial, CAD/CAM ceramic milling, and final resin bonding."
+          "A standard E-Max smile makeover requires 5 to 7 days in Antalya. During this single visit, we perform the 3D digital scan, custom smile design, shade matching trial, CAD/CAM ceramic milling, and final resin bonding."
         ]
       },
       {
         "q": "What is included in the E-Max Veneers all-inclusive package?",
         "a": [
-          "Our smile makeover packages include authentic Swiss Ivoclar IPS e.max veneers, 3D Digital Smile Design, 4/5-star luxury hotel accommodation with breakfast, and private VIP Mercedes transfers between Istanbul Airport (IST / SAW), hotel, and our clinic.",
+          "Our smile makeover packages include authentic Swiss Ivoclar IPS e.max veneers, 3D Digital Smile Design, 4/5-star luxury hotel accommodation with breakfast, and private VIP Mercedes transfers between Antalya Airport (IST / SAW), hotel, and our clinic.",
           "There are no hidden costs, consultation fees, or unexpected lab charges."
         ]
       }
@@ -230,9 +230,9 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "priceLabel": "Her Şey Dahil Fiyat:",
     "getQuoteBtn": "Ücretsiz Fiyat Teklifi Al",
     "faqTitle": "E-Max Lamina (Yaprak Porselen) Hakkında Sıkça Sorulan Sorular",
-    "faqSubtitle": "İstanbul'da İsviçre Ivoclar IPS e.max lityum disilikat kaplama, diş kesim miktarı, leke tutmazlık, tedavi süresi ve garanti koşulları hakkında en çok merak edilen soruların yanıtları.",
-    "stayDuration": "<strong>5 to 7 days in Istanbul.</strong> During this single trip, 3D intraoral digital scanning, minimally invasive tooth preparation (0.3–0.5 mm), CAD/CAM milling of IPS e.max veneers, and final resin bonding are completed with microscopic precision.",
-    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Istanbul once. Your complete smile makeover (from 4 to 20 E-Max laminate veneers) is designed, fabricated, and permanently placed during this single visit.",
+    "faqSubtitle": "Antalya'da İsviçre Ivoclar IPS e.max lityum disilikat kaplama, diş kesim miktarı, leke tutmazlık, tedavi süresi ve garanti koşulları hakkında en çok merak edilen soruların yanıtları.",
+    "stayDuration": "<strong>5 to 7 days in Antalya.</strong> During this single trip, 3D intraoral digital scanning, minimally invasive tooth preparation (0.3–0.5 mm), CAD/CAM milling of IPS e.max veneers, and final resin bonding are completed with microscopic precision.",
+    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Antalya once. Your complete smile makeover (from 4 to 20 E-Max laminate veneers) is designed, fabricated, and permanently placed during this single visit.",
     "recoveryTime": "<strong>24 to 48 hours adaptation.</strong> Because preparation is strictly confined to the enamel surface, there is virtually zero downtime or discomfort. You can immediately resume eating and normal activities with your brand-new smile.",
     "priceEstimate": "<strong>Swiss Ivoclar E-Max Veneer prices start at £250 / €285 / $310 per tooth.</strong> All-inclusive smile makeover packages (8, 16, or 20 veneers) include 3D Digital Smile Design, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
@@ -240,7 +240,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single E-Max Veneer (Ivoclar IPS e.max)",
         "brand": "Swiss Ivoclar Vivadent IPS e.max Press",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-1.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "included": [
           "1x Authentic Swiss Ivoclar IPS e.max Laminate Veneer",
           "3D Digital Intraoral Scan & Smile Line Analysis",
@@ -259,14 +259,14 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "8-Unit Smile Line Makeover (Upper Arch)",
         "brand": "Swiss Ivoclar IPS e.max",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-2.jpg",
+        "img": "/packages/pkg-emax.webp",
         "popular": true,
         "included": [
           "8x High-Translucency E-Max Laminate Veneers (Upper Social Smile)",
           "Bespoke 3D Digital Smile Design (DSD) & Facial Symmetry Simulation",
           "Laser gum recontouring & aesthetic gingival leveling (if required)",
           "Aesthetic temporary smile trial fitted on Day 1",
-          "4-Star Hotel Stay with Breakfast in Istanbul (6 Nights)",
+          "4-Star Hotel Stay with Breakfast in Antalya (6 Nights)",
           "VIP Mercedes Chauffeur Transfers (Airport - Hotel - Clinic)",
           "10-Year warranty against veneer debonding and porcelain chipping"
         ],
@@ -280,12 +280,12 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "16-Unit Full Smile Makeover (8 Upper + 8 Lower)",
         "brand": "Swiss Ivoclar IPS e.max Press",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-3.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "included": [
           "16x Custom E-Max Laminate Veneers (8 Upper + 8 Lower Arches)",
           "Full 3D Facial Aesthetic Mapping & Golden Ratio Smile Harmony",
           "Dual arch aesthetic temporary mock-up for live smile preview",
-          "5-Star Luxury Hotel Accommodation in Istanbul (6 Nights)",
+          "5-Star Luxury Hotel Accommodation in Antalya (6 Nights)",
           "Private VIP Mercedes Airport & Clinic Chauffeur",
           "Professional clinical teeth whitening for non-veneered molars",
           "Comprehensive post-op care pack & custom night guard"
@@ -300,7 +300,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Hollywood Smile Makeover",
         "brand": "Swiss Ivoclar IPS e.max CAD / Press",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-3.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "20x Ultra-Thin E-Max Laminate Veneers (10 Upper + 10 Lower Arches)",
           "Complete gnathological bite balancing & aesthetic harmony",
@@ -319,7 +319,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Lumineers (Prepless / Ultra-Thin)",
         "brand": "Cerinate / E-Max Ultra-Thin (0.2 mm)",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/lumineer-copy.webp",
+        "img": "/treatments/accordion/lumineers.webp",
         "included": [
           "1x Ultra-Thin Prepless Lumineer Veneer (No Drilling / No Injections)",
           "High-Precision 3D Digital Intraoral Impression",
@@ -337,7 +337,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Combination Makeover (10 E-Max + Laser Whitening)",
         "brand": "Swiss Ivoclar IPS e.max + Philips Zoom Laser",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/composite-laminate-copy.webp",
+        "img": "/treatments/accordion/composite-laminate.webp",
         "included": [
           "10x E-Max Laminate Veneers for Upper Visible Smile",
           "Philips Zoom 2 Laser In-Clinic Whitening for Lower Arch",
@@ -383,15 +383,15 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         ]
       },
       {
-        "q": "How many days do I need to stay in Istanbul for E-Max veneers?",
+        "q": "How many days do I need to stay in Antalya for E-Max veneers?",
         "a": [
-          "A standard E-Max smile makeover requires 5 to 7 days in Istanbul. During this single visit, we perform the 3D digital scan, custom smile design, shade matching trial, CAD/CAM ceramic milling, and final resin bonding."
+          "A standard E-Max smile makeover requires 5 to 7 days in Antalya. During this single visit, we perform the 3D digital scan, custom smile design, shade matching trial, CAD/CAM ceramic milling, and final resin bonding."
         ]
       },
       {
         "q": "What is included in the E-Max Veneers all-inclusive package?",
         "a": [
-          "Our smile makeover packages include authentic Swiss Ivoclar IPS e.max veneers, 3D Digital Smile Design, 4/5-star luxury hotel accommodation with breakfast, and private VIP Mercedes transfers between Istanbul Airport (IST / SAW), hotel, and our clinic.",
+          "Our smile makeover packages include authentic Swiss Ivoclar IPS e.max veneers, 3D Digital Smile Design, 4/5-star luxury hotel accommodation with breakfast, and private VIP Mercedes transfers between Antalya Airport (IST / SAW), hotel, and our clinic.",
           "There are no hidden costs, consultation fees, or unexpected lab charges."
         ]
       }
@@ -399,16 +399,16 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
   },
   "de": {
     "packagesTitle": "Swiss Ivoclar E-Max Laminate Veneer Packages",
-    "packagesSubtitle": "All-inclusive digital smile design packages with genuine Swiss Ivoclar IPS e.max lithium disilicate, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers in Istanbul.",
+    "packagesSubtitle": "All-inclusive digital smile design packages with genuine Swiss Ivoclar IPS e.max lithium disilicate, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers in Antalya.",
     "mostPopularBadge": "Most Popular Choice",
     "durationLabel": "Procedure Time:",
     "includedLabel": "Package Inclusions:",
     "priceLabel": "Price (All-Inclusive):",
     "getQuoteBtn": "Get Your Free Quote",
     "faqTitle": "Frequently Asked Questions About E-Max Veneers",
-    "faqSubtitle": "Detailed clinical answers regarding Swiss Ivoclar IPS e.max lithium disilicate veneers, translucency, preparation thickness, treatment timelines, and warranties in Istanbul.",
-    "stayDuration": "<strong>5 to 7 days in Istanbul.</strong> During this single trip, 3D intraoral digital scanning, minimally invasive tooth preparation (0.3–0.5 mm), CAD/CAM milling of IPS e.max veneers, and final resin bonding are completed with microscopic precision.",
-    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Istanbul once. Your complete smile makeover (from 4 to 20 E-Max laminate veneers) is designed, fabricated, and permanently placed during this single visit.",
+    "faqSubtitle": "Detailed clinical answers regarding Swiss Ivoclar IPS e.max lithium disilicate veneers, translucency, preparation thickness, treatment timelines, and warranties in Antalya.",
+    "stayDuration": "<strong>5 to 7 days in Antalya.</strong> During this single trip, 3D intraoral digital scanning, minimally invasive tooth preparation (0.3–0.5 mm), CAD/CAM milling of IPS e.max veneers, and final resin bonding are completed with microscopic precision.",
+    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Antalya once. Your complete smile makeover (from 4 to 20 E-Max laminate veneers) is designed, fabricated, and permanently placed during this single visit.",
     "recoveryTime": "<strong>24 to 48 hours adaptation.</strong> Because preparation is strictly confined to the enamel surface, there is virtually zero downtime or discomfort. You can immediately resume eating and normal activities with your brand-new smile.",
     "priceEstimate": "<strong>Swiss Ivoclar E-Max Veneer prices start at £250 / €285 / $310 per tooth.</strong> All-inclusive smile makeover packages (8, 16, or 20 veneers) include 3D Digital Smile Design, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
@@ -416,7 +416,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single E-Max Veneer (Ivoclar IPS e.max)",
         "brand": "Swiss Ivoclar Vivadent IPS e.max Press",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-1.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "included": [
           "1x Authentic Swiss Ivoclar IPS e.max Laminate Veneer",
           "3D Digital Intraoral Scan & Smile Line Analysis",
@@ -435,14 +435,14 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "8-Unit Smile Line Makeover (Upper Arch)",
         "brand": "Swiss Ivoclar IPS e.max",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-2.jpg",
+        "img": "/packages/pkg-emax.webp",
         "popular": true,
         "included": [
           "8x High-Translucency E-Max Laminate Veneers (Upper Social Smile)",
           "Bespoke 3D Digital Smile Design (DSD) & Facial Symmetry Simulation",
           "Laser gum recontouring & aesthetic gingival leveling (if required)",
           "Aesthetic temporary smile trial fitted on Day 1",
-          "4-Star Hotel Stay with Breakfast in Istanbul (6 Nights)",
+          "4-Star Hotel Stay with Breakfast in Antalya (6 Nights)",
           "VIP Mercedes Chauffeur Transfers (Airport - Hotel - Clinic)",
           "10-Year warranty against veneer debonding and porcelain chipping"
         ],
@@ -456,12 +456,12 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "16-Unit Full Smile Makeover (8 Upper + 8 Lower)",
         "brand": "Swiss Ivoclar IPS e.max Press",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-3.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "included": [
           "16x Custom E-Max Laminate Veneers (8 Upper + 8 Lower Arches)",
           "Full 3D Facial Aesthetic Mapping & Golden Ratio Smile Harmony",
           "Dual arch aesthetic temporary mock-up for live smile preview",
-          "5-Star Luxury Hotel Accommodation in Istanbul (6 Nights)",
+          "5-Star Luxury Hotel Accommodation in Antalya (6 Nights)",
           "Private VIP Mercedes Airport & Clinic Chauffeur",
           "Professional clinical teeth whitening for non-veneered molars",
           "Comprehensive post-op care pack & custom night guard"
@@ -476,7 +476,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Hollywood Smile Makeover",
         "brand": "Swiss Ivoclar IPS e.max CAD / Press",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-3.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "20x Ultra-Thin E-Max Laminate Veneers (10 Upper + 10 Lower Arches)",
           "Complete gnathological bite balancing & aesthetic harmony",
@@ -495,7 +495,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Lumineers (Prepless / Ultra-Thin)",
         "brand": "Cerinate / E-Max Ultra-Thin (0.2 mm)",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/lumineer-copy.webp",
+        "img": "/treatments/accordion/lumineers.webp",
         "included": [
           "1x Ultra-Thin Prepless Lumineer Veneer (No Drilling / No Injections)",
           "High-Precision 3D Digital Intraoral Impression",
@@ -513,7 +513,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Combination Makeover (10 E-Max + Laser Whitening)",
         "brand": "Swiss Ivoclar IPS e.max + Philips Zoom Laser",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/composite-laminate-copy.webp",
+        "img": "/treatments/accordion/composite-laminate.webp",
         "included": [
           "10x E-Max Laminate Veneers for Upper Visible Smile",
           "Philips Zoom 2 Laser In-Clinic Whitening for Lower Arch",
@@ -559,15 +559,15 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         ]
       },
       {
-        "q": "How many days do I need to stay in Istanbul for E-Max veneers?",
+        "q": "How many days do I need to stay in Antalya for E-Max veneers?",
         "a": [
-          "A standard E-Max smile makeover requires 5 to 7 days in Istanbul. During this single visit, we perform the 3D digital scan, custom smile design, shade matching trial, CAD/CAM ceramic milling, and final resin bonding."
+          "A standard E-Max smile makeover requires 5 to 7 days in Antalya. During this single visit, we perform the 3D digital scan, custom smile design, shade matching trial, CAD/CAM ceramic milling, and final resin bonding."
         ]
       },
       {
         "q": "What is included in the E-Max Veneers all-inclusive package?",
         "a": [
-          "Our smile makeover packages include authentic Swiss Ivoclar IPS e.max veneers, 3D Digital Smile Design, 4/5-star luxury hotel accommodation with breakfast, and private VIP Mercedes transfers between Istanbul Airport (IST / SAW), hotel, and our clinic.",
+          "Our smile makeover packages include authentic Swiss Ivoclar IPS e.max veneers, 3D Digital Smile Design, 4/5-star luxury hotel accommodation with breakfast, and private VIP Mercedes transfers between Antalya Airport (IST / SAW), hotel, and our clinic.",
           "There are no hidden costs, consultation fees, or unexpected lab charges."
         ]
       }
@@ -575,16 +575,16 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
   },
   "pl": {
     "packagesTitle": "Swiss Ivoclar E-Max Laminate Veneer Packages",
-    "packagesSubtitle": "All-inclusive digital smile design packages with genuine Swiss Ivoclar IPS e.max lithium disilicate, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers in Istanbul.",
+    "packagesSubtitle": "All-inclusive digital smile design packages with genuine Swiss Ivoclar IPS e.max lithium disilicate, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers in Antalya.",
     "mostPopularBadge": "Most Popular Choice",
     "durationLabel": "Procedure Time:",
     "includedLabel": "Package Inclusions:",
     "priceLabel": "Price (All-Inclusive):",
     "getQuoteBtn": "Get Your Free Quote",
     "faqTitle": "Frequently Asked Questions About E-Max Veneers",
-    "faqSubtitle": "Detailed clinical answers regarding Swiss Ivoclar IPS e.max lithium disilicate veneers, translucency, preparation thickness, treatment timelines, and warranties in Istanbul.",
-    "stayDuration": "<strong>5 to 7 days in Istanbul.</strong> During this single trip, 3D intraoral digital scanning, minimally invasive tooth preparation (0.3–0.5 mm), CAD/CAM milling of IPS e.max veneers, and final resin bonding are completed with microscopic precision.",
-    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Istanbul once. Your complete smile makeover (from 4 to 20 E-Max laminate veneers) is designed, fabricated, and permanently placed during this single visit.",
+    "faqSubtitle": "Detailed clinical answers regarding Swiss Ivoclar IPS e.max lithium disilicate veneers, translucency, preparation thickness, treatment timelines, and warranties in Antalya.",
+    "stayDuration": "<strong>5 to 7 days in Antalya.</strong> During this single trip, 3D intraoral digital scanning, minimally invasive tooth preparation (0.3–0.5 mm), CAD/CAM milling of IPS e.max veneers, and final resin bonding are completed with microscopic precision.",
+    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Antalya once. Your complete smile makeover (from 4 to 20 E-Max laminate veneers) is designed, fabricated, and permanently placed during this single visit.",
     "recoveryTime": "<strong>24 to 48 hours adaptation.</strong> Because preparation is strictly confined to the enamel surface, there is virtually zero downtime or discomfort. You can immediately resume eating and normal activities with your brand-new smile.",
     "priceEstimate": "<strong>Swiss Ivoclar E-Max Veneer prices start at £250 / €285 / $310 per tooth.</strong> All-inclusive smile makeover packages (8, 16, or 20 veneers) include 3D Digital Smile Design, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
@@ -592,7 +592,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single E-Max Veneer (Ivoclar IPS e.max)",
         "brand": "Swiss Ivoclar Vivadent IPS e.max Press",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-1.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "included": [
           "1x Authentic Swiss Ivoclar IPS e.max Laminate Veneer",
           "3D Digital Intraoral Scan & Smile Line Analysis",
@@ -611,14 +611,14 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "8-Unit Smile Line Makeover (Upper Arch)",
         "brand": "Swiss Ivoclar IPS e.max",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-2.jpg",
+        "img": "/packages/pkg-emax.webp",
         "popular": true,
         "included": [
           "8x High-Translucency E-Max Laminate Veneers (Upper Social Smile)",
           "Bespoke 3D Digital Smile Design (DSD) & Facial Symmetry Simulation",
           "Laser gum recontouring & aesthetic gingival leveling (if required)",
           "Aesthetic temporary smile trial fitted on Day 1",
-          "4-Star Hotel Stay with Breakfast in Istanbul (6 Nights)",
+          "4-Star Hotel Stay with Breakfast in Antalya (6 Nights)",
           "VIP Mercedes Chauffeur Transfers (Airport - Hotel - Clinic)",
           "10-Year warranty against veneer debonding and porcelain chipping"
         ],
@@ -632,12 +632,12 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "16-Unit Full Smile Makeover (8 Upper + 8 Lower)",
         "brand": "Swiss Ivoclar IPS e.max Press",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-3.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "included": [
           "16x Custom E-Max Laminate Veneers (8 Upper + 8 Lower Arches)",
           "Full 3D Facial Aesthetic Mapping & Golden Ratio Smile Harmony",
           "Dual arch aesthetic temporary mock-up for live smile preview",
-          "5-Star Luxury Hotel Accommodation in Istanbul (6 Nights)",
+          "5-Star Luxury Hotel Accommodation in Antalya (6 Nights)",
           "Private VIP Mercedes Airport & Clinic Chauffeur",
           "Professional clinical teeth whitening for non-veneered molars",
           "Comprehensive post-op care pack & custom night guard"
@@ -652,7 +652,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Hollywood Smile Makeover",
         "brand": "Swiss Ivoclar IPS e.max CAD / Press",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-3.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "20x Ultra-Thin E-Max Laminate Veneers (10 Upper + 10 Lower Arches)",
           "Complete gnathological bite balancing & aesthetic harmony",
@@ -671,7 +671,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Lumineers (Prepless / Ultra-Thin)",
         "brand": "Cerinate / E-Max Ultra-Thin (0.2 mm)",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/lumineer-copy.webp",
+        "img": "/treatments/accordion/lumineers.webp",
         "included": [
           "1x Ultra-Thin Prepless Lumineer Veneer (No Drilling / No Injections)",
           "High-Precision 3D Digital Intraoral Impression",
@@ -689,7 +689,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Combination Makeover (10 E-Max + Laser Whitening)",
         "brand": "Swiss Ivoclar IPS e.max + Philips Zoom Laser",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/composite-laminate-copy.webp",
+        "img": "/treatments/accordion/composite-laminate.webp",
         "included": [
           "10x E-Max Laminate Veneers for Upper Visible Smile",
           "Philips Zoom 2 Laser In-Clinic Whitening for Lower Arch",
@@ -735,15 +735,15 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         ]
       },
       {
-        "q": "How many days do I need to stay in Istanbul for E-Max veneers?",
+        "q": "How many days do I need to stay in Antalya for E-Max veneers?",
         "a": [
-          "A standard E-Max smile makeover requires 5 to 7 days in Istanbul. During this single visit, we perform the 3D digital scan, custom smile design, shade matching trial, CAD/CAM ceramic milling, and final resin bonding."
+          "A standard E-Max smile makeover requires 5 to 7 days in Antalya. During this single visit, we perform the 3D digital scan, custom smile design, shade matching trial, CAD/CAM ceramic milling, and final resin bonding."
         ]
       },
       {
         "q": "What is included in the E-Max Veneers all-inclusive package?",
         "a": [
-          "Our smile makeover packages include authentic Swiss Ivoclar IPS e.max veneers, 3D Digital Smile Design, 4/5-star luxury hotel accommodation with breakfast, and private VIP Mercedes transfers between Istanbul Airport (IST / SAW), hotel, and our clinic.",
+          "Our smile makeover packages include authentic Swiss Ivoclar IPS e.max veneers, 3D Digital Smile Design, 4/5-star luxury hotel accommodation with breakfast, and private VIP Mercedes transfers between Antalya Airport (IST / SAW), hotel, and our clinic.",
           "There are no hidden costs, consultation fees, or unexpected lab charges."
         ]
       }
@@ -751,16 +751,16 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
   },
   "pt": {
     "packagesTitle": "Swiss Ivoclar E-Max Laminate Veneer Packages",
-    "packagesSubtitle": "All-inclusive digital smile design packages with genuine Swiss Ivoclar IPS e.max lithium disilicate, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers in Istanbul.",
+    "packagesSubtitle": "All-inclusive digital smile design packages with genuine Swiss Ivoclar IPS e.max lithium disilicate, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers in Antalya.",
     "mostPopularBadge": "Most Popular Choice",
     "durationLabel": "Procedure Time:",
     "includedLabel": "Package Inclusions:",
     "priceLabel": "Price (All-Inclusive):",
     "getQuoteBtn": "Get Your Free Quote",
     "faqTitle": "Frequently Asked Questions About E-Max Veneers",
-    "faqSubtitle": "Detailed clinical answers regarding Swiss Ivoclar IPS e.max lithium disilicate veneers, translucency, preparation thickness, treatment timelines, and warranties in Istanbul.",
-    "stayDuration": "<strong>5 to 7 days in Istanbul.</strong> During this single trip, 3D intraoral digital scanning, minimally invasive tooth preparation (0.3–0.5 mm), CAD/CAM milling of IPS e.max veneers, and final resin bonding are completed with microscopic precision.",
-    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Istanbul once. Your complete smile makeover (from 4 to 20 E-Max laminate veneers) is designed, fabricated, and permanently placed during this single visit.",
+    "faqSubtitle": "Detailed clinical answers regarding Swiss Ivoclar IPS e.max lithium disilicate veneers, translucency, preparation thickness, treatment timelines, and warranties in Antalya.",
+    "stayDuration": "<strong>5 to 7 days in Antalya.</strong> During this single trip, 3D intraoral digital scanning, minimally invasive tooth preparation (0.3–0.5 mm), CAD/CAM milling of IPS e.max veneers, and final resin bonding are completed with microscopic precision.",
+    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Antalya once. Your complete smile makeover (from 4 to 20 E-Max laminate veneers) is designed, fabricated, and permanently placed during this single visit.",
     "recoveryTime": "<strong>24 to 48 hours adaptation.</strong> Because preparation is strictly confined to the enamel surface, there is virtually zero downtime or discomfort. You can immediately resume eating and normal activities with your brand-new smile.",
     "priceEstimate": "<strong>Swiss Ivoclar E-Max Veneer prices start at £250 / €285 / $310 per tooth.</strong> All-inclusive smile makeover packages (8, 16, or 20 veneers) include 3D Digital Smile Design, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
@@ -768,7 +768,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single E-Max Veneer (Ivoclar IPS e.max)",
         "brand": "Swiss Ivoclar Vivadent IPS e.max Press",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-1.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "included": [
           "1x Authentic Swiss Ivoclar IPS e.max Laminate Veneer",
           "3D Digital Intraoral Scan & Smile Line Analysis",
@@ -787,14 +787,14 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "8-Unit Smile Line Makeover (Upper Arch)",
         "brand": "Swiss Ivoclar IPS e.max",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-2.jpg",
+        "img": "/packages/pkg-emax.webp",
         "popular": true,
         "included": [
           "8x High-Translucency E-Max Laminate Veneers (Upper Social Smile)",
           "Bespoke 3D Digital Smile Design (DSD) & Facial Symmetry Simulation",
           "Laser gum recontouring & aesthetic gingival leveling (if required)",
           "Aesthetic temporary smile trial fitted on Day 1",
-          "4-Star Hotel Stay with Breakfast in Istanbul (6 Nights)",
+          "4-Star Hotel Stay with Breakfast in Antalya (6 Nights)",
           "VIP Mercedes Chauffeur Transfers (Airport - Hotel - Clinic)",
           "10-Year warranty against veneer debonding and porcelain chipping"
         ],
@@ -808,12 +808,12 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "16-Unit Full Smile Makeover (8 Upper + 8 Lower)",
         "brand": "Swiss Ivoclar IPS e.max Press",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-3.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "included": [
           "16x Custom E-Max Laminate Veneers (8 Upper + 8 Lower Arches)",
           "Full 3D Facial Aesthetic Mapping & Golden Ratio Smile Harmony",
           "Dual arch aesthetic temporary mock-up for live smile preview",
-          "5-Star Luxury Hotel Accommodation in Istanbul (6 Nights)",
+          "5-Star Luxury Hotel Accommodation in Antalya (6 Nights)",
           "Private VIP Mercedes Airport & Clinic Chauffeur",
           "Professional clinical teeth whitening for non-veneered molars",
           "Comprehensive post-op care pack & custom night guard"
@@ -828,7 +828,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Hollywood Smile Makeover",
         "brand": "Swiss Ivoclar IPS e.max CAD / Press",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-3.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "20x Ultra-Thin E-Max Laminate Veneers (10 Upper + 10 Lower Arches)",
           "Complete gnathological bite balancing & aesthetic harmony",
@@ -847,7 +847,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Lumineers (Prepless / Ultra-Thin)",
         "brand": "Cerinate / E-Max Ultra-Thin (0.2 mm)",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/lumineer-copy.webp",
+        "img": "/treatments/accordion/lumineers.webp",
         "included": [
           "1x Ultra-Thin Prepless Lumineer Veneer (No Drilling / No Injections)",
           "High-Precision 3D Digital Intraoral Impression",
@@ -865,7 +865,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Combination Makeover (10 E-Max + Laser Whitening)",
         "brand": "Swiss Ivoclar IPS e.max + Philips Zoom Laser",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/composite-laminate-copy.webp",
+        "img": "/treatments/accordion/composite-laminate.webp",
         "included": [
           "10x E-Max Laminate Veneers for Upper Visible Smile",
           "Philips Zoom 2 Laser In-Clinic Whitening for Lower Arch",
@@ -911,15 +911,15 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         ]
       },
       {
-        "q": "How many days do I need to stay in Istanbul for E-Max veneers?",
+        "q": "How many days do I need to stay in Antalya for E-Max veneers?",
         "a": [
-          "A standard E-Max smile makeover requires 5 to 7 days in Istanbul. During this single visit, we perform the 3D digital scan, custom smile design, shade matching trial, CAD/CAM ceramic milling, and final resin bonding."
+          "A standard E-Max smile makeover requires 5 to 7 days in Antalya. During this single visit, we perform the 3D digital scan, custom smile design, shade matching trial, CAD/CAM ceramic milling, and final resin bonding."
         ]
       },
       {
         "q": "What is included in the E-Max Veneers all-inclusive package?",
         "a": [
-          "Our smile makeover packages include authentic Swiss Ivoclar IPS e.max veneers, 3D Digital Smile Design, 4/5-star luxury hotel accommodation with breakfast, and private VIP Mercedes transfers between Istanbul Airport (IST / SAW), hotel, and our clinic.",
+          "Our smile makeover packages include authentic Swiss Ivoclar IPS e.max veneers, 3D Digital Smile Design, 4/5-star luxury hotel accommodation with breakfast, and private VIP Mercedes transfers between Antalya Airport (IST / SAW), hotel, and our clinic.",
           "There are no hidden costs, consultation fees, or unexpected lab charges."
         ]
       }
@@ -927,16 +927,16 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
   },
   "es": {
     "packagesTitle": "Swiss Ivoclar E-Max Laminate Veneer Packages",
-    "packagesSubtitle": "All-inclusive digital smile design packages with genuine Swiss Ivoclar IPS e.max lithium disilicate, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers in Istanbul.",
+    "packagesSubtitle": "All-inclusive digital smile design packages with genuine Swiss Ivoclar IPS e.max lithium disilicate, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers in Antalya.",
     "mostPopularBadge": "Most Popular Choice",
     "durationLabel": "Procedure Time:",
     "includedLabel": "Package Inclusions:",
     "priceLabel": "Price (All-Inclusive):",
     "getQuoteBtn": "Get Your Free Quote",
     "faqTitle": "Frequently Asked Questions About E-Max Veneers",
-    "faqSubtitle": "Detailed clinical answers regarding Swiss Ivoclar IPS e.max lithium disilicate veneers, translucency, preparation thickness, treatment timelines, and warranties in Istanbul.",
-    "stayDuration": "<strong>5 to 7 days in Istanbul.</strong> During this single trip, 3D intraoral digital scanning, minimally invasive tooth preparation (0.3–0.5 mm), CAD/CAM milling of IPS e.max veneers, and final resin bonding are completed with microscopic precision.",
-    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Istanbul once. Your complete smile makeover (from 4 to 20 E-Max laminate veneers) is designed, fabricated, and permanently placed during this single visit.",
+    "faqSubtitle": "Detailed clinical answers regarding Swiss Ivoclar IPS e.max lithium disilicate veneers, translucency, preparation thickness, treatment timelines, and warranties in Antalya.",
+    "stayDuration": "<strong>5 to 7 days in Antalya.</strong> During this single trip, 3D intraoral digital scanning, minimally invasive tooth preparation (0.3–0.5 mm), CAD/CAM milling of IPS e.max veneers, and final resin bonding are completed with microscopic precision.",
+    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Antalya once. Your complete smile makeover (from 4 to 20 E-Max laminate veneers) is designed, fabricated, and permanently placed during this single visit.",
     "recoveryTime": "<strong>24 to 48 hours adaptation.</strong> Because preparation is strictly confined to the enamel surface, there is virtually zero downtime or discomfort. You can immediately resume eating and normal activities with your brand-new smile.",
     "priceEstimate": "<strong>Swiss Ivoclar E-Max Veneer prices start at £250 / €285 / $310 per tooth.</strong> All-inclusive smile makeover packages (8, 16, or 20 veneers) include 3D Digital Smile Design, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
@@ -944,7 +944,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single E-Max Veneer (Ivoclar IPS e.max)",
         "brand": "Swiss Ivoclar Vivadent IPS e.max Press",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-1.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "included": [
           "1x Authentic Swiss Ivoclar IPS e.max Laminate Veneer",
           "3D Digital Intraoral Scan & Smile Line Analysis",
@@ -963,14 +963,14 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "8-Unit Smile Line Makeover (Upper Arch)",
         "brand": "Swiss Ivoclar IPS e.max",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-2.jpg",
+        "img": "/packages/pkg-emax.webp",
         "popular": true,
         "included": [
           "8x High-Translucency E-Max Laminate Veneers (Upper Social Smile)",
           "Bespoke 3D Digital Smile Design (DSD) & Facial Symmetry Simulation",
           "Laser gum recontouring & aesthetic gingival leveling (if required)",
           "Aesthetic temporary smile trial fitted on Day 1",
-          "4-Star Hotel Stay with Breakfast in Istanbul (6 Nights)",
+          "4-Star Hotel Stay with Breakfast in Antalya (6 Nights)",
           "VIP Mercedes Chauffeur Transfers (Airport - Hotel - Clinic)",
           "10-Year warranty against veneer debonding and porcelain chipping"
         ],
@@ -984,12 +984,12 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "16-Unit Full Smile Makeover (8 Upper + 8 Lower)",
         "brand": "Swiss Ivoclar IPS e.max Press",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-3.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "included": [
           "16x Custom E-Max Laminate Veneers (8 Upper + 8 Lower Arches)",
           "Full 3D Facial Aesthetic Mapping & Golden Ratio Smile Harmony",
           "Dual arch aesthetic temporary mock-up for live smile preview",
-          "5-Star Luxury Hotel Accommodation in Istanbul (6 Nights)",
+          "5-Star Luxury Hotel Accommodation in Antalya (6 Nights)",
           "Private VIP Mercedes Airport & Clinic Chauffeur",
           "Professional clinical teeth whitening for non-veneered molars",
           "Comprehensive post-op care pack & custom night guard"
@@ -1004,7 +1004,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Hollywood Smile Makeover",
         "brand": "Swiss Ivoclar IPS e.max CAD / Press",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-3.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "20x Ultra-Thin E-Max Laminate Veneers (10 Upper + 10 Lower Arches)",
           "Complete gnathological bite balancing & aesthetic harmony",
@@ -1023,7 +1023,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Lumineers (Prepless / Ultra-Thin)",
         "brand": "Cerinate / E-Max Ultra-Thin (0.2 mm)",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/lumineer-copy.webp",
+        "img": "/treatments/accordion/lumineers.webp",
         "included": [
           "1x Ultra-Thin Prepless Lumineer Veneer (No Drilling / No Injections)",
           "High-Precision 3D Digital Intraoral Impression",
@@ -1041,7 +1041,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Combination Makeover (10 E-Max + Laser Whitening)",
         "brand": "Swiss Ivoclar IPS e.max + Philips Zoom Laser",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/composite-laminate-copy.webp",
+        "img": "/treatments/accordion/composite-laminate.webp",
         "included": [
           "10x E-Max Laminate Veneers for Upper Visible Smile",
           "Philips Zoom 2 Laser In-Clinic Whitening for Lower Arch",
@@ -1087,15 +1087,15 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         ]
       },
       {
-        "q": "How many days do I need to stay in Istanbul for E-Max veneers?",
+        "q": "How many days do I need to stay in Antalya for E-Max veneers?",
         "a": [
-          "A standard E-Max smile makeover requires 5 to 7 days in Istanbul. During this single visit, we perform the 3D digital scan, custom smile design, shade matching trial, CAD/CAM ceramic milling, and final resin bonding."
+          "A standard E-Max smile makeover requires 5 to 7 days in Antalya. During this single visit, we perform the 3D digital scan, custom smile design, shade matching trial, CAD/CAM ceramic milling, and final resin bonding."
         ]
       },
       {
         "q": "What is included in the E-Max Veneers all-inclusive package?",
         "a": [
-          "Our smile makeover packages include authentic Swiss Ivoclar IPS e.max veneers, 3D Digital Smile Design, 4/5-star luxury hotel accommodation with breakfast, and private VIP Mercedes transfers between Istanbul Airport (IST / SAW), hotel, and our clinic.",
+          "Our smile makeover packages include authentic Swiss Ivoclar IPS e.max veneers, 3D Digital Smile Design, 4/5-star luxury hotel accommodation with breakfast, and private VIP Mercedes transfers between Antalya Airport (IST / SAW), hotel, and our clinic.",
           "There are no hidden costs, consultation fees, or unexpected lab charges."
         ]
       }
@@ -1103,16 +1103,16 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
   },
   "ru": {
     "packagesTitle": "Swiss Ivoclar E-Max Laminate Veneer Packages",
-    "packagesSubtitle": "All-inclusive digital smile design packages with genuine Swiss Ivoclar IPS e.max lithium disilicate, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers in Istanbul.",
+    "packagesSubtitle": "All-inclusive digital smile design packages with genuine Swiss Ivoclar IPS e.max lithium disilicate, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers in Antalya.",
     "mostPopularBadge": "Most Popular Choice",
     "durationLabel": "Procedure Time:",
     "includedLabel": "Package Inclusions:",
     "priceLabel": "Price (All-Inclusive):",
     "getQuoteBtn": "Get Your Free Quote",
     "faqTitle": "Frequently Asked Questions About E-Max Veneers",
-    "faqSubtitle": "Detailed clinical answers regarding Swiss Ivoclar IPS e.max lithium disilicate veneers, translucency, preparation thickness, treatment timelines, and warranties in Istanbul.",
-    "stayDuration": "<strong>5 to 7 days in Istanbul.</strong> During this single trip, 3D intraoral digital scanning, minimally invasive tooth preparation (0.3–0.5 mm), CAD/CAM milling of IPS e.max veneers, and final resin bonding are completed with microscopic precision.",
-    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Istanbul once. Your complete smile makeover (from 4 to 20 E-Max laminate veneers) is designed, fabricated, and permanently placed during this single visit.",
+    "faqSubtitle": "Detailed clinical answers regarding Swiss Ivoclar IPS e.max lithium disilicate veneers, translucency, preparation thickness, treatment timelines, and warranties in Antalya.",
+    "stayDuration": "<strong>5 to 7 days in Antalya.</strong> During this single trip, 3D intraoral digital scanning, minimally invasive tooth preparation (0.3–0.5 mm), CAD/CAM milling of IPS e.max veneers, and final resin bonding are completed with microscopic precision.",
+    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Antalya once. Your complete smile makeover (from 4 to 20 E-Max laminate veneers) is designed, fabricated, and permanently placed during this single visit.",
     "recoveryTime": "<strong>24 to 48 hours adaptation.</strong> Because preparation is strictly confined to the enamel surface, there is virtually zero downtime or discomfort. You can immediately resume eating and normal activities with your brand-new smile.",
     "priceEstimate": "<strong>Swiss Ivoclar E-Max Veneer prices start at £250 / €285 / $310 per tooth.</strong> All-inclusive smile makeover packages (8, 16, or 20 veneers) include 3D Digital Smile Design, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
@@ -1120,7 +1120,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single E-Max Veneer (Ivoclar IPS e.max)",
         "brand": "Swiss Ivoclar Vivadent IPS e.max Press",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-1.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "included": [
           "1x Authentic Swiss Ivoclar IPS e.max Laminate Veneer",
           "3D Digital Intraoral Scan & Smile Line Analysis",
@@ -1139,14 +1139,14 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "8-Unit Smile Line Makeover (Upper Arch)",
         "brand": "Swiss Ivoclar IPS e.max",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-2.jpg",
+        "img": "/packages/pkg-emax.webp",
         "popular": true,
         "included": [
           "8x High-Translucency E-Max Laminate Veneers (Upper Social Smile)",
           "Bespoke 3D Digital Smile Design (DSD) & Facial Symmetry Simulation",
           "Laser gum recontouring & aesthetic gingival leveling (if required)",
           "Aesthetic temporary smile trial fitted on Day 1",
-          "4-Star Hotel Stay with Breakfast in Istanbul (6 Nights)",
+          "4-Star Hotel Stay with Breakfast in Antalya (6 Nights)",
           "VIP Mercedes Chauffeur Transfers (Airport - Hotel - Clinic)",
           "10-Year warranty against veneer debonding and porcelain chipping"
         ],
@@ -1160,12 +1160,12 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "16-Unit Full Smile Makeover (8 Upper + 8 Lower)",
         "brand": "Swiss Ivoclar IPS e.max Press",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-3.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "included": [
           "16x Custom E-Max Laminate Veneers (8 Upper + 8 Lower Arches)",
           "Full 3D Facial Aesthetic Mapping & Golden Ratio Smile Harmony",
           "Dual arch aesthetic temporary mock-up for live smile preview",
-          "5-Star Luxury Hotel Accommodation in Istanbul (6 Nights)",
+          "5-Star Luxury Hotel Accommodation in Antalya (6 Nights)",
           "Private VIP Mercedes Airport & Clinic Chauffeur",
           "Professional clinical teeth whitening for non-veneered molars",
           "Comprehensive post-op care pack & custom night guard"
@@ -1180,7 +1180,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Hollywood Smile Makeover",
         "brand": "Swiss Ivoclar IPS e.max CAD / Press",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-3.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "20x Ultra-Thin E-Max Laminate Veneers (10 Upper + 10 Lower Arches)",
           "Complete gnathological bite balancing & aesthetic harmony",
@@ -1199,7 +1199,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Lumineers (Prepless / Ultra-Thin)",
         "brand": "Cerinate / E-Max Ultra-Thin (0.2 mm)",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/lumineer-copy.webp",
+        "img": "/treatments/accordion/lumineers.webp",
         "included": [
           "1x Ultra-Thin Prepless Lumineer Veneer (No Drilling / No Injections)",
           "High-Precision 3D Digital Intraoral Impression",
@@ -1217,7 +1217,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Combination Makeover (10 E-Max + Laser Whitening)",
         "brand": "Swiss Ivoclar IPS e.max + Philips Zoom Laser",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/composite-laminate-copy.webp",
+        "img": "/treatments/accordion/composite-laminate.webp",
         "included": [
           "10x E-Max Laminate Veneers for Upper Visible Smile",
           "Philips Zoom 2 Laser In-Clinic Whitening for Lower Arch",
@@ -1263,15 +1263,15 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         ]
       },
       {
-        "q": "How many days do I need to stay in Istanbul for E-Max veneers?",
+        "q": "How many days do I need to stay in Antalya for E-Max veneers?",
         "a": [
-          "A standard E-Max smile makeover requires 5 to 7 days in Istanbul. During this single visit, we perform the 3D digital scan, custom smile design, shade matching trial, CAD/CAM ceramic milling, and final resin bonding."
+          "A standard E-Max smile makeover requires 5 to 7 days in Antalya. During this single visit, we perform the 3D digital scan, custom smile design, shade matching trial, CAD/CAM ceramic milling, and final resin bonding."
         ]
       },
       {
         "q": "What is included in the E-Max Veneers all-inclusive package?",
         "a": [
-          "Our smile makeover packages include authentic Swiss Ivoclar IPS e.max veneers, 3D Digital Smile Design, 4/5-star luxury hotel accommodation with breakfast, and private VIP Mercedes transfers between Istanbul Airport (IST / SAW), hotel, and our clinic.",
+          "Our smile makeover packages include authentic Swiss Ivoclar IPS e.max veneers, 3D Digital Smile Design, 4/5-star luxury hotel accommodation with breakfast, and private VIP Mercedes transfers between Antalya Airport (IST / SAW), hotel, and our clinic.",
           "There are no hidden costs, consultation fees, or unexpected lab charges."
         ]
       }

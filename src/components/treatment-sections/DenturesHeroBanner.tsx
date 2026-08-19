@@ -9,43 +9,43 @@ import styles from './DenturesHeroBanner.module.css';
 const HERO_I18N = {
   en: {
     tag: 'TREATMENTS',
-    title: 'Dentures in Istanbul, Turkey | Full & Partial Removable Teeth Solutions',
+    title: 'Dentures in Antalya, Turkey | Full & Partial Removable Teeth Solutions',
     subtitle: 'Regain comfort and confidence with custom-made dentures designed to fit your smile.',
     btnText: 'Contact',
   },
   tr: {
     tag: 'TEDAVİLERİMİZ',
-    title: 'İstanbul Diş Protezleri | Tam & Bölümlü Hareketli Protez Çözümleri',
+    title: 'Antalya Diş Protezleri | Tam & Bölümlü Hareketli Protez Çözümleri',
     subtitle: 'Gülüşünüze tam oturan, size özel tasarlanmış diş protezleriyle konfor ve özgüveninizi yeniden kazanın.',
     btnText: 'İletişime Geç',
   },
   de: {
     tag: 'BEHANDLUNGEN',
-    title: 'Zahnersatz & Prothesen in Istanbul, Türkei | Voll- & Teilprothesen',
+    title: 'Zahnersatz & Prothesen in Antalya, Türkei | Voll- & Teilprothesen',
     subtitle: 'Gewinnen Sie Komfort und Selbstvertrauen zurück mit maßgefertigtem Zahnersatz, der perfekt zu Ihrem Lächeln passt.',
     btnText: 'Kontakt',
   },
   pl: {
     tag: 'ZABIEGI',
-    title: 'Protezy Zębowe w Stambule, Turcja | Całkowite i Częściowe Protezy Ruchome',
+    title: 'Protezy Zębowe w Antalyi, Turcja | Całkowite i Częściowe Protezy Ruchome',
     subtitle: 'Odzyskaj komfort i pewność siebie dzięki indywidualnie dopasowanym protezom zębowym.',
     btnText: 'Kontakt',
   },
   pt: {
     tag: 'TRATAMENTOS',
-    title: 'Próteses Dentárias em Istambul, Turquia | Soluções Totais e Parciais Removíveis',
+    title: 'Próteses Dentárias em Antalya, Turquia | Soluções Totais e Parciais Removíveis',
     subtitle: 'Recupere o conforto e a confiança com próteses dentárias personalizadas e adaptadas ao seu sorriso.',
     btnText: 'Contato',
   },
   es: {
     tag: 'TRATAMIENTOS',
-    title: 'Dentaduras Postizas en Estambul, Turquía | Prótesis Totales y Parciales Removibles',
+    title: 'Dentaduras Postizas en Antalya, Turquía | Prótesis Totales y Parciales Removibles',
     subtitle: 'Recupere el confort y la confianza con dentaduras personalizadas diseñadas a la medida de su sonrisa.',
     btnText: 'Contacto',
   },
   ru: {
     tag: 'ЛЕЧЕНИЕ',
-    title: 'Зубные протезы в Стамбуле | Полные и частичные съемные конструкции',
+    title: 'Зубные протезы в Анталье | Полные и частичные съемные конструкции',
     subtitle: 'Верните комфорт и уверенность с индивидуальными зубными протезами, созданными специально для вас.',
     btnText: 'Записаться',
   },
@@ -60,10 +60,9 @@ export default function DenturesHeroBanner() {
       <Image
         src="/images/treatments/dentures.jpg"
         alt={d.title}
-        width={1600}
-        height={692}
+        fill
         priority
-        fetchPriority="high"
+        sizes="100vw"
         className={styles.back1}
       />
       <div className={styles.content}>

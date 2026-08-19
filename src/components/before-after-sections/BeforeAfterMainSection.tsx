@@ -230,7 +230,7 @@ export default function BeforeAfterMainSection() {
               <div className={styles.imSide}>
                 <Link href="/contact" aria-label="Free consultation" className={styles.imLink}>
                   <Image
-                    src="/prices-consultation.webp"
+                    src="/mss-afterpics-patients.png"
                     alt="Master Smile Studio VIP Consultation"
                     fill
                     sizes="320px"

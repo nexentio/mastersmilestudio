@@ -14,31 +14,31 @@ interface GalleryHeroBannerProps {
 const GALLERY_HERO_DATA: Record<string, { title: string; subtitle: string }> = {
   en: {
     title: 'General Clinic Gallery',
-    subtitle: 'Explore our state-of-the-art dental clinic, luxury treatment suites, and modern technology in Istanbul',
+    subtitle: 'Explore our state-of-the-art dental clinic, luxury treatment suites, and modern technology in Antalya',
   },
   tr: {
     title: 'Klinik Genel Galerisi',
-    subtitle: "İstanbul'daki son teknoloji VIP diş kliniğimiz, dinlenme alanlarımız ve modern tedavi ünitelerimiz",
+    subtitle: "Antalya'daki son teknoloji VIP diş kliniğimiz, dinlenme alanlarımız ve modern tedavi ünitelerimiz",
   },
   de: {
     title: 'Allgemeine Klinikgalerie',
-    subtitle: 'Entdecken Sie unsere hochmoderne Zahnklinik, luxuriösen Behandlungsräume und innovative Technologie in Istanbul',
+    subtitle: 'Entdecken Sie unsere hochmoderne Zahnklinik, luxuriösen Behandlungsräume und innovative Technologie in Antalya',
   },
   pl: {
     title: 'Ogólna Galeria Kliniki',
-    subtitle: 'Zobacz naszą ultranowoczesną klinikę stomatologiczną, luksusowe gabinety i zaawansowaną technologię w Stambule',
+    subtitle: 'Zobacz naszą ultranowoczesną klinikę stomatologiczną, luksusowe gabinety i zaawansowaną technologię w Antalyi',
   },
   pt: {
     title: 'Galeria Geral da Clínica',
-    subtitle: 'Explore a nossa clínica dentária de última geração, suites de tratamento VIP e tecnologia avançada em Istambul',
+    subtitle: 'Explore a nossa clínica dentária de última geração, suites de tratamento VIP e tecnologia avançada em Antalya',
   },
   es: {
     title: 'Galería General de la Clínica',
-    subtitle: 'Explore nuestra clínica dental de última generación, salas de tratamiento VIP y tecnología moderna en Estambul',
+    subtitle: 'Explore nuestra clínica dental de última generación, salas de tratamiento VIP y tecnología moderna en Antalya',
   },
   ru: {
     title: 'Общая галерея клиники',
-    subtitle: 'Познакомьтесь с нашей ультрасовременной стоматологической клиникой, VIP-кабинетами и передовым оборудованием в Стамбуле',
+    subtitle: 'Познакомьтесь с нашей ультрасовременной стоматологической клиникой, VIP-кабинетами и передовым оборудованием в Анталье',
   },
 };
 

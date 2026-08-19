@@ -2,8 +2,8 @@
   "slug": "dental-implants",
   "hero": {
     "badge": "Certyfikowana Klinika Chirurgii Stomatologicznej JCI & ISO",
-    "title": "Implanty zębowe w Stambule",
-    "subtitle": "Odzyskaj piękny uśmiech dzięki dożywotniej gwarancji na implanty premium i doświadczonym chirurgom w Stambule.",
+    "title": "Implanty zębowe w Antalyi",
+    "subtitle": "Odzyskaj piękny uśmiech dzięki dożywotniej gwarancji na implanty premium i doświadczonym chirurgom w Antalyi.",
     "features": [
       "Dożywotnia gwarancja na marki premium",
       "Cyfrowe planowanie 3D CBCT",
@@ -13,7 +13,7 @@
     "secondaryBtn": "Zobacz pakiety i szczegóły"
   },
   "intro": {
-    "title": "Implanty zębowe w Stambule – Master Smile Studio Turcja",
+    "title": "Implanty zębowe w Antalyi – Master Smile Studio Turcja",
     "whatIsTitle": "Czym są implanty zębowe?",
     "whatIsP1": "Implant zębowy to sztuczny korzeń zęba, który zastępuje brakujący ząb. Wygląda jak mała śruba, zwykle wykonana z tytanu, i jest wprowadzany do kości szczęki. Do pełnej odbudowy zęba stosuje się trzy główne elementy:",
     "parts": [
@@ -30,8 +30,8 @@
         "desc": "widoczna część wyglądająca jak naturalny ząb."
       }
     ],
-    "healingP": "Gdy implant zrośnie się z kością (osteointegracja), zakładana jest korona. W Master Smile Studio w Stambule nasz zespół chirurgów stomatologicznych zapewnia bezbolesny i bezpieczny zabieg.",
-    "solutionP": "Jeśli brakuje Ci jednego lub więcej zębów, implanty zębowe w Stambule są trwałym, bezpiecznym i estetycznym rozwiązaniem.",
+    "healingP": "Gdy implant zrośnie się z kością (osteointegracja), zakładana jest korona. W Master Smile Studio w Antalyi nasz zespół chirurgów stomatologicznych zapewnia bezbolesny i bezpieczny zabieg.",
+    "solutionP": "Jeśli brakuje Ci jednego lub więcej zębów, implanty zębowe w Antalyi są trwałym, bezpiecznym i estetycznym rozwiązaniem.",
     "videoUrl": "https://www.youtube.com/embed/R081L98DAls?t=21"
   },
   "rightTreatment": {
@@ -82,8 +82,8 @@
     }
   },
   "whyChoose": {
-    "title": "Dlaczego warto wybrać implanty zębowe w Stambule?",
-    "intro": "Stambuł to wiodący ośrodek turystyki stomatologicznej na świecie. Dlaczego pacjenci z całego świata wybierają Master Smile Studio Turcja:",
+    "title": "Dlaczego warto wybrać implanty zębowe w Antalyi?",
+    "intro": "Antalya to wiodący ośrodek turystyki stomatologicznej na świecie. Dlaczego pacjenci z całego świata wybierają Master Smile Studio Turcja:",
     "reasons": [
       {
         "title": "Oszczędność do 70%",
@@ -107,12 +107,12 @@
       },
       {
         "title": "Niezapomniany pobyt",
-        "desc": "Połącz leczenie na najwyższym poziomie z odkrywaniem uroków Stambułu."
+        "desc": "Połącz leczenie na najwyższym poziomie z odkrywaniem uroków Antalyi."
       }
     ]
   },
   "cost": {
-    "heading": "Implanty zębowe – Koszt i Ceny w Stambule, Turcja",
+    "heading": "Implanty zębowe – Koszt i Ceny w Antalyi, Turcja",
     "tableIntro": "Porównanie średnich cen implantów zębowych w Turcji i innych krajach:",
     "comparisonTable": [
       {
@@ -153,7 +153,7 @@
     ]
   },
   "seo": {
-    "title": "Implanty zębowe w Stambule | Master Smile Studio Turcja",
-    "description": "Światowej klasy implanty zębowe w Stambule. Dożywotnia gwarancja, chirurdzy stomatologiczni. Zamów bezpłatną konsultację online."
+    "title": "Implanty zębowe w Antalyi | Master Smile Studio Turcja",
+    "description": "Światowej klasy implanty zębowe w Antalyi. Dożywotnia gwarancja, chirurdzy stomatologiczni. Zamów bezpłatną konsultację online."
   }
 }

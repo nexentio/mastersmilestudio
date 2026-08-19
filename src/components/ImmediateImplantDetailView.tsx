@@ -150,7 +150,7 @@ interface DetailDictionary {
 const DICTIONARIES: Record<string, DetailDictionary> = {
   "en": {
     "introBadge": "SAME-DAY EXTRACTION & IMMEDIATE LOADING",
-    "introTitle": "Immediate Dental Implants in Istanbul: Same-Day Tooth Extraction & Implantation",
+    "introTitle": "Immediate Dental Implants in Antalya: Same-Day Tooth Extraction & Implantation",
     "introLead": "Eliminate 3–6 months of waiting with computer-guided immediate socket implantation—extracting damaged teeth, inserting high-torque titanium fixtures, and attaching aesthetic fixed temporary crowns in a single clinical visit.",
     "introP1": "Immediate dental implant placement (Type 1 ITI Consensus) is the gold standard for preserving natural alveolar bone architecture and interdental gum papillae. Instead of waiting for an extraction socket to heal and collapse over 3–6 months, our oral surgeons place a precision titanium implant directly into the fresh alveolus, bone-grafting any micro-gap with biocompatible granules and sealing the site with an aesthetic fixed crown.",
     "introP2": "Using 3D CBCT tomographic mapping and Swiss/German implant geometries with aggressive apical cutting threads, we achieve primary insertion torque values exceeding 35–50 Ncm. This superior initial stability allows safe immediate temporary restoration, ensuring you never leave Master Smile Studio with a missing tooth or an uncomfortable removable flipper.",
@@ -160,7 +160,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "introP3LinkAll6": "All-on-6 Dental Implants",
     "introP3And": ", or ",
     "introP3LinkZirconium": "Zirconium Crowns & Bridges",
-    "introP3Tail": " for comprehensive aesthetic rehabilitation in Istanbul.",
+    "introP3Tail": " for comprehensive aesthetic rehabilitation in Antalya.",
     "compareTitle": "Objective Clinical Comparison: Immediate Loading vs. Delayed Protocols",
     "compareSubtitle": "A scientific analysis of clinical timelines, alveolar bone preservation, and aesthetic outcomes across implant placement modalities.",
     "compareTableHeaders": {
@@ -429,7 +429,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       {
         "name": "NucleOSS T6 Active Package",
         "brand": "NucleOSS Dental Systems (Grade 4 Pure Titanium)",
-        "duration": "4-5 Days in Istanbul (2 Visits Total)",
+        "duration": "4-5 Days in Antalya (2 Visits Total)",
         "img": "/packages/nucleoss.webp",
         "price": {
           "EUR": "€490",
@@ -449,7 +449,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       {
         "name": "DXL German Active Package",
         "brand": "DXL Dental Precision (German Medical Grade Titanium)",
-        "duration": "4-5 Days in Istanbul (2 Visits Total)",
+        "duration": "4-5 Days in Antalya (2 Visits Total)",
         "img": "/packages/dxl.webp",
         "price": {
           "EUR": "€690",
@@ -470,7 +470,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       {
         "name": "Straumann BLX / SLActive Package",
         "brand": "Straumann Group (Switzerland - Roxolid & SLActive)",
-        "duration": "4-5 Days in Istanbul (2 Visits Total)",
+        "duration": "4-5 Days in Antalya (2 Visits Total)",
         "img": "/packages/straumann.webp",
         "popular": true,
         "price": {
@@ -492,7 +492,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       {
         "name": "Megagen AnyRidge Package",
         "brand": "Megagen International (Knife-Thread Technology)",
-        "duration": "4-5 Days in Istanbul (2 Visits Total)",
+        "duration": "4-5 Days in Antalya (2 Visits Total)",
         "img": "/packages/megagen.webp",
         "price": {
           "EUR": "€790",
@@ -513,7 +513,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       {
         "name": "Neodent Grand Morse Package",
         "brand": "Neodent by Straumann Group (Brazil / Switzerland)",
-        "duration": "4-5 Days in Istanbul (2 Visits Total)",
+        "duration": "4-5 Days in Antalya (2 Visits Total)",
         "img": "/packages/neodent.webp",
         "price": {
           "EUR": "€720",
@@ -534,7 +534,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       {
         "name": "Hiossen ETIII Active Package",
         "brand": "Hiossen Dental USA (Sandblasted SA Surface)",
-        "duration": "4-5 Days in Istanbul (2 Visits Total)",
+        "duration": "4-5 Days in Antalya (2 Visits Total)",
         "img": "/packages/hiossen.webp",
         "price": {
           "EUR": "€750",
@@ -553,7 +553,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         ]
       }
     ],
-    "costTitle": "International Cost Comparison: Immediate Implants (UK / Germany vs Istanbul)",
+    "costTitle": "International Cost Comparison: Immediate Implants (UK / Germany vs Antalya)",
     "costSubtitle": "Compare real clinical costs per single immediate tooth replacement including extraction, abutment, temporary crown, and permanent zirconia restoration.",
     "costTableHeaders": {
       "country": "Location & Clinic",
@@ -575,14 +575,14 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "valueAdvantage": "Baseline German Market Cost"
       },
       {
-        "country": "Master Smile Studio (Istanbul, Turkey) ⭐",
+        "country": "Master Smile Studio (Antalya, Turkey) ⭐",
         "costPerUnit": "€490 – €950 (£420 – £815)",
         "inclusions": "100% All-Inclusive: 3D CBCT, atraumatic extraction, temporary crown, custom titanium abutment, monolithic zirconia crown, VIP transfer & 5-star hotel.",
         "valueAdvantage": "65% – 75% Net Savings (Swiss/German Quality)"
       }
     ],
     "faqTitle": "Frequently Asked Questions: Immediate Dental Implants",
-    "faqSubtitle": "Clear, clinically validated answers regarding same-day extraction, immediate temporary crowns, and our health tourism process in Istanbul.",
+    "faqSubtitle": "Clear, clinically validated answers regarding same-day extraction, immediate temporary crowns, and our health tourism process in Antalya.",
     "faqGroup1Title": "Clinical & Surgical FAQ (Same-Day Protocol)",
     "faqGroup2Title": "Health Tourism, VIP Inclusions & Warranty FAQ",
     "faqsPart1": [
@@ -629,8 +629,8 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     ],
     "faqsPart2": [
       {
-        "q": "How many days do I need to stay in Istanbul for immediate implants?",
-        "a": "The first stage requires a 4-to-5 day stay in Istanbul for 3D CBCT diagnostics, extraction, guided implant placement, and fitting of your fixed temporary crown. The final zirconia restoration is completed during a second 5-day visit 3 months later."
+        "q": "How many days do I need to stay in Antalya for immediate implants?",
+        "a": "The first stage requires a 4-to-5 day stay in Antalya for 3D CBCT diagnostics, extraction, guided implant placement, and fitting of your fixed temporary crown. The final zirconia restoration is completed during a second 5-day visit 3 months later."
       },
       {
         "q": "Are airport transfers and 5-star hotel accommodations included?",
@@ -660,7 +660,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
   },
   "tr": {
     "introBadge": "TEK SEANSTA ÇEKİM VE AYNI GÜN İMPLANT",
-    "introTitle": "İstanbul Aynı Gün İmplant Tedavisi: Çekim, İmplant ve Sabit Diş Tek Günde",
+    "introTitle": "Antalya Aynı Gün İmplant Tedavisi: Çekim, İmplant ve Sabit Diş Tek Günde",
     "introLead": "Diş çekimi sonrası 3–6 ay beklemeye son: Çekilen dişin yuvasına anında yüksek tutuculuklu titanyum implant yerleştirilir ve 24 saat içinde geçici sabit estetik kuronunuz takılır.",
     "introP1": "Aynı gün implant (Immediate Implant / Tip 1 İmplantasyon), diş çekimi ile kemik kaybı yaşanmadan soketin doğal anatomisini ve diş eti papillerini koruyan altın standarttır. Çekim boşluğu erimeden, çene cerrahlarımız titanyum gövdeyi doğrudan sokete yerleştirir, mikro boşlukları kemik tozuyla doldurur ve aynı seansta sabit geçici dişinizi takar.",
     "introP2": "Kliniğimizde 3D Tomografi (CBCT) kılavuzluğunda uygulanan agresif yivli İsviçre ve Alman implant geometrileri ile 35–50 Ncm üzerinde primer tutuculuk elde edilir. Bu yüksek stabilite sayesinde asla dişsiz kalmadan, sosyal hayatınıza ara vermeden kliniğimizden yeni dişinizle ayrılırsınız.",
@@ -939,7 +939,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       {
         "name": "NucleOSS T6 Active Paketi",
         "brand": "NucleOSS Dental Systems (Grade 4 Saf Titanyum)",
-        "duration": "İstanbul’da 4-5 Gün (Toplam 2 Ziyaret)",
+        "duration": "Antalya’da 4-5 Gün (Toplam 2 Ziyaret)",
         "img": "/packages/nucleoss.webp",
         "price": {
           "EUR": "€490",
@@ -959,7 +959,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       {
         "name": "DXL German Active Paketi",
         "brand": "DXL Dental Precision (Alman Medikal Titanyum)",
-        "duration": "İstanbul’da 4-5 Gün (Toplam 2 Ziyaret)",
+        "duration": "Antalya’da 4-5 Gün (Toplam 2 Ziyaret)",
         "img": "/packages/dxl.webp",
         "price": {
           "EUR": "€690",
@@ -980,7 +980,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       {
         "name": "Straumann BLX / SLActive Paketi",
         "brand": "Straumann Group (İsviçre - Roxolid & SLActive)",
-        "duration": "İstanbul’da 4-5 Gün (Toplam 2 Ziyaret)",
+        "duration": "Antalya’da 4-5 Gün (Toplam 2 Ziyaret)",
         "img": "/packages/straumann.webp",
         "popular": true,
         "price": {
@@ -1002,7 +1002,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       {
         "name": "Megagen AnyRidge Paketi",
         "brand": "Megagen International (Bıçak Yiv Teknolojisi)",
-        "duration": "İstanbul’da 4-5 Gün (Toplam 2 Ziyaret)",
+        "duration": "Antalya’da 4-5 Gün (Toplam 2 Ziyaret)",
         "img": "/packages/megagen.webp",
         "price": {
           "EUR": "€790",
@@ -1023,7 +1023,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       {
         "name": "Neodent Grand Morse Paketi",
         "brand": "Neodent by Straumann Group (Brezilya / İsviçre)",
-        "duration": "İstanbul’da 4-5 Gün (Toplam 2 Ziyaret)",
+        "duration": "Antalya’da 4-5 Gün (Toplam 2 Ziyaret)",
         "img": "/packages/neodent.webp",
         "price": {
           "EUR": "€720",
@@ -1044,7 +1044,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       {
         "name": "Hiossen ETIII Active Paketi",
         "brand": "Hiossen Dental USA (Kumlama SA Yüzey)",
-        "duration": "İstanbul’da 4-5 Gün (Toplam 2 Ziyaret)",
+        "duration": "Antalya’da 4-5 Gün (Toplam 2 Ziyaret)",
         "img": "/packages/hiossen.webp",
         "price": {
           "EUR": "€750",
@@ -1063,7 +1063,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         ]
       }
     ],
-    "costTitle": "Uluslararası Maliyet Karşılaştırması: Aynı Gün İmplant (İngiltere / Almanya vs İstanbul)",
+    "costTitle": "Uluslararası Maliyet Karşılaştırması: Aynı Gün İmplant (İngiltere / Almanya vs Antalya)",
     "costSubtitle": "Çekim, dayanak, geçici kuron ve kalıcı zirkonyum dahil tek diş implant tedavisinin reel maliyet karşılaştırması.",
     "costTableHeaders": {
       "country": "Ülke ve Klinik",
@@ -1085,14 +1085,14 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "valueAdvantage": "Almanya Piyasa Tabanı"
       },
       {
-        "country": "Master Smile Studio (İstanbul, Türkiye) ⭐",
+        "country": "Master Smile Studio (Antalya, Türkiye) ⭐",
         "costPerUnit": "€490 – €950 (£420 – £815)",
         "inclusions": "%100 Her Şey Dahil: 3D Tomografi, atravmatik çekim, geçici kuron, özel titanyum dayanak, monolitik zirkonyum diş, VIP transfer ve 5 yıldızlı otel.",
         "valueAdvantage": "%65 – %75 Net Tasarruf (İsviçre/Alman Kalitesi)"
       }
     ],
     "faqTitle": "Sıkça Sorulan Sorular: Aynı Gün İmplant Tedavisi",
-    "faqSubtitle": "Aynı gün çekim ve yükleme, geçici sabit dişler ve İstanbul sağlık turizmi sürecimiz hakkında hekim onaylı yanıtlar.",
+    "faqSubtitle": "Aynı gün çekim ve yükleme, geçici sabit dişler ve Antalya sağlık turizmi sürecimiz hakkında hekim onaylı yanıtlar.",
     "faqGroup1Title": "Klinik ve Cerrahi SSS (Aynı Gün Protokolü)",
     "faqGroup2Title": "Sağlık Turizmi, VIP Hizmetler ve Garanti SSS",
     "faqsPart1": [
@@ -1139,7 +1139,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     ],
     "faqsPart2": [
       {
-        "q": "Aynı gün implant için İstanbul’da kaç gün kalmam gerekir?",
+        "q": "Aynı gün implant için Antalya’da kaç gün kalmam gerekir?",
         "a": "İlk aşamada çekim, implant ve geçici diş için 4–5 günlük bir ziyaret yeterlidir. 3 ay sonra kalıcı monolitik zirkonyum dişler için 5 günlük ikinci bir ziyaret yapılır."
       },
       {
@@ -1208,8 +1208,8 @@ export default function ImmediateImplantDetailView() {
           {/* Full-width 16:9 Clinical Immediate Implant Video */}
           <div className={styles.mainVideoWrap}>
             <iframe
-              src="https://www.youtube.com/embed/g2T5Bhy2uYc"
-              title="Immediate Same-Day Dental Implants in Istanbul Clinical Procedure"
+              src="https://www.youtube.com/embed/eiTTit9PLrQ"
+              title="Immediate Same-Day Dental Implants in Antalya Clinical Procedure"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             />
@@ -1502,7 +1502,7 @@ export default function ImmediateImplantDetailView() {
         </div>
       </section>
 
-      {/* 6. INTERNATIONAL COST COMPARISON SECTION (UK / GERMANY vs ISTANBUL) */}
+      {/* 6. INTERNATIONAL COST COMPARISON SECTION (UK / GERMANY vs ANTALYA) */}
       <section aria-labelledby="immediate-cost-heading" className={styles.costSection}>
         <div className={styles.container}>
           <div className={styles.costHeader}>

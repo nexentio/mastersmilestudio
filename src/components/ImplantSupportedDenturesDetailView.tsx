@@ -56,7 +56,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "2-Implant Snap-On Overdenture (Lower Jaw)",
         "brand": "Osstem / Medentika Locator System",
         "duration": "3+5 Working Days (2 Visits)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-package-10.jpg",
+        "img": "/packages/pkg-4.webp",
         "popular": true,
         "included": [
           "2x High-grade Titanium Implants (Mandibular placement)",
@@ -76,7 +76,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "4-Implant Snap-On Overdenture (Upper or Lower)",
         "brand": "Medentika (Straumann Group) / Osstem",
         "duration": "3+5 Working Days (2 Visits)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-implant-package-2.jpg",
+        "img": "/packages/pkg-5.webp",
         "included": [
           "4x Precision Titanium Implants for maximum retention",
           "4x Genuine Locator Abutments & Dual-retention Housing System",
@@ -95,7 +95,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "4-Implant CAD/CAM Titanium Bar Overdenture",
         "brand": "Custom Milled Titanium Bar + Clip Retention",
         "duration": "3+5 Working Days (2 Visits)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-implant-package-3.jpg",
+        "img": "/packages/pkg-6.webp",
         "included": [
           "4x High-torque Titanium Implants",
           "Custom CAD/CAM Milled Titanium Dolder/Ackermann Bar",
@@ -114,7 +114,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Straumann 4-Implant Locator Overdenture",
         "brand": "Straumann SLA + Genuine Straumann Locator Abutments",
         "duration": "3+5 Working Days (2 Visits)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-1.jpg",
+        "img": "/packages/pkg-1.webp",
         "included": [
           "4x Genuine Swiss Straumann SLA Implants",
           "4x Straumann Original Locator Attachments",
@@ -133,7 +133,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Nobel Biocare 4-Implant Bar-Retained Denture",
         "brand": "Nobel Biocare CC + Precision Milled Titanium Bar",
         "duration": "3+5 Working Days (2 Visits)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-2.jpg",
+        "img": "/packages/pkg-2.webp",
         "included": [
           "4x NobelParallel CC Titanium Grade 4 Implants",
           "NobelProcera precision-milled rigid titanium bar",
@@ -152,7 +152,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Full Mouth Dual-Arch Overdenture Package",
         "brand": "8 Implants (4 Upper + 4 Lower) + Dual Locator System",
         "duration": "3+5 Working Days (2 Visits)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-3.jpg",
+        "img": "/packages/pkg-3.webp",
         "included": [
           "8x Titanium Implants (4 Upper + 4 Lower Arch)",
           "8x Genuine Locator Attachments & Replacement Cap Sets",
@@ -183,14 +183,14 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
       {
         "q": "Will you help me with accommodation?",
         "a": [
-          "Yes, of course. Our patients regularly travel from abroad, so we make sure you feel supported not only with your dental treatment but also with your stay in Istanbul. We can recommend trusted hotels close to our clinic, and if you prefer, we can also help arrange your booking.",
+          "Yes, of course. Our patients regularly travel from abroad, so we make sure you feel supported not only with your dental treatment but also with your stay in Antalya. We can recommend trusted hotels close to our clinic, and if you prefer, we can also help arrange your booking.",
           "Our goal is to make your trip as smooth and stress-free as possible, so you can focus on your treatment and enjoy your time in the city. We’ll gladly assist you with accommodation and make sure you have comfortable options during your visit."
         ]
       },
       {
         "q": "Is it safe to travel to Turkey?",
         "a": [
-          "Yes! Turkey is a very popular destination for international visitors and millions of tourists travel here safely every year. Cities like Istanbul are not only cultural and historical centers but also well-prepared to welcome patients from abroad with modern clinics, hotels, and transport services and many world-renowned touristic attractions.",
+          "Yes! Turkey is a very popular destination for international visitors and millions of tourists travel here safely every year. Cities like Antalya are not only cultural and historical centers but also well-prepared to welcome patients from abroad with modern clinics, hotels, and transport services and many world-renowned touristic attractions.",
           "Like in any big city, it’s always wise to take normal travel precautions — such as keeping your valuables safe and being aware of your surroundings. Our clinic also helps arrange trusted transportation and accommodation options to make sure you feel comfortable and secure during your stay. With the extra support we provide, your dental trip can also be a smooth and worry-free experience."
         ]
       },
@@ -357,7 +357,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "2 İmplantlı Çıtçıtlı Alt Çene Protezi (Locator)",
         "brand": "Osstem / Medentika Locator Sistemi",
         "duration": "3+5 İş Günü (2 Ziyaret)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-package-10.jpg",
+        "img": "/packages/pkg-4.webp",
         "popular": true,
         "included": [
           "2 Adet Yüksek Dayanımlı Titanyum İmplant (Alt çene)",
@@ -377,7 +377,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "4 İmplantlı Çıtçıtlı Protez (Üst veya Alt Çene)",
         "brand": "Medentika (Straumann Grubu) / Osstem",
         "duration": "3+5 İş Günü (2 Ziyaret)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-implant-package-2.jpg",
+        "img": "/packages/pkg-5.webp",
         "included": [
           "Maksimum tutuculuk için 4 Adet Titanyum İmplant",
           "4 Adet Orijinal Locator Dayanak ve Çift Tutucu Kovan Sistemi",
@@ -396,7 +396,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "4 İmplantlı CAD/CAM Titanyum Barlı Protez",
         "brand": "Özel Frezelenmiş Titanyum Bar + Klips Tutucular",
         "duration": "3+5 İş Günü (2 Ziyaret)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-implant-package-3.jpg",
+        "img": "/packages/pkg-6.webp",
         "included": [
           "4 Adet Yüksek Torklu Titanyum İmplant",
           "CAD/CAM Teknolojisiyle Özel Üretilen Titanyum Dolder/Ackermann Bar",
@@ -415,7 +415,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Straumann 4 İmplantlı Locator Protez Paketi",
         "brand": "Straumann SLA + Orijinal Straumann Locator Dayanakları",
         "duration": "3+5 İş Günü (2 Ziyaret)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-1.jpg",
+        "img": "/packages/pkg-1.webp",
         "included": [
           "4 Adet Orijinal İsviçre Straumann SLA Titanyum İmplant",
           "4 Adet Straumann Orijinal Locator Parçası",
@@ -434,7 +434,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Nobel Biocare 4 İmplantlı Barlı Protez Paketi",
         "brand": "Nobel Biocare CC + NobelProcera Freze Bar",
         "duration": "3+5 İş Günü (2 Ziyaret)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-2.jpg",
+        "img": "/packages/pkg-2.webp",
         "included": [
           "4 Adet NobelParallel CC Grade 4 Titanyum İmplant",
           "NobelProcera Hassas Frezelenmiş Rijit Titanyum Bar Altyapısı",
@@ -453,7 +453,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Tam Ağız Çift Çene Çıtçıtlı Protez Paketi",
         "brand": "8 İmplant (4 Üst + 4 Alt) + Çift Locator Sistemi",
         "duration": "3+5 İş Günü (2 Ziyaret)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-3.jpg",
+        "img": "/packages/pkg-3.webp",
         "included": [
           "8 Adet Titanyum İmplant (4 Üst Çene + 4 Alt Çene)",
           "8 Adet Orijinal Locator Tutucu ve Yedek Lastik Kiti",
@@ -484,14 +484,14 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "q": "Konaklama konusunda yardımcı oluyor musunuz?",
         "a": [
           "Evet, kesinlikle. Yurtdışından ve şehir dışından gelen hastalarımızın konforu için kliniğimize yakın 4 ve 5 yıldızlı anlaşmalı otellerimizde konaklama rezervasyonlarınızı organize ediyoruz.",
-          "Amacımız İstanbul seyahatinizi tamamen stressiz hale getirmek ve sadece yeni gülüşünüze odaklanmanızı sağlamaktır."
+          "Amacımız Antalya seyahatinizi tamamen stressiz hale getirmek ve sadece yeni gülüşünüze odaklanmanızı sağlamaktır."
         ]
       },
       {
         "q": "Türkiye’ye seyahat etmek güvenli mi?",
         "a": [
           "Evet! Türkiye her yıl milyonlarca uluslararası ziyaretçiyi ve sağlık turistini ağırlayan güvenli bir ülkedir.",
-          "İstanbul dünya standartlarında modern kliniklere, otellere ve VIP transfer hizmetlerine ev sahipliği yapmaktadır. Kliniğimiz tüm transfer ve rehberlik süreçlerinizde yanınızdadır."
+          "Antalya dünya standartlarında modern kliniklere, otellere ve VIP transfer hizmetlerine ev sahipliği yapmaktadır. Kliniğimiz tüm transfer ve rehberlik süreçlerinizde yanınızdadır."
         ]
       },
       {
@@ -623,7 +623,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Proteza na 2 Implantach Zatrzaskowych (Żuchwa)",
         "brand": "System Locator Osstem / Medentika",
         "duration": "3+5 Dni Roboczych (2 Wizyty)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-package-10.jpg",
+        "img": "/packages/pkg-4.webp",
         "popular": true,
         "included": [
           "2x Implanty tytanowe wysokiej klasy (odcinek żuchwowy)",
@@ -643,7 +643,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Proteza na 4 Implantach Zatrzaskowych (Szczęka lub Żuchwa)",
         "brand": "Medentika (Grupa Straumann) / Osstem",
         "duration": "3+5 Dni Roboczych (2 Wizyty)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-implant-package-2.jpg",
+        "img": "/packages/pkg-5.webp",
         "included": [
           "4x Precyzyjne implanty tytanowe dla maksymalnej stabilizacji protezy",
           "4x Oryginalne łączniki Locator z systemem podwójnej retencji",
@@ -662,7 +662,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Proteza na Belce Tytanowej CAD/CAM na 4 Implantach",
         "brand": "Indywidualnie Frezowana Belka Tytanowa + Klipsy",
         "duration": "3+5 Dni Roboczych (2 Wizyty)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-implant-package-3.jpg",
+        "img": "/packages/pkg-6.webp",
         "included": [
           "4x Wysokomomentowe implanty tytanowe",
           "Indywidualna belka tytanowa Doldera/Ackermanna frezowana w technologii CAD/CAM",
@@ -681,7 +681,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Pakiet Straumann: Proteza Locator na 4 Implantach",
         "brand": "Straumann SLA + Oryginalne Łączniki Straumann Locator",
         "duration": "3+5 Dni Roboczych (2 Wizyty)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-1.jpg",
+        "img": "/packages/pkg-1.webp",
         "included": [
           "4x Oryginalne szwajcarskie implanty tytanowe Straumann SLA",
           "4x Oryginalne elementy retencyjne Straumann Locator",
@@ -700,7 +700,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Pakiet Nobel Biocare: Proteza na Belce na 4 Implantach",
         "brand": "Nobel Biocare CC + Precyzyjna Belka NobelProcera",
         "duration": "3+5 Dni Roboczych (2 Wizyty)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-2.jpg",
+        "img": "/packages/pkg-2.webp",
         "included": [
           "4x Implanty tytanowe klasy 4 NobelParallel CC",
           "Sztywna belka tytanowa frezowana precyzyjnie w systemie NobelProcera",
@@ -719,7 +719,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Pełna Rekonstrukcja Obu Łuków na Implantach (Góra + Dół)",
         "brand": "8 Implantów (4 Góra + 4 Dół) + Podwójny System Locator",
         "duration": "3+5 Dni Roboczych (2 Wizyty)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-3.jpg",
+        "img": "/packages/pkg-3.webp",
         "included": [
           "8x Implantów tytanowych (4 na szczękę górną + 4 na żuchwę)",
           "8x Oryginalnych łączników Locator oraz zapasowe matryce retencyjne",
@@ -750,14 +750,14 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
       {
         "q": "Czy pomagacie w organizacji zakwaterowania?",
         "a": [
-          "Tak, oczywiście. Nasi pacjenci regularnie przylatują z Polski i całej Europy, dlatego dbamy o pełen komfort nie tylko podczas wizyt w gabinecie, ale także w trakcie całego pobytu w Stambule. Polecamy i rezerwujemy sprawdzone, komfortowe hotele 4- i 5-gwiazdkowe położone blisko naszej kliniki.",
-          "Naszym celem jest zapewnienie Państwu bezstresowej podróży, aby mogli Państwo skupić się na metamorfozie uśmiechu i cieszyć się urokami Stambułu."
+          "Tak, oczywiście. Nasi pacjenci regularnie przylatują z Polski i całej Europy, dlatego dbamy o pełen komfort nie tylko podczas wizyt w gabinecie, ale także w trakcie całego pobytu w Antalyi. Polecamy i rezerwujemy sprawdzone, komfortowe hotele 4- i 5-gwiazdkowe położone blisko naszej kliniki.",
+          "Naszym celem jest zapewnienie Państwu bezstresowej podróży, aby mogli Państwo skupić się na metamorfozie uśmiechu i cieszyć się urokami Antalyi."
         ]
       },
       {
         "q": "Czy podróż do Turcji na leczenie stomatologiczne jest bezpieczna?",
         "a": [
-          "Tak! Turcja jest jednym z najpopularniejszych i najbezpieczniejszych kierunków turystyki medycznej na świecie, goszczącym miliony pacjentów rocznie. Stambuł oferuje ultra-nowoczesne kliniki, luksusowe hotele i wysokie standardy medyczne.",
+          "Tak! Turcja jest jednym z najpopularniejszych i najbezpieczniejszych kierunków turystyki medycznej na świecie, goszczącym miliony pacjentów rocznie. Antalya oferuje ultra-nowoczesne kliniki, luksusowe hotele i wysokie standardy medyczne.",
           "Zapewniamy prywatne transfery VIP z lotniska do hotelu i kliniki oraz dedykowaną opiekę koordynatora, co gwarantuje pełne poczucie bezpieczeństwa i komfortu od momentu lądowania."
         ]
       },
@@ -793,7 +793,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
       {
         "q": "Czy Wasze pakiety zawierają hotel i transfery VIP?",
         "a": [
-          "Tak, nasze pakiety leczenia implantologicznego i pełnej rekonstrukcji obejmują prywatne transfery VIP Mercedes (lotnisko-hotel-klinika) oraz pobyt ze śniadaniem w partnerskich hotelach 4- i 5-gwiazdkowych w centrum Stambułu."
+          "Tak, nasze pakiety leczenia implantologicznego i pełnej rekonstrukcji obejmują prywatne transfery VIP Mercedes (lotnisko-hotel-klinika) oraz pobyt ze śniadaniem w partnerskich hotelach 4- i 5-gwiazdkowych w centrum Antalyi."
         ]
       },
       {
@@ -897,7 +897,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "2-Implantat Snap-On Deckprothese (Unterkiefer)",
         "brand": "Osstem / Medentika Locator System",
         "duration": "3+5 Werktage (2 Besuche)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-package-10.jpg",
+        "img": "/packages/pkg-4.webp",
         "popular": true,
         "included": [
           "2x Hochwertige Titanimplantate (Unterkiefer)",
@@ -917,7 +917,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "4-Implantat Snap-On Deckprothese (Ober- oder Unterkiefer)",
         "brand": "Medentika (Straumann Gruppe) / Osstem",
         "duration": "3+5 Werktage (2 Besuche)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-implant-package-2.jpg",
+        "img": "/packages/pkg-5.webp",
         "included": [
           "4x Präzisions-Titanimplantate für maximalen Prothesenhalt",
           "4x Original Locator Abutments mit dualem Haltesystem",
@@ -936,7 +936,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "4-Implantat CAD/CAM Titansteg-Prothese",
         "brand": "Individuell gefräster Titansteg + Clip-Friktion",
         "duration": "3+5 Werktage (2 Besuche)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-implant-package-3.jpg",
+        "img": "/packages/pkg-6.webp",
         "included": [
           "4x High-Torque Titanimplantate",
           "CAD/CAM präzisionsgefräster Titansteg (Dolder/Ackermann)",
@@ -955,7 +955,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Straumann 4-Implantat Locator Deckprothese",
         "brand": "Straumann SLA + Original Straumann Locator Abutments",
         "duration": "3+5 Werktage (2 Besuche)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-1.jpg",
+        "img": "/packages/pkg-1.webp",
         "included": [
           "4x Original Schweizer Straumann SLA Titanimplantate",
           "4x Straumann Original Locator Halteelemente",
@@ -974,7 +974,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Nobel Biocare 4-Implantat Stegprothese",
         "brand": "Nobel Biocare CC + NobelProcera Präzisionstitansteg",
         "duration": "3+5 Werktage (2 Besuche)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-2.jpg",
+        "img": "/packages/pkg-2.webp",
         "included": [
           "4x NobelParallel CC Grad 4 Titanimplantate",
           "NobelProcera gefräster starrer Titansteg",
@@ -993,7 +993,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Komplettpaket Beide Kiefer (Ober- und Unterkiefer)",
         "brand": "8 Implantate (4 Oben + 4 Unten) + Doppeltes Locator System",
         "duration": "3+5 Werktage (2 Besuche)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-3.jpg",
+        "img": "/packages/pkg-3.webp",
         "included": [
           "8x Titanimplantate (4 Oberkiefer + 4 Unterkiefer)",
           "8x Original Locator Abutments & Ersatzkappen-Set",
@@ -1021,7 +1021,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         ]
       },
       {
-        "q": "Helfen Sie bei der Organisation der Unterkunft in Istanbul?",
+        "q": "Helfen Sie bei der Organisation der Unterkunft in Antalya?",
         "a": [
           "Ja, selbstverständlich. Wir organisieren für unsere internationalen Patienten den Aufenthalt in geprüften 4- und 5-Sterne-Partnerhotels in direkter Nähe unserer Klinik inklusive Frühstück und privatem VIP-Shuttleservice.",
           "Unser Ziel ist ein rundum stressfreier Aufenthalt, damit Sie sich voll auf Ihr neues Lächeln konzentrieren können."
@@ -1030,7 +1030,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
       {
         "q": "Ist eine Zahnbehandlungsreise in die Türkei sicher?",
         "a": [
-          "Ja! Die Türkei ist weltweit eines der führenden Länder im Medizintourismus mit strengen europäischen Hygienestandards. Istanbul empfängt jährlich Millionen internationale Gäste sicher und gastfreundlich.",
+          "Ja! Die Türkei ist weltweit eines der führenden Länder im Medizintourismus mit strengen europäischen Hygienestandards. Antalya empfängt jährlich Millionen internationale Gäste sicher und gastfreundlich.",
           "Mit unserem privaten VIP-Fahrservice vom Flughafen zur Klinik und deutschsprachiger Betreuung sind Sie zu jedem Zeitpunkt bestens geschützt und versorgt."
         ]
       },
@@ -1161,7 +1161,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Sobredentadura Snap-On con 2 Implantes (Mandíbula)",
         "brand": "Sistema Locator Osstem / Medentika",
         "duration": "3+5 Días Hábiles (2 Visitas)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-package-10.jpg",
+        "img": "/packages/pkg-4.webp",
         "popular": true,
         "included": [
           "2x Implantes de titanio de alta gama (mandibulares)",
@@ -1181,7 +1181,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Sobredentadura Snap-On con 4 Implantes (Superior o Inferior)",
         "brand": "Medentika (Grupo Straumann) / Osstem",
         "duration": "3+5 Días Hábiles (2 Visitas)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-implant-package-2.jpg",
+        "img": "/packages/pkg-5.webp",
         "included": [
           "4x Implantes de titanio para máxima retención y estabilidad",
           "4x Pilares originales Locator con sistema de doble fijación",
@@ -1200,7 +1200,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Sobredentadura sobre Barra de Titanio CAD/CAM con 4 Implantes",
         "brand": "Barra Fresada de Titanio a Medida + Clips de Retención",
         "duration": "3+5 Días Hábiles (2 Visitas)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-implant-package-3.jpg",
+        "img": "/packages/pkg-6.webp",
         "included": [
           "4x Implantes de titanio de alto torque",
           "Barra de titanio Dolder/Ackermann fresada por ordenador CAD/CAM",
@@ -1219,7 +1219,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Paquete Straumann: Sobredentadura Locator con 4 Implantes",
         "brand": "Straumann SLA + Pilares Straumann Locator Originales",
         "duration": "3+5 Días Hábiles (2 Visitas)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-1.jpg",
+        "img": "/packages/pkg-1.webp",
         "included": [
           "4x Implantes de titanio suizo genuinos Straumann SLA",
           "4x Pilares originales de retención Straumann Locator",
@@ -1238,7 +1238,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Paquete Nobel Biocare: Prótesis sobre Barra con 4 Implantes",
         "brand": "Nobel Biocare CC + Barra Fresada NobelProcera",
         "duration": "3+5 Días Hábiles (2 Visitas)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-2.jpg",
+        "img": "/packages/pkg-2.webp",
         "included": [
           "4x Implantes de titanio grado 4 NobelParallel CC",
           "Barra rígida de titanio fresada con precisión NobelProcera",
@@ -1257,7 +1257,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Rehabilitación Completa de Ambos Maxilares (Superior e Inferior)",
         "brand": "8 Implantes (4 Superior + 4 Inferior) + Doble Sistema Locator",
         "duration": "3+5 Días Hábiles (2 Visitas)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-3.jpg",
+        "img": "/packages/pkg-3.webp",
         "included": [
           "8x Implantes de titanio (4 maxilar superior + 4 mandíbula)",
           "8x Pilares de retención Locator y juegos de tapas de recambio",
@@ -1279,7 +1279,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "q": "¿Cambiará mi plan de tratamiento o el precio cuando llegue a la clínica?",
         "a": [
           "Excelente pregunta. En Master Smile Studio garantizamos transparencia absoluta sin costes ocultos ni sorpresas de última hora.",
-          "El presupuesto y plan que enviamos se basan minuciosamente en sus radiografías y fotografías. Al llegar a la clínica en Estambul, se confirma mediante una tomografía 3D antes de iniciar el procedimiento.",
+          "El presupuesto y plan que enviamos se basan minuciosamente en sus radiografías y fotografías. Al llegar a la clínica en Antalya, se confirma mediante una tomografía 3D antes de iniciar el procedimiento.",
           "Si excepcionalmente se detecta una necesidad anatómica no visible previamente (como elevación de seno o injerto), se le explica en detalle y nada se realiza sin su total consentimiento."
         ]
       },
@@ -1292,7 +1292,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
       {
         "q": "¿Es seguro viajar a Turquía para tratamientos dentales?",
         "a": [
-          "Sí, totalmente. Estambul es un destino líder a nivel mundial en turismo médico, con estándares hospitalarios de vanguardia y millones de pacientes satisfechos cada año."
+          "Sí, totalmente. Antalya es un destino líder a nivel mundial en turismo médico, con estándares hospitalarios de vanguardia y millones de pacientes satisfechos cada año."
         ]
       },
       {
@@ -1420,7 +1420,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Sobredentadura Snap-On com 2 Implantes (Mandíbula)",
         "brand": "Sistema Locator Osstem / Medentika",
         "duration": "3+5 Dias Úteis (2 Visitas)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-package-10.jpg",
+        "img": "/packages/pkg-4.webp",
         "popular": true,
         "included": [
           "2x Implantes de titânio de alta gama (mandibulares)",
@@ -1440,7 +1440,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Sobredentadura Snap-On com 4 Implantes (Superior ou Inferior)",
         "brand": "Medentika (Grupo Straumann) / Osstem",
         "duration": "3+5 Dias Úteis (2 Visitas)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-implant-package-2.jpg",
+        "img": "/packages/pkg-5.webp",
         "included": [
           "4x Implantes de titânio para máxima retenção e estabilidade",
           "4x Pilares originais Locator com sistema de dupla fixação",
@@ -1459,7 +1459,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Sobredentadura sobre Barra de Titânio CAD/CAM com 4 Implantes",
         "brand": "Barra Fresada de Titânio Personalizada + Clipes de Retenção",
         "duration": "3+5 Dias Úteis (2 Visitas)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-implant-package-3.jpg",
+        "img": "/packages/pkg-6.webp",
         "included": [
           "4x Implantes de titânio de alto torque",
           "Barra de titânio Dolder/Ackermann fresada por tecnologia CAD/CAM",
@@ -1478,7 +1478,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Pacote Straumann: Sobredentadura Locator com 4 Implantes",
         "brand": "Straumann SLA + Pilares Straumann Locator Originais",
         "duration": "3+5 Dias Úteis (2 Visitas)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-1.jpg",
+        "img": "/packages/pkg-1.webp",
         "included": [
           "4x Implantes de titânio suíço genuínos Straumann SLA",
           "4x Pilares de retenção originais Straumann Locator",
@@ -1497,7 +1497,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Pacote Nobel Biocare: Prótese sobre Barra com 4 Implantes",
         "brand": "Nobel Biocare CC + Barra Fresada NobelProcera",
         "duration": "3+5 Dias Úteis (2 Visitas)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-2.jpg",
+        "img": "/packages/pkg-2.webp",
         "included": [
           "4x Implantes de titânio grau 4 NobelParallel CC",
           "Barra rígida de titânio fresada com alta precisão NobelProcera",
@@ -1516,7 +1516,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Reabilitação Completa de Ambos os Maxilares (Superior e Inferior)",
         "brand": "8 Implantes (4 Superior + 4 Inferior) + Duplo Sistema Locator",
         "duration": "3+5 Dias Úteis (2 Visitas)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-3.jpg",
+        "img": "/packages/pkg-3.webp",
         "included": [
           "8x Implantes de titânio (4 maxila superior + 4 mandíbula)",
           "8x Pilares de retenção Locator e conjuntos de cápsulas sobressalentes",
@@ -1538,7 +1538,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "q": "O meu plano de tratamento ou o preço apresentado podem mudar à chegada?",
         "a": [
           "Excelente questão. Na Master Smile Studio seguimos uma política de transparência absoluta, sem custos ocultos.",
-          "O plano e o valor enviados baseiam-se nas suas radiografias e fotografias. À chegada à nossa clínica em Istambul, confirmamos tudo através de uma tomografia 3D antes de qualquer procedimento.",
+          "O plano e o valor enviados baseiam-se nas suas radiografias e fotografias. À chegada à nossa clínica em Antalya, confirmamos tudo através de uma tomografia 3D antes de qualquer procedimento.",
           "Caso surja alguma necessidade cirúrgica adicional não visível anteriormente, tudo será detalhadamente explicado e decidido consigo antes de avançar."
         ]
       },
@@ -1587,7 +1587,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
       {
         "q": "Posso efetuar o pagamento do tratamento em prestações?",
         "a": [
-          "O pagamento pode ser faseado entre a primeira e a segunda visita a Istambul com total flexibilidade."
+          "O pagamento pode ser faseado entre a primeira e a segunda visita a Antalya com total flexibilidade."
         ]
       },
       {
@@ -1679,7 +1679,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Съемный протез на 2 имплантах на кнопках (Нижняя челюсть)",
         "brand": "Система замков Locator Osstem / Medentika",
         "duration": "3+5 Рабочих дней (2 Визита)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-package-10.jpg",
+        "img": "/packages/pkg-4.webp",
         "popular": true,
         "included": [
           "2x Премиальных титановых импланта (нижняя челюсть)",
@@ -1699,7 +1699,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Съемный протез на 4 имплантах на кнопках (Верхняя или Нижняя челюсть)",
         "brand": "Medentika (Группа Straumann) / Osstem",
         "duration": "3+5 Рабочих дней (2 Визита)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-implant-package-2.jpg",
+        "img": "/packages/pkg-5.webp",
         "included": [
           "4x Прецизионных титановых импланта для максимальной фиксации",
           "4x Оригинальных абатмента Locator с системой двойной фиксации",
@@ -1718,7 +1718,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Балочный протез CAD/CAM на 4 имплантах",
         "brand": "Индивидуально фрезерованная титановая балка + Замки-клипсы",
         "duration": "3+5 Рабочих дней (2 Визита)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-implant-package-3.jpg",
+        "img": "/packages/pkg-6.webp",
         "included": [
           "4x Высокостабильных титановых импланта",
           "Титановая балка Дольдера/Аккермана, фрезерованная на станке CAD/CAM",
@@ -1737,7 +1737,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Пакет Straumann: Протез Locator на 4 имплантах",
         "brand": "Straumann SLA + Оригинальные абатменты Straumann Locator",
         "duration": "3+5 Рабочих дней (2 Визита)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-1.jpg",
+        "img": "/packages/pkg-1.webp",
         "included": [
           "4x Оригинальных швейцарских титановых импланта Straumann SLA",
           "4x Оригинальных замковых элемента Straumann Locator",
@@ -1756,7 +1756,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Пакет Nobel Biocare: Балочный протез на 4 имплантах",
         "brand": "Nobel Biocare CC + Прецизионная балка NobelProcera",
         "duration": "3+5 Рабочих дней (2 Визита)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-2.jpg",
+        "img": "/packages/pkg-2.webp",
         "included": [
           "4x Титановых импланта 4 класса NobelParallel CC",
           "Жесткая титановая балка, фрезерованная на заводе NobelProcera",
@@ -1775,7 +1775,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Комплексный пакет на обе челюсти (Верхняя + Нижняя челюсть)",
         "brand": "8 Имплантов (4 Вверху + 4 Внизу) + Двойная система Locator",
         "duration": "3+5 Рабочих дней (2 Визита)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-3.jpg",
+        "img": "/packages/pkg-3.webp",
         "included": [
           "8x Титановых имплантов (4 на верхнюю + 4 на нижнюю челюсть)",
           "8x Оригинальных замков Locator и запасные комплекты матриц",
@@ -1797,7 +1797,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "q": "Может ли измениться план лечения или названная стоимость по моему приезду?",
         "a": [
           "Отличный вопрос. Мы гарантируем полную финансовую прозрачность без скрытых платежей и неожиданных доплат.",
-          "Ваш план и стоимость формируются на основе КТ-снимков и фотографий. По прибытии в Стамбул мы подтверждаем детали на очной 3D-томографии перед началом лечения.",
+          "Ваш план и стоимость формируются на основе КТ-снимков и фотографий. По прибытии в Анталью мы подтверждаем детали на очной 3D-томографии перед началом лечения.",
           "Если выявляются скрытые анатомические особенности (необходимость синус-лифтинга или наращивания кости), мы детально согласовываем все варианты с вами. Никаких действий без вашего согласия не проводится."
         ]
       },

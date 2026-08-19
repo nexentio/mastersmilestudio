@@ -22,15 +22,42 @@
   "doctorTulayTitle": "Cirujana Oral y Maxilofacial",
   "doctorAliKemalTitle": "Odontólogo Especialista",
   "doctorAbdullahTitle": "Endodoncia y Odontología Restauradora",
-  "smileDesign": { "title": "Diseño de Sonrisa", "description": "Diseño digital de sonrisa personalizado según la proporción áurea facial." },
-  "implant": { "title": "Implantes Dentales", "description": "Implantes de titanio biocompatibles para una sensación dental natural de por vida." },
-  "emax": { "title": "Carillas E-max", "description": "Carillas de porcelana ultrafinas con alta translucidez natural." },
-  "zirconia": { "title": "Coronas de Circonio", "description": "Coronas sin metal de alta durabilidad y estética insuperable." },
-  "whitening": { "title": "Blanqueamiento Dental", "description": "Blanqueamiento láser profesional rápido y seguro en clínica." },
-  "rootCanal": { "title": "Endodoncia", "description": "Tratamiento indoloro asistido por microscopio para salvar piezas dentales." },
-  "dentures": { "title": "Prótesis Dentales", "description": "Prótesis fijas y removibles cómodas y con aspecto natural." },
-  "bonding": { "title": "Bonding Compuesto", "description": "Reparación estética en una sola sesión de dientes fisurados o separados." },
-  "orthodontics": { "title": "Ortodoncia", "description": "Alineadores invisibles y brackets estéticos para una alineación perfecta." },
+  "smileDesign": {
+    "title": "Diseño de Sonrisa",
+    "description": "Diseño digital de sonrisa personalizado según la proporción áurea facial."
+  },
+  "implant": {
+    "title": "Implantes Dentales",
+    "description": "Implantes de titanio biocompatibles para una sensación dental natural de por vida."
+  },
+  "emax": {
+    "title": "Carillas E-max",
+    "description": "Carillas de porcelana ultrafinas con alta translucidez natural."
+  },
+  "zirconia": {
+    "title": "Coronas de Circonio",
+    "description": "Coronas sin metal de alta durabilidad y estética insuperable."
+  },
+  "whitening": {
+    "title": "Blanqueamiento Dental",
+    "description": "Blanqueamiento láser profesional rápido y seguro en clínica."
+  },
+  "rootCanal": {
+    "title": "Endodoncia",
+    "description": "Tratamiento indoloro asistido por microscopio para salvar piezas dentales."
+  },
+  "dentures": {
+    "title": "Prótesis Dentales",
+    "description": "Prótesis fijas y removibles cómodas y con aspecto natural."
+  },
+  "bonding": {
+    "title": "Bonding Compuesto",
+    "description": "Reparación estética en una sola sesión de dientes fisurados o separados."
+  },
+  "orthodontics": {
+    "title": "Ortodoncia",
+    "description": "Alineadores invisibles y brackets estéticos para una alineación perfecta."
+  },
   "items": {
     "smileDesign": {
       "title": "DISEÑO DE SONRISA",
@@ -129,7 +156,7 @@
     }
   },
   "dentalImplantsIntro": {
-    "title": "Implantes Dentales en Estambul – Master Smile Studio Turquía",
+    "title": "Implantes Dentales en Antalya – Master Smile Studio Turquía",
     "whatIsTitle": "¿Qué son los implantes dentales?",
     "whatIsP1": "Un implante dental es una raíz artificial que sustituye un diente ausente. Tiene la forma de un pequeño tornillo de titanio fijado en el hueso maxilar. Para una sustitución completa se utilizan tres componentes clave:",
     "part1Label": "Implante dental (tornillo de titanio)",
@@ -138,8 +165,10 @@
     "part2Desc": "conecta el implante con la corona.",
     "part3Label": "Corona dental",
     "part3Desc": "la parte visible idéntica al diente natural.",
-    "healingP": "Una vez osteointegrado el implante en el hueso, se confecciona y coloca la corona definitiva. En Master Smile Studio en Estambul, nuestro equipo de cirujanos garantiza un procedimiento seguro y de calidad.",
-    "solutionP": "Si le faltan uno o más dientes, los implantes dentales en Estambul son una solución duradera, segura y estética.",
-    "costHeading": "Precios y Costos de Implantes Dentales en Estambul, Turquía"
-  }
+    "healingP": "Una vez osteointegrado el implante en el hueso, se confecciona y coloca la corona definitiva. En Master Smile Studio en Antalya, nuestro equipo de cirujanos garantiza un procedimiento seguro y de calidad.",
+    "solutionP": "Si le faltan uno o más dientes, los implantes dentales en Antalya son una solución duradera, segura y estética.",
+    "costHeading": "Precios y Costos de Implantes Dentales en Antalya, Turquía"
+  },
+  "doctorFiratTitle": "Cirujano Maxilofacial",
+  "doctorOzanTitle": "Especialista en Prótesis y Estética"
 }

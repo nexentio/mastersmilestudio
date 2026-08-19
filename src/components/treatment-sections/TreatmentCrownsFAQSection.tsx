@@ -19,7 +19,7 @@ const CROWNS_FAQ_DATA: Record<string, FAQDictionary> = {
   en: {
     title: 'Frequently Asked Questions About Dental Crowns & Zirconia',
     subText:
-      'Everything you need to know about Zirconia crowns, E-Max porcelain, root-canal tooth protection, and clinical longevity in Istanbul.',
+      'Everything you need to know about Zirconia crowns, E-Max porcelain, root-canal tooth protection, and clinical longevity in Antalya.',
     items: [
       {
         q: 'What is a dental crown and when is it necessary?',
@@ -34,12 +34,12 @@ const CROWNS_FAQ_DATA: Record<string, FAQDictionary> = {
         a: 'With good daily oral hygiene, regular dental check-ups, and wearing a night guard if you grind your teeth, high-quality German Zirconia and Swiss E-Max crowns typically last between 15 to 25+ years without degrading or discoloring.',
       },
       {
-        q: 'Will getting a dental crown in Istanbul be painful?',
+        q: 'Will getting a dental crown in Antalya be painful?',
         a: 'Not at all. The entire tooth preparation and digital scanning process is performed under gentle local anesthesia. Temporary crowns are placed immediately on day one, completely preventing any sensitivity while your permanent custom crowns are milled in our lab.',
       },
       {
-        q: 'How many days do I need to stay in Istanbul for dental crowns?',
-        a: 'A complete crown treatment takes only 4 to 6 days in Istanbul (typically 3 visits: 1. Consultation, preparation & temporary placement; 2. Frame try-in and shade verification; 3. Final bonding and bite calibration).',
+        q: 'How many days do I need to stay in Antalya for dental crowns?',
+        a: 'A complete crown treatment takes only 4 to 6 days in Antalya (typically 3 visits: 1. Consultation, preparation & temporary placement; 2. Frame try-in and shade verification; 3. Final bonding and bite calibration).',
       },
       {
         q: 'Will my dental crowns look bulky, opaque, or fake?',
@@ -75,7 +75,7 @@ const CROWNS_FAQ_DATA: Record<string, FAQDictionary> = {
       },
       {
         q: 'Can I pay for my crown treatment in installments?',
-        a: 'Yes, flexible payment schedules are available. A small initial deposit confirms your appointment, and the remainder is split across your clinic visits in Istanbul.',
+        a: 'Yes, flexible payment schedules are available. A small initial deposit confirms your appointment, and the remainder is split across your clinic visits in Antalya.',
       },
       {
         q: 'What warranty is provided with dental crowns at Master Smile Studio?',
@@ -90,7 +90,7 @@ const CROWNS_FAQ_DATA: Record<string, FAQDictionary> = {
   tr: {
     title: 'Zirkonyum & Kron Kaplamalar Hakkında Sıkça Sorulan Sorular',
     subText:
-      'Zirkonyum kaplamalar, E-Max porselen, kanal tedavili dişlerin korunması ve İstanbul’daki tedavi süreciniz hakkında tüm klinik detaylar.',
+      'Zirkonyum kaplamalar, E-Max porselen, kanal tedavili dişlerin korunması ve Antalya’daki tedavi süreciniz hakkında tüm klinik detaylar.',
     items: [
       {
         q: 'Diş kronu (kaplama) nedir ve ne zaman gereklidir?',
@@ -105,12 +105,12 @@ const CROWNS_FAQ_DATA: Record<string, FAQDictionary> = {
         a: 'Düzenli ağız bakımı, diş ipi kullanımı ve rutin hekim kontrolleri ile yüksek kaliteli zirkonyum ve E-Max kronlar 15 ila 25+ yıl boyunca ilk günkü formunu ve rengini korur.',
       },
       {
-        q: 'İstanbul’da kron kaplama tedavisi sırasında ağrı çeker miyim?',
+        q: 'Antalya’da kron kaplama tedavisi sırasında ağrı çeker miyim?',
         a: 'Hayır. Tüm kesim ve ölçü işlemleri gelişmiş lokal anestezi altında tamamen ağrısız gerçekleşir. İlk gün takılan geçici dişler sayesinde kalıcı dişleriniz üretilene kadar hiçbir hassasiyet yaşamazsınız.',
       },
       {
-        q: 'Kron kaplama tedavisi için İstanbul’da kaç gün kalmam gerekir?',
-        a: 'Komple kron tedavisi genellikle 4 ila 6 gün (3 klinik seansı) içinde tamamlanır. Kalan vakitlerinizde İstanbul’un tarihi ve turistik güzelliklerini keşfedebilirsiniz.',
+        q: 'Kron kaplama tedavisi için Antalya’da kaç gün kalmam gerekir?',
+        a: 'Komple kron tedavisi genellikle 4 ila 6 gün (3 klinik seansı) içinde tamamlanır. Kalan vakitlerinizde Antalya’nın tarihi ve turistik güzelliklerini keşfedebilirsiniz.',
       },
       {
         q: 'Kaplamalarım dışarıdan bakıldığında yapay veya mat görünür mü?',
@@ -146,7 +146,7 @@ const CROWNS_FAQ_DATA: Record<string, FAQDictionary> = {
       },
       {
         q: 'Tedavi ücretini taksitle ödeyebilir miyim?',
-        a: 'Evet, tedavi onayında cüzi bir ön depozito alınır; kalan tutar ise İstanbul’daki seanslarınıza bölünerek ödenebilir.',
+        a: 'Evet, tedavi onayında cüzi bir ön depozito alınır; kalan tutar ise Antalya’daki seanslarınıza bölünerek ödenebilir.',
       },
       {
         q: 'Kron kaplamalara resmi garanti veriyor musunuz?',
@@ -161,7 +161,7 @@ const CROWNS_FAQ_DATA: Record<string, FAQDictionary> = {
   de: {
     title: 'Häufig gestellte Fragen zu Zahnkronen & Zirkon',
     subText:
-      'Klinische Details zu Zirkonkronen, E-Max Keramik, Zahnerhalt und Ihrer Behandlung in Istanbul.',
+      'Klinische Details zu Zirkonkronen, E-Max Keramik, Zahnerhalt und Ihrer Behandlung in Antalya.',
     items: [
       {
         q: 'Was ist eine Zahnkrone und wann wird sie benötigt?',
@@ -176,11 +176,11 @@ const CROWNS_FAQ_DATA: Record<string, FAQDictionary> = {
         a: 'Bei guter Mundhygiene halten hochwertige Zirkon- und E-Max-Kronen 15 bis über 25 Jahre ohne Qualitätsverlust.',
       },
       {
-        q: 'Ist das Einsetzen von Zahnkronen in Istanbul schmerzhaft?',
+        q: 'Ist das Einsetzen von Zahnkronen in Antalya schmerzhaft?',
         a: 'Nein. Die Präparation erfolgt vollkommen schmerzfrei unter moderner Lokalanästhesie mit sofortigen Provisorien am selben Tag.',
       },
       {
-        q: 'Wie viele Tage Aufenthalt in Istanbul sind erforderlich?',
+        q: 'Wie viele Tage Aufenthalt in Antalya sind erforderlich?',
         a: 'Die Behandlung dauert nur 4 bis 6 Tage (3 kurze Termine in unserer Klinik).',
       },
       {
@@ -217,7 +217,7 @@ const CROWNS_FAQ_DATA: Record<string, FAQDictionary> = {
       },
       {
         q: 'Kann ich die Behandlung in Raten zahlen?',
-        a: 'Ja, nach einer Anzahlung kann der Restbetrag auf die Behandlungstage in Istanbul aufgeteilt werden.',
+        a: 'Ja, nach einer Anzahlung kann der Restbetrag auf die Behandlungstage in Antalya aufgeteilt werden.',
       },
       {
         q: 'Welche Garantie erhalte ich auf Zahnkronen?',
@@ -232,7 +232,7 @@ const CROWNS_FAQ_DATA: Record<string, FAQDictionary> = {
   pl: {
     title: 'Często Zadawane Pytania o Korony Zębowe i Cyrkon',
     subText:
-      'Wszystko o koronach cyrkonowych, porcelanie E-Max, ratowaniu zębów i leczeniu w Stambule.',
+      'Wszystko o koronach cyrkonowych, porcelanie E-Max, ratowaniu zębów i leczeniu w Antalyi.',
     items: [
       {
         q: 'Czym jest korona zębowa i kiedy jest konieczna?',
@@ -247,11 +247,11 @@ const CROWNS_FAQ_DATA: Record<string, FAQDictionary> = {
         a: 'Przy prawidłowej higienie korony cyrkonowe i E-Max służą od 15 do ponad 25 lat bez utraty koloru i połysku.',
       },
       {
-        q: 'Czy szlifowanie zębów pod korony w Stambule boli?',
+        q: 'Czy szlifowanie zębów pod korony w Antalyi boli?',
         a: 'Zabieg jest w 100% bezbolesny w znieczuleniu miejscowym. Natychmiast po zabiegu pacjent otrzymuje korony tymczasowe.',
       },
       {
-        q: 'Ile dni trwa wykonanie koron zębowych w Stambule?',
+        q: 'Ile dni trwa wykonanie koron zębowych w Antalyi?',
         a: 'Leczenie trwa zaledwie 4 do 6 dni (obejmuje 3 wizyty w klinice).',
       },
       {
@@ -288,7 +288,7 @@ const CROWNS_FAQ_DATA: Record<string, FAQDictionary> = {
       },
       {
         q: 'Czy mogę rozłożyć płatność na raty?',
-        a: 'Tak, po wpłacie zaliczki reszta kwoty jest regulowana podczas kolejnych wizyt w Stambule.',
+        a: 'Tak, po wpłacie zaliczki reszta kwoty jest regulowana podczas kolejnych wizyt w Antalyi.',
       },
       {
         q: 'Jaką gwarancję otrzymuję na korony?',
@@ -303,7 +303,7 @@ const CROWNS_FAQ_DATA: Record<string, FAQDictionary> = {
   pt: {
     title: 'Perguntas Frequentes Sobre Coroas Dentárias e Zircônia',
     subText:
-      'Tudo sobre coroas em zircônia alemã, cerâmica E-Max, durabilidade e seu tratamento em Istambul.',
+      'Tudo sobre coroas em zircônia alemã, cerâmica E-Max, durabilidade e seu tratamento em Antalya.',
     items: [
       {
         q: 'O que é uma coroa dentária e quando é necessária?',
@@ -318,11 +318,11 @@ const CROWNS_FAQ_DATA: Record<string, FAQDictionary> = {
         a: 'Com boa higiene e consultas regulares, as coroas de zircônia e E-Max duram de 15 a mais de 25 anos com total estabilidade.',
       },
       {
-        q: 'O tratamento de coroas dentárias em Istambul dói?',
+        q: 'O tratamento de coroas dentárias em Antalya dói?',
         a: 'Não. Todo o preparo é realizado sob anestesia local moderna e com colocação imediata de dentes provisórios.',
       },
       {
-        q: 'Quantos dias preciso ficar em Istambul para coroas?',
+        q: 'Quantos dias preciso ficar em Antalya para coroas?',
         a: 'O tratamento completo leva de 4 a 6 dias (apenas 3 consultas clínicas).',
       },
       {
@@ -359,7 +359,7 @@ const CROWNS_FAQ_DATA: Record<string, FAQDictionary> = {
       },
       {
         q: 'Posso parcelar meu tratamento?',
-        a: 'Sim, após o sinal inicial, o saldo restante pode ser pago ao longo das consultas em Istambul.',
+        a: 'Sim, após o sinal inicial, o saldo restante pode ser pago ao longo das consultas em Antalya.',
       },
       {
         q: 'Qual a garantia oferecida nas coroas?',
@@ -374,7 +374,7 @@ const CROWNS_FAQ_DATA: Record<string, FAQDictionary> = {
   es: {
     title: 'Preguntas Frecuentes Sobre Coronas Dentales y Zirconio',
     subText:
-      'Todo lo que necesita saber sobre coronas de zirconio alemán, porcelana E-Max y su tratamiento en Estambul.',
+      'Todo lo que necesita saber sobre coronas de zirconio alemán, porcelana E-Max y su tratamiento en Antalya.',
     items: [
       {
         q: '¿Qué es una corona dental y cuándo es necesaria?',
@@ -393,7 +393,7 @@ const CROWNS_FAQ_DATA: Record<string, FAQDictionary> = {
         a: 'No, el tallado y la colocación son 100% indoloros con anestesia local suave y coronas provisionales el mismo día.',
       },
       {
-        q: '¿Cuántos días de estancia en Estambul se requieren?',
+        q: '¿Cuántos días de estancia en Antalya se requieren?',
         a: 'El tratamiento completo se realiza en tan solo 4 a 6 días (3 citas clínicas).',
       },
       {
@@ -430,7 +430,7 @@ const CROWNS_FAQ_DATA: Record<string, FAQDictionary> = {
       },
       {
         q: '¿Se puede pagar a plazos el tratamiento?',
-        a: 'Sí, tras un depósito inicial, el resto se abona de forma fraccionada durante las citas en Estambul.',
+        a: 'Sí, tras un depósito inicial, el resto se abona de forma fraccionada durante las citas en Antalya.',
       },
       {
         q: '¿Qué garantía tienen las coronas dentales?',
@@ -445,7 +445,7 @@ const CROWNS_FAQ_DATA: Record<string, FAQDictionary> = {
   ru: {
     title: 'Часто задаваемые вопросы о зубных коронках и цирконии',
     subText:
-      'Все о коронках из диоксида циркония, керамике E-Max, защите зубов и лечении в Стамбуле.',
+      'Все о коронках из диоксида циркония, керамике E-Max, защите зубов и лечении в Анталье.',
     items: [
       {
         q: 'Что такое зубная коронка и в каких случаях она необходима?',
@@ -460,11 +460,11 @@ const CROWNS_FAQ_DATA: Record<string, FAQDictionary> = {
         a: 'При правильной гигиене циркониевые и E-Max коронки служат от 15 до более 25 лет без изменения цвета и формы.',
       },
       {
-        q: 'Болезненна ли процедура установки коронок в Стамбуле?',
+        q: 'Болезненна ли процедура установки коронок в Анталье?',
         a: 'Процедура абсолютно безболезненна благодаря современной местной анестезии. Временные коронки ставятся в день обточки.',
       },
       {
-        q: 'Сколько дней занимает установка коронок в Стамбуле?',
+        q: 'Сколько дней занимает установка коронок в Анталье?',
         a: 'Полный курс лечения занимает от 4 до 6 дней (всего 3 визита в клинику).',
       },
       {

@@ -1,11 +1,18 @@
 .sect20 {
   position: relative;
   width: 100%;
-  min-height: clamp(380px, 33.3vw, 520px);
+  height: 100vh;
+  height: 100dvh;
+  min-height: 100vh;
+  min-height: 100dvh;
+  margin-top: -100px;
+  padding-top: 100px;
+  box-sizing: border-box;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  background-color: #0c1b4d;
 }
 
 .back1 {
@@ -23,6 +30,7 @@
   inset: 0;
   background-color: rgba(177, 160, 132, 0.5); /* #B1A08480 */
   z-index: 2;
+  pointer-events: none;
 }
 
 .content {
@@ -62,8 +70,15 @@
   opacity: 0.95;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 868px) {
   .sect20 {
-    min-height: 320px;
+    height: 100vh;
+    height: 100dvh;
+    min-height: 100vh;
+    min-height: 100dvh;
+    margin-top: -80px;
+    padding-top: 80px;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }

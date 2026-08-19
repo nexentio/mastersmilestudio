@@ -47,16 +47,16 @@ interface LocaleDictionary {
 const DICTIONARIES: Record<string, LocaleDictionary> = {
   "en": {
     "packagesTitle": "Fixed Traditional Dental Bridge Packages",
-    "packagesSubtitle": "All-inclusive fixed bridge restorations with multi-layered German zirconia or high-noble ceramic, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers in Istanbul.",
+    "packagesSubtitle": "All-inclusive fixed bridge restorations with multi-layered German zirconia or high-noble ceramic, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers in Antalya.",
     "mostPopularBadge": "Most Popular Choice",
     "durationLabel": "Procedure Time:",
     "includedLabel": "Package Inclusions:",
     "priceLabel": "Price (All-Inclusive):",
     "getQuoteBtn": "Get Your Free Quote",
     "faqTitle": "Frequently Asked Questions About Traditional Dental Bridges",
-    "faqSubtitle": "Clinical guidance on fixed traditional bridges, abutment preparation, zirconia vs PFM materials, chewing function restoration, hygiene under pontics, and warranties in Istanbul.",
-    "stayDuration": "<strong>5 to 7 days in Istanbul.</strong> 3D intraoral digital impressions, precision abutment tooth preparation, temporary bridge placement, 5-axis CAD/CAM milling, and permanent cementation are completed during 1 visit.",
-    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel once to Istanbul for your complete fixed bridge restoration. All clinical steps are finalized within a single 5 to 7-day stay.",
+    "faqSubtitle": "Clinical guidance on fixed traditional bridges, abutment preparation, zirconia vs PFM materials, chewing function restoration, hygiene under pontics, and warranties in Antalya.",
+    "stayDuration": "<strong>5 to 7 days in Antalya.</strong> 3D intraoral digital impressions, precision abutment tooth preparation, temporary bridge placement, 5-axis CAD/CAM milling, and permanent cementation are completed during 1 visit.",
+    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel once to Antalya for your complete fixed bridge restoration. All clinical steps are finalized within a single 5 to 7-day stay.",
     "recoveryTime": "<strong>24 to 48 hours adaptation.</strong> Minor gum tenderness subsides quickly, allowing full chewing comfort and natural speech within 1 to 2 days.",
     "priceEstimate": "<strong>Traditional bridge prices start at £140 / €160 / $175 per unit (from £420 / €480 / $530 for a 3-unit bridge).</strong> Complete multi-unit packages include 3D digital planning, luxury hotel stay, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
@@ -64,7 +64,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "3-Unit Zirconia Traditional Bridge (1 Missing Tooth)",
         "brand": "German Multi-Layered Zirconia (1200+ MPa)",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-1.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "popular": true,
         "included": [
           "3-Unit High-Translucency German Zirconia Bridge (2 Abutments + 1 Pontic)",
@@ -84,12 +84,12 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "4-Unit Zirconia Fixed Bridge (2 Missing Teeth)",
         "brand": "German Katana / Vita Multi-Layer Zirconia",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-2.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "4-Unit High-Strength Zirconia Bridge (2 Abutments + 2 Pontics)",
           "Bespoke 3D Gnathological Bite Balance & Aesthetic Smile Mapping",
           "Aesthetic temporary bridge fitted on Day 1",
-          "4-Star Luxury Hotel Stay with Breakfast in Istanbul (6 Nights)",
+          "4-Star Luxury Hotel Stay with Breakfast in Antalya (6 Nights)",
           "VIP Mercedes Chauffeur Airport & Clinic Transfers",
           "10-Year Comprehensive Warranty against bridge fracture"
         ],
@@ -103,12 +103,12 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "3-Unit Metal-Porcelain (PFM) Bridge",
         "brand": "Biocompatible Chromium-Cobalt + German Ceramic",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-3.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "3-Unit PFM Dental Bridge (Cost-effective posterior solution)",
           "Laser-sintered bio-alloy core with layered porcelain",
           "Occlusal bite check & precision cementation",
-          "4-Star Hotel Stay in Istanbul (5 Nights)",
+          "4-Star Hotel Stay in Antalya (5 Nights)",
           "VIP Mercedes Transfers",
           "5-Year Clinical Warranty"
         ],
@@ -122,11 +122,11 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Full Arch Fixed Zirconia Bridge Restoration",
         "brand": "German 3D Pro Multilayer Zirconia (10-12 Units)",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-3.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "included": [
           "Full arch fixed monolithic zirconia bridge for multiple missing teeth",
           "Complete vertical dimension restoration & bite reconstruction",
-          "5-Star Luxury Hotel Accommodation in Istanbul (6 Nights)",
+          "5-Star Luxury Hotel Accommodation in Antalya (6 Nights)",
           "Private VIP Mercedes Chauffeur for all appointments",
           "Lifetime international warranty & dental passport"
         ],
@@ -160,9 +160,9 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         ]
       },
       {
-        "q": "How many days does the dental bridge procedure take in Istanbul?",
+        "q": "How many days does the dental bridge procedure take in Antalya?",
         "a": [
-          "The complete treatment is completed in 5 to 7 days during a single trip to Istanbul. Abutment preparation and digital scanning take place on Day 1, followed by temporary bridge placement, precision CAD/CAM milling in our laboratory, and final permanent cementation on Day 5 or 6."
+          "The complete treatment is completed in 5 to 7 days during a single trip to Antalya. Abutment preparation and digital scanning take place on Day 1, followed by temporary bridge placement, precision CAD/CAM milling in our laboratory, and final permanent cementation on Day 5 or 6."
         ]
       }
     ]
@@ -176,9 +176,9 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "priceLabel": "Price (All-Inclusive):",
     "getQuoteBtn": "Get Your Free Quote",
     "faqTitle": "Geleneksel Diş Köprüleri Hakkında Sıkça Sorulan Sorular",
-    "faqSubtitle": "Clinical guidance on fixed traditional bridges, abutment preparation, zirconia vs PFM materials, chewing function restoration, hygiene under pontics, and warranties in Istanbul.",
-    "stayDuration": "<strong>5 to 7 days in Istanbul.</strong> 3D intraoral digital impressions, precision abutment tooth preparation, temporary bridge placement, 5-axis CAD/CAM milling, and permanent cementation are completed during 1 visit.",
-    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel once to Istanbul for your complete fixed bridge restoration. All clinical steps are finalized within a single 5 to 7-day stay.",
+    "faqSubtitle": "Clinical guidance on fixed traditional bridges, abutment preparation, zirconia vs PFM materials, chewing function restoration, hygiene under pontics, and warranties in Antalya.",
+    "stayDuration": "<strong>5 to 7 days in Antalya.</strong> 3D intraoral digital impressions, precision abutment tooth preparation, temporary bridge placement, 5-axis CAD/CAM milling, and permanent cementation are completed during 1 visit.",
+    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel once to Antalya for your complete fixed bridge restoration. All clinical steps are finalized within a single 5 to 7-day stay.",
     "recoveryTime": "<strong>24 to 48 hours adaptation.</strong> Minor gum tenderness subsides quickly, allowing full chewing comfort and natural speech within 1 to 2 days.",
     "priceEstimate": "<strong>Traditional bridge prices start at £140 / €160 / $175 per unit (from £420 / €480 / $530 for a 3-unit bridge).</strong> Complete multi-unit packages include 3D digital planning, luxury hotel stay, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
@@ -186,7 +186,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "3-Unit Zirconia Traditional Bridge (1 Missing Tooth)",
         "brand": "German Multi-Layered Zirconia (1200+ MPa)",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-1.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "popular": true,
         "included": [
           "3-Unit High-Translucency German Zirconia Bridge (2 Abutments + 1 Pontic)",
@@ -206,12 +206,12 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "4-Unit Zirconia Fixed Bridge (2 Missing Teeth)",
         "brand": "German Katana / Vita Multi-Layer Zirconia",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-2.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "4-Unit High-Strength Zirconia Bridge (2 Abutments + 2 Pontics)",
           "Bespoke 3D Gnathological Bite Balance & Aesthetic Smile Mapping",
           "Aesthetic temporary bridge fitted on Day 1",
-          "4-Star Luxury Hotel Stay with Breakfast in Istanbul (6 Nights)",
+          "4-Star Luxury Hotel Stay with Breakfast in Antalya (6 Nights)",
           "VIP Mercedes Chauffeur Airport & Clinic Transfers",
           "10-Year Comprehensive Warranty against bridge fracture"
         ],
@@ -225,12 +225,12 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "3-Unit Metal-Porcelain (PFM) Bridge",
         "brand": "Biocompatible Chromium-Cobalt + German Ceramic",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-3.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "3-Unit PFM Dental Bridge (Cost-effective posterior solution)",
           "Laser-sintered bio-alloy core with layered porcelain",
           "Occlusal bite check & precision cementation",
-          "4-Star Hotel Stay in Istanbul (5 Nights)",
+          "4-Star Hotel Stay in Antalya (5 Nights)",
           "VIP Mercedes Transfers",
           "5-Year Clinical Warranty"
         ],
@@ -244,11 +244,11 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Full Arch Fixed Zirconia Bridge Restoration",
         "brand": "German 3D Pro Multilayer Zirconia (10-12 Units)",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-3.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "included": [
           "Full arch fixed monolithic zirconia bridge for multiple missing teeth",
           "Complete vertical dimension restoration & bite reconstruction",
-          "5-Star Luxury Hotel Accommodation in Istanbul (6 Nights)",
+          "5-Star Luxury Hotel Accommodation in Antalya (6 Nights)",
           "Private VIP Mercedes Chauffeur for all appointments",
           "Lifetime international warranty & dental passport"
         ],
@@ -282,25 +282,25 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         ]
       },
       {
-        "q": "How many days does the dental bridge procedure take in Istanbul?",
+        "q": "How many days does the dental bridge procedure take in Antalya?",
         "a": [
-          "The complete treatment is completed in 5 to 7 days during a single trip to Istanbul. Abutment preparation and digital scanning take place on Day 1, followed by temporary bridge placement, precision CAD/CAM milling in our laboratory, and final permanent cementation on Day 5 or 6."
+          "The complete treatment is completed in 5 to 7 days during a single trip to Antalya. Abutment preparation and digital scanning take place on Day 1, followed by temporary bridge placement, precision CAD/CAM milling in our laboratory, and final permanent cementation on Day 5 or 6."
         ]
       }
     ]
   },
   "de": {
     "packagesTitle": "Fixed Traditional Dental Bridge Packages",
-    "packagesSubtitle": "All-inclusive fixed bridge restorations with multi-layered German zirconia or high-noble ceramic, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers in Istanbul.",
+    "packagesSubtitle": "All-inclusive fixed bridge restorations with multi-layered German zirconia or high-noble ceramic, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers in Antalya.",
     "mostPopularBadge": "Most Popular Choice",
     "durationLabel": "Procedure Time:",
     "includedLabel": "Package Inclusions:",
     "priceLabel": "Price (All-Inclusive):",
     "getQuoteBtn": "Get Your Free Quote",
     "faqTitle": "Frequently Asked Questions About Traditional Dental Bridges",
-    "faqSubtitle": "Clinical guidance on fixed traditional bridges, abutment preparation, zirconia vs PFM materials, chewing function restoration, hygiene under pontics, and warranties in Istanbul.",
-    "stayDuration": "<strong>5 to 7 days in Istanbul.</strong> 3D intraoral digital impressions, precision abutment tooth preparation, temporary bridge placement, 5-axis CAD/CAM milling, and permanent cementation are completed during 1 visit.",
-    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel once to Istanbul for your complete fixed bridge restoration. All clinical steps are finalized within a single 5 to 7-day stay.",
+    "faqSubtitle": "Clinical guidance on fixed traditional bridges, abutment preparation, zirconia vs PFM materials, chewing function restoration, hygiene under pontics, and warranties in Antalya.",
+    "stayDuration": "<strong>5 to 7 days in Antalya.</strong> 3D intraoral digital impressions, precision abutment tooth preparation, temporary bridge placement, 5-axis CAD/CAM milling, and permanent cementation are completed during 1 visit.",
+    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel once to Antalya for your complete fixed bridge restoration. All clinical steps are finalized within a single 5 to 7-day stay.",
     "recoveryTime": "<strong>24 to 48 hours adaptation.</strong> Minor gum tenderness subsides quickly, allowing full chewing comfort and natural speech within 1 to 2 days.",
     "priceEstimate": "<strong>Traditional bridge prices start at £140 / €160 / $175 per unit (from £420 / €480 / $530 for a 3-unit bridge).</strong> Complete multi-unit packages include 3D digital planning, luxury hotel stay, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
@@ -308,7 +308,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "3-Unit Zirconia Traditional Bridge (1 Missing Tooth)",
         "brand": "German Multi-Layered Zirconia (1200+ MPa)",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-1.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "popular": true,
         "included": [
           "3-Unit High-Translucency German Zirconia Bridge (2 Abutments + 1 Pontic)",
@@ -328,12 +328,12 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "4-Unit Zirconia Fixed Bridge (2 Missing Teeth)",
         "brand": "German Katana / Vita Multi-Layer Zirconia",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-2.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "4-Unit High-Strength Zirconia Bridge (2 Abutments + 2 Pontics)",
           "Bespoke 3D Gnathological Bite Balance & Aesthetic Smile Mapping",
           "Aesthetic temporary bridge fitted on Day 1",
-          "4-Star Luxury Hotel Stay with Breakfast in Istanbul (6 Nights)",
+          "4-Star Luxury Hotel Stay with Breakfast in Antalya (6 Nights)",
           "VIP Mercedes Chauffeur Airport & Clinic Transfers",
           "10-Year Comprehensive Warranty against bridge fracture"
         ],
@@ -347,12 +347,12 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "3-Unit Metal-Porcelain (PFM) Bridge",
         "brand": "Biocompatible Chromium-Cobalt + German Ceramic",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-3.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "3-Unit PFM Dental Bridge (Cost-effective posterior solution)",
           "Laser-sintered bio-alloy core with layered porcelain",
           "Occlusal bite check & precision cementation",
-          "4-Star Hotel Stay in Istanbul (5 Nights)",
+          "4-Star Hotel Stay in Antalya (5 Nights)",
           "VIP Mercedes Transfers",
           "5-Year Clinical Warranty"
         ],
@@ -366,11 +366,11 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Full Arch Fixed Zirconia Bridge Restoration",
         "brand": "German 3D Pro Multilayer Zirconia (10-12 Units)",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-3.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "included": [
           "Full arch fixed monolithic zirconia bridge for multiple missing teeth",
           "Complete vertical dimension restoration & bite reconstruction",
-          "5-Star Luxury Hotel Accommodation in Istanbul (6 Nights)",
+          "5-Star Luxury Hotel Accommodation in Antalya (6 Nights)",
           "Private VIP Mercedes Chauffeur for all appointments",
           "Lifetime international warranty & dental passport"
         ],
@@ -404,25 +404,25 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         ]
       },
       {
-        "q": "How many days does the dental bridge procedure take in Istanbul?",
+        "q": "How many days does the dental bridge procedure take in Antalya?",
         "a": [
-          "The complete treatment is completed in 5 to 7 days during a single trip to Istanbul. Abutment preparation and digital scanning take place on Day 1, followed by temporary bridge placement, precision CAD/CAM milling in our laboratory, and final permanent cementation on Day 5 or 6."
+          "The complete treatment is completed in 5 to 7 days during a single trip to Antalya. Abutment preparation and digital scanning take place on Day 1, followed by temporary bridge placement, precision CAD/CAM milling in our laboratory, and final permanent cementation on Day 5 or 6."
         ]
       }
     ]
   },
   "pl": {
     "packagesTitle": "Fixed Traditional Dental Bridge Packages",
-    "packagesSubtitle": "All-inclusive fixed bridge restorations with multi-layered German zirconia or high-noble ceramic, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers in Istanbul.",
+    "packagesSubtitle": "All-inclusive fixed bridge restorations with multi-layered German zirconia or high-noble ceramic, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers in Antalya.",
     "mostPopularBadge": "Most Popular Choice",
     "durationLabel": "Procedure Time:",
     "includedLabel": "Package Inclusions:",
     "priceLabel": "Price (All-Inclusive):",
     "getQuoteBtn": "Get Your Free Quote",
     "faqTitle": "Frequently Asked Questions About Traditional Dental Bridges",
-    "faqSubtitle": "Clinical guidance on fixed traditional bridges, abutment preparation, zirconia vs PFM materials, chewing function restoration, hygiene under pontics, and warranties in Istanbul.",
-    "stayDuration": "<strong>5 to 7 days in Istanbul.</strong> 3D intraoral digital impressions, precision abutment tooth preparation, temporary bridge placement, 5-axis CAD/CAM milling, and permanent cementation are completed during 1 visit.",
-    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel once to Istanbul for your complete fixed bridge restoration. All clinical steps are finalized within a single 5 to 7-day stay.",
+    "faqSubtitle": "Clinical guidance on fixed traditional bridges, abutment preparation, zirconia vs PFM materials, chewing function restoration, hygiene under pontics, and warranties in Antalya.",
+    "stayDuration": "<strong>5 to 7 days in Antalya.</strong> 3D intraoral digital impressions, precision abutment tooth preparation, temporary bridge placement, 5-axis CAD/CAM milling, and permanent cementation are completed during 1 visit.",
+    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel once to Antalya for your complete fixed bridge restoration. All clinical steps are finalized within a single 5 to 7-day stay.",
     "recoveryTime": "<strong>24 to 48 hours adaptation.</strong> Minor gum tenderness subsides quickly, allowing full chewing comfort and natural speech within 1 to 2 days.",
     "priceEstimate": "<strong>Traditional bridge prices start at £140 / €160 / $175 per unit (from £420 / €480 / $530 for a 3-unit bridge).</strong> Complete multi-unit packages include 3D digital planning, luxury hotel stay, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
@@ -430,7 +430,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "3-Unit Zirconia Traditional Bridge (1 Missing Tooth)",
         "brand": "German Multi-Layered Zirconia (1200+ MPa)",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-1.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "popular": true,
         "included": [
           "3-Unit High-Translucency German Zirconia Bridge (2 Abutments + 1 Pontic)",
@@ -450,12 +450,12 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "4-Unit Zirconia Fixed Bridge (2 Missing Teeth)",
         "brand": "German Katana / Vita Multi-Layer Zirconia",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-2.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "4-Unit High-Strength Zirconia Bridge (2 Abutments + 2 Pontics)",
           "Bespoke 3D Gnathological Bite Balance & Aesthetic Smile Mapping",
           "Aesthetic temporary bridge fitted on Day 1",
-          "4-Star Luxury Hotel Stay with Breakfast in Istanbul (6 Nights)",
+          "4-Star Luxury Hotel Stay with Breakfast in Antalya (6 Nights)",
           "VIP Mercedes Chauffeur Airport & Clinic Transfers",
           "10-Year Comprehensive Warranty against bridge fracture"
         ],
@@ -469,12 +469,12 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "3-Unit Metal-Porcelain (PFM) Bridge",
         "brand": "Biocompatible Chromium-Cobalt + German Ceramic",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-3.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "3-Unit PFM Dental Bridge (Cost-effective posterior solution)",
           "Laser-sintered bio-alloy core with layered porcelain",
           "Occlusal bite check & precision cementation",
-          "4-Star Hotel Stay in Istanbul (5 Nights)",
+          "4-Star Hotel Stay in Antalya (5 Nights)",
           "VIP Mercedes Transfers",
           "5-Year Clinical Warranty"
         ],
@@ -488,11 +488,11 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Full Arch Fixed Zirconia Bridge Restoration",
         "brand": "German 3D Pro Multilayer Zirconia (10-12 Units)",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-3.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "included": [
           "Full arch fixed monolithic zirconia bridge for multiple missing teeth",
           "Complete vertical dimension restoration & bite reconstruction",
-          "5-Star Luxury Hotel Accommodation in Istanbul (6 Nights)",
+          "5-Star Luxury Hotel Accommodation in Antalya (6 Nights)",
           "Private VIP Mercedes Chauffeur for all appointments",
           "Lifetime international warranty & dental passport"
         ],
@@ -526,25 +526,25 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         ]
       },
       {
-        "q": "How many days does the dental bridge procedure take in Istanbul?",
+        "q": "How many days does the dental bridge procedure take in Antalya?",
         "a": [
-          "The complete treatment is completed in 5 to 7 days during a single trip to Istanbul. Abutment preparation and digital scanning take place on Day 1, followed by temporary bridge placement, precision CAD/CAM milling in our laboratory, and final permanent cementation on Day 5 or 6."
+          "The complete treatment is completed in 5 to 7 days during a single trip to Antalya. Abutment preparation and digital scanning take place on Day 1, followed by temporary bridge placement, precision CAD/CAM milling in our laboratory, and final permanent cementation on Day 5 or 6."
         ]
       }
     ]
   },
   "pt": {
     "packagesTitle": "Fixed Traditional Dental Bridge Packages",
-    "packagesSubtitle": "All-inclusive fixed bridge restorations with multi-layered German zirconia or high-noble ceramic, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers in Istanbul.",
+    "packagesSubtitle": "All-inclusive fixed bridge restorations with multi-layered German zirconia or high-noble ceramic, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers in Antalya.",
     "mostPopularBadge": "Most Popular Choice",
     "durationLabel": "Procedure Time:",
     "includedLabel": "Package Inclusions:",
     "priceLabel": "Price (All-Inclusive):",
     "getQuoteBtn": "Get Your Free Quote",
     "faqTitle": "Frequently Asked Questions About Traditional Dental Bridges",
-    "faqSubtitle": "Clinical guidance on fixed traditional bridges, abutment preparation, zirconia vs PFM materials, chewing function restoration, hygiene under pontics, and warranties in Istanbul.",
-    "stayDuration": "<strong>5 to 7 days in Istanbul.</strong> 3D intraoral digital impressions, precision abutment tooth preparation, temporary bridge placement, 5-axis CAD/CAM milling, and permanent cementation are completed during 1 visit.",
-    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel once to Istanbul for your complete fixed bridge restoration. All clinical steps are finalized within a single 5 to 7-day stay.",
+    "faqSubtitle": "Clinical guidance on fixed traditional bridges, abutment preparation, zirconia vs PFM materials, chewing function restoration, hygiene under pontics, and warranties in Antalya.",
+    "stayDuration": "<strong>5 to 7 days in Antalya.</strong> 3D intraoral digital impressions, precision abutment tooth preparation, temporary bridge placement, 5-axis CAD/CAM milling, and permanent cementation are completed during 1 visit.",
+    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel once to Antalya for your complete fixed bridge restoration. All clinical steps are finalized within a single 5 to 7-day stay.",
     "recoveryTime": "<strong>24 to 48 hours adaptation.</strong> Minor gum tenderness subsides quickly, allowing full chewing comfort and natural speech within 1 to 2 days.",
     "priceEstimate": "<strong>Traditional bridge prices start at £140 / €160 / $175 per unit (from £420 / €480 / $530 for a 3-unit bridge).</strong> Complete multi-unit packages include 3D digital planning, luxury hotel stay, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
@@ -552,7 +552,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "3-Unit Zirconia Traditional Bridge (1 Missing Tooth)",
         "brand": "German Multi-Layered Zirconia (1200+ MPa)",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-1.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "popular": true,
         "included": [
           "3-Unit High-Translucency German Zirconia Bridge (2 Abutments + 1 Pontic)",
@@ -572,12 +572,12 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "4-Unit Zirconia Fixed Bridge (2 Missing Teeth)",
         "brand": "German Katana / Vita Multi-Layer Zirconia",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-2.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "4-Unit High-Strength Zirconia Bridge (2 Abutments + 2 Pontics)",
           "Bespoke 3D Gnathological Bite Balance & Aesthetic Smile Mapping",
           "Aesthetic temporary bridge fitted on Day 1",
-          "4-Star Luxury Hotel Stay with Breakfast in Istanbul (6 Nights)",
+          "4-Star Luxury Hotel Stay with Breakfast in Antalya (6 Nights)",
           "VIP Mercedes Chauffeur Airport & Clinic Transfers",
           "10-Year Comprehensive Warranty against bridge fracture"
         ],
@@ -591,12 +591,12 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "3-Unit Metal-Porcelain (PFM) Bridge",
         "brand": "Biocompatible Chromium-Cobalt + German Ceramic",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-3.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "3-Unit PFM Dental Bridge (Cost-effective posterior solution)",
           "Laser-sintered bio-alloy core with layered porcelain",
           "Occlusal bite check & precision cementation",
-          "4-Star Hotel Stay in Istanbul (5 Nights)",
+          "4-Star Hotel Stay in Antalya (5 Nights)",
           "VIP Mercedes Transfers",
           "5-Year Clinical Warranty"
         ],
@@ -610,11 +610,11 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Full Arch Fixed Zirconia Bridge Restoration",
         "brand": "German 3D Pro Multilayer Zirconia (10-12 Units)",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-3.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "included": [
           "Full arch fixed monolithic zirconia bridge for multiple missing teeth",
           "Complete vertical dimension restoration & bite reconstruction",
-          "5-Star Luxury Hotel Accommodation in Istanbul (6 Nights)",
+          "5-Star Luxury Hotel Accommodation in Antalya (6 Nights)",
           "Private VIP Mercedes Chauffeur for all appointments",
           "Lifetime international warranty & dental passport"
         ],
@@ -648,25 +648,25 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         ]
       },
       {
-        "q": "How many days does the dental bridge procedure take in Istanbul?",
+        "q": "How many days does the dental bridge procedure take in Antalya?",
         "a": [
-          "The complete treatment is completed in 5 to 7 days during a single trip to Istanbul. Abutment preparation and digital scanning take place on Day 1, followed by temporary bridge placement, precision CAD/CAM milling in our laboratory, and final permanent cementation on Day 5 or 6."
+          "The complete treatment is completed in 5 to 7 days during a single trip to Antalya. Abutment preparation and digital scanning take place on Day 1, followed by temporary bridge placement, precision CAD/CAM milling in our laboratory, and final permanent cementation on Day 5 or 6."
         ]
       }
     ]
   },
   "es": {
     "packagesTitle": "Fixed Traditional Dental Bridge Packages",
-    "packagesSubtitle": "All-inclusive fixed bridge restorations with multi-layered German zirconia or high-noble ceramic, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers in Istanbul.",
+    "packagesSubtitle": "All-inclusive fixed bridge restorations with multi-layered German zirconia or high-noble ceramic, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers in Antalya.",
     "mostPopularBadge": "Most Popular Choice",
     "durationLabel": "Procedure Time:",
     "includedLabel": "Package Inclusions:",
     "priceLabel": "Price (All-Inclusive):",
     "getQuoteBtn": "Get Your Free Quote",
     "faqTitle": "Frequently Asked Questions About Traditional Dental Bridges",
-    "faqSubtitle": "Clinical guidance on fixed traditional bridges, abutment preparation, zirconia vs PFM materials, chewing function restoration, hygiene under pontics, and warranties in Istanbul.",
-    "stayDuration": "<strong>5 to 7 days in Istanbul.</strong> 3D intraoral digital impressions, precision abutment tooth preparation, temporary bridge placement, 5-axis CAD/CAM milling, and permanent cementation are completed during 1 visit.",
-    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel once to Istanbul for your complete fixed bridge restoration. All clinical steps are finalized within a single 5 to 7-day stay.",
+    "faqSubtitle": "Clinical guidance on fixed traditional bridges, abutment preparation, zirconia vs PFM materials, chewing function restoration, hygiene under pontics, and warranties in Antalya.",
+    "stayDuration": "<strong>5 to 7 days in Antalya.</strong> 3D intraoral digital impressions, precision abutment tooth preparation, temporary bridge placement, 5-axis CAD/CAM milling, and permanent cementation are completed during 1 visit.",
+    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel once to Antalya for your complete fixed bridge restoration. All clinical steps are finalized within a single 5 to 7-day stay.",
     "recoveryTime": "<strong>24 to 48 hours adaptation.</strong> Minor gum tenderness subsides quickly, allowing full chewing comfort and natural speech within 1 to 2 days.",
     "priceEstimate": "<strong>Traditional bridge prices start at £140 / €160 / $175 per unit (from £420 / €480 / $530 for a 3-unit bridge).</strong> Complete multi-unit packages include 3D digital planning, luxury hotel stay, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
@@ -674,7 +674,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "3-Unit Zirconia Traditional Bridge (1 Missing Tooth)",
         "brand": "German Multi-Layered Zirconia (1200+ MPa)",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-1.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "popular": true,
         "included": [
           "3-Unit High-Translucency German Zirconia Bridge (2 Abutments + 1 Pontic)",
@@ -694,12 +694,12 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "4-Unit Zirconia Fixed Bridge (2 Missing Teeth)",
         "brand": "German Katana / Vita Multi-Layer Zirconia",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-2.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "4-Unit High-Strength Zirconia Bridge (2 Abutments + 2 Pontics)",
           "Bespoke 3D Gnathological Bite Balance & Aesthetic Smile Mapping",
           "Aesthetic temporary bridge fitted on Day 1",
-          "4-Star Luxury Hotel Stay with Breakfast in Istanbul (6 Nights)",
+          "4-Star Luxury Hotel Stay with Breakfast in Antalya (6 Nights)",
           "VIP Mercedes Chauffeur Airport & Clinic Transfers",
           "10-Year Comprehensive Warranty against bridge fracture"
         ],
@@ -713,12 +713,12 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "3-Unit Metal-Porcelain (PFM) Bridge",
         "brand": "Biocompatible Chromium-Cobalt + German Ceramic",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-3.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "3-Unit PFM Dental Bridge (Cost-effective posterior solution)",
           "Laser-sintered bio-alloy core with layered porcelain",
           "Occlusal bite check & precision cementation",
-          "4-Star Hotel Stay in Istanbul (5 Nights)",
+          "4-Star Hotel Stay in Antalya (5 Nights)",
           "VIP Mercedes Transfers",
           "5-Year Clinical Warranty"
         ],
@@ -732,11 +732,11 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Full Arch Fixed Zirconia Bridge Restoration",
         "brand": "German 3D Pro Multilayer Zirconia (10-12 Units)",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-3.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "included": [
           "Full arch fixed monolithic zirconia bridge for multiple missing teeth",
           "Complete vertical dimension restoration & bite reconstruction",
-          "5-Star Luxury Hotel Accommodation in Istanbul (6 Nights)",
+          "5-Star Luxury Hotel Accommodation in Antalya (6 Nights)",
           "Private VIP Mercedes Chauffeur for all appointments",
           "Lifetime international warranty & dental passport"
         ],
@@ -770,25 +770,25 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         ]
       },
       {
-        "q": "How many days does the dental bridge procedure take in Istanbul?",
+        "q": "How many days does the dental bridge procedure take in Antalya?",
         "a": [
-          "The complete treatment is completed in 5 to 7 days during a single trip to Istanbul. Abutment preparation and digital scanning take place on Day 1, followed by temporary bridge placement, precision CAD/CAM milling in our laboratory, and final permanent cementation on Day 5 or 6."
+          "The complete treatment is completed in 5 to 7 days during a single trip to Antalya. Abutment preparation and digital scanning take place on Day 1, followed by temporary bridge placement, precision CAD/CAM milling in our laboratory, and final permanent cementation on Day 5 or 6."
         ]
       }
     ]
   },
   "ru": {
     "packagesTitle": "Fixed Traditional Dental Bridge Packages",
-    "packagesSubtitle": "All-inclusive fixed bridge restorations with multi-layered German zirconia or high-noble ceramic, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers in Istanbul.",
+    "packagesSubtitle": "All-inclusive fixed bridge restorations with multi-layered German zirconia or high-noble ceramic, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers in Antalya.",
     "mostPopularBadge": "Most Popular Choice",
     "durationLabel": "Procedure Time:",
     "includedLabel": "Package Inclusions:",
     "priceLabel": "Price (All-Inclusive):",
     "getQuoteBtn": "Get Your Free Quote",
     "faqTitle": "Frequently Asked Questions About Traditional Dental Bridges",
-    "faqSubtitle": "Clinical guidance on fixed traditional bridges, abutment preparation, zirconia vs PFM materials, chewing function restoration, hygiene under pontics, and warranties in Istanbul.",
-    "stayDuration": "<strong>5 to 7 days in Istanbul.</strong> 3D intraoral digital impressions, precision abutment tooth preparation, temporary bridge placement, 5-axis CAD/CAM milling, and permanent cementation are completed during 1 visit.",
-    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel once to Istanbul for your complete fixed bridge restoration. All clinical steps are finalized within a single 5 to 7-day stay.",
+    "faqSubtitle": "Clinical guidance on fixed traditional bridges, abutment preparation, zirconia vs PFM materials, chewing function restoration, hygiene under pontics, and warranties in Antalya.",
+    "stayDuration": "<strong>5 to 7 days in Antalya.</strong> 3D intraoral digital impressions, precision abutment tooth preparation, temporary bridge placement, 5-axis CAD/CAM milling, and permanent cementation are completed during 1 visit.",
+    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel once to Antalya for your complete fixed bridge restoration. All clinical steps are finalized within a single 5 to 7-day stay.",
     "recoveryTime": "<strong>24 to 48 hours adaptation.</strong> Minor gum tenderness subsides quickly, allowing full chewing comfort and natural speech within 1 to 2 days.",
     "priceEstimate": "<strong>Traditional bridge prices start at £140 / €160 / $175 per unit (from £420 / €480 / $530 for a 3-unit bridge).</strong> Complete multi-unit packages include 3D digital planning, luxury hotel stay, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
@@ -796,7 +796,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "3-Unit Zirconia Traditional Bridge (1 Missing Tooth)",
         "brand": "German Multi-Layered Zirconia (1200+ MPa)",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-1.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "popular": true,
         "included": [
           "3-Unit High-Translucency German Zirconia Bridge (2 Abutments + 1 Pontic)",
@@ -816,12 +816,12 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "4-Unit Zirconia Fixed Bridge (2 Missing Teeth)",
         "brand": "German Katana / Vita Multi-Layer Zirconia",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-2.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "4-Unit High-Strength Zirconia Bridge (2 Abutments + 2 Pontics)",
           "Bespoke 3D Gnathological Bite Balance & Aesthetic Smile Mapping",
           "Aesthetic temporary bridge fitted on Day 1",
-          "4-Star Luxury Hotel Stay with Breakfast in Istanbul (6 Nights)",
+          "4-Star Luxury Hotel Stay with Breakfast in Antalya (6 Nights)",
           "VIP Mercedes Chauffeur Airport & Clinic Transfers",
           "10-Year Comprehensive Warranty against bridge fracture"
         ],
@@ -835,12 +835,12 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "3-Unit Metal-Porcelain (PFM) Bridge",
         "brand": "Biocompatible Chromium-Cobalt + German Ceramic",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-3.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "3-Unit PFM Dental Bridge (Cost-effective posterior solution)",
           "Laser-sintered bio-alloy core with layered porcelain",
           "Occlusal bite check & precision cementation",
-          "4-Star Hotel Stay in Istanbul (5 Nights)",
+          "4-Star Hotel Stay in Antalya (5 Nights)",
           "VIP Mercedes Transfers",
           "5-Year Clinical Warranty"
         ],
@@ -854,11 +854,11 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Full Arch Fixed Zirconia Bridge Restoration",
         "brand": "German 3D Pro Multilayer Zirconia (10-12 Units)",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-3.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "included": [
           "Full arch fixed monolithic zirconia bridge for multiple missing teeth",
           "Complete vertical dimension restoration & bite reconstruction",
-          "5-Star Luxury Hotel Accommodation in Istanbul (6 Nights)",
+          "5-Star Luxury Hotel Accommodation in Antalya (6 Nights)",
           "Private VIP Mercedes Chauffeur for all appointments",
           "Lifetime international warranty & dental passport"
         ],
@@ -892,9 +892,9 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         ]
       },
       {
-        "q": "How many days does the dental bridge procedure take in Istanbul?",
+        "q": "How many days does the dental bridge procedure take in Antalya?",
         "a": [
-          "The complete treatment is completed in 5 to 7 days during a single trip to Istanbul. Abutment preparation and digital scanning take place on Day 1, followed by temporary bridge placement, precision CAD/CAM milling in our laboratory, and final permanent cementation on Day 5 or 6."
+          "The complete treatment is completed in 5 to 7 days during a single trip to Antalya. Abutment preparation and digital scanning take place on Day 1, followed by temporary bridge placement, precision CAD/CAM milling in our laboratory, and final permanent cementation on Day 5 or 6."
         ]
       }
     ]

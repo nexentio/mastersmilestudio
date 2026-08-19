@@ -43,7 +43,7 @@ interface PackageDict {
 const GENERAL_PACKAGES_I18N: Record<string, PackageDict> = {
   en: {
     badge: 'ALL-INCLUSIVE GENERAL DENTAL CARE',
-    title: 'Popular General & Preventive Dental Packages in Istanbul',
+    title: 'Popular General & Preventive Dental Packages in Antalya',
     subtitle: 'Comprehensive checkups, 3D CBCT imaging, microscopic root canal therapy, and gentle periodontal cleaning.',
     durationLabel: 'Treatment Duration:',
     featuresTitle: 'Package Inclusions:',
@@ -86,7 +86,7 @@ const GENERAL_PACKAGES_I18N: Record<string, PackageDict> = {
   },
   tr: {
     badge: 'HER ŞEY DAHİL GENEL DİŞ SAĞLIĞI',
-    title: 'İstanbul Popüler Genel & Koruyucu Diş Tedavisi Paketleri',
+    title: 'Antalya Popüler Genel & Koruyucu Diş Tedavisi Paketleri',
     subtitle: 'Kapsamlı muayene, 3D Tomografi, mikroskobik kanal tedavisi ve konforlu diş eti temizliği.',
     durationLabel: 'Tedavi Süresi:',
     featuresTitle: 'Pakete Dahil Hizmetler:',
@@ -129,7 +129,7 @@ const GENERAL_PACKAGES_I18N: Record<string, PackageDict> = {
   },
   de: {
     badge: 'ALL-INCLUSIVE ALLGEMEINE ZAHNMEDIZIN',
-    title: 'Beliebte Pakete für Zahnerhalt & Prophylaxe in Istanbul',
+    title: 'Beliebte Pakete für Zahnerhalt & Prophylaxe in Antalya',
     subtitle: 'Umfassende Diagnostik, 3D CBCT Röntgen, mikroskopische Wurzelbehandlung und schonende Parodontitistherapie.',
     durationLabel: 'Behandlungsdauer:',
     featuresTitle: 'Im Paket enthalten:',
@@ -172,7 +172,7 @@ const GENERAL_PACKAGES_I18N: Record<string, PackageDict> = {
   },
   pl: {
     badge: 'PAKIETY STOMATOLOGII ZACHOWAWCZEJ ALL-INCLUSIVE',
-    title: 'Popularne Pakiety Stomatologii Ogólnej i Profilaktyki w Stambule',
+    title: 'Popularne Pakiety Stomatologii Ogólnej i Profilaktyki w Antalyi',
     subtitle: 'Kompleksowa diagnostyka 3D CBCT, leczenie kanałowe pod mikroskopem i bezbolesne leczenie przyzębia.',
     durationLabel: 'Czas trwania:',
     featuresTitle: 'W pakiecie zawarte:',
@@ -215,7 +215,7 @@ const GENERAL_PACKAGES_I18N: Record<string, PackageDict> = {
   },
   pt: {
     badge: 'PACOTES DE CLÍNICA GERAL E PREVENÇÃO ALL-INCLUSIVE',
-    title: 'Pacotes Populares de Odontologia Geral e Saúde Bucal em Istambul',
+    title: 'Pacotes Populares de Odontologia Geral e Saúde Bucal em Antalya',
     subtitle: 'Checkup digital 3D CBCT, endodontia microscópica, restaurações estéticas e tratamento periodontal a laser.',
     durationLabel: 'Duração do Tratamento:',
     featuresTitle: 'Incluso no Pacote:',
@@ -258,7 +258,7 @@ const GENERAL_PACKAGES_I18N: Record<string, PackageDict> = {
   },
   es: {
     badge: 'PAQUETES DE ODONTOLOGÍA GENERAL TODO INCLUIDO',
-    title: 'Paquetes Populares de Odontología General y Prevención en Estambul',
+    title: 'Paquetes Populares de Odontología General y Prevención en Antalya',
     subtitle: 'Diagnóstico 3D CBCT, endodoncia microscópica, empastes estéticos y tratamiento periodontal con láser.',
     durationLabel: 'Duración del Tratamiento:',
     featuresTitle: 'Incluido en el Paquete:',
@@ -301,7 +301,7 @@ const GENERAL_PACKAGES_I18N: Record<string, PackageDict> = {
   },
   ru: {
     badge: 'ПАКЕТЫ ТЕРАПЕВТИЧЕСКОЙ СТОМАТОЛОГИИ «ВСЕ ВКЛЮЧЕНО»',
-    title: 'Популярные пакеты общей стоматологии и профилактики в Стамбуле',
+    title: 'Популярные пакеты общей стоматологии и профилактики в Анталье',
     subtitle: 'Комплексная 3D CBCT диагностика, эндодонтия под микроскопом, эстетические пломбы и лечение десен лазером.',
     durationLabel: 'Длительность лечения:',
     featuresTitle: 'В пакет включено:',
@@ -345,9 +345,9 @@ const GENERAL_PACKAGES_I18N: Record<string, PackageDict> = {
 };
 
 const GENERAL_IMAGES = [
-  'https://sohodent.com/doc/data1/lumineer-copy.webp',
-  'https://sohodent.com/doc/data1/porcelain-laminate-copy.webp',
-  'https://sohodent.com/doc/data1/full-mouth-implant-copy.webp',
+  '/treatments/accordion/lumineers.webp',
+  '/treatments/accordion/porcelain-laminate-copy.webp',
+  '/treatments/accordion/full-mouth-implant.webp',
 ];
 
 export default function TreatmentGeneralPackagesSlider() {

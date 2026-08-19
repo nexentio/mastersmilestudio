@@ -26,7 +26,7 @@ interface LocalizedText {
 const CROWN_I18N_DATA: Record<string, LocalizedText> = {
   en: {
     heading: 'From Broken Teeth to a Restored Radiant Smile',
-    desc: 'Real patient smile transformations with custom German Zirconia and E-Max crowns at Master Smile Studio Istanbul.',
+    desc: 'Real patient smile transformations with custom German Zirconia and E-Max crowns at Master Smile Studio Antalya.',
     viewGallery: 'View Full Crown Gallery →',
     cases: [
       {
@@ -49,7 +49,7 @@ const CROWN_I18N_DATA: Record<string, LocalizedText> = {
   },
   tr: {
     heading: 'Kırık ve Yıpranmış Dişlerden Kusursuz Gülüşe',
-    desc: 'Master Smile Studio İstanbul’da Alman Zirkonyum ve E-Max kronlarla gerçekleştirilen gerçek hasta dönüşümleri.',
+    desc: 'Master Smile Studio Antalya’da Alman Zirkonyum ve E-Max kronlarla gerçekleştirilen gerçek hasta dönüşümleri.',
     viewGallery: 'Tüm Kron Galerisini İncele →',
     cases: [
       {
@@ -72,7 +72,7 @@ const CROWN_I18N_DATA: Record<string, LocalizedText> = {
   },
   de: {
     heading: 'Von beschädigten Zähnen zu einem strahlenden Lächeln',
-    desc: 'Echte Patiententransformationen mit deutschem Zirkon und E-Max Kronen bei Master Smile Studio Istanbul.',
+    desc: 'Echte Patiententransformationen mit deutschem Zirkon und E-Max Kronen bei Master Smile Studio Antalya.',
     viewGallery: 'Vollständige Kronen-Galerie ansehen →',
     cases: [
       {
@@ -95,7 +95,7 @@ const CROWN_I18N_DATA: Record<string, LocalizedText> = {
   },
   pl: {
     heading: 'Od zniszczonych zębów do idealnego uśmiechu',
-    desc: 'Prawdziwe metamorfozy pacjentów z użyciem koron cyrkonowych i E-Max w Master Smile Studio Stambuł.',
+    desc: 'Prawdziwe metamorfozy pacjentów z użyciem koron cyrkonowych i E-Max w Master Smile Studio Antalya.',
     viewGallery: 'Zobacz całą galerię koron →',
     cases: [
       {
@@ -118,7 +118,7 @@ const CROWN_I18N_DATA: Record<string, LocalizedText> = {
   },
   pt: {
     heading: 'Da restauração dental ao sorriso radiante',
-    desc: 'Transformações reais de pacientes com coroas de zircônia e E-Max na Master Smile Studio Istambul.',
+    desc: 'Transformações reais de pacientes com coroas de zircônia e E-Max na Master Smile Studio Antalya.',
     viewGallery: 'Ver galeria completa de coroas →',
     cases: [
       {
@@ -141,7 +141,7 @@ const CROWN_I18N_DATA: Record<string, LocalizedText> = {
   },
   es: {
     heading: 'De dientes dañados a una sonrisa deslumbrante',
-    desc: 'Transformaciones reales con coronas de zirconio alemán y E-Max en Master Smile Studio Estambul.',
+    desc: 'Transformaciones reales con coronas de zirconio alemán y E-Max en Master Smile Studio Antalya.',
     viewGallery: 'Ver galería completa de coronas →',
     cases: [
       {
@@ -188,10 +188,10 @@ const CROWN_I18N_DATA: Record<string, LocalizedText> = {
 };
 
 const CROWN_CASE_IMAGES = [
-  'https://sohodent.com/doc/data1/zirconium-implant-copy.webp',
-  'https://sohodent.com/doc/data1/e-max-laminate-copy.webp',
-  'https://sohodent.com/doc/data1/porcelain-laminate-copy.webp',
-  'https://sohodent.com/doc/data1/full-mouth-implant-copy.webp',
+  '/treatments/accordion/zirconium-implant-copy.webp',
+  '/treatments/accordion/e-max-laminate-copy.webp',
+  '/treatments/accordion/porcelain-laminate-copy.webp',
+  '/treatments/accordion/full-mouth-implant.webp',
 ];
 
 export default function TreatmentCrownsBeforeAfterSliderSection() {

@@ -2,8 +2,8 @@
   "slug": "dental-implants",
   "hero": {
     "badge": "JCI & ISO Sertifikalı Çene Cerrahisi Kliniği",
-    "title": "İstanbul Diş İmplantı",
-    "subtitle": "İstanbul’daki kliniğimizde ömür boyu garantili premium implant markaları ve uzman cerrahlarımızla eksiksiz bir gülüşe kavuşun.",
+    "title": "Antalya Diş İmplantı",
+    "subtitle": "Antalya’daki kliniğimizde ömür boyu garantili premium implant markaları ve uzman cerrahlarımızla eksiksiz bir gülüşe kavuşun.",
     "features": [
       "Premium Markalarda Ömür Boyu Garanti",
       "3D CBCT Dijital Hassas Planlama",
@@ -13,7 +13,7 @@
     "secondaryBtn": "Paketleri ve Detayları Gör"
   },
   "intro": {
-    "title": "İstanbul Diş İmplantı – Master Smile Studio Türkiye",
+    "title": "Antalya Diş İmplantı – Master Smile Studio Türkiye",
     "whatIsTitle": "Diş İmplantı Nedir?",
     "whatIsP1": "Bir diş implantı, eksik bir dişin yerine konan yapay bir diş köküdür. Genellikle titanyumdan üretilen küçük bir vida görünümündedir ve yeni dişi güvenli bir şekilde tutmak için çene kemiğine yerleştirilir. Tam bir diş restorasyonu için üç ana parça kullanılır:",
     "parts": [
@@ -30,8 +30,8 @@
         "desc": "doğal diş gibi görünen görünür üst kısımdır."
       }
     ],
-    "healingP": "İmplant iyileşip kemikle güçlü bir şekilde kaynaştıktan sonra kuron hazırlanır ve takılır. İstanbul'daki Master Smile Studio kliniğimizde, çene cerrahisi alanında uzman hekim kadromuz gülüşünüzü yeniden kazandırmak için kusursuz ve yüksek kaliteli bir diş implantı prosedürü sağlar.",
-    "solutionP": "Bir veya daha fazla dişiniz eksikse, İstanbul'da diş implantı tedavisi güvenli, uzun ömürlü ve estetik bir çözümdür.",
+    "healingP": "İmplant iyileşip kemikle güçlü bir şekilde kaynaştıktan sonra kuron hazırlanır ve takılır. Antalya'daki Master Smile Studio kliniğimizde, çene cerrahisi alanında uzman hekim kadromuz gülüşünüzü yeniden kazandırmak için kusursuz ve yüksek kaliteli bir diş implantı prosedürü sağlar.",
+    "solutionP": "Bir veya daha fazla dişiniz eksikse, Antalya'da diş implantı tedavisi güvenli, uzun ömürlü ve estetik bir çözümdür.",
     "videoUrl": "https://www.youtube.com/embed/R081L98DAls?t=21"
   },
   "rightTreatment": {
@@ -82,8 +82,8 @@
     }
   },
   "whyChoose": {
-    "title": "Neden İstanbul’da Diş İmplantı Yaptırmalısınız?",
-    "intro": "İstanbul, yüksek kaliteli ve uygun fiyatlı diş tedavisi arayan uluslararası hastalar için dünyanın en popüler destinasyonlarından biri haline gelmiştir. Hastaların diş implantları için Master Smile Studio Türkiye'yi tercih etmelerinin başlıca nedenleri:",
+    "title": "Neden Antalya’da Diş İmplantı Yaptırmalısınız?",
+    "intro": "Antalya, yüksek kaliteli ve uygun fiyatlı diş tedavisi arayan uluslararası hastalar için dünyanın en popüler destinasyonlarından biri haline gelmiştir. Hastaların diş implantları için Master Smile Studio Türkiye'yi tercih etmelerinin başlıca nedenleri:",
     "reasons": [
       {
         "title": "Uygun Fiyatlar",
@@ -107,12 +107,12 @@
       },
       {
         "title": "Turizm ve Kültür Şehri",
-        "desc": "Asya ve Avrupa'yı birleştiren tarihi İstanbul'da tatil yaparken dünya standartlarında tedavi olun."
+        "desc": "Asya ve Avrupa'yı birleştiren tarihi Antalya'da tatil yaparken dünya standartlarında tedavi olun."
       }
     ]
   },
   "cost": {
-    "heading": "İstanbul Diş İmplantı Fiyatları (Paket Ücretleri)",
+    "heading": "Antalya Diş İmplantı Fiyatları (Paket Ücretleri)",
     "tableIntro": "Türkiye ve diğer ülkeler arasındaki ortalama diş implantı maliyet karşılaştırması:",
     "comparisonTable": [
       {
@@ -153,7 +153,7 @@
     ]
   },
   "seo": {
-    "title": "İstanbul Diş İmplantı Tedavisi | Master Smile Studio",
-    "description": "İstanbul’da dünya standartlarında diş tedavisi, dijital gülüş tasarımı ve implant uygulamaları. Ücretsiz online konsültasyon alın."
+    "title": "Antalya Diş İmplantı Tedavisi | Master Smile Studio",
+    "description": "Antalya’da dünya standartlarında diş tedavisi, dijital gülüş tasarımı ve implant uygulamaları. Ücretsiz online konsültasyon alın."
   }
 }

@@ -37,8 +37,8 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
     packages: [
       {
         title: 'Full Jaw All on 4 Implant Package (Nucleoss)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-package-10.jpg',
-        alt: 'All on 4 Dental Implant Package Nucleoss Istanbul Turkey',
+        img: '/packages/pkg-4.webp',
+        alt: 'All on 4 Dental Implant Package Nucleoss Antalya Turkey',
         duration: '4-5 Days',
         priceUSD: '$4,900',
         priceEUR: '€4,500',
@@ -54,7 +54,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
       },
       {
         title: 'Full Jaw All on 4 Implant Package (DXL)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-implant-package-2.jpg',
+        img: '/packages/pkg-5.webp',
         alt: 'All on 4 Dental Implant Package DXL German Brand',
         duration: '4-5 Days',
         priceUSD: '$5,800',
@@ -71,7 +71,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
       },
       {
         title: 'Full Jaw All on 4 Implant Package (Straumann)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-implant-package-3.jpg',
+        img: '/packages/pkg-6.webp',
         alt: 'All on 4 Dental Implant Package Straumann Swiss Brand',
         duration: '4-5 Days',
         priceUSD: '$7,600',
@@ -88,7 +88,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
       },
       {
         title: 'Full Jaw All on 6 Implant Package (Nucleoss)',
-        img: 'https://sohodent.com/doc/data1/All-on-6-implant-package-1.jpg',
+        img: '/packages/pkg-1.webp',
         alt: 'All on 6 Dental Implant Package Nucleoss',
         duration: '5-6 Days',
         priceUSD: '$5,900',
@@ -105,7 +105,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
       },
       {
         title: 'Full Jaw All on 6 Implant Package (DXL)',
-        img: 'https://sohodent.com/doc/data1/All-on-6-implant-package-2.jpg',
+        img: '/packages/pkg-2.webp',
         alt: 'All on 6 Dental Implant Package DXL German Brand',
         duration: '5-6 Days',
         priceUSD: '$6,900',
@@ -122,7 +122,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
       },
       {
         title: 'Full Jaw All on 6 Implant Package (Straumann)',
-        img: 'https://sohodent.com/doc/data1/All-on-6-implant-package-3.jpg',
+        img: '/packages/pkg-3.webp',
         alt: 'All on 6 Dental Implant Package Straumann Swiss Brand',
         duration: '5-6 Days',
         priceUSD: '$8,900',
@@ -149,8 +149,8 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
     packages: [
       {
         title: 'Tam Çene All on 4 İmplant Paketi (Nucleoss)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-package-10.jpg',
-        alt: 'All on 4 Diş İmplantı Paketi Nucleoss İstanbul Türkiye',
+        img: '/packages/pkg-4.webp',
+        alt: 'All on 4 Diş İmplantı Paketi Nucleoss Antalya Türkiye',
         duration: '4-5 Gün',
         priceUSD: '$4,900',
         priceEUR: '€4,500',
@@ -166,7 +166,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
       },
       {
         title: 'Tam Çene All on 4 İmplant Paketi (DXL)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-implant-package-2.jpg',
+        img: '/packages/pkg-5.webp',
         alt: 'All on 4 Diş İmplant Paketi DXL Alman Markası',
         duration: '4-5 Gün',
         priceUSD: '$5,800',
@@ -183,7 +183,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
       },
       {
         title: 'Tam Çene All on 4 İmplant Paketi (Straumann)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-implant-package-3.jpg',
+        img: '/packages/pkg-6.webp',
         alt: 'All on 4 Diş İmplant Paketi Straumann İsviçre Markası',
         duration: '4-5 Gün',
         priceUSD: '$7,600',
@@ -200,7 +200,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
       },
       {
         title: 'Tam Çene All on 6 İmplant Paketi (Nucleoss)',
-        img: 'https://sohodent.com/doc/data1/All-on-6-implant-package-1.jpg',
+        img: '/packages/pkg-1.webp',
         alt: 'All on 6 Diş İmplant Paketi Nucleoss',
         duration: '5-6 Gün',
         priceUSD: '$5,900',
@@ -217,7 +217,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
       },
       {
         title: 'Tam Çene All on 6 İmplant Paketi (DXL)',
-        img: 'https://sohodent.com/doc/data1/All-on-6-implant-package-2.jpg',
+        img: '/packages/pkg-2.webp',
         alt: 'All on 6 Diş İmplant Paketi DXL Alman Markası',
         duration: '5-6 Gün',
         priceUSD: '$6,900',
@@ -234,7 +234,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
       },
       {
         title: 'Tam Çene All on 6 İmplant Paketi (Straumann)',
-        img: 'https://sohodent.com/doc/data1/All-on-6-implant-package-3.jpg',
+        img: '/packages/pkg-3.webp',
         alt: 'All on 6 Diş İmplant Paketi Straumann İsviçre Markası',
         duration: '5-6 Gün',
         priceUSD: '$8,900',
@@ -261,8 +261,8 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
     packages: [
       {
         title: 'Ganzkiefer All on 4 Implantat-Paket (Nucleoss)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-package-10.jpg',
-        alt: 'All on 4 Zahnimplantat Paket Nucleoss Istanbul Türkei',
+        img: '/packages/pkg-4.webp',
+        alt: 'All on 4 Zahnimplantat Paket Nucleoss Antalya Türkei',
         duration: '4-5 Tage',
         priceUSD: '$4,900',
         priceEUR: '€4,500',
@@ -278,7 +278,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
       },
       {
         title: 'Ganzkiefer All on 4 Implantat-Paket (DXL)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-implant-package-2.jpg',
+        img: '/packages/pkg-5.webp',
         alt: 'All on 4 Zahnimplantat Paket DXL Deutsche Marke',
         duration: '4-5 Tage',
         priceUSD: '$5,800',
@@ -295,7 +295,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
       },
       {
         title: 'Ganzkiefer All on 4 Implantat-Paket (Straumann)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-implant-package-3.jpg',
+        img: '/packages/pkg-6.webp',
         alt: 'All on 4 Zahnimplantat Paket Straumann Schweizer Marke',
         duration: '4-5 Tage',
         priceUSD: '$7,600',
@@ -312,7 +312,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
       },
       {
         title: 'Ganzkiefer All on 6 Implantat-Paket (Nucleoss)',
-        img: 'https://sohodent.com/doc/data1/All-on-6-implant-package-1.jpg',
+        img: '/packages/pkg-1.webp',
         alt: 'All on 6 Zahnimplantat Paket Nucleoss',
         duration: '5-6 Tage',
         priceUSD: '$5,900',
@@ -329,7 +329,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
       },
       {
         title: 'Ganzkiefer All on 6 Implantat-Paket (DXL)',
-        img: 'https://sohodent.com/doc/data1/All-on-6-implant-package-2.jpg',
+        img: '/packages/pkg-2.webp',
         alt: 'All on 6 Zahnimplantat Paket DXL Deutsche Marke',
         duration: '5-6 Tage',
         priceUSD: '$6,900',
@@ -346,7 +346,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
       },
       {
         title: 'Ganzkiefer All on 6 Implantat-Paket (Straumann)',
-        img: 'https://sohodent.com/doc/data1/All-on-6-implant-package-3.jpg',
+        img: '/packages/pkg-3.webp',
         alt: 'All on 6 Zahnimplantat Paket Straumann Schweizer Marke',
         duration: '5-6 Tage',
         priceUSD: '$8,900',
@@ -373,8 +373,8 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
     packages: [
       {
         title: 'Pakiet All on 4 na Całą Szczękę (Nucleoss)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-package-10.jpg',
-        alt: 'Pakiet implantów All on 4 Nucleoss Stambuł Turcja',
+        img: '/packages/pkg-4.webp',
+        alt: 'Pakiet implantów All on 4 Nucleoss Antalya Turcja',
         duration: '4-5 Dni',
         priceUSD: '$4,900',
         priceEUR: '€4,500',
@@ -390,7 +390,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
       },
       {
         title: 'Pakiet All on 4 na Całą Szczękę (DXL)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-implant-package-2.jpg',
+        img: '/packages/pkg-5.webp',
         alt: 'Pakiet implantów All on 4 DXL niemiecka marka',
         duration: '4-5 Dni',
         priceUSD: '$5,800',
@@ -407,7 +407,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
       },
       {
         title: 'Pakiet All on 4 na Całą Szczękę (Straumann)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-implant-package-3.jpg',
+        img: '/packages/pkg-6.webp',
         alt: 'Pakiet implantów All on 4 Straumann szwajcarska marka',
         duration: '4-5 Dni',
         priceUSD: '$7,600',
@@ -424,7 +424,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
       },
       {
         title: 'Pakiet All on 6 na Całą Szczękę (Nucleoss)',
-        img: 'https://sohodent.com/doc/data1/All-on-6-implant-package-1.jpg',
+        img: '/packages/pkg-1.webp',
         alt: 'Pakiet implantów All on 6 Nucleoss',
         duration: '5-6 Dni',
         priceUSD: '$5,900',
@@ -441,7 +441,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
       },
       {
         title: 'Pakiet All on 6 na Całą Szczękę (DXL)',
-        img: 'https://sohodent.com/doc/data1/All-on-6-implant-package-2.jpg',
+        img: '/packages/pkg-2.webp',
         alt: 'Pakiet implantów All on 6 DXL niemiecka marka',
         duration: '5-6 Dni',
         priceUSD: '$6,900',
@@ -458,7 +458,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
       },
       {
         title: 'Pakiet All on 6 na Całą Szczękę (Straumann)',
-        img: 'https://sohodent.com/doc/data1/All-on-6-implant-package-3.jpg',
+        img: '/packages/pkg-3.webp',
         alt: 'Pakiet implantów All on 6 Straumann szwajcarska marka',
         duration: '5-6 Dni',
         priceUSD: '$8,900',
@@ -485,8 +485,8 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
     packages: [
       {
         title: 'Pacote All on 4 de Boca Completa (Nucleoss)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-package-10.jpg',
-        alt: 'Pacote de Implantes All on 4 Nucleoss Istambul Turquia',
+        img: '/packages/pkg-4.webp',
+        alt: 'Pacote de Implantes All on 4 Nucleoss Antalya Turquia',
         duration: '4-5 Dias',
         priceUSD: '$4,900',
         priceEUR: '€4,500',
@@ -502,7 +502,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
       },
       {
         title: 'Pacote All on 4 de Boca Completa (DXL)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-implant-package-2.jpg',
+        img: '/packages/pkg-5.webp',
         alt: 'Pacote de Implantes All on 4 DXL Marca Alemã',
         duration: '4-5 Dias',
         priceUSD: '$5,800',
@@ -519,7 +519,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
       },
       {
         title: 'Pacote All on 4 de Boca Completa (Straumann)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-implant-package-3.jpg',
+        img: '/packages/pkg-6.webp',
         alt: 'Pacote de Implantes All on 4 Straumann Marca Suíça',
         duration: '4-5 Dias',
         priceUSD: '$7,600',
@@ -536,7 +536,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
       },
       {
         title: 'Pacote All on 6 de Boca Completa (Nucleoss)',
-        img: 'https://sohodent.com/doc/data1/All-on-6-implant-package-1.jpg',
+        img: '/packages/pkg-1.webp',
         alt: 'Pacote de Implantes All on 6 Nucleoss',
         duration: '5-6 Dias',
         priceUSD: '$5,900',
@@ -553,7 +553,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
       },
       {
         title: 'Pacote All on 6 de Boca Completa (DXL)',
-        img: 'https://sohodent.com/doc/data1/All-on-6-implant-package-2.jpg',
+        img: '/packages/pkg-2.webp',
         alt: 'Pacote de Implantes All on 6 DXL Marca Alemã',
         duration: '5-6 Dias',
         priceUSD: '$6,900',
@@ -570,7 +570,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
       },
       {
         title: 'Pacote All on 6 de Boca Completa (Straumann)',
-        img: 'https://sohodent.com/doc/data1/All-on-6-implant-package-3.jpg',
+        img: '/packages/pkg-3.webp',
         alt: 'Pacote de Implantes All on 6 Straumann Marca Suíça',
         duration: '5-6 Dias',
         priceUSD: '$8,900',
@@ -597,8 +597,8 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
     packages: [
       {
         title: 'Paquete All on 4 Arcada Completa (Nucleoss)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-package-10.jpg',
-        alt: 'Paquete de Implantes All on 4 Nucleoss Estambul Turquía',
+        img: '/packages/pkg-4.webp',
+        alt: 'Paquete de Implantes All on 4 Nucleoss Antalya Turquía',
         duration: '4-5 Días',
         priceUSD: '$4,900',
         priceEUR: '€4,500',
@@ -614,7 +614,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
       },
       {
         title: 'Paquete All on 4 Arcada Completa (DXL)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-implant-package-2.jpg',
+        img: '/packages/pkg-5.webp',
         alt: 'Paquete de Implantes All on 4 DXL Marca Alemana',
         duration: '4-5 Días',
         priceUSD: '$5,800',
@@ -631,7 +631,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
       },
       {
         title: 'Paquete All on 4 Arcada Completa (Straumann)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-implant-package-3.jpg',
+        img: '/packages/pkg-6.webp',
         alt: 'Paquete de Implantes All on 4 Straumann Marca Suiza',
         duration: '4-5 Días',
         priceUSD: '$7,600',
@@ -648,7 +648,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
       },
       {
         title: 'Paquete All on 6 Arcada Completa (Nucleoss)',
-        img: 'https://sohodent.com/doc/data1/All-on-6-implant-package-1.jpg',
+        img: '/packages/pkg-1.webp',
         alt: 'Paquete de Implantes All on 6 Nucleoss',
         duration: '5-6 Días',
         priceUSD: '$5,900',
@@ -665,7 +665,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
       },
       {
         title: 'Paquete All on 6 Arcada Completa (DXL)',
-        img: 'https://sohodent.com/doc/data1/All-on-6-implant-package-2.jpg',
+        img: '/packages/pkg-2.webp',
         alt: 'Paquete de Implantes All on 6 DXL Marca Alemana',
         duration: '5-6 Días',
         priceUSD: '$6,900',
@@ -682,7 +682,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
       },
       {
         title: 'Paquete All on 6 Arcada Completa (Straumann)',
-        img: 'https://sohodent.com/doc/data1/All-on-6-implant-package-3.jpg',
+        img: '/packages/pkg-3.webp',
         alt: 'Paquete de Implantes All on 6 Straumann Marca Suiza',
         duration: '5-6 Días',
         priceUSD: '$8,900',
@@ -709,8 +709,8 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
     packages: [
       {
         title: 'Пакет All-on-4 на Всю Челюсть (Nucleoss)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-package-10.jpg',
-        alt: 'Пакет имплантации All on 4 Nucleoss Стамбул Турция',
+        img: '/packages/pkg-4.webp',
+        alt: 'Пакет имплантации All on 4 Nucleoss Анталья Турция',
         duration: '4-5 Дней',
         priceUSD: '$4,900',
         priceEUR: '€4,500',
@@ -726,7 +726,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
       },
       {
         title: 'Пакет All-on-4 на Всю Челюсть (DXL)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-implant-package-2.jpg',
+        img: '/packages/pkg-5.webp',
         alt: 'Пакет имплантации All on 4 DXL немецкий бренд',
         duration: '4-5 Дней',
         priceUSD: '$5,800',
@@ -743,7 +743,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
       },
       {
         title: 'Пакет All-on-4 на Всю Челюсть (Straumann)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-implant-package-3.jpg',
+        img: '/packages/pkg-6.webp',
         alt: 'Пакет имплантации All on 4 Straumann швейцарский бренд',
         duration: '4-5 Дней',
         priceUSD: '$7,600',
@@ -760,7 +760,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
       },
       {
         title: 'Пакет All-on-6 на Всю Челюсть (Nucleoss)',
-        img: 'https://sohodent.com/doc/data1/All-on-6-implant-package-1.jpg',
+        img: '/packages/pkg-1.webp',
         alt: 'Пакет имплантации All on 6 Nucleoss',
         duration: '5-6 Дней',
         priceUSD: '$5,900',
@@ -777,7 +777,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
       },
       {
         title: 'Пакет All-on-6 на Всю Челюсть (DXL)',
-        img: 'https://sohodent.com/doc/data1/All-on-6-implant-package-2.jpg',
+        img: '/packages/pkg-2.webp',
         alt: 'Пакет имплантации All on 6 DXL немецкий бренд',
         duration: '5-6 Дней',
         priceUSD: '$6,900',
@@ -794,7 +794,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
       },
       {
         title: 'Пакет All-on-6 на Всю Челюсть (Straumann)',
-        img: 'https://sohodent.com/doc/data1/All-on-6-implant-package-3.jpg',
+        img: '/packages/pkg-3.webp',
         alt: 'Пакет имплантации All on 6 Straumann швейцарский бренд',
         duration: '5-6 Дней',
         priceUSD: '$8,900',

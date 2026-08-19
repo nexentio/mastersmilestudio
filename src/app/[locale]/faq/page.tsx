@@ -18,12 +18,12 @@ export async function generateMetadata({ params }: Props) {
   return {
     title:
       locale === 'tr'
-        ? 'Diş İmplantı ve Tedaviler (SSS) | Master Smile Studio İstanbul'
-        : 'Dental Implant FAQ | Master Smile Studio Istanbul',
+        ? 'Diş İmplantı ve Tedaviler (SSS) | Master Smile Studio Antalya'
+        : 'Dental Implant FAQ | Master Smile Studio Antalya',
     description:
       locale === 'tr'
         ? 'Diş implantı, zirkonyum kaplama, lamine ve Türkiye diş tedavisi hakkında en çok merak edilen sıkça sorulan sorular.'
-        : 'Frequently asked questions about dental implants, zirconium crowns, veneers, costs and travel in Istanbul Turkey at Master Smile Studio.',
+        : 'Frequently asked questions about dental implants, zirconium crowns, veneers, costs and travel in Antalya Turkey at Master Smile Studio.',
   };
 }
 

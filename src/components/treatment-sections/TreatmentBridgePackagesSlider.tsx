@@ -43,7 +43,7 @@ interface PackageDict {
 const BRIDGE_PACKAGES_I18N: Record<string, PackageDict> = {
   en: {
     badge: 'ALL-INCLUSIVE DENTAL BRIDGE PACKAGES',
-    title: 'Popular Dental Bridge Packages in Istanbul',
+    title: 'Popular Dental Bridge Packages in Antalya',
     subtitle: 'High-strength Zirconia & Implant-Supported bridge packages with 5-star hotel accommodation and VIP chauffeur transfers.',
     durationLabel: 'Treatment Duration:',
     featuresTitle: 'Package Inclusions:',
@@ -86,7 +86,7 @@ const BRIDGE_PACKAGES_I18N: Record<string, PackageDict> = {
   },
   tr: {
     badge: 'HER ŞEY DAHİL DİŞ KÖPRÜSÜ PAKETLERİ',
-    title: 'İstanbul Popüler Diş Köprüsü & Zirkonyum Paketleri',
+    title: 'Antalya Popüler Diş Köprüsü & Zirkonyum Paketleri',
     subtitle: 'Alman Zirkonyum kalitesi, implant destekli çözümler, 5 yıldızlı otel konaklaması ve VIP transfer ile şeffaf paketler.',
     durationLabel: 'Tedavi Süresi:',
     featuresTitle: 'Pakete Dahil Hizmetler:',
@@ -129,7 +129,7 @@ const BRIDGE_PACKAGES_I18N: Record<string, PackageDict> = {
   },
   de: {
     badge: 'ALL-INCLUSIVE ZAHNBRÜCKEN-PAKETE',
-    title: 'Beliebte Zahnbrücken-Pakete in Istanbul',
+    title: 'Beliebte Zahnbrücken-Pakete in Antalya',
     subtitle: 'Hochfeste Zirkon- und implantatgetragene Brücken inklusive 5-Sterne-Hotel und VIP-Transfers.',
     durationLabel: 'Behandlungsdauer:',
     featuresTitle: 'Im Paket enthalten:',
@@ -172,7 +172,7 @@ const BRIDGE_PACKAGES_I18N: Record<string, PackageDict> = {
   },
   pl: {
     badge: 'PAKIETY MOSTÓW ZĘBOWYCH ALL-INCLUSIVE',
-    title: 'Popularne Pakiety Mostów Protetycznych w Stambule',
+    title: 'Popularne Pakiety Mostów Protetycznych w Antalyi',
     subtitle: 'Niemiecki tlenek cyrkonu i mosty na implantach z 5-gwiazdkowym hotelem i transferami VIP.',
     durationLabel: 'Czas trwania:',
     featuresTitle: 'W pakiecie zawarte:',
@@ -215,8 +215,8 @@ const BRIDGE_PACKAGES_I18N: Record<string, PackageDict> = {
   },
   pt: {
     badge: 'PACOTES DE PONTES DENTÁRIAS ALL-INCLUSIVE',
-    title: 'Pacotes Populares de Pontes Dentárias em Istambul',
-    subtitle: 'Pontes em zircônia alemã e sobre implantes com hotel 5 estrelas e transfers VIP em Istambul.',
+    title: 'Pacotes Populares de Pontes Dentárias em Antalya',
+    subtitle: 'Pontes em zircônia alemã e sobre implantes com hotel 5 estrelas e transfers VIP em Antalya.',
     durationLabel: 'Duração do Tratamento:',
     featuresTitle: 'Incluso no Pacote:',
     ctaText: 'Solicitar Orçamento',
@@ -258,7 +258,7 @@ const BRIDGE_PACKAGES_I18N: Record<string, PackageDict> = {
   },
   es: {
     badge: 'PAQUETES DE PUENTES DENTALES TODO INCLUIDO',
-    title: 'Paquetes Populares de Puentes Dentales en Estambul',
+    title: 'Paquetes Populares de Puentes Dentales en Antalya',
     subtitle: 'Puentes de zirconio alemán e implanto-soportados con hotel 5 estrellas y traslados VIP.',
     durationLabel: 'Duración del Tratamiento:',
     featuresTitle: 'Incluido en el Paquete:',
@@ -301,7 +301,7 @@ const BRIDGE_PACKAGES_I18N: Record<string, PackageDict> = {
   },
   ru: {
     badge: 'ПАКЕТЫ МОСТОВИДНЫХ ПРОТЕЗОВ «ВСЕ ВКЛЮЧЕНО»',
-    title: 'Популярные пакеты зубных мостов в Стамбуле',
+    title: 'Популярные пакеты зубных мостов в Анталье',
     subtitle: 'Немецкие циркониевые и мостовидные протезы на имплантах с проживанием в 5★ отеле и VIP-трансфером.',
     durationLabel: 'Длительность лечения:',
     featuresTitle: 'В пакет включено:',
@@ -345,9 +345,9 @@ const BRIDGE_PACKAGES_I18N: Record<string, PackageDict> = {
 };
 
 const BRIDGE_IMAGES = [
-  'https://sohodent.com/doc/data1/zirconium-implant-copy.webp',
-  'https://sohodent.com/doc/data1/full-mouth-implant-copy.webp',
-  'https://sohodent.com/doc/data1/porcelain-laminate-copy.webp',
+  '/treatments/accordion/zirconium-implant-copy.webp',
+  '/treatments/accordion/full-mouth-implant.webp',
+  '/treatments/accordion/porcelain-laminate-copy.webp',
 ];
 
 export default function TreatmentBridgePackagesSlider() {

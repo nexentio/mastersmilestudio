@@ -22,15 +22,42 @@
   "doctorTulayTitle": "Ağız, Diş ve Çene Cerrahı",
   "doctorAliKemalTitle": "Uzman Diş Hekimi",
   "doctorAbdullahTitle": "Endodonti & Restoratif Tedavi",
-  "smileDesign": { "title": "Gülüş Tasarımı", "description": "Yüz hatlarınıza özel altın oran ve dijital gülüş tasarımı." },
-  "implant": { "title": "İmplant Tedavisi", "description": "Doğal diş hissi veren uzun ömürlü titanyum implant çözümleri." },
-  "emax": { "title": "E-max Lamina", "description": "Işık geçirgenliği yüksek ultra ince porselen yaprak kaplamalar." },
-  "zirconia": { "title": "Zirkonyum Kronlar", "description": "Yüksek dayanıklı ve doğal estetiğe sahip zirkonyum kaplamalar." },
-  "whitening": { "title": "Diş Beyazlatma", "description": "Lazer teknolojisi ile güvenli ve hızlı profesyonel beyazlatma." },
-  "rootCanal": { "title": "Kanal Tedavisi", "description": "Ağrısız mikroskop destekli diş kurtarma tedavisi." },
-  "dentures": { "title": "Diş Protezleri", "description": "Konforlu, doğal görünümlü sabit ve hareketli protez sistemleri." },
-  "bonding": { "title": "Kompozit Bonding", "description": "Tek seansta kırık ve aralıklı dişlerin estetik onarımı." },
-  "orthodontics": { "title": "Ortodonti", "description": "Şeffaf plaklar ve estetik braketler ile düzgün diş sıralaması." },
+  "smileDesign": {
+    "title": "Gülüş Tasarımı",
+    "description": "Yüz hatlarınıza özel altın oran ve dijital gülüş tasarımı."
+  },
+  "implant": {
+    "title": "İmplant Tedavisi",
+    "description": "Doğal diş hissi veren uzun ömürlü titanyum implant çözümleri."
+  },
+  "emax": {
+    "title": "E-max Lamina",
+    "description": "Işık geçirgenliği yüksek ultra ince porselen yaprak kaplamalar."
+  },
+  "zirconia": {
+    "title": "Zirkonyum Kronlar",
+    "description": "Yüksek dayanıklı ve doğal estetiğe sahip zirkonyum kaplamalar."
+  },
+  "whitening": {
+    "title": "Diş Beyazlatma",
+    "description": "Lazer teknolojisi ile güvenli ve hızlı profesyonel beyazlatma."
+  },
+  "rootCanal": {
+    "title": "Kanal Tedavisi",
+    "description": "Ağrısız mikroskop destekli diş kurtarma tedavisi."
+  },
+  "dentures": {
+    "title": "Diş Protezleri",
+    "description": "Konforlu, doğal görünümlü sabit ve hareketli protez sistemleri."
+  },
+  "bonding": {
+    "title": "Kompozit Bonding",
+    "description": "Tek seansta kırık ve aralıklı dişlerin estetik onarımı."
+  },
+  "orthodontics": {
+    "title": "Ortodonti",
+    "description": "Şeffaf plaklar ve estetik braketler ile düzgün diş sıralaması."
+  },
   "items": {
     "smileDesign": {
       "title": "GÜLÜŞ TASARIMI",
@@ -129,7 +156,7 @@
     }
   },
   "dentalImplantsIntro": {
-    "title": "İstanbul Diş İmplantı – Master Smile Studio Türkiye",
+    "title": "Antalya Diş İmplantı – Master Smile Studio Türkiye",
     "whatIsTitle": "Diş İmplantı Nedir?",
     "whatIsP1": "Bir diş implantı, eksik bir dişin yerine konan yapay bir diş köküdür. Genellikle titanyumdan üretilen küçük bir vida görünümündedir ve yeni dişi güvenli bir şekilde tutmak için çene kemiğine yerleştirilir. Tam bir diş restorasyonu için üç ana parça kullanılır:",
     "part1Label": "Dental implant (titanyum vida)",
@@ -138,8 +165,10 @@
     "part2Desc": "implantı kurona bağlar.",
     "part3Label": "Kuron (kaplama diş)",
     "part3Desc": "doğal diş gibi görünen görünür üst kısımdır.",
-    "healingP": "İmplant iyileşip kemikle güçlü bir şekilde kaynaştıktan sonra kuron hazırlanır ve takılır. İstanbul'daki Master Smile Studio kliniğimizde, çene cerrahisi alanında uzman hekim kadromuz gülüşünüzü yeniden kazandırmak için kusursuz ve yüksek kaliteli bir diş implantı prosedürü sağlar.",
-    "solutionP": "Bir veya daha fazla dişiniz eksikse, İstanbul'da diş implantı tedavisi güvenli, uzun ömürlü ve estetik bir çözümdür.",
-    "costHeading": "İstanbul Diş İmplantı Fiyatları (Paket Ücretleri)"
-  }
+    "healingP": "İmplant iyileşip kemikle güçlü bir şekilde kaynaştıktan sonra kuron hazırlanır ve takılır. Antalya'daki Master Smile Studio kliniğimizde, çene cerrahisi alanında uzman hekim kadromuz gülüşünüzü yeniden kazandırmak için kusursuz ve yüksek kaliteli bir diş implantı prosedürü sağlar.",
+    "solutionP": "Bir veya daha fazla dişiniz eksikse, Antalya'da diş implantı tedavisi güvenli, uzun ömürlü ve estetik bir çözümdür.",
+    "costHeading": "Antalya Diş İmplantı Fiyatları (Paket Ücretleri)"
+  },
+  "doctorFiratTitle": "Çene Cerrahisi Uzmanı",
+  "doctorOzanTitle": "Protez Diş Uzmanı"
 }

@@ -71,9 +71,9 @@ interface GeneralI18n {
 
 const GENERAL_DATA: Record<string, GeneralI18n> = {
   en: {
-    introHeading: 'General Dentistry & Preventive Oral Health in Istanbul, Turkey',
+    introHeading: 'General Dentistry & Preventive Oral Health in Antalya, Turkey',
     introP1:
-      'General and preventive dentistry forms the cornerstone of lasting oral health, comfortable chewing, and pain-free living. From microscopic root canal therapy and Swiss Air-Flow deep cleaning to tooth-colored nano-composite restorations and atraumatic wisdom tooth extractions, our specialists at Master Smile Studio Istanbul protect, restore, and maintain your natural teeth with uncompromising precision.',
+      'General and preventive dentistry forms the cornerstone of lasting oral health, comfortable chewing, and pain-free living. From microscopic root canal therapy and Swiss Air-Flow deep cleaning to tooth-colored nano-composite restorations and atraumatic wisdom tooth extractions, our specialists at Master Smile Studio Antalya protect, restore, and maintain your natural teeth with uncompromising precision.',
     partsTitle: 'The 3 Core Pillars of Advanced Conservative Dental Health:',
     part1Label: '1. Preventive & Diagnostic Precision (3D CBCT & Air-Flow)',
     part1Desc:
@@ -87,10 +87,10 @@ const GENERAL_DATA: Record<string, GeneralI18n> = {
     healingP:
       'Thanks to computer-guided local anesthesia and gentle microscopic techniques, every general dental treatment is 100% painless. Immediate digital X-rays confirm complete disinfection and structural integrity before you leave.',
     solutionP:
-      'Whether resolving acute dental pain, curing bleeding gums, replacing dark amalgam fillings, or completing routine full-mouth hygiene, Master Smile Studio Istanbul provides world-class care with up to 70% cost savings.',
-    whyChooseHeading: 'Why Choose General Dentistry at Master Smile Studio in Istanbul?',
+      'Whether resolving acute dental pain, curing bleeding gums, replacing dark amalgam fillings, or completing routine full-mouth hygiene, Master Smile Studio Antalya provides world-class care with up to 70% cost savings.',
+    whyChooseHeading: 'Why Choose General Dentistry at Master Smile Studio in Antalya?',
     whyChooseIntroLead: 'For patients seeking compassionate, world-class dental care, ',
-    whyChooseIntroLink: 'Master Smile Studio Istanbul',
+    whyChooseIntroLink: 'Master Smile Studio Antalya',
     whyChooseIntroTail:
       ' is the trusted international center for pain-free restorative and preventive dentistry. Here is why patients choose us:',
     reason1Title: 'Specialist Endodontists & Periodontists Under One Roof',
@@ -110,7 +110,7 @@ const GENERAL_DATA: Record<string, GeneralI18n> = {
     reason4Title: 'Documented Before & After Patient Transformations',
     reason4P:
       'Browse our portfolio of documented clinical treatments showing deep infections resolved, gums revitalized from periodontitis, and broken teeth restored seamlessly.',
-    reason5Title: 'Luxury 5-Star Hotel & VIP Mercedes Chauffeur in Istanbul',
+    reason5Title: 'Luxury 5-Star Hotel & VIP Mercedes Chauffeur in Antalya',
     reason5PText:
       'Enjoy a stress-free dental trip with central 5-star hotel accommodation, private VIP airport and clinic transfers, and dedicated multi-lingual translation coordinators. ',
     reason5PLink: 'Contact our clinical team for an instant dental consultation.',
@@ -139,9 +139,9 @@ const GENERAL_DATA: Record<string, GeneralI18n> = {
     allOn6LinkText: 'Tooth Extractions & Periodontics →',
   },
   tr: {
-    introHeading: 'İstanbul Genel Diş Hekimliği & Koruyucu Ağız Sağlığı',
+    introHeading: 'Antalya Genel Diş Hekimliği & Koruyucu Ağız Sağlığı',
     introP1:
-      'Genel ve koruyucu diş hekimliği; ağrısız bir yaşam, güçlü çiğneme fonksiyonu ve dişlerin ömür boyu ağızda tutulması için en kritik tıp dalıdır. Mikroskobik kanal tedavisinden İsviçre Air-Flow derin diş temizliğine, diş renginde nanokompozit dolgulardan atravmatik 20’lik diş cerrahisine kadar tüm işlemler Master Smile Studio İstanbul’da en yüksek tıbbi hassasiyetle gerçekleştirilir.',
+      'Genel ve koruyucu diş hekimliği; ağrısız bir yaşam, güçlü çiğneme fonksiyonu ve dişlerin ömür boyu ağızda tutulması için en kritik tıp dalıdır. Mikroskobik kanal tedavisinden İsviçre Air-Flow derin diş temizliğine, diş renginde nanokompozit dolgulardan atravmatik 20’lik diş cerrahisine kadar tüm işlemler Master Smile Studio Antalya’da en yüksek tıbbi hassasiyetle gerçekleştirilir.',
     partsTitle: 'İleri Koruyucu ve Tedavi Edici Diş Hekimliğinin 3 Ana Temeli:',
     part1Label: '1. Koruyucu Teşhis ve Dijital Tarama (3D Tomografi & Air-Flow)',
     part1Desc:
@@ -155,10 +155,10 @@ const GENERAL_DATA: Record<string, GeneralI18n> = {
     healingP:
       'Bilgisayarlı anestezi sistemleri ve mikroskobik hassasiyet sayesinde tüm genel diş tedavileri %100 ağrısız olarak tamamlanır. Tedavi sonrasında çekilen dijital kontrol röntgenleri ile enfeksiyonun tamamen temizlendiği doğrulanır.',
     solutionP:
-      'İster zonklayan şiddetli diş ağrısından kurtulmak, ister kanayan diş etlerinizi iyileştirmek, ister eski siyah amalgam dolgularınızı estetik porselenle değiştirmek isteyin; Master Smile Studio İstanbul %70’e varan fiyat avantajıyla en kaliteli sağlık hizmetini sunar.',
-    whyChooseHeading: 'Neden Master Smile Studio İstanbul’da Genel Diş Tedavisi?',
+      'İster zonklayan şiddetli diş ağrısından kurtulmak, ister kanayan diş etlerinizi iyileştirmek, ister eski siyah amalgam dolgularınızı estetik porselenle değiştirmek isteyin; Master Smile Studio Antalya %70’e varan fiyat avantajıyla en kaliteli sağlık hizmetini sunar.',
+    whyChooseHeading: 'Neden Master Smile Studio Antalya’da Genel Diş Tedavisi?',
     whyChooseIntroLead: 'Ağrısız, güvenli ve dünya standartlarında diş tedavisi arayan uluslararası hastalar için ',
-    whyChooseIntroLink: 'Master Smile Studio İstanbul',
+    whyChooseIntroLink: 'Master Smile Studio Antalya',
     whyChooseIntroTail:
       ', koruyucu ve tedavi edici diş hekimliğinde öncü merkezdir. Bizi tercih etmeniz için başlıca nedenler:',
     reason1Title: 'Alanında Uzman Endodontistler & Periodontologlar',
@@ -180,7 +180,7 @@ const GENERAL_DATA: Record<string, GeneralI18n> = {
       'Kliniğimizde başarıyla tamamlanan kök ucu apselerinin iyileşmesi, diş eti iltihabının durdurulması ve kırık dişlerin porselenle restorasyonu vakalarını inceleyin.',
     reason5Title: '5 Yıldızlı Otel Konaklaması & VIP Mercedes Transfer',
     reason5PText:
-      'İstanbul’un kalbinde 5 yıldızlı otel konaklaması, havalimanı ve klinik arası özel VIP Mercedes şoförlü transferler ve kendi dilinizde hasta danışmanlığı. ',
+      'Antalya’nın kalbinde 5 yıldızlı otel konaklaması, havalimanı ve klinik arası özel VIP Mercedes şoförlü transferler ve kendi dilinizde hasta danışmanlığı. ',
     reason5PLink: 'Hemen klinik ekibimizle iletişime geçin ve randevunuzu planlayın.',
     typesHeading: 'Master Smile Studio’da Uygulanan Genel Diş Tedavileri',
     typesIntro:
@@ -207,9 +207,9 @@ const GENERAL_DATA: Record<string, GeneralI18n> = {
     allOn6LinkText: 'Diş Çekimi & Diş Eti Tedavisi →',
   },
   de: {
-    introHeading: 'Allgemeine Zahnheilkunde & Prophylaxe in Istanbul, Türkei',
+    introHeading: 'Allgemeine Zahnheilkunde & Prophylaxe in Antalya, Türkei',
     introP1:
-      'Die allgemeine und präventive Zahnheilkunde ist das Fundament für lebenslange Zahngesundheit, schmerzfreies Kauen und gesunde Zahnwurzeln. Von mikroskopischer Wurzelbehandlung und Schweizer Air-Flow Zahnreinigung bis hin zu ästhetischen Nanokomposit-Füllungen und schonenden Weisheitszahn-OPs bietet Master Smile Studio Istanbul höchste medizinische Präzision mit bis zu 70% Ersparnis.',
+      'Die allgemeine und präventive Zahnheilkunde ist das Fundament für lebenslange Zahngesundheit, schmerzfreies Kauen und gesunde Zahnwurzeln. Von mikroskopischer Wurzelbehandlung und Schweizer Air-Flow Zahnreinigung bis hin zu ästhetischen Nanokomposit-Füllungen und schonenden Weisheitszahn-OPs bietet Master Smile Studio Antalya höchste medizinische Präzision mit bis zu 70% Ersparnis.',
     partsTitle: 'Die 3 Säulen der modernen Zahnerhaltung:',
     part1Label: '1. Diagnostik & Prophylaxe (3D CBCT & Schweizer Air-Flow)',
     part1Desc:
@@ -223,10 +223,10 @@ const GENERAL_DATA: Record<string, GeneralI18n> = {
     healingP:
       'Dank computergesteuerter Lokalanästhesie und modernster Technik verlaufen alle Behandlungen vollkommen schmerzfrei. Digitale Kontrollaufnahmen sichern das Ergebnis ab.',
     solutionP:
-      'Ob akute Zahnschmerzen, blutendes Zahnfleisch oder Amalgamsanierung: Master Smile Studio Istanbul bietet erstklassige Behandlungen mit bis zu 70% Kostenersparnis.',
+      'Ob akute Zahnschmerzen, blutendes Zahnfleisch oder Amalgamsanierung: Master Smile Studio Antalya bietet erstklassige Behandlungen mit bis zu 70% Kostenersparnis.',
     whyChooseHeading: 'Warum Allgemeine Zahnheilkunde bei Master Smile Studio?',
     whyChooseIntroLead: 'Für Patienten aus ganz Europa ist ',
-    whyChooseIntroLink: 'Master Smile Studio Istanbul',
+    whyChooseIntroLink: 'Master Smile Studio Antalya',
     whyChooseIntroTail:
       ' die führende Adresse für schmerzfreie und präzise Zahnheilkunde. Unsere Vorteile:',
     reason1Title: 'Spezialisierte Endodontologen & Parodontologen',
@@ -246,9 +246,9 @@ const GENERAL_DATA: Record<string, GeneralI18n> = {
     reason4Title: 'Dokumentierte Vorher & Nachher Patientenfälle',
     reason4P:
       'Sehen Sie reale Patientenfälle mit geheilten Wurzelentzündungen, regeneriertem Zahnfleisch und perfekten Füllungen.',
-    reason5Title: '5-Sterne-Hotel & VIP-Chauffeur in Istanbul',
+    reason5Title: '5-Sterne-Hotel & VIP-Chauffeur in Antalya',
     reason5PText:
-      'Entspannter Aufenthalt mit 5-Sterne-Hotel im Herzen Istanbuls, VIP-Transfers und deutschsprachiger Betreuung. ',
+      'Entspannter Aufenthalt mit 5-Sterne-Hotel im Herzen Antalyas, VIP-Transfers und deutschsprachiger Betreuung. ',
     reason5PLink: 'Kontaktieren Sie unser Ärzteteam für eine Beratung.',
     typesHeading: 'Zahnärztliche Leistungen bei Master Smile Studio',
     typesIntro:
@@ -275,9 +275,9 @@ const GENERAL_DATA: Record<string, GeneralI18n> = {
     allOn6LinkText: 'Zahnentfernung & Parodontologie →',
   },
   pl: {
-    introHeading: 'Stomatologia Ogólna i Profilaktyka w Stambule, Turcja',
+    introHeading: 'Stomatologia Ogólna i Profilaktyka w Antalyi, Turcja',
     introP1:
-      'Stomatologia zachowawcza i profilaktyka to fundament zdrowego uśmiechu, bezbólowego gryzienia i zachowania własnych zębów na całe życie. Od mikroskopowego leczenia kanałowego i szwajcarskiego piaskowania Air-Flow po estetyczne wypełnienia nanokompozytowe i bezurazowe usuwanie ósemek — Master Smile Studio Stambuł zapewnia najwyższy europejski standard opieki z oszczędnością do 70%.',
+      'Stomatologia zachowawcza i profilaktyka to fundament zdrowego uśmiechu, bezbólowego gryzienia i zachowania własnych zębów na całe życie. Od mikroskopowego leczenia kanałowego i szwajcarskiego piaskowania Air-Flow po estetyczne wypełnienia nanokompozytowe i bezurazowe usuwanie ósemek — Master Smile Studio Antalya zapewnia najwyższy europejski standard opieki z oszczędnością do 70%.',
     partsTitle: '3 Filary Nowoczesnego Leczenia Zachowawczego:',
     part1Label: '1. Precyzyjna Diagnostyka i Profilaktyka (3D CBCT & Air-Flow)',
     part1Desc:
@@ -291,10 +291,10 @@ const GENERAL_DATA: Record<string, GeneralI18n> = {
     healingP:
       'Dzięki komputerowemu znieczuleniu miejscowemu wszystkie zabiegi są w 100% bezbolesne. Kontrolne cyfrowe zdjęcia RTG natychmiast potwierdzają wyleczenie infekcji.',
     solutionP:
-      'Od likwidacji ostrego bólu zęba i krwawienia dziąseł po wymianę ciemnych plomb amalgamatowych — Master Smile Studio Stambuł oferuje opiekę VIP z oszczędnością do 70%.',
-    whyChooseHeading: 'Dlaczego Stomatologia Ogólna w Master Smile Studio w Stambule?',
+      'Od likwidacji ostrego bólu zęba i krwawienia dziąseł po wymianę ciemnych plomb amalgamatowych — Master Smile Studio Antalya oferuje opiekę VIP z oszczędnością do 70%.',
+    whyChooseHeading: 'Dlaczego Stomatologia Ogólna w Master Smile Studio w Antalyi?',
     whyChooseIntroLead: 'Dla pacjentów poszukujących bezbolesnego i profesjonalnego leczenia zębów ',
-    whyChooseIntroLink: 'Master Smile Studio Stambuł',
+    whyChooseIntroLink: 'Master Smile Studio Antalya',
     whyChooseIntroTail:
       ' to wiodąca klinika stomatologii zachowawczej. Nasze kluczowe atuty:',
     reason1Title: 'Doświadczeni Endodonci i Periodontolodzy w Jednym Miejscu',
@@ -314,9 +314,9 @@ const GENERAL_DATA: Record<string, GeneralI18n> = {
     reason4Title: 'Udokumentowane Przypadki Kliniczne Pacjentów',
     reason4P:
       'Zobacz zdjęcia wyleczonych zębów z rozległymi zmianami okołowierzchołkowymi i zregenerowanych dziąseł po kiretażu laserowym.',
-    reason5Title: 'Hotel 5★ i Prywatny Transfer Mercedesem w Stambule',
+    reason5Title: 'Hotel 5★ i Prywatny Transfer Mercedesem w Antalyi',
     reason5PText:
-      'Komfortowy pobyt w 5-gwiazdkowym hotelu w centrum Stambułu, transfery VIP oraz pełna opieka polskojęzycznego koordynatora. ',
+      'Komfortowy pobyt w 5-gwiazdkowym hotelu w centrum Antalyi, transfery VIP oraz pełna opieka polskojęzycznego koordynatora. ',
     reason5PLink: 'Skontaktuj się z naszym zespołem medycznym po bezpłatną konsultację.',
     typesHeading: 'Zabiegi Stomatologii Ogólnej w Master Smile Studio',
     typesIntro:
@@ -343,9 +343,9 @@ const GENERAL_DATA: Record<string, GeneralI18n> = {
     allOn6LinkText: 'Chirurgii i Dziąsłach →',
   },
   pt: {
-    introHeading: 'Clínica Geral & Odontologia Preventiva em Istambul, Turquia',
+    introHeading: 'Clínica Geral & Odontologia Preventiva em Antalya, Turquia',
     introP1:
-      'A odontologia geral e preventiva é a base essencial para a saúde oral definitiva, mastigação sem dor e conservação dos dentes naturais por toda a vida. Do tratamento de canal microscópico e profilaxia suíça Air-Flow a restaurações em resina estética e extração atraumática de sisos, a Master Smile Studio Istambul oferece máxima excelência médica com até 70% de economia.',
+      'A odontologia geral e preventiva é a base essencial para a saúde oral definitiva, mastigação sem dor e conservação dos dentes naturais por toda a vida. Do tratamento de canal microscópico e profilaxia suíça Air-Flow a restaurações em resina estética e extração atraumática de sisos, a Master Smile Studio Antalya oferece máxima excelência médica com até 70% de economia.',
     partsTitle: 'Os 3 Pilares da Odontologia Conservadora Avançada:',
     part1Label: '1. Diagnóstico e Prevenção Precisa (Tomografia 3D e Air-Flow)',
     part1Desc:
@@ -359,10 +359,10 @@ const GENERAL_DATA: Record<string, GeneralI18n> = {
     healingP:
       'Graças à anestesia local computadorizada e precisão microscópica, todos os tratamentos são 100% livres de dor com verificação radiográfica imediata.',
     solutionP:
-      'Seja para eliminar dores agudas, tratar gengivites ou substituir amálgamas escuros por cerâmica, a Master Smile Studio oferece tratamento VIP em Istambul.',
+      'Seja para eliminar dores agudas, tratar gengivites ou substituir amálgamas escuros por cerâmica, a Master Smile Studio oferece tratamento VIP em Antalya.',
     whyChooseHeading: 'Por Que Fazer Tratamentos Clínicos na Master Smile Studio?',
     whyChooseIntroLead: 'Para pacientes de todo o mundo que buscam atendimento seguro e sem dor, ',
-    whyChooseIntroLink: 'Master Smile Studio Istambul',
+    whyChooseIntroLink: 'Master Smile Studio Antalya',
     whyChooseIntroTail:
       ' é a clínica de referência em odontologia conservadora. Veja nossos diferenciais:',
     reason1Title: 'Especialistas em Endodontia e Periodontia Reunidos',
@@ -382,9 +382,9 @@ const GENERAL_DATA: Record<string, GeneralI18n> = {
     reason4Title: 'Casos Clínicos Reais Documentados',
     reason4P:
       'Veja imagens de infecções graves curadas, regeneração de tecidos periodontais e restaurações estéticas perfeitas.',
-    reason5Title: 'Hotel 5★ e Transfers VIP Mercedes em Istambul',
+    reason5Title: 'Hotel 5★ e Transfers VIP Mercedes em Antalya',
     reason5PText:
-      'Hospedagem de alto padrão no centro de Istambul, transporte privativo e assistência completa em português. ',
+      'Hospedagem de alto padrão no centro de Antalya, transporte privativo e assistência completa em português. ',
     reason5PLink: 'Entre em contato com nossa equipe médica para avaliação gratuita.',
     typesHeading: 'Tratamentos de Clínica Geral na Master Smile Studio',
     typesIntro:
@@ -411,9 +411,9 @@ const GENERAL_DATA: Record<string, GeneralI18n> = {
     allOn6LinkText: 'Cirurgia e Periodontia →',
   },
   es: {
-    introHeading: 'Odontología General & Prevención Bucal en Estambul, Turquía',
+    introHeading: 'Odontología General & Prevención Bucal en Antalya, Turquía',
     introP1:
-      'La odontología general y preventiva es el pilar fundamental para conservar los dientes naturales de por vida, masticar con total confort y vivir sin dolor dental. Desde endodoncias microscópicas y limpiezas suizas Air-Flow hasta empastes estéticos de nanocomposite y extracción atraumática de muelas del juicio, Master Smile Studio Estambul ofrece el más alto nivel clínico con hasta un 70% de ahorro.',
+      'La odontología general y preventiva es el pilar fundamental para conservar los dientes naturales de por vida, masticar con total confort y vivir sin dolor dental. Desde endodoncias microscópicas y limpiezas suizas Air-Flow hasta empastes estéticos de nanocomposite y extracción atraumática de muelas del juicio, Master Smile Studio Antalya ofrece el más alto nivel clínico con hasta un 70% de ahorro.',
     partsTitle: 'Los 3 Pilares de la Odontología Conservadora Avanzada:',
     part1Label: '1. Diagnóstico y Prevención (TAC 3D CBCT y Air-Flow Suizo)',
     part1Desc:
@@ -430,7 +430,7 @@ const GENERAL_DATA: Record<string, GeneralI18n> = {
       'Tanto para aliviar un dolor agudo como para tratar encías sangrantes o sustituir amalgamas oscuras por cerámica, ofrecemos atención VIP con 70% de ahorro.',
     whyChooseHeading: '¿Por Qué Elegir Odontología General en Master Smile Studio?',
     whyChooseIntroLead: 'Para pacientes de todo el mundo que buscan un tratamiento seguro y sin dolor, ',
-    whyChooseIntroLink: 'Master Smile Studio Estambul',
+    whyChooseIntroLink: 'Master Smile Studio Antalya',
     whyChooseIntroTail:
       ' es el centro de referencia en odontología conservadora. Nuestras ventajas:',
     reason1Title: 'Especialistas en Endodoncia y Periodoncia Integrados',
@@ -450,7 +450,7 @@ const GENERAL_DATA: Record<string, GeneralI18n> = {
     reason4Title: 'Casos Clínicos Reales Documentados',
     reason4P:
       'Compruebe casos reales de infecciones curadas, encías regeneradas con láser y empastes estéticos invisibles.',
-    reason5Title: 'Hotel 5★ y Traslados VIP en Mercedes en Estambul',
+    reason5Title: 'Hotel 5★ y Traslados VIP en Mercedes en Antalya',
     reason5PText:
       'Estancia confortable en hotel de 5 estrellas, traslados privados y asistencia en español durante todo el viaje. ',
     reason5PLink: 'Contacte con nuestro equipo para una valoración inmediata.',
@@ -479,9 +479,9 @@ const GENERAL_DATA: Record<string, GeneralI18n> = {
     allOn6LinkText: 'Cirugía y Periodoncia →',
   },
   ru: {
-    introHeading: 'Терапевтическая стоматология & Профилактика в Стамбуле',
+    introHeading: 'Терапевтическая стоматология & Профилактика в Анталье',
     introP1:
-      'Терапевтическая и профилактическая стоматология — основа здоровья зубов, комфортного жевания и сохранения собственных зубов на всю жизнь. От лечения каналов под микроскопом и швейцарской чистки Air-Flow до эстетических нанокомпозитных пломб и атравматичного удаления зубов мудрости — клиника Master Smile Studio Стамбул обеспечивает высочайшую точность с экономией до 70%.',
+      'Терапевтическая и профилактическая стоматология — основа здоровья зубов, комфортного жевания и сохранения собственных зубов на всю жизнь. От лечения каналов под микроскопом и швейцарской чистки Air-Flow до эстетических нанокомпозитных пломб и атравматичного удаления зубов мудрости — клиника Master Smile Studio Анталья обеспечивает высочайшую точность с экономией до 70%.',
     partsTitle: '3 основы современной консервативной стоматологии:',
     part1Label: '1. Диагностика и профилактика (3D CBCT и Air-Flow)',
     part1Desc:
@@ -496,9 +496,9 @@ const GENERAL_DATA: Record<string, GeneralI18n> = {
       'Благодаря компьютерной анестезии и микроскопической точности все процедуры проходят на 100% безболезненно с мгновенным рентген-контролем.',
     solutionP:
       'От устранения острой зубной боли до лечения кровоточивости десен и замены старых пломб — Master Smile Studio обеспечивает европейский уровень по доступной цене.',
-    whyChooseHeading: 'Почему общая стоматология в Master Smile Studio Стамбул?',
+    whyChooseHeading: 'Почему общая стоматология в Master Smile Studio Анталья?',
     whyChooseIntroLead: 'Для пациентов со всего мира, ценящих безболезненное и качественное лечение, ',
-    whyChooseIntroLink: 'Master Smile Studio Стамбул',
+    whyChooseIntroLink: 'Master Smile Studio Анталья',
     whyChooseIntroTail:
       ' — ведущий центр терапии и сохранения зубов. Наши преимущества:',
     reason1Title: 'Опытные эндодонтисты и пародонтологи',
@@ -518,7 +518,7 @@ const GENERAL_DATA: Record<string, GeneralI18n> = {
     reason4Title: 'Реальные результаты До и После',
     reason4P:
       'Фотографии успешно вылеченных кист, восстановления плотности десен и эстетических реставраций.',
-    reason5Title: 'Отель 5★ и трансфер на Mercedes в Стамбуле',
+    reason5Title: 'Отель 5★ и трансфер на Mercedes в Анталье',
     reason5PText:
       'Проживание в 5-звездочном отеле, трансфер на автомобилях Mercedes и русскоговорящий куратор. ',
     reason5PLink: 'Свяжитесь с нами для бесплатной медицинской консультации.',
@@ -582,8 +582,8 @@ export default function GeneralDentistryDetailView() {
           {/* Fullwidth Horizontal Video Embed */}
           <div className={styles.mainVideoWrap}>
             <iframe
-              src="https://www.youtube.com/embed/R081L98DAls?t=21"
-              title="General and Preventive Dentistry in Istanbul Video"
+              src="https://www.youtube.com/embed/eiTTit9PLrQ?t=21"
+              title="General and Preventive Dentistry in Antalya Video"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             />
@@ -601,7 +601,7 @@ export default function GeneralDentistryDetailView() {
       {/* 2. FIND THE RIGHT GENERAL TREATMENT ACCORDION */}
       <TreatmentGeneralRightTreatmentAccordion />
 
-      {/* 3. WHY CHOOSE GENERAL DENTISTRY IN ISTANBUL */}
+      {/* 3. WHY CHOOSE GENERAL DENTISTRY IN ANTALYA */}
       <section aria-labelledby="why-choose-heading" className={styles.whyChooseSection}>
         <div className={styles.container}>
           <div className={styles.dividerWrap}>
@@ -672,7 +672,7 @@ export default function GeneralDentistryDetailView() {
           {/* Full-width Video */}
           <div className={styles.mainVideoWrap}>
             <iframe
-              src="https://www.youtube.com/embed/K4Xpx7JMyr8"
+              src="https://www.youtube.com/embed/haSWVr2smMM"
               title="Advanced Dental Technology and Microscopes Video"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
@@ -737,8 +737,8 @@ export default function GeneralDentistryDetailView() {
           {/* Video */}
           <div className={styles.mainVideoWrap}>
             <iframe
-              src="https://www.youtube.com/embed/smhwCD78Vbo"
-              title="General Dentistry in Istanbul Video"
+              src="https://www.youtube.com/embed/eiTTit9PLrQ"
+              title="General Dentistry in Antalya Video"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             />

@@ -83,36 +83,36 @@ const BEFORE_AFTER_I18N: Record<string, BeforeAfterI18n> = {
 
 const CASES = [
   {
-    img: 'https://sohodent.com/doc/data1/all-on-six-istanbul-turkey26.webp',
-    alt: 'All on 6 dental implants before and after Istanbul Turkey',
+    img: '/before-after/all-on-six-antalya-turkey26.webp',
+    alt: 'All on 6 dental implants before and after Antalya Turkey',
   },
   {
-    img: 'https://sohodent.com/doc/data1/all-on-six-istanbul-turkey25.webp',
-    alt: 'All on 6 dental implants before and after Istanbul Turkey',
+    img: '/before-after/all-on-six-antalya-turkey25.webp',
+    alt: 'All on 6 dental implants before and after Antalya Turkey',
   },
   {
-    img: 'https://sohodent.com/doc/data1/all-on-4-istanbul-turkey-24.webp',
-    alt: 'All on 4 dental implants before and after Istanbul Turkey',
+    img: '/before-after/all-on-4-antalya-turkey-24.webp',
+    alt: 'All on 4 dental implants before and after Antalya Turkey',
   },
   {
-    img: 'https://sohodent.com/doc/data1/all-on-4-istanbul-turkey22.webp',
-    alt: 'All on 4 dental implants before and after Istanbul Turkey',
+    img: '/before-after/all-on-4-antalya-turkey22.webp',
+    alt: 'All on 4 dental implants before and after Antalya Turkey',
   },
   {
-    img: 'https://sohodent.com/doc/data1/all-on-6-istanbul-turkey23.webp',
-    alt: 'All on 6 dental implants before and after Istanbul Turkey',
+    img: '/before-after/all-on-6-antalya-turkey23.webp',
+    alt: 'All on 6 dental implants before and after Antalya Turkey',
   },
   {
-    img: 'https://sohodent.com/doc/data1/all-on-4-istanbul-turkey21.webp',
-    alt: 'All on 4 dental implants before and after Istanbul Turkey',
+    img: '/before-after/all-on-4-antalya-turkey21.webp',
+    alt: 'All on 4 dental implants before and after Antalya Turkey',
   },
   {
-    img: 'https://sohodent.com/doc/data1/all-on-four-istanbul-turkey-27.webp',
-    alt: 'All On 4 dental implants before and after Istanbul Turkey',
+    img: '/before-after/all-on-four-antalya-turkey-27.webp',
+    alt: 'All On 4 dental implants before and after Antalya Turkey',
   },
   {
-    img: 'https://sohodent.com/doc/data1/All-on-4-istanbul-turkey-20.webp',
-    alt: 'All On 4 dental smile makeover Istanbul Turkey',
+    img: '/before-after/All-on-4-antalya-turkey-20.webp',
+    alt: 'All On 4 dental smile makeover Antalya Turkey',
   },
 ];
 

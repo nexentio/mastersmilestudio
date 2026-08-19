@@ -18,12 +18,12 @@ export async function generateMetadata({ params }: Props) {
   return {
     title:
       locale === 'tr'
-        ? 'İstanbul Diş Tedavisi Öncesi ve Sonrası | Master Smile Studio'
-        : 'Turkey Teeth in Istanbul: Before and After Dental Implants, Veneers | Master Smile Studio',
+        ? 'Antalya Diş Tedavisi Öncesi ve Sonrası | Master Smile Studio'
+        : 'Turkey Teeth in Antalya: Before and After Dental Implants, Veneers | Master Smile Studio',
     description:
       locale === 'tr'
         ? 'Master Smile Studio implant, zirkonyum kaplama ve lamine diş öncesi & sonrası gerçek hasta dönüşümleri.'
-        : 'Explore verified before and after smile transformations, dental implants, veneers and crowns at Master Smile Studio Istanbul.',
+        : 'Explore verified before and after smile transformations, dental implants, veneers and crowns at Master Smile Studio Antalya.',
   };
 }
 

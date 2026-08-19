@@ -43,20 +43,20 @@ interface LocaleDictionary {
 const DICTIONARIES: Record<string, LocaleDictionary> = {
   en: {
     packagesTitle: 'Complete Dentures Packages & Currency Calculator',
-    packagesSubtitle: 'High-impact acrylic, Ivoclar Vivodent aesthetic, and BPS biofunctional full arch dentures crafted for superior suction, comfort, and natural aesthetics in Istanbul.',
+    packagesSubtitle: 'High-impact acrylic, Ivoclar Vivodent aesthetic, and BPS biofunctional full arch dentures crafted for superior suction, comfort, and natural aesthetics in Antalya.',
     mostPopularBadge: 'Most Popular Choice',
     durationLabel: 'Procedure Time:',
     includedLabel: 'Package Inclusions:',
     priceLabel: 'Price (Per Jaw):',
     getQuoteBtn: 'Get Your Free Quote',
     faqTitle: 'Frequently Asked Questions About Complete Dentures',
-    faqSubtitle: 'Everything you need to know about full dentures in Istanbul — from custom suction fitting and bite registration to speech adaptation, maintenance, and eating comfort.',
+    faqSubtitle: 'Everything you need to know about full dentures in Antalya — from custom suction fitting and bite registration to speech adaptation, maintenance, and eating comfort.',
     packages: [
       {
         name: 'Premium High-Impact Acrylic Complete Denture',
         brand: 'Lucitone 199 / Candulor High-Density Base',
         duration: '4-5 Working Days (3 Visits)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-package-10.jpg',
+        img: '/packages/pkg-4.webp',
         popular: true,
         included: [
           'Full arch custom high-impact acrylic base with natural gum tinting',
@@ -72,7 +72,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         name: 'Dual Arch Complete Smile Rehabilitation Set',
         brand: 'Ivoclar Vivodent S PE / Lucitone Dual Arch',
         duration: '5-6 Working Days (4 Visits)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-implant-package-2.jpg',
+        img: '/packages/pkg-5.webp',
         included: [
           'Complete Upper & Lower full dentures for synchronized bite alignment',
           'Ivoclar Vivodent S PE pearlized life-like aesthetic teeth (28 teeth)',
@@ -87,7 +87,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         name: 'BPS Biofunctional 3D CAD/CAM Milled Full Denture',
         brand: 'Ivoclar BPS (Biofunctional Prosthetic System)',
         duration: '5 Working Days (3 Visits)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-implant-package-3.jpg',
+        img: '/packages/pkg-6.webp',
         included: [
           'Computer-milled monolithic high-density resin base (Zero shrinkage)',
           'Gnathometer M intraoral Gothic arch tracer for exact TMJ registration',
@@ -115,7 +115,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         ]
       },
       {
-        q: 'How long does it take to make complete dentures in Istanbul?',
+        q: 'How long does it take to make complete dentures in Antalya?',
         a: [
           'At Master Smile Studio, custom complete dentures are completed in 4 to 6 working days across 3 to 4 clinical stages: primary impressions, wax rim bite registration and shade matching, aesthetic wax try-in, and final insertion with occlusion fine-tuning.'
         ]
@@ -142,20 +142,20 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
   },
   tr: {
     packagesTitle: 'Tam Protez (Total Diş) Paketleri & Para Birimi Hesaplayıcı',
-    packagesSubtitle: 'Yüksek darbe dirençli akrilik, Ivoclar Vivodent estetiği ve BPS biyofonksiyonel tam çene protezleri ile İstanbul’da güçlü vakum tutuculuğu ve doğal gülüş estetiği.',
+    packagesSubtitle: 'Yüksek darbe dirençli akrilik, Ivoclar Vivodent estetiği ve BPS biyofonksiyonel tam çene protezleri ile Antalya’da güçlü vakum tutuculuğu ve doğal gülüş estetiği.',
     mostPopularBadge: 'En Çok Tercih Edilen',
     durationLabel: 'Tedavi Süresi:',
     includedLabel: 'Paket Kapsamı:',
     priceLabel: 'Fiyat (Çene Başına):',
     getQuoteBtn: 'Ücretsiz Teklif Alın',
     faqTitle: 'Tam Diş Protezleri Hakkında Sıkça Sorulan Sorular',
-    faqSubtitle: 'İstanbul’da tam damak protezleri hakkında merak edilen her şey: vakum tutuculuğu, ısırma kaydı, konuşma adaptasyonu, gece bakımı ve beslenme konforu.',
+    faqSubtitle: 'Antalya’da tam damak protezleri hakkında merak edilen her şey: vakum tutuculuğu, ısırma kaydı, konuşma adaptasyonu, gece bakımı ve beslenme konforu.',
     packages: [
       {
         name: 'Premium Yüksek Dirençli Akrilik Tam Protez',
         brand: 'Lucitone 199 / Candulor Yüksek Yoğunluklu Kaide',
         duration: '4-5 İş Günü (3 Randevu)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-package-10.jpg',
+        img: '/packages/pkg-4.webp',
         popular: true,
         included: [
           'Kişiye özel damar efektli ve doğal diş eti pembelemeli akrilik kaide',
@@ -171,7 +171,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         name: 'Çift Çene Tam Gülüş Rehabilitasyon Seti',
         brand: 'Ivoclar Vivodent S PE / Lucitone Çift Çene',
         duration: '5-6 İş Günü (4 Randevu)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-implant-package-2.jpg',
+        img: '/packages/pkg-5.webp',
         included: [
           'Kusursuz kapanış uyumu için eş zamanlı Üst & Alt tam protez seti',
           'Ivoclar Vivodent S PE sedefli yüksek estetik dişler (28 diş)',
@@ -186,7 +186,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         name: 'BPS Biyofonksiyonel 3D CAD/CAM Freze Tam Protez',
         brand: 'Ivoclar BPS (Biyofonksiyonel Protez Sistemi)',
         duration: '5 İş Günü (3 Randevu)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-implant-package-3.jpg',
+        img: '/packages/pkg-6.webp',
         included: [
           'Bilgisayarlı bloktan sıfır çekme payı ile frezelenen monolitik gövde',
           'Gnathometer M ağız içi Gotik Ark çene eklemi hareket kaydı',
@@ -214,7 +214,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         ]
       },
       {
-        q: 'İstanbul’da tam protez yapımı kaç gün sürer?',
+        q: 'Antalya’da tam protez yapımı kaç gün sürer?',
         a: [
           'Master Smile Studio’da tam protez tedavisi ortalama 4 ila 6 iş günü içerisinde tamamlanır. Bu süreçte anatomik ölçü, dikey boyut kaydı, mumlu diş provası ve son teslim aşamaları titizlikle gerçekleştirilir.'
         ]
@@ -241,20 +241,20 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
   },
   de: {
     packagesTitle: 'Vollprothesen-Pakete & Währungsrechner',
-    packagesSubtitle: 'Hochschlagfeste Acrylprothesen, Ivoclar Vivodent Ästhetik und BPS biofunktionelle Totalprothesen für optimale Saugkraft und natürliche Ästhetik in Istanbul.',
+    packagesSubtitle: 'Hochschlagfeste Acrylprothesen, Ivoclar Vivodent Ästhetik und BPS biofunktionelle Totalprothesen für optimale Saugkraft und natürliche Ästhetik in Antalya.',
     mostPopularBadge: 'Beliebteste Wahl',
     durationLabel: 'Behandlungsdauer:',
     includedLabel: 'Paketleistungen:',
     priceLabel: 'Preis (Pro Kiefer):',
     getQuoteBtn: 'Kostenloses Angebot anfordern',
     faqTitle: 'Häufig gestellte Fragen zu Vollprothesen',
-    faqSubtitle: 'Alles Wissenswerte über Totalprothesen in Istanbul – von Saugpassung und Bissregistrierung bis hin zu Pflege und Esskomfort.',
+    faqSubtitle: 'Alles Wissenswerte über Totalprothesen in Antalya – von Saugpassung und Bissregistrierung bis hin zu Pflege und Esskomfort.',
     packages: [
       {
         name: 'Premium Hochschlagfeste Acryl-Totalprothese',
         brand: 'Lucitone 199 / Candulor Hochdichte Basis',
         duration: '4-5 Werktage (3 Sitzungen)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-package-10.jpg',
+        img: '/packages/pkg-4.webp',
         popular: true,
         included: [
           'Individuelle hochschlagfeste Acrylbasis mit natürlicher Zahnfleischtextur',
@@ -270,7 +270,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         name: 'Komplettes Lächeln-Rehabilitationsset (Beide Kiefer)',
         brand: 'Ivoclar Vivodent S PE / Lucitone Doppelkiefer',
         duration: '5-6 Werktage (4 Sitzungen)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-implant-package-2.jpg',
+        img: '/packages/pkg-5.webp',
         included: [
           'Synchronisierte Ober- und Unterkiefer-Totalprothesen',
           'Ivoclar Vivodent S PE hochästhetische Zähne (28 Zähne)',
@@ -285,7 +285,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         name: 'BPS Biofunktionelle 3D CAD/CAM Totalprothese',
         brand: 'Ivoclar BPS (Biofunktionales Prothetik System)',
         duration: '5 Werktage (3 Sitzungen)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-implant-package-3.jpg',
+        img: '/packages/pkg-6.webp',
         included: [
           'Computergefräste monolitische Harzbasis ohne Schrumpfung',
           'Gnathometer M intraorale Pfeilwinkelregistrierung des Kiefergelenks',
@@ -313,29 +313,29 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         ]
       },
       {
-        q: 'Wie lange dauert die Anfertigung einer Vollprothese in Istanbul?',
+        q: 'Wie lange dauert die Anfertigung einer Vollprothese in Antalya?',
         a: [
-          'In unserer Klinik in Istanbul dauert die Anfertigung 4 bis 6 Werktage über 3 bis 4 Behandlungsschritte: Funktionsabformung, Bissnahme, Wachseinprobe und finale Eingliederung.'
+          'In unserer Klinik in Antalya dauert die Anfertigung 4 bis 6 Werktage über 3 bis 4 Behandlungsschritte: Funktionsabformung, Bissnahme, Wachseinprobe und finale Eingliederung.'
         ]
       }
     ]
   },
   pl: {
     packagesTitle: 'Pakiety Protez Całkowitych i Przelicznik Walut',
-    packagesSubtitle: 'Wysokoudarzeniowy akryl, estetyka Ivoclar Vivodent i biofunkcjonalne protezy BPS zapewniające doskonałe przyssanie i naturalny uśmiech w Stambule.',
+    packagesSubtitle: 'Wysokoudarzeniowy akryl, estetyka Ivoclar Vivodent i biofunkcjonalne protezy BPS zapewniające doskonałe przyssanie i naturalny uśmiech w Antalyi.',
     mostPopularBadge: 'Najpopularniejszy Wybór',
     durationLabel: 'Czas Zabiegu:',
     includedLabel: 'Zawartość Pakietu:',
     priceLabel: 'Cena (Za Łuk):',
     getQuoteBtn: 'Uzyskaj Bezpłatną Wycenę',
     faqTitle: 'Często Zadawane Pytania o Protezy Całkowite',
-    faqSubtitle: 'Wszystko o protezach całkowitych w Stambule – od dopasowania i siły przyssania po adaptację mowy i komfort jedzenia.',
+    faqSubtitle: 'Wszystko o protezach całkowitych w Antalyi – od dopasowania i siły przyssania po adaptację mowy i komfort jedzenia.',
     packages: [
       {
         name: 'Wysokoudarzeniowa Proteza Całkowita Premium',
         brand: 'Lucitone 199 / Baza Candulor',
         duration: '4-5 Dni Roboczych (3 Wizyty)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-package-10.jpg',
+        img: '/packages/pkg-4.webp',
         popular: true,
         included: [
           'Indywidualna baza akrylowa z żyłkowaniem i naturalną barwą dziąseł',
@@ -351,7 +351,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         name: 'Kompletny Zestaw Rehabilitacji Obu Łuków Zębowych',
         brand: 'Ivoclar Vivodent S PE / Lucitone Dual Arch',
         duration: '5-6 Dni Roboczych (4 Wizyty)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-implant-package-2.jpg',
+        img: '/packages/pkg-5.webp',
         included: [
           'Zsynchronizowane protezy całkowite na górę i dół dla idealnego zwarcia',
           'Wysoce estetyczne zęby Ivoclar Vivodent S PE (28 zębów)',
@@ -366,7 +366,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         name: 'Biofunkcjonalna Proteza 3D CAD/CAM BPS Ivoclar',
         brand: 'Ivoclar BPS (Biofunctional Prosthetic System)',
         duration: '5 Dni Roboczych (3 Wizyty)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-implant-package-3.jpg',
+        img: '/packages/pkg-6.webp',
         included: [
           'Frezowana komputerowo monoblokowa baza o zerowym skurczu',
           'Gnathometer M do precyzyjnej wewnątrzustnej rejestracji stawów skroniowo-żuchwowych',
@@ -394,7 +394,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         ]
       },
       {
-        q: 'Ile trwa wykonanie protez całkowitych w Stambule?',
+        q: 'Ile trwa wykonanie protez całkowitych w Antalyi?',
         a: [
           'Proces trwa od 4 do 6 dni roboczych i obejmuje pobranie wycisków, rejestrację zwarcia, przymiarkę w wosku oraz oddanie gotowych protez.'
         ]
@@ -403,20 +403,20 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
   },
   pt: {
     packagesTitle: 'Pacotes de Próteses Totais & Calculadora de Moeda',
-    packagesSubtitle: 'Acrílico de alto impacto, estética Ivoclar Vivodent e próteses biofuncionais BPS para máxima sucção e sorriso natural em Istambul.',
+    packagesSubtitle: 'Acrílico de alto impacto, estética Ivoclar Vivodent e próteses biofuncionais BPS para máxima sucção e sorriso natural em Antalya.',
     mostPopularBadge: 'Mais Popular',
     durationLabel: 'Tempo de Procedimento:',
     includedLabel: 'Inclusões do Pacote:',
     priceLabel: 'Preço (Por Arcada):',
     getQuoteBtn: 'Pedir Orçamento Grátis',
     faqTitle: 'Perguntas Frequentes sobre Próteses Totais',
-    faqSubtitle: 'Tudo o que precisa saber sobre dentaduras completas em Istambul: adaptação por sucção, mastigação e manutenção.',
+    faqSubtitle: 'Tudo o que precisa saber sobre dentaduras completas em Antalya: adaptação por sucção, mastigação e manutenção.',
     packages: [
       {
         name: 'Prótese Total em Acrílico de Alto Impacto',
         brand: 'Lucitone 199 / Candulor',
         duration: '4-5 Dias Úteis (3 Consultas)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-package-10.jpg',
+        img: '/packages/pkg-4.webp',
         popular: true,
         included: [
           'Base acrílica personalizada com pigmentação gengival realista',
@@ -432,7 +432,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         name: 'Conjunto de Reabilitação Total (Ambas as Arcadas)',
         brand: 'Ivoclar Vivodent S PE / Lucitone Dual Arch',
         duration: '5-6 Dias Úteis (4 Consultas)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-implant-package-2.jpg',
+        img: '/packages/pkg-5.webp',
         included: [
           'Próteses Superior e Inferior sincronizadas para oclusão perfeita',
           'Dentes estéticos Ivoclar Vivodent S PE (28 dentes)',
@@ -447,7 +447,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         name: 'Prótese Total 3D CAD/CAM Biofuncional BPS',
         brand: 'Ivoclar BPS (Biofunctional Prosthetic System)',
         duration: '5 Dias Úteis (3 Consultas)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-implant-package-3.jpg',
+        img: '/packages/pkg-6.webp',
         included: [
           'Base monolítica fresada por computador com contração zero',
           'Registo intraoral de arco gótico Gnathometer M',
@@ -478,20 +478,20 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
   },
   es: {
     packagesTitle: 'Paquetes de Prótesis Completas y Conversor de Divisas',
-    packagesSubtitle: 'Acrílico de alto impacto, estética Ivoclar Vivodent y prótesis biofuncionales BPS para máxima succión y sonrisa natural en Estambul.',
+    packagesSubtitle: 'Acrílico de alto impacto, estética Ivoclar Vivodent y prótesis biofuncionales BPS para máxima succión y sonrisa natural en Antalya.',
     mostPopularBadge: 'Opción Más Popular',
     durationLabel: 'Tiempo de Tratamiento:',
     includedLabel: 'Incluido en el Paquete:',
     priceLabel: 'Precio (Por Arcada):',
     getQuoteBtn: 'Solicitar Presupuesto Gratis',
     faqTitle: 'Preguntas Frecuentes sobre Dentaduras Completas',
-    faqSubtitle: 'Todo lo que necesita saber sobre prótesis dentales completas en Estambul: ajuste por succión, masticación y mantenimiento.',
+    faqSubtitle: 'Todo lo que necesita saber sobre prótesis dentales completas en Antalya: ajuste por succión, masticación y mantenimiento.',
     packages: [
       {
         name: 'Prótesis Completa en Acrílico de Alto Impacto',
         brand: 'Lucitone 199 / Base Candulor',
         duration: '4-5 Días Laborables (3 Citas)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-package-10.jpg',
+        img: '/packages/pkg-4.webp',
         popular: true,
         included: [
           'Base acrílica personalizada con caracterización gingival realista',
@@ -507,7 +507,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         name: 'Set de Rehabilitación Completa (Ambas Arcadas)',
         brand: 'Ivoclar Vivodent S PE / Lucitone Dual Arch',
         duration: '5-6 Días Laborables (4 Citas)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-implant-package-2.jpg',
+        img: '/packages/pkg-5.webp',
         included: [
           'Prótesis Superior e Inferior sincronizadas para mordida perfecta',
           'Dientes de alta gama Ivoclar Vivodent S PE (28 dientes)',
@@ -522,7 +522,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         name: 'Prótesis Completa 3D CAD/CAM Biofuncional BPS',
         brand: 'Ivoclar BPS (Biofunctional Prosthetic System)',
         duration: '5 Días Laborables (3 Citas)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-implant-package-3.jpg',
+        img: '/packages/pkg-6.webp',
         included: [
           'Base monolítica fresada por ordenador con cero contracción',
           'Gnathometer M para registro intraoral de arco gótico de la ATM',
@@ -553,20 +553,20 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
   },
   ru: {
     packagesTitle: 'Пакеты полных съемных протезов и конвертер валют',
-    packagesSubtitle: 'Высокопрочный акрил, эстетика Ivoclar Vivodent и биофункциональные протезы BPS для идеальной фиксации и естественной улыбки в Стамбуле.',
+    packagesSubtitle: 'Высокопрочный акрил, эстетика Ivoclar Vivodent и биофункциональные протезы BPS для идеальной фиксации и естественной улыбки в Анталье.',
     mostPopularBadge: 'Самый популярный выбор',
     durationLabel: 'Срок изготовления:',
     includedLabel: 'Что входит в пакет:',
     priceLabel: 'Цена (за челюсть):',
     getQuoteBtn: 'Получить бесплатный расчет',
     faqTitle: 'Часто задаваемые вопросы о полных протезах',
-    faqSubtitle: 'Все о полных съемных протезах в Стамбуле: фиксация на присоске, привыкание к речи, уход и комфорт при жевании.',
+    faqSubtitle: 'Все о полных съемных протезах в Анталье: фиксация на присоске, привыкание к речи, уход и комфорт при жевании.',
     packages: [
       {
         name: 'Премиум полный съемный протез из ударопрочного акрила',
         brand: 'Lucitone 199 / Candulor',
         duration: '4-5 рабочих дней (3 визита)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-package-10.jpg',
+        img: '/packages/pkg-4.webp',
         popular: true,
         included: [
           'Индивидуальный базис с имитацией капиллярного рисунка десны',
@@ -582,7 +582,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         name: 'Полный комплекс реабилитации улыбки (на обе челюсти)',
         brand: 'Ivoclar Vivodent S PE / Lucitone Dual Arch',
         duration: '5-6 рабочих дней (4 визита)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-implant-package-2.jpg',
+        img: '/packages/pkg-5.webp',
         included: [
           'Синхронизированные протезы на верхнюю и нижнюю челюсти',
           'Высокоэстетичные зубы Ivoclar Vivodent S PE (28 зубов)',
@@ -597,7 +597,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         name: 'Биофункциональный 3D CAD/CAM протез BPS Ivoclar',
         brand: 'Ivoclar BPS (Biofunctional Prosthetic System)',
         duration: '5 рабочих дней (3 визита)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-implant-package-3.jpg',
+        img: '/packages/pkg-6.webp',
         included: [
           'Монолитный фрезерованный базис без усадки материала',
           'Гнатометр M для регистрации движений височно-нижнечелюстного сустава',

@@ -13,32 +13,32 @@ interface BeforeAfterHeroBannerProps {
 
 const BEFORE_AFTER_HERO_DATA: Record<string, { title: string; subtitle: string }> = {
   en: {
-    title: 'Turkey Teeth in Istanbul: Before and After Dental Implants, Veneers & More',
-    subtitle: 'Master Smile Studio | Istanbul, Turkey',
+    title: 'Turkey Teeth in Antalya: Before and After Dental Implants, Veneers & More',
+    subtitle: 'Master Smile Studio | Antalya, Turkey',
   },
   tr: {
-    title: 'İstanbul Diş Tedavisi Öncesi ve Sonrası: İmplant, Kaplama ve Gülüş Tasarımı',
-    subtitle: 'Master Smile Studio | İstanbul, Türkiye',
+    title: 'Antalya Diş Tedavisi Öncesi ve Sonrası: İmplant, Kaplama ve Gülüş Tasarımı',
+    subtitle: 'Master Smile Studio | Antalya, Türkiye',
   },
   de: {
-    title: 'Zahnbehandlungen in Istanbul: Vorher-Nachher für Zahnimplantate, Veneers & mehr',
-    subtitle: 'Master Smile Studio | Istanbul, Türkei',
+    title: 'Zahnbehandlungen in Antalya: Vorher-Nachher für Zahnimplantate, Veneers & mehr',
+    subtitle: 'Master Smile Studio | Antalya, Türkei',
   },
   pl: {
     title: 'Zęby w Turcji: Przed i Po Implantach, Licówkach i Metamorfozach Uśmiechu',
-    subtitle: 'Master Smile Studio | Stambuł, Turcja',
+    subtitle: 'Master Smile Studio | Antalya, Turcja',
   },
   pt: {
-    title: 'Tratamentos Dentários em Istambul: Antes e Depois de Implantes, Facetas e Mais',
-    subtitle: 'Master Smile Studio | Istambul, Turquia',
+    title: 'Tratamentos Dentários em Antalya: Antes e Depois de Implantes, Facetas e Mais',
+    subtitle: 'Master Smile Studio | Antalya, Turquia',
   },
   es: {
     title: 'Dientes en Turquía: Antes y Después de Implantes Dentales, Carillas y Más',
-    subtitle: 'Master Smile Studio | Estambul, Turquía',
+    subtitle: 'Master Smile Studio | Antalya, Turquía',
   },
   ru: {
-    title: 'Лечение зубов в Стамбуле: До и После имплантации, виниров и реставрации',
-    subtitle: 'Master Smile Studio | Стамбул, Турция',
+    title: 'Лечение зубов в Анталье: До и После имплантации, виниров и реставрации',
+    subtitle: 'Master Smile Studio | Анталья, Турция',
   },
 };
 

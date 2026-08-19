@@ -43,7 +43,7 @@ interface PackageDict {
 const COSMETIC_PACKAGES_I18N: Record<string, PackageDict> = {
   en: {
     badge: 'ALL-INCLUSIVE SMILE MAKEOVER PACKAGES',
-    title: 'Popular Cosmetic Dentistry & Hollywood Smile Packages in Istanbul',
+    title: 'Popular Cosmetic Dentistry & Hollywood Smile Packages in Antalya',
     subtitle: 'Digital Smile Design, Swiss Ivoclar E-Max veneers, laser gum contouring, and 5-star VIP hotel accommodation.',
     durationLabel: 'Treatment Duration:',
     featuresTitle: 'Package Inclusions:',
@@ -86,7 +86,7 @@ const COSMETIC_PACKAGES_I18N: Record<string, PackageDict> = {
   },
   tr: {
     badge: 'HER ŞEY DAHİL GÜLÜŞ TASARIMI PAKETLERİ',
-    title: 'İstanbul Popüler Estetik Diş Hekimliği & Hollywood Smile Paketleri',
+    title: 'Antalya Popüler Estetik Diş Hekimliği & Hollywood Smile Paketleri',
     subtitle: '3D Dijital Gülüş Tasarımı, İsviçre Ivoclar E-Max laminalar, lazerle diş eti estetiği, 5 yıldızlı otel ve VIP transfer.',
     durationLabel: 'Tedavi Süresi:',
     featuresTitle: 'Pakete Dahil Hizmetler:',
@@ -129,7 +129,7 @@ const COSMETIC_PACKAGES_I18N: Record<string, PackageDict> = {
   },
   de: {
     badge: 'ALL-INCLUSIVE SMILE DESIGN PAKETE',
-    title: 'Beliebte Hollywood Smile & Ästhetik-Pakete in Istanbul',
+    title: 'Beliebte Hollywood Smile & Ästhetik-Pakete in Antalya',
     subtitle: 'Digital Smile Design, Ivoclar E-Max Veneers, Laser-Zahnfleischkorrektur inklusive 5-Sterne-Hotel und VIP-Transfers.',
     durationLabel: 'Behandlungsdauer:',
     featuresTitle: 'Im Paket enthalten:',
@@ -172,7 +172,7 @@ const COSMETIC_PACKAGES_I18N: Record<string, PackageDict> = {
   },
   pl: {
     badge: 'PAKIETY HOLLYWOOD SMILE ALL-INCLUSIVE',
-    title: 'Popularne Pakiety Stomatologii Estetycznej w Stambule',
+    title: 'Popularne Pakiety Stomatologii Estetycznej w Antalyi',
     subtitle: 'Cyfrowe Projektowanie Uśmiechu 3D, licówki Ivoclar E-Max, laserowa korekta dziąseł z hotelem 5★ i transferami VIP.',
     durationLabel: 'Czas trwania:',
     featuresTitle: 'W pakiecie zawarte:',
@@ -215,7 +215,7 @@ const COSMETIC_PACKAGES_I18N: Record<string, PackageDict> = {
   },
   pt: {
     badge: 'PACOTES DE SMILE MAKEOVER ALL-INCLUSIVE',
-    title: 'Pacotes Populares de Odontologia Estética em Istambul',
+    title: 'Pacotes Populares de Odontologia Estética em Antalya',
     subtitle: 'Design Digital do Sorriso, facetas Ivoclar E-Max, plástica gengival a laser com hotel 5 estrelas e transfers VIP.',
     durationLabel: 'Duração do Tratamento:',
     featuresTitle: 'Incluso no Pacote:',
@@ -345,9 +345,9 @@ const COSMETIC_PACKAGES_I18N: Record<string, PackageDict> = {
 };
 
 const COSMETIC_IMAGES = [
-  'https://sohodent.com/doc/data1/e-max-laminate-copy.webp',
-  'https://sohodent.com/doc/data1/porcelain-laminate-copy.webp',
-  'https://sohodent.com/doc/data1/zirconium-implant-copy.webp',
+  '/treatments/accordion/e-max-laminate-copy.webp',
+  '/treatments/accordion/porcelain-laminate-copy.webp',
+  '/treatments/accordion/zirconium-implant-copy.webp',
 ];
 
 export default function TreatmentCosmeticPackagesSlider() {

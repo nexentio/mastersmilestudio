@@ -21,13 +21,13 @@ interface CostBreakdownContent {
 
 const COST_CONTENT: Record<string, CostBreakdownContent> = {
   tr: {
-    heading: 'İstanbul’da Diş İmplantı Fiyatları',
+    heading: 'Antalya’da Diş İmplantı Fiyatları',
     leadParagraph: (
       <>
-        İstanbul’da <strong>diş implantı</strong> fiyatları, kullanılan implantın markasına ve uygulanan yönteme göre değişiklik gösterir. Kaliteli malzemeler, deneyimli hekimler ve kapsamlı hizmetler sunan iyi bir klinikte yapılan implantlar, <strong>Türkiye’nin diş hekimliği turizminin</strong> avantajları sayesinde Avrupa ülkelerine kıyasla çok daha ekonomiktir.
+        Antalya’da <strong>diş implantı</strong> fiyatları, kullanılan implantın markasına ve uygulanan yönteme göre değişiklik gösterir. Kaliteli malzemeler, deneyimli hekimler ve kapsamlı hizmetler sunan iyi bir klinikte yapılan implantlar, <strong>Türkiye’nin diş hekimliği turizminin</strong> avantajları sayesinde Avrupa ülkelerine kıyasla çok daha ekonomiktir.
       </>
     ),
-    subHeadingTitle: 'İstanbul’da İmplant Fiyatları – Master Smile Studio',
+    subHeadingTitle: 'Antalya’da İmplant Fiyatları – Master Smile Studio',
     subHeadingAverage: 'Ortalama fiyatlar şu şekildedir:',
     nucleoss: (
       <>
@@ -69,7 +69,7 @@ const COST_CONTENT: Record<string, CostBreakdownContent> = {
       'Bu fiyatlar ameliyatın karmaşıklığına (kemik grefti, sinüs lifting gibi) ve dahil edilen ek hizmetlere (otel, VIP ulaşım gibi) göre değişiklik gösterebilir.',
     moreDetailsParagraph: (
       <>
-        İstanbul&apos;un uygun fiyatlı ve yüksek kaliteli diş hizmetleri hakkında daha fazla bilgi almak ve{' '}
+        Antalya&apos;un uygun fiyatlı ve yüksek kaliteli diş hizmetleri hakkında daha fazla bilgi almak ve{' '}
         <Link href="/treatments/dental-implants" className={styles.link}>
           detaylı bir fiyat listesi
         </Link>{' '}
@@ -90,13 +90,13 @@ const COST_CONTENT: Record<string, CostBreakdownContent> = {
     ),
   },
   en: {
-    heading: 'Dental Implant Costs in Istanbul',
+    heading: 'Dental Implant Costs in Antalya',
     leadParagraph: (
       <>
-        The cost of <strong>dental implants in Istanbul</strong> varies depending on the brand of the implant and the method used. Implants performed in a good clinic with high-quality materials, experienced doctors, and comprehensive services are much more affordable compared to European countries, thanks to the advantages of <strong>Turkey&apos;s dental tourism</strong>.
+        The cost of <strong>dental implants in Antalya</strong> varies depending on the brand of the implant and the method used. Implants performed in a good clinic with high-quality materials, experienced doctors, and comprehensive services are much more affordable compared to European countries, thanks to the advantages of <strong>Turkey&apos;s dental tourism</strong>.
       </>
     ),
-    subHeadingTitle: 'Dental Implant Prices in Istanbul - Master Smile Studio',
+    subHeadingTitle: 'Dental Implant Prices in Antalya - Master Smile Studio',
     subHeadingAverage: 'The average prices are as follows:',
     nucleoss: (
       <>
@@ -138,7 +138,7 @@ const COST_CONTENT: Record<string, CostBreakdownContent> = {
       'These prices may vary depending on the complexity of the surgery (such as bone grafting, sinus lift) and additional services included (such as hotel, transportation).',
     moreDetailsParagraph: (
       <>
-        To get more details on Istanbul’s affordable and high-quality dental services and see a{' '}
+        To get more details on Antalya’s affordable and high-quality dental services and see a{' '}
         <Link href="/treatments/dental-implants" className={styles.link}>
           detailed price list,
         </Link>{' '}
@@ -159,13 +159,13 @@ const COST_CONTENT: Record<string, CostBreakdownContent> = {
     ),
   },
   de: {
-    heading: 'Zahnimplantat-Kosten in Istanbul',
+    heading: 'Zahnimplantat-Kosten in Antalya',
     leadParagraph: (
       <>
-        Die Kosten für <strong>Zahnimplantate in Istanbul</strong> hängen von der gewählten Implantatmarke und der Methode ab. Dank der Vorteile des <strong>Medizintourismus in der Türkei</strong> sind Behandlungen in unserer modernen Klinik mit erstklassigen Materialien und erfahrenen Chirurgen deutlich günstiger als in Westeuropa.
+        Die Kosten für <strong>Zahnimplantate in Antalya</strong> hängen von der gewählten Implantatmarke und der Methode ab. Dank der Vorteile des <strong>Medizintourismus in der Türkei</strong> sind Behandlungen in unserer modernen Klinik mit erstklassigen Materialien und erfahrenen Chirurgen deutlich günstiger als in Westeuropa.
       </>
     ),
-    subHeadingTitle: 'Zahnimplantat-Preise in Istanbul – Master Smile Studio',
+    subHeadingTitle: 'Zahnimplantat-Preise in Antalya – Master Smile Studio',
     subHeadingAverage: 'Die durchschnittlichen Preise lauten wie folgt:',
     nucleoss: (
       <>
@@ -219,13 +219,13 @@ const COST_CONTENT: Record<string, CostBreakdownContent> = {
     ),
   },
   pl: {
-    heading: 'Koszty Implantów Zębowych w Stambule',
+    heading: 'Koszty Implantów Zębowych w Antalyi',
     leadParagraph: (
       <>
-        Koszt <strong>implantów zębowych w Stambule</strong> zależy od marki implantu oraz zastosowanej procedury chirurgicznej. Zabiegi w naszej klinice z udziałem doświadczonych chirurgów są znacznie bardziej przystępne cenowo w porównaniu z Europą Zachodnią.
+        Koszt <strong>implantów zębowych w Antalyi</strong> zależy od marki implantu oraz zastosowanej procedury chirurgicznej. Zabiegi w naszej klinice z udziałem doświadczonych chirurgów są znacznie bardziej przystępne cenowo w porównaniu z Europą Zachodnią.
       </>
     ),
-    subHeadingTitle: 'Ceny Implantów w Stambule – Master Smile Studio',
+    subHeadingTitle: 'Ceny Implantów w Antalyi – Master Smile Studio',
     subHeadingAverage: 'Średnie ceny kształtują się następująco:',
     nucleoss: (
       <>
@@ -276,13 +276,13 @@ const COST_CONTENT: Record<string, CostBreakdownContent> = {
     ),
   },
   pt: {
-    heading: 'Custos de Implantes Dentários em Istambul',
+    heading: 'Custos de Implantes Dentários em Antalya',
     leadParagraph: (
       <>
-        O custo dos <strong>implantes dentários em Istambul</strong> varia de acordo com a marca do implante e o método cirúrgico. Realizados em nossa clínica com materiais de alta qualidade e cirurgiões experientes, os tratamentos são muito mais acessíveis do que na Europa.
+        O custo dos <strong>implantes dentários em Antalya</strong> varia de acordo com a marca do implante e o método cirúrgico. Realizados em nossa clínica com materiais de alta qualidade e cirurgiões experientes, os tratamentos são muito mais acessíveis do que na Europa.
       </>
     ),
-    subHeadingTitle: 'Preços de Implantes em Istambul – Master Smile Studio',
+    subHeadingTitle: 'Preços de Implantes em Antalya – Master Smile Studio',
     subHeadingAverage: 'Os preços médios são os seguintes:',
     nucleoss: (
       <>
@@ -332,13 +332,13 @@ const COST_CONTENT: Record<string, CostBreakdownContent> = {
     ),
   },
   es: {
-    heading: 'Precios de Implantes Dentales en Estambul',
+    heading: 'Precios de Implantes Dentales en Antalya',
     leadParagraph: (
       <>
-        El coste de los <strong>implantes dentales en Estambul</strong> varía según la marca y la técnica quirúrgica. Gracias al turismo dental en Turquía, los precios son hasta un 70% más económicos que en España o Europa, garantizando la máxima calidad clínica.
+        El coste de los <strong>implantes dentales en Antalya</strong> varía según la marca y la técnica quirúrgica. Gracias al turismo dental en Turquía, los precios son hasta un 70% más económicos que en España o Europa, garantizando la máxima calidad clínica.
       </>
     ),
-    subHeadingTitle: 'Precios de Implantes en Estambul – Master Smile Studio',
+    subHeadingTitle: 'Precios de Implantes en Antalya – Master Smile Studio',
     subHeadingAverage: 'Los precios medios son los siguientes:',
     nucleoss: (
       <>
@@ -388,13 +388,13 @@ const COST_CONTENT: Record<string, CostBreakdownContent> = {
     ),
   },
   ru: {
-    heading: 'Стоимость зубных имплантов в Стамбуле',
+    heading: 'Стоимость зубных имплантов в Анталье',
     leadParagraph: (
       <>
-        Стоимость <strong>зубных имплантов в Стамбуле</strong> варьируется в зависимости от выбранного бренда и метода лечения. Благодаря преимуществам медицинского туризма в Турции, лечение в Master Smile Studio обходится значительно выгоднее, чем в странах Европы.
+        Стоимость <strong>зубных имплантов в Анталье</strong> варьируется в зависимости от выбранного бренда и метода лечения. Благодаря преимуществам медицинского туризма в Турции, лечение в Master Smile Studio обходится значительно выгоднее, чем в странах Европы.
       </>
     ),
-    subHeadingTitle: 'Цены на импланты в Стамбуле – Master Smile Studio',
+    subHeadingTitle: 'Цены на импланты в Анталье – Master Smile Studio',
     subHeadingAverage: 'Средняя стоимость составляет:',
     nucleoss: (
       <>
@@ -467,8 +467,8 @@ export default function TreatmentCostBreakdownAndPackageBannerSection() {
         {/* 16:9 Fullwidth Video Embed */}
         <div className={styles.videoCard}>
           <iframe
-            src="https://www.youtube.com/embed/LR_r40rBzb4"
-            title="Dental Implant Costs in Istanbul Video"
+            src="https://www.youtube.com/embed/eiTTit9PLrQ"
+            title="Dental Implant Costs in Antalya Video"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           />

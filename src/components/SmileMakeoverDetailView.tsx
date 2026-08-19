@@ -43,20 +43,20 @@ interface LocaleDictionary {
 const DICTIONARIES: Record<string, LocaleDictionary> = {
   en: {
     packagesTitle: 'Smile Makeover Packages & Currency Calculator',
-    packagesSubtitle: 'Bespoke 3D Digital Smile Design, Swiss Ivoclar E-Max veneers, and full-mouth aesthetic reconstructions crafted for natural luminescence, golden facial ratio, and lifelong durability in Istanbul.',
+    packagesSubtitle: 'Bespoke 3D Digital Smile Design, Swiss Ivoclar E-Max veneers, and full-mouth aesthetic reconstructions crafted for natural luminescence, golden facial ratio, and lifelong durability in Antalya.',
     mostPopularBadge: 'Most Popular Choice',
     durationLabel: 'Procedure Time:',
     includedLabel: 'Package Inclusions:',
     priceLabel: 'Package Price:',
     getQuoteBtn: 'Get Your Free Quote',
     faqTitle: 'Frequently Asked Questions About Smile Makeover',
-    faqSubtitle: 'Everything you need to know about smile design in Istanbul — from 3D AI mock-ups and tooth preparation to Swiss porcelain longevity, gum contouring, and international VIP care.',
+    faqSubtitle: 'Everything you need to know about smile design in Antalya — from 3D AI mock-ups and tooth preparation to Swiss porcelain longevity, gum contouring, and international VIP care.',
     packages: [
       {
         name: 'Full Arc 16-Veneer Swiss E-Max Smile Makeover',
         brand: 'Ivoclar Vivadent IPS e.max Press (Switzerland)',
         duration: '5-6 Working Days (3-4 Visits)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-package-10.jpg',
+        img: '/packages/pkg-4.webp',
         popular: true,
         included: [
           '16 Custom Hand-layered Swiss Ivoclar E-Max Porcelain Laminates',
@@ -73,7 +73,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         name: 'Complete 20-Unit Elite Hollywood Transformation',
         brand: 'Swiss E-Max / 1200+ MPa German Zirconia Monolithic',
         duration: '6 Working Days (4 Visits)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-implant-package-2.jpg',
+        img: '/packages/pkg-5.webp',
         included: [
           '20 Premium Aesthetic Units (Upper 10 & Lower 10 Smile Arc)',
           'Full facial Golden Ratio aesthetic reconstruction & lip dynamics analysis',
@@ -89,7 +89,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         name: 'Digital Smile Design & 8-Veneer Social Six Focus',
         brand: 'Ivoclar IPS e.max CAD / Prime Zirconia',
         duration: '4-5 Working Days (3 Visits)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-implant-package-3.jpg',
+        img: '/packages/pkg-6.webp',
         included: [
           '8 Upper Front Aesthetic E-Max Veneers targeting the visible smile line',
           '3D Digital Smile Design portrait photographic facial analysis',
@@ -106,7 +106,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         q: 'What is a Smile Makeover and how is it customized?',
         a: [
           'A Smile Makeover is a comprehensive aesthetic and functional dental rehabilitation tailored to your unique facial geometry, lip line, skin undertone, and personal goals. It typically combines multiple cosmetic and restorative procedures — most commonly Swiss Ivoclar E-Max porcelain veneers, ultra-thin laminates, digital smile design, laser gum contouring, and in some cases zirconium crowns or teeth whitening.',
-          'At Master Smile Studio Istanbul, we do not believe in one-size-fits-all teeth. Using 3Shape 3D digital scanners and AI smile design software, our cosmetic master dentists analyze your facial Golden Ratio to create a harmonious, radiant, and naturally luminous smile.'
+          'At Master Smile Studio Antalya, we do not believe in one-size-fits-all teeth. Using 3Shape 3D digital scanners and AI smile design software, our cosmetic master dentists analyze your facial Golden Ratio to create a harmonious, radiant, and naturally luminous smile.'
         ]
       },
       {
@@ -117,10 +117,10 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         ]
       },
       {
-        q: 'How many days do I need to stay in Istanbul for a full Smile Makeover?',
+        q: 'How many days do I need to stay in Antalya for a full Smile Makeover?',
         a: [
           'A full smile makeover with 16 to 20 custom Swiss E-Max porcelain veneers or crowns typically requires only 5 to 6 working days (usually 3 to 4 clinical appointments).',
-          'During this time, our in-house master laboratory custom-layers and hand-finishes your restorations. Between appointments, you wear comfortable temporary veneers, allowing you to explore the historic sights, shopping, and dining of Istanbul.'
+          'During this time, our in-house master laboratory custom-layers and hand-finishes your restorations. Between appointments, you wear comfortable temporary veneers, allowing you to explore the historic sights, shopping, and dining of Antalya.'
         ]
       },
       {
@@ -162,20 +162,20 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
   },
   tr: {
     packagesTitle: 'Gülüş Tasarımı Paketleri ve Para Birimi Hesaplayıcı',
-    packagesSubtitle: '3D Dijital Gülüş Tasarımı, İsviçre Ivoclar E-Max porselen laminalar ve altın oran yüz simetrisi ile İstanbul’da ömür boyu kalıcı, doğal ve ışıltılı bir Hollywood gülüşü.',
+    packagesSubtitle: '3D Dijital Gülüş Tasarımı, İsviçre Ivoclar E-Max porselen laminalar ve altın oran yüz simetrisi ile Antalya’da ömür boyu kalıcı, doğal ve ışıltılı bir Hollywood gülüşü.',
     mostPopularBadge: 'En Çok Tercih Edilen',
     durationLabel: 'Tedavi Süresi:',
     includedLabel: 'Paket Kapsamı:',
     priceLabel: 'Paket Fiyatı:',
     getQuoteBtn: 'Ücretsiz Teklif Alın',
     faqTitle: 'Gülüş Tasarımı (Smile Makeover) Hakkında Sıkça Sorulan Sorular',
-    faqSubtitle: 'İstanbul’da dijital gülüş tasarımına dair bilmeniz gereken her şey — 3D canlı mock-up provasından diş kesim miktarına, E-Max ömründen lazerli pembe estetiğe kadar tüm detaylar.',
+    faqSubtitle: 'Antalya’da dijital gülüş tasarımına dair bilmeniz gereken her şey — 3D canlı mock-up provasından diş kesim miktarına, E-Max ömründen lazerli pembe estetiğe kadar tüm detaylar.',
     packages: [
       {
         name: '16 Üye İsviçre E-Max Lamina Tam Gülüş Tasarımı',
         brand: 'Ivoclar Vivadent IPS e.max Press (İsviçre)',
         duration: '5-6 İş Günü (3-4 Seans)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-package-10.jpg',
+        img: '/packages/pkg-4.webp',
         popular: true,
         included: [
           '16 Adet Özel El İşçiliği İsviçre Ivoclar E-Max Porselen Yaprak Lamina',
@@ -192,7 +192,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         name: '20 Üye Komple Hollywood Smile Elite Dönüşüm Paketi',
         brand: 'İsviçre E-Max / 1200+ MPa Alman Monolitik Zirkonyum',
         duration: '6 İş Günü (4 Seans)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-implant-package-2.jpg',
+        img: '/packages/pkg-5.webp',
         included: [
           '20 Adet Üst ve Alt Çene Estetik Restorasyon (Tam Çene Gülüş Arkı)',
           'Yüzün altın oranına ve dudak hareketlerine göre kişiselleştirilmiş tam mimari planlama',
@@ -208,7 +208,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         name: 'Dijital Gülüş Tasarımı & 8 Lamina Ön Bölge Odak Paketi',
         brand: 'Ivoclar IPS e.max CAD / Prime Zirkonyum',
         duration: '4-5 İş Günü (3 Seans)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-implant-package-3.jpg',
+        img: '/packages/pkg-6.webp',
         included: [
           'Görünen gülüş hattını kapsayan 8 Adet Üst Ön E-Max Yaprak Porselen',
           '3D Dijital Gülüş Tasarımı stüdyo fotoğraf ve video analizi',
@@ -236,10 +236,10 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         ]
       },
       {
-        q: 'İstanbul’da komple bir Gülüş Tasarımı için kaç gün kalmalıyım?',
+        q: 'Antalya’da komple bir Gülüş Tasarımı için kaç gün kalmalıyım?',
         a: [
           '16 ila 20 üyeden oluşan komple bir İsviçre E-Max lamina veya zirkonyum gülüş tasarımı tedavisi genellikle sadece 5-6 iş günü (3 ila 4 klinik seansı) sürer.',
-          'Kendi bünyemizdeki master diş laboratuvarımızda laminalarınız özel el işçiliğiyle katmanlanır. Seans aralarında geçici estetik dişlerinizle İstanbul’un tarihi ve turistik güzelliklerini rahatlıkla gezebilirsiniz.'
+          'Kendi bünyemizdeki master diş laboratuvarımızda laminalarınız özel el işçiliğiyle katmanlanır. Seans aralarında geçici estetik dişlerinizle Antalya’nın tarihi ve turistik güzelliklerini rahatlıkla gezebilirsiniz.'
         ]
       },
       {
@@ -281,20 +281,20 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
   },
   de: {
     packagesTitle: 'Smile Makeover Pakete & Währungsrechner',
-    packagesSubtitle: 'Individuelles 3D Digital Smile Design, Schweizer Ivoclar E-Max Veneers und ganzheitliche ästhetische Rekonstruktionen für natürliche Lumineszenz und perfekten Goldenen Schnitt in Istanbul.',
+    packagesSubtitle: 'Individuelles 3D Digital Smile Design, Schweizer Ivoclar E-Max Veneers und ganzheitliche ästhetische Rekonstruktionen für natürliche Lumineszenz und perfekten Goldenen Schnitt in Antalya.',
     mostPopularBadge: 'Beliebteste Wahl',
     durationLabel: 'Behandlungsdauer:',
     includedLabel: 'Paketumfang:',
     priceLabel: 'Paketpreis:',
     getQuoteBtn: 'Kostenloses Angebot anfordern',
     faqTitle: 'Häufig gestellte Fragen zum Smile Makeover',
-    faqSubtitle: 'Alles, was Sie über das Smile Makeover in Istanbul wissen müssen — von der 3D-Mock-up-Anprobe über minimale Präparation bis hin zur Langlebigkeit von Schweizer E-Max Veneers.',
+    faqSubtitle: 'Alles, was Sie über das Smile Makeover in Antalya wissen müssen — von der 3D-Mock-up-Anprobe über minimale Präparation bis hin zur Langlebigkeit von Schweizer E-Max Veneers.',
     packages: [
       {
         name: 'Full Arc 16-Veneer Schweizer E-Max Smile Makeover',
         brand: 'Ivoclar Vivadent IPS e.max Press (Schweiz)',
         duration: '5-6 Arbeitstage (3-4 Termine)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-package-10.jpg',
+        img: '/packages/pkg-4.webp',
         popular: true,
         included: [
           '16 handgeschichtete Schweizer Ivoclar E-Max Keramikveneers',
@@ -311,7 +311,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         name: '20 Einheiten Komplettes Elite Hollywood Transformation',
         brand: 'Schweizer E-Max / 1200+ MPa Deutsches Zirkonium Monolithisch',
         duration: '6 Arbeitstage (4 Termine)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-implant-package-2.jpg',
+        img: '/packages/pkg-5.webp',
         included: [
           '20 Premium-Einheiten (Ober- und Unterkiefer voller Lächelbogen)',
           'Analyse des Goldenen Schnitts und der Lippenästhetik',
@@ -327,7 +327,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         name: 'Digital Smile Design & 8 Frontzahn-Veneers Fokus',
         brand: 'Ivoclar IPS e.max CAD / Prime Zirkon',
         duration: '4-5 Arbeitstage (3 Termine)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-implant-package-3.jpg',
+        img: '/packages/pkg-6.webp',
         included: [
           '8 E-Max Veneers für den sichtbaren oberen Frontzahnbereich',
           '3D Digital Smile Design Fotostudio- und Videoanalyse',
@@ -344,7 +344,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         q: 'Was ist ein Smile Makeover und wie wird es individuell angepasst?',
         a: [
           'Ein Smile Makeover ist eine maßgeschneiderte ästhetische und funktionelle Gesamtrehabilitation Ihres Lächelns, abgestimmt auf Ihre Gesichtsproportionen, Lippenbewegung und persönlichen Wünsche. Es kombiniert Schweizer Ivoclar E-Max Veneers, Zirkonkronen, Laser-Zahnfleischästhetik und Bleaching.',
-          'Bei Master Smile Studio Istanbul verwenden wir modernste 3Shape 3D-Scanner und KI-gestützte Designsoftware, um Ihr Lächeln nach dem Goldenen Schnitt vollkommen natürlich zu gestalten.'
+          'Bei Master Smile Studio Antalya verwenden wir modernste 3Shape 3D-Scanner und KI-gestützte Designsoftware, um Ihr Lächeln nach dem Goldenen Schnitt vollkommen natürlich zu gestalten.'
         ]
       },
       {
@@ -355,10 +355,10 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         ]
       },
       {
-        q: 'Wie viele Tage muss ich für ein komplettes Smile Makeover in Istanbul einplanen?',
+        q: 'Wie viele Tage muss ich für ein komplettes Smile Makeover in Antalya einplanen?',
         a: [
           'Ein vollständiges Smile Makeover mit 16 bis 20 Schweizer E-Max Veneers oder Zirkonkronen dauert in der Regel nur 5 bis 6 Arbeitstage (3 bis 4 Sitzungen).',
-          'Zwischen den Terminen tragen Sie komfortable temporäre Veneers und können entspannt Istanbul entdecken.'
+          'Zwischen den Terminen tragen Sie komfortable temporäre Veneers und können entspannt Antalya entdecken.'
         ]
       },
       {
@@ -395,20 +395,20 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
   },
   pl: {
     packagesTitle: 'Pakiety Smile Makeover i Kalkulator Walut',
-    packagesSubtitle: 'Indywidualne projektowanie 3D Digital Smile Design, szwajcarskie licówki Ivoclar E-Max oraz kompleksowa odbudowa estetyczna w Stambule.',
+    packagesSubtitle: 'Indywidualne projektowanie 3D Digital Smile Design, szwajcarskie licówki Ivoclar E-Max oraz kompleksowa odbudowa estetyczna w Antalyi.',
     mostPopularBadge: 'Najchętniej Wybierany',
     durationLabel: 'Czas zabiegu:',
     includedLabel: 'Zawartość pakietu:',
     priceLabel: 'Cena pakietu:',
     getQuoteBtn: 'Otrzymaj Darmową Wycenę',
     faqTitle: 'Często zadawane pytania o Smile Makeover',
-    faqSubtitle: 'Wszystko o metamorfozie uśmiechu w Stambule — od próbnego mock-up 3D po trwałość szwajcarskich licówek E-Max.',
+    faqSubtitle: 'Wszystko o metamorfozie uśmiechu w Antalyi — od próbnego mock-up 3D po trwałość szwajcarskich licówek E-Max.',
     packages: [
       {
         name: 'Pełny Łuk 16 Licówek Szwajcarskich E-Max',
         brand: 'Ivoclar Vivadent IPS e.max Press (Szwajcaria)',
         duration: '5-6 Dni Roboczych (3-4 Wizyty)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-package-10.jpg',
+        img: '/packages/pkg-4.webp',
         popular: true,
         included: [
           '16 Ręcznie warstwowanych szwajcarskich licówek ceramicznych Ivoclar E-Max',
@@ -425,7 +425,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         name: '20 Jednostek Kompleksowa Transformacja Hollywood Smile',
         brand: 'Szwajcarski E-Max / Niemiecki Cyrkon Monolityczny 1200+ MPa',
         duration: '6 Dni Roboczych (4 Wizyty)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-implant-package-2.jpg',
+        img: '/packages/pkg-5.webp',
         included: [
           '20 Jednostek estetycznych (Górny i Dolny pełny łuk uśmiechu)',
           'Rekonstrukcja estetyczna według Złotego Podziału twarzy',
@@ -441,7 +441,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         name: 'Digital Smile Design i 8 Licówek Odcinek Przedni',
         brand: 'Ivoclar IPS e.max CAD / Prime Zirconia',
         duration: '4-5 Dni Roboczych (3 Wizyty)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-implant-package-3.jpg',
+        img: '/packages/pkg-6.webp',
         included: [
           '8 Licówek E-Max na górne zęby widoczne przy uśmiechu',
           'Analiza fotograficzna i wideo 3D Digital Smile Design',
@@ -468,7 +468,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         ]
       },
       {
-        q: 'Ile dni trwa zabieg w Stambule?',
+        q: 'Ile dni trwa zabieg w Antalyi?',
         a: [
           'Zabieg trwa zazwyczaj 5 do 6 dni roboczych (3-4 wizyty w klinice). W międzyczasie pacjent nosi estetyczne licówki tymczasowe.'
         ]
@@ -507,20 +507,20 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
   },
   pt: {
     packagesTitle: 'Pacotes Smile Makeover e Calculadora de Moeda',
-    packagesSubtitle: 'Design Digital do Sorriso 3D personalizado, facetas suíças Ivoclar E-Max e transformação estética completa em Istambul.',
+    packagesSubtitle: 'Design Digital do Sorriso 3D personalizado, facetas suíças Ivoclar E-Max e transformação estética completa em Antalya.',
     mostPopularBadge: 'Mais Popular',
     durationLabel: 'Duração do Tratamento:',
     includedLabel: 'Inclusões do Pacote:',
     priceLabel: 'Preço do Pacote:',
     getQuoteBtn: 'Pedir Orçamento Grátis',
     faqTitle: 'Perguntas Frequentes sobre Smile Makeover',
-    faqSubtitle: 'Tudo o que precisa de saber sobre o design do sorriso em Istambul — desde a prova de mock-up ao vivo até à durabilidade das facetas E-Max.',
+    faqSubtitle: 'Tudo o que precisa de saber sobre o design do sorriso em Antalya — desde a prova de mock-up ao vivo até à durabilidade das facetas E-Max.',
     packages: [
       {
         name: 'Transformação 16 Facetas Suíças Ivoclar E-Max',
         brand: 'Ivoclar Vivadent IPS e.max Press (Suíça)',
         duration: '5-6 Dias Úteis (3-4 Consultas)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-package-10.jpg',
+        img: '/packages/pkg-4.webp',
         popular: true,
         included: [
           '16 Facetas cerâmicas artesanais suíças Ivoclar E-Max',
@@ -537,7 +537,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         name: '20 Unidades Transformação Elite Hollywood Smile',
         brand: 'E-Max Suíço / Zircónia Alemã Monolítica 1200+ MPa',
         duration: '6 Dias Úteis (4 Consultas)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-implant-package-2.jpg',
+        img: '/packages/pkg-5.webp',
         included: [
           '20 Unidades estéticas (Arcada superior e inferior completa)',
           'Reconstrução estética baseada na Proporção Áurea facial',
@@ -553,7 +553,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         name: 'Design Digital do Sorriso & 8 Facetas Frontais',
         brand: 'Ivoclar IPS e.max CAD / Prime Zirconia',
         duration: '4-5 Dias Úteis (3 Consultas)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-implant-package-3.jpg',
+        img: '/packages/pkg-6.webp',
         included: [
           '8 Facetas E-Max na zona estética do sorriso superior',
           'Análise em estúdio fotográfico e vídeo 3D DSD',
@@ -580,7 +580,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         ]
       },
       {
-        q: 'Quantos dias são necessários em Istambul?',
+        q: 'Quantos dias são necessários em Antalya?',
         a: [
           'Geralmente são necessários 5 a 6 dias úteis (3 a 4 consultas clínicas).'
         ]
@@ -619,20 +619,20 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
   },
   es: {
     packagesTitle: 'Paquetes de Diseño de Sonrisa y Calculadora de Divisas',
-    packagesSubtitle: 'Diseño Digital de Sonrisa 3D personalizado, carillas suizas Ivoclar E-Max y transformación estética completa en Estambul.',
+    packagesSubtitle: 'Diseño Digital de Sonrisa 3D personalizado, carillas suizas Ivoclar E-Max y transformación estética completa en Antalya.',
     mostPopularBadge: 'Más Popular',
     durationLabel: 'Duración del Tratamiento:',
     includedLabel: 'Inclusiones del Paquete:',
     priceLabel: 'Precio del Paquete:',
     getQuoteBtn: 'Solicitar Presupuesto Gratis',
     faqTitle: 'Preguntas Frecuentes sobre el Smile Makeover',
-    faqSubtitle: 'Todo lo que necesita saber sobre el diseño de sonrisa en Estambul — desde la prueba de mock-up en vivo hasta la durabilidad de las carillas E-Max.',
+    faqSubtitle: 'Todo lo que necesita saber sobre el diseño de sonrisa en Antalya — desde la prueba de mock-up en vivo hasta la durabilidad de las carillas E-Max.',
     packages: [
       {
         name: 'Transformación 16 Carillas Suizas Ivoclar E-Max',
         brand: 'Ivoclar Vivadent IPS e.max Press (Suiza)',
         duration: '5-6 Días Laborables (3-4 Citas)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-package-10.jpg',
+        img: '/packages/pkg-4.webp',
         popular: true,
         included: [
           '16 Carillas cerámicas artesanales suizas Ivoclar E-Max',
@@ -649,7 +649,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         name: '20 Unidades Transformación Elite Hollywood Smile',
         brand: 'E-Max Suizo / Circonio Alemán Monolítico 1200+ MPa',
         duration: '6 Días Laborables (4 Citas)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-implant-package-2.jpg',
+        img: '/packages/pkg-5.webp',
         included: [
           '20 Unidades estéticas (Arcada superior e inferior completa)',
           'Reconstrucción estética basada en la Proporción Áurea facial',
@@ -665,7 +665,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         name: 'Diseño Digital de Sonrisa & 8 Carillas Frontales',
         brand: 'Ivoclar IPS e.max CAD / Prime Zirconia',
         duration: '4-5 Días Laborables (3 Citas)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-implant-package-3.jpg',
+        img: '/packages/pkg-6.webp',
         included: [
           '8 Carillas E-Max en la zona estética visible superior',
           'Análisis en estudio fotográfico y vídeo 3D DSD',
@@ -692,7 +692,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         ]
       },
       {
-        q: '¿Cuántos días se necesitan en Estambul?',
+        q: '¿Cuántos días se necesitan en Antalya?',
         a: [
           'Generalmente entre 5 y 6 días laborables (3 a 4 citas clínicas).'
         ]
@@ -731,20 +731,20 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
   },
   ru: {
     packagesTitle: 'Пакеты Smile Makeover и Калькулятор Валют',
-    packagesSubtitle: 'Индивидуальный 3D цифровой дизайн улыбки, швейцарские виниры Ivoclar E-Max и комплексная эстетическая реабилитация в Стамбуле.',
+    packagesSubtitle: 'Индивидуальный 3D цифровой дизайн улыбки, швейцарские виниры Ivoclar E-Max и комплексная эстетическая реабилитация в Анталье.',
     mostPopularBadge: 'Самый Популярный',
     durationLabel: 'Срок лечения:',
     includedLabel: 'В стоимость входит:',
     priceLabel: 'Цена пакета:',
     getQuoteBtn: 'Получить Бесплатный Расчет',
     faqTitle: 'Часто задаваемые вопросы о Smile Makeover',
-    faqSubtitle: 'Все о дизайне улыбки в Стамбуле — от живой примерки mock-up до долговечности швейцарских виниров E-Max.',
+    faqSubtitle: 'Все о дизайне улыбки в Анталье — от живой примерки mock-up до долговечности швейцарских виниров E-Max.',
     packages: [
       {
         name: 'Полный Комплекс 16 Швейцарских Виниров E-Max',
         brand: 'Ivoclar Vivadent IPS e.max Press (Швейцария)',
         duration: '5-6 Рабочих Дней (3-4 Визита)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-package-10.jpg',
+        img: '/packages/pkg-4.webp',
         popular: true,
         included: [
           '16 Авторских керамических виниров Ivoclar E-Max ручной работы',
@@ -761,7 +761,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         name: '20 Единиц Премиум Голливудская Улыбка Элит',
         brand: 'Швейцарский E-Max / Немецкий Монолитный Цирконий 1200+ МПа',
         duration: '6 Рабочих Дней (4 Визита)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-implant-package-2.jpg',
+        img: '/packages/pkg-5.webp',
         included: [
           '20 Эстетических единиц (Верхняя и нижняя челюсть полностью)',
           'Реконструкция по Золотому Сечению лица и динамике улыбки',
@@ -777,7 +777,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         name: 'Digital Smile Design и 8 Виниров Зоны Улыбки',
         brand: 'Ivoclar IPS e.max CAD / Prime Zirconia',
         duration: '4-5 Рабочих Дней (3 Визита)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-implant-package-3.jpg',
+        img: '/packages/pkg-6.webp',
         included: [
           '8 Виниров E-Max на передние зубы зоны улыбки',
           'Фотостудийный и видео 3D анализ улыбки',
@@ -804,7 +804,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         ]
       },
       {
-        q: 'Сколько дней требуется для лечения в Стамбуле?',
+        q: 'Сколько дней требуется для лечения в Анталье?',
         a: [
           'Обычно требуется от 5 до 6 рабочих дней (3-4 визита в клинику).'
         ]

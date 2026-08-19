@@ -46,7 +46,7 @@ export function generateTreatmentJsonLd({
         'https://www.wikidata.org/wiki/Q1413157', // Dental Implant
         'https://www.wikidata.org/wiki/Q36384',   // Dentistry
         'https://www.wikidata.org/wiki/Q256722',  // Osseointegration
-        'https://www.wikidata.org/wiki/Q406',     // Istanbul
+        'https://www.wikidata.org/wiki/Q406',     // Antalya
       ],
       wikipedia: [
         'https://en.wikipedia.org/wiki/Dental_implant',
@@ -87,7 +87,7 @@ export function generateTreatmentJsonLd({
       wikidata: [
         'https://www.wikidata.org/wiki/Q1413157', // Dental Implant
         'https://www.wikidata.org/wiki/Q749453',  // Prosthodontics
-        'https://www.wikidata.org/wiki/Q406',     // Istanbul
+        'https://www.wikidata.org/wiki/Q406',     // Antalya
       ],
       wikipedia: ['https://en.wikipedia.org/wiki/Prosthodontics'],
       risks: [
@@ -176,8 +176,8 @@ export function generateTreatmentJsonLd({
     {
       q:
         locale === 'tr'
-          ? 'İstanbul’da diş implantı fiyatları ne kadar?'
-          : 'How much do dental implants cost in Istanbul, Turkey?',
+          ? 'Antalya’da diş implantı fiyatları ne kadar?'
+          : 'How much do dental implants cost in Antalya, Turkey?',
       a:
         locale === 'tr'
           ? 'Master Smile Studio kliniğimizde tek diş implant fiyatları €400’den başlar. All-on-4 tam çene paketleri €4,900, All-on-6 paketleri ise €5,500’den itibaren her şey dahil (otel konaklaması, VIP transferler, 3D CBCT röntgenler) olarak sunulmaktadır.'
@@ -186,8 +186,8 @@ export function generateTreatmentJsonLd({
     {
       q:
         locale === 'tr'
-          ? 'Diş implantı tedavisi için İstanbul’da kaç gün kalmam gerekir?'
-          : 'How long do I need to stay in Istanbul for dental implant treatment?',
+          ? 'Diş implantı tedavisi için Antalya’da kaç gün kalmam gerekir?'
+          : 'How long do I need to stay in Antalya for dental implant treatment?',
       a:
         locale === 'tr'
           ? 'İmplant tedavisi genellikle 2 ziyaret gerektirir. 1. Ziyaret (3-5 gün): Cerrahi yerleşim ve geçici sabit dişlerin takılması. 3 aylık kemik kaynama (osteointegrasyon) sürecinin ardından 2. Ziyaret (5-7 gün): Kalıcı monolitik zirkonyum köprülerin takılması.'
@@ -307,7 +307,7 @@ export function generateTreatmentJsonLd({
         '@id': `${siteUrl}/#physician-onur-yuksel`,
         name: 'Dr. Dt. Onur Utku Yüksel',
         jobTitle: 'Co-Founder & Specialist Oral Implantologist',
-        image: 'https://sohodent.com/doc/data1/Dr.Dt.-Onur-Utku-Yuksel.jpg',
+        image: '/treatments/accordion/Dr.Dt.-Onur-Utku-Yuksel.jpg',
         medicalSpecialty: 'OralSurgery',
         worksFor: { '@id': clinicId },
       },
@@ -316,7 +316,7 @@ export function generateTreatmentJsonLd({
         '@id': `${siteUrl}/#physician-ufuk-agdasan`,
         name: 'Dt. Ufuk Ağdaşan',
         jobTitle: 'Co-Founder & Aesthetic Dentist',
-        image: 'https://sohodent.com/doc/data1/Dt.Ufuk-Agdasan.jpg',
+        image: '/treatments/accordion/Dt.Ufuk-Agdasan.jpg',
         medicalSpecialty: 'CosmeticDentistry',
         worksFor: { '@id': clinicId },
       },
@@ -325,7 +325,7 @@ export function generateTreatmentJsonLd({
         '@id': `${siteUrl}/#physician-serdar-unal`,
         name: 'MSc. Dt. Hakkı Serdar Ünal',
         jobTitle: 'Co-Founder & Prosthodontist',
-        image: 'https://sohodent.com/doc/data1/Dt.Hakki-Serdar-unal.jpg',
+        image: '/treatments/accordion/Dt.Hakki-Serdar-unal.jpg',
         medicalSpecialty: 'Prosthodontics',
         worksFor: { '@id': clinicId },
       },
@@ -334,7 +334,7 @@ export function generateTreatmentJsonLd({
         '@id': `${siteUrl}/#physician-cagatay-cakir`,
         name: 'Dt. Çağatay Çakır',
         jobTitle: 'Dentist',
-        image: 'https://sohodent.com/doc/data1/cagatay-cakir.jpg',
+        image: '/treatments/accordion/cagatay-cakir.jpg',
         medicalSpecialty: 'Dentistry',
         worksFor: { '@id': clinicId },
       },
@@ -423,7 +423,7 @@ export function generateTreatmentJsonLd({
           bestRating: 5,
         },
         reviewBody:
-          'I came to Istanbul to assist my father in law to do an all on 6 upper jaw. The clinic is modern, well equipped and beautiful. Much better than my own doctor in Canada.',
+          'I came to Antalya to assist my father in law to do an all on 6 upper jaw. The clinic is modern, well equipped and beautiful. Much better than my own doctor in Canada.',
       },
 
       // 6. BREADCRUMBLIST

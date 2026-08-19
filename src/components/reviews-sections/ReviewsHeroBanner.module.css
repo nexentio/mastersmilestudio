@@ -1,8 +1,14 @@
 .sect20 {
   position: relative;
   width: 100%;
-  height: clamp(340px, 26vw, 420px);
-  min-height: 320px;
+  height: 100vh;
+  height: 100dvh;
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding: 0 1.5rem;
+  padding-top: 100px;
+  margin-top: -100px;
+  box-sizing: border-box;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -71,10 +77,15 @@
   max-width: 860px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 868px) {
   .sect20 {
-    height: clamp(300px, 45vw, 360px);
-    min-height: 280px;
+    height: 100vh;
+    height: 100dvh;
+    min-height: 100vh;
+    min-height: 100dvh;
+    padding: 0 1rem;
+    padding-top: 80px;
+    margin-top: -80px;
   }
   
   .text1 {

@@ -9,43 +9,43 @@ import styles from './CosmeticDentistryHeroBanner.module.css';
 const HERO_I18N = {
   en: {
     tag: 'TREATMENTS',
-    title: 'Cosmetic Dentistry in Istanbul, Turkey | Smile Makeovers & Aesthetic Treatments',
+    title: 'Cosmetic Dentistry in Antalya, Turkey | Smile Makeovers & Aesthetic Treatments',
     subtitle: 'Reveal your best smile with cosmetic dentistry tailored to you.',
     btnText: 'Contact',
   },
   tr: {
     tag: 'TEDAVİLERİMİZ',
-    title: 'İstanbul Estetik Diş Hekimliği & Hollywood Gülüş Tasarımı',
+    title: 'Antalya Estetik Diş Hekimliği & Hollywood Gülüş Tasarımı',
     subtitle: 'Size özel tasarlanan estetik diş hekimliği ile en güzel gülüşünüzü ortaya çıkarın.',
     btnText: 'İletişime Geç',
   },
   de: {
     tag: 'BEHANDLUNGEN',
-    title: 'Ästhetische Zahnheilkunde in Istanbul, Türkei | Smile Makeover',
+    title: 'Ästhetische Zahnheilkunde in Antalya, Türkei | Smile Makeover',
     subtitle: 'Zeigen Sie Ihr schönstes Lächeln mit maßgeschneiderter ästhetischer Zahnmedizin.',
     btnText: 'Kontakt',
   },
   pl: {
     tag: 'ZABIEGI',
-    title: 'Stomatologia Estetyczna w Stambule, Turcja | Metamorfozy Uśmiechu',
+    title: 'Stomatologia Estetyczna w Antalyi, Turcja | Metamorfozy Uśmiechu',
     subtitle: 'Odkryj swój najpiękniejszy uśmiech dzięki stomatologii estetycznej dopasowanej do Ciebie.',
     btnText: 'Kontakt',
   },
   pt: {
     tag: 'TRATAMENTOS',
-    title: 'Dentisteria Estética em Istambul, Turquia | Transformação do Sorriso',
+    title: 'Dentisteria Estética em Antalya, Turquia | Transformação do Sorriso',
     subtitle: 'Revele o seu melhor sorriso com tratamentos de estética dentária à sua medida.',
     btnText: 'Contato',
   },
   es: {
     tag: 'TRATAMIENTOS',
-    title: 'Odontología Estética en Estambul, Turquía | Diseño de Sonrisa',
+    title: 'Odontología Estética en Antalya, Turquía | Diseño de Sonrisa',
     subtitle: 'Luzca su mejor sonrisa con odontología cosmética personalizada.',
     btnText: 'Contacto',
   },
   ru: {
     tag: 'ЛЕЧЕНИЕ',
-    title: 'Эстетическая стоматология в Стамбуле | Голливудская улыбка',
+    title: 'Эстетическая стоматология в Анталье | Голливудская улыбка',
     subtitle: 'Раскройте свою лучшую улыбку с помощью индивидуальной эстетической стоматологии.',
     btnText: 'Записаться',
   },
@@ -60,10 +60,9 @@ export default function CosmeticDentistryHeroBanner() {
       <Image
         src="/images/treatments/cosmetics.jpg"
         alt={d.title}
-        width={1600}
-        height={537}
+        fill
         priority
-        fetchPriority="high"
+        sizes="100vw"
         className={styles.back1}
       />
       <div className={styles.content}>

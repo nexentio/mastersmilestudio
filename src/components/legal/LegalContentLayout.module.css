@@ -1,0 +1,282 @@
+.pageContainer {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 6rem 1.5rem;
+}
+
+.layoutGrid {
+  position: relative;
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr);
+  gap: 4.5rem;
+  align-items: start;
+}
+
+/* ==========================================================================
+   LEFT STICKY INDEX (PURE TEXT, NO BOXES)
+   ========================================================================== */
+.sidebarSticky {
+  position: sticky;
+  top: 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.tocLabel {
+  font-family: var(--font-outfit), sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #94a3b8;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 0 0 1rem 0;
+}
+
+.tocNav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.tocLink {
+  display: flex;
+  align-items: baseline;
+  gap: 0.65rem;
+  font-size: 0.88rem;
+  color: #64748b;
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 1.45;
+  transition: color 0.15s ease;
+  padding: 0.25rem 0;
+}
+
+.tocLink:hover {
+  color: #0f172a;
+}
+
+.tocIndex {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #94a3b8;
+  letter-spacing: 0.04em;
+  flex-shrink: 0;
+}
+
+.tocLinkActive {
+  color: #0f172a;
+  font-weight: 600;
+}
+
+.tocLinkActive .tocIndex {
+  color: #d58936;
+}
+
+.sidebarHelp {
+  font-size: 0.82rem;
+  color: #64748b;
+  line-height: 1.6;
+  padding-top: 1.5rem;
+  border-top: 1px solid #f1f5f9;
+}
+
+.sidebarHelpTitle {
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 0.35rem;
+}
+
+.sidebarHelpLink {
+  display: inline-block;
+  color: #0f172a;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-weight: 500;
+  margin-top: 0.4rem;
+  transition: color 0.15s ease;
+}
+
+.sidebarHelpLink:hover {
+  color: #d58936;
+}
+
+/* ==========================================================================
+   RIGHT MAIN ARTICLE (NATURAL EDITORIAL FLOW, NO BOXES)
+   ========================================================================== */
+.mainArticle {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+/* Lead intro */
+.leadSection {
+  margin-bottom: 3.5rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.leadHeading {
+  font-family: var(--font-outfit), sans-serif;
+  font-size: clamp(1.35rem, 2.5vw, 1.75rem);
+  font-weight: 400;
+  color: #0f172a;
+  letter-spacing: -0.025em;
+  margin: 0 0 1.25rem 0;
+}
+
+.leadParagraph {
+  font-size: 1.02rem;
+  color: #334155;
+  line-height: 1.85;
+  margin: 0 0 1.15rem 0;
+}
+
+.leadParagraph:last-child {
+  margin-bottom: 0;
+}
+
+/* Section block */
+.sectionBlock {
+  position: relative;
+  scroll-margin-top: 6rem;
+  margin-bottom: 3.5rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.sectionBlock:last-of-type {
+  border-bottom: none;
+  margin-bottom: 2rem;
+  padding-bottom: 0;
+}
+
+.sectionLabel {
+  font-family: var(--font-outfit), sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #d58936;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+}
+
+.sectionHeading {
+  font-family: var(--font-outfit), sans-serif;
+  font-size: clamp(1.35rem, 2.2vw, 1.75rem);
+  font-weight: 400;
+  color: #0f172a;
+  letter-spacing: -0.025em;
+  line-height: 1.25;
+  margin: 0 0 1.35rem 0;
+}
+
+.sectionBody {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.sectionParagraph {
+  font-size: 0.96rem;
+  color: #475569;
+  line-height: 1.85;
+  margin: 0;
+}
+
+/* Natural bullet highlights */
+.highlightsArea {
+  margin-top: 1rem;
+}
+
+.highlightsTitle {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin: 0 0 0.5rem 0;
+}
+
+.highlightsList {
+  margin: 0;
+  padding-left: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.highlightsItem {
+  font-size: 0.92rem;
+  color: #475569;
+  line-height: 1.65;
+}
+
+/* Sign-off footer */
+.signoffBlock {
+  padding-top: 2rem;
+  border-top: 1px solid #f1f5f9;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.signoffInfo {
+  max-width: 500px;
+  font-size: 0.88rem;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.signoffTitle {
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 0.25rem;
+}
+
+.signoffLink {
+  font-size: 0.88rem;
+  color: #0f172a;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-weight: 500;
+  transition: color 0.15s ease;
+}
+
+.signoffLink:hover {
+  color: #d58936;
+}
+
+/* ==========================================================================
+   RESPONSIVE BREAKPOINTS
+   ========================================================================== */
+@media (max-width: 900px) {
+  .pageContainer {
+    padding: 2rem 1.25rem 4rem 1.25rem;
+  }
+
+  .layoutGrid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .sidebarSticky {
+    position: static;
+  }
+
+  .tocNav {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 0.35rem;
+  }
+
+  .leadSection,
+  .sectionBlock {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2rem;
+  }
+}

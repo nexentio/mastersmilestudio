@@ -26,7 +26,7 @@ interface LocalizedText {
 const BRIDGE_I18N_DATA: Record<string, LocalizedText> = {
   en: {
     heading: 'Restoring Missing Teeth & Full Chewing Power',
-    desc: 'Real patient smile transformations with custom German Zirconia & Implant-supported dental bridges at Master Smile Studio Istanbul.',
+    desc: 'Real patient smile transformations with custom German Zirconia & Implant-supported dental bridges at Master Smile Studio Antalya.',
     viewGallery: 'View Full Bridge Gallery →',
     cases: [
       {
@@ -49,7 +49,7 @@ const BRIDGE_I18N_DATA: Record<string, LocalizedText> = {
   },
   tr: {
     heading: 'Eksik Dişlerden Güçlü ve Kusursuz Gülüşe',
-    desc: 'Master Smile Studio İstanbul’da Alman Zirkonyum ve İmplant üstü köprülerle tamamlanan gerçek hasta vaka dönüşümleri.',
+    desc: 'Master Smile Studio Antalya’da Alman Zirkonyum ve İmplant üstü köprülerle tamamlanan gerçek hasta vaka dönüşümleri.',
     viewGallery: 'Tüm Köprü Galerisini İncele →',
     cases: [
       {
@@ -72,7 +72,7 @@ const BRIDGE_I18N_DATA: Record<string, LocalizedText> = {
   },
   de: {
     heading: 'Wiederherstellung fehlender Zähne und voller Kaukraft',
-    desc: 'Echte Patiententransformationen mit Zirkon- und Implantatbrücken bei Master Smile Studio Istanbul.',
+    desc: 'Echte Patiententransformationen mit Zirkon- und Implantatbrücken bei Master Smile Studio Antalya.',
     viewGallery: 'Vollständige Brücken-Galerie ansehen →',
     cases: [
       {
@@ -95,7 +95,7 @@ const BRIDGE_I18N_DATA: Record<string, LocalizedText> = {
   },
   pl: {
     heading: 'Odbudowa brakujących zębów i pełnej siły żucia',
-    desc: 'Metamorfozy pacjentów z użyciem mostów cyrkonowych i na implantach w Master Smile Studio Stambuł.',
+    desc: 'Metamorfozy pacjentów z użyciem mostów cyrkonowych i na implantach w Master Smile Studio Antalya.',
     viewGallery: 'Zobacz całą galerię mostów →',
     cases: [
       {
@@ -118,7 +118,7 @@ const BRIDGE_I18N_DATA: Record<string, LocalizedText> = {
   },
   pt: {
     heading: 'Restaurando dentes ausentes com força total',
-    desc: 'Transformações reais com pontes em zircônia e sobre implantes na Master Smile Studio Istambul.',
+    desc: 'Transformações reais com pontes em zircônia e sobre implantes na Master Smile Studio Antalya.',
     viewGallery: 'Ver galeria completa de pontes →',
     cases: [
       {
@@ -141,7 +141,7 @@ const BRIDGE_I18N_DATA: Record<string, LocalizedText> = {
   },
   es: {
     heading: 'Recuperando dientes ausentes y la fuerza de masticación',
-    desc: 'Transformaciones de pacientes con puentes de zirconio y sobre implantes en Master Smile Studio Estambul.',
+    desc: 'Transformaciones de pacientes con puentes de zirconio y sobre implantes en Master Smile Studio Antalya.',
     viewGallery: 'Ver galería completa de puentes →',
     cases: [
       {
@@ -188,10 +188,10 @@ const BRIDGE_I18N_DATA: Record<string, LocalizedText> = {
 };
 
 const BRIDGE_CASE_IMAGES = [
-  'https://sohodent.com/doc/data1/zirconium-implant-copy.webp',
-  'https://sohodent.com/doc/data1/full-mouth-implant-copy.webp',
-  'https://sohodent.com/doc/data1/porcelain-laminate-copy.webp',
-  'https://sohodent.com/doc/data1/e-max-laminate-copy.webp',
+  '/treatments/accordion/zirconium-implant-copy.webp',
+  '/treatments/accordion/full-mouth-implant.webp',
+  '/treatments/accordion/porcelain-laminate-copy.webp',
+  '/treatments/accordion/e-max-laminate-copy.webp',
 ];
 
 export default function TreatmentBridgeBeforeAfterSliderSection() {

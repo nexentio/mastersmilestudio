@@ -54,9 +54,9 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "priceLabel": "Price (All-Inclusive):",
     "getQuoteBtn": "Get Your Free Quote",
     "faqTitle": "Frequently Asked Questions About Zirconium Crowns",
-    "faqSubtitle": "Explore answers to the most common clinical and travel questions regarding Zirconia crowns, smile makeovers, procedure timelines, and international warranties in Istanbul.",
-    "stayDuration": "<strong>6 to 7 days in Istanbul.</strong> During this single trip, tooth preparation, digital CAD/CAM 3D scanning, laboratory milling of your high-strength monolithic zirconium crowns, and final aesthetic cementation are completed with precision.",
-    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Istanbul once. Your complete dental crown makeover (from 1 tooth to full mouth 20-28 crowns) is designed and placed during this single visit.",
+    "faqSubtitle": "Explore answers to the most common clinical and travel questions regarding Zirconia crowns, smile makeovers, procedure timelines, and international warranties in Antalya.",
+    "stayDuration": "<strong>6 to 7 days in Antalya.</strong> During this single trip, tooth preparation, digital CAD/CAM 3D scanning, laboratory milling of your high-strength monolithic zirconium crowns, and final aesthetic cementation are completed with precision.",
+    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Antalya once. Your complete dental crown makeover (from 1 tooth to full mouth 20-28 crowns) is designed and placed during this single visit.",
     "recoveryTime": "<strong>2 to 3 days adaptation.</strong> There is virtually no surgical recovery time. Any mild sensitivity subsides within 48-72 hours, allowing you to comfortably enjoy eating and normal activities immediately.",
     "priceEstimate": "<strong>Zirconium Dental Crown prices start at £210 / €250 / $275 per tooth.</strong> All-inclusive multi-crown packages (10, 20 or 24 crowns) include digital smile design, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
@@ -64,7 +64,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Zirconium Crown",
         "brand": "Amman-Girrbach / Vita (1200+ MPa)",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-1.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "1x Genuine German Monolithic Zirconia Crown (1200+ MPa)",
           "3D Digital Intraoral Scan & CAD/CAM Precision Milling",
@@ -83,14 +83,14 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "10-Unit Upper Smile Makeover (Zirconia)",
         "brand": "German Monolithic Multi-Layer Zirconia",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-2.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "popular": true,
         "included": [
           "10x Premium High-Translucency German Zirconia Crowns (Upper Visible Smile Line)",
           "Bespoke 3D Digital Smile Design (DSD) & Mock-up",
           "Laser gum contouring & smile symmetry adjustment (if needed)",
           "Custom temporary crowns for complete comfort during manufacturing",
-          "4-Star Hotel Stay with Breakfast in Istanbul (6 Nights)",
+          "4-Star Hotel Stay with Breakfast in Antalya (6 Nights)",
           "VIP Mercedes Chauffeur Transfers (Airport - Hotel - Clinic)",
           "Lifetime warranty against crown fracture & chipping"
         ],
@@ -104,13 +104,13 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Mouth Zirconia Makeover",
         "brand": "Monolithic Multi-Layer 3D Pro Zirconia",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-3.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "20x High-Translucency Monolithic Zirconia Crowns (10 Upper + 10 Lower Arches)",
           "Comprehensive 3D CT Diagnostic Scan & Digital Smile Simulation",
           "Full aesthetic & functional bite balancing (gnathological alignment)",
           "Complete temporary smile set fitted on Day 1",
-          "5-Star Luxury Hotel Accommodation in Istanbul (6 Nights)",
+          "5-Star Luxury Hotel Accommodation in Antalya (6 Nights)",
           "Private VIP Mercedes Airport & Clinic Chauffeur",
           "Comprehensive post-op care pack & night guard protection"
         ],
@@ -124,7 +124,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Swiss Ivoclar E-Max Crown",
         "brand": "Ivoclar Vivadent IPS e.max Press (Swiss)",
         "duration": "4 – 6 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Porcelain-Crown-Package-1.jpg",
+        "img": "/treatments/accordion/Porcelain-Crown-Package-1.jpg",
         "included": [
           "1x 100% Genuine Swiss Ivoclar Lithium Disilicate Crown/Veneer",
           "Unmatched 70% natural light transmission for anterior teeth",
@@ -143,7 +143,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Premium Ivoclar E-Max Hollywood Smile",
         "brand": "Ivoclar IPS e.max CAD / Press Master",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/Porcelain-Crown-Package-2.jpg",
+        "img": "/treatments/accordion/Porcelain-Crown-Package-2.jpg",
         "included": [
           "20x Swiss Ivoclar IPS e.max Porcelain Crowns/Veneers (Full Hollywood Smile)",
           "3D Digital Facial Aesthetics & golden ratio smile planning",
@@ -163,7 +163,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Full Arch Zirconia Bridge on Implants",
         "brand": "Prettau / Katana Multi-Layer Zirconia (12–14 Units)",
         "duration": "6 – 7 Days (Final Visit)",
-        "img": "https://sohodent.com/doc/data1/Porcelain-Crown-Package-3.jpg",
+        "img": "/treatments/accordion/Porcelain-Crown-Package-3.jpg",
         "included": [
           "12 to 14-Unit One-Piece Screw-Retained Monolithic Zirconia Bridge",
           "Precision CAD/CAM titanium multi-unit abutment connection",
@@ -184,20 +184,20 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "q": "Will my treatment plan or price change when I arrive at the clinic?",
         "a": [
           "No. The personalized treatment plan and cost quotation provided during your online consultation (based on your dental photos and panoramic X-ray) are fixed and binding.",
-          "Upon your arrival in Istanbul, we perform a complimentary 3D CBCT scan. Unless an unforeseen internal dental infection or severe root pathology requiring endodontic intervention is discovered, your package price remains 100% transparent with zero hidden charges."
+          "Upon your arrival in Antalya, we perform a complimentary 3D CBCT scan. Unless an unforeseen internal dental infection or severe root pathology requiring endodontic intervention is discovered, your package price remains 100% transparent with zero hidden charges."
         ]
       },
       {
         "q": "Do you assist with accommodation and hotel booking?",
         "a": [
-          "Yes. All of our multi-unit crown packages (10, 20, or 24 teeth) include complimentary 4-star or 5-star hotel accommodation with daily breakfast located in safe, upscale central districts of Istanbul near our clinic.",
+          "Yes. All of our multi-unit crown packages (10, 20, or 24 teeth) include complimentary 4-star or 5-star hotel accommodation with daily breakfast located in safe, upscale central districts of Antalya near our clinic.",
           "Our dedicated international patient team handles your hotel reservations, check-in, and daily VIP Mercedes clinic transfers for a completely stress-free experience."
         ]
       },
       {
         "q": "Is it safe to travel to Turkey for dental treatments?",
         "a": [
-          "Yes, absolutely. Istanbul is one of the world's most reputable and advanced centers for medical and dental tourism, welcoming over 500,000 international dental patients every year.",
+          "Yes, absolutely. Antalya is one of the world's most reputable and advanced centers for medical and dental tourism, welcoming over 500,000 international dental patients every year.",
           "Our clinic operates under strict Ministry of Health regulations, employing hospital-grade HEPA filtration, class-B autoclave sterilization, and CE/FDA-certified German and Swiss biomaterials."
         ]
       },
@@ -232,7 +232,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
       {
         "q": "Are airport transfers and hotel stays really included in the packages?",
         "a": [
-          "Yes! All smile makeover packages include complimentary private VIP Mercedes Vito transfers between Istanbul Airport (IST / SAW), your hotel, and the clinic for all appointments.",
+          "Yes! All smile makeover packages include complimentary private VIP Mercedes Vito transfers between Antalya Airport (IST / SAW), your hotel, and the clinic for all appointments.",
           "Your personal driver greets you at the arrival gate, ensuring seamless transportation throughout your entire stay."
         ]
       },
@@ -327,9 +327,9 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "priceLabel": "Her Şey Dahil Fiyat:",
     "getQuoteBtn": "Ücretsiz Fiyat Teklifi Al",
     "faqTitle": "Zirkonyum Kaplama Hakkında Sıkça Sorulan Sorular",
-    "faqSubtitle": "İstanbul'da zirkonyum diş kaplama, gülüş tasarımı, tedavi süresi, garanti koşulları ve seyahat planlaması hakkında en çok merak edilen 21 sorunun yanıtları.",
-    "stayDuration": "<strong>İstanbul’da 6–7 gün.</strong> Bu tek seyahatte dişlerin minimal preparasyonu, 3D dijital CAD/CAM tarama, laboratuvarda monolitik zirkonyum kuronların üretimi ve kalıcı estetik simantasyon eksiksiz tamamlanır.",
-    "visitCount": "<strong>Tek (1) ziyaret.</strong> İstanbul’a yalnızca bir kez gelmeniz yeterlidir. Tek bir dişten tüm ağız 20-28 zirkonyum kaplamaya kadar tüm tedaviniz aynı seyahatte tamamlanır.",
+    "faqSubtitle": "Antalya'da zirkonyum diş kaplama, gülüş tasarımı, tedavi süresi, garanti koşulları ve seyahat planlaması hakkında en çok merak edilen 21 sorunun yanıtları.",
+    "stayDuration": "<strong>Antalya’da 6–7 gün.</strong> Bu tek seyahatte dişlerin minimal preparasyonu, 3D dijital CAD/CAM tarama, laboratuvarda monolitik zirkonyum kuronların üretimi ve kalıcı estetik simantasyon eksiksiz tamamlanır.",
+    "visitCount": "<strong>Tek (1) ziyaret.</strong> Antalya’ya yalnızca bir kez gelmeniz yeterlidir. Tek bir dişten tüm ağız 20-28 zirkonyum kaplamaya kadar tüm tedaviniz aynı seyahatte tamamlanır.",
     "recoveryTime": "<strong>2–3 gün alışma süresi.</strong> Cerrahi bir operasyon olmadığı için iyileşme süreci gerektirmez. Diş etlerinin hafif adaptasyonu 48-72 saat içinde tamamlanır ve hemen normal beslenmenize dönebilirsiniz.",
     "priceEstimate": "<strong>Zirkonyum diş kaplama fiyatları diş başına £210 / €250 / $275’den başlar.</strong> Çoklu kuron paketlerimiz (10, 20 veya 24 diş) dijital gülüş tasarımı, 4/5 yıldızlı otel konaklaması ve VIP transferleri kapsar.",
     "packages": [
@@ -337,7 +337,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Tek Diş Zirkonyum Kron Kaplama",
         "brand": "Amman-Girrbach / Vita (1200+ MPa)",
         "duration": "3 – 5 Gün (Tek Ziyaret)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-1.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "1x Orijinal Alman Monolitik Zirkonyum Kuron (1200+ MPa)",
           "3D Ağız İçi Dijital Tarama & CAD/CAM Mikron Düzeyinde Kazıma",
@@ -356,14 +356,14 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "10 Üye Üst Çene Zirkonyum Gülüş Tasarımı",
         "brand": "Alman Monolitik Çok Katmanlı Zirkonyum",
         "duration": "5 – 7 Gün (Tek Ziyaret)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-2.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "popular": true,
         "included": [
           "10x Yüksek Işık Geçirgenlikli Alman Zirkonyum Kuron (Üst Gülüş Hattı)",
           "Kişiye Özel 3D Dijital Gülüş Tasarımı (DSD) & Mock-up Provası",
           "Lazerle diş eti seviyeleme ve simetri düzenlemesi (Gingivoplasti)",
           "Üretim süresince konforlu çiğneme sağlayan özel geçici diş seti",
-          "İstanbul'da 4 Yıldızlı Otelde 6 Gece Kahvaltı Dahil Konaklama",
+          "Antalya'da 4 Yıldızlı Otelde 6 Gece Kahvaltı Dahil Konaklama",
           "VIP Mercedes Özel Şoförlü Transferler (Havalimanı - Otel - Klinik)",
           "Kırılma ve çatlamaya karşı Ömür Boyu Garanti Sertifikası"
         ],
@@ -377,13 +377,13 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20 Üye Tam Ağız Zirkonyum Makeover",
         "brand": "Monolitik Çok Katmanlı 3D Pro Zirkonyum",
         "duration": "6 – 7 Gün (Tek Ziyaret)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-3.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "20x Yüksek Translusens Zirkonyum Kaplama (10 Üst + 10 Alt Çene)",
           "Kapsamlı 3D Tomografi ve Yüz Estetiği Gülüş Simülasyonu",
           "Gnatolojik çene kapanış dengesi ve tam fonksiyonel artikülasyon",
           "1. Gün takılan estetik geçici diş seti ile kesintisiz sosyal yaşam",
-          "İstanbul'da 5 Yıldızlı Lüks Otelde 6 Gece Konaklama",
+          "Antalya'da 5 Yıldızlı Lüks Otelde 6 Gece Konaklama",
           "Özel VIP Mercedes Havalimanı ve Klinik Transferleri",
           "Kapsamlı ameliyat sonrası bakım seti ve koruyucu gece plağı"
         ],
@@ -397,7 +397,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Tek Diş İsviçre Ivoclar E-Max Kron",
         "brand": "Ivoclar Vivadent IPS e.max Press (İsviçre)",
         "duration": "4 – 6 Gün (Tek Ziyaret)",
-        "img": "https://sohodent.com/doc/data1/Porcelain-Crown-Package-1.jpg",
+        "img": "/treatments/accordion/Porcelain-Crown-Package-1.jpg",
         "included": [
           "1x %100 Orijinal İsviçre Lityum Disilikat E-Max Kaplama/Lamina",
           "Ön dişler için %70 doğal ışık geçirgenliği ve saydamlık",
@@ -416,7 +416,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20 Üye Premium Ivoclar E-Max Hollywood Smile",
         "brand": "Ivoclar IPS e.max CAD / Press Master",
         "duration": "6 – 7 Gün (Tek Ziyaret)",
-        "img": "https://sohodent.com/doc/data1/Porcelain-Crown-Package-2.jpg",
+        "img": "/treatments/accordion/Porcelain-Crown-Package-2.jpg",
         "included": [
           "20x İsviçre Ivoclar IPS e.max Porselen Kaplama (Tam Hollywood Gülüşü)",
           "3D Yüz Estetiği ve Altın Oran Dijital Gülüş Planlaması",
@@ -436,7 +436,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "İmplant Üstü Tam Çene Zirkonyum Köprü",
         "brand": "Prettau / Katana Multi-Layer Zirkonyum (12–14 Üye)",
         "duration": "6 – 7 Gün (Kalıcı Aşama)",
-        "img": "https://sohodent.com/doc/data1/Porcelain-Crown-Package-3.jpg",
+        "img": "/treatments/accordion/Porcelain-Crown-Package-3.jpg",
         "included": [
           "12–14 Üyelik Tek Parça Vidalı Monolitik Zirkonyum İmplant Köprüsü",
           "CAD/CAM titanyum multi-unit abutment hassas bağlantı sistemi",
@@ -470,7 +470,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
       {
         "q": "Diş tedavisi için Türkiye'ye seyahat etmek güvenli mi?",
         "a": [
-          "Evet, kesinlikle. İstanbul her yıl 500.000'den fazla uluslararası diş hastasını ağırlayan dünyanın en gelişmiş sağlık turizmi merkezlerinden biridir.",
+          "Evet, kesinlikle. Antalya her yıl 500.000'den fazla uluslararası diş hastasını ağırlayan dünyanın en gelişmiş sağlık turizmi merkezlerinden biridir.",
           "Kliniğimiz Sağlık Bakanlığı akreditasyonuna sahip olup, hastane tipi HEPA filtreleme, B sınıfı otoklav sterilizasyonu ve CE/FDA onaylı Alman ve İsviçre materyalleri kullanmaktadır."
         ]
       },
@@ -505,7 +505,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
       {
         "q": "Havalimanı transferleri ve otel konaklaması gerçekten pakete dahil mi?",
         "a": [
-          "Evet! Gülüş tasarımı paketlerimizin tamamında İstanbul Havalimanı (IST/SAW) ile otel ve klinik arasındaki tüm transferler özel VIP Mercedes araçlarımız ve şoförümüzle sağlanır."
+          "Evet! Gülüş tasarımı paketlerimizin tamamında Antalya Havalimanı (IST/SAW) ile otel ve klinik arasındaki tüm transferler özel VIP Mercedes araçlarımız ve şoförümüzle sağlanır."
         ]
       },
       {
@@ -597,9 +597,9 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "priceLabel": "All-Inclusive-Preis:",
     "getQuoteBtn": "Kostenloses Angebot anfordern",
     "faqTitle": "Häufig gestellte Fragen zu Zirkonkronen",
-    "faqSubtitle": "Erfahren Sie alles über Zirkonkronen, Smile Makeover, Behandlungsablauf, Materialqualität und Garantien in unserer Spezialklinik in Istanbul.",
-    "stayDuration": "<strong>6 bis 7 Tage in Istanbul.</strong> In einer einzigen Reise erfolgen die Zahnvorbereitung, der digitale 3D-CAD/CAM-Scan, das Fräsen der Zirkonkronen im Meisterlabor und das dauerhafte Einsetzen.",
-    "visitCount": "<strong>Nur 1 Besuch erforderlich.</strong> Sie müssen nur einmal nach Istanbul reisen. Sowohl Einzelkronen als auch ein komplettes Zirkon-Lächeln (20-28 Kronen) werden in einer einzigen Reise fertiggestellt.",
+    "faqSubtitle": "Erfahren Sie alles über Zirkonkronen, Smile Makeover, Behandlungsablauf, Materialqualität und Garantien in unserer Spezialklinik in Antalya.",
+    "stayDuration": "<strong>6 bis 7 Tage in Antalya.</strong> In einer einzigen Reise erfolgen die Zahnvorbereitung, der digitale 3D-CAD/CAM-Scan, das Fräsen der Zirkonkronen im Meisterlabor und das dauerhafte Einsetzen.",
+    "visitCount": "<strong>Nur 1 Besuch erforderlich.</strong> Sie müssen nur einmal nach Antalya reisen. Sowohl Einzelkronen als auch ein komplettes Zirkon-Lächeln (20-28 Kronen) werden in einer einzigen Reise fertiggestellt.",
     "recoveryTime": "<strong>2 bis 3 Tage Eingewöhnung.</strong> Da es sich um keinen chirurgischen Eingriff handelt, gibt es keine Ausfallzeiten. Eine leichte Gewöhnung der Zähne erfolgt innerhalb von 48 bis 72 Stunden.",
     "priceEstimate": "<strong>Preise für Zirkonkronen beginnen ab £210 / €250 / $275 pro Zahn.</strong> All-Inclusive-Pakete (10, 20 oder 24 Kronen) beinhalten 3D Smile Design, 4/5-Sterne-Hotel und VIP-Flughafentransfers.",
     "packages": [
@@ -607,7 +607,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Einzelne Zirkonkrone",
         "brand": "Amman-Girrbach / Vita (1200+ MPa)",
         "duration": "3 – 5 Tage (1 Besuch)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-1.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "1x Deutsche monolithische Zirkonkrone (1200+ MPa)",
           "Digitaler 3D-Intraoralscan & hochpräzise CAD/CAM-Fräsung",
@@ -626,14 +626,14 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "10 Einheiten Oberkiefer Zirkon Smile Makeover",
         "brand": "Deutsches mehrschichtiges Zirkonoxid",
         "duration": "5 – 7 Tage (1 Besuch)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-2.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "popular": true,
         "included": [
           "10x Hochtransluzente Zirkonkronen (sichtbare Lachlinie Oberkiefer)",
           "Individuelles 3D Digital Smile Design (DSD) & Mock-up",
           "Schonende Zahnfleischkorrektur mit Laser für perfekte Symmetrie",
           "Komfortable provisorische Zähne für die Laborphase",
-          "6 Übernachtungen im 4-Sterne-Hotel mit Frühstück in Istanbul",
+          "6 Übernachtungen im 4-Sterne-Hotel mit Frühstück in Antalya",
           "VIP Mercedes Chauffeur-Transfers (Flughafen - Hotel - Klinik)",
           "Lebenslange Garantie gegen Bruch und Absplitterung"
         ],
@@ -647,13 +647,13 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20 Einheiten Komplettes Zirkon Makeover",
         "brand": "Monolithisches 3D Pro Multilayer Zirkon",
         "duration": "6 – 7 Tage (1 Besuch)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-3.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "20x Premium Zirkonkronen (10 Oberkiefer + 10 Unterkiefer)",
           "Umfassende 3D-DVT-Diagnostik & Gesichtssimulation",
           "Funktionelle Gelenkvermessung & harmonische Bissabstimmung",
           "Provisorisches Komplettset am 1. Tag eingesetzt",
-          "6 Übernachtungen im 5-Sterne-Luxushotel in Istanbul",
+          "6 Übernachtungen im 5-Sterne-Luxushotel in Antalya",
           "Privater VIP-Mercedes-Fahrdienst für alle Termine",
           "Umfangreiches Pflegepaket & maßgefertigte Aufbissschiene"
         ],
@@ -667,7 +667,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Einzelne Schweizer Ivoclar E-Max Krone",
         "brand": "Ivoclar Vivadent IPS e.max Press (Schweiz)",
         "duration": "4 – 6 Tage (1 Besuch)",
-        "img": "https://sohodent.com/doc/data1/Porcelain-Crown-Package-1.jpg",
+        "img": "/treatments/accordion/Porcelain-Crown-Package-1.jpg",
         "included": [
           "1x 100% Original Schweizer Lithium-Disilikat Krone/Veneer",
           "Herausragende 70% Lichtdurchlässigkeit für Frontzähne",
@@ -686,7 +686,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20 Einheiten Ivoclar E-Max Hollywood Smile",
         "brand": "Ivoclar IPS e.max CAD / Press Master",
         "duration": "6 – 7 Tage (1 Besuch)",
-        "img": "https://sohodent.com/doc/data1/Porcelain-Crown-Package-2.jpg",
+        "img": "/treatments/accordion/Porcelain-Crown-Package-2.jpg",
         "included": [
           "20x Schweizer Ivoclar IPS e.max Vollkeramikkronen/Veneers",
           "3D Gesichtsästhetik & Goldener Schnitt Smile-Planung",
@@ -706,7 +706,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Zirkonbrücke auf Implantaten (12–14 Einheiten)",
         "brand": "Prettau / Katana Multilayer Zirkon",
         "duration": "6 – 7 Tage (Abschlussbesuch)",
-        "img": "https://sohodent.com/doc/data1/Porcelain-Crown-Package-3.jpg",
+        "img": "/treatments/accordion/Porcelain-Crown-Package-3.jpg",
         "included": [
           "Einteilige verschraubte Zirkonbrücke (12–14 Zähne)",
           "Präzise CAD/CAM Titan-Multi-Unit-Abutmentverbindung",
@@ -739,7 +739,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
       {
         "q": "Ist eine Zahnbehandlung in der Türkei sicher?",
         "a": [
-          "Ja, absolut. Istanbul ist weltweit führend im Medizintourismus und empfängt jährlich Hunderttausende europäische Patienten. Unsere Klinik arbeitet nach strengsten Standards mit B-Klasse-Autoklaven und CE-zertifizierten deutschen Materialien."
+          "Ja, absolut. Antalya ist weltweit führend im Medizintourismus und empfängt jährlich Hunderttausende europäische Patienten. Unsere Klinik arbeitet nach strengsten Standards mit B-Klasse-Autoklaven und CE-zertifizierten deutschen Materialien."
         ]
       },
       {
@@ -861,9 +861,9 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "priceLabel": "Cena (All-Inclusive):",
     "getQuoteBtn": "Otrzymaj Bezpłatną Wycenę",
     "faqTitle": "Często Zadawane Pytania o Korony Cyrkonowe",
-    "faqSubtitle": "Odpowiedzi na 21 najważniejszych pytań dotyczących koron cyrkonowych, estetyki uśmiechu, przebiegu leczenia w Stambule i międzynarodowych gwarancji.",
-    "stayDuration": "<strong>6 do 7 dni w Stambule.</strong> W trakcie jednej podróży wykonujemy przygotowanie zębów, cyfrowy skan 3D CAD/CAM, precyzyjne frezowanie koron cyrkonowych oraz ich ostateczną cementację.",
-    "visitCount": "<strong>Wymagana tylko 1 wizyta.</strong> Wystarczy jedna podróż do Stambułu. Odbudowa pojedynczego zęba lub pełna metamorfoza uśmiechu (20-28 koron) jest w całości realizowana podczas jednego pobytu.",
+    "faqSubtitle": "Odpowiedzi na 21 najważniejszych pytań dotyczących koron cyrkonowych, estetyki uśmiechu, przebiegu leczenia w Antalyi i międzynarodowych gwarancji.",
+    "stayDuration": "<strong>6 do 7 dni w Antalyi.</strong> W trakcie jednej podróży wykonujemy przygotowanie zębów, cyfrowy skan 3D CAD/CAM, precyzyjne frezowanie koron cyrkonowych oraz ich ostateczną cementację.",
+    "visitCount": "<strong>Wymagana tylko 1 wizyta.</strong> Wystarczy jedna podróż do Antalyi. Odbudowa pojedynczego zęba lub pełna metamorfoza uśmiechu (20-28 koron) jest w całości realizowana podczas jednego pobytu.",
     "recoveryTime": "<strong>2 do 3 dni adaptacji.</strong> Brak okresu rekonwalescencji chirurgicznej. Ewentualna lekka nadwrażliwość ustępuje w ciągu 48-72 godzin, pozwalając na normalne gryzienie.",
     "priceEstimate": "<strong>Ceny koron cyrkonowych zaczynają się od £210 / €250 / $275 za ząb.</strong> Pakiety All-Inclusive (10, 20 lub 24 korony) zawierają cyfrowy projekt uśmiechu, hotel 4/5★ i transfery VIP.",
     "packages": [
@@ -871,7 +871,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Pojedyncza Korona Cyrkonowa",
         "brand": "Amman-Girrbach / Vita (1200+ MPa)",
         "duration": "3 – 5 Dni (1 Wizyta)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-1.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "1x Niemiecka Monolityczna Korona Cyrkonowa (1200+ MPa)",
           "Cyfrowy skan 3D i precyzyjne frezowanie CAD/CAM",
@@ -890,14 +890,14 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "10 Koron Cyrkonowych – Górny Łuk (Smile Makeover)",
         "brand": "Niemiecki Wielowarstwowy Tlenek Cyrkonu",
         "duration": "5 – 7 Dni (1 Wizyta)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-2.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "popular": true,
         "included": [
           "10x Korony Cyrkonowe Premium o Wysokiej Przezierności (Linia Uśmiechu)",
           "Indywidualny Cyfrowy Projekt Uśmiechu 3D (DSD) i Przymiarka Mock-up",
           "Laserowa plastyka dziąseł dla idealnej symetrii (w razie potrzeby)",
           "Tymczasowy zestaw zębów na czas produkcji laboratoryjnej",
-          "6 Noclegów w 4-Gwiazdkowym Hotelu ze Śniadaniami w Stambule",
+          "6 Noclegów w 4-Gwiazdkowym Hotelu ze Śniadaniami w Antalyi",
           "Prywatne Transfery VIP Mercedesem (Lotnisko - Hotel - Klinika)",
           "Dożywotnia Gwarancja na pęknięcia i ukruszenia podbudowy"
         ],
@@ -911,13 +911,13 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20 Koron Cyrkonowych – Pełna Odbudowa Uśmiechu",
         "brand": "Monolityczny Cyrkon 3D Pro Multilayer",
         "duration": "6 – 7 Dni (1 Wizyta)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-3.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "20x Korony Cyrkonowe Premium (10 Górny + 10 Dolny Łuk)",
           "Kompleksowa Diagnostyka Tomograficzna 3D i Symulacja Twarzy",
           "Precyzyjne wyważenie okluzji i stawu skroniowo-żuchwowego",
           "Zestaw zębów tymczasowych zakładany w 1. dniu wizyty",
-          "6 Noclegów w 5-Gwiazdkowym Luksusowym Hotelu w Stambule",
+          "6 Noclegów w 5-Gwiazdkowym Luksusowym Hotelu w Antalyi",
           "Prywatny Kierowca VIP Mercedes na wszystkie wizyty",
           "Zestaw pozabiegowy i indywidualna szyna relaksacyjna na noc"
         ],
@@ -931,7 +931,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Pojedyncza Korona Szwajcarska Ivoclar E-Max",
         "brand": "Ivoclar Vivadent IPS e.max Press (Szwajcaria)",
         "duration": "4 – 6 Dni (1 Wizyta)",
-        "img": "https://sohodent.com/doc/data1/Porcelain-Crown-Package-1.jpg",
+        "img": "/treatments/accordion/Porcelain-Crown-Package-1.jpg",
         "included": [
           "1x Oryginalna Korona/Licówka z Dwukrzemianu Litu Ivoclar",
           "Niezrównana przezierność 70% imitująca naturalne szkliwo",
@@ -950,7 +950,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20 Koron Ivoclar E-Max – Hollywood Smile",
         "brand": "Ivoclar IPS e.max CAD / Press Master",
         "duration": "6 – 7 Dni (1 Wizyta)",
-        "img": "https://sohodent.com/doc/data1/Porcelain-Crown-Package-2.jpg",
+        "img": "/treatments/accordion/Porcelain-Crown-Package-2.jpg",
         "included": [
           "20x Szwajcarskie Korony/Licówki Porcelanowe Ivoclar IPS e.max",
           "Cyfrowy Projekt Estetyki Twarzy i Złotego Podziału Uśmiechu",
@@ -970,7 +970,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Pełnołukowy Most Cyrkonowy na Implantach (12–14 pkt)",
         "brand": "Prettau / Katana Multilayer Zirconia",
         "duration": "6 – 7 Dni (Etap Ostateczny)",
-        "img": "https://sohodent.com/doc/data1/Porcelain-Crown-Package-3.jpg",
+        "img": "/treatments/accordion/Porcelain-Crown-Package-3.jpg",
         "included": [
           "Jednoczęściowy przykręcany most monolityczny (12–14 zębów)",
           "Precyzyjne tytanowe połączenie CAD/CAM multi-unit",
@@ -997,13 +997,13 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
       {
         "q": "Czy pomagacie w rezerwacji hotelu i zakwaterowaniu?",
         "a": [
-          "Tak. Wszystkie nasze pakiety koron (10, 20 lub 24 zęby) zawierają bezpłatny pobyt w 4- lub 5-gwiazdkowym hotelu ze śniadaniami w bezpiecznej i dogodnej lokalizacji w Stambule."
+          "Tak. Wszystkie nasze pakiety koron (10, 20 lub 24 zęby) zawierają bezpłatny pobyt w 4- lub 5-gwiazdkowym hotelu ze śniadaniami w bezpiecznej i dogodnej lokalizacji w Antalyi."
         ]
       },
       {
         "q": "Czy podróż do Turcji na leczenie stomatologiczne jest bezpieczna?",
         "a": [
-          "Tak, w 100%. Stambuł jest jednym z wiodących na świecie ośrodków turystyki medycznej, przyjmującym rocznie ponad 500 000 pacjentów zagranicznych. Nasza klinika spełnia rygorystyczne normy sterylizacji i używa certyfikowanych materiałów z Niemiec i Szwajcarii."
+          "Tak, w 100%. Antalya jest jednym z wiodących na świecie ośrodków turystyki medycznej, przyjmującym rocznie ponad 500 000 pacjentów zagranicznych. Nasza klinika spełnia rygorystyczne normy sterylizacji i używa certyfikowanych materiałów z Niemiec i Szwajcarii."
         ]
       },
       {
@@ -1118,16 +1118,16 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
   },
   "pt": {
     "packagesTitle": "Pacotes de Coroas de Zircônia e Cerâmica Pura",
-    "packagesSubtitle": "Pacotes all-inclusive para transformação do sorriso com zircônia alemã Amman-Girrbach e Ivoclar E-Max suíço, com hotel 4/5★ e transfers VIP em Istambul.",
+    "packagesSubtitle": "Pacotes all-inclusive para transformação do sorriso com zircônia alemã Amman-Girrbach e Ivoclar E-Max suíço, com hotel 4/5★ e transfers VIP em Antalya.",
     "mostPopularBadge": "Mais Escolhido",
     "durationLabel": "Duração do Tratamento:",
     "includedLabel": "Incluso no Pacote:",
     "priceLabel": "Preço All-Inclusive:",
     "getQuoteBtn": "Solicitar Orçamento Grátis",
     "faqTitle": "Perguntas Frequentes sobre Coroas de Zircônia",
-    "faqSubtitle": "Tudo o que você precisa saber sobre coroas de zircônia, design do sorriso, prazos de viagem, garantias internacionais e cuidados clínicos em Istambul.",
-    "stayDuration": "<strong>6 a 7 dias em Istambul.</strong> Em apenas uma viagem, realizamos o preparo dental, escaneamento 3D CAD/CAM, fresagem laboratorial das coroas de zircônia e cimentação estética definitiva.",
-    "visitCount": "<strong>Apenas 1 viagem necessária.</strong> Você precisa viajar para Istambul apenas uma vez. Seu tratamento completo (de 1 coroa a 20-28 coroas) é concluído integralmente nessa estadia.",
+    "faqSubtitle": "Tudo o que você precisa saber sobre coroas de zircônia, design do sorriso, prazos de viagem, garantias internacionais e cuidados clínicos em Antalya.",
+    "stayDuration": "<strong>6 a 7 dias em Antalya.</strong> Em apenas uma viagem, realizamos o preparo dental, escaneamento 3D CAD/CAM, fresagem laboratorial das coroas de zircônia e cimentação estética definitiva.",
+    "visitCount": "<strong>Apenas 1 viagem necessária.</strong> Você precisa viajar para Antalya apenas uma vez. Seu tratamento completo (de 1 coroa a 20-28 coroas) é concluído integralmente nessa estadia.",
     "recoveryTime": "<strong>2 a 3 dias de adaptação.</strong> Por não envolver cirurgia óssea, não há tempo de inatividade. Qualquer leve sensibilidade desaparece em 48 a 72 horas.",
     "priceEstimate": "<strong>Preços de coroas de zircónia começam a partir de £210 / €250 / $275 por dente.</strong> Pacotes completos (10, 20 ou 24 coroas) incluem design do sorriso, hotel 4/5 estrelas e transfers VIP.",
     "packages": [
@@ -1135,7 +1135,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Coroa Individual de Zircônia",
         "brand": "Amman-Girrbach / Vita (1200+ MPa)",
         "duration": "3 – 5 Dias (1 Viagem)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-1.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "1x Coroa Monolítica Alemã de Zircônia (1200+ MPa)",
           "Escaneamento 3D Intraoral e Fresagem de Alta Precisão CAD/CAM",
@@ -1154,14 +1154,14 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "10 Coroas de Zircônia – Arcada Superior",
         "brand": "Zircônia Multicamadas Monolítica Alemã",
         "duration": "5 – 7 Dias (1 Viagem)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-2.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "popular": true,
         "included": [
           "10x Coroas de Zircônia de Alta Translucidez (Linha do Sorriso Superior)",
           "Design Digital do Sorriso 3D (DSD) e Teste de Mock-up",
           "Plástica gengival a laser para simetria estética (se necessário)",
           "Conjunto de dentes provisórios estéticos para a fase laboratorial",
-          "6 Noites em Hotel 4 Estrelas com Café da Manhã em Istambul",
+          "6 Noites em Hotel 4 Estrelas com Café da Manhã em Antalya",
           "Transfers Privados em Mercedes VIP (Aeroporto - Hotel - Clínica)",
           "Garantia Vitalícia contra fraturas e lascamentos"
         ],
@@ -1175,13 +1175,13 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20 Coroas de Zircônia – Makeover Completo",
         "brand": "Zircônia 3D Pro Multicamadas Monolítica",
         "duration": "6 – 7 Dias (1 Viagem)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-3.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "20x Coroas de Zircônia Premium (10 Arcada Superior + 10 Inferior)",
           "Tomografia 3D Completa e Simulação Facial do Sorriso",
           "Equilíbrio oclusal gnatológico e articulação funcional perfeita",
           "Dentes provisórios instalados no 1º dia para conforto total",
-          "6 Noites em Hotel 5 Estrelas de Luxo em Istambul",
+          "6 Noites em Hotel 5 Estrelas de Luxo em Antalya",
           "Motorista Particular em Mercedes VIP para todas as consultas",
           "Kit de cuidados pós-tratamento e placa oclusal noturna"
         ],
@@ -1195,7 +1195,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Coroa Individual Suíça Ivoclar E-Max",
         "brand": "Ivoclar Vivadent IPS e.max Press (Suíça)",
         "duration": "4 – 6 Dias (1 Viagem)",
-        "img": "https://sohodent.com/doc/data1/Porcelain-Crown-Package-1.jpg",
+        "img": "/treatments/accordion/Porcelain-Crown-Package-1.jpg",
         "included": [
           "1x Coroa/Faceta 100% Dissilicato de Lítio Ivoclar Suíço",
           "70% de translucidez natural incomparável para dentes anteriores",
@@ -1214,7 +1214,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20 Unidades Ivoclar E-Max – Hollywood Smile",
         "brand": "Ivoclar IPS e.max CAD / Press Master",
         "duration": "6 – 7 Dias (1 Viagem)",
-        "img": "https://sohodent.com/doc/data1/Porcelain-Crown-Package-2.jpg",
+        "img": "/treatments/accordion/Porcelain-Crown-Package-2.jpg",
         "included": [
           "20x Facetas/Coroas Cerâmicas Suíças Ivoclar IPS e.max",
           "Design 3D da Estética Facial e Proporção Áurea do Sorriso",
@@ -1234,7 +1234,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Ponte Fixa de Zircônia sobre Implantes (12–14 Dentes)",
         "brand": "Prettau / Katana Multicamadas Zircônia",
         "duration": "6 – 7 Dias (Etapa Final)",
-        "img": "https://sohodent.com/doc/data1/Porcelain-Crown-Package-3.jpg",
+        "img": "/treatments/accordion/Porcelain-Crown-Package-3.jpg",
         "included": [
           "Ponte Monolítica Parafusada de Zircônia em Peça Única (12–14 dentes)",
           "Conexão multi-unit de titânio de alta precisão CAD/CAM",
@@ -1261,13 +1261,13 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
       {
         "q": "Vocês auxiliam na hospedagem e reserva de hotel?",
         "a": [
-          "Sim. Todos os nossos pacotes de coroas (10, 20 ou 24 dentes) incluem hospedagem com café da manhã em hotéis 4 ou 5 estrelas em áreas nobres de Istambul."
+          "Sim. Todos os nossos pacotes de coroas (10, 20 ou 24 dentes) incluem hospedagem com café da manhã em hotéis 4 ou 5 estrelas em áreas nobres de Antalya."
         ]
       },
       {
         "q": "É seguro viajar para a Turquia para tratamento dentário?",
         "a": [
-          "Sim, totalmente. Istambul é um dos maiores polos mundiais de turismo odontológico, recebendo mais de 500.000 pacientes internacionais ao ano com padrões hospitalares rigorosos e materiais certificados CE/FDA."
+          "Sim, totalmente. Antalya é um dos maiores polos mundiais de turismo odontológico, recebendo mais de 500.000 pacientes internacionais ao ano com padrões hospitalares rigorosos e materiais certificados CE/FDA."
         ]
       },
       {
@@ -1382,16 +1382,16 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
   },
   "es": {
     "packagesTitle": "Paquetes de Coronas de Circonio y Cerámica Pura",
-    "packagesSubtitle": "Paquetes todo incluido para transformación de sonrisa con circonio alemán Amman-Girrbach e Ivoclar E-Max suizo, con hotel 4/5★ y traslados VIP en Estambul.",
+    "packagesSubtitle": "Paquetes todo incluido para transformación de sonrisa con circonio alemán Amman-Girrbach e Ivoclar E-Max suizo, con hotel 4/5★ y traslados VIP en Antalya.",
     "mostPopularBadge": "Opción Más Popular",
     "durationLabel": "Duración del Tratamiento:",
     "includedLabel": "Incluido en el Paquete:",
     "priceLabel": "Precio Todo Incluido:",
     "getQuoteBtn": "Solicitar Presupuesto Gratis",
     "faqTitle": "Preguntas Frecuentes sobre Coronas de Circonio",
-    "faqSubtitle": "Todo lo que necesita saber sobre coronas de circonio, diseño de sonrisa, tiempos de viaje, garantías internacionales y atención médica en Estambul.",
-    "stayDuration": "<strong>6 a 7 días en Estambul.</strong> En un solo viaje realizamos la preparación dental, escaneo digital 3D CAD/CAM, fresado de las coronas de circonio y su cementación estética definitiva.",
-    "visitCount": "<strong>Solo 1 viaje requerido.</strong> Solo necesita viajar a Estambul una vez. Desde una sola corona hasta una transformación completa de 20-28 coronas de circonio, todo se completa en una estancia.",
+    "faqSubtitle": "Todo lo que necesita saber sobre coronas de circonio, diseño de sonrisa, tiempos de viaje, garantías internacionales y atención médica en Antalya.",
+    "stayDuration": "<strong>6 a 7 días en Antalya.</strong> En un solo viaje realizamos la preparación dental, escaneo digital 3D CAD/CAM, fresado de las coronas de circonio y su cementación estética definitiva.",
+    "visitCount": "<strong>Solo 1 viaje requerido.</strong> Solo necesita viajar a Antalya una vez. Desde una sola corona hasta una transformación completa de 20-28 coronas de circonio, todo se completa en una estancia.",
     "recoveryTime": "<strong>2 a 3 días de adaptación.</strong> No requiere reposo quirúrgico. Cualquier leve sensibilidad desaparece en 48-72 horas, permitiéndole comer con total normalidad.",
     "priceEstimate": "<strong>Los precios de coronas de circonio comienzan desde £210 / €250 / $275 por diente.</strong> Los paquetes todo incluido (10, 20 o 24 coronas) incluyen diseño de sonrisa, hotel 4/5 estrellas y traslados VIP.",
     "packages": [
@@ -1399,7 +1399,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Corona Individual de Circonio",
         "brand": "Amman-Girrbach / Vita (1200+ MPa)",
         "duration": "3 – 5 Días (1 Viaje)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-1.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "1x Corona Monolítica Alemana de Circonio (1200+ MPa)",
           "Escaneo 3D Intraoral y Fresado de Alta Precisión CAD/CAM",
@@ -1418,14 +1418,14 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "10 Coronas de Circonio – Arcada Superior",
         "brand": "Circonio Multicapa Monolítico Alemán",
         "duration": "5 – 7 Días (1 Viaje)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-2.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "popular": true,
         "included": [
           "10x Coronas de Circonio de Alta Translucidez (Línea de la Sonrisa Superior)",
           "Diseño Digital de Sonrisa 3D (DSD) y Prueba de Mock-up",
           "Plastia gingival con láser para simetría estética (si es necesaria)",
           "Juego de dientes provisionales estéticos para la fase de laboratorio",
-          "6 Noches en Hotel de 4 Estrellas con Desayuno en Estambul",
+          "6 Noches en Hotel de 4 Estrellas con Desayuno en Antalya",
           "Traslados Privados en Mercedes VIP (Aeropuerto - Hotel - Clínica)",
           "Garantía de por Vida contra fracturas y astillamientos"
         ],
@@ -1439,13 +1439,13 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20 Coronas de Circonio – Makeover Completo",
         "brand": "Circonio 3D Pro Multicapa Monolítico",
         "duration": "6 – 7 Días (1 Viaje)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-3.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "20x Coronas de Circonio Premium (10 Arcada Superior + 10 Inferior)",
           "Tomografía 3D Completa y Simulación Facial de Sonrisa",
           "Equilibrio oclusal gnatológico y articulación funcional perfecta",
           "Dientes provisionales instalados el 1.er día para confort total",
-          "6 Noches en Hotel de 5 Estrellas de Lujo en Estambul",
+          "6 Noches en Hotel de 5 Estrellas de Lujo en Antalya",
           "Chófer Privado en Mercedes VIP para todas las citas",
           "Kit de cuidados postoperatorios y férula de descarga nocturna"
         ],
@@ -1459,7 +1459,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Corona Individual Suiza Ivoclar E-Max",
         "brand": "Ivoclar Vivadent IPS e.max Press (Suiza)",
         "duration": "4 – 6 Días (1 Viaje)",
-        "img": "https://sohodent.com/doc/data1/Porcelain-Crown-Package-1.jpg",
+        "img": "/treatments/accordion/Porcelain-Crown-Package-1.jpg",
         "included": [
           "1x Corona/Carilla 100% Disilicato de Litio Ivoclar Suizo",
           "70% de translucidez natural incomparable para dientes anteriores",
@@ -1478,7 +1478,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20 Unidades Ivoclar E-Max – Hollywood Smile",
         "brand": "Ivoclar IPS e.max CAD / Press Master",
         "duration": "6 – 7 Días (1 Viaje)",
-        "img": "https://sohodent.com/doc/data1/Porcelain-Crown-Package-2.jpg",
+        "img": "/treatments/accordion/Porcelain-Crown-Package-2.jpg",
         "included": [
           "20x Carillas/Coronas Cerámicas Suizas Ivoclar IPS e.max",
           "Diseño 3D de Estética Facial y Proporción Áurea de Sonrisa",
@@ -1498,7 +1498,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Puente Fijo de Circonio sobre Implantes (12–14 Dientes)",
         "brand": "Prettau / Katana Multicapa Circonio",
         "duration": "6 – 7 Días (Etapa Final)",
-        "img": "https://sohodent.com/doc/data1/Porcelain-Crown-Package-3.jpg",
+        "img": "/treatments/accordion/Porcelain-Crown-Package-3.jpg",
         "included": [
           "Puente Monolítico Atornillado de Circonio en una Sola Pieza (12–14 dientes)",
           "Conexión multi-unit de titanio de alta precisión CAD/CAM",
@@ -1525,13 +1525,13 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
       {
         "q": "¿Nos ayudan con el alojamiento y la reserva de hotel?",
         "a": [
-          "Sí. Todos nuestros paquetes de coronas (10, 20 o 24 dientes) incluyen estancia con desayuno en hoteles de 4 o 5 estrellas en zonas exclusivas y seguras de Estambul."
+          "Sí. Todos nuestros paquetes de coronas (10, 20 o 24 dientes) incluyen estancia con desayuno en hoteles de 4 o 5 estrellas en zonas exclusivas y seguras de Antalya."
         ]
       },
       {
         "q": "¿Es seguro viajar a Turquía para tratamientos dentales?",
         "a": [
-          "Sí, totalmente. Estambul es uno de los mayores centros mundiales de turismo dental, recibiendo a más de 500.000 pacientes internacionales al año con rigurosos estándares hospitalarios y materiales con sello CE/FDA."
+          "Sí, totalmente. Antalya es uno de los mayores centros mundiales de turismo dental, recibiendo a más de 500.000 pacientes internacionales al año con rigurosos estándares hospitalarios y materiales con sello CE/FDA."
         ]
       },
       {
@@ -1646,16 +1646,16 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
   },
   "ru": {
     "packagesTitle": "Пакеты Циркониевых и Керамических Коронок",
-    "packagesSubtitle": "Комплексные пакеты «все включено» на немецкий диоксид циркония Amman-Girrbach и швейцарский Ivoclar E-Max с отелем 4/5★ и VIP-трансфером в Стамбуле.",
+    "packagesSubtitle": "Комплексные пакеты «все включено» на немецкий диоксид циркония Amman-Girrbach и швейцарский Ivoclar E-Max с отелем 4/5★ и VIP-трансфером в Анталье.",
     "mostPopularBadge": "Самый Популярный Выбор",
     "durationLabel": "Срок Лечения:",
     "includedLabel": "В Стоимость Входит:",
     "priceLabel": "Цена «Все Включено»:",
     "getQuoteBtn": "Получить Бесплатный Расчет",
     "faqTitle": "Часто Задаваемые Вопросы о Циркониевых Коронках",
-    "faqSubtitle": "Ответы на 21 главный вопрос о коронках из диоксида циркония, дизайне улыбки, сроках лечения в Стамбуле и международных гарантиях.",
-    "stayDuration": "<strong>6–7 дней в Стамбуле.</strong> За одну поездку выполняется подготовка зубов, 3D-сканирование CAD/CAM, изготовление монолитных циркониевых коронок в лаборатории и постоянная фиксация.",
-    "visitCount": "<strong>Требуется всего 1 визит.</strong> Вам достаточно приехать в Стамбул один раз. Как одиночные коронки, так и полная реконструкция улыбки (20–28 коронок) выполняются за одну поездку.",
+    "faqSubtitle": "Ответы на 21 главный вопрос о коронках из диоксида циркония, дизайне улыбки, сроках лечения в Анталье и международных гарантиях.",
+    "stayDuration": "<strong>6–7 дней в Анталье.</strong> За одну поездку выполняется подготовка зубов, 3D-сканирование CAD/CAM, изготовление монолитных циркониевых коронок в лаборатории и постоянная фиксация.",
+    "visitCount": "<strong>Требуется всего 1 визит.</strong> Вам достаточно приехать в Анталью один раз. Как одиночные коронки, так и полная реконструкция улыбки (20–28 коронок) выполняются за одну поездку.",
     "recoveryTime": "<strong>2–3 дня на адаптацию.</strong> Процедура не требует хирургического восстановления. Легкая чувствительность проходит за 48–72 часа, после чего вы сразу возвращаетесь к привычному питанию.",
     "priceEstimate": "<strong>Цены на циркониевые коронки начинаются от £210 / €250 / $275 за единицу.</strong> Комплексные пакеты (10, 20 или 24 коронки) включают цифровой дизайн улыбки, отель 4/5★ и VIP-трансфер.",
     "packages": [
@@ -1663,7 +1663,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Одиночная Циркониевая Коронка",
         "brand": "Amman-Girrbach / Vita (1200+ МПа)",
         "duration": "3 – 5 Дней (1 Визит)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-1.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "1x Немецкая Монолитная Циркониевая Коронка (1200+ МПа)",
           "3D Цифровое Сканирование и Прецизионное Фрезерование CAD/CAM",
@@ -1682,14 +1682,14 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "10 Коронок из Циркония – Верхняя Челюсть",
         "brand": "Немецкий Многослойный Диоксид Циркония",
         "duration": "5 – 7 Дней (1 Визит)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-2.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "popular": true,
         "included": [
           "10x Коронок из Высокопрозрачного Циркония (Зона Улыбки)",
           "Цифровой 3D Дизайн Улыбки (DSD) и Примерка Модели Mock-up",
           "Лазерная коррекция десневого контура для идеальной симметрии",
           "Комплект эстетических временных коронок на период изготовления",
-          "6 Ночей в Отеле 4 Звезды с Завтраками в Стамбуле",
+          "6 Ночей в Отеле 4 Звезды с Завтраками в Анталье",
           "Трансферы на VIP Mercedes (Аэропорт - Отель - Клиника)",
           "Пожизненная Гарантия на целостность структуры циркония"
         ],
@@ -1703,13 +1703,13 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20 Коронок из Циркония – Полная Реконструкция",
         "brand": "Монолитный Диоксид Циркония 3D Pro Multilayer",
         "duration": "6 – 7 Дней (1 Визит)",
-        "img": "https://sohodent.com/doc/data1/Zirconium-Crown-Package-3.jpg",
+        "img": "/packages/pkg-zirconia.webp",
         "included": [
           "20x Коронок из Премиального Циркония (10 Верхняя + 10 Нижняя Челюсть)",
           "Полная 3D Компьютерная Томография и Моделирование Улыбки",
           "Гнатологическая балансировка прикуса и височно-нижнечелюстного сустава",
           "Временные коронки, установленные в 1-й день визита",
-          "6 Ночей в 5-Звездочном Люкс-Отеле в Стамбуле",
+          "6 Ночей в 5-Звездочном Люкс-Отеле в Анталье",
           "Личный Водитель на VIP Mercedes на все приемы",
           "Индивидуальная ночная капа и набор для ухода"
         ],
@@ -1723,7 +1723,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Одиночная Швейцарская Коронка Ivoclar E-Max",
         "brand": "Ivoclar Vivadent IPS e.max Press (Швейцария)",
         "duration": "4 – 6 Дней (1 Визит)",
-        "img": "https://sohodent.com/doc/data1/Porcelain-Crown-Package-1.jpg",
+        "img": "/treatments/accordion/Porcelain-Crown-Package-1.jpg",
         "included": [
           "1x Коронка/Винир из 100% Швейцарского Дисиликата Лития",
           "Непревзойденная 70% светопроницаемость для передних зубов",
@@ -1742,7 +1742,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20 Коронок Ivoclar E-Max – Голливудская Улыбка",
         "brand": "Ivoclar IPS e.max CAD / Press Master",
         "duration": "6 – 7 Дней (1 Визит)",
-        "img": "https://sohodent.com/doc/data1/Porcelain-Crown-Package-2.jpg",
+        "img": "/treatments/accordion/Porcelain-Crown-Package-2.jpg",
         "included": [
           "20x Швейцарских Керамических Коронок/Виниров Ivoclar IPS e.max",
           "3D Дизайн Эстетики Лица и Золотого Сечения Улыбки",
@@ -1762,7 +1762,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Циркониевый Мост на Имплантах (12–14 Единиц)",
         "brand": "Prettau / Katana Multilayer Zirconia",
         "duration": "6 – 7 Дней (Финальный Этап)",
-        "img": "https://sohodent.com/doc/data1/Porcelain-Crown-Package-3.jpg",
+        "img": "/treatments/accordion/Porcelain-Crown-Package-3.jpg",
         "included": [
           "Цельный винтовой монолитный циркониевый мост (12–14 зубов)",
           "Прецизионное титановое соединение CAD/CAM multi-unit",
@@ -1789,13 +1789,13 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
       {
         "q": "Помогаете ли вы с бронированием отеля и проживанием?",
         "a": [
-          "Да. Все комплексные пакеты коронок (10, 20 или 24 зуба) включают проживание с завтраками в отелях 4★ или 5★ в престижных районах Стамбула рядом с клиникой."
+          "Да. Все комплексные пакеты коронок (10, 20 или 24 зуба) включают проживание с завтраками в отелях 4★ или 5★ в престижных районах Антальи рядом с клиникой."
         ]
       },
       {
         "q": "Безопасно ли приезжать в Турцию на стоматологическое лечение?",
         "a": [
-          "Да, абсолютно. Стамбул — мировой лидер медицинского туризма, принимающий более 500 000 иностранных пациентов ежегодно с соблюдением европейских протоколов стерилизации и сертификацией CE/FDA."
+          "Да, абсолютно. Анталья — мировой лидер медицинского туризма, принимающий более 500 000 иностранных пациентов ежегодно с соблюдением европейских протоколов стерилизации и сертификацией CE/FDA."
         ]
       },
       {

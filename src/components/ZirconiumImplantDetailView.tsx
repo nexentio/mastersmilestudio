@@ -156,7 +156,7 @@ interface DetailDictionary {
 const DICTIONARIES: Record<string, DetailDictionary> = {
   "en": {
     "introBadge": "100% METAL-FREE CERAMIC IMPLANTOLOGY",
-    "introTitle": "Zirconium Ceramic Dental Implants in Istanbul: Holistic, Biocompatible & Natural Aesthetics",
+    "introTitle": "Zirconium Ceramic Dental Implants in Antalya: Holistic, Biocompatible & Natural Aesthetics",
     "introLead": "Crafted from 100% metal-free Y-TZP (Yttria-Stabilized Tetragonal Zirconia Polycrystal) biocompatible ceramic, zirconium implants provide pure ivory tooth-root aesthetics without dark gum shadows, metal ion release, or oral galvanism.",
     "introP1": "Zirconium (ceramic) dental implants represent the pinnacle of biological and aesthetic dentistry. Unlike traditional titanium fixtures, ceramic implants are naturally white and match the organic optical properties of natural tooth roots. This makes them the ultimate choice for patients with thin, translucent gum biotypes in the anterior smile zone where dark titanium metal edges might otherwise shine through.",
     "introP2": "Beyond unmatched aesthetic translucency, zirconium ceramic is completely inert, electrically non-conductive, and hypoallergenic. Clinical studies prove that zirconia implants exhibit significantly lower bacterial plaque adhesion and soft-tissue inflammation rates compared to titanium—creating a tight mucosal seal that shields against peri-implantitis and bone loss.",
@@ -166,7 +166,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "introP3LinkAll6": "All-on-6 Dental Implants",
     "introP3And": ", or ",
     "introP3LinkImmediate": "Same-Day Immediate Implants",
-    "introP3Tail": " in Istanbul.",
+    "introP3Tail": " in Antalya.",
     "candidacyTitle": "Are You a Candidate for Zirconium Ceramic Implants?",
     "candidacySubtitle": "Ceramic implants are designed for patients seeking premium aesthetics, biological purity, and metal-free biocompatibility.",
     "candidacyPoints": [
@@ -572,7 +572,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         ]
       }
     ],
-    "costTitle": "International Cost Comparison: Zirconium Ceramic Implants (UK / Germany vs Istanbul)",
+    "costTitle": "International Cost Comparison: Zirconium Ceramic Implants (UK / Germany vs Antalya)",
     "costSubtitle": "Compare real clinical costs per ceramic implant unit including abutment, 3D CBCT, laboratory CAD/CAM crown, and VIP concierge services.",
     "costTableHeaders": {
       "country": "Location & Clinic Tier",
@@ -594,14 +594,14 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "valueAdvantage": "Baseline German Market Cost"
       },
       {
-        "country": "Master Smile Studio (Istanbul, Turkey) ⭐",
+        "country": "Master Smile Studio (Antalya, Turkey) ⭐",
         "costPerUnit": "€650 – €950 (£550 – £820)",
         "inclusions": "100% All-Inclusive: Genuine Straumann PURE / Nobel Pearl fixture, solid ceramic abutment, German Zirconia / E-Max crown, 3D CBCT & VIP transfers.",
         "valueAdvantage": "60% – 70% Net Savings (Certified Swiss/German Purity)"
       }
     ],
     "faqTitle": "Frequently Asked Questions: Zirconium (Ceramic) Implants",
-    "faqSubtitle": "Clinically verified answers regarding biocompatibility, metal-free purity, strength, and health tourism in Istanbul.",
+    "faqSubtitle": "Clinically verified answers regarding biocompatibility, metal-free purity, strength, and health tourism in Antalya.",
     "faqGroup1Title": "Clinical & Biocompatibility FAQ (100% Metal-Free Implants)",
     "faqGroup2Title": "Health Tourism, VIP Inclusions & Warranty FAQ",
     "faqsPart1": [
@@ -648,8 +648,8 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     ],
     "faqsPart2": [
       {
-        "q": "How many days do I need to stay in Istanbul for ceramic implant treatment?",
-        "a": "Your first visit requires 3 to 5 days in Istanbul for 3D CBCT diagnostic planning, implant placement, and fitting of an aesthetic temporary crown. After 2 to 3 months of osseointegration, you return for a 5-day visit to receive your permanent zirconia crown."
+        "q": "How many days do I need to stay in Antalya for ceramic implant treatment?",
+        "a": "Your first visit requires 3 to 5 days in Antalya for 3D CBCT diagnostic planning, implant placement, and fitting of an aesthetic temporary crown. After 2 to 3 months of osseointegration, you return for a 5-day visit to receive your permanent zirconia crown."
       },
       {
         "q": "What is included in the Master Smile Studio Ceramic Package?",
@@ -660,8 +660,8 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "a": "We exclusively work with world-leading certified ceramic implant manufacturers including Straumann PURE Ceramic (Switzerland), Nobel Pearl (Nobel Biocare), and Z-Systems (Germany/Switzerland)."
       },
       {
-        "q": "Why are Ceramic Implants 60%–70% more affordable in Istanbul than in the UK or Germany?",
-        "a": "Lower operational overheads, favorable currency exchange rates, and high clinical volume in Istanbul allow us to provide genuine Swiss and German ceramic systems at transparent, accessible rates without compromising clinical quality."
+        "q": "Why are Ceramic Implants 60%–70% more affordable in Antalya than in the UK or Germany?",
+        "a": "Lower operational overheads, favorable currency exchange rates, and high clinical volume in Antalya allow us to provide genuine Swiss and German ceramic systems at transparent, accessible rates without compromising clinical quality."
       },
       {
         "q": "Do Ceramic implants come with a warranty and medical passport?",
@@ -679,7 +679,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
   },
   "tr": {
     "introBadge": "%100 METAL-FREE BİYOLOJİK İMPLANTOLOJİ",
-    "introTitle": "İstanbul Zirkonyum (Seramik) Diş İmplantı: Bütünsel, Doku Dostu ve Doğal Estetik",
+    "introTitle": "Antalya Zirkonyum (Seramik) Diş İmplantı: Bütünsel, Doku Dostu ve Doğal Estetik",
     "introLead": "%100 metalsiz Y-TZP (İtriyum ile Güçlendirilmiş Zirkonyum Seramiği) biyouyumlu yapıdan üretilen zirkonyum implantlar, diş etinde gri yansıma yapmayan, metal iyonu salmayan ve ağızda galvanik akım oluşturmayan saf fildişi rengi diş kökü estetiği sunar.",
     "introP1": "Zirkonyum (seramik) diş implantları, estetik ve biyolojik diş hekimliğinin ulaştığı en üst noktadır. Geleneksel gri titanyum implantların aksine, doğal diş kökünün optik ve biyolojik özelliklerini birebir taklit eder. İnce diş eti yapısına sahip hastalarda ve özellikle ön estetik gülüş bölgesinde grileşme riskini tamamen ortadan kaldırır.",
     "introP2": "Kusursuz estetik ışık geçirgenliğinin yanı sıra, zirkonyum seramiği tamamen nötr, elektrik iletmeyen ve hipoalerjenik bir malzemedir. Klinik çalışmalar, zirkonyum implantların titanyuma kıyasla çok daha düşük bakteri plağı tuttuğunu, diş etiyle mükemmel bir biyolojik mühür oluşturarak peri-implantitis (implant çevresi kemik erimesi) riskini minimuma indirdiğini kanıtlamıştır.",
@@ -970,7 +970,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       {
         "name": "Straumann PURE Seramik Paketi",
         "brand": "Straumann Group (İsviçre Menşeli %100 Zirkonyum)",
-        "duration": "İstanbul’da 3+5 Gün (Toplam 2 Ziyaret)",
+        "duration": "Antalya’da 3+5 Gün (Toplam 2 Ziyaret)",
         "img": "/packages/straumann.webp",
         "popular": true,
         "price": {
@@ -992,7 +992,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       {
         "name": "Nobel Pearl Seramik Paketi",
         "brand": "Nobel Biocare (İki Parçalı İsviçre Çözümü)",
-        "duration": "İstanbul’da 3+5 Gün (Toplam 2 Ziyaret)",
+        "duration": "Antalya’da 3+5 Gün (Toplam 2 Ziyaret)",
         "img": "/packages/dxl.webp",
         "price": {
           "EUR": "€950",
@@ -1013,7 +1013,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       {
         "name": "Z-Systems Z-Look Seramik Paketi",
         "brand": "Z-Systems International (Alman/İsviçre Seramik Öncüsü)",
-        "duration": "İstanbul’da 3+5 Gün (Toplam 2 Ziyaret)",
+        "duration": "Antalya’da 3+5 Gün (Toplam 2 Ziyaret)",
         "img": "/packages/nucleoss.webp",
         "price": {
           "EUR": "€890",
@@ -1034,7 +1034,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       {
         "name": "Ön Bölge Yüksek Estetik Tek Diş Paketi",
         "brand": "Straumann PURE / Nobel Pearl (Ön Diş Yıldızı)",
-        "duration": "İstanbul’da 3+5 Gün (Toplam 2 Ziyaret)",
+        "duration": "Antalya’da 3+5 Gün (Toplam 2 Ziyaret)",
         "img": "/packages/neodent.webp",
         "price": {
           "EUR": "€1,100",
@@ -1055,7 +1055,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       {
         "name": "Tam Çene Seramik İmplant Paketi (6 İmplant)",
         "brand": "Straumann PURE / Z-Systems %100 Metalsiz Çene",
-        "duration": "İstanbul’da 5+7 Gün (Toplam 2 Ziyaret)",
+        "duration": "Antalya’da 5+7 Gün (Toplam 2 Ziyaret)",
         "img": "/packages/straumann.webp",
         "price": {
           "EUR": "€7,500",
@@ -1076,7 +1076,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       {
         "name": "Bütünsel Çift Çene %100 Metalsiz Paket",
         "brand": "Üst ve Alt Çene Tamamı Seramik 12 İmplant Tedavisi",
-        "duration": "İstanbul’da 5+7 Gün (Toplam 2 Ziyaret)",
+        "duration": "Antalya’da 5+7 Gün (Toplam 2 Ziyaret)",
         "img": "/packages/megagen.webp",
         "price": {
           "EUR": "€14,500",
@@ -1095,7 +1095,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         ]
       }
     ],
-    "costTitle": "Uluslararası Maliyet Karşılaştırması: Zirkonyum Seramik İmplant (İngiltere / Almanya vs İstanbul)",
+    "costTitle": "Uluslararası Maliyet Karşılaştırması: Zirkonyum Seramik İmplant (İngiltere / Almanya vs Antalya)",
     "costSubtitle": "Abutment, 3D Tomografi, CAD/CAM zirkonyum kuron ve VIP transfer dahil tek diş seramik implantın reel maliyet analizi.",
     "costTableHeaders": {
       "country": "Ülke ve Klinik Seviyesi",
@@ -1117,14 +1117,14 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "valueAdvantage": "Almanya Piyasa Tabanı"
       },
       {
-        "country": "Master Smile Studio (İstanbul, Türkiye) ⭐",
+        "country": "Master Smile Studio (Antalya, Türkiye) ⭐",
         "costPerUnit": "€650 – €950 (£550 – £820)",
         "inclusions": "%100 Her Şey Dahil: Orijinal Straumann PURE / Nobel Pearl gövde, masif seramik abutment, Alman Zirkonyum/E-Max kuron, 3D Tomografi ve VIP transferler.",
         "valueAdvantage": "%60 – %70 Net Tasarruf (Orijinal İsviçre/Alman Saflığı)"
       }
     ],
     "faqTitle": "Sıkça Sorulan Sorular: Zirkonyum (Seramik) İmplantlar",
-    "faqSubtitle": "Biyouyumluluk, metalsiz saflık, dayanıklılık ve İstanbul sağlık turizmi hakkında hekim onaylı yanıtlar.",
+    "faqSubtitle": "Biyouyumluluk, metalsiz saflık, dayanıklılık ve Antalya sağlık turizmi hakkında hekim onaylı yanıtlar.",
     "faqGroup1Title": "Klinik ve Biyouyumluluk SSS (%100 Metalsiz İmplantlar)",
     "faqGroup2Title": "Sağlık Turizmi, VIP Hizmetler ve Garanti SSS",
     "faqsPart1": [
@@ -1171,7 +1171,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     ],
     "faqsPart2": [
       {
-        "q": "Zirkonyum implant tedavisi için İstanbulda kaç gün kalmalıyım?",
+        "q": "Zirkonyum implant tedavisi için Antalyada kaç gün kalmalıyım?",
         "a": "İlk ziyaretinizde 3D teşhis, implant yerleşimi ve geçici estetik diş takılması için 3-5 gün kalmanız yeterlidir. 2-3 aylık kemik kaynamasından sonra kalıcı zirkonyum dişiniz için 5 günlük ikinci bir ziyaret gereklidir."
       },
       {
@@ -1184,7 +1184,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       },
       {
         "q": "Türkiye’de seramik implant fiyatları neden İngiltere ve Almanyaya göre %65 daha uygundur?",
-        "a": "İstanbuldaki klinik işletme ve laboratuvar avantajları sayesinde aynı orijinal İsviçre ve Alman seramik sistemlerini Avrupa fiyatlarının üçte birine sunabiliyoruz."
+        "a": "Antalyadaki klinik işletme ve laboratuvar avantajları sayesinde aynı orijinal İsviçre ve Alman seramik sistemlerini Avrupa fiyatlarının üçte birine sunabiliyoruz."
       },
       {
         "q": "Garanti koşulları ve medikal pasaport veriliyor mu?",
@@ -1202,7 +1202,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
   },
   "de": {
     "introBadge": "100% METALLFREIE KERAMIKIMPLANTATE",
-    "introTitle": "Zirkonium-Keramikimplantate in Istanbul: Ganzheitlich & Natürlich",
+    "introTitle": "Zirkonium-Keramikimplantate in Antalya: Ganzheitlich & Natürlich",
     "introLead": "100% metallfreie Y-TZP Keramikimplantate für pure Zahnfarbenästhetik ohne graue Zahnfleischränder oder Metallallergien.",
     "introP1": "Zirconium (ceramic) dental implants represent the pinnacle of biological and aesthetic dentistry. Unlike traditional titanium fixtures, ceramic implants are naturally white and match the organic optical properties of natural tooth roots. This makes them the ultimate choice for patients with thin, translucent gum biotypes in the anterior smile zone where dark titanium metal edges might otherwise shine through.",
     "introP2": "Beyond unmatched aesthetic translucency, zirconium ceramic is completely inert, electrically non-conductive, and hypoallergenic. Clinical studies prove that zirconia implants exhibit significantly lower bacterial plaque adhesion and soft-tissue inflammation rates compared to titanium—creating a tight mucosal seal that shields against peri-implantitis and bone loss.",
@@ -1212,7 +1212,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "introP3LinkAll6": "All-on-6 Dental Implants",
     "introP3And": ", or ",
     "introP3LinkImmediate": "Same-Day Immediate Implants",
-    "introP3Tail": " in Istanbul.",
+    "introP3Tail": " in Antalya.",
     "candidacyTitle": "Are You a Candidate for Zirconium Ceramic Implants?",
     "candidacySubtitle": "Ceramic implants are designed for patients seeking premium aesthetics, biological purity, and metal-free biocompatibility.",
     "candidacyPoints": [
@@ -1618,7 +1618,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         ]
       }
     ],
-    "costTitle": "Internationaler Kostenvergleich: Keramikimplantate (UK / Deutschland vs. Istanbul)",
+    "costTitle": "Internationaler Kostenvergleich: Keramikimplantate (UK / Deutschland vs. Antalya)",
     "costSubtitle": "Compare real clinical costs per ceramic implant unit including abutment, 3D CBCT, laboratory CAD/CAM crown, and VIP concierge services.",
     "costTableHeaders": {
       "country": "Location & Clinic Tier",
@@ -1640,14 +1640,14 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "valueAdvantage": "Baseline German Market Cost"
       },
       {
-        "country": "Master Smile Studio (Istanbul, Turkey) ⭐",
+        "country": "Master Smile Studio (Antalya, Turkey) ⭐",
         "costPerUnit": "€650 – €950 (£550 – £820)",
         "inclusions": "100% All-Inclusive: Genuine Straumann PURE / Nobel Pearl fixture, solid ceramic abutment, German Zirconia / E-Max crown, 3D CBCT & VIP transfers.",
         "valueAdvantage": "60% – 70% Net Savings (Certified Swiss/German Purity)"
       }
     ],
     "faqTitle": "Häufig gestellte Fragen: Keramikimplantate",
-    "faqSubtitle": "Clinically verified answers regarding biocompatibility, metal-free purity, strength, and health tourism in Istanbul.",
+    "faqSubtitle": "Clinically verified answers regarding biocompatibility, metal-free purity, strength, and health tourism in Antalya.",
     "faqGroup1Title": "Clinical & Biocompatibility FAQ (100% Metal-Free Implants)",
     "faqGroup2Title": "Health Tourism, VIP Inclusions & Warranty FAQ",
     "faqsPart1": [
@@ -1694,8 +1694,8 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     ],
     "faqsPart2": [
       {
-        "q": "How many days do I need to stay in Istanbul for ceramic implant treatment?",
-        "a": "Your first visit requires 3 to 5 days in Istanbul for 3D CBCT diagnostic planning, implant placement, and fitting of an aesthetic temporary crown. After 2 to 3 months of osseointegration, you return for a 5-day visit to receive your permanent zirconia crown."
+        "q": "How many days do I need to stay in Antalya for ceramic implant treatment?",
+        "a": "Your first visit requires 3 to 5 days in Antalya for 3D CBCT diagnostic planning, implant placement, and fitting of an aesthetic temporary crown. After 2 to 3 months of osseointegration, you return for a 5-day visit to receive your permanent zirconia crown."
       },
       {
         "q": "What is included in the Master Smile Studio Ceramic Package?",
@@ -1706,8 +1706,8 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "a": "We exclusively work with world-leading certified ceramic implant manufacturers including Straumann PURE Ceramic (Switzerland), Nobel Pearl (Nobel Biocare), and Z-Systems (Germany/Switzerland)."
       },
       {
-        "q": "Why are Ceramic Implants 60%–70% more affordable in Istanbul than in the UK or Germany?",
-        "a": "Lower operational overheads, favorable currency exchange rates, and high clinical volume in Istanbul allow us to provide genuine Swiss and German ceramic systems at transparent, accessible rates without compromising clinical quality."
+        "q": "Why are Ceramic Implants 60%–70% more affordable in Antalya than in the UK or Germany?",
+        "a": "Lower operational overheads, favorable currency exchange rates, and high clinical volume in Antalya allow us to provide genuine Swiss and German ceramic systems at transparent, accessible rates without compromising clinical quality."
       },
       {
         "q": "Do Ceramic implants come with a warranty and medical passport?",
@@ -1725,7 +1725,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
   },
   "pl": {
     "introBadge": "100% BEZMETALOWE IMPLANTY CYRKONOWE",
-    "introTitle": "Implanty Cyrkonowe (Ceramiczne) w Stambule: Biokompatybilna Estetyka",
+    "introTitle": "Implanty Cyrkonowe (Ceramiczne) w Antalyi: Biokompatybilna Estetyka",
     "introLead": "W 100% bezmetalowe ceramiczne implanty Y-TZP zapewniają naturalną estetykę dziąseł bez szarych cieni i ryzyka alergii.",
     "introP1": "Zirconium (ceramic) dental implants represent the pinnacle of biological and aesthetic dentistry. Unlike traditional titanium fixtures, ceramic implants are naturally white and match the organic optical properties of natural tooth roots. This makes them the ultimate choice for patients with thin, translucent gum biotypes in the anterior smile zone where dark titanium metal edges might otherwise shine through.",
     "introP2": "Beyond unmatched aesthetic translucency, zirconium ceramic is completely inert, electrically non-conductive, and hypoallergenic. Clinical studies prove that zirconia implants exhibit significantly lower bacterial plaque adhesion and soft-tissue inflammation rates compared to titanium—creating a tight mucosal seal that shields against peri-implantitis and bone loss.",
@@ -1735,7 +1735,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "introP3LinkAll6": "All-on-6 Dental Implants",
     "introP3And": ", or ",
     "introP3LinkImmediate": "Same-Day Immediate Implants",
-    "introP3Tail": " in Istanbul.",
+    "introP3Tail": " in Antalya.",
     "candidacyTitle": "Are You a Candidate for Zirconium Ceramic Implants?",
     "candidacySubtitle": "Ceramic implants are designed for patients seeking premium aesthetics, biological purity, and metal-free biocompatibility.",
     "candidacyPoints": [
@@ -2141,7 +2141,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         ]
       }
     ],
-    "costTitle": "Międzynarodowe Porównanie Kosztów: Implanty Ceramiczne (UK / Niemcy vs Stambuł)",
+    "costTitle": "Międzynarodowe Porównanie Kosztów: Implanty Ceramiczne (UK / Niemcy vs Antalya)",
     "costSubtitle": "Compare real clinical costs per ceramic implant unit including abutment, 3D CBCT, laboratory CAD/CAM crown, and VIP concierge services.",
     "costTableHeaders": {
       "country": "Location & Clinic Tier",
@@ -2163,14 +2163,14 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "valueAdvantage": "Baseline German Market Cost"
       },
       {
-        "country": "Master Smile Studio (Istanbul, Turkey) ⭐",
+        "country": "Master Smile Studio (Antalya, Turkey) ⭐",
         "costPerUnit": "€650 – €950 (£550 – £820)",
         "inclusions": "100% All-Inclusive: Genuine Straumann PURE / Nobel Pearl fixture, solid ceramic abutment, German Zirconia / E-Max crown, 3D CBCT & VIP transfers.",
         "valueAdvantage": "60% – 70% Net Savings (Certified Swiss/German Purity)"
       }
     ],
     "faqTitle": "Często Zadawane Pytania: Implanty Ceramiczne",
-    "faqSubtitle": "Clinically verified answers regarding biocompatibility, metal-free purity, strength, and health tourism in Istanbul.",
+    "faqSubtitle": "Clinically verified answers regarding biocompatibility, metal-free purity, strength, and health tourism in Antalya.",
     "faqGroup1Title": "Clinical & Biocompatibility FAQ (100% Metal-Free Implants)",
     "faqGroup2Title": "Health Tourism, VIP Inclusions & Warranty FAQ",
     "faqsPart1": [
@@ -2217,8 +2217,8 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     ],
     "faqsPart2": [
       {
-        "q": "How many days do I need to stay in Istanbul for ceramic implant treatment?",
-        "a": "Your first visit requires 3 to 5 days in Istanbul for 3D CBCT diagnostic planning, implant placement, and fitting of an aesthetic temporary crown. After 2 to 3 months of osseointegration, you return for a 5-day visit to receive your permanent zirconia crown."
+        "q": "How many days do I need to stay in Antalya for ceramic implant treatment?",
+        "a": "Your first visit requires 3 to 5 days in Antalya for 3D CBCT diagnostic planning, implant placement, and fitting of an aesthetic temporary crown. After 2 to 3 months of osseointegration, you return for a 5-day visit to receive your permanent zirconia crown."
       },
       {
         "q": "What is included in the Master Smile Studio Ceramic Package?",
@@ -2229,8 +2229,8 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "a": "We exclusively work with world-leading certified ceramic implant manufacturers including Straumann PURE Ceramic (Switzerland), Nobel Pearl (Nobel Biocare), and Z-Systems (Germany/Switzerland)."
       },
       {
-        "q": "Why are Ceramic Implants 60%–70% more affordable in Istanbul than in the UK or Germany?",
-        "a": "Lower operational overheads, favorable currency exchange rates, and high clinical volume in Istanbul allow us to provide genuine Swiss and German ceramic systems at transparent, accessible rates without compromising clinical quality."
+        "q": "Why are Ceramic Implants 60%–70% more affordable in Antalya than in the UK or Germany?",
+        "a": "Lower operational overheads, favorable currency exchange rates, and high clinical volume in Antalya allow us to provide genuine Swiss and German ceramic systems at transparent, accessible rates without compromising clinical quality."
       },
       {
         "q": "Do Ceramic implants come with a warranty and medical passport?",
@@ -2248,7 +2248,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
   },
   "pt": {
     "introBadge": "IMPLANTES CERÂMICOS 100% SEM METAL",
-    "introTitle": "Implantes de Zircônia Cerâmica em Istambul: Estética Holística e Natural",
+    "introTitle": "Implantes de Zircônia Cerâmica em Antalya: Estética Holística e Natural",
     "introLead": "Implantes cerâmicos Y-TZP 100% livres de metal para uma estética gengival perfeita sem sombras escuras ou alergias.",
     "introP1": "Zirconium (ceramic) dental implants represent the pinnacle of biological and aesthetic dentistry. Unlike traditional titanium fixtures, ceramic implants are naturally white and match the organic optical properties of natural tooth roots. This makes them the ultimate choice for patients with thin, translucent gum biotypes in the anterior smile zone where dark titanium metal edges might otherwise shine through.",
     "introP2": "Beyond unmatched aesthetic translucency, zirconium ceramic is completely inert, electrically non-conductive, and hypoallergenic. Clinical studies prove that zirconia implants exhibit significantly lower bacterial plaque adhesion and soft-tissue inflammation rates compared to titanium—creating a tight mucosal seal that shields against peri-implantitis and bone loss.",
@@ -2258,7 +2258,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "introP3LinkAll6": "All-on-6 Dental Implants",
     "introP3And": ", or ",
     "introP3LinkImmediate": "Same-Day Immediate Implants",
-    "introP3Tail": " in Istanbul.",
+    "introP3Tail": " in Antalya.",
     "candidacyTitle": "Are You a Candidate for Zirconium Ceramic Implants?",
     "candidacySubtitle": "Ceramic implants are designed for patients seeking premium aesthetics, biological purity, and metal-free biocompatibility.",
     "candidacyPoints": [
@@ -2664,7 +2664,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         ]
       }
     ],
-    "costTitle": "Comparativo Internacional de Custos: Implantes Cerâmicos (Reino Unido / Alemanha vs Istambul)",
+    "costTitle": "Comparativo Internacional de Custos: Implantes Cerâmicos (Reino Unido / Alemanha vs Antalya)",
     "costSubtitle": "Compare real clinical costs per ceramic implant unit including abutment, 3D CBCT, laboratory CAD/CAM crown, and VIP concierge services.",
     "costTableHeaders": {
       "country": "Location & Clinic Tier",
@@ -2686,14 +2686,14 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "valueAdvantage": "Baseline German Market Cost"
       },
       {
-        "country": "Master Smile Studio (Istanbul, Turkey) ⭐",
+        "country": "Master Smile Studio (Antalya, Turkey) ⭐",
         "costPerUnit": "€650 – €950 (£550 – £820)",
         "inclusions": "100% All-Inclusive: Genuine Straumann PURE / Nobel Pearl fixture, solid ceramic abutment, German Zirconia / E-Max crown, 3D CBCT & VIP transfers.",
         "valueAdvantage": "60% – 70% Net Savings (Certified Swiss/German Purity)"
       }
     ],
     "faqTitle": "Perguntas Frequentes: Implantes Cerâmicos",
-    "faqSubtitle": "Clinically verified answers regarding biocompatibility, metal-free purity, strength, and health tourism in Istanbul.",
+    "faqSubtitle": "Clinically verified answers regarding biocompatibility, metal-free purity, strength, and health tourism in Antalya.",
     "faqGroup1Title": "Clinical & Biocompatibility FAQ (100% Metal-Free Implants)",
     "faqGroup2Title": "Health Tourism, VIP Inclusions & Warranty FAQ",
     "faqsPart1": [
@@ -2740,8 +2740,8 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     ],
     "faqsPart2": [
       {
-        "q": "How many days do I need to stay in Istanbul for ceramic implant treatment?",
-        "a": "Your first visit requires 3 to 5 days in Istanbul for 3D CBCT diagnostic planning, implant placement, and fitting of an aesthetic temporary crown. After 2 to 3 months of osseointegration, you return for a 5-day visit to receive your permanent zirconia crown."
+        "q": "How many days do I need to stay in Antalya for ceramic implant treatment?",
+        "a": "Your first visit requires 3 to 5 days in Antalya for 3D CBCT diagnostic planning, implant placement, and fitting of an aesthetic temporary crown. After 2 to 3 months of osseointegration, you return for a 5-day visit to receive your permanent zirconia crown."
       },
       {
         "q": "What is included in the Master Smile Studio Ceramic Package?",
@@ -2752,8 +2752,8 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "a": "We exclusively work with world-leading certified ceramic implant manufacturers including Straumann PURE Ceramic (Switzerland), Nobel Pearl (Nobel Biocare), and Z-Systems (Germany/Switzerland)."
       },
       {
-        "q": "Why are Ceramic Implants 60%–70% more affordable in Istanbul than in the UK or Germany?",
-        "a": "Lower operational overheads, favorable currency exchange rates, and high clinical volume in Istanbul allow us to provide genuine Swiss and German ceramic systems at transparent, accessible rates without compromising clinical quality."
+        "q": "Why are Ceramic Implants 60%–70% more affordable in Antalya than in the UK or Germany?",
+        "a": "Lower operational overheads, favorable currency exchange rates, and high clinical volume in Antalya allow us to provide genuine Swiss and German ceramic systems at transparent, accessible rates without compromising clinical quality."
       },
       {
         "q": "Do Ceramic implants come with a warranty and medical passport?",
@@ -2771,7 +2771,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
   },
   "es": {
     "introBadge": "IMPLANTES CERÁMICOS 100% SIN METAL",
-    "introTitle": "Implantes Dentales de Zirconio Cerámico en Estambul: Estética Holística",
+    "introTitle": "Implantes Dentales de Zirconio Cerámico en Antalya: Estética Holística",
     "introLead": "Implantes cerámicos Y-TZP 100% libres de metal para una estética gingival pura sin sombras oscuras ni alergias al titanio.",
     "introP1": "Zirconium (ceramic) dental implants represent the pinnacle of biological and aesthetic dentistry. Unlike traditional titanium fixtures, ceramic implants are naturally white and match the organic optical properties of natural tooth roots. This makes them the ultimate choice for patients with thin, translucent gum biotypes in the anterior smile zone where dark titanium metal edges might otherwise shine through.",
     "introP2": "Beyond unmatched aesthetic translucency, zirconium ceramic is completely inert, electrically non-conductive, and hypoallergenic. Clinical studies prove that zirconia implants exhibit significantly lower bacterial plaque adhesion and soft-tissue inflammation rates compared to titanium—creating a tight mucosal seal that shields against peri-implantitis and bone loss.",
@@ -2781,7 +2781,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "introP3LinkAll6": "All-on-6 Dental Implants",
     "introP3And": ", or ",
     "introP3LinkImmediate": "Same-Day Immediate Implants",
-    "introP3Tail": " in Istanbul.",
+    "introP3Tail": " in Antalya.",
     "candidacyTitle": "Are You a Candidate for Zirconium Ceramic Implants?",
     "candidacySubtitle": "Ceramic implants are designed for patients seeking premium aesthetics, biological purity, and metal-free biocompatibility.",
     "candidacyPoints": [
@@ -3187,7 +3187,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         ]
       }
     ],
-    "costTitle": "Comparativa Internacional de Costes: Implantes Cerámicos (Reino Unido / Alemania vs Estambul)",
+    "costTitle": "Comparativa Internacional de Costes: Implantes Cerámicos (Reino Unido / Alemania vs Antalya)",
     "costSubtitle": "Compare real clinical costs per ceramic implant unit including abutment, 3D CBCT, laboratory CAD/CAM crown, and VIP concierge services.",
     "costTableHeaders": {
       "country": "Location & Clinic Tier",
@@ -3209,14 +3209,14 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "valueAdvantage": "Baseline German Market Cost"
       },
       {
-        "country": "Master Smile Studio (Istanbul, Turkey) ⭐",
+        "country": "Master Smile Studio (Antalya, Turkey) ⭐",
         "costPerUnit": "€650 – €950 (£550 – £820)",
         "inclusions": "100% All-Inclusive: Genuine Straumann PURE / Nobel Pearl fixture, solid ceramic abutment, German Zirconia / E-Max crown, 3D CBCT & VIP transfers.",
         "valueAdvantage": "60% – 70% Net Savings (Certified Swiss/German Purity)"
       }
     ],
     "faqTitle": "Preguntas Frecuentes: Implantes Cerámicos",
-    "faqSubtitle": "Clinically verified answers regarding biocompatibility, metal-free purity, strength, and health tourism in Istanbul.",
+    "faqSubtitle": "Clinically verified answers regarding biocompatibility, metal-free purity, strength, and health tourism in Antalya.",
     "faqGroup1Title": "Clinical & Biocompatibility FAQ (100% Metal-Free Implants)",
     "faqGroup2Title": "Health Tourism, VIP Inclusions & Warranty FAQ",
     "faqsPart1": [
@@ -3263,8 +3263,8 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     ],
     "faqsPart2": [
       {
-        "q": "How many days do I need to stay in Istanbul for ceramic implant treatment?",
-        "a": "Your first visit requires 3 to 5 days in Istanbul for 3D CBCT diagnostic planning, implant placement, and fitting of an aesthetic temporary crown. After 2 to 3 months of osseointegration, you return for a 5-day visit to receive your permanent zirconia crown."
+        "q": "How many days do I need to stay in Antalya for ceramic implant treatment?",
+        "a": "Your first visit requires 3 to 5 days in Antalya for 3D CBCT diagnostic planning, implant placement, and fitting of an aesthetic temporary crown. After 2 to 3 months of osseointegration, you return for a 5-day visit to receive your permanent zirconia crown."
       },
       {
         "q": "What is included in the Master Smile Studio Ceramic Package?",
@@ -3275,8 +3275,8 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "a": "We exclusively work with world-leading certified ceramic implant manufacturers including Straumann PURE Ceramic (Switzerland), Nobel Pearl (Nobel Biocare), and Z-Systems (Germany/Switzerland)."
       },
       {
-        "q": "Why are Ceramic Implants 60%–70% more affordable in Istanbul than in the UK or Germany?",
-        "a": "Lower operational overheads, favorable currency exchange rates, and high clinical volume in Istanbul allow us to provide genuine Swiss and German ceramic systems at transparent, accessible rates without compromising clinical quality."
+        "q": "Why are Ceramic Implants 60%–70% more affordable in Antalya than in the UK or Germany?",
+        "a": "Lower operational overheads, favorable currency exchange rates, and high clinical volume in Antalya allow us to provide genuine Swiss and German ceramic systems at transparent, accessible rates without compromising clinical quality."
       },
       {
         "q": "Do Ceramic implants come with a warranty and medical passport?",
@@ -3294,7 +3294,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
   },
   "ru": {
     "introBadge": "100% БЕЗМЕТАЛЛОВАЯ КЕРАМИЧЕСКАЯ ИМПЛАНТАЦИЯ",
-    "introTitle": "Циркониевые (керамические) импланты в Стамбуле: Биосовместимость и Эстетика",
+    "introTitle": "Циркониевые (керамические) импланты в Анталье: Биосовместимость и Эстетика",
     "introLead": "100% безметалловые керамические импланты Y-TZP обеспечивают безупречную белизну десен без серых теней и аллергии на металл.",
     "introP1": "Zirconium (ceramic) dental implants represent the pinnacle of biological and aesthetic dentistry. Unlike traditional titanium fixtures, ceramic implants are naturally white and match the organic optical properties of natural tooth roots. This makes them the ultimate choice for patients with thin, translucent gum biotypes in the anterior smile zone where dark titanium metal edges might otherwise shine through.",
     "introP2": "Beyond unmatched aesthetic translucency, zirconium ceramic is completely inert, electrically non-conductive, and hypoallergenic. Clinical studies prove that zirconia implants exhibit significantly lower bacterial plaque adhesion and soft-tissue inflammation rates compared to titanium—creating a tight mucosal seal that shields against peri-implantitis and bone loss.",
@@ -3304,7 +3304,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "introP3LinkAll6": "All-on-6 Dental Implants",
     "introP3And": ", or ",
     "introP3LinkImmediate": "Same-Day Immediate Implants",
-    "introP3Tail": " in Istanbul.",
+    "introP3Tail": " in Antalya.",
     "candidacyTitle": "Are You a Candidate for Zirconium Ceramic Implants?",
     "candidacySubtitle": "Ceramic implants are designed for patients seeking premium aesthetics, biological purity, and metal-free biocompatibility.",
     "candidacyPoints": [
@@ -3710,7 +3710,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         ]
       }
     ],
-    "costTitle": "Международное Сравнение Цен: Керамические Импланты (Великобритания / Германия vs Стамбул)",
+    "costTitle": "Международное Сравнение Цен: Керамические Импланты (Великобритания / Германия vs Анталья)",
     "costSubtitle": "Compare real clinical costs per ceramic implant unit including abutment, 3D CBCT, laboratory CAD/CAM crown, and VIP concierge services.",
     "costTableHeaders": {
       "country": "Location & Clinic Tier",
@@ -3732,14 +3732,14 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "valueAdvantage": "Baseline German Market Cost"
       },
       {
-        "country": "Master Smile Studio (Istanbul, Turkey) ⭐",
+        "country": "Master Smile Studio (Antalya, Turkey) ⭐",
         "costPerUnit": "€650 – €950 (£550 – £820)",
         "inclusions": "100% All-Inclusive: Genuine Straumann PURE / Nobel Pearl fixture, solid ceramic abutment, German Zirconia / E-Max crown, 3D CBCT & VIP transfers.",
         "valueAdvantage": "60% – 70% Net Savings (Certified Swiss/German Purity)"
       }
     ],
     "faqTitle": "Часто Задаваемые Вопросы: Керамические Импланты",
-    "faqSubtitle": "Clinically verified answers regarding biocompatibility, metal-free purity, strength, and health tourism in Istanbul.",
+    "faqSubtitle": "Clinically verified answers regarding biocompatibility, metal-free purity, strength, and health tourism in Antalya.",
     "faqGroup1Title": "Clinical & Biocompatibility FAQ (100% Metal-Free Implants)",
     "faqGroup2Title": "Health Tourism, VIP Inclusions & Warranty FAQ",
     "faqsPart1": [
@@ -3786,8 +3786,8 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     ],
     "faqsPart2": [
       {
-        "q": "How many days do I need to stay in Istanbul for ceramic implant treatment?",
-        "a": "Your first visit requires 3 to 5 days in Istanbul for 3D CBCT diagnostic planning, implant placement, and fitting of an aesthetic temporary crown. After 2 to 3 months of osseointegration, you return for a 5-day visit to receive your permanent zirconia crown."
+        "q": "How many days do I need to stay in Antalya for ceramic implant treatment?",
+        "a": "Your first visit requires 3 to 5 days in Antalya for 3D CBCT diagnostic planning, implant placement, and fitting of an aesthetic temporary crown. After 2 to 3 months of osseointegration, you return for a 5-day visit to receive your permanent zirconia crown."
       },
       {
         "q": "What is included in the Master Smile Studio Ceramic Package?",
@@ -3798,8 +3798,8 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "a": "We exclusively work with world-leading certified ceramic implant manufacturers including Straumann PURE Ceramic (Switzerland), Nobel Pearl (Nobel Biocare), and Z-Systems (Germany/Switzerland)."
       },
       {
-        "q": "Why are Ceramic Implants 60%–70% more affordable in Istanbul than in the UK or Germany?",
-        "a": "Lower operational overheads, favorable currency exchange rates, and high clinical volume in Istanbul allow us to provide genuine Swiss and German ceramic systems at transparent, accessible rates without compromising clinical quality."
+        "q": "Why are Ceramic Implants 60%–70% more affordable in Antalya than in the UK or Germany?",
+        "a": "Lower operational overheads, favorable currency exchange rates, and high clinical volume in Antalya allow us to provide genuine Swiss and German ceramic systems at transparent, accessible rates without compromising clinical quality."
       },
       {
         "q": "Do Ceramic implants come with a warranty and medical passport?",
@@ -4056,7 +4056,7 @@ export default function ZirconiumImplantDetailView() {
         </div>
       </section>
 
-      {/* 6. INTERNATIONAL COST COMPARISON SECTION (UK / GERMANY vs ISTANBUL) */}
+      {/* 6. INTERNATIONAL COST COMPARISON SECTION (UK / GERMANY vs ANTALYA) */}
       <section aria-labelledby="zirc-cost-heading" className={styles.costSection}>
         <div className={styles.container}>
           <div className={styles.costHeader}>

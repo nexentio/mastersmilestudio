@@ -16,11 +16,59 @@
 }
 
 .header-logo-link {
+  display: inline-flex !important;
+  align-items: center;
+  text-decoration: none !important;
   transition: transform 0.25s ease !important;
 }
 
 .header-logo-link:hover {
   transform: scale(1.03) !important;
+}
+
+.header-brand-wrap {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  user-select: none;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.header-brand-master {
+  font-family: 'Posterama Text Black', 'Posterama', sans-serif;
+  font-size: 1.65rem;
+  font-weight: 900;
+  color: #000000;
+  letter-spacing: 0.28em;
+  margin-right: -0.28em;
+  line-height: 1;
+  text-transform: uppercase;
+  display: block;
+}
+
+.header-brand-sub {
+  font-family: 'Posterama Text Black', 'Posterama', var(--font-outfit), sans-serif;
+  font-size: 0.46rem;
+  font-weight: 700;
+  color: #000000;
+  letter-spacing: 0.42em;
+  margin-right: -0.42em;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-top: 0.24rem;
+  display: block;
+}
+
+@media (max-width: 868px) {
+  .header-brand-master {
+    font-size: 1.25rem;
+  }
+  .header-brand-sub {
+    font-size: 0.36rem;
+    margin-top: 0.16rem;
+  }
 }
 
 .lang-switcher-trigger {

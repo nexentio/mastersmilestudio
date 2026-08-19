@@ -43,7 +43,7 @@ interface PackageDict {
 const CROWN_PACKAGES_I18N: Record<string, PackageDict> = {
   en: {
     badge: 'ALL-INCLUSIVE CROWN PACKAGES',
-    title: 'Popular Dental Crown Packages in Istanbul',
+    title: 'Popular Dental Crown Packages in Antalya',
     subtitle: 'High-strength German Zirconia & Ivoclar E-Max crowns with 5-star hotel accommodation and VIP chauffeur transfers.',
     durationLabel: 'Treatment Duration:',
     featuresTitle: 'Package Inclusions:',
@@ -86,7 +86,7 @@ const CROWN_PACKAGES_I18N: Record<string, PackageDict> = {
   },
   tr: {
     badge: 'HER ŞEY DAHİL KRON PAKETLERİ',
-    title: 'İstanbul Popüler Zirkonyum & Kron Kaplama Paketleri',
+    title: 'Antalya Popüler Zirkonyum & Kron Kaplama Paketleri',
     subtitle: 'Alman Zirkonyum ve Ivoclar E-Max kalitesi, 5 yıldızlı otel konaklaması ve VIP transfer ile şeffaf fiyatlar.',
     durationLabel: 'Tedavi Süresi:',
     featuresTitle: 'Pakete Dahil Hizmetler:',
@@ -129,7 +129,7 @@ const CROWN_PACKAGES_I18N: Record<string, PackageDict> = {
   },
   de: {
     badge: 'ALL-INCLUSIVE KRONEN-PAKETE',
-    title: 'Beliebte Zahnkronen-Pakete in Istanbul',
+    title: 'Beliebte Zahnkronen-Pakete in Antalya',
     subtitle: 'Hochfestes deutsches Zirkon & Ivoclar E-Max inklusive 5-Sterne-Hotel und VIP-Transfers.',
     durationLabel: 'Behandlungsdauer:',
     featuresTitle: 'Im Paket enthalten:',
@@ -172,7 +172,7 @@ const CROWN_PACKAGES_I18N: Record<string, PackageDict> = {
   },
   pl: {
     badge: 'PAKIETY KORON ZĘBOWYCH ALL-INCLUSIVE',
-    title: 'Popularne Pakiety Koron w Stambule',
+    title: 'Popularne Pakiety Koron w Antalyi',
     subtitle: 'Niemiecki tlenek cyrkonu i Ivoclar E-Max z 5-gwiazdkowym hotelem i transferami VIP.',
     durationLabel: 'Czas trwania:',
     featuresTitle: 'W pakiecie zawarte:',
@@ -215,8 +215,8 @@ const CROWN_PACKAGES_I18N: Record<string, PackageDict> = {
   },
   pt: {
     badge: 'PACOTES DE COROAS ALL-INCLUSIVE',
-    title: 'Pacotes Populares de Coroas em Istambul',
-    subtitle: 'Zircônia alemã e Ivoclar E-Max com hotel 5 estrelas e transfers VIP em Istambul.',
+    title: 'Pacotes Populares de Coroas em Antalya',
+    subtitle: 'Zircônia alemã e Ivoclar E-Max com hotel 5 estrelas e transfers VIP em Antalya.',
     durationLabel: 'Duração do Tratamento:',
     featuresTitle: 'Incluso no Pacote:',
     ctaText: 'Solicitar Orçamento',
@@ -258,7 +258,7 @@ const CROWN_PACKAGES_I18N: Record<string, PackageDict> = {
   },
   es: {
     badge: 'PAQUETES DE CORONAS TODO INCLUIDO',
-    title: 'Paquetes Populares de Coronas en Estambul',
+    title: 'Paquetes Populares de Coronas en Antalya',
     subtitle: 'Zirconio alemán e Ivoclar E-Max con hotel 5 estrellas y traslados VIP.',
     durationLabel: 'Duración del Tratamiento:',
     featuresTitle: 'Incluido en el Paquete:',
@@ -301,7 +301,7 @@ const CROWN_PACKAGES_I18N: Record<string, PackageDict> = {
   },
   ru: {
     badge: 'ПАКЕТЫ КОРОНОК «ВСЕ ВКЛЮЧЕНО»',
-    title: 'Популярные пакеты коронок в Стамбуле',
+    title: 'Популярные пакеты коронок в Анталье',
     subtitle: 'Немецкий цирконий и Ivoclar E-Max с проживанием в 5★ отеле и VIP-трансфером.',
     durationLabel: 'Длительность лечения:',
     featuresTitle: 'В пакет включено:',
@@ -345,9 +345,9 @@ const CROWN_PACKAGES_I18N: Record<string, PackageDict> = {
 };
 
 const CROWN_IMAGES = [
-  'https://sohodent.com/doc/data1/zirconium-implant-copy.webp',
-  'https://sohodent.com/doc/data1/e-max-laminate-copy.webp',
-  'https://sohodent.com/doc/data1/porcelain-laminate-copy.webp',
+  '/treatments/accordion/zirconium-implant-copy.webp',
+  '/treatments/accordion/e-max-laminate-copy.webp',
+  '/treatments/accordion/porcelain-laminate-copy.webp',
 ];
 
 export default function TreatmentCrownsPackagesSlider() {

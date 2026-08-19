@@ -72,9 +72,9 @@ interface HubI18n {
 
 const HUB_DATA: Record<string, HubI18n> = {
   en: {
-    introHeading: 'World-Class Dental Treatments & Smile Makeovers in Istanbul, Turkey',
+    introHeading: 'World-Class Dental Treatments & Smile Makeovers in Antalya, Turkey',
     introP1:
-      'Master Smile Studio Istanbul is an internationally acclaimed multidisciplinary center for aesthetic dentistry, oral implantology, and smile reconstructions. Whether you are seeking full-arch titanium dental implants, bespoke Swiss Ivoclar E-Max veneers, monolithic German zirconia crowns, or pain-free microscopic restorative care, our board-certified oral surgeons and master prosthodontists provide world-class clinical excellence with up to 70% savings compared to the UK, US, and Europe.',
+      'Master Smile Studio Antalya is an internationally acclaimed multidisciplinary center for aesthetic dentistry, oral implantology, and smile reconstructions. Whether you are seeking full-arch titanium dental implants, bespoke Swiss Ivoclar E-Max veneers, monolithic German zirconia crowns, or pain-free microscopic restorative care, our board-certified oral surgeons and master prosthodontists provide world-class clinical excellence with up to 70% savings compared to the UK, US, and Europe.',
     partsTitle: 'The 3 Core Pillars of Our Multidisciplinary Dental Excellence:',
     part1Label: '1. Advanced 3D Diagnostics & CAD/CAM In-House Laboratory',
     part1Desc:
@@ -88,10 +88,10 @@ const HUB_DATA: Record<string, HubI18n> = {
     healingP:
       'Every procedure is performed under gentle computer-guided local anesthesia or conscious IV sedation, ensuring a 100% painless and relaxing treatment journey. Immediate high-precision temporary restorations guarantee that you never spend a single hour without teeth.',
     solutionP:
-      'With transparent all-inclusive VIP packages including 5-star hotel accommodation in central Istanbul, private Mercedes airport and clinic transfers, and personal multilingual patient hosting, we make your dental journey smooth, luxurious, and stress-free.',
-    whyChooseHeading: 'Why Choose Master Smile Studio for Your Dental Treatments in Istanbul?',
+      'With transparent all-inclusive VIP packages including 5-star hotel accommodation in central Antalya, private Mercedes airport and clinic transfers, and personal multilingual patient hosting, we make your dental journey smooth, luxurious, and stress-free.',
+    whyChooseHeading: 'Why Choose Master Smile Studio for Your Dental Treatments in Antalya?',
     whyChooseIntroLead: 'For international patients seeking uncompromising quality and transparent care, ',
-    whyChooseIntroLink: 'Master Smile Studio Istanbul',
+    whyChooseIntroLink: 'Master Smile Studio Antalya',
     whyChooseIntroTail:
       ' is the trusted European reference center for comprehensive smile transformations. Here is why patients worldwide choose our clinic:',
     reason1Title: 'Multidisciplinary Specialist Team Under One Roof',
@@ -111,7 +111,7 @@ const HUB_DATA: Record<string, HubI18n> = {
     reason4Title: 'Documented Before & After Patient Transformations',
     reason4P:
       'Browse hundreds of verified clinical cases showing full-mouth implant rehabilitations, dramatic Hollywood Smile makeovers, and natural tooth preservation.',
-    reason5Title: 'Luxury 5-Star Hotel & VIP Mercedes Chauffeur in Istanbul',
+    reason5Title: 'Luxury 5-Star Hotel & VIP Mercedes Chauffeur in Antalya',
     reason5PText:
       'Enjoy a stress-free dental holiday with central 5-star hotel accommodation, private VIP airport and clinic transfers, and dedicated multi-lingual translation coordinators. ',
     reason5PLink: 'Contact our clinical team for a free instant consultation.',
@@ -140,9 +140,9 @@ const HUB_DATA: Record<string, HubI18n> = {
     allOn6LinkText: 'Dentures, Cosmetic & General Dentistry →',
   },
   tr: {
-    introHeading: 'İstanbul’da Dünya Standartlarında Diş Tedavileri & Gülüş Tasarımı',
+    introHeading: 'Antalya’da Dünya Standartlarında Diş Tedavileri & Gülüş Tasarımı',
     introP1:
-      'Master Smile Studio İstanbul; estetik diş hekimliği, cerrahi implantoloji ve ileri gülüş rekonstrüksiyonunda Avrupa standartlarında hizmet veren uluslararası referans merkezidir. İster tam çene titanyum implantlar, ister İsviçre Ivoclar E-Max laminalar, Alman Zirkonyum kronlar veya mikroskobik kanal tedavisi olsun; uzman çene cerrahlarımız ve protetik hekimlerimiz %70’e varan fiyat avantajıyla en üst düzey sağlık hizmetini sunar.',
+      'Master Smile Studio Antalya; estetik diş hekimliği, cerrahi implantoloji ve ileri gülüş rekonstrüksiyonunda Avrupa standartlarında hizmet veren uluslararası referans merkezidir. İster tam çene titanyum implantlar, ister İsviçre Ivoclar E-Max laminalar, Alman Zirkonyum kronlar veya mikroskobik kanal tedavisi olsun; uzman çene cerrahlarımız ve protetik hekimlerimiz %70’e varan fiyat avantajıyla en üst düzey sağlık hizmetini sunar.',
     partsTitle: 'Multidisipliner Klinik Mükemmelliğimizin 3 Ana Temeli:',
     part1Label: '1. İleri 3D Teşhis & Klinik İçi CAD/CAM Laboratuvarı',
     part1Desc:
@@ -156,10 +156,10 @@ const HUB_DATA: Record<string, HubI18n> = {
     healingP:
       'Gelişmiş bilgisayarlı lokal anestezi ve sedasyon seçenekleri sayesinde tüm cerrahi ve estetik işlemler %100 ağrısız olarak tamamlanır. İlk seansta takılan estetik geçici dişler ile tedavi boyunca asla dişsiz kalmazsınız.',
     solutionP:
-      'İstanbul’un kalbinde 5 yıldızlı otel konaklaması, havalimanı ve klinik arası özel VIP Mercedes şoförlü transferler ve kendi dilinizde kişisel hasta danışmanlığı ile diş tedaviniz konforlu bir tatile dönüşür.',
-    whyChooseHeading: 'Neden İstanbul’da Diş Tedavisi İçin Master Smile Studio?',
+      'Antalya’nın kalbinde 5 yıldızlı otel konaklaması, havalimanı ve klinik arası özel VIP Mercedes şoförlü transferler ve kendi dilinizde kişisel hasta danışmanlığı ile diş tedaviniz konforlu bir tatile dönüşür.',
+    whyChooseHeading: 'Neden Antalya’da Diş Tedavisi İçin Master Smile Studio?',
     whyChooseIntroLead: 'Güvenilir, şeffaf ve dünya standartlarında diş tedavisi arayan uluslararası hastalar için ',
-    whyChooseIntroLink: 'Master Smile Studio İstanbul',
+    whyChooseIntroLink: 'Master Smile Studio Antalya',
     whyChooseIntroTail:
       ', kapsamlı gülüş dönüşümlerinde öncü sağlık merkezidir. Bizi tercih etmeniz için başlıca nedenler:',
     reason1Title: 'Alanında Uzman Multidisipliner Hekim Kadrosu',
@@ -181,7 +181,7 @@ const HUB_DATA: Record<string, HubI18n> = {
       'Kliniğimizde başarıyla tamamlanan tam çene implant rekonstrüksiyonları, Hollywood Smile gülüş dönüşümleri ve estetik vaka galerimizi inceleyin.',
     reason5Title: '5 Yıldızlı Otel Konaklaması & VIP Mercedes Transfer',
     reason5PText:
-      'İstanbul’un merkezinde 5 yıldızlı otel konaklaması, özel VIP Mercedes transferleri ve kendi dilinizde hasta koordinatörlüğü. ',
+      'Antalya’nın merkezinde 5 yıldızlı otel konaklaması, özel VIP Mercedes transferleri ve kendi dilinizde hasta koordinatörlüğü. ',
     reason5PLink: 'Ücretsiz dijital konsültasyon için hemen klinik ekibimizle iletişime geçin.',
     typesHeading: 'Master Smile Studio’da Uygulanan Ana Diş Tedavisi Alanları',
     typesIntro:
@@ -208,9 +208,9 @@ const HUB_DATA: Record<string, HubI18n> = {
     allOn6LinkText: 'Protez, Estetik & Genel Diş Tedavileri →',
   },
   de: {
-    introHeading: 'Erstklassige Zahnbehandlungen & Smile Makeover in Istanbul, Türkei',
+    introHeading: 'Erstklassige Zahnbehandlungen & Smile Makeover in Antalya, Türkei',
     introP1:
-      'Master Smile Studio Istanbul ist ein international anerkanntes Zentrum für ästhetische Zahnheilkunde, Implantologie und ganzheitliche Lächeln-Rekonstruktionen. Ob festsitzende Titan-Zahnimplantate, hauchdünne Schweizer E-Max Veneers, bruchfeste Zirkonkronen oder schmerzfreie mikroskopische Wurzelbehandlungen — unsere Fachzahnärzte bieten Spitzenmedizin mit bis zu 70% Ersparnis gegenüber Deutschland, Österreich und der Schweiz.',
+      'Master Smile Studio Antalya ist ein international anerkanntes Zentrum für ästhetische Zahnheilkunde, Implantologie und ganzheitliche Lächeln-Rekonstruktionen. Ob festsitzende Titan-Zahnimplantate, hauchdünne Schweizer E-Max Veneers, bruchfeste Zirkonkronen oder schmerzfreie mikroskopische Wurzelbehandlungen — unsere Fachzahnärzte bieten Spitzenmedizin mit bis zu 70% Ersparnis gegenüber Deutschland, Österreich und der Schweiz.',
     partsTitle: 'Die 3 Säulen unserer interdisziplinären Zahnmedizin:',
     part1Label: '1. 3D-Diagnostik & Eigenes CAD/CAM-Meisterlabor',
     part1Desc:
@@ -225,9 +225,9 @@ const HUB_DATA: Record<string, HubI18n> = {
       'Alle Behandlungen erfolgen vollkommen schmerzfrei unter moderner Lokalanästhesie mit Sedierungsoption. Durch sofortige Provisorien sind Sie zu keinem Zeitpunkt zahnlos.',
     solutionP:
       'Mit transparenten All-Inclusive-Paketen inklusive 5-Sterne-Hotel, privatem Mercedes VIP-Chauffeur und deutschsprachiger Betreuung wird Ihre Zahnbehandlung zu einem entspannten Aufenthalt.',
-    whyChooseHeading: 'Warum Master Smile Studio für Ihre Zahnbehandlung in Istanbul?',
+    whyChooseHeading: 'Warum Master Smile Studio für Ihre Zahnbehandlung in Antalya?',
     whyChooseIntroLead: 'Für Patienten aus ganz Europa ist ',
-    whyChooseIntroLink: 'Master Smile Studio Istanbul',
+    whyChooseIntroLink: 'Master Smile Studio Antalya',
     whyChooseIntroTail:
       ' die führende Adresse für schmerzfreie und hochpräzise Zahnmedizin. Unsere Vorteile:',
     reason1Title: 'Interdisziplinäres Fachärzteteam unter einem Dach',
@@ -247,9 +247,9 @@ const HUB_DATA: Record<string, HubI18n> = {
     reason4Title: 'Dokumentierte Vorher & Nachher Patientenfälle',
     reason4P:
       'Sehen Sie reale Patientenfälle mit festen Zähnen auf Implantaten und ästhetischen Hollywood Smile Transformationen.',
-    reason5Title: '5-Sterne-Hotel & VIP-Chauffeur in Istanbul',
+    reason5Title: '5-Sterne-Hotel & VIP-Chauffeur in Antalya',
     reason5PText:
-      'Entspannter Aufenthalt mit 5-Sterne-Hotel im Herzen Istanbuls, VIP-Transfers und deutschsprachiger Betreuung. ',
+      'Entspannter Aufenthalt mit 5-Sterne-Hotel im Herzen Antalyas, VIP-Transfers und deutschsprachiger Betreuung. ',
     reason5PLink: 'Kontaktieren Sie unser Ärzteteam für eine kostenlose Beratung.',
     typesHeading: 'Überblick über unsere zahnmedizinischen Kernbereiche',
     typesIntro:
@@ -276,9 +276,9 @@ const HUB_DATA: Record<string, HubI18n> = {
     allOn6LinkText: 'Prothesen, Ästhetik & Prophylaxe →',
   },
   pl: {
-    introHeading: 'Światowej Klasy Zabiegi Stomatologiczne i Metamorfozy Uśmiechu w Stambule',
+    introHeading: 'Światowej Klasy Zabiegi Stomatologiczne i Metamorfozy Uśmiechu w Antalyi',
     introP1:
-      'Master Smile Studio Stambuł to renomowane międzynarodowe centrum stomatologii estetycznej, implantologii i kompleksowych odbudów uśmiechu. Od tytanowych implantów całych łuków zębowych i szwajcarskich licówek Ivoclar E-Max po korony z niemieckiego tlenku cyrkonu i mikroskopowe leczenie zachowawcze — nasz zespół chirurgów i protetyków zapewnia najwyższy standard leczenia z oszczędnością do 70%.',
+      'Master Smile Studio Antalya to renomowane międzynarodowe centrum stomatologii estetycznej, implantologii i kompleksowych odbudów uśmiechu. Od tytanowych implantów całych łuków zębowych i szwajcarskich licówek Ivoclar E-Max po korony z niemieckiego tlenku cyrkonu i mikroskopowe leczenie zachowawcze — nasz zespół chirurgów i protetyków zapewnia najwyższy standard leczenia z oszczędnością do 70%.',
     partsTitle: '3 Filary Naszej Doskonałości Stomatologicznej:',
     part1Label: '1. Diagnostyka 3D i Własne Cyfrowe Laboratorium CAD/CAM',
     part1Desc:
@@ -292,10 +292,10 @@ const HUB_DATA: Record<string, HubI18n> = {
     healingP:
       'Wszystkie zabiegi są w 100% bezbolesne w komputerowym znieczuleniu miejscowym z opcją sedacji. Zęby tymczasowe montowane są na pierwszej wizycie.',
     solutionP:
-      'Pakiety VIP z 5-gwiazdkowym hotelem w centrum Stambułu, transferami Mercedesem i polskojęzyczną opieką gwarantują pełen komfort leczenia.',
-    whyChooseHeading: 'Dlaczego Warto Wybrać Master Smile Studio w Stambule?',
+      'Pakiety VIP z 5-gwiazdkowym hotelem w centrum Antalyi, transferami Mercedesem i polskojęzyczną opieką gwarantują pełen komfort leczenia.',
+    whyChooseHeading: 'Dlaczego Warto Wybrać Master Smile Studio w Antalyi?',
     whyChooseIntroLead: 'Dla pacjentów z Polski i całej Europy poszukujących bezkompromisowej jakości, ',
-    whyChooseIntroLink: 'Master Smile Studio Stambuł',
+    whyChooseIntroLink: 'Master Smile Studio Antalya',
     whyChooseIntroTail:
       ' to wiodący ośrodek leczenia stomatologicznego. Nasze kluczowe atuty:',
     reason1Title: 'Interdyscyplinarny Zespół Specjalistów pod Jednym Dachem',
@@ -315,7 +315,7 @@ const HUB_DATA: Record<string, HubI18n> = {
     reason4Title: 'Udokumentowane Przypadki Kliniczne Pacjentów',
     reason4P:
       'Zobacz setki udokumentowanych przypadków odbudowy bezzębia na implantach i metamorfoz Hollywood Smile.',
-    reason5Title: 'Hotel 5★ i Prywatny Transfer Mercedesem w Stambule',
+    reason5Title: 'Hotel 5★ i Prywatny Transfer Mercedesem w Antalyi',
     reason5PText:
       'Komfortowy pobyt w 5-gwiazdkowym hotelu, transfery VIP oraz pełna opieka polskojęzycznego koordynatora. ',
     reason5PLink: 'Skontaktuj się z naszym zespołem medycznym po bezpłatną konsultację.',
@@ -344,9 +344,9 @@ const HUB_DATA: Record<string, HubI18n> = {
     allOn6LinkText: 'Protezach i Stomatologii Ogólnej →',
   },
   pt: {
-    introHeading: 'Tratamentos Odontológicos de Excelência & Design do Sorriso em Istambul',
+    introHeading: 'Tratamentos Odontológicos de Excelência & Design do Sorriso em Antalya',
     introP1:
-      'A Master Smile Studio Istambul é um centro internacional de referência em odontologia estética, implantodontia cirúrgica e reabilitações completas do sorriso. Sejam implantes em titânio para arcada total, facetas suíças Ivoclar E-Max, coroas em zircônia alemã ou endodontia microscópica — nossos cirurgiões oferecem máxima excelência com até 70% de economia.',
+      'A Master Smile Studio Antalya é um centro internacional de referência em odontologia estética, implantodontia cirúrgica e reabilitações completas do sorriso. Sejam implantes em titânio para arcada total, facetas suíças Ivoclar E-Max, coroas em zircônia alemã ou endodontia microscópica — nossos cirurgiões oferecem máxima excelência com até 70% de economia.',
     partsTitle: 'Os 3 Pilares da Nossa Excelência Multidisciplinar:',
     part1Label: '1. Diagnóstico 3D Avançado & Laboratório Digital CAD/CAM Próprio',
     part1Desc:
@@ -360,10 +360,10 @@ const HUB_DATA: Record<string, HubI18n> = {
     healingP:
       'Todos os tratamentos são 100% livres de dor com anestesia local computadorizada e opção de sedação consciente. Provisórios imediatos garantem que você nunca fique sem dentes.',
     solutionP:
-      'Pacotes VIP All-Inclusive com hospedagem em hotel 5 estrelas no centro de Istambul, traslados privativos em Mercedes e atendimento em português.',
-    whyChooseHeading: 'Por Que Escolher a Master Smile Studio em Istambul?',
+      'Pacotes VIP All-Inclusive com hospedagem em hotel 5 estrelas no centro de Antalya, traslados privativos em Mercedes e atendimento em português.',
+    whyChooseHeading: 'Por Que Escolher a Master Smile Studio em Antalya?',
     whyChooseIntroLead: 'Para pacientes de todo o mundo que buscam qualidade internacional e atendimento transparente, ',
-    whyChooseIntroLink: 'Master Smile Studio Istambul',
+    whyChooseIntroLink: 'Master Smile Studio Antalya',
     whyChooseIntroTail:
       ' é a clínica de referência em reabilitação oral. Nossos diferenciais:',
     reason1Title: 'Equipe Multidisciplinar Completa sob o Mesmo Teto',
@@ -383,7 +383,7 @@ const HUB_DATA: Record<string, HubI18n> = {
     reason4Title: 'Casos Clínicos Reais Documentados',
     reason4P:
       'Confira centenas de casos reais de reabilitação total sobre implantes e transformações Hollywood Smile.',
-    reason5Title: 'Hotel 5★ e Transfers VIP Mercedes em Istambul',
+    reason5Title: 'Hotel 5★ e Transfers VIP Mercedes em Antalya',
     reason5PText:
       'Hospedagem de alto padrão, transporte privativo e assistência completa em português. ',
     reason5PLink: 'Entre em contato com nossa equipe médica para avaliação gratuita.',
@@ -412,9 +412,9 @@ const HUB_DATA: Record<string, HubI18n> = {
     allOn6LinkText: 'Próteses, Estética & Clínica Geral →',
   },
   es: {
-    introHeading: 'Tratamientos Dentales de Excelencia & Diseño de Sonrisa en Estambul, Turquía',
+    introHeading: 'Tratamientos Dentales de Excelencia & Diseño de Sonrisa en Antalya, Turquía',
     introP1:
-      'Master Smile Studio Estambul es un centro de referencia internacional en odontología estética, implantología oral avanzada y reconstrucciones completas de la sonrisa. Ya sean implantes de titanio para toda la arcada, carillas suizas Ivoclar E-Max, coronas de zirconio alemán o endodoncia microscópica — nuestros cirujanos ofrecen máxima precisión clínica con hasta un 70% de ahorro frente a España, Reino Unido y resto de Europa.',
+      'Master Smile Studio Antalya es un centro de referencia internacional en odontología estética, implantología oral avanzada y reconstrucciones completas de la sonrisa. Ya sean implantes de titanio para toda la arcada, carillas suizas Ivoclar E-Max, coronas de zirconio alemán o endodoncia microscópica — nuestros cirujanos ofrecen máxima precisión clínica con hasta un 70% de ahorro frente a España, Reino Unido y resto de Europa.',
     partsTitle: 'Los 3 Pilares de Nuestra Excelencia Multidisciplinar:',
     part1Label: '1. Diagnóstico 3D Avanzado & Laboratorio Digital CAD/CAM Propio',
     part1Desc:
@@ -428,10 +428,10 @@ const HUB_DATA: Record<string, HubI18n> = {
     healingP:
       'Todos los procedimientos son 100% indoloros gracias a la anestesia local computarizada y opción de sedación consciente. Los dientes provisionales inmediatos aseguran que nunca esté sin dientes.',
     solutionP:
-      'Con paquetes VIP Todo Incluido con hotel de 5 estrellas en el centro de Estambul, traslados privados en Mercedes y atención en español durante todo el viaje.',
-    whyChooseHeading: '¿Por Qué Elegir Master Smile Studio para su Tratamiento en Estambul?',
+      'Con paquetes VIP Todo Incluido con hotel de 5 estrellas en el centro de Antalya, traslados privados en Mercedes y atención en español durante todo el viaje.',
+    whyChooseHeading: '¿Por Qué Elegir Master Smile Studio para su Tratamiento en Antalya?',
     whyChooseIntroLead: 'Para pacientes de todo el mundo que buscan calidad hospitalaria y transparencia, ',
-    whyChooseIntroLink: 'Master Smile Studio Estambul',
+    whyChooseIntroLink: 'Master Smile Studio Antalya',
     whyChooseIntroTail:
       ' es el centro de referencia en odontología avanzada. Nuestras ventajas:',
     reason1Title: 'Equipo Multidisciplinar Integrado bajo un Mismo Techo',
@@ -451,7 +451,7 @@ const HUB_DATA: Record<string, HubI18n> = {
     reason4Title: 'Casos Clínicos Reales Documentados',
     reason4P:
       'Compruebe cientos de casos documentados de rehabilitaciones completas sobre implantes y transformaciones Hollywood Smile.',
-    reason5Title: 'Hotel 5★ y Traslados VIP en Mercedes en Estambul',
+    reason5Title: 'Hotel 5★ y Traslados VIP en Mercedes en Antalya',
     reason5PText:
       'Estancia de lujo en hotel de 5 estrellas, transporte privado y asistencia en español durante todo el viaje. ',
     reason5PLink: 'Contacte con nuestro equipo para una valoración inmediata.',
@@ -480,9 +480,9 @@ const HUB_DATA: Record<string, HubI18n> = {
     allOn6LinkText: 'Prótesis, Estética & Odontología General →',
   },
   ru: {
-    introHeading: 'Стоматологическое лечение европейского уровня & Дизайн улыбки в Стамбуле',
+    introHeading: 'Стоматологическое лечение европейского уровня & Дизайн улыбки в Анталье',
     introP1:
-      'Master Smile Studio Стамбул — международный экспертный центр эстетической стоматологии, хирургической имплантологии и полного восстановления зубов. Будь то титановые имплантаты All-on-4/6, швейцарские виниры Ivoclar E-Max, коронки из немецкого циркония или лечение каналов под микроскопом — наши ведущие хирурги и ортопеды обеспечивают высочайшее качество с экономией до 70%.',
+      'Master Smile Studio Анталья — международный экспертный центр эстетической стоматологии, хирургической имплантологии и полного восстановления зубов. Будь то титановые имплантаты All-on-4/6, швейцарские виниры Ivoclar E-Max, коронки из немецкого циркония или лечение каналов под микроскопом — наши ведущие хирурги и ортопеды обеспечивают высочайшее качество с экономией до 70%.',
     partsTitle: '3 основы нашего междисциплинарного клинического превосходства:',
     part1Label: '1. Цифровая 3D-диагностика & Собственная лаборатория CAD/CAM',
     part1Desc:
@@ -496,10 +496,10 @@ const HUB_DATA: Record<string, HubI18n> = {
     healingP:
       'Все процедуры проходят на 100% безболезненно благодаря компьютерной анестезии и возможности седации во сне. Временные зубы ставятся в первый день.',
     solutionP:
-      'Пакеты «Все включено» с проживанием в 5-звездочном отеле в центре Стамбула, VIP-трансфером на автомобилях Mercedes и русскоговорящим куратором.',
-    whyChooseHeading: 'Почему выбирают Master Smile Studio в Стамбуле?',
+      'Пакеты «Все включено» с проживанием в 5-звездочном отеле в центре Антальи, VIP-трансфером на автомобилях Mercedes и русскоговорящим куратором.',
+    whyChooseHeading: 'Почему выбирают Master Smile Studio в Анталье?',
     whyChooseIntroLead: 'Для пациентов со всего мира, ценящих бескомпромиссное качество, ',
-    whyChooseIntroLink: 'Master Smile Studio Стамбул',
+    whyChooseIntroLink: 'Master Smile Studio Анталья',
     whyChooseIntroTail:
       ' — ведущий центр комплексного восстановления улыбки. Наши преимущества:',
     reason1Title: 'Команда специалистов всех направлений под одной крышей',
@@ -519,7 +519,7 @@ const HUB_DATA: Record<string, HubI18n> = {
     reason4Title: 'Реальные результаты До и После',
     reason4P:
       'Ознакомьтесь с сотнями подтвержденных клинических случаев полного восстановления челюстей и Голливудской улыбки.',
-    reason5Title: 'Отель 5★ и трансфер на Mercedes в Стамбуле',
+    reason5Title: 'Отель 5★ и трансфер на Mercedes в Анталье',
     reason5PText:
       'Проживание в 5-звездочном отеле, трансфер на автомобилях Mercedes и русскоговорящий куратор. ',
     reason5PLink: 'Свяжитесь с нами для бесплатной медицинской консультации.',
@@ -583,8 +583,8 @@ export default function TreatmentDetailView() {
           {/* Fullwidth Horizontal Video Embed */}
           <div className={styles.mainVideoWrap}>
             <iframe
-              src="https://www.youtube.com/embed/R081L98DAls?t=21"
-              title="Dental Treatments and Smile Transformations at Master Smile Studio Istanbul"
+              src="https://www.youtube.com/embed/eiTTit9PLrQ?t=21"
+              title="Dental Treatments and Smile Transformations at Master Smile Studio Antalya"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             />
@@ -605,7 +605,7 @@ export default function TreatmentDetailView() {
       {/* 2.5 CLINICAL DECISION & TREATMENT COMPARISON MATRIX */}
       <TreatmentComparisonMatrix />
 
-      {/* 3. WHY CHOOSE MASTER SMILE STUDIO IN ISTANBUL */}
+      {/* 3. WHY CHOOSE MASTER SMILE STUDIO IN ANTALYA */}
       <section aria-labelledby="why-choose-hub-heading" className={styles.whyChooseSection}>
         <div className={styles.container}>
           <div className={styles.dividerWrap}>
@@ -676,7 +676,7 @@ export default function TreatmentDetailView() {
           {/* Full-width Video */}
           <div className={styles.mainVideoWrap}>
             <iframe
-              src="https://www.youtube.com/embed/K4Xpx7JMyr8"
+              src="https://www.youtube.com/embed/haSWVr2smMM"
               title="Advanced Dental Lab Technology Video"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
@@ -741,8 +741,8 @@ export default function TreatmentDetailView() {
           {/* Video */}
           <div className={styles.mainVideoWrap}>
             <iframe
-              src="https://www.youtube.com/embed/smhwCD78Vbo"
-              title="Comprehensive Dental Treatments in Istanbul Video"
+              src="https://www.youtube.com/embed/eiTTit9PLrQ"
+              title="Comprehensive Dental Treatments in Antalya Video"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             />

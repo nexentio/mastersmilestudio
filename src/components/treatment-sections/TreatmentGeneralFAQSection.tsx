@@ -19,7 +19,7 @@ const GENERAL_FAQ_DATA: Record<string, FAQDictionary> = {
   en: {
     title: 'Frequently Asked Questions About General Dentistry & Oral Health',
     subText:
-      'Everything you need to know about microscopic root canal therapy, ultrasonic cleaning, composite fillings, tooth extractions, and periodontal health in Istanbul.',
+      'Everything you need to know about microscopic root canal therapy, ultrasonic cleaning, composite fillings, tooth extractions, and periodontal health in Antalya.',
     items: [
       {
         q: 'Why is general dentistry essential before cosmetic veneers or dental implants?',
@@ -30,7 +30,7 @@ const GENERAL_FAQ_DATA: Record<string, FAQDictionary> = {
         a: 'Not at all. With advanced computer-controlled local anesthesia and high-magnification dental operating microscopes, root canal therapy is completely painless. Most patients report that it feels no different than getting a standard filling.',
       },
       {
-        q: 'How many visits are needed for a root canal treatment in Istanbul?',
+        q: 'How many visits are needed for a root canal treatment in Antalya?',
         a: 'In over 90% of cases, our specialist endodontists complete microscopic root canal therapy in a single 60-to-90-minute session. In cases of severe periapical infection, a secondary medication dressing appointment may be scheduled 48 hours later.',
       },
       {
@@ -66,7 +66,7 @@ const GENERAL_FAQ_DATA: Record<string, FAQDictionary> = {
         a: 'When more than 50% of a molar is decayed or damaged, standard fillings can fracture under heavy chewing loads. CAD/CAM ceramic inlays and onlays are precision-milled from solid monolithic porcelain, offering 5x higher strength and a 15–20+ year lifespan.',
       },
       {
-        q: 'What should I do if I experience a sudden dental emergency while visiting Istanbul?',
+        q: 'What should I do if I experience a sudden dental emergency while visiting Antalya?',
         a: 'Contact Master Smile Studio immediately via our 24/7 WhatsApp emergency line. We provide same-day emergency triage, 3D diagnostic imaging, pain relief, and acute restorative care.',
       },
       {
@@ -83,7 +83,7 @@ const GENERAL_FAQ_DATA: Record<string, FAQDictionary> = {
       },
       {
         q: 'Can all my general dentistry treatments be completed during a short vacation?',
-        a: 'Yes. Thanks to our in-house 3D CBCT diagnostics, digital scanners, and CAD/CAM milling units, cleanings, root canals, wisdom tooth extractions, and ceramic fillings are completed within 1 to 3 days in Istanbul.',
+        a: 'Yes. Thanks to our in-house 3D CBCT diagnostics, digital scanners, and CAD/CAM milling units, cleanings, root canals, wisdom tooth extractions, and ceramic fillings are completed within 1 to 3 days in Antalya.',
       },
     ],
   },
@@ -101,7 +101,7 @@ const GENERAL_FAQ_DATA: Record<string, FAQDictionary> = {
         a: 'Hayır, kesinlikle hissedilmez. Bilgisayarlı lokal anestezi sistemleri ve yüksek büyütmeli dental mikroskoplar sayesinde kanal tedavisi tamamen ağrısız ve konforlu şekilde tamamlanır.',
       },
       {
-        q: 'İstanbul’da bir kanal tedavisi kaç seansta tamamlanır?',
+        q: 'Antalya’da bir kanal tedavisi kaç seansta tamamlanır?',
         a: 'Vakaların %90’ından fazlasında mikroskobik kanal tedavisi tek bir 60-90 dakikalık seansta bitirilir. Çok ileri derece enfeksiyonlu dişlerde 48 saat sonra ikinci bir pansuman seansı gerekebilir.',
       },
       {
@@ -137,7 +137,7 @@ const GENERAL_FAQ_DATA: Record<string, FAQDictionary> = {
         a: 'Dişin yarısından fazlası çürümüşse standart dolgular çiğneme basıncıyla kırılabilir. CAD/CAM porselen dolgular (Onlay) fırında pişen yekpare seramikten üretilir; kırılmaz ve 15-20+ yıl dayanır.',
       },
       {
-        q: 'İstanbul seyahatim sırasında acil diş ağrısı yaşarsam ne yapmalıyım?',
+        q: 'Antalya seyahatim sırasında acil diş ağrısı yaşarsam ne yapmalıyım?',
         a: 'Kliniğimizin 7/24 aktif WhatsApp acil hattından bize hemen ulaşabilirsiniz. Aynı gün içinde acil randevu, 3D tomografi ve anında ağrı dindirici müdahale sağlanır.',
       },
       {
@@ -153,7 +153,7 @@ const GENERAL_FAQ_DATA: Record<string, FAQDictionary> = {
         a: 'Kliniğimizde Avrupa standartlarında B-sınıfı hastane tipi otoklav sterilizasyonu uygulanır. Tüm el aletleri kişiye özel poşetlenir, barkodlanır ve hastanın gözü önünde açılır.',
       },
       {
-        q: 'Genel diş tedavilerim kısa bir İstanbul tatili sırasında biter mi?',
+        q: 'Genel diş tedavilerim kısa bir Antalya tatili sırasında biter mi?',
         a: 'Evet. Dijital görüntüleme sistemlerimiz ve kendi laboratuvarımız sayesinde diş temizliği, kanal tedavileri, 20’lik diş çekimleri ve porselen dolgular 1 ila 3 günde tamamlanır.',
       },
     ],
@@ -161,7 +161,7 @@ const GENERAL_FAQ_DATA: Record<string, FAQDictionary> = {
   de: {
     title: 'Häufig gestellte Fragen zu Allgemeiner Zahnmedizin & Prophylaxe',
     subText:
-      'Alles über mikroskopische Wurzelbehandlung, Air-Flow Zahnreinigung, Kompositfüllungen, Weisheitszähne und Parodontitistherapie in Istanbul.',
+      'Alles über mikroskopische Wurzelbehandlung, Air-Flow Zahnreinigung, Kompositfüllungen, Weisheitszähne und Parodontitistherapie in Antalya.',
     items: [
       {
         q: 'Warum ist die allgemeine Zahnheilkunde vor Veneers oder Implantaten so wichtig?',
@@ -208,7 +208,7 @@ const GENERAL_FAQ_DATA: Record<string, FAQDictionary> = {
         a: 'Bei großen Defekten brechen normale Füllungen leicht. CAD/CAM Keramik-Inlays bieten höchste Stabilität, Passgenauigkeit und halten 15–20+ Jahre.',
       },
       {
-        q: 'Was tun bei einem zahnärztlichen Notfall während des Istanbul-Aufenthalts?',
+        q: 'Was tun bei einem zahnärztlichen Notfall während des Antalya-Aufenthalts?',
         a: 'Über unseren 24/7 Notfall-WhatsApp-Service erhalten Sie sofortige Hilfe, Diagnostik und Schmerzlinderung am selben Tag.',
       },
       {
@@ -225,14 +225,14 @@ const GENERAL_FAQ_DATA: Record<string, FAQDictionary> = {
       },
       {
         q: 'Können alle Behandlungen während einer kurzen Reise abgeschlossen werden?',
-        a: 'Ja, dank unseres internen CAD/CAM-Labors und 3D-Röntgens dauern die meisten Behandlungen nur 1 bis 3 Tage in Istanbul.',
+        a: 'Ja, dank unseres internen CAD/CAM-Labors und 3D-Röntgens dauern die meisten Behandlungen nur 1 bis 3 Tage in Antalya.',
       },
     ],
   },
   pl: {
     title: 'Często Zadawane Pytania o Stomatologię Ogólną i Zdrowie Jamy Ustnej',
     subText:
-      'Wszystko o leczeniu kanałowym pod mikroskopem, higienizacji Air-Flow, wypełnieniach kompozytowych, usuwaniu ósemek i leczeniu dziąseł w Stambule.',
+      'Wszystko o leczeniu kanałowym pod mikroskopem, higienizacji Air-Flow, wypełnieniach kompozytowych, usuwaniu ósemek i leczeniu dziąseł w Antalyi.',
     items: [
       {
         q: 'Dlaczego stomatologia zachowawcza jest kluczowa przed licówkami lub implantami?',
@@ -243,7 +243,7 @@ const GENERAL_FAQ_DATA: Record<string, FAQDictionary> = {
         a: 'Zupełnie nie. Dzięki komputerowemu znieczuleniu miejscowemu i pracy pod mikroskopem zabieg jest w 100% bezbolesny i komfortowy.',
       },
       {
-        q: 'Ile wizyt wymaga leczenie kanałowe w Stambule?',
+        q: 'Ile wizyt wymaga leczenie kanałowe w Antalyi?',
         a: 'W ponad 90% przypadków mikroskopowe leczenie endodontyczne kończymy podczas jednej 60–90 minutowej wizyty.',
       },
       {
@@ -279,7 +279,7 @@ const GENERAL_FAQ_DATA: Record<string, FAQDictionary> = {
         a: 'Przy dużych ubytkach tradycyjna plomba pęka. Ceramiczne Inlay/Onlay frezowane w technologii CAD/CAM są 5x mocniejsze i służą 15–20+ lat.',
       },
       {
-        q: 'Co zrobić w przypadku nagłego bólu zęba podczas pobytu w Stambule?',
+        q: 'Co zrobić w przypadku nagłego bólu zęba podczas pobytu w Antalyi?',
         a: 'Należy natychmiast skontaktować się z naszą całodobową infolinią WhatsApp. Zapewniamy pomoc doraźną i diagnostykę w tym samym dniu.',
       },
       {
@@ -296,14 +296,14 @@ const GENERAL_FAQ_DATA: Record<string, FAQDictionary> = {
       },
       {
         q: 'Czy zabiegi stomatologii ogólnej można zrealizować podczas krótkiego wyjazdu?',
-        a: 'Tak, większość procedur (czyszczenie, leczenie kanałowe, plomby, ekstrakcje) realizujemy w ciągu 1–3 dni w Stambule.',
+        a: 'Tak, większość procedur (czyszczenie, leczenie kanałowe, plomby, ekstrakcje) realizujemy w ciągu 1–3 dni w Antalyi.',
       },
     ],
   },
   pt: {
     title: 'Perguntas Frequentes Sobre Clínica Geral e Saúde Bucal',
     subText:
-      'Tudo sobre tratamento de canal microscópico, limpeza Air-Flow, restaurações em resina, extração de sisos e saúde periodontal em Istambul.',
+      'Tudo sobre tratamento de canal microscópico, limpeza Air-Flow, restaurações em resina, extração de sisos e saúde periodontal em Antalya.',
     items: [
       {
         q: 'Por que a odontologia preventiva é essencial antes de facetas ou implantes?',
@@ -314,7 +314,7 @@ const GENERAL_FAQ_DATA: Record<string, FAQDictionary> = {
         a: 'Não. Com anestesia computadorizada e microscópio operatório, o procedimento é completamente indolor e seguro.',
       },
       {
-        q: 'Quantas consultas são necessárias para um canal em Istambul?',
+        q: 'Quantas consultas são necessárias para um canal em Antalya?',
         a: 'Em mais de 90% dos casos, realizamos o canal microscópico em sessão única de 60 a 90 minutos.',
       },
       {
@@ -350,7 +350,7 @@ const GENERAL_FAQ_DATA: Record<string, FAQDictionary> = {
         a: 'Para cavidades extensas, as resinas comuns podem fraturar. Inlays cerâmicos em CAD/CAM oferecem alta resistência e duram de 15 a mais de 20 anos.',
       },
       {
-        q: 'O que fazer em caso de dor de dente súbita em Istambul?',
+        q: 'O que fazer em caso de dor de dente súbita em Antalya?',
         a: 'Entre em contato com nossa linha de emergência 24/7 no WhatsApp para atendimento e alívio imediato no mesmo dia.',
       },
       {
@@ -367,14 +367,14 @@ const GENERAL_FAQ_DATA: Record<string, FAQDictionary> = {
       },
       {
         q: 'É possível concluir os tratamentos clínicos em uma viagem curta?',
-        a: 'Sim, graças à tecnologia digital CAD/CAM e tomografia 3D, a maioria dos tratamentos é realizada em 1 a 3 dias em Istambul.',
+        a: 'Sim, graças à tecnologia digital CAD/CAM e tomografia 3D, a maioria dos tratamentos é realizada em 1 a 3 dias em Antalya.',
       },
     ],
   },
   es: {
     title: 'Preguntas Frecuentes Sobre Odontología General y Salud Bucal',
     subText:
-      'Todo lo que necesita saber sobre endodoncia microscópica, limpieza Air-Flow, empastes de composite, muelas del juicio y periodoncia en Estambul.',
+      'Todo lo que necesita saber sobre endodoncia microscópica, limpieza Air-Flow, empastes de composite, muelas del juicio y periodoncia en Antalya.',
     items: [
       {
         q: '¿Por qué la odontología general es fundamental antes de carillas o implantes?',
@@ -385,7 +385,7 @@ const GENERAL_FAQ_DATA: Record<string, FAQDictionary> = {
         a: 'No. Con anestesia local computarizada y microscopio dental, la endodoncia es 100% indolora y cómoda.',
       },
       {
-        q: '¿Cuántas sesiones se necesitan para una endodoncia en Estambul?',
+        q: '¿Cuántas sesiones se necesitan para una endodoncia en Antalya?',
         a: 'En más del 90% de los casos, la endodoncia microscópica se realiza en una sola cita de 60 a 90 minutos.',
       },
       {
@@ -421,7 +421,7 @@ const GENERAL_FAQ_DATA: Record<string, FAQDictionary> = {
         a: 'En caries extensas, el composite normal puede fracturarse. Las incrustaciones cerámicas en CAD/CAM son 5 veces más resistentes y duran 15–20+ años.',
       },
       {
-        q: '¿Qué hacer ante una urgencia dental durante la estancia en Estambul?',
+        q: '¿Qué hacer ante una urgencia dental durante la estancia en Antalya?',
         a: 'Contacte con nuestra línea de urgencias WhatsApp 24/7 para atención, diagnóstico y alivio inmediato en el mismo día.',
       },
       {
@@ -438,14 +438,14 @@ const GENERAL_FAQ_DATA: Record<string, FAQDictionary> = {
       },
       {
         q: '¿Se pueden realizar todos los tratamientos en una estancia corta?',
-        a: 'Sí, gracias a nuestra tecnología digital CAD/CAM y TAC 3D, la mayoría de los tratamientos se completan en 1 a 3 días en Estambul.',
+        a: 'Sí, gracias a nuestra tecnología digital CAD/CAM y TAC 3D, la mayoría de los tratamientos se completan en 1 a 3 días en Antalya.',
       },
     ],
   },
   ru: {
     title: 'Часто задаваемые вопросы об общей стоматологии и здоровье зубов',
     subText:
-      'Все о лечении каналов под микроскопом, чистке Air-Flow, эстетических пломбах, удалении зубов мудрости и лечении десен в Стамбуле.',
+      'Все о лечении каналов под микроскопом, чистке Air-Flow, эстетических пломбах, удалении зубов мудрости и лечении десен в Анталье.',
     items: [
       {
         q: 'Почему общая терапия обязательна перед установкой виниров или имплантов?',
@@ -456,7 +456,7 @@ const GENERAL_FAQ_DATA: Record<string, FAQDictionary> = {
         a: 'Совершенно нет. Компьютерная анестезия и лечение под дентальным микроскопом делают процедуру полностью безболезненной и комфортной.',
       },
       {
-        q: 'Сколько визитов требуется для лечения каналов в Стамбуле?',
+        q: 'Сколько визитов требуется для лечения каналов в Анталье?',
         a: 'В более чем 90% случаев микроскопическое эндодонтическое лечение завершается за 1 сеанс длительностью 60–90 минут.',
       },
       {
@@ -492,7 +492,7 @@ const GENERAL_FAQ_DATA: Record<string, FAQDictionary> = {
         a: 'При разрушении более 50% зуба обычная пломба скалывается. Керамические вкладки CAD/CAM в 5 раз прочнее и служат 15–20+ лет.',
       },
       {
-        q: 'Что делать при острой зубной боли во время визита в Стамбул?',
+        q: 'Что делать при острой зубной боли во время визита в Анталью?',
         a: 'Свяжитесь с нашей круглосуточной службой WhatsApp 24/7 для экстренного приема, 3D диагностики и снятия боли в день обращения.',
       },
       {
@@ -509,7 +509,7 @@ const GENERAL_FAQ_DATA: Record<string, FAQDictionary> = {
       },
       {
         q: 'Можно ли пройти все терапевтические процедуры за короткую поездку?',
-        a: 'Да, благодаря 3D томографии и собственному CAD/CAM оборудованию большинство процедур занимает от 1 до 3 дней в Стамбуле.',
+        a: 'Да, благодаря 3D томографии и собственному CAD/CAM оборудованию большинство процедур занимает от 1 до 3 дней в Анталье.',
       },
     ],
   },

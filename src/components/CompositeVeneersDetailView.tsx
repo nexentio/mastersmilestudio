@@ -47,16 +47,16 @@ interface LocaleDictionary {
 const DICTIONARIES: Record<string, LocaleDictionary> = {
   "en": {
     "packagesTitle": "Direct Composite Veneer & Dental Bonding Packages",
-    "packagesSubtitle": "Minimally invasive, single-visit smile design packages with premium German nano-hybrid composite resin, shade-matching artistry, hotel stay, and VIP transfers in Istanbul.",
+    "packagesSubtitle": "Minimally invasive, single-visit smile design packages with premium German nano-hybrid composite resin, shade-matching artistry, hotel stay, and VIP transfers in Antalya.",
     "mostPopularBadge": "Most Popular Choice",
     "durationLabel": "Procedure Time:",
     "includedLabel": "Package Inclusions:",
     "priceLabel": "Price (All-Inclusive):",
     "getQuoteBtn": "Get Your Free Quote",
     "faqTitle": "Frequently Asked Questions About Composite Veneers & Bonding",
-    "faqSubtitle": "Detailed clinical guidance on direct composite resin veneers, same-day chairside bonding, diastema closures, staining resistance, durability, and aftercare in Istanbul.",
-    "stayDuration": "<strong>2 to 4 days in Istanbul.</strong> Direct composite veneers and bonding can often be completed in 1 to 2 clinical sessions with immediate same-day smile results.",
-    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to visit Istanbul once. Your composite veneers or smile bonding are sculpted, cured, and high-gloss polished in a single visit.",
+    "faqSubtitle": "Detailed clinical guidance on direct composite resin veneers, same-day chairside bonding, diastema closures, staining resistance, durability, and aftercare in Antalya.",
+    "stayDuration": "<strong>2 to 4 days in Antalya.</strong> Direct composite veneers and bonding can often be completed in 1 to 2 clinical sessions with immediate same-day smile results.",
+    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to visit Antalya once. Your composite veneers or smile bonding are sculpted, cured, and high-gloss polished in a single visit.",
     "recoveryTime": "<strong>Immediate recovery.</strong> Zero downtime and no invasive enamel reduction. You can eat, speak, and smile immediately following your chairside appointment.",
     "priceEstimate": "<strong>Composite Veneer prices start at £110 / €125 / $140 per tooth.</strong> Multi-unit smile packages (6, 8, or 16 teeth) include comprehensive 3D smile analysis, luxury hotel accommodation, and VIP transfers with zero hidden fees.",
     "packages": [
@@ -64,7 +64,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Composite Veneer / Bonding",
         "brand": "German Tokuyama / 3M Filtek Supreme Nano-Hybrid",
         "duration": "1 – 2 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/composite-laminate-copy.webp",
+        "img": "/treatments/accordion/composite-laminate.webp",
         "included": [
           "1x Direct Layered Nano-Hybrid Composite Veneer",
           "Micro-aesthetic tooth shaping & surface conditioning",
@@ -83,13 +83,13 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "8-Unit Smile Line Composite Makeover",
         "brand": "German Tokuyama / 3M Nano-Hybrid Resin",
         "duration": "2 – 4 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-1.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "popular": true,
         "included": [
           "8x Upper Social Smile Direct Composite Veneers",
           "3D Digital Smile Simulation & Tooth Proportions Analysis",
           "Diastema (gap) closure & incisal edge elongation",
-          "4-Star Luxury Hotel Stay in Istanbul (3 Nights)",
+          "4-Star Luxury Hotel Stay in Antalya (3 Nights)",
           "VIP Mercedes Chauffeur Airport & Clinic Transfers",
           "Comprehensive high-gloss polish & surface sealant",
           "5-Year Clinical Warranty & aftercare kit"
@@ -104,12 +104,12 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "16-Unit Full Composite Smile Makeover",
         "brand": "Premium German Nano-Hybrid Polychromatic Resin",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-2.jpg",
+        "img": "/packages/pkg-emax.webp",
         "included": [
           "16x Direct Composite Veneers (8 Upper + 8 Lower Teeth)",
           "Full aesthetic bite alignment & golden ratio facial harmony",
           "Dual arch composite sculpting with multi-shade opalescent layers",
-          "4-Star Hotel Stay with Breakfast in Istanbul (4 Nights)",
+          "4-Star Hotel Stay with Breakfast in Antalya (4 Nights)",
           "Private VIP Mercedes Chauffeur for all appointments",
           "Custom dental night guard & protective travel kit",
           "5-Year Clinical Warranty on all bonded surfaces"
@@ -124,7 +124,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Diastema Closure & Edge Bonding Package",
         "brand": "3M Filtek / Tokuyama Estelite Asteria",
         "duration": "1 – 3 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-3.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "included": [
           "Direct gap closure between central incisors & edge repair",
           "Zero tooth shaving / 100% enamel preservation",
@@ -163,7 +163,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
       {
         "q": "How long does the composite veneer procedure take?",
         "a": [
-          "A full smile makeover with 8 to 16 composite veneers is typically completed in 1 to 2 sessions over a 2 to 4-day stay in Istanbul."
+          "A full smile makeover with 8 to 16 composite veneers is typically completed in 1 to 2 sessions over a 2 to 4-day stay in Antalya."
         ]
       }
     ]
@@ -177,9 +177,9 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "priceLabel": "Price (All-Inclusive):",
     "getQuoteBtn": "Get Your Free Quote",
     "faqTitle": "Kompozit Lamina (Bonding) Hakkında Sıkça Sorulan Sorular",
-    "faqSubtitle": "Detailed clinical guidance on direct composite resin veneers, same-day chairside bonding, diastema closures, staining resistance, durability, and aftercare in Istanbul.",
-    "stayDuration": "<strong>2 to 4 days in Istanbul.</strong> Direct composite veneers and bonding can often be completed in 1 to 2 clinical sessions with immediate same-day smile results.",
-    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to visit Istanbul once. Your composite veneers or smile bonding are sculpted, cured, and high-gloss polished in a single visit.",
+    "faqSubtitle": "Detailed clinical guidance on direct composite resin veneers, same-day chairside bonding, diastema closures, staining resistance, durability, and aftercare in Antalya.",
+    "stayDuration": "<strong>2 to 4 days in Antalya.</strong> Direct composite veneers and bonding can often be completed in 1 to 2 clinical sessions with immediate same-day smile results.",
+    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to visit Antalya once. Your composite veneers or smile bonding are sculpted, cured, and high-gloss polished in a single visit.",
     "recoveryTime": "<strong>Immediate recovery.</strong> Zero downtime and no invasive enamel reduction. You can eat, speak, and smile immediately following your chairside appointment.",
     "priceEstimate": "<strong>Composite Veneer prices start at £110 / €125 / $140 per tooth.</strong> Multi-unit smile packages (6, 8, or 16 teeth) include comprehensive 3D smile analysis, luxury hotel accommodation, and VIP transfers with zero hidden fees.",
     "packages": [
@@ -187,7 +187,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Composite Veneer / Bonding",
         "brand": "German Tokuyama / 3M Filtek Supreme Nano-Hybrid",
         "duration": "1 – 2 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/composite-laminate-copy.webp",
+        "img": "/treatments/accordion/composite-laminate.webp",
         "included": [
           "1x Direct Layered Nano-Hybrid Composite Veneer",
           "Micro-aesthetic tooth shaping & surface conditioning",
@@ -206,13 +206,13 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "8-Unit Smile Line Composite Makeover",
         "brand": "German Tokuyama / 3M Nano-Hybrid Resin",
         "duration": "2 – 4 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-1.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "popular": true,
         "included": [
           "8x Upper Social Smile Direct Composite Veneers",
           "3D Digital Smile Simulation & Tooth Proportions Analysis",
           "Diastema (gap) closure & incisal edge elongation",
-          "4-Star Luxury Hotel Stay in Istanbul (3 Nights)",
+          "4-Star Luxury Hotel Stay in Antalya (3 Nights)",
           "VIP Mercedes Chauffeur Airport & Clinic Transfers",
           "Comprehensive high-gloss polish & surface sealant",
           "5-Year Clinical Warranty & aftercare kit"
@@ -227,12 +227,12 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "16-Unit Full Composite Smile Makeover",
         "brand": "Premium German Nano-Hybrid Polychromatic Resin",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-2.jpg",
+        "img": "/packages/pkg-emax.webp",
         "included": [
           "16x Direct Composite Veneers (8 Upper + 8 Lower Teeth)",
           "Full aesthetic bite alignment & golden ratio facial harmony",
           "Dual arch composite sculpting with multi-shade opalescent layers",
-          "4-Star Hotel Stay with Breakfast in Istanbul (4 Nights)",
+          "4-Star Hotel Stay with Breakfast in Antalya (4 Nights)",
           "Private VIP Mercedes Chauffeur for all appointments",
           "Custom dental night guard & protective travel kit",
           "5-Year Clinical Warranty on all bonded surfaces"
@@ -247,7 +247,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Diastema Closure & Edge Bonding Package",
         "brand": "3M Filtek / Tokuyama Estelite Asteria",
         "duration": "1 – 3 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-3.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "included": [
           "Direct gap closure between central incisors & edge repair",
           "Zero tooth shaving / 100% enamel preservation",
@@ -286,23 +286,23 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
       {
         "q": "How long does the composite veneer procedure take?",
         "a": [
-          "A full smile makeover with 8 to 16 composite veneers is typically completed in 1 to 2 sessions over a 2 to 4-day stay in Istanbul."
+          "A full smile makeover with 8 to 16 composite veneers is typically completed in 1 to 2 sessions over a 2 to 4-day stay in Antalya."
         ]
       }
     ]
   },
   "de": {
     "packagesTitle": "Direct Composite Veneer & Dental Bonding Packages",
-    "packagesSubtitle": "Minimally invasive, single-visit smile design packages with premium German nano-hybrid composite resin, shade-matching artistry, hotel stay, and VIP transfers in Istanbul.",
+    "packagesSubtitle": "Minimally invasive, single-visit smile design packages with premium German nano-hybrid composite resin, shade-matching artistry, hotel stay, and VIP transfers in Antalya.",
     "mostPopularBadge": "Most Popular Choice",
     "durationLabel": "Procedure Time:",
     "includedLabel": "Package Inclusions:",
     "priceLabel": "Price (All-Inclusive):",
     "getQuoteBtn": "Get Your Free Quote",
     "faqTitle": "Frequently Asked Questions About Composite Veneers & Bonding",
-    "faqSubtitle": "Detailed clinical guidance on direct composite resin veneers, same-day chairside bonding, diastema closures, staining resistance, durability, and aftercare in Istanbul.",
-    "stayDuration": "<strong>2 to 4 days in Istanbul.</strong> Direct composite veneers and bonding can often be completed in 1 to 2 clinical sessions with immediate same-day smile results.",
-    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to visit Istanbul once. Your composite veneers or smile bonding are sculpted, cured, and high-gloss polished in a single visit.",
+    "faqSubtitle": "Detailed clinical guidance on direct composite resin veneers, same-day chairside bonding, diastema closures, staining resistance, durability, and aftercare in Antalya.",
+    "stayDuration": "<strong>2 to 4 days in Antalya.</strong> Direct composite veneers and bonding can often be completed in 1 to 2 clinical sessions with immediate same-day smile results.",
+    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to visit Antalya once. Your composite veneers or smile bonding are sculpted, cured, and high-gloss polished in a single visit.",
     "recoveryTime": "<strong>Immediate recovery.</strong> Zero downtime and no invasive enamel reduction. You can eat, speak, and smile immediately following your chairside appointment.",
     "priceEstimate": "<strong>Composite Veneer prices start at £110 / €125 / $140 per tooth.</strong> Multi-unit smile packages (6, 8, or 16 teeth) include comprehensive 3D smile analysis, luxury hotel accommodation, and VIP transfers with zero hidden fees.",
     "packages": [
@@ -310,7 +310,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Composite Veneer / Bonding",
         "brand": "German Tokuyama / 3M Filtek Supreme Nano-Hybrid",
         "duration": "1 – 2 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/composite-laminate-copy.webp",
+        "img": "/treatments/accordion/composite-laminate.webp",
         "included": [
           "1x Direct Layered Nano-Hybrid Composite Veneer",
           "Micro-aesthetic tooth shaping & surface conditioning",
@@ -329,13 +329,13 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "8-Unit Smile Line Composite Makeover",
         "brand": "German Tokuyama / 3M Nano-Hybrid Resin",
         "duration": "2 – 4 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-1.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "popular": true,
         "included": [
           "8x Upper Social Smile Direct Composite Veneers",
           "3D Digital Smile Simulation & Tooth Proportions Analysis",
           "Diastema (gap) closure & incisal edge elongation",
-          "4-Star Luxury Hotel Stay in Istanbul (3 Nights)",
+          "4-Star Luxury Hotel Stay in Antalya (3 Nights)",
           "VIP Mercedes Chauffeur Airport & Clinic Transfers",
           "Comprehensive high-gloss polish & surface sealant",
           "5-Year Clinical Warranty & aftercare kit"
@@ -350,12 +350,12 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "16-Unit Full Composite Smile Makeover",
         "brand": "Premium German Nano-Hybrid Polychromatic Resin",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-2.jpg",
+        "img": "/packages/pkg-emax.webp",
         "included": [
           "16x Direct Composite Veneers (8 Upper + 8 Lower Teeth)",
           "Full aesthetic bite alignment & golden ratio facial harmony",
           "Dual arch composite sculpting with multi-shade opalescent layers",
-          "4-Star Hotel Stay with Breakfast in Istanbul (4 Nights)",
+          "4-Star Hotel Stay with Breakfast in Antalya (4 Nights)",
           "Private VIP Mercedes Chauffeur for all appointments",
           "Custom dental night guard & protective travel kit",
           "5-Year Clinical Warranty on all bonded surfaces"
@@ -370,7 +370,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Diastema Closure & Edge Bonding Package",
         "brand": "3M Filtek / Tokuyama Estelite Asteria",
         "duration": "1 – 3 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-3.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "included": [
           "Direct gap closure between central incisors & edge repair",
           "Zero tooth shaving / 100% enamel preservation",
@@ -409,23 +409,23 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
       {
         "q": "How long does the composite veneer procedure take?",
         "a": [
-          "A full smile makeover with 8 to 16 composite veneers is typically completed in 1 to 2 sessions over a 2 to 4-day stay in Istanbul."
+          "A full smile makeover with 8 to 16 composite veneers is typically completed in 1 to 2 sessions over a 2 to 4-day stay in Antalya."
         ]
       }
     ]
   },
   "pl": {
     "packagesTitle": "Direct Composite Veneer & Dental Bonding Packages",
-    "packagesSubtitle": "Minimally invasive, single-visit smile design packages with premium German nano-hybrid composite resin, shade-matching artistry, hotel stay, and VIP transfers in Istanbul.",
+    "packagesSubtitle": "Minimally invasive, single-visit smile design packages with premium German nano-hybrid composite resin, shade-matching artistry, hotel stay, and VIP transfers in Antalya.",
     "mostPopularBadge": "Most Popular Choice",
     "durationLabel": "Procedure Time:",
     "includedLabel": "Package Inclusions:",
     "priceLabel": "Price (All-Inclusive):",
     "getQuoteBtn": "Get Your Free Quote",
     "faqTitle": "Frequently Asked Questions About Composite Veneers & Bonding",
-    "faqSubtitle": "Detailed clinical guidance on direct composite resin veneers, same-day chairside bonding, diastema closures, staining resistance, durability, and aftercare in Istanbul.",
-    "stayDuration": "<strong>2 to 4 days in Istanbul.</strong> Direct composite veneers and bonding can often be completed in 1 to 2 clinical sessions with immediate same-day smile results.",
-    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to visit Istanbul once. Your composite veneers or smile bonding are sculpted, cured, and high-gloss polished in a single visit.",
+    "faqSubtitle": "Detailed clinical guidance on direct composite resin veneers, same-day chairside bonding, diastema closures, staining resistance, durability, and aftercare in Antalya.",
+    "stayDuration": "<strong>2 to 4 days in Antalya.</strong> Direct composite veneers and bonding can often be completed in 1 to 2 clinical sessions with immediate same-day smile results.",
+    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to visit Antalya once. Your composite veneers or smile bonding are sculpted, cured, and high-gloss polished in a single visit.",
     "recoveryTime": "<strong>Immediate recovery.</strong> Zero downtime and no invasive enamel reduction. You can eat, speak, and smile immediately following your chairside appointment.",
     "priceEstimate": "<strong>Composite Veneer prices start at £110 / €125 / $140 per tooth.</strong> Multi-unit smile packages (6, 8, or 16 teeth) include comprehensive 3D smile analysis, luxury hotel accommodation, and VIP transfers with zero hidden fees.",
     "packages": [
@@ -433,7 +433,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Composite Veneer / Bonding",
         "brand": "German Tokuyama / 3M Filtek Supreme Nano-Hybrid",
         "duration": "1 – 2 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/composite-laminate-copy.webp",
+        "img": "/treatments/accordion/composite-laminate.webp",
         "included": [
           "1x Direct Layered Nano-Hybrid Composite Veneer",
           "Micro-aesthetic tooth shaping & surface conditioning",
@@ -452,13 +452,13 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "8-Unit Smile Line Composite Makeover",
         "brand": "German Tokuyama / 3M Nano-Hybrid Resin",
         "duration": "2 – 4 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-1.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "popular": true,
         "included": [
           "8x Upper Social Smile Direct Composite Veneers",
           "3D Digital Smile Simulation & Tooth Proportions Analysis",
           "Diastema (gap) closure & incisal edge elongation",
-          "4-Star Luxury Hotel Stay in Istanbul (3 Nights)",
+          "4-Star Luxury Hotel Stay in Antalya (3 Nights)",
           "VIP Mercedes Chauffeur Airport & Clinic Transfers",
           "Comprehensive high-gloss polish & surface sealant",
           "5-Year Clinical Warranty & aftercare kit"
@@ -473,12 +473,12 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "16-Unit Full Composite Smile Makeover",
         "brand": "Premium German Nano-Hybrid Polychromatic Resin",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-2.jpg",
+        "img": "/packages/pkg-emax.webp",
         "included": [
           "16x Direct Composite Veneers (8 Upper + 8 Lower Teeth)",
           "Full aesthetic bite alignment & golden ratio facial harmony",
           "Dual arch composite sculpting with multi-shade opalescent layers",
-          "4-Star Hotel Stay with Breakfast in Istanbul (4 Nights)",
+          "4-Star Hotel Stay with Breakfast in Antalya (4 Nights)",
           "Private VIP Mercedes Chauffeur for all appointments",
           "Custom dental night guard & protective travel kit",
           "5-Year Clinical Warranty on all bonded surfaces"
@@ -493,7 +493,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Diastema Closure & Edge Bonding Package",
         "brand": "3M Filtek / Tokuyama Estelite Asteria",
         "duration": "1 – 3 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-3.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "included": [
           "Direct gap closure between central incisors & edge repair",
           "Zero tooth shaving / 100% enamel preservation",
@@ -532,23 +532,23 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
       {
         "q": "How long does the composite veneer procedure take?",
         "a": [
-          "A full smile makeover with 8 to 16 composite veneers is typically completed in 1 to 2 sessions over a 2 to 4-day stay in Istanbul."
+          "A full smile makeover with 8 to 16 composite veneers is typically completed in 1 to 2 sessions over a 2 to 4-day stay in Antalya."
         ]
       }
     ]
   },
   "pt": {
     "packagesTitle": "Direct Composite Veneer & Dental Bonding Packages",
-    "packagesSubtitle": "Minimally invasive, single-visit smile design packages with premium German nano-hybrid composite resin, shade-matching artistry, hotel stay, and VIP transfers in Istanbul.",
+    "packagesSubtitle": "Minimally invasive, single-visit smile design packages with premium German nano-hybrid composite resin, shade-matching artistry, hotel stay, and VIP transfers in Antalya.",
     "mostPopularBadge": "Most Popular Choice",
     "durationLabel": "Procedure Time:",
     "includedLabel": "Package Inclusions:",
     "priceLabel": "Price (All-Inclusive):",
     "getQuoteBtn": "Get Your Free Quote",
     "faqTitle": "Frequently Asked Questions About Composite Veneers & Bonding",
-    "faqSubtitle": "Detailed clinical guidance on direct composite resin veneers, same-day chairside bonding, diastema closures, staining resistance, durability, and aftercare in Istanbul.",
-    "stayDuration": "<strong>2 to 4 days in Istanbul.</strong> Direct composite veneers and bonding can often be completed in 1 to 2 clinical sessions with immediate same-day smile results.",
-    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to visit Istanbul once. Your composite veneers or smile bonding are sculpted, cured, and high-gloss polished in a single visit.",
+    "faqSubtitle": "Detailed clinical guidance on direct composite resin veneers, same-day chairside bonding, diastema closures, staining resistance, durability, and aftercare in Antalya.",
+    "stayDuration": "<strong>2 to 4 days in Antalya.</strong> Direct composite veneers and bonding can often be completed in 1 to 2 clinical sessions with immediate same-day smile results.",
+    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to visit Antalya once. Your composite veneers or smile bonding are sculpted, cured, and high-gloss polished in a single visit.",
     "recoveryTime": "<strong>Immediate recovery.</strong> Zero downtime and no invasive enamel reduction. You can eat, speak, and smile immediately following your chairside appointment.",
     "priceEstimate": "<strong>Composite Veneer prices start at £110 / €125 / $140 per tooth.</strong> Multi-unit smile packages (6, 8, or 16 teeth) include comprehensive 3D smile analysis, luxury hotel accommodation, and VIP transfers with zero hidden fees.",
     "packages": [
@@ -556,7 +556,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Composite Veneer / Bonding",
         "brand": "German Tokuyama / 3M Filtek Supreme Nano-Hybrid",
         "duration": "1 – 2 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/composite-laminate-copy.webp",
+        "img": "/treatments/accordion/composite-laminate.webp",
         "included": [
           "1x Direct Layered Nano-Hybrid Composite Veneer",
           "Micro-aesthetic tooth shaping & surface conditioning",
@@ -575,13 +575,13 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "8-Unit Smile Line Composite Makeover",
         "brand": "German Tokuyama / 3M Nano-Hybrid Resin",
         "duration": "2 – 4 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-1.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "popular": true,
         "included": [
           "8x Upper Social Smile Direct Composite Veneers",
           "3D Digital Smile Simulation & Tooth Proportions Analysis",
           "Diastema (gap) closure & incisal edge elongation",
-          "4-Star Luxury Hotel Stay in Istanbul (3 Nights)",
+          "4-Star Luxury Hotel Stay in Antalya (3 Nights)",
           "VIP Mercedes Chauffeur Airport & Clinic Transfers",
           "Comprehensive high-gloss polish & surface sealant",
           "5-Year Clinical Warranty & aftercare kit"
@@ -596,12 +596,12 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "16-Unit Full Composite Smile Makeover",
         "brand": "Premium German Nano-Hybrid Polychromatic Resin",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-2.jpg",
+        "img": "/packages/pkg-emax.webp",
         "included": [
           "16x Direct Composite Veneers (8 Upper + 8 Lower Teeth)",
           "Full aesthetic bite alignment & golden ratio facial harmony",
           "Dual arch composite sculpting with multi-shade opalescent layers",
-          "4-Star Hotel Stay with Breakfast in Istanbul (4 Nights)",
+          "4-Star Hotel Stay with Breakfast in Antalya (4 Nights)",
           "Private VIP Mercedes Chauffeur for all appointments",
           "Custom dental night guard & protective travel kit",
           "5-Year Clinical Warranty on all bonded surfaces"
@@ -616,7 +616,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Diastema Closure & Edge Bonding Package",
         "brand": "3M Filtek / Tokuyama Estelite Asteria",
         "duration": "1 – 3 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-3.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "included": [
           "Direct gap closure between central incisors & edge repair",
           "Zero tooth shaving / 100% enamel preservation",
@@ -655,23 +655,23 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
       {
         "q": "How long does the composite veneer procedure take?",
         "a": [
-          "A full smile makeover with 8 to 16 composite veneers is typically completed in 1 to 2 sessions over a 2 to 4-day stay in Istanbul."
+          "A full smile makeover with 8 to 16 composite veneers is typically completed in 1 to 2 sessions over a 2 to 4-day stay in Antalya."
         ]
       }
     ]
   },
   "es": {
     "packagesTitle": "Direct Composite Veneer & Dental Bonding Packages",
-    "packagesSubtitle": "Minimally invasive, single-visit smile design packages with premium German nano-hybrid composite resin, shade-matching artistry, hotel stay, and VIP transfers in Istanbul.",
+    "packagesSubtitle": "Minimally invasive, single-visit smile design packages with premium German nano-hybrid composite resin, shade-matching artistry, hotel stay, and VIP transfers in Antalya.",
     "mostPopularBadge": "Most Popular Choice",
     "durationLabel": "Procedure Time:",
     "includedLabel": "Package Inclusions:",
     "priceLabel": "Price (All-Inclusive):",
     "getQuoteBtn": "Get Your Free Quote",
     "faqTitle": "Frequently Asked Questions About Composite Veneers & Bonding",
-    "faqSubtitle": "Detailed clinical guidance on direct composite resin veneers, same-day chairside bonding, diastema closures, staining resistance, durability, and aftercare in Istanbul.",
-    "stayDuration": "<strong>2 to 4 days in Istanbul.</strong> Direct composite veneers and bonding can often be completed in 1 to 2 clinical sessions with immediate same-day smile results.",
-    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to visit Istanbul once. Your composite veneers or smile bonding are sculpted, cured, and high-gloss polished in a single visit.",
+    "faqSubtitle": "Detailed clinical guidance on direct composite resin veneers, same-day chairside bonding, diastema closures, staining resistance, durability, and aftercare in Antalya.",
+    "stayDuration": "<strong>2 to 4 days in Antalya.</strong> Direct composite veneers and bonding can often be completed in 1 to 2 clinical sessions with immediate same-day smile results.",
+    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to visit Antalya once. Your composite veneers or smile bonding are sculpted, cured, and high-gloss polished in a single visit.",
     "recoveryTime": "<strong>Immediate recovery.</strong> Zero downtime and no invasive enamel reduction. You can eat, speak, and smile immediately following your chairside appointment.",
     "priceEstimate": "<strong>Composite Veneer prices start at £110 / €125 / $140 per tooth.</strong> Multi-unit smile packages (6, 8, or 16 teeth) include comprehensive 3D smile analysis, luxury hotel accommodation, and VIP transfers with zero hidden fees.",
     "packages": [
@@ -679,7 +679,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Composite Veneer / Bonding",
         "brand": "German Tokuyama / 3M Filtek Supreme Nano-Hybrid",
         "duration": "1 – 2 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/composite-laminate-copy.webp",
+        "img": "/treatments/accordion/composite-laminate.webp",
         "included": [
           "1x Direct Layered Nano-Hybrid Composite Veneer",
           "Micro-aesthetic tooth shaping & surface conditioning",
@@ -698,13 +698,13 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "8-Unit Smile Line Composite Makeover",
         "brand": "German Tokuyama / 3M Nano-Hybrid Resin",
         "duration": "2 – 4 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-1.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "popular": true,
         "included": [
           "8x Upper Social Smile Direct Composite Veneers",
           "3D Digital Smile Simulation & Tooth Proportions Analysis",
           "Diastema (gap) closure & incisal edge elongation",
-          "4-Star Luxury Hotel Stay in Istanbul (3 Nights)",
+          "4-Star Luxury Hotel Stay in Antalya (3 Nights)",
           "VIP Mercedes Chauffeur Airport & Clinic Transfers",
           "Comprehensive high-gloss polish & surface sealant",
           "5-Year Clinical Warranty & aftercare kit"
@@ -719,12 +719,12 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "16-Unit Full Composite Smile Makeover",
         "brand": "Premium German Nano-Hybrid Polychromatic Resin",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-2.jpg",
+        "img": "/packages/pkg-emax.webp",
         "included": [
           "16x Direct Composite Veneers (8 Upper + 8 Lower Teeth)",
           "Full aesthetic bite alignment & golden ratio facial harmony",
           "Dual arch composite sculpting with multi-shade opalescent layers",
-          "4-Star Hotel Stay with Breakfast in Istanbul (4 Nights)",
+          "4-Star Hotel Stay with Breakfast in Antalya (4 Nights)",
           "Private VIP Mercedes Chauffeur for all appointments",
           "Custom dental night guard & protective travel kit",
           "5-Year Clinical Warranty on all bonded surfaces"
@@ -739,7 +739,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Diastema Closure & Edge Bonding Package",
         "brand": "3M Filtek / Tokuyama Estelite Asteria",
         "duration": "1 – 3 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-3.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "included": [
           "Direct gap closure between central incisors & edge repair",
           "Zero tooth shaving / 100% enamel preservation",
@@ -778,23 +778,23 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
       {
         "q": "How long does the composite veneer procedure take?",
         "a": [
-          "A full smile makeover with 8 to 16 composite veneers is typically completed in 1 to 2 sessions over a 2 to 4-day stay in Istanbul."
+          "A full smile makeover with 8 to 16 composite veneers is typically completed in 1 to 2 sessions over a 2 to 4-day stay in Antalya."
         ]
       }
     ]
   },
   "ru": {
     "packagesTitle": "Direct Composite Veneer & Dental Bonding Packages",
-    "packagesSubtitle": "Minimally invasive, single-visit smile design packages with premium German nano-hybrid composite resin, shade-matching artistry, hotel stay, and VIP transfers in Istanbul.",
+    "packagesSubtitle": "Minimally invasive, single-visit smile design packages with premium German nano-hybrid composite resin, shade-matching artistry, hotel stay, and VIP transfers in Antalya.",
     "mostPopularBadge": "Most Popular Choice",
     "durationLabel": "Procedure Time:",
     "includedLabel": "Package Inclusions:",
     "priceLabel": "Price (All-Inclusive):",
     "getQuoteBtn": "Get Your Free Quote",
     "faqTitle": "Frequently Asked Questions About Composite Veneers & Bonding",
-    "faqSubtitle": "Detailed clinical guidance on direct composite resin veneers, same-day chairside bonding, diastema closures, staining resistance, durability, and aftercare in Istanbul.",
-    "stayDuration": "<strong>2 to 4 days in Istanbul.</strong> Direct composite veneers and bonding can often be completed in 1 to 2 clinical sessions with immediate same-day smile results.",
-    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to visit Istanbul once. Your composite veneers or smile bonding are sculpted, cured, and high-gloss polished in a single visit.",
+    "faqSubtitle": "Detailed clinical guidance on direct composite resin veneers, same-day chairside bonding, diastema closures, staining resistance, durability, and aftercare in Antalya.",
+    "stayDuration": "<strong>2 to 4 days in Antalya.</strong> Direct composite veneers and bonding can often be completed in 1 to 2 clinical sessions with immediate same-day smile results.",
+    "visitCount": "<strong>Single 1-visit trip.</strong> You only need to visit Antalya once. Your composite veneers or smile bonding are sculpted, cured, and high-gloss polished in a single visit.",
     "recoveryTime": "<strong>Immediate recovery.</strong> Zero downtime and no invasive enamel reduction. You can eat, speak, and smile immediately following your chairside appointment.",
     "priceEstimate": "<strong>Composite Veneer prices start at £110 / €125 / $140 per tooth.</strong> Multi-unit smile packages (6, 8, or 16 teeth) include comprehensive 3D smile analysis, luxury hotel accommodation, and VIP transfers with zero hidden fees.",
     "packages": [
@@ -802,7 +802,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Composite Veneer / Bonding",
         "brand": "German Tokuyama / 3M Filtek Supreme Nano-Hybrid",
         "duration": "1 – 2 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/composite-laminate-copy.webp",
+        "img": "/treatments/accordion/composite-laminate.webp",
         "included": [
           "1x Direct Layered Nano-Hybrid Composite Veneer",
           "Micro-aesthetic tooth shaping & surface conditioning",
@@ -821,13 +821,13 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "8-Unit Smile Line Composite Makeover",
         "brand": "German Tokuyama / 3M Nano-Hybrid Resin",
         "duration": "2 – 4 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-1.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "popular": true,
         "included": [
           "8x Upper Social Smile Direct Composite Veneers",
           "3D Digital Smile Simulation & Tooth Proportions Analysis",
           "Diastema (gap) closure & incisal edge elongation",
-          "4-Star Luxury Hotel Stay in Istanbul (3 Nights)",
+          "4-Star Luxury Hotel Stay in Antalya (3 Nights)",
           "VIP Mercedes Chauffeur Airport & Clinic Transfers",
           "Comprehensive high-gloss polish & surface sealant",
           "5-Year Clinical Warranty & aftercare kit"
@@ -842,12 +842,12 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "16-Unit Full Composite Smile Makeover",
         "brand": "Premium German Nano-Hybrid Polychromatic Resin",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-2.jpg",
+        "img": "/packages/pkg-emax.webp",
         "included": [
           "16x Direct Composite Veneers (8 Upper + 8 Lower Teeth)",
           "Full aesthetic bite alignment & golden ratio facial harmony",
           "Dual arch composite sculpting with multi-shade opalescent layers",
-          "4-Star Hotel Stay with Breakfast in Istanbul (4 Nights)",
+          "4-Star Hotel Stay with Breakfast in Antalya (4 Nights)",
           "Private VIP Mercedes Chauffeur for all appointments",
           "Custom dental night guard & protective travel kit",
           "5-Year Clinical Warranty on all bonded surfaces"
@@ -862,7 +862,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Diastema Closure & Edge Bonding Package",
         "brand": "3M Filtek / Tokuyama Estelite Asteria",
         "duration": "1 – 3 Days (1 Trip)",
-        "img": "https://sohodent.com/doc/data1/E-Max-Veneers-Package-3.jpg",
+        "img": "/packages/pkg-veneers.webp",
         "included": [
           "Direct gap closure between central incisors & edge repair",
           "Zero tooth shaving / 100% enamel preservation",
@@ -901,7 +901,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
       {
         "q": "How long does the composite veneer procedure take?",
         "a": [
-          "A full smile makeover with 8 to 16 composite veneers is typically completed in 1 to 2 sessions over a 2 to 4-day stay in Istanbul."
+          "A full smile makeover with 8 to 16 composite veneers is typically completed in 1 to 2 sessions over a 2 to 4-day stay in Antalya."
         ]
       }
     ]

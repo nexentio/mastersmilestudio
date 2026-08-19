@@ -22,15 +22,42 @@
   "doctorTulayTitle": "Oral & Maxillofacial Surgeon",
   "doctorAliKemalTitle": "Specialist Dentist",
   "doctorAbdullahTitle": "Endodontics & Restorative Dentist",
-  "smileDesign": { "title": "Smile Design", "description": "Custom digital smile architecture tailored to facial golden proportions." },
-  "implant": { "title": "Dental Implants", "description": "Lifelong biocompatible titanium implant solutions offering a natural tooth feel." },
-  "emax": { "title": "E-max Veneers", "description": "Ultra-thin porcelain laminates with maximum natural light translucency." },
-  "zirconia": { "title": "Zirconia Crowns", "description": "Metal-free, exceptionally durable crowns with natural aesthetics." },
-  "whitening": { "title": "Teeth Whitening", "description": "Safe, clinic-grade laser whitening achieving multiple shades brighter." },
-  "rootCanal": { "title": "Root Canal Treatment", "description": "Painless microscopic natural tooth preservation and endodontic care." },
-  "dentures": { "title": "Dentures & Prosthetics", "description": "Comfortable, natural-looking fixed and removable prosthetics." },
-  "bonding": { "title": "Composite Bonding", "description": "Same-day cosmetic enhancement for chipped, spaced, or irregular teeth." },
-  "orthodontics": { "title": "Orthodontics", "description": "Clear aligners and modern aesthetic brackets for flawless alignment." },
+  "smileDesign": {
+    "title": "Smile Design",
+    "description": "Custom digital smile architecture tailored to facial golden proportions."
+  },
+  "implant": {
+    "title": "Dental Implants",
+    "description": "Lifelong biocompatible titanium implant solutions offering a natural tooth feel."
+  },
+  "emax": {
+    "title": "E-max Veneers",
+    "description": "Ultra-thin porcelain laminates with maximum natural light translucency."
+  },
+  "zirconia": {
+    "title": "Zirconia Crowns",
+    "description": "Metal-free, exceptionally durable crowns with natural aesthetics."
+  },
+  "whitening": {
+    "title": "Teeth Whitening",
+    "description": "Safe, clinic-grade laser whitening achieving multiple shades brighter."
+  },
+  "rootCanal": {
+    "title": "Root Canal Treatment",
+    "description": "Painless microscopic natural tooth preservation and endodontic care."
+  },
+  "dentures": {
+    "title": "Dentures & Prosthetics",
+    "description": "Comfortable, natural-looking fixed and removable prosthetics."
+  },
+  "bonding": {
+    "title": "Composite Bonding",
+    "description": "Same-day cosmetic enhancement for chipped, spaced, or irregular teeth."
+  },
+  "orthodontics": {
+    "title": "Orthodontics",
+    "description": "Clear aligners and modern aesthetic brackets for flawless alignment."
+  },
   "items": {
     "smileDesign": {
       "title": "SMILE DESIGN",
@@ -129,7 +156,7 @@
     }
   },
   "dentalImplantsIntro": {
-    "title": "Dental Implants in Istanbul – Master Smile Studio Turkey",
+    "title": "Dental Implants in Antalya – Master Smile Studio Turkey",
     "whatIsTitle": "What Are Dental Implants?",
     "whatIsP1": "A dental implant is an artificial tooth root that replaces a missing tooth. It looks like a small screw, usually made of titanium, and is placed into the jawbone to hold a new tooth securely. For a full tooth replacement, three main parts are used:",
     "part1Label": "Dental implant (titanium screw)",
@@ -138,8 +165,10 @@
     "part2Desc": "connects the implant to the crown.",
     "part3Label": "Crown",
     "part3Desc": "the visible part that looks like a natural tooth.",
-    "healingP": "Once the implant has healed and bonded strongly with the bone, the crown is made and attached. At Master Smile Studio in Istanbul, our expert team specializing in oral surgery ensures a seamless and high-quality dental implant procedure to restore your smile.",
-    "solutionP": "If you are missing one or more teeth, dental implants in Istanbul can be a safe, long-lasting, and aesthetic solution.",
-    "costHeading": "Dental Implants Cost (Price) in Istanbul, Turkey"
-  }
+    "healingP": "Once the implant has healed and bonded strongly with the bone, the crown is made and attached. At Master Smile Studio in Antalya, our expert team specializing in oral surgery ensures a seamless and high-quality dental implant procedure to restore your smile.",
+    "solutionP": "If you are missing one or more teeth, dental implants in Antalya can be a safe, long-lasting, and aesthetic solution.",
+    "costHeading": "Dental Implants Cost (Price) in Antalya, Turkey"
+  },
+  "doctorFiratTitle": "Oral & Maxillofacial Surgeon",
+  "doctorOzanTitle": "Prosthodontist & Aesthetic Dentist"
 }

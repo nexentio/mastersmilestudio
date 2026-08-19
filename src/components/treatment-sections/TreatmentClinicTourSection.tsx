@@ -26,8 +26,8 @@ export default function TreatmentClinicTourSection({}: Props) {
             <div className="s s2">
               <div className={styles.tagline}>
                 {locale === 'tr'
-                  ? 'İstanbul’un kalbinde yer alan son teknoloji kliniğimizde sanal bir tura çıkın.'
-                  : 'Take a virtual tour of our state-of-the-art clinic located in the heart of Istanbul.'}
+                  ? 'Antalya’nın kalbinde yer alan son teknoloji kliniğimizde sanal bir tura çıkın.'
+                  : 'Take a virtual tour of our state-of-the-art clinic located in the heart of Antalya.'}
               </div>
               <p className="treatment-text-p m-0 text-slate-500">
                 {locale === 'tr'
@@ -42,7 +42,7 @@ export default function TreatmentClinicTourSection({}: Props) {
         <div className={styles.videoBox}>
           {isPlaying ? (
             <iframe
-              src="https://www.youtube.com/embed/smhwCD78Vbo?autoplay=1"
+              src="https://www.youtube.com/embed/eiTTit9PLrQ?autoplay=1"
               title="Step Inside Master Smile Studio Virtual Tour"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen

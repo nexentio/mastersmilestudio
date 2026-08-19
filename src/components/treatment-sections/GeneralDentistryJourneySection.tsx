@@ -28,7 +28,7 @@ interface JourneyDictionary {
 const JOURNEY_I18N: Record<string, JourneyDictionary> = {
   en: {
     headTitle: 'Your Dental Journey Made Simple',
-    headSubtitle: 'From your very first inquiry to the final results, we ensure a smooth and transparent treatment journey in Istanbul. Learn about how long you’ll stay, how many visits you’ll need, your recovery time, and estimated pricing — all designed with international patients in mind. Let us take care of the details, so you can focus on your smile.',
+    headSubtitle: 'From your very first inquiry to the final results, we ensure a smooth and transparent treatment journey in Antalya. Learn about how long you’ll stay, how many visits you’ll need, your recovery time, and estimated pricing — all designed with international patients in mind. Let us take care of the details, so you can focus on your smile.',
     reachTitle: 'Reach Out to Us - Quickly and Easily',
     btnWhatsapp: 'WhatsApp',
     btnPhone: 'Phone Call',
@@ -38,9 +38,9 @@ const JOURNEY_I18N: Record<string, JourneyDictionary> = {
       {
         id: 'stay',
         icon: '/icons/journey-01.webp',
-        title: 'Average Length of Stay in Istanbul',
+        title: 'Average Length of Stay in Antalya',
         sub: '-',
-        desc: 'For routine cleanings, composite fillings, or simple extractions, a short 1-day to 3-day stay in Istanbul is usually sufficient. Complex procedures like multiple root canals or wisdom tooth surgeries may require up to 4-5 days for comfortable follow-up.',
+        desc: 'For routine cleanings, composite fillings, or simple extractions, a short 1-day to 3-day stay in Antalya is usually sufficient. Complex procedures like multiple root canals or wisdom tooth surgeries may require up to 4-5 days for comfortable follow-up.',
       },
       {
         id: 'visits',
@@ -67,7 +67,7 @@ const JOURNEY_I18N: Record<string, JourneyDictionary> = {
   },
   tr: {
     headTitle: 'Diş Tedavi Süreciniz Artık Çok Kolay',
-    headSubtitle: 'İlk iletişiminizden nihai tedavi sonucunuza kadar, İstanbul’da sorunsuz ve şeffaf bir klinik yolculuk sunuyoruz. Konaklama süreniz, gereken seans sayısı, iyileşme süreciniz ve tahmini fiyatlarımız hakkında tüm detayları öğrenin.',
+    headSubtitle: 'İlk iletişiminizden nihai tedavi sonucunuza kadar, Antalya’da sorunsuz ve şeffaf bir klinik yolculuk sunuyoruz. Konaklama süreniz, gereken seans sayısı, iyileşme süreciniz ve tahmini fiyatlarımız hakkında tüm detayları öğrenin.',
     reachTitle: 'Bize Kolayca ve Hızlıca Ulaşın',
     btnWhatsapp: 'WhatsApp',
     btnPhone: 'Telefonla Ara',
@@ -77,9 +77,9 @@ const JOURNEY_I18N: Record<string, JourneyDictionary> = {
       {
         id: 'stay',
         icon: '/icons/journey-01.webp',
-        title: 'İstanbul’da Ortalama Kalış Süresi',
+        title: 'Antalya’da Ortalama Kalış Süresi',
         sub: '-',
-        desc: 'Diş taşı temizliği, kompozit dolgu ve basit çekimler gibi rutin tedaviler için genellikle 1-3 günlük bir İstanbul seyahati yeterlidir. Çoklu kanal tedavisi veya cerrahi 20\'lik diş çekimlerinde ise takip kontrolleri için 4-5 gün önerilir.',
+        desc: 'Diş taşı temizliği, kompozit dolgu ve basit çekimler gibi rutin tedaviler için genellikle 1-3 günlük bir Antalya seyahati yeterlidir. Çoklu kanal tedavisi veya cerrahi 20\'lik diş çekimlerinde ise takip kontrolleri için 4-5 gün önerilir.',
       },
       {
         id: 'visits',
@@ -106,7 +106,7 @@ const JOURNEY_I18N: Record<string, JourneyDictionary> = {
   },
   de: {
     headTitle: 'Ihre Zahnbehandlung – Einfach & Transparent',
-    headSubtitle: 'Von Ihrer ersten Anfrage bis zum perfekten Endergebnis gewährleisten wir eine transparente und reibungslose Behandlungsreise in Istanbul. Erfahren Sie alles über Aufenthaltsdauer, Termine, Heilungsverlauf und Preise.',
+    headSubtitle: 'Von Ihrer ersten Anfrage bis zum perfekten Endergebnis gewährleisten wir eine transparente und reibungslose Behandlungsreise in Antalya. Erfahren Sie alles über Aufenthaltsdauer, Termine, Heilungsverlauf und Preise.',
     reachTitle: 'Kontaktieren Sie uns – Schnell & Unkompliziert',
     btnWhatsapp: 'WhatsApp',
     btnPhone: 'Anrufen',
@@ -116,9 +116,9 @@ const JOURNEY_I18N: Record<string, JourneyDictionary> = {
       {
         id: 'stay',
         icon: '/icons/journey-01.webp',
-        title: 'Durchschnittliche Aufenthaltsdauer in Istanbul',
+        title: 'Durchschnittliche Aufenthaltsdauer in Antalya',
         sub: '-',
-        desc: 'Für Routine-Zahnreinigungen, Kompositfüllungen oder einfache Extraktionen reicht in der Regel ein kurzer Aufenthalt von 1 bis 3 Tagen in Istanbul völlig aus.',
+        desc: 'Für Routine-Zahnreinigungen, Kompositfüllungen oder einfache Extraktionen reicht in der Regel ein kurzer Aufenthalt von 1 bis 3 Tagen in Antalya völlig aus.',
       },
       {
         id: 'visits',
@@ -145,7 +145,7 @@ const JOURNEY_I18N: Record<string, JourneyDictionary> = {
   },
   pl: {
     headTitle: 'Twoja Droga do Zdrowego Uśmiechu – Prosto i Przejrzyście',
-    headSubtitle: 'Od pierwszego kontaktu po ostateczne rezultaty zapewniamy bezstresowy pobyt leczniczy w Stambule. Dowiedz się, ile potrwa Twój pobyt, ile wizyt będzie potrzebnych oraz jakie są szacunkowe koszty.',
+    headSubtitle: 'Od pierwszego kontaktu po ostateczne rezultaty zapewniamy bezstresowy pobyt leczniczy w Antalyi. Dowiedz się, ile potrwa Twój pobyt, ile wizyt będzie potrzebnych oraz jakie są szacunkowe koszty.',
     reachTitle: 'Skontaktuj się z nami — Szybko i Wygodnie',
     btnWhatsapp: 'WhatsApp',
     btnPhone: 'Zadzwoń',
@@ -155,9 +155,9 @@ const JOURNEY_I18N: Record<string, JourneyDictionary> = {
       {
         id: 'stay',
         icon: '/icons/journey-01.webp',
-        title: 'Średni Czas Pobytu w Stambule',
+        title: 'Średni Czas Pobytu w Antalyi',
         sub: '-',
-        desc: 'W przypadku rutynowej higienizacji, wypełnień kompozytowych lub prostych ekstrakcji zazwyczaj wystarcza krótki pobyt 1–3 dni w Stambule.',
+        desc: 'W przypadku rutynowej higienizacji, wypełnień kompozytowych lub prostych ekstrakcji zazwyczaj wystarcza krótki pobyt 1–3 dni w Antalyi.',
       },
       {
         id: 'visits',
@@ -184,7 +184,7 @@ const JOURNEY_I18N: Record<string, JourneyDictionary> = {
   },
   pt: {
     headTitle: 'A Sua Jornada Dentária Simplificada',
-    headSubtitle: 'Desde o primeiro contacto até aos resultados finais, garantimos uma experiência de tratamento tranquila e transparente em Istambul. Conheça a duração da estadia, o número de consultas e os custos estimados.',
+    headSubtitle: 'Desde o primeiro contacto até aos resultados finais, garantimos uma experiência de tratamento tranquila e transparente em Antalya. Conheça a duração da estadia, o número de consultas e os custos estimados.',
     reachTitle: 'Fale Connosco – Rápido e Fácil',
     btnWhatsapp: 'WhatsApp',
     btnPhone: 'Telefone',
@@ -194,9 +194,9 @@ const JOURNEY_I18N: Record<string, JourneyDictionary> = {
       {
         id: 'stay',
         icon: '/icons/journey-01.webp',
-        title: 'Tempo Médio de Estadia em Istambul',
+        title: 'Tempo Médio de Estadia em Antalya',
         sub: '-',
-        desc: 'Para destartarização de rotina, restaurações em resina ou extrações simples, uma estadia curta de 1 a 3 dias em Istambul é geralmente suficiente.',
+        desc: 'Para destartarização de rotina, restaurações em resina ou extrações simples, uma estadia curta de 1 a 3 dias em Antalya é geralmente suficiente.',
       },
       {
         id: 'visits',
@@ -223,7 +223,7 @@ const JOURNEY_I18N: Record<string, JourneyDictionary> = {
   },
   es: {
     headTitle: 'Su Viaje Dental Hecho Fácil',
-    headSubtitle: 'Desde su primera consulta hasta el resultado final, le garantizamos un tratamiento transparente y sin complicaciones en Estambul. Conozca el tiempo de estancia, las visitas requeridas y los precios estimados.',
+    headSubtitle: 'Desde su primera consulta hasta el resultado final, le garantizamos un tratamiento transparente y sin complicaciones en Antalya. Conozca el tiempo de estancia, las visitas requeridas y los precios estimados.',
     reachTitle: 'Póngase en Contacto – Fácil y Rápido',
     btnWhatsapp: 'WhatsApp',
     btnPhone: 'Llamar',
@@ -233,9 +233,9 @@ const JOURNEY_I18N: Record<string, JourneyDictionary> = {
       {
         id: 'stay',
         icon: '/icons/journey-01.webp',
-        title: 'Duración Media de la Estancia en Estambul',
+        title: 'Duración Media de la Estancia en Antalya',
         sub: '-',
-        desc: 'Para limpiezas rutinarias, empastes de composite o extracciones simples, suele ser suficiente una estancia corta de 1 a 3 días en Estambul.',
+        desc: 'Para limpiezas rutinarias, empastes de composite o extracciones simples, suele ser suficiente una estancia corta de 1 a 3 días en Antalya.',
       },
       {
         id: 'visits',
@@ -262,7 +262,7 @@ const JOURNEY_I18N: Record<string, JourneyDictionary> = {
   },
   ru: {
     headTitle: 'Ваш путь к здоровой улыбке — просто и понятно',
-    headSubtitle: 'С момента первого обращения до финального результата мы гарантируем комфортное и прозрачное лечение в Стамбуле. Узнайте о сроках пребывания, количестве визитов и стоимости.',
+    headSubtitle: 'С момента первого обращения до финального результата мы гарантируем комфортное и прозрачное лечение в Анталье. Узнайте о сроках пребывания, количестве визитов и стоимости.',
     reachTitle: 'Свяжитесь с нами — Быстро и Удобно',
     btnWhatsapp: 'WhatsApp',
     btnPhone: 'Позвонить',
@@ -272,9 +272,9 @@ const JOURNEY_I18N: Record<string, JourneyDictionary> = {
       {
         id: 'stay',
         icon: '/icons/journey-01.webp',
-        title: 'Средняя продолжительность пребывания в Стамбуле',
+        title: 'Средняя продолжительность пребывания в Анталье',
         sub: '-',
-        desc: 'Для профессиональной чистки, композитных пломб или простого удаления зубов обычно достаточно короткой поездки в Стамбул на 1–3 дня.',
+        desc: 'Для профессиональной чистки, композитных пломб или простого удаления зубов обычно достаточно короткой поездки в Анталью на 1–3 дня.',
       },
       {
         id: 'visits',

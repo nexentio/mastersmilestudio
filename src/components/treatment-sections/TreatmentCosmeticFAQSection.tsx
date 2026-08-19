@@ -19,7 +19,7 @@ const COSMETIC_FAQ_DATA: Record<string, FAQDictionary> = {
   en: {
     title: 'Frequently Asked Questions About Cosmetic Dentistry & Hollywood Smile',
     subText:
-      'Everything you need to know about 3D Digital Smile Design, Hollywood Smile makeovers, laser gum aesthetics, and tooth whitening in Istanbul.',
+      'Everything you need to know about 3D Digital Smile Design, Hollywood Smile makeovers, laser gum aesthetics, and tooth whitening in Antalya.',
     items: [
       {
         q: 'What is a Hollywood Smile Makeover and what does it include?',
@@ -46,8 +46,8 @@ const COSMETIC_FAQ_DATA: Record<string, FAQDictionary> = {
         a: 'Not at all. Every step is performed under gentle computer-guided local anesthesia. Temporary teeth are placed immediately on day one to prevent sensitivity while your permanent teeth are crafted in our lab.',
       },
       {
-        q: 'How many days do I need to stay in Istanbul for a Hollywood Smile?',
-        a: 'A complete Hollywood Smile transformation takes only 4 to 6 days in Istanbul (typically 3 visits: 1. Consultation, DSD scan & mock-up; 2. Enamel preparation & digital impression; 3. Try-in, final aesthetic check & bonding).',
+        q: 'How many days do I need to stay in Antalya for a Hollywood Smile?',
+        a: 'A complete Hollywood Smile transformation takes only 4 to 6 days in Antalya (typically 3 visits: 1. Consultation, DSD scan & mock-up; 2. Enamel preparation & digital impression; 3. Try-in, final aesthetic check & bonding).',
       },
       {
         q: 'Can cosmetic dentistry fix gaps between my teeth (Diastema)?',
@@ -75,7 +75,7 @@ const COSMETIC_FAQ_DATA: Record<string, FAQDictionary> = {
       },
       {
         q: 'Can I pay for my smile makeover package in installments?',
-        a: 'Yes! A small deposit confirms your appointment, and the remainder is split across your clinic visits in Istanbul.',
+        a: 'Yes! A small deposit confirms your appointment, and the remainder is split across your clinic visits in Antalya.',
       },
       {
         q: 'What warranty is provided with cosmetic treatments at Master Smile Studio?',
@@ -117,7 +117,7 @@ const COSMETIC_FAQ_DATA: Record<string, FAQDictionary> = {
         a: 'Hayır. Tüm aşındırma ve yapıştırma işlemleri gelişmiş lokal anestezi altında tamamen ağrısız olarak gerçekleştirilir. İşlem sonrasında takılan geçici dişler sayesinde hiçbir hassasiyet yaşanmaz.',
       },
       {
-        q: 'Hollywood Smile tedavisi için İstanbul’da kaç gün kalmam gerekir?',
+        q: 'Hollywood Smile tedavisi için Antalya’da kaç gün kalmam gerekir?',
         a: 'Komple Hollywood Smile dönüşümü 4 ila 6 gün (3 klinik seansı) içinde tamamlanır.',
       },
       {
@@ -161,7 +161,7 @@ const COSMETIC_FAQ_DATA: Record<string, FAQDictionary> = {
   de: {
     title: 'Häufig gestellte Fragen zu Ästhetischer Zahnmedizin & Hollywood Smile',
     subText:
-      'Alles über 3D Digital Smile Design, Hollywood Smile Makeover, Laser-Zahnfleischkorrektur und Bleaching in Istanbul.',
+      'Alles über 3D Digital Smile Design, Hollywood Smile Makeover, Laser-Zahnfleischkorrektur und Bleaching in Antalya.',
     items: [
       {
         q: 'Was ist ein Hollywood Smile Makeover und was beinhaltet es?',
@@ -188,7 +188,7 @@ const COSMETIC_FAQ_DATA: Record<string, FAQDictionary> = {
         a: 'Nein, alle Schritte erfolgen vollkommen schmerzfrei unter moderner Lokalanästhesie mit sofortigen Provisorien.',
       },
       {
-        q: 'Wie viele Tage Aufenthalt in Istanbul sind erforderlich?',
+        q: 'Wie viele Tage Aufenthalt in Antalya sind erforderlich?',
         a: 'Die komplette Behandlung dauert nur 4 bis 6 Tage (3 kurze Termine in unserer Klinik).',
       },
       {
@@ -217,7 +217,7 @@ const COSMETIC_FAQ_DATA: Record<string, FAQDictionary> = {
       },
       {
         q: 'Kann die Behandlung in Raten gezahlt werden?',
-        a: 'Ja, nach einer Anzahlung wird der Restbetrag auf die Behandlungstermine in Istanbul aufgeteilt.',
+        a: 'Ja, nach einer Anzahlung wird der Restbetrag auf die Behandlungstermine in Antalya aufgeteilt.',
       },
       {
         q: 'Welche Garantie erhalte ich auf mein Hollywood Smile?',
@@ -232,7 +232,7 @@ const COSMETIC_FAQ_DATA: Record<string, FAQDictionary> = {
   pl: {
     title: 'Często Zadawane Pytania o Stomatologię Estetyczną i Hollywood Smile',
     subText:
-      'Wszystko o Cyfrowym Projektowaniu Uśmiechu 3D, metamorfozie Hollywood Smile, plastyce dziąseł i wybielaniu w Stambule.',
+      'Wszystko o Cyfrowym Projektowaniu Uśmiechu 3D, metamorfozie Hollywood Smile, plastyce dziąseł i wybielaniu w Antalyi.',
     items: [
       {
         q: 'Czym jest Hollywood Smile i co obejmuje metamorfoza?',
@@ -259,7 +259,7 @@ const COSMETIC_FAQ_DATA: Record<string, FAQDictionary> = {
         a: 'Zabieg jest w 100% bezbolesny w znieczuleniu miejscowym. Natychmiast montowane są korony tymczasowe.',
       },
       {
-        q: 'Ile dni trwa zabieg Hollywood Smile w Stambule?',
+        q: 'Ile dni trwa zabieg Hollywood Smile w Antalyi?',
         a: 'Cała metamorfoza trwa zaledwie 4 do 6 dni (3 krótkie wizyty w klinice).',
       },
       {
@@ -288,7 +288,7 @@ const COSMETIC_FAQ_DATA: Record<string, FAQDictionary> = {
       },
       {
         q: 'Czy mogę rozłożyć płatność na raty?',
-        a: 'Tak, płatność może być dzielona pomiędzy kolejne etapy wizyt w Stambule.',
+        a: 'Tak, płatność może być dzielona pomiędzy kolejne etapy wizyt w Antalyi.',
       },
       {
         q: 'Jaką gwarancję otrzymuję na Hollywood Smile?',
@@ -303,7 +303,7 @@ const COSMETIC_FAQ_DATA: Record<string, FAQDictionary> = {
   pt: {
     title: 'Perguntas Frequentes Sobre Odontologia Estética e Hollywood Smile',
     subText:
-      'Tudo sobre Design Digital 3D, transformação Hollywood Smile, plástica gengival a laser e clareamento em Istambul.',
+      'Tudo sobre Design Digital 3D, transformação Hollywood Smile, plástica gengival a laser e clareamento em Antalya.',
     items: [
       {
         q: 'O que é o Hollywood Smile e o que ele inclui?',
@@ -330,7 +330,7 @@ const COSMETIC_FAQ_DATA: Record<string, FAQDictionary> = {
         a: 'Não, é 100% livre de dor com anestesia computadorizada e colocação de dentes provisórios imediatos.',
       },
       {
-        q: 'Quantos dias preciso ficar em Istambul para o Hollywood Smile?',
+        q: 'Quantos dias preciso ficar em Antalya para o Hollywood Smile?',
         a: 'A transformação completa leva de 4 a 6 dias (3 consultas clínicas).',
       },
       {
@@ -359,7 +359,7 @@ const COSMETIC_FAQ_DATA: Record<string, FAQDictionary> = {
       },
       {
         q: 'Posso parcelar o tratamento?',
-        a: 'Sim, o pagamento é dividido ao longo dos dias de consulta em Istambul.',
+        a: 'Sim, o pagamento é dividido ao longo dos dias de consulta em Antalya.',
       },
       {
         q: 'Qual a garantia oferecida no Hollywood Smile?',
@@ -374,7 +374,7 @@ const COSMETIC_FAQ_DATA: Record<string, FAQDictionary> = {
   es: {
     title: 'Preguntas Frecuentes Sobre Estética Dental y Hollywood Smile',
     subText:
-      'Todo lo que necesita saber sobre Diseño Digital 3D, transformación Hollywood Smile, gingivoplastia láser y blanqueamiento en Estambul.',
+      'Todo lo que necesita saber sobre Diseño Digital 3D, transformación Hollywood Smile, gingivoplastia láser y blanqueamiento en Antalya.',
     items: [
       {
         q: '¿Qué es el Hollywood Smile y qué incluye?',
@@ -401,7 +401,7 @@ const COSMETIC_FAQ_DATA: Record<string, FAQDictionary> = {
         a: 'No, es 100% indoloro con anestesia local avanzada y colocación de dientes provisionales inmediatos.',
       },
       {
-        q: '¿Cuántos días de estancia en Estambul se requieren?',
+        q: '¿Cuántos días de estancia en Antalya se requieren?',
         a: 'La transformación completa se realiza en tan solo 4 a 6 días (3 citas clínicas).',
       },
       {
@@ -430,7 +430,7 @@ const COSMETIC_FAQ_DATA: Record<string, FAQDictionary> = {
       },
       {
         q: '¿Se puede pagar a plazos?',
-        a: 'Sí, el importe se abona de manera escalonada en cada fase del tratamiento en Estambul.',
+        a: 'Sí, el importe se abona de manera escalonada en cada fase del tratamiento en Antalya.',
       },
       {
         q: '¿Qué garantía tiene el Hollywood Smile?',
@@ -445,7 +445,7 @@ const COSMETIC_FAQ_DATA: Record<string, FAQDictionary> = {
   ru: {
     title: 'Часто задаваемые вопросы об эстетической стоматологии и Голливудской улыбке',
     subText:
-      'Все о цифровом дизайне 3D DSD, Голливудской улыбке (Hollywood Smile), лазерной пластике десен и отбеливании в Стамбуле.',
+      'Все о цифровом дизайне 3D DSD, Голливудской улыбке (Hollywood Smile), лазерной пластике десен и отбеливании в Анталье.',
     items: [
       {
         q: 'Что такое Голливудская улыбка (Hollywood Smile) и что входит в комплекс?',
@@ -472,7 +472,7 @@ const COSMETIC_FAQ_DATA: Record<string, FAQDictionary> = {
         a: 'Процедура на 100% безболезненна благодаря качественной местной анестезии. В первый же день ставятся временные виниры.',
       },
       {
-        q: 'Сколько дней занимает создание Hollywood Smile в Стамбуле?',
+        q: 'Сколько дней занимает создание Hollywood Smile в Анталье?',
         a: 'Полное преображение занимает от 4 до 6 дней (всего 3 визита в клинику).',
       },
       {
@@ -501,7 +501,7 @@ const COSMETIC_FAQ_DATA: Record<string, FAQDictionary> = {
       },
       {
         q: 'Возможна ли оплата в рассрочку?',
-        a: 'Да, оплата распределяется поэтапно между визитами в клинику в Стамбуле.',
+        a: 'Да, оплата распределяется поэтапно между визитами в клинику в Анталье.',
       },
       {
         q: 'Какая гарантия предоставляется на Hollywood Smile?',

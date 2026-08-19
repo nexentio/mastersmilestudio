@@ -150,7 +150,7 @@ interface DetailDictionary {
 const DICTIONARIES: Record<string, DetailDictionary> = {
   "en": {
     "introBadge": "MAXIMUM OCCLUSAL STABILITY",
-    "introTitle": "All-on-6 Dental Implants in Istanbul, Turkey",
+    "introTitle": "All-on-6 Dental Implants in Antalya, Turkey",
     "introLead": "Complete 14-tooth full-arch restoration anchored on 6 titanium implants — delivering the highest bite force and structural longevity.",
     "introP1": "At Master Smile Studio, All-on-6 dental implants represent the pinnacle of fixed full-arch oral rehabilitation. By distributing chewing forces across six strategically positioned titanium fixtures rather than four, this procedure provides uncompromising mechanical stability for patients requiring a comprehensive 14-tooth dental arch. Every surgery is planned with 3D digital precision and performed directly by our senior oral surgeons and clinic founders.",
     "introP2": "The All-on-6 protocol places two anterior upright implants and four posterior fixtures across the jawbone arch. This wider anchorage foundation spreads occlusal masticatory forces evenly across your natural bone architecture, virtually eliminating cantilever strain and enabling patients with heavy bite forces to chew without restriction.",
@@ -160,7 +160,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "introP3LinkZygoma": "Zygomatic Implants for Severe Bone Loss",
     "introP3And": ", and ",
     "introP3LinkSinus": "Sinus Lifting Procedures",
-    "introP3Tail": " — all available in our Istanbul center.",
+    "introP3Tail": " — all available in our Antalya center.",
     "materialsTitle": "All-on-6 Permanent Bridge Materials: Why We Use Monolithic Zirconia",
     "materialsSubtitle": "In All-on-6 restorations, 6 implants bear your entire jaw chewing load (200 to 600 Newtons). Discover why we exclusively engineer 100% Monolithic Multilayer Zirconia instead of cheaper acrylic or fragile porcelain.",
     "materialsSpecLabels": {
@@ -295,7 +295,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "pfm": "8 – 12 Years (Chipping risk)"
       }
     ],
-    "packagesTitle": "All-on-6 Implant Package Deals & Pricing in Istanbul",
+    "packagesTitle": "All-on-6 Implant Package Deals & Pricing in Antalya",
     "packagesSubtitle": "Transparent, all-inclusive pricing per arch with 6 premium titanium implants, CAD/CAM zirconia bridge, 5-star hotel stay, and private VIP transfers.",
     "durationLabel": "Treatment Duration:",
     "includedLabel": "What's Included in This Package:",
@@ -303,7 +303,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "getQuoteBtn": "Get Free Personalized Quote",
     "mostPopularBadge": "MOST POPULAR",
     "faqTitle": "Frequently Asked Questions About All-on-6 Implants",
-    "faqSubtitle": "Clear, clinically validated answers to help you understand every surgical, biomechanical, and travel aspect of your All-on-6 transformation in Istanbul.",
+    "faqSubtitle": "Clear, clinically validated answers to help you understand every surgical, biomechanical, and travel aspect of your All-on-6 transformation in Antalya.",
     "faqGroup1Title": "Specialized All-on-6 Clinical & Biomechanical FAQs",
     "faqGroup2Title": "Health Tourism, Inclusions & Lifetime Warranty FAQs",
     "packages": [
@@ -311,7 +311,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "name": "ALL-ON-6 – NUCLEOSS",
         "brand": "NucleOSS (Turkish Premium Quality)",
         "duration": "3+7 Working Days (2 Visits)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-1.jpg",
+        "img": "/packages/pkg-1.webp",
         "included": [
           "6x NucleOSS Dental Implants per Arch",
           "12-14x Fixed Temporary Teeth (Same Visit)",
@@ -332,7 +332,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "name": "ALL-ON-6 – DXL GERMAN",
         "brand": "DXL (German Engineering)",
         "duration": "3+7 Working Days (2 Visits)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-2.jpg",
+        "img": "/packages/pkg-2.webp",
         "included": [
           "6x DXL German Titanium Implants",
           "12-14x Fixed Temporary Teeth",
@@ -352,7 +352,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "name": "ALL-ON-6 – STRAUMANN",
         "brand": "Straumann (Swiss Gold Standard)",
         "duration": "3+7 Working Days (2 Visits)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-3.jpg",
+        "img": "/packages/pkg-3.webp",
         "included": [
           "6x Straumann Swiss Titanium Implants",
           "12-14x Fixed High-Grade Temporary Teeth",
@@ -373,7 +373,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "name": "ALL-ON-6 – MEGAGEN",
         "brand": "Megagen AnyRidge (Korean Technology)",
         "duration": "3+7 Working Days (2 Visits)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-package-10.jpg",
+        "img": "/packages/pkg-4.webp",
         "included": [
           "6x Megagen AnyRidge Implants per Arch",
           "12-14x Fixed Temporary Teeth",
@@ -392,7 +392,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "name": "ALL-ON-6 – NEODENT",
         "brand": "Neodent (Straumann Group)",
         "duration": "3+7 Working Days (2 Visits)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-implant-package-2.jpg",
+        "img": "/packages/pkg-5.webp",
         "included": [
           "6x Neodent Implants per Arch",
           "12-14x Fixed Temporary Teeth",
@@ -411,7 +411,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "name": "ALL-ON-6 – HIOSSEN",
         "brand": "Hiossen (American Brand)",
         "duration": "3+7 Working Days (2 Visits)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-implant-package-3.jpg",
+        "img": "/packages/pkg-6.webp",
         "included": [
           "6x Hiossen American Implants per Arch",
           "12-14x Fixed Temporary Teeth",
@@ -442,7 +442,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       },
       {
         "q": "How does the same-day fixed temporary bridge work for All-on-6?",
-        "a": "Within 24 hours of computer-guided surgery, a custom screw-retained temporary bridge is securely attached to your six implants. You never leave our Istanbul clinic without fixed, functional, aesthetic teeth."
+        "a": "Within 24 hours of computer-guided surgery, a custom screw-retained temporary bridge is securely attached to your six implants. You never leave our Antalya clinic without fixed, functional, aesthetic teeth."
       },
       {
         "q": "What should I eat during the 3-month osseointegration period?",
@@ -471,7 +471,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     ],
     "faqsPart2": [
       {
-        "q": "How many visits to Istanbul are required for All-on-6 treatment?",
+        "q": "How many visits to Antalya are required for All-on-6 treatment?",
         "a": "Exactly 2 visits are required. Visit 1 (3–5 days) covers 3D CBCT diagnostics, surgery, and immediate temporary teeth. Visit 2 (5–7 days, after 3 months) is for digital shade matching, precision try-ins, and final permanent Zirconia bridge delivery."
       },
       {
@@ -479,7 +479,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "a": "Our all-inclusive packages include 6 premium titanium implants, 12-14 temporary teeth, 12-14 permanent monolithic Zirconia teeth, 3D CBCT planning, surgical medications, 4/5-star hotel accommodation with breakfast, and VIP Mercedes transfers."
       },
       {
-        "q": "Will my package price change once I arrive in Istanbul?",
+        "q": "Will my package price change once I arrive in Antalya?",
         "a": "No. The personalized treatment plan and quote provided from your initial X-ray consultation is a fixed price guarantee with zero hidden medical, laboratory, or transfer fees."
       },
       {
@@ -618,7 +618,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         ]
       }
     ],
-    "costTitle": "International Price & Treatment Comparison: UK / Germany vs. Istanbul",
+    "costTitle": "International Price & Treatment Comparison: UK / Germany vs. Antalya",
     "costSubtitle": "Understand why thousands of European and UK patients choose Master Smile Studio for full-arch All-on-6 restoration without sacrificing material quality.",
     "costTableHeaders": {
       "country": "Destination / Clinic Tier",
@@ -640,7 +640,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "valueAdvantage": "Save 60% – 65% (€5,500 – €10,000 with us) with identical German/Swiss titanium."
       },
       {
-        "country": "Master Smile Studio (Istanbul, Turkey)",
+        "country": "Master Smile Studio (Antalya, Turkey)",
         "costPerArch": "€5,500 – €10,000 / £4,700 – £8,600",
         "inclusions": "All-Inclusive: 6 Implants, Temporary Bridge, Final Zirconia Bridge, 3D CBCT, 5-Star Hotel, VIP Mercedes Transfers, Lifetime Warranty Passport.",
         "valueAdvantage": "100% Fixed Transparent Package Price Guarantee with Zero Hidden Medical or Travel Fees."
@@ -649,7 +649,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
   },
   "tr": {
     "introBadge": "MAKSİMUM ÇİĞNEME STABİLİTESİ",
-    "introTitle": "All-on-6 Diş İmplantı Tedavisi İstanbul",
+    "introTitle": "All-on-6 Diş İmplantı Tedavisi Antalya",
     "introLead": "6 titanyum implant üzerine sabitlenen 14 dişlik tam çene restorasyonu — en yüksek çiğneme gücü ve yapısal dayanıklılık.",
     "introP1": "Master Smile Studio’da All-on-6 diş implantı tedavisi, sabit tam çene restorasyonlarında en üst dayanıklılık seviyesini temsil eder. Çiğneme kuvvetlerini dört yerine altı titanyum implanta dağıtarak, 14 dişe kadar uzanan eksiksiz bir arkta rakipsiz bir stabilite sağlar. Tüm cerrahi işlemler doğrudan kurucu çene cerrahlarımız tarafından 3D dijital kılavuzlarla gerçekleştirilir.",
     "introP2": "All-on-6 protokolü; çenenin ön bölgesine iki düz, arka azı bölgelerine ise dört implant konumlandırır. Bu geniş temel, çiğneme baskısını çene kemiğine eşit yayarak uzantı (cantilever) stresini sıfırlar ve güçlü çiğneme kuvvetine sahip bireylerin kısıtlama olmaksızın yemek yemesini sağlar.",
@@ -794,7 +794,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "pfm": "8 – 12 Yıl (Kırılma riski)"
       }
     ],
-    "packagesTitle": "İstanbul All-on-6 İmplant Paketleri ve Fiyatları",
+    "packagesTitle": "Antalya All-on-6 İmplant Paketleri ve Fiyatları",
     "packagesSubtitle": "6 titanyum implant, monolitik zirkonyum köprü, 5 yıldızlı otel konaklaması ve VIP transfer dahil çene başı şeffaf paket fiyatları.",
     "durationLabel": "Tedavi Süresi:",
     "includedLabel": "Bu Pakete Dahil Olan Hizmetler:",
@@ -802,7 +802,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "getQuoteBtn": "Ücretsiz Kişiselleştirilmiş Teklif Al",
     "mostPopularBadge": "EN ÇOK TERCİH EDİLEN",
     "faqTitle": "All-on-6 İmplant Tedavisi Hakkında Sıkça Sorulan Sorular",
-    "faqSubtitle": "İstanbul’daki All-on-6 tedaviniz hakkında tüm cerrahi, biyomekanik ve lojistik detayları aydınlatan hekim onaylı cevaplar.",
+    "faqSubtitle": "Antalya’daki All-on-6 tedaviniz hakkında tüm cerrahi, biyomekanik ve lojistik detayları aydınlatan hekim onaylı cevaplar.",
     "faqGroup1Title": "All-on-6 Klinik & Cerrahi Sorular",
     "faqGroup2Title": "Sağlık Turizmi, Paket Kapsamı ve Ömür Boyu Garanti",
     "packages": [
@@ -810,7 +810,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "name": "ALL-ON-6 – NUCLEOSS",
         "brand": "NucleOSS (Türk Premium Kalite)",
         "duration": "3+7 İş Günü (2 Ziyaret)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-1.jpg",
+        "img": "/packages/pkg-1.webp",
         "included": [
           "Çene Başına 6x NucleOSS Titanyum İmplant",
           "12-14x Aynı Gün Vidalı Sabit Geçici Diş",
@@ -831,7 +831,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "name": "ALL-ON-6 – DXL GERMAN",
         "brand": "DXL (Alman Mühendisliği)",
         "duration": "3+7 İş Günü (2 Ziyaret)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-2.jpg",
+        "img": "/packages/pkg-2.webp",
         "included": [
           "6x DXL Alman Titanyum İmplant",
           "12-14x Sabit Geçici Dişler",
@@ -850,7 +850,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "name": "ALL-ON-6 – STRAUMANN",
         "brand": "Straumann (İsviçre Altın Standart)",
         "duration": "3+7 İş Günü (2 Ziyaret)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-3.jpg",
+        "img": "/packages/pkg-3.webp",
         "included": [
           "6x Straumann İsviçre Titanyum İmplant",
           "12-14x Üst Düzey Sabit Geçici Dişler",
@@ -871,7 +871,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "name": "ALL-ON-6 – MEGAGEN",
         "brand": "Megagen AnyRidge",
         "duration": "3+7 İş Günü (2 Ziyaret)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-package-10.jpg",
+        "img": "/packages/pkg-4.webp",
         "included": [
           "6x Megagen İmplant",
           "12-14x Sabit Geçici Dişler",
@@ -888,7 +888,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "name": "ALL-ON-6 – NEODENT",
         "brand": "Neodent (Straumann Grubu)",
         "duration": "3+7 İş Günü (2 Ziyaret)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-implant-package-2.jpg",
+        "img": "/packages/pkg-5.webp",
         "included": [
           "6x Neodent İmplant",
           "12-14x Sabit Geçici Dişler",
@@ -905,7 +905,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "name": "ALL-ON-6 – HIOSSEN",
         "brand": "Hiossen USA",
         "duration": "3+7 İş Günü (2 Ziyaret)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-implant-package-3.jpg",
+        "img": "/packages/pkg-6.webp",
         "included": [
           "6x Hiossen Amerikan İmplant",
           "12-14x Sabit Geçici Dişler",
@@ -963,7 +963,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     ],
     "faqsPart2": [
       {
-        "q": "All-on-6 tedavisi için İstanbul’a kaç kez gelmem gerekir?",
+        "q": "All-on-6 tedavisi için Antalya’ya kaç kez gelmem gerekir?",
         "a": "Toplam 2 ziyaret gerekir: 1. Ziyaret (3–5 gün) 3D tomografi, cerrahi ve geçici sabit dişler; 2. Ziyaret (5–7 gün, 3 ay sonra) ise kalıcı monolitik zirkonyum köprünün provaları ve teslimatıdır."
       },
       {
@@ -971,7 +971,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "a": "6 adet titanyum implant, 12-14 geçici diş, 12-14 kalıcı monolitik zirkonyum diş, 3D tomografi, cerrahiler, ilaçlar, oda-kahvaltı dahil 4/5 yıldızlı otel ve VIP Mercedes transferler dahildir."
       },
       {
-        "q": "İstanbul’a geldiğimde paket fiyatı değişir mi?",
+        "q": "Antalya’ya geldiğimde paket fiyatı değişir mi?",
         "a": "Hayır. Röntgen analiziniz sonrasında tarafınıza iletilen resmi tedavi planı ve teklif sabit fiyat garantilidir; hiçbir gizli ek masraf çıkarılmaz."
       },
       {
@@ -1110,7 +1110,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         ]
       }
     ],
-    "costTitle": "Uluslararası Fiyat ve Tedavi Kıyaslaması: İngiltere / Almanya vs. İstanbul",
+    "costTitle": "Uluslararası Fiyat ve Tedavi Kıyaslaması: İngiltere / Almanya vs. Antalya",
     "costSubtitle": "Binlerce Avrupalı ve İngiliz hastanın neden malzeme kalitesinden ödün vermeden Master Smile Studio’yu tercih ettiğini keşfedin.",
     "costTableHeaders": {
       "country": "Ülke / Klinik Standardı",
@@ -1132,7 +1132,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "valueAdvantage": "Aynı Alman/İsviçre titanyumu ile %60 – %65 Tasarruf (€5,500 – €10,000)."
       },
       {
-        "country": "Master Smile Studio (İstanbul, Türkiye)",
+        "country": "Master Smile Studio (Antalya, Türkiye)",
         "costPerArch": "€5,500 – €10,000 / £4,700 – £8,600",
         "inclusions": "Her Şey Dahil: 6 İmplant, Geçici Diş, Kalıcı Zirkonyum Köprü, 3D Tomografi, 5 Yıldızlı Otel, VIP Mercedes Transferler, Ömür Boyu Garanti Pasaportu.",
         "valueAdvantage": "Gizli Masrafsız Sabit Fiyat Garantisi ve VIP Seyahat Konforu."
@@ -1141,7 +1141,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
   },
   "de": {
     "introBadge": "MAXIMALE KAU-STABILITÄT",
-    "introTitle": "All-on-6 Zahnimplantate in Istanbul, Türkei",
+    "introTitle": "All-on-6 Zahnimplantate in Antalya, Türkei",
     "introLead": "Vollständige 14-Zahn-Restauration auf 6 Titanimplantaten — maximale Kaukraft und langfristige strukturelle Stabilität.",
     "introP1": "Bei Master Smile Studio stellt das All-on-6 Verfahren die Königsklasse der festsitzenden Zahnrehabilitation dar. Durch die Verteilung der Kaukräfte auf sechs strategisch gesetzte Titanimplantate bietet dieses Verfahren eine kompromisslose Stabilität für Patienten, die einen vollständigen 14-Zähne-Bogen benötigen.",
     "introP2": "Das All-on-6 Protokoll verankert zwei vordere und vier hintere Implantate im Kieferknochen. Diese breite Basis verteilt den Kaudruck gleichmäßig, minimiert Hebelkräfte und ermöglicht uneingeschränktes Kauen bei hoher Beißkraft.",
@@ -1151,7 +1151,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "introP3LinkZygoma": "Zygoma-Implantate bei Knochenschwund",
     "introP3And": " sowie ",
     "introP3LinkSinus": "Sinuslift-Behandlungen",
-    "introP3Tail": " in unserer Istanbuler Fachklinik.",
+    "introP3Tail": " in unserer Antalyaer Fachklinik.",
     "materialsTitle": "All-on-6 Brückenmaterialien: Warum wir monolithisches Zirkon verwenden",
     "materialsSubtitle": "Bei All-on-6 tragen 6 Implantate die gesamte Kaukraft des Kiefers (200 bis 600 Newton). Erfahren Sie, warum wir ausschließlich 100% monolithisches Mehrschicht-Zirkon anstelle von billigem Acryl oder brüchiger Keramik einsetzen.",
     "materialsSpecLabels": {
@@ -1286,7 +1286,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "pfm": "8 – 12 Jahre"
       }
     ],
-    "packagesTitle": "All-on-6 Implantat-Pakete & Preise in Istanbul",
+    "packagesTitle": "All-on-6 Implantat-Pakete & Preise in Antalya",
     "packagesSubtitle": "Transparente Festpreise pro Kiefer inklusive 6 Titanimplantaten, Zirkonbrücke, 5-Sterne-Hotel und VIP-Transfers.",
     "durationLabel": "Behandlungsdauer:",
     "includedLabel": "In diesem Paket enthalten:",
@@ -1294,7 +1294,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "getQuoteBtn": "Kostenloses Angebot anfordern",
     "mostPopularBadge": "BELIEBTESTES PAKET",
     "faqTitle": "Häufig gestellte Fragen zu All-on-6 Implantaten",
-    "faqSubtitle": "Klinisch fundierte Antworten zu chirurgischem Ablauf, Kosten und Ihrer Behandlungsreise nach Istanbul.",
+    "faqSubtitle": "Klinisch fundierte Antworten zu chirurgischem Ablauf, Kosten und Ihrer Behandlungsreise nach Antalya.",
     "faqGroup1Title": "All-on-6 Klinische & Chirurgische Fragen",
     "faqGroup2Title": "Medizintourismus, Paketleistungen & Garantie",
     "packages": [
@@ -1302,7 +1302,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "name": "ALL-ON-6 – NUCLEOSS",
         "brand": "NucleOSS (Türkische Premium-Qualität)",
         "duration": "3+7 Werktage (2 Besuche)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-1.jpg",
+        "img": "/packages/pkg-1.webp",
         "included": [
           "6x NucleOSS Titanimplantate pro Kiefer",
           "12-14x Feste provisorische Zähne",
@@ -1323,7 +1323,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "name": "ALL-ON-6 – DXL GERMAN",
         "brand": "DXL (Deutsche Ingenieurskunst)",
         "duration": "3+7 Werktage (2 Besuche)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-2.jpg",
+        "img": "/packages/pkg-2.webp",
         "included": [
           "6x DXL Deutsche Titanimplantate",
           "12-14x Feste provisorische Zähne",
@@ -1342,7 +1342,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "name": "ALL-ON-6 – STRAUMANN",
         "brand": "Straumann (Schweizer Goldstandard)",
         "duration": "3+7 Werktage (2 Besuche)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-3.jpg",
+        "img": "/packages/pkg-3.webp",
         "included": [
           "6x Straumann Schweizer Titanimplantate",
           "12-14x Hochwertige provisorische Zähne",
@@ -1363,7 +1363,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "name": "ALL-ON-6 – MEGAGEN",
         "brand": "Megagen AnyRidge",
         "duration": "3+7 Werktage (2 Besuche)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-package-10.jpg",
+        "img": "/packages/pkg-4.webp",
         "included": [
           "6x Megagen Implantate",
           "12-14x Provisorische Zähne",
@@ -1380,7 +1380,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "name": "ALL-ON-6 – NEODENT",
         "brand": "Neodent (Straumann Gruppe)",
         "duration": "3+7 Werktage (2 Besuche)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-implant-package-2.jpg",
+        "img": "/packages/pkg-5.webp",
         "included": [
           "6x Neodent Implantate",
           "12-14x Provisorische Zähne",
@@ -1397,7 +1397,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "name": "ALL-ON-6 – HIOSSEN",
         "brand": "Hiossen USA",
         "duration": "3+7 Werktage (2 Besuche)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-implant-package-3.jpg",
+        "img": "/packages/pkg-6.webp",
         "included": [
           "6x Hiossen Implantate",
           "12-14x Provisorische Zähne",
@@ -1455,7 +1455,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     ],
     "faqsPart2": [
       {
-        "q": "Wie viele Reisen nach Istanbul sind für All-on-6 erforderlich?",
+        "q": "Wie viele Reisen nach Antalya sind für All-on-6 erforderlich?",
         "a": "Genau 2 Reisen: 1. Besuch (3–5 Tage) für Diagnostik, OP und provisorische Zähne; 2. Besuch (5–7 Tage, nach 3 Monaten) für die finale Zirkonbrücke."
       },
       {
@@ -1463,7 +1463,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "a": "6 Premium-Titanimplantate, 12-14 provisorische Zähne, 12-14 permanente Zirkonzähne, 3D-DVT, Medikamente, 4/5-Sterne-Hotel mit Frühstück und VIP-Transfers."
       },
       {
-        "q": "Ändert sich mein Paketpreis nach der Ankunft in Istanbul?",
+        "q": "Ändert sich mein Paketpreis nach der Ankunft in Antalya?",
         "a": "Nein. Der auf Basis Ihres Röntgenbilds erstellte Behandlungsplan ist ein garantierter Festpreis ohne versteckte Zusatzkosten."
       },
       {
@@ -1602,7 +1602,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         ]
       }
     ],
-    "costTitle": "Internationaler Preis- & Leistungsvergleich: UK / Deutschland vs. Istanbul",
+    "costTitle": "Internationaler Preis- & Leistungsvergleich: UK / Deutschland vs. Antalya",
     "costSubtitle": "Erfahren Sie, warum tausende europäische Patienten Master Smile Studio für All-on-6 wählen – ohne Kompromisse bei der Materialqualität.",
     "costTableHeaders": {
       "country": "Land / Klinik-Standard",
@@ -1624,7 +1624,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "valueAdvantage": "60% – 65% Ersparnis (€5.500 – €10.000) bei identischem deutschem/Schweizer Titan."
       },
       {
-        "country": "Master Smile Studio (Istanbul, Türkei)",
+        "country": "Master Smile Studio (Antalya, Türkei)",
         "costPerArch": "€5.500 – €10.000 / £4.700 – £8.600",
         "inclusions": "All-inclusive: 6 Implantate, provisorische Zähne, Zirkonbrücke, 3D-DVT, 5-Sterne-Hotel, VIP-Transfers, lebenslange Garantie.",
         "valueAdvantage": "Garantierter Festpreis ohne versteckte Zusatzkosten mit erstklassigem VIP-Service."
@@ -1633,7 +1633,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
   },
   "pl": {
     "introBadge": "MAKSYMALNA STABILNOŚĆ ZGRYZU",
-    "introTitle": "Implanty All-on-6 w Stambule, Turcja",
+    "introTitle": "Implanty All-on-6 w Antalyi, Turcja",
     "introLead": "Odbudowa pełnego łuku 14 zębów na 6 implantach tytanowych — najwyższa siła żucia i trwałość strukturalna.",
     "introP1": "W Master Smile Studio metoda All-on-6 stanowi szczytowe osiągnięcie stałej rekonstrukcji bezzębia. Rozkładając siły żucia na sześć strategicznie rozmieszczonych implantów tytanowych, zabieg ten zapewnia bezkompromisową stabilność łuku 14 zębów. Każdy zabieg planowany jest cyfrowo w 3D i wykonywany bezpośrednio przez naszych głównych chirurgów.",
     "introP2": "Protokół All-on-6 opiera się na dwóch implantach przednich oraz czterech bocznych. Taka szeroka podstawa równomiernie przenosi obciążenia na kość, eliminując naprężenia i umożliwiając pacjentom o silnym zgryzie swobodne spożywanie wszelkich pokarmów.",
@@ -1643,7 +1643,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "introP3LinkZygoma": "Implanty Zygomatyczne",
     "introP3And": " oraz ",
     "introP3LinkSinus": "Zabieg Podniesienia Dna Zatoki",
-    "introP3Tail": " w naszej klinice w Stambule.",
+    "introP3Tail": " w naszej klinice w Antalyi.",
     "materialsTitle": "Materiały Mostów All-on-6: Dlaczego Wybieramy Monolityczny Cyrkon?",
     "materialsSubtitle": "W protokole All-on-6 6 implantów przenosi całą siłę żucia (od 200 do 600 N). Zobacz, dlaczego standardowo wykonujemy mosty w 100% z monolitycznego cyrkonu zamiast nietrwałego akrylu lub metalu.",
     "materialsSpecLabels": {
@@ -1778,7 +1778,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "pfm": "8 – 12 Lat"
       }
     ],
-    "packagesTitle": "Pakiety i Ceny Implantów All-on-6 w Stambule",
+    "packagesTitle": "Pakiety i Ceny Implantów All-on-6 w Antalyi",
     "packagesSubtitle": "Przejrzyste ceny all-inclusive za łuk zębowy z 6 implantami tytanowymi, mostem cyrkonowym, hotelem 5-gwiazdkowym i transferami VIP.",
     "durationLabel": "Czas Trwania Leczenia:",
     "includedLabel": "Co zawiera ten pakiet:",
@@ -1786,7 +1786,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "getQuoteBtn": "Otrzymaj Bezpłatną Wycenę",
     "mostPopularBadge": "NAJCZĘŚCIEJ WYBIERANY",
     "faqTitle": "Często Zadawane Pytania o Implanty All-on-6",
-    "faqSubtitle": "Szczegółowe odpowiedzi kliniczne na temat zabiegu, kosztów i Twojego pobytu w Stambule.",
+    "faqSubtitle": "Szczegółowe odpowiedzi kliniczne na temat zabiegu, kosztów i Twojego pobytu w Antalyi.",
     "faqGroup1Title": "Pytania Kliniczne i Chirurgiczne All-on-6",
     "faqGroup2Title": "Turystyka Medyczna, Pakiet i Gwarancja",
     "packages": [
@@ -1794,7 +1794,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "name": "ALL-ON-6 – NUCLEOSS",
         "brand": "NucleOSS (Turecka Jakość Premium)",
         "duration": "3+7 Dni Roboczych (2 Wizyty)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-1.jpg",
+        "img": "/packages/pkg-1.webp",
         "included": [
           "6x Implantów Tytanowych NucleOSS na łuk",
           "12-14x Stałych Zębów Tymczasowych",
@@ -1815,7 +1815,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "name": "ALL-ON-6 – DXL GERMAN",
         "brand": "DXL (Niemiecka Inżynieria)",
         "duration": "3+7 Dni Roboczych (2 Wizyty)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-2.jpg",
+        "img": "/packages/pkg-2.webp",
         "included": [
           "6x Niemieckich Implantów DXL",
           "12-14x Zębów Tymczasowych",
@@ -1834,7 +1834,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "name": "ALL-ON-6 – STRAUMANN",
         "brand": "Straumann (Szwajcarski Złoty Standard)",
         "duration": "3+7 Dni Roboczych (2 Wizyty)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-3.jpg",
+        "img": "/packages/pkg-3.webp",
         "included": [
           "6x Szwajcarskich Implantów Straumann",
           "12-14x Zębów Tymczasowych Premium",
@@ -1855,7 +1855,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "name": "ALL-ON-6 – MEGAGEN",
         "brand": "Megagen AnyRidge",
         "duration": "3+7 Dni Roboczych (2 Wizyty)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-package-10.jpg",
+        "img": "/packages/pkg-4.webp",
         "included": [
           "6x Implantów Megagen",
           "12-14x Zębów Tymczasowych",
@@ -1872,7 +1872,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "name": "ALL-ON-6 – NEODENT",
         "brand": "Neodent (Grupa Straumann)",
         "duration": "3+7 Dni Roboczych (2 Wizyty)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-implant-package-2.jpg",
+        "img": "/packages/pkg-5.webp",
         "included": [
           "6x Implantów Neodent",
           "12-14x Zębów Tymczasowych",
@@ -1889,7 +1889,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "name": "ALL-ON-6 – HIOSSEN",
         "brand": "Hiossen USA",
         "duration": "3+7 Dni Roboczych (2 Wizyty)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-implant-package-3.jpg",
+        "img": "/packages/pkg-6.webp",
         "included": [
           "6x Implantów Hiossen",
           "12-14x Zębów Tymczasowych",
@@ -1947,7 +1947,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     ],
     "faqsPart2": [
       {
-        "q": "Ile wizyt w Stambule jest potrzebnych do leczenia All-on-6?",
+        "q": "Ile wizyt w Antalyi jest potrzebnych do leczenia All-on-6?",
         "a": "Dokładnie 2 wizyty: 1. Wizyta (3–5 dni) na diagnostykę, zabieg i zęby tymczasowe; 2. Wizyta (5–7 dni, po 3 miesiącach) na montaż ostatecznego mostu cyrkonowego."
       },
       {
@@ -1955,7 +1955,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "a": "6 implantów tytanowych, 12-14 zębów tymczasowych, 12-14 ostatecznych zębów cyrkonowych, tomografię 3D, leki, hotel 4/5* ze śniadaniami i transfery VIP Mercedes."
       },
       {
-        "q": "Czy cena pakietu zmieni się po przyjeździe do Stambułu?",
+        "q": "Czy cena pakietu zmieni się po przyjeździe do Antalyi?",
         "a": "Nie. Wycena przygotowana na podstawie zdjęcia RTG to gwarantowana stała cena bez ukrytych opłat."
       },
       {
@@ -2094,7 +2094,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         ]
       }
     ],
-    "costTitle": "Międzynarodowe Porównanie Cen i Standardu: UK / Niemcy vs. Stambuł",
+    "costTitle": "Międzynarodowe Porównanie Cen i Standardu: UK / Niemcy vs. Antalya",
     "costSubtitle": "Zobacz, dlaczego pacjenci z całej Europy wybierają Master Smile Studio na zabieg All-on-6 bez kompromisów jakościowych.",
     "costTableHeaders": {
       "country": "Kraj / Standard Kliniki",
@@ -2116,7 +2116,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "valueAdvantage": "60% – 65% Oszczędności (€5,500 – €10,000) przy tym samym tytanie."
       },
       {
-        "country": "Master Smile Studio (Stambuł, Turcja)",
+        "country": "Master Smile Studio (Antalya, Turcja)",
         "costPerArch": "€5,500 – €10,000 / £4,700 – £8,600",
         "inclusions": "Pakiet All-Inclusive: 6 Implantów, Most Tymczasowy, Most Cyrkonowy, Tomografia 3D, Hotel 5*, Transfery VIP Mercedes, Dożywotnia Gwarancja.",
         "valueAdvantage": "Gwarancja Stałej Ceny bez ukrytych opłat i luksusowa obsługa pacjenta."
@@ -2125,7 +2125,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
   },
   "pt": {
     "introBadge": "ESTABILIDADE OCLUSAL MÁXIMA",
-    "introTitle": "Implantes Dentários All-on-6 em Istambul, Turquia",
+    "introTitle": "Implantes Dentários All-on-6 em Antalya, Turquia",
     "introLead": "Restauração completa de 14 dentes sobre 6 implantes de titânio — máxima força mastigatória e estabilidade estrutural.",
     "introP1": "No Master Smile Studio, o procedimento All-on-6 representa o padrão mais elevado em reabilitação oral fixa. Ao distribuir as forças oclusais em seis implantes de titânio estrategicamente posicionados, este tratamento proporciona uma estabilidade incomparável para uma arcada completa de 14 dentes.",
     "introP2": "O protocolo All-on-6 fixa dois implantes anteriores e quatro posteriores. Essa base ampla distribui a mastigação uniformemente, eliminando a tensão dos cantilevers e permitindo que pacientes com forte mordida mastiguem com total liberdade.",
@@ -2135,7 +2135,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "introP3LinkZygoma": "Implantes Zigomáticos",
     "introP3And": " e ",
     "introP3LinkSinus": "Elevação do Seio Maxilar (Sinus Lift)",
-    "introP3Tail": " em Istambul.",
+    "introP3Tail": " em Antalya.",
     "materialsTitle": "Materiais de Prótese All-on-6: Por que Usamos Zircônia Monolítica",
     "materialsSubtitle": "No All-on-6, 6 implantes suportam toda a força mastigatória da mandíbula (200 a 600 Newtons). Saiba por que produzimos exclusivamente Zircônia Monolítica Multicamadas em vez de acrílico ou metal.",
     "materialsSpecLabels": {
@@ -2270,7 +2270,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "pfm": "8 – 12 Anos"
       }
     ],
-    "packagesTitle": "Pacotes e Preços de Implantes All-on-6 em Istambul",
+    "packagesTitle": "Pacotes e Preços de Implantes All-on-6 em Antalya",
     "packagesSubtitle": "Preços transparentes com tudo incluído por arcada com 6 implantes de titânio, ponte de zircônia, hotel 5 estrelas e transfers VIP.",
     "durationLabel": "Duração do Tratamento:",
     "includedLabel": "O que está incluído neste pacote:",
@@ -2278,7 +2278,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "getQuoteBtn": "Solicitar Orçamento Gratuito",
     "mostPopularBadge": "MAIS POPULAR",
     "faqTitle": "Perguntas Frequentes sobre Implantes All-on-6",
-    "faqSubtitle": "Respostas clínicas detalhadas para esclarecer todas as dúvidas sobre cirurgia, materiais e sua viagem a Istambul.",
+    "faqSubtitle": "Respostas clínicas detalhadas para esclarecer todas as dúvidas sobre cirurgia, materiais e sua viagem a Antalya.",
     "faqGroup1Title": "Perguntas Clínicas e Cirúrgicas All-on-6",
     "faqGroup2Title": "Turismo de Saúde, Pacotes e Garantia",
     "packages": [
@@ -2286,7 +2286,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "name": "ALL-ON-6 – NUCLEOSS",
         "brand": "NucleOSS (Qualidade Premium Turca)",
         "duration": "3+7 Dias Úteis (2 Visitas)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-1.jpg",
+        "img": "/packages/pkg-1.webp",
         "included": [
           "6x Implantes de Titânio NucleOSS por arcada",
           "12-14x Dentes Provisórios Fixos no mesmo dia",
@@ -2307,7 +2307,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "name": "ALL-ON-6 – DXL GERMAN",
         "brand": "DXL (Engenharia Alemã)",
         "duration": "3+7 Dias Úteis (2 Visitas)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-2.jpg",
+        "img": "/packages/pkg-2.webp",
         "included": [
           "6x Implantes Alemães DXL",
           "12-14x Dentes Provisórios Fixos",
@@ -2326,7 +2326,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "name": "ALL-ON-6 – STRAUMANN",
         "brand": "Straumann (Padrão Ouro Suíço)",
         "duration": "3+7 Dias Úteis (2 Visitas)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-3.jpg",
+        "img": "/packages/pkg-3.webp",
         "included": [
           "6x Implantes Suíços Straumann",
           "12-14x Dentes Provisórios Fixos Premium",
@@ -2347,7 +2347,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "name": "ALL-ON-6 – MEGAGEN",
         "brand": "Megagen AnyRidge",
         "duration": "3+7 Dias Úteis (2 Visitas)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-package-10.jpg",
+        "img": "/packages/pkg-4.webp",
         "included": [
           "6x Implantes Megagen",
           "12-14x Dentes Provisórios",
@@ -2364,7 +2364,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "name": "ALL-ON-6 – NEODENT",
         "brand": "Neodent (Grupo Straumann)",
         "duration": "3+7 Dias Úteis (2 Visitas)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-implant-package-2.jpg",
+        "img": "/packages/pkg-5.webp",
         "included": [
           "6x Implantes Neodent",
           "12-14x Dentes Provisórios",
@@ -2381,7 +2381,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "name": "ALL-ON-6 – HIOSSEN",
         "brand": "Hiossen USA",
         "duration": "3+7 Dias Úteis (2 Visitas)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-implant-package-3.jpg",
+        "img": "/packages/pkg-6.webp",
         "included": [
           "6x Implantes Hiossen",
           "12-14x Dentes Provisórios",
@@ -2439,7 +2439,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     ],
     "faqsPart2": [
       {
-        "q": "Quantas viagens a Istambul são necessárias para o All-on-6?",
+        "q": "Quantas viagens a Antalya são necessárias para o All-on-6?",
         "a": "Apenas 2 viagens: 1ª Visita (3–5 dias) para cirurgia e dentes provisórios; 2ª Visita (5–7 dias, após 3 meses) para a entrega da ponte definitiva em zircônia."
       },
       {
@@ -2447,7 +2447,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "a": "6 implantes de titânio, 12-14 dentes provisórios, 12-14 dentes definitivos em zircônia, tomografia 3D, cirurgias, medicamentos, hotel 4/5* com café e transfers VIP."
       },
       {
-        "q": "O preço do pacote mudará quando eu chegar a Istambul?",
+        "q": "O preço do pacote mudará quando eu chegar a Antalya?",
         "a": "Não. O orçamento enviado com base na sua radiografia tem garantia de preço fixo, sem custos ocultos adicionais."
       },
       {
@@ -2586,7 +2586,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         ]
       }
     ],
-    "costTitle": "Comparativo Internacional de Preços: Reino Unido / Alemanha vs. Istambul",
+    "costTitle": "Comparativo Internacional de Preços: Reino Unido / Alemanha vs. Antalya",
     "costSubtitle": "Entenda por que milhares de pacientes europeus escolhem o Master Smile Studio para o All-on-6 mantendo a máxima qualidade.",
     "costTableHeaders": {
       "country": "País / Padrão Clínico",
@@ -2608,7 +2608,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "valueAdvantage": "Economia de 60% a 65% (€5,500 – €10,000) com titânio suíço/alemão idêntico."
       },
       {
-        "country": "Master Smile Studio (Istambul, Turquia)",
+        "country": "Master Smile Studio (Antalya, Turquia)",
         "costPerArch": "€5,500 – €10,000 / £4,700 – £8,600",
         "inclusions": "Tudo Incluído: 6 Implantes, Ponte Provisória, Ponte de Zircônia, Tomografia 3D, Hotel 5 Estrelas, Transfers VIP Mercedes, Garantia Vitalícia.",
         "valueAdvantage": "Garantia de Preço Fixo Transparente sem Custos Ocultos."
@@ -2617,7 +2617,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
   },
   "es": {
     "introBadge": "ESTABILIDAD OCLUSAL MÁXIMA",
-    "introTitle": "Implantes Dentales All-on-6 en Estambul, Turquía",
+    "introTitle": "Implantes Dentales All-on-6 en Antalya, Turquía",
     "introLead": "Restauración completa de 14 dientes fijada sobre 6 implantes de titanio — máxima fuerza masticatoria y estabilidad estructural.",
     "introP1": "En Master Smile Studio, el tratamiento All-on-6 representa la cima de la rehabilitación fija del arco dental. Al distribuir las fuerzas masticatorias entre seis implantes de titanio estratégicamente ubicados, este procedimiento proporciona una estabilidad insuperable para una arcada completa de 14 dientes. Cada cirugía es planificada digitalmente en 3D y realizada directamente por nuestros cirujanos maxilofaciales fundadores.",
     "introP2": "El protocolo All-on-6 coloca dos implantes anteriores y cuatro posteriores en el hueso maxilar. Esta amplia base distribuye la masticación uniformemente, eliminando tensiones y permitiendo a pacientes con mordida potente comer sin restricciones.",
@@ -2627,7 +2627,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "introP3LinkZygoma": "Implantes Cigomáticos",
     "introP3And": " y ",
     "introP3LinkSinus": "Elevación de Seno Maxilar",
-    "introP3Tail": " en Estambul.",
+    "introP3Tail": " en Antalya.",
     "materialsTitle": "Materiales de Prótesis All-on-6: Por qué Usamos Circonio Monolítico",
     "materialsSubtitle": "En All-on-6, 6 implantes soportan toda la fuerza masticatoria de la mandíbula (200 a 600 Newtons). Descubra por qué diseñamos exclusivamente Circonio Monolítico Multicapa en lugar de acrílico o metal.",
     "materialsSpecLabels": {
@@ -2762,7 +2762,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "pfm": "8 – 12 Años"
       }
     ],
-    "packagesTitle": "Precios y Paquetes All-on-6 en Estambul",
+    "packagesTitle": "Precios y Paquetes All-on-6 en Antalya",
     "packagesSubtitle": "Precios transparentes por arcada con 6 implantes de titanio, puente de circonio definitivo, hotel de 5 estrellas y traslados VIP.",
     "durationLabel": "Duración del Tratamiento:",
     "includedLabel": "Qué incluye el paquete:",
@@ -2770,7 +2770,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "getQuoteBtn": "Obtener Presupuesto Gratuito",
     "mostPopularBadge": "MÁS POPULAR",
     "faqTitle": "Preguntas Frecuentes sobre Implantes All-on-6",
-    "faqSubtitle": "Respuestas clínicas detalladas sobre el procedimiento quirúrgico, cicatrización y su viaje a Estambul.",
+    "faqSubtitle": "Respuestas clínicas detalladas sobre el procedimiento quirúrgico, cicatrización y su viaje a Antalya.",
     "faqGroup1Title": "Preguntas Clínicas y Quirúrgicas All-on-6",
     "faqGroup2Title": "Turismo Dental, Paquete y Garantía de por Vida",
     "packages": [
@@ -2778,7 +2778,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "name": "ALL-ON-6 – NUCLEOSS",
         "brand": "NucleOSS (Calidad Premium Turca)",
         "duration": "3+7 Días Laborables (2 Visitas)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-1.jpg",
+        "img": "/packages/pkg-1.webp",
         "included": [
           "6x Implantes de Titanio NucleOSS por arcada",
           "12-14x Dientes Provisionales Fijos",
@@ -2799,7 +2799,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "name": "ALL-ON-6 – DXL GERMAN",
         "brand": "DXL (Ingeniería Alemana)",
         "duration": "3+7 Días Laborables (2 Visitas)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-2.jpg",
+        "img": "/packages/pkg-2.webp",
         "included": [
           "6x Implantes Alemanes DXL",
           "12-14x Dientes Provisionales Fijos",
@@ -2818,7 +2818,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "name": "ALL-ON-6 – STRAUMANN",
         "brand": "Straumann (Estándar de Oro Suizo)",
         "duration": "3+7 Días Laborables (2 Visitas)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-3.jpg",
+        "img": "/packages/pkg-3.webp",
         "included": [
           "6x Implantes Suizos Straumann",
           "12-14x Provisionales Fijos de Alta Gama",
@@ -2838,7 +2838,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "name": "ALL-ON-6 – MEGAGEN",
         "brand": "Megagen AnyRidge",
         "duration": "3+7 Días Laborables (2 Visitas)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-package-10.jpg",
+        "img": "/packages/pkg-4.webp",
         "included": [
           "6x Implantes Megagen",
           "12-14x Dientes Provisionales",
@@ -2855,7 +2855,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "name": "ALL-ON-6 – NEODENT",
         "brand": "Neodent (Grupo Straumann)",
         "duration": "3+7 Días Laborables (2 Visitas)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-implant-package-2.jpg",
+        "img": "/packages/pkg-5.webp",
         "included": [
           "6x Implantes Neodent",
           "12-14x Dientes Provisionales",
@@ -2872,7 +2872,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "name": "ALL-ON-6 – HIOSSEN",
         "brand": "Hiossen USA",
         "duration": "3+7 Días Laborables (2 Visitas)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-implant-package-3.jpg",
+        "img": "/packages/pkg-6.webp",
         "included": [
           "6x Implantes Hiossen",
           "12-14x Dientes Provisionales",
@@ -2930,7 +2930,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     ],
     "faqsPart2": [
       {
-        "q": "¿Cuántos viajes a Estambul son necesarios para All-on-6?",
+        "q": "¿Cuántos viajes a Antalya son necesarios para All-on-6?",
         "a": "Exactamente 2 viajes: 1ª Visita (3–5 días) para cirugía y dientes provisionales; 2ª Visita (5–7 días, tras 3 meses) para la entrega del puente definitivo de circonio."
       },
       {
@@ -2938,7 +2938,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "a": "6 implantes de titanio, 12-14 dientes provisionales, 12-14 dientes definitivos de circonio, TAC 3D, cirugías, medicación, hotel 4/5* con desayuno y traslados VIP."
       },
       {
-        "q": "¿Cambiará el precio del paquete tras llegar a Estambul?",
+        "q": "¿Cambiará el precio del paquete tras llegar a Antalya?",
         "a": "No. El presupuesto enviado tras evaluar su radiografía es un precio fijo garantizado sin ningún coste oculto."
       },
       {
@@ -3077,7 +3077,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         ]
       }
     ],
-    "costTitle": "Comparativa Internacional de Precios: Reino Unido / Alemania vs. Estambul",
+    "costTitle": "Comparativa Internacional de Precios: Reino Unido / Alemania vs. Antalya",
     "costSubtitle": "Descubra por qué miles de pacientes europeos eligen Master Smile Studio para su tratamiento All-on-6 con los más altos estándares.",
     "costTableHeaders": {
       "country": "País / Nivel Clínico",
@@ -3099,7 +3099,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "valueAdvantage": "Ahorro del 60% – 65% (€5,500 – €10,000) con idéntico titanio suizo/alemán."
       },
       {
-        "country": "Master Smile Studio (Estambul, Turquía)",
+        "country": "Master Smile Studio (Antalya, Turquía)",
         "costPerArch": "€5,500 – €10,000 / £4,700 – £8,600",
         "inclusions": "Todo Incluido: 6 Implantes, Puente Provisional, Puente de Circonio, TAC 3D, Hotel de 5 Estrellas, Traslados VIP Mercedes, Garantía de por Vida.",
         "valueAdvantage": "Garantía de Precio Fijo Transparente sin Costes Ocultos."
@@ -3108,7 +3108,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
   },
   "ru": {
     "introBadge": "МАКСИМАЛЬНАЯ ОККЛЮЗИОННАЯ СТАБИЛЬНОСТЬ",
-    "introTitle": "Имплантация All-on-6 в Стамбуле, Турция",
+    "introTitle": "Имплантация All-on-6 в Анталье, Турция",
     "introLead": "Полное восстановление зубного ряда на 14 зубов на 6 титановых имплантах — непревзойденная жевательная сила и долговечность.",
     "introP1": "В клинике Master Smile Studio имплантация All-on-6 представляет собой золотой стандарт постоянной реабилитации челюсти. Благодаря распределению жевательной нагрузки на шесть титановых опор, этот метод обеспечивает бескомпромиссную прочность для зубного ряда из 14 зубов. Все операции планируются с цифровой точностью 3D и проводятся нашими ведущими челюстно-лицевыми хирургами.",
     "introP2": "Протокол All-on-6 фиксирует два передних и четыре боковых импланта. Широкая опора равномерно распределяет нагрузку на челюсть, устраняя рычажные напряжения и позволяя пациентам с мощным прикусом питаться без ограничений.",
@@ -3118,7 +3118,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "introP3LinkZygoma": "Скуловые Импланты (Зигома)",
     "introP3And": " и ",
     "introP3LinkSinus": "Операция Синус-Лифтинга",
-    "introP3Tail": " в нашей клинике в Стамбуле.",
+    "introP3Tail": " в нашей клинике в Анталье.",
     "materialsTitle": "Материалы Постоянных Мостов All-on-6: Почему Мы Используем Монолитный Цирконий",
     "materialsSubtitle": "В протоколе All-on-6 6 имплантов несут всю жевательную нагрузку челюсти (от 200 до 600 Н). Узнайте, почему мы изготавливаем мосты исключительно из 100% монолитного циркония, а не из акрила или металлокерамики.",
     "materialsSpecLabels": {
@@ -3253,7 +3253,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "pfm": "8 – 12 Лет"
       }
     ],
-    "packagesTitle": "Пакетные Цены на Имплантацию All-on-6 в Стамбуле",
+    "packagesTitle": "Пакетные Цены на Имплантацию All-on-6 в Анталье",
     "packagesSubtitle": "Прозрачные цены «все включено» за челюсть с 6 премиальными титановыми имплантами, циркониевым мостом, отелем 5* и VIP-трансфером.",
     "durationLabel": "Длительность Лечения:",
     "includedLabel": "Что входит в этот пакет:",
@@ -3261,7 +3261,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "getQuoteBtn": "Получить Бесплатный Расчет",
     "mostPopularBadge": "САМЫЙ ПОПУЛЯРНЫЙ",
     "faqTitle": "Часто Задаваемые Вопросы об Имплантации All-on-6",
-    "faqSubtitle": "Клинически проверенные ответы обо всех этапах операции, стоимости и поездке в Стамбул.",
+    "faqSubtitle": "Клинически проверенные ответы обо всех этапах операции, стоимости и поездке в Анталью.",
     "faqGroup1Title": "Клинические и Хирургические Вопросы All-on-6",
     "faqGroup2Title": "Медицинский Туризм, Пакет и Пожизненная Гарантия",
     "packages": [
@@ -3269,7 +3269,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "name": "ALL-ON-6 – NUCLEOSS",
         "brand": "NucleOSS (Премиум Турция)",
         "duration": "3+7 Рабочих Дней (2 Визита)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-1.jpg",
+        "img": "/packages/pkg-1.webp",
         "included": [
           "6x Титановых Имплантов NucleOSS на челюсть",
           "12-14x Несъемных Временных Зубов",
@@ -3290,7 +3290,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "name": "ALL-ON-6 – DXL GERMAN",
         "brand": "DXL (Немецкая Инженерия)",
         "duration": "3+7 Рабочих Дней (2 Визита)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-2.jpg",
+        "img": "/packages/pkg-2.webp",
         "included": [
           "6x Немецких Имплантов DXL",
           "12-14x Временных Зубов",
@@ -3309,7 +3309,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "name": "ALL-ON-6 – STRAUMANN",
         "brand": "Straumann (Швейцарский Золотой Стандарт)",
         "duration": "3+7 Рабочих Дней (2 Визита)",
-        "img": "https://sohodent.com/doc/data1/All-on-6-implant-package-3.jpg",
+        "img": "/packages/pkg-3.webp",
         "included": [
           "6x Швейцарских Имплантов Straumann",
           "12-14x Премиальных Временных Зубов",
@@ -3330,7 +3330,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "name": "ALL-ON-6 – MEGAGEN",
         "brand": "Megagen AnyRidge",
         "duration": "3+7 Рабочих Дней (2 Визита)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-package-10.jpg",
+        "img": "/packages/pkg-4.webp",
         "included": [
           "6x Имплантов Megagen",
           "12-14x Временных Зубов",
@@ -3347,7 +3347,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "name": "ALL-ON-6 – NEODENT",
         "brand": "Neodent (Группа Straumann)",
         "duration": "3+7 Рабочих Дней (2 Визита)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-implant-package-2.jpg",
+        "img": "/packages/pkg-5.webp",
         "included": [
           "6x Имплантов Neodent",
           "12-14x Временных Зубов",
@@ -3364,7 +3364,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "name": "ALL-ON-6 – HIOSSEN",
         "brand": "Hiossen USA",
         "duration": "3+7 Рабочих Дней (2 Визита)",
-        "img": "https://sohodent.com/doc/data1/All-on-4-implant-package-3.jpg",
+        "img": "/packages/pkg-6.webp",
         "included": [
           "6x Имплантов Hiossen",
           "12-14x Временных Зубов",
@@ -3422,7 +3422,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     ],
     "faqsPart2": [
       {
-        "q": "Сколько поездок в Стамбул требуется для лечения All-on-6?",
+        "q": "Сколько поездок в Анталью требуется для лечения All-on-6?",
         "a": "Ровно 2 визита: 1-й визит (3–5 дней) для операции и временных зубов; 2-й визит (5–7 дней, через 3 месяца) для установки постоянного циркониевого моста."
       },
       {
@@ -3430,7 +3430,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "a": "6 титановых имплантов, 12-14 временных зубов, 12-14 постоянных циркониевых зубов, 3D-КТ, операция, медикаменты, отель 4/5* с завтраками и VIP-трансфер Mercedes."
       },
       {
-        "q": "Изменится ли цена пакета по прибытии в Стамбул?",
+        "q": "Изменится ли цена пакета по прибытии в Анталью?",
         "a": "Нет. Официальный расчет, составленный по вашей томографии/снимку, является гарантированной фиксированной ценой без скрытых доплат."
       },
       {
@@ -3569,7 +3569,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         ]
       }
     ],
-    "costTitle": "Международное Сравнение Стоимости: Великобритания / Германия vs. Стамбул",
+    "costTitle": "Международное Сравнение Стоимости: Великобритания / Германия vs. Анталья",
     "costSubtitle": "Узнайте, почему европейские пациенты выбирают Master Smile Studio для восстановления All-on-6 без компромиссов в качестве.",
     "costTableHeaders": {
       "country": "Страна / Уровень Клиники",
@@ -3591,7 +3591,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "valueAdvantage": "Экономия 60% – 65% (€5,500 – €10,000) при идентичном титане."
       },
       {
-        "country": "Master Smile Studio (Стамбул, Турция)",
+        "country": "Master Smile Studio (Анталья, Турция)",
         "costPerArch": "€5,500 – €10,000 / £4,700 – £8,600",
         "inclusions": "Все Включено: 6 Имплантов, Временный Мост, Постоянный Циркониевый Мост, 3D-КТ, Отель 5*, VIP-Трансфер Mercedes, Пожизненная Гарантия.",
         "valueAdvantage": "Гарантия Фиксированной Цены без скрытых медицинских доплат."
@@ -3638,8 +3638,8 @@ export default function AllOnSixImplantDetailView() {
           {/* Full-width 16:9 Clinical All-on-6 Procedure Video */}
           <div className={styles.mainVideoWrap}>
             <iframe
-              src="https://www.youtube.com/embed/fJAx9CUxhk4"
-              title="All-on-6 Dental Implants in Istanbul Clinical Procedure"
+              src="https://www.youtube.com/embed/eiTTit9PLrQ"
+              title="All-on-6 Dental Implants in Antalya Clinical Procedure"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             />
@@ -3932,7 +3932,7 @@ export default function AllOnSixImplantDetailView() {
         </div>
       </section>
 
-      {/* 6. INTERNATIONAL COST COMPARISON SECTION (UK / GERMANY vs ISTANBUL) */}
+      {/* 6. INTERNATIONAL COST COMPARISON SECTION (UK / GERMANY vs ANTALYA) */}
       <section aria-labelledby="allon6-cost-heading" className={styles.costSection}>
         <div className={styles.container}>
           <div className={styles.costHeader}>

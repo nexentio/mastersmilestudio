@@ -9,7 +9,7 @@ export default function TreatmentProcessSection() {
   const t = useTranslations('process');
 
   const [activeStep, setActiveStep] = useState<number>(1);
-  const [isVideoModalOpen, setIsVideoModalOpen] = useState<boolean>(false);
+  const [isPlaying, setIsPlaying] = useState<boolean>(false);
 
   const currentStepConfig = PROCESS_STEPS.find((s) => s.id === activeStep) || PROCESS_STEPS[0];
   const currentStepDesc = t(`${currentStepConfig.key}.content` as any);
@@ -142,63 +142,118 @@ export default function TreatmentProcessSection() {
               {t('contactLink')}
             </a>
 
-            {/* Video Thumbnail Card with Play Button Overlay */}
-            <div
-              onClick={() => setIsVideoModalOpen(true)}
-              style={{
-                position: 'relative',
-                width: '100%',
-                height: '240px',
-                borderRadius: '20px',
-                overflow: 'hidden',
-                cursor: 'pointer',
-                boxShadow: '0 10px 30px rgba(0, 0, 0, 0.08)',
-              }}
-              className="video-thumb-card"
-            >
-              <Image
-                src="/dental-implant-mss.jpeg"
-                alt="Master Smile Studio Clinic Tour"
-                fill
-                unoptimized
-                style={{
-                  objectFit: 'cover',
-                  objectPosition: 'center',
-                }}
-              />
-
-              {/* Play Button Overlay Badge */}
+            {/* In-Place Video Player / Thumbnail Card */}
+            {isPlaying ? (
               <div
                 style={{
-                  position: 'absolute',
-                  inset: 0,
-                  backgroundColor: 'rgba(15, 23, 42, 0.25)',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  transition: 'backgroundColor 0.3s ease',
+                  position: 'relative',
+                  width: '100%',
+                  height: '260px',
+                  borderRadius: '20px',
+                  overflow: 'hidden',
+                  backgroundColor: '#000000',
+                  boxShadow: '0 12px 35px rgba(0, 0, 0, 0.15)',
                 }}
               >
-                <div
+                <iframe
+                  src="https://www.youtube-nocookie.com/embed/eiTTit9PLrQ?autoplay=1&playsinline=1&controls=1&rel=0&modestbranding=1&iv_load_policy=3&fs=0"
+                  title="Master Smile Studio Clinic Tour"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   style={{
-                    width: '64px',
-                    height: '64px',
+                    position: 'absolute',
+                    top: '-65px',
+                    left: 0,
+                    width: '100%',
+                    height: 'calc(100% + 95px)',
+                    border: 'none',
+                    display: 'block',
+                  }}
+                />
+                <button
+                  type="button"
+                  onClick={() => setIsPlaying(false)}
+                  style={{
+                    position: 'absolute',
+                    top: '12px',
+                    right: '12px',
+                    width: '36px',
+                    height: '36px',
                     borderRadius: '50%',
-                    backgroundColor: '#ffffff',
+                    backgroundColor: 'rgba(0, 0, 0, 0.75)',
+                    color: '#ffffff',
+                    border: '1px solid rgba(255, 255, 255, 0.3)',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
-                    boxShadow: '0 4px 20px rgba(0, 0, 0, 0.25)',
-                    transition: 'transform 0.25s ease',
+                    cursor: 'pointer',
+                    zIndex: 20,
+                    fontSize: '14px',
+                    lineHeight: 1,
+                    transition: 'background-color 0.2s ease, transform 0.2s ease',
                   }}
-                  className="play-icon-bubble"
+                  aria-label="Close video"
                 >
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="#0f172a" style={{ marginLeft: '3px' }}>
-                    <polygon points="5 3 19 12 5 21 5 3" />
-                  </svg>
+                  ✕
+                </button>
+              </div>
+            ) : (
+              <div
+                onClick={() => setIsPlaying(true)}
+                style={{
+                  position: 'relative',
+                  width: '100%',
+                  height: '260px',
+                  borderRadius: '20px',
+                  overflow: 'hidden',
+                  cursor: 'pointer',
+                  boxShadow: '0 10px 30px rgba(0, 0, 0, 0.08)',
+                }}
+                className="video-thumb-card"
+              >
+                <Image
+                  src="/patients/yt-eiTTit9PLrQ.webp"
+                  alt="Master Smile Studio Clinic Tour"
+                  fill
+                  unoptimized
+                  style={{
+                    objectFit: 'cover',
+                    objectPosition: 'center',
+                  }}
+                />
+
+                {/* Play Button Overlay Badge */}
+                <div
+                  style={{
+                    position: 'absolute',
+                    inset: 0,
+                    backgroundColor: 'rgba(15, 23, 42, 0.25)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    transition: 'backgroundColor 0.3s ease',
+                  }}
+                >
+                  <div
+                    style={{
+                      width: '64px',
+                      height: '64px',
+                      borderRadius: '50%',
+                      backgroundColor: '#ffffff',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      boxShadow: '0 4px 20px rgba(0, 0, 0, 0.25)',
+                      transition: 'transform 0.25s ease',
+                    }}
+                    className="play-icon-bubble"
+                  >
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="#0f172a" style={{ marginLeft: '3px' }}>
+                      <polygon points="5 3 19 12 5 21 5 3" />
+                    </svg>
+                  </div>
                 </div>
               </div>
-            </div>
+            )}
           </div>
         </div>
 
@@ -265,74 +320,6 @@ export default function TreatmentProcessSection() {
           </div>
         </div>
       </div>
-
-      {/* Video Lightbox Modal */}
-      {isVideoModalOpen && (
-        <div
-          style={{
-            position: 'fixed',
-            inset: 0,
-            backgroundColor: 'rgba(0, 0, 0, 0.85)',
-            backdropFilter: 'blur(8px)',
-            zIndex: 9999,
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            padding: '1.5rem',
-          }}
-          onClick={() => setIsVideoModalOpen(false)}
-        >
-          <div
-            style={{
-              position: 'relative',
-              width: '100%',
-              maxWidth: '900px',
-              aspectRatio: '16/9',
-              backgroundColor: '#000000',
-              borderRadius: '20px',
-              overflow: 'hidden',
-              boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.75)',
-            }}
-            onClick={(e) => e.stopPropagation()}
-          >
-            {/* Close Button */}
-            <button
-              onClick={() => setIsVideoModalOpen(false)}
-              style={{
-                position: 'absolute',
-                top: '1rem',
-                right: '1rem',
-                backgroundColor: 'rgba(0, 0, 0, 0.6)',
-                border: 'none',
-                color: '#ffffff',
-                width: '40px',
-                height: '40px',
-                borderRadius: '50%',
-                cursor: 'pointer',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                fontSize: '1.25rem',
-                zIndex: 10,
-              }}
-            >
-              ✕
-            </button>
-
-            {/* Video Player */}
-            <video
-              src="/dental-implant-treatment.mp4"
-              controls
-              autoPlay
-              style={{
-                width: '100%',
-                height: '100%',
-                objectFit: 'cover',
-              }}
-            />
-          </div>
-        </div>
-      )}
 
       <style jsx global>{`
         .video-thumb-card:hover .play-icon-bubble {

@@ -43,20 +43,20 @@ interface LocaleDictionary {
 const DICTIONARIES: Record<string, LocaleDictionary> = {
   en: {
     packagesTitle: 'Partial Dentures Packages & Currency Calculator',
-    packagesSubtitle: 'Cast metal framework, flexible Valplast nylon, and precision attachment partial dentures engineered for seamless blend with remaining natural teeth in Istanbul.',
+    packagesSubtitle: 'Cast metal framework, flexible Valplast nylon, and precision attachment partial dentures engineered for seamless blend with remaining natural teeth in Antalya.',
     mostPopularBadge: 'Most Popular Choice',
     durationLabel: 'Procedure Time:',
     includedLabel: 'Package Inclusions:',
     priceLabel: 'Price (Per Arch):',
     getQuoteBtn: 'Get Your Free Quote',
     faqTitle: 'Frequently Asked Questions About Partial Dentures',
-    faqSubtitle: 'Everything you need to know about partial dentures in Istanbul — from clasp invisibility and flexible comfort to chewing strength, speech adaptation, and hygiene.',
+    faqSubtitle: 'Everything you need to know about partial dentures in Antalya — from clasp invisibility and flexible comfort to chewing strength, speech adaptation, and hygiene.',
     packages: [
       {
         name: 'Cast Metal Framework (Chrome-Cobalt) Partial Denture',
         brand: 'Bego Wironit / Heraeus Kulzer Chrome Framework',
         duration: '4-5 Working Days (3 Visits)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-package-10.jpg',
+        img: '/packages/pkg-4.webp',
         popular: true,
         included: [
           'Ultra-thin high-strength medical Chrome-Cobalt cast metal framework',
@@ -72,7 +72,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         name: 'Valplast Flexible Nylon Invisible Clasp Partial Denture',
         brand: 'Valplast USA / Deflex Flexible Resin',
         duration: '4 Working Days (2 Visits)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-implant-package-2.jpg',
+        img: '/packages/pkg-5.webp',
         included: [
           '100% metal-free, unbreakable thermoplastic nylon base',
           'Translucent gum-colored tissue-matched flexible retention clasps',
@@ -87,7 +87,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         name: 'Precision Attachment (Snap-Lock) Hidden Partial Denture',
         brand: 'Bredent Vario-Snap / Ceka Precision Attachment',
         duration: '5-6 Working Days (4 Visits)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-implant-package-3.jpg',
+        img: '/packages/pkg-6.webp',
         included: [
           'Completely invisible connection — zero metal clasps visible when smiling',
           'Male/female precision friction locks hidden inside supporting crowns',
@@ -116,7 +116,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         ]
       },
       {
-        q: 'How long does it take to make partial dentures in Istanbul?',
+        q: 'How long does it take to make partial dentures in Antalya?',
         a: [
           'Custom partial dentures are completed in 4 to 6 working days across 2 to 4 clinic appointments, including surveyor analysis, framework try-in, and final bite adjustment.'
         ]
@@ -125,20 +125,20 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
   },
   tr: {
     packagesTitle: 'Bölümlü (Parsiyel) Diş Protezi Paketleri & Para Birimi Hesaplayıcı',
-    packagesSubtitle: 'Döküm metal iskeletli, Valplast esnek naylon ve hassas tutuculu (çıtçıtlı) bölümlü protezler ile İstanbul’da mevcut dişlerle kusursuz uyum ve estetik.',
+    packagesSubtitle: 'Döküm metal iskeletli, Valplast esnek naylon ve hassas tutuculu (çıtçıtlı) bölümlü protezler ile Antalya’da mevcut dişlerle kusursuz uyum ve estetik.',
     mostPopularBadge: 'En Çok Tercih Edilen',
     durationLabel: 'Tedavi Süresi:',
     includedLabel: 'Paket Kapsamı:',
     priceLabel: 'Fiyat (Çene Başına):',
     getQuoteBtn: 'Ücretsiz Teklif Alın',
     faqTitle: 'Bölümlü (Parsiyel) Protezler Hakkında Sıkça Sorulan Sorular',
-    faqSubtitle: 'İstanbul’da bölümlü kancalı ve çıtçıtlı protezler hakkında bilmeniz gerekenler: kancasız estetik, Valplast esneklik, çiğneme dengesi ve bakım.',
+    faqSubtitle: 'Antalya’da bölümlü kancalı ve çıtçıtlı protezler hakkında bilmeniz gerekenler: kancasız estetik, Valplast esneklik, çiğneme dengesi ve bakım.',
     packages: [
       {
         name: 'Döküm Metal İskeletli (Krom-Kobalt) Bölümlü Protez',
         brand: 'Bego Wironit / Heraeus Kulzer Krom İskelet',
         duration: '4-5 İş Günü (3 Randevu)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-package-10.jpg',
+        img: '/packages/pkg-4.webp',
         popular: true,
         included: [
           'İnce, kırılmaz medikal Krom-Kobalt döküm metal ana iskelet',
@@ -154,7 +154,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         name: 'Valplast Esnek Naylon (Kancasız/Görünmez) Bölümlü Protez',
         brand: 'Valplast USA / Deflex Esnek Termoplastik',
         duration: '4 İş Günü (2 Randevu)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-implant-package-2.jpg',
+        img: '/packages/pkg-5.webp',
         included: [
           '%100 metalsiz, kırılmaya dayanıklı esnek termoplastik gövde',
           'Diş eti renginde pembe doku uyumlu esnek tutucu tırnaklar',
@@ -169,7 +169,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         name: 'Hassas Tutuculu (Çıtçıtlı / Gizli Kilitli) Bölümlü Protez',
         brand: 'Bredent Vario-Snap / Ceka Hassas Tutucu',
         duration: '5-6 İş Günü (4 Randevu)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-implant-package-3.jpg',
+        img: '/packages/pkg-6.webp',
         included: [
           'Gülüş anında hiçbir metal kanca görünmeyen %100 gizli bağlantı',
           'Destek kronların içine gömülü erkek/dişi kilit mekanizması',
@@ -201,20 +201,20 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
   },
   de: {
     packagesTitle: 'Teilprothesen-Pakete & Währungsrechner',
-    packagesSubtitle: 'Modellgussprothesen, flexible Valplast-Nylonprothesen und Geschiebeprothesen für perfekten Halt und Ästhetik in Istanbul.',
+    packagesSubtitle: 'Modellgussprothesen, flexible Valplast-Nylonprothesen und Geschiebeprothesen für perfekten Halt und Ästhetik in Antalya.',
     mostPopularBadge: 'Beliebteste Wahl',
     durationLabel: 'Behandlungsdauer:',
     includedLabel: 'Paketleistungen:',
     priceLabel: 'Preis (Pro Kiefer):',
     getQuoteBtn: 'Kostenloses Angebot anfordern',
     faqTitle: 'Häufig gestellte Fragen zu Teilprothesen',
-    faqSubtitle: 'Alles Wissenswerte über Teilprothesen in Istanbul – von unsichtbaren Halteelementen bis hin zu Valplast-Flexibilität und Kaukraft.',
+    faqSubtitle: 'Alles Wissenswerte über Teilprothesen in Antalya – von unsichtbaren Halteelementen bis hin zu Valplast-Flexibilität und Kaukraft.',
     packages: [
       {
         name: 'Modellguss-Teilprothese (Chrom-Cobalt-Gerüst)',
         brand: 'Bego Wironit / Heraeus Kulzer',
         duration: '4-5 Werktage (3 Sitzungen)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-package-10.jpg',
+        img: '/packages/pkg-4.webp',
         popular: true,
         included: [
           'Ultradünnes bruchfestes Chrom-Cobalt-Metallgerüst',
@@ -230,7 +230,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         name: 'Valplast Flexible Nylon-Teilprothese (Klammerfrei/Unsichtbar)',
         brand: 'Valplast USA / Deflex',
         duration: '4 Werktage (2 Sitzungen)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-implant-package-2.jpg',
+        img: '/packages/pkg-5.webp',
         included: [
           '100% metallfreie, unzerbrechliche thermoplastische Basis',
           'Zahnfleischfarbene flexible Halteelemente ohne sichtbares Metall',
@@ -245,7 +245,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         name: 'Geschiebeprothese (Unsichtbare Riegelverankerung)',
         brand: 'Bredent Vario-Snap / Ceka Präzisionsgeschiebe',
         duration: '5-6 Werktage (4 Sitzungen)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-implant-package-3.jpg',
+        img: '/packages/pkg-6.webp',
         included: [
           '100% unsichtbare Verankerung ohne sichtbare Klammern beim Lächeln',
           'Präzisionsgeschiebe in Ankerkronen integriert',
@@ -269,20 +269,20 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
   },
   pl: {
     packagesTitle: 'Pakiety Protez Częściowych i Przelicznik Walut',
-    packagesSubtitle: 'Protezy szkieletowe, elastyczne Valplast oraz protezy na zatrzaski precyzyjne zapewniające doskonały wygląd i stabilność w Stambule.',
+    packagesSubtitle: 'Protezy szkieletowe, elastyczne Valplast oraz protezy na zatrzaski precyzyjne zapewniające doskonały wygląd i stabilność w Antalyi.',
     mostPopularBadge: 'Najpopularniejszy Wybór',
     durationLabel: 'Czas Zabiegu:',
     includedLabel: 'Zawartość Pakietu:',
     priceLabel: 'Cena (Za Łuk):',
     getQuoteBtn: 'Uzyskaj Bezpłatną Wycenę',
     faqTitle: 'Często Zadawane Pytania o Protezy Częściowe',
-    faqSubtitle: 'Wszystko o protezach częściowych w Stambule: klamry estetyczne, elastyczność Valplast i zamki precyzyjne.',
+    faqSubtitle: 'Wszystko o protezach częściowych w Antalyi: klamry estetyczne, elastyczność Valplast i zamki precyzyjne.',
     packages: [
       {
         name: 'Proteza Szkieletowa Metalowa (Chrom-Kobalt)',
         brand: 'Bego Wironit / Heraeus Kulzer',
         duration: '4-5 Dni Roboczych (3 Wizyty)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-package-10.jpg',
+        img: '/packages/pkg-4.webp',
         popular: true,
         included: [
           'Cienki, niełamliwy szkielet z medycznego stopu chromo-kobaltu',
@@ -298,7 +298,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         name: 'Elastyczna Proteza Nylonowa Valplast (Bezklamrowa)',
         brand: 'Valplast USA / Deflex',
         duration: '4 Dni Roboczych (2 Wizyty)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-implant-package-2.jpg',
+        img: '/packages/pkg-5.webp',
         included: [
           '100% bezmetalowa, niełamliwa baza termoplastyczna',
           'Różowe klamry w kolorze dziąsła niewidoczne podczas uśmiechu',
@@ -313,7 +313,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         name: 'Proteza Bezklamrowa na Zatrzaskach Precyzyjnych',
         brand: 'Bredent Vario-Snap / Ceka',
         duration: '5-6 Dni Roboczych (4 Wizyty)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-implant-package-3.jpg',
+        img: '/packages/pkg-6.webp',
         included: [
           'Całkowicie niewidoczne połączenie bez metalowych klamer',
           'Mikrozamki precyzyjne ukryte wewnątrz koron filarowych',
@@ -337,20 +337,20 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
   },
   pt: {
     packagesTitle: 'Pacotes de Próteses Parciais & Calculadora de Moeda',
-    packagesSubtitle: 'Próteses esqueléticas metálicas, nylon flexível Valplast e próteses com encaixes de precisão em Istambul.',
+    packagesSubtitle: 'Próteses esqueléticas metálicas, nylon flexível Valplast e próteses com encaixes de precisão em Antalya.',
     mostPopularBadge: 'Mais Popular',
     durationLabel: 'Tempo de Procedimento:',
     includedLabel: 'Inclusões do Pacote:',
     priceLabel: 'Preço (Por Arcada):',
     getQuoteBtn: 'Pedir Orçamento Grátis',
     faqTitle: 'Perguntas Frequentes sobre Próteses Parciais',
-    faqSubtitle: 'Tudo sobre próteses parciais em Istambul: grampos estéticos, flexibilidade Valplast e encaixes invisíveis.',
+    faqSubtitle: 'Tudo sobre próteses parciais em Antalya: grampos estéticos, flexibilidade Valplast e encaixes invisíveis.',
     packages: [
       {
         name: 'Prótese Parcial Esquelética (Cromo-Cobalto)',
         brand: 'Bego Wironit / Heraeus Kulzer',
         duration: '4-5 Dias Úteis (3 Consultas)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-package-10.jpg',
+        img: '/packages/pkg-4.webp',
         popular: true,
         included: [
           'Estrutura metálica ultrafina em Cromo-Cobalto de alta resistência',
@@ -366,7 +366,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         name: 'Prótese Parcial Flexível Valplast (Invisível)',
         brand: 'Valplast USA / Deflex',
         duration: '4 Dias Úteis (2 Consultas)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-implant-package-2.jpg',
+        img: '/packages/pkg-5.webp',
         included: [
           'Base termoplástica 100% sem metal e inquebrável',
           'Grampos flexíveis na cor da gengiva completamente invisíveis',
@@ -381,7 +381,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         name: 'Prótese com Encaixes de Precisão (Sem Grampos)',
         brand: 'Bredent Vario-Snap / Ceka',
         duration: '5-6 Dias Úteis (4 Consultas)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-implant-package-3.jpg',
+        img: '/packages/pkg-6.webp',
         included: [
           'Fixação 100% invisível sem qualquer grampo visível ao sorrir',
           'Encaixes de precisão ocultos no interior de coroas dentárias',
@@ -405,20 +405,20 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
   },
   es: {
     packagesTitle: 'Paquetes de Prótesis Parciales y Conversor de Divisas',
-    packagesSubtitle: 'Prótesis esqueléticas de cromo-cobalto, nylon flexible Valplast y prótesis con ataches de precisión en Estambul.',
+    packagesSubtitle: 'Prótesis esqueléticas de cromo-cobalto, nylon flexible Valplast y prótesis con ataches de precisión en Antalya.',
     mostPopularBadge: 'Opción Más Popular',
     durationLabel: 'Tiempo de Tratamiento:',
     includedLabel: 'Incluido en el Paquete:',
     priceLabel: 'Precio (Por Arcada):',
     getQuoteBtn: 'Solicitar Presupuesto Gratis',
     faqTitle: 'Preguntas Frecuentes sobre Prótesis Parciales',
-    faqSubtitle: 'Todo lo que necesita saber sobre prótesis parciales en Estambul: ganchos invisibles, flexibilidad Valplast y ataches.',
+    faqSubtitle: 'Todo lo que necesita saber sobre prótesis parciales en Antalya: ganchos invisibles, flexibilidad Valplast y ataches.',
     packages: [
       {
         name: 'Prótesis Parcial Esquelética Metálica (Cromo-Cobalto)',
         brand: 'Bego Wironit / Heraeus Kulzer',
         duration: '4-5 Días Laborables (3 Citas)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-package-10.jpg',
+        img: '/packages/pkg-4.webp',
         popular: true,
         included: [
           'Estructura metálica ultrafina en Cromo-Cobalto de máxima resistencia',
@@ -434,7 +434,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         name: 'Prótesis Parcial Flexible Valplast (Ganchos Invisibles)',
         brand: 'Valplast USA / Deflex',
         duration: '4 Días Laborables (2 Citas)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-implant-package-2.jpg',
+        img: '/packages/pkg-5.webp',
         included: [
           'Base termoplástica 100% libre de metal e irrompible',
           'Ganchos flexibles en color encía totalmente disimulados',
@@ -449,7 +449,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         name: 'Prótesis Parcial con Ataches de Precisión (Sin Ganchos)',
         brand: 'Bredent Vario-Snap / Ceka',
         duration: '5-6 Días Laborables (4 Citas)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-implant-package-3.jpg',
+        img: '/packages/pkg-6.webp',
         included: [
           'Fijación 100% invisible sin ganchos metálicos al sonreír',
           'Microanclajes de fricción ocultos en coronas de soporte',
@@ -473,20 +473,20 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
   },
   ru: {
     packagesTitle: 'Пакеты частичных съемных протезов и конвертер валют',
-    packagesSubtitle: 'Бюгельные протезы, гибкий нейлон Valplast и протезы на замковых креплениях (аттачменах) в Стамбуле.',
+    packagesSubtitle: 'Бюгельные протезы, гибкий нейлон Valplast и протезы на замковых креплениях (аттачменах) в Анталье.',
     mostPopularBadge: 'Самый популярный выбор',
     durationLabel: 'Срок изготовления:',
     includedLabel: 'Что входит в пакет:',
     priceLabel: 'Цена (за челюсть):',
     getQuoteBtn: 'Получить бесплатный расчет',
     faqTitle: 'Часто задаваемые вопросы о частичных протезах',
-    faqSubtitle: 'Все о частичных съемных протезах в Стамбуле: невидимые кламмеры, нейлон Valplast и замковые крепления.',
+    faqSubtitle: 'Все о частичных съемных протезах в Анталье: невидимые кламмеры, нейлон Valplast и замковые крепления.',
     packages: [
       {
         name: 'Бюгельный протез на металлическом каркасе (хром-кобальт)',
         brand: 'Bego Wironit / Heraeus Kulzer',
         duration: '4-5 рабочих дней (3 визита)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-package-10.jpg',
+        img: '/packages/pkg-4.webp',
         popular: true,
         included: [
           'Ультратонкий литой дуговой каркас из медицинского хром-кобальта',
@@ -502,7 +502,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         name: 'Гибкий нейлоновый протез Valplast (без видимых кламмеров)',
         brand: 'Valplast USA / Deflex',
         duration: '4 рабочих дня (2 визита)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-implant-package-2.jpg',
+        img: '/packages/pkg-5.webp',
         included: [
           '100% безметалловый небьющийся термопластичный базис',
           'Кламмеры цвета десны, абсолютно незаметные при улыбке',
@@ -517,7 +517,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         name: 'Протез на замковых креплениях (аттачменах / без кламмеров)',
         brand: 'Bredent Vario-Snap / Ceka',
         duration: '5-6 рабочих дней (4 визита)',
-        img: 'https://sohodent.com/doc/data1/All-on-4-implant-package-3.jpg',
+        img: '/packages/pkg-6.webp',
         included: [
           '100% скрытая фиксация без металлических крючков',
           'Микрозамки, спрятанные внутри опорных коронок',

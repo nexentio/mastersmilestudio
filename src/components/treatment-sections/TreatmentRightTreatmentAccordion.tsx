@@ -73,7 +73,7 @@ const ACCORDION_DATA_MAP: Record<
         title: 'Zirkonyum İmplant',
         target: 'Metal alerjisi olan veya yüksek estetik kaygısı olanlar',
         desc: 'Doğal dişe estetik olarak en yakın, biyouyumlu beyaz seramik implant türüdür.',
-        img: '/treatments/accordion/zirconium-laminate.webp',
+        img: '/treatments/accordion/zirconium-implant.webp',
         href: '/treatments/dental-implants/zirconium-implants',
       },
       {
@@ -137,7 +137,7 @@ const ACCORDION_DATA_MAP: Record<
         title: 'Zirconium Implants',
         target: 'Those with metal allergies or high aesthetic concerns',
         desc: 'It is a biocompatible implant type that is aesthetically closest to a natural tooth.',
-        img: '/treatments/accordion/zirconium-laminate.webp',
+        img: '/treatments/accordion/zirconium-implant.webp',
         href: '/treatments/dental-implants/zirconium-implants',
       },
       {
@@ -201,7 +201,7 @@ const ACCORDION_DATA_MAP: Record<
         title: 'Zirkonimplantate',
         target: 'Patienten mit Metallallergien oder höchsten ästhetischen Ansprüchen',
         desc: 'Biokompatible weiße Keramikimplantate, die dem natürlichen Zahn optisch am nächsten kommen.',
-        img: '/treatments/accordion/zirconium-laminate.webp',
+        img: '/treatments/accordion/zirconium-implant.webp',
         href: '/treatments/dental-implants/zirconium-implants',
       },
       {
@@ -265,7 +265,7 @@ const ACCORDION_DATA_MAP: Record<
         title: 'Implanty cyrkonowe',
         target: 'Osoby z alergiami na metale lub najwyższymi wymaganiami estetycznymi',
         desc: 'Biokompatybilne białe implanty ceramiczne, najbardziej zbliżone do naturalnego zęba.',
-        img: '/treatments/accordion/zirconium-laminate.webp',
+        img: '/treatments/accordion/zirconium-implant.webp',
         href: '/treatments/dental-implants/zirconium-implants',
       },
       {
@@ -329,7 +329,7 @@ const ACCORDION_DATA_MAP: Record<
         title: 'Implantes de Zircônia',
         target: 'Pessoas com alergia a metais ou alta exigência estética',
         desc: 'Implantes cerâmicos biocompatíveis brancos, com estética natural perfeita.',
-        img: '/treatments/accordion/zirconium-laminate.webp',
+        img: '/treatments/accordion/zirconium-implant.webp',
         href: '/treatments/dental-implants/zirconium-implants',
       },
       {
@@ -393,7 +393,7 @@ const ACCORDION_DATA_MAP: Record<
         title: 'Implantes de Zirconio',
         target: 'Personas con alergia a metales o altas expectativas estéticas',
         desc: 'Implantes cerámicos biocompatibles blancos, lo más parecido a un diente natural.',
-        img: '/treatments/accordion/zirconium-laminate.webp',
+        img: '/treatments/accordion/zirconium-implant.webp',
         href: '/treatments/dental-implants/zirconium-implants',
       },
       {
@@ -457,7 +457,7 @@ const ACCORDION_DATA_MAP: Record<
         title: 'Циркониевые импланты',
         target: 'Пациенты с аллергией на металлы или высокими требованиями к эстетике десны',
         desc: 'Биосовместимые белые керамические импланты, максимально приближенные к натуральным зубам.',
-        img: '/treatments/accordion/zirconium-laminate.webp',
+        img: '/treatments/accordion/zirconium-implant.webp',
         href: '/treatments/dental-implants/zirconium-implants',
       },
       {

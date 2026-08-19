@@ -84,7 +84,7 @@ const SECTION_I18N: Record<string, SectionDictionary> = {
       {
         id: 'fluoride',
         href: '/treatments/general-dentistry/fluoride-treatment',
-        img: '/treatments/general/fluoride-treatment-copy.webp',
+        img: '/treatments/general/fluoride-treatment.jpeg',
         title: 'Fluoride Treatment',
         forWho: 'Children with high cavity risk and adults suffering from tooth sensitivity or weak enamel',
         desc: 'A quick clinical fluoride application that deeply remineralizes dental enamel, significantly reduces tooth sensitivity, and builds strong acid resistance.',
@@ -93,7 +93,7 @@ const SECTION_I18N: Record<string, SectionDictionary> = {
       {
         id: 'bruxism',
         href: '/treatments/general-dentistry/bruxism-treatment',
-        img: '/treatments/general/night-guard-copy.webp',
+        img: '/treatments/general/bruxism.jpeg',
         title: 'Bruxism Treatment (Night Guard)',
         forWho: 'Patients suffering from nocturnal teeth grinding, clenching, or jaw joint pain',
         desc: 'Custom-crafted 3D night guards and masseter therapies that absorb destructive grinding forces, protect enamel from attrition, and relax jaw muscles.',
@@ -162,7 +162,7 @@ const SECTION_I18N: Record<string, SectionDictionary> = {
       {
         id: 'fluoride',
         href: '/treatments/general-dentistry/fluoride-treatment',
-        img: '/treatments/general/fluoride-treatment-copy.webp',
+        img: '/treatments/general/fluoride-treatment.jpeg',
         title: 'Profesyonel Florür Uygulaması',
         forWho: 'Çürük riski yüksek olan çocuklar ve hassas diş yapısına sahip yetişkinler',
         desc: 'Diş minesini mineral bakımından zenginleştirerek güçlendiren, sıcak-soğuk hassasiyetini gideren ve çürüklere karşı kalkan oluşturan hızlı tedavi.',
@@ -171,7 +171,7 @@ const SECTION_I18N: Record<string, SectionDictionary> = {
       {
         id: 'bruxism',
         href: '/treatments/general-dentistry/bruxism-treatment',
-        img: '/treatments/general/night-guard-copy.webp',
+        img: '/treatments/general/bruxism.jpeg',
         title: 'Gece Plağı (Bruksizm & Diş Sıkma Tedavisi)',
         forWho: 'Gece diş sıkan, gıcırdatan veya çene ekleminde ağrı yaşayan hastalar',
         desc: 'Kişiye özel 3D ölçüyle üretilen şeffaf gece koruyucu plakları diş aşınmalarını önler, çene eklemini rahatlatır ve baş-boyun ağrılarını azaltır.',
@@ -240,7 +240,7 @@ const SECTION_I18N: Record<string, SectionDictionary> = {
       {
         id: 'fluoride',
         href: '/treatments/general-dentistry/fluoride-treatment',
-        img: '/treatments/general/fluoride-treatment-copy.webp',
+        img: '/treatments/general/fluoride-treatment.jpeg',
         title: 'Fluoridierung (Zahnschmelzhärtung)',
         forWho: 'Kinder mit Kariesrisiko und Erwachsene mit empfindlichen Zähnen',
         desc: 'Eine gezielte Fluoridlack-Behandlung, die den Zahnschmelz remineralisiert, Empfindlichkeiten stoppt und vor Säureangriffen schützt.',
@@ -249,7 +249,7 @@ const SECTION_I18N: Record<string, SectionDictionary> = {
       {
         id: 'bruxism',
         href: '/treatments/general-dentistry/bruxism-treatment',
-        img: '/treatments/general/night-guard-copy.webp',
+        img: '/treatments/general/bruxism.jpeg',
         title: 'Bruxismus-Behandlung (Aufbissschiene)',
         forWho: 'Patienten mit Zähneknirschen, Kieferpressen oder Kieferschmerzen',
         desc: 'Individuell angepasste transparente Aufbissschienen schützen vor Zahnabrieb, entlasten das Kiefergelenk und lindern Verspannungen.',
@@ -318,7 +318,7 @@ const SECTION_I18N: Record<string, SectionDictionary> = {
       {
         id: 'fluoride',
         href: '/treatments/general-dentistry/fluoride-treatment',
-        img: '/treatments/general/fluoride-treatment-copy.webp',
+        img: '/treatments/general/fluoride-treatment.jpeg',
         title: 'Fluoryzacja Zębów',
         forWho: 'Dzieci z ryzykiem próchnicy oraz dorośli z nadwrażliwością zębów',
         desc: 'Szybka aplikacja medycznego fluoru remineralizująca szkliwo, eliminująca nadwrażliwość i wzmacniająca naturalną barierę zęba.',
@@ -327,7 +327,7 @@ const SECTION_I18N: Record<string, SectionDictionary> = {
       {
         id: 'bruxism',
         href: '/treatments/general-dentistry/bruxism-treatment',
-        img: '/treatments/general/night-guard-copy.webp',
+        img: '/treatments/general/bruxism.jpeg',
         title: 'Leczenie Bruksizmu (Szyna Nocna)',
         forWho: 'Pacjenci zgrzytający zębami i cierpiący na bóle stawu skroniowo-żuchwowego',
         desc: 'Indywidualna szyna relaksacyjna 3D chroni szkliwo przed starciem, odciąża stawy skroniowo-żuchwowe i eliminuje napięcia mięśniowe.',
@@ -396,7 +396,7 @@ const SECTION_I18N: Record<string, SectionDictionary> = {
       {
         id: 'fluoride',
         href: '/treatments/general-dentistry/fluoride-treatment',
-        img: '/treatments/general/fluoride-treatment-copy.webp',
+        img: '/treatments/general/fluoride-treatment.jpeg',
         title: 'Fluoretação Profissional',
         forWho: 'Crianças com risco de cáries e adultos com sensibilidade dentária',
         desc: 'Aplicação clínica rápida que remineraliza o esmalte dentário, elimina a sensibilidade e cria uma barreira protetora contra ácidos.',
@@ -405,7 +405,7 @@ const SECTION_I18N: Record<string, SectionDictionary> = {
       {
         id: 'bruxism',
         href: '/treatments/general-dentistry/bruxism-treatment',
-        img: '/treatments/general/night-guard-copy.webp',
+        img: '/treatments/general/bruxism.jpeg',
         title: 'Tratamento de Bruxismo (Goteira Noturna)',
         forWho: 'Pacientes com ranger de dentes, apertamento ou dores na mandíbula',
         desc: 'Goteira oclusal personalizada em 3D que previne o desgaste dos dentes, protege as articulações da mandíbula e relaxa os músculos.',
@@ -474,7 +474,7 @@ const SECTION_I18N: Record<string, SectionDictionary> = {
       {
         id: 'fluoride',
         href: '/treatments/general-dentistry/fluoride-treatment',
-        img: '/treatments/general/fluoride-treatment-copy.webp',
+        img: '/treatments/general/fluoride-treatment.jpeg',
         title: 'Tratamiento con Flúor',
         forWho: 'Niños con propensión a caries y adultos con esmalte sensible',
         desc: 'Aplicación médica que remineraliza profundamente el esmalte, reduce la sensibilidad dental y fortalece los dientes frente a bacterias.',
@@ -483,7 +483,7 @@ const SECTION_I18N: Record<string, SectionDictionary> = {
       {
         id: 'bruxism',
         href: '/treatments/general-dentistry/bruxism-treatment',
-        img: '/treatments/general/night-guard-copy.webp',
+        img: '/treatments/general/bruxism.jpeg',
         title: 'Tratamiento de Bruxismo (Férula de Descarga)',
         forWho: 'Pacientes que rechinan o aprietan los dientes durante la noche',
         desc: 'Férula de descarga transparente a medida 3D que previene el desgaste dental, protege la articulación temporomandibular y relaja los músculos.',
@@ -552,7 +552,7 @@ const SECTION_I18N: Record<string, SectionDictionary> = {
       {
         id: 'fluoride',
         href: '/treatments/general-dentistry/fluoride-treatment',
-        img: '/treatments/general/fluoride-treatment-copy.webp',
+        img: '/treatments/general/fluoride-treatment.jpeg',
         title: 'Фторирование зубов',
         forWho: 'Дети с риском кариеса и взрослые с повышенной чувствительностью зубов',
         desc: 'Быстрое и эффективное нанесение фторлака для реминерализации эмали, снижения чувствительности и защиты от кислотных атак.',
@@ -561,7 +561,7 @@ const SECTION_I18N: Record<string, SectionDictionary> = {
       {
         id: 'bruxism',
         href: '/treatments/general-dentistry/bruxism-treatment',
-        img: '/treatments/general/night-guard-copy.webp',
+        img: '/treatments/general/bruxism.jpeg',
         title: 'Лечение бруксизма (Ночные капы)',
         forWho: 'Пациенты со скрежетанием, сжатием зубов и болями в челюстном суставе',
         desc: 'Индивидуальные прозрачные капы 3D защищают эмаль от истирания, разгружают височно-нижнечелюстной сустав и снимают мышечное напряжение.',

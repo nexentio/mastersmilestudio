@@ -21,72 +21,92 @@ export default function RealPatientsSection() {
 
   const stories: PatientStory[] = [
     {
-      id: 'story-1',
+      id: 'story-new-1',
+      country: 'SPAIN',
+      countryCode: 'es',
+      flagSvg: 'https://flagcdn.com/w160/es.png',
+      treatment: 'ALL ON 6 IMPLANTS',
+      image: '/patients/yt-WCLuaJnzIIE.webp',
+      videoUrl: 'https://www.youtube-nocookie.com/embed/WCLuaJnzIIE?autoplay=1',
+    },
+    {
+      id: 'story-new-2',
       country: 'UKRAINE',
       countryCode: 'ua',
       flagSvg: 'https://flagcdn.com/w160/ua.png',
-      treatment: 'WISDOM TOOTH',
-      image: '/patients/patient-1.jpeg',
-      videoUrl: 'https://www.youtube-nocookie.com/embed/v5XoXnDblWI?autoplay=1',
+      treatment: 'ALL ON 5 IMPLANTS',
+      image: '/patients/yt-aMvF5sYOat8.webp',
+      videoUrl: 'https://www.youtube-nocookie.com/embed/aMvF5sYOat8?autoplay=1',
     },
     {
-      id: 'story-2',
-      country: 'AUSTRIA',
-      countryCode: 'at',
-      flagSvg: 'https://flagcdn.com/w160/at.png',
-      treatment: 'WISDOM TOOTH',
-      image: '/patients/patient-2.jpeg',
-      videoUrl: 'https://www.youtube-nocookie.com/embed/F_ULWgBZhjY?autoplay=1',
+      id: 'story-new-3',
+      country: 'POLAND',
+      countryCode: 'pl',
+      flagSvg: 'https://flagcdn.com/w160/pl.png',
+      treatment: 'SMILE MAKEOVER',
+      image: '/patients/yt-DqR0HlO5jXQ.webp',
+      videoUrl: 'https://www.youtube-nocookie.com/embed/DqR0HlO5jXQ?autoplay=1',
     },
     {
-      id: 'story-3',
-      country: 'CANADA',
-      countryCode: 'ca',
-      flagSvg: 'https://flagcdn.com/w160/ca.png',
-      treatment: 'ALL ON SIX',
-      image: '/patients/patient-3.jpeg',
-      videoUrl: 'https://www.youtube-nocookie.com/embed/ZYMbU63b_PY?autoplay=1',
-    },
-    {
-      id: 'story-4',
-      country: 'USA',
-      countryCode: 'us',
-      flagSvg: 'https://flagcdn.com/w160/us.png',
-      treatment: 'LAMINE',
-      image: '/patients/patient-4.jpeg',
-      videoUrl: 'https://www.youtube-nocookie.com/embed/z_D8n4-FDSE?autoplay=1',
-    },
-    {
-      id: 'story-5',
-      country: 'SWEDEN',
-      countryCode: 'se',
-      flagSvg: 'https://flagcdn.com/w160/se.png',
-      treatment: 'LAMINE',
-      image: '/patients/patient-5.jpeg',
-      videoUrl: 'https://www.youtube-nocookie.com/embed/GxYMgj02_2E?autoplay=1',
-    },
-    {
-      id: 'story-6',
+      id: 'story-new-4',
       country: 'GERMANY',
       countryCode: 'de',
       flagSvg: 'https://flagcdn.com/w160/de.png',
-      treatment: 'ZIRCONIUM CROWNS',
-      image: '/patients/patient-6.jpeg',
-      videoUrl: 'https://www.youtube-nocookie.com/embed/2aW6V37Jw7c?autoplay=1',
+      treatment: 'IMPLANTS & MAKEOVER',
+      image: '/patients/yt-4yx0H7YJYPI.webp',
+      videoUrl: 'https://www.youtube-nocookie.com/embed/4yx0H7YJYPI?autoplay=1',
     },
     {
-      id: 'story-7',
+      id: 'story-new-5',
+      country: 'SPAIN',
+      countryCode: 'es',
+      flagSvg: 'https://flagcdn.com/w160/es.png',
+      treatment: 'IMPLANTS & MAKEOVER',
+      image: '/patients/yt-OTDgz1lkCNY.webp',
+      videoUrl: 'https://www.youtube-nocookie.com/embed/OTDgz1lkCNY?autoplay=1',
+    },
+    {
+      id: 'story-new-6',
       country: 'UNITED KINGDOM',
       countryCode: 'gb',
       flagSvg: 'https://flagcdn.com/w160/gb.png',
-      treatment: 'ALL ON FOUR',
-      image: '/mastersmilestudio_1781430682_3919246906335743176_70887948899.jpg',
-      videoUrl: 'https://www.youtube-nocookie.com/embed/OsM5_-n4eVk?autoplay=1',
+      treatment: 'FULL SMILE MAKEOVER',
+      image: '/patients/yt-9etYpr04dMk.webp',
+      videoUrl: 'https://www.youtube-nocookie.com/embed/9etYpr04dMk?autoplay=1',
+    },
+    {
+      id: 'story-new-7',
+      country: 'UNITED KINGDOM',
+      countryCode: 'gb',
+      flagSvg: 'https://flagcdn.com/w160/gb.png',
+      treatment: 'SMILE TRANSFORMATION',
+      image: '/patients/yt-8kze6FcJspg.webp',
+      videoUrl: 'https://www.youtube-nocookie.com/embed/8kze6FcJspg?autoplay=1',
+    },
+    {
+      id: 'story-new-8',
+      country: 'UNITED KINGDOM',
+      countryCode: 'gb',
+      flagSvg: 'https://flagcdn.com/w160/gb.png',
+      treatment: 'ALL ON 4 IMPLANTS',
+      image: '/patients/yt-MH9kGw8FzwA.webp',
+      videoUrl: 'https://www.youtube-nocookie.com/embed/MH9kGw8FzwA?autoplay=1',
+    },
+    {
+      id: 'story-new-9',
+      country: 'POLAND',
+      countryCode: 'pl',
+      flagSvg: 'https://flagcdn.com/w160/pl.png',
+      treatment: 'IMPLANTS & MAKEOVER',
+      image: '/patients/yt-pdLacbq-CyI.webp',
+      videoUrl: 'https://www.youtube-nocookie.com/embed/pdLacbq-CyI?autoplay=1',
     },
   ];
 
   const visibleCount = 5;
   const maxIndex = Math.max(0, stories.length - visibleCount);
+
+  const [activePlayingId, setActivePlayingId] = useState<string | null>(null);
 
   const handlePrev = () => {
     setStartIndex((prev) => (prev > 0 ? prev - 1 : maxIndex));
@@ -98,7 +118,10 @@ export default function RealPatientsSection() {
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') setSelectedVideo(null);
+      if (e.key === 'Escape') {
+        setSelectedVideo(null);
+        setActivePlayingId(null);
+      }
     };
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
@@ -181,25 +204,85 @@ export default function RealPatientsSection() {
           }}
           className="real-patients-grid"
         >
-          {visibleStories.map((story) => (
-            <div
-              key={story.id}
-              onClick={() => setSelectedVideo(story.videoUrl)}
-              style={{
-                backgroundColor: '#1f1f23',
-                borderRadius: '6px',
-                padding: '0',
-                display: 'flex',
-                height: '460px',
-                position: 'relative',
-                overflow: 'hidden',
-                boxShadow: '0 12px 30px rgba(0, 0, 0, 0.16)',
-                cursor: 'pointer',
-                transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
-                border: '1px solid #333338',
-              }}
-              className="real-patient-card"
-            >
+          {visibleStories.map((story) => {
+            const isPlaying = activePlayingId === story.id;
+            return (
+              <div
+                key={story.id}
+                onClick={() => {
+                  if (!isPlaying) setActivePlayingId(story.id);
+                }}
+                style={{
+                  backgroundColor: '#1f1f23',
+                  borderRadius: '6px',
+                  padding: '0',
+                  display: 'flex',
+                  height: '490px',
+                  position: 'relative',
+                  overflow: 'hidden',
+                  boxShadow: '0 12px 30px rgba(0, 0, 0, 0.16)',
+                  cursor: 'pointer',
+                  transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+                  border: isPlaying ? '1px solid #d58936' : '1px solid #333338',
+                }}
+                className="real-patient-card"
+              >
+                {isPlaying ? (
+                  <div
+                    style={{
+                      position: 'absolute',
+                      inset: 0,
+                      width: '100%',
+                      height: '100%',
+                      backgroundColor: '#000',
+                      zIndex: 10,
+                    }}
+                  >
+                    <iframe
+                      src={`${story.videoUrl}&playsinline=1&controls=1&rel=0&modestbranding=1&iv_load_policy=3&fs=0`}
+                      title={story.treatment}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      style={{
+                        position: 'absolute',
+                        top: '-145px',
+                        left: 0,
+                        width: '100%',
+                        height: 'calc(100% + 210px)',
+                        border: 'none',
+                        display: 'block',
+                      }}
+                    />
+                    <button
+                      type="button"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        setActivePlayingId(null);
+                      }}
+                      style={{
+                        position: 'absolute',
+                        top: '8px',
+                        right: '8px',
+                        width: '28px',
+                        height: '28px',
+                        borderRadius: '50%',
+                        backgroundColor: 'rgba(0, 0, 0, 0.75)',
+                        color: '#fff',
+                        border: '1px solid rgba(255, 255, 255, 0.3)',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        cursor: 'pointer',
+                        zIndex: 20,
+                        fontSize: '13px',
+                        lineHeight: 1,
+                      }}
+                      aria-label="Close video"
+                    >
+                      ✕
+                    </button>
+                  </div>
+                ) : (
+                  <>
               {/* Left Vertical Bar: Text "FROM [COUNTRY] TO MASTER SMILE" */}
               <div
                 style={{
@@ -248,10 +331,13 @@ export default function RealPatientsSection() {
                 <div
                   style={{
                     width: '100%',
-                    height: '48px',
+                    height: '60px',
                     position: 'relative',
                     overflow: 'hidden',
                     backgroundColor: '#000000',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
                     borderBottom: '2px solid #2a2a30',
                   }}
                 >
@@ -261,7 +347,8 @@ export default function RealPatientsSection() {
                     style={{
                       width: '100%',
                       height: '100%',
-                      objectFit: 'cover',
+                      objectFit: 'fill',
+                      display: 'block',
                       filter: 'contrast(1.05)',
                     }}
                   />
@@ -301,7 +388,7 @@ export default function RealPatientsSection() {
                   <div
                     style={{
                       width: '100%',
-                      height: '240px',
+                      height: '255px',
                       borderRadius: '2px',
                       position: 'relative',
                       overflow: 'hidden',
@@ -379,9 +466,12 @@ export default function RealPatientsSection() {
                   </span>
                 </div>
               </div>
-            </div>
-          ))}
+            </>
+          )}
         </div>
+      );
+    })}
+  </div>
 
         {/* Bottom Carousel Controls (Left & Right Buttons) */}
         <div

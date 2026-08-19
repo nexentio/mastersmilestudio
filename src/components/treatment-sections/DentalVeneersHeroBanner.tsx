@@ -9,43 +9,43 @@ import styles from './DentalVeneersHeroBanner.module.css';
 const HERO_I18N = {
   en: {
     tag: 'TREATMENTS',
-    title: 'Dental Veneers in Istanbul, Turkey',
+    title: 'Dental Veneers in Antalya, Turkey',
     subtitle: 'Achieve a flawless smile with custom dental veneers. Fast, natural, and long-lasting results.',
     btnText: 'Contact',
   },
   tr: {
     tag: 'TEDAVİLERİMİZ',
-    title: 'İstanbul Yaprak Porselen & Dental Lamine Tedavisi',
+    title: 'Antalya Yaprak Porselen & Dental Lamine Tedavisi',
     subtitle: 'Kişiye özel lamine diş kaplamalarıyla kusursuz bir gülüşe kavuşun. Hızlı, doğal ve uzun ömürlü sonuçlar.',
     btnText: 'İletişime Geç',
   },
   de: {
     tag: 'BEHANDLUNGEN',
-    title: 'Veneers in Istanbul, Türkei | Ästhetische Zahnverblendungen',
+    title: 'Veneers in Antalya, Türkei | Ästhetische Zahnverblendungen',
     subtitle: 'Erzielen Sie ein makelloses Lächeln mit individuellen Veneers. Schnelle, natürliche und dauerhafte Ergebnisse.',
     btnText: 'Kontakt',
   },
   pl: {
     tag: 'ZABIEGI',
-    title: 'Licówki Porcelanowe w Stambule, Turcja | Estetyka Uśmiechu',
+    title: 'Licówki Porcelanowe w Antalyi, Turcja | Estetyka Uśmiechu',
     subtitle: 'Osiągnij nieskazitelny uśmiech dzięki precyzyjnym licówkom. Szybkie, naturalne i trwałe rezultaty.',
     btnText: 'Kontakt',
   },
   pt: {
     tag: 'TRATAMENTOS',
-    title: 'Facetas Dentárias em Istambul, Turquia | Estética Dental',
+    title: 'Facetas Dentárias em Antalya, Turquia | Estética Dental',
     subtitle: 'Consiga um sorriso impecável com facetas dentárias personalizadas. Resultados rápidos, naturais e duradouros.',
     btnText: 'Contato',
   },
   es: {
     tag: 'TRATAMIENTOS',
-    title: 'Carillas Dentales en Estambul, Turquía | Estética de Sonrisa',
+    title: 'Carillas Dentales en Antalya, Turquía | Estética de Sonrisa',
     subtitle: 'Consiga una sonrisa impecable con carillas dentales personalizadas. Resultados rápidos, naturales y duraderos.',
     btnText: 'Contacto',
   },
   ru: {
     tag: 'ЛЕЧЕНИЕ',
-    title: 'Керамические виниры в Стамбуле | Идеальная эстетика улыбки',
+    title: 'Керамические виниры в Анталье | Идеальная эстетика улыбки',
     subtitle: 'Создайте безупречную улыбку с индивидуальными винирами. Быстрый, естественный и долговечный результат.',
     btnText: 'Записаться',
   },
@@ -60,10 +60,9 @@ export default function DentalVeneersHeroBanner() {
       <Image
         src="/images/treatments/veneers.jpg"
         alt={d.title}
-        width={1600}
-        height={741}
+        fill
         priority
-        fetchPriority="high"
+        sizes="100vw"
         className={styles.back1}
       />
       <div className={styles.content}>

@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 import { Link } from '@/i18n/routing';
 import { useTranslations, useLocale } from 'next-intl';
 import { getWhatsAppLink } from '@/config/site';
@@ -51,12 +52,12 @@ export default function Footer() {
   ];
 
   const legalList = [
-    { label: t('legalClinic'), href: '/#contact' },
-    { label: t('legalSupport'), href: '/#contact' },
-    { label: t('legalKvkk'), href: '/#contact' },
-    { label: t('legalPrivacy'), href: '/#privacy' },
-    { label: t('legalCookies'), href: '/#cookies' },
-    { label: t('legalTerms'), href: '/#terms' },
+    { label: t('legalClinic'), href: '/contact' },
+    { label: t('legalSupport'), href: '/contact' },
+    { label: t('legalKvkk'), href: '/privacy-policy#patient-rights' },
+    { label: t('legalPrivacy'), href: '/privacy-policy' },
+    { label: t('legalCookies'), href: '/privacy-policy#cookies-tracking' },
+    { label: t('legalTerms'), href: '/terms-of-service' },
   ];
 
   const renderLinkItem = (item: { label: string; href: string; isExternal?: boolean }, idx: number) => {
@@ -87,6 +88,12 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
+        {/* Grand Brand Signature (Posterama Text Black) */}
+        <div className={styles.brandSignatureWrap}>
+          <div className={styles.brandMaster}>MASTER</div>
+          <div className={styles.brandSubtitle}>SMILE STUDIO</div>
+        </div>
+
         {/* Top 4 Navigation Columns */}
         <div className={styles.navGrid}>
           {/* Column 1: Treatments */}
@@ -162,15 +169,24 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom Copyright & Legal Links */}
+        {/* Bottom Copyright, Health Türkiye Accreditation & Legal Links */}
         <div className={styles.bottomRow}>
-          <div>{t('copyright')}</div>
+          <div className={styles.copyrightText}>{t('copyright')}</div>
+
+          {/* Standalone HealthTürkiye Logo (No background box) */}
+          <Image
+            src="/healthturkiye-logo.svg"
+            alt="Health Türkiye - Türkiye Sağlık Turizmi"
+            width={140}
+            height={44}
+            className={styles.healthTurkiyeLogo}
+          />
 
           <div className={styles.legalLinks}>
-            <Link href="/#privacy" className={styles.legalLink}>
+            <Link href="/privacy-policy" className={styles.legalLink}>
               {t('privacyPolicy')}
             </Link>
-            <Link href="/#terms" className={styles.legalLink}>
+            <Link href="/terms-of-service" className={styles.legalLink}>
               {t('termsOfUse')}
             </Link>
           </div>

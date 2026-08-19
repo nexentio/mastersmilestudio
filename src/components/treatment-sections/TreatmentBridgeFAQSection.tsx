@@ -19,7 +19,7 @@ const BRIDGE_FAQ_DATA: Record<string, FAQDictionary> = {
   en: {
     title: 'Frequently Asked Questions About Dental Bridges & Zirconia',
     subText:
-      'Everything you need to know about replacing missing teeth with fixed zirconia bridges, implant bridges, and chewing restoration in Istanbul.',
+      'Everything you need to know about replacing missing teeth with fixed zirconia bridges, implant bridges, and chewing restoration in Antalya.',
     items: [
       {
         q: 'What is a dental bridge and how does it work?',
@@ -38,8 +38,8 @@ const BRIDGE_FAQ_DATA: Record<string, FAQDictionary> = {
         a: 'Not at all. The procedure is performed under gentle local anesthesia. Temporary bridges are placed immediately on day one to prevent sensitivity and ensure normal chewing while your permanent bridge is custom milled.',
       },
       {
-        q: 'How many days do I need to stay in Istanbul for a dental bridge?',
-        a: 'A complete fixed bridge restoration takes only 4 to 6 days in Istanbul (3 short clinic visits: 1. Consultation, preparation & temporary bridge; 2. Frame fitting and shade calibration; 3. Permanent cementation and bite check).',
+        q: 'How many days do I need to stay in Antalya for a dental bridge?',
+        a: 'A complete fixed bridge restoration takes only 4 to 6 days in Antalya (3 short clinic visits: 1. Consultation, preparation & temporary bridge; 2. Frame fitting and shade calibration; 3. Permanent cementation and bite check).',
       },
       {
         q: 'What is an Implant-Supported Dental Bridge?',
@@ -90,7 +90,7 @@ const BRIDGE_FAQ_DATA: Record<string, FAQDictionary> = {
   tr: {
     title: 'Diş Köprüsü & Zirkonyum Hakkında Sıkça Sorulan Sorular',
     subText:
-      'Eksik dişlerin tamamlanması, zirkonyum köprüler, implant destekli köprüler ve İstanbul’daki tedavi süreciniz hakkında tüm klinik detaylar.',
+      'Eksik dişlerin tamamlanması, zirkonyum köprüler, implant destekli köprüler ve Antalya’daki tedavi süreciniz hakkında tüm klinik detaylar.',
     items: [
       {
         q: 'Diş köprüsü nedir ve nasıl çalışır?',
@@ -109,7 +109,7 @@ const BRIDGE_FAQ_DATA: Record<string, FAQDictionary> = {
         a: 'Hayır. Tüm kesim ve ölçü işlemleri lokal anestezi altında tamamen ağrısız gerçekleşir. İlk seansta takılan geçici dişler sayesinde kalıcı köprünüz takılana kadar hiçbir sızı yaşamazsınız.',
       },
       {
-        q: 'Diş köprüsü tedavisi için İstanbul’da kaç gün kalmam gerekir?',
+        q: 'Diş köprüsü tedavisi için Antalya’da kaç gün kalmam gerekir?',
         a: 'Komple diş köprüsü tedavisi 4 ila 6 gün (3 klinik seansı) içinde tamamlanır.',
       },
       {
@@ -161,7 +161,7 @@ const BRIDGE_FAQ_DATA: Record<string, FAQDictionary> = {
   de: {
     title: 'Häufig gestellte Fragen zu Zahnbrücken & Zirkon',
     subText:
-      'Alles über den Ersatz fehlender Zähne mit festen Zirkonbrücken, Implantatbrücken und Kaufunktion in Istanbul.',
+      'Alles über den Ersatz fehlender Zähne mit festen Zirkonbrücken, Implantatbrücken und Kaufunktion in Antalya.',
     items: [
       {
         q: 'Was ist eine Zahnbrücke und wie funktioniert sie?',
@@ -180,7 +180,7 @@ const BRIDGE_FAQ_DATA: Record<string, FAQDictionary> = {
         a: 'Nein, die Behandlung erfolgt vollkommen schmerzfrei unter Lokalanästhesie mit sofortigen Provisorien am selben Tag.',
       },
       {
-        q: 'Wie viele Tage Aufenthalt in Istanbul sind erforderlich?',
+        q: 'Wie viele Tage Aufenthalt in Antalya sind erforderlich?',
         a: 'Die gesamte Brückenbehandlung dauert nur 4 bis 6 Tage (3 kurze Termine in unserer Klinik).',
       },
       {
@@ -232,7 +232,7 @@ const BRIDGE_FAQ_DATA: Record<string, FAQDictionary> = {
   pl: {
     title: 'Często Zadawane Pytania o Mosty Zębowe i Cyrkon',
     subText:
-      'Wszystko o mostach z tlenku cyrkonu, mostach na implantach i odbudowie funkcji żucia w Stambule.',
+      'Wszystko o mostach z tlenku cyrkonu, mostach na implantach i odbudowie funkcji żucia w Antalyi.',
     items: [
       {
         q: 'Czym jest most protetyczny i jak działa?',
@@ -251,7 +251,7 @@ const BRIDGE_FAQ_DATA: Record<string, FAQDictionary> = {
         a: 'Zabieg jest w 100% bezbolesny w znieczuleniu miejscowym. Natychmiast zakładany jest most tymczasowy.',
       },
       {
-        q: 'Ile dni trwa leczenie w Stambule?',
+        q: 'Ile dni trwa leczenie w Antalyi?',
         a: 'Wykonanie mostu trwa zaledwie 4 do 6 dni (3 krótkie wizyty w klinice).',
       },
       {
@@ -303,7 +303,7 @@ const BRIDGE_FAQ_DATA: Record<string, FAQDictionary> = {
   pt: {
     title: 'Perguntas Frequentes Sobre Pontes Dentárias e Zircônia',
     subText:
-      'Tudo sobre pontes fixas em zircônia, pontes sobre implantes e reabilitação mastigatória em Istambul.',
+      'Tudo sobre pontes fixas em zircônia, pontes sobre implantes e reabilitação mastigatória em Antalya.',
     items: [
       {
         q: 'O que é uma ponte dentária e como funciona?',
@@ -322,7 +322,7 @@ const BRIDGE_FAQ_DATA: Record<string, FAQDictionary> = {
         a: 'Não, o tratamento é 100% indolor com anestesia local e colocação imediata de provisórios.',
       },
       {
-        q: 'Quantos dias são necessários em Istambul?',
+        q: 'Quantos dias são necessários em Antalya?',
         a: 'O tratamento completo leva de 4 a 6 dias (apenas 3 consultas clínicas).',
       },
       {
@@ -374,7 +374,7 @@ const BRIDGE_FAQ_DATA: Record<string, FAQDictionary> = {
   es: {
     title: 'Preguntas Frecuentes Sobre Puentes Dentales y Zirconio',
     subText:
-      'Todo lo que necesita saber sobre puentes fijos de zirconio, puentes sobre implantes y recuperación masticatoria en Estambul.',
+      'Todo lo que necesita saber sobre puentes fijos de zirconio, puentes sobre implantes y recuperación masticatoria en Antalya.',
     items: [
       {
         q: '¿Qué es un puente dental y cómo funciona?',
@@ -393,7 +393,7 @@ const BRIDGE_FAQ_DATA: Record<string, FAQDictionary> = {
         a: 'No, el tallado y la fijación son 100% indoloros con anestesia local suave y colocación de provisionales el mismo día.',
       },
       {
-        q: '¿Cuántos días de estancia en Estambul se requieren?',
+        q: '¿Cuántos días de estancia en Antalya se requieren?',
         a: 'El tratamiento completo se realiza en solo 4 a 6 días (3 citas clínicas).',
       },
       {
@@ -445,7 +445,7 @@ const BRIDGE_FAQ_DATA: Record<string, FAQDictionary> = {
   ru: {
     title: 'Часто задаваемые вопросы о зубных мостах и цирконии',
     subText:
-      'Все о несъемных мостовидных протезах из циркония, мостах на имплантах и восстановлении прикуса в Стамбуле.',
+      'Все о несъемных мостовидных протезах из циркония, мостах на имплантах и восстановлении прикуса в Анталье.',
     items: [
       {
         q: 'Что такое зубной мост и как он устроен?',
@@ -464,7 +464,7 @@ const BRIDGE_FAQ_DATA: Record<string, FAQDictionary> = {
         a: 'Процедура абсолютно безболезненна благодаря качественной местной анестезии. Временный мост ставится в первый же день.',
       },
       {
-        q: 'Сколько дней занимает изготовление моста в Стамбуле?',
+        q: 'Сколько дней занимает изготовление моста в Анталье?',
         a: 'Полный курс занимает от 4 до 6 дней (всего 3 визита в клинику).',
       },
       {

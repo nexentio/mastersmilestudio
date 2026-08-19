@@ -235,7 +235,7 @@ export default function GalleryMainSection() {
             <div className={styles.im}>
               <Link href="/contact" aria-label="Free consultation">
                 <Image
-                  src="/prices-consultation.webp"
+                  src="/mss-afterpics-patients.png"
                   alt="Master Smile Studio VIP Consultation"
                   fill
                   sizes="320px"

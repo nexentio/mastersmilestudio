@@ -30,12 +30,12 @@ const JOURNEY_DATA: Record<string, JourneyDictionary> = {
   en: {
     headTitle: 'Your Cosmetic Smile Journey Made Simple',
     headSub:
-      'From your initial digital consultation to your final Hollywood Smile reveal, we ensure a seamless and luxurious aesthetic dental journey in Istanbul. Experience world-class artistry, transparent pricing, and personalized VIP care every step of the way.',
+      'From your initial digital consultation to your final Hollywood Smile reveal, we ensure a seamless and luxurious aesthetic dental journey in Antalya. Experience world-class artistry, transparent pricing, and personalized VIP care every step of the way.',
     items: [
       {
         icon: '/icons/journey-01.webp',
         title: 'Stay Duration',
-        desc: 'Complete aesthetic transformations in just 5 to 7 days in Istanbul.',
+        desc: 'Complete aesthetic transformations in just 5 to 7 days in Antalya.',
       },
       {
         icon: '/icons/journey-02.webp',
@@ -65,11 +65,11 @@ const JOURNEY_DATA: Record<string, JourneyDictionary> = {
   tr: {
     headTitle: 'Estetik Gülüş Yolculuğunuz Artık Çok Kolay',
     headSub:
-      'İlk dijital danışmanlığınızdan yeni Hollywood gülüşünüze kadar, İstanbul’da pürüzsüz, şeffaf ve konforlu bir estetik tedavi süreci sunuyoruz. Uzman hekimlerimiz ve VIP transfer ayrıcalıklarıyla sadece gülüşünüze odaklanın.',
+      'İlk dijital danışmanlığınızdan yeni Hollywood gülüşünüze kadar, Antalya’da pürüzsüz, şeffaf ve konforlu bir estetik tedavi süreci sunuyoruz. Uzman hekimlerimiz ve VIP transfer ayrıcalıklarıyla sadece gülüşünüze odaklanın.',
     items: [
       {
         icon: '/icons/journey-01.webp',
-        title: 'İstanbul’da Kalış Süresi',
+        title: 'Antalya’da Kalış Süresi',
         desc: 'Komple estetik gülüş tasarımları için sadece 5 - 7 gün.',
       },
       {
@@ -100,12 +100,12 @@ const JOURNEY_DATA: Record<string, JourneyDictionary> = {
   de: {
     headTitle: 'Ihre ästhetische Zahnbehandlung leicht gemacht',
     headSub:
-      'Von der ersten Online-Beratung bis zu Ihrem perfekten Hollywood-Lächeln begleiten wir Sie transparent und komfortabel in Istanbul.',
+      'Von der ersten Online-Beratung bis zu Ihrem perfekten Hollywood-Lächeln begleiten wir Sie transparent und komfortabel in Antalya.',
     items: [
       {
         icon: '/icons/journey-01.webp',
         title: 'Aufenthaltsdauer',
-        desc: 'Nur 5 bis 7 Tage für Ihre vollständige Lächeln-Transformation in Istanbul.',
+        desc: 'Nur 5 bis 7 Tage für Ihre vollständige Lächeln-Transformation in Antalya.',
       },
       {
         icon: '/icons/journey-02.webp',
@@ -135,12 +135,12 @@ const JOURNEY_DATA: Record<string, JourneyDictionary> = {
   pl: {
     headTitle: 'Twoja podróż po nowy uśmiech w prostych krokach',
     headSub:
-      'Od pierwszej konsultacji online po ostateczny zachwycający efekt Hollywood Smile w Stambule. Zapewniamy pełne wsparcie i opiekę VIP.',
+      'Od pierwszej konsultacji online po ostateczny zachwycający efekt Hollywood Smile w Antalyi. Zapewniamy pełne wsparcie i opiekę VIP.',
     items: [
       {
         icon: '/icons/journey-01.webp',
         title: 'Czas pobytu',
-        desc: 'Jedynie 5–7 dni w Stambule dla pełnej metamorfozy uśmiechu.',
+        desc: 'Jedynie 5–7 dni w Antalyi dla pełnej metamorfozy uśmiechu.',
       },
       {
         icon: '/icons/journey-02.webp',
@@ -170,12 +170,12 @@ const JOURNEY_DATA: Record<string, JourneyDictionary> = {
   pt: {
     headTitle: 'A Sua Transformação de Sorriso Simplificada',
     headSub:
-      'Desde a avaliação digital inicial até ao seu novo Hollywood Smile em Istambul. Garantimos uma experiência clínica de excelência com total apoio.',
+      'Desde a avaliação digital inicial até ao seu novo Hollywood Smile em Antalya. Garantimos uma experiência clínica de excelência com total apoio.',
     items: [
       {
         icon: '/icons/journey-01.webp',
         title: 'Duração da Estadia',
-        desc: 'Apenas 5 a 7 dias em Istambul para o seu novo sorriso.',
+        desc: 'Apenas 5 a 7 dias em Antalya para o seu novo sorriso.',
       },
       {
         icon: '/icons/journey-02.webp',
@@ -205,11 +205,11 @@ const JOURNEY_DATA: Record<string, JourneyDictionary> = {
   es: {
     headTitle: 'El Viaje Hacia Su Nueva Sonrisa, Fácil y Seguro',
     headSub:
-      'Desde su primera valoración digital hasta su radiante Hollywood Smile en Estambul. Le acompañamos con atención personalizada y máxima transparencia.',
+      'Desde su primera valoración digital hasta su radiante Hollywood Smile en Antalya. Le acompañamos con atención personalizada y máxima transparencia.',
     items: [
       {
         icon: '/icons/journey-01.webp',
-        title: 'Estancia en Estambul',
+        title: 'Estancia en Antalya',
         desc: 'Solo 5 a 7 días para completar el diseño integral de su sonrisa.',
       },
       {
@@ -238,14 +238,14 @@ const JOURNEY_DATA: Record<string, JourneyDictionary> = {
     phoneLabel: 'Línea Directa',
   },
   ru: {
-    headTitle: 'Ваш путь к идеальной улыбке в Стамбуле',
+    headTitle: 'Ваш путь к идеальной улыбке в Анталье',
     headSub:
       'От первой онлайн-консультации до вашей новой голливудской улыбки. Мы обеспечиваем комфорт, прозрачные цены и заботу на каждом этапе.',
     items: [
       {
         icon: '/icons/journey-01.webp',
         title: 'Срок пребывания',
-        desc: 'Всего 5–7 дней в Стамбуле для полного преображения улыбки.',
+        desc: 'Всего 5–7 дней в Анталье для полного преображения улыбки.',
       },
       {
         icon: '/icons/journey-02.webp',

@@ -9,43 +9,43 @@ import styles from './DentalBridgesHeroBanner.module.css';
 const HERO_I18N = {
   en: {
     tag: 'TREATMENTS',
-    title: 'Dental Bridges in Istanbul, Turkey |',
+    title: 'Dental Bridges in Antalya, Turkey',
     subtitle: 'Replace missing teeth with custom dental bridges. Strong, natural-looking, and long-lasting.',
     btnText: 'Contact',
   },
   tr: {
     tag: 'TEDAVİLERİMİZ',
-    title: 'İstanbul Diş Köprüsü Tedavisi | Estetik ve Fonksiyonel Köprü Çözümleri',
+    title: 'Antalya Diş Köprüsü Tedavisi | Estetik ve Fonksiyonel Köprü Çözümleri',
     subtitle: 'Eksik dişlerinizi kişiye özel diş köprüleriyle tamamlayın. Güçlü, doğal görünümlü ve uzun ömürlü.',
     btnText: 'İletişime Geç',
   },
   de: {
     tag: 'BEHANDLUNGEN',
-    title: 'Zahnbrücken in Istanbul, Türkei | Ästhetischer Zahnersatz',
+    title: 'Zahnbrücken in Antalya, Türkei | Ästhetischer Zahnersatz',
     subtitle: 'Ersetzen Sie fehlende Zähne mit maßgefertigten Zahnbrücken. Stabil, natürlich und langlebig.',
     btnText: 'Kontakt',
   },
   pl: {
     tag: 'ZABIEGI',
-    title: 'Mosty Protetyczne w Stambule, Turcja | Odbudowa Braków Zębowych',
+    title: 'Mosty Protetyczne w Antalyi, Turcja | Odbudowa Braków Zębowych',
     subtitle: 'Uzupełnij brakujące zęby precyzyjnymi mostami protetycznymi. Trwałe, estetyczne i naturalne.',
     btnText: 'Kontakt',
   },
   pt: {
     tag: 'TRATAMENTOS',
-    title: 'Pontes Dentárias em Istambul, Turquia | Restauração Dentária',
+    title: 'Pontes Dentárias em Antalya, Turquia | Restauração Dentária',
     subtitle: 'Substitua dentes em falta com pontes dentárias personalizadas. Fortes, naturais e duradouras.',
     btnText: 'Contato',
   },
   es: {
     tag: 'TRATAMIENTOS',
-    title: 'Puentes Dentales en Estambul, Turquía | Reemplazo Dental Fijo',
+    title: 'Puentes Dentales en Antalya, Turquía | Reemplazo Dental Fijo',
     subtitle: 'Recupere las piezas dentales perdidas con puentes dentales a medida. Resistentes, naturales y duraderos.',
     btnText: 'Contacto',
   },
   ru: {
     tag: 'ЛЕЧЕНИЕ',
-    title: 'Зубные мосты в Стамбуле | Надежное восстановление зубов',
+    title: 'Зубные мосты в Анталье | Надежное восстановление зубов',
     subtitle: 'Восстановите отсутствующие зубы с помощью индивидуальных мостовидных протезов. Прочно, эстетично и долговечно.',
     btnText: 'Записаться',
   },
@@ -60,10 +60,9 @@ export default function DentalBridgesHeroBanner() {
       <Image
         src="/images/treatments/bridge.jpg"
         alt={d.title}
-        width={1600}
-        height={637}
+        fill
         priority
-        fetchPriority="high"
+        sizes="100vw"
         className={styles.back1}
       />
       <div className={styles.content}>

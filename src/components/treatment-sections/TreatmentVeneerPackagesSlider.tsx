@@ -43,7 +43,7 @@ interface PackageDict {
 const PACKAGES_I18N: Record<string, PackageDict> = {
   en: {
     badge: 'ALL-INCLUSIVE VENEER PACKAGES',
-    title: 'Popular Dental Veneer Packages in Istanbul',
+    title: 'Popular Dental Veneer Packages in Antalya',
     subtitle: 'Transparent pricing with 5-star hotel accommodation, VIP chauffeur transfers, and Swiss & German Ivoclar E-Max veneers.',
     durationLabel: 'Treatment Duration:',
     featuresTitle: 'Package Inclusions:',
@@ -86,7 +86,7 @@ const PACKAGES_I18N: Record<string, PackageDict> = {
   },
   tr: {
     badge: 'HER ŞEY DAHİL LAMİNA PAKETLERİ',
-    title: 'İstanbul Popüler Diş Kaplama & Lamina Paketleri',
+    title: 'Antalya Popüler Diş Kaplama & Lamina Paketleri',
     subtitle: '5 yıldızlı otel konaklaması, VIP transferler ve orijinal Ivoclar E-Max porselen kalitesiyle şeffaf paketler.',
     durationLabel: 'Tedavi Süresi:',
     featuresTitle: 'Pakete Dahil Hizmetler:',
@@ -129,7 +129,7 @@ const PACKAGES_I18N: Record<string, PackageDict> = {
   },
   de: {
     badge: 'ALL-INCLUSIVE VENEERS-PAKETE',
-    title: 'Beliebte Veneer-Pakete in Istanbul',
+    title: 'Beliebte Veneer-Pakete in Antalya',
     subtitle: 'Transparente Festpreise inklusive 5-Sterne-Hotel, VIP-Transfers und original Ivoclar E-Max Keramik.',
     durationLabel: 'Behandlungsdauer:',
     featuresTitle: 'Im Paket enthalten:',
@@ -172,7 +172,7 @@ const PACKAGES_I18N: Record<string, PackageDict> = {
   },
   pl: {
     badge: 'PAKIETY LICÓWEK ALL-INCLUSIVE',
-    title: 'Popularne Pakiety Licówek w Stambule',
+    title: 'Popularne Pakiety Licówek w Antalyi',
     subtitle: 'Przejrzyste ceny z 5-gwiazdkowym hotelem, transferami VIP oraz oryginalnymi licówkami Ivoclar E-Max.',
     durationLabel: 'Czas trwania:',
     featuresTitle: 'W pakiecie zawarte:',
@@ -215,7 +215,7 @@ const PACKAGES_I18N: Record<string, PackageDict> = {
   },
   pt: {
     badge: 'PACOTES DE FACETAS ALL-INCLUSIVE',
-    title: 'Pacotes Populares de Facetas em Istambul',
+    title: 'Pacotes Populares de Facetas em Antalya',
     subtitle: 'Preços transparentes com hotel 5 estrelas, transfers VIP e facetas de porcelana Ivoclar E-Max.',
     durationLabel: 'Duração do Tratamento:',
     featuresTitle: 'Incluso no Pacote:',
@@ -258,7 +258,7 @@ const PACKAGES_I18N: Record<string, PackageDict> = {
   },
   es: {
     badge: 'PAQUETES DE CARILLAS TODO INCLUIDO',
-    title: 'Paquetes Populares de Carillas en Estambul',
+    title: 'Paquetes Populares de Carillas en Antalya',
     subtitle: 'Precios transparentes con hotel 5 estrellas, traslados VIP y carillas de porcelana Ivoclar E-Max.',
     durationLabel: 'Duración del Tratamiento:',
     featuresTitle: 'Incluido en el Paquete:',
@@ -301,7 +301,7 @@ const PACKAGES_I18N: Record<string, PackageDict> = {
   },
   ru: {
     badge: 'ПАКЕТЫ ВИНИРОВ «ВСЕ ВКЛЮЧЕНО»',
-    title: 'Популярные пакеты виниров в Стамбуле',
+    title: 'Популярные пакеты виниров в Анталье',
     subtitle: 'Прозрачные цены с проживанием в 5-звездочном отеле, VIP-трансфером и оригинальной керамикой Ivoclar E-Max.',
     durationLabel: 'Длительность лечения:',
     featuresTitle: 'В пакет включено:',
@@ -345,9 +345,9 @@ const PACKAGES_I18N: Record<string, PackageDict> = {
 };
 
 const VENEER_IMAGES = [
-  'https://sohodent.com/doc/data1/porcelain-laminate-copy.webp',
-  'https://sohodent.com/doc/data1/e-max-laminate-copy.webp',
-  'https://sohodent.com/doc/data1/lumineer-copy.webp',
+  '/treatments/accordion/porcelain-laminate-copy.webp',
+  '/treatments/accordion/e-max-laminate-copy.webp',
+  '/treatments/accordion/lumineers.webp',
 ];
 
 export default function TreatmentVeneerPackagesSlider() {

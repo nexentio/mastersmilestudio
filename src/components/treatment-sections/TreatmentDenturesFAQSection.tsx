@@ -19,7 +19,7 @@ const DENTURES_FAQ_DATA: Record<string, FAQDictionary> = {
   en: {
     title: 'Frequently Asked Questions About Dentures & Overdentures',
     subText:
-      'Everything you need to know about Snap-On implant dentures, complete dentures, palate-free comfort, and stability in Istanbul.',
+      'Everything you need to know about Snap-On implant dentures, complete dentures, palate-free comfort, and stability in Antalya.',
     items: [
       {
         q: 'What is a Snap-On Overdenture and how does it prevent slipping?',
@@ -38,11 +38,11 @@ const DENTURES_FAQ_DATA: Record<string, FAQDictionary> = {
         a: 'The titanium implants last a lifetime. The denture prosthesis typically lasts 7 to 12+ years. The rubber locator caps inside the denture can be replaced in minutes during routine checkups.',
       },
       {
-        q: 'Will having dentures made in Istanbul be painful?',
+        q: 'Will having dentures made in Antalya be painful?',
         a: 'Not at all. Digital impressions and implant placements are performed under gentle computer-guided local anesthesia with zero discomfort during the procedure.',
       },
       {
-        q: 'How many days do I need to stay in Istanbul for dentures?',
+        q: 'How many days do I need to stay in Antalya for dentures?',
         a: 'Traditional complete dentures take only 4 to 6 days. For implant-supported snap-on overdentures, treatment is performed in two visits (Visit 1: 3 days for implant placement; Visit 2: 4–5 days for final overdenture fitting).',
       },
       {
@@ -75,7 +75,7 @@ const DENTURES_FAQ_DATA: Record<string, FAQDictionary> = {
       },
       {
         q: 'Can I pay for my denture package in installments?',
-        a: 'Yes! An initial deposit secures your booking, and the balance is split across your clinic visits in Istanbul.',
+        a: 'Yes! An initial deposit secures your booking, and the balance is split across your clinic visits in Antalya.',
       },
       {
         q: 'What guarantees do you offer for dentures and overdentures?',
@@ -113,7 +113,7 @@ const DENTURES_FAQ_DATA: Record<string, FAQDictionary> = {
         a: 'Hayır. İmplant yerleşimi ve ölçü aşamaları gelişmiş lokal anestezi altında tamamen ağrısız gerçekleşir. Dileyen hastalarımıza sedasyon (hafif uyku) seçeneği sunulmaktadır.',
       },
       {
-        q: 'Protez tedavisi için İstanbul’da kaç gün kalmam gerekir?',
+        q: 'Protez tedavisi için Antalya’da kaç gün kalmam gerekir?',
         a: 'Klasik tam protezler 4 ila 6 günde tamamlanır. İmplant destekli çıt çıtlı protezlerde ise tedavi 2 seyahatte tamamlanır (1. Seyahat: 3 gün implant yerleşimi, 2. Seyahat: 4–5 gün kalıcı protez teslimi).',
       },
       {
@@ -161,7 +161,7 @@ const DENTURES_FAQ_DATA: Record<string, FAQDictionary> = {
   de: {
     title: 'Häufig gestellte Fragen zu Zahnprothesen & Overdentures',
     subText:
-      'Alles über Snap-On Klick-Prothesen auf Implantaten, Vollprothesen, gaumenfreien Komfort und Halt in Istanbul.',
+      'Alles über Snap-On Klick-Prothesen auf Implantaten, Vollprothesen, gaumenfreien Komfort und Halt in Antalya.',
     items: [
       {
         q: 'Was ist eine Snap-On Klick-Prothese und wie verhindert sie Verrutschen?',
@@ -180,11 +180,11 @@ const DENTURES_FAQ_DATA: Record<string, FAQDictionary> = {
         a: 'Die Implantate halten lebenslang. Die Prothese hält 7 bis über 12 Jahre. Die Haltegummis können in Minuten erneuert werden.',
       },
       {
-        q: 'Ist die Prothesenbehandlung in Istanbul schmerzhaft?',
+        q: 'Ist die Prothesenbehandlung in Antalya schmerzhaft?',
         a: 'Nein, alle Schritte erfolgen vollkommen schmerzfrei unter Lokalanästhesie mit Sedierungsoption.',
       },
       {
-        q: 'Wie viele Tage Aufenthalt in Istanbul sind nötig?',
+        q: 'Wie viele Tage Aufenthalt in Antalya sind nötig?',
         a: 'Klassische Prothesen dauern 4–6 Tage. Implantat-Prothesen erfolgen in 2 kurzen Reisen (1. Reise: 3 Tage; 2. Reise: 4–5 Tage).',
       },
       {
@@ -217,7 +217,7 @@ const DENTURES_FAQ_DATA: Record<string, FAQDictionary> = {
       },
       {
         q: 'Kann die Behandlung in Raten gezahlt werden?',
-        a: 'Ja, die Zahlung kann auf die beiden Aufenthalte in Istanbul aufgeteilt werden.',
+        a: 'Ja, die Zahlung kann auf die beiden Aufenthalte in Antalya aufgeteilt werden.',
       },
       {
         q: 'Welche Garantie erhalte ich?',
@@ -232,7 +232,7 @@ const DENTURES_FAQ_DATA: Record<string, FAQDictionary> = {
   pl: {
     title: 'Często Zadawane Pytania o Protezy Zębowe i Overdentures',
     subText:
-      'Wszystko o protezach na zatrzaskach, protezach całkowitych bez podniebienia i stabilności w Stambule.',
+      'Wszystko o protezach na zatrzaskach, protezach całkowitych bez podniebienia i stabilności w Antalyi.',
     items: [
       {
         q: 'Czym jest proteza na zatrzaskach (Overdenture) i jak zapobiega wypadaniu?',
@@ -251,11 +251,11 @@ const DENTURES_FAQ_DATA: Record<string, FAQDictionary> = {
         a: 'Implanty mają dożywotnią gwarancję. Sama proteza służy 7–12+ lat. Wkładki retencyjne wymienia się w 2 minuty.',
       },
       {
-        q: 'Czy zabieg wykonania protez w Stambule boli?',
+        q: 'Czy zabieg wykonania protez w Antalyi boli?',
         a: 'Zabieg jest w 100% bezbolesny w znieczuleniu miejscowym z opcją sedacji.',
       },
       {
-        q: 'Ile dni trwa leczenie w Stambule?',
+        q: 'Ile dni trwa leczenie w Antalyi?',
         a: 'Zwykłe protezy: 4–6 dni. Protezy na implantach: 2 wizyty (1. wizyta: 3 dni na implanty; 2. wizyta: 4–5 dni na protezę).',
       },
       {
@@ -288,7 +288,7 @@ const DENTURES_FAQ_DATA: Record<string, FAQDictionary> = {
       },
       {
         q: 'Czy mogę płacić w ratach?',
-        a: 'Tak, płatność jest dzielona pomiędzy poszczególne etapy leczenia w Stambule.',
+        a: 'Tak, płatność jest dzielona pomiędzy poszczególne etapy leczenia w Antalyi.',
       },
       {
         q: 'Jaką gwarancję otrzymuję?',
@@ -303,7 +303,7 @@ const DENTURES_FAQ_DATA: Record<string, FAQDictionary> = {
   pt: {
     title: 'Perguntas Frequentes Sobre Próteses Dentárias e Overdentures',
     subText:
-      'Tudo sobre próteses tipo clique sobre implantes, dentaduras sem céu da boca e mastigação segura em Istambul.',
+      'Tudo sobre próteses tipo clique sobre implantes, dentaduras sem céu da boca e mastigação segura em Antalya.',
     items: [
       {
         q: 'O que é uma Overdenture tipo clique e como ela evita que a prótese solte?',
@@ -322,11 +322,11 @@ const DENTURES_FAQ_DATA: Record<string, FAQDictionary> = {
         a: 'Os implantes têm garantia vitalícia. A prótese dura de 7 a mais de 12 anos e as borrachas de retenção são trocadas em minutos.',
       },
       {
-        q: 'O tratamento de próteses em Istambul é doloroso?',
+        q: 'O tratamento de próteses em Antalya é doloroso?',
         a: 'Não, o procedimento é 100% livre de dor com anestesia local de última geração e opção de sedação.',
       },
       {
-        q: 'Quantos dias são necessários em Istambul?',
+        q: 'Quantos dias são necessários em Antalya?',
         a: 'Prótese convencional: 4–6 dias. Prótese sobre implantes: 2 viagens (1ª viagem: 3 dias; 2ª viagem: 4–5 dias).',
       },
       {
@@ -374,7 +374,7 @@ const DENTURES_FAQ_DATA: Record<string, FAQDictionary> = {
   es: {
     title: 'Preguntas Frecuentes Sobre Prótesis Dentales y Sobredentaduras',
     subText:
-      'Todo lo que necesita saber sobre sobredentaduras con anclaje sobre implantes, prótesis sin paladar y confort en Estambul.',
+      'Todo lo que necesita saber sobre sobredentaduras con anclaje sobre implantes, prótesis sin paladar y confort en Antalya.',
     items: [
       {
         q: '¿Qué es una Sobredentadura con anclaje y cómo evita que se mueva?',
@@ -393,11 +393,11 @@ const DENTURES_FAQ_DATA: Record<string, FAQDictionary> = {
         a: 'Los implantes son para toda la vida. La prótesis dura de 7 a más de 12 años y los retenedores se cambian en minutos.',
       },
       {
-        q: '¿Es doloroso el tratamiento en Estambul?',
+        q: '¿Es doloroso el tratamiento en Antalya?',
         a: 'No, es 100% indoloro con anestesia local avanzada y opción de sedación consciente.',
       },
       {
-        q: '¿Cuántos días de estancia en Estambul se necesitan?',
+        q: '¿Cuántos días de estancia en Antalya se necesitan?',
         a: 'Prótesis convencional: 4–6 días. Prótesis sobre implantes: 2 viajes cortos (1º viaje: 3 días; 2º viaje: 4–5 días).',
       },
       {
@@ -430,7 +430,7 @@ const DENTURES_FAQ_DATA: Record<string, FAQDictionary> = {
       },
       {
         q: '¿Se puede pagar a plazos?',
-        a: 'Sí, el importe se abona de manera escalonada en cada fase del tratamiento en Estambul.',
+        a: 'Sí, el importe se abona de manera escalonada en cada fase del tratamiento en Antalya.',
       },
       {
         q: '¿Qué garantía tienen los implantes y prótesis?',
@@ -445,7 +445,7 @@ const DENTURES_FAQ_DATA: Record<string, FAQDictionary> = {
   ru: {
     title: 'Часто задаваемые вопросы о зубных протезах и Overdentures',
     subText:
-      'Все о покрывных протезах на имплантатах с замками Locator, съемных протезах без неба и фиксации в Стамбуле.',
+      'Все о покрывных протезах на имплантатах с замками Locator, съемных протезах без неба и фиксации в Анталье.',
     items: [
       {
         q: 'Что такое покрывной протез (Overdenture) на замках и почему он не выпадает?',
@@ -464,11 +464,11 @@ const DENTURES_FAQ_DATA: Record<string, FAQDictionary> = {
         a: 'Имплантаты служат пожизненно. Протез служит 7–12+ лет. Удерживающие матрицы меняются за 2 минуты на осмотре.',
       },
       {
-        q: 'Болезненно ли изготовление протезов в Стамбуле?',
+        q: 'Болезненно ли изготовление протезов в Анталье?',
         a: 'Процедура на 100% безболезненна благодаря качественной местной анестезии и возможности седации.',
       },
       {
-        q: 'Сколько дней занимает лечение в Стамбуле?',
+        q: 'Сколько дней занимает лечение в Анталье?',
         a: 'Обычные протезы: 4–6 дней. Протезы на имплантатах: 2 поездки (1-й визит: 3 дня на имплантацию; 2-й визит: 4–5 дней на протез).',
       },
       {
@@ -501,7 +501,7 @@ const DENTURES_FAQ_DATA: Record<string, FAQDictionary> = {
       },
       {
         q: 'Возможна ли оплата в рассрочку?',
-        a: 'Да, оплата распределяется поэтапно между визитами в клинику в Стамбуле.',
+        a: 'Да, оплата распределяется поэтапно между визитами в клинику в Анталье.',
       },
       {
         q: 'Какая гарантия предоставляется?',

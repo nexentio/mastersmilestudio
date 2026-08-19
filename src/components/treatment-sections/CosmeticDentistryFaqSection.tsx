@@ -71,9 +71,9 @@ const COSMETIC_FAQ_I18N: Record<string, FaqDictionary> = {
       },
       {
         id: 'faq-7',
-        q: 'How many days do I need to stay in Istanbul for a Hollywood Smile?',
+        q: 'How many days do I need to stay in Antalya for a Hollywood Smile?',
         a: [
-          'A complete Hollywood Smile transformation takes only 5 to 7 days in Istanbul (typically 3 visits: 1. Consultation, DSD scan & mock-up; 2. Enamel preparation & digital impression; 3. Try-in, final aesthetic check & bonding).',
+          'A complete Hollywood Smile transformation takes only 5 to 7 days in Antalya (typically 3 visits: 1. Consultation, DSD scan & mock-up; 2. Enamel preparation & digital impression; 3. Try-in, final aesthetic check & bonding).',
         ],
       },
       {
@@ -153,9 +153,9 @@ const COSMETIC_FAQ_I18N: Record<string, FaqDictionary> = {
       },
       {
         id: 'faq-7',
-        q: 'Hollywood Smile için İstanbul’da kaç gün kalmalıyım?',
+        q: 'Hollywood Smile için Antalya’da kaç gün kalmalıyım?',
         a: [
-          'Komple bir Hollywood Smile dönüşümü İstanbul’da yalnızca 5 ila 7 gün sürer (genellikle 3 klinik randevusu).',
+          'Komple bir Hollywood Smile dönüşümü Antalya’da yalnızca 5 ila 7 gün sürer (genellikle 3 klinik randevusu).',
         ],
       },
       {
@@ -231,9 +231,9 @@ const COSMETIC_FAQ_I18N: Record<string, FaqDictionary> = {
       },
       {
         id: 'faq-7',
-        q: 'Wie viele Tage dauert der Aufenthalt in Istanbul?',
+        q: 'Wie viele Tage dauert der Aufenthalt in Antalya?',
         a: [
-          'Ein Hollywood Smile erfordert lediglich 5 bis 7 Tage Aufenthalt in Istanbul.',
+          'Ein Hollywood Smile erfordert lediglich 5 bis 7 Tage Aufenthalt in Antalya.',
         ],
       },
       {
@@ -262,7 +262,7 @@ const COSMETIC_FAQ_I18N: Record<string, FaqDictionary> = {
   pl: {
     title: 'Najczęściej zadawane pytania o stomatologię estetyczną',
     subtitle:
-      'Masz pytania dotyczące metamorfozy uśmiechu w Stambule? Poznaj odpowiedzi ekspertów Master Smile Studio.',
+      'Masz pytania dotyczące metamorfozy uśmiechu w Antalyi? Poznaj odpowiedzi ekspertów Master Smile Studio.',
     items: [
       {
         id: 'faq-1',
@@ -308,7 +308,7 @@ const COSMETIC_FAQ_I18N: Record<string, FaqDictionary> = {
       },
       {
         id: 'faq-7',
-        q: 'Ile dni trwa pobyt w Stambule?',
+        q: 'Ile dni trwa pobyt w Antalyi?',
         a: [
           'Pełna metamorfoza wymaga pobytu trwającego od 5 do 7 dni.',
         ],
@@ -339,7 +339,7 @@ const COSMETIC_FAQ_I18N: Record<string, FaqDictionary> = {
   pt: {
     title: 'Perguntas Frequentes Sobre Dentisteria Estética',
     subtitle:
-      'Tire as suas dúvidas sobre a transformação do seu sorriso em Istambul com a equipa do Master Smile Studio.',
+      'Tire as suas dúvidas sobre a transformação do seu sorriso em Antalya com a equipa do Master Smile Studio.',
     items: [
       {
         id: 'faq-1',
@@ -385,7 +385,7 @@ const COSMETIC_FAQ_I18N: Record<string, FaqDictionary> = {
       },
       {
         id: 'faq-7',
-        q: 'Quantos dias são necessários em Istambul?',
+        q: 'Quantos dias são necessários em Antalya?',
         a: [
           'Apenas 5 a 7 dias são suficientes para concluir o seu novo sorriso.',
         ],
@@ -416,7 +416,7 @@ const COSMETIC_FAQ_I18N: Record<string, FaqDictionary> = {
   es: {
     title: 'Preguntas Frecuentes Sobre Odontología Estética',
     subtitle:
-      'Respuestas claras y asesoramiento experto para el diseño de su nueva sonrisa en Estambul.',
+      'Respuestas claras y asesoramiento experto para el diseño de su nueva sonrisa en Antalya.',
     items: [
       {
         id: 'faq-1',
@@ -462,9 +462,9 @@ const COSMETIC_FAQ_I18N: Record<string, FaqDictionary> = {
       },
       {
         id: 'faq-7',
-        q: '¿Cuántos días de estancia se requieren en Estambul?',
+        q: '¿Cuántos días de estancia se requieren en Antalya?',
         a: [
-          'Solo 5 a 7 días en Estambul para completar su transformación.',
+          'Solo 5 a 7 días en Antalya para completar su transformación.',
         ],
       },
       {
@@ -493,7 +493,7 @@ const COSMETIC_FAQ_I18N: Record<string, FaqDictionary> = {
   ru: {
     title: 'Часто задаваемые вопросы об эстетической стоматологии',
     subtitle:
-      'Все, что нужно знать о создании вашей идеальной голливудской улыбки в Master Smile Studio в Стамбуле.',
+      'Все, что нужно знать о создании вашей идеальной голливудской улыбки в Master Smile Studio в Анталье.',
     items: [
       {
         id: 'faq-1',
@@ -539,7 +539,7 @@ const COSMETIC_FAQ_I18N: Record<string, FaqDictionary> = {
       },
       {
         id: 'faq-7',
-        q: 'Сколько дней нужно провести в Стамбуле?',
+        q: 'Сколько дней нужно провести в Анталье?',
         a: [
           'Полный курс занимает всего 5–7 дней (3 комфортных визита).',
         ],

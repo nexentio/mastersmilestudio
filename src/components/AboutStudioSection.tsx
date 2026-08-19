@@ -415,7 +415,7 @@ export default function AboutStudioSection() {
               ✕
             </button>
             <iframe
-              src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?autoplay=1"
+              src="https://www.youtube-nocookie.com/embed/eiTTit9PLrQ?autoplay=1"
               title="Master Smile Studio Tour"
               style={{
                 width: '100%',

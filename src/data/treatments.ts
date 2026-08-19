@@ -43,7 +43,6 @@ export const TREATMENT_CASE_STUDIES: CaseStudyImage[] = [
 ];
 
 export const TREATMENT_DOCTORS: TreatmentDoctorConfig[] = [
-  { name: 'Dr. Tülay Kaya', titleKey: 'doctorTulayTitle', image: '/team/tulay.webp' },
-  { name: 'Dr. Ali Kemal Demir', titleKey: 'doctorAliKemalTitle', image: '/team/ali-kemal.webp' },
-  { name: 'Dr. Abdullah Yılmaz', titleKey: 'doctorAbdullahTitle', image: '/team/abdullah.webp' },
+  { name: 'Dt. Fırat İskender', titleKey: 'doctorFiratTitle', image: '/team/firat-iskender.webp' },
+  { name: 'Dr. Ozan Öztürk', titleKey: 'doctorOzanTitle', image: '/team/ozan-ozturk.webp' },
 ];
