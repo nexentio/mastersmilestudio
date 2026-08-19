@@ -78,12 +78,41 @@ export default function PatientsSection() {
         color: '#0f172a',
         padding: '6rem 1.5rem 2.5rem 1.5rem',
         position: 'relative',
+        overflow: 'hidden',
       }}
     >
+      {/* Subtle Background Branding Watermarks */}
+      <div
+        style={{
+          position: 'absolute',
+          top: '5%',
+          right: '-2%',
+          opacity: 0.05,
+          pointerEvents: 'none',
+          zIndex: 0,
+        }}
+      >
+        <Image src="/reviews/google.webp" alt="" width={240} height={240} style={{ objectFit: 'contain', filter: 'grayscale(100%)' }} />
+      </div>
+      <div
+        style={{
+          position: 'absolute',
+          bottom: '8%',
+          left: '-1%',
+          opacity: 0.06,
+          pointerEvents: 'none',
+          zIndex: 0,
+        }}
+      >
+        <Image src="/reviews/trustpilot.webp" alt="" width={300} height={80} style={{ objectFit: 'contain', filter: 'grayscale(100%)' }} />
+      </div>
+
       <div
         style={{
           maxWidth: '1280px',
           margin: '0 auto',
+          position: 'relative',
+          zIndex: 1,
         }}
       >
         {/* Section Header */}
@@ -93,7 +122,7 @@ export default function PatientsSection() {
             alignItems: 'flex-end',
             justifyContent: 'space-between',
             gap: '2.5rem',
-            marginBottom: '4.5rem',
+            marginBottom: '3.5rem',
             flexWrap: 'wrap',
           }}
         >
@@ -140,12 +169,51 @@ export default function PatientsSection() {
                 fontSize: '1.05rem',
                 color: '#475569',
                 lineHeight: 1.65,
-                margin: 0,
+                margin: '0 0 1.25rem 0',
                 fontWeight: 450,
               }}
             >
               {getSafeText('patients.subtitle', 'Real transformation experiences from our patients arriving from all across the globe.')}
             </p>
+
+            {/* Verified Google & Trustpilot Rating Badges */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.85rem', flexWrap: 'wrap' }}>
+              {/* Google Badge */}
+              <div
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '0.5rem',
+                  backgroundColor: '#ffffff',
+                  border: '1.5px solid #FCDE9C',
+                  padding: '0.35rem 0.85rem',
+                  borderRadius: '9999px',
+                  boxShadow: '0 2px 8px rgba(0, 0, 0, 0.05)',
+                }}
+              >
+                <Image src="/reviews/google.webp" alt="Google" width={18} height={18} style={{ objectFit: 'contain' }} />
+                <span style={{ fontSize: '0.82rem', fontWeight: 750, color: '#0f172a' }}>4.9/5</span>
+                <span style={{ color: '#eab308', fontSize: '0.78rem' }}>★★★★★</span>
+              </div>
+
+              {/* Trustpilot Badge */}
+              <div
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '0.5rem',
+                  backgroundColor: '#ffffff',
+                  border: '1.5px solid #FCDE9C',
+                  padding: '0.35rem 0.85rem',
+                  borderRadius: '9999px',
+                  boxShadow: '0 2px 8px rgba(0, 0, 0, 0.05)',
+                }}
+              >
+                <Image src="/reviews/trustpilot.webp" alt="Trustpilot" width={68} height={16} style={{ objectFit: 'contain' }} />
+                <span style={{ fontSize: '0.82rem', fontWeight: 750, color: '#0f172a' }}>4.8/5</span>
+                <span style={{ color: '#00b67a', fontSize: '0.78rem' }}>★ TrustScore</span>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -158,11 +226,12 @@ export default function PatientsSection() {
             gap: '1.75rem',
           }}
         >
-          {visibleReviews.map((card) => {
+          {visibleReviews.map((card, idx) => {
             const name = getSafeText(`patients.${card.id}.name`, card.fallbackName);
             const country = getSafeText(`patients.${card.id}.country`, card.fallbackCountry);
             const treatment = getSafeText(`patients.${card.id}.treatment`, card.fallbackTreatment);
             const quote = getSafeText(`patients.${card.id}.quote`, card.fallbackQuote);
+            const isTrustpilot = idx % 2 === 0;
 
             return (
               <div
@@ -176,32 +245,61 @@ export default function PatientsSection() {
                   flexDirection: 'column',
                   justifyContent: 'space-between',
                   position: 'relative',
+                  overflow: 'hidden',
                   transition: 'all 0.35s cubic-bezier(0.4, 0, 0.2, 1)',
                   cursor: 'pointer',
                   boxShadow: '0 12px 35px rgba(0, 0, 0, 0.1)',
                 }}
                 className="patient-card-white"
               >
-                <div>
-                  {/* Rating Stars using /star.png */}
+                {/* Background Watermark Logo inside the Card Box */}
+                <div
+                  style={{
+                    position: 'absolute',
+                    bottom: isTrustpilot ? '15px' : '10px',
+                    right: '12px',
+                    opacity: 0.14,
+                    pointerEvents: 'none',
+                    zIndex: 0,
+                  }}
+                >
+                  {isTrustpilot ? (
+                    <Image src="/reviews/trustpilot.webp" alt="" width={120} height={30} style={{ objectFit: 'contain' }} />
+                  ) : (
+                    <Image src="/reviews/google.webp" alt="" width={60} height={60} style={{ objectFit: 'contain' }} />
+                  )}
+                </div>
+
+                <div style={{ position: 'relative', zIndex: 1 }}>
+                  {/* Rating Stars & Platform Logo Header */}
                   <div
                     style={{
                       display: 'flex',
                       alignItems: 'center',
-                      gap: 0,
+                      justifyContent: 'space-between',
                       marginBottom: '1.25rem',
                     }}
                   >
-                    {[1, 2, 3, 4, 5].map((starIdx) => (
-                      <Image
-                        key={starIdx}
-                        src="/star.png"
-                        alt="Rating Star"
-                        width={20}
-                        height={20}
-                        style={{ objectFit: 'contain' }}
-                      />
-                    ))}
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 0 }}>
+                      {[1, 2, 3, 4, 5].map((starIdx) => (
+                        <Image
+                          key={starIdx}
+                          src="/star.png"
+                          alt="Rating Star"
+                          width={18}
+                          height={18}
+                          style={{ objectFit: 'contain' }}
+                        />
+                      ))}
+                    </div>
+
+                    <div style={{ display: 'flex', alignItems: 'center', opacity: 0.9 }}>
+                      {isTrustpilot ? (
+                        <Image src="/reviews/trustpilot.webp" alt="Trustpilot" width={64} height={16} style={{ objectFit: 'contain' }} />
+                      ) : (
+                        <Image src="/reviews/google.webp" alt="Google" width={18} height={18} style={{ objectFit: 'contain' }} />
+                      )}
+                    </div>
                   </div>
 
                   {/* Patient Quote */}

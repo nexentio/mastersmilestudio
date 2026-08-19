@@ -236,6 +236,16 @@ const EXPLORE_NAV_TREE: TreatmentCategory[] = [
   },
 ];
 
+const PHONE_CONFIG: Record<string, { display: string; raw: string }> = {
+  tr: { display: '+90 534 696 31 63', raw: '+905346963163' },
+  en: { display: '+90 537 305 99 47', raw: '+905373059947' },
+  de: { display: '+90 537 305 99 41', raw: '+905373059941' },
+  ru: { display: '+90 534 696 31 89', raw: '+905346963189' },
+  pl: { display: '+90 533 197 39 07', raw: '+905331973907' },
+  es: { display: '+90 537 305 99 47', raw: '+905373059947' },
+  pt: { display: '+90 537 305 99 47', raw: '+905373059947' },
+};
+
 export default function Header() {
   const t = useTranslations('common');
   const locale = useLocale();
@@ -335,91 +345,76 @@ export default function Header() {
           }}
         >
           <div className="top-bar-inner">
-            {/* Left: Social Media Icons (Visible on Desktop) */}
-            <div className="top-bar-socials" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-              {/* Instagram */}
+            {/* Left: Social Media Icons (Custom WebP Icons) */}
+            <span className="icons top-bar-socials" style={{ display: 'flex', alignItems: 'center', gap: '0.45rem' }}>
               <a
                 aria-label="Instagram"
+                className="metaapi_socialbuton1"
                 href={SITE_CONFIG.socials.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="social-icon-btn social-icon-ig"
                 suppressHydrationWarning
               >
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-                </svg>
+                <img loading="lazy" width={22} height={22} decoding="async" src="/images/social/insta.png.webp" alt="Instagram" style={{ display: 'block', width: '22px', height: '22px', objectFit: 'contain' }} suppressHydrationWarning />
               </a>
-
-              {/* YouTube */}
               <a
                 aria-label="YouTube"
+                className="metaapi_socialbuton1"
                 href={SITE_CONFIG.socials.youtube}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="social-icon-btn social-icon-yt"
                 suppressHydrationWarning
               >
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
-                </svg>
+                <img loading="lazy" width={22} height={22} decoding="async" src="/images/social/yt.png.webp" alt="YouTube" style={{ display: 'block', width: '22px', height: '22px', objectFit: 'contain' }} suppressHydrationWarning />
               </a>
-
-              {/* Facebook */}
               <a
                 aria-label="Facebook"
+                className="metaapi_socialbuton1"
                 href={SITE_CONFIG.socials.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="social-icon-btn social-icon-fb"
                 suppressHydrationWarning
               >
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-                </svg>
+                <img loading="lazy" width={22} height={22} decoding="async" src="/images/social/face.png.webp" alt="Facebook" style={{ display: 'block', width: '22px', height: '22px', objectFit: 'contain' }} suppressHydrationWarning />
               </a>
-
-              {/* WhatsApp */}
               <a
                 aria-label="WhatsApp"
+                className="metaapi_whatsappbuton1"
                 href={getWhatsAppLink(locale)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="social-icon-btn social-icon-wa"
                 suppressHydrationWarning
               >
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.971.54 1.764.814 2.8.814 3.18 0 5.766-2.587 5.766-5.766 0-3.18-2.586-5.766-5.77-5.766zm0 10.355c-.933 0-1.636-.263-2.383-.717l-.17-.104-1.77.464.473-1.727-.113-.18c-.49-.785-.778-1.579-.778-2.325 0-2.531 2.059-4.59 4.592-4.59 2.532 0 4.591 2.059 4.591 4.59 0 2.531-2.059 4.589-4.591 4.589z" />
-                </svg>
+                <img loading="lazy" width={22} height={22} decoding="async" src="/images/social/wa.png.webp" alt="WhatsApp" style={{ display: 'block', width: '22px', height: '22px', objectFit: 'contain' }} suppressHydrationWarning />
               </a>
-
-              {/* Email */}
               <a
                 aria-label="Email"
+                className="metaapi_socialbuton1"
                 href="mailto:info@mastersmilestudio.com"
-                className="social-icon-btn social-icon-mail"
+                target="_blank"
+                rel="noopener noreferrer"
                 suppressHydrationWarning
               >
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                  <polyline points="22,6 12,13 2,6" />
-                </svg>
+                <img loading="lazy" width={22} height={22} decoding="async" src="/images/social/mail.png.webp" alt="Email" style={{ display: 'block', width: '22px', height: '22px', objectFit: 'contain' }} suppressHydrationWarning />
               </a>
-            </div>
+            </span>
 
-            {/* Center/Right: Google Reviews Rating (1 sleek line on mobile & desktop) */}
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', whiteSpace: 'nowrap' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
-                <span style={{ fontWeight: 700, letterSpacing: '0.02em' }}>{t('topBar.googleReviews')}</span>
-                <span style={{ color: '#fef08a' }}>★★★★★</span>
-                <span style={{ fontWeight: 800 }}>{t('topBar.rating')}</span>
-              </div>
-              <span className="top-bar-subtext" style={{ opacity: 0.6 }}>•</span>
-              <span className="top-bar-subtext">{t('topBar.happyPatients')}</span>
-              <span className="top-bar-subtext" style={{ opacity: 0.6 }}>•</span>
-              <span className="top-bar-subtext">{t('topBar.countries')}</span>
+            {/* Center/Right: Localized Contact Info (Email & Dynamic Locale Phone) */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: '1.25rem', flexWrap: 'nowrap' }}>
+              <a
+                href="mailto:info@mastersmilestudio.com"
+                className="top-bar-contact-link"
+                suppressHydrationWarning
+              >
+                info@mastersmilestudio.com
+              </a>
+              <a
+                href={`tel:${(PHONE_CONFIG[locale] || PHONE_CONFIG.en).raw}`}
+                className="top-bar-contact-link"
+                suppressHydrationWarning
+              >
+                {(PHONE_CONFIG[locale] || PHONE_CONFIG.en).display}
+              </a>
             </div>
           </div>
         </div>
@@ -771,61 +766,36 @@ export default function Header() {
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
             <LanguageSwitcher />
 
-            {/* Desktop 7/24 Customer Service CTA Button (Visible on Desktop only) */}
+            {/* Desktop Get Quote CTA Button (Visible on Desktop only) */}
             <a
               href="#contact"
               style={{
                 alignItems: 'center',
-                gap: isScrolled ? '0.45rem' : '0.75rem',
-                backgroundColor: '#09090b',
+                justifyContent: 'center',
+                background: 'linear-gradient(135deg, #D58936 0%, #BA7324 100%)',
                 color: '#ffffff',
-                padding: isScrolled ? '0.25rem 0.85rem' : '0.5rem 1.15rem',
-                borderRadius: '9999px',
+                padding: isScrolled ? '0.38rem 1.05rem' : '0.52rem 1.35rem',
+                borderRadius: '12px',
                 textDecoration: 'none',
-                boxShadow: isScrolled ? '0 2px 8px rgba(0, 0, 0, 0.18)' : '0 4px 16px rgba(0, 0, 0, 0.25)',
-                transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
-                border: '1px solid #27272a',
+                fontSize: isScrolled ? '0.86rem' : '0.94rem',
+                fontWeight: 600,
+                letterSpacing: '-0.01em',
+                boxShadow: isScrolled ? '0 2px 10px rgba(213, 137, 54, 0.25)' : '0 4px 16px rgba(213, 137, 54, 0.35)',
+                transition: 'all 0.25s cubic-bezier(0.4, 0, 0.2, 1)',
+                border: '1px solid rgba(255, 255, 255, 0.25)',
+                whiteSpace: 'nowrap',
               }}
               className="customer-service-btn"
             >
-              <div
-                style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  width: isScrolled ? '24px' : '32px',
-                  height: isScrolled ? '24px' : '32px',
-                  borderRadius: '50%',
-                  backgroundColor: '#18181b',
-                  color: '#ffffff',
-                  border: '1px solid #3f3f46',
-                  flexShrink: 0,
-                  transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
-                }}
-              >
-                <svg width={isScrolled ? 12 : 16} height={isScrolled ? 12 : 16} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-                </svg>
-              </div>
-              <div style={{ display: 'flex', flexDirection: 'column', textAlign: 'left' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.25rem' }}>
-                  <span
-                    style={{
-                      width: isScrolled ? '4px' : '6px',
-                      height: isScrolled ? '4px' : '6px',
-                      borderRadius: '50%',
-                      backgroundColor: '#22c55e',
-                      boxShadow: '0 0 8px #22c55e',
-                    }}
-                  />
-                  <span style={{ fontSize: isScrolled ? '0.58rem' : '0.68rem', fontWeight: 700, color: '#e4e4e7', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
-                    {t('customerService.badge')}
-                  </span>
-                </div>
-                <span style={{ fontSize: isScrolled ? '0.72rem' : '0.82rem', fontWeight: 600, color: '#ffffff', lineHeight: 1.2 }}>
-                  {t('customerService.title')}
-                </span>
-              </div>
+              {{
+                en: 'Get Quote',
+                tr: 'Teklif Al',
+                de: 'Angebot Einholen',
+                pl: 'Otrzymaj Wycenę',
+                pt: 'Obter Orçamento',
+                es: 'Pedir Presupuesto',
+                ru: 'Получить расчет',
+              }[locale] || 'Get Quote'}
             </a>
 
             {/* Mobile Hamburger / Morphing Close (X) Button (Clean & Seamless) */}

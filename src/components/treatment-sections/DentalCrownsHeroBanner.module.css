@@ -90,26 +90,55 @@
 }
 
 .gototedaviform {
+  position: relative;
+  overflow: hidden;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: #517a7d;
-  color: #ffffff;
-  text-decoration: none;
-  padding: 0.75rem 2rem;
+  gap: 0.65rem;
+  padding: 0.82rem 2.2rem;
   border-radius: 9999px;
-  font-weight: 700;
-  font-size: 0.95rem;
   font-family: var(--font-outfit), sans-serif;
-  transition: all 0.25s ease;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  font-size: 0.96rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #D58936;
+  border: 1.5px solid #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+  z-index: 1;
+  box-shadow: 0 4px 18px rgba(213, 137, 54, 0.35);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease, color 0.3s ease;
+}
+
+.gototedaviform::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .gototedaviform:hover {
-  background-color: #3f6063;
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
-  color: #ffffff;
+  box-shadow: 0 8px 25px rgba(213, 137, 54, 0.45);
+  color: #D58936;
+}
+
+.gototedaviform:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.gototedaviform:not(:hover)::before {
+  transform: scaleX(0);
+  transform-origin: right;
 }
 
 .xgrid {

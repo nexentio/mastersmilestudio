@@ -179,6 +179,23 @@
 }
 
 /* Social Icon Buttons */
+.metaapi_socialbuton1,
+.metaapi_whatsappbuton1 {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: transform 0.2s ease, opacity 0.2s ease !important;
+  text-decoration: none !important;
+  line-height: 1 !important;
+  border-radius: 4px;
+}
+
+.metaapi_socialbuton1:hover,
+.metaapi_whatsappbuton1:hover {
+  transform: translateY(-2px) scale(1.1) !important;
+  opacity: 0.9 !important;
+}
+
 .social-icon-btn {
   display: inline-flex;
   align-items: center;
@@ -194,26 +211,6 @@
 
 .social-icon-btn:hover {
   transform: translateY(-2px) scale(1.08);
-}
-
-.social-icon-ig {
-  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-}
-
-.social-icon-yt {
-  background-color: #ff0000;
-}
-
-.social-icon-fb {
-  background-color: #1877f2;
-}
-
-.social-icon-wa {
-  background-color: #25d366;
-}
-
-.social-icon-mail {
-  background-color: #0d9488;
 }
 
 /* Mobile Header UI/UX Enhancements & SSR FOUC Prevention */
@@ -240,6 +237,24 @@
   justify-content: space-between;
   gap: 1rem;
   flex-wrap: nowrap;
+}
+
+.top-bar-contact-link {
+  color: #ffffff !important;
+  text-decoration: underline !important;
+  text-underline-offset: 3px !important;
+  text-decoration-thickness: 1px !important;
+  font-weight: 600 !important;
+  font-size: 0.84rem !important;
+  letter-spacing: 0.01em !important;
+  transition: opacity 0.2s ease, transform 0.2s ease !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  white-space: nowrap !important;
+}
+
+.top-bar-contact-link:hover {
+  opacity: 0.85 !important;
 }
 
 /* Mobile-First Navigation (Prevents desktop nav flashing on mobile SSR) */

@@ -1,0 +1,62 @@
+.whatsappFloatingBtn {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 9999999;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: #25D366;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 0 24px rgba(37, 211, 102, 0.7), 0 4px 14px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.25s ease;
+  line-height: 1;
+  animation: gentleBounce 2.4s ease-in-out infinite;
+}
+
+@keyframes gentleBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-7px);
+  }
+}
+
+.whatsappFloatingBtn:hover {
+  animation-play-state: paused;
+  transform: scale(1.1) translateY(-4px);
+  box-shadow: 0 0 32px rgba(37, 211, 102, 0.95), 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+.whatsappFloatingBtn:active {
+  transform: scale(0.96);
+}
+
+.whatsappIcon {
+  width: 32px;
+  height: 32px;
+  fill: #ffffff;
+  display: block;
+}
+
+/* Mobile Breakpoints */
+@media (max-width: 640px) {
+  .whatsappFloatingBtn {
+    bottom: 20px;
+    right: 20px;
+    width: 52px;
+    height: 52px;
+    box-shadow: 0 0 20px rgba(37, 211, 102, 0.65), 0 3px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .whatsappIcon {
+    width: 28px;
+    height: 28px;
+  }
+}

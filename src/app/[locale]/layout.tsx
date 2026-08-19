@@ -6,6 +6,7 @@ import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import { siteConfig } from '@/config/site';
 import { getI18nAlternates } from '@/lib/i18n-seo';
+import WhatsAppPopup from '@/components/whatsapp/WhatsAppPopup';
 import "../globals.css";
 
 const outfit = Outfit({
@@ -245,6 +246,7 @@ export default async function LocaleLayout({
       <body>
         <NextIntlClientProvider messages={messages}>
           {children}
+          <WhatsAppPopup />
         </NextIntlClientProvider>
       </body>
     </html>

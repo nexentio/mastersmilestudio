@@ -37,7 +37,7 @@ export default function HeroVideo() {
         <source src="/mss-klinik-hero.mp4" type="video/mp4" />
       </video>
 
-      {/* Very Subtle Dark Overlay Layer (0.18 opacity) */}
+      {/* Distinct Dark Overlay Layer for Premium Contrast */}
       <div
         style={{
           position: 'absolute',
@@ -45,7 +45,7 @@ export default function HeroVideo() {
           left: 0,
           width: '100%',
           height: '100%',
-          backgroundColor: 'rgba(0, 0, 0, 0.18)',
+          background: 'linear-gradient(180deg, rgba(0, 0, 0, 0.58) 0%, rgba(0, 0, 0, 0.42) 50%, rgba(0, 0, 0, 0.55) 100%)',
           zIndex: 1,
           pointerEvents: 'none',
         }}
