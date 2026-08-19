@@ -83,36 +83,36 @@ const BEFORE_AFTER_I18N: Record<string, BeforeAfterI18n> = {
 
 const CASES = [
   {
-    img: '/before-after/all-on-six-antalya-turkey26.webp',
-    alt: 'All on 6 dental implants before and after Antalya Turkey',
+    img: '/before-after/firstvisit.webp',
+    alt: 'Master Smile Studio Real Patient Smile Transformation Case 1',
   },
   {
-    img: '/before-after/all-on-six-antalya-turkey25.webp',
-    alt: 'All on 6 dental implants before and after Antalya Turkey',
+    img: '/before-after/firstvisit1.webp',
+    alt: 'Master Smile Studio Real Patient Smile Transformation Case 2',
   },
   {
-    img: '/before-after/all-on-4-antalya-turkey-24.webp',
-    alt: 'All on 4 dental implants before and after Antalya Turkey',
+    img: '/before-after/firstvisit2.webp',
+    alt: 'Master Smile Studio Real Patient Smile Transformation Case 3',
   },
   {
-    img: '/before-after/all-on-4-antalya-turkey22.webp',
-    alt: 'All on 4 dental implants before and after Antalya Turkey',
+    img: '/before-after/firstvisit3.webp',
+    alt: 'Master Smile Studio Real Patient Smile Transformation Case 4',
   },
   {
-    img: '/before-after/all-on-6-antalya-turkey23.webp',
-    alt: 'All on 6 dental implants before and after Antalya Turkey',
+    img: '/before-after/firstvisit4.webp',
+    alt: 'Master Smile Studio Real Patient Smile Transformation Case 5',
   },
   {
-    img: '/before-after/all-on-4-antalya-turkey21.webp',
-    alt: 'All on 4 dental implants before and after Antalya Turkey',
+    img: '/before-after/firstvisit5.webp',
+    alt: 'Master Smile Studio Real Patient Smile Transformation Case 6',
   },
   {
-    img: '/before-after/all-on-four-antalya-turkey-27.webp',
-    alt: 'All On 4 dental implants before and after Antalya Turkey',
+    img: '/before-after/firstvisit6.webp',
+    alt: 'Master Smile Studio Real Patient Smile Transformation Case 7',
   },
   {
-    img: '/before-after/All-on-4-antalya-turkey-20.webp',
-    alt: 'All On 4 dental smile makeover Antalya Turkey',
+    img: '/before-after/firstvisit7.webp',
+    alt: 'Master Smile Studio Real Patient Smile Transformation Case 8',
   },
 ];
 
