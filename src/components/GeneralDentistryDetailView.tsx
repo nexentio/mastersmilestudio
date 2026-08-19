@@ -604,17 +604,7 @@ export default function GeneralDentistryDetailView() {
       {/* 3. WHY CHOOSE GENERAL DENTISTRY IN ANTALYA */}
       <section aria-labelledby="why-choose-heading" className={styles.whyChooseSection}>
         <div className={styles.container}>
-          <div className={styles.dividerWrap}>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              width="1240"
-              height="49"
-              src="https://sohodent.com/doc/static/cizgi.webp"
-              alt=""
-              loading="lazy"
-              style={{ width: '100%', maxWidth: '1200px', height: 'auto', display: 'block', opacity: 0.85 }}
-            />
-          </div>
+          <TreatmentDivider />
 
           <h2 id="why-choose-heading" className={styles.sectionTitle}>
             {d.whyChooseHeading}

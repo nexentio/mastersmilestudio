@@ -3,6 +3,7 @@
 import React from 'react';
 import { useLocale } from 'next-intl';
 import { Link } from '@/i18n/routing';
+import TreatmentDivider from '@/components/treatment-sections/TreatmentDivider';
 import styles from './TreatmentCostBreakdownAndPackageBannerSection.module.css';
 
 interface CostBreakdownContent {
@@ -452,17 +453,8 @@ export default function TreatmentCostBreakdownAndPackageBannerSection() {
   return (
     <section aria-labelledby="cost-breakdown-heading" className={styles.section}>
       <div className={styles.container}>
-        {/* Top Wave Decorative Divider */}
-        <div className={styles.divider}>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            width="1240"
-            height="49"
-            src="https://sohodent.com/doc/static/cizgi.webp"
-            alt=""
-            loading="lazy"
-          />
-        </div>
+        {/* Top Decorative Divider */}
+        <TreatmentDivider />
 
         {/* 16:9 Fullwidth Video Embed */}
         <div className={styles.videoCard}>
@@ -507,17 +499,8 @@ export default function TreatmentCostBreakdownAndPackageBannerSection() {
         {/* Packages Page Link */}
         <p className={styles.bodyText}>{content.packagesLinkParagraph}</p>
 
-        {/* Bottom Wave Decorative Divider */}
-        <div className={styles.divider}>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            width="1240"
-            height="49"
-            src="https://sohodent.com/doc/static/cizgi.webp"
-            alt=""
-            loading="lazy"
-          />
-        </div>
+        {/* Bottom Decorative Divider */}
+        <TreatmentDivider />
       </div>
     </section>
   );

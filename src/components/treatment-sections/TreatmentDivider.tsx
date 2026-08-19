@@ -1,21 +1,24 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 import styles from './TreatmentDivider.module.css';
 
 export default function TreatmentDivider() {
   return (
-    <div className={styles.dividerInner}>
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        src="https://sohodent.com/doc/static/cizgi.webp"
-        alt="Divider"
-        width={1240}
-        height={49}
-        loading="lazy"
-        decoding="async"
-        className={styles.dividerImg}
-      />
+    <div className={styles.dividerWrapper} role="separator" aria-hidden="true">
+      <div className={styles.lineLeft} />
+      <div className={styles.logoWrap}>
+        <Image
+          src="/logo-mastersmilestudio-no-bg.webp"
+          alt="Master Smile Studio Logo Mark"
+          width={120}
+          height={34}
+          className={styles.logoImg}
+          loading="lazy"
+        />
+      </div>
+      <div className={styles.lineRight} />
     </div>
   );
 }
