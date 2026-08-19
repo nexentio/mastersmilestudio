@@ -59,7 +59,7 @@ export default function TreatmentClinicTourSection({}: Props) {
               aria-label="Play Master Smile Studio clinic virtual tour video"
             >
               <img
-                src="https://sohodent.com/doc/static/yvcover1.jpg.webp"
+                src="/treatments/clinic-tour-cover.webp"
                 alt="Master Smile Studio Clinic Tour"
                 loading="lazy"
               />

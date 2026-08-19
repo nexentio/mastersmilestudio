@@ -3959,7 +3959,7 @@ export default function ZygomaticImplantDetailView() {
           {/* 3D X-Ray Visual (soho rontgen) */}
           <div className={styles.xrayWrap}>
             <img
-              src="https://sohodent.com/doc/filemanager/source/soho%20ro%CC%88ntgen.webp"
+              src="/treatments/zygomatic-xray.webp"
               alt={d.xrayImgAlt}
               className={styles.xrayImg}
               loading="lazy"
