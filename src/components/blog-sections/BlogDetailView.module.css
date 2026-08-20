@@ -869,6 +869,18 @@
   gap: 0.35rem;
 }
 
+.inlineArticleLink {
+  color: #c8973a;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease;
+}
+
+.inlineArticleLink:hover {
+  color: #0c1b4d;
+}
+
 /* Responsive */
 @media (max-width: 1024px) {
   .mainGrid {
@@ -887,7 +899,8 @@
   }
 
   .featuredImageFrame {
-    height: 260px;
+    aspect-ratio: 16 / 10;
+    max-height: 320px;
   }
 
   .metaBar {

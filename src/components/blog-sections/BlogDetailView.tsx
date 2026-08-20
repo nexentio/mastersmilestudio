@@ -318,6 +318,35 @@ export default function BlogDetailView({ slug }: BlogDetailViewProps) {
 
   const relatedPosts = BLOG_POSTS.filter((p) => p.slug !== slug).slice(0, 3);
   const waLink = getWhatsAppLink(locale, `Hello, I am reading the article "${getLocalized(currentPost?.title)}" and would like a consultation.`);
+  const renderTextWithLinks = (text: string) => {
+    if (!text || !text.includes('[') || !text.includes('](')) {
+      return text;
+    }
+    const elements: React.ReactNode[] = [];
+    const regex = /\[(.*?)\]\((.*?)\)/g;
+    let lastIndex = 0;
+    let match;
+
+    while ((match = regex.exec(text)) !== null) {
+      if (match.index > lastIndex) {
+        elements.push(text.substring(lastIndex, match.index));
+      }
+      const linkText = match[1];
+      const url = match[2];
+      elements.push(
+        <Link key={match.index} href={url} className={styles.inlineArticleLink}>
+          {linkText}
+        </Link>
+      );
+      lastIndex = regex.lastIndex;
+    }
+
+    if (lastIndex < text.length) {
+      elements.push(text.substring(lastIndex));
+    }
+
+    return <>{elements}</>;
+  };
 
   return (
     <section className={styles.blogDetailSection} aria-label="Dental Article Detail">
@@ -356,7 +385,7 @@ export default function BlogDetailView({ slug }: BlogDetailViewProps) {
                   alt={article.author.name}
                   fill
                   sizes="44px"
-                  style={{ objectFit: 'cover' }}
+                  style={{ objectFit: 'contain' }}
                 />
               </div>
               <div>
@@ -409,7 +438,7 @@ export default function BlogDetailView({ slug }: BlogDetailViewProps) {
               />
             </div>
 
-            {/* Stat Row Box (SohoDent Style with Serif Gold Digits) */}
+            {/* Stat Row Box */}
             {article.stats && article.stats.length > 0 && (
               <div className={styles.statTableBox}>
                 {article.stats.map((stat, idx) => (
@@ -424,14 +453,14 @@ export default function BlogDetailView({ slug }: BlogDetailViewProps) {
             {/* Intro Narrative */}
             {getLocalizedArray(article.intro).map((p, idx) => (
               <p key={idx} className={styles.paragraph}>
-                {p}
+                {renderTextWithLinks(p)}
               </p>
             ))}
 
-            {/* Key Takeaways Callout Box (Warm Gold SohoDent Style) */}
+            {/* Key Takeaways Callout Box */}
             <div className={styles.keyTakeawayBox}>
               <p className={styles.keyTakeawayText}>
-                <strong>{getLocalized(article.keyTakeaway)}</strong>
+                <strong>{renderTextWithLinks(getLocalized(article.keyTakeaway))}</strong>
               </p>
             </div>
 
@@ -496,7 +525,7 @@ export default function BlogDetailView({ slug }: BlogDetailViewProps) {
                 <h2 className={styles.h2Heading}>{getLocalized(sec.heading)}</h2>
                 {getLocalizedArray(sec.paragraphs).map((p, idx) => (
                   <p key={idx} className={styles.paragraph}>
-                    {p}
+                    {renderTextWithLinks(p)}
                   </p>
                 ))}
 
@@ -504,7 +533,7 @@ export default function BlogDetailView({ slug }: BlogDetailViewProps) {
                   <div className={styles.keyTakeawayBox}>
                     <p className={styles.keyTakeawayText}>
                       <strong>{getLocalized(sec.highlightBox.title)}: </strong>
-                      {getLocalized(sec.highlightBox.text)}
+                      {renderTextWithLinks(getLocalized(sec.highlightBox.text))}
                     </p>
                   </div>
                 )}
