@@ -70,7 +70,7 @@ export function getBlogDetailBySlug(slug: string): BlogDetailArticle {
           es: 'Equipo de Odontología Estética y Cirugía, Antalya',
           ru: 'Команда эстетической стоматологии и хирургии, Анталья',
         },
-        avatar: '/about-mss.jpeg',
+        avatar: '/mastersmilestudio-logo.png',
       },
       stats: [
         {
@@ -519,7 +519,7 @@ export function getBlogDetailBySlug(slug: string): BlogDetailArticle {
         es: 'Equipo de Odontología Estética y Cirugía, Antalya',
         ru: 'Команда эстетической стоматологии и хирургии, Анталья',
       },
-      avatar: '/about-mss.jpeg',
+      avatar: '/mastersmilestudio-logo.png',
     },
     stats: [
       {

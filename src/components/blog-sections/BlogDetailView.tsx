@@ -635,11 +635,11 @@ export default function BlogDetailView({ slug }: BlogDetailViewProps) {
               <div className={styles.consultationWidget}>
                 <div className={styles.widgetBanner}>
                   <Image
-                    src="/about-mss.jpeg"
+                    src="/mss-patients-montage.png"
                     alt="Master Smile Studio Consultation"
                     fill
                     sizes="340px"
-                    style={{ objectFit: 'cover' }}
+                    style={{ objectFit: 'cover', objectPosition: 'center' }}
                   />
                 </div>
                 <div className={styles.widgetBody}>

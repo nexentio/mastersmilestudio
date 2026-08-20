@@ -18,7 +18,7 @@ export default function AboutHeroBanner({
   breadcrumbAboutText,
   pageTitle,
   pageSubtitle,
-  imageSrc = '/about-mss.jpeg',
+  imageSrc = '/master-smile-studio-interior.webp',
 }: AboutHeroBannerProps) {
   return (
     <section className={styles.sect20} aria-label={pageTitle}>
