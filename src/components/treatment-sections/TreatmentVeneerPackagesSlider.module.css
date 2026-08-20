@@ -80,17 +80,19 @@
 
 .cardBadge {
   position: absolute;
-  top: 18px;
+  top: -13px;
   right: 20px;
-  background-color: #fef3c7;
-  color: #92400e;
+  background: linear-gradient(180deg, #D58936 0%, #b87b10 100%);
+  color: #ffffff;
   font-size: 0.72rem;
   font-weight: 700;
-  padding: 0.3rem 0.85rem;
+  padding: 0.25rem 0.85rem;
   border-radius: 9999px;
-  border: 1px solid #fde68a;
+  border: 1px solid #a86c0d;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.06em;
+  box-shadow: 0 4px 12px rgba(184, 123, 16, 0.35);
+  z-index: 10;
 }
 
 .header {
