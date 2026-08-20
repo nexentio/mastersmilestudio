@@ -227,11 +227,11 @@
 .imSide {
   position: relative;
   width: 100%;
-  height: 200px;
-  border-radius: 10px;
+  aspect-ratio: 1 / 1;
+  border-radius: 14px;
   overflow: hidden;
-  margin-bottom: 0.85rem;
-  background-color: #f1f5f9;
+  margin-bottom: 1rem;
+  background-color: #000000;
 }
 
 .imLink {
@@ -243,6 +243,7 @@
 
 .imImgSide {
   object-fit: cover;
+  object-position: center;
 }
 
 .infoSide {
@@ -343,10 +344,12 @@
 .treatmentThumb {
   position: relative;
   width: 100%;
-  height: 120px;
-  border-radius: 8px;
+  aspect-ratio: 16 / 9;
+  min-height: 140px;
+  border-radius: 10px;
   overflow: hidden;
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.5rem;
+  background-color: #0c1b4d;
 }
 
 .treatmentThumbLink {

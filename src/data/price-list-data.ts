@@ -1197,7 +1197,7 @@ export const PRICE_GROUPS: PriceGroup[] = [
 export const PRICING_SIDEBAR_DATA = {
   consultation: {
     clinicName: 'Master Smile Studio',
-    imageSrc: '/mss-afterpics-patients.png',
+    imageSrc: '/contact-patients-grid.png',
     info: {
       en: 'Contact Us For Free Consultation & 3D Treatment Plan',
       tr: 'Ücretsiz Danışmanlık ve 3D Tedavi Planı İçin Bize Ulaşın',
@@ -1216,8 +1216,8 @@ export const PRICING_SIDEBAR_DATA = {
       es: 'SOLICITAR PRESUPUESTO',
       ru: 'ПОЛУЧИТЬ РАСЧЕТ',
     },
-    phone: '+905434568080',
-    formattedPhone: '+90 543 456 80 80',
+    phone: '+905373059947',
+    formattedPhone: '+90 537 305 99 47',
   },
   treatmentsTitle: {
     en: 'Treatments',
@@ -1239,7 +1239,7 @@ export const PRICING_SIDEBAR_DATA = {
       ru: 'Зубные импланты',
     },
     href: '/treatments/dental-implants',
-    imageSrc: '/prices-treatment-thumb.webp',
+    imageSrc: '/dental-implant-mss.jpeg',
   },
   treatmentLinks: [
     {

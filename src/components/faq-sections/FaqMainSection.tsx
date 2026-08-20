@@ -220,7 +220,7 @@ export default function FaqMainSection() {
               <div className={styles.imSide}>
                 <Link href="/contact" aria-label="Free consultation" className={styles.imLink}>
                   <Image
-                    src="/mss-afterpics-patients.png"
+                    src="/contact-patients-grid.png"
                     alt="Master Smile Studio VIP Consultation"
                     fill
                     sizes="320px"
@@ -276,11 +276,11 @@ export default function FaqMainSection() {
                       <div className={styles.treatmentThumb}>
                         <Link href={item.href} aria-label={getLocalized(item.title)} className={styles.treatmentThumbLink}>
                           <Image
-                            src="/prices-treatment-thumb.webp"
+                            src="/dental-implant-mss.jpeg"
                             alt={getLocalized(item.title)}
                             fill
                             sizes="300px"
-                            style={{ objectFit: 'cover' }}
+                            style={{ objectFit: 'cover', objectPosition: 'center' }}
                           />
                         </Link>
                       </div>
