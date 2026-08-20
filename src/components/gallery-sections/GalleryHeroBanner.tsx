@@ -45,7 +45,7 @@ const GALLERY_HERO_DATA: Record<string, { title: string; subtitle: string }> = {
 export default function GalleryHeroBanner({
   customTitle,
   customSubtitle,
-  imageSrc = '/gallery/gallery-hero-bg.webp',
+  imageSrc = '/master-smile-studio-interior.webp',
 }: GalleryHeroBannerProps) {
   const locale = useLocale();
   const data = GALLERY_HERO_DATA[locale] || GALLERY_HERO_DATA.en;
