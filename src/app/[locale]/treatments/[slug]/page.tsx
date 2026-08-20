@@ -29,7 +29,12 @@ import CosmeticDentistryDetailView from '@/components/CosmeticDentistryDetailVie
 import SmileMakeoverDetailView from '@/components/SmileMakeoverDetailView';
 import GeneralDentistryDetailView from '@/components/GeneralDentistryDetailView';
 import DentalCleaningDetailView from '@/components/DentalCleaningDetailView';
+import AllOnFourImplantDetailView from '@/components/AllOnFourImplantDetailView';
 import AllOnSixImplantDetailView from '@/components/AllOnSixImplantDetailView';
+import ImmediateImplantDetailView from '@/components/ImmediateImplantDetailView';
+import ZygomaticImplantDetailView from '@/components/ZygomaticImplantDetailView';
+import ZirconiumImplantDetailView from '@/components/ZirconiumImplantDetailView';
+import SinusLiftingDetailView from '@/components/SinusLiftingDetailView';
 import DentalCleaningHeroBanner from '@/components/treatment-sections/DentalCleaningHeroBanner';
 import GeneralDentistryHeroBanner from '@/components/treatment-sections/GeneralDentistryHeroBanner';
 import CosmeticDentistryHeroBanner from '@/components/treatment-sections/CosmeticDentistryHeroBanner';
@@ -50,49 +55,71 @@ import { getI18nAlternates, TREATMENT_LOCALES } from '@/lib/i18n-seo';
 import { getTreatmentContent } from '@/lib/treatment-content';
 
 const TREATMENT_SLUGS = [
-  'dental-implants',
-  'all-on-4-dental-implants',
-  'all-on-6-dental-implants',
-  'immediate-dental-implants',
-  'sinus-lifting',
-  'zygomatic-implants',
-  'zirconium-implants',
-  'implant-supported-dentures',
-  'full-mouth-dental-implants',
-  'dental-veneers',
-  'porcelain-veneers',
-  'e-max-veneers',
-  'empress-veneers',
-  'composite-veneers',
-  'lumineers',
-  'zirconium-veneers',
-  'dental-crowns',
-  'zirconium-crowns',
-  'emax-crowns',
-  'pfm-crowns',
-  'full-ceramic-crowns',
-  'dental-bridges',
-  'traditional-bridges',
-  'implant-supported-bridges',
-  'cantilever-bridges',
-  'maryland-bridges',
-  'dentures',
-  'complete-dentures',
-  'partial-dentures',
-  'overdentures',
-  'cosmetic-dentistry',
-  'smile-makeover',
-  'teeth-whitening',
-  'gummy-smile-treatment',
-  'hollywood-smile',
-  'tooth-contouring-and-shaping',
-  'diastema-closure',
-  'general-dentistry',
-  'dental-cleaning',
-  'teeth-cleaning-scaling',
-  'root-canal-treatment',
-  'composite-fillings-inlays',
-  'tooth-extractions-wisdom-teeth',
+  "dental-implants",
+  "dental-crowns",
+  "dental-veneers",
+  "dental-bridge",
+  "dental-bridges",
+  "dentures",
+  "cosmetic-dentistry",
+  "general-dentistry",
+  "all-on-4-implants",
+  "all-on-4-dental-implants",
+  "all-on-6-implants",
+  "all-on-6-dental-implants",
+  "immediate-implant-treatment",
+  "immediate-implants",
+  "immediate-dental-implants",
+  "zygomatic-implants",
+  "zirconium-implants",
+  "implant-supported-dentures",
+  "full-mouth-implants",
+  "full-mouth-dental-implants",
+  "sinus-lifting",
+  "zirconium-crowns",
+  "zirconia-crowns",
+  "pfm-crowns",
+  "metal-porcelain-crowns",
+  "emax-crowns",
+  "e-max-crowns",
+  "full-ceramic",
+  "full-ceramic-crowns",
+  "porcelain-veneers",
+  "porcelain-laminate-veneers",
+  "emax-veneers",
+  "e-max-veneers",
+  "zirconium-veneers",
+  "composite-veneers",
+  "lumineers",
+  "empress-veneers",
+  "traditional-bridges",
+  "maryland-bridges",
+  "cantilever-bridges",
+  "implant-supported-bridges",
+  "complete-dentures",
+  "partial-dentures",
+  "overdentures",
+  "smile-makeover",
+  "hollywood-smile",
+  "gummy-smile",
+  "gummy-smile-treatment",
+  "teeth-whitening",
+  "tooth-contouring",
+  "tooth-contouring-shaping",
+  "tooth-contouring-and-shaping",
+  "diastema-closure",
+  "dental-cleaning",
+  "teeth-cleaning-scaling",
+  "tooth-fillings",
+  "composite-fillings-inlays",
+  "root-canal",
+  "root-canal-treatment",
+  "tooth-extraction",
+  "tooth-extractions-wisdom-teeth",
+  "inlay-onlay",
+  "dental-sealants",
+  "fluoride-treatment",
+  "bruxism-treatment"
 ];
 
 export function generateStaticParams() {
@@ -2836,8 +2863,13 @@ export default async function TreatmentDetailPage({ params }: Props) {
 
   const content = await getTreatmentContent(locale, slug);
 
-  const isDentalImplants = slug === 'dental-implants';
-  const isAllOnSix = slug === 'all-on-6-implants';
+  const isDentalImplants = slug === 'dental-implants' || slug === 'full-mouth-implants' || slug === 'full-mouth-dental-implants';
+  const isAllOnFour = slug === 'all-on-4-implants' || slug === 'all-on-4-dental-implants' || slug === 'all-on-4';
+  const isAllOnSix = slug === 'all-on-6-implants' || slug === 'all-on-6-dental-implants' || slug === 'all-on-6';
+  const isImmediate = slug === 'immediate-implant-treatment' || slug === 'immediate-implants' || slug === 'immediate-dental-implants' || slug === 'immediate';
+  const isZygomatic = slug === 'zygomatic-implants' || slug === 'zygomatic';
+  const isZirconiumImplant = slug === 'zirconium-implants';
+  const isSinusLift = slug === 'sinus-lifting' || slug === 'sinus-lift';
 
   const isCompleteDentures =
     slug === 'complete-dentures' ||
@@ -3392,8 +3424,20 @@ export default async function TreatmentDetailPage({ params }: Props) {
           <SmileMakeoverDetailView />
         ) : isCosmetic ? (
           <CosmeticDentistryDetailView />
+        ) : isAllOnFour ? (
+          <AllOnFourImplantDetailView />
         ) : isAllOnSix ? (
           <AllOnSixImplantDetailView />
+        ) : isImmediate ? (
+          <ImmediateImplantDetailView />
+        ) : isZygomatic ? (
+          <ZygomaticImplantDetailView />
+        ) : isZirconiumImplant ? (
+          <ZirconiumImplantDetailView />
+        ) : isSinusLift ? (
+          <SinusLiftingDetailView />
+        ) : isDentalImplants ? (
+          <DentalImplantsDetailView />
         ) : (
           <TreatmentDetailView />
         )}

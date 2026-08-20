@@ -54,43 +54,250 @@ import { getI18nAlternates, TREATMENT_LOCALES } from '@/lib/i18n-seo';
 import { getTreatmentContent } from '@/lib/treatment-content';
 
 const TREATMENT_NESTED_SLUGS = [
-  ['dental-implants', 'all-on-4-dental-implants'],
-  ['dental-implants', 'all-on-6-dental-implants'],
-  ['dental-implants', 'immediate-dental-implants'],
-  ['dental-implants', 'sinus-lifting'],
-  ['dental-implants', 'zygomatic-implants'],
-  ['dental-implants', 'zirconium-implants'],
-  ['dental-implants', 'implant-supported-dentures'],
-  ['dental-implants', 'full-mouth-dental-implants'],
-  ['dental-veneers', 'porcelain-veneers'],
-  ['dental-veneers', 'e-max-veneers'],
-  ['dental-veneers', 'empress-veneers'],
-  ['dental-veneers', 'composite-veneers'],
-  ['dental-veneers', 'lumineers'],
-  ['dental-veneers', 'zirconium-veneers'],
-  ['dental-crowns', 'zirconium-crowns'],
-  ['dental-crowns', 'emax-crowns'],
-  ['dental-crowns', 'pfm-crowns'],
-  ['dental-crowns', 'full-ceramic-crowns'],
-  ['dental-bridges', 'traditional-bridges'],
-  ['dental-bridges', 'implant-supported-bridges'],
-  ['dental-bridges', 'cantilever-bridges'],
-  ['dental-bridges', 'maryland-bridges'],
-  ['dentures', 'complete-dentures'],
-  ['dentures', 'partial-dentures'],
-  ['dentures', 'overdentures'],
-  ['dentures', 'implant-supported-dentures'],
-  ['cosmetic-dentistry', 'smile-makeover'],
-  ['cosmetic-dentistry', 'teeth-whitening'],
-  ['cosmetic-dentistry', 'gummy-smile-treatment'],
-  ['cosmetic-dentistry', 'hollywood-smile'],
-  ['cosmetic-dentistry', 'tooth-contouring-and-shaping'],
-  ['cosmetic-dentistry', 'diastema-closure'],
-  ['general-dentistry', 'dental-cleaning'],
-  ['general-dentistry', 'teeth-cleaning-scaling'],
-  ['general-dentistry', 'root-canal-treatment'],
-  ['general-dentistry', 'composite-fillings-inlays'],
-  ['general-dentistry', 'tooth-extractions-wisdom-teeth'],
+  [
+    "dental-implants",
+    "full-mouth-implants"
+  ],
+  [
+    "dental-implants",
+    "full-mouth-dental-implants"
+  ],
+  [
+    "dental-implants",
+    "all-on-4-implants"
+  ],
+  [
+    "dental-implants",
+    "all-on-4-dental-implants"
+  ],
+  [
+    "dental-implants",
+    "all-on-6-implants"
+  ],
+  [
+    "dental-implants",
+    "all-on-6-dental-implants"
+  ],
+  [
+    "dental-implants",
+    "immediate-implant-treatment"
+  ],
+  [
+    "dental-implants",
+    "immediate-implants"
+  ],
+  [
+    "dental-implants",
+    "immediate-dental-implants"
+  ],
+  [
+    "dental-implants",
+    "zygomatic-implants"
+  ],
+  [
+    "dental-implants",
+    "zirconium-implants"
+  ],
+  [
+    "dental-implants",
+    "implant-supported-dentures"
+  ],
+  [
+    "dental-implants",
+    "sinus-lifting"
+  ],
+  [
+    "dental-crowns",
+    "zirconium-crowns"
+  ],
+  [
+    "dental-crowns",
+    "zirconia-crowns"
+  ],
+  [
+    "dental-crowns",
+    "pfm-crowns"
+  ],
+  [
+    "dental-crowns",
+    "metal-porcelain-crowns"
+  ],
+  [
+    "dental-crowns",
+    "emax-crowns"
+  ],
+  [
+    "dental-crowns",
+    "e-max-crowns"
+  ],
+  [
+    "dental-crowns",
+    "full-ceramic"
+  ],
+  [
+    "dental-crowns",
+    "full-ceramic-crowns"
+  ],
+  [
+    "dental-veneers",
+    "porcelain-veneers"
+  ],
+  [
+    "dental-veneers",
+    "porcelain-laminate-veneers"
+  ],
+  [
+    "dental-veneers",
+    "emax-veneers"
+  ],
+  [
+    "dental-veneers",
+    "e-max-veneers"
+  ],
+  [
+    "dental-veneers",
+    "zirconium-veneers"
+  ],
+  [
+    "dental-veneers",
+    "composite-veneers"
+  ],
+  [
+    "dental-veneers",
+    "lumineers"
+  ],
+  [
+    "dental-veneers",
+    "empress-veneers"
+  ],
+  [
+    "dental-bridge",
+    "traditional-bridges"
+  ],
+  [
+    "dental-bridge",
+    "maryland-bridges"
+  ],
+  [
+    "dental-bridge",
+    "cantilever-bridges"
+  ],
+  [
+    "dental-bridges",
+    "traditional-bridges"
+  ],
+  [
+    "dental-bridges",
+    "maryland-bridges"
+  ],
+  [
+    "dental-bridges",
+    "cantilever-bridges"
+  ],
+  [
+    "dental-bridges",
+    "implant-supported-bridges"
+  ],
+  [
+    "dentures",
+    "complete-dentures"
+  ],
+  [
+    "dentures",
+    "partial-dentures"
+  ],
+  [
+    "dentures",
+    "overdentures"
+  ],
+  [
+    "dentures",
+    "implant-supported-dentures"
+  ],
+  [
+    "cosmetic-dentistry",
+    "smile-makeover"
+  ],
+  [
+    "cosmetic-dentistry",
+    "hollywood-smile"
+  ],
+  [
+    "cosmetic-dentistry",
+    "gummy-smile"
+  ],
+  [
+    "cosmetic-dentistry",
+    "gummy-smile-treatment"
+  ],
+  [
+    "cosmetic-dentistry",
+    "teeth-whitening"
+  ],
+  [
+    "cosmetic-dentistry",
+    "tooth-contouring"
+  ],
+  [
+    "cosmetic-dentistry",
+    "tooth-contouring-shaping"
+  ],
+  [
+    "cosmetic-dentistry",
+    "tooth-contouring-and-shaping"
+  ],
+  [
+    "cosmetic-dentistry",
+    "diastema-closure"
+  ],
+  [
+    "general-dentistry",
+    "dental-cleaning"
+  ],
+  [
+    "general-dentistry",
+    "teeth-cleaning-scaling"
+  ],
+  [
+    "general-dentistry",
+    "tooth-fillings"
+  ],
+  [
+    "general-dentistry",
+    "composite-fillings-inlays"
+  ],
+  [
+    "general-dentistry",
+    "root-canal"
+  ],
+  [
+    "general-dentistry",
+    "root-canal-treatment"
+  ],
+  [
+    "general-dentistry",
+    "tooth-extraction"
+  ],
+  [
+    "general-dentistry",
+    "tooth-extractions-wisdom-teeth"
+  ],
+  [
+    "general-dentistry",
+    "inlay-onlay"
+  ],
+  [
+    "general-dentistry",
+    "dental-sealants"
+  ],
+  [
+    "general-dentistry",
+    "fluoride-treatment"
+  ],
+  [
+    "general-dentistry",
+    "bruxism-treatment"
+  ]
 ];
 
 export function generateStaticParams() {
