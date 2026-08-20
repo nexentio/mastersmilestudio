@@ -45,7 +45,7 @@ const REVIEWS_HERO_DATA: Record<string, { title: string; subtitle: string }> = {
 export default function ReviewsHeroBanner({
   customTitle,
   customSubtitle,
-  imageSrc = '/mss-patients-montage.png',
+  imageSrc = '/reviews/reviews-hero-bg.webp',
 }: ReviewsHeroBannerProps) {
   const locale = useLocale();
   const data = REVIEWS_HERO_DATA[locale] || REVIEWS_HERO_DATA.en;
