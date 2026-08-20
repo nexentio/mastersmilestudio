@@ -14,7 +14,7 @@
 
 /* 1. Intro Section */
 .introSection {
-  padding: 5rem 0 3.5rem 0;
+  padding: 5rem 0 0 0;
 }
 
 .introHeading {
@@ -63,7 +63,7 @@
 .mainVideoWrap {
   width: 100%;
   max-width: 100%;
-  margin: 2.5rem 0;
+  margin: 2.5rem 0 0 0;
   position: relative;
   aspect-ratio: 16 / 9;
   border-radius: 18px;
@@ -963,7 +963,7 @@
 
 @media (max-width: 768px) {
   .introSection {
-    padding: 3rem 0 1.5rem 0;
+    padding: 2.5rem 0 0 0;
   }
   .compareSection,
   .processSection,
