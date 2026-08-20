@@ -1,7 +1,6 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import Image from 'next/image';
 
 export default function LocationMapSection() {
   const t = useTranslations('home');
@@ -85,7 +84,7 @@ export default function LocationMapSection() {
           </div>
         </div>
 
-        {/* 2-Column Equal Grid Container (Patient Smiles Image + Interactive Google Map) */}
+        {/* 2-Column Equal Grid Container (Video + Interactive Google Map) */}
         <div
           style={{
             display: 'grid',
@@ -95,7 +94,7 @@ export default function LocationMapSection() {
           }}
           className="location-map-grid"
         >
-          {/* Left Column: Patient Smiles Image */}
+          {/* Left Column: Clinic Tour Video */}
           <div
             style={{
               height: 'clamp(280px, 38vw, 450px)',
@@ -107,14 +106,45 @@ export default function LocationMapSection() {
               border: '1px solid #e2e8f0',
             }}
           >
-            <Image
-              src="/mss-afterpics-patients.webp"
-              alt="Master Smile Studio Patient Smiles"
-              fill
-              sizes="(max-width: 768px) 100vw, 600px"
-              style={{ objectFit: 'cover' }}
-              priority={false}
-            />
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              style={{
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover',
+              }}
+            >
+              <source src="/mastersmilestudio-clinic.mp4" type="video/mp4" />
+              <source src="/mastersmilestudio-clinic.webm" type="video/webm" />
+            </video>
+
+            {/* Glassmorphic Badge Overlay */}
+            <div
+              style={{
+                position: 'absolute',
+                bottom: '1rem',
+                left: '1rem',
+                backgroundColor: 'rgba(15, 23, 42, 0.75)',
+                backdropFilter: 'blur(10px)',
+                WebkitBackdropFilter: 'blur(10px)',
+                color: '#ffffff',
+                padding: '0.45rem 1rem',
+                borderRadius: '9999px',
+                fontSize: 'clamp(0.75rem, 1.5vw, 0.85rem)',
+                fontWeight: 700,
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.45rem',
+                boxShadow: '0 4px 16px rgba(0, 0, 0, 0.25)',
+                border: '1px solid rgba(255, 255, 255, 0.15)',
+              }}
+            >
+              <span style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: '#22c55e', boxShadow: '0 0 8px #22c55e' }} />
+              <span>Master Smile Studio — VIP Clinic Tour</span>
+            </div>
           </div>
 
           {/* Right Column: Google Maps Embed Iframe */}
