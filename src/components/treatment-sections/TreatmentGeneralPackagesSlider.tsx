@@ -396,7 +396,6 @@ export default function TreatmentGeneralPackagesSlider() {
       <div className={styles.container}>
         {/* Header */}
         <div className={styles.head}>
-          <span className={styles.badge}>{dict.badge}</span>
           <h2 id="general-packages-heading" className={styles.title}>
             {dict.title}
           </h2>
