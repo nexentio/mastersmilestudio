@@ -248,6 +248,7 @@ export default function FaqSection() {
 
         {/* SEO Keywords & Tags Pill Bar */}
         <div
+          className="faq-seo-bar"
           style={{
             paddingTop: '2.5rem',
             borderTop: '1px solid #f1f5f9',
@@ -258,6 +259,7 @@ export default function FaqSection() {
           }}
         >
           <span
+            className="faq-seo-title"
             style={{
               fontSize: '0.85rem',
               fontWeight: 600,
@@ -265,7 +267,7 @@ export default function FaqSection() {
               marginRight: '0.5rem',
             }}
           >
-            ✦ Anahtar Kelimeler:
+            {t.has('keywordsLabel' as any) ? t('keywordsLabel' as any) : '✦ Anahtar Kelimeler / Keywords:'}
           </span>
           {rawSeoTags.map((tag, idx) => (
             <span
@@ -294,6 +296,24 @@ export default function FaqSection() {
           background-color: #fff7ed !important;
           color: #d97706 !important;
           border-color: #ffedd5 !important;
+        }
+        @media (max-width: 768px) {
+          .faq-seo-bar {
+            padding-top: 1.5rem !important;
+            gap: 0.35rem 0.4rem !important;
+          }
+          .faq-seo-title {
+            font-size: 0.76rem !important;
+            width: 100% !important;
+            margin-right: 0 !important;
+            margin-bottom: 0.2rem !important;
+          }
+          .seo-chip {
+            font-size: 0.72rem !important;
+            padding: 0.22rem 0.55rem !important;
+            border-radius: 6px !important;
+            line-height: 1.3 !important;
+          }
         }
       `}</style>
     </section>

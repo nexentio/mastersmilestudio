@@ -265,6 +265,7 @@ export default function TeamSection() {
       {/* Selected Doctor Detailed Bio Box */}
       {selectedMember && (
         <div
+          className="team-bio-modal-container"
           style={{
             maxWidth: '1280px',
             margin: '3rem auto 0 auto',
@@ -272,6 +273,7 @@ export default function TeamSection() {
           }}
         >
           <div
+            className="team-bio-modal-card"
             style={{
               backgroundColor: '#18181b',
               borderRadius: '24px',
@@ -286,6 +288,7 @@ export default function TeamSection() {
           >
             <button
               onClick={() => setSelectedDocId(null)}
+              className="team-bio-modal-close"
               style={{
                 position: 'absolute',
                 top: '1.5rem',
@@ -302,12 +305,17 @@ export default function TeamSection() {
                 justifyContent: 'center',
                 fontSize: '1rem',
               }}
+              aria-label="Close"
             >
               ✕
             </button>
 
-            <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1rem' }}>
+            <div
+              className="team-bio-modal-head"
+              style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1rem', flexWrap: 'wrap' }}
+            >
               <span
+                className="team-bio-modal-badge"
                 style={{
                   backgroundColor: selectedMember.pastelBg,
                   color: '#0f172a',
@@ -319,12 +327,16 @@ export default function TeamSection() {
               >
                 {t(`${selectedMember.docKey}.experience` as any)}
               </span>
-              <h4 style={{ fontSize: '1.35rem', fontWeight: 600, color: '#ffffff', margin: 0 }}>
+              <h4
+                className="team-bio-modal-name"
+                style={{ fontSize: '1.35rem', fontWeight: 600, color: '#ffffff', margin: 0 }}
+              >
                 {selectedMember.name}
               </h4>
             </div>
 
             <p
+              className="team-bio-modal-text"
               style={{
                 fontSize: '1.05rem',
                 color: '#cbd5e1',
@@ -336,9 +348,10 @@ export default function TeamSection() {
               {t(`${selectedMember.docKey}.bio` as any)}
             </p>
 
-            <div style={{ display: 'flex', gap: '0.85rem', flexWrap: 'wrap' }}>
+            <div className="team-bio-modal-btns" style={{ display: 'flex', gap: '0.85rem', flexWrap: 'wrap' }}>
               <a
                 href="#contact"
+                className="team-bio-btn-primary"
                 style={{
                   backgroundColor: '#d58936',
                   color: '#ffffff',
@@ -353,10 +366,11 @@ export default function TeamSection() {
                   transition: 'all 0.2s ease',
                 }}
               >
-                {t('getConsultation' as any) || 'Book Consultation'} →
+                {t('getConsultation' as any) || 'Book Consultation'}
               </a>
               <a
                 href="#contact"
+                className="team-bio-btn-secondary"
                 style={{
                   backgroundColor: 'rgba(255, 255, 255, 0.08)',
                   color: '#f8fafc',
@@ -388,6 +402,48 @@ export default function TeamSection() {
         @media (max-width: 768px) {
           .team-card-ozan {
             order: -1 !important;
+          }
+          .team-bio-modal-container {
+            margin-top: 1.5rem !important;
+            padding: 0 1rem !important;
+          }
+          .team-bio-modal-card {
+            padding: 1.25rem 1.25rem !important;
+            border-radius: 18px !important;
+          }
+          .team-bio-modal-close {
+            top: 1rem !important;
+            right: 1rem !important;
+            width: 28px !important;
+            height: 28px !important;
+            font-size: 0.85rem !important;
+          }
+          .team-bio-modal-head {
+            flex-direction: column !important;
+            align-items: flex-start !important;
+            gap: 0.35rem !important;
+            padding-right: 2rem !important;
+            margin-bottom: 0.75rem !important;
+          }
+          .team-bio-modal-badge {
+            font-size: 0.75rem !important;
+            padding: 0.25rem 0.65rem !important;
+          }
+          .team-bio-modal-name {
+            font-size: 1.15rem !important;
+          }
+          .team-bio-modal-text {
+            font-size: 0.88rem !important;
+            line-height: 1.55 !important;
+            margin-bottom: 1rem !important;
+          }
+          .team-bio-modal-btns {
+            gap: 0.5rem !important;
+          }
+          .team-bio-btn-primary,
+          .team-bio-btn-secondary {
+            font-size: 0.8rem !important;
+            padding: 0.5rem 1rem !important;
           }
         }
         @keyframes fadeIn {

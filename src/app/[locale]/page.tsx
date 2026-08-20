@@ -1,6 +1,7 @@
 import { setRequestLocale } from 'next-intl/server';
 import Header from '@/components/Header';
 import HomeHeroBanner from '@/components/HomeHeroBanner';
+import MobileHeroConsultationForm from '@/components/MobileHeroConsultationForm';
 import ServicesGrid from '@/components/ServicesGrid';
 import RealPatientsSection from '@/components/RealPatientsSection';
 import PatientsSection from '@/components/PatientsSection';
@@ -23,12 +24,15 @@ export default async function Home({
   setRequestLocale(locale);
 
   return (
-    <main id="main-content" style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', backgroundColor: '#09090b' }}>
+    <main id="main-content" style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', backgroundColor: '#ffffff' }}>
       {/* Global Navigation Header - Sticky across whole page */}
       <Header />
 
-      {/* Hero Section without Form (1:1 Text & Pill Buttons matching design) */}
+      {/* Hero Section */}
       <HomeHeroBanner />
+
+      {/* Mobile-Only Consultation Form (Flowing from Hero into Services Section on Mobile) */}
+      <MobileHeroConsultationForm />
 
       {/* Treatment Services Square Cards Section */}
       <ServicesGrid />

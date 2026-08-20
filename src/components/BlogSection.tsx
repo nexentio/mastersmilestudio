@@ -82,6 +82,7 @@ export default function BlogSection() {
 
         {/* 3 Asymmetric Vertical Image Cards Grid */}
         <div
+          className="blog-cards-grid"
           style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
@@ -105,6 +106,7 @@ export default function BlogSection() {
               >
                 {/* Image Container with Dynamic Height */}
                 <div
+                  className="blog-card-img-wrap"
                   style={{
                     position: 'relative',
                     width: '100%',
@@ -132,6 +134,7 @@ export default function BlogSection() {
                 {/* Text Content */}
                 <div>
                   <h3
+                    className="blog-card-title"
                     style={{
                       fontSize: '1.25rem',
                       fontWeight: 600,
@@ -145,6 +148,7 @@ export default function BlogSection() {
                   </h3>
 
                   <p
+                    className="blog-card-desc"
                     style={{
                       fontSize: '0.95rem',
                       color: '#475569',
@@ -161,17 +165,15 @@ export default function BlogSection() {
                     style={{
                       display: 'inline-flex',
                       alignItems: 'center',
-                      gap: '0.35rem',
                       fontSize: '0.9rem',
                       fontWeight: 600,
                       color: '#d97706',
                       textDecoration: 'none',
-                      transition: 'gap 0.2s ease',
+                      transition: 'color 0.2s ease',
                     }}
                     className="blog-read-link"
                   >
                     <span>{t('readMore')}</span>
-                    <span>→</span>
                   </a>
                 </div>
               </article>
@@ -185,8 +187,53 @@ export default function BlogSection() {
           transform: scale(1.04);
         }
         .blog-article-card:hover .blog-read-link {
-          gap: 0.6rem !important;
-          color: '#b45309' !important;
+          color: #b45309 !important;
+        }
+        @media (max-width: 768px) {
+          .blog-cards-grid {
+            display: flex !important;
+            flex-wrap: nowrap !important;
+            overflow-x: auto !important;
+            scroll-snap-type: x mandatory !important;
+            -webkit-overflow-scrolling: touch !important;
+            gap: 1rem !important;
+            width: 100vw !important;
+            position: relative !important;
+            left: 50% !important;
+            right: 50% !important;
+            margin-left: -50vw !important;
+            margin-right: -50vw !important;
+            padding-left: 1.25rem !important;
+            padding-right: 1.25rem !important;
+            padding-bottom: 1.25rem !important;
+            scrollbar-width: none !important;
+            -ms-overflow-style: none !important;
+          }
+          .blog-cards-grid::-webkit-scrollbar {
+            display: none !important;
+          }
+          .blog-article-card {
+            flex: 0 0 78vw !important;
+            width: 78vw !important;
+            max-width: 310px !important;
+            min-width: 240px !important;
+            scroll-snap-align: start !important;
+            gap: 0.85rem !important;
+          }
+          .blog-card-img-wrap {
+            height: 240px !important;
+            border-radius: 18px !important;
+          }
+          .blog-card-title {
+            font-size: 1.1rem !important;
+            line-height: 1.25 !important;
+            margin-bottom: 0.4rem !important;
+          }
+          .blog-card-desc {
+            font-size: 0.86rem !important;
+            line-height: 1.5 !important;
+            margin-bottom: 0.75rem !important;
+          }
         }
       `}</style>
     </section>

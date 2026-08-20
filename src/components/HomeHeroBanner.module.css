@@ -118,8 +118,8 @@
   transition: transform 0.2s ease;
 }
 
-.pillBtn:hover .iconSvg {
-  transform: translateX(3px);
+.mobileHeroFormHeader {
+  display: none;
 }
 
 @media (max-width: 868px) {
@@ -130,6 +130,7 @@
     min-height: 100dvh;
     padding: 0 1rem;
     padding-top: 80px;
+    padding-bottom: 7.5rem;
     margin-top: -80px;
   }
 
@@ -155,5 +156,46 @@
     width: 100%;
     padding: 0.75rem 1.4rem;
     font-size: 0.9rem;
+  }
+
+  .mobileHeroFormHeader {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 4;
+    background-color: #ffffff;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    padding: 1rem 1.25rem 0.65rem 1.25rem;
+    text-align: left;
+    text-decoration: none;
+    box-shadow: 0 -6px 20px rgba(0, 0, 0, 0.12);
+  }
+
+  .mobileFormHeaderIndicator {
+    width: 36px;
+    height: 4px;
+    border-radius: 9999px;
+    background-color: #cbd5e1;
+    margin: 0 auto 0.55rem auto;
+  }
+
+  .mobileFormHeaderTitle {
+    font-size: 1.12rem;
+    font-weight: 700;
+    color: #0c1b4d;
+    line-height: 1.2;
+    margin: 0 0 0.25rem 0;
+    letter-spacing: -0.02em;
+  }
+
+  .mobileFormHeaderSubtitle {
+    font-size: 0.8rem;
+    color: #64748b;
+    line-height: 1.35;
+    margin: 0;
+    font-weight: 400;
   }
 }

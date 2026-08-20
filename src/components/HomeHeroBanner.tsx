@@ -11,6 +11,8 @@ interface HomeHeroI18n {
   title: string;
   whatsappBtn: string;
   quickFormBtn: string;
+  formHeaderTitle: string;
+  formHeaderSubtitle: string;
 }
 
 const HOME_HERO_DATA: Record<string, HomeHeroI18n> = {
@@ -19,42 +21,56 @@ const HOME_HERO_DATA: Record<string, HomeHeroI18n> = {
     title: 'Let’s create your personalized treatment plan before you fly.',
     whatsappBtn: 'WhatsApp',
     quickFormBtn: 'Get Started-Quick Form',
+    formHeaderTitle: 'Get Your Personalized Smile Plan',
+    formHeaderSubtitle: 'Fill out the quick form below for an instant preliminary quote from our doctors.',
   },
   tr: {
     subtitle: 'Yolculuğunuza Ücretsiz Online Danışmanlık ile Başlayın',
     title: 'Uçuşunuzdan önce kişiselleştirilmiş tedavi planınızı birlikte oluşturalım.',
     whatsappBtn: 'WhatsApp',
     quickFormBtn: 'Hızlı Fiyat Teklifi Al',
+    formHeaderTitle: 'Kişiselleştirilmiş Gülüş Planınızı Alın',
+    formHeaderSubtitle: 'Antalya’daki uzman hekimlerimizden anında fiyat teklifi almak için formu doldurun.',
   },
   de: {
     subtitle: 'Beginnen Sie Ihre Reise mit einer kostenlosen Online-Beratung',
     title: 'Lassen Sie uns Ihren individuellen Behandlungsplan vor Ihrem Flug erstellen.',
     whatsappBtn: 'WhatsApp',
     quickFormBtn: 'Jetzt Schnellangebot anfordern',
+    formHeaderTitle: 'Erhalten Sie Ihren persönlichen Behandlungsplan',
+    formHeaderSubtitle: 'Füllen Sie das Formular für ein unverbindliches Angebot unserer Zahnärzte aus.',
   },
   pl: {
     subtitle: 'Rozpocznij swoją podróż od bezpłatnej konsultacji online',
     title: 'Stwórzmy Twój spersonalizowany plan leczenia jeszcze przed wylotem.',
     whatsappBtn: 'WhatsApp',
     quickFormBtn: 'Szybki formularz wyceny',
+    formHeaderTitle: 'Otrzymaj Spersonalizowany Plan Leczenia',
+    formHeaderSubtitle: 'Wypełnij krótki formularz, aby otrzymać bezpłatny kosztorys od lekarzy.',
   },
   pt: {
     subtitle: 'Comece a sua jornada com uma consulta online gratuita',
     title: 'Vamos criar o seu plano de tratamento personalizado antes de viajar.',
     whatsappBtn: 'WhatsApp',
     quickFormBtn: 'Pedir Orçamento Rápido',
+    formHeaderTitle: 'Receba o Seu Plano de Sorriso Personalizado',
+    formHeaderSubtitle: 'Preencha o formulário rápido para receber uma estimativa clínica.',
   },
   es: {
     subtitle: 'Comience su viaje con una consulta online gratuita',
     title: 'Diseñemos su plan de tratamiento personalizado antes de su vuelo.',
     whatsappBtn: 'WhatsApp',
     quickFormBtn: 'Formulario Rápido',
+    formHeaderTitle: 'Obtenga su Plan de Sonrisa Personalizado',
+    formHeaderSubtitle: 'Complete el formulario para recibir un presupuesto estimado de nuestros doctores.',
   },
   ru: {
     subtitle: 'Начните свой путь с бесплатной онлайн-консультации',
     title: 'Давайте составим ваш персональный план лечения еще до вылета.',
     whatsappBtn: 'WhatsApp',
     quickFormBtn: 'Быстрый расчет стоимости',
+    formHeaderTitle: 'Получите Ваш Персональный План Лечения',
+    formHeaderSubtitle: 'Заполните форму для получения предварительного расчета стоимости.',
   },
 };
 
@@ -92,7 +108,7 @@ export default function HomeHeroBanner() {
           </a>
 
           {/* Quick Form Button */}
-          <a href="#contact" className={styles.pillBtn}>
+          <a href="#mobile-consultation-form" className={styles.pillBtn}>
             <span>{d.quickFormBtn}</span>
             <svg
               className={styles.iconSvg}
@@ -104,6 +120,13 @@ export default function HomeHeroBanner() {
           </a>
         </div>
       </div>
+
+      {/* Mobile-Only Form Header Peeking at Bottom of Hero */}
+      <a href="#mobile-consultation-form" className={styles.mobileHeroFormHeader}>
+        <div className={styles.mobileFormHeaderIndicator} />
+        <h2 className={styles.mobileFormHeaderTitle}>{d.formHeaderTitle}</h2>
+        <p className={styles.mobileFormHeaderSubtitle}>{d.formHeaderSubtitle}</p>
+      </a>
     </section>
   );
 }

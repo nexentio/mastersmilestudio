@@ -120,31 +120,6 @@ export default function LocationMapSection() {
               <source src="/mastersmilestudio-clinic.mp4" type="video/mp4" />
               <source src="/mastersmilestudio-clinic.webm" type="video/webm" />
             </video>
-
-            {/* Glassmorphic Badge Overlay */}
-            <div
-              style={{
-                position: 'absolute',
-                bottom: '1rem',
-                left: '1rem',
-                backgroundColor: 'rgba(15, 23, 42, 0.75)',
-                backdropFilter: 'blur(10px)',
-                WebkitBackdropFilter: 'blur(10px)',
-                color: '#ffffff',
-                padding: '0.45rem 1rem',
-                borderRadius: '9999px',
-                fontSize: 'clamp(0.75rem, 1.5vw, 0.85rem)',
-                fontWeight: 700,
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: '0.45rem',
-                boxShadow: '0 4px 16px rgba(0, 0, 0, 0.25)',
-                border: '1px solid rgba(255, 255, 255, 0.15)',
-              }}
-            >
-              <span style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: '#22c55e', boxShadow: '0 0 8px #22c55e' }} />
-              <span>Master Smile Studio — VIP Clinic Tour</span>
-            </div>
           </div>
 
           {/* Right Column: Google Maps Embed Iframe */}

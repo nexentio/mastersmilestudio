@@ -34,6 +34,7 @@ export default function TransformationsSection() {
   return (
     <section
       id="transformations"
+      className="transformations-section-root"
       style={{
         backgroundColor: '#ffffff',
         backgroundImage: 'url("/frame3333.jpeg")',
@@ -52,6 +53,7 @@ export default function TransformationsSection() {
     >
       {/* Title Container: Same 1280px Max-Width & Padding as Previous Sections */}
       <div
+        className="transformations-title-container"
         style={{
           maxWidth: '1280px',
           marginTop: '0px',
@@ -76,6 +78,7 @@ export default function TransformationsSection() {
           {/* Title & Subtitle */}
           <div style={{ maxWidth: '820px' }}>
             <h2
+              className="transformations-title-h2"
               style={{
                 fontSize: '3.25rem',
                 fontWeight: 400,
@@ -91,6 +94,7 @@ export default function TransformationsSection() {
               {getSafeText('transformations.title', 'From First Visit to Final Smile.')}
             </h2>
             <p
+              className="transformations-subtitle-p"
               style={{
                 fontSize: '1.08rem',
                 color: '#ffffff',
@@ -223,14 +227,56 @@ export default function TransformationsSection() {
           padding-left: max(1.5rem, calc((100vw - 1280px) / 2 + 1.5rem));
           padding-right: max(1.5rem, calc((100vw - 1280px) / 2 + 1.5rem));
         }
+        @media (max-width: 992px) {
+          .transformations-section-root {
+            padding-top: clamp(8rem, 16vw, 13rem) !important;
+            padding-bottom: 4rem !important;
+            background-position: center top !important;
+            background-size: cover !important;
+          }
+          .transformations-title-container {
+            margin-bottom: clamp(2.5rem, 5vw, 4rem) !important;
+          }
+          .transformations-title-h2 {
+            font-size: clamp(2rem, 4.5vw, 2.75rem) !important;
+          }
+        }
         @media (max-width: 768px) {
+          .transformations-section-root {
+            padding-top: clamp(6rem, 14vw, 9rem) !important;
+            padding-bottom: 3.5rem !important;
+            background-position: 70% 0px !important;
+            background-size: 205% auto !important;
+          }
+          .transformations-title-container {
+            margin-bottom: 2rem !important;
+          }
+          .transformations-title-h2 {
+            font-size: clamp(1.75rem, 4vw, 2.25rem) !important;
+            line-height: 1.2 !important;
+            margin-bottom: 0.75rem !important;
+          }
+          .transformations-subtitle-p {
+            font-size: 0.92rem !important;
+            line-height: 1.55 !important;
+          }
           .trans-slider-wrapper {
+            gap: 1rem !important;
             padding-left: 1.5rem !important;
             padding-right: 1.5rem !important;
           }
           .transformation-card {
-            width: 300px !important;
-            height: 400px !important;
+            width: 70vw !important;
+            max-width: 280px !important;
+            min-width: 230px !important;
+            height: 380px !important;
+            border-radius: 18px !important;
+          }
+        }
+        @media (max-width: 480px) {
+          .transformations-section-root {
+            background-position: 72% 0px !important;
+            background-size: 215% auto !important;
           }
         }
         .trans-nav-btn:hover {

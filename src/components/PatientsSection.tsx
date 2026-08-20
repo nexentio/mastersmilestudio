@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 
@@ -8,6 +8,7 @@ export default function PatientsSection() {
   const t = useTranslations('home');
   const [startIndex, setStartIndex] = useState(0);
   const [selectedReview, setSelectedReview] = useState<(typeof reviews)[0] | null>(null);
+  const gridRef = useRef<HTMLDivElement>(null);
 
   const reviews = [
     {
@@ -59,10 +60,49 @@ export default function PatientsSection() {
 
   const handlePrev = () => {
     setStartIndex((prev) => (prev > 0 ? prev - 1 : maxIndex));
+    if (gridRef.current) {
+      const card = gridRef.current.querySelector<HTMLElement>('.patient-card-white');
+      const cardWidth = card ? card.offsetWidth + 16 : 300;
+      gridRef.current.scrollBy({
+        left: -cardWidth,
+        behavior: 'smooth',
+      });
+    }
   };
 
   const handleNext = () => {
     setStartIndex((prev) => (prev < maxIndex ? prev + 1 : 0));
+    if (gridRef.current) {
+      const card = gridRef.current.querySelector<HTMLElement>('.patient-card-white');
+      const cardWidth = card ? card.offsetWidth + 16 : 300;
+      gridRef.current.scrollBy({
+        left: cardWidth,
+        behavior: 'smooth',
+      });
+    }
+  };
+
+  const handleDotClick = (index: number) => {
+    setStartIndex(index);
+    if (gridRef.current) {
+      const card = gridRef.current.querySelector<HTMLElement>('.patient-card-white');
+      const cardWidth = card ? card.offsetWidth + 16 : 300;
+      gridRef.current.scrollTo({
+        left: index * cardWidth,
+        behavior: 'smooth',
+      });
+    }
+  };
+
+  const handleGridScroll = () => {
+    if (gridRef.current) {
+      const card = gridRef.current.querySelector<HTMLElement>('.patient-card-white');
+      if (card) {
+        const cardWidth = card.offsetWidth + 16;
+        const newIndex = Math.round(gridRef.current.scrollLeft / cardWidth);
+        setStartIndex(Math.min(reviews.length - 1, Math.max(0, newIndex)));
+      }
+    }
   };
 
   const visibleReviews = reviews.slice(startIndex, startIndex + visibleCardsCount);
@@ -150,54 +190,71 @@ export default function PatientsSection() {
             </p>
 
             {/* Google & Trustpilot Verified Badges */}
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', flexWrap: 'wrap' }}>
+            <div className="patients-trust-badges" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', flexWrap: 'wrap' }}>
               {/* Google Badge */}
-              <div
+              <a
+                href="https://maps.app.goo.gl/zPEJU7kE6m1eLuk59"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="patients-trust-badge"
                 style={{
                   display: 'inline-flex',
                   alignItems: 'center',
-                  gap: '0.5rem',
+                  gap: '0.4rem',
                   backgroundColor: '#ffffff',
                   border: '1.5px solid #FCDE9C',
-                  padding: '0.35rem 0.85rem',
+                  padding: '0.32rem 0.55rem',
                   borderRadius: '9999px',
                   boxShadow: '0 2px 8px rgba(0, 0, 0, 0.05)',
+                  flexShrink: 0,
+                  textDecoration: 'none',
+                  cursor: 'pointer',
+                  transition: 'all 0.2s ease',
                 }}
               >
-                <Image src="/reviews/google.webp" alt="Google" width={18} height={18} style={{ objectFit: 'contain' }} />
-                <span style={{ fontSize: '0.82rem', fontWeight: 750, color: '#0f172a' }}>4.9/5</span>
-                <span style={{ color: '#f59e0b', fontSize: '0.78rem' }}>★★★★★</span>
-              </div>
+                <Image src="/reviews/google.webp" alt="Google" width={17} height={17} style={{ objectFit: 'contain' }} />
+                <span style={{ fontSize: '0.80rem', fontWeight: 750, color: '#0f172a' }}>4.9/5</span>
+                <span style={{ color: '#f59e0b', fontSize: '0.76rem' }}>★★★★★</span>
+              </a>
 
               {/* Trustpilot Badge */}
-              <div
+              <a
+                href="https://www.trustpilot.com/review/mastersmilestudio.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="patients-trust-badge"
                 style={{
                   display: 'inline-flex',
                   alignItems: 'center',
-                  gap: '0.5rem',
+                  gap: '0.4rem',
                   backgroundColor: '#ffffff',
                   border: '1.5px solid #FCDE9C',
-                  padding: '0.35rem 0.85rem',
+                  padding: '0.32rem 0.55rem',
                   borderRadius: '9999px',
                   boxShadow: '0 2px 8px rgba(0, 0, 0, 0.05)',
+                  flexShrink: 0,
+                  textDecoration: 'none',
+                  cursor: 'pointer',
+                  transition: 'all 0.2s ease',
                 }}
               >
-                <Image src="/reviews/trustpilot.webp" alt="Trustpilot" width={68} height={16} style={{ objectFit: 'contain' }} />
-                <span style={{ fontSize: '0.82rem', fontWeight: 750, color: '#0f172a' }}>4.8/5</span>
-                <span style={{ color: '#00b67a', fontSize: '0.78rem' }}>★ TrustScore</span>
-              </div>
+                <Image src="/reviews/trustpilot.webp" alt="Trustpilot" width={64} height={15} style={{ objectFit: 'contain' }} />
+                <span style={{ fontSize: '0.80rem', fontWeight: 750, color: '#0f172a' }}>4.9/5</span>
+                <span style={{ color: '#00b67a', fontSize: '0.76rem' }}>★ TrustScore</span>
+              </a>
             </div>
           </div>
         </div>
 
         {/* Patients Review Cards Grid */}
-        <div className="patients-grid">
-          {visibleReviews.map((card, idx) => {
+        <div className="patients-grid" ref={gridRef} onScroll={handleGridScroll}>
+          {reviews.map((card, idx) => {
             const name = getSafeText(`patients.${card.id}.name`, card.fallbackName);
             const country = getSafeText(`patients.${card.id}.country`, card.fallbackCountry);
             const treatment = getSafeText(`patients.${card.id}.treatment`, card.fallbackTreatment);
             const quote = getSafeText(`patients.${card.id}.quote`, card.fallbackQuote);
             const isTrustpilot = idx % 2 === 0;
+            const isDesktopVisible = idx >= startIndex && idx < startIndex + visibleCardsCount;
 
             return (
               <div
@@ -208,7 +265,7 @@ export default function PatientsSection() {
                   borderRadius: '24px',
                   border: '2px solid #FCDE9C',
                   padding: '2rem 1.75rem',
-                  display: 'flex',
+                  display: isDesktopVisible ? 'flex' : 'none',
                   flexDirection: 'column',
                   justifyContent: 'space-between',
                   minHeight: '340px',
@@ -218,7 +275,7 @@ export default function PatientsSection() {
                   transition: 'all 0.35s cubic-bezier(0.4, 0, 0.2, 1)',
                   cursor: 'pointer',
                 }}
-                className="patient-card-white"
+                className={`patient-card-white ${!isDesktopVisible ? 'patient-card-desktop-hidden' : ''}`}
               >
                 <div>
                   {/* Top Header: 5 Rating Stars on Left & Verified Review Platform Logo on Right */}
@@ -239,21 +296,23 @@ export default function PatientsSection() {
                           width={18}
                           height={18}
                           style={{ objectFit: 'contain' }}
+                          className="patient-card-star"
                         />
                       ))}
                     </div>
 
                     <div style={{ display: 'flex', alignItems: 'center', opacity: 0.9 }}>
                       {isTrustpilot ? (
-                        <Image src="/reviews/trustpilot.webp" alt="Trustpilot" width={68} height={16} style={{ objectFit: 'contain' }} />
+                        <Image src="/reviews/trustpilot.webp" alt="Trustpilot" width={68} height={16} style={{ objectFit: 'contain' }} className="patient-platform-logo" />
                       ) : (
-                        <Image src="/reviews/google.webp" alt="Google" width={20} height={20} style={{ objectFit: 'contain' }} />
+                        <Image src="/reviews/google.webp" alt="Google" width={20} height={20} style={{ objectFit: 'contain' }} className="patient-platform-logo" />
                       )}
                     </div>
                   </div>
 
                   {/* Patient Quote */}
                   <p
+                    className="patient-quote-text"
                     style={{
                       fontSize: '0.95rem',
                       color: '#334155',
@@ -270,6 +329,7 @@ export default function PatientsSection() {
                 {/* Card Footer: Treatment Badge + Patient Name & Country */}
                 <div style={{ borderTop: '1px solid #f1f5f9', paddingTop: '1.15rem' }}>
                   <div
+                    className="treatment-badge"
                     style={{
                       display: 'inline-block',
                       backgroundColor: '#FCDE9C',
@@ -287,6 +347,7 @@ export default function PatientsSection() {
 
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '0.2rem' }}>
                     <span
+                      className="patient-name"
                       style={{
                         fontSize: '1.05rem',
                         fontWeight: 750,
@@ -296,6 +357,7 @@ export default function PatientsSection() {
                       {name}
                     </span>
                     <span
+                      className="patient-country"
                       style={{
                         fontSize: '0.84rem',
                         color: '#64748b',
@@ -329,7 +391,7 @@ export default function PatientsSection() {
             {Array.from({ length: maxIndex + 1 }).map((_, i) => (
               <button
                 key={i}
-                onClick={() => setStartIndex(i)}
+                onClick={() => handleDotClick(i)}
                 style={{
                   height: '8px',
                   width: startIndex === i ? '28px' : '8px',
@@ -562,6 +624,9 @@ export default function PatientsSection() {
           grid-template-columns: repeat(4, 1fr);
           gap: 1.75rem;
         }
+        .patient-card-desktop-hidden {
+          display: none !important;
+        }
         @media (max-width: 1200px) {
           .patients-grid {
             grid-template-columns: repeat(3, 1fr) !important;
@@ -574,27 +639,110 @@ export default function PatientsSection() {
             gap: 1.25rem !important;
           }
         }
-        @media (max-width: 640px) {
+        @media (max-width: 768px) {
           .patients-grid {
-            grid-template-columns: 1fr !important;
+            display: flex !important;
+            flex-wrap: nowrap !important;
+            overflow-x: auto !important;
+            scroll-snap-type: x mandatory !important;
+            -webkit-overflow-scrolling: touch !important;
             gap: 1rem !important;
+            width: 100vw !important;
+            position: relative !important;
+            left: 50% !important;
+            right: 50% !important;
+            margin-left: -50vw !important;
+            margin-right: -50vw !important;
+            padding-left: 1.25rem !important;
+            padding-right: 1.25rem !important;
+            padding-bottom: 1.25rem !important;
+            justify-content: flex-start !important;
+            scrollbar-width: none !important;
+            -ms-overflow-style: none !important;
+          }
+          .patients-grid::-webkit-scrollbar {
+            display: none !important;
           }
           .patient-card-white {
-            padding: 1.5rem 1.25rem !important;
-            min-height: auto !important;
+            display: flex !important;
+            width: 82vw !important;
+            min-width: 260px !important;
+            max-width: 330px !important;
+            flex: 0 0 82vw !important;
+            scroll-snap-align: start !important;
+            padding: 1.5rem 1.35rem !important;
+            min-height: 290px !important;
             border-radius: 20px !important;
+            border-width: 2px !important;
+          }
+          .patient-quote-text {
+            font-size: 0.92rem !important;
+            line-height: 1.6 !important;
+            margin-bottom: 1.1rem !important;
+          }
+          .treatment-badge {
+            font-size: 0.76rem !important;
+            padding: 0.3rem 0.65rem !important;
+            border-radius: 8px !important;
+            margin-bottom: 0.65rem !important;
+          }
+          .patient-name {
+            font-size: 0.98rem !important;
+            line-height: 1.25 !important;
+          }
+          .patient-country {
+            font-size: 0.80rem !important;
+          }
+          .patient-card-star {
+            width: 16px !important;
+            height: 16px !important;
+          }
+          .patient-platform-logo {
+            max-height: 16px !important;
+            width: auto !important;
+          }
+          .patients-trust-badges {
+            display: flex !important;
+            flex-direction: row !important;
+            flex-wrap: nowrap !important;
+            gap: 0.4rem !important;
+            align-items: center !important;
+            width: 100% !important;
+          }
+          .patients-trust-badge {
+            padding: 0.28rem 0.45rem !important;
+            gap: 0.28rem !important;
+            flex: 0 0 auto !important;
+          }
+          .patients-trust-badge span {
+            font-size: 0.74rem !important;
+            white-space: nowrap !important;
           }
         }
-        .patient-card-white:hover {
-          transform: translateY(-6px);
-          border-color: #FFA552 !important;
-          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18) !important;
+        @media (hover: hover) and (min-width: 769px) {
+          .patient-card-white:hover {
+            transform: translateY(-6px);
+            border-color: #FFA552 !important;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18) !important;
+          }
+          .patient-nav-btn:hover {
+            transform: scale(1.08);
+            background-color: #FCDE9C !important;
+            border-color: #ffffff !important;
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2) !important;
+          }
         }
-        .patient-nav-btn:hover {
-          transform: scale(1.08);
-          background-color: #FCDE9C !important;
-          border-color: #ffffff !important;
-          box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2) !important;
+        @media (max-width: 768px) {
+          .patient-card-white:hover,
+          .patient-card-white:active {
+            transform: none !important;
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08) !important;
+            border-color: #FCDE9C !important;
+          }
+          .patient-nav-btn:hover,
+          .patient-nav-btn:active {
+            transform: none !important;
+          }
         }
       `}</style>
     </section>
