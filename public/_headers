@@ -1,0 +1,4 @@
+/*
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), compute-pressure=(self "https://www.youtube.com")
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
