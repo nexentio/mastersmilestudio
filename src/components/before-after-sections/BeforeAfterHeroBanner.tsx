@@ -45,7 +45,7 @@ const BEFORE_AFTER_HERO_DATA: Record<string, { title: string; subtitle: string }
 export default function BeforeAfterHeroBanner({
   customTitle,
   customSubtitle,
-  imageSrc = '/before-after/before-after-hero-bg.webp',
+  imageSrc = '/reviews-hero-panoramic.webp',
 }: BeforeAfterHeroBannerProps) {
   const locale = useLocale();
   const data = BEFORE_AFTER_HERO_DATA[locale] || BEFORE_AFTER_HERO_DATA.en;
