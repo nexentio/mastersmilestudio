@@ -958,17 +958,54 @@
   .compareDecisionBox {
     grid-template-columns: 1fr;
   }
-  .materialsGrid {
-    grid-template-columns: 1fr;
-  }
   .pkgGrid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
+@media (max-width: 860px) {
+  .materialsGrid {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    overflow-y: visible !important;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    gap: 1rem !important;
+    width: 100vw !important;
+    position: relative !important;
+    left: 50% !important;
+    right: 50% !important;
+    margin-left: -50vw !important;
+    margin-right: -50vw !important;
+    padding: 1.5rem 1.25rem 2rem 1.25rem !important;
+    scroll-padding-left: 1.25rem;
+    scroll-padding-right: 1.25rem;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    box-sizing: border-box !important;
+    margin-bottom: 2rem !important;
+  }
+
+  .materialsGrid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .materialCard {
+    flex: 0 0 calc(100vw - 3.75rem) !important;
+    width: calc(100vw - 3.75rem) !important;
+    min-width: calc(100vw - 3.75rem) !important;
+    max-width: none !important;
+    scroll-snap-align: start;
+    box-sizing: border-box !important;
+    margin-bottom: 0 !important;
+  }
+}
+
 @media (max-width: 768px) {
   .introSection {
-    padding: 3rem 0 1.5rem 0;
+    padding: 2.5rem 0 0 0;
   }
   .compareSection,
   .processSection,
