@@ -189,8 +189,8 @@ const DENTURES_I18N_DATA: Record<string, LocalizedText> = {
 
 const DENTURE_CASE_IMAGES = [
   '/treatments/accordion/full-mouth-implant.webp',
-  '/treatments/accordion/zirconium-implant-copy.webp',
-  '/treatments/accordion/porcelain-laminate-copy.webp',
+  '/treatments/accordion/zirconium-implant.webp',
+  '/treatments/accordion/porcelain-laminate.webp',
   '/treatments/accordion/lumineers.webp',
 ];
 

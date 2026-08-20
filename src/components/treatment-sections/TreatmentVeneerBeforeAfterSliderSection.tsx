@@ -188,8 +188,8 @@ const I18N_DATA: Record<string, LocalizedText> = {
 };
 
 const VENEER_CASE_IMAGES = [
-  '/treatments/accordion/porcelain-laminate-copy.webp',
-  '/treatments/accordion/e-max-laminate-copy.webp',
+  '/treatments/accordion/porcelain-laminate.webp',
+  '/treatments/accordion/e-max-laminate.webp',
   '/treatments/accordion/lumineers.webp',
   '/treatments/accordion/composite-laminate.webp',
 ];

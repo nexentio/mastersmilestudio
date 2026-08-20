@@ -163,7 +163,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Combination Makeover (E-Max Front + Zirconia Back)",
         "brand": "Swiss E-Max + German Zirconia",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/treatments/accordion/Porcelain-Crown-Package-2.jpg",
+        "img": "/packages/Porcelain-Crown-Package-2.jpg",
         "included": [
           "8-10 Anterior E-Max Crowns for ultimate aesthetics + Posterior Zirconia for bite strength",
           "Precision CAD/CAM digital margin adaptation",
@@ -412,7 +412,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Combination Makeover (E-Max Front + Zirconia Back)",
         "brand": "Swiss E-Max + German Zirconia",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/treatments/accordion/Porcelain-Crown-Package-2.jpg",
+        "img": "/packages/Porcelain-Crown-Package-2.jpg",
         "included": [
           "8-10 Anterior E-Max Crowns for ultimate aesthetics + Posterior Zirconia for bite strength",
           "Precision CAD/CAM digital margin adaptation",
@@ -661,7 +661,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Combination Makeover (E-Max Front + Zirconia Back)",
         "brand": "Swiss E-Max + German Zirconia",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/treatments/accordion/Porcelain-Crown-Package-2.jpg",
+        "img": "/packages/Porcelain-Crown-Package-2.jpg",
         "included": [
           "8-10 Anterior E-Max Crowns for ultimate aesthetics + Posterior Zirconia for bite strength",
           "Precision CAD/CAM digital margin adaptation",
@@ -910,7 +910,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Combination Makeover (E-Max Front + Zirconia Back)",
         "brand": "Swiss E-Max + German Zirconia",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/treatments/accordion/Porcelain-Crown-Package-2.jpg",
+        "img": "/packages/Porcelain-Crown-Package-2.jpg",
         "included": [
           "8-10 Anterior E-Max Crowns for ultimate aesthetics + Posterior Zirconia for bite strength",
           "Precision CAD/CAM digital margin adaptation",
@@ -1159,7 +1159,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Combination Makeover (E-Max Front + Zirconia Back)",
         "brand": "Swiss E-Max + German Zirconia",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/treatments/accordion/Porcelain-Crown-Package-2.jpg",
+        "img": "/packages/Porcelain-Crown-Package-2.jpg",
         "included": [
           "8-10 Anterior E-Max Crowns for ultimate aesthetics + Posterior Zirconia for bite strength",
           "Precision CAD/CAM digital margin adaptation",
@@ -1408,7 +1408,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Combination Makeover (E-Max Front + Zirconia Back)",
         "brand": "Swiss E-Max + German Zirconia",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/treatments/accordion/Porcelain-Crown-Package-2.jpg",
+        "img": "/packages/Porcelain-Crown-Package-2.jpg",
         "included": [
           "8-10 Anterior E-Max Crowns for ultimate aesthetics + Posterior Zirconia for bite strength",
           "Precision CAD/CAM digital margin adaptation",
@@ -1657,7 +1657,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Combination Makeover (E-Max Front + Zirconia Back)",
         "brand": "Swiss E-Max + German Zirconia",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/treatments/accordion/Porcelain-Crown-Package-2.jpg",
+        "img": "/packages/Porcelain-Crown-Package-2.jpg",
         "included": [
           "8-10 Anterior E-Max Crowns for ultimate aesthetics + Posterior Zirconia for bite strength",
           "Precision CAD/CAM digital margin adaptation",

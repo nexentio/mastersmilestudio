@@ -189,9 +189,9 @@ const GENERAL_I18N_DATA: Record<string, LocalizedText> = {
 
 const GENERAL_CASE_IMAGES = [
   '/treatments/accordion/lumineers.webp',
-  '/treatments/accordion/porcelain-laminate-copy.webp',
-  '/treatments/accordion/e-max-laminate-copy.webp',
-  '/treatments/accordion/zirconium-implant-copy.webp',
+  '/treatments/accordion/porcelain-laminate.webp',
+  '/treatments/accordion/e-max-laminate.webp',
+  '/treatments/accordion/zirconium-implant.webp',
 ];
 
 export default function TreatmentGeneralBeforeAfterSliderSection() {

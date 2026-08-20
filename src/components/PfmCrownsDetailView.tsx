@@ -64,7 +64,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Metal Porcelain (PFM) Crown",
         "brand": "German Medical Alloy + High-Fused Ceramic",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "/treatments/accordion/Porcelain-Crown-Package-1.jpg",
+        "img": "/packages/Porcelain-Crown-Package-1.jpg",
         "included": [
           "1x Genuine German PFM Crown (Medical Bio-Alloy + Ceramic)",
           "3D Digital Intraoral Scan & CAD/CAM Precision Core",
@@ -83,7 +83,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "10-Unit Posterior / Mixed Makeover (PFM)",
         "brand": "German Bio-Alloy + Vita Porcelain",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "/treatments/accordion/Porcelain-Crown-Package-2.jpg",
+        "img": "/packages/Porcelain-Crown-Package-2.jpg",
         "popular": true,
         "included": [
           "10x High-Strength Metal Porcelain Crowns (Full Chewing Arch)",
@@ -104,7 +104,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Mouth PFM Makeover",
         "brand": "High-Strength German PFM Ceramic",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/treatments/accordion/Porcelain-Crown-Package-3.jpg",
+        "img": "/packages/Porcelain-Crown-Package-3.jpg",
         "included": [
           "20x High-Durability Metal Porcelain Crowns (10 Upper + 10 Lower Arches)",
           "Comprehensive 3D CT Diagnostic Scan & Bite Balance Simulation",
@@ -163,7 +163,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Full Arch PFM Bridge on Implants (12–14 Units)",
         "brand": "Medical Grade Cr-Co + Vita Master Porcelain",
         "duration": "6 – 7 Days (Final Visit)",
-        "img": "/treatments/accordion/Porcelain-Crown-Package-1.jpg",
+        "img": "/packages/Porcelain-Crown-Package-1.jpg",
         "included": [
           "12 to 14-Unit One-Piece Screw-Retained Metal Porcelain Bridge",
           "Precision CAD/CAM titanium multi-unit abutment connection",
@@ -337,7 +337,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Metal Porcelain (PFM) Crown",
         "brand": "German Medical Alloy + High-Fused Ceramic",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "/treatments/accordion/Porcelain-Crown-Package-1.jpg",
+        "img": "/packages/Porcelain-Crown-Package-1.jpg",
         "included": [
           "1x Genuine German PFM Crown (Medical Bio-Alloy + Ceramic)",
           "3D Digital Intraoral Scan & CAD/CAM Precision Core",
@@ -356,7 +356,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "10-Unit Posterior / Mixed Makeover (PFM)",
         "brand": "German Bio-Alloy + Vita Porcelain",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "/treatments/accordion/Porcelain-Crown-Package-2.jpg",
+        "img": "/packages/Porcelain-Crown-Package-2.jpg",
         "popular": true,
         "included": [
           "10x High-Strength Metal Porcelain Crowns (Full Chewing Arch)",
@@ -377,7 +377,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Mouth PFM Makeover",
         "brand": "High-Strength German PFM Ceramic",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/treatments/accordion/Porcelain-Crown-Package-3.jpg",
+        "img": "/packages/Porcelain-Crown-Package-3.jpg",
         "included": [
           "20x High-Durability Metal Porcelain Crowns (10 Upper + 10 Lower Arches)",
           "Comprehensive 3D CT Diagnostic Scan & Bite Balance Simulation",
@@ -436,7 +436,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Full Arch PFM Bridge on Implants (12–14 Units)",
         "brand": "Medical Grade Cr-Co + Vita Master Porcelain",
         "duration": "6 – 7 Days (Final Visit)",
-        "img": "/treatments/accordion/Porcelain-Crown-Package-1.jpg",
+        "img": "/packages/Porcelain-Crown-Package-1.jpg",
         "included": [
           "12 to 14-Unit One-Piece Screw-Retained Metal Porcelain Bridge",
           "Precision CAD/CAM titanium multi-unit abutment connection",
@@ -610,7 +610,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Metal Porcelain (PFM) Crown",
         "brand": "German Medical Alloy + High-Fused Ceramic",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "/treatments/accordion/Porcelain-Crown-Package-1.jpg",
+        "img": "/packages/Porcelain-Crown-Package-1.jpg",
         "included": [
           "1x Genuine German PFM Crown (Medical Bio-Alloy + Ceramic)",
           "3D Digital Intraoral Scan & CAD/CAM Precision Core",
@@ -629,7 +629,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "10-Unit Posterior / Mixed Makeover (PFM)",
         "brand": "German Bio-Alloy + Vita Porcelain",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "/treatments/accordion/Porcelain-Crown-Package-2.jpg",
+        "img": "/packages/Porcelain-Crown-Package-2.jpg",
         "popular": true,
         "included": [
           "10x High-Strength Metal Porcelain Crowns (Full Chewing Arch)",
@@ -650,7 +650,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Mouth PFM Makeover",
         "brand": "High-Strength German PFM Ceramic",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/treatments/accordion/Porcelain-Crown-Package-3.jpg",
+        "img": "/packages/Porcelain-Crown-Package-3.jpg",
         "included": [
           "20x High-Durability Metal Porcelain Crowns (10 Upper + 10 Lower Arches)",
           "Comprehensive 3D CT Diagnostic Scan & Bite Balance Simulation",
@@ -709,7 +709,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Full Arch PFM Bridge on Implants (12–14 Units)",
         "brand": "Medical Grade Cr-Co + Vita Master Porcelain",
         "duration": "6 – 7 Days (Final Visit)",
-        "img": "/treatments/accordion/Porcelain-Crown-Package-1.jpg",
+        "img": "/packages/Porcelain-Crown-Package-1.jpg",
         "included": [
           "12 to 14-Unit One-Piece Screw-Retained Metal Porcelain Bridge",
           "Precision CAD/CAM titanium multi-unit abutment connection",
@@ -883,7 +883,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Metal Porcelain (PFM) Crown",
         "brand": "German Medical Alloy + High-Fused Ceramic",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "/treatments/accordion/Porcelain-Crown-Package-1.jpg",
+        "img": "/packages/Porcelain-Crown-Package-1.jpg",
         "included": [
           "1x Genuine German PFM Crown (Medical Bio-Alloy + Ceramic)",
           "3D Digital Intraoral Scan & CAD/CAM Precision Core",
@@ -902,7 +902,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "10-Unit Posterior / Mixed Makeover (PFM)",
         "brand": "German Bio-Alloy + Vita Porcelain",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "/treatments/accordion/Porcelain-Crown-Package-2.jpg",
+        "img": "/packages/Porcelain-Crown-Package-2.jpg",
         "popular": true,
         "included": [
           "10x High-Strength Metal Porcelain Crowns (Full Chewing Arch)",
@@ -923,7 +923,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Mouth PFM Makeover",
         "brand": "High-Strength German PFM Ceramic",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/treatments/accordion/Porcelain-Crown-Package-3.jpg",
+        "img": "/packages/Porcelain-Crown-Package-3.jpg",
         "included": [
           "20x High-Durability Metal Porcelain Crowns (10 Upper + 10 Lower Arches)",
           "Comprehensive 3D CT Diagnostic Scan & Bite Balance Simulation",
@@ -982,7 +982,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Full Arch PFM Bridge on Implants (12–14 Units)",
         "brand": "Medical Grade Cr-Co + Vita Master Porcelain",
         "duration": "6 – 7 Days (Final Visit)",
-        "img": "/treatments/accordion/Porcelain-Crown-Package-1.jpg",
+        "img": "/packages/Porcelain-Crown-Package-1.jpg",
         "included": [
           "12 to 14-Unit One-Piece Screw-Retained Metal Porcelain Bridge",
           "Precision CAD/CAM titanium multi-unit abutment connection",
@@ -1156,7 +1156,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Metal Porcelain (PFM) Crown",
         "brand": "German Medical Alloy + High-Fused Ceramic",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "/treatments/accordion/Porcelain-Crown-Package-1.jpg",
+        "img": "/packages/Porcelain-Crown-Package-1.jpg",
         "included": [
           "1x Genuine German PFM Crown (Medical Bio-Alloy + Ceramic)",
           "3D Digital Intraoral Scan & CAD/CAM Precision Core",
@@ -1175,7 +1175,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "10-Unit Posterior / Mixed Makeover (PFM)",
         "brand": "German Bio-Alloy + Vita Porcelain",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "/treatments/accordion/Porcelain-Crown-Package-2.jpg",
+        "img": "/packages/Porcelain-Crown-Package-2.jpg",
         "popular": true,
         "included": [
           "10x High-Strength Metal Porcelain Crowns (Full Chewing Arch)",
@@ -1196,7 +1196,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Mouth PFM Makeover",
         "brand": "High-Strength German PFM Ceramic",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/treatments/accordion/Porcelain-Crown-Package-3.jpg",
+        "img": "/packages/Porcelain-Crown-Package-3.jpg",
         "included": [
           "20x High-Durability Metal Porcelain Crowns (10 Upper + 10 Lower Arches)",
           "Comprehensive 3D CT Diagnostic Scan & Bite Balance Simulation",
@@ -1255,7 +1255,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Full Arch PFM Bridge on Implants (12–14 Units)",
         "brand": "Medical Grade Cr-Co + Vita Master Porcelain",
         "duration": "6 – 7 Days (Final Visit)",
-        "img": "/treatments/accordion/Porcelain-Crown-Package-1.jpg",
+        "img": "/packages/Porcelain-Crown-Package-1.jpg",
         "included": [
           "12 to 14-Unit One-Piece Screw-Retained Metal Porcelain Bridge",
           "Precision CAD/CAM titanium multi-unit abutment connection",
@@ -1429,7 +1429,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Metal Porcelain (PFM) Crown",
         "brand": "German Medical Alloy + High-Fused Ceramic",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "/treatments/accordion/Porcelain-Crown-Package-1.jpg",
+        "img": "/packages/Porcelain-Crown-Package-1.jpg",
         "included": [
           "1x Genuine German PFM Crown (Medical Bio-Alloy + Ceramic)",
           "3D Digital Intraoral Scan & CAD/CAM Precision Core",
@@ -1448,7 +1448,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "10-Unit Posterior / Mixed Makeover (PFM)",
         "brand": "German Bio-Alloy + Vita Porcelain",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "/treatments/accordion/Porcelain-Crown-Package-2.jpg",
+        "img": "/packages/Porcelain-Crown-Package-2.jpg",
         "popular": true,
         "included": [
           "10x High-Strength Metal Porcelain Crowns (Full Chewing Arch)",
@@ -1469,7 +1469,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Mouth PFM Makeover",
         "brand": "High-Strength German PFM Ceramic",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/treatments/accordion/Porcelain-Crown-Package-3.jpg",
+        "img": "/packages/Porcelain-Crown-Package-3.jpg",
         "included": [
           "20x High-Durability Metal Porcelain Crowns (10 Upper + 10 Lower Arches)",
           "Comprehensive 3D CT Diagnostic Scan & Bite Balance Simulation",
@@ -1528,7 +1528,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Full Arch PFM Bridge on Implants (12–14 Units)",
         "brand": "Medical Grade Cr-Co + Vita Master Porcelain",
         "duration": "6 – 7 Days (Final Visit)",
-        "img": "/treatments/accordion/Porcelain-Crown-Package-1.jpg",
+        "img": "/packages/Porcelain-Crown-Package-1.jpg",
         "included": [
           "12 to 14-Unit One-Piece Screw-Retained Metal Porcelain Bridge",
           "Precision CAD/CAM titanium multi-unit abutment connection",
@@ -1702,7 +1702,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Metal Porcelain (PFM) Crown",
         "brand": "German Medical Alloy + High-Fused Ceramic",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "/treatments/accordion/Porcelain-Crown-Package-1.jpg",
+        "img": "/packages/Porcelain-Crown-Package-1.jpg",
         "included": [
           "1x Genuine German PFM Crown (Medical Bio-Alloy + Ceramic)",
           "3D Digital Intraoral Scan & CAD/CAM Precision Core",
@@ -1721,7 +1721,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "10-Unit Posterior / Mixed Makeover (PFM)",
         "brand": "German Bio-Alloy + Vita Porcelain",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "/treatments/accordion/Porcelain-Crown-Package-2.jpg",
+        "img": "/packages/Porcelain-Crown-Package-2.jpg",
         "popular": true,
         "included": [
           "10x High-Strength Metal Porcelain Crowns (Full Chewing Arch)",
@@ -1742,7 +1742,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Mouth PFM Makeover",
         "brand": "High-Strength German PFM Ceramic",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/treatments/accordion/Porcelain-Crown-Package-3.jpg",
+        "img": "/packages/Porcelain-Crown-Package-3.jpg",
         "included": [
           "20x High-Durability Metal Porcelain Crowns (10 Upper + 10 Lower Arches)",
           "Comprehensive 3D CT Diagnostic Scan & Bite Balance Simulation",
@@ -1801,7 +1801,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Full Arch PFM Bridge on Implants (12–14 Units)",
         "brand": "Medical Grade Cr-Co + Vita Master Porcelain",
         "duration": "6 – 7 Days (Final Visit)",
-        "img": "/treatments/accordion/Porcelain-Crown-Package-1.jpg",
+        "img": "/packages/Porcelain-Crown-Package-1.jpg",
         "included": [
           "12 to 14-Unit One-Piece Screw-Retained Metal Porcelain Bridge",
           "Precision CAD/CAM titanium multi-unit abutment connection",

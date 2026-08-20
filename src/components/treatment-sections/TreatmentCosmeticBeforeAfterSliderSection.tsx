@@ -188,10 +188,10 @@ const COSMETIC_I18N_DATA: Record<string, LocalizedText> = {
 };
 
 const COSMETIC_CASE_IMAGES = [
-  '/treatments/accordion/e-max-laminate-copy.webp',
-  '/treatments/accordion/porcelain-laminate-copy.webp',
+  '/treatments/accordion/e-max-laminate.webp',
+  '/treatments/accordion/porcelain-laminate.webp',
   '/treatments/accordion/lumineers.webp',
-  '/treatments/accordion/zirconium-implant-copy.webp',
+  '/treatments/accordion/zirconium-implant.webp',
 ];
 
 export default function TreatmentCosmeticBeforeAfterSliderSection() {

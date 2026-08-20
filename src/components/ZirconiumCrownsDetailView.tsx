@@ -124,7 +124,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Swiss Ivoclar E-Max Crown",
         "brand": "Ivoclar Vivadent IPS e.max Press (Swiss)",
         "duration": "4 – 6 Days (1 Trip)",
-        "img": "/treatments/accordion/Porcelain-Crown-Package-1.jpg",
+        "img": "/packages/Porcelain-Crown-Package-1.jpg",
         "included": [
           "1x 100% Genuine Swiss Ivoclar Lithium Disilicate Crown/Veneer",
           "Unmatched 70% natural light transmission for anterior teeth",
@@ -143,7 +143,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Premium Ivoclar E-Max Hollywood Smile",
         "brand": "Ivoclar IPS e.max CAD / Press Master",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/treatments/accordion/Porcelain-Crown-Package-2.jpg",
+        "img": "/packages/Porcelain-Crown-Package-2.jpg",
         "included": [
           "20x Swiss Ivoclar IPS e.max Porcelain Crowns/Veneers (Full Hollywood Smile)",
           "3D Digital Facial Aesthetics & golden ratio smile planning",
@@ -163,7 +163,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Full Arch Zirconia Bridge on Implants",
         "brand": "Prettau / Katana Multi-Layer Zirconia (12–14 Units)",
         "duration": "6 – 7 Days (Final Visit)",
-        "img": "/treatments/accordion/Porcelain-Crown-Package-3.jpg",
+        "img": "/packages/Porcelain-Crown-Package-3.jpg",
         "included": [
           "12 to 14-Unit One-Piece Screw-Retained Monolithic Zirconia Bridge",
           "Precision CAD/CAM titanium multi-unit abutment connection",
@@ -397,7 +397,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Tek Diş İsviçre Ivoclar E-Max Kron",
         "brand": "Ivoclar Vivadent IPS e.max Press (İsviçre)",
         "duration": "4 – 6 Gün (Tek Ziyaret)",
-        "img": "/treatments/accordion/Porcelain-Crown-Package-1.jpg",
+        "img": "/packages/Porcelain-Crown-Package-1.jpg",
         "included": [
           "1x %100 Orijinal İsviçre Lityum Disilikat E-Max Kaplama/Lamina",
           "Ön dişler için %70 doğal ışık geçirgenliği ve saydamlık",
@@ -416,7 +416,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20 Üye Premium Ivoclar E-Max Hollywood Smile",
         "brand": "Ivoclar IPS e.max CAD / Press Master",
         "duration": "6 – 7 Gün (Tek Ziyaret)",
-        "img": "/treatments/accordion/Porcelain-Crown-Package-2.jpg",
+        "img": "/packages/Porcelain-Crown-Package-2.jpg",
         "included": [
           "20x İsviçre Ivoclar IPS e.max Porselen Kaplama (Tam Hollywood Gülüşü)",
           "3D Yüz Estetiği ve Altın Oran Dijital Gülüş Planlaması",
@@ -436,7 +436,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "İmplant Üstü Tam Çene Zirkonyum Köprü",
         "brand": "Prettau / Katana Multi-Layer Zirkonyum (12–14 Üye)",
         "duration": "6 – 7 Gün (Kalıcı Aşama)",
-        "img": "/treatments/accordion/Porcelain-Crown-Package-3.jpg",
+        "img": "/packages/Porcelain-Crown-Package-3.jpg",
         "included": [
           "12–14 Üyelik Tek Parça Vidalı Monolitik Zirkonyum İmplant Köprüsü",
           "CAD/CAM titanyum multi-unit abutment hassas bağlantı sistemi",
@@ -667,7 +667,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Einzelne Schweizer Ivoclar E-Max Krone",
         "brand": "Ivoclar Vivadent IPS e.max Press (Schweiz)",
         "duration": "4 – 6 Tage (1 Besuch)",
-        "img": "/treatments/accordion/Porcelain-Crown-Package-1.jpg",
+        "img": "/packages/Porcelain-Crown-Package-1.jpg",
         "included": [
           "1x 100% Original Schweizer Lithium-Disilikat Krone/Veneer",
           "Herausragende 70% Lichtdurchlässigkeit für Frontzähne",
@@ -686,7 +686,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20 Einheiten Ivoclar E-Max Hollywood Smile",
         "brand": "Ivoclar IPS e.max CAD / Press Master",
         "duration": "6 – 7 Tage (1 Besuch)",
-        "img": "/treatments/accordion/Porcelain-Crown-Package-2.jpg",
+        "img": "/packages/Porcelain-Crown-Package-2.jpg",
         "included": [
           "20x Schweizer Ivoclar IPS e.max Vollkeramikkronen/Veneers",
           "3D Gesichtsästhetik & Goldener Schnitt Smile-Planung",
@@ -706,7 +706,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Zirkonbrücke auf Implantaten (12–14 Einheiten)",
         "brand": "Prettau / Katana Multilayer Zirkon",
         "duration": "6 – 7 Tage (Abschlussbesuch)",
-        "img": "/treatments/accordion/Porcelain-Crown-Package-3.jpg",
+        "img": "/packages/Porcelain-Crown-Package-3.jpg",
         "included": [
           "Einteilige verschraubte Zirkonbrücke (12–14 Zähne)",
           "Präzise CAD/CAM Titan-Multi-Unit-Abutmentverbindung",
@@ -931,7 +931,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Pojedyncza Korona Szwajcarska Ivoclar E-Max",
         "brand": "Ivoclar Vivadent IPS e.max Press (Szwajcaria)",
         "duration": "4 – 6 Dni (1 Wizyta)",
-        "img": "/treatments/accordion/Porcelain-Crown-Package-1.jpg",
+        "img": "/packages/Porcelain-Crown-Package-1.jpg",
         "included": [
           "1x Oryginalna Korona/Licówka z Dwukrzemianu Litu Ivoclar",
           "Niezrównana przezierność 70% imitująca naturalne szkliwo",
@@ -950,7 +950,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20 Koron Ivoclar E-Max – Hollywood Smile",
         "brand": "Ivoclar IPS e.max CAD / Press Master",
         "duration": "6 – 7 Dni (1 Wizyta)",
-        "img": "/treatments/accordion/Porcelain-Crown-Package-2.jpg",
+        "img": "/packages/Porcelain-Crown-Package-2.jpg",
         "included": [
           "20x Szwajcarskie Korony/Licówki Porcelanowe Ivoclar IPS e.max",
           "Cyfrowy Projekt Estetyki Twarzy i Złotego Podziału Uśmiechu",
@@ -970,7 +970,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Pełnołukowy Most Cyrkonowy na Implantach (12–14 pkt)",
         "brand": "Prettau / Katana Multilayer Zirconia",
         "duration": "6 – 7 Dni (Etap Ostateczny)",
-        "img": "/treatments/accordion/Porcelain-Crown-Package-3.jpg",
+        "img": "/packages/Porcelain-Crown-Package-3.jpg",
         "included": [
           "Jednoczęściowy przykręcany most monolityczny (12–14 zębów)",
           "Precyzyjne tytanowe połączenie CAD/CAM multi-unit",
@@ -1195,7 +1195,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Coroa Individual Suíça Ivoclar E-Max",
         "brand": "Ivoclar Vivadent IPS e.max Press (Suíça)",
         "duration": "4 – 6 Dias (1 Viagem)",
-        "img": "/treatments/accordion/Porcelain-Crown-Package-1.jpg",
+        "img": "/packages/Porcelain-Crown-Package-1.jpg",
         "included": [
           "1x Coroa/Faceta 100% Dissilicato de Lítio Ivoclar Suíço",
           "70% de translucidez natural incomparável para dentes anteriores",
@@ -1214,7 +1214,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20 Unidades Ivoclar E-Max – Hollywood Smile",
         "brand": "Ivoclar IPS e.max CAD / Press Master",
         "duration": "6 – 7 Dias (1 Viagem)",
-        "img": "/treatments/accordion/Porcelain-Crown-Package-2.jpg",
+        "img": "/packages/Porcelain-Crown-Package-2.jpg",
         "included": [
           "20x Facetas/Coroas Cerâmicas Suíças Ivoclar IPS e.max",
           "Design 3D da Estética Facial e Proporção Áurea do Sorriso",
@@ -1234,7 +1234,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Ponte Fixa de Zircônia sobre Implantes (12–14 Dentes)",
         "brand": "Prettau / Katana Multicamadas Zircônia",
         "duration": "6 – 7 Dias (Etapa Final)",
-        "img": "/treatments/accordion/Porcelain-Crown-Package-3.jpg",
+        "img": "/packages/Porcelain-Crown-Package-3.jpg",
         "included": [
           "Ponte Monolítica Parafusada de Zircônia em Peça Única (12–14 dentes)",
           "Conexão multi-unit de titânio de alta precisão CAD/CAM",
@@ -1459,7 +1459,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Corona Individual Suiza Ivoclar E-Max",
         "brand": "Ivoclar Vivadent IPS e.max Press (Suiza)",
         "duration": "4 – 6 Días (1 Viaje)",
-        "img": "/treatments/accordion/Porcelain-Crown-Package-1.jpg",
+        "img": "/packages/Porcelain-Crown-Package-1.jpg",
         "included": [
           "1x Corona/Carilla 100% Disilicato de Litio Ivoclar Suizo",
           "70% de translucidez natural incomparable para dientes anteriores",
@@ -1478,7 +1478,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20 Unidades Ivoclar E-Max – Hollywood Smile",
         "brand": "Ivoclar IPS e.max CAD / Press Master",
         "duration": "6 – 7 Días (1 Viaje)",
-        "img": "/treatments/accordion/Porcelain-Crown-Package-2.jpg",
+        "img": "/packages/Porcelain-Crown-Package-2.jpg",
         "included": [
           "20x Carillas/Coronas Cerámicas Suizas Ivoclar IPS e.max",
           "Diseño 3D de Estética Facial y Proporción Áurea de Sonrisa",
@@ -1498,7 +1498,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Puente Fijo de Circonio sobre Implantes (12–14 Dientes)",
         "brand": "Prettau / Katana Multicapa Circonio",
         "duration": "6 – 7 Días (Etapa Final)",
-        "img": "/treatments/accordion/Porcelain-Crown-Package-3.jpg",
+        "img": "/packages/Porcelain-Crown-Package-3.jpg",
         "included": [
           "Puente Monolítico Atornillado de Circonio en una Sola Pieza (12–14 dientes)",
           "Conexión multi-unit de titanio de alta precisión CAD/CAM",
@@ -1723,7 +1723,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Одиночная Швейцарская Коронка Ivoclar E-Max",
         "brand": "Ivoclar Vivadent IPS e.max Press (Швейцария)",
         "duration": "4 – 6 Дней (1 Визит)",
-        "img": "/treatments/accordion/Porcelain-Crown-Package-1.jpg",
+        "img": "/packages/Porcelain-Crown-Package-1.jpg",
         "included": [
           "1x Коронка/Винир из 100% Швейцарского Дисиликата Лития",
           "Непревзойденная 70% светопроницаемость для передних зубов",
@@ -1742,7 +1742,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20 Коронок Ivoclar E-Max – Голливудская Улыбка",
         "brand": "Ivoclar IPS e.max CAD / Press Master",
         "duration": "6 – 7 Дней (1 Визит)",
-        "img": "/treatments/accordion/Porcelain-Crown-Package-2.jpg",
+        "img": "/packages/Porcelain-Crown-Package-2.jpg",
         "included": [
           "20x Швейцарских Керамических Коронок/Виниров Ivoclar IPS e.max",
           "3D Дизайн Эстетики Лица и Золотого Сечения Улыбки",
@@ -1762,7 +1762,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Циркониевый Мост на Имплантах (12–14 Единиц)",
         "brand": "Prettau / Katana Multilayer Zirconia",
         "duration": "6 – 7 Дней (Финальный Этап)",
-        "img": "/treatments/accordion/Porcelain-Crown-Package-3.jpg",
+        "img": "/packages/Porcelain-Crown-Package-3.jpg",
         "included": [
           "Цельный винтовой монолитный циркониевый мост (12–14 зубов)",
           "Прецизионное титановое соединение CAD/CAM multi-unit",
