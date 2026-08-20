@@ -220,7 +220,7 @@ export default function FaqMainSection() {
               <div className={styles.imSide}>
                 <Link href="/contact" aria-label="Free consultation" className={styles.imLink}>
                   <Image
-                    src="/contact-patients-grid.png"
+                    src="/mss-patients-montage.png"
                     alt="Master Smile Studio VIP Consultation"
                     fill
                     sizes="320px"

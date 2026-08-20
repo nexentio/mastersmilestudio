@@ -1197,7 +1197,7 @@ export const PRICE_GROUPS: PriceGroup[] = [
 export const PRICING_SIDEBAR_DATA = {
   consultation: {
     clinicName: 'Master Smile Studio',
-    imageSrc: '/contact-patients-grid.png',
+    imageSrc: '/mss-patients-montage.png',
     info: {
       en: 'Contact Us For Free Consultation & 3D Treatment Plan',
       tr: 'Ücretsiz Danışmanlık ve 3D Tedavi Planı İçin Bize Ulaşın',
