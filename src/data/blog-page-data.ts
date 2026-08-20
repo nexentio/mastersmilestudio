@@ -11,7 +11,7 @@ export interface BlogPost {
 export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'simon-cowell-teeth-before-and-after',
-    image: '/blog/simon-cowell-mss.webp',
+    image: '/blog/simon-cowell.jpg',
     category: 'celebrities-teeth',
     title: {
       en: 'Simon Cowell Teeth Before and After What Really Happened to His Smile',

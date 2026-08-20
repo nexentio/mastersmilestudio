@@ -65,7 +65,7 @@ export const BLOG_DETAIL_ARTICLES: Record<string, BlogDetailArticle> = {
   'simon-cowell-teeth-before-and-after': {
     slug: 'simon-cowell-teeth-before-and-after',
     category: 'celebrities-teeth',
-    image: '/blog/simon-cowell-mss.webp',
+    image: '/blog/simon-cowell.jpg',
     publishDate: '2026-07-20',
     readTime: '6 min read',
     author: AUTHOR_DATA,
