@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React from 'react';
 import { useLocale } from 'next-intl';
 import { Link } from '@/i18n/routing';
 import styles from './TreatmentVeneerPackagesSlider.module.css';
@@ -355,8 +355,6 @@ export default function TreatmentCosmeticPackagesSlider() {
   const dict = COSMETIC_PACKAGES_I18N[locale] || COSMETIC_PACKAGES_I18N.en;
   const p = dict.packages;
 
-  const [mobileIndex, setMobileIndex] = useState(0);
-
   const packagesList: PackageItem[] = [
     {
       name: p.pkg1Name,
@@ -393,21 +391,13 @@ export default function TreatmentCosmeticPackagesSlider() {
     },
   ];
 
-  const handlePrev = () => {
-    setMobileIndex((prev) => (prev > 0 ? prev - 1 : packagesList.length - 1));
-  };
-
-  const handleNext = () => {
-    setMobileIndex((prev) => (prev < packagesList.length - 1 ? prev + 1 : 0));
-  };
-
   return (
-    <section aria-labelledby="cosmetic-packages-heading" className={styles.wrapper}>
+    <section className={styles.wrapper}>
       <div className={styles.container}>
         {/* Header */}
         <div className={styles.head}>
           <span className={styles.badge}>{dict.badge}</span>
-          <h2 id="cosmetic-packages-heading" className={styles.title}>
+          <h2 className={styles.title}>
             {dict.title}
           </h2>
           <p className={styles.subtitle}>{dict.subtitle}</p>
@@ -448,96 +438,53 @@ export default function TreatmentCosmeticPackagesSlider() {
 
               <div className={styles.cardAction}>
                 <Link href="/contact" className={styles.ctaBtn}>
-                  {pkg.ctaText} →
+                  {pkg.ctaText}
                 </Link>
               </div>
             </article>
           ))}
         </div>
 
-        {/* Mobile 1-Card Carousel with Side Arrow Navigation */}
-        <div className={styles.mobileContainer}>
-          <div className={styles.mobileCardWrapper}>
-            <button
-              type="button"
-              onClick={handlePrev}
-              className={`${styles.sideArrowBtn} ${styles.sideArrowLeft}`}
-              aria-label="Previous cosmetic package"
-            >
-              ‹
-            </button>
+        {/* Mobile Horizontal Swipe Track */}
+        <div className={styles.mobileTrack}>
+          {packagesList.map((pkg, idx) => (
+            <article key={idx} className={styles.card}>
+              <div>
+                {pkg.badge && <span className={styles.cardBadge}>{pkg.badge}</span>}
+                <h3 className={styles.header}>{pkg.name}</h3>
 
-            <div className={styles.mobileCardInner}>
-              {(() => {
-                const pkg = packagesList[mobileIndex];
-                return (
-                  <article
-                    key={mobileIndex}
-                    className={`${styles.card} ${styles.fadeSlide}`}
-                  >
-                    <div>
-                      {pkg.badge && <span className={styles.cardBadge}>{pkg.badge}</span>}
-                      <h3 className={styles.header}>{pkg.name}</h3>
+                <div className={styles.imgWrap}>
+                  <img
+                    src={pkg.img}
+                    alt={pkg.imgAlt}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
 
-                      <div className={styles.imgWrap}>
-                        <img
-                          key={pkg.img}
-                          src={pkg.img}
-                          alt={pkg.imgAlt}
-                          loading="lazy"
-                          decoding="async"
-                          className={styles.imgFadeIn}
-                        />
-                      </div>
+                <div className={styles.duration}>
+                  <span className={styles.durationLabel}>{pkg.durationLabel}</span>
+                  <span className={styles.durationVal}>{pkg.durationVal}</span>
+                </div>
 
-                      <div className={styles.duration}>
-                        <span className={styles.durationLabel}>{pkg.durationLabel}</span>
-                        <span className={styles.durationVal}>{pkg.durationVal}</span>
-                      </div>
+                <div className={styles.featuresTitle}>{pkg.featuresTitle}</div>
+                <ul className={styles.featuresList}>
+                  {pkg.features.map((feat, fIdx) => (
+                    <li key={fIdx}>
+                      <span className={styles.checkIcon}>✓</span>
+                      <span>{feat}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
 
-                      <div className={styles.featuresTitle}>{pkg.featuresTitle}</div>
-                      <ul className={styles.featuresList}>
-                        {pkg.features.map((feat, fIdx) => (
-                          <li key={fIdx}>
-                            <span className={styles.checkIcon}>✓</span>
-                            <span>{feat}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-
-                    <div className={styles.cardAction}>
-                      <Link href="/contact" className={styles.ctaBtn}>
-                        {pkg.ctaText} →
-                      </Link>
-                    </div>
-                  </article>
-                );
-              })()}
-            </div>
-
-            <button
-              type="button"
-              onClick={handleNext}
-              className={`${styles.sideArrowBtn} ${styles.sideArrowRight}`}
-              aria-label="Next cosmetic package"
-            >
-              ›
-            </button>
-          </div>
-
-          {/* Dots */}
-          <div className={styles.mobileDots}>
-            {packagesList.map((_, dotIdx) => (
-              <button
-                key={dotIdx}
-                type="button"
-                onClick={() => setMobileIndex(dotIdx)}
-                aria-label={`Go to package ${dotIdx + 1}`}
-                className={`${styles.dot} ${mobileIndex === dotIdx ? styles.dotActive : styles.dotInactive}`}
-              />
-            ))}
-          </div>
+              <div className={styles.cardAction}>
+                <Link href="/contact" className={styles.ctaBtn}>
+                  {pkg.ctaText}
+                </Link>
+              </div>
+            </article>
+          ))}
         </div>
       </div>
     </section>
