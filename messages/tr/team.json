@@ -1,44 +1,41 @@
 {
   "title": "Uzman Kadromuz",
-  "subtitle": "Ağız ve diş sağlığınız için uluslararası standartlarda hizmet sunan, alanında uzman diş hekimi kadromuz ile tanışın.",
+  "subtitle": "Ağız ve diş sağlığınız için uluslararası standartlarda hizmet sunan, alanında uzman hekim ve profesyonel ekibimiz ile tanışın.",
   "doc1": {
-    "title": "Protez Uzmanı & Gülüş Tasarımcısı",
-    "experience": "14+ Yıl Deneyim",
-    "bio": "Antalya Üniversitesi Diş Hekimliği Fakültesi’nden dereceyle mezun olan Dr. Fırat İskender, Protetik Diş Tedavisi alanında uzmanlaşmıştır. Dijital gülüş tasarımı ve seramik restorasyonlarda 14 yılı aşkın tecrübeye sahiptir."
+    "title": "Çene Cerrahisi Uzmanı",
+    "experience": "Çene Cerrahisi & İmplantoloji",
+    "bio": "Hacettepe ve Antalya Diş Hekimliği kökenli Dt. Fırat İskender, All-on-4 / All-on-6 tam çene implant cerrahisi ve ileri kemik ogmentasyonu alanında uzmanlaşmıştır."
   },
   "doc2": {
-    "title": "Gülüş Tasarımı & Estetik Uzmanı",
-    "experience": "12+ Yıl Deneyim",
-    "bio": "Ankara Üniversitesi Diş Hekimliği mezunu Dr. Tülay Kaya, lamine veneer ve estetik gülüş tasarımlarında 12 yılı aşkın tecrübeye sahiptir."
+    "title": "Almanca Satış Uzmanı",
+    "experience": "Almanca Müşteri İletişimi",
+    "bio": "Almanya, Avusturya ve İsviçre’den gelen misafirlerimizin ana dillerinde konsültasyon, tedavi planlaması ve seyahat süreçlerini yürütmektedir."
   },
   "doc3": {
-    "title": "Ortodonti Uzmanı",
-    "experience": "10+ Yıl Deneyim",
-    "bio": "Ege Üniversitesi mezunu olan Dr. Ali Kemal Demir, şeffaf plaklar (Invisalign) ve dijital çene hizalama sistemlerinde uzmanlaşmıştır."
+    "title": "Koordinatör",
+    "experience": "Proje Koordinasyonu",
+    "bio": "Master Smile Studio bünyesinde uluslararası hasta operasyonları, tedavi takvimleri ve VIP organizasyon süreçlerini koordine etmektedir."
   },
   "doc4": {
-    "title": "Ağız, Diş ve Çene Cerrahı",
-    "experience": "16+ Yıl Deneyim",
-    "bio": "Hacettepe Üniversitesi Diş Hekimliği Fakültesi mezunu olan Dr. Ozan Öztürk, All-on-4 / All-on-6 tam çene implant tedavileri ve ileri cerrahi operasyonlarda 16 yılı aşkın deneyime sahiptir."
+    "title": "Protez Diş Uzmanı",
+    "experience": "Protetik Diş Tedavisi & Estetik",
+    "bio": "Dr. Ozan Öztürk, zirkonyum kronlar, porselen lamine kaplamalar ve dijital gülüş tasarımı alanında geniş klinik tecrübeye sahiptir."
   },
   "doc5": {
-    "title": "Restoratif & Kozmetik Diş Hekimi",
-    "experience": "9+ Yıl Deneyim",
-    "bio": "Uluslararası eğitimli Dr. Julia Rostova, kompozit bonding, diş beyazlatma ve mikroskop destekli estetik restorasyonlarda uzmandır."
+    "title": "Lehçe Satış Uzmanı",
+    "experience": "Lehçe Müşteri İletişimi",
+    "bio": "Polonya’dan gelen hastalarımızın tıbbi danışmanlık, transfer ve klinik süreçlerini ana dillerinde eksiksiz olarak yönetmektedir."
   },
   "doc6": {
-    "title": "Endodonti & Konservatif Tedavi",
-    "experience": "11+ Yıl Deneyim",
-    "bio": "Gazi Üniversitesi mezunu Dr. Abdullah Yılmaz, mikroskopik kanal tedavileri ve diş kurtarma tedavilerinde 11 yıllık uzmanlığa sahiptir."
+    "title": "Rusça Satış Uzmanı",
+    "experience": "Rusça Müşteri İletişimi",
+    "bio": "Rusya ve BDT ülkelerinden gelen misafirlerimize tedavi planlaması, VIP konaklama ve klinik rehberlik hizmeti sunmaktadır."
   },
   "doc7": {
-    "title": "Periodontoloji & Pembe Estetik",
-    "experience": "8+ Yıl Deneyim",
-    "bio": "Dr. Selin Aksoy, lazer destekli diş eti şekillendirme ve pembe estetik alanında 8 yıllık tecrübeye sahiptir."
+    "title": "Resepsiyonist",
+    "experience": "Müşteri Hizmetleri",
+    "bio": "Kliniğimizde misafirlerimizin karşılanması, randevu koordinasyonu ve beş yıldızlı hasta deneyimini organize etmektedir."
   },
-  "doc8": {
-    "title": "Pedodonti & Çocuk Diş Hekimi",
-    "experience": "9+ Yıl Deneyim",
-    "bio": "Dr. Burak Çelik, çocuk diş hekimliği ve koruyucu ortodontik tedavilerde uzmandır."
-  }
+  "getConsultation": "Danışmanlık Al",
+  "viewProfile": "Profili Görüntüle"
 }

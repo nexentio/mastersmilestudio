@@ -1,44 +1,41 @@
 {
-  "title": "Nasz Zespół Specjalistów",
-  "subtitle": "Poznaj nasz zespół lekarzy stomatologów świadczących usługi zgodnie z najwyższymi międzynarodowymi standardami.",
+  "title": "Nasz Zespół Ekspertów",
+  "subtitle": "Poznaj nasz doświadczony zespół chirurgów stomatologicznych, protetyków i wielojęzycznych koordynatorów pacjentów.",
   "doc1": {
-    "title": "Protetyk & Projektant Uśmiechu",
-    "experience": "Ponad 14 Lat Doświadczenia",
-    "bio": "Dr Fırat İskender specjalizuje się w protetyce stomatologicznej, cyfrowej architekturze uśmiechu oraz odbudowie ceramicznej."
+    "title": "Chirurg Szczękowo-Twarzowy",
+    "experience": "Chirurgia Szczękowa i Implantologia",
+    "bio": "Lek. stom. Fırat İskender specjalizuje się w zaawansowanej chirurgii implantologicznej All-on-4 / All-on-6 oraz odbudowie kości."
   },
   "doc2": {
-    "title": "Specjalistka Stomatologii Estetycznej",
-    "experience": "Ponad 12 Lat Doświadczenia",
-    "bio": "Dr Tülay Kaya specjalizuje się w licówkach porcelanowych i kompleksowej metamorfozie uśmiechu z ponad 12-letnim doświadczeniem."
+    "title": "Specjalista ds. Sprzedaży Niemieckojęzycznej",
+    "experience": "Obsługa Pacjentów w Języku Niemieckim",
+    "bio": "Prowadzi konsultacje i koordynację pobytu w języku niemieckim dla pacjentów z Niemiec, Austrii i Szwajcarii."
   },
   "doc3": {
-    "title": "Specjalista Ortodonta",
-    "experience": "Ponad 10 Lat Doświadczenia",
-    "bio": "Dr Ali Kemal Demir jest międzynarodowo certyfikowanym ekspertem w zakresie niewidocznych nakładek (Invisalign) i cyfrowego leczenia wad zgryzu."
+    "title": "Koordynator",
+    "experience": "Koordynacja Projektu",
+    "bio": "Zarządza operacjami opieki nad pacjentami, grafikami zabiegów i logistyką VIP w Master Smile Studio."
   },
   "doc4": {
-    "title": "Chirurg Szczękowo-Twarzowy & Implantolog",
-    "experience": "Ponad 16 Lat Doświadczenia",
-    "bio": "Dr Ozan Öztürk posiada ponad 16 lat doświadczenia chirurgicznego w pełnołukowych implantacjach All-on-4 / All-on-6."
+    "title": "Protetyk i Stomatolog Estetyczny",
+    "experience": "Protetyka i Estetyka Uśmiechu",
+    "bio": "Dr Ozan Öztürk jest ekspertem w dziedzinie protetyki stomatologicznej, koron cyrkonowych i cyfrowego projektowania uśmiechu."
   },
   "doc5": {
-    "title": "Lekarz Stomatologii Estetycznej",
-    "experience": "Ponad 9 Lat Doświadczenia",
-    "bio": "Dr Julia Rostova specjalizuje się w bondingu kompozytowym, wybielaniu zębów i estetycznych odbudowach pod mikroskopem."
+    "title": "Specjalista ds. Sprzedaży na Rynek Polski",
+    "experience": "Obsługa Pacjentów w Języku Polskim",
+    "bio": "Prowadzi kompleksowe konsultacje, planowanie leczenia i pełną opiekę w języku polskim dla pacjentów z Polski."
   },
   "doc6": {
-    "title": "Specjalista Endodoncji",
-    "experience": "Ponad 11 Lat Doświadczenia",
-    "bio": "Dr Abdullah Yılmaz specjalizuje się w mikroskopowym leczeniu kanałowym i zaawansowanym ratowaniu zębów własnych."
+    "title": "Specjalista ds. Sprzedaży na Rynek Rosyjskojęzyczny",
+    "experience": "Obsługa Pacjentów w Języku Rosyjskim",
+    "bio": "Zapewnia profesjonalne doradztwo medyczne i organizację podróży w języku rosyjskim dla gości z Europy Wschodniej."
   },
   "doc7": {
-    "title": "Periodontolog & Różowa Estetyka",
-    "experience": "Ponad 8 Lat Doświadczenia",
-    "bio": "Dr Selin Aksoy specjalizuje się w laserowej plastyce dziąseł i zabiegach mikrochirurgii przyzębia."
+    "title": "Recepcjonistka",
+    "experience": "Obsługa Klienta i Recepcja",
+    "bio": "Wita pacjentów w klinice i czuwa nad nienaganną organizacją wizyt oraz komfortem pobytu."
   },
-  "doc8": {
-    "title": "Stomatolog Dziecięcy (Pedodonta)",
-    "experience": "Ponad 9 Lat Doświadczenia",
-    "bio": "Dr Burak Çelik specjalizuje się w stomatologii dziecięcej, profilaktyce i bezstresowym leczeniu adaptacyjnym."
-  }
+  "getConsultation": "Umów Konsultację",
+  "viewProfile": "Zobacz Profil"
 }

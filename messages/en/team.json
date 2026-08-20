@@ -1,44 +1,41 @@
 {
   "title": "Our Expert Team",
-  "subtitle": "Meet our specialized team of dentists providing international standard oral and dental health services.",
+  "subtitle": "Meet our dedicated multidisciplinary team of dental surgeons, specialists, and multilingual patient coordinators.",
   "doc1": {
-    "title": "Prosthodontist & Smile Designer",
-    "experience": "14+ Years Experience",
-    "bio": "Graduated with honors from Antalya University Faculty of Dentistry, Dr. Fırat İskender specializes in Prosthodontics, digital smile architecture, and ceramic restorations."
+    "title": "Oral & Maxillofacial Surgeon",
+    "experience": "Oral Surgery & Implantology",
+    "bio": "Dt. Fırat İskender specializes in advanced oral & maxillofacial surgery, All-on-4 / All-on-6 full arch restorations, and bone grafting."
   },
   "doc2": {
-    "title": "Smile Design & Aesthetic Specialist",
-    "experience": "12+ Years Experience",
-    "bio": "Dr. Tülay Kaya specializes in porcelain laminate veneers and smile makeovers with over 12 years of clinical expertise."
+    "title": "German Sales Specialist",
+    "experience": "German Patient Relations",
+    "bio": "Provides native German consultation, treatment scheduling, and VIP travel planning for guests from Germany, Austria, and Switzerland."
   },
   "doc3": {
-    "title": "Orthodontics Specialist",
-    "experience": "10+ Years Experience",
-    "bio": "Dr. Ali Kemal Demir is an internationally certified orthodontist specializing in Invisalign clear aligners and digital jaw alignment."
+    "title": "Coordinator",
+    "experience": "Project Coordination",
+    "bio": "Manages overall patient coordination, clinical scheduling, and seamless international health tourism operations at Master Smile Studio."
   },
   "doc4": {
-    "title": "Oral & Maxillofacial Surgeon",
-    "experience": "16+ Years Experience",
-    "bio": "Dr. Ozan Öztürk has over 16 years of surgical excellence in All-on-4 / All-on-6 full arch dental implants and complex bone augmentations."
+    "title": "Prosthodontist & Aesthetic Dentist",
+    "experience": "Prosthodontics & Smile Aesthetics",
+    "bio": "Dr. Ozan Öztürk specializes in high-precision prosthetic dentistry, monolithic zirconia restorations, and digital smile makeovers."
   },
   "doc5": {
-    "title": "Restorative & Cosmetic Dentist",
-    "experience": "9+ Years Experience",
-    "bio": "Dr. Julia Rostova is dedicated to composite bonding, teeth whitening, and microscope-assisted aesthetic restorations."
+    "title": "Polish Sales Specialist",
+    "experience": "Polish Patient Relations",
+    "bio": "Leads dedicated medical consultations, case planning, and full concierge support in Polish for our patients traveling from Poland."
   },
   "doc6": {
-    "title": "Endodontics & Conservative Specialist",
-    "experience": "11+ Years Experience",
-    "bio": "Dr. Abdullah Yılmaz specializes in microscope-guided root canal therapies and advanced tooth preservation."
+    "title": "Russian Sales Specialist",
+    "experience": "Russian Patient Relations",
+    "bio": "Provides comprehensive native Russian clinical guidance, treatment planning, and personalized coordination for guests from Russia and CIS."
   },
   "doc7": {
-    "title": "Periodontology & Pink Aesthetics",
-    "experience": "8+ Years Experience",
-    "bio": "Dr. Selin Aksoy specializes in laser-assisted gum contouring, gingivoplasty, and periodontal health."
+    "title": "Receptionist",
+    "experience": "Customer Care & Front Desk",
+    "bio": "Warmly welcomes guests at Master Smile Studio, coordinating on-site appointment flow and ensuring five-star patient comfort."
   },
-  "doc8": {
-    "title": "Pediatric Dentist",
-    "experience": "9+ Years Experience",
-    "bio": "Dr. Burak Çelik specializes in pediatric oral health, preventive dentistry, and early orthodontic interventions."
-  }
+  "getConsultation": "Book Consultation",
+  "viewProfile": "View Profile"
 }

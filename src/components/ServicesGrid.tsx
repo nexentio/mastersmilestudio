@@ -78,14 +78,14 @@ export default function ServicesGrid() {
             flexWrap: 'wrap',
           }}
         >
-          <div style={{ flex: '1 1 300px' }}>
+          <div style={{ flex: '1 1 340px' }}>
             <h2
               style={{
-                fontSize: 'clamp(1.85rem, 4.5vw, 3.25rem)',
-                fontWeight: 400,
-                color: '#0f172a',
-                letterSpacing: '-0.03em',
-                lineHeight: 1.1,
+                fontSize: 'clamp(2rem, 3.8vw, 3rem)',
+                fontWeight: 600,
+                color: '#0c1b4d',
+                letterSpacing: '-0.025em',
+                lineHeight: 1.15,
                 margin: 0,
               }}
             >
@@ -93,12 +93,12 @@ export default function ServicesGrid() {
             </h2>
           </div>
 
-          <div style={{ flex: '1 1 360px', maxWidth: '520px' }}>
+          <div style={{ flex: '1 1 380px', maxWidth: '580px' }}>
             <p
               style={{
-                fontSize: 'clamp(0.95rem, 1.5vw, 1.05rem)',
+                fontSize: 'clamp(0.95rem, 1.4vw, 1.05rem)',
                 color: '#475569',
-                lineHeight: 1.65,
+                lineHeight: 1.7,
                 margin: 0,
                 fontWeight: 450,
               }}
@@ -192,7 +192,16 @@ export default function ServicesGrid() {
             scroll-snap-type: x mandatory !important;
             -webkit-overflow-scrolling: touch !important;
             gap: 1rem !important;
-            padding: 0.5rem 0.25rem 1.25rem 0.25rem !important;
+            width: 100vw !important;
+            position: relative !important;
+            left: 50% !important;
+            right: 50% !important;
+            margin-left: -50vw !important;
+            margin-right: -50vw !important;
+            padding-left: 1.5rem !important;
+            padding-right: 1.5rem !important;
+            padding-bottom: 1.25rem !important;
+            padding-top: 0.5rem !important;
             justify-content: flex-start !important;
             scrollbar-width: none !important;
             -ms-overflow-style: none !important;
@@ -201,9 +210,10 @@ export default function ServicesGrid() {
             display: none !important;
           }
           .services-3-col-grid .service-square-card-light {
-            width: 82vw !important;
-            max-width: 310px !important;
-            flex: 0 0 82vw !important;
+            width: 68vw !important;
+            max-width: 270px !important;
+            min-width: 230px !important;
+            flex: 0 0 68vw !important;
             aspect-ratio: 4 / 5 !important;
             scroll-snap-align: start !important;
             border-radius: 20px !important;
@@ -212,7 +222,7 @@ export default function ServicesGrid() {
             border-radius: 20px !important;
           }
           .service-square-card-light .text {
-            padding: 1rem 1.15rem !important;
+            padding: 1.1rem 1.25rem !important;
             border-radius: 0 0 20px 20px !important;
           }
           .service-square-card-light .text1 {

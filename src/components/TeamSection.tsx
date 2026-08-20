@@ -193,7 +193,7 @@ export default function TeamSection() {
                   position: 'relative',
                   overflow: 'hidden',
                 }}
-                className="stadium-doctor-card"
+                className={`stadium-doctor-card ${member.docKey === 'doc4' ? 'team-card-ozan' : ''}`}
               >
                 {/* Top Text Portion: Name & Title */}
                 <div
@@ -329,12 +329,51 @@ export default function TeamSection() {
                 fontSize: '1.05rem',
                 color: '#cbd5e1',
                 lineHeight: 1.75,
-                margin: 0,
+                margin: '0 0 1.5rem 0',
                 fontWeight: 300,
               }}
             >
               {t(`${selectedMember.docKey}.bio` as any)}
             </p>
+
+            <div style={{ display: 'flex', gap: '0.85rem', flexWrap: 'wrap' }}>
+              <a
+                href="#contact"
+                style={{
+                  backgroundColor: '#d58936',
+                  color: '#ffffff',
+                  fontWeight: 600,
+                  fontSize: '0.88rem',
+                  padding: '0.65rem 1.35rem',
+                  borderRadius: '9999px',
+                  textDecoration: 'none',
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '0.4rem',
+                  transition: 'all 0.2s ease',
+                }}
+              >
+                {t('getConsultation' as any) || 'Book Consultation'} →
+              </a>
+              <a
+                href="#contact"
+                style={{
+                  backgroundColor: 'rgba(255, 255, 255, 0.08)',
+                  color: '#f8fafc',
+                  border: '1px solid rgba(255, 255, 255, 0.15)',
+                  fontWeight: 500,
+                  fontSize: '0.88rem',
+                  padding: '0.65rem 1.25rem',
+                  borderRadius: '9999px',
+                  textDecoration: 'none',
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  transition: 'all 0.2s ease',
+                }}
+              >
+                {t('viewProfile' as any) || 'View Profile'}
+              </a>
+            </div>
           </div>
         </div>
       )}
@@ -345,6 +384,11 @@ export default function TeamSection() {
         }
         .stadium-doctor-card:hover {
           filter: brightness(1.02);
+        }
+        @media (max-width: 768px) {
+          .team-card-ozan {
+            order: -1 !important;
+          }
         }
         @keyframes fadeIn {
           from { opacity: 0; transform: translateY(10px); }

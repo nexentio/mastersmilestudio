@@ -154,21 +154,21 @@ export default function RealPatientsSection() {
         <div
           style={{
             display: 'flex',
-            alignItems: 'flex-start',
+            alignItems: 'flex-end',
             justifyContent: 'space-between',
-            gap: '2.5rem',
-            marginBottom: '2rem',
+            gap: '2rem',
+            marginBottom: 'clamp(2.5rem, 5vw, 4.5rem)',
             flexWrap: 'wrap',
           }}
         >
-          <div style={{ flex: '1 1 380px' }}>
+          <div style={{ flex: '1 1 340px' }}>
             <h2
               style={{
-                fontSize: '3.5rem',
-                fontWeight: 850,
-                color: '#0b132b',
-                letterSpacing: '-0.035em',
-                lineHeight: 1.1,
+                fontSize: 'clamp(2rem, 3.8vw, 3rem)',
+                fontWeight: 600,
+                color: '#0c1b4d',
+                letterSpacing: '-0.025em',
+                lineHeight: 1.15,
                 margin: 0,
               }}
             >
@@ -176,12 +176,12 @@ export default function RealPatientsSection() {
             </h2>
           </div>
 
-          <div style={{ flex: '1 1 380px', maxWidth: '540px' }}>
+          <div style={{ flex: '1 1 380px', maxWidth: '580px' }}>
             <p
               style={{
-                fontSize: '1.05rem',
+                fontSize: 'clamp(0.95rem, 1.4vw, 1.05rem)',
                 color: '#475569',
-                lineHeight: 1.65,
+                lineHeight: 1.7,
                 margin: 0,
                 fontWeight: 450,
               }}
@@ -614,12 +614,35 @@ export default function RealPatientsSection() {
         }
         @media (max-width: 768px) {
           .real-patients-grid {
-            grid-template-columns: repeat(2, 1fr) !important;
+            display: flex !important;
+            flex-wrap: nowrap !important;
+            overflow-x: auto !important;
+            scroll-snap-type: x mandatory !important;
+            -webkit-overflow-scrolling: touch !important;
+            gap: 10px !important;
+            width: 100vw !important;
+            position: relative !important;
+            left: 50% !important;
+            right: 50% !important;
+            margin-left: -50vw !important;
+            margin-right: -50vw !important;
+            padding-left: 1.5rem !important;
+            padding-right: 1.5rem !important;
+            padding-bottom: 1rem !important;
+            justify-content: flex-start !important;
+            scrollbar-width: none !important;
+            -ms-overflow-style: none !important;
           }
-        }
-        @media (max-width: 480px) {
-          .real-patients-grid {
-            grid-template-columns: 1fr !important;
+          .real-patients-grid::-webkit-scrollbar {
+            display: none !important;
+          }
+          .real-patients-grid .real-patient-card {
+            width: 68vw !important;
+            max-width: 270px !important;
+            min-width: 230px !important;
+            flex: 0 0 68vw !important;
+            height: 420px !important;
+            scroll-snap-align: start !important;
           }
         }
         .real-patient-card {

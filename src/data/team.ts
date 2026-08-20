@@ -14,8 +14,8 @@ export const TEAM_MEMBERS: TeamMemberConfig[] = [
   {
     id: 1,
     docKey: 'doc1',
-    name: 'Dr. Fırat İskender',
-    image: '/team/firat-iskenderr.webp',
+    name: 'Dt. Fırat İskender',
+    image: '/team/firat-iskender.webp',
     pastelBg: '#FEF3C7',
     textColor: '#0f172a',
     subColor: '#475569',
@@ -25,7 +25,7 @@ export const TEAM_MEMBERS: TeamMemberConfig[] = [
   {
     id: 2,
     docKey: 'doc2',
-    name: 'Dr. Tülay Kaya',
+    name: 'Tülay',
     image: '/team/tulay.webp',
     pastelBg: '#F5F5F7',
     textColor: '#0f172a',
@@ -36,7 +36,7 @@ export const TEAM_MEMBERS: TeamMemberConfig[] = [
   {
     id: 3,
     docKey: 'doc3',
-    name: 'Dr. Ali Kemal Demir',
+    name: 'Ali Kemal',
     image: '/team/ali-kemal.webp',
     pastelBg: '#E0E7FF',
     textColor: '#0f172a',
@@ -48,7 +48,7 @@ export const TEAM_MEMBERS: TeamMemberConfig[] = [
     id: 4,
     docKey: 'doc4',
     name: 'Dr. Ozan Öztürk',
-    image: '/team/dr-ozan-ozturk.jpg',
+    image: '/team/ozan-ozturk.webp',
     pastelBg: '#FFEDD5',
     textColor: '#0f172a',
     subColor: '#475569',
@@ -58,7 +58,7 @@ export const TEAM_MEMBERS: TeamMemberConfig[] = [
   {
     id: 5,
     docKey: 'doc5',
-    name: 'Dr. Julia Rostova',
+    name: 'Julia',
     image: '/team/julia.webp',
     pastelBg: '#D1FAE5',
     textColor: '#0f172a',
@@ -69,7 +69,7 @@ export const TEAM_MEMBERS: TeamMemberConfig[] = [
   {
     id: 6,
     docKey: 'doc6',
-    name: 'Dr. Abdullah Yılmaz',
+    name: 'Abdullah',
     image: '/team/abdullah.webp',
     pastelBg: '#E0F2FE',
     textColor: '#0f172a',
@@ -80,7 +80,7 @@ export const TEAM_MEMBERS: TeamMemberConfig[] = [
   {
     id: 7,
     docKey: 'doc7',
-    name: 'Dt. Sude Demir',
+    name: 'Sude',
     image: '/team/sude.webp',
     pastelBg: '#FCE7F3',
     textColor: '#0f172a',

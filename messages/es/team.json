@@ -1,44 +1,41 @@
 {
   "title": "Nuestro Equipo de Especialistas",
-  "subtitle": "Conozca a nuestro equipo de odontólogos especialistas que brindan atención de estándar internacional.",
+  "subtitle": "Conozca a nuestro equipo médico multidisciplinar y a nuestros coordinadores internacionales de pacientes.",
   "doc1": {
-    "title": "Prostodoncista & Diseñador de Sonrisas",
-    "experience": "14+ Años de Experiencia",
-    "bio": "Graduado con honores, el Dr. Fırat İskender es especialista en prostodoncia, arquitectura digital de sonrisa y restauraciones cerámicas."
+    "title": "Cirujano Maxilofacial",
+    "experience": "Cirugía Oral e Implantología",
+    "bio": "Dt. Fırat İskender es especialista en cirugía maxilofacial avanzada, implantes All-on-4 / All-on-6 y regeneración ósea."
   },
   "doc2": {
-    "title": "Especialista en Diseño de Sonrisa y Estética",
-    "experience": "12+ Años de Experiencia",
-    "bio": "La Dra. Tülay Kaya se especializa en carillas laminadas de porcelana y diseño de sonrisas con más de 12 años de experiencia."
+    "title": "Especialista en Ventas para el Mercado Alemán",
+    "experience": "Atención al Paciente en Alemán",
+    "bio": "Brinda asesoramiento médico y gestión de viajes en alemán para pacientes de Alemania, Austria y Suiza."
   },
   "doc3": {
-    "title": "Especialista en Ortodoncia",
-    "experience": "10+ Años de Experiencia",
-    "bio": "El Dr. Ali Kemal Demir es especialista certificado internacionalmente en alineadores invisibles (Invisalign) y armonización mandibular."
+    "title": "Coordinador",
+    "experience": "Coordinación de Proyectos",
+    "bio": "Gestiona la coordinación general de pacientes, agendas de tratamiento y logística VIP en Master Smile Studio."
   },
   "doc4": {
-    "title": "Cirujano Oral y Maxilofacial",
-    "experience": "16+ Años de Experiencia",
-    "bio": "El Dr. Ozan Öztürk cuenta con más de 16 años de experiencia en implantes All-on-4 / All-on-6 y cirugías complejas."
+    "title": "Especialista en Prótesis y Estética Dental",
+    "experience": "Prótesis y Estética Dental",
+    "bio": "Dr. Ozan Öztürk está especializado en prótesis fija de alta precisión, coronas de circonio y diseño de sonrisa."
   },
   "doc5": {
-    "title": "Odontóloga Restauradora y Cosmética",
-    "experience": "9+ Años de Experiencia",
-    "bio": "La Dra. Julia Rostova se dedica al bonding estético, blanqueamiento y restauraciones dentales asistidas por microscopio."
+    "title": "Especialista en Ventas para el Mercado Polaco",
+    "experience": "Atención al Paciente en Polaco",
+    "bio": "Coordina la atención médica personalizada y la estancia en idioma polaco para pacientes de Polonia."
   },
   "doc6": {
-    "title": "Especialista en Endodoncia",
-    "experience": "11+ Años de Experiencia",
-    "bio": "El Dr. Abdullah Yılmaz es especialista en tratamientos de conducto guiados por microscopio y preservación dental avanzada."
+    "title": "Especialista en Ventas para el Mercado Ruso",
+    "experience": "Atención al Paciente en Ruso",
+    "bio": "Ofrece asesoramiento clínico y atención integral en ruso a pacientes de Rusia y países de la CEI."
   },
   "doc7": {
-    "title": "Periodoncia & Estética Rosa",
-    "experience": "8+ Años de Experiencia",
-    "bio": "La Dra. Selin Aksoy se especializa en remodelación gingival con láser y estética de las encías."
+    "title": "Recepcionista",
+    "experience": "Atención al Cliente y Hospitalidad",
+    "bio": "Recibe cálidamente a los pacientes en clínica y asegura una experiencia de atención de cinco estrellas."
   },
-  "doc8": {
-    "title": "Odontopediatra",
-    "experience": "9+ Años de Experiencia",
-    "bio": "El Dr. Burak Çelik se especializa en salud bucodental infantil y tratamientos preventivos."
-  }
+  "getConsultation": "Solicitar Consulta",
+  "viewProfile": "Ver Perfil"
 }
