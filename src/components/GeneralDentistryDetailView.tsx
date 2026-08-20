@@ -7,7 +7,7 @@ import TreatmentDivider from '@/components/treatment-sections/TreatmentDivider';
 import TreatmentTripleVideoSlider from '@/components/treatment-sections/TreatmentTripleVideoSlider';
 import TreatmentGeneralRightTreatmentAccordion from '@/components/treatment-sections/TreatmentGeneralRightTreatmentAccordion';
 import TreatmentDoctorsSection from '@/components/treatment-sections/TreatmentDoctorsSection';
-import TreatmentGeneralBeforeAfterSliderSection from './treatment-sections/TreatmentGeneralBeforeAfterSliderSection';
+import TreatmentBeforeAfterSliderSection from '@/components/treatment-sections/TreatmentBeforeAfterSliderSection';
 import TreatmentJourneySimpleSection from '@/components/treatment-sections/TreatmentJourneySimpleSection';
 import TreatmentServicesIncludedSection from '@/components/treatment-sections/TreatmentServicesIncludedSection';
 import TreatmentPatientReelsSection from '@/components/treatment-sections/TreatmentPatientReelsSection';
@@ -675,9 +675,9 @@ export default function GeneralDentistryDetailView() {
           </h3>
           <p className={styles.textP}>{d.reason4P}</p>
 
-          {/* INSERT: GENERAL BEFORE - AFTER SLIDER */}
+          {/* INSERT: BEFORE - AFTER SLIDER */}
           <div className="my-8">
-            <TreatmentGeneralBeforeAfterSliderSection />
+            <TreatmentBeforeAfterSliderSection />
           </div>
 
           {/* 5. Luxury Travel & VIP Care */}
@@ -763,7 +763,7 @@ export default function GeneralDentistryDetailView() {
       <TreatmentPatientReelsSection />
 
       {/* 8. BEFORE - AFTER SLIDER (Second Placement) */}
-      <TreatmentGeneralBeforeAfterSliderSection />
+      <TreatmentBeforeAfterSliderSection />
 
       {/* 9. COST BREAKDOWN & PACKAGE PROMO BANNER */}
       <TreatmentCostBreakdownAndPackageBannerSection />

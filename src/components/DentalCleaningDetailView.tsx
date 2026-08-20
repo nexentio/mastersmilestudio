@@ -5,7 +5,7 @@ import TreatmentGeneralRightTreatmentAccordion from '@/components/treatment-sect
 import TreatmentJourneySimpleSection from '@/components/treatment-sections/TreatmentJourneySimpleSection';
 import TreatmentServicesIncludedSection from '@/components/treatment-sections/TreatmentServicesIncludedSection';
 import TreatmentPatientReelsSection from '@/components/treatment-sections/TreatmentPatientReelsSection';
-import TreatmentGeneralBeforeAfterSliderSection from '@/components/treatment-sections/TreatmentGeneralBeforeAfterSliderSection';
+import TreatmentBeforeAfterSliderSection from '@/components/treatment-sections/TreatmentBeforeAfterSliderSection';
 import TreatmentGeneralPackagesSlider from '@/components/treatment-sections/TreatmentGeneralPackagesSlider';
 import TreatmentReviewsSection from '@/components/treatment-sections/TreatmentReviewsSection';
 import TreatmentGeneralFAQSection from '@/components/treatment-sections/TreatmentGeneralFAQSection';
@@ -18,7 +18,7 @@ export default function DentalCleaningDetailView() {
       <TreatmentJourneySimpleSection />
       <TreatmentServicesIncludedSection />
       <TreatmentPatientReelsSection />
-      <TreatmentGeneralBeforeAfterSliderSection />
+      <TreatmentBeforeAfterSliderSection />
       <TreatmentGeneralPackagesSlider />
       <TreatmentReviewsSection />
       <TreatmentGeneralFAQSection />
