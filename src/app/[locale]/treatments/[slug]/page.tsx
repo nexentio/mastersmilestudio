@@ -49,6 +49,63 @@ import { generateTreatmentJsonLd } from '@/lib/treatment-schema';
 import { getI18nAlternates, TREATMENT_LOCALES } from '@/lib/i18n-seo';
 import { getTreatmentContent } from '@/lib/treatment-content';
 
+const TREATMENT_SLUGS = [
+  'dental-implants',
+  'all-on-4-dental-implants',
+  'all-on-6-dental-implants',
+  'immediate-dental-implants',
+  'sinus-lifting',
+  'zygomatic-implants',
+  'zirconium-implants',
+  'implant-supported-dentures',
+  'full-mouth-dental-implants',
+  'dental-veneers',
+  'porcelain-veneers',
+  'e-max-veneers',
+  'empress-veneers',
+  'composite-veneers',
+  'lumineers',
+  'zirconium-veneers',
+  'dental-crowns',
+  'zirconium-crowns',
+  'emax-crowns',
+  'pfm-crowns',
+  'full-ceramic-crowns',
+  'dental-bridges',
+  'traditional-bridges',
+  'implant-supported-bridges',
+  'cantilever-bridges',
+  'maryland-bridges',
+  'dentures',
+  'complete-dentures',
+  'partial-dentures',
+  'overdentures',
+  'cosmetic-dentistry',
+  'smile-makeover',
+  'teeth-whitening',
+  'gummy-smile-treatment',
+  'hollywood-smile',
+  'tooth-contouring-and-shaping',
+  'diastema-closure',
+  'general-dentistry',
+  'dental-cleaning',
+  'teeth-cleaning-scaling',
+  'root-canal-treatment',
+  'composite-fillings-inlays',
+  'tooth-extractions-wisdom-teeth',
+];
+
+export function generateStaticParams() {
+  const locales = ['en', 'tr', 'de', 'pl', 'pt', 'es', 'ru'];
+  const params: { locale: string; slug: string }[] = [];
+  locales.forEach((locale) => {
+    TREATMENT_SLUGS.forEach((slug) => {
+      params.push({ locale, slug });
+    });
+  });
+  return params;
+}
+
 interface Props {
   params: Promise<{
     locale: string;

@@ -53,6 +53,57 @@ import { generateTreatmentJsonLd } from '@/lib/treatment-schema';
 import { getI18nAlternates, TREATMENT_LOCALES } from '@/lib/i18n-seo';
 import { getTreatmentContent } from '@/lib/treatment-content';
 
+const TREATMENT_NESTED_SLUGS = [
+  ['dental-implants', 'all-on-4-dental-implants'],
+  ['dental-implants', 'all-on-6-dental-implants'],
+  ['dental-implants', 'immediate-dental-implants'],
+  ['dental-implants', 'sinus-lifting'],
+  ['dental-implants', 'zygomatic-implants'],
+  ['dental-implants', 'zirconium-implants'],
+  ['dental-implants', 'implant-supported-dentures'],
+  ['dental-implants', 'full-mouth-dental-implants'],
+  ['dental-veneers', 'porcelain-veneers'],
+  ['dental-veneers', 'e-max-veneers'],
+  ['dental-veneers', 'empress-veneers'],
+  ['dental-veneers', 'composite-veneers'],
+  ['dental-veneers', 'lumineers'],
+  ['dental-veneers', 'zirconium-veneers'],
+  ['dental-crowns', 'zirconium-crowns'],
+  ['dental-crowns', 'emax-crowns'],
+  ['dental-crowns', 'pfm-crowns'],
+  ['dental-crowns', 'full-ceramic-crowns'],
+  ['dental-bridges', 'traditional-bridges'],
+  ['dental-bridges', 'implant-supported-bridges'],
+  ['dental-bridges', 'cantilever-bridges'],
+  ['dental-bridges', 'maryland-bridges'],
+  ['dentures', 'complete-dentures'],
+  ['dentures', 'partial-dentures'],
+  ['dentures', 'overdentures'],
+  ['dentures', 'implant-supported-dentures'],
+  ['cosmetic-dentistry', 'smile-makeover'],
+  ['cosmetic-dentistry', 'teeth-whitening'],
+  ['cosmetic-dentistry', 'gummy-smile-treatment'],
+  ['cosmetic-dentistry', 'hollywood-smile'],
+  ['cosmetic-dentistry', 'tooth-contouring-and-shaping'],
+  ['cosmetic-dentistry', 'diastema-closure'],
+  ['general-dentistry', 'dental-cleaning'],
+  ['general-dentistry', 'teeth-cleaning-scaling'],
+  ['general-dentistry', 'root-canal-treatment'],
+  ['general-dentistry', 'composite-fillings-inlays'],
+  ['general-dentistry', 'tooth-extractions-wisdom-teeth'],
+];
+
+export function generateStaticParams() {
+  const locales = ['en', 'tr', 'de', 'pl', 'pt', 'es', 'ru'];
+  const params: { locale: string; slug: string[] }[] = [];
+  locales.forEach((locale) => {
+    TREATMENT_NESTED_SLUGS.forEach((slug) => {
+      params.push({ locale, slug });
+    });
+  });
+  return params;
+}
+
 interface PageProps {
   params: Promise<{ locale: string; slug: string[] }>;
 }

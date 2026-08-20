@@ -3,6 +3,8 @@ import { routing } from '@/i18n/routing';
 import { SITE_CONFIG } from '@/config/site';
 import { BLOG_POSTS } from '@/data/blog-page-data';
 
+export const dynamic = 'force-static';
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const domain = SITE_CONFIG.domain;
   const staticRoutes = [
