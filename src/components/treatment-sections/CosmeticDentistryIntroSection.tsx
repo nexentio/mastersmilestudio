@@ -79,10 +79,7 @@ export default function CosmeticDentistryIntroSection() {
         <div className={styles.contentGrid}>
           <p className={styles.paragraph}>{d.p1}</p>
           <p className={styles.paragraph}>{d.p2}</p>
-        </div>
-
-        <div className={styles.highlightBox}>
-          <strong>{d.callout}</strong>
+          <p className={styles.paragraph}>{d.callout}</p>
         </div>
       </div>
     </section>

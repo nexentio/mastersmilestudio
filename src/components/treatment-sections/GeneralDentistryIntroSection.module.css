@@ -47,19 +47,6 @@
   font-weight: 700;
 }
 
-.highlightBox {
-  margin-top: 1.5rem;
-  padding: 1.35rem 1.6rem;
-  background: #fdfbf7;
-  border: 1px solid rgba(213, 137, 54, 0.25);
-  border-left: 4px solid #D58936;
-  border-radius: 12px;
-  font-size: 1rem;
-  line-height: 1.75;
-  color: #1e293b;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
-}
-
 @media (max-width: 768px) {
   .section {
     padding: 2rem 0 1.5rem 0;
@@ -77,10 +64,5 @@
   .paragraph {
     font-size: 0.98rem;
     line-height: 1.7;
-  }
-
-  .highlightBox {
-    padding: 1.15rem 1.25rem;
-    font-size: 0.92rem;
   }
 }
