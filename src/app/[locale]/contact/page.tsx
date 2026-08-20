@@ -1,5 +1,7 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import Header from '@/components/Header';
+import ContactHeroBanner from '@/components/contact/ContactHeroBanner';
+import ContactInfoSection from '@/components/contact/ContactInfoSection';
 import ContactSection from '@/components/ContactSection';
 import LocationMapSection from '@/components/LocationMapSection';
 import Footer from '@/components/Footer';
@@ -36,6 +38,8 @@ export default async function ContactPage({
 
       {/* Main Container */}
       <main id="main-content" style={{ flex: 1 }}>
+        <ContactHeroBanner />
+        <ContactInfoSection />
         <ContactSection />
         <LocationMapSection />
       </main>
