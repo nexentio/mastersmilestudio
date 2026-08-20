@@ -345,8 +345,8 @@ const PACKAGES_I18N: Record<string, PackageDict> = {
 };
 
 const VENEER_IMAGES = [
-  '/treatments/accordion/porcelain-laminate-copy.webp',
-  '/treatments/accordion/e-max-laminate-copy.webp',
+  '/treatments/accordion/porcelain-laminate.webp',
+  '/treatments/accordion/e-max-laminate.webp',
   '/treatments/accordion/lumineers.webp',
 ];
 

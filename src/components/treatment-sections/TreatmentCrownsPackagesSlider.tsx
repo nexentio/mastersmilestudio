@@ -345,9 +345,9 @@ const CROWN_PACKAGES_I18N: Record<string, PackageDict> = {
 };
 
 const CROWN_IMAGES = [
-  '/treatments/accordion/zirconium-implant-copy.webp',
-  '/treatments/accordion/e-max-laminate-copy.webp',
-  '/treatments/accordion/porcelain-laminate-copy.webp',
+  '/treatments/accordion/zirconium-crowns.webp',
+  '/treatments/accordion/e-max-crown.webp',
+  '/treatments/accordion/metal-porcelain-crown.webp',
 ];
 
 export default function TreatmentCrownsPackagesSlider() {

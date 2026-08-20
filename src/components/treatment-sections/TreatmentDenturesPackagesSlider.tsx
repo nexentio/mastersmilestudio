@@ -345,9 +345,9 @@ const DENTURES_PACKAGES_I18N: Record<string, PackageDict> = {
 };
 
 const DENTURES_IMAGES = [
-  '/treatments/accordion/full-mouth-implant.webp',
-  '/treatments/accordion/zirconium-implant-copy.webp',
-  '/treatments/accordion/porcelain-laminate-copy.webp',
+  '/treatments/accordion/complete-dentures.webp',
+  '/treatments/accordion/partial-dentures.webp',
+  '/treatments/accordion/implant-supported-dentures.webp',
 ];
 
 export default function TreatmentDenturesPackagesSlider() {

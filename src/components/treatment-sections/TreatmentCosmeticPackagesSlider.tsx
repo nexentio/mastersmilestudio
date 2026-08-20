@@ -345,9 +345,9 @@ const COSMETIC_PACKAGES_I18N: Record<string, PackageDict> = {
 };
 
 const COSMETIC_IMAGES = [
-  '/treatments/accordion/e-max-laminate-copy.webp',
-  '/treatments/accordion/porcelain-laminate-copy.webp',
-  '/treatments/accordion/zirconium-implant-copy.webp',
+  '/treatments/accordion/hollywood-smile.webp',
+  '/treatments/accordion/smile-makeover.webp',
+  '/treatments/accordion/teeth-whitening.webp',
 ];
 
 export default function TreatmentCosmeticPackagesSlider() {

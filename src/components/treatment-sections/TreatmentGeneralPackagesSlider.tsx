@@ -345,9 +345,9 @@ const GENERAL_PACKAGES_I18N: Record<string, PackageDict> = {
 };
 
 const GENERAL_IMAGES = [
-  '/treatments/accordion/lumineers.webp',
-  '/treatments/accordion/porcelain-laminate-copy.webp',
-  '/treatments/accordion/full-mouth-implant.webp',
+  '/treatments/dental-cleaning-scaling.webp',
+  '/treatments/root-canal-treatment-endodontics.webp',
+  '/treatments/accordion/inlay-onlay-ceramic.webp',
 ];
 
 export default function TreatmentGeneralPackagesSlider() {

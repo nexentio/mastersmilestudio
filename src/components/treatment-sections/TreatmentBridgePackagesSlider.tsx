@@ -345,9 +345,9 @@ const BRIDGE_PACKAGES_I18N: Record<string, PackageDict> = {
 };
 
 const BRIDGE_IMAGES = [
-  '/treatments/accordion/zirconium-implant-copy.webp',
-  '/treatments/accordion/full-mouth-implant.webp',
-  '/treatments/accordion/porcelain-laminate-copy.webp',
+  '/treatments/accordion/traditional-bridge.webp',
+  '/treatments/accordion/implant-bridge.webp',
+  '/treatments/accordion/emax-bridge.webp',
 ];
 
 export default function TreatmentBridgePackagesSlider() {
