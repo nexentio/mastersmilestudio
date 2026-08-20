@@ -275,11 +275,11 @@ export default function ContactInfoSection() {
             </div>
           </div>
 
-          {/* Right Column: Clinic Image */}
+          {/* Right Column: Smiling Patients Transformation Montage */}
           <div className={`${styles.s} ${styles.s2}`}>
             <Image
-              src="/form1.webp"
-              alt="Master Smile Studio Clinic"
+              src="/contact-patients-grid.png"
+              alt="Master Smile Studio Patients"
               fill
               sizes="(max-width: 900px) 100vw, 580px"
               className={styles.clinicImg}
