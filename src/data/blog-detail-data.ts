@@ -1,4 +1,10 @@
 import { BLOG_POSTS } from './blog-page-data';
+import { CELEBRITY_ARTICLES_1 } from './blog-articles/celebrity-articles-1';
+import { CELEBRITY_ARTICLES_2 } from './blog-articles/celebrity-articles-2';
+import { CELEBRITY_ARTICLES_3 } from './blog-articles/celebrity-articles-3';
+import { CELEBRITY_ARTICLES_4 } from './blog-articles/celebrity-articles-4';
+import { CELEBRITY_ARTICLES_PART2 } from './blog-articles/celebrities-part2';
+import { CLINICAL_GUIDES_ARTICLES } from './blog-articles/clinical-guides-full';
 
 export interface BlogDetailArticle {
   slug: string;
@@ -1091,6 +1097,24 @@ export const BLOG_DETAIL_ARTICLES: Record<string, BlogDetailArticle> = {
 };
 
 export function getBlogDetailBySlug(slug: string): BlogDetailArticle {
+  if (CELEBRITY_ARTICLES_1[slug]) {
+    return CELEBRITY_ARTICLES_1[slug];
+  }
+  if (CELEBRITY_ARTICLES_2[slug]) {
+    return CELEBRITY_ARTICLES_2[slug];
+  }
+  if (CELEBRITY_ARTICLES_3[slug]) {
+    return CELEBRITY_ARTICLES_3[slug];
+  }
+  if (CELEBRITY_ARTICLES_4[slug]) {
+    return CELEBRITY_ARTICLES_4[slug];
+  }
+  if (CELEBRITY_ARTICLES_PART2[slug]) {
+    return CELEBRITY_ARTICLES_PART2[slug];
+  }
+  if (CLINICAL_GUIDES_ARTICLES[slug]) {
+    return CLINICAL_GUIDES_ARTICLES[slug];
+  }
   if (BLOG_DETAIL_ARTICLES[slug]) {
     return BLOG_DETAIL_ARTICLES[slug];
   }
