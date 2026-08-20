@@ -4,55 +4,63 @@ import React from 'react';
 import { useLocale } from 'next-intl';
 import styles from './CosmeticDentistryIntroSection.module.css';
 
-interface IntroDictionary {
-  strong: string;
+interface IntroContent {
+  heading: string;
+  lead: string;
   p1: string;
   p2: string;
-  p3: string;
+  callout: string;
 }
 
-const DICTIONARIES: Record<string, IntroDictionary> = {
+const DICTIONARIES: Record<string, IntroContent> = {
   en: {
-    strong: 'Cosmetic dentistry',
-    p1: ' is the art and science of enhancing your natural smile, blending aesthetics and function to boost your confidence. At our state-of-the-art clinic in Antalya, we offer comprehensive aesthetic treatments—from bespoke porcelain veneers and Hollywood Smile makeovers to laser teeth whitening and composite bonding—crafted with artistic precision.',
-    p2: 'Our expert prosthodontists use 3D Digital Smile Design (DSD) and minimally invasive techniques to design smiles that harmonize perfectly with your facial contours, lips, and skin tone. Every transformation is planned around your unique aesthetic goals.',
-    p3: 'Discover the power of a radiant, natural-looking smile with personalized cosmetic dental solutions tailored just for you.',
+    heading: 'Artistic Cosmetic Dentistry & Smile Design in Antalya',
+    lead: 'Where aesthetic mastery meets clinical perfection — bespoke veneers, Hollywood smile transformations, and 3D digital facial harmonization.',
+    p1: 'Cosmetic dentistry represents the refined union of medical science and facial artistry, designed to elevate your natural smile while preserving optimal biting function. At Master Smile Studio, our cosmetic dentistry department delivers tailored porcelain laminate veneers, full-mouth Hollywood Smile rehabilitations, Philips Zoom laser teeth whitening, and microscopic composite bonding.',
+    p2: 'Utilizing cutting-edge 3D Digital Smile Design (DSD) software, intraoral 3Shape scanners, and ultra-translucent Ivoclar E-Max and monolithic zirconia ceramics, our prosthodontists calibrate every tooth contour, texture, and light translucency to harmonize flawlessly with your lips, facial proportions, and skin tone.',
+    callout: 'Experience the confidence of a bespoke, radiant smile crafted by Antalya’s leading aesthetic dental specialists with lifelong durability.',
   },
   tr: {
-    strong: 'Estetik diş hekimliği',
-    p1: ', özgüveninizi yükseltmek için estetik ve fonksiyonu kusursuz bir uyumla birleştiren, doğal gülüşünüzü mükemmelleştirme sanatıdır. Antalya’daki modern kliniğimizde, kişiye özel porselen lamine kaplamalardan Hollywood Gülüşü tasarımına, lazerle diş beyazlatmadan kompozit bonding uygulamalarına kadar geniş bir estetik tedavi yelpazesi sunuyoruz.',
-    p2: 'Uzman estetik diş hekimlerimiz, 3D Dijital Gülüş Tasarımı (DSD) ve minimal invaziv teknikler kullanarak yüz hatlarınız, dudak yapınız ve ten renginizle tam uyumlu gülüşler tasarlar. Her tedavi, sizin kişisel estetik beklentileriniz doğrultusunda şekillendirilir.',
-    p3: 'Size özel hazırlanan kozmetik diş çözümleriyle ışıltılı, doğal ve kusursuz bir gülüşün ayrıcalığını yaşayın.',
+    heading: 'Antalya’da Estetik Diş Hekimliği ve Kişiye Özel Gülüş Tasarımı',
+    lead: 'Sanatın ve klinik mükemmelliğin buluştuğu nokta: Kişiye özel porselen laminalar, Hollywood Gülüşü ve 3D dijital yüz uyumu.',
+    p1: 'Estetik diş hekimliği; doğal çiğneme fonksiyonlarını korurken yüz güzelliğinizi ve özgüveninizi en üst seviyeye taşıyan tıp ve sanatın kusursuz birleşimidir. Master Smile Studio kliniğimizde; kişiye özel porselen lamine kaplamalar, Hollywood Smile gülüş yenilemeleri, Philips Zoom lazerli diş beyazlatma ve mikroskobik kompozit bonding uygulamaları titizlikle gerçekleştirilir.',
+    p2: 'İleri 3D Dijital Gülüş Tasarımı (DSD) teknolojisi, 3Shape ağız içi tarayıcılar ve yüksek ışık geçirgenliğine sahip Ivoclar E-Max seramikler kullanılarak diş formu, uzunluğu, basamak açıları ve mikro-dokuları yüz hatlarınız, dudak dinamikleriniz ve ten renginizle tam uyumlu olarak tasarlanır.',
+    callout: 'Antalya’nın önde gelen estetik hekimleri tarafından tasarlanan, doğal ışıltısını ömür boyu koruyan kusursuz bir gülüşün ayrıcalığını yaşayın.',
   },
   de: {
-    strong: 'Die ästhetische Zahnheilkunde',
-    p1: ' verbindet zahnmedizinische Präzision mit modernster Ästhetik, um Ihr natürliches Lächeln zu perfektionieren und Ihr Selbstvertrauen zu stärken. In unserer Fachklinik in Antalya bieten wir maßgeschneiderte E-Max Veneers, Hollywood Smile Makeovers, Laser-Bleaching und minimalinvasive Korrekturen.',
-    p2: 'Unser Ärzteteam nutzt 3D Digital Smile Design (DSD), um Zahnform, -länge und -farbe perfekt auf Ihre Gesichtszüge und Lippendynamik abzustimmen.',
-    p3: 'Investieren Sie in ein strahlendes, harmonisches Lächeln mit individuellen ästhetischen Zahnbehandlungen auf höchstem Niveau.',
+    heading: 'Ästhetische Zahnheilkunde & Digitales Lächeldesign in Antalya',
+    lead: 'Wo medizinische Perfektion auf dentale Kunst trifft: Maßgeschneiderte Veneers, Hollywood Smile Makeovers und 3D-Gesichtsharmonisierung.',
+    p1: 'Die ästhetische Zahnheilkunde verbindet moderne Zahnmedizin mit feinstem ästhetischem Gespür, um Ihr Lächeln harmonisch und strahlend zu vollenden. Im Master Smile Studio bieten wir hauchdünne Keramik-Veneers, komplette Hollywood Smile Rekonstruktionen, Philips Zoom Laser-Bleaching und minimalinvasives Composite Bonding.',
+    p2: 'Mithilfe von 3D Digital Smile Design (DSD) und Ivoclar E-Max Lithiumdisilikat-Keramiken stimmen unsere Spezialisten jede Zahnkontur und Transluzenz perfekt auf Ihre Lippenlinie und Gesichtssymmetrie ab.',
+    callout: 'Erleben Sie ein strahlendes, natürliches und langlebiges Lächeln – individuell für Sie gestaltet von führenden Spezialisten in Antalya.',
   },
   pl: {
-    strong: 'Stomatologia estetyczna',
-    p1: ' to połączenie sztuki i nowoczesnej technologii, mające na celu wydobycie pełnego piękna Twojego uśmiechu. W naszej klinice w Antalyi oferujemy licówki E-Max, metamorfozy Hollywood Smile, laserowe wybielanie i bonding kompozytowy.',
-    p2: 'Dzięki technologii 3D Digital Smile Design (DSD) projektujemy uśmiech idealnie dopasowany do rysów Twojej twarzy, gwarantując naturalny i trwały efekt.',
-    p3: 'Odkryj pewność siebie i zachwycający uśmiech dzięki spersonalizowanym zabiegom stomatologii estetycznej.',
+    heading: 'Stomatologia Estetyczna i Cyfrowe Projektowanie Uśmiechu w Antalyi',
+    lead: 'Gdzie kunszt estetyczny spotyka się z doskonałością kliniczną: Licówki ceramiczne, metamorfozy Hollywood Smile i harmonia 3D.',
+    p1: 'Stomatologia estetyczna to połączenie zaawansowanej wiedzy medycznej i precyzji artystycznej, mające na celu wydobycie pełnego piękna Twojego uśmiechu. W Master Smile Studio wykonujemy ultracienkie licówki porcelanowe E-Max, kompleksowe metamorfozy Hollywood Smile, laserowe wybielanie Philips Zoom oraz bonding kompozytowy.',
+    p2: 'Dzięki technologii 3D Digital Smile Design (DSD) oraz skanerom wewnątrzustnym 3Shape precyzyjnie dopasowujemy kształt, odcień i przezierność zębów do rysów Twojej twarzy i dynamiki uśmiechu.',
+    callout: 'Odkryj pewność siebie dzięki zachwycającemu, naturalnemu uśmiechowi zaprojektowanemu przez ekspertów w Antalyi.',
   },
   pt: {
-    strong: 'A dentisteria estética',
-    p1: ' é a arte de transformar o seu sorriso, aliando beleza, harmonia e funcionalidade. Na nossa clínica em Antalya, realizamos tratamentos de excelência como facetas de porcelana E-Max, Hollywood Smile, branqueamento a laser e bonding.',
-    p2: 'Utilizamos o Digital Smile Design 3D para criar um sorriso perfeitamente integrado na sua fisionomia e proporções faciais.',
-    p3: 'Sorria com confiança com soluções estéticas avançadas e desenhadas à sua medida.',
+    heading: 'Medicina Dentária Estética e Design de Sorriso em Antália',
+    lead: 'Onde a arte encontra a excelência clínica: Facetas personalizadas, transformações Hollywood Smile e harmonia facial 3D.',
+    p1: 'A dentisteria estética é a arte de criar sorrisos deslumbrantes que realçam a sua beleza natural e promovem a máxima autoestima. Na Master Smile Studio, realizamos facetas ultrafinas de porcelana E-Max, reabilitações completas Hollywood Smile, branqueamento a laser Philips Zoom e microestética em compósito.',
+    p2: 'Através do Digital Smile Design 3D e cerâmicas de alta translucidez, calibramos cada detalhe anatómico em total harmonia com a sua fisionomia e linha labial.',
+    callout: 'Transforme a sua imagem com um sorriso personalizado, radiante e com garantia de longevidade superior.',
   },
   es: {
-    strong: 'La odontología estética',
-    p1: ' es el arte de realzar su sonrisa natural, combinando estética y armonía para potenciar su seguridad y bienestar. En nuestra clínica de Antalya ofrecemos carillas de porcelana E-Max, diseño Hollywood Smile, blanqueamiento láser y microestética dental.',
-    p2: 'Con la tecnología 3D Digital Smile Design, analizamos sus facciones y proporciones para lograr un resultado deslumbrante y 100% natural.',
-    p3: 'Transforme su imagen con tratamientos cosméticos exclusivos diseñados a su medida.',
+    heading: 'Odontología Estética y Diseño de Sonrisa en Antalya',
+    lead: 'Donde la precisión clínica se une al arte dental: Carillas de porcelana, transformaciones Hollywood Smile y armonización facial 3D.',
+    p1: 'La odontología estética es el arte de perfeccionar su sonrisa natural, combinando belleza, luminosidad y una función oclusal impecable. En Master Smile Studio realizamos carillas de porcelana E-Max de mínima preparación, diseños integrales Hollywood Smile, blanqueamiento láser Philips Zoom y bonding estético.',
+    p2: 'Con el sistema 3D Digital Smile Design (DSD) y escáneres 3Shape, diseñamos cada borde incisal, tono y textura para que se integren de forma idónea con sus facciones.',
+    callout: 'Disfrute de una sonrisa deslumbrante, armónica y duradera de la mano de los mejores especialistas estéticos de Antalya.',
   },
   ru: {
-    strong: 'Эстетическая стоматология',
-    p1: ' — это искусство создания идеальной улыбки, сочетающее передовые технологии, гармонию и безупречную функцию. В нашей клинике в Анталье мы создаем виниры E-Max, голливудские улыбки под ключ, лазерное отбеливание и художественную реставрацию.',
-    p2: 'С помощью 3D Digital Smile Design мы моделируем будущую улыбку с учетом анатомии лица, формы губ и ваших личных пожеланий.',
-    p3: 'Подарите себе ослепительную и естественную улыбку с помощью индивидуальных эстетических решений мирового уровня.',
+    heading: 'Эстетическая стоматология и цифровой дизайн улыбки в Анталье',
+    lead: 'Союз высокого медицинского искусства и технологий: Индивидуальные виниры, голливудские улыбки и 3D-гармония лица.',
+    p1: 'Эстетическая стоматология — это искусство создания безупречной улыбки, подчеркивающей естественную красоту и индивидуальность каждого пациента. В Master Smile Studio мы создаем ультратонкие керамические виниры E-Max, проводим комплексные преображения Hollywood Smile, лазерное отбеливание Philips Zoom и художественную реставрацию.',
+    p2: 'С помощью 3D Digital Smile Design (DSD) и сканеров 3Shape мы с математической точностью рассчитываем форму, прозрачность и пропорции зубов с учетом мимики и анатомии лица.',
+    callout: 'Подарите себе ослепительную, естественную и долговечную улыбку, созданную ведущими эстетическими стоматологами Антальи.',
   },
 };
 
@@ -61,17 +69,22 @@ export default function CosmeticDentistryIntroSection() {
   const d = DICTIONARIES[locale] || DICTIONARIES.en;
 
   return (
-    <div className={styles.ekcontent}>
-      <div className={styles.standard_center4}>
-        <p className={styles.paragraph}>
-          <strong className={styles.strongText}>{d.strong}</strong>
-          {d.p1}
-          <br />
-          {d.p2}
-          <br />
-          {d.p3}
-        </p>
+    <section aria-labelledby="cosmetic-intro-heading" className={styles.section}>
+      <div className={styles.container}>
+        <h2 id="cosmetic-intro-heading" className={styles.heading}>
+          {d.heading}
+        </h2>
+        <p className={styles.lead}>{d.lead}</p>
+
+        <div className={styles.contentGrid}>
+          <p className={styles.paragraph}>{d.p1}</p>
+          <p className={styles.paragraph}>{d.p2}</p>
+        </div>
+
+        <div className={styles.highlightBox}>
+          <strong>{d.callout}</strong>
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
