@@ -368,43 +368,7 @@
   }
 }
 
-  .mobileControls {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1.5rem;
-    margin-top: 1.5rem;
-  }
-
-  .mobileArrow {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    border: 1px solid #cbd5e1;
-    background-color: #ffffff;
-    color: #0c1b4d;
-    font-size: 1.25rem;
-    font-weight: 700;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.2s ease;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  }
-
-  .mobileArrow:hover {
-    background-color: #0c1b4d;
-    color: #ffffff;
-    border-color: #0c1b4d;
-  }
-
-  .mobilePageIndicator {
-    font-size: 0.92rem;
-    font-weight: 600;
-    color: #64748b;
-  }
-}
+  
 
 /* =========================================================================
    FAQ ACCORDION SECTION
