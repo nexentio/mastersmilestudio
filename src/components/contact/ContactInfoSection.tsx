@@ -278,7 +278,7 @@ export default function ContactInfoSection() {
           {/* Right Column: Smiling Patients Transformation Montage */}
           <div className={`${styles.s} ${styles.s2}`}>
             <Image
-              src="/contact-patients-grid.png"
+              src="/mss-patients-montage.png"
               alt="Master Smile Studio Patients"
               fill
               sizes="(max-width: 900px) 100vw, 580px"
