@@ -1,77 +1,84 @@
 'use client';
 
-import React, { useState } from 'react';
+import React from 'react';
 import { useLocale } from 'next-intl';
 import styles from './TreatmentClinicTourSection.module.css';
 
 interface Props {
+  videoId?: string;
   placeholderNum?: string;
 }
 
-export default function TreatmentClinicTourSection({}: Props) {
+const CONTENT_DICT: Record<string, { title: string; tagline: string; desc: string }> = {
+  en: {
+    title: 'Step Inside Master Smile Studio',
+    tagline: 'Take a virtual tour of our state-of-the-art clinic located in the heart of Antalya.',
+    desc: 'From modern treatment suites to welcoming patient lounges, see how we combine advanced CAD/CAM technology, international hospital standards, and 5-star comfort to make your dental journey truly exceptional.',
+  },
+  tr: {
+    title: 'Master Smile Studio Kliniğimizi Keşfedin',
+    tagline: 'Antalya’nın kalbinde yer alan son teknoloji kliniğimizde sanal bir tura çıkın.',
+    desc: 'Modern tedavi ünitelerinden şık hasta dinlenme salonlarımıza kadar, diş sağlığı yolculuğunuzu kusursuz kılmak için ileri CAD/CAM teknolojisini, uluslararası hastane standartlarını ve 5 yıldızlı konforu nasıl birleştirdiğimizi görün.',
+  },
+  de: {
+    title: 'Erleben Sie das Master Smile Studio',
+    tagline: 'Machen Sie einen virtuellen Rundgang durch unsere hochmoderne Klinik im Herzen von Antalya.',
+    desc: 'Von hochmodernen Behandlungsräumen bis hin zu eleganten Patientenlounges – erleben Sie, wie wir fortschrittliche CAD/CAM-Technologie, internationale Klinikstandards und 5-Sterne-Komfort für Ihre Behandlung vereinen.',
+  },
+  pl: {
+    title: 'Odkryj Master Smile Studio',
+    tagline: 'Wybierz się na wirtualny spacer po naszej ultranowoczesnej klinice w sercu Antalyi.',
+    desc: 'Od zaawansowanych gabinetów zabiegowych po luksusowe strefy relaksu dla pacjentów – zobacz, jak łączymy zaawansowaną technologię CAD/CAM, międzynarodowe standardy medyczne i 5-gwiazdkowy komfort.',
+  },
+  pt: {
+    title: 'Conheça a Master Smile Studio',
+    tagline: 'Faça um tour virtual pela nossa clínica de última geração localizada no coração de Antália.',
+    desc: 'De salas de tratamento modernas a lounges acolhedores, veja como combinamos tecnologia avançada CAD/CAM, padrões hospitalares internacionais e conforto 5 estrelas para uma experiência inesquecível.',
+  },
+  es: {
+    title: 'Descubra Master Smile Studio',
+    tagline: 'Realice un recorrido virtual por nuestra clínica de vanguardia ubicada en el corazón de Antalya.',
+    desc: 'Desde modernas salas de tratamiento hasta elegantes salas de descanso, descubra cómo combinamos tecnología CAD/CAM avanzada, estándares internacionales y confort de 5 estrellas para su tratamiento dental.',
+  },
+  ru: {
+    title: 'Взгляните на Master Smile Studio',
+    tagline: 'Совершите виртуальный тур по нашей ультрасовременной клинике в самом сердце Антальи.',
+    desc: 'От передовых лечебных кабинетов до роскошных зон отдыха — посмотрите, как мы объединяем цифровые CAD/CAM технологии, международные медицинские стандарты и 5-звездочный комфорт.',
+  },
+};
+
+export default function TreatmentClinicTourSection({
+  videoId = 'haSWVr2smMM',
+}: Props) {
   const locale = useLocale();
-  const [isPlaying, setIsPlaying] = useState(false);
+  const t = CONTENT_DICT[locale] || CONTENT_DICT.en;
 
   return (
     <section aria-labelledby="clinic-tour-heading" className={styles.wrapper}>
-      <div className="treatment-container">
+      <div className={styles.container}>
         {/* Head */}
-        <div className="head mb-10">
-          <div className="grid1 grid grid-cols-1 md:grid-cols-2 gap-8 items-end">
-            <div className="s s1">
-              <h2 id="clinic-tour-heading" className="treatment-heading-title m-0">
-                {locale === 'tr' ? 'Master Smile Studio Kliniğimizi Keşfedin' : 'Step Inside Master Smile Studio'}
+        <div className={styles.head}>
+          <div className={styles.headGrid}>
+            <div>
+              <h2 id="clinic-tour-heading" className={styles.title}>
+                {t.title}
               </h2>
             </div>
-            <div className="s s2">
-              <div className={styles.tagline}>
-                {locale === 'tr'
-                  ? 'Antalya’nın kalbinde yer alan son teknoloji kliniğimizde sanal bir tura çıkın.'
-                  : 'Take a virtual tour of our state-of-the-art clinic located in the heart of Antalya.'}
-              </div>
-              <p className="treatment-text-p m-0 text-slate-500">
-                {locale === 'tr'
-                  ? 'Modern tedavi odalarından sıcak hasta dinlenme salonlarına kadar, diş sağlığı yolculuğunuzu gerçekten olağanüstü kılmak için ileri teknolojiyi, uluslararası standartları ve şık konforu nasıl birleştirdiğimizi görün.'
-                  : 'From modern treatment rooms to welcoming patient lounges, see how we combine advanced technology, international standards, and elegant comfort to make your dental journey truly exceptional.'}
-              </p>
+            <div>
+              <div className={styles.tagline}>{t.tagline}</div>
+              <p className={styles.desc}>{t.desc}</p>
             </div>
           </div>
         </div>
 
         {/* Video Box */}
         <div className={styles.videoBox}>
-          {isPlaying ? (
-            <iframe
-              src="https://www.youtube.com/embed/eiTTit9PLrQ?autoplay=1"
-              title="Step Inside Master Smile Studio Virtual Tour"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
-          ) : (
-            <div
-              onClick={() => setIsPlaying(true)}
-              className={styles.coverWrap}
-              role="button"
-              tabIndex={0}
-              onKeyDown={(e) => {
-                if (e.key === 'Enter' || e.key === ' ') setIsPlaying(true);
-              }}
-              aria-label="Play Master Smile Studio clinic virtual tour video"
-            >
-              <img
-                src="/treatments/clinic-tour-cover.webp"
-                alt="Master Smile Studio Clinic Tour"
-                loading="lazy"
-              />
-              <div className={styles.playOverlay}>
-                <div className={styles.playBtn}>
-                  <svg width="32" height="32" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true">
-                    <path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9l0 176c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-          )}
+          <iframe
+            src={`https://www.youtube-nocookie.com/embed/${videoId}`}
+            title={t.title}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
         </div>
       </div>
     </section>

@@ -866,23 +866,38 @@
 }
 
 .pkgPriceRow {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+  background: linear-gradient(180deg, #484b56 0%, #2c2f38 24%, #181a22 58%, #08090c 100%);
+  border: 1.5px solid #525663;
+  border-radius: 16px;
+  padding: 0.95rem 1.25rem;
+  text-align: center;
   margin-bottom: 1rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45), inset 0 1.5px 1.5px rgba(255, 255, 255, 0.45), inset 0 -2px 3px rgba(0, 0, 0, 0.85);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .pkgPriceLabel {
-  font-size: 0.82rem;
-  color: #64748b;
-  text-transform: uppercase;
+  font-size: 0.72rem;
   font-weight: 700;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.2rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
 }
 
 .pkgPriceValue {
-  font-size: 1.85rem;
-  font-weight: 700;
-  color: #0c1b4d;
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: #fbbf24;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7), 0 0 14px rgba(251, 191, 36, 0.25);
 }
 
 .pkgCtaBtn {
@@ -890,27 +905,39 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+  text-align: center;
+  background: linear-gradient(180deg, #f5d47a 0%, #e6b845 28%, #d49a24 60%, #b87b10 100%);
+  color: #5c3504;
   padding: 0.85rem 1.25rem;
-  background-color: #0c1b4d;
-  color: #ffffff;
-  border-radius: 12px;
+  border-radius: 9999px;
+  border: 1.5px solid #a86c0d;
   font-weight: 700;
-  font-size: 0.92rem;
+  font-size: 0.98rem;
+  letter-spacing: 0.01em;
   text-decoration: none;
-  transition: all 0.25s ease;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.45);
+  box-shadow: 0 4px 14px rgba(184, 123, 16, 0.35), inset 0 1px 1px rgba(255, 255, 255, 0.75), inset 0 -1px 2px rgba(0, 0, 0, 0.25);
+  transition: all 0.22s ease;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
 }
 
 .pkgCtaBtn:hover {
-  background-color: #D58936;
-  box-shadow: 0 6px 20px rgba(213, 137, 54, 0.3);
+  background: linear-gradient(180deg, #fae08e 0%, #ecc152 28%, #dfa52f 60%, #c48618 100%);
+  color: #482701;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(184, 123, 16, 0.45), inset 0 1px 2px rgba(255, 255, 255, 0.85), inset 0 -1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.pkgCtaBtn:active {
+  background: linear-gradient(180deg, #dfa52f 0%, #cb8e1c 50%, #b87b10 100%);
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(184, 123, 16, 0.3), inset 0 2px 4px rgba(0, 0, 0, 0.25);
 }
 
 .pkgCtaBtnPopular {
-  background-color: #D58936;
-}
-
-.pkgCtaBtnPopular:hover {
-  background-color: #0c1b4d;
+  /* Inherits 3D metallic gold styling */
 }
 
 /* =========================================================================
@@ -1581,3 +1608,66 @@
   }
 }
 
+/* 100% Full-Width Mobile Breakout with Peek Effect */
+@media (max-width: 860px) {
+  .pkgSliderControls {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+
+  .sliderNavBtns {
+    display: none !important;
+  }
+
+  .currencyBar {
+    width: 100% !important;
+    justify-content: space-between !important;
+  }
+
+  .pkgSliderTrack,
+  .pkgGrid {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    overflow-y: visible !important;
+    -webkit-overflow-scrolling: touch !important;
+    scroll-snap-type: x mandatory !important;
+    scroll-padding-left: 1.25rem !important;
+    scroll-padding-right: 1.25rem !important;
+    gap: 1rem !important;
+    width: 100vw !important;
+    position: relative !important;
+    left: 50% !important;
+    right: 50% !important;
+    margin-left: -50vw !important;
+    margin-right: -50vw !important;
+    padding: 0.75rem 1.25rem 2rem 1.25rem !important;
+    scrollbar-width: none !important;
+    -ms-overflow-style: none !important;
+    box-sizing: border-box !important;
+  }
+
+  .pkgSliderTrack::-webkit-scrollbar,
+  .pkgGrid::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  .pkgCard {
+    flex: 0 0 calc(100vw - 3.25rem) !important;
+    width: calc(100vw - 3.25rem) !important;
+    min-width: calc(100vw - 3.25rem) !important;
+    max-width: none !important;
+    scroll-snap-align: start !important;
+    padding: 1.5rem 1.25rem !important;
+    border-radius: 18px !important;
+    box-sizing: border-box !important;
+    margin-bottom: 0 !important;
+  }
+
+  .pkgCard:hover,
+  .pkgCard:active {
+    transform: none !important;
+  }
+}

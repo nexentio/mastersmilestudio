@@ -1264,3 +1264,67 @@
     line-height: 1.4;
   }
 }
+
+/* 100% Full-Width Mobile Breakout with Peek Effect */
+@media (max-width: 860px) {
+  .pkgSliderControls {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+
+  .sliderNavBtns {
+    display: none !important;
+  }
+
+  .currencyBar {
+    width: 100% !important;
+    justify-content: space-between !important;
+  }
+
+  .pkgSliderTrack,
+  .pkgGrid {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    overflow-y: visible !important;
+    -webkit-overflow-scrolling: touch !important;
+    scroll-snap-type: x mandatory !important;
+    scroll-padding-left: 1.25rem !important;
+    scroll-padding-right: 1.25rem !important;
+    gap: 1rem !important;
+    width: 100vw !important;
+    position: relative !important;
+    left: 50% !important;
+    right: 50% !important;
+    margin-left: -50vw !important;
+    margin-right: -50vw !important;
+    padding: 0.75rem 1.25rem 2rem 1.25rem !important;
+    scrollbar-width: none !important;
+    -ms-overflow-style: none !important;
+    box-sizing: border-box !important;
+  }
+
+  .pkgSliderTrack::-webkit-scrollbar,
+  .pkgGrid::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  .pkgCard {
+    flex: 0 0 calc(100vw - 3.25rem) !important;
+    width: calc(100vw - 3.25rem) !important;
+    min-width: calc(100vw - 3.25rem) !important;
+    max-width: none !important;
+    scroll-snap-align: start !important;
+    padding: 1.5rem 1.25rem !important;
+    border-radius: 18px !important;
+    box-sizing: border-box !important;
+    margin-bottom: 0 !important;
+  }
+
+  .pkgCard:hover,
+  .pkgCard:active {
+    transform: none !important;
+  }
+}
