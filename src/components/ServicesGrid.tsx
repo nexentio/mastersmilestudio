@@ -184,28 +184,42 @@ export default function ServicesGrid() {
             max-width: calc((100% - 1.25rem) / 2) !important;
           }
         }
-        @media (max-width: 640px) {
+        @media (max-width: 768px) {
           .services-3-col-grid {
+            display: flex !important;
+            flex-wrap: nowrap !important;
+            overflow-x: auto !important;
+            scroll-snap-type: x mandatory !important;
+            -webkit-overflow-scrolling: touch !important;
             gap: 1rem !important;
+            padding: 0.5rem 0.25rem 1.25rem 0.25rem !important;
+            justify-content: flex-start !important;
+            scrollbar-width: none !important;
+            -ms-overflow-style: none !important;
+          }
+          .services-3-col-grid::-webkit-scrollbar {
+            display: none !important;
           }
           .services-3-col-grid .service-square-card-light {
-            width: 100% !important;
-            flex: 0 0 100% !important;
-            max-width: 100% !important;
-            border-radius: 18px !important;
+            width: 82vw !important;
+            max-width: 310px !important;
+            flex: 0 0 82vw !important;
+            aspect-ratio: 4 / 5 !important;
+            scroll-snap-align: start !important;
+            border-radius: 20px !important;
           }
           .service-square-card-light {
-            border-radius: 18px !important;
+            border-radius: 20px !important;
           }
           .service-square-card-light .text {
             padding: 1rem 1.15rem !important;
-            border-radius: 0 0 18px 18px !important;
+            border-radius: 0 0 20px 20px !important;
           }
           .service-square-card-light .text1 {
-            font-size: 1.1rem !important;
+            font-size: 1.15rem !important;
           }
           .service-square-card-light .text2 {
-            font-size: 0.8rem !important;
+            font-size: 0.82rem !important;
           }
         }
         .service-square-card-light:hover {
