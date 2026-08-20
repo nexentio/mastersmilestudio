@@ -1,7 +1,7 @@
 .wrapper {
   position: relative;
   width: 100%;
-  padding: 30px 0 35px 0;
+  padding: 3.5rem 0;
   background-color: #ffffff;
   color: #1f2937;
 }
@@ -10,6 +10,7 @@
   width: 1200px;
   max-width: 94%;
   margin: 0 auto;
+  position: relative;
 }
 
 .head {
@@ -33,7 +34,7 @@
 .headS2 {
   font-family: var(--font-outfit), sans-serif;
   font-size: 0.95rem;
-  color: #0c1b4d;
+  color: #475569;
   line-height: 1.6;
   font-weight: 500;
   margin: 0;
@@ -47,104 +48,113 @@
 .track {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  gap: 1.25rem;
 }
 
-/* 1:1 Review Card matching /reviews */
+.mobileTrack {
+  display: none;
+}
+
+/* 1:1 Review Card matching Homepage PatientsSection */
 .card {
-  background-color: #f6f8fa;
-  border-radius: 16px;
-  padding: 1.35rem 1.25rem 1.15rem 1.25rem;
-  min-height: 250px;
+  background-color: #ffffff;
+  border-radius: 24px;
+  border: 2px solid #FCDE9C;
+  padding: 1.85rem 1.6rem;
+  min-height: 330px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
   justify-content: space-between;
-  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.03);
-  transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.2s ease, border-color 0.2s ease;
-  border: 1px solid #edf0f4;
-  text-decoration: none;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
-  background-color: #ffffff;
-  border-color: #e2e8f0;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
 }
 
-.cardTop {
+.cardHeaderRow {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 8px;
-  font-family: var(--font-outfit), sans-serif;
-  font-size: 1.08rem;
-  font-weight: 600;
-  color: #0c1b4d;
-  margin-bottom: 10px;
-  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
 }
 
-.userIcon {
-  width: 16px;
-  height: 16px;
-  color: #c4a482;
-  flex-shrink: 0;
+.starsGroup {
+  display: flex;
+  align-items: center;
+  gap: 3px;
 }
 
-.authorName {
-  font-family: var(--font-outfit), sans-serif;
-  font-size: 1.05rem;
-  font-weight: 600;
-  color: #0c1b4d;
+.starImg {
+  object-fit: contain;
 }
 
-.commentText {
-  font-family: var(--font-outfit), sans-serif;
-  font-size: 0.91rem;
-  color: #0c1b4d;
-  line-height: 1.55;
+.platformLogoWrap {
+  display: flex;
+  align-items: center;
+  opacity: 0.9;
+}
+
+.platformLogo {
+  object-fit: contain;
+}
+
+.quoteText {
+  font-size: 0.95rem;
+  color: #334155;
+  line-height: 1.65;
+  margin: 0 0 1.5rem 0;
   font-weight: 450;
-  margin: 0 0 16px 0;
+  font-style: italic;
   display: -webkit-box;
   -webkit-line-clamp: 6;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  text-overflow: ellipsis;
-  text-align: center;
 }
 
 .cardFooter {
+  border-top: 1px solid #f1f5f9;
+  padding-top: 1.15rem;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 6px;
-  margin-top: auto;
-  padding-top: 10px;
-  width: 100%;
+  gap: 0.85rem;
+  align-items: flex-start;
+  text-align: left;
 }
 
-.platformWrap {
-  position: relative;
-  width: 85px;
-  height: 20px;
+.treatmentBadge {
+  display: inline-block;
+  background-color: #FCDE9C;
+  color: #1c1917;
+  font-size: 0.78rem;
+  font-weight: 750;
+  padding: 0.35rem 0.8rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
 }
 
-.platformImg {
-  object-fit: contain;
+.patientInfoCol {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
 }
 
-.starsWrap {
-  position: relative;
-  width: 78px;
-  height: 14px;
+.patientName {
+  font-size: 1.05rem;
+  font-weight: 750;
+  color: #0f172a;
 }
 
-.starsImg {
-  object-fit: contain;
+.patientCountry {
+  font-size: 0.84rem;
+  color: #64748b;
+  font-weight: 500;
 }
 
 .navControls {
@@ -168,6 +178,7 @@
   cursor: pointer;
   transition: all 0.2s ease;
   font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .navBtn:hover:not(:disabled) {
@@ -186,23 +197,65 @@
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 860px) {
+  .wrapper {
+    padding: 2.5rem 0 3rem 0;
+    overflow-x: hidden;
+  }
+
   .head {
     grid-template-columns: 1fr;
-    gap: 15px;
+    gap: 12px;
+    margin-bottom: 1.5rem;
   }
 
   .headS1 {
-    font-size: clamp(1.85rem, 5.5vw, 2.3rem);
+    font-size: clamp(1.75rem, 5.5vw, 2.2rem);
   }
-}
 
-@media (max-width: 640px) {
   .track {
-    grid-template-columns: 1fr;
+    display: none;
   }
 
-  .wrapper {
-    padding: 40px 0 60px 0;
+  .navControls {
+    display: none;
+  }
+
+  /* Full-bleed smooth swipe track on mobile */
+  .mobileTrack {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    scroll-padding-left: 1.25rem;
+    scroll-padding-right: 1.25rem;
+    gap: 1rem;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding: 0.5rem 1.25rem 1.5rem 1.25rem;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    box-sizing: border-box;
+  }
+
+  .mobileTrack::-webkit-scrollbar {
+    display: none;
+  }
+
+  .card {
+    flex: 0 0 calc(100vw - 3.5rem);
+    width: calc(100vw - 3.5rem);
+    min-width: calc(100vw - 3.5rem);
+    max-width: none;
+    scroll-snap-align: start;
+    padding: 1.6rem 1.35rem;
+    min-height: 310px;
   }
 }

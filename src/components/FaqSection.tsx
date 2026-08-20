@@ -38,28 +38,10 @@ export default function FaqSection() {
         <div
           style={{
             textAlign: 'left',
-            marginBottom: 'clamp(2.5rem, 5vw, 3.5rem)',
-            maxWidth: '900px',
+            maxWidth: '840px',
+            marginBottom: '3.5rem',
           }}
         >
-          <span
-            style={{
-              fontSize: '0.875rem',
-              fontWeight: 700,
-              color: '#d97706',
-              letterSpacing: '0.06em',
-              textTransform: 'uppercase',
-              backgroundColor: '#fff7ed',
-              padding: '0.4rem 1.1rem',
-              borderRadius: '9999px',
-              border: '1px solid #ffedd5',
-              display: 'inline-block',
-              marginBottom: '1rem',
-            }}
-          >
-            {t('eyebrow')}
-          </span>
-
           <h2
             style={{
               fontSize: 'clamp(1.85rem, 4.5vw, 3rem)',

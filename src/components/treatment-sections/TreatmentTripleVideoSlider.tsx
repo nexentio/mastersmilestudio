@@ -72,10 +72,17 @@ export default function TreatmentTripleVideoSlider({
                 >
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
-                    src={`https://img.youtube.com/vi/${vid.id}/hqdefault.jpg`}
+                    src={`https://i.ytimg.com/vi/${vid.id}/maxresdefault.jpg`}
                     alt={vid.title || 'Video Thumbnail'}
                     className={styles.thumbnailImg}
                     loading="lazy"
+                    onError={(e) => {
+                      // Fallback to hqdefault if maxres is unavailable
+                      const target = e.currentTarget as HTMLImageElement;
+                      if (!target.src.includes('hqdefault.jpg')) {
+                        target.src = `https://i.ytimg.com/vi/${vid.id}/hqdefault.jpg`;
+                      }
+                    }}
                   />
                   <div className={styles.playBadge}>
                     <svg viewBox="0 0 68 48" width="56" height="40">

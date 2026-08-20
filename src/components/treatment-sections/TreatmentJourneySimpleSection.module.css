@@ -19,6 +19,10 @@
 }
 
 @media (max-width: 860px) {
+  .wrapper {
+    padding: 0.5rem 0 2.5rem 0;
+  }
+
   .head {
     grid-template-columns: 1fr;
     gap: 1.25rem;
@@ -141,16 +145,13 @@
 
 .content {
   padding: 1rem 0 0.5rem 4.5rem;
-  color: #475569;
-  font-size: 1rem;
-  line-height: 1.7;
 }
 
-@media (max-width: 768px) {
-  .content {
-    padding: 0.75rem 0 0.25rem 0;
-    font-size: 0.95rem;
-  }
+.contentBody {
+  margin: 0;
+  line-height: 1.75;
+  color: #475569;
+  font-size: 0.96rem;
 }
 
 .contactWrap {
@@ -169,38 +170,167 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 0.85rem;
   flex-wrap: wrap;
 }
 
 .contactPill {
   background-color: #ffffff;
-  border: 1.5px solid #dca13c;
-  border-radius: 10px;
-  padding: 0.6rem 1.4rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 9999px;
+  padding: 0.55rem 1.25rem 0.55rem 0.65rem;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
   gap: 0.65rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+  color: #0f172a;
+}
+
+.iconCircle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #f1f5f9;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #0c1b4d;
   transition: all 0.2s ease;
+  flex-shrink: 0;
 }
 
 .contactPill:hover {
-  background-color: #fefce8;
+  background-color: #0c1b4d;
+  color: #ffffff;
+  border-color: #0c1b4d;
   transform: translateY(-2px);
-  box-shadow: 0 4px 14px rgba(220, 161, 60, 0.25);
+  box-shadow: 0 6px 18px rgba(12, 27, 77, 0.16);
 }
 
-.contactIconImg {
-  width: 22px;
-  height: 22px;
-  object-fit: contain;
-  display: block;
+.contactPill:hover .iconCircle {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+.contactPill:hover .contactLabel {
+  color: #ffffff;
+}
+
+.pillWhatsapp:hover {
+  background-color: #128c7e;
+  border-color: #128c7e;
+  box-shadow: 0 6px 18px rgba(18, 140, 126, 0.25);
 }
 
 .contactLabel {
-  font-size: 0.95rem;
-  font-weight: 700;
-  color: #0c1b4d;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #0f172a;
+  transition: color 0.2s ease;
+}
+
+/* Mobile Responsive */
+@media (max-width: 860px) {
+  .wrapper {
+    padding: 0.5rem 0 2rem 0;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  .head {
+    grid-template-columns: 1fr;
+    gap: 0.65rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    line-height: 1.22;
+  }
+
+  .subText {
+    font-size: 0.86rem;
+    line-height: 1.55;
+  }
+
+  .box {
+    padding: 1.15rem 0.95rem;
+    border-radius: 16px;
+  }
+
+  .item {
+    padding: 0.75rem 0;
+  }
+
+  .leftGroup {
+    gap: 0.65rem;
+  }
+
+  .iconBadge {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+  }
+
+  .iconImg {
+    width: 36px;
+    height: 36px;
+  }
+
+  .itemTitle {
+    font-size: 0.92rem;
+    line-height: 1.3;
+  }
+
+  .chevron svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  .content {
+    padding: 0.45rem 0 0.2rem 0;
+  }
+
+  .contentBody {
+    font-size: 0.84rem;
+    line-height: 1.5;
+  }
+
+  .contactWrap {
+    margin-top: 1.25rem;
+  }
+
+  .contactHead {
+    font-size: 0.9rem;
+    margin-bottom: 0.65rem;
+  }
+
+  .buttonRow {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    width: 100%;
+  }
+
+  .contactPill {
+    padding: 0.45rem 0.65rem 0.45rem 0.45rem;
+    border-radius: 9999px;
+    gap: 0.45rem;
+    justify-content: flex-start;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .iconCircle {
+    width: 26px;
+    height: 26px;
+  }
+
+  .contactLabel {
+    font-size: 0.8rem;
+  }
 }

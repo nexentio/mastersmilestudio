@@ -76,7 +76,7 @@ const DETAIL_I18N: Record<string, DetailI18n> = {
     reason2Title: 'Dental Implant Cost in Antalya - Master Smile Studio',
     reason2P:
       'Compared to many other countries, dental implant costs in Antalya are significantly lower, allowing you to receive high-end luxury care without breaking the bank.',
-    viewAllPackagesBtn: 'View All Packages →',
+    viewAllPackagesBtn: 'View All Packages',
     reason3Title: 'Advanced Technology & 3D Digital Precision',
     reason3P:
       'We use the latest technology in implantology, ensuring faster healing times and more accurate results. Master Smile Studio in Antalya is equipped with state-of-the-art 3D CBCT imaging and intraoral scanners to make your treatment as comfortable and effective as possible.',
@@ -128,7 +128,7 @@ const DETAIL_I18N: Record<string, DetailI18n> = {
     reason2Title: 'Antalya’da Diş İmplantı Maliyeti – Master Smile Studio',
     reason2P:
       'Birçok ülkeyle karşılaştırıldığında, Antalya’da diş implantı maliyetleri önemli ölçüde daha düşüktür; bu da bütçenizi sarsmadan birinci sınıf lüks tedavi almanızı sağlar.',
-    viewAllPackagesBtn: 'Tüm Paketleri İncele →',
+    viewAllPackagesBtn: 'Tüm Paketleri İncele',
     reason3Title: 'İleri Teknoloji ve Dijital Planlama',
     reason3P:
       'İmplantolojide en son dijital teknolojileri kullanarak daha hızlı iyileşme süreleri ve milimetrik hassasiyette sonuçlar elde ediyoruz. Master Smile Studio kliniğimiz, tedavinizi mümkün olduğunca konforlu ve etkili kılmak için son teknoloji 3D tomografi ve dijital tarayıcılarla donatılmıştır.',
@@ -179,7 +179,7 @@ const DETAIL_I18N: Record<string, DetailI18n> = {
     reason2Title: 'Koszt implantów zębowych w Antalyi – Master Smile Studio',
     reason2P:
       'W porównaniu z wieloma innymi krajami, koszty implantów zębowych w Antalyi są znacznie niższe, co pozwala na otrzymanie opieki medycznej klasy premium bez nadwyrężania budżetu.',
-    viewAllPackagesBtn: 'Zobacz wszystkie pakiety →',
+    viewAllPackagesBtn: 'Zobacz wszystkie pakiety',
     reason3Title: 'Zaawansowana technologia i planowanie 3D',
     reason3P:
       'Stosujemy najnowocześniejszą technologię w implantologii, zapewniając szybszy czas gojenia i milimetrową precyzję. Klinika Master Smile Studio w Antalyi jest wyposażona w tomografię 3D CBCT i skanery cyfrowe.',
@@ -230,7 +230,7 @@ const DETAIL_I18N: Record<string, DetailI18n> = {
     reason2Title: 'Kosten für Zahnimplantate in Antalya – Master Smile Studio',
     reason2P:
       'Im Vergleich zu Deutschland, Österreich und der Schweiz sind die Kosten für Zahnimplantate in Antalya deutlich günstiger bei identischer Premium-Qualität.',
-    viewAllPackagesBtn: 'Alle Pakete ansehen →',
+    viewAllPackagesBtn: 'Alle Pakete ansehen',
     reason3Title: 'Modernste Technologie & 3D-Präzision',
     reason3P:
       'Wir setzen modernste DVT-3D-Diagnostik und digitale Scanner ein, um Behandlungszeiten zu verkürzen und maximale Behandlungspräzision zu gewährleisten.',
@@ -281,7 +281,7 @@ const DETAIL_I18N: Record<string, DetailI18n> = {
     reason2Title: 'Custos de Implantes Dentários em Antalya – Master Smile Studio',
     reason2P:
       'Os custos em Antalya são consideravelmente mais acessíveis, permitindo que você receba um tratamento de alto padrão com grande economia.',
-    viewAllPackagesBtn: 'Ver Todos os Pacotes →',
+    viewAllPackagesBtn: 'Ver Todos os Pacotes',
     reason3Title: 'Tecnologia Avançada e Precisão Digital 3D',
     reason3P:
       'Utilizamos tomografia 3D e scanners intraorais para planejamentos precisos e recuperações rápidas.',
@@ -332,7 +332,7 @@ const DETAIL_I18N: Record<string, DetailI18n> = {
     reason2Title: 'Costo de Implantes Dentales en Antalya – Master Smile Studio',
     reason2P:
       'Los precios en Antalya son notablemente más económicos, ofreciéndole atención médica prémium a una fracción del costo internacional.',
-    viewAllPackagesBtn: 'Ver Todos los Paquetes →',
+    viewAllPackagesBtn: 'Ver Todos los Paquetes',
     reason3Title: 'Tecnología Avanzada y Planificación Digital 3D',
     reason3P:
       'Contamos con tomografía 3D CBCT y escáneres digitales para una colocación guiada y una rápida recuperación.',
@@ -383,7 +383,7 @@ const DETAIL_I18N: Record<string, DetailI18n> = {
     reason2Title: 'Стоимость имплантации зубов в Анталье – Master Smile Studio',
     reason2P:
       'Цены на имплантацию в Анталье значительно выгоднее, что позволяет получить премиальное лечение с существенной экономией.',
-    viewAllPackagesBtn: 'Посмотреть все пакеты →',
+    viewAllPackagesBtn: 'Посмотреть все пакеты',
     reason3Title: 'Передовые технологии и 3D-точность',
     reason3P:
       'Мы используем 3D-томографию CBCT и цифровые интраоральные сканеры для быстрого заживления и идеальной точности.',
@@ -536,7 +536,7 @@ export default function DentalImplantsDetailView() {
           <p className={styles.textP}>{d.reason2P}</p>
 
           {/* INSERT: PACKAGES SLIDER */}
-          <div className="my-8">
+          <div className="mt-8 mb-0">
             <TreatmentPackagesSlider />
           </div>
 

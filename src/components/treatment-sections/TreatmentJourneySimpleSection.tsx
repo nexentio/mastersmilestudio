@@ -397,7 +397,7 @@ export default function TreatmentJourneySimpleSection({
                   {isOpen && (
                     <div className={styles.content}>
                       <div
-                        style={{ margin: 0, lineHeight: 1.75, color: '#475569', fontSize: '0.96rem' }}
+                        className={styles.contentBody}
                         dangerouslySetInnerHTML={{
                           __html: getCustomContent(item.id, item.content),
                         }}
@@ -418,56 +418,48 @@ export default function TreatmentJourneySimpleSection({
                 href={getWhatsAppLink(locale)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={styles.contactPill}
+                className={`${styles.contactPill} ${styles.pillWhatsapp}`}
                 aria-label="WhatsApp"
               >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="/icons/contact-wa.webp"
-                  alt=""
-                  width={22}
-                  height={22}
-                  className={styles.contactIconImg}
-                />
+                <span className={styles.iconCircle}>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m-3.53 3.49c-.19 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.87 1.21 3.07c.15.2 2.06 3.28 5.09 4.49.72.29 1.29.46 1.73.6.72.23 1.38.2 1.9.12.58-.09 1.79-.73 2.05-1.44.25-.71.25-1.32.18-1.44-.08-.13-.27-.2-.57-.35-.3-.15-1.79-.88-2.07-.98-.28-.11-.49-.16-.69.15-.21.3-.8 1-.98 1.2-.18.21-.36.23-.66.08-.3-.15-1.26-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.18-.3-.02-.46.13-.61.14-.14.3-.35.45-.53.15-.17.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.69-1.67-.95-2.28-.25-.6-.51-.52-.69-.53z" />
+                  </svg>
+                </span>
                 <span className={styles.contactLabel}>{data.whatsappLabel}</span>
               </a>
 
               {/* Phone Call */}
               <a href="tel:+905434568080" className={styles.contactPill} aria-label="Phone Call">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="/icons/contact-phone.webp"
-                  alt=""
-                  width={22}
-                  height={22}
-                  className={styles.contactIconImg}
-                />
+                <span className={styles.iconCircle}>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                  </svg>
+                </span>
                 <span className={styles.contactLabel}>{data.phoneLabel}</span>
               </a>
 
               {/* Quick Form */}
               <a href="#js_target1" className={styles.contactPill} aria-label="Quick Form">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="/icons/contact-form.webp"
-                  alt=""
-                  width={22}
-                  height={22}
-                  className={styles.contactIconImg}
-                />
+                <span className={styles.iconCircle}>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                    <polyline points="14 2 14 8 20 8" />
+                    <line x1="16" y1="13" x2="8" y2="13" />
+                    <line x1="16" y1="17" x2="8" y2="17" />
+                  </svg>
+                </span>
                 <span className={styles.contactLabel}>{data.quickFormLabel}</span>
               </a>
 
               {/* E-mail */}
               <a href="mailto:info@mastersmilestudio.com" className={styles.contactPill} aria-label="E-mail">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="/icons/contact-mail.webp"
-                  alt=""
-                  width={22}
-                  height={22}
-                  className={styles.contactIconImg}
-                />
+                <span className={styles.iconCircle}>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                    <polyline points="22,6 12,13 2,6" />
+                  </svg>
+                </span>
                 <span className={styles.contactLabel}>{data.emailLabel}</span>
               </a>
             </div>

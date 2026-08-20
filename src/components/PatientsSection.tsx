@@ -142,24 +142,6 @@ export default function PatientsSection() {
           }}
         >
           <div style={{ flex: '1 1 320px' }}>
-            <div
-              style={{
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: '0.4rem',
-                backgroundColor: '#fff7ed',
-                border: '1.5px solid #fed7aa',
-                borderRadius: '9999px',
-                padding: '0.35rem 0.85rem',
-                marginBottom: '0.85rem',
-              }}
-            >
-              <span style={{ color: '#ea580c', fontSize: '0.78rem' }}>★</span>
-              <span style={{ fontSize: '0.78rem', fontWeight: 700, color: '#c2410c', letterSpacing: '0.02em' }}>
-                Happy Patient Experiences
-              </span>
-            </div>
-
             {/* Section Title */}
             <h2
               style={{

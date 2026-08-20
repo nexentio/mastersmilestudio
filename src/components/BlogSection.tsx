@@ -102,7 +102,7 @@ export default function BlogSection() {
                   flexDirection: 'column',
                   gap: '1.25rem',
                 }}
-                className="blog-article-card"
+                className={`blog-article-card blog-card-${card.id}`}
               >
                 {/* Image Container with Dynamic Height */}
                 <div
@@ -195,16 +195,18 @@ export default function BlogSection() {
             flex-wrap: nowrap !important;
             overflow-x: auto !important;
             scroll-snap-type: x mandatory !important;
+            scroll-padding-left: 1.5rem !important;
+            scroll-padding-right: 1.5rem !important;
             -webkit-overflow-scrolling: touch !important;
-            gap: 1rem !important;
+            gap: 1.15rem !important;
             width: 100vw !important;
             position: relative !important;
             left: 50% !important;
             right: 50% !important;
             margin-left: -50vw !important;
             margin-right: -50vw !important;
-            padding-left: 1.25rem !important;
-            padding-right: 1.25rem !important;
+            padding-left: 1.5rem !important;
+            padding-right: 1.5rem !important;
             padding-bottom: 1.25rem !important;
             scrollbar-width: none !important;
             -ms-overflow-style: none !important;
@@ -213,10 +215,10 @@ export default function BlogSection() {
             display: none !important;
           }
           .blog-article-card {
-            flex: 0 0 78vw !important;
-            width: 78vw !important;
-            max-width: 310px !important;
-            min-width: 240px !important;
+            flex: 0 0 80vw !important;
+            width: 80vw !important;
+            max-width: 320px !important;
+            min-width: 250px !important;
             scroll-snap-align: start !important;
             gap: 0.85rem !important;
           }

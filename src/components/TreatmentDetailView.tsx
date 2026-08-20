@@ -104,7 +104,7 @@ const HUB_DATA: Record<string, HubI18n> = {
     reason2Title: 'Transparent All-Inclusive Packages & Up to 70% Cost Savings',
     reason2P:
       'High-quality dental care in the UK, Europe, and the US can cost tens of thousands of pounds. At Master Smile Studio, favorable operational costs allow us to provide genuine Swiss and German dental treatments at up to 70% lower prices with transparent fixed packages.',
-    viewAllPackagesBtn: 'View All Dental Packages & Pricing →',
+    viewAllPackagesBtn: 'View All Dental Packages & Pricing',
     reason3Title: 'High-Definition 3D CBCT Tomography & In-House Digital Lab',
     reason3P:
       'We utilize Carl Zeiss optical dental microscopes, 3D CBCT bone scanners, and automated milling machines to fabricate biocompatible crowns and veneers with microscopic precision in just 4 to 6 days.',
@@ -122,22 +122,22 @@ const HUB_DATA: Record<string, HubI18n> = {
     singleP:
       'Permanent titanium tooth replacement for missing teeth with Straumann implants, bone grafting, sinus lifting, and monolithic zirconia bridges.',
     singleLinkLead: 'Learn more about ',
-    singleLinkText: 'Dental Implants & All-on-4/6 →',
+    singleLinkText: 'Dental Implants & All-on-4/6',
     multipleTitle: '2. Dental Veneers & Porcelain Laminates (Ivoclar E-Max)',
     multipleP:
       'Custom-crafted ultra-thin Swiss E-Max porcelain laminates to correct discoloration, gaps, chips, and achieve a radiant Hollywood Smile in 5 days.',
     multipleLinkLead: 'Explore ',
-    multipleLinkText: 'Dental Veneers & E-Max Laminates →',
+    multipleLinkText: 'Dental Veneers & E-Max Laminates',
     allOn4Title: '3. Dental Crowns & Fixed Bridges (German Zirconia)',
     allOn4P:
       'High-strength 1200+ MPa multi-layered German zirconia crowns and fixed bridges to restore broken, root-canal treated, or missing teeth permanently.',
     allOn4LinkLead: 'Discover ',
-    allOn4LinkText: 'Dental Crowns & Fixed Bridges →',
+    allOn4LinkText: 'Dental Crowns & Fixed Bridges',
     allOn6Title: '4. Cosmetic Dentistry, Dentures & General Oral Health',
     allOn6P:
       'Snap-On implant overdentures, 3D Digital Smile Design, Philips Zoom laser whitening, microscopic root canal therapy, and Air-Flow deep cleaning.',
     allOn6LinkLead: 'Read about ',
-    allOn6LinkText: 'Dentures, Cosmetic & General Dentistry →',
+    allOn6LinkText: 'Dentures, Cosmetic & General Dentistry',
   },
   tr: {
     introHeading: 'Antalya’da Dünya Standartlarında Diş Tedavileri & Gülüş Tasarımı',
@@ -172,7 +172,7 @@ const HUB_DATA: Record<string, HubI18n> = {
     reason2Title: 'Şeffaf Her Şey Dahil Paketler & %70’e Varan Fiyat Tasarrufu',
     reason2P:
       'Avrupa ve İngiltere’de on binlerce Euro tutan uzman implant ve kaplama tedavileri, Türkiye’deki avantajlı operasyonel maliyetler sayesinde kliniğimizde %70 daha uygundur.',
-    viewAllPackagesBtn: 'Tüm Tedavi Paketleri ve Fiyatları İncele →',
+    viewAllPackagesBtn: 'Tüm Tedavi Paketleri ve Fiyatları İncele',
     reason3Title: '3D CBCT Tomografi & Yüksek Çözünürlüklü Dental Mikroskoplar',
     reason3P:
       'Carl Zeiss dental mikroskoplar, 3D tomografi ve CAD/CAM teknolojimiz ile tedavileriniz 4 ila 6 gün gibi rekor bir sürede sıfır hata ile tamamlanır.',
@@ -190,22 +190,22 @@ const HUB_DATA: Record<string, HubI18n> = {
     singleP:
       'Eksik dişler için ömür boyu garantili Straumann implantlar, kemik grefti, sinüs lifting ve monolitik zirkonyum köprüler.',
     singleLinkLead: 'Detaylı bilgi için: ',
-    singleLinkText: 'Diş İmplantları & All-on-4/6 →',
+    singleLinkText: 'Diş İmplantları & All-on-4/6',
     multipleTitle: '2. Lamine Veneer & Yaprak Porselen (Ivoclar E-Max)',
     multipleP:
       'Renk bozukluğu, kırık ve aralıklı dişlerde 3D Dijital Gülüş Tasarımı ile 5 günde kusursuz Hollywood gülüşü.',
     multipleLinkLead: 'İnceleyin: ',
-    multipleLinkText: 'Lamine Veneer & E-Max →',
+    multipleLinkText: 'Lamine Veneer & E-Max',
     allOn4Title: '3. Zirkonyum Kron & Sabit Diş Köprüleri',
     allOn4P:
       '1200+ MPa dayanıklılıkta Alman Zirkonyumu ile kırık veya kanal tedavili dişleri 360 derece sararak ömür boyu koruyan kaplamalar.',
     allOn4LinkLead: 'Keşfedin: ',
-    allOn4LinkText: 'Zirkonyum Kron & Diş Köprüsü →',
+    allOn4LinkText: 'Zirkonyum Kron & Diş Köprüsü',
     allOn6Title: '4. Estetik Diş Hekimliği, Protezler & Genel Diş Sağlığı',
     allOn6P:
       'Çıt çıtlı damaksız protezler, Philips Zoom lazer beyazlatma, mikroskobik kanal tedavisi ve Air-Flow derin diş temizliği.',
     allOn6LinkLead: 'Bilgi alın: ',
-    allOn6LinkText: 'Protez, Estetik & Genel Diş Tedavileri →',
+    allOn6LinkText: 'Protez, Estetik & Genel Diş Tedavileri',
   },
   de: {
     introHeading: 'Erstklassige Zahnbehandlungen & Smile Makeover in Antalya, Türkei',
@@ -240,7 +240,7 @@ const HUB_DATA: Record<string, HubI18n> = {
     reason2Title: 'Transparente Festpreise & Bis zu 70% Ersparnis',
     reason2P:
       'In Deutschland und der Schweiz kosten Gesamtsanierungen oft ein Vermögen. Bei uns erhalten Sie dieselbe Schweizer Spitzenqualität zu 70% günstigeren Preisen.',
-    viewAllPackagesBtn: 'Alle Behandlungs-Pakete & Preise ansehen →',
+    viewAllPackagesBtn: 'Alle Behandlungs-Pakete & Preise ansehen',
     reason3Title: '3D CBCT Tomographie & Carl Zeiss Dentalmikroskope',
     reason3P:
       'Modernste Technik ermöglicht eine präzise Fertigung Ihrer Kronen und Veneers in nur 4 bis 6 Tagen.',
@@ -258,22 +258,22 @@ const HUB_DATA: Record<string, HubI18n> = {
     singleP:
       'Dauerhafter Zahnersatz mit lebenslanger Garantie auf Straumann Implantate und monolithische Zirkonbrücken.',
     singleLinkLead: 'Mehr erfahren über ',
-    singleLinkText: 'Zahnimplantate & All-on-4/6 →',
+    singleLinkText: 'Zahnimplantate & All-on-4/6',
     multipleTitle: '2. Veneers & Porzellan-Laminate (Ivoclar E-Max)',
     multipleP:
       'Hauchdünne Schweizer Glaskeramik für perfekt weiße Zähne und Smile Design in 5 Tagen.',
     multipleLinkLead: 'Entdecken Sie ',
-    multipleLinkText: 'Veneers & E-Max Laminate →',
+    multipleLinkText: 'Veneers & E-Max Laminate',
     allOn4Title: '3. Zahnkronen & Feste Zirkonbrücken',
     allOn4P:
       'Hochstabiles deutsches Zirkon (1200+ MPa) zum 360°-Schutz geschädigter Zähne.',
     allOn4LinkLead: 'Details zu ',
-    allOn4LinkText: 'Zahnkronen & Brücken →',
+    allOn4LinkText: 'Zahnkronen & Brücken',
     allOn6Title: '4. Ästhetik, Prothetik & Allgemeine Zahnheilkunde',
     allOn6P:
       'Snap-On Klick-Prothesen, Philips Zoom Laser-Bleaching, mikroskopische Endodontie und Air-Flow Reinigung.',
     allOn6LinkLead: 'Informationen zu ',
-    allOn6LinkText: 'Prothesen, Ästhetik & Prophylaxe →',
+    allOn6LinkText: 'Prothesen, Ästhetik & Prophylaxe',
   },
   pl: {
     introHeading: 'Światowej Klasy Zabiegi Stomatologiczne i Metamorfozy Uśmiechu w Antalyi',
@@ -308,7 +308,7 @@ const HUB_DATA: Record<string, HubI18n> = {
     reason2Title: 'Przejrzyste Pakiety All-Inclusive i Oszczędność do 70%',
     reason2P:
       'Oferujemy oryginalne szwajcarskie i niemieckie materiały medyczne z oszczędnością do 70% w porównaniu z cenami w Europie.',
-    viewAllPackagesBtn: 'Zobacz Wszystkie Pakiety i Ceny →',
+    viewAllPackagesBtn: 'Zobacz Wszystkie Pakiety i Ceny',
     reason3Title: 'Tomografia 3D CBCT i Mikroskopy Carl Zeiss',
     reason3P:
       'Nowoczesny park technologiczny umożliwia wykonanie pełnej metamorfozy w zaledwie 4 do 6 dni.',
@@ -326,22 +326,22 @@ const HUB_DATA: Record<string, HubI18n> = {
     singleP:
       'Trwałe uzupełnienie braków na implantach Straumann z mostami z tlenku cyrkonu i dożywotnią gwarancją.',
     singleLinkLead: 'Dowiedz się więcej o ',
-    singleLinkText: 'Implantach Zębowych & All-on-4/6 →',
+    singleLinkText: 'Implantach Zębowych & All-on-4/6',
     multipleTitle: '2. Licówki Porcelanowe i E-Max (Hollywood Smile)',
     multipleP:
       'Szwajcarska ceramika Ivoclar E-Max korygująca kształt i kolor zębów w 5 dni z projektem 3D DSD.',
     multipleLinkLead: 'Poznaj szczegóły ',
-    multipleLinkText: 'Licówek Porcelanowych →',
+    multipleLinkText: 'Licówek Porcelanowych',
     allOn4Title: '3. Korony Zębowe i Mosty Cyrkonowe',
     allOn4P:
       'Wytrzymały niemiecki tlenek cyrkonu (1200+ MPa) chroniący zniszczone zęby 360 stopni.',
     allOn4LinkLead: 'Sprawdź ',
-    allOn4LinkText: 'Korony i Mosty Cyrkonowe →',
+    allOn4LinkText: 'Korony i Mosty Cyrkonowe',
     allOn6Title: '4. Stomatologia Estetyczna, Protezy i Profilaktyka',
     allOn6P:
       'Protezy na zatrzaskach bez podniebienia, wybielanie Philips Zoom, leczenie kanałowe i higienizacja Air-Flow.',
     allOn6LinkLead: 'Czytaj o ',
-    allOn6LinkText: 'Protezach i Stomatologii Ogólnej →',
+    allOn6LinkText: 'Protezach i Stomatologii Ogólnej',
   },
   pt: {
     introHeading: 'Tratamentos Odontológicos de Excelência & Design do Sorriso em Antalya',
@@ -376,7 +376,7 @@ const HUB_DATA: Record<string, HubI18n> = {
     reason2Title: 'Pacotes Transparentes All-Inclusive com até 70% de Economia',
     reason2P:
       'Oferecemos materiais suíços e alemães originais com até 70% de economia em relação aos custos praticados na Europa e América do Norte.',
-    viewAllPackagesBtn: 'Ver Todos os Pacotes e Preços →',
+    viewAllPackagesBtn: 'Ver Todos os Pacotes e Preços',
     reason3Title: 'Tomografia 3D CBCT e Microscópios Ópticos Carl Zeiss',
     reason3P:
       'Nossa tecnologia avançada permite a confecção de próteses e facetas com precisão absoluta em apenas 4 a 6 dias.',
@@ -394,22 +394,22 @@ const HUB_DATA: Record<string, HubI18n> = {
     singleP:
       'Substituição definitiva de dentes com implantes Straumann, enxertos e pontes fixas em zircônia com garantia vitalícia.',
     singleLinkLead: 'Saiba mais sobre ',
-    singleLinkText: 'Implantes Dentários & All-on-4/6 →',
+    singleLinkText: 'Implantes Dentários & All-on-4/6',
     multipleTitle: '2. Facetas Dentárias & Lentes de Contato E-Max',
     multipleP:
       'Cerâmica vítrea suíça Ivoclar E-Max para corrigir cor, formato e diastemas em apenas 5 dias.',
     multipleLinkLead: 'Conheça ',
-    multipleLinkText: 'Facetas Dentárias & E-Max →',
+    multipleLinkText: 'Facetas Dentárias & E-Max',
     allOn4Title: '3. Coroas Dentárias & Pontes Fixas em Zircônia',
     allOn4P:
       'Zircônia alemã pura (1200+ MPa) para proteger dentes fraturados ou desvitalizados em 360 graus.',
     allOn4LinkLead: 'Descubra ',
-    allOn4LinkText: 'Coroas e Pontes em Zircônia →',
+    allOn4LinkText: 'Coroas e Pontes em Zircônia',
     allOn6Title: '4. Odontologia Estética, Próteses & Clínica Geral',
     allOn6P:
       'Overdentures de clique sem céu da boca, clareamento Philips Zoom, canal microscópico e profilaxia Air-Flow.',
     allOn6LinkLead: 'Leia sobre ',
-    allOn6LinkText: 'Próteses, Estética & Clínica Geral →',
+    allOn6LinkText: 'Próteses, Estética & Clínica Geral',
   },
   es: {
     introHeading: 'Tratamientos Dentales de Excelencia & Diseño de Sonrisa en Antalya, Turquía',
@@ -444,7 +444,7 @@ const HUB_DATA: Record<string, HubI18n> = {
     reason2Title: 'Paquetes Todo Incluido y Ahorro de hasta el 70%',
     reason2P:
       'Ofrecemos materiales suizos y alemanes originales con un 70% de ahorro respecto a las tarifas de clínicas en Europa y EE.UU.',
-    viewAllPackagesBtn: 'Ver Todos los Paquetes y Precios →',
+    viewAllPackagesBtn: 'Ver Todos los Paquetes y Precios',
     reason3Title: 'TAC 3D CBCT y Microscopios Ópticos Carl Zeiss',
     reason3P:
       'Nuestra tecnología permite confeccionar coronas y carillas con ajuste microscópico en tan solo 4 a 6 días.',
@@ -462,22 +462,22 @@ const HUB_DATA: Record<string, HubI18n> = {
     singleP:
       'Reposición fija con implantes Straumann, elevación de seno y puentes de zirconio con garantía de por vida.',
     singleLinkLead: 'Más información sobre ',
-    singleLinkText: 'Implantes Dentales & All-on-4/6 →',
+    singleLinkText: 'Implantes Dentales & All-on-4/6',
     multipleTitle: '2. Carillas Dentales & Porcelana E-Max (Hollywood Smile)',
     multipleP:
       'Cerámica vítrea suiza Ivoclar E-Max para corregir forma y color en solo 5 días con Diseño Digital 3D.',
     multipleLinkLead: 'Ver detalles de ',
-    multipleLinkText: 'Carillas Dentales & E-Max →',
+    multipleLinkText: 'Carillas Dentales & E-Max',
     allOn4Title: '3. Coronas Dentales & Puentes Fijos de Zirconio',
     allOn4P:
       'Zirconio alemán puro (1200+ MPa) para recubrir dientes destruidos o endodonciados en 360 grados.',
     allOn4LinkLead: 'Descubra ',
-    allOn4LinkText: 'Coronas y Puentes de Zirconio →',
+    allOn4LinkText: 'Coronas y Puentes de Zirconio',
     allOn6Title: '4. Estética Dental, Sobredentaduras & Odontología General',
     allOn6P:
       'Sobredentaduras con anclaje sin paladar, blanqueamiento Philips Zoom, endodoncia microscópica y limpieza Air-Flow.',
     allOn6LinkLead: 'Detalles sobre ',
-    allOn6LinkText: 'Prótesis, Estética & Odontología General →',
+    allOn6LinkText: 'Prótesis, Estética & Odontología General',
   },
   ru: {
     introHeading: 'Стоматологическое лечение европейского уровня & Дизайн улыбки в Анталье',
@@ -512,7 +512,7 @@ const HUB_DATA: Record<string, HubI18n> = {
     reason2Title: 'Пакеты «Все включено» и экономия до 70%',
     reason2P:
       'Мы предлагаем швейцарские и немецкие материалы со скидкой до 70% по сравнению с ценами в клиниках Европы и СНГ.',
-    viewAllPackagesBtn: 'Все пакеты лечения и цены →',
+    viewAllPackagesBtn: 'Все пакеты лечения и цены',
     reason3Title: '3D CBCT томография и микроскопы Carl Zeiss',
     reason3P:
       'Высокоточные технологии позволяют изготовить ваши коронки и виниры за рекордные 4–6 дней.',
@@ -530,22 +530,22 @@ const HUB_DATA: Record<string, HubI18n> = {
     singleP:
       'Пожизненная гарантия на швейцарские импланты Straumann, синус-лифтинг и циркониевые мосты.',
     singleLinkLead: 'Подробнее об ',
-    singleLinkText: 'Имплантации зубов & All-on-4/6 →',
+    singleLinkText: 'Имплантации зубов & All-on-4/6',
     multipleTitle: '2. Керамические виниры Ivoclar E-Max (Hollywood Smile)',
     multipleP:
       'Швейцарская стеклокерамика Ivoclar E-Max для идеальной формы и белизны зубов за 5 дней с 3D дизайном DSD.',
     multipleLinkLead: 'Ознакомьтесь с ',
-    multipleLinkText: 'Керамическими винирами E-Max →',
+    multipleLinkText: 'Керамическими винирами E-Max',
     allOn4Title: '3. Зубные коронки и мосты из немецкого циркония',
     allOn4P:
       'Сверхпрочный цирконий (1200+ МПа) для защиты разрушенных зубов на 360 градусов.',
     allOn4LinkLead: 'Узнать больше о ',
-    allOn4LinkText: 'Циркониевых коронках и мостах →',
+    allOn4LinkText: 'Циркониевых коронках и мостах',
     allOn6Title: '4. Эстетическая стоматология, протезы и терапия',
     allOn6P:
       'Замковые протезы без неба, отбеливание Philips Zoom, лечение каналов под микроскопом и гигиена Air-Flow.',
     allOn6LinkLead: 'Читать о ',
-    allOn6LinkText: 'Протезах, эстетике и терапии →',
+    allOn6LinkText: 'Протезах, эстетике и терапии',
   },
 };
 

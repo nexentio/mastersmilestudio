@@ -1,5 +1,5 @@
 .section {
-  padding: 3.5rem 0;
+  padding: 0;
   background-color: #ffffff;
   color: #111827;
   position: relative;
@@ -11,6 +11,24 @@
   margin: 0 auto;
   padding: 0 1.5rem;
   position: relative;
+}
+
+.topDividerWrap {
+  margin-top: 0;
+}
+
+.topDividerWrap > div {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.bottomDividerWrap {
+  margin-bottom: 0;
+}
+
+.bottomDividerWrap > div {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 /* Decorative Divider Wave */
@@ -144,4 +162,24 @@
 .link:hover {
   color: #1d4ed8;
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 0;
+  }
+
+  .topDividerWrap > div {
+    margin-top: 0.25rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .bottomDividerWrap > div {
+    margin-top: 1.25rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .videoCard {
+    margin-bottom: 1.5rem;
+  }
 }

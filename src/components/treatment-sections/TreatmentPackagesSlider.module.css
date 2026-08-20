@@ -1,6 +1,6 @@
 .wrapper {
   position: relative;
-  margin-top: 3.5rem;
+  margin-top: 1rem;
   margin-bottom: 3.5rem;
 }
 
@@ -80,8 +80,8 @@
   gap: 1.5rem;
 }
 
-/* Mobile Container - hidden on desktop */
-.mobileContainer {
+/* Mobile Track - hidden on desktop */
+.mobileTrack {
   display: none;
 }
 
@@ -200,42 +200,116 @@
 }
 
 .priceBox {
-  background-color: #09090b;
-  color: #ffffff;
-  border-radius: 14px;
-  padding: 1rem 1.25rem;
+  background: linear-gradient(180deg, #484b56 0%, #2c2f38 24%, #181a22 58%, #08090c 100%);
+  border: 1.5px solid #525663;
+  border-radius: 16px;
+  padding: 0.95rem 1.25rem;
   text-align: center;
   margin-bottom: 1rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45), inset 0 1.5px 1.5px rgba(255, 255, 255, 0.45), inset 0 -2px 3px rgba(0, 0, 0, 0.85);
+  position: relative;
+  overflow: hidden;
+}
+
+.priceLabel {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.2rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.priceValue {
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: #fbbf24;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7), 0 0 14px rgba(251, 191, 36, 0.25);
+}
+
+.priceSub {
+  font-size: 0.76rem;
+  font-weight: 500;
+  color: #94a3b8;
+  margin-top: 0.2rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
 }
 
 .btn {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   text-align: center;
-  background-color: #D58936;
-  color: #ffffff;
-  padding: 0.75rem;
+  background: linear-gradient(180deg, #f5d47a 0%, #e6b845 28%, #d49a24 60%, #b87b10 100%);
+  color: #5c3504;
+  padding: 0.85rem 1.25rem;
   border-radius: 9999px;
-  font-weight: 750;
-  font-size: 0.88rem;
+  border: 1.5px solid #a86c0d;
+  font-weight: 700;
+  font-size: 0.98rem;
+  letter-spacing: 0.01em;
   text-decoration: none;
-  box-shadow: 0 4px 14px rgba(213, 137, 54, 0.3);
-  transition: all 0.2s ease;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.45);
+  box-shadow: 0 4px 14px rgba(184, 123, 16, 0.35), inset 0 1px 1px rgba(255, 255, 255, 0.75), inset 0 -1px 2px rgba(0, 0, 0, 0.25);
+  transition: all 0.22s ease;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
 }
 
 .btn:hover {
-  background-color: #bf772b;
+  background: linear-gradient(180deg, #fae08e 0%, #ecc152 28%, #dfa52f 60%, #c48618 100%);
+  color: #482701;
   transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(184, 123, 16, 0.45), inset 0 1px 2px rgba(255, 255, 255, 0.85), inset 0 -1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  background: linear-gradient(180deg, #dfa52f 0%, #cb8e1c 50%, #b87b10 100%);
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(184, 123, 16, 0.3), inset 0 2px 4px rgba(0, 0, 0, 0.25);
 }
 
 /* Mobile Responsive */
 @media (max-width: 860px) {
+  .wrapper {
+    margin-top: 0.5rem;
+    margin-bottom: 2.5rem;
+    width: 100vw !important;
+    position: relative !important;
+    left: 50% !important;
+    right: 50% !important;
+    margin-left: -50vw !important;
+    margin-right: -50vw !important;
+    overflow: visible !important;
+    box-sizing: border-box !important;
+  }
+
+  .container {
+    padding: 0 !important;
+    max-width: 100vw !important;
+    width: 100vw !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+  }
+
   .carouselHeader {
-    margin-bottom: 1.5rem;
+    padding: 0 1.25rem;
+    margin-bottom: 1.25rem;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .heading {
-    font-size: 1.75rem;
+    font-size: 1.65rem;
+  }
+
+  .subText {
+    font-size: 0.9rem;
   }
 
   .navBtnGroup {
@@ -246,87 +320,42 @@
     display: none;
   }
 
-  .mobileContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin: 0 auto;
+  /* 100% full-width swipe track on mobile */
+  .mobileTrack {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    -webkit-overflow-scrolling: touch !important;
+    scroll-snap-type: x mandatory !important;
+    scroll-padding-left: 1.25rem !important;
+    scroll-padding-right: 1.25rem !important;
+    gap: 1rem !important;
+    width: 100vw !important;
+    padding: 0.5rem 1.25rem 1.75rem 1.25rem !important;
+    scrollbar-width: none !important;
+    -ms-overflow-style: none !important;
+    box-sizing: border-box !important;
   }
 
-  .mobileCardWrapper {
-    position: relative;
-    width: 100%;
-    max-width: 320px;
-    margin: 0 auto;
+  .mobileTrack::-webkit-scrollbar {
+    display: none;
   }
 
-  .mobileCardInner {
-    width: 100%;
+  .card {
+    flex: 0 0 calc(100vw - 3.25rem) !important;
+    width: calc(100vw - 3.25rem) !important;
+    min-width: calc(100vw - 3.25rem) !important;
+    max-width: none !important;
+    scroll-snap-align: start !important;
+    padding: 1.4rem 1.25rem !important;
+    border-radius: 18px !important;
+    box-sizing: border-box !important;
   }
 
-  .sideArrowBtn {
-    position: absolute;
-    top: 45%;
-    transform: translateY(-50%);
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background-color: #ffffff;
-    color: #0f172a;
-    border: 1px solid rgba(0, 0, 0, 0.12);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
-    font-size: 1.6rem;
-    line-height: 1;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    z-index: 30;
-    transition: transform 0.2s ease, background-color 0.2s ease;
-  }
-
-  .sideArrowBtn:active {
-    transform: translateY(-50%) scale(0.92);
-  }
-
-  .sideArrowLeft {
-    left: -18px;
-  }
-
-  .sideArrowRight {
-    right: -18px;
-    background-color: #0f172a;
-    color: #ffffff;
-    border-color: #0f172a;
-  }
-
-  .mobileDots {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    margin-top: 1.25rem;
-  }
-
-  .dot {
-    width: 9px;
-    height: 9px;
-    border-radius: 50%;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    transition: all 0.2s ease;
-  }
-
-  .dotActive {
-    background-color: #0f172a;
-    width: 22px;
-    border-radius: 9999px;
-  }
-
-  .dotInactive {
-    background-color: #cbd5e1;
+  .card:hover,
+  .card:active {
+    transform: none;
   }
 }

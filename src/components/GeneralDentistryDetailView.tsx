@@ -103,7 +103,7 @@ const GENERAL_DATA: Record<string, GeneralI18n> = {
     reason2Title: 'Transparent All-Inclusive Packages & Up to 70% Savings',
     reason2P:
       'In the UK, US, and Europe, specialist root canal treatments and deep cleanings can cost thousands with long waiting lists. We offer immediate appointments and luxury packages with up to 70% savings.',
-    viewAllPackagesBtn: 'View All General Dental Packages & Prices →',
+    viewAllPackagesBtn: 'View All General Dental Packages & Prices',
     reason3Title: 'High-Definition 3D CBCT Tomography & Dental Microscopes',
     reason3P:
       'We utilize Carl Zeiss optical dental microscopes and low-dose 3D tomography to identify micro-canals, hidden root fractures, and subgingival calculus invisible to standard 2D X-rays.',
@@ -121,22 +121,22 @@ const GENERAL_DATA: Record<string, GeneralI18n> = {
     singleP:
       'Painless microscopic root canal disinfection and 3D thermoplastic filling to save natural teeth from extraction.',
     singleLinkLead: 'Learn more about ',
-    singleLinkText: 'Root Canal Treatment →',
+    singleLinkText: 'Root Canal Treatment',
     multipleTitle: '2. Ultrasonic Teeth Cleaning & Air-Flow Polishing',
     multipleP:
       'Gentle removal of hard tartar and stubborn stains using acoustic sound waves and Swiss Air-Flow sodium bicarbonate polishing.',
     multipleLinkLead: 'Explore ',
-    multipleLinkText: 'Teeth Cleaning & Scaling →',
+    multipleLinkText: 'Teeth Cleaning & Scaling',
     allOn4Title: '3. Aesthetic Nano-Hybrid Composite Fillings & Inlays',
     allOn4P:
       'Biocompatible tooth-colored composite restorations and CAD/CAM ceramic inlays to replace decay and old amalgam fillings.',
     allOn4LinkLead: 'Discover ',
-    allOn4LinkText: 'Dental Fillings & Onlays →',
+    allOn4LinkText: 'Dental Fillings & Onlays',
     allOn6Title: '4. Atraumatic Wisdom Tooth Extractions & Periodontology',
     allOn6P:
       '3D CBCT-guided surgical extractions and diode laser gum pocket decontamination for long-term periodontal stability.',
     allOn6LinkLead: 'Read about ',
-    allOn6LinkText: 'Tooth Extractions & Periodontics →',
+    allOn6LinkText: 'Tooth Extractions & Periodontics',
   },
   tr: {
     introHeading: 'Antalya Genel Diş Hekimliği & Koruyucu Ağız Sağlığı',
@@ -171,7 +171,7 @@ const GENERAL_DATA: Record<string, GeneralI18n> = {
     reason2Title: 'Şeffaf Her Şey Dahil Paketler & %70’e Varan Fiyat Tasarrufu',
     reason2P:
       'Avrupa ve İngiltere’de uzman kanal tedavileri ve cerrahi çekimler çok yüksek maliyetli ve aylar süren bekleme listelerine sahipken, kliniğimizde aynı gün VIP hizmetle %70 daha uygundur.',
-    viewAllPackagesBtn: 'Tüm Genel Diş Paketleri ve Fiyatları İncele →',
+    viewAllPackagesBtn: 'Tüm Genel Diş Paketleri ve Fiyatları İncele',
     reason3Title: '3D CBCT Tomografi & Yüksek Çözünürlüklü Dental Mikroskoplar',
     reason3P:
       'Carl Zeiss optik dental mikroskoplarımız ve 3D tomografimiz sayesinde klasik röntgende görünmeyen mikro kanal anatomileri ve gizli kırıklar milimetrik olarak tespit edilir.',
@@ -189,22 +189,22 @@ const GENERAL_DATA: Record<string, GeneralI18n> = {
     singleP:
       'Dental mikroskop altında milimetrik kök temizliği ve 3D biyouyumlu kanal dolumu ile dişi çekimden kurtaran tedavi.',
     singleLinkLead: 'Detaylı bilgi için: ',
-    singleLinkText: 'Kanal Tedavisi →',
+    singleLinkText: 'Kanal Tedavisi',
     multipleTitle: '2. Ultrasonik Diş Taşı Temizliği & Air-Flow Cila',
     multipleP:
       'Ses dalgalarıyla diş minesi çizilmeden yapılan derin tartar temizliği ve İsviçre Air-Flow ile lekesiz pürüzsüzlük.',
     multipleLinkLead: 'İnceleyin: ',
-    multipleLinkText: 'Diş Temizliği & Bakım →',
+    multipleLinkText: 'Diş Temizliği & Bakım',
     allOn4Title: '3. Estetik Nanokompozit Dolgular & Porselen Inlay',
     allOn4P:
       'Doğal diş renginde sağlam dolgular ve eski cıvalı siyah amalgam dolguların güvenli sökümü.',
     allOn4LinkLead: 'Keşfedin: ',
-    allOn4LinkText: 'Diş Dolguları & Onlay →',
+    allOn4LinkText: 'Diş Dolguları & Onlay',
     allOn6Title: '4. Atravmatik 20’lik Diş Çekimi & Periodontoloji',
     allOn6P:
       '3D Tomografi kılavuzluğunda konforlu cerrahi diş çekimleri ve lazer destekli diş eti tedavisi.',
     allOn6LinkLead: 'Bilgi alın: ',
-    allOn6LinkText: 'Diş Çekimi & Diş Eti Tedavisi →',
+    allOn6LinkText: 'Diş Çekimi & Diş Eti Tedavisi',
   },
   de: {
     introHeading: 'Allgemeine Zahnheilkunde & Prophylaxe in Antalya, Türkei',
@@ -239,7 +239,7 @@ const GENERAL_DATA: Record<string, GeneralI18n> = {
     reason2Title: 'Transparente Festpreise & Bis zu 70% Ersparnis',
     reason2P:
       'In Deutschland, Österreich und der Schweiz sind mikroskopische Wurzelbehandlungen oft sehr teuer. Bei uns erhalten Sie All-Inclusive-Pakete mit Hotel und Chauffeur.',
-    viewAllPackagesBtn: 'Alle Behandlungs-Pakete & Preise ansehen →',
+    viewAllPackagesBtn: 'Alle Behandlungs-Pakete & Preise ansehen',
     reason3Title: '3D CBCT Tomographie & Carl Zeiss Dentalmikroskope',
     reason3P:
       'Modernste Mikroskope machen selbst feinste Wurzelkanäle und Mikrorisse sichtbar, die im normalen Röntgen verborgen bleiben.',
@@ -257,22 +257,22 @@ const GENERAL_DATA: Record<string, GeneralI18n> = {
     singleP:
       'Schmerzfreie Desinfektion und 3D-Füllung der Wurzelkanäle zum dauerhaften Erhalt Ihres natürlichen Zahns.',
     singleLinkLead: 'Mehr erfahren über ',
-    singleLinkText: 'Wurzelbehandlung →',
+    singleLinkText: 'Wurzelbehandlung',
     multipleTitle: '2. Ultraschall-Zahnreinigung & Air-Flow Politur',
     multipleP:
       'Schonende Entfernung von Zahnstein und Verfärbungen mit sanften Schallwellen und Schweizer Air-Flow Pulver.',
     multipleLinkLead: 'Entdecken Sie ',
-    multipleLinkText: 'Professionelle Zahnreinigung →',
+    multipleLinkText: 'Professionelle Zahnreinigung',
     allOn4Title: '3. Ästhetische Nanokomposit-Füllungen & Keramik-Inlays',
     allOn4P:
       'Zahnfarbene, langlebige Füllungen und CAD/CAM Keramik-Inlays als perfekter Ersatz für alte Amalgamfüllungen.',
     allOn4LinkLead: 'Details zu ',
-    allOn4LinkText: 'Zahnfüllungen & Inlays →',
+    allOn4LinkText: 'Zahnfüllungen & Inlays',
     allOn6Title: '4. Weisheitszahn-OP & Parodontitistherapie',
     allOn6P:
       '3D-geführte schonende operative Zahnentfernungen und Lasertherapie für gesundes, entzündungsfreies Zahnfleisch.',
     allOn6LinkLead: 'Informationen zu ',
-    allOn6LinkText: 'Zahnentfernung & Parodontologie →',
+    allOn6LinkText: 'Zahnentfernung & Parodontologie',
   },
   pl: {
     introHeading: 'Stomatologia Ogólna i Profilaktyka w Antalyi, Turcja',
@@ -307,7 +307,7 @@ const GENERAL_DATA: Record<string, GeneralI18n> = {
     reason2Title: 'Przejrzyste Pakiety All-Inclusive i Oszczędność do 70%',
     reason2P:
       'W Polsce i Europie Zachodniej specjalistyczne leczenie kanałowe pod mikroskopem bywa kosztowne. Oferujemy pakiety z hotelem 5★ i kierowcą VIP o 70% taniej.',
-    viewAllPackagesBtn: 'Zobacz Wszystkie Pakiety i Ceny →',
+    viewAllPackagesBtn: 'Zobacz Wszystkie Pakiety i Ceny',
     reason3Title: 'Tomografia 3D CBCT i Mikroskopy Stomatologiczne Carl Zeiss',
     reason3P:
       'Wysokiej klasy mikroskopy operacyjne pozwalają odnaleźć dodatkowe kanały i mikropęknięcia niewidoczne na tradycyjnym RTG.',
@@ -325,22 +325,22 @@ const GENERAL_DATA: Record<string, GeneralI18n> = {
     singleP:
       'Bezbólowa dezynfekcja i termoplastyczne wypełnienie kanałów ratujące naturalny ząb.',
     singleLinkLead: 'Dowiedz się więcej o ',
-    singleLinkText: 'Leczeniu Kanałowym →',
+    singleLinkText: 'Leczeniu Kanałowym',
     multipleTitle: '2. Skaling Ultradźwiękowy i Piaskowanie Air-Flow',
     multipleP:
       'Usuwanie kamienia i osadów falami ultradźwiękowymi bez uszkadzania szkliwa.',
     multipleLinkLead: 'Poznaj szczegóły ',
-    multipleLinkText: 'Higienizacji Zębów →',
+    multipleLinkText: 'Higienizacji Zębów',
     allOn4Title: '3. Estetyczne Wypełnienia Nanokompozytowe & Inlay',
     allOn4P:
       'Trwałe wypełnienia w kolorze zęba i bezpieczna wymiana starych plomb z amalgamatem.',
     allOn4LinkLead: 'Sprawdź ',
-    allOn4LinkText: 'Wypełnienia i Nakłady →',
+    allOn4LinkText: 'Wypełnienia i Nakłady',
     allOn6Title: '4. Atraumatyczne Usuwanie Ósemek i Periodontologia',
     allOn6P:
       'Chirurgia pod kontrolą tomografii 3D oraz laserowe leczenie krwawiących dziąseł.',
     allOn6LinkLead: 'Czytaj o ',
-    allOn6LinkText: 'Chirurgii i Dziąsłach →',
+    allOn6LinkText: 'Chirurgii i Dziąsłach',
   },
   pt: {
     introHeading: 'Clínica Geral & Odontologia Preventiva em Antalya, Turquia',
@@ -375,7 +375,7 @@ const GENERAL_DATA: Record<string, GeneralI18n> = {
     reason2Title: 'Pacotes Transparentes All-Inclusive com até 70% de Economia',
     reason2P:
       'Tratamentos especializados de canal e cirurgias na Europa e América do Norte têm custos elevados. Oferecemos pacotes com hotel 5★ e transfers VIP com alta economia.',
-    viewAllPackagesBtn: 'Ver Todos os Pacotes e Preços →',
+    viewAllPackagesBtn: 'Ver Todos os Pacotes e Preços',
     reason3Title: 'Tomografia 3D CBCT e Microscópios Ópticos Carl Zeiss',
     reason3P:
       'Microscopia avançada que permite localizar canais extras e microfraturas invisíveis em radiografias comuns.',
@@ -393,22 +393,22 @@ const GENERAL_DATA: Record<string, GeneralI18n> = {
     singleP:
       'Desinfecção microscópica e obturação 3D precisa para salvar seu dente natural.',
     singleLinkLead: 'Saiba mais sobre ',
-    singleLinkText: 'Tratamento de Canal →',
+    singleLinkText: 'Tratamento de Canal',
     multipleTitle: '2. Limpeza Ultrassônica e Jato Air-Flow',
     multipleP:
       'Remoção delicada de tártaro e manchas sem agredir o esmalte dentário.',
     multipleLinkLead: 'Conheça ',
-    multipleLinkText: 'Limpeza e Profilaxia →',
+    multipleLinkText: 'Limpeza e Profilaxia',
     allOn4Title: '3. Restaurações em Nanoresina Estética & Inlays',
     allOn4P:
       'Restaurações na cor natural do dente e substituição segura de amálgamas com mercúrio.',
     allOn4LinkLead: 'Descubra ',
-    allOn4LinkText: 'Restaurações e Inlays →',
+    allOn4LinkText: 'Restaurações e Inlays',
     allOn6Title: '4. Extração de Sisos e Tratamento Periodontal a Laser',
     allOn6P:
       'Cirurgia guiada por tomografia 3D e descontaminação a laser de gengivas inflamadas.',
     allOn6LinkLead: 'Leia sobre ',
-    allOn6LinkText: 'Cirurgia e Periodontia →',
+    allOn6LinkText: 'Cirurgia e Periodontia',
   },
   es: {
     introHeading: 'Odontología General & Prevención Bucal en Antalya, Turquía',
@@ -443,7 +443,7 @@ const GENERAL_DATA: Record<string, GeneralI18n> = {
     reason2Title: 'Paquetes Todo Incluido y Ahorro de hasta el 70%',
     reason2P:
       'En España y resto de Europa los tratamientos de conductos especializados tienen precios elevados. Ofrecemos paquetes con hotel 5★ y chófer VIP.',
-    viewAllPackagesBtn: 'Ver Todos los Paquetes y Precios →',
+    viewAllPackagesBtn: 'Ver Todos los Paquetes y Precios',
     reason3Title: 'TAC 3D CBCT y Microscopios Ópticos Carl Zeiss',
     reason3P:
       'Microscopía que permite localizar conductos accesorios y microfracturas imposibles de detectar en radiografías convencionales.',
@@ -461,22 +461,22 @@ const GENERAL_DATA: Record<string, GeneralI18n> = {
     singleP:
       'Desinfección microscópica y obturación 3D para salvar su pieza dental original.',
     singleLinkLead: 'Más información sobre ',
-    singleLinkText: 'Endodoncia →',
+    singleLinkText: 'Endodoncia',
     multipleTitle: '2. Limpieza Dental por Ultrasonidos & Air-Flow',
     multipleP:
       'Eliminación suave de sarro y manchas sin dañar el esmalte dental.',
     multipleLinkLead: 'Ver detalles de ',
-    multipleLinkText: 'Limpieza y Profilaxis →',
+    multipleLinkText: 'Limpieza y Profilaxis',
     allOn4Title: '3. Empastes de Nanocomposite Estético & Inlays',
     allOn4P:
       'Restauraciones del color del diente y retirada segura de empastes de amalgama con mercurio.',
     allOn4LinkLead: 'Descubra ',
-    allOn4LinkText: 'Empastes e Incrustaciones →',
+    allOn4LinkText: 'Empastes e Incrustaciones',
     allOn6Title: '4. Extracción de Muelas del Juicio y Periodoncia Láser',
     allOn6P:
       'Cirugía guiada por TAC 3D y descontaminación con láser para frenar el sangrado gingival.',
     allOn6LinkLead: 'Detalles sobre ',
-    allOn6LinkText: 'Cirugía y Periodoncia →',
+    allOn6LinkText: 'Cirugía y Periodoncia',
   },
   ru: {
     introHeading: 'Терапевтическая стоматология & Профилактика в Анталье',
@@ -511,7 +511,7 @@ const GENERAL_DATA: Record<string, GeneralI18n> = {
     reason2Title: 'Пакеты «Все включено» и экономия до 70%',
     reason2P:
       'В клиниках Европы и СНГ эндодонтия под микроскопом стоит дорого. Мы предлагаем пакеты с проживанием в отеле 5★ и VIP-трансфером со скидкой до 70%.',
-    viewAllPackagesBtn: 'Все терапевтические пакеты и цены →',
+    viewAllPackagesBtn: 'Все терапевтические пакеты и цены',
     reason3Title: '3D CBCT томография и микроскопы Carl Zeiss',
     reason3P:
       'Операционные микроскопы позволяют выявить скрытые микроканалы и трещины корня, невидимые на обычном снимке.',
@@ -529,22 +529,22 @@ const GENERAL_DATA: Record<string, GeneralI18n> = {
     singleP:
       'Безболезненная дезинфекция и 3D обтурация каналов для спасения натурального зуба.',
     singleLinkLead: 'Подробнее о ',
-    singleLinkText: 'Лечении каналов →',
+    singleLinkText: 'Лечении каналов',
     multipleTitle: '2. Ультразвуковая чистка и полировка Air-Flow',
     multipleP:
       'Бережное удаление камня и налета звуковыми волнами без повреждения эмали.',
     multipleLinkLead: 'Ознакомьтесь с ',
-    multipleLinkText: 'Профессиональной чисткой →',
+    multipleLinkText: 'Профессиональной чисткой',
     allOn4Title: '3. Эстетические нанокомпозитные пломбы и вкладки',
     allOn4P:
       'Долговечные реставрации в цвет зуба и безопасное снятие старых амальгамовых пломб.',
     allOn4LinkLead: 'Узнать больше о ',
-    allOn4LinkText: 'Пломбах и вкладках →',
+    allOn4LinkText: 'Пломбах и вкладках',
     allOn6Title: '4. Удаление зубов мудрости и лечение десен лазером',
     allOn6P:
       'Атравматичная хирургия под контролем 3D и лазерная стерилизация пародонтальных карманов.',
     allOn6LinkLead: 'Читать о ',
-    allOn6LinkText: 'Хирургии и деснах →',
+    allOn6LinkText: 'Хирургии и деснах',
   },
 };
 

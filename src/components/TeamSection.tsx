@@ -90,6 +90,7 @@ export default function TeamSection() {
   return (
     <section
       id="team"
+      className="team-section-root"
       onMouseMove={handleSectionMouseMove}
       style={{
         backgroundColor: '#ffffff',
@@ -104,6 +105,7 @@ export default function TeamSection() {
     >
       {/* Header Container */}
       <div
+        className="team-header-container"
         style={{
           maxWidth: '1280px',
           margin: '0 auto',
@@ -400,6 +402,12 @@ export default function TeamSection() {
           filter: brightness(1.02);
         }
         @media (max-width: 768px) {
+          .team-section-root {
+            padding: 2.5rem 0 3.5rem 0 !important;
+          }
+          .team-header-container {
+            margin-bottom: 1.75rem !important;
+          }
           .team-card-ozan {
             order: -1 !important;
           }

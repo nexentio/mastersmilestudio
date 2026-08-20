@@ -454,7 +454,9 @@ export default function TreatmentCostBreakdownAndPackageBannerSection() {
     <section aria-labelledby="cost-breakdown-heading" className={styles.section}>
       <div className={styles.container}>
         {/* Top Decorative Divider */}
-        <TreatmentDivider />
+        <div className={styles.topDividerWrap}>
+          <TreatmentDivider />
+        </div>
 
         {/* 16:9 Fullwidth Video Embed */}
         <div className={styles.videoCard}>
@@ -500,7 +502,9 @@ export default function TreatmentCostBreakdownAndPackageBannerSection() {
         <p className={styles.bodyText}>{content.packagesLinkParagraph}</p>
 
         {/* Bottom Decorative Divider */}
-        <TreatmentDivider />
+        <div className={styles.bottomDividerWrap}>
+          <TreatmentDivider />
+        </div>
       </div>
     </section>
   );

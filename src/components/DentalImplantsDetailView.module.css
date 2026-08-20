@@ -149,27 +149,62 @@
 }
 
 .btnWrap {
-  margin: 1.5rem 0 2rem 0;
+  margin: 0 0 2rem 0;
 }
 
 .btnPrimary {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
+  justify-content: center;
   padding: 0.8rem 1.75rem;
   border-radius: 9999px;
-  background-color: #d58936;
-  color: #ffffff;
+  background: linear-gradient(180deg, #fbe39b 0%, #e2ad37 28%, #c58c1c 60%, #a26909 100%);
+  color: #4b2901;
   font-weight: 700;
   font-size: 0.95rem;
+  letter-spacing: 0.01em;
   text-decoration: none;
-  box-shadow: 0 4px 14px rgba(213, 137, 54, 0.35);
-  transition: all 0.2s ease;
+  border: 1.5px solid #946006;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+  box-shadow: 0 4px 14px rgba(197, 140, 28, 0.35), inset 0 1px 1px rgba(255, 255, 255, 0.75), inset 0 -1px 2px rgba(0, 0, 0, 0.25);
+  transition: all 0.22s ease;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .btnPrimary:hover {
-  background-color: #b87128;
+  background: linear-gradient(180deg, #fae08e 0%, #ecc152 28%, #dfa52f 60%, #c48618 100%);
+  color: #482701;
   transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(184, 123, 16, 0.45), inset 0 1px 2px rgba(255, 255, 255, 0.85), inset 0 -1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.btnPrimary:active {
+  background: linear-gradient(180deg, #dfa52f 0%, #cb8e1c 50%, #b87b10 100%);
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(184, 123, 16, 0.3), inset 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 768px) {
+  .introSection {
+    padding: 0.5rem 1rem 1.5rem 1rem;
+  }
+
+  .btnWrap {
+    text-align: center;
+    margin: 0 0 1.5rem 0;
+  }
+
+  .btnPrimary {
+    padding: 0.62rem 1.3rem;
+    font-size: 0.84rem;
+    font-weight: 700;
+    background: linear-gradient(180deg, #fdeec4 0%, #e9bf58 26%, #cf9723 60%, #ad730b 100%);
+    border: 1.2px solid #946006;
+    color: #4a2802;
+    box-shadow: 0 3px 10px rgba(173, 115, 11, 0.3), inset 0 1px 1px rgba(255, 255, 255, 0.8), inset 0 -1px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  }
 }
 
 .ctaBanner {

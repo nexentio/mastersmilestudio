@@ -8,6 +8,8 @@ import styles from './TreatmentReviewsSection.module.css';
 interface ReviewItem {
   id: string;
   author: string;
+  country: Record<string, string>;
+  treatment: Record<string, string>;
   platform: 'google' | 'trustpilot';
   platformImg: string;
   text: Record<string, string>;
@@ -17,6 +19,24 @@ const REVIEWS_DATA: ReviewItem[] = [
   {
     id: 'rev-1',
     author: 'Rafael Rodriguez',
+    country: {
+      en: '🇪🇸 Spain',
+      tr: '🇪🇸 İspanya',
+      de: '🇪🇸 Spanien',
+      pl: '🇪🇸 Hiszpania',
+      pt: '🇪🇸 Espanha',
+      es: '🇪🇸 España',
+      ru: '🇪🇸 Испания',
+    },
+    treatment: {
+      en: 'All-on-6 Dental Implants',
+      tr: 'All-on-6 Diş İmplantı',
+      de: 'All-on-6 Zahnimplantate',
+      pl: 'Implanty All-on-6',
+      pt: 'Implantes All-on-6',
+      es: 'Implantes All-on-6',
+      ru: 'Имплантация All-on-6',
+    },
     platform: 'trustpilot',
     platformImg: '/reviews/trustpilot.webp',
     text: {
@@ -32,6 +52,24 @@ const REVIEWS_DATA: ReviewItem[] = [
   {
     id: 'rev-2',
     author: 'Jason Allen Wear',
+    country: {
+      en: '🇺🇸 USA',
+      tr: '🇺🇸 ABD',
+      de: '🇺🇸 USA',
+      pl: '🇺🇸 USA',
+      pt: '🇺🇸 EUA',
+      es: '🇺🇸 EE. UU.',
+      ru: '🇺🇸 США',
+    },
+    treatment: {
+      en: 'Full Jaw Dental Implants',
+      tr: 'Tam Çene Diş İmplantı',
+      de: 'Vollkiefer-Zahnimplantate',
+      pl: 'Implanty Całej Szczęki',
+      pt: 'Implantes de Arcada Total',
+      es: 'Implantes de Arcada Completa',
+      ru: 'Имплантация всей челюсти',
+    },
     platform: 'google',
     platformImg: '/reviews/google.webp',
     text: {
@@ -47,6 +85,24 @@ const REVIEWS_DATA: ReviewItem[] = [
   {
     id: 'rev-3',
     author: 'Amina Abdelwarth',
+    country: {
+      en: '🇬🇧 United Kingdom',
+      tr: '🇬🇧 İngiltere',
+      de: '🇬🇧 Großbritannien',
+      pl: '🇬🇧 Wielka Brytania',
+      pt: '🇬🇧 Reino Unido',
+      es: '🇬🇧 Reino Unido',
+      ru: '🇬🇧 Великобритания',
+    },
+    treatment: {
+      en: 'Painless Extractions & Scaling',
+      tr: 'Ağrısız Çekim & Diş Temizliği',
+      de: 'Schmerzfreie Extraktion & Prophylaxe',
+      pl: 'Bezbolesna Ekstrakcja i Scaling',
+      pt: 'Extrações e Limpeza Sem Dor',
+      es: 'Extracciones y Limpieza sin Dolor',
+      ru: 'Безболезненное удаление и чистка',
+    },
     platform: 'google',
     platformImg: '/reviews/google.webp',
     text: {
@@ -62,6 +118,24 @@ const REVIEWS_DATA: ReviewItem[] = [
   {
     id: 'rev-4',
     author: 'Malcolm Mallia',
+    country: {
+      en: '🇲🇹 Malta',
+      tr: '🇲🇹 Malta',
+      de: '🇲🇹 Malta',
+      pl: '🇲🇹 Malta',
+      pt: '🇲🇹 Malta',
+      es: '🇲🇹 Malta',
+      ru: '🇲🇹 Мальта',
+    },
+    treatment: {
+      en: 'Laser Teeth Whitening',
+      tr: 'Lazerle Diş Beyazlatma',
+      de: 'Laser-Zahnaufhellung',
+      pl: 'Laserowe Wybielanie Zębów',
+      pt: 'Branqueamento Dentário a Laser',
+      es: 'Blanqueamiento Dental con Láser',
+      ru: 'Лазерное отбеливание зубов',
+    },
     platform: 'google',
     platformImg: '/reviews/google.webp',
     text: {
@@ -77,6 +151,24 @@ const REVIEWS_DATA: ReviewItem[] = [
   {
     id: 'rev-5',
     author: 'Olha Hubych',
+    country: {
+      en: '🇺🇦 Ukraine',
+      tr: '🇺🇦 Ukrayna',
+      de: '🇺🇦 Ukraine',
+      pl: '🇺🇦 Ukraina',
+      pt: '🇺🇦 Ucrânia',
+      es: '🇺🇦 Ucrania',
+      ru: '🇺🇦 Украина',
+    },
+    treatment: {
+      en: 'Aesthetic Fillings & Scaling',
+      tr: 'Estetik Dolgu & Diş Bakımı',
+      de: 'Ästhetische Füllungen & Prophylaxe',
+      pl: 'Wypełnienia Estetyczne i Scaling',
+      pt: 'Restaurações Estéticas e Limpeza',
+      es: 'Empastes Estéticos y Limpieza',
+      ru: 'Эстетическое пломбирование и чистка',
+    },
     platform: 'google',
     platformImg: '/reviews/google.webp',
     text: {
@@ -92,6 +184,24 @@ const REVIEWS_DATA: ReviewItem[] = [
   {
     id: 'rev-6',
     author: 'Iceman Mike',
+    country: {
+      en: '🇩🇪 Germany',
+      tr: '🇩🇪 Almanya',
+      de: '🇩🇪 Deutschland',
+      pl: '🇩🇪 Niemcy',
+      pt: '🇩🇪 Alemanha',
+      es: '🇩🇪 Alemania',
+      ru: '🇩🇪 Германия',
+    },
+    treatment: {
+      en: 'Implant Restorations',
+      tr: 'İmplant Restorasyonları',
+      de: 'Implantat-Restaurationen',
+      pl: 'Odbudowa na Implantach',
+      pt: 'Restaurações sobre Implantes',
+      es: 'Restauraciones sobre Implantes',
+      ru: 'Протезирование на имплантах',
+    },
     platform: 'google',
     platformImg: '/reviews/google.webp',
     text: {
@@ -107,6 +217,24 @@ const REVIEWS_DATA: ReviewItem[] = [
   {
     id: 'rev-7',
     author: 'Shahab',
+    country: {
+      en: '🇨🇦 Canada',
+      tr: '🇨🇦 Kanada',
+      de: '🇨🇦 Kanada',
+      pl: '🇨🇦 Kanada',
+      pt: '🇨🇦 Canadá',
+      es: '🇨🇦 Canadá',
+      ru: '🇨🇦 Канада',
+    },
+    treatment: {
+      en: 'Deep Dental Hygiene & Care',
+      tr: 'Derinlemesine Diş Bakımı',
+      de: 'Tiefenhygiene & Prophylaxe',
+      pl: 'Głęboka Higienizacja i Kontrola',
+      pt: 'Higiene e Profilaxia Profunda',
+      es: 'Higiene Profunda y Revisión',
+      ru: 'Глубокая гигиена и осмотр',
+    },
     platform: 'google',
     platformImg: '/reviews/google.webp',
     text: {
@@ -122,6 +250,24 @@ const REVIEWS_DATA: ReviewItem[] = [
   {
     id: 'rev-8',
     author: 'N RS',
+    country: {
+      en: '🇳🇱 Netherlands',
+      tr: '🇳🇱 Hollanda',
+      de: '🇳🇱 Niederlande',
+      pl: '🇳🇱 Holandia',
+      pt: '🇳🇱 Países Baixos',
+      es: '🇳🇱 Países Bajos',
+      ru: '🇳🇱 Нидерланды',
+    },
+    treatment: {
+      en: 'Comprehensive Oral Care',
+      tr: 'Kapsamlı Ağız & Diş Bakımı',
+      de: 'Umfassende Zahnbehandlung',
+      pl: 'Kompleksowa Opieka Stomatologiczna',
+      pt: 'Tratamento Oral Completo',
+      es: 'Cuidado Bucodental Integral',
+      ru: 'Комплексный уход за полостью рта',
+    },
     platform: 'google',
     platformImg: '/reviews/google.webp',
     text: {
@@ -190,52 +336,145 @@ export default function TreatmentReviewsSection() {
         </div>
 
         <div className={styles.sliderOuter}>
+          {/* Desktop Grid */}
           <div className={styles.track}>
-            {visibleReviews.map(review => (
-              <div key={review.id} className={styles.card}>
-                {/* Top: User Icon + Author Name (Centered) */}
-                <div className={styles.cardTop}>
-                  <svg
-                    width="15"
-                    height="15"
-                    viewBox="0 0 448 512"
-                    fill="currentColor"
-                    className={styles.userIcon}
-                    aria-hidden="true"
-                  >
-                    <path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z" />
-                  </svg>
-                  <span className={styles.authorName}>{review.author}</span>
-                </div>
+            {visibleReviews.map((review) => {
+              const quote = getLocalized(review.text);
+              const treatment = getLocalized(review.treatment);
+              const country = getLocalized(review.country);
+              const isTrustpilot = review.platform === 'trustpilot';
 
-                {/* Middle: Review text (Centered) */}
-                <p className={styles.commentText}>{getLocalized(review.text)}</p>
+              return (
+                <div key={review.id} className={styles.card}>
+                  <div>
+                    {/* Top Header: 5 Rating Stars on Left & Verified Review Platform Logo on Right */}
+                    <div className={styles.cardHeaderRow}>
+                      <div className={styles.starsGroup}>
+                        {[1, 2, 3, 4, 5].map((starIdx) => (
+                          <Image
+                            key={starIdx}
+                            src="/star.png"
+                            alt="★"
+                            width={17}
+                            height={17}
+                            className={styles.starImg}
+                          />
+                        ))}
+                      </div>
 
-                {/* Bottom: Platform Logo + 5 Stars (Centered) */}
-                <div className={styles.cardFooter}>
-                  <div className={styles.platformWrap}>
-                    <Image
-                      src={review.platformImg}
-                      alt={review.platform === 'trustpilot' ? 'Trustpilot' : 'Google'}
-                      fill
-                      sizes="90px"
-                      className={styles.platformImg}
-                    />
+                      <div className={styles.platformLogoWrap}>
+                        {isTrustpilot ? (
+                          <Image
+                            src="/reviews/trustpilot.webp"
+                            alt="Trustpilot"
+                            width={68}
+                            height={16}
+                            className={styles.platformLogo}
+                          />
+                        ) : (
+                          <Image
+                            src="/reviews/google.webp"
+                            alt="Google"
+                            width={20}
+                            height={20}
+                            className={styles.platformLogo}
+                          />
+                        )}
+                      </div>
+                    </div>
+
+                    {/* Patient Quote */}
+                    <p className={styles.quoteText}>
+                      &ldquo;{quote}&rdquo;
+                    </p>
                   </div>
-                  <div className={styles.starsWrap}>
-                    <Image
-                      src="/reviews/5star.webp"
-                      alt="5 Stars"
-                      fill
-                      sizes="80px"
-                      className={styles.starsImg}
-                    />
+
+                  {/* Card Footer: Treatment Badge + Patient Name & Country */}
+                  <div className={styles.cardFooter}>
+                    <div className={styles.treatmentBadge}>
+                      {treatment}
+                    </div>
+
+                    <div className={styles.patientInfoCol}>
+                      <span className={styles.patientName}>{review.author}</span>
+                      <span className={styles.patientCountry}>{country}</span>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
 
+          {/* Mobile Horizontal Swipe Track */}
+          <div className={styles.mobileTrack}>
+            {REVIEWS_DATA.map((review) => {
+              const quote = getLocalized(review.text);
+              const treatment = getLocalized(review.treatment);
+              const country = getLocalized(review.country);
+              const isTrustpilot = review.platform === 'trustpilot';
+
+              return (
+                <div key={review.id} className={styles.card}>
+                  <div>
+                    {/* Top Header: 5 Rating Stars on Left & Verified Review Platform Logo on Right */}
+                    <div className={styles.cardHeaderRow}>
+                      <div className={styles.starsGroup}>
+                        {[1, 2, 3, 4, 5].map((starIdx) => (
+                          <Image
+                            key={starIdx}
+                            src="/star.png"
+                            alt="★"
+                            width={17}
+                            height={17}
+                            className={styles.starImg}
+                          />
+                        ))}
+                      </div>
+
+                      <div className={styles.platformLogoWrap}>
+                        {isTrustpilot ? (
+                          <Image
+                            src="/reviews/trustpilot.webp"
+                            alt="Trustpilot"
+                            width={68}
+                            height={16}
+                            className={styles.platformLogo}
+                          />
+                        ) : (
+                          <Image
+                            src="/reviews/google.webp"
+                            alt="Google"
+                            width={20}
+                            height={20}
+                            className={styles.platformLogo}
+                          />
+                        )}
+                      </div>
+                    </div>
+
+                    {/* Patient Quote */}
+                    <p className={styles.quoteText}>
+                      &ldquo;{quote}&rdquo;
+                    </p>
+                  </div>
+
+                  {/* Card Footer: Treatment Badge + Patient Name & Country */}
+                  <div className={styles.cardFooter}>
+                    <div className={styles.treatmentBadge}>
+                      {treatment}
+                    </div>
+
+                    <div className={styles.patientInfoCol}>
+                      <span className={styles.patientName}>{review.author}</span>
+                      <span className={styles.patientCountry}>{country}</span>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+
+          {/* Desktop Navigation Controls */}
           <div className={styles.navControls}>
             <button
               onClick={handlePrev}

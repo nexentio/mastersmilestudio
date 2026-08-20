@@ -72,7 +72,7 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         'Monolithic German Zirconia Bridges',
         'Same-Day Fixed Temporary Teeth',
       ],
-      img: '/packages/pkg-3.webp',
+      img: '/treatments/accordion/full-mouth-implant.webp',
       href: '/treatments/dental-implants',
       btnText: 'Explore Dental Implants & Packages →',
       popularTechniquesLabel: 'Specialized Techniques & Subpages:',
@@ -92,7 +92,7 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         duration: '4–6 Days (1 Visit)',
         title: 'Dental Veneers & Porcelain Laminates',
         desc: 'Transform discolored, chipped, or misaligned front teeth with ultra-thin Swiss Ivoclar E-Max glass ceramics and 3D Digital Smile Design (DSD).',
-        img: '/treatments/accordion/e-max-laminate-copy.webp',
+        img: '/treatments/accordion/e-max-laminate.webp',
         href: '/treatments/dental-veneers',
         btnText: 'Explore Dental Veneers →',
         popularTechniquesLabel: 'Popular Techniques & Subpages:',
@@ -110,7 +110,7 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         duration: '4–6 Days (1 Visit)',
         title: 'Dental Crowns & German Zirconia',
         desc: 'Reinforce heavily decayed, cracked, or root-canal treated teeth with high-strength 1200+ MPa German monolithic zirconia and E-Max full ceramic caps.',
-        img: '/treatments/accordion/zirconium-implant-copy.webp',
+        img: '/treatments/accordion/zirconium-crowns.webp',
         href: '/treatments/dental-crowns',
         btnText: 'Explore Dental Crowns →',
         popularTechniquesLabel: 'Popular Techniques & Subpages:',
@@ -128,7 +128,7 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         duration: '4–6 Days (1 Visit)',
         title: 'Dental Bridges & Gap Restoration',
         desc: 'Close gaps permanently without removable dentures using high-strength zirconia fixed bridges and multi-unit implant-supported bridges.',
-        img: '/treatments/accordion/cantilever-bridge-copy.webp',
+        img: '/treatments/accordion/traditional-bridge.webp',
         href: '/treatments/dental-bridge',
         btnText: 'Explore Dental Bridges →',
         popularTechniquesLabel: 'Popular Techniques & Subpages:',
@@ -145,7 +145,7 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         duration: '4–6 Days / 2 Visits',
         title: 'Dentures & Snap-On Overdentures',
         desc: 'End loose, clicking dentures with rock-solid Snap-On implant overdentures with palate-free upper comfort and high-impact Lucitone acrylics.',
-        img: '/treatments/accordion/overdenture-copy.webp',
+        img: '/treatments/accordion/overdenture.webp',
         href: '/treatments/dentures',
         btnText: 'Explore Dentures & Overdentures →',
         popularTechniquesLabel: 'Popular Techniques & Subpages:',
@@ -162,7 +162,7 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         duration: '4–6 Days (1 Visit)',
         title: 'Cosmetic Dentistry & Hollywood Smile',
         desc: 'Comprehensive smile makeovers engineered according to golden facial proportions, Philips Zoom laser whitening, and diode laser gummy smile sculpting.',
-        img: '/treatments/accordion/hollywood-smile-copy.webp',
+        img: '/treatments/accordion/hollywood-smile.webp',
         href: '/treatments/cosmetic-dentistry',
         btnText: 'Explore Cosmetic Dentistry →',
         popularTechniquesLabel: 'Popular Techniques & Subpages:',
@@ -181,7 +181,7 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         duration: '1–3 Days (1 Visit)',
         title: 'General Dentistry & Tooth Preservation',
         desc: 'Pain-free microscopic root canal therapy under Carl Zeiss magnification, Swiss Air-Flow tartar removal, and biocompatible nanohybrid fillings.',
-        img: '/treatments/accordion/root-canal-copy.webp',
+        img: '/treatments/general/root-canal-treatment-copy.webp',
         href: '/treatments/general-dentistry',
         btnText: 'Explore General Dentistry →',
         popularTechniquesLabel: 'Popular Techniques & Subpages:',
@@ -221,7 +221,7 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         '1200+ MPa Monolitik Zirkonyum Köprüler',
         'Aynı Gün Takılan Sabit Geçici Dişler',
       ],
-      img: '/packages/pkg-3.webp',
+      img: '/treatments/accordion/full-mouth-implant.webp',
       href: '/treatments/dental-implants',
       btnText: 'İmplant Tedavilerini ve Paketleri İncele →',
       popularTechniquesLabel: 'Özel Teknikler & Alt Sayfalar:',
@@ -241,7 +241,7 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         duration: '4–6 Gün (Tek Ziyaret)',
         title: 'Lamine Veneer (Yaprak Porselen)',
         desc: 'Renk bozukluğu, kırık veya çapraşıklık olan ön dişlerde doğal ışık geçirgenliğine sahip İsviçre Ivoclar E-Max seramiklerle kusursuz estetik.',
-        img: '/treatments/accordion/e-max-laminate-copy.webp',
+        img: '/treatments/accordion/e-max-laminate.webp',
         href: '/treatments/dental-veneers',
         btnText: 'Lamina Tedavilerini İncele →',
         popularTechniquesLabel: 'Popüler Teknikler & Alt Sayfalar:',
@@ -259,7 +259,7 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         duration: '4–6 Gün (Tek Ziyaret)',
         title: 'Zirkonyum & Kron Kaplama',
         desc: 'İleri derece çürük, kırık veya kanal tedavili dişleri 1200+ MPa dayanıklılıkta Alman Zirkonyumu ile 360 derece sararak koruyan estetik kaplamalar.',
-        img: '/treatments/accordion/zirconium-implant-copy.webp',
+        img: '/treatments/accordion/zirconium-crowns.webp',
         href: '/treatments/dental-crowns',
         btnText: 'Kron Kaplamaları İncele →',
         popularTechniquesLabel: 'Popüler Teknikler & Alt Sayfalar:',
@@ -277,7 +277,7 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         duration: '4–6 Gün (Tek Ziyaret)',
         title: 'Diş Köprüsü & Boşluk Tamamlama',
         desc: 'Eksik diş boşluklarını takıp çıkarmalı protez kullanmadan, komşu dişlere veya implantlara bağlanan estetik zirkonyum köprülerle kalıcı kapatma.',
-        img: '/treatments/accordion/cantilever-bridge-copy.webp',
+        img: '/treatments/accordion/traditional-bridge.webp',
         href: '/treatments/dental-bridge',
         btnText: 'Diş Köprüsü Tedavilerini İncele →',
         popularTechniquesLabel: 'Popüler Teknikler & Alt Sayfalar:',
@@ -294,7 +294,7 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         duration: '4–6 Gün / 2 Ziyaret',
         title: 'Protez Diş & Çıt Çıtlı Damak',
         desc: 'Oynayan ve fırlayan damaklara son veren, implant destekli çıtçıtlı overdenture sistemleri ve üst çenede damağı kapatmayan konforlu protezler.',
-        img: '/treatments/accordion/overdenture-copy.webp',
+        img: '/treatments/accordion/overdenture.webp',
         href: '/treatments/dentures',
         btnText: 'Protez ve Damak Tedavilerini İncele →',
         popularTechniquesLabel: 'Popüler Teknikler & Alt Sayfalar:',
@@ -311,7 +311,7 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         duration: '4–6 Gün (Tek Ziyaret)',
         title: 'Hollywood Smile & Estetik Diş',
         desc: 'Yüzün altın oranına göre tasarlanan 3D Dijital Gülüş Tasarımı, lazerle diş eti seviyeleme (Gummy Smile) ve Philips Zoom klinik diş beyazlatma.',
-        img: '/treatments/accordion/hollywood-smile-copy.webp',
+        img: '/treatments/accordion/hollywood-smile.webp',
         href: '/treatments/cosmetic-dentistry',
         btnText: 'Gülüş Tasarımını İncele →',
         popularTechniquesLabel: 'Popüler Teknikler & Alt Sayfalar:',
@@ -330,7 +330,7 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         duration: '1–3 Gün (Tek Ziyaret)',
         title: 'Genel Diş Hekimliği & Diş Kurtarma',
         desc: 'Carl Zeiss dental mikroskop altında ağrısız kök kanal tedavisi, İsviçre Air-Flow lekesiz derin diş temizliği ve estetik nanokompozit dolgular.',
-        img: '/treatments/accordion/root-canal-copy.webp',
+        img: '/treatments/general/root-canal-treatment-copy.webp',
         href: '/treatments/general-dentistry',
         btnText: 'Genel Diş Tedavilerini İncele →',
         popularTechniquesLabel: 'Popüler Teknikler & Alt Sayfalar:',
@@ -370,7 +370,7 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         'Monolithische deutsche Zirkonbrücken (1200 MPa)',
         'Festsitzende Provisorien am selben Tag',
       ],
-      img: '/packages/pkg-3.webp',
+      img: '/treatments/accordion/full-mouth-implant.webp',
       href: '/treatments/dental-implants',
       btnText: 'Zahnimplantate & Pakete ansehen →',
       popularTechniquesLabel: 'Spezielle Verfahren & Unterseiten:',
@@ -390,7 +390,7 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         duration: '4–6 Tage (1 Reise)',
         title: 'Veneers & Porzellan-Laminate',
         desc: 'Hauchdünne Schweizer Ivoclar E-Max Glaskeramik für perfekt weiße und ebenmäßige Zähne mit 3D Digital Smile Design.',
-        img: '/treatments/accordion/e-max-laminate-copy.webp',
+        img: '/treatments/accordion/e-max-laminate.webp',
         href: '/treatments/dental-veneers',
         btnText: 'Veneers entdecken →',
         popularTechniquesLabel: 'Beliebte Verfahren & Unterseiten:',
@@ -408,7 +408,7 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         duration: '4–6 Tage (1 Reise)',
         title: 'Zahnkronen & Deutsches Zirkon',
         desc: '360°-Schutz für geschädigte Zähne mit bruchfestem deutschem Zirkon (1200+ MPa) und vollkeramischen E-Max Kronen.',
-        img: '/treatments/accordion/zirconium-implant-copy.webp',
+        img: '/treatments/accordion/zirconium-crowns.webp',
         href: '/treatments/dental-crowns',
         btnText: 'Zahnkronen entdecken →',
         popularTechniquesLabel: 'Beliebte Verfahren & Unterseiten:',
@@ -426,7 +426,7 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         duration: '4–6 Tage (1 Reise)',
         title: 'Zahnbrücken & Lückenschluss',
         desc: 'Festsitzender Zahnersatz ohne herausnehmbare Prothesen mit hochstabilen Zirkon- und Implantatbrücken.',
-        img: '/treatments/accordion/cantilever-bridge-copy.webp',
+        img: '/treatments/accordion/traditional-bridge.webp',
         href: '/treatments/dental-bridge',
         btnText: 'Zahnbrücken entdecken →',
         popularTechniquesLabel: 'Beliebte Verfahren & Unterseiten:',
@@ -443,7 +443,7 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         duration: '4–6 Tage / 2 Reisen',
         title: 'Zahnprothesen & Overdentures',
         desc: 'Fester Halt auf Implantaten mit Klick-Verschluss (Locator), gaumenfreier Tragekomfort und bruchsicheres Acryl.',
-        img: '/treatments/accordion/overdenture-copy.webp',
+        img: '/treatments/accordion/overdenture.webp',
         href: '/treatments/dentures',
         btnText: 'Prothesen entdecken →',
         popularTechniquesLabel: 'Beliebte Verfahren & Unterseiten:',
@@ -460,7 +460,7 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         duration: '4–6 Tage (1 Reise)',
         title: 'Cosmetic Dentistry & Hollywood Smile',
         desc: 'Ganzheitliche Lächeln-Transformation nach dem goldenen Schnitt, Laser-Gingivoplastik und Philips Zoom Bleaching.',
-        img: '/treatments/accordion/hollywood-smile-copy.webp',
+        img: '/treatments/accordion/hollywood-smile.webp',
         href: '/treatments/cosmetic-dentistry',
         btnText: 'Hollywood Smile entdecken →',
         popularTechniquesLabel: 'Beliebte Verfahren & Unterseiten:',
@@ -479,7 +479,7 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         duration: '1–3 Tage (1 Reise)',
         title: 'Allgemeine Zahnheilkunde & Zahnerhalt',
         desc: 'Schmerzfreie Wurzelbehandlung unter dem Carl Zeiss Dentalmikroskop, Schweizer Air-Flow Zahnreinigung und Füllungen.',
-        img: '/treatments/accordion/root-canal-copy.webp',
+        img: '/treatments/general/root-canal-treatment-copy.webp',
         href: '/treatments/general-dentistry',
         btnText: 'Zahnheilkunde entdecken →',
         popularTechniquesLabel: 'Beliebte Verfahren & Unterseiten:',
@@ -519,7 +519,7 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         'Monolityczne Mosty Cyrkonowe (1200 MPa)',
         'Natychmiastowe Zęby Tymczasowe w Dniu Zabiegu',
       ],
-      img: '/packages/pkg-3.webp',
+      img: '/treatments/accordion/full-mouth-implant.webp',
       href: '/treatments/dental-implants',
       btnText: 'Zobacz Implanty Zębowe i Pakiety →',
       popularTechniquesLabel: 'Specjalistyczne Techniki i Podstrony:',
@@ -539,7 +539,7 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         duration: '4–6 Dni (1 Wizyta)',
         title: 'Licówki Porcelanowe i E-Max',
         desc: 'Metamorfoza zębów przednich dzięki ultracienkim licówkom Ivoclar E-Max i Cyfrowemu Projektowaniu Uśmiechu 3D DSD.',
-        img: '/treatments/accordion/e-max-laminate-copy.webp',
+        img: '/treatments/accordion/e-max-laminate.webp',
         href: '/treatments/dental-veneers',
         btnText: 'Poznaj Licówki →',
         popularTechniquesLabel: 'Popularne Techniki i Podstrony:',
@@ -557,7 +557,7 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         duration: '4–6 Dni (1 Wizyta)',
         title: 'Korony Zębowe i Niemiecki Cyrkon',
         desc: 'Ochrona zniszczonych i leczonych kanałowo zębów trwałym tlenkiem cyrkonu (1200+ MPa) i koronami pełnoceramicznymi.',
-        img: '/treatments/accordion/zirconium-implant-copy.webp',
+        img: '/treatments/accordion/zirconium-crowns.webp',
         href: '/treatments/dental-crowns',
         btnText: 'Poznaj Korony Zębowe →',
         popularTechniquesLabel: 'Popularne Techniki i Podstrony:',
@@ -575,7 +575,7 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         duration: '4–6 Dni (1 Wizyta)',
         title: 'Mosty Zębowe i Odbudowa Luk',
         desc: 'Trwałe uzupełnienie braków bez wyjmowanych protez za pomocą mostów cyrkonowych i mostów na implantach.',
-        img: '/treatments/accordion/cantilever-bridge-copy.webp',
+        img: '/treatments/accordion/traditional-bridge.webp',
         href: '/treatments/dental-bridge',
         btnText: 'Poznaj Mosty Zębowe →',
         popularTechniquesLabel: 'Popularne Techniki i Podstrony:',
@@ -592,7 +592,7 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         duration: '4–6 Dni / 2 Wizyty',
         title: 'Protezy Zębowe i Overdentures na Zatrzaskach',
         desc: 'Stabilne protezy na implantach bez ruszania się i wypadania, z opcją bez podniebienia w górnej szczęce.',
-        img: '/treatments/accordion/overdenture-copy.webp',
+        img: '/treatments/accordion/overdenture.webp',
         href: '/treatments/dentures',
         btnText: 'Poznaj Protezy Zębowe →',
         popularTechniquesLabel: 'Popularne Techniki i Podstrony:',
@@ -609,7 +609,7 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         duration: '4–6 Dni (1 Wizyta)',
         title: 'Hollywood Smile i Stomatologia Estetyczna',
         desc: 'Kompleksowa metamorfoza według złotego podziału, laserowa korekta dziąseł Gummy Smile i wybielanie Philips Zoom.',
-        img: '/treatments/accordion/hollywood-smile-copy.webp',
+        img: '/treatments/accordion/hollywood-smile.webp',
         href: '/treatments/cosmetic-dentistry',
         btnText: 'Poznaj Hollywood Smile →',
         popularTechniquesLabel: 'Popularne Techniki i Podstrony:',
@@ -628,7 +628,7 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         duration: '1–3 Dni (1 Wizyta)',
         title: 'Stomatologia Ogólna i Zachowawcza',
         desc: 'Bezbólowe leczenie kanałowe pod mikroskopem Carl Zeiss, piaskowanie Air-Flow i biozgodne wypełnienia nanokompozytowe.',
-        img: '/treatments/accordion/root-canal-copy.webp',
+        img: '/treatments/general/root-canal-treatment-copy.webp',
         href: '/treatments/general-dentistry',
         btnText: 'Poznaj Stomatologię Ogólną →',
         popularTechniquesLabel: 'Popularne Techniki i Podstrony:',
@@ -668,7 +668,7 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         'Pontes em Zircônia Monolítica (1200 MPa)',
         'Dentes Provisórios Fixos no Mesmo Dia',
       ],
-      img: '/packages/pkg-3.webp',
+      img: '/treatments/accordion/full-mouth-implant.webp',
       href: '/treatments/dental-implants',
       btnText: 'Ver Implantes Dentários e Pacotes →',
       popularTechniquesLabel: 'Técnicas Especializadas e Subpáginas:',
@@ -688,7 +688,7 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         duration: '4–6 Dias (1 Viagem)',
         title: 'Facetas Dentárias & Lentes de Contato E-Max',
         desc: 'Transformação estética dos dentes anteriores com cerâmica vítrea Ivoclar E-Max e Design Digital do Sorriso 3D.',
-        img: '/treatments/accordion/e-max-laminate-copy.webp',
+        img: '/treatments/accordion/e-max-laminate.webp',
         href: '/treatments/dental-veneers',
         btnText: 'Ver Facetas Dentárias →',
         popularTechniquesLabel: 'Técnicas e Subpáginas Populares:',
@@ -706,7 +706,7 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         duration: '4–6 Dias (1 Viagem)',
         title: 'Coroas Dentárias & Zircônia Alemã',
         desc: 'Proteção 360° para dentes fraturados ou desvitalizados com zircônia alemã (1200+ MPa) e cerâmica pura.',
-        img: '/treatments/accordion/zirconium-implant-copy.webp',
+        img: '/treatments/accordion/zirconium-crowns.webp',
         href: '/treatments/dental-crowns',
         btnText: 'Ver Coroas Dentárias →',
         popularTechniquesLabel: 'Técnicas e Subpáginas Populares:',
@@ -724,7 +724,7 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         duration: '4–6 Dias (1 Viagem)',
         title: 'Pontes Dentárias & Reposição de Dentes',
         desc: 'Reposição fixa e definitiva de dentes ausentes com pontes em zircônia e pontes sobre implantes.',
-        img: '/treatments/accordion/cantilever-bridge-copy.webp',
+        img: '/treatments/accordion/traditional-bridge.webp',
         href: '/treatments/dental-bridge',
         btnText: 'Ver Pontes Dentárias →',
         popularTechniquesLabel: 'Técnicas e Subpáginas Populares:',
@@ -741,7 +741,7 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         duration: '4–6 Dias / 2 Viagens',
         title: 'Próteses Dentárias & Overdentures de Clique',
         desc: 'Fim das dentaduras frouxas com overdentures fixadas por encaixes Locator e opção sem céu da boca.',
-        img: '/treatments/accordion/overdenture-copy.webp',
+        img: '/treatments/accordion/overdenture.webp',
         href: '/treatments/dentures',
         btnText: 'Ver Próteses Dentárias →',
         popularTechniquesLabel: 'Técnicas e Subpáginas Populares:',
@@ -758,7 +758,7 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         duration: '4–6 Dias (1 Viagem)',
         title: 'Hollywood Smile & Odontologia Estética',
         desc: 'Design do sorriso personalizado pela proporção áurea, plástica gengival a laser e clareamento Philips Zoom.',
-        img: '/treatments/accordion/hollywood-smile-copy.webp',
+        img: '/treatments/accordion/hollywood-smile.webp',
         href: '/treatments/cosmetic-dentistry',
         btnText: 'Ver Hollywood Smile →',
         popularTechniquesLabel: 'Técnicas e Subpáginas Populares:',
@@ -777,7 +777,7 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         duration: '1–3 Dias (1 Viagem)',
         title: 'Clínica Geral & Preservação Dental',
         desc: 'Tratamento de canal microscópico Carl Zeiss sem dor, profilaxia Air-Flow e restaurações estéticas em nanoresina.',
-        img: '/treatments/accordion/root-canal-copy.webp',
+        img: '/treatments/general/root-canal-treatment-copy.webp',
         href: '/treatments/general-dentistry',
         btnText: 'Ver Clínica Geral →',
         popularTechniquesLabel: 'Técnicas e Subpáginas Populares:',
@@ -817,7 +817,7 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         'Puentes de Zirconio Monolítico (1200 MPa)',
         'Dientes Provisionales Fijos el Mismo Día',
       ],
-      img: '/packages/pkg-3.webp',
+      img: '/treatments/accordion/full-mouth-implant.webp',
       href: '/treatments/dental-implants',
       btnText: 'Ver Implantes Dentales y Paquetes →',
       popularTechniquesLabel: 'Técnicas Especializadas y Subpáginas:',
@@ -837,7 +837,7 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         duration: '4–6 Días (1 Viaje)',
         title: 'Carillas Dentales de Porcelana y E-Max',
         desc: 'Perfeccione el color, alineación y forma de sus dientes frontales con carillas Ivoclar E-Max y Diseño Digital 3D (DSD).',
-        img: '/treatments/accordion/e-max-laminate-copy.webp',
+        img: '/treatments/accordion/e-max-laminate.webp',
         href: '/treatments/dental-veneers',
         btnText: 'Ver Carillas Dentales →',
         popularTechniquesLabel: 'Técnicas y Subpáginas Populares:',
@@ -855,7 +855,7 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         duration: '4–6 Días (1 Viaje)',
         title: 'Coronas Dentales y Zirconio Alemán',
         desc: 'Protección 360° para dientes destruidos o endodonciados con zirconio alemán (1200+ MPa) y cerámica E-Max pura.',
-        img: '/treatments/accordion/zirconium-implant-copy.webp',
+        img: '/treatments/accordion/zirconium-crowns.webp',
         href: '/treatments/dental-crowns',
         btnText: 'Ver Coronas Dentales →',
         popularTechniquesLabel: 'Técnicas y Subpáginas Populares:',
@@ -873,7 +873,7 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         duration: '4–6 Días (1 Viaje)',
         title: 'Puentes Dentales y Cierre de Espacios',
         desc: 'Sustitución fija sin prótesis de quitar y poner mediante puentes de zirconio de alta resistencia y puentes sobre implantes.',
-        img: '/treatments/accordion/cantilever-bridge-copy.webp',
+        img: '/treatments/accordion/traditional-bridge.webp',
         href: '/treatments/dental-bridge',
         btnText: 'Ver Puentes Dentales →',
         popularTechniquesLabel: 'Técnicas y Subpáginas Populares:',
@@ -890,7 +890,7 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         duration: '4–6 Días / 2 Viajes',
         title: 'Prótesis Dentales y Sobredentaduras',
         desc: 'Fijación total sobre implantes con anclaje Locator («clic»), diseño sin paladar superior y acrílicos de alta resistencia.',
-        img: '/treatments/accordion/overdenture-copy.webp',
+        img: '/treatments/accordion/overdenture.webp',
         href: '/treatments/dentures',
         btnText: 'Ver Prótesis Dentales →',
         popularTechniquesLabel: 'Técnicas y Subpáginas Populares:',
@@ -907,7 +907,7 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         duration: '4–6 Días (1 Viaje)',
         title: 'Hollywood Smile y Estética Dental',
         desc: 'Diseño de sonrisa armónico según la proporción áurea, gingivoplastia láser para sonrisa gingival y blanqueamiento Philips Zoom.',
-        img: '/treatments/accordion/hollywood-smile-copy.webp',
+        img: '/treatments/accordion/hollywood-smile.webp',
         href: '/treatments/cosmetic-dentistry',
         btnText: 'Ver Hollywood Smile →',
         popularTechniquesLabel: 'Técnicas y Subpáginas Populares:',
@@ -926,7 +926,7 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         duration: '1–3 Días (1 Viaje)',
         title: 'Odontología General y Conservadora',
         desc: 'Endodoncia indolora bajo microscopio Carl Zeiss, limpieza profunda Air-Flow y empastes estéticos de nanocomposite.',
-        img: '/treatments/accordion/root-canal-copy.webp',
+        img: '/treatments/general/root-canal-treatment-copy.webp',
         href: '/treatments/general-dentistry',
         btnText: 'Ver Odontología General →',
         popularTechniquesLabel: 'Técnicas y Subpáginas Populares:',
@@ -966,7 +966,7 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         'Монолитные немецкие циркониевые мосты (1200 МПа)',
         'Несъемные временные зубы в первый день операции',
       ],
-      img: '/packages/pkg-3.webp',
+      img: '/treatments/accordion/full-mouth-implant.webp',
       href: '/treatments/dental-implants',
       btnText: 'Изучить Имплантацию и Пакеты →',
       popularTechniquesLabel: 'Специализированные методики и подстраницы:',
@@ -986,7 +986,7 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         duration: '4–6 Дней (1 Визит)',
         title: 'Керамические виниры и люминиры E-Max',
         desc: 'Преображение зоны улыбки швейцарской стеклокерамикой Ivoclar E-Max и цифровым 3D дизайном улыбки (DSD).',
-        img: '/treatments/accordion/e-max-laminate-copy.webp',
+        img: '/treatments/accordion/e-max-laminate.webp',
         href: '/treatments/dental-veneers',
         btnText: 'Изучить Виниры →',
         popularTechniquesLabel: 'Популярные методики и страницы:',
@@ -1004,7 +1004,7 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         duration: '4–6 Дней (1 Визит)',
         title: 'Зубные коронки и немецкий цирконий',
         desc: 'Защита разрушенных и депульпированных зубов сверхпрочным диоксидом циркония (1200+ МПа) и цельной керамикой.',
-        img: '/treatments/accordion/zirconium-implant-copy.webp',
+        img: '/treatments/accordion/zirconium-crowns.webp',
         href: '/treatments/dental-crowns',
         btnText: 'Изучить Коронки →',
         popularTechniquesLabel: 'Популярные методики и страницы:',
@@ -1022,7 +1022,7 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         duration: '4–6 Дней (1 Визит)',
         title: 'Зубные мостовидные протезы',
         desc: 'Надежное замещение отсутствующих зубов прочными циркониевыми мостами и мостами на имплантах.',
-        img: '/treatments/accordion/cantilever-bridge-copy.webp',
+        img: '/treatments/accordion/traditional-bridge.webp',
         href: '/treatments/dental-bridge',
         btnText: 'Изучить Зубные Мосты →',
         popularTechniquesLabel: 'Популярные методики и страницы:',
@@ -1039,7 +1039,7 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         duration: '4–6 Дней / 2 Визита',
         title: 'Зубные протезы и замковые Overdentures',
         desc: 'Фиксация съемных протезов на замках Locator без выпадения, с комфортной конструкцией без неба.',
-        img: '/treatments/accordion/overdenture-copy.webp',
+        img: '/treatments/accordion/overdenture.webp',
         href: '/treatments/dentures',
         btnText: 'Изучить Протезы →',
         popularTechniquesLabel: 'Популярные методики и страницы:',
@@ -1056,7 +1056,7 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         duration: '4–6 Дней (1 Визит)',
         title: 'Голливудская улыбка (Hollywood Smile)',
         desc: 'Комплексный дизайн улыбки по золотому сечению, лазерная пластика десен и отбеливание Philips Zoom.',
-        img: '/treatments/accordion/hollywood-smile-copy.webp',
+        img: '/treatments/accordion/hollywood-smile.webp',
         href: '/treatments/cosmetic-dentistry',
         btnText: 'Изучить Hollywood Smile →',
         popularTechniquesLabel: 'Популярные методики и страницы:',
@@ -1075,7 +1075,7 @@ const SHOWCASE_DATA: Record<string, HubShowcaseDictionary> = {
         duration: '1–3 Дня (1 Визит)',
         title: 'Терапевтическая стоматология и лечение',
         desc: 'Безболезненное лечение каналов под микроскопом Carl Zeiss, профессиональная гигиена Swiss Air-Flow и пломбы.',
-        img: '/treatments/accordion/root-canal-copy.webp',
+        img: '/treatments/general/root-canal-treatment-copy.webp',
         href: '/treatments/general-dentistry',
         btnText: 'Изучить Терапию →',
         popularTechniquesLabel: 'Популярные методики и страницы:',
@@ -1096,11 +1096,8 @@ export default function TreatmentsHubDisciplineShowcase() {
   const data = SHOWCASE_DATA[locale] || SHOWCASE_DATA.en;
   const [selectedFilter, setSelectedFilter] = useState<FilterCategory>('all');
 
-  const f = data.featured;
-  const showFeatured =
-    selectedFilter === 'all' || f.categories.includes(selectedFilter);
-
-  const filteredGridItems = data.gridItems.filter((item) =>
+  const allCards = [data.featured, ...data.gridItems];
+  const filteredCards = allCards.filter((item) =>
     selectedFilter === 'all' ? true : item.categories.includes(selectedFilter)
   );
 
@@ -1115,7 +1112,7 @@ export default function TreatmentsHubDisciplineShowcase() {
           <p className={styles.subText}>{data.subText}</p>
         </div>
 
-        {/* 0. REFINED SEGMENTED FILTER BAR (ZERO EMOJIS) */}
+        {/* 0. REFINED SEGMENTED FILTER BAR */}
         <nav className={styles.filterNav} aria-label="Treatment Category Filters">
           {data.filterTabs.map((tab) => {
             const isActive = selectedFilter === tab.id;
@@ -1135,104 +1132,10 @@ export default function TreatmentsHubDisciplineShowcase() {
           })}
         </nav>
 
-        {/* 1. TOP FULL-WIDTH FLAGSHIP IMPLANT CARD */}
-        {showFeatured && (
-          <article className={styles.featuredCard}>
-            <div className={styles.featuredImageWrap}>
-              <div className={styles.featuredMetaBadges}>
-                <span className={styles.featuredTagBadge}>{f.tag}</span>
-                <span className={styles.featuredDurationBadge}>{f.duration}</span>
-              </div>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={f.img}
-                alt={f.title}
-                className={styles.featuredImage}
-                loading="lazy"
-              />
-            </div>
-
-            <div className={styles.featuredContent}>
-              <div>
-                <span className={styles.featuredEyebrow}>{f.eyebrow}</span>
-                <h3 className={styles.featuredTitle}>{f.title}</h3>
-                <p className={styles.featuredDesc}>{f.desc}</p>
-
-                {/* Key Specifications */}
-                <div className={styles.specGrid}>
-                  {f.highlights.map((h, hIdx) => (
-                    <div key={hIdx} className={styles.specItem}>
-                      <span className={styles.specBullet} />
-                      <span>{h}</span>
-                    </div>
-                  ))}
-                </div>
-
-                {/* Sublinks */}
-                <div className={styles.subLinksTitle}>
-                  <span>{f.popularTechniquesLabel}</span>
-                </div>
-
-                <ul className={styles.subLinksList}>
-                  {f.sublinks.map((sub, sIdx) => (
-                    <li key={sIdx} className={styles.subLinkItem}>
-                      <Link href={sub.href}>{sub.label}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <Link href={f.href} className={styles.featuredBtn}>
-                <span>{f.btnText}</span>
-              </Link>
-            </div>
-          </article>
-        )}
-
-        {/* 2. BALANCED GRID (ON DESKTOP: 2x3, ON MOBILE: 100% WIDTH HORIZONTAL SWIPE WITH PEEK) */}
+        {/* 1. UNIFIED 3-COLUMN GRID: ALL 7 CARDS IDENTICAL SIZE */}
         <div className={styles.grid}>
-          {/* Mobile-Only Implant Card (Ensures 1st card in mobile swipe row is Dental Implants) */}
-          {showFeatured && (
-            <article className={`${styles.card} ${styles.mobileOnlyCard}`}>
-              <div className={styles.imageWrap}>
-                <span className={styles.tagBadge}>{f.tag}</span>
-                <span className={styles.durationBadge}>{f.duration}</span>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={f.img}
-                  alt={f.title}
-                  className={styles.image}
-                  loading="lazy"
-                />
-              </div>
-
-              <div className={styles.content}>
-                <h3 className={styles.cardTitle}>{f.title}</h3>
-                <p className={styles.cardDesc}>{f.desc}</p>
-
-                <div className={styles.subLinksTitle}>
-                  <span>{f.popularTechniquesLabel}</span>
-                </div>
-
-                <ul className={styles.subLinksList}>
-                  {f.sublinks.map((sub, sIdx) => (
-                    <li key={sIdx} className={styles.subLinkItem}>
-                      <Link href={sub.href}>{sub.label}</Link>
-                    </li>
-                  ))}
-                </ul>
-
-                <div className={styles.actionRow}>
-                  <Link href={f.href} className={styles.primaryBtn}>
-                    <span>{f.btnText}</span>
-                  </Link>
-                </div>
-              </div>
-            </article>
-          )}
-
-          {filteredGridItems.map((item, idx) => (
-            <article key={idx} className={styles.card}>
+          {filteredCards.map((item, idx) => (
+            <article key={item.id || idx} className={styles.card}>
               <div className={styles.imageWrap}>
                 <span className={styles.tagBadge}>{item.tag}</span>
                 <span className={styles.durationBadge}>{item.duration}</span>
