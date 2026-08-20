@@ -64,7 +64,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single E-Max Porcelain Crown",
         "brand": "Swiss Ivoclar Vivadent IPS e.max (450–500 MPa)",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "/packages/pkg-veneers.webp",
+        "img": "/packages/E-Max-Veneer-package-1.jpg.webp",
         "included": [
           "1x Authentic Swiss Ivoclar IPS e.max Lithium Disilicate Crown",
           "3D Digital Intraoral Scan & CAD/CAM Precision Milling",
@@ -83,7 +83,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "10-Unit Anterior Smile Makeover (E-Max)",
         "brand": "Swiss Ivoclar IPS e.max Press",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-emax.webp",
+        "img": "/packages/E-Max-Veneer-package-2.jpg.webp",
         "popular": true,
         "included": [
           "10x High-Translucency E-Max Crowns/Veneers (Upper Smile Zone)",
@@ -104,7 +104,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Mouth E-Max Makeover",
         "brand": "Ivoclar IPS e.max CAD/Press",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-veneers.webp",
+        "img": "/packages/E-Max-Veneer-package-4.jpg.webp",
         "included": [
           "20x High-Translucency E-Max Crowns (10 Upper + 10 Lower Arches)",
           "Comprehensive 3D CT Diagnostic Scan & Bite Balance Simulation",
@@ -124,7 +124,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Zirconium Crown (Amman-Girrbach)",
         "brand": "Amman-Girrbach / Vita (1200+ MPa)",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "/packages/pkg-zirconia.webp",
+        "img": "/packages/Zirconium-Crown-Package-1.jpg",
         "included": [
           "1x Genuine German Monolithic Zirconia Crown (1200+ MPa)",
           "3D Digital Intraoral Scan & CAD/CAM Precision Milling",
@@ -143,7 +143,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Premium Zirconia Hollywood Smile",
         "brand": "Monolithic Multi-Layer 3D Pro Zirconia",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-zirconia.webp",
+        "img": "/packages/Zirconium-Crown-Package-3.jpg",
         "included": [
           "20x High-Translucency Monolithic Zirconia Crowns (10 Upper + 10 Lower Arches)",
           "3D Digital Facial Aesthetics & golden ratio smile planning",
@@ -163,7 +163,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Combination Makeover (E-Max Front + Zirconia Back)",
         "brand": "Swiss E-Max + German Zirconia",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/packages/Porcelain-Crown-Package-2.jpg",
+        "img": "/packages/Zirconium-Crown-Package-2.jpg",
         "included": [
           "8-10 Anterior E-Max Crowns for ultimate aesthetics + Posterior Zirconia for bite strength",
           "Precision CAD/CAM digital margin adaptation",
@@ -313,7 +313,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single E-Max Porcelain Crown",
         "brand": "Swiss Ivoclar Vivadent IPS e.max (450–500 MPa)",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "/packages/pkg-veneers.webp",
+        "img": "/packages/E-Max-Veneer-package-1.jpg.webp",
         "included": [
           "1x Authentic Swiss Ivoclar IPS e.max Lithium Disilicate Crown",
           "3D Digital Intraoral Scan & CAD/CAM Precision Milling",
@@ -332,7 +332,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "10-Unit Anterior Smile Makeover (E-Max)",
         "brand": "Swiss Ivoclar IPS e.max Press",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-emax.webp",
+        "img": "/packages/E-Max-Veneer-package-2.jpg.webp",
         "popular": true,
         "included": [
           "10x High-Translucency E-Max Crowns/Veneers (Upper Smile Zone)",
@@ -353,7 +353,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Mouth E-Max Makeover",
         "brand": "Ivoclar IPS e.max CAD/Press",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-veneers.webp",
+        "img": "/packages/E-Max-Veneer-package-4.jpg.webp",
         "included": [
           "20x High-Translucency E-Max Crowns (10 Upper + 10 Lower Arches)",
           "Comprehensive 3D CT Diagnostic Scan & Bite Balance Simulation",
@@ -373,7 +373,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Zirconium Crown (Amman-Girrbach)",
         "brand": "Amman-Girrbach / Vita (1200+ MPa)",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "/packages/pkg-zirconia.webp",
+        "img": "/packages/Zirconium-Crown-Package-1.jpg",
         "included": [
           "1x Genuine German Monolithic Zirconia Crown (1200+ MPa)",
           "3D Digital Intraoral Scan & CAD/CAM Precision Milling",
@@ -392,7 +392,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Premium Zirconia Hollywood Smile",
         "brand": "Monolithic Multi-Layer 3D Pro Zirconia",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-zirconia.webp",
+        "img": "/packages/Zirconium-Crown-Package-3.jpg",
         "included": [
           "20x High-Translucency Monolithic Zirconia Crowns (10 Upper + 10 Lower Arches)",
           "3D Digital Facial Aesthetics & golden ratio smile planning",
@@ -412,7 +412,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Combination Makeover (E-Max Front + Zirconia Back)",
         "brand": "Swiss E-Max + German Zirconia",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/packages/Porcelain-Crown-Package-2.jpg",
+        "img": "/packages/Zirconium-Crown-Package-2.jpg",
         "included": [
           "8-10 Anterior E-Max Crowns for ultimate aesthetics + Posterior Zirconia for bite strength",
           "Precision CAD/CAM digital margin adaptation",
@@ -562,7 +562,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single E-Max Porcelain Crown",
         "brand": "Swiss Ivoclar Vivadent IPS e.max (450–500 MPa)",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "/packages/pkg-veneers.webp",
+        "img": "/packages/E-Max-Veneer-package-1.jpg.webp",
         "included": [
           "1x Authentic Swiss Ivoclar IPS e.max Lithium Disilicate Crown",
           "3D Digital Intraoral Scan & CAD/CAM Precision Milling",
@@ -581,7 +581,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "10-Unit Anterior Smile Makeover (E-Max)",
         "brand": "Swiss Ivoclar IPS e.max Press",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-emax.webp",
+        "img": "/packages/E-Max-Veneer-package-2.jpg.webp",
         "popular": true,
         "included": [
           "10x High-Translucency E-Max Crowns/Veneers (Upper Smile Zone)",
@@ -602,7 +602,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Mouth E-Max Makeover",
         "brand": "Ivoclar IPS e.max CAD/Press",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-veneers.webp",
+        "img": "/packages/E-Max-Veneer-package-4.jpg.webp",
         "included": [
           "20x High-Translucency E-Max Crowns (10 Upper + 10 Lower Arches)",
           "Comprehensive 3D CT Diagnostic Scan & Bite Balance Simulation",
@@ -622,7 +622,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Zirconium Crown (Amman-Girrbach)",
         "brand": "Amman-Girrbach / Vita (1200+ MPa)",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "/packages/pkg-zirconia.webp",
+        "img": "/packages/Zirconium-Crown-Package-1.jpg",
         "included": [
           "1x Genuine German Monolithic Zirconia Crown (1200+ MPa)",
           "3D Digital Intraoral Scan & CAD/CAM Precision Milling",
@@ -641,7 +641,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Premium Zirconia Hollywood Smile",
         "brand": "Monolithic Multi-Layer 3D Pro Zirconia",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-zirconia.webp",
+        "img": "/packages/Zirconium-Crown-Package-3.jpg",
         "included": [
           "20x High-Translucency Monolithic Zirconia Crowns (10 Upper + 10 Lower Arches)",
           "3D Digital Facial Aesthetics & golden ratio smile planning",
@@ -661,7 +661,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Combination Makeover (E-Max Front + Zirconia Back)",
         "brand": "Swiss E-Max + German Zirconia",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/packages/Porcelain-Crown-Package-2.jpg",
+        "img": "/packages/Zirconium-Crown-Package-2.jpg",
         "included": [
           "8-10 Anterior E-Max Crowns for ultimate aesthetics + Posterior Zirconia for bite strength",
           "Precision CAD/CAM digital margin adaptation",
@@ -811,7 +811,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single E-Max Porcelain Crown",
         "brand": "Swiss Ivoclar Vivadent IPS e.max (450–500 MPa)",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "/packages/pkg-veneers.webp",
+        "img": "/packages/E-Max-Veneer-package-1.jpg.webp",
         "included": [
           "1x Authentic Swiss Ivoclar IPS e.max Lithium Disilicate Crown",
           "3D Digital Intraoral Scan & CAD/CAM Precision Milling",
@@ -830,7 +830,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "10-Unit Anterior Smile Makeover (E-Max)",
         "brand": "Swiss Ivoclar IPS e.max Press",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-emax.webp",
+        "img": "/packages/E-Max-Veneer-package-2.jpg.webp",
         "popular": true,
         "included": [
           "10x High-Translucency E-Max Crowns/Veneers (Upper Smile Zone)",
@@ -851,7 +851,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Mouth E-Max Makeover",
         "brand": "Ivoclar IPS e.max CAD/Press",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-veneers.webp",
+        "img": "/packages/E-Max-Veneer-package-4.jpg.webp",
         "included": [
           "20x High-Translucency E-Max Crowns (10 Upper + 10 Lower Arches)",
           "Comprehensive 3D CT Diagnostic Scan & Bite Balance Simulation",
@@ -871,7 +871,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Zirconium Crown (Amman-Girrbach)",
         "brand": "Amman-Girrbach / Vita (1200+ MPa)",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "/packages/pkg-zirconia.webp",
+        "img": "/packages/Zirconium-Crown-Package-1.jpg",
         "included": [
           "1x Genuine German Monolithic Zirconia Crown (1200+ MPa)",
           "3D Digital Intraoral Scan & CAD/CAM Precision Milling",
@@ -890,7 +890,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Premium Zirconia Hollywood Smile",
         "brand": "Monolithic Multi-Layer 3D Pro Zirconia",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-zirconia.webp",
+        "img": "/packages/Zirconium-Crown-Package-3.jpg",
         "included": [
           "20x High-Translucency Monolithic Zirconia Crowns (10 Upper + 10 Lower Arches)",
           "3D Digital Facial Aesthetics & golden ratio smile planning",
@@ -910,7 +910,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Combination Makeover (E-Max Front + Zirconia Back)",
         "brand": "Swiss E-Max + German Zirconia",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/packages/Porcelain-Crown-Package-2.jpg",
+        "img": "/packages/Zirconium-Crown-Package-2.jpg",
         "included": [
           "8-10 Anterior E-Max Crowns for ultimate aesthetics + Posterior Zirconia for bite strength",
           "Precision CAD/CAM digital margin adaptation",
@@ -1060,7 +1060,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single E-Max Porcelain Crown",
         "brand": "Swiss Ivoclar Vivadent IPS e.max (450–500 MPa)",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "/packages/pkg-veneers.webp",
+        "img": "/packages/E-Max-Veneer-package-1.jpg.webp",
         "included": [
           "1x Authentic Swiss Ivoclar IPS e.max Lithium Disilicate Crown",
           "3D Digital Intraoral Scan & CAD/CAM Precision Milling",
@@ -1079,7 +1079,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "10-Unit Anterior Smile Makeover (E-Max)",
         "brand": "Swiss Ivoclar IPS e.max Press",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-emax.webp",
+        "img": "/packages/E-Max-Veneer-package-2.jpg.webp",
         "popular": true,
         "included": [
           "10x High-Translucency E-Max Crowns/Veneers (Upper Smile Zone)",
@@ -1100,7 +1100,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Mouth E-Max Makeover",
         "brand": "Ivoclar IPS e.max CAD/Press",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-veneers.webp",
+        "img": "/packages/E-Max-Veneer-package-4.jpg.webp",
         "included": [
           "20x High-Translucency E-Max Crowns (10 Upper + 10 Lower Arches)",
           "Comprehensive 3D CT Diagnostic Scan & Bite Balance Simulation",
@@ -1120,7 +1120,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Zirconium Crown (Amman-Girrbach)",
         "brand": "Amman-Girrbach / Vita (1200+ MPa)",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "/packages/pkg-zirconia.webp",
+        "img": "/packages/Zirconium-Crown-Package-1.jpg",
         "included": [
           "1x Genuine German Monolithic Zirconia Crown (1200+ MPa)",
           "3D Digital Intraoral Scan & CAD/CAM Precision Milling",
@@ -1139,7 +1139,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Premium Zirconia Hollywood Smile",
         "brand": "Monolithic Multi-Layer 3D Pro Zirconia",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-zirconia.webp",
+        "img": "/packages/Zirconium-Crown-Package-3.jpg",
         "included": [
           "20x High-Translucency Monolithic Zirconia Crowns (10 Upper + 10 Lower Arches)",
           "3D Digital Facial Aesthetics & golden ratio smile planning",
@@ -1159,7 +1159,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Combination Makeover (E-Max Front + Zirconia Back)",
         "brand": "Swiss E-Max + German Zirconia",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/packages/Porcelain-Crown-Package-2.jpg",
+        "img": "/packages/Zirconium-Crown-Package-2.jpg",
         "included": [
           "8-10 Anterior E-Max Crowns for ultimate aesthetics + Posterior Zirconia for bite strength",
           "Precision CAD/CAM digital margin adaptation",
@@ -1309,7 +1309,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single E-Max Porcelain Crown",
         "brand": "Swiss Ivoclar Vivadent IPS e.max (450–500 MPa)",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "/packages/pkg-veneers.webp",
+        "img": "/packages/E-Max-Veneer-package-1.jpg.webp",
         "included": [
           "1x Authentic Swiss Ivoclar IPS e.max Lithium Disilicate Crown",
           "3D Digital Intraoral Scan & CAD/CAM Precision Milling",
@@ -1328,7 +1328,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "10-Unit Anterior Smile Makeover (E-Max)",
         "brand": "Swiss Ivoclar IPS e.max Press",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-emax.webp",
+        "img": "/packages/E-Max-Veneer-package-2.jpg.webp",
         "popular": true,
         "included": [
           "10x High-Translucency E-Max Crowns/Veneers (Upper Smile Zone)",
@@ -1349,7 +1349,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Mouth E-Max Makeover",
         "brand": "Ivoclar IPS e.max CAD/Press",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-veneers.webp",
+        "img": "/packages/E-Max-Veneer-package-4.jpg.webp",
         "included": [
           "20x High-Translucency E-Max Crowns (10 Upper + 10 Lower Arches)",
           "Comprehensive 3D CT Diagnostic Scan & Bite Balance Simulation",
@@ -1369,7 +1369,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Zirconium Crown (Amman-Girrbach)",
         "brand": "Amman-Girrbach / Vita (1200+ MPa)",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "/packages/pkg-zirconia.webp",
+        "img": "/packages/Zirconium-Crown-Package-1.jpg",
         "included": [
           "1x Genuine German Monolithic Zirconia Crown (1200+ MPa)",
           "3D Digital Intraoral Scan & CAD/CAM Precision Milling",
@@ -1388,7 +1388,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Premium Zirconia Hollywood Smile",
         "brand": "Monolithic Multi-Layer 3D Pro Zirconia",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-zirconia.webp",
+        "img": "/packages/Zirconium-Crown-Package-3.jpg",
         "included": [
           "20x High-Translucency Monolithic Zirconia Crowns (10 Upper + 10 Lower Arches)",
           "3D Digital Facial Aesthetics & golden ratio smile planning",
@@ -1408,7 +1408,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Combination Makeover (E-Max Front + Zirconia Back)",
         "brand": "Swiss E-Max + German Zirconia",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/packages/Porcelain-Crown-Package-2.jpg",
+        "img": "/packages/Zirconium-Crown-Package-2.jpg",
         "included": [
           "8-10 Anterior E-Max Crowns for ultimate aesthetics + Posterior Zirconia for bite strength",
           "Precision CAD/CAM digital margin adaptation",
@@ -1558,7 +1558,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single E-Max Porcelain Crown",
         "brand": "Swiss Ivoclar Vivadent IPS e.max (450–500 MPa)",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "/packages/pkg-veneers.webp",
+        "img": "/packages/E-Max-Veneer-package-1.jpg.webp",
         "included": [
           "1x Authentic Swiss Ivoclar IPS e.max Lithium Disilicate Crown",
           "3D Digital Intraoral Scan & CAD/CAM Precision Milling",
@@ -1577,7 +1577,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "10-Unit Anterior Smile Makeover (E-Max)",
         "brand": "Swiss Ivoclar IPS e.max Press",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-emax.webp",
+        "img": "/packages/E-Max-Veneer-package-2.jpg.webp",
         "popular": true,
         "included": [
           "10x High-Translucency E-Max Crowns/Veneers (Upper Smile Zone)",
@@ -1598,7 +1598,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Mouth E-Max Makeover",
         "brand": "Ivoclar IPS e.max CAD/Press",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-veneers.webp",
+        "img": "/packages/E-Max-Veneer-package-4.jpg.webp",
         "included": [
           "20x High-Translucency E-Max Crowns (10 Upper + 10 Lower Arches)",
           "Comprehensive 3D CT Diagnostic Scan & Bite Balance Simulation",
@@ -1618,7 +1618,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Zirconium Crown (Amman-Girrbach)",
         "brand": "Amman-Girrbach / Vita (1200+ MPa)",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "/packages/pkg-zirconia.webp",
+        "img": "/packages/Zirconium-Crown-Package-1.jpg",
         "included": [
           "1x Genuine German Monolithic Zirconia Crown (1200+ MPa)",
           "3D Digital Intraoral Scan & CAD/CAM Precision Milling",
@@ -1637,7 +1637,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Premium Zirconia Hollywood Smile",
         "brand": "Monolithic Multi-Layer 3D Pro Zirconia",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-zirconia.webp",
+        "img": "/packages/Zirconium-Crown-Package-3.jpg",
         "included": [
           "20x High-Translucency Monolithic Zirconia Crowns (10 Upper + 10 Lower Arches)",
           "3D Digital Facial Aesthetics & golden ratio smile planning",
@@ -1657,7 +1657,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Combination Makeover (E-Max Front + Zirconia Back)",
         "brand": "Swiss E-Max + German Zirconia",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/packages/Porcelain-Crown-Package-2.jpg",
+        "img": "/packages/Zirconium-Crown-Package-2.jpg",
         "included": [
           "8-10 Anterior E-Max Crowns for ultimate aesthetics + Posterior Zirconia for bite strength",
           "Precision CAD/CAM digital margin adaptation",

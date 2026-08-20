@@ -124,7 +124,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Zirconium Crown (Amman-Girrbach)",
         "brand": "Amman-Girrbach / Vita (1200+ MPa)",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "/packages/pkg-zirconia.webp",
+        "img": "/packages/Zirconium-Crown-Package-1.jpg",
         "included": [
           "1x Genuine German Monolithic Zirconia Crown (1200+ MPa)",
           "3D Digital Intraoral Scan & CAD/CAM Precision Milling",
@@ -143,7 +143,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Premium Zirconia Hollywood Smile",
         "brand": "Monolithic Multi-Layer 3D Pro Zirconia",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-zirconia.webp",
+        "img": "/packages/Zirconium-Crown-Package-3.jpg",
         "included": [
           "20x High-Translucency Monolithic Zirconia Crowns (10 Upper + 10 Lower Arches)",
           "3D Digital Facial Aesthetics & golden ratio smile planning",
@@ -163,7 +163,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Full Arch PFM Bridge on Implants (12–14 Units)",
         "brand": "Medical Grade Cr-Co + Vita Master Porcelain",
         "duration": "6 – 7 Days (Final Visit)",
-        "img": "/packages/Porcelain-Crown-Package-1.jpg",
+        "img": "/treatments/accordion/traditional-bridge.webp",
         "included": [
           "12 to 14-Unit One-Piece Screw-Retained Metal Porcelain Bridge",
           "Precision CAD/CAM titanium multi-unit abutment connection",
@@ -397,7 +397,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Zirconium Crown (Amman-Girrbach)",
         "brand": "Amman-Girrbach / Vita (1200+ MPa)",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "/packages/pkg-zirconia.webp",
+        "img": "/packages/Zirconium-Crown-Package-1.jpg",
         "included": [
           "1x Genuine German Monolithic Zirconia Crown (1200+ MPa)",
           "3D Digital Intraoral Scan & CAD/CAM Precision Milling",
@@ -416,7 +416,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Premium Zirconia Hollywood Smile",
         "brand": "Monolithic Multi-Layer 3D Pro Zirconia",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-zirconia.webp",
+        "img": "/packages/Zirconium-Crown-Package-3.jpg",
         "included": [
           "20x High-Translucency Monolithic Zirconia Crowns (10 Upper + 10 Lower Arches)",
           "3D Digital Facial Aesthetics & golden ratio smile planning",
@@ -436,7 +436,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Full Arch PFM Bridge on Implants (12–14 Units)",
         "brand": "Medical Grade Cr-Co + Vita Master Porcelain",
         "duration": "6 – 7 Days (Final Visit)",
-        "img": "/packages/Porcelain-Crown-Package-1.jpg",
+        "img": "/treatments/accordion/traditional-bridge.webp",
         "included": [
           "12 to 14-Unit One-Piece Screw-Retained Metal Porcelain Bridge",
           "Precision CAD/CAM titanium multi-unit abutment connection",
@@ -670,7 +670,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Zirconium Crown (Amman-Girrbach)",
         "brand": "Amman-Girrbach / Vita (1200+ MPa)",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "/packages/pkg-zirconia.webp",
+        "img": "/packages/Zirconium-Crown-Package-1.jpg",
         "included": [
           "1x Genuine German Monolithic Zirconia Crown (1200+ MPa)",
           "3D Digital Intraoral Scan & CAD/CAM Precision Milling",
@@ -689,7 +689,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Premium Zirconia Hollywood Smile",
         "brand": "Monolithic Multi-Layer 3D Pro Zirconia",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-zirconia.webp",
+        "img": "/packages/Zirconium-Crown-Package-3.jpg",
         "included": [
           "20x High-Translucency Monolithic Zirconia Crowns (10 Upper + 10 Lower Arches)",
           "3D Digital Facial Aesthetics & golden ratio smile planning",
@@ -709,7 +709,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Full Arch PFM Bridge on Implants (12–14 Units)",
         "brand": "Medical Grade Cr-Co + Vita Master Porcelain",
         "duration": "6 – 7 Days (Final Visit)",
-        "img": "/packages/Porcelain-Crown-Package-1.jpg",
+        "img": "/treatments/accordion/traditional-bridge.webp",
         "included": [
           "12 to 14-Unit One-Piece Screw-Retained Metal Porcelain Bridge",
           "Precision CAD/CAM titanium multi-unit abutment connection",
@@ -943,7 +943,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Zirconium Crown (Amman-Girrbach)",
         "brand": "Amman-Girrbach / Vita (1200+ MPa)",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "/packages/pkg-zirconia.webp",
+        "img": "/packages/Zirconium-Crown-Package-1.jpg",
         "included": [
           "1x Genuine German Monolithic Zirconia Crown (1200+ MPa)",
           "3D Digital Intraoral Scan & CAD/CAM Precision Milling",
@@ -962,7 +962,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Premium Zirconia Hollywood Smile",
         "brand": "Monolithic Multi-Layer 3D Pro Zirconia",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-zirconia.webp",
+        "img": "/packages/Zirconium-Crown-Package-3.jpg",
         "included": [
           "20x High-Translucency Monolithic Zirconia Crowns (10 Upper + 10 Lower Arches)",
           "3D Digital Facial Aesthetics & golden ratio smile planning",
@@ -982,7 +982,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Full Arch PFM Bridge on Implants (12–14 Units)",
         "brand": "Medical Grade Cr-Co + Vita Master Porcelain",
         "duration": "6 – 7 Days (Final Visit)",
-        "img": "/packages/Porcelain-Crown-Package-1.jpg",
+        "img": "/treatments/accordion/traditional-bridge.webp",
         "included": [
           "12 to 14-Unit One-Piece Screw-Retained Metal Porcelain Bridge",
           "Precision CAD/CAM titanium multi-unit abutment connection",
@@ -1216,7 +1216,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Zirconium Crown (Amman-Girrbach)",
         "brand": "Amman-Girrbach / Vita (1200+ MPa)",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "/packages/pkg-zirconia.webp",
+        "img": "/packages/Zirconium-Crown-Package-1.jpg",
         "included": [
           "1x Genuine German Monolithic Zirconia Crown (1200+ MPa)",
           "3D Digital Intraoral Scan & CAD/CAM Precision Milling",
@@ -1235,7 +1235,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Premium Zirconia Hollywood Smile",
         "brand": "Monolithic Multi-Layer 3D Pro Zirconia",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-zirconia.webp",
+        "img": "/packages/Zirconium-Crown-Package-3.jpg",
         "included": [
           "20x High-Translucency Monolithic Zirconia Crowns (10 Upper + 10 Lower Arches)",
           "3D Digital Facial Aesthetics & golden ratio smile planning",
@@ -1255,7 +1255,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Full Arch PFM Bridge on Implants (12–14 Units)",
         "brand": "Medical Grade Cr-Co + Vita Master Porcelain",
         "duration": "6 – 7 Days (Final Visit)",
-        "img": "/packages/Porcelain-Crown-Package-1.jpg",
+        "img": "/treatments/accordion/traditional-bridge.webp",
         "included": [
           "12 to 14-Unit One-Piece Screw-Retained Metal Porcelain Bridge",
           "Precision CAD/CAM titanium multi-unit abutment connection",
@@ -1489,7 +1489,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Zirconium Crown (Amman-Girrbach)",
         "brand": "Amman-Girrbach / Vita (1200+ MPa)",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "/packages/pkg-zirconia.webp",
+        "img": "/packages/Zirconium-Crown-Package-1.jpg",
         "included": [
           "1x Genuine German Monolithic Zirconia Crown (1200+ MPa)",
           "3D Digital Intraoral Scan & CAD/CAM Precision Milling",
@@ -1508,7 +1508,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Premium Zirconia Hollywood Smile",
         "brand": "Monolithic Multi-Layer 3D Pro Zirconia",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-zirconia.webp",
+        "img": "/packages/Zirconium-Crown-Package-3.jpg",
         "included": [
           "20x High-Translucency Monolithic Zirconia Crowns (10 Upper + 10 Lower Arches)",
           "3D Digital Facial Aesthetics & golden ratio smile planning",
@@ -1528,7 +1528,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Full Arch PFM Bridge on Implants (12–14 Units)",
         "brand": "Medical Grade Cr-Co + Vita Master Porcelain",
         "duration": "6 – 7 Days (Final Visit)",
-        "img": "/packages/Porcelain-Crown-Package-1.jpg",
+        "img": "/treatments/accordion/traditional-bridge.webp",
         "included": [
           "12 to 14-Unit One-Piece Screw-Retained Metal Porcelain Bridge",
           "Precision CAD/CAM titanium multi-unit abutment connection",
@@ -1762,7 +1762,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Zirconium Crown (Amman-Girrbach)",
         "brand": "Amman-Girrbach / Vita (1200+ MPa)",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "/packages/pkg-zirconia.webp",
+        "img": "/packages/Zirconium-Crown-Package-1.jpg",
         "included": [
           "1x Genuine German Monolithic Zirconia Crown (1200+ MPa)",
           "3D Digital Intraoral Scan & CAD/CAM Precision Milling",
@@ -1781,7 +1781,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Premium Zirconia Hollywood Smile",
         "brand": "Monolithic Multi-Layer 3D Pro Zirconia",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-zirconia.webp",
+        "img": "/packages/Zirconium-Crown-Package-3.jpg",
         "included": [
           "20x High-Translucency Monolithic Zirconia Crowns (10 Upper + 10 Lower Arches)",
           "3D Digital Facial Aesthetics & golden ratio smile planning",
@@ -1801,7 +1801,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Full Arch PFM Bridge on Implants (12–14 Units)",
         "brand": "Medical Grade Cr-Co + Vita Master Porcelain",
         "duration": "6 – 7 Days (Final Visit)",
-        "img": "/packages/Porcelain-Crown-Package-1.jpg",
+        "img": "/treatments/accordion/traditional-bridge.webp",
         "included": [
           "12 to 14-Unit One-Piece Screw-Retained Metal Porcelain Bridge",
           "Precision CAD/CAM titanium multi-unit abutment connection",
