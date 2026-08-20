@@ -11,7 +11,7 @@ export interface BlogPost {
 export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'simon-cowell-teeth-before-and-after',
-    image: '/blog/simon-cowell.jpg',
+    image: '/blog/simon-cowell-teeth.webp',
     category: 'celebrities-teeth',
     title: {
       en: 'Simon Cowell Teeth Before and After What Really Happened to His Smile',
@@ -25,7 +25,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'zac-efron-veneers',
-    image: '/blog/zac-efron.jpg',
+    image: '/blog/zac-efron-veneers.webp',
     category: 'celebrities-teeth',
     title: {
       en: 'Zac Efron Veneers The Truth Behind His Smile Transformation',
@@ -95,7 +95,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'jurgen-klopp-teeth-transformation-smile-makeover',
-    image: '/blog/jurgen-klopp.webp',
+    image: '/blog/jurgen-klopp-smile.webp',
     category: 'celebrities-teeth',
     title: {
       en: 'Jurgen Klopp Teeth Before and After | The $30,000 Smile Makeover',
@@ -123,7 +123,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'morgan-freeman-smile',
-    image: '/blog/morgan-freeman.webp',
+    image: '/blog/morgan-freeman-teeth.webp',
     category: 'celebrities-teeth',
     title: {
       en: 'Morgan Freeman’s Smile Evolution and Dental Journey',
@@ -137,7 +137,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'matthew-perry-teeth-transformation',
-    image: '/blog/matthew-perry.webp',
+    image: '/blog/matthew-perry-smile.webp',
     category: 'celebrities-teeth',
     title: {
       en: "Matthew Perry's Teeth Transformation and Smile Journey",
@@ -151,7 +151,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'freddie-freeman-teeth-and-veneers',
-    image: '/blog/freddie-freeman.webp',
+    image: '/blog/freddie-freeman-smile.webp',
     category: 'celebrities-teeth',
     title: {
       en: "Freddie Freeman's Teeth and Veneers Transformation",
@@ -165,7 +165,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'charlie-kirk-smile',
-    image: '/blog/charlie-kirk.webp',
+    image: '/blog/charlie-kirk-teeth.webp',
     category: 'celebrities-teeth',
     title: {
       en: 'Charlie Kirk Smile: Natural Teeth vs Cosmetic Dentistry',
@@ -179,7 +179,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'hilary-duff-veneers-before-and-after-hollywood-smile',
-    image: '/blog/hilary-duff.jpg',
+    image: '/blog/hilary-duff-veneers.webp',
     category: 'celebrities-teeth',
     title: {
       en: 'Hilary Duff Veneers Before and After: A Hollywood Smile Transformation',
@@ -193,7 +193,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'miley-cyrus-teeth-before-after',
-    image: '/blog/miley-cyrus.webp',
+    image: '/blog/miley-cyrus-veneers.webp',
     category: 'celebrities-teeth',
     title: {
       en: 'Miley Cyrus Teeth Before and After: A Hollywood Smile Journey',
@@ -221,7 +221,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'cristiano-ronaldo-teeth-before-and-after-veneers',
-    image: '/blog/cristiano-ronaldo.webp',
+    image: '/blog/cristiano-ronaldo-teeth.webp',
     category: 'celebrities-teeth',
     title: {
       en: 'Cristiano Ronaldo Teeth Before And After Veneers & Orthodontics',
@@ -249,7 +249,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'scarlett-johansson-teeth-veneers-smile-evolution-guide',
-    image: '/blog/scarlett-johansson.webp',
+    image: '/blog/scarlett-johansson-smile.webp',
     category: 'celebrities-teeth',
     title: {
       en: 'Scarlett Johansson Teeth Veneers And Smile Evolution Guide',
@@ -361,7 +361,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'katie-price-teeth-smile-evolution-veneers-turkey',
-    image: '/blog/katie-price.webp',
+    image: '/blog/katie-price-teeth.webp',
     category: 'celebrities-teeth',
     title: {
       en: 'Katie Price Teeth & Smile Evolution: Turkey Veneers Story',
@@ -375,7 +375,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'tom-cruise-teeth-story',
-    image: '/blog/tom-cruise.webp',
+    image: '/blog/tom-cruise-teeth.webp',
     category: 'celebrities-teeth',
     title: {
       en: 'The Story Behind Tom Cruise’s Teeth and Dental Makeover',

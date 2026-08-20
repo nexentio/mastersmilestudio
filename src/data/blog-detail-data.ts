@@ -65,7 +65,7 @@ export const BLOG_DETAIL_ARTICLES: Record<string, BlogDetailArticle> = {
   'simon-cowell-teeth-before-and-after': {
     slug: 'simon-cowell-teeth-before-and-after',
     category: 'celebrities-teeth',
-    image: '/blog/simon-cowell.jpg',
+    image: '/blog/simon-cowell-teeth.webp',
     publishDate: '2026-07-20',
     readTime: '6 min read',
     author: AUTHOR_DATA,
@@ -521,7 +521,7 @@ export const BLOG_DETAIL_ARTICLES: Record<string, BlogDetailArticle> = {
   'zac-efron-veneers': {
     slug: 'zac-efron-veneers',
     category: 'celebrities-teeth',
-    image: '/blog/zac-efron.jpg',
+    image: '/blog/zac-efron-veneers.webp',
     publishDate: '2026-07-22',
     readTime: '7 min read',
     author: AUTHOR_DATA,
@@ -1097,7 +1097,7 @@ export function getBlogDetailBySlug(slug: string): BlogDetailArticle {
 
   const post = BLOG_POSTS.find((p) => p.slug === slug);
   const category = post?.category || 'guides';
-  const image = post?.image || '/blog/simon-cowell.jpg';
+  const image = post?.image || '/blog/simon-cowell-teeth.webp';
   const title = post?.title || { en: slug.replace(/-/g, ' ') };
 
   return {
