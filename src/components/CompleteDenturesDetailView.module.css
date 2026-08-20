@@ -33,7 +33,7 @@
 
 .packagesTitle {
   font-size: clamp(1.85rem, 3.2vw, 2.5rem);
-  font-weight: 600;
+  font-weight: 700;
   color: #0c1b4d;
   margin-bottom: 0.75rem;
   letter-spacing: -0.02em;
@@ -87,24 +87,16 @@
   color: #ffffff;
 }
 
-/* Desktop Slider & Grid */
-.sliderOuter {
-  position: relative;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.arrowBtn {
-  display: none;
-}
-
+/* Desktop Grid */
 .packagesGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   width: 100%;
+}
+
+.mobileTrack {
+  display: none;
 }
 
 .packageCard {
@@ -116,8 +108,9 @@
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
   transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+  box-sizing: border-box;
 }
 
 .packageCard:hover {
@@ -135,15 +128,17 @@
   position: absolute;
   top: -13px;
   right: 20px;
-  background-color: #D58936;
+  background: linear-gradient(180deg, #D58936 0%, #b87b10 100%);
   color: #ffffff;
   font-size: 0.72rem;
-  font-weight: 600;
-  padding: 0.28rem 0.9rem;
+  font-weight: 700;
+  padding: 0.28rem 0.95rem;
   border-radius: 9999px;
+  border: 1px solid #a86c0d;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  box-shadow: 0 4px 10px rgba(213, 137, 54, 0.3);
+  box-shadow: 0 4px 10px rgba(184, 123, 16, 0.35);
+  z-index: 10;
 }
 
 .cardHeader {
@@ -162,6 +157,22 @@
   font-size: 0.85rem;
   color: #64748b;
   font-weight: 500;
+}
+
+.pkgImageWrap {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 1.25rem;
+  background-color: #f1f5f9;
+}
+
+.pkgImageWrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .durationRow {
@@ -226,77 +237,136 @@
   line-height: 1.3;
 }
 
-.priceRow {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 1.25rem;
+.cardFooter {
   border-top: 1px solid #f1f5f9;
-  gap: 1rem;
+  padding-top: 1.25rem;
+}
+
+.priceRow {
+  background: linear-gradient(180deg, #484b56 0%, #2c2f38 24%, #181a22 58%, #08090c 100%);
+  border: 1.5px solid #525663;
+  border-radius: 16px;
+  padding: 0.95rem 1.25rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45), inset 0 1.5px 1.5px rgba(255, 255, 255, 0.45), inset 0 -2px 3px rgba(0, 0, 0, 0.85);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .priceLabel {
-  font-size: 0.78rem;
-  color: #64748b;
-  font-weight: 600;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #94a3b8;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
-  display: block;
+  letter-spacing: 0.08em;
   margin-bottom: 0.2rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
 }
 
 .priceValue {
-  font-size: 1.55rem;
+  font-size: 1.7rem;
   font-weight: 800;
-  color: #0c1b4d;
-  margin: 0;
-  line-height: 1;
+  color: #fbbf24;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7), 0 0 14px rgba(251, 191, 36, 0.25);
 }
 
 .quoteBtn {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #0c1b4d;
-  color: #ffffff;
-  padding: 0.75rem 1.25rem;
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(180deg, #f5d47a 0%, #e6b845 28%, #d49a24 60%, #b87b10 100%);
+  color: #5c3504;
+  padding: 0.85rem 1.25rem;
   border-radius: 9999px;
-  font-size: 0.85rem;
+  border: 1.5px solid #a86c0d;
   font-weight: 700;
+  font-size: 0.98rem;
+  letter-spacing: 0.01em;
   text-decoration: none;
-  transition: all 0.25s ease;
-  border: none;
-  cursor: pointer;
-  white-space: nowrap;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.45);
+  box-shadow: 0 4px 14px rgba(184, 123, 16, 0.35), inset 0 1px 1px rgba(255, 255, 255, 0.75), inset 0 -1px 2px rgba(0, 0, 0, 0.25);
+  transition: all 0.22s ease;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
 }
 
 .quoteBtn:hover {
-  background-color: #D58936;
+  background: linear-gradient(180deg, #fae08e 0%, #ecc152 28%, #dfa52f 60%, #c48618 100%);
+  color: #482701;
   transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(213, 137, 54, 0.25);
-  color: #ffffff;
+  box-shadow: 0 6px 20px rgba(184, 123, 16, 0.45), inset 0 1px 2px rgba(255, 255, 255, 0.85), inset 0 -1px 2px rgba(0, 0, 0, 0.2);
 }
 
-/* Mobile Carousel — Hidden on Desktop */
-.mobileCarousel {
-  display: none;
+.quoteBtn:active {
+  background: linear-gradient(180deg, #dfa52f 0%, #cb8e1c 50%, #b87b10 100%);
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(184, 123, 16, 0.3), inset 0 2px 4px rgba(0, 0, 0, 0.25);
 }
 
-@media (max-width: 900px) {
-  .sliderOuter {
+/* Mobile Responsive */
+@media (max-width: 860px) {
+  .packagesSection {
+    padding: 3rem 0;
+  }
+
+  .packagesGrid {
+    display: none !important;
+  }
+
+  /* 100% full-width swipe track on mobile */
+  .mobileTrack {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    -webkit-overflow-scrolling: touch !important;
+    scroll-snap-type: x mandatory !important;
+    scroll-padding-left: 1.25rem !important;
+    scroll-padding-right: 1.25rem !important;
+    gap: 1rem !important;
+    width: 100vw !important;
+    position: relative !important;
+    left: 50% !important;
+    right: 50% !important;
+    margin-left: -50vw !important;
+    margin-right: -50vw !important;
+    padding: 1rem 1.25rem 2rem 1.25rem !important;
+    scrollbar-width: none !important;
+    -ms-overflow-style: none !important;
+    box-sizing: border-box !important;
+  }
+
+  .mobileTrack::-webkit-scrollbar {
     display: none;
   }
 
-  .mobileCarousel {
-    display: block;
-    width: 100%;
-    max-width: 440px;
-    margin: 0 auto;
+  .packageCard {
+    flex: 0 0 calc(100vw - 3.25rem) !important;
+    width: calc(100vw - 3.25rem) !important;
+    min-width: calc(100vw - 3.25rem) !important;
+    max-width: none !important;
+    scroll-snap-align: start !important;
+    padding: 1.6rem 1.35rem !important;
+    border-radius: 18px !important;
+    box-sizing: border-box !important;
   }
 
-  .mobileCardWrapper {
-    width: 100%;
+  .packageCard:hover,
+  .packageCard:active {
+    transform: none;
   }
+}
 
   .mobileControls {
     display: flex;

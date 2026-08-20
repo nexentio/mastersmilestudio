@@ -546,30 +546,7 @@ export default function PartialDenturesDetailView() {
   const dict = DICTIONARIES[locale] || DICTIONARIES.en;
 
   const [currency, setCurrency] = useState<'USD' | 'EUR' | 'GBP'>('USD');
-  const [mobileIndex, setMobileIndex] = useState(0);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-
-  const sliderRef = useRef<HTMLDivElement>(null);
-
-  const handlePrev = () => {
-    if (sliderRef.current) {
-      sliderRef.current.scrollBy({ left: -340, behavior: 'smooth' });
-    }
-  };
-
-  const handleNext = () => {
-    if (sliderRef.current) {
-      sliderRef.current.scrollBy({ left: 340, behavior: 'smooth' });
-    }
-  };
-
-  const handleMobilePrev = () => {
-    setMobileIndex((prev) => (prev === 0 ? dict.packages.length - 1 : prev - 1));
-  };
-
-  const handleMobileNext = () => {
-    setMobileIndex((prev) => (prev === dict.packages.length - 1 ? 0 : prev + 1));
-  };
 
   const toggleFaq = (idx: number) => {
     setOpenFaq((prev) => (prev === idx ? null : idx));
@@ -606,30 +583,30 @@ export default function PartialDenturesDetailView() {
             </div>
           </div>
 
-          {/* Desktop Slider */}
-          <div className={styles.sliderOuter}>
-            <button
-              type="button"
-              onClick={handlePrev}
-              className={`${styles.arrowBtn} ${styles.arrowLeft}`}
-              aria-label="Previous packages"
-            >
-              ‹
-            </button>
+          {/* Desktop Grid */}
+          <div className={styles.packagesGrid}>
+            {dict.packages.map((pkg, idx) => (
+              <div
+                key={idx}
+                className={`${styles.packageCard} ${pkg.popular ? styles.popularCard : ''}`}
+              >
+                {pkg.popular && (
+                  <div className={styles.badge}>{dict.mostPopularBadge}</div>
+                )}
 
-            <div ref={sliderRef} className={styles.packagesGrid}>
-              {dict.packages.map((pkg, idx) => (
-                <div
-                  key={idx}
-                  className={`${styles.packageCard} ${pkg.popular ? styles.popularCard : ''}`}
-                >
-                  {pkg.popular && (
-                    <div className={styles.badge}>{dict.mostPopularBadge}</div>
-                  )}
-
+                <div>
                   <div className={styles.cardHeader}>
                     <h3 className={styles.packageName}>{pkg.name}</h3>
                     <p className={styles.packageBrand}>{pkg.brand}</p>
+                  </div>
+
+                  <div className={styles.pkgImageWrap}>
+                    <img
+                      src={pkg.img}
+                      alt={pkg.name}
+                      loading="lazy"
+                      decoding="async"
+                    />
                   </div>
 
                   <div className={styles.durationRow}>
@@ -645,97 +622,73 @@ export default function PartialDenturesDetailView() {
                       ))}
                     </ul>
                   </div>
-
-                  <div className={styles.priceRow}>
-                    <div>
-                      <span className={styles.priceLabel}>{dict.priceLabel}</span>
-                      <p className={styles.priceValue}>{pkg.price[currency]}</p>
-                    </div>
-                    <a href="#contact" className={styles.quoteBtn}>
-                      {dict.getQuoteBtn}
-                    </a>
-                  </div>
                 </div>
-              ))}
-            </div>
 
-            <button
-              type="button"
-              onClick={handleNext}
-              className={`${styles.arrowBtn} ${styles.arrowRight}`}
-              aria-label="Next packages"
-            >
-              ›
-            </button>
+                <div className={styles.cardFooter}>
+                  <div className={styles.priceRow}>
+                    <span className={styles.priceLabel}>{dict.priceLabel}</span>
+                    <p className={styles.priceValue}>{pkg.price[currency]}</p>
+                  </div>
+                  <a href="#contact" className={styles.quoteBtn}>
+                    {dict.getQuoteBtn}
+                  </a>
+                </div>
+              </div>
+            ))}
           </div>
 
-          {/* Mobile Carousel */}
-          <div className={styles.mobileCarousel}>
-            <div className={styles.mobileCardWrapper}>
-              {(() => {
-                const pkg = dict.packages[mobileIndex];
-                return (
-                  <div
-                    className={`${styles.packageCard} ${pkg.popular ? styles.popularCard : ''}`}
-                  >
-                    {pkg.popular && (
-                      <div className={styles.badge}>{dict.mostPopularBadge}</div>
-                    )}
+          {/* Mobile Horizontal Swipe Track */}
+          <div className={styles.mobileTrack}>
+            {dict.packages.map((pkg, idx) => (
+              <div
+                key={idx}
+                className={`${styles.packageCard} ${pkg.popular ? styles.popularCard : ''}`}
+              >
+                {pkg.popular && (
+                  <div className={styles.badge}>{dict.mostPopularBadge}</div>
+                )}
 
-                    <div className={styles.cardHeader}>
-                      <h3 className={styles.packageName}>{pkg.name}</h3>
-                      <p className={styles.packageBrand}>{pkg.brand}</p>
-                    </div>
-
-                    <div className={styles.durationRow}>
-                      <span className={styles.durationLabel}>{dict.durationLabel}</span>
-                      <span className={styles.durationValue}>{pkg.duration}</span>
-                    </div>
-
-                    <div className={styles.inclusionsBox}>
-                      <p className={styles.inclusionsTitle}>{dict.includedLabel}</p>
-                      <ul className={styles.inclusionsList}>
-                        {pkg.included.map((item, i) => (
-                          <li key={i}>{item}</li>
-                        ))}
-                      </ul>
-                    </div>
-
-                    <div className={styles.priceRow}>
-                      <div>
-                        <span className={styles.priceLabel}>{dict.priceLabel}</span>
-                        <p className={styles.priceValue}>{pkg.price[currency]}</p>
-                      </div>
-                      <a href="#contact" className={styles.quoteBtn}>
-                        {dict.getQuoteBtn}
-                      </a>
-                    </div>
+                <div>
+                  <div className={styles.cardHeader}>
+                    <h3 className={styles.packageName}>{pkg.name}</h3>
+                    <p className={styles.packageBrand}>{pkg.brand}</p>
                   </div>
-                );
-              })()}
-            </div>
 
-            <div className={styles.mobileControls}>
-              <button
-                type="button"
-                onClick={handleMobilePrev}
-                className={styles.mobileArrow}
-                aria-label="Previous package"
-              >
-                ‹
-              </button>
-              <span className={styles.mobilePageIndicator}>
-                {mobileIndex + 1} / {dict.packages.length}
-              </span>
-              <button
-                type="button"
-                onClick={handleMobileNext}
-                className={styles.mobileArrow}
-                aria-label="Next package"
-              >
-                ›
-              </button>
-            </div>
+                  <div className={styles.pkgImageWrap}>
+                    <img
+                      src={pkg.img}
+                      alt={pkg.name}
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+
+                  <div className={styles.durationRow}>
+                    <span className={styles.durationLabel}>{dict.durationLabel}</span>
+                    <span className={styles.durationValue}>{pkg.duration}</span>
+                  </div>
+
+                  <div className={styles.inclusionsBox}>
+                    <p className={styles.inclusionsTitle}>{dict.includedLabel}</p>
+                    <ul className={styles.inclusionsList}>
+                      {pkg.included.map((item, i) => (
+                        <li key={i}>{item}</li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+
+                <div className={styles.cardFooter}>
+                  <div className={styles.priceRow}>
+                    <span className={styles.priceLabel}>{dict.priceLabel}</span>
+                    <p className={styles.priceValue}>{pkg.price[currency]}</p>
+                  </div>
+                  <a href="#contact" className={styles.quoteBtn}>
+                    {dict.getQuoteBtn}
+                  </a>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
