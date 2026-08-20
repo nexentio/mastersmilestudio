@@ -1,28 +1,86 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { useLocale } from 'next-intl';
 import { Link } from '@/i18n/routing';
 import { SITE_CONFIG, getWhatsAppLink } from '@/config/site';
-import { GALLERY_ITEMS, GALLERY_CATEGORIES, GalleryItem } from '@/data/gallery-page-data';
+import { GALLERY_VIDEO_STORIES, GALLERY_CATEGORIES, GalleryVideoStory } from '@/data/gallery-page-data';
 import styles from './GalleryMainSection.module.css';
 
 export default function GalleryMainSection() {
   const locale = useLocale();
-  const [selectedCategory, setSelectedCategory] = useState<'general' | 'clinic'>('general');
-  const [activeLightboxIndex, setActiveLightboxIndex] = useState<number | null>(null);
+  const [selectedCategory, setSelectedCategory] = useState<'all' | 'implants' | 'makeover' | 'clinic'>('all');
+  const [activePlayingId, setActivePlayingId] = useState<string | null>(null);
+  const [selectedModalVideo, setSelectedModalVideo] = useState<GalleryVideoStory | null>(null);
 
-  const filteredItems = GALLERY_ITEMS.filter(
-    (item) => item.category === selectedCategory
-  );
+  const filteredItems = GALLERY_VIDEO_STORIES.filter((item) => {
+    if (selectedCategory === 'all') return true;
+    return item.category === selectedCategory;
+  });
 
   const getLocalized = (obj: Record<string, string> | undefined) => {
     if (!obj) return '';
     return obj[locale] || obj.en || obj.tr || '';
   };
 
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        setSelectedModalVideo(null);
+        setActivePlayingId(null);
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, []);
+
   const UI_TEXT = {
+    sectionTitle: {
+      en: 'Real Patients. Real Smiles.',
+      tr: 'Gerçek Hastalar. Gerçek Gülüşler.',
+      de: 'Echte Patienten. Echtes Lächeln.',
+      pl: 'Prawdziwi Pacjenci. Prawdziwe Uśmiechy.',
+      pt: 'Pacientes Reais. Sorrisos Reais.',
+      es: 'Pacientes Reales. Sonrisas Reales.',
+      ru: 'Реальные пациенты. Реальные улыбки.',
+    },
+    sectionSubtitle: {
+      en: 'Explore the journey of our international patients through authentic visuals, elegant transformations, and moments captured inside Master Smile Studio. Let their stories inspire your own.',
+      tr: 'Master Smile Studio bünyesinde tedavi gören uluslararası hastalarımızın gerçek video hikayelerini, gülüş dönüşümlerini ve deneyimlerini keşfedin.',
+      de: 'Entdecken Sie die Reise unserer internationalen Patienten anhand authentischer Aufnahmen, eleganter Verwandlungen und exklusiver Einblicke im Master Smile Studio.',
+      pl: 'Poznaj historie naszych międzynarodowych pacjentów dzięki autentycznym materiałom wideo i spektakularnym metamorfozom uśmiechu w Master Smile Studio.',
+      pt: 'Explore a jornada dos nossos pacientes internacionais através de vídeos autênticos, transformações elegantes e momentos captados no Master Smile Studio.',
+      es: 'Explore el viaje de nuestros pacientes internacionales a través de imágenes auténticas, elegantes transformaciones y momentos capturados en Master Smile Studio.',
+      ru: 'Познакомьтесь с историями наших международных пациентов через подлинные видео, потрясающие преображения улыбок в Master Smile Studio.',
+    },
+    happyPatient: {
+      en: 'HAPPY PATIENT',
+      tr: 'MUTLU HASTA',
+      de: 'GLÜCKLICHER PATIENT',
+      pl: 'ZADOWOLONY PACJENT',
+      pt: 'PACIENTE FELIZ',
+      es: 'PACIENTE FELIZ',
+      ru: 'СЧАСТЛИВЫЙ ПАЦИЕНТ',
+    },
+    fromText: {
+      en: 'FROM',
+      tr: 'GELİŞ:',
+      de: 'AUS',
+      pl: 'Z',
+      pt: 'DE',
+      es: 'DE',
+      ru: 'ИЗ',
+    },
+    toMasterSmile: {
+      en: 'TO MASTER SMILE',
+      tr: "MASTER SMILE'A",
+      de: 'ZU MASTER SMILE',
+      pl: 'DO MASTER SMILE',
+      pt: 'PARA MASTER SMILE',
+      es: 'A MASTER SMILE',
+      ru: 'В MASTER SMILE',
+    },
     consultationTitle: {
       en: 'Contact Us For Free Consultation',
       tr: 'Ücretsiz Konsültasyon İçin Ulaşın',
@@ -146,41 +204,22 @@ export default function GalleryMainSection() {
     },
   ];
 
-  const handleOpenLightbox = (index: number) => {
-    setActiveLightboxIndex(index);
-  };
-
-  const handleCloseLightbox = () => {
-    setActiveLightboxIndex(null);
-  };
-
-  const handlePrevImage = (e: React.MouseEvent) => {
-    e.stopPropagation();
-    if (activeLightboxIndex !== null) {
-      setActiveLightboxIndex(
-        activeLightboxIndex === 0
-          ? filteredItems.length - 1
-          : activeLightboxIndex - 1
-      );
-    }
-  };
-
-  const handleNextImage = (e: React.MouseEvent) => {
-    e.stopPropagation();
-    if (activeLightboxIndex !== null) {
-      setActiveLightboxIndex(
-        activeLightboxIndex === filteredItems.length - 1
-          ? 0
-          : activeLightboxIndex + 1
-      );
-    }
-  };
-
-  const activeItem =
-    activeLightboxIndex !== null ? filteredItems[activeLightboxIndex] : null;
-
   return (
-    <section className={styles.standardCenter3} aria-label="Gallery Section">
+    <section className={styles.standardCenter3} aria-label="Real Patients Real Smiles Video Gallery">
+      {/* Header Section */}
+      <div className={styles.sectionHeader}>
+        <div className={styles.headerLeft}>
+          <h2 className={styles.sectionTitle}>
+            {getLocalized(UI_TEXT.sectionTitle)}
+          </h2>
+        </div>
+        <div className={styles.headerRight}>
+          <p className={styles.sectionSubtitle}>
+            {getLocalized(UI_TEXT.sectionSubtitle)}
+          </p>
+        </div>
+      </div>
+
       <div className={styles.pagegrid}>
         {/* Left Column: Gallery Main */}
         <div className={styles.s1}>
@@ -192,7 +231,7 @@ export default function GalleryMainSection() {
                 <button
                   key={cat.id}
                   type="button"
-                  onClick={() => setSelectedCategory(cat.id as 'general' | 'clinic')}
+                  onClick={() => setSelectedCategory(cat.id as any)}
                   className={`${styles.tabBtn} ${isSelected ? styles.selected : ''}`}
                 >
                   <span className={styles.circleIcon}>{isSelected ? '●' : '○'}</span>
@@ -202,28 +241,99 @@ export default function GalleryMainSection() {
             })}
           </div>
 
-          {/* Photo Grid */}
+          {/* 4-Column Video Grid */}
           <div className={styles.list}>
-            {filteredItems.map((item, index) => (
-              <div
-                key={item.id}
-                className={styles.item}
-                onClick={() => handleOpenLightbox(index)}
-              >
-                <div className={styles.img}>
-                  <Image
-                    src={item.src}
-                    alt={getLocalized(item.alt)}
-                    fill
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 480px"
-                    className={styles.imgItem}
-                  />
-                  <div className={styles.overlayZoom}>
-                    <span className={styles.zoomIcon}>🔍</span>
-                  </div>
+            {filteredItems.map((story) => {
+              const isPlaying = activePlayingId === story.id;
+              return (
+                <div
+                  key={story.id}
+                  onClick={() => {
+                    if (!isPlaying) setActivePlayingId(story.id);
+                  }}
+                  className={styles.realPatientCard}
+                >
+                  {isPlaying ? (
+                    <div className={styles.inlineVideoContainer}>
+                      <iframe
+                        src={`${story.videoUrl}&playsinline=1&controls=1&rel=0&modestbranding=1&iv_load_policy=3&fs=0`}
+                        title={getLocalized(story.treatment)}
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        className={styles.inlineIframe}
+                      />
+                      <button
+                        type="button"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          setActivePlayingId(null);
+                        }}
+                        className={styles.closeInlineBtn}
+                        aria-label="Close video"
+                      >
+                        ✕
+                      </button>
+                    </div>
+                  ) : (
+                    <>
+                      {/* Left Vertical Ribbon */}
+                      <div className={styles.leftRibbon}>
+                        <span className={styles.leftRibbonText}>
+                          FROM {story.country} TO MASTER SMILE
+                        </span>
+                      </div>
+
+                      {/* Right Main Content */}
+                      <div className={styles.rightContent}>
+                        {/* Top Country Flag Banner */}
+                        <div className={styles.flagBanner}>
+                          {/* eslint-disable-next-line @next/next/no-img-element */}
+                          <img
+                            src={story.flagSvg}
+                            alt={story.country}
+                            className={styles.flagImg}
+                          />
+                        </div>
+
+                        {/* Happy Patient Heading */}
+                        <div className={styles.happyPatientLabel}>
+                          {getLocalized(UI_TEXT.happyPatient)}
+                        </div>
+
+                        {/* Center Image Thumbnail with YouTube Play Button */}
+                        <div className={styles.thumbContainer}>
+                          <div className={styles.thumbBox}>
+                            <Image
+                              src={story.image}
+                              alt={getLocalized(story.treatment)}
+                              fill
+                              unoptimized
+                              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 250px"
+                              className={styles.patientImg}
+                            />
+                            <div className={styles.playOverlay}>
+                              <Image
+                                src="/yticon.webp"
+                                alt="Play Icon"
+                                width={50}
+                                height={50}
+                                className={styles.playBtn}
+                              />
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* Bottom Treatment Label */}
+                        <div className={styles.bottomBadgeWrap}>
+                          <span className={styles.bottomBadge}>
+                            {getLocalized(story.treatment)}
+                          </span>
+                        </div>
+                      </div>
+                    </>
+                  )}
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
 
@@ -311,53 +421,25 @@ export default function GalleryMainSection() {
         </aside>
       </div>
 
-      {/* Interactive Fullscreen Lightbox Modal */}
-      {activeItem && (
-        <div className={styles.modalBackdrop} onClick={handleCloseLightbox}>
-          <div
-            className={styles.modalContent}
-            onClick={(e) => e.stopPropagation()}
-          >
+      {/* Full Lightbox Video Modal */}
+      {selectedModalVideo && (
+        <div className={styles.modalBackdrop} onClick={() => setSelectedModalVideo(null)}>
+          <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
             <button
               type="button"
               className={styles.modalCloseBtn}
-              onClick={handleCloseLightbox}
-              aria-label="Close image"
+              onClick={() => setSelectedModalVideo(null)}
+              aria-label="Close modal"
             >
               ✕
             </button>
-
-            <button
-              type="button"
-              className={`${styles.modalNavBtn} ${styles.modalPrevBtn}`}
-              onClick={handlePrevImage}
-              aria-label="Previous image"
-            >
-              ‹
-            </button>
-
-            <div className={styles.modalImageWrapper}>
-              <Image
-                src={activeItem.src}
-                alt={getLocalized(activeItem.alt)}
-                fill
-                sizes="(max-width: 1024px) 100vw, 1050px"
-                className={styles.modalImg}
-                priority
+            <div className={styles.modalVideoWrap}>
+              <iframe
+                src={`${selectedModalVideo.videoUrl}&playsinline=1&controls=1&rel=0&modestbranding=1&iv_load_policy=3&fs=0`}
+                title={getLocalized(selectedModalVideo.treatment)}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                className={styles.modalIframe}
               />
-            </div>
-
-            <button
-              type="button"
-              className={`${styles.modalNavBtn} ${styles.modalNextBtn}`}
-              onClick={handleNextImage}
-              aria-label="Next image"
-            >
-              ›
-            </button>
-
-            <div className={styles.modalCaption}>
-              {getLocalized(activeItem.alt)}
             </div>
           </div>
         </div>
