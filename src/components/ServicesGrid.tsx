@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
+import { Link } from '@/i18n/routing';
 
 export default function ServicesGrid() {
   const t = useTranslations('services');
@@ -10,38 +11,42 @@ export default function ServicesGrid() {
     {
       key: 'smileDesign',
       image: '/smile-makeover.jpg',
+      href: '/treatments/cosmetic-dentistry/smile-makeover',
     },
     {
       key: 'implant',
       image: '/dental-implant-mss.jpeg',
+      href: '/treatments/dental-implants',
     },
     {
       key: 'emax',
       image: '/e-max-lamine-treatment-mss.jpeg',
+      href: '/treatments/dental-veneers/emax-veneers',
     },
     {
       key: 'zirconia',
       image: '/mastersmilestudio_1784465233_3944702579575983298_70887948899.jpg',
+      href: '/treatments/dental-crowns/zirconium-crowns',
     },
     {
       key: 'whitening',
       image: '/teeth-whiting-treatment.jpeg',
+      href: '/treatments/cosmetic-dentistry/teeth-whitening',
     },
     {
       key: 'rootCanal',
       image: '/mastersmilestudio_1784098986_3941630290953391467_70887948899.jpg',
+      href: '/treatments/general-dentistry/root-canal',
     },
     {
       key: 'dentures',
       image: '/mastersmilestudio_1783158972_3933743875695538963_70887948899.jpg',
+      href: '/treatments/dentures',
     },
     {
       key: 'bonding',
       image: '/mastersmilestudio_1781430682_3919246906335743176_70887948899.jpg',
-    },
-    {
-      key: 'orthodontics',
-      image: '/smile-makeover.jpg',
+      href: '/treatments/dental-veneers/composite-veneers',
     },
   ];
 
@@ -51,7 +56,7 @@ export default function ServicesGrid() {
       style={{
         backgroundColor: '#ffffff',
         color: '#0f172a',
-        padding: '6rem 1.5rem',
+        padding: 'clamp(4rem, 6vw, 6rem) 1.5rem',
         position: 'relative',
         borderTop: '1px solid #f1f5f9',
       }}
@@ -68,15 +73,15 @@ export default function ServicesGrid() {
             display: 'flex',
             alignItems: 'flex-end',
             justifyContent: 'space-between',
-            gap: '2.5rem',
-            marginBottom: '4.5rem',
+            gap: '2rem',
+            marginBottom: 'clamp(2.5rem, 5vw, 4.5rem)',
             flexWrap: 'wrap',
           }}
         >
           <div style={{ flex: '1 1 300px' }}>
             <h2
               style={{
-                fontSize: '3.25rem',
+                fontSize: 'clamp(1.85rem, 4.5vw, 3.25rem)',
                 fontWeight: 400,
                 color: '#0f172a',
                 letterSpacing: '-0.03em',
@@ -91,7 +96,7 @@ export default function ServicesGrid() {
           <div style={{ flex: '1 1 360px', maxWidth: '520px' }}>
             <p
               style={{
-                fontSize: '1.05rem',
+                fontSize: 'clamp(0.95rem, 1.5vw, 1.05rem)',
                 color: '#475569',
                 lineHeight: 1.65,
                 margin: 0,
@@ -103,22 +108,16 @@ export default function ServicesGrid() {
           </div>
         </div>
 
-        {/* 9 Square Minimalist Cards Grid */}
-        <div
-          className="services-3-col-grid"
-          style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(3, 1fr)',
-            gap: '1.75rem',
-          }}
-        >
+        {/* Square Minimalist Cards Grid (Bottom 2 Cards Centered) */}
+        <div className="services-3-col-grid">
           {services.map((item) => {
             const title = t(`${item.key}.title`);
             const description = t(`${item.key}.description`);
 
             return (
-              <div
+              <Link
                 key={item.key}
+                href={item.href}
                 style={{
                   aspectRatio: '1 / 1',
                   backgroundColor: '#ffffff',
@@ -133,6 +132,7 @@ export default function ServicesGrid() {
                   cursor: 'pointer',
                   overflow: 'hidden',
                   boxShadow: '0 2px 8px rgba(0, 0, 0, 0.02)',
+                  textDecoration: 'none',
                 }}
                 className="service-square-card-light"
               >
@@ -154,7 +154,7 @@ export default function ServicesGrid() {
                   <span className="text1">{title}</span>
                   <span className="text2">{description}</span>
                 </span>
-              </div>
+              </Link>
             );
           })}
         </div>
@@ -163,18 +163,49 @@ export default function ServicesGrid() {
       {/* Responsive Grid & Text Container Styles */}
       <style jsx global>{`
         .services-3-col-grid {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
           gap: 1.75rem;
+          width: 100%;
+        }
+        .services-3-col-grid .service-square-card-light {
+          width: calc((100% - 3.5rem) / 3);
+          flex: 0 0 calc((100% - 3.5rem) / 3);
+          max-width: calc((100% - 3.5rem) / 3);
         }
         @media (max-width: 992px) {
           .services-3-col-grid {
-            grid-template-columns: repeat(2, 1fr) !important;
+            gap: 1.25rem !important;
+          }
+          .services-3-col-grid .service-square-card-light {
+            width: calc((100% - 1.25rem) / 2) !important;
+            flex: 0 0 calc((100% - 1.25rem) / 2) !important;
+            max-width: calc((100% - 1.25rem) / 2) !important;
           }
         }
         @media (max-width: 640px) {
           .services-3-col-grid {
-            grid-template-columns: 1fr !important;
+            gap: 1rem !important;
+          }
+          .services-3-col-grid .service-square-card-light {
+            width: 100% !important;
+            flex: 0 0 100% !important;
+            max-width: 100% !important;
+            border-radius: 18px !important;
+          }
+          .service-square-card-light {
+            border-radius: 18px !important;
+          }
+          .service-square-card-light .text {
+            padding: 1rem 1.15rem !important;
+            border-radius: 0 0 18px 18px !important;
+          }
+          .service-square-card-light .text1 {
+            font-size: 1.1rem !important;
+          }
+          .service-square-card-light .text2 {
+            font-size: 0.8rem !important;
           }
         }
         .service-square-card-light:hover {

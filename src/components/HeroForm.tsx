@@ -34,7 +34,6 @@ export default function HeroForm() {
     { key: 'rootCanal', label: tServices('rootCanal.title') },
     { key: 'dentures', label: tServices('dentures.title') },
     { key: 'bonding', label: tServices('bonding.title') },
-    { key: 'orthodontics', label: tServices('orthodontics.title') },
   ];
 
   const handleSubmit = (e: FormEvent) => {

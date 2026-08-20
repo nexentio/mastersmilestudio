@@ -284,12 +284,23 @@
     padding: 0.35rem 0.75rem !important;
     font-size: 0.73rem !important;
     border-radius: 0 0 10px 10px !important;
+    gap: 0.5rem !important;
   }
   .top-bar-socials {
     display: none !important;
   }
   .top-bar-subtext {
     display: none !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .top-bar-inner {
+    font-size: 0.68rem !important;
+    padding: 0.28rem 0.5rem !important;
+  }
+  .top-bar-contact-link {
+    font-size: 0.72rem !important;
   }
 }
 

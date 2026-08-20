@@ -22,7 +22,7 @@ export default function FaqSection() {
       style={{
         backgroundColor: '#ffffff',
         color: '#0f172a',
-        padding: '6rem 1.5rem',
+        padding: 'clamp(4rem, 6vw, 6rem) 1.5rem',
         position: 'relative',
         borderTop: '1px solid #f1f5f9',
         borderBottom: 'none',
@@ -38,7 +38,7 @@ export default function FaqSection() {
         <div
           style={{
             textAlign: 'left',
-            marginBottom: '3.5rem',
+            marginBottom: 'clamp(2.5rem, 5vw, 3.5rem)',
             maxWidth: '900px',
           }}
         >
@@ -62,7 +62,7 @@ export default function FaqSection() {
 
           <h2
             style={{
-              fontSize: '3rem',
+              fontSize: 'clamp(1.85rem, 4.5vw, 3rem)',
               fontWeight: 400,
               color: '#0f172a',
               letterSpacing: '-0.035em',
@@ -75,7 +75,7 @@ export default function FaqSection() {
 
           <p
             style={{
-              fontSize: '1.15rem',
+              fontSize: 'clamp(0.95rem, 1.5vw, 1.15rem)',
               color: '#475569',
               lineHeight: 1.65,
               margin: 0,
@@ -90,8 +90,8 @@ export default function FaqSection() {
         <div
           style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))',
-            gap: '3.5rem',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 340px), 1fr))',
+            gap: 'clamp(2rem, 4vw, 3.5rem)',
             alignItems: 'start',
             marginBottom: '4rem',
           }}
@@ -102,7 +102,7 @@ export default function FaqSection() {
               style={{
                 backgroundColor: '#fafafa',
                 borderRadius: '24px',
-                padding: '2.25rem',
+                padding: 'clamp(1.5rem, 3vw, 2.25rem)',
                 border: '1px solid #f1f5f9',
                 boxShadow: '0 4px 20px rgba(0, 0, 0, 0.02)',
               }}

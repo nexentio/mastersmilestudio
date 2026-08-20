@@ -20,7 +20,7 @@ export default function TreatmentProcessSection() {
       style={{
         backgroundColor: '#ffffff',
         color: '#0f172a',
-        padding: '6rem 1.5rem',
+        padding: 'clamp(4rem, 6vw, 6rem) 1.5rem',
         position: 'relative',
         borderTop: '1px solid #f1f5f9',
       }}
@@ -35,17 +35,17 @@ export default function TreatmentProcessSection() {
         <div
           style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))',
-            gap: '4rem',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 340px), 1fr))',
+            gap: 'clamp(2rem, 4vw, 4rem)',
             alignItems: 'start',
-            marginBottom: '4.5rem',
+            marginBottom: 'clamp(2.5rem, 5vw, 4.5rem)',
           }}
         >
           {/* Left Column: Heading, Subtitle & 1 / 2 / 3 / 4 Step Stack */}
           <div>
             <h2
               style={{
-                fontSize: 'clamp(2rem, 3.5vw, 2.75rem)',
+                fontSize: 'clamp(1.85rem, 3.5vw, 2.75rem)',
                 fontWeight: 600,
                 color: '#0f172a',
                 letterSpacing: '-0.035em',
@@ -59,10 +59,10 @@ export default function TreatmentProcessSection() {
 
             <p
               style={{
-                fontSize: '1rem',
+                fontSize: 'clamp(0.95rem, 1.5vw, 1rem)',
                 color: '#475569',
                 lineHeight: 1.65,
-                marginBottom: '2.5rem',
+                marginBottom: '2rem',
                 fontWeight: 400,
                 maxWidth: '560px',
               }}
@@ -71,7 +71,7 @@ export default function TreatmentProcessSection() {
             </p>
 
             {/* 4 Interactive Step Buttons */}
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
               {PROCESS_STEPS.map((step) => {
                 const isActive = activeStep === step.id;
                 const stepTitle = t(`${step.key}.title` as any);
@@ -115,7 +115,7 @@ export default function TreatmentProcessSection() {
           >
             <p
               style={{
-                fontSize: '1.05rem',
+                fontSize: 'clamp(0.95rem, 1.5vw, 1.05rem)',
                 color: '#334155',
                 lineHeight: 1.7,
                 margin: 0,
@@ -148,7 +148,7 @@ export default function TreatmentProcessSection() {
                 style={{
                   position: 'relative',
                   width: '100%',
-                  height: '260px',
+                  height: 'clamp(220px, 30vw, 260px)',
                   borderRadius: '20px',
                   overflow: 'hidden',
                   backgroundColor: '#000000',
@@ -202,7 +202,7 @@ export default function TreatmentProcessSection() {
                 style={{
                   position: 'relative',
                   width: '100%',
-                  height: '260px',
+                  height: 'clamp(220px, 30vw, 260px)',
                   borderRadius: '20px',
                   overflow: 'hidden',
                   cursor: 'pointer',
@@ -261,7 +261,7 @@ export default function TreatmentProcessSection() {
         <div
           style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 240px), 1fr))',
             gap: '2rem',
             borderTop: '1px solid #f1f5f9',
             paddingTop: '3.5rem',

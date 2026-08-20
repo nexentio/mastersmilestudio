@@ -15,7 +15,7 @@ export default function LocationMapSection() {
       style={{
         backgroundColor: '#ffffff',
         color: '#0f172a',
-        padding: '3.75rem 1.5rem',
+        padding: 'clamp(3rem, 5vw, 4.5rem) 1.5rem',
         position: 'relative',
         borderTop: '1px solid #f1f5f9',
       }}
@@ -32,19 +32,19 @@ export default function LocationMapSection() {
             display: 'flex',
             alignItems: 'flex-start',
             justifyContent: 'space-between',
-            gap: '2.5rem',
-            marginBottom: '2.25rem',
+            gap: '2rem',
+            marginBottom: 'clamp(1.75rem, 3vw, 2.5rem)',
             flexWrap: 'wrap',
           }}
         >
-          <div style={{ flex: '1 1 380px' }}>
+          <div style={{ flex: '1 1 320px' }}>
             {(() => {
               const fullTitle = getSafeText('map.title', 'Master Smile Studio — Closer Than You Think');
               const parts = fullTitle.split('—');
               return (
                 <h2
                   style={{
-                    fontSize: 'clamp(2.25rem, 4vw, 3.25rem)',
+                    fontSize: 'clamp(1.85rem, 4vw, 3.25rem)',
                     color: '#0f172a',
                     letterSpacing: '-0.03em',
                     lineHeight: 1.12,
@@ -65,10 +65,10 @@ export default function LocationMapSection() {
             })()}
           </div>
 
-          <div style={{ flex: '1 1 380px', maxWidth: '540px' }}>
+          <div style={{ flex: '1 1 340px', maxWidth: '540px' }}>
             <p
               style={{
-                fontSize: '1.05rem',
+                fontSize: 'clamp(0.95rem, 1.5vw, 1.05rem)',
                 color: '#475569',
                 lineHeight: 1.6,
                 margin: 0,
@@ -88,7 +88,7 @@ export default function LocationMapSection() {
         <div
           style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 340px), 1fr))',
             gap: '1.5rem',
             alignItems: 'stretch',
           }}
@@ -97,7 +97,7 @@ export default function LocationMapSection() {
           {/* Left Column: Clinic Tour Video */}
           <div
             style={{
-              height: '450px',
+              height: 'clamp(280px, 38vw, 450px)',
               borderRadius: '20px',
               overflow: 'hidden',
               position: 'relative',
@@ -125,19 +125,19 @@ export default function LocationMapSection() {
             <div
               style={{
                 position: 'absolute',
-                bottom: '1.25rem',
-                left: '1.25rem',
+                bottom: '1rem',
+                left: '1rem',
                 backgroundColor: 'rgba(15, 23, 42, 0.75)',
                 backdropFilter: 'blur(10px)',
                 WebkitBackdropFilter: 'blur(10px)',
                 color: '#ffffff',
-                padding: '0.55rem 1.15rem',
+                padding: '0.45rem 1rem',
                 borderRadius: '9999px',
-                fontSize: '0.85rem',
+                fontSize: 'clamp(0.75rem, 1.5vw, 0.85rem)',
                 fontWeight: 700,
                 display: 'inline-flex',
                 alignItems: 'center',
-                gap: '0.5rem',
+                gap: '0.45rem',
                 boxShadow: '0 4px 16px rgba(0, 0, 0, 0.25)',
                 border: '1px solid rgba(255, 255, 255, 0.15)',
               }}
@@ -150,7 +150,7 @@ export default function LocationMapSection() {
           {/* Right Column: Google Maps Embed Iframe */}
           <div
             style={{
-              height: '450px',
+              height: 'clamp(280px, 38vw, 450px)',
               borderRadius: '20px',
               overflow: 'hidden',
               position: 'relative',
