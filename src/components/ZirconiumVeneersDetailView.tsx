@@ -64,7 +64,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Zirconium Veneer",
         "brand": "German Katana / Vita Multi-Layered Zirconia",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "/packages/pkg-zirconia.webp",
+        "img": "/packages/E-Max-Veneer-package-1.jpg.webp",
         "included": [
           "1x High-Translucency German Multi-Layer Zirconium Veneer",
           "3D Digital Intraoral Scan & Smile Line Analysis",
@@ -83,7 +83,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "8-Unit Smile Line Makeover (Upper Arch)",
         "brand": "German Multi-Layered Zirconia",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-zirconia.webp",
+        "img": "/packages/E-Max-Veneer-package-2.jpg.webp",
         "popular": true,
         "included": [
           "8x High-Translucency Zirconium Laminate Veneers (Upper Social Smile)",
@@ -104,7 +104,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "16-Unit Full Smile Makeover (8 Upper + 8 Lower)",
         "brand": "German Multi-Layered Zirconia (1100+ MPa)",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-zirconia.webp",
+        "img": "/packages/E-Max-Veneer-package-3.jpg.webp",
         "included": [
           "16x Custom Zirconium Laminate Veneers (8 Upper + 8 Lower Arches)",
           "Full 3D Facial Aesthetic Mapping & Golden Ratio Smile Harmony",
@@ -124,7 +124,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Hollywood Smile Makeover",
         "brand": "German Katana / Vita Ultra-Translucent Zirconia",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-veneers.webp",
+        "img": "/packages/E-Max-Veneer-package-4.jpg.webp",
         "included": [
           "20x Ultra-Translucent Zirconium Veneers (10 Upper + 10 Lower Arches)",
           "Complete gnathological bite balancing & aesthetic harmony",
@@ -143,7 +143,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Combination Smile Makeover (Zirconia + E-Max)",
         "brand": "German Zirconia + Swiss Ivoclar IPS e.max",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-emax.webp",
+        "img": "/treatments/accordion/lumineers.webp",
         "included": [
           "Hybrid combination: E-Max veneers on front teeth + Zirconia on premolars",
           "Maximum anterior translucency with posterior strength",
@@ -238,7 +238,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Zirconium Veneer",
         "brand": "German Katana / Vita Multi-Layered Zirconia",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "/packages/pkg-zirconia.webp",
+        "img": "/packages/E-Max-Veneer-package-1.jpg.webp",
         "included": [
           "1x High-Translucency German Multi-Layer Zirconium Veneer",
           "3D Digital Intraoral Scan & Smile Line Analysis",
@@ -257,7 +257,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "8-Unit Smile Line Makeover (Upper Arch)",
         "brand": "German Multi-Layered Zirconia",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-zirconia.webp",
+        "img": "/packages/E-Max-Veneer-package-2.jpg.webp",
         "popular": true,
         "included": [
           "8x High-Translucency Zirconium Laminate Veneers (Upper Social Smile)",
@@ -278,7 +278,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "16-Unit Full Smile Makeover (8 Upper + 8 Lower)",
         "brand": "German Multi-Layered Zirconia (1100+ MPa)",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-zirconia.webp",
+        "img": "/packages/E-Max-Veneer-package-3.jpg.webp",
         "included": [
           "16x Custom Zirconium Laminate Veneers (8 Upper + 8 Lower Arches)",
           "Full 3D Facial Aesthetic Mapping & Golden Ratio Smile Harmony",
@@ -298,7 +298,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Hollywood Smile Makeover",
         "brand": "German Katana / Vita Ultra-Translucent Zirconia",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-veneers.webp",
+        "img": "/packages/E-Max-Veneer-package-4.jpg.webp",
         "included": [
           "20x Ultra-Translucent Zirconium Veneers (10 Upper + 10 Lower Arches)",
           "Complete gnathological bite balancing & aesthetic harmony",
@@ -317,7 +317,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Combination Smile Makeover (Zirconia + E-Max)",
         "brand": "German Zirconia + Swiss Ivoclar IPS e.max",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-emax.webp",
+        "img": "/treatments/accordion/lumineers.webp",
         "included": [
           "Hybrid combination: E-Max veneers on front teeth + Zirconia on premolars",
           "Maximum anterior translucency with posterior strength",
@@ -412,7 +412,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Zirconium Veneer",
         "brand": "German Katana / Vita Multi-Layered Zirconia",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "/packages/pkg-zirconia.webp",
+        "img": "/packages/E-Max-Veneer-package-1.jpg.webp",
         "included": [
           "1x High-Translucency German Multi-Layer Zirconium Veneer",
           "3D Digital Intraoral Scan & Smile Line Analysis",
@@ -431,7 +431,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "8-Unit Smile Line Makeover (Upper Arch)",
         "brand": "German Multi-Layered Zirconia",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-zirconia.webp",
+        "img": "/packages/E-Max-Veneer-package-2.jpg.webp",
         "popular": true,
         "included": [
           "8x High-Translucency Zirconium Laminate Veneers (Upper Social Smile)",
@@ -452,7 +452,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "16-Unit Full Smile Makeover (8 Upper + 8 Lower)",
         "brand": "German Multi-Layered Zirconia (1100+ MPa)",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-zirconia.webp",
+        "img": "/packages/E-Max-Veneer-package-3.jpg.webp",
         "included": [
           "16x Custom Zirconium Laminate Veneers (8 Upper + 8 Lower Arches)",
           "Full 3D Facial Aesthetic Mapping & Golden Ratio Smile Harmony",
@@ -472,7 +472,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Hollywood Smile Makeover",
         "brand": "German Katana / Vita Ultra-Translucent Zirconia",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-veneers.webp",
+        "img": "/packages/E-Max-Veneer-package-4.jpg.webp",
         "included": [
           "20x Ultra-Translucent Zirconium Veneers (10 Upper + 10 Lower Arches)",
           "Complete gnathological bite balancing & aesthetic harmony",
@@ -491,7 +491,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Combination Smile Makeover (Zirconia + E-Max)",
         "brand": "German Zirconia + Swiss Ivoclar IPS e.max",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-emax.webp",
+        "img": "/treatments/accordion/lumineers.webp",
         "included": [
           "Hybrid combination: E-Max veneers on front teeth + Zirconia on premolars",
           "Maximum anterior translucency with posterior strength",
@@ -586,7 +586,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Zirconium Veneer",
         "brand": "German Katana / Vita Multi-Layered Zirconia",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "/packages/pkg-zirconia.webp",
+        "img": "/packages/E-Max-Veneer-package-1.jpg.webp",
         "included": [
           "1x High-Translucency German Multi-Layer Zirconium Veneer",
           "3D Digital Intraoral Scan & Smile Line Analysis",
@@ -605,7 +605,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "8-Unit Smile Line Makeover (Upper Arch)",
         "brand": "German Multi-Layered Zirconia",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-zirconia.webp",
+        "img": "/packages/E-Max-Veneer-package-2.jpg.webp",
         "popular": true,
         "included": [
           "8x High-Translucency Zirconium Laminate Veneers (Upper Social Smile)",
@@ -626,7 +626,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "16-Unit Full Smile Makeover (8 Upper + 8 Lower)",
         "brand": "German Multi-Layered Zirconia (1100+ MPa)",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-zirconia.webp",
+        "img": "/packages/E-Max-Veneer-package-3.jpg.webp",
         "included": [
           "16x Custom Zirconium Laminate Veneers (8 Upper + 8 Lower Arches)",
           "Full 3D Facial Aesthetic Mapping & Golden Ratio Smile Harmony",
@@ -646,7 +646,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Hollywood Smile Makeover",
         "brand": "German Katana / Vita Ultra-Translucent Zirconia",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-veneers.webp",
+        "img": "/packages/E-Max-Veneer-package-4.jpg.webp",
         "included": [
           "20x Ultra-Translucent Zirconium Veneers (10 Upper + 10 Lower Arches)",
           "Complete gnathological bite balancing & aesthetic harmony",
@@ -665,7 +665,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Combination Smile Makeover (Zirconia + E-Max)",
         "brand": "German Zirconia + Swiss Ivoclar IPS e.max",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-emax.webp",
+        "img": "/treatments/accordion/lumineers.webp",
         "included": [
           "Hybrid combination: E-Max veneers on front teeth + Zirconia on premolars",
           "Maximum anterior translucency with posterior strength",
@@ -760,7 +760,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Zirconium Veneer",
         "brand": "German Katana / Vita Multi-Layered Zirconia",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "/packages/pkg-zirconia.webp",
+        "img": "/packages/E-Max-Veneer-package-1.jpg.webp",
         "included": [
           "1x High-Translucency German Multi-Layer Zirconium Veneer",
           "3D Digital Intraoral Scan & Smile Line Analysis",
@@ -779,7 +779,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "8-Unit Smile Line Makeover (Upper Arch)",
         "brand": "German Multi-Layered Zirconia",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-zirconia.webp",
+        "img": "/packages/E-Max-Veneer-package-2.jpg.webp",
         "popular": true,
         "included": [
           "8x High-Translucency Zirconium Laminate Veneers (Upper Social Smile)",
@@ -800,7 +800,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "16-Unit Full Smile Makeover (8 Upper + 8 Lower)",
         "brand": "German Multi-Layered Zirconia (1100+ MPa)",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-zirconia.webp",
+        "img": "/packages/E-Max-Veneer-package-3.jpg.webp",
         "included": [
           "16x Custom Zirconium Laminate Veneers (8 Upper + 8 Lower Arches)",
           "Full 3D Facial Aesthetic Mapping & Golden Ratio Smile Harmony",
@@ -820,7 +820,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Hollywood Smile Makeover",
         "brand": "German Katana / Vita Ultra-Translucent Zirconia",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-veneers.webp",
+        "img": "/packages/E-Max-Veneer-package-4.jpg.webp",
         "included": [
           "20x Ultra-Translucent Zirconium Veneers (10 Upper + 10 Lower Arches)",
           "Complete gnathological bite balancing & aesthetic harmony",
@@ -839,7 +839,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Combination Smile Makeover (Zirconia + E-Max)",
         "brand": "German Zirconia + Swiss Ivoclar IPS e.max",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-emax.webp",
+        "img": "/treatments/accordion/lumineers.webp",
         "included": [
           "Hybrid combination: E-Max veneers on front teeth + Zirconia on premolars",
           "Maximum anterior translucency with posterior strength",
@@ -934,7 +934,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Zirconium Veneer",
         "brand": "German Katana / Vita Multi-Layered Zirconia",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "/packages/pkg-zirconia.webp",
+        "img": "/packages/E-Max-Veneer-package-1.jpg.webp",
         "included": [
           "1x High-Translucency German Multi-Layer Zirconium Veneer",
           "3D Digital Intraoral Scan & Smile Line Analysis",
@@ -953,7 +953,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "8-Unit Smile Line Makeover (Upper Arch)",
         "brand": "German Multi-Layered Zirconia",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-zirconia.webp",
+        "img": "/packages/E-Max-Veneer-package-2.jpg.webp",
         "popular": true,
         "included": [
           "8x High-Translucency Zirconium Laminate Veneers (Upper Social Smile)",
@@ -974,7 +974,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "16-Unit Full Smile Makeover (8 Upper + 8 Lower)",
         "brand": "German Multi-Layered Zirconia (1100+ MPa)",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-zirconia.webp",
+        "img": "/packages/E-Max-Veneer-package-3.jpg.webp",
         "included": [
           "16x Custom Zirconium Laminate Veneers (8 Upper + 8 Lower Arches)",
           "Full 3D Facial Aesthetic Mapping & Golden Ratio Smile Harmony",
@@ -994,7 +994,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Hollywood Smile Makeover",
         "brand": "German Katana / Vita Ultra-Translucent Zirconia",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-veneers.webp",
+        "img": "/packages/E-Max-Veneer-package-4.jpg.webp",
         "included": [
           "20x Ultra-Translucent Zirconium Veneers (10 Upper + 10 Lower Arches)",
           "Complete gnathological bite balancing & aesthetic harmony",
@@ -1013,7 +1013,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Combination Smile Makeover (Zirconia + E-Max)",
         "brand": "German Zirconia + Swiss Ivoclar IPS e.max",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-emax.webp",
+        "img": "/treatments/accordion/lumineers.webp",
         "included": [
           "Hybrid combination: E-Max veneers on front teeth + Zirconia on premolars",
           "Maximum anterior translucency with posterior strength",
@@ -1108,7 +1108,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Zirconium Veneer",
         "brand": "German Katana / Vita Multi-Layered Zirconia",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "/packages/pkg-zirconia.webp",
+        "img": "/packages/E-Max-Veneer-package-1.jpg.webp",
         "included": [
           "1x High-Translucency German Multi-Layer Zirconium Veneer",
           "3D Digital Intraoral Scan & Smile Line Analysis",
@@ -1127,7 +1127,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "8-Unit Smile Line Makeover (Upper Arch)",
         "brand": "German Multi-Layered Zirconia",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-zirconia.webp",
+        "img": "/packages/E-Max-Veneer-package-2.jpg.webp",
         "popular": true,
         "included": [
           "8x High-Translucency Zirconium Laminate Veneers (Upper Social Smile)",
@@ -1148,7 +1148,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "16-Unit Full Smile Makeover (8 Upper + 8 Lower)",
         "brand": "German Multi-Layered Zirconia (1100+ MPa)",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-zirconia.webp",
+        "img": "/packages/E-Max-Veneer-package-3.jpg.webp",
         "included": [
           "16x Custom Zirconium Laminate Veneers (8 Upper + 8 Lower Arches)",
           "Full 3D Facial Aesthetic Mapping & Golden Ratio Smile Harmony",
@@ -1168,7 +1168,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Hollywood Smile Makeover",
         "brand": "German Katana / Vita Ultra-Translucent Zirconia",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-veneers.webp",
+        "img": "/packages/E-Max-Veneer-package-4.jpg.webp",
         "included": [
           "20x Ultra-Translucent Zirconium Veneers (10 Upper + 10 Lower Arches)",
           "Complete gnathological bite balancing & aesthetic harmony",
@@ -1187,7 +1187,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Combination Smile Makeover (Zirconia + E-Max)",
         "brand": "German Zirconia + Swiss Ivoclar IPS e.max",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-emax.webp",
+        "img": "/treatments/accordion/lumineers.webp",
         "included": [
           "Hybrid combination: E-Max veneers on front teeth + Zirconia on premolars",
           "Maximum anterior translucency with posterior strength",

@@ -64,7 +64,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single IPS Empress Veneer",
         "brand": "Swiss Ivoclar Vivadent IPS Empress Leucite Glass-Ceramic",
         "duration": "4 – 6 Days (1 Trip)",
-        "img": "/packages/pkg-veneers.webp",
+        "img": "/packages/E-Max-Veneer-package-1.jpg.webp",
         "included": [
           "1x Custom Hand-Layered IPS Empress Glass-Ceramic Veneer",
           "Micro-preparation (0.3 – 0.5 mm) & temporary veneer",
@@ -83,7 +83,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "8-Unit Empress Smile Line Makeover",
         "brand": "Swiss Ivoclar Vivadent IPS Empress Esthetic",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-emax.webp",
+        "img": "/packages/E-Max-Veneer-package-2.jpg.webp",
         "popular": true,
         "included": [
           "8x Hand-Crafted IPS Empress Veneers (Upper Social Smile)",
@@ -103,7 +103,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "16-Unit Full Empress Smile Makeover",
         "brand": "Swiss Ivoclar IPS Empress (8 Upper + 8 Lower)",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-veneers.webp",
+        "img": "/packages/E-Max-Veneer-package-3.jpg.webp",
         "included": [
           "16x Custom IPS Empress Glass-Ceramic Veneers (8 Upper + 8 Lower)",
           "Full 3D Facial Aesthetic Mapping & Golden Ratio Smile Harmony",
@@ -123,7 +123,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Hollywood Empress Makeover",
         "brand": "Swiss Ivoclar IPS Empress High-Translucency",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-zirconia.webp",
+        "img": "/packages/E-Max-Veneer-package-4.jpg.webp",
         "included": [
           "20x Ultra-Natural IPS Empress Veneers (10 Upper + 10 Lower Teeth)",
           "Chameleon effect optical blending with supreme lifelike depth",
@@ -180,7 +180,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single IPS Empress Veneer",
         "brand": "Swiss Ivoclar Vivadent IPS Empress Leucite Glass-Ceramic",
         "duration": "4 – 6 Days (1 Trip)",
-        "img": "/packages/pkg-veneers.webp",
+        "img": "/packages/E-Max-Veneer-package-1.jpg.webp",
         "included": [
           "1x Custom Hand-Layered IPS Empress Glass-Ceramic Veneer",
           "Micro-preparation (0.3 – 0.5 mm) & temporary veneer",
@@ -199,7 +199,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "8-Unit Empress Smile Line Makeover",
         "brand": "Swiss Ivoclar Vivadent IPS Empress Esthetic",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-emax.webp",
+        "img": "/packages/E-Max-Veneer-package-2.jpg.webp",
         "popular": true,
         "included": [
           "8x Hand-Crafted IPS Empress Veneers (Upper Social Smile)",
@@ -219,7 +219,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "16-Unit Full Empress Smile Makeover",
         "brand": "Swiss Ivoclar IPS Empress (8 Upper + 8 Lower)",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-veneers.webp",
+        "img": "/packages/E-Max-Veneer-package-3.jpg.webp",
         "included": [
           "16x Custom IPS Empress Glass-Ceramic Veneers (8 Upper + 8 Lower)",
           "Full 3D Facial Aesthetic Mapping & Golden Ratio Smile Harmony",
@@ -239,7 +239,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Hollywood Empress Makeover",
         "brand": "Swiss Ivoclar IPS Empress High-Translucency",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-zirconia.webp",
+        "img": "/packages/E-Max-Veneer-package-4.jpg.webp",
         "included": [
           "20x Ultra-Natural IPS Empress Veneers (10 Upper + 10 Lower Teeth)",
           "Chameleon effect optical blending with supreme lifelike depth",
@@ -296,7 +296,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single IPS Empress Veneer",
         "brand": "Swiss Ivoclar Vivadent IPS Empress Leucite Glass-Ceramic",
         "duration": "4 – 6 Days (1 Trip)",
-        "img": "/packages/pkg-veneers.webp",
+        "img": "/packages/E-Max-Veneer-package-1.jpg.webp",
         "included": [
           "1x Custom Hand-Layered IPS Empress Glass-Ceramic Veneer",
           "Micro-preparation (0.3 – 0.5 mm) & temporary veneer",
@@ -315,7 +315,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "8-Unit Empress Smile Line Makeover",
         "brand": "Swiss Ivoclar Vivadent IPS Empress Esthetic",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-emax.webp",
+        "img": "/packages/E-Max-Veneer-package-2.jpg.webp",
         "popular": true,
         "included": [
           "8x Hand-Crafted IPS Empress Veneers (Upper Social Smile)",
@@ -335,7 +335,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "16-Unit Full Empress Smile Makeover",
         "brand": "Swiss Ivoclar IPS Empress (8 Upper + 8 Lower)",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-veneers.webp",
+        "img": "/packages/E-Max-Veneer-package-3.jpg.webp",
         "included": [
           "16x Custom IPS Empress Glass-Ceramic Veneers (8 Upper + 8 Lower)",
           "Full 3D Facial Aesthetic Mapping & Golden Ratio Smile Harmony",
@@ -355,7 +355,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Hollywood Empress Makeover",
         "brand": "Swiss Ivoclar IPS Empress High-Translucency",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-zirconia.webp",
+        "img": "/packages/E-Max-Veneer-package-4.jpg.webp",
         "included": [
           "20x Ultra-Natural IPS Empress Veneers (10 Upper + 10 Lower Teeth)",
           "Chameleon effect optical blending with supreme lifelike depth",
@@ -412,7 +412,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single IPS Empress Veneer",
         "brand": "Swiss Ivoclar Vivadent IPS Empress Leucite Glass-Ceramic",
         "duration": "4 – 6 Days (1 Trip)",
-        "img": "/packages/pkg-veneers.webp",
+        "img": "/packages/E-Max-Veneer-package-1.jpg.webp",
         "included": [
           "1x Custom Hand-Layered IPS Empress Glass-Ceramic Veneer",
           "Micro-preparation (0.3 – 0.5 mm) & temporary veneer",
@@ -431,7 +431,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "8-Unit Empress Smile Line Makeover",
         "brand": "Swiss Ivoclar Vivadent IPS Empress Esthetic",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-emax.webp",
+        "img": "/packages/E-Max-Veneer-package-2.jpg.webp",
         "popular": true,
         "included": [
           "8x Hand-Crafted IPS Empress Veneers (Upper Social Smile)",
@@ -451,7 +451,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "16-Unit Full Empress Smile Makeover",
         "brand": "Swiss Ivoclar IPS Empress (8 Upper + 8 Lower)",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-veneers.webp",
+        "img": "/packages/E-Max-Veneer-package-3.jpg.webp",
         "included": [
           "16x Custom IPS Empress Glass-Ceramic Veneers (8 Upper + 8 Lower)",
           "Full 3D Facial Aesthetic Mapping & Golden Ratio Smile Harmony",
@@ -471,7 +471,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Hollywood Empress Makeover",
         "brand": "Swiss Ivoclar IPS Empress High-Translucency",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-zirconia.webp",
+        "img": "/packages/E-Max-Veneer-package-4.jpg.webp",
         "included": [
           "20x Ultra-Natural IPS Empress Veneers (10 Upper + 10 Lower Teeth)",
           "Chameleon effect optical blending with supreme lifelike depth",
@@ -528,7 +528,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single IPS Empress Veneer",
         "brand": "Swiss Ivoclar Vivadent IPS Empress Leucite Glass-Ceramic",
         "duration": "4 – 6 Days (1 Trip)",
-        "img": "/packages/pkg-veneers.webp",
+        "img": "/packages/E-Max-Veneer-package-1.jpg.webp",
         "included": [
           "1x Custom Hand-Layered IPS Empress Glass-Ceramic Veneer",
           "Micro-preparation (0.3 – 0.5 mm) & temporary veneer",
@@ -547,7 +547,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "8-Unit Empress Smile Line Makeover",
         "brand": "Swiss Ivoclar Vivadent IPS Empress Esthetic",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-emax.webp",
+        "img": "/packages/E-Max-Veneer-package-2.jpg.webp",
         "popular": true,
         "included": [
           "8x Hand-Crafted IPS Empress Veneers (Upper Social Smile)",
@@ -567,7 +567,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "16-Unit Full Empress Smile Makeover",
         "brand": "Swiss Ivoclar IPS Empress (8 Upper + 8 Lower)",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-veneers.webp",
+        "img": "/packages/E-Max-Veneer-package-3.jpg.webp",
         "included": [
           "16x Custom IPS Empress Glass-Ceramic Veneers (8 Upper + 8 Lower)",
           "Full 3D Facial Aesthetic Mapping & Golden Ratio Smile Harmony",
@@ -587,7 +587,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Hollywood Empress Makeover",
         "brand": "Swiss Ivoclar IPS Empress High-Translucency",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-zirconia.webp",
+        "img": "/packages/E-Max-Veneer-package-4.jpg.webp",
         "included": [
           "20x Ultra-Natural IPS Empress Veneers (10 Upper + 10 Lower Teeth)",
           "Chameleon effect optical blending with supreme lifelike depth",
@@ -644,7 +644,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single IPS Empress Veneer",
         "brand": "Swiss Ivoclar Vivadent IPS Empress Leucite Glass-Ceramic",
         "duration": "4 – 6 Days (1 Trip)",
-        "img": "/packages/pkg-veneers.webp",
+        "img": "/packages/E-Max-Veneer-package-1.jpg.webp",
         "included": [
           "1x Custom Hand-Layered IPS Empress Glass-Ceramic Veneer",
           "Micro-preparation (0.3 – 0.5 mm) & temporary veneer",
@@ -663,7 +663,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "8-Unit Empress Smile Line Makeover",
         "brand": "Swiss Ivoclar Vivadent IPS Empress Esthetic",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-emax.webp",
+        "img": "/packages/E-Max-Veneer-package-2.jpg.webp",
         "popular": true,
         "included": [
           "8x Hand-Crafted IPS Empress Veneers (Upper Social Smile)",
@@ -683,7 +683,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "16-Unit Full Empress Smile Makeover",
         "brand": "Swiss Ivoclar IPS Empress (8 Upper + 8 Lower)",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-veneers.webp",
+        "img": "/packages/E-Max-Veneer-package-3.jpg.webp",
         "included": [
           "16x Custom IPS Empress Glass-Ceramic Veneers (8 Upper + 8 Lower)",
           "Full 3D Facial Aesthetic Mapping & Golden Ratio Smile Harmony",
@@ -703,7 +703,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Hollywood Empress Makeover",
         "brand": "Swiss Ivoclar IPS Empress High-Translucency",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-zirconia.webp",
+        "img": "/packages/E-Max-Veneer-package-4.jpg.webp",
         "included": [
           "20x Ultra-Natural IPS Empress Veneers (10 Upper + 10 Lower Teeth)",
           "Chameleon effect optical blending with supreme lifelike depth",
@@ -760,7 +760,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single IPS Empress Veneer",
         "brand": "Swiss Ivoclar Vivadent IPS Empress Leucite Glass-Ceramic",
         "duration": "4 – 6 Days (1 Trip)",
-        "img": "/packages/pkg-veneers.webp",
+        "img": "/packages/E-Max-Veneer-package-1.jpg.webp",
         "included": [
           "1x Custom Hand-Layered IPS Empress Glass-Ceramic Veneer",
           "Micro-preparation (0.3 – 0.5 mm) & temporary veneer",
@@ -779,7 +779,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "8-Unit Empress Smile Line Makeover",
         "brand": "Swiss Ivoclar Vivadent IPS Empress Esthetic",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-emax.webp",
+        "img": "/packages/E-Max-Veneer-package-2.jpg.webp",
         "popular": true,
         "included": [
           "8x Hand-Crafted IPS Empress Veneers (Upper Social Smile)",
@@ -799,7 +799,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "16-Unit Full Empress Smile Makeover",
         "brand": "Swiss Ivoclar IPS Empress (8 Upper + 8 Lower)",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-veneers.webp",
+        "img": "/packages/E-Max-Veneer-package-3.jpg.webp",
         "included": [
           "16x Custom IPS Empress Glass-Ceramic Veneers (8 Upper + 8 Lower)",
           "Full 3D Facial Aesthetic Mapping & Golden Ratio Smile Harmony",
@@ -819,7 +819,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Hollywood Empress Makeover",
         "brand": "Swiss Ivoclar IPS Empress High-Translucency",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-zirconia.webp",
+        "img": "/packages/E-Max-Veneer-package-4.jpg.webp",
         "included": [
           "20x Ultra-Natural IPS Empress Veneers (10 Upper + 10 Lower Teeth)",
           "Chameleon effect optical blending with supreme lifelike depth",

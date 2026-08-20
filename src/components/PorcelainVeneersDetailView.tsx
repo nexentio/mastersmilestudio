@@ -64,7 +64,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Porcelain Veneer (E-Max / Vita)",
         "brand": "Swiss Ivoclar Vivadent IPS e.max Press",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "/packages/pkg-veneers.webp",
+        "img": "/packages/E-Max-Veneer-package-1.jpg.webp",
         "included": [
           "1x Authentic Swiss Ivoclar IPS e.max Laminate Veneer",
           "3D Digital Intraoral Scan & Smile Line Analysis",
@@ -83,7 +83,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "8-Unit Smile Line Makeover (Upper Arch)",
         "brand": "Swiss Ivoclar IPS e.max",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-emax.webp",
+        "img": "/packages/E-Max-Veneer-package-2.jpg.webp",
         "popular": true,
         "included": [
           "8x High-Translucency E-Max Laminate Veneers (Upper Social Smile)",
@@ -104,7 +104,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "16-Unit Full Smile Makeover (8 Upper + 8 Lower)",
         "brand": "Swiss Ivoclar IPS e.max Press",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-veneers.webp",
+        "img": "/packages/E-Max-Veneer-package-3.jpg.webp",
         "included": [
           "16x Custom E-Max Laminate Veneers (8 Upper + 8 Lower Arches)",
           "Full 3D Facial Aesthetic Mapping & Golden Ratio Smile Harmony",
@@ -124,7 +124,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Hollywood Smile Makeover",
         "brand": "Swiss Ivoclar IPS e.max CAD / Press",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-zirconia.webp",
+        "img": "/packages/E-Max-Veneer-package-4.jpg.webp",
         "included": [
           "20x Ultra-Thin E-Max Laminate Veneers (10 Upper + 10 Lower Arches)",
           "Complete gnathological bite balancing & aesthetic harmony",
@@ -265,7 +265,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Porcelain Veneer (E-Max / Vita)",
         "brand": "Swiss Ivoclar Vivadent IPS e.max Press",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "/packages/pkg-veneers.webp",
+        "img": "/packages/E-Max-Veneer-package-1.jpg.webp",
         "included": [
           "1x Authentic Swiss Ivoclar IPS e.max Laminate Veneer",
           "3D Digital Intraoral Scan & Smile Line Analysis",
@@ -284,7 +284,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "8-Unit Smile Line Makeover (Upper Arch)",
         "brand": "Swiss Ivoclar IPS e.max",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-emax.webp",
+        "img": "/packages/E-Max-Veneer-package-2.jpg.webp",
         "popular": true,
         "included": [
           "8x High-Translucency E-Max Laminate Veneers (Upper Social Smile)",
@@ -305,7 +305,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "16-Unit Full Smile Makeover (8 Upper + 8 Lower)",
         "brand": "Swiss Ivoclar IPS e.max Press",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-veneers.webp",
+        "img": "/packages/E-Max-Veneer-package-3.jpg.webp",
         "included": [
           "16x Custom E-Max Laminate Veneers (8 Upper + 8 Lower Arches)",
           "Full 3D Facial Aesthetic Mapping & Golden Ratio Smile Harmony",
@@ -325,7 +325,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Hollywood Smile Makeover",
         "brand": "Swiss Ivoclar IPS e.max CAD / Press",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-zirconia.webp",
+        "img": "/packages/E-Max-Veneer-package-4.jpg.webp",
         "included": [
           "20x Ultra-Thin E-Max Laminate Veneers (10 Upper + 10 Lower Arches)",
           "Complete gnathological bite balancing & aesthetic harmony",
@@ -466,7 +466,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Porcelain Veneer (E-Max / Vita)",
         "brand": "Swiss Ivoclar Vivadent IPS e.max Press",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "/packages/pkg-veneers.webp",
+        "img": "/packages/E-Max-Veneer-package-1.jpg.webp",
         "included": [
           "1x Authentic Swiss Ivoclar IPS e.max Laminate Veneer",
           "3D Digital Intraoral Scan & Smile Line Analysis",
@@ -485,7 +485,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "8-Unit Smile Line Makeover (Upper Arch)",
         "brand": "Swiss Ivoclar IPS e.max",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-emax.webp",
+        "img": "/packages/E-Max-Veneer-package-2.jpg.webp",
         "popular": true,
         "included": [
           "8x High-Translucency E-Max Laminate Veneers (Upper Social Smile)",
@@ -506,7 +506,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "16-Unit Full Smile Makeover (8 Upper + 8 Lower)",
         "brand": "Swiss Ivoclar IPS e.max Press",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-veneers.webp",
+        "img": "/packages/E-Max-Veneer-package-3.jpg.webp",
         "included": [
           "16x Custom E-Max Laminate Veneers (8 Upper + 8 Lower Arches)",
           "Full 3D Facial Aesthetic Mapping & Golden Ratio Smile Harmony",
@@ -526,7 +526,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Hollywood Smile Makeover",
         "brand": "Swiss Ivoclar IPS e.max CAD / Press",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-zirconia.webp",
+        "img": "/packages/E-Max-Veneer-package-4.jpg.webp",
         "included": [
           "20x Ultra-Thin E-Max Laminate Veneers (10 Upper + 10 Lower Arches)",
           "Complete gnathological bite balancing & aesthetic harmony",
@@ -667,7 +667,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Porcelain Veneer (E-Max / Vita)",
         "brand": "Swiss Ivoclar Vivadent IPS e.max Press",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "/packages/pkg-veneers.webp",
+        "img": "/packages/E-Max-Veneer-package-1.jpg.webp",
         "included": [
           "1x Authentic Swiss Ivoclar IPS e.max Laminate Veneer",
           "3D Digital Intraoral Scan & Smile Line Analysis",
@@ -686,7 +686,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "8-Unit Smile Line Makeover (Upper Arch)",
         "brand": "Swiss Ivoclar IPS e.max",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-emax.webp",
+        "img": "/packages/E-Max-Veneer-package-2.jpg.webp",
         "popular": true,
         "included": [
           "8x High-Translucency E-Max Laminate Veneers (Upper Social Smile)",
@@ -707,7 +707,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "16-Unit Full Smile Makeover (8 Upper + 8 Lower)",
         "brand": "Swiss Ivoclar IPS e.max Press",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-veneers.webp",
+        "img": "/packages/E-Max-Veneer-package-3.jpg.webp",
         "included": [
           "16x Custom E-Max Laminate Veneers (8 Upper + 8 Lower Arches)",
           "Full 3D Facial Aesthetic Mapping & Golden Ratio Smile Harmony",
@@ -727,7 +727,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Hollywood Smile Makeover",
         "brand": "Swiss Ivoclar IPS e.max CAD / Press",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-zirconia.webp",
+        "img": "/packages/E-Max-Veneer-package-4.jpg.webp",
         "included": [
           "20x Ultra-Thin E-Max Laminate Veneers (10 Upper + 10 Lower Arches)",
           "Complete gnathological bite balancing & aesthetic harmony",
@@ -868,7 +868,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Porcelain Veneer (E-Max / Vita)",
         "brand": "Swiss Ivoclar Vivadent IPS e.max Press",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "/packages/pkg-veneers.webp",
+        "img": "/packages/E-Max-Veneer-package-1.jpg.webp",
         "included": [
           "1x Authentic Swiss Ivoclar IPS e.max Laminate Veneer",
           "3D Digital Intraoral Scan & Smile Line Analysis",
@@ -887,7 +887,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "8-Unit Smile Line Makeover (Upper Arch)",
         "brand": "Swiss Ivoclar IPS e.max",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-emax.webp",
+        "img": "/packages/E-Max-Veneer-package-2.jpg.webp",
         "popular": true,
         "included": [
           "8x High-Translucency E-Max Laminate Veneers (Upper Social Smile)",
@@ -908,7 +908,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "16-Unit Full Smile Makeover (8 Upper + 8 Lower)",
         "brand": "Swiss Ivoclar IPS e.max Press",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-veneers.webp",
+        "img": "/packages/E-Max-Veneer-package-3.jpg.webp",
         "included": [
           "16x Custom E-Max Laminate Veneers (8 Upper + 8 Lower Arches)",
           "Full 3D Facial Aesthetic Mapping & Golden Ratio Smile Harmony",
@@ -928,7 +928,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Hollywood Smile Makeover",
         "brand": "Swiss Ivoclar IPS e.max CAD / Press",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-zirconia.webp",
+        "img": "/packages/E-Max-Veneer-package-4.jpg.webp",
         "included": [
           "20x Ultra-Thin E-Max Laminate Veneers (10 Upper + 10 Lower Arches)",
           "Complete gnathological bite balancing & aesthetic harmony",
@@ -1069,7 +1069,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Porcelain Veneer (E-Max / Vita)",
         "brand": "Swiss Ivoclar Vivadent IPS e.max Press",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "/packages/pkg-veneers.webp",
+        "img": "/packages/E-Max-Veneer-package-1.jpg.webp",
         "included": [
           "1x Authentic Swiss Ivoclar IPS e.max Laminate Veneer",
           "3D Digital Intraoral Scan & Smile Line Analysis",
@@ -1088,7 +1088,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "8-Unit Smile Line Makeover (Upper Arch)",
         "brand": "Swiss Ivoclar IPS e.max",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-emax.webp",
+        "img": "/packages/E-Max-Veneer-package-2.jpg.webp",
         "popular": true,
         "included": [
           "8x High-Translucency E-Max Laminate Veneers (Upper Social Smile)",
@@ -1109,7 +1109,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "16-Unit Full Smile Makeover (8 Upper + 8 Lower)",
         "brand": "Swiss Ivoclar IPS e.max Press",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-veneers.webp",
+        "img": "/packages/E-Max-Veneer-package-3.jpg.webp",
         "included": [
           "16x Custom E-Max Laminate Veneers (8 Upper + 8 Lower Arches)",
           "Full 3D Facial Aesthetic Mapping & Golden Ratio Smile Harmony",
@@ -1129,7 +1129,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Hollywood Smile Makeover",
         "brand": "Swiss Ivoclar IPS e.max CAD / Press",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-zirconia.webp",
+        "img": "/packages/E-Max-Veneer-package-4.jpg.webp",
         "included": [
           "20x Ultra-Thin E-Max Laminate Veneers (10 Upper + 10 Lower Arches)",
           "Complete gnathological bite balancing & aesthetic harmony",
@@ -1270,7 +1270,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "Single Porcelain Veneer (E-Max / Vita)",
         "brand": "Swiss Ivoclar Vivadent IPS e.max Press",
         "duration": "3 – 5 Days (1 Trip)",
-        "img": "/packages/pkg-veneers.webp",
+        "img": "/packages/E-Max-Veneer-package-1.jpg.webp",
         "included": [
           "1x Authentic Swiss Ivoclar IPS e.max Laminate Veneer",
           "3D Digital Intraoral Scan & Smile Line Analysis",
@@ -1289,7 +1289,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "8-Unit Smile Line Makeover (Upper Arch)",
         "brand": "Swiss Ivoclar IPS e.max",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-emax.webp",
+        "img": "/packages/E-Max-Veneer-package-2.jpg.webp",
         "popular": true,
         "included": [
           "8x High-Translucency E-Max Laminate Veneers (Upper Social Smile)",
@@ -1310,7 +1310,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "16-Unit Full Smile Makeover (8 Upper + 8 Lower)",
         "brand": "Swiss Ivoclar IPS e.max Press",
         "duration": "5 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-veneers.webp",
+        "img": "/packages/E-Max-Veneer-package-3.jpg.webp",
         "included": [
           "16x Custom E-Max Laminate Veneers (8 Upper + 8 Lower Arches)",
           "Full 3D Facial Aesthetic Mapping & Golden Ratio Smile Harmony",
@@ -1330,7 +1330,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
         "name": "20-Unit Full Hollywood Smile Makeover",
         "brand": "Swiss Ivoclar IPS e.max CAD / Press",
         "duration": "6 – 7 Days (1 Trip)",
-        "img": "/packages/pkg-zirconia.webp",
+        "img": "/packages/E-Max-Veneer-package-4.jpg.webp",
         "included": [
           "20x Ultra-Thin E-Max Laminate Veneers (10 Upper + 10 Lower Arches)",
           "Complete gnathological bite balancing & aesthetic harmony",
