@@ -270,6 +270,13 @@
   display: none !important;
 }
 
+.top-bar-contact-links-wrap {
+  display: flex !important;
+  align-items: center !important;
+  gap: 1.25rem !important;
+  flex-wrap: nowrap !important;
+}
+
 @media (max-width: 868px) {
   .header-logo-container {
     width: 125px !important;
@@ -287,6 +294,13 @@
     gap: 0.5rem !important;
   }
   .top-bar-socials {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 1rem !important;
+    width: 100% !important;
+  }
+  .top-bar-contact-links-wrap {
     display: none !important;
   }
   .top-bar-subtext {
@@ -296,11 +310,15 @@
 
 @media (max-width: 480px) {
   .top-bar-inner {
-    font-size: 0.68rem !important;
-    padding: 0.28rem 0.5rem !important;
+    padding: 0.3rem 0.5rem !important;
   }
-  .top-bar-contact-link {
-    font-size: 0.72rem !important;
+  .top-bar-socials {
+    gap: 1.1rem !important;
+  }
+  .metaapi_socialbuton1 img,
+  .metaapi_whatsappbuton1 img {
+    width: 21px !important;
+    height: 21px !important;
   }
 }
 

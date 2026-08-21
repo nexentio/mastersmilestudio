@@ -400,7 +400,7 @@ export default function Header() {
             </span>
 
             {/* Center/Right: Localized Contact Info (Email & Dynamic Locale Phone) */}
-            <div style={{ display: 'flex', alignItems: 'center', gap: '1.25rem', flexWrap: 'nowrap' }}>
+            <div className="top-bar-contact-links-wrap" style={{ display: 'flex', alignItems: 'center', gap: '1.25rem', flexWrap: 'nowrap' }}>
               <a
                 href="mailto:info@mastersmilestudio.com"
                 className="top-bar-contact-link"
