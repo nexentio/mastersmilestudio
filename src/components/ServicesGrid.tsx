@@ -45,7 +45,7 @@ export default function ServicesGrid() {
     },
     {
       key: 'bonding',
-      image: '/mastersmilestudio_1781430682_3919246906335743176_70887948899.jpg',
+      image: '/mss-composite-bonding.jpeg',
       href: '/treatments/dental-veneers/composite-veneers',
     },
   ];
