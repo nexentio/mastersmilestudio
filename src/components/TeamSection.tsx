@@ -316,6 +316,12 @@ export default function TeamSection() {
               className="team-bio-modal-head"
               style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1rem', flexWrap: 'wrap' }}
             >
+              <h4
+                className="team-bio-modal-name"
+                style={{ fontSize: '1.35rem', fontWeight: 600, color: '#ffffff', margin: 0 }}
+              >
+                {selectedMember.name}
+              </h4>
               <span
                 className="team-bio-modal-badge"
                 style={{
@@ -329,12 +335,6 @@ export default function TeamSection() {
               >
                 {t(`${selectedMember.docKey}.experience` as any)}
               </span>
-              <h4
-                className="team-bio-modal-name"
-                style={{ fontSize: '1.35rem', fontWeight: 600, color: '#ffffff', margin: 0 }}
-              >
-                {selectedMember.name}
-              </h4>
             </div>
 
             <p
@@ -427,11 +427,12 @@ export default function TeamSection() {
             font-size: 0.85rem !important;
           }
           .team-bio-modal-head {
-            flex-direction: column !important;
-            align-items: flex-start !important;
-            gap: 0.35rem !important;
+            flex-direction: row !important;
+            align-items: center !important;
+            gap: 0.6rem !important;
             padding-right: 2rem !important;
             margin-bottom: 0.75rem !important;
+            flex-wrap: wrap !important;
           }
           .team-bio-modal-badge {
             font-size: 0.75rem !important;
