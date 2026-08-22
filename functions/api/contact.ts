@@ -41,7 +41,7 @@ export async function onRequestPost(context: any): Promise<Response> {
       data = Object.fromEntries(formData.entries()) as any;
     }
 
-    const patientName = data.fullName || data.name || 'İsimsiz Ziyaretçi';
+    const patientName = data.fullName || data.name || 'Belirtilmedi';
     const patientPhone = data.phone || 'Belirtilmedi';
     const patientEmail = data.email || 'Belirtilmedi';
     const patientCountry = data.country || 'Belirtilmedi';
@@ -50,84 +50,142 @@ export async function onRequestPost(context: any): Promise<Response> {
       : data.treatment || data.treatments || 'Genel Muayene / Belirtilmedi';
     const patientMessage = data.message || data.notes || 'Mesaj girilmedi';
     const formSource = data.formType || 'Web İletişim Formu';
-    const currentLocale = data.locale || 'en';
+    const currentLocale = (data.locale || 'en').toUpperCase();
     const cleanPhone = patientPhone.replace(/[^0-9+]/g, '');
     const whatsappLink = cleanPhone ? `https://wa.me/${cleanPhone.replace('+', '')}` : null;
+    const formattedDate = new Date().toLocaleString('tr-TR', { timeZone: 'Europe/Istanbul' });
 
     const htmlBody = `
 <!DOCTYPE html>
-<html>
+<html lang="tr">
 <head>
-  <meta charset="utf-8">
-  <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #f8fafc; margin: 0; padding: 24px; color: #1e293b; }
-    .card { max-width: 620px; margin: 0 auto; background: #ffffff; border-radius: 16px; border: 1px solid #e2e8f0; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.05); }
-    .header { background: linear-gradient(135deg, #0c1b4d 0%, #060e28 100%); padding: 28px; text-align: center; color: #ffffff; }
-    .header h1 { margin: 0; font-size: 20px; font-weight: 700; letter-spacing: -0.02em; }
-    .header p { margin: 6px 0 0 0; font-size: 13px; color: #94a3b8; }
-    .badge { display: inline-block; background: #d58936; color: #ffffff; padding: 4px 12px; border-radius: 9999px; font-size: 11px; font-weight: 600; text-transform: uppercase; margin-top: 10px; }
-    .content { padding: 28px; }
-    .field-group { margin-bottom: 18px; padding-bottom: 14px; border-bottom: 1px solid #f1f5f9; }
-    .field-label { font-size: 11px; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px; }
-    .field-value { font-size: 15px; font-weight: 600; color: #0f172a; }
-    .message-box { background: #f8fafc; border-left: 4px solid #d58936; padding: 14px 18px; border-radius: 6px; font-size: 14px; color: #334155; line-height: 1.6; margin-top: 6px; }
-    .cta-container { text-align: center; margin: 26px 0 10px 0; }
-    .wa-button { display: inline-block; background: #22c55e; color: #ffffff !important; padding: 12px 28px; border-radius: 9999px; text-decoration: none; font-weight: 700; font-size: 14px; box-shadow: 0 4px 12px rgba(34, 197, 94, 0.3); }
-    .footer { background: #f8fafc; padding: 16px 28px; text-align: center; font-size: 12px; color: #94a3b8; border-top: 1px solid #f1f5f9; }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Master Smile Studio - Hasta Talebi</title>
 </head>
-<body>
-  <div class="card">
-    <div class="header">
-      <h1>🦷 Master Smile Studio — Yeni Hasta Talebi</h1>
-      <p>Web sitesi üzerinden yeni bir konsültasyon formu iletildi.</p>
-      <span class="badge">${formSource} • Dil: ${currentLocale.toUpperCase()}</span>
-    </div>
-    <div class="content">
-      <div class="field-group">
-        <div class="field-label">Hasta Adı Soyadı</div>
-        <div class="field-value">${patientName}</div>
-      </div>
+<body style="margin: 0; padding: 24px; background-color: #f1f5f9; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #0f172a; line-height: 1.5;">
+  <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" style="max-width: 600px; margin: 0 auto; background-color: #ffffff; border-radius: 8px; border: 1px solid #cbd5e1; overflow: hidden;">
+    <!-- Header -->
+    <tr>
+      <td style="background-color: #0c1b4d; padding: 24px 28px; border-bottom: 3px solid #d58936;">
+        <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td>
+              <div style="font-size: 11px; font-weight: 700; color: #d58936; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 4px;">
+                MASTER SMILE STUDIO ANTALYA
+              </div>
+              <h1 style="margin: 0; font-size: 18px; font-weight: 600; color: #ffffff;">
+                Yeni Hasta Konsültasyon Talebi
+              </h1>
+            </td>
+            <td align="right" style="vertical-align: middle;">
+              <span style="display: inline-block; background-color: rgba(255, 255, 255, 0.12); color: #f8fafc; font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 4px; border: 1px solid rgba(255, 255, 255, 0.2);">
+                ${currentLocale}
+              </span>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
 
-      <div class="field-group">
-        <div class="field-label">Telefon Numarası (WhatsApp)</div>
-        <div class="field-value">${patientPhone}</div>
-      </div>
+    <!-- Body Content -->
+    <tr>
+      <td style="padding: 28px;">
+        <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse;">
+          <!-- Ad Soyad -->
+          <tr>
+            <td style="padding: 10px 0; border-bottom: 1px solid #e2e8f0; font-size: 13px; font-weight: 600; color: #64748b; width: 140px;">
+              Hasta Adı Soyadı
+            </td>
+            <td style="padding: 10px 0; border-bottom: 1px solid #e2e8f0; font-size: 14px; font-weight: 600; color: #0f172a;">
+              ${patientName}
+            </td>
+          </tr>
 
-      <div class="field-group">
-        <div class="field-label">E-posta Adresi</div>
-        <div class="field-value">${patientEmail}</div>
-      </div>
+          <!-- Telefon -->
+          <tr>
+            <td style="padding: 10px 0; border-bottom: 1px solid #e2e8f0; font-size: 13px; font-weight: 600; color: #64748b;">
+              Telefon (WhatsApp)
+            </td>
+            <td style="padding: 10px 0; border-bottom: 1px solid #e2e8f0; font-size: 14px; font-weight: 600; color: #0f172a;">
+              ${patientPhone}
+            </td>
+          </tr>
 
-      <div class="field-group">
-        <div class="field-label">Ülke / Konum</div>
-        <div class="field-value">${patientCountry}</div>
-      </div>
+          <!-- E-posta -->
+          <tr>
+            <td style="padding: 10px 0; border-bottom: 1px solid #e2e8f0; font-size: 13px; font-weight: 600; color: #64748b;">
+              E-posta Adresi
+            </td>
+            <td style="padding: 10px 0; border-bottom: 1px solid #e2e8f0; font-size: 14px; color: #0f172a;">
+              ${patientEmail !== 'Belirtilmedi' ? `<a href="mailto:${patientEmail}" style="color: #0284c7; text-decoration: none;">${patientEmail}</a>` : 'Belirtilmedi'}
+            </td>
+          </tr>
 
-      <div class="field-group">
-        <div class="field-label">İlgilenilen Tedavi</div>
-        <div class="field-value" style="color: #d58936;">${patientTreatment}</div>
-      </div>
+          <!-- Ülke -->
+          <tr>
+            <td style="padding: 10px 0; border-bottom: 1px solid #e2e8f0; font-size: 13px; font-weight: 600; color: #64748b;">
+              Ülke / Konum
+            </td>
+            <td style="padding: 10px 0; border-bottom: 1px solid #e2e8f0; font-size: 14px; color: #0f172a;">
+              ${patientCountry}
+            </td>
+          </tr>
 
-      <div class="field-group" style="border-bottom: none; margin-bottom: 0;">
-        <div class="field-label">Hasta Notu / Mesajı</div>
-        <div class="message-box">${patientMessage.replace(/\n/g, '<br/>')}</div>
-      </div>
+          <!-- Tedavi -->
+          <tr>
+            <td style="padding: 10px 0; border-bottom: 1px solid #e2e8f0; font-size: 13px; font-weight: 600; color: #64748b;">
+              Talep Edilen Tedavi
+            </td>
+            <td style="padding: 10px 0; border-bottom: 1px solid #e2e8f0; font-size: 14px; font-weight: 600; color: #0c1b4d;">
+              ${patientTreatment}
+            </td>
+          </tr>
 
-      ${
-        whatsappLink
-          ? `<div class="cta-container">
-              <a href="${whatsappLink}" target="_blank" class="wa-button">
-                💬 Hastaya WhatsApp'tan Yanıt Ver
-              </a>
-            </div>`
-          : ''
-      }
-    </div>
-    <div class="footer">
-      Master Smile Studio Antalya • Form Gönderim Zamanı: ${new Date().toLocaleString('tr-TR', { timeZone: 'Europe/Istanbul' })}
-    </div>
-  </div>
+          <!-- Form Kaynağı -->
+          <tr>
+            <td style="padding: 10px 0; border-bottom: 1px solid #e2e8f0; font-size: 13px; font-weight: 600; color: #64748b;">
+              Form Kaynağı
+            </td>
+            <td style="padding: 10px 0; border-bottom: 1px solid #e2e8f0; font-size: 13px; color: #475569;">
+              ${formSource}
+            </td>
+          </tr>
+
+          <!-- Mesaj / Notlar -->
+          <tr>
+            <td colspan="2" style="padding-top: 16px;">
+              <div style="font-size: 13px; font-weight: 600; color: #64748b; margin-bottom: 6px;">
+                Hasta Mesajı / Klinik Not:
+              </div>
+              <div style="background-color: #f8fafc; border: 1px solid #e2e8f0; border-left: 3px solid #0c1b4d; padding: 12px 14px; border-radius: 4px; font-size: 13px; color: #334155; line-height: 1.6;">
+                ${patientMessage.replace(/\n/g, '<br/>')}
+              </div>
+            </td>
+          </tr>
+        </table>
+
+        <!-- WhatsApp Action Button -->
+        ${
+          whatsappLink
+            ? `
+        <div style="margin-top: 24px; text-align: center;">
+          <a href="${whatsappLink}" target="_blank" style="display: inline-block; background-color: #16a34a; color: #ffffff; text-decoration: none; padding: 11px 24px; border-radius: 6px; font-size: 14px; font-weight: 600; letter-spacing: -0.01em;">
+            WhatsApp ile İletişime Geç
+          </a>
+        </div>`
+            : ''
+        }
+      </td>
+    </tr>
+
+    <!-- Footer -->
+    <tr>
+      <td style="background-color: #f8fafc; padding: 14px 28px; border-top: 1px solid #e2e8f0; text-align: center; font-size: 12px; color: #94a3b8;">
+        Master Smile Studio • Form Kayıt Zamanı: ${formattedDate}
+      </td>
+    </tr>
+  </table>
 </body>
 </html>
     `;
@@ -140,7 +198,7 @@ export async function onRequestPost(context: any): Promise<Response> {
       from: `Master Smile Studio <${SMTP_USER}>`,
       to: TO_EMAIL,
       cc: CC_EMAIL,
-      subject: `Yeni Hasta Formu: ${patientName} - ${patientTreatment}`,
+      subject: `Yeni Hasta Formu: ${patientName} (${patientTreatment})`,
       html: htmlBody,
     });
 
