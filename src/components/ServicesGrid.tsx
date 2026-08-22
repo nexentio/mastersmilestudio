@@ -25,7 +25,7 @@ export default function ServicesGrid() {
     },
     {
       key: 'zirconia',
-      image: '/mastersmilestudio_1784465233_3944702579575983298_70887948899.jpg',
+      image: '/mss-zirconia-crowns.jpeg',
       href: '/treatments/dental-crowns/zirconium-crowns',
     },
     {
@@ -35,7 +35,7 @@ export default function ServicesGrid() {
     },
     {
       key: 'rootCanal',
-      image: '/mastersmilestudio_1784098986_3941630290953391467_70887948899.jpg',
+      image: '/mss-root-canala-treatment.jpeg',
       href: '/treatments/general-dentistry/root-canal',
     },
     {
