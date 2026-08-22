@@ -36,10 +36,31 @@ export default function HeroForm() {
     { key: 'bonding', label: tServices('bonding.title') },
   ];
 
-  const handleSubmit = (e: FormEvent) => {
+  const [loading, setLoading] = useState(false);
+
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     if (!fullName || !phone || !treatment || !language) return;
-    setSubmitted(true);
+
+    setLoading(true);
+    try {
+      await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          fullName,
+          phone,
+          treatment,
+          locale: language || currentLocale,
+          formType: 'Desktop Hero Quick Consultation Form',
+        }),
+      });
+    } catch (err) {
+      console.error('Hero form submission error:', err);
+    } finally {
+      setLoading(false);
+      setSubmitted(true);
+    }
   };
 
   return (

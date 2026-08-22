@@ -232,13 +232,30 @@ export default function ContactSection() {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
-    setTimeout(() => {
+
+    try {
+      await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          fullName: formData.name,
+          country: formData.country,
+          phone: formData.phone,
+          email: formData.email,
+          message: formData.message,
+          formType: 'Contact Page VIP Consultation Form',
+          locale,
+        }),
+      });
+    } catch (err) {
+      console.error('Contact form submission error:', err);
+    } finally {
       setLoading(false);
       setSubmitted(true);
-    }, 600);
+    }
   };
 
   return (

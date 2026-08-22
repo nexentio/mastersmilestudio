@@ -401,6 +401,23 @@ export default function TreatmentInteractiveQuoteForm({ defaultTreatment = 'Impl
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setStep(4);
+
+    fetch('/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        fullName,
+        country,
+        phone,
+        email,
+        treatments: selectedTreatments,
+        notes: `Age: ${ageGroup} | Spoken to Dentist: ${spokenToDentist} | Timeline: ${timeline} | Preferred Channel: ${commChannel} | Notes: ${message || 'None'}`,
+        locale,
+        formType: 'Treatment Detail Interactive 4-Step Quote Form',
+      }),
+    }).catch((err) => {
+      console.error('Interactive quote form submission error:', err);
+    });
   };
 
   const handleWhatsAppInstantSend = () => {

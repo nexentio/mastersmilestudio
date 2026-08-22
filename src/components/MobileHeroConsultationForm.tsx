@@ -268,15 +268,29 @@ export default function MobileHeroConsultationForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     if (!fullName.trim() || !phone.trim() || !treatment) return;
 
     setIsSubmitting(true);
-    setTimeout(() => {
+    try {
+      await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          fullName,
+          phone,
+          treatment,
+          locale: selectedLang || currentLocale,
+          formType: 'Mobile Hero Consultation Form',
+        }),
+      });
+    } catch (err) {
+      console.error('Mobile form submission error:', err);
+    } finally {
       setIsSubmitting(false);
       setSubmitted(true);
-    }, 600);
+    }
   };
 
   return (
