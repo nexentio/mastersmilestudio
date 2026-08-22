@@ -767,8 +767,8 @@ export default function Header() {
             <LanguageSwitcher />
 
             {/* Desktop Get Quote CTA Button (Visible on Desktop only) */}
-            <a
-              href="#contact"
+            <Link
+              href="/contact"
               style={{
                 alignItems: 'center',
                 justifyContent: 'center',
@@ -796,7 +796,7 @@ export default function Header() {
                 es: 'Pedir Presupuesto',
                 ru: 'Получить расчет',
               }[locale] || 'Get Quote'}
-            </a>
+            </Link>
 
             {/* Mobile Hamburger / Morphing Close (X) Button (Clean & Seamless) */}
             <button
@@ -1244,12 +1244,12 @@ export default function Header() {
       )}
 
       {/* Pinned Side Tab Badge: Start My Journey! */}
-      <a
-        href="#contact"
+      <Link
+        href="/contact"
         className="start-journey-side-tab"
       >
         <span>{locale === 'tr' ? 'GÜLÜŞ YOLCULUĞUMU BAŞLAT!' : 'START MY JOURNEY!'}</span>
-      </a>
+      </Link>
     </>
   );
 }
