@@ -432,9 +432,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "duration": "4-5 Days in Antalya (2 Visits Total)",
         "img": "/packages/nucleoss.webp",
         "price": {
-          "EUR": "€490",
-          "GBP": "£420",
-          "USD": "$540"
+          "EUR": "VIP Inclusions",
+          "GBP": "VIP Inclusions",
+          "USD": "Personalized Quote"
         },
         "included": [
           "NucleOSS T6 high-stability titanium implant fixture",
@@ -452,9 +452,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "duration": "4-5 Days in Antalya (2 Visits Total)",
         "img": "/packages/dxl.webp",
         "price": {
-          "EUR": "€690",
-          "GBP": "£590",
-          "USD": "$760"
+          "EUR": "VIP Inclusions",
+          "GBP": "VIP Inclusions",
+          "USD": "Personalized Quote"
         },
         "included": [
           "DXL German Active aggressive-thread implant fixture",
@@ -474,9 +474,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "img": "/packages/straumann.webp",
         "popular": true,
         "price": {
-          "EUR": "€950",
-          "GBP": "£815",
-          "USD": "$1,050"
+          "EUR": "VIP Inclusions",
+          "GBP": "VIP Inclusions",
+          "USD": "Personalized Quote"
         },
         "included": [
           "Straumann BLX dynamic bone-engagement implant",
@@ -495,9 +495,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "duration": "4-5 Days in Antalya (2 Visits Total)",
         "img": "/packages/megagen.webp",
         "price": {
-          "EUR": "€790",
-          "GBP": "£675",
-          "USD": "$870"
+          "EUR": "VIP Inclusions",
+          "GBP": "VIP Inclusions",
+          "USD": "Personalized Quote"
         },
         "included": [
           "Megagen AnyRidge progressive condensing thread implant",
@@ -516,9 +516,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "duration": "4-5 Days in Antalya (2 Visits Total)",
         "img": "/packages/neodent.webp",
         "price": {
-          "EUR": "€720",
-          "GBP": "£620",
-          "USD": "$790"
+          "EUR": "VIP Inclusions",
+          "GBP": "VIP Inclusions",
+          "USD": "Personalized Quote"
         },
         "included": [
           "Neodent Helix Grand Morse conical seal implant",
@@ -537,9 +537,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "duration": "4-5 Days in Antalya (2 Visits Total)",
         "img": "/packages/hiossen.webp",
         "price": {
-          "EUR": "€750",
-          "GBP": "£645",
-          "USD": "$825"
+          "EUR": "VIP Inclusions",
+          "GBP": "VIP Inclusions",
+          "USD": "Personalized Quote"
         },
         "included": [
           "Hiossen ETIII Active bio-friendly surface implant",
@@ -564,19 +564,19 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "costTableRows": [
       {
         "country": "United Kingdom (Private Harley St / London)",
-        "costPerUnit": "£2,200 – £3,200 ($2,800 – $4,100)",
-        "inclusions": "Implant fixture & basic crown only. CBCT (£150), extraction (£200), and temporary crown (£350) charged separately.",
+        "costPerUnit": "VIP Inclusions (VIP Package)",
+        "inclusions": "Implant fixture & basic crown only. CBCT (VIP Inclusions), extraction (VIP Inclusions), and temporary crown (VIP Inclusions) charged separately.",
         "valueAdvantage": "Baseline UK Market Cost"
       },
       {
         "country": "Germany (Berlin / Frankfurt Private Clinics)",
-        "costPerUnit": "€2,000 – €2,900 ($2,200 – $3,200)",
+        "costPerUnit": "VIP Inclusions (VIP Package)",
         "inclusions": "Implant and crown only. Diagnostic tomography, surgical guide, and temporary teeth billed as additional hospital line-items.",
         "valueAdvantage": "Baseline German Market Cost"
       },
       {
         "country": "Master Smile Studio (Antalya, Turkey) ⭐",
-        "costPerUnit": "€490 – €950 (£420 – £815)",
+        "costPerUnit": "VIP Inclusions (VIP Inclusions)",
         "inclusions": "100% All-Inclusive: 3D CBCT, atraumatic extraction, temporary crown, custom titanium abutment, monolithic zirconia crown, VIP transfer & 5-star hotel.",
         "valueAdvantage": "65% – 75% Net Savings (Swiss/German Quality)"
       }
@@ -942,9 +942,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "duration": "Antalya’da 4-5 Gün (Toplam 2 Ziyaret)",
         "img": "/packages/nucleoss.webp",
         "price": {
-          "EUR": "€490",
-          "GBP": "£420",
-          "USD": "$540"
+          "EUR": "VIP Inclusions",
+          "GBP": "VIP Inclusions",
+          "USD": "Personalized Quote"
         },
         "included": [
           "NucleOSS T6 yüksek tutuculuklu titanyum implant",
@@ -962,9 +962,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "duration": "Antalya’da 4-5 Gün (Toplam 2 Ziyaret)",
         "img": "/packages/dxl.webp",
         "price": {
-          "EUR": "€690",
-          "GBP": "£590",
-          "USD": "$760"
+          "EUR": "VIP Inclusions",
+          "GBP": "VIP Inclusions",
+          "USD": "Personalized Quote"
         },
         "included": [
           "DXL German Active agresif yivli titanyum implant",
@@ -984,9 +984,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "img": "/packages/straumann.webp",
         "popular": true,
         "price": {
-          "EUR": "€950",
-          "GBP": "£815",
-          "USD": "$1,050"
+          "EUR": "VIP Inclusions",
+          "GBP": "VIP Inclusions",
+          "USD": "Personalized Quote"
         },
         "included": [
           "Straumann BLX dinamik kemik tutucu implant",
@@ -1005,9 +1005,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "duration": "Antalya’da 4-5 Gün (Toplam 2 Ziyaret)",
         "img": "/packages/megagen.webp",
         "price": {
-          "EUR": "€790",
-          "GBP": "£675",
-          "USD": "$870"
+          "EUR": "VIP Inclusions",
+          "GBP": "VIP Inclusions",
+          "USD": "Personalized Quote"
         },
         "included": [
           "Megagen AnyRidge kademeli kemik sıkıştırıcı implant",
@@ -1026,9 +1026,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "duration": "Antalya’da 4-5 Gün (Toplam 2 Ziyaret)",
         "img": "/packages/neodent.webp",
         "price": {
-          "EUR": "€720",
-          "GBP": "£620",
-          "USD": "$790"
+          "EUR": "VIP Inclusions",
+          "GBP": "VIP Inclusions",
+          "USD": "Personalized Quote"
         },
         "included": [
           "Neodent Helix Grand Morse konik kilitli implant",
@@ -1047,9 +1047,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "duration": "Antalya’da 4-5 Gün (Toplam 2 Ziyaret)",
         "img": "/packages/hiossen.webp",
         "price": {
-          "EUR": "€750",
-          "GBP": "£645",
-          "USD": "$825"
+          "EUR": "VIP Inclusions",
+          "GBP": "VIP Inclusions",
+          "USD": "Personalized Quote"
         },
         "included": [
           "Hiossen ETIII Active biyouyumlu yüzey implant",
@@ -1074,19 +1074,19 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "costTableRows": [
       {
         "country": "İngiltere (Özel Londra / Harley St)",
-        "costPerUnit": "£2,200 – £3,200 ($2,800 – $4,100)",
-        "inclusions": "Yalnızca implant ve standart kuron. 3D Tomografi (£150), çekim (£200) ve geçici diş (£350) ayrıca fatura edilir.",
+        "costPerUnit": "VIP Inclusions (VIP Package)",
+        "inclusions": "Yalnızca implant ve standart kuron. 3D Tomografi (VIP Inclusions), çekim (VIP Inclusions) ve geçici diş (VIP Inclusions) ayrıca fatura edilir.",
         "valueAdvantage": "İngiltere Piyasa Tabanı"
       },
       {
         "country": "Almanya (Berlin / Frankfurt Özel Klinikler)",
-        "costPerUnit": "€2,000 – €2,900 ($2,200 – $3,200)",
+        "costPerUnit": "VIP Inclusions (VIP Package)",
         "inclusions": "İmplant ve kuron dahil. Teşhis tomografisi, cerrahi rehber ve geçici dişler ek hastane kalemleri olarak ücretlendirilir.",
         "valueAdvantage": "Almanya Piyasa Tabanı"
       },
       {
         "country": "Master Smile Studio (Antalya, Türkiye) ⭐",
-        "costPerUnit": "€490 – €950 (£420 – £815)",
+        "costPerUnit": "VIP Inclusions (VIP Inclusions)",
         "inclusions": "%100 Her Şey Dahil: 3D Tomografi, atravmatik çekim, geçici kuron, özel titanyum dayanak, monolitik zirkonyum diş, VIP transfer ve 5 yıldızlı otel.",
         "valueAdvantage": "%65 – %75 Net Tasarruf (İsviçre/Alman Kalitesi)"
       }
@@ -1414,30 +1414,11 @@ export default function ImmediateImplantDetailView() {
             <p className={styles.packagesSubtitle}>{d.packagesSubtitle}</p>
           </div>
 
-          {/* Interactive Currency Switcher */}
-          <div className={styles.currencyBar} role="group" aria-label="Select Currency">
-            <span className={styles.currencyLabel}>Currency:</span>
-            <button
-              type="button"
-              className={`${styles.currencyBtn} ${currency === 'EUR' ? styles.currencyBtnActive : ''}`}
-              onClick={() => setCurrency('EUR')}
-            >
-              EUR (€)
-            </button>
-            <button
-              type="button"
-              className={`${styles.currencyBtn} ${currency === 'GBP' ? styles.currencyBtnActive : ''}`}
-              onClick={() => setCurrency('GBP')}
-            >
-              GBP (£)
-            </button>
-            <button
-              type="button"
-              className={`${styles.currencyBtn} ${currency === 'USD' ? styles.currencyBtnActive : ''}`}
-              onClick={() => setCurrency('USD')}
-            >
-              USD ($)
-            </button>
+          {/* VIP Guarantee Trust Badge */}
+          <div className={styles.currencyBar} style={{ justifyContent: 'center' }}>
+            <span style={{ fontSize: '0.9rem', color: '#047857', fontWeight: '600', background: '#ecfdf5', padding: '0.4rem 1rem', borderRadius: '999px', border: '1px solid #a7f3d0' }}>
+              {locale === 'tr' ? '5★ Otel + VIP Transfer + Ömür Boyu Garanti Dahil' : '5★ Luxury Hotel + VIP Transfers + Lifetime Warranty Included'}
+            </span>
           </div>
 
           {/* 6 Real Implant Brand Package Cards */}
@@ -1483,9 +1464,9 @@ export default function ImmediateImplantDetailView() {
 
                 <div className={styles.pkgFooter}>
                   <div className={styles.pkgPriceRow}>
-                    <span className={styles.pkgPriceLabel}>{d.pricePerArchLabel}</span>
-                    <strong className={styles.pkgPriceValue}>
-                      {pkg.price[currency]}
+                    <span className={styles.pkgPriceLabel}>{locale === 'tr' ? 'VIP Paket Kapsamı' : 'VIP All-Inclusive'}</span>
+                    <strong className={styles.pkgPriceValue} style={{ fontSize: '0.95rem', color: '#059669', fontWeight: '700' }}>
+                      {locale === 'tr' ? 'Kişiye Özel Fiyat Teklifi' : 'Personalized VIP Quote'}
                     </strong>
                   </div>
 

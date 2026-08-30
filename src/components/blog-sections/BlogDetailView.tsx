@@ -18,6 +18,7 @@ interface BlogDetailViewProps {
 export default function BlogDetailView({ slug }: BlogDetailViewProps) {
   const locale = useLocale();
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
+  const [certificateModalOpen, setCertificateModalOpen] = useState(false);
 
   const article: BlogDetailArticle = getBlogDetailBySlug(slug);
   const currentPost = BLOG_POSTS.find((p) => p.slug === slug);
@@ -189,13 +190,13 @@ export default function BlogDetailView({ slug }: BlogDetailViewProps) {
       ru: 'Похожие статьи',
     },
     readMore: {
-      en: 'Read More →',
-      tr: 'Devamını Oku →',
-      de: 'Mehr lesen →',
-      pl: 'Czytaj więcej →',
-      pt: 'Ler mais →',
-      es: 'Leer más →',
-      ru: 'Читать далее →',
+      en: 'Read More',
+      tr: 'Devamını Oku',
+      de: 'Mehr lesen',
+      pl: 'Czytaj więcej',
+      pt: 'Ler mais',
+      es: 'Leer más',
+      ru: 'Читать далее',
     },
     consultationTitle: {
       en: 'Get Your Personalized Treatment Plan',
@@ -232,6 +233,42 @@ export default function BlogDetailView({ slug }: BlogDetailViewProps) {
       pt: 'Pedir Orçamento',
       es: 'Pedir Presupuesto',
       ru: 'Получить расчет стоимости',
+    },
+    certificateBadge: {
+      en: 'Official Ministry Accreditation',
+      tr: 'T.C. Sağlık Bakanlığı Onaylı',
+      de: 'Offizielle Akkreditierung',
+      pl: 'Oficjalna akredytacja',
+      pt: 'Acreditação Oficial',
+      es: 'Acreditación Oficial',
+      ru: 'Официальная аккредитация',
+    },
+    certificateTitle: {
+      en: 'International Health Tourism Authorization',
+      tr: 'Uluslararası Sağlık Turizmi Yetki Belgesi',
+      de: 'Genehmigung für Gesundheitstourismus',
+      pl: 'Certyfikat Turystyki Medycznej',
+      pt: 'Autorização de Turismo de Saúde',
+      es: 'Autorización de Turismo de Salud',
+      ru: 'Сертификат медицинского туризма',
+    },
+    certificateDesc: {
+      en: 'Master Smile Studio is officially certified by the Republic of Türkiye Ministry of Health for international dental tourism.',
+      tr: 'Master Smile Studio, uluslararası sağlık turizmi alanında T.C. Sağlık Bakanlığı tarafından resmi olarak yetkilendirilmiş ve akredite edilmiştir.',
+      de: 'Master Smile Studio ist vom türkischen Gesundheitsministerium für internationalen Zahntourismus offiziell zertifiziert.',
+      pl: 'Master Smile Studio posiada oficjalny certyfikat Ministerstwa Zdrowia w zakresie międzynarodowej turystyki stomatologicznej.',
+      pt: 'A Master Smile Studio é oficialmente certificada pelo Ministério da Saúde para turismo dentário internacional.',
+      es: 'Master Smile Studio está oficialmente certificada por el Ministerio de Salud para turismo dental internacional.',
+      ru: 'Master Smile Studio официально сертифицирована Министерством здравоохранения Турции для международного стоматологического туризма.',
+    },
+    certificateViewBtn: {
+      en: 'View Official Certificate ↗',
+      tr: 'Yetki Belgesini İncele ↗',
+      de: 'Zertifikat ansehen ↗',
+      pl: 'Zobacz certyfikat ↗',
+      pt: 'Ver Certificado ↗',
+      es: 'Ver Certificado ↗',
+      ru: 'Посмотреть сертификат ↗',
     },
   };
 
@@ -313,11 +350,22 @@ export default function BlogDetailView({ slug }: BlogDetailViewProps) {
   // In-article packages (All-on-4 Straumann, NucleOSS, German DXL)
   const featuredPackages = (PACKAGES_DATA[0]?.packages || []).slice(0, 3);
 
-  // In-article before/after items
-  const featuredBeforeAfter = (BEFORE_AFTER_PAGE_DATA[0]?.items || []).slice(0, 4);
-
+  // Related posts
   const relatedPosts = BLOG_POSTS.filter((p) => p.slug !== slug).slice(0, 3);
-  const waLink = getWhatsAppLink(locale, `Hello, I am reading the article "${getLocalized(currentPost?.title)}" and would like a consultation.`);
+
+  // In-article before/after items (1 row, 3 columns)
+  const featuredBeforeAfter = (BEFORE_AFTER_PAGE_DATA[0]?.items || []).slice(0, 3);
+
+  const blogWaMessages: Record<string, string> = {
+    tr: `Merhaba, "${getLocalized(currentPost?.title)}" başlıklı blog yazınızı okudum ve danışmanlık/randevu almak istiyorum.`,
+    en: `Hello, I am reading the article "${getLocalized(currentPost?.title)}" and would like a consultation.`,
+    de: `Hallo, ich lese den Artikel "${getLocalized(currentPost?.title)}" und möchte eine Beratung/einen Termin vereinbaren.`,
+    pl: `Dzień dobry, czytam artykuł "${getLocalized(currentPost?.title)}" i chciałbym uzyskać konsultację.`,
+    pt: `Olá, estou lendo o artigo "${getLocalized(currentPost?.title)}" e gostaria de uma consulta.`,
+    es: `Hola, estoy leyendo el artículo "${getLocalized(currentPost?.title)}" y me gustaría una consulta.`,
+    ru: `Здравствуйте! Я читаю статью "${getLocalized(currentPost?.title)}" и хотел бы получить консультацию.`,
+  };
+  const waLink = getWhatsAppLink(locale, blogWaMessages[locale] || blogWaMessages.en);
   const renderTextWithLinks = (text: string) => {
     if (!text || !text.includes('[') || !text.includes('](')) {
       return text;
@@ -499,9 +547,9 @@ export default function BlogDetailView({ slug }: BlogDetailViewProps) {
                         ))}
                       </ul>
                       <div className={styles.packagePricingRow}>
-                        <span className={styles.packagePriceTag}>{pkg.eur}</span>
-                        <span className={styles.packagePriceTag}>{pkg.gbp}</span>
-                        <span className={styles.packagePriceTag}>{pkg.usd}</span>
+                        <span className={styles.packagePriceTag}>
+                          {getLocalized(pkg.vipBadge) || (locale === 'tr' ? 'VIP Her Şey Dahil' : 'VIP All-Inclusive')}
+                        </span>
                       </div>
                       <a href={waLink} target="_blank" rel="noopener noreferrer" className={styles.packageQuoteBtn}>
                         {getLocalized(pkg.ctaText || UI_TEXT.btnQuote)}
@@ -666,9 +714,10 @@ export default function BlogDetailView({ slug }: BlogDetailViewProps) {
                   <Image
                     src="/mss-patients-montage.png"
                     alt="Master Smile Studio Consultation"
-                    fill
-                    sizes="340px"
-                    style={{ objectFit: 'cover', objectPosition: 'center' }}
+                    width={582}
+                    height={578}
+                    style={{ width: '100%', height: 'auto', display: 'block' }}
+                    className={styles.widgetBannerImg}
                   />
                 </div>
                 <div className={styles.widgetBody}>
@@ -701,6 +750,48 @@ export default function BlogDetailView({ slug }: BlogDetailViewProps) {
                 </ul>
               </div>
 
+              {/* Clean Official Certificate Card */}
+              <div 
+                className={styles.certCard}
+                onClick={() => setCertificateModalOpen(true)}
+                role="button"
+                tabIndex={0}
+                aria-label={locale === 'tr' ? 'Sağlık Turizmi Yetki Belgesini Büyüt' : 'View Health Tourism Certificate'}
+              >
+                <div className={styles.certFrame}>
+                  <Image
+                    src="/certificates/mastersmilestudio_international-health-tourism-authorization-certification.jpg"
+                    alt="T.C. Sağlık Bakanlığı Uluslararası Sağlık Turizmi Yetki Belgesi"
+                    width={1440}
+                    height={1040}
+                    style={{ width: '100%', height: 'auto', display: 'block' }}
+                    className={styles.certImg}
+                  />
+                  <div className={styles.certHoverBadge}>
+                    <span className={styles.certZoomIcon}>🔍</span>
+                    <span>{locale === 'tr' ? 'Büyütmek için tıklayın' : 'Click to enlarge'}</span>
+                  </div>
+                </div>
+                <div className={styles.certCaption}>
+                  <div className={styles.certCaptionTitle}>
+                    {locale === 'tr'
+                      ? 'Uluslararası Sağlık Turizmi Yetki Belgesi'
+                      : locale === 'de'
+                      ? 'Zertifikat für Gesundheitstourismus'
+                      : locale === 'ru'
+                      ? 'Сертификат медицинского туризма'
+                      : locale === 'pl'
+                      ? 'Certyfikat Turystyki Medycznej'
+                      : locale === 'pt'
+                      ? 'Autorização de Turismo de Saúde'
+                      : locale === 'es'
+                      ? 'Autorización de Turismo de Salud'
+                      : 'Health Tourism Authorization Certificate'}
+                  </div>
+                  <div className={styles.certCaptionSub}>T.C. Sağlık Bakanlığı</div>
+                </div>
+              </div>
+
               {/* Related Treatments */}
               <div className={styles.treatmentsWidget}>
                 <h3 className={styles.treatmentsTitle}>{getLocalized(UI_TEXT.relatedTreatmentsTitle)}</h3>
@@ -729,8 +820,8 @@ export default function BlogDetailView({ slug }: BlogDetailViewProps) {
                       src={post.image}
                       alt={getLocalized(post.title)}
                       fill
-                      sizes="(max-width: 768px) 100vw, 320px"
-                      style={{ objectFit: 'cover' }}
+                      sizes="(max-width: 768px) 100vw, 380px"
+                      className={styles.relatedImg}
                     />
                   </div>
                   <div className={styles.relatedContent}>
@@ -747,6 +838,37 @@ export default function BlogDetailView({ slug }: BlogDetailViewProps) {
           </div>
         )}
       </div>
+
+      {/* Certificate Lightbox Modal */}
+      {certificateModalOpen && (
+        <div 
+          className={styles.modalBackdrop}
+          onClick={() => setCertificateModalOpen(false)}
+          role="dialog"
+          aria-modal="true"
+        >
+          <div className={styles.modalContainer} onClick={(e) => e.stopPropagation()}>
+            <button
+              type="button"
+              className={styles.modalCloseBtn}
+              onClick={() => setCertificateModalOpen(false)}
+              aria-label="Close"
+            >
+              ✕
+            </button>
+            <div className={styles.modalImgWrap}>
+              <Image
+                src="/certificates/mastersmilestudio_international-health-tourism-authorization-certification.jpg"
+                alt="T.C. Sağlık Bakanlığı Uluslararası Sağlık Turizmi Yetki Belgesi"
+                width={1440}
+                height={1040}
+                style={{ width: '100%', height: 'auto', borderRadius: '8px', display: 'block' }}
+                priority
+              />
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 }

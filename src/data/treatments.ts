@@ -16,17 +16,18 @@ export interface TreatmentDoctorConfig {
 }
 
 export const TREATMENT_KEYS: TreatmentKeyConfig[] = [
-  { key: 'smileDesign', image: '/smile-makeover.jpg' },
-  { key: 'implant', image: '/dental-implant-mss.jpeg' },
-  { key: 'emax', image: '/e-max-lamine-treatment-mss.jpeg' },
-  { key: 'zirconia', image: '/transformations/t1.jpg' },
-  { key: 'whitening', image: '/teeth-whiting-treatment.jpeg' },
-  { key: 'rootCanal', image: '/transformations/t4.jpg' },
-  { key: 'dentures', image: '/transformations/t3.jpg' },
-  { key: 'bonding', image: '/transformations/t5.jpg' },
+  { key: 'hollywoodSmile', image: '/hollywoodsmile.jpeg' },
+  { key: 'smileDesign', image: '/mastersmile-smilemakeover-treatment-uk.jpg' },
+  { key: 'implant', image: '/mastersmile-implant-treatment-uk.jpg' },
+  { key: 'emax', image: '/mss-emax.jpeg' },
+  { key: 'zirconia', image: '/mss-zirconium-crown.jpg' },
+  { key: 'whitening', image: '/mss-teeth-whitining.jpeg' },
+  { key: 'dentures', image: '/mss-implant.png' },
+  { key: 'bonding', image: '/mss-composite-bonding.jpeg' },
+  { key: 'rootCanal', image: '/mss-root-canal-treatment.jpeg' },
   { key: 'bridge', image: '/transformations/t6.jpg' },
   { key: 'periodontology', image: '/transformations/t2.jpg' },
-  { key: 'allOnX', image: '/dental-implant-mss.jpeg' },
+  { key: 'allOnX', image: '/mastersmile-implant-treatment-uk.jpg' },
   { key: 'surgery', image: '/smile-between-section.png' },
 ];
 

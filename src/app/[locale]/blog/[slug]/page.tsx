@@ -7,6 +7,8 @@ import BlogDetailView from '@/components/blog-sections/BlogDetailView';
 import { BLOG_POSTS } from '@/data/blog-page-data';
 import { SITE_CONFIG } from '@/config/site';
 
+import { getI18nAlternates } from '@/lib/i18n-seo';
+
 interface Props {
   params: Promise<{
     locale: string;
@@ -14,19 +16,34 @@ interface Props {
   }>;
 }
 
+const HOME_NAMES: Record<string, string> = {
+  tr: 'Ana Sayfa',
+  en: 'Home',
+  de: 'Startseite',
+  pl: 'Strona Główna',
+  pt: 'Início',
+  es: 'Inicio',
+  ru: 'Главная',
+};
+
+const BLOG_NAMES: Record<string, string> = {
+  tr: 'Blog & Rehberler',
+  en: 'Blog & Guides',
+  de: 'Blog & Ratgeber',
+  pl: 'Blog i Poradniki',
+  pt: 'Blog e Guias',
+  es: 'Blog y Guías',
+  ru: 'Блог и Статьи',
+};
+
 export async function generateStaticParams() {
   const locales = ['en', 'tr', 'de', 'pl', 'pt', 'es', 'ru'];
   const params: { locale: string; slug: string }[] = [];
-
-  for (const locale of locales) {
-    for (const post of BLOG_POSTS) {
-      params.push({
-        locale,
-        slug: post.slug,
-      });
-    }
-  }
-
+  locales.forEach((locale) => {
+    BLOG_POSTS.forEach((post) => {
+      params.push({ locale, slug: post.slug });
+    });
+  });
   return params;
 }
 
@@ -49,9 +66,7 @@ export async function generateMetadata({ params }: Props) {
   return {
     title: `${title} | Master Smile Studio`,
     description,
-    alternates: {
-      canonical: canonicalUrl,
-    },
+    alternates: getI18nAlternates(`/blog/${slug}`, locale),
     openGraph: {
       title: `${title} | Master Smile Studio`,
       description,
@@ -109,7 +124,7 @@ export default async function BlogDetailPage({ params }: Props) {
       url: SITE_CONFIG.domain,
       logo: {
         '@type': 'ImageObject',
-        url: `${SITE_CONFIG.domain}/mss-logo.webp`,
+        url: `${SITE_CONFIG.domain}/mastersmilestudio-logo.png`,
       },
     },
     datePublished: '2026-07-20T10:00:00.000Z',
@@ -127,13 +142,13 @@ export default async function BlogDetailPage({ params }: Props) {
       {
         '@type': 'ListItem',
         position: 1,
-        name: locale === 'tr' ? 'Ana Sayfa' : 'Home',
+        name: HOME_NAMES[locale] || HOME_NAMES.en,
         item: `${SITE_CONFIG.domain}/${locale}`,
       },
       {
         '@type': 'ListItem',
         position: 2,
-        name: locale === 'tr' ? 'Blog & Rehberler' : 'Blog & Guides',
+        name: BLOG_NAMES[locale] || BLOG_NAMES.en,
         item: `${SITE_CONFIG.domain}/${locale}/blog`,
       },
       {

@@ -252,7 +252,7 @@ export default function BeforeAfterMainSection() {
                     <a
                       aria-label="WhatsApp"
                       className={`${styles.tip2} ${styles.whatsappBtn}`}
-                      href={getWhatsAppLink()}
+                      href={getWhatsAppLink(locale)}
                       target="_blank"
                       rel="noopener noreferrer"
                     >

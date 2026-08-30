@@ -322,11 +322,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
           "Hotel Stay with Bed & Breakfast",
           "Full Laboratory Work Included"
         ],
-        "price": {
-          "USD": "$6,400",
-          "EUR": "€5,500",
-          "GBP": "£4,700"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "ALL-ON-6 – DXL GERMAN",
@@ -342,11 +338,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
           "Hotel Stay with Bed & Breakfast",
           "Full Laboratory & CAD/CAM Milling"
         ],
-        "price": {
-          "USD": "$7,500",
-          "EUR": "€6,500",
-          "GBP": "£5,600"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "ALL-ON-6 – STRAUMANN",
@@ -362,11 +354,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
           "VIP Mercedes Chauffeur Transfers",
           "Dedicated Personal Patient Host"
         ],
-        "price": {
-          "USD": "$11,600",
-          "EUR": "€10,000",
-          "GBP": "£8,600"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "popular": true
       },
       {
@@ -382,11 +370,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
           "VIP Airport-Hotel Transfers",
           "Hotel Stay with Bed & Breakfast"
         ],
-        "price": {
-          "USD": "$8,000",
-          "EUR": "€7,000",
-          "GBP": "£6,000"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "ALL-ON-6 – NEODENT",
@@ -401,11 +385,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
           "VIP Airport-Hotel Transfers",
           "Hotel Stay with Bed & Breakfast"
         ],
-        "price": {
-          "USD": "$8,000",
-          "EUR": "€7,000",
-          "GBP": "£6,000"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "ALL-ON-6 – HIOSSEN",
@@ -420,11 +400,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
           "VIP Airport-Hotel Transfers",
           "Hotel Stay with Bed & Breakfast"
         ],
-        "price": {
-          "USD": "$7,700",
-          "EUR": "€6,750",
-          "GBP": "£5,780"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqsPart1": [
@@ -622,26 +598,26 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "costSubtitle": "Understand why thousands of European and UK patients choose Master Smile Studio for full-arch All-on-6 restoration without sacrificing material quality.",
     "costTableHeaders": {
       "country": "Destination / Clinic Tier",
-      "costPerArch": "All-on-6 Cost (Per Jaw)",
+      "costPerArch": "Standard Private Healthcare Rates",
       "inclusions": "What Is Included in the Price",
       "valueAdvantage": "Master Smile Studio Advantage"
     },
     "costTableRows": [
       {
         "country": "United Kingdom (Harley Street / Private)",
-        "costPerArch": "£14,000 – £18,000",
+        "costPerArch": "Standard Private Healthcare Rates",
         "inclusions": "Surgery and standard bridge only. 3D CBCT, temporary teeth, sedation, and check-ups billed separately.",
-        "valueAdvantage": "Save 65% – 70% (£4,700 – £8,600 with us) on genuine Straumann/German systems."
+        "valueAdvantage": "Save 65% – 70% (VIP Inclusions with us) on genuine Straumann/German systems."
       },
       {
         "country": "Germany / Switzerland (Private Clinic)",
-        "costPerArch": "€13,000 – €17,000",
+        "costPerArch": "Standard Private Healthcare Rates",
         "inclusions": "Surgical fees and lab work. Hotel accommodation, VIP transfers, and medications not covered.",
-        "valueAdvantage": "Save 60% – 65% (€5,500 – €10,000 with us) with identical German/Swiss titanium."
+        "valueAdvantage": "Save 60% – 65% (VIP Inclusions with us) with identical German/Swiss titanium."
       },
       {
         "country": "Master Smile Studio (Antalya, Turkey)",
-        "costPerArch": "€5,500 – €10,000 / £4,700 – £8,600",
+        "costPerArch": "Standard Private Healthcare Rates",
         "inclusions": "All-Inclusive: 6 Implants, Temporary Bridge, Final Zirconia Bridge, 3D CBCT, 5-Star Hotel, VIP Mercedes Transfers, Lifetime Warranty Passport.",
         "valueAdvantage": "100% Fixed Transparent Package Price Guarantee with Zero Hidden Medical or Travel Fees."
       }
@@ -821,11 +797,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
           "Oda & Kahvaltı Dahil Otel Konaklaması",
           "Tüm Laboratuvar ve Frezeleme Masrafları"
         ],
-        "price": {
-          "USD": "$6,400",
-          "EUR": "€5,500",
-          "GBP": "£4,700"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "ALL-ON-6 – DXL GERMAN",
@@ -840,11 +812,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
           "VIP Transferler ve Otel Konaklaması",
           "Tüm Laboratuvar İşçiliği Dahil"
         ],
-        "price": {
-          "USD": "$7,500",
-          "EUR": "€6,500",
-          "GBP": "£5,600"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "ALL-ON-6 – STRAUMANN",
@@ -860,11 +828,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
           "VIP Mercedes Şoförlü Transferler",
           "Özel Kişisel Hasta Danışmanı"
         ],
-        "price": {
-          "USD": "$11,600",
-          "EUR": "€10,000",
-          "GBP": "£8,600"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "popular": true
       },
       {
@@ -878,11 +842,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
           "12-14x Kalıcı Zirkonyum Dişler",
           "3D Tomografi, Otel ve VIP Transferler"
         ],
-        "price": {
-          "USD": "$8,000",
-          "EUR": "€7,000",
-          "GBP": "£6,000"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "ALL-ON-6 – NEODENT",
@@ -895,11 +855,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
           "12-14x Kalıcı Zirkonyum Dişler",
           "3D Tomografi, Otel ve VIP Transferler"
         ],
-        "price": {
-          "USD": "$8,000",
-          "EUR": "€7,000",
-          "GBP": "£6,000"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "ALL-ON-6 – HIOSSEN",
@@ -912,11 +868,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
           "12-14x Kalıcı Zirkonyum Dişler",
           "3D Tomografi, Otel ve VIP Transferler"
         ],
-        "price": {
-          "USD": "$7,700",
-          "EUR": "€6,750",
-          "GBP": "£5,780"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqsPart1": [
@@ -1114,26 +1066,26 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "costSubtitle": "Binlerce Avrupalı ve İngiliz hastanın neden malzeme kalitesinden ödün vermeden Master Smile Studio’yu tercih ettiğini keşfedin.",
     "costTableHeaders": {
       "country": "Ülke / Klinik Standardı",
-      "costPerArch": "Tek Çene All-on-6 Maliyeti",
+      "costPerArch": "Standard Private Healthcare Rates",
       "inclusions": "Fiyata Dahil Olan Hizmetler",
       "valueAdvantage": "Master Smile Studio Avantajı"
     },
     "costTableRows": [
       {
         "country": "İngiltere (UK - Özel Klinikler / Harley Street)",
-        "costPerArch": "£14,000 – £18,000",
+        "costPerArch": "Standard Private Healthcare Rates",
         "inclusions": "Yalnızca cerrahi ve standart köprü. 3D tomografi, geçici dişler ve ek randevular ayrı faturalandırılır.",
-        "valueAdvantage": "Orijinal İsviçre/Alman sistemlerinde %65 – %70 Tasarruf (£4,700 – £8,600)."
+        "valueAdvantage": "Orijinal İsviçre/Alman sistemlerinde %65 – %70 Tasarruf (VIP Inclusions)."
       },
       {
         "country": "Almanya / İsviçre (Özel Klinikler)",
-        "costPerArch": "€13,000 – €17,000",
+        "costPerArch": "Standard Private Healthcare Rates",
         "inclusions": "Cerrahi ve laboratuvar ücreti. Otel konaklaması, VIP transfer ve ilaçlar fiyata dahil değildir.",
-        "valueAdvantage": "Aynı Alman/İsviçre titanyumu ile %60 – %65 Tasarruf (€5,500 – €10,000)."
+        "valueAdvantage": "Aynı Alman/İsviçre titanyumu ile %60 – %65 Tasarruf (VIP Inclusions)."
       },
       {
         "country": "Master Smile Studio (Antalya, Türkiye)",
-        "costPerArch": "€5,500 – €10,000 / £4,700 – £8,600",
+        "costPerArch": "Standard Private Healthcare Rates",
         "inclusions": "Her Şey Dahil: 6 İmplant, Geçici Diş, Kalıcı Zirkonyum Köprü, 3D Tomografi, 5 Yıldızlı Otel, VIP Mercedes Transferler, Ömür Boyu Garanti Pasaportu.",
         "valueAdvantage": "Gizli Masrafsız Sabit Fiyat Garantisi ve VIP Seyahat Konforu."
       }
@@ -1313,11 +1265,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
           "Hotelaufenthalt mit Frühstück",
           "Komplette Laborarbeiten inklusive"
         ],
-        "price": {
-          "USD": "$6,400",
-          "EUR": "€5,500",
-          "GBP": "£4,700"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "ALL-ON-6 – DXL GERMAN",
@@ -1332,11 +1280,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
           "VIP-Transfers und Hotel inklusive",
           "Labor- und Fräsarbeiten inklusive"
         ],
-        "price": {
-          "USD": "$7,500",
-          "EUR": "€6,500",
-          "GBP": "£5,600"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "ALL-ON-6 – STRAUMANN",
@@ -1352,11 +1296,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
           "VIP-Mercedes Chauffeur-Transfers",
           "Persönliche deutschsprachige Betreuung"
         ],
-        "price": {
-          "USD": "$11,600",
-          "EUR": "€10,000",
-          "GBP": "£8,600"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "popular": true
       },
       {
@@ -1370,11 +1310,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
           "12-14x Zirkonbrücke",
           "Hotel und Transfers"
         ],
-        "price": {
-          "USD": "$8,000",
-          "EUR": "€7,000",
-          "GBP": "£6,000"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "ALL-ON-6 – NEODENT",
@@ -1387,11 +1323,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
           "12-14x Zirkonbrücke",
           "Hotel und Transfers"
         ],
-        "price": {
-          "USD": "$8,000",
-          "EUR": "€7,000",
-          "GBP": "£6,000"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "ALL-ON-6 – HIOSSEN",
@@ -1404,11 +1336,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
           "12-14x Zirkonbrücke",
           "Hotel und Transfers"
         ],
-        "price": {
-          "USD": "$7,700",
-          "EUR": "€6,750",
-          "GBP": "£5,780"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqsPart1": [
@@ -1606,26 +1534,26 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "costSubtitle": "Erfahren Sie, warum tausende europäische Patienten Master Smile Studio für All-on-6 wählen – ohne Kompromisse bei der Materialqualität.",
     "costTableHeaders": {
       "country": "Land / Klinik-Standard",
-      "costPerArch": "All-on-6 Kosten (pro Kiefer)",
+      "costPerArch": "Standard Private Healthcare Rates",
       "inclusions": "Im Preis enthaltene Leistungen",
       "valueAdvantage": "Master Smile Studio Vorteil"
     },
     "costTableRows": [
       {
         "country": "Großbritannien (Harley Street / Privatklinik)",
-        "costPerArch": "£14.000 – £18.000",
+        "costPerArch": "Standard Private Healthcare Rates",
         "inclusions": "Nur OP und Standardbrücke. 3D-DVT, Provisorien und Nachkontrollen werden extra berechnet.",
-        "valueAdvantage": "65% – 70% Ersparnis (£4.700 – £8.600) bei originalen Straumann/deutschen Systemen."
+        "valueAdvantage": "65% – 70% Ersparnis (VIP Inclusions.700 – VIP Inclusions.600) bei originalen Straumann/deutschen Systemen."
       },
       {
         "country": "Deutschland / Schweiz (Privatzahnarzt)",
-        "costPerArch": "€13.000 – €17.000",
+        "costPerArch": "Standard Private Healthcare Rates",
         "inclusions": "Chirurgie und Laborkosten. Hotelübernachtungen, VIP-Transfers und Medikamente nicht enthalten.",
-        "valueAdvantage": "60% – 65% Ersparnis (€5.500 – €10.000) bei identischem deutschem/Schweizer Titan."
+        "valueAdvantage": "60% – 65% Ersparnis (VIP Inclusions.500 – VIP Inclusions.000) bei identischem deutschem/Schweizer Titan."
       },
       {
         "country": "Master Smile Studio (Antalya, Türkei)",
-        "costPerArch": "€5.500 – €10.000 / £4.700 – £8.600",
+        "costPerArch": "Standard Private Healthcare Rates",
         "inclusions": "All-inclusive: 6 Implantate, provisorische Zähne, Zirkonbrücke, 3D-DVT, 5-Sterne-Hotel, VIP-Transfers, lebenslange Garantie.",
         "valueAdvantage": "Garantierter Festpreis ohne versteckte Zusatzkosten mit erstklassigem VIP-Service."
       }
@@ -1805,11 +1733,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
           "Pobyt w Hotelu ze Śniadaniem",
           "Pełne Prace Laboratoryjne"
         ],
-        "price": {
-          "USD": "$6,400",
-          "EUR": "€5,500",
-          "GBP": "£4,700"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "ALL-ON-6 – DXL GERMAN",
@@ -1824,11 +1748,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
           "Transfery VIP i Hotel w Cenie",
           "Prace Laboratoryjne CAD/CAM"
         ],
-        "price": {
-          "USD": "$7,500",
-          "EUR": "€6,500",
-          "GBP": "£5,600"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "ALL-ON-6 – STRAUMANN",
@@ -1844,11 +1764,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
           "Transfery VIP Mercedesem z Szoferem",
           "Osobisty Opiekun Pacjenta"
         ],
-        "price": {
-          "USD": "$11,600",
-          "EUR": "€10,000",
-          "GBP": "£8,600"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "popular": true
       },
       {
@@ -1862,11 +1778,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
           "12-14x Most Cyrkonowy",
           "Hotel i Transfery"
         ],
-        "price": {
-          "USD": "$8,000",
-          "EUR": "€7,000",
-          "GBP": "£6,000"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "ALL-ON-6 – NEODENT",
@@ -1879,11 +1791,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
           "12-14x Most Cyrkonowy",
           "Hotel i Transfery"
         ],
-        "price": {
-          "USD": "$8,000",
-          "EUR": "€7,000",
-          "GBP": "£6,000"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "ALL-ON-6 – HIOSSEN",
@@ -1896,11 +1804,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
           "12-14x Most Cyrkonowy",
           "Hotel i Transfery"
         ],
-        "price": {
-          "USD": "$7,700",
-          "EUR": "€6,750",
-          "GBP": "£5,780"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqsPart1": [
@@ -2098,26 +2002,26 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "costSubtitle": "Zobacz, dlaczego pacjenci z całej Europy wybierają Master Smile Studio na zabieg All-on-6 bez kompromisów jakościowych.",
     "costTableHeaders": {
       "country": "Kraj / Standard Kliniki",
-      "costPerArch": "Koszt All-on-6 (za 1 łuk)",
+      "costPerArch": "Standard Private Healthcare Rates",
       "inclusions": "Co jest wliczone w cenę",
       "valueAdvantage": "Przewaga Master Smile Studio"
     },
     "costTableRows": [
       {
         "country": "Wielka Brytania (Harley Street / Prywatnie)",
-        "costPerArch": "£14,000 – £18,000",
+        "costPerArch": "Standard Private Healthcare Rates",
         "inclusions": "Tylko zabieg i most standardowy. Tomografia 3D, zęby tymczasowe i wizyty płatne osobno.",
-        "valueAdvantage": "65% – 70% Oszczędności (£4,700 – £8,600) na systemach Straumann/DXL."
+        "valueAdvantage": "65% – 70% Oszczędności (VIP Inclusions) na systemach Straumann/DXL."
       },
       {
         "country": "Niemcy / Szwajcaria (Kliniki Prywatne)",
-        "costPerArch": "€13,000 – €17,000",
+        "costPerArch": "Standard Private Healthcare Rates",
         "inclusions": "Zabieg i laboratorium. Koszty hotelu, transferów i leków nie są pokrywane.",
-        "valueAdvantage": "60% – 65% Oszczędności (€5,500 – €10,000) przy tym samym tytanie."
+        "valueAdvantage": "60% – 65% Oszczędności (VIP Inclusions) przy tym samym tytanie."
       },
       {
         "country": "Master Smile Studio (Antalya, Turcja)",
-        "costPerArch": "€5,500 – €10,000 / £4,700 – £8,600",
+        "costPerArch": "Standard Private Healthcare Rates",
         "inclusions": "Pakiet All-Inclusive: 6 Implantów, Most Tymczasowy, Most Cyrkonowy, Tomografia 3D, Hotel 5*, Transfery VIP Mercedes, Dożywotnia Gwarancja.",
         "valueAdvantage": "Gwarancja Stałej Ceny bez ukrytych opłat i luksusowa obsługa pacjenta."
       }
@@ -2297,11 +2201,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
           "Hospedagem em Hotel com Café da Manhã",
           "Trabalho Laboratorial Completo"
         ],
-        "price": {
-          "USD": "$6,400",
-          "EUR": "€5,500",
-          "GBP": "£4,700"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "ALL-ON-6 – DXL GERMAN",
@@ -2316,11 +2216,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
           "Transfers VIP e Hotel Incluídos",
           "Laboratório e Fresagem CAD/CAM"
         ],
-        "price": {
-          "USD": "$7,500",
-          "EUR": "€6,500",
-          "GBP": "£5,600"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "ALL-ON-6 – STRAUMANN",
@@ -2336,11 +2232,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
           "Transfers VIP Mercedes com Motorista",
           "Coordenador de Paciente Dedicado"
         ],
-        "price": {
-          "USD": "$11,600",
-          "EUR": "€10,000",
-          "GBP": "£8,600"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "popular": true
       },
       {
@@ -2354,11 +2246,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
           "12-14x Ponte Zircônia",
           "Hotel e Transfers"
         ],
-        "price": {
-          "USD": "$8,000",
-          "EUR": "€7,000",
-          "GBP": "£6,000"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "ALL-ON-6 – NEODENT",
@@ -2371,11 +2259,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
           "12-14x Ponte Zircônia",
           "Hotel e Transfers"
         ],
-        "price": {
-          "USD": "$8,000",
-          "EUR": "€7,000",
-          "GBP": "£6,000"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "ALL-ON-6 – HIOSSEN",
@@ -2388,11 +2272,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
           "12-14x Ponte Zircônia",
           "Hotel e Transfers"
         ],
-        "price": {
-          "USD": "$7,700",
-          "EUR": "€6,750",
-          "GBP": "£5,780"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqsPart1": [
@@ -2590,26 +2470,26 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "costSubtitle": "Entenda por que milhares de pacientes europeus escolhem o Master Smile Studio para o All-on-6 mantendo a máxima qualidade.",
     "costTableHeaders": {
       "country": "País / Padrão Clínico",
-      "costPerArch": "Custo All-on-6 (por arcada)",
+      "costPerArch": "Standard Private Healthcare Rates",
       "inclusions": "O que está incluído no preço",
       "valueAdvantage": "Vantagem Master Smile Studio"
     },
     "costTableRows": [
       {
         "country": "Reino Unido (Harley Street / Particular)",
-        "costPerArch": "£14,000 – £18,000",
+        "costPerArch": "Standard Private Healthcare Rates",
         "inclusions": "Apenas cirurgia e prótese básica. Tomografia 3D, provisórios e consultas cobrados à parte.",
-        "valueAdvantage": "Economia de 65% a 70% (£4,700 – £8,600) em sistemas Straumann/DXL."
+        "valueAdvantage": "Economia de 65% a 70% (VIP Inclusions) em sistemas Straumann/DXL."
       },
       {
         "country": "Alemanha / Suíça (Clínicas Privadas)",
-        "costPerArch": "€13,000 – €17,000",
+        "costPerArch": "Standard Private Healthcare Rates",
         "inclusions": "Honorários cirúrgicos e laboratoriais. Hospedagem em hotel e transfers não inclusos.",
-        "valueAdvantage": "Economia de 60% a 65% (€5,500 – €10,000) com titânio suíço/alemão idêntico."
+        "valueAdvantage": "Economia de 60% a 65% (VIP Inclusions) com titânio suíço/alemão idêntico."
       },
       {
         "country": "Master Smile Studio (Antalya, Turquia)",
-        "costPerArch": "€5,500 – €10,000 / £4,700 – £8,600",
+        "costPerArch": "Standard Private Healthcare Rates",
         "inclusions": "Tudo Incluído: 6 Implantes, Ponte Provisória, Ponte de Zircônia, Tomografia 3D, Hotel 5 Estrelas, Transfers VIP Mercedes, Garantia Vitalícia.",
         "valueAdvantage": "Garantia de Preço Fixo Transparente sem Custos Ocultos."
       }
@@ -2766,7 +2646,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "packagesSubtitle": "Precios transparentes por arcada con 6 implantes de titanio, puente de circonio definitivo, hotel de 5 estrellas y traslados VIP.",
     "durationLabel": "Duración del Tratamiento:",
     "includedLabel": "Qué incluye el paquete:",
-    "pricePerArchLabel": "Precio por arcada",
+    "pricePerArchLabel": "Protocolo de tratamiento y tiempo",
     "getQuoteBtn": "Obtener Presupuesto Gratuito",
     "mostPopularBadge": "MÁS POPULAR",
     "faqTitle": "Preguntas Frecuentes sobre Implantes All-on-6",
@@ -2789,11 +2669,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
           "Estancia en Hotel con Desayuno",
           "Laboratorio Completo Incluido"
         ],
-        "price": {
-          "USD": "$6,400",
-          "EUR": "€5,500",
-          "GBP": "£4,700"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "ALL-ON-6 – DXL GERMAN",
@@ -2808,11 +2684,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
           "Traslados VIP y Hotel Incluidos",
           "Laboratorio y Fresado CAD/CAM"
         ],
-        "price": {
-          "USD": "$7,500",
-          "EUR": "€6,500",
-          "GBP": "£5,600"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "ALL-ON-6 – STRAUMANN",
@@ -2827,11 +2699,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
           "Traslados VIP y Hotel de Lujo 5 Estrellas",
           "Asesor Personal en Español"
         ],
-        "price": {
-          "USD": "$11,600",
-          "EUR": "€10,000",
-          "GBP": "£8,600"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "popular": true
       },
       {
@@ -2845,11 +2713,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
           "12-14x Puente Circonio",
           "Hotel y Traslados"
         ],
-        "price": {
-          "USD": "$8,000",
-          "EUR": "€7,000",
-          "GBP": "£6,000"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "ALL-ON-6 – NEODENT",
@@ -2862,11 +2726,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
           "12-14x Puente Circonio",
           "Hotel y Traslados"
         ],
-        "price": {
-          "USD": "$8,000",
-          "EUR": "€7,000",
-          "GBP": "£6,000"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "ALL-ON-6 – HIOSSEN",
@@ -2879,11 +2739,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
           "12-14x Puente Circonio",
           "Hotel y Traslados"
         ],
-        "price": {
-          "USD": "$7,700",
-          "EUR": "€6,750",
-          "GBP": "£5,780"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqsPart1": [
@@ -3081,26 +2937,26 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "costSubtitle": "Descubra por qué miles de pacientes europeos eligen Master Smile Studio para su tratamiento All-on-6 con los más altos estándares.",
     "costTableHeaders": {
       "country": "País / Nivel Clínico",
-      "costPerArch": "Coste All-on-6 (por arcada)",
+      "costPerArch": "Standard Private Healthcare Rates",
       "inclusions": "Qué incluye el precio",
       "valueAdvantage": "Ventaja Master Smile Studio"
     },
     "costTableRows": [
       {
         "country": "Reino Unido (Harley Street / Privado)",
-        "costPerArch": "£14,000 – £18,000",
+        "costPerArch": "Standard Private Healthcare Rates",
         "inclusions": "Solo cirugía y puente estándar. TAC 3D, provisionales y revisiones facturados aparte.",
-        "valueAdvantage": "Ahorro del 65% – 70% (£4,700 – £8,600) en sistemas Straumann/DXL."
+        "valueAdvantage": "Ahorro del 65% – 70% (VIP Inclusions) en sistemas Straumann/DXL."
       },
       {
         "country": "Alemania / Suiza (Clínica Privada)",
-        "costPerArch": "€13,000 – €17,000",
+        "costPerArch": "Standard Private Healthcare Rates",
         "inclusions": "Cirugía y costes de laboratorio. Hotel, traslados y medicación no incluidos.",
-        "valueAdvantage": "Ahorro del 60% – 65% (€5,500 – €10,000) con idéntico titanio suizo/alemán."
+        "valueAdvantage": "Ahorro del 60% – 65% (VIP Inclusions) con idéntico titanio suizo/alemán."
       },
       {
         "country": "Master Smile Studio (Antalya, Turquía)",
-        "costPerArch": "€5,500 – €10,000 / £4,700 – £8,600",
+        "costPerArch": "Standard Private Healthcare Rates",
         "inclusions": "Todo Incluido: 6 Implantes, Puente Provisional, Puente de Circonio, TAC 3D, Hotel de 5 Estrellas, Traslados VIP Mercedes, Garantía de por Vida.",
         "valueAdvantage": "Garantía de Precio Fijo Transparente sin Costes Ocultos."
       }
@@ -3280,11 +3136,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
           "Проживание в Отеле с Завтраками",
           "Все Лабораторные Работы Включены"
         ],
-        "price": {
-          "USD": "$6,400",
-          "EUR": "€5,500",
-          "GBP": "£4,700"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "ALL-ON-6 – DXL GERMAN",
@@ -3299,11 +3151,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
           "VIP-Трансфер и Отель Включены",
           "Лабораторные и CAD/CAM Работы"
         ],
-        "price": {
-          "USD": "$7,500",
-          "EUR": "€6,500",
-          "GBP": "£5,600"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "ALL-ON-6 – STRAUMANN",
@@ -3319,11 +3167,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
           "VIP-Трансфер Mercedes с Личным Водителем",
           "Персональный Русскоязычный Координатор"
         ],
-        "price": {
-          "USD": "$11,600",
-          "EUR": "€10,000",
-          "GBP": "£8,600"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "popular": true
       },
       {
@@ -3337,11 +3181,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
           "12-14x Циркониевый Мост",
           "Отель и Трансфер"
         ],
-        "price": {
-          "USD": "$8,000",
-          "EUR": "€7,000",
-          "GBP": "£6,000"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "ALL-ON-6 – NEODENT",
@@ -3354,11 +3194,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
           "12-14x Циркониевый Мост",
           "Отель и Трансфер"
         ],
-        "price": {
-          "USD": "$8,000",
-          "EUR": "€7,000",
-          "GBP": "£6,000"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "ALL-ON-6 – HIOSSEN",
@@ -3371,11 +3207,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
           "12-14x Циркониевый Мост",
           "Отель и Трансфер"
         ],
-        "price": {
-          "USD": "$7,700",
-          "EUR": "€6,750",
-          "GBP": "£5,780"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqsPart1": [
@@ -3573,26 +3405,26 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "costSubtitle": "Узнайте, почему европейские пациенты выбирают Master Smile Studio для восстановления All-on-6 без компромиссов в качестве.",
     "costTableHeaders": {
       "country": "Страна / Уровень Клиники",
-      "costPerArch": "Стоимость All-on-6 (за челюсть)",
+      "costPerArch": "Standard Private Healthcare Rates",
       "inclusions": "Что включено в стоимость",
       "valueAdvantage": "Преимущество Master Smile Studio"
     },
     "costTableRows": [
       {
         "country": "Великобритания (Harley Street / Частные)",
-        "costPerArch": "£14,000 – £18,000",
+        "costPerArch": "Standard Private Healthcare Rates",
         "inclusions": "Только операция и базовый мост. 3D-КТ, временные зубы и приемы оплачиваются отдельно.",
-        "valueAdvantage": "Экономия 65% – 70% (£4,700 – £8,600) на системах Straumann/DXL."
+        "valueAdvantage": "Экономия 65% – 70% (VIP Inclusions) на системах Straumann/DXL."
       },
       {
         "country": "Германия / Швейцария (Частные Клиники)",
-        "costPerArch": "€13,000 – €17,000",
+        "costPerArch": "Standard Private Healthcare Rates",
         "inclusions": "Операция и лаборатория. Отель, VIP-трансфер и медикаменты не входят в счет.",
-        "valueAdvantage": "Экономия 60% – 65% (€5,500 – €10,000) при идентичном титане."
+        "valueAdvantage": "Экономия 60% – 65% (VIP Inclusions) при идентичном титане."
       },
       {
         "country": "Master Smile Studio (Анталья, Турция)",
-        "costPerArch": "€5,500 – €10,000 / £4,700 – £8,600",
+        "costPerArch": "Standard Private Healthcare Rates",
         "inclusions": "Все Включено: 6 Имплантов, Временный Мост, Постоянный Циркониевый Мост, 3D-КТ, Отель 5*, VIP-Трансфер Mercedes, Пожизненная Гарантия.",
         "valueAdvantage": "Гарантия Фиксированной Цены без скрытых медицинских доплат."
       }
@@ -3844,30 +3676,11 @@ export default function AllOnSixImplantDetailView() {
             <p className={styles.packagesSubtitle}>{d.packagesSubtitle}</p>
           </div>
 
-          {/* Interactive Currency Switcher */}
-          <div className={styles.currencyBar} role="group" aria-label="Select Currency">
-            <span className={styles.currencyLabel}>Currency:</span>
-            <button
-              type="button"
-              className={`${styles.currencyBtn} ${currency === 'EUR' ? styles.currencyBtnActive : ''}`}
-              onClick={() => setCurrency('EUR')}
-            >
-              EUR (€)
-            </button>
-            <button
-              type="button"
-              className={`${styles.currencyBtn} ${currency === 'GBP' ? styles.currencyBtnActive : ''}`}
-              onClick={() => setCurrency('GBP')}
-            >
-              GBP (£)
-            </button>
-            <button
-              type="button"
-              className={`${styles.currencyBtn} ${currency === 'USD' ? styles.currencyBtnActive : ''}`}
-              onClick={() => setCurrency('USD')}
-            >
-              USD ($)
-            </button>
+          {/* VIP Guarantee Trust Badge */}
+          <div className={styles.currencyBar} style={{ justifyContent: 'center' }}>
+            <span style={{ fontSize: '0.9rem', color: '#047857', fontWeight: '600', background: '#ecfdf5', padding: '0.4rem 1rem', borderRadius: '999px', border: '1px solid #a7f3d0' }}>
+              {locale === 'tr' ? '5★ Otel + VIP Transfer + Ömür Boyu Garanti Dahil' : '5★ Luxury Hotel + VIP Transfers + Lifetime Warranty Included'}
+            </span>
           </div>
 
           {/* 6 Real Implant Brand Package Cards */}
@@ -3913,9 +3726,9 @@ export default function AllOnSixImplantDetailView() {
 
                 <div className={styles.pkgFooter}>
                   <div className={styles.pkgPriceRow}>
-                    <span className={styles.pkgPriceLabel}>{d.pricePerArchLabel}</span>
-                    <strong className={styles.pkgPriceValue}>
-                      {pkg.price[currency]}
+                    <span className={styles.pkgPriceLabel}>{locale === 'tr' ? 'VIP Paket Kapsamı' : 'VIP All-Inclusive'}</span>
+                    <strong className={styles.pkgPriceValue} style={{ fontSize: '0.95rem', color: '#059669', fontWeight: '700' }}>
+                      {locale === 'tr' ? 'Kişiye Özel Fiyat Teklifi' : 'Personalized VIP Quote'}
                     </strong>
                   </div>
 

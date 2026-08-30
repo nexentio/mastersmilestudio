@@ -66,11 +66,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Lifetime Global Implant Guarantee Passport",
           "VIP Mercedes Airport & Clinic transfers included"
         ],
-        "price": {
-          "USD": "$1,490",
-          "EUR": "€1,350",
-          "GBP": "£1,190"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "4-Implant Snap-On Overdenture (Upper or Lower)",
@@ -85,11 +81,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Full 3D CT diagnostics & temporary healing prosthesis",
           "VIP Airport Transfers + 4-Star Central Hotel"
         ],
-        "price": {
-          "USD": "$2,350",
-          "EUR": "€2,150",
-          "GBP": "£1,890"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "4-Implant CAD/CAM Titanium Bar Overdenture",
@@ -104,11 +96,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Complete 3D CT scanning, surgical guide & anesthesia",
           "VIP Mercedes Transfers + 4-Star Central Hotel Stay"
         ],
-        "price": {
-          "USD": "$3,200",
-          "EUR": "€2,890",
-          "GBP": "£2,550"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Straumann 4-Implant Locator Overdenture",
@@ -123,11 +111,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Complete surgical pack, 3D diagnostics & medications",
           "VIP Airport Transfers + 4-Star Central Hotel"
         ],
-        "price": {
-          "USD": "$3,650",
-          "EUR": "€3,350",
-          "GBP": "£2,890"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Nobel Biocare 4-Implant Bar-Retained Denture",
@@ -142,11 +126,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Full 3D surgical guide planning & IV sedation option",
           "VIP Mercedes Transfers + 5-Star Central Hotel Stay"
         ],
-        "price": {
-          "USD": "$4,450",
-          "EUR": "€4,050",
-          "GBP": "£3,490"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Full Mouth Dual-Arch Overdenture Package",
@@ -162,11 +142,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Lifetime Global Warranty Passport",
           "VIP Mercedes Transfers + 5-Star Luxury Hotel Stay"
         ],
-        "price": {
-          "USD": "$4,950",
-          "EUR": "€4,550",
-          "GBP": "£3,890"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -367,11 +343,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Ömür Boyu Global İmplant Garanti Pasaportu",
           "VIP Mercedes Havalimanı & Klinik transferleri dahil"
         ],
-        "price": {
-          "USD": "$1,490",
-          "EUR": "€1,350",
-          "GBP": "£1,190"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "4 İmplantlı Çıtçıtlı Protez (Üst veya Alt Çene)",
@@ -386,11 +358,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "3D Tomografi, geçici protez ve tam cerrahi set",
           "VIP Havalimanı Transferleri + 4 Yıldızlı Otel Konaklaması"
         ],
-        "price": {
-          "USD": "$2,350",
-          "EUR": "€2,150",
-          "GBP": "£1,890"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "4 İmplantlı CAD/CAM Titanyum Barlı Protez",
@@ -405,11 +373,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "3D Tomografi, cerrahi rehber ve operasyon seti",
           "VIP Mercedes Transferleri + 4 Yıldızlı Otel Konaklaması"
         ],
-        "price": {
-          "USD": "$3,200",
-          "EUR": "€2,890",
-          "GBP": "£2,550"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Straumann 4 İmplantlı Locator Protez Paketi",
@@ -424,11 +388,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Tam cerrahi sarf seti, 3D tomografi ve ilaç paketi",
           "VIP Havalimanı Transferleri + 4 Yıldızlı Merkezi Otel"
         ],
-        "price": {
-          "USD": "$3,650",
-          "EUR": "€3,350",
-          "GBP": "£2,890"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Nobel Biocare 4 İmplantlı Barlı Protez Paketi",
@@ -443,11 +403,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "3D Bilgisayarlı cerrahi planlama ve sedasyon seçeneği",
           "VIP Mercedes Transferleri + 5 Yıldızlı Merkezi Otel Konaklaması"
         ],
-        "price": {
-          "USD": "$4,450",
-          "EUR": "€4,050",
-          "GBP": "£3,490"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Tam Ağız Çift Çene Çıtçıtlı Protez Paketi",
@@ -463,11 +419,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Ömür Boyu Global Garanti Pasaportu",
           "VIP Mercedes Özel Şoför + 5 Yıldızlı Lüks Konaklama"
         ],
-        "price": {
-          "USD": "$4,950",
-          "EUR": "€4,550",
-          "GBP": "£3,890"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -633,11 +585,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Dożywotni Międzynarodowy Paszport Gwarancyjny na implanty",
           "Prywatne transfery VIP Mercedes (Lotnisko - Klinika - Hotel) w cenie"
         ],
-        "price": {
-          "USD": "$1,490",
-          "EUR": "€1,350",
-          "GBP": "£1,190"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Proteza na 4 Implantach Zatrzaskowych (Szczęka lub Żuchwa)",
@@ -652,11 +600,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Diagnostyka tomograficzna 3D CT i proteza tymczasowa",
           "Transfery VIP lotnisko-hotel + Zakwaterowanie w hotelu 4-gwiazdkowym"
         ],
-        "price": {
-          "USD": "$2,350",
-          "EUR": "€2,150",
-          "GBP": "£1,890"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Proteza na Belce Tytanowej CAD/CAM na 4 Implantach",
@@ -671,11 +615,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Kompletny skan 3D CT, szablon nawigacyjny i znieczulenie",
           "Transfery szoferem VIP Mercedes + Pobyt w 4-gwiazdkowym hotelu"
         ],
-        "price": {
-          "USD": "$3,200",
-          "EUR": "€2,890",
-          "GBP": "£2,550"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Pakiet Straumann: Proteza Locator na 4 Implantach",
@@ -690,11 +630,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Pełen pakiet chirurgiczny, tomografia 3D i leki pozabiegowe",
           "Transfery VIP z lotniska + Hotel 4-gwiazdkowy w centrum"
         ],
-        "price": {
-          "USD": "$3,650",
-          "EUR": "€3,350",
-          "GBP": "£2,890"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Pakiet Nobel Biocare: Proteza na Belce na 4 Implantach",
@@ -709,11 +645,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Planowanie komputerowe 3D i opcja sedacji dożylnej",
           "Prywatny szofer VIP Mercedes + Hotel 5-gwiazdkowy"
         ],
-        "price": {
-          "USD": "$4,450",
-          "EUR": "€4,050",
-          "GBP": "£3,490"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Pełna Rekonstrukcja Obu Łuków na Implantach (Góra + Dół)",
@@ -729,11 +661,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Dożywotni Paszport Gwarancyjny",
           "VIP Mercedes Transfers + Luksusowe zakwaterowanie 5-gwiazdkowe"
         ],
-        "price": {
-          "USD": "$4,950",
-          "EUR": "€4,550",
-          "GBP": "£3,890"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -907,11 +835,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Lebenslanger internationaler Implantat-Garantiepass",
           "VIP Mercedes Flughafen- & Kliniktransfers inklusive"
         ],
-        "price": {
-          "USD": "$1,490",
-          "EUR": "€1,350",
-          "GBP": "£1,190"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "4-Implantat Snap-On Deckprothese (Ober- oder Unterkiefer)",
@@ -926,11 +850,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "3D CT Diagnostik, Übergangsprothese & OP-Set",
           "VIP Flughafentransfers + 4-Sterne Hotelaufenthalt"
         ],
-        "price": {
-          "USD": "$2,350",
-          "EUR": "€2,150",
-          "GBP": "£1,890"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "4-Implantat CAD/CAM Titansteg-Prothese",
@@ -945,11 +865,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Komplette 3D CT Analyse, Schablone & Lokalanästhesie",
           "VIP Mercedes Chauffeur + 4-Sterne Hotelübernachtung"
         ],
-        "price": {
-          "USD": "$3,200",
-          "EUR": "€2,890",
-          "GBP": "£2,550"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Straumann 4-Implantat Locator Deckprothese",
@@ -964,11 +880,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Vollständiges chirurgisches Set, 3D CT & Medikamente",
           "VIP Flughafentransfers + 4-Sterne Hotel im Zentrum"
         ],
-        "price": {
-          "USD": "$3,650",
-          "EUR": "€3,350",
-          "GBP": "£2,890"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Nobel Biocare 4-Implantat Stegprothese",
@@ -983,11 +895,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "3D computergestützte OP-Planung & Sedierungsoption",
           "VIP Mercedes Transfers + 5-Sterne Hotelaufenthalt"
         ],
-        "price": {
-          "USD": "$4,450",
-          "EUR": "€4,050",
-          "GBP": "£3,490"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Komplettpaket Beide Kiefer (Ober- und Unterkiefer)",
@@ -1003,11 +911,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Lebenslanger globaler Garantiepass",
           "VIP Mercedes Chauffeur + 5-Sterne Luxus-Hotel"
         ],
-        "price": {
-          "USD": "$4,950",
-          "EUR": "€4,550",
-          "GBP": "£3,890"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -1171,11 +1075,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Pasaporte de garantía internacional de por vida en implantes",
           "Traslados privados VIP Mercedes (Aeropuerto - Clínica - Hotel)"
         ],
-        "price": {
-          "USD": "$1,490",
-          "EUR": "€1,350",
-          "GBP": "£1,190"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Sobredentadura Snap-On con 4 Implantes (Superior o Inferior)",
@@ -1190,11 +1090,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Diagnóstico 3D CT, prótesis provisional y kit quirúrgico",
           "Traslados VIP aeropuerto + Hotel céntrico de 4 estrellas"
         ],
-        "price": {
-          "USD": "$2,350",
-          "EUR": "€2,150",
-          "GBP": "£1,890"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Sobredentadura sobre Barra de Titanio CAD/CAM con 4 Implantes",
@@ -1209,11 +1105,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Tomografía 3D CT, guía quirúrgica y anestesia local",
           "Chófer privado VIP Mercedes + Hotel de 4 estrellas"
         ],
-        "price": {
-          "USD": "$3,200",
-          "EUR": "€2,890",
-          "GBP": "£2,550"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Paquete Straumann: Sobredentadura Locator con 4 Implantes",
@@ -1228,11 +1120,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Kit quirúrgico estéril, diagnóstico 3D CT y medicamentos",
           "Traslados VIP aeropuerto + Hotel céntrico de 4 estrellas"
         ],
-        "price": {
-          "USD": "$3,650",
-          "EUR": "€3,350",
-          "GBP": "£2,890"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Paquete Nobel Biocare: Prótesis sobre Barra con 4 Implantes",
@@ -1247,11 +1135,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Planificación quirúrgica 3D por ordenador y sedación médica",
           "Traslados VIP Mercedes + Alojamiento en hotel de 5 estrellas"
         ],
-        "price": {
-          "USD": "$4,450",
-          "EUR": "€4,050",
-          "GBP": "£3,490"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Rehabilitación Completa de Ambos Maxilares (Superior e Inferior)",
@@ -1267,11 +1151,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Pasaporte de garantía de por vida",
           "Chófer VIP Mercedes + Hotel de lujo 5 estrellas"
         ],
-        "price": {
-          "USD": "$4,950",
-          "EUR": "€4,550",
-          "GBP": "£3,890"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -1430,11 +1310,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Passaporte de garantia internacional vitalícia nos implantes",
           "Transfers VIP Mercedes (Aeroporto - Clínica - Hotel) incluídos"
         ],
-        "price": {
-          "USD": "$1,490",
-          "EUR": "€1,350",
-          "GBP": "£1,190"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Sobredentadura Snap-On com 4 Implantes (Superior ou Inferior)",
@@ -1449,11 +1325,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Tomografia 3D CT de alta resolução e prótese provisória",
           "Transfers VIP do aeroporto + Hotel de 4 estrelas no centro"
         ],
-        "price": {
-          "USD": "$2,350",
-          "EUR": "€2,150",
-          "GBP": "£1,890"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Sobredentadura sobre Barra de Titânio CAD/CAM com 4 Implantes",
@@ -1468,11 +1340,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Tomografia 3D CT, guia cirúrgico e anestesia local",
           "Motorista privado VIP Mercedes + Hotel de 4 estrelas"
         ],
-        "price": {
-          "USD": "$3,200",
-          "EUR": "€2,890",
-          "GBP": "£2,550"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Pacote Straumann: Sobredentadura Locator com 4 Implantes",
@@ -1487,11 +1355,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Kit cirúrgico estéril, diagnóstico 3D CT e medicamentos",
           "Transfers VIP do aeroporto + Hotel de 4 estrelas no centro"
         ],
-        "price": {
-          "USD": "$3,650",
-          "EUR": "€3,350",
-          "GBP": "£2,890"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Pacote Nobel Biocare: Prótese sobre Barra com 4 Implantes",
@@ -1506,11 +1370,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Planeamento cirúrgico digital 3D e sedação médica",
           "Transfers VIP Mercedes + Hotel de 5 estrelas"
         ],
-        "price": {
-          "USD": "$4,450",
-          "EUR": "€4,050",
-          "GBP": "£3,490"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Reabilitação Completa de Ambos os Maxilares (Superior e Inferior)",
@@ -1526,11 +1386,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Passaporte de garantia vitalícia",
           "Motorista VIP Mercedes + Hotel de luxo de 5 estrelas"
         ],
-        "price": {
-          "USD": "$4,950",
-          "EUR": "€4,550",
-          "GBP": "£3,890"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -1689,11 +1545,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Пожизненный международный гарантийный паспорт на импланты",
           "Индивидуальный VIP трансфер Mercedes (Аэропорт - Клиника - Отель)"
         ],
-        "price": {
-          "USD": "$1,490",
-          "EUR": "€1,350",
-          "GBP": "£1,190"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Съемный протез на 4 имплантах на кнопках (Верхняя или Нижняя челюсть)",
@@ -1708,11 +1560,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "3D КТ диагностика, временный протез и полный хирургический набор",
           "VIP трансферы из аэропорта + Отель 4 звезды в центре"
         ],
-        "price": {
-          "USD": "$2,350",
-          "EUR": "€2,150",
-          "GBP": "£1,890"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Балочный протез CAD/CAM на 4 имплантах",
@@ -1727,11 +1575,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Полная 3D КТ диагностика, навигационный шаблон и анестезия",
           "Личный водитель VIP Mercedes + Проживание в отеле 4 звезды"
         ],
-        "price": {
-          "USD": "$3,200",
-          "EUR": "€2,890",
-          "GBP": "£2,550"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Пакет Straumann: Протез Locator на 4 имплантах",
@@ -1746,11 +1590,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Стерильный операционный набор, 3D КТ и медикаменты",
           "VIP трансферы из аэропорта + Отель 4 звезды в центре"
         ],
-        "price": {
-          "USD": "$3,650",
-          "EUR": "€3,350",
-          "GBP": "£2,890"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Пакет Nobel Biocare: Балочный протез на 4 имплантах",
@@ -1765,11 +1605,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "3D компьютерное планирование операции и поддержка седации",
           "VIP Mercedes трансфер + Проживание в отеле 5 звезд"
         ],
-        "price": {
-          "USD": "$4,450",
-          "EUR": "€4,050",
-          "GBP": "£3,490"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Комплексный пакет на обе челюсти (Верхняя + Нижняя челюсть)",
@@ -1785,11 +1621,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Пожизненный международный гарантийный паспорт",
           "VIP Mercedes трансфер + 5-звездочный отель люкс"
         ],
-        "price": {
-          "USD": "$4,950",
-          "EUR": "€4,550",
-          "GBP": "£3,890"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -2067,9 +1899,9 @@ export default function ImplantSupportedDenturesDetailView() {
 
                 <div className={styles.pkgFooter}>
                   <div className={styles.pkgPriceRow}>
-                    <span className={styles.pkgPriceLabel}>{d.priceLabel}</span>
-                    <strong className={styles.pkgPriceValue}>
-                      {pkg.price[currency]}
+                    <span className={styles.pkgPriceLabel}>{locale === 'tr' ? 'VIP Paket Kapsamı' : 'VIP All-Inclusive'}</span>
+                    <strong className={styles.pkgPriceValue} style={{ fontSize: '0.95rem', color: '#059669', fontWeight: '700' }}>
+                      {locale === 'tr' ? 'Kişiye Özel Fiyat Teklifi' : 'Personalized VIP Quote'}
                     </strong>
                   </div>
 

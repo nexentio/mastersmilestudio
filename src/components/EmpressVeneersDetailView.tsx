@@ -58,7 +58,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>5 to 7 days in Antalya.</strong> 3D digital impressions, micro-preparation, bespoke master ceramist layering of IPS Empress ceramic, and permanent adhesive cementation are completed during 1 visit.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel once to Antalya. Your complete smile makeover is designed and permanently placed during this single trip.",
     "recoveryTime": "<strong>24 to 48 hours adaptation.</strong> Minimally invasive preparation ensures fast tissue healing and comfortable bite adaptation immediately.",
-    "priceEstimate": "<strong>IPS Empress Veneer prices start at £230 / €260 / $285 per tooth.</strong> All-inclusive smile makeover packages (8, 16, or 20 veneers) include 3D Digital Smile Design, 4/5-star hotel stay, and VIP Mercedes transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "Single IPS Empress Veneer",
@@ -73,11 +73,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "Dedicated patient coordinator"
         ],
-        "price": {
-          "USD": "$285",
-          "EUR": "€260",
-          "GBP": "£230"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "8-Unit Empress Smile Line Makeover",
@@ -93,11 +89,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Airport & Clinic Transfers",
           "10-Year Comprehensive Warranty against chipping or debonding"
         ],
-        "price": {
-          "USD": "$2,190",
-          "EUR": "€1,990",
-          "GBP": "£1,750"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "16-Unit Full Empress Smile Makeover",
@@ -113,11 +105,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Custom night guard & post-op care kit",
           "10-Year Clinical Warranty"
         ],
-        "price": {
-          "USD": "$4,250",
-          "EUR": "€3,850",
-          "GBP": "£3,390"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20-Unit Full Hollywood Empress Makeover",
@@ -131,11 +119,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Chauffeur for all transfers",
           "Lifetime international warranty & dental passport"
         ],
-        "price": {
-          "USD": "$5,190",
-          "EUR": "€4,750",
-          "GBP": "£4,150"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -174,7 +158,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>5 to 7 days in Antalya.</strong> 3D digital impressions, micro-preparation, bespoke master ceramist layering of IPS Empress ceramic, and permanent adhesive cementation are completed during 1 visit.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel once to Antalya. Your complete smile makeover is designed and permanently placed during this single trip.",
     "recoveryTime": "<strong>24 to 48 hours adaptation.</strong> Minimally invasive preparation ensures fast tissue healing and comfortable bite adaptation immediately.",
-    "priceEstimate": "<strong>IPS Empress Veneer prices start at £230 / €260 / $285 per tooth.</strong> All-inclusive smile makeover packages (8, 16, or 20 veneers) include 3D Digital Smile Design, 4/5-star hotel stay, and VIP Mercedes transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "Single IPS Empress Veneer",
@@ -189,11 +173,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "Dedicated patient coordinator"
         ],
-        "price": {
-          "USD": "$285",
-          "EUR": "€260",
-          "GBP": "£230"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "8-Unit Empress Smile Line Makeover",
@@ -209,11 +189,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Airport & Clinic Transfers",
           "10-Year Comprehensive Warranty against chipping or debonding"
         ],
-        "price": {
-          "USD": "$2,190",
-          "EUR": "€1,990",
-          "GBP": "£1,750"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "16-Unit Full Empress Smile Makeover",
@@ -229,11 +205,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Custom night guard & post-op care kit",
           "10-Year Clinical Warranty"
         ],
-        "price": {
-          "USD": "$4,250",
-          "EUR": "€3,850",
-          "GBP": "£3,390"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20-Unit Full Hollywood Empress Makeover",
@@ -247,11 +219,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Chauffeur for all transfers",
           "Lifetime international warranty & dental passport"
         ],
-        "price": {
-          "USD": "$5,190",
-          "EUR": "€4,750",
-          "GBP": "£4,150"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -290,7 +258,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>5 to 7 days in Antalya.</strong> 3D digital impressions, micro-preparation, bespoke master ceramist layering of IPS Empress ceramic, and permanent adhesive cementation are completed during 1 visit.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel once to Antalya. Your complete smile makeover is designed and permanently placed during this single trip.",
     "recoveryTime": "<strong>24 to 48 hours adaptation.</strong> Minimally invasive preparation ensures fast tissue healing and comfortable bite adaptation immediately.",
-    "priceEstimate": "<strong>IPS Empress Veneer prices start at £230 / €260 / $285 per tooth.</strong> All-inclusive smile makeover packages (8, 16, or 20 veneers) include 3D Digital Smile Design, 4/5-star hotel stay, and VIP Mercedes transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "Single IPS Empress Veneer",
@@ -305,11 +273,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "Dedicated patient coordinator"
         ],
-        "price": {
-          "USD": "$285",
-          "EUR": "€260",
-          "GBP": "£230"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "8-Unit Empress Smile Line Makeover",
@@ -325,11 +289,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Airport & Clinic Transfers",
           "10-Year Comprehensive Warranty against chipping or debonding"
         ],
-        "price": {
-          "USD": "$2,190",
-          "EUR": "€1,990",
-          "GBP": "£1,750"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "16-Unit Full Empress Smile Makeover",
@@ -345,11 +305,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Custom night guard & post-op care kit",
           "10-Year Clinical Warranty"
         ],
-        "price": {
-          "USD": "$4,250",
-          "EUR": "€3,850",
-          "GBP": "£3,390"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20-Unit Full Hollywood Empress Makeover",
@@ -363,11 +319,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Chauffeur for all transfers",
           "Lifetime international warranty & dental passport"
         ],
-        "price": {
-          "USD": "$5,190",
-          "EUR": "€4,750",
-          "GBP": "£4,150"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -406,7 +358,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>5 to 7 days in Antalya.</strong> 3D digital impressions, micro-preparation, bespoke master ceramist layering of IPS Empress ceramic, and permanent adhesive cementation are completed during 1 visit.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel once to Antalya. Your complete smile makeover is designed and permanently placed during this single trip.",
     "recoveryTime": "<strong>24 to 48 hours adaptation.</strong> Minimally invasive preparation ensures fast tissue healing and comfortable bite adaptation immediately.",
-    "priceEstimate": "<strong>IPS Empress Veneer prices start at £230 / €260 / $285 per tooth.</strong> All-inclusive smile makeover packages (8, 16, or 20 veneers) include 3D Digital Smile Design, 4/5-star hotel stay, and VIP Mercedes transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "Single IPS Empress Veneer",
@@ -421,11 +373,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "Dedicated patient coordinator"
         ],
-        "price": {
-          "USD": "$285",
-          "EUR": "€260",
-          "GBP": "£230"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "8-Unit Empress Smile Line Makeover",
@@ -441,11 +389,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Airport & Clinic Transfers",
           "10-Year Comprehensive Warranty against chipping or debonding"
         ],
-        "price": {
-          "USD": "$2,190",
-          "EUR": "€1,990",
-          "GBP": "£1,750"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "16-Unit Full Empress Smile Makeover",
@@ -461,11 +405,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Custom night guard & post-op care kit",
           "10-Year Clinical Warranty"
         ],
-        "price": {
-          "USD": "$4,250",
-          "EUR": "€3,850",
-          "GBP": "£3,390"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20-Unit Full Hollywood Empress Makeover",
@@ -479,11 +419,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Chauffeur for all transfers",
           "Lifetime international warranty & dental passport"
         ],
-        "price": {
-          "USD": "$5,190",
-          "EUR": "€4,750",
-          "GBP": "£4,150"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -522,7 +458,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>5 to 7 days in Antalya.</strong> 3D digital impressions, micro-preparation, bespoke master ceramist layering of IPS Empress ceramic, and permanent adhesive cementation are completed during 1 visit.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel once to Antalya. Your complete smile makeover is designed and permanently placed during this single trip.",
     "recoveryTime": "<strong>24 to 48 hours adaptation.</strong> Minimally invasive preparation ensures fast tissue healing and comfortable bite adaptation immediately.",
-    "priceEstimate": "<strong>IPS Empress Veneer prices start at £230 / €260 / $285 per tooth.</strong> All-inclusive smile makeover packages (8, 16, or 20 veneers) include 3D Digital Smile Design, 4/5-star hotel stay, and VIP Mercedes transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "Single IPS Empress Veneer",
@@ -537,11 +473,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "Dedicated patient coordinator"
         ],
-        "price": {
-          "USD": "$285",
-          "EUR": "€260",
-          "GBP": "£230"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "8-Unit Empress Smile Line Makeover",
@@ -557,11 +489,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Airport & Clinic Transfers",
           "10-Year Comprehensive Warranty against chipping or debonding"
         ],
-        "price": {
-          "USD": "$2,190",
-          "EUR": "€1,990",
-          "GBP": "£1,750"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "16-Unit Full Empress Smile Makeover",
@@ -577,11 +505,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Custom night guard & post-op care kit",
           "10-Year Clinical Warranty"
         ],
-        "price": {
-          "USD": "$4,250",
-          "EUR": "€3,850",
-          "GBP": "£3,390"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20-Unit Full Hollywood Empress Makeover",
@@ -595,11 +519,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Chauffeur for all transfers",
           "Lifetime international warranty & dental passport"
         ],
-        "price": {
-          "USD": "$5,190",
-          "EUR": "€4,750",
-          "GBP": "£4,150"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -638,7 +558,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>5 to 7 days in Antalya.</strong> 3D digital impressions, micro-preparation, bespoke master ceramist layering of IPS Empress ceramic, and permanent adhesive cementation are completed during 1 visit.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel once to Antalya. Your complete smile makeover is designed and permanently placed during this single trip.",
     "recoveryTime": "<strong>24 to 48 hours adaptation.</strong> Minimally invasive preparation ensures fast tissue healing and comfortable bite adaptation immediately.",
-    "priceEstimate": "<strong>IPS Empress Veneer prices start at £230 / €260 / $285 per tooth.</strong> All-inclusive smile makeover packages (8, 16, or 20 veneers) include 3D Digital Smile Design, 4/5-star hotel stay, and VIP Mercedes transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "Single IPS Empress Veneer",
@@ -653,11 +573,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "Dedicated patient coordinator"
         ],
-        "price": {
-          "USD": "$285",
-          "EUR": "€260",
-          "GBP": "£230"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "8-Unit Empress Smile Line Makeover",
@@ -673,11 +589,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Airport & Clinic Transfers",
           "10-Year Comprehensive Warranty against chipping or debonding"
         ],
-        "price": {
-          "USD": "$2,190",
-          "EUR": "€1,990",
-          "GBP": "£1,750"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "16-Unit Full Empress Smile Makeover",
@@ -693,11 +605,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Custom night guard & post-op care kit",
           "10-Year Clinical Warranty"
         ],
-        "price": {
-          "USD": "$4,250",
-          "EUR": "€3,850",
-          "GBP": "£3,390"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20-Unit Full Hollywood Empress Makeover",
@@ -711,11 +619,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Chauffeur for all transfers",
           "Lifetime international warranty & dental passport"
         ],
-        "price": {
-          "USD": "$5,190",
-          "EUR": "€4,750",
-          "GBP": "£4,150"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -754,7 +658,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>5 to 7 days in Antalya.</strong> 3D digital impressions, micro-preparation, bespoke master ceramist layering of IPS Empress ceramic, and permanent adhesive cementation are completed during 1 visit.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel once to Antalya. Your complete smile makeover is designed and permanently placed during this single trip.",
     "recoveryTime": "<strong>24 to 48 hours adaptation.</strong> Minimally invasive preparation ensures fast tissue healing and comfortable bite adaptation immediately.",
-    "priceEstimate": "<strong>IPS Empress Veneer prices start at £230 / €260 / $285 per tooth.</strong> All-inclusive smile makeover packages (8, 16, or 20 veneers) include 3D Digital Smile Design, 4/5-star hotel stay, and VIP Mercedes transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "Single IPS Empress Veneer",
@@ -769,11 +673,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "Dedicated patient coordinator"
         ],
-        "price": {
-          "USD": "$285",
-          "EUR": "€260",
-          "GBP": "£230"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "8-Unit Empress Smile Line Makeover",
@@ -789,11 +689,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Airport & Clinic Transfers",
           "10-Year Comprehensive Warranty against chipping or debonding"
         ],
-        "price": {
-          "USD": "$2,190",
-          "EUR": "€1,990",
-          "GBP": "£1,750"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "16-Unit Full Empress Smile Makeover",
@@ -809,11 +705,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Custom night guard & post-op care kit",
           "10-Year Clinical Warranty"
         ],
-        "price": {
-          "USD": "$4,250",
-          "EUR": "€3,850",
-          "GBP": "£3,390"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20-Unit Full Hollywood Empress Makeover",
@@ -827,11 +719,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Chauffeur for all transfers",
           "Lifetime international warranty & dental passport"
         ],
-        "price": {
-          "USD": "$5,190",
-          "EUR": "€4,750",
-          "GBP": "£4,150"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -1008,9 +896,9 @@ export default function EmpressVeneersDetailView() {
 
                 <div className={styles.pkgFooter}>
                   <div className={styles.pkgPriceRow}>
-                    <span className={styles.pkgPriceLabel}>{d.priceLabel}</span>
-                    <strong className={styles.pkgPriceValue}>
-                      {pkg.price[currency]}
+                    <span className={styles.pkgPriceLabel}>{locale === 'tr' ? 'VIP Paket Kapsamı' : 'VIP All-Inclusive'}</span>
+                    <strong className={styles.pkgPriceValue} style={{ fontSize: '0.95rem', color: '#059669', fontWeight: '700' }}>
+                      {locale === 'tr' ? 'Kişiye Özel Fiyat Teklifi' : 'Personalized VIP Quote'}
                     </strong>
                   </div>
 

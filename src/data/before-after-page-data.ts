@@ -26,7 +26,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
     items: [
       {
         id: 'allon-1',
-        image: '/before-after/all-on-six-antalya-turkey26.webp',
+        image: '/before-after/firstvisit.webp',
         alt: {
           en: 'All-on-6 dental implants before and after Antalya Turkey',
           tr: 'Antalya All-on-6 dental implant tedavisi öncesi ve sonrası',
@@ -48,7 +48,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'allon-2',
-        image: '/before-after/all-on-six-antalya-turkey25.webp',
+        image: '/before-after/firstvisit1.webp',
         alt: {
           en: 'All-on-6 dental implants transformation Antalya',
           tr: 'All-on-6 tam çene implant dönüşümü Antalya',
@@ -70,7 +70,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'allon-3',
-        image: '/before-after/all-on-4-antalya-turkey-24.webp',
+        image: '/before-after/firstvisit2.webp',
         alt: {
           en: 'All-on-4 dental implants before and after Antalya Turkey',
           tr: 'All-on-4 implant öncesi sonrası Antalya',
@@ -92,7 +92,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'allon-4',
-        image: '/before-after/all-on-4-antalya-turkey22.webp',
+        image: '/before-after/firstvisit3.webp',
         alt: {
           en: 'All on 4 dental implants smile design',
           tr: 'All-on-4 implant gülüş tasarımı',
@@ -114,7 +114,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'allon-5',
-        image: '/before-after/all-on-6-antalya-turkey23.webp',
+        image: '/before-after/firstvisit4.webp',
         alt: {
           en: 'All on 6 permanent teeth before and after',
           tr: 'All-on-6 sabit dişler öncesi ve sonrası',
@@ -136,7 +136,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'allon-6',
-        image: '/before-after/all-on-4-antalya-turkey21.webp',
+        image: '/before-after/firstvisit5.webp',
         alt: {
           en: 'All on 4 upper jaw restoration',
           tr: 'All-on-4 üst çene implant restorasyonu',
@@ -158,7 +158,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'allon-7',
-        image: '/before-after/all-on-four-antalya-turkey-27.webp',
+        image: '/before-after/firstvisit6.webp',
         alt: {
           en: 'All-on-4 dental implants full mouth makeover',
           tr: 'All-on-4 tam ağız implant dönüşümü',
@@ -180,7 +180,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'allon-8',
-        image: '/before-after/All-on-4-antalya-turkey-20.webp',
+        image: '/before-after/firstvisit7.webp',
         alt: {
           en: 'All On 4 before and after in Turkey',
           tr: 'Türkiye All-on-4 öncesi ve sonrası',
@@ -202,7 +202,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'allon-9',
-        image: '/before-after/All-on-4-antalya-turkey-19.webp',
+        image: '/before-after/firstvisit.webp',
         alt: {
           en: 'All on 4 dental implants natural result',
           tr: 'All-on-4 implant doğal görünüm',
@@ -224,7 +224,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'allon-10',
-        image: '/before-after/All-on-6-antalya-Turkey-18.webp',
+        image: '/before-after/firstvisit1.webp',
         alt: {
           en: 'All on 6 dental implants surgery result',
           tr: 'All-on-6 implant cerrahi sonucu',
@@ -246,7 +246,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'allon-11',
-        image: '/before-after/13.webp',
+        image: '/before-after/firstvisit2.webp',
         alt: {
           en: 'All-on-4 implants transformation',
           tr: 'All-on-4 implant dönüşümü',
@@ -268,7 +268,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'allon-12',
-        image: '/before-after/5.webp',
+        image: '/before-after/firstvisit3.webp',
         alt: {
           en: 'All-on-6 before and after Antalya',
           tr: 'Antalya All-on-6 öncesi ve sonrası',
@@ -290,7 +290,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'allon-13',
-        image: '/before-after/4.webp',
+        image: '/before-after/firstvisit4.webp',
         alt: {
           en: 'All-on-4 implant bridge',
           tr: 'All-on-4 implant köprüsü',
@@ -312,7 +312,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'allon-14',
-        image: '/before-after/2.webp',
+        image: '/before-after/firstvisit5.webp',
         alt: {
           en: 'All-on-6 smile makeover',
           tr: 'All-on-6 gülüş tasarımı',
@@ -334,7 +334,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'allon-15',
-        image: '/before-after/10.webp',
+        image: '/before-after/firstvisit6.webp',
         alt: {
           en: 'Turkey teeth before and after photos',
           tr: 'Türkiye diş tedavisi öncesi sonrası fotoğrafları',
@@ -356,7 +356,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'allon-16',
-        image: '/before-after/9.webp',
+        image: '/before-after/firstvisit7.webp',
         alt: {
           en: 'All on 4 dental implants pictures',
           tr: 'All-on-4 dental implant sonuç fotoğrafları',
@@ -378,7 +378,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'allon-17',
-        image: '/before-after/8.webp',
+        image: '/before-after/firstvisit.webp',
         alt: {
           en: 'All on 6 dental implants before after',
           tr: 'All-on-6 implant öncesi sonrası',
@@ -400,7 +400,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'allon-18',
-        image: '/before-after/7.webp',
+        image: '/before-after/firstvisit1.webp',
         alt: {
           en: 'All on four dental implants reviews case',
           tr: 'All-on-4 implant vaka çalışması',
@@ -422,7 +422,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'allon-19',
-        image: '/before-after/6-1.webp',
+        image: '/before-after/firstvisit2.webp',
         alt: {
           en: 'All on 6 dental implants Antalya clinic',
           tr: 'Antalya All-on-6 implant kliniği',
@@ -444,7 +444,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'allon-20',
-        image: '/before-after/3.webp',
+        image: '/before-after/firstvisit3.webp',
         alt: {
           en: 'All on 6 smile transformation Turkey',
           tr: 'Türkiye All-on-6 gülüş dönüşümü',
@@ -466,7 +466,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'allon-21',
-        image: '/before-after/17.webp',
+        image: '/before-after/firstvisit4.webp',
         alt: {
           en: 'All On 4 Before After Antalya Turkey',
           tr: 'All-on-4 Öncesi Sonrası Antalya Türkiye',
@@ -488,7 +488,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'allon-22',
-        image: '/before-after/16.webp',
+        image: '/before-after/firstvisit5.webp',
         alt: {
           en: 'All on 6 dental implants natural look',
           tr: 'All-on-6 implant doğal diş görünümü',
@@ -510,7 +510,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'allon-23',
-        image: '/before-after/15.webp',
+        image: '/before-after/firstvisit6.webp',
         alt: {
           en: 'All On 4 Before After Antalya Case',
           tr: 'All-on-4 Öncesi Sonrası Vaka',
@@ -532,7 +532,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'allon-24',
-        image: '/before-after/14.webp',
+        image: '/before-after/firstvisit7.webp',
         alt: {
           en: 'All on 6 dental implants before and after',
           tr: 'All-on-6 dental implant öncesi ve sonrası',
@@ -554,7 +554,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'allon-25',
-        image: '/before-after/12-1.webp',
+        image: '/before-after/firstvisit.webp',
         alt: {
           en: 'All on 4 dental implants pictures',
           tr: 'All-on-4 implant tedavi görselleri',
@@ -576,7 +576,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'allon-26',
-        image: '/before-after/11.webp',
+        image: '/before-after/firstvisit1.webp',
         alt: {
           en: 'All on 6 dental implants before after turkey',
           tr: 'All-on-6 implant Türkiye öncesi ve sonrası',
@@ -612,7 +612,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
     items: [
       {
         id: 'crown-1',
-        image: '/before-after/hollywood-smile-antalya-turkey-10.webp',
+        image: '/before-after/firstvisit2.webp',
         alt: {
           en: 'Zirconium Crown Before After Antalya Turkey',
           tr: 'Zirkonyum Kaplama Öncesi Sonrası Antalya Türkiye',
@@ -634,7 +634,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'crown-2',
-        image: '/before-after/hollywood-smile-antalya-turkey-9.webp',
+        image: '/before-after/firstvisit3.webp',
         alt: {
           en: 'Turkish crowns - Zirconium Crown Before After Antalya Turkey',
           tr: 'Zirkonyum diş kaplama öncesi ve sonrası',
@@ -656,7 +656,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'crown-3',
-        image: '/before-after/hollywood-smile-antalya-turkey-8.webp',
+        image: '/before-after/firstvisit4.webp',
         alt: {
           en: 'Zirconium Crown Before After Antalya Turkey',
           tr: 'Zirkonyum kron öncesi ve sonrası',
@@ -678,7 +678,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'crown-4',
-        image: '/before-after/hollywood-smile-antalya-turkey-7.webp',
+        image: '/before-after/firstvisit5.webp',
         alt: {
           en: 'Affordable dental crowns near me Antalya',
           tr: 'Antalya zirkonyum kaplama estetiği',
@@ -700,7 +700,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'crown-5',
-        image: '/before-after/hollywood-smile-antalya-turkey-5.webp',
+        image: '/before-after/firstvisit6.webp',
         alt: {
           en: 'Zirconium Crown Before After Antalya Turkey',
           tr: 'Zirkonyum kaplama gülüş dönüşümü',
@@ -722,7 +722,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'crown-6',
-        image: '/before-after/6.webp',
+        image: '/before-after/firstvisit7.webp',
         alt: {
           en: 'Dental crowns before and after result',
           tr: 'Diş kaplamaları öncesi ve sonrası sonucu',
@@ -744,7 +744,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'crown-7',
-        image: '/before-after/hollywood-smile-antalya-turkey-2.webp',
+        image: '/before-after/firstvisit.webp',
         alt: {
           en: 'Antalya dental clinic turkey dentist crowns',
           tr: 'Antalya zirkonyum kaplama klinik uygulaması',
@@ -766,7 +766,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'crown-8',
-        image: '/before-after/hollywood-smile-antalya-turkey-3.webp',
+        image: '/before-after/firstvisit1.webp',
         alt: {
           en: 'Front teeth crowns before and after',
           tr: 'Ön diş kaplama öncesi ve sonrası',
@@ -788,7 +788,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'crown-9',
-        image: '/before-after/hollywood-smile-antalya-turkey-4.webp',
+        image: '/before-after/firstvisit2.webp',
         alt: {
           en: 'Dental crowns before and after transformation',
           tr: 'Diş kaplamaları dönüşüm sonucu',
@@ -810,7 +810,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'crown-10',
-        image: '/before-after/1.webp',
+        image: '/before-after/firstvisit3.webp',
         alt: {
           en: 'Tooth crown before and after',
           tr: 'Diş kaplama öncesi ve sonrası',
@@ -846,7 +846,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
     items: [
       {
         id: 'veneer-1',
-        image: '/before-after/Laminate-Veneer-Antalya-Turkey-18.webp',
+        image: '/before-after/firstvisit4.webp',
         alt: {
           en: 'Veneer teeth near me Antalya',
           tr: 'Antalya lamine diş kaplama',
@@ -868,7 +868,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'veneer-2',
-        image: '/before-after/Laminate-Veneer-Antalya-Turkey-17.webp',
+        image: '/before-after/firstvisit5.webp',
         alt: {
           en: 'Dental veneers before and after transformation',
           tr: 'Lamine kaplama öncesi ve sonrası',
@@ -890,7 +890,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'veneer-3',
-        image: '/before-after/Laminate-Veneer-Antalya-Turkey-16.webp',
+        image: '/before-after/firstvisit6.webp',
         alt: {
           en: 'Veneers turkey antalya result',
           tr: 'Türkiye Antalya lamine diş sonucu',
@@ -912,7 +912,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'veneer-4',
-        image: '/before-after/Laminate-Veneer-Antalya-Turkey-15.webp',
+        image: '/before-after/firstvisit7.webp',
         alt: {
           en: '4 veneers on front teeth before and after',
           tr: 'Ön 4 dişe lamine veneer öncesi sonrası',
@@ -934,7 +934,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'veneer-5',
-        image: '/before-after/Laminate-Veneer-Antalya-Turkey-14.webp',
+        image: '/before-after/firstvisit.webp',
         alt: {
           en: 'Turkey teeth before and after veneers',
           tr: 'Türkiye diş estetiği lamine öncesi sonrası',
@@ -956,7 +956,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'veneer-6',
-        image: '/before-after/Laminate-Veneer-Antalya-Turkey-13.webp',
+        image: '/before-after/firstvisit1.webp',
         alt: {
           en: 'Dental veneers near me in Antalya',
           tr: 'Antalya estetik lamine diş kaplama',
@@ -978,7 +978,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'veneer-7',
-        image: '/before-after/Laminate-Veneer-Antalya-Turkey-12.webp',
+        image: '/before-after/firstvisit2.webp',
         alt: {
           en: 'Dental veneers transformation',
           tr: 'Lamine diş dönüşümü',
@@ -1000,7 +1000,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'veneer-8',
-        image: '/before-after/Laminate-Veneer-Antalya-Turkey-11.webp',
+        image: '/before-after/firstvisit3.webp',
         alt: {
           en: 'Laminate Veneer Before After Antalya Turkey',
           tr: 'Lamine Veneer Öncesi Sonrası Antalya Türkiye',
@@ -1022,7 +1022,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'veneer-9',
-        image: '/before-after/Laminate-Veneer-Before-After-Antalya-Turkey-4.webp',
+        image: '/before-after/firstvisit4.webp',
         alt: {
           en: 'Affordable veneers in Antalya',
           tr: 'Antalya lamine diş tedavisi',
@@ -1044,7 +1044,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'veneer-10',
-        image: '/before-after/Laminate-Veneer-Before-After-Antalya-Turkey-3.webp',
+        image: '/before-after/firstvisit5.webp',
         alt: {
           en: 'Veneers before and after photos',
           tr: 'Lamine diş öncesi sonrası fotoğrafları',
@@ -1066,7 +1066,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'veneer-11',
-        image: '/before-after/Laminate-Veneer-Before-After-Antalya-Turkey-1.webp',
+        image: '/before-after/firstvisit6.webp',
         alt: {
           en: 'Where can I get veneers near me',
           tr: 'Lamine kaplama öncesi ve sonrası',
@@ -1088,7 +1088,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'veneer-12',
-        image: '/before-after/Laminate-Veneer-Before-After-Antalya-Turkey-10.webp',
+        image: '/before-after/firstvisit7.webp',
         alt: {
           en: 'Emax veneers Before After Antalya Turkey',
           tr: 'E-Max lamine öncesi ve sonrası Antalya Türkiye',
@@ -1110,7 +1110,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'veneer-13',
-        image: '/before-after/Laminate-Veneer-Before-After-Antalya-Turkey-9.webp',
+        image: '/before-after/firstvisit.webp',
         alt: {
           en: 'Best place to get veneers in Turkey',
           tr: 'Antalya lamine diş hekimliği',
@@ -1132,7 +1132,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'veneer-14',
-        image: '/before-after/Laminate-Veneer-Before-After-Antalya-Turkey-8.webp',
+        image: '/before-after/firstvisit1.webp',
         alt: {
           en: 'Emax veneers turkey result',
           tr: 'E-Max lamine diş sonucu Türkiye',
@@ -1154,7 +1154,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'veneer-15',
-        image: '/before-after/Laminate-Veneer-Before-After-Antalya-Turkey-7.webp',
+        image: '/before-after/firstvisit2.webp',
         alt: {
           en: 'Veneers antalya turkey clinic',
           tr: 'Antalya lamine diş kliniği',
@@ -1176,7 +1176,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'veneer-16',
-        image: '/before-after/Laminate-Veneer-Before-After-Antalya-Turkey-6.webp',
+        image: '/before-after/firstvisit3.webp',
         alt: {
           en: 'Veneer teeth before after',
           tr: 'Lamine diş öncesi sonrası',
@@ -1198,7 +1198,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'veneer-17',
-        image: '/before-after/Laminate-Veneer-Before-After-Antalya-Turkey-5.webp',
+        image: '/before-after/firstvisit4.webp',
         alt: {
           en: 'Veneers turkey antalya before after',
           tr: 'Türkiye Antalya lamine diş öncesi sonrası',
@@ -1220,7 +1220,7 @@ export const BEFORE_AFTER_PAGE_DATA: BeforeAfterCategory[] = [
       },
       {
         id: 'veneer-18',
-        image: '/before-after/Laminate-Veneer-Before-After-Antalya-Turkey-2-.webp',
+        image: '/before-after/firstvisit5.webp',
         alt: {
           en: 'Veneer on one tooth before after',
           tr: 'Tek dişe lamine kaplama öncesi ve sonrası',

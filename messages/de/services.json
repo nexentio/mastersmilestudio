@@ -22,6 +22,10 @@
   "doctorTulayTitle": "Mund-, Kiefer- und Gesichtschirurgin",
   "doctorAliKemalTitle": "Zahnarzt für Ästhetik",
   "doctorAbdullahTitle": "Endodontie & Zahnerhaltung",
+  "hollywoodSmile": {
+    "title": "Hollywood Smile",
+    "description": "Makellose weiße Symmetrie und bezaubernde Ästhetik nach dem Goldenen Schnitt."
+  },
   "smileDesign": {
     "title": "Smile Design",
     "description": "Individuelle digitale Lächeln-Architektur nach dem Goldenen Schnitt."
@@ -106,6 +110,10 @@
     "surgery": {
       "title": "MUND-, KIEFER- UND GESICHTSCHIRURGIE",
       "description": "Chirurgische Expertise bei Weisheitszahnentfernungen, Zysten und Knochenaufbau."
+    },
+    "hollywoodSmile": {
+      "title": "HOLLYWOOD SMILE",
+      "description": "Maßgeschneiderte Schweizer E-Max-Laminate oder deutsche Zirkon-Kronen für ein strahlendes Promi-Lächeln."
     }
   },
   "rightTreatment": {

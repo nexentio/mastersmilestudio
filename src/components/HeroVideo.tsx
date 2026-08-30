@@ -123,7 +123,11 @@ export default function HeroVideo() {
         poster="/hero-video-poster.webp"
         className={styles.videoDesktop}
         aria-hidden="true"
-        style={{ opacity: desktopReady ? 1 : 0.95 }}
+        onPlaying={() => setDesktopReady(true)}
+        onTimeUpdate={(e) => {
+          if (e.currentTarget.currentTime > 0.05) setDesktopReady(true);
+        }}
+        style={{ opacity: desktopReady ? 1 : 0 }}
       >
         <source src="/mss-klinik-hero.mp4" type="video/mp4" />
         <source src="/mss-klinik-hero.webm" type="video/webm" />
@@ -141,7 +145,11 @@ export default function HeroVideo() {
         poster="/hero-video-poster-mobile.webp"
         className={styles.videoMobile}
         aria-hidden="true"
-        style={{ opacity: mobileReady ? 1 : 0.95 }}
+        onPlaying={() => setMobileReady(true)}
+        onTimeUpdate={(e) => {
+          if (e.currentTarget.currentTime > 0.05) setMobileReady(true);
+        }}
+        style={{ opacity: mobileReady ? 1 : 0 }}
       >
         <source src="/mastersmilestudio-clinic-hero-video.mp4" type="video/mp4" />
       </video>

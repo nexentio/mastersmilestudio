@@ -22,6 +22,10 @@
   "doctorTulayTitle": "Cirujana Oral y Maxilofacial",
   "doctorAliKemalTitle": "Odontólogo Especialista",
   "doctorAbdullahTitle": "Endodoncia y Odontología Restauradora",
+  "hollywoodSmile": {
+    "title": "Hollywood Smile",
+    "description": "Simetría perfecta, blancura radiante y deslumbrante estética de Proporción Áurea."
+  },
   "smileDesign": {
     "title": "Diseño de Sonrisa",
     "description": "Diseño digital de sonrisa personalizado según la proporción áurea facial."
@@ -106,6 +110,10 @@
     "surgery": {
       "title": "CIRUGÍA ORAL Y MAXILOFACIAL",
       "description": "Especialización quirúrgica en extracciones de muelas del juicio, quistes e injertos óseos."
+    },
+    "hollywoodSmile": {
+      "title": "HOLLYWOOD SMILE",
+      "description": "Carillas suizas E-Max o coronas de circonio alemán a medida de la Proporción Áurea para una sonrisa de celebridad."
     }
   },
   "rightTreatment": {

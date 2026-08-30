@@ -58,7 +58,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>5 to 7 days in Antalya.</strong> During this single trip, 3D intraoral digital scanning, minimally invasive tooth preparation (0.3–0.5 mm), CAD/CAM milling of IPS e.max veneers, and final resin bonding are completed with microscopic precision.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Antalya once. Your complete smile makeover (from 4 to 20 laminate veneers) is designed, fabricated, and permanently placed during this single visit.",
     "recoveryTime": "<strong>24 to 48 hours adaptation.</strong> Because preparation is strictly confined to the enamel surface, there is virtually zero downtime or discomfort. You can immediately resume eating and normal activities with your brand-new smile.",
-    "priceEstimate": "<strong>Porcelain Laminate Veneer prices start at £240 / €275 / $295 per tooth.</strong> All-inclusive smile makeover packages (8, 16, or 20 veneers) include 3D Digital Smile Design, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "Single Porcelain Veneer (E-Max / Vita)",
@@ -73,11 +73,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "Dedicated patient coordinator assistance"
         ],
-        "price": {
-          "USD": "$295",
-          "EUR": "€275",
-          "GBP": "£240"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "8-Unit Smile Line Makeover (Upper Arch)",
@@ -94,11 +90,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Transfers (Airport - Hotel - Clinic)",
           "10-Year warranty against veneer debonding and porcelain chipping"
         ],
-        "price": {
-          "USD": "$2,350",
-          "EUR": "€2,150",
-          "GBP": "£1,850"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "16-Unit Full Smile Makeover (8 Upper + 8 Lower)",
@@ -114,11 +106,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Professional clinical teeth whitening for non-veneered molars",
           "Comprehensive post-op care pack & custom night guard"
         ],
-        "price": {
-          "USD": "$4,550",
-          "EUR": "€4,190",
-          "GBP": "£3,600"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20-Unit Full Hollywood Smile Makeover",
@@ -133,11 +121,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Chauffeur Service for all transfers",
           "Lifetime international warranty certificate & dental passport"
         ],
-        "price": {
-          "USD": "$5,450",
-          "EUR": "€4,990",
-          "GBP": "£4,350"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Single Lumineers (Prepless / Ultra-Thin)",
@@ -151,11 +135,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "Dedicated patient coordinator assistance"
         ],
-        "price": {
-          "USD": "$360",
-          "EUR": "€330",
-          "GBP": "£290"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Single Composite Veneer / Direct Bonding",
@@ -169,11 +149,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Multi-shade nano-hybrid resin polishing",
           "2-Year Clinical Warranty"
         ],
-        "price": {
-          "USD": "$120",
-          "EUR": "€110",
-          "GBP": "£90"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -259,7 +235,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>5 to 7 days in Antalya.</strong> During this single trip, 3D intraoral digital scanning, minimally invasive tooth preparation (0.3–0.5 mm), CAD/CAM milling of IPS e.max veneers, and final resin bonding are completed with microscopic precision.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Antalya once. Your complete smile makeover (from 4 to 20 laminate veneers) is designed, fabricated, and permanently placed during this single visit.",
     "recoveryTime": "<strong>24 to 48 hours adaptation.</strong> Because preparation is strictly confined to the enamel surface, there is virtually zero downtime or discomfort. You can immediately resume eating and normal activities with your brand-new smile.",
-    "priceEstimate": "<strong>Porcelain Laminate Veneer prices start at £240 / €275 / $295 per tooth.</strong> All-inclusive smile makeover packages (8, 16, or 20 veneers) include 3D Digital Smile Design, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "Single Porcelain Veneer (E-Max / Vita)",
@@ -274,11 +250,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "Dedicated patient coordinator assistance"
         ],
-        "price": {
-          "USD": "$295",
-          "EUR": "€275",
-          "GBP": "£240"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "8-Unit Smile Line Makeover (Upper Arch)",
@@ -295,11 +267,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Transfers (Airport - Hotel - Clinic)",
           "10-Year warranty against veneer debonding and porcelain chipping"
         ],
-        "price": {
-          "USD": "$2,350",
-          "EUR": "€2,150",
-          "GBP": "£1,850"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "16-Unit Full Smile Makeover (8 Upper + 8 Lower)",
@@ -315,11 +283,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Professional clinical teeth whitening for non-veneered molars",
           "Comprehensive post-op care pack & custom night guard"
         ],
-        "price": {
-          "USD": "$4,550",
-          "EUR": "€4,190",
-          "GBP": "£3,600"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20-Unit Full Hollywood Smile Makeover",
@@ -334,11 +298,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Chauffeur Service for all transfers",
           "Lifetime international warranty certificate & dental passport"
         ],
-        "price": {
-          "USD": "$5,450",
-          "EUR": "€4,990",
-          "GBP": "£4,350"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Single Lumineers (Prepless / Ultra-Thin)",
@@ -352,11 +312,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "Dedicated patient coordinator assistance"
         ],
-        "price": {
-          "USD": "$360",
-          "EUR": "€330",
-          "GBP": "£290"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Single Composite Veneer / Direct Bonding",
@@ -370,11 +326,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Multi-shade nano-hybrid resin polishing",
           "2-Year Clinical Warranty"
         ],
-        "price": {
-          "USD": "$120",
-          "EUR": "€110",
-          "GBP": "£90"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -460,7 +412,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>5 to 7 days in Antalya.</strong> During this single trip, 3D intraoral digital scanning, minimally invasive tooth preparation (0.3–0.5 mm), CAD/CAM milling of IPS e.max veneers, and final resin bonding are completed with microscopic precision.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Antalya once. Your complete smile makeover (from 4 to 20 laminate veneers) is designed, fabricated, and permanently placed during this single visit.",
     "recoveryTime": "<strong>24 to 48 hours adaptation.</strong> Because preparation is strictly confined to the enamel surface, there is virtually zero downtime or discomfort. You can immediately resume eating and normal activities with your brand-new smile.",
-    "priceEstimate": "<strong>Porcelain Laminate Veneer prices start at £240 / €275 / $295 per tooth.</strong> All-inclusive smile makeover packages (8, 16, or 20 veneers) include 3D Digital Smile Design, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "Single Porcelain Veneer (E-Max / Vita)",
@@ -475,11 +427,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "Dedicated patient coordinator assistance"
         ],
-        "price": {
-          "USD": "$295",
-          "EUR": "€275",
-          "GBP": "£240"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "8-Unit Smile Line Makeover (Upper Arch)",
@@ -496,11 +444,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Transfers (Airport - Hotel - Clinic)",
           "10-Year warranty against veneer debonding and porcelain chipping"
         ],
-        "price": {
-          "USD": "$2,350",
-          "EUR": "€2,150",
-          "GBP": "£1,850"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "16-Unit Full Smile Makeover (8 Upper + 8 Lower)",
@@ -516,11 +460,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Professional clinical teeth whitening for non-veneered molars",
           "Comprehensive post-op care pack & custom night guard"
         ],
-        "price": {
-          "USD": "$4,550",
-          "EUR": "€4,190",
-          "GBP": "£3,600"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20-Unit Full Hollywood Smile Makeover",
@@ -535,11 +475,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Chauffeur Service for all transfers",
           "Lifetime international warranty certificate & dental passport"
         ],
-        "price": {
-          "USD": "$5,450",
-          "EUR": "€4,990",
-          "GBP": "£4,350"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Single Lumineers (Prepless / Ultra-Thin)",
@@ -553,11 +489,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "Dedicated patient coordinator assistance"
         ],
-        "price": {
-          "USD": "$360",
-          "EUR": "€330",
-          "GBP": "£290"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Single Composite Veneer / Direct Bonding",
@@ -571,11 +503,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Multi-shade nano-hybrid resin polishing",
           "2-Year Clinical Warranty"
         ],
-        "price": {
-          "USD": "$120",
-          "EUR": "€110",
-          "GBP": "£90"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -661,7 +589,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>5 to 7 days in Antalya.</strong> During this single trip, 3D intraoral digital scanning, minimally invasive tooth preparation (0.3–0.5 mm), CAD/CAM milling of IPS e.max veneers, and final resin bonding are completed with microscopic precision.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Antalya once. Your complete smile makeover (from 4 to 20 laminate veneers) is designed, fabricated, and permanently placed during this single visit.",
     "recoveryTime": "<strong>24 to 48 hours adaptation.</strong> Because preparation is strictly confined to the enamel surface, there is virtually zero downtime or discomfort. You can immediately resume eating and normal activities with your brand-new smile.",
-    "priceEstimate": "<strong>Porcelain Laminate Veneer prices start at £240 / €275 / $295 per tooth.</strong> All-inclusive smile makeover packages (8, 16, or 20 veneers) include 3D Digital Smile Design, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "Single Porcelain Veneer (E-Max / Vita)",
@@ -676,11 +604,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "Dedicated patient coordinator assistance"
         ],
-        "price": {
-          "USD": "$295",
-          "EUR": "€275",
-          "GBP": "£240"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "8-Unit Smile Line Makeover (Upper Arch)",
@@ -697,11 +621,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Transfers (Airport - Hotel - Clinic)",
           "10-Year warranty against veneer debonding and porcelain chipping"
         ],
-        "price": {
-          "USD": "$2,350",
-          "EUR": "€2,150",
-          "GBP": "£1,850"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "16-Unit Full Smile Makeover (8 Upper + 8 Lower)",
@@ -717,11 +637,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Professional clinical teeth whitening for non-veneered molars",
           "Comprehensive post-op care pack & custom night guard"
         ],
-        "price": {
-          "USD": "$4,550",
-          "EUR": "€4,190",
-          "GBP": "£3,600"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20-Unit Full Hollywood Smile Makeover",
@@ -736,11 +652,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Chauffeur Service for all transfers",
           "Lifetime international warranty certificate & dental passport"
         ],
-        "price": {
-          "USD": "$5,450",
-          "EUR": "€4,990",
-          "GBP": "£4,350"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Single Lumineers (Prepless / Ultra-Thin)",
@@ -754,11 +666,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "Dedicated patient coordinator assistance"
         ],
-        "price": {
-          "USD": "$360",
-          "EUR": "€330",
-          "GBP": "£290"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Single Composite Veneer / Direct Bonding",
@@ -772,11 +680,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Multi-shade nano-hybrid resin polishing",
           "2-Year Clinical Warranty"
         ],
-        "price": {
-          "USD": "$120",
-          "EUR": "€110",
-          "GBP": "£90"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -862,7 +766,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>5 to 7 days in Antalya.</strong> During this single trip, 3D intraoral digital scanning, minimally invasive tooth preparation (0.3–0.5 mm), CAD/CAM milling of IPS e.max veneers, and final resin bonding are completed with microscopic precision.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Antalya once. Your complete smile makeover (from 4 to 20 laminate veneers) is designed, fabricated, and permanently placed during this single visit.",
     "recoveryTime": "<strong>24 to 48 hours adaptation.</strong> Because preparation is strictly confined to the enamel surface, there is virtually zero downtime or discomfort. You can immediately resume eating and normal activities with your brand-new smile.",
-    "priceEstimate": "<strong>Porcelain Laminate Veneer prices start at £240 / €275 / $295 per tooth.</strong> All-inclusive smile makeover packages (8, 16, or 20 veneers) include 3D Digital Smile Design, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "Single Porcelain Veneer (E-Max / Vita)",
@@ -877,11 +781,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "Dedicated patient coordinator assistance"
         ],
-        "price": {
-          "USD": "$295",
-          "EUR": "€275",
-          "GBP": "£240"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "8-Unit Smile Line Makeover (Upper Arch)",
@@ -898,11 +798,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Transfers (Airport - Hotel - Clinic)",
           "10-Year warranty against veneer debonding and porcelain chipping"
         ],
-        "price": {
-          "USD": "$2,350",
-          "EUR": "€2,150",
-          "GBP": "£1,850"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "16-Unit Full Smile Makeover (8 Upper + 8 Lower)",
@@ -918,11 +814,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Professional clinical teeth whitening for non-veneered molars",
           "Comprehensive post-op care pack & custom night guard"
         ],
-        "price": {
-          "USD": "$4,550",
-          "EUR": "€4,190",
-          "GBP": "£3,600"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20-Unit Full Hollywood Smile Makeover",
@@ -937,11 +829,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Chauffeur Service for all transfers",
           "Lifetime international warranty certificate & dental passport"
         ],
-        "price": {
-          "USD": "$5,450",
-          "EUR": "€4,990",
-          "GBP": "£4,350"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Single Lumineers (Prepless / Ultra-Thin)",
@@ -955,11 +843,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "Dedicated patient coordinator assistance"
         ],
-        "price": {
-          "USD": "$360",
-          "EUR": "€330",
-          "GBP": "£290"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Single Composite Veneer / Direct Bonding",
@@ -973,11 +857,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Multi-shade nano-hybrid resin polishing",
           "2-Year Clinical Warranty"
         ],
-        "price": {
-          "USD": "$120",
-          "EUR": "€110",
-          "GBP": "£90"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -1063,7 +943,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>5 to 7 days in Antalya.</strong> During this single trip, 3D intraoral digital scanning, minimally invasive tooth preparation (0.3–0.5 mm), CAD/CAM milling of IPS e.max veneers, and final resin bonding are completed with microscopic precision.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Antalya once. Your complete smile makeover (from 4 to 20 laminate veneers) is designed, fabricated, and permanently placed during this single visit.",
     "recoveryTime": "<strong>24 to 48 hours adaptation.</strong> Because preparation is strictly confined to the enamel surface, there is virtually zero downtime or discomfort. You can immediately resume eating and normal activities with your brand-new smile.",
-    "priceEstimate": "<strong>Porcelain Laminate Veneer prices start at £240 / €275 / $295 per tooth.</strong> All-inclusive smile makeover packages (8, 16, or 20 veneers) include 3D Digital Smile Design, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "Single Porcelain Veneer (E-Max / Vita)",
@@ -1078,11 +958,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "Dedicated patient coordinator assistance"
         ],
-        "price": {
-          "USD": "$295",
-          "EUR": "€275",
-          "GBP": "£240"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "8-Unit Smile Line Makeover (Upper Arch)",
@@ -1099,11 +975,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Transfers (Airport - Hotel - Clinic)",
           "10-Year warranty against veneer debonding and porcelain chipping"
         ],
-        "price": {
-          "USD": "$2,350",
-          "EUR": "€2,150",
-          "GBP": "£1,850"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "16-Unit Full Smile Makeover (8 Upper + 8 Lower)",
@@ -1119,11 +991,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Professional clinical teeth whitening for non-veneered molars",
           "Comprehensive post-op care pack & custom night guard"
         ],
-        "price": {
-          "USD": "$4,550",
-          "EUR": "€4,190",
-          "GBP": "£3,600"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20-Unit Full Hollywood Smile Makeover",
@@ -1138,11 +1006,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Chauffeur Service for all transfers",
           "Lifetime international warranty certificate & dental passport"
         ],
-        "price": {
-          "USD": "$5,450",
-          "EUR": "€4,990",
-          "GBP": "£4,350"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Single Lumineers (Prepless / Ultra-Thin)",
@@ -1156,11 +1020,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "Dedicated patient coordinator assistance"
         ],
-        "price": {
-          "USD": "$360",
-          "EUR": "€330",
-          "GBP": "£290"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Single Composite Veneer / Direct Bonding",
@@ -1174,11 +1034,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Multi-shade nano-hybrid resin polishing",
           "2-Year Clinical Warranty"
         ],
-        "price": {
-          "USD": "$120",
-          "EUR": "€110",
-          "GBP": "£90"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -1264,7 +1120,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>5 to 7 days in Antalya.</strong> During this single trip, 3D intraoral digital scanning, minimally invasive tooth preparation (0.3–0.5 mm), CAD/CAM milling of IPS e.max veneers, and final resin bonding are completed with microscopic precision.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Antalya once. Your complete smile makeover (from 4 to 20 laminate veneers) is designed, fabricated, and permanently placed during this single visit.",
     "recoveryTime": "<strong>24 to 48 hours adaptation.</strong> Because preparation is strictly confined to the enamel surface, there is virtually zero downtime or discomfort. You can immediately resume eating and normal activities with your brand-new smile.",
-    "priceEstimate": "<strong>Porcelain Laminate Veneer prices start at £240 / €275 / $295 per tooth.</strong> All-inclusive smile makeover packages (8, 16, or 20 veneers) include 3D Digital Smile Design, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "Single Porcelain Veneer (E-Max / Vita)",
@@ -1279,11 +1135,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "Dedicated patient coordinator assistance"
         ],
-        "price": {
-          "USD": "$295",
-          "EUR": "€275",
-          "GBP": "£240"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "8-Unit Smile Line Makeover (Upper Arch)",
@@ -1300,11 +1152,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Transfers (Airport - Hotel - Clinic)",
           "10-Year warranty against veneer debonding and porcelain chipping"
         ],
-        "price": {
-          "USD": "$2,350",
-          "EUR": "€2,150",
-          "GBP": "£1,850"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "16-Unit Full Smile Makeover (8 Upper + 8 Lower)",
@@ -1320,11 +1168,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Professional clinical teeth whitening for non-veneered molars",
           "Comprehensive post-op care pack & custom night guard"
         ],
-        "price": {
-          "USD": "$4,550",
-          "EUR": "€4,190",
-          "GBP": "£3,600"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20-Unit Full Hollywood Smile Makeover",
@@ -1339,11 +1183,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Chauffeur Service for all transfers",
           "Lifetime international warranty certificate & dental passport"
         ],
-        "price": {
-          "USD": "$5,450",
-          "EUR": "€4,990",
-          "GBP": "£4,350"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Single Lumineers (Prepless / Ultra-Thin)",
@@ -1357,11 +1197,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "Dedicated patient coordinator assistance"
         ],
-        "price": {
-          "USD": "$360",
-          "EUR": "€330",
-          "GBP": "£290"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Single Composite Veneer / Direct Bonding",
@@ -1375,11 +1211,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Multi-shade nano-hybrid resin polishing",
           "2-Year Clinical Warranty"
         ],
-        "price": {
-          "USD": "$120",
-          "EUR": "€110",
-          "GBP": "£90"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -1603,9 +1435,9 @@ export default function PorcelainVeneersDetailView() {
 
                 <div className={styles.pkgFooter}>
                   <div className={styles.pkgPriceRow}>
-                    <span className={styles.pkgPriceLabel}>{d.priceLabel}</span>
-                    <strong className={styles.pkgPriceValue}>
-                      {pkg.price[currency]}
+                    <span className={styles.pkgPriceLabel}>{locale === 'tr' ? 'VIP Paket Kapsamı' : 'VIP All-Inclusive'}</span>
+                    <strong className={styles.pkgPriceValue} style={{ fontSize: '0.95rem', color: '#059669', fontWeight: '700' }}>
+                      {locale === 'tr' ? 'Kişiye Özel Fiyat Teklifi' : 'Personalized VIP Quote'}
                     </strong>
                   </div>
 

@@ -58,7 +58,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>5 to 7 days in Antalya.</strong> Precision 3D digital impressions, custom fabrication of ultra-thin feldspathic Lumineers, and adhesive bonding are completed in 1 trip.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel once to Antalya for your complete non-invasive smile makeover.",
     "recoveryTime": "<strong>Zero recovery time.</strong> Because natural tooth enamel is untouched and no local anesthetic injections are needed, you experience zero sensitivity or downtime.",
-    "priceEstimate": "<strong>Lumineers prices start at £260 / €295 / $325 per tooth.</strong> Complete all-inclusive packages include 3D Digital Smile Design, 4/5-star hotel stay, and VIP Mercedes transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "Single No-Prep Lumineer",
@@ -73,11 +73,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Authenticity Certificate",
           "VIP Patient coordination assistance"
         ],
-        "price": {
-          "USD": "$325",
-          "EUR": "€295",
-          "GBP": "£260"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "8-Unit Lumineers Smile Line (Upper)",
@@ -94,11 +90,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Professional teeth cleaning & shade harmonization",
           "10-Year Comprehensive Warranty"
         ],
-        "price": {
-          "USD": "$2,490",
-          "EUR": "€2,250",
-          "GBP": "£1,990"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "16-Unit Full Lumineers Smile Makeover",
@@ -113,11 +105,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Airport & Clinic Chauffeur",
           "Custom dental night guard & international warranty passport"
         ],
-        "price": {
-          "USD": "$4,790",
-          "EUR": "€4,390",
-          "GBP": "£3,850"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20-Unit Full Hollywood Lumineers Makeover",
@@ -131,11 +119,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Chauffeur for all transfers",
           "Lifetime international warranty & VIP care pack"
         ],
-        "price": {
-          "USD": "$5,890",
-          "EUR": "€5,390",
-          "GBP": "£4,750"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -179,7 +163,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>5 to 7 days in Antalya.</strong> Precision 3D digital impressions, custom fabrication of ultra-thin feldspathic Lumineers, and adhesive bonding are completed in 1 trip.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel once to Antalya for your complete non-invasive smile makeover.",
     "recoveryTime": "<strong>Zero recovery time.</strong> Because natural tooth enamel is untouched and no local anesthetic injections are needed, you experience zero sensitivity or downtime.",
-    "priceEstimate": "<strong>Lumineers prices start at £260 / €295 / $325 per tooth.</strong> Complete all-inclusive packages include 3D Digital Smile Design, 4/5-star hotel stay, and VIP Mercedes transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "Single No-Prep Lumineer",
@@ -194,11 +178,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Authenticity Certificate",
           "VIP Patient coordination assistance"
         ],
-        "price": {
-          "USD": "$325",
-          "EUR": "€295",
-          "GBP": "£260"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "8-Unit Lumineers Smile Line (Upper)",
@@ -215,11 +195,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Professional teeth cleaning & shade harmonization",
           "10-Year Comprehensive Warranty"
         ],
-        "price": {
-          "USD": "$2,490",
-          "EUR": "€2,250",
-          "GBP": "£1,990"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "16-Unit Full Lumineers Smile Makeover",
@@ -234,11 +210,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Airport & Clinic Chauffeur",
           "Custom dental night guard & international warranty passport"
         ],
-        "price": {
-          "USD": "$4,790",
-          "EUR": "€4,390",
-          "GBP": "£3,850"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20-Unit Full Hollywood Lumineers Makeover",
@@ -252,11 +224,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Chauffeur for all transfers",
           "Lifetime international warranty & VIP care pack"
         ],
-        "price": {
-          "USD": "$5,890",
-          "EUR": "€5,390",
-          "GBP": "£4,750"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -300,7 +268,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>5 to 7 days in Antalya.</strong> Precision 3D digital impressions, custom fabrication of ultra-thin feldspathic Lumineers, and adhesive bonding are completed in 1 trip.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel once to Antalya for your complete non-invasive smile makeover.",
     "recoveryTime": "<strong>Zero recovery time.</strong> Because natural tooth enamel is untouched and no local anesthetic injections are needed, you experience zero sensitivity or downtime.",
-    "priceEstimate": "<strong>Lumineers prices start at £260 / €295 / $325 per tooth.</strong> Complete all-inclusive packages include 3D Digital Smile Design, 4/5-star hotel stay, and VIP Mercedes transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "Single No-Prep Lumineer",
@@ -315,11 +283,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Authenticity Certificate",
           "VIP Patient coordination assistance"
         ],
-        "price": {
-          "USD": "$325",
-          "EUR": "€295",
-          "GBP": "£260"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "8-Unit Lumineers Smile Line (Upper)",
@@ -336,11 +300,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Professional teeth cleaning & shade harmonization",
           "10-Year Comprehensive Warranty"
         ],
-        "price": {
-          "USD": "$2,490",
-          "EUR": "€2,250",
-          "GBP": "£1,990"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "16-Unit Full Lumineers Smile Makeover",
@@ -355,11 +315,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Airport & Clinic Chauffeur",
           "Custom dental night guard & international warranty passport"
         ],
-        "price": {
-          "USD": "$4,790",
-          "EUR": "€4,390",
-          "GBP": "£3,850"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20-Unit Full Hollywood Lumineers Makeover",
@@ -373,11 +329,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Chauffeur for all transfers",
           "Lifetime international warranty & VIP care pack"
         ],
-        "price": {
-          "USD": "$5,890",
-          "EUR": "€5,390",
-          "GBP": "£4,750"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -421,7 +373,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>5 to 7 days in Antalya.</strong> Precision 3D digital impressions, custom fabrication of ultra-thin feldspathic Lumineers, and adhesive bonding are completed in 1 trip.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel once to Antalya for your complete non-invasive smile makeover.",
     "recoveryTime": "<strong>Zero recovery time.</strong> Because natural tooth enamel is untouched and no local anesthetic injections are needed, you experience zero sensitivity or downtime.",
-    "priceEstimate": "<strong>Lumineers prices start at £260 / €295 / $325 per tooth.</strong> Complete all-inclusive packages include 3D Digital Smile Design, 4/5-star hotel stay, and VIP Mercedes transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "Single No-Prep Lumineer",
@@ -436,11 +388,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Authenticity Certificate",
           "VIP Patient coordination assistance"
         ],
-        "price": {
-          "USD": "$325",
-          "EUR": "€295",
-          "GBP": "£260"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "8-Unit Lumineers Smile Line (Upper)",
@@ -457,11 +405,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Professional teeth cleaning & shade harmonization",
           "10-Year Comprehensive Warranty"
         ],
-        "price": {
-          "USD": "$2,490",
-          "EUR": "€2,250",
-          "GBP": "£1,990"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "16-Unit Full Lumineers Smile Makeover",
@@ -476,11 +420,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Airport & Clinic Chauffeur",
           "Custom dental night guard & international warranty passport"
         ],
-        "price": {
-          "USD": "$4,790",
-          "EUR": "€4,390",
-          "GBP": "£3,850"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20-Unit Full Hollywood Lumineers Makeover",
@@ -494,11 +434,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Chauffeur for all transfers",
           "Lifetime international warranty & VIP care pack"
         ],
-        "price": {
-          "USD": "$5,890",
-          "EUR": "€5,390",
-          "GBP": "£4,750"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -542,7 +478,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>5 to 7 days in Antalya.</strong> Precision 3D digital impressions, custom fabrication of ultra-thin feldspathic Lumineers, and adhesive bonding are completed in 1 trip.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel once to Antalya for your complete non-invasive smile makeover.",
     "recoveryTime": "<strong>Zero recovery time.</strong> Because natural tooth enamel is untouched and no local anesthetic injections are needed, you experience zero sensitivity or downtime.",
-    "priceEstimate": "<strong>Lumineers prices start at £260 / €295 / $325 per tooth.</strong> Complete all-inclusive packages include 3D Digital Smile Design, 4/5-star hotel stay, and VIP Mercedes transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "Single No-Prep Lumineer",
@@ -557,11 +493,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Authenticity Certificate",
           "VIP Patient coordination assistance"
         ],
-        "price": {
-          "USD": "$325",
-          "EUR": "€295",
-          "GBP": "£260"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "8-Unit Lumineers Smile Line (Upper)",
@@ -578,11 +510,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Professional teeth cleaning & shade harmonization",
           "10-Year Comprehensive Warranty"
         ],
-        "price": {
-          "USD": "$2,490",
-          "EUR": "€2,250",
-          "GBP": "£1,990"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "16-Unit Full Lumineers Smile Makeover",
@@ -597,11 +525,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Airport & Clinic Chauffeur",
           "Custom dental night guard & international warranty passport"
         ],
-        "price": {
-          "USD": "$4,790",
-          "EUR": "€4,390",
-          "GBP": "£3,850"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20-Unit Full Hollywood Lumineers Makeover",
@@ -615,11 +539,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Chauffeur for all transfers",
           "Lifetime international warranty & VIP care pack"
         ],
-        "price": {
-          "USD": "$5,890",
-          "EUR": "€5,390",
-          "GBP": "£4,750"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -663,7 +583,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>5 to 7 days in Antalya.</strong> Precision 3D digital impressions, custom fabrication of ultra-thin feldspathic Lumineers, and adhesive bonding are completed in 1 trip.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel once to Antalya for your complete non-invasive smile makeover.",
     "recoveryTime": "<strong>Zero recovery time.</strong> Because natural tooth enamel is untouched and no local anesthetic injections are needed, you experience zero sensitivity or downtime.",
-    "priceEstimate": "<strong>Lumineers prices start at £260 / €295 / $325 per tooth.</strong> Complete all-inclusive packages include 3D Digital Smile Design, 4/5-star hotel stay, and VIP Mercedes transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "Single No-Prep Lumineer",
@@ -678,11 +598,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Authenticity Certificate",
           "VIP Patient coordination assistance"
         ],
-        "price": {
-          "USD": "$325",
-          "EUR": "€295",
-          "GBP": "£260"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "8-Unit Lumineers Smile Line (Upper)",
@@ -699,11 +615,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Professional teeth cleaning & shade harmonization",
           "10-Year Comprehensive Warranty"
         ],
-        "price": {
-          "USD": "$2,490",
-          "EUR": "€2,250",
-          "GBP": "£1,990"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "16-Unit Full Lumineers Smile Makeover",
@@ -718,11 +630,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Airport & Clinic Chauffeur",
           "Custom dental night guard & international warranty passport"
         ],
-        "price": {
-          "USD": "$4,790",
-          "EUR": "€4,390",
-          "GBP": "£3,850"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20-Unit Full Hollywood Lumineers Makeover",
@@ -736,11 +644,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Chauffeur for all transfers",
           "Lifetime international warranty & VIP care pack"
         ],
-        "price": {
-          "USD": "$5,890",
-          "EUR": "€5,390",
-          "GBP": "£4,750"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -784,7 +688,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>5 to 7 days in Antalya.</strong> Precision 3D digital impressions, custom fabrication of ultra-thin feldspathic Lumineers, and adhesive bonding are completed in 1 trip.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel once to Antalya for your complete non-invasive smile makeover.",
     "recoveryTime": "<strong>Zero recovery time.</strong> Because natural tooth enamel is untouched and no local anesthetic injections are needed, you experience zero sensitivity or downtime.",
-    "priceEstimate": "<strong>Lumineers prices start at £260 / €295 / $325 per tooth.</strong> Complete all-inclusive packages include 3D Digital Smile Design, 4/5-star hotel stay, and VIP Mercedes transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "Single No-Prep Lumineer",
@@ -799,11 +703,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Authenticity Certificate",
           "VIP Patient coordination assistance"
         ],
-        "price": {
-          "USD": "$325",
-          "EUR": "€295",
-          "GBP": "£260"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "8-Unit Lumineers Smile Line (Upper)",
@@ -820,11 +720,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Professional teeth cleaning & shade harmonization",
           "10-Year Comprehensive Warranty"
         ],
-        "price": {
-          "USD": "$2,490",
-          "EUR": "€2,250",
-          "GBP": "£1,990"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "16-Unit Full Lumineers Smile Makeover",
@@ -839,11 +735,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Airport & Clinic Chauffeur",
           "Custom dental night guard & international warranty passport"
         ],
-        "price": {
-          "USD": "$4,790",
-          "EUR": "€4,390",
-          "GBP": "£3,850"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20-Unit Full Hollywood Lumineers Makeover",
@@ -857,11 +749,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Chauffeur for all transfers",
           "Lifetime international warranty & VIP care pack"
         ],
-        "price": {
-          "USD": "$5,890",
-          "EUR": "€5,390",
-          "GBP": "£4,750"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -1043,9 +931,9 @@ export default function LumineersDetailView() {
 
                 <div className={styles.pkgFooter}>
                   <div className={styles.pkgPriceRow}>
-                    <span className={styles.pkgPriceLabel}>{d.priceLabel}</span>
-                    <strong className={styles.pkgPriceValue}>
-                      {pkg.price[currency]}
+                    <span className={styles.pkgPriceLabel}>{locale === 'tr' ? 'VIP Paket Kapsamı' : 'VIP All-Inclusive'}</span>
+                    <strong className={styles.pkgPriceValue} style={{ fontSize: '0.95rem', color: '#059669', fontWeight: '700' }}>
+                      {locale === 'tr' ? 'Kişiye Özel Fiyat Teklifi' : 'Personalized VIP Quote'}
                     </strong>
                   </div>
 

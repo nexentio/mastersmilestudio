@@ -58,7 +58,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>5 to 7 days in Antalya.</strong> 3D digital scanning, ultra-conservative micro-etching of anchor teeth, precision CAD/CAM laboratory fabrication, and high-strength adhesive bonding completed during 1 visit.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel once to Antalya for your complete Maryland bridge treatment. All clinical steps are finished within 5 to 7 days.",
     "recoveryTime": "<strong>Immediate / 24 hours.</strong> Because natural teeth are not heavily reduced, there is zero recovery downtime and no post-operative sensitivity.",
-    "priceEstimate": "<strong>Maryland bridge prices start from £350 / €400 / $440 per bridge.</strong> All-inclusive packages include 3D digital smile design, luxury hotel stay, and VIP Mercedes transfers with zero hidden costs.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "1-Tooth Zirconia Maryland Bridge",
@@ -74,11 +74,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty against bridge debonding/fracture",
           "VIP Patient coordination assistance"
         ],
-        "price": {
-          "USD": "$530",
-          "EUR": "€480",
-          "GBP": "£420"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "1-Tooth E-Max Ceramic Maryland Bridge",
@@ -93,11 +89,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Airport & Clinic Transfers",
           "10-Year Comprehensive Warranty & Dental Passport"
         ],
-        "price": {
-          "USD": "$615",
-          "EUR": "€560",
-          "GBP": "£490"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Full Maryland Bridge All-Inclusive Package",
@@ -111,11 +103,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Chauffeur for all appointments",
           "Comprehensive warranty & aftercare kit"
         ],
-        "price": {
-          "USD": "$1,060",
-          "EUR": "€970",
-          "GBP": "£850"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -160,7 +148,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>5 to 7 days in Antalya.</strong> 3D digital scanning, ultra-conservative micro-etching of anchor teeth, precision CAD/CAM laboratory fabrication, and high-strength adhesive bonding completed during 1 visit.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel once to Antalya for your complete Maryland bridge treatment. All clinical steps are finished within 5 to 7 days.",
     "recoveryTime": "<strong>Immediate / 24 hours.</strong> Because natural teeth are not heavily reduced, there is zero recovery downtime and no post-operative sensitivity.",
-    "priceEstimate": "<strong>Maryland bridge prices start from £350 / €400 / $440 per bridge.</strong> All-inclusive packages include 3D digital smile design, luxury hotel stay, and VIP Mercedes transfers with zero hidden costs.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "1-Tooth Zirconia Maryland Bridge",
@@ -176,11 +164,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty against bridge debonding/fracture",
           "VIP Patient coordination assistance"
         ],
-        "price": {
-          "USD": "$530",
-          "EUR": "€480",
-          "GBP": "£420"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "1-Tooth E-Max Ceramic Maryland Bridge",
@@ -195,11 +179,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Airport & Clinic Transfers",
           "10-Year Comprehensive Warranty & Dental Passport"
         ],
-        "price": {
-          "USD": "$615",
-          "EUR": "€560",
-          "GBP": "£490"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Full Maryland Bridge All-Inclusive Package",
@@ -213,11 +193,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Chauffeur for all appointments",
           "Comprehensive warranty & aftercare kit"
         ],
-        "price": {
-          "USD": "$1,060",
-          "EUR": "€970",
-          "GBP": "£850"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -262,7 +238,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>5 to 7 days in Antalya.</strong> 3D digital scanning, ultra-conservative micro-etching of anchor teeth, precision CAD/CAM laboratory fabrication, and high-strength adhesive bonding completed during 1 visit.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel once to Antalya for your complete Maryland bridge treatment. All clinical steps are finished within 5 to 7 days.",
     "recoveryTime": "<strong>Immediate / 24 hours.</strong> Because natural teeth are not heavily reduced, there is zero recovery downtime and no post-operative sensitivity.",
-    "priceEstimate": "<strong>Maryland bridge prices start from £350 / €400 / $440 per bridge.</strong> All-inclusive packages include 3D digital smile design, luxury hotel stay, and VIP Mercedes transfers with zero hidden costs.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "1-Tooth Zirconia Maryland Bridge",
@@ -278,11 +254,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty against bridge debonding/fracture",
           "VIP Patient coordination assistance"
         ],
-        "price": {
-          "USD": "$530",
-          "EUR": "€480",
-          "GBP": "£420"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "1-Tooth E-Max Ceramic Maryland Bridge",
@@ -297,11 +269,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Airport & Clinic Transfers",
           "10-Year Comprehensive Warranty & Dental Passport"
         ],
-        "price": {
-          "USD": "$615",
-          "EUR": "€560",
-          "GBP": "£490"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Full Maryland Bridge All-Inclusive Package",
@@ -315,11 +283,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Chauffeur for all appointments",
           "Comprehensive warranty & aftercare kit"
         ],
-        "price": {
-          "USD": "$1,060",
-          "EUR": "€970",
-          "GBP": "£850"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -364,7 +328,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>5 to 7 days in Antalya.</strong> 3D digital scanning, ultra-conservative micro-etching of anchor teeth, precision CAD/CAM laboratory fabrication, and high-strength adhesive bonding completed during 1 visit.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel once to Antalya for your complete Maryland bridge treatment. All clinical steps are finished within 5 to 7 days.",
     "recoveryTime": "<strong>Immediate / 24 hours.</strong> Because natural teeth are not heavily reduced, there is zero recovery downtime and no post-operative sensitivity.",
-    "priceEstimate": "<strong>Maryland bridge prices start from £350 / €400 / $440 per bridge.</strong> All-inclusive packages include 3D digital smile design, luxury hotel stay, and VIP Mercedes transfers with zero hidden costs.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "1-Tooth Zirconia Maryland Bridge",
@@ -380,11 +344,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty against bridge debonding/fracture",
           "VIP Patient coordination assistance"
         ],
-        "price": {
-          "USD": "$530",
-          "EUR": "€480",
-          "GBP": "£420"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "1-Tooth E-Max Ceramic Maryland Bridge",
@@ -399,11 +359,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Airport & Clinic Transfers",
           "10-Year Comprehensive Warranty & Dental Passport"
         ],
-        "price": {
-          "USD": "$615",
-          "EUR": "€560",
-          "GBP": "£490"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Full Maryland Bridge All-Inclusive Package",
@@ -417,11 +373,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Chauffeur for all appointments",
           "Comprehensive warranty & aftercare kit"
         ],
-        "price": {
-          "USD": "$1,060",
-          "EUR": "€970",
-          "GBP": "£850"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -466,7 +418,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>5 to 7 days in Antalya.</strong> 3D digital scanning, ultra-conservative micro-etching of anchor teeth, precision CAD/CAM laboratory fabrication, and high-strength adhesive bonding completed during 1 visit.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel once to Antalya for your complete Maryland bridge treatment. All clinical steps are finished within 5 to 7 days.",
     "recoveryTime": "<strong>Immediate / 24 hours.</strong> Because natural teeth are not heavily reduced, there is zero recovery downtime and no post-operative sensitivity.",
-    "priceEstimate": "<strong>Maryland bridge prices start from £350 / €400 / $440 per bridge.</strong> All-inclusive packages include 3D digital smile design, luxury hotel stay, and VIP Mercedes transfers with zero hidden costs.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "1-Tooth Zirconia Maryland Bridge",
@@ -482,11 +434,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty against bridge debonding/fracture",
           "VIP Patient coordination assistance"
         ],
-        "price": {
-          "USD": "$530",
-          "EUR": "€480",
-          "GBP": "£420"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "1-Tooth E-Max Ceramic Maryland Bridge",
@@ -501,11 +449,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Airport & Clinic Transfers",
           "10-Year Comprehensive Warranty & Dental Passport"
         ],
-        "price": {
-          "USD": "$615",
-          "EUR": "€560",
-          "GBP": "£490"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Full Maryland Bridge All-Inclusive Package",
@@ -519,11 +463,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Chauffeur for all appointments",
           "Comprehensive warranty & aftercare kit"
         ],
-        "price": {
-          "USD": "$1,060",
-          "EUR": "€970",
-          "GBP": "£850"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -568,7 +508,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>5 to 7 days in Antalya.</strong> 3D digital scanning, ultra-conservative micro-etching of anchor teeth, precision CAD/CAM laboratory fabrication, and high-strength adhesive bonding completed during 1 visit.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel once to Antalya for your complete Maryland bridge treatment. All clinical steps are finished within 5 to 7 days.",
     "recoveryTime": "<strong>Immediate / 24 hours.</strong> Because natural teeth are not heavily reduced, there is zero recovery downtime and no post-operative sensitivity.",
-    "priceEstimate": "<strong>Maryland bridge prices start from £350 / €400 / $440 per bridge.</strong> All-inclusive packages include 3D digital smile design, luxury hotel stay, and VIP Mercedes transfers with zero hidden costs.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "1-Tooth Zirconia Maryland Bridge",
@@ -584,11 +524,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty against bridge debonding/fracture",
           "VIP Patient coordination assistance"
         ],
-        "price": {
-          "USD": "$530",
-          "EUR": "€480",
-          "GBP": "£420"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "1-Tooth E-Max Ceramic Maryland Bridge",
@@ -603,11 +539,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Airport & Clinic Transfers",
           "10-Year Comprehensive Warranty & Dental Passport"
         ],
-        "price": {
-          "USD": "$615",
-          "EUR": "€560",
-          "GBP": "£490"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Full Maryland Bridge All-Inclusive Package",
@@ -621,11 +553,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Chauffeur for all appointments",
           "Comprehensive warranty & aftercare kit"
         ],
-        "price": {
-          "USD": "$1,060",
-          "EUR": "€970",
-          "GBP": "£850"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -670,7 +598,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>5 to 7 days in Antalya.</strong> 3D digital scanning, ultra-conservative micro-etching of anchor teeth, precision CAD/CAM laboratory fabrication, and high-strength adhesive bonding completed during 1 visit.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel once to Antalya for your complete Maryland bridge treatment. All clinical steps are finished within 5 to 7 days.",
     "recoveryTime": "<strong>Immediate / 24 hours.</strong> Because natural teeth are not heavily reduced, there is zero recovery downtime and no post-operative sensitivity.",
-    "priceEstimate": "<strong>Maryland bridge prices start from £350 / €400 / $440 per bridge.</strong> All-inclusive packages include 3D digital smile design, luxury hotel stay, and VIP Mercedes transfers with zero hidden costs.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "1-Tooth Zirconia Maryland Bridge",
@@ -686,11 +614,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty against bridge debonding/fracture",
           "VIP Patient coordination assistance"
         ],
-        "price": {
-          "USD": "$530",
-          "EUR": "€480",
-          "GBP": "£420"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "1-Tooth E-Max Ceramic Maryland Bridge",
@@ -705,11 +629,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Airport & Clinic Transfers",
           "10-Year Comprehensive Warranty & Dental Passport"
         ],
-        "price": {
-          "USD": "$615",
-          "EUR": "€560",
-          "GBP": "£490"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Full Maryland Bridge All-Inclusive Package",
@@ -723,11 +643,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Chauffeur for all appointments",
           "Comprehensive warranty & aftercare kit"
         ],
-        "price": {
-          "USD": "$1,060",
-          "EUR": "€970",
-          "GBP": "£850"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -910,9 +826,9 @@ export default function MarylandBridgesDetailView() {
 
                 <div className={styles.pkgFooter}>
                   <div className={styles.pkgPriceRow}>
-                    <span className={styles.pkgPriceLabel}>{d.priceLabel}</span>
-                    <strong className={styles.pkgPriceValue}>
-                      {pkg.price[currency]}
+                    <span className={styles.pkgPriceLabel}>{locale === 'tr' ? 'VIP Paket Kapsamı' : 'VIP All-Inclusive'}</span>
+                    <strong className={styles.pkgPriceValue} style={{ fontSize: '0.95rem', color: '#059669', fontWeight: '700' }}>
+                      {locale === 'tr' ? 'Kişiye Özel Fiyat Teklifi' : 'Personalized VIP Quote'}
                     </strong>
                   </div>
 

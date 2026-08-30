@@ -22,6 +22,10 @@
   "doctorTulayTitle": "Chirurg Szczękowo-Twarzowy",
   "doctorAliKemalTitle": "Lekarz Stomatolog Specjalista",
   "doctorAbdullahTitle": "Endodoncja i Stomatologia Odtwórcza",
+  "hollywoodSmile": {
+    "title": "Hollywood Smile",
+    "description": "Nieskazitelna biel, idealna symetria i olśniewający uśmiech w złotych proporcjach."
+  },
   "smileDesign": {
     "title": "Projektowanie Uśmiechu",
     "description": "Cyfrowy projekt uśmiechu dopasowany do złotej proporcji twarzy."
@@ -106,6 +110,10 @@
     "surgery": {
       "title": "CHIRURGIA STOMATOLOGICZNA",
       "description": "Ekstrakcje zębów ósmych, zabiegi usuwania torbieli oraz odbudowa kości."
+    },
+    "hollywoodSmile": {
+      "title": "HOLLYWOOD SMILE",
+      "description": "Dedykowane szwajcarskie laminaty E-Max lub niemieckie korony cyrkonowe dopasowane do złotych proporcji twarzy."
     }
   },
   "rightTreatment": {

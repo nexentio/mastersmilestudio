@@ -4,6 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import { useLocale } from 'next-intl';
 import { Link } from '@/i18n/routing';
+import { SITE_CONFIG } from '@/config/site';
 import { PRICE_GROUPS, PRICING_SIDEBAR_DATA } from '@/data/price-list-data';
 import styles from './PriceListTableSection.module.css';
 
@@ -30,7 +31,8 @@ export default function PriceListTableSection() {
     return encodeURIComponent(messages[locale] || messages.en);
   };
 
-  const whatsappUrl = `https://wa.me/905434568080?text=${getWhatsAppMessage()}`;
+  const whatsappNumber = SITE_CONFIG.whatsappNumbers[locale] || SITE_CONFIG.whatsappNumbers.en || '905373059947';
+  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${getWhatsAppMessage()}`;
 
   return (
     <section className={styles.standardCenter4} aria-label="Master Smile Studio Price List">
@@ -53,45 +55,125 @@ export default function PriceListTableSection() {
                       <div className={`${styles.flRow} ${styles.flColhead}`}>
                         <span className={styles.flName}>
                           {locale === 'tr'
-                            ? 'Tedavi'
+                            ? 'Tedavi & Materyal'
                             : locale === 'de'
-                            ? 'Behandlung'
+                            ? 'Behandlung & Material'
                             : locale === 'pl'
-                            ? 'Zabieg'
+                            ? 'Zabieg i Materiał'
                             : locale === 'pt'
-                            ? 'Tratamento'
+                            ? 'Tratamento & Material'
                             : locale === 'es'
-                            ? 'Tratamiento'
+                            ? 'Tratamiento y Material'
                             : locale === 'ru'
-                            ? 'Процедура'
-                            : 'Treatment'}
+                            ? 'Процедура и материал'
+                            : 'Treatment & Material'}
                         </span>
-                        <span className={styles.flPrice}>
-                          $ <small>USD</small>
+                        <span className={styles.flDuration}>
+                          {locale === 'tr'
+                            ? 'Süre'
+                            : locale === 'de'
+                            ? 'Dauer'
+                            : locale === 'pl'
+                            ? 'Czas'
+                            : locale === 'pt'
+                            ? 'Duração'
+                            : locale === 'es'
+                            ? 'Duración'
+                            : locale === 'ru'
+                            ? 'Сроки'
+                            : 'Duration'}
                         </span>
-                        <span className={styles.flPrice}>
-                          € <small>EUR</small>
+                        <span className={styles.flWarranty}>
+                          {locale === 'tr'
+                            ? 'Garanti'
+                            : locale === 'de'
+                            ? 'Garantie'
+                            : locale === 'pl'
+                            ? 'Gwarancja'
+                            : locale === 'pt'
+                            ? 'Garantia'
+                            : locale === 'es'
+                            ? 'Garantía'
+                            : locale === 'ru'
+                            ? 'Гарантия'
+                            : 'Warranty'}
                         </span>
-                        <span className={styles.flPrice}>
-                          £ <small>GBP</small>
+                        <span className={styles.flActionHead}>
+                          {locale === 'tr'
+                            ? 'Teklif Al'
+                            : locale === 'de'
+                            ? 'Angebot'
+                            : locale === 'pl'
+                            ? 'Wycena'
+                            : locale === 'pt'
+                            ? 'Orçamento'
+                            : locale === 'es'
+                            ? 'Presupuesto'
+                            : locale === 'ru'
+                            ? 'Расчет'
+                            : 'Quote'}
                         </span>
                       </div>
 
                       {/* Rows */}
-                      {table.rows.map((row, rIdx) => (
-                        <div key={rIdx} className={styles.flRow}>
-                          <span className={styles.flName}>{getLocalized(row.name)}</span>
-                          <span className={styles.flPrice}>
-                            <b>$</b>{row.usd.replace('$', '')}
-                          </span>
-                          <span className={styles.flPrice}>
-                            <b>€</b>{row.eur.replace('€', '')}
-                          </span>
-                          <span className={styles.flPrice}>
-                            <b>£</b>{row.gbp.replace('£', '')}
-                          </span>
-                        </div>
-                      ))}
+                      {table.rows.map((row, rIdx) => {
+                        const treatmentName = getLocalized(row.name);
+                        const rowWaMsg = encodeURIComponent(
+                          locale === 'tr'
+                            ? `Merhaba Master Smile Studio! "${treatmentName}" için kişiye özel fiyat teklifi ve tedavi planı almak istiyorum.`
+                            : locale === 'de'
+                            ? `Hallo Master Smile Studio! Ich möchte ein individuelles Preisangebot und einen Behandlungsplan für "${treatmentName}" erhalten.`
+                            : locale === 'pl'
+                            ? `Dzień dobry Master Smile Studio! Chciałbym otrzymać indywidualną wycenę i plan leczenia dla "${treatmentName}".`
+                            : locale === 'pt'
+                            ? `Olá Master Smile Studio! Gostaria de receber um orçamento personalizado e plano de tratamento para "${treatmentName}".`
+                            : locale === 'es'
+                            ? `¡Hola Master Smile Studio! Me gustaría recibir un presupuesto personalizado y plan de tratamiento para "${treatmentName}".`
+                            : locale === 'ru'
+                            ? `Здравствуйте Master Smile Studio! Я хотел бы получить индивидуальный расчет и план лечения для "${treatmentName}".`
+                            : `Hello Master Smile Studio! I would like to get a personalized price quote and treatment plan for "${treatmentName}".`
+                        );
+                        const rowWaUrl = `https://wa.me/${whatsappNumber}?text=${rowWaMsg}`;
+
+                        return (
+                          <div key={rIdx} className={styles.flRow}>
+                            <span className={styles.flName}>{treatmentName}</span>
+                            <span className={styles.flDuration}>
+                              {getLocalized(row.duration) || (locale === 'tr' ? '3-5 Gün' : '3-5 Days')}
+                            </span>
+                            <span className={styles.flWarranty}>
+                              <span className={styles.warrantyBadge}>
+                                ✓ {getLocalized(row.warranty) || (locale === 'tr' ? 'Ömür Boyu' : 'Lifetime')}
+                              </span>
+                            </span>
+                            <span className={styles.flAction}>
+                              <a
+                                href={rowWaUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={styles.rowQuoteBtn}
+                                aria-label={`Get quote for ${treatmentName}`}
+                              >
+                                <span>
+                                  {locale === 'tr'
+                                    ? 'Fiyat Sor'
+                                    : locale === 'de'
+                                    ? 'Preis anfragen'
+                                    : locale === 'pl'
+                                    ? 'Zapytaj o cenę'
+                                    : locale === 'pt'
+                                    ? 'Pedir Orçamento'
+                                    : locale === 'es'
+                                    ? 'Consultar Precio'
+                                    : locale === 'ru'
+                                    ? 'Узнать цену'
+                                    : 'Get Quote'}
+                                </span>
+                              </a>
+                            </span>
+                          </div>
+                        );
+                      })}
                     </div>
 
                     {/* Explore Bar for Package Tables */}

@@ -26,8 +26,7 @@ export function generateTreatmentJsonLd({
       nameEn: string;
       nameTr: string;
       procedureType: string;
-      lowPrice: number;
-      highPrice: number;
+      
       bodyLocation: string;
       wikidata: string[];
       wikipedia?: string[];
@@ -39,8 +38,7 @@ export function generateTreatmentJsonLd({
       nameEn: 'Dental Implant Surgery',
       nameTr: 'Diş İmplantı Cerrahisi',
       procedureType: 'SurgicalProcedure',
-      lowPrice: 400,
-      highPrice: 8000,
+      
       bodyLocation: 'Tooth',
       wikidata: [
         'https://www.wikidata.org/wiki/Q1413157', // Dental Implant
@@ -62,8 +60,7 @@ export function generateTreatmentJsonLd({
       nameEn: 'All-on-4 Dental Implant Restoration',
       nameTr: 'All-on-4 Diş İmplantı Tedavisi',
       procedureType: 'SurgicalProcedure',
-      lowPrice: 4200,
-      highPrice: 8000,
+      
       bodyLocation: 'Tooth',
       wikidata: [
         'https://www.wikidata.org/wiki/Q4727773', // All-on-4
@@ -81,8 +78,7 @@ export function generateTreatmentJsonLd({
       nameEn: 'All-on-6 Full Arch Dental Implant Restoration',
       nameTr: 'All-on-6 Tam Çene Diş İmplantı',
       procedureType: 'SurgicalProcedure',
-      lowPrice: 4700,
-      highPrice: 10000,
+      
       bodyLocation: 'Tooth',
       wikidata: [
         'https://www.wikidata.org/wiki/Q1413157', // Dental Implant
@@ -100,8 +96,7 @@ export function generateTreatmentJsonLd({
       nameEn: 'Immediate Same-Day Dental Implant Placement',
       nameTr: 'Aynı Gün İmplant Tedavisi (Immediate Implant)',
       procedureType: 'SurgicalProcedure',
-      lowPrice: 450,
-      highPrice: 1200,
+      
       bodyLocation: 'Tooth',
       wikidata: [
         'https://www.wikidata.org/wiki/Q1413157', // Dental Implant
@@ -114,8 +109,7 @@ export function generateTreatmentJsonLd({
       nameEn: 'Zygomatic Cheekbone Dental Implant Surgery',
       nameTr: 'Zigoma (Elmacık Kemiği) İmplantı Tedavisi',
       procedureType: 'SurgicalProcedure',
-      lowPrice: 6000,
-      highPrice: 14000,
+      
       bodyLocation: 'Zygomatic Bone',
       wikidata: [
         'https://www.wikidata.org/wiki/Q163214',  // Zygomatic bone
@@ -128,8 +122,7 @@ export function generateTreatmentJsonLd({
       nameEn: 'Metal-Free Ceramic Zirconia Dental Implants',
       nameTr: '%100 Metalsiz Zirkonyum Seramik Diş İmplantı',
       procedureType: 'SurgicalProcedure',
-      lowPrice: 650,
-      highPrice: 1500,
+      
       bodyLocation: 'Tooth',
       wikidata: [
         'https://www.wikidata.org/wiki/Q410058',  // Zirconium dioxide
@@ -142,8 +135,7 @@ export function generateTreatmentJsonLd({
       nameEn: 'Implant-Supported Snap-On Overdentures',
       nameTr: 'İmplant Destekli Çıt Çıtlı Protez (Overdenture)',
       procedureType: 'SurgicalProcedure',
-      lowPrice: 2200,
-      highPrice: 4500,
+      
       bodyLocation: 'Tooth',
       wikidata: [
         'https://www.wikidata.org/wiki/Q731388',  // Dentures
@@ -156,8 +148,7 @@ export function generateTreatmentJsonLd({
       nameEn: 'Maxillary Sinus Floor Elevation & Bone Grafting',
       nameTr: 'Sinüs Lifting & Kemik Greftleme Cerrahisi',
       procedureType: 'SurgicalProcedure',
-      lowPrice: 250,
-      highPrice: 1200,
+      
       bodyLocation: 'Maxillary Sinus',
       wikidata: [
         'https://www.wikidata.org/wiki/Q3961911', // Sinus lift
@@ -180,8 +171,8 @@ export function generateTreatmentJsonLd({
           : 'How much do dental implants cost in Antalya, Turkey?',
       a:
         locale === 'tr'
-          ? 'Master Smile Studio kliniğimizde tek diş implant fiyatları €400’den başlar. All-on-4 tam çene paketleri €4,900, All-on-6 paketleri ise €5,500’den itibaren her şey dahil (otel konaklaması, VIP transferler, 3D CBCT röntgenler) olarak sunulmaktadır.'
-          : 'At Master Smile Studio, single dental implants start from €400 (£350). All-on-4 full arch packages start from €4,900 (£4,200) and All-on-6 packages start from €5,500 (£4,700), including 4/5-star hotel stay, VIP transfers, and 3D CBCT scans.',
+          ? 'Master Smile Studio kliniğimizde diş implantı tedavileri kişiye özel planlanır. 5 yıldızlı otel konaklaması, VIP transferler, 3D CBCT tomografi ve ömür boyu garanti içeren her şey dahil VIP paketlerimiz hakkında detaylı bilgi ve kişiye özel teklif almak için WhatsApp üzerinden iletişime geçebilirsiniz.'
+          : 'At Master Smile Studio, dental implant treatments are tailored individually. We offer all-inclusive VIP packages (5-star hotel accommodation, VIP Mercedes transfers, 3D CBCT scans, and lifetime warranty). Contact our patient coordinators on WhatsApp for a personalized, transparent quote.',
     },
     {
       q:
@@ -304,38 +295,20 @@ export function generateTreatmentJsonLd({
       // 2. PHYSICIANS (Doctors)
       {
         '@type': 'Physician',
-        '@id': `${siteUrl}/#physician-onur-yuksel`,
-        name: 'Dr. Dt. Onur Utku Yüksel',
-        jobTitle: 'Co-Founder & Specialist Oral Implantologist',
-        image: '/treatments/accordion/Dr.Dt.-Onur-Utku-Yuksel.jpg',
+        '@id': `${siteUrl}/#physician-firat-iskender`,
+        name: 'Dt. Fırat İskender',
+        jobTitle: 'Co-Founder & Specialist Dentist',
+        image: '/team/firat-iskender.webp',
         medicalSpecialty: 'OralSurgery',
         worksFor: { '@id': clinicId },
       },
       {
         '@type': 'Physician',
-        '@id': `${siteUrl}/#physician-ufuk-agdasan`,
-        name: 'Dt. Ufuk Ağdaşan',
-        jobTitle: 'Co-Founder & Aesthetic Dentist',
-        image: '/treatments/accordion/Dt.Ufuk-Agdasan.jpg',
+        '@id': `${siteUrl}/#physician-ozan-ozturk`,
+        name: 'Dr. Ozan Öztürk',
+        jobTitle: 'Aesthetic & Restorative Dentist',
+        image: '/team/ozan-ozturk.webp',
         medicalSpecialty: 'CosmeticDentistry',
-        worksFor: { '@id': clinicId },
-      },
-      {
-        '@type': 'Physician',
-        '@id': `${siteUrl}/#physician-serdar-unal`,
-        name: 'MSc. Dt. Hakkı Serdar Ünal',
-        jobTitle: 'Co-Founder & Prosthodontist',
-        image: '/treatments/accordion/Dt.Hakki-Serdar-unal.jpg',
-        medicalSpecialty: 'Prosthodontics',
-        worksFor: { '@id': clinicId },
-      },
-      {
-        '@type': 'Physician',
-        '@id': `${siteUrl}/#physician-cagatay-cakir`,
-        name: 'Dt. Çağatay Çakır',
-        jobTitle: 'Dentist',
-        image: '/treatments/accordion/cagatay-cakir.jpg',
-        medicalSpecialty: 'Dentistry',
         worksFor: { '@id': clinicId },
       },
 
@@ -364,11 +337,9 @@ export function generateTreatmentJsonLd({
           sameAs: wikiUri,
         })),
         offers: {
-          '@type': 'AggregateOffer',
+          '@type': 'Offer',
           priceCurrency: 'EUR',
-          lowPrice: currentEntity.lowPrice,
-          highPrice: currentEntity.highPrice,
-          offerCount: 6,
+          availability: 'https://schema.org/InStock',
           seller: { '@id': clinicId },
         },
         provider: { '@id': clinicId },

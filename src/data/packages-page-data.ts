@@ -8,9 +8,7 @@ export interface PackageCardData {
   includedTitle: Record<string, string>;
   inclusions: Record<string, string>[];
   note: Record<string, string>;
-  usd: string;
-  eur: string;
-  gbp: string;
+  vipBadge?: Record<string, string>;
   ctaText: Record<string, string>;
 }
 
@@ -165,9 +163,15 @@ export const PACKAGES_DATA: PackageCategoryGroup[] = [
           es: 'Los precios del paquete son por arcada (un maxilar).',
           ru: 'Цены на пакет указаны за одну челюсть.',
         },
-        usd: '$5,700',
-        eur: '€4,900',
-        gbp: '£4,200',
+        vipBadge: {
+          en: 'All-Inclusive VIP Package',
+          tr: 'Her Şey Dahil VIP Paket',
+          de: 'All-Inclusive VIP-Paket',
+          pl: 'Pakiet VIP All-Inclusive',
+          pt: 'Pacote VIP Tudo Incluído',
+          es: 'Paquete VIP Todo Incluido',
+          ru: 'VIP-пакет «Все включено»'
+        },
         ctaText: {
           en: 'Get Personalized Quote Now',
           tr: 'Kişiye Özel Teklif Al',
@@ -310,9 +314,15 @@ export const PACKAGES_DATA: PackageCategoryGroup[] = [
           es: 'Los precios del paquete son por arcada (un maxilar).',
           ru: 'Цены на пакет указаны за одну челюсть.',
         },
-        usd: '$6,400',
-        eur: '€5,500',
-        gbp: '£4,750',
+        vipBadge: {
+          en: 'All-Inclusive VIP Package',
+          tr: 'Her Şey Dahil VIP Paket',
+          de: 'All-Inclusive VIP-Paket',
+          pl: 'Pakiet VIP All-Inclusive',
+          pt: 'Pacote VIP Tudo Incluído',
+          es: 'Paquete VIP Todo Incluido',
+          ru: 'VIP-пакет «Все включено»'
+        },
         ctaText: {
           en: 'Get Personalized Quote Now',
           tr: 'Kişiye Özel Teklif Al',
@@ -455,9 +465,15 @@ export const PACKAGES_DATA: PackageCategoryGroup[] = [
           es: 'Los precios del paquete son por arcada (un maxilar).',
           ru: 'Цены на пакет указаны за одну челюсть.',
         },
-        usd: '$9,300',
-        eur: '€8,000',
-        gbp: '£6,900',
+        vipBadge: {
+          en: 'All-Inclusive VIP Package',
+          tr: 'Her Şey Dahil VIP Paket',
+          de: 'All-Inclusive VIP-Paket',
+          pl: 'Pakiet VIP All-Inclusive',
+          pt: 'Pacote VIP Tudo Incluído',
+          es: 'Paquete VIP Todo Incluido',
+          ru: 'VIP-пакет «Все включено»'
+        },
         ctaText: {
           en: 'Get Personalized Quote Now',
           tr: 'Kişiye Özel Teklif Al',
@@ -600,9 +616,15 @@ export const PACKAGES_DATA: PackageCategoryGroup[] = [
           es: 'Los precios del paquete son por arcada (un maxilar).',
           ru: 'Цены на пакет указаны за одну челюсть.',
         },
-        usd: '$6,900',
-        eur: '€6,000',
-        gbp: '£5,100',
+        vipBadge: {
+          en: 'All-Inclusive VIP Package',
+          tr: 'Her Şey Dahil VIP Paket',
+          de: 'All-Inclusive VIP-Paket',
+          pl: 'Pakiet VIP All-Inclusive',
+          pt: 'Pacote VIP Tudo Incluído',
+          es: 'Paquete VIP Todo Incluido',
+          ru: 'VIP-пакет «Все включено»'
+        },
         ctaText: {
           en: 'Get Personalized Quote Now',
           tr: 'Kişiye Özel Teklif Al',
@@ -745,9 +767,15 @@ export const PACKAGES_DATA: PackageCategoryGroup[] = [
           es: 'Los precios del paquete son por arcada (un maxilar).',
           ru: 'Цены на пакет указаны за одну челюсть.',
         },
-        usd: '$6,900',
-        eur: '€6,000',
-        gbp: '£5,100',
+        vipBadge: {
+          en: 'All-Inclusive VIP Package',
+          tr: 'Her Şey Dahil VIP Paket',
+          de: 'All-Inclusive VIP-Paket',
+          pl: 'Pakiet VIP All-Inclusive',
+          pt: 'Pacote VIP Tudo Incluído',
+          es: 'Paquete VIP Todo Incluido',
+          ru: 'VIP-пакет «Все включено»'
+        },
         ctaText: {
           en: 'Get Personalized Quote Now',
           tr: 'Kişiye Özel Teklif Al',
@@ -890,9 +918,15 @@ export const PACKAGES_DATA: PackageCategoryGroup[] = [
           es: 'Los precios del paquete son por arcada (un maxilar).',
           ru: 'Цены на пакет указаны за одну челюсть.',
         },
-        usd: '$6,600',
-        eur: '€5,750',
-        gbp: '£4,900',
+        vipBadge: {
+          en: 'All-Inclusive VIP Package',
+          tr: 'Her Şey Dahil VIP Paket',
+          de: 'All-Inclusive VIP-Paket',
+          pl: 'Pakiet VIP All-Inclusive',
+          pt: 'Pacote VIP Tudo Incluído',
+          es: 'Paquete VIP Todo Incluido',
+          ru: 'VIP-пакет «Все включено»'
+        },
         ctaText: {
           en: 'Get Personalized Quote Now',
           tr: 'Kişiye Özel Teklif Al',
@@ -1035,9 +1069,15 @@ export const PACKAGES_DATA: PackageCategoryGroup[] = [
           es: 'Los precios del paquete son por arcada (un maxilar).',
           ru: 'Цены на пакет указаны за одну челюсть.',
         },
-        usd: '$6,400',
-        eur: '€5,500',
-        gbp: '£4,700',
+        vipBadge: {
+          en: 'All-Inclusive VIP Package',
+          tr: 'Her Şey Dahil VIP Paket',
+          de: 'All-Inclusive VIP-Paket',
+          pl: 'Pakiet VIP All-Inclusive',
+          pt: 'Pacote VIP Tudo Incluído',
+          es: 'Paquete VIP Todo Incluido',
+          ru: 'VIP-пакет «Все включено»'
+        },
         ctaText: {
           en: 'Get Personalized Quote Now',
           tr: 'Kişiye Özel Teklif Al',
@@ -1180,9 +1220,15 @@ export const PACKAGES_DATA: PackageCategoryGroup[] = [
           es: 'Los precios del paquete son por arcada (un maxilar).',
           ru: 'Цены на пакет указаны за одну челюсть.',
         },
-        usd: '$7,500',
-        eur: '€6,500',
-        gbp: '£5,600',
+        vipBadge: {
+          en: 'All-Inclusive VIP Package',
+          tr: 'Her Şey Dahil VIP Paket',
+          de: 'All-Inclusive VIP-Paket',
+          pl: 'Pakiet VIP All-Inclusive',
+          pt: 'Pacote VIP Tudo Incluído',
+          es: 'Paquete VIP Todo Incluido',
+          ru: 'VIP-пакет «Все включено»'
+        },
         ctaText: {
           en: 'Get Personalized Quote Now',
           tr: 'Kişiye Özel Teklif Al',
@@ -1325,9 +1371,15 @@ export const PACKAGES_DATA: PackageCategoryGroup[] = [
           es: 'Los precios del pacote são por arcada (un maxilar).',
           ru: 'Цены на пакет указаны за одну челюсть.',
         },
-        usd: '$11,600',
-        eur: '€10,000',
-        gbp: '£8,600',
+        vipBadge: {
+          en: 'All-Inclusive VIP Package',
+          tr: 'Her Şey Dahil VIP Paket',
+          de: 'All-Inclusive VIP-Paket',
+          pl: 'Pakiet VIP All-Inclusive',
+          pt: 'Pacote VIP Tudo Incluído',
+          es: 'Paquete VIP Todo Incluido',
+          ru: 'VIP-пакет «Все включено»'
+        },
         ctaText: {
           en: 'Get Personalized Quote Now',
           tr: 'Kişiye Özel Teklif Al',
@@ -1470,9 +1522,15 @@ export const PACKAGES_DATA: PackageCategoryGroup[] = [
           es: 'Los precios del paquete son por arcada (un maxilar).',
           ru: 'Цены на пакет указаны за одну челюсть.',
         },
-        usd: '$8,000',
-        eur: '€7,000',
-        gbp: '£6,000',
+        vipBadge: {
+          en: 'All-Inclusive VIP Package',
+          tr: 'Her Şey Dahil VIP Paket',
+          de: 'All-Inclusive VIP-Paket',
+          pl: 'Pakiet VIP All-Inclusive',
+          pt: 'Pacote VIP Tudo Incluído',
+          es: 'Paquete VIP Todo Incluido',
+          ru: 'VIP-пакет «Все включено»'
+        },
         ctaText: {
           en: 'Get Personalized Quote Now',
           tr: 'Kişiye Özel Teklif Al',
@@ -1615,9 +1673,15 @@ export const PACKAGES_DATA: PackageCategoryGroup[] = [
           es: 'Los precios del paquete son por arcada (un maxilar).',
           ru: 'Цены на пакет указаны за одну челюсть.',
         },
-        usd: '$8,000',
-        eur: '€7,000',
-        gbp: '£6,000',
+        vipBadge: {
+          en: 'All-Inclusive VIP Package',
+          tr: 'Her Şey Dahil VIP Paket',
+          de: 'All-Inclusive VIP-Paket',
+          pl: 'Pakiet VIP All-Inclusive',
+          pt: 'Pacote VIP Tudo Incluído',
+          es: 'Paquete VIP Todo Incluido',
+          ru: 'VIP-пакет «Все включено»'
+        },
         ctaText: {
           en: 'Get Personalized Quote Now',
           tr: 'Kişiye Özel Teklif Al',
@@ -1760,9 +1824,15 @@ export const PACKAGES_DATA: PackageCategoryGroup[] = [
           es: 'Los precios del paquete son por arcada (un maxilar).',
           ru: 'Цены на пакет указаны за одну челюсть.',
         },
-        usd: '$7,700',
-        eur: '€6,750',
-        gbp: '£5,780',
+        vipBadge: {
+          en: 'All-Inclusive VIP Package',
+          tr: 'Her Şey Dahil VIP Paket',
+          de: 'All-Inclusive VIP-Paket',
+          pl: 'Pakiet VIP All-Inclusive',
+          pt: 'Pacote VIP Tudo Incluído',
+          es: 'Paquete VIP Todo Incluido',
+          ru: 'VIP-пакет «Все включено»'
+        },
         ctaText: {
           en: 'Get Personalized Quote Now',
           tr: 'Kişiye Özel Teklif Al',
@@ -1964,9 +2034,15 @@ export const PACKAGES_DATA: PackageCategoryGroup[] = [
           es: 'Su diseño de sonrisa final se planifica de acuerdo con sus proporciones faciales y estética natural.',
           ru: 'Ваш финальный дизайн улыбки планируется в гармонии с пропорциями лица и естественной эстетикой.',
         },
-        usd: '$5,800',
-        eur: '€5,000',
-        gbp: '£4,300',
+        vipBadge: {
+          en: 'All-Inclusive VIP Package',
+          tr: 'Her Şey Dahil VIP Paket',
+          de: 'All-Inclusive VIP-Paket',
+          pl: 'Pakiet VIP All-Inclusive',
+          pt: 'Pacote VIP Tudo Incluído',
+          es: 'Paquete VIP Todo Incluido',
+          ru: 'VIP-пакет «Все включено»'
+        },
         ctaText: {
           en: 'Get Personalized Quote Now',
           tr: 'Kişiye Özel Teklif Al',
@@ -2145,9 +2221,15 @@ export const PACKAGES_DATA: PackageCategoryGroup[] = [
           es: 'Su diseño de sonrisa final se planifica de acuerdo con sus proporciones faciales y estética natural.',
           ru: 'Ваш финальный дизайн улыбки планируется в гармонии с пропорциями лица и естественной эстетикой.',
         },
-        usd: '$8,120',
-        eur: '€7,000',
-        gbp: '£6,020',
+        vipBadge: {
+          en: 'All-Inclusive VIP Package',
+          tr: 'Her Şey Dahil VIP Paket',
+          de: 'All-Inclusive VIP-Paket',
+          pl: 'Pakiet VIP All-Inclusive',
+          pt: 'Pacote VIP Tudo Incluído',
+          es: 'Paquete VIP Todo Incluido',
+          ru: 'VIP-пакет «Все включено»'
+        },
         ctaText: {
           en: 'Get Personalized Quote Now',
           tr: 'Kişiye Özel Teklif Al',
@@ -2335,9 +2417,15 @@ export const PACKAGES_DATA: PackageCategoryGroup[] = [
           es: 'Su diseño de sonrisa final se planifica de acuerdo con sus proporciones faciales y estética natural.',
           ru: 'Ваш финальный дизайн улыбки планируется в гармонии с пропорциями лица и естественной эстетикой.',
         },
-        usd: '$8,120',
-        eur: '€7,000',
-        gbp: '£6,020',
+        vipBadge: {
+          en: 'All-Inclusive VIP Package',
+          tr: 'Her Şey Dahil VIP Paket',
+          de: 'All-Inclusive VIP-Paket',
+          pl: 'Pakiet VIP All-Inclusive',
+          pt: 'Pacote VIP Tudo Incluído',
+          es: 'Paquete VIP Todo Incluido',
+          ru: 'VIP-пакет «Все включено»'
+        },
         ctaText: {
           en: 'Get Personalized Quote Now',
           tr: 'Kişiye Özel Teklif Al',

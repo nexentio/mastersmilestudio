@@ -58,7 +58,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>5 to 7 days in Antalya.</strong> 3D intraoral digital impressions, precision abutment tooth preparation, temporary bridge placement, 5-axis CAD/CAM milling, and permanent cementation are completed during 1 visit.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel once to Antalya for your complete fixed bridge restoration. All clinical steps are finalized within a single 5 to 7-day stay.",
     "recoveryTime": "<strong>24 to 48 hours adaptation.</strong> Minor gum tenderness subsides quickly, allowing full chewing comfort and natural speech within 1 to 2 days.",
-    "priceEstimate": "<strong>Traditional bridge prices start at £140 / €160 / $175 per unit (from £420 / €480 / $530 for a 3-unit bridge).</strong> Complete multi-unit packages include 3D digital planning, luxury hotel stay, and VIP Mercedes transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "3-Unit Zirconia Traditional Bridge (1 Missing Tooth)",
@@ -74,11 +74,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "VIP Patient coordination assistance"
         ],
-        "price": {
-          "USD": "$790",
-          "EUR": "€720",
-          "GBP": "£630"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "4-Unit Zirconia Fixed Bridge (2 Missing Teeth)",
@@ -93,11 +89,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Airport & Clinic Transfers",
           "10-Year Comprehensive Warranty against bridge fracture"
         ],
-        "price": {
-          "USD": "$1,050",
-          "EUR": "€960",
-          "GBP": "£840"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "3-Unit Metal-Porcelain (PFM) Bridge",
@@ -112,11 +104,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Transfers",
           "5-Year Clinical Warranty"
         ],
-        "price": {
-          "USD": "$530",
-          "EUR": "€480",
-          "GBP": "£420"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Full Arch Fixed Zirconia Bridge Restoration",
@@ -130,11 +118,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Chauffeur for all appointments",
           "Lifetime international warranty & dental passport"
         ],
-        "price": {
-          "USD": "$3,950",
-          "EUR": "€3,600",
-          "GBP": "£3,150"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -180,7 +164,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>5 to 7 days in Antalya.</strong> 3D intraoral digital impressions, precision abutment tooth preparation, temporary bridge placement, 5-axis CAD/CAM milling, and permanent cementation are completed during 1 visit.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel once to Antalya for your complete fixed bridge restoration. All clinical steps are finalized within a single 5 to 7-day stay.",
     "recoveryTime": "<strong>24 to 48 hours adaptation.</strong> Minor gum tenderness subsides quickly, allowing full chewing comfort and natural speech within 1 to 2 days.",
-    "priceEstimate": "<strong>Traditional bridge prices start at £140 / €160 / $175 per unit (from £420 / €480 / $530 for a 3-unit bridge).</strong> Complete multi-unit packages include 3D digital planning, luxury hotel stay, and VIP Mercedes transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "3-Unit Zirconia Traditional Bridge (1 Missing Tooth)",
@@ -196,11 +180,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "VIP Patient coordination assistance"
         ],
-        "price": {
-          "USD": "$790",
-          "EUR": "€720",
-          "GBP": "£630"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "4-Unit Zirconia Fixed Bridge (2 Missing Teeth)",
@@ -215,11 +195,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Airport & Clinic Transfers",
           "10-Year Comprehensive Warranty against bridge fracture"
         ],
-        "price": {
-          "USD": "$1,050",
-          "EUR": "€960",
-          "GBP": "£840"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "3-Unit Metal-Porcelain (PFM) Bridge",
@@ -234,11 +210,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Transfers",
           "5-Year Clinical Warranty"
         ],
-        "price": {
-          "USD": "$530",
-          "EUR": "€480",
-          "GBP": "£420"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Full Arch Fixed Zirconia Bridge Restoration",
@@ -252,11 +224,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Chauffeur for all appointments",
           "Lifetime international warranty & dental passport"
         ],
-        "price": {
-          "USD": "$3,950",
-          "EUR": "€3,600",
-          "GBP": "£3,150"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -302,7 +270,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>5 to 7 days in Antalya.</strong> 3D intraoral digital impressions, precision abutment tooth preparation, temporary bridge placement, 5-axis CAD/CAM milling, and permanent cementation are completed during 1 visit.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel once to Antalya for your complete fixed bridge restoration. All clinical steps are finalized within a single 5 to 7-day stay.",
     "recoveryTime": "<strong>24 to 48 hours adaptation.</strong> Minor gum tenderness subsides quickly, allowing full chewing comfort and natural speech within 1 to 2 days.",
-    "priceEstimate": "<strong>Traditional bridge prices start at £140 / €160 / $175 per unit (from £420 / €480 / $530 for a 3-unit bridge).</strong> Complete multi-unit packages include 3D digital planning, luxury hotel stay, and VIP Mercedes transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "3-Unit Zirconia Traditional Bridge (1 Missing Tooth)",
@@ -318,11 +286,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "VIP Patient coordination assistance"
         ],
-        "price": {
-          "USD": "$790",
-          "EUR": "€720",
-          "GBP": "£630"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "4-Unit Zirconia Fixed Bridge (2 Missing Teeth)",
@@ -337,11 +301,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Airport & Clinic Transfers",
           "10-Year Comprehensive Warranty against bridge fracture"
         ],
-        "price": {
-          "USD": "$1,050",
-          "EUR": "€960",
-          "GBP": "£840"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "3-Unit Metal-Porcelain (PFM) Bridge",
@@ -356,11 +316,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Transfers",
           "5-Year Clinical Warranty"
         ],
-        "price": {
-          "USD": "$530",
-          "EUR": "€480",
-          "GBP": "£420"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Full Arch Fixed Zirconia Bridge Restoration",
@@ -374,11 +330,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Chauffeur for all appointments",
           "Lifetime international warranty & dental passport"
         ],
-        "price": {
-          "USD": "$3,950",
-          "EUR": "€3,600",
-          "GBP": "£3,150"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -424,7 +376,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>5 to 7 days in Antalya.</strong> 3D intraoral digital impressions, precision abutment tooth preparation, temporary bridge placement, 5-axis CAD/CAM milling, and permanent cementation are completed during 1 visit.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel once to Antalya for your complete fixed bridge restoration. All clinical steps are finalized within a single 5 to 7-day stay.",
     "recoveryTime": "<strong>24 to 48 hours adaptation.</strong> Minor gum tenderness subsides quickly, allowing full chewing comfort and natural speech within 1 to 2 days.",
-    "priceEstimate": "<strong>Traditional bridge prices start at £140 / €160 / $175 per unit (from £420 / €480 / $530 for a 3-unit bridge).</strong> Complete multi-unit packages include 3D digital planning, luxury hotel stay, and VIP Mercedes transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "3-Unit Zirconia Traditional Bridge (1 Missing Tooth)",
@@ -440,11 +392,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "VIP Patient coordination assistance"
         ],
-        "price": {
-          "USD": "$790",
-          "EUR": "€720",
-          "GBP": "£630"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "4-Unit Zirconia Fixed Bridge (2 Missing Teeth)",
@@ -459,11 +407,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Airport & Clinic Transfers",
           "10-Year Comprehensive Warranty against bridge fracture"
         ],
-        "price": {
-          "USD": "$1,050",
-          "EUR": "€960",
-          "GBP": "£840"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "3-Unit Metal-Porcelain (PFM) Bridge",
@@ -478,11 +422,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Transfers",
           "5-Year Clinical Warranty"
         ],
-        "price": {
-          "USD": "$530",
-          "EUR": "€480",
-          "GBP": "£420"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Full Arch Fixed Zirconia Bridge Restoration",
@@ -496,11 +436,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Chauffeur for all appointments",
           "Lifetime international warranty & dental passport"
         ],
-        "price": {
-          "USD": "$3,950",
-          "EUR": "€3,600",
-          "GBP": "£3,150"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -546,7 +482,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>5 to 7 days in Antalya.</strong> 3D intraoral digital impressions, precision abutment tooth preparation, temporary bridge placement, 5-axis CAD/CAM milling, and permanent cementation are completed during 1 visit.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel once to Antalya for your complete fixed bridge restoration. All clinical steps are finalized within a single 5 to 7-day stay.",
     "recoveryTime": "<strong>24 to 48 hours adaptation.</strong> Minor gum tenderness subsides quickly, allowing full chewing comfort and natural speech within 1 to 2 days.",
-    "priceEstimate": "<strong>Traditional bridge prices start at £140 / €160 / $175 per unit (from £420 / €480 / $530 for a 3-unit bridge).</strong> Complete multi-unit packages include 3D digital planning, luxury hotel stay, and VIP Mercedes transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "3-Unit Zirconia Traditional Bridge (1 Missing Tooth)",
@@ -562,11 +498,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "VIP Patient coordination assistance"
         ],
-        "price": {
-          "USD": "$790",
-          "EUR": "€720",
-          "GBP": "£630"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "4-Unit Zirconia Fixed Bridge (2 Missing Teeth)",
@@ -581,11 +513,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Airport & Clinic Transfers",
           "10-Year Comprehensive Warranty against bridge fracture"
         ],
-        "price": {
-          "USD": "$1,050",
-          "EUR": "€960",
-          "GBP": "£840"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "3-Unit Metal-Porcelain (PFM) Bridge",
@@ -600,11 +528,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Transfers",
           "5-Year Clinical Warranty"
         ],
-        "price": {
-          "USD": "$530",
-          "EUR": "€480",
-          "GBP": "£420"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Full Arch Fixed Zirconia Bridge Restoration",
@@ -618,11 +542,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Chauffeur for all appointments",
           "Lifetime international warranty & dental passport"
         ],
-        "price": {
-          "USD": "$3,950",
-          "EUR": "€3,600",
-          "GBP": "£3,150"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -668,7 +588,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>5 to 7 days in Antalya.</strong> 3D intraoral digital impressions, precision abutment tooth preparation, temporary bridge placement, 5-axis CAD/CAM milling, and permanent cementation are completed during 1 visit.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel once to Antalya for your complete fixed bridge restoration. All clinical steps are finalized within a single 5 to 7-day stay.",
     "recoveryTime": "<strong>24 to 48 hours adaptation.</strong> Minor gum tenderness subsides quickly, allowing full chewing comfort and natural speech within 1 to 2 days.",
-    "priceEstimate": "<strong>Traditional bridge prices start at £140 / €160 / $175 per unit (from £420 / €480 / $530 for a 3-unit bridge).</strong> Complete multi-unit packages include 3D digital planning, luxury hotel stay, and VIP Mercedes transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "3-Unit Zirconia Traditional Bridge (1 Missing Tooth)",
@@ -684,11 +604,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "VIP Patient coordination assistance"
         ],
-        "price": {
-          "USD": "$790",
-          "EUR": "€720",
-          "GBP": "£630"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "4-Unit Zirconia Fixed Bridge (2 Missing Teeth)",
@@ -703,11 +619,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Airport & Clinic Transfers",
           "10-Year Comprehensive Warranty against bridge fracture"
         ],
-        "price": {
-          "USD": "$1,050",
-          "EUR": "€960",
-          "GBP": "£840"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "3-Unit Metal-Porcelain (PFM) Bridge",
@@ -722,11 +634,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Transfers",
           "5-Year Clinical Warranty"
         ],
-        "price": {
-          "USD": "$530",
-          "EUR": "€480",
-          "GBP": "£420"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Full Arch Fixed Zirconia Bridge Restoration",
@@ -740,11 +648,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Chauffeur for all appointments",
           "Lifetime international warranty & dental passport"
         ],
-        "price": {
-          "USD": "$3,950",
-          "EUR": "€3,600",
-          "GBP": "£3,150"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -790,7 +694,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>5 to 7 days in Antalya.</strong> 3D intraoral digital impressions, precision abutment tooth preparation, temporary bridge placement, 5-axis CAD/CAM milling, and permanent cementation are completed during 1 visit.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel once to Antalya for your complete fixed bridge restoration. All clinical steps are finalized within a single 5 to 7-day stay.",
     "recoveryTime": "<strong>24 to 48 hours adaptation.</strong> Minor gum tenderness subsides quickly, allowing full chewing comfort and natural speech within 1 to 2 days.",
-    "priceEstimate": "<strong>Traditional bridge prices start at £140 / €160 / $175 per unit (from £420 / €480 / $530 for a 3-unit bridge).</strong> Complete multi-unit packages include 3D digital planning, luxury hotel stay, and VIP Mercedes transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "3-Unit Zirconia Traditional Bridge (1 Missing Tooth)",
@@ -806,11 +710,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "VIP Patient coordination assistance"
         ],
-        "price": {
-          "USD": "$790",
-          "EUR": "€720",
-          "GBP": "£630"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "4-Unit Zirconia Fixed Bridge (2 Missing Teeth)",
@@ -825,11 +725,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Airport & Clinic Transfers",
           "10-Year Comprehensive Warranty against bridge fracture"
         ],
-        "price": {
-          "USD": "$1,050",
-          "EUR": "€960",
-          "GBP": "£840"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "3-Unit Metal-Porcelain (PFM) Bridge",
@@ -844,11 +740,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Transfers",
           "5-Year Clinical Warranty"
         ],
-        "price": {
-          "USD": "$530",
-          "EUR": "€480",
-          "GBP": "£420"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Full Arch Fixed Zirconia Bridge Restoration",
@@ -862,11 +754,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Chauffeur for all appointments",
           "Lifetime international warranty & dental passport"
         ],
-        "price": {
-          "USD": "$3,950",
-          "EUR": "€3,600",
-          "GBP": "£3,150"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -1050,9 +938,9 @@ export default function TraditionalBridgesDetailView() {
 
                 <div className={styles.pkgFooter}>
                   <div className={styles.pkgPriceRow}>
-                    <span className={styles.pkgPriceLabel}>{d.priceLabel}</span>
-                    <strong className={styles.pkgPriceValue}>
-                      {pkg.price[currency]}
+                    <span className={styles.pkgPriceLabel}>{locale === 'tr' ? 'VIP Paket Kapsamı' : 'VIP All-Inclusive'}</span>
+                    <strong className={styles.pkgPriceValue} style={{ fontSize: '0.95rem', color: '#059669', fontWeight: '700' }}>
+                      {locale === 'tr' ? 'Kişiye Özel Fiyat Teklifi' : 'Personalized VIP Quote'}
                     </strong>
                   </div>
 

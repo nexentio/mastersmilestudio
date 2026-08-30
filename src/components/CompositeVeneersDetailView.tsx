@@ -58,7 +58,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>2 to 4 days in Antalya.</strong> Direct composite veneers and bonding can often be completed in 1 to 2 clinical sessions with immediate same-day smile results.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to visit Antalya once. Your composite veneers or smile bonding are sculpted, cured, and high-gloss polished in a single visit.",
     "recoveryTime": "<strong>Immediate recovery.</strong> Zero downtime and no invasive enamel reduction. You can eat, speak, and smile immediately following your chairside appointment.",
-    "priceEstimate": "<strong>Composite Veneer prices start at £110 / €125 / $140 per tooth.</strong> Multi-unit smile packages (6, 8, or 16 teeth) include comprehensive 3D smile analysis, luxury hotel accommodation, and VIP transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "Single Composite Veneer / Bonding",
@@ -73,11 +73,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "5-Year Clinical Craftsmanship Warranty",
           "Personalized patient coordinator assistance"
         ],
-        "price": {
-          "USD": "$140",
-          "EUR": "€125",
-          "GBP": "£110"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "8-Unit Smile Line Composite Makeover",
@@ -94,11 +90,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Comprehensive high-gloss polish & surface sealant",
           "5-Year Clinical Warranty & aftercare kit"
         ],
-        "price": {
-          "USD": "$980",
-          "EUR": "€890",
-          "GBP": "£780"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "16-Unit Full Composite Smile Makeover",
@@ -114,11 +106,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Custom dental night guard & protective travel kit",
           "5-Year Clinical Warranty on all bonded surfaces"
         ],
-        "price": {
-          "USD": "$1,850",
-          "EUR": "€1,690",
-          "GBP": "£1,490"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Diastema Closure & Edge Bonding Package",
@@ -132,11 +120,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Transfers",
           "5-Year Clinical Warranty"
         ],
-        "price": {
-          "USD": "$570",
-          "EUR": "€520",
-          "GBP": "£450"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -181,7 +165,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>2 to 4 days in Antalya.</strong> Direct composite veneers and bonding can often be completed in 1 to 2 clinical sessions with immediate same-day smile results.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to visit Antalya once. Your composite veneers or smile bonding are sculpted, cured, and high-gloss polished in a single visit.",
     "recoveryTime": "<strong>Immediate recovery.</strong> Zero downtime and no invasive enamel reduction. You can eat, speak, and smile immediately following your chairside appointment.",
-    "priceEstimate": "<strong>Composite Veneer prices start at £110 / €125 / $140 per tooth.</strong> Multi-unit smile packages (6, 8, or 16 teeth) include comprehensive 3D smile analysis, luxury hotel accommodation, and VIP transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "Single Composite Veneer / Bonding",
@@ -196,11 +180,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "5-Year Clinical Craftsmanship Warranty",
           "Personalized patient coordinator assistance"
         ],
-        "price": {
-          "USD": "$140",
-          "EUR": "€125",
-          "GBP": "£110"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "8-Unit Smile Line Composite Makeover",
@@ -217,11 +197,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Comprehensive high-gloss polish & surface sealant",
           "5-Year Clinical Warranty & aftercare kit"
         ],
-        "price": {
-          "USD": "$980",
-          "EUR": "€890",
-          "GBP": "£780"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "16-Unit Full Composite Smile Makeover",
@@ -237,11 +213,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Custom dental night guard & protective travel kit",
           "5-Year Clinical Warranty on all bonded surfaces"
         ],
-        "price": {
-          "USD": "$1,850",
-          "EUR": "€1,690",
-          "GBP": "£1,490"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Diastema Closure & Edge Bonding Package",
@@ -255,11 +227,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Transfers",
           "5-Year Clinical Warranty"
         ],
-        "price": {
-          "USD": "$570",
-          "EUR": "€520",
-          "GBP": "£450"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -304,7 +272,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>2 to 4 days in Antalya.</strong> Direct composite veneers and bonding can often be completed in 1 to 2 clinical sessions with immediate same-day smile results.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to visit Antalya once. Your composite veneers or smile bonding are sculpted, cured, and high-gloss polished in a single visit.",
     "recoveryTime": "<strong>Immediate recovery.</strong> Zero downtime and no invasive enamel reduction. You can eat, speak, and smile immediately following your chairside appointment.",
-    "priceEstimate": "<strong>Composite Veneer prices start at £110 / €125 / $140 per tooth.</strong> Multi-unit smile packages (6, 8, or 16 teeth) include comprehensive 3D smile analysis, luxury hotel accommodation, and VIP transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "Single Composite Veneer / Bonding",
@@ -319,11 +287,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "5-Year Clinical Craftsmanship Warranty",
           "Personalized patient coordinator assistance"
         ],
-        "price": {
-          "USD": "$140",
-          "EUR": "€125",
-          "GBP": "£110"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "8-Unit Smile Line Composite Makeover",
@@ -340,11 +304,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Comprehensive high-gloss polish & surface sealant",
           "5-Year Clinical Warranty & aftercare kit"
         ],
-        "price": {
-          "USD": "$980",
-          "EUR": "€890",
-          "GBP": "£780"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "16-Unit Full Composite Smile Makeover",
@@ -360,11 +320,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Custom dental night guard & protective travel kit",
           "5-Year Clinical Warranty on all bonded surfaces"
         ],
-        "price": {
-          "USD": "$1,850",
-          "EUR": "€1,690",
-          "GBP": "£1,490"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Diastema Closure & Edge Bonding Package",
@@ -378,11 +334,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Transfers",
           "5-Year Clinical Warranty"
         ],
-        "price": {
-          "USD": "$570",
-          "EUR": "€520",
-          "GBP": "£450"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -427,7 +379,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>2 to 4 days in Antalya.</strong> Direct composite veneers and bonding can often be completed in 1 to 2 clinical sessions with immediate same-day smile results.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to visit Antalya once. Your composite veneers or smile bonding are sculpted, cured, and high-gloss polished in a single visit.",
     "recoveryTime": "<strong>Immediate recovery.</strong> Zero downtime and no invasive enamel reduction. You can eat, speak, and smile immediately following your chairside appointment.",
-    "priceEstimate": "<strong>Composite Veneer prices start at £110 / €125 / $140 per tooth.</strong> Multi-unit smile packages (6, 8, or 16 teeth) include comprehensive 3D smile analysis, luxury hotel accommodation, and VIP transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "Single Composite Veneer / Bonding",
@@ -442,11 +394,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "5-Year Clinical Craftsmanship Warranty",
           "Personalized patient coordinator assistance"
         ],
-        "price": {
-          "USD": "$140",
-          "EUR": "€125",
-          "GBP": "£110"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "8-Unit Smile Line Composite Makeover",
@@ -463,11 +411,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Comprehensive high-gloss polish & surface sealant",
           "5-Year Clinical Warranty & aftercare kit"
         ],
-        "price": {
-          "USD": "$980",
-          "EUR": "€890",
-          "GBP": "£780"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "16-Unit Full Composite Smile Makeover",
@@ -483,11 +427,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Custom dental night guard & protective travel kit",
           "5-Year Clinical Warranty on all bonded surfaces"
         ],
-        "price": {
-          "USD": "$1,850",
-          "EUR": "€1,690",
-          "GBP": "£1,490"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Diastema Closure & Edge Bonding Package",
@@ -501,11 +441,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Transfers",
           "5-Year Clinical Warranty"
         ],
-        "price": {
-          "USD": "$570",
-          "EUR": "€520",
-          "GBP": "£450"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -550,7 +486,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>2 to 4 days in Antalya.</strong> Direct composite veneers and bonding can often be completed in 1 to 2 clinical sessions with immediate same-day smile results.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to visit Antalya once. Your composite veneers or smile bonding are sculpted, cured, and high-gloss polished in a single visit.",
     "recoveryTime": "<strong>Immediate recovery.</strong> Zero downtime and no invasive enamel reduction. You can eat, speak, and smile immediately following your chairside appointment.",
-    "priceEstimate": "<strong>Composite Veneer prices start at £110 / €125 / $140 per tooth.</strong> Multi-unit smile packages (6, 8, or 16 teeth) include comprehensive 3D smile analysis, luxury hotel accommodation, and VIP transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "Single Composite Veneer / Bonding",
@@ -565,11 +501,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "5-Year Clinical Craftsmanship Warranty",
           "Personalized patient coordinator assistance"
         ],
-        "price": {
-          "USD": "$140",
-          "EUR": "€125",
-          "GBP": "£110"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "8-Unit Smile Line Composite Makeover",
@@ -586,11 +518,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Comprehensive high-gloss polish & surface sealant",
           "5-Year Clinical Warranty & aftercare kit"
         ],
-        "price": {
-          "USD": "$980",
-          "EUR": "€890",
-          "GBP": "£780"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "16-Unit Full Composite Smile Makeover",
@@ -606,11 +534,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Custom dental night guard & protective travel kit",
           "5-Year Clinical Warranty on all bonded surfaces"
         ],
-        "price": {
-          "USD": "$1,850",
-          "EUR": "€1,690",
-          "GBP": "£1,490"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Diastema Closure & Edge Bonding Package",
@@ -624,11 +548,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Transfers",
           "5-Year Clinical Warranty"
         ],
-        "price": {
-          "USD": "$570",
-          "EUR": "€520",
-          "GBP": "£450"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -673,7 +593,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>2 to 4 days in Antalya.</strong> Direct composite veneers and bonding can often be completed in 1 to 2 clinical sessions with immediate same-day smile results.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to visit Antalya once. Your composite veneers or smile bonding are sculpted, cured, and high-gloss polished in a single visit.",
     "recoveryTime": "<strong>Immediate recovery.</strong> Zero downtime and no invasive enamel reduction. You can eat, speak, and smile immediately following your chairside appointment.",
-    "priceEstimate": "<strong>Composite Veneer prices start at £110 / €125 / $140 per tooth.</strong> Multi-unit smile packages (6, 8, or 16 teeth) include comprehensive 3D smile analysis, luxury hotel accommodation, and VIP transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "Single Composite Veneer / Bonding",
@@ -688,11 +608,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "5-Year Clinical Craftsmanship Warranty",
           "Personalized patient coordinator assistance"
         ],
-        "price": {
-          "USD": "$140",
-          "EUR": "€125",
-          "GBP": "£110"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "8-Unit Smile Line Composite Makeover",
@@ -709,11 +625,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Comprehensive high-gloss polish & surface sealant",
           "5-Year Clinical Warranty & aftercare kit"
         ],
-        "price": {
-          "USD": "$980",
-          "EUR": "€890",
-          "GBP": "£780"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "16-Unit Full Composite Smile Makeover",
@@ -729,11 +641,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Custom dental night guard & protective travel kit",
           "5-Year Clinical Warranty on all bonded surfaces"
         ],
-        "price": {
-          "USD": "$1,850",
-          "EUR": "€1,690",
-          "GBP": "£1,490"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Diastema Closure & Edge Bonding Package",
@@ -747,11 +655,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Transfers",
           "5-Year Clinical Warranty"
         ],
-        "price": {
-          "USD": "$570",
-          "EUR": "€520",
-          "GBP": "£450"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -796,7 +700,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>2 to 4 days in Antalya.</strong> Direct composite veneers and bonding can often be completed in 1 to 2 clinical sessions with immediate same-day smile results.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to visit Antalya once. Your composite veneers or smile bonding are sculpted, cured, and high-gloss polished in a single visit.",
     "recoveryTime": "<strong>Immediate recovery.</strong> Zero downtime and no invasive enamel reduction. You can eat, speak, and smile immediately following your chairside appointment.",
-    "priceEstimate": "<strong>Composite Veneer prices start at £110 / €125 / $140 per tooth.</strong> Multi-unit smile packages (6, 8, or 16 teeth) include comprehensive 3D smile analysis, luxury hotel accommodation, and VIP transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "Single Composite Veneer / Bonding",
@@ -811,11 +715,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "5-Year Clinical Craftsmanship Warranty",
           "Personalized patient coordinator assistance"
         ],
-        "price": {
-          "USD": "$140",
-          "EUR": "€125",
-          "GBP": "£110"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "8-Unit Smile Line Composite Makeover",
@@ -832,11 +732,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Comprehensive high-gloss polish & surface sealant",
           "5-Year Clinical Warranty & aftercare kit"
         ],
-        "price": {
-          "USD": "$980",
-          "EUR": "€890",
-          "GBP": "£780"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "16-Unit Full Composite Smile Makeover",
@@ -852,11 +748,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Custom dental night guard & protective travel kit",
           "5-Year Clinical Warranty on all bonded surfaces"
         ],
-        "price": {
-          "USD": "$1,850",
-          "EUR": "€1,690",
-          "GBP": "£1,490"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Diastema Closure & Edge Bonding Package",
@@ -870,11 +762,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Transfers",
           "5-Year Clinical Warranty"
         ],
-        "price": {
-          "USD": "$570",
-          "EUR": "€520",
-          "GBP": "£450"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -1057,9 +945,9 @@ export default function CompositeVeneersDetailView() {
 
                 <div className={styles.pkgFooter}>
                   <div className={styles.pkgPriceRow}>
-                    <span className={styles.pkgPriceLabel}>{d.priceLabel}</span>
-                    <strong className={styles.pkgPriceValue}>
-                      {pkg.price[currency]}
+                    <span className={styles.pkgPriceLabel}>{locale === 'tr' ? 'VIP Paket Kapsamı' : 'VIP All-Inclusive'}</span>
+                    <strong className={styles.pkgPriceValue} style={{ fontSize: '0.95rem', color: '#059669', fontWeight: '700' }}>
+                      {locale === 'tr' ? 'Kişiye Özel Fiyat Teklifi' : 'Personalized VIP Quote'}
                     </strong>
                   </div>
 

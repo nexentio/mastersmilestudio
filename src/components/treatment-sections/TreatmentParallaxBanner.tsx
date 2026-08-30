@@ -148,7 +148,7 @@ export default function TreatmentParallaxBanner() {
 
           {/* Direct Phone Call */}
           <a
-            href={`tel:${SITE_CONFIG.phone}`}
+            href={`tel:${SITE_CONFIG.phone.replace(/[^0-9+]/g, '')}`}
             className={styles.circleBtnPhone}
             aria-label={`Call clinic phone ${SITE_CONFIG.phone}`}
             title={`Call ${SITE_CONFIG.phone}`}

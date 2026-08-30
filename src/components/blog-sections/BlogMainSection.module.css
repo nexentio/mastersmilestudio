@@ -43,7 +43,8 @@
 .imgWrapper {
   position: relative;
   width: 100%;
-  height: 220px;
+  aspect-ratio: 16 / 9;
+  height: auto;
   border-radius: 4px;
   overflow: hidden;
   margin-bottom: 0.85rem;
@@ -167,79 +168,281 @@
   font-weight: 700;
 }
 
-/* Minikart Consultation */
-.minikart {
+/* VIP Consultation Widget */
+.consultationWidget {
   background-color: #ffffff;
-  border: 1px solid #eeeeee;
-  border-radius: 4px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
   overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
 }
 
-.adSide {
-  background-color: #111111;
-  color: #ffffff;
-  padding: 0.65rem 1rem;
-  font-size: 0.85rem;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  text-align: center;
-}
-
-.imSide {
+.widgetBanner {
   position: relative;
   width: 100%;
-  aspect-ratio: 1 / 1;
-  border-radius: 14px;
+  aspect-ratio: 582 / 578;
+  background-color: #0c1b4d;
   overflow: hidden;
-  margin-bottom: 1rem;
-  background-color: #000000;
 }
 
-.imLink {
-  position: relative;
+.widgetBannerImg {
   width: 100%;
   height: 100%;
+  object-fit: contain;
   display: block;
+  transition: transform 0.35s ease;
 }
 
-.imImgSide {
-  object-fit: cover;
-  object-position: center;
+.consultationWidget:hover .widgetBannerImg {
+  transform: scale(1.02);
 }
 
-.miniCardBody {
-  padding: 1.15rem;
+.widgetBody {
+  padding: 1.25rem;
 }
 
-.miniCardTitle {
-  font-size: 0.95rem;
+.widgetBrand {
+  font-size: 0.75rem;
   font-weight: 700;
-  color: #111111;
-  margin: 0 0 0.4rem 0;
+  color: #c8973a;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.35rem;
 }
 
-.miniCardSubtitle {
-  font-size: 0.8rem;
-  color: #666666;
-  margin: 0 0 0.85rem 0;
-  line-height: 1.4;
+.widgetTitle {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.3;
+  margin: 0 0 0.45rem 0;
 }
 
-.miniQuoteBtn {
-  display: block;
-  text-align: center;
-  background-color: #c8973a;
+.widgetSubtitle {
+  font-size: 0.825rem;
+  color: #64748b;
+  line-height: 1.45;
+  margin: 0 0 1rem 0;
+}
+
+.widgetBtnWhatsApp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  background-color: #25d366;
   color: #ffffff;
-  padding: 0.65rem 1rem;
-  border-radius: 4px;
-  font-weight: 700;
-  font-size: 0.85rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
   text-decoration: none;
-  transition: background-color 0.2s ease;
+  margin-bottom: 0.65rem;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  box-shadow: 0 2px 8px rgba(37, 211, 102, 0.25);
 }
 
-.miniQuoteBtn:hover {
-  background-color: #a87d2c;
+.widgetBtnWhatsApp:hover {
+  background-color: #1ebd5a;
+  transform: translateY(-1px);
+}
+
+.widgetActionRow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.widgetBtnQuote {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0c1b4d;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.825rem;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.widgetBtnQuote:hover {
+  background-color: #1e3a8a;
+  transform: translateY(-1px);
+}
+
+.widgetBtnPhone {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  color: #0c1b4d;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.widgetBtnPhone:hover {
+  background-color: #0c1b4d;
+  color: #ffffff;
+  border-color: #0c1b4d;
+  transform: translateY(-1px);
+}
+
+/* Clean Official Certificate Card */
+.certCard {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+  cursor: pointer;
+  transition: all 0.25s ease;
+  user-select: none;
+}
+
+.certCard:hover {
+  transform: translateY(-2px);
+  border-color: #c8973a;
+  box-shadow: 0 8px 24px rgba(200, 151, 58, 0.12);
+}
+
+.certFrame {
+  position: relative;
+  width: 100%;
+  background-color: #f8fafc;
+  padding: 8px;
+  overflow: hidden;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.certImg {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+}
+
+.certCard:hover .certImg {
+  transform: scale(1.02);
+}
+
+.certHoverBadge {
+  position: absolute;
+  inset: 0;
+  background: rgba(12, 27, 77, 0.45);
+  backdrop-filter: blur(2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.certCard:hover .certHoverBadge {
+  opacity: 1;
+}
+
+.certZoomIcon {
+  font-size: 1.1rem;
+}
+
+.certCaption {
+  padding: 0.75rem 1rem;
+  background: #ffffff;
+}
+
+.certCaptionTitle {
+  font-size: 0.825rem;
+  font-weight: 700;
+  color: #0c1b4d;
+  line-height: 1.3;
+}
+
+.certCaptionSub {
+  font-size: 0.72rem;
+  color: #64748b;
+  font-weight: 500;
+  margin-top: 2px;
+}
+
+/* Modal Lightbox */
+.modalBackdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  background: rgba(0, 0, 0, 0.78);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  animation: fadeIn 0.2s ease;
+}
+
+.modalContainer {
+  position: relative;
+  background: #ffffff;
+  border-radius: 12px;
+  max-width: 880px;
+  width: 100%;
+  max-height: 92vh;
+  overflow: visible;
+  box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.modalCloseBtn {
+  position: absolute;
+  top: -14px;
+  right: -14px;
+  background: #0f172a;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  z-index: 10;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.modalCloseBtn:hover {
+  background: #ef4444;
+  transform: rotate(90deg) scale(1.08);
+}
+
+.modalImgWrap {
+  padding: 8px;
+  background: #ffffff;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 /* Sidebar Treatments */

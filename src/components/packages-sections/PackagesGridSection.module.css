@@ -167,60 +167,84 @@
   min-height: 44px;
 }
 
-.fiyatlar {
-  background-color: #f8fafc;
-  border: 1px solid #eef2f6;
-  border-radius: 12px;
-  padding: 1rem;
+.vipBox {
+  background: linear-gradient(180deg, #484b56 0%, #2c2f38 24%, #181a22 58%, #08090c 100%);
+  border: 1.5px solid #525663;
+  border-radius: 14px;
+  padding: 0.9rem 1rem;
   margin-bottom: 1.15rem;
   text-align: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
 }
 
-.fiyatgrid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0.5rem;
-  font-weight: 600;
-  font-size: 1.15rem;
-  color: #0c1b4d;
+.vipTitle {
+  font-size: 0.96rem;
+  font-weight: 700;
+  color: #ffffff;
   font-family: var(--font-outfit), sans-serif;
-  padding-bottom: 0.65rem;
-  border-bottom: 1px solid #e2e8f0;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
 
-.fiyatinfo {
-  font-size: 0.78rem;
-  color: #64748b;
-  font-weight: 600;
+.vipSub {
+  font-size: 0.8rem;
+  color: #f1f5f9;
+  font-weight: 500;
+  line-height: 1.35;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-.buton {
+.buttonGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
   width: 100%;
 }
 
-.ctaLink {
+.waButton {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
   width: 100%;
-  padding: 0.85rem 1rem;
-  background-color: #0c1b4d;
+  padding: 0.75rem 1rem;
+  background-color: #25D366;
   color: #ffffff;
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   border-radius: 10px;
   text-decoration: none;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
   transition: all 0.2s ease;
-  box-shadow: 0 4px 14px rgba(12, 27, 77, 0.2);
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.25);
 }
 
-.ctaLink:hover {
-  background-color: #D58936;
-  box-shadow: 0 6px 18px rgba(213, 137, 54, 0.35);
+.waButton:hover {
+  background-color: #20bd5a;
   transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(37, 211, 102, 0.35);
+}
+
+.formLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.65rem 1rem;
+  background-color: #0c1b4d;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.84rem;
+  border-radius: 10px;
+  text-decoration: none;
+  letter-spacing: 0.01em;
+  transition: all 0.2s ease;
+}
+
+.formLink:hover {
+  background-color: #1e3a8a;
+  transform: translateY(-1px);
 }
 
 .paketlerEkbilgi {

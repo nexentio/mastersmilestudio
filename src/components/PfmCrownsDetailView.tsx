@@ -58,7 +58,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>6 to 7 days in Antalya.</strong> During this single trip, tooth preparation, digital CAD/CAM 3D scanning, laboratory milling of your high-strength metal porcelain crowns, and final aesthetic cementation are completed with precision.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Antalya once. Your complete dental crown makeover (from 1 tooth to full mouth 20-28 crowns) is designed and placed during this single visit.",
     "recoveryTime": "<strong>2 to 3 days adaptation.</strong> There is virtually no surgical recovery time. Any mild sensitivity subsides within 48-72 hours, allowing you to comfortably enjoy eating and normal activities immediately.",
-    "priceEstimate": "<strong>Metal Porcelain Dental Crown prices start at £150 / €175 / $195 per tooth.</strong> All-inclusive multi-crown packages (10, 20 or 24 crowns) include digital smile design, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "Single Metal Porcelain (PFM) Crown",
@@ -73,11 +73,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "Dedicated patient coordinator assistance"
         ],
-        "price": {
-          "USD": "$195",
-          "EUR": "€175",
-          "GBP": "£150"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "10-Unit Posterior / Mixed Makeover (PFM)",
@@ -94,11 +90,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Transfers (Airport - Hotel - Clinic)",
           "10-Year warranty against crown fracture & porcelain chipping"
         ],
-        "price": {
-          "USD": "$1,890",
-          "EUR": "€1,690",
-          "GBP": "£1,450"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20-Unit Full Mouth PFM Makeover",
@@ -114,11 +106,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Airport & Clinic Chauffeur",
           "Comprehensive post-op care pack & night guard protection"
         ],
-        "price": {
-          "USD": "$3,650",
-          "EUR": "€3,290",
-          "GBP": "£2,850"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Single Zirconium Crown (Amman-Girrbach)",
@@ -133,11 +121,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "Dedicated patient coordinator assistance"
         ],
-        "price": {
-          "USD": "$275",
-          "EUR": "€250",
-          "GBP": "£210"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20-Unit Premium Zirconia Hollywood Smile",
@@ -153,11 +137,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Professional clinical teeth whitening for remaining natural teeth",
           "Lifetime warranty certificate & international care passport"
         ],
-        "price": {
-          "USD": "$5,050",
-          "EUR": "€4,650",
-          "GBP": "£3,990"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Full Arch PFM Bridge on Implants (12–14 Units)",
@@ -172,11 +152,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "5-Star Hotel Stay + VIP Mercedes Private Transfers",
           "10-Year structural warranty on metal porcelain framework"
         ],
-        "price": {
-          "USD": "$2,450",
-          "EUR": "€2,190",
-          "GBP": "£1,890"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -331,7 +307,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>6 to 7 days in Antalya.</strong> During this single trip, tooth preparation, digital CAD/CAM 3D scanning, laboratory milling of your high-strength metal porcelain crowns, and final aesthetic cementation are completed with precision.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Antalya once. Your complete dental crown makeover (from 1 tooth to full mouth 20-28 crowns) is designed and placed during this single visit.",
     "recoveryTime": "<strong>2 to 3 days adaptation.</strong> There is virtually no surgical recovery time. Any mild sensitivity subsides within 48-72 hours, allowing you to comfortably enjoy eating and normal activities immediately.",
-    "priceEstimate": "<strong>Metal Porcelain Dental Crown prices start at £150 / €175 / $195 per tooth.</strong> All-inclusive multi-crown packages (10, 20 or 24 crowns) include digital smile design, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "Single Metal Porcelain (PFM) Crown",
@@ -346,11 +322,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "Dedicated patient coordinator assistance"
         ],
-        "price": {
-          "USD": "$195",
-          "EUR": "€175",
-          "GBP": "£150"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "10-Unit Posterior / Mixed Makeover (PFM)",
@@ -367,11 +339,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Transfers (Airport - Hotel - Clinic)",
           "10-Year warranty against crown fracture & porcelain chipping"
         ],
-        "price": {
-          "USD": "$1,890",
-          "EUR": "€1,690",
-          "GBP": "£1,450"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20-Unit Full Mouth PFM Makeover",
@@ -387,11 +355,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Airport & Clinic Chauffeur",
           "Comprehensive post-op care pack & night guard protection"
         ],
-        "price": {
-          "USD": "$3,650",
-          "EUR": "€3,290",
-          "GBP": "£2,850"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Single Zirconium Crown (Amman-Girrbach)",
@@ -406,11 +370,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "Dedicated patient coordinator assistance"
         ],
-        "price": {
-          "USD": "$275",
-          "EUR": "€250",
-          "GBP": "£210"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20-Unit Premium Zirconia Hollywood Smile",
@@ -426,11 +386,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Professional clinical teeth whitening for remaining natural teeth",
           "Lifetime warranty certificate & international care passport"
         ],
-        "price": {
-          "USD": "$5,050",
-          "EUR": "€4,650",
-          "GBP": "£3,990"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Full Arch PFM Bridge on Implants (12–14 Units)",
@@ -445,11 +401,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "5-Star Hotel Stay + VIP Mercedes Private Transfers",
           "10-Year structural warranty on metal porcelain framework"
         ],
-        "price": {
-          "USD": "$2,450",
-          "EUR": "€2,190",
-          "GBP": "£1,890"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -604,7 +556,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>6 to 7 days in Antalya.</strong> During this single trip, tooth preparation, digital CAD/CAM 3D scanning, laboratory milling of your high-strength metal porcelain crowns, and final aesthetic cementation are completed with precision.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Antalya once. Your complete dental crown makeover (from 1 tooth to full mouth 20-28 crowns) is designed and placed during this single visit.",
     "recoveryTime": "<strong>2 to 3 days adaptation.</strong> There is virtually no surgical recovery time. Any mild sensitivity subsides within 48-72 hours, allowing you to comfortably enjoy eating and normal activities immediately.",
-    "priceEstimate": "<strong>Metal Porcelain Dental Crown prices start at £150 / €175 / $195 per tooth.</strong> All-inclusive multi-crown packages (10, 20 or 24 crowns) include digital smile design, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "Single Metal Porcelain (PFM) Crown",
@@ -619,11 +571,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "Dedicated patient coordinator assistance"
         ],
-        "price": {
-          "USD": "$195",
-          "EUR": "€175",
-          "GBP": "£150"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "10-Unit Posterior / Mixed Makeover (PFM)",
@@ -640,11 +588,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Transfers (Airport - Hotel - Clinic)",
           "10-Year warranty against crown fracture & porcelain chipping"
         ],
-        "price": {
-          "USD": "$1,890",
-          "EUR": "€1,690",
-          "GBP": "£1,450"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20-Unit Full Mouth PFM Makeover",
@@ -660,11 +604,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Airport & Clinic Chauffeur",
           "Comprehensive post-op care pack & night guard protection"
         ],
-        "price": {
-          "USD": "$3,650",
-          "EUR": "€3,290",
-          "GBP": "£2,850"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Single Zirconium Crown (Amman-Girrbach)",
@@ -679,11 +619,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "Dedicated patient coordinator assistance"
         ],
-        "price": {
-          "USD": "$275",
-          "EUR": "€250",
-          "GBP": "£210"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20-Unit Premium Zirconia Hollywood Smile",
@@ -699,11 +635,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Professional clinical teeth whitening for remaining natural teeth",
           "Lifetime warranty certificate & international care passport"
         ],
-        "price": {
-          "USD": "$5,050",
-          "EUR": "€4,650",
-          "GBP": "£3,990"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Full Arch PFM Bridge on Implants (12–14 Units)",
@@ -718,11 +650,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "5-Star Hotel Stay + VIP Mercedes Private Transfers",
           "10-Year structural warranty on metal porcelain framework"
         ],
-        "price": {
-          "USD": "$2,450",
-          "EUR": "€2,190",
-          "GBP": "£1,890"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -877,7 +805,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>6 to 7 days in Antalya.</strong> During this single trip, tooth preparation, digital CAD/CAM 3D scanning, laboratory milling of your high-strength metal porcelain crowns, and final aesthetic cementation are completed with precision.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Antalya once. Your complete dental crown makeover (from 1 tooth to full mouth 20-28 crowns) is designed and placed during this single visit.",
     "recoveryTime": "<strong>2 to 3 days adaptation.</strong> There is virtually no surgical recovery time. Any mild sensitivity subsides within 48-72 hours, allowing you to comfortably enjoy eating and normal activities immediately.",
-    "priceEstimate": "<strong>Metal Porcelain Dental Crown prices start at £150 / €175 / $195 per tooth.</strong> All-inclusive multi-crown packages (10, 20 or 24 crowns) include digital smile design, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "Single Metal Porcelain (PFM) Crown",
@@ -892,11 +820,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "Dedicated patient coordinator assistance"
         ],
-        "price": {
-          "USD": "$195",
-          "EUR": "€175",
-          "GBP": "£150"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "10-Unit Posterior / Mixed Makeover (PFM)",
@@ -913,11 +837,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Transfers (Airport - Hotel - Clinic)",
           "10-Year warranty against crown fracture & porcelain chipping"
         ],
-        "price": {
-          "USD": "$1,890",
-          "EUR": "€1,690",
-          "GBP": "£1,450"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20-Unit Full Mouth PFM Makeover",
@@ -933,11 +853,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Airport & Clinic Chauffeur",
           "Comprehensive post-op care pack & night guard protection"
         ],
-        "price": {
-          "USD": "$3,650",
-          "EUR": "€3,290",
-          "GBP": "£2,850"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Single Zirconium Crown (Amman-Girrbach)",
@@ -952,11 +868,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "Dedicated patient coordinator assistance"
         ],
-        "price": {
-          "USD": "$275",
-          "EUR": "€250",
-          "GBP": "£210"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20-Unit Premium Zirconia Hollywood Smile",
@@ -972,11 +884,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Professional clinical teeth whitening for remaining natural teeth",
           "Lifetime warranty certificate & international care passport"
         ],
-        "price": {
-          "USD": "$5,050",
-          "EUR": "€4,650",
-          "GBP": "£3,990"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Full Arch PFM Bridge on Implants (12–14 Units)",
@@ -991,11 +899,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "5-Star Hotel Stay + VIP Mercedes Private Transfers",
           "10-Year structural warranty on metal porcelain framework"
         ],
-        "price": {
-          "USD": "$2,450",
-          "EUR": "€2,190",
-          "GBP": "£1,890"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -1150,7 +1054,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>6 to 7 days in Antalya.</strong> During this single trip, tooth preparation, digital CAD/CAM 3D scanning, laboratory milling of your high-strength metal porcelain crowns, and final aesthetic cementation are completed with precision.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Antalya once. Your complete dental crown makeover (from 1 tooth to full mouth 20-28 crowns) is designed and placed during this single visit.",
     "recoveryTime": "<strong>2 to 3 days adaptation.</strong> There is virtually no surgical recovery time. Any mild sensitivity subsides within 48-72 hours, allowing you to comfortably enjoy eating and normal activities immediately.",
-    "priceEstimate": "<strong>Metal Porcelain Dental Crown prices start at £150 / €175 / $195 per tooth.</strong> All-inclusive multi-crown packages (10, 20 or 24 crowns) include digital smile design, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "Single Metal Porcelain (PFM) Crown",
@@ -1165,11 +1069,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "Dedicated patient coordinator assistance"
         ],
-        "price": {
-          "USD": "$195",
-          "EUR": "€175",
-          "GBP": "£150"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "10-Unit Posterior / Mixed Makeover (PFM)",
@@ -1186,11 +1086,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Transfers (Airport - Hotel - Clinic)",
           "10-Year warranty against crown fracture & porcelain chipping"
         ],
-        "price": {
-          "USD": "$1,890",
-          "EUR": "€1,690",
-          "GBP": "£1,450"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20-Unit Full Mouth PFM Makeover",
@@ -1206,11 +1102,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Airport & Clinic Chauffeur",
           "Comprehensive post-op care pack & night guard protection"
         ],
-        "price": {
-          "USD": "$3,650",
-          "EUR": "€3,290",
-          "GBP": "£2,850"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Single Zirconium Crown (Amman-Girrbach)",
@@ -1225,11 +1117,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "Dedicated patient coordinator assistance"
         ],
-        "price": {
-          "USD": "$275",
-          "EUR": "€250",
-          "GBP": "£210"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20-Unit Premium Zirconia Hollywood Smile",
@@ -1245,11 +1133,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Professional clinical teeth whitening for remaining natural teeth",
           "Lifetime warranty certificate & international care passport"
         ],
-        "price": {
-          "USD": "$5,050",
-          "EUR": "€4,650",
-          "GBP": "£3,990"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Full Arch PFM Bridge on Implants (12–14 Units)",
@@ -1264,11 +1148,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "5-Star Hotel Stay + VIP Mercedes Private Transfers",
           "10-Year structural warranty on metal porcelain framework"
         ],
-        "price": {
-          "USD": "$2,450",
-          "EUR": "€2,190",
-          "GBP": "£1,890"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -1423,7 +1303,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>6 to 7 days in Antalya.</strong> During this single trip, tooth preparation, digital CAD/CAM 3D scanning, laboratory milling of your high-strength metal porcelain crowns, and final aesthetic cementation are completed with precision.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Antalya once. Your complete dental crown makeover (from 1 tooth to full mouth 20-28 crowns) is designed and placed during this single visit.",
     "recoveryTime": "<strong>2 to 3 days adaptation.</strong> There is virtually no surgical recovery time. Any mild sensitivity subsides within 48-72 hours, allowing you to comfortably enjoy eating and normal activities immediately.",
-    "priceEstimate": "<strong>Metal Porcelain Dental Crown prices start at £150 / €175 / $195 per tooth.</strong> All-inclusive multi-crown packages (10, 20 or 24 crowns) include digital smile design, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "Single Metal Porcelain (PFM) Crown",
@@ -1438,11 +1318,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "Dedicated patient coordinator assistance"
         ],
-        "price": {
-          "USD": "$195",
-          "EUR": "€175",
-          "GBP": "£150"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "10-Unit Posterior / Mixed Makeover (PFM)",
@@ -1459,11 +1335,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Transfers (Airport - Hotel - Clinic)",
           "10-Year warranty against crown fracture & porcelain chipping"
         ],
-        "price": {
-          "USD": "$1,890",
-          "EUR": "€1,690",
-          "GBP": "£1,450"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20-Unit Full Mouth PFM Makeover",
@@ -1479,11 +1351,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Airport & Clinic Chauffeur",
           "Comprehensive post-op care pack & night guard protection"
         ],
-        "price": {
-          "USD": "$3,650",
-          "EUR": "€3,290",
-          "GBP": "£2,850"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Single Zirconium Crown (Amman-Girrbach)",
@@ -1498,11 +1366,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "Dedicated patient coordinator assistance"
         ],
-        "price": {
-          "USD": "$275",
-          "EUR": "€250",
-          "GBP": "£210"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20-Unit Premium Zirconia Hollywood Smile",
@@ -1518,11 +1382,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Professional clinical teeth whitening for remaining natural teeth",
           "Lifetime warranty certificate & international care passport"
         ],
-        "price": {
-          "USD": "$5,050",
-          "EUR": "€4,650",
-          "GBP": "£3,990"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Full Arch PFM Bridge on Implants (12–14 Units)",
@@ -1537,11 +1397,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "5-Star Hotel Stay + VIP Mercedes Private Transfers",
           "10-Year structural warranty on metal porcelain framework"
         ],
-        "price": {
-          "USD": "$2,450",
-          "EUR": "€2,190",
-          "GBP": "£1,890"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -1696,7 +1552,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>6 to 7 days in Antalya.</strong> During this single trip, tooth preparation, digital CAD/CAM 3D scanning, laboratory milling of your high-strength metal porcelain crowns, and final aesthetic cementation are completed with precision.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Antalya once. Your complete dental crown makeover (from 1 tooth to full mouth 20-28 crowns) is designed and placed during this single visit.",
     "recoveryTime": "<strong>2 to 3 days adaptation.</strong> There is virtually no surgical recovery time. Any mild sensitivity subsides within 48-72 hours, allowing you to comfortably enjoy eating and normal activities immediately.",
-    "priceEstimate": "<strong>Metal Porcelain Dental Crown prices start at £150 / €175 / $195 per tooth.</strong> All-inclusive multi-crown packages (10, 20 or 24 crowns) include digital smile design, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "Single Metal Porcelain (PFM) Crown",
@@ -1711,11 +1567,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "Dedicated patient coordinator assistance"
         ],
-        "price": {
-          "USD": "$195",
-          "EUR": "€175",
-          "GBP": "£150"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "10-Unit Posterior / Mixed Makeover (PFM)",
@@ -1732,11 +1584,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Transfers (Airport - Hotel - Clinic)",
           "10-Year warranty against crown fracture & porcelain chipping"
         ],
-        "price": {
-          "USD": "$1,890",
-          "EUR": "€1,690",
-          "GBP": "£1,450"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20-Unit Full Mouth PFM Makeover",
@@ -1752,11 +1600,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Airport & Clinic Chauffeur",
           "Comprehensive post-op care pack & night guard protection"
         ],
-        "price": {
-          "USD": "$3,650",
-          "EUR": "€3,290",
-          "GBP": "£2,850"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Single Zirconium Crown (Amman-Girrbach)",
@@ -1771,11 +1615,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "Dedicated patient coordinator assistance"
         ],
-        "price": {
-          "USD": "$275",
-          "EUR": "€250",
-          "GBP": "£210"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20-Unit Premium Zirconia Hollywood Smile",
@@ -1791,11 +1631,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Professional clinical teeth whitening for remaining natural teeth",
           "Lifetime warranty certificate & international care passport"
         ],
-        "price": {
-          "USD": "$5,050",
-          "EUR": "€4,650",
-          "GBP": "£3,990"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Full Arch PFM Bridge on Implants (12–14 Units)",
@@ -1810,11 +1646,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "5-Star Hotel Stay + VIP Mercedes Private Transfers",
           "10-Year structural warranty on metal porcelain framework"
         ],
-        "price": {
-          "USD": "$2,450",
-          "EUR": "€2,190",
-          "GBP": "£1,890"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -2107,9 +1939,9 @@ export default function PfmCrownsDetailView() {
 
                 <div className={styles.pkgFooter}>
                   <div className={styles.pkgPriceRow}>
-                    <span className={styles.pkgPriceLabel}>{d.priceLabel}</span>
-                    <strong className={styles.pkgPriceValue}>
-                      {pkg.price[currency]}
+                    <span className={styles.pkgPriceLabel}>{locale === 'tr' ? 'VIP Paket Kapsamı' : 'VIP All-Inclusive'}</span>
+                    <strong className={styles.pkgPriceValue} style={{ fontSize: '0.95rem', color: '#059669', fontWeight: '700' }}>
+                      {locale === 'tr' ? 'Kişiye Özel Fiyat Teklifi' : 'Personalized VIP Quote'}
                     </strong>
                   </div>
 

@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { useLocale } from 'next-intl';
 import { Link } from '@/i18n/routing';
+import { getWhatsAppLink, SITE_CONFIG } from '@/config/site';
 import styles from './TreatmentPackagesSlider.module.css';
 
 interface PackageItem {
@@ -10,9 +11,6 @@ interface PackageItem {
   img: string;
   alt: string;
   duration: string;
-  priceUSD: string;
-  priceEUR: string;
-  priceGBP: string;
   included: string[];
 }
 
@@ -40,9 +38,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
         img: '/packages/pkg-4.webp',
         alt: 'All on 4 Dental Implant Package Nucleoss Antalya Turkey',
         duration: '4-5 Days',
-        priceUSD: '$4,900',
-        priceEUR: '€4,500',
-        priceGBP: '£3,850',
+        
         included: [
           '4 Nucleoss Dental Implants',
           'Fixed Temporary Teeth (Same Day)',
@@ -57,9 +53,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
         img: '/packages/pkg-5.webp',
         alt: 'All on 4 Dental Implant Package DXL German Brand',
         duration: '4-5 Days',
-        priceUSD: '$5,800',
-        priceEUR: '€5,350',
-        priceGBP: '£4,550',
+        
         included: [
           '4 German DXL Titanium Implants',
           'Fixed Temporary Teeth',
@@ -74,9 +68,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
         img: '/packages/pkg-6.webp',
         alt: 'All on 4 Dental Implant Package Straumann Swiss Brand',
         duration: '4-5 Days',
-        priceUSD: '$7,600',
-        priceEUR: '€7,000',
-        priceGBP: '£5,950',
+        
         included: [
           '4 Premium Swiss Straumann Implants',
           'Lifetime International Guarantee',
@@ -91,9 +83,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
         img: '/packages/pkg-1.webp',
         alt: 'All on 6 Dental Implant Package Nucleoss',
         duration: '5-6 Days',
-        priceUSD: '$5,900',
-        priceEUR: '€5,450',
-        priceGBP: '£4,650',
+        
         included: [
           '6 Nucleoss Dental Implants',
           'Maximum Stability 6-Point Support',
@@ -108,9 +98,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
         img: '/packages/pkg-2.webp',
         alt: 'All on 6 Dental Implant Package DXL German Brand',
         duration: '5-6 Days',
-        priceUSD: '$6,900',
-        priceEUR: '€6,350',
-        priceGBP: '£5,400',
+        
         included: [
           '6 German DXL Titanium Implants',
           'Heavy Chewing Force Distribution',
@@ -125,9 +113,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
         img: '/packages/pkg-3.webp',
         alt: 'All on 6 Dental Implant Package Straumann Swiss Brand',
         duration: '5-6 Days',
-        priceUSD: '$8,900',
-        priceEUR: '€8,200',
-        priceGBP: '£6,980',
+        
         included: [
           '6 Swiss Straumann Roxolid Implants',
           'Official Swiss Straumann Passport',
@@ -152,9 +138,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
         img: '/packages/pkg-4.webp',
         alt: 'All on 4 Diş İmplantı Paketi Nucleoss Antalya Türkiye',
         duration: '4-5 Gün',
-        priceUSD: '$4,900',
-        priceEUR: '€4,500',
-        priceGBP: '£3,850',
+        
         included: [
           '4 Adet Nucleoss Dental İmplant',
           'Sabit Geçici Dişler (Aynı Gün)',
@@ -169,9 +153,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
         img: '/packages/pkg-5.webp',
         alt: 'All on 4 Diş İmplant Paketi DXL Alman Markası',
         duration: '4-5 Gün',
-        priceUSD: '$5,800',
-        priceEUR: '€5,350',
-        priceGBP: '£4,550',
+        
         included: [
           '4 Adet Alman DXL Titanyum İmplant',
           'Sabit Geçici Dişler',
@@ -186,9 +168,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
         img: '/packages/pkg-6.webp',
         alt: 'All on 4 Diş İmplant Paketi Straumann İsviçre Markası',
         duration: '4-5 Gün',
-        priceUSD: '$7,600',
-        priceEUR: '€7,000',
-        priceGBP: '£5,950',
+        
         included: [
           '4 Adet Premium İsviçre Straumann İmplant',
           'Ömür Boyu Uluslararası Garanti',
@@ -203,9 +183,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
         img: '/packages/pkg-1.webp',
         alt: 'All on 6 Diş İmplant Paketi Nucleoss',
         duration: '5-6 Gün',
-        priceUSD: '$5,900',
-        priceEUR: '€5,450',
-        priceGBP: '£4,650',
+        
         included: [
           '6 Adet Nucleoss Dental İmplant',
           'Maksimum Stabilite 6 Noktalı Destek',
@@ -220,9 +198,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
         img: '/packages/pkg-2.webp',
         alt: 'All on 6 Diş İmplant Paketi DXL Alman Markası',
         duration: '5-6 Gün',
-        priceUSD: '$6,900',
-        priceEUR: '€6,350',
-        priceGBP: '£5,400',
+        
         included: [
           '6 Adet Alman DXL Titanyum İmplant',
           'Güçlü Çiğneme Kuvveti Dağılımı',
@@ -237,9 +213,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
         img: '/packages/pkg-3.webp',
         alt: 'All on 6 Diş İmplant Paketi Straumann İsviçre Markası',
         duration: '5-6 Gün',
-        priceUSD: '$8,900',
-        priceEUR: '€8,200',
-        priceGBP: '£6,980',
+        
         included: [
           '6 Adet İsviçre Straumann Roxolid İmplant',
           'Resmi İsviçre Straumann Pasaportu',
@@ -264,9 +238,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
         img: '/packages/pkg-4.webp',
         alt: 'All on 4 Zahnimplantat Paket Nucleoss Antalya Türkei',
         duration: '4-5 Tage',
-        priceUSD: '$4,900',
-        priceEUR: '€4,500',
-        priceGBP: '£3,850',
+        
         included: [
           '4 Nucleoss Zahnimplantate',
           'Feste provisorische Zähne (am selben Tag)',
@@ -281,9 +253,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
         img: '/packages/pkg-5.webp',
         alt: 'All on 4 Zahnimplantat Paket DXL Deutsche Marke',
         duration: '4-5 Tage',
-        priceUSD: '$5,800',
-        priceEUR: '€5,350',
-        priceGBP: '£4,550',
+        
         included: [
           '4 deutsche DXL Titanimplantate',
           'Feste provisorische Zähne',
@@ -298,9 +268,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
         img: '/packages/pkg-6.webp',
         alt: 'All on 4 Zahnimplantat Paket Straumann Schweizer Marke',
         duration: '4-5 Tage',
-        priceUSD: '$7,600',
-        priceEUR: '€7,000',
-        priceGBP: '£5,950',
+        
         included: [
           '4 Schweizer Straumann Premium-Implantate',
           'Lebenslange weltweite Garantie',
@@ -315,9 +283,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
         img: '/packages/pkg-1.webp',
         alt: 'All on 6 Zahnimplantat Paket Nucleoss',
         duration: '5-6 Tage',
-        priceUSD: '$5,900',
-        priceEUR: '€5,450',
-        priceGBP: '£4,650',
+        
         included: [
           '6 Nucleoss Zahnimplantate',
           'Maximale Stabilität durch 6-Punkt-Abstützung',
@@ -332,9 +298,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
         img: '/packages/pkg-2.webp',
         alt: 'All on 6 Zahnimplantat Paket DXL Deutsche Marke',
         duration: '5-6 Tage',
-        priceUSD: '$6,900',
-        priceEUR: '€6,350',
-        priceGBP: '£5,400',
+        
         included: [
           '6 deutsche DXL Titanimplantate',
           'Optimale Kaukraftverteilung',
@@ -349,9 +313,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
         img: '/packages/pkg-3.webp',
         alt: 'All on 6 Zahnimplantat Paket Straumann Schweizer Marke',
         duration: '5-6 Tage',
-        priceUSD: '$8,900',
-        priceEUR: '€8,200',
-        priceGBP: '£6,980',
+        
         included: [
           '6 Schweizer Straumann Roxolid-Implantate',
           'Offizieller Schweizer Straumann-Pass',
@@ -376,9 +338,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
         img: '/packages/pkg-4.webp',
         alt: 'Pakiet implantów All on 4 Nucleoss Antalya Turcja',
         duration: '4-5 Dni',
-        priceUSD: '$4,900',
-        priceEUR: '€4,500',
-        priceGBP: '£3,850',
+        
         included: [
           '4 implanty stomatologiczne Nucleoss',
           'Stałe zęby tymczasowe (w tym samym dniu)',
@@ -393,9 +353,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
         img: '/packages/pkg-5.webp',
         alt: 'Pakiet implantów All on 4 DXL niemiecka marka',
         duration: '4-5 Dni',
-        priceUSD: '$5,800',
-        priceEUR: '€5,350',
-        priceGBP: '£4,550',
+        
         included: [
           '4 niemieckie implanty tytanowe DXL',
           'Stałe zęby tymczasowe',
@@ -410,9 +368,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
         img: '/packages/pkg-6.webp',
         alt: 'Pakiet implantów All on 4 Straumann szwajcarska marka',
         duration: '4-5 Dni',
-        priceUSD: '$7,600',
-        priceEUR: '€7,000',
-        priceGBP: '£5,950',
+        
         included: [
           '4 szwajcarskie implanty Straumann Premium',
           'Dożywotnia międzynarodowa gwarancja',
@@ -427,9 +383,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
         img: '/packages/pkg-1.webp',
         alt: 'Pakiet implantów All on 6 Nucleoss',
         duration: '5-6 Dni',
-        priceUSD: '$5,900',
-        priceEUR: '€5,450',
-        priceGBP: '£4,650',
+        
         included: [
           '6 implantów stomatologicznych Nucleoss',
           'Maksymalna stabilność dzięki 6 punktom podparcia',
@@ -444,9 +398,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
         img: '/packages/pkg-2.webp',
         alt: 'Pakiet implantów All on 6 DXL niemiecka marka',
         duration: '5-6 Dni',
-        priceUSD: '$6,900',
-        priceEUR: '€6,350',
-        priceGBP: '£5,400',
+        
         included: [
           '6 niemieckich implantów tytanowych DXL',
           'Optymalny rozkład dużych sił żucia',
@@ -461,9 +413,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
         img: '/packages/pkg-3.webp',
         alt: 'Pakiet implantów All on 6 Straumann szwajcarska marka',
         duration: '5-6 Dni',
-        priceUSD: '$8,900',
-        priceEUR: '€8,200',
-        priceGBP: '£6,980',
+        
         included: [
           '6 szwajcarskich implantów Straumann Roxolid',
           'Oficjalny szwajcarski paszport Straumann',
@@ -488,9 +438,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
         img: '/packages/pkg-4.webp',
         alt: 'Pacote de Implantes All on 4 Nucleoss Antalya Turquia',
         duration: '4-5 Dias',
-        priceUSD: '$4,900',
-        priceEUR: '€4,500',
-        priceGBP: '£3,850',
+        
         included: [
           '4 Implantes Dentários Nucleoss',
           'Dentes Provisórios Fixos (Mesmo Dia)',
@@ -505,9 +453,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
         img: '/packages/pkg-5.webp',
         alt: 'Pacote de Implantes All on 4 DXL Marca Alemã',
         duration: '4-5 Dias',
-        priceUSD: '$5,800',
-        priceEUR: '€5,350',
-        priceGBP: '£4,550',
+        
         included: [
           '4 Implantes de Titânio DXL Alemães',
           'Dentes Provisórios Fixos',
@@ -522,9 +468,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
         img: '/packages/pkg-6.webp',
         alt: 'Pacote de Implantes All on 4 Straumann Marca Suíça',
         duration: '4-5 Dias',
-        priceUSD: '$7,600',
-        priceEUR: '€7,000',
-        priceGBP: '£5,950',
+        
         included: [
           '4 Implantes Suíços Straumann Premium',
           'Garantia Internacional Vitalícia',
@@ -539,9 +483,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
         img: '/packages/pkg-1.webp',
         alt: 'Pacote de Implantes All on 6 Nucleoss',
         duration: '5-6 Dias',
-        priceUSD: '$5,900',
-        priceEUR: '€5,450',
-        priceGBP: '£4,650',
+        
         included: [
           '6 Implantes Dentários Nucleoss',
           'Estabilidade Máxima com 6 Pontos de Apoio',
@@ -556,9 +498,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
         img: '/packages/pkg-2.webp',
         alt: 'Pacote de Implantes All on 6 DXL Marca Alemã',
         duration: '5-6 Dias',
-        priceUSD: '$6,900',
-        priceEUR: '€6,350',
-        priceGBP: '£5,400',
+        
         included: [
           '6 Implantes de Titânio DXL Alemães',
           'Excelente Distribuição de Força Mastigatória',
@@ -573,9 +513,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
         img: '/packages/pkg-3.webp',
         alt: 'Pacote de Implantes All on 6 Straumann Marca Suíça',
         duration: '5-6 Dias',
-        priceUSD: '$8,900',
-        priceEUR: '€8,200',
-        priceGBP: '£6,980',
+        
         included: [
           '6 Implantes Suíços Straumann Roxolid',
           'Passaporte Oficial Straumann Suíço',
@@ -600,9 +538,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
         img: '/packages/pkg-4.webp',
         alt: 'Paquete de Implantes All on 4 Nucleoss Antalya Turquía',
         duration: '4-5 Días',
-        priceUSD: '$4,900',
-        priceEUR: '€4,500',
-        priceGBP: '£3,850',
+        
         included: [
           '4 Implantes Dentales Nucleoss',
           'Dientes Provisionales Fijos (Mismo Día)',
@@ -617,9 +553,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
         img: '/packages/pkg-5.webp',
         alt: 'Paquete de Implantes All on 4 DXL Marca Alemana',
         duration: '4-5 Días',
-        priceUSD: '$5,800',
-        priceEUR: '€5,350',
-        priceGBP: '£4,550',
+        
         included: [
           '4 Implantes Alemanes de Titanio DXL',
           'Dientes Provisionales Fijos',
@@ -634,9 +568,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
         img: '/packages/pkg-6.webp',
         alt: 'Paquete de Implantes All on 4 Straumann Marca Suiza',
         duration: '4-5 Días',
-        priceUSD: '$7,600',
-        priceEUR: '€7,000',
-        priceGBP: '£5,950',
+        
         included: [
           '4 Implantes Suizos Straumann Premium',
           'Garantía Internacional de por Vida',
@@ -651,9 +583,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
         img: '/packages/pkg-1.webp',
         alt: 'Paquete de Implantes All on 6 Nucleoss',
         duration: '5-6 Días',
-        priceUSD: '$5,900',
-        priceEUR: '€5,450',
-        priceGBP: '£4,650',
+        
         included: [
           '6 Implantes Dentales Nucleoss',
           'Máxima Estabilidad con 6 Puntos de Apoyo',
@@ -668,9 +598,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
         img: '/packages/pkg-2.webp',
         alt: 'Paquete de Implantes All on 6 DXL Marca Alemana',
         duration: '5-6 Días',
-        priceUSD: '$6,900',
-        priceEUR: '€6,350',
-        priceGBP: '£5,400',
+        
         included: [
           '6 Implantes Alemanes de Titanio DXL',
           'Óptima Distribución de Fuerzas Masticatorias',
@@ -685,9 +613,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
         img: '/packages/pkg-3.webp',
         alt: 'Paquete de Implantes All on 6 Straumann Marca Suiza',
         duration: '5-6 Días',
-        priceUSD: '$8,900',
-        priceEUR: '€8,200',
-        priceGBP: '£6,980',
+        
         included: [
           '6 Implantes Suizos Straumann Roxolid',
           'Pasaporte Oficial Straumann Suiza',
@@ -712,9 +638,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
         img: '/packages/pkg-4.webp',
         alt: 'Пакет имплантации All on 4 Nucleoss Анталья Турция',
         duration: '4-5 Дней',
-        priceUSD: '$4,900',
-        priceEUR: '€4,500',
-        priceGBP: '£3,850',
+        
         included: [
           '4 дентальных имплантата Nucleoss',
           'Несъемные временные зубы (в тот же день)',
@@ -729,9 +653,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
         img: '/packages/pkg-5.webp',
         alt: 'Пакет имплантации All on 4 DXL немецкий бренд',
         duration: '4-5 Дней',
-        priceUSD: '$5,800',
-        priceEUR: '€5,350',
-        priceGBP: '£4,550',
+        
         included: [
           '4 немецких титановых имплантата DXL',
           'Несъемные временные зубы',
@@ -746,9 +668,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
         img: '/packages/pkg-6.webp',
         alt: 'Пакет имплантации All on 4 Straumann швейцарский бренд',
         duration: '4-5 Дней',
-        priceUSD: '$7,600',
-        priceEUR: '€7,000',
-        priceGBP: '£5,950',
+        
         included: [
           '4 премиальных швейцарских имплантата Straumann',
           'Пожизненная международная гарантия',
@@ -763,9 +683,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
         img: '/packages/pkg-1.webp',
         alt: 'Пакет имплантации All on 6 Nucleoss',
         duration: '5-6 Дней',
-        priceUSD: '$5,900',
-        priceEUR: '€5,450',
-        priceGBP: '£4,650',
+        
         included: [
           '6 дентальных имплантатов Nucleoss',
           'Максимальная стабильность (6 опорных точек)',
@@ -780,9 +698,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
         img: '/packages/pkg-2.webp',
         alt: 'Пакет имплантации All on 6 DXL немецкий бренд',
         duration: '5-6 Дней',
-        priceUSD: '$6,900',
-        priceEUR: '€6,350',
-        priceGBP: '£5,400',
+        
         included: [
           '6 немецких титановых имплантатов DXL',
           'Оптимальное распределение жевательной нагрузки',
@@ -797,9 +713,7 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
         img: '/packages/pkg-3.webp',
         alt: 'Пакет имплантации All on 6 Straumann швейцарский бренд',
         duration: '5-6 Дней',
-        priceUSD: '$8,900',
-        priceEUR: '€8,200',
-        priceGBP: '£6,980',
+        
         included: [
           '6 швейцарских имплантатов Straumann Roxolid',
           'Официальный швейцарский паспорт Straumann',
@@ -813,9 +727,41 @@ const PACKAGES_DATA: Record<string, SliderTranslations> = {
   },
 };
 
+const VIP_BADGE_TEXT: Record<string, { title: string; sub: string }> = {
+  en: {
+    title: 'VIP All-Inclusive Package',
+    sub: '5★ Hotel & Transfers Included',
+  },
+  tr: {
+    title: 'Her Şey Dahil VIP Paket',
+    sub: '5★ Otel + VIP Transfer Dahil',
+  },
+  de: {
+    title: 'VIP-All-Inclusive-Paket',
+    sub: '5★ Hotel & Transfers Inklusive',
+  },
+  pl: {
+    title: 'Pakiet VIP All-Inclusive',
+    sub: 'Hotel 5★ i Transfery w Cenie',
+  },
+  pt: {
+    title: 'Pacote VIP Tudo Incluído',
+    sub: 'Hotel 5★ e Transfers Incluídos',
+  },
+  es: {
+    title: 'Paquete VIP Todo Incluido',
+    sub: 'Hotel 5★ y Traslados Incluidos',
+  },
+  ru: {
+    title: 'VIP-пакет «Все включено»',
+    sub: '5★ Отель и VIP-трансферы включены',
+  },
+};
+
 export default function TreatmentPackagesSlider() {
   const locale = useLocale();
   const currentData = PACKAGES_DATA[locale] || PACKAGES_DATA.en;
+  const vipText = VIP_BADGE_TEXT[locale] || VIP_BADGE_TEXT.en;
   const [startIndex, setStartIndex] = useState(0);
   const [mobileIndex, setMobileIndex] = useState(0);
 
@@ -901,20 +847,24 @@ export default function TreatmentPackagesSlider() {
 
               <div>
                 <div className={styles.priceBox}>
-                  <div className={styles.priceLabel}>{currentData.priceLabel}</div>
-                  <div className={styles.priceValue}>{pkg.priceUSD}</div>
-                  <div className={styles.priceSub}>
-                    ({pkg.priceEUR} / {pkg.priceGBP})
-                  </div>
+                  <div className={styles.vipBadge}>{vipText.title}</div>
+                  <div className={styles.vipSub}>{vipText.sub}</div>
                 </div>
 
-                <Link
-                  href="/contact"
+                <a
+                  href={getWhatsAppLink(
+                    locale,
+                    locale === 'tr'
+                      ? `Merhaba Master Smile Studio! "${pkg.title}" için kişiye özel fiyat teklifi ve tedavi planı almak istiyorum.`
+                      : `Hello Master Smile Studio! I would like to get a personalized price quote and treatment plan for "${pkg.title}".`
+                  )}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className={styles.btn}
                   aria-label={`${currentData.quoteBtn} - ${pkg.title}`}
                 >
                   {currentData.quoteBtn}
-                </Link>
+                </a>
               </div>
             </article>
           ))}
@@ -954,20 +904,24 @@ export default function TreatmentPackagesSlider() {
 
               <div>
                 <div className={styles.priceBox}>
-                  <div className={styles.priceLabel}>{currentData.priceLabel}</div>
-                  <div className={styles.priceValue}>{pkg.priceUSD}</div>
-                  <div className={styles.priceSub}>
-                    ({pkg.priceEUR} / {pkg.priceGBP})
-                  </div>
+                  <div className={styles.vipBadge}>{vipText.title}</div>
+                  <div className={styles.vipSub}>{vipText.sub}</div>
                 </div>
 
-                <Link
-                  href="/contact"
+                <a
+                  href={getWhatsAppLink(
+                    locale,
+                    locale === 'tr'
+                      ? `Merhaba Master Smile Studio! "${pkg.title}" için kişiye özel fiyat teklifi ve tedavi planı almak istiyorum.`
+                      : `Hello Master Smile Studio! I would like to get a personalized price quote and treatment plan for "${pkg.title}".`
+                  )}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className={styles.btn}
                   aria-label={`${currentData.quoteBtn} - ${pkg.title}`}
                 >
                   {currentData.quoteBtn}
-                </Link>
+                </a>
               </div>
             </article>
           ))}

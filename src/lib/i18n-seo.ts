@@ -1,7 +1,7 @@
 import { LOCALES } from '@/i18n/routing';
 import { siteConfig } from '@/config/site';
 
-export const TREATMENT_LOCALES = ['tr', 'en'] as const;
+export const TREATMENT_LOCALES = LOCALES;
 
 /**
  * Generates alternates object with canonical and hreflang for all supported locales + x-default

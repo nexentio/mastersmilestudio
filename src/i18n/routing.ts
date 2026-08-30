@@ -17,7 +17,7 @@ export const LOCALE_LABELS: Record<Locale, { name: string; nativeName: string }>
 export const routing = defineRouting({
   locales: LOCALES,
   defaultLocale: 'tr',
-  localePrefix: 'as-needed'
+  localePrefix: 'always'
 });
 
 export const { Link, redirect, usePathname, useRouter, getPathname } =

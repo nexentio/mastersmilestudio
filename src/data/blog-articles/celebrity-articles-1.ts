@@ -465,8 +465,8 @@ export const CELEBRITY_ARTICLES_1: Record<string, BlogDetailArticle> = {
           ru: 'Сколько стоит голливудская улыбка премиум-класса в Анталье, Турция?',
         },
         a: {
-          en: 'While Beverly Hills clinics charge $2,500 to $4,000 per tooth, Master Smile Studio in Antalya provides genuine Swiss Ivoclar E-Max veneers starting from €200 to €280 per tooth in all-inclusive packages including 5-star hotel and VIP chauffeur.',
-          tr: "Beverly Hills veya Londra'da tek bir diş için $2.500 - $4.000 talep edilirken, Master Smile Studio Antalya'da aynı orijinal İsviçre Ivoclar E-Max kaplamalar diş başı €200 - €280 bandındadır ve 5 yıldızlı otel ile VIP transfer dahil [her şey dahil paketler](/packages) mevcuttur.",
+          en: 'While Beverly Hills clinics charge premium fees per tooth, Master Smile Studio in Antalya provides genuine Swiss Ivoclar E-Max veneers with all-inclusive VIP packages in all-inclusive packages including 5-star hotel and VIP chauffeur.',
+          tr: "Beverly Hills veya Londra'da tek bir diş için yüksek bütçeler talep edilirken, Master Smile Studio Antalya'da aynı orijinal İsviçre Ivoclar E-Max kaplamalar avantajlı 5 yıldızlı otel ile VIP transfer dahil [her şey dahil paketler](/packages) mevcuttur.",
           de: 'In Antalya erhalten Sie dieselbe Schweizer Ivoclar E-Max Qualität ab ca. 200–280 € pro Zahn inklusive 5-Sterne-Hotel und Transfers.',
           pl: 'W Master Smile Studio w Antalyi najwyższej klasy licówki Ivoclar E-Max kosztują od 200–280 € za ząb w pakiecie z hotelem 5*.',
           pt: 'Na Master Smile Studio em Antalya, as facetas suíças E-Max custam entre 200 € e 280 € por dente com hotel 5 estrelas incluído.',

@@ -1,8 +1,7 @@
 export interface PriceRow {
   name: Record<string, string>;
-  usd: string;
-  eur: string;
-  gbp: string;
+  warranty?: Record<string, string>;
+  duration?: Record<string, string>;
 }
 
 export interface PriceTable {
@@ -62,9 +61,24 @@ export const PRICE_GROUPS: PriceGroup[] = [
               es: 'Paquete de Implantes All-on-4 – Implantes Nucleoss',
               ru: 'Пакет имплантов All-on-4 – Импланты Nucleoss',
             },
-            usd: '$5,700',
-            eur: '€4,900',
-            gbp: '£4,200',
+            warranty: {
+              en: 'Lifetime Warranty',
+              tr: 'Ömür Boyu Garanti',
+              de: 'Lebenslange Garantie',
+              pl: 'Dożywotnia Gwarancja',
+              pt: 'Garantia Vitalícia',
+              es: 'Garantía de por Vida',
+              ru: 'Пожизненная гарантия'
+            },
+            duration: {
+              en: '3-5 Days',
+              tr: '3-5 İş Günü',
+              de: '3-5 Tage',
+              pl: '3-5 Dni',
+              pt: '3-5 Dias',
+              es: '3-5 Días',
+              ru: '3-5 Дней'
+            },
           },
           {
             name: {
@@ -76,9 +90,24 @@ export const PRICE_GROUPS: PriceGroup[] = [
               es: 'Paquete de Implantes All-on-4 – Implantes Alemanes DXL',
               ru: 'Пакет имплантов All-on-4 – Немецкие импланты DXL',
             },
-            usd: '$6,400',
-            eur: '€5,500',
-            gbp: '£4,750',
+            warranty: {
+              en: 'Lifetime Warranty',
+              tr: 'Ömür Boyu Garanti',
+              de: 'Lebenslange Garantie',
+              pl: 'Dożywotnia Gwarancja',
+              pt: 'Garantia Vitalícia',
+              es: 'Garantía de por Vida',
+              ru: 'Пожизненная гарантия'
+            },
+            duration: {
+              en: '3-5 Days',
+              tr: '3-5 İş Günü',
+              de: '3-5 Tage',
+              pl: '3-5 Dni',
+              pt: '3-5 Dias',
+              es: '3-5 Días',
+              ru: '3-5 Дней'
+            },
           },
           {
             name: {
@@ -90,9 +119,24 @@ export const PRICE_GROUPS: PriceGroup[] = [
               es: 'Paquete de Implantes All-on-4 – Implantes Suizos Straumann',
               ru: 'Пакет имплантов All-on-4 – Швейцарские импланты Straumann',
             },
-            usd: '$9,300',
-            eur: '€8,000',
-            gbp: '£6,900',
+            warranty: {
+              en: 'Lifetime Warranty',
+              tr: 'Ömür Boyu Garanti',
+              de: 'Lebenslange Garantie',
+              pl: 'Dożywotnia Gwarancja',
+              pt: 'Garantia Vitalícia',
+              es: 'Garantía de por Vida',
+              ru: 'Пожизненная гарантия'
+            },
+            duration: {
+              en: '3-5 Days',
+              tr: '3-5 İş Günü',
+              de: '3-5 Tage',
+              pl: '3-5 Dni',
+              pt: '3-5 Dias',
+              es: '3-5 Días',
+              ru: '3-5 Дней'
+            },
           },
           {
             name: {
@@ -104,9 +148,24 @@ export const PRICE_GROUPS: PriceGroup[] = [
               es: 'Paquete de Implantes All-on-4 – Implantes Megagen',
               ru: 'Пакет имплантов All-on-4 – Импланты Megagen',
             },
-            usd: '$6,900',
-            eur: '€6,000',
-            gbp: '£5,100',
+            warranty: {
+              en: 'Lifetime Warranty',
+              tr: 'Ömür Boyu Garanti',
+              de: 'Lebenslange Garantie',
+              pl: 'Dożywotnia Gwarancja',
+              pt: 'Garantia Vitalícia',
+              es: 'Garantía de por Vida',
+              ru: 'Пожизненная гарантия'
+            },
+            duration: {
+              en: '3-5 Days',
+              tr: '3-5 İş Günü',
+              de: '3-5 Tage',
+              pl: '3-5 Dni',
+              pt: '3-5 Dias',
+              es: '3-5 Días',
+              ru: '3-5 Дней'
+            },
           },
           {
             name: {
@@ -118,9 +177,24 @@ export const PRICE_GROUPS: PriceGroup[] = [
               es: 'Paquete de Implantes All-on-4 – Implantes Neodent',
               ru: 'Пакет имплантов All-on-4 – Импланты Neodent',
             },
-            usd: '$6,900',
-            eur: '€6,000',
-            gbp: '£5,100',
+            warranty: {
+              en: 'Lifetime Warranty',
+              tr: 'Ömür Boyu Garanti',
+              de: 'Lebenslange Garantie',
+              pl: 'Dożywotnia Gwarancja',
+              pt: 'Garantia Vitalícia',
+              es: 'Garantía de por Vida',
+              ru: 'Пожизненная гарантия'
+            },
+            duration: {
+              en: '3-5 Days',
+              tr: '3-5 İş Günü',
+              de: '3-5 Tage',
+              pl: '3-5 Dni',
+              pt: '3-5 Dias',
+              es: '3-5 Días',
+              ru: '3-5 Дней'
+            },
           },
           {
             name: {
@@ -132,9 +206,24 @@ export const PRICE_GROUPS: PriceGroup[] = [
               es: 'Paquete de Implantes All-on-4 – Implantes Hiossen',
               ru: 'Пакет имплантов All-on-4 – Импланты Hiossen',
             },
-            usd: '$6,600',
-            eur: '€5,750',
-            gbp: '£4,900',
+            warranty: {
+              en: 'Lifetime Warranty',
+              tr: 'Ömür Boyu Garanti',
+              de: 'Lebenslange Garantie',
+              pl: 'Dożywotnia Gwarancja',
+              pt: 'Garantia Vitalícia',
+              es: 'Garantía de por Vida',
+              ru: 'Пожизненная гарантия'
+            },
+            duration: {
+              en: '3-5 Days',
+              tr: '3-5 İş Günü',
+              de: '3-5 Tage',
+              pl: '3-5 Dni',
+              pt: '3-5 Dias',
+              es: '3-5 Días',
+              ru: '3-5 Дней'
+            },
           },
           {
             name: {
@@ -146,9 +235,24 @@ export const PRICE_GROUPS: PriceGroup[] = [
               es: 'Paquete de Implantes All-on-6 – Implantes Nucleoss',
               ru: 'Пакет имплантов All-on-6 – Импланты Nucleoss',
             },
-            usd: '$6,400',
-            eur: '€5,500',
-            gbp: '£4,700',
+            warranty: {
+              en: 'Lifetime Warranty',
+              tr: 'Ömür Boyu Garanti',
+              de: 'Lebenslange Garantie',
+              pl: 'Dożywotnia Gwarancja',
+              pt: 'Garantia Vitalícia',
+              es: 'Garantía de por Vida',
+              ru: 'Пожизненная гарантия'
+            },
+            duration: {
+              en: '3-5 Days',
+              tr: '3-5 İş Günü',
+              de: '3-5 Tage',
+              pl: '3-5 Dni',
+              pt: '3-5 Dias',
+              es: '3-5 Días',
+              ru: '3-5 Дней'
+            },
           },
           {
             name: {
@@ -160,9 +264,24 @@ export const PRICE_GROUPS: PriceGroup[] = [
               es: 'Paquete de Implantes All-on-6 – Implantes Alemanes DXL',
               ru: 'Пакет имплантов All-on-6 – Немецкие импланты DXL',
             },
-            usd: '$7,500',
-            eur: '€6,500',
-            gbp: '£5,600',
+            warranty: {
+              en: 'Lifetime Warranty',
+              tr: 'Ömür Boyu Garanti',
+              de: 'Lebenslange Garantie',
+              pl: 'Dożywotnia Gwarancja',
+              pt: 'Garantia Vitalícia',
+              es: 'Garantía de por Vida',
+              ru: 'Пожизненная гарантия'
+            },
+            duration: {
+              en: '3-5 Days',
+              tr: '3-5 İş Günü',
+              de: '3-5 Tage',
+              pl: '3-5 Dni',
+              pt: '3-5 Dias',
+              es: '3-5 Días',
+              ru: '3-5 Дней'
+            },
           },
           {
             name: {
@@ -174,9 +293,24 @@ export const PRICE_GROUPS: PriceGroup[] = [
               es: 'Paquete de Implantes All-on-6 – Implantes Suizos Straumann',
               ru: 'Пакет имплантов All-on-6 – Швейцарские импланты Straumann',
             },
-            usd: '$11,600',
-            eur: '€10,000',
-            gbp: '£8,600',
+            warranty: {
+              en: 'Lifetime Warranty',
+              tr: 'Ömür Boyu Garanti',
+              de: 'Lebenslange Garantie',
+              pl: 'Dożywotnia Gwarancja',
+              pt: 'Garantia Vitalícia',
+              es: 'Garantía de por Vida',
+              ru: 'Пожизненная гарантия'
+            },
+            duration: {
+              en: '3-5 Days',
+              tr: '3-5 İş Günü',
+              de: '3-5 Tage',
+              pl: '3-5 Dni',
+              pt: '3-5 Dias',
+              es: '3-5 Días',
+              ru: '3-5 Дней'
+            },
           },
           {
             name: {
@@ -188,9 +322,24 @@ export const PRICE_GROUPS: PriceGroup[] = [
               es: 'Paquete de Implantes All-on-6 – Implantes Megagen',
               ru: 'Пакет имплантов All-on-6 – Импланты Megagen',
             },
-            usd: '$8,000',
-            eur: '€7,000',
-            gbp: '£6,000',
+            warranty: {
+              en: 'Lifetime Warranty',
+              tr: 'Ömür Boyu Garanti',
+              de: 'Lebenslange Garantie',
+              pl: 'Dożywotnia Gwarancja',
+              pt: 'Garantia Vitalícia',
+              es: 'Garantía de por Vida',
+              ru: 'Пожизненная гарантия'
+            },
+            duration: {
+              en: '3-5 Days',
+              tr: '3-5 İş Günü',
+              de: '3-5 Tage',
+              pl: '3-5 Dni',
+              pt: '3-5 Dias',
+              es: '3-5 Días',
+              ru: '3-5 Дней'
+            },
           },
           {
             name: {
@@ -202,9 +351,24 @@ export const PRICE_GROUPS: PriceGroup[] = [
               es: 'Paquete de Implantes All-on-6 – Implantes Neodent',
               ru: 'Пакет имплантов All-on-6 – Импланты Neodent',
             },
-            usd: '$8,000',
-            eur: '€7,000',
-            gbp: '£6,000',
+            warranty: {
+              en: 'Lifetime Warranty',
+              tr: 'Ömür Boyu Garanti',
+              de: 'Lebenslange Garantie',
+              pl: 'Dożywotnia Gwarancja',
+              pt: 'Garantia Vitalícia',
+              es: 'Garantía de por Vida',
+              ru: 'Пожизненная гарантия'
+            },
+            duration: {
+              en: '3-5 Days',
+              tr: '3-5 İş Günü',
+              de: '3-5 Tage',
+              pl: '3-5 Dni',
+              pt: '3-5 Dias',
+              es: '3-5 Días',
+              ru: '3-5 Дней'
+            },
           },
           {
             name: {
@@ -216,9 +380,24 @@ export const PRICE_GROUPS: PriceGroup[] = [
               es: 'Paquete de Implantes All-on-6 – Implantes Hiossen',
               ru: 'Пакет имплантов All-on-6 – Импланты Hiossen',
             },
-            usd: '$7,700',
-            eur: '€6,750',
-            gbp: '£5,780',
+            warranty: {
+              en: 'Lifetime Warranty',
+              tr: 'Ömür Boyu Garanti',
+              de: 'Lebenslange Garantie',
+              pl: 'Dożywotnia Gwarancja',
+              pt: 'Garantia Vitalícia',
+              es: 'Garantía de por Vida',
+              ru: 'Пожизненная гарантия'
+            },
+            duration: {
+              en: '3-5 Days',
+              tr: '3-5 İş Günü',
+              de: '3-5 Tage',
+              pl: '3-5 Dni',
+              pt: '3-5 Dias',
+              es: '3-5 Días',
+              ru: '3-5 Дней'
+            },
           },
         ],
       },
@@ -267,9 +446,24 @@ export const PRICE_GROUPS: PriceGroup[] = [
               es: 'Paquete de Rehabilitación de Sonrisa con 20 Coronas de Circonio',
               ru: 'Пакет преображения улыбки на 20 циркониевых коронок',
             },
-            usd: '$5,800',
-            eur: '€5,000',
-            gbp: '£4,300',
+            warranty: {
+              en: 'Lifetime Warranty',
+              tr: 'Ömür Boyu Garanti',
+              de: 'Lebenslange Garantie',
+              pl: 'Dożywotnia Gwarancja',
+              pt: 'Garantia Vitalícia',
+              es: 'Garantía de por Vida',
+              ru: 'Пожизненная гарантия'
+            },
+            duration: {
+              en: '3-5 Days',
+              tr: '3-5 İş Günü',
+              de: '3-5 Tage',
+              pl: '3-5 Dni',
+              pt: '3-5 Dias',
+              es: '3-5 Días',
+              ru: '3-5 Дней'
+            },
           },
           {
             name: {
@@ -281,9 +475,24 @@ export const PRICE_GROUPS: PriceGroup[] = [
               es: 'Paquete de Rehabilitación de Sonrisa con 20 Coronas E-max',
               ru: 'Пакет преображения улыбки на 20 керамических коронок E-max',
             },
-            usd: '$8,120',
-            eur: '€7,000',
-            gbp: '£6,020',
+            warranty: {
+              en: 'Lifetime Warranty',
+              tr: 'Ömür Boyu Garanti',
+              de: 'Lebenslange Garantie',
+              pl: 'Dożywotnia Gwarancja',
+              pt: 'Garantia Vitalícia',
+              es: 'Garantía de por Vida',
+              ru: 'Пожизненная гарантия'
+            },
+            duration: {
+              en: '3-5 Days',
+              tr: '3-5 İş Günü',
+              de: '3-5 Tage',
+              pl: '3-5 Dni',
+              pt: '3-5 Dias',
+              es: '3-5 Días',
+              ru: '3-5 Дней'
+            },
           },
           {
             name: {
@@ -295,9 +504,24 @@ export const PRICE_GROUPS: PriceGroup[] = [
               es: 'Paquete de Rehabilitación de Sonrisa con 20 Carillas Laminadas',
               ru: 'Пакет преображения улыбки на 20 ламинатных виниров',
             },
-            usd: '$8,120',
-            eur: '€7,000',
-            gbp: '£6,020',
+            warranty: {
+              en: 'Lifetime Warranty',
+              tr: 'Ömür Boyu Garanti',
+              de: 'Lebenslange Garantie',
+              pl: 'Dożywotnia Gwarancja',
+              pt: 'Garantia Vitalícia',
+              es: 'Garantía de por Vida',
+              ru: 'Пожизненная гарантия'
+            },
+            duration: {
+              en: '3-5 Days',
+              tr: '3-5 İş Günü',
+              de: '3-5 Tage',
+              pl: '3-5 Dni',
+              pt: '3-5 Dias',
+              es: '3-5 Días',
+              ru: '3-5 Дней'
+            },
           },
         ],
       },
@@ -336,9 +560,24 @@ export const PRICE_GROUPS: PriceGroup[] = [
               es: 'Solución Híbrida de Implante Cigomático – Nobel Biocare (2 Cigomáticos + 2 Estándar)',
               ru: 'Гибридное решение Zygoma – Nobel Biocare (2 скуловых + 2 стандартных)',
             },
-            usd: '$16,250',
-            eur: '€14,000',
-            gbp: '£12,000',
+            warranty: {
+              en: 'Lifetime Warranty',
+              tr: 'Ömür Boyu Garanti',
+              de: 'Lebenslange Garantie',
+              pl: 'Dożywotnia Gwarancja',
+              pt: 'Garantia Vitalícia',
+              es: 'Garantía de por Vida',
+              ru: 'Пожизненная гарантия'
+            },
+            duration: {
+              en: '3-5 Days',
+              tr: '3-5 İş Günü',
+              de: '3-5 Tage',
+              pl: '3-5 Dni',
+              pt: '3-5 Dias',
+              es: '3-5 Días',
+              ru: '3-5 Дней'
+            },
           },
           {
             name: {
@@ -350,9 +589,24 @@ export const PRICE_GROUPS: PriceGroup[] = [
               es: 'Solución Quad de Implante Cigomático – Nobel Biocare (4 Implantes Cigomáticos)',
               ru: 'Комплекс Quad Zygoma – Nobel Biocare (4 скуловых импланта)',
             },
-            usd: '$18,600',
-            eur: '€16,000',
-            gbp: '£13,800',
+            warranty: {
+              en: 'Lifetime Warranty',
+              tr: 'Ömür Boyu Garanti',
+              de: 'Lebenslange Garantie',
+              pl: 'Dożywotnia Gwarancja',
+              pt: 'Garantia Vitalícia',
+              es: 'Garantía de por Vida',
+              ru: 'Пожизненная гарантия'
+            },
+            duration: {
+              en: '3-5 Days',
+              tr: '3-5 İş Günü',
+              de: '3-5 Tage',
+              pl: '3-5 Dni',
+              pt: '3-5 Dias',
+              es: '3-5 Días',
+              ru: '3-5 Дней'
+            },
           },
         ],
       },
@@ -391,9 +645,24 @@ export const PRICE_GROUPS: PriceGroup[] = [
               es: 'Implante Dental Individual – Sistema Suizo Straumann',
               ru: 'Одиночный имплант – Швейцарская система Straumann',
             },
-            usd: '$1,100',
-            eur: '€950',
-            gbp: '£820',
+            warranty: {
+              en: 'Lifetime Warranty',
+              tr: 'Ömür Boyu Garanti',
+              de: 'Lebenslange Garantie',
+              pl: 'Dożywotnia Gwarancja',
+              pt: 'Garantia Vitalícia',
+              es: 'Garantía de por Vida',
+              ru: 'Пожизненная гарантия'
+            },
+            duration: {
+              en: '3-5 Days',
+              tr: '3-5 İş Günü',
+              de: '3-5 Tage',
+              pl: '3-5 Dni',
+              pt: '3-5 Dias',
+              es: '3-5 Días',
+              ru: '3-5 Дней'
+            },
           },
           {
             name: {
@@ -405,9 +674,24 @@ export const PRICE_GROUPS: PriceGroup[] = [
               es: 'Implante Dental Individual – Sistema Alemán DXL',
               ru: 'Одиночный имплант – Немецкая система DXL',
             },
-            usd: '$640',
-            eur: '€550',
-            gbp: '£480',
+            warranty: {
+              en: 'Lifetime Warranty',
+              tr: 'Ömür Boyu Garanti',
+              de: 'Lebenslange Garantie',
+              pl: 'Dożywotnia Gwarancja',
+              pt: 'Garantia Vitalícia',
+              es: 'Garantía de por Vida',
+              ru: 'Пожизненная гарантия'
+            },
+            duration: {
+              en: '3-5 Days',
+              tr: '3-5 İş Günü',
+              de: '3-5 Tage',
+              pl: '3-5 Dni',
+              pt: '3-5 Dias',
+              es: '3-5 Días',
+              ru: '3-5 Дней'
+            },
           },
           {
             name: {
@@ -419,9 +703,24 @@ export const PRICE_GROUPS: PriceGroup[] = [
               es: 'Implante Dental Individual – Sistema Nucleoss',
               ru: 'Одиночный имплант – Система Nucleoss',
             },
-            usd: '$520',
-            eur: '€450',
-            gbp: '£390',
+            warranty: {
+              en: 'Lifetime Warranty',
+              tr: 'Ömür Boyu Garanti',
+              de: 'Lebenslange Garantie',
+              pl: 'Dożywotnia Gwarancja',
+              pt: 'Garantia Vitalícia',
+              es: 'Garantía de por Vida',
+              ru: 'Пожизненная гарантия'
+            },
+            duration: {
+              en: '3-5 Days',
+              tr: '3-5 İş Günü',
+              de: '3-5 Tage',
+              pl: '3-5 Dni',
+              pt: '3-5 Dias',
+              es: '3-5 Días',
+              ru: '3-5 Дней'
+            },
           },
           {
             name: {
@@ -433,9 +732,24 @@ export const PRICE_GROUPS: PriceGroup[] = [
               es: 'Implante Dental Individual – Sistema Megagen',
               ru: 'Одиночный имплант – Система Megagen',
             },
-            usd: '$700',
-            eur: '€600',
-            gbp: '£510',
+            warranty: {
+              en: 'Lifetime Warranty',
+              tr: 'Ömür Boyu Garanti',
+              de: 'Lebenslange Garantie',
+              pl: 'Dożywotnia Gwarancja',
+              pt: 'Garantia Vitalícia',
+              es: 'Garantía de por Vida',
+              ru: 'Пожизненная гарантия'
+            },
+            duration: {
+              en: '3-5 Days',
+              tr: '3-5 İş Günü',
+              de: '3-5 Tage',
+              pl: '3-5 Dni',
+              pt: '3-5 Dias',
+              es: '3-5 Días',
+              ru: '3-5 Дней'
+            },
           },
           {
             name: {
@@ -447,9 +761,24 @@ export const PRICE_GROUPS: PriceGroup[] = [
               es: 'Implante Dental Individual – Sistema Neodent',
               ru: 'Одиночный имплант – Система Neodent',
             },
-            usd: '$700',
-            eur: '€600',
-            gbp: '£510',
+            warranty: {
+              en: 'Lifetime Warranty',
+              tr: 'Ömür Boyu Garanti',
+              de: 'Lebenslange Garantie',
+              pl: 'Dożywotnia Gwarancja',
+              pt: 'Garantia Vitalícia',
+              es: 'Garantía de por Vida',
+              ru: 'Пожизненная гарантия'
+            },
+            duration: {
+              en: '3-5 Days',
+              tr: '3-5 İş Günü',
+              de: '3-5 Tage',
+              pl: '3-5 Dni',
+              pt: '3-5 Dias',
+              es: '3-5 Días',
+              ru: '3-5 Дней'
+            },
           },
           {
             name: {
@@ -461,9 +790,24 @@ export const PRICE_GROUPS: PriceGroup[] = [
               es: 'Implante Dental Individual – Sistema Hiossen',
               ru: 'Одиночный имплант – Система Hiossen',
             },
-            usd: '$650',
-            eur: '€570',
-            gbp: '£490',
+            warranty: {
+              en: 'Lifetime Warranty',
+              tr: 'Ömür Boyu Garanti',
+              de: 'Lebenslange Garantie',
+              pl: 'Dożywotnia Gwarancja',
+              pt: 'Garantia Vitalícia',
+              es: 'Garantía de por Vida',
+              ru: 'Пожизненная гарантия'
+            },
+            duration: {
+              en: '3-5 Days',
+              tr: '3-5 İş Günü',
+              de: '3-5 Tage',
+              pl: '3-5 Dni',
+              pt: '3-5 Dias',
+              es: '3-5 Días',
+              ru: '3-5 Дней'
+            },
           },
         ],
       },
@@ -488,9 +832,24 @@ export const PRICE_GROUPS: PriceGroup[] = [
               es: 'Implante Dental Cerámico Individual – Implante de Circonio SDS',
               ru: 'Одиночный керамический имплант – Циркониевый имплант SDS',
             },
-            usd: '$1,850',
-            eur: '€1,600',
-            gbp: '£1,400',
+            warranty: {
+              en: 'Lifetime Warranty',
+              tr: 'Ömür Boyu Garanti',
+              de: 'Lebenslange Garantie',
+              pl: 'Dożywotnia Gwarancja',
+              pt: 'Garantia Vitalícia',
+              es: 'Garantía de por Vida',
+              ru: 'Пожизненная гарантия'
+            },
+            duration: {
+              en: '3-5 Days',
+              tr: '3-5 İş Günü',
+              de: '3-5 Tage',
+              pl: '3-5 Dni',
+              pt: '3-5 Dias',
+              es: '3-5 Días',
+              ru: '3-5 Дней'
+            },
           },
         ],
       },
@@ -529,9 +888,24 @@ export const PRICE_GROUPS: PriceGroup[] = [
               es: 'Elevación de Seno Cerrada para Implante',
               ru: 'Закрытый синус-лифтинг',
             },
-            usd: '$350',
-            eur: '€300',
-            gbp: '£260',
+            warranty: {
+              en: 'Lifetime Warranty',
+              tr: 'Ömür Boyu Garanti',
+              de: 'Lebenslange Garantie',
+              pl: 'Dożywotnia Gwarancja',
+              pt: 'Garantia Vitalícia',
+              es: 'Garantía de por Vida',
+              ru: 'Пожизненная гарантия'
+            },
+            duration: {
+              en: '3-5 Days',
+              tr: '3-5 İş Günü',
+              de: '3-5 Tage',
+              pl: '3-5 Dni',
+              pt: '3-5 Dias',
+              es: '3-5 Días',
+              ru: '3-5 Дней'
+            },
           },
           {
             name: {
@@ -543,9 +917,24 @@ export const PRICE_GROUPS: PriceGroup[] = [
               es: 'Elevación de Seno Abierta para Implante',
               ru: 'Открытый синус-лифтинг',
             },
-            usd: '$520',
-            eur: '€450',
-            gbp: '£390',
+            warranty: {
+              en: 'Lifetime Warranty',
+              tr: 'Ömür Boyu Garanti',
+              de: 'Lebenslange Garantie',
+              pl: 'Dożywotnia Gwarancja',
+              pt: 'Garantia Vitalícia',
+              es: 'Garantía de por Vida',
+              ru: 'Пожизненная гарантия'
+            },
+            duration: {
+              en: '3-5 Days',
+              tr: '3-5 İş Günü',
+              de: '3-5 Tage',
+              pl: '3-5 Dni',
+              pt: '3-5 Dias',
+              es: '3-5 Días',
+              ru: '3-5 Дней'
+            },
           },
         ],
       },
@@ -570,9 +959,24 @@ export const PRICE_GROUPS: PriceGroup[] = [
               es: 'Material de Injerto Óseo Straumann – 1 cc',
               ru: 'Костный материал Straumann – 1 куб.см',
             },
-            usd: '$290',
-            eur: '€250',
-            gbp: '£215',
+            warranty: {
+              en: 'Lifetime Warranty',
+              tr: 'Ömür Boyu Garanti',
+              de: 'Lebenslange Garantie',
+              pl: 'Dożywotnia Gwarancja',
+              pt: 'Garantia Vitalícia',
+              es: 'Garantía de por Vida',
+              ru: 'Пожизненная гарантия'
+            },
+            duration: {
+              en: '3-5 Days',
+              tr: '3-5 İş Günü',
+              de: '3-5 Tage',
+              pl: '3-5 Dni',
+              pt: '3-5 Dias',
+              es: '3-5 Días',
+              ru: '3-5 Дней'
+            },
           },
           {
             name: {
@@ -584,9 +988,24 @@ export const PRICE_GROUPS: PriceGroup[] = [
               es: 'Material de Injerto Óseo Straumann – 2 cc',
               ru: 'Костный материал Straumann – 2 куб.см',
             },
-            usd: '$520',
-            eur: '€450',
-            gbp: '£390',
+            warranty: {
+              en: 'Lifetime Warranty',
+              tr: 'Ömür Boyu Garanti',
+              de: 'Lebenslange Garantie',
+              pl: 'Dożywotnia Gwarancja',
+              pt: 'Garantia Vitalícia',
+              es: 'Garantía de por Vida',
+              ru: 'Пожизненная гарантия'
+            },
+            duration: {
+              en: '3-5 Days',
+              tr: '3-5 İş Günü',
+              de: '3-5 Tage',
+              pl: '3-5 Dni',
+              pt: '3-5 Dias',
+              es: '3-5 Días',
+              ru: '3-5 Дней'
+            },
           },
         ],
       },
@@ -611,9 +1030,24 @@ export const PRICE_GROUPS: PriceGroup[] = [
               es: 'Membrana de Colágeno para Regeneración Ósea',
               ru: 'Коллагеновая мембрана',
             },
-            usd: '$350',
-            eur: '€300',
-            gbp: '£260',
+            warranty: {
+              en: 'Lifetime Warranty',
+              tr: 'Ömür Boyu Garanti',
+              de: 'Lebenslange Garantie',
+              pl: 'Dożywotnia Gwarancja',
+              pt: 'Garantia Vitalícia',
+              es: 'Garantía de por Vida',
+              ru: 'Пожизненная гарантия'
+            },
+            duration: {
+              en: '3-5 Days',
+              tr: '3-5 İş Günü',
+              de: '3-5 Tage',
+              pl: '3-5 Dni',
+              pt: '3-5 Dias',
+              es: '3-5 Días',
+              ru: '3-5 Дней'
+            },
           },
           {
             name: {
@@ -625,9 +1059,24 @@ export const PRICE_GROUPS: PriceGroup[] = [
               es: 'Membrana de Pericardio para Regeneración Ósea',
               ru: 'Перикардиальная мембрана',
             },
-            usd: '$400',
-            eur: '€350',
-            gbp: '£300',
+            warranty: {
+              en: 'Lifetime Warranty',
+              tr: 'Ömür Boyu Garanti',
+              de: 'Lebenslange Garantie',
+              pl: 'Dożywotnia Gwarancja',
+              pt: 'Garantia Vitalícia',
+              es: 'Garantía de por Vida',
+              ru: 'Пожизненная гарантия'
+            },
+            duration: {
+              en: '3-5 Days',
+              tr: '3-5 İş Günü',
+              de: '3-5 Tage',
+              pl: '3-5 Dni',
+              pt: '3-5 Dias',
+              es: '3-5 Días',
+              ru: '3-5 Дней'
+            },
           },
         ],
       },
@@ -652,9 +1101,24 @@ export const PRICE_GROUPS: PriceGroup[] = [
               es: 'Extracción Dental Simple',
               ru: 'Простое удаление зуба',
             },
-            usd: '$120',
-            eur: '€100',
-            gbp: '£90',
+            warranty: {
+              en: 'Lifetime Warranty',
+              tr: 'Ömür Boyu Garanti',
+              de: 'Lebenslange Garantie',
+              pl: 'Dożywotnia Gwarancja',
+              pt: 'Garantia Vitalícia',
+              es: 'Garantía de por Vida',
+              ru: 'Пожизненная гарантия'
+            },
+            duration: {
+              en: '3-5 Days',
+              tr: '3-5 İş Günü',
+              de: '3-5 Tage',
+              pl: '3-5 Dni',
+              pt: '3-5 Dias',
+              es: '3-5 Días',
+              ru: '3-5 Дней'
+            },
           },
           {
             name: {
@@ -666,9 +1130,24 @@ export const PRICE_GROUPS: PriceGroup[] = [
               es: 'Extracción Dental Quirúrgica',
               ru: 'Хирургическое удаление зуба',
             },
-            usd: '$175',
-            eur: '€150',
-            gbp: '£130',
+            warranty: {
+              en: 'Lifetime Warranty',
+              tr: 'Ömür Boyu Garanti',
+              de: 'Lebenslange Garantie',
+              pl: 'Dożywotnia Gwarancja',
+              pt: 'Garantia Vitalícia',
+              es: 'Garantía de por Vida',
+              ru: 'Пожизненная гарантия'
+            },
+            duration: {
+              en: '3-5 Days',
+              tr: '3-5 İş Günü',
+              de: '3-5 Tage',
+              pl: '3-5 Dni',
+              pt: '3-5 Dias',
+              es: '3-5 Días',
+              ru: '3-5 Дней'
+            },
           },
         ],
       },
@@ -693,9 +1172,24 @@ export const PRICE_GROUPS: PriceGroup[] = [
               es: 'Extracción de Implante Dental / Revisión',
               ru: 'Удаление зубного импланта / ревизия',
             },
-            usd: '$210',
-            eur: '€180',
-            gbp: '£155',
+            warranty: {
+              en: 'Lifetime Warranty',
+              tr: 'Ömür Boyu Garanti',
+              de: 'Lebenslange Garantie',
+              pl: 'Dożywotnia Gwarancja',
+              pt: 'Garantia Vitalícia',
+              es: 'Garantía de por Vida',
+              ru: 'Пожизненная гарантия'
+            },
+            duration: {
+              en: '3-5 Days',
+              tr: '3-5 İş Günü',
+              de: '3-5 Tage',
+              pl: '3-5 Dni',
+              pt: '3-5 Dias',
+              es: '3-5 Días',
+              ru: '3-5 Дней'
+            },
           },
         ],
       },
@@ -720,9 +1214,24 @@ export const PRICE_GROUPS: PriceGroup[] = [
               es: 'Extracción de Quiste Oral Pequeño',
               ru: 'Удаление малой кисты',
             },
-            usd: '$90',
-            eur: '€75',
-            gbp: '£65',
+            warranty: {
+              en: 'Lifetime Warranty',
+              tr: 'Ömür Boyu Garanti',
+              de: 'Lebenslange Garantie',
+              pl: 'Dożywotnia Gwarancja',
+              pt: 'Garantia Vitalícia',
+              es: 'Garantía de por Vida',
+              ru: 'Пожизненная гарантия'
+            },
+            duration: {
+              en: '3-5 Days',
+              tr: '3-5 İş Günü',
+              de: '3-5 Tage',
+              pl: '3-5 Dni',
+              pt: '3-5 Dias',
+              es: '3-5 Días',
+              ru: '3-5 Дней'
+            },
           },
           {
             name: {
@@ -734,9 +1243,24 @@ export const PRICE_GROUPS: PriceGroup[] = [
               es: 'Extracción de Quiste Oral Grande',
               ru: 'Удаление крупной кисты',
             },
-            usd: '$120',
-            eur: '€100',
-            gbp: '£90',
+            warranty: {
+              en: 'Lifetime Warranty',
+              tr: 'Ömür Boyu Garanti',
+              de: 'Lebenslange Garantie',
+              pl: 'Dożywotnia Gwarancja',
+              pt: 'Garantia Vitalícia',
+              es: 'Garantía de por Vida',
+              ru: 'Пожизненная гарантия'
+            },
+            duration: {
+              en: '3-5 Days',
+              tr: '3-5 İş Günü',
+              de: '3-5 Tage',
+              pl: '3-5 Dni',
+              pt: '3-5 Dias',
+              es: '3-5 Días',
+              ru: '3-5 Дней'
+            },
           },
         ],
       },
@@ -761,9 +1285,24 @@ export const PRICE_GROUPS: PriceGroup[] = [
               es: 'Tratamiento de Botox en Músculo Masetero',
               ru: 'Инъекции ботокса в жевательную мышцу (массетер)',
             },
-            usd: '$400',
-            eur: '€350',
-            gbp: '£300',
+            warranty: {
+              en: 'Lifetime Warranty',
+              tr: 'Ömür Boyu Garanti',
+              de: 'Lebenslange Garantie',
+              pl: 'Dożywotnia Gwarancja',
+              pt: 'Garantia Vitalícia',
+              es: 'Garantía de por Vida',
+              ru: 'Пожизненная гарантия'
+            },
+            duration: {
+              en: '3-5 Days',
+              tr: '3-5 İş Günü',
+              de: '3-5 Tage',
+              pl: '3-5 Dni',
+              pt: '3-5 Dias',
+              es: '3-5 Días',
+              ru: '3-5 Дней'
+            },
           },
         ],
       },
@@ -788,9 +1327,24 @@ export const PRICE_GROUPS: PriceGroup[] = [
               es: 'Sedación Intravenosa (IV) para Cirugía Dental',
               ru: 'Внутривенная седация (во сне)',
             },
-            usd: '$1,100',
-            eur: '€950',
-            gbp: '£820',
+            warranty: {
+              en: 'Lifetime Warranty',
+              tr: 'Ömür Boyu Garanti',
+              de: 'Lebenslange Garantie',
+              pl: 'Dożywotnia Gwarancja',
+              pt: 'Garantia Vitalícia',
+              es: 'Garantía de por Vida',
+              ru: 'Пожизненная гарантия'
+            },
+            duration: {
+              en: '3-5 Days',
+              tr: '3-5 İş Günü',
+              de: '3-5 Tage',
+              pl: '3-5 Dni',
+              pt: '3-5 Dias',
+              es: '3-5 Días',
+              ru: '3-5 Дней'
+            },
           },
         ],
       },
@@ -829,9 +1383,24 @@ export const PRICE_GROUPS: PriceGroup[] = [
               es: 'Cirugía Periodontal a Colgajo (por Mandíbula)',
               ru: 'Лоскутная операция на деснах (за одну челюсть)',
             },
-            usd: '$1,160',
-            eur: '€1,000',
-            gbp: '£860',
+            warranty: {
+              en: 'Lifetime Warranty',
+              tr: 'Ömür Boyu Garanti',
+              de: 'Lebenslange Garantie',
+              pl: 'Dożywotnia Gwarancja',
+              pt: 'Garantia Vitalícia',
+              es: 'Garantía de por Vida',
+              ru: 'Пожизненная гарантия'
+            },
+            duration: {
+              en: '3-5 Days',
+              tr: '3-5 İş Günü',
+              de: '3-5 Tage',
+              pl: '3-5 Dni',
+              pt: '3-5 Dias',
+              es: '3-5 Días',
+              ru: '3-5 Дней'
+            },
           },
         ],
       },
@@ -856,9 +1425,24 @@ export const PRICE_GROUPS: PriceGroup[] = [
               es: 'Gingivectomía / Contorno de Encía (por Diente)',
               ru: 'Гингивэктомия / контурирование десны (за один зуб)',
             },
-            usd: '$70',
-            eur: '€60',
-            gbp: '£50',
+            warranty: {
+              en: 'Lifetime Warranty',
+              tr: 'Ömür Boyu Garanti',
+              de: 'Lebenslange Garantie',
+              pl: 'Dożywotnia Gwarancja',
+              pt: 'Garantia Vitalícia',
+              es: 'Garantía de por Vida',
+              ru: 'Пожизненная гарантия'
+            },
+            duration: {
+              en: '3-5 Days',
+              tr: '3-5 İş Günü',
+              de: '3-5 Tage',
+              pl: '3-5 Dni',
+              pt: '3-5 Dias',
+              es: '3-5 Días',
+              ru: '3-5 Дней'
+            },
           },
         ],
       },
@@ -883,9 +1467,24 @@ export const PRICE_GROUPS: PriceGroup[] = [
               es: 'Limpieza Dental Profesional / Tartrectomía',
               ru: 'Профессиональная чистка и снятие зубного камня',
             },
-            usd: '$130',
-            eur: '€110',
-            gbp: '£95',
+            warranty: {
+              en: 'Lifetime Warranty',
+              tr: 'Ömür Boyu Garanti',
+              de: 'Lebenslange Garantie',
+              pl: 'Dożywotnia Gwarancja',
+              pt: 'Garantia Vitalícia',
+              es: 'Garantía de por Vida',
+              ru: 'Пожизненная гарантия'
+            },
+            duration: {
+              en: '3-5 Days',
+              tr: '3-5 İş Günü',
+              de: '3-5 Tage',
+              pl: '3-5 Dni',
+              pt: '3-5 Dias',
+              es: '3-5 Días',
+              ru: '3-5 Дней'
+            },
           },
           {
             name: {
@@ -897,9 +1496,24 @@ export const PRICE_GROUPS: PriceGroup[] = [
               es: 'Limpieza Dental Profunda (Curetaje)',
               ru: 'Глубокий кюретаж пародонтальных карманов',
             },
-            usd: '$175',
-            eur: '€150',
-            gbp: '£130',
+            warranty: {
+              en: 'Lifetime Warranty',
+              tr: 'Ömür Boyu Garanti',
+              de: 'Lebenslange Garantie',
+              pl: 'Dożywotnia Gwarancja',
+              pt: 'Garantia Vitalícia',
+              es: 'Garantía de por Vida',
+              ru: 'Пожизненная гарантия'
+            },
+            duration: {
+              en: '3-5 Days',
+              tr: '3-5 İş Günü',
+              de: '3-5 Tage',
+              pl: '3-5 Dni',
+              pt: '3-5 Dias',
+              es: '3-5 Días',
+              ru: '3-5 Дней'
+            },
           },
         ],
       },
@@ -924,9 +1538,24 @@ export const PRICE_GROUPS: PriceGroup[] = [
               es: 'Raspado y Alisado Radicular',
               ru: 'Сглаживание корней (Root Planing) / глубокая терапия',
             },
-            usd: '$580',
-            eur: '€500',
-            gbp: '£430',
+            warranty: {
+              en: 'Lifetime Warranty',
+              tr: 'Ömür Boyu Garanti',
+              de: 'Lebenslange Garantie',
+              pl: 'Dożywotnia Gwarancja',
+              pt: 'Garantia Vitalícia',
+              es: 'Garantía de por Vida',
+              ru: 'Пожизненная гарантия'
+            },
+            duration: {
+              en: '3-5 Days',
+              tr: '3-5 İş Günü',
+              de: '3-5 Tage',
+              pl: '3-5 Dni',
+              pt: '3-5 Dias',
+              es: '3-5 Días',
+              ru: '3-5 Дней'
+            },
           },
         ],
       },
@@ -965,9 +1594,24 @@ export const PRICE_GROUPS: PriceGroup[] = [
               es: 'Corona Dental de Circonio',
               ru: 'Циркониевая коронка',
             },
-            usd: '$290',
-            eur: '€250',
-            gbp: '£215',
+            warranty: {
+              en: 'Lifetime Warranty',
+              tr: 'Ömür Boyu Garanti',
+              de: 'Lebenslange Garantie',
+              pl: 'Dożywotnia Gwarancja',
+              pt: 'Garantia Vitalícia',
+              es: 'Garantía de por Vida',
+              ru: 'Пожизненная гарантия'
+            },
+            duration: {
+              en: '3-5 Days',
+              tr: '3-5 İş Günü',
+              de: '3-5 Tage',
+              pl: '3-5 Dni',
+              pt: '3-5 Dias',
+              es: '3-5 Días',
+              ru: '3-5 Дней'
+            },
           },
           {
             name: {
@@ -979,9 +1623,24 @@ export const PRICE_GROUPS: PriceGroup[] = [
               es: 'Corona Dental E-max',
               ru: 'Керамическая коронка E-max',
             },
-            usd: '$400',
-            eur: '€350',
-            gbp: '£300',
+            warranty: {
+              en: 'Lifetime Warranty',
+              tr: 'Ömür Boyu Garanti',
+              de: 'Lebenslange Garantie',
+              pl: 'Dożywotnia Gwarancja',
+              pt: 'Garantia Vitalícia',
+              es: 'Garantía de por Vida',
+              ru: 'Пожизненная гарантия'
+            },
+            duration: {
+              en: '3-5 Days',
+              tr: '3-5 İş Günü',
+              de: '3-5 Tage',
+              pl: '3-5 Dni',
+              pt: '3-5 Dias',
+              es: '3-5 Días',
+              ru: '3-5 Дней'
+            },
           },
           {
             name: {
@@ -993,9 +1652,24 @@ export const PRICE_GROUPS: PriceGroup[] = [
               es: 'Carilla Cerámica E-max',
               ru: 'Керамический винир E-max',
             },
-            usd: '$400',
-            eur: '€350',
-            gbp: '£300',
+            warranty: {
+              en: 'Lifetime Warranty',
+              tr: 'Ömür Boyu Garanti',
+              de: 'Lebenslange Garantie',
+              pl: 'Dożywotnia Gwarancja',
+              pt: 'Garantia Vitalícia',
+              es: 'Garantía de por Vida',
+              ru: 'Пожизненная гарантия'
+            },
+            duration: {
+              en: '3-5 Days',
+              tr: '3-5 İş Günü',
+              de: '3-5 Tage',
+              pl: '3-5 Dni',
+              pt: '3-5 Dias',
+              es: '3-5 Días',
+              ru: '3-5 Дней'
+            },
           },
         ],
       },
@@ -1034,9 +1708,24 @@ export const PRICE_GROUPS: PriceGroup[] = [
               es: 'Empaste Dental de Composite',
               ru: 'Композитная эстетическая пломба',
             },
-            usd: '$140',
-            eur: '€120',
-            gbp: '£100',
+            warranty: {
+              en: 'Lifetime Warranty',
+              tr: 'Ömür Boyu Garanti',
+              de: 'Lebenslange Garantie',
+              pl: 'Dożywotnia Gwarancja',
+              pt: 'Garantia Vitalícia',
+              es: 'Garantía de por Vida',
+              ru: 'Пожизненная гарантия'
+            },
+            duration: {
+              en: '3-5 Days',
+              tr: '3-5 İş Günü',
+              de: '3-5 Tage',
+              pl: '3-5 Dni',
+              pt: '3-5 Dias',
+              es: '3-5 Días',
+              ru: '3-5 Дней'
+            },
           },
         ],
       },
@@ -1061,9 +1750,24 @@ export const PRICE_GROUPS: PriceGroup[] = [
               es: 'Reconstrucción con Poste de Fibra',
               ru: 'Восстановление зуба на стекловолоконном штифте',
             },
-            usd: '$140',
-            eur: '€120',
-            gbp: '£100',
+            warranty: {
+              en: 'Lifetime Warranty',
+              tr: 'Ömür Boyu Garanti',
+              de: 'Lebenslange Garantie',
+              pl: 'Dożywotnia Gwarancja',
+              pt: 'Garantia Vitalícia',
+              es: 'Garantía de por Vida',
+              ru: 'Пожизненная гарантия'
+            },
+            duration: {
+              en: '3-5 Days',
+              tr: '3-5 İş Günü',
+              de: '3-5 Tage',
+              pl: '3-5 Dni',
+              pt: '3-5 Dias',
+              es: '3-5 Días',
+              ru: '3-5 Дней'
+            },
           },
         ],
       },
@@ -1088,9 +1792,24 @@ export const PRICE_GROUPS: PriceGroup[] = [
               es: 'Restauración Inlay de Cerámica',
               ru: 'Керамическая вкладка Inlay',
             },
-            usd: '$460',
-            eur: '€400',
-            gbp: '£345',
+            warranty: {
+              en: 'Lifetime Warranty',
+              tr: 'Ömür Boyu Garanti',
+              de: 'Lebenslange Garantie',
+              pl: 'Dożywotnia Gwarancja',
+              pt: 'Garantia Vitalícia',
+              es: 'Garantía de por Vida',
+              ru: 'Пожизненная гарантия'
+            },
+            duration: {
+              en: '3-5 Days',
+              tr: '3-5 İş Günü',
+              de: '3-5 Tage',
+              pl: '3-5 Dni',
+              pt: '3-5 Dias',
+              es: '3-5 Días',
+              ru: '3-5 Дней'
+            },
           },
           {
             name: {
@@ -1102,9 +1821,24 @@ export const PRICE_GROUPS: PriceGroup[] = [
               es: 'Restauración Onlay de Cerámica',
               ru: 'Керамическая вкладка Onlay',
             },
-            usd: '$460',
-            eur: '€400',
-            gbp: '£345',
+            warranty: {
+              en: 'Lifetime Warranty',
+              tr: 'Ömür Boyu Garanti',
+              de: 'Lebenslange Garantie',
+              pl: 'Dożywotnia Gwarancja',
+              pt: 'Garantia Vitalícia',
+              es: 'Garantía de por Vida',
+              ru: 'Пожизненная гарантия'
+            },
+            duration: {
+              en: '3-5 Days',
+              tr: '3-5 İş Günü',
+              de: '3-5 Tage',
+              pl: '3-5 Dni',
+              pt: '3-5 Dias',
+              es: '3-5 Días',
+              ru: '3-5 Дней'
+            },
           },
         ],
       },
@@ -1129,9 +1863,24 @@ export const PRICE_GROUPS: PriceGroup[] = [
               es: 'Endodoncia',
               ru: 'Лечение корневых каналов',
             },
-            usd: '$290',
-            eur: '€250',
-            gbp: '£215',
+            warranty: {
+              en: 'Lifetime Warranty',
+              tr: 'Ömür Boyu Garanti',
+              de: 'Lebenslange Garantie',
+              pl: 'Dożywotnia Gwarancja',
+              pt: 'Garantia Vitalícia',
+              es: 'Garantía de por Vida',
+              ru: 'Пожизненная гарантия'
+            },
+            duration: {
+              en: '3-5 Days',
+              tr: '3-5 İş Günü',
+              de: '3-5 Tage',
+              pl: '3-5 Dni',
+              pt: '3-5 Dias',
+              es: '3-5 Días',
+              ru: '3-5 Дней'
+            },
           },
           {
             name: {
@@ -1143,9 +1892,24 @@ export const PRICE_GROUPS: PriceGroup[] = [
               es: 'Re-Endodoncia (Retratamiento de Conducto)',
               ru: 'Повторное лечение каналов (ретритмент)',
             },
-            usd: '$350',
-            eur: '€300',
-            gbp: '£260',
+            warranty: {
+              en: 'Lifetime Warranty',
+              tr: 'Ömür Boyu Garanti',
+              de: 'Lebenslange Garantie',
+              pl: 'Dożywotnia Gwarancja',
+              pt: 'Garantia Vitalícia',
+              es: 'Garantía de por Vida',
+              ru: 'Пожизненная гарантия'
+            },
+            duration: {
+              en: '3-5 Days',
+              tr: '3-5 İş Günü',
+              de: '3-5 Tage',
+              pl: '3-5 Dni',
+              pt: '3-5 Dias',
+              es: '3-5 Días',
+              ru: '3-5 Дней'
+            },
           },
         ],
       },
@@ -1170,9 +1934,24 @@ export const PRICE_GROUPS: PriceGroup[] = [
               es: 'Blanqueamiento Dental Externo en Clínica',
               ru: 'Кабинетное отбеливание зубов (Office Bleaching)',
             },
-            usd: '$350',
-            eur: '€300',
-            gbp: '£260',
+            warranty: {
+              en: 'Lifetime Warranty',
+              tr: 'Ömür Boyu Garanti',
+              de: 'Lebenslange Garantie',
+              pl: 'Dożywotnia Gwarancja',
+              pt: 'Garantia Vitalícia',
+              es: 'Garantía de por Vida',
+              ru: 'Пожизненная гарантия'
+            },
+            duration: {
+              en: '3-5 Days',
+              tr: '3-5 İş Günü',
+              de: '3-5 Tage',
+              pl: '3-5 Dni',
+              pt: '3-5 Dias',
+              es: '3-5 Días',
+              ru: '3-5 Дней'
+            },
           },
           {
             name: {
@@ -1184,9 +1963,24 @@ export const PRICE_GROUPS: PriceGroup[] = [
               es: 'Blanqueamiento Interno de Diente No Vital',
               ru: 'Внутриканальное отбеливание депульпированного зуба',
             },
-            usd: '$120',
-            eur: '€100',
-            gbp: '£90',
+            warranty: {
+              en: 'Lifetime Warranty',
+              tr: 'Ömür Boyu Garanti',
+              de: 'Lebenslange Garantie',
+              pl: 'Dożywotnia Gwarancja',
+              pt: 'Garantia Vitalícia',
+              es: 'Garantía de por Vida',
+              ru: 'Пожизненная гарантия'
+            },
+            duration: {
+              en: '3-5 Days',
+              tr: '3-5 İş Günü',
+              de: '3-5 Tage',
+              pl: '3-5 Dni',
+              pt: '3-5 Dias',
+              es: '3-5 Días',
+              ru: '3-5 Дней'
+            },
           },
         ],
       },

@@ -58,7 +58,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>6 to 7 days in Antalya.</strong> During this single trip, tooth preparation, digital CAD/CAM 3D scanning, laboratory milling of your high-strength monolithic zirconium crowns, and final aesthetic cementation are completed with precision.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Antalya once. Your complete dental crown makeover (from 1 tooth to full mouth 20-28 crowns) is designed and placed during this single visit.",
     "recoveryTime": "<strong>2 to 3 days adaptation.</strong> There is virtually no surgical recovery time. Any mild sensitivity subsides within 48-72 hours, allowing you to comfortably enjoy eating and normal activities immediately.",
-    "priceEstimate": "<strong>Zirconium Dental Crown prices start at £210 / €250 / $275 per tooth.</strong> All-inclusive multi-crown packages (10, 20 or 24 crowns) include digital smile design, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "Single Zirconium Crown",
@@ -73,11 +73,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "Dedicated patient coordinator assistance"
         ],
-        "price": {
-          "USD": "$275",
-          "EUR": "€250",
-          "GBP": "£210"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "10-Unit Upper Smile Makeover (Zirconia)",
@@ -94,11 +90,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Transfers (Airport - Hotel - Clinic)",
           "Lifetime warranty against crown fracture & chipping"
         ],
-        "price": {
-          "USD": "$2,590",
-          "EUR": "€2,390",
-          "GBP": "£2,050"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20-Unit Full Mouth Zirconia Makeover",
@@ -114,11 +106,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Airport & Clinic Chauffeur",
           "Comprehensive post-op care pack & night guard protection"
         ],
-        "price": {
-          "USD": "$5,050",
-          "EUR": "€4,650",
-          "GBP": "£3,990"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Single Swiss Ivoclar E-Max Crown",
@@ -133,11 +121,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year International Manufacturer Warranty",
           "Digital shade calibration under natural & studio lighting"
         ],
-        "price": {
-          "USD": "$320",
-          "EUR": "€290",
-          "GBP": "£250"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20-Unit Premium Ivoclar E-Max Hollywood Smile",
@@ -153,11 +137,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Professional clinical teeth whitening for remaining natural teeth",
           "Lifetime warranty certificate & international care passport"
         ],
-        "price": {
-          "USD": "$5,950",
-          "EUR": "€5,450",
-          "GBP": "£4,690"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Full Arch Zirconia Bridge on Implants",
@@ -172,11 +152,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "5-Star Hotel Stay + VIP Mercedes Private Transfers",
           "Lifetime structural warranty on zirconia framework"
         ],
-        "price": {
-          "USD": "$3,150",
-          "EUR": "€2,890",
-          "GBP": "£2,490"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -331,7 +307,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>Antalya’da 6–7 gün.</strong> Bu tek seyahatte dişlerin minimal preparasyonu, 3D dijital CAD/CAM tarama, laboratuvarda monolitik zirkonyum kuronların üretimi ve kalıcı estetik simantasyon eksiksiz tamamlanır.",
     "visitCount": "<strong>Tek (1) ziyaret.</strong> Antalya’ya yalnızca bir kez gelmeniz yeterlidir. Tek bir dişten tüm ağız 20-28 zirkonyum kaplamaya kadar tüm tedaviniz aynı seyahatte tamamlanır.",
     "recoveryTime": "<strong>2–3 gün alışma süresi.</strong> Cerrahi bir operasyon olmadığı için iyileşme süreci gerektirmez. Diş etlerinin hafif adaptasyonu 48-72 saat içinde tamamlanır ve hemen normal beslenmenize dönebilirsiniz.",
-    "priceEstimate": "<strong>Zirkonyum diş kaplama fiyatları diş başına £210 / €250 / $275’den başlar.</strong> Çoklu kuron paketlerimiz (10, 20 veya 24 diş) dijital gülüş tasarımı, 4/5 yıldızlı otel konaklaması ve VIP transferleri kapsar.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "Tek Diş Zirkonyum Kron Kaplama",
@@ -346,11 +322,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10 Yıl Klinik Garanti & Orijinallik Sertifikası",
           "Kişisel hasta danışmanı refakati"
         ],
-        "price": {
-          "USD": "$275",
-          "EUR": "€250",
-          "GBP": "£210"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "10 Üye Üst Çene Zirkonyum Gülüş Tasarımı",
@@ -367,11 +339,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Özel Şoförlü Transferler (Havalimanı - Otel - Klinik)",
           "Kırılma ve çatlamaya karşı Ömür Boyu Garanti Sertifikası"
         ],
-        "price": {
-          "USD": "$2,590",
-          "EUR": "€2,390",
-          "GBP": "£2,050"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20 Üye Tam Ağız Zirkonyum Makeover",
@@ -387,11 +355,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Özel VIP Mercedes Havalimanı ve Klinik Transferleri",
           "Kapsamlı ameliyat sonrası bakım seti ve koruyucu gece plağı"
         ],
-        "price": {
-          "USD": "$5,050",
-          "EUR": "€4,650",
-          "GBP": "£3,990"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Tek Diş İsviçre Ivoclar E-Max Kron",
@@ -406,11 +370,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10 Yıl Uluslararası Üretici Garantisi",
           "Stüdyo ve doğal gün ışığı altında dijital renk kalibrasyonu"
         ],
-        "price": {
-          "USD": "$320",
-          "EUR": "€290",
-          "GBP": "£250"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20 Üye Premium Ivoclar E-Max Hollywood Smile",
@@ -426,11 +386,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Gereken diğer dişler için profesyonel klinik beyazlatma (Bleaching)",
           "Ömür boyu garanti sertifikası ve uluslararası hasta pasaportu"
         ],
-        "price": {
-          "USD": "$5,950",
-          "EUR": "€5,450",
-          "GBP": "£4,690"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "İmplant Üstü Tam Çene Zirkonyum Köprü",
@@ -445,11 +401,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "5 Yıldızlı Otel Konaklaması + VIP Mercedes Özel Transferler",
           "Zirkonyum altyapıda Ömür Boyu Yapısal Garanti"
         ],
-        "price": {
-          "USD": "$3,150",
-          "EUR": "€2,890",
-          "GBP": "£2,490"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -601,7 +553,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>6 bis 7 Tage in Antalya.</strong> In einer einzigen Reise erfolgen die Zahnvorbereitung, der digitale 3D-CAD/CAM-Scan, das Fräsen der Zirkonkronen im Meisterlabor und das dauerhafte Einsetzen.",
     "visitCount": "<strong>Nur 1 Besuch erforderlich.</strong> Sie müssen nur einmal nach Antalya reisen. Sowohl Einzelkronen als auch ein komplettes Zirkon-Lächeln (20-28 Kronen) werden in einer einzigen Reise fertiggestellt.",
     "recoveryTime": "<strong>2 bis 3 Tage Eingewöhnung.</strong> Da es sich um keinen chirurgischen Eingriff handelt, gibt es keine Ausfallzeiten. Eine leichte Gewöhnung der Zähne erfolgt innerhalb von 48 bis 72 Stunden.",
-    "priceEstimate": "<strong>Preise für Zirkonkronen beginnen ab £210 / €250 / $275 pro Zahn.</strong> All-Inclusive-Pakete (10, 20 oder 24 Kronen) beinhalten 3D Smile Design, 4/5-Sterne-Hotel und VIP-Flughafentransfers.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "Einzelne Zirkonkrone",
@@ -616,11 +568,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10 Jahre klinische Garantie & Echtheitszertifikat",
           "Persönliche deutschsprachige Patientenbetreuung"
         ],
-        "price": {
-          "USD": "$275",
-          "EUR": "€250",
-          "GBP": "£210"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "10 Einheiten Oberkiefer Zirkon Smile Makeover",
@@ -637,11 +585,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur-Transfers (Flughafen - Hotel - Klinik)",
           "Lebenslange Garantie gegen Bruch und Absplitterung"
         ],
-        "price": {
-          "USD": "$2,590",
-          "EUR": "€2,390",
-          "GBP": "£2,050"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20 Einheiten Komplettes Zirkon Makeover",
@@ -657,11 +601,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Privater VIP-Mercedes-Fahrdienst für alle Termine",
           "Umfangreiches Pflegepaket & maßgefertigte Aufbissschiene"
         ],
-        "price": {
-          "USD": "$5,050",
-          "EUR": "€4,650",
-          "GBP": "£3,990"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Einzelne Schweizer Ivoclar E-Max Krone",
@@ -676,11 +616,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10 Jahre internationale Herstellergarantie",
           "Digitale Farbkalibrierung unter Studio- und Tageslicht"
         ],
-        "price": {
-          "USD": "$320",
-          "EUR": "€290",
-          "GBP": "£250"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20 Einheiten Ivoclar E-Max Hollywood Smile",
@@ -696,11 +632,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Klinisches Bleaching für verbleibende natürliche Zähne",
           "Lebenslanges Garantiezertifikat & Patientenpass"
         ],
-        "price": {
-          "USD": "$5,950",
-          "EUR": "€5,450",
-          "GBP": "£4,690"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Zirkonbrücke auf Implantaten (12–14 Einheiten)",
@@ -715,11 +647,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "5-Sterne-Hotelunterkunft + VIP-Mercedes-Transfers",
           "Lebenslange Garantie auf das Zirkongerüst"
         ],
-        "price": {
-          "USD": "$3,150",
-          "EUR": "€2,890",
-          "GBP": "£2,490"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -865,7 +793,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>6 do 7 dni w Antalyi.</strong> W trakcie jednej podróży wykonujemy przygotowanie zębów, cyfrowy skan 3D CAD/CAM, precyzyjne frezowanie koron cyrkonowych oraz ich ostateczną cementację.",
     "visitCount": "<strong>Wymagana tylko 1 wizyta.</strong> Wystarczy jedna podróż do Antalyi. Odbudowa pojedynczego zęba lub pełna metamorfoza uśmiechu (20-28 koron) jest w całości realizowana podczas jednego pobytu.",
     "recoveryTime": "<strong>2 do 3 dni adaptacji.</strong> Brak okresu rekonwalescencji chirurgicznej. Ewentualna lekka nadwrażliwość ustępuje w ciągu 48-72 godzin, pozwalając na normalne gryzienie.",
-    "priceEstimate": "<strong>Ceny koron cyrkonowych zaczynają się od £210 / €250 / $275 za ząb.</strong> Pakiety All-Inclusive (10, 20 lub 24 korony) zawierają cyfrowy projekt uśmiechu, hotel 4/5★ i transfery VIP.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "Pojedyncza Korona Cyrkonowa",
@@ -880,11 +808,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10 Lat Gwarancji Klinicznej i Certyfikat Autentyczności",
           "Dedykowany polskojęzyczny koordynator pacjenta"
         ],
-        "price": {
-          "USD": "$275",
-          "EUR": "€250",
-          "GBP": "£210"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "10 Koron Cyrkonowych – Górny Łuk (Smile Makeover)",
@@ -901,11 +825,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Prywatne Transfery VIP Mercedesem (Lotnisko - Hotel - Klinika)",
           "Dożywotnia Gwarancja na pęknięcia i ukruszenia podbudowy"
         ],
-        "price": {
-          "USD": "$2,590",
-          "EUR": "€2,390",
-          "GBP": "£2,050"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20 Koron Cyrkonowych – Pełna Odbudowa Uśmiechu",
@@ -921,11 +841,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Prywatny Kierowca VIP Mercedes na wszystkie wizyty",
           "Zestaw pozabiegowy i indywidualna szyna relaksacyjna na noc"
         ],
-        "price": {
-          "USD": "$5,050",
-          "EUR": "€4,650",
-          "GBP": "£3,990"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Pojedyncza Korona Szwajcarska Ivoclar E-Max",
@@ -940,11 +856,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10 Lat Międzynarodowej Gwarancji Producenta",
           "Cyfrowa kalibracja odcienia w świetle studyjnym i dziennym"
         ],
-        "price": {
-          "USD": "$320",
-          "EUR": "€290",
-          "GBP": "£250"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20 Koron Ivoclar E-Max – Hollywood Smile",
@@ -960,11 +872,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Profesjonalne wybielanie laserowe pozostałych zębów własnych",
           "Certyfikat dożywotniej gwarancji i paszport pacjenta"
         ],
-        "price": {
-          "USD": "$5,950",
-          "EUR": "€5,450",
-          "GBP": "£4,690"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Pełnołukowy Most Cyrkonowy na Implantach (12–14 pkt)",
@@ -979,11 +887,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Hotel 5★ + Prywatne transfery VIP Mercedes",
           "Dożywotnia gwarancja na strukturę cyrkonową"
         ],
-        "price": {
-          "USD": "$3,150",
-          "EUR": "€2,890",
-          "GBP": "£2,490"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -1129,7 +1033,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>6 a 7 dias em Antalya.</strong> Em apenas uma viagem, realizamos o preparo dental, escaneamento 3D CAD/CAM, fresagem laboratorial das coroas de zircônia e cimentação estética definitiva.",
     "visitCount": "<strong>Apenas 1 viagem necessária.</strong> Você precisa viajar para Antalya apenas uma vez. Seu tratamento completo (de 1 coroa a 20-28 coroas) é concluído integralmente nessa estadia.",
     "recoveryTime": "<strong>2 a 3 dias de adaptação.</strong> Por não envolver cirurgia óssea, não há tempo de inatividade. Qualquer leve sensibilidade desaparece em 48 a 72 horas.",
-    "priceEstimate": "<strong>Preços de coroas de zircónia começam a partir de £210 / €250 / $275 por dente.</strong> Pacotes completos (10, 20 ou 24 coroas) incluem design do sorriso, hotel 4/5 estrelas e transfers VIP.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "Coroa Individual de Zircônia",
@@ -1144,11 +1048,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10 Anos de Garantia Clínica e Certificado de Autenticidade",
           "Acompanhamento de coordenador dedicado em português"
         ],
-        "price": {
-          "USD": "$275",
-          "EUR": "€250",
-          "GBP": "£210"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "10 Coroas de Zircônia – Arcada Superior",
@@ -1165,11 +1065,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Transfers Privados em Mercedes VIP (Aeroporto - Hotel - Clínica)",
           "Garantia Vitalícia contra fraturas e lascamentos"
         ],
-        "price": {
-          "USD": "$2,590",
-          "EUR": "€2,390",
-          "GBP": "£2,050"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20 Coroas de Zircônia – Makeover Completo",
@@ -1185,11 +1081,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Motorista Particular em Mercedes VIP para todas as consultas",
           "Kit de cuidados pós-tratamento e placa oclusal noturna"
         ],
-        "price": {
-          "USD": "$5,050",
-          "EUR": "€4,650",
-          "GBP": "£3,990"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Coroa Individual Suíça Ivoclar E-Max",
@@ -1204,11 +1096,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10 Anos de Garantia Internacional do Fabricante",
           "Calibração de cor sob iluminação natural e de estúdio"
         ],
-        "price": {
-          "USD": "$320",
-          "EUR": "€290",
-          "GBP": "£250"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20 Unidades Ivoclar E-Max – Hollywood Smile",
@@ -1224,11 +1112,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Clareamento clínico a laser para dentes naturais restantes",
           "Certificado de garantia vitalícia e passaporte internacional"
         ],
-        "price": {
-          "USD": "$5,950",
-          "EUR": "€5,450",
-          "GBP": "£4,690"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Ponte Fixa de Zircônia sobre Implantes (12–14 Dentes)",
@@ -1243,11 +1127,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Hotel 5★ + Transfers VIP Mercedes",
           "Garantia Vitalícia na estrutura de zircônia"
         ],
-        "price": {
-          "USD": "$3,150",
-          "EUR": "€2,890",
-          "GBP": "£2,490"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -1393,7 +1273,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>6 a 7 días en Antalya.</strong> En un solo viaje realizamos la preparación dental, escaneo digital 3D CAD/CAM, fresado de las coronas de circonio y su cementación estética definitiva.",
     "visitCount": "<strong>Solo 1 viaje requerido.</strong> Solo necesita viajar a Antalya una vez. Desde una sola corona hasta una transformación completa de 20-28 coronas de circonio, todo se completa en una estancia.",
     "recoveryTime": "<strong>2 a 3 días de adaptación.</strong> No requiere reposo quirúrgico. Cualquier leve sensibilidad desaparece en 48-72 horas, permitiéndole comer con total normalidad.",
-    "priceEstimate": "<strong>Los precios de coronas de circonio comienzan desde £210 / €250 / $275 por diente.</strong> Los paquetes todo incluido (10, 20 o 24 coronas) incluyen diseño de sonrisa, hotel 4/5 estrellas y traslados VIP.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "Corona Individual de Circonio",
@@ -1408,11 +1288,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10 Años de Garantía Clínica y Certificado de Autenticidad",
           "Asistencia de coordinador dedicado en español"
         ],
-        "price": {
-          "USD": "$275",
-          "EUR": "€250",
-          "GBP": "£210"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "10 Coronas de Circonio – Arcada Superior",
@@ -1429,11 +1305,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Traslados Privados en Mercedes VIP (Aeropuerto - Hotel - Clínica)",
           "Garantía de por Vida contra fracturas y astillamientos"
         ],
-        "price": {
-          "USD": "$2,590",
-          "EUR": "€2,390",
-          "GBP": "£2,050"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20 Coronas de Circonio – Makeover Completo",
@@ -1449,11 +1321,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Chófer Privado en Mercedes VIP para todas las citas",
           "Kit de cuidados postoperatorios y férula de descarga nocturna"
         ],
-        "price": {
-          "USD": "$5,050",
-          "EUR": "€4,650",
-          "GBP": "£3,990"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Corona Individual Suiza Ivoclar E-Max",
@@ -1468,11 +1336,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10 Años de Garantía Internacional del Fabricante",
           "Calibración de color bajo luz natural y de estudio"
         ],
-        "price": {
-          "USD": "$320",
-          "EUR": "€290",
-          "GBP": "£250"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20 Unidades Ivoclar E-Max – Hollywood Smile",
@@ -1488,11 +1352,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Blanqueamiento clínico profesional para dientes naturales restantes",
           "Certificado de garantía de por vida y pasaporte internacional"
         ],
-        "price": {
-          "USD": "$5,950",
-          "EUR": "€5,450",
-          "GBP": "£4,690"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Puente Fijo de Circonio sobre Implantes (12–14 Dientes)",
@@ -1507,11 +1367,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Hotel 5★ + Traslados VIP Mercedes",
           "Garantía de por Vida en la estructura de circonio"
         ],
-        "price": {
-          "USD": "$3,150",
-          "EUR": "€2,890",
-          "GBP": "£2,490"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -1657,7 +1513,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>6–7 дней в Анталье.</strong> За одну поездку выполняется подготовка зубов, 3D-сканирование CAD/CAM, изготовление монолитных циркониевых коронок в лаборатории и постоянная фиксация.",
     "visitCount": "<strong>Требуется всего 1 визит.</strong> Вам достаточно приехать в Анталью один раз. Как одиночные коронки, так и полная реконструкция улыбки (20–28 коронок) выполняются за одну поездку.",
     "recoveryTime": "<strong>2–3 дня на адаптацию.</strong> Процедура не требует хирургического восстановления. Легкая чувствительность проходит за 48–72 часа, после чего вы сразу возвращаетесь к привычному питанию.",
-    "priceEstimate": "<strong>Цены на циркониевые коронки начинаются от £210 / €250 / $275 за единицу.</strong> Комплексные пакеты (10, 20 или 24 коронки) включают цифровой дизайн улыбки, отель 4/5★ и VIP-трансфер.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "Одиночная Циркониевая Коронка",
@@ -1672,11 +1528,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10 Лет Клинической Гарантии и Сертификат Подлинности",
           "Персональный русскоязычный координатор"
         ],
-        "price": {
-          "USD": "$275",
-          "EUR": "€250",
-          "GBP": "£210"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "10 Коронок из Циркония – Верхняя Челюсть",
@@ -1693,11 +1545,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Трансферы на VIP Mercedes (Аэропорт - Отель - Клиника)",
           "Пожизненная Гарантия на целостность структуры циркония"
         ],
-        "price": {
-          "USD": "$2,590",
-          "EUR": "€2,390",
-          "GBP": "£2,050"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20 Коронок из Циркония – Полная Реконструкция",
@@ -1713,11 +1561,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Личный Водитель на VIP Mercedes на все приемы",
           "Индивидуальная ночная капа и набор для ухода"
         ],
-        "price": {
-          "USD": "$5,050",
-          "EUR": "€4,650",
-          "GBP": "£3,990"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Одиночная Швейцарская Коронка Ivoclar E-Max",
@@ -1732,11 +1576,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10 Лет Международной Гарантии Производителя",
           "Калибровка оттенка при студийном и дневном свете"
         ],
-        "price": {
-          "USD": "$320",
-          "EUR": "€290",
-          "GBP": "£250"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20 Коронок Ivoclar E-Max – Голливудская Улыбка",
@@ -1752,11 +1592,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Клиническое отбеливание остальных собственных зубов",
           "Пожизненный гарантийный сертификат и паспорт пациента"
         ],
-        "price": {
-          "USD": "$5,950",
-          "EUR": "€5,450",
-          "GBP": "£4,690"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Циркониевый Мост на Имплантах (12–14 Единиц)",
@@ -1771,11 +1607,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Отель 5★ + Индивидуальные трансферы VIP Mercedes",
           "Пожизненная гарантия на циркониевый каркас"
         ],
-        "price": {
-          "USD": "$3,150",
-          "EUR": "€2,890",
-          "GBP": "£2,490"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -2059,9 +1891,9 @@ export default function ZirconiumCrownsDetailView() {
 
                 <div className={styles.pkgFooter}>
                   <div className={styles.pkgPriceRow}>
-                    <span className={styles.pkgPriceLabel}>{d.priceLabel}</span>
-                    <strong className={styles.pkgPriceValue}>
-                      {pkg.price[currency]}
+                    <span className={styles.pkgPriceLabel}>{locale === 'tr' ? 'VIP Paket Kapsamı' : 'VIP All-Inclusive'}</span>
+                    <strong className={styles.pkgPriceValue} style={{ fontSize: '0.95rem', color: '#059669', fontWeight: '700' }}>
+                      {locale === 'tr' ? 'Kişiye Özel Fiyat Teklifi' : 'Personalized VIP Quote'}
                     </strong>
                   </div>
 

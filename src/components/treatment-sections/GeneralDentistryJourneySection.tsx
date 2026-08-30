@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import { useLocale } from 'next-intl';
 import { Link } from '@/i18n/routing';
+import { SITE_CONFIG, getWhatsAppLink } from '@/config/site';
 import styles from './GeneralDentistryJourneySection.module.css';
 
 interface JourneyItem {
@@ -373,7 +374,7 @@ export default function GeneralDentistryJourneySection() {
             <div className={styles.xhead}>{d.reachTitle}</div>
             <div className={styles.butonlar}>
               <a
-                href="https://wa.me/905434568080"
+                href={getWhatsAppLink(locale)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.contactBtn}
@@ -388,7 +389,7 @@ export default function GeneralDentistryJourneySection() {
                 <span>{d.btnWhatsapp}</span>
               </a>
 
-              <a href="tel:+905434568080" className={styles.contactBtn}>
+              <a href={`tel:${SITE_CONFIG.phone.replace(/[^0-9+]/g, '')}`} className={styles.contactBtn}>
                 <Image
                   src="/icons/contact-phone.webp"
                   alt="Phone Call"

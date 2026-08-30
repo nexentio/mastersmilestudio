@@ -313,11 +313,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "NucleOSS (Grade 4 Pure Titanium)",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/nucleoss.webp",
-        "price": {
-          "USD": "$4,250",
-          "EUR": "€3,900",
-          "GBP": "£3,350"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x NucleOSS Dental Implants per Arch",
           "10-12x Fixed Temporary Teeth (Same Visit)",
@@ -334,11 +330,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "DXL (German Engineering)",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/dxl.webp",
-        "price": {
-          "USD": "$5,350",
-          "EUR": "€4,900",
-          "GBP": "£4,200"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x DXL German Titanium Implants",
           "10-12x Fixed Temporary Teeth",
@@ -355,11 +347,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/straumann.webp",
         "popular": true,
-        "price": {
-          "USD": "$8,600",
-          "EUR": "€7,900",
-          "GBP": "£6,800"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x Straumann Swiss Titanium Implants",
           "10-12x Fixed High-Grade Temporary Teeth",
@@ -375,11 +363,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Megagen AnyRidge (Knife-Thread Tech)",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/megagen.webp",
-        "price": {
-          "USD": "$5,900",
-          "EUR": "€5,400",
-          "GBP": "£4,650"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x Megagen AnyRidge Implants per Arch",
           "10-12x Fixed Temporary Teeth",
@@ -394,11 +378,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Neodent (Straumann Group)",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/neodent.webp",
-        "price": {
-          "USD": "$5,700",
-          "EUR": "€5,200",
-          "GBP": "£4,450"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x Neodent Implants per Arch",
           "10-12x Fixed Temporary Teeth",
@@ -413,11 +393,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Hiossen (American Brand)",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/hiossen.webp",
-        "price": {
-          "USD": "$5,600",
-          "EUR": "€5,100",
-          "GBP": "£4,380"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x Hiossen American Implants per Arch",
           "10-12x Fixed Temporary Teeth",
@@ -623,39 +599,39 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "costSubtitle": "Understand why thousands of European and UK patients choose Master Smile Studio for full-arch All-on-4 restoration without sacrificing material quality.",
     "costTableHeaders": {
       "country": "Destination / Clinic Tier",
-      "costPerArch": "All-on-4 Cost (Per Jaw)",
+      "costPerArch": "Standard Private Healthcare Rates",
       "inclusions": "What Is Included in the Price",
       "valueAdvantage": "Master Smile Studio Advantage"
     },
     "costTableRows": [
       {
         "country": "United Kingdom (Harley Street / Private)",
-        "costPerArch": "£10,000 – £14,000 ($12,800 – $17,900)",
+        "costPerArch": "Standard Private Healthcare Rates",
         "inclusions": "Surgery and standard bridge only. 3D CBCT, temporary teeth, sedation, and check-ups billed separately.",
-        "valueAdvantage": "Save 65% – 70% (£3,350 – £6,800 with us) on genuine Straumann/German systems."
+        "valueAdvantage": "Save 65% – 70% (VIP Inclusions with us) on genuine Straumann/German systems."
       },
       {
         "country": "Germany / Switzerland (Private Clinic)",
-        "costPerArch": "€9,500 – €13,500 ($10,500 – $14,900)",
+        "costPerArch": "Standard Private Healthcare Rates",
         "inclusions": "Surgical fees and lab work. Hotel accommodation, VIP transfers, and medications not covered.",
-        "valueAdvantage": "Save 60% – 65% (€3,900 – €7,900 with us) with identical German/Swiss titanium."
+        "valueAdvantage": "Save 60% – 65% (VIP Inclusions with us) with identical German/Swiss titanium."
       },
       {
         "country": "Master Smile Studio (Antalya, Turkey) ⭐",
-        "costPerArch": "€3,900 – €7,900 / £3,350 – £6,800",
+        "costPerArch": "Standard Private Healthcare Rates",
         "inclusions": "All-Inclusive: 4 Implants, Temporary Bridge, Final Zirconia Bridge, 3D CBCT, 5-Star Hotel, VIP Mercedes Transfers, Lifetime Warranty Passport.",
         "valueAdvantage": "100% Fixed Transparent Package Price Guarantee with Zero Hidden Medical or Travel Fees."
       }
     ]
   },
   "tr": {
-    "introBadge": "MAKSİMUM ÇİĞNEME STABİLİTESİ",
-    "introTitle": "All-on-6 Diş İmplantı Tedavisi Antalya",
-    "introLead": "6 titanyum implant üzerine sabitlenen 14 dişlik tam çene restorasyonu — en yüksek çiğneme gücü ve yapısal dayanıklılık.",
-    "introP1": "Master Smile Studio’da All-on-6 diş implantı tedavisi, sabit tam çene restorasyonlarında en üst dayanıklılık seviyesini temsil eder. Çiğneme kuvvetlerini dört yerine altı titanyum implanta dağıtarak, 14 dişe kadar uzanan eksiksiz bir arkta rakipsiz bir stabilite sağlar. Tüm cerrahi işlemler doğrudan kurucu çene cerrahlarımız tarafından 3D dijital kılavuzlarla gerçekleştirilir.",
-    "introP2": "All-on-6 protokolü; çenenin ön bölgesine iki düz, arka azı bölgelerine ise dört implant konumlandırır. Bu geniş temel, çiğneme baskısını çene kemiğine eşit yayarak uzantı (cantilever) stresini sıfırlar ve güçlü çiğneme kuvvetine sahip bireylerin kısıtlama olmaksızın yemek yemesini sağlar.",
-    "introP3Lead": "Kemik yoğunluğunuza ve klinik hedeflerinize göre kliniğimizde ayrıca ",
-    "introP3LinkAll4": "All-on-4 Diş İmplantı",
+    "introBadge": "ALTIN STANDART TAM ÇENE TEDAVİSİ",
+    "introTitle": "All-on-4 Diş İmplantı Tedavisi Antalya",
+    "introLead": "4 titanyum implant üzerine sabitlenen tam çene restorasyonu — kemik tozu ihtiyacını en aza indiren aynı gün sabit diş konsepti.",
+    "introP1": "Master Smile Studio’da All-on-4 diş implantı tedavisi, ileri kemik erimesi yaşayan veya tam dişsizlik problemi olan hastalarımız için devrim niteliğinde bir çözümdür. Arka bölgelere açılı yerleştirilen 2 implant ve ön bölgedeki 2 düz implant sayesinde, kemik tozu veya sinüs lifting ihtiyacı olmadan aynı gün sabit geçici diş yüklemesi yapılabilmektedir.",
+    "introP2": "All-on-4 protokolü, çene kemiğinin en yoğun olduğu anatomik bölgelerden maksimum destek alarak çiğneme kuvvetini dengeli biçimde dağıtır. Böylece hastalarımız uzun bekleme süreleri olmadan aynı gün yeni dişlerine ve estetik gülüşlerine kavuşur.",
+    "introP3Lead": "Kemik yapınıza ve klinik hedeflerinize göre kliniğimizde ayrıca ",
+    "introP3LinkAll4": "All-on-6 Diş İmplantı",
     "introP3Mid": ", ileri kemik erimeleri için ",
     "introP3LinkZygoma": "Zigomatik İmplant Tedavisi",
     "introP3And": " ve ",
@@ -812,11 +788,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "NucleOSS (Grade 4 Pure Titanium)",
         "duration": "3+7 İş Günü (2 Ziyaret)",
         "img": "/packages/nucleoss.webp",
-        "price": {
-          "USD": "$4,250",
-          "EUR": "€3,900",
-          "GBP": "£3,350"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "Çene başına 4x NucleOSS Titanyum İmplant",
           "10-12x Sabit Geçici Diş (24 Saatte)",
@@ -833,11 +805,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "DXL (German Engineering)",
         "duration": "3+7 İş Günü (2 Ziyaret)",
         "img": "/packages/dxl.webp",
-        "price": {
-          "USD": "$5,350",
-          "EUR": "€4,900",
-          "GBP": "£4,200"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "Çene başına 4x DXL Alman Titanyum İmplant",
           "10-12x Sabit Geçici Diş (24 Saatte)",
@@ -854,11 +822,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "duration": "3+7 İş Günü (2 Ziyaret)",
         "img": "/packages/straumann.webp",
         "popular": true,
-        "price": {
-          "USD": "$8,600",
-          "EUR": "€7,900",
-          "GBP": "£6,800"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "Çene başına 4x Straumann İsviçre Titanyum İmplant",
           "10-12x Sabit Geçici Diş (24 Saatte)",
@@ -874,11 +838,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Megagen AnyRidge (Knife-Thread Tech)",
         "duration": "3+7 İş Günü (2 Ziyaret)",
         "img": "/packages/megagen.webp",
-        "price": {
-          "USD": "$5,900",
-          "EUR": "€5,400",
-          "GBP": "£4,650"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "Çene başına 4x Megagen AnyRidge İmplant",
           "10-12x Sabit Geçici Diş (24 Saatte)",
@@ -893,11 +853,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Neodent (Straumann Group)",
         "duration": "3+7 İş Günü (2 Ziyaret)",
         "img": "/packages/neodent.webp",
-        "price": {
-          "USD": "$5,700",
-          "EUR": "€5,200",
-          "GBP": "£4,450"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "Çene başına 4x Neodent Grand Morse İmplant",
           "10-12x Sabit Geçici Diş (24 Saatte)",
@@ -912,11 +868,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Hiossen (American Brand)",
         "duration": "3+7 İş Günü (2 Ziyaret)",
         "img": "/packages/hiossen.webp",
-        "price": {
-          "USD": "$5,600",
-          "EUR": "€5,100",
-          "GBP": "£4,380"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "Çene başına 4x Hiossen ETIII İmplant",
           "10-12x Sabit Geçici Diş (24 Saatte)",
@@ -1122,26 +1074,26 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "costSubtitle": "Binlerce Avrupalı ve İngiliz hastanın malzeme kalitesinden ödün vermeden tam çene All-on-4 tedavisi için neden Master Smile Studio’yu tercih ettiğini keşfedin.",
     "costTableHeaders": {
       "country": "Lokasyon ve Klinik Seviyesi",
-      "costPerArch": "All-on-4 Maliyeti (Çene Başına)",
+      "costPerArch": "Standard Private Healthcare Rates",
       "inclusions": "Fiyata Dahil Olan Hizmetler",
       "valueAdvantage": "Master Smile Studio Fiyat Avantajı"
     },
     "costTableRows": [
       {
         "country": "İngiltere (Harley Street / Özel Londra Klinikler)",
-        "costPerArch": "£10,000 – £14,000 ($12,800 – $17,900)",
+        "costPerArch": "Standard Private Healthcare Rates",
         "inclusions": "Yalnızca cerrahi ve standart köprü. 3D Tomografi, geçici protez, sedasyon ve kontroller ayrı faturalandırılır.",
-        "valueAdvantage": "%65 – %70 Tasarruf (Bizde £3,350 – £6,800) Orijinal İsviçre/Alman İmplant Garantisi."
+        "valueAdvantage": "%65 – %70 Tasarruf (Bizde VIP Inclusions) Orijinal İsviçre/Alman İmplant Garantisi."
       },
       {
         "country": "Almanya / İsviçre (Özel Diş Klinikleri)",
-        "costPerArch": "€9,500 – €13,500 ($10,500 – $14,900)",
+        "costPerArch": "Standard Private Healthcare Rates",
         "inclusions": "Cerrahi ücretler ve laboratuvar. Otel konaklaması, VIP transferler ve ilaçlar dahil değildir.",
-        "valueAdvantage": "%60 – %65 Tasarruf (Bizde €3,900 – €7,900) Birebir aynı Alman/İsviçre Titanyum Kalitesi."
+        "valueAdvantage": "%60 – %65 Tasarruf (Bizde VIP Inclusions) Birebir aynı Alman/İsviçre Titanyum Kalitesi."
       },
       {
         "country": "Master Smile Studio (Antalya, Türkiye) ⭐",
-        "costPerArch": "€3,900 – €7,900 / £3,350 – £6,800",
+        "costPerArch": "Standard Private Healthcare Rates",
         "inclusions": "%100 Her Şey Dahil: 4 İmplant, Geçici Sabit Köprü, Kalıcı Zirkonyum Köprü, 3D Tomografi, 5 Yıldızlı Otel, VIP Transferler, Ömür Boyu Garanti Pasaportu.",
         "valueAdvantage": "Sıfır Gizli Maliyet Garantisiyle %100 Şeffaf Sabit Paket Fiyatı."
       }
@@ -1311,11 +1263,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "NucleOSS (Grade 4 Pure Titanium)",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/nucleoss.webp",
-        "price": {
-          "USD": "$4,250",
-          "EUR": "€3,900",
-          "GBP": "£3,350"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x NucleOSS Dental Implants per Arch",
           "10-12x Fixed Temporary Teeth (Same Visit)",
@@ -1332,11 +1280,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "DXL (German Engineering)",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/dxl.webp",
-        "price": {
-          "USD": "$5,350",
-          "EUR": "€4,900",
-          "GBP": "£4,200"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x DXL German Titanium Implants",
           "10-12x Fixed Temporary Teeth",
@@ -1353,11 +1297,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/straumann.webp",
         "popular": true,
-        "price": {
-          "USD": "$8,600",
-          "EUR": "€7,900",
-          "GBP": "£6,800"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x Straumann Swiss Titanium Implants",
           "10-12x Fixed High-Grade Temporary Teeth",
@@ -1373,11 +1313,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Megagen AnyRidge (Knife-Thread Tech)",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/megagen.webp",
-        "price": {
-          "USD": "$5,900",
-          "EUR": "€5,400",
-          "GBP": "£4,650"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x Megagen AnyRidge Implants per Arch",
           "10-12x Fixed Temporary Teeth",
@@ -1392,11 +1328,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Neodent (Straumann Group)",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/neodent.webp",
-        "price": {
-          "USD": "$5,700",
-          "EUR": "€5,200",
-          "GBP": "£4,450"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x Neodent Implants per Arch",
           "10-12x Fixed Temporary Teeth",
@@ -1411,11 +1343,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Hiossen (American Brand)",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/hiossen.webp",
-        "price": {
-          "USD": "$5,600",
-          "EUR": "€5,100",
-          "GBP": "£4,380"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x Hiossen American Implants per Arch",
           "10-12x Fixed Temporary Teeth",
@@ -1621,26 +1549,26 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "costSubtitle": "Erfahren Sie, warum tausende europäische Patienten das Master Smile Studio für ihre All-on-4-Behandlung ohne Qualitätskompromisse wählen.",
     "costTableHeaders": {
       "country": "Standort & Klinikebene",
-      "costPerArch": "All-on-4 Kosten (Pro Kiefer)",
+      "costPerArch": "Standard Private Healthcare Rates",
       "inclusions": "Inbegriffene Leistungen",
       "valueAdvantage": "Master Smile Studio Vorteil"
     },
     "costTableRows": [
       {
         "country": "Großbritannien (Harley Street / Private Kliniken)",
-        "costPerArch": "£10,000 – £14,000 ($12,800 – $17,900)",
+        "costPerArch": "Standard Private Healthcare Rates",
         "inclusions": "Nur Operation und Standardbrücke. 3D-DVT, Provisorium, Sedierung und Nachsorge werden extra berechnet.",
-        "valueAdvantage": "65 % – 70 % Ersparnis (£3.350 – £6.800 bei uns) auf Schweizer/Deutsche Originalsysteme."
+        "valueAdvantage": "65 % – 70 % Ersparnis (VIP Inclusions.350 – VIP Inclusions.800 bei uns) auf Schweizer/Deutsche Originalsysteme."
       },
       {
         "country": "Deutschland / Schweiz (Private Zahnkliniken)",
-        "costPerArch": "€9,500 – €13,500 ($10,500 – $14,900)",
+        "costPerArch": "Standard Private Healthcare Rates",
         "inclusions": "Chirurgische Gebühren und Labor. Hotelunterkunft, VIP-Transfers und Medikamente nicht enthalten.",
-        "valueAdvantage": "60 % – 65 % Ersparnis (€3.900 – €7.900 bei uns) bei identischem deutschem/schweizerischem Titan."
+        "valueAdvantage": "60 % – 65 % Ersparnis (VIP Inclusions.900 – VIP Inclusions.900 bei uns) bei identischem deutschem/schweizerischem Titan."
       },
       {
         "country": "Master Smile Studio (Antalya, Türkei) ⭐",
-        "costPerArch": "€3,900 – €7,900 / £3,350 – £6,800",
+        "costPerArch": "Standard Private Healthcare Rates",
         "inclusions": "100 % All-Inclusive: 4 Implantate, feste provisorische Brücke, endgültige Zirkonbrücke, 3D-DVT, 5-Sterne-Hotel, VIP-Transfers, lebenslanger Garantiepass.",
         "valueAdvantage": "100 % transparente Festpreis-Garantie ohne versteckte medizinische Kosten."
       }
@@ -1810,11 +1738,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "NucleOSS (Grade 4 Pure Titanium)",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/nucleoss.webp",
-        "price": {
-          "USD": "$4,250",
-          "EUR": "€3,900",
-          "GBP": "£3,350"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x NucleOSS Dental Implants per Arch",
           "10-12x Fixed Temporary Teeth (Same Visit)",
@@ -1831,11 +1755,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "DXL (German Engineering)",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/dxl.webp",
-        "price": {
-          "USD": "$5,350",
-          "EUR": "€4,900",
-          "GBP": "£4,200"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x DXL German Titanium Implants",
           "10-12x Fixed Temporary Teeth",
@@ -1852,11 +1772,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/straumann.webp",
         "popular": true,
-        "price": {
-          "USD": "$8,600",
-          "EUR": "€7,900",
-          "GBP": "£6,800"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x Straumann Swiss Titanium Implants",
           "10-12x Fixed High-Grade Temporary Teeth",
@@ -1872,11 +1788,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Megagen AnyRidge (Knife-Thread Tech)",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/megagen.webp",
-        "price": {
-          "USD": "$5,900",
-          "EUR": "€5,400",
-          "GBP": "£4,650"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x Megagen AnyRidge Implants per Arch",
           "10-12x Fixed Temporary Teeth",
@@ -1891,11 +1803,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Neodent (Straumann Group)",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/neodent.webp",
-        "price": {
-          "USD": "$5,700",
-          "EUR": "€5,200",
-          "GBP": "£4,450"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x Neodent Implants per Arch",
           "10-12x Fixed Temporary Teeth",
@@ -1910,11 +1818,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Hiossen (American Brand)",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/hiossen.webp",
-        "price": {
-          "USD": "$5,600",
-          "EUR": "€5,100",
-          "GBP": "£4,380"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x Hiossen American Implants per Arch",
           "10-12x Fixed Temporary Teeth",
@@ -2120,26 +2024,26 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "costSubtitle": "Zobacz, dlaczego tysiące pacjentów z Europy wybiera Master Smile Studio do odbudowy All-on-4 bez kompromisów jakościowych.",
     "costTableHeaders": {
       "country": "Lokalizacja i Standard Kliniki",
-      "costPerArch": "Koszt All-on-4 (Za 1 Łuk)",
+      "costPerArch": "Standard Private Healthcare Rates",
       "inclusions": "Zakres Usług w Cenie",
       "valueAdvantage": "Korzyść Master Smile Studio"
     },
     "costTableRows": [
       {
         "country": "Wielka Brytania (Harley Street / Kliniki Prywatne)",
-        "costPerArch": "£10,000 – £14,000 ($12,800 – $17,900)",
+        "costPerArch": "Standard Private Healthcare Rates",
         "inclusions": "Tylko zabieg i standardowy most. Tomografia 3D, zęby tymczasowe i sedacja płatne dodatkowo.",
-        "valueAdvantage": "Oszczędność 65% – 70% (£3,350 – £6,800 u nas) na oryginalnych systemach szwajcarskich/niemieckich."
+        "valueAdvantage": "Oszczędność 65% – 70% (VIP Inclusions u nas) na oryginalnych systemach szwajcarskich/niemieckich."
       },
       {
         "country": "Niemcy / Szwajcaria (Kliniki Prywatne)",
-        "costPerArch": "€9,500 – €13,500 ($10,500 – $14,900)",
+        "costPerArch": "Standard Private Healthcare Rates",
         "inclusions": "Koszty chirurgiczne i laboratoryjne. Hotel, transfery VIP i leki nie są wliczone.",
-        "valueAdvantage": "Oszczędność 60% – 65% (€3,900 – €7,900 u nas) z identycznym tytanem niemieckim/szwajcarskim."
+        "valueAdvantage": "Oszczędność 60% – 65% (VIP Inclusions u nas) z identycznym tytanem niemieckim/szwajcarskim."
       },
       {
         "country": "Master Smile Studio (Antalya, Turcja) ⭐",
-        "costPerArch": "€3,900 – €7,900 / £3,350 – £6,800",
+        "costPerArch": "Standard Private Healthcare Rates",
         "inclusions": "100% All-Inclusive: 4 Implanty, Stały Most Tymczasowy, Ostateczny Most Cyrkonowy, Tomografia 3D, Hotel 5*, Transfery VIP, Dożywotni Paszport Gwarancyjny.",
         "valueAdvantage": "100% gwarancja stałej, przejrzystej ceny pakietowej bez ukrytych opłat."
       }
@@ -2309,11 +2213,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "NucleOSS (Grade 4 Pure Titanium)",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/nucleoss.webp",
-        "price": {
-          "USD": "$4,250",
-          "EUR": "€3,900",
-          "GBP": "£3,350"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x NucleOSS Dental Implants per Arch",
           "10-12x Fixed Temporary Teeth (Same Visit)",
@@ -2330,11 +2230,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "DXL (German Engineering)",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/dxl.webp",
-        "price": {
-          "USD": "$5,350",
-          "EUR": "€4,900",
-          "GBP": "£4,200"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x DXL German Titanium Implants",
           "10-12x Fixed Temporary Teeth",
@@ -2351,11 +2247,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/straumann.webp",
         "popular": true,
-        "price": {
-          "USD": "$8,600",
-          "EUR": "€7,900",
-          "GBP": "£6,800"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x Straumann Swiss Titanium Implants",
           "10-12x Fixed High-Grade Temporary Teeth",
@@ -2371,11 +2263,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Megagen AnyRidge (Knife-Thread Tech)",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/megagen.webp",
-        "price": {
-          "USD": "$5,900",
-          "EUR": "€5,400",
-          "GBP": "£4,650"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x Megagen AnyRidge Implants per Arch",
           "10-12x Fixed Temporary Teeth",
@@ -2390,11 +2278,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Neodent (Straumann Group)",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/neodent.webp",
-        "price": {
-          "USD": "$5,700",
-          "EUR": "€5,200",
-          "GBP": "£4,450"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x Neodent Implants per Arch",
           "10-12x Fixed Temporary Teeth",
@@ -2409,11 +2293,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Hiossen (American Brand)",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/hiossen.webp",
-        "price": {
-          "USD": "$5,600",
-          "EUR": "€5,100",
-          "GBP": "£4,380"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x Hiossen American Implants per Arch",
           "10-12x Fixed Temporary Teeth",
@@ -2619,26 +2499,26 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "costSubtitle": "Entenda por que milhares de pacientes europeus escolhem o Master Smile Studio para reabilitação All-on-4 sem abrir mão da qualidade.",
     "costTableHeaders": {
       "country": "Localização e Nível da Clínica",
-      "costPerArch": "Custo All-on-4 (Por Arcada)",
+      "costPerArch": "Standard Private Healthcare Rates",
       "inclusions": "Serviços Inclusos no Pacote",
       "valueAdvantage": "Vantagem Master Smile Studio"
     },
     "costTableRows": [
       {
         "country": "Reino Unido (Harley Street / Clínicas Privadas)",
-        "costPerArch": "£10,000 – £14,000 ($12,800 – $17,900)",
+        "costPerArch": "Standard Private Healthcare Rates",
         "inclusions": "Apenas cirurgia e prótese básica. Tomografia 3D, provisório, sedação e consultas cobrados à parte.",
-        "valueAdvantage": "Economia de 65% a 70% (£3.350 a £6.800 connosco) em sistemas suíços/alemães autênticos."
+        "valueAdvantage": "Economia de 65% a 70% (VIP Inclusions.350 a VIP Inclusions.800 connosco) em sistemas suíços/alemães autênticos."
       },
       {
         "country": "Alemanha / Suíça (Clínicas Privadas)",
-        "costPerArch": "€9,500 – €13,500 ($10,500 – $14,900)",
+        "costPerArch": "Standard Private Healthcare Rates",
         "inclusions": "Honorários cirúrgicos e laboratoriais. Hospedagem, transfers VIP e medicamentos não incluídos.",
-        "valueAdvantage": "Economia de 60% a 65% (€3.900 a €7.900 connosco) com titânio alemão/suíço idêntico."
+        "valueAdvantage": "Economia de 60% a 65% (VIP Inclusions.900 a VIP Inclusions.900 connosco) com titânio alemão/suíço idêntico."
       },
       {
         "country": "Master Smile Studio (Antalya, Turquia) ⭐",
-        "costPerArch": "€3,900 – €7,900 / £3,350 – £6,800",
+        "costPerArch": "Standard Private Healthcare Rates",
         "inclusions": "100% All-Inclusive: 4 Implantes, Ponte Provisória Fixa, Ponte Definitiva em Zircônia, Tomografia 3D, Hotel 5 Estrelas, Transfers VIP, Passaporte de Garantia Vitalícia.",
         "valueAdvantage": "Garantia de preço fixo 100% transparente, sem custos ocultos ou taxas adicionais."
       }
@@ -2795,7 +2675,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "packagesSubtitle": "Precios transparentes todo incluido por arcada con 4 implantes de titanio premium, puente de zirconio CAD/CAM, hotel 5 estrellas y traslados VIP.",
     "durationLabel": "Duración del Tratamiento:",
     "includedLabel": "Qué incluye el paquete:",
-    "pricePerArchLabel": "Precio por arcada",
+    "pricePerArchLabel": "Protocolo de tratamiento y tiempo",
     "getQuoteBtn": "Obtener Presupuesto Gratuito",
     "mostPopularBadge": "MÁS POPULAR",
     "faqTitle": "Preguntas Frecuentes sobre Implantes All-on-6",
@@ -2808,11 +2688,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "NucleOSS (Grade 4 Pure Titanium)",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/nucleoss.webp",
-        "price": {
-          "USD": "$4,250",
-          "EUR": "€3,900",
-          "GBP": "£3,350"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x NucleOSS Dental Implants per Arch",
           "10-12x Fixed Temporary Teeth (Same Visit)",
@@ -2829,11 +2705,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "DXL (German Engineering)",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/dxl.webp",
-        "price": {
-          "USD": "$5,350",
-          "EUR": "€4,900",
-          "GBP": "£4,200"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x DXL German Titanium Implants",
           "10-12x Fixed Temporary Teeth",
@@ -2850,11 +2722,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/straumann.webp",
         "popular": true,
-        "price": {
-          "USD": "$8,600",
-          "EUR": "€7,900",
-          "GBP": "£6,800"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x Straumann Swiss Titanium Implants",
           "10-12x Fixed High-Grade Temporary Teeth",
@@ -2870,11 +2738,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Megagen AnyRidge (Knife-Thread Tech)",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/megagen.webp",
-        "price": {
-          "USD": "$5,900",
-          "EUR": "€5,400",
-          "GBP": "£4,650"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x Megagen AnyRidge Implants per Arch",
           "10-12x Fixed Temporary Teeth",
@@ -2889,11 +2753,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Neodent (Straumann Group)",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/neodent.webp",
-        "price": {
-          "USD": "$5,700",
-          "EUR": "€5,200",
-          "GBP": "£4,450"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x Neodent Implants per Arch",
           "10-12x Fixed Temporary Teeth",
@@ -2908,11 +2768,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Hiossen (American Brand)",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/hiossen.webp",
-        "price": {
-          "USD": "$5,600",
-          "EUR": "€5,100",
-          "GBP": "£4,380"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x Hiossen American Implants per Arch",
           "10-12x Fixed Temporary Teeth",
@@ -3118,26 +2974,26 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "costSubtitle": "Descubra por qué miles de pacientes europeos eligen Master Smile Studio para su tratamiento All-on-4 sin renunciar a la máxima calidad.",
     "costTableHeaders": {
       "country": "Ubicación y Nivel de Clínica",
-      "costPerArch": "Coste All-on-4 (Por Arcada)",
+      "costPerArch": "Standard Private Healthcare Rates",
       "inclusions": "Servicios Incluidos en el Precio",
       "valueAdvantage": "Ventaja Master Smile Studio"
     },
     "costTableRows": [
       {
         "country": "Reino Unido (Harley Street / Clínicas Privadas)",
-        "costPerArch": "£10,000 – £14,000 ($12,800 – $17,900)",
+        "costPerArch": "Standard Private Healthcare Rates",
         "inclusions": "Sólo cirugía y puente básico. Tomografía 3D, provisional, sedación y revisiones se facturan por separado.",
-        "valueAdvantage": "Ahorro del 65% al 70% (£3,350 a £6,800 con nosotros) en sistemas suizos/alemanes auténticos."
+        "valueAdvantage": "Ahorro del 65% al 70% (VIP Inclusions a VIP Inclusions con nosotros) en sistemas suizos/alemanes auténticos."
       },
       {
         "country": "Alemania / Suiza (Clínicas Privadas)",
-        "costPerArch": "€9,500 – €13,500 ($10,500 – $14,900)",
+        "costPerArch": "Standard Private Healthcare Rates",
         "inclusions": "Honorarios quirúrgicos y laboratorio. Alojamiento en hotel, traslados VIP y medicación no incluidos.",
-        "valueAdvantage": "Ahorro del 60% al 65% (€3,900 a €7,900 con nosotros) con titanio alemán/suizo idéntico."
+        "valueAdvantage": "Ahorro del 60% al 65% (VIP Inclusions a VIP Inclusions con nosotros) con titanio alemán/suizo idéntico."
       },
       {
         "country": "Master Smile Studio (Antalya, Turquía) ⭐",
-        "costPerArch": "€3,900 – €7,900 / £3,350 – £6,800",
+        "costPerArch": "Standard Private Healthcare Rates",
         "inclusions": "100% Todo Incluido: 4 Implantes, Puente Provisional Fijo, Puente Definitivo de Zirconio, Tomografía 3D, Hotel 5 Estrellas, Traslados VIP, Pasaporte de Garantía Vitalicia.",
         "valueAdvantage": "Garantía de precio fijo 100% transparente sin costes ocultos ni sorpresas."
       }
@@ -3307,11 +3163,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "NucleOSS (Grade 4 Pure Titanium)",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/nucleoss.webp",
-        "price": {
-          "USD": "$4,250",
-          "EUR": "€3,900",
-          "GBP": "£3,350"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x NucleOSS Dental Implants per Arch",
           "10-12x Fixed Temporary Teeth (Same Visit)",
@@ -3328,11 +3180,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "DXL (German Engineering)",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/dxl.webp",
-        "price": {
-          "USD": "$5,350",
-          "EUR": "€4,900",
-          "GBP": "£4,200"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x DXL German Titanium Implants",
           "10-12x Fixed Temporary Teeth",
@@ -3349,11 +3197,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/straumann.webp",
         "popular": true,
-        "price": {
-          "USD": "$8,600",
-          "EUR": "€7,900",
-          "GBP": "£6,800"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x Straumann Swiss Titanium Implants",
           "10-12x Fixed High-Grade Temporary Teeth",
@@ -3369,11 +3213,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Megagen AnyRidge (Knife-Thread Tech)",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/megagen.webp",
-        "price": {
-          "USD": "$5,900",
-          "EUR": "€5,400",
-          "GBP": "£4,650"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x Megagen AnyRidge Implants per Arch",
           "10-12x Fixed Temporary Teeth",
@@ -3388,11 +3228,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Neodent (Straumann Group)",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/neodent.webp",
-        "price": {
-          "USD": "$5,700",
-          "EUR": "€5,200",
-          "GBP": "£4,450"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x Neodent Implants per Arch",
           "10-12x Fixed Temporary Teeth",
@@ -3407,11 +3243,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Hiossen (American Brand)",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/hiossen.webp",
-        "price": {
-          "USD": "$5,600",
-          "EUR": "€5,100",
-          "GBP": "£4,380"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x Hiossen American Implants per Arch",
           "10-12x Fixed Temporary Teeth",
@@ -3617,26 +3449,26 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "costSubtitle": "Узнайте, почему тысячи европейских пациентов выбирают Master Smile Studio для восстановления All-on-4 без компромиссов в качестве.",
     "costTableHeaders": {
       "country": "Страна и Уровень Клиники",
-      "costPerArch": "Стоимость All-on-4 (За Челюсть)",
+      "costPerArch": "Standard Private Healthcare Rates",
       "inclusions": "Включенные Услуги",
       "valueAdvantage": "Преимущество Master Smile Studio"
     },
     "costTableRows": [
       {
         "country": "Великобритания (Harley Street / Частные Клиники)",
-        "costPerArch": "£10,000 – £14,000 ($12,800 – $17,900)",
+        "costPerArch": "Standard Private Healthcare Rates",
         "inclusions": "Только операция и базовый мост. 3D КТ, временные зубы, седация и осмотры оплачиваются отдельно.",
-        "valueAdvantage": "Экономия 65% – 70% (£3,350 – £6,800 у нас) на оригинальных швейцарских/немецких системах."
+        "valueAdvantage": "Экономия 65% – 70% (VIP Inclusions у нас) на оригинальных швейцарских/немецких системах."
       },
       {
         "country": "Германия / Швейцария (Частные Клиники)",
-        "costPerArch": "€9,500 – €13,500 ($10,500 – $14,900)",
+        "costPerArch": "Standard Private Healthcare Rates",
         "inclusions": "Хирургические расходы и лаборатория. Проживание в отеле, VIP-трансферы и медикаменты не включены.",
-        "valueAdvantage": "Экономия 60% – 65% (€3,900 – €7,900 у нас) на идентичном немецком/швейцарском титане."
+        "valueAdvantage": "Экономия 60% – 65% (VIP Inclusions у нас) на идентичном немецком/швейцарском титане."
       },
       {
         "country": "Master Smile Studio (Анталья, Турция) ⭐",
-        "costPerArch": "€3,900 – €7,900 / £3,350 – £6,800",
+        "costPerArch": "Standard Private Healthcare Rates",
         "inclusions": "100% Все Включено: 4 Импланта, Временный Несъемный Мост, Постоянный Циркониевый Мост, 3D КТ, Отель 5*, VIP Трансферы, Пожизненный Паспорт Гарантии.",
         "valueAdvantage": "100% прозрачная фиксированная стоимость пакета без скрытых платежей."
       }
@@ -3888,30 +3720,11 @@ export default function AllOnFourImplantDetailView() {
             <p className={styles.packagesSubtitle}>{d.packagesSubtitle}</p>
           </div>
 
-          {/* Interactive Currency Switcher */}
-          <div className={styles.currencyBar} role="group" aria-label="Select Currency">
-            <span className={styles.currencyLabel}>Currency:</span>
-            <button
-              type="button"
-              className={`${styles.currencyBtn} ${currency === 'EUR' ? styles.currencyBtnActive : ''}`}
-              onClick={() => setCurrency('EUR')}
-            >
-              EUR (€)
-            </button>
-            <button
-              type="button"
-              className={`${styles.currencyBtn} ${currency === 'GBP' ? styles.currencyBtnActive : ''}`}
-              onClick={() => setCurrency('GBP')}
-            >
-              GBP (£)
-            </button>
-            <button
-              type="button"
-              className={`${styles.currencyBtn} ${currency === 'USD' ? styles.currencyBtnActive : ''}`}
-              onClick={() => setCurrency('USD')}
-            >
-              USD ($)
-            </button>
+          {/* VIP Guarantee Trust Badge */}
+          <div className={styles.currencyBar} style={{ justifyContent: 'center' }}>
+            <span style={{ fontSize: '0.9rem', color: '#047857', fontWeight: '600', background: '#ecfdf5', padding: '0.4rem 1rem', borderRadius: '999px', border: '1px solid #a7f3d0' }}>
+              {locale === 'tr' ? '5★ Otel + VIP Transfer + Ömür Boyu Garanti Dahil' : '5★ Luxury Hotel + VIP Transfers + Lifetime Warranty Included'}
+            </span>
           </div>
 
           {/* 6 Real Implant Brand Package Cards */}
@@ -3957,9 +3770,9 @@ export default function AllOnFourImplantDetailView() {
 
                 <div className={styles.pkgFooter}>
                   <div className={styles.pkgPriceRow}>
-                    <span className={styles.pkgPriceLabel}>{d.pricePerArchLabel}</span>
-                    <strong className={styles.pkgPriceValue}>
-                      {pkg.price[currency]}
+                    <span className={styles.pkgPriceLabel}>{locale === 'tr' ? 'VIP Paket Kapsamı' : 'VIP All-Inclusive'}</span>
+                    <strong className={styles.pkgPriceValue} style={{ fontSize: '0.95rem', color: '#059669', fontWeight: '700' }}>
+                      {locale === 'tr' ? 'Kişiye Özel Fiyat Teklifi' : 'Personalized VIP Quote'}
                     </strong>
                   </div>
 

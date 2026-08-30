@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SEO ve Dijital Büyüme Hizmet Sözleşmesi - Master Smile Studio</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap');
+
+    :root {
+      --primary-gold: #c8973a;
+      --primary-gold-dark: #a87d2c;
+      --primary-dark: #0f172a;
+      --text-main: #1e293b;
+      --text-muted: #64748b;
+      --border-color: #e2e8f0;
+      --bg-light: #f8fafc;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color: var(--text-main);
+      background-color: #f1f5f9;
+      line-height: 1.6;
+      font-size: 13.5px;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    /* Action Bar (Screen Only) */
+    .action-bar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: #0f172a;
+      color: #ffffff;
+      padding: 12px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .action-title {
+      font-size: 14px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .action-btn {
+      background: linear-gradient(135deg, #c8973a, #e6b75c);
+      color: #0f172a;
+      border: none;
+      padding: 9px 20px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .action-btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(200, 151, 58, 0.35);
+    }
+
+    /* Page Container */
+    .document-wrapper {
+      max-width: 210mm;
+      margin: 30px auto;
+      background: #ffffff;
+      padding: 24mm 22mm;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+      border-radius: 4px;
+    }
+
+    /* Header */
+    .doc-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      border-bottom: 2px solid var(--primary-gold);
+      padding-bottom: 20px;
+      margin-bottom: 24px;
+    }
+
+    .brand-area h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      color: var(--primary-dark);
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+
+    .brand-area .sub {
+      font-size: 11px;
+      letter-spacing: 0.22em;
+      color: var(--primary-gold-dark);
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .doc-meta {
+      text-align: right;
+      font-size: 11.5px;
+      color: var(--text-muted);
+    }
+
+    .doc-meta strong {
+      color: var(--primary-dark);
+    }
+
+    /* Contract Main Title */
+    .contract-title-box {
+      text-align: center;
+      margin-bottom: 26px;
+      padding: 14px;
+      background: var(--bg-light);
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
+    }
+
+    .contract-title-box h2 {
+      font-size: 17px;
+      font-weight: 800;
+      color: var(--primary-dark);
+      letter-spacing: -0.01em;
+      text-transform: uppercase;
+    }
+
+    .contract-title-box p {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 3px;
+    }
+
+    /* Section Styles */
+    .section-title {
+      font-size: 13.5px;
+      font-weight: 800;
+      color: var(--primary-dark);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      border-left: 3.5px solid var(--primary-gold);
+      padding-left: 10px;
+      margin-top: 22px;
+      margin-bottom: 12px;
+    }
+
+    p, li {
+      color: #334155;
+      margin-bottom: 8px;
+      text-align: justify;
+    }
+
+    ul, ol {
+      padding-left: 20px;
+      margin-bottom: 12px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    /* Parties Grid */
+    .parties-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+
+    .party-card {
+      background: #ffffff;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 14px 16px;
+    }
+
+    .party-card.gold-border {
+      border-top: 3px solid var(--primary-gold);
+    }
+
+    .party-card.dark-border {
+      border-top: 3px solid var(--primary-dark);
+    }
+
+    .party-role {
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 8px;
+      color: var(--primary-gold-dark);
+    }
+
+    .party-name {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--primary-dark);
+      margin-bottom: 8px;
+    }
+
+    .party-info-row {
+      font-size: 11.5px;
+      color: var(--text-muted);
+      margin-bottom: 4px;
+    }
+
+    .party-info-row strong {
+      color: #334155;
+    }
+
+    /* Structured Scope Table */
+    .scope-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 14px 0 20px 0;
+      font-size: 12px;
+    }
+
+    .scope-table th {
+      background: #0f172a;
+      color: #ffffff;
+      padding: 9px 12px;
+      text-align: left;
+      font-weight: 700;
+      font-size: 11.5px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .scope-table td {
+      padding: 9px 12px;
+      border-bottom: 1px solid var(--border-color);
+      color: #334155;
+      vertical-align: top;
+    }
+
+    .scope-table tr:nth-child(even) td {
+      background-color: var(--bg-light);
+    }
+
+    .badge-scope {
+      display: inline-block;
+      padding: 2px 7px;
+      border-radius: 4px;
+      background: #fef3c7;
+      color: #92400e;
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    /* Callout Box */
+    .callout-box {
+      background: #f8fafc;
+      border: 1px solid #cbd5e1;
+      border-left: 4px solid var(--primary-gold);
+      padding: 12px 14px;
+      border-radius: 0 6px 6px 0;
+      margin: 14px 0;
+      font-size: 12px;
+    }
+
+    /* Signatures Section */
+    .signatures-area {
+      margin-top: 36px;
+      padding-top: 20px;
+      border-top: 1px dashed var(--border-color);
+      page-break-inside: avoid;
+    }
+
+    .signatures-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      margin-top: 16px;
+    }
+
+    .sig-block {
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 16px;
+      background: #ffffff;
+      min-height: 160px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .sig-title {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--primary-dark);
+      text-transform: uppercase;
+    }
+
+    .sig-subtitle {
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    .sig-space {
+      margin-top: 40px;
+      border-top: 1px solid #cbd5e1;
+      padding-top: 6px;
+      font-size: 10.5px;
+      color: var(--text-muted);
+      display: flex;
+      justify-content: space-between;
+    }
+
+    /* Footer / Page Number */
+    .doc-footer {
+      margin-top: 30px;
+      text-align: center;
+      font-size: 10.5px;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border-color);
+      padding-top: 12px;
+    }
+
+    /* Print Styles */
+    @media print {
+      @page {
+        size: A4 portrait;
+        margin: 14mm 14mm 16mm 14mm;
+      }
+
+      body {
+        background: #ffffff !important;
+        font-size: 12px;
+      }
+
+      .no-print, .action-bar {
+        display: none !important;
+      }
+
+      .document-wrapper {
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        box-shadow: none !important;
+        border-radius: 0 !important;
+      }
+
+      .page-break {
+        page-break-before: always;
+      }
+
+      .signatures-area {
+        page-break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Screen-Only Action Header -->
+  <div class="action-bar no-print">
+    <div class="action-title">
+      <span>📄</span>
+      <span>Master Smile Studio - SEO ve Dijital Büyüme Hizmet Sözleşmesi</span>
+    </div>
+    <button class="action-btn" onclick="window.print()">
+      <span>🖨️</span>
+      <span>PDF Olarak Kaydet / Yazdır</span>
+    </button>
+  </div>
+
+  <div class="document-wrapper">
+    
+    <!-- Document Header -->
+    <header class="doc-header">
+      <div class="brand-area">
+        <h1>MASTER</h1>
+        <div class="sub">SMILE STUDIO &bull; ANTALYA</div>
+      </div>
+      <div class="doc-meta">
+        <div><strong>Sözleşme No:</strong> MSS-SEO-2026/01</div>
+        <div><strong>Düzenleme Tarihi:</strong> <span id="current-date">31.08.2026</span></div>
+        <div><strong>Geçerlilik Süresi:</strong> 12 Ay</div>
+      </div>
+    </header>
+
+    <!-- Main Contract Title Box -->
+    <div class="contract-title-box">
+      <h2>ULUSLARARASI SAĞLIK TURİZMİ VE DİJİTAL DİŞ HEKİMLİĞİ<br>SEO & DİJİTAL BÜYÜME DANIŞMANLIK SÖZLEŞMESİ</h2>
+      <p>Master Smile Studio Antalya ile Hizmet Sağlayıcı Arasında Akdedilmiştir</p>
+    </div>
+
+    <!-- 1. TARAFLAR -->
+    <div class="section-title">1. TARAFLAR</div>
+    <p>İşbu Sözleşme, aşağıda unvan ve iletişim bilgileri belirtilen taraflar arasında akdedilmiştir:</p>
+
+    <div class="parties-grid">
+      <!-- Hizmet Alan -->
+      <div class="party-card gold-border">
+        <div class="party-role">Hizmet Alan (Klinik / Danışan)</div>
+        <div class="party-name">MASTER SMILE STUDIO</div>
+        <div class="party-info-row"><strong>Yetkili:</strong> Ozan GÜL</div>
+        <div class="party-info-row"><strong>Faaliyet Alanı:</strong> Uluslararası Ağız ve Diş Sağlığı Turizmi</div>
+        <div class="party-info-row"><strong>Adres:</strong> Şirinyalı Mah. İsmet Gökşen Cad. Muratpaşa / Antalya</div>
+        <div class="party-info-row"><strong>Web:</strong> https://mastersmilestudio.com</div>
+        <div class="party-info-row"><strong>E-Posta:</strong> info@mastersmilestudio.com</div>
+        <div class="party-info-row"><strong>Telefon:</strong> +90 537 305 99 47</div>
+      </div>
+
+      <!-- Hizmet Veren -->
+      <div class="party-card dark-border">
+        <div class="party-role">Hizmet Veren (SEO Uzmanı / Ajans)</div>
+        <div class="party-name">[HİZMET VEREN FİRMA / UZMAN ADI]</div>
+        <div class="party-info-row"><strong>Yetkili:</strong> [Yetkili Adı Soyadı]</div>
+        <div class="party-info-row"><strong>Unvan:</strong> Dijital Pazarlama ve SEO Danışmanlığı</div>
+        <div class="party-info-row"><strong>Vergi Dairesi / No:</strong> [Vergi Dairesi / VKN]</div>
+        <div class="party-info-row"><strong>Adres:</strong> [Hizmet Veren Tebligat Adresi]</div>
+        <div class="party-info-row"><strong>E-Posta:</strong> [Hizmet Veren E-Posta]</div>
+        <div class="party-info-row"><strong>Telefon:</strong> [Hizmet Veren Telefon]</div>
+      </div>
+    </div>
+
+    <!-- 2. SÖZLEŞMENİN KONUSU VE AMACI -->
+    <div class="section-title">2. SÖZLEŞMENİN KONUSU VE AMACI</div>
+    <p>
+      İşbu sözleşmenin konusu; <strong>Hizmet Alan</strong>’a ait <code>mastersmilestudio.com</code> alan adlı çok dilli web sitesinin Google ve diğer arama motorlarında görünürlüğünün artırılması, uluslararası hasta edinimi (UK, Almanya, Polonya, Portekiz, İspanya, Rusya ve Türkiye hedef pazarları) hedeflerine yönelik Teknik SEO, Semantik İçerik Mimarisi, Dönüşüm Oranı Optimizasyonu (CRO), Google Analytics 4 (GA4) & Google Tag Manager (GTM) dönüşüm takibi ve Organik Hasta Edinimi Danışmanlığı hizmetlerinin sağlanmasıdır.
+    </p>
+
+    <!-- 3. HİZMETİN KAPSAMI VE ÇALIŞMA ALANLARI -->
+    <div class="section-title">3. HİZMETİN KAPSAMI VE ÇALIŞMA ALANLARI</div>
+    <p>Hizmet Veren, sözleşme süresince aşağıdaki modülleri eksiksiz ve profesyonel standartlarda yürütmeyi taahhüt eder:</p>
+
+    <table class="scope-table">
+      <thead>
+        <tr>
+          <th style="width: 25%;">Hizmet Modülü</th>
+          <th style="width: 55%;">Kapsam ve Klinik Detaylar</th>
+          <th style="width: 20%;">Periyot</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>1. Teknik SEO & Altyapı Denetimi</strong></td>
+          <td>Next.js / Cloudflare mimarisinde Core Web Vitals (LCP, INP, CLS) optimizasyonu, 7-dil Hreflang ve Canonical etiket doğrulamaları, Schema.org (Dentist, MedicalBusiness, MedicalProcedure) yapılandırması ve XML Sitemap sağlığı.</td>
+          <td><span class="badge-scope">Sürekli & Haftalık</span></td>
+        </tr>
+        <tr>
+          <td><strong>2. 7 Dilde Semantik İçerik Stratejisi</strong></td>
+          <td>İngiltere, Almanya, Polonya ve diğer hedef pazarların arama niyetine (Search Intent) uygun tedavi (All-on-4, All-on-6, E-max, Zirkonyum) ve karşılaştırma içeriklerinin anahtar kelime haritalandırması ve semantik kurgusu.</td>
+          <td><span class="badge-scope">Aylık Düzenli</span></td>
+        </tr>
+        <tr>
+          <td><strong>3. Dönüşüm Takibi & Analitik (GA4 & GTM)</strong></td>
+          <td>Google Analytics 4, Google Tag Manager ve Google Ads entegrasyonlarının denetimi; WhatsApp tıklamaları, telefon aramaları ve form gönderimlerinin organik dönüşüm atribuasyonu ve raporlanması.</td>
+          <td><span class="badge-scope">Aylık Rapor</span></td>
+        </tr>
+        <tr>
+          <td><strong>4. Lokal SEO & İtibar Yönetimi</strong></td>
+          <td>Google İşletme Profili (Google Business Profile) optimizasyonu, Antalya yerel dental harita sıralamaları, güvenilirlik sinyalleri ve yetki belgesi / hekim otoritesi (E-E-A-T) kurgusu.</td>
+          <td><span class="badge-scope">Aylık Düzenli</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="callout-box">
+      <strong>⚠️ Beyaz Şapka (White-Hat) SEO Güvencesi:</strong> Hizmet Veren, tüm optimizasyon çalışmalarını Google Webmaster ve Kalite Yönergelerine %100 uyumlu olarak gerçekleştireceğini; spama neden olabilecek veya web sitesine arama motoru cezası (Manual Action / Algorithmic Penalty) riski doğuracak Black-Hat tekniklere asla başvurmayacağını peşinen kabul ve taahhüt eder.
+    </div>
+
+    <!-- 4. TARAFLARIN HAK VE YÜKÜMLÜLÜKLERİ -->
+    <div class="section-title">4. TARAFLARIN HAK VE YÜKÜMLÜLÜKLERİ</div>
+    <p><strong>4.1. Hizmet Veren'in Yükümlülükleri:</strong></p>
+    <ul>
+      <li>Hizmetleri dental sağlık turizmi sektörünün etik ve profesyonel standartlarına uygun olarak özenle yerine getirmek.</li>
+      <li>Her ayın ilk haftasında bir önceki ayın organik trafik, sıralama, tıklama ve form/WhatsApp dönüşümlerini içeren <em>Aylık Performans Raporu</em> sunmak.</li>
+      <li>Klinik tarafından talep edilen acil teknik arama motoru uyarılarına (404, kırık link, indeksleme sorunu vb.) azami 24 saat içerisinde müdahale etmek.</li>
+    </ul>
+
+    <p><strong>4.2. Hizmet Alan'ın Yükümlülükleri:</strong></p>
+    <ul>
+      <li>Çalışmaların yürütülmesi için gerekli olan Google Search Console, GA4, GTM ve CMS/Panel erişim yetkilerini zamanında temin etmek.</li>
+      <li>Hizmet bedelini sözleşmede kararlaştırılan tarihlerde ve şekillerde Hizmet Veren’e eksiksiz ödemek.</li>
+    </ul>
+
+    <!-- 5. GİZLİLİK VE VERİ GÜVENLİĞİ (KVKK & GDPR) -->
+    <div class="section-title">5. GİZLİLİK VE VERİ GÜVENLİĞİ (KVKK & GDPR)</div>
+    <p>
+      Hizmet Veren; işbu sözleşme kapsamında Hizmet Alan’a ait öğrendiği her türlü ticari, teknik, idari ve tıbbi hasta verilerini (hasta listeleri, form bilgileri, fiyat politikaları, ciro vb.) "Gizli Bilgi" olarak kabul eder. Bu bilgiler sözleşme süresince ve sözleşmenin sona ermesinden sonra süresiz olarak üçüncü şahıslara veya kurumlara açıklanamaz, paylaşılamaz veya ticari amaçla kullanılamaz.
+    </p>
+
+    <!-- 6. FİKRİ MÜLKİYET HAKLARI -->
+    <div class="section-title">6. FİKRİ MÜLKİYET HAKLARI</div>
+    <p>
+      Hizmet Veren tarafından sözleşme kapsamında üretilen tüm SEO stratejileri, içerik kurguları, semantik anahtar kelime matrisleri, kod optimizasyonları ve analiz raporlarının tüm fikri ve sınai mülkiyet hakları münhasıran <strong>Master Smile Studio</strong>’ya aittir.
+    </p>
+
+    <!-- 7. ÜCRET, ÖDEME VE FATURALANDIRMA -->
+    <div class="section-title">7. ÜCRET, ÖDEME VE FATURALANDIRMA</div>
+    <p>
+      <strong>7.1. Aylık Hizmet Bedeli:</strong> Taraflar, yukarıda 3. Maddede belirtilen tüm SEO ve Dijital Büyüme hizmetleri karşılığında aylık net <strong>[BELİRLENEN AYLIK BEDEL, ÖRN: 25.000 TL / £1.000]</strong> + KDV bedel üzerinden mutabık kalmışlardır.
+    </p>
+    <p>
+      <strong>7.2. Ödeme Şekli:</strong> Ödemeler her ayın [1-5.] günleri arasında, Hizmet Veren tarafından düzenlenecek e-faturaya istinaden bildirilen banka IBAN hesabına havale/EFT yoluyla gerçekleştirilir.
+    </p>
+
+    <!-- 8. SÖZLEŞMENİN SÜRESİ VE FESİH KOŞULLARI -->
+    <div class="section-title">8. SÖZLEŞMENİN SÜRESİ VE FESİH KOŞULLARI</div>
+    <p>
+      <strong>8.1.</strong> İşbu sözleşme imza tarihinden itibaren <strong>[12 / 6 Ay]</strong> süreyle geçerlidir.
+    </p>
+    <p>
+      <strong>8.2.</strong> Taraflardan her biri, haklı bir gerekçe belirtmeksizin <strong>30 (otuz) gün önceden</strong> yazılı bildirimde bulunmak suretiyle sözleşmeyi tazminatsız olarak tek taraflı feshetme hakkına sahiptir.
+    </p>
+    <p>
+      <strong>8.3.</strong> Taraflardan birinin sözleşme yükümlülüklerini ağır şekilde ihlal etmesi ve yapılan yazılı uyarıya rağmen 7 iş günü içinde ihlali gidermemesi durumunda, diğer taraf sözleşmeyi derhal ve haklı nedenle feshedebilir.
+    </p>
+
+    <!-- 9. UYUŞMAZLIKLARIN ÇÖZÜMÜ -->
+    <div class="section-title">9. UYUŞMAZLIKLARIN ÇÖZÜMÜ VE YETKİ</div>
+    <p>
+      İşbu sözleşmenin uygulanmasından ve yorumlanmasından doğabilecek her türlü ihtilafın hallinde <strong>Antalya Mahkemeleri ve İcra Daireleri</strong> münhasıran yetkilidir.
+    </p>
+
+    <!-- 10. YÜRÜRLÜK VE İMZA -->
+    <div class="section-title">10. YÜRÜRLÜK VE İMZA</div>
+    <p>
+      Toplam 10 (on) ana maddeden ibaret işbu sözleşme, taraflarca tüm maddeleri okunup tam bir mutabakatla kabul edilerek 2 (iki) nüsha olarak tanzim edilmiş ve imza altına alınmıştır.
+    </p>
+
+    <!-- SIGNATURES BLOCK -->
+    <div class="signatures-area">
+      <div class="signatures-grid">
+        
+        <!-- Hizmet Alan İmza -->
+        <div class="sig-block">
+          <div>
+            <div class="sig-title">HİZMET ALAN (KLİNİK)</div>
+            <div class="sig-subtitle">MASTER SMILE STUDIO</div>
+            <div class="sig-subtitle">Yetkili: Ozan GÜL</div>
+          </div>
+          <div class="sig-space">
+            <span>Tarih: ___ / ___ / 2026</span>
+            <span>İmza & Kaşe</span>
+          </div>
+        </div>
+
+        <!-- Hizmet Veren İmza -->
+        <div class="sig-block">
+          <div>
+            <div class="sig-title">HİZMET VEREN (YÜKLENİCİ)</div>
+            <div class="sig-subtitle">[FİRMA / UZMAN ADI]</div>
+            <div class="sig-subtitle">Yetkili: [Yetkili Adı Soyadı]</div>
+          </div>
+          <div class="sig-space">
+            <span>Tarih: ___ / ___ / 2026</span>
+            <span>İmza & Kaşe</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Document Footer -->
+    <footer class="doc-footer">
+      <div>Master Smile Studio Antalya &bull; Uluslararası Sağlık Turizmi ve Dijital Büyüme Sözleşmesi &bull; Sayfa 1 / 1</div>
+    </footer>
+
+  </div>
+
+  <script>
+    // Set formatted dynamic date if needed
+    const d = new Date();
+    const formattedDate = String(d.getDate()).padStart(2, '0') + '.' + String(d.getMonth() + 1).padStart(2, '0') + '.' + d.getFullYear();
+    const dateEl = document.getElementById('current-date');
+    if (dateEl) dateEl.innerText = formattedDate;
+  </script>
+</body>
+</html>

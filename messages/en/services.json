@@ -22,6 +22,10 @@
   "doctorTulayTitle": "Oral & Maxillofacial Surgeon",
   "doctorAliKemalTitle": "Specialist Dentist",
   "doctorAbdullahTitle": "Endodontics & Restorative Dentist",
+  "hollywoodSmile": {
+    "title": "Hollywood Smile",
+    "description": "Flawless celebrity smile symmetry and dazzling Golden Ratio aesthetics."
+  },
   "smileDesign": {
     "title": "Smile Design",
     "description": "Custom digital smile architecture tailored to facial golden proportions."
@@ -106,6 +110,10 @@
     "surgery": {
       "title": "ORAL & MAXILLOFACIAL SURGERY",
       "description": "Surgical expertise in wisdom tooth removal, cyst management, and advanced bone grafting."
+    },
+    "hollywoodSmile": {
+      "title": "HOLLYWOOD SMILE",
+      "description": "Bespoke Swiss E-Max laminates or German Zirconia crowns tailored to your facial Golden Ratio for a dazzling celebrity smile."
     }
   },
   "rightTreatment": {

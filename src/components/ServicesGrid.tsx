@@ -1,52 +1,70 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import Image from 'next/image';
 import { Link } from '@/i18n/routing';
 
+const FALLBACK_SERVICES: Record<string, Record<string, { title: string; description: string }>> = {
+  hollywoodSmile: {
+    en: { title: 'Hollywood Smile', description: 'Flawless celebrity smile symmetry and dazzling Golden Ratio aesthetics.' },
+    tr: { title: 'Hollywood Smile', description: 'Kusursuz beyaz simetri ve altın oranlı büyüleyici Hollywood gülüşü.' },
+    de: { title: 'Hollywood Smile', description: 'Makellose weiße Symmetrie und bezaubernde Ästhetik nach dem Goldenen Schnitt.' },
+    pl: { title: 'Hollywood Smile', description: 'Nieskazitelna biel, idealna symetria i olśniewający uśmiech w złotych proporcjach.' },
+    pt: { title: 'Hollywood Smile', description: 'Simetria perfeita, dentes radiantes e estética de sorriso de celebridade.' },
+    es: { title: 'Hollywood Smile', description: 'Simetría perfecta, blancura radiante y deslumbrante estética de Proporción Áurea.' },
+    ru: { title: 'Голливудская Улыбка', description: 'Безупречная белоснежная симметрия и ослепительная эстетика золотого сечения.' },
+  },
+};
+
 export default function ServicesGrid() {
   const t = useTranslations('services');
+  const locale = useLocale();
 
   const services = [
     {
+      key: 'hollywoodSmile',
+      image: '/hollywoodsmile.jpeg',
+      href: '/treatments/cosmetic-dentistry/hollywood-smile',
+    },
+    {
       key: 'smileDesign',
-      image: '/smile-makeover.jpg',
+      image: '/mastersmile-smilemakeover-treatment-uk.jpg',
       href: '/treatments/cosmetic-dentistry/smile-makeover',
     },
     {
       key: 'implant',
-      image: '/dental-implant-mss.jpeg',
+      image: '/mastersmile-implant-treatment-uk.jpg',
       href: '/treatments/dental-implants',
     },
     {
       key: 'emax',
-      image: '/e-max-lamine-treatment-mss.jpeg',
+      image: '/mss-emax.jpeg',
       href: '/treatments/dental-veneers/emax-veneers',
     },
     {
       key: 'zirconia',
-      image: '/mss-zirconia-crowns.jpeg',
+      image: '/mss-zirconium-crown.jpg',
       href: '/treatments/dental-crowns/zirconium-crowns',
     },
     {
       key: 'whitening',
-      image: '/teeth-whiting-treatment.jpeg',
+      image: '/mss-teeth-whitining.jpeg',
       href: '/treatments/cosmetic-dentistry/teeth-whitening',
     },
     {
-      key: 'rootCanal',
-      image: '/mss-root-canala-treatment.jpeg',
-      href: '/treatments/general-dentistry/root-canal',
-    },
-    {
       key: 'dentures',
-      image: '/mastersmilestudio_1783158972_3933743875695538963_70887948899.jpg',
+      image: '/mss-implant.png',
       href: '/treatments/dentures',
     },
     {
       key: 'bonding',
       image: '/mss-composite-bonding.jpeg',
       href: '/treatments/dental-veneers/composite-veneers',
+    },
+    {
+      key: 'rootCanal',
+      image: '/mss-root-canal-treatment.jpeg',
+      href: '/treatments/general-dentistry/root-canal',
     },
   ];
 
@@ -111,8 +129,15 @@ export default function ServicesGrid() {
         {/* Square Minimalist Cards Grid (Bottom 2 Cards Centered) */}
         <div className="services-3-col-grid">
           {services.map((item) => {
-            const title = t(`${item.key}.title`);
-            const description = t(`${item.key}.description`);
+            const hasTitle = t.has(`${item.key}.title` as any);
+            const title = hasTitle
+              ? t(`${item.key}.title` as any)
+              : FALLBACK_SERVICES[item.key]?.[locale]?.title || FALLBACK_SERVICES[item.key]?.en?.title || item.key;
+
+            const hasDesc = t.has(`${item.key}.description` as any);
+            const description = hasDesc
+              ? t(`${item.key}.description` as any)
+              : FALLBACK_SERVICES[item.key]?.[locale]?.description || FALLBACK_SERVICES[item.key]?.en?.description || '';
 
             return (
               <Link

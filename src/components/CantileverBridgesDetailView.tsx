@@ -58,7 +58,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>5 to 7 days in Antalya.</strong> 3D digital imaging, precision preparation of the single anchor abutment tooth, CAD/CAM monolithic milling, and permanent cementation completed during 1 visit.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel once to Antalya for your complete cantilever bridge restoration. All clinical steps are finalized within 5 to 7 days.",
     "recoveryTime": "<strong>24 to 48 hours adaptation.</strong> Minor initial gum adaptation subsides quickly, allowing full chewing comfort and natural speech within 1 to 2 days.",
-    "priceEstimate": "<strong>Cantilever bridge prices start from £380 / €430 / $475 per bridge.</strong> Multi-unit packages include 3D digital design, luxury hotel stay, and VIP Mercedes transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "2-Unit Zirconia Cantilever Bridge",
@@ -74,11 +74,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "VIP Patient coordination assistance"
         ],
-        "price": {
-          "USD": "$560",
-          "EUR": "€510",
-          "GBP": "£450"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "2-Unit E-Max Ceramic Cantilever Bridge",
@@ -93,11 +89,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Airport & Clinic Transfers",
           "10-Year Comprehensive International Warranty"
         ],
-        "price": {
-          "USD": "$615",
-          "EUR": "€560",
-          "GBP": "£490"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Full Cantilever Bridge All-Inclusive Package",
@@ -111,11 +103,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Chauffeur for all appointments",
           "Comprehensive warranty & lifetime international support"
         ],
-        "price": {
-          "USD": "$1,240",
-          "EUR": "€1,130",
-          "GBP": "£990"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -161,7 +149,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>5 to 7 days in Antalya.</strong> 3D digital imaging, precision preparation of the single anchor abutment tooth, CAD/CAM monolithic milling, and permanent cementation completed during 1 visit.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel once to Antalya for your complete cantilever bridge restoration. All clinical steps are finalized within 5 to 7 days.",
     "recoveryTime": "<strong>24 to 48 hours adaptation.</strong> Minor initial gum adaptation subsides quickly, allowing full chewing comfort and natural speech within 1 to 2 days.",
-    "priceEstimate": "<strong>Cantilever bridge prices start from £380 / €430 / $475 per bridge.</strong> Multi-unit packages include 3D digital design, luxury hotel stay, and VIP Mercedes transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "2-Unit Zirconia Cantilever Bridge",
@@ -177,11 +165,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "VIP Patient coordination assistance"
         ],
-        "price": {
-          "USD": "$560",
-          "EUR": "€510",
-          "GBP": "£450"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "2-Unit E-Max Ceramic Cantilever Bridge",
@@ -196,11 +180,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Airport & Clinic Transfers",
           "10-Year Comprehensive International Warranty"
         ],
-        "price": {
-          "USD": "$615",
-          "EUR": "€560",
-          "GBP": "£490"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Full Cantilever Bridge All-Inclusive Package",
@@ -214,11 +194,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Chauffeur for all appointments",
           "Comprehensive warranty & lifetime international support"
         ],
-        "price": {
-          "USD": "$1,240",
-          "EUR": "€1,130",
-          "GBP": "£990"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -264,7 +240,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>5 to 7 days in Antalya.</strong> 3D digital imaging, precision preparation of the single anchor abutment tooth, CAD/CAM monolithic milling, and permanent cementation completed during 1 visit.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel once to Antalya for your complete cantilever bridge restoration. All clinical steps are finalized within 5 to 7 days.",
     "recoveryTime": "<strong>24 to 48 hours adaptation.</strong> Minor initial gum adaptation subsides quickly, allowing full chewing comfort and natural speech within 1 to 2 days.",
-    "priceEstimate": "<strong>Cantilever bridge prices start from £380 / €430 / $475 per bridge.</strong> Multi-unit packages include 3D digital design, luxury hotel stay, and VIP Mercedes transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "2-Unit Zirconia Cantilever Bridge",
@@ -280,11 +256,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "VIP Patient coordination assistance"
         ],
-        "price": {
-          "USD": "$560",
-          "EUR": "€510",
-          "GBP": "£450"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "2-Unit E-Max Ceramic Cantilever Bridge",
@@ -299,11 +271,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Airport & Clinic Transfers",
           "10-Year Comprehensive International Warranty"
         ],
-        "price": {
-          "USD": "$615",
-          "EUR": "€560",
-          "GBP": "£490"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Full Cantilever Bridge All-Inclusive Package",
@@ -317,11 +285,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Chauffeur for all appointments",
           "Comprehensive warranty & lifetime international support"
         ],
-        "price": {
-          "USD": "$1,240",
-          "EUR": "€1,130",
-          "GBP": "£990"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -367,7 +331,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>5 to 7 days in Antalya.</strong> 3D digital imaging, precision preparation of the single anchor abutment tooth, CAD/CAM monolithic milling, and permanent cementation completed during 1 visit.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel once to Antalya for your complete cantilever bridge restoration. All clinical steps are finalized within 5 to 7 days.",
     "recoveryTime": "<strong>24 to 48 hours adaptation.</strong> Minor initial gum adaptation subsides quickly, allowing full chewing comfort and natural speech within 1 to 2 days.",
-    "priceEstimate": "<strong>Cantilever bridge prices start from £380 / €430 / $475 per bridge.</strong> Multi-unit packages include 3D digital design, luxury hotel stay, and VIP Mercedes transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "2-Unit Zirconia Cantilever Bridge",
@@ -383,11 +347,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "VIP Patient coordination assistance"
         ],
-        "price": {
-          "USD": "$560",
-          "EUR": "€510",
-          "GBP": "£450"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "2-Unit E-Max Ceramic Cantilever Bridge",
@@ -402,11 +362,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Airport & Clinic Transfers",
           "10-Year Comprehensive International Warranty"
         ],
-        "price": {
-          "USD": "$615",
-          "EUR": "€560",
-          "GBP": "£490"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Full Cantilever Bridge All-Inclusive Package",
@@ -420,11 +376,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Chauffeur for all appointments",
           "Comprehensive warranty & lifetime international support"
         ],
-        "price": {
-          "USD": "$1,240",
-          "EUR": "€1,130",
-          "GBP": "£990"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -470,7 +422,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>5 to 7 days in Antalya.</strong> 3D digital imaging, precision preparation of the single anchor abutment tooth, CAD/CAM monolithic milling, and permanent cementation completed during 1 visit.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel once to Antalya for your complete cantilever bridge restoration. All clinical steps are finalized within 5 to 7 days.",
     "recoveryTime": "<strong>24 to 48 hours adaptation.</strong> Minor initial gum adaptation subsides quickly, allowing full chewing comfort and natural speech within 1 to 2 days.",
-    "priceEstimate": "<strong>Cantilever bridge prices start from £380 / €430 / $475 per bridge.</strong> Multi-unit packages include 3D digital design, luxury hotel stay, and VIP Mercedes transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "2-Unit Zirconia Cantilever Bridge",
@@ -486,11 +438,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "VIP Patient coordination assistance"
         ],
-        "price": {
-          "USD": "$560",
-          "EUR": "€510",
-          "GBP": "£450"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "2-Unit E-Max Ceramic Cantilever Bridge",
@@ -505,11 +453,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Airport & Clinic Transfers",
           "10-Year Comprehensive International Warranty"
         ],
-        "price": {
-          "USD": "$615",
-          "EUR": "€560",
-          "GBP": "£490"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Full Cantilever Bridge All-Inclusive Package",
@@ -523,11 +467,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Chauffeur for all appointments",
           "Comprehensive warranty & lifetime international support"
         ],
-        "price": {
-          "USD": "$1,240",
-          "EUR": "€1,130",
-          "GBP": "£990"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -573,7 +513,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>5 to 7 days in Antalya.</strong> 3D digital imaging, precision preparation of the single anchor abutment tooth, CAD/CAM monolithic milling, and permanent cementation completed during 1 visit.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel once to Antalya for your complete cantilever bridge restoration. All clinical steps are finalized within 5 to 7 days.",
     "recoveryTime": "<strong>24 to 48 hours adaptation.</strong> Minor initial gum adaptation subsides quickly, allowing full chewing comfort and natural speech within 1 to 2 days.",
-    "priceEstimate": "<strong>Cantilever bridge prices start from £380 / €430 / $475 per bridge.</strong> Multi-unit packages include 3D digital design, luxury hotel stay, and VIP Mercedes transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "2-Unit Zirconia Cantilever Bridge",
@@ -589,11 +529,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "VIP Patient coordination assistance"
         ],
-        "price": {
-          "USD": "$560",
-          "EUR": "€510",
-          "GBP": "£450"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "2-Unit E-Max Ceramic Cantilever Bridge",
@@ -608,11 +544,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Airport & Clinic Transfers",
           "10-Year Comprehensive International Warranty"
         ],
-        "price": {
-          "USD": "$615",
-          "EUR": "€560",
-          "GBP": "£490"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Full Cantilever Bridge All-Inclusive Package",
@@ -626,11 +558,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Chauffeur for all appointments",
           "Comprehensive warranty & lifetime international support"
         ],
-        "price": {
-          "USD": "$1,240",
-          "EUR": "€1,130",
-          "GBP": "£990"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -676,7 +604,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>5 to 7 days in Antalya.</strong> 3D digital imaging, precision preparation of the single anchor abutment tooth, CAD/CAM monolithic milling, and permanent cementation completed during 1 visit.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel once to Antalya for your complete cantilever bridge restoration. All clinical steps are finalized within 5 to 7 days.",
     "recoveryTime": "<strong>24 to 48 hours adaptation.</strong> Minor initial gum adaptation subsides quickly, allowing full chewing comfort and natural speech within 1 to 2 days.",
-    "priceEstimate": "<strong>Cantilever bridge prices start from £380 / €430 / $475 per bridge.</strong> Multi-unit packages include 3D digital design, luxury hotel stay, and VIP Mercedes transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "2-Unit Zirconia Cantilever Bridge",
@@ -692,11 +620,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "VIP Patient coordination assistance"
         ],
-        "price": {
-          "USD": "$560",
-          "EUR": "€510",
-          "GBP": "£450"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "2-Unit E-Max Ceramic Cantilever Bridge",
@@ -711,11 +635,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Airport & Clinic Transfers",
           "10-Year Comprehensive International Warranty"
         ],
-        "price": {
-          "USD": "$615",
-          "EUR": "€560",
-          "GBP": "£490"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Full Cantilever Bridge All-Inclusive Package",
@@ -729,11 +649,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Chauffeur for all appointments",
           "Comprehensive warranty & lifetime international support"
         ],
-        "price": {
-          "USD": "$1,240",
-          "EUR": "€1,130",
-          "GBP": "£990"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -917,9 +833,9 @@ export default function CantileverBridgesDetailView() {
 
                 <div className={styles.pkgFooter}>
                   <div className={styles.pkgPriceRow}>
-                    <span className={styles.pkgPriceLabel}>{d.priceLabel}</span>
-                    <strong className={styles.pkgPriceValue}>
-                      {pkg.price[currency]}
+                    <span className={styles.pkgPriceLabel}>{locale === 'tr' ? 'VIP Paket Kapsamı' : 'VIP All-Inclusive'}</span>
+                    <strong className={styles.pkgPriceValue} style={{ fontSize: '0.95rem', color: '#059669', fontWeight: '700' }}>
+                      {locale === 'tr' ? 'Kişiye Özel Fiyat Teklifi' : 'Personalized VIP Quote'}
                     </strong>
                   </div>
 

@@ -14,11 +14,26 @@ export default function Footer() {
   const [email, setEmail] = useState('');
   const [agreed, setAgreed] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [isCertModalOpen, setIsCertModalOpen] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (email) {
       setSubmitted(true);
+      try {
+        await fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            email,
+            formType: 'Footer Newsletter Subscription',
+            locale,
+            notes: 'User subscribed to newsletter via Footer form',
+          }),
+        });
+      } catch (err) {
+        console.error('Newsletter submission error:', err);
+      }
       setTimeout(() => setSubmitted(false), 4000);
       setEmail('');
     }
@@ -173,14 +188,64 @@ export default function Footer() {
         <div className={styles.bottomRow}>
           <div className={styles.copyrightText}>{t('copyright')}</div>
 
-          {/* Standalone HealthTürkiye Logo (No background box) */}
-          <Image
-            src="/healthturkiye-logo.svg"
-            alt="Health Türkiye - Türkiye Sağlık Turizmi"
-            width={140}
-            height={44}
-            className={styles.healthTurkiyeLogo}
-          />
+          {/* Standalone HealthTürkiye & Official Health Tourism Authorization Certificate Button */}
+          <div className={styles.accreditationGroup}>
+            <Image
+              src="/healthturkiye-logo.svg"
+              alt="Health Türkiye - Türkiye Sağlık Turizmi"
+              width={140}
+              height={44}
+              className={styles.healthTurkiyeLogo}
+            />
+            <button
+              type="button"
+              onClick={() => setIsCertModalOpen(true)}
+              className={styles.certBadgeBtn}
+              title={
+                locale === 'tr'
+                  ? 'T.C. Sağlık Bakanlığı Uluslararası Sağlık Turizmi Yetki Belgesi (Büyüt)'
+                  : locale === 'de'
+                  ? 'Offizielles Zertifikat für Gesundheitstourismus (Vergrößern)'
+                  : locale === 'ru'
+                  ? 'Сертификат авторизации медицинского туризма (Увеличить)'
+                  : locale === 'pl'
+                  ? 'Certyfikat Autoryzacji Turystyki Medycznej (Powiększ)'
+                  : locale === 'pt'
+                  ? 'Certificado de Autorização de Turismo de Saúde (Ampliar)'
+                  : locale === 'es'
+                  ? 'Certificado de Autorización de Turismo de Salud (Ampliar)'
+                  : 'Official International Health Tourism Authorization Certificate (Enlarge)'
+              }
+            >
+              <div className={styles.certIconWrapper}>
+                <Image
+                  src="/certificates/mastersmilestudio_international-health-tourism-authorization-certification.jpg"
+                  alt="T.C. Sağlık Bakanlığı Sağlık Turizmi Yetki Belgesi"
+                  width={62}
+                  height={44}
+                  className={styles.certThumbImg}
+                />
+              </div>
+              <div className={styles.certInfo}>
+                <span className={styles.certTitle}>
+                  {locale === 'tr'
+                    ? 'Sağlık Turizmi Yetki Belgesi'
+                    : locale === 'de'
+                    ? 'Gesundheitstourismus Zertifikat'
+                    : locale === 'ru'
+                    ? 'Сертификат медтуризма'
+                    : locale === 'pl'
+                    ? 'Certyfikat Turystyki Medycznej'
+                    : locale === 'pt'
+                    ? 'Autorização Turismo Saúde'
+                    : locale === 'es'
+                    ? 'Certificado Turismo Salud'
+                    : 'Health Tourism Authorized'}
+                </span>
+                <span className={styles.certSub}>T.C. Sağlık Bakanlığı</span>
+              </div>
+            </button>
+          </div>
 
           <div className={styles.legalLinks}>
             <Link href="/privacy-policy" className={styles.legalLink}>
@@ -192,6 +257,37 @@ export default function Footer() {
           </div>
         </div>
       </div>
+
+      {/* Certificate Lightbox Modal Popup */}
+      {isCertModalOpen && (
+        <div
+          className={styles.modalBackdrop}
+          onClick={() => setIsCertModalOpen(false)}
+          role="dialog"
+          aria-modal="true"
+        >
+          <div className={styles.modalContainer} onClick={(e) => e.stopPropagation()}>
+            <button
+              type="button"
+              className={styles.modalCloseBtn}
+              onClick={() => setIsCertModalOpen(false)}
+              aria-label="Kapat"
+            >
+              ✕
+            </button>
+            <div className={styles.modalImgWrap}>
+              <Image
+                src="/certificates/mastersmilestudio_international-health-tourism-authorization-certification.jpg"
+                alt="T.C. Sağlık Bakanlığı Uluslararası Sağlık Turizmi Yetki Belgesi"
+                width={1440}
+                height={1040}
+                style={{ width: '100%', height: 'auto', borderRadius: '8px', display: 'block' }}
+                priority
+              />
+            </div>
+          </div>
+        </div>
+      )}
     </footer>
   );
 }

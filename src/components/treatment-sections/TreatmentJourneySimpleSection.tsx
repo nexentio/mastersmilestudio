@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { useLocale } from 'next-intl';
 import { Link } from '@/i18n/routing';
-import { getWhatsAppLink } from '@/config/site';
+import { getWhatsAppLink, SITE_CONFIG } from '@/config/site';
 import styles from './TreatmentJourneySimpleSection.module.css';
 
 interface JourneyItem {
@@ -61,7 +61,7 @@ const JOURNEY_DATA: Record<string, LocaleContent> = {
         icon: '/icons/journey-04.webp',
         title: 'Price & Package Transparency',
         content:
-          '<strong>All-inclusive package prices start from €4,900 / £4,200 ($5,700) per arch.</strong> Packages include 4 premium titanium implants (Straumann, DXL, NucleOSS), same-day fixed temporary bridge, final monolithic Zirconia bridge, 3D CBCT tomography, 4/5-star hotel accommodation with breakfast, and private VIP Mercedes airport-hotel transfers with guaranteed zero hidden fees.',
+          '<strong>All-inclusive package prices start from VIP Inclusions / VIP Inclusions (VIP Package) per arch.</strong> Packages include 4 premium titanium implants (Straumann, DXL, NucleOSS), same-day fixed temporary bridge, final monolithic Zirconia bridge, 3D CBCT tomography, 4/5-star hotel accommodation with breakfast, and private VIP Mercedes airport-hotel transfers with guaranteed zero hidden fees.',
       },
     ],
   },
@@ -101,7 +101,7 @@ const JOURNEY_DATA: Record<string, LocaleContent> = {
         icon: '/icons/journey-04.webp',
         title: 'Fiyat & Paket Şeffaflığı',
         content:
-          '<strong>Her şey dahil All-on-4 paket fiyatları çene başına €4,900 / £4,200 ($5,700)’dan başlar.</strong> Paketlerimize; 4 adet premium titanyum implant (Straumann, DXL, NucleOSS), aynı gün sabit geçici dişler, kalıcı monolitik zirkonyum köprü, 3D tomografi, oda-kahvaltı dahil 4/5 yıldızlı otel ve VIP Mercedes transferler dahildir. Asla gizli ek ücret talep edilmez.',
+          '<strong>Her şey dahil All-on-4 paket fiyatları çene başına VIP Inclusions / VIP Inclusions (VIP Package)’dan başlar.</strong> Paketlerimize; 4 adet premium titanyum implant (Straumann, DXL, NucleOSS), aynı gün sabit geçici dişler, kalıcı monolitik zirkonyum köprü, 3D tomografi, oda-kahvaltı dahil 4/5 yıldızlı otel ve VIP Mercedes transferler dahildir. Asla gizli ek ücret talep edilmez.',
       },
     ],
   },
@@ -141,7 +141,7 @@ const JOURNEY_DATA: Record<string, LocaleContent> = {
         icon: '/icons/journey-04.webp',
         title: 'Preise & Paket-Transparenz',
         content:
-          '<strong>All-inclusive All-on-4 Paketpreise starten ab €4.900 / £4.200 ($5.700) pro Kiefer.</strong> Die Pakete enthalten 4 Premium-Titanimplantate (Straumann, DXL, NucleOSS), feste provisorische Zähne am selben Tag, finale Zirkonbrücke, 3D-DVT-Röntgen, 4/5-Sterne-Hotel mit Frühstück und private VIP-Transfers ohne versteckte Zusatzkosten.',
+          '<strong>All-inclusive All-on-4 Paketpreise starten ab VIP Inclusions / VIP Inclusions (VIP Package) pro Kiefer.</strong> Die Pakete enthalten 4 Premium-Titanimplantate (Straumann, DXL, NucleOSS), feste provisorische Zähne am selben Tag, finale Zirkonbrücke, 3D-DVT-Röntgen, 4/5-Sterne-Hotel mit Frühstück und private VIP-Transfers ohne versteckte Zusatzkosten.',
       },
     ],
   },
@@ -181,7 +181,7 @@ const JOURNEY_DATA: Record<string, LocaleContent> = {
         icon: '/icons/journey-04.webp',
         title: 'Przejrzyste Ceny i Pakiety',
         content:
-          '<strong>Pakiety All-on-4 all-inclusive zaczynają się od €4,900 / £4,200 ($5,700) za łuk zębowy.</strong> Pakiety obejmują 4 implanty tytanowe premium (Straumann, DXL, NucleOSS), stałe zęby tymczasowe, ostateczny most cyrkonowy, tomografię 3D, hotel 4/5-gwiazdkowy ze śniadaniami i transfery VIP Mercedes bez ukrytych kosztów.',
+          '<strong>Pakiety All-on-4 all-inclusive zaczynają się od VIP Inclusions / VIP Inclusions (VIP Package) za łuk zębowy.</strong> Pakiety obejmują 4 implanty tytanowe premium (Straumann, DXL, NucleOSS), stałe zęby tymczasowe, ostateczny most cyrkonowy, tomografię 3D, hotel 4/5-gwiazdkowy ze śniadaniami i transfery VIP Mercedes bez ukrytych kosztów.',
       },
     ],
   },
@@ -221,7 +221,7 @@ const JOURNEY_DATA: Record<string, LocaleContent> = {
         icon: '/icons/journey-04.webp',
         title: 'Preço e Transparência',
         content:
-          '<strong>Os pacotes All-on-4 com tudo incluído começam a partir de €4.900 / £4.200 ($5.700) por arcada.</strong> Inclui 4 implantes de titânio premium (Straumann, DXL, NucleOSS), dentes provisórios fixos imediatos, ponte definitiva de zircônia, tomografia 3D, hotel 4/5 estrelas com café da manhã e transfers VIP Mercedes sem taxas ocultas.',
+          '<strong>Os pacotes All-on-4 com tudo incluído começam a partir de VIP Inclusions / VIP Inclusions (VIP Package) por arcada.</strong> Inclui 4 implantes de titânio premium (Straumann, DXL, NucleOSS), dentes provisórios fixos imediatos, ponte definitiva de zircônia, tomografia 3D, hotel 4/5 estrelas com café da manhã e transfers VIP Mercedes sem taxas ocultas.',
       },
     ],
   },
@@ -261,7 +261,7 @@ const JOURNEY_DATA: Record<string, LocaleContent> = {
         icon: '/icons/journey-04.webp',
         title: 'Precios y Transparencia en Paquetes',
         content:
-          '<strong>Los paquetes All-on-4 todo incluido comienzan desde €4.900 / £4.200 ($5.700) por arcada.</strong> Incluye 4 implantes de titanio premium (Straumann, DXL, NucleOSS), dientes provisionales fijos inmediatos, puente definitivo de circonio, TAC 3D, hotel de 4/5 estrellas con desayuno y traslados VIP Mercedes sin costes ocultos.',
+          '<strong>Los paquetes All-on-4 todo incluido comienzan desde VIP Inclusions / VIP Inclusions (VIP Package) por arcada.</strong> Incluye 4 implantes de titanio premium (Straumann, DXL, NucleOSS), dientes provisionales fijos inmediatos, puente definitivo de circonio, TAC 3D, hotel de 4/5 estrellas con desayuno y traslados VIP Mercedes sin costes ocultos.',
       },
     ],
   },
@@ -301,7 +301,7 @@ const JOURNEY_DATA: Record<string, LocaleContent> = {
         icon: '/icons/journey-04.webp',
         title: 'Цены и Прозрачность Пакетов',
         content:
-          '<strong>Пакетные цены «все включено» на All-on-4 начинаются от €4,900 / £4,200 ($5,700) за челюсть.</strong> В стоимость входят 4 премиальных импланта (Straumann, DXL, NucleOSS), временный несъемный мост, постоянный циркониевый мост, 3D-КТ, отель 4/5* с завтраками и VIP-трансфер Mercedes без скрытых доплат.',
+          '<strong>Пакетные цены «все включено» на All-on-4 начинаются от VIP Inclusions / VIP Inclusions (VIP Package) за челюсть.</strong> В стоимость входят 4 премиальных импланта (Straumann, DXL, NucleOSS), временный несъемный мост, постоянный циркониевый мост, 3D-КТ, отель 4/5* с завтраками и VIP-трансфер Mercedes без скрытых доплат.',
       },
     ],
   },
@@ -430,7 +430,7 @@ export default function TreatmentJourneySimpleSection({
               </a>
 
               {/* Phone Call */}
-              <a href="tel:+905434568080" className={styles.contactPill} aria-label="Phone Call">
+              <a href={`tel:${SITE_CONFIG.phone.replace(/[^0-9+]/g, '')}`} className={styles.contactPill} aria-label="Phone Call">
                 <span className={styles.iconCircle}>
                   <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />

@@ -424,14 +424,16 @@ export default function TreatmentInteractiveQuoteForm({ defaultTreatment = 'Impl
     const text = encodeURIComponent(
       `Hello Master Smile Studio!\n\nI would like to get my Free Dental Consultation.\n\n• Name: ${fullName || 'Guest'}\n• Country: ${country}\n• Phone: ${phone}\n• Treatments: ${selectedTreatments.join(', ')}\n• Age: ${ageGroup}\n• Spoken to Dentist: ${spokenToDentist}\n• Timeline: ${timeline}\n• Preferred Contact: ${commChannel}\n• Message: ${message || 'None'}\n\nPlease prepare my custom treatment plan and price quote.`
     );
+    const targetPhone = SITE_CONFIG.whatsappNumbers[locale] || SITE_CONFIG.whatsappNumbers.en || '905373059947';
     window.open(
-      `https://wa.me/${SITE_CONFIG.whatsapp.replace(/[^0-9]/g, '')}?text=${text}`,
+      `https://wa.me/${targetPhone}?text=${text}`,
       '_blank'
     );
   };
 
   return (
     <section aria-labelledby="interactive-quote-form-heading" id="js_target1" className={styles.sectionWrapper}>
+      <div id="contact" style={{ position: 'relative', top: '-80px', visibility: 'hidden' }} />
       <div className={styles.container}>
         {/* Header Grid */}
         <div className={styles.headerGrid}>

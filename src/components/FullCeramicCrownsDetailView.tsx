@@ -58,7 +58,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>6 to 7 days in Antalya.</strong> During this single trip, 3D intraoral digital scanning, minimally invasive tooth preparation, CAD/CAM milling of IPS e.max ingots, and final aesthetic glaze cementation are completed with precision.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Antalya once. Your complete dental crown makeover (from 1 tooth to full mouth 20-28 crowns) is designed and placed during this single visit.",
     "recoveryTime": "<strong>2 to 3 days adaptation.</strong> There is virtually no surgical recovery time. Any mild sensitivity subsides within 48-72 hours, allowing you to comfortably enjoy eating and normal activities immediately.",
-    "priceEstimate": "<strong>Full Ceramic Dental Crown prices start at £200 / €240 / $265 per tooth.</strong> All-inclusive multi-crown packages (10, 20 or 24 crowns) include digital smile design, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "Single E-Max Porcelain Crown",
@@ -73,11 +73,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "Dedicated patient coordinator assistance"
         ],
-        "price": {
-          "USD": "$285",
-          "EUR": "€260",
-          "GBP": "£220"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "10-Unit Anterior Smile Makeover (E-Max)",
@@ -94,11 +90,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Transfers (Airport - Hotel - Clinic)",
           "10-Year warranty against crown fracture & porcelain chipping"
         ],
-        "price": {
-          "USD": "$2,650",
-          "EUR": "€2,450",
-          "GBP": "£2,100"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20-Unit Full Mouth E-Max Makeover",
@@ -114,11 +106,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Airport & Clinic Chauffeur",
           "Comprehensive post-op care pack & custom night guard protection"
         ],
-        "price": {
-          "USD": "$5,150",
-          "EUR": "€4,750",
-          "GBP": "£4,100"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Single Zirconium Crown (Amman-Girrbach)",
@@ -133,11 +121,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "Dedicated patient coordinator assistance"
         ],
-        "price": {
-          "USD": "$275",
-          "EUR": "€250",
-          "GBP": "£210"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20-Unit Premium Zirconia Hollywood Smile",
@@ -153,11 +137,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Professional clinical teeth whitening for remaining natural teeth",
           "Lifetime warranty certificate & international care passport"
         ],
-        "price": {
-          "USD": "$5,050",
-          "EUR": "€4,650",
-          "GBP": "£3,990"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Combination Makeover (E-Max Front + Zirconia Back)",
@@ -171,11 +151,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "5-Star Hotel Stay + VIP Mercedes Private Transfers",
           "10-Year structural warranty on entire combination restoration"
         ],
-        "price": {
-          "USD": "$4,850",
-          "EUR": "€4,450",
-          "GBP": "£3,850"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -307,7 +283,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>6 to 7 days in Antalya.</strong> During this single trip, 3D intraoral digital scanning, minimally invasive tooth preparation, CAD/CAM milling of IPS e.max ingots, and final aesthetic glaze cementation are completed with precision.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Antalya once. Your complete dental crown makeover (from 1 tooth to full mouth 20-28 crowns) is designed and placed during this single visit.",
     "recoveryTime": "<strong>2 to 3 days adaptation.</strong> There is virtually no surgical recovery time. Any mild sensitivity subsides within 48-72 hours, allowing you to comfortably enjoy eating and normal activities immediately.",
-    "priceEstimate": "<strong>Full Ceramic Dental Crown prices start at £200 / €240 / $265 per tooth.</strong> All-inclusive multi-crown packages (10, 20 or 24 crowns) include digital smile design, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "Single E-Max Porcelain Crown",
@@ -322,11 +298,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "Dedicated patient coordinator assistance"
         ],
-        "price": {
-          "USD": "$285",
-          "EUR": "€260",
-          "GBP": "£220"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "10-Unit Anterior Smile Makeover (E-Max)",
@@ -343,11 +315,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Transfers (Airport - Hotel - Clinic)",
           "10-Year warranty against crown fracture & porcelain chipping"
         ],
-        "price": {
-          "USD": "$2,650",
-          "EUR": "€2,450",
-          "GBP": "£2,100"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20-Unit Full Mouth E-Max Makeover",
@@ -363,11 +331,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Airport & Clinic Chauffeur",
           "Comprehensive post-op care pack & custom night guard protection"
         ],
-        "price": {
-          "USD": "$5,150",
-          "EUR": "€4,750",
-          "GBP": "£4,100"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Single Zirconium Crown (Amman-Girrbach)",
@@ -382,11 +346,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "Dedicated patient coordinator assistance"
         ],
-        "price": {
-          "USD": "$275",
-          "EUR": "€250",
-          "GBP": "£210"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20-Unit Premium Zirconia Hollywood Smile",
@@ -402,11 +362,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Professional clinical teeth whitening for remaining natural teeth",
           "Lifetime warranty certificate & international care passport"
         ],
-        "price": {
-          "USD": "$5,050",
-          "EUR": "€4,650",
-          "GBP": "£3,990"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Combination Makeover (E-Max Front + Zirconia Back)",
@@ -420,11 +376,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "5-Star Hotel Stay + VIP Mercedes Private Transfers",
           "10-Year structural warranty on entire combination restoration"
         ],
-        "price": {
-          "USD": "$4,850",
-          "EUR": "€4,450",
-          "GBP": "£3,850"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -556,7 +508,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>6 to 7 days in Antalya.</strong> During this single trip, 3D intraoral digital scanning, minimally invasive tooth preparation, CAD/CAM milling of IPS e.max ingots, and final aesthetic glaze cementation are completed with precision.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Antalya once. Your complete dental crown makeover (from 1 tooth to full mouth 20-28 crowns) is designed and placed during this single visit.",
     "recoveryTime": "<strong>2 to 3 days adaptation.</strong> There is virtually no surgical recovery time. Any mild sensitivity subsides within 48-72 hours, allowing you to comfortably enjoy eating and normal activities immediately.",
-    "priceEstimate": "<strong>Full Ceramic Dental Crown prices start at £200 / €240 / $265 per tooth.</strong> All-inclusive multi-crown packages (10, 20 or 24 crowns) include digital smile design, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "Single E-Max Porcelain Crown",
@@ -571,11 +523,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "Dedicated patient coordinator assistance"
         ],
-        "price": {
-          "USD": "$285",
-          "EUR": "€260",
-          "GBP": "£220"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "10-Unit Anterior Smile Makeover (E-Max)",
@@ -592,11 +540,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Transfers (Airport - Hotel - Clinic)",
           "10-Year warranty against crown fracture & porcelain chipping"
         ],
-        "price": {
-          "USD": "$2,650",
-          "EUR": "€2,450",
-          "GBP": "£2,100"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20-Unit Full Mouth E-Max Makeover",
@@ -612,11 +556,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Airport & Clinic Chauffeur",
           "Comprehensive post-op care pack & custom night guard protection"
         ],
-        "price": {
-          "USD": "$5,150",
-          "EUR": "€4,750",
-          "GBP": "£4,100"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Single Zirconium Crown (Amman-Girrbach)",
@@ -631,11 +571,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "Dedicated patient coordinator assistance"
         ],
-        "price": {
-          "USD": "$275",
-          "EUR": "€250",
-          "GBP": "£210"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20-Unit Premium Zirconia Hollywood Smile",
@@ -651,11 +587,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Professional clinical teeth whitening for remaining natural teeth",
           "Lifetime warranty certificate & international care passport"
         ],
-        "price": {
-          "USD": "$5,050",
-          "EUR": "€4,650",
-          "GBP": "£3,990"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Combination Makeover (E-Max Front + Zirconia Back)",
@@ -669,11 +601,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "5-Star Hotel Stay + VIP Mercedes Private Transfers",
           "10-Year structural warranty on entire combination restoration"
         ],
-        "price": {
-          "USD": "$4,850",
-          "EUR": "€4,450",
-          "GBP": "£3,850"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -805,7 +733,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>6 to 7 days in Antalya.</strong> During this single trip, 3D intraoral digital scanning, minimally invasive tooth preparation, CAD/CAM milling of IPS e.max ingots, and final aesthetic glaze cementation are completed with precision.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Antalya once. Your complete dental crown makeover (from 1 tooth to full mouth 20-28 crowns) is designed and placed during this single visit.",
     "recoveryTime": "<strong>2 to 3 days adaptation.</strong> There is virtually no surgical recovery time. Any mild sensitivity subsides within 48-72 hours, allowing you to comfortably enjoy eating and normal activities immediately.",
-    "priceEstimate": "<strong>Full Ceramic Dental Crown prices start at £200 / €240 / $265 per tooth.</strong> All-inclusive multi-crown packages (10, 20 or 24 crowns) include digital smile design, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "Single E-Max Porcelain Crown",
@@ -820,11 +748,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "Dedicated patient coordinator assistance"
         ],
-        "price": {
-          "USD": "$285",
-          "EUR": "€260",
-          "GBP": "£220"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "10-Unit Anterior Smile Makeover (E-Max)",
@@ -841,11 +765,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Transfers (Airport - Hotel - Clinic)",
           "10-Year warranty against crown fracture & porcelain chipping"
         ],
-        "price": {
-          "USD": "$2,650",
-          "EUR": "€2,450",
-          "GBP": "£2,100"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20-Unit Full Mouth E-Max Makeover",
@@ -861,11 +781,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Airport & Clinic Chauffeur",
           "Comprehensive post-op care pack & custom night guard protection"
         ],
-        "price": {
-          "USD": "$5,150",
-          "EUR": "€4,750",
-          "GBP": "£4,100"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Single Zirconium Crown (Amman-Girrbach)",
@@ -880,11 +796,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "Dedicated patient coordinator assistance"
         ],
-        "price": {
-          "USD": "$275",
-          "EUR": "€250",
-          "GBP": "£210"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20-Unit Premium Zirconia Hollywood Smile",
@@ -900,11 +812,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Professional clinical teeth whitening for remaining natural teeth",
           "Lifetime warranty certificate & international care passport"
         ],
-        "price": {
-          "USD": "$5,050",
-          "EUR": "€4,650",
-          "GBP": "£3,990"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Combination Makeover (E-Max Front + Zirconia Back)",
@@ -918,11 +826,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "5-Star Hotel Stay + VIP Mercedes Private Transfers",
           "10-Year structural warranty on entire combination restoration"
         ],
-        "price": {
-          "USD": "$4,850",
-          "EUR": "€4,450",
-          "GBP": "£3,850"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -1054,7 +958,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>6 to 7 days in Antalya.</strong> During this single trip, 3D intraoral digital scanning, minimally invasive tooth preparation, CAD/CAM milling of IPS e.max ingots, and final aesthetic glaze cementation are completed with precision.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Antalya once. Your complete dental crown makeover (from 1 tooth to full mouth 20-28 crowns) is designed and placed during this single visit.",
     "recoveryTime": "<strong>2 to 3 days adaptation.</strong> There is virtually no surgical recovery time. Any mild sensitivity subsides within 48-72 hours, allowing you to comfortably enjoy eating and normal activities immediately.",
-    "priceEstimate": "<strong>Full Ceramic Dental Crown prices start at £200 / €240 / $265 per tooth.</strong> All-inclusive multi-crown packages (10, 20 or 24 crowns) include digital smile design, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "Single E-Max Porcelain Crown",
@@ -1069,11 +973,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "Dedicated patient coordinator assistance"
         ],
-        "price": {
-          "USD": "$285",
-          "EUR": "€260",
-          "GBP": "£220"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "10-Unit Anterior Smile Makeover (E-Max)",
@@ -1090,11 +990,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Transfers (Airport - Hotel - Clinic)",
           "10-Year warranty against crown fracture & porcelain chipping"
         ],
-        "price": {
-          "USD": "$2,650",
-          "EUR": "€2,450",
-          "GBP": "£2,100"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20-Unit Full Mouth E-Max Makeover",
@@ -1110,11 +1006,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Airport & Clinic Chauffeur",
           "Comprehensive post-op care pack & custom night guard protection"
         ],
-        "price": {
-          "USD": "$5,150",
-          "EUR": "€4,750",
-          "GBP": "£4,100"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Single Zirconium Crown (Amman-Girrbach)",
@@ -1129,11 +1021,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "Dedicated patient coordinator assistance"
         ],
-        "price": {
-          "USD": "$275",
-          "EUR": "€250",
-          "GBP": "£210"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20-Unit Premium Zirconia Hollywood Smile",
@@ -1149,11 +1037,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Professional clinical teeth whitening for remaining natural teeth",
           "Lifetime warranty certificate & international care passport"
         ],
-        "price": {
-          "USD": "$5,050",
-          "EUR": "€4,650",
-          "GBP": "£3,990"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Combination Makeover (E-Max Front + Zirconia Back)",
@@ -1167,11 +1051,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "5-Star Hotel Stay + VIP Mercedes Private Transfers",
           "10-Year structural warranty on entire combination restoration"
         ],
-        "price": {
-          "USD": "$4,850",
-          "EUR": "€4,450",
-          "GBP": "£3,850"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -1303,7 +1183,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>6 to 7 days in Antalya.</strong> During this single trip, 3D intraoral digital scanning, minimally invasive tooth preparation, CAD/CAM milling of IPS e.max ingots, and final aesthetic glaze cementation are completed with precision.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Antalya once. Your complete dental crown makeover (from 1 tooth to full mouth 20-28 crowns) is designed and placed during this single visit.",
     "recoveryTime": "<strong>2 to 3 days adaptation.</strong> There is virtually no surgical recovery time. Any mild sensitivity subsides within 48-72 hours, allowing you to comfortably enjoy eating and normal activities immediately.",
-    "priceEstimate": "<strong>Full Ceramic Dental Crown prices start at £200 / €240 / $265 per tooth.</strong> All-inclusive multi-crown packages (10, 20 or 24 crowns) include digital smile design, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "Single E-Max Porcelain Crown",
@@ -1318,11 +1198,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "Dedicated patient coordinator assistance"
         ],
-        "price": {
-          "USD": "$285",
-          "EUR": "€260",
-          "GBP": "£220"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "10-Unit Anterior Smile Makeover (E-Max)",
@@ -1339,11 +1215,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Transfers (Airport - Hotel - Clinic)",
           "10-Year warranty against crown fracture & porcelain chipping"
         ],
-        "price": {
-          "USD": "$2,650",
-          "EUR": "€2,450",
-          "GBP": "£2,100"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20-Unit Full Mouth E-Max Makeover",
@@ -1359,11 +1231,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Airport & Clinic Chauffeur",
           "Comprehensive post-op care pack & custom night guard protection"
         ],
-        "price": {
-          "USD": "$5,150",
-          "EUR": "€4,750",
-          "GBP": "£4,100"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Single Zirconium Crown (Amman-Girrbach)",
@@ -1378,11 +1246,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "Dedicated patient coordinator assistance"
         ],
-        "price": {
-          "USD": "$275",
-          "EUR": "€250",
-          "GBP": "£210"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20-Unit Premium Zirconia Hollywood Smile",
@@ -1398,11 +1262,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Professional clinical teeth whitening for remaining natural teeth",
           "Lifetime warranty certificate & international care passport"
         ],
-        "price": {
-          "USD": "$5,050",
-          "EUR": "€4,650",
-          "GBP": "£3,990"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Combination Makeover (E-Max Front + Zirconia Back)",
@@ -1416,11 +1276,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "5-Star Hotel Stay + VIP Mercedes Private Transfers",
           "10-Year structural warranty on entire combination restoration"
         ],
-        "price": {
-          "USD": "$4,850",
-          "EUR": "€4,450",
-          "GBP": "£3,850"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -1552,7 +1408,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>6 to 7 days in Antalya.</strong> During this single trip, 3D intraoral digital scanning, minimally invasive tooth preparation, CAD/CAM milling of IPS e.max ingots, and final aesthetic glaze cementation are completed with precision.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Antalya once. Your complete dental crown makeover (from 1 tooth to full mouth 20-28 crowns) is designed and placed during this single visit.",
     "recoveryTime": "<strong>2 to 3 days adaptation.</strong> There is virtually no surgical recovery time. Any mild sensitivity subsides within 48-72 hours, allowing you to comfortably enjoy eating and normal activities immediately.",
-    "priceEstimate": "<strong>Full Ceramic Dental Crown prices start at £200 / €240 / $265 per tooth.</strong> All-inclusive multi-crown packages (10, 20 or 24 crowns) include digital smile design, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "Single E-Max Porcelain Crown",
@@ -1567,11 +1423,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "Dedicated patient coordinator assistance"
         ],
-        "price": {
-          "USD": "$285",
-          "EUR": "€260",
-          "GBP": "£220"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "10-Unit Anterior Smile Makeover (E-Max)",
@@ -1588,11 +1440,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Transfers (Airport - Hotel - Clinic)",
           "10-Year warranty against crown fracture & porcelain chipping"
         ],
-        "price": {
-          "USD": "$2,650",
-          "EUR": "€2,450",
-          "GBP": "£2,100"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20-Unit Full Mouth E-Max Makeover",
@@ -1608,11 +1456,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Airport & Clinic Chauffeur",
           "Comprehensive post-op care pack & custom night guard protection"
         ],
-        "price": {
-          "USD": "$5,150",
-          "EUR": "€4,750",
-          "GBP": "£4,100"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Single Zirconium Crown (Amman-Girrbach)",
@@ -1627,11 +1471,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "Dedicated patient coordinator assistance"
         ],
-        "price": {
-          "USD": "$275",
-          "EUR": "€250",
-          "GBP": "£210"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20-Unit Premium Zirconia Hollywood Smile",
@@ -1647,11 +1487,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Professional clinical teeth whitening for remaining natural teeth",
           "Lifetime warranty certificate & international care passport"
         ],
-        "price": {
-          "USD": "$5,050",
-          "EUR": "€4,650",
-          "GBP": "£3,990"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Combination Makeover (E-Max Front + Zirconia Back)",
@@ -1665,11 +1501,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "5-Star Hotel Stay + VIP Mercedes Private Transfers",
           "10-Year structural warranty on entire combination restoration"
         ],
-        "price": {
-          "USD": "$4,850",
-          "EUR": "€4,450",
-          "GBP": "£3,850"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -1939,9 +1771,9 @@ export default function FullCeramicCrownsDetailView() {
 
                 <div className={styles.pkgFooter}>
                   <div className={styles.pkgPriceRow}>
-                    <span className={styles.pkgPriceLabel}>{d.priceLabel}</span>
-                    <strong className={styles.pkgPriceValue}>
-                      {pkg.price[currency]}
+                    <span className={styles.pkgPriceLabel}>{locale === 'tr' ? 'VIP Paket Kapsamı' : 'VIP All-Inclusive'}</span>
+                    <strong className={styles.pkgPriceValue} style={{ fontSize: '0.95rem', color: '#059669', fontWeight: '700' }}>
+                      {locale === 'tr' ? 'Kişiye Özel Fiyat Teklifi' : 'Personalized VIP Quote'}
                     </strong>
                   </div>
 

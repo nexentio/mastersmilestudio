@@ -451,9 +451,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "img": "/packages/straumann.webp",
         "popular": true,
         "price": {
-          "EUR": "€850",
-          "GBP": "£730",
-          "USD": "$935"
+          "EUR": "VIP Inclusions",
+          "GBP": "VIP Inclusions",
+          "USD": "Personalized Quote"
         },
         "included": [
           "1x Genuine Straumann PURE Ceramic 100% metal-free implant",
@@ -472,9 +472,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "duration": "3+5 Working Days (2 Visits)",
         "img": "/packages/dxl.webp",
         "price": {
-          "EUR": "€950",
-          "GBP": "£820",
-          "USD": "$1,050"
+          "EUR": "VIP Inclusions",
+          "GBP": "VIP Inclusions",
+          "USD": "Personalized Quote"
         },
         "included": [
           "1x Nobel Pearl 100% metal-free two-piece ceramic implant",
@@ -493,9 +493,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "duration": "3+5 Working Days (2 Visits)",
         "img": "/packages/nucleoss.webp",
         "price": {
-          "EUR": "€890",
-          "GBP": "£765",
-          "USD": "$980"
+          "EUR": "VIP Inclusions",
+          "GBP": "VIP Inclusions",
+          "USD": "Personalized Quote"
         },
         "included": [
           "1x Z-Systems Z-Look3 proprietary laser-treated ceramic fixture",
@@ -514,9 +514,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "duration": "3+5 Working Days (2 Visits)",
         "img": "/packages/neodent.webp",
         "price": {
-          "EUR": "€1,100",
-          "GBP": "£950",
-          "USD": "$1,200"
+          "EUR": "VIP Inclusions",
+          "GBP": "VIP Inclusions",
+          "USD": "Personalized Quote"
         },
         "included": [
           "1x Premium Swiss/German Ceramic Implant in anterior zone",
@@ -535,9 +535,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "duration": "5+7 Working Days (2 Visits)",
         "img": "/packages/straumann.webp",
         "price": {
-          "EUR": "€7,500",
-          "GBP": "£6,450",
-          "USD": "$8,250"
+          "EUR": "VIP Inclusions",
+          "GBP": "VIP Inclusions",
+          "USD": "Personalized Quote"
         },
         "included": [
           "6x 100% Metal-Free Ceramic Implants per jaw / arch",
@@ -556,9 +556,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "duration": "5+7 Working Days (2 Visits)",
         "img": "/packages/megagen.webp",
         "price": {
-          "EUR": "€14,500",
-          "GBP": "£12,500",
-          "USD": "$15,900"
+          "EUR": "VIP Inclusions",
+          "GBP": "VIP Inclusions",
+          "USD": "Personalized Quote"
         },
         "included": [
           "12x Certified Ceramic Implants (6 Upper + 6 Lower Jaws)",
@@ -583,19 +583,19 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "costTableRows": [
       {
         "country": "United Kingdom (Harley Street / Private London)",
-        "costPerUnit": "£1,800 – £2,800 ($2,300 – $3,600)",
-        "inclusions": "Surgical fixture only. Abutment (£450), CAD/CAM crown (£850), CBCT scan (£200), and consultation billed separately.",
+        "costPerUnit": "VIP Inclusions (VIP Package)",
+        "inclusions": "Surgical fixture only. Abutment (VIP Inclusions), CAD/CAM crown (VIP Inclusions), CBCT scan (VIP Inclusions), and consultation billed separately.",
         "valueAdvantage": "Baseline UK Private Market Cost"
       },
       {
         "country": "Germany / Switzerland (Biological Dental Clinics)",
-        "costPerUnit": "€1,600 – €2,500 ($1,750 – $2,750)",
+        "costPerUnit": "VIP Inclusions (VIP Package)",
         "inclusions": "Surgeon and implant hardware. Ceramic abutment, zirconia crown, hotel, and transfers billed as extra line-items.",
         "valueAdvantage": "Baseline German Market Cost"
       },
       {
         "country": "Master Smile Studio (Antalya, Turkey) ⭐",
-        "costPerUnit": "€650 – €950 (£550 – £820)",
+        "costPerUnit": "VIP Inclusions (VIP Inclusions)",
         "inclusions": "100% All-Inclusive: Genuine Straumann PURE / Nobel Pearl fixture, solid ceramic abutment, German Zirconia / E-Max crown, 3D CBCT & VIP transfers.",
         "valueAdvantage": "60% – 70% Net Savings (Certified Swiss/German Purity)"
       }
@@ -974,9 +974,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "img": "/packages/straumann.webp",
         "popular": true,
         "price": {
-          "EUR": "€850",
-          "GBP": "£730",
-          "USD": "$935"
+          "EUR": "VIP Inclusions",
+          "GBP": "VIP Inclusions",
+          "USD": "Personalized Quote"
         },
         "included": [
           "1x Orijinal Straumann PURE Seramik %100 metalsiz implant",
@@ -995,9 +995,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "duration": "Antalya’da 3+5 Gün (Toplam 2 Ziyaret)",
         "img": "/packages/dxl.webp",
         "price": {
-          "EUR": "€950",
-          "GBP": "£820",
-          "USD": "$1,050"
+          "EUR": "VIP Inclusions",
+          "GBP": "VIP Inclusions",
+          "USD": "Personalized Quote"
         },
         "included": [
           "1x Nobel Pearl %100 metalsiz iki parçalı seramik implant",
@@ -1016,9 +1016,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "duration": "Antalya’da 3+5 Gün (Toplam 2 Ziyaret)",
         "img": "/packages/nucleoss.webp",
         "price": {
-          "EUR": "€890",
-          "GBP": "£765",
-          "USD": "$980"
+          "EUR": "VIP Inclusions",
+          "GBP": "VIP Inclusions",
+          "USD": "Personalized Quote"
         },
         "included": [
           "1x Z-Systems Z-Look3 patentli lazer işlemeli seramik gövde",
@@ -1037,9 +1037,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "duration": "Antalya’da 3+5 Gün (Toplam 2 Ziyaret)",
         "img": "/packages/neodent.webp",
         "price": {
-          "EUR": "€1,100",
-          "GBP": "£950",
-          "USD": "$1,200"
+          "EUR": "VIP Inclusions",
+          "GBP": "VIP Inclusions",
+          "USD": "Personalized Quote"
         },
         "included": [
           "1x Ön estetik bölgeye özel İsviçre/Alman Seramik İmplant",
@@ -1058,9 +1058,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "duration": "Antalya’da 5+7 Gün (Toplam 2 Ziyaret)",
         "img": "/packages/straumann.webp",
         "price": {
-          "EUR": "€7,500",
-          "GBP": "£6,450",
-          "USD": "$8,250"
+          "EUR": "VIP Inclusions",
+          "GBP": "VIP Inclusions",
+          "USD": "Personalized Quote"
         },
         "included": [
           "6x Çene başına %100 Metalsiz Seramik İmplant",
@@ -1079,9 +1079,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "duration": "Antalya’da 5+7 Gün (Toplam 2 Ziyaret)",
         "img": "/packages/megagen.webp",
         "price": {
-          "EUR": "€14,500",
-          "GBP": "£12,500",
-          "USD": "$15,900"
+          "EUR": "VIP Inclusions",
+          "GBP": "VIP Inclusions",
+          "USD": "Personalized Quote"
         },
         "included": [
           "12x Sertifikalı Seramik İmplant (6 Üst Çene + 6 Alt Çene)",
@@ -1106,19 +1106,19 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "costTableRows": [
       {
         "country": "İngiltere (Harley Street / Özel Londra Klinikler)",
-        "costPerUnit": "£1,800 – £2,800 ($2,300 – $3,600)",
-        "inclusions": "Yalnızca implant gövdesi. Seramik abutment (£450), Zirkonyum kuron (£850), Tomografi (£200) ayrıca ücretlendirilir.",
+        "costPerUnit": "VIP Inclusions (VIP Package)",
+        "inclusions": "Yalnızca implant gövdesi. Seramik abutment (VIP Inclusions), Zirkonyum kuron (VIP Inclusions), Tomografi (VIP Inclusions) ayrıca ücretlendirilir.",
         "valueAdvantage": "İngiltere Piyasa Tabanı"
       },
       {
         "country": "Almanya / İsviçre (Biyolojik Diş Klinikleri)",
-        "costPerUnit": "€1,600 – €2,500 ($1,750 – $2,750)",
+        "costPerUnit": "VIP Inclusions (VIP Package)",
         "inclusions": "Cerrah ve implant materyali. Seramik abutment, kuron, otel ve transferler ayrı kalemler olarak faturalandırılır.",
         "valueAdvantage": "Almanya Piyasa Tabanı"
       },
       {
         "country": "Master Smile Studio (Antalya, Türkiye) ⭐",
-        "costPerUnit": "€650 – €950 (£550 – £820)",
+        "costPerUnit": "VIP Inclusions (VIP Inclusions)",
         "inclusions": "%100 Her Şey Dahil: Orijinal Straumann PURE / Nobel Pearl gövde, masif seramik abutment, Alman Zirkonyum/E-Max kuron, 3D Tomografi ve VIP transferler.",
         "valueAdvantage": "%60 – %70 Net Tasarruf (Orijinal İsviçre/Alman Saflığı)"
       }
@@ -1497,9 +1497,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "img": "/packages/straumann.webp",
         "popular": true,
         "price": {
-          "EUR": "€850",
-          "GBP": "£730",
-          "USD": "$935"
+          "EUR": "VIP Inclusions",
+          "GBP": "VIP Inclusions",
+          "USD": "Personalized Quote"
         },
         "included": [
           "1x Genuine Straumann PURE Ceramic 100% metal-free implant",
@@ -1518,9 +1518,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "duration": "3+5 Working Days (2 Visits)",
         "img": "/packages/dxl.webp",
         "price": {
-          "EUR": "€950",
-          "GBP": "£820",
-          "USD": "$1,050"
+          "EUR": "VIP Inclusions",
+          "GBP": "VIP Inclusions",
+          "USD": "Personalized Quote"
         },
         "included": [
           "1x Nobel Pearl 100% metal-free two-piece ceramic implant",
@@ -1539,9 +1539,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "duration": "3+5 Working Days (2 Visits)",
         "img": "/packages/nucleoss.webp",
         "price": {
-          "EUR": "€890",
-          "GBP": "£765",
-          "USD": "$980"
+          "EUR": "VIP Inclusions",
+          "GBP": "VIP Inclusions",
+          "USD": "Personalized Quote"
         },
         "included": [
           "1x Z-Systems Z-Look3 proprietary laser-treated ceramic fixture",
@@ -1560,9 +1560,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "duration": "3+5 Working Days (2 Visits)",
         "img": "/packages/neodent.webp",
         "price": {
-          "EUR": "€1,100",
-          "GBP": "£950",
-          "USD": "$1,200"
+          "EUR": "VIP Inclusions",
+          "GBP": "VIP Inclusions",
+          "USD": "Personalized Quote"
         },
         "included": [
           "1x Premium Swiss/German Ceramic Implant in anterior zone",
@@ -1581,9 +1581,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "duration": "5+7 Working Days (2 Visits)",
         "img": "/packages/straumann.webp",
         "price": {
-          "EUR": "€7,500",
-          "GBP": "£6,450",
-          "USD": "$8,250"
+          "EUR": "VIP Inclusions",
+          "GBP": "VIP Inclusions",
+          "USD": "Personalized Quote"
         },
         "included": [
           "6x 100% Metal-Free Ceramic Implants per jaw / arch",
@@ -1602,9 +1602,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "duration": "5+7 Working Days (2 Visits)",
         "img": "/packages/megagen.webp",
         "price": {
-          "EUR": "€14,500",
-          "GBP": "£12,500",
-          "USD": "$15,900"
+          "EUR": "VIP Inclusions",
+          "GBP": "VIP Inclusions",
+          "USD": "Personalized Quote"
         },
         "included": [
           "12x Certified Ceramic Implants (6 Upper + 6 Lower Jaws)",
@@ -1629,19 +1629,19 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "costTableRows": [
       {
         "country": "United Kingdom (Harley Street / Private London)",
-        "costPerUnit": "£1,800 – £2,800 ($2,300 – $3,600)",
-        "inclusions": "Surgical fixture only. Abutment (£450), CAD/CAM crown (£850), CBCT scan (£200), and consultation billed separately.",
+        "costPerUnit": "VIP Inclusions (VIP Package)",
+        "inclusions": "Surgical fixture only. Abutment (VIP Inclusions), CAD/CAM crown (VIP Inclusions), CBCT scan (VIP Inclusions), and consultation billed separately.",
         "valueAdvantage": "Baseline UK Private Market Cost"
       },
       {
         "country": "Germany / Switzerland (Biological Dental Clinics)",
-        "costPerUnit": "€1,600 – €2,500 ($1,750 – $2,750)",
+        "costPerUnit": "VIP Inclusions (VIP Package)",
         "inclusions": "Surgeon and implant hardware. Ceramic abutment, zirconia crown, hotel, and transfers billed as extra line-items.",
         "valueAdvantage": "Baseline German Market Cost"
       },
       {
         "country": "Master Smile Studio (Antalya, Turkey) ⭐",
-        "costPerUnit": "€650 – €950 (£550 – £820)",
+        "costPerUnit": "VIP Inclusions (VIP Inclusions)",
         "inclusions": "100% All-Inclusive: Genuine Straumann PURE / Nobel Pearl fixture, solid ceramic abutment, German Zirconia / E-Max crown, 3D CBCT & VIP transfers.",
         "valueAdvantage": "60% – 70% Net Savings (Certified Swiss/German Purity)"
       }
@@ -2020,9 +2020,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "img": "/packages/straumann.webp",
         "popular": true,
         "price": {
-          "EUR": "€850",
-          "GBP": "£730",
-          "USD": "$935"
+          "EUR": "VIP Inclusions",
+          "GBP": "VIP Inclusions",
+          "USD": "Personalized Quote"
         },
         "included": [
           "1x Genuine Straumann PURE Ceramic 100% metal-free implant",
@@ -2041,9 +2041,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "duration": "3+5 Working Days (2 Visits)",
         "img": "/packages/dxl.webp",
         "price": {
-          "EUR": "€950",
-          "GBP": "£820",
-          "USD": "$1,050"
+          "EUR": "VIP Inclusions",
+          "GBP": "VIP Inclusions",
+          "USD": "Personalized Quote"
         },
         "included": [
           "1x Nobel Pearl 100% metal-free two-piece ceramic implant",
@@ -2062,9 +2062,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "duration": "3+5 Working Days (2 Visits)",
         "img": "/packages/nucleoss.webp",
         "price": {
-          "EUR": "€890",
-          "GBP": "£765",
-          "USD": "$980"
+          "EUR": "VIP Inclusions",
+          "GBP": "VIP Inclusions",
+          "USD": "Personalized Quote"
         },
         "included": [
           "1x Z-Systems Z-Look3 proprietary laser-treated ceramic fixture",
@@ -2083,9 +2083,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "duration": "3+5 Working Days (2 Visits)",
         "img": "/packages/neodent.webp",
         "price": {
-          "EUR": "€1,100",
-          "GBP": "£950",
-          "USD": "$1,200"
+          "EUR": "VIP Inclusions",
+          "GBP": "VIP Inclusions",
+          "USD": "Personalized Quote"
         },
         "included": [
           "1x Premium Swiss/German Ceramic Implant in anterior zone",
@@ -2104,9 +2104,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "duration": "5+7 Working Days (2 Visits)",
         "img": "/packages/straumann.webp",
         "price": {
-          "EUR": "€7,500",
-          "GBP": "£6,450",
-          "USD": "$8,250"
+          "EUR": "VIP Inclusions",
+          "GBP": "VIP Inclusions",
+          "USD": "Personalized Quote"
         },
         "included": [
           "6x 100% Metal-Free Ceramic Implants per jaw / arch",
@@ -2125,9 +2125,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "duration": "5+7 Working Days (2 Visits)",
         "img": "/packages/megagen.webp",
         "price": {
-          "EUR": "€14,500",
-          "GBP": "£12,500",
-          "USD": "$15,900"
+          "EUR": "VIP Inclusions",
+          "GBP": "VIP Inclusions",
+          "USD": "Personalized Quote"
         },
         "included": [
           "12x Certified Ceramic Implants (6 Upper + 6 Lower Jaws)",
@@ -2152,19 +2152,19 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "costTableRows": [
       {
         "country": "United Kingdom (Harley Street / Private London)",
-        "costPerUnit": "£1,800 – £2,800 ($2,300 – $3,600)",
-        "inclusions": "Surgical fixture only. Abutment (£450), CAD/CAM crown (£850), CBCT scan (£200), and consultation billed separately.",
+        "costPerUnit": "VIP Inclusions (VIP Package)",
+        "inclusions": "Surgical fixture only. Abutment (VIP Inclusions), CAD/CAM crown (VIP Inclusions), CBCT scan (VIP Inclusions), and consultation billed separately.",
         "valueAdvantage": "Baseline UK Private Market Cost"
       },
       {
         "country": "Germany / Switzerland (Biological Dental Clinics)",
-        "costPerUnit": "€1,600 – €2,500 ($1,750 – $2,750)",
+        "costPerUnit": "VIP Inclusions (VIP Package)",
         "inclusions": "Surgeon and implant hardware. Ceramic abutment, zirconia crown, hotel, and transfers billed as extra line-items.",
         "valueAdvantage": "Baseline German Market Cost"
       },
       {
         "country": "Master Smile Studio (Antalya, Turkey) ⭐",
-        "costPerUnit": "€650 – €950 (£550 – £820)",
+        "costPerUnit": "VIP Inclusions (VIP Inclusions)",
         "inclusions": "100% All-Inclusive: Genuine Straumann PURE / Nobel Pearl fixture, solid ceramic abutment, German Zirconia / E-Max crown, 3D CBCT & VIP transfers.",
         "valueAdvantage": "60% – 70% Net Savings (Certified Swiss/German Purity)"
       }
@@ -2543,9 +2543,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "img": "/packages/straumann.webp",
         "popular": true,
         "price": {
-          "EUR": "€850",
-          "GBP": "£730",
-          "USD": "$935"
+          "EUR": "VIP Inclusions",
+          "GBP": "VIP Inclusions",
+          "USD": "Personalized Quote"
         },
         "included": [
           "1x Genuine Straumann PURE Ceramic 100% metal-free implant",
@@ -2564,9 +2564,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "duration": "3+5 Working Days (2 Visits)",
         "img": "/packages/dxl.webp",
         "price": {
-          "EUR": "€950",
-          "GBP": "£820",
-          "USD": "$1,050"
+          "EUR": "VIP Inclusions",
+          "GBP": "VIP Inclusions",
+          "USD": "Personalized Quote"
         },
         "included": [
           "1x Nobel Pearl 100% metal-free two-piece ceramic implant",
@@ -2585,9 +2585,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "duration": "3+5 Working Days (2 Visits)",
         "img": "/packages/nucleoss.webp",
         "price": {
-          "EUR": "€890",
-          "GBP": "£765",
-          "USD": "$980"
+          "EUR": "VIP Inclusions",
+          "GBP": "VIP Inclusions",
+          "USD": "Personalized Quote"
         },
         "included": [
           "1x Z-Systems Z-Look3 proprietary laser-treated ceramic fixture",
@@ -2606,9 +2606,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "duration": "3+5 Working Days (2 Visits)",
         "img": "/packages/neodent.webp",
         "price": {
-          "EUR": "€1,100",
-          "GBP": "£950",
-          "USD": "$1,200"
+          "EUR": "VIP Inclusions",
+          "GBP": "VIP Inclusions",
+          "USD": "Personalized Quote"
         },
         "included": [
           "1x Premium Swiss/German Ceramic Implant in anterior zone",
@@ -2627,9 +2627,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "duration": "5+7 Working Days (2 Visits)",
         "img": "/packages/straumann.webp",
         "price": {
-          "EUR": "€7,500",
-          "GBP": "£6,450",
-          "USD": "$8,250"
+          "EUR": "VIP Inclusions",
+          "GBP": "VIP Inclusions",
+          "USD": "Personalized Quote"
         },
         "included": [
           "6x 100% Metal-Free Ceramic Implants per jaw / arch",
@@ -2648,9 +2648,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "duration": "5+7 Working Days (2 Visits)",
         "img": "/packages/megagen.webp",
         "price": {
-          "EUR": "€14,500",
-          "GBP": "£12,500",
-          "USD": "$15,900"
+          "EUR": "VIP Inclusions",
+          "GBP": "VIP Inclusions",
+          "USD": "Personalized Quote"
         },
         "included": [
           "12x Certified Ceramic Implants (6 Upper + 6 Lower Jaws)",
@@ -2675,19 +2675,19 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "costTableRows": [
       {
         "country": "United Kingdom (Harley Street / Private London)",
-        "costPerUnit": "£1,800 – £2,800 ($2,300 – $3,600)",
-        "inclusions": "Surgical fixture only. Abutment (£450), CAD/CAM crown (£850), CBCT scan (£200), and consultation billed separately.",
+        "costPerUnit": "VIP Inclusions (VIP Package)",
+        "inclusions": "Surgical fixture only. Abutment (VIP Inclusions), CAD/CAM crown (VIP Inclusions), CBCT scan (VIP Inclusions), and consultation billed separately.",
         "valueAdvantage": "Baseline UK Private Market Cost"
       },
       {
         "country": "Germany / Switzerland (Biological Dental Clinics)",
-        "costPerUnit": "€1,600 – €2,500 ($1,750 – $2,750)",
+        "costPerUnit": "VIP Inclusions (VIP Package)",
         "inclusions": "Surgeon and implant hardware. Ceramic abutment, zirconia crown, hotel, and transfers billed as extra line-items.",
         "valueAdvantage": "Baseline German Market Cost"
       },
       {
         "country": "Master Smile Studio (Antalya, Turkey) ⭐",
-        "costPerUnit": "€650 – €950 (£550 – £820)",
+        "costPerUnit": "VIP Inclusions (VIP Inclusions)",
         "inclusions": "100% All-Inclusive: Genuine Straumann PURE / Nobel Pearl fixture, solid ceramic abutment, German Zirconia / E-Max crown, 3D CBCT & VIP transfers.",
         "valueAdvantage": "60% – 70% Net Savings (Certified Swiss/German Purity)"
       }
@@ -3066,9 +3066,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "img": "/packages/straumann.webp",
         "popular": true,
         "price": {
-          "EUR": "€850",
-          "GBP": "£730",
-          "USD": "$935"
+          "EUR": "VIP Inclusions",
+          "GBP": "VIP Inclusions",
+          "USD": "Personalized Quote"
         },
         "included": [
           "1x Genuine Straumann PURE Ceramic 100% metal-free implant",
@@ -3087,9 +3087,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "duration": "3+5 Working Days (2 Visits)",
         "img": "/packages/dxl.webp",
         "price": {
-          "EUR": "€950",
-          "GBP": "£820",
-          "USD": "$1,050"
+          "EUR": "VIP Inclusions",
+          "GBP": "VIP Inclusions",
+          "USD": "Personalized Quote"
         },
         "included": [
           "1x Nobel Pearl 100% metal-free two-piece ceramic implant",
@@ -3108,9 +3108,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "duration": "3+5 Working Days (2 Visits)",
         "img": "/packages/nucleoss.webp",
         "price": {
-          "EUR": "€890",
-          "GBP": "£765",
-          "USD": "$980"
+          "EUR": "VIP Inclusions",
+          "GBP": "VIP Inclusions",
+          "USD": "Personalized Quote"
         },
         "included": [
           "1x Z-Systems Z-Look3 proprietary laser-treated ceramic fixture",
@@ -3129,9 +3129,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "duration": "3+5 Working Days (2 Visits)",
         "img": "/packages/neodent.webp",
         "price": {
-          "EUR": "€1,100",
-          "GBP": "£950",
-          "USD": "$1,200"
+          "EUR": "VIP Inclusions",
+          "GBP": "VIP Inclusions",
+          "USD": "Personalized Quote"
         },
         "included": [
           "1x Premium Swiss/German Ceramic Implant in anterior zone",
@@ -3150,9 +3150,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "duration": "5+7 Working Days (2 Visits)",
         "img": "/packages/straumann.webp",
         "price": {
-          "EUR": "€7,500",
-          "GBP": "£6,450",
-          "USD": "$8,250"
+          "EUR": "VIP Inclusions",
+          "GBP": "VIP Inclusions",
+          "USD": "Personalized Quote"
         },
         "included": [
           "6x 100% Metal-Free Ceramic Implants per jaw / arch",
@@ -3171,9 +3171,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "duration": "5+7 Working Days (2 Visits)",
         "img": "/packages/megagen.webp",
         "price": {
-          "EUR": "€14,500",
-          "GBP": "£12,500",
-          "USD": "$15,900"
+          "EUR": "VIP Inclusions",
+          "GBP": "VIP Inclusions",
+          "USD": "Personalized Quote"
         },
         "included": [
           "12x Certified Ceramic Implants (6 Upper + 6 Lower Jaws)",
@@ -3198,19 +3198,19 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "costTableRows": [
       {
         "country": "United Kingdom (Harley Street / Private London)",
-        "costPerUnit": "£1,800 – £2,800 ($2,300 – $3,600)",
-        "inclusions": "Surgical fixture only. Abutment (£450), CAD/CAM crown (£850), CBCT scan (£200), and consultation billed separately.",
+        "costPerUnit": "VIP Inclusions (VIP Package)",
+        "inclusions": "Surgical fixture only. Abutment (VIP Inclusions), CAD/CAM crown (VIP Inclusions), CBCT scan (VIP Inclusions), and consultation billed separately.",
         "valueAdvantage": "Baseline UK Private Market Cost"
       },
       {
         "country": "Germany / Switzerland (Biological Dental Clinics)",
-        "costPerUnit": "€1,600 – €2,500 ($1,750 – $2,750)",
+        "costPerUnit": "VIP Inclusions (VIP Package)",
         "inclusions": "Surgeon and implant hardware. Ceramic abutment, zirconia crown, hotel, and transfers billed as extra line-items.",
         "valueAdvantage": "Baseline German Market Cost"
       },
       {
         "country": "Master Smile Studio (Antalya, Turkey) ⭐",
-        "costPerUnit": "€650 – €950 (£550 – £820)",
+        "costPerUnit": "VIP Inclusions (VIP Inclusions)",
         "inclusions": "100% All-Inclusive: Genuine Straumann PURE / Nobel Pearl fixture, solid ceramic abutment, German Zirconia / E-Max crown, 3D CBCT & VIP transfers.",
         "valueAdvantage": "60% – 70% Net Savings (Certified Swiss/German Purity)"
       }
@@ -3589,9 +3589,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "img": "/packages/straumann.webp",
         "popular": true,
         "price": {
-          "EUR": "€850",
-          "GBP": "£730",
-          "USD": "$935"
+          "EUR": "VIP Inclusions",
+          "GBP": "VIP Inclusions",
+          "USD": "Personalized Quote"
         },
         "included": [
           "1x Genuine Straumann PURE Ceramic 100% metal-free implant",
@@ -3610,9 +3610,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "duration": "3+5 Working Days (2 Visits)",
         "img": "/packages/dxl.webp",
         "price": {
-          "EUR": "€950",
-          "GBP": "£820",
-          "USD": "$1,050"
+          "EUR": "VIP Inclusions",
+          "GBP": "VIP Inclusions",
+          "USD": "Personalized Quote"
         },
         "included": [
           "1x Nobel Pearl 100% metal-free two-piece ceramic implant",
@@ -3631,9 +3631,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "duration": "3+5 Working Days (2 Visits)",
         "img": "/packages/nucleoss.webp",
         "price": {
-          "EUR": "€890",
-          "GBP": "£765",
-          "USD": "$980"
+          "EUR": "VIP Inclusions",
+          "GBP": "VIP Inclusions",
+          "USD": "Personalized Quote"
         },
         "included": [
           "1x Z-Systems Z-Look3 proprietary laser-treated ceramic fixture",
@@ -3652,9 +3652,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "duration": "3+5 Working Days (2 Visits)",
         "img": "/packages/neodent.webp",
         "price": {
-          "EUR": "€1,100",
-          "GBP": "£950",
-          "USD": "$1,200"
+          "EUR": "VIP Inclusions",
+          "GBP": "VIP Inclusions",
+          "USD": "Personalized Quote"
         },
         "included": [
           "1x Premium Swiss/German Ceramic Implant in anterior zone",
@@ -3673,9 +3673,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "duration": "5+7 Working Days (2 Visits)",
         "img": "/packages/straumann.webp",
         "price": {
-          "EUR": "€7,500",
-          "GBP": "£6,450",
-          "USD": "$8,250"
+          "EUR": "VIP Inclusions",
+          "GBP": "VIP Inclusions",
+          "USD": "Personalized Quote"
         },
         "included": [
           "6x 100% Metal-Free Ceramic Implants per jaw / arch",
@@ -3694,9 +3694,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "duration": "5+7 Working Days (2 Visits)",
         "img": "/packages/megagen.webp",
         "price": {
-          "EUR": "€14,500",
-          "GBP": "£12,500",
-          "USD": "$15,900"
+          "EUR": "VIP Inclusions",
+          "GBP": "VIP Inclusions",
+          "USD": "Personalized Quote"
         },
         "included": [
           "12x Certified Ceramic Implants (6 Upper + 6 Lower Jaws)",
@@ -3721,19 +3721,19 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "costTableRows": [
       {
         "country": "United Kingdom (Harley Street / Private London)",
-        "costPerUnit": "£1,800 – £2,800 ($2,300 – $3,600)",
-        "inclusions": "Surgical fixture only. Abutment (£450), CAD/CAM crown (£850), CBCT scan (£200), and consultation billed separately.",
+        "costPerUnit": "VIP Inclusions (VIP Package)",
+        "inclusions": "Surgical fixture only. Abutment (VIP Inclusions), CAD/CAM crown (VIP Inclusions), CBCT scan (VIP Inclusions), and consultation billed separately.",
         "valueAdvantage": "Baseline UK Private Market Cost"
       },
       {
         "country": "Germany / Switzerland (Biological Dental Clinics)",
-        "costPerUnit": "€1,600 – €2,500 ($1,750 – $2,750)",
+        "costPerUnit": "VIP Inclusions (VIP Package)",
         "inclusions": "Surgeon and implant hardware. Ceramic abutment, zirconia crown, hotel, and transfers billed as extra line-items.",
         "valueAdvantage": "Baseline German Market Cost"
       },
       {
         "country": "Master Smile Studio (Antalya, Turkey) ⭐",
-        "costPerUnit": "€650 – €950 (£550 – £820)",
+        "costPerUnit": "VIP Inclusions (VIP Inclusions)",
         "inclusions": "100% All-Inclusive: Genuine Straumann PURE / Nobel Pearl fixture, solid ceramic abutment, German Zirconia / E-Max crown, 3D CBCT & VIP transfers.",
         "valueAdvantage": "60% – 70% Net Savings (Certified Swiss/German Purity)"
       }
@@ -4037,9 +4037,9 @@ export default function ZirconiumImplantDetailView() {
 
                 <div className={styles.pkgFooter}>
                   <div className={styles.pkgPriceRow}>
-                    <span className={styles.pkgPriceLabel}>{d.pricePerArchLabel}</span>
-                    <strong className={styles.pkgPriceValue}>
-                      {pkg.price[currency]}
+                    <span className={styles.pkgPriceLabel}>{locale === 'tr' ? 'VIP Paket Kapsamı' : 'VIP All-Inclusive'}</span>
+                    <strong className={styles.pkgPriceValue} style={{ fontSize: '0.95rem', color: '#059669', fontWeight: '700' }}>
+                      {locale === 'tr' ? 'Kişiye Özel Fiyat Teklifi' : 'Personalized VIP Quote'}
                     </strong>
                   </div>
 

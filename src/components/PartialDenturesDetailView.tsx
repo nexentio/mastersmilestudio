@@ -66,7 +66,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           'Occlusal rest preparation for zero gum sinking & full bite support',
           'VIP Airport & Clinic Transfer included'
         ],
-        price: { USD: '$590', EUR: '€540', GBP: '£470' }
+        price: { USD: 'Custom Quote', EUR: 'Custom Quote', GBP: 'Custom Quote' }
       },
       {
         name: 'Valplast Flexible Nylon Invisible Clasp Partial Denture',
@@ -81,7 +81,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           'Precision digital shade match to surrounding natural dentition',
           'VIP Airport & Clinic Transfer included'
         ],
-        price: { USD: '$690', EUR: '€630', GBP: '£550' }
+        price: { USD: 'Custom Quote', EUR: 'Custom Quote', GBP: 'Custom Quote' }
       },
       {
         name: 'Precision Attachment (Snap-Lock) Hidden Partial Denture',
@@ -96,7 +96,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           'Easily removable for effortless daily cleaning and hygiene',
           '5-Year Quality Warranty & VIP Concierge support'
         ],
-        price: { USD: '$1,150', EUR: '€1,050', GBP: '£920' }
+        price: { USD: 'Custom Quote', EUR: 'Custom Quote', GBP: 'Custom Quote' }
       }
     ],
     faqs: [
@@ -148,7 +148,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           'Diş etine baskıyı engelleyen tırnak (rest) destek sistemi',
           'VIP Havalimanı ve Klinik Transferleri dahil'
         ],
-        price: { USD: '$590', EUR: '€540', GBP: '£470' }
+        price: { USD: 'Custom Quote', EUR: 'Custom Quote', GBP: 'Custom Quote' }
       },
       {
         name: 'Valplast Esnek Naylon (Kancasız/Görünmez) Bölümlü Protez',
@@ -163,7 +163,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           'Kendi dişlerinizle kusursuz renk ve estetik geçiş',
           'VIP Havalimanı ve Klinik Transferleri dahil'
         ],
-        price: { USD: '$690', EUR: '€630', GBP: '£550' }
+        price: { USD: 'Custom Quote', EUR: 'Custom Quote', GBP: 'Custom Quote' }
       },
       {
         name: 'Hassas Tutuculu (Çıtçıtlı / Gizli Kilitli) Bölümlü Protez',
@@ -178,7 +178,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           'Temizlik için kolayca takılıp çıkarılabilen konforlu tasarım',
           '5 Yıl Kalite Garantisi ve VIP Konsiyerj hizmeti'
         ],
-        price: { USD: '$1,150', EUR: '€1,050', GBP: '£920' }
+        price: { USD: 'Custom Quote', EUR: 'Custom Quote', GBP: 'Custom Quote' }
       }
     ],
     faqs: [
@@ -224,7 +224,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           'Auflagen zur parodontalen Krafteinleitung ohne Zahnfleischreizung',
           'Inklusive VIP-Transfer Flughafen und Klinik'
         ],
-        price: { USD: '$590', EUR: '€540', GBP: '£470' }
+        price: { USD: 'Custom Quote', EUR: 'Custom Quote', GBP: 'Custom Quote' }
       },
       {
         name: 'Valplast Flexible Nylon-Teilprothese (Klammerfrei/Unsichtbar)',
@@ -239,7 +239,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           'Natürliche Transluzenz und harmonischer Übergang zu Restzähnen',
           'Inklusive VIP-Transfer Flughafen und Klinik'
         ],
-        price: { USD: '$690', EUR: '€630', GBP: '£550' }
+        price: { USD: 'Custom Quote', EUR: 'Custom Quote', GBP: 'Custom Quote' }
       },
       {
         name: 'Geschiebeprothese (Unsichtbare Riegelverankerung)',
@@ -254,7 +254,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           'Einfach herausnehmbar für die tägliche Mundhygiene',
           '5 Jahre Qualitätsgarantie und VIP-Service'
         ],
-        price: { USD: '$1,150', EUR: '€1,050', GBP: '£920' }
+        price: { USD: 'Custom Quote', EUR: 'Custom Quote', GBP: 'Custom Quote' }
       }
     ],
     faqs: [
@@ -292,7 +292,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           'Wypustki okluzyjne chroniące dziąsła przed uciskiem',
           'Transfery VIP Lotnisko i Klinika w cenie'
         ],
-        price: { USD: '$590', EUR: '€540', GBP: '£470' }
+        price: { USD: 'Custom Quote', EUR: 'Custom Quote', GBP: 'Custom Quote' }
       },
       {
         name: 'Elastyczna Proteza Nylonowa Valplast (Bezklamrowa)',
@@ -307,7 +307,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           'Idealne dopasowanie koloru do własnego uzębienia',
           'Transfery VIP Lotnisko i Klinika w cenie'
         ],
-        price: { USD: '$690', EUR: '€630', GBP: '£550' }
+        price: { USD: 'Custom Quote', EUR: 'Custom Quote', GBP: 'Custom Quote' }
       },
       {
         name: 'Proteza Bezklamrowa na Zatrzaskach Precyzyjnych',
@@ -322,7 +322,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           'Łatwe wyjmowanie do codziennej higieny',
           '5 Lat Gwarancji Jakości i wsparcie VIP Concierge'
         ],
-        price: { USD: '$1,150', EUR: '€1,050', GBP: '£920' }
+        price: { USD: 'Custom Quote', EUR: 'Custom Quote', GBP: 'Custom Quote' }
       }
     ],
     faqs: [
@@ -360,7 +360,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           'Apoios oclusais para transmissão ideal das forças mastigatórias',
           'Transfers VIP Aeroporto e Clínica incluídos'
         ],
-        price: { USD: '$590', EUR: '€540', GBP: '£470' }
+        price: { USD: 'Custom Quote', EUR: 'Custom Quote', GBP: 'Custom Quote' }
       },
       {
         name: 'Prótese Parcial Flexível Valplast (Invisível)',
@@ -375,7 +375,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           'Excelente integração estética com a dentição natural',
           'Transfers VIP Aeroporto e Clínica incluídos'
         ],
-        price: { USD: '$690', EUR: '€630', GBP: '£550' }
+        price: { USD: 'Custom Quote', EUR: 'Custom Quote', GBP: 'Custom Quote' }
       },
       {
         name: 'Prótese com Encaixes de Precisão (Sem Grampos)',
@@ -390,7 +390,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           'Fácil remoção para limpeza diária',
           '5 Anos de Garantia Clínica e Assistência VIP'
         ],
-        price: { USD: '$1,150', EUR: '€1,050', GBP: '£920' }
+        price: { USD: 'Custom Quote', EUR: 'Custom Quote', GBP: 'Custom Quote' }
       }
     ],
     faqs: [
@@ -428,7 +428,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           'Apoyos oclusales para distribuir la fuerza masticatoria',
           'Traslados VIP Aeropuerto y Clínica incluidos'
         ],
-        price: { USD: '$590', EUR: '€540', GBP: '£470' }
+        price: { USD: 'Custom Quote', EUR: 'Custom Quote', GBP: 'Custom Quote' }
       },
       {
         name: 'Prótesis Parcial Flexible Valplast (Ganchos Invisibles)',
@@ -443,7 +443,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           'Integración natural con las piezas dentales restantes',
           'Traslados VIP Aeropuerto y Clínica incluidos'
         ],
-        price: { USD: '$690', EUR: '€630', GBP: '£550' }
+        price: { USD: 'Custom Quote', EUR: 'Custom Quote', GBP: 'Custom Quote' }
       },
       {
         name: 'Prótesis Parcial con Ataches de Precisión (Sin Ganchos)',
@@ -458,7 +458,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           'Fácilmente removible para una higiene óptima',
           '5 Años de Garantía Clínica y Asistencia VIP'
         ],
-        price: { USD: '$1,150', EUR: '€1,050', GBP: '£920' }
+        price: { USD: 'Custom Quote', EUR: 'Custom Quote', GBP: 'Custom Quote' }
       }
     ],
     faqs: [
@@ -496,7 +496,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           'Окклюзионные накладки для разгрузки десны',
           'VIP-трансфер из аэропорта и клиники включен'
         ],
-        price: { USD: '$590', EUR: '€540', GBP: '£470' }
+        price: { USD: 'Custom Quote', EUR: 'Custom Quote', GBP: 'Custom Quote' }
       },
       {
         name: 'Гибкий нейлоновый протез Valplast (без видимых кламмеров)',
@@ -511,7 +511,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           'Естественная прозрачность и слияние со своими зубами',
           'VIP-трансфер из аэропорта и клиники включен'
         ],
-        price: { USD: '$690', EUR: '€630', GBP: '£550' }
+        price: { USD: 'Custom Quote', EUR: 'Custom Quote', GBP: 'Custom Quote' }
       },
       {
         name: 'Протез на замковых креплениях (аттачменах / без кламмеров)',
@@ -526,7 +526,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           'Легко снимается для ежедневной гигиены',
           '5 лет гарантии качества и VIP-сопровождение'
         ],
-        price: { USD: '$1,150', EUR: '€1,050', GBP: '£920' }
+        price: { USD: 'Custom Quote', EUR: 'Custom Quote', GBP: 'Custom Quote' }
       }
     ],
     faqs: [

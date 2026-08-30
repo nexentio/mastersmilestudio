@@ -184,8 +184,8 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "costIntroTitle1": "Cost of Zygomatic and Pterygoid (Cheekbone) Implants in Turkey:",
     "costIntroTitle2": "Affordable, High-Quality Maxillofacial Treatment at Master Smile Studio, Antalya",
     "costIntroP1": "One of the primary reasons why Turkey has become a leading international destination for zygomatic implants is the significantly lower cost compared to many other countries. Turkey’s dental tourism industry has flourished in recent years, offering high-quality hospital-grade care at a fraction of the price you might find elsewhere.",
-    "costIntroP2": "The cost of zygomatic implants in Turkey, Antalya can vary depending on several factors, such as the experience and qualifications of the dentist, the location of the clinic, and the complexity of the procedure. However, as a general guideline, the cost of a single zygomatic implant in Turkey can range from $2,770 to $5,000 in 2026.",
-    "costIntroP3": "At Master Smile Studio, we offer zygomatic implant treatments at competitive prices without compromising on clinical quality. Our current cost for zygomatic implants is $2,770 USD / 2,350 EUR / 2,050 GBP, subject to change depending on additional procedures such as bone grafting, sinus lift, etc.",
+    "costIntroP2": "The cost of zygomatic implants in Turkey, Antalya can vary depending on several factors, such as the experience and qualifications of the dentist, the location of the clinic, and the complexity of the procedure. However, as a general guideline, the cost of a single zygomatic implant in Turkey can range from VIP Inclusions to VIP Inclusions in 2026.",
+    "costIntroP3": "At Master Smile Studio, we offer zygomatic implant treatments at competitive prices without compromising on clinical quality. Our current cost for zygomatic implants is VIP Inclusions USD / 2,350 EUR / 2,050 GBP, subject to change depending on additional procedures such as bone grafting, sinus lift, etc.",
     "packagesTitle": "Zygomatic & Full-Arch Packages (All-on-4 / All-on-6 / Zygoma)",
     "packagesSubtitle": "All-inclusive packages per jaw featuring certified Straumann, Nobel Biocare, NucleOSS, DXL, Megagen, Neodent, and Hiossen.",
     "durationLabel": "Treatment Duration:",
@@ -199,11 +199,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "NucleOSS (Turkish Brand) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/nucleoss.webp",
-        "price": {
-          "USD": "$6,400",
-          "EUR": "€5,500",
-          "GBP": "£4,700"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "6x NucleOSS (Turkish Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -221,11 +217,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "DXL (German Brand) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/dxl.webp",
-        "price": {
-          "USD": "$7,500",
-          "EUR": "€6,500",
-          "GBP": "£5,600"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "6x DXL (German Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -244,11 +236,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/straumann.webp",
         "popular": true,
-        "price": {
-          "USD": "$11,600",
-          "EUR": "€10,000",
-          "GBP": "£8,600"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "6x Straumann (Swiss Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -266,11 +254,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Megagen (Korean Brand) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/megagen.webp",
-        "price": {
-          "USD": "$8,000",
-          "EUR": "€7,000",
-          "GBP": "£6,000"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "6x Megagen (Korean Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -288,11 +272,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Neodent (Swiss / Straumann Group) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/neodent.webp",
-        "price": {
-          "USD": "$8,000",
-          "EUR": "€7,000",
-          "GBP": "£6,000"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "6x Neodent (Swiss Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -310,11 +290,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Hiossen (American Brand) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/hiossen.webp",
-        "price": {
-          "USD": "$7,700",
-          "EUR": "€6,750",
-          "GBP": "£5,780"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "6x Hiossen (American Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -332,11 +308,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "NucleOSS (Turkish Brand) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/nucleoss.webp",
-        "price": {
-          "USD": "$5,700",
-          "EUR": "€4,900",
-          "GBP": "£4,200"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x NucleOSS (Turkish Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -354,11 +326,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "DXL (German Brand) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/dxl.webp",
-        "price": {
-          "USD": "$6,400",
-          "EUR": "€5,500",
-          "GBP": "£4,750"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x DXL (German Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -376,11 +344,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Straumann (Swiss Brand) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/straumann.webp",
-        "price": {
-          "USD": "$9,300",
-          "EUR": "€8,000",
-          "GBP": "£6,900"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x Straumann (Swiss Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -398,11 +362,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Megagen (Korean Brand) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/megagen.webp",
-        "price": {
-          "USD": "$6,900",
-          "EUR": "€6,000",
-          "GBP": "£5,100"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x Megagen (Korean Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -420,11 +380,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Neodent (Brazilian Brand) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/neodent.webp",
-        "price": {
-          "USD": "$6,900",
-          "EUR": "€6,000",
-          "GBP": "£5,100"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x Neodent (Brazilian Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -442,11 +398,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Hiossen (American Brand) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/hiossen.webp",
-        "price": {
-          "USD": "$6,600",
-          "EUR": "€5,750",
-          "GBP": "£4,900"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x Hiossen (American Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -464,11 +416,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Nobel Biocare / Straumann (2 Zygoma + 2-4 Anterior Implants)",
         "duration": "5-7 Days in Antalya (2 Visits Total)",
         "img": "/packages/straumann.webp",
-        "price": {
-          "USD": "$7,600",
-          "EUR": "€6,900",
-          "GBP": "£5,950"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "2x Extra-long Zygomatic Implants (NobelZygoma / Southern)",
           "2–4x Standard Anterior Titanium Implants",
@@ -486,11 +434,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "4 Zygomatic Implants (For 100% Maxillary Bone Loss)",
         "duration": "5-7 Days in Antalya (2 Visits Total)",
         "img": "/packages/dxl.webp",
-        "price": {
-          "USD": "$9,800",
-          "EUR": "€8,900",
-          "GBP": "£7,700"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x Extra-long Zygomatic Implants (Bilateral Cheekbone Anchors)",
           "Complete elimination of bone grafts and 18-month wait times",
@@ -739,11 +683,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "NucleOSS (Türk Markası) Dental İmplant",
         "duration": "3+7 İş Günü (2 Ziyaret)",
         "img": "/packages/nucleoss.webp",
-        "price": {
-          "USD": "$6,400",
-          "EUR": "€5,500",
-          "GBP": "£4,700"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "6x NucleOSS Dental İmplant",
           "24 saat içinde 12x Sabit Geçici Diş",
@@ -761,11 +701,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "DXL (Alman Markası) Dental İmplant",
         "duration": "3+7 İş Günü (2 Ziyaret)",
         "img": "/packages/dxl.webp",
-        "price": {
-          "USD": "$7,500",
-          "EUR": "€6,500",
-          "GBP": "£5,600"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "6x DXL (Alman Menşeli) Dental İmplant",
           "24 saat içinde 12x Sabit Geçici Diş",
@@ -784,11 +720,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "duration": "3+7 İş Günü (2 Ziyaret)",
         "img": "/packages/straumann.webp",
         "popular": true,
-        "price": {
-          "USD": "$11,600",
-          "EUR": "€10,000",
-          "GBP": "£8,600"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "6x Straumann (İsviçre) Dental İmplant",
           "24 saat içinde 12x Sabit Geçici Diş",
@@ -806,11 +738,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Megagen (Kore Markası) Dental İmplant",
         "duration": "3+7 İş Günü (2 Ziyaret)",
         "img": "/packages/megagen.webp",
-        "price": {
-          "USD": "$8,000",
-          "EUR": "€7,000",
-          "GBP": "£6,000"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "6x Megagen (Kore Menşeli) Dental İmplant",
           "24 saat içinde 12x Sabit Geçici Diş",
@@ -828,11 +756,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Neodent (İsviçre / Straumann Grubu) Dental İmplant",
         "duration": "3+7 İş Günü (2 Ziyaret)",
         "img": "/packages/neodent.webp",
-        "price": {
-          "USD": "$8,000",
-          "EUR": "€7,000",
-          "GBP": "£6,000"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "6x Neodent (İsviçre Grubu) Dental İmplant",
           "24 saat içinde 12x Sabit Geçici Diş",
@@ -850,11 +774,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Hiossen (Amerikan Markası) Dental İmplant",
         "duration": "3+7 İş Günü (2 Ziyaret)",
         "img": "/packages/hiossen.webp",
-        "price": {
-          "USD": "$7,700",
-          "EUR": "€6,750",
-          "GBP": "£5,780"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "6x Hiossen (Amerikan Menşeli) Dental İmplant",
           "24 saat içinde 12x Sabit Geçici Diş",
@@ -872,11 +792,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "NucleOSS (Türk Markası) Dental İmplant",
         "duration": "3+7 İş Günü (2 Ziyaret)",
         "img": "/packages/nucleoss.webp",
-        "price": {
-          "USD": "$5,700",
-          "EUR": "€4,900",
-          "GBP": "£4,200"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x NucleOSS (Türk Menşeli) Dental İmplant",
           "24 saat içinde 12x Sabit Geçici Diş",
@@ -894,11 +810,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "DXL (Alman Markası) Dental İmplant",
         "duration": "3+7 İş Günü (2 Ziyaret)",
         "img": "/packages/dxl.webp",
-        "price": {
-          "USD": "$6,400",
-          "EUR": "€5,500",
-          "GBP": "£4,750"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x DXL (Alman Menşeli) Dental İmplant",
           "24 saat içinde 12x Sabit Geçici Diş",
@@ -916,11 +828,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Straumann (İsviçre Markası) Dental İmplant",
         "duration": "3+7 İş Günü (2 Ziyaret)",
         "img": "/packages/straumann.webp",
-        "price": {
-          "USD": "$9,300",
-          "EUR": "€8,000",
-          "GBP": "£6,900"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x Straumann (İsviçre) Dental İmplant",
           "24 saat içinde 12x Sabit Geçici Diş",
@@ -938,11 +846,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Megagen (Kore Markası) Dental İmplant",
         "duration": "3+7 İş Günü (2 Ziyaret)",
         "img": "/packages/megagen.webp",
-        "price": {
-          "USD": "$6,900",
-          "EUR": "€6,000",
-          "GBP": "£5,100"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x Megagen (Kore Menşeli) Dental İmplant",
           "24 saat içinde 12x Sabit Geçici Diş",
@@ -960,11 +864,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Neodent (Brezilya / Straumann) Dental İmplant",
         "duration": "3+7 İş Günü (2 Ziyaret)",
         "img": "/packages/neodent.webp",
-        "price": {
-          "USD": "$6,900",
-          "EUR": "€6,000",
-          "GBP": "£5,100"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x Neodent (Brezilya Grubu) Dental İmplant",
           "24 saat içinde 12x Sabit Geçici Diş",
@@ -982,11 +882,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Hiossen (Amerikan Markası) Dental İmplant",
         "duration": "3+7 İş Günü (2 Ziyaret)",
         "img": "/packages/hiossen.webp",
-        "price": {
-          "USD": "$6,600",
-          "EUR": "€5,750",
-          "GBP": "£4,900"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x Hiossen (Amerikan Menşeli) Dental İmplant",
           "24 saat içinde 12x Sabit Geçici Diş",
@@ -1004,11 +900,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Nobel Biocare / Straumann (2 Zigoma + 2-4 Standart İmplant)",
         "duration": "5-7 Gün (Toplam 2 Ziyaret)",
         "img": "/packages/straumann.webp",
-        "price": {
-          "USD": "$7,600",
-          "EUR": "€6,900",
-          "GBP": "£5,950"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "2x Özel Uzunlukta Zigoma İmplantı (NobelZygoma / Southern)",
           "2–4x Ön Bölge Standart Titanyum İmplant",
@@ -1026,11 +918,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "4 Zigoma İmplantı (%100 Üst Çene Kemik Erimesi)",
         "duration": "5-7 Gün (Toplam 2 Ziyaret)",
         "img": "/packages/dxl.webp",
-        "price": {
-          "USD": "$9,800",
-          "EUR": "€8,900",
-          "GBP": "£7,700"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x Çift Taraflı Elmacık Kemiğine Sabitlenen Zigoma İmplantı",
           "Kemik naklini ve 18 aylık bekleme süresini tamamen sıfırlar",
@@ -1264,7 +1152,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "costIntroTitle1": "Kosten für Zygoma- und Pterygoid-Implantate in der Türkei:",
     "costIntroTitle2": "Erschwingliche, erstklassige Behandlung bei Master Smile Studio, Antalya",
     "costIntroP1": "Einer der Hauptgründe für den Erfolg der Türkei bei Zygoma-Implantaten sind die deutlich geringeren Kosten bei höchster chirurgischer Qualität.",
-    "costIntroP2": "Die Kosten für ein einzelnes Zygoma-Implantat in der Türkei liegen 2026 zwischen 2.350 € und 4.500 $.",
+    "costIntroP2": "Die Kosten für ein einzelnes Zygoma-Implantat in der Türkei liegen 2026 zwischen 2.350 € und 4.500 VIP Inclusions",
     "costIntroP3": "Bei Master Smile Studio beträgt der Preis pro Zygoma-Implantat 2.350 EUR / 2.770 USD / 2.050 GBP inklusive 3D-Planung und OP-Saal.",
     "packagesTitle": "Zygoma & All-on-Pakete & Währungsrechner",
     "packagesSubtitle": "All-inclusive packages per jaw featuring certified Straumann, Nobel Biocare, NucleOSS, DXL, Megagen, Neodent, and Hiossen.",
@@ -1279,11 +1167,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "NucleOSS (Turkish Brand) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/nucleoss.webp",
-        "price": {
-          "USD": "$6,400",
-          "EUR": "€5,500",
-          "GBP": "£4,700"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "6x NucleOSS (Turkish Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -1301,11 +1185,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "DXL (German Brand) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/dxl.webp",
-        "price": {
-          "USD": "$7,500",
-          "EUR": "€6,500",
-          "GBP": "£5,600"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "6x DXL (German Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -1324,11 +1204,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/straumann.webp",
         "popular": true,
-        "price": {
-          "USD": "$11,600",
-          "EUR": "€10,000",
-          "GBP": "£8,600"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "6x Straumann (Swiss Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -1346,11 +1222,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Megagen (Korean Brand) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/megagen.webp",
-        "price": {
-          "USD": "$8,000",
-          "EUR": "€7,000",
-          "GBP": "£6,000"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "6x Megagen (Korean Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -1368,11 +1240,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Neodent (Swiss / Straumann Group) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/neodent.webp",
-        "price": {
-          "USD": "$8,000",
-          "EUR": "€7,000",
-          "GBP": "£6,000"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "6x Neodent (Swiss Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -1390,11 +1258,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Hiossen (American Brand) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/hiossen.webp",
-        "price": {
-          "USD": "$7,700",
-          "EUR": "€6,750",
-          "GBP": "£5,780"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "6x Hiossen (American Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -1412,11 +1276,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "NucleOSS (Turkish Brand) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/nucleoss.webp",
-        "price": {
-          "USD": "$5,700",
-          "EUR": "€4,900",
-          "GBP": "£4,200"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x NucleOSS (Turkish Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -1434,11 +1294,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "DXL (German Brand) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/dxl.webp",
-        "price": {
-          "USD": "$6,400",
-          "EUR": "€5,500",
-          "GBP": "£4,750"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x DXL (German Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -1456,11 +1312,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Straumann (Swiss Brand) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/straumann.webp",
-        "price": {
-          "USD": "$9,300",
-          "EUR": "€8,000",
-          "GBP": "£6,900"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x Straumann (Swiss Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -1478,11 +1330,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Megagen (Korean Brand) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/megagen.webp",
-        "price": {
-          "USD": "$6,900",
-          "EUR": "€6,000",
-          "GBP": "£5,100"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x Megagen (Korean Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -1500,11 +1348,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Neodent (Brazilian Brand) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/neodent.webp",
-        "price": {
-          "USD": "$6,900",
-          "EUR": "€6,000",
-          "GBP": "£5,100"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x Neodent (Brazilian Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -1522,11 +1366,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Hiossen (American Brand) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/hiossen.webp",
-        "price": {
-          "USD": "$6,600",
-          "EUR": "€5,750",
-          "GBP": "£4,900"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x Hiossen (American Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -1544,11 +1384,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Nobel Biocare / Straumann (2 Zygoma + 2-4 Anterior Implants)",
         "duration": "5-7 Days in Antalya (2 Visits Total)",
         "img": "/packages/straumann.webp",
-        "price": {
-          "USD": "$7,600",
-          "EUR": "€6,900",
-          "GBP": "£5,950"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "2x Extra-long Zygomatic Implants (NobelZygoma / Southern)",
           "2–4x Standard Anterior Titanium Implants",
@@ -1566,11 +1402,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "4 Zygomatic Implants (For 100% Maxillary Bone Loss)",
         "duration": "5-7 Days in Antalya (2 Visits Total)",
         "img": "/packages/dxl.webp",
-        "price": {
-          "USD": "$9,800",
-          "EUR": "€8,900",
-          "GBP": "£7,700"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x Extra-long Zygomatic Implants (Bilateral Cheekbone Anchors)",
           "Complete elimination of bone grafts and 18-month wait times",
@@ -1804,7 +1636,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "costIntroTitle1": "Koszt implantów jarzmowych Zygoma w Turcji:",
     "costIntroTitle2": "Dostępne leczenie najwyższej jakości w Master Smile Studio, Antalya",
     "costIntroP1": "Głównym powodem popularności Turcji w zabiegach Zygoma są koszty niższe nawet o 70% w porównaniu do Europy Zachodniej.",
-    "costIntroP2": "Koszt pojedynczego implantu jarzmowego w Turcji w 2026 r. wynosi od 2 350 € do 4 500 $.",
+    "costIntroP2": "Koszt pojedynczego implantu jarzmowego w Turcji w 2026 r. wynosi od 2 350 € do 4 500 VIP Inclusions",
     "costIntroP3": "W Master Smile Studio koszt implantu jarzmowego wynosi 2 350 EUR / 2 770 USD / 2 050 GBP z pełnym pakietem diagnostycznym.",
     "packagesTitle": "Pakiety Implantów Zygoma i Przelicznik Walut",
     "packagesSubtitle": "All-inclusive packages per jaw featuring certified Straumann, Nobel Biocare, NucleOSS, DXL, Megagen, Neodent, and Hiossen.",
@@ -1819,11 +1651,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "NucleOSS (Turkish Brand) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/nucleoss.webp",
-        "price": {
-          "USD": "$6,400",
-          "EUR": "€5,500",
-          "GBP": "£4,700"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "6x NucleOSS (Turkish Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -1841,11 +1669,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "DXL (German Brand) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/dxl.webp",
-        "price": {
-          "USD": "$7,500",
-          "EUR": "€6,500",
-          "GBP": "£5,600"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "6x DXL (German Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -1864,11 +1688,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/straumann.webp",
         "popular": true,
-        "price": {
-          "USD": "$11,600",
-          "EUR": "€10,000",
-          "GBP": "£8,600"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "6x Straumann (Swiss Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -1886,11 +1706,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Megagen (Korean Brand) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/megagen.webp",
-        "price": {
-          "USD": "$8,000",
-          "EUR": "€7,000",
-          "GBP": "£6,000"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "6x Megagen (Korean Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -1908,11 +1724,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Neodent (Swiss / Straumann Group) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/neodent.webp",
-        "price": {
-          "USD": "$8,000",
-          "EUR": "€7,000",
-          "GBP": "£6,000"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "6x Neodent (Swiss Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -1930,11 +1742,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Hiossen (American Brand) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/hiossen.webp",
-        "price": {
-          "USD": "$7,700",
-          "EUR": "€6,750",
-          "GBP": "£5,780"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "6x Hiossen (American Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -1952,11 +1760,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "NucleOSS (Turkish Brand) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/nucleoss.webp",
-        "price": {
-          "USD": "$5,700",
-          "EUR": "€4,900",
-          "GBP": "£4,200"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x NucleOSS (Turkish Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -1974,11 +1778,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "DXL (German Brand) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/dxl.webp",
-        "price": {
-          "USD": "$6,400",
-          "EUR": "€5,500",
-          "GBP": "£4,750"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x DXL (German Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -1996,11 +1796,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Straumann (Swiss Brand) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/straumann.webp",
-        "price": {
-          "USD": "$9,300",
-          "EUR": "€8,000",
-          "GBP": "£6,900"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x Straumann (Swiss Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -2018,11 +1814,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Megagen (Korean Brand) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/megagen.webp",
-        "price": {
-          "USD": "$6,900",
-          "EUR": "€6,000",
-          "GBP": "£5,100"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x Megagen (Korean Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -2040,11 +1832,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Neodent (Brazilian Brand) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/neodent.webp",
-        "price": {
-          "USD": "$6,900",
-          "EUR": "€6,000",
-          "GBP": "£5,100"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x Neodent (Brazilian Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -2062,11 +1850,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Hiossen (American Brand) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/hiossen.webp",
-        "price": {
-          "USD": "$6,600",
-          "EUR": "€5,750",
-          "GBP": "£4,900"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x Hiossen (American Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -2084,11 +1868,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Nobel Biocare / Straumann (2 Zygoma + 2-4 Anterior Implants)",
         "duration": "5-7 Days in Antalya (2 Visits Total)",
         "img": "/packages/straumann.webp",
-        "price": {
-          "USD": "$7,600",
-          "EUR": "€6,900",
-          "GBP": "£5,950"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "2x Extra-long Zygomatic Implants (NobelZygoma / Southern)",
           "2–4x Standard Anterior Titanium Implants",
@@ -2106,11 +1886,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "4 Zygomatic Implants (For 100% Maxillary Bone Loss)",
         "duration": "5-7 Days in Antalya (2 Visits Total)",
         "img": "/packages/dxl.webp",
-        "price": {
-          "USD": "$9,800",
-          "EUR": "€8,900",
-          "GBP": "£7,700"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x Extra-long Zygomatic Implants (Bilateral Cheekbone Anchors)",
           "Complete elimination of bone grafts and 18-month wait times",
@@ -2344,7 +2120,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "costIntroTitle1": "Custo dos Implantes Zigomáticos na Turquia:",
     "costIntroTitle2": "Tratamento de Alta Qualidade e Acessível no Master Smile Studio, Antalya",
     "costIntroP1": "Um dos principais motivos pelos quais a Turquia é referência em implantes zigomáticos é o custo significativamente inferior com padrões hospitalares.",
-    "costIntroP2": "O custo de um implante zigomático na Turquia em 2026 varia entre 2.350 € e 4.500 $.",
+    "costIntroP2": "O custo de um implante zigomático na Turquia em 2026 varia entre 2.350 € e 4.500 VIP Inclusions",
     "costIntroP3": "No Master Smile Studio o custo unitário é de 2.350 EUR / 2.770 USD / 2.050 GBP com planejamento 3D e bloco cirúrgico incluídos.",
     "packagesTitle": "Pacotes Zigomáticos e Conversor de Moedas",
     "packagesSubtitle": "All-inclusive packages per jaw featuring certified Straumann, Nobel Biocare, NucleOSS, DXL, Megagen, Neodent, and Hiossen.",
@@ -2359,11 +2135,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "NucleOSS (Turkish Brand) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/nucleoss.webp",
-        "price": {
-          "USD": "$6,400",
-          "EUR": "€5,500",
-          "GBP": "£4,700"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "6x NucleOSS (Turkish Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -2381,11 +2153,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "DXL (German Brand) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/dxl.webp",
-        "price": {
-          "USD": "$7,500",
-          "EUR": "€6,500",
-          "GBP": "£5,600"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "6x DXL (German Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -2404,11 +2172,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/straumann.webp",
         "popular": true,
-        "price": {
-          "USD": "$11,600",
-          "EUR": "€10,000",
-          "GBP": "£8,600"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "6x Straumann (Swiss Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -2426,11 +2190,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Megagen (Korean Brand) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/megagen.webp",
-        "price": {
-          "USD": "$8,000",
-          "EUR": "€7,000",
-          "GBP": "£6,000"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "6x Megagen (Korean Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -2448,11 +2208,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Neodent (Swiss / Straumann Group) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/neodent.webp",
-        "price": {
-          "USD": "$8,000",
-          "EUR": "€7,000",
-          "GBP": "£6,000"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "6x Neodent (Swiss Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -2470,11 +2226,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Hiossen (American Brand) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/hiossen.webp",
-        "price": {
-          "USD": "$7,700",
-          "EUR": "€6,750",
-          "GBP": "£5,780"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "6x Hiossen (American Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -2492,11 +2244,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "NucleOSS (Turkish Brand) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/nucleoss.webp",
-        "price": {
-          "USD": "$5,700",
-          "EUR": "€4,900",
-          "GBP": "£4,200"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x NucleOSS (Turkish Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -2514,11 +2262,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "DXL (German Brand) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/dxl.webp",
-        "price": {
-          "USD": "$6,400",
-          "EUR": "€5,500",
-          "GBP": "£4,750"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x DXL (German Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -2536,11 +2280,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Straumann (Swiss Brand) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/straumann.webp",
-        "price": {
-          "USD": "$9,300",
-          "EUR": "€8,000",
-          "GBP": "£6,900"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x Straumann (Swiss Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -2558,11 +2298,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Megagen (Korean Brand) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/megagen.webp",
-        "price": {
-          "USD": "$6,900",
-          "EUR": "€6,000",
-          "GBP": "£5,100"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x Megagen (Korean Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -2580,11 +2316,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Neodent (Brazilian Brand) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/neodent.webp",
-        "price": {
-          "USD": "$6,900",
-          "EUR": "€6,000",
-          "GBP": "£5,100"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x Neodent (Brazilian Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -2602,11 +2334,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Hiossen (American Brand) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/hiossen.webp",
-        "price": {
-          "USD": "$6,600",
-          "EUR": "€5,750",
-          "GBP": "£4,900"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x Hiossen (American Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -2624,11 +2352,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Nobel Biocare / Straumann (2 Zygoma + 2-4 Anterior Implants)",
         "duration": "5-7 Days in Antalya (2 Visits Total)",
         "img": "/packages/straumann.webp",
-        "price": {
-          "USD": "$7,600",
-          "EUR": "€6,900",
-          "GBP": "£5,950"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "2x Extra-long Zygomatic Implants (NobelZygoma / Southern)",
           "2–4x Standard Anterior Titanium Implants",
@@ -2646,11 +2370,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "4 Zygomatic Implants (For 100% Maxillary Bone Loss)",
         "duration": "5-7 Days in Antalya (2 Visits Total)",
         "img": "/packages/dxl.webp",
-        "price": {
-          "USD": "$9,800",
-          "EUR": "€8,900",
-          "GBP": "£7,700"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x Extra-long Zygomatic Implants (Bilateral Cheekbone Anchors)",
           "Complete elimination of bone grafts and 18-month wait times",
@@ -2884,7 +2604,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "costIntroTitle1": "Coste de los Implantes Cigomáticos en Turquía:",
     "costIntroTitle2": "Tratamiento de Máxima Calidad en Master Smile Studio, Antalya",
     "costIntroP1": "Una de las principales razones del éxito de Turquía en implantes cigomáticos es el ahorro de hasta un 70% respecto a otros países.",
-    "costIntroP2": "El coste de un implante cigomático en Turquía en 2026 oscila entre 2.350 € ve 4.500 $.",
+    "costIntroP2": "El coste de un implante cigomático en Turquía en 2026 oscila entre 2.350 € ve 4.500 VIP Inclusions",
     "costIntroP3": "En Master Smile Studio el precio por implante cigomático es de 2.350 EUR / 2.770 USD / 2.050 GBP con quirófano y diagnóstico 3D incluidos.",
     "packagesTitle": "Paquetes Cigomáticos ve Conversor de Divisas",
     "packagesSubtitle": "All-inclusive packages per jaw featuring certified Straumann, Nobel Biocare, NucleOSS, DXL, Megagen, Neodent, and Hiossen.",
@@ -2899,11 +2619,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "NucleOSS (Turkish Brand) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/nucleoss.webp",
-        "price": {
-          "USD": "$6,400",
-          "EUR": "€5,500",
-          "GBP": "£4,700"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "6x NucleOSS (Turkish Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -2921,11 +2637,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "DXL (German Brand) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/dxl.webp",
-        "price": {
-          "USD": "$7,500",
-          "EUR": "€6,500",
-          "GBP": "£5,600"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "6x DXL (German Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -2944,11 +2656,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/straumann.webp",
         "popular": true,
-        "price": {
-          "USD": "$11,600",
-          "EUR": "€10,000",
-          "GBP": "£8,600"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "6x Straumann (Swiss Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -2966,11 +2674,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Megagen (Korean Brand) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/megagen.webp",
-        "price": {
-          "USD": "$8,000",
-          "EUR": "€7,000",
-          "GBP": "£6,000"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "6x Megagen (Korean Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -2988,11 +2692,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Neodent (Swiss / Straumann Group) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/neodent.webp",
-        "price": {
-          "USD": "$8,000",
-          "EUR": "€7,000",
-          "GBP": "£6,000"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "6x Neodent (Swiss Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -3010,11 +2710,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Hiossen (American Brand) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/hiossen.webp",
-        "price": {
-          "USD": "$7,700",
-          "EUR": "€6,750",
-          "GBP": "£5,780"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "6x Hiossen (American Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -3032,11 +2728,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "NucleOSS (Turkish Brand) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/nucleoss.webp",
-        "price": {
-          "USD": "$5,700",
-          "EUR": "€4,900",
-          "GBP": "£4,200"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x NucleOSS (Turkish Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -3054,11 +2746,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "DXL (German Brand) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/dxl.webp",
-        "price": {
-          "USD": "$6,400",
-          "EUR": "€5,500",
-          "GBP": "£4,750"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x DXL (German Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -3076,11 +2764,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Straumann (Swiss Brand) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/straumann.webp",
-        "price": {
-          "USD": "$9,300",
-          "EUR": "€8,000",
-          "GBP": "£6,900"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x Straumann (Swiss Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -3098,11 +2782,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Megagen (Korean Brand) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/megagen.webp",
-        "price": {
-          "USD": "$6,900",
-          "EUR": "€6,000",
-          "GBP": "£5,100"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x Megagen (Korean Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -3120,11 +2800,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Neodent (Brazilian Brand) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/neodent.webp",
-        "price": {
-          "USD": "$6,900",
-          "EUR": "€6,000",
-          "GBP": "£5,100"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x Neodent (Brazilian Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -3142,11 +2818,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Hiossen (American Brand) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/hiossen.webp",
-        "price": {
-          "USD": "$6,600",
-          "EUR": "€5,750",
-          "GBP": "£4,900"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x Hiossen (American Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -3164,11 +2836,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Nobel Biocare / Straumann (2 Zygoma + 2-4 Anterior Implants)",
         "duration": "5-7 Days in Antalya (2 Visits Total)",
         "img": "/packages/straumann.webp",
-        "price": {
-          "USD": "$7,600",
-          "EUR": "€6,900",
-          "GBP": "£5,950"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "2x Extra-long Zygomatic Implants (NobelZygoma / Southern)",
           "2–4x Standard Anterior Titanium Implants",
@@ -3186,11 +2854,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "4 Zygomatic Implants (For 100% Maxillary Bone Loss)",
         "duration": "5-7 Days in Antalya (2 Visits Total)",
         "img": "/packages/dxl.webp",
-        "price": {
-          "USD": "$9,800",
-          "EUR": "€8,900",
-          "GBP": "£7,700"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x Extra-long Zygomatic Implants (Bilateral Cheekbone Anchors)",
           "Complete elimination of bone grafts and 18-month wait times",
@@ -3424,7 +3088,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "costIntroTitle1": "Стоимость скуловых имплантов Zygoma в Турции:",
     "costIntroTitle2": "Доступное лечение премиум-класса в Master Smile Studio, Анталья",
     "costIntroP1": "Главная причина популярности Турции в скуловой имплантации — доступные цены при высочайших госпитальных стандартах хирургии.",
-    "costIntroP2": "Стоимость одного скулового импланта в Турции в 2026 году составляет от 2 350 € до 4 500 $.",
+    "costIntroP2": "Стоимость одного скулового импланта в Турции в 2026 году составляет от 2 350 € до 4 500 VIP Inclusions",
     "costIntroP3": "В Master Smile Studio цена одного скулового импланта составляет 2 350 EUR / 2 770 USD / 2 050 GBP включая 3D-планирование и операционный блок.",
     "packagesTitle": "Пакеты Скуловой Имплантации и Калькулятор Валют",
     "packagesSubtitle": "All-inclusive packages per jaw featuring certified Straumann, Nobel Biocare, NucleOSS, DXL, Megagen, Neodent, and Hiossen.",
@@ -3439,11 +3103,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "NucleOSS (Turkish Brand) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/nucleoss.webp",
-        "price": {
-          "USD": "$6,400",
-          "EUR": "€5,500",
-          "GBP": "£4,700"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "6x NucleOSS (Turkish Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -3461,11 +3121,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "DXL (German Brand) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/dxl.webp",
-        "price": {
-          "USD": "$7,500",
-          "EUR": "€6,500",
-          "GBP": "£5,600"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "6x DXL (German Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -3484,11 +3140,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/straumann.webp",
         "popular": true,
-        "price": {
-          "USD": "$11,600",
-          "EUR": "€10,000",
-          "GBP": "£8,600"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "6x Straumann (Swiss Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -3506,11 +3158,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Megagen (Korean Brand) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/megagen.webp",
-        "price": {
-          "USD": "$8,000",
-          "EUR": "€7,000",
-          "GBP": "£6,000"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "6x Megagen (Korean Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -3528,11 +3176,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Neodent (Swiss / Straumann Group) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/neodent.webp",
-        "price": {
-          "USD": "$8,000",
-          "EUR": "€7,000",
-          "GBP": "£6,000"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "6x Neodent (Swiss Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -3550,11 +3194,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Hiossen (American Brand) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/hiossen.webp",
-        "price": {
-          "USD": "$7,700",
-          "EUR": "€6,750",
-          "GBP": "£5,780"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "6x Hiossen (American Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -3572,11 +3212,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "NucleOSS (Turkish Brand) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/nucleoss.webp",
-        "price": {
-          "USD": "$5,700",
-          "EUR": "€4,900",
-          "GBP": "£4,200"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x NucleOSS (Turkish Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -3594,11 +3230,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "DXL (German Brand) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/dxl.webp",
-        "price": {
-          "USD": "$6,400",
-          "EUR": "€5,500",
-          "GBP": "£4,750"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x DXL (German Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -3616,11 +3248,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Straumann (Swiss Brand) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/straumann.webp",
-        "price": {
-          "USD": "$9,300",
-          "EUR": "€8,000",
-          "GBP": "£6,900"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x Straumann (Swiss Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -3638,11 +3266,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Megagen (Korean Brand) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/megagen.webp",
-        "price": {
-          "USD": "$6,900",
-          "EUR": "€6,000",
-          "GBP": "£5,100"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x Megagen (Korean Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -3660,11 +3284,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Neodent (Brazilian Brand) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/neodent.webp",
-        "price": {
-          "USD": "$6,900",
-          "EUR": "€6,000",
-          "GBP": "£5,100"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x Neodent (Brazilian Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -3682,11 +3302,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Hiossen (American Brand) Dental Implants",
         "duration": "3+7 Working Days (2 Visits)",
         "img": "/packages/hiossen.webp",
-        "price": {
-          "USD": "$6,600",
-          "EUR": "€5,750",
-          "GBP": "£4,900"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x Hiossen (American Brand) Dental Implants",
           "12x Fixed Temporary Teeth in 24 hours",
@@ -3704,11 +3320,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "Nobel Biocare / Straumann (2 Zygoma + 2-4 Anterior Implants)",
         "duration": "5-7 Days in Antalya (2 Visits Total)",
         "img": "/packages/straumann.webp",
-        "price": {
-          "USD": "$7,600",
-          "EUR": "€6,900",
-          "GBP": "£5,950"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "2x Extra-long Zygomatic Implants (NobelZygoma / Southern)",
           "2–4x Standard Anterior Titanium Implants",
@@ -3726,11 +3338,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         "brand": "4 Zygomatic Implants (For 100% Maxillary Bone Loss)",
         "duration": "5-7 Days in Antalya (2 Visits Total)",
         "img": "/packages/dxl.webp",
-        "price": {
-          "USD": "$9,800",
-          "EUR": "€8,900",
-          "GBP": "£7,700"
-        },
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "included": [
           "4x Extra-long Zygomatic Implants (Bilateral Cheekbone Anchors)",
           "Complete elimination of bone grafts and 18-month wait times",
@@ -4157,9 +3765,9 @@ export default function ZygomaticImplantDetailView() {
 
                 <div className={styles.pkgFooter}>
                   <div className={styles.pkgPriceRow}>
-                    <span className={styles.pkgPriceLabel}>{d.pricePerArchLabel}</span>
-                    <strong className={styles.pkgPriceValue}>
-                      {pkg.price[currency]}
+                    <span className={styles.pkgPriceLabel}>{locale === 'tr' ? 'VIP Paket Kapsamı' : 'VIP All-Inclusive'}</span>
+                    <strong className={styles.pkgPriceValue} style={{ fontSize: '0.95rem', color: '#059669', fontWeight: '700' }}>
+                      {locale === 'tr' ? 'Kişiye Özel Fiyat Teklifi' : 'Personalized VIP Quote'}
                     </strong>
                   </div>
 

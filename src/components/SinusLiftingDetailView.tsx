@@ -67,11 +67,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Lifetime bone stability warranty certification",
           "VIP Mercedes Airport & Clinic transfers included"
         ],
-        "price": {
-          "USD": "$320",
-          "EUR": "€290",
-          "GBP": "£250"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Open Lateral Window Sinus Lift (1 Side)",
@@ -87,11 +83,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Dedicated international patient coordinator assistance",
           "VIP Private Transfers (Airport - Hotel - Clinic)"
         ],
-        "price": {
-          "USD": "$520",
-          "EUR": "€475",
-          "GBP": "£410"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Bilateral Open Sinus Lift (Both Sides)",
@@ -106,11 +98,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Complete post-op medication & recovery kit",
           "VIP Mercedes Chauffeur Transfers + 4-Star Hotel Stay"
         ],
-        "price": {
-          "USD": "$980",
-          "EUR": "€890",
-          "GBP": "£770"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Sinus Lift + 2 Straumann Implants Package",
@@ -125,11 +113,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Lifetime Global Straumann Guarantee Passport",
           "VIP Airport Transfers + 4-Star Central Hotel"
         ],
-        "price": {
-          "USD": "$1,950",
-          "EUR": "€1,790",
-          "GBP": "£1,550"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Sinus Lift + 4 Nobel Implants Upper Arch",
@@ -144,11 +128,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Lifetime Global Nobel Biocare Warranty Passport",
           "VIP Mercedes Transfers + 5-Star Central Hotel Stay"
         ],
-        "price": {
-          "USD": "$3,850",
-          "EUR": "€3,490",
-          "GBP": "£2,990"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Full Upper Arch Reconstruction & 6 Implants",
@@ -164,11 +144,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Lifetime Global Warranty Passport",
           "VIP Mercedes Transfers + 5-Star Luxury Accommodation"
         ],
-        "price": {
-          "USD": "$5,950",
-          "EUR": "€5,450",
-          "GBP": "£4,690"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -370,11 +346,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Ömür Boyu Kemik Entegrasyon Güvencesi",
           "VIP Mercedes Havalimanı & Klinik transferleri dahil"
         ],
-        "price": {
-          "USD": "$320",
-          "EUR": "€290",
-          "GBP": "£250"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Açık Sinüs Lifting (Lateral Pencere - Tek Taraf)",
@@ -390,11 +362,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Özel uluslararası hasta koordinatörü desteği",
           "VIP Özel Transferler (Havalimanı - Otel - Klinik)"
         ],
-        "price": {
-          "USD": "$520",
-          "EUR": "€475",
-          "GBP": "£410"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Çift Taraflı Açık Sinüs Lifting (Bilateral)",
@@ -409,11 +377,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Eksiksiz ameliyat sonrası ilaç ve iyileşme paketi",
           "VIP Mercedes Şoförlü Transferler + 4 Yıldızlı Otel Konaklaması"
         ],
-        "price": {
-          "USD": "$980",
-          "EUR": "€890",
-          "GBP": "£770"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Sinüs Lifting + 2 Straumann İmplant Paketi",
@@ -428,11 +392,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Ömür Boyu Global Straumann Garanti Pasaportu",
           "VIP Havalimanı Transferleri + 4 Yıldızlı Merkezi Otel"
         ],
-        "price": {
-          "USD": "$1,950",
-          "EUR": "€1,790",
-          "GBP": "£1,550"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Sinüs Lifting + 4 Nobel İmplant Üst Çene",
@@ -447,11 +407,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Ömür Boyu Global Nobel Biocare Garanti Pasaportu",
           "VIP Mercedes Transferleri + 5 Yıldızlı Merkezi Otel Konaklaması"
         ],
-        "price": {
-          "USD": "$3,850",
-          "EUR": "€3,490",
-          "GBP": "£2,990"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Tam Üst Çene Kemik Yapımı & 6 İmplant Paketi",
@@ -467,11 +423,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Ömür Boyu Global Garanti Pasaportu",
           "VIP Mercedes Özel Şoför + 5 Yıldızlı Lüks Konaklama"
         ],
-        "price": {
-          "USD": "$5,950",
-          "EUR": "€5,450",
-          "GBP": "£4,690"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -638,11 +590,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Certyfikat dożywotniej stabilności integracji kostnej",
           "Prywatne transfery VIP Mercedes (Lotnisko - Klinika - Hotel) w cenie"
         ],
-        "price": {
-          "USD": "$320",
-          "EUR": "€290",
-          "GBP": "£250"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Otwarty Sinus Lift (Okno Boczne - 1 Strona)",
@@ -658,11 +606,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Dedykowany polskojęzyczny koordynator pacjenta przez cały pobyt",
           "Prywatne transfery VIP Mercedes na każdym etapie leczenia"
         ],
-        "price": {
-          "USD": "$520",
-          "EUR": "€475",
-          "GBP": "£410"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Obustronny Otwarty Sinus Lift (Bilateralny)",
@@ -677,11 +621,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Kompletny zestaw pozabiegowych leków i regeneracji pozabiegowej",
           "Transfery szoferem VIP Mercedes + Zakwaterowanie w 4-gwiazdkowym hotelu"
         ],
-        "price": {
-          "USD": "$980",
-          "EUR": "€890",
-          "GBP": "£770"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Pakiet Sinus Lift + 2 Implanty Straumann",
@@ -696,11 +636,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Dożywotni Międzynarodowy Paszport Gwarancyjny Straumann",
           "Transfery lotniskowe VIP + Hotel w centrum Antalyi"
         ],
-        "price": {
-          "USD": "$1,950",
-          "EUR": "€1,790",
-          "GBP": "£1,550"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Pakiet Sinus Lift + 4 Implanty Nobel Biocare",
@@ -715,11 +651,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Dożywotnia Globalna Gwarancja Nobel Biocare",
           "Prywatny szofer VIP Mercedes + Hotel 5-gwiazdkowy"
         ],
-        "price": {
-          "USD": "$3,850",
-          "EUR": "€3,490",
-          "GBP": "£2,990"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Pełna Rekonstrukcja Szczęki & 6 Implantów",
@@ -735,11 +667,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Dożywotni Paszport Gwarancyjny",
           "VIP Mercedes Transfers + Luksusowe zakwaterowanie 5-gwiazdkowe"
         ],
-        "price": {
-          "USD": "$5,950",
-          "EUR": "€5,450",
-          "GBP": "£4,690"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -914,11 +842,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Zertifikat für lebenslange Knochenstabilitätsgarantie",
           "VIP Mercedes Flughafen- & Kliniktransfers inklusive"
         ],
-        "price": {
-          "USD": "$320",
-          "EUR": "€290",
-          "GBP": "£250"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Offener Sinuslift (Laterales Fenster - 1 Seite)",
@@ -934,11 +858,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Persönliche deutschsprachige Patientenbetreuung vor Ort",
           "Private VIP-Transfers (Flughafen - Hotel - Klinik)"
         ],
-        "price": {
-          "USD": "$520",
-          "EUR": "€475",
-          "GBP": "£410"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Beidseitiger offener Sinuslift (Bilateral)",
@@ -953,11 +873,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Vollständiges postoperatives Nachsorge- und Medikamentenset",
           "VIP Mercedes Chauffeur-Service + 4-Sterne Hotelaufenthalt"
         ],
-        "price": {
-          "USD": "$980",
-          "EUR": "€890",
-          "GBP": "£770"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Sinuslift + 2 Straumann Implantate Paket",
@@ -972,11 +888,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Lebenslanger internationaler Straumann Garantiepass",
           "VIP Flughafentransfers + 4-Sterne Hotel im Stadtzentrum"
         ],
-        "price": {
-          "USD": "$1,950",
-          "EUR": "€1,790",
-          "GBP": "£1,550"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Sinuslift + 4 Nobel Biocare Oberkiefer",
@@ -991,11 +903,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Lebenslanger Nobel Biocare Garantiepass",
           "VIP Mercedes Transfers + 5-Sterne Hotelübernachtung"
         ],
-        "price": {
-          "USD": "$3,850",
-          "EUR": "€3,490",
-          "GBP": "£2,990"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Vollständige Oberkiefer-Rekonstruktion & 6 Implantate",
@@ -1011,11 +919,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Lebenslanger globaler Garantiepass",
           "VIP Mercedes Chauffeur + 5-Sterne Luxus-Hotel"
         ],
-        "price": {
-          "USD": "$5,950",
-          "EUR": "€5,450",
-          "GBP": "£4,690"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -1180,11 +1084,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Certificado de garantía de estabilidad ósea de por vida",
           "Traslados privados VIP Mercedes (Aeropuerto - Clínica - Hotel)"
         ],
-        "price": {
-          "USD": "$320",
-          "EUR": "€290",
-          "GBP": "£250"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Elevación de Seno Abierta (Ventana Lateral - 1 Lado)",
@@ -1200,11 +1100,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Coordinador internacional de pacientes en español",
           "Traslados VIP Mercedes incluidos en todo el proceso"
         ],
-        "price": {
-          "USD": "$520",
-          "EUR": "€475",
-          "GBP": "£410"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Elevación de Seno Bilateral (Ambos Lados)",
@@ -1219,11 +1115,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Kit completo de medicación y cuidados postoperatorios",
           "Chófer privado VIP Mercedes + Hotel de 4 estrellas"
         ],
-        "price": {
-          "USD": "$980",
-          "EUR": "€890",
-          "GBP": "£770"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Paquete Elevación de Seno + 2 Implantes Straumann",
@@ -1238,11 +1130,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Pasaporte de garantía internacional de por vida Straumann",
           "Traslados VIP aeropuerto + Hotel céntrico de 4 estrellas"
         ],
-        "price": {
-          "USD": "$1,950",
-          "EUR": "€1,790",
-          "GBP": "£1,550"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Paquete Elevación de Seno + 4 Implantes Nobel Biocare",
@@ -1257,11 +1145,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Garantía global de por vida Nobel Biocare",
           "Traslados VIP Mercedes + Alojamiento en hotel de 5 estrellas"
         ],
-        "price": {
-          "USD": "$3,850",
-          "EUR": "€3,490",
-          "GBP": "£2,990"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Reconstrucción Maxilar Completa & 6 Implantes",
@@ -1277,11 +1161,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Pasaporte de garantía de por vida",
           "Chófer VIP Mercedes + Hotel de lujo 5 estrellas"
         ],
-        "price": {
-          "USD": "$5,950",
-          "EUR": "€5,450",
-          "GBP": "£4,690"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -1441,11 +1321,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Certificado de garantia de estabilidade óssea vitalícia",
           "Transfers VIP Mercedes (Aeroporto - Clínica - Hotel) incluídos"
         ],
-        "price": {
-          "USD": "$320",
-          "EUR": "€290",
-          "GBP": "£250"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Sinus Lift Aberto (Janela Lateral - 1 Lado)",
@@ -1461,11 +1337,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Coordenador internacional de pacientes em português",
           "Transfers VIP Mercedes incluídos em todas as deslocações"
         ],
-        "price": {
-          "USD": "$520",
-          "EUR": "€475",
-          "GBP": "£410"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Sinus Lift Aberto Bilateral (Ambos os Lados)",
@@ -1480,11 +1352,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Kit pós-operatório completo de medicação e recuperação",
           "Motorista privado VIP Mercedes + Hotel de 4 estrelas"
         ],
-        "price": {
-          "USD": "$980",
-          "EUR": "€890",
-          "GBP": "£770"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Pacote Sinus Lift + 2 Implantes Straumann",
@@ -1499,11 +1367,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Passaporte de garantia internacional vitalícia Straumann",
           "Transfers VIP do aeroporto + Hotel de 4 estrelas no centro"
         ],
-        "price": {
-          "USD": "$1,950",
-          "EUR": "€1,790",
-          "GBP": "£1,550"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Pacote Sinus Lift + 4 Implantes Nobel Biocare",
@@ -1518,11 +1382,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Garantia vitalícia global Nobel Biocare",
           "Transfers VIP Mercedes + Hotel de 5 estrelas"
         ],
-        "price": {
-          "USD": "$3,850",
-          "EUR": "€3,490",
-          "GBP": "£2,990"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Reconstrução Maxilar Completa & 6 Implantes",
@@ -1538,11 +1398,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Passaporte de garantia vitalícia",
           "Motorista VIP Mercedes + Hotel de luxo de 5 estrelas"
         ],
-        "price": {
-          "USD": "$5,950",
-          "EUR": "€5,450",
-          "GBP": "£4,690"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -1702,11 +1558,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Пожизненный сертификат стабильности костной интеграции",
           "Индивидуальный VIP трансфер Mercedes (Аэропорт - Клиника - Отель)"
         ],
-        "price": {
-          "USD": "$320",
-          "EUR": "€290",
-          "GBP": "£250"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Открытый синус-лифтинг (Латеральное окно - 1 сторона)",
@@ -1722,11 +1574,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Персональный русскоговорящий медицинский координатор",
           "VIP трансферы Mercedes на протяжении всего лечения"
         ],
-        "price": {
-          "USD": "$520",
-          "EUR": "€475",
-          "GBP": "£410"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Двусторонний открытый синус-лифтинг (Обе стороны)",
@@ -1741,11 +1589,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Полный комплект препаратов для быстрого восстановления",
           "Личный водитель VIP Mercedes + Проживание в отеле 4 звезды"
         ],
-        "price": {
-          "USD": "$980",
-          "EUR": "€890",
-          "GBP": "£770"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Синус-лифтинг + 2 Импланта Straumann",
@@ -1760,11 +1604,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Пожизненный международный гарантийный паспорт Straumann",
           "VIP трансферы из аэропорта + Отель 4 звезды в центре"
         ],
-        "price": {
-          "USD": "$1,950",
-          "EUR": "€1,790",
-          "GBP": "£1,550"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Синус-лифтинг + 4 Импланта Nobel Biocare",
@@ -1779,11 +1619,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Пожизненная глобальная гарантия Nobel Biocare",
           "VIP Mercedes трансфер + Проживание в отеле 5 звезд"
         ],
-        "price": {
-          "USD": "$3,850",
-          "EUR": "€3,490",
-          "GBP": "£2,990"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Полная реконструкция верхней челюсти & 6 имплантов",
@@ -1799,11 +1635,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Пожизненный международный гарантийный паспорт",
           "VIP Mercedes трансфер + 5-звездочный отель люкс"
         ],
-        "price": {
-          "USD": "$5,950",
-          "EUR": "€5,450",
-          "GBP": "£4,690"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -2081,9 +1913,9 @@ export default function SinusLiftingDetailView() {
 
                 <div className={styles.pkgFooter}>
                   <div className={styles.pkgPriceRow}>
-                    <span className={styles.pkgPriceLabel}>{d.priceLabel}</span>
-                    <strong className={styles.pkgPriceValue}>
-                      {pkg.price[currency]}
+                    <span className={styles.pkgPriceLabel}>{locale === 'tr' ? 'VIP Paket Kapsamı' : 'VIP All-Inclusive'}</span>
+                    <strong className={styles.pkgPriceValue} style={{ fontSize: '0.95rem', color: '#059669', fontWeight: '700' }}>
+                      {locale === 'tr' ? 'Kişiye Özel Fiyat Teklifi' : 'Personalized VIP Quote'}
                     </strong>
                   </div>
 

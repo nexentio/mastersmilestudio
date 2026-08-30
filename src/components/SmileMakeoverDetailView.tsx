@@ -67,7 +67,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           'Temporary aesthetic veneers during laboratory fabrication',
           'VIP Airport & Clinic Luxury Transfers + 5-Star Hotel Package'
         ],
-        price: { USD: '$3,800', EUR: '€3,450', GBP: '£3,050' }
+        price: { USD: 'Custom Quote', EUR: 'Custom Quote', GBP: 'Custom Quote' }
       },
       {
         name: 'Complete 20-Unit Elite Hollywood Transformation',
@@ -83,7 +83,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           'Night guard & bespoke travel dental care kit included',
           'Lifetime Clinic Guarantee & 5-Star VIP Concierge service'
         ],
-        price: { USD: '$4,950', EUR: '€4,500', GBP: '£3,950' }
+        price: { USD: 'Custom Quote', EUR: 'Custom Quote', GBP: 'Custom Quote' }
       },
       {
         name: 'Digital Smile Design & 8-Veneer Social Six Focus',
@@ -98,7 +98,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           'Post-cementation bite equilibration and high-speed polish',
           'VIP Airport & Hotel Transfers included'
         ],
-        price: { USD: '$2,100', EUR: '€1,920', GBP: '£1,690' }
+        price: { USD: 'Custom Quote', EUR: 'Custom Quote', GBP: 'Custom Quote' }
       }
     ],
     faqs: [
@@ -186,7 +186,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           'Laboratuvar üretim sürecinde kullanılacak estetik geçici laminalar',
           'VIP Havalimanı ve Klinik Transferleri + 5 Yıldızlı Otel Konaklama Paketi'
         ],
-        price: { USD: '$3,800', EUR: '€3,450', GBP: '£3,050' }
+        price: { USD: 'Custom Quote', EUR: 'Custom Quote', GBP: 'Custom Quote' }
       },
       {
         name: '20 Üye Komple Hollywood Smile Elite Dönüşüm Paketi',
@@ -202,7 +202,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           'Kişiye özel 3D gece koruyucu plağı ve seyahat bakım kiti dahil',
           'Ömür Boyu Klinik Kalite Garantisi ve VIP Konsiyerj Hizmeti'
         ],
-        price: { USD: '$4,950', EUR: '€4,500', GBP: '£3,950' }
+        price: { USD: 'Custom Quote', EUR: 'Custom Quote', GBP: 'Custom Quote' }
       },
       {
         name: 'Dijital Gülüş Tasarımı & 8 Lamina Ön Bölge Odak Paketi',
@@ -217,7 +217,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           'Simantasyon sonrası oklüzyon dengelemesi ve mikron düzeyinde cila',
           'VIP Havalimanı ve Otel Transferleri Dahil'
         ],
-        price: { USD: '$2,100', EUR: '€1,920', GBP: '£1,690' }
+        price: { USD: 'Custom Quote', EUR: 'Custom Quote', GBP: 'Custom Quote' }
       }
     ],
     faqs: [
@@ -305,7 +305,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           'Ästhetische temporäre Veneers während der Laborfertigung',
           'VIP Flughafen- und Kliniktransfers + 5-Sterne-Hotelpaket'
         ],
-        price: { USD: '$3,800', EUR: '€3,450', GBP: '£3,050' }
+        price: { USD: 'Custom Quote', EUR: 'Custom Quote', GBP: 'Custom Quote' }
       },
       {
         name: '20 Einheiten Komplettes Elite Hollywood Transformation',
@@ -321,7 +321,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           'Individuelle 3D-Aufbissschiene und Reisedental-Set inklusive',
           'Lebenslange Klinikgarantie und VIP-Concierge-Betreuung'
         ],
-        price: { USD: '$4,950', EUR: '€4,500', GBP: '£3,950' }
+        price: { USD: 'Custom Quote', EUR: 'Custom Quote', GBP: 'Custom Quote' }
       },
       {
         name: 'Digital Smile Design & 8 Frontzahn-Veneers Fokus',
@@ -336,7 +336,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           'Bisskalibrierung nach Einsetzen und Hochglanzpolitur',
           'VIP Flughafen- und Hoteltransfers inklusive'
         ],
-        price: { USD: '$2,100', EUR: '€1,920', GBP: '£1,690' }
+        price: { USD: 'Custom Quote', EUR: 'Custom Quote', GBP: 'Custom Quote' }
       }
     ],
     faqs: [
@@ -419,7 +419,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           'Estetyczne licówki tymczasowe na czas oczekiwania',
           'Transfery VIP lotnisko-klinika + pakiet hotelowy 5 gwiazdek'
         ],
-        price: { USD: '$3,800', EUR: '€3,450', GBP: '£3,050' }
+        price: { USD: 'Custom Quote', EUR: 'Custom Quote', GBP: 'Custom Quote' }
       },
       {
         name: '20 Jednostek Kompleksowa Transformacja Hollywood Smile',
@@ -435,7 +435,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           'Indywidualna szyna relaksacyjna 3D i zestaw podróżny',
           'Dożywotnia Gwarancja Kliniki i obsługa VIP Concierge'
         ],
-        price: { USD: '$4,950', EUR: '€4,500', GBP: '£3,950' }
+        price: { USD: 'Custom Quote', EUR: 'Custom Quote', GBP: 'Custom Quote' }
       },
       {
         name: 'Digital Smile Design i 8 Licówek Odcinek Przedni',
@@ -450,7 +450,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           'Dopasowanie okluzji i mikropolerowanie',
           'Transfery VIP lotnisko-hotel w cenie'
         ],
-        price: { USD: '$2,100', EUR: '€1,920', GBP: '£1,690' }
+        price: { USD: 'Custom Quote', EUR: 'Custom Quote', GBP: 'Custom Quote' }
       }
     ],
     faqs: [
@@ -531,7 +531,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           'Facetas provisórias estéticas durante o fabrico',
           'Transfers VIP aeroporto-clínica + hotel 5 estrelas'
         ],
-        price: { USD: '$3,800', EUR: '€3,450', GBP: '£3,050' }
+        price: { USD: 'Custom Quote', EUR: 'Custom Quote', GBP: 'Custom Quote' }
       },
       {
         name: '20 Unidades Transformação Elite Hollywood Smile',
@@ -547,7 +547,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           'Goteira noturna 3D e kit de viagem incluídos',
           'Garantia Vitalícia da Clínica e serviço de Concierge VIP'
         ],
-        price: { USD: '$4,950', EUR: '€4,500', GBP: '£3,950' }
+        price: { USD: 'Custom Quote', EUR: 'Custom Quote', GBP: 'Custom Quote' }
       },
       {
         name: 'Design Digital do Sorriso & 8 Facetas Frontais',
@@ -562,7 +562,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           'Equilíbrio oclusal e polimento de alta precisão',
           'Transfers VIP aeroporto e hotel incluídos'
         ],
-        price: { USD: '$2,100', EUR: '€1,920', GBP: '£1,690' }
+        price: { USD: 'Custom Quote', EUR: 'Custom Quote', GBP: 'Custom Quote' }
       }
     ],
     faqs: [
@@ -643,7 +643,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           'Carillas provisionales estéticas durante la fabricación',
           'Traslados VIP aeropuerto-clínica + hotel de 5 estrellas'
         ],
-        price: { USD: '$3,800', EUR: '€3,450', GBP: '£3,050' }
+        price: { USD: 'Custom Quote', EUR: 'Custom Quote', GBP: 'Custom Quote' }
       },
       {
         name: '20 Unidades Transformación Elite Hollywood Smile',
@@ -659,7 +659,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           'Férula de descarga 3D y kit de viaje incluidos',
           'Garantía de por vida de la clínica y servicio de Concierge VIP'
         ],
-        price: { USD: '$4,950', EUR: '€4,500', GBP: '£3,950' }
+        price: { USD: 'Custom Quote', EUR: 'Custom Quote', GBP: 'Custom Quote' }
       },
       {
         name: 'Diseño Digital de Sonrisa & 8 Carillas Frontales',
@@ -674,7 +674,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           'Equilibrio oclusal y pulido de alta precisión',
           'Traslados VIP aeropuerto y hotel incluidos'
         ],
-        price: { USD: '$2,100', EUR: '€1,920', GBP: '£1,690' }
+        price: { USD: 'Custom Quote', EUR: 'Custom Quote', GBP: 'Custom Quote' }
       }
     ],
     faqs: [
@@ -755,7 +755,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           'Эстетические временные виниры на время изготовления',
           'VIP трансферы аэропорт-клиника + отель 5 звезд'
         ],
-        price: { USD: '$3,800', EUR: '€3,450', GBP: '£3,050' }
+        price: { USD: 'Custom Quote', EUR: 'Custom Quote', GBP: 'Custom Quote' }
       },
       {
         name: '20 Единиц Премиум Голливудская Улыбка Элит',
@@ -771,7 +771,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           'Индивидуальная ночная капа 3D и дорожный набор',
           'Пожизненная гарантия клиники и VIP консьерж-сервис'
         ],
-        price: { USD: '$4,950', EUR: '€4,500', GBP: '£3,950' }
+        price: { USD: 'Custom Quote', EUR: 'Custom Quote', GBP: 'Custom Quote' }
       },
       {
         name: 'Digital Smile Design и 8 Виниров Зоны Улыбки',
@@ -786,7 +786,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           'Окклюзионная калибровка и высокоточная полировка',
           'VIP трансферы аэропорт-отель включены'
         ],
-        price: { USD: '$2,100', EUR: '€1,920', GBP: '£1,690' }
+        price: { USD: 'Custom Quote', EUR: 'Custom Quote', GBP: 'Custom Quote' }
       }
     ],
     faqs: [

@@ -339,7 +339,7 @@ export default function CosmeticDentistryJourneySection() {
               </a>
 
               {/* Phone Button */}
-              <a href={`tel:${SITE_CONFIG.phone}`} className={styles.contactBtn}>
+              <a href={`tel:${SITE_CONFIG.phone.replace(/[^0-9+]/g, '')}`} className={styles.contactBtn}>
                 <div className={styles.contactIconWrap}>
                   <Image
                     src="/icons/contact-phone.webp"

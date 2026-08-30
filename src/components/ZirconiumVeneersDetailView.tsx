@@ -58,7 +58,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>5 to 7 days in Antalya.</strong> During this single trip, 3D intraoral digital scanning, precision micro-preparation, 5-axis CAD/CAM milling of German zirconia veneers, and final resin cementation are completed.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Antalya once. Your complete smile makeover (from 4 to 20 Zirconium laminate veneers) is designed, fabricated, and permanently placed during this single visit.",
     "recoveryTime": "<strong>24 to 48 hours adaptation.</strong> Minimally invasive tooth preparation ensures fast gum tissue healing and immediate functional comfort with zero downtime.",
-    "priceEstimate": "<strong>Zirconium Laminate Veneer prices start at £210 / €240 / $260 per tooth.</strong> All-inclusive smile makeover packages (8, 16, or 20 veneers) include 3D Digital Smile Design, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "Single Zirconium Veneer",
@@ -73,11 +73,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "Dedicated patient coordinator assistance"
         ],
-        "price": {
-          "USD": "$260",
-          "EUR": "€240",
-          "GBP": "£210"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "8-Unit Smile Line Makeover (Upper Arch)",
@@ -94,11 +90,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Transfers (Airport - Hotel - Clinic)",
           "10-Year warranty against veneer debonding and chipping"
         ],
-        "price": {
-          "USD": "$2,050",
-          "EUR": "€1,850",
-          "GBP": "£1,600"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "16-Unit Full Smile Makeover (8 Upper + 8 Lower)",
@@ -114,11 +106,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Professional clinical teeth whitening for non-veneered molars",
           "Comprehensive post-op care pack & custom night guard"
         ],
-        "price": {
-          "USD": "$3,950",
-          "EUR": "€3,650",
-          "GBP": "£3,150"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20-Unit Full Hollywood Smile Makeover",
@@ -133,11 +121,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Chauffeur Service for all transfers",
           "Lifetime international warranty certificate & dental passport"
         ],
-        "price": {
-          "USD": "$4,850",
-          "EUR": "€4,450",
-          "GBP": "£3,850"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Combination Smile Makeover (Zirconia + E-Max)",
@@ -152,11 +136,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Service for all transfers",
           "10-Year Clinical Warranty"
         ],
-        "price": {
-          "USD": "$4,300",
-          "EUR": "€3,950",
-          "GBP": "£3,450"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Single Monolithic Zirconia Veneer",
@@ -169,11 +149,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Multi-shade nano-hybrid polishing",
           "10-Year Clinical Warranty"
         ],
-        "price": {
-          "USD": "$285",
-          "EUR": "€260",
-          "GBP": "£230"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -232,7 +208,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>5 to 7 days in Antalya.</strong> During this single trip, 3D intraoral digital scanning, precision micro-preparation, 5-axis CAD/CAM milling of German zirconia veneers, and final resin cementation are completed.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Antalya once. Your complete smile makeover (from 4 to 20 Zirconium laminate veneers) is designed, fabricated, and permanently placed during this single visit.",
     "recoveryTime": "<strong>24 to 48 hours adaptation.</strong> Minimally invasive tooth preparation ensures fast gum tissue healing and immediate functional comfort with zero downtime.",
-    "priceEstimate": "<strong>Zirconium Laminate Veneer prices start at £210 / €240 / $260 per tooth.</strong> All-inclusive smile makeover packages (8, 16, or 20 veneers) include 3D Digital Smile Design, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "Single Zirconium Veneer",
@@ -247,11 +223,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "Dedicated patient coordinator assistance"
         ],
-        "price": {
-          "USD": "$260",
-          "EUR": "€240",
-          "GBP": "£210"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "8-Unit Smile Line Makeover (Upper Arch)",
@@ -268,11 +240,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Transfers (Airport - Hotel - Clinic)",
           "10-Year warranty against veneer debonding and chipping"
         ],
-        "price": {
-          "USD": "$2,050",
-          "EUR": "€1,850",
-          "GBP": "£1,600"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "16-Unit Full Smile Makeover (8 Upper + 8 Lower)",
@@ -288,11 +256,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Professional clinical teeth whitening for non-veneered molars",
           "Comprehensive post-op care pack & custom night guard"
         ],
-        "price": {
-          "USD": "$3,950",
-          "EUR": "€3,650",
-          "GBP": "£3,150"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20-Unit Full Hollywood Smile Makeover",
@@ -307,11 +271,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Chauffeur Service for all transfers",
           "Lifetime international warranty certificate & dental passport"
         ],
-        "price": {
-          "USD": "$4,850",
-          "EUR": "€4,450",
-          "GBP": "£3,850"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Combination Smile Makeover (Zirconia + E-Max)",
@@ -326,11 +286,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Service for all transfers",
           "10-Year Clinical Warranty"
         ],
-        "price": {
-          "USD": "$4,300",
-          "EUR": "€3,950",
-          "GBP": "£3,450"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Single Monolithic Zirconia Veneer",
@@ -343,11 +299,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Multi-shade nano-hybrid polishing",
           "10-Year Clinical Warranty"
         ],
-        "price": {
-          "USD": "$285",
-          "EUR": "€260",
-          "GBP": "£230"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -406,7 +358,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>5 to 7 days in Antalya.</strong> During this single trip, 3D intraoral digital scanning, precision micro-preparation, 5-axis CAD/CAM milling of German zirconia veneers, and final resin cementation are completed.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Antalya once. Your complete smile makeover (from 4 to 20 Zirconium laminate veneers) is designed, fabricated, and permanently placed during this single visit.",
     "recoveryTime": "<strong>24 to 48 hours adaptation.</strong> Minimally invasive tooth preparation ensures fast gum tissue healing and immediate functional comfort with zero downtime.",
-    "priceEstimate": "<strong>Zirconium Laminate Veneer prices start at £210 / €240 / $260 per tooth.</strong> All-inclusive smile makeover packages (8, 16, or 20 veneers) include 3D Digital Smile Design, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "Single Zirconium Veneer",
@@ -421,11 +373,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "Dedicated patient coordinator assistance"
         ],
-        "price": {
-          "USD": "$260",
-          "EUR": "€240",
-          "GBP": "£210"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "8-Unit Smile Line Makeover (Upper Arch)",
@@ -442,11 +390,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Transfers (Airport - Hotel - Clinic)",
           "10-Year warranty against veneer debonding and chipping"
         ],
-        "price": {
-          "USD": "$2,050",
-          "EUR": "€1,850",
-          "GBP": "£1,600"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "16-Unit Full Smile Makeover (8 Upper + 8 Lower)",
@@ -462,11 +406,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Professional clinical teeth whitening for non-veneered molars",
           "Comprehensive post-op care pack & custom night guard"
         ],
-        "price": {
-          "USD": "$3,950",
-          "EUR": "€3,650",
-          "GBP": "£3,150"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20-Unit Full Hollywood Smile Makeover",
@@ -481,11 +421,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Chauffeur Service for all transfers",
           "Lifetime international warranty certificate & dental passport"
         ],
-        "price": {
-          "USD": "$4,850",
-          "EUR": "€4,450",
-          "GBP": "£3,850"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Combination Smile Makeover (Zirconia + E-Max)",
@@ -500,11 +436,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Service for all transfers",
           "10-Year Clinical Warranty"
         ],
-        "price": {
-          "USD": "$4,300",
-          "EUR": "€3,950",
-          "GBP": "£3,450"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Single Monolithic Zirconia Veneer",
@@ -517,11 +449,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Multi-shade nano-hybrid polishing",
           "10-Year Clinical Warranty"
         ],
-        "price": {
-          "USD": "$285",
-          "EUR": "€260",
-          "GBP": "£230"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -580,7 +508,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>5 to 7 days in Antalya.</strong> During this single trip, 3D intraoral digital scanning, precision micro-preparation, 5-axis CAD/CAM milling of German zirconia veneers, and final resin cementation are completed.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Antalya once. Your complete smile makeover (from 4 to 20 Zirconium laminate veneers) is designed, fabricated, and permanently placed during this single visit.",
     "recoveryTime": "<strong>24 to 48 hours adaptation.</strong> Minimally invasive tooth preparation ensures fast gum tissue healing and immediate functional comfort with zero downtime.",
-    "priceEstimate": "<strong>Zirconium Laminate Veneer prices start at £210 / €240 / $260 per tooth.</strong> All-inclusive smile makeover packages (8, 16, or 20 veneers) include 3D Digital Smile Design, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "Single Zirconium Veneer",
@@ -595,11 +523,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "Dedicated patient coordinator assistance"
         ],
-        "price": {
-          "USD": "$260",
-          "EUR": "€240",
-          "GBP": "£210"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "8-Unit Smile Line Makeover (Upper Arch)",
@@ -616,11 +540,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Transfers (Airport - Hotel - Clinic)",
           "10-Year warranty against veneer debonding and chipping"
         ],
-        "price": {
-          "USD": "$2,050",
-          "EUR": "€1,850",
-          "GBP": "£1,600"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "16-Unit Full Smile Makeover (8 Upper + 8 Lower)",
@@ -636,11 +556,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Professional clinical teeth whitening for non-veneered molars",
           "Comprehensive post-op care pack & custom night guard"
         ],
-        "price": {
-          "USD": "$3,950",
-          "EUR": "€3,650",
-          "GBP": "£3,150"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20-Unit Full Hollywood Smile Makeover",
@@ -655,11 +571,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Chauffeur Service for all transfers",
           "Lifetime international warranty certificate & dental passport"
         ],
-        "price": {
-          "USD": "$4,850",
-          "EUR": "€4,450",
-          "GBP": "£3,850"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Combination Smile Makeover (Zirconia + E-Max)",
@@ -674,11 +586,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Service for all transfers",
           "10-Year Clinical Warranty"
         ],
-        "price": {
-          "USD": "$4,300",
-          "EUR": "€3,950",
-          "GBP": "£3,450"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Single Monolithic Zirconia Veneer",
@@ -691,11 +599,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Multi-shade nano-hybrid polishing",
           "10-Year Clinical Warranty"
         ],
-        "price": {
-          "USD": "$285",
-          "EUR": "€260",
-          "GBP": "£230"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -754,7 +658,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>5 to 7 days in Antalya.</strong> During this single trip, 3D intraoral digital scanning, precision micro-preparation, 5-axis CAD/CAM milling of German zirconia veneers, and final resin cementation are completed.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Antalya once. Your complete smile makeover (from 4 to 20 Zirconium laminate veneers) is designed, fabricated, and permanently placed during this single visit.",
     "recoveryTime": "<strong>24 to 48 hours adaptation.</strong> Minimally invasive tooth preparation ensures fast gum tissue healing and immediate functional comfort with zero downtime.",
-    "priceEstimate": "<strong>Zirconium Laminate Veneer prices start at £210 / €240 / $260 per tooth.</strong> All-inclusive smile makeover packages (8, 16, or 20 veneers) include 3D Digital Smile Design, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "Single Zirconium Veneer",
@@ -769,11 +673,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "Dedicated patient coordinator assistance"
         ],
-        "price": {
-          "USD": "$260",
-          "EUR": "€240",
-          "GBP": "£210"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "8-Unit Smile Line Makeover (Upper Arch)",
@@ -790,11 +690,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Transfers (Airport - Hotel - Clinic)",
           "10-Year warranty against veneer debonding and chipping"
         ],
-        "price": {
-          "USD": "$2,050",
-          "EUR": "€1,850",
-          "GBP": "£1,600"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "16-Unit Full Smile Makeover (8 Upper + 8 Lower)",
@@ -810,11 +706,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Professional clinical teeth whitening for non-veneered molars",
           "Comprehensive post-op care pack & custom night guard"
         ],
-        "price": {
-          "USD": "$3,950",
-          "EUR": "€3,650",
-          "GBP": "£3,150"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20-Unit Full Hollywood Smile Makeover",
@@ -829,11 +721,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Chauffeur Service for all transfers",
           "Lifetime international warranty certificate & dental passport"
         ],
-        "price": {
-          "USD": "$4,850",
-          "EUR": "€4,450",
-          "GBP": "£3,850"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Combination Smile Makeover (Zirconia + E-Max)",
@@ -848,11 +736,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Service for all transfers",
           "10-Year Clinical Warranty"
         ],
-        "price": {
-          "USD": "$4,300",
-          "EUR": "€3,950",
-          "GBP": "£3,450"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Single Monolithic Zirconia Veneer",
@@ -865,11 +749,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Multi-shade nano-hybrid polishing",
           "10-Year Clinical Warranty"
         ],
-        "price": {
-          "USD": "$285",
-          "EUR": "€260",
-          "GBP": "£230"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -928,7 +808,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>5 to 7 days in Antalya.</strong> During this single trip, 3D intraoral digital scanning, precision micro-preparation, 5-axis CAD/CAM milling of German zirconia veneers, and final resin cementation are completed.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Antalya once. Your complete smile makeover (from 4 to 20 Zirconium laminate veneers) is designed, fabricated, and permanently placed during this single visit.",
     "recoveryTime": "<strong>24 to 48 hours adaptation.</strong> Minimally invasive tooth preparation ensures fast gum tissue healing and immediate functional comfort with zero downtime.",
-    "priceEstimate": "<strong>Zirconium Laminate Veneer prices start at £210 / €240 / $260 per tooth.</strong> All-inclusive smile makeover packages (8, 16, or 20 veneers) include 3D Digital Smile Design, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "Single Zirconium Veneer",
@@ -943,11 +823,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "Dedicated patient coordinator assistance"
         ],
-        "price": {
-          "USD": "$260",
-          "EUR": "€240",
-          "GBP": "£210"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "8-Unit Smile Line Makeover (Upper Arch)",
@@ -964,11 +840,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Transfers (Airport - Hotel - Clinic)",
           "10-Year warranty against veneer debonding and chipping"
         ],
-        "price": {
-          "USD": "$2,050",
-          "EUR": "€1,850",
-          "GBP": "£1,600"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "16-Unit Full Smile Makeover (8 Upper + 8 Lower)",
@@ -984,11 +856,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Professional clinical teeth whitening for non-veneered molars",
           "Comprehensive post-op care pack & custom night guard"
         ],
-        "price": {
-          "USD": "$3,950",
-          "EUR": "€3,650",
-          "GBP": "£3,150"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20-Unit Full Hollywood Smile Makeover",
@@ -1003,11 +871,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Chauffeur Service for all transfers",
           "Lifetime international warranty certificate & dental passport"
         ],
-        "price": {
-          "USD": "$4,850",
-          "EUR": "€4,450",
-          "GBP": "£3,850"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Combination Smile Makeover (Zirconia + E-Max)",
@@ -1022,11 +886,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Service for all transfers",
           "10-Year Clinical Warranty"
         ],
-        "price": {
-          "USD": "$4,300",
-          "EUR": "€3,950",
-          "GBP": "£3,450"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Single Monolithic Zirconia Veneer",
@@ -1039,11 +899,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Multi-shade nano-hybrid polishing",
           "10-Year Clinical Warranty"
         ],
-        "price": {
-          "USD": "$285",
-          "EUR": "€260",
-          "GBP": "£230"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -1102,7 +958,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
     "stayDuration": "<strong>5 to 7 days in Antalya.</strong> During this single trip, 3D intraoral digital scanning, precision micro-preparation, 5-axis CAD/CAM milling of German zirconia veneers, and final resin cementation are completed.",
     "visitCount": "<strong>Single 1-visit trip.</strong> You only need to travel to Antalya once. Your complete smile makeover (from 4 to 20 Zirconium laminate veneers) is designed, fabricated, and permanently placed during this single visit.",
     "recoveryTime": "<strong>24 to 48 hours adaptation.</strong> Minimally invasive tooth preparation ensures fast gum tissue healing and immediate functional comfort with zero downtime.",
-    "priceEstimate": "<strong>Zirconium Laminate Veneer prices start at £210 / €240 / $260 per tooth.</strong> All-inclusive smile makeover packages (8, 16, or 20 veneers) include 3D Digital Smile Design, 4/5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
+    "priceEstimate": "<strong>All-Inclusive VIP Dental Packages</strong> include comprehensive 3D digital smile design, 5-star luxury hotel accommodation, and VIP Mercedes transfers with zero hidden fees.",
     "packages": [
       {
         "name": "Single Zirconium Veneer",
@@ -1117,11 +973,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "10-Year Clinical Warranty & Certificate of Authenticity",
           "Dedicated patient coordinator assistance"
         ],
-        "price": {
-          "USD": "$260",
-          "EUR": "€240",
-          "GBP": "£210"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "8-Unit Smile Line Makeover (Upper Arch)",
@@ -1138,11 +990,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Transfers (Airport - Hotel - Clinic)",
           "10-Year warranty against veneer debonding and chipping"
         ],
-        "price": {
-          "USD": "$2,050",
-          "EUR": "€1,850",
-          "GBP": "£1,600"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "16-Unit Full Smile Makeover (8 Upper + 8 Lower)",
@@ -1158,11 +1006,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Professional clinical teeth whitening for non-veneered molars",
           "Comprehensive post-op care pack & custom night guard"
         ],
-        "price": {
-          "USD": "$3,950",
-          "EUR": "€3,650",
-          "GBP": "£3,150"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "20-Unit Full Hollywood Smile Makeover",
@@ -1177,11 +1021,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Private VIP Mercedes Chauffeur Service for all transfers",
           "Lifetime international warranty certificate & dental passport"
         ],
-        "price": {
-          "USD": "$4,850",
-          "EUR": "€4,450",
-          "GBP": "£3,850"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Combination Smile Makeover (Zirconia + E-Max)",
@@ -1196,11 +1036,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "VIP Mercedes Chauffeur Service for all transfers",
           "10-Year Clinical Warranty"
         ],
-        "price": {
-          "USD": "$4,300",
-          "EUR": "€3,950",
-          "GBP": "£3,450"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       },
       {
         "name": "Single Monolithic Zirconia Veneer",
@@ -1213,11 +1049,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           "Multi-shade nano-hybrid polishing",
           "10-Year Clinical Warranty"
         ],
-        "price": {
-          "USD": "$285",
-          "EUR": "€260",
-          "GBP": "£230"
-        }
+        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqs": [
@@ -1414,9 +1246,9 @@ export default function ZirconiumVeneersDetailView() {
 
                 <div className={styles.pkgFooter}>
                   <div className={styles.pkgPriceRow}>
-                    <span className={styles.pkgPriceLabel}>{d.priceLabel}</span>
-                    <strong className={styles.pkgPriceValue}>
-                      {pkg.price[currency]}
+                    <span className={styles.pkgPriceLabel}>{locale === 'tr' ? 'VIP Paket Kapsamı' : 'VIP All-Inclusive'}</span>
+                    <strong className={styles.pkgPriceValue} style={{ fontSize: '0.95rem', color: '#059669', fontWeight: '700' }}>
+                      {locale === 'tr' ? 'Kişiye Özel Fiyat Teklifi' : 'Personalized VIP Quote'}
                     </strong>
                   </div>
 

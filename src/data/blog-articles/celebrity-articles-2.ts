@@ -153,8 +153,8 @@ export const CELEBRITY_ARTICLES_2: Record<string, BlogDetailArticle> = {
           ru: 'Сколько стоило лечение зубов Юргена Клоппа в Англии?',
         },
         a: {
-          en: 'In the UK, a full 20-unit celebrity smile makeover ranges from £25,000 to £35,000 ($32,000–$45,000). At Master Smile Studio in Antalya, the identical full 20-unit German Zirconia or Swiss E-Max makeover costs between €3,800 and €4,800 in an all-inclusive VIP hotel package.',
-          tr: "İngiltere'de 20 üyelik bir ünlü gülüş tasarımı £25.000 - £35.000 ($32.000 - $45.000) bandındadır. Master Smile Studio Antalya'da aynı orijinal Alman Zirkonyum veya İsviçre E-Max malzemelerle 20 üyelik tedavi, 5 yıldızlı otel konaklaması dahil €3.800 - €4.800 arasındadır.",
+          en: 'In the UK, a full 20-unit celebrity smile makeover ranges from high private fees. At Master Smile Studio in Antalya, the identical full 20-unit German Zirconia or Swiss E-Max makeover is provided in an all-inclusive VIP luxury hotel package with significant savings.',
+          tr: "İngiltere'de 20 üyelik bir ünlü gülüş tasarımı yüksek bütçeler bandındadır. Master Smile Studio Antalya'da aynı orijinal Alman Zirkonyum veya İsviçre E-Max malzemelerle 20 üyelik tedavi, 5 yıldızlı otel konaklaması dahil her şey dahil VIP paket avantajlarıyla sunulmaktadır.",
           de: 'In England kostet eine solche Behandlung bis zu 35.000 £; bei Master Smile Studio in Antalya ab ca. 3.800–4.800 € als Komplettpaket.',
           pl: 'W Wielkiej Brytanii koszt wynosi do 35 000 £, natomiast w Master Smile Studio w Antalyi od 3 800 do 4 800 € w pakiecie z hotelem 5*.',
           pt: 'No Reino Unido custa até 35.000 £; na Master Smile Studio em Antalya custa entre 3.800 € e 4.800 € com hotel VIP incluído.',

@@ -22,32 +22,32 @@ interface CostBreakdownContent {
 
 const COST_CONTENT: Record<string, CostBreakdownContent> = {
   tr: {
-    heading: 'Antalya’da Diş İmplantı Fiyatları',
+    heading: 'Antalya’da Diş İmplantı Tedavisi & VIP Paket Avantajları',
     leadParagraph: (
       <>
-        Antalya’da <strong>diş implantı</strong> fiyatları, kullanılan implantın markasına ve uygulanan yönteme göre değişiklik gösterir. Kaliteli malzemeler, deneyimli hekimler ve kapsamlı hizmetler sunan iyi bir klinikte yapılan implantlar, <strong>Türkiye’nin diş hekimliği turizminin</strong> avantajları sayesinde Avrupa ülkelerine kıyasla çok daha ekonomiktir.
+        Antalya’da <strong>diş implantı</strong> tedavisi, kullanılan implantın markasına, kemik yoğunluğuna ve uygulanan cerrahi yönteme göre kişiye özel olarak planlanır. Deneyimli çene cerrahlarımız, son teknoloji 3D CBCT dijital tomografi ve <strong>ömür boyu uluslararası garanti sertifikası</strong> ile dünya standartlarında sağlık hizmeti sunmaktadır.
       </>
     ),
-    subHeadingTitle: 'Antalya’da İmplant Fiyatları – Master Smile Studio',
-    subHeadingAverage: 'Ortalama fiyatlar şu şekildedir:',
+    subHeadingTitle: 'Klinik Standartlarımız & İmplant Sistemleri – Master Smile Studio',
+    subHeadingAverage: 'Kliniğimizde uygulanan global onaylı premium implant sistemleri:',
     nucleoss: (
       <>
-        <strong>NUCLEOSS (yerli marka)</strong> implant: yaklaşık <strong>$450</strong> (400€ / 335£)
+        <strong>NUCLEOSS (Grade 4 Saf Titanyum):</strong> Yüksek biyouyumluluk, mikro gözenekli osteointegrasyon yüzeyi ve ömür boyu garanti.
       </>
     ),
     dxl: (
       <>
-        <strong>DXL (Alman markası)</strong> implant: yaklaşık <strong>$550</strong> (500€ / 420£)
+        <strong>DXL (Alman Mühendisliği):</strong> İleri SLA aktif yüzey teknolojisi, hızlı kemik kaynaşması ve yüksek primer stabilite.
       </>
     ),
     straumann: (
       <>
-        <strong>Straumann (İsviçre markası)</strong> implant: yaklaşık <strong>$900</strong> (800€ / 680£)
+        <strong>Straumann (İsviçre Altın Standart):</strong> SLActive hidrofilik yüzey, diyabet ve kemik erimesi vakalarında kanıtlanmış maksimum başarı.
       </>
     ),
     allOnPackagesParagraph: (
       <>
-        Birden fazla eksik dişi olan hastalar için{' '}
+        Tam çene diş eksikliği olan hastalarımız için{' '}
         <Link href="/treatments/dental-implants/all-on-4-implants" className={styles.link}>
           <strong>All-on-4</strong>
         </Link>{' '}
@@ -55,391 +55,362 @@ const COST_CONTENT: Record<string, CostBreakdownContent> = {
         <Link href="/treatments/dental-implants/all-on-6-implants" className={styles.link}>
           <strong>All-on-6</strong>
         </Link>{' '}
-        tam çene implantları yaygın seçeneklerdir. Bu paketlerin maliyeti, implant sayısına ve kullanılan markaya bağlı olarak <strong>$4,900 ile $7,600</strong> arasında değişmektedir. Örneğin, <strong>NUCLEOSS</strong> implantlı bir{' '}
-        <Link href="/treatments/dental-implants/all-on-4-implants" className={styles.link}>
-          <strong>All-on-4 paketi</strong>
-        </Link>{' '}
-        yaklaşık <strong>$4,900</strong>, <strong>Straumann</strong> implantlı{' '}
-        <Link href="/treatments/dental-implants/all-on-4-implants" className={styles.link}>
-          aynı paket
-        </Link>{' '}
-        ise yaklaşık <strong>$7,600</strong> tutarındadır.
+        aynı gün sabit geçici diş yükleme protokolleri uygulanmaktadır. VIP paketlerimiz 5 yıldızlı otel konaklaması, özel Mercedes havalimanı transferleri ve kişiye özel tercüman desteğini kapsamaktadır.
       </>
     ),
     complexityParagraph:
-      'Bu fiyatlar ameliyatın karmaşıklığına (kemik grefti, sinüs lifting gibi) ve dahil edilen ek hizmetlere (otel, VIP ulaşım gibi) göre değişiklik gösterebilir.',
+      'Her hastamızın kemik yapısı ve estetik beklentileri farklı olduğundan, net tedavi planınız gönderdiğiniz panoramik röntgen incelenerek 24 saat içinde şeffaf olarak hazırlanır.',
     moreDetailsParagraph: (
       <>
-        Antalya&apos;un uygun fiyatlı ve yüksek kaliteli diş hizmetleri hakkında daha fazla bilgi almak ve{' '}
-        <Link href="/treatments/dental-implants" className={styles.link}>
-          detaylı bir fiyat listesi
-        </Link>{' '}
-        görmek için Master Smile Studio&apos;nun{' '}
+        Röntgeninizi ileterek uzman hekimlerimizden{' '}
         <Link href="/contact" className={styles.link}>
-          <strong>&ldquo;Türkiye Diş Tedavisi Fiyatları Ne Kadar?&rdquo;</strong>
+          <strong>ücretsiz kişiye özel tedavi planı ve teklif</strong>
         </Link>{' '}
-        sayfasını ziyaret edebilirsiniz.
+        alabilir, sürpriz maliyetler olmadan tedavi sürecinizi güvenle planlayabilirsiniz.
       </>
     ),
     packagesLinkParagraph: (
       <>
-        Detaylı paket fiyatları için{' '}
-        <Link href="/treatments/dental-implants/all-on-4-implants" className={styles.link}>
-          lütfen bu sayfayı ziyaret edin
-        </Link>
+        Detaylı VIP paket kapsamlarını incelemek için{' '}
+        <Link href="/packages" className={styles.link}>
+          lütfen paketler sayfamızı ziyaret edin
+        </Link>.
       </>
     ),
   },
   en: {
-    heading: 'Dental Implant Costs in Antalya',
+    heading: 'Dental Implant Treatment & VIP Package Advantages in Antalya',
     leadParagraph: (
       <>
-        The cost of <strong>dental implants in Antalya</strong> varies depending on the brand of the implant and the method used. Implants performed in a good clinic with high-quality materials, experienced doctors, and comprehensive services are much more affordable compared to European countries, thanks to the advantages of <strong>Turkey&apos;s dental tourism</strong>.
+        <strong>Dental implant treatment in Antalya</strong> is customized according to the patient&apos;s bone density, aesthetic goals, and chosen implant brand. Our expert oral surgeons utilize state-of-the-art 3D CBCT digital tomography and provide <strong>lifetime international manufacturer warranty passports</strong> for every restoration.
       </>
     ),
-    subHeadingTitle: 'Dental Implant Prices in Antalya - Master Smile Studio',
-    subHeadingAverage: 'The average prices are as follows:',
+    subHeadingTitle: 'Our Clinical Standards & Implant Systems – Master Smile Studio',
+    subHeadingAverage: 'Globally certified premium implant systems offered at our clinic:',
     nucleoss: (
       <>
-        <strong>NUCLEOSS (local brand)</strong> implant: approximately <strong>$450</strong> (400€ / 335£)
+        <strong>NUCLEOSS (Grade 4 Pure Titanium):</strong> High biocompatibility, microporous osseointegration surface, and lifetime warranty.
       </>
     ),
     dxl: (
       <>
-        <strong>DXL (German brand)</strong> implant: approximately <strong>$550</strong> (500€ / 420£)
+        <strong>DXL (German Engineering):</strong> Advanced SLA surface technology, accelerated bone fusion, and high primary stability.
       </>
     ),
     straumann: (
       <>
-        <strong>Straumann (Swiss brand)</strong> implant: approximately <strong>$900</strong> (800€ / 680£)
+        <strong>Straumann (Swiss Gold Standard):</strong> SLActive hydrophilic surface, proven highest clinical success rates even in compromised bone.
       </>
     ),
     allOnPackagesParagraph: (
       <>
-        For patients missing multiple teeth, full-arch implants like{' '}
+        For patients suffering from full-arch tooth loss,{' '}
         <Link href="/treatments/dental-implants/all-on-4-implants" className={styles.link}>
           <strong>All-on-4</strong>
         </Link>{' '}
-        or{' '}
+        and{' '}
         <Link href="/treatments/dental-implants/all-on-6-implants" className={styles.link}>
           <strong>All-on-6</strong>
         </Link>{' '}
-        are common choices. The cost for these packages ranges from <strong>$4,900 to $7,600</strong>, depending on the number of implants and the brand used. For example, an{' '}
-        <Link href="/treatments/dental-implants/all-on-4-implants" className={styles.link}>
-          <strong>All-on-4 package</strong>
-        </Link>{' '}
-        with <strong>NUCLEOSS</strong> implants costs around <strong>$4,900</strong>, while the{' '}
-        <Link href="/treatments/dental-implants/all-on-4-implants" className={styles.link}>
-          same package
-        </Link>{' '}
-        with <strong>Straumann</strong> implants costs around <strong>$7,600</strong>.
+        same-day fixed temporary loading protocols are performed. Our all-inclusive VIP packages include 5-star hotel accommodation, private Mercedes chauffeur transfers, and dedicated patient coordinators.
       </>
     ),
     complexityParagraph:
-      'These prices may vary depending on the complexity of the surgery (such as bone grafting, sinus lift) and additional services included (such as hotel, transportation).',
+      'Because every smile anatomy is unique, your personalized written treatment plan is prepared transparently within 24 hours upon reviewing your panoramic X-ray or CT scan.',
     moreDetailsParagraph: (
       <>
-        To get more details on Antalya’s affordable and high-quality dental services and see a{' '}
-        <Link href="/treatments/dental-implants" className={styles.link}>
-          detailed price list,
-        </Link>{' '}
-        you can visit Master Smile Studio’s{' '}
+        Send your dental X-rays to receive a{' '}
         <Link href="/contact" className={styles.link}>
-          <strong>&ldquo;How Much Are Turkey Teeth?&rdquo;</strong>
+          <strong>free personalized treatment plan and custom quote</strong>
         </Link>{' '}
-        page.
+        with zero hidden fees.
       </>
     ),
     packagesLinkParagraph: (
       <>
-        For detailed package prices,{' '}
-        <Link href="/treatments/dental-implants/all-on-4-implants" className={styles.link}>
-          please visit this page
-        </Link>
+        To explore all-inclusive VIP package details,{' '}
+        <Link href="/packages" className={styles.link}>
+          please visit our packages page
+        </Link>.
       </>
     ),
   },
   de: {
-    heading: 'Zahnimplantat-Kosten in Antalya',
+    heading: 'Zahnimplantate & VIP-Paketvorteile in Antalya',
     leadParagraph: (
       <>
-        Die Kosten für <strong>Zahnimplantate in Antalya</strong> hängen von der gewählten Implantatmarke und der Methode ab. Dank der Vorteile des <strong>Medizintourismus in der Türkei</strong> sind Behandlungen in unserer modernen Klinik mit erstklassigen Materialien und erfahrenen Chirurgen deutlich günstiger als in Westeuropa.
+        Die <strong>Zahnimplantatbehandlung in Antalya</strong> wird individuell an Ihre Knochendichte und ästhetischen Wünsche angepasst. Unsere erfahrenen Kieferchirurgen nutzen moderne 3D-DVT-Tomographie und bieten <strong>lebenslange internationale Herstellergarantien</strong>.
       </>
     ),
-    subHeadingTitle: 'Zahnimplantat-Preise in Antalya – Master Smile Studio',
-    subHeadingAverage: 'Die durchschnittlichen Preise lauten wie folgt:',
+    subHeadingTitle: 'Klinische Standards & Implantatsysteme – Master Smile Studio',
+    subHeadingAverage: 'Zertifizierte Premium-Implantatsysteme in unserer Klinik:',
     nucleoss: (
       <>
-        <strong>NUCLEOSS (lokale Qualitätsmarke)</strong> Implantat: ca. <strong>400€</strong> ($450 / 335£)
+        <strong>NUCLEOSS (Reintitan Grad 4):</strong> Hohe Biokompatibilität und lebenslange Garantie.
       </>
     ),
     dxl: (
       <>
-        <strong>DXL (deutsche Marke)</strong> Implantat: ca. <strong>500€</strong> ($550 / 420£)
+        <strong>DXL (Deutsche Ingenieurskunst):</strong> Fortschrittliche SLA-Oberfläche und beschleunigte Einheilung.
       </>
     ),
     straumann: (
       <>
-        <strong>Straumann (Schweizer Premiummarke)</strong> Implantat: ca. <strong>800€</strong> ($900 / 680£)
+        <strong>Straumann (Schweizer Goldstandard):</strong> SLActive hydrophile Oberfläche für maximale Erfolgsraten.
       </>
     ),
     allOnPackagesParagraph: (
       <>
-        Für Patienten mit mehreren fehlenden Zähnen sind Gesamtkiefer-Lösungen wie{' '}
+        Für zahnlose Kiefer bieten wir{' '}
         <Link href="/treatments/dental-implants/all-on-4-implants" className={styles.link}>
           <strong>All-on-4</strong>
         </Link>{' '}
-        oder{' '}
+        und{' '}
         <Link href="/treatments/dental-implants/all-on-6-implants" className={styles.link}>
           <strong>All-on-6</strong>
         </Link>{' '}
-        beliebte Optionen. Die Kosten für diese Pakete liegen zwischen <strong>4.500€ und 7.000€</strong>.
+        Festsitzende Sofortversorgungen inklusive 5-Sterne-Hotel und VIP-Transfer.
       </>
     ),
     complexityParagraph:
-      'Diese Preise können je nach chirurgischem Aufwand (Knochenaufbau, Sinuslift) und gewählten Zusatzleistungen (Hotel, VIP-Transfer) variieren.',
+      'Ihr schriftlicher Behandlungsplan wird innerhalb von 24 Stunden nach Prüfung Ihres Röntgenbildes transparent und verbindlich erstellt.',
     moreDetailsParagraph: (
       <>
-        Weitere Details zu unseren Behandlungsangeboten und eine{' '}
-        <Link href="/treatments/dental-implants" className={styles.link}>
-          detaillierte Preisliste
-        </Link>{' '}
-        finden Sie auf unserer Seite für{' '}
+        Senden Sie uns Ihr Röntgenbild für einen{' '}
         <Link href="/contact" className={styles.link}>
-          <strong>&ldquo;Zahnbehandlungskosten in der Türkei&rdquo;</strong>
+          <strong>kostenlosen individuellen Behandlungsplan</strong>
         </Link>.
       </>
     ),
     packagesLinkParagraph: (
       <>
-        Für detaillierte Paketpreise{' '}
-        <Link href="/treatments/dental-implants/all-on-4-implants" className={styles.link}>
-          besuchen Sie bitte diese Seite
+        Für VIP-Pakete{' '}
+        <Link href="/packages" className={styles.link}>
+          besuchen Sie bitte unsere Pakete-Seite
         </Link>.
       </>
     ),
   },
   pl: {
-    heading: 'Koszty Implantów Zębowych w Antalyi',
+    heading: 'Leczenie Implantologiczne i Pakiety VIP w Antalyi',
     leadParagraph: (
       <>
-        Koszt <strong>implantów zębowych w Antalyi</strong> zależy od marki implantu oraz zastosowanej procedury chirurgicznej. Zabiegi w naszej klinice z udziałem doświadczonych chirurgów są znacznie bardziej przystępne cenowo w porównaniu z Europą Zachodnią.
+        <strong>Leczenie implantologiczne w Antalyi</strong> jest indywidualnie dopasowywane do gęstości kości pacjenta. Nasi chirurdzy stomatologiczni stosują cyfrową tomografię 3D CBCT i zapewniają <strong>dożywotni międzynarodowy paszport gwarancyjny</strong>.
       </>
     ),
-    subHeadingTitle: 'Ceny Implantów w Antalyi – Master Smile Studio',
-    subHeadingAverage: 'Średnie ceny kształtują się następująco:',
+    subHeadingTitle: 'Standardy Kliniczne i Systemy Implantów – Master Smile Studio',
+    subHeadingAverage: 'Certyfikowane systemy implantologiczne premium w naszej klinice:',
     nucleoss: (
       <>
-        Implant <strong>NUCLEOSS</strong>: około <strong>$450</strong> (400€ / 335£)
+        <strong>NUCLEOSS (Czysty Tytan Grade 4):</strong> Wysoka biokompatybilność i dożywotnia gwarancja.
       </>
     ),
     dxl: (
       <>
-        Implant <strong>DXL (marka niemiecka)</strong>: około <strong>$550</strong> (500€ / 420£)
+        <strong>DXL (Niemiecka Inżynieria):</strong> Zaawansowana technologia powierzchni SLA i szybka osteointegracja.
       </>
     ),
     straumann: (
       <>
-        Implant <strong>Straumann (marka szwajcarska)</strong>: około <strong>$900</strong> (800€ / 680£)
+        <strong>Straumann (Szwajcarski Złoty Standard):</strong> Hydrofilowa powierzchnia SLActive o najwyższej skuteczności.
       </>
     ),
     allOnPackagesParagraph: (
       <>
-        Dla pacjentów z bezzębiem pakiety{' '}
+        Dla pacjentów z bezzębiem oferujemy pakiety{' '}
         <Link href="/treatments/dental-implants/all-on-4-implants" className={styles.link}>
           <strong>All-on-4</strong>
         </Link>{' '}
-        i{' '}
+        oraz{' '}
         <Link href="/treatments/dental-implants/all-on-6-implants" className={styles.link}>
           <strong>All-on-6</strong>
         </Link>{' '}
-        wynoszą od <strong>$4,900 do $7,600</strong> w zależności od wybranej marki.
+        ze stałym uzębieniem tymczasowym w 24h, 5-gwiazdkowym hotelem i transferami VIP.
       </>
     ),
     complexityParagraph:
-      'Ceny mogą ulec zmianie w zależności od procedur towarzyszących (podniesienie zatoki, odbudowa kości) oraz pakietów hotelowych.',
+      'Twój indywidualny plan leczenia przygotowywany jest bezpłatnie w ciągu 24 godzin po przesłaniu zdjęcia pantomograficznego.',
     moreDetailsParagraph: (
       <>
-        Aby poznać{' '}
-        <Link href="/treatments/dental-implants" className={styles.link}>
-          szczegółowy cennik
-        </Link>{' '}
-        zapraszamy do kontaktu z naszym zespołem.
+        Prześlij swoje zdjęcie RTG, aby otrzymać{' '}
+        <Link href="/contact" className={styles.link}>
+          <strong>bezpłatny plan leczenia i wycenę</strong>
+        </Link>.
       </>
     ),
     packagesLinkParagraph: (
       <>
-        Szczegółowe pakiety:{' '}
-        <Link href="/treatments/dental-implants/all-on-4-implants" className={styles.link}>
-          przejdź do strony pakietów
+        Szczegóły pakietów VIP znajdziesz na{' '}
+        <Link href="/packages" className={styles.link}>
+          stronie pakietów
         </Link>.
       </>
     ),
   },
   pt: {
-    heading: 'Custos de Implantes Dentários em Antalya',
+    heading: 'Tratamento com Implantes e Pacotes VIP em Antália',
     leadParagraph: (
       <>
-        O custo dos <strong>implantes dentários em Antalya</strong> varia de acordo com a marca do implante e o método cirúrgico. Realizados em nossa clínica com materiais de alta qualidade e cirurgiões experientes, os tratamentos são muito mais acessíveis do que na Europa.
+        O <strong>tratamento com implantes dentários em Antália</strong> é personalizado de acordo com a anatomia do paciente. Nossos cirurgiões utilizam tomografia 3D CBCT e emitem <strong>passaporte com garantia internacional vitalícia</strong>.
       </>
     ),
-    subHeadingTitle: 'Preços de Implantes em Antalya – Master Smile Studio',
-    subHeadingAverage: 'Os preços médios são os seguintes:',
+    subHeadingTitle: 'Padrões Clínicos & Sistemas de Implantes – Master Smile Studio',
+    subHeadingAverage: 'Sistemas de implantes premium certificados disponíveis em nossa clínica:',
     nucleoss: (
       <>
-        Implante <strong>NUCLEOSS</strong>: aproximadamente <strong>$450</strong> (400€ / 335£)
+        <strong>NUCLEOSS (Titânio Grau 4 Puro):</strong> Alta biocompatibilidade e garantia vitalícia.
       </>
     ),
     dxl: (
       <>
-        Implante <strong>DXL (marca alemã)</strong>: aproximadamente <strong>$550</strong> (500€ / 420£)
+        <strong>DXL (Engenharia Alemã):</strong> Superfície SLA avançada e rápida osteointegração.
       </>
     ),
     straumann: (
       <>
-        Implante <strong>Straumann (marca suíça)</strong>: aproximadamente <strong>$900</strong> (800€ / 680£)
+        <strong>Straumann (Padrão Ouro Suíço):</strong> Superfície hidrofílica SLActive com máxima taxa de sucesso clínico.
       </>
     ),
     allOnPackagesParagraph: (
       <>
-        Para restaurações de arcada completa como{' '}
+        Para perdas totais de dentes, realizamos protocolos{' '}
         <Link href="/treatments/dental-implants/all-on-4-implants" className={styles.link}>
           <strong>All-on-4</strong>
         </Link>{' '}
-        ou{' '}
+        e{' '}
         <Link href="/treatments/dental-implants/all-on-6-implants" className={styles.link}>
           <strong>All-on-6</strong>
-        </Link>
-        , os valores variam entre <strong>$4,900 e $7,600</strong>.
+        </Link>{' '}
+        com dentes fixos no mesmo dia, hotel 5 estrelas e transfers VIP.
       </>
     ),
     complexityParagraph:
-      'Os preços podem variar conforme a necessidade de enxerto ósseo ou sinus lift.',
+      'Seu plano de tratamento personalizado é preparado em até 24 horas após o envio da sua radiografia panorâmica.',
     moreDetailsParagraph: (
       <>
-        Para consultar a lista completa, visite a nossa{' '}
-        <Link href="/treatments/dental-implants" className={styles.link}>
-          tabela de preços
+        Envie sua radiografia para receber um{' '}
+        <Link href="/contact" className={styles.link}>
+          <strong>plano de tratamento e orçamento gratuito</strong>
         </Link>.
       </>
     ),
     packagesLinkParagraph: (
       <>
-        Consulte os pacotes:{' '}
-        <Link href="/treatments/dental-implants/all-on-4-implants" className={styles.link}>
-          clique aqui
+        Para ver todos os pacotes VIP,{' '}
+        <Link href="/packages" className={styles.link}>
+          visite nossa página de pacotes
         </Link>.
       </>
     ),
   },
   es: {
-    heading: 'Precios de Implantes Dentales en Antalya',
+    heading: 'Tratamiento de Implantes y Paquetes VIP en Antalya',
     leadParagraph: (
       <>
-        El coste de los <strong>implantes dentales en Antalya</strong> varía según la marca y la técnica quirúrgica. Gracias al turismo dental en Turquía, los precios son hasta un 70% más económicos que en España o Europa, garantizando la máxima calidad clínica.
+        El <strong>tratamiento de implantes dentales en Antalya</strong> se diseña a medida según la anatomía ósea de cada paciente. Nuestros cirujanos utilizan tomografía 3D CBCT y entregan <strong>pasaporte de garantía internacional de por vida</strong>.
       </>
     ),
-    subHeadingTitle: 'Precios de Implantes en Antalya – Master Smile Studio',
-    subHeadingAverage: 'Los precios medios son los siguientes:',
+    subHeadingTitle: 'Estándares Clínicos y Sistemas de Implantes – Master Smile Studio',
+    subHeadingAverage: 'Sistemas de implantes premium certificados en nuestra clínica:',
     nucleoss: (
       <>
-        Implante <strong>NUCLEOSS</strong>: aproximadamente <strong>$450</strong> (400€ / 335£)
+        <strong>NUCLEOSS (Titanio Puro Grado 4):</strong> Alta biocompatibilidad y garantía de por vida.
       </>
     ),
     dxl: (
       <>
-        Implante <strong>DXL (marca alemana)</strong>: aproximadamente <strong>$550</strong> (500€ / 420£)
+        <strong>DXL (Ingeniería Alemana):</strong> Superficie SLA avanzada y rápida osteointegración.
       </>
     ),
     straumann: (
       <>
-        Implante <strong>Straumann (marca suiza)</strong>: aproximadamente <strong>$900</strong> (800€ / 680£)
+        <strong>Straumann (Estándar de Oro Suizo):</strong> Superficie hidrófila SLActive con máximo éxito clínico.
       </>
     ),
     allOnPackagesParagraph: (
       <>
-        Para arcadas completas como{' '}
+        Para pacientes con ausencia total de piezas, ofrecemos{' '}
         <Link href="/treatments/dental-implants/all-on-4-implants" className={styles.link}>
           <strong>All-on-4</strong>
         </Link>{' '}
-        o{' '}
+        y{' '}
         <Link href="/treatments/dental-implants/all-on-6-implants" className={styles.link}>
           <strong>All-on-6</strong>
-        </Link>
-        , el coste oscila entre <strong>$4,900 y $7,600</strong> según la marca de implante.
+        </Link>{' '}
+        con carga fija inmediata el mismo día, hotel 5 estrellas y traslados VIP.
       </>
     ),
     complexityParagraph:
-      'Los precios pueden ajustarse si se requiere elevación de seno o injerto óseo.',
+      'Su plan de tratamiento personalizado se prepara en 24 horas tras la revisión de su radiografía panorámica.',
     moreDetailsParagraph: (
       <>
-        Para más detalles sobre los costes en Turquía, visite nuestra{' '}
-        <Link href="/treatments/dental-implants" className={styles.link}>
-          lista de precios detallada
+        Envíe sus radiografías para recibir un{' '}
+        <Link href="/contact" className={styles.link}>
+          <strong>plan de tratamiento y presupuesto gratuito</strong>
         </Link>.
       </>
     ),
     packagesLinkParagraph: (
       <>
-        Para conocer los paquetes:{' '}
-        <Link href="/treatments/dental-implants/all-on-4-implants" className={styles.link}>
-          visite esta página
+        Para consultar los paquetes VIP,{' '}
+        <Link href="/packages" className={styles.link}>
+          visite nuestra página de paquetes
         </Link>.
       </>
     ),
   },
   ru: {
-    heading: 'Стоимость зубных имплантов в Анталье',
+    heading: 'Имплантация Зубов и VIP-Пакеты в Анталье',
     leadParagraph: (
       <>
-        Стоимость <strong>зубных имплантов в Анталье</strong> варьируется в зависимости от выбранного бренда и метода лечения. Благодаря преимуществам медицинского туризма в Турции, лечение в Master Smile Studio обходится значительно выгоднее, чем в странах Европы.
+        <strong>Имплантация зубов в Анталье</strong> планируется индивидуально на основе плотности костной ткани и 3D-томографии. Наши челюстно-лицевые хирурги предоставляют <strong>пожизненный международный паспорт гарантии</strong> от производителя.
       </>
     ),
-    subHeadingTitle: 'Цены на импланты в Анталье – Master Smile Studio',
-    subHeadingAverage: 'Средняя стоимость составляет:',
+    subHeadingTitle: 'Клинические Стандарты и Системы Имплантов – Master Smile Studio',
+    subHeadingAverage: 'Сертифицированные системы имплантов премиум-класса:',
     nucleoss: (
       <>
-        Имплант <strong>NUCLEOSS (Турция)</strong>: около <strong>$450</strong> (400€ / 335£)
+        <strong>NUCLEOSS (Чистый титан Grade 4):</strong> Высокая биосовместимость и пожизненная гарантия.
       </>
     ),
     dxl: (
       <>
-        Имплант <strong>DXL (Германия)</strong>: около <strong>$550</strong> (500€ / 420£)
+        <strong>DXL (Немецкая инженерия):</strong> Передовая SLA-поверхность и быстрая остеоинтеграция.
       </>
     ),
     straumann: (
       <>
-        Имплант <strong>Straumann (Швейцария)</strong>: около <strong>$900</strong> (800€ / 680£)
+        <strong>Straumann (Швейцарский золотой стандарт):</strong> Гидрофильная поверхность SLActive с максимальной приживаемостью.
       </>
     ),
     allOnPackagesParagraph: (
       <>
-        Для полной реставрации челюсти по протоколам{' '}
+        При полном отсутствии зубов мы проводим протоколы{' '}
         <Link href="/treatments/dental-implants/all-on-4-implants" className={styles.link}>
           <strong>All-on-4</strong>
         </Link>{' '}
-        или{' '}
+        и{' '}
         <Link href="/treatments/dental-implants/all-on-6-implants" className={styles.link}>
           <strong>All-on-6</strong>
         </Link>{' '}
-        стоимость пакетов составляет от <strong>$4,900 до $7,600</strong>.
+        с несъемными временными зубами в день операции, 5-звездочным отелем и VIP-трансфером.
       </>
     ),
     complexityParagraph:
-      'Цены могут корректироваться в зависимости от необходимости наращивания кости или синус-лифтинга.',
+      'Индивидуальный план лечения составляется в течение 24 часов после анализа вашего панорамного снимка или КТ.',
     moreDetailsParagraph: (
       <>
-        Подробную информацию и прайс-лист вы можете посмотреть в разделе{' '}
-        <Link href="/treatments/dental-implants" className={styles.link}>
-          цены на имплантацию
+        Отправьте снимок для получения{' '}
+        <Link href="/contact" className={styles.link}>
+          <strong>бесплатного плана лечения и индивидуального расчета</strong>
         </Link>.
       </>
     ),
     packagesLinkParagraph: (
       <>
-        Подробнее о пакетах:{' '}
-        <Link href="/treatments/dental-implants/all-on-4-implants" className={styles.link}>
-          перейти на страницу
+        Подробнее о VIP-пакетах читайте на{' '}
+        <Link href="/packages" className={styles.link}>
+          странице пакетов
         </Link>.
       </>
     ),

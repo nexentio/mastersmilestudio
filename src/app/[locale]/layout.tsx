@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Outfit } from "next/font/google";
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, setRequestLocale } from 'next-intl/server';
@@ -93,6 +94,17 @@ export async function generateMetadata({
         'max-snippet': -1,
       },
     },
+    icons: {
+      icon: [
+        { url: '/icon0.svg', type: 'image/svg+xml' },
+        { url: '/icon1.png', type: 'image/png' },
+        { url: '/favicon.ico', sizes: 'any' },
+      ],
+      apple: [
+        { url: '/apple-icon.png', sizes: '180x180', type: 'image/png' },
+      ],
+    },
+    manifest: '/manifest.json',
     other: {
       'geo.region': siteConfig.geo.region,
       'geo.placename': siteConfig.geo.placename,
@@ -244,6 +256,76 @@ export default async function LocaleLayout({
         />
       </head>
       <body>
+        {/* Google Analytics 4 & Google Ads */}
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-S7QS0HS2W7"
+        />
+        <Script
+          id="google-analytics-and-ads"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', 'G-S7QS0HS2W7');
+              gtag('config', 'AW-17551178761');
+
+              // Conversion Trackers
+              window.trackPhoneCall = function (phoneNumber) {
+                if (typeof gtag !== 'undefined') {
+                  gtag('event', 'conversion', {
+                    send_to: 'AW-17551178761/V0FZCLT-n5kbEIn4hrFB',
+                  });
+                }
+                if (typeof clarity !== 'undefined') {
+                  clarity('event', 'phoneCall');
+                }
+              };
+
+              window.trackWhatsAppClick = function (serviceType) {
+                if (typeof gtag !== 'undefined') {
+                  gtag('event', 'conversion', {
+                    send_to: 'AW-17551178761/V0FZCLT-n5kbEIn4hrFB',
+                  });
+                }
+                if (typeof clarity !== 'undefined') {
+                  clarity('event', 'whatsAppClick');
+                }
+              };
+
+              window.trackConsultationRequest = function (contactMethod) {
+                if (typeof gtag !== 'undefined') {
+                  gtag('event', 'conversion', {
+                    send_to: 'AW-17551178761/V0FZCLT-n5kbEIn4hrFB',
+                  });
+                }
+                if (typeof clarity !== 'undefined') {
+                  clarity('event', 'consultationRequest');
+                  clarity('upgrade', 'conversion');
+                }
+              };
+            `,
+          }}
+        />
+
+        {/* Microsoft Clarity */}
+        <Script
+          id="microsoft-clarity"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(c,l,a,r,i,t,y){
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+              })(window, document, "clarity", "script", "vgnpq383cw");
+            `,
+          }}
+        />
+
         <NextIntlClientProvider messages={messages}>
           {children}
           <WhatsAppPopup />

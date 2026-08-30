@@ -22,6 +22,10 @@
   "doctorTulayTitle": "Ağız, Diş ve Çene Cerrahı",
   "doctorAliKemalTitle": "Uzman Diş Hekimi",
   "doctorAbdullahTitle": "Endodonti & Restoratif Tedavi",
+  "hollywoodSmile": {
+    "title": "Hollywood Smile",
+    "description": "Kusursuz beyaz simetri ve altın oranlı büyüleyici Hollywood gülüşü."
+  },
   "smileDesign": {
     "title": "Gülüş Tasarımı",
     "description": "Yüz hatlarınıza özel altın oran ve dijital gülüş tasarımı."
@@ -106,6 +110,10 @@
     "surgery": {
       "title": "AĞIZ, DİŞ VE ÇENE CERRAHİSİ",
       "description": "Gömülü 20'lik diş çekimleri, kist operasyonları ve kemik ogmentasyonu cerrahi uzmanlığı."
+    },
+    "hollywoodSmile": {
+      "title": "HOLLYWOOD SMILE",
+      "description": "Yüz altın oranına özel İsviçre E-Max veya Alman Zirkonyum kaplamalar ile büyüleyici Hollywood gülüşü."
     }
   },
   "rightTreatment": {

@@ -77,13 +77,13 @@
 
 .flRow {
   display: grid;
-  grid-template-columns: 1fr 90px 90px 90px;
+  grid-template-columns: 1fr 110px 160px 140px;
   align-items: center;
   padding: 0.95rem 1.4rem;
   border-bottom: 1px solid #f1f5f9;
   font-size: 0.93rem;
   transition: background-color 0.2s ease;
-  min-width: 540px;
+  min-width: 620px;
 }
 
 .flRow:last-child {
@@ -116,31 +116,60 @@
   color: #334155;
 }
 
-.flPrice {
-  text-align: right;
-  font-weight: 700;
-  color: #0f172a;
-  font-variant-numeric: tabular-nums;
+.flDuration {
+  color: #64748b;
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+
+.flWarranty {
+  display: flex;
+  align-items: center;
+}
+
+.warrantyBadge {
+  display: inline-flex;
+  align-items: center;
+  background-color: #ecfdf5;
+  color: #065f46;
+  border: 1px solid #a7f3d0;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
   white-space: nowrap;
 }
 
-.flPrice b {
-  font-weight: 600;
-  font-size: 0.88em;
-  color: #D58936;
-  margin-right: 2px;
-}
-
-.flColhead .flPrice {
-  color: #64748b;
+.flActionHead {
+  text-align: right;
+  color: #475569;
   font-weight: 700;
 }
 
-.flColhead .flPrice small {
-  font-size: 0.76em;
-  color: #94a3b8;
+.flAction {
+  text-align: right;
+}
+
+.rowQuoteBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0c1b4d;
+  color: #ffffff;
   font-weight: 600;
-  text-transform: uppercase;
+  font-size: 0.82rem;
+  padding: 0.45rem 0.85rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.rowQuoteBtn:hover {
+  background-color: #25D366;
+  color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.25);
 }
 
 .flExplore {

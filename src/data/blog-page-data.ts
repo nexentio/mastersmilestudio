@@ -98,7 +98,7 @@ export const BLOG_POSTS: BlogPost[] = [
     image: '/blog/jurgen-klopp-smile.webp',
     category: 'celebrities-teeth',
     title: {
-      en: 'Jurgen Klopp Teeth Before and After | The $30,000 Smile Makeover',
+      en: 'Jurgen Klopp Teeth Before and After | The Celebrity Smile Makeover',
       tr: 'Jürgen Klopp Dişleri Öncesi ve Sonrası: 30.000 Dolar Değerindeki Gülüş Değişimi',
       de: 'Jürgen Klopp Zähne Vorher & Nachher: Das legendäre Lächeln-Makeover',
       pl: 'Zęby Jürgena Kloppa Przed i Po: Spektakularna metamorfoza uśmiechu',
@@ -389,7 +389,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'celebrities-with-veneers',
-    image: '/blog/celebrities-veneers.avif',
+    image: '/blog/celebrities-veneers.webp',
     category: 'celebrities-teeth',
     title: {
       en: 'Celebrities With Veneers: Top Hollywood Smile Transformations',

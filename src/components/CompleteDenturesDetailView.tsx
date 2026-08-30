@@ -66,7 +66,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           'Soft relining adjustment & initial occlusion balancing visit',
           'VIP Airport & Clinic Transfer included'
         ],
-        price: { USD: '$650', EUR: '€590', GBP: '£520' }
+        price: { USD: 'Custom Quote', EUR: 'Custom Quote', GBP: 'Custom Quote' }
       },
       {
         name: 'Dual Arch Complete Smile Rehabilitation Set',
@@ -81,7 +81,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           'Comprehensive post-insertion bite calibration & pressure spot relief',
           'VIP Airport Transfer + 4-Star Hotel package option'
         ],
-        price: { USD: '$1,190', EUR: '€1,090', GBP: '£950' }
+        price: { USD: 'Custom Quote', EUR: 'Custom Quote', GBP: 'Custom Quote' }
       },
       {
         name: 'BPS Biofunctional 3D CAD/CAM Milled Full Denture',
@@ -96,7 +96,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           'Digital backup scan stored for lifetime 24-hour exact re-milling',
           '5-Year Clinic Quality Warranty & VIP Concierge support'
         ],
-        price: { USD: '$890', EUR: '€820', GBP: '£720' }
+        price: { USD: 'Custom Quote', EUR: 'Custom Quote', GBP: 'Custom Quote' }
       }
     ],
     faqs: [
@@ -165,7 +165,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           'Yumuşak astar uyumlama ve ilk kapanış dengeleme randevusu',
           'VIP Havalimanı ve Klinik Transferleri dahil'
         ],
-        price: { USD: '$650', EUR: '€590', GBP: '£520' }
+        price: { USD: 'Custom Quote', EUR: 'Custom Quote', GBP: 'Custom Quote' }
       },
       {
         name: 'Çift Çene Tam Gülüş Rehabilitasyon Seti',
@@ -180,7 +180,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           'Detaylı teslim sonrası vuruk alma ve çiğneme optimizasyonu',
           'VIP Transfer + 4 Yıldızlı Otel konaklama opsiyonu'
         ],
-        price: { USD: '$1,190', EUR: '€1,090', GBP: '£950' }
+        price: { USD: 'Custom Quote', EUR: 'Custom Quote', GBP: 'Custom Quote' }
       },
       {
         name: 'BPS Biyofonksiyonel 3D CAD/CAM Freze Tam Protez',
@@ -195,7 +195,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           'Ömür boyu 24 saatte yeniden üretilebilen dijital arşiv kaydı',
           '5 Yıl Klinik Kalite Garantisi ve VIP Konsiyerj hizmeti'
         ],
-        price: { USD: '$890', EUR: '€820', GBP: '£720' }
+        price: { USD: 'Custom Quote', EUR: 'Custom Quote', GBP: 'Custom Quote' }
       }
     ],
     faqs: [
@@ -264,7 +264,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           'Weichbleibende Unterfütterung und Okklusionsfeineinstellung',
           'Inklusive VIP-Transfer Flughafen und Klinik'
         ],
-        price: { USD: '$650', EUR: '€590', GBP: '£520' }
+        price: { USD: 'Custom Quote', EUR: 'Custom Quote', GBP: 'Custom Quote' }
       },
       {
         name: 'Komplettes Lächeln-Rehabilitationsset (Beide Kiefer)',
@@ -279,7 +279,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           'Druckstellenentlastung und Bissanpassung nach Eingliederung',
           'VIP-Transfer + Option auf 4-Sterne-Zentralhotel'
         ],
-        price: { USD: '$1,190', EUR: '€1,090', GBP: '£950' }
+        price: { USD: 'Custom Quote', EUR: 'Custom Quote', GBP: 'Custom Quote' }
       },
       {
         name: 'BPS Biofunktionelle 3D CAD/CAM Totalprothese',
@@ -294,7 +294,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           'Digitale Sicherung für lebenslange 24-Stunden-Nachfertigung',
           '5 Jahre Klinik-Garantie & VIP-Concierge-Betreuung'
         ],
-        price: { USD: '$890', EUR: '€820', GBP: '£720' }
+        price: { USD: 'Custom Quote', EUR: 'Custom Quote', GBP: 'Custom Quote' }
       }
     ],
     faqs: [
@@ -345,7 +345,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           'Dopasowanie elastycznego podścielenia i kalibracja zgryzu',
           'Transfery VIP Lotnisko i Klinika w cenie'
         ],
-        price: { USD: '$650', EUR: '€590', GBP: '£520' }
+        price: { USD: 'Custom Quote', EUR: 'Custom Quote', GBP: 'Custom Quote' }
       },
       {
         name: 'Kompletny Zestaw Rehabilitacji Obu Łuków Zębowych',
@@ -360,7 +360,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           'Korekta miejsc uciskowych po oddaniu protez',
           'Transfery VIP + Opcja 4-gwiazdkowego hotelu'
         ],
-        price: { USD: '$1,190', EUR: '€1,090', GBP: '£950' }
+        price: { USD: 'Custom Quote', EUR: 'Custom Quote', GBP: 'Custom Quote' }
       },
       {
         name: 'Biofunkcjonalna Proteza 3D CAD/CAM BPS Ivoclar',
@@ -375,7 +375,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           'Cyfrowa kopia zapasowa do odtworzenia w 24 godziny',
           '5 Lat Gwarancji Jakości i wsparcie VIP Concierge'
         ],
-        price: { USD: '$890', EUR: '€820', GBP: '£720' }
+        price: { USD: 'Custom Quote', EUR: 'Custom Quote', GBP: 'Custom Quote' }
       }
     ],
     faqs: [
@@ -426,7 +426,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           'Reembasamento macio e balanceamento oclusal',
           'Transfers VIP Aeroporto e Clínica incluídos'
         ],
-        price: { USD: '$650', EUR: '€590', GBP: '£520' }
+        price: { USD: 'Custom Quote', EUR: 'Custom Quote', GBP: 'Custom Quote' }
       },
       {
         name: 'Conjunto de Reabilitação Total (Ambas as Arcadas)',
@@ -441,7 +441,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           'Ajuste pós-colocação e alívio de pontos de pressão',
           'Transfer VIP + Opção de Hotel 4 Estrelas'
         ],
-        price: { USD: '$1,190', EUR: '€1,090', GBP: '£950' }
+        price: { USD: 'Custom Quote', EUR: 'Custom Quote', GBP: 'Custom Quote' }
       },
       {
         name: 'Prótese Total 3D CAD/CAM Biofuncional BPS',
@@ -456,7 +456,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           'Arquivo digital para reprodução exata em 24 horas',
           '5 Anos de Garantia Clínica e Assistência VIP'
         ],
-        price: { USD: '$890', EUR: '€820', GBP: '£720' }
+        price: { USD: 'Custom Quote', EUR: 'Custom Quote', GBP: 'Custom Quote' }
       }
     ],
     faqs: [
@@ -501,7 +501,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           'Rebase blando y equilibrado de la oclusión inicial',
           'Traslados VIP Aeropuerto y Clínica incluidos'
         ],
-        price: { USD: '$650', EUR: '€590', GBP: '£520' }
+        price: { USD: 'Custom Quote', EUR: 'Custom Quote', GBP: 'Custom Quote' }
       },
       {
         name: 'Set de Rehabilitación Completa (Ambas Arcadas)',
@@ -516,7 +516,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           'Alivio de zonas de presión y calibración de mordida',
           'Traslados VIP + Opción de Hotel 4 Estrellas'
         ],
-        price: { USD: '$1,190', EUR: '€1,090', GBP: '£950' }
+        price: { USD: 'Custom Quote', EUR: 'Custom Quote', GBP: 'Custom Quote' }
       },
       {
         name: 'Prótesis Completa 3D CAD/CAM Biofuncional BPS',
@@ -531,7 +531,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           'Respaldo digital para reposición en 24 horas',
           '5 Años de Garantía Clínica y Asistencia VIP'
         ],
-        price: { USD: '$890', EUR: '€820', GBP: '£720' }
+        price: { USD: 'Custom Quote', EUR: 'Custom Quote', GBP: 'Custom Quote' }
       }
     ],
     faqs: [
@@ -576,7 +576,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           'Мягкая перебазировка и первоначальная коррекция окклюзии',
           'VIP-трансфер из аэропорта и клиники включен'
         ],
-        price: { USD: '$650', EUR: '€590', GBP: '£520' }
+        price: { USD: 'Custom Quote', EUR: 'Custom Quote', GBP: 'Custom Quote' }
       },
       {
         name: 'Полный комплекс реабилитации улыбки (на обе челюсти)',
@@ -591,7 +591,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           'Коррекция точек давления после установки',
           'VIP-трансфер + опция отеля 4 звезды'
         ],
-        price: { USD: '$1,190', EUR: '€1,090', GBP: '£950' }
+        price: { USD: 'Custom Quote', EUR: 'Custom Quote', GBP: 'Custom Quote' }
       },
       {
         name: 'Биофункциональный 3D CAD/CAM протез BPS Ivoclar',
@@ -606,7 +606,7 @@ const DICTIONARIES: Record<string, LocaleDictionary> = {
           'Цифровой архив для повторного изготовления за 24 часа',
           '5 лет гарантии качества и VIP-сопровождение'
         ],
-        price: { USD: '$890', EUR: '€820', GBP: '£720' }
+        price: { USD: 'Custom Quote', EUR: 'Custom Quote', GBP: 'Custom Quote' }
       }
     ],
     faqs: [
