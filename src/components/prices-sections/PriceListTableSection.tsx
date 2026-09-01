@@ -120,18 +120,18 @@ export default function PriceListTableSection() {
                         const treatmentName = getLocalized(row.name);
                         const rowWaMsg = encodeURIComponent(
                           locale === 'tr'
-                            ? `Merhaba Master Smile Studio! "${treatmentName}" için kişiye özel fiyat teklifi ve tedavi planı almak istiyorum.`
+                            ? `Merhaba, web siteniz üzerinden ulaşıyorum. "${treatmentName}" için kişiye özel fiyat teklifi ve tedavi planı almak istiyorum.`
                             : locale === 'de'
-                            ? `Hallo Master Smile Studio! Ich möchte ein individuelles Preisangebot und einen Behandlungsplan für "${treatmentName}" erhalten.`
+                            ? `Hallo, ich kontaktiere Sie über Ihre Website. Ich möchte ein individuelles Preisangebot und einen Behandlungsplan für "${treatmentName}" erhalten.`
                             : locale === 'pl'
-                            ? `Dzień dobry Master Smile Studio! Chciałbym otrzymać indywidualną wycenę i plan leczenia dla "${treatmentName}".`
+                            ? `Dzień dobry, kontaktuję się przez Państwa stronę internetową. Chciałbym otrzymać indywidualną wycenę i plan leczenia dla "${treatmentName}".`
                             : locale === 'pt'
-                            ? `Olá Master Smile Studio! Gostaria de receber um orçamento personalizado e plano de tratamento para "${treatmentName}".`
+                            ? `Olá, estou entrando em contato através do seu site. Gostaria de receber um orçamento personalizado e plano de tratamento para "${treatmentName}".`
                             : locale === 'es'
-                            ? `¡Hola Master Smile Studio! Me gustaría recibir un presupuesto personalizado y plan de tratamiento para "${treatmentName}".`
+                            ? `¡Hola! Me pongo en contacto a través de su sitio web. Me gustaría recibir un presupuesto personalizado y plan de tratamiento para "${treatmentName}".`
                             : locale === 'ru'
-                            ? `Здравствуйте Master Smile Studio! Я хотел бы получить индивидуальный расчет и план лечения для "${treatmentName}".`
-                            : `Hello Master Smile Studio! I would like to get a personalized price quote and treatment plan for "${treatmentName}".`
+                            ? `Здравствуйте! Я обращаюсь через ваш сайт. Я хотел бы получить индивидуальный расчет и план лечения для "${treatmentName}".`
+                            : `Hello, I am contacting you through your website. I would like to get a personalized price quote and treatment plan for "${treatmentName}".`
                         );
                         const rowWaUrl = `https://wa.me/${whatsappNumber}?text=${rowWaMsg}`;
 

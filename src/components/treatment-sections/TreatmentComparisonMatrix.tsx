@@ -72,7 +72,7 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
             duration: '4–6 Days (Single Visit)',
             preparation: 'Circumferential reduction of neighbor teeth',
             clinicalMetric: '1200+ MPa Flexural Strength',
-            href: '/treatments/dental-bridge',
+            href: '/treatments/dental-bridges',
           },
           {
             treatmentName: 'Snap-On Overdenture',
@@ -177,7 +177,7 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
             duration: '4–6 Gün (Tek Ziyaret)',
             preparation: 'Komşu destek dişlerin çepeçevre küçültülmesi',
             clinicalMetric: '1200+ MPa Bükülme Direnci',
-            href: '/treatments/dental-bridge',
+            href: '/treatments/dental-bridges',
           },
           {
             treatmentName: 'Çıt Çıtlı Overdenture',
@@ -282,7 +282,7 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
             duration: '4–6 Tage (1 Reise)',
             preparation: 'Zirkuläres Beschleifen der Pfeilerzähne',
             clinicalMetric: '1200+ MPa Biegefestigkeit',
-            href: '/treatments/dental-bridge',
+            href: '/treatments/dental-bridges',
           },
           {
             treatmentName: 'Snap-On Klickprothese',
@@ -387,7 +387,7 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
             duration: '4–6 Dni (1 Wizyta)',
             preparation: 'Szlifowanie zębów sąsiadujących',
             clinicalMetric: 'Wytrzymałość 1200+ MPa',
-            href: '/treatments/dental-bridge',
+            href: '/treatments/dental-bridges',
           },
           {
             treatmentName: 'Proteza na Zatrzaskach Overdenture',
@@ -492,7 +492,7 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
             duration: '4–6 Dias (1 Viagem)',
             preparation: 'Desgaste dos dentes de suporte',
             clinicalMetric: '1200+ MPa de Resistência Flexural',
-            href: '/treatments/dental-bridge',
+            href: '/treatments/dental-bridges',
           },
           {
             treatmentName: 'Overdenture de Clique',
@@ -597,7 +597,7 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
             duration: '4–6 Días (1 Viaje)',
             preparation: 'Tallado de dientes contiguos',
             clinicalMetric: '1200+ MPa Resistencia a la Flexión',
-            href: '/treatments/dental-bridge',
+            href: '/treatments/dental-bridges',
           },
           {
             treatmentName: 'Sobredentadura con Anclaje',
@@ -702,7 +702,7 @@ const MATRIX_DATA: Record<string, MatrixDictionary> = {
             duration: '4–6 Дней (1 Визит)',
             preparation: 'Круговое обтачивание опорных зубов',
             clinicalMetric: 'Прочность на изгиб 1200+ МПа',
-            href: '/treatments/dental-bridge',
+            href: '/treatments/dental-bridges',
           },
           {
             treatmentName: 'Замковый протез Overdenture',

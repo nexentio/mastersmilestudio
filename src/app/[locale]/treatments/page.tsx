@@ -12,16 +12,37 @@ interface Props {
   }>;
 }
 
+const TREATMENTS_META_TITLES: Record<string, string> = {
+  en: 'Dental Treatments & Procedures in Antalya | Master Smile Studio',
+  tr: 'Kapsamlı Diş Tedavileri ve Prosedürleri Antalya | Master Smile Studio',
+  de: 'Umfassende Zahnbehandlungen in Antalya | Master Smile Studio',
+  pl: 'Kompleksowe Leczenie Stomatologiczne w Antalyi | Master Smile Studio',
+  pt: 'Tratamentos Dentários Completos em Antália | Master Smile Studio',
+  es: 'Tratamientos Dentales Integrales en Antalya | Master Smile Studio',
+  ru: 'Комплексное Лечение Зубов в Анталье | Master Smile Studio',
+};
+
+const TREATMENTS_META_DESCS: Record<string, string> = {
+  en: 'Explore 16+ advanced dental treatment disciplines delivered by specialist surgeons in Antalya, Turkey.',
+  tr: 'Antalya’da uzman hekimlerimizle sunulan 16+ ileri diş tedavi branşı, dijital gülüş tasarımı ve implant tedavileri.',
+  de: 'Entdecken Sie über 16 fortschrittliche Zahnbehandlungen mit modernster Technologie und Fachärzten in Antalya.',
+  pl: 'Poznaj ponad 16 zaawansowanych dziedzin leczenia stomatologicznego w Antalyi z zespołem lekarzy specjalistów.',
+  pt: 'Descubra mais de 16 especialidades odontológicas avançadas com tecnologia de ponta e equipa médica em Antália.',
+  es: 'Más de 16 ramas odontológicas avanzadas con tecnología de vanguardia y especialistas experimentados en Antalya.',
+  ru: 'Более 16 направлений стоматологического лечения с применением передовых технологий и опытных врачей в Анталье.',
+};
+
 export async function generateMetadata({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: 'services' });
 
   return {
-    title: t('metaTitle') || 'Dental Treatments in Antalya | Master Smile Studio',
+    title: t('metaTitle') || TREATMENTS_META_TITLES[locale] || TREATMENTS_META_TITLES.en,
     description:
       t('metaDescription') ||
-      'Explore world-class dental treatments, digital smile design, and implants in Antalya, Turkey.',
+      TREATMENTS_META_DESCS[locale] ||
+      TREATMENTS_META_DESCS.en,
     alternates: getI18nAlternates('/treatments', locale, TREATMENT_LOCALES),
   };
 }

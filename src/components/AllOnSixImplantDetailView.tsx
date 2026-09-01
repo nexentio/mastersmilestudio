@@ -356,51 +356,6 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         ],
         "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "popular": true
-      },
-      {
-        "name": "ALL-ON-6 – MEGAGEN",
-        "brand": "Megagen AnyRidge (Korean Technology)",
-        "duration": "3+7 Working Days (2 Visits)",
-        "img": "/packages/pkg-4.webp",
-        "included": [
-          "6x Megagen AnyRidge Implants per Arch",
-          "12-14x Fixed Temporary Teeth",
-          "12-14x Final Zirconia Bridge Teeth",
-          "3D CBCT Tomography & Surgical Guide",
-          "VIP Airport-Hotel Transfers",
-          "Hotel Stay with Bed & Breakfast"
-        ],
-        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
-      },
-      {
-        "name": "ALL-ON-6 – NEODENT",
-        "brand": "Neodent (Straumann Group)",
-        "duration": "3+7 Working Days (2 Visits)",
-        "img": "/packages/pkg-5.webp",
-        "included": [
-          "6x Neodent Implants per Arch",
-          "12-14x Fixed Temporary Teeth",
-          "12-14x Final Zirconia Bridge Teeth",
-          "3D CBCT Tomography & Planning",
-          "VIP Airport-Hotel Transfers",
-          "Hotel Stay with Bed & Breakfast"
-        ],
-        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
-      },
-      {
-        "name": "ALL-ON-6 – HIOSSEN",
-        "brand": "Hiossen (American Brand)",
-        "duration": "3+7 Working Days (2 Visits)",
-        "img": "/packages/pkg-6.webp",
-        "included": [
-          "6x Hiossen American Implants per Arch",
-          "12-14x Fixed Temporary Teeth",
-          "12-14x Final Zirconia Bridge Teeth",
-          "3D CBCT Tomography & Planning",
-          "VIP Airport-Hotel Transfers",
-          "Hotel Stay with Bed & Breakfast"
-        ],
-        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqsPart1": [
@@ -830,45 +785,6 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         ],
         "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "popular": true
-      },
-      {
-        "name": "ALL-ON-6 – MEGAGEN",
-        "brand": "Megagen AnyRidge",
-        "duration": "3+7 İş Günü (2 Ziyaret)",
-        "img": "/packages/pkg-4.webp",
-        "included": [
-          "6x Megagen İmplant",
-          "12-14x Sabit Geçici Dişler",
-          "12-14x Kalıcı Zirkonyum Dişler",
-          "3D Tomografi, Otel ve VIP Transferler"
-        ],
-        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
-      },
-      {
-        "name": "ALL-ON-6 – NEODENT",
-        "brand": "Neodent (Straumann Grubu)",
-        "duration": "3+7 İş Günü (2 Ziyaret)",
-        "img": "/packages/pkg-5.webp",
-        "included": [
-          "6x Neodent İmplant",
-          "12-14x Sabit Geçici Dişler",
-          "12-14x Kalıcı Zirkonyum Dişler",
-          "3D Tomografi, Otel ve VIP Transferler"
-        ],
-        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
-      },
-      {
-        "name": "ALL-ON-6 – HIOSSEN",
-        "brand": "Hiossen USA",
-        "duration": "3+7 İş Günü (2 Ziyaret)",
-        "img": "/packages/pkg-6.webp",
-        "included": [
-          "6x Hiossen Amerikan İmplant",
-          "12-14x Sabit Geçici Dişler",
-          "12-14x Kalıcı Zirkonyum Dişler",
-          "3D Tomografi, Otel ve VIP Transferler"
-        ],
-        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqsPart1": [
@@ -1298,45 +1214,6 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         ],
         "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "popular": true
-      },
-      {
-        "name": "ALL-ON-6 – MEGAGEN",
-        "brand": "Megagen AnyRidge",
-        "duration": "3+7 Werktage (2 Besuche)",
-        "img": "/packages/pkg-4.webp",
-        "included": [
-          "6x Megagen Implantate",
-          "12-14x Provisorische Zähne",
-          "12-14x Zirkonbrücke",
-          "Hotel und Transfers"
-        ],
-        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
-      },
-      {
-        "name": "ALL-ON-6 – NEODENT",
-        "brand": "Neodent (Straumann Gruppe)",
-        "duration": "3+7 Werktage (2 Besuche)",
-        "img": "/packages/pkg-5.webp",
-        "included": [
-          "6x Neodent Implantate",
-          "12-14x Provisorische Zähne",
-          "12-14x Zirkonbrücke",
-          "Hotel und Transfers"
-        ],
-        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
-      },
-      {
-        "name": "ALL-ON-6 – HIOSSEN",
-        "brand": "Hiossen USA",
-        "duration": "3+7 Werktage (2 Besuche)",
-        "img": "/packages/pkg-6.webp",
-        "included": [
-          "6x Hiossen Implantate",
-          "12-14x Provisorische Zähne",
-          "12-14x Zirkonbrücke",
-          "Hotel und Transfers"
-        ],
-        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqsPart1": [
@@ -1766,45 +1643,6 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         ],
         "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "popular": true
-      },
-      {
-        "name": "ALL-ON-6 – MEGAGEN",
-        "brand": "Megagen AnyRidge",
-        "duration": "3+7 Dni Roboczych (2 Wizyty)",
-        "img": "/packages/pkg-4.webp",
-        "included": [
-          "6x Implantów Megagen",
-          "12-14x Zębów Tymczasowych",
-          "12-14x Most Cyrkonowy",
-          "Hotel i Transfery"
-        ],
-        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
-      },
-      {
-        "name": "ALL-ON-6 – NEODENT",
-        "brand": "Neodent (Grupa Straumann)",
-        "duration": "3+7 Dni Roboczych (2 Wizyty)",
-        "img": "/packages/pkg-5.webp",
-        "included": [
-          "6x Implantów Neodent",
-          "12-14x Zębów Tymczasowych",
-          "12-14x Most Cyrkonowy",
-          "Hotel i Transfery"
-        ],
-        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
-      },
-      {
-        "name": "ALL-ON-6 – HIOSSEN",
-        "brand": "Hiossen USA",
-        "duration": "3+7 Dni Roboczych (2 Wizyty)",
-        "img": "/packages/pkg-6.webp",
-        "included": [
-          "6x Implantów Hiossen",
-          "12-14x Zębów Tymczasowych",
-          "12-14x Most Cyrkonowy",
-          "Hotel i Transfery"
-        ],
-        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqsPart1": [
@@ -2234,45 +2072,6 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         ],
         "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "popular": true
-      },
-      {
-        "name": "ALL-ON-6 – MEGAGEN",
-        "brand": "Megagen AnyRidge",
-        "duration": "3+7 Dias Úteis (2 Visitas)",
-        "img": "/packages/pkg-4.webp",
-        "included": [
-          "6x Implantes Megagen",
-          "12-14x Dentes Provisórios",
-          "12-14x Ponte Zircônia",
-          "Hotel e Transfers"
-        ],
-        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
-      },
-      {
-        "name": "ALL-ON-6 – NEODENT",
-        "brand": "Neodent (Grupo Straumann)",
-        "duration": "3+7 Dias Úteis (2 Visitas)",
-        "img": "/packages/pkg-5.webp",
-        "included": [
-          "6x Implantes Neodent",
-          "12-14x Dentes Provisórios",
-          "12-14x Ponte Zircônia",
-          "Hotel e Transfers"
-        ],
-        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
-      },
-      {
-        "name": "ALL-ON-6 – HIOSSEN",
-        "brand": "Hiossen USA",
-        "duration": "3+7 Dias Úteis (2 Visitas)",
-        "img": "/packages/pkg-6.webp",
-        "included": [
-          "6x Implantes Hiossen",
-          "12-14x Dentes Provisórios",
-          "12-14x Ponte Zircônia",
-          "Hotel e Transfers"
-        ],
-        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqsPart1": [
@@ -2701,45 +2500,6 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         ],
         "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "popular": true
-      },
-      {
-        "name": "ALL-ON-6 – MEGAGEN",
-        "brand": "Megagen AnyRidge",
-        "duration": "3+7 Días Laborables (2 Visitas)",
-        "img": "/packages/pkg-4.webp",
-        "included": [
-          "6x Implantes Megagen",
-          "12-14x Dientes Provisionales",
-          "12-14x Puente Circonio",
-          "Hotel y Traslados"
-        ],
-        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
-      },
-      {
-        "name": "ALL-ON-6 – NEODENT",
-        "brand": "Neodent (Grupo Straumann)",
-        "duration": "3+7 Días Laborables (2 Visitas)",
-        "img": "/packages/pkg-5.webp",
-        "included": [
-          "6x Implantes Neodent",
-          "12-14x Dientes Provisionales",
-          "12-14x Puente Circonio",
-          "Hotel y Traslados"
-        ],
-        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
-      },
-      {
-        "name": "ALL-ON-6 – HIOSSEN",
-        "brand": "Hiossen USA",
-        "duration": "3+7 Días Laborables (2 Visitas)",
-        "img": "/packages/pkg-6.webp",
-        "included": [
-          "6x Implantes Hiossen",
-          "12-14x Dientes Provisionales",
-          "12-14x Puente Circonio",
-          "Hotel y Traslados"
-        ],
-        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqsPart1": [
@@ -3169,45 +2929,6 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
         ],
         "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
         "popular": true
-      },
-      {
-        "name": "ALL-ON-6 – MEGAGEN",
-        "brand": "Megagen AnyRidge",
-        "duration": "3+7 Рабочих Дней (2 Визита)",
-        "img": "/packages/pkg-4.webp",
-        "included": [
-          "6x Имплантов Megagen",
-          "12-14x Временных Зубов",
-          "12-14x Циркониевый Мост",
-          "Отель и Трансфер"
-        ],
-        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
-      },
-      {
-        "name": "ALL-ON-6 – NEODENT",
-        "brand": "Neodent (Группа Straumann)",
-        "duration": "3+7 Рабочих Дней (2 Визита)",
-        "img": "/packages/pkg-5.webp",
-        "included": [
-          "6x Имплантов Neodent",
-          "12-14x Временных Зубов",
-          "12-14x Циркониевый Мост",
-          "Отель и Трансфер"
-        ],
-        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
-      },
-      {
-        "name": "ALL-ON-6 – HIOSSEN",
-        "brand": "Hiossen USA",
-        "duration": "3+7 Рабочих Дней (2 Визита)",
-        "img": "/packages/pkg-6.webp",
-        "included": [
-          "6x Имплантов Hiossen",
-          "12-14x Временных Зубов",
-          "12-14x Циркониевый Мост",
-          "Отель и Трансфер"
-        ],
-        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" }
       }
     ],
     "faqsPart1": [
@@ -3676,12 +3397,6 @@ export default function AllOnSixImplantDetailView() {
             <p className={styles.packagesSubtitle}>{d.packagesSubtitle}</p>
           </div>
 
-          {/* VIP Guarantee Trust Badge */}
-          <div className={styles.currencyBar} style={{ justifyContent: 'center' }}>
-            <span style={{ fontSize: '0.9rem', color: '#047857', fontWeight: '600', background: '#ecfdf5', padding: '0.4rem 1rem', borderRadius: '999px', border: '1px solid #a7f3d0' }}>
-              {locale === 'tr' ? '5★ Otel + VIP Transfer + Ömür Boyu Garanti Dahil' : '5★ Luxury Hotel + VIP Transfers + Lifetime Warranty Included'}
-            </span>
-          </div>
 
           {/* 6 Real Implant Brand Package Cards */}
           <div className={styles.pkgGrid}>

@@ -41,6 +41,28 @@ import DenturesHeroBanner from '@/components/treatment-sections/DenturesHeroBann
 import DentalBridgesHeroBanner from '@/components/treatment-sections/DentalBridgesHeroBanner';
 import DentalVeneersHeroBanner from '@/components/treatment-sections/DentalVeneersHeroBanner';
 import DentalCrownsHeroBanner from '@/components/treatment-sections/DentalCrownsHeroBanner';
+import DentalImplantsHeroBanner from '@/components/treatment-sections/DentalImplantsHeroBanner';
+import {
+  DENTAL_IMPLANTS_HERO_I18N,
+  FULL_MOUTH_IMPLANTS_HERO_I18N,
+  ALL_ON_4_HERO_I18N,
+  ALL_ON_6_HERO_I18N,
+  IMMEDIATE_IMPLANT_HERO_I18N,
+  SINUS_LIFTING_HERO_I18N,
+  ZYGOMATIC_IMPLANTS_HERO_I18N,
+  ZIRCONIUM_IMPLANTS_HERO_I18N,
+  IMPLANT_SUPPORTED_DENTURES_HERO_I18N,
+} from '@/data/implant-heroes-i18n';
+import {
+  DENTAL_CLEANING_SUB_HERO_I18N,
+  TOOTH_FILLINGS_SUB_HERO_I18N,
+  ROOT_CANAL_SUB_HERO_I18N,
+  TOOTH_EXTRACTION_SUB_HERO_I18N,
+  INLAY_ONLAY_SUB_HERO_I18N,
+  DENTAL_SEALANTS_SUB_HERO_I18N,
+  FLUORIDE_SUB_HERO_I18N,
+  BRUXISM_SUB_HERO_I18N,
+} from '@/data/general-sub-heroes-i18n';
 import GeneralDentistryIntroSection from '@/components/treatment-sections/GeneralDentistryIntroSection';
 import GeneralDentistryAccordionSection from '@/components/treatment-sections/GeneralDentistryAccordionSection';
 import GeneralDentistryJourneySection from '@/components/treatment-sections/GeneralDentistryJourneySection';
@@ -315,6 +337,234 @@ interface PageProps {
   params: Promise<{ locale: string; slug: string[] }>;
 }
 
+interface TreatmentMetaCategory {
+  title: Record<string, string>;
+  description: Record<string, string>;
+}
+
+const TREATMENT_CATEGORY_METAS: Record<string, TreatmentMetaCategory> = {
+  default: {
+    title: {
+      en: 'Dental Treatments in Antalya, Turkey | Master Smile Studio',
+      tr: 'Antalya Diş Tedavisi ve Fiyatları | Master Smile Studio',
+      de: 'Zahnbehandlungen in Antalya Türkei | Master Smile Studio',
+      pl: 'Leczenie Stomatologiczne w Antalyi w Turcji | Master Smile Studio',
+      pt: 'Tratamentos Dentários em Antália, Turquia | Master Smile Studio',
+      es: 'Tratamientos Dentales en Antalya, Turquía | Master Smile Studio',
+      ru: 'Лечение Зубов в Анталье, Турция | Master Smile Studio',
+    },
+    description: {
+      en: 'World-class dental treatments in Antalya, Turkey with expert dentists, 5-star hotel and VIP transfers.',
+      tr: 'Antalya’da uzman diş hekimleri ve cerrahlarımızla dünya standartlarında dental tedaviler, 5 yıldızlı otel ve VIP transfer.',
+      de: 'Erstklassige Zahnbehandlungen in Antalya, Türkei mit erfahrenen Zahnärzten, 5-Sterne-Hotel und VIP-Transfers.',
+      pl: 'Światowej klasy leczenie stomatologiczne w Antalyi w Turcji z zespołem ekspertów, hotelem 5-gwiazdkowym i transferem VIP.',
+      pt: 'Tratamentos dentários de classe mundial em Antália, Turquia, com médicos especialistas, hotel 5 estrelas e transfers VIP.',
+      es: 'Tratamientos dentales de primer nivel en Antalya, Turquía, con odontólogos expertos, hotel de 5 estrellas y traslados VIP.',
+      ru: 'Стоматологическое лечение мирового уровня в Анталье, Турция, с опытными врачами, 5* отелем и VIP-трансфером.',
+    },
+  },
+  general: {
+    title: {
+      en: 'General & Preventive Dentistry in Antalya, Turkey | Master Smile Studio',
+      tr: 'Antalya Genel Diş Hekimliği & Tedavi Fiyatları | Master Smile Studio',
+      de: 'Allgemeine & Präventive Zahnheilkunde in Antalya | Master Smile Studio',
+      pl: 'Stomatologia Ogólna i Profilaktyka w Antalyi | Master Smile Studio',
+      pt: 'Medicina Dentária Geral e Preventiva em Antália | Master Smile Studio',
+      es: 'Odontología General y Preventiva en Antalya | Master Smile Studio',
+      ru: 'Общая и Профилактическая Стоматология в Анталье | Master Smile Studio',
+    },
+    description: {
+      en: 'Microscopic root canal therapy, ultrasonic Swiss Air-Flow scaling, composite fillings, and wisdom tooth extractions in Antalya.',
+      tr: 'Ağrısız mikroskobik kanal tedavisi, Air-Flow diş temizliği, estetik nanokompozit dolgular ve 20’lik diş çekimleri.',
+      de: 'Mikroskopische Wurzelkanalbehandlung, Air-Flow Zahnreinigung, Nanokomposit-Füllungen und Weisheitszahn-Extraktionen in Antalya.',
+      pl: 'Mikroskopowe leczenie kanałowe, czyszczenie Air-Flow, wypełnienia kompozytowe i ekstrakcje ósemek w Antalyi.',
+      pt: 'Endodontia microscópica, destartarização Air-Flow, restaurações em compósito e extração de sisos em Antália.',
+      es: 'Endodoncia microscópica, limpieza Air-Flow, empastes de composite estético y extracción de muelas del juicio en Antalya.',
+      ru: 'Микроскопическое лечение каналов, чистка Air-Flow, композитные пломбы и удаление зубов мудрости в Анталье.',
+    },
+  },
+  smileMakeover: {
+    title: {
+      en: 'Smile Makeover & 3D Digital Smile Design in Antalya, Turkey | Master Smile Studio',
+      tr: 'Antalya Smile Makeover & 3D Dijital Gülüş Tasarımı | Master Smile Studio',
+      de: 'Smile Makeover & 3D Digital Smile Design in Antalya | Master Smile Studio',
+      pl: 'Metamorfoza Uśmiechu & Cyfrowe Projektowanie 3D w Antalyi | Master Smile Studio',
+      pt: 'Transformação do Sorriso & Design Digital 3D em Antália | Master Smile Studio',
+      es: 'Diseño Digital de Sonrisa 3D y Smile Makeover en Antalya | Master Smile Studio',
+      ru: 'Преображение Улыбки и 3D Цифровой Дизайн в Анталье | Master Smile Studio',
+    },
+    description: {
+      en: 'AI-guided 3D Digital Smile Design with customized facial golden ratio analysis and live in-mouth physical mock-up try-in in Antalya.',
+      tr: 'Yüzün altın oranına özel 3D dijital analiz, yapay zeka destekli planlama ve diş kesimi öncesi canlı mock-up provası.',
+      de: 'KI-gestütztes 3D Digital Smile Design mit Goldener-Schnitt-Gesichtsanalyse und Live-Mock-up-Anprobe vor dem Beschleifen.',
+      pl: 'Projektowanie uśmiechu 3D oparte na złotej proporcji twarzy i przymiarka mock-up na żywo przed szlifowaniem zębów.',
+      pt: 'Design de Sorriso Digital 3D com análise da proporção áurea facial e prova mock-up física ao vivo em Antália.',
+      es: 'Diseño de Sonrisa Digital 3D guiado por IA con análisis de proporción áurea y prueba física mock-up en boca en Antalya.',
+      ru: '3D цифровой дизайн улыбки по золотому сечению лица и примерка мокапа до препарирования зубов в Анталье.',
+    },
+  },
+  hollywoodSmile: {
+    title: {
+      en: 'Hollywood Smile in Antalya, Turkey (Full Smile Makeover) | Master Smile Studio',
+      tr: 'Antalya Hollywood Smile Fiyatları & Gülüş Tasarımı | Master Smile Studio',
+      de: 'Hollywood Smile in Antalya Türkei (Komplettes Lächeln) | Master Smile Studio',
+      pl: 'Hollywood Smile w Antalyi w Turcji (Pełna Metamorfoza) | Master Smile Studio',
+      pt: 'Hollywood Smile em Antália, Turquia (Sorriso Completo) | Master Smile Studio',
+      es: 'Sonrisa Hollywood en Antalya, Turquía (Transformación Total) | Master Smile Studio',
+      ru: 'Голливудская Улыбка в Анталье, Турция (Полное Преображение) | Master Smile Studio',
+    },
+    description: {
+      en: 'Complete aesthetic transformation with 16 to 20 Swiss Ivoclar E-Max veneers or German Zirconia crowns crafted to your facial Golden Ratio.',
+      tr: '16-20 adet İsviçre Ivoclar E-Max veya Alman Zirkonyum kaplama ile 4-6 günde kusursuz beyaz simetri ve büyüleyici Hollywood gülüşü.',
+      de: 'Komplette Ästhetik-Transformation mit 16-20 Ivoclar E-Max Veneers oder Zirkonkronen nach dem Goldenen Schnitt in 4-6 Tagen.',
+      pl: 'Kompletna metamorfoza z 16-20 licówkami Ivoclar E-Max lub koronami cyrkonowymi w 4-6 dni w Master Smile Studio.',
+      pt: 'Transformação estética total com 16 a 20 facetas E-Max ou coroas de zircônio em 4-6 dias em Antália.',
+      es: 'Transformación estética completa con 16 a 20 carillas E-Max o coronas de circonio en 4-6 días en Antalya.',
+      ru: 'Полное эстетическое преображение с 16-20 винирами E-Max или циркониевыми коронками за 4-6 дней в Анталье.',
+    },
+  },
+  gummySmile: {
+    title: {
+      en: 'Gummy Smile Treatment & Laser Gum Contouring in Antalya, Turkey | Master Smile Studio',
+      tr: 'Antalya Gummy Smile & Diş Eti Estetiği Tedavisi | Master Smile Studio',
+      de: 'Gummy Smile Behandlung & Laser-Zahnfleischkorrektur in Antalya | Master Smile Studio',
+      pl: 'Leczenie Uśmiechu Dziąsłowego (Gummy Smile) w Antalyi | Master Smile Studio',
+      pt: 'Tratamento de Sorriso Gengival a Laser em Antália | Master Smile Studio',
+      es: 'Tratamiento de Sonrisa Gingival con Láser en Antalya | Master Smile Studio',
+      ru: 'Лечение Десневой Улыбки (Gummy Smile) Лазером в Анталье | Master Smile Studio',
+    },
+    description: {
+      en: 'Painless diode laser gingivectomy and aesthetic gum contouring to balance excessive gum display and enhance smile symmetry in Antalya.',
+      tr: 'Ağrısız ve dikişsiz diyot lazer teknolojisi ile diş eti seviyeleme, pembe estetik ve gülüş simetrisi optimizasyonu.',
+      de: 'Schmerzfreie Diodenlaser-Gingivektomie zur Harmonisierung von zu viel sichtbarem Zahnfleisch in Antalya.',
+      pl: 'Bezbolesna gingiwektomia laserowa korygująca nadmierną ekspozycję dziąseł w Antalyi.',
+      pt: 'Gengivectomia indolor a laser de díodo para harmonização estética do sorriso gengival em Antália.',
+      es: 'Gingivectomía indolora con láser de diodo para equilibrar la exposición excesiva de encías en Antalya.',
+      ru: 'Безболезненная лазерная пластика десны для идеальной симметрии улыбки в Анталье.',
+    },
+  },
+  whitening: {
+    title: {
+      en: 'Laser Teeth Whitening in Antalya, Turkey (Philips Zoom) | Master Smile Studio',
+      tr: 'Antalya Lazerle Diş Beyazlatma & Philips Zoom Fiyatları | Master Smile Studio',
+      de: 'Laser-Zahnaufhellung in Antalya Türkei (Philips Zoom) | Master Smile Studio',
+      pl: 'Wybielanie Zębów Lampą Philips Zoom w Antalyi w Turcji | Master Smile Studio',
+      pt: 'Branqueamento Dentário a Laser em Antália (Philips Zoom) | Master Smile Studio',
+      es: 'Blanqueamiento Dental Láser en Antalya, Turquía (Philips Zoom) | Master Smile Studio',
+      ru: 'Лазерное Отбеливание Зубов в Анталье (Philips Zoom) | Master Smile Studio',
+    },
+    description: {
+      en: 'In-clinic professional light-activated Philips Zoom Blue LED whitening lightening enamel by 6 to 8 shades safely in 45 minutes in Antalya.',
+      tr: 'Klinik ortamında Philips Zoom Blue LED ışık aktivasyonu ile tek seansta 6-8 tona kadar güvenli ve kalıcı beyazlatma.',
+      de: 'Professionelles Philips Zoom LED Bleaching für bis zu 8 Nuancen hellere Zähne in 45 Minuten.',
+      pl: 'Profesjonalne wybielanie Philips Zoom rozjaśniające zęby o 6-8 odcieni w 45 minut.',
+      pt: 'Branqueamento profissional Philips Zoom com clareamento de 6 a 8 tons em 45 minutos em Antália.',
+      es: 'Blanqueamiento profesional Philips Zoom aclarando de 6 a 8 tonos de forma segura en 45 minutos en Antalya.',
+      ru: 'Профессиональное отбеливание Philips Zoom на 6-8 тонов за 45 минут в Анталье.',
+    },
+  },
+  implants: {
+    title: {
+      en: 'Dental Implants Cost in Antalya, Turkey | Master Smile Studio',
+      tr: 'Antalya Diş İmplantı Tedavisi ve Fiyatları | Master Smile Studio',
+      de: 'Zahnimplantate Kosten & Behandlung in Antalya Türkei | Master Smile Studio',
+      pl: 'Implanty Zębowe w Antalyi w Turcji (Cennik i Zabiegi) | Master Smile Studio',
+      pt: 'Implantes Dentários em Antália, Turquia (Preços e Tratamento) | Master Smile Studio',
+      es: 'Implantes Dentales en Antalya, Turquía (Precios y Tratamiento) | Master Smile Studio',
+      ru: 'Имплантация Зубов в Анталье, Турция (Цены и Лечение) | Master Smile Studio',
+    },
+    description: {
+      en: 'Dental implants in Antalya, Turkey. Highest quality Swiss & German titanium implants with lifetime guarantee.',
+      tr: 'Antalya’da uzman çene cerrahları ile dünya markası titanyum implant tedavisi. Şeffaf her şey dahil paket fiyatları ve ömür boyu garanti.',
+      de: 'Zahnimplantate in Antalya mit Schweizer & Deutschen Premium-Titanimplantaten und lebenslanger Garantie.',
+      pl: 'Implanty zębowe w Antalyi. Szwajcarskie i niemieckie implanty tytanowe z dożywotnią gwarancją i pakietami all-inclusive.',
+      pt: 'Implantes dentários em Antália com titânio premium suíço e alemão e garantia vitalícia.',
+      es: 'Implantes dentales en Antalya con titanio suizo y alemán de primera calidad y garantía de por vida.',
+      ru: 'Зубные импланты в Анталье: премиальные швейцарские и немецкие титановые импланты с пожизненной гарантией.',
+    },
+  },
+  veneers: {
+    title: {
+      en: 'Dental Veneers in Antalya, Turkey (E-Max Laminates) | Master Smile Studio',
+      tr: 'Antalya Diş Kaplama & Lamina Fiyatları | Master Smile Studio',
+      de: 'Veneers & E-Max Laminate in Antalya Türkei | Master Smile Studio',
+      pl: 'Licówki Porcelanowe i E-Max w Antalyi w Turcji | Master Smile Studio',
+      pt: 'Facetas Dentárias e Lentes E-Max em Antália | Master Smile Studio',
+      es: 'Carillas Dentales y E-Max en Antalya, Turquía | Master Smile Studio',
+      ru: 'Виниры и Люминиры E-Max в Анталье, Турция | Master Smile Studio',
+    },
+    description: {
+      en: 'Swiss Ivoclar E-Max porcelain veneers and laminates in Antalya. Natural, stain-resistant smile transformations in 4-6 days.',
+      tr: 'İsviçre menşeli Ivoclar E-Max porselen laminalarla 4-6 günde leke tutmayan, doğal ve kusursuz Hollywood gülüşü.',
+      de: 'Schweizer Ivoclar E-Max Keramikveneers in Antalya. Natürlich schöne, verfärbungssichere Zähne in 4-6 Tagen.',
+      pl: 'Licówki porcelanowe Ivoclar E-Max w Antalyi. Naturalna biel odporna na przebarwienia w 4-6 dni.',
+      pt: 'Facetas de porcelana Ivoclar E-Max em Antália. Sorriso natural e resistente a manchas em 4-6 dias.',
+      es: 'Carillas de porcelana Ivoclar E-Max en Antalya. Sonrisa natural y resistente a manchas en 4-6 días.',
+      ru: 'Фарфоровые виниры Ivoclar E-Max в Анталье. Естественная белизна и защита от окрашивания за 4-6 дней.',
+    },
+  },
+  crowns: {
+    title: {
+      en: 'Dental Crowns Cost in Antalya, Turkey (Zirconia & E-Max) | Master Smile Studio',
+      tr: 'Antalya Zirkonyum & Kron Diş Kaplama Fiyatları | Master Smile Studio',
+      de: 'Zahnkronen & Zirkonkronen in Antalya Türkei | Master Smile Studio',
+      pl: 'Korony Cyrkonowe i E-Max w Antalyi w Turcji | Master Smile Studio',
+      pt: 'Coroas Dentárias de Zircônio e E-Max em Antália | Master Smile Studio',
+      es: 'Coronas Dentales de Circonio y E-Max en Antalya | Master Smile Studio',
+      ru: 'Циркониевые Коронки и E-Max в Анталье, Турция | Master Smile Studio',
+    },
+    description: {
+      en: 'Premium German Zirconia & E-Max dental crowns in Antalya. High fracture resistance, natural translucency, and 5-year warranty.',
+      tr: '1200+ MPa Alman Zirkonyum ve Ivoclar E-Max kron kaplamalarla kırık ve kanal tedavili dişlerinizi kurtarın. 5 yıl tam garanti.',
+      de: 'Premium Zirkonkronen & E-Max Kronen in Antalya. Hohe Bruchfestigkeit, natürliche Transluzenz und 5 Jahre Garantie.',
+      pl: 'Niemieckie korony cyrkonowe i E-Max w Antalyi. Wyjątkowa trwałość, naturalna przezierność i 5 lat gwarancji.',
+      pt: 'Coroas de zircônio alemão e E-Max em Antália. Alta resistência, translucidez natural e 5 anos de garantia.',
+      es: 'Coronas dentales de circonio alemán y E-Max en Antalya. Alta resistencia, traslucidez natural y 5 años de garantía.',
+      ru: 'Немецкие циркониевые коронки и E-Max в Анталье. Высокая прочность, натуральная прозрачность и гарантия 5 лет.',
+    },
+  },
+  dentures: {
+    title: {
+      en: 'Dentures Cost in Antalya, Turkey (Snap-On Overdentures) | Master Smile Studio',
+      tr: 'Antalya Protez Diş & Çıt Çıtlı Damak Fiyatları | Master Smile Studio',
+      de: 'Zahnprothesen in Antalya Türkei (Druckknopfprothesen) | Master Smile Studio',
+      pl: 'Protezy Zębowe w Antalyi w Turcji (Zatrzaskowe) | Master Smile Studio',
+      pt: 'Próteses Dentárias em Antália, Turquia | Master Smile Studio',
+      es: 'Prótesis Dentales en Antalya, Turquía (Sobredentaduras) | Master Smile Studio',
+      ru: 'Зубные Протезы в Анталье, Турция (Съемные и Бюгельные) | Master Smile Studio',
+    },
+    description: {
+      en: 'Snap-On implant overdentures and precision complete dentures in Antalya. Rock-solid retention with zero slipping.',
+      tr: 'Oynayan damaklara son veren implant destekli çıtçıtlı protezler ve kırılmaya dayanıklı tam damak protezleri.',
+      de: 'Implantatgetragene Druckknopfprothesen und Vollprothesen in Antalya mit sicherem Halt ohne Verrutschen.',
+      pl: 'Protezy na zatrzaskach i stabilne protezy całkowite w Antalyi bez kleju i przesuwania.',
+      pt: 'Sobredentaduras sobre implantes e próteses totais de alta precisão em Antália com fixação firme.',
+      es: 'Sobredentaduras sobre implantes y prótesis completas de precisión en Antalya con fijación total.',
+      ru: 'Протезы на имплантах с кнопочной фиксацией и полные съемные протезы в Анталье.',
+    },
+  },
+  bridges: {
+    title: {
+      en: 'Dental Bridges in Antalya, Turkey (Zirconia & Implant Bridges) | Master Smile Studio',
+      tr: 'Antalya Diş Köprüsü Fiyatları ve Tedavisi | Master Smile Studio',
+      de: 'Zahnbrücken in Antalya Türkei (Zirkon & Implantatbrücken) | Master Smile Studio',
+      pl: 'Mosty Protetyczne w Antalyi w Turcji (Cyrkonowe) | Master Smile Studio',
+      pt: 'Pontes Dentárias em Antália, Turquia (Zircônia) | Master Smile Studio',
+      es: 'Puentes Dentales en Antalya, Turquía (Circonio) | Master Smile Studio',
+      ru: 'Зубные Мосты в Анталье, Турция (Циркониевые и на Имплантах) | Master Smile Studio',
+    },
+    description: {
+      en: 'High-strength Zirconia and Implant-supported dental bridges in Antalya, Turkey. Restore missing teeth in 4-6 days with 5-star VIP care.',
+      tr: 'Eksik dişleriniz için Alman Zirkonyum ve implant destekli sabit köprü tedavisi. 4-6 günde 5 yıldızlı otel konforuyla yeni bir gülüş.',
+      de: 'Hochfeste Zirkon- und implantatgetragene Zahnbrücken in Antalya zur Wiederherstellung fehlender Zähne in 4-6 Tagen.',
+      pl: 'Mosty cyrkonowe i mosty na implantach w Antalyi. Odbudowa braków zębowych w 4-6 dni z obsługą VIP.',
+      pt: 'Pontes dentárias em zircônia e sobre implantes em Antália. Recuperação de dentes perdidos em 4-6 dias.',
+      es: 'Puentes dentales de circonio y sobre implantes en Antalya para restaurar piezas dentales en 4-6 días.',
+      ru: 'Циркониевые мостовидные протезы и мосты на имплантах за 4-6 дней в Анталье.',
+    },
+  },
+};
+
 export async function generateMetadata({ params }: PageProps) {
   const { locale, slug } = await params;
   setRequestLocale(locale);
@@ -325,137 +575,52 @@ export async function generateMetadata({ params }: PageProps) {
 
   const content = await getTreatmentContent(locale, lastSlug);
 
-  let title =
-    content?.seo?.title ||
-    (locale === 'tr'
-      ? 'Antalya Diş Tedavisi ve Fiyatları | Master Smile Studio'
-      : 'Dental Treatments in Antalya, Turkey | Master Smile Studio');
-
-  let description =
-    content?.seo?.description ||
-    (locale === 'tr'
-      ? 'Antalya’da uzman diş hekimleri ve cerrahlarımızla dünya standartlarında dental tedaviler.'
-      : 'World-class dental treatments in Antalya, Turkey with expert dentists, 5-star hotel and VIP transfers.');
-
+  // Determine category
+  let catKey = 'default';
   if (
     lastSlug.includes('general') ||
     lastSlug.includes('root-canal') ||
     lastSlug.includes('cleaning') ||
     lastSlug.includes('filling') ||
     lastSlug.includes('extraction') ||
-    lastSlug.includes('periodont')
+    lastSlug.includes('periodont') ||
+    lastSlug.includes('inlay-onlay') ||
+    lastSlug.includes('sealant') ||
+    lastSlug.includes('fluoride') ||
+    lastSlug.includes('bruxism')
   ) {
-    title =
-      locale === 'tr'
-        ? 'Antalya Genel Diş Hekimliği & Tedavi Fiyatları | Master Smile Studio'
-        : 'General & Preventive Dentistry in Antalya, Turkey | Master Smile Studio';
-    description =
-      locale === 'tr'
-        ? 'Ağrısız mikroskobik kanal tedavisi, Air-Flow diş temizliği, estetik nanokompozit dolgular ve 20’lik diş çekimleri.'
-        : 'Microscopic root canal therapy, ultrasonic Swiss Air-Flow scaling, composite fillings, and wisdom tooth extractions in Antalya.';
+    catKey = 'general';
   } else if (lastSlug === 'smile-makeover' || lastSlug === 'digital-smile-design' || lastSlug === 'gulus-tasarimi') {
-    title =
-      locale === 'tr'
-        ? 'Antalya Smile Makeover & 3D Dijital Gülüş Tasarımı | Master Smile Studio'
-        : 'Smile Makeover & 3D Digital Smile Design in Antalya, Turkey | Master Smile Studio';
-    description =
-      locale === 'tr'
-        ? 'Yüzün altın oranına özel 3D dijital analiz, yapay zeka destekli planlama ve diş kesimi öncesi canlı mock-up provası.'
-        : 'AI-guided 3D Digital Smile Design with customized facial golden ratio analysis and live in-mouth physical mock-up try-in in Antalya.';
+    catKey = 'smileMakeover';
   } else if (lastSlug === 'hollywood-smile' || lastSlug === 'hollywood-smile-antalya' || lastSlug === 'hollywood-gulusu') {
-    title =
-      locale === 'tr'
-        ? 'Antalya Hollywood Smile Fiyatları & Gülüş Tasarımı | Master Smile Studio'
-        : 'Hollywood Smile in Antalya, Turkey (Full Smile Makeover) | Master Smile Studio';
-    description =
-      locale === 'tr'
-        ? '16-20 adet İsviçre Ivoclar E-Max veya Alman Zirkonyum kaplama ile 4-6 günde kusursuz beyaz simetri ve büyüleyici Hollywood gülüşü.'
-        : 'Complete aesthetic transformation with 16 to 20 Swiss Ivoclar E-Max veneers or German Zirconia crowns crafted to your facial Golden Ratio in Antalya.';
-  } else if (lastSlug === 'gummy-smile' || lastSlug === 'gummy-smile-treatment' || lastSlug === 'gum-contouring' || lastSlug === 'pembe-estetik') {
-    title =
-      locale === 'tr'
-        ? 'Antalya Gummy Smile & Diş Eti Estetiği Tedavisi | Master Smile Studio'
-        : 'Gummy Smile Treatment & Laser Gum Contouring in Antalya, Turkey | Master Smile Studio';
-    description =
-      locale === 'tr'
-        ? 'Ağrısız ve dikişsiz diyot lazer teknolojisi ile diş eti seviyeleme, pembe estetik ve gülüş simetrisi optimizasyonu.'
-        : 'Painless diode laser gingivectomy and aesthetic gum contouring to balance excessive gum display and enhance smile symmetry in Antalya.';
-  } else if (lastSlug === 'teeth-whitening' || lastSlug === 'laser-teeth-whitening' || lastSlug === 'whitening' || lastSlug === 'dis-beyazlatma') {
-    title =
-      locale === 'tr'
-        ? 'Antalya Lazerle Diş Beyazlatma & Philips Zoom Fiyatları | Master Smile Studio'
-        : 'Laser Teeth Whitening in Antalya, Turkey (Philips Zoom) | Master Smile Studio';
-    description =
-      locale === 'tr'
-        ? 'Klinik ortamında Philips Zoom Blue LED ışık aktivasyonu ile tek seansta 6-8 tona kadar güvenli ve kalıcı beyazlatma.'
-        : 'In-clinic professional light-activated Philips Zoom Blue LED whitening lightening enamel by 6 to 8 shades safely in 45 minutes in Antalya.';
-  } else if (lastSlug === 'tooth-contouring' || lastSlug === 'tooth-contouring-shaping' || lastSlug === 'tooth-shaping' || lastSlug === 'dis-sekillendirme') {
-    title =
-      locale === 'tr'
-        ? 'Antalya Diş Şekillendirme ve Konturlama Tedavisi | Master Smile Studio'
-        : 'Tooth Contouring & Shaping in Antalya, Turkey | Master Smile Studio';
-    description =
-      locale === 'tr'
-        ? 'Hafif diş eğriliklerini, sivrilikleri ve asimetrileri anestezi gerektirmeden düzelten mikroskobik mine şekillendirme ve polisaj.'
-        : 'Subtle enamel recontouring and odontoplasty smoothing minor chips, overlaps, and irregular edges painlessly in a single visit in Antalya.';
-  } else if (lastSlug === 'diastema-closure' || lastSlug === 'diestema-closure' || lastSlug === 'diastema' || lastSlug === 'ayrik-dis-tedavisi') {
-    title =
-      locale === 'tr'
-        ? 'Antalya Ayrık Diş (Diastema) Kapatma Tedavisi | Master Smile Studio'
-        : 'Diastema Closure in Antalya, Turkey (Gap Closure) | Master Smile Studio';
-    description =
-      locale === 'tr'
-        ? 'Ön dişler arasındaki boşlukları diş kesimi olmadan nano-kompozit bonding veya ultra ince E-Max yaprak porselen ile tek seansta kapatma.'
-        : 'Non-invasive diastema closure closing spaces between front teeth using direct resin bonding or ultra-thin E-Max porcelain veneers in Antalya.';
-  } else if (lastSlug.includes('cosmetic') || lastSlug.includes('makeover')) {
-    title =
-      locale === 'tr'
-        ? 'Antalya Estetik Diş Hekimliği & Hollywood Smile Fiyatları | Master Smile Studio'
-        : 'Hollywood Smile & Cosmetic Dentistry in Antalya, Turkey | Master Smile Studio';
-    description =
-      locale === 'tr'
-        ? '3D Dijital Gülüş Tasarımı, İsviçre Ivoclar E-Max laminalar, lazer diş beyazlatma ve diş eti estetiği (Gummy Smile).'
-        : 'Transform your smile with bespoke 3D Digital Smile Design, Swiss Ivoclar E-Max laminates, and laser gum contouring in Antalya.';
-  } else if (lastSlug.includes('denture') || lastSlug.includes('protez') || lastSlug.includes('overdenture')) {
-    title =
-      locale === 'tr'
-        ? 'Antalya Protez Diş & Çıt Çıtlı Damak Fiyatları | Master Smile Studio'
-        : 'Dentures Cost in Antalya, Turkey (Snap-On Overdentures) | Master Smile Studio';
-    description =
-      locale === 'tr'
-        ? 'Oynayan damaklara son veren implant destekli çıtçıtlı protezler ve kırılmaya dayanıklı tam damak protezleri.'
-        : 'Snap-On implant overdentures and precision complete dentures in Antalya. Rock-solid retention with zero slipping.';
-  } else if (lastSlug.includes('bridge') || lastSlug.includes('kopru')) {
-    title =
-      locale === 'tr'
-        ? 'Antalya Diş Köprüsü Fiyatları ve Tedavisi | Master Smile Studio'
-        : 'Dental Bridges in Antalya, Turkey (Zirconia & Implant Bridges) | Master Smile Studio';
-    description =
-      locale === 'tr'
-        ? 'Eksik dişleriniz için Alman Zirkonyum ve implant destekli sabit köprü tedavisi. 4-6 günde 5 yıldızlı otel konforuyla yeni bir gülüş.'
-        : 'High-strength Zirconia and Implant-supported dental bridges in Antalya, Turkey. Restore missing teeth and bite function in 4-6 days with 5-star VIP care.';
+    catKey = 'hollywoodSmile';
+  } else if (lastSlug.includes('gummy-smile') || lastSlug.includes('gum-contouring') || lastSlug.includes('pembe-estetik')) {
+    catKey = 'gummySmile';
+  } else if (lastSlug.includes('whitening') || lastSlug.includes('beyazlatma')) {
+    catKey = 'whitening';
   } else if (lastSlug.includes('veneer') || lastSlug.includes('lumineer') || lastSlug.includes('lamine')) {
-    title =
-      locale === 'tr'
-        ? 'Antalya Diş Kaplama & Lamina Fiyatları | Master Smile Studio'
-        : 'Dental Veneers in Antalya, Turkey (E-Max Laminates) | Master Smile Studio';
-    description =
-      locale === 'tr'
-        ? 'İsviçre menşeli Ivoclar E-Max porselen laminalarla 4-6 günde kusursuz Hollywood gülüşü.'
-        : 'Swiss Ivoclar E-Max porcelain veneers and laminates in Antalya. Natural, stain-resistant smile transformations in 4-6 days.';
+    catKey = 'veneers';
   } else if (lastSlug.includes('crown') || lastSlug.includes('kron')) {
-    title =
-      locale === 'tr'
-        ? 'Antalya Zirkonyum & Kron Diş Kaplama Fiyatları | Master Smile Studio'
-        : 'Dental Crowns Cost in Antalya, Turkey (Zirconia & E-Max) | Master Smile Studio';
-    description =
-      locale === 'tr'
-        ? '1200+ MPa Alman Zirkonyum ve Ivoclar E-Max kron kaplamalarla kırık ve kanal tedavili dişlerinizi kurtarın.'
-        : 'Premium German Zirconia & E-Max dental crowns in Antalya. High fracture resistance, natural translucency, and 5-year warranty.';
-  } else if (lastSlug === 'dental-implants' || lastSlug === 'dental-implant-antalya-turkey' || lastSlug === 'implants') {
-    title = locale === 'tr' ? 'Antalya Diş İmplantı Tedavisi ve Fiyatları | Master Smile Studio' : 'Dental Implants Cost in Antalya, Turkey | Master Smile Studio';
-    description = locale === 'tr' ? 'Antalya’da uzman çene cerrahları ile dünya markası titanyum implant tedavisi. Şeffaf her şey dahil paket fiyatları.' : 'Dental implants in Antalya, Turkey. Highest quality Swiss & German titanium implants with lifetime guarantee.';
+    catKey = 'crowns';
+  } else if (lastSlug.includes('denture') || lastSlug.includes('protez') || lastSlug.includes('overdenture')) {
+    catKey = 'dentures';
+  } else if (lastSlug.includes('bridge') || lastSlug.includes('kopru')) {
+    catKey = 'bridges';
+  } else if (lastSlug.includes('implant')) {
+    catKey = 'implants';
   }
+
+  const categoryMeta = TREATMENT_CATEGORY_METAS[catKey] || TREATMENT_CATEGORY_METAS.default;
+
+  const title =
+    content?.seo?.title ||
+    categoryMeta.title[locale] ||
+    categoryMeta.title.en;
+
+  const description =
+    content?.seo?.description ||
+    categoryMeta.description[locale] ||
+    categoryMeta.description.en;
 
   return {
     title,
@@ -728,250 +893,198 @@ export default async function HierarchicalTreatmentPage({ params }: PageProps) {
 
   const isDentures = isDenturesCategory;
 
-  const isAllOnFour = lastSlug === 'all-on-4-implants' || lastSlug === 'all-on-four-implant-antalya-turkey' || lastSlug === 'all-on-4';
-  const isAllOnSix = lastSlug === 'all-on-6-implants' || lastSlug === 'all-on-six-dental-implant-antalya-turkey' || lastSlug === 'all-on-6';
-  const isImmediate = lastSlug === 'immediate-implant-treatment' || lastSlug === 'immediate-implants' || lastSlug === 'immediate';
-  const isZygomatic = lastSlug === 'zygomatic-implants' || lastSlug === 'zygomatic-implants-antalya-turkey' || lastSlug === 'zygomatic';
-  const isZirconium = lastSlug === 'zirconium-implants' || lastSlug === 'zirconium-implants-antalya-turkey';
-  const isSinusLift = lastSlug === 'sinus-lifting' || lastSlug === 'sinus-lift';
-  const isDentalCleaning = lastSlug === 'dental-cleaning' || lastSlug === 'dental-cleaning-in-antalya-turkey' || lastSlug === 'scaling-polishing';
-  const isToothFillings = lastSlug === 'tooth-fillings' || lastSlug === 'dental-fillings' || lastSlug === 'composite-fillings' || lastSlug === 'amalgam-fillings';
-  const isRootCanal = lastSlug === 'root-canal' || lastSlug === 'root-canal-treatment' || lastSlug === 'endodontics' || lastSlug === 'kanal-tedavisi';
-  const isToothExtraction = lastSlug === 'tooth-extraction' || lastSlug === 'tooth-extractions' || lastSlug === 'wisdom-teeth' || lastSlug === 'wisdom-tooth' || lastSlug === 'dis-cekimi';
-  const isInlayOnlay = lastSlug === 'inlay-onlay' || lastSlug === 'inlays-onlays' || lastSlug === 'inlay-onlay-dental-restorations' || lastSlug === 'inley-onley';
-  const isDentalSealants = lastSlug === 'dental-sealants' || lastSlug === 'dental-sealant' || lastSlug === 'fissure-sealants' || lastSlug === 'fissur-ortucu';
-  const isFluoride = lastSlug === 'fluoride-treatment' || lastSlug === 'fluoride' || lastSlug === 'florur-tedavisi';
-  const isBruxism = lastSlug === 'bruxism-treatment' || lastSlug === 'bruxism' || lastSlug === 'night-guard' || lastSlug === 'gece-plagi';
+  const isFullMouth =
+    lastSlug === 'full-mouth-implants' ||
+    lastSlug === 'full-mouth-dental-implants' ||
+    lastSlug === 'full-mouth-implants-antalya-turkey';
 
-  let heroBadge = content?.hero?.badge || (locale === 'tr' ? 'TEDAVİLERİMİZ' : 'TREATMENTS');
+  const isAllOnFour =
+    lastSlug === 'all-on-4-implants' ||
+    lastSlug === 'all-on-four-implant-antalya-turkey' ||
+    lastSlug === 'all-on-4' ||
+    lastSlug === 'all-on-4-dental-implants';
+  const isAllOnSix =
+    lastSlug === 'all-on-6-implants' ||
+    lastSlug === 'all-on-six-dental-implant-antalya-turkey' ||
+    lastSlug === 'all-on-6' ||
+    lastSlug === 'all-on-6-dental-implants';
+  const isImmediate =
+    lastSlug === 'immediate-implant-treatment' ||
+    lastSlug === 'immediate-implants' ||
+    lastSlug === 'immediate-dental-implants' ||
+    lastSlug === 'immediate';
+  const isZygomatic =
+    lastSlug === 'zygomatic-implants' ||
+    lastSlug === 'zygomatic-implants-antalya-turkey' ||
+    lastSlug === 'zygomatic';
+  const isZirconium =
+    lastSlug === 'zirconium-implants' ||
+    lastSlug === 'zirconium-implants-antalya-turkey';
+  const isSinusLift =
+    lastSlug === 'sinus-lifting' ||
+    lastSlug === 'sinus-lift';
+  const isDentalCleaning =
+    lastSlug === 'dental-cleaning' ||
+    lastSlug === 'dental-cleaning-in-antalya-turkey' ||
+    lastSlug === 'scaling-polishing';
+  const isToothFillings =
+    lastSlug === 'tooth-fillings' ||
+    lastSlug === 'dental-fillings' ||
+    lastSlug === 'composite-fillings' ||
+    lastSlug === 'amalgam-fillings';
+  const isRootCanal =
+    lastSlug === 'root-canal' ||
+    lastSlug === 'root-canal-treatment' ||
+    lastSlug === 'endodontics' ||
+    lastSlug === 'kanal-tedavisi';
+  const isToothExtraction =
+    lastSlug === 'tooth-extraction' ||
+    lastSlug === 'tooth-extractions' ||
+    lastSlug === 'wisdom-teeth' ||
+    lastSlug === 'wisdom-tooth' ||
+    lastSlug === 'dis-cekimi';
+  const isInlayOnlay =
+    lastSlug === 'inlay-onlay' ||
+    lastSlug === 'inlays-onlays' ||
+    lastSlug === 'inlay-onlay-dental-restorations' ||
+    lastSlug === 'inley-onley';
+  const isDentalSealants =
+    lastSlug === 'dental-sealants' ||
+    lastSlug === 'dental-sealant' ||
+    lastSlug === 'fissure-sealants' ||
+    lastSlug === 'fissur-ortucu';
+  const isFluoride =
+    lastSlug === 'fluoride-treatment' ||
+    lastSlug === 'fluoride' ||
+    lastSlug === 'florur-tedavisi';
+  const isBruxism =
+    lastSlug === 'bruxism-treatment' ||
+    lastSlug === 'bruxism' ||
+    lastSlug === 'night-guard' ||
+    lastSlug === 'gece-plagi';
+
+  let heroBadge = content?.hero?.badge || (locale === 'tr' ? 'TEDAVİLERİMİZ' : locale === 'de' ? 'BEHANDLUNGEN' : locale === 'pl' ? 'ZABIEGI' : locale === 'pt' ? 'TRATAMENTOS' : locale === 'es' ? 'TRATAMIENTOS' : locale === 'ru' ? 'ЛЕЧЕНИЕ' : 'TREATMENTS');
   let heroTitle = content?.hero?.title || t('pageTitle');
   let heroSubtitle = content?.hero?.subtitle || t('pageSubtitle');
+  let heroPrimaryBtnText: string | undefined = content?.hero?.primaryBtn;
+  let heroSecondaryBtnText: string | undefined = content?.hero?.secondaryBtn;
+  let heroPrimaryBtnAria: string | undefined = undefined;
+  let heroSecondaryBtnAria: string | undefined = undefined;
 
   if (isGeneralSub) {
-    heroBadge = locale === 'tr' ? 'GENEL DİŞ HEKİMLİĞİ' : 'GENERAL DENTISTRY';
     if (lastSlug === 'dental-cleaning' || lastSlug === 'scaling-polishing') {
-      heroTitle = locale === 'tr' ? 'Antalya Diş Taşı Temizliği ve Bakımı' : 'Teeth Cleaning & Scaling in Antalya, Turkey';
-      heroSubtitle = locale === 'tr' ? 'Ultrasonik cihazlarla ağrısız diş taşı temizliği, hava akışlı polisaj ve florür uygulaması.' : 'Professional ultrasonic scaling, air-flow polishing, and preventive oral hygiene treatments in Antalya.';
-    } else if (lastSlug === 'tooth-fillings') {
-      heroTitle = locale === 'tr' ? 'Antalya Estetik Kompozit Diş Dolgusu' : 'Aesthetic Composite Dental Fillings in Antalya';
-      heroSubtitle = locale === 'tr' ? 'Doğal diş renginde, biyouyumlu nanokompozit dolgular ile çürük tedavisi ve restorasyon.' : 'Tooth-colored biocompatible composite restorations for seamless cavity repair.';
-    } else if (lastSlug === 'root-canal') {
-      heroTitle = locale === 'tr' ? 'Antalya Kanal Tedavisi (Endodonti)' : 'Root Canal Treatment (Endodontics) in Antalya, Turkey';
-      heroSubtitle = locale === 'tr' ? 'Ağrısız mikroskobik kanal tedavisi ile enfekte dişlerinizi çekilmekten kurtarın.' : 'Pain-free microscopic root canal therapy to save your natural teeth in Antalya.';
-    } else if (lastSlug === 'tooth-extraction') {
-      heroTitle = locale === 'tr' ? 'Antalya 20’lik ve Cerrahi Diş Çekimi' : 'Tooth & Wisdom Tooth Extraction in Antalya, Turkey';
-      heroSubtitle = locale === 'tr' ? 'Ağrısız, travmasız cerrahi çekimler ve gömülü 20 yaş dişi operasyonları.' : 'Painless surgical extractions and impacted wisdom tooth removal under local anesthesia.';
-    } else if (lastSlug === 'inlay-onlay') {
-      heroTitle = locale === 'tr' ? 'Antalya İnley & Onley Porselen Dolgu' : 'Inlay & Onlay Ceramic Restorations in Antalya, Turkey';
-      heroSubtitle = locale === 'tr' ? 'CAD/CAM ile üretilen mikroskobik uyumlu porselen inley ve onley restorasyonlar.' : 'Precision CAD/CAM ceramic inlays and onlays preserving natural tooth structure.';
-    } else if (lastSlug === 'dental-sealants') {
-      heroTitle = locale === 'tr' ? 'Antalya Fissür Örtücü Koruyucu Tedavi' : 'Dental Sealants (Fissure Protection) in Antalya, Turkey';
-      heroSubtitle = locale === 'tr' ? 'Azı dişlerindeki derin olukları kapatarak çürük oluşumunu %90 engelleyen koruyucu kalkan.' : 'Protective fissure sealants preventing tooth decay and safeguarding enamel.';
-    } else if (lastSlug === 'fluoride-treatment') {
-      heroTitle = locale === 'tr' ? 'Antalya Profesyonel Florür Uygulaması' : 'Professional Fluoride Treatment in Antalya, Turkey';
-      heroSubtitle = locale === 'tr' ? 'Diş minesini güçlendiren ve hassasiyeti azaltan profesyonel flor uygulaması.' : 'Clinical fluoride varnish strengthening enamel and remineralizing sensitive teeth.';
-    } else if (lastSlug === 'bruxism-treatment') {
-      heroTitle = locale === 'tr' ? 'Antalya Gece Plağı ve Bruksizm Tedavisi' : 'Bruxism Treatment & Night Guard in Antalya, Turkey';
-      heroSubtitle = locale === 'tr' ? 'Diş sıkma ve gıcırdatmaya karşı kişiye özel 3D gece koruyucu plakları ve botoks uygulaması.' : 'Custom 3D night guards and masseter treatment for teeth grinding and TMJ relief.';
+      const d = DENTAL_CLEANING_SUB_HERO_I18N[locale] || DENTAL_CLEANING_SUB_HERO_I18N.en;
+      heroBadge = d.badge;
+      heroTitle = d.title;
+      heroSubtitle = d.subtitle;
+      heroPrimaryBtnText = d.primaryBtnText;
+      heroSecondaryBtnText = d.secondaryBtnText;
+    } else if (lastSlug === 'tooth-fillings' || lastSlug === 'dental-fillings' || lastSlug === 'composite-fillings' || lastSlug === 'amalgam-fillings') {
+      const d = TOOTH_FILLINGS_SUB_HERO_I18N[locale] || TOOTH_FILLINGS_SUB_HERO_I18N.en;
+      heroBadge = d.badge;
+      heroTitle = d.title;
+      heroSubtitle = d.subtitle;
+      heroPrimaryBtnText = d.primaryBtnText;
+      heroSecondaryBtnText = d.secondaryBtnText;
+    } else if (lastSlug === 'root-canal' || lastSlug === 'root-canal-treatment' || lastSlug === 'endodontics' || lastSlug === 'kanal-tedavisi') {
+      const d = ROOT_CANAL_SUB_HERO_I18N[locale] || ROOT_CANAL_SUB_HERO_I18N.en;
+      heroBadge = d.badge;
+      heroTitle = d.title;
+      heroSubtitle = d.subtitle;
+      heroPrimaryBtnText = d.primaryBtnText;
+      heroSecondaryBtnText = d.secondaryBtnText;
+    } else if (lastSlug === 'tooth-extraction' || lastSlug === 'tooth-extractions' || lastSlug === 'wisdom-teeth' || lastSlug === 'wisdom-tooth' || lastSlug === 'dis-cekimi') {
+      const d = TOOTH_EXTRACTION_SUB_HERO_I18N[locale] || TOOTH_EXTRACTION_SUB_HERO_I18N.en;
+      heroBadge = d.badge;
+      heroTitle = d.title;
+      heroSubtitle = d.subtitle;
+      heroPrimaryBtnText = d.primaryBtnText;
+      heroSecondaryBtnText = d.secondaryBtnText;
+    } else if (lastSlug === 'inlay-onlay' || lastSlug === 'inlays-onlays' || lastSlug === 'inlay-onlay-dental-restorations' || lastSlug === 'inley-onley') {
+      const d = INLAY_ONLAY_SUB_HERO_I18N[locale] || INLAY_ONLAY_SUB_HERO_I18N.en;
+      heroBadge = d.badge;
+      heroTitle = d.title;
+      heroSubtitle = d.subtitle;
+      heroPrimaryBtnText = d.primaryBtnText;
+      heroSecondaryBtnText = d.secondaryBtnText;
+    } else if (lastSlug === 'dental-sealants' || lastSlug === 'dental-sealant' || lastSlug === 'fissure-sealants' || lastSlug === 'fissur-ortucu') {
+      const d = DENTAL_SEALANTS_SUB_HERO_I18N[locale] || DENTAL_SEALANTS_SUB_HERO_I18N.en;
+      heroBadge = d.badge;
+      heroTitle = d.title;
+      heroSubtitle = d.subtitle;
+      heroPrimaryBtnText = d.primaryBtnText;
+      heroSecondaryBtnText = d.secondaryBtnText;
+    } else if (lastSlug === 'fluoride-treatment' || lastSlug === 'fluoride' || lastSlug === 'florur-tedavisi') {
+      const d = FLUORIDE_SUB_HERO_I18N[locale] || FLUORIDE_SUB_HERO_I18N.en;
+      heroBadge = d.badge;
+      heroTitle = d.title;
+      heroSubtitle = d.subtitle;
+      heroPrimaryBtnText = d.primaryBtnText;
+      heroSecondaryBtnText = d.secondaryBtnText;
+    } else if (lastSlug === 'bruxism-treatment' || lastSlug === 'bruxism' || lastSlug === 'night-guard' || lastSlug === 'gece-plagi') {
+      const d = BRUXISM_SUB_HERO_I18N[locale] || BRUXISM_SUB_HERO_I18N.en;
+      heroBadge = d.badge;
+      heroTitle = d.title;
+      heroSubtitle = d.subtitle;
+      heroPrimaryBtnText = d.primaryBtnText;
+      heroSecondaryBtnText = d.secondaryBtnText;
     }
-  } else if (isGeneralMain) {
-    heroBadge = locale === 'tr' ? 'GENEL & KORUYUCU DİŞ HEKİMLİĞİ' : 'GENERAL & PREVENTIVE DENTISTRY';
-    heroTitle = locale === 'tr' ? 'Antalya Genel Diş Hekimliği & Tedavileri' : 'General Dentistry & Oral Health in Antalya';
-    heroSubtitle = locale === 'tr' ? 'Ağrısız mikroskobik kanal tedavisi, İsviçre Air-Flow ultrasonik diş temizliği ve estetik nanokompozit dolgular.' : 'Pain-free microscopic root canal therapy, ultrasonic Swiss Air-Flow scaling, and tooth-colored composite restorations.';
-  } else if (isSmileMakeover) {
-    heroBadge =
-      locale === 'tr' ? '3D DİJİTAL GÜLÜŞ TASARIMI' :
-      locale === 'de' ? '3D DIGITAL SMILE DESIGN' :
-      locale === 'pl' ? 'CYFROWE PROJEKTOWANIE UŚMIECHU 3D' :
-      locale === 'pt' ? 'DESIGN DIGITAL DO SORRISO 3D' :
-      locale === 'es' ? 'DISEÑO DIGITAL DE SONRISA 3D' :
-      locale === 'ru' ? '3D ЦИФРОВОЙ ДИЗАЙН УЛЫБКИ' :
-      '3D DIGITAL SMILE DESIGN & MAKEOVER';
-    heroTitle =
-      locale === 'tr' ? 'Antalya Smile Makeover & Dijital Gülüş Tasarımı' :
-      locale === 'de' ? 'Smile Makeover & Digital Smile Design in Antalya, Türkei' :
-      locale === 'pl' ? 'Smile Makeover w Antalyi, Turcja' :
-      locale === 'pt' ? 'Smile Makeover e Design Digital do Sorriso em Antalya, Turquia' :
-      locale === 'es' ? 'Smile Makeover y Diseño Digital de Sonrisa en Antalya, Turquía' :
-      locale === 'ru' ? 'Smile Makeover и цифровой дизайн улыбки в Анталье, Турция' :
-      'Smile Makeover & Digital Smile Design in Antalya, Turkey';
-    heroSubtitle =
-      locale === 'tr' ? 'Yüzün altın oranına ve dudak dinamiklerine özel 3D dijital analiz, yapay zeka destekli planlama ve diş kesimi öncesi canlı mock-up provası.' :
-      locale === 'de' ? 'Individuelle 3D-Smile-Design-Analyse, KI-gestützte Behandlungsplanung und Live-Mock-up-Anprobe vor Behandlungsbeginn in Antalya.' :
-      locale === 'pl' ? 'Indywidualna analiza estetyczna 3D, cyfrowe planowanie uśmiechu AI i przymiarka mock-up przed rozpoczęciem zabiegu w Antalyi.' :
-      locale === 'pt' ? 'Análise estética 3D personalizada, planeamento digital com IA e prova de mock-up ao vivo antes de qualquer desgaste em Antalya.' :
-      locale === 'es' ? 'Análisis estético 3D personalizado, planificación digital con IA y prueba de mock-up en vivo antes del tratamiento en Antalya.' :
-      locale === 'ru' ? 'Персонализированный 3D-анализ улыбки, цифровое планирование с ИИ и живая примерка mock-up до начала препарирования в Анталье.' :
-      'AI-guided 3D Digital Smile Design with customized facial golden ratio analysis and live in-mouth physical mock-up try-in in Antalya.';
-  } else if (isHollywoodSmile) {
-    heroBadge =
-      locale === 'tr' ? 'HOLLYWOOD SMİLE GÜLÜŞ TASARIMI' :
-      locale === 'de' ? 'HOLLYWOOD SMILE' :
-      locale === 'pl' ? 'HOLLYWOODZKI UŚMIECH' :
-      locale === 'pt' ? 'SORRISO HOLLYWOOD' :
-      locale === 'es' ? 'SONRISA HOLLYWOOD' :
-      locale === 'ru' ? 'ГОЛЛИВУДСКАЯ УЛЫБКА' :
-      'HOLLYWOOD SMILE MAKEOVER';
-    heroTitle =
-      locale === 'tr' ? 'Antalya Hollywood Smile Fiyatları & Gülüş Tasarımı' :
-      locale === 'de' ? 'Hollywood Smile in Antalya, Türkei (Komplettes Makeover)' :
-      locale === 'pl' ? 'Hollywood Smile w Antalyi, Turcja' :
-      locale === 'pt' ? 'Sorriso Hollywood em Antalya, Turquia' :
-      locale === 'es' ? 'Sonrisa Hollywood en Antalya, Turquía' :
-      locale === 'ru' ? 'Голливудская улыбка в Анталье, Турция' :
-      'Hollywood Smile in Antalya, Turkey (Full Smile Makeover)';
-    heroSubtitle =
-      locale === 'tr' ? '16-20 adet İsviçre Ivoclar E-Max veya Alman Zirkonyum kaplama ile 4-6 günde kusursuz beyaz simetri ve büyüleyici Hollywood gülüşü.' :
-      locale === 'de' ? '16 bis 20 Schweizer Ivoclar E-Max oder deutsche Zirkonkronen für perfekte weiße Symmetrie und ein strahlendes Hollywood-Lächeln in Antalya.' :
-      locale === 'pl' ? '16–20 szwajcarskich licówek Ivoclar E-Max lub koron cyrkonowych zapewniających idealną symetrię i hollywoodzki uśmiech w Antalyi.' :
-      locale === 'pt' ? '16 a 20 facetas suíças Ivoclar E-Max ou coroas de zircónia para simetria perfeita e sorriso Hollywood deslumbrante em Antalya.' :
-      locale === 'es' ? '16 a 20 carillas suizas Ivoclar E-Max o coronas de circonio para una simetría blanca perfecta y sonrisa Hollywood en Antalya.' :
-      locale === 'ru' ? '16–20 швейцарских виниров Ivoclar E-Max или циркониевых коронок для безупречной белизны и голливудской улыбки в Анталье.' :
-      'Complete aesthetic transformation with 16 to 20 Swiss Ivoclar E-Max veneers or German Zirconia crowns crafted to your facial Golden Ratio in Antalya.';
-  } else if (isGummySmile) {
-    heroBadge =
-      locale === 'tr' ? 'PEMBE ESTETİK & GUMMY SMILE' :
-      locale === 'de' ? 'GUMMY-SMILE-BEHANDLUNG & ZAHNFLEISCHKORREKTUR' :
-      locale === 'pl' ? 'KOREKTA UŚMIECHU DZIĄSŁOWEGO (GUMMY SMILE)' :
-      locale === 'pt' ? 'TRATAMENTO DE SORRISO GENGIVAL' :
-      locale === 'es' ? 'TRATAMIENTO DE SONRISA GINGIVAL' :
-      locale === 'ru' ? 'ЛЕЧЕНИЕ ДЕСНЕВОЙ УЛЫБКИ (GUMMY SMILE)' :
-      'GUMMY SMILE TREATMENT & GUM CONTOURING';
-    heroTitle =
-      locale === 'tr' ? 'Antalya Gummy Smile & Diş Eti Estetiği Tedavisi' :
-      locale === 'de' ? 'Gummy-Smile-Behandlung & Zahnfleischästhetik in Antalya, Türkei' :
-      locale === 'pl' ? 'Leczenie Uśmiechu Dziąsłowego (Gummy Smile) w Antalyi, Turcja' :
-      locale === 'pt' ? 'Tratamento de Sorriso Gengival em Antalya, Turquia' :
-      locale === 'es' ? 'Tratamiento de Sonrisa Gingival en Antalya, Turquía' :
-      locale === 'ru' ? 'Лечение десневой улыбки (Gummy Smile) в Анталье, Турция' :
-      'Gummy Smile Treatment & Laser Gum Contouring in Antalya, Turkey';
-    heroSubtitle =
-      locale === 'tr' ? 'Ağrısız ve dikişsiz diyot lazer teknolojisi ile diş eti seviyeleme, pembe estetik ve gülüş simetrisi optimizasyonu.' :
-      locale === 'de' ? 'Schmerzfreie Diodenlaser-Gingivektomie zur Harmonisierung der Zahnfleischlinie und Beseitigung des Gummy Smile in Antalya.' :
-      locale === 'pl' ? 'Bezbolesna korekta linii dziąseł laserem diodowym zapewniająca idealną różową estetykę i harmonijny uśmiech w Antalyi.' :
-      locale === 'pt' ? 'Gengivoplastia indolor com laser de díodo para alinhar a margem gengival e eliminar o sorriso gengival em Antalya.' :
-      locale === 'es' ? 'Gingivoplastia indolora con láser de diodo para nivelar el margen gingival y corregir la sonrisa gingival en Antalya.' :
-      locale === 'ru' ? 'Безболезненная коррекция десневого контура диодным лазером для устранения десневой улыбки и розовой эстетики в Анталье.' :
-      'Painless diode laser gingivectomy and aesthetic gum contouring to balance excessive gum display and enhance smile symmetry in Antalya.';
-  } else if (isTeethWhitening) {
-    heroBadge =
-      locale === 'tr' ? 'LAZERLE DİŞ BEYAZLATMA' :
-      locale === 'de' ? 'LASER-ZAHNAUFHELLUNG (BLEACHING)' :
-      locale === 'pl' ? 'LASEROWE WYBIELANIE ZĘBÓW' :
-      locale === 'pt' ? 'BRANQUEAMENTO DENTÁRIO A LASER' :
-      locale === 'es' ? 'BLANQUEAMIENTO DENTAL LÁSER' :
-      locale === 'ru' ? 'ЛАЗЕРНОЕ ОТБЕЛИВАНИЕ ЗУБОВ' :
-      'LASER TEETH WHITENING';
-    heroTitle =
-      locale === 'tr' ? 'Antalya Lazerle Diş Beyazlatma & Philips Zoom' :
-      locale === 'de' ? 'Laser-Zahnaufhellung (Bleaching) in Antalya, Türkei' :
-      locale === 'pl' ? 'Laserowe Wybielanie Zębów w Antalyi, Turcja (Philips Zoom)' :
-      locale === 'pt' ? 'Branqueamento Dentário a Laser em Antalya, Turquia' :
-      locale === 'es' ? 'Blanqueamiento Dental Láser en Antalya, Turquía' :
-      locale === 'ru' ? 'Лазерное отбеливание зубов в Анталье, Турция (Philips Zoom)' :
-      'Laser Teeth Whitening in Antalya, Turkey (Philips Zoom)';
-    heroSubtitle =
-      locale === 'tr' ? 'Klinik ortamında Philips Zoom Blue LED ışık aktivasyonu ile tek seansta 6-8 tona kadar güvenli ve kalıcı beyazlatma.' :
-      locale === 'de' ? 'Professionelles klinisches Bleaching mit Philips Zoom LED-Licht für 6 bis 8 Nuancen hellere Zähne in nur einer Sitzung in Antalya.' :
-      locale === 'pl' ? 'Profesjonalne wybielanie gabinetowe lampą Philips Zoom rozjaśniające zęby o 6-8 odcieni podczas jednej wizyty w Antalyi.' :
-      locale === 'pt' ? 'Branqueamento profissional com lâmpada Philips Zoom para dentes até 8 tons mais claros em apenas uma sessão em Antalya.' :
-      locale === 'es' ? 'Blanqueamiento dental clínico con lámpara Philips Zoom para aclarar de 6 a 8 tonos en una sola sesión en Antalya.' :
-      locale === 'ru' ? 'Профессиональное клиническое отбеливание лампой Philips Zoom на 6-8 тонов светлее всего за один сеанс в Анталье.' :
-      'In-clinic professional light-activated Philips Zoom Blue LED whitening lightening enamel by 6 to 8 shades safely in 45 minutes in Antalya.';
-  } else if (isToothContouring) {
-    heroBadge =
-      locale === 'tr' ? 'DİŞ ŞEKİLLENDİRME (ODONTOPLASTİ)' :
-      locale === 'de' ? 'ZAHNUMFORMUNG & KONTURIERUNG' :
-      locale === 'pl' ? 'KONTUROWANIE I KSZTAŁTOWANIE ZĘBÓW' :
-      locale === 'pt' ? 'CONTORNO E REMODELAÇÃO DENTÁRIA' :
-      locale === 'es' ? 'CONTORNEADO Y REMODELADO DENTAL' :
-      locale === 'ru' ? 'КОНТУРИРОВАНИЕ И РЕМАСШТАБИРОВАНИЕ ЗУБОВ' :
-      'TOOTH CONTOURING & ENAMEL RESHAPING';
-    heroTitle =
-      locale === 'tr' ? 'Antalya Diş Şekillendirme ve Konturlama Tedavisi' :
-      locale === 'de' ? 'Zahnumformung & Konturierung in Antalya, Türkei' :
-      locale === 'pl' ? 'Konturowanie i Modelowanie Zębów w Antalyi, Turcja' :
-      locale === 'pt' ? 'Contorno e Remodelação Dentária em Antalya, Turquia' :
-      locale === 'es' ? 'Contorneado y Modelado Dental en Antalya, Turquía' :
-      locale === 'ru' ? 'Контурирование и моделирование зубов в Анталье, Турция' :
-      'Tooth Contouring & Shaping in Antalya, Turkey';
-    heroSubtitle =
-      locale === 'tr' ? 'Hafif diş eğriliklerini, sivrilikleri ve asimetrileri anestezi gerektirmeden düzelten mikroskobik mine şekillendirme ve polisaj.' :
-      locale === 'de' ? 'Minimalinvasive Schmelzkonturierung zur Glättung kleiner Kanten und Asymmetrien ganz ohne Betäubung in Antalya.' :
-      locale === 'pl' ? 'Minimalnie inwazyjne konturowanie szkliwa korygujące drobne nierówności i asymetrie bez znieczulenia w Antalyi.' :
-      locale === 'pt' ? 'Remodelação minimamente invasiva do esmalte para corrigir pequenas irregularidades e assimetrias sem anestesia em Antalya.' :
-      locale === 'es' ? 'Contorneado de esmalte mínimamente invasivo para corregir pequeñas irregularidades y asimetrías sin anestesia en Antalya.' :
-      locale === 'ru' ? 'Минимально инвазивное контурирование эмали для устранения неровностей и асимметрии зубов без анестезии в Анталье.' :
-      'Subtle enamel recontouring and odontoplasty smoothing minor chips, overlaps, and irregular edges painlessly in a single visit in Antalya.';
-  } else if (isDiastemaClosure) {
-    heroBadge =
-      locale === 'tr' ? 'AYRIK DİŞ (DİASTEMA) KAPATMA' :
-      locale === 'de' ? 'DIASTEMA-SCHLIESSUNG (ZAHNLÜCKEN-KORREKTUR)' :
-      locale === 'pl' ? 'ZAMYKANIE DIASTEMY (LUK MIĘDZY ZĘBAMI)' :
-      locale === 'pt' ? 'FECHAMENTO DE DIASTEMA' :
-      locale === 'es' ? 'CIERRE DE DIASTEMA' :
-      locale === 'ru' ? 'ЗАКРЫТИЕ ДИАСТЕМЫ (ЩЕЛИ МЕЖДУ ЗУБАМИ)' :
-      'DIASTEMA CLOSURE & GAP REPAIR';
-    heroTitle =
-      locale === 'tr' ? 'Antalya Ayrık Diş (Diastema) Kapatma Tedavisi' :
-      locale === 'de' ? 'Diastema-Schließung in Antalya, Türkei (Zahnlücken-Korrektur)' :
-      locale === 'pl' ? 'Zamykanie Diastemy w Antalyi, Turcja' :
-      locale === 'pt' ? 'Fechamento de Diastema em Antalya, Turquia' :
-      locale === 'es' ? 'Cierre de Diastema en Antalya, Turquía' :
-      locale === 'ru' ? 'Закрытие диастемы в Анталье, Турция' :
-      'Diastema Closure in Antalya, Turkey (Gap Closure)';
-    heroSubtitle =
-      locale === 'tr' ? 'Ön dişler arasındaki boşlukları diş kesimi olmadan nano-kompozit bonding veya ultra ince E-Max yaprak porselen ile tek seansta kapatma.' :
-      locale === 'de' ? 'Lückenschluss zwischen den Frontzähnen ohne Beschleifen durch direktes Komposit-Bonding oder hauchdünne E-Max-Veneers in Antalya.' :
-      locale === 'pl' ? 'Zamykanie przerw między zębami bez szlifowania za pomocą bondingu kompozytowego lub ultra-cienkich licówek E-Max w Antalyi.' :
-      locale === 'pt' ? 'Fechamento de espaços entre os dentes sem desgaste dental com resina composta ou facetas ultrafinas E-Max em Antalya.' :
-      locale === 'es' ? 'Cierre de espacios interdentales sin tallado mediante composite o carillas ultrafinas E-Max en Antalya.' :
-      locale === 'ru' ? 'Закрытие межзубных промежутков без обточки с помощью композитного бондинга или ультратонких виниров E-Max в Анталье.' :
-      'Non-invasive diastema closure closing spaces between front teeth using direct resin bonding or ultra-thin E-Max porcelain veneers in Antalya.';
-  } else if (isCosmeticCategory) {
-    heroBadge = locale === 'tr' ? 'ESTETİK DİŞ HEKİMLİĞİ & GÜLÜŞ TASARIMI' : 'COSMETIC DENTISTRY & SMILE DESIGN';
-    heroTitle = locale === 'tr' ? 'Antalya Hollywood Smile & Estetik Diş Tedavisi' : 'Hollywood Smile & Cosmetic Dentistry in Antalya';
-    heroSubtitle = locale === 'tr' ? 'Yüzün altın oranına özel 3D Dijital Gülüş Tasarımı, İsviçre Ivoclar E-Max laminalar ve lazerle pembe estetik.' : 'Transform your smile with bespoke 3D Digital Smile Design, Swiss Ivoclar E-Max laminates, and laser gum contouring in Antalya.';
-  } else if (isImplantSupportedDentures) {
-    heroBadge = locale === 'tr' ? 'İMPLANT DESTEKLİ ÇIT ÇITLI DAMAK' : 'IMPLANT SUPPORTED OVERDENTURES';
-    heroTitle = locale === 'tr' ? 'Antalya İmplant Destekli Protez & Çıt Çıtlı Damak Tedavisi' : 'Implant-Supported Dentures (Snap-On) in Antalya';
-    heroSubtitle = locale === 'tr' ? 'Oynayan damak sorununa son: 2 ila 4 implant desteğiyle kilitlenen, damağı kapatmayan açık tasarımıyla %100 sabit çiğneme konforu.' : 'Eliminate loose slipping dentures with 2–4 implant-retained Snap-On overdentures and palateless horseshoe designs in Antalya.';
-  } else if (isDentures) {
-    heroBadge = locale === 'tr' ? 'PROTEZ DİŞ TEDAVİSİ' : 'DENTURES & OVERDENTURES';
-    heroTitle = locale === 'tr' ? 'Antalya Protez Diş & Çıt Çıtlı Damak Tedavisi' : 'Dentures & Snap-On Overdentures in Antalya';
-    heroSubtitle = locale === 'tr' ? 'Oynayan damak sorununa son veren implant destekli çıtçıtlı overdenture sistemleri ve estetik tam protezler.' : 'Eliminate loose dentures with rock-solid Snap-On implant overdentures and precision complete dentures in Antalya.';
-  } else if (isDentalBridges) {
-    heroBadge = locale === 'tr' ? 'DİŞ KÖPRÜSÜ' : 'DENTAL BRIDGES';
-    heroTitle = locale === 'tr' ? 'Antalya Diş Köprüsü & Zirkonyum Tedavisi' : 'Dental Bridges & Zirconia in Antalya';
-    heroSubtitle = locale === 'tr' ? 'Eksik dişlerinizi 1200+ MPa Alman Zirkonyum ve implant destekli köprülerle kalıcı olarak tamamlayın.' : 'Replace missing teeth permanently with high-strength German Zirconia & Implant-supported bridges in Antalya.';
-  } else if (isDentalCrowns) {
-    heroBadge = locale === 'tr' ? 'ZİRKONYUM & KRON' : 'DENTAL CROWNS';
-    heroTitle = locale === 'tr' ? 'Antalya Zirkonyum & Kron Kaplama Tedavisi' : 'Dental Crowns & Zirconia in Antalya';
-    heroSubtitle = locale === 'tr' ? '1200+ MPa dayanıklılıkta Alman Zirkonyum ve Ivoclar E-Max kalitesiyle eksiksiz gülüş dönüşümü.' : 'Restore damaged teeth with 1200+ MPa German Zirconia & Ivoclar E-Max crowns with 5-star VIP care in Antalya.';
-  } else if (isDentalVeneers) {
-    heroBadge = locale === 'tr' ? 'DİŞ KAPLAMA & LAMİNA' : 'DENTAL VENEERS';
-    heroTitle = locale === 'tr' ? 'Antalya Diş Kaplama & Lamina Tedavisi' : 'Dental Veneers & Laminates in Antalya';
-    heroSubtitle = locale === 'tr' ? 'İsviçre menşeli Ivoclar E-Max porselen laminalarla 4-6 günde kusursuz Hollywood gülüşü.' : 'Transform your smile with Swiss Ivoclar E-Max porcelain veneers and 5-star VIP care in Antalya.';
+  } else if (isFullMouth) {
+    const d = FULL_MOUTH_IMPLANTS_HERO_I18N[locale] || FULL_MOUTH_IMPLANTS_HERO_I18N.en;
+    heroBadge = d.badge;
+    heroTitle = d.title;
+    heroSubtitle = d.subtitle;
+    heroPrimaryBtnText = d.primaryBtnText;
+    heroSecondaryBtnText = d.secondaryBtnText;
   } else if (isAllOnFour) {
-    heroBadge = locale === 'tr' ? 'ALL-ON-4 İMPLANT' : 'ALL-ON-4 DENTAL IMPLANTS';
-    heroTitle = locale === 'tr' ? 'Antalya All-on-4 Diş İmplantı Tedavisi' : 'All-on-4 Dental Implants in Antalya Turkey';
-    heroSubtitle = locale === 'tr' ? 'Kemik erimesi olan vakalarda sinüs liftinge gerek kalmadan 4 açılı implantla 24 saatte sabit dişler.' : 'Same-day fixed full-arch teeth with 4 angled titanium implants without bone grafting in Antalya.';
+    const d = ALL_ON_4_HERO_I18N[locale] || ALL_ON_4_HERO_I18N.en;
+    heroBadge = d.badge;
+    heroTitle = d.title;
+    heroSubtitle = d.subtitle;
+    heroPrimaryBtnText = d.primaryBtnText;
+    heroSecondaryBtnText = d.secondaryBtnText;
   } else if (isAllOnSix) {
-    heroBadge = locale === 'tr' ? 'ALL-ON-6 İMPLANT' : 'ALL-ON-6 DENTAL IMPLANTS';
-    heroTitle = locale === 'tr' ? 'Antalya All-on-6 Diş İmplantı Tedavisi' : 'All-on-6 Dental Implants in Antalya Turkey';
-    heroSubtitle = locale === 'tr' ? 'Tek çenede 6 implant desteği ile 14 dişlik eksiksiz çiğneme arkı ve 1200+ MPa Alman Zirkonyum köprü.' : 'Full-arch 14-tooth restoration with 6 titanium implants per jaw and 1200+ MPa Monolithic German Zirconia bridges.';
+    const d = ALL_ON_6_HERO_I18N[locale] || ALL_ON_6_HERO_I18N.en;
+    heroBadge = d.badge;
+    heroTitle = d.title;
+    heroSubtitle = d.subtitle;
+    heroPrimaryBtnText = d.primaryBtnText;
+    heroSecondaryBtnText = d.secondaryBtnText;
   } else if (isImmediate) {
-    heroBadge = locale === 'tr' ? 'AYNI GÜN İMPLANT' : 'IMMEDIATE DENTAL IMPLANTS';
-    heroTitle = locale === 'tr' ? 'Antalya Aynı Gün İmplant Tedavisi (Same-Day Teeth)' : 'Immediate Dental Implants in Antalya (Same-Day Teeth)';
-    heroSubtitle = locale === 'tr' ? 'Diş çekimi ile aynı seansta yüksek tutuculuklu implant yerleşimi ve 24 saat içinde sabit geçici kuron.' : 'Same-day tooth extraction, high-torque titanium implant placement, and fixed aesthetic teeth in 24 hours in Antalya.';
+    const d = IMMEDIATE_IMPLANT_HERO_I18N[locale] || IMMEDIATE_IMPLANT_HERO_I18N.en;
+    heroBadge = d.badge;
+    heroTitle = d.title;
+    heroSubtitle = d.subtitle;
+    heroPrimaryBtnText = d.primaryBtnText;
+    heroSecondaryBtnText = d.secondaryBtnText;
   } else if (isZygomatic) {
-    heroBadge = locale === 'tr' ? 'ZİGOMATİK İMPLANT' : 'ZYGOMATIC DENTAL IMPLANTS';
-    heroTitle = locale === 'tr' ? 'Antalya Zigoma (Elmacık Kemiği) İmplant Tedavisi' : 'Zygomatic Dental Implants in Antalya Turkey';
-    heroSubtitle = locale === 'tr' ? 'Aşırı kemik erimesi olan vakalarda kemik nakli beklemeden elmacık kemiğine sabitlenen 24 saatte kalıcı diş çözümü.' : 'Fixed full-arch teeth in 24 hours anchored into the dense zygoma (cheekbone) for severe bone loss cases without bone grafting.';
+    const d = ZYGOMATIC_IMPLANTS_HERO_I18N[locale] || ZYGOMATIC_IMPLANTS_HERO_I18N.en;
+    heroBadge = d.badge;
+    heroTitle = d.title;
+    heroSubtitle = d.subtitle;
+    heroPrimaryBtnText = d.primaryBtnText;
+    heroSecondaryBtnText = d.secondaryBtnText;
   } else if (isZirconium) {
-    heroBadge = locale === 'tr' ? 'ZİRKONYUM SERAMİK İMPLANT' : 'ZIRCONIUM CERAMIC IMPLANTS';
-    heroTitle = locale === 'tr' ? 'Antalya Zirkonyum (Seramik) Diş İmplantı Tedavisi' : 'Zirconium Ceramic Dental Implants in Antalya';
-    heroSubtitle = locale === 'tr' ? '%100 metalsiz, biyouyumlu beyaz seramik yapısıyla diş etinde grileşme yapmayan en estetik ve alerjisiz implant çözümü.' : '100% metal-free, biocompatible white ceramic implants for natural gum aesthetics without dark shadows or metal allergies.';
+    const d = ZIRCONIUM_IMPLANTS_HERO_I18N[locale] || ZIRCONIUM_IMPLANTS_HERO_I18N.en;
+    heroBadge = d.badge;
+    heroTitle = d.title;
+    heroSubtitle = d.subtitle;
+    heroPrimaryBtnText = d.primaryBtnText;
+    heroSecondaryBtnText = d.secondaryBtnText;
+  } else if (isSinusLift) {
+    const d = SINUS_LIFTING_HERO_I18N[locale] || SINUS_LIFTING_HERO_I18N.en;
+    heroBadge = d.badge;
+    heroTitle = d.title;
+    heroSubtitle = d.subtitle;
+    heroPrimaryBtnText = d.primaryBtnText;
+    heroSecondaryBtnText = d.secondaryBtnText;
+  } else if (isImplantSupportedDentures) {
+    const d = IMPLANT_SUPPORTED_DENTURES_HERO_I18N[locale] || IMPLANT_SUPPORTED_DENTURES_HERO_I18N.en;
+    heroBadge = d.badge;
+    heroTitle = d.title;
+    heroSubtitle = d.subtitle;
+    heroPrimaryBtnText = d.primaryBtnText;
+    heroSecondaryBtnText = d.secondaryBtnText;
   } else if (isZirconiumCrowns) {
     heroBadge =
       locale === 'tr' ? 'ZİRKONYUM KRON KAPLAMA' :
@@ -1297,17 +1410,16 @@ export default async function HierarchicalTreatmentPage({ params }: PageProps) {
       locale === 'es' ? 'Carillas de porcelana mínimamente invasivas de la suiza Ivoclar E-Max con translucidez natural, resistencia a manchas y sonrisa perfecta en Antalya.' :
       locale === 'ru' ? 'Минимально инвазивные керамические виниры из швейцарского Ivoclar E-Max с естественной прозрачностью и устойчивостью к окрашиванию в Анталье.' :
       'Ultra-thin, minimally invasive Swiss Ivoclar E-Max porcelain veneers providing natural optical translucency, stain resistance, and Hollywood smile design in Antalya.';
-  } else if (isSinusLift) {
-    heroBadge = locale === 'tr' ? 'SİNÜS LİFTİNG & KEMİK GREFTİ' : 'SINUS LIFTING & BONE AUGMENTATION';
-    heroTitle = locale === 'tr' ? 'Antalya Sinüs Lifting (Sinüs Yükseltme) Tedavisi' : 'Sinus Lifting in Antalya, Turkey';
-    heroSubtitle = locale === 'tr' ? 'Üst çenede kemik yetersizliği olan durumlarda sinüs tabanı yükseltilerek güvenli ve ömür boyu kalıcı implant temeli oluşturulur.' : 'Gentle sinus membrane elevation and precision bone grafting to create a solid foundation for permanent dental implants in Antalya.';
-  } else if (isDentalImplantsCategory) {
-    heroBadge = locale === 'tr' ? 'DİŞ İMPLANTLARI' : 'DENTAL IMPLANTS';
-    heroTitle = locale === 'tr' ? 'Antalya Diş İmplantı Tedavisi & Fiyatları' : 'Dental Implants Cost (Price) Antalya Turkey';
-    heroSubtitle = locale === 'tr' ? 'Uzman cerrahlarımız ve en son 3D tomografi teknolojisiyle doğal dişinize en yakın kalıcı implant sonuçları.' : 'Achieve results closest to natural teeth with implant treatment performed under the supervision of expert oral surgeons.';
+  } else if (isDentalImplantsCategory && !isFullMouth && !isAllOnFour && !isAllOnSix && !isImmediate && !isZygomatic && !isZirconium && !isSinusLift) {
+    const d = DENTAL_IMPLANTS_HERO_I18N[locale] || DENTAL_IMPLANTS_HERO_I18N.en;
+    heroBadge = d.tag;
+    heroTitle = d.title;
+    heroSubtitle = d.subtitle;
+    heroPrimaryBtnText = d.primaryBtnText;
+    heroSecondaryBtnText = d.secondaryBtnText;
   }
 
-  const canonicalUrl = `https://mastersmilestudio.com/${locale}/treatments/${slugPath}`;
+  const canonicalUrl = `https://mastersmilestudio.com/${locale}/treatments/${slugPath}/`;
   const jsonLd = generateTreatmentJsonLd({
     locale,
     slug: lastSlug,
@@ -1338,11 +1450,17 @@ export default async function HierarchicalTreatmentPage({ params }: PageProps) {
         <DentalVeneersHeroBanner />
       ) : isDentalCrowns ? (
         <DentalCrownsHeroBanner />
+      ) : (isDentalImplantsCategory && !isFullMouth && !isAllOnFour && !isAllOnSix && !isImmediate && !isZygomatic && !isZirconium && !isSinusLift) ? (
+        <DentalImplantsHeroBanner />
       ) : (
         <TreatmentHeroBanner
           tag={heroBadge}
           title={heroTitle}
           subtitle={heroSubtitle}
+          primaryBtnText={heroPrimaryBtnText}
+          secondaryBtnText={heroSecondaryBtnText}
+          primaryBtnAriaLabel={heroPrimaryBtnAria}
+          secondaryBtnAriaLabel={heroSecondaryBtnAria}
           imageSrc={
             isSmileMakeover
               ? '/treatments/accordion/smile-makeover.webp'
@@ -1406,110 +1524,24 @@ export default async function HierarchicalTreatmentPage({ params }: PageProps) {
               ? '/treatments/accordion/zirconium-crowns.webp'
               : isSinusLift
               ? '/treatments/accordion/sinus-lifting.webp'
+              : isFullMouth
+              ? '/treatments/accordion/full-mouth-implant.webp'
+              : isAllOnFour
+              ? '/treatments/accordion/all-on-4.webp'
+              : isAllOnSix
+              ? '/treatments/accordion/all-on-6.webp'
+              : isImmediate
+              ? '/treatments/accordion/immediate-implant.webp'
+              : isZygomatic
+              ? '/treatments/accordion/zygomatic-implant.webp'
+              : isZirconium
+              ? '/treatments/accordion/zirconium-implant.webp'
               : isDentalImplantsCategory
               ? '/treatments/accordion/zirconium-implant.webp'
               : undefined
           }
-          imageAlt={
-            isSmileMakeover
-              ? 'Smile Makeover in Antalya, Turkey'
-              : isHollywoodSmile
-              ? 'Hollywood Smile in Antalya, Turkey'
-              : isDentalCleaning
-              ? 'Dental Cleaning & Scaling in Antalya, Turkey'
-              : isToothFillings
-              ? 'Tooth Fillings (Amalgam & Composite) in Antalya, Turkey'
-              : isRootCanal
-              ? 'Root Canal Treatment in Antalya, Turkey'
-              : isToothExtraction
-              ? 'Tooth Extraction in Antalya, Turkey'
-              : isInlayOnlay
-              ? 'Inlay & Onlay Dental Restorations in Antalya, Turkey'
-              : isDentalSealants
-              ? 'Dental Sealants in Antalya, Turkey'
-              : isFluoride
-              ? 'Fluoride Treatment in Antalya, Turkey'
-              : isBruxism
-              ? 'Bruxism Treatment (Night Guard) in Antalya, Turkey'
-              : isGummySmile
-              ? 'Gummy Smile Treatment in Antalya, Turkey'
-              : isTeethWhitening
-              ? 'Teeth Whitening in Antalya, Turkey'
-              : isToothContouring
-              ? 'Tooth Contouring & Shaping in Antalya, Turkey'
-              : isDiastemaClosure
-              ? 'Diastema Closure in Antalya, Turkey'
-              : isCompleteDentures
-              ? 'Complete Dentures in Antalya, Turkey'
-              : isPartialDentures
-              ? 'Partial Dentures in Antalya, Turkey'
-              : isOverdentures
-              ? 'Implant Supported Dentures (Overdentures) in Antalya, Turkey'
-              : isMarylandBridges
-              ? 'Maryland Dental Bridges in Antalya, Turkey'
-              : isCantileverBridges
-              ? 'Cantilever Dental Bridges in Antalya, Turkey'
-              : isTraditionalBridges
-              ? 'Traditional Dental Bridges in Antalya, Turkey'
-              : isCompositeVeneers
-              ? 'Composite Veneers'
-              : isLumineers
-              ? 'Lumineers Dental Veneers in Antalya, Turkey'
-              : isEmpressVeneers
-              ? 'Empress Veneers in Antalya, Turkey'
-              : isZirconiumVeneers
-              ? 'Zirconium Veneers'
-              : isEmaxVeneers
-              ? 'E-max Veneers'
-              : isPorcelainVeneers
-              ? 'Porcelain Laminate Veneers in Antalya, Turkey'
-              : isEmaxCrowns
-              ? 'E-Max Crowns in Antalya, Turkey'
-              : isFullCeramicCrowns
-              ? 'Full Ceramic Crowns in Antalya, Turkey'
-              : isPfmCrowns
-              ? 'Metal Porcelain Crowns (PFM) in Antalya, Turkey'
-              : isZirconiumCrowns
-              ? 'Zirconium Crowns in Antalya, Turkey'
-              : isSinusLift
-              ? 'Sinus Lifting in Antalya, Turkey'
-              : isDentalImplantsCategory
-              ? 'Zirconium Implants'
-              : undefined
-          }
-          primaryBtnText={
-            content?.hero?.primaryBtn ||
-            (locale === 'tr'
-              ? 'Randevu & Bilgi Al'
-              : locale === 'de'
-              ? 'Kontakt & Termin'
-              : locale === 'pl'
-              ? 'Kontakt i Rezerwacja'
-              : locale === 'pt'
-              ? 'Contato e Agendamento'
-              : locale === 'es'
-              ? 'Contacto y Cita'
-              : locale === 'ru'
-              ? 'Консультация и Запись'
-              : 'Book Consultation')
-          }
+          imageAlt={heroTitle}
           primaryBtnHref="/contact"
-          secondaryBtnText={
-            content?.hero?.secondaryBtn ||
-            (locale === 'tr'
-              ? 'Tedavileri İncele'
-              : locale === 'de'
-              ? 'Behandlung Details'
-              : locale === 'pl'
-              ? 'Szczegóły Zabiegu'
-              : locale === 'pt'
-              ? 'Ver Detalhes'
-              : locale === 'es'
-              ? 'Ver Tratamientos'
-              : locale === 'ru'
-              ? 'Подробнее о лечении'
-              : 'Explore Treatment')
-          }
           secondaryBtnHref="#main-content"
         />
       )}

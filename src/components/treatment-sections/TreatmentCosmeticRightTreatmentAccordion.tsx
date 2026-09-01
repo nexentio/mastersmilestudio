@@ -47,7 +47,7 @@ const COSMETIC_ACCORDION_DATA: Record<
         target: 'Patients with minor shape irregularities on their teeth who desire symmetry',
         desc: 'Minor rough spots on the tooth surface are smoothed to achieve a more aesthetic form.',
         img: '/treatments/accordion/tooth-contouring-shaping.webp',
-        href: '/treatments/cosmetic-dentistry/tooth-contouring-shaping',
+        href: '/treatments/cosmetic-dentistry/tooth-contouring',
       },
       {
         title: 'Diastema Closure',
@@ -97,7 +97,7 @@ const COSMETIC_ACCORDION_DATA: Record<
         target: 'Dişlerinde hafif şekil bozuklukları olan ve simetri isteyen hastalar',
         desc: 'Daha estetik bir form elde etmek için diş yüzeyindeki küçük pürüzler ve asimetriler mikroskobik olarak düzeltilir.',
         img: '/treatments/accordion/tooth-contouring-shaping.webp',
-        href: '/treatments/cosmetic-dentistry/tooth-contouring-shaping',
+        href: '/treatments/cosmetic-dentistry/tooth-contouring',
       },
       {
         title: 'Ayrık Diş (Diastema) Kapatma',
@@ -147,7 +147,7 @@ const COSMETIC_ACCORDION_DATA: Record<
         target: 'Patienten mit leichten Formunregelmäßigkeiten, die Symmetrie wünschen',
         desc: 'Kleine Unebenheiten auf der Zahnoberfläche werden geglättet, um eine harmonische Form zu erreichen.',
         img: '/treatments/accordion/tooth-contouring-shaping.webp',
-        href: '/treatments/cosmetic-dentistry/tooth-contouring-shaping',
+        href: '/treatments/cosmetic-dentistry/tooth-contouring',
       },
       {
         title: 'Diastema-Schluss (Zahnlücken)',
@@ -197,7 +197,7 @@ const COSMETIC_ACCORDION_DATA: Record<
         target: 'Pacjenci z drobnymi asymetriami kształtu poszukujący idealnej harmonii',
         desc: 'Drobne nierówności powierzchni zębów są wygładzane w celu uzyskania estetycznego kształtu.',
         img: '/treatments/accordion/tooth-contouring-shaping.webp',
-        href: '/treatments/cosmetic-dentistry/tooth-contouring-shaping',
+        href: '/treatments/cosmetic-dentistry/tooth-contouring',
       },
       {
         title: 'Zamykanie Diastemy (Przerw Między Zębami)',
@@ -247,7 +247,7 @@ const COSMETIC_ACCORDION_DATA: Record<
         target: 'Pacientes com pequenas irregularidades de formato que desejam simetria',
         desc: 'Pequenas asperezas e desníveis são suavizados para obter uma forma mais estética.',
         img: '/treatments/accordion/tooth-contouring-shaping.webp',
-        href: '/treatments/cosmetic-dentistry/tooth-contouring-shaping',
+        href: '/treatments/cosmetic-dentistry/tooth-contouring',
       },
       {
         title: 'Fechamento de Diastema',
@@ -297,7 +297,7 @@ const COSMETIC_ACCORDION_DATA: Record<
         target: 'Pacientes con pequeñas irregularidades de forma que desean simetría',
         desc: 'Se suavizan pequeñas irregularidades en la superficie dental para lograr una forma estética.',
         img: '/treatments/accordion/tooth-contouring-shaping.webp',
-        href: '/treatments/cosmetic-dentistry/tooth-contouring-shaping',
+        href: '/treatments/cosmetic-dentistry/tooth-contouring',
       },
       {
         title: 'Cierre de Diastema',
@@ -347,7 +347,7 @@ const COSMETIC_ACCORDION_DATA: Record<
         target: 'Пациенты с небольшими неровностями формы зубов, стремящиеся к симметрии',
         desc: 'Небольшие неровности эмали сглаживаются для достижения гармоничной формы.',
         img: '/treatments/accordion/tooth-contouring-shaping.webp',
-        href: '/treatments/cosmetic-dentistry/tooth-contouring-shaping',
+        href: '/treatments/cosmetic-dentistry/tooth-contouring',
       },
       {
         title: 'Закрытие диастемы (щелей между зубами)',

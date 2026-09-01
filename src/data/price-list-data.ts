@@ -2046,7 +2046,7 @@ export const PRICING_SIDEBAR_DATA = {
         es: 'Coronas Dentales',
         ru: 'Зубные коронки',
       },
-      href: '/treatments/zirconia-crowns',
+      href: '/treatments/dental-crowns/zirconium-crowns',
     },
     {
       title: {
@@ -2058,7 +2058,7 @@ export const PRICING_SIDEBAR_DATA = {
         es: 'Carillas Dentales',
         ru: 'Виниры для зубов',
       },
-      href: '/treatments/porcelain-laminate-veneers',
+      href: '/treatments/dental-veneers/porcelain-veneers',
     },
     {
       title: {
@@ -2070,7 +2070,7 @@ export const PRICING_SIDEBAR_DATA = {
         es: 'Puentes Dentales',
         ru: 'Зубные мосты',
       },
-      href: '/treatments/dental-bridge',
+      href: '/treatments/dental-bridges',
     },
     {
       title: {
@@ -2082,7 +2082,7 @@ export const PRICING_SIDEBAR_DATA = {
         es: 'Dentaduras e Implanto-Soportadas',
         ru: 'Протезы на имплантах',
       },
-      href: '/treatments/implant-supported-dentures',
+      href: '/treatments/dental-implants/implant-supported-dentures',
     },
     {
       title: {
@@ -2094,7 +2094,7 @@ export const PRICING_SIDEBAR_DATA = {
         es: 'Odontología Estética',
         ru: 'Эстетическая стоматология',
       },
-      href: '/treatments/smile-makeover',
+      href: '/treatments/cosmetic-dentistry/smile-makeover',
     },
     {
       title: {

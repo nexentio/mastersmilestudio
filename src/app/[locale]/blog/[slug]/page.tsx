@@ -47,6 +47,16 @@ export async function generateStaticParams() {
   return params;
 }
 
+const BLOG_META_DESC_TEMPLATES: Record<string, (title: string) => string> = {
+  tr: (title) => `${title} - Antalya Master Smile Studio klinik analiz, tedavi yöntemleri ve uzman rehberi.`,
+  en: (title) => `${title} - Clinical insights, dental procedure breakdown, and expert guidance from Master Smile Studio Antalya.`,
+  de: (title) => `${title} - Klinische Einblicke, Ablauf der Zahnbehandlung und Expertenrat von Master Smile Studio Antalya.`,
+  pl: (title) => `${title} - Analiza kliniczna, przebieg zabiegów stomatologicznych i porady ekspertów Master Smile Studio Antalya.`,
+  pt: (title) => `${title} - Análise clínica, procedimentos odontológicos e orientações especializadas da Master Smile Studio Antalya.`,
+  es: (title) => `${title} - Análisis clínico, desglose de procedimientos dentales y orientación experta de Master Smile Studio Antalya.`,
+  ru: (title) => `${title} - Клинический анализ, этапы процедур и экспертные рекомендации от Master Smile Studio в Анталье.`,
+};
+
 export async function generateMetadata({ params }: Props) {
   const { locale, slug } = await params;
   setRequestLocale(locale);
@@ -55,12 +65,10 @@ export async function generateMetadata({ params }: Props) {
   if (!post) return {};
 
   const title = post.title[locale] || post.title.en || post.title.tr || slug;
-  const description =
-    locale === 'tr'
-      ? `${title} - Antalya Master Smile Studio klinik analiz, tedavi yöntemleri ve uzman rehberi.`
-      : `${title} - Clinical insights, dental procedure breakdown, and expert guidance from Master Smile Studio Antalya.`;
+  const descBuilder = BLOG_META_DESC_TEMPLATES[locale] || BLOG_META_DESC_TEMPLATES.en;
+  const description = descBuilder(title);
 
-  const canonicalUrl = `${SITE_CONFIG.domain}/${locale}/blog/${slug}`;
+  const canonicalUrl = `${SITE_CONFIG.domain}/${locale}/blog/${slug}/`;
   const ogImage = post.image.startsWith('http') ? post.image : `${SITE_CONFIG.domain}${post.image}`;
 
   return {
@@ -116,12 +124,12 @@ export default async function BlogDetailPage({ params }: Props) {
     author: {
       '@type': 'Organization',
       name: 'Master Smile Studio Medical Board',
-      url: `${SITE_CONFIG.domain}/${locale}`,
+      url: `${SITE_CONFIG.domain}/${locale}/`,
     },
     publisher: {
       '@type': 'Dentist',
       name: 'Master Smile Studio Antalya',
-      url: SITE_CONFIG.domain,
+      url: `${SITE_CONFIG.domain}/${locale}/`,
       logo: {
         '@type': 'ImageObject',
         url: `${SITE_CONFIG.domain}/mastersmilestudio-logo.png`,
@@ -131,7 +139,7 @@ export default async function BlogDetailPage({ params }: Props) {
     dateModified: '2026-08-19T14:00:00.000Z',
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': `${SITE_CONFIG.domain}/${locale}/blog/${slug}`,
+      '@id': `${SITE_CONFIG.domain}/${locale}/blog/${slug}/`,
     },
   };
 
@@ -143,19 +151,19 @@ export default async function BlogDetailPage({ params }: Props) {
         '@type': 'ListItem',
         position: 1,
         name: HOME_NAMES[locale] || HOME_NAMES.en,
-        item: `${SITE_CONFIG.domain}/${locale}`,
+        item: `${SITE_CONFIG.domain}/${locale}/`,
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: BLOG_NAMES[locale] || BLOG_NAMES.en,
-        item: `${SITE_CONFIG.domain}/${locale}/blog`,
+        item: `${SITE_CONFIG.domain}/${locale}/blog/`,
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: title,
-        item: `${SITE_CONFIG.domain}/${locale}/blog/${slug}`,
+        item: `${SITE_CONFIG.domain}/${locale}/blog/${slug}/`,
       },
     ],
   };

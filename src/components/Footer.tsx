@@ -40,19 +40,19 @@ export default function Footer() {
   };
 
   const treatmentsList = [
-    { label: t('treatmentZirconium'), href: '/treatments' },
-    { label: t('treatmentEmax'), href: '/treatments' },
-    { label: t('treatmentImplant'), href: '/treatments' },
-    { label: t('treatmentHollywood'), href: '/treatments' },
-    { label: t('treatmentWhitening'), href: '/treatments' },
-    { label: t('treatmentSurgery'), href: '/treatments' },
+    { label: t('treatmentZirconium'), href: '/treatments/dental-crowns/zirconium-crowns' },
+    { label: t('treatmentEmax'), href: '/treatments/dental-veneers/emax-veneers' },
+    { label: t('treatmentImplant'), href: '/treatments/dental-implants/all-on-4-implants' },
+    { label: t('treatmentHollywood'), href: '/treatments/cosmetic-dentistry/hollywood-smile' },
+    { label: t('treatmentWhitening'), href: '/treatments/cosmetic-dentistry/teeth-whitening' },
+    { label: t('treatmentSurgery'), href: '/treatments/dental-implants' },
   ];
 
   const supportList = [
     { label: t('supportProcess'), href: '/#treatment-process' },
-    { label: t('supportTourism'), href: '/#faq' },
-    { label: t('supportReviews'), href: '/#patients' },
-    { label: t('supportFaq'), href: '/#faq' },
+    { label: t('supportTourism'), href: '/faq' },
+    { label: t('supportReviews'), href: '/reviews' },
+    { label: t('supportFaq'), href: '/faq' },
     { label: t('supportContact'), href: '/contact' },
     { label: t('supportWhatsapp'), href: getWhatsAppLink(locale), isExternal: true },
   ];
@@ -63,7 +63,7 @@ export default function Footer() {
     { label: t('corpRooms'), href: '/about' },
     { label: t('corpTech'), href: '/about' },
     { label: t('corpCertificates'), href: '/about' },
-    { label: t('corpBlog'), href: '/#blog' },
+    { label: t('corpBlog'), href: '/blog' },
   ];
 
   const legalList = [

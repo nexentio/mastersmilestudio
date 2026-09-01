@@ -39,9 +39,9 @@ export const siteConfig = {
     instagram: 'https://www.instagram.com/mastersmilestudio/',
     facebook: 'https://www.facebook.com/p/Mastersmilestudio-61569392717782/',
     youtube: 'https://www.youtube.com/@dentmastersmile',
-    googleMaps: 'https://maps.google.com/?q=Master+Smile+Studio+Guzeloba+Antalya',
+    googleMaps: 'https://www.google.com/maps/place//data=!4m2!3m1!1s0x14c39b68ac254dc9:0x2a34fa4a30ea77b2?sa=X&ved=1t:8290&ictx=111',
   },
-  priceRange: '$$$',
+  priceRange: '$$',
   currenciesAccepted: 'EUR, USD, GBP, TRY',
   paymentAccepted: 'Cash, Credit Card, Bank Transfer',
   languagesSpoken: ['Turkish', 'English', 'German', 'Russian', 'Spanish', 'Portuguese', 'Polish'],
@@ -53,13 +53,13 @@ export function getWhatsAppLink(locale: string = 'tr', message?: string): string
   const phone = siteConfig.whatsappNumbers[locale] || siteConfig.whatsappNumbers.en || '905346963163';
   
   const defaultMessages: Record<string, string> = {
-    tr: 'Merhaba, Master Smile Studio hakkında bilgi ve randevu almak istiyorum.',
-    en: 'Hello, I would like to get information and make an appointment at Master Smile Studio.',
-    de: 'Hallo, ich möchte Informationen erhalten und einen Termin bei Master Smile Studio vereinbaren.',
-    ru: 'Здравствуйте! Я хотел бы получить консультацию и записаться на прием в Master Smile Studio.',
-    pl: 'Dzień dobry, chciałbym uzyskać informacje i umówić się na wizytę w Master Smile Studio.',
-    es: 'Hola, me gustaría obtener información y solicitar una cita en Master Smile Studio.',
-    pt: 'Olá, gostaria de obter informações e agendar uma consulta no Master Smile Studio.',
+    tr: 'Merhaba, web siteniz üzerinden ulaşıyorum. Master Smile Studio hakkında bilgi ve randevu almak istiyorum.',
+    en: 'Hello, I am contacting you through your website. I would like to get information and make an appointment at Master Smile Studio.',
+    de: 'Hallo, ich kontaktiere Sie über Ihre Website. Ich möchte Informationen erhalten und einen Termin bei Master Smile Studio vereinbaren.',
+    ru: 'Здравствуйте! Я обращаюсь через ваш сайт. Я хотел бы получить консультацию и записаться на прием в Master Smile Studio.',
+    pl: 'Dzień dobry, kontaktuję się przez Państwa stronę internetową. Chciałbym uzyskać informacje i umówić się na wizytę w Master Smile Studio.',
+    es: 'Hola, me pongo en contacto a través de su sitio web. Me gustaría obtener información y solicitar una cita en Master Smile Studio.',
+    pt: 'Olá, estou entrando em contato através do seu site. Gostaria de obter informações e agendar uma consulta no Master Smile Studio.',
   };
 
   const text = message || defaultMessages[locale] || defaultMessages.en;

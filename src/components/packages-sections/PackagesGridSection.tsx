@@ -33,18 +33,18 @@ export default function PackagesGridSection() {
                 const pkgHead = getLocalized(pkg.head);
                 const pkgWaMsg = encodeURIComponent(
                   locale === 'tr'
-                    ? `Merhaba Master Smile Studio! "${pkgHead}" için kişiye özel fiyat teklifi, otel ve transfer dahil tedavi planı almak istiyorum.`
+                    ? `Merhaba, web siteniz üzerinden ulaşıyorum. "${pkgHead}" paketi için kişiye özel fiyat teklifi, otel ve transfer dahil tedavi planı almak istiyorum.`
                     : locale === 'de'
-                    ? `Hallo Master Smile Studio! Ich möchte ein persönliches Preisangebot inklusive Hotel & Transfer für "${pkgHead}" erhalten.`
+                    ? `Hallo, ich kontaktiere Sie über Ihre Website. Ich möchte ein persönliches Preisangebot inklusive Hotel & Transfer für "${pkgHead}" erhalten.`
                     : locale === 'pl'
-                    ? `Dzień dobry Master Smile Studio! Chciałbym otrzymać indywidualną wycenę z hotelem i transferem dla "${pkgHead}".`
+                    ? `Dzień dobry, kontaktuję się przez Państwa stronę internetową. Chciałbym otrzymać indywidualną wycenę z hotelem i transferem dla "${pkgHead}".`
                     : locale === 'pt'
-                    ? `Olá Master Smile Studio! Gostaria de receber um orçamento personalizado com hotel e transfer para "${pkgHead}".`
+                    ? `Olá, estou entrando em contato através do seu site. Gostaria de receber um orçamento personalizado com hotel e transfer para "${pkgHead}".`
                     : locale === 'es'
-                    ? `¡Hola Master Smile Studio! Me gustaría recibir un presupuesto personalizado con hotel y traslado para "${pkgHead}".`
+                    ? `¡Hola! Me pongo en contacto a través de su sitio web. Me gustaría recibir un presupuesto personalizado con hotel y traslado para "${pkgHead}".`
                     : locale === 'ru'
-                    ? `Здравствуйте Master Smile Studio! Я хотел бы получить индивидуальный расчет с отелем и трансфером для "${pkgHead}".`
-                    : `Hello Master Smile Studio! I would like to get a personalized price quote, hotel and transfer package for "${pkgHead}".`
+                    ? `Здравствуйте! Я обращаюсь через ваш сайт. Я хотел бы получить индивидуальный расчет с отелем и трансфером для "${pkgHead}".`
+                    : `Hello, I am contacting you through your website. I would like to get a personalized price quote, hotel and transfer package for "${pkgHead}".`
                 );
                 const pkgWaUrl = `https://wa.me/${whatsappNumber}?text=${pkgWaMsg}`;
 

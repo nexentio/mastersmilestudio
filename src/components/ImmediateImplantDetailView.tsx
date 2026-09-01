@@ -1414,12 +1414,6 @@ export default function ImmediateImplantDetailView() {
             <p className={styles.packagesSubtitle}>{d.packagesSubtitle}</p>
           </div>
 
-          {/* VIP Guarantee Trust Badge */}
-          <div className={styles.currencyBar} style={{ justifyContent: 'center' }}>
-            <span style={{ fontSize: '0.9rem', color: '#047857', fontWeight: '600', background: '#ecfdf5', padding: '0.4rem 1rem', borderRadius: '999px', border: '1px solid #a7f3d0' }}>
-              {locale === 'tr' ? '5★ Otel + VIP Transfer + Ömür Boyu Garanti Dahil' : '5★ Luxury Hotel + VIP Transfers + Lifetime Warranty Included'}
-            </span>
-          </div>
 
           {/* 6 Real Implant Brand Package Cards */}
           <div className={styles.pkgGrid}>

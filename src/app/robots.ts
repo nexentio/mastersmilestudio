@@ -4,12 +4,13 @@ import { siteConfig } from '@/config/site';
 export const dynamic = 'force-static';
 
 export default function robots(): MetadataRoute.Robots {
+  const baseUrl = siteConfig.domain.replace(/\/+$/, '');
   return {
     rules: {
       userAgent: '*',
       allow: '/',
       disallow: ['/api/'],
     },
-    sitemap: `${siteConfig.domain}/sitemap.xml`,
+    sitemap: `${baseUrl}/sitemap.xml`,
   };
 }

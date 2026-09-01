@@ -1,0 +1,210 @@
+# Cloudflare Pages 301 Permanent Redirects for Master Smile Studio
+
+# Non-Locale Direct Fallbacks to English Locale
+/about /en/about/ 301
+/about/ /en/about/ 301
+/treatments /en/treatments/ 301
+/treatments/ /en/treatments/ 301
+/packages /en/packages/ 301
+/packages/ /en/packages/ 301
+/prices /en/prices/ 301
+/prices/ /en/prices/ 301
+/before-after /en/before-after/ 301
+/before-after/ /en/before-after/ 301
+/gallery /en/gallery/ 301
+/gallery/ /en/gallery/ 301
+/reviews /en/reviews/ 301
+/reviews/ /en/reviews/ 301
+/faq /en/faq/ 301
+/faq/ /en/faq/ 301
+/contact /en/contact/ 301
+/contact/ /en/contact/ 301
+/blog /en/blog/ 301
+/blog/ /en/blog/ 301
+/privacy /en/privacy-policy/ 301
+/privacy/ /en/privacy-policy/ 301
+/terms /en/terms-of-service/ 301
+/terms/ /en/terms-of-service/ 301
+/privacy-policy /en/privacy-policy/ 301
+/privacy-policy/ /en/privacy-policy/ 301
+/terms-of-service /en/terms-of-service/ 301
+/terms-of-service/ /en/terms-of-service/ 301
+
+# Legacy Policy Routes
+/:locale/privacy /:locale/privacy-policy/ 301
+/:locale/privacy/ /:locale/privacy-policy/ 301
+/:locale/terms /:locale/terms-of-service/ 301
+/:locale/terms/ /:locale/terms-of-service/ 301
+
+# Dental Implants Alias Redirects
+/:locale/treatments/dental-implants/all-on-4-dental-implants/ /:locale/treatments/dental-implants/all-on-4-implants/ 301
+/:locale/treatments/dental-implants/all-on-4-dental-implants /:locale/treatments/dental-implants/all-on-4-implants/ 301
+/:locale/treatments/all-on-4-dental-implants/ /:locale/treatments/dental-implants/all-on-4-implants/ 301
+/:locale/treatments/all-on-4-dental-implants /:locale/treatments/dental-implants/all-on-4-implants/ 301
+/:locale/treatments/all-on-4-implants/ /:locale/treatments/dental-implants/all-on-4-implants/ 301
+/:locale/treatments/all-on-4-implants /:locale/treatments/dental-implants/all-on-4-implants/ 301
+
+/:locale/treatments/dental-implants/all-on-6-dental-implants/ /:locale/treatments/dental-implants/all-on-6-implants/ 301
+/:locale/treatments/dental-implants/all-on-6-dental-implants /:locale/treatments/dental-implants/all-on-6-implants/ 301
+/:locale/treatments/all-on-6-dental-implants/ /:locale/treatments/dental-implants/all-on-6-implants/ 301
+/:locale/treatments/all-on-6-dental-implants /:locale/treatments/dental-implants/all-on-6-implants/ 301
+/:locale/treatments/all-on-6-implants/ /:locale/treatments/dental-implants/all-on-6-implants/ 301
+/:locale/treatments/all-on-6-implants /:locale/treatments/dental-implants/all-on-6-implants/ 301
+
+/:locale/treatments/dental-implants/full-mouth-dental-implants/ /:locale/treatments/dental-implants/full-mouth-implants/ 301
+/:locale/treatments/dental-implants/full-mouth-dental-implants /:locale/treatments/dental-implants/full-mouth-implants/ 301
+/:locale/treatments/full-mouth-dental-implants/ /:locale/treatments/dental-implants/full-mouth-implants/ 301
+/:locale/treatments/full-mouth-dental-implants /:locale/treatments/dental-implants/full-mouth-implants/ 301
+/:locale/treatments/full-mouth-implants/ /:locale/treatments/dental-implants/full-mouth-implants/ 301
+/:locale/treatments/full-mouth-implants /:locale/treatments/dental-implants/full-mouth-implants/ 301
+
+/:locale/treatments/dental-implants/immediate-implants/ /:locale/treatments/dental-implants/immediate-implant-treatment/ 301
+/:locale/treatments/dental-implants/immediate-implants /:locale/treatments/dental-implants/immediate-implant-treatment/ 301
+/:locale/treatments/dental-implants/immediate-dental-implants/ /:locale/treatments/dental-implants/immediate-implant-treatment/ 301
+/:locale/treatments/dental-implants/immediate-dental-implants /:locale/treatments/dental-implants/immediate-implant-treatment/ 301
+/:locale/treatments/immediate-implants/ /:locale/treatments/dental-implants/immediate-implant-treatment/ 301
+/:locale/treatments/immediate-implants /:locale/treatments/dental-implants/immediate-implant-treatment/ 301
+/:locale/treatments/immediate-dental-implants/ /:locale/treatments/dental-implants/immediate-implant-treatment/ 301
+/:locale/treatments/immediate-dental-implants /:locale/treatments/dental-implants/immediate-implant-treatment/ 301
+/:locale/treatments/immediate-implant-treatment/ /:locale/treatments/dental-implants/immediate-implant-treatment/ 301
+/:locale/treatments/immediate-implant-treatment /:locale/treatments/dental-implants/immediate-implant-treatment/ 301
+
+/:locale/treatments/zygomatic-implants/ /:locale/treatments/dental-implants/zygomatic-implants/ 301
+/:locale/treatments/zygomatic-implants /:locale/treatments/dental-implants/zygomatic-implants/ 301
+/:locale/treatments/zirconium-implants/ /:locale/treatments/dental-implants/zirconium-implants/ 301
+/:locale/treatments/zirconium-implants /:locale/treatments/dental-implants/zirconium-implants/ 301
+/:locale/treatments/sinus-lifting/ /:locale/treatments/dental-implants/sinus-lifting/ 301
+/:locale/treatments/sinus-lifting /:locale/treatments/dental-implants/sinus-lifting/ 301
+/:locale/treatments/implant-supported-dentures/ /:locale/treatments/dental-implants/implant-supported-dentures/ 301
+/:locale/treatments/implant-supported-dentures /:locale/treatments/dental-implants/implant-supported-dentures/ 301
+
+# Dental Crowns Alias Redirects
+/:locale/treatments/dental-crowns/zirconia-crowns/ /:locale/treatments/dental-crowns/zirconium-crowns/ 301
+/:locale/treatments/dental-crowns/zirconia-crowns /:locale/treatments/dental-crowns/zirconium-crowns/ 301
+/:locale/treatments/zirconium-crowns/ /:locale/treatments/dental-crowns/zirconium-crowns/ 301
+/:locale/treatments/zirconium-crowns /:locale/treatments/dental-crowns/zirconium-crowns/ 301
+/:locale/treatments/zirconia-crowns/ /:locale/treatments/dental-crowns/zirconium-crowns/ 301
+/:locale/treatments/zirconia-crowns /:locale/treatments/dental-crowns/zirconium-crowns/ 301
+
+/:locale/treatments/dental-crowns/metal-porcelain-crowns/ /:locale/treatments/dental-crowns/pfm-crowns/ 301
+/:locale/treatments/dental-crowns/metal-porcelain-crowns /:locale/treatments/dental-crowns/pfm-crowns/ 301
+/:locale/treatments/metal-porcelain-crowns/ /:locale/treatments/dental-crowns/pfm-crowns/ 301
+/:locale/treatments/metal-porcelain-crowns /:locale/treatments/dental-crowns/pfm-crowns/ 301
+/:locale/treatments/pfm-crowns/ /:locale/treatments/dental-crowns/pfm-crowns/ 301
+/:locale/treatments/pfm-crowns /:locale/treatments/dental-crowns/pfm-crowns/ 301
+
+/:locale/treatments/dental-crowns/e-max-crowns/ /:locale/treatments/dental-crowns/emax-crowns/ 301
+/:locale/treatments/dental-crowns/e-max-crowns /:locale/treatments/dental-crowns/emax-crowns/ 301
+/:locale/treatments/e-max-crowns/ /:locale/treatments/dental-crowns/emax-crowns/ 301
+/:locale/treatments/e-max-crowns /:locale/treatments/dental-crowns/emax-crowns/ 301
+/:locale/treatments/emax-crowns/ /:locale/treatments/dental-crowns/emax-crowns/ 301
+/:locale/treatments/emax-crowns /:locale/treatments/dental-crowns/emax-crowns/ 301
+
+/:locale/treatments/dental-crowns/full-ceramic/ /:locale/treatments/dental-crowns/full-ceramic-crowns/ 301
+/:locale/treatments/dental-crowns/full-ceramic /:locale/treatments/dental-crowns/full-ceramic-crowns/ 301
+/:locale/treatments/full-ceramic/ /:locale/treatments/dental-crowns/full-ceramic-crowns/ 301
+/:locale/treatments/full-ceramic /:locale/treatments/dental-crowns/full-ceramic-crowns/ 301
+/:locale/treatments/full-ceramic-crowns/ /:locale/treatments/dental-crowns/full-ceramic-crowns/ 301
+/:locale/treatments/full-ceramic-crowns /:locale/treatments/dental-crowns/full-ceramic-crowns/ 301
+
+# Dental Veneers Alias Redirects
+/:locale/treatments/dental-veneers/porcelain-laminate-veneers/ /:locale/treatments/dental-veneers/porcelain-veneers/ 301
+/:locale/treatments/dental-veneers/porcelain-laminate-veneers /:locale/treatments/dental-veneers/porcelain-veneers/ 301
+/:locale/treatments/porcelain-laminate-veneers/ /:locale/treatments/dental-veneers/porcelain-veneers/ 301
+/:locale/treatments/porcelain-laminate-veneers /:locale/treatments/dental-veneers/porcelain-veneers/ 301
+/:locale/treatments/porcelain-veneers/ /:locale/treatments/dental-veneers/porcelain-veneers/ 301
+/:locale/treatments/porcelain-veneers /:locale/treatments/dental-veneers/porcelain-veneers/ 301
+
+/:locale/treatments/dental-veneers/e-max-veneers/ /:locale/treatments/dental-veneers/emax-veneers/ 301
+/:locale/treatments/dental-veneers/e-max-veneers /:locale/treatments/dental-veneers/emax-veneers/ 301
+/:locale/treatments/e-max-veneers/ /:locale/treatments/dental-veneers/emax-veneers/ 301
+/:locale/treatments/e-max-veneers /:locale/treatments/dental-veneers/emax-veneers/ 301
+/:locale/treatments/emax-veneers/ /:locale/treatments/dental-veneers/emax-veneers/ 301
+/:locale/treatments/emax-veneers /:locale/treatments/dental-veneers/emax-veneers/ 301
+
+/:locale/treatments/zirconium-veneers/ /:locale/treatments/dental-veneers/zirconium-veneers/ 301
+/:locale/treatments/zirconium-veneers /:locale/treatments/dental-veneers/zirconium-veneers/ 301
+/:locale/treatments/composite-veneers/ /:locale/treatments/dental-veneers/composite-veneers/ 301
+/:locale/treatments/composite-veneers /:locale/treatments/dental-veneers/composite-veneers/ 301
+/:locale/treatments/lumineers/ /:locale/treatments/dental-veneers/lumineers/ 301
+/:locale/treatments/lumineers /:locale/treatments/dental-veneers/lumineers/ 301
+/:locale/treatments/empress-veneers/ /:locale/treatments/dental-veneers/empress-veneers/ 301
+/:locale/treatments/empress-veneers /:locale/treatments/dental-veneers/empress-veneers/ 301
+
+# Dental Bridges Alias Redirects
+/:locale/treatments/dental-bridge/ /:locale/treatments/dental-bridges/ 301
+/:locale/treatments/dental-bridge /:locale/treatments/dental-bridges/ 301
+/:locale/treatments/dental-bridge/:sub/ /:locale/treatments/dental-bridges/:sub/ 301
+/:locale/treatments/dental-bridge/:sub /:locale/treatments/dental-bridges/:sub/ 301
+/:locale/treatments/traditional-bridges/ /:locale/treatments/dental-bridges/traditional-bridges/ 301
+/:locale/treatments/traditional-bridges /:locale/treatments/dental-bridges/traditional-bridges/ 301
+/:locale/treatments/maryland-bridges/ /:locale/treatments/dental-bridges/maryland-bridges/ 301
+/:locale/treatments/maryland-bridges /:locale/treatments/dental-bridges/maryland-bridges/ 301
+/:locale/treatments/cantilever-bridges/ /:locale/treatments/dental-bridges/cantilever-bridges/ 301
+/:locale/treatments/cantilever-bridges /:locale/treatments/dental-bridges/cantilever-bridges/ 301
+/:locale/treatments/implant-supported-bridges/ /:locale/treatments/dental-bridges/implant-supported-bridges/ 301
+/:locale/treatments/implant-supported-bridges /:locale/treatments/dental-bridges/implant-supported-bridges/ 301
+
+# Dentures Alias Redirects
+/:locale/treatments/complete-dentures/ /:locale/treatments/dentures/complete-dentures/ 301
+/:locale/treatments/complete-dentures /:locale/treatments/dentures/complete-dentures/ 301
+/:locale/treatments/partial-dentures/ /:locale/treatments/dentures/partial-dentures/ 301
+/:locale/treatments/partial-dentures /:locale/treatments/dentures/partial-dentures/ 301
+/:locale/treatments/overdentures/ /:locale/treatments/dentures/overdentures/ 301
+/:locale/treatments/overdentures /:locale/treatments/dentures/overdentures/ 301
+
+# Cosmetic Dentistry Alias Redirects
+/:locale/treatments/cosmetic-dentistry/gummy-smile/ /:locale/treatments/cosmetic-dentistry/gummy-smile-treatment/ 301
+/:locale/treatments/cosmetic-dentistry/gummy-smile /:locale/treatments/cosmetic-dentistry/gummy-smile-treatment/ 301
+/:locale/treatments/cosmetic-dentistry/tooth-contouring-shaping/ /:locale/treatments/cosmetic-dentistry/tooth-contouring/ 301
+/:locale/treatments/cosmetic-dentistry/tooth-contouring-shaping /:locale/treatments/cosmetic-dentistry/tooth-contouring/ 301
+/:locale/treatments/cosmetic-dentistry/tooth-contouring-and-shaping/ /:locale/treatments/cosmetic-dentistry/tooth-contouring/ 301
+/:locale/treatments/cosmetic-dentistry/tooth-contouring-and-shaping /:locale/treatments/cosmetic-dentistry/tooth-contouring/ 301
+/:locale/treatments/smile-makeover/ /:locale/treatments/cosmetic-dentistry/smile-makeover/ 301
+/:locale/treatments/smile-makeover /:locale/treatments/cosmetic-dentistry/smile-makeover/ 301
+/:locale/treatments/hollywood-smile/ /:locale/treatments/cosmetic-dentistry/hollywood-smile/ 301
+/:locale/treatments/hollywood-smile /:locale/treatments/cosmetic-dentistry/hollywood-smile/ 301
+/:locale/treatments/gummy-smile/ /:locale/treatments/cosmetic-dentistry/gummy-smile-treatment/ 301
+/:locale/treatments/gummy-smile /:locale/treatments/cosmetic-dentistry/gummy-smile-treatment/ 301
+/:locale/treatments/gummy-smile-treatment/ /:locale/treatments/cosmetic-dentistry/gummy-smile-treatment/ 301
+/:locale/treatments/gummy-smile-treatment /:locale/treatments/cosmetic-dentistry/gummy-smile-treatment/ 301
+/:locale/treatments/teeth-whitening/ /:locale/treatments/cosmetic-dentistry/teeth-whitening/ 301
+/:locale/treatments/teeth-whitening /:locale/treatments/cosmetic-dentistry/teeth-whitening/ 301
+/:locale/treatments/tooth-contouring/ /:locale/treatments/cosmetic-dentistry/tooth-contouring/ 301
+/:locale/treatments/tooth-contouring /:locale/treatments/cosmetic-dentistry/tooth-contouring/ 301
+/:locale/treatments/diastema-closure/ /:locale/treatments/cosmetic-dentistry/diastema-closure/ 301
+/:locale/treatments/diastema-closure /:locale/treatments/cosmetic-dentistry/diastema-closure/ 301
+
+# General Dentistry Alias Redirects
+/:locale/treatments/general-dentistry/teeth-cleaning-scaling/ /:locale/treatments/general-dentistry/dental-cleaning/ 301
+/:locale/treatments/general-dentistry/teeth-cleaning-scaling /:locale/treatments/general-dentistry/dental-cleaning/ 301
+/:locale/treatments/general-dentistry/composite-fillings-inlays/ /:locale/treatments/general-dentistry/tooth-fillings/ 301
+/:locale/treatments/general-dentistry/composite-fillings-inlays /:locale/treatments/general-dentistry/tooth-fillings/ 301
+/:locale/treatments/general-dentistry/root-canal-treatment/ /:locale/treatments/general-dentistry/root-canal/ 301
+/:locale/treatments/general-dentistry/root-canal-treatment /:locale/treatments/general-dentistry/root-canal/ 301
+/:locale/treatments/general-dentistry/tooth-extractions-wisdom-teeth/ /:locale/treatments/general-dentistry/tooth-extraction/ 301
+/:locale/treatments/general-dentistry/tooth-extractions-wisdom-teeth /:locale/treatments/general-dentistry/tooth-extraction/ 301
+/:locale/treatments/dental-cleaning/ /:locale/treatments/general-dentistry/dental-cleaning/ 301
+/:locale/treatments/dental-cleaning /:locale/treatments/general-dentistry/dental-cleaning/ 301
+/:locale/treatments/teeth-cleaning-scaling/ /:locale/treatments/general-dentistry/dental-cleaning/ 301
+/:locale/treatments/teeth-cleaning-scaling /:locale/treatments/general-dentistry/dental-cleaning/ 301
+/:locale/treatments/tooth-fillings/ /:locale/treatments/general-dentistry/tooth-fillings/ 301
+/:locale/treatments/tooth-fillings /:locale/treatments/general-dentistry/tooth-fillings/ 301
+/:locale/treatments/composite-fillings-inlays/ /:locale/treatments/general-dentistry/tooth-fillings/ 301
+/:locale/treatments/composite-fillings-inlays /:locale/treatments/general-dentistry/tooth-fillings/ 301
+/:locale/treatments/root-canal/ /:locale/treatments/general-dentistry/root-canal/ 301
+/:locale/treatments/root-canal /:locale/treatments/general-dentistry/root-canal/ 301
+/:locale/treatments/root-canal-treatment/ /:locale/treatments/general-dentistry/root-canal/ 301
+/:locale/treatments/root-canal-treatment /:locale/treatments/general-dentistry/root-canal/ 301
+/:locale/treatments/tooth-extraction/ /:locale/treatments/general-dentistry/tooth-extraction/ 301
+/:locale/treatments/tooth-extraction /:locale/treatments/general-dentistry/tooth-extraction/ 301
+/:locale/treatments/tooth-extractions-wisdom-teeth/ /:locale/treatments/general-dentistry/tooth-extraction/ 301
+/:locale/treatments/tooth-extractions-wisdom-teeth /:locale/treatments/general-dentistry/tooth-extraction/ 301
+/:locale/treatments/inlay-onlay/ /:locale/treatments/general-dentistry/inlay-onlay/ 301
+/:locale/treatments/inlay-onlay /:locale/treatments/general-dentistry/inlay-onlay/ 301
+/:locale/treatments/dental-sealants/ /:locale/treatments/general-dentistry/dental-sealants/ 301
+/:locale/treatments/dental-sealants /:locale/treatments/general-dentistry/dental-sealants/ 301
+/:locale/treatments/fluoride-treatment/ /:locale/treatments/general-dentistry/fluoride-treatment/ 301
+/:locale/treatments/fluoride-treatment /:locale/treatments/general-dentistry/fluoride-treatment/ 301
+/:locale/treatments/bruxism-treatment/ /:locale/treatments/general-dentistry/bruxism-treatment/ 301
+/:locale/treatments/bruxism-treatment /:locale/treatments/general-dentistry/bruxism-treatment/ 301

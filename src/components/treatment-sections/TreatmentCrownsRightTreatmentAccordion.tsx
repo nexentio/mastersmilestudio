@@ -53,7 +53,7 @@ const CROWN_ACCORDION_DATA: Record<
         "target": "Patients who want to avoid allergy risks and prefer a natural, metal-free option",
         "desc": "It is made entirely of ceramic, is gum-friendly, and is aesthetically top-tier.",
         "img": "/treatments/accordion/full-ceramic-crown.webp",
-        "href": "/treatments/dental-crowns/full-ceramic"
+        "href": "/treatments/dental-crowns/full-ceramic-crowns"
       }
     ]
   },
@@ -88,7 +88,7 @@ const CROWN_ACCORDION_DATA: Record<
         "target": "Alerji riskinden kaçınmak isteyen ve metalsiz, doğal bir seçenek arayan hastalar",
         "desc": "Tamamen seramikten üretilir, diş eti dostudur ve estetik açıdan en üst seviyededir.",
         "img": "/treatments/accordion/full-ceramic-crown.webp",
-        "href": "/treatments/dental-crowns/full-ceramic"
+        "href": "/treatments/dental-crowns/full-ceramic-crowns"
       }
     ]
   },
@@ -123,7 +123,7 @@ const CROWN_ACCORDION_DATA: Record<
         "target": "Patienten, die Allergierisiken vermeiden und eine metallfreie, natürliche Option bevorzugen",
         "desc": "Vollständig aus biokompatibler Keramik gefertigt, zahnfleischfreundlich und ästhetisch auf höchstem Niveau.",
         "img": "/treatments/accordion/full-ceramic-crown.webp",
-        "href": "/treatments/dental-crowns/full-ceramic"
+        "href": "/treatments/dental-crowns/full-ceramic-crowns"
       }
     ]
   },
@@ -158,7 +158,7 @@ const CROWN_ACCORDION_DATA: Record<
         "target": "Pacjenci chcący uniknąć ryzyka alergii i preferujący bezmetalowe, naturalne rozwiązania",
         "desc": "Wykonane w całości z ceramiki, w 100% przyjazne dla dziąseł i reprezentujące najwyższą klasę estetyki.",
         "img": "/treatments/accordion/full-ceramic-crown.webp",
-        "href": "/treatments/dental-crowns/full-ceramic"
+        "href": "/treatments/dental-crowns/full-ceramic-crowns"
       }
     ]
   },
@@ -193,7 +193,7 @@ const CROWN_ACCORDION_DATA: Record<
         "target": "Pacientes que desejam evitar alergias e preferem uma opção biocompátivel sem metal",
         "desc": "Feita inteiramente de cerâmica, excelente integração gengival e padrão estético de alto nível.",
         "img": "/treatments/accordion/full-ceramic-crown.webp",
-        "href": "/treatments/dental-crowns/full-ceramic"
+        "href": "/treatments/dental-crowns/full-ceramic-crowns"
       }
     ]
   },
@@ -228,7 +228,7 @@ const CROWN_ACCORDION_DATA: Record<
         "target": "Pacientes que quieren evitar riesgos de alergias y prefieren una opción sin metal",
         "desc": "Fabricadas íntegramente en cerámica, cuidan la encía y ofrecen el más alto nivel estético.",
         "img": "/treatments/accordion/full-ceramic-crown.webp",
-        "href": "/treatments/dental-crowns/full-ceramic"
+        "href": "/treatments/dental-crowns/full-ceramic-crowns"
       }
     ]
   },
@@ -263,7 +263,7 @@ const CROWN_ACCORDION_DATA: Record<
         "target": "Пациенты, желающие исключить риск аллергии и выбирающие биосовместимый вариант без металла",
         "desc": "Полностью выполнены из керамики, бережно контактируют с десной и обеспечивают высший уровень эстетики.",
         "img": "/treatments/accordion/full-ceramic-crown.webp",
-        "href": "/treatments/dental-crowns/full-ceramic"
+        "href": "/treatments/dental-crowns/full-ceramic-crowns"
       }
     ]
   }

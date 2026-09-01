@@ -14,21 +14,24 @@ export function getI18nAlternates(
   currentLocale: string = 'en',
   allowedLocales: readonly string[] = LOCALES
 ) {
-  const cleanPath = pathname.startsWith('/') ? pathname : `/${pathname}`;
-  const pathWithoutSlash = cleanPath === '/' ? '' : cleanPath;
+  const cleanSubPath = pathname.replace(/^\/+|\/+$/g, '');
   const baseUrl = siteConfig.domain.replace(/\/+$/, '');
+
+  const buildUrl = (loc: string) => {
+    return cleanSubPath ? `${baseUrl}/${loc}/${cleanSubPath}/` : `${baseUrl}/${loc}/`;
+  };
 
   const languagesMap: Record<string, string> = {};
 
   allowedLocales.forEach((loc) => {
-    languagesMap[loc] = `${baseUrl}/${loc}${pathWithoutSlash}`;
+    languagesMap[loc] = buildUrl(loc);
   });
 
   // x-default points to the international English version by default
-  languagesMap['x-default'] = `${baseUrl}/en${pathWithoutSlash}`;
+  languagesMap['x-default'] = buildUrl('en');
 
   return {
-    canonical: `${baseUrl}/${currentLocale}${pathWithoutSlash}`,
+    canonical: buildUrl(currentLocale),
     languages: languagesMap,
   };
 }

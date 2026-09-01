@@ -42,6 +42,28 @@ import DenturesHeroBanner from '@/components/treatment-sections/DenturesHeroBann
 import DentalBridgesHeroBanner from '@/components/treatment-sections/DentalBridgesHeroBanner';
 import DentalVeneersHeroBanner from '@/components/treatment-sections/DentalVeneersHeroBanner';
 import DentalCrownsHeroBanner from '@/components/treatment-sections/DentalCrownsHeroBanner';
+import DentalImplantsHeroBanner from '@/components/treatment-sections/DentalImplantsHeroBanner';
+import {
+  DENTAL_IMPLANTS_HERO_I18N,
+  FULL_MOUTH_IMPLANTS_HERO_I18N,
+  ALL_ON_4_HERO_I18N,
+  ALL_ON_6_HERO_I18N,
+  IMMEDIATE_IMPLANT_HERO_I18N,
+  SINUS_LIFTING_HERO_I18N,
+  ZYGOMATIC_IMPLANTS_HERO_I18N,
+  ZIRCONIUM_IMPLANTS_HERO_I18N,
+  IMPLANT_SUPPORTED_DENTURES_HERO_I18N,
+} from '@/data/implant-heroes-i18n';
+import {
+  DENTAL_CLEANING_SUB_HERO_I18N,
+  TOOTH_FILLINGS_SUB_HERO_I18N,
+  ROOT_CANAL_SUB_HERO_I18N,
+  TOOTH_EXTRACTION_SUB_HERO_I18N,
+  INLAY_ONLAY_SUB_HERO_I18N,
+  DENTAL_SEALANTS_SUB_HERO_I18N,
+  FLUORIDE_SUB_HERO_I18N,
+  BRUXISM_SUB_HERO_I18N,
+} from '@/data/general-sub-heroes-i18n';
 import GeneralDentistryIntroSection from '@/components/treatment-sections/GeneralDentistryIntroSection';
 import GeneralDentistryAccordionSection from '@/components/treatment-sections/GeneralDentistryAccordionSection';
 import GeneralDentistryJourneySection from '@/components/treatment-sections/GeneralDentistryJourneySection';
@@ -2589,14 +2611,189 @@ export async function generateMetadata({ params }: Props) {
 
   const content = await getTreatmentContent(locale, slug);
 
-  const isGeneral =
-    slug === 'general-dentistry' ||
-    slug === 'root-canal-treatment' ||
-    slug === 'teeth-cleaning-scaling' ||
-    slug === 'dental-fillings' ||
-    slug === 'tooth-extractions' ||
-    slug === 'periodontology' ||
-    slug === 'general-dentistry-antalya';
+  const isFullMouth =
+    slug === 'full-mouth-implants' ||
+    slug === 'full-mouth-dental-implants' ||
+    slug === 'full-mouth-implants-antalya-turkey';
+  const isDentalImplants =
+    slug === 'dental-implants' ||
+    slug === 'dental-implant-antalya-turkey' ||
+    slug === 'implants';
+  const isAllOnFour =
+    slug === 'all-on-4-implants' ||
+    slug === 'all-on-4-dental-implants' ||
+    slug === 'all-on-4' ||
+    slug === 'all-on-four-implant-antalya-turkey';
+  const isAllOnSix =
+    slug === 'all-on-6-implants' ||
+    slug === 'all-on-6-dental-implants' ||
+    slug === 'all-on-6' ||
+    slug === 'all-on-six-dental-implant-antalya-turkey';
+  const isImmediate =
+    slug === 'immediate-implant-treatment' ||
+    slug === 'immediate-implants' ||
+    slug === 'immediate-dental-implants' ||
+    slug === 'immediate';
+  const isZygomatic =
+    slug === 'zygomatic-implants' ||
+    slug === 'zygomatic-implants-antalya-turkey' ||
+    slug === 'zygomatic';
+  const isZirconiumImplant =
+    slug === 'zirconium-implants' ||
+    slug === 'zirconium-implants-antalya-turkey';
+  const isSinusLift =
+    slug === 'sinus-lifting' ||
+    slug === 'sinus-lift';
+
+  const isCompleteDentures =
+    slug === 'complete-dentures' ||
+    slug === 'complete-denture' ||
+    slug === 'tam-protez' ||
+    slug === 'total-protez' ||
+    slug === 'full-dentures' ||
+    slug === 'full-denture';
+
+  const isPartialDentures =
+    slug === 'partial-dentures' ||
+    slug === 'partial-denture' ||
+    slug === 'bolumlu-protez' ||
+    slug === 'parsiyel-protez' ||
+    slug === 'kancali-protez' ||
+    slug === 'valplast' ||
+    slug === 'precision-attachment';
+
+  const isOverdentures =
+    slug === 'overdentures' ||
+    slug === 'overdenture' ||
+    slug === 'snap-on-dentures' ||
+    slug === 'snap-on-denture' ||
+    slug === 'implant-supported-dentures' ||
+    slug === 'implant-supported-dentures-antalya-turkey' ||
+    slug === 'implant-supported-overdentures' ||
+    slug === 'implant-destekli-protezler-antalya' ||
+    slug === 'citcitli-protez' ||
+    slug === 'implant-ustu-protez';
+
+  const isDentures =
+    !isCompleteDentures &&
+    !isPartialDentures &&
+    !isOverdentures &&
+    (slug === 'dentures' ||
+    slug === 'dentures-antalya' ||
+    slug === 'protez-dis');
+
+  const isCantileverBridges =
+    slug === 'cantilever-bridges' ||
+    slug === 'cantilever-bridge' ||
+    slug === 'balkon-kopru' ||
+    slug === 'askili-kopru';
+
+  const isMarylandBridges =
+    slug === 'maryland-bridges' ||
+    slug === 'maryland-bridge' ||
+    slug === 'maryland-kopru' ||
+    slug === 'kanatli-kopru' ||
+    slug === 'resin-bonded-bridge';
+
+  const isTraditionalBridges =
+    slug === 'traditional-bridges' ||
+    slug === 'traditional-bridge' ||
+    slug === 'geleneksel-kopru' ||
+    slug === 'sabit-kopru';
+
+  const isDentalBridges =
+    !isCantileverBridges &&
+    !isMarylandBridges &&
+    !isTraditionalBridges &&
+    (slug === 'dental-bridges' ||
+    slug === 'dental-bridge' ||
+    slug === 'dis-koprusu' ||
+    slug === 'kopru-dis');
+
+  const isPfmCrowns =
+    slug === 'metal-porcelain-crowns' ||
+    slug === 'metal-porcelain-crown' ||
+    slug === 'pfm-crowns' ||
+    slug === 'pfm-crown' ||
+    slug === 'metal-destekli-porselen';
+
+  const isEmaxCrowns =
+    slug === 'emax-crowns' ||
+    slug === 'emax-crown' ||
+    slug === 'e-max-crowns' ||
+    slug === 'e-max-crown' ||
+    slug === 'emax-kaplama';
+
+  const isFullCeramicCrowns =
+    slug === 'full-ceramic-crowns' ||
+    slug === 'full-ceramic-crown' ||
+    slug === 'full-ceramic' ||
+    slug === 'tam-seramik-kron';
+
+  const isZirconiumCrowns =
+    slug === 'zirconium-crowns' ||
+    slug === 'zirconium-crown' ||
+    slug === 'zirconia-crowns' ||
+    slug === 'zirconia-crown' ||
+    slug === 'zirkonyum-kaplama';
+
+  const isDentalCrowns =
+    !isPfmCrowns &&
+    !isEmaxCrowns &&
+    !isFullCeramicCrowns &&
+    !isZirconiumCrowns &&
+    (slug === 'dental-crowns' ||
+    slug === 'dental-crown' ||
+    slug === 'kron-kaplama' ||
+    slug === 'dis-kaplama');
+
+  const isCompositeVeneers =
+    slug === 'composite-veneers' ||
+    slug === 'composite-veneer' ||
+    slug === 'kompozit-lamina' ||
+    slug === 'kompozit-bonding';
+
+  const isLumineers =
+    slug === 'lumineers' ||
+    slug === 'lumineers-veneers' ||
+    slug === 'lumineer' ||
+    slug === 'no-prep-veneers';
+
+  const isEmpressVeneers =
+    slug === 'empress-veneers' ||
+    slug === 'empress-veneer' ||
+    slug === 'empress-e-max' ||
+    slug === 'empress-kaplama';
+
+  const isZirconiumVeneers =
+    slug === 'zirconium-veneers' ||
+    slug === 'zirconium-veneer' ||
+    slug === 'zirconia-veneers' ||
+    slug === 'zirkonyum-lamina';
+
+  const isEmaxVeneers =
+    slug === 'emax-veneers' ||
+    slug === 'emax-veneer' ||
+    slug === 'e-max-veneers' ||
+    slug === 'e-max-veneer' ||
+    slug === 'e-max-lamina';
+
+  const isPorcelainVeneers =
+    slug === 'porcelain-veneers' ||
+    slug === 'porcelain-veneer' ||
+    slug === 'yaprak-porselen' ||
+    slug === 'porselen-lamina';
+
+  const isDentalVeneers =
+    !isCompositeVeneers &&
+    !isLumineers &&
+    !isEmpressVeneers &&
+    !isZirconiumVeneers &&
+    !isEmaxVeneers &&
+    !isPorcelainVeneers &&
+    (slug === 'dental-veneers' ||
+    slug === 'dental-veneer' ||
+    slug === 'yaprak-dis');
 
   const isSmileMakeover =
     slug === 'smile-makeover' ||
@@ -2605,7 +2802,7 @@ export async function generateMetadata({ params }: Props) {
 
   const isHollywoodSmile =
     slug === 'hollywood-smile' ||
-    slug === 'hollywood-smile-antalya' ||
+    slug === 'hollywood-smile-makeover' ||
     slug === 'hollywood-gulusu';
 
   const isGummySmile =
@@ -2656,144 +2853,159 @@ export async function generateMetadata({ params }: Props) {
     isToothContouring ||
     isDiastemaClosure;
 
-  const isCompleteDentures =
-    slug === 'complete-dentures' ||
-    slug === 'complete-denture' ||
-    slug === 'tam-protez' ||
-    slug === 'total-protez' ||
-    slug === 'full-dentures' ||
-    slug === 'full-denture';
+  const isGeneralMain = slug === 'general-dentistry';
+  const isGeneralSub = [
+    'dental-cleaning',
+    'tooth-fillings',
+    'root-canal',
+    'tooth-extraction',
+    'inlay-onlay',
+    'dental-sealants',
+    'fluoride-treatment',
+    'bruxism-treatment',
+    'root-canal-treatment',
+    'teeth-cleaning-scaling',
+    'dental-fillings',
+    'tooth-extractions',
+    'periodontology',
+  ].includes(slug);
+  const isGeneral = isGeneralMain || isGeneralSub;
+  const isDentalCleaning = slug === 'dental-cleaning' || slug === 'teeth-cleaning-scaling';
+  const isToothFillings = slug === 'tooth-fillings' || slug === 'dental-fillings' || slug === 'composite-fillings' || slug === 'amalgam-fillings';
+  const isRootCanal = slug === 'root-canal' || slug === 'root-canal-treatment' || slug === 'endodontics' || slug === 'kanal-tedavisi';
+  const isToothExtraction = slug === 'tooth-extraction' || slug === 'tooth-extractions' || slug === 'wisdom-teeth' || slug === 'wisdom-tooth' || slug === 'dis-cekimi';
+  const isInlayOnlay = slug === 'inlay-onlay' || slug === 'inlays-onlays' || slug === 'inlay-onlay-dental-restorations' || slug === 'inley-onley';
+  const isDentalSealants = slug === 'dental-sealants' || slug === 'dental-sealant' || slug === 'fissure-sealants' || slug === 'fissur-ortucu';
+  const isFluoride = slug === 'fluoride-treatment' || slug === 'fluoride' || slug === 'florur-tedavisi';
+  const isBruxism = slug === 'bruxism-treatment' || slug === 'bruxism' || slug === 'night-guard' || slug === 'gece-plagi';
 
-  const isPartialDentures =
-    slug === 'partial-dentures' ||
-    slug === 'partial-denture' ||
-    slug === 'bolumlu-protez' ||
-    slug === 'parsiyel-protez' ||
-    slug === 'kancali-protez' ||
-    slug === 'valplast' ||
-    slug === 'precision-attachment';
-
-  const isOverdentures =
-    slug === 'overdentures' ||
-    slug === 'overdenture' ||
-    slug === 'snap-on-dentures' ||
-    slug === 'snap-on-denture' ||
-    slug === 'implant-supported-dentures' ||
-    slug === 'implant-supported-dentures-antalya-turkey' ||
-    slug === 'implant-supported-overdentures' ||
-    slug === 'implant-destekli-protezler-antalya' ||
-    slug === 'citcitli-protez' ||
-    slug === 'implant-ustu-protez';
-
-  const isDentures =
-    !isCompleteDentures &&
-    !isPartialDentures &&
-    !isOverdentures &&
-    (slug === 'dentures' ||
-    slug === 'dentures-antalya' ||
-    slug === 'protez-dis');
-
-  const isMarylandBridges =
-    slug === 'maryland-bridges' ||
-    slug === 'maryland-bridge' ||
-    slug === 'maryland-kopru' ||
-    slug === 'resin-bonded-bridge' ||
-    slug === 'resin-bonded-bridges';
-
-  const isCantileverBridges =
-    slug === 'cantilever-bridges' ||
-    slug === 'cantilever-bridge' ||
-    slug === 'cantilever-kopru' ||
-    slug === 'balkon-kopru';
-
-  const isTraditionalBridges =
-    !isMarylandBridges &&
-    !isCantileverBridges &&
-    (slug === 'traditional-bridges' ||
-    slug === 'traditional-bridge' ||
-    slug === 'geleneksel-kopru' ||
-    slug === 'fixed-bridges' ||
-    slug === 'fixed-bridge');
-
-  const isBridges =
-    !isTraditionalBridges &&
-    !isMarylandBridges &&
-    !isCantileverBridges &&
-    (slug === 'dental-bridge' ||
-    slug === 'dental-bridges' ||
-    slug === 'bridges' ||
-    slug === 'dental-bridge-antalya');
-
-  const isCompositeVeneers =
-    slug === 'composite-veneers' ||
-    slug === 'composite-veneer' ||
-    slug === 'composite-bonding' ||
-    slug === 'kompozit-lamina' ||
-    slug === 'kompozit-bonding';
-
-  const isLumineers =
-    slug === 'lumineers' ||
-    slug === 'lumineer' ||
-    slug === 'no-prep-veneers' ||
-    slug === 'no-prep-veneer';
-
-  const isEmpressVeneers =
-    slug === 'empress-veneers' ||
-    slug === 'empress-veneer' ||
-    slug === 'ips-empress' ||
-    slug === 'empress-lamina';
-
-  const isZirconiumVeneers =
-    !isCompositeVeneers &&
-    !isLumineers &&
-    !isEmpressVeneers &&
-    (slug === 'zirconium-veneers' ||
-    slug === 'zirconia-veneers' ||
-    slug === 'zirconium-veneer' ||
-    slug === 'zirconia-veneer' ||
-    slug === 'zirkonyum-lamina');
-
-  const isEmaxVeneers =
-    !isZirconiumVeneers &&
-    !isCompositeVeneers &&
-    !isLumineers &&
-    !isEmpressVeneers &&
-    (slug === 'emax-veneers' ||
-    slug === 'e-max-veneers' ||
-    slug === 'emax-veneer' ||
-    slug === 'e-max-veneer' ||
-    slug === 'emax-lamina');
-
-  const isPorcelainVeneers =
-    !isZirconiumVeneers &&
-    !isEmaxVeneers &&
-    !isCompositeVeneers &&
-    !isLumineers &&
-    !isEmpressVeneers &&
-    (slug === 'porcelain-veneers' ||
-    slug === 'porcelain-veneer' ||
-    slug === 'porselen-lamina' ||
-    slug === 'porcelain-laminate-veneers');
-
-  const isVeneers =
-    !isPorcelainVeneers &&
-    !isEmaxVeneers &&
-    !isZirconiumVeneers &&
-    !isCompositeVeneers &&
-    !isLumineers &&
-    !isEmpressVeneers &&
-    (slug === 'dental-veneers' ||
-    slug === 'dental-veneers-antalya');
-
-  const isCrowns =
-    slug === 'dental-crowns' ||
-    slug === 'zirconium-crowns' ||
-    slug === 'crowns' ||
-    slug === 'dental-crowns-antalya' ||
-    slug === 'emax-crowns' ||
-    slug === 'pfm-crowns';
-
-  const fallbackMeta = isGeneral
+  const heroFallback: {
+    defaultBadge: string;
+    defaultTitle: string;
+    defaultSubtitle: string;
+    primaryBtnText?: string;
+    secondaryBtnText?: string;
+  } = isFullMouth
+    ? {
+        defaultBadge: (FULL_MOUTH_IMPLANTS_HERO_I18N[locale] || FULL_MOUTH_IMPLANTS_HERO_I18N.en).badge,
+        defaultTitle: (FULL_MOUTH_IMPLANTS_HERO_I18N[locale] || FULL_MOUTH_IMPLANTS_HERO_I18N.en).title,
+        defaultSubtitle: (FULL_MOUTH_IMPLANTS_HERO_I18N[locale] || FULL_MOUTH_IMPLANTS_HERO_I18N.en).subtitle,
+        primaryBtnText: (FULL_MOUTH_IMPLANTS_HERO_I18N[locale] || FULL_MOUTH_IMPLANTS_HERO_I18N.en).primaryBtnText,
+        secondaryBtnText: (FULL_MOUTH_IMPLANTS_HERO_I18N[locale] || FULL_MOUTH_IMPLANTS_HERO_I18N.en).secondaryBtnText,
+      }
+    : isAllOnFour
+    ? {
+        defaultBadge: (ALL_ON_4_HERO_I18N[locale] || ALL_ON_4_HERO_I18N.en).badge,
+        defaultTitle: (ALL_ON_4_HERO_I18N[locale] || ALL_ON_4_HERO_I18N.en).title,
+        defaultSubtitle: (ALL_ON_4_HERO_I18N[locale] || ALL_ON_4_HERO_I18N.en).subtitle,
+        primaryBtnText: (ALL_ON_4_HERO_I18N[locale] || ALL_ON_4_HERO_I18N.en).primaryBtnText,
+        secondaryBtnText: (ALL_ON_4_HERO_I18N[locale] || ALL_ON_4_HERO_I18N.en).secondaryBtnText,
+      }
+    : isAllOnSix
+    ? {
+        defaultBadge: (ALL_ON_6_HERO_I18N[locale] || ALL_ON_6_HERO_I18N.en).badge,
+        defaultTitle: (ALL_ON_6_HERO_I18N[locale] || ALL_ON_6_HERO_I18N.en).title,
+        defaultSubtitle: (ALL_ON_6_HERO_I18N[locale] || ALL_ON_6_HERO_I18N.en).subtitle,
+        primaryBtnText: (ALL_ON_6_HERO_I18N[locale] || ALL_ON_6_HERO_I18N.en).primaryBtnText,
+        secondaryBtnText: (ALL_ON_6_HERO_I18N[locale] || ALL_ON_6_HERO_I18N.en).secondaryBtnText,
+      }
+    : isImmediate
+    ? {
+        defaultBadge: (IMMEDIATE_IMPLANT_HERO_I18N[locale] || IMMEDIATE_IMPLANT_HERO_I18N.en).badge,
+        defaultTitle: (IMMEDIATE_IMPLANT_HERO_I18N[locale] || IMMEDIATE_IMPLANT_HERO_I18N.en).title,
+        defaultSubtitle: (IMMEDIATE_IMPLANT_HERO_I18N[locale] || IMMEDIATE_IMPLANT_HERO_I18N.en).subtitle,
+        primaryBtnText: (IMMEDIATE_IMPLANT_HERO_I18N[locale] || IMMEDIATE_IMPLANT_HERO_I18N.en).primaryBtnText,
+        secondaryBtnText: (IMMEDIATE_IMPLANT_HERO_I18N[locale] || IMMEDIATE_IMPLANT_HERO_I18N.en).secondaryBtnText,
+      }
+    : isZygomatic
+    ? {
+        defaultBadge: (ZYGOMATIC_IMPLANTS_HERO_I18N[locale] || ZYGOMATIC_IMPLANTS_HERO_I18N.en).badge,
+        defaultTitle: (ZYGOMATIC_IMPLANTS_HERO_I18N[locale] || ZYGOMATIC_IMPLANTS_HERO_I18N.en).title,
+        defaultSubtitle: (ZYGOMATIC_IMPLANTS_HERO_I18N[locale] || ZYGOMATIC_IMPLANTS_HERO_I18N.en).subtitle,
+        primaryBtnText: (ZYGOMATIC_IMPLANTS_HERO_I18N[locale] || ZYGOMATIC_IMPLANTS_HERO_I18N.en).primaryBtnText,
+        secondaryBtnText: (ZYGOMATIC_IMPLANTS_HERO_I18N[locale] || ZYGOMATIC_IMPLANTS_HERO_I18N.en).secondaryBtnText,
+      }
+    : isZirconiumImplant
+    ? {
+        defaultBadge: (ZIRCONIUM_IMPLANTS_HERO_I18N[locale] || ZIRCONIUM_IMPLANTS_HERO_I18N.en).badge,
+        defaultTitle: (ZIRCONIUM_IMPLANTS_HERO_I18N[locale] || ZIRCONIUM_IMPLANTS_HERO_I18N.en).title,
+        defaultSubtitle: (ZIRCONIUM_IMPLANTS_HERO_I18N[locale] || ZIRCONIUM_IMPLANTS_HERO_I18N.en).subtitle,
+        primaryBtnText: (ZIRCONIUM_IMPLANTS_HERO_I18N[locale] || ZIRCONIUM_IMPLANTS_HERO_I18N.en).primaryBtnText,
+        secondaryBtnText: (ZIRCONIUM_IMPLANTS_HERO_I18N[locale] || ZIRCONIUM_IMPLANTS_HERO_I18N.en).secondaryBtnText,
+      }
+    : isSinusLift
+    ? {
+        defaultBadge: (SINUS_LIFTING_HERO_I18N[locale] || SINUS_LIFTING_HERO_I18N.en).badge,
+        defaultTitle: (SINUS_LIFTING_HERO_I18N[locale] || SINUS_LIFTING_HERO_I18N.en).title,
+        defaultSubtitle: (SINUS_LIFTING_HERO_I18N[locale] || SINUS_LIFTING_HERO_I18N.en).subtitle,
+        primaryBtnText: (SINUS_LIFTING_HERO_I18N[locale] || SINUS_LIFTING_HERO_I18N.en).primaryBtnText,
+        secondaryBtnText: (SINUS_LIFTING_HERO_I18N[locale] || SINUS_LIFTING_HERO_I18N.en).secondaryBtnText,
+      }
+    : isDentalCleaning
+    ? {
+        defaultBadge: (DENTAL_CLEANING_SUB_HERO_I18N[locale] || DENTAL_CLEANING_SUB_HERO_I18N.en).badge,
+        defaultTitle: (DENTAL_CLEANING_SUB_HERO_I18N[locale] || DENTAL_CLEANING_SUB_HERO_I18N.en).title,
+        defaultSubtitle: (DENTAL_CLEANING_SUB_HERO_I18N[locale] || DENTAL_CLEANING_SUB_HERO_I18N.en).subtitle,
+        primaryBtnText: (DENTAL_CLEANING_SUB_HERO_I18N[locale] || DENTAL_CLEANING_SUB_HERO_I18N.en).primaryBtnText,
+        secondaryBtnText: (DENTAL_CLEANING_SUB_HERO_I18N[locale] || DENTAL_CLEANING_SUB_HERO_I18N.en).secondaryBtnText,
+      }
+    : isToothFillings
+    ? {
+        defaultBadge: (TOOTH_FILLINGS_SUB_HERO_I18N[locale] || TOOTH_FILLINGS_SUB_HERO_I18N.en).badge,
+        defaultTitle: (TOOTH_FILLINGS_SUB_HERO_I18N[locale] || TOOTH_FILLINGS_SUB_HERO_I18N.en).title,
+        defaultSubtitle: (TOOTH_FILLINGS_SUB_HERO_I18N[locale] || TOOTH_FILLINGS_SUB_HERO_I18N.en).subtitle,
+        primaryBtnText: (TOOTH_FILLINGS_SUB_HERO_I18N[locale] || TOOTH_FILLINGS_SUB_HERO_I18N.en).primaryBtnText,
+        secondaryBtnText: (TOOTH_FILLINGS_SUB_HERO_I18N[locale] || TOOTH_FILLINGS_SUB_HERO_I18N.en).secondaryBtnText,
+      }
+    : isRootCanal
+    ? {
+        defaultBadge: (ROOT_CANAL_SUB_HERO_I18N[locale] || ROOT_CANAL_SUB_HERO_I18N.en).badge,
+        defaultTitle: (ROOT_CANAL_SUB_HERO_I18N[locale] || ROOT_CANAL_SUB_HERO_I18N.en).title,
+        defaultSubtitle: (ROOT_CANAL_SUB_HERO_I18N[locale] || ROOT_CANAL_SUB_HERO_I18N.en).subtitle,
+        primaryBtnText: (ROOT_CANAL_SUB_HERO_I18N[locale] || ROOT_CANAL_SUB_HERO_I18N.en).primaryBtnText,
+        secondaryBtnText: (ROOT_CANAL_SUB_HERO_I18N[locale] || ROOT_CANAL_SUB_HERO_I18N.en).secondaryBtnText,
+      }
+    : isToothExtraction
+    ? {
+        defaultBadge: (TOOTH_EXTRACTION_SUB_HERO_I18N[locale] || TOOTH_EXTRACTION_SUB_HERO_I18N.en).badge,
+        defaultTitle: (TOOTH_EXTRACTION_SUB_HERO_I18N[locale] || TOOTH_EXTRACTION_SUB_HERO_I18N.en).title,
+        defaultSubtitle: (TOOTH_EXTRACTION_SUB_HERO_I18N[locale] || TOOTH_EXTRACTION_SUB_HERO_I18N.en).subtitle,
+        primaryBtnText: (TOOTH_EXTRACTION_SUB_HERO_I18N[locale] || TOOTH_EXTRACTION_SUB_HERO_I18N.en).primaryBtnText,
+        secondaryBtnText: (TOOTH_EXTRACTION_SUB_HERO_I18N[locale] || TOOTH_EXTRACTION_SUB_HERO_I18N.en).secondaryBtnText,
+      }
+    : isInlayOnlay
+    ? {
+        defaultBadge: (INLAY_ONLAY_SUB_HERO_I18N[locale] || INLAY_ONLAY_SUB_HERO_I18N.en).badge,
+        defaultTitle: (INLAY_ONLAY_SUB_HERO_I18N[locale] || INLAY_ONLAY_SUB_HERO_I18N.en).title,
+        defaultSubtitle: (INLAY_ONLAY_SUB_HERO_I18N[locale] || INLAY_ONLAY_SUB_HERO_I18N.en).subtitle,
+        primaryBtnText: (INLAY_ONLAY_SUB_HERO_I18N[locale] || INLAY_ONLAY_SUB_HERO_I18N.en).primaryBtnText,
+        secondaryBtnText: (INLAY_ONLAY_SUB_HERO_I18N[locale] || INLAY_ONLAY_SUB_HERO_I18N.en).secondaryBtnText,
+      }
+    : isDentalSealants
+    ? {
+        defaultBadge: (DENTAL_SEALANTS_SUB_HERO_I18N[locale] || DENTAL_SEALANTS_SUB_HERO_I18N.en).badge,
+        defaultTitle: (DENTAL_SEALANTS_SUB_HERO_I18N[locale] || DENTAL_SEALANTS_SUB_HERO_I18N.en).title,
+        defaultSubtitle: (DENTAL_SEALANTS_SUB_HERO_I18N[locale] || DENTAL_SEALANTS_SUB_HERO_I18N.en).subtitle,
+        primaryBtnText: (DENTAL_SEALANTS_SUB_HERO_I18N[locale] || DENTAL_SEALANTS_SUB_HERO_I18N.en).primaryBtnText,
+        secondaryBtnText: (DENTAL_SEALANTS_SUB_HERO_I18N[locale] || DENTAL_SEALANTS_SUB_HERO_I18N.en).secondaryBtnText,
+      }
+    : isFluoride
+    ? {
+        defaultBadge: (FLUORIDE_SUB_HERO_I18N[locale] || FLUORIDE_SUB_HERO_I18N.en).badge,
+        defaultTitle: (FLUORIDE_SUB_HERO_I18N[locale] || FLUORIDE_SUB_HERO_I18N.en).title,
+        defaultSubtitle: (FLUORIDE_SUB_HERO_I18N[locale] || FLUORIDE_SUB_HERO_I18N.en).subtitle,
+        primaryBtnText: (FLUORIDE_SUB_HERO_I18N[locale] || FLUORIDE_SUB_HERO_I18N.en).primaryBtnText,
+        secondaryBtnText: (FLUORIDE_SUB_HERO_I18N[locale] || FLUORIDE_SUB_HERO_I18N.en).secondaryBtnText,
+      }
+    : isBruxism
+    ? {
+        defaultBadge: (BRUXISM_SUB_HERO_I18N[locale] || BRUXISM_SUB_HERO_I18N.en).badge,
+        defaultTitle: (BRUXISM_SUB_HERO_I18N[locale] || BRUXISM_SUB_HERO_I18N.en).title,
+        defaultSubtitle: (BRUXISM_SUB_HERO_I18N[locale] || BRUXISM_SUB_HERO_I18N.en).subtitle,
+        primaryBtnText: (BRUXISM_SUB_HERO_I18N[locale] || BRUXISM_SUB_HERO_I18N.en).primaryBtnText,
+        secondaryBtnText: (BRUXISM_SUB_HERO_I18N[locale] || BRUXISM_SUB_HERO_I18N.en).secondaryBtnText,
+      }
+    : isGeneral
     ? GENERAL_HERO_I18N[locale] || GENERAL_HERO_I18N.en
     : isSmileMakeover
     ? SMILE_MAKEOVER_HERO_I18N[locale] || SMILE_MAKEOVER_HERO_I18N.en
@@ -2814,7 +3026,13 @@ export async function generateMetadata({ params }: Props) {
     : isPartialDentures
     ? PARTIAL_DENTURES_HERO_I18N[locale] || PARTIAL_DENTURES_HERO_I18N.en
     : isOverdentures
-    ? OVERDENTURES_HERO_I18N[locale] || OVERDENTURES_HERO_I18N.en
+    ? {
+        defaultBadge: (IMPLANT_SUPPORTED_DENTURES_HERO_I18N[locale] || IMPLANT_SUPPORTED_DENTURES_HERO_I18N.en).badge,
+        defaultTitle: (IMPLANT_SUPPORTED_DENTURES_HERO_I18N[locale] || IMPLANT_SUPPORTED_DENTURES_HERO_I18N.en).title,
+        defaultSubtitle: (IMPLANT_SUPPORTED_DENTURES_HERO_I18N[locale] || IMPLANT_SUPPORTED_DENTURES_HERO_I18N.en).subtitle,
+        primaryBtnText: (IMPLANT_SUPPORTED_DENTURES_HERO_I18N[locale] || IMPLANT_SUPPORTED_DENTURES_HERO_I18N.en).primaryBtnText,
+        secondaryBtnText: (IMPLANT_SUPPORTED_DENTURES_HERO_I18N[locale] || IMPLANT_SUPPORTED_DENTURES_HERO_I18N.en).secondaryBtnText,
+      }
     : isDentures
     ? DENTURES_HERO_I18N[locale] || DENTURES_HERO_I18N.en
     : isMarylandBridges
@@ -2823,7 +3041,7 @@ export async function generateMetadata({ params }: Props) {
     ? CANTILEVER_BRIDGES_HERO_I18N[locale] || CANTILEVER_BRIDGES_HERO_I18N.en
     : isTraditionalBridges
     ? TRADITIONAL_BRIDGES_HERO_I18N[locale] || TRADITIONAL_BRIDGES_HERO_I18N.en
-    : isBridges
+    : isDentalBridges
     ? BRIDGE_HERO_I18N[locale] || BRIDGE_HERO_I18N.en
     : isCompositeVeneers
     ? COMPOSITE_VENEERS_HERO_I18N[locale] || COMPOSITE_VENEERS_HERO_I18N.en
@@ -2837,18 +3055,34 @@ export async function generateMetadata({ params }: Props) {
     ? EMAX_VENEERS_HERO_I18N[locale] || EMAX_VENEERS_HERO_I18N.en
     : isPorcelainVeneers
     ? PORCELAIN_VENEERS_HERO_I18N[locale] || PORCELAIN_VENEERS_HERO_I18N.en
-    : isCrowns
+    : isPfmCrowns
+    ? PFM_CROWNS_HERO_I18N[locale] || PFM_CROWNS_HERO_I18N.en
+    : isEmaxCrowns
+    ? EMAX_CROWNS_HERO_I18N[locale] || EMAX_CROWNS_HERO_I18N.en
+    : isFullCeramicCrowns
+    ? FULL_CERAMIC_CROWNS_HERO_I18N[locale] || FULL_CERAMIC_CROWNS_HERO_I18N.en
+    : isZirconiumCrowns
+    ? ZIRCONIUM_CROWNS_HERO_I18N[locale] || ZIRCONIUM_CROWNS_HERO_I18N.en
+    : isDentalCrowns
     ? CROWNS_HERO_I18N[locale] || CROWNS_HERO_I18N.en
-    : isVeneers
+    : isDentalVeneers
     ? VENEERS_HERO_I18N[locale] || VENEERS_HERO_I18N.en
+    : isDentalImplants
+    ? {
+        defaultBadge: (DENTAL_IMPLANTS_HERO_I18N[locale] || DENTAL_IMPLANTS_HERO_I18N.en).tag,
+        defaultTitle: (DENTAL_IMPLANTS_HERO_I18N[locale] || DENTAL_IMPLANTS_HERO_I18N.en).title,
+        defaultSubtitle: (DENTAL_IMPLANTS_HERO_I18N[locale] || DENTAL_IMPLANTS_HERO_I18N.en).subtitle,
+        primaryBtnText: (DENTAL_IMPLANTS_HERO_I18N[locale] || DENTAL_IMPLANTS_HERO_I18N.en).primaryBtnText,
+        secondaryBtnText: (DENTAL_IMPLANTS_HERO_I18N[locale] || DENTAL_IMPLANTS_HERO_I18N.en).secondaryBtnText,
+      }
     : HERO_I18N[locale] || HERO_I18N.en;
 
   const title =
     content?.seo?.title ||
-    `${fallbackMeta.defaultTitle} | Master Smile Studio`;
+    `${heroFallback.defaultTitle} | Master Smile Studio`;
 
   const description =
-    content?.seo?.description || fallbackMeta.defaultSubtitle;
+    content?.seo?.description || heroFallback.defaultSubtitle;
 
   return {
     title,
@@ -2863,7 +3097,14 @@ export default async function TreatmentDetailPage({ params }: Props) {
 
   const content = await getTreatmentContent(locale, slug);
 
-  const isDentalImplants = slug === 'dental-implants' || slug === 'full-mouth-implants' || slug === 'full-mouth-dental-implants';
+  const isFullMouth =
+    slug === 'full-mouth-implants' ||
+    slug === 'full-mouth-dental-implants' ||
+    slug === 'full-mouth-implants-antalya-turkey';
+  const isDentalImplants =
+    slug === 'dental-implants' ||
+    slug === 'dental-implant-antalya-turkey' ||
+    slug === 'implants';
   const isAllOnFour = slug === 'all-on-4-implants' || slug === 'all-on-4-dental-implants' || slug === 'all-on-4';
   const isAllOnSix = slug === 'all-on-6-implants' || slug === 'all-on-6-dental-implants' || slug === 'all-on-6';
   const isImmediate = slug === 'immediate-implant-treatment' || slug === 'immediate-implants' || slug === 'immediate-dental-implants' || slug === 'immediate';
@@ -3184,7 +3425,7 @@ export default async function TreatmentDetailPage({ params }: Props) {
   const primaryBtnText = content?.hero?.primaryBtn || heroFallback.primaryBtnText;
   const secondaryBtnText = content?.hero?.secondaryBtn || heroFallback.secondaryBtnText;
 
-  const canonicalUrl = `https://mastersmilestudio.com/${locale}/treatments/${slug}`;
+  const canonicalUrl = `https://mastersmilestudio.com/${locale}/treatments/${slug}/`;
   const jsonLd = generateTreatmentJsonLd({
     locale,
     slug,
@@ -3217,6 +3458,8 @@ export default async function TreatmentDetailPage({ params }: Props) {
         <DentalVeneersHeroBanner />
       ) : isDentalCrowns ? (
         <DentalCrownsHeroBanner />
+      ) : (isDentalImplants && !isFullMouth && !isAllOnFour && !isAllOnSix && !isImmediate && !isZygomatic && !isZirconiumImplant && !isSinusLift) ? (
+        <DentalImplantsHeroBanner />
       ) : (
         <TreatmentHeroBanner
           tag={heroBadge}
@@ -3283,75 +3526,25 @@ export default async function TreatmentDetailPage({ params }: Props) {
               ? '/treatments/accordion/metal-porcelain-crown.webp'
               : isZirconiumCrowns
               ? '/treatments/accordion/zirconium-crowns.webp'
+              : isSinusLift
+              ? '/treatments/accordion/sinus-lifting.webp'
+              : isFullMouth
+              ? '/treatments/accordion/full-mouth-implant.webp'
+              : isAllOnFour
+              ? '/treatments/accordion/all-on-4.webp'
+              : isAllOnSix
+              ? '/treatments/accordion/all-on-6.webp'
+              : isImmediate
+              ? '/treatments/accordion/immediate-implant.webp'
+              : isZygomatic
+              ? '/treatments/accordion/zygomatic-implant.webp'
+              : isZirconiumImplant
+              ? '/treatments/accordion/zirconium-implant.webp'
               : isDentalImplants
               ? '/treatments/accordion/zirconium-implant.webp'
               : undefined
           }
-          imageAlt={
-            isSmileMakeover
-              ? 'Smile Makeover in Antalya, Turkey'
-              : isHollywoodSmile
-              ? 'Hollywood Smile in Antalya, Turkey'
-              : isDentalCleaning
-              ? 'Dental Cleaning & Scaling in Antalya, Turkey'
-              : isToothFillings
-              ? 'Tooth Fillings (Amalgam & Composite) in Antalya, Turkey'
-              : isRootCanal
-              ? 'Root Canal Treatment in Antalya, Turkey'
-              : isToothExtraction
-              ? 'Tooth Extraction in Antalya, Turkey'
-              : isInlayOnlay
-              ? 'Inlay & Onlay Dental Restorations in Antalya, Turkey'
-              : isDentalSealants
-              ? 'Dental Sealants in Antalya, Turkey'
-              : isFluoride
-              ? 'Fluoride Treatment in Antalya, Turkey'
-              : isBruxism
-              ? 'Bruxism Treatment (Night Guard) in Antalya, Turkey'
-              : isGummySmile
-              ? 'Gummy Smile Treatment in Antalya, Turkey'
-              : isTeethWhitening
-              ? 'Teeth Whitening in Antalya, Turkey'
-              : isToothContouring
-              ? 'Tooth Contouring & Shaping in Antalya, Turkey'
-              : isDiastemaClosure
-              ? 'Diastema Closure in Antalya, Turkey'
-              : isCompleteDentures
-              ? 'Complete Dentures in Antalya, Turkey'
-              : isPartialDentures
-              ? 'Partial Dentures in Antalya, Turkey'
-              : isOverdentures
-              ? 'Implant Supported Dentures (Overdentures) in Antalya, Turkey'
-              : isMarylandBridges
-              ? 'Maryland Dental Bridges in Antalya, Turkey'
-              : isCantileverBridges
-              ? 'Cantilever Dental Bridges in Antalya, Turkey'
-              : isTraditionalBridges
-              ? 'Traditional Dental Bridges in Antalya, Turkey'
-              : isCompositeVeneers
-              ? 'Composite Veneers'
-              : isLumineers
-              ? 'Lumineers Dental Veneers in Antalya, Turkey'
-              : isEmpressVeneers
-              ? 'Empress Veneers in Antalya, Turkey'
-              : isZirconiumVeneers
-              ? 'Zirconium Veneers'
-              : isEmaxVeneers
-              ? 'E-max Veneers'
-              : isPorcelainVeneers
-              ? 'Porcelain Laminate Veneers in Antalya, Turkey'
-              : isEmaxCrowns
-              ? 'E-Max Crowns in Antalya, Turkey'
-              : isFullCeramicCrowns
-              ? 'Full Ceramic Crowns in Antalya, Turkey'
-              : isPfmCrowns
-              ? 'Metal Porcelain Crowns (PFM) in Antalya, Turkey'
-              : isZirconiumCrowns
-              ? 'Zirconium Crowns in Antalya, Turkey'
-              : isDentalImplants
-              ? 'Zirconium Implants'
-              : undefined
-          }
+          imageAlt={heroTitle}
           primaryBtnText={primaryBtnText}
           primaryBtnHref="/contact"
           primaryBtnAriaLabel={heroFallback.primaryBtnAria}

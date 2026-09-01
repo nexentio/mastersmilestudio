@@ -1,7 +1,20 @@
+'use client';
+
 import React from 'react';
 import Image from 'next/image';
+import { useLocale } from 'next-intl';
 import { Link } from '@/i18n/routing';
 import styles from './TreatmentHeroBanner.module.css';
+
+const DEFAULT_BTNS: Record<string, { primary: string; secondary: string }> = {
+  en: { primary: 'Book Free Consultation', secondary: 'Explore Packages' },
+  tr: { primary: 'Randevu & Bilgi Al', secondary: 'Paketleri İncele' },
+  de: { primary: 'Kostenlose Beratung', secondary: 'Pakete Ansehen' },
+  pl: { primary: 'Darmowa Konsultacja', secondary: 'Zobacz Pakiety' },
+  pt: { primary: 'Consulta Gratuita', secondary: 'Ver Pacotes' },
+  es: { primary: 'Consulta Gratuita', secondary: 'Ver Paquetes' },
+  ru: { primary: 'Бесплатная Консультация', secondary: 'Смотреть Пакеты' },
+};
 
 export interface TreatmentHeroBannerProps {
   tag: string;
@@ -21,15 +34,20 @@ export default function TreatmentHeroBanner({
   tag,
   title,
   subtitle,
-  primaryBtnText = 'Randevu & Bilgi Al',
+  primaryBtnText,
   primaryBtnHref = '/contact',
   primaryBtnAriaLabel,
-  secondaryBtnText = 'Paketleri İncele',
+  secondaryBtnText,
   secondaryBtnHref = '#main-content',
   secondaryBtnAriaLabel,
   imageSrc = '/treatment-hero-bg.webp',
   imageAlt,
 }: TreatmentHeroBannerProps) {
+  const locale = useLocale();
+  const dBtns = DEFAULT_BTNS[locale] || DEFAULT_BTNS.en;
+  const pBtn = primaryBtnText || dBtns.primary;
+  const sBtn = secondaryBtnText || dBtns.secondary;
+
   return (
     <header className={styles.banner} role="banner">
       <Image
@@ -45,13 +63,13 @@ export default function TreatmentHeroBanner({
         <h1 className={styles.heading}>{title}</h1>
         <p className={styles.subheading}>{subtitle}</p>
         <div className={styles.btns}>
-          {primaryBtnText && (
+          {pBtn && (
             <Link
               href={primaryBtnHref}
               className={styles.primaryBtn}
-              aria-label={primaryBtnAriaLabel || primaryBtnText}
+              aria-label={primaryBtnAriaLabel || pBtn}
             >
-              <span>{primaryBtnText}</span>
+              <span>{pBtn}</span>
               <svg
                 width="18"
                 height="18"
@@ -67,13 +85,13 @@ export default function TreatmentHeroBanner({
             </Link>
           )}
 
-          {secondaryBtnText && (
+          {sBtn && (
             <a
               href={secondaryBtnHref}
               className={styles.secondaryBtn}
-              aria-label={secondaryBtnAriaLabel || secondaryBtnText}
+              aria-label={secondaryBtnAriaLabel || sBtn}
             >
-              <span>{secondaryBtnText}</span>
+              <span>{sBtn}</span>
             </a>
           )}
         </div>

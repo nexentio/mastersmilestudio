@@ -303,9 +303,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "pricePerArchLabel": "Price per jaw / arch",
     "getQuoteBtn": "Get Free Personalized Quote",
     "mostPopularBadge": "MOST POPULAR",
-    "faqTitle": "Frequently Asked Questions About All-on-6 Implants",
-    "faqSubtitle": "Clear, clinically validated answers to help you understand every surgical, biomechanical, and travel aspect of your All-on-6 transformation in Antalya.",
-    "faqGroup1Title": "Specialized All-on-6 Clinical & Biomechanical FAQs",
+    "faqTitle": "Frequently Asked Questions About All-on-4 Dental Implants",
+    "faqSubtitle": "Clear, clinically validated answers to help you understand every surgical, biomechanical, and travel aspect of your All-on-4 transformation in Antalya.",
+    "faqGroup1Title": "Specialized All-on-4 Clinical & Biomechanical FAQs",
     "faqGroup2Title": "Health Tourism, Inclusions & Lifetime Warranty FAQs",
     "packages": [
       {
@@ -356,51 +356,6 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
           "Luxury 5-Star Hotel Stay Included",
           "VIP Mercedes Chauffeur Transfers",
           "Dedicated Personal Patient Host"
-        ]
-      },
-      {
-        "name": "ALL-ON-4 – MEGAGEN",
-        "brand": "Megagen AnyRidge (Knife-Thread Tech)",
-        "duration": "3+7 Working Days (2 Visits)",
-        "img": "/packages/megagen.webp",
-        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
-        "included": [
-          "4x Megagen AnyRidge Implants per Arch",
-          "10-12x Fixed Temporary Teeth",
-          "10-12x Final Zirconia Bridge Teeth",
-          "3D CBCT Tomography & Surgical Guide",
-          "VIP Airport-Hotel Transfers",
-          "Hotel Stay with Bed & Breakfast"
-        ]
-      },
-      {
-        "name": "ALL-ON-4 – NEODENT",
-        "brand": "Neodent (Straumann Group)",
-        "duration": "3+7 Working Days (2 Visits)",
-        "img": "/packages/neodent.webp",
-        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
-        "included": [
-          "4x Neodent Implants per Arch",
-          "10-12x Fixed Temporary Teeth",
-          "10-12x Final Zirconia Bridge Teeth",
-          "3D CBCT Tomography & Planning",
-          "VIP Airport-Hotel Transfers",
-          "Hotel Stay with Bed & Breakfast"
-        ]
-      },
-      {
-        "name": "ALL-ON-4 – HIOSSEN",
-        "brand": "Hiossen (American Brand)",
-        "duration": "3+7 Working Days (2 Visits)",
-        "img": "/packages/hiossen.webp",
-        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
-        "included": [
-          "4x Hiossen American Implants per Arch",
-          "10-12x Fixed Temporary Teeth",
-          "10-12x Final Zirconia Bridge Teeth",
-          "3D CBCT Tomography & Planning",
-          "VIP Airport-Hotel Transfers",
-          "Hotel Stay with Bed & Breakfast"
         ]
       }
     ],
@@ -832,51 +787,6 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
           "Özel Mercedes VIP Şoförlü Transferler",
           "Kişisel Hasta Danışmanı ve Tercüman"
         ]
-      },
-      {
-        "name": "ALL-ON-4 – MEGAGEN",
-        "brand": "Megagen AnyRidge (Knife-Thread Tech)",
-        "duration": "3+7 İş Günü (2 Ziyaret)",
-        "img": "/packages/megagen.webp",
-        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
-        "included": [
-          "Çene başına 4x Megagen AnyRidge İmplant",
-          "10-12x Sabit Geçici Diş (24 Saatte)",
-          "10-12x Kalıcı Zirkonyum Köprü Dişleri",
-          "3D Tomografi (CBCT) ve Cerrahi Kılavuz",
-          "VIP Havalimanı-Otel Transferleri",
-          "Otel Konaklaması (Oda & Kahvaltı)"
-        ]
-      },
-      {
-        "name": "ALL-ON-4 – NEODENT",
-        "brand": "Neodent (Straumann Group)",
-        "duration": "3+7 İş Günü (2 Ziyaret)",
-        "img": "/packages/neodent.webp",
-        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
-        "included": [
-          "Çene başına 4x Neodent Grand Morse İmplant",
-          "10-12x Sabit Geçici Diş (24 Saatte)",
-          "10-12x Kalıcı Zirkonyum Köprü Dişleri",
-          "3D Tomografi (CBCT) ve Dijital Planlama",
-          "VIP Havalimanı-Otel Transferleri",
-          "Otel Konaklaması (Oda & Kahvaltı)"
-        ]
-      },
-      {
-        "name": "ALL-ON-4 – HIOSSEN",
-        "brand": "Hiossen (American Brand)",
-        "duration": "3+7 İş Günü (2 Ziyaret)",
-        "img": "/packages/hiossen.webp",
-        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
-        "included": [
-          "Çene başına 4x Hiossen ETIII İmplant",
-          "10-12x Sabit Geçici Diş (24 Saatte)",
-          "10-12x Kalıcı Zirkonyum Köprü Dişleri",
-          "3D Tomografi (CBCT) ve Dijital Planlama",
-          "VIP Havalimanı-Otel Transferleri",
-          "Otel Konaklaması (Oda & Kahvaltı)"
-        ]
       }
     ],
     "faqsPart1": [
@@ -1306,51 +1216,6 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
           "Luxury 5-Star Hotel Stay Included",
           "VIP Mercedes Chauffeur Transfers",
           "Dedicated Personal Patient Host"
-        ]
-      },
-      {
-        "name": "ALL-ON-4 – MEGAGEN",
-        "brand": "Megagen AnyRidge (Knife-Thread Tech)",
-        "duration": "3+7 Working Days (2 Visits)",
-        "img": "/packages/megagen.webp",
-        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
-        "included": [
-          "4x Megagen AnyRidge Implants per Arch",
-          "10-12x Fixed Temporary Teeth",
-          "10-12x Final Zirconia Bridge Teeth",
-          "3D CBCT Tomography & Surgical Guide",
-          "VIP Airport-Hotel Transfers",
-          "Hotel Stay with Bed & Breakfast"
-        ]
-      },
-      {
-        "name": "ALL-ON-4 – NEODENT",
-        "brand": "Neodent (Straumann Group)",
-        "duration": "3+7 Working Days (2 Visits)",
-        "img": "/packages/neodent.webp",
-        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
-        "included": [
-          "4x Neodent Implants per Arch",
-          "10-12x Fixed Temporary Teeth",
-          "10-12x Final Zirconia Bridge Teeth",
-          "3D CBCT Tomography & Planning",
-          "VIP Airport-Hotel Transfers",
-          "Hotel Stay with Bed & Breakfast"
-        ]
-      },
-      {
-        "name": "ALL-ON-4 – HIOSSEN",
-        "brand": "Hiossen (American Brand)",
-        "duration": "3+7 Working Days (2 Visits)",
-        "img": "/packages/hiossen.webp",
-        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
-        "included": [
-          "4x Hiossen American Implants per Arch",
-          "10-12x Fixed Temporary Teeth",
-          "10-12x Final Zirconia Bridge Teeth",
-          "3D CBCT Tomography & Planning",
-          "VIP Airport-Hotel Transfers",
-          "Hotel Stay with Bed & Breakfast"
         ]
       }
     ],
@@ -1782,51 +1647,6 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
           "VIP Mercedes Chauffeur Transfers",
           "Dedicated Personal Patient Host"
         ]
-      },
-      {
-        "name": "ALL-ON-4 – MEGAGEN",
-        "brand": "Megagen AnyRidge (Knife-Thread Tech)",
-        "duration": "3+7 Working Days (2 Visits)",
-        "img": "/packages/megagen.webp",
-        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
-        "included": [
-          "4x Megagen AnyRidge Implants per Arch",
-          "10-12x Fixed Temporary Teeth",
-          "10-12x Final Zirconia Bridge Teeth",
-          "3D CBCT Tomography & Surgical Guide",
-          "VIP Airport-Hotel Transfers",
-          "Hotel Stay with Bed & Breakfast"
-        ]
-      },
-      {
-        "name": "ALL-ON-4 – NEODENT",
-        "brand": "Neodent (Straumann Group)",
-        "duration": "3+7 Working Days (2 Visits)",
-        "img": "/packages/neodent.webp",
-        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
-        "included": [
-          "4x Neodent Implants per Arch",
-          "10-12x Fixed Temporary Teeth",
-          "10-12x Final Zirconia Bridge Teeth",
-          "3D CBCT Tomography & Planning",
-          "VIP Airport-Hotel Transfers",
-          "Hotel Stay with Bed & Breakfast"
-        ]
-      },
-      {
-        "name": "ALL-ON-4 – HIOSSEN",
-        "brand": "Hiossen (American Brand)",
-        "duration": "3+7 Working Days (2 Visits)",
-        "img": "/packages/hiossen.webp",
-        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
-        "included": [
-          "4x Hiossen American Implants per Arch",
-          "10-12x Fixed Temporary Teeth",
-          "10-12x Final Zirconia Bridge Teeth",
-          "3D CBCT Tomography & Planning",
-          "VIP Airport-Hotel Transfers",
-          "Hotel Stay with Bed & Breakfast"
-        ]
       }
     ],
     "faqsPart1": [
@@ -2256,51 +2076,6 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
           "Luxury 5-Star Hotel Stay Included",
           "VIP Mercedes Chauffeur Transfers",
           "Dedicated Personal Patient Host"
-        ]
-      },
-      {
-        "name": "ALL-ON-4 – MEGAGEN",
-        "brand": "Megagen AnyRidge (Knife-Thread Tech)",
-        "duration": "3+7 Working Days (2 Visits)",
-        "img": "/packages/megagen.webp",
-        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
-        "included": [
-          "4x Megagen AnyRidge Implants per Arch",
-          "10-12x Fixed Temporary Teeth",
-          "10-12x Final Zirconia Bridge Teeth",
-          "3D CBCT Tomography & Surgical Guide",
-          "VIP Airport-Hotel Transfers",
-          "Hotel Stay with Bed & Breakfast"
-        ]
-      },
-      {
-        "name": "ALL-ON-4 – NEODENT",
-        "brand": "Neodent (Straumann Group)",
-        "duration": "3+7 Working Days (2 Visits)",
-        "img": "/packages/neodent.webp",
-        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
-        "included": [
-          "4x Neodent Implants per Arch",
-          "10-12x Fixed Temporary Teeth",
-          "10-12x Final Zirconia Bridge Teeth",
-          "3D CBCT Tomography & Planning",
-          "VIP Airport-Hotel Transfers",
-          "Hotel Stay with Bed & Breakfast"
-        ]
-      },
-      {
-        "name": "ALL-ON-4 – HIOSSEN",
-        "brand": "Hiossen (American Brand)",
-        "duration": "3+7 Working Days (2 Visits)",
-        "img": "/packages/hiossen.webp",
-        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
-        "included": [
-          "4x Hiossen American Implants per Arch",
-          "10-12x Fixed Temporary Teeth",
-          "10-12x Final Zirconia Bridge Teeth",
-          "3D CBCT Tomography & Planning",
-          "VIP Airport-Hotel Transfers",
-          "Hotel Stay with Bed & Breakfast"
         ]
       }
     ],
@@ -2732,51 +2507,6 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
           "VIP Mercedes Chauffeur Transfers",
           "Dedicated Personal Patient Host"
         ]
-      },
-      {
-        "name": "ALL-ON-4 – MEGAGEN",
-        "brand": "Megagen AnyRidge (Knife-Thread Tech)",
-        "duration": "3+7 Working Days (2 Visits)",
-        "img": "/packages/megagen.webp",
-        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
-        "included": [
-          "4x Megagen AnyRidge Implants per Arch",
-          "10-12x Fixed Temporary Teeth",
-          "10-12x Final Zirconia Bridge Teeth",
-          "3D CBCT Tomography & Surgical Guide",
-          "VIP Airport-Hotel Transfers",
-          "Hotel Stay with Bed & Breakfast"
-        ]
-      },
-      {
-        "name": "ALL-ON-4 – NEODENT",
-        "brand": "Neodent (Straumann Group)",
-        "duration": "3+7 Working Days (2 Visits)",
-        "img": "/packages/neodent.webp",
-        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
-        "included": [
-          "4x Neodent Implants per Arch",
-          "10-12x Fixed Temporary Teeth",
-          "10-12x Final Zirconia Bridge Teeth",
-          "3D CBCT Tomography & Planning",
-          "VIP Airport-Hotel Transfers",
-          "Hotel Stay with Bed & Breakfast"
-        ]
-      },
-      {
-        "name": "ALL-ON-4 – HIOSSEN",
-        "brand": "Hiossen (American Brand)",
-        "duration": "3+7 Working Days (2 Visits)",
-        "img": "/packages/hiossen.webp",
-        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
-        "included": [
-          "4x Hiossen American Implants per Arch",
-          "10-12x Fixed Temporary Teeth",
-          "10-12x Final Zirconia Bridge Teeth",
-          "3D CBCT Tomography & Planning",
-          "VIP Airport-Hotel Transfers",
-          "Hotel Stay with Bed & Breakfast"
-        ]
       }
     ],
     "faqsPart1": [
@@ -3206,51 +2936,6 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
           "Luxury 5-Star Hotel Stay Included",
           "VIP Mercedes Chauffeur Transfers",
           "Dedicated Personal Patient Host"
-        ]
-      },
-      {
-        "name": "ALL-ON-4 – MEGAGEN",
-        "brand": "Megagen AnyRidge (Knife-Thread Tech)",
-        "duration": "3+7 Working Days (2 Visits)",
-        "img": "/packages/megagen.webp",
-        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
-        "included": [
-          "4x Megagen AnyRidge Implants per Arch",
-          "10-12x Fixed Temporary Teeth",
-          "10-12x Final Zirconia Bridge Teeth",
-          "3D CBCT Tomography & Surgical Guide",
-          "VIP Airport-Hotel Transfers",
-          "Hotel Stay with Bed & Breakfast"
-        ]
-      },
-      {
-        "name": "ALL-ON-4 – NEODENT",
-        "brand": "Neodent (Straumann Group)",
-        "duration": "3+7 Working Days (2 Visits)",
-        "img": "/packages/neodent.webp",
-        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
-        "included": [
-          "4x Neodent Implants per Arch",
-          "10-12x Fixed Temporary Teeth",
-          "10-12x Final Zirconia Bridge Teeth",
-          "3D CBCT Tomography & Planning",
-          "VIP Airport-Hotel Transfers",
-          "Hotel Stay with Bed & Breakfast"
-        ]
-      },
-      {
-        "name": "ALL-ON-4 – HIOSSEN",
-        "brand": "Hiossen (American Brand)",
-        "duration": "3+7 Working Days (2 Visits)",
-        "img": "/packages/hiossen.webp",
-        "price": { "USD": "Custom Quote", "EUR": "Custom Quote", "GBP": "Custom Quote" },
-        "included": [
-          "4x Hiossen American Implants per Arch",
-          "10-12x Fixed Temporary Teeth",
-          "10-12x Final Zirconia Bridge Teeth",
-          "3D CBCT Tomography & Planning",
-          "VIP Airport-Hotel Transfers",
-          "Hotel Stay with Bed & Breakfast"
         ]
       }
     ],
@@ -3720,12 +3405,6 @@ export default function AllOnFourImplantDetailView() {
             <p className={styles.packagesSubtitle}>{d.packagesSubtitle}</p>
           </div>
 
-          {/* VIP Guarantee Trust Badge */}
-          <div className={styles.currencyBar} style={{ justifyContent: 'center' }}>
-            <span style={{ fontSize: '0.9rem', color: '#047857', fontWeight: '600', background: '#ecfdf5', padding: '0.4rem 1rem', borderRadius: '999px', border: '1px solid #a7f3d0' }}>
-              {locale === 'tr' ? '5★ Otel + VIP Transfer + Ömür Boyu Garanti Dahil' : '5★ Luxury Hotel + VIP Transfers + Lifetime Warranty Included'}
-            </span>
-          </div>
 
           {/* 6 Real Implant Brand Package Cards */}
           <div className={styles.pkgGrid}>

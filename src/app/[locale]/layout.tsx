@@ -11,16 +11,19 @@ import WhatsAppPopup from '@/components/whatsapp/WhatsAppPopup';
 import "../globals.css";
 
 const outfit = Outfit({
-  subsets: ["latin"],
+  subsets: ["latin", "latin-ext"],
   variable: "--font-outfit",
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  display: "swap",
+  preload: true,
+  adjustFontFallback: true,
+  fallback: ["system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "sans-serif"],
 });
 
 const seoConfig: Record<string, { title: string; description: string; keywords: string[] }> = {
   tr: {
     title: 'Master Smile Studio | Estetik Diş Hekimliği & Dijital Gülüş Tasarımı Antalya',
-    description: 'Antalya Konyaaltı’nda dünya standartlarında estetik diş hekimliği, Hollywood Smile, Zirkonyum kaplama ve dikişsiz implant tedavileri.',
-    keywords: ['Master Smile Studio', 'Antalya Diş Kliniği', 'Konyaaltı Diş Hekimi', 'Estetik Diş Hekimliği Antalya', 'Dijital Gülüş Tasarımı', 'Hollywood Smile Antalya', 'Zirkonyum Kaplama', 'İmplant Tedavisi Antalya', 'E-max Lamina'],
+    description: 'Antalya Muratpaşa (Güzeloba)’da dünya standartlarında estetik diş hekimliği, Hollywood Smile, Zirkonyum kaplama ve dikişsiz implant tedavileri.',
+    keywords: ['Master Smile Studio', 'Antalya Diş Kliniği', 'Muratpaşa Diş Hekimi', 'Güzeloba Diş Kliniği', 'Estetik Diş Hekimliği Antalya', 'Dijital Gülüş Tasarımı', 'Hollywood Smile Antalya', 'Zirkonyum Kaplama', 'İmplant Tedavisi Antalya', 'E-max Lamina'],
   },
   en: {
     title: 'Master Smile Studio | Aesthetic Dentistry & Digital Smile Design Antalya Turkey',
@@ -75,7 +78,7 @@ export async function generateMetadata({
       description: seo.description,
       siteName: siteConfig.name,
       locale: locale,
-      url: `${siteConfig.domain}/${locale}`,
+      url: `${siteConfig.domain}/${locale}/`,
       type: 'website',
     },
     twitter: {
@@ -137,12 +140,12 @@ export default async function LocaleLayout({
   // Comprehensive MedicalClinic & Dentist JSON-LD for Google SGE, Perplexity & GEO
   const jsonLd = {
     '@context': 'https://schema.org',
-    '@type': ['Dentist', 'MedicalClinic', 'LocalBusiness'],
-    '@id': `${siteConfig.domain}/#organization`,
+    '@type': ['Dentist', 'MedicalClinic', 'MedicalBusiness'],
+    '@id': `${siteConfig.domain}/#clinic`,
     name: siteConfig.name,
     legalName: siteConfig.legalName,
-    url: `${siteConfig.domain}/${locale}`,
-    logo: `${siteConfig.domain}/logo.png`,
+    url: `${siteConfig.domain}/${locale}/`,
+    logo: `${siteConfig.domain}/mastersmilestudio-logo.png`,
     image: `${siteConfig.domain}/og-image.jpg`,
     description: seoConfig[locale]?.description || seoConfig.tr.description,
     telephone: siteConfig.phone,
@@ -164,12 +167,13 @@ export default async function LocaleLayout({
       latitude: Number(siteConfig.geo.latitude),
       longitude: Number(siteConfig.geo.longitude),
     },
+    hasMap: siteConfig.socials.googleMaps,
     openingHoursSpecification: [
       {
         '@type': 'OpeningHoursSpecification',
         dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
         opens: '09:00',
-        closes: '20:00',
+        closes: '19:00',
       },
     ],
     sameAs: [
@@ -178,6 +182,37 @@ export default async function LocaleLayout({
       siteConfig.socials.youtube,
       siteConfig.socials.googleMaps,
     ],
+    hasCredential: {
+      '@type': 'EducationalOccupationalCredential',
+      name: 'International Health Tourism Authorization Certificate',
+      credentialCategory: 'Government Health Tourism License',
+      recognizedBy: {
+        '@type': 'GovernmentOrganization',
+        name: 'Republic of Turkey Ministry of Health',
+        sameAs: 'https://www.wikidata.org/wiki/Q6085521',
+      },
+      url: `${siteConfig.domain}/mastersmilestudio_international-health-tourism-authorization-certification.jpg`,
+    },
+    memberOf: [
+      {
+        '@type': 'Organization',
+        name: 'Turkish Dental Association (TDB)',
+        sameAs: 'https://www.wikidata.org/wiki/Q6044738',
+      },
+      {
+        '@type': 'Organization',
+        name: 'International Team for Implantology (ITI)',
+        sameAs: 'https://www.wikidata.org/wiki/Q6053896',
+      },
+    ],
+    knowsAbout: [
+      { '@type': 'Thing', name: 'Dental implant', sameAs: 'https://www.wikidata.org/wiki/Q1413157' },
+      { '@type': 'Thing', name: 'All-on-4', sameAs: 'https://www.wikidata.org/wiki/Q4727773' },
+      { '@type': 'Thing', name: 'Veneer (dentistry)', sameAs: 'https://www.wikidata.org/wiki/Q1431414' },
+      { '@type': 'Thing', name: 'Zirconium dioxide', sameAs: 'https://www.wikidata.org/wiki/Q410058' },
+      { '@type': 'Thing', name: 'Dental tourism', sameAs: 'https://www.wikidata.org/wiki/Q5251147' },
+      { '@type': 'Place', name: 'Antalya', sameAs: 'https://www.wikidata.org/wiki/Q406' },
+    ],
     medicalSpecialty: [
       'https://schema.org/Dentistry',
       'CosmeticDentistry',
@@ -185,6 +220,7 @@ export default async function LocaleLayout({
       'Periodontics',
       'Orthodontics',
       'Prosthodontics',
+      'OralSurgery',
     ],
     availableService: [
       {
@@ -211,38 +247,42 @@ export default async function LocaleLayout({
     employee: [
       {
         '@type': 'Physician',
-        name: 'Dr. Fırat İskender',
-        jobTitle: 'Estetik Diş Hekimi & Kurucu Ortak',
-      },
-      {
-        '@type': 'Physician',
-        name: 'Dr. Ali Kemal Demir',
-        jobTitle: 'Çene Cerrahisi & İmplantoloji Uzmanı',
-      },
-      {
-        '@type': 'Physician',
+        '@id': `${siteConfig.domain}/#physician-ozan-ozturk`,
         name: 'Dr. Ozan Öztürk',
-        jobTitle: 'Dijital Gülüş Tasarımı Uzmanı',
+        jobTitle: 'CEO & Founder | Prosthodontist & Aesthetic Dentist',
+        medicalSpecialty: 'CosmeticDentistry',
       },
       {
         '@type': 'Physician',
-        name: 'Dr. Tülay Kaya',
-        jobTitle: 'Protez & Estetik Diş Hekimi',
+        '@id': `${siteConfig.domain}/#physician-firat-iskender`,
+        name: 'Dt. Fırat İskender',
+        jobTitle: 'Oral & Maxillofacial Surgeon | Specialist Dentist',
+        medicalSpecialty: 'OralSurgery',
       },
       {
-        '@type': 'Physician',
-        name: 'Dr. Julia Rostova',
-        jobTitle: 'Uluslararası Hasta Koordinatörü & Hekim',
+        '@type': 'Person',
+        name: 'Tülay Kaya',
+        jobTitle: 'International Patient Coordinator',
       },
       {
-        '@type': 'Physician',
-        name: 'Dr. Abdullah Yılmaz',
-        jobTitle: 'Periodontoloji (Diş Eti) Uzmanı',
+        '@type': 'Person',
+        name: 'Julia Rostova',
+        jobTitle: 'International Patient Coordinator (Polish & Russian)',
       },
       {
-        '@type': 'Physician',
-        name: 'Dr. Sude Arslan',
-        jobTitle: 'Pedodonti & Koruyucu Diş Hekimi',
+        '@type': 'Person',
+        name: 'Ali Kemal Demir',
+        jobTitle: 'Clinical Operations Manager',
+      },
+      {
+        '@type': 'Person',
+        name: 'Abdullah Yılmaz',
+        jobTitle: 'Patient Relations Specialist',
+      },
+      {
+        '@type': 'Person',
+        name: 'Sude Arslan',
+        jobTitle: 'Patient Care Coordinator',
       },
     ],
   };
@@ -250,6 +290,12 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} className={outfit.variable}>
       <head>
+        <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://www.google-analytics.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+        <link rel="dns-prefetch" href="https://www.clarity.ms" />
+        <link rel="dns-prefetch" href="https://c.clarity.ms" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -314,7 +360,7 @@ export default async function LocaleLayout({
         {/* Microsoft Clarity */}
         <Script
           id="microsoft-clarity"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
           dangerouslySetInnerHTML={{
             __html: `
               (function(c,l,a,r,i,t,y){

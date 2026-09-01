@@ -58,7 +58,7 @@ const TREATMENTS_NAV_TREE: TreatmentCategory[] = [
       { title: { tr: 'Zirkonyum Kron Kaplama', en: 'Zirconium Crowns', de: 'Zirkonkronen', ru: 'Циркониевые коронки', es: 'Coronas de Circonio', pt: 'Coroas de Zircónia', pl: 'Korony Cyrkonowe' }, href: '/treatments/dental-crowns/zirconium-crowns' },
       { title: { tr: 'Metal Porselen Kaplama (PFM)', en: 'Metal Porcelain Crowns (PFM)', de: 'Metallkeramikkronen', ru: 'Металлокерамические коронки', es: 'Coronas de Metal-Porcelana', pt: 'Coroas de Metal-Porcelana', pl: 'Korony Metalowo-Porcelanowe' }, href: '/treatments/dental-crowns/pfm-crowns' },
       { title: { tr: 'E-max Full Seramik Kaplama', en: 'E-max Crowns', de: 'E-max Vollkeramikkronen', ru: 'Коронки E-max', es: 'Coronas E-max', pt: 'Coroas E-max', pl: 'Korony E-max' }, href: '/treatments/dental-crowns/emax-crowns' },
-      { title: { tr: 'Tam Seramik Kron', en: 'Full Ceramic Crowns', de: 'Vollkeramikkronen', ru: 'Цельнокерамические коронки', es: 'Coronas Completamente Cerámicas', pt: 'Coroas Cerâmicas Puras', pl: 'Korony Pełnoceramiczne' }, href: '/treatments/dental-crowns/full-ceramic' },
+      { title: { tr: 'Tam Seramik Kron', en: 'Full Ceramic Crowns', de: 'Vollkeramikkronen', ru: 'Цельнокерамические коронки', es: 'Coronas Completamente Cerámicas', pt: 'Coroas Cerâmicas Puras', pl: 'Korony Pełnoceramiczne' }, href: '/treatments/dental-crowns/full-ceramic-crowns' },
     ],
   },
   {
@@ -76,12 +76,12 @@ const TREATMENTS_NAV_TREE: TreatmentCategory[] = [
   },
   {
     id: 'bridge',
-    title: { tr: 'Diş Köprüsü', en: 'Dental Bridge', de: 'Zahnbrücke', ru: 'Зубные мосты', es: 'Puentes Dentales', pt: 'Pontes Dentárias', pl: 'Mosty Protetyczne' },
-    href: '/treatments/dental-bridge',
+    title: { tr: 'Diş Köprüsü', en: 'Dental Bridges', de: 'Zahnbrücken', ru: 'Зубные мосты', es: 'Puentes Dentales', pt: 'Pontes Dentárias', pl: 'Mosty Protetyczne' },
+    href: '/treatments/dental-bridges',
     subitems: [
-      { title: { tr: 'Geleneksel Diş Köprüsü', en: 'Traditional Bridges', de: 'Traditionelle Brücken', ru: 'Традиционные мосты', es: 'Puentes Tradicionales', pt: 'Pontes Tradicionais', pl: 'Tradycyjne Mosty' }, href: '/treatments/dental-bridge/traditional-bridges' },
-      { title: { tr: 'Maryland Kanatlı Köprü', en: 'Maryland Bridges', de: 'Maryland-Brücken', ru: 'Мэрилендские мосты', es: 'Puentes Maryland', pt: 'Pontes Maryland', pl: 'Mosty Maryland' }, href: '/treatments/dental-bridge/maryland-bridges' },
-      { title: { tr: 'Balkon (Asma) Diş Köprüsü', en: 'Cantilever Bridges', de: 'Freiendbrücken', ru: 'Консольные мосты', es: 'Puentes Cantilever', pt: 'Pontes Cantilever', pl: 'Mosty Wspornikowe' }, href: '/treatments/dental-bridge/cantilever-bridges' },
+      { title: { tr: 'Geleneksel Diş Köprüsü', en: 'Traditional Bridges', de: 'Traditionelle Brücken', ru: 'Традиционные мосты', es: 'Puentes Tradicionales', pt: 'Pontes Tradicionais', pl: 'Tradycyjne Mosty' }, href: '/treatments/dental-bridges/traditional-bridges' },
+      { title: { tr: 'Maryland Kanatlı Köprü', en: 'Maryland Bridges', de: 'Maryland-Brücken', ru: 'Мэрилендские мосты', es: 'Puentes Maryland', pt: 'Pontes Maryland', pl: 'Mosty Maryland' }, href: '/treatments/dental-bridges/maryland-bridges' },
+      { title: { tr: 'Balkon (Asma) Diş Köprüsü', en: 'Cantilever Bridges', de: 'Freiendbrücken', ru: 'Консольные мосты', es: 'Puentes Cantilever', pt: 'Pontes Cantilever', pl: 'Mosty Wspornikowe' }, href: '/treatments/dental-bridges/cantilever-bridges' },
     ],
   },
   {
@@ -101,7 +101,7 @@ const TREATMENTS_NAV_TREE: TreatmentCategory[] = [
     subitems: [
       { title: { tr: 'Gülüş Tasarımı (Smile Makeover)', en: 'Smile Makeover', de: 'Smile Makeover', ru: 'Преображение улыбки', es: 'Diseño de Sonrisa', pt: 'Transformação do Sorriso', pl: 'Metamorfoza Uśmiechu' }, href: '/treatments/cosmetic-dentistry/smile-makeover' },
       { title: { tr: 'Hollywood Smile', en: 'Hollywood Smile', de: 'Hollywood Smile', ru: 'Голливудская улыбка', es: 'Hollywood Smile', pt: 'Hollywood Smile', pl: 'Hollywood Smile' }, href: '/treatments/cosmetic-dentistry/hollywood-smile' },
-      { title: { tr: 'Diş Eti Estetiği (Gummy Smile)', en: 'Gummy Smile Treatment', de: 'Gummy Smile Behandlung', ru: 'Коррекция десневой улыбки', es: 'Tratamiento de Sonrisa Gingival', pt: 'Tratamento de Sorriso Gengival', pl: 'Leczenie Uśmiechu Dziąsłowego' }, href: '/treatments/cosmetic-dentistry/gummy-smile' },
+      { title: { tr: 'Diş Eti Estetiği (Gummy Smile)', en: 'Gummy Smile Treatment', de: 'Gummy Smile Behandlung', ru: 'Коррекция десневой улыбки', es: 'Tratamiento de Sonrisa Gingival', pt: 'Tratamento de Sorriso Gengival', pl: 'Leczenie Uśmiechu Dziąsłowego' }, href: '/treatments/cosmetic-dentistry/gummy-smile-treatment' },
       { title: { tr: 'Lazerle Diş Beyazlatma', en: 'Teeth Whitening', de: 'Zahnaufhellung', ru: 'Отбеливание зубов', es: 'Blanqueamiento Dental', pt: 'Branqueamento Dentário', pl: 'Wybielanie Zębów' }, href: '/treatments/cosmetic-dentistry/teeth-whitening' },
       { title: { tr: 'Diş Şekillendirme & Kontür', en: 'Tooth Contouring & Shaping', de: 'Zahnkonturierung', ru: 'Контурирование зубов', es: 'Contorneado Dental', pt: 'Contorno Dentário', pl: 'Konturowanie Zębów' }, href: '/treatments/cosmetic-dentistry/tooth-contouring' },
       { title: { tr: 'Ayrık Diş Kapatma (Diastema)', en: 'Diastema Closure', de: 'Diastema-Schluss', ru: 'Закрытие диастемы', es: 'Cierre de Diastemas', pt: 'Fecho de Diastemas', pl: 'Zamykanie Diastemy' }, href: '/treatments/cosmetic-dentistry/diastema-closure' },

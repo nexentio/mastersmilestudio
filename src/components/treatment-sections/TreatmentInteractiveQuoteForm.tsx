@@ -421,8 +421,38 @@ export default function TreatmentInteractiveQuoteForm({ defaultTreatment = 'Impl
   };
 
   const handleWhatsAppInstantSend = () => {
+    const greeting =
+      locale === 'tr'
+        ? 'Merhaba, web siteniz üzerinden ulaşıyorum.'
+        : locale === 'de'
+        ? 'Hallo, ich kontaktiere Sie über Ihre Website.'
+        : locale === 'pl'
+        ? 'Dzień dobry, kontaktuję się przez Państwa stronę internetową.'
+        : locale === 'pt'
+        ? 'Olá, estou entrando em contato através do seu site.'
+        : locale === 'es'
+        ? '¡Hola! Me pongo en contacto a través de su sitio web.'
+        : locale === 'ru'
+        ? 'Здравствуйте! Я обращаюсь через ваш сайт.'
+        : 'Hello, I am contacting you through your website.';
+
+    const requestTitle =
+      locale === 'tr'
+        ? 'Ücretsiz diş konsültasyonu ve fiyat teklifi almak istiyorum.'
+        : locale === 'de'
+        ? 'Ich möchte eine kostenlose zahnärztliche Beratung und ein Angebot erhalten.'
+        : locale === 'pl'
+        ? 'Chciałbym otrzymać bezpłatną konsultację stomatologiczną i wycenę.'
+        : locale === 'pt'
+        ? 'Gostaria de receber uma consulta dentária gratuita e um orçamento.'
+        : locale === 'es'
+        ? 'Me gustaría recibir una consulta dental gratuita y presupuesto.'
+        : locale === 'ru'
+        ? 'Я хотел бы получить бесплатную консультацию и расчет стоимости.'
+        : 'I would like to get my Free Dental Consultation and price quote.';
+
     const text = encodeURIComponent(
-      `Hello Master Smile Studio!\n\nI would like to get my Free Dental Consultation.\n\n• Name: ${fullName || 'Guest'}\n• Country: ${country}\n• Phone: ${phone}\n• Treatments: ${selectedTreatments.join(', ')}\n• Age: ${ageGroup}\n• Spoken to Dentist: ${spokenToDentist}\n• Timeline: ${timeline}\n• Preferred Contact: ${commChannel}\n• Message: ${message || 'None'}\n\nPlease prepare my custom treatment plan and price quote.`
+      `${greeting}\n\n${requestTitle}\n\n• Name: ${fullName || 'Guest'}\n• Country: ${country}\n• Phone: ${phone}\n• Treatments: ${selectedTreatments.join(', ')}\n• Age: ${ageGroup}\n• Spoken to Dentist: ${spokenToDentist}\n• Timeline: ${timeline}\n• Preferred Contact: ${commChannel}\n• Message: ${message || 'None'}\n\nPlease prepare my custom treatment plan.`
     );
     const targetPhone = SITE_CONFIG.whatsappNumbers[locale] || SITE_CONFIG.whatsappNumbers.en || '905373059947';
     window.open(
