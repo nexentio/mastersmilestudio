@@ -222,6 +222,46 @@ export default async function LocaleLayout({
       'Prosthodontics',
       'OralSurgery',
     ],
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '4.96',
+      reviewCount: '348',
+      bestRating: '5',
+      worstRating: '1',
+    },
+    review: [
+      {
+        '@type': 'Review',
+        author: { '@type': 'Person', name: 'Malcolm Mallia' },
+        reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+        reviewBody:
+          'Master Smile Studio is not just a clinic but it is filled with a relaxing atmosphere. The preciseness and skill of the surgeon were mind boggling. I highly recommend Master Smile Studio!',
+      },
+      {
+        '@type': 'Review',
+        author: { '@type': 'Person', name: 'Rafael Rodriguez' },
+        reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+        reviewBody:
+          'I came to Antalya to assist my father in law to do an all on 6 upper jaw. The clinic is modern, well equipped and beautiful. Much better than my own doctor in Canada.',
+      },
+      {
+        '@type': 'Review',
+        author: { '@type': 'Person', name: 'Sophie Laurent' },
+        reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+        reviewBody:
+          'Incredible dental journey with Master Smile Studio Antalya. The E-Max veneers look so natural and the VIP transfer and 5-star hotel service made it feel like a luxury holiday.',
+      },
+    ],
+    areaServed: [
+      { '@type': 'Country', name: 'United Kingdom' },
+      { '@type': 'Country', name: 'Germany' },
+      { '@type': 'Country', name: 'Poland' },
+      { '@type': 'Country', name: 'Portugal' },
+      { '@type': 'Country', name: 'Spain' },
+      { '@type': 'Country', name: 'Russia' },
+      { '@type': 'Country', name: 'Ireland' },
+      { '@type': 'Country', name: 'Turkey' },
+    ],
     availableService: [
       {
         '@type': 'MedicalProcedure',
@@ -244,6 +284,32 @@ export default async function LocaleLayout({
         description: 'In-office laser dental bleaching and stain removal.',
       },
     ],
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: 'Dental Treatment Services & VIP Packages',
+      itemListElement: [
+        {
+          '@type': 'OfferCatalog',
+          name: 'Dental Implants (All-on-4, All-on-6, Full Mouth)',
+          url: `${siteConfig.domain}/${locale}/treatments/dental-implants/`,
+        },
+        {
+          '@type': 'OfferCatalog',
+          name: 'Dental Veneers (E-Max, Porcelain Laminate)',
+          url: `${siteConfig.domain}/${locale}/treatments/dental-veneers/`,
+        },
+        {
+          '@type': 'OfferCatalog',
+          name: 'Dental Crowns (Zirconium, E-Max)',
+          url: `${siteConfig.domain}/${locale}/treatments/dental-crowns/`,
+        },
+        {
+          '@type': 'OfferCatalog',
+          name: 'Cosmetic Dentistry & Hollywood Smile',
+          url: `${siteConfig.domain}/${locale}/treatments/cosmetic-dentistry/`,
+        },
+      ],
+    },
     employee: [
       {
         '@type': 'Physician',

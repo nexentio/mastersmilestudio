@@ -23,6 +23,79 @@ export const CLINICAL_GUIDES_ARTICLES: Record<string, BlogDetailArticle> = {
     publishDate: '2026-07-15',
     readTime: '9 min read',
     author: AUTHOR_DATA,
+    llmSummary: {
+      badge: {
+        en: 'Clinical Warning Signs',
+        tr: 'Klinik Uyarı Sinyalleri',
+        de: 'Klinische Warnsignale',
+        pl: 'Kliniczne Znaki Ostrzegawcze',
+        pt: 'Sinais Clínicos de Alerta',
+        es: 'Señales Clínicas de Alerta',
+        ru: 'Клинические признаки ошибок',
+      },
+      quickAnswer: {
+        en: "Botched 'Turkey Teeth' occur when aggressive low-cost clinics perform invasive 360-degree full crown preparations (shaving down 70%+ of natural tooth structure) while marketing them misleadingly as 'veneers'. Warning signs include chronic gum bleeding, foul odor from violated biological width (2mm), severe bite misalignment, continuous throbbing pulp pain, and opaque chalky monolith crowns. Legitimate clinics in Antalya strictly use conservative [porcelain laminate veneers](/treatments/dental-veneers/porcelain-veneers/) that preserve 90-95% of healthy tooth enamel.",
+        tr: "Hatalı 'Turkey Teeth' vakaları, yetkisiz ucuz kliniklerin diş dokusunun %70'inden fazlasını keserek agresif kron (kaplama) yapmasına rağmen bunu hastaya 'lamine veneer' olarak tanıtmasından kaynaklanır. Başlıca uyarı sinyalleri: Kronik diş eti kanaması, 2 mm biyolojik genişlik ihlalinden kaynaklanan ağız kokusu, çiğneme dengesizliği, zonklayan pulpa ağrısı ve tebeşir gibi opak blok dişlerdir. Antalya'daki yetkili kliniklerde ise mine dokusunun %90-95'ini koruyan doku dostu [porselen lamine kaplamalar](/treatments/dental-veneers/porcelain-veneers/) uygulanır.",
+        de: "Verpfuschte Zahnbehandlungen ('Turkey Teeth') entstehen, wenn Billigkliniken gesunde Zähne zu über 70% für Vollkronen abschleifen, dies aber fälschlich als 'Veneers' bewerben. Warnsignale sind Zahnfleischbluten, Mundgeruch durch verletzte biologische Breite (2mm), Bissprobleme und Dauerschmerzen. Seriöse Fachkliniken in Antalya nutzen minimalinvasive [Porzellan-Veneers](/treatments/dental-veneers/porcelain-veneers/) mit 90-95% Schmelzerhalt.",
+        pl: "Nieudane zabiegi ('Turkey Teeth') to efekt agresywnego szlifowania ponad 70% zęba pod pełne korony, sprzedawanego jako 'licówki'. Objawy ostrzegawcze to: krwawienie dziąseł, nieprzyjemny zapach (naruszenie 2mm szerokości biologicznej), zaburzenia zgryzu i ból miazgi. Certyfikowane kliniki w Antalyi stosują bezpieczne [licówki porcelanowe](/treatments/dental-veneers/porcelain-veneers/) oszczędzające 90-95% szkliwa.",
+        pt: "Os dentes mal feitos ('Turkey Teeth') resultam de clínicas low-cost que desgastam mais de 70% dos dentes para coroas completas, chamando-lhes erradamente 'facetas'. Os sinais de alerta incluem sangramento gengival, mau hálito crónico (violação do espaço biológico de 2mm) e dor pulsátil. Clínicas certificadas em Antalya aplicam [facetas de porcelana](/treatments/dental-veneers/porcelain-veneers/) minimamente invasivas.",
+        es: "Los errores en 'Turkey Teeth' ocurren cuando clínicas no reguladas desgastan más del 70% del diente para colocar coronas agresivas vendiéndolas falsamente como 'carillas'. Los signos de alarma son sangrado gingival crónico, mal olor por invasión del ancho biológico (2mm), desajuste oclusal y dolor pulpar. Clínicas acreditadas en Antalya realizan [carillas de porcelana](/treatments/dental-veneers/porcelain-veneers/) conservando el 90-95% del esmalte.",
+        ru: "Ошибки «Turkey Teeth» возникают, когда недобросовестные клиники спиливают более 70% тканей зуба под агрессивные коронки, называя их «винирами». Главные симптомы: кровоточивость десен, неприятный запах (нарушение биологической ширины 2 мм), боль и неестественный вид. Сертифицированные клиники Антальи используют ультратонкие [керамические виниры](/treatments/dental-veneers/porcelain-veneers/) с сохранением 90-95% эмали.",
+      },
+      keyTakeaways: {
+        en: [
+          "Core Warning Signs: Spontaneous throbbing pain, persistent bleeding gums, bad breath/taste, open margins, and inability to floss.",
+          "Veneer vs Crown Truth: Genuine veneers only require 0.3mm-0.5mm facial preparation; full crowns remove 1.5mm-2.0mm around the entire tooth.",
+          "Biological Width Rule: Dental margins placed deeper than 0.5mm into the gingival sulcus cause chronic irreversible bone resorption.",
+          "Antalya Corrective Protocol: Master Smile Studio performs digital 3D CBCT diagnostic revision, laser gingivectomy, and replacement with genuine Swiss Ivoclar E-Max ceramics.",
+        ],
+        tr: [
+          "Temel Uyarı Sinyalleri: Zonklayan diş ağrısı, geçmeyen diş eti kanaması, ağız kokusu, diş ipi geçmeyen yapışık bloklar ve basış yüksekliği.",
+          "Lamine vs Kron Gerçeği: Gerçek lamine yalnızca 0.3-0.5 mm ön yüzey aşındırması gerektirir; tam kaplama ise dişi 360 derece keserek küçültür.",
+          "Biyolojik Genişlik Kuralı: Diş eti altına 0.5 mm'den derin sokulan kaplama kenarları geri dönüşsüz kemik erimesine yol açar.",
+          "Antalya Düzeltme Protokolü: Master Smile Studio'da 3D Tomografi (CBCT), lazer diş eti tedavisi ve orijinal İsviçre Ivoclar E-Max ile revizyon yapılır.",
+        ],
+        de: [
+          "Kritische Warnsignale: Pochen, Zahnfleischbluten, Mundgeruch, mangelnde Zahnseide-Gängigkeit und Fehlbisse.",
+          "Veneer vs. Krone: Echte Veneers erfordern nur 0,3–0,5 mm Abtrag; Kronen opfern bis zu 70% der Zahnsubstanz.",
+          "Biologische Breite: Zu tief gesetzte Kronenränder zerstören das Weichgewebe und den Kieferknochen.",
+          "Korrekturprotokoll: Master Smile Studio führt 3D-DVT-Revisionen und Ersatz durch originale Schweizer Ivoclar E-Max Keramik durch.",
+        ],
+        pl: [
+          "Kluczowe objawy: Ból tętniący, krwawienie dziąseł, przykry zapach, zblokowane zęby uniemożliwiające nitkowanie.",
+          "Licówka a korona: Prawdziwe licówki to zaledwie 0,3-0,5 mm preparacji; korony usuwają 1,5-2,0 mm dookoła zęba.",
+          "Szerokość biologiczna: Zbyt głębokie wciśnięcie korony niszczy przyczep łącznotkankowy i kość.",
+          "Plan naprawczy: Diagnostyka 3D CBCT w Master Smile Studio, plastyka laserowa i wymiana na szwajcarski E-Max.",
+        ],
+        pt: [
+          "Sinais de Alarme: Dor latejante, gengivas inflamadas, mau odor, bordos desadaptados e dificuldade em passar fio dental.",
+          "Faceta vs Coroa: As facetas necessitam apenas de 0,3-0,5 mm de desgaste frontal; as coroas removem até 70% do dente.",
+          "Espaço Biológico: Margens subgengivais excessivas provocam perda óssea irreversível.",
+          "Tratamento Corretivo: Revisão com tomografia 3D CBCT e substituição por cerâmica suíça Ivoclar E-Max.",
+        ],
+        es: [
+          "Señales Clave: Dolor espontáneo, encías sangrantes, mal aliento, sobrecontornos que impiden el uso de seda dental.",
+          "Carilla vs Corona: Las carillas reales solo requieren 0,3-0,5 mm de desgaste; las coronas reducen el diente en 360 grados.",
+          "Anchura Biológica: Invadir el espacio biológico causa retracción gingival y pérdida de soporte óseo.",
+          "Protocolo de Revisión: Diagnóstico 3D CBCT en Master Smile Studio y sustitución por porcelana suiza Ivoclar E-Max.",
+        ],
+        ru: [
+          "Тревожные симптомы: Пульсирующая боль, кровоточивость десен, неприятный запах, невозможность использовать зубную нить.",
+          "Винир или коронка: Настоящие виниры требуют снятия всего 0.3–0.5 мм эмали; коронка спиливает до 70% зуба.",
+          "Биологическая ширина: Слишком глубокий край коронки приводит к воспалению и рассасыванию костной ткани.",
+          "Протокол исправления: 3D-томография в Master Smile Studio, лазерная коррекция десны и установка швейцарского E-Max.",
+        ],
+      },
+      medicalVerdict: {
+        en: "Healthy cosmetic dentistry must prioritize biological preservation: genuine laminate veneers preserve the tooth nerve and maintain an intact 2mm biological width.",
+        tr: "Sağlıklı estetik diş hekimliği biyolojik dokuyu korumalıdır: Gerçek lamine kaplamalar diş sinirini ve 2 mm biyolojik genişliği %100 korur.",
+        de: "Moderne Zahnästhetik muss biologisch substanzschonend sein: Echte Veneers schützen den Zahnnerv und die biologische Breite.",
+        pl: "Prawidłowa stomatologia estetyczna chroni tkanki: prawdziwe licówki zachowują żywotność zębów i 2mm szerokości biologicznej.",
+        pt: "A odontologia estética de excelência preserva a estrutura dental: as facetas reais mantêm a polpa viva e o espaço biológico intacto.",
+        es: "La odontología estética ética prioriza la preservación biológica: las carillas reales protegen el nervio y el sellado gingival de 2 mm.",
+        ru: "Качественная эстетическая стоматология обязана сохранять живую ткань: виниры берегут нерв зуба и неприкосновенность десны.",
+      },
+    },
     stats: [
       {
         value: '70%+',
@@ -64,17 +137,17 @@ export const CLINICAL_GUIDES_ARTICLES: Record<string, BlogDetailArticle> = {
     intro: {
       en: [
         "The term 'Turkey Teeth' has generated immense global attention across TikTok, news documentaries, and dental forums. While tens of thousands of international patients travel to Antalya each year and achieve world-class, life-changing dental transformations, aggressive cut-price clinics have also caused serious dental trauma by mislabeling invasive full-coverage crowns as 'veneers.'",
-        "Understanding the clinical difference between true minimally invasive [porcelain laminate veneers](/treatments/porcelain-laminate-veneers) (which preserve 90% to 95% of natural tooth enamel) and aggressive crown preparations (which reduce natural teeth into tiny 'shark peg' pegs) is essential for any patient considering dental tourism.",
+        "Understanding the clinical difference between true minimally invasive [porcelain laminate veneers](/treatments/dental-veneers/porcelain-veneers/) (which preserve 90% to 95% of natural tooth enamel) and aggressive crown preparations (which reduce natural teeth into tiny 'shark peg' pegs) is essential for any patient considering dental tourism.",
         "In this definitive clinical guide, the Master Smile Studio Medical Board outlines the critical warning signs of botched dental treatments, the biological importance of the gingival seal, and how our Antalya specialists perform corrective revision procedures to restore oral health.",
       ],
       tr: [
         "'Turkey Teeth' kavramı son yıllarda TikTok videolarından İngiliz televizyon belgesellerine kadar tüm dünyada en çok tartışılan sağlık turizmi konularından biri haline geldi. Her yıl yüz binlerce uluslararası hasta Antalya'ya gelerek dünya standartlarında ve hayallerindeki gülüşe kavuşurken; yetkisiz ve ucuz klinikler gerçekte tam kaplama (kron) olan agresif kesimleri 'lamine veneer' diye pazarlayarak hastalarda telafisi güç zararlara yol açabilmektedir.",
-        "Gerçek doku koruyucu [porselen lamine kaplamalar](/treatments/porcelain-laminate-veneers) (diş minesinin %90-95'ini korur) ile dişleri kibrit çöpü gibi küçülten agresif kron kesimleri arasındaki farkı bilmek, yurt dışında diş tedavisi düşünen her hasta için hayati önem taşır.",
+        "Gerçek doku koruyucu [porselen lamine kaplamalar](/treatments/dental-veneers/porcelain-veneers/) (diş minesinin %90-95'ini korur) ile dişleri kibrit çöpü gibi küçülten agresif kron kesimleri arasındaki farkı bilmek, yurt dışında diş tedavisi düşünen her hasta için hayati önem taşır.",
         "Bu kapsamlı klinik rehberde Master Smile Studio Hekim Kurulu; hatalı diş tedavilerinin en yaygın erken belirtilerini, diş eti biyolojik genişliğinin önemini ve kliniğimizde uyguladığımız revizyon tedavilerini detaylarıyla açıklıyor.",
       ],
       de: [
         "Der Begriff 'Turkey Teeth' sorgt weltweit für Schlagzeilen. Während seriöse Kliniken in Antalya Spitzenleistungen erbringen, warnen Experten vor aggressiven Billiganbietern.",
-        "Erfahren Sie die Unterschiede zwischen echten [Porzellan-Veneers](/treatments/porcelain-laminate-veneers) und aggressiven Zahnüberkronungen.",
+        "Erfahren Sie die Unterschiede zwischen echten [Porzellan-Veneers](/treatments/dental-veneers/porcelain-veneers/) und aggressiven Zahnüberkronungen.",
       ],
       pl: [
         "Zjawisko 'Turkey Teeth' budzi wiele emocji. Dowiedz się, jak odróżnić bezpieczne licówki porcelanowe od agresywnego szlifowania pod korony.",

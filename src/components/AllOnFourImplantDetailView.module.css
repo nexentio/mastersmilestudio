@@ -338,6 +338,63 @@
   line-height: 1.7;
 }
 
+.materialsComparisonBanner {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 2rem;
+  margin-bottom: 2.75rem;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.04);
+}
+
+.materialsComparisonImgWrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  max-height: 480px;
+  background-color: #0f172a;
+  overflow: hidden;
+}
+
+.materialsComparisonImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.materialsComparisonCaption {
+  padding: 1.15rem 1.75rem;
+  background-color: #ffffff;
+  border-top: 1px solid #f1f5f9;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.comparisonCaptionBadge {
+  display: inline-flex;
+  align-items: center;
+  background-color: #0c1b4d;
+  color: #ffffff;
+  font-size: 0.76rem;
+  font-weight: 600;
+  padding: 0.35rem 0.85rem;
+  border-radius: 9999px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+.comparisonCaptionText {
+  font-size: 0.92rem;
+  color: #475569;
+  margin: 0;
+  flex: 1;
+  line-height: 1.5;
+}
+
 .materialsGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -345,35 +402,63 @@
   margin-bottom: 3.5rem;
 }
 
+.materialCardImgWrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 1.25rem;
+  background-color: #f8fafc;
+  border: 1px solid #f1f5f9;
+}
+
+.materialCardImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.35s ease;
+}
+
+.materialCard:hover .materialCardImg {
+  transform: scale(1.04);
+}
+
 .materialCard {
   background-color: #ffffff;
   border: 1px solid #e2e8f0;
   border-radius: 20px;
-  padding: 2.25rem 1.75rem;
+  padding: 2.25rem 1.75rem 2rem 1.75rem;
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
-  transition: transform 0.2s ease, border-color 0.2s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
 
 .materialCard:hover {
   transform: translateY(-4px);
   border-color: #cbd5e1;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
 }
 
 .materialCardGold {
   border: 2px solid #D58936;
-  background-color: #fdfbf7;
-  box-shadow: 0 10px 30px rgba(213, 137, 54, 0.12);
+  background-color: #fffdfa;
+  box-shadow: 0 10px 32px rgba(213, 137, 54, 0.12);
+}
+
+.materialCardGold:hover {
+  border-color: #b45309;
+  box-shadow: 0 16px 40px rgba(213, 137, 54, 0.18);
 }
 
 .materialStandardBadge {
   position: absolute;
   top: -13px;
   left: 20px;
-  background-color: #D58936;
+  background-color: #334155;
   color: #ffffff;
   font-size: 0.72rem;
   font-weight: 600;
@@ -381,89 +466,254 @@
   border-radius: 9999px;
   text-transform: uppercase;
   letter-spacing: 0.06em;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.materialGoldBadge {
+  position: absolute;
+  top: -13px;
+  left: 20px;
+  background: linear-gradient(135deg, #D58936 0%, #b45309 100%);
+  color: #ffffff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.25rem 0.95rem;
+  border-radius: 9999px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  box-shadow: 0 4px 12px rgba(213, 137, 54, 0.3);
+}
+
+.materialCardHeader {
+  margin-bottom: 1.15rem;
 }
 
 .materialCardTitle {
   font-size: 1.25rem;
-  font-weight: 600;
+  font-weight: 700;
   color: #0c1b4d;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.3rem;
+  line-height: 1.3;
 }
 
 .materialCardSub {
   font-size: 0.86rem;
   color: #64748b;
-  margin-bottom: 1.25rem;
   display: block;
+  line-height: 1.45;
 }
 
-.materialSpecsBox {
-  background-color: #ffffff;
+.strengthMeterBox {
+  background: #f8fafc;
   border: 1px solid #e2e8f0;
-  border-radius: 12px;
+  border-radius: 14px;
   padding: 0.85rem 1rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.35rem;
+  transition: all 0.2s ease;
+}
+
+.materialCardGold .strengthMeterBox {
+  background: linear-gradient(180deg, #fffdfa 0%, #fef3c7 100%);
+  border-color: #fde68a;
+}
+
+.strengthHeaderRow {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.45rem;
+}
+
+.strengthLabel {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.materialCardGold .strengthLabel {
+  color: #92400e;
+}
+
+.strengthVal {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: -0.02em;
+}
+
+.strengthValGold {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #b45309;
+  letter-spacing: -0.02em;
+}
+
+.strengthBarTrack {
+  width: 100%;
+  height: 7px;
+  background-color: #e2e8f0;
+  border-radius: 9999px;
+  overflow: hidden;
+  margin-bottom: 0.75rem;
+}
+
+.materialCardGold .strengthBarTrack {
+  background-color: #fde68a;
+}
+
+.strengthBarFillGold {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #d97706, #b45309);
+  border-radius: 9999px;
+}
+
+.strengthBarFillAcrylic {
+  width: 10%;
+  height: 100%;
+  background-color: #e11d48;
+  border-radius: 9999px;
+}
+
+.strengthBarFillPfm {
+  width: 32%;
+  height: 100%;
+  background-color: #64748b;
+  border-radius: 9999px;
+}
+
+.metricPillsRow {
+  display: flex;
+  flex-wrap: wrap;
   gap: 0.45rem;
 }
 
-.materialSpecRow {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.84rem;
-  color: #334155;
-}
-
-.materialSpecLabel {
-  color: #64748b;
-  font-weight: 500;
-}
-
-.materialSpecVal {
-  font-weight: 700;
-  color: #0c1b4d;
-}
-
-.materialSpecValGold {
-  color: #b45309;
+.metricPill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.76rem;
   font-weight: 600;
+  color: #475569;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  padding: 0.28rem 0.6rem;
+  border-radius: 8px;
+  line-height: 1.2;
+}
+
+.metricPillGold {
+  background-color: #ffffff;
+  border-color: #fcd34d;
+  color: #92400e;
+  font-weight: 700;
+}
+
+.metricPillDanger {
+  background-color: #fff1f2;
+  border-color: #fecdd3;
+  color: #be123c;
+}
+
+.metricPillWarn {
+  background-color: #fffbeb;
+  border-color: #fde68a;
+  color: #b45309;
+}
+
+.metricPillDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 9999px;
+  background-color: currentColor;
+}
+
+.metricPillIcon {
+  font-size: 0.8rem;
+  line-height: 1;
 }
 
 .materialList {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 0 1.5rem 0;
   display: flex;
   flex-direction: column;
-  gap: 0.65rem;
+  gap: 0.75rem;
+  flex: 1;
 }
 
 .materialListItem {
   font-size: 0.88rem;
-  color: #475569;
+  color: #334155;
   display: flex;
   align-items: flex-start;
-  gap: 0.5rem;
+  gap: 0.65rem;
   line-height: 1.5;
 }
 
-.matCheck {
-  color: #10b981;
-  font-weight: 600;
+.iconGood {
+  color: #059669;
   flex-shrink: 0;
+  margin-top: 0.12rem;
+  display: flex;
 }
 
-.matCross {
-  color: #ef4444;
-  font-weight: 600;
+.iconBad {
+  color: #e11d48;
   flex-shrink: 0;
+  margin-top: 0.12rem;
+  display: flex;
 }
 
-.matWarn {
-  color: #f59e0b;
-  font-weight: 600;
+.iconWarn {
+  color: #d97706;
   flex-shrink: 0;
+  margin-top: 0.12rem;
+  display: flex;
+}
+
+.featText {
+  flex: 1;
+}
+
+.verdictBox {
+  background-color: #f8fafc;
+  border-top: 1px solid #e2e8f0;
+  border-radius: 0 0 18px 18px;
+  padding: 0.95rem 1.15rem;
+  margin: auto -1.75rem -2rem -1.75rem;
+}
+
+.verdictBoxGold {
+  background-color: #fff7ed;
+  border-top: 1px solid #fed7aa;
+  border-radius: 0 0 18px 18px;
+  padding: 0.95rem 1.15rem;
+  margin: auto -1.75rem -2rem -1.75rem;
+}
+
+.verdictLabel {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #0c1b4d;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.verdictBoxGold .verdictLabel {
+  color: #c2410c;
+}
+
+.verdictText {
+  font-size: 0.82rem;
+  color: #475569;
+  line-height: 1.5;
+  margin: 0;
 }
 
 .materialsTableWrap {
@@ -1096,6 +1346,13 @@
   .costSubtitle {
     font-size: 0.9rem;
     line-height: 1.55;
+  }
+
+  .materialsComparisonCaption {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding: 1rem 1.25rem;
   }
 
   /* 3-Phase Process Cards: Horizontal Carousel with Peek Effect */

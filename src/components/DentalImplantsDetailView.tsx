@@ -32,6 +32,7 @@ interface DetailI18n {
   reason2Title: string;
   reason2P: string;
   viewAllPackagesBtn: string;
+  viewGalleryBtn: string;
   reason3Title: string;
   reason3P: string;
   reason4Title: string;
@@ -77,6 +78,7 @@ const DETAIL_I18N: Record<string, DetailI18n> = {
     reason2P:
       'Compared to many other countries, dental implant costs in Antalya are significantly lower, allowing you to receive high-end luxury care without breaking the bank.',
     viewAllPackagesBtn: 'View All Packages',
+    viewGalleryBtn: 'Explore Patient Transformations',
     reason3Title: 'Advanced Technology & 3D Digital Precision',
     reason3P:
       'We use the latest technology in implantology, ensuring faster healing times and more accurate results. Master Smile Studio in Antalya is equipped with state-of-the-art 3D CBCT imaging and intraoral scanners to make your treatment as comfortable and effective as possible.',
@@ -93,8 +95,8 @@ const DETAIL_I18N: Record<string, DetailI18n> = {
     singleTitle: 'Single Dental Implant in Antalya',
     singleP:
       'A single implant replaces one missing tooth. It includes one titanium screw, one abutment, and one crown. This option is ideal if you have a healthy jawbone and only one tooth gap.',
-    singleLinkLead: 'If you want to learn more about replacing a single missing tooth, you can read our ',
-    singleLinkText: 'full Single Dental Implant guide.',
+    singleLinkLead: 'If you need to replace a single missing tooth, you can request a ',
+    singleLinkText: 'free single implant consultation & quote.',
     multipleTitle: 'Multiple Dental Implants in Antalya',
     multipleP:
       'If you are missing several teeth in different areas, multiple implants can be placed. Each missing tooth can be replaced with an individual implant, or a bridge can be supported by two or more implants. This option provides strong chewing ability and a natural look.',
@@ -129,6 +131,7 @@ const DETAIL_I18N: Record<string, DetailI18n> = {
     reason2P:
       'Birçok ülkeyle karşılaştırıldığında, Antalya’da diş implantı maliyetleri önemli ölçüde daha düşüktür; bu da bütçenizi sarsmadan birinci sınıf lüks tedavi almanızı sağlar.',
     viewAllPackagesBtn: 'Tüm Paketleri İncele',
+    viewGalleryBtn: 'Gerçek Hasta Sonuçlarını İnceleyin',
     reason3Title: 'İleri Teknoloji ve Dijital Planlama',
     reason3P:
       'İmplantolojide en son dijital teknolojileri kullanarak daha hızlı iyileşme süreleri ve milimetrik hassasiyette sonuçlar elde ediyoruz. Master Smile Studio kliniğimiz, tedavinizi mümkün olduğunca konforlu ve etkili kılmak için son teknoloji 3D tomografi ve dijital tarayıcılarla donatılmıştır.',
@@ -145,8 +148,8 @@ const DETAIL_I18N: Record<string, DetailI18n> = {
     singleTitle: 'Antalya’da Tek Diş İmplantı',
     singleP:
       'Tek bir eksik dişin yerine uygulanır. Bir titanyum vida, bir abutment ve bir kron içerir. Sağlıklı bir çene kemiğine ve yalnızca bir diş boşluğuna sahipseniz bu seçenek idealdir.',
-    singleLinkLead: 'Tek bir eksik dişi yenilemek hakkında daha fazla bilgi edinmek için ',
-    singleLinkText: 'Tek Diş İmplant rehberimizi inceleyebilirsiniz.',
+    singleLinkLead: 'Tek diş eksikliği tedavisinde hekimlerimizden randevu almak için ',
+    singleLinkText: 'ücretsiz online danışmanlık talep edebilirsiniz.',
     multipleTitle: 'Antalya’da Çoklu Diş İmplantı',
     multipleP:
       'Farklı bölgelerde birden fazla dişiniz eksikse, çoklu implant uygulanabilir. Her eksik diş tek tek bir implantla değiştirilebilir veya iki ya da daha fazla implant tarafından desteklenen bir köprü yerleştirilebilir.',
@@ -180,6 +183,7 @@ const DETAIL_I18N: Record<string, DetailI18n> = {
     reason2P:
       'W porównaniu z wieloma innymi krajami, koszty implantów zębowych w Antalyi są znacznie niższe, co pozwala na otrzymanie opieki medycznej klasy premium bez nadwyrężania budżetu.',
     viewAllPackagesBtn: 'Zobacz wszystkie pakiety',
+    viewGalleryBtn: 'Zobacz metamorfozy pacjentów',
     reason3Title: 'Zaawansowana technologia i planowanie 3D',
     reason3P:
       'Stosujemy najnowocześniejszą technologię w implantologii, zapewniając szybszy czas gojenia i milimetrową precyzję. Klinika Master Smile Studio w Antalyi jest wyposażona w tomografię 3D CBCT i skanery cyfrowe.',
@@ -196,8 +200,8 @@ const DETAIL_I18N: Record<string, DetailI18n> = {
     singleTitle: 'Pojedynczy implant zębowy w Antalyi',
     singleP:
       'Zastępuje jeden brakujący ząb. Składa się ze śruby tytanowej, łącznika i korony. Idealny przy pojedynczej luce i zdrowej kości.',
-    singleLinkLead: 'Aby dowiedzieć się więcej o odbudowie pojedynczego zęba, przeczytaj ',
-    singleLinkText: 'nasz przewodnik po pojedynczych implantach.',
+    singleLinkLead: 'Aby skonsultować odbudowę pojedynczego zęba z chirurgiem, ',
+    singleLinkText: 'zamów bezpłatną konsultację i wycenę.',
     multipleTitle: 'Wielokrotne implanty zębowe w Antalyi',
     multipleP:
       'Przy brakach kilku zębów można wprowadzić pojedyncze implanty lub osadzić most na 2 lub więcej implantach, zapewniając pełną siłę żucia.',
@@ -231,6 +235,7 @@ const DETAIL_I18N: Record<string, DetailI18n> = {
     reason2P:
       'Im Vergleich zu Deutschland, Österreich und der Schweiz sind die Kosten für Zahnimplantate in Antalya deutlich günstiger bei identischer Premium-Qualität.',
     viewAllPackagesBtn: 'Alle Pakete ansehen',
+    viewGalleryBtn: 'Patientenergebnisse entdecken',
     reason3Title: 'Modernste Technologie & 3D-Präzision',
     reason3P:
       'Wir setzen modernste DVT-3D-Diagnostik und digitale Scanner ein, um Behandlungszeiten zu verkürzen und maximale Behandlungspräzision zu gewährleisten.',
@@ -247,8 +252,8 @@ const DETAIL_I18N: Record<string, DetailI18n> = {
     singleTitle: 'Einzelzahnimplantat in Antalya',
     singleP:
       'Ersetzt einen einzelnen fehlenden Zahn durch Titanschraube, Abutment und Zirkonkrone, ohne Nachbarzähne zu beschädigen.',
-    singleLinkLead: 'Weitere Details finden Sie in unserem ',
-    singleLinkText: 'Ratgeber für Einzelzahnimplantate.',
+    singleLinkLead: 'Für die Versorgung eines einzelnen fehlenden Zahns können Sie eine ',
+    singleLinkText: 'kostenlose Beratung & Kostenvoranschlag anfordern.',
     multipleTitle: 'Mehrere Zahnimplantate in Antalya',
     multipleP:
       'Bei mehreren Zahnlücken können einzelne Implantate oder implantatgetragene Brücken eingesetzt werden.',
@@ -282,6 +287,7 @@ const DETAIL_I18N: Record<string, DetailI18n> = {
     reason2P:
       'Os custos em Antalya são consideravelmente mais acessíveis, permitindo que você receba um tratamento de alto padrão com grande economia.',
     viewAllPackagesBtn: 'Ver Todos os Pacotes',
+    viewGalleryBtn: 'Ver Transformações Reais',
     reason3Title: 'Tecnologia Avançada e Precisão Digital 3D',
     reason3P:
       'Utilizamos tomografia 3D e scanners intraorais para planejamentos precisos e recuperações rápidas.',
@@ -298,8 +304,8 @@ const DETAIL_I18N: Record<string, DetailI18n> = {
     singleTitle: 'Implante Dentário Unitário em Antalya',
     singleP:
       'Substitui um único dente ausente com parafuso de titânio, pilar e coroa estética.',
-    singleLinkLead: 'Saiba mais no nosso ',
-    singleLinkText: 'guia de implante unitário.',
+    singleLinkLead: 'Para substituir um único dente ausente, você pode solicitar uma ',
+    singleLinkText: 'consulta gratuita e orçamento personalizado.',
     multipleTitle: 'Implantes Dentários Múltiplos em Antalya',
     multipleP:
       'Substituição de vários dentes por implantes individuais ou pontes fixas sobre implantes.',
@@ -333,6 +339,7 @@ const DETAIL_I18N: Record<string, DetailI18n> = {
     reason2P:
       'Los precios en Antalya son notablemente más económicos, ofreciéndole atención médica prémium a una fracción del costo internacional.',
     viewAllPackagesBtn: 'Ver Todos los Paquetes',
+    viewGalleryBtn: 'Ver Transformaciones Reales',
     reason3Title: 'Tecnología Avanzada y Planificación Digital 3D',
     reason3P:
       'Contamos con tomografía 3D CBCT y escáneres digitales para una colocación guiada y una rápida recuperación.',
@@ -349,8 +356,8 @@ const DETAIL_I18N: Record<string, DetailI18n> = {
     singleTitle: 'Implante Dental Unitario en Antalya',
     singleP:
       'Sustituye un solo diente mediante un tornillo de titanio, pilar y corona estética sin tallar piezas sanas.',
-    singleLinkLead: 'Consulte nuestra ',
-    singleLinkText: 'guía de implante dental unitario.',
+    singleLinkLead: 'Para rehabilitar una sola pieza dental, puede solicitar una ',
+    singleLinkText: 'consulta gratuita y presupuesto personalizado.',
     multipleTitle: 'Implantes Dentales Múltiples en Antalya',
     multipleP:
       'Rehabilitación de varios dientes contiguos o separados mediante implantes independientes o puentes fijos.',
@@ -384,6 +391,7 @@ const DETAIL_I18N: Record<string, DetailI18n> = {
     reason2P:
       'Цены на имплантацию в Анталье значительно выгоднее, что позволяет получить премиальное лечение с существенной экономией.',
     viewAllPackagesBtn: 'Посмотреть все пакеты',
+    viewGalleryBtn: 'Смотреть результаты пациентов',
     reason3Title: 'Передовые технологии и 3D-точность',
     reason3P:
       'Мы используем 3D-томографию CBCT и цифровые интраоральные сканеры для быстрого заживления и идеальной точности.',
@@ -400,8 +408,8 @@ const DETAIL_I18N: Record<string, DetailI18n> = {
     singleTitle: 'Одиночный зубной имплантат в Анталье',
     singleP:
       'Заменяет один отсутствующий зуб титановым винтом, абатментом и коронкой без обтачивания соседних зубов.',
-    singleLinkLead: 'Узнайте больше в нашем ',
-    singleLinkText: 'руководстве по одиночным имплантатам.',
+    singleLinkLead: 'Для восстановления одного отсутствующего зуба вы можете запросить ',
+    singleLinkText: 'бесплатную консультацию и персональный расчет.',
     multipleTitle: 'Множественные имплантаты в Анталье',
     multipleP:
       'Восстановление нескольких зубов отдельными имплантатами или мостовидным протезом на имплантатах.',
@@ -520,13 +528,8 @@ export default function DentalImplantsDetailView() {
           <p className={styles.textP}>{d.reason1P3}</p>
 
           {/* INSERT: OUR DENTISTS */}
-          <div className="my-8">
+          <div className={styles.sectionSpacing}>
             <TreatmentDoctorsSection />
-          </div>
-
-          {/* INSERT: PARALLAX BANNER */}
-          <div className="my-8">
-            <TreatmentParallaxBanner />
           </div>
 
           {/* 2. Dental Implant Cost in Antalya */}
@@ -535,15 +538,10 @@ export default function DentalImplantsDetailView() {
           </h3>
           <p className={styles.textP}>{d.reason2P}</p>
 
-          {/* INSERT: PACKAGES SLIDER */}
-          <div className="mt-8 mb-0">
-            <TreatmentPackagesSlider />
-          </div>
-
           <div className={styles.btnWrap}>
-            <Link href="/treatments" className={styles.btnPrimary}>
-              {d.viewAllPackagesBtn}
-            </Link>
+            <a href="#packages" className={styles.btnPrimary}>
+              {d.viewAllPackagesBtn} ↓
+            </a>
           </div>
 
           {/* 3. Advanced Technology */}
@@ -568,9 +566,10 @@ export default function DentalImplantsDetailView() {
           </h3>
           <p className={styles.textP}>{d.reason4P}</p>
 
-          {/* INSERT: BEFORE - AFTER SLIDER */}
-          <div className="my-8">
-            <TreatmentBeforeAfterSliderSection />
+          <div className={styles.btnWrap}>
+            <a href="#before-after" className={styles.btnPrimary}>
+              {d.viewGalleryBtn} ↓
+            </a>
           </div>
 
           {/* 5. Travel and Treatment in One */}
@@ -609,7 +608,7 @@ export default function DentalImplantsDetailView() {
           </p>
           <p className={styles.textItalic}>
             {d.singleLinkLead}
-            <Link href="/treatments/dental-implants" className={styles.linkGold}>
+            <Link href="/contact" className={styles.linkGold}>
               {d.singleLinkText}
             </Link>
           </p>
@@ -685,13 +684,17 @@ export default function DentalImplantsDetailView() {
       <TreatmentPatientReelsSection />
 
       {/* 8. FROM FIRST VISIT TO FINAL SMILE (Before - After Slider) */}
-      <TreatmentBeforeAfterSliderSection />
+      <div id="before-after">
+        <TreatmentBeforeAfterSliderSection />
+      </div>
 
       {/* 9. DENTAL IMPLANT COSTS IN ANTALYA & PACKAGE PROMO BANNER */}
       <TreatmentCostBreakdownAndPackageBannerSection />
 
       {/* 10. TREATMENT PACKAGES SLIDER */}
-      <TreatmentPackagesSlider />
+      <div id="packages">
+        <TreatmentPackagesSlider />
+      </div>
 
       {/* 11. REVIEWS SECTION (Google & Trustpilot Reviews) */}
       <TreatmentReviewsSection />

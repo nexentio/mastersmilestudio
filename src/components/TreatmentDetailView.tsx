@@ -558,9 +558,9 @@ export default function TreatmentDetailView() {
       {/* 1. INTRO EDITORIAL CLINICAL SECTION */}
       <section aria-labelledby="hub-intro-heading" className={styles.introSection}>
         <div className={styles.container}>
-          <h1 id="hub-intro-heading" className={styles.mainHeading}>
+          <h2 id="hub-intro-heading" className={styles.mainHeading}>
             {d.introHeading}
-          </h1>
+          </h2>
           <p className={styles.textP}>{d.introP1}</p>
 
           {/* 3-Part Breakdown */}

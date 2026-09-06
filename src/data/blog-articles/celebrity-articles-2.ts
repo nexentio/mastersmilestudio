@@ -65,32 +65,32 @@ export const CELEBRITY_ARTICLES_2: Record<string, BlogDetailArticle> = {
       en: [
         "Jürgen Klopp's charismatic personality and legendary high-energy touchline celebrations made him one of the most beloved football managers in the world. In late 2017, fans and commentators noticed an unmistakable transformation: Klopp appeared at a Premier League press conference with a dazzling, brilliant white Hollywood smile.",
         "Klopp candidly admitted that his smile makeover was inspired by his Brazilian forward Roberto Firmino, who had famously gotten ultra-white dental work. When asked by journalists, Klopp humorously explained: 'I liked Roberto Firmino's teeth, so I went to the same dentist and asked for the exact same thing!'",
-        "In this clinical report, the Master Smile Studio Medical Board examines the technical craftsmanship of Jürgen Klopp's smile makeover — exploring how heavy smokers and coffee drinkers can achieve permanent stain-free results through [Zirconium crowns](/treatments/zirconium-crowns) and [porcelain laminate veneers](/treatments/porcelain-laminate-veneers).",
+        "In this clinical report, the Master Smile Studio Medical Board examines the technical craftsmanship of Jürgen Klopp's smile makeover — exploring how heavy smokers and coffee drinkers can achieve permanent stain-free results through [Zirconium crowns](/treatments/dental-crowns/zirconium-crowns/) and [porcelain laminate veneers](/treatments/dental-veneers/porcelain-veneers/).",
       ],
       tr: [
         "Jürgen Klopp'un saha kenarındaki enerjik sevinçleri ve karizmatik liderliği onu futbol dünyasının en sevilen figürlerinden biri yaptı. 2017 yılının sonlarında futbolseverler Klopp'un basın toplantısında göz alıcı, bembeyaz ve kusursuz yeni bir gülüşle sahneye çıktığını fark etti.",
         "Klopp, bu değişimin arkasında Liverpool'lu Brezilyalı yıldız forveti Roberto Firmino'nun olduğunu samimiyetle itiraf etti: 'Bobby Firmino'nun dişlerini çok beğendim, aynı diş hekimine gidip bana da aynısından yapmasını istedim!'",
-        "Bu klinik analizde Master Smile Studio Hekim Kurulu; kahve ve tütün kullanımına bağlı kronik renklenmelerin [zirkonyum kaplamalar](/treatments/zirconium-crowns) ve [porselen lamine kaplamalar](/treatments/porcelain-laminate-veneers) ile nasıl ömür boyu leke tutmayan bir gülüşe dönüştürüldüğünü inceliyor.",
+        "Bu klinik analizde Master Smile Studio Hekim Kurulu; kahve ve tütün kullanımına bağlı kronik renklenmelerin [zirkonyum kaplamalar](/treatments/dental-crowns/zirconium-crowns/) ve [porselen lamine kaplamalar](/treatments/dental-veneers/porcelain-veneers/) ile nasıl ömür boyu leke tutmayan bir gülüşe dönüştürüldüğünü inceliyor.",
       ],
       de: [
         "Jürgen Klopps strahlend weißes Lächeln gehört zu den berühmtesten Verwandlungen im Weltfußball. Inspiriert von Roberto Firmino entschied er sich 2017 für ein umfassendes Lächeln-Makeover.",
-        "Erfahren Sie, wie hochwertige [Zirkonkronen](/treatments/zirconium-crowns) und Veneers dauerhaften Schutz vor Verfärbungen bieten.",
+        "Erfahren Sie, wie hochwertige [Zirkonkronen](/treatments/dental-crowns/zirconium-crowns/) und Veneers dauerhaften Schutz vor Verfärbungen bieten.",
       ],
       pl: [
         "Metamorfoza uśmiechu Jürgena Kloppa z 2017 roku zachwyciła kibiców na całym świecie. Zainspirowany zębami Roberto Firmino, trener postawił na hollywoodzką biel.",
-        "Sprawdź, jak nowoczesne [korony cyrkonowe](/treatments/zirconium-crowns) i licówki radzą sobie z przebarwieniami po kawie i tytoniu.",
+        "Sprawdź, jak nowoczesne [korony cyrkonowe](/treatments/dental-crowns/zirconium-crowns/) i licówki radzą sobie z przebarwieniami po kawie i tytoniu.",
       ],
       pt: [
         "A transformação do sorriso de Jürgen Klopp em 2017 tornou-se lendária no futebol europeu. Inspirado por Roberto Firmino, escolheu um branco radiante.",
-        "Descubra como as [coroas de zircónia](/treatments/zirconium-crowns) garantem dentes impecáveis e resistentes.",
+        "Descubra como as [coroas de zircónia](/treatments/dental-crowns/zirconium-crowns/) garantem dentes impecáveis e resistentes.",
       ],
       es: [
         "El cambio de sonrisa de Jürgen Klopp en 2017 causó sensación en la Premier League. Inspirado en Firmino, optó por un blanco radiante.",
-        "Analizamos cómo las [coronas de circonio](/treatments/zirconium-crowns) devuelven la luminosidad dental de por vida.",
+        "Analizamos cómo las [coronas de circonio](/treatments/dental-crowns/zirconium-crowns/) devuelven la luminosidad dental de por vida.",
       ],
       ru: [
         "Преображение улыбки Юргена Клоппа в 2017 году стало сенсацией в футбольном мире. Вдохновившись улыбкой Фирмино, тренер выбрал голливудский оттенок.",
-        "Врачи Master Smile Studio разбирают преимущества [циркониевых коронок](/treatments/zirconium-crowns) для защиты от потемнения эмали.",
+        "Врачи Master Smile Studio разбирают преимущества [циркониевых коронок](/treatments/dental-crowns/zirconium-crowns/) для защиты от потемнения эмали.",
       ],
     },
     keyTakeaway: {
@@ -117,11 +117,11 @@ export const CELEBRITY_ARTICLES_2: Record<string, BlogDetailArticle> = {
         paragraphs: {
           en: [
             "Before his dental makeover, Klopp had significant yellowish discoloration, tooth wear (attrition) from subconscious bruxism (clenching during intense matches), and an uneven smile arc. While teeth whitening can temporarily lighten enamel by 3-4 shades, it cannot repair physical enamel wear or permanently shield against espresso and smoking stains.",
-            "By choosing [high-strength German Zirconia and E-Max ceramics](/treatments/zirconium-crowns), Klopp obtained non-porous glass surfaces that are 100% impervious to discoloration. Even with daily coffee consumption, high-grade dental ceramics maintain their exact shine and shade for 15+ years.",
+            "By choosing [high-strength German Zirconia and E-Max ceramics](/treatments/dental-crowns/zirconium-crowns/), Klopp obtained non-porous glass surfaces that are 100% impervious to discoloration. Even with daily coffee consumption, high-grade dental ceramics maintain their exact shine and shade for 15+ years.",
           ],
           tr: [
             "Tedavi öncesinde Klopp'un dişlerinde sarı-kahverengi lekeler, maç esnasındaki yoğun strese bağlı diş sıkmadan (bruksizm) kaynaklanan aşınmalar ve düzensiz bir gülüş hattı vardı. Kimyasal diş beyazlatma yalnızca 3-4 ton açılma sağlarken, aşınan mineyi geri getiremez ve tütün lekelerine karşı kalıcı kalkan oluşturamaz.",
-            "Klopp, gözeneksiz pürüzsüz yüzeye sahip [Alman Zirkonyum ve E-Max porselen kaplamaları](/treatments/zirconium-crowns) tercih ederek lekelere karşı %100 dayanıklı bir yapı elde etti. Kaliteli seramikler günde kaç fincan kahve içilirse içilsin 15 yılı aşkın süre ilk günkü parlaklığını korur.",
+            "Klopp, gözeneksiz pürüzsüz yüzeye sahip [Alman Zirkonyum ve E-Max porselen kaplamaları](/treatments/dental-crowns/zirconium-crowns/) tercih ederek lekelere karşı %100 dayanıklı bir yapı elde etti. Kaliteli seramikler günde kaç fincan kahve içilirse içilsin 15 yılı aşkın süre ilk günkü parlaklığını korur.",
           ],
           de: [
             'Hochwertige Keramiken bieten eine porenfreie Glasur, die resistent gegen Nikotin- und Kaffeeablagerungen ist.',
@@ -220,27 +220,27 @@ export const CELEBRITY_ARTICLES_2: Record<string, BlogDetailArticle> = {
       tr: [
         "Cristiano Ronaldo yalnızca tüm zamanların en büyük futbolcularından biri olarak değil, aynı zamanda karizması ve kusursuz fiziksel formuyla küresel bir stil ikonu olarak tanınır. Ancak gülüşü her zaman bugünkü gibi kusursuz değildi.",
         "2003 yılında Sporting Lizbon'dan Manchester United'a transfer olan 18 yaşındaki Ronaldo'nun ilk fotoğraflarında; eksik bir üst yan kesici diş, belirgin çapraşıklıklar, sararmış diş minesi ve asimetrik bir 'gummy smile' (gülümsendiğinde diş etinin fazla görünmesi) dikkat çekiyordu.",
-        "Bu detaylı vaka analizinde Master Smile Studio Hekim Kurulu; Ronaldo'nun tel tedavisi, lazerle diş eti estetiği ve [porselen lamine kaplamalar](/treatments/porcelain-laminate-veneers) ile 3 aşamada nasıl kusursuzlaştırıldığını klinik detaylarıyla açıklıyor.",
+        "Bu detaylı vaka analizinde Master Smile Studio Hekim Kurulu; Ronaldo'nun tel tedavisi, lazerle diş eti estetiği ve [porselen lamine kaplamalar](/treatments/dental-veneers/porcelain-veneers/) ile 3 aşamada nasıl kusursuzlaştırıldığını klinik detaylarıyla açıklıyor.",
       ],
       de: [
         "Cristiano Ronaldos Verwandlung von einem Teenager mit schiefen Zähnen zur weltweiten Lächeln-Ikone ist das ultimative Beispiel für multidisziplinäre Zahnmedizin.",
-        "Erfahren Sie, wie Kieferorthopädie, Zahnfleischkorrektur und [Porzellan-Veneers](/treatments/porcelain-laminate-veneers) kombiniert wurden.",
+        "Erfahren Sie, wie Kieferorthopädie, Zahnfleischkorrektur und [Porzellan-Veneers](/treatments/dental-veneers/porcelain-veneers/) kombiniert wurden.",
       ],
       pl: [
         "Niewiarygodna przemiana uśmiechu Cristiano Ronaldo to dowód na potęgę nowoczesnej stomatologii estetycznej.",
-        "Analizujemy połączenie aparatu ortodontycznego, laserowej plastyki dziąseł i [licówek porcelanowych](/treatments/porcelain-laminate-veneers).",
+        "Analizujemy połączenie aparatu ortodontycznego, laserowej plastyki dziąseł i [licówek porcelanowych](/treatments/dental-veneers/porcelain-veneers/).",
       ],
       pt: [
         "A transformação do sorriso de Cristiano Ronaldo desde a sua chegada a Manchester em 2003 é um dos casos mais impressionantes do desporto.",
-        "Conheça as três fases do tratamento: ortodontia, gengivoplastia e [facetas de porcelana](/treatments/porcelain-laminate-veneers).",
+        "Conheça as três fases do tratamento: ortodontia, gengivoplastia e [facetas de porcelana](/treatments/dental-veneers/porcelain-veneers/).",
       ],
       es: [
         "La evolución dental de Cristiano Ronaldo desde 2003 es un ejemplo magistral de odontología estética multidisciplinar.",
-        "Descubra cómo combinó ortodoncia, recorte gingival con láser y [carillas de porcelana](/treatments/porcelain-laminate-veneers).",
+        "Descubra cómo combinó ortodoncia, recorte gingival con láser y [carillas de porcelana](/treatments/dental-veneers/porcelain-veneers/).",
       ],
       ru: [
         "Преображение улыбки Криштиану Роналду с 2003 года — один из самых впечатляющих примеров комплексной стоматологической реабилитации.",
-        "Разбираем три этапа: выравнивание зубов, пластику десны и установку [керамических виниров](/treatments/porcelain-laminate-veneers).",
+        "Разбираем три этапа: выравнивание зубов, пластику десны и установку [керамических виниров](/treatments/dental-veneers/porcelain-veneers/).",
       ],
     },
     keyTakeaway: {
@@ -268,12 +268,12 @@ export const CELEBRITY_ARTICLES_2: Record<string, BlogDetailArticle> = {
           en: [
             "Phase 1: Orthodontic Alignment. Ronaldo wore clear ceramic and lingual (behind-the-teeth) braces during his early Manchester United seasons to widen his dental arch, open space for his missing lateral incisor, and align the midline.",
             "Phase 2: Laser Gingival Contouring. To address his high 'gummy smile,' cosmetic surgeons used a dental diode laser to raise and sculpt the gingival zeniths, creating elongated, harmonious tooth proportions.",
-            "Phase 3: Custom Porcelain Laminate Veneers. Finally, bespoke [E-Max porcelain veneers](/treatments/porcelain-laminate-veneers) and a single titanium dental implant were placed to create a symmetrical, masculine Hollywood smile.",
+            "Phase 3: Custom Porcelain Laminate Veneers. Finally, bespoke [E-Max porcelain veneers](/treatments/dental-veneers/porcelain-veneers/) and a single titanium dental implant were placed to create a symmetrical, masculine Hollywood smile.",
           ],
           tr: [
             "Aşama 1: Ortodontik Tel Tedavisi. Ronaldo, Manchester United'daki ilk yıllarında görünmeyen şeffaf ve lingual (dişin arkasına takılan) teller kullanarak diş dizilimini genişletti ve eksik dişi için yer açtı.",
             "Aşama 2: Lazerle Diş Eti Şekillendirme (Gingivektomi). Gülümsediğinde aşırı görünen diş etlerini dengelemek için diyot lazerle diş eti seviyeleri milimetrik olarak yukarı taşındı ve diş boyları uzatıldı.",
-            "Aşama 3: Özel Porselen Lamine Kaplamalar. Son aşamada eksik diş [titanyum diş implantı](/treatments/dental-implants) ile tamamlandı ve ön bölgeye [Ivoclar E-Max porselen laminalar](/treatments/porcelain-laminate-veneers) yapıştırılarak efsanevi gülüş tamamlandı.",
+            "Aşama 3: Özel Porselen Lamine Kaplamalar. Son aşamada eksik diş [titanyum diş implantı](/treatments/dental-implants/) ile tamamlandı ve ön bölgeye [Ivoclar E-Max porselen laminalar](/treatments/dental-veneers/porcelain-veneers/) yapıştırılarak efsanevi gülüş tamamlandı.",
           ],
           de: [
             'Phase 1: Zahnspange zur Bogenerweiterung. Phase 2: Laser-Gingivektomie zur Zahnfleischsymmetrie. Phase 3: E-Max Veneers und Einzelzahnimplantat.',

@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 import { useLocale } from 'next-intl';
 import { Link } from '@/i18n/routing';
 import TreatmentServicesIncludedSection from '@/components/treatment-sections/TreatmentServicesIncludedSection';
@@ -34,10 +35,14 @@ interface MaterialCardItem {
   sub: string;
   badge?: string;
   isGold?: boolean;
+  image?: string;
+  imageAlt?: string;
   material: string;
   strength: string;
   chippingRisk: string;
   lifespan: string;
+  verdictLabel?: string;
+  verdictText?: string;
   features: { text: string; status: 'good' | 'bad' | 'warn' }[];
 }
 
@@ -106,6 +111,9 @@ interface DetailDictionary {
 
   materialsTitle: string;
   materialsSubtitle: string;
+  materialsComparisonBadge?: string;
+  materialsComparisonAlt?: string;
+  materialsComparisonText?: string;
   materialsSpecLabels: {
     material: string;
     strength: string;
@@ -148,22 +156,37 @@ interface DetailDictionary {
   faqsPart2: FaqItem[];
 }
 
+const MATERIAL_CARD_DEFAULT_IMAGES = [
+  {
+    src: '/treatments/materials/monolithic-multi-layer-zirconia-all-on-4-bridge.webp',
+  },
+  {
+    src: '/treatments/materials/hybrid-titanium-acrylic-pmma-all-on-4-denture-bridge.webp',
+  },
+  {
+    src: '/treatments/materials/porcelain-fused-to-metal-pfm-all-on-4-dental-bridge.webp',
+  },
+];
+
 const DICTIONARIES: Record<string, DetailDictionary> = {
   "en": {
-    "introBadge": "MAXIMUM OCCLUSAL STABILITY",
-    "introTitle": "All-on-6 Dental Implants in Antalya, Turkey",
-    "introLead": "Complete 14-tooth full-arch restoration anchored on 6 titanium implants — delivering the highest bite force and structural longevity.",
-    "introP1": "At Master Smile Studio, All-on-6 dental implants represent the pinnacle of fixed full-arch oral rehabilitation. By distributing chewing forces across six strategically positioned titanium fixtures rather than four, this procedure provides uncompromising mechanical stability for patients requiring a comprehensive 14-tooth dental arch. Every surgery is planned with 3D digital precision and performed directly by our senior oral surgeons and clinic founders.",
-    "introP2": "The All-on-6 protocol places two anterior upright implants and four posterior fixtures across the jawbone arch. This wider anchorage foundation spreads occlusal masticatory forces evenly across your natural bone architecture, virtually eliminating cantilever strain and enabling patients with heavy bite forces to chew without restriction.",
+    "introBadge": "FULL-ARCH IMMEDIATE FIXED TEETH",
+    "introTitle": "All-on-4 Dental Implants in Antalya, Turkey",
+    "introLead": "Permanent full-arch restoration anchored on 4 strategic implants — fixed teeth in 24 hours without bone grafting.",
+    "introP1": "At Master Smile Studio, All-on-4 dental implants represent a life-changing solution for patients facing severe bone loss or complete tooth loss. By angling the two posterior implants at up to 45 degrees and placing two upright fixtures in the anterior jaw, this breakthrough protocol bypasses the maxillary sinus and inferior alveolar nerve, eliminating the need for complex bone grafts while enabling immediate fixed provisional teeth.",
+    "introP2": "The All-on-4 concept maximizes existing natural bone density, delivering high primary stability (35–50 Ncm) and balanced masticatory distribution across your entire smile. You leave our clinic within 24 hours with firmly screwed, beautiful teeth — chewing comfortably and smiling with renewed confidence from day one.",
     "introP3Lead": "Depending on your individual bone volume or clinical goals, you can also explore our ",
-    "introP3LinkAll4": "All-on-4 Dental Implants",
+    "introP3LinkAll4": "All-on-6 Dental Implants",
     "introP3Mid": ", specialized ",
     "introP3LinkZygoma": "Zygomatic Implants for Severe Bone Loss",
     "introP3And": ", and ",
-    "introP3LinkSinus": "Sinus Lifting Procedures",
-    "introP3Tail": " — all available in our Antalya center.",
+    "introP3LinkSinus": "Sinus Lifting Surgery",
+    "introP3Tail": " options.",
     "materialsTitle": "All-on-4 Permanent Bridge Materials: Why We Use Monolithic Zirconia",
     "materialsSubtitle": "In All-on-4 restorations, 4 implants bear your entire jaw chewing load (200 to 600 Newtons). Discover why we exclusively engineer 100% Monolithic Multilayer Zirconia instead of cheaper acrylic or fragile porcelain.",
+    "materialsComparisonBadge": "Dental Lab Comparison",
+    "materialsComparisonAlt": "All-on-4 permanent dental implant bridge materials comparison: Monolithic Zirconia vs Hybrid Acrylic vs PFM",
+    "materialsComparisonText": "Direct side-by-side dental laboratory comparison of all 3 permanent All-on-4 bridge materials: PFM (Metal-Porcelain), Hybrid Acrylic (PMMA), and Monolithic Multilayer German Zirconia showing structural differences.",
     "materialsSpecLabels": {
       "material": "Material Type",
       "strength": "Flexural Strength",
@@ -171,86 +194,92 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       "lifespan": "Expected Lifespan"
     },
     "materialsCards": [
-      {
-        "title": "Monolithic Multilayer Zirconia",
-        "sub": "100% Solid German Zirconia + Milled Titanium Bar",
-        "badge": "MASTER SMILE GOLD STANDARD",
-        "isGold": true,
-        "material": "1200+ MPa CAD/CAM Zirconia",
-        "strength": "1200 – 1400 MPa (Ultra-High)",
-        "chippingRisk": "Near Zero (Monolithic Solid)",
-        "lifespan": "25+ Years / Lifetime",
-        "features": [
           {
-            "text": "Zero chipping or fractures under heavy chewing force",
-            "status": "good"
+                "title": "Monolithic Multilayer Zirconia",
+                "sub": "100% Solid German Zirconia + Milled Titanium Bar",
+                "badge": "MASTER SMILE GOLD STANDARD",
+                "isGold": true,
+                "material": "1400 MPa CAD/CAM Zirconia",
+                "strength": "1,400 MPa",
+                "chippingRisk": "Zero Chipping Risk",
+                "lifespan": "Lifetime (25+ Years)",
+                "verdictLabel": "CLINICAL VERDICT",
+                "verdictText": "Master Smile Studio's primary choice for 95%+ of full-arch cases. Highest biocompatibility, superior natural translucency, and lifetime fracture resistance under full chewing loads.",
+                "features": [
+                      {
+                            "text": "Zero chipping or fractures under heavy chewing force",
+                            "status": "good"
+                      },
+                      {
+                            "text": "Ultra-smooth surface prevents plaque & Peri-Implantitis",
+                            "status": "good"
+                      },
+                      {
+                            "text": "Non-porous: 100% stain-resistant & zero odor retention",
+                            "status": "good"
+                      },
+                      {
+                            "text": "Multilayer gradient creates natural tooth translucency",
+                            "status": "good"
+                      }
+                ]
           },
           {
-            "text": "Ultra-smooth surface prevents plaque & Peri-Implantitis",
-            "status": "good"
+                "title": "Hybrid Titanium-Acrylic Bridge",
+                "sub": "Cast Metal Frame + Denture Acrylic & Resin Teeth",
+                "material": "PMMA Acrylic + Metal Frame",
+                "strength": "100 MPa",
+                "chippingRisk": "High Wear & Detachment",
+                "lifespan": "3 – 5 Years (Temporary)",
+                "verdictLabel": "CLINICAL VERDICT",
+                "verdictText": "Acceptable only as a budget provisional or transitional bridge. Not recommended as a permanent 20+ year solution due to rapid resin wear, bacterial absorption, and risk of individual teeth detaching.",
+                "features": [
+                      {
+                            "text": "Abrasive wear flattens teeth, altering vertical bite",
+                            "status": "bad"
+                      },
+                      {
+                            "text": "Porous resin absorbs bacteria, food oils & causes odor",
+                            "status": "bad"
+                      },
+                      {
+                            "text": "Individual teeth can detach when biting hard foods",
+                            "status": "bad"
+                      },
+                      {
+                            "text": "Requires frequent maintenance and total replacement",
+                            "status": "warn"
+                      }
+                ]
           },
           {
-            "text": "Non-porous: 100% stain-resistant & zero odor retention",
-            "status": "good"
-          },
-          {
-            "text": "Multilayer gradient creates natural tooth translucency",
-            "status": "good"
+                "title": "Porcelain-Fused-to-Metal (PFM)",
+                "sub": "Cast Cobalt-Chromium Frame + Baked Ceramic",
+                "material": "Layered Feldspathic Porcelain",
+                "strength": "450 MPa",
+                "chippingRisk": "Porcelain Delamination",
+                "lifespan": "8 – 12 Years",
+                "verdictLabel": "CLINICAL VERDICT",
+                "verdictText": "Outdated technology for full arches. While the metal framework is robust, rigid occlusal loads on 4 implants frequently cause irreversible porcelain chipping, exposing gray metal.",
+                "features": [
+                      {
+                            "text": "Porcelain delaminates & chips under heavy All-on-4 chewing forces",
+                            "status": "bad"
+                      },
+                      {
+                            "text": "Dark metal margin becomes visible if gums recede",
+                            "status": "bad"
+                      },
+                      {
+                            "text": "Heavier weight creates a bulky oral sensation",
+                            "status": "warn"
+                      },
+                      {
+                            "text": "Intraoral repair of chipped porcelain is impossible",
+                            "status": "bad"
+                      }
+                ]
           }
-        ]
-      },
-      {
-        "title": "Hybrid Titanium-Acrylic Bridge",
-        "sub": "Cast Metal Frame + Denture Acrylic & Resin Teeth",
-        "material": "PMMA Acrylic + Metal Frame",
-        "strength": "80 – 120 MPa (Low)",
-        "chippingRisk": "High (Teeth can pop off)",
-        "lifespan": "3 – 7 Years",
-        "features": [
-          {
-            "text": "Abrasive wear flattens teeth, altering vertical bite",
-            "status": "bad"
-          },
-          {
-            "text": "Porous resin absorbs bacteria, food oils & causes odor",
-            "status": "bad"
-          },
-          {
-            "text": "Individual teeth can detach when biting hard foods",
-            "status": "bad"
-          },
-          {
-            "text": "Requires frequent maintenance and total replacement",
-            "status": "warn"
-          }
-        ]
-      },
-      {
-        "title": "Porcelain-Fused-to-Metal (PFM)",
-        "sub": "Cast Cobalt-Chromium Frame + Baked Ceramic",
-        "material": "Layered Feldspathic Porcelain",
-        "strength": "350 – 450 MPa (Medium)",
-        "chippingRisk": "Moderate to High (Chipping)",
-        "lifespan": "8 – 12 Years",
-        "features": [
-          {
-            "text": "Porcelain delaminates & chips under heavy 6-implant load",
-            "status": "bad"
-          },
-          {
-            "text": "Dark metal margin becomes visible if gums recede",
-            "status": "bad"
-          },
-          {
-            "text": "Heavier weight creates a bulky oral sensation",
-            "status": "warn"
-          },
-          {
-            "text": "Intraoral repair of chipped porcelain is impossible",
-            "status": "bad"
-          }
-        ]
-      }
     ],
     "materialsTableHeaders": {
       "criteria": "Comparison Criteria",
@@ -304,9 +333,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "getQuoteBtn": "Get Free Personalized Quote",
     "mostPopularBadge": "MOST POPULAR",
     "faqTitle": "Frequently Asked Questions About All-on-4 Dental Implants",
-    "faqSubtitle": "Clear, clinically validated answers to help you understand every surgical, biomechanical, and travel aspect of your All-on-4 transformation in Antalya.",
+    "faqSubtitle": "Clear, clinically validated answers to help you understand every surgical, biomechanical, and travel aspect of your All-on-4 journey in Antalya.",
     "faqGroup1Title": "Specialized All-on-4 Clinical & Biomechanical FAQs",
-    "faqGroup2Title": "Health Tourism, Inclusions & Lifetime Warranty FAQs",
+    "faqGroup2Title": "Health Tourism, Package Inclusions & Lifetime Warranty",
     "packages": [
       {
         "name": "ALL-ON-4 – NUCLEOSS",
@@ -360,76 +389,76 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       }
     ],
     "faqsPart1": [
-      {
-        "q": "What is the primary biomechanical difference between All-on-6 and All-on-4?",
-        "a": "All-on-6 utilizes six titanium fixtures per jaw rather than four. The additional two posterior implants provide wider surface contact and distribute heavy occlusal chewing forces more evenly, supporting a full 14-tooth dental arch with reduced stress on individual implants."
-      },
-      {
-        "q": "Who is the ideal candidate for All-on-6 dental implants?",
-        "a": "Patients with sufficient jawbone width and height in the posterior premolar/molar regions, younger patients with strong bite forces, or individuals seeking maximum chew strength and a complete 14-tooth dental arch without posterior cantilevers."
-      },
-      {
-        "q": "Does All-on-6 require bone grafting or sinus lifting?",
-        "a": "Because six upright or moderately angled implants require posterior bone anchorage, patients with severe bone atrophy in the upper jaw may require a minor sinus lifting or bone augmentation before or during implant placement."
-      },
-      {
-        "q": "How does the same-day fixed temporary bridge work for All-on-6?",
-        "a": "Within 24 hours of computer-guided surgery, a custom screw-retained temporary bridge is securely attached to your six implants. You never leave our Antalya clinic without fixed, functional, aesthetic teeth."
-      },
-      {
-        "q": "What should I eat during the 3-month osseointegration period?",
-        "a": "During the 3-month bone healing phase, we recommend a nutritious soft-chew diet (steamed fish, pasta, eggs, vegetables, tender chicken). Avoid biting directly into hard nuts or tough crusts until your permanent zirconia bridge is delivered."
-      },
-      {
-        "q": "What material is used for the permanent All-on-6 bridge?",
-        "a": "We exclusively mill custom 100% Monolithic Multilayer German Zirconia (1200+ MPa) reinforced with a precision CAD/CAM titanium substructure. We never use fragile plastic acrylics or breakable porcelain layers."
-      },
-      {
-        "q": "Is the All-on-6 restoration fixed or removable by the patient?",
-        "a": "The All-on-6 bridge is 100% fixed and non-removable. It is securely screwed into multi-unit abutments and can only be accessed by a dental professional during routine hygiene appointments."
-      },
-      {
-        "q": "Why is 3D digital computer-guided surgery vital for All-on-6?",
-        "a": "Placing six implants requires exact 3D positioning to ensure parallelism, optimal bone contact, and perfect screw access hole alignment for your permanent zirconia bridge with sub-millimeter precision."
-      },
-      {
-        "q": "Can failing teeth be extracted during the same All-on-6 surgery?",
-        "a": "Yes. Any remaining damaged, decayed, or mobile teeth are gently extracted in the same surgical session, immediately followed by the placement of the six implants and temporary bridge fitting."
-      },
-      {
-        "q": "What is the long-term clinical success rate of All-on-6 implants?",
-        "a": "Clinical research over 15+ years shows an All-on-6 success rate exceeding 98.5%. With proper oral hygiene and regular check-ups, premium Straumann and German DXL implants are engineered to last a lifetime."
-      }
+          {
+                "q": "How can only 4 implants support an entire full arch of teeth?",
+                "a": "The breakthrough engineering of All-on-4 relies on tilting the two posterior implants up to 45 degrees. This maximizes bone-to-implant contact in the dense anterior jawbone and creates a broad, rigid polygonal support base that easily distributes heavy chewing loads across 10 to 12 fixed teeth."
+          },
+          {
+                "q": "Who is the ideal candidate for All-on-4 dental implants?",
+                "a": "All-on-4 is the premier solution for patients with complete tooth loss, multiple failing or loose teeth, advanced gum disease, or severe bone loss in the back of the jaw where traditional straight implants cannot be placed without extensive bone grafting."
+          },
+          {
+                "q": "Does the All-on-4 procedure require bone grafting or sinus lifting?",
+                "a": "In more than 90% of cases, All-on-4 completely avoids bone grafting and sinus lifts. By angling the rear implants, our oral surgeons bypass the maxillary sinus cavity in the upper jaw and the mental nerve in the lower jaw, saving months of healing and thousands in surgical costs."
+          },
+          {
+                "q": "How does the same-day fixed temporary bridge work for All-on-4?",
+                "a": "When our oral surgeons achieve high primary insertion stability (35–50 Ncm), multi-unit abutments are attached directly to the 4 implants. Within 24 hours of surgery, a rigid screw-retained provisional bridge is installed, so you leave our clinic smiling and able to eat immediately."
+          },
+          {
+                "q": "What should I eat during the 3-month osseointegration period?",
+                "a": "While your implants permanently integrate with the jawbone over 3 months, you must adhere to a soft-food diet (fish, pasta, scrambled eggs, well-cooked vegetables, tender poultry). Avoid biting directly into hard crusts, nuts, or tough meats with your provisional teeth."
+          },
+          {
+                "q": "What material is used for the permanent All-on-4 bridge?",
+                "a": "At Master Smile Studio, our gold standard is 100% Monolithic Multilayer German Zirconia (1,400 MPa flexural strength) supported by a CAD/CAM milled titanium bar. Unlike budget acrylic dentures, it will never fracture, discolor, or absorb oral odors."
+          },
+          {
+                "q": "Is the All-on-4 bridge fixed or removable by the patient?",
+                "a": "The All-on-4 bridge is 100% permanently screw-retained. It cannot be removed by the patient. Only your dentist can unscrew it for professional routine check-ups. At home, you clean it just like natural teeth using a Waterpik and super-floss."
+          },
+          {
+                "q": "Why is 3D digital computer-guided surgery essential for All-on-4?",
+                "a": "Tilting posterior implants at exact 30-to-45-degree angles requires microscopic accuracy. Custom 3D surgical guides ensure sub-millimeter precision (<0.1 mm tolerance), guaranteeing optimal screw channel alignment and zero risk to adjacent nerves or sinuses."
+          },
+          {
+                "q": "Can failing teeth be extracted during the same All-on-4 surgery?",
+                "a": "Yes. Any remaining decayed, loose, or damaged teeth are gently extracted during the exact same surgical session. Implants are placed immediately into extraction sockets, followed by digital scans for your 24-hour fixed teeth."
+          },
+          {
+                "q": "What is the long-term clinical success rate of All-on-4 implants?",
+                "a": "Independent clinical studies spanning over 15 years report an All-on-4 success rate exceeding 98.2%. With proper daily hygiene and annual checks, premium Swiss Straumann and German implants provide a lifetime of functional stability."
+          }
     ],
     "faqsPart2": [
-      {
-        "q": "How many visits to Antalya are required for All-on-6 treatment?",
-        "a": "Exactly 2 visits are required. Visit 1 (3–5 days) covers 3D CBCT diagnostics, surgery, and immediate temporary teeth. Visit 2 (5–7 days, after 3 months) is for digital shade matching, precision try-ins, and final permanent Zirconia bridge delivery."
-      },
-      {
-        "q": "What is included in the Master Smile Studio All-on-6 package?",
-        "a": "Our all-inclusive packages include 6 premium titanium implants, 12-14 temporary teeth, 12-14 permanent monolithic Zirconia teeth, 3D CBCT planning, surgical medications, 4/5-star hotel accommodation with breakfast, and VIP Mercedes transfers."
-      },
-      {
-        "q": "Will my package price change once I arrive in Antalya?",
-        "a": "No. The personalized treatment plan and quote provided from your initial X-ray consultation is a fixed price guarantee with zero hidden medical, laboratory, or transfer fees."
-      },
-      {
-        "q": "Will I feel pain during the 6-implant surgery? Is sedation available?",
-        "a": "The entire procedure is painless under computerized local anesthesia. For anxious patients, we also offer certified IV conscious sedation to ensure total relaxation throughout the surgery."
-      },
-      {
-        "q": "Can patients with diabetes or smokers undergo All-on-6?",
-        "a": "Yes. Controlled diabetes is fully compatible with implant success. For smokers, reducing or pausing smoking during the initial 2-week post-op window ensures optimal soft-tissue healing and bone integration."
-      },
-      {
-        "q": "How does the international lifetime warranty passport work?",
-        "a": "You receive an official manufacturer implant passport containing the unique serial number and lot barcode for every fixture, providing authentic global lifetime warranty coverage."
-      },
-      {
-        "q": "How is post-operative follow-up managed in my home country?",
-        "a": "Our international patient coordination department provides 24/7 direct WhatsApp support, scheduled video check-ins with our chief surgeons, and ongoing clinical guidance throughout your healing phase."
-      }
+          {
+                "q": "How many visits to Antalya are required for All-on-4 treatment?",
+                "a": "Exactly 2 visits: Visit 1 (3–5 days) includes 3D CBCT planning, surgery, extractions, and placement of your screw-retained temporary teeth. Visit 2 (5–7 days, after 3 months) is for digital smile design, shade matching, and final delivery of your permanent 1,400 MPa monolithic zirconia bridge."
+          },
+          {
+                "q": "What is included in the Master Smile Studio All-on-4 package?",
+                "a": "Everything is covered under our transparent guarantee: 4 premium implants per arch, multi-unit abutments, 24-hour fixed temporary teeth, final monolithic zirconia bridge, 3D CBCT diagnostics, medications, 4/5-star hotel accommodation with breakfast, and private VIP chauffeur transfers."
+          },
+          {
+                "q": "Will my package price change once I arrive in Antalya?",
+                "a": "No. Following our virtual consultation and radiographic analysis, you receive an official, guaranteed written quote. We maintain a strict zero-hidden-fee policy."
+          },
+          {
+                "q": "Will I feel pain during the 4-implant surgery? Is sedation available?",
+                "a": "The procedure is completely painless under modern local anesthesia. For anxious patients, conscious IV sedation or twilight sleep is administered by our licensed in-house anesthesiologist, allowing you to relax comfortably throughout."
+          },
+          {
+                "q": "Can patients with diabetes or smokers undergo All-on-4?",
+                "a": "Yes. Patients with controlled diabetes (HbA1c < 7.5%) have success rates identical to non-diabetics. For smokers, we recommend pausing or reducing smoking 2 weeks before and after surgery to support optimal vascular healing."
+          },
+          {
+                "q": "How does the international lifetime warranty passport work?",
+                "a": "You receive an official manufacturer-certified warranty passport containing the unique serial numbers and lot tags of your Swiss/German implants. This provides global lifetime replacement coverage accepted by certified dental specialists worldwide."
+          },
+          {
+                "q": "How is post-operative follow-up managed in my home country?",
+                "a": "Our dedicated multilingual patient coordination team provides continuous post-op support via WhatsApp and video consultations. We supply full surgical discharge reports and high-resolution panoramic X-rays for your local dentist."
+          }
     ],
     "compareTitle": "Objective Full-Arch Comparison: All-on-4 vs. All-on-5 vs. All-on-6",
     "compareSubtitle": "Choosing between 4, 5, or 6 implants depends strictly on your posterior bone volume, occlusal masticatory force, and anatomical jaw width.",
@@ -490,7 +519,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       "whenAll6Text": "All-on-6 is recommended whenever posterior bone height (>10 mm) is preserved, in patients who clench or grind their teeth (bruxism), or in younger and active individuals desiring a full 14-tooth dental arch with unrestricted chewing power."
     },
     "processTitle": "3-Phase Precision Protocol: From 3D Digital Planning to Permanent Zirconia",
-    "processSubtitle": "Every All-on-6 transformation at Master Smile Studio follows a strict sub-millimeter computer-guided surgical and robotic milling protocol.",
+    "processSubtitle": "Every All-on-4 transformation at Master Smile Studio follows a strict sub-millimeter computer-guided surgical protocol and robotic CAD/CAM engineering.",
     "processCards": [
       {
         "step": "PHASE 01",
@@ -594,6 +623,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "introP3Tail": " seçeneklerini de değerlendirebilirsiniz.",
     "materialsTitle": "All-on-4 Kalıcı Köprü Malzemeleri: Neden Monolitik Zirkonyum?",
     "materialsSubtitle": "All-on-4 restorasyonlarında 4 implant tüm çenenin 200 ila 600 Newtonluk çiğneme yükünü taşır. Ucuz akrilik veya kırılgan porselen yerine neden %100 Monolitik Çok Katmanlı Zirkonyum ürettiğimizi keşfedin.",
+    "materialsComparisonBadge": "Laboratuvar Karşılaştırması",
+    "materialsComparisonAlt": "All-on-4 kalıcı köprü malzemeleri karşılaştırması: Zirkonyum, Hibrit Akrilik ve PFM köprüler Antalya",
+    "materialsComparisonText": "Master Smile Studio Dental Laboratuvarında 3 farklı All-on-4 kalıcı köprü materyalinin (PFM, Hibrit Akrilik ve Monolitik Zirkonyum) estetik, ışık geçirgenliği ve dayanım açısından fiziksel karşılaştırması.",
     "materialsSpecLabels": {
       "material": "Materyal Türü",
       "strength": "Kırılma Dayanımı",
@@ -601,86 +633,92 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       "lifespan": "Klinik Ömrü"
     },
     "materialsCards": [
-      {
-        "title": "Monolitik Çok Katmanlı Zirkonyum",
-        "sub": "100% Yekpare Alman Zirkonyumu + Frezelenmiş Titanyum Bar",
-        "badge": "MASTER SMILE ALTIN STANDARDI",
-        "isGold": true,
-        "material": "1200+ MPa CAD/CAM Zirkonyum",
-        "strength": "1200 – 1400 MPa (Ultra Yüksek)",
-        "chippingRisk": "Sıfıra Yakın (Yekpare Blok)",
-        "lifespan": "25+ Yıl / Ömür Boyu",
-        "features": [
           {
-            "text": "Yoğun çiğneme baskısında sıfır kırılma ve parça atma",
-            "status": "good"
+                "title": "Monolitik Çok Katmanlı Zirkonyum",
+                "sub": "100% Yekpare Alman Zirkonyumu + Frezelenmiş Titanyum Bar",
+                "badge": "MASTER SMILE ALTIN STANDARDI",
+                "isGold": true,
+                "material": "1400 MPa CAD/CAM Zirkonyum",
+                "strength": "1.400 MPa",
+                "chippingRisk": "Sıfır Kırılma Riski",
+                "lifespan": "Ömür Boyu (25+ Yıl)",
+                "verdictLabel": "KLİNİK KARAR",
+                "verdictText": "Master Smile Studio'da tam çene vakalarının %95'inden fazlasında ilk tercihimizdir. Üstün biyouyumluluk, doğal diş estetiği ve yüksek çiğneme kuvvetlerinde ömür boyu kırılmazlık sunar.",
+                "features": [
+                      {
+                            "text": "Yoğun çiğneme baskısında sıfır kırılma ve parça atma",
+                            "status": "good"
+                      },
+                      {
+                            "text": "Pürüzsüz yüzey bakteri tutmaz, Peri-implantitis riskini sıfırlar",
+                            "status": "good"
+                      },
+                      {
+                            "text": "Gözeneksiz yapı: Asla leke tutmaz, koku yapmaz",
+                            "status": "good"
+                      },
+                      {
+                            "text": "Çok katmanlı doğal ışık geçirgenliği ile canlı estetik",
+                            "status": "good"
+                      }
+                ]
           },
           {
-            "text": "Pürüzsüz yüzey bakteri tutmaz, Peri-implantitis riskini sıfırlar",
-            "status": "good"
+                "title": "Hibrit Titanyum-Akrilik Köprü",
+                "sub": "Metal İskelet + Protez Akriliği ve Plastik Dişler",
+                "material": "PMMA Akrilik + Metal İskelet",
+                "strength": "100 MPa",
+                "chippingRisk": "Yüksek Aşınma ve Kopma",
+                "lifespan": "3 – 5 Yıl (Geçici)",
+                "verdictLabel": "KLİNİK KARAR",
+                "verdictText": "Yalnızca bütçe odaklı veya geçici bir köprü olarak kabul edilebilir. Reçinenin aşınması, koku/bakteri tutması ve plastik dişlerin kopma riski nedeniyle 20+ yıllık kalıcı çözüm olarak önerilmez.",
+                "features": [
+                      {
+                            "text": "Çiğneme ile dişler aşınır, kapanış kısalır ve eklem ağrısı yapar",
+                            "status": "bad"
+                      },
+                      {
+                            "text": "Gözenekli yapı bakterileri çeker, sararır ve koku yapar",
+                            "status": "bad"
+                      },
+                      {
+                            "text": "Sert gıdalarda tek tek dişlerin kopma riski yüksektir",
+                            "status": "bad"
+                      },
+                      {
+                            "text": "Sık bakım ve birkaç yılda bir komple değişim gerektirir",
+                            "status": "warn"
+                      }
+                ]
           },
           {
-            "text": "Gözeneksiz yapı: Asla leke tutmaz, koku yapmaz",
-            "status": "good"
-          },
-          {
-            "text": "Çok katmanlı doğal ışık geçirgenliği ile canlı estetik",
-            "status": "good"
+                "title": "Metal Destekli Porselen (PFM)",
+                "sub": "Döküm Kobalt-Krom Altyapı + Fırınlanmış Porselen",
+                "material": "Katmanlı Feldspatik Porselen",
+                "strength": "450 MPa",
+                "chippingRisk": "Porselen Atma Riski",
+                "lifespan": "8 – 12 Yıl",
+                "verdictLabel": "KLİNİK KARAR",
+                "verdictText": "Tam çenede eskiyen bir teknoloji. Metal iskelet sağlam olsa da 4 implant üzerindeki çiğneme baskısı porselende geri dönüşü olmayan kırılmalara yol açar ve alttaki gri metal ortaya çıkar.",
+                "features": [
+                      {
+                            "text": "All-on-4 çiğneme yükünde porselen kırılması (chipping) sık görülür",
+                            "status": "bad"
+                      },
+                      {
+                            "text": "Diş eti çekilirse alttaki gri metal çizgi görünür",
+                            "status": "bad"
+                      },
+                      {
+                            "text": "Ağır yapısı ağızda kaba ve hantal bir his bırakır",
+                            "status": "warn"
+                      },
+                      {
+                            "text": "Ağız içinde kırılan porselenin tamiri mümkün değildir",
+                            "status": "bad"
+                      }
+                ]
           }
-        ]
-      },
-      {
-        "title": "Hibrit Titanyum-Akrilik Köprü",
-        "sub": "Metal İskelet + Protez Akriliği ve Plastik Dişler",
-        "material": "PMMA Akrilik + Metal İskelet",
-        "strength": "80 – 120 MPa (Düşük)",
-        "chippingRisk": "Yüksek (Dişler kopabilir)",
-        "lifespan": "3 – 7 Yıl",
-        "features": [
-          {
-            "text": "Çiğneme ile dişler aşınır, kapanış kısalır ve eklem ağrısı yapar",
-            "status": "bad"
-          },
-          {
-            "text": "Gözenekli yapı bakterileri çeker, sararır ve koku yapar",
-            "status": "bad"
-          },
-          {
-            "text": "Sert gıdalarda tek tek dişlerin kopma riski yüksektir",
-            "status": "bad"
-          },
-          {
-            "text": "Sık bakım ve birkaç yılda bir komple değişim gerektirir",
-            "status": "warn"
-          }
-        ]
-      },
-      {
-        "title": "Metal Destekli Porselen (PFM)",
-        "sub": "Döküm Kobalt-Krom Altyapı + Fırınlanmış Porselen",
-        "material": "Katmanlı Feldspatik Porselen",
-        "strength": "350 – 450 MPa (Orta)",
-        "chippingRisk": "Orta - Yüksek (Porselen Atması)",
-        "lifespan": "8 – 12 Yıl",
-        "features": [
-          {
-            "text": "6 implant yükünde porselen kırılması (chipping) sık görülür",
-            "status": "bad"
-          },
-          {
-            "text": "Diş eti çekilirse alttaki gri metal çizgi görünür",
-            "status": "bad"
-          },
-          {
-            "text": "Ağır yapısı ağızda kaba ve hantal bir his bırakır",
-            "status": "warn"
-          },
-          {
-            "text": "Ağız içinde kırılan porselenin tamiri mümkün değildir",
-            "status": "bad"
-          }
-        ]
-      }
     ],
     "materialsTableHeaders": {
       "criteria": "Karşılaştırma Kriteri",
@@ -733,9 +771,9 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "pricePerArchLabel": "Tek Çene Paket Fiyatı",
     "getQuoteBtn": "Ücretsiz Kişiselleştirilmiş Teklif Al",
     "mostPopularBadge": "EN ÇOK TERCİH EDİLEN",
-    "faqTitle": "All-on-6 İmplant Tedavisi Hakkında Sıkça Sorulan Sorular",
-    "faqSubtitle": "Antalya’daki All-on-6 tedaviniz hakkında tüm cerrahi, biyomekanik ve lojistik detayları aydınlatan hekim onaylı cevaplar.",
-    "faqGroup1Title": "All-on-6 Klinik & Cerrahi Sorular",
+    "faqTitle": "All-on-4 İmplant Tedavisi Hakkında Sıkça Sorulan Sorular",
+    "faqSubtitle": "Antalya’daki All-on-4 tedaviniz hakkında tüm cerrahi, biyomekanik ve lojistik detayları aydınlatan hekim onaylı cevaplar.",
+    "faqGroup1Title": "All-on-4 Klinik & Cerrahi Sorular",
     "faqGroup2Title": "Sağlık Turizmi, Paket Kapsamı ve Ömür Boyu Garanti",
     "packages": [
       {
@@ -790,76 +828,76 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       }
     ],
     "faqsPart1": [
-      {
-        "q": "All-on-6 ile All-on-4 arasındaki temel biyomekanik fark nedir?",
-        "a": "All-on-6 tekniğinde çene başına 4 yerine 6 adet titanyum implant yerleştirilir. Ekstra 2 implant, çiğneme kuvvetini çene kemiğine daha geniş bir alanda yayarak 14 dişe kadar uzanan tam çene köprülerde maksimum stabilite sağlar."
-      },
-      {
-        "q": "All-on-6 diş implantı için kimler ideal adaydır?",
-        "a": "Arka azı bölgelerinde yeterli kemik yüksekliği ve kalınlığı bulunan hastalar, güçlü çiğneme kuvvetine sahip genç ve aktif bireyler ile 14 dişlik eksiksiz bir ark isteyen hastalar için en ideal çözümdür."
-      },
-      {
-        "q": "All-on-6 tedavisinde kemik tozu veya sinüs lifting gerekir mi?",
-        "a": "6 implantın yerleşimi için arka bölgelerde kemik desteği şarttır. Üst çenede kemik erimesi olan vakalarda cerrahi öncesinde veya aynı seansta küçük bir sinüs lifting veya kemik grefti gerekebilir."
-      },
-      {
-        "q": "All-on-6 tedavisinde aynı gün geçici dişler nasıl takılır?",
-        "a": "Bilgisayarlı 3D cerrahi kılavuzla implantlar yerleştirildikten sonraki 24 saat içinde, 6 implant üzerine vidalanan sabit geçici köprünüz takılır. Kliniğimizden asla dişsiz ayrılmazsınız."
-      },
-      {
-        "q": "3 aylık iyileşme (kaynaşma) döneminde nasıl beslenmeliyim?",
-        "a": "3 aylık kemikleşme sürecinde implantları korumak adına yumuşak kıvamlı gıdalar (balık, makarna, haşlanmış sebze, yumurta, yumuşak tavuk) tüketilmelidir. Kalıcı zirkonyum takılana dek sert kabuklu kuruyemişlerden kaçınılmalıdır."
-      },
-      {
-        "q": "Kalıcı All-on-6 köprüsünde hangi malzeme kullanılır?",
-        "a": "Kliniğimizde standart olarak 1200+ MPa dayanımlı, CAD/CAM frezelenmiş %100 Monolitik Çok Katmanlı Alman Zirkonyumu ve titanyum altyapı barı kullanılır. Asla kırılgan akrilik veya zayıf porselen kullanılmaz."
-      },
-      {
-        "q": "All-on-6 protezi sabit midir, hasta tarafından çıkarılabilir mi?",
-        "a": "All-on-6 protezi %100 sabittir ve vidalıdır; hasta tarafından çıkarılamaz. Yalnızca hekim tarafından rutin kontrollerde sökülebilir. Temizliği ağız duşu (Waterpik) ile evde rahatça yapılır."
-      },
-      {
-        "q": "All-on-6 ameliyatında 3D cerrahi rehber neden hayati önem taşır?",
-        "a": "6 implantın birbirine mükemmel paralellikte ve milimetrenin onda biri hassasiyetle yerleştirilmesi, kalıcı zirkonyum köprünün vidalama yuvalarının kusursuz oturması için 3D cerrahi kılavuz şarttır."
-      },
-      {
-        "q": "Ağızdaki hasarlı dişler All-on-6 ameliyatında çekilebilir mi?",
-        "a": "Evet. Ağızda kalan çürük, sallanan veya hasarlı dişler aynı cerrahi seansta çekilir; hemen ardından 6 implant yerleştirilip geçici sabit dişler takılır."
-      },
-      {
-        "q": "All-on-6 implant tedavisinin uzun dönem başarı oranı nedir?",
-        "a": "15 yılı aşkın klinik çalışmalarda All-on-6 başarı oranı %98.5'in üzerindedir. Doğru ağız bakımı ile Straumann ve Alman DXL implantları ömür boyu hizmet vermek üzere üretilmiştir."
-      }
+          {
+                "q": "Sadece 4 implant tam bir çene dolusu dişi nasıl güvenle taşır?",
+                "a": "All-on-4 tekniğinin mühendislik sırrı, arka iki implantın 45 dereceye varan özel bir açıyla yerleştirilmesidir. Bu açılandırma, ön bölgedeki sert kemikten maksimum destek alarak 10-12 dişlik tam bir köprüyü taşıyabilecek rijit bir poligon temel oluşturur."
+          },
+          {
+                "q": "All-on-4 diş implantı için kimler ideal adaydır?",
+                "a": "Tam dişsizlik yaşayan, ağzındaki tüm dişleri sallanan/çürümüş olan, hareketli damak protezlerinden kurtulmak isteyen veya arka bölgelerinde ileri kemik erimesi olup kemik tozu ameliyatı yaptırmak istemeyen hastalar için idealdir."
+          },
+          {
+                "q": "All-on-4 tedavisinde kemik tozu veya sinüs lifting gerekir mi?",
+                "a": "Vakaların %90’ından fazlasında All-on-4 tedavisi kemik tozu ve sinüs lifting ihtiyacını tamamen ortadan kaldırır. Açılı yerleştirilen implantlar sinüs boşluklarını ve sinir kanalını güvenle teğet geçer."
+          },
+          {
+                "q": "All-on-4 tedavisinde aynı gün geçici dişler nasıl takılır?",
+                "a": "3D cerrahi kılavuzla implantlar kemiğe 35–50 Ncm primer torkla kilitlendiğinde multi-unit abutmentlar takılır. Ameliyattan sonraki ilk 24 saat içinde 4 implant üzerine vidalanan sabit geçici köprünüz takılır; kliniğimizden asla dişsiz ayrılmazsınız."
+          },
+          {
+                "q": "3 aylık iyileşme (kaynaşma) döneminde nasıl beslenmeliyim?",
+                "a": "İmplantların kemikle kaynaştığı ilk 3 ay boyunca yumuşak gıdalar (balık, makarna, haşlanmış sebze, yumurta, yumuşak tavuk) tüketilmelidir. Kalıcı zirkonyum takılana dek sert kabuklu kuruyemiş veya sert et ısırılmamalıdır."
+          },
+          {
+                "q": "Kalıcı All-on-4 köprüsünde hangi malzeme kullanılır?",
+                "a": "Kliniğimizde standart olarak 1.400 MPa dayanımlı, CAD/CAM frezelenmiş %100 Monolitik Çok Katmanlı Alman Zirkonyumu ve titanyum altyapı barı kullanılır. Asla kırılgan akrilik veya zayıf porselen kullanılmaz."
+          },
+          {
+                "q": "All-on-4 protezi sabit midir, hasta tarafından çıkarılabilir mi?",
+                "a": "All-on-4 protezi %100 sabittir ve vidalıdır; hasta tarafından kesinlikle çıkarılamaz. Yalnızca hekim tarafından rutin kontrollerde sökülebilir. Evde temizliği ağız duşu (Waterpik) ile çok pratiktir."
+          },
+          {
+                "q": "All-on-4 ameliyatında 3D cerrahi rehber neden hayati önem taşır?",
+                "a": "Arka implantların tam 30 ila 45 derecelik açıyla yerleştirilmesi mikron düzeyinde hassasiyet gerektirir. 3D cerrahi rehber, implantların milimetrenin onda biri hassasiyetle konumlanmasını ve sinirlerin %100 korunmasını sağlar."
+          },
+          {
+                "q": "Ağızdaki hasarlı dişler All-on-4 ameliyatında çekilebilir mi?",
+                "a": "Evet. Ağızda kalan çürük, sallanan veya hasarlı dişler aynı cerrahi seansta çekilir; hemen ardından 4 implant yerleştirilip 24 saatlik geçici diş ölçüleri alınır."
+          },
+          {
+                "q": "All-on-4 implant tedavisinin uzun dönem başarı oranı nedir?",
+                "a": "15 yılı aşkın bağımsız klinik çalışmalarda All-on-4 başarı oranı %98.2’nin üzerindedir. Doğru ağız bakımı ile İsviçre Straumann ve Alman implantlarımız ömür boyu hizmet verir."
+          }
     ],
     "faqsPart2": [
-      {
-        "q": "All-on-6 tedavisi için Antalya’ya kaç kez gelmem gerekir?",
-        "a": "Toplam 2 ziyaret gerekir: 1. Ziyaret (3–5 gün) 3D tomografi, cerrahi ve geçici sabit dişler; 2. Ziyaret (5–7 gün, 3 ay sonra) ise kalıcı monolitik zirkonyum köprünün provaları ve teslimatıdır."
-      },
-      {
-        "q": "Master Smile Studio All-on-6 paketine neler dahildir?",
-        "a": "6 adet titanyum implant, 12-14 geçici diş, 12-14 kalıcı monolitik zirkonyum diş, 3D tomografi, cerrahiler, ilaçlar, oda-kahvaltı dahil 4/5 yıldızlı otel ve VIP Mercedes transferler dahildir."
-      },
-      {
-        "q": "Antalya’ya geldiğimde paket fiyatı değişir mi?",
-        "a": "Hayır. Röntgen analiziniz sonrasında tarafınıza iletilen resmi tedavi planı ve teklif sabit fiyat garantilidir; hiçbir gizli ek masraf çıkarılmaz."
-      },
-      {
-        "q": "6 implant cerrahisi sırasında ağrı hisseder miyim? Sedasyon var mı?",
-        "a": "İşlem dijital lokal anestezi altında tamamen ağrısızdır. Cerrahi kaygısı olan hastalarımız için uzman anestezi hekimi eşliğinde bilinçli sedasyon seçeneği de sunulmaktadır."
-      },
-      {
-        "q": "Diyabet hastaları veya sigara içenler All-on-6 yaptırabilir mi?",
-        "a": "Evet. Kontrol altındaki diyabet hastalarında başarı oranı çok yüksektir. Sigara içen hastalarımızın ise ilk 2 haftalık iyileşme döneminde sigarayı azaltması kemikleşme için önerilir."
-      },
-      {
-        "q": "Uluslararası ömür boyu garanti pasaportu nasıl çalışır?",
-        "a": "Tedavi sonunda her implantın seri numarası ve orijinal barkodunu içeren resmi üretici garanti pasaportu hastaya teslim edilir."
-      },
-      {
-        "q": "Kendi ülkeme döndüğümde takip süreci nasıl yürütülür?",
-        "a": "Uluslararası hasta koordinasyon ekibimiz 7/24 WhatsApp üzerinden iletişimde kalır ve düzenli video görüşmelerle iyileşme sürecinizi takip eder."
-      }
+          {
+                "q": "All-on-4 tedavisi için Antalya’ya kaç kez gelmem gerekir?",
+                "a": "Toplam 2 ziyaret gerekir: 1. Ziyaret (3–5 gün) 3D tomografi, cerrahi ve geçici sabit dişler; 2. Ziyaret (5–7 gün, 3 ay sonra) ise kalıcı monolitik zirkonyum köprünün provaları ve teslimatıdır."
+          },
+          {
+                "q": "Master Smile Studio All-on-4 paketine neler dahildir?",
+                "a": "Çene başına 4 adet titanyum implant, 24 saatte takılan sabit geçici dişler, kalıcı monolitik zirkonyum köprü, 3D tomografi, ilaçlar, oda-kahvaltı dahil 4/5 yıldızlı otel ve VIP Mercedes transferler dahildir."
+          },
+          {
+                "q": "Antalya’ya geldiğimde paket fiyatı değişir mi?",
+                "a": "Hayır. Röntgen analiziniz sonrasında tarafınıza iletilen resmi tedavi planı ve teklif sabit fiyat garantilidir; hiçbir gizli ek masraf çıkarılmaz."
+          },
+          {
+                "q": "4 implant cerrahisi sırasında ağrı hisseder miyim? Sedasyon var mı?",
+                "a": "Gelişmiş lokal anestezi altında işlem tamamen ağrısızdır. Diş hekimi korkusu veya kaygısı olan hastalarımız için anestezi uzmanımız eşliğinde bilinçli sedasyon konforu sunulmaktadır."
+          },
+          {
+                "q": "Diyabet hastaları veya sigara içenler All-on-4 yaptırabilir mi?",
+                "a": "Evet. HbA1c değeri kontrol altında olan diyabet hastalarında implant başarısı sağlıklı bireylerle aynıdır. Sigara içenlerin cerrahi öncesi ve sonrası 2 hafta ara vermesi tavsiye edilir."
+          },
+          {
+                "q": "Uluslararası ömür boyu garanti pasaportu nasıl çalışır?",
+                "a": "Tedavi bitiminde implantlarınızın seri numaralarını ve orijinal orijin sertifikalarını içeren resmi implant pasaportu verilir. Bu pasaport tüm dünyada geçerlidir."
+          },
+          {
+                "q": "Kendi ülkeme döndüğümde takip süreci nasıl yürütülür?",
+                "a": "Uluslararası hasta koordinasyon ekibimiz WhatsApp ve görüntülü aramalar ile düzenli takibinizi yapar. Rutin kontrolleriniz için yerel hekiminize sunabileceğiniz tüm cerrahi raporlar teslim edilir."
+          }
     ],
     "compareTitle": "Objektif Tam Çene Karşılaştırması: All-on-4 vs. All-on-5 vs. All-on-6",
     "compareSubtitle": "4, 5 veya 6 implant arasındaki seçim; arka bölge kemik hacminize, çiğneme kuvvetinize ve çene genişliğinize bağlı olarak belirlenir.",
@@ -920,7 +958,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       "whenAll6Text": "All-on-6, arka azı kemik yüksekliği yeterli olan (>10 mm), gece diş sıkan (bruksizm), güçlü çiğneme kaslarına sahip veya arka azı dişlerini de içeren 14 dişlik eksiksiz bir ark talep eden hastalar için tavsiye edilir."
     },
     "processTitle": "3 Aşamalı Dijital Cerrahi ve CAD/CAM Mühendislik Süreci",
-    "processSubtitle": "Master Smile Studio’daki her All-on-6 tedavisi, milimetrik bilgisayarlı cerrahi rehber ve robotik frezeleme protokolüyle yürütülür.",
+    "processSubtitle": "Master Smile Studio’daki her All-on-4 tedavisi, milimetrik bilgisayarlı cerrahi rehber ve robotik frezeleme protokolüyle yürütülür.",
     "processCards": [
       {
         "step": "AŞAMA 01",
@@ -1010,20 +1048,23 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     ]
   },
   "de": {
-    "introBadge": "MAXIMALE KAU-STABILITÄT",
-    "introTitle": "All-on-6 Zahnimplantate in Antalya, Türkei",
-    "introLead": "Vollständige 14-Zahn-Restauration auf 6 Titanimplantaten — maximale Kaukraft und langfristige strukturelle Stabilität.",
-    "introP1": "Bei Master Smile Studio stellt das All-on-6 Verfahren die Königsklasse der festsitzenden Zahnrehabilitation dar. Durch die Verteilung der Kaukräfte auf sechs strategisch gesetzte Titanimplantate bietet dieses Verfahren eine kompromisslose Stabilität für Patienten, die einen vollständigen 14-Zähne-Bogen benötigen.",
-    "introP2": "Das All-on-6 Protokoll verankert zwei vordere und vier hintere Implantate im Kieferknochen. Diese breite Basis verteilt den Kaudruck gleichmäßig, minimiert Hebelkräfte und ermöglicht uneingeschränktes Kauen bei hoher Beißkraft.",
-    "introP3Lead": "Entdecken Sie bei Bedarf auch unsere ",
-    "introP3LinkAll4": "All-on-4 Zahnimplantate",
+    "introBadge": "FESTE ZÄHNE AN EINEM TAG",
+    "introTitle": "All-on-4 Zahnimplantate in Antalya, Türkei",
+    "introLead": "Feste Vollkiefer-Restauration auf 4 strategischen Titanimplantaten — sofortige feste Zähne innerhalb von 24 Stunden ohne Knochenaufbau.",
+    "introP1": "Bei Master Smile Studio ist das All-on-4 Verfahren eine lebensverändernde Lösung für Patienten mit erheblichem Knochenschwund oder vollständiger Zahnlosigkeit. Durch die gezielte 45-Grad-Abwinklung der beiden hinteren Implantate und zwei gerade gesetzte Implantate im vorderen Kieferbereich umgeht dieses Protokoll die Kieferhöhle und den Nervenkanal, sodass aufwendige Sinuslifts meist entfallen.",
+    "introP2": "Das All-on-4 Konzept nutzt die vorhandene Knochensubstanz optimal aus und bietet eine hervorragende Primärstabilität (35–50 Ncm) für die sofortige Belastung. Bereits innerhalb von 24 Stunden nach dem Eingriff erhalten Sie Ihre fest verschraubte provisorische Brücke — für ein sofortiges Lächeln und beschwerdefreies Kauen ab dem ersten Tag.",
+    "introP3Lead": "Je nach individuellem Knochenvolumen und Ihren Wünschen können Sie auch unsere ",
+    "introP3LinkAll4": "All-on-6 Zahnimplantate",
     "introP3Mid": ", spezialisierte ",
-    "introP3LinkZygoma": "Zygoma-Implantate bei Knochenschwund",
-    "introP3And": " sowie ",
-    "introP3LinkSinus": "Sinuslift-Behandlungen",
-    "introP3Tail": " in unserer Antalyaer Fachklinik.",
+    "introP3LinkZygoma": "Zygoma-Implantate bei starkem Knochenschwund",
+    "introP3And": " und ",
+    "introP3LinkSinus": "Sinuslift-Operationen",
+    "introP3Tail": " entdecken.",
     "materialsTitle": "All-on-4 Brückenmaterialien: Warum wir monolithisches Zirkon verwenden",
     "materialsSubtitle": "Bei All-on-4 tragen 4 Implantate die gesamte Kaukraft Ihres Kiefers (200 bis 600 Newton). Erfahren Sie, warum wir ausschließlich 100 % monolithisches Zirkon anstelle von billigem Acryl oder bruchanfälligem Porzellan verwenden.",
+    "materialsComparisonBadge": "Zahnlabor-Vergleich",
+    "materialsComparisonAlt": "All-on-4 Zahnimplantat Brückenmaterialien Vergleich: Monolithisches Zirkon vs. Hybrid-Acryl vs. NEM-Keramik",
+    "materialsComparisonText": "Direkter zahntechnischer Laborvergleich der 3 All-on-4 Brückenmaterialien (PFM, Hybrid-Acryl und monolithisches deutsches Zirkon) hinsichtlich Ästhetik, Lichtdurchlässigkeit und Stabilität.",
     "materialsSpecLabels": {
       "material": "Materialtyp",
       "strength": "Biegefestigkeit",
@@ -1031,86 +1072,92 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       "lifespan": "Lebensdauer"
     },
     "materialsCards": [
-      {
-        "title": "Monolithisches Mehrschicht-Zirkon",
-        "sub": "100% solides deutsches Zirkon + gefräster Titansteg",
-        "badge": "MASTER SMILE GOLDSTANDARD",
-        "isGold": true,
-        "material": "1200+ MPa CAD/CAM Zirkon",
-        "strength": "1200 – 1400 MPa (Extrem hoch)",
-        "chippingRisk": "Nahezu Null (Vollmonolithisch)",
-        "lifespan": "25+ Jahre / Lebenslang",
-        "features": [
           {
-            "text": "Kein Chipping oder Bruch bei starken Kaukräften",
-            "status": "good"
+                "title": "Monolithisches Mehrschicht-Zirkon",
+                "sub": "100% solides deutsches Zirkon + gefräster Titansteg",
+                "badge": "MASTER SMILE GOLDSTANDARD",
+                "isGold": true,
+                "material": "1400 MPa CAD/CAM Zirkon",
+                "strength": "1.400 MPa",
+                "chippingRisk": "Null Chipping-Risiko",
+                "lifespan": "Lebenslang (25+ Jahre)",
+                "verdictLabel": "KLINISCHES FAZIT",
+                "verdictText": "Die erste Wahl von Master Smile Studio für über 95% aller Vollkiefer-Versorgungen. Höchste Biokompatibilität, natürliche Ästhetik und lebenslange Bruchsicherheit unter Kaukräften.",
+                "features": [
+                      {
+                            "text": "Kein Chipping oder Bruch bei starken Kaukräften",
+                            "status": "good"
+                      },
+                      {
+                            "text": "Ultra-glatte Oberfläche verhindert Plaque & Periimplantitis",
+                            "status": "good"
+                      },
+                      {
+                            "text": "Porenfrei: 100% verfärbungsresistent & geruchsneutral",
+                            "status": "good"
+                      },
+                      {
+                            "text": "Mehrschichtiger Farbverlauf für natürliche Zahnästhetik",
+                            "status": "good"
+                      }
+                ]
           },
           {
-            "text": "Ultra-glatte Oberfläche verhindert Plaque & Periimplantitis",
-            "status": "good"
+                "title": "Hybrid-Titan-Acryl-Brücke",
+                "sub": "Metallgerüst + Prothesenkunststoff & Kunststoffzähne",
+                "material": "PMMA-Acryl + Metallgerüst",
+                "strength": "100 MPa",
+                "chippingRisk": "Hoher Abrieb & Zahnverlust",
+                "lifespan": "3 – 5 Jahre (Temporär)",
+                "verdictLabel": "KLINISCHES FAZIT",
+                "verdictText": "Nur als budgetorientierte Übergangsbrücke akzeptabel. Aufgrund von Harzabrieb, Bakterienanhaftung und Ausbruchsrisiko der Zähne nicht als 20+ Jahre Dauerlösung empfohlen.",
+                "features": [
+                      {
+                            "text": "Abrasiver Verschleiß flacht Zähne ab und verändert die Bisshöhe",
+                            "status": "bad"
+                      },
+                      {
+                            "text": "Poröser Kunststoff nimmt Bakterien und Fette auf, führt zu Geruch",
+                            "status": "bad"
+                      },
+                      {
+                            "text": "Einzelne Kunststoffzähne können beim Kauen abbrechen",
+                            "status": "bad"
+                      },
+                      {
+                            "text": "Häufige Wartung und kompletter Austausch nach wenigen Jahren",
+                            "status": "warn"
+                      }
+                ]
           },
           {
-            "text": "Porenfrei: 100% fleckenresistent & geruchsneutral",
-            "status": "good"
-          },
-          {
-            "text": "Mehrschicht-Farbverlauf für natürliche Zahnästhetik",
-            "status": "good"
+                "title": "Metallkeramik (PFM)",
+                "sub": "Gegossenes Kobalt-Chrom-Gerüst + gebrannte Keramik",
+                "material": "Geschichtete Feldspat-Keramik",
+                "strength": "450 MPa",
+                "chippingRisk": "Keramikabplatzung",
+                "lifespan": "8 – 12 Jahre",
+                "verdictLabel": "KLINISCHES FAZIT",
+                "verdictText": "Veraltete Technologie für Vollkiefer. Obwohl das Metallgerüst stabil ist, führen Biegekräfte auf 4 Implantaten häufig zu irreversiblen Porzellanabplatzungen mit sichtbarem Graurand.",
+                "features": [
+                      {
+                            "text": "Keramik splittert unter hoher All-on-4 Kaubelastung leicht ab",
+                            "status": "bad"
+                      },
+                      {
+                            "text": "Dunkler Metallrand wird bei Zahnfleischrückgang sichtbar",
+                            "status": "bad"
+                      },
+                      {
+                            "text": "Hohes Eigengewicht erzeugt ein Fremdkörpergefühl im Mund",
+                            "status": "warn"
+                      },
+                      {
+                            "text": "Intraorale Reparatur abgeplatzter Keramik ist unmöglich",
+                            "status": "bad"
+                      }
+                ]
           }
-        ]
-      },
-      {
-        "title": "Hybrid-Titan-Acryl-Brücke",
-        "sub": "Gussmetallrahmen + Prothesen-Acryl & Kunststoffzähne",
-        "material": "PMMA-Acryl + Metallgerüst",
-        "strength": "80 – 120 MPa (Gering)",
-        "chippingRisk": "Hoch (Zähne können abplatzen)",
-        "lifespan": "3 – 7 Jahre",
-        "features": [
-          {
-            "text": "Abrasiver Abrieb verkürzt Zähne & verursacht Kiefergelenkschmerzen",
-            "status": "bad"
-          },
-          {
-            "text": "Poröses Harz absorbiert Bakterien, Öle & Gerüche",
-            "status": "bad"
-          },
-          {
-            "text": "Einzelne Zähne können sich bei harter Kost lösen",
-            "status": "bad"
-          },
-          {
-            "text": "Erfordert häufige Wartung und Gesamterneuerung",
-            "status": "warn"
-          }
-        ]
-      },
-      {
-        "title": "Metallkeramik (PFM)",
-        "sub": "Guss-Kobalt-Chrom-Gerüst + gebrannte Keramik",
-        "material": "Geschichtete Feldspatkeramik",
-        "strength": "350 – 450 MPa (Mittel)",
-        "chippingRisk": "Mäßig bis hoch (Keramikabplatzungen)",
-        "lifespan": "8 – 12 Jahre",
-        "features": [
-          {
-            "text": "Keramik splittert unter hoher 6-Implantat-Last leicht ab",
-            "status": "bad"
-          },
-          {
-            "text": "Dunkler Metallrand wird sichtbar bei Zahnfleischrückgang",
-            "status": "bad"
-          },
-          {
-            "text": "Hohes Eigengewicht fühlt sich im Mund sperrig an",
-            "status": "warn"
-          },
-          {
-            "text": "Reparatur im Mund bei abgeplatzter Keramik unmöglich",
-            "status": "bad"
-          }
-        ]
-      }
     ],
     "materialsTableHeaders": {
       "criteria": "Vergleichskriterium",
@@ -1163,10 +1210,10 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "pricePerArchLabel": "Preis pro Kiefer",
     "getQuoteBtn": "Kostenloses Angebot anfordern",
     "mostPopularBadge": "BELIEBTESTES PAKET",
-    "faqTitle": "Häufig gestellte Fragen zu All-on-6 Implantaten",
-    "faqSubtitle": "Klinisch fundierte Antworten zu chirurgischem Ablauf, Kosten und Ihrer Behandlungsreise nach Antalya.",
-    "faqGroup1Title": "All-on-6 Klinische & Chirurgische Fragen",
-    "faqGroup2Title": "Medizintourismus, Paketleistungen & Garantie",
+    "faqTitle": "Häufig gestellte Fragen zu All-on-4 Implantaten",
+    "faqSubtitle": "Ärztlich validierte Antworten zu allen chirurgischen, biomechanischen und organisatorischen Fragen Ihrer All-on-4 Behandlung in Antalya.",
+    "faqGroup1Title": "All-on-4 Klinische & Chirurgische Fragen",
+    "faqGroup2Title": "Gesundheitstourismus, Paketleistungen & Lebenslange Garantie",
     "packages": [
       {
         "name": "ALL-ON-4 – NUCLEOSS",
@@ -1220,76 +1267,76 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       }
     ],
     "faqsPart1": [
-      {
-        "q": "Was ist der Hauptunterschied zwischen All-on-6 und All-on-4?",
-        "a": "All-on-6 verwendet sechs Titanimplantate pro Kiefer. Die zwei zusätzlichen Implantate verteilen den Kaudruck optimal auf den gesamten Kiefer und ermöglichen eine vollständige 14-Zahn-Zirkonbrücke mit höchster Stabilität."
-      },
-      {
-        "q": "Wer ist der ideale Kandidat für All-on-6 Zahnimplantate?",
-        "a": "Patienten mit ausreichendem Knochenangebot im Seitenzahnbereich, jüngere Patienten mit hoher Kaukraft oder Personen, die eine vollständige 14-Zähne-Restauration wünschen."
-      },
-      {
-        "q": "Erfordert All-on-6 einen Knochenaufbau oder Sinuslift?",
-        "a": "Da sechs Implantate eine ausreichende Knochenbasis erfordern, kann bei starkem Knochenschwund im Oberkiefer ein kleiner Sinuslift oder Knochenaufbau notwendig sein."
-      },
-      {
-        "q": "Wie funktioniert die festsitzende provisorische Brücke am selben Tag?",
-        "a": "Innerhalb von 24 Stunden nach dem computergestützten Eingriff wird eine verschraubte provisorische Brücke auf Ihren sechs Implantaten befestigt. Sie verlassen unsere Klinik nie ohne feste Zähne."
-      },
-      {
-        "q": "Was kann ich während der 3-monatigen Einheilphase essen?",
-        "a": "In den ersten 3 Monaten empfehlen wir weiche Nahrung (Fisch, Nudeln, Eier, Gemüse, zartes Geflügel), um die Osseointegration der Implantate nicht zu gefährden."
-      },
-      {
-        "q": "Welches Material wird für die permanente All-on-6 Brücke verwendet?",
-        "a": "Wir fertigen ausschließlich maßgeschneiderte 100% monolithische Mehrschicht-Zirkonbrücken (1200+ MPa) mit CAD/CAM-gefrästem Titansteg. Kein brüchiges Acryl oder anfällige Keramikschichten."
-      },
-      {
-        "q": "Ist die All-on-6 Brücke festsitzend oder herausnehmbar?",
-        "a": "Die All-on-6 Brücke ist zu 100% festsitzend und verschraubt. Sie kann nur vom Zahnarzt bei Kontrollterminen gelöst werden und wird zu Hause mit einer Munddusche gereinigt."
-      },
-      {
-        "q": "Warum ist 3D-navigierte Chirurgie bei All-on-6 unverzichtbar?",
-        "a": "Das Setzen von sechs Implantaten erfordert höchste Parallelität und Präzision, damit die Zirkonbrücke spannungsfrei und mikrometergenau verschraubt werden kann."
-      },
-      {
-        "q": "Können beschädigte Zähne in derselben Sitzung gezogen werden?",
-        "a": "Ja. Nicht erhaltungsfähige Zähne werden im selben Eingriff schonend extrahiert, gefolgt von der Implantation der 6 Pfeiler und der Anpassung der provisorischen Brücke."
-      },
-      {
-        "q": "Wie hoch ist die langfristige Erfolgsquote von All-on-6?",
-        "a": "Über 15 Jahre klinische Studien belegen eine Erfolgsquote von über 98,5%. Straumann- und deutsche DXL-Implantate sind für eine lebenslange Haltbarkeit konstruiert."
-      }
+          {
+                "q": "Wie können nur 4 Implantate einen gesamten Zahnkiefer tragen?",
+                "a": "Das biomechanische Prinzip von All-on-4 beruht auf der gezielten Abwinklung der beiden hinteren Implantate um bis zu 45 Grad. Dadurch wird das dichte Knochenvolumen im vorderen Kiefer optimal genutzt und ein breites, stabiles Fundament für 10 bis 12 feste Zähne geschaffen."
+          },
+          {
+                "q": "Wer ist der ideale Kandidat für All-on-4 Zahnimplantate?",
+                "a": "All-on-4 eignet sich ideal für zahnlose Patienten, Personen mit stark geschädigten Restzähnen oder fortgeschrittenem Knochenschwund im Seitenzahnbereich, die aufwendige Knochenaufbauten vermeiden möchten."
+          },
+          {
+                "q": "Erfordert All-on-4 einen Knochenaufbau oder Sinuslift?",
+                "a": "In über 90% der Fälle entfällt bei All-on-4 jeglicher Knochenaufbau oder Sinuslift. Durch die Schrägstellung der hinteren Implantate werden die Kieferhöhle und Nervenbahnen sicher umgangen."
+          },
+          {
+                "q": "Wie funktioniert die feste Sofortversorgung innerhalb von 24 Stunden?",
+                "a": "Erreichen die Implantate eine Primärstabilität von 35–50 Ncm, werden Multi-Unit-Abutments verschraubt. Innerhalb von 24 Stunden erhalten Sie Ihre festsitzende provisorische Brücke — Sie verlassen unsere Klinik nie ohne Zähne."
+          },
+          {
+                "q": "Wie ernähre ich mich während der 3-monatigen Einheilphase?",
+                "a": "Während die Implantate fest mit dem Kieferknochen verwachsen, empfiehlt sich weiche Kost (Fisch, Pasta, Eier, weiches Gemüse, zartes Hähnchen). Harte Nüsse oder zähe Krusten sollten bis zur endgültigen Zirkonbrücke vermieden werden."
+          },
+          {
+                "q": "Welches Material wird für die permanente All-on-4 Brücke verwendet?",
+                "a": "Bei Master Smile Studio verwenden wir standardmäßig 100% monolithisches Mehrschicht-Zirkon (1.400 MPa Biegefestigkeit) auf gefrästem Titansteg. Kein poröses Acryl oder bruchanfälliges Schichtporzellan."
+          },
+          {
+                "q": "Ist die All-on-4 Brücke fest oder herausnehmbar?",
+                "a": "Die All-on-4 Brücke ist zu 100% fest verschraubt und kann vom Patienten nicht selbst herausgenommen werden. Die Reinigung erfolgt bequem zu Hause mit Munddusche (Waterpik) und Super-Floss."
+          },
+          {
+                "q": "Warum ist die 3D-navigierte Chirurgie bei All-on-4 unverzichtbar?",
+                "a": "Die präzise Abwinklung der Implantate um 30 bis 45 Grad erfordert höchste Exaktheit. Individuelle 3D-Bohrschablonen sichern eine Platzierung im Submillimeterbereich (<0,1 mm) und schützen Nervenstränge."
+          },
+          {
+                "q": "Können beschädigte Zähne während der OP entfernt werden?",
+                "a": "Ja. Alle nicht erhaltungswürdigen Zähne werden in derselben OP-Sitzung schonend extrahiert, unmittelbar gefolgt von der Implantation und der Abformung für Ihre 24h-Sofortzähne."
+          },
+          {
+                "q": "Wie hoch ist die langfristige Erfolgsrate von All-on-4?",
+                "a": "Langzeitstudien über 15 Jahre belegen eine Erfolgsquote von über 98,2%. Bei guter Mundhygiene sind Schweizer Straumann- und deutsche Markenimplantate für eine lebenslange Haltbarkeit ausgelegt."
+          }
     ],
     "faqsPart2": [
-      {
-        "q": "Wie viele Reisen nach Antalya sind für All-on-6 erforderlich?",
-        "a": "Genau 2 Reisen: 1. Besuch (3–5 Tage) für Diagnostik, OP und provisorische Zähne; 2. Besuch (5–7 Tage, nach 3 Monaten) für die finale Zirkonbrücke."
-      },
-      {
-        "q": "Was ist im All-on-6 Paket von Master Smile Studio enthalten?",
-        "a": "6 Premium-Titanimplantate, 12-14 provisorische Zähne, 12-14 permanente Zirkonzähne, 3D-DVT, Medikamente, 4/5-Sterne-Hotel mit Frühstück und VIP-Transfers."
-      },
-      {
-        "q": "Ändert sich mein Paketpreis nach der Ankunft in Antalya?",
-        "a": "Nein. Der auf Basis Ihres Röntgenbilds erstellte Behandlungsplan ist ein garantierter Festpreis ohne versteckte Zusatzkosten."
-      },
-      {
-        "q": "Habe ich Schmerzen bei der OP? Gibt es eine Sedierung?",
-        "a": "Der Eingriff erfolgt schmerzfrei unter digitaler Lokalanästhesie. Für ängstliche Patienten bieten wir auch eine zertifizierte Dämmerschlafsedierung (IV-Sedierung) an."
-      },
-      {
-        "q": "Können Diabetiker oder Raucher All-on-6 erhalten?",
-        "a": "Ja. Bei gut eingestelltem Diabetes ist die Erfolgsrate exzellent. Rauchern wird empfohlen, den Konsum in den ersten 2 Wochen zu pausieren."
-      },
-      {
-        "q": "Wie funktioniert der internationale lebenslange Garantiepass?",
-        "a": "Sie erhalten einen offiziellen Implantatpass des Herstellers mit individuellen Seriennummern und lebenslanger weltweiter Garantie."
-      },
-      {
-        "q": "Wie erfolgt die Nachsorge in meinem Heimatland?",
-        "a": "Unser internationales Patiententeam steht Ihnen rund um die Uhr per WhatsApp und regelmäßigen Video-Sprechstunden zur Seite."
-      }
+          {
+                "q": "Wie viele Reisen nach Antalya sind für All-on-4 erforderlich?",
+                "a": "Genau 2 Besuche: 1. Besuch (3–5 Tage) für 3D-DVT, Implantation und feste provisorische Zähne; 2. Besuch (5–7 Tage, nach 3 Monaten) für digitale Einpassung und Fertigstellung Ihrer definitiven 1.400 MPa Zirkonbrücke."
+          },
+          {
+                "q": "Was ist im All-on-4 Paket von Master Smile Studio enthalten?",
+                "a": "Alles ist abgedeckt: 4 Premium-Implantate pro Kiefer, Multi-Unit-Abutments, feste Sofortzähne, finale Zirkonbrücke, 3D-DVT-Röntgen, Medikamente, 4/5-Sterne-Hotel mit Frühstück und privater VIP-Chauffeur-Transfer."
+          },
+          {
+                "q": "Ändert sich der Paketpreis nach meiner Ankunft in Antalya?",
+                "a": "Nein. Nach der digitalen Vorab-Diagnose erhalten Sie ein verbindliches, schriftliches Festpreisangebot ohne versteckte Zusatzkosten."
+          },
+          {
+                "q": "Habe ich Schmerzen während der 4-Implantat-OP? Gibt es Sedierung?",
+                "a": "Der Eingriff ist dank moderner Lokalanästhesie völlig schmerzfrei. Für Angstpatienten bieten wir eine Dämmerschlafsedierung (IV-Sedierung) durch unseren hauseigenen Anästhesisten an."
+          },
+          {
+                "q": "Können Diabetiker oder Raucher All-on-4 erhalten?",
+                "a": "Ja. Gut eingestellte Diabetiker (HbA1c < 7,5%) weisen vergleichbare Einheilungsraten auf. Raucher sollten den Konsum 2 Wochen vor und nach dem Eingriff reduzieren, um die Wundheilung zu fördern."
+          },
+          {
+                "q": "Wie funktioniert der internationale Garantie-Pass?",
+                "a": "Sie erhalten einen offiziellen Hersteller-Garantiepass mit den Seriennummern Ihrer Implantate. Dieser gewährt weltweiten lebenslangen Ersatzschutz bei zertifizierten Spezialisten."
+          },
+          {
+                "q": "Wie wird die Nachsorge in meinem Heimatland geregelt?",
+                "a": "Unser internationales Betreuungsteam begleitet Sie per WhatsApp und Video-Calls. Sie erhalten detaillierte Operationsberichte und Röntgenbilder für Ihren Zahnarzt zu Hause."
+          }
     ],
     "compareTitle": "Objektiver Vollbogen-Vergleich: All-on-4 vs. All-on-5 vs. All-on-6",
     "compareSubtitle": "Die Wahl zwischen 4, 5 oder 6 Implantaten richtet sich nach Knochenvolumen, Kaukraft und anatomischer Kieferbreite.",
@@ -1350,7 +1397,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       "whenAll6Text": "All-on-6 empfiehlt sich bei ausreichendem Knochen im Seitenzahnbereich (>10 mm), bei Zähneknirschen (Bruxismus) oder bei jüngeren, aktiven Patienten, die einen vollständigen 14-Zähne-Bogen wünschen."
     },
     "processTitle": "3-Phasen-Präzisionsprotokoll: Von der 3D-Planung bis zum Zirkon-Unikat",
-    "processSubtitle": "Jede All-on-6 Behandlung bei Master Smile Studio folgt einem strengen navigierten 3D-Chirurgie- und Roboter-Fräsprotokoll.",
+    "processSubtitle": "Jede All-on-4 Behandlung bei Master Smile Studio folgt einem strengen navigierten 3D-Chirurgie- und robotischen CAD/CAM-Protokoll.",
     "processCards": [
       {
         "step": "PHASE 01",
@@ -1440,20 +1487,23 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     ]
   },
   "pl": {
-    "introBadge": "MAKSYMALNA STABILNOŚĆ ZGRYZU",
-    "introTitle": "Implanty All-on-6 w Antalyi, Turcja",
-    "introLead": "Odbudowa pełnego łuku 14 zębów na 6 implantach tytanowych — najwyższa siła żucia i trwałość strukturalna.",
-    "introP1": "W Master Smile Studio metoda All-on-6 stanowi szczytowe osiągnięcie stałej rekonstrukcji bezzębia. Rozkładając siły żucia na sześć strategicznie rozmieszczonych implantów tytanowych, zabieg ten zapewnia bezkompromisową stabilność łuku 14 zębów. Każdy zabieg planowany jest cyfrowo w 3D i wykonywany bezpośrednio przez naszych głównych chirurgów.",
-    "introP2": "Protokół All-on-6 opiera się na dwóch implantach przednich oraz czterech bocznych. Taka szeroka podstawa równomiernie przenosi obciążenia na kość, eliminując naprężenia i umożliwiając pacjentom o silnym zgryzie swobodne spożywanie wszelkich pokarmów.",
-    "introP3Lead": "W zależności od warunków anatomicznych poznaj także nasze ",
-    "introP3LinkAll4": "Implanty All-on-4",
-    "introP3Mid": ", dedykowane ",
-    "introP3LinkZygoma": "Implanty Zygomatyczne",
+    "introBadge": "PEŁNY ŁUK – STAŁE ZĘBY W 24 GODZINY",
+    "introTitle": "Implanty All-on-4 w Antalyi, Turcja",
+    "introLead": "Stała odbudowa pełnego łuku zębowego na 4 strategicznych implantach — nowe zęby w 24 godziny bez konieczności przeszczepu kości.",
+    "introP1": "W Master Smile Studio metoda All-on-4 to przełomowe rozwiązanie dla pacjentów z bezzębiem lub znacznym zanikiem kości szczęki. Dzięki nachyleniu dwóch bocznych implantów pod kątem do 45 stopni oraz dwóm prostym implantom w przednim odcinku, protokół ten omija zatoki szczękowe i nerwy, eliminując potrzebę skomplikowanych przeszczepów kości.",
+    "introP2": "Koncepcja All-on-4 maksymalnie wykorzystuje naturalne podłoże kostne, zapewniając wysoką stabilizację pierwotną (35–50 Ncm) i równomierne przenoszenie sił żucia. Pacjenci opuszczają naszą klinikę w ciągu 24 godzin z przykręcanym, estetycznym mostem tymczasowym, ciesząc się pełną funkcją żucia i pięknym uśmiechem od pierwszego dnia.",
+    "introP3Lead": "W zależności od indywidualnego poziomu kości i celów klinicznych, możesz sprawdzić również ",
+    "introP3LinkAll4": "Implanty All-on-6",
+    "introP3Mid": ", specjalistyczne ",
+    "introP3LinkZygoma": "Implanty Zygomatyczne przy skrajnym zaniku kości",
     "introP3And": " oraz ",
-    "introP3LinkSinus": "Zabieg Podniesienia Dna Zatoki",
-    "introP3Tail": " w naszej klinice w Antalyi.",
+    "introP3LinkSinus": "Zabieg Podniesienia Dna Zatoki (Sinus Lift)",
+    "introP3Tail": ".",
     "materialsTitle": "Materiały Mostów All-on-4: Dlaczego Stosujemy Monolityczny Cyrkon",
     "materialsSubtitle": "W All-on-4 tylko 4 implanty przenoszą całą siłę żucia szczęki (od 200 do 600 N). Zobacz, dlaczego wykonujemy wyłącznie lity cyrkon wielowarstwowy zamiast taniego akrylu czy kruchej porcelany.",
+    "materialsComparisonBadge": "Porównanie Laboratoryjne",
+    "materialsComparisonAlt": "Porównanie materiałów mostów All-on-4 na implantach: Cyrkon monolityczny vs Most hybrydowy vs PFM",
+    "materialsComparisonText": "Bezpośrednie porównanie w laboratorium protetycznym 3 materiałów mostów All-on-4 (PFM, most hybrydowy akrylowy oraz monolityczny cyrkon niemiecki) pod kątem estetyki, przezierności i wytrzymałości.",
     "materialsSpecLabels": {
       "material": "Typ Materiału",
       "strength": "Wytrzymałość na Zginanie",
@@ -1461,86 +1511,92 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       "lifespan": "Żywotność"
     },
     "materialsCards": [
-      {
-        "title": "Monolityczny Wielowarstwowy Cyrkon",
-        "sub": "100% lity niemiecki cyrkon + frezowana belka tytanowa",
-        "badge": "ZŁOTY STANDARD MASTER SMILE",
-        "isGold": true,
-        "material": "1200+ MPa CAD/CAM Cyrkon",
-        "strength": "1200 – 1400 MPa (Ultra Wysoka)",
-        "chippingRisk": "Prawie Zero (Monolit)",
-        "lifespan": "25+ Lat / Dożywotnio",
-        "features": [
           {
-            "text": "Zero ukruszeń i pęknięć przy dużym nacisku żucia",
-            "status": "good"
+                "title": "Monolityczny Wielowarstwowy Cyrkon",
+                "sub": "100% lity niemiecki cyrkon + frezowana belka tytanowa",
+                "badge": "ZŁOTY STANDARD MASTER SMILE",
+                "isGold": true,
+                "material": "1400 MPa CAD/CAM Cyrkon",
+                "strength": "1400 MPa",
+                "chippingRisk": "Zero Odprysków",
+                "lifespan": "Dożywotnio (25+ Lat)",
+                "verdictLabel": "WERDYKT KLINICZNY",
+                "verdictText": "Podstawowy wybór Master Smile Studio w ponad 95% przypadków pełnego łuku. Najwyższa biokompatybilność, doskonała estetyka i dożywotnia odporność na złamania.",
+                "features": [
+                      {
+                            "text": "Zero ukruszeń i pęknięć przy dużym nacisku żucia",
+                            "status": "good"
+                      },
+                      {
+                            "text": "Ultra-gładka powierzchnia zapobiega peri-implantitis",
+                            "status": "good"
+                      },
+                      {
+                            "text": "Nieporowata struktura: zero przebarwień i zapachów",
+                            "status": "good"
+                      },
+                      {
+                            "text": "Wielowarstwowy gradient zapewnia naturalną przezierność",
+                            "status": "good"
+                      }
+                ]
           },
           {
-            "text": "Idealnie gładka powierzchnia zapobiega periimplantitis",
-            "status": "good"
+                "title": "Most Hybrydowy Tytanowo-Akrylowy",
+                "sub": "Metalowa podbudowa + akryl i zęby kompozytowe",
+                "material": "Akryl PMMA + Metalowa Belka",
+                "strength": "100 MPa",
+                "chippingRisk": "Wysokie Ścieranie i Odpadanie",
+                "lifespan": "3 – 5 Lat (Tymczasowy)",
+                "verdictLabel": "WERDYKT KLINICZNY",
+                "verdictText": "Akceptowalny jedynie jako budżetowy most tymczasowy. Nie zalecany jako rozwiązanie na ponad 20 lat z powodu ścierania żywicy, chłonności bakterii i ryzyka wyłamywania zębów.",
+                "features": [
+                      {
+                            "text": "Ścieranie zębów obniża wysokość zwarcia i obciąża stawy skroniowe",
+                            "status": "bad"
+                      },
+                      {
+                            "text": "Porowata żywica chłonie bakterie, tłuszcze i powoduje nieprzyjemny zapach",
+                            "status": "bad"
+                      },
+                      {
+                            "text": "Pojedyncze zęby mogą odłamywać się przy twardszych pokarmach",
+                            "status": "bad"
+                      },
+                      {
+                            "text": "Wymaga częstych napraw i wymiany po kilku latach",
+                            "status": "warn"
+                      }
+                ]
           },
           {
-            "text": "Brak porowatości: odporny na plamy i zapachy",
-            "status": "good"
-          },
-          {
-            "text": "Wielowarstwowa przezierność daje w pełni naturalny uśmiech",
-            "status": "good"
+                "title": "Most Metalowo-Ceramiczny (PFM)",
+                "sub": "Odlewany szkielet Co-Cr + napalana porcelana",
+                "material": "Warstwowa Porcelana Skaleniowa",
+                "strength": "450 MPa",
+                "chippingRisk": "Odpryski Porcelany",
+                "lifespan": "8 – 12 Lat",
+                "verdictLabel": "WERDYKT KLINICZNY",
+                "verdictText": "Przestarzała technologia w pełnych łukach. Choć metalowa podbudowa jest wytrzymała, siły żucia na 4 implantach często prowadzą do odprysków porcelany i odsłonięcia szarego metalu.",
+                "features": [
+                      {
+                            "text": "Porcelana odpryskuje pod dużym obciążeniem żucia All-on-4",
+                            "status": "bad"
+                      },
+                      {
+                            "text": "Ciemny brzeg metalowy staje się widoczny przy recesji dziąseł",
+                            "status": "bad"
+                      },
+                      {
+                            "text": "Duża waga daje uczucie ciężkości w jamie ustnej",
+                            "status": "warn"
+                      },
+                      {
+                            "text": "Naprawa odpryśniętej porcelany w ustach jest niemożliwa",
+                            "status": "bad"
+                      }
+                ]
           }
-        ]
-      },
-      {
-        "title": "Most Hybrydowy Tytanowo-Akrylowy",
-        "sub": "Odlewany szkielet metalowy + akryl i zęby kompozytowe",
-        "material": "Akryl PMMA + Metal",
-        "strength": "80 – 120 MPa (Niska)",
-        "chippingRisk": "Wysokie (Zęby mogą odpadać)",
-        "lifespan": "3 – 7 Lat",
-        "features": [
-          {
-            "text": "Ścieranie zębów obniża zgryz i powoduje ból stawu skroniowego",
-            "status": "bad"
-          },
-          {
-            "text": "Porowaty akryl chłonie bakterie, kawę i powoduje nieświeży oddech",
-            "status": "bad"
-          },
-          {
-            "text": "Pojedyncze zęby mogą odpaść przy twardym jedzeniu",
-            "status": "bad"
-          },
-          {
-            "text": "Wymaga częstego serwisu i całkowitej wymiany po paru latach",
-            "status": "warn"
-          }
-        ]
-      },
-      {
-        "title": "Most Metalowo-Ceramiczny (PFM)",
-        "sub": "Szkielet Co-Cr + napalana porcelana",
-        "material": "Warstwowa Porcelana Skaleniowa",
-        "strength": "350 – 450 MPa (Średnia)",
-        "chippingRisk": "Umiarkowane do Wysokiego (Odpryski)",
-        "lifespan": "8 – 12 Lat",
-        "features": [
-          {
-            "text": "Porcelana odpryskuje pod wpływem sił na 6 implantach",
-            "status": "bad"
-          },
-          {
-            "text": "Ciemna linia metalu widoczna przy cofnięciu dziąseł",
-            "status": "bad"
-          },
-          {
-            "text": "Duża waga daje uczucie ciężkości w jamie ustnej",
-            "status": "warn"
-          },
-          {
-            "text": "Naprawa odprysku w ustach jest technicznie niemożliwa",
-            "status": "bad"
-          }
-        ]
-      }
     ],
     "materialsTableHeaders": {
       "criteria": "Kryterium Porównania",
@@ -1593,10 +1649,10 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "pricePerArchLabel": "Cena za 1 łuk zębowy",
     "getQuoteBtn": "Otrzymaj Bezpłatną Wycenę",
     "mostPopularBadge": "NAJCZĘŚCIEJ WYBIERANY",
-    "faqTitle": "Często Zadawane Pytania o Implanty All-on-6",
-    "faqSubtitle": "Szczegółowe odpowiedzi kliniczne na temat zabiegu, kosztów i Twojego pobytu w Antalyi.",
-    "faqGroup1Title": "Pytania Kliniczne i Chirurgiczne All-on-6",
-    "faqGroup2Title": "Turystyka Medyczna, Pakiet i Gwarancja",
+    "faqTitle": "Często Zadawane Pytania o Implanty All-on-4",
+    "faqSubtitle": "Potwierdzone klinicznie odpowiedzi na wszystkie pytania chirurgiczne, biomechaniczne i organizacyjne dotyczące leczenia All-on-4 w Antalyi.",
+    "faqGroup1Title": "Pytania Kliniczne i Chirurgiczne All-on-4",
+    "faqGroup2Title": "Turystyka Medyczna, Pakiety i Dożywotnia Gwarancja",
     "packages": [
       {
         "name": "ALL-ON-4 – NUCLEOSS",
@@ -1650,76 +1706,76 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       }
     ],
     "faqsPart1": [
-      {
-        "q": "Jaka jest główna różnica biomechaniczna między All-on-6 a All-on-4?",
-        "a": "All-on-6 wykorzystuje 6 implantów tytanowych na łuk. Dodatkowe 2 implanty zapewniają lepszy rozkład sił żucia na kość i umożliwiają pełną odbudowę 14 zębów o maksymalnej stabilności."
-      },
-      {
-        "q": "Kto jest idealnym kandydatem do zabiegu All-on-6?",
-        "a": "Pacjenci z odpowiednią ilością kości w odcinkach bocznych, osoby młodsze o dużej sile zgryzu oraz pacjenci pragnący pełnego łuku 14 zębów."
-      },
-      {
-        "q": "Czy All-on-6 wymaga podniesienia dna zatoki lub odbudowy kości?",
-        "a": "Ponieważ 6 implantów wymaga podparcia w odcinkach bocznych, w przypadku znacznego zaniku kości w szczęce może być wymagany sinus lift lub sterowana regeneracja kości."
-      },
-      {
-        "q": "Jak działa natychmiastowy stały most tymczasowy w All-on-6?",
-        "a": "W ciągu 24 godzin od zabiegu most tymczasowy jest przykręcany do 6 implantów. Pacjent nigdy nie opuszcza kliniki bez zębów."
-      },
-      {
-        "q": "Co mogę jeść w trakcie 3-miesięcznego okresu gojenia?",
-        "a": "Zalecamy dietę miękką (ryby, makarony, jajka, warzywa, gotowany drób). Należy unikać twardych orzechów do momentu założenia ostatecznego mostu cyrkonowego."
-      },
-      {
-        "q": "Jaki materiał jest stosowany w ostatecznym moście All-on-6?",
-        "a": "Stosujemy w 100% monolityczny wielowarstwowy cyrkon (1200+ MPa) wzmocniony frezowaną belką tytanową CAD/CAM. Nie używamy nietrwałego akrylu."
-      },
-      {
-        "q": "Czy most All-on-6 jest stały czy wyjmowany?",
-        "a": "Most All-on-6 jest w 100% stały i przykręcany. Może go zdjąć wyłącznie lekarz podczas wizyt kontrolnych. Higienę domową ułatwia irygator (Waterpik)."
-      },
-      {
-        "q": "Dlaczego nawigacja 3D jest kluczowa w zabiegu All-on-6?",
-        "a": "Precyzyjne rozmieszczenie 6 implantów z dokładnością do ułamka milimetra gwarantuje idealną równoległość i stabilność mostu cyrkonowego."
-      },
-      {
-        "q": "Czy zniszczone zęby można usunąć podczas tego samego zabiegu?",
-        "a": "Tak. Wszelkie zniszczone zęby są usuwane podczas jednej wizyty, bezpośrednio przed wszczepieniem 6 implantów i montażem mostu tymczasowego."
-      },
-      {
-        "q": "Jaki jest długoterminowy wskaźnik sukcesu All-on-6?",
-        "a": "Badania kliniczne z ponad 15 lat wykazują sukces przekraczający 98,5%. Implanty Straumann i DXL są zaprojektowane na całe życie."
-      }
+          {
+                "q": "W jaki sposób tylko 4 implanty mogą utrzymać cały łuk zębowy?",
+                "a": "Sekret metody All-on-4 polega na nachyleniu dwóch tylnych implantów pod kątem do 45 stopni. Pozwala to na zakotwiczenie w gęstej kości przedniej części żuchwy lub szczęki, tworząc stabilną bazę pod most z 10-12 zębami."
+          },
+          {
+                "q": "Kto jest idealnym kandydatem do zabiegu All-on-4?",
+                "a": "All-on-4 to idealne rozwiązanie dla osób z całkowitym bezzębiem, ruchomymi protezami, zaawansowaną paradontozą lub znacznym zanikiem kości w odcinku bocznym, gdzie tradycyjne implanty wymagałyby przeszczepu kości."
+          },
+          {
+                "q": "Czy All-on-4 wymaga przeszczepu kości lub podniesienia dna zatoki?",
+                "a": "W ponad 90% przypadków All-on-4 pozwala całkowicie uniknąć przeszczepów kości i zabiegów sinus lift. Nachylone implanty bezpiecznie omijają zatokę szczękową i nerwy zębodołowe."
+          },
+          {
+                "q": "Jak działa stały most tymczasowy montowany w ciągu 24 godzin?",
+                "a": "Gdy implanty uzyskają stabilizację pierwotną 35–50 Ncm, montuje się łączniki multi-unit. W ciągu 24 godzin przykręcany jest stały most tymczasowy — pacjent nigdy nie wychodzi z kliniki bez zębów."
+          },
+          {
+                "q": "Jak należy się odżywiać w trakcie 3-miesięcznej osteointegracji?",
+                "a": "Podczas zrastania implantów z kością zaleca się dietę miękką (ryby, makarony, jajka, gotowane warzywa). Należy unikać gryzienia twardych orzechów i twardego pieczywa do momentu założenia mostu z cyrkonu."
+          },
+          {
+                "q": "Z jakiego materiału wykonany jest ostateczny most All-on-4?",
+                "a": "Standardem w Master Smile Studio jest 100% monolityczny wielowarstwowy cyrkon (1400 MPa) na frezowanej belce tytanowej CAD/CAM. Nie stosujemy nietrwałego akrylu ani łamliwej porcelany."
+          },
+          {
+                "q": "Czy most All-on-4 jest stały, czy pacjent może go wyjmować?",
+                "a": "Most All-on-4 jest w 100% stały, przykręcany do implantów. Pacjent nie może go wyjąć samodzielnie. Czyszczenie w domu jest proste przy użyciu irygatora (Waterpik) i nici dentystycznej."
+          },
+          {
+                "q": "Dlaczego nawigacja 3D jest kluczowa w zabiegu All-on-4?",
+                "a": "Precyzyjne nachylenie implantów pod kątem 30-45 stopni wymaga mikrometrycznej dokładności. Szablony 3D gwarantują wprowadzenie implantów z dokładnością poniżej 0,1 mm, w 100% chroniąc nerwy."
+          },
+          {
+                "q": "Czy zniszczone zęby można usunąć podczas zabiegu All-on-4?",
+                "a": "Tak. Wszelkie zniszczone lub ruchome zęby usuwane są podczas tej samej operacji, po czym od razu wprowadzane są 4 implanty i pobierany jest skan pod most 24h."
+          },
+          {
+                "q": "Jaka jest długoterminowa skuteczność metody All-on-4?",
+                "a": "Badania kliniczne obejmujące ponad 15 lat wykazują skuteczność All-on-4 na poziomie ponad 98,2%. Implanty Straumann i DXL objęte są międzynarodową dożywotnią gwarancją."
+          }
     ],
     "faqsPart2": [
-      {
-        "q": "Ile wizyt w Antalyi jest potrzebnych do leczenia All-on-6?",
-        "a": "Dokładnie 2 wizyty: 1. Wizyta (3–5 dni) na diagnostykę, zabieg i zęby tymczasowe; 2. Wizyta (5–7 dni, po 3 miesiącach) na montaż ostatecznego mostu cyrkonowego."
-      },
-      {
-        "q": "Co zawiera pakiet All-on-6 w Master Smile Studio?",
-        "a": "6 implantów tytanowych, 12-14 zębów tymczasowych, 12-14 ostatecznych zębów cyrkonowych, tomografię 3D, leki, hotel 4/5* ze śniadaniami i transfery VIP Mercedes."
-      },
-      {
-        "q": "Czy cena pakietu zmieni się po przyjeździe do Antalyi?",
-        "a": "Nie. Wycena przygotowana na podstawie zdjęcia RTG to gwarantowana stała cena bez ukrytych opłat."
-      },
-      {
-        "q": "Czy zabieg 6 implantów boli? Czy dostępna jest sedacja?",
-        "a": "Zabieg jest bezbolesny w znieczuleniu miejscowym. Dla pacjentów z lękiem oferujemy również sedację dożylną pod okiem anestezjologa."
-      },
-      {
-        "q": "Czy diabetycy lub palacze mogą poddać się All-on-6?",
-        "a": "Tak. Wyrównana cukrzyca nie stanowi przeszkody. Palaczom zaleca się ograniczenie palenia w pierwszych 2 tygodniach po zabiegu."
-      },
-      {
-        "q": "Jak działa międzynarodowy paszport z dożywotnią gwarancją?",
-        "a": "Otrzymujesz oficjalny paszport implantu z unikalnymi numerami seryjnymi i kodami kreskowymi producenta."
-      },
-      {
-        "q": "Jak wygląda opieka po powrocie do mojego kraju?",
-        "a": "Nasz międzynarodowy zespół zapewnia stały kontakt przez WhatsApp i regularne wideokonsultacje z głównym chirurgiem."
-      }
+          {
+                "q": "Ile wizyt w Antalyi wymaga leczenie All-on-4?",
+                "a": "Dokładnie 2 wizyty: Wizyta 1 (3–5 dni) na diagnostykę 3D, zabieg i stałe zęby tymczasowe; Wizyta 2 (5–7 dni, po 3 miesiącach) na przymiarki i odbiór ostatecznego mostu z monolitycznego cyrkonu 1400 MPa."
+          },
+          {
+                "q": "Co zawiera pakiet All-on-4 w Master Smile Studio?",
+                "a": "Pakiet obejmuje 4 implanty tytanowe na łuk, łączniki multi-unit, zęby tymczasowe w 24h, ostateczny most cyrkonowy, tomografię 3D, leki, hotel 4/5* ze śniadaniem i transfery VIP Mercedesem."
+          },
+          {
+                "q": "Czy cena pakietu może ulec zmianie po przyjeździe do Antalyi?",
+                "a": "Nie. Po analizie zdjęcia rentgenowskiego otrzymują Państwo wiążący kosztorys z gwarancją stałej ceny bez żadnych ukrytych opłat."
+          },
+          {
+                "q": "Czy zabieg na 4 implantach boli? Czy dostępna jest sedacja?",
+                "a": "Zabieg jest bezbolesny w znieczuleniu miejscowym. Dla pacjentów odczuwających stres oferujemy sedację dożylną pod okiem wykwalifikowanego anestezjologa."
+          },
+          {
+                "q": "Czy cukrzycy i osoby palące mogą poddać się zabiegowi All-on-4?",
+                "a": "Tak. U pacjentów z wyrównaną cukrzycą (HbA1c < 7,5%) odsetek powodzenia jest identyczny jak u zdrowych. Osobom palącym zalecamy ograniczenie palenia na 2 tygodnie przed i po zabiegu."
+          },
+          {
+                "q": "Jak działa międzynarodowy paszport gwarancyjny?",
+                "a": "Otrzymują Państwo oficjalny paszport implantologiczny z numerami seryjnymi wszczepów, uprawniający do dożywotniej gwarancji producenta na całym świecie."
+          },
+          {
+                "q": "Jak wygląda opieka po powrocie do kraju?",
+                "a": "Nasz zespół zapewnia stałe wsparcie przez WhatsApp i wideokonsultacje. Otrzymują Państwo pełną dokumentację i zdjęcia RTG dla swojego lokalnego stomatologa."
+          }
     ],
     "compareTitle": "Obiektywne Porównanie Odbudowy Pełnołukowej: All-on-4 vs. All-on-5 vs. All-on-6",
     "compareSubtitle": "Wybór między 4, 5 a 6 implantami zależy ściśle od objętości kości, siły żucia i szerokości anatomicznej szczęki.",
@@ -1780,7 +1836,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       "whenAll6Text": "All-on-6 jest zalecany przy odpowiedniej wysokości kości bocznej (>10 mm), u osób z bruksizmem (zgrzytaniem zębami) oraz u pacjentów oczekujących pełnego łuku 14 zębów o najwyższej wytrzymałości."
     },
     "processTitle": "3-Etapowy Protokół Precyzyjny: Od Cyfrowego 3D do Stałego Cyrkonu",
-    "processSubtitle": "Każdy zabieg All-on-6 w Master Smile Studio realizowany jest w oparciu o cyfrowe szablony chirurgiczne i frezowanie robotyczne.",
+    "processSubtitle": "Każdy zabieg All-on-4 w Master Smile Studio realizowany jest w oparciu o cyfrowe szablony chirurgiczne i frezowanie robotyczne CAD/CAM.",
     "processCards": [
       {
         "step": "ETAP 01",
@@ -1870,20 +1926,23 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     ]
   },
   "pt": {
-    "introBadge": "ESTABILIDADE OCLUSAL MÁXIMA",
-    "introTitle": "Implantes Dentários All-on-6 em Antalya, Turquia",
-    "introLead": "Restauração completa de 14 dentes sobre 6 implantes de titânio — máxima força mastigatória e estabilidade estrutural.",
-    "introP1": "No Master Smile Studio, o procedimento All-on-6 representa o padrão mais elevado em reabilitação oral fixa. Ao distribuir as forças oclusais em seis implantes de titânio estrategicamente posicionados, este tratamento proporciona uma estabilidade incomparável para uma arcada completa de 14 dentes.",
-    "introP2": "O protocolo All-on-6 fixa dois implantes anteriores e quatro posteriores. Essa base ampla distribui a mastigação uniformemente, eliminando a tensão dos cantilevers e permitindo que pacientes com forte mordida mastiguem com total liberdade.",
-    "introP3Lead": "Conheça também na nossa clínica os tratamentos de ",
-    "introP3LinkAll4": "Implantes All-on-4",
-    "introP3Mid": ", ",
-    "introP3LinkZygoma": "Implantes Zigomáticos",
-    "introP3And": " e ",
-    "introP3LinkSinus": "Elevação do Seio Maxilar (Sinus Lift)",
-    "introP3Tail": " em Antalya.",
+    "introBadge": "DENTES FIXOS EM 24 HORAS",
+    "introTitle": "Implantes Dentários All-on-4 em Antalya, Turquia",
+    "introLead": "Reabilitação fixa de arcada total sobre 4 implantes estratégicos — novos dentes em 24 horas sem necessidade de enxerto ósseo.",
+    "introP1": "No Master Smile Studio, o protocolo All-on-4 representa uma solução transformadora para pacientes com perda óssea severa ou desdentados totais. Ao inclinar os dois implantes posteriores em até 45 graus e posicionar dois implantes retos na região anterior, evita-se a invasão do seio maxilar e do nervo dentário, eliminando a necessidade de enxertos ósseos complexos.",
+    "introP2": "O conceito All-on-4 maximiza o volume ósseo remanescente, proporcionando alta estabilidade primária (35–50 Ncm) e distribuição uniforme das forças oclusais. O paciente sai da clínica em 24 horas com uma prótese provisória fixa aparafusada, recuperando a capacidade mastigatória e um sorriso natural imediatamente.",
+    "introP3Lead": "Conforme a sua anatomia óssea ou objetivos clínicos, você também pode conhecer os ",
+    "introP3LinkAll4": "Implantes Dentários All-on-6",
+    "introP3Mid": ", os especializados ",
+    "introP3LinkZygoma": "Implantes Zigomáticos para Perda Óssea Severa",
+    "introP3And": " e a ",
+    "introP3LinkSinus": "Cirurgia de Sinus Lift",
+    "introP3Tail": ".",
     "materialsTitle": "Materiais da Prótese All-on-4: Por que Usamos Zircônia Monolítica",
     "materialsSubtitle": "No All-on-4, 4 implantes suportam toda a carga mastigatória da mandíbula (200 a 600 Newtons). Descubra por que produzimos exclusivamente Zircônia Monolítica Multicamadas em vez de acrílico ou porcelana frágil.",
+    "materialsComparisonBadge": "Comparação Laboratorial",
+    "materialsComparisonAlt": "Comparação de materiais para pontes All-on-4: Zircônia monolítica vs Híbrida de acrílico vs Metalocerâmica",
+    "materialsComparisonText": "Comparação direta em laboratório dentário dos 3 materiais de pontes All-on-4 (PFM, acrílico híbrido e zircônia alemã monolítica) demonstrando estética, translucidez e resistência.",
     "materialsSpecLabels": {
       "material": "Tipo de Material",
       "strength": "Resistência Flexural",
@@ -1891,86 +1950,92 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       "lifespan": "Vida Útil"
     },
     "materialsCards": [
-      {
-        "title": "Zircônia Monolítica Multicamadas",
-        "sub": "100% Zircônia Alemã Maciça + Barra de Titânio Fresada",
-        "badge": "PADRÃO OURO MASTER SMILE",
-        "isGold": true,
-        "material": "1200+ MPa CAD/CAM Zircônia",
-        "strength": "1200 – 1400 MPa (Ultra Alta)",
-        "chippingRisk": "Praticamente Zero (Monolítica)",
-        "lifespan": "25+ Anos / Toda a Vida",
-        "features": [
           {
-            "text": "Zero lascamento ou fraturas sob forte mastigação",
-            "status": "good"
+                "title": "Zircônia Monolítica Multicamadas",
+                "sub": "100% Zircônia Alemã Maciça + Barra de Titânio Fresada",
+                "badge": "PADRÃO OURO MASTER SMILE",
+                "isGold": true,
+                "material": "1400 MPa CAD/CAM Zircônia",
+                "strength": "1.400 MPa",
+                "chippingRisk": "Zero Risco de Lascamento",
+                "lifespan": "Vitalício (25+ Anos)",
+                "verdictLabel": "VEREDITO CLÍNICO",
+                "verdictText": "A escolha primária do Master Smile Studio para mais de 95% dos casos de arcada completa. Máxima biocompatibilidade, estética superior e resistência vitalícia a fraturas.",
+                "features": [
+                      {
+                            "text": "Zero lascamento ou fraturas sob forte mastigação",
+                            "status": "good"
+                      },
+                      {
+                            "text": "Superfície ultra-lisa previne placa bacteriana e Peri-implantite",
+                            "status": "good"
+                      },
+                      {
+                            "text": "Não porosa: 100% resistente a manchas e odores",
+                            "status": "good"
+                      },
+                      {
+                            "text": "Gradiente multicamadas cria translucidez natural",
+                            "status": "good"
+                      }
+                ]
           },
           {
-            "text": "Superfície lisa previne placa bacteriana e Peri-implantite",
-            "status": "good"
+                "title": "Ponte Híbrida Titânio-Acrílico",
+                "sub": "Estrutura Metálica + Resina Acrílica e Dentes Plásticos",
+                "material": "Acrílico PMMA + Barra Metálica",
+                "strength": "100 MPa",
+                "chippingRisk": "Alto Desgaste e Descolamento",
+                "lifespan": "3 – 5 Anos (Provisório)",
+                "verdictLabel": "VEREDITO CLÍNICO",
+                "verdictText": "Aceitável apenas como ponte provisória de baixo custo. Não recomendado como solução definitiva para mais de 20 anos devido ao desgaste, absorção bacteriana e desprendimento de dentes.",
+                "features": [
+                      {
+                            "text": "Desgaste abrasivo aplaina os dentes e altera a dimensão vertical",
+                            "status": "bad"
+                      },
+                      {
+                            "text": "Resina porosa absorve bactérias, gorduras e gera mau odor",
+                            "status": "bad"
+                      },
+                      {
+                            "text": "Dentes individuais podem soltar-se ao mastigar alimentos rijos",
+                            "status": "bad"
+                      },
+                      {
+                            "text": "Exige manutenções frequentes e substituição em poucos anos",
+                            "status": "warn"
+                      }
+                ]
           },
           {
-            "text": "Não poroso: 100% resistente a manchas e odores",
-            "status": "good"
-          },
-          {
-            "text": "Degradê multicamadas com translucidez natural",
-            "status": "good"
+                "title": "Metalocerâmica (PFM)",
+                "sub": "Estrutura Cobalto-Cromo + Cerâmica Fundida",
+                "material": "Porcelana Feldspática Estratificada",
+                "strength": "450 MPa",
+                "chippingRisk": "Lascamento da Porcelana",
+                "lifespan": "8 – 12 Anos",
+                "verdictLabel": "VEREDITO CLÍNICO",
+                "verdictText": "Tecnologia ultrapassada para arcadas completas. Embora a estrutura metálica seja resistente, a flexão oclusal sobre 4 implantes causa fraturas na porcelana e expõe o bordo cinzento metálico.",
+                "features": [
+                      {
+                            "text": "A porcelana lasca sob as forças de mastigação do All-on-4",
+                            "status": "bad"
+                      },
+                      {
+                            "text": "Margem metálica escura fica visível em caso de retração gengival",
+                            "status": "bad"
+                      },
+                      {
+                            "text": "Peso excessivo causa desconforto e sensação volumosa na boca",
+                            "status": "warn"
+                      },
+                      {
+                            "text": "Reparo intraoral da porcelana fraturada é inviável",
+                            "status": "bad"
+                      }
+                ]
           }
-        ]
-      },
-      {
-        "title": "Ponte Híbrida Titânio-Acrílico",
-        "sub": "Estrutura Metálica + Resina Acrílica e Dentes Plásticos",
-        "material": "Acrílico PMMA + Estrutura Metálica",
-        "strength": "80 – 120 MPa (Baixa)",
-        "chippingRisk": "Alto (Dentes podem soltar)",
-        "lifespan": "3 – 7 Anos",
-        "features": [
-          {
-            "text": "Desgaste abrasivo encurta dentes e causa dores articulares",
-            "status": "bad"
-          },
-          {
-            "text": "Resina porosa absorve bactérias, café e odores",
-            "status": "bad"
-          },
-          {
-            "text": "Dentes individuais podem se soltar com alimentos duros",
-            "status": "bad"
-          },
-          {
-            "text": "Requer manutenção constante e substituição completa",
-            "status": "warn"
-          }
-        ]
-      },
-      {
-        "title": "Metalocerâmica (PFM)",
-        "sub": "Estrutura de Cobalto-Cromo + Porcelana Fundida",
-        "material": "Porcelana Feldspática em Camadas",
-        "strength": "350 – 450 MPa (Média)",
-        "chippingRisk": "Moderado a Alto (Lascamento)",
-        "lifespan": "8 – 12 Anos",
-        "features": [
-          {
-            "text": "A porcelana lasca com frequência sob forças de 6 implantes",
-            "status": "bad"
-          },
-          {
-            "text": "Borda metálica escura visível se a gengiva retrair",
-            "status": "bad"
-          },
-          {
-            "text": "Peso elevado causa sensação pesada na boca",
-            "status": "warn"
-          },
-          {
-            "text": "Reparo de porcelana lascada na boca é inviável",
-            "status": "bad"
-          }
-        ]
-      }
     ],
     "materialsTableHeaders": {
       "criteria": "Critério de Comparação",
@@ -2023,10 +2088,10 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "pricePerArchLabel": "Preço por arcada dentária",
     "getQuoteBtn": "Solicitar Orçamento Gratuito",
     "mostPopularBadge": "MAIS POPULAR",
-    "faqTitle": "Perguntas Frequentes sobre Implantes All-on-6",
-    "faqSubtitle": "Respostas clínicas detalhadas para esclarecer todas as dúvidas sobre cirurgia, materiais e sua viagem a Antalya.",
-    "faqGroup1Title": "Perguntas Clínicas e Cirúrgicas All-on-6",
-    "faqGroup2Title": "Turismo de Saúde, Pacotes e Garantia",
+    "faqTitle": "Perguntas Frequentes sobre Implantes All-on-4",
+    "faqSubtitle": "Respostas validadas por cirurgiões sobre todos os aspectos clínicos, biomecânicos e logísticos do seu tratamento All-on-4 em Antalya.",
+    "faqGroup1Title": "Perguntas Clínicas e Cirúrgicas All-on-4",
+    "faqGroup2Title": "Turismo Dentário, Pacotes e Garantia Vitalícia",
     "packages": [
       {
         "name": "ALL-ON-4 – NUCLEOSS",
@@ -2080,76 +2145,76 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       }
     ],
     "faqsPart1": [
-      {
-        "q": "Qual é a principal diferença biomecânica entre All-on-6 e All-on-4?",
-        "a": "O All-on-6 utiliza 6 implantes de titânio por arcada. Os 2 implantes adicionais distribuem a carga mastigatória de forma mais ampla, sustentando uma arcada completa de 14 dentes com máxima estabilidade."
-      },
-      {
-        "q": "Quem é o candidato ideal para o implante All-on-6?",
-        "a": "Pacientes com bom volume ósseo nas regiões posteriores, pacientes mais jovens com força mastigatória intensa ou pessoas que desejam uma arcada de 14 dentes sem cantilevers."
-      },
-      {
-        "q": "O All-on-6 requer enxerto ósseo ou levantamento de seio maxilar?",
-        "a": "Como 6 implantes necessitam de suporte ósseo posterior, pacientes com perda óssea na maxila superior podem necessitar de um pequeno enxerto ou sinus lift."
-      },
-      {
-        "q": "Como funciona a prótese provisória fixa no mesmo dia?",
-        "a": "Em até 24 horas após a cirurgia guiada por computador, a ponte provisória é fixada sobre os 6 implantes. Você nunca sai da clínica sem dentes funcionais."
-      },
-      {
-        "q": "O que posso comer durante os 3 meses de osseointegração?",
-        "a": "Recomenda-se uma dieta macia e nutritiva (peixes, massas, ovos, legumes, frango desfiado) para proteger a cicatrização óssea dos implantes."
-      },
-      {
-        "q": "Qual material é utilizado na prótese definitiva All-on-6?",
-        "a": "Utilizamos exclusivamente Zircônia Monolítica Multicamadas Alemã (1200+ MPa) com barra de titânio fresada em CAD/CAM. Nunca usamos acrílico frágil."
-      },
-      {
-        "q": "A prótese All-on-6 é fixa ou removível?",
-        "a": "A prótese é 100% fixa e aparafusada. Apenas o dentista pode removê-la em consultas de rotina. A higiene diária é feita com irrigador oral (Waterpik)."
-      },
-      {
-        "q": "Por que o guia cirúrgico 3D é fundamental no All-on-6?",
-        "a": "A instalação de 6 implantes exige perfeito paralelismo e precisão milimétrica para o assentamento passivo da ponte definitiva de zircônia."
-      },
-      {
-        "q": "Dentes comprometidos podem ser extraídos na mesma cirurgia?",
-        "a": "Sim. Dentes danificados são extraídos na mesma sessão cirúrgica, seguida imediatamente pela fixação dos 6 implantes e instalação dos dentes provisórios."
-      },
-      {
-        "q": "Qual é a taxa de sucesso a longo prazo do All-on-6?",
-        "a": "Estudos clínicos de mais de 15 anos comprovam uma taxa de sucesso superior a 98,5%. Implantes Straumann e DXL são projetados para durar a vida inteira."
-      }
+          {
+                "q": "Como apenas 4 implantes conseguem suportar uma arcada completa de dentes?",
+                "a": "O segredo da engenharia All-on-4 é a inclinação dos dois implantes posteriores em até 45 graus. Isso aproveita o osso denso anterior e cria uma base rígida que distribui com perfeição a força mastigatória sobre 10 a 12 dentes fixos."
+          },
+          {
+                "q": "Quem é o candidato ideal para os implantes All-on-4?",
+                "a": "É ideal para pessoas com ausência total de dentes, próteses removíveis soltas, doença periodontal avançada ou perda óssea posterior acentuada, onde implantes convencionais exigiriam enxerto ósseo."
+          },
+          {
+                "q": "O procedimento All-on-4 requer enxerto ósseo ou sinus lift?",
+                "a": "Em mais de 90% dos casos, o All-on-4 dispensa enxertos ósseos e sinus lift. A angulação dos implantes contorna o seio maxilar e o nervo alveolar com total segurança."
+          },
+          {
+                "q": "Como funcionam os dentes provisórios fixos instalados em 24 horas?",
+                "a": "Alcançando torque primário de 35–50 Ncm, instalam-se os pilares multi-unit. Em até 24 horas, uma ponte provisória fixa aparafusada é instalada — você nunca sai sem dentes."
+          },
+          {
+                "q": "Qual a alimentação recomendada durante os 3 meses de cicatrização?",
+                "a": "Durante a osseointegração, deve-se manter uma dieta macia (peixes, massas, ovos, legumes cozidos). Alimentos duros ou crocantes devem ser evitados até a instalação da prótese definitiva em zircônia."
+          },
+          {
+                "q": "Qual material é utilizado na prótese definitiva All-on-4?",
+                "a": "No Master Smile Studio, o padrão é 100% Zircônia Monolítica Multicamadas Alemã (1.400 MPa) com barra de titânio usinada em CAD/CAM. Sem resinas frágeis ou cerâmicas que lascam."
+          },
+          {
+                "q": "A prótese All-on-4 é fixa ou o paciente pode remover?",
+                "a": "É 100% fixa e aparafusada; o paciente não pode removê-la. Apenas o dentista pode desaparafusá-la em revisões periódicas. A higiene diária em casa é feita com facilidade usando jato de água (Waterpik)."
+          },
+          {
+                "q": "Por que a cirurgia guiada 3D por computador é vital no All-on-4?",
+                "a": "Inclinar os implantes entre 30 e 45 graus requer exatidão absoluta. Guias cirúrgicos 3D garantem precisão submilimétrica (<0,1 mm), protegendo estruturas nobres e alinhando perfeitamente os acessos dos parafusos."
+          },
+          {
+                "q": "Dentes danificados podem ser extraídos na mesma cirurgia do All-on-4?",
+                "a": "Sim. Dentes condenados são extraídos na mesma sessão, seguindo-se imediatamente a colocação dos 4 implantes e o escaneamento digital para os dentes provisórios de 24 horas."
+          },
+          {
+                "q": "Qual é a taxa de sucesso a longo prazo do All-on-4?",
+                "a": "Estudos clínicos com mais de 15 anos de acompanhamento comprovam taxa de sucesso superior a 98,2%. Nossos implantes suíços Straumann possuem garantia vitalícia internacional."
+          }
     ],
     "faqsPart2": [
-      {
-        "q": "Quantas viagens a Antalya são necessárias para o All-on-6?",
-        "a": "Apenas 2 viagens: 1ª Visita (3–5 dias) para cirurgia e dentes provisórios; 2ª Visita (5–7 dias, após 3 meses) para a entrega da ponte definitiva em zircônia."
-      },
-      {
-        "q": "O que está incluído no pacote All-on-6 do Master Smile Studio?",
-        "a": "6 implantes de titânio, 12-14 dentes provisórios, 12-14 dentes definitivos em zircônia, tomografia 3D, cirurgias, medicamentos, hotel 4/5* com café e transfers VIP."
-      },
-      {
-        "q": "O preço do pacote mudará quando eu chegar a Antalya?",
-        "a": "Não. O orçamento enviado com base na sua radiografia tem garantia de preço fixo, sem custos ocultos adicionais."
-      },
-      {
-        "q": "Sentirei dor durante a cirurgia de 6 implantes? Há sedação?",
-        "a": "O procedimento é indolor sob anestesia local computadorizada. Também disponibilizamos sedação consciente intravenosa para maior conforto."
-      },
-      {
-        "q": "Diabéticos ou fumantes podem fazer o All-on-6?",
-        "a": "Sim. Com diabetes controlada, o índice de sucesso é excelente. Para fumantes, recomenda-se reduzir o consumo nas primeiras semanas."
-      },
-      {
-        "q": "Como funciona o passaporte de garantia vitalícia internacional?",
-        "a": "Você recebe o passaporte oficial do fabricante com número de série e código de barras de cada implante para garantia vitalícia global."
-      },
-      {
-        "q": "Como é feito o acompanhamento pós-operatório no meu país?",
-        "a": "Nossa equipe internacional oferece suporte contínuo via WhatsApp e videochamadas programadas com nossos cirurgiões chefes."
-      }
+          {
+                "q": "Quantas viagens a Antalya são necessárias para o All-on-4?",
+                "a": "Exatamente 2 visitas: 1ª Visita (3–5 dias) para tomografia 3D, cirurgia e dentes fixos provisórios; 2ª Visita (5–7 dias, após 3 meses) para os ajustes e entrega da prótese final em zircônia 1.400 MPa."
+          },
+          {
+                "q": "O que está incluído no pacote All-on-4 do Master Smile Studio?",
+                "a": "Tudo incluso: 4 implantes por arcada, pilares multi-unit, dentes provisórios em 24h, prótese final de zircônia, tomografias 3D, medicamentos, hotel 4/5 estrelas com café e transfers VIP Mercedes."
+          },
+          {
+                "q": "O valor do pacote pode sofrer alterações ao chegar a Antalya?",
+                "a": "Não. Após a avaliação das radiografias e consulta virtual, emitimos um orçamento oficial com preço fixo garantido e sem cobranças ocultas."
+          },
+          {
+                "q": "Sentirei dor durante a cirurgia de 4 implantes? Há sedação?",
+                "a": "O procedimento é indolor sob anestesia local avançada. Para maior tranquilidade, oferecemos sedação consciente endovenosa conduzida por médico anestesiologista."
+          },
+          {
+                "q": "Diabéticos ou fumantes podem realizar o All-on-4?",
+                "a": "Sim. Pacientes com diabetes controlada (HbA1c < 7,5%) apresentam índices de sucesso equivalentes. A fumantes, orientamos pausar o fumo por 2 semanas antes e após a cirurgia."
+          },
+          {
+                "q": "Como funciona o passaporte de garantia vitalícia internacional?",
+                "a": "Você recebe o passaporte oficial do fabricante contendo os números de série e lote dos implantes, garantindo reposição vitalícia em clínicas credenciadas em todo o mundo."
+          },
+          {
+                "q": "Como é feito o acompanhamento pós-operatório no meu país de origem?",
+                "a": "Nossa equipe de coordenação internacional mantém contato contínuo via WhatsApp e chamadas de vídeo, fornecendo relatórios cirúrgicos e radiografias para seu dentista local."
+          }
     ],
     "compareTitle": "Comparação Objetiva de Arcada Total: All-on-4 vs. All-on-5 vs. All-on-6",
     "compareSubtitle": "A escolha entre 4, 5 ou 6 implantes depende do volume ósseo posterior, força mastigatória e largura da arcada.",
@@ -2210,7 +2275,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       "whenAll6Text": "O All-on-6 é recomendado quando há altura óssea posterior adequada (>10 mm), em pacientes com bruxismo ou que exigem uma arcada completa de 14 dentes com força mastigatória irrestrita."
     },
     "processTitle": "Protocolo de Precisão em 3 Fases: Do Planejamento 3D à Zircônia Definitiva",
-    "processSubtitle": "Cada reabilitação All-on-6 no Master Smile Studio segue um rigoroso fluxo cirúrgico guiado por computador e fresagem robótica.",
+    "processSubtitle": "Cada reabilitação All-on-4 no Master Smile Studio segue um rigoroso fluxo cirúrgico guiado por computador e fresagem robótica CAD/CAM.",
     "processCards": [
       {
         "step": "FASE 01",
@@ -2300,20 +2365,23 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     ]
   },
   "es": {
-    "introBadge": "ESTABILIDAD OCLUSAL MÁXIMA",
-    "introTitle": "Implantes Dentales All-on-6 en Antalya, Turquía",
-    "introLead": "Restauración completa de 14 dientes fijada sobre 6 implantes de titanio — máxima fuerza masticatoria y estabilidad estructural.",
-    "introP1": "En Master Smile Studio, el tratamiento All-on-6 representa la cima de la rehabilitación fija del arco dental. Al distribuir las fuerzas masticatorias entre seis implantes de titanio estratégicamente ubicados, este procedimiento proporciona una estabilidad insuperable para una arcada completa de 14 dientes. Cada cirugía es planificada digitalmente en 3D y realizada directamente por nuestros cirujanos maxilofaciales fundadores.",
-    "introP2": "El protocolo All-on-6 coloca dos implantes anteriores y cuatro posteriores en el hueso maxilar. Esta amplia base distribuye la masticación uniformemente, eliminando tensiones y permitiendo a pacientes con mordida potente comer sin restricciones.",
-    "introP3Lead": "Según su densidad ósea, explore también en nuestra clínica ",
-    "introP3LinkAll4": "Implantes All-on-4",
-    "introP3Mid": ", ",
-    "introP3LinkZygoma": "Implantes Cigomáticos",
+    "introBadge": "DIENTES FIJOS EN 24 HORAS",
+    "introTitle": "Implantes Dentales All-on-4 en Antalya, Turquía",
+    "introLead": "Restauración fija de arcada completa sobre 4 implantes estratégicos — dientes fijos en 24 horas sin injertos de hueso.",
+    "introP1": "En Master Smile Studio, los implantes dentales All-on-4 suponen una solución revolucionaria para pacientes con pérdida ósea acusada o pérdida total de dientes. Inclinando los dos implantes posteriores hasta 45 grados y colocando dos implantes rectos en la zona frontal, se elude el seno maxilar y el nervio dentario, evitando injertos óseos complejos.",
+    "introP2": "El protocolo All-on-4 aprovecha al máximo el hueso natural remanente, logrando una estabilidad primaria de 35–50 Ncm y un reparto homogéneo de las cargas de masticación. El paciente sale de la clínica en 24 horas con una prótese fija atornillada provisional, sonriendo y masticando con total seguridad desde el primer día.",
+    "introP3Lead": "Según su volumen óseo y objetivos clínicos, también puede consultar nuestros ",
+    "introP3LinkAll4": "Implantes Dentales All-on-6",
+    "introP3Mid": ", los especializados ",
+    "introP3LinkZygoma": "Implantes Cigomáticos para Pérdida Ósea Severa",
     "introP3And": " y ",
     "introP3LinkSinus": "Elevación de Seno Maxilar",
-    "introP3Tail": " en Antalya.",
+    "introP3Tail": ".",
     "materialsTitle": "Materiales de Prótesis All-on-4: Por qué Usamos Circonio Monolítico",
     "materialsSubtitle": "En All-on-4, 4 implantes soportan toda la fuerza masticatoria de la mandíbula (200 a 600 Newtons). Descubra por qué diseñamos exclusivamente Circonio Monolítico Multicapa en lugar de acrílico o metal.",
+    "materialsComparisonBadge": "Comparación de Laboratorio",
+    "materialsComparisonAlt": "Comparación de materiales para prótesis All-on-4: Circonio monolítico vs Híbrida acrílica vs Metal-porcelana",
+    "materialsComparisonText": "Comparativa directa en laboratorio dental de los 3 materiales de prótesis All-on-4 (PFM, híbrida acrílica y circonio monolítico alemán) destacando estética, translucidez y solidez estructural.",
     "materialsSpecLabels": {
       "material": "Tipo de Material",
       "strength": "Resistencia a la Flexión",
@@ -2321,86 +2389,92 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       "lifespan": "Vida Útil"
     },
     "materialsCards": [
-      {
-        "title": "Circonio Monolítico Multicapa",
-        "sub": "100% Circonio Alemán Macizo + Barra de Titanio Fresada",
-        "badge": "ESTÁNDAR DE ORO MASTER SMILE",
-        "isGold": true,
-        "material": "1200+ MPa CAD/CAM Circonio",
-        "strength": "1200 – 1400 MPa (Ultra Alta)",
-        "chippingRisk": "Casi Cero (Monolítico Sólido)",
-        "lifespan": "25+ Años / De por Vida",
-        "features": [
           {
-            "text": "Cero fracturas o astillamiento bajo fuerte masticación",
-            "status": "good"
+                "title": "Circonio Monolítico Multicapa",
+                "sub": "100% Circonio Alemán Macizo + Barra de Titanio Fresada",
+                "badge": "ESTÁNDAR DE ORO MASTER SMILE",
+                "isGold": true,
+                "material": "1400 MPa CAD/CAM Circonio",
+                "strength": "1.400 MPa",
+                "chippingRisk": "Cero Riesgo de Astillamiento",
+                "lifespan": "De por Vida (25+ Años)",
+                "verdictLabel": "DICTAMEN CLÍNICO",
+                "verdictText": "La opción principal de Master Smile Studio para más del 95% de las rehabilitaciones completas. Máxima biocompatibilidad, estética superior y resistencia de por vida a fracturas.",
+                "features": [
+                      {
+                            "text": "Cero fracturas o astillamiento bajo fuerte masticación",
+                            "status": "good"
+                      },
+                      {
+                            "text": "Superficie ultra-lisa previene placa bacteriana y periimplantitis",
+                            "status": "good"
+                      },
+                      {
+                            "text": "No poroso: 100% resistente a tinciones y olores",
+                            "status": "good"
+                      },
+                      {
+                            "text": "Gradiente multicapa proporciona translucidez dental natural",
+                            "status": "good"
+                      }
+                ]
           },
           {
-            "text": "Superficie ultra lisa previene placa y Periimplantitis",
-            "status": "good"
+                "title": "Puente Híbrido Titanio-Acrílico",
+                "sub": "Estructura Metálica + Resina Acrílica y Dientes Plásticos",
+                "material": "Acrílico PMMA + Estructura Metálica",
+                "strength": "100 MPa",
+                "chippingRisk": "Alto Desgaste y Desprendimiento",
+                "lifespan": "3 – 5 Años (Provisional)",
+                "verdictLabel": "DICTAMEN CLÍNICO",
+                "verdictText": "Aceptable únicamente como puente provisional o económico. No recomendado como solución definitiva para más de 20 años debido al desgaste de la resina, absorción bacteriana y desprendimiento dental.",
+                "features": [
+                      {
+                            "text": "El desgaste abrasivo aplana los dientes y altera la mordida",
+                            "status": "bad"
+                      },
+                      {
+                            "text": "La resina porosa retiene bacterias, aceites y causa mal olor",
+                            "status": "bad"
+                      },
+                      {
+                            "text": "Dientes individuales pueden desprenderse al morder alimentos duros",
+                            "status": "bad"
+                      },
+                      {
+                            "text": "Requiere mantenimiento frecuente y reemplazo total periódico",
+                            "status": "warn"
+                      }
+                ]
           },
           {
-            "text": "No poroso: 100% resistente a manchas y malos olores",
-            "status": "good"
-          },
-          {
-            "text": "Gradiente multicapa para una estética natural translúcida",
-            "status": "good"
+                "title": "Metal-Porcelana (PFM)",
+                "sub": "Estructura Cobalto-Cromo + Cerámica Horneada",
+                "material": "Porcelana Feldespática Estratificada",
+                "strength": "450 MPa",
+                "chippingRisk": "Astillamiento de Porcelana",
+                "lifespan": "8 – 12 Años",
+                "verdictLabel": "DICTAMEN CLÍNICO",
+                "verdictText": "Tecnología obsoleta para arcadas completas. Aunque la estructura metálica es sólida, la flexión oclusal sobre 4 implantes provoca astillamientos irreversibles que dejan ver el metal gris.",
+                "features": [
+                      {
+                            "text": "La porcelana se astilla bajo las intensas fuerzas oclusales de All-on-4",
+                            "status": "bad"
+                      },
+                      {
+                            "text": "El margen metálico oscuro se hace visible si la encía retrocede",
+                            "status": "bad"
+                      },
+                      {
+                            "text": "Mayor peso produce una sensación voluminosa e incómoda",
+                            "status": "warn"
+                      },
+                      {
+                            "text": "La reparación intraoral de porcelana astillada es inviable",
+                            "status": "bad"
+                      }
+                ]
           }
-        ]
-      },
-      {
-        "title": "Puente Híbrido Titanio-Acrílico",
-        "sub": "Estructura Metálica + Resina Acrílica y Dientes Plásticos",
-        "material": "Acrílico PMMA + Estructura Metálica",
-        "strength": "80 – 120 MPa (Baja)",
-        "chippingRisk": "Alto (Dientes pueden desprenderse)",
-        "lifespan": "3 – 7 Años",
-        "features": [
-          {
-            "text": "Desgaste abrasivo acorta dientes y causa dolor articular",
-            "status": "bad"
-          },
-          {
-            "text": "Resina porosa absorbe bacterias, café y olores",
-            "status": "bad"
-          },
-          {
-            "text": "Dientes individuales pueden soltarse con alimentos duros",
-            "status": "bad"
-          },
-          {
-            "text": "Requiere mantenimiento frecuente y reemplazo total",
-            "status": "warn"
-          }
-        ]
-      },
-      {
-        "title": "Metal-Porcelana (PFM)",
-        "sub": "Estructura Cobalto-Cromo + Cerámica Horneada",
-        "material": "Porcelana Feldespática en Capas",
-        "strength": "350 – 450 MPa (Media)",
-        "chippingRisk": "Moderado a Alto (Astillamiento)",
-        "lifespan": "8 – 12 Años",
-        "features": [
-          {
-            "text": "La porcelana se astilla bajo las intensas fuerzas de 6 implantes",
-            "status": "bad"
-          },
-          {
-            "text": "Margen metálico oscuro visible si la encía se retrae",
-            "status": "bad"
-          },
-          {
-            "text": "Peso elevado causa sensación pesada en la boca",
-            "status": "warn"
-          },
-          {
-            "text": "Reparar porcelana astillada en boca es inviable",
-            "status": "bad"
-          }
-        ]
-      }
     ],
     "materialsTableHeaders": {
       "criteria": "Criterio de Comparación",
@@ -2453,10 +2527,10 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "pricePerArchLabel": "Protocolo de tratamiento y tiempo",
     "getQuoteBtn": "Obtener Presupuesto Gratuito",
     "mostPopularBadge": "MÁS POPULAR",
-    "faqTitle": "Preguntas Frecuentes sobre Implantes All-on-6",
-    "faqSubtitle": "Respuestas clínicas detalladas sobre el procedimiento quirúrgico, cicatrización y su viaje a Antalya.",
-    "faqGroup1Title": "Preguntas Clínicas y Quirúrgicas All-on-6",
-    "faqGroup2Title": "Turismo Dental, Paquete y Garantía de por Vida",
+    "faqTitle": "Preguntas Frecuentes sobre Implantes All-on-4",
+    "faqSubtitle": "Respuestas avaladas por especialistas sobre cada detalle quirúrgico, biomecánico y de viaje para su tratamiento All-on-4 en Antalya.",
+    "faqGroup1Title": "Preguntas Clínicas y Quirúrgicas All-on-4",
+    "faqGroup2Title": "Turismo Dental, Cobertura del Paquete y Garantía Vitalicia",
     "packages": [
       {
         "name": "ALL-ON-4 – NUCLEOSS",
@@ -2510,76 +2584,76 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       }
     ],
     "faqsPart1": [
-      {
-        "q": "¿Cuál es la principal diferencia biomecánica entre All-on-6 y All-on-4?",
-        "a": "All-on-6 utiliza 6 implantes de titanio por arcada. Los 2 implantes adicionales distribuyen la carga masticatoria de forma más amplia, permitiendo una arcada completa de 14 dientes con máxima solidez."
-      },
-      {
-        "q": "¿Quién es el candidato ideal para implantes dentales All-on-6?",
-        "a": "Pacientes con suficiente hueso en las zonas posteriores, pacientes jóvenes con fuerte mordida o personas que buscan una arcada de 14 dientes con soporte total en molares."
-      },
-      {
-        "q": "¿All-on-6 requiere injerto óseo o elevación de seno maxilar?",
-        "a": "Al necesitar soporte óseo posterior para 6 implantes, en casos de pérdida ósea en el maxilar superior puede requerirse una pequeña elevación de seno o injerto óseo."
-      },
-      {
-        "q": "¿Cómo funciona el puente provisional fijo en el mismo día?",
-        "a": "En menos de 24 horas tras la cirugía guiada por ordenador, se fija un puente provisional atornillado a los 6 implantes. Nunca saldrá de la clínica sin dientes."
-      },
-      {
-        "q": "¿Qué puedo comer durante los 3 meses de cicatrización?",
-        "a": "Dieta blanda y nutritiva (pescado, pasta, huevos, verduras tiernas) para proteger la osteointegración de los implantes."
-      },
-      {
-        "q": "¿Qué material se utiliza en el puente definitivo All-on-6?",
-        "a": "Fabricamos exclusivamente Circonio Monolítico Multicapa Alemán (1200+ MPa) con barra de titanio CAD/CAM. No utilizamos resinas acrílicas frágiles."
-      },
-      {
-        "q": "¿La prótesis All-on-6 es fija o removible?",
-        "a": "Es 100% fija y atornillada; solo puede retirarla el dentista en revisiones. La higiene diaria se realiza con irrigador bucal (Waterpik)."
-      },
-      {
-        "q": "¿Por qué es indispensable la guía quirúrgica 3D en All-on-6?",
-        "a": "Colocar 6 implantes exige un paralelismo milimétrico para garantizar que la estructura de circonio ajuste sin tensiones."
-      },
-      {
-        "q": "¿Se pueden extraer dientes dañados en la misma cirugía?",
-        "a": "Sí. Los dientes que no puedan conservarse se extraen en la misma sesión, colocándose de inmediato los 6 implantes y los dientes provisionales."
-      },
-      {
-        "q": "¿Cuál es la tasa de éxito a largo plazo de All-on-6?",
-        "a": "Estudios clínicos a más de 15 años demuestran un éxito superior al 98,5%. Los implantes Straumann y DXL están diseñados para durar toda la vida."
-      }
+          {
+                "q": "¿Cómo pueden solo 4 implantes sostener una arcada dental completa?",
+                "a": "La clave biomecánica de All-on-4 reside en inclinar los dos implantes traseros hasta 45 grados. Esto aprovecha el hueso denso anterior y genera una base rígida que soporta de forma equilibrada 10 a 12 dientes fijos."
+          },
+          {
+                "q": "¿Quién es el candidato idóneo para implantes dentales All-on-4?",
+                "a": "Es ideal para personas con pérdida total de piezas dentales, dentaduras postizas sueltas, periodontitis avanzada o gran pérdida ósea en la zona posterior, evitando injertos de hueso."
+          },
+          {
+                "q": "¿El procedimiento All-on-4 requiere injerto de hueso o elevación de seno?",
+                "a": "En más del 90% de los casos, All-on-4 evita por completo los injertos óseos y el sinus lift. La inclinación de los implantes posteriores elude los senos maxilares y nervios dentarios."
+          },
+          {
+                "q": "¿Cómo funcionan los dientes fijos provisionales en 24 horas?",
+                "a": "Al alcanzar una estabilidad primaria de 35–50 Ncm, se colocan los pilares multi-unit. En menos de 24 horas tras la cirugía, se atornilla un puente provisional fijo; nunca saldrá sin dientes."
+          },
+          {
+                "q": "¿Qué dieta debo seguir durante los 3 meses de osteointegración?",
+                "a": "Mientras los implantes se unen firmemente al hueso durante 3 meses, se debe mantener una dieta blanda (pescado, pasta, huevos, verduras tiernas). Evite alimentos duros hasta colocar el puente definitivo de circonio."
+          },
+          {
+                "q": "¿Qué material se emplea en el puente definitivo All-on-4?",
+                "a": "En Master Smile Studio usamos 100% Circonio Monolítico Multicapa Alemán (1.400 MPa) con barra de titanio fresada por CAD/CAM. No utilizamos resinas acrílicas frágiles ni porcelanas que se astillan."
+          },
+          {
+                "q": "¿La prótesis All-on-4 es fija o el paciente puede retirarla?",
+                "a": "Es 100% fija y atornillada; el paciente no puede retirarla en casa. Solo el odontólogo la desatornilla en revisiones anuales. La limpieza diaria es muy cómoda con irrigador dental (Waterpik)."
+          },
+          {
+                "q": "¿Por qué es indispensable la guía quirúrgica 3D en All-on-4?",
+                "a": "Colocar implantes angulados a 30-45 grados exige una precisión absoluta. Las guías 3D garantizan una colocación con tolerancia inferior a 0,1 mm, protegiendo senos y nervios."
+          },
+          {
+                "q": "¿Pueden extraerse dientes dañados durante la misma cirugía All-on-4?",
+                "a": "Sí. Todos los dientes que no puedan conservarse se extraen en la misma sesión, colocándose de inmediato los 4 implantes y tomando las medidas digitales para los dientes fijos de 24 horas."
+          },
+          {
+                "q": "¿Cuál es la tasa de éxito a largo plazo de All-on-4?",
+                "a": "Estudios clínicos a más de 15 años registran tasas de éxito superiores al 98,2%. Nuestros implantes Straumann cuentan con garantía internacional de por vida."
+          }
     ],
     "faqsPart2": [
-      {
-        "q": "¿Cuántos viajes a Antalya son necesarios para All-on-6?",
-        "a": "Exactamente 2 viajes: 1ª Visita (3–5 días) para cirugía y dientes provisionales; 2ª Visita (5–7 días, tras 3 meses) para la entrega del puente definitivo de circonio."
-      },
-      {
-        "q": "¿Qué incluye el paquete All-on-6 de Master Smile Studio?",
-        "a": "6 implantes de titanio, 12-14 dientes provisionales, 12-14 dientes definitivos de circonio, TAC 3D, cirugías, medicación, hotel 4/5* con desayuno y traslados VIP."
-      },
-      {
-        "q": "¿Cambiará el precio del paquete tras llegar a Antalya?",
-        "a": "No. El presupuesto enviado tras evaluar su radiografía es un precio fijo garantizado sin ningún coste oculto."
-      },
-      {
-        "q": "¿Sentiré dolor durante la cirugía de 6 implantes? ¿Hay sedación?",
-        "a": "El procedimiento es indoloro bajo anestesia local computarizada. También disponemos de sedación intravenosa consciente para máxima relajación."
-      },
-      {
-        "q": "¿Pueden someterse a All-on-6 pacientes diabéticos o fumadores?",
-        "a": "Sí. Con diabetes controlada el éxito es excelente. Se recomienda a los fumadores pausar o reducir el tabaco en las primeras semanas."
-      },
-      {
-        "q": "¿Cómo funciona el pasaporte de garantía internacional de por vida?",
-        "a": "Recibirá un pasaporte oficial del fabricante con los números de serie de cada implante para cobertura vitalicia internacional."
-      },
-      {
-        "q": "¿Cómo se realiza el seguimiento postoperatorio en mi país?",
-        "a": "Nuestro equipo internacional mantiene contacto directo continuo por WhatsApp y videollamadas con nuestros cirujanos jefes."
-      }
+          {
+                "q": "¿Cuántos viajes a Antalya son necesarios para All-on-4?",
+                "a": "Exactamente 2 visitas: 1ª Visita (3–5 días) para TAC 3D, cirugía y dientes fijos provisionales; 2ª Visita (5–7 días, a los 3 meses) para pruebas estéticas y entrega del puente definitivo de circonio 1.400 MPa."
+          },
+          {
+                "q": "¿Qué incluye el paquete All-on-4 de Master Smile Studio?",
+                "a": "Incluye 4 implantes por arcada, pilares multi-unit, dientes provisionales en 24h, puente definitivo de circonio, TAC 3D, medicación, hotel 4/5* con desayuno y traslados privados en Mercedes VIP."
+          },
+          {
+                "q": "¿Puede cambiar el precio del paquete tras mi llegada a Antalya?",
+                "a": "No. Tras evaluar sus radiografías en consulta virtual, entregamos un presupuesto oficial por escrito con precio cerrado garantizado y sin costes ocultos."
+          },
+          {
+                "q": "¿Sentiré dolor durante la cirugía de 4 implantes? ¿Hay sedación?",
+                "a": "El procedimiento es indoloro con anestesia local avanzada. Para pacientes con ansiedad o fobia dental, ofrecemos sedación consciente intravenosa a cargo de nuestro médico anestesiólogo."
+          },
+          {
+                "q": "¿Pueden someterse a All-on-4 pacientes diabéticos o fumadores?",
+                "a": "Sí. En diabéticos controlados (HbA1c < 7,5%) el porcentaje de éxito es similar al de no diabéticos. En fumadores se recomienda pausar el tabaco 2 semanas antes y después de la intervención."
+          },
+          {
+                "q": "¿Cómo funciona el pasaporte de garantía de por vida?",
+                "a": "Al concluir el tratamiento se entrega el pasaporte oficial con los números de serie de los implantes, garantizando sustitución de por vida en clínicas acreditadas a nivel mundial."
+          },
+          {
+                "q": "¿Cómo se gestiona el seguimiento postoperatorio en mi país?",
+                "a": "Nuestro equipo internacional realiza seguimiento constante por WhatsApp y videollamada, entregándole informe quirúrgico completo y radiografías para su dentista local."
+          }
     ],
     "compareTitle": "Comparación Objetiva de Arcada Completa: All-on-4 vs. All-on-5 vs. All-on-6",
     "compareSubtitle": "La elección entre 4, 5 o 6 implantes depende del volumen óseo posterior, fuerza masticatoria y anchura maxilar.",
@@ -2640,7 +2714,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       "whenAll6Text": "All-on-6 se recomienda cuando se conserva altura ósea posterior (>10 mm), en pacientes con bruxismo o que buscan una arcada de 14 dientes con masticación sin restricciones."
     },
     "processTitle": "Protocolo de Precisión en 3 Fases: De la Planificación 3D al Circonio Definitivo",
-    "processSubtitle": "Cada rehabilitación All-on-6 en Master Smile Studio sigue un estricto protocolo de cirugía guiada por ordenador y fresado robótico.",
+    "processSubtitle": "Cada rehabilitación All-on-4 en Master Smile Studio sigue un estricto protocolo de cirugía guiada por ordenador y robótica CAD/CAM.",
     "processCards": [
       {
         "step": "FASE 01",
@@ -2730,20 +2804,23 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     ]
   },
   "ru": {
-    "introBadge": "МАКСИМАЛЬНАЯ ОККЛЮЗИОННАЯ СТАБИЛЬНОСТЬ",
-    "introTitle": "Имплантация All-on-6 в Анталье, Турция",
-    "introLead": "Полное восстановление зубного ряда на 14 зубов на 6 титановых имплантах — непревзойденная жевательная сила и долговечность.",
-    "introP1": "В клинике Master Smile Studio имплантация All-on-6 представляет собой золотой стандарт постоянной реабилитации челюсти. Благодаря распределению жевательной нагрузки на шесть титановых опор, этот метод обеспечивает бескомпромиссную прочность для зубного ряда из 14 зубов. Все операции планируются с цифровой точностью 3D и проводятся нашими ведущими челюстно-лицевыми хирургами.",
-    "introP2": "Протокол All-on-6 фиксирует два передних и четыре боковых импланта. Широкая опора равномерно распределяет нагрузку на челюсть, устраняя рычажные напряжения и позволяя пациентам с мощным прикусом питаться без ограничений.",
-    "introP3Lead": "В зависимости от объема кости ознакомьтесь также с методами ",
-    "introP3LinkAll4": "Имплантация All-on-4",
-    "introP3Mid": ", ",
-    "introP3LinkZygoma": "Скуловые Импланты (Зигома)",
-    "introP3And": " и ",
-    "introP3LinkSinus": "Операция Синус-Лифтинга",
-    "introP3Tail": " в нашей клинике в Анталье.",
+    "introBadge": "НЕСЪЕМНЫЕ ЗУБЫ ЗА 24 ЧАСА",
+    "introTitle": "Имплантация All-on-4 в Анталье, Турция",
+    "introLead": "Несъемное протезирование всей челюсти на 4 стратегических имплантах — новые зубы за 24 часа без костной пластики.",
+    "introP1": "В клинике Master Smile Studio имплантация All-on-4 — это передовое решение для пациентов с выраженной атрофией кости или полным отсутствием зубов. Установка двух боковых имплантов под углом до 45 градусов и двух прямых в переднем отделе позволяет обойти гайморовы пазухи и нижнечелюстной нерв без необходимости сложного синус-лифтинга.",
+    "introP2": "Протокол All-on-4 максимально использует доступную плотную кость, обеспечивая высокую первичную стабилизацию (35–50 Нсм) для немедленной нагрузки. Уже через 24 часа пациент получает прочно зафиксированный винтовой адаптационный мост, возвращая уверенную улыбку и жевательную функцию в день операции.",
+    "introP3Lead": "В зависимости от объема кости и клинических задач, вы также можете рассмотреть ",
+    "introP3LinkAll4": "Имплантацию All-on-6",
+    "introP3Mid": ", специализированные ",
+    "introP3LinkZygoma": "Скуловые Импланты (Зигома) при Экстремальной Убыли Кости",
+    "introP3And": " и операцию ",
+    "introP3LinkSinus": "Синус-Лифтинга",
+    "introP3Tail": ".",
     "materialsTitle": "Материалы Мостов All-on-4: Почему Мы Используем Монолитный Цирконий",
     "materialsSubtitle": "В All-on-4 всего 4 импланта несут всю жевательную нагрузку челюсти (от 200 до 600 Н). Узнайте, почему мы изготавливаем монолитный многослойный цирконий вместо дешевого акрила или хрупкого металла.",
+    "materialsComparisonBadge": "Лабораторное сравнение",
+    "materialsComparisonAlt": "Сравнение материалов мостов All-on-4 на имплантах: Монолитный цирконий, гибридный акрил и металлокерамика",
+    "materialsComparisonText": "Наглядное лабораторное сравнение 3 материалов для постоянных мостов All-on-4 (металлокерамика, гибридный акрил и монолитный немецкий цирконий) по эстетике, светопроницаемости и прочности.",
     "materialsSpecLabels": {
       "material": "Тип Материала",
       "strength": "Прочность на Изгиб",
@@ -2751,86 +2828,92 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       "lifespan": "Срок Службы"
     },
     "materialsCards": [
-      {
-        "title": "Монолитный Многослойный Цирконий",
-        "sub": "100% Цельный Немецкий Цирконий + Фрезерованная Титановая Балка",
-        "badge": "ЗОЛОТОЙ СТАНДАРТ MASTER SMILE",
-        "isGold": true,
-        "material": "1200+ МПа CAD/CAM Цирконий",
-        "strength": "1200 – 1400 МПа (Сверхвысокая)",
-        "chippingRisk": "Близок к нулю (Монолит)",
-        "lifespan": "25+ Лет / Пожизненно",
-        "features": [
           {
-            "text": "Ноль сколов и переломов при интенсивном жевании",
-            "status": "good"
+                "title": "Монолитный Многослойный Цирконий",
+                "sub": "100% Цельный Немецкий Цирконий + Фрезерованная Титановая Балка",
+                "badge": "ЗОЛОТОЙ СТАНДАРТ MASTER SMILE",
+                "isGold": true,
+                "material": "1400 МПа CAD/CAM Цирконий",
+                "strength": "1400 МПа",
+                "chippingRisk": "Нулевой Риск Сколов",
+                "lifespan": "Пожизненно (25+ Лет)",
+                "verdictLabel": "КЛИНИЧЕСКИЙ ВЕРДИКТ",
+                "verdictText": "Выбор номер один в Master Smile Studio для более чем 95% полных дуг. Высочайшая биосовместимость, естественная эстетика и пожизненная прочность без сколов.",
+                "features": [
+                      {
+                            "text": "Ноль сколов и переломов при интенсивном жевании",
+                            "status": "good"
+                      },
+                      {
+                            "text": "Идеально гладкая поверхность защищает от налета и периимплантита",
+                            "status": "good"
+                      },
+                      {
+                            "text": "Беспористая структура: 100% устойчивость к пятнам и запахам",
+                            "status": "good"
+                      },
+                      {
+                            "text": "Многослойный градиент воссоздает природную светопроницаемость",
+                            "status": "good"
+                      }
+                ]
           },
           {
-            "text": "Гладкая поверхность препятствует налёту и периимплантиту",
-            "status": "good"
+                "title": "Гибридный Титано-Акриловый Мост",
+                "sub": "Металлический каркас + базисный акрил и композитные зубы",
+                "material": "PMMA Акрил + Металлический Каркас",
+                "strength": "100 МПа",
+                "chippingRisk": "Высокая Стираемость и Сколы",
+                "lifespan": "3 – 5 Лет (Временный)",
+                "verdictLabel": "КЛИНИЧЕСКИЙ ВЕРДИКТ",
+                "verdictText": "Приемлем только как бюджетный временный мост. Не рекомендуется как постоянное решение на 20+ лет из-за стираемости пластмассы, запаха и риска отламывания зубов.",
+                "features": [
+                      {
+                            "text": "Абразивный износ стирает зубы и снижает высоту прикуса",
+                            "status": "bad"
+                      },
+                      {
+                            "text": "Пористая смола впитывает бактерии, пищевые масла и запахи",
+                            "status": "bad"
+                      },
+                      {
+                            "text": "Отдельные пластмассовые зубы могут скалываться при твердой пище",
+                            "status": "bad"
+                      },
+                      {
+                            "text": "Требует частого обслуживания и полной замены через несколько лет",
+                            "status": "warn"
+                      }
+                ]
           },
           {
-            "text": "Непористая структура: не окрашивается и не впитывает запахи",
-            "status": "good"
-          },
-          {
-            "text": "Многослойный градиент создаёт естественную прозрачность зубов",
-            "status": "good"
+                "title": "Металлокерамика (PFM)",
+                "sub": "Литой каркас Co-Cr + полевошпатовая керамика",
+                "material": "Слоистая Полевошпатовая Керамика",
+                "strength": "450 МПа",
+                "chippingRisk": "Сколы Керамики",
+                "lifespan": "8 – 12 Лет",
+                "verdictLabel": "КЛИНИЧЕСКИЙ ВЕРДИКТ",
+                "verdictText": "Устаревшая технология для полных челюстей. Несмотря на прочный каркас, жевательная нагрузка на 4 имплантах часто вызывает сколы керамики с обнажением серого металла.",
+                "features": [
+                      {
+                            "text": "Керамика склонна к сколам под высокой жевательной нагрузкой All-on-4",
+                            "status": "bad"
+                      },
+                      {
+                            "text": "Темный металлический край становится заметен при рецессии десны",
+                            "status": "bad"
+                      },
+                      {
+                            "text": "Большой вес создает ощущение тяжести и громоздкости во рту",
+                            "status": "warn"
+                      },
+                      {
+                            "text": "Ремонт сколотой керамики в полости рта практически невозможен",
+                            "status": "bad"
+                      }
+                ]
           }
-        ]
-      },
-      {
-        "title": "Гибридный Титано-Акриловый Мост",
-        "sub": "Металлический Каркас + Протезный Акрил и Пластмассовые Зубы",
-        "material": "PMMA Акрил + Металл",
-        "strength": "80 – 120 МПа (Низкая)",
-        "chippingRisk": "Высокий (Зубы могут отклеиваться)",
-        "lifespan": "3 – 7 Лет",
-        "features": [
-          {
-            "text": "Истирание зубов снижает прикус и вызывает боли в суставе",
-            "status": "bad"
-          },
-          {
-            "text": "Пористый акрил впитывает бактерии, красители и запахи",
-            "status": "bad"
-          },
-          {
-            "text": "Отдельные зубы могут отламываться при твёрдой пище",
-            "status": "bad"
-          },
-          {
-            "text": "Требует частого ремонта и полной замены через несколько лет",
-            "status": "warn"
-          }
-        ]
-      },
-      {
-        "title": "Металлокерамика (PFM)",
-        "sub": "Кобальт-Хромовый Каркас + Напечённая Керамика",
-        "material": "Послойная Полевошпатная Керамика",
-        "strength": "350 – 450 MPa (Средняя)",
-        "chippingRisk": "От умеренного до высокого (Сколы)",
-        "lifespan": "8 – 12 Лет",
-        "features": [
-          {
-            "text": "Керамика часто скалывается под давлением на 6 имплантах",
-            "status": "bad"
-          },
-          {
-            "text": "Тёмный край металла становится виден при убыли десны",
-            "status": "bad"
-          },
-          {
-            "text": "Большой вес создаёт ощущение тяжести во рту",
-            "status": "warn"
-          },
-          {
-            "text": "Ремонт сколотой керамики прямо во рту невозможен",
-            "status": "bad"
-          }
-        ]
-      }
     ],
     "materialsTableHeaders": {
       "criteria": "Критерий Сравнения",
@@ -2883,10 +2966,10 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
     "pricePerArchLabel": "Цена за 1 челюсть",
     "getQuoteBtn": "Получить Бесплатный Расчет",
     "mostPopularBadge": "САМЫЙ ПОПУЛЯРНЫЙ",
-    "faqTitle": "Часто Задаваемые Вопросы об Имплантации All-on-6",
-    "faqSubtitle": "Клинически проверенные ответы обо всех этапах операции, стоимости и поездке в Анталью.",
-    "faqGroup1Title": "Клинические и Хирургические Вопросы All-on-6",
-    "faqGroup2Title": "Медицинский Туризм, Пакет и Пожизненная Гарантия",
+    "faqTitle": "Часто Задаваемые Вопросы об Имплантации All-on-4",
+    "faqSubtitle": "Подтвержденные хирургами ответы обо всех клинических, биомеханических и туристических аспектах лечения All-on-4 в Анталье.",
+    "faqGroup1Title": "Клинические и Хирургические Вопросы All-on-4",
+    "faqGroup2Title": "Медицинский Туризм, Пакеты и Пожизненная Гарантия",
     "packages": [
       {
         "name": "ALL-ON-4 – NUCLEOSS",
@@ -2940,76 +3023,76 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       }
     ],
     "faqsPart1": [
-      {
-        "q": "В чём главное биомеханическое отличие All-on-6 от All-on-4?",
-        "a": "В протоколе All-on-6 на челюсть устанавливается 6 титановых имплантов. 2 дополнительных импланта распределяют жевательное давление и позволяют зафиксировать мост на 14 зубов с максимальной прочностью."
-      },
-      {
-        "q": "Кто является идеальным кандидатом для All-on-6?",
-        "a": "Пациенты с достаточным объёмом кости в боковых отделах, молодые пациенты с сильным прикусом и те, кто хочет полный зубной ряд из 14 зубов."
-      },
-      {
-        "q": "Требуется ли синус-лифтинг или наращивание кости при All-on-6?",
-        "a": "Для 6 имплантов требуется достаточный объем кости в боковых отделах. При выраженной атрофии кости верхней челюсти может потребоваться синус-лифтинг."
-      },
-      {
-        "q": "Как устанавливаются несъемные временные зубы в первый день?",
-        "a": "В течение 24 часов после навигационной 3D-операции временный винтовой мост фиксируется на 6 имплантах. Вы ни дня не остаетесь без зубов."
-      },
-      {
-        "q": "Что можно есть в течение 3 месяцев приживления?",
-        "a": "Рекомендуется мягкая диета (рыба, паста, яйца, тушеные овощи, нежное филе). Твердую пищу (орехи, сухари) следует исключить до установки постоянного циркония."
-      },
-      {
-        "q": "Какой материал используется для постоянного моста All-on-6?",
-        "a": "Мы изготавливаем мосты из 100% монолитного многослойного немецкого циркония (1200+ МПа) с CAD/CAM титановой балкой. Никакого хрупкого акрила."
-      },
-      {
-        "q": "Протез All-on-6 съемный или несъемный?",
-        "a": "Протез на 100% несъемный и фиксируется на винтах. Снять его может только врач на плановом осмотре. Дома уход проводится с помощью ирригатора (Waterpik)."
-      },
-      {
-        "q": "Почему 3D-навигационный шаблон необходим при All-on-6?",
-        "a": "Установка 6 имплантов требует идеальной параллельности с точностью до десятых долей миллиметра для пассивной посадки циркониевого моста."
-      },
-      {
-        "q": "Можно ли удалить разрушенные зубы во время операции All-on-6?",
-        "a": "Да. Все не подлежащие сохранению зубы удаляются в один прием, сразу устанавливаются 6 имплантов и фиксируется временный мост."
-      },
-      {
-        "q": "Каков долгосрочный процент успешности All-on-6?",
-        "a": "Клинические данные за 15+ лет показывают приживаемость свыше 98,5%. Импланты Straumann и DXL рассчитаны на пожизненную службу."
-      }
+          {
+                "q": "Как всего 4 импланта могут надежно удерживать полный зубной ряд?",
+                "a": "Секрет протокола All-on-4 заключается в установке двух боковых имплантов под углом до 45 градусов. Это задействует плотную переднюю кость челюсти и создает жесткий многоугольный фундамент, равномерно распределяющий нагрузку на 10–12 зубов."
+          },
+          {
+                "q": "Кто является идеальным кандидатом для имплантации All-on-4?",
+                "a": "All-on-4 оптимален для пациентов с полным отсутствием зубов, подвижными или разрушенными зубами, тяжелым пародонтитом или значительной убылью кости в боковых отделах, где обычные импланты потребовали бы костной пластики."
+          },
+          {
+                "q": "Требуется ли синус-лифтинг или костная пластика при All-on-4?",
+                "a": "Более чем в 90% случаев протокол All-on-4 позволяет полностью обойтись без костной пластики и синус-лифтинга. Наклонная фиксация имплантов безопасно обходит гайморовы пазухи и нервные каналы."
+          },
+          {
+                "q": "Как устанавливаются несъемные временные зубы за 24 часа?",
+                "a": "При достижении первичного торка 35–50 Нсм фиксируются мультиюнит-абатменты. В течение 24 часов на 4 имплантах винтовым способом закрепляется армированный временный мост — вы не остаетесь без зубов ни одного дня."
+          },
+          {
+                "q": "Какой диеты следует придерживаться в период 3-месячного приживления?",
+                "a": "В период остеоинтеграции (3 месяца) показана мягкая пища (рыба, паста, яйца, тушеные овощи, мягкое филе). Следует избегать твердых орехов и сухарей до установки постоянного циркониевого моста."
+          },
+          {
+                "q": "Какой материал используется для постоянного моста All-on-4?",
+                "a": "В клинике Master Smile Studio золотым стандартом является 100% монолитный многослойный немецкий цирконий (1400 МПа) на титановой фрезерованной балке. Мы не используем хрупкий акрил или скалывающуюся керамику."
+          },
+          {
+                "q": "Протез All-on-4 съемный или несъемный?",
+                "a": "Мост All-on-4 на 100% несъемный, с винтовой фиксацией. Пациент не может снять его самостоятельно; это делает только врач на плановом осмотре. Дома уход осуществляется с помощью ирригатора (Waterpik)."
+          },
+          {
+                "q": "Почему 3D-навигационный шаблон необходим при All-on-4?",
+                "a": "Установка имплантов под углом 30–45 градусов требует ювелирной точности. Индивидуальный 3D-шаблон гарантирует субмиллиметровую точность (<0,1 мм), полностью защищая пазухи и нервы."
+          },
+          {
+                "q": "Можно ли удалить разрушенные зубы во время операции All-on-4?",
+                "a": "Да. Все подлежащие удалению зубы бережно удаляются в рамках той же операции, после чего сразу устанавливаются 4 импланта и снимаются цифровые слепки для моста 24h."
+          },
+          {
+                "q": "Каков долгосрочный процент успешности All-on-4?",
+                "a": "Клинические наблюдения на протяжении 15+ лет фиксируют успех All-on-4 свыше 98,2%. Швейцарские импланты Straumann обеспечивают пожизненную надежность."
+          }
     ],
     "faqsPart2": [
-      {
-        "q": "Сколько поездок в Анталью требуется для лечения All-on-6?",
-        "a": "Ровно 2 визита: 1-й визит (3–5 дней) для операции и временных зубов; 2-й визит (5–7 дней, через 3 месяца) для установки постоянного циркониевого моста."
-      },
-      {
-        "q": "Что входит в пакет All-on-6 клиники Master Smile Studio?",
-        "a": "6 титановых имплантов, 12-14 временных зубов, 12-14 постоянных циркониевых зубов, 3D-КТ, операция, медикаменты, отель 4/5* с завтраками и VIP-трансфер Mercedes."
-      },
-      {
-        "q": "Изменится ли цена пакета по прибытии в Анталью?",
-        "a": "Нет. Официальный расчет, составленный по вашей томографии/снимку, является гарантированной фиксированной ценой без скрытых доплат."
-      },
-      {
-        "q": "Будет ли больно во время операции? Есть ли седация?",
-        "a": "Процедура безболезненна благодаря компьютерной местной анестезии. Для тревожных пациентов доступна внутривенная седация под контролем анестезиолога."
-      },
-      {
-        "q": "Можно ли ставить All-on-6 при диабете или курении?",
-        "a": "Да. При компенсированном диабете приживаемость отличная. Курильщикам рекомендуется сократить курение в первые 2 недели после операции."
-      },
-      {
-        "q": "Как работает международный паспорт с пожизненной гарантией?",
-        "a": "Вы получаете паспорт производителя с серийными номерами каждого импланта, дающий официальную пожизненную международную гарантию."
-      },
-      {
-        "q": "Как проводится контроль после возвращения домой?",
-        "a": "Международный отдел координирует наблюдение через WhatsApp и организует регулярные видеоконсультации с нашими ведущими хирургами."
-      }
+          {
+                "q": "Сколько поездок в Анталью требуется для лечения All-on-4?",
+                "a": "Всего 2 визита: 1-й визит (3–5 дней) — 3D КТ, операция и несъемные зубы за 24 часа; 2-й визит (5–7 дней, через 3 месяца) — примерки и установка постоянного циркониевого моста 1400 МПа."
+          },
+          {
+                "q": "Что входит в пакет All-on-4 клиники Master Smile Studio?",
+                "a": "Включено абсолютно все: 4 импланта на челюсть, мультиюниты, несъемные зубы за 24 часа, постоянный циркониевый мост, 3D КТ, медикаменты, отель 4/5* с завтраком и VIP-трансфер на Mercedes."
+          },
+          {
+                "q": "Может ли измениться цена пакета по прибытии в Анталью?",
+                "a": "Нет. На основании рентгеновского снимка вы получаете официальный план лечения с фиксированной гарантированной стоимостью без скрытых доплат."
+          },
+          {
+                "q": "Будет ли больно во время операции? Возможна ли седация?",
+                "a": "Процедура абсолютно безболезненна благодаря современной анестезии. Для пациентов с дентофобией мы предлагаем комфортную внутривенную седацию под контролем штатного анестезиолога."
+          },
+          {
+                "q": "Можно ли ставить All-on-4 при диабете или курении?",
+                "a": "Да. При компенсированном диабете (HbA1c < 7,5%) приживаемость не отличается от нормы. Курильщикам рекомендуется сократить курение за 2 недели до и после операции."
+          },
+          {
+                "q": "Как работает международный паспорт пожизненной гарантии?",
+                "a": "После лечения вы получаете официальный паспорт имплантации с серийными номерами каждого импланта, дающий право на пожизненную замену в сертифицированных клиниках по всему миру."
+          },
+          {
+                "q": "Как осуществляется наблюдение после возвращения домой?",
+                "a": "Наш международный отдел ведет постоянную поддержку через WhatsApp и видеосвязь. Вы получаете полную выписку и контрольные снимки для вашего стоматолога по месту жительства."
+          }
     ],
     "compareTitle": "Объективное Сравнение Протоколов: All-on-4 vs. All-on-5 vs. All-on-6",
     "compareSubtitle": "Выбор между 4, 5 или 6 имплантами зависит от объема кости в боковых отделах, силы прикуса и ширины челюсти.",
@@ -3070,7 +3153,7 @@ const DICTIONARIES: Record<string, DetailDictionary> = {
       "whenAll6Text": "All-on-6 рекомендуется при сохраненной высоте кости (>10 мм), при бруксизме (сжимании зубов) и для пациентов, желающих полноценный зубной ряд из 14 зубов с максимальной жевательной силой."
     },
     "processTitle": "3-Этапный Протокол Точности: От 3D-Планирования до Монолитного Циркония",
-    "processSubtitle": "Каждая имплантация All-on-6 в Master Smile Studio выполняется по протоколу навигационной хирургии и роботизированного фрезерования.",
+    "processSubtitle": "Каждая имплантация All-on-4 в Master Smile Studio выполняется по протоколу навигационной хирургии и роботизированного фрезерования CAD/CAM.",
     "processCards": [
       {
         "step": "ЭТАП 01",
@@ -3300,6 +3383,28 @@ export default function AllOnFourImplantDetailView() {
             <p className={styles.materialsSubtitle}>{d.materialsSubtitle}</p>
           </div>
 
+          {/* Comparative Trio Showcase Banner */}
+          <div className={styles.materialsComparisonBanner}>
+            <div className={styles.materialsComparisonImgWrap}>
+              <Image
+                src="/treatments/materials/all-on-4-dental-implant-bridge-materials-comparison-antalya.webp"
+                alt={d.materialsComparisonAlt || "All-on-4 dental implant bridge materials comparison: Monolithic Zirconia vs Hybrid Acrylic vs PFM"}
+                width={1600}
+                height={1194}
+                className={styles.materialsComparisonImg}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 95vw, 1200px"
+              />
+            </div>
+            <div className={styles.materialsComparisonCaption}>
+              <span className={styles.comparisonCaptionBadge}>
+                {d.materialsComparisonBadge || "Dental Lab Comparison"}
+              </span>
+              <p className={styles.comparisonCaptionText}>
+                {d.materialsComparisonText || "Direct side-by-side dental laboratory comparison of all 3 permanent All-on-4 bridge materials (PFM, Hybrid Acrylic, and Monolithic German Zirconia)."}
+              </p>
+            </div>
+          </div>
+
           {/* 3 Material Cards */}
           <div className={styles.materialsGrid}>
             {d.materialsCards.map((card, cIdx) => (
@@ -3308,36 +3413,55 @@ export default function AllOnFourImplantDetailView() {
                 className={`${styles.materialCard} ${card.isGold ? styles.materialCardGold : ''}`}
               >
                 {card.badge && (
-                  <span className={styles.materialStandardBadge}>{card.badge}</span>
+                  <span className={card.isGold ? styles.materialGoldBadge : styles.materialStandardBadge}>
+                    {card.badge}
+                  </span>
                 )}
+
+                <div className={styles.materialCardImgWrap}>
+                  <Image
+                    src={card.image || MATERIAL_CARD_DEFAULT_IMAGES[cIdx]?.src || '/treatments/materials/monolithic-multi-layer-zirconia-all-on-4-bridge.webp'}
+                    alt=""
+                    aria-hidden="true"
+                    width={800}
+                    height={597}
+                    className={styles.materialCardImg}
+                    loading="lazy"
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                  />
+                </div>
 
                 <div>
                   <h3 className={styles.materialCardTitle}>{card.title}</h3>
                   <span className={styles.materialCardSub}>{card.sub}</span>
 
-                  <div className={styles.materialSpecsBox}>
-                    <div className={styles.materialSpecRow}>
-                      <span className={styles.materialSpecLabel}>{d.materialsSpecLabels.material}</span>
-                      <span className={card.isGold ? styles.materialSpecValGold : styles.materialSpecVal}>
-                        {card.material}
-                      </span>
-                    </div>
-                    <div className={styles.materialSpecRow}>
-                      <span className={styles.materialSpecLabel}>{d.materialsSpecLabels.strength}</span>
-                      <span className={card.isGold ? styles.materialSpecValGold : styles.materialSpecVal}>
+                  {/* Engineering Strength & Durability Indicator */}
+                  <div className={styles.strengthMeterBox}>
+                    <div className={styles.strengthHeaderRow}>
+                      <span className={styles.strengthLabel}>{d.materialsSpecLabels.strength}</span>
+                      <span className={card.isGold ? styles.strengthValGold : styles.strengthVal}>
                         {card.strength}
                       </span>
                     </div>
-                    <div className={styles.materialSpecRow}>
-                      <span className={styles.materialSpecLabel}>{d.materialsSpecLabels.chipping}</span>
-                      <span className={card.isGold ? styles.materialSpecValGold : styles.materialSpecVal}>
-                        {card.chippingRisk}
-                      </span>
+                    <div className={styles.strengthBarTrack}>
+                      <div
+                        className={
+                          card.isGold
+                            ? styles.strengthBarFillGold
+                            : cIdx === 1
+                            ? styles.strengthBarFillAcrylic
+                            : styles.strengthBarFillPfm
+                        }
+                      />
                     </div>
-                    <div className={styles.materialSpecRow}>
-                      <span className={styles.materialSpecLabel}>{d.materialsSpecLabels.lifespan}</span>
-                      <span className={card.isGold ? styles.materialSpecValGold : styles.materialSpecVal}>
-                        {card.lifespan}
+                    <div className={styles.metricPillsRow}>
+                      <span className={`${styles.metricPill} ${card.isGold ? styles.metricPillGold : cIdx === 1 ? styles.metricPillDanger : styles.metricPillWarn}`}>
+                        <span className={styles.metricPillDot} />
+                        <span>{card.chippingRisk}</span>
+                      </span>
+                      <span className={`${styles.metricPill} ${card.isGold ? styles.metricPillGold : ''}`}>
+                        <span className={styles.metricPillDot} />
+                        <span>{card.lifespan}</span>
                       </span>
                     </div>
                   </div>
@@ -3348,18 +3472,38 @@ export default function AllOnFourImplantDetailView() {
                         <span
                           className={
                             feat.status === 'good'
-                              ? styles.matCheck
+                              ? styles.iconGood
                               : feat.status === 'bad'
-                              ? styles.matCross
-                              : styles.matWarn
+                              ? styles.iconBad
+                              : styles.iconWarn
                           }
+                          aria-hidden="true"
                         >
-                          {feat.status === 'good' ? '•' : feat.status === 'bad' ? '—' : '–'}
+                          {feat.status === 'good' ? (
+                            <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor">
+                              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" />
+                            </svg>
+                          ) : feat.status === 'bad' ? (
+                            <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor">
+                              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.28 7.22a.75.75 0 00-1.06 1.06L8.94 10l-1.72 1.72a.75.75 0 101.06 1.06L10 11.06l1.72 1.72a.75.75 0 101.06-1.06L11.06 10l1.72-1.72a.75.75 0 00-1.06-1.06L10 8.94 8.28 7.22z" clipRule="evenodd" />
+                            </svg>
+                          ) : (
+                            <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor">
+                              <path fillRule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495zM10 5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0v-3.5A.75.75 0 0110 5zm0 9a1 1 0 100-2 1 1 0 000 2z" clipRule="evenodd" />
+                            </svg>
+                          )}
                         </span>
-                        <span>{feat.text}</span>
+                        <span className={styles.featText}>{feat.text}</span>
                       </li>
                     ))}
                   </ul>
+
+                  {card.verdictText && (
+                    <div className={card.isGold ? styles.verdictBoxGold : styles.verdictBox}>
+                      <span className={styles.verdictLabel}>{card.verdictLabel || 'Clinical Verdict'}</span>
+                      <p className={styles.verdictText}>{card.verdictText}</p>
+                    </div>
+                  )}
                 </div>
               </div>
             ))}

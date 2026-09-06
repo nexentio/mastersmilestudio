@@ -281,3 +281,7 @@
   background-color: #1eb956;
   transform: translateY(-2px);
 }
+
+.sectionSpacing {
+  margin: 2.5rem 0;
+}

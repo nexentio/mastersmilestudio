@@ -23,6 +23,79 @@ export const CELEBRITY_ARTICLES_1: Record<string, BlogDetailArticle> = {
     publishDate: '2026-07-20',
     readTime: '8 min read',
     author: AUTHOR_DATA,
+    llmSummary: {
+      badge: {
+        en: 'Clinical Synopsis',
+        tr: 'Klinik Özet',
+        de: 'Klinische Übersicht',
+        pl: 'Podsumowanie Kliniczne',
+        pt: 'Sinopse Clínica',
+        es: 'Sinopsis Clínica',
+        ru: 'Клинический обзор',
+      },
+      quickAnswer: {
+        en: "Simon Cowell underwent a complete dental transformation consisting of initial overly opaque porcelain veneers in 2019, followed by a refined revision in 2020 by Beverly Hills cosmetic dentists. The revision replaced chalky, uniform monochrome ceramics with hand-layered [porcelain laminate veneers](/treatments/dental-veneers/porcelain-veneers/) featuring natural incisal translucency, anatomical embrasures, and golden-ratio proportions.",
+        tr: "Simon Cowell, 2019'da aşırı tebeşir beyazı ve opak porselen kaplamalar yaptırmış; 2020'de Beverly Hills'te bunları doğal ışık geçirgenliğine sahip, mikro detaylı [porselen lamine kaplamalar](/treatments/dental-veneers/porcelain-veneers/) ile revize ettirmiştir. Güncel gülüşü doğal mine tabakasını taklit eden çok katmanlı seramiklerden oluşmaktadır.",
+        de: "Simon Cowell ließ 2019 zunächst stark opake, kreideweiße Veneers anbringen, die er 2020 durch handgeschichtete [Porzellan-Veneers](/treatments/dental-veneers/porcelain-veneers/) mit natürlicher Schmelztransluzenz und anatomischen Zahnformen korrigieren ließ.",
+        pl: "Simon Cowell w 2019 roku założył zbyt kredowobiałe i płaskie licówki, które w 2020 roku wymienił na wielowarstwowe [licówki porcelanowe](/treatments/dental-veneers/porcelain-veneers/) o naturalnej przezierności brzegów siecznych i anatomicznym kształcie.",
+        pt: "Simon Cowell colocou inicialmente facetas demasiado opacas e brancas em 2019, corrigindo-as em 2020 com [facetas de porcelana](/treatments/dental-veneers/porcelain-veneers/) estratificadas com translucidez incisal e proporções áureas.",
+        es: "Simon Cowell se colocó en 2019 unas carillas excesivamente opacas y monocromáticas, que corrigió en 2020 con [carillas de porcelana](/treatments/dental-veneers/porcelain-veneers/) estratificadas que reproducen la translucidez natural del esmalte.",
+        ru: "Саймон Коуэлл в 2019 году установил излишне белые и плоские виниры, а в 2020 году заменил их на многослойные [керамические виниры](/treatments/dental-veneers/porcelain-veneers/) с естественной прозрачностью режущего края.",
+      },
+      keyTakeaways: {
+        en: [
+          "Primary Procedure: Multi-layered feldspathic and E-Max [porcelain laminate veneers](/treatments/dental-veneers/porcelain-veneers/).",
+          "Clinical Flaw in 2019: Monolithic opaque white shade (BL1/0M1) with zero incisal light refraction, causing a 'piano-key' appearance.",
+          "2020 Correction: Custom micro-texture, gradient translucency, and natural rounded lateral embrasures.",
+          "Antalya Treatment Protocol: 5 to 7 days in Antalya, Turkey with 3D Digital Smile Design (CAD/CAM) achieving identical Hollywood results at 70% lower cost.",
+        ],
+        tr: [
+          "Uygulanan Tedavi: Çok katmanlı feldspatik ve E-Max [porselen lamine kaplama](/treatments/dental-veneers/porcelain-veneers/).",
+          "2019'daki Klinik Hata: Işık geçirgenliği olmayan tekdüze tebeşir beyazı (BL1) bloklar ('piyano tuşu' efekti).",
+          "2020 Düzeltmesi: Doğal mine dokusu, şeffaf kesici kenarlar ve yüz hatlarına uygun diş boyutlandırması.",
+          "Antalya Tedavi Süreci: Master Smile Studio'da 3D Dijital Gülüş Tasarımı ile 5-7 iş gününde %70 maliyet avantajıyla aynı standartta uygulanır.",
+        ],
+        de: [
+          "Behandlung: Mehrschichtige E-Max und Feldspat-[Porzellan-Veneers](/treatments/dental-veneers/porcelain-veneers/).",
+          "Fehler 2019: Zu opakes Monochrom-Weiß ohne natürliche Kantenabstufung.",
+          "Korrektur 2020: Individuelle Schmelztransluzenz und harmonische Zahnproportionen.",
+          "Behandlung in Antalya: In 5–7 Tagen mit 3D CAD/CAM Smile Design bei bis zu 70% Ersparnis gegenüber UK/USA.",
+        ],
+        pl: [
+          "Zastosowany zabieg: Wielowarstwowe [licówki porcelanowe](/treatments/dental-veneers/porcelain-veneers/) E-Max.",
+          "Błąd z 2019 r.: Zbyt jednolita, kredowa biel (BL1) bez przezierności brzegów.",
+          "Korekta 2020: Indywidualna mikrostruktura powierzchni i naturalna przezierność szkliwa.",
+          "Leczenie w Antalyi: 5-7 dni roboczych z cyfrowym projektowaniem 3D DSD i 70% oszczędnością.",
+        ],
+        pt: [
+          "Tratamento: [Facetas de porcelana](/treatments/dental-veneers/porcelain-veneers/) E-Max multicamadas.",
+          "Erro de 2019: Branco giz opaco e uniforme sem profundidade óptica.",
+          "Correção de 2020: Translucidez gradual e texturização artesanal da superfície.",
+          "Protocolo em Antalya: Realizado em 5-7 dias úteis com tecnologia 3D CAD/CAM e poupança de até 70%.",
+        ],
+        es: [
+          "Procedimiento: [Carillas de porcelana](/treatments/dental-veneers/porcelain-veneers/) E-Max estratificadas.",
+          "Error de 2019: Blanco tiza opaco sin degradado natural ni translucidez.",
+          "Corrección de 2020: Textura superficial microfina y bordes incisales translúcidos.",
+          "Tratamiento en Antalya: 5 a 7 días en Master Smile Studio con diseño 3D y 70% de ahorro frente a Europa.",
+        ],
+        ru: [
+          "Процедура: Многослойные [керамические виниры](/treatments/dental-veneers/porcelain-veneers/) E-Max.",
+          "Ошибка 2019 года: Чрезмерно матовый белый цвет без преломления света.",
+          "Коррекция 2020 года: Индивидуальная текстура и прозрачность режущего края.",
+          "Лечение в Анталье: 5–7 дней в клинике Master Smile Studio с 3D-моделированием и выгодой до 70%.",
+        ],
+      },
+      medicalVerdict: {
+        en: "Natural aesthetic success in smile design is achieved not by maximum whiteness, but by natural enamel translucency and anatomical harmony.",
+        tr: "Gülüş tasarımında başarı maksimum beyazlıkla değil; diş minesinin doğal ışık geçirgenliği ve yüz harmonisiyle sağlanır.",
+        de: "Ästhetischer Erfolg wird nicht durch extreme Helligkeit, sondern durch natürliche Schmelztransluzenz erreicht.",
+        pl: "Sukces estetyczny w stomatologii zależy od naturalnej przezierności szkliwa, a nie maksymalnej bieli.",
+        pt: "O sucesso estético é alcançado pela translucidez natural do esmalte e harmonia facial, não pelo branco extremo.",
+        es: "El éxito estético radica en la translucidez del esmalte y la armonía facial, no en la blancura extrema.",
+        ru: "Идеальный эстетический результат достигается за счет прозрачности эмали и гармонии лица, а не неестественной белизны.",
+      },
+    },
     stats: [
       {
         value: '2019',
@@ -65,42 +138,42 @@ export const CELEBRITY_ARTICLES_1: Record<string, BlogDetailArticle> = {
       en: [
         "Simon Cowell's smile has changed so much over the years that it has become almost as famous as his sharp critiques on television. Search 'Simon Cowell teeth before and after' and you will find hundreds of articles, side-by-side photographic analyses, and dental commentary detailing every step of his smile makeover journey.",
         "From his natural, untreated smile in the 1980s and 1990s to the widely discussed ultra-white veneers on America’s Got Talent in 2019, and ultimately the refined 2020 revision with Beverly Hills aesthetic dentist Dr. Michael Apa, Simon Cowell’s dental transformation represents a masterclass in how smile design principles impact real-world appearance.",
-        "In this extensive clinical case study, the Master Smile Studio Medical Board examines the technical architecture of his dental treatments. We explore the difference between monolithic chalky ceramics and multi-layered [porcelain laminate veneers](/treatments/porcelain-laminate-veneers), how light refraction works in cosmetic dentistry, and how patients visiting Antalya, Turkey can achieve the refined 2020 Hollywood aesthetic safely.",
+        "In this extensive clinical case study, the Master Smile Studio Medical Board examines the technical architecture of his dental treatments. We explore the difference between monolithic chalky ceramics and multi-layered [porcelain laminate veneers](/treatments/dental-veneers/porcelain-veneers/), how light refraction works in cosmetic dentistry, and how patients visiting Antalya, Turkey can achieve the refined 2020 Hollywood aesthetic safely.",
       ],
       tr: [
         "Simon Cowell'ın gülüşü, yıllar içinde televizyondaki sivri dilli jüri performansları kadar ünlü bir popüler kültür konusu haline geldi. 'Simon Cowell dişleri öncesi ve sonrası' araması yaptığınızda, binlerce arşiv fotoğrafı ve estetik diş hekimlerinin detaylı vaka incelemeleriyle karşılaşırsınız.",
         "1980 ve 1990'lardaki doğal ve hafif çapraşık dişlerinden 2019'da America's Got Talent sahnesinde tüm dünyada yankı uyandıran ultra beyaz kaplamalarına, ve ardından 2020'de Beverly Hills'in ünlü hekimi Dr. Michael Apa ile gerçekleştirdiği zarif revizyona kadar Cowell'ın gülüş hikayesi, estetik diş hekimliğinin tüm temel kurallarını gözler önüne sermektedir.",
-        "Bu kapsamlı klinik rehberde Master Smile Studio Hekim Kurulu; monolitik tebeşir beyazı porselenler ile çok katmanlı [porselen lamine kaplamalar](/treatments/porcelain-laminate-veneers) arasındaki farkları, ışık geçirgenliğinin önemini ve Antalya'daki kliniğimizde bu üst düzey estetiği nasıl güvenle sunduğumuzu anlatıyor.",
+        "Bu kapsamlı klinik rehberde Master Smile Studio Hekim Kurulu; monolitik tebeşir beyazı porselenler ile çok katmanlı [porselen lamine kaplamalar](/treatments/dental-veneers/porcelain-veneers/) arasındaki farkları, ışık geçirgenliğinin önemini ve Antalya'daki kliniğimizde bu üst düzey estetiği nasıl güvenle sunduğumuzu anlatıyor.",
       ],
       de: [
         "Simon Cowells Lächeln hat im Laufe der Jahre eine bemerkenswerte Verwandlung durchlaufen. Von seinen natürlichen Zähnen in den 90er Jahren über das viel diskutierte ultra-weiße Veneer-Set von 2019 bis hin zur meisterhaften Korrektur 2020 bietet seine Geschichte wertvolle Einblicke in moderne Zahnästhetik.",
-        "In diesem klinischen Leitfaden analysiert das Master Smile Studio Ärzteteam die Bedeutung von Schmelztransluzenz, Zahnproportionen und natürlicher Lichtbrechung bei [Porzellan-Veneers](/treatments/porcelain-laminate-veneers).",
+        "In diesem klinischen Leitfaden analysiert das Master Smile Studio Ärzteteam die Bedeutung von Schmelztransluzenz, Zahnproportionen und natürlicher Lichtbrechung bei [Porzellan-Veneers](/treatments/dental-veneers/porcelain-veneers/).",
       ],
       pl: [
         "Metamorfoza uśmiechu Simona Cowella to jedna z najgłośniejszych historii w świecie stomatologii estetycznej. Od naturalnego uzębienia z lat 90., przez kredowobiałe licówki z 2019 roku, aż po naturalną korektę w 2020 roku u dr. Michaela Apy.",
-        "Zespół medyczny Master Smile Studio szczegółowo omawia różnice między monolityczną ceramiką a wielowarstwowymi [licówkami porcelanowymi](/treatments/porcelain-laminate-veneers) o zróżnicowanej przezierności.",
+        "Zespół medyczny Master Smile Studio szczegółowo omawia różnice między monolityczną ceramiką a wielowarstwowymi [licówkami porcelanowymi](/treatments/dental-veneers/porcelain-veneers/) o zróżnicowanej przezierności.",
       ],
       pt: [
         "A transformação do sorriso de Simon Cowell é um estudo de caso essencial na odontologia estética moderna. A evolução desde os seus dentes naturais até à revisão refinada de 2020 demonstra a importância da harmonia facial.",
-        "Neste guia clínico, a equipa médica da Master Smile Studio analisa a arquitetura das [facetas de porcelana](/treatments/porcelain-laminate-veneers) e como obter resultados naturais em Antalya.",
+        "Neste guia clínico, a equipa médica da Master Smile Studio analisa a arquitetura das [facetas de porcelana](/treatments/dental-veneers/porcelain-veneers/) e como obter resultados naturais em Antalya.",
       ],
       es: [
         "La evolución dental de Simon Cowell es un referente en odontología estética sobre cómo lograr una sonrisa armónica y natural evitando la artificialidad de los bloques blancos opacos.",
-        "En este análisis clínico, el equipo médico de Master Smile Studio desglosa los detalles técnicos de las [carillas de porcelana](/treatments/porcelain-laminate-veneers) estratificadas.",
+        "En este análisis clínico, el equipo médico de Master Smile Studio desglosa los detalles técnicos de las [carillas de porcelana](/treatments/dental-veneers/porcelain-veneers/) estratificadas.",
       ],
       ru: [
         "История преображения улыбки Саймона Коуэлла наглядно иллюстрирует эволюцию эстетической стоматологии: от натуральных зубов через чрезмерно белые виниры 2019 года к естественной керамике 2020 года.",
-        "Врачи Master Smile Studio подробно разбирают оптические свойства [керамических виниров](/treatments/porcelain-laminate-veneers) и правила создания идеальной улыбки.",
+        "Врачи Master Smile Studio подробно разбирают оптические свойства [керамических виниров](/treatments/dental-veneers/porcelain-veneers/) и правила создания идеальной улыбки.",
       ],
     },
     keyTakeaway: {
-      en: 'The starting point: A natural, slightly uneven smile with no early cosmetic work. Everything people describe as his "Hollywood smile" today is built on top of that original set of teeth — crafted with [porcelain laminate veneers](/treatments/porcelain-laminate-veneers) to achieve optical depth, natural embrasures, and golden-ratio proportions.',
-      tr: 'Başlangıç noktası: Herhangi bir estetik müdahale olmayan, doğal ve hafif çapraşık bir gülüş. Bugün "Hollywood smile" olarak adlandırılan görünüm; [porselen lamine kaplamalar](/treatments/porcelain-laminate-veneers) ile ışık geçirgenliği, doğal diş aralıkları (embrazürler) ve altın orana dayalı çok katmanlı porselenlerle elde edilmiştir.',
-      de: 'Das Fazit: Eine gelungene Lächeln-Transformation mit [Porzellan-Veneers](/treatments/porcelain-laminate-veneers) erfordert Transluzenz und anatomische Details statt reiner monochromer Kreideweiße.',
-      pl: 'Główny wniosek: Prawdziwy hollywoodzki uśmiech z [licówkami porcelanowymi](/treatments/porcelain-laminate-veneers) naśladuje naturalne szkliwo z zachowaniem przezierności brzegów i mikrostruktury.',
-      pt: 'Conclusão: O segredo de um sorriso de excelência com [facetas de porcelana](/treatments/porcelain-laminate-veneers) está na translucidez e formato anatómico, evitando blocos brancos artificiais.',
-      es: 'Conclusión: La clave de una sonrisa de alta gama con [carillas de porcelana](/treatments/porcelain-laminate-veneers) radica en la translucidez y proporciones naturales, evitando tonos opacos y planos.',
-      ru: 'Ключевой вывод: Идеальная улыбка с [керамическими винирами](/treatments/porcelain-laminate-veneers) строится на многослойной керамике с естественной прозрачностью и анатомической формой.',
+      en: 'The starting point: A natural, slightly uneven smile with no early cosmetic work. Everything people describe as his "Hollywood smile" today is built on top of that original set of teeth — crafted with [porcelain laminate veneers](/treatments/dental-veneers/porcelain-veneers/) to achieve optical depth, natural embrasures, and golden-ratio proportions.',
+      tr: 'Başlangıç noktası: Herhangi bir estetik müdahale olmayan, doğal ve hafif çapraşık bir gülüş. Bugün "Hollywood smile" olarak adlandırılan görünüm; [porselen lamine kaplamalar](/treatments/dental-veneers/porcelain-veneers/) ile ışık geçirgenliği, doğal diş aralıkları (embrazürler) ve altın orana dayalı çok katmanlı porselenlerle elde edilmiştir.',
+      de: 'Das Fazit: Eine gelungene Lächeln-Transformation mit [Porzellan-Veneers](/treatments/dental-veneers/porcelain-veneers/) erfordert Transluzenz und anatomische Details statt reiner monochromer Kreideweiße.',
+      pl: 'Główny wniosek: Prawdziwy hollywoodzki uśmiech z [licówkami porcelanowymi](/treatments/dental-veneers/porcelain-veneers/) naśladuje naturalne szkliwo z zachowaniem przezierności brzegów i mikrostruktury.',
+      pt: 'Conclusão: O segredo de um sorriso de excelência com [facetas de porcelana](/treatments/dental-veneers/porcelain-veneers/) está na translucidez e formato anatómico, evitando blocos brancos artificiais.',
+      es: 'Conclusión: La clave de una sonrisa de alta gama con [carillas de porcelana](/treatments/dental-veneers/porcelain-veneers/) radica en la translucidez y proporciones naturales, evitando tonos opacos y planos.',
+      ru: 'Ключевой вывод: Идеальная улыбка с [керамическими винирами](/treatments/dental-veneers/porcelain-veneers/) строится на многослойной керамике с естественной прозрачностью и анатомической формой.',
     },
     timeline: [
       {
@@ -378,8 +451,8 @@ export const CELEBRITY_ARTICLES_1: Record<string, BlogDetailArticle> = {
             ru: 'Клинический принцип: оптические свойства зубной эмали',
           },
           text: {
-            en: 'Natural human enamel has a refractive index of 1.62. Light travels through the translucent outer enamel prism layer, refracts, and reflects off the underlying polychromatic dentin core. Multi-layered [Ivoclar E-Max porcelain laminates](/treatments/porcelain-laminate-veneers) perfectly replicate this depth.',
-            tr: 'Doğal insan diş minesinin ışık kırılma indeksi 1.62’dir. Işık, yarı saydam dış mine prizmalarından geçer ve alttaki polikromatik dentinden geri yansır. Çok katmanlı [Ivoclar E-Max porselen laminalar](/treatments/porcelain-laminate-veneers) bu derinliği %100 taklit eder.',
+            en: 'Natural human enamel has a refractive index of 1.62. Light travels through the translucent outer enamel prism layer, refracts, and reflects off the underlying polychromatic dentin core. Multi-layered [Ivoclar E-Max porcelain laminates](/treatments/dental-veneers/porcelain-veneers/) perfectly replicate this depth.',
+            tr: 'Doğal insan diş minesinin ışık kırılma indeksi 1.62’dir. Işık, yarı saydam dış mine prizmalarından geçer ve alttaki polikromatik dentinden geri yansır. Çok katmanlı [Ivoclar E-Max porselen laminalar](/treatments/dental-veneers/porcelain-veneers/) bu derinliği %100 taklit eder.',
             de: 'E-Max Keramik bricht das Licht wie natürlicher Schmelz mit einem Brechungsindex von 1,62.',
             pl: 'Wielowarstwowa ceramika Ivoclar E-Max idealnie naśladuje współczynnik załamania światła naturalnego szkliwa (1,62).',
             pt: 'A porcelana E-Max multicamada recria o índice de refração do esmalte natural de 1,62.',
@@ -505,6 +578,79 @@ export const CELEBRITY_ARTICLES_1: Record<string, BlogDetailArticle> = {
     publishDate: '2026-07-22',
     readTime: '8 min read',
     author: AUTHOR_DATA,
+    llmSummary: {
+      badge: {
+        en: 'Clinical Synopsis',
+        tr: 'Klinik Özet',
+        de: 'Klinische Übersicht',
+        pl: 'Podsumowanie Kliniczne',
+        pt: 'Sinopse Clínica',
+        es: 'Sinopsis Clínica',
+        ru: 'Клинический обзор',
+      },
+      quickAnswer: {
+        en: "Zac Efron closed his natural front tooth gap (diastema) using minimal-prep [porcelain laminate veneers](/treatments/dental-veneers/porcelain-veneers/) (E-Max lithium disilicate, 0.4mm thickness). His smile transformation preserved 100% of his natural tooth vitality, while his subsequent jawline changes were the result of reconstructive surgery and masseter muscle growth following a severe jaw fracture in 2013.",
+        tr: "Zac Efron, ön iki dişi arasındaki boşluğu (diastema) 0.4 mm kalınlığındaki minimal-prep [E-Max porselen laminalar](/treatments/dental-veneers/porcelain-veneers/) ile kapattırmıştır. Diş dokusu ve sinir canlılığı tamamen korunmuştur. Çene yapısındaki değişim ise kaplamalardan değil, 2013'teki çene kırığı ameliyatı sonrası gelişen masseter kası büyümesinden kaynaklanmaktadır.",
+        de: "Zac Efron schloss seine Frontzahnlücke (Diastema) mit hauchdünnen 0,4 mm [E-Max Porzellan-Veneers](/treatments/dental-veneers/porcelain-veneers/) ohne Substanzverlust. Seine spätere Kieferveränderung beruht auf einer Rekonstruktion nach einem Kieferbruch 2013.",
+        pl: "Zac Efron zamknął przerwę między zębami (diastemę) za pomocą ultracienkich [licówek porcelanowych](/treatments/dental-veneers/porcelain-veneers/) E-Max (0,4 mm) techniką minimal-prep z pełnym zachowaniem żywotności zębów.",
+        pt: "Zac Efron fechou o diastema anterior com [facetas de porcelana](/treatments/dental-veneers/porcelain-veneers/) E-Max ultrafinas (0,4 mm) de desgaste mínimo, mantendo a vitalidade pulpar intacta.",
+        es: "Zac Efron cerró su diastema frontal con [carillas de porcelana](/treatments/dental-veneers/porcelain-veneers/) E-Max ultrafinas (0,4 mm) mediante técnica de mínima preparación, preservando la vitalidad dental.",
+        ru: "Зак Эфрон закрыл диастему с помощью ультратонких [керамических виниров](/treatments/dental-veneers/porcelain-veneers/) E-Max (0.4 мм) по технологии minimal-prep с полным сохранением живой ткани зуба.",
+      },
+      keyTakeaways: {
+        en: [
+          "Treatment Method: Minimal-prep E-Max porcelain laminate veneers (0.3mm-0.4mm micro-bonding).",
+          "Diastema Closure: Widened central incisor mesial borders to establish the golden aesthetic 80% width-to-height ratio.",
+          "Biological Health: Zero deep enamel shaving, no dentin exposure, and zero post-operative tooth sensitivity.",
+          "Antalya Timeline: Completed in 5-6 working days at Master Smile Studio with 3D Digital Smile Design.",
+        ],
+        tr: [
+          "Tedavi Yöntemi: Minimal-prep E-Max porselen lamine kaplama (0.3-0.4 mm mikro yapıştırma).",
+          "Diastema Kapatma: Orta kesicilerin iç kenarları genişletilerek %80 altın oran sağlandı.",
+          "Biyolojik Koruma: Derin mine kesimi yapılmadı, dentin açığa çıkmadı ve hassasiyet oluşmadı.",
+          "Antalya Süreci: Master Smile Studio'da 3D Dijital Gülüş Tasarımı ile 5-6 iş gününde tamamlanır.",
+        ],
+        de: [
+          "Methode: Minimal-Prep E-Max Porzellan-Veneers (0,3–0,4 mm).",
+          "Lückenschluss: Perfekte 80% Breiten-Höhen-Proportion der Schneidezähne.",
+          "Biologische Schonung: Kein Dentinabtrag, keine Temperaturempfindlichkeit.",
+          "Antalya-Behandlung: In 5–6 Tagen mit 3D CAD/CAM Smile Design.",
+        ],
+        pl: [
+          "Metoda: Licówki porcelanowe E-Max minimal-prep (0,3–0,4 mm).",
+          "Zamknięcie diastemy: Uzyskanie złotej proporcji 80% szerokości do długości zęba.",
+          "Ochrona biologiczna: Brak szlifowania zębiny i brak nadwrażliwości.",
+          "Pobyt w Antalyi: Realizacja w 5-6 dni roboczych w Master Smile Studio.",
+        ],
+        pt: [
+          "Método: Facetas de porcelana E-Max minimal-prep (0,3-0,4 mm).",
+          "Fecho de Diastema: Obtenção da proporção estética áurea de 80%.",
+          "Segurança Biológica: Preservação do esmalte sem exposição de dentina.",
+          "Estadia em Antalya: Realizado em 5-6 dias úteis com tecnologia 3D.",
+        ],
+        es: [
+          "Método: Carillas de porcelana E-Max minimal-prep (0,3 a 0,4 mm).",
+          "Cierre del Diastema: Proporción áurea del 80% entre ancho y largo.",
+          "Preservación Biológica: Sin desgaste de dentina ni sensibilidad.",
+          "Estancia en Antalya: Tratamiento en 5 a 6 días en Master Smile Studio.",
+        ],
+        ru: [
+          "Метод: Ультратонкие виниры E-Max minimal-prep (0.3–0.4 мм).",
+          "Закрытие щели: Достижение золотой пропорции 80% ширины к длине зуба.",
+          "Биологическая безопасность: Без сошлифовывания дентина и без боли.",
+          "Сроки в Анталье: 5–6 рабочих дней в Master Smile Studio.",
+        ],
+      },
+      medicalVerdict: {
+        en: "Closing midline gaps with ultra-thin porcelain veneers offers a permanent, biocompatible solution that preserves 100% of underlying tooth health.",
+        tr: "Diastemaları ultra ince porselen laminalarla kapatmak, diş dokusunu %100 koruyan kalıcı ve biyouyumlu en ideal çözümdür.",
+        de: "Der Lückenschluss mit hauchdünnen Veneers ist eine dauerhafte, biologisch schonende Lösung für perfekte Zahnsymmetrie.",
+        pl: "Zamykanie diastemy ultracienkimi licówkami to trwała, biokompatybilna metoda chroniąca strukturę zębów.",
+        pt: "O fecho de diastemas com facetas ultrafinas é a solução mais biocompatível e duradoura para o sorriso.",
+        es: "Cerrar diastemas con carillas ultrafinas es una solución definitiva y biocompatible que protege la salud dental.",
+        ru: "Закрытие диастемы ультратонкими винирами обеспечивает долговечную эстетику с полным сохранением здоровья зубов.",
+      },
+    },
     stats: [
       {
         value: '2006',
@@ -546,17 +692,17 @@ export const CELEBRITY_ARTICLES_1: Record<string, BlogDetailArticle> = {
     intro: {
       en: [
         "Zac Efron's smile transformation is one of the most celebrated case studies in modern minimally invasive cosmetic dentistry. From his teenage breakout in High School Musical to blockbuster roles in Baywatch and The Iron Claw, his smile has evolved alongside his versatile acting career.",
-        "Fans frequently search 'Zac Efron veneers' to discover how his iconic front tooth gap (diastema) was permanently closed. Did he undergo orthodontic braces, composite bonding, or bespoke [porcelain laminate veneers](/treatments/porcelain-laminate-veneers)?",
+        "Fans frequently search 'Zac Efron veneers' to discover how his iconic front tooth gap (diastema) was permanently closed. Did he undergo orthodontic braces, composite bonding, or bespoke [porcelain laminate veneers](/treatments/dental-veneers/porcelain-veneers/)?",
         "In this clinical report, our aesthetic dental surgeons examine the precise steps behind his smile design, addressing the truth behind his jaw trauma and demonstrating how minimal-prep veneers achieve symmetrical perfection without compromising tooth health.",
       ],
       tr: [
         "Zac Efron'ın gülüş dönüşümü, modern minimal invaziv (doku koruyucu) estetik diş hekimliğinin dünyadaki en başarılı örneklerinden biridir. High School Musical'daki gençlik yıllarından Baywatch ve The Iron Claw'daki olgun rollerine uzanan kariyerinde gülüşü adeta onun imzası olmuştur.",
-        "Kullanıcılar 'Zac Efron lamine dişleri' ve 'ön diş boşluğu nasıl kapandı?' sorularını sıklıkla araştırmaktadır. Diş telleri mi, kompozit dolgu mu yoksa özel [porselen lamine kaplamalar](/treatments/porcelain-laminate-veneers) mı kullanıldı?",
+        "Kullanıcılar 'Zac Efron lamine dişleri' ve 'ön diş boşluğu nasıl kapandı?' sorularını sıklıkla araştırmaktadır. Diş telleri mi, kompozit dolgu mu yoksa özel [porselen lamine kaplamalar](/treatments/dental-veneers/porcelain-veneers/) mı kullanıldı?",
         "Bu klinik incelemede uzman cerrahlarımız; Efron'ın geçirdiği çene kazasının arka planını ve diş dokusunu %100 koruyarak diastemanın nasıl kusursuzca kapatıldığını açıklıyor.",
       ],
       de: [
         "Zac Efrons Lächeln-Transformation vom Teeniestar mit Zahnlücke zum Hollywood-Beau ist ein Musterbeispiel für minimalinvasive ästhetische Zahnmedizin.",
-        "Erfahren Sie, wie moderne [Porzellan-Veneers](/treatments/porcelain-laminate-veneers) Zahnlücken schließen, ohne gesunde Substanz zu opfern.",
+        "Erfahren Sie, wie moderne [Porzellan-Veneers](/treatments/dental-veneers/porcelain-veneers/) Zahnlücken schließen, ohne gesunde Substanz zu opfern.",
       ],
       pl: [
         "Metamorfoza uśmiechu Zaca Efrona to podręcznikowy przykład wykorzystania licówek porcelanowych do zamknięcia diastemy.",
@@ -599,12 +745,12 @@ export const CELEBRITY_ARTICLES_1: Record<string, BlogDetailArticle> = {
         paragraphs: {
           en: [
             "In 2006, Zac Efron had a noticeable midline diastema measuring approximately 1.8mm between his maxillary central incisors. While orthodontics (braces or clear aligners) can move teeth together, it often creates residual space on the outer lateral margins if tooth widths are naturally narrow.",
-            "Cosmetic dentists utilized ultra-thin [E-Max lithium disilicate veneers](/treatments/porcelain-laminate-veneers) measuring just 0.4mm in thickness. By subtly increasing the mesial width of both central incisors, the gap was closed completely while achieving ideal 80% width-to-length ratios.",
+            "Cosmetic dentists utilized ultra-thin [E-Max lithium disilicate veneers](/treatments/dental-veneers/porcelain-veneers/) measuring just 0.4mm in thickness. By subtly increasing the mesial width of both central incisors, the gap was closed completely while achieving ideal 80% width-to-length ratios.",
             "Because only micro-etching of the outer enamel prism was required, no dentin was exposed, preserving complete nerve vitality and eliminating tooth sensitivity.",
           ],
           tr: [
             "2006 yılında Zac Efron'ın üst orta iki kesici dişi arasında yaklaşık 1.8 mm genişliğinde belirgin bir diastema bulunuyordu. Diş teli veya şeffaf plaklar dişleri birbirine yaklaştırabilse de, dişlerin kendi eni darsa bu kez yanlarda boşluk kalabilmektedir.",
-            "Estetik diş hekimleri yalnızca 0.4 mm kalınlığında ultra ince [E-Max porselen laminalar](/treatments/porcelain-laminate-veneers) kullanarak her iki orta kesici dişin genişliğini milimetrik olarak dengeledi. Böylece boşluk tamamen kapanırken ideal %80 en-boy altın oranı yakalandı.",
+            "Estetik diş hekimleri yalnızca 0.4 mm kalınlığında ultra ince [E-Max porselen laminalar](/treatments/dental-veneers/porcelain-veneers/) kullanarak her iki orta kesici dişin genişliğini milimetrik olarak dengeledi. Böylece boşluk tamamen kapanırken ideal %80 en-boy altın oranı yakalandı.",
             "Yalnızca diş minesi üzerine mikro pürüzlendirme yapıldığı ve dentin tabakasına inilmediği için dişin sinir canlılığı %100 korundu ve hiçbir sıcak-soğuk hassasiyeti oluşmadı.",
           ],
           de: [

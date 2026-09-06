@@ -58,7 +58,7 @@ export default function ReviewsMainSection() {
         es: 'Implantes Dentales',
         ru: 'Зубные импланты',
       },
-      href: '/treatments/dental-implants',
+      href: '/treatments/dental-implants/',
       hasImage: true,
     },
     {
@@ -71,7 +71,7 @@ export default function ReviewsMainSection() {
         es: 'Coronas Dentales',
         ru: 'Зубные коронки',
       },
-      href: '/treatments/zirconium-crowns',
+      href: '/treatments/dental-crowns/',
       hasImage: false,
     },
     {
@@ -84,7 +84,7 @@ export default function ReviewsMainSection() {
         es: 'Carillas Dentales',
         ru: 'Виниры для зубов',
       },
-      href: '/treatments/porcelain-laminate-veneers',
+      href: '/treatments/dental-veneers/',
       hasImage: false,
     },
     {
@@ -97,7 +97,7 @@ export default function ReviewsMainSection() {
         es: 'Puente Dental',
         ru: 'Зубной мост',
       },
-      href: '/treatments/dental-bridges',
+      href: '/treatments/dental-bridges/',
       hasImage: false,
     },
     {
@@ -110,7 +110,7 @@ export default function ReviewsMainSection() {
         es: 'Dentaduras Postizas',
         ru: 'Зубные протезы',
       },
-      href: '/treatments/implant-supported-dentures',
+      href: '/treatments/dentures/',
       hasImage: false,
     },
     {
@@ -123,7 +123,7 @@ export default function ReviewsMainSection() {
         es: 'Odontología Estética',
         ru: 'Эстетическая стоматология',
       },
-      href: '/treatments/smile-makeover',
+      href: '/treatments/cosmetic-dentistry/',
       hasImage: false,
     },
     {
@@ -136,7 +136,7 @@ export default function ReviewsMainSection() {
         es: 'Odontología General',
         ru: 'Общая стоматология',
       },
-      href: '/treatments/root-canal-treatment',
+      href: '/treatments/general-dentistry/',
       hasImage: false,
     },
   ];

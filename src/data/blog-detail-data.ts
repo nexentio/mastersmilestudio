@@ -5,6 +5,15 @@ import { CELEBRITY_ARTICLES_3 } from './blog-articles/celebrity-articles-3';
 import { CELEBRITY_ARTICLES_4 } from './blog-articles/celebrity-articles-4';
 import { CELEBRITY_ARTICLES_PART2 } from './blog-articles/celebrities-part2';
 import { CLINICAL_GUIDES_ARTICLES } from './blog-articles/clinical-guides-full';
+import { INTERNATIONAL_GUIDES_ARTICLES } from './blog-articles/international-guides';
+import { MIGRATED_CLINICAL_GUIDES } from './blog-articles/migrated-clinical-guides';
+
+export interface LLMQuickSummary {
+  badge?: Record<string, string>;
+  quickAnswer: Record<string, string>;
+  keyTakeaways: Record<string, string[]>;
+  medicalVerdict?: Record<string, string>;
+}
 
 export interface BlogDetailArticle {
   slug: string;
@@ -17,6 +26,7 @@ export interface BlogDetailArticle {
     title: Record<string, string>;
     avatar: string;
   };
+  llmSummary?: LLMQuickSummary;
   stats?: {
     value: string;
     label: Record<string, string>;
@@ -1114,6 +1124,12 @@ export function getBlogDetailBySlug(slug: string): BlogDetailArticle {
   }
   if (CLINICAL_GUIDES_ARTICLES[slug]) {
     return CLINICAL_GUIDES_ARTICLES[slug];
+  }
+  if (INTERNATIONAL_GUIDES_ARTICLES[slug]) {
+    return INTERNATIONAL_GUIDES_ARTICLES[slug];
+  }
+  if (MIGRATED_CLINICAL_GUIDES[slug]) {
+    return MIGRATED_CLINICAL_GUIDES[slug];
   }
   if (BLOG_DETAIL_ARTICLES[slug]) {
     return BLOG_DETAIL_ARTICLES[slug];

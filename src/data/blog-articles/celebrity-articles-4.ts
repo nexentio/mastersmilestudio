@@ -74,7 +74,7 @@ export const CELEBRITY_ARTICLES_4: Record<string, BlogDetailArticle> = {
       ],
       de: [
         "Scarlett Johanssons Lächeln gilt als Inbegriff moderner Hollywood-Eleganz. Von zierlichen Zähnen in den 90ern bis zum perfekten Smile Arc.",
-        "Erfahren Sie, wie feminine [Porzellan-Veneers](/treatments/porcelain-laminate-veneers) Gesichtszüge harmonisch unterstreichen.",
+        "Erfahren Sie, wie feminine [Porzellan-Veneers](/treatments/dental-veneers/porcelain-veneers/) Gesichtszüge harmonisch unterstreichen.",
       ],
       pl: [
         "Uśmiech Scarlett Johansson to wzór kobiecej elegancji i harmonii. Analizujemy przejście od młodzieńczych nierówności do perfekcyjnych licówek E-Max.",
@@ -117,11 +117,11 @@ export const CELEBRITY_ARTICLES_4: Record<string, BlogDetailArticle> = {
         paragraphs: {
           en: [
             "In aesthetic smile design, tooth gender characteristics are vital. Masculine smiles typically feature square, bold line angles with flat incisal edges. In contrast, feminine smiles prioritize rounded mesial and distal line angles, delicate incisal embrasures, and softer contours.",
-            "By choosing [custom Ivoclar E-Max laminate veneers](/treatments/porcelain-laminate-veneers) crafted with delicate rounded edges and translucent BL2 shading, Scarlett Johansson preserved her organic facial warmth while illuminating her entire red-carpet presence.",
+            "By choosing [custom Ivoclar E-Max laminate veneers](/treatments/dental-veneers/porcelain-veneers/) crafted with delicate rounded edges and translucent BL2 shading, Scarlett Johansson preserved her organic facial warmth while illuminating her entire red-carpet presence.",
           ],
           tr: [
             "Estetik gülüş tasarımında cinsiyet karakteristikleri büyük önem taşır. Maskülen gülüşlerde düz ve köşeli hatlar tercih edilirken, feminen gülüşlerde yuvarlatılmış kenar açıları, yumuşak geçişler ve narin embrazürler ön plandadır.",
-            "Scarlett Johansson, yuvarlatılmış hatlara ve yarı saydam BL2 tonuna sahip [özel Ivoclar E-Max porselen laminalar](/treatments/porcelain-laminate-veneers) ile doğal yüz sıcaklığını koruyarak büyüleyici bir ışıltı elde etmiştir.",
+            "Scarlett Johansson, yuvarlatılmış hatlara ve yarı saydam BL2 tonuna sahip [özel Ivoclar E-Max porselen laminalar](/treatments/dental-veneers/porcelain-veneers/) ile doğal yüz sıcaklığını koruyarak büyüleyici bir ışıltı elde etmiştir.",
           ],
           de: [
             'Weiche Kanten und individuelle Transluzenz schaffen ein strahlendes, natürliches und feminines Ergebnis.',
@@ -215,32 +215,32 @@ export const CELEBRITY_ARTICLES_4: Record<string, BlogDetailArticle> = {
       en: [
         "Morgan Freeman is one of cinema’s most revered and recognizable figures, possessing an authoritative voice and commanding presence in films like The Shawshank Redemption, Driving Miss Daisy, and Million Dollar Baby.",
         "For decades, Freeman sported his natural teeth with significant age-related yellowing, severe occlusal wear (attrition), and dark interdental gaps. In his late 60s and early 70s, he underwent a comprehensive dental rehabilitation.",
-        "In this clinical analysis, the Master Smile Studio Medical Board explains how geriatric and mature smile makeovers restore vertical facial height, support sunken lips, and provide healthy lifelong function through [Zirconium crowns](/treatments/zirconium-crowns) and [dental implants](/treatments/dental-implants).",
+        "In this clinical analysis, the Master Smile Studio Medical Board explains how geriatric and mature smile makeovers restore vertical facial height, support sunken lips, and provide healthy lifelong function through [Zirconium crowns](/treatments/dental-crowns/zirconium-crowns/) and [dental implants](/treatments/dental-implants/).",
       ],
       tr: [
         "Morgan Freeman, The Shawshank Redemption, Driving Miss Daisy ve Million Dollar Baby gibi başyapıtlardaki etkileyici sesi ve asil duruşuyla sinema tarihinin en büyük efsanelerinden biridir.",
         "Onlarca yıl boyunca yaşa bağlı sararmış, çiğneme yüzeyleri aşınmış ve aralarında koyu boşluklar oluşan doğal dişleriyle izleyicilerin karşısına çıkan Freeman, 70'li yaşlarının başında kapsamlı bir gülüş gençleştirme tedavisi yaptırdı.",
-        "Bu klinik vaka çalışmasında Master Smile Studio Hekim Kurulu; ileri yaşlarda dikey kapanış yüksekliğinin (VDO) [zirkonyum kaplamalar](/treatments/zirconium-crowns) ve [diş implantları](/treatments/dental-implants) ile nasıl yükseltildiğini ve yüzdeki kırışıklıkların nasıl ameliyatsız giderildiğini açıklıyor.",
+        "Bu klinik vaka çalışmasında Master Smile Studio Hekim Kurulu; ileri yaşlarda dikey kapanış yüksekliğinin (VDO) [zirkonyum kaplamalar](/treatments/dental-crowns/zirconium-crowns/) ve [diş implantları](/treatments/dental-implants/) ile nasıl yükseltildiğini ve yüzdeki kırışıklıkların nasıl ameliyatsız giderildiğini açıklıyor.",
       ],
       de: [
         "Morgan Freemans Lächeln-Verjüngung im Alter von über 70 Jahren zeigt die transformative Kraft moderner Zahnmedizin.",
-        "Erfahren Sie, wie [Zirkonkronen](/treatments/zirconium-crowns) und Implantate die vertikale Gesichtshöhe wiederherstellen.",
+        "Erfahren Sie, wie [Zirkonkronen](/treatments/dental-crowns/zirconium-crowns/) und Implantate die vertikale Gesichtshöhe wiederherstellen.",
       ],
       pl: [
         "Odmłodzenie uśmiechu Morgana Freemana po 70. roku życia to inspirujący przykład odbudowy zwarcia.",
-        "Sprawdź, jak [korony cyrkonowe](/treatments/zirconium-crowns) i implanty przywracają młodzieńczy profil twarzy.",
+        "Sprawdź, jak [korony cyrkonowe](/treatments/dental-crowns/zirconium-crowns/) i implanty przywracają młodzieńczy profil twarzy.",
       ],
       pt: [
         "O rejuvenescimento dental de Morgan Freeman após os 70 anos devolveu o suporte labial e a mastigação perfeita.",
-        "Conheça o impacto das [coroas de zircónia](/treatments/zirconium-crowns) na estética madura.",
+        "Conheça o impacto das [coroas de zircónia](/treatments/dental-crowns/zirconium-crowns/) na estética madura.",
       ],
       es: [
         "El rejuvenecimiento dental de Morgan Freeman a los 70 años devolvió soporte a sus labios y mejoró su mordida.",
-        "Descubra cómo las [coronas de circonio](/treatments/zirconium-crowns) restauran la dimensión vertical.",
+        "Descubra cómo las [coronas de circonio](/treatments/dental-crowns/zirconium-crowns/) restauran la dimensión vertical.",
       ],
       ru: [
         "Омоложение улыбки Моргана Фримана после 70 лет — яркий пример комплексного антивозрастного протезирования.",
-        "Разбираем восстановление прикуса с помощью [циркониевых коронок](/treatments/zirconium-crowns) и имплантов.",
+        "Разбираем восстановление прикуса с помощью [циркониевых коронок](/treatments/dental-crowns/zirconium-crowns/) и имплантов.",
       ],
     },
     keyTakeaway: {
@@ -267,11 +267,11 @@ export const CELEBRITY_ARTICLES_4: Record<string, BlogDetailArticle> = {
         paragraphs: {
           en: [
             "As we age, continuous chewing causes teeth to wear down by 2mm to 4mm, causing the lower jaw to over-close. This loss of vertical dimension leads to sunken lips, deepened nasolabial folds, and a collapsed facial profile.",
-            "For Morgan Freeman, prosthodontists restored his vertical height using biocompatible [German Zirconium full-coverage crowns](/treatments/zirconium-crowns). The crowns provided strong structural support, filled out his buccal corridors, and created a warm, dignified, natural ivory-white smile.",
+            "For Morgan Freeman, prosthodontists restored his vertical height using biocompatible [German Zirconium full-coverage crowns](/treatments/dental-crowns/zirconium-crowns/). The crowns provided strong structural support, filled out his buccal corridors, and created a warm, dignified, natural ivory-white smile.",
           ],
           tr: [
             "Yaşlandıkça çiğneme kuvvetleri nedeniyle diş minesi 2-4 mm aşınır ve çene birbirine fazla yaklaşır. Dikey boyutun çökmesi; dudakların içeri çekilmesine, burun-dudak çizgilerinin derinleşmesine ve yaşlı bir yüz profiline yol açar.",
-            "Morgan Freeman için uzman hekimler, biyouyumlu [Alman Zirkonyum kaplamalar](/treatments/zirconium-crowns) ile dikey boyutu ideal seviyeye yükseltti. Bu işlem dudaklara hacim kazandırdı ve Freeman'ın asil duruşunu tamamlayan doğal fildişi tonunda bir gülüş sundu.",
+            "Morgan Freeman için uzman hekimler, biyouyumlu [Alman Zirkonyum kaplamalar](/treatments/dental-crowns/zirconium-crowns/) ile dikey boyutu ideal seviyeye yükseltti. Bu işlem dudaklara hacim kazandırdı ve Freeman'ın asil duruşunu tamamlayan doğal fildişi tonunda bir gülüş sundu.",
           ],
           de: [
             'Der Wiederaufbau der Zahnhöhe mit Zirkonkronen glättet Falten und stützt die Lippen von innen heraus.',

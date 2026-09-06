@@ -127,7 +127,7 @@ export default function GalleryGrid({ locale: propsLocale }: { locale?: string }
             >
               <Image
                 src="/transformations/t1.jpg"
-                alt={t('before')}
+                alt={`${t('spotlightPatient')} - ${t('spotlightTreatment')} ${t('before')} - Master Smile Studio Antalya`}
                 fill
                 unoptimized
                 style={{ objectFit: 'cover', objectPosition: 'center' }}
@@ -166,7 +166,7 @@ export default function GalleryGrid({ locale: propsLocale }: { locale?: string }
             >
               <Image
                 src="/transformations/t1.jpg"
-                alt={t('after')}
+                alt={`${t('spotlightPatient')} - ${t('spotlightTreatment')} ${t('after')} - Master Smile Studio Antalya`}
                 fill
                 unoptimized
                 style={{ objectFit: 'cover', objectPosition: 'center' }}
@@ -321,7 +321,7 @@ export default function GalleryGrid({ locale: propsLocale }: { locale?: string }
                   <div style={{ position: 'relative', height: '140px', overflow: 'hidden' }}>
                     <Image
                       src={item.beforeImage}
-                      alt={`${item.name} ${t('before')}`}
+                      alt={`${item.name} ${treatmentText} ${t('before')} - Master Smile Studio Antalya`}
                       fill
                       unoptimized
                       style={{ objectFit: 'cover' }}
@@ -348,7 +348,7 @@ export default function GalleryGrid({ locale: propsLocale }: { locale?: string }
                   <div style={{ position: 'relative', height: '140px', overflow: 'hidden', borderTop: '1px solid rgba(255, 255, 255, 0.08)' }}>
                     <Image
                       src={item.afterImage}
-                      alt={`${item.name} ${t('after')}`}
+                      alt={`${item.name} ${treatmentText} ${t('after')} - Master Smile Studio Antalya`}
                       fill
                       unoptimized
                       style={{ objectFit: 'cover' }}
@@ -376,7 +376,7 @@ export default function GalleryGrid({ locale: propsLocale }: { locale?: string }
                 <div style={{ position: 'relative', height: '280px' }}>
                   <Image
                     src={item.portraitImage}
-                    alt={`${item.name} ${t('after')}`}
+                    alt={`${item.name} ${treatmentText} Smile Result - Master Smile Studio Antalya`}
                     fill
                     unoptimized
                     style={{ objectFit: 'cover', objectPosition: 'top center' }}

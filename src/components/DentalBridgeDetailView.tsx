@@ -1,25 +1,25 @@
 'use client';
 
 import React from 'react';
-import GeneralDentistryIntroSection from '@/components/treatment-sections/GeneralDentistryIntroSection';
-import GeneralDentistryAccordionSection from '@/components/treatment-sections/GeneralDentistryAccordionSection';
-import GeneralDentistryJourneySection from '@/components/treatment-sections/GeneralDentistryJourneySection';
+import TreatmentBridgeRightTreatmentAccordion from '@/components/treatment-sections/TreatmentBridgeRightTreatmentAccordion';
+import TreatmentJourneySimpleSection from '@/components/treatment-sections/TreatmentJourneySimpleSection';
 import TreatmentServicesIncludedSection from '@/components/treatment-sections/TreatmentServicesIncludedSection';
-import RealPatientsSection from '@/components/RealPatientsSection';
+import TreatmentBridgeBeforeAfterSliderSection from '@/components/treatment-sections/TreatmentBridgeBeforeAfterSliderSection';
+import TreatmentBridgePackagesSlider from '@/components/treatment-sections/TreatmentBridgePackagesSlider';
 import TreatmentReviewsSection from '@/components/treatment-sections/TreatmentReviewsSection';
-import GeneralDentistryFaqSection from '@/components/treatment-sections/GeneralDentistryFaqSection';
+import TreatmentBridgeFAQSection from '@/components/treatment-sections/TreatmentBridgeFAQSection';
 import TreatmentInteractiveQuoteForm from '@/components/treatment-sections/TreatmentInteractiveQuoteForm';
 
 export default function DentalBridgeDetailView() {
   return (
     <>
-      <GeneralDentistryIntroSection />
-      <GeneralDentistryAccordionSection />
-      <GeneralDentistryJourneySection />
+      <TreatmentBridgeRightTreatmentAccordion />
+      <TreatmentJourneySimpleSection />
       <TreatmentServicesIncludedSection />
-      <RealPatientsSection />
+      <TreatmentBridgeBeforeAfterSliderSection />
+      <TreatmentBridgePackagesSlider />
       <TreatmentReviewsSection />
-      <GeneralDentistryFaqSection />
+      <TreatmentBridgeFAQSection />
       <div id="contact">
         <TreatmentInteractiveQuoteForm defaultTreatment="Dental Bridges" />
       </div>

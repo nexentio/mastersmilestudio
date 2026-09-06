@@ -269,12 +269,13 @@ export default function PatientsSection() {
                       marginBottom: '1.25rem',
                     }}
                   >
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '3px' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '3px' }} aria-label="5 star verified patient review">
                       {[1, 2, 3, 4, 5].map((starIdx) => (
                         <Image
                           key={starIdx}
                           src="/star.png"
-                          alt="★"
+                          alt=""
+                          aria-hidden="true"
                           width={18}
                           height={18}
                           style={{ objectFit: 'contain' }}

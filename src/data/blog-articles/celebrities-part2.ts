@@ -65,32 +65,32 @@ export const CELEBRITY_ARTICLES_PART2: Record<string, BlogDetailArticle> = {
       en: [
         "Matthew Perry touched millions of lives worldwide as the quick-witted, lovable Chandler Bing on the hit sitcom Friends. While his comedic timing brought joy to fans across generations, Perry candidly shared his private health battles, including severe dental health complications, in his memoir.",
         "Years of gastrointestinal reflux, prescription medications causing dry mouth (xerostomia), and bruxism led to extensive enamel erosion, tooth fractures, and eventually significant tooth loss before a high-profile television interview in 2020.",
-        "In this clinical retrospective, the Master Smile Studio Medical Board examines the dental mechanics of full-mouth reconstruction, detailing how [dental implants](/treatments/dental-implants) and [Zirconium bridges](/treatments/zirconium-crowns) restore eating ability, speech, and facial dignity.",
+        "In this clinical retrospective, the Master Smile Studio Medical Board examines the dental mechanics of full-mouth reconstruction, detailing how [dental implants](/treatments/dental-implants/) and [Zirconium bridges](/treatments/dental-crowns/zirconium-crowns/) restore eating ability, speech, and facial dignity.",
       ],
       tr: [
         "Matthew Perry, efsanevi Friends dizisinde canlandırdığı esprili ve sevecen Chandler Bing karakteriyle tüm dünyada milyonların kalbini kazandı. Ancak Perry, otobiyografisinde özel hayatındaki sağlık mücadelelerini ve yaşadığı ciddi diş problemlerini tüm samimiyetiyle paylaştı.",
         "Yıllarca süren mide reflüsü, ağız kuruluğu (kserostomi) yaratan ilaçlar ve diş sıkma problemleri; diş minesinde ileri derece erozyona, kırılmalara ve nihayetinde 2020 Friends Reunion öncesinde ön dişlerinin aniden dökülmesine yol açmıştı.",
-        "Bu klinik vaka analizinde Master Smile Studio Hekim Kurulu; tam ağız implant tedavilerinin, [titanyum implantların](/treatments/dental-implants) ve [zirkonyum köprülerin](/treatments/zirconium-crowns) çiğneme fonksiyonunu ve yüz estetiğini nasıl sıfırdan geri kazandırdığını anlatıyor.",
+        "Bu klinik vaka analizinde Master Smile Studio Hekim Kurulu; tam ağız implant tedavilerinin, [titanyum implantların](/treatments/dental-implants/) ve [zirkonyum köprülerin](/treatments/dental-crowns/zirconium-crowns/) çiğneme fonksiyonunu ve yüz estetiğini nasıl sıfırdan geri kazandırdığını anlatıyor.",
       ],
       de: [
         "Matthew Perrys Zahngeschichte verdeutlicht, wie gravierende Schmelzerosion und Zahnverlust durch moderne Vollmundrekonstruktion geheilt werden können.",
-        "Erfahren Sie, wie [Zahnimplantate](/treatments/dental-implants) und Zirkonbrücken Kaufunktion und Lebensqualität wiederherstellen.",
+        "Erfahren Sie, wie [Zahnimplantate](/treatments/dental-implants/) und Zirkonbrücken Kaufunktion und Lebensqualität wiederherstellen.",
       ],
       pl: [
         "Historia leczenia stomatologicznego Matthew Perry'ego to poruszający przykład walki z erozją szkliwa i utratą zębów.",
-        "Poznaj procedury pełnej rekonstrukcji na [implantach zębowych](/treatments/dental-implants) i koronach cyrkonowych.",
+        "Poznaj procedury pełnej rekonstrukcji na [implantach zębowych](/treatments/dental-implants/) i koronach cyrkonowych.",
       ],
       pt: [
         "A jornada dental de Matthew Perry é um testemunho da importância da reabilitação oral completa após desgastes severos.",
-        "Descubra o papel dos [implantes dentários](/treatments/dental-implants) e coroas de zircónia na recuperação funcional.",
+        "Descubra o papel dos [implantes dentários](/treatments/dental-implants/) e coroas de zircónia na recuperação funcional.",
       ],
       es: [
         "La historia dental de Matthew Perry muestra el poder de la reconstrucción bucal completa tras años de erosión dental.",
-        "Analizamos el uso de [implantes dentales](/treatments/dental-implants) y puentes de circonio de alta resistencia.",
+        "Analizamos el uso de [implantes dentales](/treatments/dental-implants/) y puentes de circonio de alta resistencia.",
       ],
       ru: [
         "История зубов Мэттью Перри — наглядный пример комплексного восстановления зубов после тяжелой эрозии эмали.",
-        "Разбираем тотальное протезирование на [зубных имплантах](/treatments/dental-implants) и циркониевых коронках.",
+        "Разбираем тотальное протезирование на [зубных имплантах](/treatments/dental-implants/) и циркониевых коронках.",
       ],
     },
     keyTakeaway: {
@@ -116,11 +116,11 @@ export const CELEBRITY_ARTICLES_PART2: Record<string, BlogDetailArticle> = {
         },
         paragraphs: {
           en: [
-            "When multiple teeth are lost or structurally compromised, individual fillings or veneers are no longer feasible. Instead, oral surgeons employ full-arch implant protocols such as [All-on-4](/treatments/all-on-4-implants) or [All-on-6 dental implants](/treatments/all-on-6-implants).",
+            "When multiple teeth are lost or structurally compromised, individual fillings or veneers are no longer feasible. Instead, oral surgeons employ full-arch implant protocols such as [All-on-4](/treatments/dental-implants/all-on-4-implants/) or [All-on-6 dental implants](/treatments/dental-implants/all-on-6-implants/).",
             "Strategic placement of 4 to 6 titanium fixtures into the dense basal bone allows for an immediate fixed provisional prosthesis, followed by a permanent, monolithic Zirconia bridge with porcelain layering. This biocompatible structure provides lifelong biting strength exceeding 1,200 MPa.",
           ],
           tr: [
-            "Çok sayıda diş kaybedildiğinde veya diş kökleri kurtarılamayacak duruma geldiğinde dolgu veya lamine kaplama yetersiz kalır. Bu gibi durumlarda cerrahlarımız [All-on-4](/treatments/all-on-4-implants) veya [All-on-6 diş implantı](/treatments/all-on-6-implants) protokollerini uygular.",
+            "Çok sayıda diş kaybedildiğinde veya diş kökleri kurtarılamayacak duruma geldiğinde dolgu veya lamine kaplama yetersiz kalır. Bu gibi durumlarda cerrahlarımız [All-on-4](/treatments/dental-implants/all-on-4-implants/) veya [All-on-6 diş implantı](/treatments/dental-implants/all-on-6-implants/) protokollerini uygular.",
             "Çene kemiğine yerleştirilen 4 ila 6 adet titanyum implant üzerine, aynı hafta içinde sabit geçici dişler takılır. İyileşme sonrası 1.200 MPa kırılma direncine sahip monolitik Zirkonyum porselen köprüler vidalanarak ömür boyu kalıcı çiğneme gücü sağlanır.",
           ],
           de: [

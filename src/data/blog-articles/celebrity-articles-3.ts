@@ -65,32 +65,32 @@ export const CELEBRITY_ARTICLES_3: Record<string, BlogDetailArticle> = {
       en: [
         "Tom Cruise is undoubtedly one of Hollywood’s most iconic leading men, celebrated for his death-defying Mission: Impossible stunts and unmistakable mega-watt grin. Yet, his dental journey is one of the most remarkable transformations in cosmetic dentistry history.",
         "When Tom Cruise began his acting career in 1983 with The Outsiders, he deliberately removed a temporary cap on his front tooth to showcase his natural, severely fractured, crowded, and discolored dental arch.",
-        "In this clinical report, the Master Smile Studio Medical Board analyzes the orthodontic mechanics, midline deviation, and custom [porcelain laminate veneers](/treatments/porcelain-laminate-veneers) that crafted his legendary Hollywood smile.",
+        "In this clinical report, the Master Smile Studio Medical Board analyzes the orthodontic mechanics, midline deviation, and custom [porcelain laminate veneers](/treatments/dental-veneers/porcelain-veneers/) that crafted his legendary Hollywood smile.",
       ],
       tr: [
         "Tom Cruise, Mission: Impossible serisindeki tehlikeli dublörsüz sahneleri ve ikonik gülüşüyle sinema tarihinin en büyük yıldızlarından biridir. Ancak gülüşünün geçmişi, estetik diş hekimliğinin en ilginç ve öğretici vakalarından birini oluşturur.",
         "1983 yılında The Outsiders filminde oynarken kırık, sararmış ve çapraşık dişlerini çekinmeden sergileyen Cruise, yıllar içinde Hollywood'un en tanınan gülüşüne kavuşmuştur.",
-        "Bu klinik incelemede Master Smile Studio Hekim Kurulu; orta hat kayması mekaniğini, 40 yaşında taktığı seramik telleri ve [porselen lamine kaplamalar](/treatments/porcelain-laminate-veneers) ile elde edilen estetik dengeyi inceliyor.",
+        "Bu klinik incelemede Master Smile Studio Hekim Kurulu; orta hat kayması mekaniğini, 40 yaşında taktığı seramik telleri ve [porselen lamine kaplamalar](/treatments/dental-veneers/porcelain-veneers/) ile elde edilen estetik dengeyi inceliyor.",
       ],
       de: [
         "Tom Cruises Zähne gehören zu den meistdiskutierten Lächeln Hollywoods. Von abgebrochenen Zähnen in den 80ern bis zur Mittellinienverschiebung.",
-        "Erfahren Sie, wie moderne [Porzellan-Veneers](/treatments/porcelain-laminate-veneers) und Kieferorthopädie sein weltberühmtes Lächeln formten.",
+        "Erfahren Sie, wie moderne [Porzellan-Veneers](/treatments/dental-veneers/porcelain-veneers/) und Kieferorthopädie sein weltberühmtes Lächeln formten.",
       ],
       pl: [
         "Historia uśmiechu Toma Cruise'a to jedna z najbardziej spektakularnych metamorfoz w historii kina.",
-        "Analizujemy przesunięcie linii pośrodkowej oraz zastosowanie [licówek porcelanowych](/treatments/porcelain-laminate-veneers).",
+        "Analizujemy przesunięcie linii pośrodkowej oraz zastosowanie [licówek porcelanowych](/treatments/dental-veneers/porcelain-veneers/).",
       ],
       pt: [
         "A transformação dental de Tom Cruise desde 1983 é um marco na odontologia estética.",
-        "Conheça o papel da ortodontia e das [facetas de porcelana](/treatments/porcelain-laminate-veneers) no seu sorriso icónico.",
+        "Conheça o papel da ortodontia e das [facetas de porcelana](/treatments/dental-veneers/porcelain-veneers/) no seu sorriso icónico.",
       ],
       es: [
         "La evolución dental de Tom Cruise desde 1983 es uno de los casos más fascinantes de Hollywood.",
-        "Descubra los secretos de su diseño de sonrisa con [carillas de porcelana](/treatments/porcelain-laminate-veneers).",
+        "Descubra los secretos de su diseño de sonrisa con [carillas de porcelana](/treatments/dental-veneers/porcelain-veneers/).",
       ],
       ru: [
         "История зубов Тома Круза — классический пример того, как эстетическая стоматология создает звездный образ.",
-        "Разбираем асимметрию центральной линии и установку [керамических виниров](/treatments/porcelain-laminate-veneers).",
+        "Разбираем асимметрию центральной линии и установку [керамических виниров](/treatments/dental-veneers/porcelain-veneers/).",
       ],
     },
     keyTakeaway: {
@@ -117,11 +117,11 @@ export const CELEBRITY_ARTICLES_3: Record<string, BlogDetailArticle> = {
         paragraphs: {
           en: [
             "Following extraction of an infected damaged tooth in his youth, Tom Cruise’s remaining upper teeth drifted toward the center. This resulted in his upper left central incisor sitting directly on his facial vertical midline.",
-            "In 2002, at age 40, Cruise proudly wore ceramic braces on red carpets to expand his buccal corridors and optimize interproximal spaces. Afterward, high-translucency [E-Max porcelain veneers](/treatments/porcelain-laminate-veneers) were bonded to balance his smile arc, creating the bright, confident look seen today.",
+            "In 2002, at age 40, Cruise proudly wore ceramic braces on red carpets to expand his buccal corridors and optimize interproximal spaces. Afterward, high-translucency [E-Max porcelain veneers](/treatments/dental-veneers/porcelain-veneers/) were bonded to balance his smile arc, creating the bright, confident look seen today.",
           ],
           tr: [
             "Gençliğinde hasar gören bir dişinin çekilmesi sonucu üst dişleri merkeze doğru kaymış ve sol üst kesici dişi tam yüz ortasına denk gelmiştir.",
-            "2002 yılında 40 yaşındayken kırmızı halıda cesurca şeffaf seramik teller takan Cruise, diş kavisini genişletmiş; ardından uygulanan [İsviçre E-Max porselen laminalar](/treatments/porcelain-laminate-veneers) ile ışıl ışıl ve dengeli bir gülüşe kavuşmuştur.",
+            "2002 yılında 40 yaşındayken kırmızı halıda cesurca şeffaf seramik teller takan Cruise, diş kavisini genişletmiş; ardından uygulanan [İsviçre E-Max porselen laminalar](/treatments/dental-veneers/porcelain-veneers/) ile ışıl ışıl ve dengeli bir gülüşe kavuşmuştur.",
           ],
           de: [
             'Nach einem Zahnverlust verschob sich die Zahnreihe. Mit 40 Jahren trug Cruise eine Keramikspange, gefolgt von E-Max Veneers.',

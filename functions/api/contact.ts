@@ -20,8 +20,8 @@ const SMTP_HOST = 'smtp.gmail.com';
 const SMTP_PORT = 465;
 const SMTP_USER = 'nexentiosoft@gmail.com';
 const SMTP_PASS = 'irlqsakxfyqelaao';
-const TO_EMAIL = 'info@mastersmilestudio.com';
-const CC_EMAIL = 'nexentiosoft@gmail.com';
+const TO_EMAILS = ['dtozanozturk@gmail.com', 'info@mastersmilestudio.com'];
+const CC_EMAILS = ['nexentiosoft@gmail.com'];
 
 export async function onRequestPost(context: any): Promise<Response> {
   const corsHeaders = {
@@ -196,8 +196,9 @@ export async function onRequestPost(context: any): Promise<Response> {
       user: SMTP_USER,
       pass: SMTP_PASS,
       from: `Master Smile Studio <${SMTP_USER}>`,
-      to: TO_EMAIL,
-      cc: CC_EMAIL,
+      to: TO_EMAILS,
+      cc: CC_EMAILS,
+      replyTo: patientEmail !== 'Belirtilmedi' && patientEmail.includes('@') ? patientEmail : undefined,
       subject: `Yeni Hasta Formu: ${patientName} (${patientTreatment})`,
       html: htmlBody,
     });
@@ -238,6 +239,7 @@ async function sendSmtpEmail({
   from,
   to,
   cc,
+  replyTo,
   subject,
   html,
 }: {
@@ -246,8 +248,9 @@ async function sendSmtpEmail({
   user: string;
   pass: string;
   from: string;
-  to: string;
-  cc?: string;
+  to: string | string[];
+  cc?: string | string[];
+  replyTo?: string;
   subject: string;
   html: string;
 }) {
@@ -293,12 +296,18 @@ async function sendSmtpEmail({
   // 6. MAIL FROM
   await sendCommand(`MAIL FROM:<${user}>`, '250');
 
-  // 7. RCPT TO (Primary)
-  await sendCommand(`RCPT TO:<${to}>`, '250');
+  // Normalize recipient lists
+  const toList = (Array.isArray(to) ? to : [to]).map((e) => e.trim()).filter(Boolean);
+  const ccList = (Array.isArray(cc) ? cc : cc ? cc.split(',') : []).map((e) => e.trim()).filter(Boolean);
 
-  // 8. RCPT TO (CC if present)
-  if (cc) {
-    await sendCommand(`RCPT TO:<${cc}>`, '250');
+  // 7. RCPT TO (All TO recipients)
+  for (const recipient of toList) {
+    await sendCommand(`RCPT TO:<${recipient}>`, '250');
+  }
+
+  // 8. RCPT TO (All CC recipients)
+  for (const recipient of ccList) {
+    await sendCommand(`RCPT TO:<${recipient}>`, '250');
   }
 
   // 9. DATA
@@ -308,8 +317,9 @@ async function sendSmtpEmail({
   const utf8Subject = `=?UTF-8?B?${btoa(unescape(encodeURIComponent(subject)))}?=`;
   const rawEmail = [
     `From: ${from}`,
-    `To: ${to}`,
-    cc ? `Cc: ${cc}` : '',
+    `To: ${toList.join(', ')}`,
+    ccList.length > 0 ? `Cc: ${ccList.join(', ')}` : '',
+    replyTo ? `Reply-To: ${replyTo}` : '',
     `Subject: ${utf8Subject}`,
     'MIME-Version: 1.0',
     'Content-Type: text/html; charset=UTF-8',
@@ -319,7 +329,7 @@ async function sendSmtpEmail({
     '',
     '.',
   ]
-    .filter((line) => line !== null && line !== undefined)
+    .filter((line) => line !== '')
     .join('\r\n');
 
   await sendCommand(rawEmail, '250');

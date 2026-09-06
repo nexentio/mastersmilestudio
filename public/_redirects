@@ -208,3 +208,16 @@
 /:locale/treatments/fluoride-treatment /:locale/treatments/general-dentistry/fluoride-treatment/ 301
 /:locale/treatments/bruxism-treatment/ /:locale/treatments/general-dentistry/bruxism-treatment/ 301
 /:locale/treatments/bruxism-treatment /:locale/treatments/general-dentistry/bruxism-treatment/ 301
+
+# Legacy Blog Redirects from Previous Website (ozan-astro)
+/:locale/blog/emax-vs-zirconia-veneers-comparison/ /:locale/blog/emax-vs-zirconia-which-one-should-you-choose/ 301
+/:locale/blog/emax-vs-zirconia-veneers-comparison /:locale/blog/emax-vs-zirconia-which-one-should-you-choose/ 301
+/:locale/blog/dental-fear-dentophobia-sedation/ /:locale/blog/dental-phobia-sedation-dentistry-antalya/ 301
+/:locale/blog/dental-fear-dentophobia-sedation /:locale/blog/dental-phobia-sedation-dentistry-antalya/ 301
+/:locale/blog/dental-holiday-antalya-step-by-step-guide/ /:locale/blog/antalya-dental-holiday-step-by-step-guide/ 301
+/:locale/blog/dental-holiday-antalya-step-by-step-guide /:locale/blog/antalya-dental-holiday-step-by-step-guide/ 301
+/:locale/blog/root-canal-or-extraction/ /:locale/blog/root-canal-vs-tooth-extraction-decision/ 301
+/:locale/blog/root-canal-or-extraction /:locale/blog/root-canal-vs-tooth-extraction-decision/ 301
+/:locale/blog/how-long-do-turkey-teeth-last-warranty/ /:locale/blog/turkey-teeth-warranty-and-lifespan-facts/ 301
+/:locale/blog/how-long-do-turkey-teeth-last-warranty /:locale/blog/turkey-teeth-warranty-and-lifespan-facts/ 301
+

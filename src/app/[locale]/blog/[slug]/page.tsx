@@ -100,6 +100,8 @@ export async function generateMetadata({ params }: Props) {
   };
 }
 
+import { getBlogDetailBySlug } from '@/data/blog-detail-data';
+
 export default async function BlogDetailPage({ params }: Props) {
   const { locale, slug } = await params;
   setRequestLocale(locale);
@@ -109,11 +111,10 @@ export default async function BlogDetailPage({ params }: Props) {
     notFound();
   }
 
+  const article = getBlogDetailBySlug(slug);
   const title = post.title[locale] || post.title.en || post.title.tr || slug;
-  const description =
-    locale === 'tr'
-      ? `${title} - Antalya Master Smile Studio klinik analiz, tedavi yöntemleri ve uzman rehberi.`
-      : `${title} - Clinical insights, dental procedure breakdown, and expert guidance from Master Smile Studio Antalya.`;
+  const descBuilder = BLOG_META_DESC_TEMPLATES[locale] || BLOG_META_DESC_TEMPLATES.en;
+  const description = descBuilder(title);
 
   const articleJsonLd = {
     '@context': 'https://schema.org',
@@ -141,7 +142,24 @@ export default async function BlogDetailPage({ params }: Props) {
       '@type': 'WebPage',
       '@id': `${SITE_CONFIG.domain}/${locale}/blog/${slug}/`,
     },
+    speakable: {
+      '@type': 'SpeakableSpecification',
+      cssSelector: ['h1', "section[aria-label='Clinical Summary and Key Findings']"],
+    },
   };
+
+  const faqJsonLd = article?.faqs && article.faqs.length > 0 ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: article.faqs.map((faq) => ({
+      '@type': 'Question',
+      name: faq.q[locale] || faq.q.en || faq.q.tr,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.a[locale] || faq.a.en || faq.a.tr,
+      },
+    })),
+  } : null;
 
   const breadcrumbJsonLd = {
     '@context': 'https://schema.org',
@@ -178,6 +196,12 @@ export default async function BlogDetailPage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
+      {faqJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+      )}
 
       <Header />
 

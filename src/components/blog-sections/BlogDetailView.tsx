@@ -9,6 +9,7 @@ import { BLOG_POSTS, BlogPost } from '@/data/blog-page-data';
 import { getBlogDetailBySlug, BlogDetailArticle } from '@/data/blog-detail-data';
 import { PACKAGES_DATA } from '@/data/packages-page-data';
 import { BEFORE_AFTER_PAGE_DATA } from '@/data/before-after-page-data';
+import LLMQuickSummaryCard from './LLMQuickSummaryCard';
 import styles from './BlogDetailView.module.css';
 
 interface BlogDetailViewProps {
@@ -486,6 +487,9 @@ export default function BlogDetailView({ slug }: BlogDetailViewProps) {
               />
             </div>
 
+            {/* AI Summary & LLM Quick-Answer Citation Card */}
+            <LLMQuickSummaryCard article={article} />
+
             {/* Stat Row Box */}
             {article.stats && article.stats.length > 0 && (
               <div className={styles.statTableBox}>
@@ -505,13 +509,7 @@ export default function BlogDetailView({ slug }: BlogDetailViewProps) {
               </p>
             ))}
 
-            {/* Key Takeaways Callout Box */}
-            <div className={styles.keyTakeawayBox}>
-              <p className={styles.keyTakeawayText}>
-                <strong>{renderTextWithLinks(getLocalized(article.keyTakeaway))}</strong>
-              </p>
-            </div>
-
+            {/* Editorial Divider */}
             <div className={styles.editorialDivider} />
 
             {/* In-Article Treatment Packages Grid (Direct Booking / Pricing) */}
