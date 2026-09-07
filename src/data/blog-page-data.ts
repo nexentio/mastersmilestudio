@@ -10,6 +10,31 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'conor-mcgregor-teeth-before-and-after',
+    image: '/blog/conor-mcgregor-teeth.webp',
+    category: 'celebrities-teeth',
+    readTime: '9 min read',
+    date: '2026-09-08',
+    title: {
+      en: 'Conor McGregor Teeth Before and After: The Science Behind His Billionaire Smile',
+      tr: 'Conor McGregor Dişleri Öncesi ve Sonrası: Milyarder Gülüşünün Bilimsel Analizi',
+      de: 'Conor McGregor Zähne Vorher und Nachher: Die Wahrheit über sein Milliardärs-Lächeln',
+      pl: 'Zęby Conora McGregora Przed i Po: Prawda o uśmiechu miliardera',
+      pt: 'Dentes de Conor McGregor Antes e Depois: O Sorriso de Bilionário',
+      es: 'Dientes de Conor McGregor Antes y Después: La Sonrisa de Multimillonario',
+      ru: 'Зубы Конора Макгрегора до и после: секрет улыбки миллиардера',
+    },
+    excerpt: {
+      en: 'Discover how Conor McGregor transformed battle-worn fighter teeth into a high-strength Hollywood smile engineered to withstand 800+ N combat clenching forces.',
+      tr: 'Conor McGregor’un maç darbeleriyle kırılan dövüşçü dişlerinden 800+ Newton ısırma kuvvetine dayanıklı monolitik zirkonyum Hollywood gülüşüne nasıl geçtiğini keşfedin.',
+      de: 'Erfahren Sie, wie Conor McGregor abgenutzte Kämpferzähne in ein bruchfestes Hollywood-Lächeln für 800+ N Beißkraft verwandelte.',
+      pl: 'Dowiedz się, jak Conor McGregor przekształcił zniszczone walkami zęby w śnieżnobiały uśmiech odporny na siły zwarcia ponad 800 N.',
+      pt: 'Descubra como Conor McGregor transformou dentes desgastados por combates num sorriso de Hollywood resistente a mais de 800 N de força.',
+      es: 'Descubra cómo Conor McGregor transformó sus dientes de combate en una sonrisa de Hollywood diseñada para resistir más de 800 N de fuerza oclusal.',
+      ru: 'Узнайте, как Конор Макгрегор превратил травмированные боями зубы в высокопрочную голливудскую улыбку, выдерживающую сжатие свыше 800 Н.',
+    },
+  },
+  {
     slug: 'simon-cowell-teeth-before-and-after',
     image: '/blog/simon-cowell-teeth.webp',
     category: 'celebrities-teeth',
