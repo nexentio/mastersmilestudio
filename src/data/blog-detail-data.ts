@@ -8,6 +8,8 @@ import { CLINICAL_GUIDES_ARTICLES } from './blog-articles/clinical-guides-full';
 import { INTERNATIONAL_GUIDES_ARTICLES } from './blog-articles/international-guides';
 import { MIGRATED_CLINICAL_GUIDES } from './blog-articles/migrated-clinical-guides';
 import { CONOR_MCGREGOR_ARTICLE } from './blog-articles/conor-mcgregor-article';
+import { SIMON_BAKER_ARTICLE } from './blog-articles/simon-baker-article';
+import { LIAM_GALLAGHER_ARTICLE } from './blog-articles/liam-gallagher-article';
 
 export interface LLMQuickSummary {
   badge?: Record<string, string>;
@@ -1122,6 +1124,12 @@ export function getBlogDetailBySlug(slug: string): BlogDetailArticle {
   }
   if (slug === CONOR_MCGREGOR_ARTICLE.slug) {
     return CONOR_MCGREGOR_ARTICLE;
+  }
+  if (slug === SIMON_BAKER_ARTICLE.slug) {
+    return SIMON_BAKER_ARTICLE;
+  }
+  if (slug === LIAM_GALLAGHER_ARTICLE.slug) {
+    return LIAM_GALLAGHER_ARTICLE;
   }
   if (CELEBRITY_ARTICLES_PART2[slug]) {
     return CELEBRITY_ARTICLES_PART2[slug];
