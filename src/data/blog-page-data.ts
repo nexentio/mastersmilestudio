@@ -10,6 +10,31 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'natural-turkey-teeth-guide-veneers-costs-shades',
+    image: '/blog/natural-turkey-teeth-guide.webp',
+    category: 'turkey-teeth',
+    readTime: '13 min read',
+    date: '2026-09-13',
+    title: {
+      en: "The 2026 Guide to Natural Turkey Teeth: How to Avoid Shaving, Choose Natural Shades (BL3 vs A1), True Costs, and UK/German Aftercare Truths",
+      tr: "2026 Doğal Türkiye Diş Rehberi: Diş Kesiminden Kaçınma, Doğal Renk Seçimi (BL3 vs A1), Gerçek Maliyetler ve İngiltere/Almanya Bakım Gerçekleri",
+      de: "Der Türkei-Zähne Leitfaden 2026: Natürlich statt künstlich – Zahnschonung, Farbwahl (BL3 vs. A1), echte Kosten & Nachsorge in Deutschland",
+      pl: "Przewodnik po naturalnych zębach z Turcji 2026: Jak uniknąć szlifowania, dobrać odcień (BL3 vs A1), realne koszty i opieka w Polsce",
+      pt: "Guia 2026 para Dentes Naturais na Turquia: Como Evitar o Desgaste Excessivo, Escolher Tons Naturais (BL3 vs A1), Custos e Cuidados Posteriores",
+      es: "Guía 2026 para Dientes Naturales en Turquía: Cómo Evitar el Tallado Excesivo, Elegir Tonos Naturales (BL3 vs A1), Costes Reales y Cuidados Posteriores",
+      ru: "Гид 2026 по естественным зубам в Турции: как избежать обточки, выбрать натуральный оттенок (BL3 vs A1), честные цены и гарантии",
+    },
+    excerpt: {
+      en: "Demystifying the 'Turkey Teeth' phenomenon: Discover why authentic IPS e.max porcelain veneers preserve 95%+ of natural enamel (0.3mm prep), how to avoid the fake BL1 'piano-key' look with BL3 and A1 shades, exact 2026 price comparisons (£220/€250 per tooth), and legal cross-border aftercare realities under UK GDC and German Krankenkasse HKP rules.",
+      tr: "'Turkey Teeth' mitinin anatomisi: Orijinal IPS e.max porselen laminelerin diş minesinin %95'ini nasıl koruduğunu (0.3mm mikro aşındırma), BL3 ve Vita A1 tonlarıyla yapay tebeşir görünümünden nasıl kaçınılacağını, 2026 şeffaf fiyat matrisini ve İngiltere/Almanya yasal bakım haklarını keşfedin.",
+      de: "Schluss mit Vorurteilen: Wie echte IPS e.max Veneers über 95% des Zahnschmelzes schonen (0,3 mm Abtrag), warum Farbtöne wie BL3 und A1 natürliche Ästhetik sichern, was die Behandlung 2026 wirklich kostet (250 €/Zahn) und wie der Festzuschuss der Krankenkasse (HKP) funktioniert.",
+      pl: "Rozprawiamy się z mitami o 'zębach z Turcji': dowiedz się, jak licówki IPS e.max chronią ponad 95% szkliwa, dlaczego odcienie BL3 i A1 deklasują sztuczną biel BL1 oraz jak wyglądają realne koszty i opieka pozabiegowa.",
+      pt: "Desmistificando o fenómeno dos 'dentes da Turquia': descubra como as facetas IPS e.max preservam 95% do esmalte com micro-preparação de 0,3 mm, a escolha de tons naturais BL3/A1 e as garantias pós-tratamento.",
+      es: "Desmontando el mito de los 'dientes de Turquía': conozca cómo las carillas IPS e.max conservan más del 95% del esmalte con micro-tallado, la elección de tonos naturales BL3 y A1 y las coberturas médicas internacionales.",
+      ru: "Развенчание мифа о 'турецких зубах': узнайте, как микроинвазивные виниры IPS e.max сохраняют более 95% эмали, почему оттенки BL3 и A1 превосходят меловую белизну и как действуют гарантии качества в Европе.",
+    },
+  },
+  {
     slug: 'liam-gallagher-teeth-knocked-out-implants',
     image: '/blog/liam-gallagher-teeth.webp',
     category: 'celebrities-teeth',

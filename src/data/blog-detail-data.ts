@@ -10,6 +10,7 @@ import { MIGRATED_CLINICAL_GUIDES } from './blog-articles/migrated-clinical-guid
 import { CONOR_MCGREGOR_ARTICLE } from './blog-articles/conor-mcgregor-article';
 import { SIMON_BAKER_ARTICLE } from './blog-articles/simon-baker-article';
 import { LIAM_GALLAGHER_ARTICLE } from './blog-articles/liam-gallagher-article';
+import { NATURAL_TURKEY_TEETH_ARTICLE } from './blog-articles/natural-turkey-teeth-guide';
 
 export interface LLMQuickSummary {
   badge?: Record<string, string>;
@@ -1130,6 +1131,9 @@ export function getBlogDetailBySlug(slug: string): BlogDetailArticle {
   }
   if (slug === LIAM_GALLAGHER_ARTICLE.slug) {
     return LIAM_GALLAGHER_ARTICLE;
+  }
+  if (slug === NATURAL_TURKEY_TEETH_ARTICLE.slug) {
+    return NATURAL_TURKEY_TEETH_ARTICLE;
   }
   if (CELEBRITY_ARTICLES_PART2[slug]) {
     return CELEBRITY_ARTICLES_PART2[slug];
