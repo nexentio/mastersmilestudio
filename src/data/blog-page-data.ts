@@ -10,6 +10,31 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'sydney-sweeney-teeth-gummy-smile-natural-veneers',
+    image: '/blog/sydney-sweeney-teeth.webp',
+    category: 'celebrities-teeth',
+    readTime: '11 min read',
+    date: '2026-09-16',
+    title: {
+      en: "Sydney Sweeney Teeth: The Gummy Smile Aesthetics, Laser Gingivectomy & Natural Veneers",
+      tr: "Sydney Sweeney Dişleri: Gummy Smile Estetiği, Lazer Gingivektomi ve Doğal Porselen Lamineler",
+      de: "Sydney Sweeney Zähne: Gummy-Smile-Ästhetik, Diodenlaser-Gingivektomie & Natürliche Veneers",
+      pl: "Zęby Sydney Sweeney: Estetyka uśmiechu dziąsłowego, laserowa gingiwoplastyka i naturalne licówki",
+      pt: "Dentes de Sydney Sweeney: Estética do Sorriso Gengival, Gengivoplastia a Laser e Facetas Naturais",
+      es: "Dientes de Sydney Sweeney: Estética de la Sonrisa Gingival, Gingivectomía Láser y Carillas Naturales",
+      ru: "Зубы Сидни Суини: эстетика десневой улыбки, лазерная гингивэктомия и естественные виниры",
+    },
+    excerpt: {
+      en: "Deconstructing Sydney Sweeney's iconic natural smile: The clinical balance of youthful gingival display (gummy smile), soft-tissue diode laser contouring, rounded feminine incisal embrasures, and why 0.3mm contact-lens IPS e.max veneers beat aggressive crown shaving.",
+      tr: "Sydney Sweeney'nin doğal ve büyüleyici gülüşünün klinik analizi: Genç ve dinamik diş eti görünümü (gummy smile), yumuşak doku diyot lazer konturlama, feminen yuvarlak kesici kenarlar ve 0.3 mm kontakt lens porselen laminelerin aşırı diş kesimini nasıl tarihe gömdüğü.",
+      de: "Die Analyse von Sydney Sweeneys natürlichem Hollywood-Lächeln: Warum dezente Zahnfleischexposition (Gummy Smile) verjüngend wirkt, wie Diodenlaser-Präzision den Zahnfleischsaum harmonisiert und warum 0,3 mm IPS e.max Veneers aggressivem Kronenschliff überlegen sind.",
+      pl: "Analiza zjawiskowego uśmiechu Sydney Sweeney: Balans młodzieńczej ekspozycji dziąseł, bezkrwawa korekta laserem diodowym, subtelne zaokrąglenia siekaczy i wyższość ultracienkich licówek 0,3 mm IPS e.max nad agresywnym szlifowaniem zębów.",
+      pt: "A análise clínica do sorriso autêntico de Sydney Sweeney: O equilíbrio da exposição gengival jovem, o contorno suave com laser de díodo, a morfologia feminina dos dentes e as vantagens das microfacetas IPS e.max de 0,3 mm sobre as coroas invasivas.",
+      es: "Análisis clínico de la sonrisa natural de Sydney Sweeney: El equilibrio de la exposición gingival juvenil, el modelado preciso con láser de diodo, los bordes incisales redondeados y por qué las microcarillas IPS e.max de 0,3 mm superan al tallado agresivo.",
+      ru: "Клинический разбор улыбки Сидни Суини: баланс естественного десневого контура, бескровная коррекция диодным лазером, женственная морфология резцов и преимущества ультратонких виниров IPS e.max 0,3 мм перед спиливанием под коронки.",
+    },
+  },
+  {
     slug: 'natural-turkey-teeth-guide-veneers-costs-shades',
     image: '/blog/natural-turkey-teeth-guide.webp',
     category: 'turkey-teeth',
