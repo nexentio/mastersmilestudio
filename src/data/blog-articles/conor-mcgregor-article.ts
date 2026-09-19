@@ -17,7 +17,7 @@ const AUTHOR_DATA = {
 export const CONOR_MCGREGOR_ARTICLE: BlogDetailArticle = {
   slug: 'conor-mcgregor-teeth-before-and-after',
   category: 'celebrities-teeth',
-  image: '/blog/conor-mcgregor-teeth.webp',
+  image: '/blog/conor-mcgregor-teeth-before-and-after-veneers.webp',
   publishDate: '2026-09-08',
   readTime: '9 min read',
   author: AUTHOR_DATA,

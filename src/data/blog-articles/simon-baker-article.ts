@@ -17,7 +17,7 @@ const AUTHOR_DATA = {
 export const SIMON_BAKER_ARTICLE: BlogDetailArticle = {
   slug: 'simon-baker-teeth-smile-analysis',
   category: 'celebrities-teeth',
-  image: '/blog/simon-baker-teeth.webp',
+  image: '/blog/simon-baker-teeth-patrick-jane-smile.webp',
   publishDate: '2026-09-08',
   readTime: '10 min read',
   author: AUTHOR_DATA,

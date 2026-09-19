@@ -188,6 +188,14 @@ export default async function BlogDetailPage({ params }: Props) {
 
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', backgroundColor: '#ffffff', color: '#0f172a' }}>
+      <Header />
+
+      <main id="main-content" style={{ flex: 1 }}>
+        <BlogDetailView slug={slug} />
+      </main>
+
+      <Footer />
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
@@ -202,14 +210,6 @@ export default async function BlogDetailPage({ params }: Props) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
         />
       )}
-
-      <Header />
-
-      <main id="main-content" style={{ flex: 1 }}>
-        <BlogDetailView slug={slug} />
-      </main>
-
-      <Footer />
     </div>
   );
 }

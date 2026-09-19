@@ -43,9 +43,9 @@
 .imgWrapper {
   position: relative;
   width: 100%;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 1 / 1;
   height: auto;
-  border-radius: 4px;
+  border-radius: 6px;
   overflow: hidden;
   margin-bottom: 0.85rem;
   background-color: #f5f5f5;
@@ -60,6 +60,7 @@
 
 .img {
   object-fit: cover;
+  object-position: center;
   transition: transform 0.3s ease;
 }
 

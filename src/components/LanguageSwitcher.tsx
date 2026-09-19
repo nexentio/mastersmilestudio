@@ -33,13 +33,17 @@ export default function LanguageSwitcher() {
 
   // Close dropdown on click outside
   useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
+    const handleClickOutside = (event: MouseEvent | TouchEvent) => {
       if (containerRef.current && !containerRef.current.contains(event.target as Node)) {
         setIsOpen(false);
       }
     };
     document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
+    document.addEventListener('touchstart', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('touchstart', handleClickOutside);
+    };
   }, []);
 
   const activeLabel = LOCALE_LABELS[currentLocale]?.nativeName || currentLocale.toUpperCase();
@@ -50,7 +54,10 @@ export default function LanguageSwitcher() {
       {/* Trigger Button */}
       <button
         type="button"
-        onClick={() => setIsOpen(!isOpen)}
+        onClick={(e) => {
+          e.stopPropagation();
+          setIsOpen((prev) => !prev);
+        }}
         disabled={isPending}
         className="lang-switcher-trigger"
         style={{
@@ -121,7 +128,8 @@ export default function LanguageSwitcher() {
             borderRadius: '20px',
             boxShadow: '0 20px 40px -15px rgba(0, 0, 0, 0.12), 0 0 0 1px rgba(0, 0, 0, 0.06)',
             padding: '0.5rem',
-            zIndex: 100,
+            zIndex: 9999999,
+            pointerEvents: 'auto',
             display: 'flex',
             flexDirection: 'column',
             gap: '0.25rem',
@@ -136,7 +144,10 @@ export default function LanguageSwitcher() {
               <button
                 key={loc}
                 type="button"
-                onClick={() => handleLanguageSelect(loc)}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  handleLanguageSelect(loc);
+                }}
                 style={{
                   display: 'flex',
                   alignItems: 'center',

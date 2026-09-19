@@ -17,7 +17,7 @@ const AUTHOR_DATA = {
 export const LIAM_GALLAGHER_ARTICLE: BlogDetailArticle = {
   slug: 'liam-gallagher-teeth-knocked-out-implants',
   category: 'celebrities-teeth',
-  image: '/blog/liam-gallagher-teeth.webp',
+  image: '/blog/liam-gallagher-teeth-knocked-out-implants.webp',
   publishDate: '2026-09-08',
   readTime: '11 min read',
   author: AUTHOR_DATA,

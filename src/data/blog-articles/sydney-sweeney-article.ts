@@ -17,7 +17,7 @@ const AUTHOR_DATA = {
 export const SYDNEY_SWEENEY_ARTICLE: BlogDetailArticle = {
   slug: 'sydney-sweeney-teeth-gummy-smile-natural-veneers',
   category: 'celebrities-teeth',
-  image: '/blog/sydney-sweeney-teeth.webp',
+  image: '/blog/sydney-sweeney-teeth-gummy-smile-veneers.webp',
   publishDate: '2026-09-16',
   readTime: '11 min read',
   author: AUTHOR_DATA,

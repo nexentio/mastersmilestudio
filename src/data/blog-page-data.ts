@@ -11,7 +11,7 @@ export interface BlogPost {
 export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'sydney-sweeney-teeth-gummy-smile-natural-veneers',
-    image: '/blog/sydney-sweeney-teeth.webp',
+    image: '/blog/sydney-sweeney-teeth-gummy-smile-veneers.webp',
     category: 'celebrities-teeth',
     readTime: '11 min read',
     date: '2026-09-16',
@@ -61,7 +61,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'liam-gallagher-teeth-knocked-out-implants',
-    image: '/blog/liam-gallagher-teeth.webp',
+    image: '/blog/liam-gallagher-teeth-knocked-out-implants.webp',
     category: 'celebrities-teeth',
     readTime: '11 min read',
     date: '2026-09-08',
@@ -86,7 +86,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'simon-baker-teeth-smile-analysis',
-    image: '/blog/simon-baker-teeth.webp',
+    image: '/blog/simon-baker-teeth-patrick-jane-smile.webp',
     category: 'celebrities-teeth',
     readTime: '10 min read',
     date: '2026-09-08',
@@ -111,7 +111,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'conor-mcgregor-teeth-before-and-after',
-    image: '/blog/conor-mcgregor-teeth.webp',
+    image: '/blog/conor-mcgregor-teeth-before-and-after-veneers.webp',
     category: 'celebrities-teeth',
     readTime: '9 min read',
     date: '2026-09-08',
