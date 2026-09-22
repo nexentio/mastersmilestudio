@@ -357,15 +357,27 @@ export default function BlogDetailView({ slug }: BlogDetailViewProps) {
   // In-article before/after items (1 row, 3 columns)
   const featuredBeforeAfter = (BEFORE_AFTER_PAGE_DATA[0]?.items || []).slice(0, 3);
 
-  const blogWaMessages: Record<string, string> = {
-    tr: `Merhaba, "${getLocalized(currentPost?.title)}" başlıklı blog yazınızı okudum ve danışmanlık/randevu almak istiyorum.`,
-    en: `Hello, I am reading the article "${getLocalized(currentPost?.title)}" and would like a consultation.`,
-    de: `Hallo, ich lese den Artikel "${getLocalized(currentPost?.title)}" und möchte eine Beratung/einen Termin vereinbaren.`,
-    pl: `Dzień dobry, czytam artykuł "${getLocalized(currentPost?.title)}" i chciałbym uzyskać konsultację.`,
-    pt: `Olá, estou lendo o artigo "${getLocalized(currentPost?.title)}" e gostaria de uma consulta.`,
-    es: `Hola, estoy leyendo el artículo "${getLocalized(currentPost?.title)}" y me gustaría una consulta.`,
-    ru: `Здравствуйте! Я читаю статью "${getLocalized(currentPost?.title)}" и хотел бы получить консультацию.`,
-  };
+  const isKloppArticle = slug === 'jurgen-klopp-teeth-transformation-smile-makeover';
+
+  const blogWaMessages: Record<string, string> = isKloppArticle
+    ? {
+        de: 'Hallo Master Smile Studio, ich habe Ihren Artikel über Jürgen Klopps Lächeln gelesen und interessiere mich für eine unverbindliche Beratung bzw. einen HKP-Vergleich für Antalya.',
+        en: 'Hello Master Smile Studio, I was reading your Jürgen Klopp smile transformation article and would like a free consultation and quote for Antalya.',
+        tr: "Merhaba Master Smile Studio, Jürgen Klopp'un gülüş tasarımı yazınızı okudum ve Antalya için ücretsiz muayene / fiyat teklifi almak istiyorum.",
+        pl: 'Dzień dobry Master Smile Studio, przeczytałem artykuł o metamorfozie uśmiechu Jürgena Kloppa i chciałbym uzyskać konsultację.',
+        pt: 'Olá Master Smile Studio, li o artigo sobre o sorriso de Jürgen Klopp e gostaria de uma consulta e orçamento.',
+        es: 'Hola Master Smile Studio, leí el artículo sobre la sonrisa de Jürgen Klopp y me gustaría una consulta y presupuesto para Antalya.',
+        ru: 'Здравствуйте! Я прочитал статью о преображении улыбки Юргена Клоппа и хотел бы получить консультацию и расчет стоимости в Анталье.',
+      }
+    : {
+        tr: `Merhaba, "${getLocalized(currentPost?.title)}" başlıklı blog yazınızı okudum ve danışmanlık/randevu almak istiyorum.`,
+        en: `Hello, I am reading the article "${getLocalized(currentPost?.title)}" and would like a consultation.`,
+        de: `Hallo, ich lese den Artikel "${getLocalized(currentPost?.title)}" und möchte eine Beratung/einen Termin vereinbaren.`,
+        pl: `Dzień dobry, czytam artykuł "${getLocalized(currentPost?.title)}" i chciałbym uzyskać konsultację.`,
+        pt: `Olá, estou lendo o artigo "${getLocalized(currentPost?.title)}" e gostaria de uma consulta.`,
+        es: `Hola, estoy leyendo el artículo "${getLocalized(currentPost?.title)}" y me gustaría una consulta.`,
+        ru: `Здравствуйте! Я читаю статью "${getLocalized(currentPost?.title)}" и хотел бы получить консультацию.`,
+      };
   const waLink = getWhatsAppLink(locale, blogWaMessages[locale] || blogWaMessages.en);
   const renderTextWithLinks = (text: string) => {
     if (!text || !text.includes('[') || !text.includes('](')) {
@@ -647,6 +659,159 @@ export default function BlogDetailView({ slug }: BlogDetailViewProps) {
                     ))}
                   </tbody>
                 </table>
+              </div>
+            )}
+
+            {/* Jürgen Klopp Custom Trust & HKP Consultation Card */}
+            {isKloppArticle && (
+              <div className={styles.kloppTrustCard}>
+                <div className={styles.kloppTrustHeader}>
+                  <div className={styles.kloppTrustBadge}>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                    </svg>
+                    <span>
+                      {locale === 'de'
+                        ? 'Zahnersatz im Ausland • Gesetzlicher Festzuschuss § 13 SGB V'
+                        : locale === 'tr'
+                        ? 'Almanya Sağlık Sigortası (Krankenkasse) & Festzuschuss Desteği'
+                        : 'European Dental Insurance & Certified Zirconia'}
+                    </span>
+                  </div>
+                  <h3 className={styles.kloppTrustTitle}>
+                    {locale === 'de'
+                      ? 'Planen Sie ein Lächeln wie Jürgen Klopp? Sparen Sie bis zu 70 % mit deutschem Krankenkassenzuschuss'
+                      : locale === 'tr'
+                      ? 'Jürgen Klopp Gibi Bir Gülüş Mü Planlıyorsunuz? Antalya’da %70 Tasarruf Edin'
+                      : 'Planning a Smile Transformation Like Jürgen Klopp? Save Up to 70% in Antalya'}
+                  </h3>
+                  <p className={styles.kloppTrustSubtitle}>
+                    {locale === 'de'
+                      ? 'Vergleichen Sie jetzt unverbindlich Ihren bestehenden Heil- und Kostenplan (HKP) mit unserem Festpreisangebot für Antalya. Wir erstellen Ihnen einen genehmigungsfähigen Kostenplan zur vollen Festzuschuss-Abrechnung.'
+                      : locale === 'tr'
+                      ? 'Mevcut tedavi planınızı veya diş fotoğraflarınızı WhatsApp üzerinden ileterek ücretsiz 3D gülüş simülasyonu ve resmi HKP fiyat teklifi alın.'
+                      : 'Compare your local dental estimate with our all-inclusive Antalya package. We provide certified German materials and complete insurance documentation.'}
+                  </p>
+                </div>
+
+                <div className={styles.kloppTrustGrid}>
+                  <div className={styles.kloppTrustItem}>
+                    <div className={styles.kloppTrustIconWrap}>✓</div>
+                    <div className={styles.kloppTrustItemContent}>
+                      <h4 className={styles.kloppTrustItemHeading}>
+                        {locale === 'de'
+                          ? 'Gesetzlicher Festzuschuss (§ 13 SGB V)'
+                          : locale === 'tr'
+                          ? 'Krankenkasse Festzuschuss Desteği'
+                          : 'Statutory Insurance Subsidy'}
+                      </h4>
+                      <p className={styles.kloppTrustItemText}>
+                        {locale === 'de'
+                          ? 'Volle Anrechnung des Festzuschusses Ihrer Kasse (TK, AOK, Barmer, DAK u.a.) durch unseren zweisprachigen Heil- und Kostenplan.'
+                          : locale === 'tr'
+                          ? 'Almanya yasal sağlık sigortaları onaylı tedaviler için aynı katkı payını öder.'
+                          : 'European patients can claim statutory reimbursements with our official bilingual treatment plans.'}
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className={styles.kloppTrustItem}>
+                    <div className={styles.kloppTrustIconWrap}>✓</div>
+                    <div className={styles.kloppTrustItemContent}>
+                      <h4 className={styles.kloppTrustItemHeading}>
+                        {locale === 'de'
+                          ? 'Zertifizierte Marken-Keramiken'
+                          : locale === 'tr'
+                          ? 'Sertifikalı Orijinal Malzemeler'
+                          : '100% Certified Materials'}
+                      </h4>
+                      <p className={styles.kloppTrustItemText}>
+                        {locale === 'de'
+                          ? 'Ausschließlich deutsches Mehrschicht-Zirkonoxid & Schweizer Ivoclar E-Max mit 10 Jahren klinischer Garantie.'
+                          : locale === 'tr'
+                          ? 'Alman Zirkonyumu ve İsviçre Ivoclar E-Max ile 10 yıl klinik garanti.'
+                          : 'Original German Multilayer Zirconia & Swiss Ivoclar E-Max backed by a 10-year warranty.'}
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className={styles.kloppTrustItem}>
+                    <div className={styles.kloppTrustIconWrap}>✓</div>
+                    <div className={styles.kloppTrustItemContent}>
+                      <h4 className={styles.kloppTrustItemHeading}>
+                        {locale === 'de'
+                          ? 'VIP All-Inclusive Komfort'
+                          : locale === 'tr'
+                          ? 'VIP Her Şey Dahil Konfor'
+                          : 'VIP All-Inclusive Comfort'}
+                      </h4>
+                      <p className={styles.kloppTrustItemText}>
+                        {locale === 'de'
+                          ? '5-Sterne-Strandhotel, persönlicher Chauffeur-Transfer vom Flughafen & deutschsprachige Betreuung vor Ort.'
+                          : locale === 'tr'
+                          ? '5 yıldızlı deniz kenarı otel konaklaması, VIP Mercedes transferler ve özel rehberlik.'
+                          : '5-star beachfront hotel, private VIP transfers, and dedicated personal patient coordination.'}
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className={styles.kloppTrustItem}>
+                    <div className={styles.kloppTrustIconWrap}>✓</div>
+                    <div className={styles.kloppTrustItemContent}>
+                      <h4 className={styles.kloppTrustItemHeading}>
+                        {locale === 'de'
+                          ? 'Kostenlose 3D-Simulation via WhatsApp'
+                          : locale === 'tr'
+                          ? 'Ücretsiz WhatsApp 3D Gülüş Analizi'
+                          : 'Complimentary 3D Smile Analysis'}
+                      </h4>
+                      <p className={styles.kloppTrustItemText}>
+                        {locale === 'de'
+                          ? 'Senden Sie uns ein Foto oder Ihren HKP via WhatsApp – Sie erhalten innerhalb weniger Stunden eine ärztliche Ersteinschätzung.'
+                          : locale === 'tr'
+                          ? 'Fotoğraflarınızı veya mevcut planınızı WhatsApp üzerinden gönderin, birkaç saatte hekim değerlendirmesi alın.'
+                          : 'Send your smile photos or existing quote via WhatsApp for an immediate clinical assessment.'}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className={styles.kloppTrustActions}>
+                  <a
+                    href={waLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.kloppTrustBtnWa}
+                  >
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.072.043.419-.101.824z" />
+                    </svg>
+                    <span>
+                      {locale === 'de'
+                        ? 'WhatsApp Sofort-Beratung & HKP-Prüfung'
+                        : locale === 'tr'
+                        ? 'WhatsApp ile Hızlı Danışma & Fiyat Al'
+                        : 'WhatsApp Consultation & Instant Quote'}
+                    </span>
+                  </a>
+
+                  <Link
+                    href={
+                      locale === 'de'
+                        ? '/blog/krankenkasse-festzuschuss-heil-und-kostenplan-antalya/'
+                        : '/blog/antalya-dental-holiday-step-by-step-guide/'
+                    }
+                    className={styles.kloppTrustBtnGuide}
+                  >
+                    <span>
+                      {locale === 'de'
+                        ? 'Krankenkassen & HKP Ratgeber lesen →'
+                        : locale === 'tr'
+                        ? 'Antalya Diş Tatili Rehberini İncele →'
+                        : 'Read Antalya Dental Holiday Guide →'}
+                    </span>
+                  </Link>
+                </div>
               </div>
             )}
 
