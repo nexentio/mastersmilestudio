@@ -358,8 +358,19 @@ export default function BlogDetailView({ slug }: BlogDetailViewProps) {
   const featuredBeforeAfter = (BEFORE_AFTER_PAGE_DATA[0]?.items || []).slice(0, 3);
 
   const isKloppArticle = slug === 'jurgen-klopp-teeth-transformation-smile-makeover';
+  const isHammondArticle = slug === 'richard-hammond-teeth-whitened-top-gear-smile';
 
-  const blogWaMessages: Record<string, string> = isKloppArticle
+  const blogWaMessages: Record<string, string> = isHammondArticle
+    ? {
+        en: "Hi Master Smile Studio, I read your Top Gear article on Richard Hammond's teeth. I definitely don't want 'Tipp-Ex teeth', but I would love a free consultation and quote for a natural smile makeover in Antalya.",
+        tr: "Merhaba Master Smile Studio, Richard Hammond ve Top Gear diş yazınızı okudum. Yapay durmayan, doğal bir erkek gülüş tasarımı için Antalya ücretsiz muayene ve fiyat teklifi almak istiyorum.",
+        de: "Hallo Master Smile Studio, ich habe Ihren Top-Gear-Artikel über Richard Hammonds Zähne gelesen. Ich möchte auf keinen Fall künstliche 'Tipp-Ex-Zähne', interessiere mich aber für ein natürliches Lächeln-Makeover in Antalya.",
+        pl: "Dzień dobry Master Smile Studio, przeczytałem artykuł o zębach Richarda Hammonda z Top Gear. Chciałbym uzyskać wycenę naturalnej metamorfozy uśmiechu w Antalyi bez sztucznego efektu.",
+        pt: "Olá Master Smile Studio, li o artigo sobre os dentes de Richard Hammond no Top Gear. Gostaria de uma consulta e orçamento para um sorriso masculino natural em Antalya.",
+        es: "Hola Master Smile Studio, leí vuestro artículo de Top Gear sobre Richard Hammond. Me gustaría una consulta y presupuesto para un diseño de sonrisa natural y masculino en Antalya.",
+        ru: "Здравствуйте! Я прочитал статью о зубах Ричарда Хаммонда из Top Gear. Хотел бы получить консультацию и расчет стоимости естественного преображения улыбки в Анталье.",
+      }
+    : isKloppArticle
     ? {
         de: 'Hallo Master Smile Studio, ich habe Ihren Artikel über Jürgen Klopps Lächeln gelesen und interessiere mich für eine unverbindliche Beratung bzw. einen HKP-Vergleich für Antalya.',
         en: 'Hello Master Smile Studio, I was reading your Jürgen Klopp smile transformation article and would like a free consultation and quote for Antalya.',
@@ -809,6 +820,179 @@ export default function BlogDetailView({ slug }: BlogDetailViewProps) {
                         : locale === 'tr'
                         ? 'Antalya Diş Tatili Rehberini İncele →'
                         : 'Read Antalya Dental Holiday Guide →'}
+                    </span>
+                  </Link>
+                </div>
+              </div>
+            )}
+
+            {/* Richard Hammond Custom Natural Masculine Smile & Price Trust Card */}
+            {isHammondArticle && (
+              <div className={styles.kloppTrustCard}>
+                <div className={styles.kloppTrustHeader}>
+                  <div className={styles.kloppTrustBadge}>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                    </svg>
+                    <span>
+                      {locale === 'tr'
+                        ? 'Erkek Estetik Mimarisi • Sıfır Yapaylık / Doğal Gülüş Tasarımı'
+                        : locale === 'de'
+                        ? 'Maskuline Ästhetik • 100 % Natürlich / Kein Tipp-Ex-Effekt'
+                        : locale === 'pl'
+                        ? 'Męska estetyka • 100% naturalności bez efektu sztuczności'
+                        : locale === 'pt'
+                        ? 'Estética Masculina • 100% Natural sem Efeito Artificial'
+                        : locale === 'es'
+                        ? 'Estética Dental Masculina • 100% Natural sin Blanco Artificial'
+                        : locale === 'ru'
+                        ? 'Мужская эстетика • 100% натуральный вид без эффекта штриха'
+                        : 'Natural Male Aesthetics • No "Tipp-Ex" / No "Turkey Teeth"'}
+                    </span>
+                  </div>
+                  <h3 className={styles.kloppTrustTitle}>
+                    {locale === 'tr'
+                      ? '\'Daksil Diş\' Görünümü Olmadan Genç ve Karizmatik Bir Gülüş Mü İstiyorsunuz? Antalya\'da %70 Tasarruf Edin'
+                      : locale === 'de'
+                      ? 'Wünschen Sie sich ein frisches, vitales Lächeln ohne den \'Tipp-Ex-Effekt\'? Bis zu 70 % sparen in Antalya'
+                      : locale === 'pl'
+                      ? 'Chcesz świeżego, męskiego uśmiechu bez sztucznego \'efektu korektora\'? Do 70% oszczędności w Antalyi'
+                      : locale === 'pt'
+                      ? 'Deseja um sorriso rejuvenescido e masculino sem o aspeto \'Tipp-Ex\'? Poupe até 70% em Antalya'
+                      : locale === 'es'
+                      ? '¿Desea una sonrisa fresca y masculina sin el temido efecto \'Tipp-Ex\'? Ahorre hasta un 70% en Antalya'
+                      : locale === 'ru'
+                      ? 'Хотите свежую мужественную улыбку без эффекта пластмассовых коронок? Экономия до 70% в Анталье'
+                      : 'Want a Refreshed, Youthful Smile Without the "Tipp-Ex" Effect? Save Up to 70% in Antalya'}
+                  </h3>
+                  <p className={styles.kloppTrustSubtitle}>
+                    {locale === 'tr'
+                      ? 'İngiltere\'deki gibi astronomik özel klinik fiyatları ve aylar süren randevu sıraları yok. WhatsApp üzerinden bir fotoğraf gönderin, 2 saat içinde ücretsiz 3D gülüş simülasyonu ve her şey dahil teklifinizi alın.'
+                      : locale === 'de'
+                      ? 'Keine langen Wartezeiten, keine überteuerten Privatpreise aus London. Senden Sie uns ein Foto via WhatsApp für eine unverbindliche 3D-Lächelnsimulation innerhalb von 2 Stunden.'
+                      : locale === 'pl'
+                      ? 'Brak kolejek i londyńskich cen. Wyślij zdjęcie na WhatsApp i odbierz bezpłatną symulację 3D oraz wycenę w 2 godziny.'
+                      : locale === 'pt'
+                      ? 'Sem listas de espera nem preços exorbitantes de Londres. Envie uma foto por WhatsApp e receba a sua simulação 3D em 2 horas.'
+                      : locale === 'es'
+                      ? 'Sin listas de espera ni presupuestos desorbitados de Londres. Envíenos una foto por WhatsApp para una simulación 3D gratuita en 2 horas.'
+                      : locale === 'ru'
+                      ? 'Никаких очередей и завышенных лондонских цен. Отправьте фото в WhatsApp и получите бесплатную 3D-симуляцию улыбки за 2 часа.'
+                      : 'No NHS waiting lists, no £15,000 London private dental bills. Send us a quick smile selfie on WhatsApp for a complimentary 3D Digital Smile Simulation & accurate quote within 2 hours.'}
+                  </p>
+                </div>
+
+                <div className={styles.kloppTrustGrid}>
+                  <div className={styles.kloppTrustItem}>
+                    <div className={styles.kloppTrustIconWrap}>✓</div>
+                    <div className={styles.kloppTrustItemContent}>
+                      <h4 className={styles.kloppTrustItemHeading}>
+                        {locale === 'tr'
+                          ? 'Karakteristik Doğal Tonlar (BL3 / Vita A1)'
+                          : locale === 'de'
+                          ? 'Natürliche Nuancen (BL3 / Vita A1)'
+                          : 'Characterized Natural Shades (BL3 / Vita A1)'}
+                      </h4>
+                      <p className={styles.kloppTrustItemText}>
+                        {locale === 'tr'
+                          ? 'Düz kağıt beyazı yerine, doğal diş minesinin ışık geçirgenliğini (transluzens) koruyan sıcak ve derinlikli renkler.'
+                          : locale === 'de'
+                          ? 'Lebendige Lichtdurchlässigkeit und warme Farbverläufe – vollkommen ununterscheidbar von echtem Zahnschmelz.'
+                          : 'Hand-layered incisal translucency and natural cervical depth that look completely authentic in any lighting.'}
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className={styles.kloppTrustItem}>
+                    <div className={styles.kloppTrustIconWrap}>✓</div>
+                    <div className={styles.kloppTrustItemContent}>
+                      <h4 className={styles.kloppTrustItemHeading}>
+                        {locale === 'tr'
+                          ? '%100 Sertifikalı Alman & İsviçre Malzemeleri'
+                          : locale === 'de'
+                          ? '100 % Zertifizierte Markenqualität'
+                          : '100% Certified Materials & 10-Yr Guarantee'}
+                      </h4>
+                      <p className={styles.kloppTrustItemText}>
+                        {locale === 'tr'
+                          ? 'Orijinal Alman Katana Zirkonyum ve İsviçre IPS e.max seramikleri ile 10 yıl resmi klinik garanti.'
+                          : locale === 'de'
+                          ? 'Original deutsches Katana-Zirkonoxid & Schweizer Ivoclar E-Max mit 10 Jahren klinischer Garantie.'
+                          : 'Genuine German Katana 3D Zirconia & Swiss IPS e.max ceramics with 10-year official clinical warranty.'}
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className={styles.kloppTrustItem}>
+                    <div className={styles.kloppTrustIconWrap}>✓</div>
+                    <div className={styles.kloppTrustItemContent}>
+                      <h4 className={styles.kloppTrustItemHeading}>
+                        {locale === 'tr'
+                          ? '5 Yıldızlı Her Şey Dahil VIP Konfor'
+                          : locale === 'de'
+                          ? '5-Sterne All-Inclusive VIP-Komfort'
+                          : '5-Star Beachfront Luxury & VIP Chauffeur'}
+                      </h4>
+                      <p className={styles.kloppTrustItemText}>
+                        {locale === 'tr'
+                          ? '5 yıldızlı Akdeniz sahil oteli, özel Mercedes VIP havalimanı transferleri ve kişisel hasta koordinatörü.'
+                          : locale === 'de'
+                          ? '5-Sterne-Strandhotel am Mittelmeer, persönlicher Mercedes-Flughafentransfer und deutschsprachige Betreuung.'
+                          : 'Beachfront 5-star Mediterranean hotel, private VIP Mercedes transfers, and dedicated English-speaking patient host.'}
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className={styles.kloppTrustItem}>
+                    <div className={styles.kloppTrustIconWrap}>✓</div>
+                    <div className={styles.kloppTrustItemContent}>
+                      <h4 className={styles.kloppTrustItemHeading}>
+                        {locale === 'tr'
+                          ? '2 Saatte Ücretsiz 3D Simülasyon'
+                          : locale === 'de'
+                          ? 'Kostenlose 3D-Simulation via WhatsApp'
+                          : 'Complimentary WhatsApp Smile Simulation'}
+                      </h4>
+                      <p className={styles.kloppTrustItemText}>
+                        {locale === 'tr'
+                          ? 'Gülüş fotoğrafınızı WhatsApp\'tan gönderin; hekimlerimiz 2 saat içinde yüzünüze en uygun tasarımı ve sabit fiyatı paylaşsın.'
+                          : locale === 'de'
+                          ? 'Senden Sie uns Ihr Lächeln via WhatsApp – erhalten Sie innerhalb von 2 Stunden eine ärztliche 3D-Ersteinschätzung.'
+                          : 'Send a clear smile selfie on WhatsApp to receive a custom 3D simulation and transparent package quote in 2 hours.'}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className={styles.kloppTrustActions}>
+                  <a
+                    href={waLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.kloppTrustBtnWa}
+                  >
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.072.043.419-.101.824z" />
+                    </svg>
+                    <span>
+                      {locale === 'tr'
+                        ? 'WhatsApp ile Hızlı Danışma & Fiyat Al'
+                        : locale === 'de'
+                        ? 'WhatsApp Sofort-Beratung & Kostenangebot'
+                        : 'WhatsApp Consultation & 3D Simulation'}
+                    </span>
+                  </a>
+
+                  <Link
+                    href="/blog/natural-turkey-teeth-guide-veneers-costs-shades/"
+                    className={styles.kloppTrustBtnGuide}
+                  >
+                    <span>
+                      {locale === 'tr'
+                        ? 'Doğal Diş Rehberini İncele →'
+                        : locale === 'de'
+                        ? 'Zum Leitfaden für natürliche Zähne →'
+                        : 'Read 2026 Natural Teeth Guide →'}
                     </span>
                   </Link>
                 </div>

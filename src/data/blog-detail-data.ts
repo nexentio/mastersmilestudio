@@ -12,6 +12,7 @@ import { SIMON_BAKER_ARTICLE } from './blog-articles/simon-baker-article';
 import { LIAM_GALLAGHER_ARTICLE } from './blog-articles/liam-gallagher-article';
 import { NATURAL_TURKEY_TEETH_ARTICLE } from './blog-articles/natural-turkey-teeth-guide';
 import { SYDNEY_SWEENEY_ARTICLE } from './blog-articles/sydney-sweeney-article';
+import { RICHARD_HAMMOND_ARTICLE } from './blog-articles/richard-hammond-article';
 
 export interface LLMQuickSummary {
   badge?: Record<string, string>;
@@ -1138,6 +1139,9 @@ export function getBlogDetailBySlug(slug: string): BlogDetailArticle {
   }
   if (slug === SYDNEY_SWEENEY_ARTICLE.slug) {
     return SYDNEY_SWEENEY_ARTICLE;
+  }
+  if (slug === RICHARD_HAMMOND_ARTICLE.slug) {
+    return RICHARD_HAMMOND_ARTICLE;
   }
   if (CELEBRITY_ARTICLES_PART2[slug]) {
     return CELEBRITY_ARTICLES_PART2[slug];

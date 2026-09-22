@@ -10,6 +10,31 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'richard-hammond-teeth-whitened-top-gear-smile',
+    image: '/blog/richard-hammond-teeth-top-gear.webp',
+    category: 'celebrities-teeth',
+    readTime: '10 min read',
+    date: '2026-09-23',
+    title: {
+      en: "Richard Hammond’s Teeth: Did the Top Gear Star Really Get 'Tipp-Ex' Veneers?",
+      tr: "Richard Hammond’ın Dişleri: Top Gear Yıldızı Gerçekten 'Daksil Diş' mi Yaptırdı?",
+      de: "Richard Hammonds Zähne: Hat der Top-Gear-Star wirklich „Tipp-Ex-Veneers“?",
+      pl: "Zęby Richarda Hammonda: Czy gwiazda Top Gear ma licówki z korektora?",
+      pt: "Os Dentes de Richard Hammond: A Estrela do Top Gear Tem Facetas 'Tipp-Ex'?",
+      es: "Los Dientes de Richard Hammond: ¿Tiene la Estrella de Top Gear Carillas 'Tipp-Ex'?",
+      ru: "Зубы Ричарда Хаммонда: Действительно ли звезда Top Gear отбелил зубы до эффекта «штриха»?",
+    },
+    excerpt: {
+      en: "Investigating the 20-year Top Gear running joke: Jeremy Clarkson's Liechtenstein discovery, the infamous 'Tipp-Ex teeth' moniker, why tea-stained teeth cannot naturally turn white, and how UK men achieve natural smile makeovers in Antalya.",
+      tr: "Top Gear'ın 20 yıllık efsanevi şakası: Jeremy Clarkson'ın torpidodan çıkardığı beyazlatma kiti, meşhur 'Daksil Dişler' yaftası, çay lekelerinin biyolojisi ve İngiliz erkeklerinin Antalya'da nasıl doğal bir gülüşe kavuştuğu.",
+      de: "Die Analyse des 20-jährigen Top-Gear-Kultwitzes: Clarksons Bleaching-Fund in Liechtenstein, der Begriff 'Tipp-Ex-Zähne' und wie Männer im Master Smile Studio Antalya ein natürliches Lächeln ohne Kunst-Effekt erhalten.",
+      pl: "Kultowy żart z Top Gear pod lupą stomatologów: 'Zęby z korektora', zestaw ze schowka w Liechtensteinie i nowoczesna męska stomatologia estetyczna w Antalyi bez efektu sztuczności.",
+      pt: "A investigação da piada de 20 anos do Top Gear: O kit no porta-luvas, os 'dentes Tipp-Ex' e como os homens britânicos conseguem sorrisos masculinos naturais na Master Smile Studio.",
+      es: "La verdad tras la broma de 20 años en Top Gear: El apodo 'dientes de Tipp-Ex', la biología del esmalte con el té británico y el diseño de sonrisa masculino natural en Antalya.",
+      ru: "Расследование 20-летней шутки Top Gear: Отбеливающий набор из Лихтенштейна, прозвище 'зубы-штрих' и как мужчины создают мужественную естественную улыбку в Анталье.",
+    },
+  },
+  {
     slug: 'sydney-sweeney-teeth-gummy-smile-natural-veneers',
     image: '/blog/sydney-sweeney-teeth-gummy-smile-veneers.webp',
     category: 'celebrities-teeth',
