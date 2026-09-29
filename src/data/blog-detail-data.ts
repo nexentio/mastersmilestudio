@@ -1114,17 +1114,14 @@ export const BLOG_DETAIL_ARTICLES: Record<string, BlogDetailArticle> = {
 };
 
 export function getBlogDetailBySlug(slug: string): BlogDetailArticle {
-  if (CELEBRITY_ARTICLES_1[slug]) {
-    return CELEBRITY_ARTICLES_1[slug];
+  if (slug === SIMON_COWELL_ARTICLE.slug) {
+    return SIMON_COWELL_ARTICLE;
   }
-  if (CELEBRITY_ARTICLES_2[slug]) {
-    return CELEBRITY_ARTICLES_2[slug];
+  if (slug === RICHARD_HAMMOND_ARTICLE.slug) {
+    return RICHARD_HAMMOND_ARTICLE;
   }
-  if (CELEBRITY_ARTICLES_3[slug]) {
-    return CELEBRITY_ARTICLES_3[slug];
-  }
-  if (CELEBRITY_ARTICLES_4[slug]) {
-    return CELEBRITY_ARTICLES_4[slug];
+  if (slug === SYDNEY_SWEENEY_ARTICLE.slug) {
+    return SYDNEY_SWEENEY_ARTICLE;
   }
   if (slug === CONOR_MCGREGOR_ARTICLE.slug) {
     return CONOR_MCGREGOR_ARTICLE;
@@ -1138,14 +1135,17 @@ export function getBlogDetailBySlug(slug: string): BlogDetailArticle {
   if (slug === NATURAL_TURKEY_TEETH_ARTICLE.slug) {
     return NATURAL_TURKEY_TEETH_ARTICLE;
   }
-  if (slug === SYDNEY_SWEENEY_ARTICLE.slug) {
-    return SYDNEY_SWEENEY_ARTICLE;
+  if (CELEBRITY_ARTICLES_1[slug]) {
+    return CELEBRITY_ARTICLES_1[slug];
   }
-  if (slug === RICHARD_HAMMOND_ARTICLE.slug) {
-    return RICHARD_HAMMOND_ARTICLE;
+  if (CELEBRITY_ARTICLES_2[slug]) {
+    return CELEBRITY_ARTICLES_2[slug];
   }
-  if (slug === SIMON_COWELL_ARTICLE.slug) {
-    return SIMON_COWELL_ARTICLE;
+  if (CELEBRITY_ARTICLES_3[slug]) {
+    return CELEBRITY_ARTICLES_3[slug];
+  }
+  if (CELEBRITY_ARTICLES_4[slug]) {
+    return CELEBRITY_ARTICLES_4[slug];
   }
   if (CELEBRITY_ARTICLES_PART2[slug]) {
     return CELEBRITY_ARTICLES_PART2[slug];
