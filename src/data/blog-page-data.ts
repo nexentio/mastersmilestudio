@@ -10,6 +10,31 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'simon-cowell-teeth-before-and-after',
+    image: '/blog/simon-cowell-teeth.webp',
+    category: 'celebrities-teeth',
+    readTime: '14 min read',
+    date: '2026-09-29',
+    title: {
+      en: "What Did Simon Cowell Do to His Teeth? The 2019 'Glow-in-the-Dark' Shock, $112k Beverly Hills Revision & Natural Veneers in Antalya",
+      tr: "Simon Cowell Dişlerine Ne Yaptırdı? 2019 'Karanlıkta Parlayan' Kaplama Şoku, 112.000 $'lık Revizyon ve Antalya Doğal Kaplama Mimarisi",
+      de: "Was hat Simon Cowell mit seinen Zähnen gemacht? Das 'Leucht-Veneer'-Fiasko von 2019, 112.000 $ Revision & Natürliche Zähne in Antalya",
+      pl: "Co Simon Cowell zrobił ze swoimi zębami? Szok świecących licówek z 2019 r., poprawka za 112.000 $ i naturalny uśmiech w Antalyi",
+      pt: "O Que Fez Simon Cowell aos Dentes? O Choque das Facetas Fluorescentes de 2019, Revisão de 112.000 $ e Facetas Naturais em Antalya",
+      es: "¿Qué se Hizo Simon Cowell en los Dientes? El Desastre de las Carillas de 2019, Revisión de 112.000 $ y Carillas Naturales en Antalya",
+      ru: "Что Саймон Коуэлл сделал со своими зубами? Шок от светящихся виниров 2019 года, ревизия за 112.000 $ и натуральные виниры в Анталье",
+    },
+    excerpt: {
+      en: "From 40 cigarettes a day on Pop Idol to glowing like Ross Geller with 'joke shop' veneers on AGT: Why 74% of Britons were horrified, his $112k Beverly Hills redo, the clip-on veneer trap, and how Master Smile Studio in Antalya crafts natural Swiss IPS e.max smiles.",
+      tr: "Pop Idol'da günde 40 sigaradan AGT'de Ross Geller gibi parlayan kaplamalara: İngiliz halkının %74'ünün 'şaka dükkanı takma dişi' dediği 2019 fiyaskosu, 112.000 $'lık revizyon, geçmeli protez tuzağı ve Antalya'da doğal IPS e.max formülü.",
+      de: "Von 40 Zigaretten am Tag zum 'Taschenlampen-Lächeln' von 2019: Warum 74 % der Briten entsetzt waren, seine 112.000-Dollar-Korrektur, die Clip-on-Falle und echte Schweizer IPS e.max-Veneers in Antalya.",
+      pl: "Od 40 papierosów dziennie do świecącego uśmiechu z Przyjaciół: Dlaczego 74% Brytyjczyków uznało licówki z 2019 r. za koszmar, wymiana za 112.000 $ w Beverly Hills, pułapka nakładek clip-on i naturalny IPS e.max w Antalyi.",
+      pt: "De 40 cigarros diários a um sorriso fluorescente comparado a Ross Geller: O choque das facetas de 2019, a revisão de 112.000 $ em Beverly Hills, o perigo dos dentes clip-on e a estética natural com IPS e.max em Antalya.",
+      es: "De 40 cigarrillos al día a brillar en la oscuridad como Ross Geller: El desastre de 2019 que espantó al 74% de los británicos, la factura de 112.000 $ en Beverly Hills, la trampa de las fundas extraíbles y las carillas IPS e.max en Antalya.",
+      ru: "От 40 сигарет в день до светящихся виниров из сериала 'Друзья': Почему 74% британцев были в шоке от зубов Коуэлла 2019 года, коррекция за 112.000 $, опасность съемных накладок и виниры IPS e.max в Анталье.",
+    },
+  },
+  {
     slug: 'richard-hammond-teeth-whitened-top-gear-smile',
     image: '/blog/richard-hammond-teeth-top-gear.webp',
     category: 'celebrities-teeth',
@@ -157,20 +182,6 @@ export const BLOG_POSTS: BlogPost[] = [
       pt: 'Descubra como Conor McGregor transformou dentes desgastados por combates num sorriso de Hollywood resistente a mais de 800 N de força.',
       es: 'Descubra cómo Conor McGregor transformó sus dientes de combate en una sonrisa de Hollywood diseñada para resistir más de 800 N de fuerza oclusal.',
       ru: 'Узнайте, как Конор Макгрегор превратил травмированные боями зубы в высокопрочную голливудскую улыбку, выдерживающую сжатие свыше 800 Н.',
-    },
-  },
-  {
-    slug: 'simon-cowell-teeth-before-and-after',
-    image: '/blog/simon-cowell-teeth.webp',
-    category: 'celebrities-teeth',
-    title: {
-      en: 'Simon Cowell Teeth Before and After What Really Happened to His Smile',
-      tr: 'Simon Cowell Dişleri Öncesi ve Sonrası: Gülüşünde Gerçekte Ne Oldu?',
-      de: 'Simon Cowells Zähne Vorher und Nachher: Die Wahrheit über sein Lächeln',
-      pl: 'Zęby Simona Cowella Przed i Po: Co naprawdę stało się z jego uśmiechem?',
-      pt: 'Dentes de Simon Cowell Antes e Depois: O que Realmente Aconteceu?',
-      es: 'Dientes de Simon Cowell Antes y Después: La Transformación de su Sonrisa',
-      ru: 'Зубы Саймона Коуэлла до и после: что на самом деле произошло с его улыбкой?',
     },
   },
   {
