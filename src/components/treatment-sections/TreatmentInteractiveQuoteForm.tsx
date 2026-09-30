@@ -415,9 +415,15 @@ export default function TreatmentInteractiveQuoteForm({ defaultTreatment = 'Impl
         locale,
         formType: 'Treatment Detail Interactive 4-Step Quote Form',
       }),
-    }).catch((err) => {
-      console.error('Interactive quote form submission error:', err);
-    });
+    })
+      .then(() => {
+        if (typeof window !== 'undefined' && (window as any).trackConsultationRequest) {
+          (window as any).trackConsultationRequest('Treatment Detail Interactive 4-Step Quote Form');
+        }
+      })
+      .catch((err) => {
+        console.error('Interactive quote form submission error:', err);
+      });
   };
 
   const handleWhatsAppInstantSend = () => {

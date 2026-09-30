@@ -285,6 +285,9 @@ export default function MobileHeroConsultationForm() {
           formType: 'Mobile Hero Consultation Form',
         }),
       });
+      if (typeof window !== 'undefined' && (window as any).trackConsultationRequest) {
+        (window as any).trackConsultationRequest('Mobile Hero Consultation Form');
+      }
     } catch (err) {
       console.error('Mobile form submission error:', err);
     } finally {

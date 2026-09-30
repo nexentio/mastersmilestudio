@@ -55,6 +55,9 @@ export default function HeroForm() {
           formType: 'Desktop Hero Quick Consultation Form',
         }),
       });
+      if (typeof window !== 'undefined' && (window as any).trackConsultationRequest) {
+        (window as any).trackConsultationRequest('Desktop Hero Quick Consultation Form');
+      }
     } catch (err) {
       console.error('Hero form submission error:', err);
     } finally {

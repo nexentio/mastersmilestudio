@@ -388,6 +388,11 @@ export default async function LocaleLayout({
               // Conversion Trackers
               window.trackPhoneCall = function (phoneNumber) {
                 if (typeof gtag !== 'undefined') {
+                  gtag('event', 'phone_call', {
+                    event_category: 'contact',
+                    event_label: phoneNumber || 'phone',
+                    phone_number: phoneNumber || '',
+                  });
                   gtag('event', 'conversion', {
                     send_to: 'AW-17551178761/V0FZCLT-n5kbEIn4hrFB',
                   });
@@ -399,6 +404,10 @@ export default async function LocaleLayout({
 
               window.trackWhatsAppClick = function (serviceType) {
                 if (typeof gtag !== 'undefined') {
+                  gtag('event', 'whatsapp_click', {
+                    event_category: 'contact',
+                    event_label: serviceType || 'whatsapp',
+                  });
                   gtag('event', 'conversion', {
                     send_to: 'AW-17551178761/V0FZCLT-n5kbEIn4hrFB',
                   });
@@ -410,6 +419,17 @@ export default async function LocaleLayout({
 
               window.trackConsultationRequest = function (contactMethod) {
                 if (typeof gtag !== 'undefined') {
+                  gtag('event', 'form_submit', {
+                    event_category: 'form',
+                    event_label: contactMethod || 'consultation_form',
+                    form_name: contactMethod || 'consultation_form',
+                  });
+                  gtag('event', 'generate_lead', {
+                    event_category: 'lead',
+                    event_label: contactMethod || 'consultation_form',
+                    value: 1,
+                    currency: 'EUR',
+                  });
                   gtag('event', 'conversion', {
                     send_to: 'AW-17551178761/V0FZCLT-n5kbEIn4hrFB',
                   });
@@ -419,6 +439,33 @@ export default async function LocaleLayout({
                   clarity('upgrade', 'conversion');
                 }
               };
+
+              // Global Delegated Click Listener for Automatic Phone & WhatsApp Tracking
+              if (typeof document !== 'undefined') {
+                document.addEventListener('click', function (e) {
+                  try {
+                    var target = e.target && e.target.closest ? e.target.closest('a') : null;
+                    if (!target || !target.href) return;
+                    var href = target.getAttribute('href') || target.href || '';
+
+                    // 1. Phone Call clicks (tel: protocol)
+                    if (href.indexOf('tel:') === 0) {
+                      var phoneNum = href.replace('tel:', '').trim();
+                      if (window.trackPhoneCall) {
+                        window.trackPhoneCall(phoneNum);
+                      }
+                    }
+
+                    // 2. WhatsApp clicks (wa.me or api.whatsapp.com)
+                    if (href.indexOf('wa.me') !== -1 || href.indexOf('whatsapp.com') !== -1) {
+                      var label = target.getAttribute('aria-label') || target.innerText || 'whatsapp';
+                      if (window.trackWhatsAppClick) {
+                        window.trackWhatsAppClick(label.trim());
+                      }
+                    }
+                  } catch (err) {}
+                }, { passive: true });
+              }
             `,
           }}
         />

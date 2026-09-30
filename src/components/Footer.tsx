@@ -31,6 +31,9 @@ export default function Footer() {
             notes: 'User subscribed to newsletter via Footer form',
           }),
         });
+        if (typeof window !== 'undefined' && (window as any).trackConsultationRequest) {
+          (window as any).trackConsultationRequest('Footer Newsletter Subscription');
+        }
       } catch (err) {
         console.error('Newsletter submission error:', err);
       }

@@ -250,6 +250,9 @@ export default function ContactSection() {
           locale,
         }),
       });
+      if (typeof window !== 'undefined' && (window as any).trackConsultationRequest) {
+        (window as any).trackConsultationRequest('Contact Page VIP Consultation Form');
+      }
     } catch (err) {
       console.error('Contact form submission error:', err);
     } finally {
